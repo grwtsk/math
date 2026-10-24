@@ -1,0 +1,62 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.B6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0PhaseInvolutionA.Variant39261bcd6fe3c72a66cabeb3fb3df832df38263acf662f647c7099e9341c8788
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bf87385ff6ddf08fefb5dedc611e7990e9c07827` · SHA-256 `1198e6b1a6413b5bf3e7e368ef0d2aabe02fb099fc49e174b79127ab28e6663f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PhaseInvolution.Variantb6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.PhaseInvolution.Variantb6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/b6/b6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0--PhaseInvolutionAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.PhaseInvolution
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PhaseInvolution.Variantb6e81f2749a81ab0d67a39ceac60c2018196b7b43434a91dd09bc4f2522a66a0
+
+#check FormalResearch.RiemannHypothesis.phase_reflection_is_hermitian
+#print axioms FormalResearch.RiemannHypothesis.phase_reflection_is_hermitian
+#check FormalResearch.RiemannHypothesis.phase_reflection_is_self_adjoint
+#print axioms FormalResearch.RiemannHypothesis.phase_reflection_is_self_adjoint
+#check FormalResearch.RiemannHypothesis.phase_reflection_square
+#print axioms FormalResearch.RiemannHypothesis.phase_reflection_square
+#check FormalResearch.RiemannHypothesis.phase_reflection_involution
+#print axioms FormalResearch.RiemannHypothesis.phase_reflection_involution
+#check FormalResearch.RiemannHypothesis.phase_reflection_involution_of_norm
+#print axioms FormalResearch.RiemannHypothesis.phase_reflection_involution_of_norm
+#check FormalResearch.RiemannHypothesis.phase_rotation_eq_diagonal
+#print axioms FormalResearch.RiemannHypothesis.phase_rotation_eq_diagonal
+#check FormalResearch.RiemannHypothesis.phase_rotation_unitary
+#print axioms FormalResearch.RiemannHypothesis.phase_rotation_unitary
+#check FormalResearch.RiemannHypothesis.phase_reflections_commute_iff
+#print axioms FormalResearch.RiemannHypothesis.phase_reflections_commute_iff
+#check FormalResearch.RiemannHypothesis.unit_phase_reflections_need_not_commute
+#print axioms FormalResearch.RiemannHypothesis.unit_phase_reflections_need_not_commute
+#check FormalResearch.RiemannHypothesis.phase_defect_eq_det
+#print axioms FormalResearch.RiemannHypothesis.phase_defect_eq_det
+#check FormalResearch.RiemannHypothesis.phase_defect_eq_trace_deficit
+#print axioms FormalResearch.RiemannHypothesis.phase_defect_eq_trace_deficit
+#check FormalResearch.RiemannHypothesis.phase_defect_eq_half_trace_square
+#print axioms FormalResearch.RiemannHypothesis.phase_defect_eq_half_trace_square
+#check FormalResearch.RiemannHypothesis.unit_phase_defect_dictionary
+#print axioms FormalResearch.RiemannHypothesis.unit_phase_defect_dictionary
+#check FormalResearch.RiemannHypothesis.phase_defect_nonneg
+#print axioms FormalResearch.RiemannHypothesis.phase_defect_nonneg
+#check FormalResearch.RiemannHypothesis.phase_projector_is_hermitian
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_is_hermitian
+#check FormalResearch.RiemannHypothesis.phase_projector_idempotent
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_idempotent
+#check FormalResearch.RiemannHypothesis.phase_projector_mul_vec
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_mul_vec
+#check FormalResearch.RiemannHypothesis.phase_projector_mul_vec_eq_smul_line
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_mul_vec_eq_smul_line
+#check FormalResearch.RiemannHypothesis.phase_projector_fixes_line
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_fixes_line
+#check FormalResearch.RiemannHypothesis.phase_projector_range
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_range
+#check FormalResearch.RiemannHypothesis.phase_line_vector_ne_zero
+#print axioms FormalResearch.RiemannHypothesis.phase_line_vector_ne_zero
+#check FormalResearch.RiemannHypothesis.phase_projector_rank_one
+#print axioms FormalResearch.RiemannHypothesis.phase_projector_rank_one
+```

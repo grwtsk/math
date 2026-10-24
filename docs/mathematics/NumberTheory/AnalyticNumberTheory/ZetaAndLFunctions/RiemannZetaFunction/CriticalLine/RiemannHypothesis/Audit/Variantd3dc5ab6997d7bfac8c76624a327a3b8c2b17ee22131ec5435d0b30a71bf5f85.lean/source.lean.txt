@@ -1,0 +1,71 @@
+import FormalResearch.RiemannHypothesis.SourceHigherPrimePowerStorage
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceHigherPrimePowerStorage
+#check translationStorage_le_two_norm_sq
+#print axioms translationStorage_le_two_norm_sq
+#check higherStorage_summable
+#print axioms higherStorage_summable
+#check higherStorage
+#print axioms higherStorage
+#check higherStorage_nonneg
+#print axioms higherStorage_nonneg
+#check higherStorage_le_two_mass_norm_sq
+#print axioms higherStorage_le_two_mass_norm_sq
+#check higherCorrelation_summable
+#print axioms higherCorrelation_summable
+#check higherCorrelation
+#print axioms higherCorrelation
+#check higher_reconstruction
+#print axioms higher_reconstruction
+#check higherSourceStorage
+#print axioms higherSourceStorage
+#check higherSourceStorage_nonneg
+#print axioms higherSourceStorage_nonneg
+#check higherSourceStorage_le_two_baseline
+#print axioms higherSourceStorage_le_two_baseline
+#check higherAtomCoordinates
+#print axioms higherAtomCoordinates
+#check higherAtomCoordinates_injective
+#print axioms higherAtomCoordinates_injective
+#check higherInventoryIndex
+#print axioms higherInventoryIndex
+#check higherAtomInventory
+#print axioms higherAtomInventory
+#check higherInventoryIndex_coordinates
+#print axioms higherInventoryIndex_coordinates
+#check higherCoordinates_mem_inventory_iff
+#print axioms higherCoordinates_mem_inventory_iff
+#check mem_higherAtomInventory_iff
+#print axioms mem_higherAtomInventory_iff
+#check higher_source_coefficient_eq
+#print axioms higher_source_coefficient_eq
+#check higher_source_coefficient_zero_outside
+#print axioms higher_source_coefficient_zero_outside
+#check higherPrimePowerMoment_eq_atom_sum
+#print axioms higherPrimePowerMoment_eq_atom_sum
+#check higherPrimePowerMoment_eq_infinite_correlation
+#print axioms higherPrimePowerMoment_eq_infinite_correlation
+#check higherPrimePowerMoment_add_storage_eq_baseline
+#print axioms higherPrimePowerMoment_add_storage_eq_baseline
+#check higher_storage_atom_outside
+#print axioms higher_storage_atom_outside
+#check higherVisibleBaseline
+#print axioms higherVisibleBaseline
+#check higherVisibleStorage
+#print axioms higherVisibleStorage
+#check higherVisibleBaseline_le_baseline
+#print axioms higherVisibleBaseline_le_baseline
+#check higherVisibleStorage_nonneg
+#print axioms higherVisibleStorage_nonneg
+#check higherMoment_eq_visible_baseline_sub_storage
+#print axioms higherMoment_eq_visible_baseline_sub_storage
+#check higherSourceStorage_padding
+#print axioms higherSourceStorage_padding
+#check residual_firstPrime_storage_balance
+#print axioms residual_firstPrime_storage_balance
+#check higher_storage_atom_of_support
+#print axioms higher_storage_atom_of_support
+#check higher_two_cube_touching_fixture
+#print axioms higher_two_cube_touching_fixture
+#check higher_two_cube_omitted_fixture
+#print axioms higher_two_cube_omitted_fixture

@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFullZeroContourQualified.Variant100af06beeda79e8816a6a7444c89b2c14e002a24008114751205f45d5edc083
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `50789c8c3fc30fdfebe55084515e7e01c191a89c` · SHA-256 `100af06beeda79e8816a6a7444c89b2c14e002a24008114751205f45d5edc083`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFullZeroContour
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualInitialPrimeMellin_one_sub
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution_summable
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine_eq_digamma
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution_eq_arch_sub_residual
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actual_mertensResidual_eq_arch_sub_half_zero
+#print FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actual_mertensResidual_eq_arch_re_sub_half_zero_re
+```

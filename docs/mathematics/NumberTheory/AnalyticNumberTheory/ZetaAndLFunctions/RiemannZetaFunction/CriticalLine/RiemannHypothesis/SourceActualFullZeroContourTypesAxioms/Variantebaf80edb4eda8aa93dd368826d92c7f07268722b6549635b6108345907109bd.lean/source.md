@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFullZeroContourTypesAxioms.Variantebaf80edb4eda8aa93dd368826d92c7f07268722b6549635b6108345907109bd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7498e9ff5d1a2c71b7a212711bad26e8bef33276` · SHA-256 `e25b58e82ccb1e27a4f5fb239747dfa4f037039a2019f586b2b2991fbef0d6cc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFullZeroContour.Variant895d732760ef87fd2b801b72719559ba26c61a2e7915ca80dc0620757212b096","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"895d732760ef87fd2b801b72719559ba26c61a2e7915ca80dc0620757212b096","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualFullZeroContour.Variant895d732760ef87fd2b801b72719559ba26c61a2e7915ca80dc0620757212b096","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"895d732760ef87fd2b801b72719559ba26c61a2e7915ca80dc0620757212b096","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-bessel-contour-recovery/SourceActualFullZeroContourTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFullZeroContour
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFullZeroContour.Variant895d732760ef87fd2b801b72719559ba26c61a2e7915ca80dc0620757212b096
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualInitialPrimeMellin_one_sub
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualInitialPrimeMellin_one_sub
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution_summable
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine_eq_digamma
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualArchimedeanLine_eq_digamma
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution_eq_arch_sub_residual
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actualFullZeroContribution_eq_arch_sub_residual
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actual_mertensResidual_eq_arch_sub_half_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actual_mertensResidual_eq_arch_sub_half_zero
+#check FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actual_mertensResidual_eq_arch_re_sub_half_zero_re
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFullZeroContour.actual_mertensResidual_eq_arch_re_sub_half_zero_re
+```

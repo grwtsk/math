@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.LedgerAlgebraAudit.Variant168885564dc5d1904ab45f0d202e2fdc3a0742de2d07941afb876358affc02b0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9fe4cd687de3cb780d25740666e1da7deaab13f` · SHA-256 `dc37fbcf437b7c8f8b67d04c0c3198c0dd73b4abee49360903cc452d726b964b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSamplingLedger.Variant80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSamplingLedger.Variant80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/pointwise-sampling/LedgerAlgebraAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSamplingLedger
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSamplingLedger.Variant80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36
+
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.correlationRow
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.correlationRow
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.derivativeRow
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.derivativeRow
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.logCorrelationCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.logCorrelationCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.logDerivativeCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.logDerivativeCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainCorrelationCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainCorrelationCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainDerivativeCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainDerivativeCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainLinearMain
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainLinearMain
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.logLinearMain
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.logLinearMain
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortLog_coefficient_aggregation
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortLog_coefficient_aggregation
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortPlain_coefficient_aggregation
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortPlain_coefficient_aggregation
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm_eq_sampling_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm_eq_sampling_inventory
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_plus_coefficientMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_plus_coefficientMainTerm
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_error_of_sampling_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_error_of_sampling_bounds
+```

@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `24e232f54ae5c09de71522b1db4002649d7c2f09` · SHA-256 `206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualMertensOrdinaryLimit
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+```

@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualCriticalColumnTransferAudit.Variant46d3f1a35b8c87edd39a79a443317af044bb48ff1865a40fe5e87b7c3c7b7be1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `abe7fc1cc10c9a9f4b40d4ee67b934025f7d97d6` · SHA-256 `901e9682147697fe8ab923ca45502f67e478fa2e5daee4bbfefbd3a3aff21463`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualCriticalColumnTransfer.Varianta82e46e90d7ec36525057c291950f7c89620c26c10c81821c6c86014a4dec1fc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a82e46e90d7ec36525057c291950f7c89620c26c10c81821c6c86014a4dec1fc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualCriticalColumnTransfer.Varianta82e46e90d7ec36525057c291950f7c89620c26c10c81821c6c86014a4dec1fc","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a82e46e90d7ec36525057c291950f7c89620c26c10c81821c6c86014a4dec1fc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T221448Z-1791324888254173000/RootActualCriticalColumnTransferAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualCriticalColumnTransfer
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualCriticalColumnTransfer.Varianta82e46e90d7ec36525057c291950f7c89620c26c10c81821c6c86014a4dec1fc
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedColumnPrimitive
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedColumnPrimitive
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedLowerColumnTrace
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedLowerColumnTrace
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedInterior
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedInterior
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalUpperColumnTrace
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalUpperColumnTrace
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedColumnPrimitive_at_lower
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedColumnPrimitive_at_lower
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedColumnPrimitive_lower_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.actualCriticalAdjustedColumnPrimitive_lower_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.jointMangoldtErrorWork_eq_critical_adjusted_adjoint
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalColumnTransfer.jointMangoldtErrorWork_eq_critical_adjusted_adjoint
+```

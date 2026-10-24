@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroArithmeticDictionaryAudit.Variant27cbfbfab2b250c2105d08901c6ca4e76720072d24ee47d8773d648d8d977de8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `04f3dfcf286da5314f0df0b4c8f8da73cbf090f5` · SHA-256 `cdfce2c60af7bf42db84af8f20f81a6c2bf7ecc9ea54d43276bf362e104b70c9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroArithmeticDictionary.Variant0c8c93a7b82bb72d479167053bea254d1b93553c413179170c689ff4a4c34ca4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0c8c93a7b82bb72d479167053bea254d1b93553c413179170c689ff4a4c34ca4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualZeroArithmeticDictionary.Variant0c8c93a7b82bb72d479167053bea254d1b93553c413179170c689ff4a4c34ca4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0c8c93a7b82bb72d479167053bea254d1b93553c413179170c689ff4a4c34ca4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T045619Z-1791348979551477000/SourceActualZeroArithmeticDictionaryAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualZeroArithmeticDictionary
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroArithmeticDictionary.Variant0c8c93a7b82bb72d479167053bea254d1b93553c413179170c689ff4a4c34ca4
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualCorrelation_paperFT_eq_sourceSquare
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualCorrelation_paperFT_eq_sourceSquare
+#print FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualCorrelation_paperFT_eq_sourceSquare
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualInitialPrimeMellin_on_half
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualInitialPrimeMellin_on_half
+#print FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualInitialPrimeMellin_on_half
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualGammaBracket_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualGammaBracket_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualGammaBracket_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actual_original_archimedean_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actual_original_archimedean_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actual_original_archimedean_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualArchimedeanLine_eq_half_original
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualArchimedeanLine_eq_half_original
+#print FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualArchimedeanLine_eq_half_original
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+#print FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+```

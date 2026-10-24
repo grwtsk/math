@@ -1,0 +1,15 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalDensityQuadrature
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalDensityQuadrature
+
+#print criticalDensity
+#print criticalDensityPrefixDiscrepancy
+#print criticalDensity_mem_Icc
+#print criticalDensity_integral
+#print criticalDensityPrefixDiscrepancy_eq
+#print criticalDensity_integral_pos
+#print criticalDensity_mass_lt_raw_length
+#print criticalDensity_weighted_pairedTailTest
+#print criticalDensity_quadrature_eq_full_drift
+#print criticalRemovedPairedWork_eq_density_quadrature

@@ -1,0 +1,99 @@
+# squarefree_finset_prod
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:94121c16-6ae6-5abe-7c3b-e955f83d224c",
+  "kind": "theorem",
+  "lexical_name": "squarefree_finset_prod",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "squarefree-finset-prod--3d4d28a3694143bc704e9b9f",
+  "source": {
+    "blob": "7435811adf3ef6d8cc94c8ca0a6b6f48844437a8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 116,
+    "line": 99,
+    "path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:3d4d28a3694143bc704e9b9f2b1bb26a4671140a67c2560cc1c98354ee385690",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:94121c16-6ae6-5abe-7c3b-e955f83d224c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 99–116.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private theorem squarefree_finset_prod {ι : Type*} (f : ι → ℕ) {s : Finset ι}
+    (hf : ∀ i ∈ s, Squarefree (f i))
+    (h : Set.Pairwise (s : Set ι) (Function.onFun Nat.Coprime f)) :
+    Squarefree (∏ i ∈ s, f i) := by
+  induction s using Finset.cons_induction with
+  | empty => simp
+  | cons i s his ih =>
+      simp only [Finset.prod_cons]
+      simp only [Finset.mem_cons, forall_eq_or_imp] at hf
+      rw [Finset.coe_cons,
+        Set.pairwise_insert_of_symm_of_notMem (by simpa using his)] at h
+      rw [Nat.squarefree_mul]
+      · exact ⟨hf.1, ih hf.2 h.1⟩
+      apply Nat.Coprime.prod_right
+      intro j hj
+      exact h.2 j hj
+
+/-- Each multiplicity layer is squarefree: every selected prime occurs once. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean#L99).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7435811adf3ef6d8cc94c8ca0a6b6f48844437a8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

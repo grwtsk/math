@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant1690e0ce759b667bd6cf663d963eb50d2fd9068c21bc528c24a5328a13552d6a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5635a80166cf6a4187ee84d215381e06698a4eb5` · SHA-256 `1690e0ce759b667bd6cf663d963eb50d2fd9068c21bc528c24a5328a13552d6a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualCriticalHalfCrude
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCriticalHalfCrudeConstant
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCriticalHalfCrudeConstant
+#check FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCriticalMoebiusHalf_abs_le_harmonic
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCriticalMoebiusHalf_abs_le_harmonic
+#check FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.finiteHalfHarmonic_le_calibrated_sqrt
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.finiteHalfHarmonic_le_calibrated_sqrt
+#check FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCenteredHalfZetaMain_abs_le_crude_sqrt
+#print axioms FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCenteredHalfZetaMain_abs_le_crude_sqrt
+```

@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant543d70750b90469376c952bf93d9d5cf63614168e79e7d12846e0c66b27f3433
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8abe19800404cbcecebaf7c807311e8509e57b43` · SHA-256 `543d70750b90469376c952bf93d9d5cf63614168e79e7d12846e0c66b27f3433`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualCriticalCovarianceNormalizedDecay
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualNormalizedCriticalCovariance
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualCriticalKernel_edge_abs_le
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualCriticalErrorCovariance_late_edge_abs_le
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualNormalizedCriticalEarlyBudget
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualNormalizedCriticalEarly_abs_le
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualNormalizedCriticalEarlyBudget_tendsto_zero
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualNormalizedCriticalCovariance_abs_le
+#print FormalResearch.RiemannHypothesis.ActualCriticalCovarianceNormalizedDecay.actualNormalizedCriticalCovariance_tendsto_zero
+```

@@ -1,0 +1,57 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant02bfef626f5059c29a0de7ee8a37e11f9ebec8b3f00ca573fdd9511f722946b4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `792f66ab2478d83210d37ecd0641c74c1c61162b` · SHA-256 `02bfef626f5059c29a0de7ee8a37e11f9ebec8b3f00ca573fdd9511f722946b4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+
+#check firstPrimeMoment
+#print axioms firstPrimeMoment
+#check primeExponentInventory
+#print axioms primeExponentInventory
+#check higherPrimePowerInventory
+#print axioms higherPrimePowerInventory
+#check higherPrimePowerMoment
+#print axioms higherPrimePowerMoment
+#check source_coefficient_zero_of_not_isPrimePow
+#print axioms source_coefficient_zero_of_not_isPrimePow
+#check primeExponentInventory_pow_injective
+#print axioms primeExponentInventory_pow_injective
+#check closedPrimeMoment_eq_primeExponent_sum
+#print axioms closedPrimeMoment_eq_primeExponent_sum
+#check closedPrimeMoment_eq_first_square_higher
+#print axioms closedPrimeMoment_eq_first_square_higher
+#check prime_power_source_coefficient
+#print axioms prime_power_source_coefficient
+#check prime_power_source_zero_exponent_guard
+#print axioms prime_power_source_zero_exponent_guard
+#check higherPrimePowerBudget_summability
+#print axioms higherPrimePowerBudget_summability
+#check higherPrimePowerBudget
+#print axioms higherPrimePowerBudget
+#check higherPrimePowerBudget_nonneg
+#print axioms higherPrimePowerBudget_nonneg
+#check prime_power_source_coefficient_abs_le
+#print axioms prime_power_source_coefficient_abs_le
+#check higherPrimePowerMoment_abs_le
+#print axioms higherPrimePowerMoment_abs_le
+#check residual_sub_firstPrime_main_abs_le
+#print axioms residual_sub_firstPrime_main_abs_le
+#check residual_firstPrime_uniform_replacement_error
+#print axioms residual_firstPrime_uniform_replacement_error
+#check FirstPrimeTailUpperBound
+#print axioms FirstPrimeTailUpperBound
+#check firstPrime_tail_iff_residual_tail
+#print axioms firstPrime_tail_iff_residual_tail
+#check signed_pairing_tail_iff_firstPrime_tail
+#print axioms signed_pairing_tail_iff_firstPrime_tail
+#check estimate_of_firstPrime_tail
+#print axioms estimate_of_firstPrime_tail
+```

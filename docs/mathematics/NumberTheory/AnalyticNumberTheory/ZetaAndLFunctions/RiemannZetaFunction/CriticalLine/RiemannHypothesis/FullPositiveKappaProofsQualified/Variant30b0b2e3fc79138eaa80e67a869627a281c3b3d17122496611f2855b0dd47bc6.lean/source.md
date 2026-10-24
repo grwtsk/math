@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FullPositiveKappaProofsQualified.Variant30b0b2e3fc79138eaa80e67a869627a281c3b3d17122496611f2855b0dd47bc6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f5f92b6c25ebd515c78a1fe004b67b67d25cc1e` · SHA-256 `68c6b0661942e4de993e7425daf959aaeef210036bfdc1484f3f505033ba6ec7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFullPositiveKappa.Variantd850dc141c268cf47ae6ae4b7615f6a70745f72688751cd015d9b963d938e978","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d850dc141c268cf47ae6ae4b7615f6a70745f72688751cd015d9b963d938e978","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceFullPositiveKappa.Variantd850dc141c268cf47ae6ae4b7615f6a70745f72688751cd015d9b963d938e978","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"d850dc141c268cf47ae6ae4b7615f6a70745f72688751cd015d9b963d938e978","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/FullPositiveKappaProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFullPositiveKappa
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFullPositiveKappa.Variantd850dc141c268cf47ae6ae4b7615f6a70745f72688751cd015d9b963d938e978
+
+set_option pp.all true
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappaWeight_eq_moment_densities
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappaWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.exp_mul_lowerLogWeight
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.lowerLogWeight_integral
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.lowerLogWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappaWeight_succ_eq_lower
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappa_lower_integral_succ
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.upperKappaMeanWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.upperKappaMean_integral_succ
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappaWeight_eq_upper_centered_add_mean
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappa_upper_integral_succ
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappa_eq_upper_add_lower_succ
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappa_four_endpoint_corrections
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.correctedFourKappaJet_eq_full_positive_jet
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.correctedCompleteOmega_eq_full_positive_kappa
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappaWeight
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.fullPositiveKappa
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.lowerLogWeight
+#print FormalResearch.RiemannHypothesis.SourceFullPositiveKappa.upperKappaMeanWeight
+```

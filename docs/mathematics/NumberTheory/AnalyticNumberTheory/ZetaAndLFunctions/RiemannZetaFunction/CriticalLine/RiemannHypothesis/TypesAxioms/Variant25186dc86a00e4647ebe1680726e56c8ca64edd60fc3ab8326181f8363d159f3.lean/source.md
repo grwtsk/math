@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant25186dc86a00e4647ebe1680726e56c8ca64edd60fc3ab8326181f8363d159f3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `456b65e7efe2bf824910cd290735a4a411066bcb` · SHA-256 `8075f4f5d799af8f0b65581d15da64207076589a3ec5a3475f02d738463a52d4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiFloorSignBlocks.Variant24460b0d3ec4ff7407ba8dc319e3bf223d6f5c5e45b72affb61a86c556b59422","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"24460b0d3ec4ff7407ba8dc319e3bf223d6f5c5e45b72affb61a86c556b59422","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPsiFloorSignBlocks.Variant24460b0d3ec4ff7407ba8dc319e3bf223d6f5c5e45b72affb61a86c556b59422","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"24460b0d3ec4ff7407ba8dc319e3bf223d6f5c5e45b72affb61a86c556b59422","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/psi-floor-sign/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPsiFloorSignBlocks
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiFloorSignBlocks.Variant24460b0d3ec4ff7407ba8dc319e3bf223d6f5c5e45b72affb61a86c556b59422
+
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actualPsiFloorDiscrepancy
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actualPsiFloorDiscrepancy
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_on_six_block
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_on_six_block
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_on_nineteen_block
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_on_nineteen_block
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_negative_block
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_negative_block
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_positive_block
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_positive_block
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_unit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_unit
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_not_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_not_nonnegative
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_not_nonpositive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_not_nonpositive
+```

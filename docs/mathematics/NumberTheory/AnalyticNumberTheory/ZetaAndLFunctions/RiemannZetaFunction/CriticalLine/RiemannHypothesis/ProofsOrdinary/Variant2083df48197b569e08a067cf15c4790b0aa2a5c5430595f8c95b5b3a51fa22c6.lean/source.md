@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant2083df48197b569e08a067cf15c4790b0aa2a5c5430595f8c95b5b3a51fa22c6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fc242a1f4e4c3567a6bfec2f4fcf196b542e79a0` · SHA-256 `2083df48197b569e08a067cf15c4790b0aa2a5c5430595f8c95b5b3a51fa22c6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFarPeriodicWorkDecay
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff_source_guards
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_eq_log
+```

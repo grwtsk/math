@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialDecayAudit.Variant6df627bbc78ac5253399e952ef5666395e492e891b3192488f6dd2d449fc8a80
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `31221c70e546af822d049dc761368d7251ae1c22` · SHA-256 `9c09af71db1b1b860f9ef0f1d01a80b9d198a092688642e75c5c711c2e44821b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialDecay.Variant6ce1676fcbbe3190b4f8cfc00f046320ec4e6ae120ec98cc2818bd75d3c2000a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6ce1676fcbbe3190b4f8cfc00f046320ec4e6ae120ec98cc2818bd75d3c2000a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCancelledFactorialDecay.Variant6ce1676fcbbe3190b4f8cfc00f046320ec4e6ae120ec98cc2818bd75d3c2000a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6ce1676fcbbe3190b4f8cfc00f046320ec4e6ae120ec98cc2818bd75d3c2000a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T193210Z-1791315130285232000/SourceCancelledFactorialDecayAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCancelledFactorialDecay
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialDecay.Variant6ce1676fcbbe3190b4f8cfc00f046320ec4e6ae120ec98cc2818bd75d3c2000a
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+```

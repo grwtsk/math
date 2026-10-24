@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialMellinCancellationAuditProofsqualified.Variant910049fcc8bccb57ba6e4b2c7ddf81ebd5f08e58b16fcb6ffde2e303d9b0e657
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9cd48779443adb23db926f01f8f177d36ef9e89` · SHA-256 `de2e3fb61aa26fb98ca7b276c1126e42dcd292bb8c33a3843298560ea233dfc8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialMellinCancellation.Variant9bface51f888bca0fe3f1f1ffbfd07b024b0789a5ee3d4129f27fe1f39b4f412","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9bface51f888bca0fe3f1f1ffbfd07b024b0789a5ee3d4129f27fe1f39b4f412","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceFactorialMellinCancellation.Variant9bface51f888bca0fe3f1f1ffbfd07b024b0789a5ee3d4129f27fe1f39b4f412","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"9bface51f888bca0fe3f1f1ffbfd07b024b0789a5ee3d4129f27fe1f39b4f412","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceFactorialMellinCancellationAuditProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFactorialMellinCancellation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialMellinCancellation.Variant9bface51f888bca0fe3f1f1ffbfd07b024b0789a5ee3d4129f27fe1f39b4f412
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorial_log_closed_Abel
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialLogDefect_eq_fractional_primitive
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialLogDefect_eq_lower
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalTriangle_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalPrimitive_mellin_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalPrimitive_mellin_integral
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_eq_lower
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_lower_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_lower_integral
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_eq_upper
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_upper_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_upper_integral
+#print FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fullPositiveKappa_one_eq_factorial_mellin
+```

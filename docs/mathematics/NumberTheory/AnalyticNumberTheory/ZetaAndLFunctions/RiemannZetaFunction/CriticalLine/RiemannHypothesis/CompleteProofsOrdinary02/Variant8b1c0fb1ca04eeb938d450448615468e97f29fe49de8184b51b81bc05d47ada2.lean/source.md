@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CompleteProofsOrdinary02.Variant8b1c0fb1ca04eeb938d450448615468e97f29fe49de8184b51b81bc05d47ada2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3a3926f29a885b8f47f748244c6b4e90557999bc` · SHA-256 `8b1c0fb1ca04eeb938d450448615468e97f29fe49de8184b51b81bc05d47ada2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualLowerTraceArithmeticExpansion
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.deepTerms true
+set_option pp.proofs true
+set_option pp.funBinderTypes true
+set_option pp.letVarTypes true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnHalfMangoldtRow
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnMangoldtBracket
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest_at_upper
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeWindow_eq_halfRow
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnTimeFactor_eq_closed_window
+#print FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualAdjointLowerColumnTrace_eq_half_inventory_product
+```

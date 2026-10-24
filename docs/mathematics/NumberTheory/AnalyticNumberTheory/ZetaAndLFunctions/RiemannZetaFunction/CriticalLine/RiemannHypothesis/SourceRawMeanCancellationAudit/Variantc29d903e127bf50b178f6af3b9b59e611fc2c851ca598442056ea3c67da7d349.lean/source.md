@@ -1,0 +1,56 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRawMeanCancellationAudit.Variantc29d903e127bf50b178f6af3b9b59e611fc2c851ca598442056ea3c67da7d349
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2754091ad9dba681e5a547f5ce0129f0ab744520` · SHA-256 `e89e3ddbc00cf6df7ee79718ad547ccf583c6ce216d576cb6dd4c01439ee96e3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRawMeanCancellation.Varianta927d922bd46471f7eca5e9d71cbb6148b126b2fd43f86f0d111fe3afdfaa1ec","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a927d922bd46471f7eca5e9d71cbb6148b126b2fd43f86f0d111fe3afdfaa1ec","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceRawMeanCancellation.Varianta927d922bd46471f7eca5e9d71cbb6148b126b2fd43f86f0d111fe3afdfaa1ec","mathematical_subject":"Foundations.Unclassified","original_sha256":"a927d922bd46471f7eca5e9d71cbb6148b126b2fd43f86f0d111fe3afdfaa1ec","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/xi-analysis/mean-cancellation/SourceRawMeanCancellationAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceRawMeanCancellation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRawMeanCancellation.Varianta927d922bd46471f7eca5e9d71cbb6148b126b2fd43f86f0d111fe3afdfaa1ec
+
+set_option pp.all true
+set_option pp.universes true
+#check RH16RawMeanCancellation.rawIndependentMainAt
+#check RH16RawMeanCancellation.rawCoefficient
+#check RH16RawMeanCancellation.rawPrimeFirstDiagonal
+#check RH16RawMeanCancellation.rawPrimeLinearMain
+#check RH16RawMeanCancellation.rawPrimeCorrectedAt
+#check RH16RawMeanCancellation.mainTermAt_mean_recovery
+#check RH16RawMeanCancellation.jointAt_global_mean_cancels
+#check RH16RawMeanCancellation.readoutAt_global_mean_cancels
+#check RH16RawMeanCancellation.raw_beta_of_minFac_gt
+#check RH16RawMeanCancellation.raw_beta_at_large_prime_power
+#check RH16RawMeanCancellation.raw_large_prime_physical_diagonal
+#check RH16RawMeanCancellation.raw_first_diagonal_eq_retained
+#check RH16RawMeanCancellation.raw_first_diagonal_fixed_main_error
+#check RH16RawMeanCancellation.raw_main_prime_linear_cancels
+#check RH16RawMeanCancellation.actual_readout_raw_prime_recovery
+#check RH16RawMeanCancellation.actual_readout_raw_prime_fixed_error
+#check RH16RawMeanCancellation.estimate_of_actual_raw_prime_corrected_tail
+#print axioms RH16RawMeanCancellation.rawIndependentMainAt
+#print axioms RH16RawMeanCancellation.rawCoefficient
+#print axioms RH16RawMeanCancellation.rawPrimeFirstDiagonal
+#print axioms RH16RawMeanCancellation.rawPrimeLinearMain
+#print axioms RH16RawMeanCancellation.rawPrimeCorrectedAt
+#print axioms RH16RawMeanCancellation.mainTermAt_mean_recovery
+#print axioms RH16RawMeanCancellation.jointAt_global_mean_cancels
+#print axioms RH16RawMeanCancellation.readoutAt_global_mean_cancels
+#print axioms RH16RawMeanCancellation.raw_beta_of_minFac_gt
+#print axioms RH16RawMeanCancellation.raw_beta_at_large_prime_power
+#print axioms RH16RawMeanCancellation.raw_large_prime_physical_diagonal
+#print axioms RH16RawMeanCancellation.raw_first_diagonal_eq_retained
+#print axioms RH16RawMeanCancellation.raw_first_diagonal_fixed_main_error
+#print axioms RH16RawMeanCancellation.raw_main_prime_linear_cancels
+#print axioms RH16RawMeanCancellation.actual_readout_raw_prime_recovery
+#print axioms RH16RawMeanCancellation.actual_readout_raw_prime_fixed_error
+#print axioms RH16RawMeanCancellation.estimate_of_actual_raw_prime_corrected_tail
+#print RH16RawMeanCancellation.rawIndependentMainAt
+#print RH16RawMeanCancellation.rawPrimeCorrectedAt
+#print RH16RawMeanCancellation.rawPrimeLinearMain
+```

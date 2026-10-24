@@ -1,0 +1,20 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Axioms.Variant481c2ba2ecb7a369be85d2d2b570f9320dde8eb5e2734cd63c241678e768e784
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `56f1321712b9d218e56d40c276191641f2c21af0` · SHA-256 `481c2ba2ecb7a369be85d2d2b570f9320dde8eb5e2734cd63c241678e768e784`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePhysicalBoundaryBalance
+
+set_option autoImplicit false
+
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.typeTwoSource_eq_negative_physicalRows
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.signed_physicalDeletedRows_eq_negative_rawDiagonal
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.centeredDeletedDiagonal_eq_signed_physical_payment
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.mertensResidual_eq_short_add_signed_column_sub_strip
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.divisorRemainder_eq_column_strip_and_sampling_payments
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.jointSignedRemainder_eq_physical_boundary_payments
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.short_add_signed_column_sub_strip_eq_closedPrimeMoment
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.generic_zero_cutoff_long_beta_unit_fails
+```

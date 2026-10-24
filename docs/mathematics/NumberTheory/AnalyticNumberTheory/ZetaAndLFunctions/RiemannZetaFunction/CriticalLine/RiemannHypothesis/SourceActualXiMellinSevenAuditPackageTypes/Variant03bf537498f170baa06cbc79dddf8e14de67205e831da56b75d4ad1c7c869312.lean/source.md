@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinSevenAuditPackageTypes.Variant03bf537498f170baa06cbc79dddf8e14de67205e831da56b75d4ad1c7c869312
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2766548bc6badc018945863d84ae36bd165b4272` · SHA-256 `1ad622084a5216bbf475a06725c42ed9bf7985358f9b7ea3194fb7c143251893`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinSeven.Variant7417a873250b3771883a4b50cb392ae971120bc1c24b74cb3385e47c11a25c11","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7417a873250b3771883a4b50cb392ae971120bc1c24b74cb3385e47c11a25c11","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiMellinSeven.Variant7417a873250b3771883a4b50cb392ae971120bc1c24b74cb3385e47c11a25c11","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7417a873250b3771883a4b50cb392ae971120bc1c24b74cb3385e47c11a25c11","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualXiMellinSevenAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiMellinSeven
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinSeven.Variant7417a873250b3771883a4b50cb392ae971120bc1c24b74cb3385e47c11a25c11
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualClosedMangoldtMellinHeadSeven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualClosedMangoldtMellinHeadSeven
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiComplexMellinTailSeven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiComplexMellinTailSeven
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualXiComplexMellinTailSeven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualXiComplexMellinTailSeven
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiMellinLowerSeven_eq_closed_head
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiMellinLowerSeven_eq_closed_head
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiComplexMellinTailSeven_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiComplexMellinTailSeven_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiComplexMellinTailSeven_mul_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualPsiComplexMellinTailSeven_mul_eq
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualXiComplexMellinTailSeven_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualXiComplexMellinTailSeven_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualXiComplexMellinTailSeven_mul_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven.actualXiComplexMellinTailSeven_mul_eq
+```

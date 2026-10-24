@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBoundSplitAudit.Variantbed92b9ce52687af519f0cf0a2a4cd417456810887a21d70d9a090bcdb511f8d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2490c6fe7469ebe50515d74e4613bf356a8b0948` · SHA-256 `93d5c784f2fdabbdaa89d741ff84973f9c973fc38caf7003645860d3c7d5d74e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBound.Variant154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualEarlyLowerBound.Variant154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","mathematical_subject":"Foundations.Unclassified","original_sha256":"154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T184307Z-1791312187131651000/ActualEarlyLowerBoundSplitAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualEarlyLowerBound
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBound.Variant154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#print axioms RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#check RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#print axioms RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#print RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+```

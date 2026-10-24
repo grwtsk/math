@@ -1,0 +1,25 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalRemovedPrimeWork
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalRemovedPrimeWork
+
+#check criticalRemovedPairedWork
+#print axioms criticalRemovedPairedWork
+#check criticalRemovedRemainder
+#print axioms criticalRemovedRemainder
+#check CriticalRemovedPairedTailLowerBound
+#print axioms CriticalRemovedPairedTailLowerBound
+#check criticalRemovedPairedWork_eq
+#print axioms criticalRemovedPairedWork_eq
+#check criticalRemovedPairedWork_eq_squareRemoved
+#print axioms criticalRemovedPairedWork_eq_squareRemoved
+#check mertensResidual_eq_criticalRemoved
+#print axioms mertensResidual_eq_criticalRemoved
+#check criticalRemovedRemainder_uniformly_bounded
+#print axioms criticalRemovedRemainder_uniformly_bounded
+#check criticalRemoved_tail_iff_residual_tail
+#print axioms criticalRemoved_tail_iff_residual_tail
+#check criticalRemovedPairedWork_eq_prime_quadrature
+#print axioms criticalRemovedPairedWork_eq_prime_quadrature
+#check criticalRemoved_error_window
+#print axioms criticalRemoved_error_window

@@ -1,0 +1,12 @@
+import FormalResearch.RiemannHypothesis.Laplace.PoleCertificate
+
+#print axioms FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.point_pair_cleared_tendsto
+#print axioms FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.point_pair_principal_coefficient_ne_zero
+#print axioms FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.remainder_analytic_at
+#print axioms FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.continuedTransform_cleared_tendsto
+#print axioms FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.source_exact_ninth_order_pole
+#print axioms FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.pole_certificate_checkpoint
+
+example :
+    FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.PoleCertificateCheckpoint :=
+  FormalResearch.RiemannHypothesis.Laplace.PoleCertificate.pole_certificate_checkpoint

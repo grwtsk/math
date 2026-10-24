@@ -1,0 +1,111 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialPhaseNative02.Variant48626ce4e6d6ea3e9e1b6e91c5ddeee4b2ff8eb3a3e027cdb2c5eff0872f9913
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3ee45355eef794e85d06f6013475696266474bcd` · SHA-256 `d379376ebf3a242fd2db0693c6e4d96b6919c1fe007b662d5e3c9367ef9ea3d2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.A.Variant8425a88e29a1e74a56a17895c518ba2adf239527f441a67a69fcd2c3a7abb241","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8425a88e29a1e74a56a17895c518ba2adf239527f441a67a69fcd2c3a7abb241","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.A.Variant8425a88e29a1e74a56a17895c518ba2adf239527f441a67a69fcd2c3a7abb241","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"8425a88e29a1e74a56a17895c518ba2adf239527f441a67a69fcd2c3a7abb241","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-euler-potential-phase-v1/SourceActualEulerPotentialPhase-native02.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerLogarithmicPrimitive
+
+/-!
+Literal finite Mangoldt logarithmic-potential phase tests. The real part is an
+actual closed cosine inventory, not a positive real function on a vertical line.
+These tests retain every prime power and do not determine the signed product
+with the actual Mellin slope or supply an original residual upper bound.
+Research direction: grwtsk contributors. Formal development: OpenAI Codex.
+-/
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.A.Variant8425a88e29a1e74a56a17895c518ba2adf239527f441a67a69fcd2c3a7abb241
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase
+open Complex
+open SourceActualEulerLogarithmicPrimitive
+noncomputable section
+
+private def a (c : ℝ) (n : ℕ) : ℝ :=
+  (ArithmeticFunction.vonMangoldt n / Real.log n) * Real.exp (-c * Real.log n)
+
+private theorem a_nonneg (c : ℝ) (n : ℕ) : 0 ≤ a c n := by
+  rcases eq_or_ne n 0 with rfl | hn0
+  · simp [a]
+  rcases eq_or_ne n 1 with rfl | hn1
+  · simp [a]
+  have hn2 : 2 ≤ n := by omega
+  exact mul_nonneg (div_nonneg ArithmeticFunction.vonMangoldt_nonneg
+    (Real.log_pos (by exact_mod_cast hn2)).le) (Real.exp_pos _).le
+
+private theorem logterm_re (c t : ℝ) (n : ℕ) :
+    ((((ArithmeticFunction.vonMangoldt n / Real.log n : ℝ):ℂ) *
+      Complex.exp (-((c:ℂ)+(t:ℂ)*I)*(Real.log n:ℂ))).re) =
+    a c n * Real.cos (t * Real.log n) := by
+  simp only [Complex.mul_re, Complex.mul_im, Complex.exp_re, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.neg_re, Complex.neg_im,
+    Complex.add_re, Complex.add_im, zero_mul, mul_zero, add_zero, zero_add, sub_zero,
+    zero_sub, Real.cos_neg, a]
+  ring
+
+/-- Exact real-phase readout of the full actual closed inventory. -/
+theorem actualClosedPrimeLogPotential_re (A c t : ℝ) :
+    (actualClosedPrimeLogPotential A ((c:ℂ)+(t:ℂ)*I)).re =
+      ∑ n ∈ Finset.range (⌊Real.exp (2*A)⌋₊+1),
+        a c n * Real.cos (t * Real.log n) := by
+  simp only [actualClosedPrimeLogPotential, Complex.re_sum, logterm_re]
+
+/-- Actual centered potential has a nonpositive real part at every frequency. -/
+theorem actualClosedPrimeLogPotential_centered_re_nonpos (A c t : ℝ) :
+    (actualClosedPrimeLogPotential A ((c:ℂ)+(t:ℂ)*I) -
+      actualClosedPrimeLogPotential A (c:ℂ)).re ≤ 0 := by
+  have ht := actualClosedPrimeLogPotential_re A c t
+  have hz := actualClosedPrimeLogPotential_re A c 0
+  simp only [Complex.ofReal_zero, zero_mul, add_zero, zero_mul, Real.cos_zero,
+    mul_one] at hz
+  simp only [Complex.sub_re, ht, hz]
+  exact sub_nonpos.mpr (Finset.sum_le_sum fun n _ =>
+    mul_le_of_le_one_right (a_nonneg c n) (Real.cos_le_one _))
+
+private theorem two_in_closed (A : ℝ) (hA : 1 ≤ A) :
+    2 ∈ Finset.range (⌊Real.exp (2*A)⌋₊+1) := by
+  apply Finset.mem_range.mpr
+  have he : (2:ℝ) ≤ Real.exp (2*A) := by
+    have h := Real.add_one_le_exp (2*A)
+    linarith
+  have hf : 2 ≤ ⌊Real.exp (2*A)⌋₊ := (Nat.le_floor_iff (Real.exp_pos _).le).mpr he
+  omega
+
+/-- The actual prime 2 enforces a strict quantitative centered phase drop. -/
+theorem actualClosedPrimeLogPotential_centered_re_prime_two
+    (A c : ℝ) (hA : 1 ≤ A) :
+    (actualClosedPrimeLogPotential A ((c:ℂ)+((Real.pi/Real.log 2:ℝ):ℂ)*I) -
+      actualClosedPrimeLogPotential A (c:ℂ)).re ≤
+      -2 * Real.exp (-c * Real.log 2) := by
+  have hl : Real.log (2:ℝ) ≠ 0 := (Real.log_pos (by norm_num)).ne'
+  have ha : a c 2 = Real.exp (-c * Real.log 2) := by
+    simp [a, ArithmeticFunction.vonMangoldt_apply_prime (by norm_num : Nat.Prime 2), hl]
+  have hc : Real.cos ((Real.pi/Real.log 2) * Real.log (2:ℝ)) = -1 := by
+    rw [div_mul_cancel₀ _ hl, Real.cos_pi]
+  have ht := actualClosedPrimeLogPotential_re A c (Real.pi/Real.log 2)
+  have hz := actualClosedPrimeLogPotential_re A c 0
+  simp only [Complex.ofReal_zero, zero_mul, add_zero, Real.cos_zero, mul_one] at hz
+  rw [Complex.sub_re, ht, hz, ← Finset.sum_sub_distrib]
+  let f : ℕ → ℝ := fun n => a c n * Real.cos ((Real.pi/Real.log 2)*Real.log n)-a c n
+  have hn (n : ℕ) : f n ≤ 0 := by
+    exact sub_nonpos.mpr (mul_le_of_le_one_right (a_nonneg c n) (Real.cos_le_one _))
+  have he : ∑ n ∈ (Finset.range (⌊Real.exp (2*A)⌋₊+1)).erase 2, f n ≤ 0 :=
+    Finset.sum_nonpos fun n _ => hn n
+  have hs := Finset.sum_erase_add (Finset.range (⌊Real.exp (2*A)⌋₊+1)) f
+    (two_in_closed A hA)
+  change ∑ n ∈ Finset.range (⌊Real.exp (2*A)⌋₊+1), f n ≤ _
+  rw [← hs]
+  dsimp [f] at *
+  rw [ha, hc]
+  linarith
+
+end
+end FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase
+```

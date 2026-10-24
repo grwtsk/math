@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroDyadicShellTypesAxioms.Variantaf9d6764f8d365ea8ef539ed8bf95b8bc007d17e48800397388bac13c99cb793
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cec34380ba4e3fbd1b95097fbe000e2a9d45c8d1` · SHA-256 `d41d0231680125dd82b8a7222617cb761bac14476e82d39afe5da58b2812b801`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroDyadicShell.Varianta0c2130afe80d3d5b8deaabe892de92243c3f738f657a0556c1f2052cab4a31f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a0c2130afe80d3d5b8deaabe892de92243c3f738f657a0556c1f2052cab4a31f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualSignedZeroDyadicShell.Varianta0c2130afe80d3d5b8deaabe892de92243c3f738f657a0556c1f2052cab4a31f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a0c2130afe80d3d5b8deaabe892de92243c3f738f657a0556c1f2052cab4a31f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T095949Z-1791367189690800000/SourceActualSignedZeroDyadicShellTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualSignedZeroDyadicShell
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroDyadicShell.Varianta0c2130afe80d3d5b8deaabe892de92243c3f738f657a0556c1f2052cab4a31f
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualCompletedVerticalHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualCompletedVerticalHead
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualFiniteHorizontalCorrection
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualFiniteHorizontalCorrection
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_head_sub
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_head_sub
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualZeroHeightHead_eq_completedVertical_add_horizontal
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualZeroHeightHead_eq_completedVertical_add_horizontal
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_contour_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_contour_difference
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualOffAxisShell_compensated_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualOffAxisShell_compensated_norm_bound
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actual_good_dyadic_offAxis_shell_compensation
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actual_good_dyadic_offAxis_shell_compensation
+```

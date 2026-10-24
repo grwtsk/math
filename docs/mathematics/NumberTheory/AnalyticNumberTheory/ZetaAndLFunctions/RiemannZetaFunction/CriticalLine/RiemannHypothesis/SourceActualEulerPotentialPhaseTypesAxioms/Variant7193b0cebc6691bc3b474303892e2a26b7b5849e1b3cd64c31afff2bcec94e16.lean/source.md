@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialPhaseTypesAxioms.Variant7193b0cebc6691bc3b474303892e2a26b7b5849e1b3cd64c31afff2bcec94e16
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4a40cce10824143a3929d7aee820e7526a5ca6bc` · SHA-256 `7193b0cebc6691bc3b474303892e2a26b7b5849e1b3cd64c31afff2bcec94e16`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEulerPotentialPhase
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_nonpos
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_prime_two
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_prime_two
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re_negative_right_line
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re_negative_right_line
+```

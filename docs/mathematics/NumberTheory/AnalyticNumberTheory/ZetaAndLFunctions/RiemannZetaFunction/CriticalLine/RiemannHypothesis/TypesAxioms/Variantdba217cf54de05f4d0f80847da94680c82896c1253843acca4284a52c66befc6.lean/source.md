@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantdba217cf54de05f4d0f80847da94680c82896c1253843acca4284a52c66befc6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e1c1c781960fcb036f35c43de5dd6a84eb3fe592` · SHA-256 `dba217cf54de05f4d0f80847da94680c82896c1253843acca4284a52c66befc6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszFixedCenterTransfer
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRieszPrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRieszPrimitive
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_readout
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_paid_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_paid_bounds
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_error_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_error_bound
+```

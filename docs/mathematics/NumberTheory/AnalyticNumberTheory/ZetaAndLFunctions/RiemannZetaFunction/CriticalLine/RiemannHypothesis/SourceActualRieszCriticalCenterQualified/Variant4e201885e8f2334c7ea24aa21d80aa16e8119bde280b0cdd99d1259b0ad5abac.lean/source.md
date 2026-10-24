@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCriticalCenterQualified.Variant4e201885e8f2334c7ea24aa21d80aa16e8119bde280b0cdd99d1259b0ad5abac
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f0df1ab008ec4641a01ee979b52e0de64d7270c0` · SHA-256 `55aa1bb0a5f79f492e3ccf277a60bc5fe41a0c199fdb793b99bb5c2b438f5684`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCriticalCenter.Variant8a0c5598ac5d0e84e05129467605c43bc010887b5f5b11f72a94ec98ea606da3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8a0c5598ac5d0e84e05129467605c43bc010887b5f5b11f72a94ec98ea606da3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRieszCriticalCenter.Variant8a0c5598ac5d0e84e05129467605c43bc010887b5f5b11f72a94ec98ea606da3","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"8a0c5598ac5d0e84e05129467605c43bc010887b5f5b11f72a94ec98ea606da3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T081045Z-1791360645128585000/SourceActualRieszCriticalCenterQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszCriticalCenter
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCriticalCenter.Variant8a0c5598ac5d0e84e05129467605c43bc010887b5f5b11f72a94ec98ea606da3
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszCriticalNumerator
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszLimitingLinearCenter
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszLocalConstantCenter
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszCriticalRegularization
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualCompletedZeta_logDeriv_half
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualZeta_logDeriv_half
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszCriticalNumerator_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszCriticalNumerator_analyticAt_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszCriticalRegularization_analyticAt_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRieszCriticalRegularization_eq
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRiesz_finite_center_payment
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCriticalCenter.actualRiesz_finite_center_payment_bound
+```

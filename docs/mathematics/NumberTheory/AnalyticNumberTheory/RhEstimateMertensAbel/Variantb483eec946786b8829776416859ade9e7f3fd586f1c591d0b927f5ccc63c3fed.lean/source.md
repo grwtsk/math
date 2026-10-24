@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.RhEstimateMertensAbel.Variantb483eec946786b8829776416859ade9e7f3fd586f1c591d0b927f5ccc63c3fed
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `11fe8b8e6d7e45268562bf590430c635c9e3cd29` · SHA-256 `b483eec946786b8829776416859ade9e7f3fd586f1c591d0b927f5ccc63c3fed`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.mobius_abel
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.source_window_abel
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.source_window_abel_of_upper_zero
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.abel_identity_of_source_kernel_contract
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.mertens_abel_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.MertensAbelCheckpoint :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.mertens_abel_checkpoint
+```

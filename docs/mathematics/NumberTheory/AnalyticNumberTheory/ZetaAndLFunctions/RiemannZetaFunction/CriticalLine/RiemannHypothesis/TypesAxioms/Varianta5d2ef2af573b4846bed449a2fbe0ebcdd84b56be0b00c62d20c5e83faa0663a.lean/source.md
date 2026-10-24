@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Varianta5d2ef2af573b4846bed449a2fbe0ebcdd84b56be0b00c62d20c5e83faa0663a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db6dcdfbaa7014159245f2a1b6c164e6ccf4baad` · SHA-256 `a5d2ef2af573b4846bed449a2fbe0ebcdd84b56be0b00c62d20c5e83faa0663a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszZeroPole
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRiesz_zero_order_and_multiplicity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRiesz_zero_order_and_multiplicity
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_order_at_actual_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_order_at_actual_zero
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_no_extension_at_actual_right_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_no_extension_at_actual_right_zero
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_order_at_actual_right_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_order_at_actual_right_zero
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_no_extension_at_actual_right_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_no_extension_at_actual_right_zero
+```

@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variante0759ecfd9069bee7899a0daa742319ce2fdd4d0118d1127beaa709c842f34c5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dc075d8e592f3579cb27262dcd0b25d239897e35` · SHA-256 `5cf1caa2e1a04615055e6d786a33b14ef06cd41dd4a33408db2d9e341c7fbdbb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPoleMomentAnnihilation.Variant3fa48553a36a22d51083517e9c07c99c0037355599e02917be4ae4c3cecca9d3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3fa48553a36a22d51083517e9c07c99c0037355599e02917be4ae4c3cecca9d3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceActualPoleMomentAnnihilation.Variant3fa48553a36a22d51083517e9c07c99c0037355599e02917be4ae4c3cecca9d3","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"3fa48553a36a22d51083517e9c07c99c0037355599e02917be4ae4c3cecca9d3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/pole-annihilation/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPoleMomentAnnihilation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPoleMomentAnnihilation.Variant3fa48553a36a22d51083517e9c07c99c0037355599e02917be4ae4c3cecca9d3
+
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_plain_pole_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_plain_pole_derivative_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_log_pole_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_log_pole_derivative_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_mellin_pole_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_mellin_pole_derivative_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiFloorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiFloorPairing
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiFloorDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiContinuousPairing_eq_psi_floor
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_leading_full_complement_sub_psi_floor_abs_le
+```

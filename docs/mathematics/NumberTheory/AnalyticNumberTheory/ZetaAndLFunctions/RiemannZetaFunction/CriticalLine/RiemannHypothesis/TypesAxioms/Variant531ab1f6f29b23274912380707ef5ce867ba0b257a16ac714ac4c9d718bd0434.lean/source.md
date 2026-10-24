@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant531ab1f6f29b23274912380707ef5ce867ba0b257a16ac714ac4c9d718bd0434
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8730eeff378f34fe1a7898992782143d29270d69` · SHA-256 `0bf0d800b2aae64f4c889fc60c7bd8e16299b2ef2e692e2549e793561a98d540`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensOrdinaryLimit.Variant206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMertensOrdinaryLimit.Variant206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualMertensOrdinaryLimit-BodyAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMertensOrdinaryLimit
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensOrdinaryLimit.Variant206c9d6d1f1a872369b414cc9db3b344c1412ddd321b7bdb5ac2fca11eb00121
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+```

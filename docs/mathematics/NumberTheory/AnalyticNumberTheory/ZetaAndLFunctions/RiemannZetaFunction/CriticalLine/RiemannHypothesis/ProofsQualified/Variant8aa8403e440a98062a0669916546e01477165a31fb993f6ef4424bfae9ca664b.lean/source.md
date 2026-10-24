@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant8aa8403e440a98062a0669916546e01477165a31fb993f6ef4424bfae9ca664b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `03e7fabe97383d4e77941fd0b0216c5f989050ad` · SHA-256 `8aa8403e440a98062a0669916546e01477165a31fb993f6ef4424bfae9ca664b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRelativeAffinePayment
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineTrend
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernel_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_eq
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_Pnt_bound
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.criticalRelativePairing_eq_nonaffine_add_payment
+```

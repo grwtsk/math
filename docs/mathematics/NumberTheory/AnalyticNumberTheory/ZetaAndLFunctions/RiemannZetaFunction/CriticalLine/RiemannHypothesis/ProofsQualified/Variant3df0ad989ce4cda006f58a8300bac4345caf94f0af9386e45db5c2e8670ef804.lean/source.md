@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant3df0ad989ce4cda006f58a8300bac4345caf94f0af9386e45db5c2e8670ef804
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b0be1a6bfccd08bc50f08a03389abb0569d689ac` · SHA-256 `8ac449fa7fab606703779591a92db377a4224fff22ff14fe6c8798652400d21d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerCentralFrequency.Varianta16d239698fa05a878550200117a392021798c03413b0bf9754c9eb0ea61c3ec","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a16d239698fa05a878550200117a392021798c03413b0bf9754c9eb0ea61c3ec","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerCentralFrequency.Varianta16d239698fa05a878550200117a392021798c03413b0bf9754c9eb0ea61c3ec","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a16d239698fa05a878550200117a392021798c03413b0bf9754c9eb0ea61c3ec","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/source-readbacks/owner-ignored-latest-20261007T154040Z/preserved/scratch/rh16-continuation-20261006-challenge-next/SourceActualEulerCentralFrequency-AllAnnotationAudit01/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerCentralFrequency
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerCentralFrequency.Varianta16d239698fa05a878550200117a392021798c03413b0bf9754c9eb0ea61c3ec
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedPrimeRightMass
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyRadius
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyRadius_le_height
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedFrequencyDensity
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyConstant
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyDensity_lower
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyConstant_pos
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass_lower
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass_eventually_lower
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualComplementaryFrequencyMass
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedPrimeHead_eq_central_add_complement
+#print FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualComplementaryFrequencyMass_eventually_upper
+```

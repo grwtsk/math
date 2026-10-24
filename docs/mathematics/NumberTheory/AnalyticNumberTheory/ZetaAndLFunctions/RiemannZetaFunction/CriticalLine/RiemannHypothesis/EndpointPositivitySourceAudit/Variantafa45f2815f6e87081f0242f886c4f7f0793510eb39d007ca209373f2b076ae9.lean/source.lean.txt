@@ -1,0 +1,9 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity
+set_option pp.universes true
+set_option pp.explicit true
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity.normalizedTest_endpoint_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity.normalizedTest_endpoint_pos
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity.sourceCorrelation_endpoint_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity.sourceCorrelation_endpoint_pos
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity.sourceSamplingKernel_upper_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointPositivity.sourceSamplingKernel_upper_pos

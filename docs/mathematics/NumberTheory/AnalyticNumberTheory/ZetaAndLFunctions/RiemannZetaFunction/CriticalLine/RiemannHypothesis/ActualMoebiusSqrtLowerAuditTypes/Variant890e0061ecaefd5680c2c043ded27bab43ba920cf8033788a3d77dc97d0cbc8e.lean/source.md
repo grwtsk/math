@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualMoebiusSqrtLowerAuditTypes.Variant890e0061ecaefd5680c2c043ded27bab43ba920cf8033788a3d77dc97d0cbc8e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `83d5667de18af7d8ab3df3494cd994f1ec0cea07` · SHA-256 `890e0061ecaefd5680c2c043ded27bab43ba920cf8033788a3d77dc97d0cbc8e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualMoebiusSqrtLower
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16IndependentChallengeNext.actualAbsMoebius_eq_squarefreeIndicator
+#print axioms RH16IndependentChallengeNext.actualAbsMoebius_eq_squarefreeIndicator
+#check RH16IndependentChallengeNext.actualAbsMoebius_lower_square_sieve
+#print axioms RH16IndependentChallengeNext.actualAbsMoebius_lower_square_sieve
+#check RH16IndependentChallengeNext.squareDivisorSqrtMass
+#print axioms RH16IndependentChallengeNext.squareDivisorSqrtMass
+#check RH16IndependentChallengeNext.squareDivisorSqrtMass_eq_quotient
+#print axioms RH16IndependentChallengeNext.squareDivisorSqrtMass_eq_quotient
+#check RH16IndependentChallengeNext.squareDivisorSqrtMass_eq_scaled
+#print axioms RH16IndependentChallengeNext.squareDivisorSqrtMass_eq_scaled
+#check RH16IndependentChallengeNext.squareDivisorSqrtMass_le
+#print axioms RH16IndependentChallengeNext.squareDivisorSqrtMass_le
+#check RH16IndependentChallengeNext.squareDivisorSqrtMass_le_saved
+#print axioms RH16IndependentChallengeNext.squareDivisorSqrtMass_le_saved
+#check RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower_weighted_sieve
+#print axioms RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower_weighted_sieve
+#check RH16IndependentChallengeNext.squareDivisorSqrtMass_total_le
+#print axioms RH16IndependentChallengeNext.squareDivisorSqrtMass_total_le
+#check RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower
+#print axioms RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower
+```

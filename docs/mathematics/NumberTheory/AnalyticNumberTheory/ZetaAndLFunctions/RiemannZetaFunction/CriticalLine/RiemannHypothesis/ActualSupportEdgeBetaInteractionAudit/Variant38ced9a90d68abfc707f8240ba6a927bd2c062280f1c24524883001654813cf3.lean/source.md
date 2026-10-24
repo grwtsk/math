@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeBetaInteractionAudit.Variant38ced9a90d68abfc707f8240ba6a927bd2c062280f1c24524883001654813cf3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `427f23fbebe073b185575f5fcfdf32fb86237f29` · SHA-256 `38ced9a90d68abfc707f8240ba6a927bd2c062280f1c24524883001654813cf3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSupportEdgeBetaInteraction
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect_abs_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actual_support_half_le_two_sqrt_terminal
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actual_support_half_le_two_sqrt_terminal
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction_abs_le
+```

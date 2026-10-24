@@ -1,0 +1,80 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeSignedBudgetApplicationsAudit.Variant7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b23d070638111f6e101705d12cc5904b97199dcb` · SHA-256 `7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceNativeSignedBudgetApplications
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+
+namespace FormalResearch.RiemannHypothesis.SourceNativeSignedBudgetApplications
+
+#check @correctedNativeHead
+#print correctedNativeHead
+#print axioms correctedNativeHead
+
+#check @correctedNativeHead_eq_head_sub_constant
+#print correctedNativeHead_eq_head_sub_constant
+#print axioms correctedNativeHead_eq_head_sub_constant
+
+#check @correctedNativeHead_tail_norm
+#print correctedNativeHead_tail_norm
+#print axioms correctedNativeHead_tail_norm
+
+#check @correctedNativeHead_growing_tail_norm
+#print correctedNativeHead_growing_tail_norm
+#print axioms correctedNativeHead_growing_tail_norm
+
+#check @correctedNativeHead_growing_tail_abs
+#print correctedNativeHead_growing_tail_abs
+#print axioms correctedNativeHead_growing_tail_abs
+
+#check @all_real_lower_of_native_head
+#print all_real_lower_of_native_head
+#print axioms all_real_lower_of_native_head
+
+#check @leading_of_native_head_at_receiving_radius
+#print leading_of_native_head_at_receiving_radius
+#print axioms leading_of_native_head_at_receiving_radius
+
+#check @all_real_lower_of_native_compensated
+#print all_real_lower_of_native_compensated
+#print axioms all_real_lower_of_native_compensated
+
+#check @leading_of_native_compensated
+#print leading_of_native_compensated
+#print axioms leading_of_native_compensated
+
+#check @residual_upper_of_correctedNativeHead
+#print residual_upper_of_correctedNativeHead
+#print axioms residual_upper_of_correctedNativeHead
+
+#check @all_real_lower_of_correctedNativeHead
+#print all_real_lower_of_correctedNativeHead
+#print axioms all_real_lower_of_correctedNativeHead
+
+#check @leading_of_correctedNativeHead_at_receiving_radius
+#print leading_of_correctedNativeHead_at_receiving_radius
+#print axioms leading_of_correctedNativeHead_at_receiving_radius
+
+#check @estimate_of_correctedNativeHead
+#print estimate_of_correctedNativeHead
+#print axioms estimate_of_correctedNativeHead
+
+#check @residual_upper_of_literal_compensated_head
+#print residual_upper_of_literal_compensated_head
+#print axioms residual_upper_of_literal_compensated_head
+
+#check @all_real_lower_of_literal_compensated_head
+#print all_real_lower_of_literal_compensated_head
+#print axioms all_real_lower_of_literal_compensated_head
+
+#check @leading_of_literal_compensated_head_at_receiving_radius
+#print leading_of_literal_compensated_head_at_receiving_radius
+#print axioms leading_of_literal_compensated_head_at_receiving_radius
+
+end FormalResearch.RiemannHypothesis.SourceNativeSignedBudgetApplications
+```

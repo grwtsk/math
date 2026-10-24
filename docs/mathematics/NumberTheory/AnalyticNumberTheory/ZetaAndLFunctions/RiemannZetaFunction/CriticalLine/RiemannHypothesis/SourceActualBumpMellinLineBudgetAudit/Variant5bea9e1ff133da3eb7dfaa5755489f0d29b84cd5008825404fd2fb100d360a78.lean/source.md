@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualBumpMellinLineBudgetAudit.Variant5bea9e1ff133da3eb7dfaa5755489f0d29b84cd5008825404fd2fb100d360a78
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `510152cee9c0d9fecd83ba3903959f2cb3cf1bdb` · SHA-256 `5bea9e1ff133da3eb7dfaa5755489f0d29b84cd5008825404fd2fb100d360a78`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualBumpMellinLineBudget
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight
+#check FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bump_on_right_line_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bump_on_right_line_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bump_on_right_line_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight_on_line_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight_on_line_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight_on_line_norm_le
+```

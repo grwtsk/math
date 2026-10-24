@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.50dd70ac8f435504ba8c9e3353d3d59aab3647df4e85911a8ca95cd1fee7ceeeSourceActualMert.Variant50dd70ac8f435504ba8c9e3353d3d59aab3647df4e85911a8ca95cd1fee7ceee
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `43ff6a3bc5f4a034de189d7a5bc9396b9db0ecab` · SHA-256 `50dd70ac8f435504ba8c9e3353d3d59aab3647df4e85911a8ca95cd1fee7ceee`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualMertensPntRate
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualPntHalfRate_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualPntHalfRate_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_isBigO
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_isBigO
+```

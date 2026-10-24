@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant14463aa3e61b33dd286adbfe8209433b3dac9244a2e9c8108820e06ccb884f58
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e5f25a023cb8c62d183f9ea1483b7bd07d12ff9c` · SHA-256 `3431bf5adc291c15b96fef7bcbe7fb74002555c3e609c25f1e58db6fc8f09b17`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.Variant6734fa85ff0929b01e7ca6c8554fd75c7d9e392c8e4eb6ae82e21e6abb7f5356","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6734fa85ff0929b01e7ca6c8554fd75c7d9e392c8e4eb6ae82e21e6abb7f5356","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCenteredHalfZetaReduction.Variant6734fa85ff0929b01e7ca6c8554fd75c7d9e392c8e4eb6ae82e21e6abb7f5356","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6734fa85ff0929b01e7ca6c8554fd75c7d9e392c8e4eb6ae82e21e6abb7f5356","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-centered-half-zeta/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCenteredHalfZetaReduction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.Variant6734fa85ff0929b01e7ca6c8554fd75c7d9e392c8e4eb6ae82e21e6abb7f5356
+
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredHalfZetaMain
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredHalfZetaMain
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_eq
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+```

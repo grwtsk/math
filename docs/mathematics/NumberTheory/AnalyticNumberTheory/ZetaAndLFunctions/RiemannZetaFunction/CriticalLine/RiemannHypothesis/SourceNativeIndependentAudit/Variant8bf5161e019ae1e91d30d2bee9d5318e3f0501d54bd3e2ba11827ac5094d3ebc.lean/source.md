@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeIndependentAudit.Variant8bf5161e019ae1e91d30d2bee9d5318e3f0501d54bd3e2ba11827ac5094d3ebc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae348905919c5efec34f0cbff73351530928b239` · SHA-256 `8bf5161e019ae1e91d30d2bee9d5318e3f0501d54bd3e2ba11827ac5094d3ebc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceNativeAngularTail
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceNativeMellin
+#check normalizedTest_even
+#print normalizedTest_even
+#print axioms normalizedTest_even
+#check normalizedBilateral_integrable
+#print normalizedBilateral_integrable
+#print axioms normalizedBilateral_integrable
+#check nativeMellin_integrable
+#print nativeMellin_integrable
+#print axioms nativeMellin_integrable
+#check normalizedBilateral_eq_original
+#print normalizedBilateral_eq_original
+#print axioms normalizedBilateral_eq_original
+#check nativeMellin_eq_square
+#print nativeMellin_eq_square
+#print axioms nativeMellin_eq_square
+#check nativeMellin_eq_dividedTransform
+#print nativeMellin_eq_dividedTransform
+#print axioms nativeMellin_eq_dividedTransform
+end FormalResearch.RiemannHypothesis.SourceNativeMellin
+namespace FormalResearch.RiemannHypothesis.SourceNativeDirichlet
+#check rightLineMajorant_summable
+#print rightLineMajorant_summable
+#print axioms rightLineMajorant_summable
+#check combinedMultiplier_norm_le
+#print combinedMultiplier_norm_le
+#print axioms combinedMultiplier_norm_le
+#check rightLineMajorant_nonneg
+#print rightLineMajorant_nonneg
+#print axioms rightLineMajorant_nonneg
+end FormalResearch.RiemannHypothesis.SourceNativeDirichlet
+namespace FormalResearch.RiemannHypothesis.SourceNativeRightLine
+#check bilateral_right_decay
+#print bilateral_right_decay
+#print axioms bilateral_right_decay
+#check normalization_floor
+#print normalization_floor
+#print axioms normalization_floor
+#check nativeMellin_right_decay
+#print nativeMellin_right_decay
+#print axioms nativeMellin_right_decay
+#check nativeMellin_two_line_decay
+#print nativeMellin_two_line_decay
+#print axioms nativeMellin_two_line_decay
+end FormalResearch.RiemannHypothesis.SourceNativeRightLine
+namespace FormalResearch.RiemannHypothesis.SourceNativeAngularTail
+#check combined_two_line_continuous
+#print combined_two_line_continuous
+#print axioms combined_two_line_continuous
+#check native_two_line_continuous
+#print native_two_line_continuous
+#print axioms native_two_line_continuous
+#check angularIntegrand_continuous
+#print angularIntegrand_continuous
+#print axioms angularIntegrand_continuous
+#check angularIntegrand_norm_le
+#print angularIntegrand_norm_le
+#print axioms angularIntegrand_norm_le
+#check angular_ray_integrable
+#print angular_ray_integrable
+#print axioms angular_ray_integrable
+#check angular_ray_norm_bound
+#print angular_ray_norm_bound
+#print axioms angular_ray_norm_bound
+#check angularTail_norm_bound
+#print angularTail_norm_bound
+#print axioms angularTail_norm_bound
+#check angularIntegrand_integrable
+#print angularIntegrand_integrable
+#print axioms angularIntegrand_integrable
+#check angularContour_sub_head_eq_tail
+#print angularContour_sub_head_eq_tail
+#print axioms angularContour_sub_head_eq_tail
+#check angularContour_sub_head_norm_bound
+#print angularContour_sub_head_norm_bound
+#print axioms angularContour_sub_head_norm_bound
+#check angularContour_growing_tail_bound
+#print angularContour_growing_tail_bound
+#print axioms angularContour_growing_tail_bound
+#check angularContour_re_le_head_add_tail
+#print angularContour_re_le_head_add_tail
+#print axioms angularContour_re_le_head_add_tail
+end FormalResearch.RiemannHypothesis.SourceNativeAngularTail
+```

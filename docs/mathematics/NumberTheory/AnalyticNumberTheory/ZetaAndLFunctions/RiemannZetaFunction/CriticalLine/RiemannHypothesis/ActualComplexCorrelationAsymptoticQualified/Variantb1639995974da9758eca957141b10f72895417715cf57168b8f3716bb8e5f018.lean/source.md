@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationAsymptoticQualified.Variantb1639995974da9758eca957141b10f72895417715cf57168b8f3716bb8e5f018
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0fe6492fe4460314ce4c306eaa9e2a67d3520d1c` · SHA-256 `b1639995974da9758eca957141b10f72895417715cf57168b8f3716bb8e5f018`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualComplexCorrelationAsymptotic
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationNormalizer_sq
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualSourceNormalization_tendsto
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale_tendsto_zero
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualBilateralCorrelationTransform_normalized_tendsto
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_scaled_error_tendsto_zero
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_normalized_tendsto
+```

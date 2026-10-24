@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SquarefreeCountSourceAudit.Variant6f4446ab15780db0cafb4dba435a6fe5857d17334b183d530c08a8ab4a2700fb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ac75b3204b60a2eb395a8dfb141ef9ce4d289d52` · SHA-256 `6f4446ab15780db0cafb4dba435a6fe5857d17334b183d530c08a8ab4a2700fb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.halfFactorization
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squareDivisorRoot
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.halfFactorization_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squareDivisorRoot_ne_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squareDivisorRoot_factorization
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.square_dvd_iff_dvd_root
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.root_eq_one_iff_squarefree
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squareDivisors_eq_root_divisors
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.moebius_square_eq_sum_squareDivisors
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squareDivisors_eq_Icc
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.moebius_square_eq_sum_Icc
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.coprime_multiples_card
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squarefreeCoprimeCount
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.coprime_multiples_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squarefreeCoprimeCount_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.coprimeCount_div_error
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.finiteSquarefreeDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.squarefreeCoprimeCount_error_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.finiteSquarefreeDensity_difference_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SquarefreeCount.fixedDensity_error_le
+```

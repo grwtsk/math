@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantaeabf41a6e0db95154b38af2a6fb795bece599f1947d8af4507f7fb94fe20033
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c71bdbff40321699cbb9b47c4ee9bf5a1fa7259c` · SHA-256 `7ddb58d1a40e6b8d4254d2175cb9ee782daffee493dcefd11a626e9b59b4afc9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationSquare.Variantd2cf14eda77948a7f545e93c7263aa357922b4237db23d6fc491ae4063a3837b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d2cf14eda77948a7f545e93c7263aa357922b4237db23d6fc491ae4063a3837b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualComplexCorrelationSquare.Variantd2cf14eda77948a7f545e93c7263aa357922b4237db23d6fc491ae4063a3837b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d2cf14eda77948a7f545e93c7263aa357922b4237db23d6fc491ae4063a3837b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualComplexCorrelationSquare-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualComplexCorrelationSquare
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationSquare.Variantd2cf14eda77948a7f545e93c7263aa357922b4237db23d6fc491ae4063a3837b
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_test_integrable
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_test_integrable
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_eq_convolution
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_product_integrable
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_product_integrable
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_integrable
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_integrable
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualSourceComplexTransform_eq_full
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualSourceComplexTransform_eq_full
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualBilateralCorrelationTransform_eq_full
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualBilateralCorrelationTransform_eq_full
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_full_complex_correlation_integral_eq_square
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_full_complex_correlation_integral_eq_square
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualBilateralCorrelationTransform_eq_square
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualBilateralCorrelationTransform_eq_square
+```

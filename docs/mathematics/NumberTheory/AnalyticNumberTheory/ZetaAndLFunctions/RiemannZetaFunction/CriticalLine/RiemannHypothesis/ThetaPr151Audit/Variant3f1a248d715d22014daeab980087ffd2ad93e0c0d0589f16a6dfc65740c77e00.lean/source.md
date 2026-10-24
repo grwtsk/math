@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaPr151Audit.Variant3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `224985cae9dcaeaccfe9220bf27e59b9d9dd82bd` · SHA-256 `3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaTailCalculus
+import FormalResearch.RiemannHypothesis.ThetaPhiInvolutionCompression
+import FormalResearch.RiemannHypothesis.ThetaPhiKrylovNondegeneracy
+import FormalResearch.RiemannHypothesis.ThetaPhiKrylovWhitening
+set_option pp.proofs false
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_positive
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_integrable
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_integrable
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiBaseMomentMagnitude_pos
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiBaseMomentMagnitude_pos
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiSignedMomentKrylovGram_posDef
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiSignedMomentKrylovGram_posDef
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiParityInvolution_sq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiParityInvolution_sq
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiChristoffelHankel_signedMomentTruncation_eq_involutionCompression
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiChristoffelHankel_signedMomentTruncation_eq_involutionCompression
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiKrylovWhitening_gram
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiKrylovWhitening_gram
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityCompression_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityCompression_eq
+```

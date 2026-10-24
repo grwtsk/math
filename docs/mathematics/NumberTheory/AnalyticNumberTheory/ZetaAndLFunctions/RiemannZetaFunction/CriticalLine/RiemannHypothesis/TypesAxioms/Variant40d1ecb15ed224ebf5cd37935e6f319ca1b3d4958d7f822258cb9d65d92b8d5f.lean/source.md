@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant40d1ecb15ed224ebf5cd37935e6f319ca1b3d4958d7f822258cb9d65d92b8d5f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a1476d6d4874179b6daee1df8c861d697f9ffa85` · SHA-256 `34cb52b2e2f728499d314ba679cfe38f5dd20569f36f910229e275f8d923161f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiDampedFiniteBound.Variantc06c42a5bb36bcbd4014dec3ab2faa7513360923fed7bac136c8bcd46ee49f16","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c06c42a5bb36bcbd4014dec3ab2faa7513360923fed7bac136c8bcd46ee49f16","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiDampedFiniteBound.Variantc06c42a5bb36bcbd4014dec3ab2faa7513360923fed7bac136c8bcd46ee49f16","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c06c42a5bb36bcbd4014dec3ab2faa7513360923fed7bac136c8bcd46ee49f16","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-xi-damped-finite-bound/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiDampedFiniteBound
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiDampedFiniteBound.Variantc06c42a5bb36bcbd4014dec3ab2faa7513360923fed7bac136c8bcd46ee49f16
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFiniteBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFiniteBudget
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiTimeDamped_eq_inverseSquare
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiTimeDamped_eq_inverseSquare
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_exact
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_exact
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abel
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_closed_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_closed_readout
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_upperTrace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_upperTrace_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abs_le_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abs_le_budget
+```

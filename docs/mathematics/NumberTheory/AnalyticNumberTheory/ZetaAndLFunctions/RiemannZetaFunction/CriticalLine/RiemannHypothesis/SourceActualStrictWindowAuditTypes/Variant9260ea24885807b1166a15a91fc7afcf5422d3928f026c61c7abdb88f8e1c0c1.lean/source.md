@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualStrictWindowAuditTypes.Variant9260ea24885807b1166a15a91fc7afcf5422d3928f026c61c7abdb88f8e1c0c1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `713787dbead1c31a7f74b64f22f9971c0dbede43` · SHA-256 `9260ea24885807b1166a15a91fc7afcf5422d3928f026c61c7abdb88f8e1c0c1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualStrictWindow
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_cutoff_square_gap
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_cutoff_square_gap
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_quotient_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_quotient_lower
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_first_strict_cell_mem
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_first_strict_cell_mem
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_integer_box_mem
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_integer_box_mem
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_log_window
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_log_window
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_real_rectangle
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_real_rectangle
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_rectangle_source_support
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_rectangle_source_support
+```

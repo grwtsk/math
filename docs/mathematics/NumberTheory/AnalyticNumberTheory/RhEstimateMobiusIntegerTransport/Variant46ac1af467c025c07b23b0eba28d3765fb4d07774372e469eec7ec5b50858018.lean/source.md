@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.RhEstimateMobiusIntegerTransport.Variant46ac1af467c025c07b23b0eba28d3765fb4d07774372e469eec7ec5b50858018
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8bb770c84cd75319f47763c27cc0d9a33dfd7076` · SHA-256 `46ac1af467c025c07b23b0eba28d3765fb4d07774372e469eec7ec5b50858018`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.antidiagonal_first_factor
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.sourceMobiusKernel_integerAgreement
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.sourceMobiusKernel_contract
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.largeDivisorMobiusMoment_eq_abel_sum
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.largeDivisorMobiusMoment_eq_mertens
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.mobius_integer_transport_checkpoint
+
+example (A : ℝ) (hA : 1 ≤ A) :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.SourceMobiusKernelContract A
+      (FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusKernel.sourceMobiusKernel A) :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.sourceMobiusKernel_contract A hA
+```

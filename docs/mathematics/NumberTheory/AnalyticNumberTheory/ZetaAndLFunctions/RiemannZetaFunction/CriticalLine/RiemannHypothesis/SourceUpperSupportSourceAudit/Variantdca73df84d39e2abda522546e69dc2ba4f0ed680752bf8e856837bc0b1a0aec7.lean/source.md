@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUpperSupportSourceAudit.Variantdca73df84d39e2abda522546e69dc2ba4f0ed680752bf8e856837bc0b1a0aec7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `16c2ba2c8dd78d31d0ce69494bf5f715eeaab456` · SHA-256 `dca73df84d39e2abda522546e69dc2ba4f0ed680752bf8e856837bc0b1a0aec7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport
+
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.sourceSamplingKernel_zero_of_two_mul_ge
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.sourceSamplingKernel_zero_of_two_mul_ge
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaKernel_zero_of_two_mul_ge
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaKernel_zero_of_two_mul_ge
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaKernel_eq_sourceSamplingKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaKernel_eq_sourceSamplingKernel
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.sourceSamplingKernel_eq_two_channels
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.sourceSamplingKernel_eq_two_channels
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaKernel_eq_two_channels
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaKernel_eq_two_channels
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaRemainder_eq_neg_rankOne_of_two_mul_ge
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceUpperSupport.thetaRemainder_eq_neg_rankOne_of_two_mul_ge
+```

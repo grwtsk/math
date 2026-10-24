@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEdgeDerivativeQualified.Variant29c362c4ea5d9bb69111fb177c4dffebf5578199f9cf0ba124fcf68785238e3d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `759daee0c38d19493cb4b801758c481a6c84b5c6` · SHA-256 `29c362c4ea5d9bb69111fb177c4dffebf5578199f9cf0ba124fcf68785238e3d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEdgeCorrelationDerivative
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.actualNormalization_ge_one_div_32
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.endpointDerivativePolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.actual_normalized_deriv_endpoint
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.endpointDerivativePolynomial_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.actual_correlation_deriv_edge_overlap
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.endpointDerivativeProduct_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.actual_correlation_deriv_upper_edge
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.edgeFirstPolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeCorrelationDerivative.actual_correlation_deriv_upper_edge_abs_le
+```

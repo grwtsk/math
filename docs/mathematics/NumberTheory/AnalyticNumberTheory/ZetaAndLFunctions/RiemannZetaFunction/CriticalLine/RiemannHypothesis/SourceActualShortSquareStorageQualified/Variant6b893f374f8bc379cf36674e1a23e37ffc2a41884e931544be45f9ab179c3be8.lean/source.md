@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualShortSquareStorageQualified.Variant6b893f374f8bc379cf36674e1a23e37ffc2a41884e931544be45f9ab179c3be8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `50e0e544e36823657c992faddc761b2c8790f765` · SHA-256 `6b893f374f8bc379cf36674e1a23e37ffc2a41884e931544be45f9ab179c3be8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualShortSquareStorage
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquare_reconstruction
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline_le
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_le_envelope
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareSurplus_eventually_negative_linear
+```

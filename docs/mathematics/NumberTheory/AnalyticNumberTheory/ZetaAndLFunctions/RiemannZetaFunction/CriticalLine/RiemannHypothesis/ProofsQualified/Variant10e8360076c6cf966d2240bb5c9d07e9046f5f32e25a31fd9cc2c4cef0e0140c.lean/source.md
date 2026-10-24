@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant10e8360076c6cf966d2240bb5c9d07e9046f5f32e25a31fd9cc2c4cef0e0140c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d8956207185c697c6632747e461581d94fe521f8` · SHA-256 `84f9ed573eacb8f932f8f7278636aa00d5819c3b8f34fcd0768f04457fa07726`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceResidual.Variant6326ef25a34a96c5ce19d9b324903d131082ad657e042760c94f81fee832901e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6326ef25a34a96c5ce19d9b324903d131082ad657e042760c94f81fee832901e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalCovarianceResidual.Variant6326ef25a34a96c5ce19d9b324903d131082ad657e042760c94f81fee832901e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6326ef25a34a96c5ce19d9b324903d131082ad657e042760c94f81fee832901e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualCriticalCovarianceResidual-AllAnnotationAudit01/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalCovarianceResidual
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceResidual.Variant6326ef25a34a96c5ce19d9b324903d131082ad657e042760c94f81fee832901e
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.actualZeroSevenCriticalWork
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.actualZeroSevenCriticalBudget
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.actualCriticalErrorCovariance_eq_half_derivative_work
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.criticalMangoldtWork_eq_actual_covariance_and_full_head
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.mertensResidual_eq_actual_covariance_and_full_head
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.actualZeroSevenCriticalWork_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.actual_covariance_lower_iff_residual_upper_at_radius
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.estimate_of_actual_covariance_lower
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceResidual.estimate_of_actual_delta_return_lower
+```

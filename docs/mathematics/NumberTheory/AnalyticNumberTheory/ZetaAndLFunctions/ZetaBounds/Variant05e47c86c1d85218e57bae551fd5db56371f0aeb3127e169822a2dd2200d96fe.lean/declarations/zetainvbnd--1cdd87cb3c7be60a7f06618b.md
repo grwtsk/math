@@ -1,0 +1,191 @@
+# ZetaInvBnd
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "8449749700ae3c61707103913ebe40c0507a6e07",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 2912,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/05/05e47c86c1d85218e57bae551fd5db56371f0aeb3127e169822a2dd2200d96fe.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:68f7cff7-597d-5a84-635e-f3dad5b29ad3",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:6ad3ebf2-1203-1715-459e-2fb7a7cda9aa",
+  "kind": "lemma",
+  "lexical_name": "ZetaInvBnd",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "zetainvbnd--1cdd87cb3c7be60a7f06618b",
+  "source": {
+    "blob": "8449749700ae3c61707103913ebe40c0507a6e07",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 3009,
+    "line": 2912,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/ZetaBounds/Variant05e47c86c1d85218e57bae551fd5db56371f0aeb3127e169822a2dd2200d96fe.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1cdd87cb3c7be60a7f06618b66309f15c381f82e963c13e7e8bb9134cd39573d",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/ZetaBounds/Variant05e47c86c1d85218e57bae551fd5db56371f0aeb3127e169822a2dd2200d96fe.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:6ad3ebf2-1203-1715-459e-2fb7a7cda9aa`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 2912–3009.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma ZetaInvBnd :
+    ∃ (A : ℝ) (_ : A ∈ Ioc 0 (1 / 2)) (C : ℝ) (_ : 0 < C), ∀ (σ : ℝ) (t : ℝ) (_ : 3 < |t|)
+    (_ : σ ∈ Ico (1 - A / (Real.log |t|) ^ 9) (1 + A / (Real.log |t|) ^ 9)),
+    1 / ‖ζ (σ + t * I)‖ ≤ C * (Real.log |t|) ^ (7 : ℝ) := by
+  obtain ⟨C', C'pos, hC₁⟩ := ZetaInvBound2
+  obtain ⟨A', hA', C₂, C₂pos, hC₂⟩ := Zeta_diff_Bnd
+  set C₁ := 1 / C'
+  let A := min A' <| (1 / 2 : ℝ) * (C₁ / (C₂ * 2)) ^ (4 : ℝ)
+  have Apos : 0 < A := by have := hA'.1; positivity
+  have Ale : A ≤ 1 / 2 := by dsimp only [A]; apply min_le_iff.mpr; left; exact hA'.2
+  set C := (C₁ * A ^ (3 / 4 : ℝ) - C₂ * 2 * A)⁻¹
+  have Cpos : 0 < C := by
+    refine ZetaInvBnd_aux2 (by positivity) (by positivity) (by positivity) ?_
+    apply min_le_right
+  refine ⟨A, ⟨Apos, by linarith [hA'.2]⟩ , C, Cpos, ?_⟩
+  intro σ t t_gt hσ
+  have logt_gt_one := logt_gt_one t_gt.le
+  have σ_ge : 1 - A / Real.log |t| ≤ σ := by
+    apply le_trans ?_ hσ.1
+    suffices A / Real.log |t| ^ 9 ≤ A / Real.log |t| by linarith
+    exact div_le_div₀ Apos.le (by rfl) (by positivity) <| ZetaInvBnd_aux logt_gt_one
+  obtain ⟨_, _, neOne⟩ := UpperBnd_aux ⟨Apos, Ale⟩ t_gt σ_ge
+  set σ' := 1 + A / Real.log |t| ^ 9
+  have σ'_gt : 1 < σ' := by simp only [σ', lt_add_iff_pos_right]; positivity
+  have σ'_le : σ' ≤ 2 := by
+    simp only [σ']
+    suffices A / Real.log |t| ^ 9 < 1 by linarith
+    apply div_lt_one (by positivity) |>.mpr
+    exact lt_trans₄ (by linarith) logt_gt_one <| ZetaInvBnd_aux' logt_gt_one
+  set s := σ + t * I
+  set s' := σ' + t * I
+  by_cases h0 : ‖ζ s‖ ≠ 0
+  swap
+  · simp only [ne_eq, not_not] at h0; simp only [h0, div_zero]; positivity
+  apply div_le_iff₀ (by positivity) |>.mpr <| div_le_iff₀' (by positivity) |>.mp ?_
+  have pos_aux : 0 < (σ' - 1) := by linarith
+  calc
+    _ ≥ ‖ζ s'‖ - ‖ζ s - ζ s'‖ := ?_
+    _ ≥ C₁ * (σ' - 1) ^ ((3 : ℝ)/ 4) * Real.log |t|  ^ ((-1 : ℝ)/ 4) - C₂ * Real.log |t| ^ 2 * (σ' - σ) := ?_
+    _ ≥ C₁ * (A / Real.log |t| ^ (9 : ℝ)) ^ ((3 : ℝ)/ 4) * Real.log |t| ^ ((-1 : ℝ)/ 4) - C₂ * Real.log |t| ^ (2 : ℝ) * 2 * A / Real.log |t| ^ (9 : ℝ) := ?_
+    _ ≥ C₁ * A ^ ((3 : ℝ)/ 4) * Real.log |t| ^ (-7 : ℝ) - C₂ * 2 * A * Real.log |t| ^ (-7 : ℝ) := ?_
+    _ = (C₁ * A ^ ((3 : ℝ)/ 4) - C₂ * 2 * A) * Real.log |t| ^ (-7 : ℝ) := by ring
+    _ ≥ _ := ?_
+  · apply ge_iff_le.mpr
+    convert norm_sub_norm_le (a := ζ s') (b := ζ s' - ζ s) using 1
+    · rw [(by simp : ζ s' - ζ s = -(ζ s - ζ s'))]; simp only [norm_neg]
+    · simp
+  · apply sub_le_sub
+    · have := one_div_le ?_ (by positivity) |>.mp <| hC₁ ⟨σ'_gt, σ'_le⟩ t t_gt
+      · convert this using 1
+        rw [one_div, mul_inv_rev, mul_comm, mul_inv_rev, mul_comm _ C'⁻¹]
+        simp only [one_div C', C₁]
+        congr <;> (rw [← Real.rpow_neg (by linarith), neg_div]); rw [neg_neg]
+      · apply norm_pos_iff.mpr <| riemannZeta_ne_zero_of_one_lt_re (by simp [σ'_gt])
+    · rw [(by simp : ζ s - ζ s' = -(ζ s' - ζ s)), norm_neg]
+      refine hC₂ σ σ' t t_gt ?_ σ'_le <| by rw [Set.mem_Ico] at hσ; exact hσ.2
+      apply le_trans ?_ hσ.1
+      rw [tsub_le_iff_right, ← add_sub_right_comm, le_sub_iff_add_le, add_le_add_iff_left]
+      exact div_le_div₀ hA'.1.le (by simp [A]) (by positivity) <| ZetaInvBnd_aux logt_gt_one
+  · apply sub_le_sub (by simp only [add_sub_cancel_left, σ']; exact_mod_cast le_rfl) ?_
+    rw [mul_div_assoc, mul_assoc _ 2 _]
+    apply mul_le_mul (by exact_mod_cast le_rfl) ?_ (by linarith [hσ.2]) (by positivity)
+    suffices h : σ' + (1 - A / Real.log |t| ^ 9) ≤ (1 + A / Real.log |t| ^ 9) + σ by
+      simp only [tsub_le_iff_right]
+      convert le_sub_right_of_add_le h using 1; ring_nf; norm_cast; simp
+    exact add_le_add (by linarith) (by linarith [hσ.1])
+  · simp_rw [tsub_le_iff_right, div_eq_mul_inv _ (Real.log |t| ^ (9 : ℝ))]
+    rw [← Real.rpow_neg (by positivity), Real.mul_rpow (by positivity) (by positivity)]
+    rw [← Real.rpow_mul (by positivity)]
+    ring_nf
+    conv => rhs; lhs; rw [mul_assoc, ← Real.rpow_add (by positivity)]
+    rw [(by ring : C₂ * Real.log |t| ^ (2 : ℝ) * A * Real.log |t| ^ (-9 : ℝ) * 2 = C₂ * (Real.log |t| ^ (2 : ℝ) * Real.log |t| ^ (-9 : ℝ) ) * A * 2)]
+    rw [← Real.rpow_add (by positivity)]; norm_num; group; exact le_rfl
+  · apply div_le_iff₀ (by positivity) |>.mpr
+    conv => rw [mul_assoc]; rhs; rhs; rw [mul_comm C, ← mul_assoc, ← Real.rpow_add (by positivity)]
+    have := inv_inv C ▸ mul_inv_cancel₀ (a := C⁻¹) (by positivity) |>.symm.le
+    simpa [C] using this
+
+
+
+-- **Another AlphaProof collaboration (thanks to Thomas Hubert!)**
+
+blueprint_comment /--
+Annoyingly, it is not immediate from this that $\zeta$ doesn't vanish there! That's because
+$1/0 = 0$ in Lean. So we give a second proof of the same fact (refactor this later), with a lower
+ bound on $\zeta$ instead of upper bound on $1 / \zeta$.
+-/
+@[blueprint
+  (title := "ZetaLowerBnd")
+  (statement := /--
+  For any $A>0$ sufficiently small, there is a constant $C>0$ so that
+  whenever $1- A / \log^9 |t| \le \sigma < 1$ and $3 < |t|$, we have that:
+  $$
+  |\zeta(\sigma+it)| \ge C \log^7 |t|.
+  $$
+  -/)
+  (proof := /-- Follow same argument. -/)
+  (latexEnv := "lemma")]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/ZetaBounds/Variant05e47c86c1d85218e57bae551fd5db56371f0aeb3127e169822a2dd2200d96fe.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/ZetaBounds/Variant05e47c86c1d85218e57bae551fd5db56371f0aeb3127e169822a2dd2200d96fe.lean#L2912).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8449749700ae3c61707103913ebe40c0507a6e07` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

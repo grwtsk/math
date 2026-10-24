@@ -1,0 +1,61 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ExportReview.Variant9de505fc14c4b0a434fcc3647482199e8e3ff527f2b0ca9d945de669dd368594
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `626fc29184f379b5d242b3da05ccada0bcf8e501` · SHA-256 `9de505fc14c4b0a434fcc3647482199e8e3ff527f2b0ca9d945de669dd368594`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.proofs false
+set_option pp.maxDepth 100000
+set_option pp.maxSteps 1000000
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finiteCompensatedReadout_eq_prime_sub_baseline
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finiteCompensatedReadout_eq_prime_sub_baseline
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finiteCompensatedReadout_actual_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finiteCompensatedReadout_actual_eq
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shellEndpoint_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shellEndpoint_bounds
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_lower_strict
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_lower_strict
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_sqrt_gap_lt_one
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_sqrt_gap_lt_one
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_log_squared_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_log_squared_le
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.event_taylor_error
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.event_taylor_error
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.threeHalves_eq_mul_sqrt
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.threeHalves_eq_mul_sqrt
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.mangoldt_sub_one_abs_le_quad
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.mangoldt_sub_one_abs_le_quad
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inversePrimitive_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inversePrimitive_hasDerivAt
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_continuousOn
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_integral_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_integral_le
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_sum_le
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.signedErrorWeight_le_of_inverse_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.signedErrorWeight_le_of_inverse_budget
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error_of_inverse_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error_of_inverse_budget
+
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error
+```

@@ -1,0 +1,50 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedVariationFractionOrdinary.Variant1a2e8e3571d865e041116ad7432b0041a6d78fb8ced3ae344cd4c84ff6e8682a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `842d591e03b9a7db7317e39d3c39178c60fcbf82` · SHA-256 `ef850c344c8b7e3d82a8715980d7b058b7022c415ec6f903aaa172964410f35c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedVariationFraction.Variant09eadd477ac5853dabfa0890014cf0f318967e93c6d8286504de5adbf79f7151","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"09eadd477ac5853dabfa0890014cf0f318967e93c6d8286504de5adbf79f7151","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualSignedVariationFraction.Variant09eadd477ac5853dabfa0890014cf0f318967e93c6d8286504de5adbf79f7151","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"09eadd477ac5853dabfa0890014cf0f318967e93c6d8286504de5adbf79f7151","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T072353Z-1791357833670534000/SourceActualSignedVariationFractionOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualSignedVariationFraction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedVariationFraction.Variant09eadd477ac5853dabfa0890014cf0f318967e93c6d8286504de5adbf79f7151
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualPositivePrimeVariation
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualNegativePrimeVariation
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualPositivePrimeVariation_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualNegativePrimeVariation_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualMertensResidual_eq_variation_difference
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualClosedAbsolutePrimeMoment_eq_variation_sum
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualResidual_absoluteVariation_ratio_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualVariation_half_errors_eq
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualVariation_half_errors_stretched_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualPositivePrimeVariation_fraction_tendsto_half
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualNegativePrimeVariation_fraction_tendsto_half
+```

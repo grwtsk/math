@@ -1,0 +1,15 @@
+import SourceCriticalGreenTent
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceCriticalGreenTent
+#check criticalDirichletTent
+#print axioms criticalDirichletTent
+#check positivePart_sub_affine_eq_neg_tent
+#print axioms positivePart_sub_affine_eq_neg_tent
+#check criticalDirichletTent_nonneg
+#print axioms criticalDirichletTent_nonneg
+#check criticalDirichletTent_endpoints
+#print axioms criticalDirichletTent_endpoints
+#check primeLogSum_hinge_common_inventory
+#print axioms primeLogSum_hinge_common_inventory
+#check criticalDiscrepancyBridge_eq_green_tents
+#print axioms criticalDiscrepancyBridge_eq_green_tents

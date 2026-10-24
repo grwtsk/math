@@ -1,0 +1,78 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.SourceDirectBudgetAudit.Variant522934e70d221c0c9c2cb485d9e4ca693b0e59a2103c3e6296c531bfa8cd8c16
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `edd62efa3095c6db9c34776a761c2847125503b7` · SHA-256 `522934e70d221c0c9c2cb485d9e4ca693b0e59a2103c3e6296c531bfa8cd8c16`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceResidualBudget
+import SourceAbelDirectBudget
+import SourceCriticalDirectBudget
+import SourceMangoldtDirectBudget
+
+set_option linter.hashCommand false
+
+#check RH16ResumeBudget.sourceQuadraticValue_eq_archimedean_sub_two_residual
+#print axioms RH16ResumeBudget.sourceQuadraticValue_eq_archimedean_sub_two_residual
+#print RH16ResumeBudget.sourceQuadraticValue_eq_archimedean_sub_two_residual
+
+#check RH16ResumeBudget.source_lower_of_residual_upper
+#print axioms RH16ResumeBudget.source_lower_of_residual_upper
+#print RH16ResumeBudget.source_lower_of_residual_upper
+
+#check RH16ResumeBudget.originalPrefixLower
+#print axioms RH16ResumeBudget.originalPrefixLower
+#print RH16ResumeBudget.originalPrefixLower
+
+#check RH16ResumeBudget.originalPrefixLower_le_source
+#print axioms RH16ResumeBudget.originalPrefixLower_le_source
+#print RH16ResumeBudget.originalPrefixLower_le_source
+
+#check RH16ResumeBudget.all_real_source_lower_of_residual_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_residual_tail
+#print RH16ResumeBudget.all_real_source_lower_of_residual_tail
+
+#check RH16ResumeBudget.estimate_of_residual_tail_direct
+#print axioms RH16ResumeBudget.estimate_of_residual_tail_direct
+#print RH16ResumeBudget.estimate_of_residual_tail_direct
+
+#check RH16ResumeBudget.all_real_source_lower_of_compensatedJointWork_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_compensatedJointWork_tail
+#print RH16ResumeBudget.all_real_source_lower_of_compensatedJointWork_tail
+
+#check RH16ResumeBudget.all_real_source_lower_of_compensatedLocalizedWork_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_compensatedLocalizedWork_tail
+#print RH16ResumeBudget.all_real_source_lower_of_compensatedLocalizedWork_tail
+
+#check RH16ResumeBudget.criticalBaselineCorrection
+#print axioms RH16ResumeBudget.criticalBaselineCorrection
+#print RH16ResumeBudget.criticalBaselineCorrection
+
+#check RH16ResumeBudget.criticalBaselineCorrection_eq_actual
+#print axioms RH16ResumeBudget.criticalBaselineCorrection_eq_actual
+#print RH16ResumeBudget.criticalBaselineCorrection_eq_actual
+
+#check RH16ResumeBudget.criticalBaselineCorrection_antitone
+#print axioms RH16ResumeBudget.criticalBaselineCorrection_antitone
+#print RH16ResumeBudget.criticalBaselineCorrection_antitone
+
+#check RH16ResumeBudget.criticalBaselineCorrection_negative_of_six_le
+#print axioms RH16ResumeBudget.criticalBaselineCorrection_negative_of_six_le
+#print RH16ResumeBudget.criticalBaselineCorrection_negative_of_six_le
+
+#check RH16ResumeBudget.residual_upper_of_criticalRelative_tail
+#print axioms RH16ResumeBudget.residual_upper_of_criticalRelative_tail
+#print RH16ResumeBudget.residual_upper_of_criticalRelative_tail
+
+#check RH16ResumeBudget.all_real_source_lower_of_criticalRelative_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_criticalRelative_tail
+#print RH16ResumeBudget.all_real_source_lower_of_criticalRelative_tail
+
+#check RH16ResumeBudget.residual_upper_of_original_Mangoldt_work_lower
+#print axioms RH16ResumeBudget.residual_upper_of_original_Mangoldt_work_lower
+#print RH16ResumeBudget.residual_upper_of_original_Mangoldt_work_lower
+
+#check RH16ResumeBudget.all_real_source_lower_of_original_Mangoldt_work_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_original_Mangoldt_work_tail
+#print RH16ResumeBudget.all_real_source_lower_of_original_Mangoldt_work_tail
+```

@@ -1,0 +1,232 @@
+# prop_cross_muP_chi_proved
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "72aadaadc7e2f50ecb19bfc695fb68f4d9b7ab11",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 76,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/f6/f6cb6f83eb8df20153b38a2726c5d2809ecc6d5aa2a211b5aaf626e6a0283050.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:7a79a434-f73c-84df-57a2-c61dee2ca20e",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:0a124e08-780c-4c15-678a-602260f95043",
+  "kind": "theorem",
+  "lexical_name": "prop_cross_muP_chi_proved",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "prop-cross-mup-chi-proved--ffd839fd2332d12ec094314b",
+  "source": {
+    "blob": "72aadaadc7e2f50ecb19bfc695fb68f4d9b7ab11",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 214,
+    "line": 76,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CrossMuPChi/Variantf6cb6f83eb8df20153b38a2726c5d2809ecc6d5aa2a211b5aaf626e6a0283050.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ffd839fd2332d12ec094314ba828fec3abe75ff6e9d7f5431348970280d7ca11",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CrossMuPChi/Variantf6cb6f83eb8df20153b38a2726c5d2809ecc6d5aa2a211b5aaf626e6a0283050.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0a124e08-780c-4c15-678a-602260f95043`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 76–214.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem prop_cross_muP_chi_proved {κ q : ℕ} {c : ℕ → ℂ} {cϱ lam : ℝ}
+    (hΓq : GammaFactsChi κ q) (hcheb : ChebyshevMertens) (hc : CoeffOK q c) (hq : 1 ≤ q)
+    (hlam : 0 < lam ∧ lam ≤ 1) :
+    ∃ C : ℝ, EventuallyAtCore cϱ lam (fun p F =>
+      |Mform F.Phi p.T (muq κ q) (PXc c p.X)| ≤ C * (Zeta23.l p.T * Real.sqrt p.X)) := by
+  obtain ⟨Cμ, T₁, hCμ, hT₁⟩ := muq_abs_le κ q hΓq hq
+  obtain ⟨Cd, hCd⟩ := hΓq.deriv_bound
+  obtain ⟨Cc, hCc⟩ := hcheb.cheb1c
+  have hμ : ContDiff ℝ 1 (muq κ q) := hΓq.smooth.of_le (by exact_mod_cast le_top)
+  refine ⟨4 * (4 * Cμ + |Cd|) * |Cc|, max T₁ (2 * π * Real.exp (|(2:ℝ)| / lam)), ?_⟩
+  intro p F hplam hT hF
+  have hT₁' : T₁ ≤ p.T := (le_max_left _ _).trans hT
+  have hT2 : 2 * π * Real.exp (|(2:ℝ)| / p.lam) ≤ p.T := by
+    rw [hplam]; exact (le_max_right _ _).trans hT
+  have hlam0 : 0 < p.lam := hplam ▸ hlam.1
+  have hT1 : 1 ≤ p.T := Setting.one_le_T (div_nonneg (abs_nonneg _) hlam0.le) hT2
+  have hT0 : 0 ≤ p.T := by linarith
+  have hl1 : 1 ≤ p.l := hF.one_le_l
+  have hL := hF.L_pos
+  have hX2 : 2 ≤ p.X := Setting.le_X_of_T hlam0 hT2
+  have hlogX : Real.log p.X = p.L := by simp [Setting.X]
+  -- sup bounds for μ_χ, μ_χ' on I
+  have hB : ∀ τ ∈ Set.Icc p.T (2 * p.T), |muq κ q τ| ≤ Cμ * p.l := hT₁ p hT₁'
+  have hD : ∀ τ ∈ Set.Icc p.T (2 * p.T), |deriv (muq κ q) τ| ≤ |Cd| / p.T := by
+    intro τ hτ
+    have hτ1 : 1 ≤ |τ| := by rw [abs_of_nonneg (by linarith [hτ.1])]; linarith [hτ.1]
+    refine (hCd τ hτ1).trans ?_
+    rw [abs_of_nonneg (by linarith [hτ.1])]
+    calc Cd / τ ≤ |Cd| / τ := div_le_div_of_nonneg_right (le_abs_self _) (by linarith [hτ.1])
+      _ ≤ |Cd| / p.T := div_le_div_of_nonneg_left (abs_nonneg _) (by linarith) hτ.1
+  set S : ℝ := ∫ x, F.Phi x ^ 2 with hSdef
+  have hS : S ≤ 2 * π * p.L := hF.integral_Phi_sq_le
+  have hS0 : 0 ≤ S := integral_nonneg fun x => sq_nonneg _
+  set K : ℝ := (4 * (Cμ * p.l) + |Cd| / p.T * p.T) * S with hKdef
+  have hKeq : K = (4 * Cμ * p.l + |Cd|) * S := by
+    have hTne : p.T ≠ 0 := by linarith
+    rw [hKdef, div_mul_cancel₀ _ hTne]
+    ring
+  have hK0 : 0 ≤ K := by rw [hKeq]; positivity
+  -- per-n coefficient and frequency
+  have hren : ∀ n : ℕ, 2 ≤ n → (0:ℝ) < Real.log n := fun n h2 =>
+    Real.log_pos (by exact_mod_cast h2)
+  have hosc : ∀ n ∈ Finset.Ioc 0 ⌊p.X⌋₊,
+      |(-(1 / Real.pi) * ((Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ))))
+          * ((c n).re * Mform F.Phi p.T (muq κ q) (fun t => Real.cos (t * Real.log n))
+             + (c n).im * Mform F.Phi p.T (muq κ q) (fun t => Real.sin (t * Real.log n)))|
+        ≤ (1 / Real.pi) * (2 * K) * ((Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) / Real.log n) := by
+    intro n hn
+    have ha0 : (0:ℝ) ≤ (Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) :=
+      mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (Real.rpow_nonneg (Nat.cast_nonneg n) _)
+    rcases Nat.lt_or_ge n 2 with h2 | h2
+    · have hn1 : n = 1 := by
+        have : 0 < n := (Finset.mem_Ioc.mp hn).1
+        omega
+      subst hn1
+      simp
+    · have hy : 0 < Real.log n := hren n h2
+      -- cos part
+      have hMc := abs_Mform_cos_le hT0 hF.Phi_contDiff hF.Phi_sq_integrable hμ hB hD hy.ne'
+      rw [abs_of_pos hy] at hMc
+      -- sin part via the phase bound at θ = −π/2
+      have hsin_eq : Mform F.Phi p.T (muq κ q) (fun t => Real.sin (t * Real.log n))
+          = Mform F.Phi p.T (muq κ q) (fun t => Real.cos (t * Real.log n + -(π / 2))) := by
+        unfold Mform
+        refine integral_congr_ae (Filter.Eventually.of_forall fun z => ?_)
+        simp only []
+        rw [show z.2 * Real.log n + -(π / 2) = z.2 * Real.log n - π / 2 by ring,
+          Real.cos_sub_pi_div_two]
+      have hMs := abs_Mform_cos_phase_le hT0 hF.Phi_contDiff hF.Phi_sq_integrable hμ hB hD
+        hy.ne' (-(π / 2))
+      rw [abs_of_pos hy] at hMs
+      rw [← hsin_eq] at hMs
+      -- |re|, |im| ≤ ‖c n‖ ≤ 1
+      have hre : |(c n).re| ≤ 1 := (Complex.abs_re_le_norm _).trans (hc.norm_le n)
+      have him : |(c n).im| ≤ 1 := (Complex.abs_im_le_norm _).trans (hc.norm_le n)
+      have hKb : (4 * (Cμ * p.l) + |Cd| / p.T * p.T) * S / Real.log n = K / Real.log n := by
+        rw [hKdef]
+      rw [abs_mul]
+      have h1 : |(c n).re * Mform F.Phi p.T (muq κ q) (fun t => Real.cos (t * Real.log n))
+          + (c n).im * Mform F.Phi p.T (muq κ q) (fun t => Real.sin (t * Real.log n))|
+          ≤ 2 * (K / Real.log n) := by
+        calc |(c n).re * Mform F.Phi p.T (muq κ q) (fun t => Real.cos (t * Real.log n))
+            + (c n).im * Mform F.Phi p.T (muq κ q) (fun t => Real.sin (t * Real.log n))|
+            ≤ |(c n).re| * |Mform F.Phi p.T (muq κ q) (fun t => Real.cos (t * Real.log n))|
+              + |(c n).im| * |Mform F.Phi p.T (muq κ q) (fun t => Real.sin (t * Real.log n))| := by
+              refine (abs_add_le _ _).trans ?_
+              rw [abs_mul, abs_mul]
+          _ ≤ 1 * (K / Real.log n) + 1 * (K / Real.log n) := by
+              refine add_le_add (mul_le_mul hre (hMc.trans (le_of_eq hKb)) (abs_nonneg _)
+                zero_le_one) (mul_le_mul him (hMs.trans (le_of_eq hKb)) (abs_nonneg _) zero_le_one)
+          _ = 2 * (K / Real.log n) := by ring
+      calc |(-(1 / Real.pi) * ((Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ))))| * |_|
+          ≤ (1 / Real.pi * ((Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)))) * (2 * (K / Real.log n)) := by
+            rw [abs_mul, abs_neg, abs_of_pos (by positivity : (0:ℝ) < 1 / Real.pi),
+              abs_of_nonneg ha0]
+            exact mul_le_mul_of_nonneg_left h1 (by positivity)
+        _ = 1 / Real.pi * (2 * K) * ((Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) / Real.log n) := by
+            field_simp
+  -- sum over n
+  rw [Mform_mu_PXc_eq hF.Phi_contDiff.continuous hμ.continuous]
+  refine (Finset.abs_sum_le_sum_abs _ _).trans ((Finset.sum_le_sum hosc).trans ?_)
+  rw [← Finset.mul_sum]
+  have hsum : ∑ n ∈ Finset.Ioc 0 ⌊p.X⌋₊, (Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) / Real.log n
+      ≤ |Cc| * Real.sqrt p.X / p.L := by
+    have h := hCc p.X hX2
+    rw [hlogX] at h
+    have e : ∑ n ∈ Finset.Ioc 0 ⌊p.X⌋₊, (Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) / Real.log n
+        = ∑ n ∈ Finset.Ioc 0 ⌊p.X⌋₊, (Λ n : ℝ) / (Real.sqrt n * Real.log n) := by
+      refine Finset.sum_congr rfl fun n hn => ?_
+      have hn1 : 1 ≤ n := (Finset.mem_Ioc.mp hn).1
+      rcases eq_or_lt_of_le hn1 with h1 | h2
+      · rw [← h1]
+        simp
+      · have hn0 : (0:ℝ) < (n : ℝ) := by exact_mod_cast Nat.lt_of_lt_of_le Nat.zero_lt_one hn1
+        have hs : (0:ℝ) < Real.sqrt n := Real.sqrt_pos.mpr hn0
+        have hlg : (0:ℝ) < Real.log n := Real.log_pos (by exact_mod_cast h2)
+        rw [Real.rpow_neg (Nat.cast_nonneg n), ← Real.sqrt_eq_rpow]
+        field_simp
+    rw [e]
+    exact h.trans (div_le_div_of_nonneg_right
+      (mul_le_mul_of_nonneg_right (le_abs_self Cc) (Real.sqrt_nonneg _)) hL.le)
+  have hsum0 : 0 ≤ ∑ n ∈ Finset.Ioc 0 ⌊p.X⌋₊, (Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) / Real.log n :=
+    Finset.sum_nonneg fun n _ => div_nonneg
+      (mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (Real.rpow_nonneg (Nat.cast_nonneg n) _))
+      (Real.log_natCast_nonneg _)
+  calc 1 / Real.pi * (2 * K) * ∑ n ∈ Finset.Ioc 0 ⌊p.X⌋₊,
+        (Λ n : ℝ) * (n : ℝ) ^ (-(1/2 : ℝ)) / Real.log n
+      ≤ 1 / Real.pi * (2 * ((4 * Cμ * p.l + |Cd|) * (2 * π * p.L)))
+          * (|Cc| * Real.sqrt p.X / p.L) := by
+        rw [hKeq]
+        gcongr
+    _ = 4 * (4 * Cμ * p.l + |Cd|) * |Cc| * Real.sqrt p.X := by field_simp; ring
+    _ ≤ 4 * ((4 * Cμ + |Cd|) * p.l) * |Cc| * Real.sqrt p.X := by
+        gcongr
+        nlinarith [abs_nonneg Cd, hCμ]
+    _ = 4 * (4 * Cμ + |Cd|) * |Cc| * (Zeta23.l p.T * Real.sqrt p.X) := by ring
+
+end ThmE
+end Zeta23
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CrossMuPChi/Variantf6cb6f83eb8df20153b38a2726c5d2809ecc6d5aa2a211b5aaf626e6a0283050.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CrossMuPChi/Variantf6cb6f83eb8df20153b38a2726c5d2809ecc6d5aa2a211b5aaf626e6a0283050.lean#L76).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `72aadaadc7e2f50ecb19bfc695fb68f4d9b7ab11` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

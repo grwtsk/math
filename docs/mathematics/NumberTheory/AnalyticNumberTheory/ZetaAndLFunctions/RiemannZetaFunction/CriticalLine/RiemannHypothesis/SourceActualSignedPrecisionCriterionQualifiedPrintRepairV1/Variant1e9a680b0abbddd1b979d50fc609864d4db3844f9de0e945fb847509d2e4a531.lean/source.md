@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedPrecisionCriterionQualifiedPrintRepairV1.Variant1e9a680b0abbddd1b979d50fc609864d4db3844f9de0e945fb847509d2e4a531
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bd3234091dcffcd53627b1eb534b2123e6c130ab` · SHA-256 `56fcfe4fc2cf2074d6c55472e29a1de3f194fed42aecb724366cf0df7d4adecf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedPrecisionCriterion.Variant65334a96052e8084700d4f7f7cdff0a1dac71c7ec02e026398df7e19c005bf7d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"65334a96052e8084700d4f7f7cdff0a1dac71c7ec02e026398df7e19c005bf7d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualSignedPrecisionCriterion.Variant65334a96052e8084700d4f7f7cdff0a1dac71c7ec02e026398df7e19c005bf7d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"65334a96052e8084700d4f7f7cdff0a1dac71c7ec02e026398df7e19c005bf7d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T075554Z-1791359754303200000/SourceActualSignedPrecisionCriterionQualifiedPrintRepairV1.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualSignedPrecisionCriterion
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedPrecisionCriterion.Variant65334a96052e8084700d4f7f7cdff0a1dac71c7ec02e026398df7e19c005bf7d
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_eq_twice_variation_skew
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_le_iff_positive_fraction
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_le_iff_negative_fraction
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.ActualPositiveVariationPrecisionTailBound
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualPositiveVariationPrecisionTailBound_iff_residual
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualPositiveVariationPrecisionTailBound_iff_estimate
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualAbsoluteVariation_inverse_eventually_exp_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_cap_implies_positive_fraction_exp_budget
+```

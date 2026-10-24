@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMonotoneKernelProbeTypesAxioms.Variantb7d475b570f117b068fc5d0f9c7c07a31b943ee9cc35c56176c65d67fd99ab71
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3ed5223dac1d06279882c63cdfdbd1bda7f068df` · SHA-256 `b7d475b570f117b068fc5d0f9c7c07a31b943ee9cc35c56176c65d67fd99ab71`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualMonotoneKernelProbe
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.syntheticRelativeProbe
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.syntheticRelativeProbe
+#check FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout
+#check FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout_eq
+#check FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout_normalized_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMonotoneKernelProbe.actualKernelProbeReadout_normalized_tendsto
+```

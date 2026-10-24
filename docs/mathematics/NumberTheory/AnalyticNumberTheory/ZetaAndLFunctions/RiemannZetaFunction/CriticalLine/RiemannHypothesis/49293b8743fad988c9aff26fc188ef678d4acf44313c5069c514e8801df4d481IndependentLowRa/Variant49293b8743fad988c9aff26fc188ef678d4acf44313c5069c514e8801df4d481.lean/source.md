@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.49293b8743fad988c9aff26fc188ef678d4acf44313c5069c514e8801df4d481IndependentLowRa.Variant49293b8743fad988c9aff26fc188ef678d4acf44313c5069c514e8801df4d481
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `94e9a457d7ce0e4a743028e38a45528721061ece` · SHA-256 `49293b8743fad988c9aff26fc188ef678d4acf44313c5069c514e8801df4d481`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaTailSignRegularLowRank
+
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.hasDerivAt_thetaTail_succ
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.hasDerivAt_thetaTail_succ
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.deriv_thetaTail_succ
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.deriv_thetaTail_succ
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.iteratedDeriv_thetaTail_add
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.iteratedDeriv_thetaTail_add
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.iteratedDeriv_thetaTail
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.iteratedDeriv_thetaTail
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuous_thetaTail
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuous_thetaTail
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.contDiff_thetaTail_order
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.contDiff_thetaTail_order
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_orientation_initial_seven
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_orientation_initial_seven
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_two_iff_ratio
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_two_iff_ratio
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.hasDerivAt_thetaTail_ratio
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.hasDerivAt_thetaTail_ratio
+```

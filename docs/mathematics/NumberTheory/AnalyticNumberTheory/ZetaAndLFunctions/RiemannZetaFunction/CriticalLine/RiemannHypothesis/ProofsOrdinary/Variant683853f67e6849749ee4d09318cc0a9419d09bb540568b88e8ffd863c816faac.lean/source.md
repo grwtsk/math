@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant683853f67e6849749ee4d09318cc0a9419d09bb540568b88e8ffd863c816faac
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `03188366e654ca474fb65fb6ba0e467d578319dc` · SHA-256 `3d24408331204f99ff8f2301a1e4028fd0cae7c008ffa4d56672c6b1547ef217`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodicInteriorAbel.Variant2316d3a95f343aac008ef95897868231f60388a84a760d176a6ea4658097ce27","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2316d3a95f343aac008ef95897868231f60388a84a760d176a6ea4658097ce27","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPeriodicInteriorAbel.Variant2316d3a95f343aac008ef95897868231f60388a84a760d176a6ea4658097ce27","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"2316d3a95f343aac008ef95897868231f60388a84a760d176a6ea4658097ce27","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-periodic-interior-abel/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPeriodicInteriorAbel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodicInteriorAbel.Variant2316d3a95f343aac008ef95897868231f60388a84a760d176a6ea4658097ce27
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnEndpointWeight
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnAbelRow
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicAdjustedColumnBoundary
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicInteriorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actual_prefix_T_eq_mean_add_abel_row
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnAbelRow_eq_divisor_fubini
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnAbelRow_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actual_adjusted_inner_eq_mean_periodic
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicInteriorDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actual_adjusted_interior_eq_mean_periodic
+```

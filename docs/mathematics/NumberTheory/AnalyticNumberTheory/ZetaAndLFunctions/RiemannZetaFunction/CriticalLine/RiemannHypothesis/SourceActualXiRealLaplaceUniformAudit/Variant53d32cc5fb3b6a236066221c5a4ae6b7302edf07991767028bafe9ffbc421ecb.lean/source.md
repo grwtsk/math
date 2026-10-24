@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiRealLaplaceUniformAudit.Variant53d32cc5fb3b6a236066221c5a4ae6b7302edf07991767028bafe9ffbc421ecb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fdd7e77602caf7f4d474519faf997bcf3303d300` · SHA-256 `5e58532a471f93d73d93caeb2911101c4ea8f481292c2d76863ed7fdfeb18dee`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiRealLaplaceUniform.Variantb40accdf90facdd04862be453c37a8bda879256ae8ba0b46e2dfbe4c4a51758c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b40accdf90facdd04862be453c37a8bda879256ae8ba0b46e2dfbe4c4a51758c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiRealLaplaceUniform.Variantb40accdf90facdd04862be453c37a8bda879256ae8ba0b46e2dfbe4c4a51758c","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b40accdf90facdd04862be453c37a8bda879256ae8ba0b46e2dfbe4c4a51758c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T012326Z-1791336206931172000/SourceActualXiRealLaplaceUniformAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiRealLaplaceUniform
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiRealLaplaceUniform.Variantb40accdf90facdd04862be453c37a8bda879256ae8ba0b46e2dfbe4c4a51758c
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_at_lower
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_at_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_absolutelyContinuous
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_ae_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiFiniteRealLaplace_abel
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiFiniteRealLaplace_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiUndampedFinitePrimitive_eq_damped
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiUndampedFinitePrimitive_eq_damped
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiFiniteRealLaplace_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiFiniteRealLaplace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiComplexLaplace_ofReal
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiComplexLaplace_ofReal
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiComplexLaplace_real_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiComplexLaplace_real_norm_le
+```

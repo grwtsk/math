@@ -1,0 +1,12 @@
+import ActualAbsoluteCutoffCostFixtures
+
+open FormalResearch.RiemannHypothesis.ActualAbsoluteCutoffCostFixtures
+
+#print axioms selected_events_empty_below_twelve
+#print axioms zero_index_excluded
+#print axioms first_event_present
+#print axioms first_event_cost_lower
+#print axioms actual_cost_at_one_zero
+#print axioms actual_seven_halves_cost_lower
+#print axioms absolute_cost_nonnegative
+#print axioms signed_sum_abs_le_cost

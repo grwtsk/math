@@ -1,0 +1,90 @@
+# Verification target: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaDirectional.Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c4316735188cf01bc9d082342d2fdf5f900fc719",
+  "lexical_observation_count": 28,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/index.md) · [Full source](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c4316735188cf01bc9d082342d2fdf5f900fc719`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceProjectionReadout` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.PiL2` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [directionalPrice](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/directionalprice--4b14beef06c7799ae7f586b1.md) | 44 | `declaration-track:4b14beef06c7799ae7f586b1085242cc7f786cbda101f9d9b2c6cb3ef4d24aef` |
+| 2 | `theorem` | [directionalPrice_zero](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/directionalprice-zero--78f82db82c3cd53d03ee385f.md) | 49 | `result-track:78f82db82c3cd53d03ee385f4bc3e8ce658ab4764b4abe22ecdb8e9f05af7530` |
+| 3 | `theorem` | [directionalPrice_nonneg](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/directionalprice-nonneg--fc7e36292dabb32d0d0f697d.md) | 53 | `result-track:fc7e36292dabb32d0d0f697d6c0f5cd0892051f1683e8569bdc32fc099c61f85` |
+| 4 | `theorem` | [norm_mul_directionalPrice](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/norm-mul-directionalprice--11f90eee9b6f1cb21789caf1.md) | 60 | `result-track:11f90eee9b6f1cb21789caf11ffca9868b2ac11233ba91a120a2fa2a343f5d20` |
+| 5 | `theorem` | [real_inner_le_norm_mul_directionalPrice](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/real-inner-le-norm-mul-directionalprice--6af8dfeb87f6e0e7ea8489ca.md) | 69 | `result-track:6af8dfeb87f6e0e7ea8489ca4975af93abe00036f9265ba87790935bdab07433` |
+| 6 | `theorem` | [directionalPrice_le_norm](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/directionalprice-le-norm--ca9bdb053e041401c0f77cdf.md) | 75 | `result-track:ca9bdb053e041401c0f77cdf1e97ad48bc0f6a7c0dfb2f3c7aa1bb364188e169` |
+| 7 | `theorem` | [directionalPrice_eq_zero_of_real_inner_nonpos](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/directionalprice-eq-zero-of-real-inner-nonpos--b05ba4866f3f794351ace160.md) | 85 | `result-track:b05ba4866f3f794351ace1602735b4826b4695852ffa7dd3d7c5a65c9982430a` |
+| 8 | `theorem` | [finite_real_inner_sum_le_directional](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/finite-real-inner-sum-le-directional--46f8664f0354c7e89eb52d67.md) | 92 | `result-track:46f8664f0354c7e89eb52d671c9d0f8a45974f85523d570878931ae92be9ef42` |
+| 9 | `theorem` | [finite_real_inner_sum_le_of_directional_square_bounds](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/finite-real-inner-sum-le-of-directional-square-bounds--6e68f6bb1f6deee21bf163b4.md) | 105 | `result-track:6e68f6bb1f6deee21bf163b425a1402fa9b61ebd4ba73ecc441be6a7d7395460` |
+| 10 | `theorem` | [directional_square_sum_le_row_square_sum](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/directional-square-sum-le-row-square-sum--e9229cefc4c05f80cab7cd91.md) | 115 | `result-track:e9229cefc4c05f80cab7cd918d11bcef0f67cee7710617ffbc8ffa74b2ec2b8d` |
+| 11 | `def` | [combinedDirectionalPrice](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/combineddirectionalprice--27a791cd8c25cbdcf88a73d6.md) | 131 | `declaration-track:27a791cd8c25cbdcf88a73d6db88ebe06d85c562a14bdfbe113e9f27f30f4cbf` |
+| 12 | `theorem` | [norm_increment_mul_price_eq_positive_readout_increment](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/norm-increment-mul-price-eq-positive-readout-increment--2cf50905d6f162ced8137f39.md) | 135 | `result-track:2cf50905d6f162ced8137f39faaa39a2ea099bc669c14eddd6117160ca6cbfdc` |
+| 13 | `theorem` | [projected_readout_le_of_directional_square](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/projected-readout-le-of-directional-square--8e73ceba355ac61acd89741b.md) | 146 | `result-track:8e73ceba355ac61acd89741b6067d86dcc893515292fb6711aa91bcbe97cc4ef` |
+| 14 | `theorem` | [full_readout_le_of_directional_projection_rows](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/full-readout-le-of-directional-projection-rows--65de0bb671d4bbc0f839a96c.md) | 158 | `result-track:65de0bb671d4bbc0f839a96c9813fabbd1a2dc24c971a65521a2a6c01cf4598a` |
+| 15 | `theorem` | [single_block_directionalPrice](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/single-block-directionalprice--3c78977f087e13ec59d6f697.md) | 170 | `result-track:3c78977f087e13ec59d6f697546d47b07aa654b987e7f644c680c1925e912d02` |
+| 16 | `theorem` | [mertensResidual_le_sqrt_of_directional_projection_rows](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/mertensresidual-le-sqrt-of-directional-projection-rows--02ea5149e580dee321cd3f05.md) | 193 | `result-track:02ea5149e580dee321cd3f055630715119dac55a72e6bce19891aa16e51ab1be` |
+| 17 | `theorem` | [mertensResidual_le_moment_add_sqrt_of_scalar_directional_rows](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/mertensresidual-le-moment-add-sqrt-of-scalar-directional-rows--44fbb9f007ba97a7775f0d6d.md) | 205 | `result-track:44fbb9f007ba97a7775f0d6d333bf8930e00281715c1390206cf89f5974178a3` |
+| 18 | `theorem` | [single_block_originalSource_directionalPrice](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/single-block-originalsource-directionalprice--939c2f4c0389ab4fa77e9dd0.md) | 220 | `result-track:939c2f4c0389ab4fa77e9dd0b7a14562ea1d57a6ab329cbfc62047265783b12e` |
+| 19 | `theorem` | [mertensResidualTail_of_adaptive_directional_rows](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/mertensresidualtail-of-adaptive-directional-rows--3af1c95fba22d5d3380c261d.md) | 239 | `result-track:3af1c95fba22d5d3380c261d54b1e1118bc4deb47cd626cd71a940317716d846` |
+| 20 | `theorem` | [estimate_of_adaptive_directional_rows](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/estimate-of-adaptive-directional-rows--5c4181575a0b62e097d5ff4b.md) | 254 | `result-track:5c4181575a0b62e097d5ff4befa8bb841a6ed5fcaea9583b6b016967420092f0` |
+| 21 | `def` | [fixtureDirection](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixturedirection--847e54d8f759d6c61128f508.md) | 271 | `declaration-track:847e54d8f759d6c61128f5086ef0698a8139fc750160bc6e33361aa90537fcfa` |
+| 22 | `def` | [fixtureOrthogonalRow](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixtureorthogonalrow--5144c3dd8500aa32351ee811.md) | 274 | `declaration-track:5144c3dd8500aa32351ee811b71ca3065e16394d23e1c294129b59d32776fcc1` |
+| 23 | `theorem` | [fixture_direction_norm](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixture-direction-norm--f6efd6e7a9ef2462a48bd540.md) | 277 | `result-track:f6efd6e7a9ef2462a48bd540d4ba3f22e62dd6cbd437204b4a71ca98a904fa51` |
+| 24 | `theorem` | [fixture_inner_zero](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixture-inner-zero--3e2318b0e04db1634c146353.md) | 281 | `result-track:3e2318b0e04db1634c14635371cbc9ddd90b2eea158de611f0eed15e53402a6e` |
+| 25 | `theorem` | [fixture_directionalPrice_zero](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixture-directionalprice-zero--600698fb334e1aec0e0eebbe.md) | 285 | `result-track:600698fb334e1aec0e0eebbedb159e71366c852e721e5d25be66cc5e4e35ddc9` |
+| 26 | `theorem` | [fixture_orthogonalRow_norm](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixture-orthogonalrow-norm--5c850cba9098dbcf61f11a17.md) | 292 | `result-track:5c850cba9098dbcf61f11a1795a12d4a5538f7fbf95ce47ca9e190f9f3f12664` |
+| 27 | `theorem` | [fixture_unbounded_row_at_zero_price](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixture-unbounded-row-at-zero-price--b2bbaf3a71130c3e6582e32f.md) | 296 | `result-track:b2bbaf3a71130c3e6582e32f5a6b89eb57cf29c7cbbc4653ed0ee90eb87987a6` |
+| 28 | `theorem` | [fixture_row_norm_unbounded](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaDirectional/Variant9fc5602989b96182aafab9480f4733d12022903be3756ded4cf653208794fba7.lean/declarations/fixture-row-norm-unbounded--c223dd647f2ec482415788fe.md) | 302 | `result-track:c223dd647f2ec482415788fee206eba1572c06543c30ad174705e536196d032a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

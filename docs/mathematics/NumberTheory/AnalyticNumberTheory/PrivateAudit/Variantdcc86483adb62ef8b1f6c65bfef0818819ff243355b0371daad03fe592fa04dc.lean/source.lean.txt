@@ -1,0 +1,11 @@
+import SourcePairedContrastResidual
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedContrastResidual
+
+#check pairedResidualRemainder
+#print axioms pairedResidualRemainder
+#check mertensResidual_eq_contrast_remainder
+#print axioms mertensResidual_eq_contrast_remainder
+#check pairedResidualRemainder_uniformly_bounded
+#print axioms pairedResidualRemainder_uniformly_bounded

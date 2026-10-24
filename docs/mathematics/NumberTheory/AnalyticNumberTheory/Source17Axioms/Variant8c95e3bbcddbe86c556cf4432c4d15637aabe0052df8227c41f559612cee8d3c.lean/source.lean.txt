@@ -1,0 +1,21 @@
+import SourceScaledWholePlainConvolution
+
+open FormalResearch.RiemannHypothesis.SourceScaledWholePlainConvolution
+
+#print axioms completeMangoldtPlainRowsAt
+#print axioms shortMangoldtPlainRowsAt
+#print axioms longMangoldtPlainRowsAt
+#print axioms shortColumnPlainRowsAt
+#print axioms strictLongPlainRowsAt
+#print axioms sourcePlainWeight_scaled_zero_of_cutoff_lt
+#print axioms sourcePlainKernel_nat_zero_of_cutoff_lt
+#print axioms completeRowsAt_eq_sourceMobiusKernel
+#print axioms completeRowsAt_sub_mainTerm_abs_le
+#print axioms completeRowsAt_eq_quotient_sum
+#print axioms completeRowsAt_eq_short_add_long
+#print axioms longRowsAt_eq_logKernel_sub_short
+#print axioms longRowsAt_eq_strict_add_shortColumn
+#print axioms strictRowsAt_eq_logKernel_sub_short_sub_column
+#print axioms shortLog_sub_shortPlain_eq_signed_long_rows
+#print axioms mertensResidual_eq_scaled_strict_rows_and_columns
+#print axioms strictRowsAt_one_eq_plainOff_add_rawDiagonal

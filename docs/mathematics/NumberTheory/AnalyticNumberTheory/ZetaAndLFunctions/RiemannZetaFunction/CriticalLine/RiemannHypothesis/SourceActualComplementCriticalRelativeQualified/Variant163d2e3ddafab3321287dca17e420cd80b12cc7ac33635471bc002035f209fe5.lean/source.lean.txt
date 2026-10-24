@@ -1,0 +1,20 @@
+import SourceActualComplementCriticalRelative
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelativeMain
+
+#print FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualShortMangoldtBlock_sub_halfPrefix_log_square_abs_le
+
+#print FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelative_sub_main_abs_le
+
+#print FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelative_sub_main_tendsto_zero

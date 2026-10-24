@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Varianta53f44abb8918813c08def61bb4b181151536393570557e1f87a905eedfea95b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `98c50d03f18fc1a4533e9565450c27de3b7ef7e2` · SHA-256 `a53f44abb8918813c08def61bb4b181151536393570557e1f87a905eedfea95b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAbsolutePrimeMomentUpper
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsolutePrimeMomentUpperConstant
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsolutePrimeMomentUpperConstant_pos
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualClosedPrimeMoment_unit_atom
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualClosedAbsolutePrimeMoment_le
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsoluteVariation_inverse_exp_lower
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsoluteVariation_inverse_eventually_two_sided
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.ActualPositiveVariationExponentialPrecisionTailBound
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualPositiveVariationExponentialPrecisionTailBound_iff_residual
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualPositiveVariationExponentialPrecisionTailBound_iff_estimate
+```

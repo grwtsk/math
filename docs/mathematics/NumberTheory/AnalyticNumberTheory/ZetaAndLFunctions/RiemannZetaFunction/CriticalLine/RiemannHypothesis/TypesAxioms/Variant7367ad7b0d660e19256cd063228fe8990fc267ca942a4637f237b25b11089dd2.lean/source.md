@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant7367ad7b0d660e19256cd063228fe8990fc267ca942a4637f237b25b11089dd2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0d2894d8c7481a611932dafd17a0687147ae434e` · SHA-256 `0a72ce05d972f27871a22ebaba185a066327a06c44a8dbe3fc0f344316ce6e63`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszQuadraticLaplace.Variant1fca42c1866d1063450afedabfd61a377233b0ed2197bd83aa8f817fb95ddc4a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1fca42c1866d1063450afedabfd61a377233b0ed2197bd83aa8f817fb95ddc4a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRieszQuadraticLaplace.Variant1fca42c1866d1063450afedabfd61a377233b0ed2197bd83aa8f817fb95ddc4a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1fca42c1866d1063450afedabfd61a377233b0ed2197bd83aa8f817fb95ddc4a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualRieszQuadraticLaplace-AuthorFull01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszQuadraticLaplace
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszQuadraticLaplace.Variant1fca42c1866d1063450afedabfd61a377233b0ed2197bd83aa8f817fb95ddc4a
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszQuadraticLaplaceBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszQuadraticLaplaceBudget
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative_future_envelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative_future_envelope
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_absolute_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_absolute_budget
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_norm_le
+```

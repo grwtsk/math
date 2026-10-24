@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantf3febf6d6c84cbfd69720a8d147464b2a3915151747d6a23e20869192d06e825
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a8ed3cfbdaa9325253f1b41539afd1c459856fd0` · SHA-256 `f3febf6d6c84cbfd69720a8d147464b2a3915151747d6a23e20869192d06e825`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualCorrelationOppositeHalf
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform_eq_halves
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform_eq_halves
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_opposite_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_opposite_norm_le
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_sub_bilateral_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_sub_bilateral_norm_le
+```

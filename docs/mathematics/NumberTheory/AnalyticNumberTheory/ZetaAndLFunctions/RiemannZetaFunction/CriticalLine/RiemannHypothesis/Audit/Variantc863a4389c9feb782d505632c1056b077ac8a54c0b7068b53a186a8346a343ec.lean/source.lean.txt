@@ -1,0 +1,107 @@
+import FormalResearch.RiemannHypothesis.SourceMangoldtInteraction
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceMangoldtInteraction
+#check translation_add
+#print axioms translation_add
+#check translation_zero
+#print axioms translation_zero
+#check translation_symm_apply
+#print axioms translation_symm_apply
+#check translation_inner_flip
+#print axioms translation_inner_flip
+#check translation_self_real_even
+#print axioms translation_self_real_even
+#check symmetricTranslation
+#print axioms symmetricTranslation
+#check symmetricTranslation_apply
+#print axioms symmetricTranslation_apply
+#check symmetricTranslation_inner_symmetric
+#print axioms symmetricTranslation_inner_symmetric
+#check symmetricTranslation_selfAdjoint
+#print axioms symmetricTranslation_selfAdjoint
+#check symmetricTranslation_self_real
+#print axioms symmetricTranslation_self_real
+#check mangoldtCoefficient
+#print axioms mangoldtCoefficient
+#check mangoldtInteraction
+#print axioms mangoldtInteraction
+#check mangoldtInteraction_apply
+#print axioms mangoldtInteraction_apply
+#check mangoldtInteraction_inner_symmetric
+#print axioms mangoldtInteraction_inner_symmetric
+#check mangoldtInteraction_selfAdjoint
+#print axioms mangoldtInteraction_selfAdjoint
+#check mangoldtInteraction_self_real
+#print axioms mangoldtInteraction_self_real
+#check closedPrimeMoment_eq_quadratic
+#print axioms closedPrimeMoment_eq_quadratic
+#check mertensResidual_eq_quadratic
+#print axioms mertensResidual_eq_quadratic
+#check criticalMangoldtWork_eq_continuous_sub_quadratic
+#print axioms criticalMangoldtWork_eq_continuous_sub_quadratic
+#check mangoldtInteraction_mixed_real
+#print axioms mangoldtInteraction_mixed_real
+#check correlationScaleDerivative_eq_mixed
+#print axioms correlationScaleDerivative_eq_mixed
+#check closedPrimeMomentScaleDerivative_eq_mixed
+#print axioms closedPrimeMomentScaleDerivative_eq_mixed
+#check translation_inner_stationary
+#print axioms translation_inner_stationary
+#check sourceCorrelation_zero
+#print axioms sourceCorrelation_zero
+#check probeScale
+#print axioms probeScale
+#check probeScale_pos
+#print axioms probeScale_pos
+#check interactionProbe
+#print axioms interactionProbe
+#check interactionProbe_correlation
+#print axioms interactionProbe_correlation
+#check probeScale_gap
+#print axioms probeScale_gap
+#check probeScale_log_two
+#print axioms probeScale_log_two
+#check interactionProbe_correlation_eq_zero
+#print axioms interactionProbe_correlation_eq_zero
+#check interactionProbe_correlation_two
+#print axioms interactionProbe_correlation_two
+#check two_mem_primePowerInventory
+#print axioms two_mem_primePowerInventory
+#check mangoldtInteraction_probe_value
+#print axioms mangoldtInteraction_probe_value
+#check mangoldtCoefficient_two_pos
+#print axioms mangoldtCoefficient_two_pos
+#check mangoldtInteraction_negative_probe
+#print axioms mangoldtInteraction_negative_probe
+#check mangoldtInteraction_positive_probe
+#print axioms mangoldtInteraction_positive_probe
+#check mangoldtInteraction_not_nonnegative
+#print axioms mangoldtInteraction_not_nonnegative
+#check mangoldtInteraction_not_nonpositive
+#print axioms mangoldtInteraction_not_nonpositive
+#check originalSourceState_norm
+#print axioms originalSourceState_norm
+#check quadratic_comparison_error
+#print axioms quadratic_comparison_error
+#check source_quadratic_comparison_error
+#print axioms source_quadratic_comparison_error
+#check symmetricTranslation_angular_commute
+#print axioms symmetricTranslation_angular_commute
+#check symmetricTranslation_reflection_commute
+#print axioms symmetricTranslation_reflection_commute
+#check mangoldtInteraction_angular_commute
+#print axioms mangoldtInteraction_angular_commute
+#check mangoldtInteraction_reflection_commute
+#print axioms mangoldtInteraction_reflection_commute
+#check mangoldtInteraction_quarterTurn_commute
+#print axioms mangoldtInteraction_quarterTurn_commute
+#check mangoldtInteraction_rotation_commute
+#print axioms mangoldtInteraction_rotation_commute
+#check mangoldtInteraction_rotation_pairing
+#print axioms mangoldtInteraction_rotation_pairing
+#check source_rotation_readout_eq
+#print axioms source_rotation_readout_eq
+#check MangoldtInteractionTailUpperBound
+#print axioms MangoldtInteractionTailUpperBound
+#check interaction_tail_iff_residual_tail
+#print axioms interaction_tail_iff_residual_tail

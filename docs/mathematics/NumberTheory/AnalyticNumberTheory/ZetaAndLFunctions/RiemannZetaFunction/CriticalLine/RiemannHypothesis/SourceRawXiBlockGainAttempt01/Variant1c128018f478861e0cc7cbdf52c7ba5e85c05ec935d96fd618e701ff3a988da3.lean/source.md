@@ -1,0 +1,110 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRawXiBlockGainAttempt01.Variant1c128018f478861e0cc7cbdf52c7ba5e85c05ec935d96fd618e701ff3a988da3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c49cf3711d717992b1e8f2f4c554c14ba0bf63dc` · SHA-256 `d993c96fec8fc4a5381365dfbd8a637e852328a01e9010221c5ff4c2e00fe46b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ContractedPairingEqBlockAddComplement.Variant5751a80367ecc40d21df0e96098aee31031ffce3500f4369c5acf0a954d8b64b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5751a80367ecc40d21df0e96098aee31031ffce3500f4369c5acf0a954d8b64b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ContractedPairingEqBlockAddComplement.Variant5751a80367ecc40d21df0e96098aee31031ffce3500f4369c5acf0a954d8b64b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5751a80367ecc40d21df0e96098aee31031ffce3500f4369c5acf0a954d8b64b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/followthrough3/block/SourceRawXiBlockGain.attempt01.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteXiComplementConsumer
+import SourceContractedXiConsequences
+
+/-!
+Apply the actual favorable finite Xi block to a budget on the complete
+complement, retaining the signed improvement K-eta without clipping. The
+uniform complement witness remains explicit. Direction: grwtsk contributors.
+Native source recovery and formal application: OpenAI Codex.
+-/
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ContractedPairingEqBlockAddComplement.Variant5751a80367ecc40d21df0e96098aee31031ffce3500f4369c5acf0a954d8b64b
+
+set_option autoImplicit false
+noncomputable section
+namespace FormalResearch.RiemannHypothesis.SourceRawXiBlockGain
+
+open MeasureTheory
+open RH16ActualXiPositiveBlock RH16CompleteXiComplement
+open SourceFullXiOuterContraction SourceContractedXiConsequences SourcePositiveSampling
+open RH16ActualPsiNegativeBlock RH16ResumeBudget SourceFirstAtomSignedWork
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimateMertensResidual Realization
+
+theorem contracted_pairing_eq_block_add_complement (A : ℝ) (hA : 40 ≤ A) :
+    (∫ y in 2..Real.exp (2 * A), shiftedActualChebyshev y * deriv (plainProfile A 1) y) =
+      (∫ y in (13 / 2)..7, actualTransformedXiBlockDensity A y) + completeXiComplement A := by
+  rw [← actual_signed_pairing_eq_contracted A (by linarith)]
+  exact signed_pairing_eq_block_add_complement A hA
+
+theorem contracted_pairing_lower_of_complement_raw (K A : ℝ) (hA : 40 ≤ A)
+    (hcomp : -K ≤ completeXiComplement A) :
+    -(K - blockMargin) ≤ ∫ y in 2..Real.exp (2 * A),
+      shiftedActualChebyshev y * deriv (plainProfile A 1) y := by
+  have hb := actual_transformed_block_integral_lower A hA
+  have he := contracted_pairing_eq_block_add_complement A hA
+  linarith only [hb, he, hcomp]
+
+theorem residual_upper_of_complement_raw (K A : ℝ) (hA : 91 ≤ A)
+    (hcomp : -K ≤ completeXiComplement A) :
+    mertensResidual A ≤ K - blockMargin - 3 / 8 +
+      SourceLeadingTailBudget.criticalBaselineCorrection 91 := by
+  apply residual_upper_of_contracted_Xi (K - blockMargin) A hA
+  exact contracted_pairing_lower_of_complement_raw K A (by linarith) hcomp
+
+theorem all_real_lower_of_complement_at_91 (K : ℝ)
+    (hcomp : ∀ A : ℝ, 91 ≤ A → -K ≤ completeXiComplement A) :
+    ∀ A : ℝ, 1 ≤ A →
+      min (originalPrefixLower 91)
+        (archimedeanMultiplier 0 - 2 * (K - blockMargin - 3 / 8 +
+          SourceLeadingTailBudget.criticalBaselineCorrection 91)) ≤
+            sourceQuadraticValue explicitSecondDerivative A := by
+  apply all_real_lower_of_contracted_Xi (K - blockMargin)
+  intro A hA
+  exact contracted_pairing_lower_of_complement_raw K A (by linarith) (hcomp A hA)
+
+theorem actual_leading_upper_of_complement_raw (K A : ℝ) (hA : 25600 ≤ A)
+    (hcomp : -K ≤ completeXiComplement A) :
+    SourceLeadingTailBudget.actualLeadingRenormalizedTail A ≤
+      K - blockMargin - 3 / 8 + SourceLeadingTailBudget.criticalBaselineCorrection 91 -
+        (riemannZeta (1 / 2)).re + 3103 / 50 := by
+  apply actual_leading_upper_of_contracted_Xi (K - blockMargin) A hA
+  exact contracted_pairing_lower_of_complement_raw K A (by linarith) hcomp
+
+theorem estimate_of_complement_at_91 (K : ℝ)
+    (hcomp : ∀ A : ℝ, 91 ≤ A → -K ≤ completeXiComplement A) :
+    CorrelationAssembly.EstimateObligation := by
+  apply estimate_of_contracted_pairing (K - blockMargin)
+  intro A hA
+  exact contracted_pairing_lower_of_complement_raw K A (by linarith) (hcomp A hA)
+
+theorem residual_tail_of_complement_raw (K R : ℝ)
+    (hcomp : ∀ A : ℝ, max 91 R ≤ A → -K ≤ completeXiComplement A) :
+    ∀ A : ℝ, max 91 R ≤ A →
+      mertensResidual A ≤ K - blockMargin - 3 / 8 +
+        SourceLeadingTailBudget.criticalBaselineCorrection 91 := by
+  intro A hA
+  exact residual_upper_of_complement_raw K A ((le_max_left 91 R).trans hA) (hcomp A hA)
+
+theorem all_real_lower_of_complement_raw (K R : ℝ)
+    (hcomp : ∀ A : ℝ, max 91 R ≤ A → -K ≤ completeXiComplement A) :
+    ∀ A : ℝ, 1 ≤ A →
+      min (originalPrefixLower (max 91 R))
+        (archimedeanMultiplier 0 - 2 * (K - blockMargin - 3 / 8 +
+          SourceLeadingTailBudget.criticalBaselineCorrection 91)) ≤
+            sourceQuadraticValue explicitSecondDerivative A := by
+  apply all_real_source_lower_of_residual_tail
+    (K - blockMargin - 3 / 8 + SourceLeadingTailBudget.criticalBaselineCorrection 91)
+    (max 91 R) (by have h := le_max_left (91 : ℝ) R; linarith)
+  exact residual_tail_of_complement_raw K R hcomp
+
+theorem estimate_of_complement_raw (K R : ℝ)
+    (hcomp : ∀ A : ℝ, max 91 R ≤ A → -K ≤ completeXiComplement A) :
+    CorrelationAssembly.EstimateObligation := by
+  exact ⟨_, all_real_lower_of_complement_raw K R hcomp⟩
+
+end FormalResearch.RiemannHypothesis.SourceRawXiBlockGain
+```

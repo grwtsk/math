@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsAxioms.Variantcca58df7f235a32fe70bf32332ba67a7f0e538c477a300c4fa5a79cfe522c35e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5c7dd9975b04e3e211e2b97dccffbf297f9753eb` · SHA-256 `aa77151a5a49659169be9307c5f2c6f563a89e70f301bfacb2cef97c4bf6a054`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceJointMangoldtBaseline.Variantdd2e0cb670c56c74473dac6b85a49981ec6a0934d7141c4317c445cc193c7f18","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dd2e0cb670c56c74473dac6b85a49981ec6a0934d7141c4317c445cc193c7f18","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceJointMangoldtBaseline.Variantdd2e0cb670c56c74473dac6b85a49981ec6a0934d7141c4317c445cc193c7f18","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"dd2e0cb670c56c74473dac6b85a49981ec6a0934d7141c4317c445cc193c7f18","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/future-observable/resume-baseline/audit/ProofsAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceJointMangoldtBaseline
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceJointMangoldtBaseline.Variantdd2e0cb670c56c74473dac6b85a49981ec6a0934d7141c4317c445cc193c7f18
+
+set_option pp.fullNames true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_integrable_and_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_integrable_and_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_zero_of_log_cutoff_le
+#print axioms FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_zero_of_log_cutoff_le
+#print FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_window_eq_neg_lower_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.jointMangoldtTestProfile_window_eq_neg_lower_tail
+#print FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.strictColumnInterior_eq_neg_lower_tail_and_joint_work
+#print axioms FormalResearch.RiemannHypothesis.SourceJointMangoldtBaseline.strictColumnInterior_eq_neg_lower_tail_and_joint_work
+```

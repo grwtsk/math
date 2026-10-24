@@ -1,0 +1,162 @@
+# Criterion.val_p_L'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "a71400b521d5902842b91edafd8e491fe67e89eb",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 216,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/7a/7acb76f732336a920c4fcd5b2088ac2be18b31c231e5c2bd66157dc60bf86358.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:4ba96487-f223-4777-92fe-11eceb4e9ec0",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:8f0258c5-02fb-1d2e-7fbe-d003498b44fa",
+  "kind": "lemma",
+  "lexical_name": "Criterion.val_p_L'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "criterion-val-p-l--25995f78d66c364e33c7e6da",
+  "source": {
+    "blob": "a71400b521d5902842b91edafd8e491fe67e89eb",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 284,
+    "line": 216,
+    "path": "GRWTSK/NumberTheory/Lcm/Variant7acb76f732336a920c4fcd5b2088ac2be18b31c231e5c2bd66157dc60bf86358.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:25995f78d66c364e33c7e6daea718a11e1f372bb93c97b422ff9dab9bff8ec88",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Lcm/Variant7acb76f732336a920c4fcd5b2088ac2be18b31c231e5c2bd66157dc60bf86358.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8f0258c5-02fb-1d2e-7fbe-d003498b44fa`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 216–284.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma Criterion.val_p_L' (c : Criterion) (i : Fin 3) : (c.L').factorization (c.p i) = 1 := by
+  have h_pi_factor : Nat.factorization (L c.n) (c.p i) = 1 := by
+    have h_prime_factor : ∀ {p : ℕ}, Nat.Prime p → Real.sqrt c.n < p → p < c.n →
+        (Nat.factorization (L c.n)) p = 1 := @fun p hp hp_sqrt hp_lt_n ↦ by
+      have h_prime_factor : (Nat.factorization (L c.n)) p = 1 := by
+        have h_prime_factor_def : (Nat.factorization (L c.n)) p = Finset.sup (Finset.Icc 1 c.n)
+            (fun i ↦ Nat.factorization i p) := by
+          have h_prime_factor_def : (Nat.factorization (Finset.lcm (Finset.Icc 1 c.n) (fun i ↦ i)))
+              p = Finset.sup (Finset.Icc 1 c.n) (fun i ↦ Nat.factorization i p) := by
+            have h_lcm_factorization : ∀ {S : Finset ℕ}, (∀ i ∈ S, i ≠ 0) →
+                (Nat.factorization (Finset.lcm S (fun i ↦ i))) p =
+                Finset.sup S (fun i ↦ Nat.factorization i p) := by
+              intros S hS_nonzero
+              induction S using Finset.induction with
+              | empty => simp [Finset.lcm]
+              | insert i S hiS ih =>
+                  by_cases hi : i = 0
+                  · simp_all
+                  simp only [lcm_insert]
+                  erw [Nat.factorization_lcm] <;> simp_all
+            exact h_lcm_factorization fun i hi ↦ by linarith [Finset.mem_Icc.mp hi]
+          exact h_prime_factor_def
+        have h_prime_power : ∀ i ∈ Finset.Icc 1 c.n, Nat.factorization i p ≤ 1 := fun i hi ↦ by
+          have h_prime_power : p^2 > c.n := by
+            rw [Real.sqrt_lt] at hp_sqrt <;> norm_cast at * <;> nlinarith only [hp_sqrt, hp_lt_n]
+          exact le_of_not_gt fun h ↦ absurd (Nat.dvd_trans (pow_dvd_pow p h) (Nat.ordProj_dvd i p))
+            (Nat.not_dvd_of_pos_of_lt (Finset.mem_Icc.mp hi |>.1)
+            (by nlinarith [Finset.mem_Icc.mp hi |>.2]))
+        refine h_prime_factor_def.trans (le_antisymm (Finset.sup_le h_prime_power) ?_)
+        exact le_trans (by norm_num [hp]) (Finset.le_sup (f := fun i ↦ Nat.factorization i p)
+          (Finset.mem_Icc.mpr ⟨hp.pos, hp_lt_n.le⟩))
+      exact (Nat.add_right_cancel (congrFun (congrArg HAdd.hAdd ((h_prime_factor.symm))) p)).symm
+    apply h_prime_factor (c.hp i) (c.h_ord_1.trans_le (by
+      exact_mod_cast c.hp_mono.monotone (Nat.zero_le _))) (by
+        have := c.h_ord_2; have := c.h_ord_3; fin_cases i <;> linarith! [c.hp_mono <|
+          show 0 < 1 by decide, c.hp_mono <| show 1 < 2 by decide, c.hq_mono <|
+          show 0 < 1 by decide, c.hq_mono <| show 1 < 2 by decide])
+  have h_pi_factor_L' : Nat.factorization (L c.n) (c.p i) = Nat.factorization (c.L')
+      (c.p i) + Nat.factorization (∏ i, c.q i) (c.p i) := by
+    have h_pi_factor_L' : Nat.factorization (L c.n) = Nat.factorization (c.L') +
+        Nat.factorization (∏ i, c.q i) := by
+      rw [← Nat.factorization_mul] <;> norm_num [c.L'_pos.ne']
+      · rw [mul_comm, Criterion.L_eq_prod_q_mul_L']
+      · exact Finset.prod_ne_zero_iff.mpr fun i _ ↦ Nat.Prime.ne_zero (c.hq i)
+    aesop
+  have h_pi_not_div_q : ∀ j, ¬(c.p i ∣ c.q j) := by
+    intro j hj; have := c.hq j; have := c.hp i; simp_all only [Nat.prime_dvd_prime_iff_eq]
+    have := c.h_ord_2; have := c.h_ord_3; fin_cases i <;> fin_cases j <;> linarith! [c.hp_mono <|
+      show 0 < 1 by decide, c.hp_mono <| show 1 < 2 by decide, c.hq_mono <|
+      show 0 < 1 by decide, c.hq_mono <| show 1 < 2 by decide]
+  simp_all [Fin.prod_univ_three,Nat.factorization_mul,Nat.Prime.ne_zero (c.hq _),
+    Nat.factorization_eq_zero_of_not_dvd (h_pi_not_div_q _)]
+
+@[blueprint
+  "lem:Lprime-def"
+  (title := "Factorisation of \\(L_n\\)")
+  (statement := /--
+  There exists a positive integer \(L'\) such that
+  \[
+    L_n = q_1 q_2 q_3 \, L'
+  \]
+  and each prime \(q_i\) divides \(L_n\) exactly once and does not divide \(L'\).
+  -/)
+  (proof := /--
+  Since \(q_i < n\), the prime \(q_i\) divides \(L_n\) exactly once (as \(q_i^2 > n\)).
+  Hence we may write \(L_n = q_1 q_2 q_3 L'\) where \(L'\) is the quotient obtained by removing
+  these prime factors.  By construction, \(q_i \nmid L'\) for each \(i\).
+  -/)
+  (latexEnv := "lemma")]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/NumberTheory/Lcm/Variant7acb76f732336a920c4fcd5b2088ac2be18b31c231e5c2bd66157dc60bf86358.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Lcm/Variant7acb76f732336a920c4fcd5b2088ac2be18b31c231e5c2bd66157dc60bf86358.lean#L216).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a71400b521d5902842b91edafd8e491fe67e89eb` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

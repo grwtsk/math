@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovariancePntRateAudit.Variant11c8002fe6d6084b5340cdeb47a4ecdd99aa7608bdb64ebfbfa341c462f1942a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9e68953a55e1a668b20e88c8c864222f3cacc67c` · SHA-256 `377cc8643c0d551d8011c07c186ae3aa8155216da6fc5c3e75c3d0f444b198a4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovariancePntRate.Variant764c4d752d8d9aed935ead4273e33658c79d6a3ec16f4735074c697bf23d3bfa","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"764c4d752d8d9aed935ead4273e33658c79d6a3ec16f4735074c697bf23d3bfa","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalCovariancePntRate.Variant764c4d752d8d9aed935ead4273e33658c79d6a3ec16f4735074c697bf23d3bfa","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"764c4d752d8d9aed935ead4273e33658c79d6a3ec16f4735074c697bf23d3bfa","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T034226Z-1791344546982514000/SourceActualCriticalCovariancePntRateAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalCovariancePntRate
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovariancePntRate.Variant764c4d752d8d9aed935ead4273e33658c79d6a3ec16f4735074c697bf23d3bfa
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualEarlyCriticalErrorCenter_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualEarlyCriticalErrorCenter_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualEarlyCriticalErrorCenter_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualMovingEarlyNormalizedBudget_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualMovingEarlyNormalizedBudget_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualMovingEarlyNormalizedBudget_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualNormalizedCriticalCovariance_Pnt_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualNormalizedCriticalCovariance_Pnt_budget
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualNormalizedCriticalCovariance_Pnt_budget
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualNormalizedCriticalCovariance_Pnt_isBigO
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualNormalizedCriticalCovariance_Pnt_isBigO
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualNormalizedCriticalCovariance_Pnt_isBigO
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualCriticalErrorCovariance_Pnt_isBigO
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualCriticalErrorCovariance_Pnt_isBigO
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovariancePntRate.actualCriticalErrorCovariance_Pnt_isBigO
+```

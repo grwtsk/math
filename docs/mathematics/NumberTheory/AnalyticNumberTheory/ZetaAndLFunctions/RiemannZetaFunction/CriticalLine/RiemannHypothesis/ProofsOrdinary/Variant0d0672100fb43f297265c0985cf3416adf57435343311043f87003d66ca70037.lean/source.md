@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant0d0672100fb43f297265c0985cf3416adf57435343311043f87003d66ca70037
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ffbc9ef88138ff11deb052355992e7fece20c780` · SHA-256 `0046c7f5a07981d9bceb746446c579526e3dd356966ba032e99115d5f28ed2c8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedPrecisionCriterion.Varianta004deeef4e2318dd4799a51a6a9dce8305e7d4fbeca817a20e030b417a511f2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a004deeef4e2318dd4799a51a6a9dce8305e7d4fbeca817a20e030b417a511f2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualSignedPrecisionCriterion.Varianta004deeef4e2318dd4799a51a6a9dce8305e7d4fbeca817a20e030b417a511f2","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a004deeef4e2318dd4799a51a6a9dce8305e7d4fbeca817a20e030b417a511f2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualSignedPrecisionCriterion-IndependentFullAuditV1/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualSignedPrecisionCriterion
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedPrecisionCriterion.Varianta004deeef4e2318dd4799a51a6a9dce8305e7d4fbeca817a20e030b417a511f2
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_eq_twice_variation_skew
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_le_iff_positive_fraction
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_le_iff_negative_fraction
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.ActualPositiveVariationPrecisionTailBound
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualPositiveVariationPrecisionTailBound_iff_residual
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualPositiveVariationPrecisionTailBound_iff_estimate
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualAbsoluteVariation_inverse_eventually_exp_bound
+#print FormalResearch.RiemannHypothesis.SourceActualSignedPrecisionCriterion.actualResidual_cap_implies_positive_fraction_exp_budget
+```

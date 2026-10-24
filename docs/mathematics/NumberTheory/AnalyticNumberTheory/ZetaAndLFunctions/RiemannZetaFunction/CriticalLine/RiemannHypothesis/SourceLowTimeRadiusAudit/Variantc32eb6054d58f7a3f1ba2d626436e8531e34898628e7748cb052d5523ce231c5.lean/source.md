@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLowTimeRadiusAudit.Variantc32eb6054d58f7a3f1ba2d626436e8531e34898628e7748cb052d5523ce231c5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cc2e46adb67b14b9dd1945d7922f333b846cbfa6` · SHA-256 `c32eb6054d58f7a3f1ba2d626436e8531e34898628e7748cb052d5523ce231c5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceLowTimeRadius
+
+namespace FormalResearch.RiemannHypothesis.SourceLowTimeRadius
+
+#check lowTimeStripBudget
+#print axioms lowTimeStripBudget
+#print lowTimeStripBudget
+#check actual_low_sector_integrable
+#print axioms actual_low_sector_integrable
+#print actual_low_sector_integrable
+#check actual_low_mixed_restricted_abs_le_scaled
+#print axioms actual_low_mixed_restricted_abs_le_scaled
+#print actual_low_mixed_restricted_abs_le_scaled
+#check actual_retained_spatial_strip_abs_le_scaled
+#print axioms actual_retained_spatial_strip_abs_le_scaled
+#print actual_retained_spatial_strip_abs_le_scaled
+#check lowTimeStripBudget_le_at_radius
+#print axioms lowTimeStripBudget_le_at_radius
+#print lowTimeStripBudget_le_at_radius
+#check actual_retained_spatial_strip_abs_le_radius
+#print axioms actual_retained_spatial_strip_abs_le_radius
+#print actual_retained_spatial_strip_abs_le_radius
+#check actual_surplus_le_remainingOverlap_add_radius
+#print axioms actual_surplus_le_remainingOverlap_add_radius
+#print actual_surplus_le_remainingOverlap_add_radius
+#check remainingOverlap_le_actual_surplus_add_radius
+#print axioms remainingOverlap_le_actual_surplus_add_radius
+#print remainingOverlap_le_actual_surplus_add_radius
+
+end FormalResearch.RiemannHypothesis.SourceLowTimeRadius
+```

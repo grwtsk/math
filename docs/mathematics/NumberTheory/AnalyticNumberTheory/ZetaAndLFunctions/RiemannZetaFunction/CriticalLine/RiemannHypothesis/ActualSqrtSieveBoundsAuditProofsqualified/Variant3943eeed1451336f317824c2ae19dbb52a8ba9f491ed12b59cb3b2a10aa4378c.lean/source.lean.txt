@@ -1,0 +1,8 @@
+import ActualSqrtSieveBounds
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.reciprocalSqrt_sum_upper
+#print RH16IndependentChallengeNext.reciprocalSqrt_sum_upper_total
+#print RH16IndependentChallengeNext.reciprocalSqrt_sum_lower
+#print RH16IndependentChallengeNext.reciprocalSquare_sum_upper
+#print RH16IndependentChallengeNext.reciprocal_small_square_divisor_bonus

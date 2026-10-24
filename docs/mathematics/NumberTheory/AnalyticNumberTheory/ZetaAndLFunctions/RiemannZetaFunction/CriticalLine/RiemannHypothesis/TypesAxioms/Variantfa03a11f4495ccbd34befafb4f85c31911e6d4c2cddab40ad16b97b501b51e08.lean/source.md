@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantfa03a11f4495ccbd34befafb4f85c31911e6d4c2cddab40ad16b97b501b51e08
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7355c52fe23d444a3f99f9de851fe33c36fada55` · SHA-256 `7562525bc4a27b4d286184259e7bbfaf5973782c5c44e15ec8523e9331f6df82`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualInsideStripKernelUnbounded.Variantca8d54f32ab83047b6834f60e57f4d3a9f278c4d129260af90305459665977c8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ca8d54f32ab83047b6834f60e57f4d3a9f278c4d129260af90305459665977c8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualInsideStripKernelUnbounded.Variantca8d54f32ab83047b6834f60e57f4d3a9f278c4d129260af90305459665977c8","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"ca8d54f32ab83047b6834f60e57f4d3a9f278c4d129260af90305459665977c8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualInsideStripKernelUnbounded-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualInsideStripKernelUnbounded
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualInsideStripKernelUnbounded.Variantca8d54f32ab83047b6834f60e57f4d3a9f278c4d129260af90305459665977c8
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStrip_sequence_scale_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStrip_sequence_scale_tendsto_zero
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_eventually_below
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_eventually_below
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_tendsto_atBot
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_tendsto_atBot
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_below_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_below_beyond
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_no_eventual_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelUnbounded.actualInsideStripKernel_no_eventual_lower_bound
+```

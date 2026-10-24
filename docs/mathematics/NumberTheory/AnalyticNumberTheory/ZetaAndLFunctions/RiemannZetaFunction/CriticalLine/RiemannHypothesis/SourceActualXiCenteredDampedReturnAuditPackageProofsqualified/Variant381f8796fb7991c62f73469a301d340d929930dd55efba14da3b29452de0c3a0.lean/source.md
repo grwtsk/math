@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCenteredDampedReturnAuditPackageProofsqualified.Variant381f8796fb7991c62f73469a301d340d929930dd55efba14da3b29452de0c3a0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f24f16d2a1d3af00c45b1b75a01c44ab065e2aa8` · SHA-256 `b6b0ce08708c50cb0f6165d4983f0a9bccd9d8cbbee4ac6ec37d105876318a1b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCenteredDampedReturn.Variantaa2392ec90a727ebba332023f6783cab4bd8b9aacf295d6a9063c4ed67d61cfa","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"aa2392ec90a727ebba332023f6783cab4bd8b9aacf295d6a9063c4ed67d61cfa","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiCenteredDampedReturn.Variantaa2392ec90a727ebba332023f6783cab4bd8b9aacf295d6a9063c4ed67d61cfa","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"aa2392ec90a727ebba332023f6783cab4bd8b9aacf295d6a9063c4ed67d61cfa","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualXiCenteredDampedReturnAuditPackageProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiCenteredDampedReturn
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCenteredDampedReturn.Variantaa2392ec90a727ebba332023f6783cab4bd8b9aacf295d6a9063c4ed67d61cfa
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualCenteredDampedXiReturn
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualConstantSectorLowerBudget
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualDampedXiReturnDensity_integral_eq_neg_lower
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualCenteredDampedXiReturn_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_eq_centered_damped_return
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualDampedXiReturnTest_lower_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_sub_centered_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualConstantSectorLowerBudget_div_square_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_sub_centered_tendsto_zero
+```

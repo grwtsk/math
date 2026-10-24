@@ -1,0 +1,136 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Solution.Variantfeedbbf9f95683b1e9e255bb0c59406d004c6acc6a1df6096ff0cabcb92fac8f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9ce3baae2c0daeab64670d1b4f57b454518fd2d4` · SHA-256 `60c8a599e9eb3296e9567dd21e43e3f95e7742438e8ced17ef1277b76ff59cbe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CStarOneEqCMT.Variantb707c110ecee1ee0e5ae84110417d68ce8f48fb8e88efb12a95021ee911d3f31","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b707c110ecee1ee0e5ae84110417d68ce8f48fb8e88efb12a95021ee911d3f31","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.CStarOneEqCMT.Variantb707c110ecee1ee0e5ae84110417d68ce8f48fb8e88efb12a95021ee911d3f31","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b707c110ecee1ee0e5ae84110417d68ce8f48fb8e88efb12a95021ee911d3f31","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/.lake/packages/Zeta23/comparator/Solution.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Anthropic, PBC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+SPDX-License-Identifier: Apache-2.0
+-/
+/-
+Solution.lean — the UNTRUSTED comparator solution module: the fifteen statements of Challenge.lean,
+byte-identical, each PROVED by delegating to the Zeta23 library:
+
+  A, B, C  →  Zeta23.thmA₀ / thmA₀_cumulative / thmB₀ / thmB₀_cumulative / thmC₀ / thmC₀_cumulative
+              (Zeta23/Final.lean, re-exported with English names by Zeta23/Unconditional.lean);
+  D        →  Zeta23.ThmD.thmD₀ / thmD₀_simple / thmD₀_dist            (Zeta23/ThmD/Final.lean);
+  E        →  Zeta23.ThmE.thmE_A₀ / thmE_B₀ / thmE_C₀                  (Zeta23/ThmE/Final.lean);
+  D for χ  →  Zeta23.ThmDE.thmE_D₀ / thmE_D₀_simple / thmE_D₀_dist      (Zeta23/ThmDE/Final.lean).
+
+The challenge's counting functions (ChallengeDeps.lean) are character-for-character the Zeta23 ones
+(Zeta23/Statement.lean §1, Zeta23/ThmE/Statement.lean §1) in a different namespace, so each delegation
+typechecks by definitional unfolding in the kernel. The only mathematics proved HERE is the identity
+`cStar_one_eq_cMT`: Zeta23 carries the Theorem-D constant as `Zeta23.ThmD.cStar 1`
+(= √2·sin ϑ/(cos ϑ + ϑ·sin ϑ) at ϑ = 1/√2, a division-safe form) and `Zeta23.ThmD.HD 1 = 2 − 1/cStar 1`,
+while the challenge states the paper's displayed closed form c₁* = √2·tan ϑ/(1 + ϑ·tan ϑ), ϑ = 1/√2.
+
+Nothing in this file is part of the trusted base: comparator re-checks that every theorem below has
+exactly the statement of its Challenge namesake and uses only the permitted axioms.
+-/
+import ChallengeDeps
+import Zeta23.Unconditional
+import Zeta23.ThmD.Final
+import Zeta23.ThmE.Final
+import Zeta23.ThmDE.Final
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CStarOneEqCMT.Variantb707c110ecee1ee0e5ae84110417d68ce8f48fb8e88efb12a95021ee911d3f31
+
+noncomputable section
+
+/-- The Zeta23 library's Theorem-D constant `cStar 1` (division-safe sin/cos form) equals the
+challenge's `cMT` (the paper's tan form at ϑ = 1/√2): by Zeta23's own `cStar_eq_tan_form` and
+unfolding `Zeta23.ThmD.theta 1 = 1 / Real.sqrt 2`. -/
+theorem cStar_one_eq_cMT : Zeta23.ThmD.cStar 1 = cMT := by
+  rw [Zeta23.ThmD.cStar_eq_tan_form zero_le_one le_rfl]
+  unfold cMT Zeta23.ThmD.theta
+  rfl
+
+theorem two_thirds_on_critical_line :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 / 3 - ε) * (Ncount T (2 * T) : ℝ) ≤ N0star T (2 * T) :=
+  Zeta23.thmA₀
+
+theorem two_thirds_on_critical_line_cumulative :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 / 3 - ε) * (Ncount 0 T : ℝ) ≤ N0star 0 T :=
+  Zeta23.thmA₀_cumulative
+
+theorem half_simple_on_critical_line :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (1 / 2 - ε) * (Ncount T (2 * T) : ℝ) ≤ N0simple T (2 * T) :=
+  Zeta23.thmB₀
+
+theorem half_simple_on_critical_line_cumulative :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (1 / 2 - ε) * (Ncount 0 T : ℝ) ≤ N0simple 0 T :=
+  Zeta23.thmB₀_cumulative
+
+theorem three_quarters_distinct :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (3 / 4 - ε) * (Ncount T (2 * T) : ℝ) ≤ Ndist T (2 * T) :=
+  Zeta23.thmC₀
+
+theorem three_quarters_distinct_cumulative :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (3 / 4 - ε) * (Ncount 0 T : ℝ) ≤ Ndist 0 T :=
+  Zeta23.thmC₀_cumulative
+
+theorem montgomery_taylor_on_critical_line :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 - 1 / cMT - ε) * (Ncount T (2 * T) : ℝ) ≤ N0star T (2 * T) := by
+  have h := @Zeta23.ThmD.thmD₀
+  simp only [Zeta23.ThmD.HD, cStar_one_eq_cMT] at h
+  exact h
+
+theorem montgomery_taylor_simple_on_critical_line :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 * cMT - 1 - ε) * (Ncount T (2 * T) : ℝ) ≤ N0simple T (2 * T) := by
+  have h := @Zeta23.ThmD.thmD₀_simple
+  simp only [cStar_one_eq_cMT] at h
+  exact h
+
+theorem montgomery_taylor_distinct :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (cMT - ε) * (Ncount T (2 * T) : ℝ) ≤ Ndist T (2 * T) := by
+  have h := @Zeta23.ThmD.thmD₀_dist
+  simp only [cStar_one_eq_cMT] at h
+  exact h
+
+theorem dirichlet_two_thirds_on_critical_line
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hq : 1 < q) (hχ : χ.IsPrimitive) :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 / 3 - ε) * (NcountL χ T (2 * T) : ℝ) ≤ N0starL χ T (2 * T) :=
+  Zeta23.ThmE.thmE_A₀ hq hχ
+
+theorem dirichlet_half_simple_on_critical_line
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hq : 1 < q) (hχ : χ.IsPrimitive) :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (1 / 2 - ε) * (NcountL χ T (2 * T) : ℝ) ≤ N0simpleL χ T (2 * T) :=
+  Zeta23.ThmE.thmE_B₀ hq hχ
+
+theorem dirichlet_three_quarters_distinct
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hq : 1 < q) (hχ : χ.IsPrimitive) :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (3 / 4 - ε) * (NcountL χ T (2 * T) : ℝ) ≤ NdistL χ T (2 * T) :=
+  Zeta23.ThmE.thmE_C₀ hq hχ
+
+theorem dirichlet_montgomery_taylor_on_critical_line
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hq : 1 < q) (hχ : χ.IsPrimitive) :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 - 1 / cMT - ε) * (NcountL χ T (2 * T) : ℝ) ≤ N0starL χ T (2 * T) := by
+  have h := Zeta23.ThmDE.thmE_D₀ (χ := χ) hq hχ
+  simp only [Zeta23.ThmD.HD, cStar_one_eq_cMT] at h
+  exact h
+
+theorem dirichlet_montgomery_taylor_simple_on_critical_line
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hq : 1 < q) (hχ : χ.IsPrimitive) :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (2 * cMT - 1 - ε) * (NcountL χ T (2 * T) : ℝ) ≤ N0simpleL χ T (2 * T) := by
+  have h := Zeta23.ThmDE.thmE_D₀_simple (χ := χ) hq hχ
+  simp only [cStar_one_eq_cMT] at h
+  exact h
+
+theorem dirichlet_montgomery_taylor_distinct
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) (hq : 1 < q) (hχ : χ.IsPrimitive) :
+    ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, (cMT - ε) * (NcountL χ T (2 * T) : ℝ) ≤ NdistL χ T (2 * T) := by
+  have h := Zeta23.ThmDE.thmE_D₀_dist (χ := χ) hq hχ
+  simp only [cStar_one_eq_cMT] at h
+  exact h
+
+end
+```

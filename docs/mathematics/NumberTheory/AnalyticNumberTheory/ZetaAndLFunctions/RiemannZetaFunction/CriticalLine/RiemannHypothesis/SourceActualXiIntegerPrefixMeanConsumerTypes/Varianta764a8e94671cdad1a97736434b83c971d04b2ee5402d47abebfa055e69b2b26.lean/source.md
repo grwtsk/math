@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiIntegerPrefixMeanConsumerTypes.Varianta764a8e94671cdad1a97736434b83c971d04b2ee5402d47abebfa055e69b2b26
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e8cd407aff35334db23e84d3243cba2584387db3` · SHA-256 `d200da8e0b855c0401a1a9de3db75734416728ff855c0254815b7c3df8276613`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiIntegerPrefixMeanConsumer.Variant3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiIntegerPrefixMeanConsumer.Variant3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/actual-xi-integer-prefix-consumer/SourceActualXiIntegerPrefixMeanConsumerTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiIntegerPrefixMeanConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiIntegerPrefixMeanConsumer.Variant3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiIntegerPrefixMeanConsumer
+#check actualIntegerPrefixMeanError
+#print axioms actualIntegerPrefixMeanError
+#check actualIntegerPrefixMeanCoefficient
+#print axioms actualIntegerPrefixMeanCoefficient
+#check actualIntegerPrefixMeanRadius
+#print axioms actualIntegerPrefixMeanRadius
+#check actualIntegerPrefixMeanError_nonneg
+#print axioms actualIntegerPrefixMeanError_nonneg
+#check actualIntegerPrefixMeanCoefficient_nonneg
+#print axioms actualIntegerPrefixMeanCoefficient_nonneg
+#check actualXiWeightedIntegerPrefix_eq_critical_readout
+#print axioms actualXiWeightedIntegerPrefix_eq_critical_readout
+#check actual_primitive_mean_of_integer_prefix
+#print axioms actual_primitive_mean_of_integer_prefix
+#check actual_uniform_primitive_mean_of_integer_prefix
+#print axioms actual_uniform_primitive_mean_of_integer_prefix
+#check completeXiTail_lower_of_integer_prefix
+#print axioms completeXiTail_lower_of_integer_prefix
+#check original_estimate_of_integer_prefix
+#print axioms original_estimate_of_integer_prefix
+#check original_estimate_of_integer_prefix_at_cutoff
+#print axioms original_estimate_of_integer_prefix_at_cutoff
+#check original_estimate_of_critical_integer_readout
+#print axioms original_estimate_of_critical_integer_readout
+```

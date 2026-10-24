@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantccc7e159c3b86d341b31c821e0fa02d2f611b0e5ff487bddc2ab20eceb5e92f6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7fb25a16d1e4e9cc78206fe42e58f98af19d0d28` · SHA-256 `ccc7e159c3b86d341b31c821e0fa02d2f611b0e5ff487bddc2ab20eceb5e92f6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualSecondFourierMoment
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actualCorrelationComplex_contDiff_four
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actualSecondCorrelation_fourier_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actualSecondCorrelation_fourier_eq
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actual_standard_second_moment_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actualSecondCorrelation_at_zero
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actual_standard_second_moment
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actual_source_second_moment_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualSecondFourierMoment.actual_source_second_moment
+```

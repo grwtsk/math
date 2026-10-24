@@ -1,0 +1,25 @@
+import SourceLeadingFullKappaReduction
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction
+#check actualCorrelation_odd_jets_zero
+#print axioms actualCorrelation_odd_jets_zero
+#print actualCorrelation_odd_jets_zero
+#check actualDerivativeEnergy_le_twenty
+#print axioms actualDerivativeEnergy_le_twenty
+#print actualDerivativeEnergy_le_twenty
+#check actualCorrelation_second_abs_le_twenty
+#print axioms actualCorrelation_second_abs_le_twenty
+#print actualCorrelation_second_abs_le_twenty
+#check actualCorrelation_third_abs_le
+#print axioms actualCorrelation_third_abs_le
+#print actualCorrelation_third_abs_le
+#check actualCorrelation_first_abs_le
+#print axioms actualCorrelation_first_abs_le
+#print actualCorrelation_first_abs_le
+#check actualCorrelation_sub_one_abs_le
+#print axioms actualCorrelation_sub_one_abs_le
+#print actualCorrelation_sub_one_abs_le

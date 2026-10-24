@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantce6accff8657977aa66cb76352deac1d2965adaa269ec167fe14161077118acf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9128ce22202b37b8d2e8b3323b0b58e7efaa5f33` · SHA-256 `f5194dbd684b0e62bf7ade85babf2916b15a84f0bf3f418f9f17760c7d24f769`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.Variantcbb76a562f2c1d085f0c79e9740ab04d2b890810eeab7b41271cafce40ad4d23","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cbb76a562f2c1d085f0c79e9740ab04d2b890810eeab7b41271cafce40ad4d23","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualLowerTraceArithmeticExpansion.Variantcbb76a562f2c1d085f0c79e9740ab04d2b890810eeab7b41271cafce40ad4d23","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"cbb76a562f2c1d085f0c79e9740ab04d2b890810eeab7b41271cafce40ad4d23","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/independent-lower-trace-expansion/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualLowerTraceArithmeticExpansion
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.Variantcbb76a562f2c1d085f0c79e9740ab04d2b890810eeab7b41271cafce40ad4d23
+
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnHalfMangoldtRow
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnHalfMangoldtRow
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnMangoldtBracket
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnMangoldtBracket
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest_hasDerivAt
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest_at_upper
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeTest_at_upper
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeWindow_eq_halfRow
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnPrimeWindow_eq_halfRow
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnTimeFactor_eq_closed_window
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualLowerColumnTimeFactor_eq_closed_window
+#check FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualAdjointLowerColumnTrace_eq_half_inventory_product
+#print axioms FormalResearch.RiemannHypothesis.ActualLowerTraceArithmeticExpansion.actualAdjointLowerColumnTrace_eq_half_inventory_product
+```

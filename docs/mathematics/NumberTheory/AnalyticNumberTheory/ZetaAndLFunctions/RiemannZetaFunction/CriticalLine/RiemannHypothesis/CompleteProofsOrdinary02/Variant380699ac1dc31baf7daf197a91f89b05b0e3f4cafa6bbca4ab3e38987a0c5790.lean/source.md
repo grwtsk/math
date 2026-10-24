@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CompleteProofsOrdinary02.Variant380699ac1dc31baf7daf197a91f89b05b0e3f4cafa6bbca4ab3e38987a0c5790
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cb3931c7e16b0fb9b7ac4feef6c9abe19881beed` · SHA-256 `380699ac1dc31baf7daf197a91f89b05b0e3f4cafa6bbca4ab3e38987a0c5790`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCenteredHalfZetaReduction
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.deepTerms true
+set_option pp.proofs true
+set_option pp.funBinderTypes true
+set_option pp.letVarTypes true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredHalfZetaMain
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_eq
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+```

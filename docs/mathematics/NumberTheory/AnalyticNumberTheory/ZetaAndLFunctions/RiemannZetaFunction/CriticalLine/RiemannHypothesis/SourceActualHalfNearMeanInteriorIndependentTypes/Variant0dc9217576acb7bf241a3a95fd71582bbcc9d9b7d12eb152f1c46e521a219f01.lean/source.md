@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualHalfNearMeanInteriorIndependentTypes.Variant0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `942c21afb3d7ba425f187045b96046114e01090a` · SHA-256 `0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualHalfNearMeanInterior
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualHalfNearMeanInterior
+#check actualHalfNearPeriodicWork
+#print axioms actualHalfNearPeriodicWork
+#check actualHalfNearMeanInterior
+#print axioms actualHalfNearMeanInterior
+#check actualHalfNearMeanRetainedRemainder
+#print axioms actualHalfNearMeanRetainedRemainder
+#check actualHalfNearPeriodicWork_intervalIntegrable
+#print axioms actualHalfNearPeriodicWork_intervalIntegrable
+#check actualAdjustedInterior_eq_half_near_mean_sub_far
+#print axioms actualAdjustedInterior_eq_half_near_mean_sub_far
+#check actualRetainedRemainder_sub_half_near_mean_eq
+#print axioms actualRetainedRemainder_sub_half_near_mean_eq
+#check actualCompensatedWork_sub_half_near_mean_abs_le
+#print axioms actualCompensatedWork_sub_half_near_mean_abs_le
+#check actualResidual_half_near_mean_pointwise_comparison
+#print axioms actualResidual_half_near_mean_pointwise_comparison
+```

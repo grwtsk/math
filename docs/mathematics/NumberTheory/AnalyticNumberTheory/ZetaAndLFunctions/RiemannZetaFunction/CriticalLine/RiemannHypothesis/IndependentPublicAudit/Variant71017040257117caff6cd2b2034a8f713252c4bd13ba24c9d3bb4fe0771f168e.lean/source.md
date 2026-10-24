@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentPublicAudit.Variant71017040257117caff6cd2b2034a8f713252c4bd13ba24c9d3bb4fe0771f168e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8db32b1102809a0522ea0e8c3bd0f27ba535f55d` · SHA-256 `71017040257117caff6cd2b2034a8f713252c4bd13ba24c9d3bb4fe0771f168e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceRawMeanCancellation
+set_option autoImplicit false
+set_option linter.hashCommand false
+#check RH16RawMeanCancellation.rawIndependentMainAt
+#print axioms RH16RawMeanCancellation.rawIndependentMainAt
+#check RH16RawMeanCancellation.rawCoefficient
+#print axioms RH16RawMeanCancellation.rawCoefficient
+#check RH16RawMeanCancellation.rawPrimeFirstDiagonal
+#print axioms RH16RawMeanCancellation.rawPrimeFirstDiagonal
+#check RH16RawMeanCancellation.rawPrimeLinearMain
+#print axioms RH16RawMeanCancellation.rawPrimeLinearMain
+#check RH16RawMeanCancellation.rawPrimeCorrectedAt
+#print axioms RH16RawMeanCancellation.rawPrimeCorrectedAt
+#check RH16RawMeanCancellation.mainTermAt_mean_recovery
+#print axioms RH16RawMeanCancellation.mainTermAt_mean_recovery
+#check RH16RawMeanCancellation.jointAt_global_mean_cancels
+#print axioms RH16RawMeanCancellation.jointAt_global_mean_cancels
+#check RH16RawMeanCancellation.readoutAt_global_mean_cancels
+#print axioms RH16RawMeanCancellation.readoutAt_global_mean_cancels
+#check RH16RawMeanCancellation.raw_beta_of_minFac_gt
+#print axioms RH16RawMeanCancellation.raw_beta_of_minFac_gt
+#check RH16RawMeanCancellation.raw_beta_at_large_prime_power
+#print axioms RH16RawMeanCancellation.raw_beta_at_large_prime_power
+#check RH16RawMeanCancellation.raw_large_prime_physical_diagonal
+#print axioms RH16RawMeanCancellation.raw_large_prime_physical_diagonal
+#check RH16RawMeanCancellation.raw_first_diagonal_eq_retained
+#print axioms RH16RawMeanCancellation.raw_first_diagonal_eq_retained
+#check RH16RawMeanCancellation.raw_first_diagonal_fixed_main_error
+#print axioms RH16RawMeanCancellation.raw_first_diagonal_fixed_main_error
+#check RH16RawMeanCancellation.raw_main_prime_linear_cancels
+#print axioms RH16RawMeanCancellation.raw_main_prime_linear_cancels
+#check RH16RawMeanCancellation.actual_readout_raw_prime_recovery
+#print axioms RH16RawMeanCancellation.actual_readout_raw_prime_recovery
+#check RH16RawMeanCancellation.actual_readout_raw_prime_fixed_error
+#print axioms RH16RawMeanCancellation.actual_readout_raw_prime_fixed_error
+#check RH16RawMeanCancellation.estimate_of_actual_raw_prime_corrected_tail
+#print axioms RH16RawMeanCancellation.estimate_of_actual_raw_prime_corrected_tail
+```

@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Bf3e0c1d5d7ae89545d1cb77219585835ce99da85fc8e2640455c3337bfb6c5cAxioms.Variantbf3e0c1d5d7ae89545d1cb77219585835ce99da85fc8e2640455c3337bfb6c5c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d1456c1bf40607a48478c4ef16c6182df06744e4` · SHA-256 `bf3e0c1d5d7ae89545d1cb77219585835ce99da85fc8e2640455c3337bfb6c5c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaTailOrientation
+import FormalResearch.RiemannHypothesis.ThetaTailBoundary
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.rev_sign
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_two_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_eq_zero_of_diagonal_violation
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_split_at_gap
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_classification
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_two_nonnegative
+```

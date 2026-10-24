@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.NormalizationAudit.Variantf7bea4b7da77b5383a5b8c6e39c73e88dbf75891eade40ab949d5afba80b8d01
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8e089601a478e5c8e456d8d7d668c38377465901` · SHA-256 `eb7837ae6eefb6e71126cb5eedb53c132eed19ba6791727d67151a1d6acf83de`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDiagonalMainTerm.Variantc1039d33bd91160b2effeca1a6df42edf89b63620b149b2deb18ab0f86b40410","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c1039d33bd91160b2effeca1a6df42edf89b63620b149b2deb18ab0f86b40410","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceDiagonalMainTerm.Variantc1039d33bd91160b2effeca1a6df42edf89b63620b149b2deb18ab0f86b40410","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c1039d33bd91160b2effeca1a6df42edf89b63620b149b2deb18ab0f86b40410","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/diagonal-main/normalization-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDiagonalMainTerm.Variantc1039d33bd91160b2effeca1a6df42edf89b63620b149b2deb18ab0f86b40410
+
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.unitBump_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.unitBump_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.sourceBump_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.sourceBump_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.explicitSecondDerivative_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.explicitSecondDerivative_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.scaledBump_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.scaledBump_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.normalizedTest_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.normalizedTest_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.sourceCorrelation_integral_eq_square
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.sourceCorrelation_integral_eq_square
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.sourceCorrelation_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.sourceCorrelation_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalCorrelation_integral_eq_quarter
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalCorrelation_integral_eq_quarter
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalMainCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalMainCoefficient
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalCorrelation_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalCorrelation_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.actual_source_half_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.actual_source_half_integral
+#check @FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.retainedPrimeDiagonal_main_term_error
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.retainedPrimeDiagonal_main_term_error
+```

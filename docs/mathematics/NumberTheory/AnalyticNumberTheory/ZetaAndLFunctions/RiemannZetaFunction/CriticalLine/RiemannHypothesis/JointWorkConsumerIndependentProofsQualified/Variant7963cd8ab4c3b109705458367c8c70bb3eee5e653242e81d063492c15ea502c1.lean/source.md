@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.JointWorkConsumerIndependentProofsQualified.Variant7963cd8ab4c3b109705458367c8c70bb3eee5e653242e81d063492c15ea502c1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c14e0c35e5df2fa8159623e6795c41304e49302c` · SHA-256 `07bae688d55b2ead760b294ab8835f643e58f5421090ecda03e56ef7d2e2f07c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceJointWorkConsumer.Variant57ff2f9adb06ad6325f85722af4d877fed4b6a18d55fd832c0ea73a0e352ff9e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"57ff2f9adb06ad6325f85722af4d877fed4b6a18d55fd832c0ea73a0e352ff9e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceJointWorkConsumer.Variant57ff2f9adb06ad6325f85722af4d877fed4b6a18d55fd832c0ea73a0e352ff9e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"57ff2f9adb06ad6325f85722af4d877fed4b6a18d55fd832c0ea73a0e352ff9e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge/JointWorkConsumerIndependentProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceJointWorkConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceJointWorkConsumer.Variant57ff2f9adb06ad6325f85722af4d877fed4b6a18d55fd832c0ea73a0e352ff9e
+
+open FormalResearch.RiemannHypothesis.SourceJointWorkConsumer
+set_option pp.fullNames true
+#print compensatedJointWork
+#print compensatedJointWork_eq_strictColumnInterior
+#print strictColumnInterior_pointwise_upper_transfers_three
+#print residual_upper_of_compensatedJointWork_upper
+#print residual_tail_of_compensatedJointWork_tail
+#print estimate_of_compensatedJointWork_tail
+```

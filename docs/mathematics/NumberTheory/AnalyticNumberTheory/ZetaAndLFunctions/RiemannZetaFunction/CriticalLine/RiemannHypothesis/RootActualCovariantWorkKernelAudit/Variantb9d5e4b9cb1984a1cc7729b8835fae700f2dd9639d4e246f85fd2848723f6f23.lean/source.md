@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualCovariantWorkKernelAudit.Variantb9d5e4b9cb1984a1cc7729b8835fae700f2dd9639d4e246f85fd2848723f6f23
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `732087fba9a4edc71a32c180e4e1cf91fcfb77e9` · SHA-256 `6e7daf79d6e612117a6b8e9d433aa120355244303120192df18d229e68b36301`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualCovariantWorkKernel.Variant3a3fd3f08b05eeee27b1483d75bf204388ebae41f6484d7f338cac979cd73a3a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3a3fd3f08b05eeee27b1483d75bf204388ebae41f6484d7f338cac979cd73a3a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualCovariantWorkKernel.Variant3a3fd3f08b05eeee27b1483d75bf204388ebae41f6484d7f338cac979cd73a3a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3a3fd3f08b05eeee27b1483d75bf204388ebae41f6484d7f338cac979cd73a3a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T210342Z-1791320622533927000/RootActualCovariantWorkKernelAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualCovariantWorkKernel
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualCovariantWorkKernel.Variant3a3fd3f08b05eeee27b1483d75bf204388ebae41f6484d7f338cac979cd73a3a
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_kernel
+#print axioms FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_kernel
+#check FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_eq_fourth_sub_second
+#print axioms FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_eq_fourth_sub_second
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_kernel
+#print FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel.actual_covariant_ordinary_work_eq_fourth_sub_second
+```

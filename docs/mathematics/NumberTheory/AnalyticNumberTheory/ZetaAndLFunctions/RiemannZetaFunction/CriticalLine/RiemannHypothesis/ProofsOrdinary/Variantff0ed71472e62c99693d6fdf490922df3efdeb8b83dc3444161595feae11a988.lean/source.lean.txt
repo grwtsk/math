@@ -1,0 +1,9 @@
+import SourceActualEulerResidualApproximation
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualEulerResidualApproximation.actualResidual_sub_closedHead_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualEulerResidualApproximation.actualResidual_sub_closedHead_tendsto_zero

@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofBodiesOrdinary.Variant16043cd830bf083eddd463d05842ed250cbea4bb32eead02835972d7d0388d3d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d52d2ffbeae15765b01363c9d21b01e527f2f1f5` · SHA-256 `16043cd830bf083eddd463d05842ed250cbea4bb32eead02835972d7d0388d3d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCriticalCovarianceOrdinarySplit
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.funBinderTypes false
+set_option pp.letVarTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualEarlyCriticalErrorCenter
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_split
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_early_error_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_late_lower_bound
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCenteredMangoldtLogError_small_after
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_lower_estimate
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_eventual_amplitude
+```

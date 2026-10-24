@@ -1,0 +1,116 @@
+# completeRowsAt_eq_quotient_sum
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "1984d286468a54c1980f8591309112117fd4c0a0",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 113,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/03/03c02b8b77806e73b1eb103d87111e410b670aa658e3b0eba752663b2ca553bc.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:7d4acc52-16f5-b708-39de-75ceebd4c7cb",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:333086dd-09e9-14d3-f851-e6d45f1e666e",
+  "kind": "theorem",
+  "lexical_name": "completeRowsAt_eq_quotient_sum",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "completerowsat-eq-quotient-sum--7d87d04083fe541ae41c16bf",
+  "source": {
+    "blob": "1984d286468a54c1980f8591309112117fd4c0a0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 135,
+    "line": 113,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CheckedSource/Variant03c02b8b77806e73b1eb103d87111e410b670aa658e3b0eba752663b2ca553bc.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:7d87d04083fe541ae41c16bf1daf449842545206f9d941b57f7c39de1f7245dc",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CheckedSource/Variant03c02b8b77806e73b1eb103d87111e410b670aa658e3b0eba752663b2ca553bc.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:333086dd-09e9-14d3-f851-e6d45f1e666e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 113–135.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem completeRowsAt_eq_quotient_sum (A : ℝ) (hA : 1 ≤ A)
+    (d : ℕ) (hd : 1 ≤ d) :
+    completeMangoldtPlainRowsAt A d =
+      ∑ m ∈ Finset.Icc 1 (sourceKernelCutoff A / d),
+        vonMangoldt m * sourcePlainKernel A ((d * m : ℕ) : ℝ) := by
+  classical
+  unfold completeMangoldtPlainRowsAt
+  symm
+  apply Finset.sum_subset
+    (by
+      intro m hm
+      exact Finset.mem_Icc.mpr
+        ⟨(Finset.mem_Icc.mp hm).1,
+          (Finset.mem_Icc.mp hm).2.trans (Nat.div_le_self _ _)⟩)
+  intro m hm hnot
+  have hp : sourceKernelCutoff A < d * m := by
+    apply lt_of_not_ge
+    intro h
+    apply hnot
+    exact Finset.mem_Icc.mpr ⟨(Finset.mem_Icc.mp hm).1,
+      (Nat.le_div_iff_mul_le hd).2 (by simpa only [Nat.mul_comm] using h)⟩
+  rw [sourcePlainKernel_nat_zero_of_cutoff_lt A hA (d * m) hp, mul_zero]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CheckedSource/Variant03c02b8b77806e73b1eb103d87111e410b670aa658e3b0eba752663b2ca553bc.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CheckedSource/Variant03c02b8b77806e73b1eb103d87111e410b670aa658e3b0eba752663b2ca553bc.lean#L113).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1984d286468a54c1980f8591309112117fd4c0a0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

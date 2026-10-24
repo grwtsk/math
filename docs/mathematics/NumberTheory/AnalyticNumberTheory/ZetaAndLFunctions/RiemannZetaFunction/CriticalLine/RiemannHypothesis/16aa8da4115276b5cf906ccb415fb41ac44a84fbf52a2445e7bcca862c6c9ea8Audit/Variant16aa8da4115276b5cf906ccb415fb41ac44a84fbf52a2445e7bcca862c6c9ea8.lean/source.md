@@ -1,0 +1,90 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8Audit.Variant16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4c4f6c25c12dfbcb50a6b73fcf3bd24deebbf8a8` · SHA-256 `16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaTailOrientation
+import FormalResearch.RiemannHypothesis.ThetaTailBoundary
+set_option pp.proofs false
+set_option pp.universes true
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.rev_sign
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.rev_sign
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_strictAnti
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_strictAnti
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_apply
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_apply
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_rev
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_rev
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree_apply
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree_apply
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_eq
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_zero
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_zero
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_one
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_one
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_two
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_two
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_three
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_three
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.monomial_cross_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.monomial_cross_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_two_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_two_det_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteSourceMatrix_rowDebt_ordered_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteSourceMatrix_rowDebt_ordered_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteTransverseMatrix_consecutive_ordered_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteTransverseMatrix_consecutive_ordered_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.permutation_crosses_cut
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.permutation_crosses_cut
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_eq_zero_of_diagonal_violation
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_eq_zero_of_diagonal_violation
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.separated_iff_last_le_first
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.separated_iff_last_le_first
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_split_at_gap
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_split_at_gap
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_classification
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_classification
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_two_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_two_nonnegative
+```

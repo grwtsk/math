@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingTailQuantitativeAudit.Variantbda467c18e24bd162093b28ca02c2b16f8475fc54ac604cdd8ff2047f46177a7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `47f21d7486596a12ca96149d0cb3529139ab22de` · SHA-256 `df121a1a43f12646b6c1bdafb7e69875e6c88fa382076c776b6bd381297372a7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingTailQuantitative.Variantd00a904af9f7b0cfd1b6e0f3dda96906e6be0dd86170c3c252ce598aab08f260","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d00a904af9f7b0cfd1b6e0f3dda96906e6be0dd86170c3c252ce598aab08f260","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceLeadingTailQuantitative.Variantd00a904af9f7b0cfd1b6e0f3dda96906e6be0dd86170c3c252ce598aab08f260","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d00a904af9f7b0cfd1b6e0f3dda96906e6be0dd86170c3c252ce598aab08f260","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T185357Z-1791312837361402000/SourceLeadingTailQuantitativeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceLeadingTailQuantitative
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingTailQuantitative.Variantd00a904af9f7b0cfd1b6e0f3dda96906e6be0dd86170c3c252ce598aab08f260
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.fullKappaShortBudget_le_fifty_five
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.fullKappaShortBudget_le_fifty_five
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.renormalized_tail_sub_actual_leading_abs_le_fifty_five
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.renormalized_tail_sub_actual_leading_abs_le_fifty_five
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.actual_leading_complete_pairing_sharp_comparisons
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.actual_leading_complete_pairing_sharp_comparisons
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.residual_sub_actual_leading_sub_zeta_abs_lt_sharp
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.residual_sub_actual_leading_sub_zeta_abs_lt_sharp
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.estimate_of_actual_leading_signed_tail_sharp
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.estimate_of_actual_leading_signed_tail_sharp
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.fullKappaShortBudget_le_fifty_five
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.renormalized_tail_sub_actual_leading_abs_le_fifty_five
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.actual_leading_complete_pairing_sharp_comparisons
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.residual_sub_actual_leading_sub_zeta_abs_lt_sharp
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.estimate_of_actual_leading_signed_tail_sharp
+```

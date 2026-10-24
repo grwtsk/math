@@ -1,0 +1,42 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualGoodHeightContourAudit.Variant22634c43c3f14a78c10ce11437d03d7208a2ac6399bb8cd9c1ae36d8f46b1f79
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c4332e18561ac6ebf728edff8135f17925e7a4e1` · SHA-256 `7065dac4db2362d860b6ab5248f18001fbf128212e85de0b8dee8bba2ddaea68`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualGoodHeightContour.Variant333a7641c62465b715433542a8ae722cdd12aa501a18b868d0e3c1e45b9192c0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"333a7641c62465b715433542a8ae722cdd12aa501a18b868d0e3c1e45b9192c0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualGoodHeightContour.Variant333a7641c62465b715433542a8ae722cdd12aa501a18b868d0e3c1e45b9192c0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"333a7641c62465b715433542a8ae722cdd12aa501a18b868d0e3c1e45b9192c0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T044515Z-1791348315595692000/SourceActualGoodHeightContourAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualGoodHeightContour
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualGoodHeightContour.Variant333a7641c62465b715433542a8ae722cdd12aa501a18b868d0e3c1e45b9192c0
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualGoodHeightIndex
+#print axioms FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualGoodHeightIndex
+#print FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualGoodHeightIndex
+#check FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualGoodHeightIndex_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualGoodHeightIndex_bounds
+#print FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualGoodHeightIndex_bounds
+#check FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualInitialPrimeMellin_poles_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualInitialPrimeMellin_poles_zero
+#print FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualInitialPrimeMellin_poles_zero
+#check FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualInitialPrimeTwoTail_above_movingHeight_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualInitialPrimeTwoTail_above_movingHeight_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actualInitialPrimeTwoTail_above_movingHeight_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actual_source_growing_goodheight_residue_ledger
+#print axioms FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actual_source_growing_goodheight_residue_ledger
+#print FormalResearch.RiemannHypothesis.SourceActualGoodHeightContour.actual_source_growing_goodheight_residue_ledger
+```

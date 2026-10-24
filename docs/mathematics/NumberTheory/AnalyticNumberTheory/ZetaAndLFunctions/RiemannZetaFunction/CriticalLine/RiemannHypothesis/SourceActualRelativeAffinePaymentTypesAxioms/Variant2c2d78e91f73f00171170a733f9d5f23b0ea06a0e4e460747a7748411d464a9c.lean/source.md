@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRelativeAffinePaymentTypesAxioms.Variant2c2d78e91f73f00171170a733f9d5f23b0ea06a0e4e460747a7748411d464a9c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0782ba4764c9c23f64a37b2fcfc373470eb64079` · SHA-256 `2c2d78e91f73f00171170a733f9d5f23b0ea06a0e4e460747a7748411d464a9c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRelativeAffinePayment
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineTrend
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineTrend
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernel_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernel_intervalIntegrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_eq
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_Pnt_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_Pnt_bound
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.actualRelativeAffineKernelPayment_tendsto_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.criticalRelativePairing_eq_nonaffine_add_payment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeAffinePayment.criticalRelativePairing_eq_nonaffine_add_payment
+```

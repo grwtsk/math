@@ -1,0 +1,24 @@
+import FormalResearch.RiemannHypothesis.SourceContinuousHalfEnergy
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceContinuousHalfEnergy
+#print forwardHalfKernel
+#print forwardHalfKernel_continuous
+#print forwardHalfKernel_hasCompactSupport
+#print forwardHalfKernel_integrable
+#print sourceCorrelation_eq_plus_shift
+#print negativeSmoothMoment_eq_forward_integral
+#print forwardHalfKernel_interval_eq_tail_pairing
+#print negativeSmoothMoment_eq_tail_pairing
+#print negativeSmoothMoment_eq_half_causal_energy
+#print negativeSmoothMoment_eq_normalized_energy
+#print negativeSmoothMoment_eq_rational
+#print criticalContinuousMoment_eq_neg_half_causal_energy
+#print criticalContinuousMoment_eq_rational
+#print negativeSmoothMoment_pos
+#print criticalContinuousMoment_lt_zero
+#print criticalContinuousMoment_ne_zero
+#print criticalContinuousMoment_strict_bounds
+#print mertensResidual_eq_neg_causal_energy_sub_work
+#print mertensResidual_eq_rational_sub_work
+#print mertensResidual_lt_neg_work
+#print residual_tail_of_Mangoldt_work_tail

@@ -1,0 +1,110 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.3e92e44a32871c71951079066a5cd443bb7f7baf219c4a3b1e12a3ca7236a6ceBoundary.Variant3e92e44a32871c71951079066a5cd443bb7f7baf219c4a3b1e12a3ca7236a6ce
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bf5f269e91af6490feda19594aa25d94a12e7e13` · SHA-256 `3e92e44a32871c71951079066a5cd443bb7f7baf219c4a3b1e12a3ca7236a6ce`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaTailOrientation
+import FormalResearch.PositiveAtlas.Grassmannian.QuadraticMinors
+
+namespace FormalResearch.RiemannHypothesis.ThetaPositiveLift
+open FormalResearch.PositiveAtlas.Grassmannian.Toeplitz
+noncomputable section
+
+ theorem permutation_crosses_cut {k : ℕ} (σ : Equiv.Perm (Fin k)) (i : Fin k) :
+    ∃ j : Fin k, j ≤ i ∧ i ≤ σ j := by
+  by_contra h
+  have hmap : Set.MapsTo σ (Finset.Iic i : Set (Fin k)) (Finset.Iio i : Set (Fin k)) := by
+    intro j hj
+    simp only [Finset.mem_coe, Finset.mem_Iic] at hj
+    simp only [Finset.mem_coe, Finset.mem_Iio]
+    exact lt_of_not_ge (fun hle => h ⟨j, hj, hle⟩)
+  have hc := Finset.card_le_card_of_injOn σ hmap σ.injective.injOn
+  simp only [Fin.card_Iic, Fin.card_Iio] at hc
+  omega
+
+ theorem minor_eq_zero_of_diagonal_violation (a : ℕ → ℝ) {k : ℕ}
+    (r c : Fin k ↪o ℕ) (i : Fin k) (hi : c i < r i) :
+    minor a r c = 0 := by
+  change Matrix.det (Matrix.of fun i j : Fin k => entry a (r i) (c j)) = 0
+  rw [Matrix.det_apply']
+  apply Finset.sum_eq_zero
+  intro σ _
+  obtain ⟨j, hj, hσj⟩ := permutation_crosses_cut σ i
+  have hz : entry a (r (σ j)) (c j) = 0 :=
+    entry_below a ((c.monotone hj).trans_lt (hi.trans_le (r.monotone hσj)))
+  have hp : (∏ l : Fin k, entry a (r (σ l)) (c l)) = 0 :=
+    Finset.prod_eq_zero (Finset.mem_univ j) hz
+  exact mul_eq_zero_of_right _ hp
+
+ theorem separated_iff_last_le_first {n : ℕ} (r c : Fin (n + 1) ↪o ℕ) :
+    Separated r c ↔ r (Fin.last n) ≤ c 0 := by
+  constructor
+  · rintro ⟨h⟩
+    exact h.row_le_column _ _
+  · intro h
+    refine ⟨⟨r (Fin.last n), ?_, ?_⟩⟩
+    · intro i
+      exact r.monotone (Fin.le_last i)
+    · intro j
+      exact h.trans (c.monotone (Fin.zero_le j))
+
+ theorem minor_split_at_gap (a : ℕ → ℝ) {k : ℕ}
+    (r c : Fin k ↪o ℕ) (l : ℕ) (hl0 : 0 < l) (hl : l < k)
+    (hgap : c ⟨l - 1, by omega⟩ < r ⟨l, hl⟩) :
+    minor a r c =
+      minor a (Quadratic.take r l hl.le) (Quadratic.take c l hl.le) *
+      minor a (Quadratic.drop r l) (Quadratic.drop c l) := by
+  apply Quadratic.det_split _ l hl.le
+  left
+  intro i j
+  apply entry_below
+  have hj : (⟨j.val, by omega⟩ : Fin k) ≤ ⟨l - 1, by omega⟩ := by
+    change j.val ≤ l - 1
+    have := j.isLt
+    omega
+  have hi : (⟨l, hl⟩ : Fin k) ≤ ⟨l + i.val, by omega⟩ := by
+    change l ≤ l + i.val
+    omega
+  exact (c.monotone hj).trans_lt (hgap.trans_le (r.monotone hi))
+
+/-- A non-separated selection is either structurally zero, reducible at an
+ordered gap, or a diagonally feasible overlapping residual selection. -/
+theorem boundary_classification {n : ℕ} (r c : Fin (n + 1) ↪o ℕ)
+    (hboundary : ¬ Separated r c) :
+    (∃ i, c i < r i) ∨
+      (∃ i : Fin n, c i.castSucc < r i.succ) ∨
+        ((∀ i, r i ≤ c i) ∧
+          (∀ i : Fin n, r i.succ ≤ c i.castSucc) ∧
+            c 0 < r (Fin.last n)) := by
+  by_cases hdiag : ∀ i, r i ≤ c i
+  · by_cases hoverlap : ∀ i : Fin n, r i.succ ≤ c i.castSucc
+    · exact Or.inr (Or.inr ⟨hdiag, hoverlap,
+        lt_of_not_ge (fun h => hboundary ((separated_iff_last_le_first r c).mpr h))⟩)
+    · obtain ⟨i, hi⟩ := not_forall.mp hoverlap
+      exact Or.inr (Or.inl ⟨i, lt_of_not_ge hi⟩)
+  · obtain ⟨i, hi⟩ := not_forall.mp hdiag
+    exact Or.inl ⟨i, lt_of_not_ge hi⟩
+
+/-- At rank two every non-separated minor is triangular, so only coefficient
+nonnegativity is needed for its boundary case. -/
+theorem boundary_two_nonnegative (a : ℕ → ℝ) (ha : ∀ n, 0 ≤ a n)
+    (r c : Fin 2 ↪o ℕ) (hboundary : ¬ Separated r c) :
+    0 ≤ minor a r c := by
+  have hgap : c 0 < r 1 := by
+    exact lt_of_not_ge (fun h => hboundary ((separated_iff_last_le_first r c).mpr h))
+  have hentry (i j : ℕ) : 0 ≤ entry a i j := by
+    unfold entry
+    split_ifs
+    · exact ha _
+    · exact le_rfl
+  change 0 ≤ Matrix.det (Matrix.of fun i j : Fin 2 => entry a (r i) (c j))
+  rw [Matrix.det_fin_two]
+  simp only [Matrix.of_apply]
+  rw [entry_below a hgap]
+  simpa using mul_nonneg (hentry (r 0) (c 0)) (hentry (r 1) (c 1))
+
+end
+end FormalResearch.RiemannHypothesis.ThetaPositiveLift
+```

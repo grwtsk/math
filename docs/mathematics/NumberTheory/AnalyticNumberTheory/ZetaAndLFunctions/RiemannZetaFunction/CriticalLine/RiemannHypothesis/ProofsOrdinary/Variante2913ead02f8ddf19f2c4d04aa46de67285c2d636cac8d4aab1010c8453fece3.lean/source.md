@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variante2913ead02f8ddf19f2c4d04aa46de67285c2d636cac8d4aab1010c8453fece3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f59b114c3ab3991ad1d5b568bf8b5add1a5f721b` · SHA-256 `e2913ead02f8ddf19f2c4d04aa46de67285c2d636cac8d4aab1010c8453fece3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszQuadraticLaplace
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative
+#print FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszQuadraticLaplaceBudget
+#print FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative_future_envelope
+#print FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_absolute_budget
+#print FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_norm_le
+```

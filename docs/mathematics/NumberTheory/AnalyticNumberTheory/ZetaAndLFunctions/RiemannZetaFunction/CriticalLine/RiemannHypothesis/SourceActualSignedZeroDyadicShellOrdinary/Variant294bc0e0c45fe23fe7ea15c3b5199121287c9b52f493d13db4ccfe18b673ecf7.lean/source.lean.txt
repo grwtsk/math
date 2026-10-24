@@ -1,0 +1,28 @@
+import SourceActualSignedZeroDyadicShell
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualCompletedVerticalHead
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualFiniteHorizontalCorrection
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_head_sub
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualZeroHeightHead_eq_completedVertical_add_horizontal
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_contour_difference
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualOffAxisShell_compensated_norm_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actual_good_dyadic_offAxis_shell_compensation

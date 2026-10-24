@@ -1,0 +1,100 @@
+# transientNegativeStageFixture
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:07d423432f49fccdc82864915f1b35fb8e75ba5c73a56248923e3eb7d1a721af",
+  "kind": "def",
+  "lexical_name": "transientNegativeStageFixture",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "transientnegativestagefixture--3f2cd61928f019f367981a81",
+  "source": {
+    "blob": "1c9230d38722de6e14d840f4f9b29a058dfed570",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 158,
+    "line": 140,
+    "path": "GRWTSK/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:3f2cd61928f019f367981a819f9e4c06fd8a1a87d4eb607917da5c2f7ab77ff8",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:07d423432f49fccdc82864915f1b35fb8e75ba5c73a56248923e3eb7d1a721af`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 140–158.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def transientNegativeStageFixture :
+    ApproximatePositiveApproximation Unit (fun _ _ => 0) where
+  approximant := fun n _ _ => transientApproximant n
+  lowerDefect := fun n _ => transientLowerDefect n
+  lowerDefect_nonnegative := by
+    intro n _
+    by_cases hn : n = 0 <;> simp [transientLowerDefect, hn]
+  diagonal_lower_bound := by
+    intro n _
+    simp [transientApproximant]
+  lowerDefect_vanishes := by
+    intro _
+    exact transientLowerDefect_vanishes
+  comparison_vanishes := by
+    intro _ _
+    simpa [transientApproximant] using transientLowerDefect_vanishes
+
+/-- The fixture genuinely permits one negative stage; exact stagewise positivity was
+not silently reintroduced. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean#L140).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1c9230d38722de6e14d840f4f9b29a058dfed570` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

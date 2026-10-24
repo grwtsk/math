@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant8463dbfce17e501ba5c9e9c85b6df8e81a8c64c7fbfa63b1171005d69992f967
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f22d43d8f3ceef7253ef23f85edffa6bbda49b77` · SHA-256 `8463dbfce17e501ba5c9e9c85b6df8e81a8c64c7fbfa63b1171005d69992f967`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualPrescribedCorrelationNegativeSequence
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_tendsto
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_phase
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_scaled_real_tendsto
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_eventually_negative
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_negative_beyond
+```

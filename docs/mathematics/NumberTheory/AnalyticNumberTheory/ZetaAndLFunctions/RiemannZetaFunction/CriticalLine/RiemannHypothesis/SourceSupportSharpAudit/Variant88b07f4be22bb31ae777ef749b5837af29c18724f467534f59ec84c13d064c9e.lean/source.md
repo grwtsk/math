@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSupportSharpAudit.Variant88b07f4be22bb31ae777ef749b5837af29c18724f467534f59ec84c13d064c9e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `35acf5f6d7b064dd88c6d298c9b03a5d5013fff5` · SHA-256 `88b07f4be22bb31ae777ef749b5837af29c18724f467534f59ec84c13d064c9e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceSharpColumnEnvelopeMass
+import SourceJointWorkSupport
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceSharpColumnEnvelopeMass.columnEnvelopeMass_le_cutoff_ratio
+#print axioms FormalResearch.RiemannHypothesis.SourceSharpColumnEnvelopeMass.columnEnvelopeMass_le_cutoff_ratio
+
+#check FormalResearch.RiemannHypothesis.SourceJointWorkSupport.actual_jointTest_zero_of_support_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourceJointWorkSupport.actual_jointTest_zero_of_support_upper_le
+
+#check FormalResearch.RiemannHypothesis.SourceJointWorkSupport.actual_jointTest_deriv_zero_of_support_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourceJointWorkSupport.actual_jointTest_deriv_zero_of_support_upper_le
+
+#check FormalResearch.RiemannHypothesis.SourceJointWorkSupport.actualJointSupportUpper_le_log_sourceCutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceJointWorkSupport.actualJointSupportUpper_le_log_sourceCutoff
+
+#check FormalResearch.RiemannHypothesis.SourceJointWorkSupport.centeredErrorWork_eq_support_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceJointWorkSupport.centeredErrorWork_eq_support_integral
+
+#check FormalResearch.RiemannHypothesis.SourceJointWorkSupport.jointMangoldtErrorWork_eq_support_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceJointWorkSupport.jointMangoldtErrorWork_eq_support_integral
+
+#check FormalResearch.RiemannHypothesis.SourceJointWorkSupport.centeredErrorWork_zero_of_support_le_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceJointWorkSupport.centeredErrorWork_zero_of_support_le_lower
+
+```

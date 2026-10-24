@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FormalResearchRiemannHypothesisSourcePhaseMassFTCAuditPackageTypes.Variantf3bf2738faea3edfe46160040a9ef07ead1a55dec2467c4101987f62cbf3354f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6ffeca682fb7a0a253a6fd4aca3cfe92f0f57a3f` · SHA-256 `430e556802d36d33e14ff00ce42370c7183d6e83e257c712b53f71020f87cd91`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhaseMassFTC.Variant950b6075ba1a378692b97a8881c73c1c1a65c00003f06495d3c9627aded4f12e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"950b6075ba1a378692b97a8881c73c1c1a65c00003f06495d3c9627aded4f12e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePhaseMassFTC.Variant950b6075ba1a378692b97a8881c73c1c1a65c00003f06495d3c9627aded4f12e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"950b6075ba1a378692b97a8881c73c1c1a65c00003f06495d3c9627aded4f12e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/FormalResearch.RiemannHypothesis.SourcePhaseMassFTCAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourcePhaseMassFTC
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhaseMassFTC.Variant950b6075ba1a378692b97a8881c73c1c1a65c00003f06495d3c9627aded4f12e
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_sub_one_eq_phase_prefix
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_sub_one_eq_phase_prefix
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positive_phase_prefix_le_mass
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positive_phase_prefix_le_mass
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_criticalPrimeTest_sub_one
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_criticalPrimeTest_sub_one
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_early_point_ge
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_early_point_ge
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.negativeMass_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.negativeMass_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_variation_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_variation_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.pairedTailTest_variation_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.pairedTailTest_variation_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_linear
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_linear
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_not_eventually_bounded
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_not_eventually_bounded
+```

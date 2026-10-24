@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPeriodicHalfExponentialFarAudit.Variant8c018324deb1ff742ba11ff35b0398e7fab593a3c3cc0df0a8a4e3b735962404
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae42773c30813537099ee4fa61c6cfb38aabc5cd` · SHA-256 `949b8f3d72a46399ee0146714a8551e466e4fd72a061bb6d03f546f1b2d57a2b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPeriodicHalfExponentialFar.Variant5438390656d88449f8424383717aff00e3d92470b0472a97b371f8d05e646d0e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5438390656d88449f8424383717aff00e3d92470b0472a97b371f8d05e646d0e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualPeriodicHalfExponentialFar.Variant5438390656d88449f8424383717aff00e3d92470b0472a97b371f8d05e646d0e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5438390656d88449f8424383717aff00e3d92470b0472a97b371f8d05e646d0e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T233322Z-1791329602337827000/ActualPeriodicHalfExponentialFarAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualPeriodicHalfExponentialFar
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPeriodicHalfExponentialFar.Variant5438390656d88449f8424383717aff00e3d92470b0472a97b371f8d05e646d0e
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff
+#print axioms FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff
+#check FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualFarPeriodicWork_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualFarPeriodicWork_edge_abs_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualFarPeriodicWork_edge_abs_le
+#check FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff_orders
+#print axioms FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff_orders
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff_orders
+#check FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialFarPeriodicWork_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialFarPeriodicWork_abs_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialFarPeriodicWork_abs_le
+```

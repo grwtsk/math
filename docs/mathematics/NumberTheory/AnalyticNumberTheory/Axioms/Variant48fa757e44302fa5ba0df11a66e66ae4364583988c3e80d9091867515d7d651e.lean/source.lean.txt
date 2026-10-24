@@ -1,0 +1,7 @@
+import SourceMangoldtQuotientEndpoint
+
+open FormalResearch.RiemannHypothesis.SourceMangoldtQuotientEndpoint
+
+#print axioms actual_mangoldt_column_at_quotient_eq_first_row
+#print axioms actual_centered_column_endpoint_abs_le_twelve
+#print axioms covariance_sub_main_eq_strict_quotient_increments_with_endpoint

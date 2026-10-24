@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedVariationFractionOrdinary.Variant15e4bbd4d78b70e71ab0ce4a613b4d0d769a39ff5ec67d2faccbc94e2062b8b1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dee8b09ba2ec549308921a4cf87de1fd287762d1` · SHA-256 `15e4bbd4d78b70e71ab0ce4a613b4d0d769a39ff5ec67d2faccbc94e2062b8b1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualSignedVariationFraction
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualPositivePrimeVariation
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualNegativePrimeVariation
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualPositivePrimeVariation_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualNegativePrimeVariation_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualMertensResidual_eq_variation_difference
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualClosedAbsolutePrimeMoment_eq_variation_sum
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualResidual_absoluteVariation_ratio_bound
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualVariation_half_errors_eq
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualVariation_half_errors_stretched_bound
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualPositivePrimeVariation_fraction_tendsto_half
+#print FormalResearch.RiemannHypothesis.SourceActualSignedVariationFraction.actualNegativePrimeVariation_fraction_tendsto_half
+```

@@ -1,0 +1,104 @@
+# greenEnergy_eq_finiteGreenFormula
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:395ca892-7cd0-02d0-ac23-923223005f05",
+  "kind": "theorem",
+  "lexical_name": "greenEnergy_eq_finiteGreenFormula",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "greenenergy-eq-finitegreenformula--e63b29a5b4f6d2a0e848903e",
+  "source": {
+    "blob": "cb896663fb42a4a053323c9ea00da6fd69096967",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 200,
+    "line": 178,
+    "path": "GRWTSK/NumberTheory/VonMangoldt/GreenEnergyFormula.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:e63b29a5b4f6d2a0e848903ef6339985c3946c3c6e9dd27d7877464dcb028e62",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/VonMangoldtFunction/GreenEnergyFormula.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:395ca892-7cd0-02d0-ac23-923223005f05`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 178–200.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem greenEnergy_eq_finiteGreenFormula {X : ℕ} (hX : 0<X) :
+    greenEnergy X=finiteGreenFormula X := by
+  unfold greenEnergy
+  simp_rw [centered_source_identity]
+  have he (t : ℝ) : (atomicFeature X t-background t)^2 =
+      atomicFeature X t^2-2*(atomicFeature X t*background t)+background t^2 := by ring
+  simp_rw [he]
+  have hadd := integral_add
+    ((atomic_square_integrable X).sub ((atomic_background_integrable X).const_mul 2))
+    background_square_integrable
+  have hsub := integral_sub (atomic_square_integrable X)
+    ((atomic_background_integrable X).const_mul 2)
+  simp only [Pi.sub_def] at hadd hsub
+  rw [hadd, hsub, integral_const_mul, integral_atomic_background hX,
+    integral_background_square]
+  have hgram := finite_signed_gram (window X) coefficient (location X)
+    (fun n hn ↦ location_mem hX hn)
+  change (∫ t, atomicFeature X t^2 ∂unitVolume)=_ at hgram
+  rw [hgram]
+  unfold finiteGreenFormula
+  ring
+
+end GRWTSK.NumberTheory.VonMangoldt.GreenEnergyFormula
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/VonMangoldtFunction/GreenEnergyFormula.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/VonMangoldt/GreenEnergyFormula.lean#L178).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cb896663fb42a4a053323c9ea00da6fd69096967` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredReconstructionNativeprobe02.Variantad9ff646b56f271aec55341ca56860b05a34c4a1f550c95ad2ee335a7d5a9a42
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `96c46d5c55b699f704d4a233e17245223a76826b` · SHA-256 `1d2e80d836062ca5aed5bf25ac73fa18c9d0dbeb91a1be2134c7444b5e2be121`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtInteraction.Variante0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceMangoldtInteraction.Variante0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-riesz-centered-reconstruction/SourceActualRieszCenteredReconstruction-nativeprobe02.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceMangoldtInteraction
+import SourceContinuousHalfEnergy
+import SourceFiveCancelledFactorialBudget
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtInteraction.Variante0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094
+
+set_option autoImplicit false
+noncomputable section
+namespace FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction
+open MeasureTheory Set
+open scoped BigOperators
+open SourcePairing SourceFirstPrimeAbel SourceMangoldtAbel SourceMangoldtInteraction
+open SourceCorrelationCurvature SourceContinuousHalfEnergy SourceLeadingFullKappaReduction
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization CorrelationRegularity EstimateMertensResidual EstimatePrimeSmoothDefect
+
+#check sourceCorrelation_deriv_zero_of_two_mul_le
+#check intervalIntegral.integral_eq_sub_of_hasDerivAt
+#check intervalIntegral.integral_mul_deriv_eq_deriv_mul
+#check intervalIntegral.norm_integral_le_of_norm_le
+#check intervalIntegral.integral_nonneg
+#check closedPrimeMoment
+#check mertensResidual_eq_closedPrimeMoment
+#check RH16FiveCesaro.actualCorrelation_second_abs_le_five
+end FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction
+```

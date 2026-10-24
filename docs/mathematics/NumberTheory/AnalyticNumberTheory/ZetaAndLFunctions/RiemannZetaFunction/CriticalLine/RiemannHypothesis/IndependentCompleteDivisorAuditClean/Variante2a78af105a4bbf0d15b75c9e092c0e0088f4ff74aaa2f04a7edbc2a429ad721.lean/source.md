@@ -1,0 +1,54 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentCompleteDivisorAuditClean.Variante2a78af105a4bbf0d15b75c9e092c0e0088f4ff74aaa2f04a7edbc2a429ad721
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `826bdf4b2e817ec880acca08686422fcb9ab36d6` · SHA-256 `9c90f83ac3c57128f6c30583c2ed326dfd2d89fc7c1379c3bf6ca147d3386064`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteDivisorCancellation.Variante1064f1b12b74728cc0ff9a2a7e4895d711333fa7f1f9119ddcf271693a487e7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e1064f1b12b74728cc0ff9a2a7e4895d711333fa7f1f9119ddcf271693a487e7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceCompleteDivisorCancellation.Variante1064f1b12b74728cc0ff9a2a7e4895d711333fa7f1f9119ddcf271693a487e7","mathematical_subject":"Foundations.Unclassified","original_sha256":"e1064f1b12b74728cc0ff9a2a7e4895d711333fa7f1f9119ddcf271693a487e7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-joint/independent-cancellation/native-20261007T041204Z/IndependentCompleteDivisorAuditClean.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteDivisorCancellation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteDivisorCancellation.Variante1064f1b12b74728cc0ff9a2a7e4895d711333fa7f1f9119ddcf271693a487e7
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+#check RH16CompleteDivisorCancellation.complete_short_multiple_sum
+#print RH16CompleteDivisorCancellation.complete_short_multiple_sum
+#print axioms RH16CompleteDivisorCancellation.complete_short_multiple_sum
+#check RH16CompleteDivisorCancellation.actual_complete_short_multiples
+#print RH16CompleteDivisorCancellation.actual_complete_short_multiples
+#print axioms RH16CompleteDivisorCancellation.actual_complete_short_multiples
+#check RH16CompleteDivisorCancellation.actual_complete_divisible_diagonal
+#print RH16CompleteDivisorCancellation.actual_complete_divisible_diagonal
+#print axioms RH16CompleteDivisorCancellation.actual_complete_divisible_diagonal
+#check RH16CompleteDivisorCancellation.fullMangoldtRow
+#print RH16CompleteDivisorCancellation.fullMangoldtRow
+#print axioms RH16CompleteDivisorCancellation.fullMangoldtRow
+#check RH16CompleteDivisorCancellation.allMangoldtSamplingMain
+#print RH16CompleteDivisorCancellation.allMangoldtSamplingMain
+#print axioms RH16CompleteDivisorCancellation.allMangoldtSamplingMain
+#check RH16CompleteDivisorCancellation.oldDiagonalError
+#print RH16CompleteDivisorCancellation.oldDiagonalError
+#print axioms RH16CompleteDivisorCancellation.oldDiagonalError
+#check RH16CompleteDivisorCancellation.completeSignedSamplingBlock
+#print RH16CompleteDivisorCancellation.completeSignedSamplingBlock
+#print axioms RH16CompleteDivisorCancellation.completeSignedSamplingBlock
+#check RH16CompleteDivisorCancellation.short_add_long_inventory
+#print RH16CompleteDivisorCancellation.short_add_long_inventory
+#print axioms RH16CompleteDivisorCancellation.short_add_long_inventory
+#check RH16CompleteDivisorCancellation.joint_remainder_eq_complete_signed_block
+#print RH16CompleteDivisorCancellation.joint_remainder_eq_complete_signed_block
+#print axioms RH16CompleteDivisorCancellation.joint_remainder_eq_complete_signed_block
+#check RH16CompleteDivisorCancellation.oldDiagonalError_uniform_abs_bound
+#print RH16CompleteDivisorCancellation.oldDiagonalError_uniform_abs_bound
+#print axioms RH16CompleteDivisorCancellation.oldDiagonalError_uniform_abs_bound
+#check RH16CompleteDivisorCancellation.joint_upper_of_complete_block_and_diagonal
+#print RH16CompleteDivisorCancellation.joint_upper_of_complete_block_and_diagonal
+#print axioms RH16CompleteDivisorCancellation.joint_upper_of_complete_block_and_diagonal
+```

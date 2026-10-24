@@ -1,0 +1,164 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Core.Variant9e3ecdb8cbb049e1f3060e400c902149563dd963d64470c4eeac9162c51318a5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1189a1144427e0f627786e601b6759651a0788ee` · SHA-256 `86b035a66b714fef4d209b2ee23242471e7becb3f8079182c1b868ce2d560fc7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.HolomorphicLinearODE.Variant0dff3900551f2c7c6088432f53fe762bd79a2512ae2ad38d79350884eb50412f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0dff3900551f2c7c6088432f53fe762bd79a2512ae2ad38d79350884eb50412f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.HolomorphicLinearODE.Variant0dff3900551f2c7c6088432f53fe762bd79a2512ae2ad38d79350884eb50412f","mathematical_subject":"Foundations.Unclassified","original_sha256":"0dff3900551f2c7c6088432f53fe762bd79a2512ae2ad38d79350884eb50412f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/Core.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+module
+
+public import Surface.Core.Analysis.HolomorphicLinearODE
+public import Surface.Core.AnalyticSquare
+public import Surface.Core.Bezier.Basic
+public import Surface.Core.Bezier.Rational
+public import Surface.Core.Bezier.Subdivision
+public import Surface.Core.ComplexAnalysis.ResidueAPI
+public import Surface.Core.ComplexAnalysis.ContourShiftAPI
+public import Surface.Core.Phase
+public import Surface.Core.CyclicNeutral
+public import Surface.Core.CyclicAngle
+public import Surface.Core.CyclicFiberHop
+public import Surface.Core.CyclicHolonomy
+public import Surface.Core.CyclicStream
+public import Surface.Core.SharedBinaryMatrixStream
+public import Surface.Core.Transport
+public import Surface.Core.NetworkSurgery
+public import Surface.Core.XYZ
+public import Surface.Core.PrimeBoundedContinuation
+public import Surface.Core.CyclicPrimeWalk
+public import Surface.Core.CyclicPrimeWalkEuclidean
+public import Surface.Core.AnalyticPrimeWalk
+public import Surface.Core.DirichletGRH.Character
+public import Surface.Core.DirichletGRH.PrimitiveFamily
+public import Surface.Core.DirichletGRH.CenteredPsi
+public import Surface.Core.DirichletGRH.WeightedSummatory
+public import Surface.Core.DirichletGRH.CriticalSummatory
+public import Surface.Core.DirichletGRH.MathlibLFunctionAdapters
+public import Surface.Core.DirichletGRH.LFunctionConjugation
+public import Surface.Core.DirichletGRH.MellinLogDerivative
+public import Surface.Core.DirichletGRH.FunctionalEquation
+public import Surface.Core.DirichletGRH.ZeroExclusion
+public import Surface.Core.DirichletGRH.ExplicitFormula
+public import Surface.Core.DirichletGRH.Assembly
+public import Surface.Core.ConductorThreeCritical
+public import Surface.Core.ConductorThreeCharacterArithmetic
+public import Surface.Core.ConductorThreeCompletedL
+public import Surface.Core.ConductorThreeVonMangoldt
+public import Surface.Core.ConductorThreePrimeReindex
+public import Surface.Core.ConductorThreePrimePowerRemoval
+public import Surface.Core.ConductorThreeCriticalPredicates
+public import Surface.Core.ConductorThreeHalfPlusEpsilon
+public import Surface.Core.ConductorThreeMellinLogDerivative
+public import Surface.Core.ConductorThreeRieszExplicitFormula
+public import Surface.Core.ConductorThreePartialSummation
+public import Surface.Core.ConductorThreePartialSummationBounds
+public import Surface.Core.ConductorThreeCriticalReindexBounds
+public import Surface.Core.ConductorThreeGRHMatrix
+public import Surface.Core.PrimeWalkLosslessSpatial
+public import Surface.Core.AnalyticPrimeWalkAbstractDensity
+public import Surface.Core.AnalyticPrimeWalkLogDensity
+public import Surface.Core.PrimeWalkDyadic
+public import Surface.Core.PrimeWalkMeasureBridge
+public import Surface.Core.PrimeWalkLittlewoodPaley
+public import Surface.Core.PrimeWalkTwoScaleGrains
+public import Surface.Core.PrimeWalkSpatialEncoding
+public import Surface.Core.PrimeWalkSpatialEnergy
+public import Surface.Core.PrimeWalkWangZahlGeometry
+public import Surface.Core.ConductorThreePolarizedPackets
+public import Surface.Core.ConductorThreePacketUnsmoothing
+public import Surface.Core.ConductorThreeWangZahlLargeSieve
+public import Surface.Core.ConductorThreeTwistedVaughan
+public import Surface.Core.ConductorThreeVaughanDelta
+public import Surface.Core.ConductorThreeVaughanTypeI
+public import Surface.Core.ConductorThreeVaughanTubeScaffold
+public import Surface.Core.TypeII.BilinearPairing
+public import Surface.Core.TypeII.CutoffMatrix
+public import Surface.Core.TypeII.PrefixCompatibleIncidence
+public import Surface.Core.TypeII.DyadicBlocks
+public import Surface.Core.TypeII.DyadicIntervals
+public import Surface.Core.TypeII.ProductShell
+public import Surface.Core.TypeII.ProductDyadicInterval
+public import Surface.Core.TypeII.CanonicalFactorBlock
+public import Surface.Core.TypeII.ShellCutoffMatrix
+public import Surface.Core.TypeII.ShellPrefixCode
+public import Surface.Core.TypeII.ProductShellReindex
+public import Surface.Core.TypeII.GeometricResidual
+public import Surface.Core.TypeII.StructuredProjection
+public import Surface.Core.TypeII.MassPacking
+public import Surface.Core.TypeII.ReadoutObstruction
+public import Surface.Core.TypeII.FactorizationNonvacuity
+public import Surface.Core.TypeII.FullOperatorObstruction
+public import Surface.Core.TypeII.Interaction
+public import Surface.Core.TypeII.BilinearPacket
+public import Surface.Core.TypeII.SpatialCarrier
+public import Surface.Core.TypeII.BlockSurgeryMassPacking
+public import Surface.Core.TypeII.WangZahlDiffuse
+public import Surface.Core.TypeII.CorrelationFlow
+public import Surface.Core.TypeII.FactorizationFlow
+public import Surface.Core.TypeII.BlockCut
+public import Surface.Core.TypeII.CoefficientBlindPlan
+public import Surface.Core.TypeII.DyadicConditionalExpectation
+public import Surface.Core.TypeII.LevelwiseMassPacking
+public import Surface.Core.TypeII.LocalToGlobalCarleson
+public import Surface.Core.TypeII.TransverseSquare
+public import Surface.Core.TypeII.WangZahlCorrelationSquare
+public import Surface.Core.TypeII.StructuredMartingaleSquare
+public import Surface.Core.TypeII.CrossCutSquare
+public import Surface.Core.TypeII.Surgery
+public import Surface.Core.PrimeLattice.MomentPath
+public import Surface.Core.PrimeLattice.BVMaximalDuality
+public import Surface.Core.PrimeLattice.DyadicPrefix
+public import Surface.Core.PrimeLattice.PolarizedGram
+public import Surface.Core.ConductorThreeMomentPackets
+public import Surface.Core.ConductorThreeWangZahlTTStar
+public import Surface.Core.ConductorThreePrimeMomentProgram
+public import Surface.Core.ConductorThreeVaughanTypeIBridge
+public import Surface.Core.ConductorThreeVaughanBlocks
+public import Surface.Core.ConductorThreeTypeIICoefficientNorms
+public import Surface.Core.ConductorThreeVaughanRightInterval
+public import Surface.Core.ConductorThreeVaughanRightSecondMoment
+public import Surface.Core.ConductorThreeVaughanRightHarmonicCube
+public import Surface.Core.ConductorThreeTypeIIBlockNorms
+public import Surface.Core.ConductorThreeHyperbolicCarleson
+public import Surface.Core.ConductorThreeTypeIIMaximalAssembly
+public import Surface.Core.ConductorThreeCarlesonToGRH
+public import Surface.Core.TypeII.BlockPacketModel
+public import Surface.Core.TypeII.LocalAlternative
+public import Surface.Core.ConductorThreeDeltaRicciSurgeryData
+public import Surface.Core.ConductorThreeDeltaRicciTypeII
+public import Surface.Core.ConductorThreeDeltaRicciTriad
+public import Surface.Core.PrimeWalkTrajectoryAdmission
+public import Surface.Core.NevanlinnaKernel
+public import Surface.Core.ConductorThreeWeylFunction
+public import Surface.Core.HerglotzRepresentation
+public import Surface.Core.ConductorThreeTwistedTriad
+public import Surface.Core.RiemannSphere
+public import Surface.Core.SpheroidStereographic
+public import Surface.Core.StereographicBanach
+public import Surface.Core.SpheroidBanach
+public import Surface.Core.ClosedSelfAdjointOperator
+public import Surface.Core.CFCProjection
+public import Surface.Core.ProjectiveRayleigh
+public import Surface.Core.ProjectiveFubiniStudy
+public import Surface.Core.ProjectivePerturbation
+public import Surface.Core.RieszCircle
+public import Surface.Core.RieszRankOne
+public import Surface.Core.Weil.TestFunction
+public import Surface.Core.Weil.Autocorrelation
+public import Surface.Core.Weil.LaplaceTransform
+public import Surface.Core.Weil.VerticalDecay
+public import Surface.Core.Weil.VerticalStripDecay
+public import Surface.Core.Task
+public import Surface.Core.GoalGraph
+public import Surface.Core.Patch
+public import Surface.Core.Receipt
+public import Surface.Core.Verification
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.HolomorphicLinearODE.Variant0dff3900551f2c7c6088432f53fe762bd79a2512ae2ad38d79350884eb50412f
+
+```

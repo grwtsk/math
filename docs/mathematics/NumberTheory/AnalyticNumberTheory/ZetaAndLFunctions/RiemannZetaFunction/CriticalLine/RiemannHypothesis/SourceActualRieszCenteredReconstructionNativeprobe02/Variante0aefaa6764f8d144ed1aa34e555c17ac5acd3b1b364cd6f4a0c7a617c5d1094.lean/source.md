@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredReconstructionNativeprobe02.Variante0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7eefa6317dcf1eb1279fbd2f1d487bef05f46a5f` · SHA-256 `e0aefaa6764f8d144ed1aa34e555c17ac5acd3b1b364cd6f4a0c7a617c5d1094`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceMangoldtInteraction
+import SourceContinuousHalfEnergy
+import SourceFiveCancelledFactorialBudget
+
+set_option autoImplicit false
+noncomputable section
+namespace FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction
+open MeasureTheory Set
+open scoped BigOperators
+open SourcePairing SourceFirstPrimeAbel SourceMangoldtAbel SourceMangoldtInteraction
+open SourceCorrelationCurvature SourceContinuousHalfEnergy SourceLeadingFullKappaReduction
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization CorrelationRegularity EstimateMertensResidual EstimatePrimeSmoothDefect
+
+#check sourceCorrelation_deriv_zero_of_two_mul_le
+#check intervalIntegral.integral_eq_sub_of_hasDerivAt
+#check intervalIntegral.integral_mul_deriv_eq_deriv_mul
+#check intervalIntegral.norm_integral_le_of_norm_le
+#check intervalIntegral.integral_nonneg
+#check closedPrimeMoment
+#check mertensResidual_eq_closedPrimeMoment
+#check RH16FiveCesaro.actualCorrelation_second_abs_le_five
+end FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction
+```

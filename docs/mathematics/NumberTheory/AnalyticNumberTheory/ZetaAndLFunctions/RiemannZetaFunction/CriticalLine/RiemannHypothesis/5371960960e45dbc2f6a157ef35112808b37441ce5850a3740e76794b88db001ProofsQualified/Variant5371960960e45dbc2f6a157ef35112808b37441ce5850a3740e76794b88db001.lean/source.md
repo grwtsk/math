@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.5371960960e45dbc2f6a157ef35112808b37441ce5850a3740e76794b88db001ProofsQualified.Variant5371960960e45dbc2f6a157ef35112808b37441ce5850a3740e76794b88db001
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e07e2e4874cec191a9b4cb29c8e5a05922007298` · SHA-256 `5371960960e45dbc2f6a157ef35112808b37441ce5850a3740e76794b88db001`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualArithmeticRawEnergy
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualRawArithmeticSquaredMass
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualUnitDivisor_coordinates
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualRawArithmeticSquaredMass_ge_unit_log
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualPrimePower_rawMass_lower
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualRawArithmeticSquaredMass_primePowerDilation
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualPowerTwo_mangoldt
+#print FormalResearch.RiemannHypothesis.SourceActualArithmeticRawEnergy.actualRawArithmeticSquaredMass_not_uniformly_bounded
+```

@@ -1,0 +1,26 @@
+import SourceActualClosedXiSignedMoment
+
+namespace FormalResearch.RiemannHypothesis.SourceActualClosedXiSignedMoment
+
+#check actualClosedXiSignedMoment
+#print axioms actualClosedXiSignedMoment
+
+#check actual_contracted_pairing_eq_neg_closed_moment
+#print axioms actual_contracted_pairing_eq_neg_closed_moment
+
+#check contracted_lower_of_closed_moment
+#print axioms contracted_lower_of_closed_moment
+
+#check residual_upper_of_closed_moment
+#print axioms residual_upper_of_closed_moment
+
+#check all_real_lower_of_closed_moment
+#print axioms all_real_lower_of_closed_moment
+
+#check estimate_of_closed_moment
+#print axioms estimate_of_closed_moment
+
+#check leading_tail_of_closed_moment
+#print axioms leading_tail_of_closed_moment
+
+end FormalResearch.RiemannHypothesis.SourceActualClosedXiSignedMoment

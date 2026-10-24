@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.NegativeIntegrabilityAudit.Variant6a8f7ba2a49ec2a593406eed6887e49f784026fadc0c443911b3fa31a2d4da6b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `605b686164b03a5f34ee94b69e36ae2b9fb80491` · SHA-256 `37ec44ccf10d3ff81ab73c680b52b35efe2e97cff8d56e459a9bdbf593797239`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.NegativePartIntegrability.Variant9411d02870fb00a37f07800eb1764079d4dc42d4d234865caca450d6332281ba","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9411d02870fb00a37f07800eb1764079d4dc42d4d234865caca450d6332281ba","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.NegativePartIntegrability.Variant9411d02870fb00a37f07800eb1764079d4dc42d4d234865caca450d6332281ba","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9411d02870fb00a37f07800eb1764079d4dc42d4d234865caca450d6332281ba","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/signed-estimate-review/negative-integrability-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.NegativePartIntegrability.Variant9411d02870fb00a37f07800eb1764079d4dc42d4d234865caca450d6332281ba
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.negativeSource
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.AllPositiveRates
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.negativeSource_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.weighted_negativeSource_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.scaledSource_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.negativeSource_integrable_of_one_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.weighted_negativeSource_aestronglyMeasurable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.negativeSource_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.normalizationPolynomial_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.real_correction_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.negativeSource_le_polynomial
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.allPositiveRates_of_polynomial_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.negativeSource_integrable_of_exponential_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.NegativePartIntegrability.allPositiveRates_of_subexponential_tail
+```

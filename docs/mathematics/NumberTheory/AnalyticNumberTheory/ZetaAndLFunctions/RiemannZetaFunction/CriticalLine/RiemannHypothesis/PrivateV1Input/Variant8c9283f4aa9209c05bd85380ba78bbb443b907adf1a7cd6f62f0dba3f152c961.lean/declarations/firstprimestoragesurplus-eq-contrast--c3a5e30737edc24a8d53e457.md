@@ -1,0 +1,102 @@
+# firstPrimeStorageSurplus_eq_contrast
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "ae0e747e3b23ce41f8f365d4f1e88277c0a79d61",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 137,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/8c/8c9283f4aa9209c05bd85380ba78bbb443b907adf1a7cd6f62f0dba3f152c961.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:d2ee90d8-e229-4fd7-b7be-16290302356e",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:3ae4e44b-471f-9031-574f-cea9be2a55f5",
+  "kind": "theorem",
+  "lexical_name": "firstPrimeStorageSurplus_eq_contrast",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "firstprimestoragesurplus-eq-contrast--c3a5e30737edc24a8d53e457",
+  "source": {
+    "blob": "ae0e747e3b23ce41f8f365d4f1e88277c0a79d61",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 145,
+    "line": 137,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrivateV1Input/Variant8c9283f4aa9209c05bd85380ba78bbb443b907adf1a7cd6f62f0dba3f152c961.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:c3a5e30737edc24a8d53e457da913defbc5b7152903bfe4b0bed4b1cc0127d4d",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrivateV1Input/Variant8c9283f4aa9209c05bd85380ba78bbb443b907adf1a7cd6f62f0dba3f152c961.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:3ae4e44b-471f-9031-574f-cea9be2a55f5`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 137–145.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem firstPrimeStorageSurplus_eq_contrast {A : ℝ} (hA : 1 ≤ A) :
+    SourceMangoldtStorage.firstPrimeStorageSurplus A = pairedErrorContrast A -
+      negativeErrorMean A - criticalContinuousMoment A - diagonalMainCoefficient A * A := by
+  rw [firstPrimeStorageSurplus_eq_paired hA,
+    ← criticalSignedWork_eq_paired (show 0 < A by linarith),
+    criticalSignedWork_eq_contrast_sub_mean hA]
+
+
+/-- Identical scalar centering is retained in the actual negative mean. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrivateV1Input/Variant8c9283f4aa9209c05bd85380ba78bbb443b907adf1a7cd6f62f0dba3f152c961.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrivateV1Input/Variant8c9283f4aa9209c05bd85380ba78bbb443b907adf1a7cd6f62f0dba3f152c961.lean#L137).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ae0e747e3b23ce41f8f365d4f1e88277c0a79d61` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

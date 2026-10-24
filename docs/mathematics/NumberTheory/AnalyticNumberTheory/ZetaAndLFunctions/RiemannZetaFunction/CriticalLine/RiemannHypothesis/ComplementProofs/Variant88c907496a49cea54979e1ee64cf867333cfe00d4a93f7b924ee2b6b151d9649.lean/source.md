@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ComplementProofs.Variant88c907496a49cea54979e1ee64cf867333cfe00d4a93f7b924ee2b6b151d9649
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b5ed70afe246a5ff7fdd64b67df4a3bf496cb7b5` · SHA-256 `db8d54c5117f57598a39c6bfbb4b318965ea53a91bf51dcec8bbaa7812189a3b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceStrictComplementaryAbel.Variantdda9b8fdb3450229d7c0b69da2e61167dbecf9dbc2203b05aa68ac2014a8c03f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dda9b8fdb3450229d7c0b69da2e61167dbecf9dbc2203b05aa68ac2014a8c03f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceStrictComplementaryAbel.Variantdda9b8fdb3450229d7c0b69da2e61167dbecf9dbc2203b05aa68ac2014a8c03f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"dda9b8fdb3450229d7c0b69da2e61167dbecf9dbc2203b05aa68ac2014a8c03f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/ComplementProofs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceStrictComplementaryAbel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceStrictComplementaryAbel.Variantdda9b8fdb3450229d7c0b69da2e61167dbecf9dbc2203b05aa68ac2014a8c03f
+
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.strictDivisorLogCoefficient
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.shortDivisorLogCoefficient
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryPlainCoefficient
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryCumulative
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.shortDivisorCumulative
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.strictDivisorLogCoefficient_zero
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.strictDivisorLogCoefficient_one
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryPlainCoefficient_zero
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryPlainCoefficient_one
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.strict_add_short_eq_vonMangoldt
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryPlainCoefficient_eq_signed_sub_short
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryCumulative_eq
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.strict_cutoff_iff
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.largeDivisor_eq_strict_coefficient_sum
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.literal_L_sub_plain_eq_weighted_sum
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementary_derivative_integrable_Icc
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.literal_L_sub_plain_eq_finite_Abel
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementary_derivative_integrable_Ioi
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.literal_L_sub_plain_eq_full_Abel
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementaryCriticalKernel
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementary_log_kernel_eq
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.complementary_critical_kernel_integrable
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryAbel.literal_L_sub_plain_eq_critical_pairing
+```

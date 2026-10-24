@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEarlyFractionalZetaAudit.Variant75a60a2c9d852dbbd53ea1219c487732846dca94a845cf2a5a9a8420429cf490
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f629584d0180a11c06939132da0cfbfdea30861f` · SHA-256 `75a60a2c9d852dbbd53ea1219c487732846dca94a845cf2a5a9a8420429cf490`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEarlyFractionalZeta
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_eq_neg_samplingAlpha0
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_eq_neg_samplingAlpha0
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_add_zeta_half_eq_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_add_zeta_half_eq_zero
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_zeta_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_zeta_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_tendsto_neg_zeta_half
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_tendsto_neg_zeta_half
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_eq_neg_samplingAlpha0
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_add_zeta_half_eq_zero
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_zeta_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_tendsto_neg_zeta_half
+```

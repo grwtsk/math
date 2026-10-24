@@ -1,0 +1,55 @@
+# Complete source: GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFifthBlockSeeds
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f48c2d63e00fca3111ee1ac722c722af8f1060ce` · SHA-256 `cc338013567c174bfaff5ce171918cec5a68fe707c114393d0816516e29da6ae`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFifthBlockData
+
+set_option autoImplicit false
+
+namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFifthBlockSeeds
+
+open GRWTSK.Analysis.Complex
+open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
+open RationalTaylorSeedNormalization
+open GRWTSK.Analysis.Real.RationalLogEnclosure
+open ConcreteNewtonPacket RationalZetaCenterEvaluation ConcreteNewtonFifthBlockData
+
+theorem all_inputs (i : Fin 64) : InputValid i := by
+  fin_cases i <;>
+    norm_num [InputValid, sourceRadius, sourceDisplacement, base,
+    RationalPowerEvaluation.Admissible, RationalPowerEvaluation.argument,
+    RationalPowerEvaluation.radius, RationalPowerEvaluation.displacement,
+    RationalPowerEvaluation.logCenter, RationalPowerEvaluation.logError,
+    RationalPowerEvaluation.logLower, RationalPowerEvaluation.logWidth,
+    RationalPowerEvaluation.mantissa, sourceExponent, center, schedule, logExponent,
+    scaleQ, QComplex.smul, QComplex.rect, lower, width, ratio, Finset.sum_range_succ]
+
+theorem all_windows (i : Fin 64) : SeedWindows i := by
+  fin_cases i <;>
+    norm_num [SeedWindows, Windows, sourceArgument, sourceRadius, sourceDisplacement,
+    initial, base, seedNum, seedDen, argDen, argNum, errorNum, errorDen,
+    tailNum, tailDen, numeratorZ, powerZ, addZ, mulZ, scalePair, denominatorZ,
+    FloorWindow, CeilingWindow, scaleZ,
+    RationalPowerEvaluation.argument, RationalPowerEvaluation.radius,
+    RationalPowerEvaluation.displacement, RationalPowerEvaluation.logCenter,
+    RationalPowerEvaluation.logError, RationalPowerEvaluation.logLower,
+    RationalPowerEvaluation.logWidth, RationalPowerEvaluation.mantissa,
+    sourceExponent, center, schedule, logExponent, scaleQ, QComplex.smul,
+    QComplex.rect, lower, width, ratio, Finset.sum_range_succ, Nat.factorial]
+
+theorem all_seeds_valid (i : Fin 64) : SeedValid 64
+    (RationalPowerEvaluation.seed (base i : ℚ) (sourceExponent center) (schedule (base i)))
+    (RationalPowerEvaluation.seedError (base i : ℚ) (sourceExponent center) (schedule (base i)))
+    (initial i) :=
+  RationalTaylorSeedNormalization.original_seed_valid (base i : ℚ) (sourceExponent center)
+    (schedule (base i)) 21 rfl (initial i) (all_inputs i).2.1
+    (all_inputs i).2.2 (all_windows i)
+
+end GRWTSK.RiemannHypothesis.ConcreteNewtonFifthBlockSeeds
+```

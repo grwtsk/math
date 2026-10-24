@@ -1,0 +1,28 @@
+import FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+
+#print firstPrimeMoment
+#print primeExponentInventory
+#print higherPrimePowerInventory
+#print higherPrimePowerMoment
+#print source_coefficient_zero_of_not_isPrimePow
+#print primeExponentInventory_pow_injective
+#print closedPrimeMoment_eq_primeExponent_sum
+#print closedPrimeMoment_eq_first_square_higher
+#print prime_power_source_coefficient
+#print prime_power_source_zero_exponent_guard
+#print higherPrimePowerBudget_summability
+#print higherPrimePowerBudget
+#print higherPrimePowerBudget_nonneg
+#print prime_power_source_coefficient_abs_le
+#print higherPrimePowerMoment_abs_le
+#print residual_sub_firstPrime_main_abs_le
+#print residual_firstPrime_uniform_replacement_error
+#print FirstPrimeTailUpperBound
+#print firstPrime_tail_iff_residual_tail
+#print signed_pairing_tail_iff_firstPrime_tail
+#print estimate_of_firstPrime_tail

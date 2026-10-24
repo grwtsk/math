@@ -1,0 +1,23 @@
+import SourceActualOffAxisEstimateEquivalence
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence
+#check ActualSourceNegativeDefectTailBound
+#print axioms ActualSourceNegativeDefectTailBound
+#check ActualReducedOffAxisNegativeDefectTailBound
+#print axioms ActualReducedOffAxisNegativeDefectTailBound
+#check actualSourceNegativeDefectTailBound_iff_estimate
+#print axioms actualSourceNegativeDefectTailBound_iff_estimate
+#check actualReducedOffAxisNegativeDefectTailBound_iff_source
+#print axioms actualReducedOffAxisNegativeDefectTailBound_iff_source
+#check actualReducedOffAxisNegativeDefectTailBound_iff_estimate
+#print axioms actualReducedOffAxisNegativeDefectTailBound_iff_estimate
+#check actualReducedOffAxisHeadLowerTail_iff_estimate
+#print axioms actualReducedOffAxisHeadLowerTail_iff_estimate

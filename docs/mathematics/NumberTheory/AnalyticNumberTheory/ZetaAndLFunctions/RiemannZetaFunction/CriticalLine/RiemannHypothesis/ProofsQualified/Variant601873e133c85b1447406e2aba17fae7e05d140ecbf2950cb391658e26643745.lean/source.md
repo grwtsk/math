@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant601873e133c85b1447406e2aba17fae7e05d140ecbf2950cb391658e26643745
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0f52b03e796984235db96f5e4a163ffccf9de08e` · SHA-256 `601873e133c85b1447406e2aba17fae7e05d140ecbf2950cb391658e26643745`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPeriodicInteriorAbel
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnEndpointWeight
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnAbelRow
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicAdjustedColumnBoundary
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicInteriorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actual_prefix_T_eq_mean_add_abel_row
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnAbelRow_eq_divisor_fubini
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicColumnAbelRow_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actual_adjusted_inner_eq_mean_periodic
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actualPeriodicInteriorDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicInteriorAbel.actual_adjusted_interior_eq_mean_periodic
+```

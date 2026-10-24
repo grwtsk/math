@@ -1,0 +1,67 @@
+# Verification target: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CanonicalAuditAttempt1.Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "dc5ca625a14e4dd19b55920d450c40f1dee17c0d",
+  "lexical_observation_count": 4,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean/index.md) · [Full source](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `dc5ca625a14e4dd19b55920d450c40f1dee17c0d`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourcePositivePeanoPrimitive` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourcePrimitiveBumpProfile` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelation` — import line 3; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `example` | [(anonymous)](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean/declarations/example--250147e3c3dc2b7005141346.md) | 24 | `declaration-track:250147e3c3dc2b7005141346150b00c3a9cd0ca52fcb8f17093cf3af08b5c029` |
+| 2 | `example` | [(anonymous)](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean/declarations/example--30a33da44befaba252a9a91b.md) | 29 | `declaration-track:30a33da44befaba252a9a91b0f630335279dba8707b1c898968473720b5b6c25` |
+| 3 | `theorem` | [zero_derivative](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean/declarations/zero-derivative--ec12f134a637a708e4393453.md) | 35 | `result-track:ec12f134a637a708e439345398834df8d2c82a6f95494c861c531199bfdb1bfc` |
+| 4 | `example` | [(anonymous)](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CanonicalAuditAttempt1/Variant65d6b26f45529dabff5279ef9c192c744762f424cb2e705007a3e60b0cb29db1.lean/declarations/example--9b90574182a24dca4c4747fc.md) | 54 | `declaration-track:9b90574182a24dca4c4747fccaa7492e4fb4b234acf73be9a01ce6007f6b0d95` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

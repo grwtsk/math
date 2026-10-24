@@ -1,0 +1,8 @@
+import FormalResearch.RiemannHypothesis.ThetaPhiGaussianBound
+open FormalResearch.RiemannHypothesis.ThetaPositiveLift
+#check thetaGaussianTail_summable
+#print thetaGaussianTail_summable
+#print axioms thetaGaussianTail_summable
+#check thetaGaussianTail_mul_lt_one_fifth
+#print thetaGaussianTail_mul_lt_one_fifth
+#print axioms thetaGaussianTail_mul_lt_one_fifth

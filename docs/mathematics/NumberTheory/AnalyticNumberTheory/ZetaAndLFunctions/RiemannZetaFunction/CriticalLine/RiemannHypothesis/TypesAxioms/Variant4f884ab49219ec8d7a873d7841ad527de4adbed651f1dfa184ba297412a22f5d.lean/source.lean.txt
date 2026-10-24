@@ -1,0 +1,19 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualAnchoredStripRefinement.Variant579c823e5a578213f9cd894829af8a82beeaf4e208eaeb1638bce0710e53bfdb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"579c823e5a578213f9cd894829af8a82beeaf4e208eaeb1638bce0710e53bfdb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualAnchoredStripRefinement.Variant579c823e5a578213f9cd894829af8a82beeaf4e208eaeb1638bce0710e53bfdb","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"579c823e5a578213f9cd894829af8a82beeaf4e208eaeb1638bce0710e53bfdb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/independent-actual-anchored-strip/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualAnchoredStripRefinement
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualAnchoredStripRefinement.Variant579c823e5a578213f9cd894829af8a82beeaf4e208eaeb1638bce0710e53bfdb
+
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_anchored_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_anchored_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_strip_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_strip_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_anchored_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_anchored_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_balanced_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_balanced_abs_le

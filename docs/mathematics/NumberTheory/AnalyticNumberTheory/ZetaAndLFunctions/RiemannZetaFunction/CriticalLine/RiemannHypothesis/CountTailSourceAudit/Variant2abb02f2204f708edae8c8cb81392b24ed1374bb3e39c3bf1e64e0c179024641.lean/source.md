@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CountTailSourceAudit.Variant2abb02f2204f708edae8c8cb81392b24ed1374bb3e39c3bf1e64e0c179024641
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d1b701a613dc2c944bd925a0e279268a4e4a392` · SHA-256 `4abc31fef9dde7e1b385fdbcd87baf5b3465e8ee97949a63728ce11e2b5e0a45`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CoprimeCount.Variantfafd86328bfc0c81d05da33b26f15a570b018d722e954a76b03f037a5e5b93d1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fafd86328bfc0c81d05da33b26f15a570b018d722e954a76b03f037a5e5b93d1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.CoprimeCount.Variantfafd86328bfc0c81d05da33b26f15a570b018d722e954a76b03f037a5e5b93d1","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"fafd86328bfc0c81d05da33b26f15a570b018d722e954a76b03f037a5e5b93d1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/mertens/count-tail-source-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount
+import FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CoprimeCount.Variantfafd86328bfc0c81d05da33b26f15a570b018d722e954a76b03f037a5e5b93d1
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeDensity
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.sum_moebius_divisors
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.sum_moebius_divisors
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprime_indicator_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprime_indicator_eq
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.positive_multiples_card
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.positive_multiples_card
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_eq_moebius_floor
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_eq_moebius_floor
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.natural_division_error
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.natural_division_error
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_error_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_error_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_period
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_period
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeCount_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeDensity_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeDensity_nonneg
+#check FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeDensity_le_one
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.CoprimeCount.coprimeDensity_le_one
+#check FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail.reciprocal_square_tail_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail.reciprocal_square_tail_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail.sqrt_cutoff_tail_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail.sqrt_cutoff_tail_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail.floor_sqrt_cutoff_tail_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ReciprocalSquareTail.floor_sqrt_cutoff_tail_le
+```

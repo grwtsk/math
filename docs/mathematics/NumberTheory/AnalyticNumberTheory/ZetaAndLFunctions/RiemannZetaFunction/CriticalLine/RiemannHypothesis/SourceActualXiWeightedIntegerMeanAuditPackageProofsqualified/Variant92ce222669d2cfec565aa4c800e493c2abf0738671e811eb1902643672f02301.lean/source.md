@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiWeightedIntegerMeanAuditPackageProofsqualified.Variant92ce222669d2cfec565aa4c800e493c2abf0738671e811eb1902643672f02301
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `210548296ba167ded7a97ce731042f947ebe7d86` · SHA-256 `524deff2213de2c7f3b26f1c2b35b619becfa44d64e6991b2d49a16db30c81f6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiWeightedIntegerMean.Varianta62c4d1ec999cde7ea1dd1748becbb1f5b016a9656c5bd46f57191fcbaf32232","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a62c4d1ec999cde7ea1dd1748becbb1f5b016a9656c5bd46f57191fcbaf32232","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiWeightedIntegerMean.Varianta62c4d1ec999cde7ea1dd1748becbb1f5b016a9656c5bd46f57191fcbaf32232","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a62c4d1ec999cde7ea1dd1748becbb1f5b016a9656c5bd46f57191fcbaf32232","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualXiWeightedIntegerMeanAuditPackageProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiWeightedIntegerMean
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiWeightedIntegerMean.Varianta62c4d1ec999cde7ea1dd1748becbb1f5b016a9656c5bd46f57191fcbaf32232
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiWeightedIntegerPrefix
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiIntegerCriticalReadout
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiTerminalCellLogWeight
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiIntegerSquareWindow
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_on_open_integer_cell
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_cell_integral
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_integral_at_integer
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_integral_eq_prefix_fraction
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_integral_eq_terminal_sum
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiTerminalCellLogWeight_sum
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiIntegerCriticalReadout_eq_primitive
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_integral_eq_signed_integer_readout
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiLogStep_mean_square_budget
+#print FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean.actualXiPrimitive_mean_weighted_readout_error
+```

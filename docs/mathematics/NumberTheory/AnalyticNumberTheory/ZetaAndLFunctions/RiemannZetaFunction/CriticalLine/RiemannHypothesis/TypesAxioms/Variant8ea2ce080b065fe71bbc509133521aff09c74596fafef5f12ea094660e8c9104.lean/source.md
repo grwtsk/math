@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant8ea2ce080b065fe71bbc509133521aff09c74596fafef5f12ea094660e8c9104
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3eed185f3c8479540f09f2f1e06aea1156e6b27b` · SHA-256 `544cd444087892ae19aca12fd6c59e7548de2cd2a348df45c465f55e221b98a3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualVariableColumnDivisor.Varianta4ad293515349e4712477eab953a315f9834c148e589471f8e4a42432775b9c7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a4ad293515349e4712477eab953a315f9834c148e589471f8e4a42432775b9c7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualVariableColumnDivisor.Varianta4ad293515349e4712477eab953a315f9834c148e589471f8e4a42432775b9c7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a4ad293515349e4712477eab953a315f9834c148e589471f8e4a42432775b9c7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-variable-column-divisor/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualVariableColumnDivisor
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualVariableColumnDivisor.Varianta4ad293515349e4712477eab953a315f9834c148e589471f8e4a42432775b9c7
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_prefix_half_integral_eq_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_prefix_half_integral_eq_closed_inventory
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.closed_centered_prefix_eq_divisor_quotients
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.closed_centered_prefix_eq_divisor_quotients
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.closed_half_inventory_terminal_succ
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.closed_half_inventory_terminal_succ
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actualAdjointColumnPrimitive_eq_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actualAdjointColumnPrimitive_eq_closed_inventory
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_adjusted_column_eq_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_adjusted_column_eq_closed_inventory
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_adjusted_column_eq_divisor_harmonics
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_adjusted_column_eq_divisor_harmonics
+#check FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_adjusted_column_upper_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVariableColumnDivisor.actual_adjusted_column_upper_closed_inventory
+```

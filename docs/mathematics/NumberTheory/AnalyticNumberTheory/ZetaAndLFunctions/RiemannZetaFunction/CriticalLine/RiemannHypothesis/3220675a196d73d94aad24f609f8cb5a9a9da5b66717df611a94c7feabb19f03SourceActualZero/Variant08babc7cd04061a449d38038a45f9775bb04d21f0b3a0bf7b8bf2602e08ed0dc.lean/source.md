@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03SourceActualZero.Variant08babc7cd04061a449d38038a45f9775bb04d21f0b3a0bf7b8bf2602e08ed0dc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `84aa367da728d7c4c64f22c03e64778d2a6efc96` · SHA-256 `5d88073da50369334730d26ece8b25c091b00c3dc29026a93bd4f18f682a380f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroStretchedRate.Variant3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualZeroStretchedRate.Variant3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-boundary-next-rate-ingestion/informative58/recovered-selected/3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03--SourceActualZeroStretchedRateOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualZeroStretchedRate
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroStretchedRate.Variant3220675a196d73d94aad24f609f8cb5a9a9da5b66717df611a94c7feabb19f03
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualInitialPrimeMellin_gap_scaled_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualLowZeroHead_scaled_exponential_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualMiddleZeroHeightHead
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualZeroHeightHead_eq_low_add_middle
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualMiddleZeroHeightHead_gap_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualZeroStretchedHeight
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualZeroStretchedExponent_eq
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualFullZeroContribution_stretched_scaled_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualSourceQuadraticValue_stretched_scaled_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualMertensResidual_stretched_scaled_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroStretchedRate.actualMertensResidual_stretched_unscaled_bound
+```

@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualLeadingAsymptoticAudit.Variant4572639f7c1f5b60b4527e4b7d754da651db457844938871945b277be0e1e866
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0a22efa5c13355cdfabc538290aaa8571b75caea` · SHA-256 `4572639f7c1f5b60b4527e4b7d754da651db457844938871945b277be0e1e866`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualLeadingAsymptotic
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_pairing_sub_zeta_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_pairing_sub_zeta_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_tendsto_zero
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope
+#print FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_pairing_sub_zeta_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_tendsto_zero
+```

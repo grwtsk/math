@@ -1,0 +1,57 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePrimeCumulativeAudit.Variante6c1f303326d51995cb7fe7ad09a28c81865170dd155da22194cc4538ea952d1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c72f825d292b4fd80c7eb44311749c4bcf5cb4dd` · SHA-256 `e6c1f303326d51995cb7fe7ad09a28c81865170dd155da22194cc4538ea952d1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePrimeCumulative
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors_insert
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors_insert
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors_coverage
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors_coverage
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors_mixed
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors_mixed
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors_largest_prime_ledger
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors_largest_prime_ledger
+#check @RH16Tandem.SourcePrimeCumulative.alignedSource
+#print axioms RH16Tandem.SourcePrimeCumulative.alignedSource
+#check @RH16Tandem.SourcePrimeCumulative.alignedSource_eq_actual_remainders
+#print axioms RH16Tandem.SourcePrimeCumulative.alignedSource_eq_actual_remainders
+#check @RH16Tandem.SourcePrimeCumulative.alignedSource_fresh_prime
+#print axioms RH16Tandem.SourcePrimeCumulative.alignedSource_fresh_prime
+#check @RH16Tandem.SourcePrimeCumulative.alignedSource_mixed
+#print axioms RH16Tandem.SourcePrimeCumulative.alignedSource_mixed
+#check @RH16Tandem.SourcePrimeCumulative.alignedSource_cumulative
+#print axioms RH16Tandem.SourcePrimeCumulative.alignedSource_cumulative
+#check @RH16Tandem.SourcePrimeCumulative.alignedSource_coverage
+#print axioms RH16Tandem.SourcePrimeCumulative.alignedSource_coverage
+#check @RH16Tandem.SourcePrimeCumulative.physicalDisclosedCovariance
+#print axioms RH16Tandem.SourcePrimeCumulative.physicalDisclosedCovariance
+#check @RH16Tandem.SourcePrimeCumulative.physicalDisclosedCovariance_eq_actual_divisors
+#print axioms RH16Tandem.SourcePrimeCumulative.physicalDisclosedCovariance_eq_actual_divisors
+#check @RH16Tandem.SourcePrimeCumulative.deferredMain
+#print axioms RH16Tandem.SourcePrimeCumulative.deferredMain
+#check @RH16Tandem.SourcePrimeCumulative.actual_fixed_main_reconstruction
+#print axioms RH16Tandem.SourcePrimeCumulative.actual_fixed_main_reconstruction
+#check @RH16Tandem.SourcePrimeCumulative.deferredMain_coverage
+#print axioms RH16Tandem.SourcePrimeCumulative.deferredMain_coverage
+#check @RH16Tandem.SourcePrimeCumulative.actual_cumulative_small_prime_identity
+#print axioms RH16Tandem.SourcePrimeCumulative.actual_cumulative_small_prime_identity
+#check @RH16Tandem.SourcePrimeCumulative.all_real_prime_cumulative_identity
+#print axioms RH16Tandem.SourcePrimeCumulative.all_real_prime_cumulative_identity
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors_reciprocal_insert
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors_reciprocal_insert
+#check @RH16Tandem.SourcePrimeCumulative.actual_small_prime_mean_increases
+#print axioms RH16Tandem.SourcePrimeCumulative.actual_small_prime_mean_increases
+#check @RH16Tandem.SourcePrimeCumulative.maskedMoebius
+#print axioms RH16Tandem.SourcePrimeCumulative.maskedMoebius
+#check @RH16Tandem.SourcePrimeCumulative.restrictedMertens
+#print axioms RH16Tandem.SourcePrimeCumulative.restrictedMertens
+#check @RH16Tandem.SourcePrimeCumulative.weightedDivisors_summation_by_parts
+#print axioms RH16Tandem.SourcePrimeCumulative.weightedDivisors_summation_by_parts
+#check @RH16Tandem.SourcePrimeCumulative.actual_prime_block_summation_by_parts
+#print axioms RH16Tandem.SourcePrimeCumulative.actual_prime_block_summation_by_parts
+```

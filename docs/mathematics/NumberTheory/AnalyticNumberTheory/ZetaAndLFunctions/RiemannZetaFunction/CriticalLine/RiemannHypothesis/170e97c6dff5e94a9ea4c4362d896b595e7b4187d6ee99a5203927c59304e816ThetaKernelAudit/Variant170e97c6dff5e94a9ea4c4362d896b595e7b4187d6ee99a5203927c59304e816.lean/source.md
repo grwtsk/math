@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.170e97c6dff5e94a9ea4c4362d896b595e7b4187d6ee99a5203927c59304e816ThetaKernelAudit.Variant170e97c6dff5e94a9ea4c4362d896b595e7b4187d6ee99a5203927c59304e816
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ac8b5514e90e04ea7150bc7af745dc555f7fa638` · SHA-256 `170e97c6dff5e94a9ea4c4362d896b595e7b4187d6ee99a5203927c59304e816`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaKernel
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_summable
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_summable
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiTerm_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiTerm_positive
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_positive
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiTerm_eq_gaussians
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiTerm_eq_gaussians
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiCompactBound_summable
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiCompactBound_summable
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiTerm_norm_le_compactBound
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiTerm_norm_le_compactBound
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuous_thetaPhiTerm
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuous_thetaPhiTerm
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuousOn_thetaPhi_Icc
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuousOn_thetaPhi_Icc
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuous_thetaPhi
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.continuous_thetaPhi
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiDecayConstant_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiDecayConstant_positive
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_le_superexp
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_le_superexp
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thirteen_mul_le_half_pi_exp
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thirteen_mul_le_half_pi_exp
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_le_exp_neg_four_mul
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_le_exp_neg_four_mul
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_le_exp_neg_two_mul
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_le_exp_neg_two_mul
+```

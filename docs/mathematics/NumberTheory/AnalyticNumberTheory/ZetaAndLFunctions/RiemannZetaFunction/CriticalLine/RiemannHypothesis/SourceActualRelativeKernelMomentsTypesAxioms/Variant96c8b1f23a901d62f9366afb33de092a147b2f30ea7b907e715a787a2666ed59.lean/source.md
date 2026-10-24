@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRelativeKernelMomentsTypesAxioms.Variant96c8b1f23a901d62f9366afb33de092a147b2f30ea7b907e715a787a2666ed59
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `94d5551bcdd1a4aad41bd7a122ed7d0a93a3b52f` · SHA-256 `96c8b1f23a901d62f9366afb33de092a147b2f30ea7b907e715a787a2666ed59`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRelativeKernelMoments
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualInitialPrimeMellin_hasDerivAt_closed_first
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualInitialPrimeMellin_hasDerivAt_closed_first
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualCorrelation_closed_first_moment_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualCorrelation_closed_first_moment_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualCorrelation_positive_first_eq_negative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualCorrelation_positive_first_eq_negative
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualRelativeKernel_zero_moment_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualRelativeKernel_zero_moment_eq
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualRelativeKernel_zero_moment_abs_lt_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualRelativeKernel_zero_moment_abs_lt_one
+
+#check FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualRelativeKernel_first_moment_abs_le_six
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRelativeKernelMoments.actualRelativeKernel_first_moment_abs_le_six
+```

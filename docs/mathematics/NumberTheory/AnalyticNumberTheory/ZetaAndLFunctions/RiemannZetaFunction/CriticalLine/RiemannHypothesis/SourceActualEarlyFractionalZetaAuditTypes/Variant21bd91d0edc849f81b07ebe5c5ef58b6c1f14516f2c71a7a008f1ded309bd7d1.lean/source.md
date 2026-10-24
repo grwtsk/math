@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEarlyFractionalZetaAuditTypes.Variant21bd91d0edc849f81b07ebe5c5ef58b6c1f14516f2c71a7a008f1ded309bd7d1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f4470704793a908cd0b87f119a313c2d8745b8ca` · SHA-256 `21bd91d0edc849f81b07ebe5c5ef58b6c1f14516f2c71a7a008f1ded309bd7d1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEarlyFractionalZeta
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_eq_neg_samplingAlpha0
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_eq_neg_samplingAlpha0
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_add_zeta_half_eq_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_add_zeta_half_eq_zero
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_zeta_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_zeta_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_tendsto_neg_zeta_half
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_tendsto_neg_zeta_half
+```

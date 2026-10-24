@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant08ade0772813f7f1618b7404a45da29b7b1e15c244730a85e7455b4d3237243e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4328dd8fc027f473f8a292eb05b6a6568aa1d7cb` · SHA-256 `08ade0772813f7f1618b7404a45da29b7b1e15c244730a85e7455b4d3237243e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualTiltFourierDictionary
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualTiltStandardSpectrum
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualTiltStandardSpectrum
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTilt_complex_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTilt_complex_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTiltState_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTiltState_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTilt_fourier_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTilt_fourier_eq
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTiltState_fourier_coe_ae
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualUnitTiltState_fourier_coe_ae
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualTiltStandardSpectrum_sq_eq_weight
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualTiltStandardSpectrum_sq_eq_weight
+#check FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualTiltStandardSpectrum_norm_sq_eq_weight_norm
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltFourierDictionary.actualTiltStandardSpectrum_norm_sq_eq_weight_norm
+```

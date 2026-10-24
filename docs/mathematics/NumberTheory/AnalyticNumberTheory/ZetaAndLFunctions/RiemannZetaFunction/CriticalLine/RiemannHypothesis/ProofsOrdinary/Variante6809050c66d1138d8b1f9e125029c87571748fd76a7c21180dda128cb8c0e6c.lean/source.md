@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variante6809050c66d1138d8b1f9e125029c87571748fd76a7c21180dda128cb8c0e6c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d689e999eda405630590efd4694a1862c3c25e85` · SHA-256 `f0c187fcb3b17fc009b8babbfffd0740c06c5b78d2159f9b337b71c409597635`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiHalfHyperbola.Variant4ef406959eb4868c40796c8330bf3a4338fa3ffd6f81072ab94a96ac39018233","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4ef406959eb4868c40796c8330bf3a4338fa3ffd6f81072ab94a96ac39018233","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiHalfHyperbola.Variant4ef406959eb4868c40796c8330bf3a4338fa3ffd6f81072ab94a96ac39018233","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4ef406959eb4868c40796c8330bf3a4338fa3ffd6f81072ab94a96ac39018233","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-xi-half-hyperbola/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiHalfHyperbola
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiHalfHyperbola.Variant4ef406959eb4868c40796c8330bf3a4338fa3ffd6f81072ab94a96ac39018233
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusHalfFunction
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualLogHalfFunction
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusLogHalfHyperbola
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusHalf_mul_logHalf
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMangoldtHalfPrefix_eq_hyperbola
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMangoldtHalfWindowSeven_eq_hyperbola
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualAnchoredXiTailPrimitive_eq_hyperbola
+```

@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant51646ee2a1a684e96c9d399920ca391f41e43df5582fa3ff9af812f5913596bc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4411c1229791c567870eb3fe138494d96559d187` · SHA-256 `51646ee2a1a684e96c9d399920ca391f41e43df5582fa3ff9af812f5913596bc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualOuterHalfCutoff
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceKernelTerm_eq_actualLogProfile
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_eq_completeLogProfileSum
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_sharp_upper_zero
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow_sharp_upper
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualHighOuterContinuousEuler_sum_eq_zero
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingOuterSum
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingContinuousEulerSum
+```

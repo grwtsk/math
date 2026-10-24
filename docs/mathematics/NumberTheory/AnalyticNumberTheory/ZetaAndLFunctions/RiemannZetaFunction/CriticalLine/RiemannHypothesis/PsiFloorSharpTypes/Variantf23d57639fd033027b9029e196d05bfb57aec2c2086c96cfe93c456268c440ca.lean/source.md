@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PsiFloorSharpTypes.Variantf23d57639fd033027b9029e196d05bfb57aec2c2086c96cfe93c456268c440ca
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f64628f2660bbd47a293ca2102c6b957c24e0701` · SHA-256 `ebb7f1824e21fb7e084ced8de859458356568b33b7c5ec64401df11ab7adb586`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.Variant9c6f5f300213ef87dc61e46a4a37ebb28bbac692a50b1747f50f5bd2706e5cca","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9c6f5f300213ef87dc61e46a4a37ebb28bbac692a50b1747f50f5bd2706e5cca","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPsiFloorSharpConsumer.Variant9c6f5f300213ef87dc61e46a4a37ebb28bbac692a50b1747f50f5bd2706e5cca","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9c6f5f300213ef87dc61e46a4a37ebb28bbac692a50b1747f50f5bd2706e5cca","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/independent-psi-floor-sharp/PsiFloorSharpTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPsiFloorSharpConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.Variant9c6f5f300213ef87dc61e46a4a37ebb28bbac692a50b1747f50f5bd2706e5cca
+
+set_option autoImplicit false
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.complete_pairing_sub_psi_floor_abs_le_twenty_nine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.complete_pairing_sub_psi_floor_abs_le_twenty_nine
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.residual_sub_psi_floor_sub_zeta_abs_lt_twenty_nine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.residual_sub_psi_floor_sub_zeta_abs_lt_twenty_nine
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius_twenty_nine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius_twenty_nine
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.estimate_of_actual_psi_floor_signed_tail_twenty_nine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.estimate_of_actual_psi_floor_signed_tail_twenty_nine
+```

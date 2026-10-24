@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualReciprocalXiVariationChallengeAudit.Variantd4b12dc0d910e259d89dca9465a6a027fa033a69bfe99d0744177969ac31da5c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3eab04e3587fd386ebd93b6d1c6ca4a4cb663af6` · SHA-256 `98596b57f5775cf79acc52d54576dabe6909aa178f44c20544e77e11d312d107`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualReciprocalXiVariationChallenge.Variant12dd84fc12dd5108caf9fb7a5e36e1bff582b21475e05d759c9369ab6de42418","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"12dd84fc12dd5108caf9fb7a5e36e1bff582b21475e05d759c9369ab6de42418","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualReciprocalXiVariationChallenge.Variant12dd84fc12dd5108caf9fb7a5e36e1bff582b21475e05d759c9369ab6de42418","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"12dd84fc12dd5108caf9fb7a5e36e1bff582b21475e05d759c9369ab6de42418","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T235720Z-1791331040712551000/ActualReciprocalXiVariationChallengeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualReciprocalXiVariationChallenge
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualReciprocalXiVariationChallenge.Variant12dd84fc12dd5108caf9fb7a5e36e1bff582b21475e05d759c9369ab6de42418
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget
+#print axioms FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget
+#print FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget
+#check FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiQuotientWeight_one_lower
+#print axioms FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiQuotientWeight_one_lower
+#print FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiQuotientWeight_one_lower
+#check FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_lower
+#print axioms FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_lower
+#print FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_lower
+#check FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_tendsto_atTop
+#print FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_tendsto_atTop
+#check FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_no_uniform_upper
+#print axioms FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_no_uniform_upper
+#print FormalResearch.RiemannHypothesis.ActualReciprocalXiVariationChallenge.actualReciprocalXiVariationBudget_no_uniform_upper
+```

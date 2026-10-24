@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOffAxisEstimateEquivalenceOrdinary.Variantf0c3650f5d23debeec8e3708c8286899e2ca8ac541d27bf1e8435911c030aaa1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `60920258477f9c03264a2a39b89d520ee8fba2b5` · SHA-256 `f0c3650f5d23debeec8e3708c8286899e2ca8ac541d27bf1e8435911c030aaa1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualOffAxisEstimateEquivalence
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.ActualSourceNegativeDefectTailBound
+
+#print FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.ActualReducedOffAxisNegativeDefectTailBound
+
+#print FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualSourceNegativeDefectTailBound_iff_estimate
+
+#print FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisNegativeDefectTailBound_iff_source
+
+#print FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisNegativeDefectTailBound_iff_estimate
+
+#print FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisHeadLowerTail_iff_estimate
+```

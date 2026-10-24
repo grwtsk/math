@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantca47abc5d8e01caf81341487e3b192125e75172562eca90845918a9d2ff3b787
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3a37e00923a1e9251b42833dab45879af9e2eb45` · SHA-256 `ca47abc5d8e01caf81341487e3b192125e75172562eca90845918a9d2ff3b787`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualMovingHorizontalCompletedBudget
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualCompletedHorizontalIntegral
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_exponential_height_ratio_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_completed_norm_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualHorizontalSourceConstant
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_moving_height_norm_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_budget
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_moving_goodheight_log_factor_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualUniformHorizontalSourceConstant
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_uniform_budget
+```

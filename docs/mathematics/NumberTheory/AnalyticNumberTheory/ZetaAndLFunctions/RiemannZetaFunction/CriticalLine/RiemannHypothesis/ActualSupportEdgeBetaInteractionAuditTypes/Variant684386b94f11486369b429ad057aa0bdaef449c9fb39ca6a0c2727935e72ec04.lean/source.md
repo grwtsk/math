@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeBetaInteractionAuditTypes.Variant684386b94f11486369b429ad057aa0bdaef449c9fb39ca6a0c2727935e72ec04
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ba70bbfcf0279d082af958bfecd95cf33beb9916` · SHA-256 `a242c940bcc088af85babe26920606b7cda9502335c95673fcb55364f5aa5f15`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeBetaInteraction.Variant5b9165beecdf4da9a15ea69ca5ab27f143ce7a53e5b33eacc0dc93247c39a3f5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5b9165beecdf4da9a15ea69ca5ab27f143ce7a53e5b33eacc0dc93247c39a3f5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualSupportEdgeBetaInteraction.Variant5b9165beecdf4da9a15ea69ca5ab27f143ce7a53e5b33eacc0dc93247c39a3f5","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5b9165beecdf4da9a15ea69ca5ab27f143ce7a53e5b33eacc0dc93247c39a3f5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualSupportEdgeBetaInteractionAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualSupportEdgeBetaInteraction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeBetaInteraction.Variant5b9165beecdf4da9a15ea69ca5ab27f143ce7a53e5b33eacc0dc93247c39a3f5
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect_abs_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actual_support_half_le_two_sqrt_terminal
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actual_support_half_le_two_sqrt_terminal
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction_abs_le
+```
