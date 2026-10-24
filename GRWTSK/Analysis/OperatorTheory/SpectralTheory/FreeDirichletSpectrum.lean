@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Local mathematical attribution: grwtsk contributors.
 Classical finite Dirichlet sine diagonalization. Mathlib authorship and licenses
 remain upstream. This file supplies no signed arithmetic pickup estimate. -/
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
@@ -175,5 +175,67 @@ theorem freeCount_eq_cosine_count (N : ℕ) (E : ℝ) :
     RCLike.ofReal_real_eq_id, Function.id_comp,
     Multiset.card_map, Finset.card_def, id_eq,
     ← Finset.filter_val, Function.comp_def] using h.symm
+
+
+/-!
+## Exact central zero mode in every odd free Dirichlet volume
+
+This specializes the established sine diagonalization to the middle
+frequency of a finite odd-dimensional path. The zero eigenvalue is a
+finite-volume parity obstruction to extrapolating the two-site central
+gap to *all* finite volumes. No infinite-volume Sturmian spectral or
+IDS statement follows from this finite parity calculation.
+-/
+
+/-- Central sine-basis index in the odd volume `2*m+1`. -/
+def oddCenterIndex (m : ℕ) : Fin (2 * m + 1) :=
+  ⟨m, by omega⟩
+
+/-- In every odd volume, the central sine frequency has angle pi/2. -/
+theorem oddCenter_angle (m : ℕ) :
+    angle (2 * m + 1) (oddCenterIndex m) = Real.pi / 2 := by
+  simp only [angle, oddCenterIndex, Fin.val_mk]
+  push_cast
+  have hden : 2 * (m : ℝ) + 1 + 1 = 2 * ((m : ℝ) + 1) := by ring
+  rw [hden]
+  apply (div_eq_iff₀ (by positivity : (0 : ℝ) < 2 * ((m : ℝ) + 1))).2
+  ring
+
+/-- The free odd-volume central eigenvalue is exactly zero, not merely
+an estimated small eigenvalue. -/
+theorem oddCenter_eigenvalue_zero (m : ℕ) :
+    eigenvalue (2 * m + 1) (oddCenterIndex m) = 0 := by
+  simp [eigenvalue, oddCenter_angle, Real.cos_pi_div_two]
+
+/-- The already-constructed nonzero sine eigenvector is an explicit
+zero eigenvector for each finite odd volume. -/
+theorem oddCenter_hasEigenvector_zero (m : ℕ) :
+    Module.End.HasEigenvector
+      (freeDirichlet (2 * m + 1)).toLin' 0
+      (sineVector (2 * m + 1) (oddCenterIndex m)) := by
+  simpa only [oddCenter_eigenvalue_zero] using
+    (sineVector_hasEigenvector (2 * m + 1) (oddCenterIndex m))
+
+/-- Zero belongs to the actual matrix spectrum in every odd free
+Dirichlet volume. This uses the complete existing characteristic-root
+inventory, not a newly postulated spectrum identification. -/
+theorem odd_free_zero_in_spectrum (m : ℕ) :
+    (0 : ℝ) ∈ spectrum ℝ (freeDirichlet (2 * m + 1)) := by
+  have hroot : (0 : ℝ) ∈ (freeDirichlet (2 * m + 1)).charpoly.roots := by
+    rw [free_roots_charpoly]
+    exact Multiset.mem_map.mpr
+      ⟨oddCenterIndex m, by simp, oddCenter_eigenvalue_zero m⟩
+  exact Matrix.mem_spectrum_iff_isRoot_charpoly.mpr
+    (Polynomial.mem_roots'.mp hroot).2
+
+/-- At zero coupling, every odd finite-volume Sturmian Dirichlet
+restriction has zero in its actual matrix spectrum, uniformly in
+rotation, phase, and lattice origin. -/
+theorem odd_zeroCoupling_zero_in_spectrum (m : ℕ)
+    (α ξ : ℝ) (origin : ℤ) :
+    (0 : ℝ) ∈ spectrum ℝ
+      (hamiltonian (2 * m + 1) α 0 ξ origin) := by
+  simpa only [hamiltonian_zero] using odd_free_zero_in_spectrum m
+
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
