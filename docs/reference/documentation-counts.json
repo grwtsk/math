@@ -2,8 +2,8 @@
   "schema": "noe.math-documentation-counts/2",
   "scope": "current regular GRWTSK files, repository-owned Lean files and docs; inventory only",
   "source_populations": {
-    "all_grwtsk_lean_modules": 72570,
-    "maintained_grwtsk_lean_modules": 72570,
+    "all_grwtsk_lean_modules": 72571,
+    "maintained_grwtsk_lean_modules": 72571,
     "grwtsk_root_lean_modules": 0,
     "all_grwtsk_source_namespaces": 24,
     "maintained_source_namespaces": 24,
@@ -12,7 +12,7 @@
       "AlgebraicGeometry": 49,
       "Analysis": 715,
       "CategoriesAndHomologicalAlgebra": 57,
-      "Combinatorics": 101,
+      "Combinatorics": 102,
       "CombinatoricsAndDiscreteMathematics": 186,
       "Data": 2,
       "DynamicalSystems": 27,
@@ -38,7 +38,7 @@
       "AlgebraicGeometry": 49,
       "Analysis": 715,
       "CategoriesAndHomologicalAlgebra": 57,
-      "Combinatorics": 101,
+      "Combinatorics": 102,
       "CombinatoricsAndDiscreteMathematics": 186,
       "Data": 2,
       "DynamicalSystems": 27,
@@ -62,8 +62,8 @@
   },
   "repository_lean_population": {
     "method": "git_index_regular_files",
-    "all_lean_files": 72576,
-    "maintained_grwtsk_lean_files": 72570,
+    "all_lean_files": 72577,
+    "maintained_grwtsk_lean_files": 72571,
     "support_lean_files": 6,
     "root_lean_files": 1,
     "excluded_root_directories": [
@@ -80,11 +80,11 @@
     "scope": "Existing regular .lean files, including root modules and fixtures; symlinks excluded. Git mode includes all indexed paths except repository-root .git/ and .lake/, using working-tree bytes, not HEAD bytes. Non-Git fallback directory-name exclusions apply only outside GRWTSK/."
   },
   "documentation_populations": {
-    "all_docs_markdown_pages": 1062,
-    "core_documentation_markdown_pages": 827,
-    "mathematics_markdown_pages": 779,
-    "mathematics_area_indexes": 12,
-    "mathematics_object_candidate_pages": 767,
+    "all_docs_markdown_pages": 1272,
+    "core_documentation_markdown_pages": 1037,
+    "mathematics_markdown_pages": 984,
+    "mathematics_area_indexes": 33,
+    "mathematics_object_candidate_pages": 769,
     "registered_object_guides": 149,
     "documented_object_groups": 59,
     "distinct_primary_sources": 145,
@@ -105,6 +105,13 @@
         "archive_intake_records": 39,
         "selected_result_families": 1
       },
+      "CategoryTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Combinatorics": {
         "registered_object_guides": 26,
         "documented_object_groups": 2,
@@ -112,7 +119,28 @@
         "archive_intake_records": 0,
         "selected_result_families": 1
       },
+      "CombinatoricsAndDiscreteMathematics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Data": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "DifferentialEquations": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "DiscreteMathematics": {
         "registered_object_guides": 0,
         "documented_object_groups": 0,
         "distinct_primary_sources": 0,
@@ -126,7 +154,56 @@
         "archive_intake_records": 0,
         "selected_result_families": 0
       },
+      "ErrorCorrectingCodingTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "FoundationsLogicAndTypeTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Geometry": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "GeometryOfNumbers": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "GroupTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "HistoryOfMathematics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "InformationTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Interfaces": {
         "registered_object_guides": 0,
         "documented_object_groups": 0,
         "distinct_primary_sources": 0,
@@ -147,11 +224,25 @@
         "archive_intake_records": 3,
         "selected_result_families": 0
       },
+      "MathematicsEducation": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "MeasureTheory": {
         "registered_object_guides": 0,
         "documented_object_groups": 0,
         "distinct_primary_sources": 0,
         "archive_intake_records": 1,
+        "selected_result_families": 0
+      },
+      "Mechanics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
         "selected_result_families": 0
       },
       "NumberTheory": {
@@ -161,6 +252,20 @@
         "archive_intake_records": 19,
         "selected_result_families": 1
       },
+      "NumericalAnalysis": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Optimization": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Order": {
         "registered_object_guides": 1,
         "documented_object_groups": 1,
@@ -168,10 +273,52 @@
         "archive_intake_records": 2,
         "selected_result_families": 0
       },
+      "Probability": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "ProofAssistantMetaprogramming": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Spectral": {
         "registered_object_guides": 7,
         "documented_object_groups": 4,
         "distinct_primary_sources": 6,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Statistics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "TheoryOfDataStructures": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Topology": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "TypeTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
         "archive_intake_records": 0,
         "selected_result_families": 0
       }
@@ -189,11 +336,11 @@
     "scope": "legacy curated source paths and pinned-parser observer census"
   },
   "input_digests": {
-    "grwtsk_lean_inventory": "82a11aebdfdac524fbf95bf0c6510926b92338c21af9c5e35ae22d6016ec76f0",
-    "repository_owned_lean_inventory": "9c8ad95efe37718164ea9594b2c7df5e1b89b923ee1ad92fe162dd8c8babffa0",
-    "docs_markdown_inventory_excluding_generated_count_surfaces": "6b1a20823c8ec4a216f9d8f9a55d18ce1d329fc5a11e0d6436414bb58c334301",
+    "grwtsk_lean_inventory": "b33582684bdd254e416a4bc9da18827ae23a54b8d51ff751f3f951fa24f3ecee",
+    "repository_owned_lean_inventory": "dc563bb4fa27fa68c709d69751d273136c1946d2fe93eefbb37051ef9f7240e8",
+    "docs_markdown_inventory_excluding_generated_count_surfaces": "2eaa66c569d60fc613b76e68c5f195d81b6c2624344278e242f6fe1894ce04fa",
     "object_source_bindings": "dea449625f78dc8c9446efa60ea0d35af5f6bcd059f4df1f3db9d231caa7c0f7",
-    "selected_results": "39d761d6bd1ed199bb41209618a44eeccdda17e59c44293c8fa85d75027e8c06",
+    "selected_results": "67a1ae90005ffefe6b5ceaade7d92b412cb7589d5ec2ad988e8b0cd67627c9f9",
     "source_intake": "96bc1151c6034a3fab91335a4c334234d28566b8d960cb15abc0466ffb3b8bca",
     "legacy_curated_observer_census": "73dbfe4bca8cecaf5706ed698b00c320b31e825f5dfc72616dd7ba90799db068"
   },
@@ -203,5 +350,5 @@
     "Registered object guides and source bindings are curated documentation populations, not whole-library coverage.",
     "The legacy observer census remains historical and is not added to current filesystem populations."
   ],
-  "identity": "7c6cec4b7e40d18c12ad1b9e4b603cc8115a59243687d963238917925ac8cdf0"
+  "identity": "3743264109990cf94e13ee3d734de505bc57f0617f86d57c6974d39427d73d79"
 }

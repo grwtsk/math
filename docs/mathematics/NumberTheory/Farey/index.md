@@ -48,7 +48,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Mod-three Farey return angular channel and discrete spiral](mod-three-return-angular-channel.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Neither source merge, static audit, nor the finite checks below are a Lean/kernel acceptance receipt.
 - [Weighted Farey return: cancellation ledger and conditional limit positivity](weighted-return-balance.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The current source candidate is **not imported by `GRWTSK.lean`**. It is not accepted merely because its proof text has no `sorry`. Lean build, fresh…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

@@ -37,7 +37,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Repeated blocks, true remainders and phase shifts](repeated-blocks.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix real frequency $\alpha$, phase $\xi$, coupling $V$ and energy $E$, integer origin $o$, and natural volumes $N,L,q,r$. Counts retain multiplicity and Dirichlet boundary conditions. Positivity is imposed…
 - [Sturmian phase partitions and count limits](phase-count-limits.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For an irrational frequency $0<\alpha<1$, the literal length $L$ Sturmian coding changes only at the $L+1$ phase points $\{-j\alpha\}$, $0\le j\le L$. Consequently the actual finite Dirichlet eigenvalue count…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

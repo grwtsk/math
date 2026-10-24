@@ -16,7 +16,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Compact polynomial profiles and endpoint regularity](polynomial-profile.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction and theorem selection: grwtsk contributors. Specification synthesis: OpenAI ChatGPT. Lean implementation and independent model review: OpenAI Codex. Local sources are MIT; Mathlib…
+- [Compact polynomial profiles and endpoint regularity](polynomial-profile.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The actual closed power-four zero extension has proved endpoint derivative matching and literal scaled residual formulas. For every A>0, its actual residual-square integral is positive and equals the…
 - [Exponential moments and second-derivative variation](exponential-moments.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For a smooth compactly supported profile `h`, two integrations by parts give
 - [Smooth compact tests separate continuous residuals](separation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The separation module and even-test module are complemented by the pole-variation module. Together they prove eleven theorems and define the point spike and differential variation. Their complete stored family…
 
@@ -31,11 +31,11 @@ No narrower directory is currently registered. Continue to the articles below.
 
 ## Articles at this level
 
-- [Compact polynomial profiles and endpoint regularity](polynomial-profile.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction and theorem selection: grwtsk contributors. Specification synthesis: OpenAI ChatGPT. Lean implementation and independent model review: OpenAI Codex. Local sources are MIT; Mathlib…
+- [Compact polynomial profiles and endpoint regularity](polynomial-profile.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The actual closed power-four zero extension has proved endpoint derivative matching and literal scaled residual formulas. For every A>0, its actual residual-square integral is positive and equals the…
 - [Exponential moments and second-derivative variation](exponential-moments.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For a smooth compactly supported profile `h`, two integrations by parts give
 - [Smooth compact tests separate continuous residuals](separation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The separation module and even-test module are complemented by the pole-variation module. Together they prove eleven theorems and define the point spike and differential variation. Their complete stored family…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

@@ -12,7 +12,7 @@ The study of arrangements and discrete configurations, including their existence
 
 | Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 26 | 0 | 0 | 0 |
+| 27 | 2 | 2 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -20,11 +20,27 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Coverage and discrete quotas](Sequences/coverage-and-quotas.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Coverage.** With natural batches `b n ≥ 1`, define `S₀=0`, `Sₙ₊₁=Sₙ+bₙ`. Service every pinned obligation index in `[Sₙ,Sₙ₊₁)`. Then every index belongs to a service interval. An unbounded clock alone cannot…
+- [Coverage and discrete quotas](Sequences/coverage-and-quotas.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. Positive natural batches cover every obligation index through their exact half-open service intervals. For a fixed finite channel set, maximal-credit service with nonnegative integer quotas of fixed total has…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Current source-description pins only at math commit 1b31ff873827ecf9acdf41b501b21a12b242a504. No fresh kernel replay, transitive axiom audit, or public compiler-observed verification graph has been produced for these bytes. Historical references retain their original paths, bytes and scope.
+
+  </details>
+- [Finite dependency neighborhoods and spectral volume](DirectedGraph/finite-dependency-volume.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A finite upstream dependency neighborhood records each prerequisite once, even when several roots share it. Neighborhoods preserve unions of root sets. A weighted incidence Laplacian defines a configurable…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Targeted Lean elaboration of the added source passed. This is not a whole-library build, transitive imported-source replay, complete axiom audit, graph extraction, or numerical refinement certificate.
+
+  </details>
+
+  **Unresolved premises.** The Lean derivation of positivity of det(I + τ L) from nonnegative incidence weights and τ > 0 remains to be supplied.; The compiler-extraction and numerical-refinement bridges remain separate obligations.
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver and root $r$. Let `rows` be a finite list of keys paired with actual rooted path occurrences. Write $t(p)$ for the complete typed edge trace of an occurrence and form
 - [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For a finite type `A` and `0 < m ≤ \|A\|`, choose uniformly among all ordered partitions with part sizes `q+1` for the first `r` parts and `q` for the others, where `q = \|A\| / m` and `r = \|A\| % m`.…
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix actual before and after parent dictionaries, retaining the complete ordered references from before. Exact agreement of their expanded optional lookups at every old reference preserves the actual decoded…
-- [Compaction and remapping of rooted prefix tables](DirectedGraph/prefix-table-compaction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start with an actual stored rooted prefix-table state satisfying its structural invariant. Compaction derives successful real-row decoding and rooted validity, recovers the actual keyed rooted occurrences, and…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -33,14 +49,26 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Directed Graph](DirectedGraph/index.md)** — 0 immediate children · 20 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md); [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
+1. **[Directed Graph](DirectedGraph/index.md)** — 0 immediate children · 21 unique articles · 1 structured · 1 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Finite dependency neighborhoods and spectral volume](DirectedGraph/finite-dependency-volume.md); [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 2. **[Enumerative combinatorics](enumerative-combinatorics/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of counting combinatorial objects and determining the sequences, formulas and generating functions that describe those counts.
-3. **[Graph theory](graph-theory/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of graphs through their vertices, edges, incidence and adjacency, including structural, extremal and algorithmic questions.
-4. **[Sequences](Sequences/index.md)** — 0 immediate children · 6 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+3. **[Graph theory](graph-theory/index.md)** — 1 immediate children · 1 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. The study of graphs through their vertices, edges, incidence and adjacency, including structural, extremal and algorithmic questions.
+   Unranked previews: [Finite dependency neighborhoods and spectral volume](DirectedGraph/finite-dependency-volume.md).
+4. **[Sequences](Sequences/index.md)** — 0 immediate children · 6 unique articles · 1 structured · 1 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Coverage and discrete quotas](Sequences/coverage-and-quotas.md); [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+## Articles at this level
+
+- [Coverage and discrete quotas](Sequences/coverage-and-quotas.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. Positive natural batches cover every obligation index through their exact half-open service intervals. For a fixed finite channel set, maximal-credit service with nonnegative integer quotas of fixed total has…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Current source-description pins only at math commit 1b31ff873827ecf9acdf41b501b21a12b242a504. No fresh kernel replay, transitive axiom audit, or public compiler-observed verification graph has been produced for these bytes. Historical references retain their original paths, bytes and scope.
+
+  </details>
+
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
@@ -50,7 +78,7 @@ Generated navigation, scores and source syntax inventories do not strengthen the
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
 | Inventory | Count |
 |---|---:|
-| Lean source modules (current regular filesystem files) | 101 |
+| Lean source modules (current regular filesystem files) | 102 |
 | Curated registered object guides | 26 |
 | Curated documented object groups | 2 |
 | Curated primary sources linked | 25 |
