@@ -113,6 +113,26 @@ Remaining unexpanded project imports now include `HigherPrimePowerSource`, `Cano
 
 **Evidence remains SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** Do not promote, merge, force push, dispatch an unapproved executor or use Railway. Retain the staged mathematical proof phases and all no-root-import requirements.
 
+## Import frontier continuation: seven previously unexpanded modules
+
+Read-only source inspection expanded **seven** previously listed frontier modules. Direct project imports and exact current Git blobs:
+
+| Source module (under `GRWTSK.`) | Blob | Direct project imports |
+|---|---|---|
+| `NumberTheory.Chebyshev.HigherPrimePowerSource` | `09f03ceadff5ee82e489d3856cad0161c8a4bbac` | `NumberTheory.Chebyshev.QuadraticIntervals`, `NumberTheory.Chebyshev.HigherPrimePowers`, `Analysis.ErrorBounds.FiniteSquareBudget` |
+| `NumberTheory.Zeta.Riemann.CanonicalTentLedger` | `4268cff7be7f96cb877d9d622c4a09d9afd98376` | `NumberTheory.Chebyshev.CanonicalTentExplicitFormula`, `NumberTheory.Chebyshev.TrivialZeroTentSeries`, `NumberTheory.Zeta.Riemann.PrimePowerExplicitFormulaSource` |
+| `NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt` | `1df05e21d7d7cd5c9988ff843cf0bd0821e2f5b7` | `NumberTheory.ArithmeticFunctions.PrimePowerAtoms` |
+| `NumberTheory.Zeta.Riemann.QuadraticTraceCriterion` | `2dc31b0967cf232a485f2b8a72724925a713b50f` | `Algebra.Polynomial.ConjugateQuartic`, `NumberTheory.Zeta.Riemann.ZeroDefinitions` |
+| `Analysis.ErrorBounds.FiniteResidualTelescope` | `dd122f399d065fea679ead86adb760d177b91026` | none (Mathlib.Tactic) |
+| `NumberTheory.Zeta.Riemann.ArithmeticFeature` | `84540b576ea99ab0a08ccb13dd3073d861598813` | none (Mathlib.Tactic) |
+| `Logic.InformationLoss.FactorizationDecoderUniqueness` | `4c568562742645c0bb1b8ae8d9ef89968a32918a` | `Logic.InformationLoss.FactorizationFiberCompleteness` |
+
+Additional direct Mathlib imports are `Mathlib.NumberTheory.Chebyshev` (HigherPrimePowerSource), `Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt` and `Mathlib.Tactic` (PrimePowerVonMangoldt), `Mathlib.Topology.Order.Basic` (QuadraticTraceCriterion), and `Mathlib.Tactic` for CanonicalTentLedger, FiniteResidualTelescope and ArithmeticFeature.
+
+**New project frontier:** `QuadraticIntervals`, `HigherPrimePowers`, `FiniteSquareBudget`, `CanonicalTentExplicitFormula`, `TrivialZeroTentSeries`, `PrimePowerExplicitFormulaSource`, `PrimePowerAtoms`, `ConjugateQuartic`, and `ZeroDefinitions` and their descendants. This is a partial direct-edge expansion, **not an exhaustive closure, cycle check, or executable topological order**. The repaired `CanonicalSquareTentSixteenGapIntegrability` blob remains `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` (historical superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`); its statements and `Set.Ioi (0:ℝ)` domains are unchanged.
+
+Retain explanatory-only A–H phases, unfinished strict integral and independent Weil/RH mathematical obligations, and **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. No root import/merge, Railway, force push or unauthorized executor dispatch.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
