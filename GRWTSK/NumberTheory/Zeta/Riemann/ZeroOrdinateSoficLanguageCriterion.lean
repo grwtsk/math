@@ -336,4 +336,77 @@ theorem zeta_transcendental_of_critical_sofic_and_rightContexts
     hCritical
 
 
+
+/-! ## Bounded right-context capacity certificates -/
+
+/-- A finite, inspectable continuation-context certificate for one tail:
+there are `n` finite words whose right-continuation behaviors are pairwise
+distinguishable in the selected tail factor language. -/
+def TailRightContextCertificate
+    (trace : ℕ → Bool) (offset n : ℕ) : Prop :=
+  ∃ words : Fin n → List Bool,
+    ∀ i j : Fin n, i ≠ j →
+      ∃ suffix : List Bool,
+        ¬ (HasFiniteBlock (tailTrace trace offset) (words i ++ suffix) ↔
+            HasFiniteBlock (tailTrace trace offset) (words j ++ suffix))
+
+/-- A tail admits an exact finite labeled-graph presentation whose reachable
+right-context capacity is at most the supplied bound. -/
+def TailExactPresentationAtMost
+    (trace : ℕ → Bool) (offset capacity : ℕ) : Prop :=
+  ∃ P : ExactLanguagePresentation Bool
+      (HasFiniteBlock (tailTrace trace offset)),
+    P.stateCapacity ≤ capacity
+
+/-- A certificate of `capacity + 1` pairwise distinguishable right contexts
+rules out every exact presentation whose reachable-subset capacity is at most
+`capacity`.  This is a bounded obstruction; it does not by itself rule out
+larger finite presentations. -/
+theorem no_tail_exactPresentationAtMost_of_contextCertificate
+    (trace : ℕ → Bool) (offset capacity : ℕ)
+    (hcert :
+      TailRightContextCertificate trace offset (capacity + 1)) :
+    ¬ TailExactPresentationAtMost trace offset capacity := by
+  rintro ⟨P, hcapacity⟩
+  rcases hcert with ⟨words, hdistinct⟩
+  have hlower :
+      capacity + 1 ≤ P.stateCapacity :=
+    rightContexts_card_le_exactPresentation
+      P (capacity + 1) words hdistinct
+  omega
+
+/-- Source-bound finite-capacity certificate for every selected zeta zero and
+every finite burn-in.  Unlike `ZetaUnboundedTailContexts`, this fixes one
+capacity bound and therefore gives a finite obstruction only at that bound. -/
+def ZetaTailContextCapacityCertificate
+    (trace : ℂ → ℕ → Bool) (capacity : ℕ) : Prop :=
+  ∀ z, ActualZetaZero z →
+    ∀ offset : ℕ,
+      TailRightContextCertificate (trace z) offset (capacity + 1)
+
+/-- A supplied zeta tail-context certificate at capacity `capacity` rules out
+every exact presentation of every selected zero tail whose reachable-subset
+capacity is at most that bound.  No arithmetic-to-sofic implication and no
+unbounded/non-eventual-sofic conclusion follows from one fixed capacity. -/
+theorem no_bounded_tail_presentation_of_zeta_contextCertificate
+    (trace : ℂ → ℕ → Bool) (capacity : ℕ)
+    (hcert : ZetaTailContextCapacityCertificate trace capacity) :
+    ∀ z, ActualZetaZero z →
+      ∀ offset : ℕ,
+        ¬ TailExactPresentationAtMost (trace z) offset capacity := by
+  intro z hz offset
+  exact no_tail_exactPresentationAtMost_of_contextCertificate
+    (trace z) offset capacity (hcert z hz offset)
+
+/-- The existing unbounded-tail-context supplier yields every bounded capacity
+certificate.  This direction is immediate but useful for finite validation
+targets; the converse is deliberately not packaged here. -/
+theorem zeta_capacityCertificate_of_unboundedTailContexts
+    (trace : ℂ → ℕ → Bool)
+    (hcontexts : ZetaUnboundedTailContexts trace)
+    (capacity : ℕ) :
+    ZetaTailContextCapacityCertificate trace capacity := by
+  intro z hz offset
+  exact hcontexts z hz offset (capacity + 1)
+
 end GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion
