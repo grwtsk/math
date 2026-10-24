@@ -488,4 +488,24 @@ theorem self_adjoint_projection_coercivity_of_interaction
   · exact hfirst
   · exact hsecond
 
+/-- The off-diagonal real pairing is bounded below by the operator norm
+of the bounded interaction. This is a general Cauchy--Schwarz supplier,
+not a smallness theorem for any particular gauge Hamiltonian. -/
+theorem projected_cross_lower_bound_of_operator_norm
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (T : H →L[𝕜] H) (u v : H) :
+    -(‖T‖ * ‖u‖ * ‖v‖) ≤ RCLike.re (inner 𝕜 (T u) v) := by
+  have hre : -(‖inner 𝕜 (T u) v‖) ≤
+      RCLike.re (inner 𝕜 (T u) v) := by
+    exact neg_le.mpr (RCLike.re_le_norm _)
+  have hinner : ‖inner 𝕜 (T u) v‖ ≤ ‖T u‖ * ‖v‖ :=
+    norm_inner_le_norm _ _
+  have hop : ‖T u‖ ≤ ‖T‖ * ‖u‖ := T.le_opNorm u
+  have hprod : ‖T u‖ * ‖v‖ ≤ (‖T‖ * ‖u‖) * ‖v‖ :=
+    mul_le_mul_of_nonneg_right hop (norm_nonneg _)
+  have hbound : ‖inner 𝕜 (T u) v‖ ≤ ‖T‖ * ‖u‖ * ‖v‖ :=
+    hinner.trans hprod
+  linarith
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
