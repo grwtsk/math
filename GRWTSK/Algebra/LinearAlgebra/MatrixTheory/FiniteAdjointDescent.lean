@@ -266,4 +266,26 @@ theorem euclideanOperatorMatrix_intertwines {n : ℕ}
     _ = J (euclideanEncode v) := by
       simp [euclideanOperatorMatrix]
 
+
+/-- Applying Mathlib's Euclidean matrix/linear-map equivalence to the
+actual coordinate matrix returns the original continuous map's linear
+part. This equality is not an assumed representation interface. -/
+theorem euclideanOperatorMatrix_toLpLin {n : ℕ}
+    (J : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n)) :
+    Matrix.toLpLin 2 2 (euclideanOperatorMatrix J) = J.toLinearMap := by
+  simp [euclideanOperatorMatrix]
+
+/-- The concrete Euclidean matrix and its original continuous real-linear
+endomorphism have exactly the same determinant in every finite dimension. -/
+theorem euclideanOperatorMatrix_det {n : ℕ}
+    (J : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n)) :
+    (euclideanOperatorMatrix J).det = J.det := by
+  calc
+    (euclideanOperatorMatrix J).det =
+        (Matrix.toLpLin 2 2 (euclideanOperatorMatrix J)).det :=
+      (LinearMap.det_toLpLin (2 : ℝ≥0∞) (euclideanOperatorMatrix J)).symm
+    _ = J.det := by
+      rw [euclideanOperatorMatrix_toLpLin]
+      rfl
+
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
