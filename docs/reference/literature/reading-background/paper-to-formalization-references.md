@@ -6864,7 +6864,7 @@ provenance remains historical; this entry records the exact checked scope.
 
 ## Case STRICT-WEIGHTED-RATIO-BRIDGE-20261023 — pivot separation with explicit integral premises
 
-**Paper/reference boundary.** This is a 2026 repository-derived algebraic reduction with formalization assistance by OpenAI, not a theorem imported from a particular external paper. External paper title, authors, publication year/version, DOI/arXiv, theorem number: **NOT APPLICABLE** for this new bridge. Phase retrieval, spectral reconstruction, 3D Kakeya and formal Sidon counterexamples are **methodological analogies only**; no historical influence, hypothesis transfer or paper-to-Lean theorem port is claimed.
+**Paper/reference boundary.** This is a 2026 repository-derived algebraic reduction with local attribution to grwtsk contributors, not a theorem imported from a particular external paper. External paper title, authors, publication year/version, DOI/arXiv, theorem number: **NOT APPLICABLE** for this new bridge. Phase retrieval, spectral reconstruction, 3D Kakeya and formal Sidon counterexamples are **methodological analogies only**; no historical influence, hypothesis transfer or paper-to-Lean theorem port is claimed.
 
 **Exact statements and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge.strict_ratio_of_pivot_gaps` has arbitrary real `oLeft,oRight,rLeft,rRight,pivot`, positive `oLeft,oRight`, and the **two strict assumptions** `rRight < pivot*oRight`, `pivot*oLeft < rLeft`; it derives `rRight/oRight < rLeft/oLeft`. `cofactorZero_ne_zero_of_stage_pivot_gaps` instantiates this algebra with the actual canonical stage-three/four `realOrdinaryMoment` and `realMultiplicativeMoment` and imported ordinary-moment positivity, and concludes `cofactorZero ≠ 0` **conditional on those exact two strict pivot gaps**. Neither strict positive integral gap is proved from the support in this leaf. There is no analytic Weil diagonal, test-class admissibility, density or RH conclusion.
 
@@ -6875,7 +6875,7 @@ provenance remains historical; this entry records the exact checked scope.
 
 ## Case BOMBIERI-SIXTEEN-PIVOT-20261023 — pointwise source support separation
 
-**Paper-source boundary:** 2026 repository-derived formal source (formalization assistance OpenAI), not a theorem imported from a particular external paper. External title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Weighted-average and phase-retrieval parallels are methodological analogies, not historical influence.
+**Paper-source boundary:** 2026 repository-derived formal source (local attribution: grwtsk contributors), not a theorem imported from a particular external paper. External title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Weighted-average and phase-retrieval parallels are methodological analogies, not historical influence.
 
 **Exact construction and hypotheses:** The actual canonical `canonicalTentReal 1` has strict positive interior on `Set.Ioo 9 16`; `canonicalTentReal 2` has strict positive interior on `Set.Ioo 16 25`. In namespace `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot`, `sixteenPivot = 1/16`; `stageThreeSixteenGap x = canonicalTentReal 1 x / x - sixteenPivot * canonicalTentReal 1 x`; `stageFourSixteenGap x = sixteenPivot * canonicalTentReal 2 x - canonicalTentReal 2 x / x`. `stageThreeSixteenGap_pos` and `stageFourSixteenGap_pos` claim **strict pointwise** positivity on the stated open interiors, using actual tent positivity and reciprocal monotonicity. **NOT PROVED in this leaf:** integrability/whole positive domain nonnegativity, strict positivity of the positive-half-line integrals, the exact pivot moment gaps, unconditional cofactorZero sign, analytic Weil transport or RH. The mass/integral step remains a mathematically independent obligation.
 
@@ -6886,7 +6886,7 @@ provenance remains historical; this entry records the exact checked scope.
 
 ## Case BOMBIERI-SIXTEEN-GAPS-INTEGRABLE-20261023 — nonnegative measurable support step
 
-**Bibliography/relationship:** Repository-derived 2026 formal source with OpenAI formalization assistance. No external paper theorem, printed authors/year/version, DOI/arXiv/theorem locator is imported (**NOT APPLICABLE**). Related weighted-integral/phase retrieval research remains analogy only; no historical influence inferred.
+**Bibliography/relationship:** Repository-derived 2026 formal source with local attribution to grwtsk contributors. No external paper theorem, printed authors/year/version, DOI/arXiv/theorem locator is imported (**NOT APPLICABLE**). Related weighted-integral/phase retrieval research remains analogy only; no historical influence inferred.
 
 **Exact source and mathematical hypotheses:** For actual canonical tents at indices 1 (stage three) and 2 (stage four), source-defined `stageThreeSixteenGap` and `stageFourSixteenGap` at reciprocal pivot `1/16`, `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability.stageThreeSixteenGap_nonnegative` and `stageFourSixteenGap_nonnegative` assert pointwise nonnegativity **on `Set.Ioi (0:ℝ)`**. `stageThreeSixteenGap_integrableOn` and `stageFourSixteenGap_integrableOn` use the existing actual canonical-tent and reciprocal integrability suppliers. These do **not** prove strict positive integrals, strict pivot inequalities or unconditional `cofactorZero ≠ 0`; those remain separate obligations.
 
@@ -7050,7 +7050,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 All seventeen unresolved specifications are retained verbatim in JSON and summarized by taxonomy below. Missing source bindings, prime estimates, boundary geometry/zero-to-class/vanishing, exceptional representations/automorphic transfers, KL geometry/signed realization, arithmetic centering and noncircular RH/GRH suppliers remain open.
 ## Case SIXTEEN-GAP-STRICT-INTEGRALS-20261023 — positive-mass analytic candidate
 
-**Provenance:** Repository-derived 2026 analysis with OpenAI formalization assistance, not a port of a separately identified external paper. External paper title/byline/year/version/DOI/arXiv/theorem locator NOT APPLICABLE. Analogies to weighted-mean order and phase retrieval convey no historical influence.
+**Provenance:** Repository-derived 2026 analysis with local attribution to grwtsk contributors, not a port of a separately identified external paper. External paper title/byline/year/version/DOI/arXiv/theorem locator NOT APPLICABLE. Analogies to weighted-mean order and phase retrieval convey no historical influence.
 
 **Exact theorem and hypotheses:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegralPositive.stageThreeSixteenGap_integral_pos` and `stageFourSixteenGap_integral_pos` assert strict positivity of actual positive-half-line Lebesgue integrals of `stageThreeSixteenGap` and `stageFourSixteenGap`. Source proof uses previously authored nonnegative/integrable gap lemmas, strict positivity on open intervals (9,16) and (16,25), and positive Lebesgue measure of those intervals via `setIntegral_pos_iff_support_of_nonneg_ae`. **No new hypotheses on arbitrary numerical approximations.** Downstream conversion to strict pivot inequalities, normalized moment-ratio order, unconditional `cofactorZero ≠ 0`, and exceptional weight classification remain separate source obligations. No Weil/RH claims.
 
@@ -7075,7 +7075,7 @@ All seventeen unresolved specifications are retained verbatim in JSON and summar
 
 ## Case SIXTEEN-MOMENT-GAPS-20261023 — remove strict-ratio premise using actual integrals
 
-**Source/attribution boundary.** This is repository-derived 2026 mathematics with OpenAI formalization assistance, not a theorem ported from a separately identified publication. External paper title/byline/year/version/DOI/arXiv/theorem locator: NOT APPLICABLE. Weighted-average and Bombieri/Guinand–Weil comparisons remain methodological context; historical influence and analytic Weil transport are not inferred.
+**Source/attribution boundary.** This is repository-derived 2026 mathematics with local attribution to grwtsk contributors, not a theorem ported from a separately identified publication. External paper title/byline/year/version/DOI/arXiv/theorem locator: NOT APPLICABLE. Weighted-average and Bombieri/Guinand–Weil comparisons remain methodological context; historical influence and analytic Weil transport are not inferred.
 
 **Exact mathematical method and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps.stageThree_multiplicative_gt_sixteen_pivot` rewrites the previously authored strictly positive Lebesgue integral of the actual gap `canonicalTentReal 1 x / x - (1/16)*canonicalTentReal 1 x` on `Set.Ioi 0` to give `(1/16)*realOrdinaryMoment 1 < realMultiplicativeMoment 1`. `stageFour_multiplicative_lt_sixteen_pivot` similarly rewrites the strict integral of `(1/16)*canonicalTentReal 2 x - canonicalTentReal 2 x / x` to yield `realMultiplicativeMoment 2 < (1/16)*realOrdinaryMoment 2`. `cofactorZero_ne_zero_from_sixteen_support` applies the existing source ratio bridge to these strict inequalities to conclude `cofactorZero ≠ 0` with **no explicit ratio assumption in its statement**. All imported positive-integral and tent-support source candidates remain unverified, so this is not yet a kernel-accepted unconditional theorem. No Weil positivity, RH, source-density or admissible-test-class conclusion follows.
 
@@ -7086,7 +7086,7 @@ All seventeen unresolved specifications are retained verbatim in JSON and summar
 
 ## Case ACTUAL-BOMBIERI-EXCEPTIONAL-WEIGHT-20261023 — source-level removal of cofactor premise
 
-**Reference and authorship:** 2026 repository-derived finite coefficient mathematics with OpenAI formalization assistance. No external paper result was imported for this increment; external title, byline, publication year/version, DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri/Guinand–Weil comparisons remain analogy and analytic context, not proof of historical influence or classical transport.
+**Reference and authorship:** 2026 repository-derived finite coefficient mathematics with local attribution to grwtsk contributors. No external paper result was imported for this increment; external title, byline, publication year/version, DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri/Guinand–Weil comparisons remain analogy and analytic context, not proof of historical influence or classical transport.
 
 **Exact theorem and dependencies:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentActualExceptionalWeight.exceptionalWeight` defines the actual complex mixed weight `-cofactorTwo/cofactorZero`. `actual_mixed_weight_not_injective_iff` asserts for every weight:ℂ that the augmented profile built from the genuine two Bombieri moment rows and `mixedCoordinate weight` is noninjective exactly when `weight=exceptionalWeight`. This final statement has **no explicit cofactorZero≠0 premise** because it imports the prior `cofactorZero_ne_zero_from_sixteen_support` source candidate, itself depending on strict positive pivot-16 integral source lemmas, and the earlier conditional `exceptional_weight_iff`. None of these imported source leaves has yet received a kernel acceptance receipt. The scope is the three canonical-square-tent coefficients, not arbitrary test functions, classical Weil diagonal, admissibility, positivity, density or RH.
 
@@ -7148,7 +7148,7 @@ evidence to the existing B2 source record without broadening its premises.
 
 ## Case BOMBIERI-EXCEPTIONAL-WEIGHT-NONZERO-20261023 — genuine unmixed control
 
-**Source identity:** 2026 repository-derived formal mathematics with OpenAI formalization assistance; no particular external paper theorem imported. External paper title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri and Guinand–Weil are contextual analogies only, not historical influence or verified analytic transport.
+**Source identity:** 2026 repository-derived formal mathematics with local attribution to grwtsk contributors; no particular external paper theorem imported. External paper title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri and Guinand–Weil are contextual analogies only, not historical influence or verified analytic transport.
 
 **Exact hypotheses and declarations:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightNonzero.exceptionalWeight_ne_zero` concludes that the source exceptional weight `-cofactorTwo/cofactorZero` is not zero, by importing `cofactorTwo_ne_zero` and the pivot-16 integral-chain **source candidate** `cofactorZero_ne_zero_from_sixteen_support`. `unmixed_third_coordinate_injective` then states injectivity of `augmentedProfile bombieriMomentProfile (mixedCoordinate 0)`, by invoking the already-authored exact exceptional-weight classification. Neither declaration introduces an external analytic observable, continuous decoder, classical Weil positivity or RH conclusion. Both depend on source-only transitive proof candidates.
 
@@ -7307,7 +7307,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 All seventeen unresolved specifications remain unchanged in the structured record. Source-specific geometric, arithmetic, representation-theoretic and KL suppliers retain their exact version and hypothesis gaps.
 ## Case BOMBIERI-REAL-EXCEPTIONAL-SIGN-20261023 — strict sign from two determinants
 
-**Bibliographic boundary.** This 2026 formal source is repository-derived with OpenAI formalization assistance, not an external paper theorem port. External paper title/byline/year/version/DOI/arXiv/theorem locator: **NOT APPLICABLE**. Bombieri, Guinand–Weil and phase-retrieval comparisons are mathematical context only, not historical influence.
+**Bibliographic boundary.** This 2026 formal source is repository-derived with local attribution to grwtsk contributors, not an external paper theorem port. External paper title/byline/year/version/DOI/arXiv/theorem locator: **NOT APPLICABLE**. Bombieri, Guinand–Weil and phase-retrieval comparisons are mathematical context only, not historical influence.
 
 **Exact mathematics.** For the actual canonical-tent real moment rows, define `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightSign.realFirstCofactor := realOrdinaryMoment 2 * realMultiplicativeMoment 1 - realOrdinaryMoment 1 * realMultiplicativeMoment 2`. `realFirstCofactor_pos` derives its positivity from the existing strict pivot-16 stage-three/four moment inequalities, positivity of the ordinary moments, and `cofactorZero_pos_of_ratio_order`. Define `realExceptionalWeight := -(twoTentMomentDeterminant / realFirstCofactor)`; `realExceptionalWeight_neg` derives strict negativity from `twoTentMomentDeterminant_pos` and `realFirstCofactor_pos`. These are SOURCE CANDIDATES dependent on the unaccepted pivot-integral chain. **Unresolved:** exact Complex-cast identification of realExceptionalWeight with the previously defined complex exceptionalWeight, all Lean/kernel/axiom checks, and independent analytic Weil/spectral connections. No RH conclusion.
 
@@ -7391,7 +7391,7 @@ unrelated source-only statuses.
 
 ## Case BOMBIERI-EXCEPTIONAL-CAST-20261023 — exact complex-real identification
 
-**Source/reference boundary.** Repository-derived 2026 formal source with OpenAI formalization assistance, not a newly imported external-paper theorem. External title, authors, year/version, DOI/arXiv and theorem location: **NOT APPLICABLE**. Bombieri/Guinand–Weil parallels are contextual, not proof of historical influence or analytic transport.
+**Source/reference boundary.** Repository-derived 2026 formal source with local attribution to grwtsk contributors, not a newly imported external-paper theorem. External title, authors, year/version, DOI/arXiv and theorem location: **NOT APPLICABLE**. Bombieri/Guinand–Weil parallels are contextual, not proof of historical influence or analytic transport.
 
 **Exact method and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightCast.cofactorZero_eq_realFirstCofactor` identifies complex `cofactorZero` with the cast of the exact real determinant `O₂R₁−O₁R₂`. `cofactorTwo_eq_realDeterminant` reuses the existing cofactor-two equality. `exceptionalWeight_eq_realExceptionalWeight` identifies the previously defined complex ratio `-cofactorTwo/cofactorZero` with the complex cast of `-(twoTentMomentDeterminant/realFirstCofactor)`. No additional numerical estimate, admissible Weil test class, density, positivity or RH is asserted. Real negativity is a separate earlier source candidate, not kernel evidence for this leaf.
 
@@ -7608,7 +7608,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 
 ## Case EXCEPTIONAL-WEIGHT-REAL-AXIS-20261023 — sign coordinates
 
-**Attribution boundary.** Repository-derived finite-dimensional 2026 mathematical source with OpenAI formalization assistance. No separate external paper theorem was ported, so external bibliographic title/authors/year/version/DOI/arXiv/theorem numbers are NOT APPLICABLE. Weil/phase-retrieval analogies are not imported results or claimed historical influence.
+**Attribution boundary.** Repository-derived finite-dimensional 2026 mathematical source with local attribution to grwtsk contributors. No separate external paper theorem was ported, so external bibliographic title/authors/year/version/DOI/arXiv/theorem numbers are NOT APPLICABLE. Weil/phase-retrieval analogies are not imported results or claimed historical influence.
 
 **Exact claims and support.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightRealAxis.exceptionalWeight_im_eq_zero` states `exceptionalWeight.im = 0`, and `exceptionalWeight_re_neg` states `exceptionalWeight.re < 0`. Both are source candidates derived from the exact `exceptionalWeight_eq_realExceptionalWeight` cast result; the latter imports `realExceptionalWeight_neg` and all strict pivot-16 integral dependencies. No complex total ordering is introduced. Source supports only three-tent coefficient/moment rank, not an independent analytic observable, Weil positivity, density, or RH.
 
@@ -7712,7 +7712,7 @@ closure, without promoting any unresolved premise or separate new module.
 
 ## Case BOMBIERI-RIGHT-HALF-PLANE-20261023 — nonnegative-weight recovery
 
-**Attribution:** Repository-derived 2026 finite-dimensional coefficient theorem candidate with OpenAI formalization assistance. No external paper theorem is imported (paper title/authors/year/version/DOI/arXiv/theorem number NOT APPLICABLE). Inverse-measurement and Weil analogies are contextual, not historical influence or verified transport.
+**Attribution:** Repository-derived 2026 finite-dimensional coefficient theorem candidate with local attribution to grwtsk contributors. No external paper theorem is imported (paper title/authors/year/version/DOI/arXiv/theorem number NOT APPLICABLE). Inverse-measurement and Weil analogies are contextual, not historical influence or verified transport.
 
 **Declarations/hypotheses:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentNonnegativeWeightRecovery.right_half_plane_injective` asserts injectivity of `augmentedProfile bombieriMomentProfile (mixedCoordinate weight)` whenever `weight:ℂ` has `0 ≤ weight.re`. `nonnegative_real_weight_injective` specializes to `weight:ℝ` with `0 ≤ weight`. The proof candidates use earlier local source claims that the *only* exceptional weight has negative real part. Actual canonical-square-tent three-coefficient source and original two moments only. No new analytic measurement, classical Weil criterion, admissibility/density/positivity or RH claim.
 
@@ -7979,7 +7979,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 **Manuscript scope:** actual Riemann poles complement the earlier canonical nontrivial-zero detector. They do not identify the boundary outline or exceptional-group versions with an actual high-rank completed source. Automorphic transfers, all extra-factor divisors, geometric zero-to-class and vanishing suppliers remain missing. All seventeen unresolved specifications stay unchanged and version-bound. No historical influence, understanding date or new reading event is inferred.
 ## Case SIXTEEN-GAP-BRANCH-REPAIR-20261023 — explicit complement in support argument
 
-**Source provenance:** Repository-derived 2026 Lean proof robustness change with OpenAI assistance, no externally imported paper theorem (bibliographic locator/title/authors/year/version/DOI/arXiv NOT APPLICABLE). Prior classical Weil and phase-retrieval comparisons are contextual analogies, not source provenance.
+**Source provenance:** Repository-derived 2026 Lean proof robustness change with local attribution to grwtsk contributors, no externally imported paper theorem (bibliographic locator/title/authors/year/version/DOI/arXiv NOT APPLICABLE). Prior classical Weil and phase-retrieval comparisons are contextual analogies, not source provenance.
 
 **Precise change and unchanged hypotheses:** Within `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability.stageThreeSixteenGap_nonnegative` and `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability.stageFourSixteenGap_nonnegative`, the proof branches for points outside the canonical support now pass `le_of_not_gt h` explicitly to `linarith`, instead of assuming the by-cases complement is automatically propagated. Strict mathematical assumptions and theorem statements are unchanged: pointwise gap nonnegativity only on `Set.Ioi (0:ℝ)` for actual stage-three/four tents. The integrable and positive-integral suppliers remain separate. No added Weil admissibility or RH conclusions.
 
@@ -7987,6 +7987,26 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 
 **Evidence classes:** Imported math: previous local support lemmas/Mathlib tactics, not external paper; kernel verified: NONE; source candidate: proof repair, not a new theorem; conditional chain: existing strict integral dependency; finite evidence: none; analogy: none needed; unresolved: actual Lean compiler, fresh kernel, complete transitive axioms. [Verification #1165](https://github.com/grwtsk/math/issues/1165) pins Lean 4.33.0 and Mathlib db584cd6d46c92f209a44c0f1c829460d327499d with replay commands. **SOURCE_ONLY / BLOB_CONFIRMED / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**; receipts only in grwtsk/noeaaeue; no root import.
 
+
+
+**Active source-header attribution update (2026-10-23).** Current local header attribution is exactly `grwtsk contributors` for the following twelve canonical-square-tent leaves. The Git identities recorded above are HISTORICAL proof-source pins and are not rewritten or interpreted as the newly edited contents. These metadata-only changes preserve all theorem statements, support domains, analytical gaps, SOURCE_ONLY/NOT_RUN limits and no-merge/no-root-promotion gates. The corresponding current file blobs, read from GitHub after the header edit, are:
+
+| Module suffix | Current source Git blob |
+|---|---|
+| `CanonicalSquareTentSixteenPivot` | `a43ff15fae6628b6f57324576d7b4aed4c0b6a25` |
+| `CanonicalSquareTentSixteenGapIntegrability` | `c822176ce651c91abf23b2860e8120566681d346` |
+| `CanonicalSquareTentSixteenGapIntegralPositive` | `2307c891dbac3423ff70f1f1b53920948d254153` |
+| `CanonicalSquareTentSixteenMomentGaps` | `e606478e577366a8cd775fa6ef1ef4119a59f5a7` |
+| `CanonicalSquareTentStrictRatioBridge` | `eaf691ebf79f7b8ef6697b1d2a5ad30ebf48caf7` |
+| `CanonicalSquareTentCofactorZeroSign` | `d9ddb0482ab956012ff8c59659a0f67a283f862d` |
+| `CanonicalSquareTentActualExceptionalWeight` | `af680caf73f86e89c7ecbb9501423c6aa41972bb` |
+| `CanonicalSquareTentExceptionalWeightNonzero` | `2688c40afbac6b8dcac0f0e3675357190152ab18` |
+| `CanonicalSquareTentExceptionalWeightSign` | `bfa97b086ba665da983b2e379536ae0d597b0002` |
+| `CanonicalSquareTentExceptionalWeightCast` | `0abb0b5d4ca80f9ab51dfc48f026a85f1c72bde5` |
+| `CanonicalSquareTentExceptionalWeightRealAxis` | `d26a0518c87a9f5cc9d1b5c1fbfe87fc2168feff` |
+| `CanonicalSquareTentNonnegativeWeightRecovery` | `ebb16113ff341a473b49e6d5d12c77589a64bc90` |
+
+Actual build and independent kernel validation are **NOT_RUN** for these edited blobs, even where historical issues pin earlier candidates. Upstream authors, original paper attribution and licensing remain unmodified.
 
 ## Tenth implementation pass for the seven unpublished research ideas
 
@@ -10166,3 +10186,404 @@ The queued commands include direct `lake env lean`, target
 Actual verification state:
 **COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
 TRANSITIVE_AXIOMS NOT_RUN / external receipt unavailable**.
+
+
+## Precision clarification — BaseSpecialization map, local bylines, and paper locators — 2026-10-23
+
+This clarification **supersedes any earlier shorthand wording in the affected
+spectral-cover paragraphs** without changing their exact historical
+commit/blob pins, conditional suppliers, verification limits, or unresolved
+mathematics. The external paper bibliography remains consolidated in
+[Case HEAT-SOFIC-SPECTRAL-PAPER-PROVENANCE-REFRESH-20261023](#case-heat-sofic-spectral-paper-provenance-refresh-20261023).
+
+### BaseSpecialization is a supplied map, not an injective embedding theorem
+
+Historical source refinement remains
+`4a80cc59e3fe0ca5b6097106b0d90e045c3f5729`, with the recorded source blob
+`f9d009a30ac77b93f72bf38604888eb73544de16`; the later source snapshot
+retaining these declarations has blob
+`8210e2055447ebbe482a7122d21ee09177c3b1c0`.
+No existing pin is replaced.
+
+The literal structure is
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`.
+Its field
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.embed`
+is a **supplied map**
+from the base zero-object type to one generalized zero-object type.
+**Injectivity of this map is neither assumed by the structure nor proved by the
+current source.** The required structure fields are instead:
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.mapsZero`:
+  a base zero is sent to a generalized zero;
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.reflectsCritical`:
+  generalized criticality at the supplied image point reflects back to base
+  criticality.
+
+The reverse implication is proved by the literal declaration
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization`.
+The conditional equivalence is
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_member_specialization`.
+Neither declaration consumes or derives
+`Function.Injective
+  GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.embed`.
+
+For the actual-zeta wrapper, the corresponding literal declarations are:
+
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate`.
+
+The first source integration remains
+`13d3e49454c23f825ce730be569856daea2cb3e4`, blob
+`0c69c768eca979698ece63c39ba0b9a50a33ba3a`; the right-context composition
+remains `e84b026523fbac69b571c5ef24423a18a853cd7c`, blob
+`3a0cc6634dad24cb2a7555d4ee4181d6c54ab1fd`.
+
+### Actual local source-snapshot attribution/year
+
+These local source headers are repository attribution, **not external paper
+bylines**. Local attribution is displayed as `grwtsk contributors`; historical
+source identities retain the display-redaction qualification above:
+
+- `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`: year **2026**,
+  “Copyright (c) 2026 grwtsk contributors” and “Formalization assistance:
+  OpenAI.” No individual mathematical-direction byline is stated in that file.
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`: year **2026**,
+  “Copyright (c) 2026 grwtsk contributors,” “Mathematical direction:
+  grwtsk contributors,” and “Formalization assistance: OpenAI.”
+
+### Literal identifiers replacing abbreviated names in the affected provenance
+
+Where earlier paragraphs used ellipses or “prefix above” shorthand, the
+relevant literal identifiers are:
+
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.twoMoment_corrected_zero_collision`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.moment_only_history_collision`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_left_inverse_of_moment_only_refinement_history`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.separating_readout_not_from_moment_only_history`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_lossless_graph_cover_from_moment_only_history`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_source_decoder_from_bombieri_huffman_packets`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.reachableEndStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.mem_reachableEndStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_append`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_split_append`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_append_iff_endStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_context_iff_of_same_endStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.UnboundedRightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficFactorLanguage_of_unboundedRightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficTrace_of_unboundedRightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_eventuallySoficTrace_of_all_tail_rightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_unbounded_rightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_all_tail_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaUnboundedTailContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_eventual_sofic_of_zeta_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventualSuppliers_of_zeta_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_rational_sofic_and_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_transcendental_of_critical_sofic_and_rightContexts`.
+
+### Paper method/theorem locators: verified versus unavailable
+
+Only source-verified locators are asserted:
+
+- **Enrico Bombieri, _Problems of the Millennium: the Riemann Hypothesis_**:
+  the relevant Weil/moment discussion is verified in the existing source audit
+  at **§V, printed pp. 8--9**.
+- **David A. Huffman, _A Method for the Construction of Minimum-Redundancy
+  Codes_**: verified bibliographic article pages **1098--1101**; a finer
+  numbered theorem/section locator for the construction is **UNAVAILABLE in
+  the current source audit**.
+- **Brad Rodgers and Terence Tao, _The De Bruijn--Newman constant is
+  non-negative_**: exact theorem/section/page locator for the particular
+  methodological comparison used here is **UNAVAILABLE in the current source
+  audit**. The paper-level theorem/method attribution remains as previously
+  recorded.
+- **Enrico Bombieri, _Remarks on Weil's quadratic functional in the theory of
+  prime numbers, I_**: the exact section/page corresponding to the reduced
+  two-moment extraction is **UNAVAILABLE in the current source audit**; no
+  finer paper-to-Lean correspondence is asserted.
+- **OpenAI, _The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+  Re(s)>7/8_**: exact paper section/page locator is **UNAVAILABLE in the
+  current source audit**. The already recorded formal-source locator
+  `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` is retained as a formal
+  declaration identity, not converted into an invented paper page.
+- **Benjamin Weiss; Nataša Jonoska; Justin Cai and Rafael Frongillo**:
+  bibliographic article/page ranges remain as recorded, but exact
+  section/theorem locators for the specific finite-language/right-context
+  comparison are **UNAVAILABLE in the current source audit**.
+- **John Myhill and Anil Nerode**: the recorded whole-source page ranges remain
+  bibliographic context; an exact internal theorem/page correspondence to the
+  locally proved reachable-end-state bound is **UNAVAILABLE in the current
+  source audit**.
+
+For `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`
+and the repository-derived zeta spectral transport composition, an external
+paper theorem/section/page locator is **NOT APPLICABLE**: these are local typed
+interfaces, not direct translations of an external theorem.
+
+### Classification and verification limits retained
+
+- **Imported mathematics:** unchanged from the earlier entries.
+- **Kernel-verified bridges:** no new kernel-verified bridge is created by this
+  documentation clarification.
+- **Source proof candidates:** unchanged; the local map/transport/right-context
+  declarations remain source candidates unless covered by an exact existing
+  receipt.
+- **Conditional interfaces:** the generalized spectral-cover family,
+  `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`,
+  actual zeta dynamic spectral process, arithmetic-to-eventual-sofic
+  classifications, unbounded tail contexts, and critical-line placement remain
+  explicit supplied hypotheses.
+- **Finite evidence:** unchanged and not promoted to analytic evidence.
+- **Analogies:** heat/codec, calculus-history, and automata comparisons remain
+  analogies/method background only; no historical influence is inferred.
+- **Unresolved premises:** all previously listed concrete spectral, arithmetic,
+  sofic, Weil, and 7/8-to-3/4 analytic bridges remain unresolved.
+
+Existing operational validation queues and receipts remain outside
+`grwtsk/math`. This clarification does not convert queued requests or source
+inspection into execution evidence. The affected source remains subject to the
+previously recorded **NOT_RUN / pending compilation, fresh kernel checking, and
+transitive axiom audit** limits wherever no exact executed receipt has been
+recorded.
+
+
+## Case FINITE-SOFIC-STATE-CAPACITY-20261023
+
+**Paper/method context:** John Myhill, *Finite Automata and the
+Representation of Events*, WADC Technical Report 57-624 (1957);
+Anil Nerode, *Linear Automaton Transformations*, *Proceedings of
+the American Mathematical Society* 9 (1958), 541–544, stable DOI
+[10.1090/S0002-9939-1958-0135681-9](https://doi.org/10.1090/S0002-9939-1958-0135681-9).
+**Exact method compared:** finite-state languages admit at most
+finitely many distinct right-continuation behaviors.
+No published theorem is imported directly into the Lean source.
+The locally authored one-direction proof uses the reachable-endpoint
+subset signature of a finite nondeterministic labeled graph and
+Mathlib's finite-type pigeonhole inequality; it is not an
+automaton-minimization algorithm, the complete Myhill--Nerode
+equivalence, or a theorem that a selected zeta-zero trace is sofic
+or non-sofic. No historical influence is inferred.
+
+**Exact mathematical hypotheses and conclusions.** For an actual
+\`LabeledGraph State Alphabet\` with \`[Fintype State]\`, and
+\`words : Fin n → List Alphabet\`, require:
+for any indices \`i ≠ j\`, there exists a finite \`suffix\`
+such that **membership of the concatenated word in the full
+graph language differs**. Then the number of distinguished
+words satisfies
+\`n ≤ Fintype.card (Finset State)\`. The exact presentation
+variant requires a separate \`ExactLanguagePresentation\` equating
+the **entire source word language** with the graph language;
+its conclusion is \`n ≤ P.stateCapacity\`.
+\`stateCapacity\` explicitly obtains \`Fintype P.State\`
+from \`P.finiteState\`, avoiding a source-level typeclass lookup
+assumption in the theorem statement.
+The existing unbounded-right-context no-sofic proof now uses
+these bounded estimates at \`n = P.stateCapacity + 1\`.
+A selected spectral process needs a separately supplied
+\`ExactLanguageAt\`; mere finite graph path admission is inadequate.
+
+**Exact fully qualified local declarations and SHA identity.**
+
+1. \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation.stateCapacity\`,
+   \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_graphLanguage\`,
+   \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_exactPresentation\`,
+   and the refactored
+   \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficFactorLanguage_of_unboundedRightContexts\`.
+   Module \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
+   first source-integration commit
+   [5e940df90629e9565268f80249e3ccc6d5390bd0](https://github.com/grwtsk/math/commit/5e940df90629e9565268f80249e3ccc6d5390bd0),
+   **latest source repair commit**
+   [84637e2b37fcd3ff018d01247337e223d7386855](https://github.com/grwtsk/math/commit/84637e2b37fcd3ff018d01247337e223d7386855),
+   exact current Git blob **6b28280b98527301af190f5c50696b9edcf0e05f**.
+   Intermediate `ee3b050b81482bcc944ecc316995d2ec54df7bd2`
+   had prior blob `82fc612cce62fb1eabf09b7c737bc8a54705d939`.
+   The graph-bound source now names `[Fintype State] [DecidableEq State]`
+   explicitly; presentation capacity internally uses classical
+   decidable equality plus `P.finiteState`.
+2. \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le\`,
+   module \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
+   initial integration
+   [92277b5da59fd0e28c52ed4015362c8b39579d24](https://github.com/grwtsk/math/commit/92277b5da59fd0e28c52ed4015362c8b39579d24),
+   revised for the explicit capacity field in
+   [e82b61a318cee9245b7533c08d4f582180991b82](https://github.com/grwtsk/math/commit/e82b61a318cee9245b7533c08d4f582180991b82),
+   current Git blob **1d6ef4738af19edebd1d85e07f944ee4937a9001**.
+3. Zeta conditional consumer remains
+   \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion\`,
+   source blob **f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7**,
+   unchanged by this increment.
+
+**Classifications:** Imported exact external theorems: **none**;
+kernel-verified bridges: **none claimed**;
+source proof candidate: finite right-context bound and named
+finite presentation capacity; conditional interface: any
+exact spectral graph-language identification; finite evidence:
+independent Python checks on all 256 two-state binary edge-relations
+with 246,016 append/language comparisons and 228,563 signature
+context comparisons (**PASS**, not Lean); historical parallel:
+Myhill/Nerode one-direction continuation concept (**ANALOGY / METHOD
+COMPARISON**); unresolved premises: actual zeta source operator and
+trace, arithmetic-to-sofic classification, non-eventual-soficity
+certificates, critical-line placement, and all cofinal 7/8→3/4
+analytic stage estimates. Do not infer irrationality or
+transcendence of actual zero heights from the bounded theorem.
+
+**Verification, commands and actual results:**
+source readback and direct no-\`sorry\`/\`admit\`/\`axiom\` text scan
+are source-only; the independent finite graph enumeration is not
+kernel evidence. Lean \`leanprover/lean4:v4.33.0\`, Mathlib
+\`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+Required but **NOT_RUN** at this revised source snapshot:
+
+\`\`\`bash
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion
+lake env lean --trust=0 GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean
+lake env lean --trust=0 GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean
+lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean
+\`\`\`
+
+Fresh independent .olean kernel checking, declaration-level
+\`#check\` / \`#print axioms\` for the above qualified names,
+and complete transitive \`sorryAx\`/unsafe/opaque auditing remain
+**NOT_RUN / NOT_KERNEL_AUDITED**; actual process exit statuses and
+external receipts are UNAVAILABLE. Old verification issues
+#1182/#1195/#1197/#1200 target earlier immutable blobs and
+must not be presented as revised-source acceptance. Operational
+runners and receipts belong outside the math repository in
+\`grwtsk/noeaaeue\`. No Railway, force push or declined remote
+dispatch.
+
+
+### Follow-up: explicit map-only BaseSpecialization API
+
+Source commit:
+`720b3c0ddedb0fbab0da9695365f176213f12da9`.
+
+Current source blob for
+`GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`:
+`720d541d6f1d6942164327565174490c4b3ce971`.
+
+New fully qualified declarations:
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap`;
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map`.
+
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap`
+takes exactly a supplied map
+`embed : BaseZero → GeneralizedZero`,
+a zero-preservation proof, and a criticality-reflection proof. It contains no
+injectivity premise and proves no injectivity conclusion.
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map`
+then derives the base hypothesis from those three map properties and
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.GeneralizedHypothesis`.
+This source-level API is consistent with the preceding provenance correction
+that `BaseSpecialization.embed` is not an embedding theorem in the injective
+sense.
+
+External paper theorem/section/page locator: **NOT APPLICABLE**; this is a
+repository-derived interface refinement. Local source-snapshot attribution
+remains the 2026 `grwtsk contributors` / OpenAI header already recorded
+above; no new publication byline is created.
+
+Classification:
+- imported mathematics: unchanged;
+- kernel-verified bridges: none newly claimed;
+- source proof candidates: the two new declarations;
+- conditional interfaces: supplied map, zero preservation, criticality
+  reflection, and generalized family hypothesis;
+- finite evidence: none;
+- analogies: none;
+- unresolved premises: construction of the actual generalized-to-zeta map and
+  its zero/criticality properties in the intended L-function family.
+
+Operational validation is queued outside math at
+`grwtsk/noeaaeue#399`, pinned to the exact source commit/blob. The request is
+passive and is not an execution receipt.
+
+Actual status:
+`lake env lean`: **NOT_RUN**;
+target build: **NOT_RUN**;
+fresh trust-zero kernel replay: **NOT_RUN**;
+transitive axiom/`sorryAx`/unsafe audit:
+**NOT_RUN / NOT_KERNEL_AUDITED**.
+
+
+**Latest corrected-source validation queue:**
+[issue #1208](https://github.com/grwtsk/math/issues/1208),
+targeting immutable math main commit
+\`501d9c1548dc96ea441cc8f1a2ebb89c39279d78\`.
+The exact proof candidates in this case remain pinned to Git
+blobs \`6b28280b98527301af190f5c50696b9edcf0e05f\`
+and \`1d6ef4738af19edebd1d85e07f944ee4937a9001\`
+with conditional zeta consumer blob
+\`f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7\`.
+Static source validation and a finite external Python graph fixture
+are not Lean compilation, independent kernel checking or axiom
+audit; those phases remain **NOT_RUN / NOT_KERNEL_AUDITED**,
+and no successful process exit receipt is available.
+
+
+### Follow-up: bounded zeta right-context capacity certificates
+
+Source commit:
+`b10d5736af4188a2a4ea46d148011683d164f214`.
+
+Source:
+`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean`,
+blob `5588d53d617578068d5b7fa8ab6c6daf20c9f6fd`.
+
+New fully qualified declarations:
+
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.TailRightContextCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.TailExactPresentationAtMost`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_tail_exactPresentationAtMost_of_contextCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaTailContextCapacityCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_bounded_tail_presentation_of_zeta_contextCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_capacityCertificate_of_unboundedTailContexts`.
+
+Exact scope: a finite witness of `capacity + 1` pairwise
+continuation-distinguishable contexts rules out exact finite labeled-graph
+presentations whose
+`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation.stateCapacity`
+is at most `capacity`. One fixed finite certificate does **not** prove
+non-soficity against arbitrarily large presentations. The existing
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaUnboundedTailContexts`
+supplier implies every such bounded certificate, but remains separately
+unproved for the actual selected zeta trace.
+
+External paper theorem/section/page locator: **NOT APPLICABLE** to this local
+bounded wrapper. Its finite-state method background remains the already
+recorded Myhill/Nerode and sofic-language bibliography; no new historical
+influence is inferred.
+
+Classification:
+- imported mathematics: existing local finite right-context capacity theorem;
+- kernel-verified bridges: none newly claimed;
+- source proof candidates: the six declarations above;
+- conditional interfaces: the selected zeta trace and its supplied bounded or
+  unbounded context certificates;
+- finite evidence: a bounded certificate is mathematical input, not evidence
+  that the actual zeta source satisfies it;
+- analogies: none newly promoted;
+- unresolved premises: construction of actual zeta context certificates and
+  the separate arithmetic-to-sofic and spectral-source bridges.
+
+Operational validation remains outside math at
+`grwtsk/noeaaeue#400`, pinned to the exact source commit/blob.
+The repaired validation-query discovery at
+`grwtsk/noeaaeue@623825aaa2a205733e33ea4ff04264c30132139d`
+does not change proof status: registry qualification is still unavailable,
+native readiness is not checked, and proof acceptance remains false. This
+ledger records only the source status; operational details and future receipts
+remain in `grwtsk/noeaaeue`.
+
+Actual status:
+**SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXIOMS NOT_RUN**.
