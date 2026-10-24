@@ -4,6 +4,7 @@ Source argument: Ram Band, Siegfried Beckus, Raphael Loewy, arXiv:2402.16703v2,
 Theorem 1.1 proof using Theorem 1.10. Mathlib authorship and licenses remain upstream. -/
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 import Mathlib.Tactic
+import Mathlib.Analysis.Normed.Group.Basic
 
 set_option autoImplicit false
 
@@ -205,5 +206,24 @@ theorem one_sector_gap_insufficient :
   refine ⟨0, 1, 0, 0, by norm_num, by norm_num, ?_, by norm_num, ?_⟩
   · norm_num
   · simpa using hdelta
+
+/-- Hilbert-space energy comparison with the exact norm decomposition supplied.
+The Pythagorean identity and energy splitting are hypotheses, not inferred from
+an arbitrary lift. This is a conditional quadratic-form supplier, not a
+physical Yang--Mills Hamiltonian construction. -/
+theorem norm_energy_lower_bound_of_two_sectors
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta energy energy₁ energy₂ : ℝ)
+    (hdelta : 0 ≤ delta)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (henergy : energy₁ + energy₂ ≤ energy)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    delta * ‖x‖ ^ 2 ≤ energy := by
+  calc
+    delta * ‖x‖ ^ 2 = delta * (‖x₁‖ ^ 2 + ‖x₂‖ ^ 2) := by rw [hnorm]
+    _ = delta * ‖x₁‖ ^ 2 + delta * ‖x₂‖ ^ 2 := mul_add _ _ _
+    _ ≤ energy₁ + energy₂ := add_le_add hfirst hsecond
+    _ ≤ energy := henergy
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
