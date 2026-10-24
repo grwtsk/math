@@ -8,6 +8,7 @@ import Mathlib.Analysis.Normed.Group.Basic
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 import Mathlib.Analysis.InnerProductSpace.LinearPMap
+import GRWTSK.Analysis.OperatorTheory.BoundedPortDefect
 
 set_option autoImplicit false
 
@@ -568,6 +569,75 @@ theorem self_adjoint_coercivity_of_offDiagonalBlock
   exact self_adjoint_projection_coercivity_of_interaction S T hT x
     delta ‖offDiagonalBlock S T‖ (norm_nonneg _) hfirst hsecond
     (offDiagonalBlock_cross_lower_bound S T x)
+
+
+/-- An operator's global real quadratic-form bound supplies an operator-norm
+lower bound by Cauchy--Schwarz. This does not manufacture coercivity. -/
+theorem norm_gap_of_quadratic_bound
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (T : H →L[𝕜] H) (γ : ℝ)
+    (hquad : ∀ x : H, γ * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T x) x)) :
+    ∀ x : H, γ * ‖x‖ ≤ ‖T x‖ := by
+  intro x
+  have hcs : RCLike.re (inner 𝕜 (T x) x) ≤ ‖T x‖ * ‖x‖ :=
+    (RCLike.re_le_norm _).trans (norm_inner_le_norm _ _)
+  have hmul : (γ * ‖x‖) * ‖x‖ ≤ ‖T x‖ * ‖x‖ := by
+    calc
+      (γ * ‖x‖) * ‖x‖ = γ * ‖x‖ ^ 2 := by ring
+      _ ≤ RCLike.re (inner 𝕜 (T x) x) := hquad x
+      _ ≤ ‖T x‖ * ‖x‖ := hcs
+  by_cases hz : ‖x‖ = 0
+  · simpa [hz] using (norm_nonneg (T x))
+  · have hp : 0 < ‖x‖ :=
+      lt_of_le_of_ne (norm_nonneg _) (Ne.symm hz)
+    exact (mul_le_mul_iff_of_pos_right hp).mp hmul
+
+/-- Global diagonal sector coercivity, with the exact norm of the
+off-diagonal block paid, supplies the quantitative gap required by
+bounded-port perturbation arguments. -/
+theorem self_adjoint_norm_gap_of_offDiagonalBlock
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (delta : ℝ)
+    (hfirst : ∀ x : H, delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : ∀ x : H, delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x))) :
+    ∀ x : H, (delta - ‖offDiagonalBlock S T‖) * ‖x‖ ≤ ‖T x‖ := by
+  apply norm_gap_of_quadratic_bound T (delta - ‖offDiagonalBlock S T‖)
+  intro x
+  exact self_adjoint_coercivity_of_offDiagonalBlock S T hT x delta
+    (hfirst x) (hsecond x)
+
+/-- Real self-adjoint spectral coercivity plus a strict bounded-port
+intertwining-defect estimate yields injectivity of the transported map.
+The sector inequalities are global hypotheses; this does not establish
+them for a particular PDE, Hamiltonian or infinite-volume spectrum. -/
+theorem self_adjoint_injective_of_offDiagonalBlock_small_defect
+    {H : Type*} [NormedAddCommGroup H]
+    [InnerProductSpace ℝ H] [CompleteSpace H]
+    (S : Submodule ℝ H) [S.HasOrthogonalProjection]
+    (T P : H →L[ℝ] H) (hT : IsSelfAdjoint T) (delta : ℝ)
+    (hfirst : ∀ x : H, delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner ℝ (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : ∀ x : H, delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner ℝ (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)))
+    (hdefect : ‖GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.defect
+      (ContinuousLinearMap.id ℝ H) T P‖ < delta - ‖offDiagonalBlock S T‖) :
+    Function.Injective P := by
+  have hgap : ∀ x : H,
+      (delta - ‖offDiagonalBlock S T‖) * ‖x‖ ≤
+        ‖((ContinuousLinearMap.id ℝ H).comp T) x‖ := by
+    intro x
+    simpa using
+      (self_adjoint_norm_gap_of_offDiagonalBlock S T hT delta hfirst hsecond x)
+  have hi :=
+    GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.injective_of_defect_lt_gap
+      (ContinuousLinearMap.id ℝ H) T P hgap hdefect
+  simpa using hi
 
 /-- If one orthogonal projection preserves the domain of a partially defined
 operator, the complementary projection preserves it too. This is an actual
