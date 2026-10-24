@@ -499,7 +499,8 @@ theorem projected_cross_lower_bound_of_operator_norm
     -(‖T‖ * ‖u‖ * ‖v‖) ≤ RCLike.re (inner 𝕜 (T u) v) := by
   have hre : -(‖inner 𝕜 (T u) v‖) ≤
       RCLike.re (inner 𝕜 (T u) v) := by
-    exact neg_le.mpr (RCLike.re_le_norm _)
+    have hneg := RCLike.re_le_norm (-(inner 𝕜 (T u) v))
+    simpa only [map_neg, norm_neg, neg_neg] using (neg_le_neg hneg)
   have hinner : ‖inner 𝕜 (T u) v‖ ≤ ‖T u‖ * ‖v‖ :=
     norm_inner_le_norm _ _
   have hop : ‖T u‖ ≤ ‖T‖ * ‖u‖ := T.le_opNorm u
