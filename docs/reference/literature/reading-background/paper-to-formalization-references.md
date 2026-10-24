@@ -11552,3 +11552,148 @@ Attribution: grwtsk contributors. Status: SOURCE_REPAIR_NOT_RUN.
 The accepted rational finite weighted bilinear fourteen-law package keeps all hypotheses and selected proposition headers. The managed replay at Math commit 179c05da624839dda553788e3435bcbab690a7ac failed in the concrete signed control at source line 377: simp reached its recursion limit after the generic Fin.ext_iff rule was added. Retained failed batch receipt SHA256: 0ae7abe1ade04b1f868e5cef07cb513a25ae27dfff21d634156cb5ca84dcf5f5; both compile stdout SHA256: 5560f6c7fe6bdd5f838f69dfa2e23767cd6f0b7466c82e373d7dda128c8c577e. No expected-type consumer or theorem axiom audit completed in that attempt.
 
 This source-only repair replaces the generic Fin equality simplification rule in `GRWTSK.LinearAlgebra.WeightedFiniteReflection.step_not_selfAdjoint_control` with the two concrete Fin 4 disequalities 0 ≠ 3 and 3 ≠ 0, each proved by decide and used by the existing norm_num proof. It adds no hypothesis, axiom, warning suppression, recursion-limit increase, native_decide, import or root import. All thirteen main selected proposition headers and the optional doubled-lift proposition are unchanged; the optional module is unchanged. The finite exact +1/8 and -1/8 control remains the same statement. New proof candidate SHA256: 2992bd4d6ef05e17f48fad648f7bf7c80433ada4ad0dfeac615dd23bccb337bc. Native verification of this new candidate: NOT_RUN; separate managed replay with exact fourteen expected-type consumers and all 48 theorem type/transitive-axiom reports is still required. The doubled lift remains optional mathematical construction, the runtime core remains diffuser-free, and no RH or infinite-dimensional bridge is assumed or established. This entry records a proof-script repair rather than a new paper-derived theorem or a changed historical attribution.
+
+
+## Case ZETA-SPECTRAL-BOMBIERI-DYNAMIC-VALIDATION-20261023
+
+**Titles, byline and version.** *Actual zeta base problem for conditional
+RH-to-generalized spectral transport* and *Bombieri two-moment fibers obstruct
+every moment-only dynamic refinement*, local 2026 formalizations by
+`grwtsk contributors`, version
+[math@801a9d410e69c8bedc59096f22dae0cfd770d876](https://github.com/grwtsk/math/commit/801a9d410e69c8bedc59096f22dae0cfd770d876).
+This is a fresh qualification of the exact source below. Earlier source-only
+comments, passive requests and pre-redaction hashes remain historical; they do
+not certify these bytes. No Noe execution, external replay or analytic-premise
+discharge is claimed by this local verification.
+
+**Published context and exact method.** Enrico Bombieri, *Problems of the
+Millennium: the Riemann Hypothesis* (2000), official
+[Clay problem description](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf),
+§V, printed pp. 8–9: the source test class has regularity and decay conditions,
+and the Weil criterion cited there requires BOTH ordinary and reciprocal
+zero moments. The local method uses the exact pair of moments on the
+stage-two/three/four canonical square-tent coefficient space. It does not
+replace the classical Guinand–Weil form or its test-class hypotheses by that pair.
+David A. Huffman, *A Method for the Construction of Minimum-Redundancy Codes*,
+Proceedings of the IRE 40(9), 1098–1101 (1952),
+[DOI 10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898),
+is finite-alphabet coding background. The local imported byte-packet round trip
+is checked here; the paper's minimum-expected-length theorem is not imported
+or proved. The existing finite-automata/sofic-language bibliography remains
+method background. No historical influence or literal heat-flow/codec identity
+is inferred from a method match.
+
+**Spectral transport.** Namespace
+`GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge`:
+`zetaZeroProblem` uses `ActualZetaZero` and exactly `z.re = 1/2`;
+`zetaZeroProblem_hypothesis_iff` identifies its hypothesis with
+`ZetaCriticalPlacement`. The checked
+`zetaCriticalPlacement_implies_generalized_of_spectralCovers` requires a supplied
+`SpectralCoverFamily` from that actual zeta problem.
+`generalized_implies_zetaCriticalPlacement_of_member_specialization` requires an
+actual family member and `BaseSpecialization` preserving zeros and reflecting
+criticality. The equivalence
+`zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization`
+retains BOTH suppliers; it is not unconditional RH equivalence with classical GRH.
+`zetaCriticalPlacement_transports_and_splits_ordinates`,
+`zetaCriticalPlacement_transports_with_rightContext_certificate`, and
+`zetaCriticalPlacement_transports_with_all_capacityCertificates` additionally
+retain the supplied dynamic process and two independent arithmetic-to-eventual-
+exact-sofic classifications. The last requires certificates at EVERY capacity,
+for EVERY zero and EVERY finite burn-in of the SAME process trace. Critical-line
+placement and the actual generalized family remain separate hypotheses.
+
+**Dynamic obstruction.** Namespace
+`GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary`:
+`twoMoment_corrected_zero_collision` preserves the exact nonzero corrected
+coefficient witness and zero. `EveryStageUsesOnlyBombieriMoments` says EVERY
+finite stage factors through the SAME ordinary/reciprocal pair.
+`moment_only_history_collision`,
+`no_left_inverse_of_moment_only_refinement_history`, and
+`separating_readout_not_from_moment_only_history` preserve that collision through
+the entire dependent infinite history; the last retains an actual separating
+readout. `no_lossless_graph_cover_from_moment_only_history` additionally requires
+the full spectral lift to factor through that history.
+`no_lossless_graph_cover_from_two_moments` instead retains a direct two-moment
+factorization. `no_source_decoder_from_bombieri_huffman_packets` allows arbitrary
+moment-to-byte postprocessing before the concrete byte encoder: a correct
+byte-packet round trip cannot recover the original coefficients after a
+noninjective moment map. Refinements adding an independent invariant are not
+excluded, and no classical Weil-diagonal separation or zeta interpretation
+is supplied by these statements.
+
+**Inherited repairs.** Namespace
+`GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary`:
+`RootedSoficGraph.asSoficGraph` now installs its already-stored finiteness instance;
+reserved `prefix` is escaped as `«prefix»`, preserving its identifier and definition.
+`EventuallyExactPrefixPresented`, `GrowingSoficSpectralDiagram`,
+`AnalyticDynamicSoficPipeline`, and `OrdinateExactLanguageSuppliers` now specify
+independent universe levels explicitly, including the SAME graph-carrier universe
+in all three arithmetic/non-presentation supplier fields. No graph or spectrum
+is restricted to `Type 0`. The universe-style linter alone is scoped off for
+`AnalyticDynamicSoficPipeline` because its independent graph and spectral universes
+occur together in the structure sort; strict build and kernel checks remain active.
+All refinement coherence, clock commutation, exact graph edges, full reconstruction,
+source identities, readout distinctions and analytic stage fields are retained.
+Rooted exact singleton-prefix presentation remains explicitly stronger than graph
+admissibility and is not silently identified with standard full-factor soficity.
+The bridge's local attribution was normalized; its mathematical source is unchanged.
+
+**Classifications and missing bridges.** Imported mathematics: pinned Mathlib and
+the named local Huffman/tent/dynamic dependencies. Kernel-verified bridges: the
+conditional transport and collision consequences above. Conditional interfaces:
+actual spectral covers, reverse specialization, dynamic lifts and arithmetic
+presentations. Finite evidence: the exact three-coordinate moment collision,
+without promotion to arbitrary test spaces. Analogies: compression/heat flow and
+sofic terminology. Unresolved premises: actual generalized L-function covers,
+source-bound trace nonsoficity/all-capacity certificates, rational/algebraic
+ordinate classification, actual RH/GRH and all analytic zero-free stages.
+No new zero-ordinate irrationality or transcendence is proved unconditionally.
+
+**Pinned sources.** At the version above:
+
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`: blob `4626f58fe293d37943a4ec1900e64f84e29598b0`; SHA-256 `5c8a97fdcae8dda9410c654de0fa32c84e1d89304600efac435d37a8f2a0ec3a`.
+
+- `GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean`: blob `cdf02856aeeee15b55000182096f2cf2fe0a7f8a`; SHA-256 `3d30ab0a82ad244f3af2e59a2794c041423b192fa8ad554290467ec0fdb853c9`.
+
+- `GRWTSK/NumberTheory/Farey/DynamicSoficExactLanguageBoundary.lean`: blob `9b41af8b4b4e7e1b2caf7abfe30b741dd95ff8e9`; SHA-256 `1edba518b6a2ef27f2e93254b14012133a8b42a0d0d4b8892e37d1441fc820e3`.
+
+All 132 lexical local source dependencies are hashed in the external
+`zeta-bridge-boundary-validated-snapshot.json`; lexical discovery is not claimed
+as the full elaborated dependency closure. The imported-declaration audit covers
+the actual loaded GRWTSK constants, including generated/private declarations.
+
+**Verification.** Pinned Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. Actual commands below use
+`$EVIDENCE_DIR` as a privacy-preserving display alias for the external receipt
+directory; the alias does not modify the original files or their hashes.
+
+```text
+lake build GRWTSK.NumberTheory.Zeta.Riemann.ZetaSpectralGRHBridge GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary --wfail
+lake env lean --trust=0 -t 0 "$EVIDENCE_DIR/zeta-bridge-boundary-audit.lean"
+lake build --wfail
+```
+
+All three commands exited 0. Strict target build: **8837 jobs**. Public main
+build: **9307 jobs**, rerun after the concurrent braid import cleanup at
+`ba0114942`. Subsequent source-only candidate additions outside this dependency
+snapshot do not inherit these verification statuses. Fresh trust-level-zero
+replay: **4411 imported GRWTSK declarations**, all types printed. The runner rejects
+unsafe declarations and every transitive axiom outside `propext`, `Classical.choice`,
+`Quot.sound`; no custom axiom or `sorryAx` passed. These receipts establish the
+stated conditional implications, not the existence of their supplier premises.
+
+External evidence files and original SHA-256 digests:
+
+- `zeta-bridge-boundary-clean-build.log`: `c19a6d4f1c2e7187e3fd60cb9bf7ad118aa798ee0a5ccd236dc2e16dadbcdd76`.
+- `zeta-bridge-boundary-final-public-build.log`: `c10b0ca2b586a4e5c3165496601c0707b4ff93d8ca76d52f3d69ff3182ff877c`.
+- `zeta-bridge-boundary-audit.lean`: `dbe97f05b5adb8f64cfea0774100c83affa7886b39d3f2c5ac8559c382b27502`.
+- `zeta-bridge-boundary-audit.log`: `2566ea6ef764b2da50363834bfe1cf3f434d4713a3511ce7448af4b77d3c3d53`.
+- `zeta-bridge-boundary-validated-snapshot.json`: `584435be74408771636771269ecdf02fec1ef483860a2640e19d8ae775946722`.
+
+The initial build and intermediate repair runs are diagnostic failures, not
+acceptance receipts. Only `zeta-bridge-boundary-clean-build.log` is the accepted
+strict target build. Runners, logs, snapshots and result JSON remain external to
+canonical math. No public-root import was added. Privacy aliases in displayed
+commands do not change original receipt bytes; editing or redacting a receipt
+would require a new digest and would not constitute a fresh replay.
