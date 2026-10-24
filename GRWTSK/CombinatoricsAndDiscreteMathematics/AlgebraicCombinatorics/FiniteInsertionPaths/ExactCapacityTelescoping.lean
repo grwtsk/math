@@ -23,7 +23,7 @@ Original source documentation describes the complete unsplit source context.
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import Mathematics.SemiLocalDefect.BoundaryCochain
+import GRWTSK.CombinatoricsAndDiscreteMathematics.PositiveCapacity.FiniteDiagonal
 
 /-!
 # Finite path reconstruction
@@ -35,7 +35,7 @@ the same terminal cut have the same path sum.
 
 namespace GRWTSK.CombinatoricsAndDiscreteMathematics.AlgebraicCombinatorics.FiniteInsertionPaths.ExactCapacityTelescoping
 
-open Mathematics.SemiLocalDefect
+open GRWTSK.CombinatoricsAndDiscreteMathematics.PositiveCapacity.FiniteDiagonal
 
 def insertPath
     {Prime : Type u}
