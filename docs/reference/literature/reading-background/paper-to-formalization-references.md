@@ -7387,3 +7387,14 @@ External evidence in that directory: `analytic-pair-build-final.log`,
 `analytic-pair-validated-snapshot.json`. This dated evidence supplements the
 existing B3/E4/E5 records without broadening their conditional scope or changing
 unrelated source-only statuses.
+
+
+## Case BOMBIERI-EXCEPTIONAL-CAST-20261023 — exact complex-real identification
+
+**Source/reference boundary.** Repository-derived 2026 formal source with OpenAI formalization assistance, not a newly imported external-paper theorem. External title, authors, year/version, DOI/arXiv and theorem location: **NOT APPLICABLE**. Bombieri/Guinand–Weil parallels are contextual, not proof of historical influence or analytic transport.
+
+**Exact method and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightCast.cofactorZero_eq_realFirstCofactor` identifies complex `cofactorZero` with the cast of the exact real determinant `O₂R₁−O₁R₂`. `cofactorTwo_eq_realDeterminant` reuses the existing cofactor-two equality. `exceptionalWeight_eq_realExceptionalWeight` identifies the previously defined complex ratio `-cofactorTwo/cofactorZero` with the complex cast of `-(twoTentMomentDeterminant/realFirstCofactor)`. No additional numerical estimate, admissible Weil test class, density, positivity or RH is asserted. Real negativity is a separate earlier source candidate, not kernel evidence for this leaf.
+
+**Immutable identity.** [`grwtsk/math@84b5e59ae204466f87419c384c5e38c3db9f2abf`](https://github.com/grwtsk/math/commit/84b5e59ae204466f87419c384c5e38c3db9f2abf), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentExceptionalWeightCast.lean`, blob `f7d2c0b5514f508f17687958f60de686d7c686dd`. Direct dependency `CanonicalSquareTentExceptionalWeightSign` blob `4136b544689de28ba6b44cef0d5ff81b7d5c8326`; full transitive closure pending.
+
+**Classification and actual evidence.** Imported mathematics: existing local source/cast lemmas, not a paper port; kernel-verified new bridge: **none**; new source-proof-candidates: three exact equalities; conditional interface: transitive integral sign supplier remains kernel-unverified; finite evidence: none claimed; analogy: coefficient reconstruction; unresolved: Lean compilation, independent fresh kernel, complete transitive axioms and any source-specific spectral/Weil analytic bridge. [Validation #1162](https://github.com/grwtsk/math/issues/1162) pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`, exact commands and expected receipts. **ACTUAL SOURCE_ONLY / GIT_BLOB_READBACK / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** Operational receipts remain outside math in grwtsk/noeaaeue; root import withheld.
