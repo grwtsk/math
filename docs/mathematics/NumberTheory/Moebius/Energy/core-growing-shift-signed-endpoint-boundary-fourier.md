@@ -5,7 +5,7 @@ Status: `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`
 Issue: #848  
 Direct parent: draft PR #843 at `fad6ded9507f15f803b148a5a7ae5c45b12be13e`
 
-Human mathematical direction: grwtsk contributors.  
+Human mathematical direction: grwtsk contributors.\
 Formalization assistance: OpenAI ChatGPT.  
 Imported Mathlib and repository sources retain their original authorship and licenses.
 

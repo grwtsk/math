@@ -57,7 +57,7 @@ def detShift (γ : ℂ) : ℂ :=
 /--
 `detShift γ = 0` **iff** `¼ + γ²` lies in the spectrum of `L`.
 
-This is the analytic heart of R.A.’s RH reformulation.
+This is the analytic heart of grwtsk contributors’ RH reformulation.
 -/
 lemma detShift_zero_iff (γ : ℂ) :
     detShift (P := P) γ = 0 ↔

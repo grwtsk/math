@@ -7,7 +7,7 @@ import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Bri
 import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity
 
 /-!
-Exact five-mode algebra for R.A.'s unchanged RH source.
+Exact five-mode algebra for grwtsk contributors' unchanged RH source.
 Originating mathematical direction, theorem selection, corrections and evaluation:
 grwtsk contributors. Scratch formalization assistance: OpenAI Codex.
 This file is outside maintained source and makes no arithmetic bound or acceptance claim.
