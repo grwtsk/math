@@ -207,4 +207,42 @@ theorem no_exact_language_at_of_non_eventual_sofic
   intro E
   exact hNonEventual (eventuallySofic_of_sofic E.implies_sofic)
 
+
+/-- A right-context separation certificate, if eventually supplied for the
+actual spectral trace, refutes exact finite labeled-language identification.
+The finite graph PATH remains valid: the obstruction concerns equality of
+the WHOLE factor language, not graph readability. -/
+theorem no_exact_language_at_of_unbounded_rightContexts
+    {X : Type u} {Observation : Type v}
+    {Vertex : Type w} {Alphabet : Type q} {Spectral : Type r}
+    [Fintype Vertex] [Fintype Alphabet]
+    [AddCommGroup Spectral] [Module ℂ Spectral]
+    {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
+    {x : X}
+    (hcontexts :
+      UnboundedRightContexts (HasFiniteBlock (C.labelTrace x))) :
+    ¬ ExactLanguageAt C x :=
+  no_exact_language_at_of_nonsofic
+    (not_soficTrace_of_unboundedRightContexts
+      (C.labelTrace x) hcontexts)
+
+/-- Uniform failure of finite continuation-state bounds after every
+burn-in also refutes the initial exact language, but is a separate
+supplier stronger than non-soficity at offset zero. -/
+theorem no_exact_language_at_of_all_tail_rightContexts
+    {X : Type u} {Observation : Type v}
+    {Vertex : Type w} {Alphabet : Type q} {Spectral : Type r}
+    [Fintype Vertex] [Fintype Alphabet]
+    [AddCommGroup Spectral] [Module ℂ Spectral]
+    {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
+    {x : X}
+    (hall : ∀ offset : ℕ,
+      UnboundedRightContexts
+        (HasFiniteBlock (tailTrace (C.labelTrace x) offset))) :
+    ¬ ExactLanguageAt C x :=
+  no_exact_language_at_of_non_eventual_sofic
+    (not_eventuallySoficTrace_of_all_tail_rightContexts
+      (C.labelTrace x) hall)
+
+
 end GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
