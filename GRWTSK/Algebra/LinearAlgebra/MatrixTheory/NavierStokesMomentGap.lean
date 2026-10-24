@@ -273,6 +273,78 @@ theorem certified_moment_adjoint_strict_contraction
     henergy hintertwines v
 
 
+
+/-!
+## Quantitative margin under operator perturbation
+
+The earlier injectivity theorem gives only a qualitative conclusion. The next
+estimate retains the entire remaining lower-bound margin. It applies to a
+perturbed represented operator and separates the perturbation norm from the
+coercivity supplier.
+-/
+
+/-- The least-norm lower bound degrades by at most the operator-norm error.
+This is meaningful even when the remaining signed margin is nonpositive. -/
+theorem perturbation_lower_bound
+    (J P : F →L[ℝ] F) {γ : ℝ}
+    (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
+    (x : F) :
+    (γ - ‖P - J‖) * ‖x‖ ≤ ‖P x‖ := by
+  have hJ : J x = P x - (P - J) x := by
+    simp only [sub_apply]
+    abel
+  have htri : ‖J x‖ ≤ ‖P x‖ + ‖(P - J) x‖ := by
+    calc
+      ‖J x‖ = ‖P x - (P - J) x‖ := congrArg norm hJ
+      _ ≤ ‖P x‖ + ‖(P - J) x‖ := norm_sub_le _ _
+  have hnorm := (P - J).le_opNorm x
+  nlinarith [hgap x]
+
+/-- The Navier–Stokes-derived moment gap retains an explicit quantitative
+margin under arbitrary continuous-linear perturbations. No injectivity or
+positivity is claimed unless the perturbation is strictly below the gap. -/
+theorem certified_moment_perturbed_lower_bound
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ) (P : F →L[ℝ] F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (y : F) :
+    (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) * ‖y‖ ≤ ‖P y‖ := by
+  exact perturbation_lower_bound (momentMatrix B C) P
+    (fun x => finite_rank_gap B C R hε hB hR hcoercive x) y
+
+/-- If a square finite matrix exactly represents a perturbation of the coercive
+moment operator, strict relative contraction persists with the reduced positive
+margin. The energy-preserving encoding and intertwining remain explicit. -/
+theorem certified_perturbed_moment_adjoint_strict_contraction
+    {κ : Type*} (s : Finset κ) (A : κ → κ → ℝ)
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ) (P : F →L[ℝ] F)
+    (encode : (κ → ℝ) → F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hpert : ‖P - momentMatrix B C‖ < ε / (ε + β * δ))
+    (henergy : ∀ w : κ → ℝ, energy s w = ‖encode w‖ ^ 2)
+    (hintertwines : ∀ w : κ → ℝ,
+      encode (applyMatrix s A w) = P (encode w))
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s s A (applyMatrix s A v) c) ≤
+      (1 - damping s s A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2) * energy s v ∧
+      1 - damping s s A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2 < 1 := by
+  exact residual_relative_contraction_of_intertwining
+    s A P encode (ε / (ε + β * δ) - ‖P - momentMatrix B C‖)
+    (sub_pos.mpr hpert)
+    (fun y => certified_moment_perturbed_lower_bound
+      B C R P hε hB hR hcoercive y)
+    henergy hintertwines v
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
