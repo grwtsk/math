@@ -11500,3 +11500,46 @@ lint warning; it is not the acceptance receipt. The subsequent strict build abov
 passed after the exact declaration-kind repair. Operational receipts remain external;
 this canonical entry records their identities and scope. Public imports were not
 changed by this validation.
+
+
+### Source repair after the first bounded native compile — 2026-10-24
+
+**SOURCE_REPAIR_NOT_RUN.** The original weighted source candidate at commit
+`203e11ba8eb120cf88b9b023abb7d16fe728fe14`, blob
+`4a2813936e8d994afd31f9f8974b9274c0ffd4e2`, received an actual failed
+compile under the separately managed native verifier. The retained external
+diagnostic has SHA256
+`aec1d812f8ec47ed79c633be955c3e7f5edbcff1b692bdf79e15b42301c1b25e`.
+It reported unused finite-carrier section instances in three phase helpers,
+unsolved inverse goals from bare involutivity simplifier arguments, and
+residual concrete `Fin 4` equalities in the signed pairing control.
+The failure record remains external in the original source-bound run; it is
+not rewritten or converted into a success receipt.
+
+The new pure source candidate in
+`GRWTSK/Algebra/LinearAlgebra/BilinearAndQuadraticForms/WeightedFiniteReflection.lean`
+has blob `a6f3cdfb32c78b87b33c6c36e5e43549aa261363` and SHA256
+`3fa42526bed546331dd1a27dc1f044cbabee01d89fa4a07f136b465ae4e66b03`. It locally omits the unused `Fintype` instance
+for `phase_involutive`, `phase_add`, and `phase_scale`; uses explicitly applied
+pointwise involution equations in `step_leftInverse` and `step_rightInverse`;
+and supplies `Fin.ext_iff` when normalizing the exact `+1/8`, `-1/8` control.
+All thirteen selected main-law proposition headers are byte-for-byte
+unchanged. The three phase helpers need no finite-carrier hypothesis.
+No new hypothesis, axiom, warning suppression, import, runtime adapter,
+root import, real/complex extension, or RH bridge is introduced.
+
+This candidate is based on collective-attribution upstream commit
+`c328260f6f8306527d9b36282d69c2190f9e65ea`. Its optional doubled leaf has blob
+`080b0ee9bebdab0da58f697826c62f9f7221285b` and is not edited by this repair.
+Relative to the original optional blob
+`e58255860b20b4abb7c82e395dbd0c4021962dd6`, the source from its first
+`import` onward is byte-for-byte unchanged; only previously applied upstream
+header attribution differs. This does not transfer old source acceptance.
+
+**Repaired-source validation:** source candidate only; native compilation
+**NOT_RUN**, expected-type consumers **NOT_RUN**, transitive axiom audit
+**NOT_RUN**, and fresh independent kernel replay **NOT_RUN**.
+Operational dispatch and receipts remain outside canonical Math.
+The doubled construction remains optional and the deterministic core remains
+diffuser-free. Imported mathematics and all previously listed unresolved
+finite-to-runtime and spectral/arithmetic bridges are unchanged.
