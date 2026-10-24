@@ -8680,3 +8680,37 @@ For source commit
 - external receipt: **unavailable**.
 
 Source inspection is not compiler, kernel, or axiom acceptance.
+
+
+### Follow-up: typed base specialization
+
+Source refinement commit:
+`4a80cc59e3fe0ca5b6097106b0d90e045c3f5729`.
+
+Current source blob:
+`f9d009a30ac77b93f72bf38604888eb73544de16`.
+
+New fully qualified declarations:
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization`
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_member_specialization`
+
+The reverse generalized-to-Riemann direction is no longer represented only by
+an arbitrary proposition-level function. A selected generalized family member
+must contain an actual embedding of base zero objects; base zeros must map to
+generalized zeros, and generalized criticality at those embedded points must
+reflect to base criticality. Together with a spectral cover from the base
+problem to every generalized family member, this yields a typed conditional
+equivalence.
+
+Classification: **source proof candidate / conditional interface**. No new
+paper theorem is imported. Missing bridges are the actual generalized
+spectral-cover family and the actual Riemann specialization member with
+zero/criticality compatibility.
+
+Verification:
+`lake env lean GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`:
+**NOT_RUN**; module build **NOT_RUN**; fresh kernel replay **NOT_RUN**;
+transitive axiom audit **NOT_RUN / NOT_KERNEL_AUDITED**; external receipt
+unavailable.
