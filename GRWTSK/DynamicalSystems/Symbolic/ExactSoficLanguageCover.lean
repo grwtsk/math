@@ -125,7 +125,11 @@ theorem eventuallySofic_of_sofic
     (h : IsSoficTrace trace) :
     EventuallySoficTrace trace := by
   refine ⟨0, ?_⟩
-  simpa only [tailTrace, zero_add] using h
+  have htail : tailTrace trace 0 = trace := by
+    funext n
+    exact congrArg trace (Nat.zero_add n)
+  rw [htail]
+  exact h
 
 /-- A witnessed exact presentation supplies the genuine sofic predicate. -/
 theorem sofic_of_exact_language
@@ -176,58 +180,57 @@ noncomputable def reachableEndStates
 theorem wordPath_append
     {State : Type u} {Alphabet : Type v}
     {G : LabeledGraph State Alphabet}
-    {start middle : State} {prefix : List Alphabet}
-    (hprefix : WordPath G start prefix middle) :
+    {start middle : State} {«prefix» : List Alphabet}
+    (hprefix : WordPath G start «prefix» middle) :
     ∀ {suffix : List Alphabet} {finish : State},
       WordPath G middle suffix finish →
-        WordPath G start (prefix ++ suffix) finish := by
+        WordPath G start («prefix» ++ suffix) finish := by
   induction hprefix with
   | nil s =>
       intro suffix finish hsuffix
-      simpa using hsuffix
+      exact hsuffix
   | cons a word hedge htail ih =>
       intro suffix finish hsuffix
-      simpa only [List.cons_append] using
-        (WordPath.cons a (word ++ suffix) hedge (ih hsuffix))
+      exact WordPath.cons a (word ++ suffix) hedge (ih hsuffix)
 
 /-- Split a path at the precisely given word boundary; no unverified
 existence of an intermediate state is hidden in the definition. -/
 theorem wordPath_split_append
     {State : Type u} {Alphabet : Type v}
-    (G : LabeledGraph State Alphabet) (prefix suffix : List Alphabet) :
+    (G : LabeledGraph State Alphabet) («prefix» suffix : List Alphabet) :
     ∀ {start finish : State},
-      WordPath G start (prefix ++ suffix) finish →
-        ∃ middle, WordPath G start prefix middle ∧
+      WordPath G start («prefix» ++ suffix) finish →
+        ∃ middle, WordPath G start «prefix» middle ∧
           WordPath G middle suffix finish := by
-  induction prefix with
+  induction «prefix» with
   | nil =>
       intro start finish h
-      exact ⟨start, WordPath.nil start, by simpa using h⟩
-  | cons a prefix ih =>
+      exact ⟨start, WordPath.nil start, h⟩
+  | cons a «prefix» ih =>
       intro start finish h
       cases h with
       | cons a word hedge htail =>
           obtain ⟨middle, hprefix, hsuffix⟩ := ih htail
-          exact ⟨middle, WordPath.cons a prefix hedge hprefix, hsuffix⟩
+          exact ⟨middle, WordPath.cons a «prefix» hedge hprefix, hsuffix⟩
 
 /-- Every right context of a graph word is determined only by its reachable
 end-state subset, not by the entire original word. -/
 theorem graphLanguage_append_iff_endStates
     {State : Type u} {Alphabet : Type v} [Fintype State]
-    (G : LabeledGraph State Alphabet) (prefix suffix : List Alphabet) :
-    GraphLanguage G (prefix ++ suffix) ↔
-      ∃ middle, middle ∈ reachableEndStates G prefix ∧
+    (G : LabeledGraph State Alphabet) («prefix» suffix : List Alphabet) :
+    GraphLanguage G («prefix» ++ suffix) ↔
+      ∃ middle, middle ∈ reachableEndStates G «prefix» ∧
         ∃ finish, WordPath G middle suffix finish := by
   constructor
   · rintro ⟨start, finish, hpath⟩
     obtain ⟨middle, hprefix, hsuffix⟩ :=
-      wordPath_split_append G prefix suffix hpath
+      wordPath_split_append G «prefix» suffix hpath
     exact ⟨middle,
-      (mem_reachableEndStates G prefix middle).2 ⟨start, hprefix⟩,
+      (mem_reachableEndStates G «prefix» middle).2 ⟨start, hprefix⟩,
       finish, hsuffix⟩
   · rintro ⟨middle, hmiddle, finish, hsuffix⟩
     obtain ⟨start, hprefix⟩ :=
-      (mem_reachableEndStates G prefix middle).1 hmiddle
+      (mem_reachableEndStates G «prefix» middle).1 hmiddle
     exact ⟨start, finish, wordPath_append hprefix hsuffix⟩
 
 /-- Equal reachable-state signatures imply indistinguishable suffix
@@ -262,7 +265,7 @@ theorem not_soficFactorLanguage_of_unboundedRightContexts
     (hunbounded : UnboundedRightContexts language) :
     ¬ IsSoficFactorLanguage language := by
   rintro ⟨P⟩
-  letI : Fintype P.State := P.finiteState
+  let : Fintype P.State := P.finiteState
   classical
   let N : ℕ := Fintype.card (Finset P.State) + 1
   obtain ⟨words, hdistinguishable⟩ := hunbounded N
