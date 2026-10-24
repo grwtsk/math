@@ -1,6 +1,5 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 import GRWTSK.Logic.InformationLoss.FactorizationFiber
