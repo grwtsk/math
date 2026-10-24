@@ -14,12 +14,12 @@ preserved in the exact source archives and copied source documentation.
 Source original SHA256: 3953f06da055b318ff796a237176d5dc225af37133ab8501044287205850aa30
 Review: attribution-254-review-000006.
 This file defines certificate data and a reflexive status-equality theorem.
-It supplies no tail bound or concentration soundness theorem. The exact
-Influence import remains a pending project dependency; no replacement is assumed.
+It supplies no tail bound or concentration soundness theorem. Its finite-cube
+influence provider is extracted from pinned archives; native checks remain pending.
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import Mathematics.SpectralClosure.Influence
+import GRWTSK.CombinatoricsAndDiscreteMathematics.FiniteBitInfluence.Basic
 
 /-!
 # Dependence-aware concentration boundary
@@ -30,7 +30,7 @@ a dependent concentration proof.
 
 namespace GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilityInequalities.DependenceAwareConcentration.CertificateInterface
 
-open Mathematics.SpectralClosure (SpectralId ProofDisposition Bitfield InfluenceEnergyCertificate)
+open GRWTSK.CombinatoricsAndDiscreteMathematics.FiniteBitInfluence.Basic (SpectralId ProofDisposition Bitfield InfluenceEnergyCertificate)
 
 inductive ConcentrationMechanism
   | independentBoundedDifferences
