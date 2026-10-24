@@ -1,5 +1,50 @@
 # Combinatorics
 
+<!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
+
+[Results index](../index.md) · [Up one directory](../index.md)
+
+**Subject:** `urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b` · editorial status: **proposed** · [definition, scope and sources](../../taxonomy/subjects/combinatorics/index.md).
+
+The study of arrangements and discrete configurations, including their existence, enumeration, structure and extremal properties.
+
+**Scope.** Counting is important but does not exhaust the subject. Graphs, designs, ordered structures and infinite combinatorial questions require distinct treatments. Relations to probability, algebra and topology do not make every application a subtype of the method it uses. This local field is not a declaration that two repository namespaces are equivalent.
+
+| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+|---:|---:|---:|---:|
+| 26 | 0 | 0 | 0 |
+
+Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
+
+## Top results
+
+**Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
+
+- [Coverage and discrete quotas](Sequences/coverage-and-quotas.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Coverage.** With natural batches `b n ≥ 1`, define `S₀=0`, `Sₙ₊₁=Sₙ+bₙ`. Service every pinned obligation index in `[Sₙ,Sₙ₊₁)`. Then every index belongs to a service interval. An unbounded clock alone cannot…
+- [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver and root $r$. Let `rows` be a finite list of keys paired with actual rooted path occurrences. Write $t(p)$ for the complete typed edge trace of an occurrence and form
+- [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For a finite type `A` and `0 < m ≤ \|A\|`, choose uniformly among all ordered partitions with part sizes `q+1` for the first `r` parts and `q` for the others, where `q = \|A\| / m` and `r = \|A\| % m`.…
+- [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix actual before and after parent dictionaries, retaining the complete ordered references from before. Exact agreement of their expanded optional lookups at every old reference preserves the actual decoded…
+- [Compaction and remapping of rooted prefix tables](DirectedGraph/prefix-table-compaction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start with an actual stored rooted prefix-table state satisfying its structural invariant. Compaction derives successful real-row decoding and rooted validity, recovers the actual keyed rooted occurrences, and…
+
+Missing metric evidence: `verification_dependency_graph_unavailable`.
+
+[Ranking definition and weight profile](../../reference/ranking-profile.json) · [Article standard](../../reference/result-article-standard.md).
+Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88aeaac60d482693913193e74bf5bb87d0c156d5e876fa`.
+
+## Immediate specializations and directories
+
+1. **[Directed Graph](DirectedGraph/index.md)** — 0 immediate children · 20 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md); [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
+2. **[Enumerative combinatorics](enumerative-combinatorics/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of counting combinatorial objects and determining the sequences, formulas and generating functions that describe those counts.
+3. **[Graph theory](graph-theory/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of graphs through their vertices, edges, incidence and adjacency, including structural, extremal and algorithmic questions.
+4. **[Sequences](Sequences/index.md)** — 0 immediate children · 6 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Coverage and discrete quotas](Sequences/coverage-and-quotas.md); [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
+
+Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
+
+<!-- END GENERATED MATHEMATICS NAVIGATION -->
+
 [All mathematical areas](../../index.md) · [Lean source folder](../../../GRWTSK/Combinatorics).
 
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
