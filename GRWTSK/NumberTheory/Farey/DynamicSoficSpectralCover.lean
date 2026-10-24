@@ -248,6 +248,48 @@ structure BaseSpecialization
       generalized.critical (embed z) →
         base.critical z
 
+
+/-- Build a base specialization from exactly a supplied map, zero preservation,
+and criticality reflection. No injectivity hypothesis is required or derived. -/
+def BaseSpecialization.ofMap
+    {BaseZero : Type uBase} {GeneralizedZero : Type uGen}
+    {base : ZeroProblem BaseZero}
+    {generalized : ZeroProblem GeneralizedZero}
+    (embed : BaseZero → GeneralizedZero)
+    (mapsZero : ∀ z,
+      base.isZero z → generalized.isZero (embed z))
+    (reflectsCritical : ∀ z,
+      base.isZero z →
+        generalized.critical (embed z) →
+          base.critical z) :
+    BaseSpecialization base generalized where
+  embed := embed
+  mapsZero := mapsZero
+  reflectsCritical := reflectsCritical
+
+/-- The reverse generalized-to-base implication can be used directly from the
+three supplied map properties, with no injectivity premise. -/
+theorem generalized_implies_base_of_map
+    {Index : Type uIndex}
+    {BaseZero : Type uBase}
+    {Zero : Index → Type uGen}
+    {base : ZeroProblem BaseZero}
+    {family : ∀ i, ZeroProblem (Zero i)}
+    (i0 : Index)
+    (embed : BaseZero → Zero i0)
+    (mapsZero : ∀ z,
+      base.isZero z → (family i0).isZero (embed z))
+    (reflectsCritical : ∀ z,
+      base.isZero z →
+        (family i0).critical (embed z) →
+          base.critical z)
+    (hGeneralized : GeneralizedHypothesis family) :
+    base.Hypothesis :=
+  generalized_implies_base_of_member_specialization
+    i0
+    (BaseSpecialization.ofMap embed mapsZero reflectsCritical)
+    hGeneralized
+
 /-- One actual generalized family member containing the base zero problem
 supplies the standard generalized-to-base direction. -/
 theorem generalized_implies_base_of_member_specialization
