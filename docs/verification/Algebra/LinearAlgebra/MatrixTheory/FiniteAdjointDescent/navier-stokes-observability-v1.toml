@@ -28,11 +28,12 @@ declarations = [
   "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.observability_of_normed_realization",
   "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction_of_normed_realization",
 ]
-dependencies = [
-  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent",
+direct_imports = ["Mathlib.Tactic"]
+related_modules = [
   "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap",
   "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteObservationGap",
 ]
+transitive_import_closure = "NOT_ENUMERATED"
 downstream = ["Strict relative finite-adjoint energy contraction", "Concrete moment-matrix coordinate adapter (unresolved)"]
 unresolved = [
   "Construct finite-coordinate norm and energy preserving representation of I + B ∘ C",
