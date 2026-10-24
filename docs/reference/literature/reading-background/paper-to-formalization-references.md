@@ -1231,6 +1231,93 @@ with explicit uninhabited/currently-unready port control and the hostile
 toy pair at Re=2/5, 3/5. Store executable receipts OUTSIDE math in
 grwtsk/noeaaeue; no Railway, remote dispatch, force-push or merge.
 
+**Case QRH-7-8-DEFECT-02 — exact seven-eighths/critical-line-defect
+equivalence, source integration 2026-10-24.** The mathematical primary
+source is OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+Re(s)>7/8*, September 30, 2026 preprint
+([stable pinned manuscript](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf)).
+Exact displayed theorem `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` in
+`lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean`, upstream commit
+`1581d4cbdd69a0faf34b2089614fe2a814316a6a`, blob
+`46c67f4000906b1391a471d6e6396ac0da3c16a5`; delegated proof source
+`OAI.SevenEighths.ProbeFinalAssemblyUnconditional.zeta_nonzero` in
+`Detector/FinalAssemblyUnconditional.lean`, blob
+`e7c20910424837fb954796e1216f5aa453bbd5da`. No DOI/arXiv ID
+established; this September release must not be collapsed into the separate
+October 5, 2026 OpenAI manuscript. The challenge comparator
+`QuasiRiemannHypothesis.lean` has a `sorry` and is not the solution.
+
+**Exact formal statement.** `GRWTSK.RiemannHypothesis.SevenEighthsDefectBound`
+means
+`∀ s : ℂ, NontrivialZetaZero s → rhDefect s ≤ (9/16 : ℝ)`.
+The existing `rh_defect_eq_square` identifies `rhDefect s` with
+`(2*s.re - 1)^2`. The new local candidate
+`GRWTSK.RiemannHypothesis.sevenEighthsZeroFree_iff_defectBound`
+proves the *proposition-level equivalence* between the exact raw
+`RiemannZetaZeroFreeRightHalfPlane (7/8)` and the 9/16 cap. Forward
+implication consumes existing reflection and the **closed** band
+`1/8 ≤ Re(s) ≤ 7/8`; converse consumes the native raw/nontrivial
+zero comparison at threshold `7/8 ≥ 0`, retaining all negative-even
+trivial-zero exclusions and the special totalized zeta value at `s=1`.
+The strict inequality `Re(s)>7/8` does **not** exclude an endpoint zero.
+
+**Owning source / source proof candidates.** On `grwtsk/math` existing
+`main`, mathematical source commit
+`ea6b6ba8faa0fcadd85051e8afd52a6af1ccab4a`, tree
+`c0712cb051fb784ce48b0b2d4a4ac5a5391e4c51`,
+`GRWTSK/NumberTheory/Zeta/Riemann/SevenEighthsDefectCriterion.lean`,
+blob `5885243b9c3a34658769a4a460ad9f136b455953`. Declarations,
+fully qualified under `GRWTSK.RiemannHypothesis`:
+`SevenEighthsDefectBound` (definition);
+`sevenEighthsZeroFree_iff_defectBound`,
+`acceptedPort_defectBound`, `defect_at_sevenEighths_fixture`,
+`rh_of_defectBound_and_remaining`,
+`remainingDefectGap_iff_rh_of_defectBound` (source proof candidates).
+The `9/16` endpoint fixture is an exact algebraic observation,
+**not** an assertion that `7/8` is an actual zero. No external OAI
+module or theorem proof is locally imported.
+
+**Connection/obligation classification.** Existing
+`ExternalSevenEighthsBand`, `ZeroSymmetry`,
+`ZetaZeroFreeHalfPlaneAdapter`, `CriticalLineDefect` and
+`OpenAISevenEighthsPort` are **imported local source mathematics**;
+their verification status must not be inferred from import presence.
+The new equivalence and cap extraction are **local source proof
+candidates**, NOT KERNEL_VERIFIED. `AcceptedExternalRawHalfPlanePort`
+is a **conditional interface** whose current pinned review is
+provably not admission-ready. Existing
+`RemainingSevenEighthsDefectGap` is a **separate unresolved analytic
+supplier**: zero-free `7/8` gives only `rhDefect≤9/16`, never
+`rhDefect=0`. Under BOTH the defect cap and this still-open supplier,
+the local candidate concludes the exact Mathlib `RiemannHypothesis`;
+this is a conditional reduction, not a proof of RH. Connections to
+`CriticalLinePositivityCriterion`, `MirrorPairingCriterion` and
+`SevenEighthsMechanismQuarticBridge` remain separate formal
+equivalence/conditional mechanisms, not new arithmetic suppliers.
+Farey, Gaussian modular/Dirichlet, Hodge and Hecke/Siegel connections
+remain **analogies/unresolved typed source maps**; none supplies
+principal-character pole handling, full Dirichlet/Hecke character
+universality, or a new zeta inequality. **Finite evidence:** only
+the algebraic 7/8 endpoint fixture; no enumerated zeta zeros.
+
+**Verification.** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
+GRWTSK toolchain Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`;
+upstream OpenAI Lean `v4.34.1`, Mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`.
+Actual local compile exit: **NOT_RUN**; fresh kernel checker exit:
+**NOT_RUN**; transitive axiom results: **NOT_RUN**; execution receipt:
+**unavailable**. Source inspection of declarations and a non-force
+Git integration are not Lean acceptance. Required exact-commit
+commands include `lake build --wfail
+GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsDefectCriterion`,
+fresh `lean --trust=0`, `leanchecker` with actual supported flags,
+and `#print axioms` on all new theorems. Preserve transitive
+dependencies, check source-order, and reject `sorryAx`, new project
+axioms or unsafe shortcuts. Queue verification in GitHub issues;
+effectful execution and receipts outside math in `grwtsk/noeaaeue`,
+no Railway or unauthorized remote dispatch, no force push or merge.
+
 ### OpenAI CM Hodge paper; two meanings of Hodge remain separated
 
 **Paper:** OpenAI, *The rational Hodge conjecture for CM abelian
