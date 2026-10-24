@@ -402,6 +402,102 @@ theorem admissibleRangeTarget_shift_unit_gap
 end AdmissibleRangeTargetHilbert
 
 
+
+/-!
+## A concrete Schur pencil for the admissible-range certificate *target*
+
+The effective operator here is the actual pulled-back target matrix,
+not merely the Gram matrix from the certificate. The original checked
+certificate and the containment of the coordinate range in the
+admissible set supply its global positive semidefiniteness *after*
+pullback. Thus the existing finite moment Schur lift applies without
+silently asserting any positivity of the original target on all vectors.
+-/
+
+section AdmissibleTargetSchur
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+
+/-- An explicit coupled Schur block whose effective operator is the
+unit shift of the actual target restricted to the coordinate range T.
+The algebraic construction does not require the certificate to check,
+but its determinant nonvanishing theorem below does. -/
+noncomputable def admissibleTargetSchurLift
+    {Z : Type*} {n m : ℕ}
+    (P : Problem ℝ ι ε γ) (T : Matrix ι (Fin n) ℝ)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    BlockPencil Z (Fin n) (Fin m) ℝ :=
+  BlockPencil.momentSchurLift
+    (fun _ : Z => admissibleRangeTargetOperator P T)
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V
+
+/-- The constructed effective Schur block is literally the Euclidean
+matrix of I plus the pulled-back certificate target. -/
+theorem admissibleTargetSchurLift_effective
+    {Z : Type*} {n m : ℕ}
+    (P : Problem ℝ ι ε γ) (T : Matrix ι (Fin n) ℝ)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    (admissibleTargetSchurLift P T U V).effective z =
+      euclideanOperatorMatrix
+        (momentMatrix (admissibleRangeTargetOperator P T)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))) := by
+  exact BlockPencil.momentSchurLift_effective
+    (fun _ : Z => admissibleRangeTargetOperator P T)
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V z
+
+/-- The full block determinant equals the determinant of the shifted
+*restricted target*, independently of U,V. -/
+theorem admissibleTargetSchurLift_full_det
+    {Z : Type*} {n m : ℕ}
+    (P : Problem ℝ ι ε γ) (T : Matrix ι (Fin n) ℝ)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((admissibleTargetSchurLift P T U V).full z).det =
+      (momentMatrix (admissibleRangeTargetOperator P T)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))).det := by
+  exact BlockPencil.momentSchurLift_full_det
+    (fun _ : Z => admissibleRangeTargetOperator P T)
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V z
+
+/-- No full Schur determinant zero is possible if the certificate
+checks and every vector of the chosen coordinate range is admissible.
+In particular, this does not assert the original target globally PSD
+outside that range. -/
+theorem admissibleTargetSchurLift_full_det_ne_zero
+    {Z : Type*} {n m : ℕ}
+    (P : Problem ℝ ι ε γ) (S : Certificate ℝ ι ε γ ν)
+    (hCheck : check P S = true)
+    (T : Matrix ι (Fin n) ℝ)
+    (hRange : ∀ x : Fin n → ℝ, P.Admissible (T *ᵥ x))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((admissibleTargetSchurLift P T U V).full z).det ≠ 0 := by
+  rw [admissibleTargetSchurLift_full_det]
+  have hinj :
+      Function.Injective
+        (momentMatrix (admissibleRangeTargetOperator P T)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))) :=
+    positive_operator_moment_injective
+      (admissibleRangeTargetOperator P T)
+      (admissibleRangeTargetOperator_nonneg P S hCheck T hRange)
+  have hker :
+      LinearMap.ker
+        (momentMatrix (admissibleRangeTargetOperator P T)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  intro hzero
+  exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+
+end AdmissibleTargetSchur
+
+
 end Refinement
 
 
