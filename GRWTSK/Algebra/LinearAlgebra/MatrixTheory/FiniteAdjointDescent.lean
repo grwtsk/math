@@ -132,6 +132,7 @@ theorem observability_of_normed_realization
     {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
     (s : Finset κ) (t : Finset ι) (A : ι → κ → ℝ)
     (J : F →L[ℝ] F) (encode : (κ → ℝ) → F) (γ : ℝ)
+    (hγ : 0 ≤ γ)
     (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
     (hinput : ∀ v : κ → ℝ, energy s v = ‖encode v‖ ^ 2)
     (houtput : ∀ v : κ → ℝ,
@@ -140,8 +141,9 @@ theorem observability_of_normed_realization
     γ ^ 2 * energy s v ≤ energy t (applyMatrix s A v) := by
   rw [hinput v, houtput v]
   have hg := hgap (encode v)
-  nlinarith [sq_nonneg (γ * ‖encode v‖),
-    sq_nonneg (‖J (encode v)‖ - γ * ‖encode v‖)]
+  have hnonneg : 0 ≤ γ * ‖encode v‖ := mul_nonneg hγ (norm_nonneg _)
+  nlinarith [mul_nonneg (sub_nonneg.mpr hg)
+    (add_nonneg (norm_nonneg (J (encode v))) hnonneg)]
 
 /-- A norm-preserving coordinate realization and a positive operator gap
 give strict relative contraction without suppressing either identity. -/
@@ -161,6 +163,6 @@ theorem residual_relative_contraction_of_normed_realization
   constructor
   · apply residual_relative_contraction s t A (γ ^ 2)
     intro w
-    exact observability_of_normed_realization s t A J encode γ hgap hinput houtput w
+    exact observability_of_normed_realization s t A J encode γ hγ.le hgap hinput houtput w
   · exact residual_relative_factor_lt_one s t A (γ ^ 2) (sq_pos_of_pos hγ)
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
