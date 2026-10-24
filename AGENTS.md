@@ -11,3 +11,10 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Do not commit process runners, mutable caches, execution attempts, receipts, controller state, schedules, authority records, WSC coordination, generated capsule state, or Git-effect machinery here.
 - Implement effectful verification, repository mutation, proof-capsule assembly, and generated documentation in `grwtsk/noeaaeue`, bound to a pinned math commit.
 - Do not promote a finite computation, conditional implication, or representational analogy to a stronger theorem without an explicit proved bridge.
+
+## Privacy and local attribution
+
+- Use exactly `grwtsk contributors` for local attribution and Git author/committer metadata, with `contributors@grwtsk.invalid` for Git email.
+- Where an individual human reference is necessary, use only `R.A.` or `Hs`. Keep personal names, personal email addresses, private account handles, and personal device identifiers out of maintained content.
+- Preserve public researchers' source bylines, upstream authorship, and license obligations.
+- Privacy redactions affect historical source displays, encoded recipes, and receipts. Original hashes and source pins describe pre-redaction evidence; they do not certify edited bytes. Redaction and rewritten Git identities do not establish fresh replay, kernel verification, or stronger mathematical acceptance.
