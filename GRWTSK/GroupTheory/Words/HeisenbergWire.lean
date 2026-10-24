@@ -157,6 +157,8 @@ theorem decodeCoordinate_encodeCoordinate (value : ℤ)
   | negSucc value =>
     change packNatLE (unpackNatLE 16 (value + 1)) = value + 1 at hmag
     simp [decodeCoordinate, encodeCoordinate, ByteWire.unpackNatLE_length, hmag]
+    rw [Int.negSucc_eq, Int.neg_add]
+    exact Int.add_comm _ _
 
 /-- Input order is literal concatenation of x, then y, then z. -/
 def encodeRecord (value : IntegralHeisenberg) : List UInt8 :=
