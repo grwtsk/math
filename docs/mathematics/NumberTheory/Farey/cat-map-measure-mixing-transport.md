@@ -241,6 +241,15 @@ interactive runtime. Source inspections and
 previous finite-torsion Python receipts
 (do not test real measured mixing)
 cannot upgrade the new theorem's status.
+Exact-commit passive verification requests are
+[math #1152](https://github.com/grwtsk/math/issues/1152) and
+[noeaaeue #394](https://github.com/grwtsk/noeaaeue/issues/394),
+both pinned to math source snapshot
+`c5ed3a83de29986cc60dbad098faa82f17e48014`
+(tree `c394b13e4735e1c47e5befe8625868855cf7f9ef`).
+They are **queued requests only**; no runner was
+dispatched, and no new Lean build, fresh kernel check
+or complete transitive axiom audit was performed.
 All effectful execution state and eventual
 verifier receipts belong in `grwtsk/noeaaeue`,
 not in `grwtsk/math`; preserve prior
