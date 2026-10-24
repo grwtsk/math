@@ -1,0 +1,106 @@
+# ofRangeLe
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:0446802f479c225ab0ff481b3ca596f52d1287cf7be9853991b6ac6b37b3d6b2",
+  "kind": "def",
+  "lexical_name": "ofRangeLe",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ofrangele--82d260e8630e3d17da1ea98e",
+  "source": {
+    "blob": "fbb7bac9af44cb97ea78ceb62498d1e6fc03ed04",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 74,
+    "line": 50,
+    "path": "GRWTSK/Algebra/LinearAlgebra/SingularLinearSolver/Variantb458669ff846783ef1260c709ae73af9095b98ffbece14be21300a8a83a7e103.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:82d260e8630e3d17da1ea98eae9d2728fd6fc527fd3a8965214fb71e588b894d",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/SingularLinearSolver/Variantb458669ff846783ef1260c709ae73af9095b98ffbece14be21300a8a83a7e103.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:0446802f479c225ab0ff481b3ca596f52d1287cf7be9853991b6ac6b37b3d6b2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 50–74.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+noncomputable def ofRangeLe
+    (A : (ι → ℝ) →ₗ[ℝ] (ι → ℝ))
+    (B : (κ → ℝ) →ₗ[ℝ] (ι → ℝ))
+    (h : LinearMap.range B ≤ LinearMap.range A) :
+    LinearRangeFactorization A B := by
+  let R := LinearMap.range A
+  let BtoR : (κ → ℝ) →ₗ[ℝ] R :=
+    B.codRestrict R (fun u => h (LinearMap.mem_range_self B u))
+  letI : Module.Projective ℝ R :=
+    Module.Projective.of_basis (Module.finBasis ℝ R)
+  let sectionExists :=
+    A.rangeRestrict.exists_rightInverse_of_surjective A.range_rangeRestrict
+  let linearSection := Classical.choose sectionExists
+  have hsection := Classical.choose_spec sectionExists
+  refine
+    { solve := linearSection.comp BtoR
+      factor := ?_ }
+  apply LinearMap.ext
+  intro u
+  change A (linearSection (BtoR u)) = B u
+  have hsection_u := LinearMap.congr_fun hsection (BtoR u)
+  exact congrArg Subtype.val hsection_u
+
+omit [Fintype ι] [Fintype κ] in
+@[simp]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/SingularLinearSolver/Variantb458669ff846783ef1260c709ae73af9095b98ffbece14be21300a8a83a7e103.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/SingularLinearSolver/Variantb458669ff846783ef1260c709ae73af9095b98ffbece14be21300a8a83a7e103.lean#L50).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `fbb7bac9af44cb97ea78ceb62498d1e6fc03ed04` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

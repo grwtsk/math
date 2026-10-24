@@ -1,0 +1,123 @@
+# Verification target: GRWTSK.Algebra.LinearAlgebra.UniformConvergence.Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1ae336ec74038ab161e8d09821b05825ac5d4f22",
+  "lexical_observation_count": 60,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/index.md) · [Full source](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1ae336ec74038ab161e8d09821b05825ac5d4f22`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.Algebra.UniformMulAction` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.Pi` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.UniformSpace.UniformConvergenceTopology` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--148bcb5e9d5630f37362a51a.md) | 48 | `declaration-track:148bcb5e9d5630f37362a51a69ae05f9051e0dd3048987c868e27b2596cc11c9` |
+| 2 | `lemma` | [UniformFun.toFun_one](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-tofun-one--e60adbb2db896f42c1390050.md) | 51 | `result-track:e60adbb2db896f42c13900504f958bd3ba505495e110be8cc1f079c9c6103dbd` |
+| 3 | `lemma` | [UniformFun.ofFun_one](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-offun-one--0c131100bf721fcdf3f1500d.md) | 54 | `result-track:0c131100bf721fcdf3f1500dd6a56bbde2b6e1dc93915cc87916ea91b4177b54` |
+| 4 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--2efe48f123a388a7c85be239.md) | 56 | `declaration-track:2efe48f123a388a7c85be2393e25ebc72f6f3855965cf04a5fb41478ddd8d60e` |
+| 5 | `lemma` | [UniformOnFun.toFun_one](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-tofun-one--d597d00851268124db938e61.md) | 59 | `result-track:d597d00851268124db938e610b1a91cb058c57a6b22b6cb3549f32896d77544e` |
+| 6 | `lemma` | [UniformOnFun.one_apply](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-one-apply--3a90c0b82bea085d0712b99b.md) | 62 | `result-track:3a90c0b82bea085d0712b99b5dc11d31f042541d8f287b914fa637dd3afafae4` |
+| 7 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--3e536b844e375ce6feb83702.md) | 64 | `declaration-track:3e536b844e375ce6feb83702076dea161e96aab909fb591eb2e0b7c0b26c8c07` |
+| 8 | `lemma` | [UniformFun.toFun_mul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-tofun-mul--be29489070c1f6876a180cdf.md) | 67 | `result-track:be29489070c1f6876a180cdffdce11432e5287d915dd538e97eeec671ddbfa07` |
+| 9 | `lemma` | [UniformFun.ofFun_mul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-offun-mul--00cd2e1c63b243284a38a0a0.md) | 70 | `result-track:00cd2e1c63b243284a38a0a0ef0b4fb918e55a13c852b15860034691ef25ae9b` |
+| 10 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--3422a64115d4c0179ce67858.md) | 72 | `declaration-track:3422a64115d4c0179ce67858f54aa5fc7e30fcd9e133d3d5b4b392f9d1a91fc5` |
+| 11 | `lemma` | [UniformOnFun.toFun_mul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-tofun-mul--f01796ca11b78c1b8078a753.md) | 75 | `result-track:f01796ca11b78c1b8078a753f1eef8dcde1f2add42700a3298e6eb909b59689d` |
+| 12 | `lemma` | [UniformOnFun.ofFun_mul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-offun-mul--f3654f6ec18c007b47f60eee.md) | 80 | `result-track:f3654f6ec18c007b47f60eee6020f817b05bf43c66e3c4704b17a8ec4a38b753` |
+| 13 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--a2d777559f1c81ebdf618ad5.md) | 82 | `declaration-track:a2d777559f1c81ebdf618ad5314930104be9a0532ddccb7d2bdf9cbc2300bfdf` |
+| 14 | `lemma` | [UniformFun.toFun_inv](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-tofun-inv--0158b8afd1e3e2b422416dcf.md) | 85 | `result-track:0158b8afd1e3e2b422416dcff16757045de2108f63b92a8b3c93ef81a91c734a` |
+| 15 | `lemma` | [UniformFun.ofFun_inv](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-offun-inv--9382585157954ebe6daed2df.md) | 88 | `result-track:9382585157954ebe6daed2df0de6924a845737b6a43d024f7ba581e294e75e4b` |
+| 16 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--a744162dc991e4ff390ed828.md) | 90 | `declaration-track:a744162dc991e4ff390ed828da0527dd206c6dc7eafe340e72bdb8bf72f03a2e` |
+| 17 | `lemma` | [UniformOnFun.toFun_inv](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-tofun-inv--3e7dbd52e9cda9792cd776d3.md) | 93 | `result-track:3e7dbd52e9cda9792cd776d30faee213ae85a081953684c3a460120cd37a7254` |
+| 18 | `lemma` | [UniformOnFun.ofFun_inv](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-offun-inv--c8e61ddf7b62c7af96993a79.md) | 96 | `result-track:c8e61ddf7b62c7af96993a795a5cd8be71d488c80023e2d8528c07a91a261ce5` |
+| 19 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--e76192318a5911a23d60fe97.md) | 98 | `declaration-track:e76192318a5911a23d60fe97c3b1bd2c4b0f1758a8c1770410845c7d42fb3558` |
+| 20 | `lemma` | [UniformFun.toFun_div](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-tofun-div--48603ac5b76daf4367089dcb.md) | 101 | `result-track:48603ac5b76daf4367089dcb636eb32f931bd8be9c61bec243e6ac14bdf290d2` |
+| 21 | `lemma` | [UniformFun.ofFun_div](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-offun-div--c451c659bb650db2ccdb79f7.md) | 104 | `result-track:c451c659bb650db2ccdb79f7fef4659b163302dda97cd81ad14de1f6a03095f1` |
+| 22 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--7495c00ea563f3472f675d71.md) | 106 | `declaration-track:7495c00ea563f3472f675d71f1a20b0fb11fba96e8b63638910b4715347a4abe` |
+| 23 | `lemma` | [UniformOnFun.toFun_div](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-tofun-div--1926967a9881adfc4c69306d.md) | 109 | `result-track:1926967a9881adfc4c69306d96c2f638530cb801083ff848da40bb5e9e973aa9` |
+| 24 | `lemma` | [UniformOnFun.ofFun_div](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-offun-div--28d1e107dde7a8f4621517b5.md) | 114 | `result-track:28d1e107dde7a8f4621517b5c80d24026a94a1c6ee6d5142de72a657a9c33563` |
+| 25 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--7ed0517cf00cf79dd9413f12.md) | 117 | `declaration-track:7ed0517cf00cf79dd9413f12165a7f157de6ebef55d06a9a982e758d731f411e` |
+| 26 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--ab7ed5575a901754d5ca3c43.md) | 121 | `declaration-track:ab7ed5575a901754d5ca3c4349e98a71e76359759a36bd438b74f36c9c156957` |
+| 27 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--abfe143e158e407fb3c688f3.md) | 125 | `declaration-track:abfe143e158e407fb3c688f3901e6acc57607daeaa8896069ffa323be75eae22` |
+| 28 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--12fd5cb7f92d1f05dda82bb9.md) | 129 | `declaration-track:12fd5cb7f92d1f05dda82bb9e79587d438e3df0484201b95a83475e32138a1be` |
+| 29 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--66b373dbe499124bb6ab8a05.md) | 133 | `declaration-track:66b373dbe499124bb6ab8a053d14c325ec3c7aee56335475b45a2e1cb71af095` |
+| 30 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--a36579abd761e3a501e4ab60.md) | 137 | `declaration-track:a36579abd761e3a501e4ab60193a44b176006e847fa9bd99a3e43a5f5723a64b` |
+| 31 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--1a65c757c39d6d760da40861.md) | 141 | `declaration-track:1a65c757c39d6d760da40861b9387d966cb6ebdc3a7ba4a97a6b7555893968cd` |
+| 32 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--acc13be4b654e65421afb81c.md) | 145 | `declaration-track:acc13be4b654e65421afb81c021b09336eeaa2e220444805152533630f41db39` |
+| 33 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--408b778bbd42b378f94bb46f.md) | 148 | `declaration-track:408b778bbd42b378f94bb46f54e0bdadb44b9162643558014a7ce9534d5496c1` |
+| 34 | `lemma` | [UniformFun.toFun_smul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-tofun-smul--19b7f95b1c908a85e279ca22.md) | 151 | `result-track:19b7f95b1c908a85e279ca22080abe3a4cd4a545ce94d37cdc6de6dacb1e9716` |
+| 35 | `lemma` | [UniformFun.ofFun_smul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-offun-smul--625af536f59e47552f56a4fc.md) | 156 | `result-track:625af536f59e47552f56a4fc15b52ccec16637d393a92693bcbce0007201e8de` |
+| 36 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--7c182565ed3e5e55996035bf.md) | 160 | `declaration-track:7c182565ed3e5e55996035bfd0eb56a20def7ba6ae78fd09431cef4a70faa409` |
+| 37 | `lemma` | [UniformOnFun.toFun_smul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-tofun-smul--a18d298b5ea07ee09f94535e.md) | 163 | `result-track:a18d298b5ea07ee09f94535e7cf4929f15c8d10727611fac9dc123e992152ec3` |
+| 38 | `lemma` | [UniformOnFun.ofFun_smul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-offun-smul--b16ddd831231ed9ac334eef3.md) | 168 | `result-track:b16ddd831231ed9ac334eef3d6bb73e8e4a9d32b45d215dc2ff2af4265227fad` |
+| 39 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--9f024a428772a30bf5fc68d1.md) | 172 | `declaration-track:9f024a428772a30bf5fc68d1a5afc547762d7ee02109fab9f88a6bde1e7955bb` |
+| 40 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--8953c044be2bc74edf15df95.md) | 176 | `declaration-track:8953c044be2bc74edf15df9561326843e05b5d621620ef98c4f01a6704e18d88` |
+| 41 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--55e88c13a34629b5e5d60b0a.md) | 180 | `declaration-track:55e88c13a34629b5e5d60b0aabad66b9bd4de4b157e88e816f8174a6886c1d1c` |
+| 42 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--2f17ad6d4057ab21b56590d2.md) | 184 | `declaration-track:2f17ad6d4057ab21b56590d2369301e29445878ed39f92b5759825412cfdec94` |
+| 43 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--b0cdeecd0ce13c37deea6a42.md) | 188 | `declaration-track:b0cdeecd0ce13c37deea6a42270901330c88188ee558af2cf04797f1f3b41b6a` |
+| 44 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--88256b5351cabbd5d734ca0c.md) | 190 | `declaration-track:88256b5351cabbd5d734ca0c9525231a05fc59d5fd413746fa42d89b85665a62` |
+| 45 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--24629082fd7d0e24b15980fc.md) | 192 | `declaration-track:24629082fd7d0e24b15980fcba17138b35448ddfd5c9892185f5c4d7d8ff9525` |
+| 46 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--7e514a7f9f4fd32b686970cf.md) | 196 | `declaration-track:7e514a7f9f4fd32b686970cf4d976c94fbcd36a19441aa126eb4cf59abe53b47` |
+| 47 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--b36e168adf294ebefd227b4f.md) | 200 | `declaration-track:b36e168adf294ebefd227b4f0dcbf0f2354fc615ea30422c7d83990f363ba8aa` |
+| 48 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--2b4bd327e21b9db040199fe5.md) | 203 | `declaration-track:2b4bd327e21b9db040199fe5d6ba5237d65b10cfe257b573d898466de1ee4881` |
+| 49 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--e1269f0e597c95a3b8739bc0.md) | 215 | `declaration-track:e1269f0e597c95a3b8739bc0140d9dad1ea78af6a3d9262a6c4109c20b517fcd` |
+| 50 | `theorem` | [UniformFun.hasBasis_nhds_one_of_basis](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-hasbasis-nhds-one-of-basis--912c8cedae9770be94a92906.md) | 225 | `result-track:912c8cedae9770be94a92906dc65e9ec4141613d44003b045c6d74b071000f9a` |
+| 51 | `theorem` | [UniformFun.hasBasis_nhds_one](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-hasbasis-nhds-one--ef4d3a240b45ff9828fa1759.md) | 232 | `result-track:ef4d3a240b45ff9828fa17595f50d73d017b47c54102277eca8ce0085872adab` |
+| 52 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/instance--d130a3547e89d831b6c2eb6a.md) | 241 | `declaration-track:d130a3547e89d831b6c2eb6a5af4d3f0af61d8906ac3606e3031fcf18d0bd19f` |
+| 53 | `theorem` | [UniformOnFun.hasBasis_nhds_one_of_basis](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-hasbasis-nhds-one-of-basis--09e3c32fc1ec6fce820e984c.md) | 251 | `result-track:09e3c32fc1ec6fce820e984c609f5887782d25c18ca0a106bfc6a201fc703119` |
+| 54 | `theorem` | [UniformOnFun.hasBasis_nhds_one](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-hasbasis-nhds-one--bb1d4fda53169362b32a5be7.md) | 261 | `result-track:bb1d4fda53169362b32a5be7bbe13082e13d1c2b0ed7d54b34a8a589c3ea5a81` |
+| 55 | `lemma` | [UniformOnFun.ofFun_prod](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-offun-prod--5d1e004a717f9e73bb2df9e7.md) | 269 | `result-track:5d1e004a717f9e73bb2df9e733bc1b65ef332d5b2ea1099188370be25b1736cb` |
+| 56 | `lemma` | [UniformOnFun.toFun_prod](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformonfun-tofun-prod--c749a37dd47a572be9912af3.md) | 274 | `result-track:c749a37dd47a572be9912af3cc4d7e5e96831e648715fe1d735254065a03f6f4` |
+| 57 | `lemma` | [UniformFun.ofFun_prod](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-offun-prod--50491cf98a895fc6669d17d2.md) | 279 | `result-track:50491cf98a895fc6669d17d2810e2f6c4a6de0cdb7847ebf5d25f41dae53c1e7` |
+| 58 | `lemma` | [UniformFun.toFun_prod](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-tofun-prod--920cf43b2fd7e49b79a3d69c.md) | 284 | `result-track:920cf43b2fd7e49b79a3d69ce67f93942f015db5014a1017a8a357a589f52bfa` |
+| 59 | `instance` | [UniformFun.uniformContinuousConstSMul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfun-uniformcontinuousconstsmul--11886ae7b58c17f35b0fa94c.md) | 294 | `declaration-track:11886ae7b58c17f35b0fa94c1b008aa969cd91fa18f1f609837f2a1987ce0692` |
+| 60 | `instance` | [UniformFunOn.uniformContinuousConstSMul](../../../../../mathematics/Algebra/LinearAlgebra/UniformConvergence/Variant0860a84f6024bc5ca0602f412c524ae72e182bb1bbf130dd0321d8acdb05d21b.lean/declarations/uniformfunon-uniformcontinuousconstsmul--2f0d2f049a9b8e9761d69513.md) | 299 | `declaration-track:2f0d2f049a9b8e9761d6951398378f9c39e8a495547d22d3b3df7d74346a2de5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

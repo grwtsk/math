@@ -1,0 +1,178 @@
+# Complete source: GRWTSK.Algebra.Convolution.Variant2c0f02df22250424542e8f53ae3c940e034fb6d45865f9d58491c69cec2cdbf1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bd65bf27e7cd7f52907c76f2edd3504620763499` · SHA-256 `ee9021903cfd87e59e96913e008476f327d0efdab9515fb2f81b152574362cda`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.ConvOneDef.Variant1bb42706fc6339e50bddd470e49254f99b2a07cb4ce70dfb220e1076d739e08e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1bb42706fc6339e50bddd470e49254f99b2a07cb4ce70dfb220e1076d739e08e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.ConvOneDef.Variant1bb42706fc6339e50bddd470e49254f99b2a07cb4ce70dfb220e1076d739e08e","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"1bb42706fc6339e50bddd470e49254f99b2a07cb4ce70dfb220e1076d739e08e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/Bialgebra/Convolution.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Yaël Dillies, Michał Mrugała. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies, Michał Mrugała
+-/
+module
+
+public import Mathlib.RingTheory.Bialgebra.TensorProduct
+public import Mathlib.RingTheory.Coalgebra.Convolution
+
+/-!
+# Convolution product on bialgebra homs
+
+This file constructs the ring structure on algebra homs `C → A` where `C` is a bialgebra and `A` an
+algebra, and also the ring structure on bialgebra homs `C → A` where `C` and `A` are bialgebras.
+Both multiplications are given by
+```
+         |
+         μ
+|   |   / \
+f * g = f g
+|   |   \ /
+         δ
+         |
+```
+diagrammatically, where `μ` stands for multiplication and `δ` for comultiplication.
+-/
+
+
+namespace GRWTSK.Algebra.ConvOneDef.Variant1bb42706fc6339e50bddd470e49254f99b2a07cb4ce70dfb220e1076d739e08e
+
+public section
+
+suppress_compilation
+
+open Algebra Coalgebra Bialgebra TensorProduct WithConv
+
+variable {R A B C : Type*} [CommSemiring R]
+
+namespace AlgHom
+variable [CommSemiring A] [CommSemiring B] [Semiring C] [Bialgebra R C] [Algebra R A]
+
+instance : One (WithConv <| C →ₐ[R] A) where
+  one := toConv <| (Algebra.ofId R A).comp <| counitAlgHom R C
+
+instance : Mul (WithConv <| C →ₐ[R] A) where
+  mul f g := toConv <| .comp (lmul' R) <| .comp (map f.ofConv g.ofConv) <| comulAlgHom R C
+
+instance : Pow (WithConv <| C →ₐ[R] A) ℕ := ⟨fun f n ↦ npowRec n f⟩
+
+lemma convOne_def : 1 = toConv ((Algebra.ofId R A).comp (counitAlgHom R C)) := rfl
+
+lemma convMul_def (f g : WithConv <| C →ₐ[R] A) :
+    f * g = toConv (.comp (lmul' R) <| .comp (map f.ofConv g.ofConv) <| comulAlgHom R C) := rfl
+
+private lemma convPow_succ (f : WithConv <| C →ₐ[R] A) (n : ℕ) : f ^ (n + 1) = (f ^ n) * f := rfl
+
+@[simp]
+lemma convOne_apply (c : C) : (1 : WithConv <| C →ₐ[R] A) c = algebraMap R A (counit c) := rfl
+
+lemma convMul_apply (f g : WithConv <| C →ₐ[R] A) (c : C) :
+    (f * g) c = lift f.ofConv g.ofConv (fun _ _ ↦ .all ..) (comul c) := by
+  simp only [convMul_def, coe_comp, Function.comp_apply, Bialgebra.comulAlgHom_apply]
+  rw [← comp_apply]
+  congr 1
+  ext <;> simp
+
+@[simp]
+lemma toLinearMap_convOne : toConv (1 : WithConv <| C →ₐ[R] A).ofConv.toLinearMap = 1 := rfl
+
+@[simp]
+lemma toLinearMap_convMul (f g : WithConv <| C →ₐ[R] A) :
+    toConv (f * g).ofConv.toLinearMap = toConv f.ofConv.toLinearMap * toConv g.ofConv.toLinearMap :=
+  rfl
+
+@[simp]
+lemma toLinearMap_convPow (f : WithConv <| C →ₐ[R] A) :
+    ∀ n : ℕ, toConv (f ^ n).ofConv.toLinearMap = toConv f.ofConv.toLinearMap ^ n
+  | 0 => rfl
+  | n + 1 => by simp only [convPow_succ, toLinearMap_convMul, toLinearMap_convPow, pow_succ]
+
+lemma convMul_comp_bialgHom_distrib [Bialgebra R B] (f g : WithConv <| C →ₐ[R] A) (h : B →ₐc[R] C) :
+    AlgHom.comp (f * g).ofConv (h : B →ₐ[R] C) =
+      ofConv (toConv (f.ofConv.comp h) * toConv (g.ofConv.comp h)) := by
+  simp [convMul_def, comp_assoc, Algebra.TensorProduct.map_comp]
+
+lemma comp_convMul_distrib [Algebra R B] (h : A →ₐ[R] B) (f g : WithConv <| C →ₐ[R] A) :
+    h.comp (f * g).ofConv = ofConv (toConv (h.comp f.ofConv) * toConv (h.comp g.ofConv)) := by
+  apply toLinearMap_injective
+  apply WithConv.toConv_injective
+  rw [AlgHom.comp_toLinearMap, ← ofConv_toConv (f * g).ofConv.toLinearMap, toLinearMap_convMul]
+  simp [LinearMap.algHom_comp_convMul_distrib, toLinearMap_convMul]
+
+instance : Monoid (WithConv <| C →ₐ[R] A) := fast_instance%
+  (toConv_injective.comp <| toLinearMap_injective.comp ofConv_injective).monoid _
+    toLinearMap_convOne toLinearMap_convMul toLinearMap_convPow
+
+variable [IsCocomm R C]
+
+instance : CommMonoid (WithConv <| C →ₐ[R] A) := fast_instance%
+  (toConv_injective.comp <| toLinearMap_injective.comp ofConv_injective).commMonoid _
+    toLinearMap_convOne toLinearMap_convMul toLinearMap_convPow
+
+end AlgHom
+
+namespace BialgHom
+variable [CommSemiring A] [Semiring C] [Bialgebra R A] [Bialgebra R C]
+
+instance : One (WithConv <| C →ₐc[R] A) where
+  one := toConv <| (unitBialgHom R A).comp <| counitBialgHom R C
+
+lemma convOne_def : 1 = toConv ((unitBialgHom R A).comp (counitBialgHom R C)) := rfl
+
+@[simp]
+lemma convOne_apply (c : C) : (1 : WithConv <| C →ₐc[R] A) c = algebraMap R A (counit c) := rfl
+
+@[simp]
+lemma toLinearMap_convOne :
+    toConv (LinearMap.ofClass (1 : WithConv <| C →ₐc[R] A).ofConv) = 1 := rfl
+
+@[simp] lemma toAlgHom_convOne : toConv (1 : WithConv <| C →ₐc[R] A).ofConv.toAlgHom = 1 := rfl
+
+variable [IsCocomm R C]
+
+instance : Mul (WithConv <| C →ₐc[R] A) where
+  mul f g := toConv <| .comp (mulBialgHom R A) <| .comp (map f.ofConv g.ofConv) <| comulBialgHom R C
+
+instance : Pow (WithConv <| C →ₐc[R] A) ℕ := ⟨fun f n ↦ npowRec n f⟩
+
+lemma convMul_def (f g : WithConv <| C →ₐc[R] A) :
+    f * g =
+      toConv (.comp (mulBialgHom R A) <| .comp (map f.ofConv g.ofConv) <| comulBialgHom R C) :=
+  rfl
+
+private lemma convPow_succ (f : WithConv <| C →ₐc[R] A) (n : ℕ) : f ^ (n + 1) = (f ^ n) * f := rfl
+
+-- TODO: Make simp once `LinearMap.ofClass` is not simp nf anymore.
+-- @[simp]
+lemma toLinearMap_convMul (f g : WithConv <| C →ₐc[R] A) :
+    toConv (f * g).ofConv.toLinearMap = toConv f.ofConv.toLinearMap * toConv g.ofConv.toLinearMap :=
+  rfl
+
+@[simp]
+lemma toAlgHom_convMul (f g : WithConv <| C →ₐc[R] A) :
+    toConv (f * g).ofConv.toAlgHom = toConv f.ofConv.toAlgHom * toConv g.ofConv.toAlgHom :=
+  rfl
+
+-- TODO: Make simp once `LinearMap.ofClass` is not simp nf anymore.
+-- @[simp]
+lemma toLinearMap_convPow (f : WithConv <| C →ₐc[R] A) :
+    ∀ n, toConv (f ^ n).ofConv.toLinearMap = toConv f.ofConv.toLinearMap ^ n
+  | 0 => rfl
+  | n + 1 => by simp only [convPow_succ, pow_succ, toLinearMap_convMul, toLinearMap_convPow]
+
+@[simp]
+lemma toAlgHom_convPow (f : WithConv <| C →ₐc[R] A) :
+    ∀ n, toConv (f ^ n).ofConv.toAlgHom = toConv f.ofConv.toAlgHom ^ n
+  | 0 => rfl
+  | n + 1 => by simp only [convPow_succ, pow_succ, toAlgHom_convMul, toAlgHom_convPow]
+
+instance : CommMonoid (WithConv <| C →ₐc[R] A) := fast_instance%
+  (toConv_injective.comp <| coe_linearMap_injective.comp ofConv_injective).commMonoid _
+    toLinearMap_convOne toLinearMap_convMul toLinearMap_convPow
+
+end BialgHom
+````

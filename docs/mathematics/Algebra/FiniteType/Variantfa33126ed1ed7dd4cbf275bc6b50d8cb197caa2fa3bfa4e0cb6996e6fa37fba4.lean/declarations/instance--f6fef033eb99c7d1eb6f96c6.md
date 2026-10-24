@@ -1,0 +1,147 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:7295f724d82afc8e92ec8083e7f4da26f7d762d940fc037f753e32efd5045a67",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--f6fef033eb99c7d1eb6f96c6",
+  "source": {
+    "blob": "8841c3e85e719c6cf5288c7d1a8def2927cfea98",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 698,
+    "line": 633,
+    "path": "GRWTSK/Algebra/FiniteType/Variantfa33126ed1ed7dd4cbf275bc6b50d8cb197caa2fa3bfa4e0cb6996e6fa37fba4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:f6fef033eb99c7d1eb6f96c61348f7a8147bb7d5013209b05ba6cfe7bb923b92",
+  "verification": {
+    "reference": "docs/verification/Algebra/FiniteType/Variantfa33126ed1ed7dd4cbf275bc6b50d8cb197caa2fa3bfa4e0cb6996e6fa37fba4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:7295f724d82afc8e92ec8083e7f4da26f7d762d940fc037f753e32efd5045a67`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 633–698.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance (priority := 100) CommRing.orzechProperty
+    (R : Type*) [CommRing R] : OrzechProperty R := by
+  refine ⟨fun {M} _ _ _ {N} f hf ↦ ?_⟩
+  let := addCommMonoidToAddCommGroup R (M := M)
+  let := addCommMonoidToAddCommGroup R (M := N)
+  let i := N.subtype
+  let hi : Function.Injective i := N.injective_subtype
+  refine LinearMap.ker_eq_bot.1 <| LinearMap.ker_eq_bot'.2 fun n hn ↦ ?_
+  obtain ⟨k, mj, hmj⟩ := exists_fin (R := R) (M := M)
+  rw [← surjective_piEquiv_apply_iff] at hmj
+  obtain ⟨b, hb⟩ := hmj (i n)
+  choose nj hnj using fun j ↦ hf (mj j)
+  choose c hc using fun j ↦ hmj (i (nj j))
+  let A := Subring.closure (Set.range b ∪ Set.range c.uncurry)
+  let N' := span A ({n} ∪ Set.range nj)
+  let M' := span A (Set.range mj)
+  have : IsNoetherianRing A := is_noetherian_subring_closure _
+    (.union (Set.finite_range _) (Set.finite_range _))
+  have : Module.Finite A M' := span_of_finite A (Set.finite_range _)
+  refine congr($((LinearMap.ker_eq_bot'.1 <| LinearMap.ker_eq_bot.2 <|
+    IsNoetherian.injective_of_surjective_of_injective
+      ((i.restrictScalars A).restrict fun x hx ↦ ?_ : N' →ₗ[A] M')
+      ((f.restrictScalars A).restrict fun x hx ↦ ?_ : N' →ₗ[A] M')
+      (fun _ _ h ↦ injective_subtype _ (hi congr(($h).1)))
+      fun ⟨x, hx⟩ ↦ ?_) ⟨n, (subset_span (by simp))⟩ (Subtype.val_injective hn)).1)
+  · induction hx using span_induction with
+    | mem x hx =>
+      change i x ∈ M'
+      simp only [Set.singleton_union, Set.mem_insert_iff, Set.mem_range] at hx
+      rcases hx with hx | ⟨j, rfl⟩
+      · rw [hx, ← hb, piEquiv_apply_apply]
+        refine Submodule.sum_mem _ fun j _ ↦ ?_
+        let b' : A := ⟨b j, Subring.subset_closure (by simp)⟩
+        rw [show b j • mj j = b' • mj j from rfl]
+        exact smul_mem _ _ (subset_span (by simp))
+      · rw [← hc, piEquiv_apply_apply]
+        refine Submodule.sum_mem _ fun j' _ ↦ ?_
+        let c' : A := ⟨c j j', Subring.subset_closure
+          (by simp [show ∃ a b, c a b = c j j' from ⟨j, j', rfl⟩])⟩
+        rw [show c j j' • mj j' = c' • mj j' from rfl]
+        exact smul_mem _ _ (subset_span (by simp))
+    | zero => simp
+    | add x _ y _ hx hy => rw [map_add]; exact add_mem hx hy
+    | smul a x _ hx => rw [map_smul]; exact smul_mem _ _ hx
+  · induction hx using span_induction with
+    | mem x hx =>
+      change f x ∈ M'
+      simp only [Set.singleton_union, Set.mem_insert_iff, Set.mem_range] at hx
+      rcases hx with hx | ⟨j, rfl⟩
+      · rw [hx, hn]; exact zero_mem _
+      · exact subset_span (by simp [hnj])
+    | zero => simp
+    | add x _ y _ hx hy => rw [map_add]; exact add_mem hx hy
+    | smul a x _ hx => rw [map_smul]; exact smul_mem _ _ hx
+  suffices x ∈ LinearMap.range ((f.restrictScalars A).domRestrict N') by
+    obtain ⟨a, ha⟩ := this
+    exact ⟨a, Subtype.val_injective ha⟩
+  induction hx using span_induction with
+  | mem x hx =>
+    obtain ⟨j, rfl⟩ := hx
+    exact ⟨⟨nj j, subset_span (by simp)⟩, hnj j⟩
+  | zero => exact zero_mem _
+  | add x y _ _ hx hy => exact add_mem hx hy
+  | smul a x _ hx => exact smul_mem _ a hx
+
+end Orzech
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/FiniteType/Variantfa33126ed1ed7dd4cbf275bc6b50d8cb197caa2fa3bfa4e0cb6996e6fa37fba4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/FiniteType/Variantfa33126ed1ed7dd4cbf275bc6b50d8cb197caa2fa3bfa4e0cb6996e6fa37fba4.lean#L633).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8841c3e85e719c6cf5288c7d1a8def2927cfea98` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

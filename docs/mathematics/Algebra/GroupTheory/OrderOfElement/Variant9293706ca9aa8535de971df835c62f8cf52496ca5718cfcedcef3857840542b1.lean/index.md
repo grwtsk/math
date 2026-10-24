@@ -1,0 +1,227 @@
+# GRWTSK.Algebra.GroupTheory.OrderOfElement.Variant9293706ca9aa8535de971df835c62f8cf52496ca5718cfcedcef3857840542b1
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**206 observed declarations and anonymous commands**, 192 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/GroupTheory/OrderOfElement/Variant9293706ca9aa8535de971df835c62f8cf52496ca5718cfcedcef3857840542b1.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `164f936a4b724ed12bdb6ef6873259a1b4c9838a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/GroupTheory/OrderOfElement/Variant9293706ca9aa8535de971df835c62f8cf52496ca5718cfcedcef3857840542b1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [isPeriodicPt_mul_iff_pow_eq_one](declarations/isperiodicpt-mul-iff-pow-eq-one--0683feb76e3dd67df1f5154f.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [IsOfFinOrder](declarations/isoffinorder--5d131451fa6b642fc7950ce1.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [isOfFinAddOrder_ofMul_iff](declarations/isoffinaddorder-ofmul-iff--cc3a807e73d2c55a8376a021.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [isOfFinOrder_ofAdd_iff](declarations/isoffinorder-ofadd-iff--d3232108576db90a7cbd4df1.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [isOfFinOrder_iff_pow_eq_one](declarations/isoffinorder-iff-pow-eq-one--f8e5432121387135f99e96aa.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [isOfFinOrder_iff_zpow_eq_one](declarations/isoffinorder-iff-zpow-eq-one--3a1d6422d4bf5e47106d54b6.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [not_isOfFinOrder_of_injective_pow](declarations/not-isoffinorder-of-injective-pow--cbddd60ae4593a755a18609c.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [IsOfFinOrder.one](declarations/isoffinorder-one--c67c0ecb5f912c14f6fc249c.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [IsOfFinOrder.pow](declarations/isoffinorder-pow--a3436446732bfc38df5aa493.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [IsOfFinOrder.of_pow](declarations/isoffinorder-of-pow--91d49e2097e246af6a1b567c.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [isOfFinOrder_pow](declarations/isoffinorder-pow--6f7f2a96f27798827aa5c528.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [not_isOfFinOrder_of_isMulTorsionFree](declarations/not-isoffinorder-of-ismultorsionfree--18836379d84a2db512c66509.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [IsOfFinOrder.eq_one'](declarations/isoffinorder-eq-one--404e2b911b68127fceea0aa6.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [isOfFinOrder_iff_eq_one](declarations/isoffinorder-iff-eq-one--949e382159444cc6bbf51373.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [Submonoid.isOfFinOrder_coe](declarations/submonoid-isoffinorder-coe--c4464737bac0596ddd8b48f1.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [IsConj.isOfFinOrder](declarations/isconj-isoffinorder--723022789cb858c983f0bd21.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [MonoidHom.isOfFinOrder](declarations/monoidhom-isoffinorder--e8c8eaf644127e07b608fcfe.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [IsOfFinOrder.apply](declarations/isoffinorder-apply--b5d9fb43e602a2f26ecc1ec8.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `abbrev` | [IsOfFinOrder.groupPowers](declarations/isoffinorder-grouppowers--33ddb8a713388a542bd4b9f5.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [orderOf](declarations/orderof--c486fe770c11c508ba4affab.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [Subsingleton.orderOf_eq](declarations/subsingleton-orderof-eq--f59c7afa2edb2bf556111411.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [addOrderOf_ofMul_eq_orderOf](declarations/addorderof-ofmul-eq-orderof--3f3722f7c5b61b3383ce7557.md) | 198 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [orderOf_ofAdd_eq_addOrderOf](declarations/orderof-ofadd-eq-addorderof--58f709474532d6bf282f57e3.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [IsOfFinOrder.orderOf_pos](declarations/isoffinorder-orderof-pos--77b1b431181ce4eca959dd99.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [pow_orderOf_eq_one](declarations/pow-orderof-eq-one--3346f625f3f58ec0df6fd2cc.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [orderOf_eq_zero](declarations/orderof-eq-zero--5d972755ffbbae6ca6f9da92.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [orderOf_eq_zero_iff](declarations/orderof-eq-zero-iff--436432f261abeb7e550cf3f2.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [orderOf_eq_zero_iff'](declarations/orderof-eq-zero-iff--2c9b8fba7ea76a8fb10fa887.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `lemma` | [orderOf_ne_zero_iff](declarations/orderof-ne-zero-iff--3ce921562176df221380c2ef.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [orderOf_zero](declarations/orderof-zero--eafeb9f18e66ff34b6846432.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [orderOf_eq_iff](declarations/orderof-eq-iff--6fd131a4c6c27c88ad362b46.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [orderOf_pos_iff](declarations/orderof-pos-iff--fa4c46b65079ce0bb1264770.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [IsOfFinOrder.mono](declarations/isoffinorder-mono--1d3edba1249b165795d81b9e.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [pow_ne_one_of_lt_orderOf](declarations/pow-ne-one-of-lt-orderof--a96e932437576611e929729d.md) | 259 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [orderOf_le_of_pow_eq_one](declarations/orderof-le-of-pow-eq-one--8b70b27f7ab2c590fbf7eee5.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [orderOf_one](declarations/orderof-one--e347215e103f3e023df9ee28.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [orderOf_eq_one_iff](declarations/orderof-eq-one-iff--bf1898382cb66d4f92258830.md) | 270 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `lemma` | [pow_mod_orderOf](declarations/pow-mod-orderof--6f839cf073dd34cfc86a9b71.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [orderOf_dvd_of_pow_eq_one](declarations/orderof-dvd-of-pow-eq-one--30e91d443cc4a2993bbc319f.md) | 281 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [orderOf_dvd_iff_pow_eq_one](declarations/orderof-dvd-iff-pow-eq-one--23f197b345c4b92d05a4d536.md) | 285 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [exists_pow_eq_pow_two_mul](declarations/exists-pow-eq-pow-two-mul--de78ef1c16d7314b7c46b99c.md) | 292 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [orderOf_pow_dvd](declarations/orderof-pow-dvd--4dc9b47ee09ef4b20d1cedd8.md) | 301 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `lemma` | [pow_injOn_Iio_orderOf](declarations/pow-injon-iio-orderof--fd07e9e4f066c3984ec6400f.md) | 305 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `lemma` | [IsOfFinOrder.mem_powers_iff_mem_range_orderOf](declarations/isoffinorder-mem-powers-iff-mem-range-orderof--8028cfd7448f5443465b7940.md) | 310 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `lemma` | [IsOfFinOrder.powers_eq_image_range_orderOf](declarations/isoffinorder-powers-eq-image-range-orderof--8eb5eac73fc152a69fe7e364.md) | 316 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [pow_eq_pow_of_modEq](declarations/pow-eq-pow-of-modeq--cc5f256074c73a1695745589.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [pow_eq_one_iff_modEq](declarations/pow-eq-one-iff-modeq--b151602ed6317d93bfa76798.md) | 329 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [orderOf_map_dvd](declarations/orderof-map-dvd--b3ac01c77fa7ca584306ba02.md) | 333 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [exists_pow_eq_self_of_coprime](declarations/exists-pow-eq-self-of-coprime--f6162fdb0dc6bbacfc025c28.md) | 340 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [orderOf_eq_of_pow_and_pow_div_prime](declarations/orderof-eq-of-pow-and-pow-div-prime--623cec4fbed84c74b022ee36.md) | 353 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [orderOf_eq_orderOf_iff](declarations/orderof-eq-orderof-iff--f8e5f2b32fdea50481ddec96.md) | 373 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [orderOf_injective](declarations/orderof-injective--068376e7842029f9c8bbe413.md) | 379 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `lemma` | [MulEquiv.orderOf_eq](declarations/mulequiv-orderof-eq--b37ab3892c25e237d4a35f50.md) | 385 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [Function.Injective.isOfFinOrder_iff](declarations/function-injective-isoffinorder-iff--60403ae5c66f50d6a3308a2d.md) | 390 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [orderOf_submonoid](declarations/orderof-submonoid--e954260c3d70299f383aaebc.md) | 395 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [orderOf_units](declarations/orderof-units--b388c936890ca6c0226e4fe4.md) | 399 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `lemma` | [IsUnit.orderOf_eq_one](declarations/isunit-orderof-eq-one--2df2c258b8b2eab483ab2f02.md) | 403 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [Units.isOfFinOrder_val](declarations/units-isoffinorder-val--d5804d85dcb340f47a2659be.md) | 408 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `def` | [IsOfFinOrder.unit](declarations/isoffinorder-unit--d367654e7d44570cd545f19c.md) | 414 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `lemma` | [IsOfFinOrder.isUnit](declarations/isoffinorder-isunit--b268ed83ef826cf513811b74.md) | 420 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [orderOf_pow'](declarations/orderof-pow--2c8dfc3c9186d3cb6030d948.md) | 425 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `lemma` | [orderOf_pow_of_dvd](declarations/orderof-pow-of-dvd--5182e04a4426de50ee2c4322.md) | 430 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `lemma` | [orderOf_pow_orderOf_div](declarations/orderof-pow-orderof-div--2cff4cb15d5299eae4826060.md) | 434 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `lemma` | [IsOfFinOrder.orderOf_pow](declarations/isoffinorder-orderof-pow--507c9a23cb4ade847bd46543.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `lemma` | [Nat.Coprime.orderOf_pow](declarations/nat-coprime-orderof-pow--da8f78815eed980a0d756d9c.md) | 448 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `lemma` | [IsOfFinOrder.natCard_powers_le_orderOf](declarations/isoffinorder-natcard-powers-le-orderof--5ecd3e90400d4b7ff49af07b.md) | 454 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `lemma` | [IsOfFinOrder.finite_powers](declarations/isoffinorder-finite-powers--bf9f27a27784105d126f7264.md) | 461 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [orderOf_mul_dvd_lcm](declarations/orderof-mul-dvd-lcm--1fca49ffa7cadf580a3392a0.md) | 469 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [orderOf_dvd_lcm_mul](declarations/orderof-dvd-lcm-mul--276b766322b022005d593b68.md) | 475 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [orderOf_mul_dvd_mul_orderOf](declarations/orderof-mul-dvd-mul-orderof--427b4c5a6b38337f3bac0e21.md) | 488 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [orderOf_mul_eq_mul_orderOf_of_coprime](declarations/orderof-mul-eq-mul-orderof-of-coprime--ad13fd118d2adde497c49776.md) | 493 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [isOfFinOrder_mul](declarations/isoffinorder-mul--738d9da3ac62958e6a836be9.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [orderOf_mul_eq_right_of_forall_prime_mul_dvd](declarations/orderof-mul-eq-right-of-forall-prime-mul-dvd--873785a405d9ddef12e0884e.md) | 511 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [orderOf_mul_eq_left_of_forall_prime_mul_dvd](declarations/orderof-mul-eq-left-of-forall-prime-mul-dvd--91662bc61ac3d3f4832e6f91.md) | 530 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [orderOf_eq_prime_iff](declarations/orderof-eq-prime-iff--c34d845b755961066dedfc63.md) | 542 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [orderOf_eq_prime](declarations/orderof-eq-prime--14b85aed88219efa6c37614b.md) | 547 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [orderOf_eq_prime_pow](declarations/orderof-eq-prime-pow--6497c322f916441a5c888bc5.md) | 551 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [exists_orderOf_eq_prime_pow_iff](declarations/exists-orderof-eq-prime-pow-iff--9ae256dbb5277d644a65f6de.md) | 556 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [orderOf_neg_one](declarations/orderof-neg-one--3dc9f255c30bb019589d50ad.md) | 563 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `lemma` | [CharP.orderOf_eq_two_iff](declarations/charp-orderof-eq-two-iff--acddba68c5201c92145e0087.md) | 571 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `def` | [finEquivPowers](declarations/finequivpowers--e83081703a17af6527de2d24.md) | 583 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `lemma` | [finEquivPowers_apply](declarations/finequivpowers-apply--d1d823b6f93d20444e06fb5d.md) | 589 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `lemma` | [finEquivPowers_symm_apply](declarations/finequivpowers-symm-apply--74e1611e7d159af67889a061.md) | 594 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [IsOfFinOrder.pow_eq_pow_iff_modEq](declarations/isoffinorder-pow-eq-pow-iff-modeq--754cc35cb9c16c8715f593c0.md) | 602 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `lemma` | [IsOfFinOrder.pow_inj_mod](declarations/isoffinorder-pow-inj-mod--1d5b0e8a03b65578110b806c.md) | 610 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [pow_eq_pow_iff_modEq](declarations/pow-eq-pow-iff-modeq--0a63898711e8247ab66e9de9.md) | 619 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `lemma` | [injective_pow_iff_not_isOfFinOrder](declarations/injective-pow-iff-not-isoffinorder--21079a5479b197c1a02f86e5.md) | 627 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `lemma` | [pow_inj_mod](declarations/pow-inj-mod--aeef4adc27b9bc072af16e49.md) | 632 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [pow_inj_iff_of_orderOf_eq_zero](declarations/pow-inj-iff-of-orderof-eq-zero--bea900da1347f42269c9bd00.md) | 635 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [infinite_not_isOfFinOrder](declarations/infinite-not-isoffinorder--5d88a8614e1f538af4f8032c.md) | 639 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `lemma` | [finite_powers](declarations/finite-powers--3a41d1788b61ab246503a140.md) | 657 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `lemma` | [infinite_powers](declarations/infinite-powers--8b0781d9d7c3b2460506f604.md) | 665 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `lemma` | [Nat.card_submonoidPowers](declarations/nat-card-submonoidpowers--720b890467db7e9f6fcd003c.md) | 669 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [pow_eq_pow_iff_modEq](declarations/pow-eq-pow-iff-modeq--155fb6b9338f82c8cd9183d8.md) | 683 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `lemma` | [injective_pow_iff_not_isOfFinOrder](declarations/injective-pow-iff-not-isoffinorder--5ffa53100a8a7a817c8e13c1.md) | 706 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `lemma` | [pow_inj_mod](declarations/pow-inj-mod--9f40a05c4421266b744bc19b.md) | 712 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [pow_inj_iff_of_orderOf_eq_zero](declarations/pow-inj-iff-of-orderof-eq-zero--7482c85beb791640a00de80a.md) | 716 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [infinite_not_isOfFinOrder](declarations/infinite-not-isoffinorder--cd546311dc45fbde6fe693bf.md) | 720 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `lemma` | [finite_powers](declarations/finite-powers--6318442cc0ea6af1a5bc9e87.md) | 738 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `lemma` | [infinite_powers](declarations/infinite-powers--d9b761ff1ba40b1283f1cc62.md) | 751 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `lemma` | [Nat.card_submonoidPowers](declarations/nat-card-submonoidpowers--9bdfda154b1e7922f31ba589.md) | 755 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [isOfFinOrder_inv_iff](declarations/isoffinorder-inv-iff--457c5259c9ee1c9940fe2f29.md) | 772 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [orderOf_dvd_iff_zpow_eq_one](declarations/orderof-dvd-iff-zpow-eq-one--faa1acabd30c68eca73a1a6e.md) | 778 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [orderOf_inv](declarations/orderof-inv--7e810ea575fb4a7b7efe4e43.md) | 785 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [orderOf_dvd_sub_iff_zpow_eq_zpow](declarations/orderof-dvd-sub-iff-zpow-eq-zpow--81b9cc93494631aa7a531a1c.md) | 788 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [isSelfInv_iff_isOfFinOrder_and_orderOf_le_two](declarations/isselfinv-iff-isoffinorder-and-orderof-le-two--67de6af88de06e2e014d1dfd.md) | 792 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [IsOfFinOrder.isSelfInv_iff](declarations/isoffinorder-isselfinv-iff--2f146ba57d7bccbc63fa247c.md) | 803 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `lemma` | [orderOf_coe](declarations/orderof-coe--1068d37d105a301c62e740af.md) | 811 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `lemma` | [orderOf_mk](declarations/orderof-mk--d7b1499660627342c5b6290d.md) | 815 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `lemma` | [zpow_mod_orderOf](declarations/zpow-mod-orderof--d44d097fb49da169b330800d.md) | 820 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [zpow_pow_orderOf](declarations/zpow-pow-orderof--3505573594ca2545c41e1214.md) | 827 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [IsOfFinOrder.zpow](declarations/isoffinorder-zpow--3d91839432ed6d233d71bb0d.md) | 833 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [IsOfFinOrder.of_mem_zpowers](declarations/isoffinorder-of-mem-zpowers--0c558099fdcc5e7299588e12.md) | 837 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [orderOf_dvd_of_mem_zpowers](declarations/orderof-dvd-of-mem-zpowers--2f4ae232a7111347fa80d466.md) | 843 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [smul_eq_self_of_mem_zpowers](declarations/smul-eq-self-of-mem-zpowers--6dba91187d9cf4f81e9d3af8.md) | 848 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `theorem` | [vadd_eq_self_of_mem_zmultiples](declarations/vadd-eq-self-of-mem-zmultiples--22c3e6384422c4145dfc6166.md) | 855 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `lemma` | [IsOfFinOrder.mem_powers_iff_mem_zpowers](declarations/isoffinorder-mem-powers-iff-mem-zpowers--277196f9f7adc4b15bfcff0b.md) | 862 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `lemma` | [IsOfFinOrder.powers_eq_zpowers](declarations/isoffinorder-powers-eq-zpowers--3dd5f2fb16d58a68bbf77a62.md) | 870 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `lemma` | [IsOfFinOrder.mem_zpowers_iff_mem_range_orderOf](declarations/isoffinorder-mem-zpowers-iff-mem-range-orderof--6aaae725ec127eedaabe57fb.md) | 874 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `lemma` | [Subgroup.closure_toSubmonoid_of_isOfFinOrder](declarations/subgroup-closure-tosubmonoid-of-isoffinorder--216bb9dd979fab1527125afa.md) | 881 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `def` | [finEquivZPowers](declarations/finequivzpowers--a0ad3055cca67f1786d39f9f.md) | 893 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `lemma` | [finEquivZPowers_apply](declarations/finequivzpowers-apply--1021ac2074affc53dfaf7fc4.md) | 898 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `lemma` | [finEquivZPowers_symm_apply](declarations/finequivzpowers-symm-apply--ba59311d3e14ac63ca9be742.md) | 902 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `lemma` | [pow_finEquivZPowers_symm_apply](declarations/pow-finequivzpowers-symm-apply--69dd2d7521323f488d192352.md) | 908 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [IsOfFinOrder.mul](declarations/isoffinorder-mul--b95d4eb6307efdccd12ab7e5.md) | 921 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `lemma` | [isMulTorsionFree_iff_not_isOfFinOrder](declarations/ismultorsionfree-iff-not-isoffinorder--fd694a02ed46a55ab4d53040.md) | 930 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `lemma` | [not_isMulTorsionFree_iff_isOfFinOrder](declarations/not-ismultorsionfree-iff-isoffinorder--46857eaabf0d8cee30d1f140.md) | 943 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `lemma` | [zpowers_mabs](declarations/zpowers-mabs--3c86a58779d7ae92311a220d.md) | 948 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `lemma` | [IsMulTorsionFree.orderOf_le_one](declarations/ismultorsionfree-orderof-le-one--0ce489b2509f9ee3ca93f450.md) | 952 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `theorem` | [sum_card_orderOf_eq_card_pow_eq_one](declarations/sum-card-orderof-eq-card-pow-eq-one--f85089af04c134fff2240155.md) | 966 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [orderOf_le_card_univ](declarations/orderof-le-card-univ--91d885f81c17dbd98ccadb5f.md) | 973 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [orderOf_le_card](declarations/orderof-le-card--1bf9afd2c2a3bf6b9d3326e2.md) | 977 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `lemma` | [isOfFinOrder_of_finite](declarations/isoffinorder-of-finite--a9d96bee1f1a26f6a5e059ba.md) | 990 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `def` | [LeftCancelMonoid.groupOfFinite](declarations/leftcancelmonoid-groupoffinite--963cae93b9792210f7058acd.md) | 996 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `def` | [RightCancelMonoid.groupOfFinite](declarations/rightcancelmonoid-groupoffinite--9f881ac955b85c05687becda.md) | 1005 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `lemma` | [orderOf_pos](declarations/orderof-pos--587182cc42680c2b94362f2d.md) | 1015 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [orderOf_pow](declarations/orderof-pow--17b96a651c26e880539f1cfc.md) | 1022 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [mem_powers_iff_mem_range_orderOf](declarations/mem-powers-iff-mem-range-orderof--0c9bab5ab04731af6bd93eb0.md) | 1026 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `def` | [powersEquivPowers](declarations/powersequivpowers--89b8ba8dab5587a68eaa1d55.md) | 1035 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [powersEquivPowers_apply](declarations/powersequivpowers-apply--d22c67e906518d4bff4176e9.md) | 1040 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `lemma` | [orderOf_eq_card_powers](declarations/orderof-eq-card-powers--ce27ea93f3ce532ac80fe231.md) | 1051 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `lemma` | [isOfFinOrder_iff_isUnit](declarations/isoffinorder-iff-isunit--85afc53165ceb308291172e2.md) | 1057 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `lemma` | [orderOf_eq_zero_iff_eq_zero](declarations/orderof-eq-zero-iff-eq-zero--2e428733b1f8ff40f6ffe70a.md) | 1065 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [orderOf_pow_natAbs](declarations/orderof-pow-natabs--64f08cbcea7f848400c35c18.md) | 1076 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [orderOf_zpow'](declarations/orderof-zpow--b9fc1720358ac39f533e949e.md) | 1080 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [zpow_eq_one_iff_modEq](declarations/zpow-eq-one-iff-modeq--7c7db2ccfbf50ae5a88c607c.md) | 1085 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `theorem` | [zpow_eq_zpow_iff_modEq](declarations/zpow-eq-zpow-iff-modeq--33e95854edb6118bbb75818f.md) | 1090 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [injective_zpow_iff_not_isOfFinOrder](declarations/injective-zpow-iff-not-isoffinorder--a38baf166f696de19f0ffd7e.md) | 1095 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `lemma` | [Subgroup.zpowers_eq_zpowers_iff](declarations/subgroup-zpowers-eq-zpowers-iff--9819ba4936ba9a4ead529b27.md) | 1103 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [mem_zpowers_zpow_iff](declarations/mem-zpowers-zpow-iff--1f3f24f463f73723f876e2b8.md) | 1116 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [mem_zpowers_pow_iff](declarations/mem-zpowers-pow-iff--ebbf80d4dfc6012b94f94e0d.md) | 1122 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [orderOf_zpow](declarations/orderof-zpow--5c2ef5f36789a483f98817b3.md) | 1130 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `theorem` | [exists_zpow_eq_one](declarations/exists-zpow-eq-one--214f6e72005d1415fabd1387.md) | 1135 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `lemma` | [mem_powers_iff_mem_zpowers](declarations/mem-powers-iff-mem-zpowers--2fda9b2d1c7c5943ac053797.md) | 1142 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `lemma` | [powers_eq_zpowers](declarations/powers-eq-zpowers--8a454258ced23295a42a2a56.md) | 1146 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `lemma` | [mem_zpowers_iff_mem_range_orderOf](declarations/mem-zpowers-iff-mem-range-orderof--354362dc6f03e36be8e16cd0.md) | 1150 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `def` | [zpowersEquivZPowers](declarations/zpowersequivzpowers--3e887ae91b8b822b532abd5a.md) | 1159 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [zpowersEquivZPowers_apply](declarations/zpowersequivzpowers-apply--b594b9ab80f49e003c9ea0b3.md) | 1165 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `lemma` | [Subgroup.closure_toSubmonoid_of_finite](declarations/subgroup-closure-tosubmonoid-of-finite--934c57d2b00058d12007f28f.md) | 1175 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [Fintype.card_zpowers](declarations/fintype-card-zpowers--1be7474b05423c7f62197f2d.md) | 1185 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [card_zpowers_le](declarations/card-zpowers-le--b806546c9e16a30018d5f8ca.md) | 1190 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [orderOf_dvd_card](declarations/orderof-dvd-card--eb0067fd997560af28d57bb1.md) | 1198 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [orderOf_dvd_natCard](declarations/orderof-dvd-natcard--7c87aba2adcaa64b255d4b1b.md) | 1204 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `lemma` | [Subgroup.orderOf_dvd_natCard](declarations/subgroup-orderof-dvd-natcard--3770c75458c024fa78bc319b.md) | 1210 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `lemma` | [Subgroup.orderOf_le_card](declarations/subgroup-orderof-le-card--2b67fb53d6a55a742c552cc3.md) | 1215 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `lemma` | [Submonoid.orderOf_le_card](declarations/submonoid-orderof-le-card--b83c988e6ef3edaffe5d4b25.md) | 1221 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `theorem` | [pow_card_eq_one'](declarations/pow-card-eq-one--32d562ca8dbe21697cf4fbdc.md) | 1226 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [pow_card_eq_one](declarations/pow-card-eq-one--447f63cc94a4653fce555ac5.md) | 1231 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [Subgroup.pow_index_mem](declarations/subgroup-pow-index-mem--b57495643147a966b91cb8ee.md) | 1235 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `lemma` | [Subgroup.pow_relIndex_mem](declarations/subgroup-pow-relindex-mem--1947d15b8c3a911663e80902.md) | 1239 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `lemma` | [pow_mod_card](declarations/pow-mod-card--3b36bcaa7fc91d8c129a8eb5.md) | 1244 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [zpow_mod_card](declarations/zpow-mod-card--0b8066df8c2bda16cf5d706d.md) | 1248 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `lemma` | [pow_mod_natCard](declarations/pow-mod-natcard--2f06dd4afce03740c25b0e8f.md) | 1253 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `lemma` | [zpow_mod_natCard](declarations/zpow-mod-natcard--d7aeeee51ac3239bec7a314f.md) | 1257 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `def` | [powCoprime](declarations/powcoprime--da4c54c3e0b434fbb6ff42b4.md) | 1263 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [powCoprime_one](declarations/powcoprime-one--dd30a077946d5d6db0f3f03c.md) | 1276 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [powCoprime_inv](declarations/powcoprime-inv--8d0b8d08cf884305d5784cf0.md) | 1280 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `lemma` | [Nat.Coprime.pow_left_bijective](declarations/nat-coprime-pow-left-bijective--1924d8f4b5fdd99b872b9075.md) | 1285 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `theorem` | [image_range_orderOf](declarations/image-range-orderof--c79b23bb15fe49552a6c44ba.md) | 1291 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `lemma` | [smul_eq_of_le_smul](declarations/smul-eq-of-le-smul--f2326d0caa9aff5773d42039.md) | 1298 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `lemma` | [smul_eq_of_smul_le](declarations/smul-eq-of-smul-le--3910ad246821c06f0ac334a2.md) | 1306 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `def` | [submonoidOfIdempotent](declarations/submonoidofidempotent--5f8a5f1cbc9fb45ce37c7f6c.md) | 1321 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `def` | [subgroupOfIdempotent](declarations/subgroupofidempotent--f81a0dc5fa4ded0a0f6c01c3.md) | 1338 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `def` | [powCardSubgroup](declarations/powcardsubgroup--8ad3cbc083f1267e98d7534b.md) | 1349 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `lemma` | [IsOfFinOrder.eq_one](declarations/isoffinorder-eq-one--93ec9d32812aa574474bfab1.md) | 1365 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `lemma` | [IsOfFinOrder.eq_neg_one](declarations/isoffinorder-eq-neg-one--09d2cf3d7fe56e7bd1914890.md) | 1375 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [orderOf_abs_ne_one](declarations/orderof-abs-ne-one--ba9eb79730df33f2703c6e7c.md) | 1379 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [LinearOrderedRing.orderOf_le_two](declarations/linearorderedring-orderof-le-two--50371eab91cee47810dcc861.md) | 1387 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [Prod.orderOf](declarations/prod-orderof--7bc03dbe87fc028188352f38.md) | 1401 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `theorem` | [orderOf_fst_dvd_orderOf](declarations/orderof-fst-dvd-orderof--d4116220ce40462c9ba3bf33.md) | 1405 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [orderOf_snd_dvd_orderOf](declarations/orderof-snd-dvd-orderof--3970b9e310cc9917b60b03bb.md) | 1409 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [IsOfFinOrder.fst](declarations/isoffinorder-fst--b341a4e60c723407c8e36817.md) | 1413 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `theorem` | [IsOfFinOrder.snd](declarations/isoffinorder-snd--d00f808db80ed6e58b586ea4.md) | 1417 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `theorem` | [IsOfFinOrder.prod_mk](declarations/isoffinorder-prod-mk--1ad71d4ce190589812bf03a9.md) | 1421 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [IsOfFinOrder.prod_iff](declarations/isoffinorder-prod-iff--f0a0668b798876017f93f515.md) | 1425 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `lemma` | [Prod.orderOf_mk](declarations/prod-orderof-mk--dcc32310fcaec3192ea9af3e.md) | 1429 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `lemma` | [Pi.orderOf_eq_sInf](declarations/pi-orderof-eq-sinf--6e8a2c788e02200dabd21879.md) | 1439 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `lemma` | [Pi.orderOf](declarations/pi-orderof--0a22046bec4fc1b94b87c028.md) | 1443 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `theorem` | [orderOf_apply_dvd_orderOf](declarations/orderof-apply-dvd-orderof--f2f81330ab295f2d7acb8ab0.md) | 1448 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `theorem` | [IsOfFinOrder.pi](declarations/isoffinorder-pi--95be3f1ed91f7eb71650d58a.md) | 1452 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `lemma` | [Nat.cast_card_eq_zero](declarations/nat-cast-card-eq-zero--881ad49655cf37e3d254b771.md) | 1460 | `BLOCKED_NATIVE_ADMISSION` |
+| 202 | `lemma` | [CharP.addOrderOf_one](declarations/charp-addorderof-one--642085c814a9962d3b318136.md) | 1466 | `BLOCKED_NATIVE_ADMISSION` |
+| 203 | `lemma` | [charP_of_ne_zero](declarations/charp-of-ne-zero--78e1831b225e2b35d34ef573.md) | 1472 | `BLOCKED_NATIVE_ADMISSION` |
+| 204 | `lemma` | [charP_of_prime_pow_injective](declarations/charp-of-prime-pow-injective--4da7137897c9df8ccb99755a.md) | 1487 | `BLOCKED_NATIVE_ADMISSION` |
+| 205 | `lemma` | [orderOf_eq](declarations/orderof-eq--63f58756a0ebfeee1c935c4c.md) | 1498 | `BLOCKED_NATIVE_ADMISSION` |
+| 206 | `lemma` | [orderOf_piMulSingle](declarations/orderof-pimulsingle--bc6bbc4b7703cc9bfc32a089.md) | 1507 | `BLOCKED_NATIVE_ADMISSION` |

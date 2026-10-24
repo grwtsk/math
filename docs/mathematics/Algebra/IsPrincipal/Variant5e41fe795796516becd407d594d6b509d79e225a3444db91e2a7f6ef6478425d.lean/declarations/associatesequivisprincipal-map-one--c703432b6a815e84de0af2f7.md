@@ -1,0 +1,100 @@
+# associatesEquivIsPrincipal_map_one
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "04666052d0680af32382c2e6c3de4163d4768b6c",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 98,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/5e/5e41fe795796516becd407d594d6b509d79e225a3444db91e2a7f6ef6478425d.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:f804eb3c-353e-ef32-0985-37db69448b42",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:0aae0344-8af9-a357-0d00-0215d17a8dd8",
+  "kind": "theorem",
+  "lexical_name": "associatesEquivIsPrincipal_map_one",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "associatesequivisprincipal-map-one--c703432b6a815e84de0af2f7",
+  "source": {
+    "blob": "04666052d0680af32382c2e6c3de4163d4768b6c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 104,
+    "line": 98,
+    "path": "GRWTSK/Algebra/IsPrincipal/Variant5e41fe795796516becd407d594d6b509d79e225a3444db91e2a7f6ef6478425d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:c703432b6a815e84de0af2f7963ebf00e556870b9e72c8208dfede3484176277",
+  "verification": {
+    "reference": "docs/verification/Algebra/IsPrincipal/Variant5e41fe795796516becd407d594d6b509d79e225a3444db91e2a7f6ef6478425d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0aae0344-8af9-a357-0d00-0215d17a8dd8`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 98–104.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem associatesEquivIsPrincipal_map_one :
+    (associatesEquivIsPrincipal R 1 : Ideal R) = 1 := by
+  rw [one_eq_mk_one, associatesEquivIsPrincipal_apply, span_singleton_one, one_eq_top]
+
+set_option backward.isDefEq.respectTransparency false in
+variable (R) in
+/-- The `MulEquiv` version of `Ideal.associatesEquivIsPrincipal`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/IsPrincipal/Variant5e41fe795796516becd407d594d6b509d79e225a3444db91e2a7f6ef6478425d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/IsPrincipal/Variant5e41fe795796516becd407d594d6b509d79e225a3444db91e2a7f6ef6478425d.lean#L98).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `04666052d0680af32382c2e6c3de4163d4768b6c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

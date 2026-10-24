@@ -1,0 +1,61 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.PositiveAtlas.Variant14fdb88475bea407b87959679ca7ddb525157d03e898cf92a8a56d5790892dd1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `82074d3b55c9fa04cd645b5a076bc158b529ff14` · SHA-256 `14fdb88475bea407b87959679ca7ddb525157d03e898cf92a8a56d5790892dd1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.PositiveAtlas.Certification
+import FormalResearch.PositiveAtlas.CertificationUniverseFixtures
+import FormalResearch.PositiveAtlas.PositiveGeometry
+import FormalResearch.PositiveAtlas.ProvenanceProjection
+import FormalResearch.PositiveAtlas.ScalarSchur
+import FormalResearch.PositiveAtlas.BlockSchur
+import FormalResearch.PositiveAtlas.InvertibleBlockSchur
+import FormalResearch.PositiveAtlas.MatrixBlockSchur
+import FormalResearch.PositiveAtlas.ExplicitSchurMatrix
+import FormalResearch.PositiveAtlas.GeneralizedInverseSchur
+import FormalResearch.PositiveAtlas.NullCrossAnnihilation
+import FormalResearch.PositiveAtlas.ProvenanceRange
+import FormalResearch.PositiveAtlas.SingularLinearSolver
+import FormalResearch.PositiveAtlas.SolverIndependence
+import FormalResearch.PositiveAtlas.PhaseIIResidualQuotient
+import FormalResearch.PositiveAtlas.QuadraticSwapInvolution
+import FormalResearch.PositiveAtlas.CommutingInvolutions
+import FormalResearch.PositiveAtlas.PositiveFourSector
+import FormalResearch.PositiveAtlas.InterventionDefect
+import FormalResearch.PositiveAtlas.ComparatorSeparation
+import FormalResearch.PositiveAtlas.ComparatorMargin
+import FormalResearch.PositiveAtlas.FourPhaseConvolution
+import FormalResearch.PositiveAtlas.AnalyticDispersion
+import FormalResearch.PositiveAtlas.AffineGauge
+import FormalResearch.PositiveAtlas.AffineReconstruction
+import FormalResearch.PositiveAtlas.FiniteLogAffineCovariance
+import FormalResearch.PositiveAtlas.FiniteLogAffineFirstDerivative
+import FormalResearch.PositiveAtlas.FiniteLogAffineSecondDerivative
+import FormalResearch.PositiveAtlas.FiniteThirdCumulant
+import FormalResearch.PositiveAtlas.FiniteFourthCumulant
+import FormalResearch.PositiveAtlas.MomentCumulantPartitions
+import FormalResearch.PositiveAtlas.BlockDirectionReindexing
+import FormalResearch.PositiveAtlas.FiniteCumulantPrefix
+import FormalResearch.PositiveAtlas.RecursiveCumulantHierarchy
+import FormalResearch.PositiveAtlas.FiniteRawMomentHierarchy
+import FormalResearch.PositiveAtlas.OrderTwoRecursiveCumulant
+import FormalResearch.PositiveAtlas.OrderThreeRecursiveCumulant
+import FormalResearch.PositiveAtlas.OrderFourRecursiveCumulant
+import FormalResearch.PositiveAtlas.AllOrdersRawMomentDerivative
+import FormalResearch.PositiveAtlas.OrderedPartitionBridge
+import FormalResearch.PositiveAtlas.ObservationRepresentationFixtures
+
+/-!
+# Positive Atlas
+
+Formal infrastructure for the self-representing positive atlas program.
+
+The initial accepted layer is certificate-relative: it defines exact sufficient
+representations and structural Quines without assuming that a minimal sufficient
+representation exists for a particular mathematical object. Later modules may
+instantiate positive geometry, involutions, renormalization, and RH-specific
+charts on top of this core.
+-/
+```

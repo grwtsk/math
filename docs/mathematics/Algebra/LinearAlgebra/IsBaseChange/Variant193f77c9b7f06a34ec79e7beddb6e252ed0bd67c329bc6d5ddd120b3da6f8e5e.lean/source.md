@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.IsBaseChange.Variant193f77c9b7f06a34ec79e7beddb6e252ed0bd67c329bc6d5ddd120b3da6f8e5e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `64acab1bbdf4344cc04b0a1d2d50e1304b28db9a` · SHA-256 `5e408b240e7170864d6efddfb8d11be33959d23f21b0eeabd1215bf557023b63`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.IsBaseChangeOfLeftExact.Variantc9a4037cb0d86a23561aa8ab024e19555b2dab2b5462f82cf6af5de7e1d64fef","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c9a4037cb0d86a23561aa8ab024e19555b2dab2b5462f82cf6af5de7e1d64fef","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.IsBaseChangeOfLeftExact.Variantc9a4037cb0d86a23561aa8ab024e19555b2dab2b5462f82cf6af5de7e1d64fef","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"c9a4037cb0d86a23561aa8ab024e19555b2dab2b5462f82cf6af5de7e1d64fef","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/Flat/IsBaseChange.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Jingting Wang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jingting Wang, Nailin Guan
+-/
+module
+
+public import Mathlib.Algebra.FiveLemma
+public import Mathlib.RingTheory.Flat.Basic
+
+/-!
+
+# Lemmas about `IsBaseChange` under exact sequences
+
+In this file, we show that if `S` is a flat `R`-algebra, taking kernels commutes with base change
+of modules from `R` to `S`.
+
+# Main Results
+
+For `S` an `R`-algebra, consider the following commutative diagram with exact rows,
+`M₁` `M₂` `M₃` `R`-modules, `N₁` `N₂` `N₃` `S`-modules,
+`R`-linear maps `f₁` `f₂` `i₁` `i₂` `i₃` and `S`-linear maps `g₁` `g₂`.
+
+M₁ --f₁--> M₂ --f₂--> M₃
+|          |          |
+i₁         i₂         i₃
+|          |          |
+v          v          v
+N₁ --g₁--> N₂ --g₂--> N₃
+
+* `IsBaseChange.of_left_exact` : If `S` is flat over `R`, `f₁` and `g₁` are injective,
+  `i₂` and `i₃` is base change by `S`, then `i₁` is base change by `S`.
+
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.IsBaseChangeOfLeftExact.Variantc9a4037cb0d86a23561aa8ab024e19555b2dab2b5462f82cf6af5de7e1d64fef
+
+public section
+
+variable {R : Type*} [CommRing R] (S : Type*) [CommRing S] [Algebra R S]
+
+variable {M₁ M₂ M₃ N₁ N₂ N₃ : Type*} [AddCommGroup M₁] [AddCommGroup M₂] [AddCommGroup M₃]
+  [AddCommGroup N₁] [AddCommGroup N₂] [AddCommGroup N₃] [Module R M₁] [Module R M₂] [Module R M₃]
+  [Module R N₁] [Module R N₂] [Module R N₃] [Module S N₁] [Module S N₂] [Module S N₃]
+  [IsScalarTower R S N₁] [IsScalarTower R S N₂] [IsScalarTower R S N₃]
+  (h₁ : M₁ →ₗ[R] N₁) (h₂ : M₂ →ₗ[R] N₂) (h₃ : M₃ →ₗ[R] N₃)
+  {f : M₁ →ₗ[R] M₂} {g : M₂ →ₗ[R] M₃} {f' : N₁ →ₗ[S] N₂} {g' : N₂ →ₗ[S] N₃}
+
+lemma IsBaseChange.of_left_exact (comm₁ : h₂.comp f = (f'.restrictScalars R).comp h₁)
+    (comm₂ : h₃.comp g = (g'.restrictScalars R).comp h₂) [Module.Flat R S]
+    (isb₂ : IsBaseChange S h₂) (isb₃ : IsBaseChange S h₃)
+    (exact₁ : Function.Exact f g) (inj₁ : Function.Injective f)
+    (exact₂ : Function.Exact f' g') (inj₂ : Function.Injective f') : IsBaseChange S h₁ := by
+  simp only [IsBaseChange, IsTensorProduct] at isb₂ isb₃ ⊢
+  refine LinearMap.bijective_of_bijective_of_injective_of_left_exact
+    ((f.baseChange S).restrictScalars R) ((g.baseChange S).restrictScalars R)
+    (f'.restrictScalars R) (g'.restrictScalars R) _ _ _ ?_ ?_ ?_ exact₂ isb₂ isb₃.1 ?_ inj₂
+  · ext s m
+    simpa using congr(s • ($comm₁ m)).symm
+  · ext s m
+    simpa using congr(s • ($comm₂ m)).symm
+  · exact Module.Flat.lTensor_exact S exact₁
+  · exact Module.Flat.lTensor_preserves_injective_linearMap f inj₁
+```

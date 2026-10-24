@@ -1,0 +1,101 @@
+# tree_fixes_matching
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:a520271c-c9d9-f954-6946-1f34cbe6d55e",
+  "kind": "theorem",
+  "lexical_name": "tree_fixes_matching",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "tree-fixes-matching--40834c0ee5b85c6e30b948e2",
+  "source": {
+    "blob": "dede9b689159b011b7845285c90222f7344de7aa",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 213,
+    "line": 194,
+    "path": "GRWTSK/Analysis/LinearAlgebra/ThreeCellHodgeGauge.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:40834c0ee5b85c6e30b948e2fa4a8a5c7a24450de87e7d4599f5d523f429f6a2",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/ThreeCellHodgeGauge.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:a520271c-c9d9-f954-6946-1f34cbe6d55e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 194–213.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem tree_fixes_matching (d : ℝ) (v : Cell V) (hv : delta0 v.1 = v.2) :
+    treeRelax d v = v := by
+  have hy : common v.1 v.2 = fun _ => v.1 0 := by
+    rw [common, ← hv, vertex_homotopy]
+    funext j
+    dsimp
+    abel
+  have hc : delta1 v.2 = 0 := by rw [← hv, delta1_delta0]
+  apply Prod.ext
+  · change tree v.2 + phaseRelax d (common v.1 v.2) = v.1
+    have hp : phaseRelax d (common v.1 v.2) = common v.1 v.2 := by
+      rw [hy]
+      funext j
+      dsimp [phaseRelax, centered, average]
+      module
+    rw [hp, reconstruct]
+  · change replaceClosure v.2 (d • delta1 v.2) = v.2
+    simpa only [hc, smul_zero] using replaceClosure_restore v.2
+
+/-- Any single real-linear function port transports the SAME comparison gauge. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/LinearAlgebra/ThreeCellHodgeGauge.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/LinearAlgebra/ThreeCellHodgeGauge.lean#L194).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `dede9b689159b011b7845285c90222f7344de7aa` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

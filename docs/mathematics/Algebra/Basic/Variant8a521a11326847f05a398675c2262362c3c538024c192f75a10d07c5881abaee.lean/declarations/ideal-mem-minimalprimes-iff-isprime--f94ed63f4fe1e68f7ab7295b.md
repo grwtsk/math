@@ -1,0 +1,85 @@
+# Ideal.mem_minimalPrimes_iff_isPrime
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:8c7e4ae9-a85f-2f6b-c1bd-2f6f38edc47b",
+  "kind": "lemma",
+  "lexical_name": "Ideal.mem_minimalPrimes_iff_isPrime",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ideal-mem-minimalprimes-iff-isprime--f94ed63f4fe1e68f7ab7295b",
+  "source": {
+    "blob": "8bebd7790e9c825573e9fa1eb1f97034061db954",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 149,
+    "line": 146,
+    "path": "GRWTSK/Algebra/Basic/Variant8a521a11326847f05a398675c2262362c3c538024c192f75a10d07c5881abaee.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f94ed63f4fe1e68f7ab7295b8407c22e6764d708f6138ed2a8ad9fb5c9884fd3",
+  "verification": {
+    "reference": "docs/verification/Algebra/Basic/Variant8a521a11326847f05a398675c2262362c3c538024c192f75a10d07c5881abaee.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8c7e4ae9-a85f-2f6b-c1bd-2f6f38edc47b`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 146–149.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma Ideal.mem_minimalPrimes_iff_isPrime [Ring.KrullDimLE 0 R] {I : Ideal R} :
+    I ∈ minimalPrimes R ↔ I.IsPrime :=
+  ⟨(·.1.1), fun _ ↦ I.mem_minimalPrimes_of_krullDimLE_zero⟩
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Basic/Variant8a521a11326847f05a398675c2262362c3c538024c192f75a10d07c5881abaee.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Basic/Variant8a521a11326847f05a398675c2262362c3c538024c192f75a10d07c5881abaee.lean#L146).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8bebd7790e9c825573e9fa1eb1f97034061db954` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

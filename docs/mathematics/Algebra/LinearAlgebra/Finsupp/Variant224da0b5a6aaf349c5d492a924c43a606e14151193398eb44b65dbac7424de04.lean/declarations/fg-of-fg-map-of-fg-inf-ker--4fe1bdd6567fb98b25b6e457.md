@@ -1,0 +1,167 @@
+# fg_of_fg_map_of_fg_inf_ker
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "9ea62daa205b48663afc63f115b1495bf7fe99ec",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 27,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/22/224da0b5a6aaf349c5d492a924c43a606e14151193398eb44b65dbac7424de04.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:e2525ed9-9aca-dd94-80cf-367992be4a4f",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:c57d0193-964a-dbc4-e3b0-187182308c24",
+  "kind": "theorem",
+  "lexical_name": "fg_of_fg_map_of_fg_inf_ker",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "fg-of-fg-map-of-fg-inf-ker--4fe1bdd6567fb98b25b6e457",
+  "source": {
+    "blob": "9ea62daa205b48663afc63f115b1495bf7fe99ec",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 100,
+    "line": 27,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Finsupp/Variant224da0b5a6aaf349c5d492a924c43a606e14151193398eb44b65dbac7424de04.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:4fe1bdd6567fb98b25b6e4571c1927b44988367718724d2d663fd38810697eae",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Finsupp/Variant224da0b5a6aaf349c5d492a924c43a606e14151193398eb44b65dbac7424de04.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:c57d0193-964a-dbc4-e3b0-187182308c24`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 27–100.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem fg_of_fg_map_of_fg_inf_ker (f : M →ₗ[R] P) {s : Submodule R M}
+    (hs1 : (s.map f).FG)
+    (hs2 : (s ⊓ LinearMap.ker f).FG) : s.FG := by
+  haveI := Classical.decEq R
+  haveI := Classical.decEq M
+  haveI := Classical.decEq P
+  obtain ⟨t1, ht1⟩ := hs1
+  obtain ⟨t2, ht2⟩ := hs2
+  have : ∀ y ∈ t1, ∃ x ∈ s, f x = y := by
+    intro y hy
+    have : y ∈ s.map f := by
+      rw [← ht1]
+      exact subset_span hy
+    rcases mem_map.1 this with ⟨x, hx1, hx2⟩
+    exact ⟨x, hx1, hx2⟩
+  have : ∃ g : P → M, ∀ y ∈ t1, g y ∈ s ∧ f (g y) = y := by
+    choose g hg1 hg2 using this
+    exists fun y => if H : y ∈ t1 then g y H else 0
+    intro y H
+    constructor
+    · simp only [dif_pos H]
+      apply hg1
+    · simp only [dif_pos H]
+      apply hg2
+  obtain ⟨g, hg⟩ := this
+  clear this
+  exists t1.image g ∪ t2
+  rw [Finset.coe_union, span_union, Finset.coe_image]
+  apply le_antisymm
+  · refine sup_le (span_le.2 <| image_subset_iff.2 ?_) (span_le.2 ?_)
+    · intro y hy
+      exact (hg y hy).1
+    · intro x hx
+      have : x ∈ span R t2 := subset_span hx
+      rw [ht2] at this
+      exact this.1
+  intro x hx
+  have : f x ∈ s.map f := by
+    rw [mem_map]
+    exact ⟨x, hx, rfl⟩
+  rw [← ht1, ← Set.image_id (t1 : Set P), Finsupp.mem_span_image_iff_linearCombination] at this
+  rcases this with ⟨l, hl1, hl2⟩
+  refine
+    mem_sup.2
+      ⟨(linearCombination R id).toFun ((lmapDomain R R g : (P →₀ R) → M →₀ R) l), ?_,
+        x - linearCombination R id ((lmapDomain R R g : (P →₀ R) → M →₀ R) l), ?_,
+        add_sub_cancel _ _⟩
+  · rw [← Set.image_id (g '' ↑t1), Finsupp.mem_span_image_iff_linearCombination]
+    refine ⟨_, ?_, rfl⟩
+    haveI : Inhabited P := ⟨0⟩
+    rw [← Finsupp.lmapDomain_supported _ _ g, mem_map]
+    refine ⟨l, hl1, ?_⟩
+    rfl
+  rw [ht2, mem_inf]
+  constructor
+  · apply s.sub_mem hx
+    rw [Finsupp.linearCombination_apply, Finsupp.lmapDomain_apply, Finsupp.sum_mapDomain_index]
+    · refine s.sum_mem ?_
+      intro y hy
+      exact s.smul_mem _ (hg y (hl1 hy)).1
+    · exact zero_smul _
+    · exact fun _ _ _ => add_smul _ _ _
+  · rw [LinearMap.mem_ker, f.map_sub, ← hl2]
+    rw [Finsupp.linearCombination_apply, Finsupp.linearCombination_apply, Finsupp.lmapDomain_apply]
+    rw [Finsupp.sum_mapDomain_index, Finsupp.sum, Finsupp.sum, map_sum]
+    · rw [sub_eq_zero]
+      refine Finset.sum_congr rfl fun y hy => ?_
+      unfold id
+      rw [f.map_smul, (hg y (hl1 hy)).2]
+    · exact zero_smul _
+    · exact fun _ _ _ => add_smul _ _ _
+
+/-- The kernel of the composition of two linear maps is finitely generated if both kernels are and
+the first morphism is surjective. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Finsupp/Variant224da0b5a6aaf349c5d492a924c43a606e14151193398eb44b65dbac7424de04.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Finsupp/Variant224da0b5a6aaf349c5d492a924c43a606e14151193398eb44b65dbac7424de04.lean#L27).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9ea62daa205b48663afc63f115b1495bf7fe99ec` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

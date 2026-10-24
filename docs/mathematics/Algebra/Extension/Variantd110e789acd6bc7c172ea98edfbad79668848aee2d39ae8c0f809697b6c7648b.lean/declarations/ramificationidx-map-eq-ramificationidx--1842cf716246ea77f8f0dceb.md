@@ -1,0 +1,117 @@
+# ramificationIdx_map_eq_ramificationIdx
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:21b49f27-bd7d-88df-e7ae-7e06c6c3c7e0",
+  "kind": "theorem",
+  "lexical_name": "ramificationIdx_map_eq_ramificationIdx",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ramificationidx-map-eq-ramificationidx--1842cf716246ea77f8f0dceb",
+  "source": {
+    "blob": "0f08c6e38639fe855489c0a27bdaa86c3888d395",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 225,
+    "line": 190,
+    "path": "GRWTSK/Algebra/Extension/Variantd110e789acd6bc7c172ea98edfbad79668848aee2d39ae8c0f809697b6c7648b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1842cf716246ea77f8f0dcebcbc0b77aabe27c27093d2de0c417367f97e0d3e0",
+  "verification": {
+    "reference": "docs/verification/Algebra/Extension/Variantd110e789acd6bc7c172ea98edfbad79668848aee2d39ae8c0f809697b6c7648b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:21b49f27-bd7d-88df-e7ae-7e06c6c3c7e0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 190–225.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem ramificationIdx_map_eq_ramificationIdx [P.IsPrime] :
+    (P.map (algebraMap S Sₚ)).ramificationIdx Rₚ = P.ramificationIdx R := by
+  have := liesOver_map_of_liesOver p Rₚ Sₚ P
+  have := IsLocalization.liesOver_map_of_isPrime_disjoint (algebraMapSubmonoid S p.primeCompl) Sₚ
+    (Set.disjoint_image_left.mpr (Set.disjoint_compl_left_iff_subset.mpr hPp.over.ge))
+  have := isPrime_map_of_liesOver S p Sₚ P
+  rw [ramificationIdx_eq (maximalIdeal Rₚ) (P.map (algebraMap S Sₚ)), ramificationIdx_eq p P]
+  let R₁ := Localization.AtPrime (P.map (algebraMap S Sₚ))
+  let R₂ := Localization.AtPrime P
+  let : Algebra R₂ R₁ := Localization.AtPrime.algebraOfLiesOver P (P.map (algebraMap S Sₚ))
+  have : IsLocalization.AtPrime R₁ P := by
+    convert isLocalization_isLocalization_atPrime_isLocalization
+      (algebraMapSubmonoid S p.primeCompl) R₁ (P.map (algebraMap S Sₚ))
+    rw [← Ideal.under_def, ← Ideal.over_def (P.map (algebraMap S Sₚ)) P]
+  have h : Function.Bijective (algebraMap R₂ R₁) :=
+    (Localization.algEquiv P.primeCompl R₁).bijective
+  have key : p.map (algebraMap R R₂) =
+      ((maximalIdeal Rₚ).map (algebraMap Rₚ R₁)).comap (algebraMap R₂ R₁) := by
+    rw [← IsLocalization.AtPrime.map_eq_maximalIdeal p, p.map_map, ← IsScalarTower.algebraMap_eq,
+      IsScalarTower.algebraMap_eq R R₂ R₁, ← p.map_map, comap_map_of_bijective _ h]
+  rw [Module.length_quotient, Module.length_quotient, key, coheight_comap_of_surjective _ h.2]
+
+end IsLocalization.AtPrime
+
+namespace IsDedekindDomain
+
+open IsLocalization AtPrime
+
+variable [IsDomain R] [IsDedekindDomain S] [IsTorsionFree R S] [Algebra R Sₚ] [IsScalarTower R S Sₚ]
+  [IsScalarTower R Rₚ Sₚ]
+
+/--
+For `R ⊆ S` an extension of Dedekind domains and `p` a prime ideal of `R`, the bijection
+between the primes of `S` over `p` and the primes over the maximal ideal of `Rₚ` in `Sₚ` where
+`Rₚ` and `Sₚ` are resp. the localizations of `R` and `S` at the complement of `p`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Extension/Variantd110e789acd6bc7c172ea98edfbad79668848aee2d39ae8c0f809697b6c7648b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Extension/Variantd110e789acd6bc7c172ea98edfbad79668848aee2d39ae8c0f809697b6c7648b.lean#L190).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0f08c6e38639fe855489c0a27bdaa86c3888d395` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,223 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Bilinear.Variant44a53bfb68a2bc86b72a4fcc8d75496330f5fb25941ecf1bda82d58a1a5967bc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `211f36d0c5236474858b1590ac1e8281c4ced41f` · SHA-256 `abd1d0233da6075ca7f09f4934dbdd18007cb30b33aeed25d64e918d0ee58bc6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"ae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Algebra/Bilinear.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Kenny Lau. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kenny Lau, Yury Kudryashov
+-/
+module
+
+public import Mathlib.Algebra.Algebra.NonUnitalHom
+public import Mathlib.LinearAlgebra.TensorProduct.Map
+
+/-!
+# Facts about algebras involving bilinear maps and tensor products
+
+We move a few basic statements about algebras out of `Algebra.Algebra.Basic`,
+in order to avoid importing `LinearAlgebra.BilinearMap` and
+`LinearAlgebra.TensorProduct` unnecessarily.
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4
+
+@[expose] public section
+
+open TensorProduct Module
+
+variable {R A B : Type*}
+
+namespace LinearMap
+
+section NonUnitalNonAssoc
+
+variable (R A) [CommSemiring R] [NonUnitalNonAssocSemiring A] [Module R A]
+variable [SMulCommClass R A A] [IsScalarTower R A A]
+
+/-- The multiplication in a non-unital non-associative algebra is a bilinear map.
+
+A weaker version of this for semirings exists as `AddMonoidHom.mul`. -/
+@[instance_reducible, simps!]
+def mul : A →ₗ[R] A →ₗ[R] A :=
+  LinearMap.mk₂ R (· * ·) add_mul smul_mul_assoc mul_add mul_smul_comm
+
+/-- The multiplication map on a non-unital algebra, as an `R`-linear map from `A ⊗[R] A` to `A`. -/
+def mul' : A ⊗[R] A →ₗ[R] A :=
+  TensorProduct.lift (mul R A)
+
+@[inherit_doc] scoped[RingTheory.LinearMap] notation "μ" => LinearMap.mul' _ _
+@[inherit_doc] scoped[RingTheory.LinearMap] notation "μ[" R "]" => LinearMap.mul' R _
+
+variable {A R}
+
+@[simp]
+theorem mul_apply' (a b : A) : mul R A a b = a * b :=
+  rfl
+
+@[simp]
+theorem mul'_apply {a b : A} : mul' R A (a ⊗ₜ b) = a * b :=
+  rfl
+
+lemma restrictScalars_mul {S : Type*} [CommSemiring S] [Module S A] [SMulCommClass S A A]
+    [IsScalarTower S A A] [CompatibleSMul A A R S] (a : A) :
+    LinearMap.restrictScalars R (LinearMap.mul S A a) = LinearMap.mul R A a := by
+  ext x
+  simp
+
+variable {M : Type*} [AddCommMonoid M] [Module R M]
+
+theorem lift_lsmul_mul_eq_lsmul_lift_lsmul {r : R} :
+    lift (lsmul R M ∘ₗ mul R R r) = lsmul R M r ∘ₗ lift (lsmul R M) := by
+  apply TensorProduct.ext'
+  intro x a
+  simp [← mul_smul, mul_comm]
+
+end NonUnitalNonAssoc
+
+section NonUnital
+
+variable [CommSemiring R] [NonUnitalSemiring A] [NonUnitalSemiring B] [Module R B] [Module R A]
+variable [SMulCommClass R A A] [IsScalarTower R A A]
+variable [SMulCommClass R B B] [IsScalarTower R B B]
+
+variable (R A) in
+/-- The multiplication in a non-unital algebra is a bilinear map.
+
+A weaker version of this for non-unital non-associative algebras exists as `LinearMap.mul`. -/
+def _root_.GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4.NonUnitalAlgHom.lmul : A →ₙₐ[R] End R A where
+  __ := mul R A
+  map_mul' := mulLeft_mul _ _
+  map_zero' := mulLeft_zero_eq_zero _ _
+
+@[simp]
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4.NonUnitalAlgHom.coe_lmul_eq_mul : ⇑(NonUnitalAlgHom.lmul R A) = mul R A :=
+  rfl
+
+theorem commute_mulLeft_right (a b : A) : Commute (mulLeft R a) (mulRight R b) := by
+  ext c
+  exact (mul_assoc a c b).symm
+
+/-- A `LinearMap` preserves multiplication if pre- and post- composition with `LinearMap.mul` are
+equivalent. By converting the statement into an equality of `LinearMap`s, this lemma allows various
+specialized `ext` lemmas about `→ₗ[R]` to then be applied.
+
+This is the `LinearMap` version of `AddMonoidHom.map_mul_iff`. -/
+theorem map_mul_iff (f : A →ₗ[R] B) :
+    (∀ x y, f (x * y) = f x * f y) ↔
+      (LinearMap.mul R A).compr₂ f = (LinearMap.mul R B ∘ₗ f).compl₂ f :=
+  Iff.symm LinearMap.ext_iff₂
+
+end NonUnital
+
+section Semiring
+
+variable (R A)
+section one_side
+variable [Semiring R] [Semiring A]
+
+section left
+variable [Module R A] [SMulCommClass R A A]
+
+@[simp]
+theorem pow_mulLeft (a : A) (n : ℕ) : mulLeft R a ^ n = mulLeft R (a ^ n) :=
+  match n with
+  | 0 => by rw [pow_zero, pow_zero, mulLeft_one, Module.End.one_eq_id]
+  | (n + 1) => by rw [pow_succ, pow_succ, mulLeft_mul, Module.End.mul_eq_comp, pow_mulLeft]
+
+end left
+
+section right
+variable [Module R A] [IsScalarTower R A A]
+
+@[simp]
+theorem pow_mulRight (a : A) (n : ℕ) : mulRight R a ^ n = mulRight R (a ^ n) :=
+  match n with
+  | 0 => by rw [pow_zero, pow_zero, mulRight_one, Module.End.one_eq_id]
+  | (n + 1) => by rw [pow_succ, pow_succ', mulRight_mul, Module.End.mul_eq_comp, pow_mulRight]
+
+end right
+
+end one_side
+
+variable [CommSemiring R] [Semiring A] [Algebra R A]
+
+/-- The multiplication in an algebra is an algebra homomorphism into the endomorphisms on
+the algebra.
+
+A weaker version of this for non-unital algebras exists as `NonUnitalAlgHom.lmul`. -/
+def _root_.GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4.Algebra.lmul : A →ₐ[R] End R A where
+  __ := NonUnitalAlgHom.lmul R A
+  map_one' := mulLeft_one _ _
+  commutes' r := ext fun a => (Algebra.smul_def r a).symm
+
+variable {R A}
+
+@[simp]
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4.Algebra.coe_lmul_eq_mul : ⇑(Algebra.lmul R A) = mul R A :=
+  rfl
+
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4.Algebra.lmul_injective : Function.Injective (Algebra.lmul R A) :=
+  fun a₁ a₂ h ↦ by simpa using DFunLike.congr_fun h 1
+
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.Mul.Variantae49445fb02038c77d8b1818472dcac20a17c1d8a959650f5057db9ee09301f4.Algebra.lmul_isUnit_iff {x : A} :
+    IsUnit (Algebra.lmul R A x) ↔ IsUnit x := by
+  rw [Module.End.isUnit_iff, Iff.comm]
+  exact IsUnit.isUnit_iff_mulLeft_bijective
+
+theorem toSpanSingleton_one_eq_algebraLinearMap :
+    toSpanSingleton R A 1 = Algebra.linearMap R A := by ext; simp
+
+variable (R A) in
+/-- The multiplication map on an `R`-algebra, as an `A`-linear map from `A ⊗[R] A` to `A`. -/
+@[simps!] def mul'' : A ⊗[R] A →ₗ[A] A where
+  __ := mul' R A
+  map_smul' a x := x.inductionOn (by simp +contextual [mul', smul_tmul', mul_assoc])
+    (by simp +contextual [mul_add])
+
+end Semiring
+
+section CommSemiring
+variable [CommSemiring R] [NonUnitalNonAssocCommSemiring A]
+  [Module R A] [SMulCommClass R A A] [IsScalarTower R A A]
+
+@[simp] lemma flip_mul : (mul R A).flip = mul R A := by ext; simp [mul_comm]
+
+lemma mul'_comp_comm : mul' R A ∘ₗ TensorProduct.comm R A A = mul' R A := by
+  simp [mul', lift_comp_comm_eq]
+
+lemma mul'_comm (x : A ⊗[R] A) : mul' R A (TensorProduct.comm R A A x) = mul' R A x :=
+  congr($mul'_comp_comm _)
+
+end CommSemiring
+end LinearMap
+
+open scoped RingTheory.LinearMap
+
+namespace NonUnitalAlgHom
+variable [CommSemiring R]
+  [NonUnitalNonAssocSemiring A] [Module R A] [SMulCommClass R A A] [IsScalarTower R A A]
+  [NonUnitalNonAssocSemiring B] [Module R B] [SMulCommClass R B B] [IsScalarTower R B B]
+
+lemma comp_mul' (f : A →ₙₐ[R] B) : (f : A →ₗ[R] B) ∘ₗ μ = μ[R] ∘ₗ (f ⊗ₘ f) :=
+  TensorProduct.ext' <| by simp
+
+end NonUnitalAlgHom
+
+namespace AlgHom
+variable [CommSemiring R] [Semiring A] [Semiring B] [Algebra R A] [Algebra R B]
+
+lemma comp_mul' (f : A →ₐ B) : f.toLinearMap ∘ₗ μ = μ[R] ∘ₗ (f.toLinearMap ⊗ₘ f.toLinearMap) :=
+  TensorProduct.ext' <| by simp
+
+end AlgHom
+```

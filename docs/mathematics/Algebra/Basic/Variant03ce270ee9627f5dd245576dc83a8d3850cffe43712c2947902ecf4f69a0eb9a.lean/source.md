@@ -1,0 +1,104 @@
+# Complete source: GRWTSK.Algebra.Basic.Variant03ce270ee9627f5dd245576dc83a8d3850cffe43712c2947902ecf4f69a0eb9a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `df9b017dabf04a1f2451cadb3db00bd949113733` · SHA-256 `17b219b4b5338d4db5f2052d9bc50b86503ff3e2e97df192dc5a9a8185e66478`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.SumRamificationInertiaEqFinrankFiber.Variantb7f5290e28d150f9ed28f5100cc0dac909345d4c1ab00a9df328f01bbf045d95","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b7f5290e28d150f9ed28f5100cc0dac909345d4c1ab00a9df328f01bbf045d95","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.SumRamificationInertiaEqFinrankFiber.Variantb7f5290e28d150f9ed28f5100cc0dac909345d4c1ab00a9df328f01bbf045d95","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"b7f5290e28d150f9ed28f5100cc0dac909345d4c1ab00a9df328f01bbf045d95","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/RamificationInertia/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Thomas Browning. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Thomas Browning
+-/
+module
+
+public import Mathlib.FieldTheory.Galois.IsGaloisGroup
+public import Mathlib.RingTheory.Flat.TorsionFree
+public import Mathlib.RingTheory.RamificationInertia.Inertia
+public import Mathlib.RingTheory.RamificationInertia.Ramification
+public import Mathlib.RingTheory.Spectrum.Prime.FreeLocus
+
+/-!
+# Ramification index and inertia degree
+
+This file proves that the sum of ramification times inertia equals the degree of the extension.
+
+Typically this is only stated for extensions of Dedekind domains, but we prove it for any finite
+flat extension of an integral domain.
+
+## Main results
+
+* `Ideal.sum_ramification_inertia_eq_finrank`: Let `R` be an integral domain, let `S` be a finite
+  flat `R`-algebra, and let `p` be a prime ideal of `R`. Then the sum over all prime ideals `q` of
+  `S` lying over `p` of the ramification index of `q` times the inertia degree of `q` equals the
+  rank of `S` as an `R`-module.
+* `Ideal.sum_ramification_inertia_eq_card`: Let `S/R` be a finite flat extension of domains,
+  and let `p` be prime ideal of `R`. Assume that `R` is the invariant subring of a finite group `G`
+  acting on `S`. Then the sum over all prime ideals `q` of `S` lying over `p` of the ramification
+  index of `q` times the inertia degree of `q` equals the cardinality of `G`.
+
+-/
+
+
+namespace GRWTSK.Algebra.SumRamificationInertiaEqFinrankFiber.Variantb7f5290e28d150f9ed28f5100cc0dac909345d4c1ab00a9df328f01bbf045d95
+
+public section
+
+section
+
+namespace Ideal
+
+variable {R : Type*} [CommRing R] (p : Ideal R) [p.IsPrime] (S : Type*) [CommRing S] [Algebra R S]
+
+open IsLocalRing Module OrderIso PrimeSpectrum in
+theorem sum_ramification_inertia_eq_finrank_fiber
+    [Algebra.QuasiFinite R S] [Fintype (p.primesOver S)] :
+    ∑ q : p.primesOver S, q.1.ramificationIdx R * q.1.inertiaDeg R =
+      finrank p.ResidueField (p.Fiber S) := by
+  let := Fintype.ofFinite (PrimeSpectrum (p.Fiber S))
+  rw [IsArtinianRing.finrank_eq_sum_primeSpectrum, ← (primesOverOrderIsoFiber R S p).symm.sum_comp]
+  apply Finset.sum_congr rfl
+  intro q _
+  simp_rw [toEquiv_symm, coe_symm_toEquiv, coe_primesOverOrderIsoFiber_symm_apply]
+  set r := q.1.comap Algebra.TensorProduct.includeRight
+  let := Localization.AtPrime.algebraOfLiesOver p r
+  rw [ramificationIdx_eq p r, inertiaDeg_eq p r]
+  let Rp := Localization.AtPrime p
+  let Sq := Localization.AtPrime q.1
+  let Sr := Localization.AtPrime r
+  let κp := p.ResidueField
+  let κr := r.ResidueField
+  let A := Sr ⧸ p.map (algebraMap R Sr)
+  suffices length Sr A * finrank κp κr = finrank κp Sq by simpa using congr_arg ENat.toNat this
+  calc length Sr A * finrank κp κr = length Sr A * length κp κr := by rw [length_eq_finrank]
+    _ = length Rp A := (length_restrictScalars Rp Sr A).symm
+    _ = length Rp Sq := (Fiber.localizationAlgEquivQuotient p q.1).toLinearEquiv.length_eq.symm
+    _ = length κp Sq := length_eq_of_surjective residue_surjective
+    _ = finrank κp Sq := length_eq_finrank κp Sq
+
+/-- Let `R` be an integral domain, let `S` be a finite flat `R`-algebra, and let `p` be a prime
+ideal of `R`. Then the sum over all prime ideals `q` of `S` lying over `p` of the ramification
+index of `q` times the inertia degree of `q` equals the rank of `S` as an `R`-module. -/
+theorem sum_ramification_inertia_eq_finrank
+    [IsDomain R] [Module.Finite R S] [Module.Flat R S] [Fintype (p.primesOver S)] :
+    ∑ q : p.primesOver S, q.1.ramificationIdx R * q.1.inertiaDeg R = Module.finrank R S := by
+  rw [sum_ramification_inertia_eq_finrank_fiber, finrank_fiber_eq_finrank]
+
+/-- Let `S/R` be a finite flat extension of integral domains, and let `p` be prime ideal of `R`.
+Assume that `R` is the invariant subring of a finite group `G` acting on `S`. Then the sum over
+all prime ideals `q` of `S` lying over `p` of the ramification index of `q` times the inertia
+degree of `q` equals the cardinality of `G`. -/
+theorem sum_ramification_inertia_eq_card
+    [IsDomain R] [IsDomain S] [Module.Finite R S] [Module.Flat R S] [Fintype (p.primesOver S)]
+    {G : Type*} [Group G] [MulSemiringAction G S] [IsGaloisGroup G R S] :
+    ∑ q : p.primesOver S, q.1.ramificationIdx R * q.1.inertiaDeg R = Nat.card G := by
+  let := IsGaloisGroup.finite G R S
+  rw [sum_ramification_inertia_eq_finrank, IsGaloisGroup.card_eq_finrank' G R S]
+
+end Ideal
+```

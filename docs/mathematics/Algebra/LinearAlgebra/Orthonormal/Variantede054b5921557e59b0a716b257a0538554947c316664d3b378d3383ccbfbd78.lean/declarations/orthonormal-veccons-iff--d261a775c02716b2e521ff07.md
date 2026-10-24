@@ -1,0 +1,98 @@
+# orthonormal_vecCons_iff
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "48279d93f303ec50f88d434946d25f0f905135de",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 61,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/ed/ede054b5921557e59b0a716b257a0538554947c316664d3b378d3383ccbfbd78.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:210111f1-468c-28e5-7e74-9b39182d8cb2",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:cf39e427-243e-b037-e84d-610815ca027c",
+  "kind": "lemma",
+  "lexical_name": "orthonormal_vecCons_iff",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "orthonormal-veccons-iff--d261a775c02716b2e521ff07",
+  "source": {
+    "blob": "48279d93f303ec50f88d434946d25f0f905135de",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 65,
+    "line": 61,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Orthonormal/Variantede054b5921557e59b0a716b257a0538554947c316664d3b378d3383ccbfbd78.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:d261a775c02716b2e521ff07810dd2ead63db777b664a63131596557e4c73dd0",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Orthonormal/Variantede054b5921557e59b0a716b257a0538554947c316664d3b378d3383ccbfbd78.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:cf39e427-243e-b037-e84d-610815ca027c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 61–65.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma orthonormal_vecCons_iff {n : ℕ} {v : E} {vs : Fin n → E} :
+    Orthonormal 𝕜 (Matrix.vecCons v vs) ↔ ‖v‖ = 1 ∧ (∀ i, ⟪v, vs i⟫ = 0) ∧ Orthonormal 𝕜 vs := by
+  simp_rw [Orthonormal, pairwise_fin_succ_iff_of_isSymm, Fin.forall_fin_succ]
+  tauto
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Orthonormal/Variantede054b5921557e59b0a716b257a0538554947c316664d3b378d3383ccbfbd78.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Orthonormal/Variantede054b5921557e59b0a716b257a0538554947c316664d3b378d3383ccbfbd78.lean#L61).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `48279d93f303ec50f88d434946d25f0f905135de` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

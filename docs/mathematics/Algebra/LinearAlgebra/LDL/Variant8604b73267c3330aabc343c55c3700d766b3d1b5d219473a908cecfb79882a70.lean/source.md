@@ -1,0 +1,139 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.LDL.Variant8604b73267c3330aabc343c55c3700d766b3d1b5d219473a908cecfb79882a70
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b23d2207a5f1950a4fb972f0d041cfc3d79bd336` · SHA-256 `600b5797ca2aa2c89f428262dfb213fc7c9d9e6611e14eee68b2776b078ca675`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.LDLLowerInv.Variantf86b3c99ab6f74820d80ad8ef0c72deadee4237bd8dea5067b9d4ac3b28ea5fe","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f86b3c99ab6f74820d80ad8ef0c72deadee4237bd8dea5067b9d4ac3b28ea5fe","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.LDLLowerInv.Variantf86b3c99ab6f74820d80ad8ef0c72deadee4237bd8dea5067b9d4ac3b28ea5fe","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"f86b3c99ab6f74820d80ad8ef0c72deadee4237bd8dea5067b9d4ac3b28ea5fe","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Analysis/Matrix/LDL.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Alexander Bentkamp. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Alexander Bentkamp
+-/
+module
+
+public import Mathlib.Analysis.InnerProductSpace.GramSchmidtOrtho
+public import Mathlib.Analysis.Matrix.PosDef
+public import Mathlib.LinearAlgebra.Matrix.Block
+
+/-! # LDL decomposition
+
+This file proves the LDL-decomposition of matrices: Any positive definite matrix `S` can be
+decomposed as `S = LDLᴴ` where `L` is a lower-triangular matrix and `D` is a diagonal matrix.
+
+## Main definitions
+
+* `LDL.lower` is the lower triangular matrix `L`.
+* `LDL.lowerInv` is the inverse of the lower triangular matrix `L`.
+* `LDL.diag` is the diagonal matrix `D`.
+
+## Main result
+
+* `LDL.lower_conj_diag` states that any positive definite matrix can be decomposed as `LDLᴴ`.
+* `LDL.isLowerTriangular_lower` states that `L` is lower triangular.
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.LDLLowerInv.Variantf86b3c99ab6f74820d80ad8ef0c72deadee4237bd8dea5067b9d4ac3b28ea5fe
+
+@[expose] public section
+
+open Module
+
+variable {𝕜 : Type*} [RCLike 𝕜]
+variable {n : Type*} [LinearOrder n] [WellFoundedLT n] [LocallyFiniteOrderBot n]
+
+section set_options
+
+set_option quotPrecheck false
+local notation "⟪" x ", " y "⟫ₑ" => inner 𝕜 (WithLp.toLp 2 x) (WithLp.toLp 2 y)
+
+open Matrix InnerProductSpace
+
+open scoped ComplexOrder
+
+variable {S : Matrix n n 𝕜} [Fintype n] (hS : S.PosDef)
+
+/-- The inverse of the lower triangular matrix `L` of the LDL-decomposition. It is obtained by
+applying Gram-Schmidt-Orthogonalization w.r.t. the inner product induced by `Sᵀ` on the standard
+basis vectors `Pi.basisFun`. -/
+noncomputable def LDL.lowerInv : Matrix n n 𝕜 :=
+  @gramSchmidt 𝕜 (n → 𝕜) _ (Sᵀ.toNormedAddCommGroup hS.transpose)
+    (Sᵀ.toInnerProductSpace hS.transpose.posSemidef) n _ _ _ (Pi.basisFun 𝕜 n)
+
+theorem LDL.lowerInv_eq_gramSchmidtBasis :
+    LDL.lowerInv hS =
+      ((Pi.basisFun 𝕜 n).toMatrix
+          (@gramSchmidtBasis 𝕜 (n → 𝕜) _ (Sᵀ.toNormedAddCommGroup hS.transpose)
+            (Sᵀ.toInnerProductSpace hS.transpose.posSemidef) n _ _ _ (Pi.basisFun 𝕜 n)))ᵀ := by
+  let := (Sᵀ.toNormedAddCommGroup hS.transpose)
+  let := (Sᵀ.toInnerProductSpace hS.transpose.posSemidef)
+  ext i j
+  rw [LDL.lowerInv, Basis.coePiBasisFun.toMatrix_eq_transpose, coe_gramSchmidtBasis]
+  rfl
+
+noncomputable instance LDL.invertibleLowerInv : Invertible (LDL.lowerInv hS) := by
+  rw [LDL.lowerInv_eq_gramSchmidtBasis]
+  haveI :=
+    Basis.invertibleToMatrix (Pi.basisFun 𝕜 n)
+      (@gramSchmidtBasis 𝕜 (n → 𝕜) _ (Sᵀ.toNormedAddCommGroup hS.transpose)
+        (Sᵀ.toInnerProductSpace hS.transpose.posSemidef) n _ _ _ (Pi.basisFun 𝕜 n))
+  infer_instance
+
+theorem LDL.lowerInv_orthogonal {i j : n} (h₀ : i ≠ j) :
+    ⟪LDL.lowerInv hS i, Sᵀ *ᵥ LDL.lowerInv hS j⟫ₑ = 0 :=
+  @gramSchmidt_orthogonal 𝕜 _ _ (Sᵀ.toNormedAddCommGroup hS.transpose)
+    (Sᵀ.toInnerProductSpace hS.transpose.posSemidef) _ _ _ _ _ _ _ h₀
+
+/-- The entries of the diagonal matrix `D` of the LDL decomposition. -/
+noncomputable def LDL.diagEntries : n → 𝕜 := fun i =>
+  ⟪star (LDL.lowerInv hS i), S *ᵥ star (LDL.lowerInv hS i)⟫ₑ
+
+/-- The diagonal matrix `D` of the LDL decomposition. -/
+noncomputable def LDL.diag : Matrix n n 𝕜 :=
+  Matrix.diagonal (LDL.diagEntries hS)
+
+theorem LDL.isLowerTriangular_lowerInv : (LDL.lowerInv hS).IsLowerTriangular := by
+  intro i j hij
+  simp only [OrderDual.toDual_lt_toDual] at hij
+  rw [← @gramSchmidt_triangular 𝕜 (n → 𝕜) _ (Sᵀ.toNormedAddCommGroup hS.transpose)
+      (Sᵀ.toInnerProductSpace hS.transpose.posSemidef) n _ _ _ i j hij (Pi.basisFun 𝕜 n),
+    Pi.basisFun_repr, LDL.lowerInv]
+
+/-- Inverse statement of **LDL decomposition**: we can conjugate a positive definite matrix
+by some lower triangular matrix and get a diagonal matrix. -/
+theorem LDL.diag_eq_lowerInv_conj : LDL.diag hS = LDL.lowerInv hS * S * (LDL.lowerInv hS)ᴴ := by
+  ext i j
+  by_cases hij : i = j
+  · simp only [diag, diagEntries, EuclideanSpace.inner_toLp_toLp, star_star, hij,
+      diagonal_apply_eq, Matrix.mul_assoc, dotProduct_comm]
+    rfl
+  · simp only [LDL.diag, hij, diagonal_apply_ne, Ne, not_false_iff, mul_mul_apply]
+    rw [conjTranspose, transpose_map, transpose_transpose, dotProduct_mulVec,
+      (LDL.lowerInv_orthogonal hS fun h : j = i => hij h.symm).symm, ← inner_conj_symm,
+      mulVec_transpose, EuclideanSpace.inner_toLp_toLp, ← RCLike.star_def, ←
+      star_dotProduct_star, star_star]
+    rfl
+
+/-- The lower triangular matrix `L` of the LDL decomposition. -/
+noncomputable def LDL.lower :=
+  (LDL.lowerInv hS)⁻¹
+
+theorem LDL.isLowerTriangular_lower : (LDL.lower hS).IsLowerTriangular :=
+  blockTriangular_inv_of_blockTriangular (isLowerTriangular_lowerInv hS)
+
+/-- **LDL decomposition**: any positive definite matrix `S` can be
+decomposed as `S = LDLᴴ` where `L` is a lower-triangular matrix and `D` is a diagonal matrix. -/
+theorem LDL.lower_conj_diag : LDL.lower hS * LDL.diag hS * (LDL.lower hS)ᴴ = S := by
+  rw [LDL.lower, conjTranspose_nonsing_inv, Matrix.mul_assoc,
+    Matrix.inv_mul_eq_iff_eq_mul_of_invertible (LDL.lowerInv hS),
+    Matrix.mul_inv_eq_iff_eq_mul_of_invertible]
+  exact LDL.diag_eq_lowerInv_conj hS
+
+end set_options
+```

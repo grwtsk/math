@@ -1,0 +1,81 @@
+# Complete source: GRWTSK.Algebra.RingTheory.Integral.Variant489dcffaf19e81900864ceb56f9c10f5435507abdce0090228ccbe217f75ad81
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ca71edd787020be566ed691b4164158fbc3f4008` · SHA-256 `9c7a7b3d2d960ff0f3eacf41a090dea820385dc89b169b8afa8bd703addc59d9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.RingTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.RingTheory.MemOfIntegral.Variant548593b502fbdf2867e20a013fd4b1583dc52fb79a438be6045f153124a9a358","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"548593b502fbdf2867e20a013fd4b1583dc52fb79a438be6045f153124a9a358","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.MemOfIntegral.Variant548593b502fbdf2867e20a013fd4b1583dc52fb79a438be6045f153124a9a358","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"548593b502fbdf2867e20a013fd4b1583dc52fb79a438be6045f153124a9a358","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/RingTheory/Valuation/Integral.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Kenny Lau. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kenny Lau
+-/
+import Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
+import Mathlib.RingTheory.Valuation.Integers
+
+/-!
+# Integral elements over the ring of integers of a valuation
+
+The ring of integers is integrally closed inside the original ring.
+-/
+
+
+
+namespace GRWTSK.Algebra.RingTheory.MemOfIntegral.Variant548593b502fbdf2867e20a013fd4b1583dc52fb79a438be6045f153124a9a358
+
+universe u v w
+
+namespace Valuation
+
+namespace Integers
+
+section CommRing
+
+variable {R : Type u} {Γ₀ : Type v} [CommRing R] [LinearOrderedCommGroupWithZero Γ₀]
+variable {v : Valuation R Γ₀} {O : Type w} [CommRing O] [Algebra O R] (hv : Integers v O)
+include hv
+
+open Polynomial
+
+theorem mem_of_integral {x : R} (hx : IsIntegral O x) : x ∈ v.integer :=
+  let ⟨p, hpm, hpx⟩ := hx
+  le_of_not_lt fun hvx : 1 < v x => by
+    rw [hpm.as_sum, eval₂_add, eval₂_pow, eval₂_X, eval₂_finset_sum, add_eq_zero_iff_eq_neg] at hpx
+    replace hpx := congr_arg v hpx; refine ne_of_gt ?_ hpx
+    rw [v.map_neg, v.map_pow]
+    refine v.map_sum_lt' (zero_lt_one.trans_le (one_le_pow_of_one_le' hvx.le _)) fun i hi => ?_
+    rw [eval₂_mul, eval₂_pow, eval₂_C, eval₂_X, v.map_mul, v.map_pow, ←
+      one_mul (v x ^ p.natDegree)]
+    rcases (hv.2 <| p.coeff i).lt_or_eq with hvpi | hvpi
+    · exact mul_lt_mul'' hvpi (pow_lt_pow_right₀ hvx <| Finset.mem_range.1 hi) zero_le' zero_le'
+    · rw [hvpi, one_mul, one_mul]; exact pow_lt_pow_right₀ hvx (Finset.mem_range.1 hi)
+
+protected theorem integralClosure : integralClosure O R = ⊥ :=
+  bot_unique fun _ hr =>
+    let ⟨x, hx⟩ := hv.3 (hv.mem_of_integral hr)
+    Algebra.mem_bot.2 ⟨x, hx⟩
+
+end CommRing
+
+section FractionField
+
+variable {K : Type u} {Γ₀ : Type v} [Field K] [LinearOrderedCommGroupWithZero Γ₀]
+variable {v : Valuation K Γ₀} {O : Type w} [CommRing O]
+variable [Algebra O K] [IsFractionRing O K]
+variable (hv : Integers v O)
+
+include hv in
+theorem integrallyClosed : IsIntegrallyClosed O :=
+  (IsIntegrallyClosed.integralClosure_eq_bot_iff K).mp (Valuation.Integers.integralClosure hv)
+
+end FractionField
+
+end Integers
+
+end Valuation
+```

@@ -1,0 +1,222 @@
+# GRWTSK.Algebra.CommutativeAlgebra.Basic.Variantb45fc3ad9ea5478c7e1e9d4cc7b8f356c4c1927e86c0dba1b1cfe560211f4d9a
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**201 observed declarations and anonymous commands**, 165 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CommutativeAlgebra/Basic/Variantb45fc3ad9ea5478c7e1e9d4cc7b8f356c4c1927e86c0dba1b1cfe560211f4d9a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b6adaa591a1a88222c979e83886e4b3656700533`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/CommutativeAlgebra/Basic/Variantb45fc3ad9ea5478c7e1e9d4cc7b8f356c4c1927e86c0dba1b1cfe560211f4d9a.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Polynomial](declarations/polynomial--83eb5d1c9de8d2444aadc08f.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [forall_iff_forall_finsupp](declarations/forall-iff-forall-finsupp--31b8cecef79012bcb2007d26.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [exists_iff_exists_finsupp](declarations/exists-iff-exists-finsupp--5373bbc21a482483aae56108.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [eta](declarations/eta--1002131eccfdb3d9bb1f3e0a.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [zero](declarations/zero--7e80b51bb95b134c3fdc2d1f.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [one](declarations/one--6bda67135597a3143ef69f1d.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [add'](declarations/add--b34bf1a3768546ad655e5238.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [neg'](declarations/neg--9c48d925458d561b1fdf45cb.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [sub](declarations/sub--f69532b591e159fd71ee525b.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [mul'](declarations/mul--78f8095b33631a6bb74699be.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [smulZeroClass](declarations/smulzeroclass--d4d59a246231c7aeab2a80d6.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [(anonymous)](declarations/instance--225706e82319e6ca2eadcf63.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [ofFinsupp_zero](declarations/offinsupp-zero--6a7d76f69a0d7ccd5fdbe39a.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ofFinsupp_one](declarations/offinsupp-one--d692e84d3f0bcaf79acdca9a.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [ofFinsupp_add](declarations/offinsupp-add--fabadecb6c1321daeb4694f3.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [ofFinsupp_neg](declarations/offinsupp-neg--a944320a00479bd1244e525d.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [ofFinsupp_sub](declarations/offinsupp-sub--8e26f312ac31acd91a3821a1.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [ofFinsupp_mul](declarations/offinsupp-mul--008fda603517281b76ee2b48.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [ofFinsupp_smul](declarations/offinsupp-smul--04c61ba6bcb5143cb59294ce.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [ofFinsupp_pow](declarations/offinsupp-pow--db4c534f786b1aa90f33000d.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [toFinsupp_zero](declarations/tofinsupp-zero--a1c336ab11613fe719afe297.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [toFinsupp_one](declarations/tofinsupp-one--4425a66e7f68c42817c712c5.md) | 212 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [toFinsupp_add](declarations/tofinsupp-add--b8776c6b5bbaa27045687149.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [toFinsupp_neg](declarations/tofinsupp-neg--7d706abfcd2089ce98e7a3e2.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [toFinsupp_sub](declarations/tofinsupp-sub--33ad5e93d9f91805962ac8d6.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [toFinsupp_mul](declarations/tofinsupp-mul--2ef49f48e04b28c713a0ded3.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [toFinsupp_smul](declarations/tofinsupp-smul--3f13db3452940f523ed553ac.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [toFinsupp_pow](declarations/tofinsupp-pow--806f3c7623fa3d5b27f93f52.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [_root_.GRWTSK.Algebra.CommutativeAlgebra.Polynomial.Variant580e8295104df0f40059f8e6ab62db213475b02b98de69aeaceb5c90a6e19eee.IsSMulRegular.polynomial](declarations/root-grwtsk-algebra-commutativealgebra-polynomial-variant580e8295104df0f--7170c92e8d7815212faba01b.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [toFinsupp_injective](declarations/tofinsupp-injective--dbfdcf405e67fc48ddb743e7.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [toFinsupp_inj](declarations/tofinsupp-inj--f8bb0fe8a1e3d2b779d2c8df.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [toFinsupp_eq_zero](declarations/tofinsupp-eq-zero--32cf0b5ba21ffd503e58679d.md) | 270 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [toFinsupp_eq_one](declarations/tofinsupp-eq-one--e386fa21f5cdd234f2fafa0b.md) | 275 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [ofFinsupp_inj](declarations/offinsupp-inj--3d952ca0cb01e32263734a0a.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [ofFinsupp_eq_zero](declarations/offinsupp-eq-zero--55013b3dd2297c6953db5bc7.md) | 285 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [ofFinsupp_eq_one](declarations/offinsupp-eq-one--46d7aee86d281a138a2fca23.md) | 290 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `instance` | [inhabited](declarations/inhabited--aca8ed6ed829389ac6d11212.md) | 293 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `instance` | [natCast](declarations/natcast--5cd193f7a179484ff78fa741.md) | 297 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `instance` | [semiring](declarations/semiring--751f62f26fbe837b665dcde5.md) | 301 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `instance` | [distribSMul](declarations/distribsmul--c994fcaa45c78e27b51df1ae.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `instance` | [distribMulAction](declarations/distribmulaction--fd1eb221cc7c0da05dbb7d11.md) | 311 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `instance` | [faithfulSMul](declarations/faithfulsmul--5805c7fa4acbe6b0ef3cac1b.md) | 316 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `instance` | [module](declarations/module--ccd1f795f9a43e68bda0cb21.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `instance` | [smulCommClass](declarations/smulcommclass--f153ee8f300cc9c7e4e1528a.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `instance` | [isScalarTower](declarations/isscalartower--8d9c9e5ae4f5005102774be5.md) | 333 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `instance` | [isScalarTower_right](declarations/isscalartower-right--debda50ed6fa4cfb24d5931a.md) | 340 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `instance` | [isCentralScalar](declarations/iscentralscalar--28ec7bb944a46cc99fda0fa1.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `instance` | [unique](declarations/unique--bd9a095930e5a0803ad1977e.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `def` | [toFinsuppIso](declarations/tofinsuppiso--af8207cf1147e94e23b5b244.md) | 367 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `instance` | [(anonymous)](declarations/instance--6d3a0e45d56007c16ef1a2cb.md) | 378 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [ofFinsupp_sum](declarations/offinsupp-sum--5379c90e9faa11e58e279442.md) | 383 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [toFinsupp_sum](declarations/tofinsupp-sum--8e6b2ec436f5794f03de6607.md) | 388 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `def` | [support](declarations/support--a62665e50ad7bf196692ff1d.md) | 398 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [support_ofFinsupp](declarations/support-offinsupp--a076ad61f95d0c6b8b741556.md) | 403 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [support_toFinsupp](declarations/support-tofinsupp--14edf4b06d0a8d7cd4bc6c97.md) | 406 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [support_zero](declarations/support-zero--ab578aed04be89782a0ddb65.md) | 409 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [support_eq_empty](declarations/support-eq-empty--cee8457353068855b31e05a0.md) | 414 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [card_support_eq_zero](declarations/card-support-eq-zero--499b2dcf45e7c8e82b8958f0.md) | 419 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `def` | [monomial](declarations/monomial--abcd3226680a6363dbaaf519.md) | 423 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [toFinsupp_monomial](declarations/tofinsupp-monomial--ab9acccf88fd70c00d36c8f5.md) | 432 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [ofFinsupp_single](declarations/offinsupp-single--3e2ca9651527f5e482e503a5.md) | 437 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [monomial_zero_right](declarations/monomial-zero-right--463158356a2ab737a8c6f076.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [monomial_zero_one](declarations/monomial-zero-one--0650a2efb8fec3b4ac3d9375.md) | 447 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [monomial_add](declarations/monomial-add--3eed2473fbb608ff99b2c3fc.md) | 452 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [monomial_mul_monomial](declarations/monomial-mul-monomial--4d081fbff10e2db628b73978.md) | 456 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [monomial_pow](declarations/monomial-pow--cc476d1703c16c941f62775f.md) | 463 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [smul_monomial](declarations/smul-monomial--515e071391f7e05a9b4a8de5.md) | 469 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [monomial_injective](declarations/monomial-injective--c67693539938b6ca25300fa9.md) | 474 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [monomial_eq_zero_iff](declarations/monomial-eq-zero-iff--a1da38d0c8b8f482de0166fa.md) | 479 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [support_add](declarations/support-add--f8de89e77563d4fef3f6f1e5.md) | 483 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `def` | [C](declarations/c--14ffd8a45850c12fe0c5c671.md) | 492 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [monomial_zero_left](declarations/monomial-zero-left--660004441c47222af200a1d3.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [toFinsupp_C](declarations/tofinsupp-c--ccd7aa02ce29dc9632ada513.md) | 505 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [C_0](declarations/c-0--6b75a0ab615b3744e7c36295.md) | 509 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [C_1](declarations/c-1--c3a5456fdd638080d5804790.md) | 512 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [C_mul](declarations/c-mul--c27095d179d183293d44f4fc.md) | 516 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [C_add](declarations/c-add--d7e421f2b9cd7879bcdec004.md) | 520 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [smul_C](declarations/smul-c--a1280285e88241410fade407.md) | 525 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [C_bit0](declarations/c-bit0--eac3b1d0c06f2c93d13c9395.md) | 531 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [C_bit1](declarations/c-bit1--c36de1fc4ccc30dd66f1d48f.md) | 537 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [C_pow](declarations/c-pow--9e331d95d8a2a9c1d8760a33.md) | 540 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [C_eq_nat_cast](declarations/c-eq-nat-cast--8007117adfd7b8c19c417393.md) | 545 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [C_mul_monomial](declarations/c-mul-monomial--af2804c31fbbfb8615937eb7.md) | 550 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [monomial_mul_C](declarations/monomial-mul-c--1070f0aeb07ee7b0627ce87c.md) | 555 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `def` | [X](declarations/x--88f4c063a13328024fb56274.md) | 560 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [monomial_one_one_eq_X](declarations/monomial-one-one-eq-x--6221d9fb21d573918db04b8e.md) | 564 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [monomial_one_right_eq_X_pow](declarations/monomial-one-right-eq-x-pow--45a25ec09e054811b4ec7001.md) | 568 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [toFinsupp_X](declarations/tofinsupp-x--4ab49c86750287830f5280e2.md) | 575 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [X_mul](declarations/x-mul--f280a1eb33b9a2ad43169e9b.md) | 580 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [X_pow_mul](declarations/x-pow-mul--910314b173acf22d6a0a940f.md) | 589 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [X_mul_C](declarations/x-mul-c--75bed112ed09d8e5d47d515d.md) | 600 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `theorem` | [X_pow_mul_C](declarations/x-pow-mul-c--1ef60b0cdeba9e7c5112d0af.md) | 608 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [X_pow_mul_assoc](declarations/x-pow-mul-assoc--ad2828bd2a5763bceb526fee.md) | 612 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [X_pow_mul_assoc_C](declarations/x-pow-mul-assoc-c--e31e0e2a1bdff5971d97173b.md) | 620 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [commute_X](declarations/commute-x--7cff394d4e10db87f7b1d1b4.md) | 624 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [commute_X_pow](declarations/commute-x-pow--bcc438c234051fdc3343c6cf.md) | 628 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [monomial_mul_X](declarations/monomial-mul-x--b15dd508e90a699bc7e53a1f.md) | 633 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [monomial_mul_X_pow](declarations/monomial-mul-x-pow--4980682116a7ee15d4671126.md) | 638 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [X_mul_monomial](declarations/x-mul-monomial--8d218ae74947d13a2206f66c.md) | 646 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [X_pow_mul_monomial](declarations/x-pow-mul-monomial--679045ea58911c5bd4ba2911.md) | 651 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `def` | [coeff](declarations/coeff--048709dc47777e4d7f4ca5b8.md) | 659 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [coeff_ofFinsupp](declarations/coeff-offinsupp--f2057855f80aebd063591d26.md) | 665 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [coeff_injective](declarations/coeff-injective--af8591721fe5fac8383df4f4.md) | 667 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [coeff_inj](declarations/coeff-inj--dbb7976348298a97a3b21213.md) | 674 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [toFinsupp_apply](declarations/tofinsupp-apply--12d656786e795ba45b9fbfc0.md) | 678 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [coeff_monomial](declarations/coeff-monomial--e5791e42c4fdcde237d218b5.md) | 681 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [coeff_zero](declarations/coeff-zero--f0ddf4ceb4b91386d272e027.md) | 689 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [coeff_one_zero](declarations/coeff-one-zero--3fc3fcd8755c3b0d5886ed0c.md) | 694 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [coeff_X_one](declarations/coeff-x-one--50c50049864731e6ac17aaba.md) | 700 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [coeff_X_zero](declarations/coeff-x-zero--fe5c4f7964844ecaef1b5187.md) | 705 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [coeff_monomial_succ](declarations/coeff-monomial-succ--4daa460b9886d9a116c94462.md) | 710 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [coeff_X](declarations/coeff-x--0c800f9547d904df607d30cb.md) | 713 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [coeff_X_of_ne_one](declarations/coeff-x-of-ne-one--193b89f3f5dcb0aba7d097ed.md) | 717 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [mem_support_iff](declarations/mem-support-iff--f6f46b5325cc85ef820716ae.md) | 722 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [not_mem_support_iff](declarations/not-mem-support-iff--3c6a6535a1a2f7ed3f35a252.md) | 727 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `theorem` | [coeff_C](declarations/coeff-c--fbba79ad55f5436f3fe49a1e.md) | 730 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [coeff_C_zero](declarations/coeff-c-zero--aef1bc6ef975adabc870896a.md) | 736 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [coeff_C_ne_zero](declarations/coeff-c-ne-zero--83c9042cb9c416751671a894.md) | 740 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `lemma` | [coeff_C_succ](declarations/coeff-c-succ--15626d079a7e94d2e8f05bfa.md) | 744 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [coeff_nat_cast_ite](declarations/coeff-nat-cast-ite--6b6021748db7dc01e40c85a2.md) | 747 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [C_mul_X_pow_eq_monomial](declarations/c-mul-x-pow-eq-monomial--272e3d474447e3a72debd64c.md) | 750 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `theorem` | [toFinsupp_C_mul_X_pow](declarations/tofinsupp-c-mul-x-pow--45dbfc4fe2fbd7f88ee3bc62.md) | 757 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [C_mul_X_eq_monomial](declarations/c-mul-x-eq-monomial--c74eea336368623569bde079.md) | 762 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `theorem` | [toFinsupp_C_mul_X](declarations/tofinsupp-c-mul-x--a127efc825355de84b75e771.md) | 766 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [C_injective](declarations/c-injective--bab4f7be83ecdf6f4b2b263b.md) | 770 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [C_inj](declarations/c-inj--b45ac5860958ace278c49430.md) | 775 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [C_eq_zero](declarations/c-eq-zero--b31fe6e8f25f9f6ae6b3ccb2.md) | 780 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `theorem` | [C_ne_zero](declarations/c-ne-zero--1806c18293db9fe2506bb23c.md) | 784 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `theorem` | [subsingleton_iff_subsingleton](declarations/subsingleton-iff-subsingleton--77558a962b09377bd1a1e905.md) | 788 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `theorem` | [Nontrivial.of_polynomial_ne](declarations/nontrivial-of-polynomial-ne--d56f64d1ceb59c70e410e733.md) | 794 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [forall_eq_iff_forall_eq](declarations/forall-eq-iff-forall-eq--42d7d79aca26917d7a419d11.md) | 798 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [ext_iff](declarations/ext-iff--174919b26f240f139f1cba52.md) | 802 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `theorem` | [ext](declarations/ext--c508fe07ded5a3380a2ccc34.md) | 811 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `theorem` | [addSubmonoid_closure_setOf_eq_monomial](declarations/addsubmonoid-closure-setof-eq-monomial--6e4fb4c6ff005891fea846d9.md) | 816 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `theorem` | [addHom_ext](declarations/addhom-ext--ce4af046f29da811554c8329.md) | 826 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [addHom_ext'](declarations/addhom-ext--62888918281b79c8da5a6f38.md) | 834 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [lhom_ext'](declarations/lhom-ext--06969838cc5ad59b1b1e3c1e.md) | 840 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [eq_zero_of_eq_zero](declarations/eq-zero-of-eq-zero--4d34cfc45d0b00d63653ec1f.md) | 846 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `theorem` | [support_monomial](declarations/support-monomial--6c9548c612f056ffef75c0a4.md) | 852 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [support_monomial'](declarations/support-monomial--e1aeaea84c7fb703f6cc533d.md) | 856 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `theorem` | [support_C_mul_X](declarations/support-c-mul-x--a411ca5ae339a4daca8e9226.md) | 861 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `theorem` | [support_C_mul_X'](declarations/support-c-mul-x--3f7b1c1aed6be8c251b7e79c.md) | 865 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [support_C_mul_X_pow](declarations/support-c-mul-x-pow--f2bfc8a0b86680e8da2be0c3.md) | 869 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [support_C_mul_X_pow'](declarations/support-c-mul-x-pow--65151ee70ff3e09629351357.md) | 874 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [support_binomial'](declarations/support-binomial--c36cfe14487b47de7bac15a4.md) | 880 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [support_trinomial'](declarations/support-trinomial--fd9779febccba0454d7d91a5.md) | 889 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `theorem` | [X_pow_eq_monomial](declarations/x-pow-eq-monomial--6dcb3517635337628c66483c.md) | 904 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [toFinsupp_X_pow](declarations/tofinsupp-x-pow--a7113a954eb9df320d2c5574.md) | 911 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [smul_X_eq_monomial](declarations/smul-x-eq-monomial--ea506b506ef19d46d55283be.md) | 915 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [support_X_pow](declarations/support-x-pow--bfaa2afd101fe7baacc5210f.md) | 919 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [support_X_empty](declarations/support-x-empty--a7015eef64ea3bc000890941.md) | 924 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [support_X](declarations/support-x--ae78d4ef07c0f2e6ac2c7737.md) | 928 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `theorem` | [monomial_left_inj](declarations/monomial-left-inj--6ed67542ab85927b3648f409.md) | 932 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `theorem` | [binomial_eq_binomial](declarations/binomial-eq-binomial--32459ab616af37bb202b56c0.md) | 938 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `theorem` | [nat_cast_mul](declarations/nat-cast-mul--0ddd58987a5e522d2b87f338.md) | 945 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `def` | [sum](declarations/sum--1a1c84be06378fa100007eb0.md) | 950 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `theorem` | [sum_def](declarations/sum-def--baff4d0c7565ccc26c3b81a8.md) | 954 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [sum_eq_of_subset](declarations/sum-eq-of-subset--99fc42b3ec67f50b2853d521.md) | 959 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [mul_eq_sum_sum](declarations/mul-eq-sum-sum--224b33889a0c0bc214ae7457.md) | 966 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [sum_zero_index](declarations/sum-zero-index--5fdafacaa09a7feaecafa3d7.md) | 975 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [sum_monomial_index](declarations/sum-monomial-index--65ec1859c9e125ee306a9fff.md) | 980 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [sum_C_index](declarations/sum-c-index--c1e7b4b31a41e917884c6ae2.md) | 986 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [sum_X_index](declarations/sum-x-index--0d625552685c0648d4511da6.md) | 993 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `theorem` | [sum_add_index](declarations/sum-add-index--e0efc2833b30fb87e1b47ade.md) | 998 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `theorem` | [sum_add'](declarations/sum-add--a95371dcc438997823a296d6.md) | 1005 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `theorem` | [sum_add](declarations/sum-add--ef364cd82605df4294d6800b.md) | 1009 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `theorem` | [sum_smul_index](declarations/sum-smul-index--e3e8c6447ff95322552c7145.md) | 1014 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [sum_monomial_eq](declarations/sum-monomial-eq--90abb8a3632173427b55d68e.md) | 1019 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [sum_C_mul_X_pow_eq](declarations/sum-c-mul-x-pow-eq--f09d2ba5344c8cb7b7cfbe4e.md) | 1023 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `theorem` | [toFinsupp_erase](declarations/tofinsupp-erase--0122e1efc43213d58ea8f593.md) | 1033 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [ofFinsupp_erase](declarations/offinsupp-erase--5e2c0906a3f59b789fd0e1bf.md) | 1039 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [support_erase](declarations/support-erase--63a2e6a683406446ec2ff9c1.md) | 1046 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `theorem` | [monomial_add_erase](declarations/monomial-add-erase--f459fdc99188f82692973554.md) | 1051 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [coeff_erase](declarations/coeff-erase--a4860e8f9d450c51e6c659cc.md) | 1058 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `theorem` | [erase_zero](declarations/erase-zero--7869361244528ce7d994192f.md) | 1067 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [erase_monomial](declarations/erase-monomial--08f0896ad9154da614e04bfd.md) | 1072 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [erase_same](declarations/erase-same--a73f9089575369bc9cf2d1cc.md) | 1077 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `theorem` | [erase_ne](declarations/erase-ne--1f7df59117cdf213fe1afa7e.md) | 1081 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `def` | [update](declarations/update--75ae0eab831497b13d91f34f.md) | 1090 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [coeff_update](declarations/coeff-update--4647cd4fd29446e55c678021.md) | 1094 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [coeff_update_apply](declarations/coeff-update-apply--36c62706f51e6b1e2dfcf160.md) | 1101 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [coeff_update_same](declarations/coeff-update-same--8a31bbc105d097444230c6c5.md) | 1107 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `theorem` | [coeff_update_ne](declarations/coeff-update-ne--c7571fac46801fc5b95aba31.md) | 1111 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `theorem` | [update_zero_eq_erase](declarations/update-zero-eq-erase--3ede9ea54b25f1df37c466d2.md) | 1116 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `theorem` | [support_update](declarations/support-update--e612875bb1fe8b96b4a078ec.md) | 1121 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `theorem` | [support_update_zero](declarations/support-update-zero--f2d8a75e7ae06b13e487f4de.md) | 1129 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [support_update_ne_zero](declarations/support-update-ne-zero--e8535c9ad0e21dede587e6e5.md) | 1133 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `instance` | [commSemiring](declarations/commsemiring--1cf98f028f9167c819b0b9b7.md) | 1145 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `instance` | [intCast](declarations/intcast--e60e9fc85e92bb531522fb43.md) | 1156 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `instance` | [ring](declarations/ring--6cc6be0aae3abead66666ff4.md) | 1160 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [coeff_neg](declarations/coeff-neg--6fc6559c23b0be6770345688.md) | 1167 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [coeff_sub](declarations/coeff-sub--f68c15c7093a3709b0234a89.md) | 1174 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `theorem` | [monomial_neg](declarations/monomial-neg--41db6d05011678c3a145dd1c.md) | 1182 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `theorem` | [support_neg](declarations/support-neg--1232a59d56181f0047784216.md) | 1187 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [C_eq_int_cast](declarations/c-eq-int-cast--ae39e7d254c24751aafb2e69.md) | 1193 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `instance` | [commRing](declarations/commring--c5f547a550e6ce9b4ceba8b1.md) | 1198 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `instance` | [nontrivial](declarations/nontrivial--7aa9764ceb22880b5e790469.md) | 1208 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `theorem` | [X_ne_zero](declarations/x-ne-zero--63cd4a6ec317afe4d54059f0.md) | 1215 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `theorem` | [rat_smul_eq_C_mul](declarations/rat-smul-eq-c-mul--0ad77d2a124b1d561ace3849.md) | 1225 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `theorem` | [nontrivial_iff](declarations/nontrivial-iff--0ed08984d321f3faa8b052b7.md) | 1232 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `instance` | [repr](declarations/repr--5468f6aac84c58f0f2940a4b.md) | 1243 | `BLOCKED_NATIVE_ADMISSION` |

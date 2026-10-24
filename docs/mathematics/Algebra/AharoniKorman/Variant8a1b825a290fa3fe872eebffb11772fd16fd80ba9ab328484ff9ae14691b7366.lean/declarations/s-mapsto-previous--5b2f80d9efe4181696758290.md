@@ -1,0 +1,139 @@
+# S_mapsTo_previous
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "3eea7e4bd418a2e1ae42665cdf464a2230815e33",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 1100,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/8a/8a1b825a290fa3fe872eebffb11772fd16fd80ba9ab328484ff9ae14691b7366.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:928c920b-dcb1-c262-81fd-068f3c182920",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:d8f76b1b-d9cf-a8a3-9187-cb2b9fc18ffc",
+  "kind": "lemma",
+  "lexical_name": "S_mapsTo_previous",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "s-mapsto-previous--5b2f80d9efe4181696758290",
+  "source": {
+    "blob": "3eea7e4bd418a2e1ae42665cdf464a2230815e33",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1145,
+    "line": 1100,
+    "path": "GRWTSK/Algebra/AharoniKorman/Variant8a1b825a290fa3fe872eebffb11772fd16fd80ba9ab328484ff9ae14691b7366.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:5b2f80d9efe41816967582900f4e561262f5351a896d4fc553aeac9697742641",
+  "verification": {
+    "reference": "docs/verification/Algebra/AharoniKorman/Variant8a1b825a290fa3fe872eebffb11772fd16fd80ba9ab328484ff9ae14691b7366.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d8f76b1b-d9cf-a8a3-9187-cb2b9fc18ffc`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1100–1145.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma S_mapsTo_previous (f : SpinalMap C) (hC : IsChain (· ≤ ·) C) (hn : n ≠ 0) :
+    ∀ x ∈ S n C \ (C ∩ level n), f x ∈ C ∩ level (n - 1) := by
+  -- Clearly it must be mapped into `C`
+  intro x hx
+  refine ⟨f.mem _, ?_⟩
+  set p := f x with hp
+  clear_value p
+  induction S_subset_level hx.1 using induction_on_level with | h x y =>
+  induction p with | h a b m =>
+  -- Now write `(x, y, n)` for our given point, and suppose it is mapped to `(a, b, m)`.
+  simp only [toHollom_mem_level_iff]
+  -- We must have `m ≠ n`, as `(x, y, n) ∈ R` and no point of `R` can map to `C ∩ level n`
+  have : m ≠ n := by
+    rintro rfl
+    have : f _ ∉ _ := not_R_hits_same (S_subset_R hx.1) hx.2
+    simp only [Set.mem_inter_iff, SpinalMap.mem, true_and] at this
+    simp [← hp] at this
+  -- Furthermore, we must have `n + 1 ≠ m`, as `(x, y, n) ∈ S` and no point of `S` can map to
+  -- `C ∩ level (n + 1)`.
+  have : n + 1 ≠ m := by
+    rintro rfl
+    have : f _ ∉ _ := not_S_hits_next f hC hx.1 hx.2
+    simp only [Set.mem_inter_iff, SpinalMap.mem, true_and] at this
+    simp [← hp] at this
+  -- Next `f (a, b, m) = (a, b, m) = f (x, y, n)`
+  have hp' : f h(a, b, m) = f h(x, y, n) := by
+    rw [hp, f.idempotent]
+  -- But `(x, y, n) ≤ (a, b, m)` if `m + 2 ≤ n`, so this cannot hold
+  have : ¬ m + 2 ≤ n := by
+    intro h
+    have := f.eq_of_le hp'.symm (.twice h)
+    simp only [Prod.mk.injEq, Hollom.ext_iff] at this
+    lia
+  -- and `(a, b, m) ≤ (x, y, n)` if `n + 2 ≤ m`, so this cannot hold either
+  have : ¬ n + 2 ≤ m := by
+    intro h
+    have := f.eq_of_le hp' (.twice h)
+    simp only [Prod.mk.injEq, Hollom.ext_iff] at this
+    lia
+  -- So the only remaining option is that `m = n - 1`.
+  lia
+
+open Finset in
+/--
+Supposing that all of `S \ (C ∩ level n)` is sent to `C ∩ level (n - 1)`, we deduce a contradiction.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/AharoniKorman/Variant8a1b825a290fa3fe872eebffb11772fd16fd80ba9ab328484ff9ae14691b7366.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/AharoniKorman/Variant8a1b825a290fa3fe872eebffb11772fd16fd80ba9ab328484ff9ae14691b7366.lean#L1100).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3eea7e4bd418a2e1ae42665cdf464a2230815e33` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

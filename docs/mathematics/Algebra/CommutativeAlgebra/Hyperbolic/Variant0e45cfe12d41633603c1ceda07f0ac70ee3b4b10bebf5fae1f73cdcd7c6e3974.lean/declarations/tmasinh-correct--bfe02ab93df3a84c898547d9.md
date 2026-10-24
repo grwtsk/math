@@ -1,0 +1,155 @@
+# tmAsinh_correct
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:738ff875-1b84-3d7e-feed-7454e73e414d",
+  "kind": "theorem",
+  "lexical_name": "tmAsinh_correct",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "tmasinh-correct--bfe02ab93df3a84c898547d9",
+  "source": {
+    "blob": "c7aeee2aaf3c61bbb1db59f1c08119012d375839",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1309,
+    "line": 1236,
+    "path": "GRWTSK/Algebra/CommutativeAlgebra/Hyperbolic/Variant0e45cfe12d41633603c1ceda07f0ac70ee3b4b10bebf5fae1f73cdcd7c6e3974.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:bfe02ab93df3a84c898547d9bc65148ef4295a718006c1320b8a52b75ab2b916",
+  "verification": {
+    "reference": "docs/verification/Algebra/CommutativeAlgebra/Hyperbolic/Variant0e45cfe12d41633603c1ceda07f0ac70ee3b4b10bebf5fae1f73cdcd7c6e3974.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:738ff875-1b84-3d7e-feed-7454e73e414d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1236–1309.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem tmAsinh_correct (J : IntervalRat) (n : ℕ) :
+    ∀ z : ℝ, z ∈ J → Real.arsinh z ∈ (tmAsinh J n).evalSet z := by
+  intro z hz
+  simp only [tmAsinh, evalSet, Set.mem_setOf_eq]
+  set r := Real.arsinh z - Polynomial.aeval (z - 0) (asinhTaylorPoly n) with hr_def
+  refine ⟨r, ?_, ?_⟩
+  · simp only [IntervalRat.mem_def, Rat.cast_neg]
+    have hpoly_eq := asinhTaylorPoly_aeval_eq n z
+    simp only [sub_zero] at hr_def hpoly_eq
+    have hr_rewrite : r = Real.arsinh z - ∑ i ∈ Finset.range (n + 1),
+        (iteratedDeriv i Real.arsinh 0 / i.factorial) * z ^ i := by
+      rw [hr_def, hpoly_eq]
+    set a := min (J.lo : ℝ) 0 with ha_def
+    set b := max (J.hi : ℝ) 0 with hb_def
+    have hab : a ≤ b := by simp only [ha_def, hb_def]; exact le_trans (min_le_of_right_le (le_refl 0)) (le_max_right _ _)
+    have hca : a ≤ 0 := min_le_right _ _
+    have hcb : 0 ≤ b := le_max_right _ _
+    have hz_ab : z ∈ Set.Icc a b := by
+      simp only [Set.mem_Icc, ha_def, hb_def]
+      have hmem := mem_Icc_of_mem_interval hz
+      constructor
+      · exact le_trans (min_le_left _ _) hmem.1
+      · exact le_trans hmem.2 (le_max_left _ _)
+    set M := asinhDerivSup J (n + 1) with hM_def
+    have hM_nonneg : 0 ≤ M := by
+      rw [hM_def]
+      unfold asinhDerivSup
+      apply Real.sSup_nonneg
+      intro y hy
+      obtain ⟨x, _, rfl⟩ := hy
+      exact norm_nonneg _
+    have hM : ∀ x ∈ Set.Icc a b, ‖iteratedDeriv (n + 1) Real.arsinh x‖ ≤ M := by
+      intro x hx
+      exact arsinh_deriv_bound J (n + 1) x hx
+    have hf : ContDiff ℝ (n + 1) Real.arsinh := by
+      have h : ContDiff ℝ ((n + 1) : ℕ∞) Real.arsinh := Real.contDiff_arsinh
+      exact h
+    have hTaylor := LeanCert.Core.taylor_remainder_bound hab hca hcb hf hM hM_nonneg z hz_ab
+    simp only [sub_zero] at hTaylor
+    have hr_bound : ‖r‖ ≤ M * |z| ^ (n + 1) / (n + 1).factorial := by
+      rw [hr_rewrite]
+      exact hTaylor
+    rw [Real.norm_eq_abs] at hr_bound
+    have habs_z_le : |z| ≤ max (|(J.lo : ℝ)|) (|(J.hi : ℝ)|) := abs_le_interval_radius hz
+    set radius : ℚ := max (|J.lo|) (|J.hi|) with hradius_def
+    have hradius_real : (radius : ℝ) = max (|(J.lo : ℝ)|) (|(J.hi : ℝ)|) := by
+      simp only [hradius_def, Rat.cast_max, Rat.cast_abs]
+    have hpow_le : |z| ^ (n + 1) ≤ (radius : ℝ) ^ (n + 1) := by
+      apply pow_le_pow_left₀ (abs_nonneg z)
+      rw [hradius_real]; exact habs_z_le
+    have hfact_pos : (0 : ℝ) < ((n + 1).factorial : ℝ) := Nat.cast_pos.mpr (Nat.factorial_pos _)
+    -- M ≤ ceil(M)
+    have hM_ceil : M ≤ Int.ceil M := Int.le_ceil M
+    have hceil_nonneg : 0 ≤ (Int.ceil M : ℝ) := by
+      have hceil_int : (0 : ℤ) ≤ Int.ceil M := Int.ceil_nonneg hM_nonneg
+      exact_mod_cast hceil_int
+    have hrem_ge : (asinhRemainderBound J n : ℝ) ≥ M * |z| ^ (n + 1) / (n + 1).factorial := by
+      have h1 : M * |z| ^ (n + 1) ≤ (Int.ceil M : ℝ) * (radius : ℝ) ^ (n + 1) :=
+        mul_le_mul hM_ceil hpow_le (pow_nonneg (abs_nonneg z) _) hceil_nonneg
+      calc (asinhRemainderBound J n : ℝ)
+          = (Int.ceil M : ℝ) * (radius : ℝ) ^ (n + 1) / (n + 1).factorial := by
+            simp only [asinhRemainderBound, hM_def, hradius_def, Rat.cast_div, Rat.cast_mul,
+              Rat.cast_pow, Rat.cast_natCast, Rat.cast_intCast]
+        _ ≥ M * |z| ^ (n + 1) / (n + 1).factorial :=
+            div_le_div_of_nonneg_right h1 (le_of_lt hfact_pos)
+    have hr_le_rem : |r| ≤ asinhRemainderBound J n := le_trans hr_bound hrem_ge
+    constructor
+    · have := neg_abs_le r; linarith
+    · exact le_trans (le_abs_self r) hr_le_rem
+  · simp only [hr_def, sub_zero]; ring_nf
+
+end TaylorModel
+
+end LeanCert.Engine
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/CommutativeAlgebra/Hyperbolic/Variant0e45cfe12d41633603c1ceda07f0ac70ee3b4b10bebf5fae1f73cdcd7c6e3974.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/CommutativeAlgebra/Hyperbolic/Variant0e45cfe12d41633603c1ceda07f0ac70ee3b4b10bebf5fae1f73cdcd7c6e3974.lean#L1236).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c7aeee2aaf3c61bbb1db59f1c08119012d375839` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

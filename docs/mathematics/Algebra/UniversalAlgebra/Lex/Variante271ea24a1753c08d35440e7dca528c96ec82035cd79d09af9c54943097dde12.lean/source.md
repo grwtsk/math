@@ -1,0 +1,160 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.Lex.Variante271ea24a1753c08d35440e7dca528c96ec82035cd79d09af9c54943097dde12
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `be9ccd05f03808c12a154d018b23892c64388927` · SHA-256 `dcb6bd9cdaabe5673ee95478d5b8f5c02f08bf24706148deaf9d806375e2e0e3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.UniversalAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.UniversalAlgebra.InlMono.Variant4cd7f58f0bca0f326fb0f65b56f74f78f8f888e6f276ef25d724ad62290e68cf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4cd7f58f0bca0f326fb0f65b56f74f78f8f888e6f276ef25d724ad62290e68cf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.GeneralAlgebra.SourceCorpus.InlMono.Variant4cd7f58f0bca0f326fb0f65b56f74f78f8f888e6f276ef25d724ad62290e68cf","mathematical_subject":"Algebra.GeneralAlgebra","original_sha256":"4cd7f58f0bca0f326fb0f65b56f74f78f8f888e6f276ef25d724ad62290e68cf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Order/GroupWithZero/Lex.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Yakov Pechersky. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yakov Pechersky
+-/
+module
+
+public import Mathlib.Algebra.GroupWithZero.ProdHom
+public import Mathlib.Algebra.Order.Group.Equiv
+public import Mathlib.Algebra.Order.Monoid.Lex
+public import Mathlib.Algebra.Order.Hom.MonoidWithZero
+public import Mathlib.Data.Prod.Lex
+
+/-!
+# Order homomorphisms for products of linearly ordered groups with zero
+
+This file defines order homomorphisms for products of linearly ordered groups with zero,
+which is identified with the `WithZero` of the lexicographic product of the units of the groups.
+
+The product of linearly ordered groups with zero `WithZero (αˣ ×ₗ βˣ)` is a
+linearly ordered group with zero itself with natural inclusions but only one projection.
+One has to work with the lexicographic product of the units `αˣ ×ₗ βˣ` since otherwise,
+the plain product `αˣ × βˣ` would not be linearly ordered.
+
+## TODO
+
+Create the "LinOrdCommGrpWithZero" category.
+
+-/
+
+
+namespace GRWTSK.Algebra.UniversalAlgebra.InlMono.Variant4cd7f58f0bca0f326fb0f65b56f74f78f8f888e6f276ef25d724ad62290e68cf
+
+@[expose] public section
+
+namespace MonoidWithZeroHom
+
+variable {M₀ N₀ : Type*}
+
+lemma inl_mono [LinearOrderedCommGroupWithZero M₀] [GroupWithZero N₀] [Preorder N₀]
+    [DecidablePred fun x : M₀ ↦ x = 0] : Monotone (inl M₀ N₀) := by
+  refine (WithZero.map'_mono MonoidHom.inl_mono).comp ?_
+  intro x y
+  obtain rfl | ⟨x, rfl⟩ := GroupWithZero.eq_zero_or_unit x <;>
+  obtain rfl | ⟨y, rfl⟩ := GroupWithZero.eq_zero_or_unit y <;>
+  · simp [WithZero.withZeroUnitsEquiv]
+
+lemma inl_strictMono [LinearOrderedCommGroupWithZero M₀] [GroupWithZero N₀] [PartialOrder N₀]
+    [DecidablePred fun x : M₀ ↦ x = 0] : StrictMono (inl M₀ N₀) :=
+  inl_mono.strictMono_of_injective inl_injective
+
+lemma inr_mono [GroupWithZero M₀] [Preorder M₀] [LinearOrderedCommGroupWithZero N₀]
+    [DecidablePred fun x : N₀ ↦ x = 0] : Monotone (inr M₀ N₀) := by
+  refine (WithZero.map'_mono MonoidHom.inr_mono).comp ?_
+  intro x y
+  obtain rfl | ⟨x, rfl⟩ := GroupWithZero.eq_zero_or_unit x <;>
+  obtain rfl | ⟨y, rfl⟩ := GroupWithZero.eq_zero_or_unit y <;>
+  · simp [WithZero.withZeroUnitsEquiv]
+
+lemma inr_strictMono [GroupWithZero M₀] [PartialOrder M₀] [LinearOrderedCommGroupWithZero N₀]
+    [DecidablePred fun x : N₀ ↦ x = 0] : StrictMono (inr M₀ N₀) :=
+  inr_mono.strictMono_of_injective inr_injective
+
+lemma fst_mono [LinearOrderedCommGroupWithZero M₀] [GroupWithZero N₀] [Preorder N₀] :
+    Monotone (fst M₀ N₀) := by
+  refine WithZero.forall.mpr ?_
+  simp +contextual [WithZero.forall, Prod.le_def]
+
+
+lemma snd_mono [GroupWithZero M₀] [Preorder M₀] [LinearOrderedCommGroupWithZero N₀] :
+    Monotone (snd M₀ N₀) := by
+  refine WithZero.forall.mpr ?_
+  simp [WithZero.forall, Prod.le_def]
+
+end MonoidWithZeroHom
+
+namespace LinearOrderedCommGroupWithZero
+
+variable (α β : Type*) [LinearOrderedCommGroupWithZero α] [LinearOrderedCommGroupWithZero β]
+
+open MonoidWithZeroHom
+
+#adaptation_note
+/-- `respectTransparency.types true` changes the auto-generated lemmas' signature -/
+set_option backward.isDefEq.respectTransparency.types false in
+/-- Given linearly ordered groups with zero M, N, the natural inclusion ordered homomorphism from
+M to `WithZero (Mˣ ×ₗ Nˣ)`, which is the linearly ordered group with zero that can be identified
+as their product. -/
+@[simps!]
+nonrec def inl : α →*₀o WithZero (αˣ ×ₗ βˣ) where
+  __ := (WithZero.map' (toLexMulEquiv ..).toMonoidHom).comp (inl α β)
+  monotone' := by simpa using (WithZero.map'_mono (Prod.Lex.toLex_mono)).comp inl_mono
+
+#adaptation_note
+/-- `respectTransparency.types true` changes the auto-generated lemmas' signature -/
+set_option backward.isDefEq.respectTransparency.types false in
+/-- Given linearly ordered groups with zero M, N, the natural inclusion ordered homomorphism from
+N to `WithZero (Mˣ ×ₗ Nˣ)`, which is the linearly ordered group with zero that can be identified
+as their product. -/
+@[simps!]
+nonrec def inr : β →*₀o WithZero (αˣ ×ₗ βˣ) where
+  __ := (WithZero.map' (toLexMulEquiv ..).toMonoidHom).comp (inr α β)
+  monotone' := by simpa using (WithZero.map'_mono (Prod.Lex.toLex_mono)).comp inr_mono
+
+/-- Given linearly ordered groups with zero M, N, the natural projection ordered homomorphism from
+`WithZero (Mˣ ×ₗ Nˣ)` to M, which is the linearly ordered group with zero that can be identified
+as their product. -/
+@[simps!]
+nonrec def fst : WithZero (αˣ ×ₗ βˣ) →*₀o α where
+  __ := (fst α β).comp (WithZero.map' (toLexMulEquiv (αˣ × βˣ)).symm.toMonoidHom)
+  monotone' := by
+    -- this can't rely on `Monotone.comp` since `ofLex` is not monotone
+    intro x y
+    cases x <;>
+    cases y
+    · simp
+    · simp
+    · simp
+    · simpa using Prod.Lex.monotone_fst _ _
+
+set_option backward.isDefEq.respectTransparency false in
+@[simp]
+theorem fst_comp_inl : (fst _ _).comp (inl α β) = .id α := by
+  ext x
+  obtain rfl | ⟨_, rfl⟩ := GroupWithZero.eq_zero_or_unit x <;>
+  simp
+
+variable {α β}
+
+set_option backward.isDefEq.respectTransparency false in
+lemma inl_eq_coe_inlₗ {m : α} (hm : m ≠ 0) :
+    inl α β m = OrderMonoidHom.inlₗ αˣ βˣ (Units.mk0 _ hm) := by
+  lift m to αˣ using isUnit_iff_ne_zero.mpr hm
+  simp
+
+set_option backward.isDefEq.respectTransparency false in
+lemma inr_eq_coe_inrₗ {n : β} (hn : n ≠ 0) :
+    inr α β n = OrderMonoidHom.inrₗ αˣ βˣ (Units.mk0 _ hn) := by
+  lift n to βˣ using isUnit_iff_ne_zero.mpr hn
+  simp
+
+theorem inl_mul_inr_eq_coe_toLex {m : α} {n : β} (hm : m ≠ 0) (hn : n ≠ 0) :
+    inl α β m * inr α β n = toLex (Units.mk0 _ hm, Units.mk0 _ hn) := by
+  rw [inl_eq_coe_inlₗ hm, inr_eq_coe_inrₗ hn,
+      ← WithZero.coe_mul, OrderMonoidHom.inlₗ_mul_inrₗ_eq_toLex]
+
+end LinearOrderedCommGroupWithZero
+```

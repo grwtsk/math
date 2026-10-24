@@ -1,0 +1,101 @@
+# Complete source: GRWTSK.Algebra.CommutativeAlgebra.CancelLeads.Variant6e8447e0d335e5587fb1e02d7ddbf08bb510d760cb0d203bf1d1c1c5699419f7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c828b4e1e2d3915ddd0c2b6ccc4a493fc706850b` · SHA-256 `682370667e9cc353fb05f7d2d885417ba9b22407a29e9d074c93fb604116a80d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.CommutativeAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.CommutativeAlgebra.CancelLeads.Variant7fb708941c7cbf5c77a51491e773ce0fb3ad724c1efa328e30a056d72ca5681f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7fb708941c7cbf5c77a51491e773ce0fb3ad724c1efa328e30a056d72ca5681f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Polynomials.SourceCorpus.CancelLeads.Variant7fb708941c7cbf5c77a51491e773ce0fb3ad724c1efa328e30a056d72ca5681f","mathematical_subject":"Algebra.Polynomials","original_sha256":"7fb708941c7cbf5c77a51491e773ce0fb3ad724c1efa328e30a056d72ca5681f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Polynomial/CancelLeads.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Aaron Anderson. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Aaron Anderson
+-/
+import Mathlib.Algebra.Polynomial.Degree.Lemmas
+import Mathlib.Tactic.ComputeDegree
+
+/-!
+# Cancel the leading terms of two polynomials
+
+## Definition
+
+* `cancelLeads p q`: the polynomial formed by multiplying `p` and `q` by monomials so that they
+  have the same leading term, and then subtracting.
+
+## Main Results
+The degree of `cancelLeads` is less than that of the larger of the two polynomials being cancelled.
+Thus it is useful for induction or minimal-degree arguments.
+-/
+
+
+
+namespace GRWTSK.Algebra.CommutativeAlgebra.CancelLeads.Variant7fb708941c7cbf5c77a51491e773ce0fb3ad724c1efa328e30a056d72ca5681f
+
+namespace Polynomial
+
+noncomputable section
+
+open Polynomial
+
+variable {R : Type*}
+
+section Ring
+
+variable [Ring R] (p q : R[X])
+
+/-- `cancelLeads p q` is formed by multiplying `p` and `q` by monomials so that they
+  have the same leading term, and then subtracting. -/
+def cancelLeads : R[X] :=
+  C p.leadingCoeff * X ^ (p.natDegree - q.natDegree) * q -
+    C q.leadingCoeff * X ^ (q.natDegree - p.natDegree) * p
+
+variable {p q}
+
+@[simp]
+theorem neg_cancelLeads : -p.cancelLeads q = q.cancelLeads p :=
+  neg_sub _ _
+
+theorem natDegree_cancelLeads_lt_of_natDegree_le_natDegree_of_comm
+    (comm : p.leadingCoeff * q.leadingCoeff = q.leadingCoeff * p.leadingCoeff)
+    (h : p.natDegree ≤ q.natDegree) (hq : 0 < q.natDegree) :
+    (p.cancelLeads q).natDegree < q.natDegree := by
+  by_cases hp : p = 0
+  · convert hq
+    simp [hp, cancelLeads]
+  rw [cancelLeads, sub_eq_add_neg, tsub_eq_zero_iff_le.mpr h, pow_zero, mul_one]
+  by_cases h0 :
+    C p.leadingCoeff * q + -(C q.leadingCoeff * X ^ (q.natDegree - p.natDegree) * p) = 0
+  · exact (le_of_eq (by simp only [h0, natDegree_zero])).trans_lt hq
+  apply lt_of_le_of_ne
+  · compute_degree!
+    rwa [Nat.sub_add_cancel]
+  · contrapose! h0
+    rw [← leadingCoeff_eq_zero, leadingCoeff, h0, mul_assoc, X_pow_mul, ← tsub_add_cancel_of_le h,
+      add_comm _ p.natDegree]
+    simp only [coeff_mul_X_pow, coeff_neg, coeff_C_mul, add_tsub_cancel_left, coeff_add]
+    rw [add_comm p.natDegree, tsub_add_cancel_of_le h, ← leadingCoeff, ← leadingCoeff, comm,
+      add_neg_cancel]
+
+end Ring
+
+section CommRing
+
+variable [CommRing R] {p q : R[X]}
+
+theorem dvd_cancelLeads_of_dvd_of_dvd {r : R[X]} (pq : p ∣ q) (pr : p ∣ r) : p ∣ q.cancelLeads r :=
+  dvd_sub (pr.trans (Dvd.intro_left _ rfl)) (pq.trans (Dvd.intro_left _ rfl))
+
+theorem natDegree_cancelLeads_lt_of_natDegree_le_natDegree (h : p.natDegree ≤ q.natDegree)
+    (hq : 0 < q.natDegree) : (p.cancelLeads q).natDegree < q.natDegree :=
+  natDegree_cancelLeads_lt_of_natDegree_le_natDegree_of_comm (mul_comm _ _) h hq
+
+end CommRing
+
+end
+
+end Polynomial
+```

@@ -1,0 +1,86 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Subgroup.Variant341891751cc29a880ca3794580ea7ca448be1002666be223b81ab1fdbf0cfc47
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f3f616947b864516011c9c68fe6485ab10160bc0` · SHA-256 `c14a82b89756e34c875ad5f07b35767459a9e130324df330f6f13e45a172f38f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.SumCongrHomCardRange.Variantdb465b9e3cca90ddbe6f11efdaabbbdcdacbc50b8a52cb6386df812166387b46","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"db465b9e3cca90ddbe6f11efdaabbbdcdacbc50b8a52cb6386df812166387b46","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SumCongrHomCardRange.Variantdb465b9e3cca90ddbe6f11efdaabbbdcdacbc50b8a52cb6386df812166387b46","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"db465b9e3cca90ddbe6f11efdaabbbdcdacbc50b8a52cb6386df812166387b46","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/GroupTheory/Perm/Subgroup.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+import Mathlib.Algebra.Group.Action.End
+import Mathlib.Algebra.Group.Subgroup.Finite
+import Mathlib.Data.Fintype.Perm
+
+/-!
+# Lemmas about subgroups within the permutations (self-equivalences) of a type `α`
+
+This file provides extra lemmas about some `Subgroup`s that exist within `Equiv.Perm α`.
+`GroupTheory.Subgroup` depends on `GroupTheory.Perm.Basic`, so these need to be in a separate
+file.
+
+It also provides decidable instances on membership in these subgroups, since
+`MonoidHom.decidableMemRange` cannot be inferred without the help of a lambda.
+The presence of these instances induces a `Fintype` instance on the `QuotientGroup.Quotient` of
+these subgroups.
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.SumCongrHomCardRange.Variantdb465b9e3cca90ddbe6f11efdaabbbdcdacbc50b8a52cb6386df812166387b46
+
+assert_not_exists Field
+
+namespace Equiv
+
+namespace Perm
+
+universe u
+
+instance sumCongrHom.decidableMemRange {α β : Type*} [DecidableEq α] [DecidableEq β] [Fintype α]
+    [Fintype β] : DecidablePred (· ∈ (sumCongrHom α β).range) := fun _ => inferInstance
+
+@[simp]
+theorem sumCongrHom.card_range {α β : Type*} [Fintype (sumCongrHom α β).range]
+    [Fintype (Perm α × Perm β)] :
+    Fintype.card (sumCongrHom α β).range = Fintype.card (Perm α × Perm β) :=
+  Fintype.card_eq.mpr ⟨(ofInjective (sumCongrHom α β) sumCongrHom_injective).symm⟩
+
+instance sigmaCongrRightHom.decidableMemRange {α : Type*} {β : α → Type*} [DecidableEq α]
+    [∀ a, DecidableEq (β a)] [Fintype α] [∀ a, Fintype (β a)] :
+    DecidablePred (· ∈ (sigmaCongrRightHom β).range) := fun _ => inferInstance
+
+@[simp]
+theorem sigmaCongrRightHom.card_range {α : Type*} {β : α → Type*}
+    [Fintype (sigmaCongrRightHom β).range] [Fintype (∀ a, Perm (β a))] :
+    Fintype.card (sigmaCongrRightHom β).range = Fintype.card (∀ a, Perm (β a)) :=
+  Fintype.card_eq.mpr ⟨(ofInjective (sigmaCongrRightHom β) sigmaCongrRightHom_injective).symm⟩
+
+instance subtypeCongrHom.decidableMemRange {α : Type*} (p : α → Prop) [DecidablePred p]
+    [Fintype (Perm { a // p a } × Perm { a // ¬p a })] [DecidableEq (Perm α)] :
+    DecidablePred (· ∈ (subtypeCongrHom p).range) := fun _ => inferInstance
+
+@[simp]
+theorem subtypeCongrHom.card_range {α : Type*} (p : α → Prop) [DecidablePred p]
+    [Fintype (subtypeCongrHom p).range] [Fintype (Perm { a // p a } × Perm { a // ¬p a })] :
+    Fintype.card (subtypeCongrHom p).range =
+      Fintype.card (Perm { a // p a } × Perm { a // ¬p a }) :=
+  Fintype.card_eq.mpr ⟨(ofInjective (subtypeCongrHom p) (subtypeCongrHom_injective p)).symm⟩
+
+/-- **Cayley's theorem**: Every group G is isomorphic to a subgroup of the symmetric group acting on
+`G`. Note that we generalize this to an arbitrary "faithful" group action by `G`. Setting `H = G`
+recovers the usual statement of Cayley's theorem via `RightCancelMonoid.faithfulSMul` -/
+noncomputable def subgroupOfMulAction (G H : Type*) [Group G] [MulAction G H] [FaithfulSMul G H] :
+    G ≃* (MulAction.toPermHom G H).range :=
+  MulEquiv.ofLeftInverse' _ (Classical.choose_spec MulAction.toPerm_injective.hasLeftInverse)
+
+end Perm
+
+end Equiv
+```

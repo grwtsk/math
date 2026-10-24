@@ -1,0 +1,125 @@
+# basis
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e72284dd0a15fc9f6c688480a0787dd2b02ad4ad831780573bab8818142c8b90",
+  "kind": "def",
+  "lexical_name": "basis",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "basis--d54c2bb8f3cfa51607e2220e",
+  "source": {
+    "blob": "af5d91abc11e881f0d8e90a2190b7f4e71492dba",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 103,
+    "line": 60,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Basis/Variantc2ec7a98b49a4df47761a866c1f514e1e4f019de3e940362f8cf67343752ceea.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:d54c2bb8f3cfa51607e2220e6f5b493ff9ac8b0944997c9b43ae41166c12fe8a",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Basis/Variantc2ec7a98b49a4df47761a866c1f514e1e4f019de3e940362f8cf67343752ceea.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e72284dd0a15fc9f6c688480a0787dd2b02ad4ad831780573bab8818142c8b90`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 60–103.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def basis :
+    LieAlgebra.Basis b.support (cartanSubalgebra' b) where
+  A := b.cartanMatrix
+  h i := ⟨h i, h_mem_lieAlgebra i⟩
+  e i := ⟨e i, e_mem_lieAlgebra i⟩
+  f i := ⟨f i, f_mem_lieAlgebra i⟩
+  cartan_eq_lieSpan := by
+    rw [cartanSubalgebra', cartanSubalgebra_eq_lieSpan, ← LieSubalgebra.comap_lieSpan_range_eq]
+    rfl
+  nondegen := b.cartanMatrix_nondegenerate
+  linInd := by
+    apply LinearIndependent.of_comp (lieAlgebra b).subtype
+    exact linearIndependent_h b
+  sl2 i :=
+    let t := isSl2Triple i
+    { h_ne_zero := by simp [Subtype.ext_iff, t.h_ne_zero]
+      lie_e_f := by simp [Subtype.ext_iff, t.lie_e_f]
+      lie_h_e_nsmul := by simp [Subtype.ext_iff, t.lie_h_e_nsmul]
+      lie_h_f_nsmul := by simp [Subtype.ext_iff, t.lie_h_f_nsmul] }
+  lie_h_h i j := by simp [Subtype.ext_iff, lie_h_h]
+  lie_h_e i j := by simp [Subtype.ext_iff, lie_h_e]
+  lie_h_f i j := by simp [Subtype.ext_iff, lie_h_f]
+  lie_e_f_ne i j hij := by simp [Subtype.ext_iff, lie_e_f_ne hij]
+  span_ef := by
+    let h₀ (i : b.support) : lieAlgebra b := ⟨h i, h_mem_lieAlgebra i⟩
+    let e₀ (i : b.support) : lieAlgebra b := ⟨e i, e_mem_lieAlgebra i⟩
+    let f₀ (i : b.support) : lieAlgebra b := ⟨f i, f_mem_lieAlgebra i⟩
+    change LieSubalgebra.lieSpan K (lieAlgebra b) (range e₀ ∪ range f₀) = ⊤
+    suffices LieSubalgebra.lieSpan K (lieAlgebra b) (range e₀ ∪ range f₀) =
+        LieSubalgebra.lieSpan K (lieAlgebra b) (range h₀ ∪ range e₀ ∪ range f₀) by
+      have hr : range h₀ ∪ range e₀ ∪ range f₀ = Subtype.val ⁻¹' (range h ∪ range e ∪ range f) := by
+        aesop
+      rw [this, hr]
+      exact LieSubalgebra.lieSpan_lieSpan_coe_preimage
+    simp only [union_assoc]
+    refine le_antisymm (LieSubalgebra.lieSpan_mono <| by simp) ?_
+    rw [LieSubalgebra.lieSpan_le]
+    refine union_subset ?_ LieSubalgebra.subset_lieSpan
+    rintro - ⟨i, rfl⟩
+    have hef : h₀ i = ⁅e₀ i, f₀ i⁆ := by ext1; simp [h₀, e₀, f₀, (isSl2Triple i).lie_e_f]
+    rw [hef]
+    apply LieSubalgebra.lie_mem <;>
+      exact LieSubalgebra.subset_lieSpan <| by simp
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Basis/Variantc2ec7a98b49a4df47761a866c1f514e1e4f019de3e940362f8cf67343752ceea.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Basis/Variantc2ec7a98b49a4df47761a866c1f514e1e4f019de3e940362f8cf67343752ceea.lean#L60).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `af5d91abc11e881f0d8e90a2190b7f4e71492dba` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

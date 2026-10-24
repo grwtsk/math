@@ -1,0 +1,89 @@
+# Complete source: GRWTSK.Algebra.CommutativeAlgebra.EulerIdentity.Variant980e22f85fe27befa8406d0c5c02a5da7680117b1243cdd4e3d8b81c6df0be69
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8da273876328566d4e9111d88840a190b11b4aa9` · SHA-256 `5f2ef3735a2a57ad5ca5df87ff8c79bb58675050277be1d650e8328b91361535`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.CommutativeAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.CommutativeAlgebra.IsWeightedHomogeneousPderiv.Variantd624aecc830443187655ded61f4792eb119861ae4fe6bdb2da415e9d34f842cf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d624aecc830443187655ded61f4792eb119861ae4fe6bdb2da415e9d34f842cf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Polynomials.SourceCorpus.IsWeightedHomogeneousPderiv.Variantd624aecc830443187655ded61f4792eb119861ae4fe6bdb2da415e9d34f842cf","mathematical_subject":"Algebra.Polynomials","original_sha256":"d624aecc830443187655ded61f4792eb119861ae4fe6bdb2da415e9d34f842cf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/RingTheory/MvPolynomial/EulerIdentity.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Junyan Xu. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Junyan Xu
+-/
+import Mathlib.Algebra.MvPolynomial.PDeriv
+import Mathlib.RingTheory.MvPolynomial.Homogeneous
+
+/-!
+# Euler's homogeneous identity
+
+## Main results
+
+* `IsHomogeneous.sum_X_mul_pderiv`: Euler's identity for homogeneous polynomials:
+  for a multivariate homogeneous polynomial,
+  the product of each variable with the derivative with respect to that variable
+  sums up to the degree times the polynomial.
+* `IsWeightedHomogeneous.sum_weight_X_mul_pderiv`: the weighted version of Euler's identity.
+-/
+
+
+namespace GRWTSK.Algebra.CommutativeAlgebra.IsWeightedHomogeneousPderiv.Variantd624aecc830443187655ded61f4792eb119861ae4fe6bdb2da415e9d34f842cf
+
+namespace MvPolynomial
+
+open Finsupp
+
+variable {R σ M : Type*} [CommSemiring R] {φ : MvPolynomial σ R}
+
+protected lemma IsWeightedHomogeneous.pderiv [AddCancelCommMonoid M] {w : σ → M} {n n' : M} {i : σ}
+    (h : φ.IsWeightedHomogeneous w n) (h' : n' + w i = n) :
+    (pderiv i φ).IsWeightedHomogeneous w n' := by
+  rw [← mem_weightedHomogeneousSubmodule, weightedHomogeneousSubmodule_eq_finsupp_supported,
+    Finsupp.supported_eq_span_single] at h
+  refine Submodule.span_induction ?_ ?_ (fun p q _ _ hp hq ↦ ?_) (fun r p _ h ↦ ?_) h
+  · rintro _ ⟨m, hm, rfl⟩
+    simp_rw [single_eq_monomial, pderiv_monomial, one_mul]
+    by_cases hi : m i = 0
+    · rw [hi, Nat.cast_zero, monomial_zero]; apply isWeightedHomogeneous_zero
+    convert isWeightedHomogeneous_monomial ..
+    rw [← add_right_cancel_iff (a := w i), h', ← hm, weight_sub_single_add hi]
+  · rw [map_zero]; apply isWeightedHomogeneous_zero
+  · rw [map_add]; exact hp.add hq
+  · rw [(pderiv i).map_smul]; exact (weightedHomogeneousSubmodule ..).smul_mem _ h
+
+protected lemma IsHomogeneous.pderiv {n : ℕ} {i : σ} (h : φ.IsHomogeneous n) :
+    (pderiv i φ).IsHomogeneous (n - 1) := by
+  obtain _ | n := n
+  · rw [← totalDegree_zero_iff_isHomogeneous, totalDegree_eq_zero_iff_eq_C] at h
+    rw [h, pderiv_C]; apply isHomogeneous_zero
+  · exact IsWeightedHomogeneous.pderiv h rfl
+
+variable [Fintype σ] {n : ℕ}
+
+open Finset in
+/-- Euler's identity for weighted homogeneous polynomials. -/
+theorem IsWeightedHomogeneous.sum_weight_X_mul_pderiv {w : σ → ℕ}
+    (h : φ.IsWeightedHomogeneous w n) : ∑ i : σ, w i • (X i * pderiv i φ) = n • φ := by
+  rw [← mem_weightedHomogeneousSubmodule, weightedHomogeneousSubmodule_eq_finsupp_supported,
+    supported_eq_span_single] at h
+  refine Submodule.span_induction ?_ ?_ (fun p q _ _ hp hq ↦ ?_) (fun r p _ h ↦ ?_) h
+  · rintro _ ⟨m, hm, rfl⟩
+    simp_rw [single_eq_monomial, X_mul_pderiv_monomial, smul_smul, ← sum_smul, mul_comm (w _)]
+    congr
+    rwa [Set.mem_setOf, weight_apply, sum_fintype] at hm
+    intro; apply zero_smul
+  · simp
+  · simp_rw [map_add, left_distrib, smul_add, sum_add_distrib, hp, hq]
+  · simp_rw [(pderiv _).map_smul, nsmul_eq_mul, mul_smul_comm, ← Finset.smul_sum, ← nsmul_eq_mul, h]
+
+/-- Euler's identity for homogeneous polynomials. -/
+theorem IsHomogeneous.sum_X_mul_pderiv (h : φ.IsHomogeneous n) :
+    ∑ i : σ, X i * pderiv i φ = n • φ := by
+  simp_rw [← h.sum_weight_X_mul_pderiv, Pi.one_apply, one_smul]
+
+end MvPolynomial
+```

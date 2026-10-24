@@ -1,0 +1,110 @@
+# x_collected
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:b414cf37-7b7d-9d31-3f06-41f8626c1453",
+  "kind": "theorem",
+  "lexical_name": "x_collected",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "x-collected--4923dc45249a7b52cb673d8d",
+  "source": {
+    "blob": "4cbb58d754bd54c9a4cbc9a39a88015e5d81c9d5",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 46,
+    "line": 18,
+    "path": "GRWTSK/Algebra/CommutativeAlgebra/53b002d9dfa52858272e06d974f1497951afdd254d1989dcc93fc484bd24b5ceSourcePolynomial/Variantd417834bedb12e9f4c38abdee8722c4858e16a9b6012c6e7d41bb1e44b22706a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:4923dc45249a7b52cb673d8d41f51993864de2d420d2d5126df08c3b75e42bb6",
+  "verification": {
+    "reference": "docs/verification/Algebra/CommutativeAlgebra/53b002d9dfa52858272e06d974f1497951afdd254d1989dcc93fc484bd24b5ceSourcePolynomial/Variantd417834bedb12e9f4c38abdee8722c4858e16a9b6012c6e7d41bb1e44b22706a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b414cf37-7b7d-9d31-3f06-41f8626c1453`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 18–46.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem x_collected (r v x : ℝ) :
+    (r * unitSecond x - unitBump x / 4) *
+      (r * unitSecond (x-v) - unitBump (x-v) / 4) =
+  (
+    (-7168 * r^2 * v^6 + 15360 * r^2 * v^4 - 9216 * r^2 * v^2 + 1024 * r^2 + 32 * r * v^8 - 352 * r * v^6 + 672 * r * v^4 - 416 * r * v^2 + 64 * r + v^8 - 4 * v^6 + 6 * v^4 - 4 * v^2 + 1) +
+    (43008 * r^2 * v^5 - 61440 * r^2 * v^3 + 18432 * r^2 * v - 256 * r * v^7 + 2112 * r * v^5 - 2688 * r * v^3 + 832 * r * v - 8 * v^7 + 24 * v^5 - 24 * v^3 + 8 * v) * x +
+    (64512 * r^2 * v^6 - 245760 * r^2 * v^4 + 175104 * r^2 * v^2 - 18432 * r^2 - 288 * r * v^8 + 2944 * r * v^6 - 8928 * r * v^4 + 6336 * r * v^2 - 832 * r - 4 * v^8 + 44 * v^6 - 84 * v^4 + 52 * v^2 - 8) * x^2 +
+    (-387072 * r^2 * v^5 + 696320 * r^2 * v^3 - 227328 * r^2 * v + 2304 * r * v^7 - 14080 * r * v^5 + 21632 * r * v^3 - 7296 * r * v + 32 * v^7 - 152 * v^5 + 176 * v^3 - 56 * v) * x^3 +
+    (-107520 * r^2 * v^6 + 1198080 * r^2 * v^4 - 1075200 * r^2 * v^2 + 113664 * r^2 + 480 * r * v^8 - 11328 * r * v^6 + 38720 * r * v^4 - 30816 * r * v^2 + 3648 * r + 6 * v^8 - 136 * v^6 + 346 * v^4 - 228 * v^2 + 28) * x^4 +
+    (645120 * r^2 * v^5 - 2211840 * r^2 * v^3 + 872448 * r^2 * v - 3840 * r * v^7 + 35712 * r * v^5 - 65792 * r * v^3 + 24000 * r * v - 48 * v^7 + 368 * v^5 - 520 * v^3 + 168 * v) * x^5 +
+    (50176 * r^2 * v^6 - 1720320 * r^2 * v^4 + 2414592 * r^2 * v^2 - 290816 * r^2 - 224 * r * v^8 + 15232 * r * v^6 - 72384 * r * v^4 + 68224 * r * v^2 - 8000 * r - 4 * v^8 + 184 * v^6 - 664 * v^4 + 500 * v^2 - 56) * x^6 +
+    (-301056 * r^2 * v^5 + 2580480 * r^2 * v^3 - 1437696 * r^2 * v + 1792 * r * v^7 - 37632 * r * v^5 + 94464 * r * v^3 - 39680 * r * v + 32 * v^7 - 432 * v^5 + 800 * v^3 - 280 * v) * x^7 +
+    (752640 * r^2 * v^4 - 2257920 * r^2 * v^2 + 359424 * r^2 - 6496 * r * v^6 + 60960 * r * v^4 - 76896 * r * v^2 + 9920 * r + v^8 - 116 * v^6 + 666 * v^4 - 620 * v^2 + 70) * x^8 +
+    (-1003520 * r^2 * v^3 + 1075200 * r^2 * v + 13888 * r * v^5 - 64640 * r * v^3 + 35520 * r * v - 8 * v^7 + 248 * v^5 - 680 * v^3 + 280 * v) * x^9 +
+    (752640 * r^2 * v^2 - 215040 * r^2 - 19040 * r * v^4 + 43200 * r * v^2 - 7104 * r + 28 * v^6 - 340 * v^4 + 444 * v^2 - 56) * x^10 +
+    (-301056 * r^2 * v + 17024 * r * v^3 - 16512 * r * v - 56 * v^5 + 304 * v^3 - 168 * v) * x^11 +
+    (50176 * r^2 - 9632 * r * v^2 + 2752 * r + 70 * v^4 - 172 * v^2 + 28) * x^12 +
+    (3136 * r * v - 56 * v^3 + 56 * v) * x^13 +
+    (-448 * r + 28 * v^2 - 8) * x^14 +
+    (-8 * v) * x^15 +
+    (1) * x^16
+  ) / 16
+ := by
+  dsimp [unitSecond, unitBump]
+  ring
+
+#print axioms x_collected
+
+end SourcePolynomialArithmeticCheck
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/CommutativeAlgebra/53b002d9dfa52858272e06d974f1497951afdd254d1989dcc93fc484bd24b5ceSourcePolynomial/Variantd417834bedb12e9f4c38abdee8722c4858e16a9b6012c6e7d41bb1e44b22706a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/CommutativeAlgebra/53b002d9dfa52858272e06d974f1497951afdd254d1989dcc93fc484bd24b5ceSourcePolynomial/Variantd417834bedb12e9f4c38abdee8722c4858e16a9b6012c6e7d41bb1e44b22706a.lean#L18).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4cbb58d754bd54c9a4cbc9a39a88015e5d81c9d5` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

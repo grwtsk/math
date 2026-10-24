@@ -1,0 +1,121 @@
+# Verification target: GRWTSK.Algebra.Kaehler.Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a4dd5e434af9d53d19da48a4a31bc630194ee4a1",
+  "lexical_observation_count": 58,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/index.md) · [Full source](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a4dd5e434af9d53d19da48a4a31bc630194ee4a1`.
+
+Source path: `GRWTSK/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.RingTheory.Derivation.ToSquareZero` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Ideal.Cotangent` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.IsTensorProduct` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [KaehlerDifferential.ideal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-ideal--e57293368e20f7a0ac0dd684.md) | 55 | `declaration-track:e57293368e20f7a0ac0dd684116c2f93d203f64ecfe8b6832a00774086ebe791` |
+| 2 | `theorem` | [KaehlerDifferential.one_smul_sub_smul_one_mem_ideal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-one-smul-sub-smul-one-mem-ideal--561b77b94580966b33a1f87e.md) | 61 | `result-track:561b77b94580966b33a1f87e40e210a7c6e168e3be731ca64a8d42b0d999f174` |
+| 3 | `def` | [Derivation.tensorProductTo](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-tensorproductto--bf5f68f4b86eff41ce1cfd02.md) | 70 | `declaration-track:bf5f68f4b86eff41ce1cfd0269f8b70ec6c5b60f3c6c83a45c8c1a1b270dafe8` |
+| 4 | `theorem` | [Derivation.tensorProductTo_tmul](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-tensorproductto-tmul--ac9a8ab8a950df1c3eb9a275.md) | 74 | `result-track:ac9a8ab8a950df1c3eb9a2752b58f77622da338e1243a0e915bbbd674e225737` |
+| 5 | `theorem` | [Derivation.tensorProductTo_mul](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-tensorproductto-mul--64b6f027dd61526bc351342f.md) | 78 | `result-track:64b6f027dd61526bc351342f7c8750e3dd45635495115eef7f84af141ee21ae1` |
+| 6 | `theorem` | [KaehlerDifferential.submodule_span_range_eq_ideal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-submodule-span-range-eq-ideal--71289b9b8a1d12577dba200b.md) | 105 | `result-track:71289b9b8a1d12577dba200bc93ef44121f92704a0918e00facf724479e71d0d` |
+| 7 | `theorem` | [KaehlerDifferential.span_range_eq_ideal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-span-range-eq-ideal--41d48469eccb8737a5770205.md) | 131 | `result-track:41d48469eccb8737a57702055cc28bb506c2e7e32ca6ca518d20485c68e31df5` |
+| 8 | `def` | [KaehlerDifferential](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential--f739cb0e7f83dd99aed1707c.md) | 152 | `declaration-track:f739cb0e7f83dd99aed1707c2a4e8ecc48d2563bcdd193efc5dc542754f968d8` |
+| 9 | `instance` | [(anonymous)](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/instance--6095f428d5b14416b1a7478b.md) | 156 | `declaration-track:6095f428d5b14416b1a7478b3ea4b156a360e2c5254a7beb319b5a4b8f7c47de` |
+| 10 | `instance` | [KaehlerDifferential.module](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-module--0cbbf572c0c34ab489316a1c.md) | 160 | `declaration-track:0cbbf572c0c34ab489316a1c6e38c6a3d6d48015df2cde1392518a29dfa52e8e` |
+| 11 | `instance` | [(anonymous)](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/instance--1cd9d1685430b938677777b9.md) | 166 | `declaration-track:1cd9d1685430b938677777b961d6535dc88e6d992f7d6f7b02b8eeef1d55910a` |
+| 12 | `instance` | [KaehlerDifferential.module'](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-module--1caec8af64074c814562912c.md) | 168 | `declaration-track:1caec8af64074c814562912c1beb484ea110dda7ba7969f34ad5ad97d3f79277` |
+| 13 | `instance` | [(anonymous)](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/instance--f13a87ba094a23086f62adc1.md) | 174 | `declaration-track:f13a87ba094a23086f62adc14d126b561ad3f6a177199bc39396aff85a3f5f8c` |
+| 14 | `instance` | [KaehlerDifferential.isScalarTower_of_tower](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-isscalartower-of-tower--66d5959656eb47a37edde0f1.md) | 177 | `declaration-track:66d5959656eb47a37edde0f16be51adae14ba5de6f4fe42c8a56c11f2f94d8aa` |
+| 15 | `instance` | [KaehlerDifferential.isScalarTower'](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-isscalartower--5d75b093cbb1c51ffcd02044.md) | 185 | `declaration-track:5d75b093cbb1c51ffcd0204409d8e3df5ccbff8380997fed8fe8c85a73076a3e` |
+| 16 | `def` | [KaehlerDifferential.fromIdeal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-fromideal--2fad1d751aec8f1bc5cb09da.md) | 190 | `declaration-track:2fad1d751aec8f1bc5cb09dae24032c5b26a81984a6e44518e944e861e8b54cd` |
+| 17 | `def` | [KaehlerDifferential.DLinearMap](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-dlinearmap--64f4871c789dc79ad1d8e037.md) | 195 | `declaration-track:64f4871c789dc79ad1d8e03706128322df6cce287ab896175a8dff46bfa5be87` |
+| 18 | `theorem` | [KaehlerDifferential.DLinearMap_apply](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-dlinearmap-apply--7b521b1404ba21b6662daf22.md) | 205 | `result-track:7b521b1404ba21b6662daf22cd6f37f59265282e927bcc3ac8ee8df60e0669c2` |
+| 19 | `def` | [KaehlerDifferential.D](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-d--668aba64431fd36a6c4dd56a.md) | 213 | `declaration-track:668aba64431fd36a6c4dd56ad3d5859e2b436a0049f83b0aadef385b83ed95f2` |
+| 20 | `theorem` | [KaehlerDifferential.D_apply](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-d-apply--bf55f2705f0962767d856b8c.md) | 233 | `result-track:bf55f2705f0962767d856b8c4c859e295dc1d9508c1f3c4720d7d5c2d3505f12` |
+| 21 | `theorem` | [KaehlerDifferential.span_range_derivation](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-span-range-derivation--39df1331c1f6b72555e60982.md) | 240 | `result-track:39df1331c1f6b72555e6098248f1b73623a207a1559cd5e80e2ce2b5de58ec97` |
+| 22 | `def` | [Derivation.liftKaehlerDifferential](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-liftkaehlerdifferential--0f55b3b6409395dfbc6e923f.md) | 265 | `declaration-track:0f55b3b6409395dfbc6e923f6890f35e34525605a58243e751f7b59cfc97f1b7` |
+| 23 | `theorem` | [Derivation.liftKaehlerDifferential_apply](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-liftkaehlerdifferential-apply--cb75936a4d22f037c29ca4ed.md) | 280 | `result-track:cb75936a4d22f037c29ca4ed67079b45e5af950f8d45d071146cf4630365d757` |
+| 24 | `theorem` | [Derivation.liftKaehlerDifferential_comp](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-liftkaehlerdifferential-comp--ad41a2c6a846c6419ba28d03.md) | 285 | `result-track:ad41a2c6a846c6419ba28d03f8ae31d9708504404e724ca7034c61fb76027e77` |
+| 25 | `theorem` | [Derivation.liftKaehlerDifferential_comp_D](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-liftkaehlerdifferential-comp-d--227b6c528dff750f17673fb6.md) | 295 | `result-track:227b6c528dff750f17673fb62cb2fa1c900fedd4b28d5ae8377268c8215f942a` |
+| 26 | `theorem` | [Derivation.liftKaehlerDifferential_unique](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-liftkaehlerdifferential-unique--ed934a50e86b4be08109fd83.md) | 305 | `result-track:ed934a50e86b4be08109fd83b23bdbbf14f8370cfcfb7c6d7f3305b910fe1704` |
+| 27 | `theorem` | [Derivation.liftKaehlerDifferential_D](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-liftkaehlerdifferential-d--1fd9998e1e9c1d89d4712995.md) | 321 | `result-track:1fd9998e1e9c1d89d4712995ca9c6b83401b1da12091354b14ee2c3ceab8395c` |
+| 28 | `theorem` | [KaehlerDifferential.D_tensorProductTo](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-d-tensorproductto--c4911f7fc9d56643138a28e7.md) | 330 | `result-track:c4911f7fc9d56643138a28e745730057642b0ef6accb5fd4997c6785b6338e62` |
+| 29 | `theorem` | [KaehlerDifferential.tensorProductTo_surjective](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-tensorproductto-surjective--5a4bff5fe272ca8e67088b66.md) | 340 | `result-track:5a4bff5fe272ca8e67088b6670d7aa4b716539d4c8a552f70263de4a0ac4d150` |
+| 30 | `def` | [KaehlerDifferential.linearMapEquivDerivation](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-linearmapequivderivation--447e2f122cb955ba016cfcb2.md) | 348 | `declaration-track:447e2f122cb955ba016cfcb28cfdfaa2719aba4fcba82e4e3189d41ad01b929d` |
+| 31 | `def` | [KaehlerDifferential.quotientCotangentIdealRingEquiv](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-quotientcotangentidealringequiv--d4cec42a3dbe35d275a51a38.md) | 357 | `declaration-track:d4cec42a3dbe35d275a51a38237f532d6d001a96a810b737afd2b1657a89fb10` |
+| 32 | `def` | [KaehlerDifferential.quotientCotangentIdeal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-quotientcotangentideal--16a56fea04251ea9f7bfa23f.md) | 370 | `declaration-track:16a56fea04251ea9f7bfa23fd14d0f95b07808157e4effd9ace16d10f495b1d6` |
+| 33 | `theorem` | [KaehlerDifferential.End_equiv_aux](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-end-equiv-aux--820da45d2774afbdf4597eaa.md) | 377 | `result-track:820da45d2774afbdf4597eaaa63c95c9a7ca37dcc777a0670188540157a08016` |
+| 34 | `def` | [KaehlerDifferential.endEquivDerivation'](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-endequivderivation--ef83a1620b5e68fb8426fab7.md) | 408 | `declaration-track:ef83a1620b5e68fb8426fab7f6c3e0404d3df598ca89318df6afddee829313d0` |
+| 35 | `def` | [KaehlerDifferential.endEquivAuxEquiv](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-endequivauxequiv--f49b843cd01b19da947e19d9.md) | 415 | `declaration-track:f49b843cd01b19da947e19d9a6f19b505d1e5d17763b584f742d4797622c31ec` |
+| 36 | `def` | [KaehlerDifferential.endEquiv](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-endequiv--9810796763741043f3daf131.md) | 430 | `declaration-track:9810796763741043f3daf131898170b282d23b0e2e3c75064e9fcba69ce1abb1` |
+| 37 | `def` | [KaehlerDifferential.kerTotal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal--6f3f304968ab5979b96fc53d.md) | 456 | `declaration-track:6f3f304968ab5979b96fc53d8ba0594f8aa1d82148bb269a40ad18159629216c` |
+| 38 | `theorem` | [KaehlerDifferential.kerTotal_mkQ_single_add](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-mkq-single-add--50e09a2871666d18b99bb927.md) | 468 | `result-track:50e09a2871666d18b99bb927fffe072cde18c1edc6df075ab7217a27a48ba305` |
+| 39 | `theorem` | [KaehlerDifferential.kerTotal_mkQ_single_mul](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-mkq-single-mul--dbc13cb3e49a8856a2f77d9a.md) | 475 | `result-track:dbc13cb3e49a8856a2f77d9a8c01e240ae1876535631dcd0e6d40ac8e7be679c` |
+| 40 | `theorem` | [KaehlerDifferential.kerTotal_mkQ_single_algebraMap](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-mkq-single-algebramap--b53e78f6bdc90a035f1e4ce0.md) | 484 | `result-track:b53e78f6bdc90a035f1e4ce0a0fb3ef08ba17bcc62960dceec240f0763923ebc` |
+| 41 | `theorem` | [KaehlerDifferential.kerTotal_mkQ_single_algebraMap_one](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-mkq-single-algebramap-one--f50a183bf4430a9d6fb3ec65.md) | 489 | `result-track:f50a183bf4430a9d6fb3ec65c5545fb5c148c893515496f45e98e5273ba213dd` |
+| 42 | `theorem` | [KaehlerDifferential.kerTotal_mkQ_single_smul](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-mkq-single-smul--4f8f06300f1c2625c1759b44.md) | 493 | `result-track:4f8f06300f1c2625c1759b4441b0f5479c044ad323ab858eb9593dfef0b0ae39` |
+| 43 | `def` | [KaehlerDifferential.derivationQuotKerTotal](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-derivationquotkertotal--d86ab0fd62b2a5750b2a1d5b.md) | 500 | `declaration-track:d86ab0fd62b2a5750b2a1d5b8ab32d8ff1fa2ab17419ad76b1e1d149cb87c108` |
+| 44 | `theorem` | [KaehlerDifferential.derivationQuotKerTotal_apply](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-derivationquotkertotal-apply--8e61e2cc70719288bfa3d0b0.md) | 511 | `result-track:8e61e2cc70719288bfa3d0b0edc34979dc59707e51f1c3a149eedec835ecae0d` |
+| 45 | `theorem` | [KaehlerDifferential.derivationQuotKerTotal_lift_comp_total](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-derivationquotkertotal-lift-comp-total--60e0ece78924eb2a51c749dc.md) | 516 | `result-track:60e0ece78924eb2a51c749dcc18981f533005eb85a87a98782515e7544aab2ac` |
+| 46 | `theorem` | [KaehlerDifferential.kerTotal_eq](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-eq--f124fdf5c1d97e0ae9cfaeaa.md) | 526 | `result-track:f124fdf5c1d97e0ae9cfaeaa484d773b961401bb90673024f0b09c2f2a726319` |
+| 47 | `theorem` | [KaehlerDifferential.total_surjective](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-total-surjective--2f16d289cbff0947e05f3e19.md) | 537 | `result-track:2f16d289cbff0947e05f3e192f357030285020221620be14d0d49fa6d2fbf35a` |
+| 48 | `def` | [KaehlerDifferential.quotKerTotalEquiv](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-quotkertotalequiv--f51b4533729d03dbc138196f.md) | 545 | `declaration-track:f51b4533729d03dbc138196fdedd3cea7942fe68435885b60efc1f5425e2a6e7` |
+| 49 | `theorem` | [KaehlerDifferential.quotKerTotalEquiv_symm_comp_D](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-quotkertotalequiv-symm-comp-d--5ae7c31b762c2b4bc17716f3.md) | 564 | `result-track:5ae7c31b762c2b4bc17716f3cc79f5afedf4445fa7d62b123950160bed3bd8a8` |
+| 50 | `macro` | [(anonymous)](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/macro--b642fc2e9f7a8cb6b0093e36.md) | 577 | `declaration-track:b642fc2e9f7a8cb6b0093e368c0bcba4e8552e825c35dd6338576ad45d9543a2` |
+| 51 | `theorem` | [KaehlerDifferential.kerTotal_map](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-kertotal-map--449a84ad57cd9ab307ad95f6.md) | 582 | `result-track:449a84ad57cd9ab307ad95f61f6cbe8e663b662cc164e2697b521dd525be1bb5` |
+| 52 | `def` | [Derivation.compAlgebraMap](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/derivation-compalgebramap--ceb4d12ea7f4c5fcbc1c41c9.md) | 622 | `declaration-track:ceb4d12ea7f4c5fcbc1c41c96a85c63183856b7fe1e562b5fbc232948c2c070c` |
+| 53 | `def` | [KaehlerDifferential.map](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-map--ddf30f62b6d0804cba5c8f2c.md) | 637 | `declaration-track:ddf30f62b6d0804cba5c8f2c5ec5da6bc9bf24bc8ebe96b0bfcfe5f4c146c2af` |
+| 54 | `theorem` | [KaehlerDifferential.map_compDer](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-map-compder--878acc9cc1efa8ec786f6e51.md) | 642 | `result-track:878acc9cc1efa8ec786f6e51adaac8bec79fed1698f179760b602dd1e4f74c76` |
+| 55 | `theorem` | [KaehlerDifferential.map_D](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-map-d--70919f84e2db6b70861cfc2d.md) | 648 | `result-track:70919f84e2db6b70861cfc2da50654ba9ac2a97ae874285853e326309c893807` |
+| 56 | `theorem` | [KaehlerDifferential.map_surjective_of_surjective](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-map-surjective-of-surjective--7fca2620fe8c7076a32684d7.md) | 657 | `result-track:7fca2620fe8c7076a32684d7c7312d0c50f225d2a32f84107d62e61b0b38aa75` |
+| 57 | `def` | [KaehlerDifferential.mapBaseChange](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-mapbasechange--664061050b14b2cab0439cfc.md) | 671 | `declaration-track:664061050b14b2cab0439cfcd74ddda021ddf4d1ca8c7cdc14968fd6cabce70f` |
+| 58 | `theorem` | [KaehlerDifferential.mapBaseChange_tmul](../../../../mathematics/Algebra/Kaehler/Variant7ee200c341d3626f7d07a30f3a06f06ef9c2865916d338695a29f471f0bd5f6b.lean/declarations/kaehlerdifferential-mapbasechange-tmul--10806afb96c29533a83aaed5.md) | 676 | `result-track:10806afb96c29533a83aaed5f5f36782b01bc84da354413b5083f5090038806c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

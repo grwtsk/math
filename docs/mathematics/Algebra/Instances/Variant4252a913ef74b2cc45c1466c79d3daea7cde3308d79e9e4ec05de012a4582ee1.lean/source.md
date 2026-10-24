@@ -1,0 +1,118 @@
+# Complete source: GRWTSK.Algebra.Instances.Variant4252a913ef74b2cc45c1466c79d3daea7cde3308d79e9e4ec05de012a4582ee1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ef063a954654ff799255442a0c428f0f8b3e7c3e` · SHA-256 `d01ac19f6bf1f905de87ea3084342f4632fe5df79eb5b16e568322bf91b6752b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.AlgebraIsSeparableResidueFieldIff.Variant5e55dd859bb4b07b7dd41373adb1a5ec0a31e274c47786e8c08d9237bfaf60cd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5e55dd859bb4b07b7dd41373adb1a5ec0a31e274c47786e8c08d9237bfaf60cd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.AlgebraIsSeparableResidueFieldIff.Variant5e55dd859bb4b07b7dd41373adb1a5ec0a31e274c47786e8c08d9237bfaf60cd","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"5e55dd859bb4b07b7dd41373adb1a5ec0a31e274c47786e8c08d9237bfaf60cd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/LocalRing/ResidueField/Instances.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Andrew Yang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Andrew Yang
+-/
+module
+
+public import Mathlib.RingTheory.LocalRing.ResidueField.Ideal
+public import Mathlib.FieldTheory.Separable
+public import Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Basic
+
+import Mathlib.RingTheory.Finiteness.Quotient
+
+/-! # Instances on residue fields -/
+
+
+namespace GRWTSK.Algebra.AlgebraIsSeparableResidueFieldIff.Variant5e55dd859bb4b07b7dd41373adb1a5ec0a31e274c47786e8c08d9237bfaf60cd
+
+public section
+
+variable {R A B : Type*} [CommRing R] [CommRing A] [CommRing B] [Algebra R A] [Algebra A B]
+    [Algebra R B] [IsScalarTower R A B]
+
+variable (p : Ideal A) (q : Ideal B) [q.LiesOver p]
+
+section maximal
+
+variable [p.IsMaximal] [q.IsMaximal] [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]
+  [IsScalarTower A (Localization.AtPrime p) (Localization.AtPrime q)]
+
+attribute [local instance] Ideal.Quotient.field
+
+set_option backward.isDefEq.respectTransparency.types false in
+instance [Algebra.IsSeparable (A ⧸ p) (B ⧸ q)] :
+    Algebra.IsSeparable p.ResidueField q.ResidueField := by
+  refine Algebra.IsSeparable.of_equiv_equiv
+    (.ofBijective _ p.bijective_algebraMap_quotient_residueField)
+    (.ofBijective _ q.bijective_algebraMap_quotient_residueField) ?_
+  ext x
+  simp [RingHom.algebraMap_toAlgebra, ← IsScalarTower.algebraMap_apply]
+
+set_option backward.isDefEq.respectTransparency.types false in
+instance [Algebra.IsSeparable p.ResidueField q.ResidueField] :
+    Algebra.IsSeparable (A ⧸ p) (B ⧸ q) := by
+  refine Algebra.IsSeparable.of_equiv_equiv
+    (.symm <| .ofBijective _ p.bijective_algebraMap_quotient_residueField)
+    (.symm <| .ofBijective _ q.bijective_algebraMap_quotient_residueField) ?_
+  apply RingHom.ext fun x ↦ ?_
+  obtain ⟨x, rfl⟩ :=
+    (RingEquiv.ofBijective _ p.bijective_algebraMap_quotient_residueField).surjective x
+  obtain ⟨x, rfl⟩ := Ideal.Quotient.mk_surjective x
+  apply (RingEquiv.ofBijective _ q.bijective_algebraMap_quotient_residueField).injective
+  simp only [RingHom.coe_comp, RingHom.coe_coe, Function.comp_apply, RingEquiv.symm_apply_apply,
+    RingEquiv.apply_symm_apply]
+  simp [RingHom.algebraMap_toAlgebra, ← IsScalarTower.algebraMap_apply]
+
+variable {p q} in
+lemma Algebra.isSeparable_residueField_iff :
+    Algebra.IsSeparable p.ResidueField q.ResidueField ↔ Algebra.IsSeparable (A ⧸ p) (B ⧸ q) :=
+  ⟨fun _ ↦ inferInstance, fun _ ↦ inferInstance⟩
+
+end maximal
+
+section prime
+
+variable [p.IsPrime] [q.IsPrime] [Algebra (Localization.AtPrime p) (Localization.AtPrime q)]
+  [IsScalarTower A (Localization.AtPrime p) (Localization.AtPrime q)]
+
+instance : Algebra.IsAlgebraic (A ⧸ p) p.ResidueField :=
+  IsLocalization.isAlgebraic _ (nonZeroDivisors (A ⧸ p))
+
+set_option backward.isDefEq.respectTransparency.types false in
+instance [Algebra.IsIntegral A B] :
+    Algebra.IsAlgebraic p.ResidueField q.ResidueField := by
+  have : Algebra.IsIntegral (A ⧸ p) (B ⧸ q) :=
+    .tower_top A
+  let := ((algebraMap (B ⧸ q) q.ResidueField).comp (algebraMap (A ⧸ p) (B ⧸ q))).toAlgebra
+  have : IsScalarTower (A ⧸ p) (B ⧸ q) q.ResidueField := .of_algebraMap_eq' rfl
+  have : Algebra.IsAlgebraic (A ⧸ p) q.ResidueField := .trans _ (B ⧸ q) _
+  have : IsScalarTower (A ⧸ p) p.ResidueField q.ResidueField := by
+    refine .of_algebraMap_eq fun x ↦ ?_
+    obtain ⟨x, rfl⟩ := Ideal.Quotient.mk_surjective x
+    simp [RingHom.algebraMap_toAlgebra, ← IsScalarTower.algebraMap_apply]
+  refine .extendScalars (Ideal.injective_algebraMap_quotient_residueField p)
+
+end prime
+
+namespace IsLocalRing
+
+variable {R k : Type*} [CommRing R] [IsLocalRing R] [Field k] [Algebra R k]
+
+instance ResidueField.algebraOfIsIntegral [Algebra.IsIntegral R k] : Algebra (ResidueField R) k :=
+  fast_instance% (Ideal.Quotient.lift (maximalIdeal R) (algebraMap R k)
+    (by simp [← eq_maximalIdeal (Algebra.ker_algebraMap_isMaximal_of_isIntegral R k)])).toAlgebra
+
+instance ResidueField.isScalarTowerOfIsIntegral [Algebra.IsIntegral R k] :
+    IsScalarTower R (ResidueField R) k :=
+  .of_algebraMap_eq fun _ ↦ rfl
+
+instance [Module.Finite R k] : Module.Finite (ResidueField R) k := .of_equiv_equiv
+  (Ideal.quotEquivOfEq (show Ideal.comap (algebraMap R k) ⊥ = maximalIdeal R by
+    rw [← eq_maximalIdeal (Algebra.ker_algebraMap_isMaximal_of_isIntegral R k), RingHom.ker]))
+  (RingEquiv.quotientBot k) (by ext; rfl)
+
+end IsLocalRing
+```

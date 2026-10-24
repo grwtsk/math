@@ -1,0 +1,155 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.Semantics.Varianteebd0a014cd1503decacdc8a43c85297f48290e8251ff47ce8946e9b07e75904
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ea0de6f18e8dacd41859401b2bb9ddbc702ec789` · SHA-256 `eebd0a014cd1503decacdc8a43c85297f48290e8251ff47ce8946e9b07e75904`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import BitMatrix.Codec.BitDocument
+import BitMatrix.Core.Basic
+import BitMatrix.Rhetorical.Core
+import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+/-!
+# Runtime-visible Bit semantics
+
+These definitions are the formal side of the runtime correspondence ledger.
+They do not claim byte-for-byte equivalence with a Rust or JavaScript program;
+that promotion additionally requires the executable conformance tests recorded
+by the concept ledger.
+-/
+
+namespace BitMatrix.Runtime.Semantics
+
+/-- A checked fixed-width natural-number bit field. -/
+structure BitField (width : Nat) where
+  value : Nat
+  inRange : value < 2 ^ width
+
+/-- Read a field bit through a typed index. -/
+def BitField.bitAt {width : Nat} (field : BitField width) (index : Fin width) : Bool :=
+  Nat.testBit field.value index.val
+
+/-- A typed row-major cell address. -/
+structure GridCell (rows columns : Nat) where
+  row : Fin rows
+  column : Fin columns
+  deriving DecidableEq
+
+/-- Row-major index with an intrinsic range proof. -/
+def GridCell.rowMajorIndex
+    {rows columns : Nat}
+    (cell : GridCell rows columns) : Fin (rows * columns) :=
+  BitMatrix.ArrayBacked.flatIdx cell.row cell.column
+
+/-- Finite carrier grid, distinguished origin, and carrier multiplicity. -/
+structure CarrierGrid (rows columns : Nat) where
+  origin : GridCell rows columns
+  carrierMultiplicity : GridCell rows columns → Nat
+
+/-- Ownership is a Boolean mask over a typed finite grid. -/
+abbrev OwnershipMask (rows columns : Nat) := BitMatrix rows columns
+
+/-- A normalized finite raster state. -/
+structure FiniteRasterState (carrierCount : Nat) where
+  weight : Fin carrierCount → ℝ
+  nonnegative : ∀ carrier, 0 ≤ weight carrier
+  normalized : ∑ carrier, weight carrier = 1
+
+/-- The exact three-state triangle carrier. -/
+inductive TriangleVertex where
+  | point0
+  | point1
+  | point2
+  deriving DecidableEq, Repr
+
+/-- Triangle successor cycle `0 → 1 → 2 → 0`. -/
+def triangleSuccessor : Equiv.Perm TriangleVertex where
+  toFun
+    | .point0 => .point1
+    | .point1 => .point2
+    | .point2 => .point0
+  invFun
+    | .point0 => .point2
+    | .point1 => .point0
+    | .point2 => .point1
+  left_inv vertex := by cases vertex <;> rfl
+  right_inv vertex := by cases vertex <;> rfl
+
+@[simp]
+theorem triangleSuccessor_third_power (vertex : TriangleVertex) :
+    (triangleSuccessor ^ 3) vertex = vertex := by
+  cases vertex <;> rfl
+
+/-- Runtime braid semantics expose an endpoint permutation, not a braid-group proof. -/
+structure BraidEndpointPresentation (Endpoint : Type) where
+  endpointPermutation : Equiv.Perm Endpoint
+
+/-- The canonical eight-stage runtime pipeline order. -/
+inductive PipelineStage where
+  | motion
+  | strokeRegion
+  | setCombination
+  | rasterCoverage
+  | ownership
+  | bitField
+  | finiteRasterState
+  | annotations
+  deriving DecidableEq, Repr
+
+def canonicalPipelineStages : List PipelineStage :=
+  [.motion, .strokeRegion, .setCombination, .rasterCoverage,
+    .ownership, .bitField, .finiteRasterState, .annotations]
+
+/-- A completed pipeline trace must retain the canonical stage order. -/
+structure PipelineTrace where
+  stages : List PipelineStage
+  canonicalOrder : stages = canonicalPipelineStages
+
+/-- User-controlled inputs from which runtime dimensions are derived. -/
+structure ConfigurationInput where
+  bitLength : Nat
+  cellExtentPixels : Nat
+  bitLengthPositive : 0 < bitLength
+  cellExtentPositive : 0 < cellExtentPixels
+
+/-- Immutable derived configuration values. -/
+structure DerivedConfiguration where
+  cellsPerAxis : Nat
+  rasterTotalPixelsPerAxis : Nat
+  payloadOffsetDigits : Nat
+
+/-- One deterministic derivation authority for runtime dimensions. -/
+def deriveConfiguration (input : ConfigurationInput) : DerivedConfiguration where
+  cellsPerAxis := input.bitLength
+  rasterTotalPixelsPerAxis := input.bitLength * input.cellExtentPixels
+  payloadOffsetDigits := input.bitLength
+
+@[simp]
+theorem derive_cells_per_axis (input : ConfigurationInput) :
+    (deriveConfiguration input).cellsPerAxis = input.bitLength :=
+  rfl
+
+@[simp]
+theorem derive_raster_extent (input : ConfigurationInput) :
+    (deriveConfiguration input).rasterTotalPixelsPerAxis =
+      input.bitLength * input.cellExtentPixels :=
+  rfl
+
+/-- A runtime representation relation with an explicit abstraction function. -/
+structure RepresentationRelation (Semantic Runtime : Type) where
+  abstract : Runtime → Semantic
+  represents : Runtime → Semantic → Prop
+  represents_iff : ∀ runtime semantic,
+    represents runtime semantic ↔ abstract runtime = semantic
+
+/-- Evidence levels used by the formal–runtime correspondence ledger. -/
+inductive CorrespondenceStatus where
+  | specified
+  | executableTested
+  | theoremBacked
+  | conditional
+  deriving DecidableEq, Repr
+
+end BitMatrix.Runtime.Semantics
+```

@@ -1,0 +1,162 @@
+# Zlattice.rank
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:0752c98f-7a9b-118e-6eb4-e699750812ee",
+  "kind": "theorem",
+  "lexical_name": "Zlattice.rank",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "zlattice-rank--0c32f04a6eb91962c619f4ed",
+  "source": {
+    "blob": "690a294caa9cbc3b7d59aa8d6edc6ba1334a27e8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 453,
+    "line": 373,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Zlattice/Variant2ea68f0ee73f98440125ebf61f125222e2e25751b4fc13dba2b3cdd994eea133.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:0c32f04a6eb91962c619f4edd67434fab8a67447d23080e420a25a37521761e4",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Zlattice/Variant2ea68f0ee73f98440125ebf61f125222e2e25751b4fc13dba2b3cdd994eea133.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0752c98f-7a9b-118e-6eb4-e699750812ee`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 373–453.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem Zlattice.rank : finrank ℤ L = finrank K E := by
+  classical
+  have : Module.Finite ℤ L := module_finite K hs
+  have : Module.Free ℤ L := module_free K hs
+  have : Module ℚ E := Module.compHom E (algebraMap ℚ K)
+  let b₀ := Module.Free.chooseBasis ℤ L
+  -- Let `b` be a `ℤ`-basis of `L` formed of vectors of `E`
+  let b := Subtype.val ∘ b₀
+  have : LinearIndependent ℤ b :=
+    LinearIndependent.map' b₀.linearIndependent (L.toIntSubmodule.subtype) (ker_subtype _)
+  -- We prove some assertions that will be useful later on
+  have h_spanL : span ℤ (Set.range b) = AddSubgroup.toIntSubmodule L := by
+    convert congrArg (map (Submodule.subtype (AddSubgroup.toIntSubmodule L))) b₀.span_eq
+    · rw [map_span, Set.range_comp]
+      rfl
+    · exact (map_subtype_top _).symm
+  have h_spanE : span K (Set.range b) = ⊤ := by rwa [← span_span_of_tower (R := ℤ), h_spanL]
+  have h_card : Fintype.card (Module.Free.ChooseBasisIndex ℤ L) =
+      (Set.range b).toFinset.card := by
+    rw [Set.toFinset_range, Finset.univ.card_image_of_injective]
+    rfl
+    exact Subtype.coe_injective.comp (Basis.injective _)
+  rw [finrank_eq_card_chooseBasisIndex]
+    -- We prove that `finrank ℤ L ≤ finrank K E` and `finrank K E ≤ finrank ℤ L`
+  refine le_antisymm ?_ ?_
+  · -- To prove that `finrank ℤ L ≤ finrank K E`, we proceed by contradiction and prove that, in
+    -- this case, there is a ℤ-relation between the vectors of `b`
+    obtain ⟨t, ⟨ht_inc, ⟨ht_span, ht_lin⟩⟩⟩ := exists_linearIndependent K (Set.range b)
+    -- `e` is a `K`-basis of `E` formed of vectors of `b`
+    let e : Basis t K E := Basis.mk ht_lin (by simp [ht_span, h_spanE])
+    have : Fintype t := Set.Finite.fintype ((Set.range b).toFinite.subset ht_inc)
+    have h : LinearIndependent ℤ (fun x : (Set.range b) => (x : E)) := by
+      rwa [linearIndependent_subtype_range (Subtype.coe_injective.comp b₀.injective)]
+    contrapose! h
+    -- Since `finrank ℤ L > finrank K E`, there exists a vector `v ∈ b` with `v ∉ e`
+    obtain ⟨v, hv⟩ : (Set.range b \ Set.range e).Nonempty := by
+      rw [Basis.coe_mk, Subtype.range_coe_subtype, Set.setOf_mem_eq, ← Set.toFinset_nonempty]
+      contrapose h
+      rw [Finset.not_nonempty_iff_eq_empty, Set.toFinset_diff,
+        Finset.sdiff_eq_empty_iff_subset] at h
+      replace h := Finset.card_le_of_subset h
+      rwa [not_lt, h_card, ← topEquiv.finrank_eq, ← h_spanE, ← ht_span,
+        finrank_span_set_eq_card _ ht_lin]
+    -- Assume that `e ∪ {v}` is not `ℤ`-linear independent then we get the contradiction
+    suffices ¬ LinearIndependent ℤ (fun x : ↥(insert v (Set.range e)) => (x : E)) by
+      contrapose! this
+      refine LinearIndependent.mono ?_ this
+      exact Set.insert_subset (Set.mem_of_mem_diff hv) (by simp [ht_inc])
+    -- We prove finally that `e ∪ {v}` is not ℤ-linear independent or, equivalently,
+    -- not ℚ-linear independent by showing that `v ∈ span ℚ e`.
+    rw [LinearIndependent.iff_fractionRing ℤ ℚ,
+      (linearIndependent_insert (Set.not_mem_of_mem_diff hv)),  not_and, not_not]
+    intro _
+    -- But that follows from the fact that there exist `n, m : ℕ`, `n ≠ m`
+    -- such that `(n - m) • v ∈ span ℤ e` which is true since `n ↦ Zspan.fract e (n • v)`
+    -- takes value into the finite set `fundamentalDomain e ∩ L`
+    have h_mapsto : Set.MapsTo (fun n : ℤ => Zspan.fract e (n • v)) Set.univ
+        (Metric.closedBall 0 (∑ i, ‖e i‖) ∩ (L : Set E)) := by
+      rw [Set.mapsTo_inter, Set.maps_univ_to, Set.maps_univ_to]
+      refine ⟨fun _ =>  mem_closedBall_zero_iff.mpr (Zspan.norm_fract_le e _), fun _ => ?_⟩
+      · change _ ∈ AddSubgroup.toIntSubmodule L
+        rw [← h_spanL]
+        refine sub_mem ?_ ?_
+        · exact zsmul_mem (subset_span (Set.diff_subset _ _ hv)) _
+        · exact span_mono (by simp [ht_inc]) (coe_mem _)
+    have h_finite : Set.Finite (Metric.closedBall 0 (∑ i, ‖e i‖) ∩ (L : Set E)) :=
+      Metric.Finite_bounded_inter_isClosed Metric.bounded_closedBall inferInstance
+    obtain ⟨n, -, m, -, h_neq, h_eq⟩ := Set.Infinite.exists_ne_map_eq_of_mapsTo
+      Set.infinite_univ h_mapsto h_finite
+    have h_nz : (-n + m : ℚ) ≠ 0 := by
+      rwa [Ne.def, add_eq_zero_iff_eq_neg.not, neg_inj, Rat.coe_int_inj, ← Ne.def]
+    apply (smul_mem_iff _ h_nz).mp
+    refine span_subset_span ℤ ℚ _ ?_
+    rwa [add_smul, neg_smul, SetLike.mem_coe, ← Zspan.fract_eq_fract, ← zsmul_eq_smul_cast ℚ,
+      ← zsmul_eq_smul_cast ℚ]
+  · -- To prove that `finrank K E ≤ finrank ℤ L`, we use the fact `b` generates `E` over `K`
+    -- and thus `finrank K E ≤ card b = finrank ℤ L`
+    rw [← topEquiv.finrank_eq, ← h_spanE]
+    convert finrank_span_le_card (K := K) (Set.range b)
+
+end Zlattice
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Zlattice/Variant2ea68f0ee73f98440125ebf61f125222e2e25751b4fc13dba2b3cdd994eea133.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Zlattice/Variant2ea68f0ee73f98440125ebf61f125222e2e25751b4fc13dba2b3cdd994eea133.lean#L373).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `690a294caa9cbc3b7d59aa8d6edc6ba1334a27e8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

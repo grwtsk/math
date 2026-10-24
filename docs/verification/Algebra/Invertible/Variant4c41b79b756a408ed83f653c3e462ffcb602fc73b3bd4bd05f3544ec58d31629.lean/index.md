@@ -1,0 +1,136 @@
+# Verification target: GRWTSK.Algebra.Invertible.Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ed25872c35c34ee2ed71a5fb8ba8212677f21f08",
+  "lexical_observation_count": 73,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/index.md) · [Full source](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ed25872c35c34ee2ed71a5fb8ba8212677f21f08`.
+
+Source path: `GRWTSK/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Group.Units` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.GroupWithZero.Units.Lemmas` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Ring.Defs` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible--80ecf26030f97483ea05316e.md) | 95 | `declaration-track:80ecf26030f97483ea05316ead17c31e837d5bd3003238ed4ce03604fd98a1d3` |
+| 2 | `theorem` | [invOf_mul_self'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-mul-self--d0e92a15316baa24fb2f29ea.md) | 110 | `result-track:d0e92a15316baa24fb2f29eacc0fccb447760245c340877971758e6c7d392245` |
+| 3 | `theorem` | [invOf_mul_self](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-mul-self--a7d74ba0fa64d309d71add30.md) | 113 | `result-track:a7d74ba0fa64d309d71add30919541477db070d01c341085a00d616be857b80b` |
+| 4 | `theorem` | [mul_invOf_self'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-self--de646c47e282026467caf101.md) | 118 | `result-track:de646c47e282026467caf1019b7bfca08285a8a7b4855259daaec79050374c2e` |
+| 5 | `theorem` | [mul_invOf_self](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-self--3ccec55e8db28a09ccda8be1.md) | 121 | `result-track:3ccec55e8db28a09ccda8be12643ebcf36d00e3c298e049ca236990295709a41` |
+| 6 | `theorem` | [invOf_mul_self_assoc'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-mul-self-assoc--3c2bd85f5132509e22f4a5b0.md) | 126 | `result-track:3c2bd85f5132509e22f4a5b0400a1315e355d52315697b7137fb25352d66cfbd` |
+| 7 | `theorem` | [invOf_mul_self_assoc](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-mul-self-assoc--6af749f3ffc250144ee7025c.md) | 129 | `result-track:6af749f3ffc250144ee7025cf0722c18290eee944ad2821b5d62eef1de4ee8d6` |
+| 8 | `theorem` | [mul_invOf_self_assoc'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-self-assoc--37a7415ace894f7e4ac4ddc4.md) | 134 | `result-track:37a7415ace894f7e4ac4ddc40da06ed227dfbf520df5fc9ddc5b407c3af2e202` |
+| 9 | `theorem` | [mul_invOf_self_assoc](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-self-assoc--fadf3be30f31b7662192675e.md) | 137 | `result-track:fadf3be30f31b7662192675effcef33e32ff231f71e1178c9617864a6b42ac21` |
+| 10 | `theorem` | [mul_invOf_mul_self_cancel'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-mul-self-cancel--ddb50f7fdfa2bda870894bcf.md) | 142 | `result-track:ddb50f7fdfa2bda870894bcf71e2b3f3ed6d2953a1e76da1eec78acbb0ecf71b` |
+| 11 | `theorem` | [mul_invOf_mul_self_cancel](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-mul-self-cancel--45b4e78fe8bc5b915d1f5e0f.md) | 145 | `result-track:45b4e78fe8bc5b915d1f5e0f46f5980cad085db0e461b5a39b140c33db8ce6b1` |
+| 12 | `theorem` | [mul_mul_invOf_self_cancel'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-mul-invof-self-cancel--0677d1cb1aa707d508653ad4.md) | 150 | `result-track:0677d1cb1aa707d508653ad413ea14f8e983857004d72e11195518899bfd2b1d` |
+| 13 | `theorem` | [mul_mul_invOf_self_cancel](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-mul-invof-self-cancel--5e82b827f3a977ece3b3ea8f.md) | 153 | `result-track:5e82b827f3a977ece3b3ea8f97b2c5d24293d3f37dbdb798cc589192519c820d` |
+| 14 | `theorem` | [invOf_eq_right_inv](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-eq-right-inv--fab04dd30af96e11aba3e5b5.md) | 157 | `result-track:fab04dd30af96e11aba3e5b5169c547a8f188d572c3a1f788789f51be6faddb2` |
+| 15 | `theorem` | [invOf_eq_left_inv](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-eq-left-inv--661e3eb0a1ed828d64143d52.md) | 161 | `result-track:661e3eb0a1ed828d64143d52029212eaa557028415203074fce876ce0b011e5d` |
+| 16 | `theorem` | [invertible_unique](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-unique--0bfb40c44008adc843f5d210.md) | 165 | `result-track:0bfb40c44008adc843f5d2106784df5a4654f51c2dafe7dc301d732afb2152ce` |
+| 17 | `instance` | [Invertible.subsingleton](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-subsingleton--91ee080a4f09f53bd59d4403.md) | 171 | `declaration-track:91ee080a4f09f53bd59d4403dc96bc9bde669954789f23573f41bcdff90dc97c` |
+| 18 | `def` | [Invertible.copy'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-copy--3dccfcce39e212d20dbb3a1d.md) | 178 | `declaration-track:3dccfcce39e212d20dbb3a1dca13e646f14499d694f3669a94623b48cb8d5902` |
+| 19 | `def` | [Invertible.copy](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-copy--a1d878669c094f656f1fb5a3.md) | 187 | `declaration-track:a1d878669c094f656f1fb5a34f9125c060856be3edc375285a359c5cc80484f1` |
+| 20 | `theorem` | [Invertible.congr](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-congr--a8c6d7b19af479c142d6db7f.md) | 194 | `result-track:a8c6d7b19af479c142d6db7fcfb3c859c6f8d30fe644d44c3b3ac4b03bbf55d9` |
+| 21 | `def` | [unitOfInvertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/unitofinvertible--cfd5e59cc1d808152fcccf79.md) | 199 | `declaration-track:cfd5e59cc1d808152fcccf798598aa12b4c6d2b76e1557ebb8e7bbf8868ff98d` |
+| 22 | `theorem` | [isUnit_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/isunit-of-invertible--e51f7b848889b52c57bb7128.md) | 208 | `result-track:e51f7b848889b52c57bb71283b27fdc81db35a804cbd1038ae5b120a7c5f8eff` |
+| 23 | `def` | [Units.invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/units-invertible--eb6f58bba6fbbd8171cf43a3.md) | 213 | `declaration-track:eb6f58bba6fbbd8171cf43a3028e52312a76b4e18925f23bc9f19ae7f59bc8f6` |
+| 24 | `theorem` | [invOf_units](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-units--0e426c19e1b8847776f51161.md) | 221 | `result-track:0e426c19e1b8847776f511617c4d4a0329064f2b0f15d545b25d3a1aac4007e4` |
+| 25 | `theorem` | [IsUnit.nonempty_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/isunit-nonempty-invertible--9f1ca65c42c126af7c74b13d.md) | 225 | `result-track:9f1ca65c42c126af7c74b13d97463e7634da0f5dfda663f84db1445d1b2395d1` |
+| 26 | `def` | [IsUnit.invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/isunit-invertible--1f966aa054b6d9f175a1b3a2.md) | 233 | `declaration-track:1f966aa054b6d9f175a1b3a2544c53676a237aa15d0a5c196779898937e74e67` |
+| 27 | `theorem` | [nonempty_invertible_iff_isUnit](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/nonempty-invertible-iff-isunit--79e00503d9bde385e26a634b.md) | 238 | `result-track:79e00503d9bde385e26a634b8f6752026f1c1cafa811ef7c3d13ff4cefefd629` |
+| 28 | `def` | [invertibleOfGroup](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleofgroup--c7cbda499e3a23ab2be8af4a.md) | 243 | `declaration-track:c7cbda499e3a23ab2be8af4a49e6cf5b72ceb8a0cc86b0422f8a3d280d012f6e` |
+| 29 | `theorem` | [invOf_eq_group_inv](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-eq-group-inv--8fbeda54ac0c492ebf80deb4.md) | 248 | `result-track:8fbeda54ac0c492ebf80deb4662a0696e7501c4a4f8e3e3a1b74ab855b431eb0` |
+| 30 | `def` | [invertibleOne](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleone--78db1072d4ab29ea2b2cc015.md) | 253 | `declaration-track:78db1072d4ab29ea2b2cc015955bd649d17720498a8846fe710db93038f0131a` |
+| 31 | `theorem` | [invOf_one'](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-one--100c531984504f490b2545a9.md) | 258 | `result-track:100c531984504f490b2545a9782bf57e38134fe50afed8c8fdc38609e828126c` |
+| 32 | `theorem` | [invOf_one](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-one--d774ff726dbc6b15631dcb8d.md) | 261 | `result-track:d774ff726dbc6b15631dcb8d85941b6ac6c5f8c2f7694077a952e1cd862d218f` |
+| 33 | `def` | [invertibleNeg](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleneg--8d21c57fdffe8cc66716065a.md) | 266 | `declaration-track:8d21c57fdffe8cc66716065a75a7430abcf74800bf7bfb69478c943d0a61b202` |
+| 34 | `theorem` | [invOf_neg](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-neg--9ad67c23b83b4d9d116cb878.md) | 271 | `result-track:9ad67c23b83b4d9d116cb878094733752abc7a24c10796db4e31e9a83c051f6c` |
+| 35 | `theorem` | [one_sub_invOf_two](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/one-sub-invof-two--f4f460c7b5e04bf85808906a.md) | 277 | `result-track:f4f460c7b5e04bf85808906a028df83935354bd72a40e8a744a32d2782abfbe0` |
+| 36 | `theorem` | [invOf_two_add_invOf_two](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-two-add-invof-two--87d22b991e9f25d27b860b4a.md) | 283 | `result-track:87d22b991e9f25d27b860b4a804512c3de86fd7c2f5f514283ff5381f8e7c6a0` |
+| 37 | `instance` | [invertibleInvOf](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleinvof--e27fee3e81abc0ab51a4e240.md) | 288 | `declaration-track:e27fee3e81abc0ab51a4e2402408c6b9903e4549fc85a38a5189833880899a5b` |
+| 38 | `theorem` | [invOf_invOf](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-invof--750607b43c981cc63def1fe1.md) | 293 | `result-track:750607b43c981cc63def1fe133392d04b3f14d6a2621cbc91fa965c9c74b3813` |
+| 39 | `theorem` | [invOf_inj](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-inj--be0d3322ef1fe252dc7e77e2.md) | 298 | `result-track:be0d3322ef1fe252dc7e77e2a29f83f8ebbcb3d76ec10b1a9fc1f58c056f167a` |
+| 40 | `def` | [invertibleMul](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertiblemul--3824b9ea18e45e8318266c4c.md) | 303 | `declaration-track:3824b9ea18e45e8318266c4ccf59d9ef9421d03ccfcd3acaec4d328226b5ee32` |
+| 41 | `theorem` | [invOf_mul](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-mul--af4f647c5a4db28830a90260.md) | 308 | `result-track:af4f647c5a4db28830a902607b93fb774492ca3a6e9cec989c576a947908248a` |
+| 42 | `def` | [Invertible.mul](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-mul--d38a3d29492c15a323e7ebae.md) | 315 | `declaration-track:d38a3d29492c15a323e7ebae8bd01e9bfd1269b89aee7bfdae5dd248d4a0e25b` |
+| 43 | `theorem` | [mul_right_inj_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-right-inj-of-invertible--4daa6a261565c4722f6371af.md) | 320 | `result-track:4daa6a261565c4722f6371af3e15b2aeddc42a81c4b20fd9032f290095952937` |
+| 44 | `theorem` | [mul_left_inj_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-left-inj-of-invertible--f8843bbc86312526f221bca8.md) | 324 | `result-track:f8843bbc86312526f221bca873c25f60c5d95d34d8127564a52d2c56e82f546a` |
+| 45 | `theorem` | [invOf_mul_eq_iff_eq_mul_left](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-mul-eq-iff-eq-mul-left--0c41e05c9f3b2f9e849d5c95.md) | 328 | `result-track:0c41e05c9f3b2f9e849d5c9588f4aee85017851ee8d878af411c1c6745eb4200` |
+| 46 | `theorem` | [mul_left_eq_iff_eq_invOf_mul](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-left-eq-iff-eq-invof-mul--0f20d3b77aa9602c367b9a86.md) | 332 | `result-track:0f20d3b77aa9602c367b9a869b99f1fa53481217800c1eedf504a66e5f910549` |
+| 47 | `theorem` | [mul_invOf_eq_iff_eq_mul_right](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-invof-eq-iff-eq-mul-right--ca246fa41c69dcfea16ba22f.md) | 336 | `result-track:ca246fa41c69dcfea16ba22fefa2ed70717d80153738affe6bbf04758b15cba5` |
+| 48 | `theorem` | [mul_right_eq_iff_eq_mul_invOf](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-right-eq-iff-eq-mul-invof--db7eec0eb291dcc3e11fd7c3.md) | 340 | `result-track:db7eec0eb291dcc3e11fd7c37683071893529fdb344ef76b1becc995a964eb64` |
+| 49 | `theorem` | [Commute.invOf_right](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/commute-invof-right--1feb3aa046cc66f8920dffa0.md) | 344 | `result-track:1feb3aa046cc66f8920dffa0b6ff33be998d5cd2e45992a3d7ff1fec690662d3` |
+| 50 | `theorem` | [Commute.invOf_left](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/commute-invof-left--418f36a435bad13f76749a8d.md) | 352 | `result-track:418f36a435bad13f76749a8d4e5661e35727fe90b0222a1f5568492328880dd2` |
+| 51 | `theorem` | [commute_invOf](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/commute-invof--91c687042f71920ebca203e0.md) | 360 | `result-track:91c687042f71920ebca203e0eb93d62ded2f07e231449c7bb97b3aeabd8ff16d` |
+| 52 | `theorem` | [nonzero_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/nonzero-of-invertible--a20c5f3f84dbc6ebcdb2f7d9.md) | 366 | `result-track:a20c5f3f84dbc6ebcdb2f7d9b18092d5ee52d9ca85ab7f0c96a6024a5fabce04` |
+| 53 | `theorem` | [pos_of_invertible_cast](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/pos-of-invertible-cast--dea98d915bc76f3c8c8e93dc.md) | 374 | `result-track:dea98d915bc76f3c8c8e93dc2ab8be8791709b7d6fc4596e9b150d2301c6a569` |
+| 54 | `instance` | [(anonymous)](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/instance--59e9e0e035629ccfd7c7ff07.md) | 377 | `declaration-track:59e9e0e035629ccfd7c7ff071026b7eb658498359906d690106fc4d33ae32e8f` |
+| 55 | `def` | [invertibleOfInvertibleMul](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleofinvertiblemul--cabbf9b7cbe4f589b449bb99.md) | 388 | `declaration-track:cabbf9b7cbe4f589b449bb99d9e37fceb8ee7593b46f0a2531a0e7f611893460` |
+| 56 | `def` | [invertibleOfMulInvertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleofmulinvertible--b5b55d83638fe82432a9aeb6.md) | 398 | `declaration-track:b5b55d83638fe82432a9aeb6061cdd538e8e70ca984e1265aed6caf2a298c3fd` |
+| 57 | `def` | [Invertible.mulLeft](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-mulleft--41db0c1a9753a81e16443a88.md) | 408 | `declaration-track:41db0c1a9753a81e16443a88399dd1f2414f8a94ca84af0d77f512126be3dadf` |
+| 58 | `def` | [Invertible.mulRight](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-mulright--ff03d3178c1ead64e8babfc3.md) | 419 | `declaration-track:ff03d3178c1ead64e8babfc3707c8a5481da4d2bba4bc79fa7709eeaa027dac1` |
+| 59 | `theorem` | [Ring.inverse_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/ring-inverse-invertible--015a753b189f6a1b089ec7a8.md) | 436 | `result-track:015a753b189f6a1b089ec7a83bea943bda69d9ce8410d0e8f0a6b863664c969b` |
+| 60 | `def` | [invertibleOfNonzero](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleofnonzero--e7f3472102c390c28109e582.md) | 447 | `declaration-track:e7f3472102c390c28109e5827224053fd6d1b7e2dc910b9405cb9b55b3b1e801` |
+| 61 | `theorem` | [invOf_eq_inv](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-eq-inv--4480bf25f3af623e995d0d1d.md) | 452 | `result-track:4480bf25f3af623e995d0d1d795db3127bd5f241dcbc10cc66888b1edf975e4c` |
+| 62 | `theorem` | [inv_mul_cancel_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/inv-mul-cancel-of-invertible--5f04142d898e3c08eb807cc2.md) | 457 | `result-track:5f04142d898e3c08eb807cc2189d3ef2ffbee1caac2911ff1827e5f6cb4a0515` |
+| 63 | `theorem` | [mul_inv_cancel_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-inv-cancel-of-invertible--07c4904f7ffa3ed6996f3331.md) | 462 | `result-track:07c4904f7ffa3ed6996f33318e10d18c0d2985d07da326b2cc46e4b547273e8e` |
+| 64 | `theorem` | [div_mul_cancel_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/div-mul-cancel-of-invertible--8d049a694ac726fc5356e959.md) | 467 | `result-track:8d049a694ac726fc5356e959b70431e49b587d134bc97674f391218ff5110703` |
+| 65 | `theorem` | [mul_div_cancel_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/mul-div-cancel-of-invertible--fbc1c3a6476da357f09e671f.md) | 472 | `result-track:fbc1c3a6476da357f09e671fdac719e30ab94ee9a6bdae1b0f99b2aefbe63ee2` |
+| 66 | `theorem` | [div_self_of_invertible](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/div-self-of-invertible--8815a7f479b2039eaecf682f.md) | 477 | `result-track:8815a7f479b2039eaecf682f890d0a9352d31b53cf05934cc53a49efbc3b7d88` |
+| 67 | `def` | [invertibleDiv](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertiblediv--7397700c651d642e0dd53eb5.md) | 482 | `declaration-track:7397700c651d642e0dd53eb53702804cdf5f6b29be1bc74d979fa168e4d6e49c` |
+| 68 | `theorem` | [invOf_div](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invof-div--77dd7eed36f83bef50c87a84.md) | 487 | `result-track:77dd7eed36f83bef50c87a84d9dcb69225343ff3a7dc675d63f7f40a6fa49d51` |
+| 69 | `def` | [invertibleInv](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleinv--96b54186ae56b46f04706781.md) | 493 | `declaration-track:96b54186ae56b46f0470678152767b4a38587967ce81918c98fb10d40c0471b5` |
+| 70 | `def` | [Invertible.map](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-map--52b1dd81e82028d663f2923d.md) | 500 | `declaration-track:52b1dd81e82028d663f2923db97d4803064d23615a6ddd11c418441bca9e1589` |
+| 71 | `theorem` | [map_invOf](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/map-invof--8b64084b8cd13c84ae89bc6a.md) | 510 | `result-track:8b64084b8cd13c84ae89bc6abd1cb0dd76877539c28707f48d6b1e83af36ff94` |
+| 72 | `def` | [Invertible.ofLeftInverse](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertible-ofleftinverse--b2b711326280bba101ad0734.md) | 522 | `declaration-track:b2b711326280bba101ad07345afa6d330c0417fd487a9cb2bbf61fc5aea5da23` |
+| 73 | `def` | [invertibleEquivOfLeftInverse](../../../../mathematics/Algebra/Invertible/Variant4c41b79b756a408ed83f653c3e462ffcb602fc73b3bd4bd05f3544ec58d31629.lean/declarations/invertibleequivofleftinverse--05ca2e89fee2af1dc428a093.md) | 531 | `declaration-track:05ca2e89fee2af1dc428a093a719b731d79f0bcbf4a55cec8b8462bd2f3b11a0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

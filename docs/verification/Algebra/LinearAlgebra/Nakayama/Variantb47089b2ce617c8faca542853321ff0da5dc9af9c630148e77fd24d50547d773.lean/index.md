@@ -1,0 +1,64 @@
+# Verification target: GRWTSK.Algebra.LinearAlgebra.Nakayama.Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a9f775fd042a5bf2de59c68c92aaf908918cc3c8",
+  "lexical_observation_count": 2,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean/index.md) · [Full source](../../../../../mathematics/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a9f775fd042a5bf2de59c68c92aaf908918cc3c8`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.RingTheory.Finiteness.Defs` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Ideal.Operations` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [exists_sub_one_mem_and_smul_eq_zero_of_fg_of_le_smul](../../../../../mathematics/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean/declarations/exists-sub-one-mem-and-smul-eq-zero-of-fg-of-le-smul--8f4417e7bd8e7426c4dc9624.md) | 32 | `result-track:8f4417e7bd8e7426c4dc96248bfcd4a58593805085f8cfd0e0a806102899975a` |
+| 2 | `theorem` | [exists_mem_and_smul_eq_self_of_fg_of_le_smul](../../../../../mathematics/Algebra/LinearAlgebra/Nakayama/Variantb47089b2ce617c8faca542853321ff0da5dc9af9c630148e77fd24d50547d773.lean/declarations/exists-mem-and-smul-eq-self-of-fg-of-le-smul--a20ad622b34281af1734fa21.md) | 87 | `result-track:a20ad622b34281af1734fa216ef44f4834c2a99e4077eef6f1ba0b5c5fd8e3c1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

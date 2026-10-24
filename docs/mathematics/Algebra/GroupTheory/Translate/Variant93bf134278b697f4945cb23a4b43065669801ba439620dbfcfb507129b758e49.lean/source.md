@@ -1,0 +1,109 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Translate.Variant93bf134278b697f4945cb23a4b43065669801ba439620dbfcfb507129b758e49
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `be5841047d7b67ed8c74e8c94eac97459891f4d6` · SHA-256 `c9d10d4cd91c28d4a9765ad8442b4636fdfc81fde7cf55883705eb0e87a1b892`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.Translate.Variantfd0ce2ebfa9f8075ffee05a671691736d5d5429f61d1e90b4eee84290b36a6d3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fd0ce2ebfa9f8075ffee05a671691736d5d5429f61d1e90b4eee84290b36a6d3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.Translate.Variantfd0ce2ebfa9f8075ffee05a671691736d5d5429f61d1e90b4eee84290b36a6d3","mathematical_subject":"Algebra.Groups","original_sha256":"fd0ce2ebfa9f8075ffee05a671691736d5d5429f61d1e90b4eee84290b36a6d3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Group/Translate.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+import Mathlib.Algebra.BigOperators.Pi
+import Mathlib.Algebra.Group.Action.Pointwise.Set.Basic
+import Mathlib.Algebra.Group.Pi.Basic
+import Mathlib.GroupTheory.GroupAction.DomAct.Basic
+
+/-!
+# Translation operator
+
+This file defines the translation of a function from a group by an element of that group.
+
+## Notation
+
+`τ a f` is notation for `translate a f`.
+
+## See also
+
+Generally, translation is the same as acting on the domain by subtraction. This setting is
+abstracted by `DomAddAct` in such a way that `τ a f = DomAddAct.mk (-a) +ᵥ f` (see
+`translate_eq_domAddActMk_vadd`). Using `DomAddAct` is irritating in applications because of this
+negation appearing inside `DomAddAct.mk`. Although mathematically equivalent, the pen and paper
+convention is that translating is an action by subtraction, not by addition.
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.Translate.Variantfd0ce2ebfa9f8075ffee05a671691736d5d5429f61d1e90b4eee84290b36a6d3
+
+open Function Set
+open scoped Pointwise
+
+variable {ι α β M G H : Type*} [AddCommGroup G]
+
+/-- Translation of a function in a group by an element of that group.
+`τ a f` is defined as `x ↦ f (x - a)`. -/
+def translate (a : G) (f : G → α) : G → α := fun x ↦ f (x - a)
+
+@[inherit_doc] scoped[translate] notation "τ " => translate
+
+open scoped translate
+
+@[simp] lemma translate_apply (a : G) (f : G → α) (x : G) : τ a f x = f (x - a) := rfl
+@[simp] lemma translate_zero (f : G → α) : τ 0 f = f := by ext; simp
+
+lemma translate_translate (a b : G) (f : G → α) : τ a (τ b f) = τ (a + b) f := by
+  ext; simp [sub_sub]
+
+lemma translate_add (a b : G) (f : G → α) : τ (a + b) f = τ a (τ b f) := by ext; simp [sub_sub]
+
+/-- See `translate_add` -/
+lemma translate_add' (a b : G) (f : G → α) : τ (a + b) f = τ b (τ a f) := by
+  rw [add_comm, translate_add]
+
+lemma translate_comm (a b : G) (f : G → α) : τ a (τ b f) = τ b (τ a f) := by
+  rw [← translate_add, translate_add']
+
+-- We make `simp` push the `τ` outside
+@[simp] lemma comp_translate (a : G) (f : G → α) (g : α → β) : g ∘ τ a f = τ a (g ∘ f) := rfl
+
+lemma translate_eq_domAddActMk_vadd (a : G) (f : G → α) : τ a f = DomAddAct.mk (-a) +ᵥ f := by
+  ext; simp [DomAddAct.vadd_apply, sub_eq_neg_add]
+
+@[simp]
+lemma translate_smul_right [SMul H α] (a : G) (f : G → α) (c : H) : τ a (c • f) = c • τ a f := rfl
+
+@[simp] lemma translate_zero_right [Zero α] (a : G) : τ a (0 : G → α) = 0 := rfl
+lemma translate_add_right [Add α] (a : G) (f g : G → α) : τ a (f + g) = τ a f + τ a g := rfl
+lemma translate_sub_right [Sub α] (a : G) (f g : G → α) : τ a (f - g) = τ a f - τ a g := rfl
+lemma translate_neg_right [Neg α] (a : G) (f : G → α) : τ a (-f) = -τ a f := rfl
+
+section AddCommMonoid
+variable [AddCommMonoid M]
+
+lemma translate_sum_right (a : G) (f : ι → G → M) (s : Finset ι) :
+    τ a (∑ i ∈ s, f i) = ∑ i ∈ s, τ a (f i) := by ext; simp
+
+lemma sum_translate [Fintype G] (a : G) (f : G → M) : ∑ b, τ a f b = ∑ b, f b :=
+  Fintype.sum_equiv (Equiv.subRight _) _ _ fun _ ↦ rfl
+
+end AddCommMonoid
+
+section AddCommGroup
+variable [AddCommGroup H]
+
+@[simp] lemma support_translate (a : G) (f : G → H) : support (τ a f) = a +ᵥ support f := by
+  ext; simp [mem_vadd_set_iff_neg_vadd_mem, sub_eq_neg_add]
+
+end AddCommGroup
+
+variable [CommMonoid M]
+
+lemma translate_prod_right (a : G) (f : ι → G → M) (s : Finset ι) :
+    τ a (∏ i ∈ s, f i) = ∏ i ∈ s, τ a (f i) := by ext; simp
+```

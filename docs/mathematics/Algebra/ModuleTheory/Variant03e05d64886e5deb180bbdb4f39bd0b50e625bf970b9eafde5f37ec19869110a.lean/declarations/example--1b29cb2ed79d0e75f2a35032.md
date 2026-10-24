@@ -1,0 +1,82 @@
+# Anonymous example
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:36d7a8baebfe192b05e189bf2604919d3c1d97ee33d2231c7232c14df4ca5925",
+  "kind": "example",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "example--1b29cb2ed79d0e75f2a35032",
+  "source": {
+    "blob": "3ba1157f3ad6b668a379b4317c9e55a826d5ccd6",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 142,
+    "line": 142,
+    "path": "GRWTSK/Algebra/Module/Variant03e05d64886e5deb180bbdb4f39bd0b50e625bf970b9eafde5f37ec19869110a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1b29cb2ed79d0e75f2a350328e4e763d789674927262f48e23f262eae7d4956e",
+  "verification": {
+    "reference": "docs/verification/Algebra/ModuleTheory/Variant03e05d64886e5deb180bbdb4f39bd0b50e625bf970b9eafde5f37ec19869110a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `example` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:36d7a8baebfe192b05e189bf2604919d3c1d97ee33d2231c7232c14df4ca5925`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 142–142.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+example : a • x - b • x = (a - b) • x := by module
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/ModuleTheory/Variant03e05d64886e5deb180bbdb4f39bd0b50e625bf970b9eafde5f37ec19869110a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Module/Variant03e05d64886e5deb180bbdb4f39bd0b50e625bf970b9eafde5f37ec19869110a.lean#L142).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3ba1157f3ad6b668a379b4317c9e55a826d5ccd6` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

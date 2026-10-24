@@ -1,0 +1,66 @@
+# Verification target: GRWTSK.Algebra.EllipticTorsionAction.Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "49a451012fcf8e777a0d2c288055e5b0793e8c5f",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/index.md) · [Full source](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `49a451012fcf8e777a0d2c288055e5b0793e8c5f`.
+
+Source path: `GRWTSK/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Folder.Arithmetic.Torsion` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [FiberAut](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/declarations/fiberaut--51e86af520003185e4ddaeb7.md) | 19 | `declaration-track:51e86af520003185e4ddaeb7ce4dd6538bd4420291026a520cc77cab0e63a216` |
+| 2 | `structure` | [TorsionAction](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/declarations/torsionaction--16f8c11111207c9478248940.md) | 21 | `declaration-track:16f8c11111207c9478248940199fea7687cf5dc10b261387ef8dab3d7cf0b894` |
+| 3 | `structure` | [TorsionPoint](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/declarations/torsionpoint--2dc079b4bf33b9f8fd8dff2d.md) | 32 | `declaration-track:2dc079b4bf33b9f8fd8dff2d1a3e1d45c958c7f27dae98749afe8c1f3fdffa90` |
+| 4 | `def` | [TorsionAction.actTorsion](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/declarations/torsionaction-acttorsion--e71a85e2f9f4f31df99a0104.md) | 39 | `declaration-track:e71a85e2f9f4f31df99a0104d884e859c354e5f7836067f7d0396c254539b5c2` |
+| 5 | `theorem` | [torsion_action_roundtrip](../../../../mathematics/Algebra/EllipticTorsionAction/Variantc760038fffe565cffbaacd5954a71062f05c178e89b1fb704456d2f074b4fb79.lean/declarations/torsion-action-roundtrip--bf3d6dc8089ae48b140f0de0.md) | 49 | `result-track:bf3d6dc8089ae48b140f0de073dbc4247c857992bfbed0460514739000edbe58` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

@@ -1,0 +1,17 @@
+import GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+
+#print axioms coordinate_quadratic_eq
+#print axioms no_uniform_domination
+#print axioms diagonal_scale_ne_positive
+#print axioms zero_preserving_map_ne_target
+
+#check coordinate_quadratic_eq
+#check no_uniform_domination
+#check diagonal_scale_ne_positive
+#check zero_preserving_map_ne_target
+
+end GRWTSK.LinearAlgebra.ZeroCoordinateObstruction

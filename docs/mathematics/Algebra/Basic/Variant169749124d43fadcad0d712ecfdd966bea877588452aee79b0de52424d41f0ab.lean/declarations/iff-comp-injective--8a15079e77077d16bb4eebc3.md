@@ -1,0 +1,103 @@
+# iff_comp_injective
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f055fb9c-85e9-f648-62cb-ff1ff3793759",
+  "kind": "theorem",
+  "lexical_name": "iff_comp_injective",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "iff-comp-injective--8a15079e77077d16bb4eebc3",
+  "source": {
+    "blob": "76a7b72d02ce969e004c43f9f5665600b43abcca",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 105,
+    "line": 84,
+    "path": "GRWTSK/Algebra/Basic/Variant169749124d43fadcad0d712ecfdd966bea877588452aee79b0de52424d41f0ab.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:8a15079e77077d16bb4eebc32e1a3f02b7fd513acc645662849fb572b51ee9b3",
+  "verification": {
+    "reference": "docs/verification/Algebra/Basic/Variant169749124d43fadcad0d712ecfdd966bea877588452aee79b0de52424d41f0ab.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f055fb9c-85e9-f648-62cb-ff1ff3793759`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 84–105.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem iff_comp_injective :
+    FormallyUnramified R A ↔
+      ∀ ⦃B : Type u⦄ [CommRing B],
+        ∀ [Algebra R B] (I : Ideal B) (_ : I ^ 2 = ⊥),
+          Function.Injective ((Ideal.Quotient.mkₐ R I).comp : (A →ₐ[R] B) → A →ₐ[R] B ⧸ I) := by
+  constructor
+  · intros; exact comp_injective _ ‹_›
+  · intro H
+    constructor
+    rw [← not_nontrivial_iff_subsingleton]
+    intro h
+    obtain ⟨f₁, f₂, e⟩ := (KaehlerDifferential.endEquiv R A).injective.nontrivial
+    apply e
+    ext1
+    refine H
+      (RingHom.ker (TensorProduct.lmul' R (S := A)).kerSquareLift.toRingHom) ?_ ?_
+    · rw [AlgHom.ker_kerSquareLift]
+      exact Ideal.cotangentIdeal_square _
+    · ext x
+      apply RingHom.kerLift_injective (TensorProduct.lmul' R (S := A)).kerSquareLift.toRingHom
+      simpa using DFunLike.congr_fun (f₁.2.trans f₂.2.symm) x
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Basic/Variant169749124d43fadcad0d712ecfdd966bea877588452aee79b0de52424d41f0ab.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Basic/Variant169749124d43fadcad0d712ecfdd966bea877588452aee79b0de52424d41f0ab.lean#L84).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `76a7b72d02ce969e004c43f9f5665600b43abcca` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

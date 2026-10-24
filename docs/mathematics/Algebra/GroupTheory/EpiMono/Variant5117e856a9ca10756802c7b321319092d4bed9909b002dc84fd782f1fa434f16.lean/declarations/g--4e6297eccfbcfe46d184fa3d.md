@@ -1,0 +1,102 @@
+# g
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:c5f3047c1523e2fd906a1574b5d945c984c6d095e8883b082264a9969b2e8329",
+  "kind": "def",
+  "lexical_name": "g",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "g--4e6297eccfbcfe46d184fa3d",
+  "source": {
+    "blob": "5c5142d140008a2bbf508ec725e013533e44681c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 198,
+    "line": 178,
+    "path": "GRWTSK/Algebra/GroupTheory/EpiMono/Variant5117e856a9ca10756802c7b321319092d4bed9909b002dc84fd782f1fa434f16.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:4e6297eccfbcfe46d184fa3d9184a1cb26c067e64f59c86cec611eeec16d2438",
+  "verification": {
+    "reference": "docs/verification/Algebra/GroupTheory/EpiMono/Variant5117e856a9ca10756802c7b321319092d4bed9909b002dc84fd782f1fa434f16.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:c5f3047c1523e2fd906a1574b5d945c984c6d095e8883b082264a9969b2e8329`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 178–198.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def g : B →* SX' where
+  toFun β :=
+    { toFun := fun x => β • x
+      invFun := fun x => β⁻¹ • x
+      left_inv := fun x => by
+        dsimp only
+        rw [← mul_smul, inv_mul_cancel, one_smul]
+      right_inv := fun x => by
+        dsimp only
+        rw [← mul_smul, mul_inv_cancel, one_smul] }
+  map_one' := by
+    ext
+    simp [one_smul]
+  map_mul' b1 b2 := by
+    ext
+    simp [mul_smul]
+
+local notation "g" => g f
+
+/-- Define `h : B ⟶ S(X')` to be `τ g τ⁻¹`
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/GroupTheory/EpiMono/Variant5117e856a9ca10756802c7b321319092d4bed9909b002dc84fd782f1fa434f16.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/GroupTheory/EpiMono/Variant5117e856a9ca10756802c7b321319092d4bed9909b002dc84fd782f1fa434f16.lean#L178).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5c5142d140008a2bbf508ec725e013533e44681c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

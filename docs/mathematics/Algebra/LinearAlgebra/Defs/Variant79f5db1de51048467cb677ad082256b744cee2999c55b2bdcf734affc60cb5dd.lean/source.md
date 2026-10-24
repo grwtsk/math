@@ -1,0 +1,123 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Defs.Variant79f5db1de51048467cb677ad082256b744cee2999c55b2bdcf734affc60cb5dd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `588e751a73c6098fea1da186c106906a6cca3286` · SHA-256 `4e5389c4b216e2ec98eb68e75ef0240728970ec84b35baaed4718588c67db70b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.Norm.Variant59365ae15613b3073ed34a7466a49304d085174e7192136ed69085388ad73d49","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"59365ae15613b3073ed34a7466a49304d085174e7192136ed69085388ad73d49","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.Norm.Variant59365ae15613b3073ed34a7466a49304d085174e7192136ed69085388ad73d49","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"59365ae15613b3073ed34a7466a49304d085174e7192136ed69085388ad73d49","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/Norm/Defs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Anne Baanen. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Anne Baanen
+-/
+module
+
+public import Mathlib.LinearAlgebra.Determinant
+
+/-!
+# Norm for (finite) ring extensions
+
+Suppose we have an `R`-algebra `S` with a finite basis. For each `s : S`,
+the determinant of the linear map given by multiplying by `s` gives information
+about the roots of the minimal polynomial of `s` over `R`.
+
+## Implementation notes
+
+Typically, the norm is defined specifically for finite field extensions.
+The current definition is as general as possible and the assumption that we have
+fields or that the extension is finite is added to the lemmas as needed.
+
+We only define the norm for left multiplication (`Algebra.leftMulMatrix`,
+i.e. `LinearMap.mulLeft`).
+For now, the definitions assume `S` is commutative, so the choice doesn't
+matter anyway.
+
+See also `Algebra.trace`, which is defined similarly as the trace of
+`Algebra.leftMulMatrix`.
+
+## References
+
+* https://en.wikipedia.org/wiki/Field_norm
+
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.Norm.Variant59365ae15613b3073ed34a7466a49304d085174e7192136ed69085388ad73d49
+
+@[expose] public section
+
+
+universe u v w
+
+variable {R S : Type*} [CommRing R] [Ring S]
+variable [Algebra R S]
+variable {K : Type*} [Field K]
+variable {ι : Type w}
+
+open Module
+
+open LinearMap
+
+open Matrix
+
+open scoped Matrix
+
+namespace Algebra
+
+variable (R)
+
+/-- The norm of an element `s` of an `R`-algebra is the determinant of `(*) s`. -/
+@[stacks 0BIF "Norm"]
+noncomputable def norm : S →* R :=
+  LinearMap.det.comp (lmul R S).toRingHom.toMonoidHom
+
+theorem norm_apply (x : S) : norm R x = LinearMap.det (lmul R S x) := rfl
+
+@[simp]
+theorem norm_self : Algebra.norm R = MonoidHom.id R := by
+  ext
+  simp [norm_apply]
+
+theorem norm_eq_one_of_not_exists_basis (h : ¬∃ s : Finset S, Nonempty (Basis s R S)) (x : S) :
+    norm R x = 1 := by rw [norm_apply, LinearMap.det]; split_ifs <;> trivial
+
+variable {R}
+
+theorem norm_eq_one_of_not_module_finite (h : ¬Module.Finite R S) (x : S) : norm R x = 1 := by
+  refine norm_eq_one_of_not_exists_basis _ (mt ?_ h) _
+  rintro ⟨s, ⟨b⟩⟩
+  exact Module.Finite.of_basis b
+
+-- Can't be a `simp` lemma because it depends on a choice of basis
+theorem norm_eq_matrix_det [Fintype ι] [DecidableEq ι] (b : Basis ι R S) (s : S) :
+    norm R s = Matrix.det (Algebra.leftMulMatrix b s) := by
+  rw [norm_apply, ← LinearMap.det_toMatrix b, ← toMatrix_lmul_eq]; rfl
+
+/-- If `x` is in the base ring `K`, then the norm is `x ^ [L : K]`. -/
+theorem norm_algebraMap_of_basis [Fintype ι] (b : Basis ι R S) (x : R) :
+    norm R (algebraMap R S x) = x ^ Fintype.card ι := by
+  have := Classical.decEq ι
+  rw [norm_apply, ← det_toMatrix b, lmul_algebraMap]
+  simp
+
+variable [Free R S]
+
+/-- If `x` is in the base ring `R` and `S` is free over `R`, then the norm is `x ^ [S : R]`.
+
+(If `S` is not finitely generated over `R`, then `norm = 1 = x ^ 0 = x ^ (finrank R S)`.)
+-/
+@[simp]
+protected theorem norm_algebraMap (x : R) : norm R (algebraMap R S x) = x ^ finrank R S := by
+  rw [norm_apply, lmul_algebraMap, det_lsmul]
+
+variable (R) in
+protected lemma norm_natCast (n : ℕ) : norm R (n : S) = n ^ Module.finrank R S := by
+  rw [← map_natCast (algebraMap R S), Algebra.norm_algebraMap]
+
+end Algebra
+```

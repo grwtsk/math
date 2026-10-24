@@ -1,0 +1,106 @@
+# independent_linear_mix_requires_independent_input
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:97e173ce-4f79-7f50-4f5c-505fff323ed1",
+  "kind": "theorem",
+  "lexical_name": "independent_linear_mix_requires_independent_input",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "independent-linear-mix-requires-independent-input--1ae1f7f81118742a8d1b912a",
+  "source": {
+    "blob": "64628d3e27638a1eec8c1abb350e8ed8e05938dd",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 74,
+    "line": 50,
+    "path": "GRWTSK/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1ae1f7f81118742a8d1b912a858e42aa79827a68f68d73a173677ab7430e91b0",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/LinearMap/FiniteMixingObstruction__SourceOccurrence25972bc8cedf16b58496cf3e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:97e173ce-4f79-7f50-4f5c-505fff323ed1`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 50–74.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem independent_linear_mix_requires_independent_input (input : ι → E) (target : ι → F)
+    (independent : LinearIndependent K target)
+    (mix : (ι → K) →ₗ[K] (ι → K)) (map : E →ₗ[K] F)
+    (realization : ∀ i, map (Fintype.linearCombination K input
+      (mix (Pi.single i (1 : K)))) = target i) : LinearIndependent K input := by
+  have factorization := synthesis_eq_of_basis_realization input target mix map realization
+  have targetInjective := independent.fintypeLinearCombination_injective
+  have mixInjective : Function.Injective mix := by
+    intro a b equal
+    apply targetInjective
+    rw [factorization]
+    simp only [LinearMap.comp_apply, equal]
+  have mixSurjective : Function.Surjective mix :=
+    LinearMap.injective_iff_surjective.mp mixInjective
+  apply linearIndependent_iff_injective_fintypeLinearCombination.mpr
+  intro a b equal
+  obtain ⟨u, hu⟩ := mixSurjective a
+  obtain ⟨v, hv⟩ := mixSurjective b
+  have liftedEqual : u = v := by
+    apply targetInjective
+    rw [factorization]
+    simp only [LinearMap.comp_apply, hu, hv, equal]
+  exact hu.symm.trans ((congrArg mix liftedEqual).trans hv)
+
+/-- A zero input coordinate obstructs simultaneous realization of all independent targets. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/LinearMap/FiniteMixingObstruction__SourceOccurrence25972bc8cedf16b58496cf3e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean#L50).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `64628d3e27638a1eec8c1abb350e8ed8e05938dd` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,95 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.NonUnitalNonAssocAlgebra.Variant25311e8f7b0abaee8cb19d169e4f148ef93fec9ac6c7dd3326245d5c211d0705
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5124c5b7cb232f4e24a4957cc719314eb4183fbd` · SHA-256 `25311e8f7b0abaee8cb19d169e4f148ef93fec9ac6c7dd3326245d5c211d0705`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2021 Oliver Nash. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Oliver Nash
+-/
+import Mathlib.Algebra.Algebra.NonUnitalHom
+import Mathlib.Algebra.Lie.Basic
+
+/-!
+# Lie algebras as non-unital, non-associative algebras
+
+The definition of Lie algebras uses the `Bracket` typeclass for multiplication whereas we have a
+separate `Mul` typeclass used for general algebras.
+
+It is useful to have a special typeclass for Lie algebras because:
+* it enables us to use the traditional notation `⁅x, y⁆` for the Lie multiplication,
+* associative algebras carry a natural Lie algebra structure via the ring commutator and so we
+  need them to carry both `Mul` and `Bracket` simultaneously,
+* more generally, Poisson algebras (not yet defined) need both typeclasses.
+
+However there are times when it is convenient to be able to regard a Lie algebra as a general
+algebra and we provide some basic definitions for doing so here.
+
+## Main definitions
+
+  * `CommutatorRing` turns a Lie ring into a `NonUnitalNonAssocRing` by turning its
+    `Bracket` (denoted `⁅ , ⁆`) into a `Mul` (denoted `*`).
+  * `LieHom.toNonUnitalAlgHom`
+
+## Tags
+
+lie algebra, non-unital, non-associative
+-/
+
+
+universe u v w
+
+variable (R : Type u) (L : Type v) [CommRing R] [LieRing L] [LieAlgebra R L]
+
+/-- Type synonym for turning a `LieRing` into a `NonUnitalNonAssocRing`.
+
+A `LieRing` can be regarded as a `NonUnitalNonAssocRing` by turning its
+`Bracket` (denoted `⁅, ⁆`) into a `Mul` (denoted `*`). -/
+def CommutatorRing (L : Type v) : Type v := L
+
+instance : NonUnitalNonAssocRing (CommutatorRing L) := LieRing.toNonUnitalNonAssocRing L
+
+namespace LieAlgebra
+
+instance (L : Type v) [Nonempty L] : Nonempty (CommutatorRing L) := ‹Nonempty L›
+
+instance (L : Type v) [Inhabited L] : Inhabited (CommutatorRing L) := ‹Inhabited L›
+
+instance : LieRing (CommutatorRing L) := show LieRing L by infer_instance
+
+instance : LieAlgebra R (CommutatorRing L) := show LieAlgebra R L by infer_instance
+
+/-- Regarding the `LieRing` of a `LieAlgebra` as a `NonUnitalNonAssocRing`, we can
+reinterpret the `smul_lie` law as an `IsScalarTower`. -/
+instance isScalarTower : IsScalarTower R (CommutatorRing L) (CommutatorRing L) := ⟨smul_lie⟩
+
+/-- Regarding the `LieRing` of a `LieAlgebra` as a `NonUnitalNonAssocRing`, we can
+reinterpret the `lie_smul` law as an `SMulCommClass`. -/
+instance smulCommClass : SMulCommClass R (CommutatorRing L) (CommutatorRing L) :=
+  ⟨fun t x y => (lie_smul t x y).symm⟩
+
+end LieAlgebra
+
+namespace LieHom
+
+variable {R L}
+variable {L₂ : Type w} [LieRing L₂] [LieAlgebra R L₂]
+
+/-- Regarding the `LieRing` of a `LieAlgebra` as a `NonUnitalNonAssocRing`, we can
+regard a `LieHom` as a `NonUnitalAlgHom`. -/
+@[simps]
+def toNonUnitalAlgHom (f : L →ₗ⁅R⁆ L₂) : CommutatorRing L →ₙₐ[R] CommutatorRing L₂ :=
+  { f with
+    toFun := f
+    map_zero' := f.map_zero
+    map_mul' := f.map_lie }
+
+theorem toNonUnitalAlgHom_injective :
+    Function.Injective (toNonUnitalAlgHom : _ → CommutatorRing L →ₙₐ[R] CommutatorRing L₂) :=
+  fun _ _ h => ext <| NonUnitalAlgHom.congr_fun h
+
+end LieHom
+```

@@ -1,0 +1,160 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Hom.Variant809f5bbd11f4c3830103c55f676e8b85e749e827b20f1c16f1426fa606b96130
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a31ffb39b6a357e3524dccd55ce06085193ac6a8` · SHA-256 `42ecf2c23c14bafc1bdd02168412c6501e4abb8d21fcb2e40f99de7c506c2755`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.SmulApply.Variantf3887a2fce57fef76dd811eeedbe55dfa4864f882bad4239a3c873bf79ef8985","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f3887a2fce57fef76dd811eeedbe55dfa4864f882bad4239a3c873bf79ef8985","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.SmulApply.Variantf3887a2fce57fef76dd811eeedbe55dfa4864f882bad4239a3c873bf79ef8985","mathematical_subject":"Algebra.Groups","original_sha256":"f3887a2fce57fef76dd811eeedbe55dfa4864f882bad4239a3c873bf79ef8985","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Module/Hom.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+import Mathlib.Algebra.Group.Hom.Instances
+import Mathlib.Algebra.GroupWithZero.Action.End
+import Mathlib.Algebra.Module.End
+import Mathlib.Algebra.Ring.Opposite
+import Mathlib.GroupTheory.GroupAction.DomAct.Basic
+
+/-!
+# Bundled Hom instances for module and multiplicative actions
+
+This file defines instances for `Module`, `MulAction` and related structures on bundled `Hom` types.
+
+These are analogous to the instances in `Algebra.Module.Pi`, but for bundled instead of unbundled
+functions.
+
+We also define bundled versions of `(c • ·)` and `(· • ·)` as `AddMonoidHom.smulLeft` and
+`AddMonoidHom.smul`, respectively.
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.SmulApply.Variantf3887a2fce57fef76dd811eeedbe55dfa4864f882bad4239a3c873bf79ef8985
+
+variable {R S M A B : Type*}
+
+/-! ### Instances for `AddMonoidHom` -/
+
+namespace AddMonoidHom
+
+section
+
+instance instDistribSMul [AddZeroClass A] [AddCommMonoid B] [DistribSMul M B] :
+    DistribSMul M (A →+ B) where
+  smul_add _ _ _ := ext fun _ => smul_add _ _ _
+
+variable [Monoid R] [Monoid S] [AddMonoid A] [AddCommMonoid B]
+variable [DistribMulAction R B] [DistribMulAction S B]
+
+instance instDistribMulAction : DistribMulAction R (A →+ B) where
+  smul_zero := smul_zero
+  smul_add := smul_add
+  one_smul _ := ext fun _ => one_smul _ _
+  mul_smul _ _ _ := ext fun _ => mul_smul _ _ _
+
+@[simp] theorem coe_smul (r : R) (f : A →+ B) : ⇑(r • f) = r • ⇑f := rfl
+
+theorem smul_apply (r : R) (f : A →+ B) (x : A) : (r • f) x = r • f x :=
+  rfl
+
+instance smulCommClass [SMulCommClass R S B] : SMulCommClass R S (A →+ B) :=
+  ⟨fun _ _ _ => ext fun _ => smul_comm _ _ _⟩
+
+instance isScalarTower [SMul R S] [IsScalarTower R S B] : IsScalarTower R S (A →+ B) :=
+  ⟨fun _ _ _ => ext fun _ => smul_assoc _ _ _⟩
+
+instance isCentralScalar [DistribMulAction Rᵐᵒᵖ B] [IsCentralScalar R B] :
+    IsCentralScalar R (A →+ B) :=
+  ⟨fun _ _ => ext fun _ => op_smul_eq_smul _ _⟩
+
+end
+
+instance instModule [Semiring R] [AddMonoid A] [AddCommMonoid B] [Module R B] : Module R (A →+ B) :=
+  { add_smul := fun _ _ _=> ext fun _ => add_smul _ _ _
+    zero_smul := fun _ => ext fun _ => zero_smul _ _ }
+
+instance instDomMulActModule
+    {S M M₂ : Type*} [Semiring S] [AddCommMonoid M] [AddCommMonoid M₂] [Module S M] :
+    Module Sᵈᵐᵃ (M →+ M₂) where
+  add_smul s s' f := AddMonoidHom.ext fun m ↦ by
+    simp_rw [AddMonoidHom.add_apply, DomMulAct.smul_addMonoidHom_apply, ← map_add, ← add_smul]; rfl
+  zero_smul _ := AddMonoidHom.ext fun _ ↦ by
+    rw [DomMulAct.smul_addMonoidHom_apply]
+    -- TODO there should be a simp lemma for `DomMulAct.mk.symm 0`
+    simp [DomMulAct.mk, MulOpposite.opEquiv]
+
+end AddMonoidHom
+
+/-!
+### Instances for `AddMonoid.End`
+
+These are direct copies of the instances above.
+-/
+
+namespace AddMonoid.End
+
+section
+
+variable [Monoid R] [Monoid S] [AddCommMonoid A]
+
+instance instDistribSMul [DistribSMul M A] : DistribSMul M (AddMonoid.End A) :=
+  AddMonoidHom.instDistribSMul
+
+variable [DistribMulAction R A] [DistribMulAction S A]
+
+instance instDistribMulAction : DistribMulAction R (AddMonoid.End A) :=
+  AddMonoidHom.instDistribMulAction
+
+@[simp] theorem coe_smul (r : R) (f : AddMonoid.End A) : ⇑(r • f) = r • ⇑f := rfl
+
+theorem smul_apply (r : R) (f : AddMonoid.End A) (x : A) : (r • f) x = r • f x :=
+  rfl
+
+instance smulCommClass [SMulCommClass R S A] : SMulCommClass R S (AddMonoid.End A) :=
+  AddMonoidHom.smulCommClass
+
+instance isScalarTower [SMul R S] [IsScalarTower R S A] : IsScalarTower R S (AddMonoid.End A) :=
+  AddMonoidHom.isScalarTower
+
+instance isCentralScalar [DistribMulAction Rᵐᵒᵖ A] [IsCentralScalar R A] :
+    IsCentralScalar R (AddMonoid.End A) :=
+  AddMonoidHom.isCentralScalar
+
+end
+
+instance instModule [Semiring R] [AddCommMonoid A] [Module R A] : Module R (AddMonoid.End A) :=
+  AddMonoidHom.instModule
+
+/-- The tautological action by `AddMonoid.End α` on `α`.
+
+This generalizes `AddMonoid.End.applyDistribMulAction`. -/
+instance applyModule [AddCommMonoid A] : Module (AddMonoid.End A) A where
+  add_smul _ _ _ := rfl
+  zero_smul _ := rfl
+
+end AddMonoid.End
+
+/-! ### Miscellaneous morphisms -/
+
+namespace AddMonoidHom
+
+/-- Scalar multiplication on the left as an additive monoid homomorphism. -/
+@[simps! -fullyApplied]
+protected def smulLeft [Monoid M] [AddMonoid A] [DistribMulAction M A] (c : M) : A →+ A :=
+  DistribMulAction.toAddMonoidHom _ c
+
+/-- Scalar multiplication as a biadditive monoid homomorphism. We need `M` to be commutative
+to have addition on `M →+ M`. -/
+protected def smul [Semiring R] [AddCommMonoid M] [Module R M] : R →+ M →+ M :=
+  (Module.toAddMonoidEnd R M).toAddMonoidHom
+
+@[simp] theorem coe_smul' [Semiring R] [AddCommMonoid M] [Module R M] :
+    ⇑(.smul : R →+ M →+ M) = AddMonoidHom.smulLeft := rfl
+
+end AddMonoidHom
+```

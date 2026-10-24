@@ -1,0 +1,105 @@
+# PolynomialEncodingBridge
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:975726a5a3c9f57e4ef70100c28eae690963ea12bd9a06a3e1e83eb581c11abd",
+  "kind": "structure",
+  "lexical_name": "PolynomialEncodingBridge",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "polynomialencodingbridge--709261e3460b3c652896c23d",
+  "source": {
+    "blob": "c5e9732837ebd2f58d7b32bd3c390bb3515d6dfe",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 80,
+    "line": 57,
+    "path": "GRWTSK/Algebra/CommutativeAlgebra/TaoKakeyaSmoothing/Variantc2679e0cd18c167afdd2c70056614ebf5d4b3be2851e58f55d4323924d806ee8.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:709261e3460b3c652896c23db6331649d238f5b36b560b544fa19768bf868e39",
+  "verification": {
+    "reference": "docs/verification/Algebra/CommutativeAlgebra/TaoKakeyaSmoothing/Variantc2679e0cd18c167afdd2c70056614ebf5d4b3be2851e58f55d4323924d806ee8.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:975726a5a3c9f57e4ef70100c28eae690963ea12bd9a06a3e1e83eb581c11abd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 57–80.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure PolynomialEncodingBridge where
+  bitComplexityToCriticalNormPolynomial : Prop
+  bitComplexityToCriticalNormPolynomial_certified :
+    bitComplexityToCriticalNormPolynomial
+  volumeToRoutingMovesPolynomial : Prop
+  volumeToRoutingMovesPolynomial_certified :
+    volumeToRoutingMovesPolynomial
+  preservesVerifierSemantics : Prop
+  preservesVerifierSemantics_certified : preservesVerifierSemantics
+  sourceLabel : String
+
+/--
+Tao-Kakeya non-sticky smoothing target.
+
+The intended composition is:
+
+* Tao-style critical control rules out blowup/glitch behavior for the encoded
+  recursive flow;
+* effective 3D Kakeya workspace control supplies routing room;
+* the polynomial encoding bridge turns those controls into polynomial move
+  bounds for recursive BinaryMatrixStream smoothing.
+
+This is a theorem target, not a proof of `P = NP`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/CommutativeAlgebra/TaoKakeyaSmoothing/Variantc2679e0cd18c167afdd2c70056614ebf5d4b3be2851e58f55d4323924d806ee8.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/CommutativeAlgebra/TaoKakeyaSmoothing/Variantc2679e0cd18c167afdd2c70056614ebf5d4b3be2851e58f55d4323924d806ee8.lean#L57).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c5e9732837ebd2f58d7b32bd3c390bb3515d6dfe` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

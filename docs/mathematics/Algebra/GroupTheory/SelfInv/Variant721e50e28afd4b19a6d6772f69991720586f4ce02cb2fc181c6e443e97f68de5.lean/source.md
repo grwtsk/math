@@ -1,0 +1,134 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.SelfInv.Variant721e50e28afd4b19a6d6772f69991720586f4ce02cb2fc181c6e443e97f68de5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1bbefa2b00ed0253d154bfdee21f906c5254fefc` · SHA-256 `0a6ebc06c8a777056304751aa5403d1566bb055fb03d850d2c59e68347ed858d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.IsSelfInvIffForallInvMemIff.Variant5d741aebaf809bff5e6b7f8fc665543d3c307ee05b0c436c1eb98f757c7b2320","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5d741aebaf809bff5e6b7f8fc665543d3c307ee05b0c436c1eb98f757c7b2320","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.IsSelfInvIffForallInvMemIff.Variant5d741aebaf809bff5e6b7f8fc665543d3c307ee05b0c436c1eb98f757c7b2320","mathematical_subject":"Algebra.Groups","original_sha256":"5d741aebaf809bff5e6b7f8fc665543d3c307ee05b0c436c1eb98f757c7b2320","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Group/Pointwise/Set/SelfInv.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Justus Springer. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Justus Springer
+-/
+module
+
+public import Mathlib.Algebra.Group.SelfInv
+public import Mathlib.Algebra.Group.Pointwise.Set.Lattice
+
+/-!
+# Self-inverse sets
+
+This file specialises `IsSelfInv` to sets equipped with the pointwise inversion.
+
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.IsSelfInvIffForallInvMemIff.Variant5d741aebaf809bff5e6b7f8fc665543d3c307ee05b0c436c1eb98f757c7b2320
+
+public section
+
+open Set
+open scoped Pointwise
+
+variable {α β : Type*}
+
+section Inv
+
+variable [Inv α] [Inv β] {s t : Set α}
+
+@[to_additive]
+lemma isSelfInv_iff_forall_inv_mem_iff : IsSelfInv s ↔ ∀ x, x⁻¹ ∈ s ↔ x ∈ s := by
+  simp only [isSelfInv_iff, Set.ext_iff, mem_inv]
+
+@[to_additive (attr := simp)]
+protected lemma IsSelfInv.empty : IsSelfInv (∅ : Set α) := inv_empty
+
+@[to_additive (attr := simp)]
+protected lemma IsSelfInv.univ : IsSelfInv (univ : Set α) := inv_univ
+
+@[to_additive]
+protected lemma IsSelfInv.inter (hs : IsSelfInv s) (ht : IsSelfInv t) :
+    IsSelfInv (s ∩ t) := by
+  rw [isSelfInv_iff, inter_inv, hs, ht]
+
+@[to_additive]
+protected lemma IsSelfInv.union (hs : IsSelfInv s) (ht : IsSelfInv t) :
+    IsSelfInv (s ∪ t) := by
+  rw [isSelfInv_iff, union_inv, hs, ht]
+
+@[to_additive]
+protected lemma IsSelfInv.iUnion {ι : Sort*} {s : ι → Set α}
+    (h : ∀ i, IsSelfInv (s i)) : IsSelfInv (⋃ i, s i) := by
+  simpa only [isSelfInv_iff, iUnion_inv] using iUnion_congr h
+
+@[to_additive]
+protected lemma IsSelfInv.iInter {ι : Sort*} {s : ι → Set α}
+    (h : ∀ i, IsSelfInv (s i)) : IsSelfInv (⋂ i, s i) := by
+  simpa only [isSelfInv_iff, iInter_inv] using iInter_congr h
+
+@[to_additive]
+protected lemma IsSelfInv.sUnion {S : Set (Set α)} (h : ∀ s ∈ S, IsSelfInv s) :
+    IsSelfInv (⋃₀ S) :=
+  sUnion_eq_iUnion ▸ .iUnion fun s ↦ h s s.2
+
+@[to_additive]
+protected lemma IsSelfInv.sInter {S : Set (Set α)} (h : ∀ s ∈ S, IsSelfInv s) :
+    IsSelfInv (⋂₀ S) :=
+  sInter_eq_iInter ▸ .iInter fun s ↦ h s s.2
+
+@[to_additive]
+protected lemma IsSelfInv.prod {t : Set β} (hs : IsSelfInv s) (ht : IsSelfInv t) :
+    IsSelfInv (s ×ˢ t) := by
+  rw [isSelfInv_iff, inv_prod, hs, ht]
+
+@[to_additive (attr := simp)]
+lemma isSelfInv_compl_iff : IsSelfInv sᶜ ↔ IsSelfInv s := by
+  simp only [isSelfInv_iff, compl_inv, compl_inj_iff]
+
+@[to_additive]
+protected alias ⟨IsSelfInv.of_compl, IsSelfInv.compl⟩ := isSelfInv_compl_iff
+
+end Inv
+
+section InvolutiveInv
+
+variable [InvolutiveInv α] {s t : Set α}
+
+@[to_additive (attr := simp)]
+lemma isSelfInv_singleton_iff {a : α} : IsSelfInv ({a} : Set α) ↔ IsSelfInv a := by
+  rw [isSelfInv_iff, inv_singleton, isSelfInv_iff, singleton_eq_singleton_iff]
+
+@[to_additive]
+lemma isSelfInv_iff_subset_inv : IsSelfInv s ↔ s ⊆ s⁻¹ :=
+  inv_eq_self_iff_inv_subset.trans inv_subset
+
+@[to_additive]
+protected alias ⟨IsSelfInv.subset_inv, IsSelfInv.of_subset_inv⟩ := isSelfInv_iff_subset_inv
+
+@[to_additive]
+lemma isSelfInv_iff_inv_subset : IsSelfInv s ↔ s⁻¹ ⊆ s :=
+  inv_eq_self_iff_inv_subset
+
+@[to_additive]
+protected alias ⟨IsSelfInv.inv_subset, IsSelfInv.of_inv_subset⟩ := isSelfInv_iff_inv_subset
+
+@[to_additive]
+lemma isSelfInv_iff_forall_inv_mem : IsSelfInv s ↔ ∀ ⦃x⦄, x ∈ s → x⁻¹ ∈ s := by
+  rw [isSelfInv_iff_forall_inv_mem_iff]
+  exact ⟨fun h x hx ↦ (h x).2 hx, fun h x ↦ ⟨fun hx ↦ inv_inv x ▸ h hx, @h x⟩⟩
+
+@[to_additive]
+protected lemma IsSelfInv.inv_mem (h : IsSelfInv s) {x : α} (hx : x ∈ s) : x⁻¹ ∈ s :=
+  isSelfInv_iff_forall_inv_mem.mp h hx
+
+@[to_additive]
+protected lemma IsSelfInv.diff (hs : IsSelfInv s) (ht : IsSelfInv t) : IsSelfInv (s \ t) := by
+  simpa only [sdiff_eq] using hs.inter ht.compl
+
+end InvolutiveInv
+```

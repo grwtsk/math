@@ -1,0 +1,120 @@
+# Verification target: GRWTSK.Algebra.LinearAlgebra.Projection.Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2b5d3bccabca45bd6a4d9a3a9a4fcbfd01ce2039",
+  "lexical_observation_count": 58,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/index.md) · [Full source](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2b5d3bccabca45bd6a4d9a3a9a4fcbfd01ce2039`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.LinearAlgebra.Quotient.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Prod` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ker_id_sub_eq_of_proj](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ker-id-sub-eq-of-proj--57617c826653935f34365b4d.md) | 39 | `result-track:57617c826653935f34365b4d637d55d72efe727d4402e838b4b03689a1cea49b` |
+| 2 | `theorem` | [range_eq_of_proj](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/range-eq-of-proj--f2ba6b6f9b725fc4677fcabf.md) | 45 | `result-track:f2ba6b6f9b725fc4677fcabff0fadc3f287383b7d0847163c841fd1bda7a9f0e` |
+| 3 | `theorem` | [isCompl_of_proj](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/iscompl-of-proj--ced7f8249ffb73e2cba3cfd8.md) | 48 | `result-track:ced7f8249ffb73e2cba3cfd8e052152d562af049ea1d1a1f54a1e1f5ac3b7ef6` |
+| 4 | `def` | [quotientEquivOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/quotientequivofiscompl--e21edaeff7f671f41927c5f7.md) | 67 | `declaration-track:e21edaeff7f671f41927c5f7eaf94661ccc1682e1290a61cd5446564dfed7e76` |
+| 5 | `theorem` | [quotientEquivOfIsCompl_symm_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/quotientequivofiscompl-symm-apply--89bb02f8df84074a4b69094e.md) | 74 | `result-track:89bb02f8df84074a4b69094ebe617cdf2c958190c76b9f544e1c27c8f127fe55` |
+| 6 | `theorem` | [quotientEquivOfIsCompl_apply_mk_coe](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/quotientequivofiscompl-apply-mk-coe--130837eedf43390ec85bc0f8.md) | 79 | `result-track:130837eedf43390ec85bc0f8844fed7cd2e9a1ad427c8025baec48251272680b` |
+| 7 | `theorem` | [mk_quotientEquivOfIsCompl_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/mk-quotientequivofiscompl-apply--f6fa32509668b83cf75d7e08.md) | 84 | `result-track:f6fa32509668b83cf75d7e08d988a1931b8f453136f958ca881c81b5bdaf86be` |
+| 8 | `def` | [prodEquivOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/prodequivofiscompl--6f2c50b3fd571cdb2b283ef8.md) | 90 | `declaration-track:6f2c50b3fd571cdb2b283ef8dd2b7a17cb733f99378032690d14a3a9998efce8` |
+| 9 | `theorem` | [coe_prodEquivOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/coe-prodequivofiscompl--dbdeaec6323d3986f1102580.md) | 99 | `result-track:dbdeaec6323d3986f11025805330c945df67355a0f2bbdf57c47cd5222928583` |
+| 10 | `theorem` | [coe_prodEquivOfIsCompl'](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/coe-prodequivofiscompl--cc6f1fabf9e5d995a58f5fe0.md) | 103 | `result-track:cc6f1fabf9e5d995a58f5fe070e57e3be4fdaeeb996447bcca89ee75e2ab4ea4` |
+| 11 | `theorem` | [prodEquivOfIsCompl_symm_apply_left](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/prodequivofiscompl-symm-apply-left--e0fda3da3c157f76e18605ef.md) | 107 | `result-track:e0fda3da3c157f76e18605ef4eede664a8c115c6b02ccf85611e28482fee595c` |
+| 12 | `theorem` | [prodEquivOfIsCompl_symm_apply_right](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/prodequivofiscompl-symm-apply-right--0498940985aa1a651d27462c.md) | 112 | `result-track:0498940985aa1a651d27462c4749dc876cc9b4afd6279229413859eaf52110b0` |
+| 13 | `theorem` | [prodEquivOfIsCompl_symm_apply_fst_eq_zero](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/prodequivofiscompl-symm-apply-fst-eq-zero--3ba0e95e7a97b00e28ee6bc3.md) | 117 | `result-track:3ba0e95e7a97b00e28ee6bc3a025de8e6f3b1b3e2ad70edc669c1e1278b08fdd` |
+| 14 | `theorem` | [prodEquivOfIsCompl_symm_apply_snd_eq_zero](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/prodequivofiscompl-symm-apply-snd-eq-zero--aa95d6767af6168cf61f99d9.md) | 124 | `result-track:aa95d6767af6168cf61f99d94576c4cbb4fa3aaacdba5f44ff226810908ad50c` |
+| 15 | `theorem` | [prodComm_trans_prodEquivOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/prodcomm-trans-prodequivofiscompl--bfea05529c9dc84371cc49a5.md) | 131 | `result-track:bfea05529c9dc84371cc49a57a9baa28088e2d7511188d27696a2a5cf3da68ff` |
+| 16 | `def` | [linearProjOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl--568f7eb86ebaa54962782311.md) | 138 | `declaration-track:568f7eb86ebaa5496278231180f953531ecac6b12cda02462491ef1cee935972` |
+| 17 | `theorem` | [linearProjOfIsCompl_apply_left](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-apply-left--7be125c3488bb5cc94d2fd6e.md) | 144 | `result-track:7be125c3488bb5cc94d2fd6e199d268176da665320b374141090cd58a2f6d2ea` |
+| 18 | `theorem` | [linearProjOfIsCompl_range](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-range--985c6aef7dd213293b3d9010.md) | 148 | `result-track:985c6aef7dd213293b3d901074e78c827fd7b52286f5374a83aee82faacd92e7` |
+| 19 | `theorem` | [linearProjOfIsCompl_surjective](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-surjective--0d724db8697ace82df7bfac2.md) | 151 | `result-track:0d724db8697ace82df7bfac21bdce34992bb306b9dcb649dd10913261a239aa6` |
+| 20 | `theorem` | [linearProjOfIsCompl_apply_eq_zero_iff](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-apply-eq-zero-iff--347e9fe2373abf92db6eef5a.md) | 156 | `result-track:347e9fe2373abf92db6eef5a3610abae263d3fe3625ec7e56875f113685aa389` |
+| 21 | `theorem` | [linearProjOfIsCompl_apply_right'](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-apply-right--24a721525e0389076d1945fd.md) | 159 | `result-track:24a721525e0389076d1945fd93a24ea8c7a0208305cd8eb01f127ee8c5eabda4` |
+| 22 | `theorem` | [linearProjOfIsCompl_apply_right](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-apply-right--cea4f9ed6a3a0e0f2bb2fcbb.md) | 164 | `result-track:cea4f9ed6a3a0e0f2bb2fcbb844821025bd3928d8aef07e57544e72f01584b3d` |
+| 23 | `theorem` | [linearProjOfIsCompl_ker](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-ker--eb9f7625850e2bbc99e1877b.md) | 169 | `result-track:eb9f7625850e2bbc99e1877bf0e706ddaaf0247b09ca9cbb5b47af5117e74233` |
+| 24 | `theorem` | [linearProjOfIsCompl_comp_subtype](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-comp-subtype--ea2b830b441c5b667d19ea95.md) | 172 | `result-track:ea2b830b441c5b667d19ea95a3fcc15775bfb1160d30ad4e1d95a0d5612f4377` |
+| 25 | `theorem` | [linearProjOfIsCompl_idempotent](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-idempotent--656f97eb156c392e2c0f55ac.md) | 176 | `result-track:656f97eb156c392e2c0f55ac3a1d635815afd852ac971d2434ee7e67eb149261` |
+| 26 | `theorem` | [existsUnique_add_of_isCompl_prod](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/existsunique-add-of-iscompl-prod--eda4aba5858c829885838a25.md) | 180 | `result-track:eda4aba5858c829885838a25b3f96f907ab74a4b36b01d6c6a8b8ae4e6a094e2` |
+| 27 | `theorem` | [existsUnique_add_of_isCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/existsunique-add-of-iscompl--1f4bfa6782f33aeb02bfeb2b.md) | 184 | `result-track:1f4bfa6782f33aeb02bfeb2ba9fea33d35668c3085d22ff9af0d061a306ef631` |
+| 28 | `theorem` | [linear_proj_add_linearProjOfIsCompl_eq_self](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linear-proj-add-linearprojofiscompl-eq-self--fdab8ba5ee582746f7cde636.md) | 189 | `result-track:fdab8ba5ee582746f7cde636ad3bd3b526b4b70906b3c3ab6145520407b18593` |
+| 29 | `def` | [linearProjOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl--be66d19fae683dae333e3de9.md) | 205 | `declaration-track:be66d19fae683dae333e3de9be91b4eb7888224e1144454ae14bc4a185dbe38f` |
+| 30 | `theorem` | [linearProjOfIsCompl_apply_left](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-apply-left--52cb9325814ab2b95ca00597.md) | 211 | `result-track:52cb9325814ab2b95ca005975f8e533dd44ac753b68ccf12f2eb9c24324ceb75` |
+| 31 | `def` | [ofIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl--9b0a69ee55fb526e36ca8fbd.md) | 223 | `declaration-track:9b0a69ee55fb526e36ca8fbd50539e5385c6c2e6c64d2dce1ec1f19931bb5083` |
+| 32 | `theorem` | [ofIsCompl_left_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-left-apply--3ba0d2eacc149d7abfa43dce.md) | 229 | `result-track:3ba0d2eacc149d7abfa43dce91445bbe1774e3385409797a7e6ba5f0d5610de3` |
+| 33 | `theorem` | [ofIsCompl_right_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-right-apply--ebc7cf40f6cf31f33847d9d1.md) | 233 | `result-track:ebc7cf40f6cf31f33847d9d19f472d9f37cbc65c9c93db18515271c7c7322483` |
+| 34 | `theorem` | [ofIsCompl_eq](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-eq--a74783094033416edb054607.md) | 236 | `result-track:a74783094033416edb054607097f0908af4d28b54c1f622c0f0af6fc9187390f` |
+| 35 | `theorem` | [ofIsCompl_eq'](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-eq--d7544f3545b503be4e14b916.md) | 242 | `result-track:d7544f3545b503be4e14b9165753d6520ddb397154808b13cfd6115321459c33` |
+| 36 | `theorem` | [ofIsCompl_zero](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-zero--e8d7d9ea8b0356b139af8517.md) | 247 | `result-track:e8d7d9ea8b0356b139af85173da400b6e998954b0d30beda25054c1d4d45d481` |
+| 37 | `theorem` | [ofIsCompl_add](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-add--c35d81352a351e371562a747.md) | 251 | `result-track:c35d81352a351e371562a747fc86a116e1cd01a741741d7fe7fb2e58002b5e0f` |
+| 38 | `theorem` | [ofIsCompl_smul](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscompl-smul--a1cf2a6a804e4d18fc06de8e.md) | 256 | `result-track:a1cf2a6a804e4d18fc06de8ea374343bf04c1075bef3835a0d6b47ab2555e28e` |
+| 39 | `def` | [ofIsComplProd](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscomplprod--b9a7bcde7e3e09927c58c94d.md) | 266 | `declaration-track:b9a7bcde7e3e09927c58c94d34cd5f80d7b6031d9fc16ecaa2eb365a9120098d` |
+| 40 | `theorem` | [ofIsComplProd_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscomplprod-apply--80aef5b81bb58f5e4a65ff6c.md) | 273 | `result-track:80aef5b81bb58f5e4a65ff6cce689a484d4494f0351c844d9b88f05299a85fb0` |
+| 41 | `def` | [ofIsComplProdEquiv](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/ofiscomplprodequiv--ce91813c8a68eb2f7d088aea.md) | 278 | `declaration-track:ce91813c8a68eb2f7d088aea3f1dbf163c33b9ac3e38965730e0e44b1f4ae593` |
+| 42 | `theorem` | [linearProjOfIsCompl_of_proj](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/linearprojofiscompl-of-proj--da0ac78bfb450458f0faf20a.md) | 295 | `result-track:da0ac78bfb450458f0faf20ac8799e9ea739a603136b08215a3d3f31e50689af` |
+| 43 | `def` | [equivProdOfSurjectiveOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/equivprodofsurjectiveofiscompl--80ff58c49a29c7c343c780d0.md) | 305 | `declaration-track:80ff58c49a29c7c343c780d0629d76c342708ab029b368f6c999ac2078e15f35` |
+| 44 | `theorem` | [coe_equivProdOfSurjectiveOfIsCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/coe-equivprodofsurjectiveofiscompl--058d1e02b680b60266600bf7.md) | 313 | `result-track:058d1e02b680b60266600bf7f789d54d663bdeb8d4cbd2e98fdab1b237644c6c` |
+| 45 | `theorem` | [equivProdOfSurjectiveOfIsCompl_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/equivprodofsurjectiveofiscompl-apply--bd64bba122e5da442863b785.md) | 318 | `result-track:bd64bba122e5da442863b785e48eb502b06253722db90bc81e3fcc9c52c1cf49` |
+| 46 | `def` | [isComplEquivProj](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/iscomplequivproj--6dc0ff90375ab59b447dec2d.md) | 330 | `declaration-track:6dc0ff90375ab59b447dec2dbf8fbcc1b5f1cc4a2438e62c552dc63b2d5645c3` |
+| 47 | `theorem` | [coe_isComplEquivProj_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/coe-iscomplequivproj-apply--3ea11aee21722c4fe8fce994.md) | 337 | `result-track:3ea11aee21722c4fe8fce99436f6d3fa038babdc4fae74e8b1dcd3162cda5bdf` |
+| 48 | `theorem` | [coe_isComplEquivProj_symm_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/coe-iscomplequivproj-symm-apply--f5ad285437037ac94623bf0a.md) | 341 | `result-track:f5ad285437037ac94623bf0a5bcf9e84a4436a91e906427c18a95ef84eae8db1` |
+| 49 | `def` | [isIdempotentElemEquiv](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/isidempotentelemequiv--79ba783977f2ce5fa1cdfbd4.md) | 346 | `declaration-track:79ba783977f2ce5fa1cdfbd4dce7a84ff2908abcd2bd2d2aebcdf9676cebea54` |
+| 50 | `structure` | [IsProj](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/isproj--7e8646130c032579b0706e1c.md) | 371 | `declaration-track:7e8646130c032579b0706e1c08e35b7a994c5c5e9d03586dbbeb98a86469b7fd` |
+| 51 | `theorem` | [isProj_iff_isIdempotentElem](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/isproj-iff-isidempotentelem--a105a5ad02983bfb03224298.md) | 375 | `result-track:a105a5ad02983bfb03224298fbc10b453b257c484d4a4ec4d7e2462095fab536` |
+| 52 | `def` | [codRestrict](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/codrestrict--88d8b016a2e5d2bff8415d24.md) | 399 | `declaration-track:88d8b016a2e5d2bff8415d24f7528a8053ec4902d667ccdbc10edbe4d85b7150` |
+| 53 | `theorem` | [codRestrict_apply](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/codrestrict-apply--1b22865578c020f5bbf83bef.md) | 403 | `result-track:1b22865578c020f5bbf83bef9b5fb295d1c7d3c945a66b8717c74a5c728b28f6` |
+| 54 | `theorem` | [codRestrict_apply_cod](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/codrestrict-apply-cod--bbdfb41b33efc2d0b1fc5bc9.md) | 407 | `result-track:bbdfb41b33efc2d0b1fc5bc999bb4da0837c55f0643a00f85da0a9e6592bb776` |
+| 55 | `theorem` | [codRestrict_ker](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/codrestrict-ker--b96327adecee629ea0e8d9fc.md) | 412 | `result-track:b96327adecee629ea0e8d9fc97d7d40de2ce7f800296f91e1c1f459159437c18` |
+| 56 | `theorem` | [isCompl](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/iscompl--4516e09a9044cf47161aff9f.md) | 415 | `result-track:4516e09a9044cf47161aff9f09156494c891e778c59b98e2bb2cd946b6e04c46` |
+| 57 | `theorem` | [eq_conj_prod_map'](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/eq-conj-prod-map--8359b27645e157fb5a43ab06.md) | 419 | `result-track:8359b27645e157fb5a43ab068dfe96a5c39b9ff6ed2d745bea2e76f7d25b3cba` |
+| 58 | `theorem` | [IsProj.eq_conj_prodMap](../../../../../mathematics/Algebra/LinearAlgebra/Projection/Variantea210ed98daa9359c8879bc8b4eee299f65af98d9275517dcc45b44d0634e672.lean/declarations/isproj-eq-conj-prodmap--ad1f0742e1e14db97e6a8798.md) | 441 | `result-track:ad1f0742e1e14db97e6a879851d64178196b402920d614ba93363a2425e02bff` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

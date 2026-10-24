@@ -1,0 +1,158 @@
+# square_map_not_real_axis_reflecting
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "73706f8bff7b49ec8a97e889604669a5f5577171",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 150,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/cb/cb506b9eaf7450bd8e2ff1a4ce5a9e40140c0177e27dc0b415a78b702d886e96.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:cc8f2679-a401-1ff3-d0f3-1d777ba9f602",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:5f6c8eb2-90e7-87c8-9231-6397559359de",
+  "kind": "theorem",
+  "lexical_name": "square_map_not_real_axis_reflecting",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "square-map-not-real-axis-reflecting--722c8add340494b38b13cb14",
+  "source": {
+    "blob": "73706f8bff7b49ec8a97e889604669a5f5577171",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 214,
+    "line": 150,
+    "path": "GRWTSK/Algebra/LinearAlgebra/SourceRecognitionGuardAttempt03/Variantcb506b9eaf7450bd8e2ff1a4ce5a9e40140c0177e27dc0b415a78b702d886e96.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:722c8add340494b38b13cb144b0e2a291e0245eed060606d913a8b3f88c1aac3",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/SourceRecognitionGuardAttempt03/Variantcb506b9eaf7450bd8e2ff1a4ce5a9e40140c0177e27dc0b415a78b702d886e96.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:5f6c8eb2-90e7-87c8-9231-6397559359de`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 150–214.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem square_map_not_real_axis_reflecting :
+    ¬ RealAxisReflection (fun z => hostileSource.eval z) squareMap := by
+  intro h
+  have hi : (squareMap Complex.I).im = 0 := by simp [squareMap]
+  exact hostileSource_nonreal_zero.2 (h Complex.I hostileSource_nonreal_zero.1 hi)
+
+end ContinuousResearch.SourceRecognition
+
+
+set_option pp.universes true
+set_option pp.fullNames true
+#print ContinuousResearch.SourceRecognition.symmetric_charpoly_zero_real
+#print axioms ContinuousResearch.SourceRecognition.symmetric_charpoly_zero_real
+#print ContinuousResearch.SourceRecognition.hermitian_charpoly_zero_real
+#print axioms ContinuousResearch.SourceRecognition.hermitian_charpoly_zero_real
+#print ContinuousResearch.SourceRecognition.ZeroTransport
+#print axioms ContinuousResearch.SourceRecognition.ZeroTransport
+#print ContinuousResearch.SourceRecognition.RealAxisReflection
+#print axioms ContinuousResearch.SourceRecognition.RealAxisReflection
+#print ContinuousResearch.SourceRecognition.Recognition
+#print axioms ContinuousResearch.SourceRecognition.Recognition
+#print ContinuousResearch.SourceRecognition.recognition_transfers_real_zeros
+#print axioms ContinuousResearch.SourceRecognition.recognition_transfers_real_zeros
+#print ContinuousResearch.SourceRecognition.exact_comparison_zero_transport
+#print axioms ContinuousResearch.SourceRecognition.exact_comparison_zero_transport
+#print ContinuousResearch.SourceRecognition.recognition_of_exact_comparison
+#print axioms ContinuousResearch.SourceRecognition.recognition_of_exact_comparison
+#print ContinuousResearch.SourceRecognition.real_affine_reflection
+#print axioms ContinuousResearch.SourceRecognition.real_affine_reflection
+#print ContinuousResearch.SourceRecognition.same_point_comparison_real_zeros
+#print axioms ContinuousResearch.SourceRecognition.same_point_comparison_real_zeros
+#print ContinuousResearch.SourceRecognition.zeroMatrix
+#print axioms ContinuousResearch.SourceRecognition.zeroMatrix
+#print ContinuousResearch.SourceRecognition.hostileSource
+#print axioms ContinuousResearch.SourceRecognition.hostileSource
+#print ContinuousResearch.SourceRecognition.zeroMatrix_hermitian
+#print axioms ContinuousResearch.SourceRecognition.zeroMatrix_hermitian
+#print ContinuousResearch.SourceRecognition.zeroMatrix_charpoly
+#print axioms ContinuousResearch.SourceRecognition.zeroMatrix_charpoly
+#print ContinuousResearch.SourceRecognition.zeroMatrix_charpoly_zeros_real
+#print axioms ContinuousResearch.SourceRecognition.zeroMatrix_charpoly_zeros_real
+#print ContinuousResearch.SourceRecognition.hostileSource_nonreal_zero
+#print axioms ContinuousResearch.SourceRecognition.hostileSource_nonreal_zero
+#print ContinuousResearch.SourceRecognition.finite_boundary_reality_does_not_identify_source
+#print axioms ContinuousResearch.SourceRecognition.finite_boundary_reality_does_not_identify_source
+#print ContinuousResearch.SourceRecognition.shiftedBoundary
+#print axioms ContinuousResearch.SourceRecognition.shiftedBoundary
+#print ContinuousResearch.SourceRecognition.squareMap
+#print axioms ContinuousResearch.SourceRecognition.squareMap
+#print ContinuousResearch.SourceRecognition.negativeUnitMatrix
+#print axioms ContinuousResearch.SourceRecognition.negativeUnitMatrix
+#print ContinuousResearch.SourceRecognition.negativeUnitMatrix_hermitian
+#print axioms ContinuousResearch.SourceRecognition.negativeUnitMatrix_hermitian
+#print ContinuousResearch.SourceRecognition.negativeUnitMatrix_charpoly
+#print axioms ContinuousResearch.SourceRecognition.negativeUnitMatrix_charpoly
+#print ContinuousResearch.SourceRecognition.negativeUnitMatrix_characteristic_function
+#print axioms ContinuousResearch.SourceRecognition.negativeUnitMatrix_characteristic_function
+#print ContinuousResearch.SourceRecognition.shiftedBoundary_real_zeros
+#print axioms ContinuousResearch.SourceRecognition.shiftedBoundary_real_zeros
+#print ContinuousResearch.SourceRecognition.square_comparison_exact
+#print axioms ContinuousResearch.SourceRecognition.square_comparison_exact
+#print ContinuousResearch.SourceRecognition.square_zero_transport
+#print axioms ContinuousResearch.SourceRecognition.square_zero_transport
+#print ContinuousResearch.SourceRecognition.square_map_not_real_axis_reflecting
+#print axioms ContinuousResearch.SourceRecognition.square_map_not_real_axis_reflecting
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/SourceRecognitionGuardAttempt03/Variantcb506b9eaf7450bd8e2ff1a4ce5a9e40140c0177e27dc0b415a78b702d886e96.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/SourceRecognitionGuardAttempt03/Variantcb506b9eaf7450bd8e2ff1a4ce5a9e40140c0177e27dc0b415a78b702d886e96.lean#L150).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `73706f8bff7b49ec8a97e889604669a5f5577171` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

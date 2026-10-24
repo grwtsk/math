@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.Algebra.Lemmas.Variantcbe95b81ac0189c844dd8e4672a8d45ec3899b6d579dfbbb66a679d5fc62fc2f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d67daa8ec0d218086536126bce28488380f855a0` · SHA-256 `6b0838fcb0bbde85d6e5add5ea775cda39544a43315a45eaf1e7bc5ec0bd5ca2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.ProdOneSubPowEqOrder.Variant48f665d54557a7822a9a6146667b4bbe409171f8db2cd66b1e2b657535b61fd9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"48f665d54557a7822a9a6146667b4bbe409171f8db2cd66b1e2b657535b61fd9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.ProdOneSubPowEqOrder.Variant48f665d54557a7822a9a6146667b4bbe409171f8db2cd66b1e2b657535b61fd9","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"48f665d54557a7822a9a6146667b4bbe409171f8db2cd66b1e2b657535b61fd9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/RingTheory/RootsOfUnity/Lemmas.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Michael Stoll. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Michael Stoll
+-/
+import Mathlib.FieldTheory.KummerExtension
+
+/-!
+# More results on primitive roots of unity
+
+(We put these in a separate file because of the `KummerExtension` import.)
+
+Assume that `μ` is a primitive `n`th root of unity in an integral domain `R`. Then
+$$ \prod_{k=1}^{n-1} (1 - \mu^k) = n \,; $$
+see `IsPrimitiveRoot.prod_one_sub_pow_eq_order` and its variant
+`IsPrimitiveRoot.prod_pow_sub_one_eq_order` in terms of `∏ (μ^k - 1)`.
+
+We use this to deduce that `n` is divisible by `(μ - 1)^k` in `ℤ[μ] ⊆ R` when `k < n`.
+-/
+
+
+namespace GRWTSK.Algebra.ProdOneSubPowEqOrder.Variant48f665d54557a7822a9a6146667b4bbe409171f8db2cd66b1e2b657535b61fd9
+
+variable {R : Type*} [CommRing R] [IsDomain R]
+
+namespace IsPrimitiveRoot
+
+open Finset Polynomial
+
+/-- If `μ` is a primitive `n`th root of unity in `R`, then `∏(1≤k<n) (1-μ^k) = n`.
+(Stated with `n+1` in place of `n` to avoid the condition `n ≠ 0`.) -/
+lemma prod_one_sub_pow_eq_order {n : ℕ} {μ : R} (hμ : IsPrimitiveRoot μ (n + 1)) :
+    ∏ k ∈ range n, (1 - μ ^ (k + 1)) = n + 1 := by
+  have := X_pow_sub_C_eq_prod hμ n.zero_lt_succ (one_pow (n + 1))
+  rw [C_1, ← mul_geom_sum, prod_range_succ', pow_zero, mul_one, mul_comm, eq_comm] at this
+  replace this := mul_right_cancel₀ (Polynomial.X_sub_C_ne_zero 1) this
+  apply_fun Polynomial.eval 1 at this
+  simpa only [mul_one, map_pow, eval_prod, eval_sub, eval_X, eval_pow, eval_C, eval_geom_sum,
+    one_pow, sum_const, card_range, nsmul_eq_mul, Nat.cast_add, Nat.cast_one] using this
+
+/-- If `μ` is a primitive `n`th root of unity in `R`, then `(-1)^(n-1) * ∏(1≤k<n) (μ^k-1) = n`.
+(Stated with `n+1` in place of `n` to avoid the condition `n ≠ 0`.) -/
+lemma prod_pow_sub_one_eq_order {n : ℕ} {μ : R} (hμ : IsPrimitiveRoot μ (n + 1)) :
+    (-1) ^ n * ∏ k ∈ range n, (μ ^ (k + 1) - 1) = n + 1 := by
+  have : (-1 : R) ^ n = ∏ k ∈ range n, -1 := by rw [prod_const, card_range]
+  simp only [this, ← prod_mul_distrib, neg_one_mul, neg_sub, ← prod_one_sub_pow_eq_order hμ]
+
+open Algebra in
+/-- If `μ` is a primitive `n`th root of unity in `R` and `k < n`, then `n` is divisible
+by `(μ-1)^k` in `ℤ[μ] ⊆ R`. -/
+lemma self_sub_one_pow_dvd_order {k n : ℕ} (hn : k < n) {μ : R} (hμ : IsPrimitiveRoot μ n) :
+    ∃ z ∈ adjoin ℤ {μ}, n = z * (μ - 1) ^ k := by
+  let n' + 1 := n
+  obtain ⟨m, rfl⟩ := Nat.exists_eq_add_of_le' (Nat.le_of_lt_succ hn)
+  have hdvd k : ∃ z ∈ adjoin ℤ {μ}, μ ^ k - 1 = z * (μ - 1) := by
+    refine ⟨(Finset.range k).sum (μ ^ ·), ?_, (geom_sum_mul μ k).symm⟩
+    exact Subalgebra.sum_mem _ fun m _ ↦ Subalgebra.pow_mem _ (self_mem_adjoin_singleton _ μ) _
+  let Z k := Classical.choose <| hdvd k
+  have Zdef k : Z k ∈ adjoin ℤ {μ} ∧ μ ^ k - 1 = Z k * (μ - 1) :=
+    Classical.choose_spec <| hdvd k
+  refine ⟨(-1) ^ (m + k) * (∏ j ∈ range k, Z (j + 1)) * ∏ j ∈ Ico k (m + k), (μ ^ (j + 1) - 1),
+    ?_, ?_⟩
+  · apply Subalgebra.mul_mem
+    · apply Subalgebra.mul_mem
+      · exact Subalgebra.pow_mem _ (Subalgebra.neg_mem _ <| Subalgebra.one_mem _) _
+      · exact Subalgebra.prod_mem _ fun _ _ ↦ (Zdef _).1
+    · refine Subalgebra.prod_mem _ fun _ _ ↦ ?_
+      apply Subalgebra.sub_mem
+      · exact Subalgebra.pow_mem _ (self_mem_adjoin_singleton ℤ μ) _
+      · exact Subalgebra.one_mem _
+  · push_cast
+    have := Nat.cast_add (R := R) m k ▸ hμ.prod_pow_sub_one_eq_order
+    rw [← this, mul_assoc, mul_assoc]
+    congr 1
+    conv => enter [2, 2, 2]; rw [← card_range k]
+    rw [← prod_range_mul_prod_Ico _ (Nat.le_add_left k m), mul_comm _ (_ ^ #_), ← mul_assoc,
+      prod_mul_pow_card]
+    conv => enter [2, 1, 2, j]; rw [← (Zdef _).2]
+
+end IsPrimitiveRoot
+```

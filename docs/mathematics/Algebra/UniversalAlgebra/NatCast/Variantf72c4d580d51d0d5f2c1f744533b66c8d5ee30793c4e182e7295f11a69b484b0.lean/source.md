@@ -1,0 +1,119 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.NatCast.Variantf72c4d580d51d0d5f2c1f744533b66c8d5ee30793c4e182e7295f11a69b484b0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `92d76be6c3af18f83bd928b227ecc171704eca36` · SHA-256 `f16620e15beee9fe089b8fba77c994ef2c09c48a2d2b01ca013ffea6a920590b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.UniversalAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.UniversalAlgebra.LtAddOne.Variantb18472a7618451dbc9068d8ef81f950c7201a79e40f648bcf00161d518b88132","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b18472a7618451dbc9068d8ef81f950c7201a79e40f648bcf00161d518b88132","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.GeneralAlgebra.SourceCorpus.LtAddOne.Variantb18472a7618451dbc9068d8ef81f950c7201a79e40f648bcf00161d518b88132","mathematical_subject":"Algebra.GeneralAlgebra","original_sha256":"b18472a7618451dbc9068d8ef81f950c7201a79e40f648bcf00161d518b88132","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Order/Monoid/NatCast.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2016 Jeremy Avigad. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jeremy Avigad, Leonardo de Moura, Mario Carneiro, Johannes Hölzl, Yuyang Zhao
+-/
+module
+
+public import Mathlib.Algebra.Order.Monoid.Unbundled.Basic
+public import Mathlib.Algebra.Order.ZeroLEOne
+public import Mathlib.Data.Nat.Cast.Defs
+
+/-!
+# Order of numerals in an `AddMonoidWithOne`.
+-/
+
+
+namespace GRWTSK.Algebra.UniversalAlgebra.LtAddOne.Variantb18472a7618451dbc9068d8ef81f950c7201a79e40f648bcf00161d518b88132
+
+public section
+
+variable {α : Type*}
+
+lemma lt_add_one [One α] [AddZeroClass α] [PartialOrder α] [ZeroLEOneClass α]
+    [NeZero (1 : α)] [AddLeftStrictMono α] (a : α) : a < a + 1 :=
+  lt_add_of_pos_right _ zero_lt_one
+
+lemma lt_one_add [One α] [AddZeroClass α] [PartialOrder α] [ZeroLEOneClass α]
+    [NeZero (1 : α)] [AddRightStrictMono α] (a : α) : a < 1 + a :=
+  lt_add_of_pos_left _ zero_lt_one
+
+variable [AddMonoidWithOne α]
+
+lemma zero_le_two [Preorder α] [ZeroLEOneClass α] [AddLeftMono α] :
+    (0 : α) ≤ 2 := by
+  rw [← one_add_one_eq_two]
+  exact add_nonneg zero_le_one zero_le_one
+
+lemma zero_le_three [Preorder α] [ZeroLEOneClass α] [AddLeftMono α] :
+    (0 : α) ≤ 3 := by
+  rw [← two_add_one_eq_three]
+  exact add_nonneg zero_le_two zero_le_one
+
+lemma zero_le_four [Preorder α] [ZeroLEOneClass α] [AddLeftMono α] :
+    (0 : α) ≤ 4 := by
+  rw [← three_add_one_eq_four]
+  exact add_nonneg zero_le_three zero_le_one
+
+lemma one_le_two [LE α] [ZeroLEOneClass α] [AddLeftMono α] :
+    (1 : α) ≤ 2 :=
+  calc (1 : α) = 1 + 0 := (add_zero 1).symm
+     _ ≤ 1 + 1 := by gcongr; exact zero_le_one
+     _ = 2 := one_add_one_eq_two
+
+lemma one_le_two' [LE α] [ZeroLEOneClass α] [AddRightMono α] :
+    (1 : α) ≤ 2 :=
+  calc (1 : α) = 0 + 1 := (zero_add 1).symm
+     _ ≤ 1 + 1 := by gcongr; exact zero_le_one
+     _ = 2 := one_add_one_eq_two
+
+section
+variable [PartialOrder α] [ZeroLEOneClass α] [NeZero (1 : α)]
+
+section
+variable [AddLeftMono α]
+
+/-- See `zero_lt_two'` for a version with the type explicit. -/
+@[simp] lemma zero_lt_two : (0 : α) < 2 := zero_lt_one.trans_le one_le_two
+
+/-- See `zero_lt_three'` for a version with the type explicit. -/
+@[simp] lemma zero_lt_three : (0 : α) < 3 := by
+  rw [← two_add_one_eq_three]
+  exact lt_add_of_lt_of_nonneg zero_lt_two zero_le_one
+
+/-- See `zero_lt_four'` for a version with the type explicit. -/
+@[simp] lemma zero_lt_four : (0 : α) < 4 := by
+  rw [← three_add_one_eq_four]
+  exact lt_add_of_lt_of_nonneg zero_lt_three zero_le_one
+
+variable (α)
+
+/-- See `zero_lt_two` for a version with the type implicit. -/
+lemma zero_lt_two' : (0 : α) < 2 := zero_lt_two
+
+/-- See `zero_lt_three` for a version with the type implicit. -/
+lemma zero_lt_three' : (0 : α) < 3 := zero_lt_three
+
+/-- See `zero_lt_four` for a version with the type implicit. -/
+lemma zero_lt_four' : (0 : α) < 4 := zero_lt_four
+
+instance ZeroLEOneClass.neZero.two : NeZero (2 : α) := ⟨zero_lt_two.ne'⟩
+instance ZeroLEOneClass.neZero.three : NeZero (3 : α) := ⟨zero_lt_three.ne'⟩
+instance ZeroLEOneClass.neZero.four : NeZero (4 : α) := ⟨zero_lt_four.ne'⟩
+
+end
+
+lemma one_lt_two [AddLeftStrictMono α] : (1 : α) < 2 := by
+  rw [← one_add_one_eq_two]
+  exact lt_add_one _
+
+end
+
+alias two_pos := zero_lt_two
+
+alias three_pos := zero_lt_three
+
+alias four_pos := zero_lt_four
+```
