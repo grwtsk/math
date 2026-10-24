@@ -508,6 +508,78 @@ theorem blockDiagonal'_mvN_witness_trace_eq
     _ = (Matrix.blockDiagonal' Q).trace :=
       congrArg Matrix.trace hright.symm
 
+/-! ## Reindexing binary finite star-projection blocks -/
+
+/-- Simultaneous reindexing by a bijection preserves finite star projections.
+This is a concrete matrix transport, not an assumed equivalence of K₀ groups. -/
+theorem starProjection_reindex_fin
+    {α β : Type*} [Fintype α] [Fintype β]
+    (e : α ≃ β) (P : Matrix α α ℂ)
+    (hP : IsStarProjection P) :
+    IsStarProjection (Matrix.reindex e e P) := by
+  refine ⟨?_, ?_⟩
+  · change Matrix.reindex e e P * Matrix.reindex e e P = Matrix.reindex e e P
+    calc
+      _ = Matrix.reindex e e (P * P) := by
+        simpa only [Matrix.coe_reindexRingEquiv] using
+          (map_mul (Matrix.reindexRingEquiv ℂ e) P P).symm
+      _ = Matrix.reindex e e P := congrArg _ hP.isIdempotentElem.eq
+  · change (Matrix.reindex e e P)ᴴ = Matrix.reindex e e P
+    rw [Matrix.conjTranspose_reindex]
+    have hstar : Pᴴ = P := by
+      change star P = P
+      exact hP.isSelfAdjoint.star_eq
+    rw [hstar]
+
+/-- The direct sum of two actual finite complex star projections, indexed
+by disjoint row and column sums, remains a star projection. -/
+theorem starProjection_fromBlocks
+    {m n : Type*} [Fintype m] [Fintype n]
+    (P : Matrix m m ℂ) (Q : Matrix n n ℂ)
+    (hP : IsStarProjection P) (hQ : IsStarProjection Q) :
+    IsStarProjection (Matrix.fromBlocks P 0 0 Q) := by
+  have hPstar : Pᴴ = P := by
+    change star P = P
+    exact hP.isSelfAdjoint.star_eq
+  have hQstar : Qᴴ = Q := by
+    change star Q = Q
+    exact hQ.isSelfAdjoint.star_eq
+  refine ⟨?_, ?_⟩
+  · change Matrix.fromBlocks P 0 0 Q * Matrix.fromBlocks P 0 0 Q =
+      Matrix.fromBlocks P 0 0 Q
+    rw [Matrix.fromBlocks_multiply]
+    simp [hP.isIdempotentElem.eq, hQ.isIdempotentElem.eq]
+  · change (Matrix.fromBlocks P 0 0 Q)ᴴ = Matrix.fromBlocks P 0 0 Q
+    rw [Matrix.fromBlocks_conjTranspose]
+    simp [hPstar, hQstar]
+
+/-- Transport a two-block finite complex matrix onto the canonical
+`Fin (m+n)` index using the actual finite-sum equivalence. -/
+def finiteBlockSumMatrix {m n : ℕ}
+    (P : Matrix (Fin m) (Fin m) ℂ)
+    (Q : Matrix (Fin n) (Fin n) ℂ) :
+    Matrix (Fin (m + n)) (Fin (m + n)) ℂ :=
+  Matrix.reindex
+    (finSumFinEquiv : Fin m ⊕ Fin n ≃ Fin (m + n))
+    (finSumFinEquiv : Fin m ⊕ Fin n ≃ Fin (m + n))
+    (Matrix.fromBlocks P 0 0 Q)
+
+/-- The concrete binary block sum of finite star projections has size
+`m+n` and retains proof of the star-projection equations. -/
+def finiteBlockSum {m n : ℕ}
+    (P : FiniteStarProjection m) (Q : FiniteStarProjection n) :
+    FiniteStarProjection (m + n) :=
+  ⟨finiteBlockSumMatrix P.val Q.val,
+    starProjection_reindex_fin
+      (finSumFinEquiv : Fin m ⊕ Fin n ≃ Fin (m + n))
+      (Matrix.fromBlocks P.val 0 0 Q.val)
+      (starProjection_fromBlocks P.val Q.val P.property Q.property)⟩
+
+@[simp]
+theorem finiteBlockSum_val {m n : ℕ}
+    (P : FiniteStarProjection m) (Q : FiniteStarProjection n) :
+    (finiteBlockSum P Q).val = finiteBlockSumMatrix P.val Q.val := rfl
+
 /-! ## Finite projection classes and their trace -/
 
 /-- Every finite matrix size is retained in the object, rather than
