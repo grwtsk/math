@@ -8006,3 +8006,5 @@ Next implementation pass: [concrete Laurent bar, retraction splitting and probab
 Next implementation pass: [analytic zero detector, product continuation and triangular weak law by taxonomy](obligation-implementation-progress-v7.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
 Next implementation pass: [actual completed Riemann-zeta detector and Gamma-factor order comparison by taxonomy](obligation-implementation-progress-v8.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+
+Next implementation pass: [finite meromorphic detector and actual completed-zeta poles by taxonomy](obligation-implementation-progress-v9.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
