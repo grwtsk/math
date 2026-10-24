@@ -1,0 +1,222 @@
+# GRWTSK.Topology.GeneralTopology.WF.Variantfc0a6819ac4de9bb37fb849e5f8205c5d06329699c222cf17c4d9f8fe24ef0a3
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**201 observed declarations and anonymous commands**, 200 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/WF/Variantfc0a6819ac4de9bb37fb849e5f8205c5d06329699c222cf17c4d9f8fe24ef0a3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b35e589640be1153e2c0deac9541e0bded402d0a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Topology/GeneralTopology/WF/Variantfc0a6819ac4de9bb37fb849e5f8205c5d06329699c222cf17c4d9f8fe24ef0a3.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [toListModel_replicate_nil](declarations/tolistmodel-replicate-nil--49a236438df35f7a037eca5a.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [computeSize_eq](declarations/computesize-eq--946ce8aaf6f03e884eba98a2.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [equiv_iff_toListModel_perm](declarations/equiv-iff-tolistmodel-perm--660c0ac8af7886d4aa581dea.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [size_eq_length](declarations/size-eq-length--35cd9c755782403adaa69fb0.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [isEmpty_eq_isEmpty](declarations/isempty-eq-isempty--29bb1bf903fe0c284193aa71.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [fold_eq](declarations/fold-eq--8fc688959bdaeedf1defba93.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [fold_cons_apply](declarations/fold-cons-apply--4e6eb6b49761eeaf64496696.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [fold_cons](declarations/fold-cons--ab8721161beea90297355991.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [fold_cons_key](declarations/fold-cons-key--23b2b936320fcdf230973c00.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [foldRev_eq](declarations/foldrev-eq--02966987684410d835a506ce.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [foldRev_cons_apply](declarations/foldrev-cons-apply--ec6861ec489702f2106f8bcd.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [fold_push_apply](declarations/fold-push-apply--7befd7fde8869e0c647e9cf3.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [foldRev_cons](declarations/foldrev-cons--595b9bd076a0299fa54527d9.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [foldRev_cons_mk](declarations/foldrev-cons-mk--a28fe5b345153c8c95e6c3b9.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [foldRev_cons_key](declarations/foldrev-cons-key--0a0a5cbf7615e172f465014f.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [foldRev_cons_value](declarations/foldrev-cons-value--8260a91f77d8fb13df2453cf.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [fold_push](declarations/fold-push--fdef570fcf5ea689d1b342da.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [fold_push_mk](declarations/fold-push-mk--6f06b4922f626b6676b983d8.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [fold_push_key](declarations/fold-push-key--11a79a803e1975515d04b303.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [foldM_eq_foldlM_toListModel](declarations/foldm-eq-foldlm-tolistmodel--4bbe8e52ada94251b6cfcea6.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [fold_induction](declarations/fold-induction--519e9a07a6dff8ff2643b066.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [fold_eq_foldl_toListModel](declarations/fold-eq-foldl-tolistmodel--24bb488c7f5c081868f82a9b.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [foldRevM_eq_foldrM_toListModel](declarations/foldrevm-eq-foldrm-tolistmodel--4ccb9baca3265c667ba3092e.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [foldRev_eq_foldr_toListModel](declarations/foldrev-eq-foldr-tolistmodel--78f87407f616cd24bd117596.md) | 212 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [toList_eq_toListModel](declarations/tolist-eq-tolistmodel--b767009d3fb56a8165dce72f.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [Const.toList_eq_toListModel_map](declarations/const-tolist-eq-tolistmodel-map--c666c1ccdb66e81c40f62153.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [toArray_eq_toArray_toListModel](declarations/toarray-eq-toarray-tolistmodel--ce57bf234297f58c6ba961d0.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [Const.toArray_eq_toArray_map_toListModel](declarations/const-toarray-eq-toarray-map-tolistmodel--ea71fa3cf1706c520d6c2acf.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [keys_eq_keys_toListModel](declarations/keys-eq-keys-tolistmodel--b7d119a65ad0138ddaf357de.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [values_eq_values_toListModel](declarations/values-eq-values-tolistmodel--e01ea851429849a4dc9658af.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [keysArray_eq_toArray_keys_toListModel](declarations/keysarray-eq-toarray-keys-tolistmodel--250b8d41791a361c0bf44855.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [forM_eq_forM_toListModel](declarations/form-eq-form-tolistmodel--bfe5f3295ec09a02700c521b.md) | 243 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [forIn_eq_forIn_toListModel](declarations/forin-eq-forin-tolistmodel--80669920a6e7b60785bca18f.md) | 263 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [all_eq_all_toListModel](declarations/all-eq-all-tolistmodel--b9f5967411fe5fce444f9fb1.md) | 281 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [toListModel_buckets_emptyWithCapacity](declarations/tolistmodel-buckets-emptywithcapacity--d22524d850666143ffe8bc3e.md) | 301 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [wfImp_emptyWithCapacity](declarations/wfimp-emptywithcapacity--310606e36b006562257bc2c0.md) | 304 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [isHashSelf_reinsertAux](declarations/ishashself-reinsertaux--45803317a840fb1716e2468e.md) | 309 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [toListModel_reinsertAux](declarations/tolistmodel-reinsertaux--693284ed90711ac2519fb293.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [isHashSelf_foldl_reinsertAux](declarations/ishashself-foldl-reinsertaux--7b01f47150547c328de3a7e0.md) | 328 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [toListModel_foldl_reinsertAux](declarations/tolistmodel-foldl-reinsertaux--ebe78ac6e70155ec5fc967f6.md) | 336 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [expand.go_pos](declarations/expand-go-pos--37a8bce3ca3638df48276a2b.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [expand.go_neg](declarations/expand-go-neg--4278b65cbff193d4c22e90b3.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [expand.go_eq](declarations/expand-go-eq--76aa8e657bcdb4db811ec7da.md) | 360 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [isHashSelf_expand](declarations/ishashself-expand--11e1fe0f89027ea91a0a4875.md) | 380 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [toListModel_expand](declarations/tolistmodel-expand--cd81f67766d514eebacf2a5d.md) | 384 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [toListModel_expandIfNecessary](declarations/tolistmodel-expandifnecessary--739949c41de18b74e8234c1a.md) | 390 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [size_expandIfNecessary](declarations/size-expandifnecessary--d6e89af2bbb2a4cd893b1782.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [wfImp_expandIfNecessary](declarations/wfimp-expandifnecessary--3c554e6c697346644d8152ce.md) | 405 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [containsₘ_eq_containsKey](declarations/contains-eq-containskey--f19f72072fc8c0e324a4bb20.md) | 422 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [contains_eq_containsKey](declarations/contains-eq-containskey--bb229b0e3455de3e3803cde5.md) | 428 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [get?ₘ_eq_getValueCast?](declarations/get-eq-getvaluecast--60c44e8079322f604d6d1797.md) | 433 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [get?_eq_getValueCast?](declarations/get-eq-getvaluecast--f8892cb957198d7bdd433a5c.md) | 439 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [getₘ_eq_getValue](declarations/get-eq-getvalue--1ba1bc2f3b2b8d3b1f15d78d.md) | 444 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [getEntryₘ_eq_getEntry](declarations/getentry-eq-getentry--285ed47b23f5f4c33818abac.md) | 450 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [getEntry?ₘ_eq_getEntry?](declarations/getentry-eq-getentry--6c1e2113ff3940bb5bf7663a.md) | 455 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [get_eq_getValueCast](declarations/get-eq-getvaluecast--57eeb90963830ba308da6464.md) | 460 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [getEntry_eq_getEntry](declarations/getentry-eq-getentry--a66d2fcbfe3cc2a6687a9521.md) | 465 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [getEntry?_eq_getEntry?](declarations/getentry-eq-getentry--f46451cbc3c0d3c8bc5437e5.md) | 470 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [getEntryDₘ_eq_getEntryD](declarations/getentryd-eq-getentryd--935ced6345eea6ed1d5f1b7c.md) | 475 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [getEntryD_eq_getEntryD](declarations/getentryd-eq-getentryd--3fad4610b4d69557856b6ca2.md) | 480 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [getEntry!ₘ_eq_getEntry!](declarations/getentry-eq-getentry--8b5368950751713b121c8354.md) | 485 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [getEntry!_eq_getEntry!](declarations/getentry-eq-getentry--ee6c7f7d13b5f599f3ad5cba.md) | 490 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [get!ₘ_eq_getValueCast!](declarations/get-eq-getvaluecast--a9d6049e405ef3f46a712f84.md) | 495 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [get!_eq_getValueCast!](declarations/get-eq-getvaluecast--489eabfd713628ecf171c157.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [getDₘ_eq_getValueCastD](declarations/getd-eq-getvaluecastd--be6211ef689ebff7ce333516.md) | 504 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [getD_eq_getValueCastD](declarations/getd-eq-getvaluecastd--8821848c05b4f73c85a4b768.md) | 509 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [getKey?ₘ_eq_getKey?](declarations/getkey-eq-getkey--4de7c47fa9c6820992d98657.md) | 514 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [getKey?_eq_getKey?](declarations/getkey-eq-getkey--b1af2ee3ad67270a41aa1cf8.md) | 519 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [getKeyₘ_eq_getKey](declarations/getkey-eq-getkey--6832f85d779c5aef1cf91207.md) | 524 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [getKey_eq_getKey](declarations/getkey-eq-getkey--ddee14086cc341f747b74fa3.md) | 530 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [getKey!ₘ_eq_getKey!](declarations/getkey-eq-getkey--1794f7c3641e804362dbb356.md) | 535 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [getKey!_eq_getKey!](declarations/getkey-eq-getkey--1dbc4a4562cea5103234f531.md) | 540 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [getKeyDₘ_eq_getKeyD](declarations/getkeyd-eq-getkeyd--3349d26f62c638f89f6f462e.md) | 545 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [getKeyD_eq_getKeyD](declarations/getkeyd-eq-getkeyd--d9d06e31ad5833e1e1e7ecf5.md) | 550 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [Const.get?ₘ_eq_getValue?](declarations/const-get-eq-getvalue--3e9c9823be85bded427d4122.md) | 559 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [Const.get?_eq_getValue?](declarations/const-get-eq-getvalue--4c6651ef0f07341a5641e6b4.md) | 564 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [Const.getₘ_eq_getValue](declarations/const-get-eq-getvalue--3c4fffd258f698edc8a7cf4f.md) | 569 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [Const.get_eq_getValue](declarations/const-get-eq-getvalue--e3d1d7da53f4bfe712c6c03a.md) | 575 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [Const.get!ₘ_eq_getValue!](declarations/const-get-eq-getvalue--fd203c15adb255608f234faa.md) | 580 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [Const.get!_eq_getValue!](declarations/const-get-eq-getvalue--5e2f2c9ef8b4b4bf1dd5c0ce.md) | 585 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [Const.getDₘ_eq_getValueD](declarations/const-getd-eq-getvalued--2626948ff967913bb467fdb5.md) | 590 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [Const.getD_eq_getValueD](declarations/const-getd-eq-getvalued--fe547da1279a40e0f68dced7.md) | 595 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [toListModel_replaceₘ](declarations/tolistmodel-replace--0a2775b1c947725ee9ae454c.md) | 604 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [isHashSelf_replaceₘ](declarations/ishashself-replace--20f417f8a9300404bfbb42ff.md) | 610 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [wfImp_replaceₘ](declarations/wfimp-replace--a3e753fbc01573fdc5ca660b.md) | 615 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [toListModel_consₘ](declarations/tolistmodel-cons--fbb942369cc455e7d227bcd9.md) | 624 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [isHashSelf_consₘ](declarations/ishashself-cons--141727e205101156bcf22fda.md) | 629 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [wfImp_consₘ](declarations/wfimp-cons--078d9b7fed1b01d97a765088.md) | 637 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [toListModel_insertₘ](declarations/tolistmodel-insert--1a83d126e1feaf984aa12594.md) | 648 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [wfImp_insertₘ](declarations/wfimp-insert--33513fba1fa575a0716c2dbb.md) | 663 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [toListModel_insert](declarations/tolistmodel-insert--83c2d718ad88c24f0e150b88.md) | 673 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `theorem` | [wfImp_insert](declarations/wfimp-insert--5cbb07d3ae288e2717819112.md) | 679 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [toListModel_updateBucket_alter](declarations/tolistmodel-updatebucket-alter--5e2430b5a9a533090b94382b.md) | 686 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [isHashSelf_updateBucket_alter](declarations/ishashself-updatebucket-alter--a77379e58363e388e942c004.md) | 693 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [wfImp_updateBucket_alter](declarations/wfimp-updatebucket-alter--bdf3c3cec1acc20427d5960f.md) | 703 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [isHashSelf_alterₘ](declarations/ishashself-alter--090a4e89d892321da67939e0.md) | 710 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [toListModel_alterₘ](declarations/tolistmodel-alter--4d724dbfee2f7fb0b0cb26eb.md) | 721 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [toListModel_alter](declarations/tolistmodel-alter--4141587c2ee4a0e03cbf4d48.md) | 742 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [wfImp_alterₘ](declarations/wfimp-alter--4031056ed3e0b4caf79d8afd.md) | 748 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [wfImp_alter](declarations/wfimp-alter--959991639120a12131ff7e38.md) | 773 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [toListModel_updateBucket_alter](declarations/tolistmodel-updatebucket-alter--af4dfa44c2868ba3045da5f0.md) | 782 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [isHashSelf_updateBucket_alter](declarations/ishashself-updatebucket-alter--db5451488dd184adbd4adebb.md) | 789 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [wfImp_updateBucket_alter](declarations/wfimp-updatebucket-alter--a4815e5d0db818c8408d2f4b.md) | 800 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [isHashSelf_alterₘ](declarations/ishashself-alter--6ad6928a2a744dca2bf4c4f4.md) | 807 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [toListModel_alterₘ](declarations/tolistmodel-alter--7358217a78892ecca1f638a4.md) | 819 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [toListModel_alter](declarations/tolistmodel-alter--5bb47157303cd9e7098bb7b7.md) | 840 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [wfImp_alterₘ](declarations/wfimp-alter--3ab9e4d062ccce37a50f2a56.md) | 846 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [wfImp_alter](declarations/wfimp-alter--49143cb61ca11b572074f92e.md) | 871 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [toListModel_modify](declarations/tolistmodel-modify--b6fc8386281cb63b353ecebe.md) | 880 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [wfImp_modifyₘ](declarations/wfimp-modify--20eedae5341db516a391949c.md) | 886 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [wfImp_modify](declarations/wfimp-modify--a1029ec39de19baf107d311b.md) | 889 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [toListModel_modify](declarations/tolistmodel-modify--be500c73d5c24fe850658050.md) | 898 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [wfImp_modifyₘ](declarations/wfimp-modify--4a158a9079e04ac938a6e7c5.md) | 904 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [wfImp_modify](declarations/wfimp-modify--7445f5acddd6988dae0cc6fc.md) | 908 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [toListModel_containsThenInsert](declarations/tolistmodel-containstheninsert--5eb09a0ad5aff843a207a081.md) | 917 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `theorem` | [wfImp_containsThenInsert](declarations/wfimp-containstheninsert--47fb4c71992521cbdd66c5a6.md) | 923 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [toListModel_insertIfNewₘ](declarations/tolistmodel-insertifnew--2580434d73ba7ebb64027a8a.md) | 930 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [wfImp_insertIfNewₘ](declarations/wfimp-insertifnew--767ffa10ef26c2e7423cc885.md) | 939 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `theorem` | [toListModel_insertIfNew](declarations/tolistmodel-insertifnew--c849e5becde4e296859eae84.md) | 949 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [wfImp_insertIfNew](declarations/wfimp-insertifnew--41bdb4ffba69dba60a9c967b.md) | 956 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [toListModel_containsThenInsertIfNew](declarations/tolistmodel-containstheninsertifnew--06abdf09a88def0997fb6552.md) | 963 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `theorem` | [wfImp_containsThenInsertIfNew](declarations/wfimp-containstheninsertifnew--d6f403090ce50518585c24ef.md) | 970 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [toListModel_getThenInsertIfNew?](declarations/tolistmodel-gettheninsertifnew--e4d6f730fa620281f3034078.md) | 978 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `theorem` | [wfImp_getThenInsertIfNew?](declarations/wfimp-gettheninsertifnew--45725efc8d0d91b4ec1eb63d.md) | 985 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [Const.toListModel_getThenInsertIfNew?](declarations/const-tolistmodel-gettheninsertifnew--31feac76203f9581637396b5.md) | 992 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [Const.wfImp_getThenInsertIfNew?](declarations/const-wfimp-gettheninsertifnew--6d18173aa2a390463febe749.md) | 999 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [toListModel_eraseₘaux](declarations/tolistmodel-erase-aux--a7e58cc4f180d1d1ef1d5a36.md) | 1007 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `theorem` | [isHashSelf_eraseₘaux](declarations/ishashself-erase-aux--3dccee7bc47b2ac230c03bcc.md) | 1013 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `theorem` | [wfImp_eraseₘaux](declarations/wfimp-erase-aux--9404ab96f1e6795c2dff3e39.md) | 1019 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `theorem` | [toListModel_perm_eraseKey_of_containsₘ_eq_false](declarations/tolistmodel-perm-erasekey-of-contains-eq-false--5159900c2fe293160a6443c8.md) | 1028 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [toListModel_eraseₘ](declarations/tolistmodel-erase--20ae4b00e478adffab9c28a6.md) | 1034 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [wfImp_eraseₘ](declarations/wfimp-erase--a86eeedf8c356f5a3682a9c5.md) | 1043 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `theorem` | [toListModel_erase](declarations/tolistmodel-erase--7f41ea4b22e5e9bdafe36939.md) | 1052 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `theorem` | [wfImp_erase](declarations/wfimp-erase--6248c0d6bcc522898b706f5e.md) | 1058 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `theorem` | [toListModel_filterₘ](declarations/tolistmodel-filter--b0dca76834bc618d19cef316.md) | 1065 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [isHashSelf_filterₘ](declarations/ishashself-filter--d67af1937b8fedaae56e8fee.md) | 1070 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [wfImp_filterₘ](declarations/wfimp-filter--3be094faf799d879b54cd68e.md) | 1077 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [toListModel_filter](declarations/tolistmodel-filter--5016a3fc36f9d086dabaa716.md) | 1085 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `theorem` | [wfImp_filter](declarations/wfimp-filter--16ed5a8db821b1dd3bad6029.md) | 1091 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [toListModel_insertListₘ](declarations/tolistmodel-insertlist--ecaaa7da9a2fded6015596c5.md) | 1098 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `theorem` | [toListModel_eraseListₘ](declarations/tolistmodel-eraselist--4bc7cefb62233f1a771fb17a.md) | 1110 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `theorem` | [toListModel_insertListIfNewₘ](declarations/tolistmodel-insertlistifnew--fff9c61a8e9f35ae335fb9d6.md) | 1124 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [insertMany_eq_insertListₘ_toListModel](declarations/insertmany-eq-insertlist-tolistmodel--98bf92f7b13d600e0751b9c7.md) | 1138 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [insertMany_array_eq_insertMany_toList](declarations/insertmany-array-eq-insertmany-tolist--fbeefca3185a182bdd24dc29.md) | 1155 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [Const.insertMany_array_eq_insertMany_toList](declarations/const-insertmany-array-eq-insertmany-tolist--416dbedddda058e9724f098a.md) | 1159 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [Const.insertManyIfNewUnit_array_eq_insertManyIfNewUnit_toList](declarations/const-insertmanyifnewunit-array-eq-insertmanyifnewunit-tolist--f822f7e712df06914ecafe98.md) | 1163 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `theorem` | [insertManyIfNew_eq_insertListIfNewₘ_toListModel](declarations/insertmanyifnew-eq-insertlistifnew-tolistmodel--676b7ec385063f7362b6efb1.md) | 1167 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [union_eq_unionₘ](declarations/union-eq-union--6df826e54f6c84b65b959080.md) | 1184 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [toListModel_unionₘ](declarations/tolistmodel-union--e9690a51f32fdea006756e6a.md) | 1191 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [wfImp_inter](declarations/wfimp-inter--96ea4422c671912e446958bb.md) | 1201 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [WF.out](declarations/wf-out--54af472ec2564dfeb59b1e91.md) | 1219 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [toListModel_filterMapₘ](declarations/tolistmodel-filtermap--7a354637a09e8d6558d1fc89.md) | 1244 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `theorem` | [isHashSelf_filterMapₘ](declarations/ishashself-filtermap--aba3d25b384677222cdb0cc1.md) | 1250 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `theorem` | [wfImp_filterMapₘ](declarations/wfimp-filtermap--2ecc2e0dbdb127420531ad45.md) | 1259 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `theorem` | [toListModel_filterMap](declarations/tolistmodel-filtermap--ab6175242973cdc0652ac440.md) | 1267 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `theorem` | [wfImp_filterMap](declarations/wfimp-filtermap--8354fc7f424c929ec2990686.md) | 1273 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `theorem` | [wf_filterMap₀](declarations/wf-filtermap--c15130e13e95e8101e6cc46a.md) | 1279 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [filterMap_eq_filter](declarations/filtermap-eq-filter--5caf220a589879ea29f451be.md) | 1283 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [filterMap_eq_map](declarations/filtermap-eq-map--d3e12681c6de9be37848c8f4.md) | 1288 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [toListModel_mapₘ](declarations/tolistmodel-map--c9a7e57170d3e494330bbb2a.md) | 1300 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [isHashSelf_mapₘ](declarations/ishashself-map--1f40c5fc15ef124bf3cb0469.md) | 1305 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [wfImp_mapₘ](declarations/wfimp-map--0cc7a390edc5b8241294c2d7.md) | 1312 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [toListModel_map](declarations/tolistmodel-map--6a0c9a902d236c7be9a7c94d.md) | 1320 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `theorem` | [wfImp_map](declarations/wfimp-map--da52b4297c20f982afd7cc95.md) | 1326 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `theorem` | [wf_map₀](declarations/wf-map--51f8c2a6fc81453a08aabc44.md) | 1331 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `theorem` | [wfImp_insertMany](declarations/wfimp-insertmany--e8e241ea73cd72e1b32dac5c.md) | 1337 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `theorem` | [toListModel_insertMany_list](declarations/tolistmodel-insertmany-list--5e126d243586d6c6908433ba.md) | 1342 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [insertMany_list_eq_foldl](declarations/insertmany-list-eq-foldl--a161c6e2c0de1fba176e3c10.md) | 1350 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [WF.eraseManyEntries](declarations/wf-erasemanyentries--10c0f6e1a281b00c5b291c69.md) | 1357 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `theorem` | [wf_insertMany₀](declarations/wf-insertmany--e3f858ea1056f69cd28ee5bf.md) | 1362 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [wf_eraseMany₀](declarations/wf-erasemany--a1118a2d4bc46a2b27e423d7.md) | 1367 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [eraseMany_eq_eraseListₘ_toListModel](declarations/erasemany-eq-eraselist-tolistmodel--223438ce153ba114511325c0.md) | 1372 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `theorem` | [toListModel_diffₘ](declarations/tolistmodel-diff--c176cb256245fb15135a8827.md) | 1389 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [diff_eq_diffₘ](declarations/diff-eq-diff--6a4a139e391f31c171d7ceb3.md) | 1409 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `theorem` | [toListModel_diff](declarations/tolistmodel-diff--c8055febf58f18a7d383f5a9.md) | 1418 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [wf_diff₀](declarations/wf-diff--6ccdea323a0ff1a0be652f6c.md) | 1425 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [wfImp_insertManyIfNew](declarations/wfimp-insertmanyifnew--515f10462f04c7e8aa7eeee9.md) | 1435 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `theorem` | [wf_insertManyIfNew₀](declarations/wf-insertmanyifnew--f16a351202f5b188fc0cb7d5.md) | 1440 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `theorem` | [toListModel_insertManyIfNew_list](declarations/tolistmodel-insertmanyifnew-list--7df721f132cc5b9dfccbeba7.md) | 1445 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [insertManyIfNew_list_eq_foldl](declarations/insertmanyifnew-list-eq-foldl--9608d1a122f756fefd84deea.md) | 1453 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [wf_union₀](declarations/wf-union--a6be0f6e7f6ced3ec0c1f23d.md) | 1460 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [toListModel_union](declarations/tolistmodel-union--b9f377f9866f5f3bba83a4bb.md) | 1470 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `theorem` | [wfImp_interSmallerFnₘ](declarations/wfimp-intersmallerfn--473058829d6b8cc55c090ab4.md) | 1480 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `def` | [interSmallerₘ](declarations/intersmaller--75eeeb48ca16e84dd8c59f61.md) | 1488 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `theorem` | [interSmaller_eq_interSmallerₘ](declarations/intersmaller-eq-intersmaller--5ffaa9ffee576e49baa81983.md) | 1491 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `theorem` | [foldl_perm_cong](declarations/foldl-perm-cong--13af025fb6f31b3a8b56c278.md) | 1496 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [toListModel_interSmallerFnₘ](declarations/tolistmodel-intersmallerfn--9e1fff20fabd2bb24ca01b37.md) | 1510 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [toListModel_interSmallerₘ](declarations/tolistmodel-intersmaller--66837d66310bf586d22c93ce.md) | 1520 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [toListModel_inter](declarations/tolistmodel-inter--b04a5a1cec2cfdaa3be2097c.md) | 1536 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `theorem` | [Const.toListModel_insertListₘ](declarations/const-tolistmodel-insertlist--809f64d6e8cd57d9ccbff58f.md) | 1549 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [Const.toListModel_insertMany_list](declarations/const-tolistmodel-insertmany-list--32759363aa5af3900aed1b3e.md) | 1563 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [Const.wfImp_insertMany](declarations/const-wfimp-insertmany--ad45d33f9ddec456855c961d.md) | 1570 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `theorem` | [Const.wf_insertMany₀](declarations/const-wf-insertmany--1adf45e87bc9021ecf8e412f.md) | 1575 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `theorem` | [Const.insertMany_list_eq_foldl](declarations/const-insertmany-list-eq-foldl--0995df0548f71f8f3ca6eb5e.md) | 1580 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [Const.toListModel_insertListIfNewUnitₘ](declarations/const-tolistmodel-insertlistifnewunit--eef03a34672bb9f73f928ed3.md) | 1587 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `theorem` | [Const.toListModel_insertManyIfNewUnit_list](declarations/const-tolistmodel-insertmanyifnewunit-list--7c0201ad650cd03b64a8d506.md) | 1601 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `theorem` | [Const.wfImp_insertManyIfNewUnit](declarations/const-wfimp-insertmanyifnewunit--552307639c9121e6fd08605b.md) | 1608 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `theorem` | [Const.wf_insertManyIfNewUnit₀](declarations/const-wf-insertmanyifnewunit--29293a689da4408dce19625d.md) | 1613 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `theorem` | [Const.insertManyIfNewUnit_list_eq_foldl](declarations/const-insertmanyifnewunit-list-eq-foldl--1cd23c969b30ef9dd0542ef9.md) | 1618 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `theorem` | [beq_eq_beqModel](declarations/beq-eq-beqmodel--7da487f6a8e7e180e1ce6cb1.md) | 1623 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `theorem` | [Const.beq_eq_beqModel](declarations/const-beq-eq-beqmodel--f54e8afabfb791b21304c68f.md) | 1628 | `BLOCKED_NATIVE_ADMISSION` |

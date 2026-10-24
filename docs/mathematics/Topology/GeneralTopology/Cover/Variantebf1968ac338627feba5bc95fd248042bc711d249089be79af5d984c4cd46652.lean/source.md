@@ -1,0 +1,99 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Cover.Variantebf1968ac338627feba5bc95fd248042bc711d249089be79af5d984c4cd46652
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dac7047a27718925348be4d2b49264a137e105bd` · SHA-256 `e44a5bb0692306563f68d0c69bc6bb560aca99b881708e80c302342a34d37a03`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.IsCover.Variant034b2cec16144c835ff5dd840406eb19fc9a175d8365ae65a764ff0a5f84dc9b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"034b2cec16144c835ff5dd840406eb19fc9a175d8365ae65a764ff0a5f84dc9b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.IsCover.Variant034b2cec16144c835ff5dd840406eb19fc9a175d8365ae65a764ff0a5f84dc9b","mathematical_subject":"Topology.GeneralTopology","original_sha256":"034b2cec16144c835ff5dd840406eb19fc9a175d8365ae65a764ff0a5f84dc9b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Basic/Rel/Cover.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+module
+
+public import Mathlib.Basic.Rel.Separated
+
+/-!
+# Covers in a uniform space
+
+This file defines covers, aka nets, which are a quantitative notion of compactness given an
+entourage.
+
+A `U`-cover of a set `s` is a set `N` such that every element of `s` is `U`-close to some element of
+`N`.
+
+The concept of uniform covers is used to define two further notions of covering:
+* Metric covers: `Metric.IsCover`, defined using the distance entourage.
+* Dynamical covers: `Dynamics.IsDynCoverOf`, defined using the dynamical entourage.
+
+## References
+
+[R. Vershynin, *High Dimensional Probability*][vershynin2018high], Section 4.2.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.IsCover.Variant034b2cec16144c835ff5dd840406eb19fc9a175d8365ae65a764ff0a5f84dc9b
+
+@[expose] public section
+
+open Set
+
+namespace SetRel
+variable {X : Type*} {U V : SetRel X X} {s t N N₁ N₂ : Set X} {x : X}
+
+/-- For an entourage `U`, a set `N` is a *`U`-cover* of a set `s` if every point of `s` is `U`-close
+to some point of `N`.
+
+This is also called a *`U`-net* in the literature.
+
+[R. Vershynin, *High Dimensional Probability*][vershynin2018high], 4.2.1. -/
+def IsCover (U : SetRel X X) (s N : Set X) : Prop := ∀ ⦃x⦄, x ∈ s → ∃ y ∈ N, x ~[U] y
+
+@[simp] lemma IsCover.empty : IsCover U ∅ N := by simp [IsCover]
+
+@[simp] lemma isCover_empty_right : IsCover U s ∅ ↔ s = ∅ := by
+  simp [IsCover, eq_empty_iff_forall_notMem]
+
+protected nonrec lemma IsCover.nonempty (hsN : IsCover U s N) (hs : s.Nonempty) : N.Nonempty :=
+  let ⟨_x, hx⟩ := hs; let ⟨y, hy, _⟩ := hsN hx; ⟨y, hy⟩
+
+@[simp] lemma IsCover.refl (U : SetRel X X) [U.IsRefl] (s : Set X) : IsCover U s s :=
+  fun a ha ↦ ⟨a, ha, U.rfl⟩
+
+lemma IsCover.rfl {U : SetRel X X} [U.IsRefl] {s : Set X} : IsCover U s s := refl U s
+
+@[simp] protected lemma isCover_univ : IsCover univ s N ↔ (s.Nonempty → N.Nonempty) := by
+  simp [IsCover, Set.Nonempty]
+
+lemma IsCover.mono (hN : N₁ ⊆ N₂) (h₁ : IsCover U s N₁) : IsCover U s N₂ :=
+  fun _x hx ↦ let ⟨y, hy, hxy⟩ := h₁ hx; ⟨y, hN hy, hxy⟩
+
+lemma IsCover.anti (hst : s ⊆ t) (ht : IsCover U t N) : IsCover U s N := fun _x hx ↦ ht <| hst hx
+
+lemma IsCover.mono_entourage (hUV : U ⊆ V) (hU : IsCover U s N) : IsCover V s N :=
+  fun _x hx ↦ let ⟨y, hy, hxy⟩ := hU hx; ⟨y, hy, hUV hxy⟩
+
+lemma IsCover.union (hs : IsCover U s N₁) (ht : IsCover U t N₂) : IsCover U (s ∪ t) (N₁ ∪ N₂) := fun
+  | _x, .inl hx => let ⟨y, hy, hxy⟩ := hs hx; ⟨y, .inl hy, hxy⟩
+  | _x, .inr hx => let ⟨y, hy, hxy⟩ := ht hx; ⟨y, .inr hy, hxy⟩
+
+/-- A maximal `U`-separated subset of a set `s` is a `U`-cover of `s`.
+
+[R. Vershynin, *High Dimensional Probability*][vershynin2018high], 4.2.6. -/
+lemma IsCover.of_maximal_isSeparated [U.IsRefl] [U.IsSymm]
+    (hN : Maximal (fun N ↦ N ⊆ s ∧ IsSeparated U N) N) : IsCover U s N := by
+  rintro x hx
+  by_contra! h
+  simpa [U.rfl] using h _ <| hN.2 (y := insert x N) ⟨by simp [insert_subset_iff, hx, hN.1.1],
+    hN.1.2.insert fun y hy hxy ↦ (h y hy hxy).elim⟩ (subset_insert _ _) (mem_insert _ _)
+
+@[simp] lemma isCover_id : IsCover .id s N ↔ s ⊆ N := by simp [IsCover, subset_def]
+
+end SetRel
+```

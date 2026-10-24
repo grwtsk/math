@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.ExpandedPublicAudit.Variantdadcb154b60178bb70389777013e27af491530449f78729f31901bfd34379837
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6dc38ce67d20eb24c028475ff96525d355faaa86` · SHA-256 `fd28d4a2d04e8f807240368bd336f4aff349fdf3cc88f6d64ffd979c1e0dc99e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.SourceBalancedFirstPrimePrimitive.Variantad3636eae369b85ec0eaeefef90a28a3f3c00c93221e056ebff47775fe7d57f7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ad3636eae369b85ec0eaeefef90a28a3f3c00c93221e056ebff47775fe7d57f7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.SourceBalancedFirstPrimePrimitive.Variantad3636eae369b85ec0eaeefef90a28a3f3c00c93221e056ebff47775fe7d57f7","mathematical_subject":"Topology.GeneralTopology","original_sha256":"ad3636eae369b85ec0eaeefef90a28a3f3c00c93221e056ebff47775fe7d57f7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/graph-review/balanced-first-prime-native/author-final-v2/ExpandedPublicAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceBalancedFirstPrimePrimitive
+
+namespace GRWTSK.Topology.GeneralTopology.SourceBalancedFirstPrimePrimitive.Variantad3636eae369b85ec0eaeefef90a28a3f3c00c93221e056ebff47775fe7d57f7
+
+set_option linter.hashCommand false
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeHead
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeHead
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity_eq
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity_eq
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity_intervalIntegrable
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity_intervalIntegrable
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive_continuous
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive_continuous
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive_at_lower
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive_at_lower
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity_abs_le
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeDensity_abs_le
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive_abs_le
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimePrimitive_abs_le
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrime_curvature_intervalIntegrable
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrime_curvature_intervalIntegrable
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrime_head_abs_le
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrime_head_abs_le
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeHead_abs_le
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeHead_abs_le
+#check RH16BalancedFirstPrimePrimitive.balancedFirstPrimeHead_abs_le_at_radius
+#print axioms RH16BalancedFirstPrimePrimitive.balancedFirstPrimeHead_abs_le_at_radius
+```

@@ -1,0 +1,147 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Order.Variant5b035f56d493181eed2b2ca6a7bf43b05f08f04061f9447ee4b3275d44284d8f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4d7f0e9d8d54f788bbecc058e19ee9acc6fa8e89` · SHA-256 `9816a2c40e0857dd3169451eb6a1528447af34e8b1e466e98929859c3cc36910`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.FilterMapMulLeftNhdsGT.Variant4923ce32a632108dcadf53ad7669f1170dbd5cb5a4c5aac09a719e4d328e5aaa","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4923ce32a632108dcadf53ad7669f1170dbd5cb5a4c5aac09a719e4d328e5aaa","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.FilterMapMulLeftNhdsGT.Variant4923ce32a632108dcadf53ad7669f1170dbd5cb5a4c5aac09a719e4d328e5aaa","mathematical_subject":"Topology.GeneralTopology","original_sha256":"4923ce32a632108dcadf53ad7669f1170dbd5cb5a4c5aac09a719e4d328e5aaa","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/Algebra/Group/Order.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2017 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Mario Carneiro, Patrick Massot
+-/
+module
+
+public import Mathlib.Algebra.Order.Group.Pointwise.Interval
+public import Mathlib.Topology.Algebra.Group.ContinuousDiv
+
+/-!
+# Ordered topological groups
+
+Behavior of one-sided neighborhood filters under multiplication, inversion, and division in
+ordered topological groups.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.FilterMapMulLeftNhdsGT.Variant4923ce32a632108dcadf53ad7669f1170dbd5cb5a4c5aac09a719e4d328e5aaa
+
+public section
+
+open Filter Topology Pointwise
+
+variable {H : Type*}
+
+section OrderedCommGroup
+
+variable [TopologicalSpace H] [CommGroup H] [PartialOrder H] [IsOrderedMonoid H]
+
+section mul
+
+variable [ContinuousMul H]
+
+@[to_additive (attr := simp)]
+theorem Filter.map_mul_left_nhdsGT {c a : H} : map (c * ·) (𝓝[>] a) = 𝓝[>] (c * a) := by
+  convert! (Homeomorph.mulLeft c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp [mul_comm]
+
+@[to_additive (attr := simp)]
+theorem Filter.map_mul_left_nhdsLT {c a : H} : map (c * ·) (𝓝[<] a) = 𝓝[<] (c * a) := by
+  convert! (Homeomorph.mulLeft c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp [mul_comm]
+
+@[to_additive (attr := simp)]
+theorem Filter.map_mul_right_nhdsGT {c a : H} : map (· * c) (𝓝[>] a) = 𝓝[>] (a * c) := by
+  convert! (Homeomorph.mulRight c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+@[to_additive (attr := simp)]
+theorem Filter.map_mul_right_nhdsLT {c a : H} : map (· * c) (𝓝[<] a) = 𝓝[<] (a * c) := by
+  convert! (Homeomorph.mulRight c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+end mul
+
+section inv
+
+variable [ContinuousInv H]
+
+@[to_additive (attr := simp)]
+theorem Filter.inv_nhdsGT {a : H} : (𝓝[>] a)⁻¹ = 𝓝[<] (a⁻¹) := by
+  convert! (Homeomorph.inv H).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+@[to_additive (attr := simp)]
+theorem Filter.inv_nhdsLT {a : H} : (𝓝[<] a)⁻¹ = 𝓝[>] (a⁻¹) := by
+  convert! (Homeomorph.inv H).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+@[to_additive]
+theorem tendsto_inv_nhdsGT {a : H} : Tendsto Inv.inv (𝓝[>] a) (𝓝[<] a⁻¹) :=
+  (continuous_inv.tendsto a).inf <| by simp
+
+@[to_additive]
+theorem tendsto_inv_nhdsLT {a : H} : Tendsto Inv.inv (𝓝[<] a) (𝓝[>] a⁻¹) :=
+  (continuous_inv.tendsto a).inf <| by simp
+
+@[to_additive]
+theorem tendsto_inv_nhdsGT_inv {a : H} : Tendsto Inv.inv (𝓝[>] a⁻¹) (𝓝[<] a) := by
+  simpa only [inv_inv] using tendsto_inv_nhdsGT (a := a⁻¹)
+
+@[to_additive]
+theorem tendsto_inv_nhdsLT_inv {a : H} : Tendsto Inv.inv (𝓝[<] a⁻¹) (𝓝[>] a) := by
+  simpa only [inv_inv] using tendsto_inv_nhdsLT (a := a⁻¹)
+
+@[to_additive]
+theorem tendsto_inv_nhdsGE {a : H} : Tendsto Inv.inv (𝓝[≥] a) (𝓝[≤] a⁻¹) :=
+  (continuous_inv.tendsto a).inf <| by simp
+
+@[to_additive]
+theorem tendsto_inv_nhdsLE {a : H} : Tendsto Inv.inv (𝓝[≤] a) (𝓝[≥] a⁻¹) :=
+  (continuous_inv.tendsto a).inf <| by simp
+
+@[to_additive]
+theorem tendsto_inv_nhdsGE_inv {a : H} : Tendsto Inv.inv (𝓝[≥] a⁻¹) (𝓝[≤] a) := by
+  simpa only [inv_inv] using tendsto_inv_nhdsGE (a := a⁻¹)
+
+@[to_additive]
+theorem tendsto_inv_nhdsLE_inv {a : H} : Tendsto Inv.inv (𝓝[≤] a⁻¹) (𝓝[≥] a) := by
+  simpa only [inv_inv] using tendsto_inv_nhdsLE (a := a⁻¹)
+
+alias tendsto_inv_nhdsWithin_Iic_inv := tendsto_inv_nhdsLE_inv
+
+end inv
+
+end OrderedCommGroup
+
+section OrderedDiv
+
+variable [TopologicalSpace H] [CommGroup H] [IsTopologicalGroup H]
+  [PartialOrder H] [IsOrderedMonoid H]
+
+@[to_additive (attr := simp)]
+theorem Filter.map_divRight_nhdsGT {c a : H} : map (· / c) (𝓝[>] a) = 𝓝[>] (a / c) := by
+  convert! (Homeomorph.divRight c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+@[to_additive (attr := simp)]
+theorem Filter.map_divRight_nhdsLT {c a : H} : map (· / c) (𝓝[<] a) = 𝓝[<] (a / c) := by
+  convert! (Homeomorph.divRight c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+@[to_additive (attr := simp)]
+theorem Filter.map_divLeft_nhdsGT {c a : H} : map (c / ·) (𝓝[>] a) = 𝓝[<] (c / a) := by
+  convert! (Homeomorph.divLeft c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+@[to_additive (attr := simp)]
+theorem Filter.map_divLeft_nhdsLT {c a : H} : map (c / ·) (𝓝[<] a) = 𝓝[>] (c / a) := by
+  convert! (Homeomorph.divLeft c).isEmbedding.map_nhdsWithin_eq .. using 2
+  simp
+
+end OrderedDiv
+```

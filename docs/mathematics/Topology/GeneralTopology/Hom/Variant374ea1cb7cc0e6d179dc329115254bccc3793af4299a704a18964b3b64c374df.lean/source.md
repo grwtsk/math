@@ -1,0 +1,146 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Hom.Variant374ea1cb7cc0e6d179dc329115254bccc3793af4299a704a18964b3b64c374df
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e2be79f59d3b25d8cdf426bdcae29840b648fc79` · SHA-256 `823c3b504f7dbc3e5a3d7586f01dd1709f618465471870b576869c5a52366762`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.IsSelfAdjointMapSpectrumReal.Variant39e02df0389ade95f3747f8fc58e05836b7b708e2c64ed34ef2bdeeb696c9f68","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"39e02df0389ade95f3747f8fc58e05836b7b708e2c64ed34ef2bdeeb696c9f68","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.IsSelfAdjointMapSpectrumReal.Variant39e02df0389ade95f3747f8fc58e05836b7b708e2c64ed34ef2bdeeb696c9f68","mathematical_subject":"Topology.GeneralTopology","original_sha256":"39e02df0389ade95f3747f8fc58e05836b7b708e2c64ed34ef2bdeeb696c9f68","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Analysis/CStarAlgebra/Hom.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Jireh Loreaux. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jireh Loreaux
+-/
+module
+
+public import Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Order
+
+/-! # Properties of C⋆-algebra homomorphisms
+
+Here we collect properties of C⋆-algebra homomorphisms.
+
+## Main declarations
+
++ `NonUnitalStarAlgHom.norm_map`: A non-unital star algebra monomorphism of complex C⋆-algebras
+  is isometric.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.IsSelfAdjointMapSpectrumReal.Variant39e02df0389ade95f3747f8fc58e05836b7b708e2c64ed34ef2bdeeb696c9f68
+
+public section
+
+open CStarAlgebra
+
+open ContinuousFunctionalCalculus in
+lemma IsSelfAdjoint.map_spectrum_real {F 𝕜 A B : Type*} [RCLike 𝕜]
+    [Ring A] [StarRing A] [TopologicalSpace A] [Algebra ℝ A] [Algebra 𝕜 A]
+    [Ring B] [StarRing B] [TopologicalSpace B] [Algebra ℝ B] [Algebra 𝕜 B]
+    [ContinuousFunctionalCalculus ℝ A IsSelfAdjoint]
+    [ContinuousFunctionalCalculus ℝ B IsSelfAdjoint]
+    [IsScalarTower ℝ 𝕜 A] [IsScalarTower ℝ 𝕜 B]
+    [ContinuousMap.UniqueHom ℝ B] [FunLike F A B] [AlgHomClass F 𝕜 A B] [StarHomClass F A B]
+    {a : A} (ha : IsSelfAdjoint a) (φ : F) (hφ : Function.Injective φ)
+    (hφ' : Continuous φ := by fun_prop) :
+    spectrum ℝ (φ a) = spectrum ℝ a := by
+  have h_spec := AlgHom.spectrum_apply_subset ((.ofClass φ : A →⋆ₐ[𝕜] B).restrictScalars ℝ) a
+  refine Set.eq_of_subset_of_subset h_spec fun x hx ↦ ?_
+  /- we prove the reverse inclusion by contradiction, so assume that `x ∈ spectrum ℝ a`, but
+  `x ∉ spectrum ℝ (φ a)`. Then by Urysohn's lemma we can get a function for which `f x = 1`, but
+  `f = 0` on `spectrum ℝ a`. -/
+  by_contra hx'
+  obtain ⟨f, h_eqOn, h_eqOn_x, -⟩ := exists_continuous_zero_one_of_isClosed
+    (isCompact_spectrum (R := ℝ) (φ a)).isClosed (isClosed_singleton (x := x)) <| by simpa
+  /- it suffices to show that `φ (f a) = 0`, for if so, then `f a = 0` by injectivity of `φ`, and
+  hence `f = 0` on `spectrum ℝ a`, contradicting the fact that `f x = 1`. -/
+  suffices φ (cfc f a) = 0 by
+    rw [map_eq_zero_iff φ hφ, ← cfc_zero ℝ a, cfc_eq_cfc_iff_eqOn] at this
+    exact zero_ne_one <| calc
+      0 = f x := (this hx).symm
+      _ = 1 := h_eqOn_x <| Set.mem_singleton x
+  /- Finally, `φ (f a) = f (φ a) = 0`, where the last equality follows since `f = 0` on
+  `spectrum ℝ (φ a)`. -/
+  calc φ (cfc f a) = cfc f (φ a) := StarAlgHomClass.map_cfc φ f a
+    _ = cfc (0 : ℝ → ℝ) (φ a) := cfc_congr h_eqOn
+    _ = 0 := by simp
+
+open CStarAlgebra in
+lemma IsSelfAdjoint.map_quasispectrum_real {F A B : Type*}
+    [NonUnitalCStarAlgebra A] [NonUnitalCStarAlgebra B]
+    [FunLike F A B] [NonUnitalAlgHomClass F ℂ A B] [StarHomClass F A B]
+    {a : A} (ha : IsSelfAdjoint a) (φ : F) (hφ : Function.Injective φ) :
+    quasispectrum ℝ (φ a) = quasispectrum ℝ a := by
+  replace hφ : Function.Injective (.ofClass φ : A →⋆ₙₐ[ℂ] B) := hφ
+  simpa [Unitization.starMap_inr, ← Unitization.quasispectrum_eq_spectrum_inr']
+    using (ha.inr ℂ).map_spectrum_real _ (Unitization.starMap_injective hφ)
+
+section OrderEmbedding
+
+variable {F A B : Type*}
+    [NonUnitalCStarAlgebra A] [PartialOrder A] [StarOrderedRing A]
+    [NonUnitalCStarAlgebra B] [PartialOrder B] [StarOrderedRing B]
+    [FunLike F A B] [NonUnitalAlgHomClass F ℂ A B] [StarHomClass F A B]
+
+/-- A non-unital star monomorphism between C⋆-algebras is an order embedding. -/
+def NonUnitalStarAlgHom.toOrderEmbedding (φ : A →⋆ₙₐ[ℂ] B) (hφ : Function.Injective φ) :
+    A ↪o B where
+  toFun := φ
+  inj' := hφ
+  map_rel_iff' {a b} := by
+    simp only [Function.Embedding.coeFn_mk]
+    refine ⟨?_, (OrderHomClass.mono φ ·)⟩
+    rw [← sub_nonneg, ← sub_nonneg (a := b), ← map_sub φ]
+    simp_rw [nonneg_iff_isSelfAdjoint_and_quasispectrumRestricts, QuasispectrumRestricts.nnreal_iff]
+    rintro ⟨h₁, h₂⟩
+    have h_sa := h₁.of_map φ hφ
+    exact ⟨h_sa, by rwa [← h_sa.map_quasispectrum_real φ hφ]⟩
+
+/-- A non-unital star monomorphism between C⋆-algebras is an order embedding. -/
+protected lemma NonUnitalStarAlgHom.map_le_map_iff (f : F) (hf : Function.Injective f) {x y : A} :
+    f x ≤ f y ↔ x ≤ y :=
+  (toOrderEmbedding (ofClass f) hf).le_iff_le
+
+protected lemma NonUnitalStarAlgHom.map_lt_map_iff (f : F) (hf : Function.Injective f) {x y : A} :
+    f x < f y ↔ x < y :=
+  (toOrderEmbedding (ofClass f) hf).lt_iff_lt
+
+end OrderEmbedding
+namespace NonUnitalStarAlgHom
+
+variable {F A B : Type*} [NonUnitalCStarAlgebra A] [NonUnitalCStarAlgebra B]
+variable [FunLike F A B] [NonUnitalAlgHomClass F ℂ A B] [StarHomClass F A B]
+
+open CStarAlgebra Unitization in
+/-- A non-unital star algebra monomorphism of complex C⋆-algebras is isometric. -/
+lemma norm_map (φ : F) (hφ : Function.Injective φ) (a : A) : ‖φ a‖ = ‖a‖ := by
+  /- Since passing to the unitization is functorial, and it is an isometric embedding, we may assume
+  that `φ` is a unital star algebra monomorphism and that `A` and `B` are unital C⋆-algebras. -/
+  suffices ∀ {ψ : Unitization ℂ A →⋆ₐ[ℂ] Unitization ℂ B} (_ : Function.Injective ψ)
+      (a : Unitization ℂ A), ‖ψ a‖ = ‖a‖ by
+    simpa [norm_inr] using this (starMap_injective (φ := ofClass φ) hφ) a
+  intro ψ hψ a
+  -- to show `‖ψ a‖ = ‖a‖`, by the C⋆-property it suffices to show `‖ψ (star a * a)‖ = ‖star a * a‖`
+  rw [← sq_eq_sq₀ (by positivity) (by positivity)]
+  simp only [sq, ← CStarRing.norm_star_mul_self, ← map_star, ← map_mul]
+  /- since `star a * a` is selfadjoint, it has the same `ℝ`-spectrum as `ψ (star a * a)`.
+  Since the spectral radius over `ℝ` coincides with the norm, `‖ψ (star a * a)‖ = ‖star a * a‖`. -/
+  have ha : IsSelfAdjoint (star a * a) := .star_mul_self a
+  calc ‖ψ (star a * a)‖ = (spectralRadius ℝ (ψ (star a * a))).toReal :=
+      ha.map ψ |>.toReal_spectralRadius_eq_norm.symm
+    _ = (spectralRadius ℝ (star a * a)).toReal := by
+      simp only [spectralRadius_eq_of_unital, ha.map_spectrum_real ψ hψ]
+    _ = ‖star a * a‖ := ha.toReal_spectralRadius_eq_norm
+
+/-- A non-unital star algebra monomorphism of complex C⋆-algebras is isometric. -/
+lemma nnnorm_map (φ : F) (hφ : Function.Injective φ) (a : A) : ‖φ a‖₊ = ‖a‖₊ :=
+  Subtype.ext <| norm_map φ hφ a
+
+lemma isometry (φ : F) (hφ : Function.Injective φ) : Isometry φ :=
+  AddMonoidHomClass.isometry_of_norm φ (norm_map φ hφ)
+
+end NonUnitalStarAlgHom
+```

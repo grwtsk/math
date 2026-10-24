@@ -1,0 +1,286 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Foundations.Variantb90f7e08b564d0821523d6cec3a9f41ff84731c82cde1c296f3a3a1789a07f15
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d0b220f8ce10e5792df44657ae94d8c8e013fa45` · SHA-256 `f2125f108ec0899ec1d7d5767e1d2b6f6bf4d7c3748fc31f9dd97e49bb4f960a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.TopologicalSpaceLike.Variantff52815b0beec4fbb10024e06fff2a6a71be9ede8593f79098c5cb5790f92fd9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ff52815b0beec4fbb10024e06fff2a6a71be9ede8593f79098c5cb5790f92fd9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.TopologicalSpaceLike.Variantff52815b0beec4fbb10024e06fff2a6a71be9ede8593f79098c5cb5790f92fd9","mathematical_subject":"Topology.GeneralTopology","original_sha256":"ff52815b0beec4fbb10024e06fff2a6a71be9ede8593f79098c5cb5790f92fd9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/22/Reflexive/formal/lean/fcrs/FCRS/Topology/Foundations.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026.
+Released under Apache 2.0.
+
+A minimal topology interface implemented with Lean core only.  Open sets are
+predicates, so this module does not depend on Mathlib's `Set` or topology APIs.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.TopologicalSpaceLike.Variantff52815b0beec4fbb10024e06fff2a6a71be9ede8593f79098c5cb5790f92fd9
+
+universe u v w uI
+
+namespace FCRS.Topology
+
+/-- A core-only set is its membership predicate. -/
+abbrev Set (X : Type u) : Type u := X → Prop
+
+instance {X : Type u} : Membership X (Set X) where
+  mem U x := U x
+
+namespace Set
+
+def univ {X : Type u} : Set X := fun _ => True
+
+def empty {X : Type u} : Set X := fun _ => False
+
+def inter {X : Type u} (U V : Set X) : Set X :=
+  fun x => x ∈ U ∧ x ∈ V
+
+def union {X : Type u} (U V : Set X) : Set X :=
+  fun x => x ∈ U ∨ x ∈ V
+
+def compl {X : Type u} (U : Set X) : Set X :=
+  fun x => ¬ x ∈ U
+
+def subset {X : Type u} (U V : Set X) : Prop :=
+  ∀ ⦃x⦄, x ∈ U → x ∈ V
+
+def preimage {X : Type u} {Y : Type v}
+    (f : X → Y) (V : Set Y) : Set X :=
+  fun x => f x ∈ V
+
+def image {X : Type u} {Y : Type v}
+    (f : X → Y) (U : Set X) : Set Y :=
+  fun y => ∃ x, x ∈ U ∧ f x = y
+
+def range {X : Type u} {Y : Type v} (f : X → Y) : Set Y :=
+  fun y => ∃ x, f x = y
+
+def sUnion {X : Type u} (𝒰 : Set (Set X)) : Set X :=
+  fun x => ∃ U, U ∈ 𝒰 ∧ x ∈ U
+
+def iUnion {X : Type u} {ι : Type uI} (U : ι → Set X) : Set X :=
+  fun x => ∃ i, x ∈ U i
+
+theorem ext {X : Type u} {U V : Set X}
+    (h : ∀ x, x ∈ U ↔ x ∈ V) : U = V := by
+  funext x
+  exact propext (h x)
+
+@[simp] theorem mem_univ {X : Type u} (x : X) : x ∈ (univ : Set X) :=
+  True.intro
+
+@[simp] theorem not_mem_empty {X : Type u} (x : X) : ¬ x ∈ (empty : Set X) :=
+  fun h => h
+
+end Set
+
+/-- The open-set axioms for a topology, with arbitrary unions represented by `sUnion`. -/
+structure TopologicalSpaceLike (X : Type u) where
+  IsOpen : Set X → Prop
+  isOpen_univ : IsOpen Set.univ
+  isOpen_inter :
+    ∀ U V, IsOpen U → IsOpen V → IsOpen (Set.inter U V)
+  isOpen_sUnion :
+    ∀ 𝒰 : Set (Set X),
+      (∀ U, U ∈ 𝒰 → IsOpen U) →
+      IsOpen (Set.sUnion 𝒰)
+
+/-- The empty set is open in every topology. -/
+theorem TopologicalSpaceLike.isOpen_empty
+    {X : Type u} (T : TopologicalSpaceLike X) : T.IsOpen Set.empty := by
+  have h := T.isOpen_sUnion (fun _ => False) (by
+    intro U hU
+    exact False.elim hU)
+  have hs : Set.sUnion (fun _ : Set X => False) = Set.empty := by
+    apply Set.ext
+    intro x
+    constructor
+    · intro hx
+      obtain ⟨U, hU, _⟩ := hx
+      exact False.elim hU
+    · intro hx
+      exact False.elim hx
+  rw [hs] at h
+  exact h
+
+/-- The discrete topology, in which every predicate is open. -/
+def discreteTopology (X : Type u) : TopologicalSpaceLike X where
+  IsOpen := fun _ => True
+  isOpen_univ := True.intro
+  isOpen_inter := by
+    intro _ _ _ _
+    exact True.intro
+  isOpen_sUnion := by
+    intro _ _
+    exact True.intro
+
+/--
+The topology generated by a family of subsets.  It is defined as the
+intersection of all topologies containing the generators; this avoids any
+choice or transfinite closure construction.
+-/
+def generatedTopology {X : Type u}
+    (generators : Set (Set X)) : TopologicalSpaceLike X where
+  IsOpen := fun U =>
+    ∀ T : TopologicalSpaceLike X,
+      (∀ G, G ∈ generators → T.IsOpen G) →
+      T.IsOpen U
+  isOpen_univ := by
+    intro T _
+    exact T.isOpen_univ
+  isOpen_inter := by
+    intro U V hU hV T hgen
+    exact T.isOpen_inter U V (hU T hgen) (hV T hgen)
+  isOpen_sUnion := by
+    intro 𝒰 h𝒰 T hgen
+    exact T.isOpen_sUnion 𝒰 (fun U hU => h𝒰 U hU T hgen)
+
+/-- Every declared generator is open in the generated topology. -/
+theorem generatedTopology_isOpen
+    {X : Type u} {generators : Set (Set X)}
+    {U : Set X} (hU : U ∈ generators) :
+    (generatedTopology generators).IsOpen U := by
+  intro T hgen
+  exact hgen U hU
+
+/-- Initial topology generated by inverse images of open sets along `f`. -/
+def inducedTopology {X : Type u} {Y : Type v}
+    (TY : TopologicalSpaceLike Y) (f : X → Y) : TopologicalSpaceLike X :=
+  generatedTopology (fun U =>
+    ∃ V, TY.IsOpen V ∧ U = Set.preimage f V)
+
+/-- The subspace topology is the topology induced by the subtype projection. -/
+def subspaceTopology {X : Type u}
+    (TX : TopologicalSpaceLike X) (S : Set X) :
+    TopologicalSpaceLike {x : X // x ∈ S} :=
+  inducedTopology TX Subtype.val
+
+/-- Product topology generated by inverse images along the two projections. -/
+def productTopology {X : Type u} {Y : Type v}
+    (TX : TopologicalSpaceLike X) (TY : TopologicalSpaceLike Y) :
+    TopologicalSpaceLike (X × Y) :=
+  generatedTopology (fun U =>
+    (∃ V, TX.IsOpen V ∧ U = Set.preimage Prod.fst V) ∨
+    (∃ W, TY.IsOpen W ∧ U = Set.preimage Prod.snd W))
+
+/-- Coproduct topology: a subset is open exactly when both summand preimages are open. -/
+def sumTopology {X : Type u} {Y : Type v}
+    (TX : TopologicalSpaceLike X) (TY : TopologicalSpaceLike Y) :
+    TopologicalSpaceLike (Sum X Y) where
+  IsOpen := fun U =>
+    TX.IsOpen (Set.preimage Sum.inl U) ∧
+    TY.IsOpen (Set.preimage Sum.inr U)
+  isOpen_univ := ⟨TX.isOpen_univ, TY.isOpen_univ⟩
+  isOpen_inter := by
+    intro U V hU hV
+    exact ⟨TX.isOpen_inter _ _ hU.1 hV.1,
+      TY.isOpen_inter _ _ hU.2 hV.2⟩
+  isOpen_sUnion := by
+    intro 𝒰 h𝒰
+    constructor
+    · let leftFamily : Set (Set X) :=
+        fun A => ∃ U, U ∈ 𝒰 ∧ A = Set.preimage Sum.inl U
+      have hopen : ∀ A, A ∈ leftFamily → TX.IsOpen A := by
+        intro A hA
+        obtain ⟨U, hU, rfl⟩ := hA
+        exact (h𝒰 U hU).1
+      have h := TX.isOpen_sUnion leftFamily hopen
+      have heq : Set.sUnion leftFamily =
+          Set.preimage Sum.inl (Set.sUnion 𝒰) := by
+        apply Set.ext
+        intro x
+        constructor
+        · intro hx
+          obtain ⟨A, ⟨U, hU, rfl⟩, hxU⟩ := hx
+          exact ⟨U, hU, hxU⟩
+        · intro hx
+          obtain ⟨U, hU, hxU⟩ := hx
+          exact ⟨Set.preimage Sum.inl U, ⟨U, hU, rfl⟩, hxU⟩
+      rw [heq] at h
+      exact h
+    · let rightFamily : Set (Set Y) :=
+        fun A => ∃ U, U ∈ 𝒰 ∧ A = Set.preimage Sum.inr U
+      have hopen : ∀ A, A ∈ rightFamily → TY.IsOpen A := by
+        intro A hA
+        obtain ⟨U, hU, rfl⟩ := hA
+        exact (h𝒰 U hU).2
+      have h := TY.isOpen_sUnion rightFamily hopen
+      have heq : Set.sUnion rightFamily =
+          Set.preimage Sum.inr (Set.sUnion 𝒰) := by
+        apply Set.ext
+        intro y
+        constructor
+        · intro hy
+          obtain ⟨A, ⟨U, hU, rfl⟩, hyU⟩ := hy
+          exact ⟨U, hU, hyU⟩
+        · intro hy
+          obtain ⟨U, hU, hyU⟩ := hy
+          exact ⟨Set.preimage Sum.inr U, ⟨U, hU, rfl⟩, hyU⟩
+      rw [heq] at h
+      exact h
+
+/-- Arbitrary dependent product topology generated by coordinate projections. -/
+def piTopology {ι : Type uI} {X : ι → Type u}
+    (T : ∀ i, TopologicalSpaceLike (X i)) :
+    TopologicalSpaceLike ((i : ι) → X i) :=
+  generatedTopology (fun U =>
+    ∃ i V, (T i).IsOpen V ∧ U = Set.preimage (fun x => x i) V)
+
+/--
+Final topology along `q`.  This is the quotient topology when `q` is a
+quotient map: a target subset is open exactly when its inverse image is open.
+-/
+def quotientTopology {X : Type u} {Y : Type v}
+    (TX : TopologicalSpaceLike X) (q : X → Y) :
+    TopologicalSpaceLike Y where
+  IsOpen := fun V => TX.IsOpen (Set.preimage q V)
+  isOpen_univ := TX.isOpen_univ
+  isOpen_inter := by
+    intro U V hU hV
+    exact TX.isOpen_inter _ _ hU hV
+  isOpen_sUnion := by
+    intro 𝒰 h𝒰
+    let preimages : Set (Set X) :=
+      fun A => ∃ U, U ∈ 𝒰 ∧ A = Set.preimage q U
+    have hopen : ∀ A, A ∈ preimages → TX.IsOpen A := by
+      intro A hA
+      obtain ⟨U, hU, rfl⟩ := hA
+      exact h𝒰 U hU
+    have h := TX.isOpen_sUnion preimages hopen
+    have heq : Set.sUnion preimages =
+        Set.preimage q (Set.sUnion 𝒰) := by
+      apply Set.ext
+      intro x
+      constructor
+      · intro hx
+        obtain ⟨A, ⟨U, hU, rfl⟩, hxU⟩ := hx
+        exact ⟨U, hU, hxU⟩
+      · intro hx
+        obtain ⟨U, hU, hxU⟩ := hx
+        exact ⟨Set.preimage q U, ⟨U, hU, rfl⟩, hxU⟩
+    rw [heq] at h
+    exact h
+
+/-- A family of subsets covers a target subset. -/
+def Covers {X : Type u} (cover : Set (Set X)) (target : Set X) : Prop :=
+  ∀ x, x ∈ target → ∃ U, U ∈ cover ∧ x ∈ U
+
+/--
+Open-cover compactness with a finite subcover represented by a `List`.
+This is a genuine topological predicate; abstract carriers must supply proofs.
+-/
+def Compact {X : Type u} (TX : TopologicalSpaceLike X) : Prop :=
+  ∀ cover : Set (Set X),
+    (∀ U, U ∈ cover → TX.IsOpen U) →
+    Covers cover Set.univ →
+    ∃ finiteCover : List (Set X),
+      (∀ U, List.Mem U finiteCover → U ∈ cover) ∧
+      (∀ x, ∃ U, List.Mem U finiteCover ∧ x ∈ U)
+
+end FCRS.Topology
+```

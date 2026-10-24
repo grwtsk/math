@@ -1,0 +1,89 @@
+# DeltaGeneratedSpace.continuous_iff
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f4049ce0-5dd9-a5a9-0753-86f3df97c984",
+  "kind": "lemma",
+  "lexical_name": "DeltaGeneratedSpace.continuous_iff",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "deltageneratedspace-continuous-iff--53ccee981c96743c81e5142c",
+  "source": {
+    "blob": "a10a350e7e184ef78d37f44d48b4c5d06b028722",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 101,
+    "line": 94,
+    "path": "GRWTSK/Topology/GeneralTopology/DeltaGeneratedSpace/Variant31c42cbb92b0a6c548bb06d2f22c5627de011f1ec9bc7f3cbaa241bfcad93338.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:53ccee981c96743c81e5142cca490ab58112929b74973ba0f99b7b868b0d100f",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/DeltaGeneratedSpace/Variant31c42cbb92b0a6c548bb06d2f22c5627de011f1ec9bc7f3cbaa241bfcad93338.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f4049ce0-5dd9-a5a9-0753-86f3df97c984`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 94–101.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma DeltaGeneratedSpace.continuous_iff [DeltaGeneratedSpace X] {f : X → Y} :
+    Continuous f ↔ ∀ (n : ℕ) (p : C(((Fin n) → ℝ), X)), Continuous (f ∘ p) := by
+  simp_rw [continuous_iff_coinduced_le]
+  nth_rewrite 1 [eq_deltaGenerated (X := X), deltaGenerated]
+  simp [coinduced_compose, Sigma.forall]
+
+/-- A map out of a delta-generated space is continuous iff it is continuous with respect
+  to the delta-generated topology on the codomain. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/DeltaGeneratedSpace/Variant31c42cbb92b0a6c548bb06d2f22c5627de011f1ec9bc7f3cbaa241bfcad93338.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/DeltaGeneratedSpace/Variant31c42cbb92b0a6c548bb06d2f22c5627de011f1ec9bc7f3cbaa241bfcad93338.lean#L94).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a10a350e7e184ef78d37f44d48b4c5d06b028722` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

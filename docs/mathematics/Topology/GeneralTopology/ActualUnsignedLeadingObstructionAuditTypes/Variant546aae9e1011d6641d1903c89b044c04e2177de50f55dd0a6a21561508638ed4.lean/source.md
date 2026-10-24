@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.ActualUnsignedLeadingObstructionAuditTypes.Variant546aae9e1011d6641d1903c89b044c04e2177de50f55dd0a6a21561508638ed4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2791e799f09bc817d4125785cbbf82bf93756735` · SHA-256 `e523a3f6f683be285a29f082eedd6ff615ba5ca795fc06e367c498603c317f93`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.ActualUnsignedLeadingObstruction.Variant8571ce46fbc988b63319920e3db8e54b58fb6cfbd50b7ed876e3aa10651cd4fd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8571ce46fbc988b63319920e3db8e54b58fb6cfbd50b7ed876e3aa10651cd4fd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.ActualUnsignedLeadingObstruction.Variant8571ce46fbc988b63319920e3db8e54b58fb6cfbd50b7ed876e3aa10651cd4fd","mathematical_subject":"Topology.GeneralTopology","original_sha256":"8571ce46fbc988b63319920e3db8e54b58fb6cfbd50b7ed876e3aa10651cd4fd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualUnsignedLeadingObstructionAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualUnsignedLeadingObstruction
+
+namespace GRWTSK.Topology.GeneralTopology.ActualUnsignedLeadingObstruction.Variant8571ce46fbc988b63319920e3db8e54b58fb6cfbd50b7ed876e3aa10651cd4fd
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower_at_source_cutoff
+#print axioms RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower_at_source_cutoff
+#check RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead
+#print axioms RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead
+#check RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead_lower
+#print axioms RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead_lower
+#check RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead_tendsto_atTop
+#print axioms RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead_tendsto_atTop
+#check RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead_no_uniform_upper
+#print axioms RH16IndependentChallengeNext.actualUnsignedLeadingPlusHead_no_uniform_upper
+```

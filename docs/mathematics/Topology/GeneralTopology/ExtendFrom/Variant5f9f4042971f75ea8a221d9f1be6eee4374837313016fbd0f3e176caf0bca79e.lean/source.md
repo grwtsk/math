@@ -1,0 +1,121 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.ExtendFrom.Variant5f9f4042971f75ea8a221d9f1be6eee4374837313016fbd0f3e176caf0bca79e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4173e3492bf59eabaabea7c00334218fddcd26e2` · SHA-256 `0d37c944893f05a4bc2cb56b4659c3c0fe79a1f3f80a0e02bb70a8877ff766b6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.ContinuousOnIccExtendFromIoo.Variant840dc5363936d5928a68e3cff35d18791a3423c0f4ec7d110c4fcd4388c57eb1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"840dc5363936d5928a68e3cff35d18791a3423c0f4ec7d110c4fcd4388c57eb1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.ContinuousOnIccExtendFromIoo.Variant840dc5363936d5928a68e3cff35d18791a3423c0f4ec7d110c4fcd4388c57eb1","mathematical_subject":"Topology.GeneralTopology","original_sha256":"840dc5363936d5928a68e3cff35d18791a3423c0f4ec7d110c4fcd4388c57eb1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/Order/ExtendFrom.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2017 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Mario Carneiro, Yury Kudryashov
+-/
+module
+
+public import Mathlib.Topology.ExtendFrom
+public import Mathlib.Topology.Order.DenselyOrdered
+
+/-!
+# Lemmas about `extendFrom` in an order topology.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.ContinuousOnIccExtendFromIoo.Variant840dc5363936d5928a68e3cff35d18791a3423c0f4ec7d110c4fcd4388c57eb1
+
+public section
+
+open Filter Set
+
+open scoped Topology
+
+variable {α β : Type*} [TopologicalSpace α] [LinearOrder α] [DenselyOrdered α] [OrderTopology α]
+  [TopologicalSpace β] {f : α → β} {a b : α} {la lb : β}
+
+section RegularSpace
+
+variable [RegularSpace β]
+
+theorem continuousOn_Icc_extendFrom_Ioo
+    (hf : ContinuousOn f (Ioo a b)) (ha : Tendsto f (𝓝[>] a) (𝓝 la))
+    (hb : Tendsto f (𝓝[<] b) (𝓝 lb)) : ContinuousOn (extendFrom (Ioo a b) f) (Icc a b) := by
+  by_cases! hab : a = b
+  · simp [hab]
+  apply continuousOn_extendFrom
+  · rw [closure_Ioo hab]
+  · intro x x_in
+    rcases eq_endpoints_or_mem_Ioo_of_mem_Icc x_in with (rfl | rfl | h)
+    · exact ⟨la, ha.mono_left <| nhdsWithin_mono _ Ioo_subset_Ioi_self⟩
+    · exact ⟨lb, hb.mono_left <| nhdsWithin_mono _ Ioo_subset_Iio_self⟩
+    · exact ⟨f x, hf x h⟩
+
+theorem continuousOn_uIcc_extendFrom_uIoo
+    (hf : ContinuousOn f (uIoo a b))
+    (ha : Tendsto f (𝓝[uIoo a b] a) (𝓝 la)) (hb : Tendsto f (𝓝[uIoo a b] b) (𝓝 lb)) :
+    ContinuousOn (extendFrom (uIoo a b) f) (uIcc a b) := by
+  by_cases! hab : a = b
+  · simp [hab]
+  obtain hab' | hba' := hab.lt_or_gt
+  · simp only [hab', uIoo_of_lt, nhdsWithin_Ioo_eq_nhdsGT, nhdsWithin_Ioo_eq_nhdsLT,
+      uIcc_of_lt] at ha hb hf ⊢
+    exact continuousOn_Icc_extendFrom_Ioo hf ha hb
+  · simp only [hba', uIoo_of_gt, nhdsWithin_Ioo_eq_nhdsGT, nhdsWithin_Ioo_eq_nhdsLT,
+      uIcc_of_gt] at ha hb hf ⊢
+    exact continuousOn_Icc_extendFrom_Ioo hf hb ha
+
+theorem continuousOn_Ico_extendFrom_Ioo
+    (hf : ContinuousOn f (Ioo a b)) (ha : Tendsto f (𝓝[>] a) (𝓝 la)) :
+    ContinuousOn (extendFrom (Ioo a b) f) (Ico a b) := by
+  by_cases! hab : a ≥ b
+  · simp [hab]
+  apply continuousOn_extendFrom
+  · rw [closure_Ioo hab.ne]
+    exact Ico_subset_Icc_self
+  · intro x x_in
+    rcases eq_left_or_mem_Ioo_of_mem_Ico x_in with (rfl | h)
+    · use la
+      simpa [hab]
+    · exact ⟨f x, hf x h⟩
+
+theorem continuousOn_Ioc_extendFrom_Ioo
+    (hf : ContinuousOn f (Ioo a b)) (hb : Tendsto f (𝓝[<] b) (𝓝 lb)) :
+    ContinuousOn (extendFrom (Ioo a b) f) (Ioc a b) := by
+  have := continuousOn_Ico_extendFrom_Ioo (f := f ∘ OrderDual.ofDual) (a := OrderDual.toDual b)
+    (b := OrderDual.toDual a) (la := lb)
+  rw [Ico_toDual, Ioi_toDual, Ioo_toDual] at this
+  exact this hf hb
+
+end RegularSpace
+
+section T2Space
+
+variable [T2Space β]
+
+theorem eq_lim_at_left_extendFrom_Ioo (hab : a < b)
+    (ha : Tendsto f (𝓝[>] a) (𝓝 la)) : extendFrom (Ioo a b) f a = la := by
+  apply extendFrom_eq
+  · rw [closure_Ioo hab.ne]
+    simp only [le_of_lt hab, left_mem_Icc]
+  · simpa [hab]
+
+theorem eq_lim_at_right_extendFrom_Ioo (hab : a < b)
+    (hb : Tendsto f (𝓝[<] b) (𝓝 lb)) : extendFrom (Ioo a b) f b = lb := by
+  apply extendFrom_eq
+  · rw [closure_Ioo hab.ne]
+    simp only [le_of_lt hab, right_mem_Icc]
+  · simpa [hab]
+
+theorem eq_lim_at_left_extendFrom_uIoo (hab : a ≠ b)
+    (ha : Tendsto f (𝓝[uIoo a b] a) (𝓝 la)) : extendFrom (uIoo a b) f a = la :=
+  extendFrom_eq (by simp [hab]) ha
+
+theorem eq_lim_at_right_extendFrom_uIoo (hab : a ≠ b)
+    (hb : Tendsto f (𝓝[uIoo a b] b) (𝓝 lb)) : extendFrom (uIoo a b) f b = lb :=
+  extendFrom_eq (by simp [hab]) hb
+
+end T2Space
+```

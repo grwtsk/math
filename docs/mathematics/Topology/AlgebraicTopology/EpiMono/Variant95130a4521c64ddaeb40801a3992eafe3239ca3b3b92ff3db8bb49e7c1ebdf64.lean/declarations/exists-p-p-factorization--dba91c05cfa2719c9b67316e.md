@@ -1,0 +1,124 @@
+# exists_P_σ_P_δ_factorization
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "4cd525b5a635abdde91199d56354a1d531e8e7d5",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 167,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/95/95130a4521c64ddaeb40801a3992eafe3239ca3b3b92ff3db8bb49e7c1ebdf64.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:5731f541-e988-df4b-b6ae-c295b89fa147",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:7f76a18c-2a57-7387-7c99-45b1d347b940",
+  "kind": "theorem",
+  "lexical_name": "exists_P_σ_P_δ_factorization",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exists-p-p-factorization--dba91c05cfa2719c9b67316e",
+  "source": {
+    "blob": "4cd525b5a635abdde91199d56354a1d531e8e7d5",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 197,
+    "line": 167,
+    "path": "GRWTSK/Topology/AlgebraicTopology/EpiMono/Variant95130a4521c64ddaeb40801a3992eafe3239ca3b3b92ff3db8bb49e7c1ebdf64.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:dba91c05cfa2719c9b67316e14b092c5f8cbf23c221ccbd239554715b02bdeb8",
+  "verification": {
+    "reference": "docs/verification/Topology/AlgebraicTopology/EpiMono/Variant95130a4521c64ddaeb40801a3992eafe3239ca3b3b92ff3db8bb49e7c1ebdf64.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:7f76a18c-2a57-7387-7c99-45b1d347b940`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 167–197.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem exists_P_σ_P_δ_factorization {x y : SimplexCategoryGenRel} (f : x ⟶ y) :
+    ∃ (z : SimplexCategoryGenRel) (e : x ⟶ z) (m : z ⟶ y)
+        (_ : P_σ e) (_ : P_δ m), f = e ≫ m := by
+  induction f with
+  | @id n => use (mk n), (𝟙 (mk n)), (𝟙 (mk n)), P_σ.id_mem _, P_δ.id_mem _; simp
+  | @comp_δ n n' f j h =>
+    obtain ⟨z, e, m, ⟨he, hm, rfl⟩⟩ := h
+    exact ⟨z, e, m ≫ δ j, he, P_δ.comp_mem _ _ hm (P_δ.δ _), by simp⟩
+  | @comp_σ n n' f j h =>
+    obtain ⟨z, e, m, ⟨he, hm, rfl⟩⟩ := h
+    cases hm with
+    | of g hg =>
+      rcases hg with ⟨i⟩
+      obtain ⟨_, _, _, ⟨he₁, hm₁, h₁⟩⟩ := factor_δ_σ j i
+      exact ⟨_, _, _, P_σ.comp_mem _ _ he he₁, hm₁,
+        by simp [← h₁]⟩
+    | @id n =>
+      exact ⟨mk n', e ≫ σ j, 𝟙 _, P_σ.comp_mem _ _ he (P_σ.σ _), P_δ.id_mem _, by simp⟩
+    | comp_of f g hf hg =>
+      cases n' with
+      | zero =>
+        cases hg
+        exact ⟨_, _, _, he, hf, by simp [switch_δ_σ₀]⟩
+      | succ n =>
+        rcases hg with ⟨i⟩
+        obtain h' | ⟨j', j'', h'⟩ := switch_δ_σ j i
+        · exact ⟨_, _, _, he, hf, by simp [h']⟩
+        · obtain ⟨_, _, m₁, ⟨he₁, hm₁, h₁⟩⟩ := factor_P_δ_σ j' f hf
+          exact ⟨_, _, m₁ ≫ δ j'', P_σ.comp_mem _ _ he he₁, P_δ.comp_mem _ _ hm₁ (P_δ.δ _),
+            by simp [← reassoc_of% h₁, h']⟩
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/AlgebraicTopology/EpiMono/Variant95130a4521c64ddaeb40801a3992eafe3239ca3b3b92ff3db8bb49e7c1ebdf64.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/AlgebraicTopology/EpiMono/Variant95130a4521c64ddaeb40801a3992eafe3239ca3b3b92ff3db8bb49e7c1ebdf64.lean#L167).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4cd525b5a635abdde91199d56354a1d531e8e7d5` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

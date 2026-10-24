@@ -1,0 +1,178 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:593c280cd58f3ab9f05de69b2366f8d6d46c48b6bf41c241843d407223f292df",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--dab7e8d6405fd550c80f3023",
+  "source": {
+    "blob": "5e7a68560164efce84911dd90a9cf7aecab24db8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 148,
+    "line": 52,
+    "path": "GRWTSK/Topology/GeneralTopology/Baire/Variante55662b227d025b09ea04b442d5fa79dcbf68f77c20d8ea00f3f9e04da04e2b7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:dab7e8d6405fd550c80f30230020ebfcfc06dbd3c03dacbef3d4fc3d059e1961",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Baire/Variante55662b227d025b09ea04b442d5fa79dcbf68f77c20d8ea00f3f9e04da04e2b7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:593c280cd58f3ab9f05de69b2366f8d6d46c48b6bf41c241843d407223f292df`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 52–148.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance (priority := 100) baire_category_theorem_emetric_complete [PseudoEMetricSpace α]
+    [CompleteSpace α] : BaireSpace α := by
+  refine' ⟨fun f ho hd => _⟩
+  let B : ℕ → ℝ≥0∞ := fun n => 1 / 2 ^ n
+  have Bpos : ∀ n, 0 < B n := by
+    intro n
+    simp only [one_div, one_mul, ENNReal.inv_pos]
+    exact pow_ne_top two_ne_top
+  /- Translate the density assumption into two functions `center` and `radius` associating
+    to any n, x, δ, δpos a center and a positive radius such that
+    `closedBall center radius` is included both in `f n` and in `closedBall x δ`.
+    We can also require `radius ≤ (1/2)^(n+1)`, to ensure we get a Cauchy sequence later. -/
+  have : ∀ n x δ, δ ≠ 0 → ∃ y r, 0 < r ∧ r ≤ B (n + 1) ∧ closedBall y r ⊆ closedBall x δ ∩ f n := by
+    intro n x δ δpos
+    have : x ∈ closure (f n) := hd n x
+    rcases EMetric.mem_closure_iff.1 this (δ / 2) (ENNReal.half_pos δpos) with ⟨y, ys, xy⟩
+    rw [edist_comm] at xy
+    obtain ⟨r, rpos, hr⟩ : ∃ r > 0, closedBall y r ⊆ f n :=
+      nhds_basis_closed_eball.mem_iff.1 (isOpen_iff_mem_nhds.1 (ho n) y ys)
+    refine' ⟨y, min (min (δ / 2) r) (B (n + 1)), _, _, fun z hz => ⟨_, _⟩⟩
+    show 0 < min (min (δ / 2) r) (B (n + 1))
+    exact lt_min (lt_min (ENNReal.half_pos δpos) rpos) (Bpos (n + 1))
+    show min (min (δ / 2) r) (B (n + 1)) ≤ B (n + 1)
+    exact min_le_right _ _
+    show z ∈ closedBall x δ
+    exact
+      calc
+        edist z x ≤ edist z y + edist y x := edist_triangle _ _ _
+        _ ≤ min (min (δ / 2) r) (B (n + 1)) + δ / 2 := (add_le_add hz (le_of_lt xy))
+        _ ≤ δ / 2 + δ / 2 := (add_le_add (le_trans (min_le_left _ _) (min_le_left _ _)) le_rfl)
+        _ = δ := ENNReal.add_halves δ
+    show z ∈ f n
+    exact hr (calc
+      edist z y ≤ min (min (δ / 2) r) (B (n + 1)) := hz
+      _ ≤ r := le_trans (min_le_left _ _) (min_le_right _ _))
+  choose! center radius Hpos HB Hball using this
+  refine' fun x => (mem_closure_iff_nhds_basis nhds_basis_closed_eball).2 fun ε εpos => _
+  /- `ε` is positive. We have to find a point in the ball of radius `ε` around `x` belonging to all
+    `f n`. For this, we construct inductively a sequence `F n = (c n, r n)` such that the closed
+    ball `closedBall (c n) (r n)` is included in the previous ball and in `f n`, and such that
+    `r n` is small enough to ensure that `c n` is a Cauchy sequence. Then `c n` converges to a
+    limit which belongs to all the `f n`. -/
+  let F : ℕ → α × ℝ≥0∞ := fun n =>
+    Nat.recOn n (Prod.mk x (min ε (B 0))) fun n p => Prod.mk (center n p.1 p.2) (radius n p.1 p.2)
+  let c : ℕ → α := fun n => (F n).1
+  let r : ℕ → ℝ≥0∞ := fun n => (F n).2
+  have rpos : ∀ n, 0 < r n := by
+    intro n
+    induction' n with n hn
+    exact lt_min εpos (Bpos 0)
+    exact Hpos n (c n) (r n) hn.ne'
+  have r0 : ∀ n, r n ≠ 0 := fun n => (rpos n).ne'
+  have rB : ∀ n, r n ≤ B n := by
+    intro n
+    induction' n with n _
+    exact min_le_right _ _
+    exact HB n (c n) (r n) (r0 n)
+  have incl : ∀ n, closedBall (c (n + 1)) (r (n + 1)) ⊆ closedBall (c n) (r n) ∩ f n :=
+    fun n => Hball n (c n) (r n) (r0 n)
+  have cdist : ∀ n, edist (c n) (c (n + 1)) ≤ B n := by
+    intro n
+    rw [edist_comm]
+    have A : c (n + 1) ∈ closedBall (c (n + 1)) (r (n + 1)) := mem_closedBall_self
+    have I :=
+      calc
+        closedBall (c (n + 1)) (r (n + 1)) ⊆ closedBall (c n) (r n) :=
+          Subset.trans (incl n) (inter_subset_left _ _)
+        _ ⊆ closedBall (c n) (B n) := closedBall_subset_closedBall (rB n)
+    exact I A
+  have : CauchySeq c := cauchySeq_of_edist_le_geometric_two _ one_ne_top cdist
+  -- as the sequence `c n` is Cauchy in a complete space, it converges to a limit `y`.
+  rcases cauchySeq_tendsto_of_complete this with ⟨y, ylim⟩
+  -- this point `y` will be the desired point. We will check that it belongs to all
+  -- `f n` and to `ball x ε`.
+  use y
+  simp only [exists_prop, Set.mem_iInter]
+  have I : ∀ n, ∀ m ≥ n, closedBall (c m) (r m) ⊆ closedBall (c n) (r n) := by
+    intro n
+    refine' Nat.le_induction _ fun m _ h => _
+    · exact Subset.refl _
+    · exact Subset.trans (incl m) (Subset.trans (inter_subset_left _ _) h)
+  have yball : ∀ n, y ∈ closedBall (c n) (r n) := by
+    intro n
+    refine' isClosed_ball.mem_of_tendsto ylim _
+    refine' (Filter.eventually_ge_atTop n).mono fun m hm => _
+    exact I n m hm mem_closedBall_self
+  constructor
+  show ∀ n, y ∈ f n
+  · intro n
+    have : closedBall (c (n + 1)) (r (n + 1)) ⊆ f n :=
+      Subset.trans (incl n) (inter_subset_right _ _)
+    exact this (yball (n + 1))
+  show edist y x ≤ ε
+  exact le_trans (yball 0) (min_le_left _ _)
+#align baire_category_theorem_emetric_complete baire_category_theorem_emetric_complete
+
+/-- The second theorem states that locally compact spaces are Baire. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Baire/Variante55662b227d025b09ea04b442d5fa79dcbf68f77c20d8ea00f3f9e04da04e2b7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Baire/Variante55662b227d025b09ea04b442d5fa79dcbf68f77c20d8ea00f3f9e04da04e2b7.lean#L52).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5e7a68560164efce84911dd90a9cf7aecab24db8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

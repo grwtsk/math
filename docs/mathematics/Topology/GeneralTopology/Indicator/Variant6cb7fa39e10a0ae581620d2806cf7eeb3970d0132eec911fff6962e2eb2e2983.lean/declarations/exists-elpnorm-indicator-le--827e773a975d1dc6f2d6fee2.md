@@ -1,0 +1,121 @@
+# exists_eLpNorm_indicator_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "f1e3cb8f8af6e9931b4e0a3797e2a91bab232c88",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 35,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/6c/6cb7fa39e10a0ae581620d2806cf7eeb3970d0132eec911fff6962e2eb2e2983.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:8cd781ba-e10a-9cd1-8507-95ae410bb8c9",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:5a5e96b4-21bb-a08f-6698-b5a55c0e7d37",
+  "kind": "theorem",
+  "lexical_name": "exists_eLpNorm_indicator_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exists-elpnorm-indicator-le--827e773a975d1dc6f2d6fee2",
+  "source": {
+    "blob": "f1e3cb8f8af6e9931b4e0a3797e2a91bab232c88",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 62,
+    "line": 35,
+    "path": "GRWTSK/Topology/GeneralTopology/Indicator/Variant6cb7fa39e10a0ae581620d2806cf7eeb3970d0132eec911fff6962e2eb2e2983.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:827e773a975d1dc6f2d6fee2d1ced1df16c5ee5b139ef977c85934d32c54bfe8",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Indicator/Variant6cb7fa39e10a0ae581620d2806cf7eeb3970d0132eec911fff6962e2eb2e2983.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:5a5e96b4-21bb-a08f-6698-b5a55c0e7d37`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 35–62.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem exists_eLpNorm_indicator_le (hp : p ≠ ∞) (c : E) {ε : ℝ≥0∞} (hε : ε ≠ 0) :
+    ∃ η : ℝ≥0, 0 < η ∧ ∀ s : Set α, μ s ≤ η → eLpNorm (s.indicator fun _ => c) p μ ≤ ε := by
+  rcases eq_or_ne p 0 with (rfl | h'p)
+  · exact ⟨1, zero_lt_one, fun s _ => by simp⟩
+  have hp₀ : 0 < p := bot_lt_iff_ne_bot.2 h'p
+  have hp₀' : 0 ≤ 1 / p.toReal := div_nonneg zero_le_one ENNReal.toReal_nonneg
+  have hp₀'' : 0 < p.toReal := ENNReal.toReal_pos hp₀.ne' hp
+  obtain ⟨η, hη_pos, hη_le⟩ : ∃ η : ℝ≥0, 0 < η ∧ ‖c‖ₑ * (η : ℝ≥0∞) ^ (1 / p.toReal) ≤ ε := by
+    have :
+      Filter.Tendsto (fun x : ℝ≥0 => ((‖c‖₊ * x ^ (1 / p.toReal) : ℝ≥0) : ℝ≥0∞)) (𝓝 0)
+        (𝓝 (0 : ℝ≥0)) := by
+      rw [ENNReal.tendsto_coe]
+      convert (NNReal.continuousAt_rpow_const (Or.inr hp₀')).tendsto.const_mul _
+      simp [hp₀''.ne']
+    have hε' : 0 < ε := hε.bot_lt
+    obtain ⟨δ, hδ, hδε'⟩ := NNReal.nhds_zero_basis.eventually_iff.mp (this.eventually_le_const hε')
+    obtain ⟨η, hη, hηδ⟩ := exists_between hδ
+    refine ⟨η, hη, ?_⟩
+    simpa only [← ENNReal.coe_rpow_of_nonneg _ hp₀', enorm, ← ENNReal.coe_mul] using hδε' hηδ
+  refine ⟨η, hη_pos, fun s hs => ?_⟩
+  refine (eLpNorm_indicator_const_le _ _).trans (le_trans ?_ hη_le)
+  exact mul_le_mul_left' (ENNReal.rpow_le_rpow hs hp₀') _
+
+section Topology
+variable {X : Type*} [TopologicalSpace X] [MeasurableSpace X]
+  {μ : Measure X} [IsFiniteMeasureOnCompacts μ]
+
+/-- A bounded measurable function with compact support is in L^p. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Indicator/Variant6cb7fa39e10a0ae581620d2806cf7eeb3970d0132eec911fff6962e2eb2e2983.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Indicator/Variant6cb7fa39e10a0ae581620d2806cf7eeb3970d0132eec911fff6962e2eb2e2983.lean#L35).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f1e3cb8f8af6e9931b4e0a3797e2a91bab232c88` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

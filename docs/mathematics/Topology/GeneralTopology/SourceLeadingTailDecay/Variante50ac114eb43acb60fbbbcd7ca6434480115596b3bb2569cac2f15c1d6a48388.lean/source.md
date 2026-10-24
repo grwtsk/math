@@ -1,0 +1,114 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.SourceLeadingTailDecay.Variante50ac114eb43acb60fbbbcd7ca6434480115596b3bb2569cac2f15c1d6a48388
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `40f059ae6c80dc8349a46ba40bb28b3e8f56dfa4` · SHA-256 `e50ac114eb43acb60fbbbcd7ca6434480115596b3bb2569cac2f15c1d6a48388`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceLeadingTailQuantitative
+
+/-!
+The genuine floor-sampled short-jet error tends to zero on the original real
+scale domain. The complete leading Moebius and arithmetic tail remain signed
+and joined. This analytic decay supplies no uniform arithmetic witness.
+Research direction: grwtsk contributors. Formal construction: OpenAI Codex.
+-/
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceLeadingTailDecay
+
+open Filter
+open scoped Topology
+open SourceLeadingTailQuantitative SourceLeadingTailBudget SourceLeadingFullKappaReduction
+open SourceRenormalizedActualSignedTail SourceFullPositiveKappa SourcePairing
+open SourceStrictComplementaryLocalization
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization EstimateVaughanSource EstimateMertensAbel
+
+noncomputable section
+
+/-- Independently specified genuine-coefficient majorant for the complete actual short error. -/
+def logarithmicLeadingErrorEnvelope (A : ℝ) : ℝ :=
+  80 * |fullPositiveKappa 1| * ((Real.log A) ^ 2 / A) +
+    (80 * |fullPositiveKappa 2| + (134 / 3 : ℝ) * |fullPositiveKappa 4|) *
+      (Real.log A / A) + 20 * |fullPositiveKappa 3| * (1 / A)
+
+/-- Every real floor scale retains the logarithmic majorant for its actual short error. -/
+theorem fullKappaShortBudget_le_logarithmic_envelope {A : ℝ} (hA : 91 ≤ A) :
+    fullKappaShortBudget A ≤ logarithmicLeadingErrorEnvelope A := by
+  have hp : 0 < A := by linarith
+  have hA1 : 1 ≤ A := by linarith
+  have hU1 := (actual_cutoff_order A hA1).1
+  have ht0 : 0 ≤ Real.log (vaughanCutoff A : ℝ) := Real.log_nonneg hU1
+  have hl0 : 0 ≤ Real.log A := Real.log_nonneg hA1
+  have hf : (vaughanCutoff A : ℝ) ≤ A ^ 2 := Nat.floor_le (sq_nonneg A)
+  have ht : Real.log (vaughanCutoff A : ℝ) ≤ 2 * Real.log A := by
+    have hh := Real.log_le_log (by linarith : 0 < (vaughanCutoff A : ℝ)) hf
+    simpa only [Real.log_pow, Nat.cast_ofNat] using hh
+  have ht2 : (Real.log (vaughanCutoff A : ℝ)) ^ 2 ≤ 4 * (Real.log A) ^ 2 := by
+    nlinarith
+  have hAc : A ≤ A ^ 3 := by nlinarith [sq_nonneg (A - 1)]
+  rw [fullKappaShortBudget_eq hp]
+  calc
+    _ ≤ (80 * |fullPositiveKappa 1| * (Real.log A) ^ 2 +
+        80 * |fullPositiveKappa 2| * Real.log A + 20 * |fullPositiveKappa 3|) / A +
+        (134 / 3 : ℝ) * |fullPositiveKappa 4| * Real.log A / A ^ 3 := by
+      apply add_le_add
+      · apply div_le_div_of_nonneg_right _ hp.le
+        nlinarith [mul_le_mul_of_nonneg_left ht2 (show 0 ≤ 20 * |fullPositiveKappa 1|
+          by positivity), mul_le_mul_of_nonneg_left ht (show 0 ≤ 40 * |fullPositiveKappa 2|
+          by positivity)]
+      · apply div_le_div_of_nonneg_right _ (by positivity : 0 ≤ A ^ 3)
+        nlinarith [mul_le_mul_of_nonneg_left ht
+          (show 0 ≤ (67 / 3 : ℝ) * |fullPositiveKappa 4| by positivity)]
+    _ ≤ (80 * |fullPositiveKappa 1| * (Real.log A) ^ 2 +
+        80 * |fullPositiveKappa 2| * Real.log A + 20 * |fullPositiveKappa 3|) / A +
+        (134 / 3 : ℝ) * |fullPositiveKappa 4| * Real.log A / A := by
+      apply add_le_add le_rfl
+      exact div_le_div_of_nonneg_left (by positivity) hp hAc
+    _ = _ := by unfold logarithmicLeadingErrorEnvelope; ring
+
+/-- The true coefficient envelope vanishes along the original real scale domain. -/
+theorem logarithmicLeadingErrorEnvelope_tendsto_zero :
+    Tendsto logarithmicLeadingErrorEnvelope atTop (𝓝 (0 : ℝ)) := by
+  unfold logarithmicLeadingErrorEnvelope
+  have h2 : Tendsto (fun A : ℝ => (Real.log A) ^ 2 / A) atTop (𝓝 (0 : ℝ)) := by
+    simpa only [one_mul, add_zero] using
+      Real.tendsto_pow_log_div_mul_add_atTop 1 0 2 (by norm_num)
+  have h1 : Tendsto (fun A : ℝ => Real.log A / A) atTop (𝓝 (0 : ℝ)) := by
+    simpa only [one_mul, add_zero, pow_one] using
+      Real.tendsto_pow_log_div_mul_add_atTop 1 0 1 (by norm_num)
+  have h0 : Tendsto (fun A : ℝ => 1 / A) atTop (𝓝 (0 : ℝ)) := by
+    simpa only [one_div] using tendsto_inv_atTop_zero
+  have hh := ((h2.const_mul (80 * |fullPositiveKappa 1|)).add
+    (h1.const_mul (80 * |fullPositiveKappa 2| + (134 / 3 : ℝ) * |fullPositiveKappa 4|))).add
+      (h0.const_mul (20 * |fullPositiveKappa 3|))
+  simpa only [logarithmicLeadingErrorEnvelope, mul_zero, add_zero] using hh
+
+/-- The actual full four-jet remainder, including all real floor jumps, tends to zero. -/
+theorem fullKappaShortBudget_tendsto_zero :
+    Tendsto fullKappaShortBudget atTop (𝓝 (0 : ℝ)) := by
+  apply squeeze_zero' _ _ logarithmicLeadingErrorEnvelope_tendsto_zero
+  · filter_upwards [eventually_ge_atTop (91 : ℝ)] with A hA
+    have hp : 0 < A := by linarith
+    have hU := (actual_cutoff_order A (by linarith : 1 ≤ A)).1
+    rw [fullKappaShortBudget_eq hp]
+    have ht := Real.log_nonneg hU
+    positivity
+  · filter_upwards [eventually_ge_atTop (91 : ℝ)] with A hA
+    exact fullKappaShortBudget_le_logarithmic_envelope hA
+
+/-- Leading and complete renormalized arithmetic sources have vanishing actual discrepancy. -/
+theorem renormalized_sub_actual_leading_tendsto_zero :
+    Tendsto (fun A : ℝ => renormalizedActualSignedTail A - actualLeadingRenormalizedTail A)
+      atTop (𝓝 (0 : ℝ)) := by
+  apply tendsto_zero_iff_norm_tendsto_zero.2
+  simp only [Real.norm_eq_abs]
+  apply squeeze_zero' (Eventually.of_forall (fun _ => abs_nonneg _)) _
+    fullKappaShortBudget_tendsto_zero
+  filter_upwards [eventually_ge_atTop (91 : ℝ)] with A hA
+  exact renormalized_tail_sub_actual_leading_abs_le hA
+
+end
+end FormalResearch.RiemannHypothesis.SourceLeadingTailDecay
+```

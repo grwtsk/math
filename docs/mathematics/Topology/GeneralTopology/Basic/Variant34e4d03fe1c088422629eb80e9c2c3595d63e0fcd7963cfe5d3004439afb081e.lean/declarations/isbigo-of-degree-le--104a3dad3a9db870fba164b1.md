@@ -1,0 +1,93 @@
+# isBigO_of_degree_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:cc1b792a-b010-7492-bf79-60c2bb7789ee",
+  "kind": "theorem",
+  "lexical_name": "isBigO_of_degree_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isbigo-of-degree-le--104a3dad3a9db870fba164b1",
+  "source": {
+    "blob": "543735a6dd0ef2e65cbeb1da05740a2ee09a12ab",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 226,
+    "line": 215,
+    "path": "GRWTSK/Topology/GeneralTopology/Basic/Variant34e4d03fe1c088422629eb80e9c2c3595d63e0fcd7963cfe5d3004439afb081e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:104a3dad3a9db870fba164b15e39d50c461aad568504c25b675cff8ae726205a",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Basic/Variant34e4d03fe1c088422629eb80e9c2c3595d63e0fcd7963cfe5d3004439afb081e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:cc1b792a-b010-7492-bf79-60c2bb7789ee`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 215–226.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem isBigO_of_degree_le (h : P.degree ≤ Q.degree) :
+    (fun x => eval x P) =O[atTop] fun x => eval x Q := by
+  by_cases hp : P = 0
+  · simpa [hp] using isBigO_zero (fun x => eval x Q) atTop
+  · have hq : Q ≠ 0 := ne_zero_of_degree_ge_degree h hp
+    have hPQ : ∀ᶠ x : 𝕜 in atTop, eval x Q = 0 → eval x P = 0 :=
+      Filter.mem_of_superset (Polynomial.eventually_no_roots Q hq) fun x h h' => absurd h' h
+    rcases le_iff_lt_or_eq.mp h with h | h
+    · exact isBigO_of_div_tendsto_nhds hPQ 0 (div_tendsto_zero_of_degree_lt P Q h)
+    · exact isBigO_of_div_tendsto_nhds hPQ _ (div_tendsto_leadingCoeff_div_of_degree_eq P Q h)
+
+end Polynomial
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Basic/Variant34e4d03fe1c088422629eb80e9c2c3595d63e0fcd7963cfe5d3004439afb081e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Basic/Variant34e4d03fe1c088422629eb80e9c2c3595d63e0fcd7963cfe5d3004439afb081e.lean#L215).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `543735a6dd0ef2e65cbeb1da05740a2ee09a12ab` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

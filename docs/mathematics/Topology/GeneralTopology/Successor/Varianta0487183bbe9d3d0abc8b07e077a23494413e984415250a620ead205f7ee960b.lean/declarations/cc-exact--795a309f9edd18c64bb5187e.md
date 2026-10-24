@@ -1,0 +1,129 @@
+# CC_exact
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "82708c8da58af4765325ed46578dc2389e289121",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 233,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/a0/a0487183bbe9d3d0abc8b07e077a23494413e984415250a620ead205f7ee960b.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:9a78c973-dfee-4422-9f88-d712963f0ac7",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:dd9ca984-ae97-04f8-270d-236e457d766b",
+  "kind": "theorem",
+  "lexical_name": "CC_exact",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "cc-exact--795a309f9edd18c64bb5187e",
+  "source": {
+    "blob": "82708c8da58af4765325ed46578dc2389e289121",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 268,
+    "line": 233,
+    "path": "GRWTSK/Topology/GeneralTopology/Successor/Varianta0487183bbe9d3d0abc8b07e077a23494413e984415250a620ead205f7ee960b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:795a309f9edd18c64bb5187ee33d56f8fedf84e0ee85db726ceff22881876e80",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Successor/Varianta0487183bbe9d3d0abc8b07e077a23494413e984415250a620ead205f7ee960b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:dd9ca984-ae97-04f8-270d-236e457d766b`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 233–268.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem CC_exact {f : LocallyConstant C ℤ} (hf : Linear_CC' C hsC ho f = 0) :
+    ∃ y, πs C o y = f := by
+  dsimp [Linear_CC', Linear_CC'₀, Linear_CC'₁] at hf
+  simp only [sub_eq_zero, ← LocallyConstant.coe_inj, LocallyConstant.coe_comap,
+    continuous_CC'₀, continuous_CC'₁] at hf
+  let C₀C : C0 C ho → C := fun x ↦ ⟨x.val, x.prop.1⟩
+  have h₀ : Continuous C₀C := Continuous.subtype_mk continuous_induced_dom _
+  let C₁C : π (C1 C ho) (ord I · < o) → C :=
+    fun x ↦ ⟨SwapTrue o x.val, (swapTrue_mem_C1 C hsC ho x).1⟩
+  have h₁ : Continuous C₁C := Continuous.subtype_mk
+    ((continuous_swapTrue o).comp continuous_subtype_val) _
+  refine ⟨LocallyConstant.piecewise' ?_ (isClosed_C0 C hC ho)
+      (isClosed_proj _ o (isClosed_C1 C hC ho)) (f.comap ⟨C₀C, h₀⟩) (f.comap ⟨C₁C, h₁⟩) ?_, ?_⟩
+  · rintro _ ⟨y, hyC, rfl⟩
+    simp only [Set.mem_union, Set.mem_setOf_eq, Set.mem_univ, iff_true]
+    rw [← union_C0C1_eq C ho] at hyC
+    refine hyC.imp (fun hyC ↦ ?_) (fun hyC ↦ ⟨y, hyC, rfl⟩)
+    rwa [C0_projOrd C hsC ho hyC]
+  · intro x hx
+    simpa only [h₀, h₁, LocallyConstant.coe_comap] using (congrFun hf ⟨x, hx⟩).symm
+  · ext ⟨x, hx⟩
+    rw [← union_C0C1_eq C ho] at hx
+    rcases hx with hx₀ | hx₁
+    · have hx₀' : ProjRestrict C (ord I · < o) ⟨x, hx⟩ = x := by
+        simpa only [ProjRestrict, Set.MapsTo.val_restrict_apply] using C0_projOrd C hsC ho hx₀
+      simp only [C₀C, πs_apply_apply, hx₀', hx₀, LocallyConstant.piecewise'_apply_left,
+        LocallyConstant.coe_comap, ContinuousMap.coe_mk, Function.comp_apply]
+    · have hx₁' : (ProjRestrict C (ord I · < o) ⟨x, hx⟩).val ∈ π (C1 C ho) (ord I · < o) := by
+        simpa only [ProjRestrict, Set.MapsTo.val_restrict_apply] using ⟨x, hx₁, rfl⟩
+      simp only [C₁C, πs_apply_apply, continuous_projRestrict, LocallyConstant.coe_comap,
+        Function.comp_apply, hx₁', LocallyConstant.piecewise'_apply_right, h₁]
+      congr
+      simp only [ContinuousMap.coe_mk, Subtype.mk.injEq]
+      exact C1_projOrd C hsC ho hx₁
+
+variable (o) in
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Successor/Varianta0487183bbe9d3d0abc8b07e077a23494413e984415250a620ead205f7ee960b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Successor/Varianta0487183bbe9d3d0abc8b07e077a23494413e984415250a620ead205f7ee960b.lean#L233).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `82708c8da58af4765325ed46578dc2389e289121` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

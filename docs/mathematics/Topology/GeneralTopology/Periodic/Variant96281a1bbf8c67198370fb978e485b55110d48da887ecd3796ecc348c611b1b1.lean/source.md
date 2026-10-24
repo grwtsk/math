@@ -1,0 +1,84 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Periodic.Variant96281a1bbf8c67198370fb978e485b55110d48da887ecd3796ecc348c611b1b1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3fa7558121d6e6d22640a1e65a1728ad545b4f59` · SHA-256 `5ac414584132628091a34f84916252505582217342f51dcda1c5dc4afdc00e9e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.PeriodicGcd.Variant055107f8419355a8d8d027310e5330cc61c7a8cc95d4fa04379c9ff15062e611","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"055107f8419355a8d8d027310e5330cc61c7a8cc95d4fa04379c9ff15062e611","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.PeriodicGcd.Variant055107f8419355a8d8d027310e5330cc61c7a8cc95d4fa04379c9ff15062e611","mathematical_subject":"Topology.GeneralTopology","original_sha256":"055107f8419355a8d8d027310e5330cc61c7a8cc95d4fa04379c9ff15062e611","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Data/Nat/Periodic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Bolton Bailey. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Bolton Bailey
+-/
+module
+
+public import Mathlib.Algebra.Ring.Periodic
+public import Mathlib.Data.Nat.Count
+
+/-!
+# Periodic Functions on ℕ
+
+This file identifies a few functions on `ℕ` which are periodic, and also proves a lemma about
+periodic predicates which helps determine their cardinality when filtering intervals over them.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.PeriodicGcd.Variant055107f8419355a8d8d027310e5330cc61c7a8cc95d4fa04379c9ff15062e611
+
+public section
+
+assert_not_exists TwoSidedIdeal
+
+namespace Nat
+
+open Function
+
+theorem periodic_gcd (a : ℕ) : Periodic (gcd a) a :=
+  a.gcd_add_self_right
+
+theorem periodic_coprime (a : ℕ) : Periodic (Coprime a) a :=
+  fun _ ↦ eq_iff_iff.mpr coprime_add_self_right
+
+theorem periodic_mod (a : ℕ) : Periodic (fun n => n % a) a :=
+  (add_mod_right · a)
+
+theorem _root_.GRWTSK.Topology.GeneralTopology.PeriodicGcd.Variant055107f8419355a8d8d027310e5330cc61c7a8cc95d4fa04379c9ff15062e611.Function.Periodic.map_mod_nat {α : Type*} {f : ℕ → α} {a : ℕ} (hf : Periodic f a) :
+    ∀ n, f (n % a) = f n := fun n => by
+  conv_rhs => rw [← n.mod_add_div a, mul_comm, ← Nat.nsmul_eq_mul, hf.nsmul]
+
+section Multiset
+
+open Multiset
+
+/-- An interval of length `a` filtered over a periodic predicate of period `a` has cardinality
+equal to the number naturals below `a` for which `p a` is true. -/
+theorem filter_multiset_Ico_card_eq_of_periodic (n a : ℕ) (p : ℕ → Prop) [DecidablePred p]
+    (pp : Periodic p a) : card (filter p (Ico n (n + a))) = a.count p := by
+  classical
+  rw [count_eq_card_filter_range, Finset.card, Finset.filter_val, Finset.range_val, ←
+    multiset_Ico_map_mod n, ← map_count_True_eq_filter_card, ← map_count_True_eq_filter_card,
+    map_map]
+  congr; funext n
+  exact (pp.map_mod_nat n).symm
+
+end Multiset
+
+section Finset
+
+open Finset
+
+/-- An interval of length `a` filtered over a periodic predicate of period `a` has cardinality
+equal to the number naturals below `a` for which `p a` is true. -/
+theorem filter_Ico_card_eq_of_periodic (n a : ℕ) (p : ℕ → Prop) [DecidablePred p]
+    (pp : Periodic p a) : ((Ico n (n + a)).filter p).card = a.count p :=
+  n.filter_multiset_Ico_card_eq_of_periodic a p pp
+
+end Finset
+
+end Nat
+```

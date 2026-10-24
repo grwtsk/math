@@ -1,0 +1,105 @@
+# norm_le_sqrt_two_mul_max
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "0e2b6317a777c4d168a9098fb17ad33323efd4c3",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 212,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/7f/7f719d7b3ba3ba8b4667a8f79e7efd5d8fb4da2b82dcca011e64129113a63eba.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:9630c7b0-1f68-4558-6f99-6e3c6e8d8cd3",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:c11d626a-0ad9-16f5-9a9a-ea7a0f0619c9",
+  "kind": "theorem",
+  "lexical_name": "norm_le_sqrt_two_mul_max",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "norm-le-sqrt-two-mul-max--649a9e9c38fc3334e162d499",
+  "source": {
+    "blob": "0e2b6317a777c4d168a9098fb17ad33323efd4c3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 223,
+    "line": 212,
+    "path": "GRWTSK/Topology/MetricTopology/Norm/Variant7f719d7b3ba3ba8b4667a8f79e7efd5d8fb4da2b82dcca011e64129113a63eba.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:649a9e9c38fc3334e162d4992078e7a6d02e93ecfe209763711a136aa429c1c2",
+  "verification": {
+    "reference": "docs/verification/Topology/MetricTopology/Norm/Variant7f719d7b3ba3ba8b4667a8f79e7efd5d8fb4da2b82dcca011e64129113a63eba.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:c11d626a-0ad9-16f5-9a9a-ea7a0f0619c9`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 212–223.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem norm_le_sqrt_two_mul_max (z : ℂ) : ‖z‖ ≤ √2 * max |z.re| |z.im| := by
+  obtain ⟨x, y⟩ := z
+  simp only [norm_def, normSq_mk, norm_def, ← sq]
+  set m := max |x| |y|
+  have hm₀ : 0 ≤ m := by positivity
+  calc
+    √(x ^ 2 + y ^ 2) ≤ √(m ^ 2 + m ^ 2) := by
+      gcongr √(?_ + ?_) <;> rw [sq_le_sq, abs_of_nonneg hm₀]
+      exacts [le_max_left _ _, le_max_right _ _]
+    _ = √2 * m := by
+      rw [← two_mul, Real.sqrt_mul, Real.sqrt_sq] <;> positivity
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/MetricTopology/Norm/Variant7f719d7b3ba3ba8b4667a8f79e7efd5d8fb4da2b82dcca011e64129113a63eba.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/MetricTopology/Norm/Variant7f719d7b3ba3ba8b4667a8f79e7efd5d8fb4da2b82dcca011e64129113a63eba.lean#L212).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0e2b6317a777c4d168a9098fb17ad33323efd4c3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

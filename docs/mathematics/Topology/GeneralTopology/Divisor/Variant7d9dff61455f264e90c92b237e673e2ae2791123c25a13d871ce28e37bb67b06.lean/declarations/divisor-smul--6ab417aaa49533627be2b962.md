@@ -1,0 +1,113 @@
+# divisor_smul
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "8892fe84c8719893454c5228af5c8f9751072e92",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 136,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/7d/7d9dff61455f264e90c92b237e673e2ae2791123c25a13d871ce28e37bb67b06.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:7ccb376e-15db-db21-cf93-46ee7a3162e4",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:0c0ace31-a551-b0e7-ff41-15dbe0a8029d",
+  "kind": "theorem",
+  "lexical_name": "divisor_smul",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "divisor-smul--6ab417aaa49533627be2b962",
+  "source": {
+    "blob": "8892fe84c8719893454c5228af5c8f9751072e92",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 155,
+    "line": 136,
+    "path": "GRWTSK/Topology/GeneralTopology/Divisor/Variant7d9dff61455f264e90c92b237e673e2ae2791123c25a13d871ce28e37bb67b06.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:6ab417aaa49533627be2b962af04cfd91958c83684c3aca3edb2f7bb2d14d8d6",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Divisor/Variant7d9dff61455f264e90c92b237e673e2ae2791123c25a13d871ce28e37bb67b06.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0c0ace31-a551-b0e7-ff41-15dbe0a8029d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 136–155.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem divisor_smul {f₁ : 𝕜 → 𝕜} {f₂ : 𝕜 → E} (h₁f₁ : MeromorphicOn f₁ U)
+    (h₁f₂ : MeromorphicOn f₂ U) (h₂f₁ : ∀ z ∈ U, meromorphicOrderAt f₁ z ≠ ⊤)
+    (h₂f₂ : ∀ z ∈ U, meromorphicOrderAt f₂ z ≠ ⊤) :
+    divisor (f₁ • f₂) U = divisor f₁ U + divisor f₂ U := by
+  ext z
+  by_cases hz : z ∈ U
+  · lift meromorphicOrderAt f₁ z to ℤ using (h₂f₁ z hz) with a₁ ha₁
+    lift meromorphicOrderAt f₂ z to ℤ using (h₂f₂ z hz) with a₂ ha₂
+    simp [h₁f₁, h₁f₂, h₁f₁.smul h₁f₂, hz, meromorphicOrderAt_smul (h₁f₁ z hz) (h₁f₂ z hz),
+      ← ha₁, ← ha₂, ← WithTop.coe_add]
+  · simp [hz]
+
+/--
+If orders are finite, the divisor of the product of two meromorphic functions is the sum of the
+divisors.
+
+See `MeromorphicOn.exists_order_ne_top_iff_forall` and
+`MeromorphicOn.order_ne_top_of_isPreconnected` for two convenient criteria to guarantee conditions
+`h₂f₁` and `h₂f₂`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Divisor/Variant7d9dff61455f264e90c92b237e673e2ae2791123c25a13d871ce28e37bb67b06.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Divisor/Variant7d9dff61455f264e90c92b237e673e2ae2791123c25a13d871ce28e37bb67b06.lean#L136).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8892fe84c8719893454c5228af5c8f9751072e92` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

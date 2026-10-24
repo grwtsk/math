@@ -1,0 +1,70 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.LocallyCompactRegular.Variant5c370444f1d5f4255cf8fb1cfac90a383ea80648928fe1a87fe86a2dea2eccdc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ed4196e80cb15932c67c8057bafb36c95e596952` · SHA-256 `8fba25cd137edc0f83b5ad5dee5ae17639f875de07611d3c027cab842b0f9e51`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.Compacts.Variant1d9922b71218d720edf82d47db4c91cff959e358345b5ce5231ddc9dfcd09dcd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1d9922b71218d720edf82d47db4c91cff959e358345b5ce5231ddc9dfcd09dcd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.Compacts.Variant1d9922b71218d720edf82d47db4c91cff959e358345b5ce5231ddc9dfcd09dcd","mathematical_subject":"Topology.GeneralTopology","original_sha256":"1d9922b71218d720edf82d47db4c91cff959e358345b5ce5231ddc9dfcd09dcd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Topology/Baire/LocallyCompactRegular.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Damien Thomine. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Damien Thomine
+-/
+import Mathlib.Topology.Sets.Compacts
+
+/-!
+# Second Baire theorem
+
+In this file we prove that a locally compact regular topological space has Baire property.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.Compacts.Variant1d9922b71218d720edf82d47db4c91cff959e358345b5ce5231ddc9dfcd09dcd
+
+open TopologicalSpace Set
+
+/-- **Second Baire theorem**: locally compact R₁ spaces are Baire. -/
+instance (priority := 100) BaireSpace.of_t2Space_locallyCompactSpace {X : Type*}
+    [TopologicalSpace X] [R1Space X] [LocallyCompactSpace X] : BaireSpace X := by
+  constructor
+  intro f ho hd
+  /- To prove that an intersection of open dense subsets is dense, prove that its intersection
+    with any open neighbourhood `U` is dense. Define recursively a decreasing sequence `K` of
+    compact neighbourhoods: start with some compact neighbourhood inside `U`, then at each step,
+    take its interior, intersect with `f n`, then choose a compact neighbourhood inside the
+    intersection. -/
+  rw [dense_iff_inter_open]
+  intro U U_open U_nonempty
+  -- Choose an antitone sequence of positive compacts such that `closure (K 0) ⊆ U`
+  -- and `closure (K (n + 1)) ⊆ f n` for all `n`
+  obtain ⟨K, hK_anti, hKf, hKU⟩ : ∃ K : ℕ → PositiveCompacts X,
+      (∀ n, K (n + 1) ≤ K n) ∧ (∀ n, closure ↑(K (n + 1)) ⊆ f n) ∧ closure ↑(K 0) ⊆ U := by
+    rcases U_open.exists_positiveCompacts_closure_subset U_nonempty with ⟨K₀, hK₀⟩
+    have : ∀ (n) (K : PositiveCompacts X),
+        ∃ K' : PositiveCompacts X, closure ↑K' ⊆ f n ∩ interior K := by
+      refine fun n K ↦ ((ho n).inter isOpen_interior).exists_positiveCompacts_closure_subset ?_
+      rw [inter_comm]
+      exact (hd n).inter_open_nonempty _ isOpen_interior K.interior_nonempty
+    choose K_next hK_next using this
+    -- The next two lines are faster than a single `refine`.
+    use Nat.rec K₀ K_next
+    refine ⟨fun n ↦ ?_, fun n ↦ (hK_next n _).trans inter_subset_left, hK₀⟩
+    exact subset_closure.trans <| (hK_next _ _).trans <|
+      inter_subset_right.trans interior_subset
+  -- Prove that ̀`⋂ n : ℕ, closure (K n)` is inside `U ∩ ⋂ n : ℕ, f n`.
+  have hK_subset : (⋂ n, closure (K n) : Set X) ⊆ U ∩ ⋂ n, f n := fun x hx ↦ by
+    simp only [mem_iInter, mem_inter_iff] at hx ⊢
+    exact ⟨hKU <| hx 0, fun n ↦ hKf n <| hx (n + 1)⟩
+  /- Prove that `⋂ n : ℕ, closure (K n)` is not empty, as an intersection of a decreasing sequence
+    of nonempty compact closed subsets. -/
+  have hK_nonempty : (⋂ n, closure (K n) : Set X).Nonempty :=
+    IsCompact.nonempty_iInter_of_sequence_nonempty_isCompact_isClosed _
+      (fun n => closure_mono <| hK_anti n) (fun n => (K n).nonempty.closure)
+      (K 0).isCompact.closure fun n => isClosed_closure
+  exact hK_nonempty.mono hK_subset
+```

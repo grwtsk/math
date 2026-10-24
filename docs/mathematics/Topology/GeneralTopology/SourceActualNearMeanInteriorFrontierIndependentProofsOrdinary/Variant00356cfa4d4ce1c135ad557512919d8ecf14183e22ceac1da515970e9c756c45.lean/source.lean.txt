@@ -1,0 +1,24 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.SourceActualNearMeanInteriorFrontier.Variant037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.SourceActualNearMeanInteriorFrontier.Variant037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850","mathematical_subject":"Topology.GeneralTopology","original_sha256":"037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/independent-near-mean-20261006T232857Z/SourceActualNearMeanInteriorFrontier/SourceActualNearMeanInteriorFrontierIndependentProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualNearMeanInteriorFrontier
+
+namespace GRWTSK.Topology.GeneralTopology.SourceActualNearMeanInteriorFrontier.Variant037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier
+#print actualNearPeriodicWork
+#print actualIntegratedMeanResolvedBoundary
+#print actualNearMeanInterior
+#print actualNearMeanRetainedRemainder
+#print actualNearPeriodicWork_intervalIntegrable
+#print actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#print actualAdjustedInterior_eq_near_mean_sub_far
+#print actualAdjustedInterior_sub_near_mean_abs_le
+#print actualAdjustedInterior_sub_near_mean_tendsto_zero
+#print actualRetainedRemainder_sub_near_mean_eq
+#print actualCompensatedWork_sub_near_mean_abs_le
+#print actualCompensatedWork_sub_near_mean_tendsto_zero
+#print actualResidual_near_mean_pointwise_comparison

@@ -1,0 +1,102 @@
+# similar_iff_exists_dist_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "ab890f4deded1822842b0a8244cca9a509f203b4",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 136,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/1f/1f763ba2827845dac00573c217228f1753a478212000339177967cea9359c365.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:b2f4f1bf-eb07-fa38-360f-00275bb5e8c6",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:634b3c6a-fe43-fdde-b1cf-832eddace938",
+  "kind": "lemma",
+  "lexical_name": "similar_iff_exists_dist_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "similar-iff-exists-dist-eq--a28eeeb5ffa48193cc866347",
+  "source": {
+    "blob": "ab890f4deded1822842b0a8244cca9a509f203b4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 144,
+    "line": 136,
+    "path": "GRWTSK/Topology/MetricTopology/Similarity/Variant1f763ba2827845dac00573c217228f1753a478212000339177967cea9359c365.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:a28eeeb5ffa48193cc8663470c8b8f4ddf2f272da202e3bbe548cd99dc061ea8",
+  "verification": {
+    "reference": "docs/verification/Topology/MetricTopology/Similarity/Variant1f763ba2827845dac00573c217228f1753a478212000339177967cea9359c365.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:634b3c6a-fe43-fdde-b1cf-832eddace938`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 136–144.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma similar_iff_exists_dist_eq :
+    Similar v₁ v₂ ↔ (∃ r : ℝ≥0, r ≠ 0 ∧ ∀ (i₁ i₂ : ι), (dist (v₁ i₁) (v₁ i₂) =
+      r * dist (v₂ i₁) (v₂ i₂))) :=
+  similar_iff_exists_nndist_eq.trans
+  (exists_congr <| fun _ => and_congr Iff.rfl <| forall₂_congr <|
+    fun _ _ => by { rw [dist_nndist, dist_nndist]; norm_cast })
+
+/-- Similarity holds if and only if all distances between points with different indices are
+proportional. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/MetricTopology/Similarity/Variant1f763ba2827845dac00573c217228f1753a478212000339177967cea9359c365.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/MetricTopology/Similarity/Variant1f763ba2827845dac00573c217228f1753a478212000339177967cea9359c365.lean#L136).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ab890f4deded1822842b0a8244cca9a509f203b4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

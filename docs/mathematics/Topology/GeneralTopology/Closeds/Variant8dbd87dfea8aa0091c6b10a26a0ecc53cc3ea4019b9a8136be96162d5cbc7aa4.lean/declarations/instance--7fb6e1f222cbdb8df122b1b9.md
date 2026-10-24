@@ -1,0 +1,131 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:5ee99bcc274e8dbd57666f222a9af7c041229ecdc1cf09226c0fcc11f1cc9385",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--7fb6e1f222cbdb8df122b1b9",
+  "source": {
+    "blob": "71f644d7efa8501c39d7c8a423bba828a242c8c0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 656,
+    "line": 607,
+    "path": "GRWTSK/Topology/GeneralTopology/Closeds/Variant8dbd87dfea8aa0091c6b10a26a0ecc53cc3ea4019b9a8136be96162d5cbc7aa4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:7fb6e1f222cbdb8df122b1b9d825fa9df232c3404563b6410dd744a0a5cd3d34",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Closeds/Variant8dbd87dfea8aa0091c6b10a26a0ecc53cc3ea4019b9a8136be96162d5cbc7aa4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:5ee99bcc274e8dbd57666f222a9af7c041229ecdc1cf09226c0fcc11f1cc9385`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 607–656.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance [CompleteSpace α] : CompleteSpace (Compacts α) := by
+  refine ⟨fun {f} ⟨_, hf⟩ => ?_⟩
+  grw [← Filter.curry_le_prod, (𝓤 α).basis_sets.uniformity_compacts.ge_iff] at hf
+  change ∀ {U} (hU : U ∈ 𝓤 α), ∀ᶠ K in f, ∀ᶠ K' in f, (↑K, ↑K') ∈ hausdorffEntourage U at hf
+  let l : Filter α := f.lift' fun s => ⋃ K ∈ s, K
+  have hl : l.TotallyBounded := by
+    intro U hU
+    obtain ⟨V : SetRel α α, hV, hVU⟩ := comp_mem_uniformity_sets hU
+    obtain ⟨K, hK⟩ := hf (symm_le_uniformity hV) |>.exists
+    obtain ⟨t, ht₁, ht₂⟩ := K.isCompact.totallyBounded V hV
+    rw [← SetRel.preimage_eq_biUnion] at ht₂
+    refine ⟨t, ht₁, Filter.mem_of_superset (Filter.mem_lift' hK) ?_⟩
+    rw [Set.iUnion₂_subset_iff]
+    intro K' ⟨_, (hK' : ↑K' ⊆ V.preimage K)⟩
+    grw [← hVU, SetRel.preimage_comp, ← ht₂, hK']
+  let L : Compacts α := ⟨{x | ClusterPt x l}, hl.isCompact_setOfPred_clusterPt⟩
+  exists L
+  simp_rw [nhds_eq_comap_uniformity']
+  rw [uniformity_hasBasis_closed.uniformity_compacts.comap _ |>.ge_iff]
+  intro U ⟨hU₁, hU₂⟩
+  filter_upwards [hf hU₁] with K hK
+  simp_rw [Set.mem_preimage, Prod.map, id, mem_hausdorffEntourage]
+  constructor
+  · intro x hx
+    set lx := l ⊓ 𝓟 (UniformSpace.ball x U) with le_def
+    have hlx : lx.TotallyBounded := hl.mono inf_le_left
+    have : lx.NeBot := by
+      rw [le_def, Filter.lift'_inf_principal_eq, Filter.lift'_neBot_iff fun _ _ h =>
+        Set.inter_subset_inter_left _ <| Set.biUnion_subset_biUnion_left h]
+      intro s hs
+      obtain ⟨K', ⟨h₁, -⟩, h₂⟩ := Filter.nonempty_of_mem <| Filter.inter_mem hK hs
+      obtain ⟨y, hy, hxy⟩ := h₁ hx
+      exact ⟨y, Set.mem_iUnion₂_of_mem h₂ hy, hxy⟩
+    obtain ⟨y, hy⟩ := hlx.exists_clusterPt
+    have hy₁ : ClusterPt y l := .of_inf_left hy
+    have hy₂ : ClusterPt y (𝓟 (UniformSpace.ball x U)) := .of_inf_right hy
+    rw [← mem_closure_iff_clusterPt, (UniformSpace.isClosed_ball x hU₂).closure_eq] at hy₂
+    exact ⟨y, hy₁, hy₂⟩
+  · intro x (hx : ClusterPt x l)
+    rw [← (hU₂.relImage_of_isCompact K.isCompact).closure_eq, mem_closure_iff_clusterPt]
+    refine hx.mono ?_
+    rw [Filter.le_principal_iff]
+    refine Filter.mem_of_superset (Filter.mem_lift' hK) ?_
+    rw [Set.iUnion₂_subset_iff]
+    exact fun _ ⟨_, h⟩ => h
+
+end TopologicalSpace.Compacts
+
+namespace TopologicalSpace.NonemptyCompacts
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Closeds/Variant8dbd87dfea8aa0091c6b10a26a0ecc53cc3ea4019b9a8136be96162d5cbc7aa4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Closeds/Variant8dbd87dfea8aa0091c6b10a26a0ecc53cc3ea4019b9a8136be96162d5cbc7aa4.lean#L607).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `71f644d7efa8501c39d7c8a423bba828a242c8c0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

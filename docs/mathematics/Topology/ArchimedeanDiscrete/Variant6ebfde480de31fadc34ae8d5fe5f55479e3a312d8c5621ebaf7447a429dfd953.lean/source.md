@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.Topology.ArchimedeanDiscrete.Variant6ebfde480de31fadc34ae8d5fe5f55479e3a312d8c5621ebaf7447a429dfd953
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `be386686d266c130ed132bd4b198870e94bdec7a` · SHA-256 `2ef591dfa84a4d644a4f1a8155fdfdf72b4b57236a711c45372ab6ff489c12fc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.DiscreteIffCyclic.Variantd8da81818c2687e7f4ec30ae681cce41a1c755f8fd6a34993d100a0ad4f607ec","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d8da81818c2687e7f4ec30ae681cce41a1c755f8fd6a34993d100a0ad4f607ec","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.DiscreteIffCyclic.Variantd8da81818c2687e7f4ec30ae681cce41a1c755f8fd6a34993d100a0ad4f607ec","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"d8da81818c2687e7f4ec30ae681cce41a1c755f8fd6a34993d100a0ad4f607ec","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/Algebra/Order/ArchimedeanDiscrete.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 David Loeffler. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: David Loeffler
+-/
+module
+
+public import Mathlib.GroupTheory.ArchimedeanDensely
+public import Mathlib.GroupTheory.SpecificGroups.Cyclic
+public import Mathlib.Topology.Algebra.OpenSubgroup
+public import Mathlib.Topology.Algebra.Order.Archimedean
+public import Mathlib.Topology.Order.DenselyOrdered
+
+/-!
+# Discreteness of subgroups in archimedean ordered groups
+
+This file contains some supplements to the results in
+`Mathlib/Topology/Algebra/Order/Archimedean.lean`, involving discreteness of subgroups, which
+require heavier imports.
+-/
+
+
+namespace GRWTSK.Topology.DiscreteIffCyclic.Variantd8da81818c2687e7f4ec30ae681cce41a1c755f8fd6a34993d100a0ad4f607ec
+
+public section
+
+namespace Subgroup
+
+variable {G : Type*} [CommGroup G] [LinearOrder G] [IsOrderedMonoid G]
+  [TopologicalSpace G] [OrderTopology G]
+
+/-- In a linearly ordered group with the order topology, the powers of a single element form a
+discrete subgroup. -/
+@[to_additive /-- In a linearly ordered additive group with the order topology, the multiples of a
+single element form a discrete subgroup. -/]
+instance instDiscreteTopologyZMultiples (g : G) : DiscreteTopology (zpowers g) := by
+  wlog ha : 1 ≤ g
+  · specialize this g⁻¹ (one_le_inv'.mpr (le_of_not_ge ha))
+    rwa [zpowers_inv] at this
+  rcases eq_or_lt_of_le ha with rfl | ha
+  · rw [zpowers_one_eq_bot]
+    exact Subsingleton.discreteTopology
+  rw [discreteTopology_iff_isOpen_singleton_one, isOpen_induced_iff]
+  refine ⟨Set.Ioo (g ^ (-1 : ℤ)) (g ^ (1 : ℤ)), isOpen_Ioo, ?_⟩
+  ext ⟨_, ⟨n, rfl⟩⟩
+  constructor
+  · simp only [Set.mem_preimage, Set.mem_Ioo, Set.mem_singleton_iff, and_imp]
+    intro hn hn'
+    rw [zpow_lt_zpow_iff_right ha] at hn hn'
+    simp only [Subtype.ext_iff, show n = 0 by lia, zpow_zero, coe_one]
+  · simp_all
+
+variable [MulArchimedean G]
+
+@[to_additive]
+instance [DiscreteTopology G] : IsCyclic G := by
+  nontriviality G
+  exact LinearOrderedCommGroup.isCyclic_iff_not_denselyOrdered.mpr fun h ↦
+    have := h.subsingleton_of_discreteTopology; false_of_nontrivial_of_subsingleton G
+
+/-- In an Archimedean linearly ordered group (with the order topology), a subgroup is
+discrete iff it is cyclic. -/
+@[to_additive /-- In an Archimedean linearly ordered additive group (with the order topology), a
+subgroup is discrete iff it is cyclic. -/]
+lemma discrete_iff_cyclic {H : Subgroup G} : IsCyclic H ↔ DiscreteTopology H := by
+  nontriviality G using isCyclic_of_subsingleton, Subsingleton.discreteTopology
+  rw [Subgroup.isCyclic_iff_exists_zpowers_eq_top]
+  constructor
+  · rintro ⟨g, rfl⟩
+    infer_instance
+  · have := H.dense_or_cyclic
+    simp only [← Subgroup.zpowers_eq_closure, Eq.comm (a := H)] at this
+    refine fun hA ↦ this.elim (fun h ↦ ?_) id
+    -- remains to show a contradiction assuming `H` is both dense and discrete
+    obtain rfl : H = ⊤ := by
+      rw [← coe_eq_univ, ← (dense_iff_closure_eq.mp h), H.isClosed_of_discreteTopology.closure_eq]
+    have : DiscreteTopology G := by rwa [← (Homeomorph.Set.univ G).discreteTopology_iff]
+    exact isCyclic_iff_exists_zpowers_eq_top.mp inferInstance
+
+end Subgroup
+```

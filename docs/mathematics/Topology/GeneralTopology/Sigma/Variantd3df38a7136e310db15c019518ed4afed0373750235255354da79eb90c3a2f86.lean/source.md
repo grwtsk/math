@@ -1,0 +1,103 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Sigma.Variantd3df38a7136e310db15c019518ed4afed0373750235255354da79eb90c3a2f86
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ad4916eb4c0f77b01c8b2776cfd0a919b7c76df1` · SHA-256 `83ebd6477fbf662f6fa0e3dd7fe3c067357324a0a03dd30e9f36e6bb8bbb2281`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.IsEmbeddingSigmaMkComp.Variante94b77c7b1b819d58e9e2778b9c116356e4188086f5f7ac750482516e5091018","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e94b77c7b1b819d58e9e2778b9c116356e4188086f5f7ac750482516e5091018","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.IsEmbeddingSigmaMkComp.Variante94b77c7b1b819d58e9e2778b9c116356e4188086f5f7ac750482516e5091018","mathematical_subject":"Topology.GeneralTopology","original_sha256":"e94b77c7b1b819d58e9e2778b9c116356e4188086f5f7ac750482516e5091018","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Topology/ContinuousMap/Sigma.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+import Mathlib.Topology.CompactOpen
+
+/-!
+# Equivalence between `C(X, Σ i, Y i)` and `Σ i, C(X, Y i)`
+
+If `X` is a connected topological space, then for every continuous map `f` from `X` to the disjoint
+union of a collection of topological spaces `Y i` there exists a unique index `i` and a continuous
+map from `g` to `Y i` such that `f` is the composition of the natural embedding
+`Sigma.mk i : Y i → Σ i, Y i` with `g`.
+
+This defines an equivalence between `C(X, Σ i, Y i)` and `Σ i, C(X, Y i)`. In fact, this equivalence
+is a homeomorphism if the spaces of continuous maps are equipped with the compact-open topology.
+
+## Implementation notes
+
+There are two natural ways to talk about this result: one is to say that for each `f` there exist
+unique `i` and `g`; another one is to define a noncomputable equivalence. We choose the second way
+because it is easier to use an equivalence in applications.
+
+## TODO
+
+Some results in this file can be generalized to the case when `X` is a preconnected space. However,
+if `X` is empty, then any index `i` will work, so there is no 1-to-1 correspondence.
+
+## Keywords
+
+continuous map, sigma type, disjoint union
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.IsEmbeddingSigmaMkComp.Variante94b77c7b1b819d58e9e2778b9c116356e4188086f5f7ac750482516e5091018
+
+noncomputable section
+
+open Filter Topology
+
+variable {X ι : Type*} {Y : ι → Type*} [TopologicalSpace X] [∀ i, TopologicalSpace (Y i)]
+
+namespace ContinuousMap
+
+theorem isEmbedding_sigmaMk_comp [Nonempty X] :
+    IsEmbedding (fun g : Σ i, C(X, Y i) ↦ (sigmaMk g.1).comp g.2) where
+  toIsInducing := inducing_sigma.2
+    ⟨fun i ↦ (sigmaMk i).isInducing_postcomp IsEmbedding.sigmaMk.isInducing, fun i ↦
+      let ⟨x⟩ := ‹Nonempty X›
+      ⟨_, (isOpen_sigma_fst_preimage {i}).preimage (continuous_eval_const x), fun _ ↦ Iff.rfl⟩⟩
+  injective := by
+    rintro ⟨i, g⟩ ⟨i', g'⟩ h
+    obtain ⟨rfl, hg⟩ : i = i' ∧ HEq (⇑g) (⇑g') :=
+      Function.eq_of_sigmaMk_comp <| congr_arg DFunLike.coe h
+    simpa using hg
+
+@[deprecated (since := "2024-10-26")]
+alias embedding_sigmaMk_comp := isEmbedding_sigmaMk_comp
+
+section ConnectedSpace
+
+variable [ConnectedSpace X]
+
+/-- Every continuous map from a connected topological space to the disjoint union of a family of
+topological spaces is a composition of the embedding `ContinuousMap.sigmMk i : C(Y i, Σ i, Y i)` for
+some `i` and a continuous map `g : C(X, Y i)`. See also `Continuous.exists_lift_sigma` for a version
+with unbundled functions and `ContinuousMap.sigmaCodHomeomorph` for a homeomorphism defined using
+this fact. -/
+theorem exists_lift_sigma (f : C(X, Σ i, Y i)) : ∃ i g, f = (sigmaMk i).comp g :=
+  let ⟨i, g, hg, hfg⟩ := (map_continuous f).exists_lift_sigma
+  ⟨i, ⟨g, hg⟩, DFunLike.ext' hfg⟩
+
+variable (X Y)
+
+/-- Homeomorphism between the type `C(X, Σ i, Y i)` of continuous maps from a connected topological
+space to the disjoint union of a family of topological spaces and the disjoint union of the types of
+continuous maps `C(X, Y i)`.
+
+The inverse map sends `⟨i, g⟩` to `ContinuousMap.comp (ContinuousMap.sigmaMk i) g`. -/
+@[simps! symm_apply]
+def sigmaCodHomeomorph : C(X, Σ i, Y i) ≃ₜ Σ i, C(X, Y i) :=
+  .symm <| Equiv.toHomeomorphOfIsInducing
+    (.ofBijective _ ⟨isEmbedding_sigmaMk_comp.injective, fun f ↦
+      let ⟨i, g, hg⟩ := f.exists_lift_sigma; ⟨⟨i, g⟩, hg.symm⟩⟩)
+    isEmbedding_sigmaMk_comp.isInducing
+
+end ConnectedSpace
+
+end ContinuousMap
+```

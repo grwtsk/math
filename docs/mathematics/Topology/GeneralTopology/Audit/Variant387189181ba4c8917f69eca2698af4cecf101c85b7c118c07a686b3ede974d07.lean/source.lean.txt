@@ -1,0 +1,15 @@
+import SourcePrimitiveCriticalMoment
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimitiveCriticalMoment
+
+#check primitive_correlations_weighted_integrable
+#print axioms primitive_correlations_weighted_integrable
+#check primitiveCorrelationOne_laplace
+#print axioms primitiveCorrelationOne_laplace
+#check primitiveCorrelationTwo_laplace
+#print axioms primitiveCorrelationTwo_laplace
+#check sourceCorrelation_laplace_filter
+#print axioms sourceCorrelation_laplace_filter
+#check sourceCorrelation_critical_filter_zero
+#print axioms sourceCorrelation_critical_filter_zero
