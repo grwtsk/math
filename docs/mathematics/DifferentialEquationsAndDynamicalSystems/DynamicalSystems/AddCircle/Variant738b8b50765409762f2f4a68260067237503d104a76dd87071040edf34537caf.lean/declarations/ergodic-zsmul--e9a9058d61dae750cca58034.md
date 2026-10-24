@@ -1,0 +1,100 @@
+# ergodic_zsmul
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:92958db2-586f-83ed-d3e0-07b00fb1cf8c",
+  "kind": "theorem",
+  "lexical_name": "ergodic_zsmul",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ergodic-zsmul--e9a9058d61dae750cca58034",
+  "source": {
+    "blob": "596962cb59978977397593c4f0cc842f552f938a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 127,
+    "line": 109,
+    "path": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/AddCircle/Variant738b8b50765409762f2f4a68260067237503d104a76dd87071040edf34537caf.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:e9a9058d61dae750cca580340bcded8cd9b4efce81cb924826cf11ac3ac3aa21",
+  "verification": {
+    "reference": "docs/verification/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/AddCircle/Variant738b8b50765409762f2f4a68260067237503d104a76dd87071040edf34537caf.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:92958db2-586f-83ed-d3e0-07b00fb1cf8c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 109–127.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem ergodic_zsmul {n : ℤ} (hn : 1 < |n|) : Ergodic fun y : AddCircle T => n • y :=
+  { measurePreserving_zsmul volume (abs_pos.mp <| lt_trans zero_lt_one hn) with
+    aeconst_set := fun s hs hs' => by
+      let u : ℕ → AddCircle T := fun j => ↑((↑1 : ℝ) / ↑(n.natAbs ^ j) * T)
+      replace hn : 1 < n.natAbs := by rwa [Int.abs_eq_natAbs, Nat.one_lt_cast] at hn
+      have hu₀ : ∀ j, addOrderOf (u j) = n.natAbs ^ j := fun j => by
+        convert addOrderOf_div_of_gcd_eq_one (p := T) (m := 1)
+          (pow_pos (pos_of_gt hn) j) (gcd_one_left _)
+        norm_cast
+      have hnu : ∀ j, n ^ j • u j = 0 := fun j => by
+        rw [← addOrderOf_dvd_iff_zsmul_eq_zero, hu₀, Int.natCast_pow, Int.natCast_natAbs, ← abs_pow,
+          abs_dvd]
+      have hu₁ : ∀ j, (u j +ᵥ s : Set _) =ᵐ[volume] s := fun j => by
+        rw [vadd_eq_self_of_preimage_zsmul_eq_self hs' (hnu j)]
+      have hu₂ : Tendsto (fun j => addOrderOf <| u j) atTop atTop := by
+        simp_rw [hu₀]; exact Nat.tendsto_pow_atTop_atTop_of_one_lt hn
+      rw [eventuallyConst_set']
+      exact ae_empty_or_univ_of_forall_vadd_ae_eq_self hs.nullMeasurableSet hu₁ hu₂ }
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/AddCircle/Variant738b8b50765409762f2f4a68260067237503d104a76dd87071040edf34537caf.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/AddCircle/Variant738b8b50765409762f2f4a68260067237503d104a76dd87071040edf34537caf.lean#L109).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `596962cb59978977397593c4f0cc842f552f938a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
