@@ -15,17 +15,20 @@ Source original SHA256: a52bfdf4ab5e5223a041cd170167f7c97d49ea2025b5f87f253a0ff4
 Review: attribution-254-review-000009.
 Completeness, existence, uniqueness, basin and floor propositions remain
 unproved obligation data. No Banach fixed-point theorem is supplied.
-The original FixedPoint import remains an explicit pending project dependency.
+The unavailable legacy FixedPoint import is replaced by the exact archived
+natural gain data and declared-domain map interface in NaturalGainData.
+The obligation fields and their unresolved analytic propositions are unchanged.
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import Mathematics.Stability.FixedPoint
+import GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData
 
 /-! # Certified contraction boundaries -/
 
 namespace GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations
 
-open Mathematics.Stability (ReflectiveMap ResidualMetric ScaledDerivativeGainCertificate ProofDisposition)
+open GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData
+  (ReflectiveMap ResidualMetric ScaledDerivativeGainCertificate ProofDisposition)
 
 structure ContractionCertificate
     {X : Type}
