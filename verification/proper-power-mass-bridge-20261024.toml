@@ -1,0 +1,38 @@
+# Source-pinned queued verification only. Do not execute.
+schema_version = "0.1"
+request_id = "proper-power-mass-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "6178c7cae87af4037011007631e65b919237d825"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridge.lean"
+source_blob = "b78fcfaedde0bde4bb08a2ba88a19f96c7bfc0fe"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge.nonunitProperPowerMass_eq_divisor_packet",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeSupport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Exact original n-indexed to rectangular (p,k)-indexed finite reindexing",
+ "For prime p and k>=2, nonunit p^k modulo positive q iff p divides q",
+ "Reindex divisor packet into exponent counts",
+ "Bound exponent counts to establish omega(q)*log N",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridge.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom audit file>"
