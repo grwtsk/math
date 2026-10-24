@@ -694,4 +694,30 @@ theorem linearPMap_symmetric_projection_energy_expansion
   rw [linearPMap_projection_inner_expansion S A x hx hstable]
   rw [linearPMap_projection_cross_conjugate S A hA x hx hstable]
 
+/-- The real quadratic energy of a formally symmetric partially defined
+operator splits into two diagonal energies and twice the real interaction.
+All operator applications retain explicit domain witnesses. -/
+theorem linearPMap_symmetric_projection_real_energy
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    RCLike.re (inner 𝕜 (A ⟨x, hx⟩) x) =
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x)) +
+      RCLike.re (inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x)) +
+      2 * RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x)) := by
+  have h := linearPMap_symmetric_projection_energy_expansion
+    S A hA x hx hstable
+  rw [h]
+  simp only [map_add, RCLike.re_conj]
+  ring
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
