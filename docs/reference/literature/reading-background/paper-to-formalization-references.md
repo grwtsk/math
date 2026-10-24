@@ -7630,3 +7630,81 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 **Immutable source candidates and dependencies.** Main leaf `GRWTSK/Algebra/LinearAlgebra/BilinearAndQuadraticForms/WeightedFiniteReflection.lean`, blob `4a2813936e8d994afd31f9f8974b9274c0ffd4e2`; optional leaf `WeightedFiniteReflectionDoubled.lean` in the same directory, blob `e58255860b20b4abb7c82e395dbd0c4021962dd6`; authored on base main `61ed54b04fd98c1f131cb8212d717ab5eca0bc5f`. The main direct imports are `Mathlib.Data.Rat.Defs`, `Mathlib.Algebra.BigOperators.Fin`, `Mathlib.Algebra.Order.BigOperators.Ring.Finset`, and `Mathlib.Tactic.NormNum`, at the existing pinned Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. The optional leaf imports only the main leaf. The older selected `FiniteReflection` source is neither imported nor edited; its blob remains `5b54d24eb1a0ccd89308144c3e4838b5ca3bbe2b`. Full transitive import/object/axiom enumeration remains an execution obligation.
 
 **Separate evidence and missing bridges.** Imported mathematics: pinned rational ordered-field, finite-sum and tactic source. New local declarations: **SOURCE PROOF CANDIDATES**. Kernel-verified new bridge at this source preparation stage: **NONE**. Conditional interfaces: exact rational inputs and a frozen plan on an ideal finite vector space. Finite experimental evidence: none newly executed by source preparation. Analogy: weighted reflection only. Unresolved: actual Lean elaboration, transitive axiom/dependency and fresh-kernel checks, the nested-product-to-Fin4 adapter, bounded runtime invariant domains and rejection behavior, mutable input snapshots, serialization and Rust/Python refinement, any separately selected real metric transport or complex/Hermitian extension, mathematical zero identities/completeness, model relevance, global spectral/arithmetic/Weil/tail bridges. **ACTUAL SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. No Lean/Lake/native command, verification job or queue/config mutation was performed by the source author. Operational interpretation, review and execution records remain outside canonical Math in `grwtsk/noeaaeue`. No new root import, core diffuser or RH premise.
+
+
+## Case RIESZ-REALITY-RAW-AVERAGES-VALIDATION-20261023
+
+**Reference boundary.** Repository-derived 2026 increment, grwtsk contributors
+with OpenAI formalization assistance. No newly attributed external paper theorem
+or historical influence: external title, byline, year/version and DOI/arXiv are
+NOT APPLICABLE. Existing source-specific Riesz provenance remains intact.
+Imported mathematics is Mathlib finite sums, conjugation/derivatives, interval
+integration, norm inequalities and limits. Local suppliers are the actual
+canonical zero divisor, multiplicities, height heads, Riesz tails and the
+boundary-derived affine coefficients; no RH assumption is inserted.
+
+**Kernel-verified reality results.** In namespace
+`GRWTSK.NumberTheory.Chebyshev.ClassicalRieszReality`,
+`conjugate_weighted_height_sum` preserves the exact hypothesis
+`f (conjugatePoint z) = conj (f z)`. Conjugation preserves height-head membership
+and actual multiplicities. `finiteHeightZeroHead_conj`,
+`finiteRieszZeroHead_conj`, `finiteSourceSlope_conj`,
+`finiteSourceIntercept_conj`, `sourceSlope_conj`, `sourceIntercept_conj`,
+`sourceSlope_im`, `sourceIntercept_im`, `rawClassicalHead_conj`, and
+`rawClassicalHead_im` prove reality of the literal finite heads and coefficient
+limits. `logDeriv_neg_one_eq` retains the actual derivative of zeta at -1;
+`logDeriv_neg_one_conj` proves its reality. This does not equate sourceSlope or
+sourceIntercept with the desired classical special-value coefficients.
+
+**Kernel-verified averaging and conditional Tauberian bridge.** In namespace
+`GRWTSK.NumberTheory.Chebyshev.RawSymmetricAverages`, `rawAverage`,
+`rawAverageTailBudget`, and `rawMeanOscillation` use the actual raw head and
+symmetric interval. `norm_source_sub_average_le` retains integer M≥2,
+0<h≤1, 1<M−h and T≥2, charging both endpoint tail budgets divided by 2h.
+`rawAverageTailBudget_tendsto_zero` is a fixed-radius limit (its unrestricted
+h=0 case uses totalized division and asserts no reconstruction at zero radius).
+`exists_raw_average_reconstruction` supplies non-effective heights tending to
+infinity and convergence of actual averages at radius 1/(n+2), with error
+strictly less than that radius. `norm_average_sub_point_le` retains h>0 and
+1<x−h. `norm_source_sub_raw_le` charges the complete endpoint tail plus mean
+oscillation. `exists_raw_reconstruction_tauberian` concludes convergence of
+raw heads along those heights only if the explicit mean-oscillation sequence
+tends to zero. No unconditional unsmoothed raw sum, computable rate, radius/height
+limit interchange, coefficient identification or RH theorem is inferred.
+The oscillation-decay supplier and classical coefficient bridges remain unresolved.
+
+**Inherited compatibility repairs and immutable sources.** Source commit
+`7612812ae5ae4fd1e03a04126c05f8b08295110e` includes the existing concurrent proof repairs:
+explicit complex imports and star/conjugation normalization, corrected reflected
+imaginary-coordinate simplification, canonical multiplicity conjugation, and
+pointwise simplification of eventual factorization/derivative identities. These
+change proof/API compatibility only. All 126 local source hashes and 1,137
+theorem headers were unchanged from the validation baseline; the exact headers
+of these inherited repairs are also unchanged from their preceding committed
+versions. Other concurrent work was preserved.
+
+| Source | Git blob |
+| --- | --- |
+| `GRWTSK/NumberTheory/Chebyshev/ClassicalRieszReality.lean` | `d3b87c734c7a9032077cb1378cce6d030adee186` |
+| `GRWTSK/NumberTheory/Chebyshev/RawSymmetricAverages.lean` | `b133a73b9e16249cbe17d5196b2040b9aedcced9` |
+| `GRWTSK/Analysis/Complex/ConjugateAnalyticOrder.lean` | `cfca2854baff7e02f8db61f5f60a111770cf438b` |
+| `GRWTSK/Analysis/Complex/ReflectionDisks.lean` | `4cb32fc8036bfc29fa521caecf0bcf8c0ef03412` |
+| `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSignedHeight.lean` | `5c56091d8ede1252ffc25663858b52a626aedfe7` |
+| `GRWTSK/NumberTheory/Zeta/Riemann/LocalZeroSymmetry.lean` | `ab313f2cd26d01c149f1c180922a7cdd5d3bb916` |
+
+**Actual verification.** Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.NumberTheory.Chebyshev.ClassicalRieszReality GRWTSK.NumberTheory.Chebyshev.RawSymmetricAverages --wfail`
+  passed (3965 jobs).
+- `lake build --wfail` passed (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/riesz-reality-audit.lean`
+  passed, auditing all 3042 local declarations (including generated declarations)
+  and printing every type. Only `propext`, `Classical.choice`, and `Quot.sound`
+  were allowed; unsafe declarations, `sorryAx` and custom axioms were rejected.
+
+External evidence in that directory: `riesz-reality-build.log`,
+`riesz-reality-public.log`, `riesz-reality-audit.log`, and
+`riesz-reality-validated-snapshot.json`. Historical source-only/NOT_RUN labels
+remain provenance; this entry records acceptance only for the pinned audited
+closure, without promoting any unresolved premise or separate new module.
