@@ -1,6 +1,6 @@
 {
   "schema": "grwtsk.mathematics-navigation.v1",
-  "source_commit": "26730c25b382762dc0d146de30a3fbaca45bd3f0",
+  "source_commit": "1b31ff873827ecf9acdf41b501b21a12b242a504",
   "ranking_profile": "docs/reference/ranking-profile.json",
   "entry_points": [
     "urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a",

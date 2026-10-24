@@ -1,5 +1,48 @@
 # Spectral theory
 
+<!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
+
+[Results index](../index.md) · [Up one directory](../index.md)
+
+This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
+
+| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+|---:|---:|---:|---:|
+| 7 | 0 | 0 | 0 |
+
+Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
+
+## Top results
+
+**Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
+
+- [Dirichlet joining edge and boundary count error](FiniteVolume/dirichlet-cut.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The Dirichlet cut source constructs the symmetric joining edge and factors its actual linear action through its two endpoint coordinates. This proves rank at most two. The general count proof records both the…
+- [Finite-volume eigenvalue-count comparison](FiniteVolume/count-comparison.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The following comparison is an elementary consequence of the bounded binary potential, not an additional gap-opening theorem. Put $L=\min(V,0)$ and $U=\max(V,0)$. Each finite-volume perturbation lies between…
+- [Free Dirichlet eigenvalues and sine basis](FreeDirichletSpectrum/eigenvalues.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The free spectrum source proves the entire finite eigenvalue list
+- [Free eigenvalue counts and integrated density of states](IntegratedDensityOfStates/free.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. At $V=0$, Fourier transformation gives the multiplier $2\cos k$, hence spectrum $[-2,2]$. Its IDS is
+- [Gap labels, tree coding and faithful transport](GapTransport/labels-and-coding.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Define the IDS by the normalized finite-volume eigenvalue count, with Dirichlet restrictions and multiplicities retained. It is continuous and nondecreasing. A real energy lies outside the spectrum exactly…
+
+Missing metric evidence: `verification_dependency_graph_unavailable`.
+
+[Ranking definition and weight profile](../../reference/ranking-profile.json) · [Article standard](../../reference/result-article-standard.md).
+Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88aeaac60d482693913193e74bf5bb87d0c156d5e876fa`.
+
+## Immediate specializations and directories
+
+1. **[Finite Volume](FiniteVolume/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Dirichlet joining edge and boundary count error](FiniteVolume/dirichlet-cut.md); [Finite-volume eigenvalue-count comparison](FiniteVolume/count-comparison.md).
+2. **[Free Dirichlet Spectrum](FreeDirichletSpectrum/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Free Dirichlet eigenvalues and sine basis](FreeDirichletSpectrum/eigenvalues.md).
+3. **[Gap Transport](GapTransport/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Gap labels, tree coding and faithful transport](GapTransport/labels-and-coding.md).
+4. **[Integrated Density Of States](IntegratedDensityOfStates/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Free eigenvalue counts and integrated density of states](IntegratedDensityOfStates/free.md).
+
+Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
+
+<!-- END GENERATED MATHEMATICS NAVIGATION -->
+
 [All mathematical areas](../../index.md) · [Lean source folder](../../../GRWTSK/Spectral).
 
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->

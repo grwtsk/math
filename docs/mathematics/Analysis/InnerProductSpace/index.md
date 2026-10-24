@@ -1,0 +1,45 @@
+# Inner Product Space
+
+<!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
+
+[Results index](../../index.md) · [Up one directory](../index.md)
+
+This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
+
+| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+|---:|---:|---:|---:|
+| 5 | 0 | 0 | 0 |
+
+Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
+
+## Top results
+
+**Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
+
+- [Closed operator solvability from adjoint bounds](closed-operator-solvability.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $E$ and $F$ be complete inner product spaces over an `RCLike` field, and let $T:E\to F$ be a partially defined linear operator. Assume its actual domain is dense and its graph is closed. If $C\ge0$ and
+- [Finite causal response Gram positivity](causal-response-gram.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The finite source Gram is positive semidefinite with arbitrary finite signed weights, repeated positive integer labels and all ordered mixed terms retained.
+- [Real polarization and signed quadratic sectors](polarization.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `GRWTSK.Analysis.Polarization` carries the established real inner-product identity `⟪x, y⟫_ℝ = (‖x + y‖² - ‖x - y‖²) / 4`. Its complete contract retains the original universe, space `E`, `NormedAddCommGroup E`…
+- [Solvability from a closed complex estimate](closed-complex-solvability.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $E,F$ be complete inner product spaces over an `RCLike` field and $H$ an inner product space; completeness of $H$ is not required. Let $T:E\to F$ and $S:F\to H$ be partially defined linear operators.…
+- [Solvability from a dense joint graph core](joint-graph-solvability.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $E,F$ be complete inner product spaces over an `RCLike` field and $H$ an inner product space. Let $T:E\to F$ and $S:F\to H$ be partially defined linear operators. Assume the actual domain of $T$ is dense,…
+
+Missing metric evidence: `verification_dependency_graph_unavailable`.
+
+[Ranking definition and weight profile](../../../reference/ranking-profile.json) · [Article standard](../../../reference/result-article-standard.md).
+Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88aeaac60d482693913193e74bf5bb87d0c156d5e876fa`.
+
+## Immediate specializations and directories
+
+No narrower directory is currently registered. Continue to the articles below.
+
+## Articles at this level
+
+- [Closed operator solvability from adjoint bounds](closed-operator-solvability.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $E$ and $F$ be complete inner product spaces over an `RCLike` field, and let $T:E\to F$ be a partially defined linear operator. Assume its actual domain is dense and its graph is closed. If $C\ge0$ and
+- [Finite causal response Gram positivity](causal-response-gram.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The finite source Gram is positive semidefinite with arbitrary finite signed weights, repeated positive integer labels and all ordered mixed terms retained.
+- [Real polarization and signed quadratic sectors](polarization.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `GRWTSK.Analysis.Polarization` carries the established real inner-product identity `⟪x, y⟫_ℝ = (‖x + y‖² - ‖x - y‖²) / 4`. Its complete contract retains the original universe, space `E`, `NormedAddCommGroup E`…
+- [Solvability from a closed complex estimate](closed-complex-solvability.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $E,F$ be complete inner product spaces over an `RCLike` field and $H$ an inner product space; completeness of $H$ is not required. Let $T:E\to F$ and $S:F\to H$ be partially defined linear operators.…
+- [Solvability from a dense joint graph core](joint-graph-solvability.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $E,F$ be complete inner product spaces over an `RCLike` field and $H$ an inner product space. Let $T:E\to F$ and $S:F\to H$ be partially defined linear operators. Assume the actual domain of $T$ is dense,…
+
+Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
+
+<!-- END GENERATED MATHEMATICS NAVIGATION -->
