@@ -5,6 +5,7 @@ Theorem 1.1 proof using Theorem 1.10. Mathlib authorship and licenses remain ups
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 import Mathlib.Tactic
 import Mathlib.Analysis.Normed.Group.Basic
+import Mathlib.Analysis.InnerProductSpace.Projection.Basic
 
 set_option autoImplicit false
 
@@ -341,5 +342,23 @@ theorem norm_energy_lower_bound_of_bilinear_interaction
       delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
   rw [hrewrite]
   linarith
+
+/-- The two-sector norm decomposition is derived from an actual orthogonal
+projection, rather than postulated. The energy comparison is still an explicit
+hypothesis and must be proved for any intended physical Hamiltonian. -/
+theorem projection_sector_energy_lower_bound
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (x : H) (delta energy energy₁ energy₂ : ℝ)
+    (hdelta : 0 ≤ delta)
+    (henergy : energy₁ + energy₂ ≤ energy)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤ energy₂) :
+    delta * ‖x‖ ^ 2 ≤ energy := by
+  exact norm_energy_lower_bound_of_two_sectors
+    x (S.starProjection x) (Sᗮ.starProjection x)
+    delta energy energy₁ energy₂ hdelta
+    (S.norm_sq_eq_add_norm_sq_starProjection x) henergy hfirst hsecond
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
