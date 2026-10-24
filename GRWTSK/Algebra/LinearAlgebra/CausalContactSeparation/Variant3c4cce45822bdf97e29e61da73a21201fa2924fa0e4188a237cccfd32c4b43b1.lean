@@ -36,7 +36,7 @@ namespace GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 open MeasureTheory Set
 open GRWTSK.ProofHorizon.CorkscrewChamberCap
 open ArithmeticPickupEnergy
-open GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+open GRWTSK.Algebra.LinearAlgebra.ZeroCoordinateObstruction
 
 noncomputable section
 

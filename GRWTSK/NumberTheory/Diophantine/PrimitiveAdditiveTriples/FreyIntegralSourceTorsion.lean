@@ -7,7 +7,7 @@ contains a nonzero X-class killed by3 while the old rational image kills X.
 This is not the torsion-free image quotient of v0.43.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassOrderOneTorsion
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassOrderOneTorsion
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetIndex
 
 set_option autoImplicit false
@@ -15,7 +15,7 @@ noncomputable section
 
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralSourceTorsion
 
-open GRWTSK.AlgebraicGeometry.EllipticCurve
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve
 open FreyGlobalMinimalDiscriminant FreyCollisionJetDenominator
 open FreyCollisionJetTower FreyIntegralJetImage
 

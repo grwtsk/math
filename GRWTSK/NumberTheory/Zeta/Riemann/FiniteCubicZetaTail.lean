@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.FiniteCubicZetaApproximation
-import GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
+import GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 import Mathlib.Analysis.Complex.Liouville
 
 set_option autoImplicit false
@@ -22,7 +22,7 @@ namespace GRWTSK.RiemannHypothesis.FiniteCubicZetaTail
 open Set Metric
 open scoped Topology BigOperators
 open GRWTSK.Analysis.Real.PowerCellMajorant
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 open CubicRemainder FiniteCubicZetaApproximation
 
 noncomputable section

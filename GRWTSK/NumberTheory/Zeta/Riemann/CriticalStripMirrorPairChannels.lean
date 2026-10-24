@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.SymmetricPair
+import GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticPrimitive
 
@@ -21,7 +21,7 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.MirrorChannels
 open Complex Set
 namespace Pair
-export GRWTSK.Analysis.Complex.SymmetricPair
+export GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
   (even odd energy Enclosure even_product odd_product endpoints_zero_iff)
 end Pair
 open CenteredMellin.SexticPrimitive
@@ -79,13 +79,13 @@ theorem arithmetic_residual_channels {N : ℕ} {z : ℂ}
   have he : Pair.even poleNormalizedZeta (center z) (offset z)-
       Pair.even (finiteModel N) (center z) (offset z) =
       -Pair.even (fun w => multiplier w*tail (N : ℝ) w) (center z) (offset z) := by
-    unfold GRWTSK.Analysis.Complex.SymmetricPair.even
+    unfold GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.even
     rw [center_plus_offset,center_minus_offset]
     linear_combination (1/2 : ℂ)*hp+(1/2 : ℂ)*hm
   have ho : Pair.odd poleNormalizedZeta (center z) (offset z)-
       Pair.odd (finiteModel N) (center z) (offset z) =
       -Pair.odd (fun w => multiplier w*tail (N : ℝ) w) (center z) (offset z) := by
-    unfold GRWTSK.Analysis.Complex.SymmetricPair.odd
+    unfold GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.odd
     rw [center_plus_offset,center_minus_offset]
     linear_combination (1/(2*offset z))*hp-(1/(2*offset z))*hm
   rw [Pair.even_product] at he
@@ -144,14 +144,14 @@ theorem fifteen_odd_channel_bound {z : ℂ} (hx : 0 < z.re) (hx1 : z.re < 1)
     simp only [criticalReflection,Complex.sub_re,Complex.one_re,Complex.conj_re,
       Complex.sub_im,Complex.one_im,Complex.conj_im,zero_sub,neg_neg]
     exact ⟨by linarith,by linarith,ht,ht1⟩
-  have h := GRWTSK.Analysis.Complex.SymmetricPair.odd_error_of_derivatives
+  have h := GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.odd_error_of_derivatives
     (offset_ne_zero hoff) FifteenWitness.domain_convex
     (fun w _ => differentiable_poleNormalizedZeta w)
     (fun w _ => (hP w).differentiableAt)
     (fun w hw => by rw [(hP w).deriv]; exact FifteenWitness.source_derivative_disk hw)
     hp hm
   have hodd : Pair.odd P (center z) (offset z)=FifteenWitness.linearPart := by
-    unfold GRWTSK.Analysis.Complex.SymmetricPair.odd P
+    unfold GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.odd P
     field_simp [offset_ne_zero hoff] <;> ring
   rwa [hodd] at h
 

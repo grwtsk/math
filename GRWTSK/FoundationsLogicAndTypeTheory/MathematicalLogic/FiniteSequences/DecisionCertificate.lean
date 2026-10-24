@@ -20,7 +20,7 @@ record, compression, filesystem, or runtime-adapter refinement is asserted.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.DecisionCertificate
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate
 
 open IndexedDictionary DictionaryRevision
 
@@ -112,4 +112,4 @@ theorem stale_premise_counterexample :
     subst decoded
     simp at hpredicate
 
-end GRWTSK.Logic.FiniteSequences.DecisionCertificate
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate

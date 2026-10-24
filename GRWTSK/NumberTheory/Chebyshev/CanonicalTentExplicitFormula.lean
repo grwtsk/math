@@ -23,7 +23,7 @@ open Filter
 open scoped Topology BigOperators
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.CanonicalHighCounting
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open CanonicalTentAbsolute TentSelectedResidueLimit TentSource CountedTentTail
 

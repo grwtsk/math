@@ -22,7 +22,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.CanonicalHighCounting
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.Series.HeightCountingTail
 open GRWTSK.Analysis.Series.ScaledHeightCountingTail
 open PointwiseFiniteZeroHead

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.GaussianPolynomialPair
+import GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairEvaluation
 
 set_option autoImplicit false
@@ -20,12 +20,12 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.UniformPairRegion
 open Complex Set
 open UniformFiniteC1 CenteredMellin.SexticPrimitive.C1Approximation
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 namespace QP
-export GRWTSK.Analysis.Complex.GaussianPolynomialPair (Poly Disk eval pair enclose)
+export GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair (Poly Disk eval pair enclose)
 end QP
-open GRWTSK.Analysis.Complex.GaussianPolynomialPair (affine_margin_pos)
+open GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair (affine_margin_pos)
 noncomputable section
 
 structure Packet where
@@ -98,7 +98,7 @@ lemma channel_bounds {W : Packet} {z : ℂ} (hz : z ∈ W.carrier) (hoff : z.re 
     have hb : |d^2-(W.offsetRadius : ℝ)^2/2| ≤ (W.offsetRadius : ℝ)^2/2 :=
       abs_le.mpr ⟨by nlinarith [sq_nonneg d],by linarith⟩
     simpa only [squaredDisk,Rat.cast_div,Rat.cast_pow,Rat.cast_ofNat] using hb
-  have hp := GRWTSK.Analysis.Complex.GaussianPolynomialPair.enclose_valid W.coefficients hv hq
+  have hp := GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.enclose_valid W.coefficients hv hq
   have hplus : MirrorChannels.center z+MirrorChannels.offset z-W.anchor=v+(d : ℂ) := by
     apply Complex.ext <;> simp [v,d,MirrorChannels.center,MirrorChannels.offset,anchor,Gaussian.value] <;> ring
   have hminus : MirrorChannels.center z-MirrorChannels.offset z-W.anchor=v-(d : ℂ) := by
@@ -112,8 +112,8 @@ lemma channel_bounds {W : Packet} {z : ℂ} (hz : z ∈ W.carrier) (hoff : z.re 
     unfold odd model
     rw [hplus,hminus]
     rfl
-  rw [he,ho,GRWTSK.Analysis.Complex.GaussianPolynomialPair.pair_even,
-    GRWTSK.Analysis.Complex.GaussianPolynomialPair.pair_odd _ _
+  rw [he,ho,GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.pair_even,
+    GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.pair_odd _ _
       (Complex.ofReal_ne_zero.mpr (sub_ne_zero.mpr hoff))]
   exact ⟨hp.1.lower_le,hp.2.lower_le⟩
 

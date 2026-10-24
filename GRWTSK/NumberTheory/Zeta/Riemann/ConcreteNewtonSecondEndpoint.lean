@@ -17,7 +17,7 @@ is claimed here. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonSecondEndpoint
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 open ConcreteNewtonFirstEndpoint ConcreteNewtonSecondSeed

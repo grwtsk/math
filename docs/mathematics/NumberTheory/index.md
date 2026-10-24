@@ -4,15 +4,29 @@
 
 [Results index](../index.md) · [Up one directory](../index.md)
 
-**Subject:** `urn:uuid:2a6074be-7f1b-4757-854a-b61113cf910c` · editorial status: **proposed** · [definition, scope and sources](../../taxonomy/subjects/number-theory/index.md).
+**Subject:** `urn:uuid:2a6074be-7f1b-4757-854a-b61113cf910c` · editorial status: **proposed** · [definition, scope and sources](../../taxonomy/subjects/NumberTheory/index.md).
 
 The study of integers, rational numbers and related arithmetic structures, including divisibility, arithmetic equations, primes and arithmetic in field extensions.
 
 **Scope.** The subject includes structural, analytic and algorithmic questions. Arithmetic here is not merely elementary calculation, and number theory is not identified with a single conjecture, implementation or notation. Its elementary, analytic, algebraic and computational branches overlap; they are disciplinary perspectives, not a disjoint partition or an exhaustive set.
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+## Complete source publication
+
+[Every source module and declaration](../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [NumberTheory](complete-source-index.md) | 12,280 | 126,707 | 74,961 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 575 | 2 | 2 | 0 |
+| 577 | 2 | 2 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -47,22 +61,23 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Algebraic number theory](algebraic/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of arithmetic through algebraic extensions of the rational numbers and related rings, ideals, valuations and field structures.
-2. **[Analytic number theory](analytic/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of arithmetic questions using analytic estimates, limiting processes and real or complex functions associated with arithmetic data.
+1. **[Algebraic number theory](AlgebraicNumberTheory/index.md)** — 3 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of arithmetic through algebraic extensions of the rational numbers and related rings, ideals, valuations and field structures.
+   Unranked previews: [Primitive kernel frame and anisotropic covolume normalization](AlgebraicNumberTheory/GeometryOfNumbers/heath-brown-primitive-kernel-frame.md); [Primitive linear-box foundation for the Heath–Brown estimate](AlgebraicNumberTheory/GeometryOfNumbers/heath-brown-primitive-linear-box-foundation.md).
+2. **[Analytic number theory](AnalyticNumberTheory/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of arithmetic questions using analytic estimates, limiting processes and real or complex functions associated with arithmetic data.
 3. **[Arithmetic Functions](ArithmeticFunctions/index.md)** — 0 immediate children · 5 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Arithmetic Liouville signs as exact finite Walsh observations](ArithmeticFunctions/liouville-walsh-source.md); [Complete density Möbius correction](ArithmeticFunctions/density-correction.md).
 4. **[Arithmetic Geometry](ArithmeticGeometry/index.md)** — 1 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Pilot comparisons and source correspondence obligations](ArithmeticGeometry/LogThetaComparison/abc-iut-objections.md).
 5. **[Chebyshev](Chebyshev/index.md)** — 0 immediate children · 40 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A complete rational uniform-interval check](Chebyshev/interval-rational-quadrature.md); [A finite rational polygon index with an explicit logarithmic refinement](Chebyshev/pole-contour-polygon-index.md).
-6. **[Computational number theory](computational/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of algorithms for arithmetic problems, including their mathematical correctness, input representations, complexity and explicit outputs.
+6. **[Computational number theory](ComputationalNumberTheory/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of algorithms for arithmetic problems, including their mathematical correctness, input representations, complexity and explicit outputs.
 7. **[Continued Fractions](ContinuedFractions/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md); [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md).
 8. **[Cyclotomic](Cyclotomic/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Cubic characters on good third-cyclotomic quotients](Cyclotomic/third-cyclotomic-characters.md); [Cubic Jacobi congruence in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-jacobi.md).
 9. **[Diophantine](Diophantine/index.md)** — 1 immediate children · 6 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [ABC exceptional-set analytic interfaces](Diophantine/abc-exceptional-analytic-interfaces.md); [ABC exceptional-set geometry linearization](Diophantine/abc-exceptional-geometry-linearization.md).
-10. **[Elementary number theory](elementary/index.md)** — 1 immediate children · 2 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integer arithmetic through divisibility, congruences and related arguments that do not require the general machinery of analytic or algebraic number theory.
+10. **[Elementary number theory](ElementaryNumberTheory/index.md)** — 1 immediate children · 2 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integer arithmetic through divisibility, congruences and related arguments that do not require the general machinery of analytic or algebraic number theory.
    Unranked previews: [Least natural prime](Prime/least-prime.md); [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md).
 11. **[Farey](Farey/index.md)** — 0 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Exact finite obstruction connections: Farey, Sturmian, projective channels, bounded gauges, Heisenberg](Farey/recent-obstructions-formalization-2026.md); [Exact real-measure mixing → open return transport for the Farey cat map](Farey/cat-map-measure-mixing-transport.md).
@@ -79,7 +94,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 17. **[Zeta](Zeta/index.md)** — 1 immediate children · 245 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A cubic ceiling on the local Jensen circles](Zeta/Riemann/cubic-circle-ceiling.md); [Absolute high-g Type II closure by finite divisor counting](Zeta/Riemann/quadratic-theta-prime-fejer-mobius-log-high-gcd-type-ii-counting.md).
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

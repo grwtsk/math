@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
-open GRWTSK.Spectral.MatrixCountComparison
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
 example {ι : Type*} [Fintype ι] [DecidableEq ι] {A B : Matrix ι ι ℝ}
     (hA : A.IsHermitian) (hB : B.IsHermitian)
     (K : EuclideanSpace ℝ ι →ₗ[ℝ] ℝ) (E : ℝ) :

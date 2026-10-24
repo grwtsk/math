@@ -1,5 +1,5 @@
 import Mathlib
-import GRWTSK.LinearAlgebra.FramedFiberPort
+import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 namespace GRWTSK.Analysis.Operator.UnboundedPort
 

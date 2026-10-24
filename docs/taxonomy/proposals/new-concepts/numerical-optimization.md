@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D10"]
 ---
 # Numerical analysis and optimization: subject addition
 
-[Proposals](../index.md) · [Numerical analysis](../../subjects/numerical-analysis/index.md) · [Optimization](../../subjects/optimization/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Numerical analysis](../../subjects/NumericalAnalysis/index.md) · [Optimization](../../subjects/Optimization/index.md) · [Registry](../../registry.md)
 
 ## Problem and affected source
 

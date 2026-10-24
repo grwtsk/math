@@ -9,7 +9,7 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
 
 set_option autoImplicit false
-namespace GRWTSK.Analysis.Waveform.Scheduling
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform.Scheduling
 open scoped BigOperators
 
 def clock (b : ℕ → ℕ) : ℕ → ℕ :=
@@ -147,4 +147,4 @@ theorem no_starvation {m : ℕ} (hm : 0 < m) (Q : ℕ) (hQ : 0 < Q)
   have hc' : (count w i n : ℤ) ≤ K := by exact_mod_cast (show count w i n ≤ K by omega)
   rw [hn'] at h
   nlinarith
-end GRWTSK.Analysis.Waveform.Scheduling
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform.Scheduling

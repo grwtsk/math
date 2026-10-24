@@ -21,7 +21,7 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.MirrorApproximation
 open Complex Set Filter
 open CenteredMellin.SexticPrimitive CenteredMellin.SexticPrimitive.C1Approximation
-open GRWTSK.Analysis.Complex.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 open scoped Topology
 noncomputable section
 
@@ -82,7 +82,7 @@ theorem eventually_accepted_iff {T : ℝ} {c d : ℂ}
   let C (n : ℕ) := enclosure (N := n+1) hT (by omega) hd hp hm
   have hb : Tendsto (fun n => (C n).budget) atTop (𝓝 0) :=
     errorBudget_tendsto_zero T d
-  exact GRWTSK.Analysis.Complex.SymmetricPair.eventually_accepts_iff C hb
+  exact GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.eventually_accepts_iff C hb
 
 theorem exists_accepted_iff {T : ℝ} {c d : ℂ}
     (hT : 0 ≤ T) (hd : d ≠ 0) (hp : c+d ∈ band T) (hm : c-d ∈ band T) :
@@ -91,7 +91,7 @@ theorem exists_accepted_iff {T : ℝ} {c d : ℂ}
   let C (n : ℕ) := enclosure (N := n+1) hT (by omega) hd hp hm
   have hb : Tendsto (fun n => (C n).budget) atTop (𝓝 0) :=
     errorBudget_tendsto_zero T d
-  exact GRWTSK.Analysis.Complex.SymmetricPair.exists_accepts_iff C hb
+  exact GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.exists_accepts_iff C hb
 
 /-- Exact hypothetical pair coordinates; the model still evaluates complex powers. -/
 def Eligible (z : ℂ) : Prop := 0 < z.re ∧ z.re < 1 ∧ z.re ≠ 1/2

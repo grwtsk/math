@@ -8,7 +8,7 @@ The same weighted port preserves the normal form while retaining (ab)^(2k).
 No intrinsic Hodge metric, complete H0, integral projection or height theorem.
 Unelaborated source proof scripts; no global norm/topology instance.
 -/
-import GRWTSK.Analysis.LinearAlgebra.ThreeCellGaugeMetric
+import GRWTSK.Algebra.LinearAlgebra.ThreeCellGaugeMetric
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHodgeComparison
 
 set_option autoImplicit false
@@ -19,7 +19,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGauge
 open FreyWeightedSections FreyWeightedBasis FreyWeightedEnergy
 open FreyCechHodgeComparison
 open GRWTSK.Algebra.Homology.ThreeCellCech
-open GRWTSK.Analysis.LinearAlgebra
+open GRWTSK.Algebra.LinearAlgebra
 open ThreeCellHodgeGauge
 open scoped BigOperators
 attribute [local instance] FreyWeightedSections.coefficientAlgebra

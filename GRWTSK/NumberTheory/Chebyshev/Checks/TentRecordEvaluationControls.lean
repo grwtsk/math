@@ -10,8 +10,8 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls
 
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
-open GRWTSK.Analysis.Complex.TentKernelEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.TentKernelEnclosure
 
 noncomputable section
 

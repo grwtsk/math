@@ -24,7 +24,7 @@ premise. The two moments are not a reversible encoding of the signed vector.
 set_option autoImplicit false
 noncomputable section
 
-namespace GRWTSK.LinearAlgebra.RationalSqrtTwoCertificate
+namespace GRWTSK.Algebra.LinearAlgebra.RationalSqrtTwoCertificate
 
 /-- Rational coordinates cannot cancel across the fixed irrational anchor. -/
 theorem rational_pair_eq_zero_iff (a b : ℚ) :
@@ -142,4 +142,4 @@ theorem exact_sqrtTwo_certificate_iff (p delta : ι → ℚ)
   exact (rational_pair_eq_zero_iff (weightedMean p delta)
     (residualEnergy p delta)).trans (moments_eq_zero_iff p delta hpos hnorm)
 
-end GRWTSK.LinearAlgebra.RationalSqrtTwoCertificate
+end GRWTSK.Algebra.LinearAlgebra.RationalSqrtTwoCertificate

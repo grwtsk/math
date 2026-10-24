@@ -16,7 +16,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.HeightIndexedResidueControls
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues

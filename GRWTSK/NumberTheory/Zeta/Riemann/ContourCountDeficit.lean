@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.WeightedInventoryDeficit
+import GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedInventoryDeficit
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalLocalZeroContour
 
 set_option autoImplicit false
@@ -30,8 +30,8 @@ namespace GRWTSK.RiemannHypothesis.ContourCountDeficit
 
 open Set Metric
 open CanonicalZeroDivisor CanonicalLocalZeroContour
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedInventoryDeficit
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedInventoryDeficit
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 open scoped BigOperators

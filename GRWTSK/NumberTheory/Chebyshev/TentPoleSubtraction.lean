@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RectangularPoleReduction
+import GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 import GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 import GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
 
@@ -22,10 +22,10 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction
 
 open Filter Set
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.FinitePoleSubtraction
-open GRWTSK.Analysis.Complex.RectangularPoleReduction
-open GRWTSK.Analysis.Complex.OrientedRectangle
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.FinitePoleSubtraction
+open GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.CanonicalLogarithmicResidues

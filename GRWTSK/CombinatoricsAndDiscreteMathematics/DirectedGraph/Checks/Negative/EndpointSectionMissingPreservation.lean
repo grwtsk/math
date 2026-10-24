@@ -6,10 +6,10 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
-open GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix
-open GRWTSK.Combinatorics.DirectedGraph.EndpointSection.Checks.Positive
-open GRWTSK.Order.Embeddings.PrefixObstruction
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings.PrefixObstruction
 
 /- The accepted positive module proves the actual right inverse and nonpreservation.
 An endpoint right inverse cannot supply the missing reachability-preservation premise. -/

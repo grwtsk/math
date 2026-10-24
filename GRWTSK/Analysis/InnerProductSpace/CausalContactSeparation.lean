@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction
+import GRWTSK.Algebra.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction
 import GRWTSK.Analysis.InnerProductSpace.CausalResponseGram
 import GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation
 import Mathlib.LinearAlgebra.Pi
@@ -36,7 +36,7 @@ namespace GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 open MeasureTheory Set
 open GRWTSK.ProofHorizon.CorkscrewChamberCap
 open ArithmeticPickupEnergy
-open GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+open GRWTSK.Algebra.LinearAlgebra.ZeroCoordinateObstruction
 
 noncomputable section
 

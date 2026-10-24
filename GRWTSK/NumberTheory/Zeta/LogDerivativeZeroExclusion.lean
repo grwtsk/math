@@ -4,7 +4,7 @@ Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 Lean and Mathlib retain their original attribution and licenses.
 Status: candidate proof source, NOT elaborated in the pinned environment.
 -/
-import GRWTSK.Analysis.Complex.AnalyticLinearODE
+import GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE
 import GRWTSK.NumberTheory.Zeta.PoleRemovedSource
 
 /-! # A holomorphic regularized logarithmic derivative excludes nontrivial zeros
@@ -20,7 +20,7 @@ open Set Filter
 open scoped Topology
 namespace GRWTSK.NumberTheory.Zeta.LogDerivativeZeroExclusion
 open GRWTSK.NumberTheory.Zeta.PoleRemovedSource
-open GRWTSK.Analysis.Complex.AnalyticLinearODE
+open GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE
 
 /-- On the Euler half-plane all cancelled factors have proved nonzero values. -/
 theorem ode_on_euler_domain {F : ℂ → ℂ}

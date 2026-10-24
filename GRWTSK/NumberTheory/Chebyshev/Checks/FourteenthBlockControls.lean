@@ -7,7 +7,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.RiemannHypothesis.FourteenthBlockControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 theorem base_boundaries : ConcreteNewtonFourteenthBlockData.base 0 = 833 ∧

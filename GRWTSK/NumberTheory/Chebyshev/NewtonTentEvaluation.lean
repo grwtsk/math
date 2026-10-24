@@ -21,7 +21,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.NewtonTentEvaluation
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis
 open CanonicalZeroDivisor EnclosedZeroInventory LocalNewtonWitness
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure
 open RationalMellinFamily (Member)

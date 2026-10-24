@@ -14,7 +14,7 @@ import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.IntervalCases
 
-namespace GRWTSK.LinearAlgebra.SchrodingerTransfer
+namespace GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 /-!
 # Exact Jacobi transfer normalization
@@ -98,4 +98,4 @@ theorem schrodinger_same_SL_syntax_not_equal :
 
 
 
-end GRWTSK.LinearAlgebra.SchrodingerTransfer
+end GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer

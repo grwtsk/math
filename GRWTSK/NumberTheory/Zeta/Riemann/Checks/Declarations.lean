@@ -29,7 +29,7 @@ elab "#audit_rh_target" : command => do
     `GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect,
     `GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry,
     `GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion,
-    `GRWTSK.Analysis.Complex.CriticalReflection,
+    `GRWTSK.Analysis.ComplexAnalysis.CriticalReflection,
     `GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
   ]
   for owner in selectedOwners do

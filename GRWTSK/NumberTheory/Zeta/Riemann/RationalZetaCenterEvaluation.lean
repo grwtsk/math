@@ -1,8 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalPowerEvaluation
-import GRWTSK.Analysis.Complex.RationalComplexQuotient
+import GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation
+import GRWTSK.Analysis.ComplexAnalysis.RationalComplexQuotient
 import GRWTSK.NumberTheory.Zeta.Riemann.FiniteNewtonCenter
 
 set_option autoImplicit false
@@ -21,12 +21,12 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalZetaCenterEvaluation
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 
 /-- Precision data only. Prefix inputs have exactly the declared finite size. -/
 structure Plan (N : ℕ) where
-  «prefix» : Fin N → GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule
-  terminal : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule
+  «prefix» : Fin N → GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule
+  terminal : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule
   cauchyRadius : ℚ
   valueBits : ℕ
   slopeBits : ℕ
@@ -58,41 +58,41 @@ def factorSlopeQ (N : ℕ) (c : QComplex) : QComplex :=
     (QComplex.smul (1 / (12 * cutoffQ N)) QComplex.one)
 
 def powerLogValue (q : ℚ) (c : QComplex)
-    (p : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule) : QComplex :=
-  QComplex.smul (-GRWTSK.Analysis.Complex.RationalPowerEvaluation.logCenter q p)
-    (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute q (sourceExponent c) p).value
+    (p : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule) : QComplex :=
+  QComplex.smul (-GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.logCenter q p)
+    (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute q (sourceExponent c) p).value
 
 def powerLogError (q : ℚ) (c : QComplex)
-    (p : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule) : ℚ :=
-  let out := GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute q (sourceExponent c) p
-  let l := GRWTSK.Analysis.Complex.RationalPowerEvaluation.logCenter q p
-  let e := GRWTSK.Analysis.Complex.RationalPowerEvaluation.logError q p
+    (p : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule) : ℚ :=
+  let out := GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute q (sourceExponent c) p
+  let l := GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.logCenter q p
+  let e := GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.logError q p
   (|l| + e) * out.error + QComplex.rect out.value * e
 
 def finiteValueQ (N : ℕ) (c : QComplex) (p : Plan N) : QComplex :=
   QComplex.add
-    (sumQ (fun i => (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+    (sumQ (fun i => (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
       ((i.1 : ℚ) + 1) (sourceExponent c) (p.«prefix» i)).value))
-    (QComplex.mul (factorQ N c) (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+    (QComplex.mul (factorQ N c) (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
       (cutoffQ N) (sourceExponent c) p.terminal).value)
 
 def finiteSlopeQ (N : ℕ) (c : QComplex) (p : Plan N) : QComplex :=
   QComplex.add (sumQ (fun i => powerLogValue ((i.1 : ℚ) + 1) c (p.«prefix» i)))
     (QComplex.add
-      (QComplex.mul (factorSlopeQ N c) (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+      (QComplex.mul (factorSlopeQ N c) (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
         (cutoffQ N) (sourceExponent c) p.terminal).value)
       (QComplex.mul (factorQ N c) (powerLogValue (cutoffQ N) c p.terminal)))
 
 def finiteValueErrorQ (N : ℕ) (c : QComplex) (p : Plan N) : ℚ :=
-  (∑ i, (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+  (∑ i, (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
     ((i.1 : ℚ) + 1) (sourceExponent c) (p.«prefix» i)).error) +
-  QComplex.rect (factorQ N c) * (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+  QComplex.rect (factorQ N c) * (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
     (cutoffQ N) (sourceExponent c) p.terminal).error
 
 def finiteSlopeErrorQ (N : ℕ) (c : QComplex) (p : Plan N) : ℚ :=
   (∑ i, powerLogError ((i.1 : ℚ) + 1) c (p.«prefix» i)) +
     (QComplex.rect (factorSlopeQ N c) *
-        (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+        (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
           (cutoffQ N) (sourceExponent c) p.terminal).error +
       QComplex.rect (factorQ N c) * powerLogError (cutoffQ N) c p.terminal)
 
@@ -108,9 +108,9 @@ def compute (N : ℕ) (c : QComplex) (p : Plan N) : CenterState :=
 def Admissible (N : ℕ) (c : QComplex) (p : Plan N) : Prop :=
   0 < p.cauchyRadius ∧ p.cauchyRadius ≤ c.re ∧
   0 < QComplex.normSq (QComplex.sub c QComplex.one) ∧
-  (∀ i, GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible
+  (∀ i, GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible
     ((i.1 : ℚ) + 1) (sourceExponent c) (p.«prefix» i)) ∧
-  GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible
+  GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible
     (cutoffQ N) (sourceExponent c) p.terminal
 
 instance (N : ℕ) (c : QComplex) (p : Plan N) : Decidable (Admissible N c p) := by

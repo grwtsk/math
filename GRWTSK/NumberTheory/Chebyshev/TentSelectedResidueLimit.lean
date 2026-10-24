@@ -21,8 +21,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentSelectedResidueLimit
 
 open Filter Set
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.OrientedRectangle
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.SeparatedContourHeights

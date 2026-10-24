@@ -24,7 +24,7 @@ open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
 open RationalNewtonDisk (magnitude magnitude_nonneg norm_le_magnitude)
 open RationalEndpointJet (risingJet risingJet_refines point point_sound prefix prefix_sound)
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open CriticalStripHeightDescent
 
 /-- The coefficient's regular polynomial and tangent, without a pole inverse. -/

@@ -16,7 +16,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls
 
 open scoped unitInterval BigOperators Topology
 open Set ContinuousMap
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open ClosedCurveFactorIndex RectangleFactorIndex ExponentialLoopIndex
 
 noncomputable section

@@ -38,7 +38,7 @@ open ArithmeticPickupEnergy
 open GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 open GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation
 open GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
-open GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction
+open GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
 
 noncomputable section
 

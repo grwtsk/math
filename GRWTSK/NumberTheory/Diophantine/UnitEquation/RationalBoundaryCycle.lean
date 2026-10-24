@@ -19,7 +19,7 @@ namespace GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryCycle
 
 open GRWTSK.NumberTheory.Padics.RationalPairSupport
 open GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 
 /-- Nonzero rational solutions; positivity is NOT imposed on transformed charts. -/
 @[ext] structure UnitPair where

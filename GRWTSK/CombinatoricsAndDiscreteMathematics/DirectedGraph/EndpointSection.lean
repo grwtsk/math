@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors; OpenAI Codex formalization as
 Mathlib/Lean authorship and Apache-2.0 terms are retained through the attributed
 PathUnfolding, OccurrencePrefix and PrefixObstruction imports. -/
 import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix
-import GRWTSK.FoundationsLogicAndTypeTheory.Order.Embeddings.PrefixObstruction
+import GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings.PrefixObstruction
 
 /-!
 # Reachability-preserving endpoint sections are obstructed by joins
@@ -25,10 +25,10 @@ property, runtime refinement, or proof/permission authority is asserted.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.EndpointSection
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection
 
 open Quiver PathUnfolding OccurrencePrefix
-open GRWTSK.Order.Embeddings.PrefixObstruction
+open GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings.PrefixObstruction
 
 variable {V : Type*} [Quiver V] {root : V}
 
@@ -75,4 +75,4 @@ theorem diamond_bottom_reachable (vertex : Diamond) : Reachable Diamond.bottom v
 def diamondVertex (vertex : Diamond) : ReachableVertex Diamond.bottom :=
   ⟨vertex, diamond_bottom_reachable vertex⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.EndpointSection
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection

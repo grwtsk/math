@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RectangleDivisorIndex
+import GRWTSK.Analysis.ComplexAnalysis.RectangleDivisorIndex
 import GRWTSK.NumberTheory.Zeta.Riemann.MirrorCountingRectangle
 import GRWTSK.NumberTheory.Zeta.Riemann.PoleContourPolygonIndex
 
@@ -22,7 +22,7 @@ namespace GRWTSK.RiemannHypothesis.CanonicalRectangleIndex
 
 open scoped unitInterval BigOperators Topology
 open Set ContinuousMap
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open ClosedCurveFactorIndex RectangleFactorIndex PolygonFreeHomotopy
 open CanonicalZeroDivisor CriticalStripHeightDescent
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure

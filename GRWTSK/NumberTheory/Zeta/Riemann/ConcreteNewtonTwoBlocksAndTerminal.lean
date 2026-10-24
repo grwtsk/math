@@ -20,7 +20,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonTwoBlocksAndTerminal
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open ConcreteNewtonPacket RationalZetaCenterEvaluation RationalZetaTranscript
 
 /-- Fill the second window first, then the disjoint first window. No sums are taken here. -/

@@ -1,6 +1,6 @@
-import GRWTSK.LinearAlgebra.AlmostMathieu
+import GRWTSK.Algebra.LinearAlgebra.AlmostMathieu
 import GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold
-import GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm
+import GRWTSK.Algebra.LinearAlgebra.Determinant.RankOneQuadraticForm
 import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
 import GRWTSK.NumberTheory.Moebius.ComparisonEnergy
 import GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth

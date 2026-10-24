@@ -7,7 +7,7 @@ Real coefficient metrics on the SAME W_k and SAME L_k. Sharp bounds retain
 an integral lattice, or a uniform arithmetic-height theorem. No global norm
 instance is installed. Unelaborated source proof scripts only.
 -/
-import GRWTSK.LinearAlgebra.WeightedPermutationEnergy
+import GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis
 import Mathlib.Data.Fin.Rev
 
@@ -18,7 +18,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy
 
 open FreyTorsionOpen FreyWeightedSections FreyWeightedBasis
-open GRWTSK.LinearAlgebra.WeightedPermutationEnergy
+open GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy
 open scoped BigOperators
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 

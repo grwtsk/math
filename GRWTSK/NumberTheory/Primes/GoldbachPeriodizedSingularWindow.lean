@@ -30,7 +30,7 @@ namespace GRWTSK.NumberTheory.Primes.GoldbachPeriodizedSingularWindow
 
 open scoped BigOperators Real
 open Set Metric AddCircle MeasureTheory intervalIntegral
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates

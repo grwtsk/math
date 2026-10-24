@@ -1,6 +1,6 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 universe u v w m n
 variable {R : Type u} [Ring R]
 variable {E : Type v} [AddCommGroup E] [Module R E]

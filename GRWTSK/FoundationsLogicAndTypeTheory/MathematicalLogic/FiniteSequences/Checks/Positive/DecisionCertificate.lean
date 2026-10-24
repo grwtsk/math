@@ -1,8 +1,8 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
-open GRWTSK.Logic.FiniteSequences.DictionaryRevision
-open GRWTSK.Logic.FiniteSequences.DecisionCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate
 
 set_option autoImplicit false
 

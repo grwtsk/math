@@ -9,7 +9,7 @@ Exactly these selected families are listed; this is not a declaration-wide or co
 | Priority | Family | Status | Retained evidence label |
 |---:|---|---|---|
 | 1 | [Least natural prime](../mathematics/NumberTheory/Prime/least-prime.md) | verification | fresh-selected |
-| 2 | [Coverage and discrete quotas](../mathematics/Combinatorics/Sequences/coverage-and-quotas.md) | verification pending | historical-source-relocated |
+| 2 | [Coverage and discrete quotas](../mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md) | verification pending | historical-source-relocated |
 | 3 | [Polynomial return with paid error](../mathematics/Analysis/Asymptotics/polynomial-error.md) | verification pending | historical-source-relocated |
 
 ## Current replay scopes

@@ -19,7 +19,7 @@ namespace GRWTSK.RiemannHypothesis.FiniteCubicZetaApproximation
 
 open Set Filter
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open CubicPowerSummation CubicRemainder CubicRemainderHolomorphic CubicZetaIdentity
 
 noncomputable section

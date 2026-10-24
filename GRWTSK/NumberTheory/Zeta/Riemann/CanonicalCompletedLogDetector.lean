@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Complex.AnalyticZeroOrderDetector
+import GRWTSK.Analysis.ComplexAnalysis.AnalyticZeroOrderDetector
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
 import Mathlib.Analysis.Complex.CauchyIntegral
 import Mathlib.Analysis.SpecialFunctions.Gamma.Deligne
@@ -11,7 +11,7 @@ unpublished manuscripts' unspecified automorphic sources or geometric classes. -
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CompletedLogDetector
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+open GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 open Filter
 open scoped Topology
 

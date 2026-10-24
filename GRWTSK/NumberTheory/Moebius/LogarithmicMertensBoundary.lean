@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
-import GRWTSK.Analysis.Integration.ExponentialVolterraL2
+import GRWTSK.Analysis.RealAnalysis.Integration.ExponentialVolterraL2
 import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 
@@ -27,7 +27,7 @@ open MeasureTheory Set
 namespace GRWTSK.NumberTheory.Moebius.LogarithmicMertensBoundary
 
 open GRWTSK.RiemannHypothesis.CCC
-open GRWTSK.Analysis.Integration.ExponentialVolterraL2
+open GRWTSK.Analysis.RealAnalysis.Integration.ExponentialVolterraL2
 open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks

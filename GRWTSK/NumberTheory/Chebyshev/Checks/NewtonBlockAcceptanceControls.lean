@@ -10,7 +10,7 @@ SourceAcceptance. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. -/
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.NewtonBlockAcceptanceControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open GRWTSK.RiemannHypothesis
 open ConcreteNewtonPacket ConcreteNewtonBlockAcceptance RationalZetaTranscript
 

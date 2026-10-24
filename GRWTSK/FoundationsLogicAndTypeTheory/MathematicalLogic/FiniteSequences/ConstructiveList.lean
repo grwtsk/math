@@ -17,7 +17,7 @@ They do not assume propositional extensionality, choice, or quotient soundness.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.ConstructiveList
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList
 
 universe u v
 
@@ -378,4 +378,4 @@ theorem max?_eq_some_iff {xs : List Nat} {a : Nat} :
         exact congrArg some (Nat.le_antisymm
           (maximum.2 (xs.foldl max b) selected.1) (selected.2 a maximum.1))
 
-end GRWTSK.Logic.FiniteSequences.ConstructiveList
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.ConstructiveList

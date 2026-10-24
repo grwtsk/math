@@ -19,7 +19,7 @@ windows and inequalities require separate arguments.
 Research direction: grwtsk contributors. Lean implementation: OpenAI Codex.
 -/
 
-namespace GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+namespace GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 noncomputable section
 
@@ -44,4 +44,4 @@ theorem zero_row_square_congruence_ne_positive_definite {ι : Type*} [Fintype ι
 
 end
 
-end GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction

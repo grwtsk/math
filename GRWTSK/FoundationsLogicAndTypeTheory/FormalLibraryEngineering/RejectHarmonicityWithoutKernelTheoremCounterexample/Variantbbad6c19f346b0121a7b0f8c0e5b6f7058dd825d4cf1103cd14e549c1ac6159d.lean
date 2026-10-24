@@ -1,8 +1,8 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 open GRWTSK.Geometry.Hodge.DegreeZeroCohomology
 -- Cocycle→harmonic follows algebraically even without positivity; the converse does not.
 def degenerateHodge : TwoTermHodgeData ℚ ℚ ℚ where

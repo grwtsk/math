@@ -20,7 +20,7 @@ universe u
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.RiemannHypothesis
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentInformationLossBridge
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss

@@ -21,7 +21,7 @@ open Set Metric Filter
 open scoped Topology BigOperators
 open CanonicalZeroDivisor LocalJensenCount SeparatedContourHeights
 open CubicZetaCircleBound JensenDiskLogDerivative JensenDiskQuotientLog JensenDiskQuotient
-open GRWTSK.Analysis.Complex.DiskBlaschkeFactors
+open GRWTSK.Analysis.ComplexAnalysis.DiskBlaschkeFactors
 
 noncomputable section
 

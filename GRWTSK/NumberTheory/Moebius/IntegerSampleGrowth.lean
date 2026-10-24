@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Moebius.EnergyAbscissa
-import GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm
+import GRWTSK.Algebra.LinearAlgebra.Determinant.RankOneQuadraticForm
 
 /-!
 # Exact passage from every integer sample to the entire real-time continuum

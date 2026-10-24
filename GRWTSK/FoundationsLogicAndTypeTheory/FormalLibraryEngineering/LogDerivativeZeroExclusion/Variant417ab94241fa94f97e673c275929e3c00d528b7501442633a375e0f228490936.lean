@@ -20,7 +20,7 @@ open Set Filter
 open scoped Topology
 namespace GRWTSK.NumberTheory.Zeta.LogDerivativeZeroExclusion
 open GRWTSK.NumberTheory.Zeta.PoleRemovedSource
-open GRWTSK.Analysis.Complex.AnalyticLinearODE
+open GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE
 
 /-- On the Euler half-plane all cancelled factors have proved nonzero values. -/
 theorem ode_on_euler_domain {F : ℂ → ℂ}

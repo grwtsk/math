@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonRegularPart
-import GRWTSK.Analysis.Complex.IsolatedSimpleZeroContour
+import GRWTSK.Analysis.ComplexAnalysis.IsolatedSimpleZeroContour
 
 set_option autoImplicit false
 
@@ -27,8 +27,8 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED / SOURCE_ACCEPTANCE_OPEN.
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonContour
 
 open Set Metric
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.IsolatedSimpleZeroContour
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.IsolatedSimpleZeroContour
 open CanonicalZeroDivisor ConcreteNewtonLocalization ConcreteNewtonBoundary ConcreteNewtonRegularPart
 
 noncomputable section

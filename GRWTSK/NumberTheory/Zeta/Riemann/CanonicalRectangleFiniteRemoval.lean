@@ -1,9 +1,9 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.FiniteRemovablePatching
+import GRWTSK.Analysis.ComplexAnalysis.FiniteRemovablePatching
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleArgumentPrinciple
-import GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+import GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -34,8 +34,8 @@ namespace GRWTSK.RiemannHypothesis.CanonicalRectangleFiniteRemoval
 
 open Filter Set MeasureTheory
 open scoped Topology BigOperators Interval
-open GRWTSK.Analysis.Complex.FiniteRemovablePatching
-open GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+open GRWTSK.Analysis.ComplexAnalysis.FiniteRemovablePatching
+open GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 open CanonicalZeroDivisor
 open AdmissibleRectangles
 open TrivialZeroResidues

@@ -13,7 +13,7 @@ import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Ring
 
-namespace GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson
 
 noncomputable section
 
@@ -60,4 +60,4 @@ lemma moser_not_three_colorable (f : Fin 7 → Fin 3)
 
 end
 
-end GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson

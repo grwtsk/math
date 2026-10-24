@@ -18,7 +18,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalPoleContourTube
 
 open Set Metric
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
 open RationalNewtonDisk (magnitude magnitude_nonneg norm_le_magnitude)

@@ -13,16 +13,16 @@ namespace GRWTSK.Analysis.Operator.HolomorphicSectionMeasureTransfer
 
 open Filter Topology MeasureTheory
 open scoped ENNReal
-open scoped GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
+open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionEnergy
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionLinear
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionLinear
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle

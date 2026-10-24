@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI Codex. -/
-import GRWTSK.Combinatorics.DirectedEulerActiveSupport
+import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedEulerActiveSupport
 import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CountedCyclicEulerFromClosedWalk
 
 /-!
@@ -19,7 +19,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
 
-open GRWTSK.Combinatorics.DirectedEulerSplicing
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedEulerSplicing
 
 /-- The full finite supply of original counted edge IDs; labels are not
 quotiented, so all parallel indices remain distinct. -/

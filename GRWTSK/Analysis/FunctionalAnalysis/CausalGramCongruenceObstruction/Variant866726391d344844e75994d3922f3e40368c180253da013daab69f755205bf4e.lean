@@ -35,7 +35,7 @@ open GRWTSK.ProofHorizon.CorkscrewChamberCap
 open ArithmeticPickupEnergy
 open GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 open GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
-open GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 noncomputable section
 

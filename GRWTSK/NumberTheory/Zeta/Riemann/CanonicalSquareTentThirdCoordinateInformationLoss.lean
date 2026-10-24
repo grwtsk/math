@@ -8,7 +8,7 @@ warning-clean compilation, fresh kernel replay, and full transitive axiom audit.
 -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentInformationLossBridge
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentKernelLine
-import GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.FactorizationFiberCompleteness
 
 /-!
 # An actual arithmetic third-coordinate separator for the Bombieri moment fiber
@@ -30,7 +30,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss

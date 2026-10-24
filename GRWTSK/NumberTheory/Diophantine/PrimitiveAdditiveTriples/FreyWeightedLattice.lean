@@ -8,7 +8,7 @@ not the lattice of a complete geometric H0 space, a minimal-model lattice,
 a Hodge metric, or the earlier saturated rectangular observation map.
 Earlier sources and their hypotheses are unchanged. Unelaborated scripts.
 -/
-import GRWTSK.LinearAlgebra.WeightedPermutationIntegral
+import GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy
 
 set_option autoImplicit false
@@ -30,16 +30,16 @@ def weight (h : ℤ) (k : ℕ) : Index k → ℤ
 
 /-- Forward integer map exists without pretending ab is a unit in Z. -/
 def integerMap (a b : ℤ) (k : ℕ) : (Index k → ℤ) →ₗ[ℤ] (Index k → ℤ) :=
-  GRWTSK.LinearAlgebra.WeightedPermutationIntegral.transport (reverse k) (weight (a * b) k)
+  GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.transport (reverse k) (weight (a * b) k)
 
 @[simp] theorem integerMap_at (a b : ℤ) (k : ℕ) (v : Index k → ℤ) (i : Index k) :
     integerMap a b k v (reverse k i) = weight (a * b) k i * v i :=
-  GRWTSK.LinearAlgebra.WeightedPermutationIntegral.transport_at _ _ _ _
+  GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.transport_at _ _ _ _
 
 /-- The EXACT signed ideal divisibility, retaining all prime-power depths. -/
 theorem integer_image_iff (a b : ℤ) (k : ℕ) (u : Index k → ℤ) :
     (∃ v, integerMap a b k v = u) ↔ ∀ i, weight (a * b) k i ∣ u (reverse k i) :=
-  GRWTSK.LinearAlgebra.WeightedPermutationIntegral.image_iff _ _ _
+  GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.image_iff _ _ _
 
 /-- Each signed column divides the full square multiplier. No radical replaces a power. -/
 theorem weight_dvd_power (h : ℤ) (k : ℕ) (i : Index k) : weight h k i ∣ (-h) ^ k := by
@@ -60,7 +60,7 @@ theorem weight_dvd_power (h : ℤ) (k : ℕ) (i : Index k) : weight h k i ∣ (-
 /-- The top X column supplies necessity; all other columns supply sufficiency. -/
 theorem integer_clearing_iff (a b : ℤ) (k : ℕ) (d : ℤ) :
     (∀ u : Index k → ℤ, ∃ v, integerMap a b k v = d • u) ↔ (-(a * b)) ^ k ∣ d := by
-  rw [integerMap, GRWTSK.LinearAlgebra.WeightedPermutationIntegral.uniformClearing_iff]
+  rw [integerMap, GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.uniformClearing_iff]
   constructor
   · intro h
     exact h (Sum.inl ⟨k, Nat.lt_succ_self k⟩)

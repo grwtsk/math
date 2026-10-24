@@ -4,7 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Not root imported.
 -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeMomentUniqueDecoder
-import GRWTSK.Logic.InformationLoss.AugmentedRepairCriterion
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.AugmentedRepairCriterion
 
 /-!
 # Redundant Bombieri observables cannot replace the third coordinate
@@ -24,7 +24,7 @@ universe u
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRedundantObservation
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.RiemannHypothesis
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss

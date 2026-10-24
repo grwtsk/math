@@ -1,4 +1,4 @@
-import GRWTSK.LinearAlgebra.FramedFiberPort
+import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 namespace GRWTSK.Geometry.Hodge
 
@@ -122,7 +122,7 @@ theorem cycleToCell_apply (C : CycleCellularComparison H CellClass) (z : Cycle) 
 
 end CycleCellularComparison
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 /-- A cellular cohomology class receives a selected harmonic cochain representative.
 

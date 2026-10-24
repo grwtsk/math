@@ -2,7 +2,7 @@
 Formalization assistance: OpenAI Codex. Mathlib finite sums and canonical
 complex characters retain upstream attribution and Apache-2.0 licensing.
 Only exact finite complex identities are proved; all abc estimates stay open. -/
-import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DivisorSectorReindexing
 
 set_option autoImplicit false
@@ -10,7 +10,7 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
 
 open scoped BigOperators
-open GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 
 /-- A closed finite cube with the normalized unscaled additive projector and
 an arbitrary joint complex weight, with all three coordinates scaled by `d`. -/

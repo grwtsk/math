@@ -8,7 +8,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFourBlocksAndTerminal
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open ConcreteNewtonPacket RationalZetaCenterEvaluation RationalZetaTranscript
 
 def fill (later : Fin prefixLength → State) : Transcript prefixLength :=

@@ -8,7 +8,7 @@ Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Owner: grwtsk/math#745. Parent PR #738 exact head
 8cc8520b210bfc5ae2d119fbe9ac5be81bb33002.
 -/
-import GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+import GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 import Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup
 import Mathlib.Data.List.Flatten
 
@@ -39,10 +39,10 @@ noncomputable section
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam
 
-open GRWTSK.GroupTheory.Words.PrimitiveConjugacy
-open GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive
-open GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.PrimitiveConjugacy
+open GRWTSK.Algebra.GroupTheory.Words.IntegralHomologyPrimitive
+open GRWTSK.Algebra.GroupTheory.Words.IntegralHeisenbergPrimitive
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 
 /-- Exact oriented edge source: a fixed generator ID and a Boolean
 sign; true means the forward generator and false its inverse.
@@ -243,7 +243,7 @@ on the ACTUAL FundamentalGroup type, not on the abstract presented
 group, given the exact source-preserving equivalence. -/
 def MarkedFundamentalGroupAdapter.toHomologyInvisibleWitness
     (m : MarkedFundamentalGroupAdapter X x k) :
-    GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.HomologyInvisiblePrimitiveWitness
+    GRWTSK.Algebra.GroupTheory.Words.GenusTwoHeisenbergWitness.HomologyInvisiblePrimitiveWitness
       (FundamentalGroup X x) where
   element := m.orientedFirstHandle
   primitive := m.loop_primitive

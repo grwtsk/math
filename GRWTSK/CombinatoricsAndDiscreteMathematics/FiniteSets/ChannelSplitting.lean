@@ -9,7 +9,7 @@ of the payload. Optical multiplexing is an analogy for these finite predicates;
 no physical fiber, wavelength, interference or capacity theorem is claimed. -/
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.FiniteSets.ChannelSplitting
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.FiniteSets.ChannelSplitting
 
 def Residual {Signal Channel : Type} (route : Channel → Signal → Prop)
     (signal : Signal) : Prop := ∀ channel, ¬ route channel signal
@@ -39,4 +39,4 @@ theorem routing_does_not_imply_payload :
     ∃ route : Unit → Unit → Prop, (∃ channel, route channel ()) ∧ ¬ False :=
   ⟨fun _ _ => True, ⟨(), True.intro⟩, fun h => h⟩
 
-end GRWTSK.Combinatorics.FiniteSets.ChannelSplitting
+end GRWTSK.CombinatoricsAndDiscreteMathematics.FiniteSets.ChannelSplitting

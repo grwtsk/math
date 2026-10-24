@@ -8,7 +8,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis.Checks.ClauseIndexedDyadicThresholdControls
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
 
 /-- The all-positive polarity profile; the counting theorem itself is polarity

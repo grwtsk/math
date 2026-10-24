@@ -21,7 +21,7 @@ The finite examples use only abstract symbols and contain no authority records.
 
 universe u v w x y
 
-namespace GRWTSK.Logic.Authorization
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Authorization
 
 variable {Principal : Type u} {Scope : Type v}
 
@@ -208,4 +208,4 @@ theorem symbols_and_cycle_do_not_create_authority :
 
 end Examples
 
-end GRWTSK.Logic.Authorization
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Authorization

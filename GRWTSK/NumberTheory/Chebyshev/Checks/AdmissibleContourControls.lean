@@ -10,7 +10,7 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.AdmissibleContourControls
 
 open Set
-open GRWTSK.Analysis.Complex.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor

@@ -25,7 +25,7 @@ noncomputable section
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskBoundary
 
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 open SurfacePolygonCornerGluing SurfacePolygonBoundaryTopology
 open SurfacePolygonPerimeterAttachment SurfacePolygonPerimeterCircleEquivalence
 open SurfacePolygonUnitCircleAttachment

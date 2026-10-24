@@ -16,7 +16,7 @@ of any arithmetic conjecture.
 
 namespace GRWTSK.NumberTheory.Primes.Checks.LandauCountControls
 
-open GRWTSK.Combinatorics.Enumerative.BoundedWitnesses
+open GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.BoundedWitnesses
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 
 /-- Ordered Goldbach choices for ten are 3, 5 and 7. -/

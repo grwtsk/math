@@ -11,7 +11,7 @@ A natural prime q that is no greater than every natural prime equals two. The ar
 <!-- END GENERATED RESULT ABSTRACT -->
 
 [Prime results](index.md) · [Foundational least-prime article](least-prime.md) ·
-[Elementary number theory](../elementary/index.md) · [Order theory](../../Order/index.md)
+[Elementary number theory](../ElementaryNumberTheory/index.md) · [Order theory](../../CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/index.md)
 
 ## 1. Statement and hypotheses
 

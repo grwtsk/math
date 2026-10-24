@@ -20,8 +20,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours
 
 open MeasureTheory Filter Set
 open scoped Topology Interval BigOperators
-open GRWTSK.Analysis.Complex.OrientedRectangle
-open GRWTSK.Analysis.Complex.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues

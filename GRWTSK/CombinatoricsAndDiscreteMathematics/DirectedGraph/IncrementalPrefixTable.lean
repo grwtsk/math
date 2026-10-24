@@ -25,11 +25,11 @@ new rows inferred from old evidence.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefixTable
 
 open Quiver PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary
 open RootedTraceRevision
-open GRWTSK.Logic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
 
 variable {V Key : Type*} [Quiver V] {root : V}
 variable [DecidableEq (EdgeTrace.TotalEdge V)]
@@ -348,4 +348,4 @@ theorem certified_old_references (oldRows newRows : List (Key × Occurrence root
   rw [hentries] at hcertificate
   exact hcertificate.symm
 
-end GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefixTable

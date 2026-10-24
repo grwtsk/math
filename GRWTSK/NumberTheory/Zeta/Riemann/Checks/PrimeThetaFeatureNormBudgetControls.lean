@@ -9,7 +9,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis.Checks.PrimeThetaFeatureNormBudgetControls
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
 
 /-- Canonical polarity used only to expose the numerical arity labels. -/

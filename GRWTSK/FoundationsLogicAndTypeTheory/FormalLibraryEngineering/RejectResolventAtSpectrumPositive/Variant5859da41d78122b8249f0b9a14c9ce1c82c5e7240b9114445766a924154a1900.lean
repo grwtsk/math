@@ -1,8 +1,8 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.FiniteSpectralHeat
+open GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat
 example (M : Model (Fin 1) (Fin 1 → ℝ)) (z : ℝ)
     (hz : ∀ i, M.eigenvalue i ≠ z) :
     (M.shiftedOperator z).comp (M.resolvent z) = LinearMap.id :=

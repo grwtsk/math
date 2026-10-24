@@ -15,8 +15,8 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.Checks.ChannelChoice
 open Complex Set
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 noncomputable section
 

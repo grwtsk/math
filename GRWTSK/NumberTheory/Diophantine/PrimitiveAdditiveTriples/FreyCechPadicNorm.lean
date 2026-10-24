@@ -17,7 +17,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechPadicNorm
 
 open FreyWeightedBasis FreyCechWeightedMinimum
-open GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum
+open GRWTSK.Algebra.LinearAlgebra.ThreeCellWeightedMinimum
 open GRWTSK.Algebra.Homology.ThreeCellIntegralGauge
 open GRWTSK.NumberTheory.Padics
 open GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess
@@ -76,12 +76,12 @@ theorem combinedQ_integer (a b : ℤ) (k : ℕ) (q : Parameters k) :
   · funext i
     simp [combinedQ, reducedPortQ, minimumQ, combinedMap, composite,
       reducedPort, minimumData, WeightedPermutationNorm.transport,
-      GRWTSK.LinearAlgebra.WeightedPermutationIntegral.transport]
+      GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.transport]
   · funext j i
     fin_cases j <;>
       simp [combinedQ, reducedPortQ, minimumQ, combinedMap, composite,
         reducedPort, minimumData, WeightedPermutationNorm.transport,
-        GRWTSK.LinearAlgebra.WeightedPermutationIntegral.transport] <;> ring
+        GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.transport] <;> ring
 
 /-- Whole-rational-space comparison, independently of bounded test vectors. -/
 theorem frame_combinedQ (a b : ℤ) (k : ℕ) (q : Slot k → ℚ) :

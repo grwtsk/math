@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction
-import GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SupportEdgeDifferentiability
 import GRWTSK.Analysis.Convolution.CompactSupportContact
 
 /-!
@@ -27,7 +27,7 @@ open GRWTSK.RiemannHypothesis
 open BranchSecondDerivativeEnergy BranchCorrelationHigher
 open GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction
 open GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy
-open GRWTSK.Analysis.Calculus.SupportEdgeDifferentiability
+open GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SupportEdgeDifferentiability
 open GRWTSK.Analysis.Convolution.CompactSupportContact
 
 noncomputable section

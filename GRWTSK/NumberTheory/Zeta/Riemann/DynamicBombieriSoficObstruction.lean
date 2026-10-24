@@ -2,7 +2,7 @@
 Copyright (c) 2026 grwtsk contributors. MIT.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
-import GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.DynamicSoficSpectralCover
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 import Mathlib
 
@@ -29,9 +29,9 @@ noncomputable section
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction
 
-open GRWTSK.Logic.InformationLoss
-open GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery
-open GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery
+open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.DynamicSoficSpectralCover
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss

@@ -23,7 +23,7 @@ decision_refs: [D02, D03, D04]
 
 ## Source and rationale
 
-[Probability theory](../../subjects/probability/index.md) is proposed as narrower than the public outline range `QA273-280`, which includes probability and mathematical statistics. The target is an outline range, not an independently verified LCSH authority concept or a fabricated detailed class number.
+[Probability theory](../../subjects/ProbabilityAndMathematicalStatistics/ProbabilityTheory/index.md) is proposed as narrower than the public outline range `QA273-280`, which includes probability and mathematical statistics. The target is an outline range, not an independently verified LCSH authority concept or a fabricated detailed class number.
 
 ## Limitations and review
 

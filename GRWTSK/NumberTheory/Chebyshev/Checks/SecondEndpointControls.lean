@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Source controls only; NOT_RUN / NOT_KERNEL_AUDITED. -/
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.SecondEndpointControls
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace
 open GRWTSK.RiemannHypothesis
 open ConcreteNewtonPacket RationalZetaCenterEvaluation ConcreteNewtonFirstEndpoint

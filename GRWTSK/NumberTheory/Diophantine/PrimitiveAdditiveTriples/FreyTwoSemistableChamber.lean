@@ -9,7 +9,7 @@ nonminimal equation. No conductor, complete two-adic classification,
 Tate algorithm, completed field, twist, or radical-height bound is asserted.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddReduction
 
 set_option autoImplicit false
@@ -18,8 +18,8 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoSemistableChamber
 
 open WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale
 open FreyOddReduction
 open GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess
 

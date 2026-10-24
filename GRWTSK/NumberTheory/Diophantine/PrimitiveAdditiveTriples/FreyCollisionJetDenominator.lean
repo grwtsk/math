@@ -15,7 +15,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionJetDenominator
 
 open Polynomial WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve
 open WeierstrassRescaledJet
 open GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
 open GRWTSK.NumberTheory.Height.WeierstrassJetDenominator
@@ -71,7 +71,7 @@ theorem family_coefficients (n : ℕ) (hn : 0<n) :
       (integerModel (family n hn)).a₄=(n : ℤ) := by
   rw [integerModel,dif_pos (family_first n hn)]
   simp [FreyTwoSemistableChamber.integralModel,
-    GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.model,
+    GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.model,
     firstWitness,family,FreyMarkedObservationHeight.unitSource]
 
 /-- Every coefficient 2..N has its exact reduced rational denominator. -/

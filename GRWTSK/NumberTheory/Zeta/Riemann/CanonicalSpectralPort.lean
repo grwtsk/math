@@ -38,7 +38,7 @@ open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.Polynomial.ConjugateQuartic
 

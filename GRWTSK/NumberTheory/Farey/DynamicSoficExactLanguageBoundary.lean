@@ -41,7 +41,7 @@ universe u v w z
 
 namespace GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
 open GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 

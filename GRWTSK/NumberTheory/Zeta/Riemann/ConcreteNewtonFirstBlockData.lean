@@ -1,8 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalTaylorSeedNormalization
-import GRWTSK.Analysis.Complex.EuclideanDyadicRun
+import GRWTSK.Analysis.ComplexAnalysis.RationalTaylorSeedNormalization
+import GRWTSK.Analysis.ComplexAnalysis.EuclideanDyadicRun
 import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBlockAcceptance
 import Mathlib.Tactic.FinCases
 import Mathlib.Tactic.NormNum
@@ -20,7 +20,7 @@ This file alone certifies no row. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFirstBlockData
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace RationalTaylorSeedNormalization
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 

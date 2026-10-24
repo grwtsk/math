@@ -12,13 +12,13 @@ Mathematical results, formal proofs, and explicit open problems by **grwtsk cont
 - Consult the [theorem/result occurrence catalogue](docs/reference/result-occurrences.md) for the broader source inventory. A lexical occurrence is not a verified theorem.
 - The [Lean library](GRWTSK/) contains the formal sources; [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. [Verification specifications](docs/verification/README.md) describe static replay targets.
 
-Examples include [least natural prime](docs/mathematics/NumberTheory/Prime/least-prime.md), [coverage and discrete quotas](docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/Asymptotics/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
+Examples include [least natural prime](docs/mathematics/NumberTheory/Prime/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/Asymptotics/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
 
 ## Reading the results
 
 The collection contains formal proofs, conditional results, written arguments, finite certificates, and source candidates awaiting verification. Each result must be read with its exact hypotheses, source revision, and verification scope. Historical evidence is not a fresh check of changed source bytes.
 
-[From ethical obligations to mechanistic reasoning](docs/mathematics/Logic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
+[From ethical obligations to mechanistic reasoning](docs/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
 
 Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound.
 

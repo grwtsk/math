@@ -8,7 +8,7 @@ predicate. Source labels and the minus sign at primes dividing b are retained.
 No dyadic splitness, conductor, Tate uniformization, Tamagawa or height claim.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyGlobalMinimalDiscriminant
 import Mathlib.RingTheory.LocalRing.ResidueField.Basic
 
@@ -19,7 +19,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddSplitR
 
 open WeierstrassCurve Polynomial
 open FreyOddReduction
-open GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting
 
 /-- Reduction is defined on the OLD localization, not on arbitrary rationals. -/
 def localMod (p : ℕ) [Fact p.Prime] : LocalRing p →+* ZMod p :=

@@ -19,7 +19,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat
 
 open FreyWeightedSections FreyWeightedBasis FreyWeightedEnergy
 open GRWTSK.Algebra.Homology.ThreeCellCech
-open GRWTSK.Analysis.LinearAlgebra
+open GRWTSK.Algebra.LinearAlgebra
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
 /-- Normalized vertex sections and ordered edges 01,12,20 in the OLD real W_k. -/

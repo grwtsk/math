@@ -6,7 +6,7 @@ This module is intentionally isolated from GRWTSK.lean. It proves no new
 zero-free region, RH, GRH, non-soficity, or historical claim.
 -/
 import GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
-import GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery
 import Mathlib.Data.Fintype.Basic
 
 set_option autoImplicit false
@@ -36,7 +36,7 @@ universe uX uCell uRatio uTrace uVertex uLabel uBase uGen uIndex
 
 namespace GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
 
 /-- The generic difference supplier gives an exact model of why a local
@@ -48,19 +48,19 @@ theorem no_finite_state_initial_recovery_from_unanchored_difference
     (state : (ℕ → ℤ) → State)
     (hstate :
       FactorsThrough
-        GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference
+        GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.discreteDifference
         state)
     (hinitial : FactorsThrough state (fun f : ℕ → ℤ => f 0)) :
     False := by
   have hfactor :
       FactorsThrough
-        GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference
+        GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.discreteDifference
         (fun f : ℕ → ℤ => f 0) :=
     factorsThrough_trans
-      GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference
+      GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.discreteDifference
       state (fun f : ℕ → ℤ => f 0) hstate hinitial
   exact
-    GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.initialValue_not_factorsThrough_difference
+    GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.initialValue_not_factorsThrough_difference
       hfactor
 
 /-- Retaining the anchor repairs that exact information loss.  Because the
@@ -71,13 +71,13 @@ theorem readout_factorsThrough_anchoredDifference
     {Target : Type uRatio}
     (readout : (ℕ → ℤ) → Target) :
     FactorsThrough
-      GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.anchoredDifference
+      GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.anchoredDifference
       readout := by
   refine ⟨readout ∘
-    GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrateDifference, ?_⟩
+    GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.integrateDifference, ?_⟩
   funext f
   simp only [Function.comp_apply]
-  rw [GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrate_anchoredDifference]
+  rw [GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery.integrate_anchoredDifference]
 
 structure DynamicPartition
     (X : Type uX) (Cell : Type uCell) [Fintype Cell] where

@@ -5,10 +5,10 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 
 set_option autoImplicit false
 
-open GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
-open GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable
-open GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable.Checks.Positive
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefixTable
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefixTable.Checks.Positive
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
 
 /- The old-reference decoder cannot justify omitting actual newly appended real rows. -/
 example : unpack (realPacked oldRows newRows) = some (traceRows oldRows) :=

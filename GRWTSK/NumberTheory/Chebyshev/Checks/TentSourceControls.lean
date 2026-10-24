@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Chebyshev.TentSource
-import GRWTSK.Analysis.Complex.TentMellinKernel
+import GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 import Mathlib.Tactic.NormNum
 
 set_option autoImplicit false
@@ -13,7 +13,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentSourceControls
 
 open GRWTSK.Analysis.Real.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.TentSource
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 
 theorem endpoints_vanish : tent 3 1 2 = 0 ∧ tent 3 1 4 = 0 := by
   norm_num [tent]

@@ -11,9 +11,9 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. -/
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls
 
-open GRWTSK.Analysis.Complex.OrientedRectangle
-open GRWTSK.Analysis.Complex.RectangularPoleReduction
-open GRWTSK.Analysis.Complex.RectangularCauchyKernel
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
+open GRWTSK.Analysis.ComplexAnalysis.RectangularCauchyKernel
 open GRWTSK.Analysis.Real.CauchyEdgePrimitives
 
 noncomputable section

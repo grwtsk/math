@@ -8,7 +8,7 @@ These are bounded Koopman/factorization source proof candidates, not
 Sturmian, PFR, Kakeya, Dixmier, Siegel-zero, or RH proofs.
 -/
 import GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction
-import GRWTSK.Logic.InformationLoss.FactorizationFiber
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.FactorizationFiber
 import Mathlib.Tactic
 
 /-!
@@ -37,7 +37,7 @@ namespace GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue
 
 open GRWTSK.NumberTheory.Farey.ReturnAngularChannel
 open GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 
 /-- The abstract obstruction needs TWO exact returns at a chosen state,
 invariance under the supplied gauge, an eigenfunction relation at the

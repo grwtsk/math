@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
-import GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.PrimePhasePacketCertificates
 import GRWTSK.Analysis.AsymptoticAnalysis.FinitePrimeChainEnergyBounds
 import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction
 

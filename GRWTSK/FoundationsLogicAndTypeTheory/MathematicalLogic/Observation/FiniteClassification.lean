@@ -28,7 +28,7 @@ source is not an execution receipt.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.Observation.FiniteClassification
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification
 
 universe u v
 
@@ -631,4 +631,4 @@ theorem repeated_and_reordered_inventory :
 
 end Fixtures
 
-end GRWTSK.Logic.Observation.FiniteClassification
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification

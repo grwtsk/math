@@ -1,8 +1,8 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 open GRWTSK.Geometry.Hodge.DegreeZeroCohomology
 open GRWTSK.Geometry.Hodge.FiniteEdgeRealization
 example : Cocycle0 edgeHodge ≃ₗ[ℚ] Cocycle0 edgeHodge :=

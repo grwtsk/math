@@ -24,7 +24,7 @@ four-coordinate `FiniteReflection` module is not changed or imported.
 set_option autoImplicit false
 noncomputable section
 
-namespace GRWTSK.LinearAlgebra.WeightedFiniteReflection
+namespace GRWTSK.Algebra.LinearAlgebra.WeightedFiniteReflection
 
 abbrev Vec (ι : Type*) := ι → ℚ
 
@@ -388,4 +388,4 @@ theorem step_not_selfAdjoint :
   rw [step_not_selfAdjoint_control.1, step_not_selfAdjoint_control.2] at hh
   norm_num at hh
 
-end GRWTSK.LinearAlgebra.WeightedFiniteReflection
+end GRWTSK.Algebra.LinearAlgebra.WeightedFiniteReflection

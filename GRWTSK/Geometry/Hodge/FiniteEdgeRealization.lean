@@ -2,7 +2,7 @@ import GRWTSK.Geometry.Hodge.RationalCycleCellular
 
 namespace GRWTSK.Geometry.Hodge.FiniteEdgeRealization
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 /-- The positive rational pairing on two vertex values. -/
 def vertexPairing (x y : ℚ × ℚ) : ℚ :=

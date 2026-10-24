@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
-open GRWTSK.Spectral.GapTransport
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
 
 -- A monotone plateau alone does not supply local constancy iff outside spectrum.
 example : OpenLabelGap Set.univ (fun _ : ℝ => 0) 0 (-1) 1 := by

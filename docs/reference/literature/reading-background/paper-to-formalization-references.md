@@ -22,6 +22,14 @@ not a replacement for those ledgers or the version-bound
 documentation commit does not automatically supersede an earlier
 source version or verification record.
 
+Current folder and namespace locators are recorded in the
+[taxonomy path contract](../../../verification/_unscoped/taxonomy-path-sync-v1.toml).
+Its relocation and namespace-alias rows connect the historical modules below
+to their current subject homes. The ledger's source commits, blobs, declaration
+identities, hypotheses, and verification classifications remain version-bound.
+Names and file moves supply no new paper-derived theorem or proof bridge;
+replay and axiom evidence for a renamed source must bind that exact new source.
+
 ## Required entry for every paper-derived increment
 
 Add or update an entry here **in the same main-branch change** that introduces
@@ -295,7 +303,7 @@ the exact bytes of a quoted version.
 `negativeWitness_forces_comparisonError`,
 `positive_of_arbitrarily_small_comparisonError`,
 `signed_not_positive_from_positive_metric` in
-[`SignedWeilComparisonGate.lean`](../../../../GRWTSK/LinearAlgebra/SignedWeilComparisonGate.lean);
+[`SignedWeilComparisonGate.lean`](../../../../GRWTSK/Algebra/LinearAlgebra/SignedWeilComparisonGate.lean);
 source commit `5992de3e67da004c9e3ccf77a06ea38ac11e1c48`,
 revision `19bc3a06deae02a710438ca4fd13b7d25d026601`.
 
@@ -3228,13 +3236,13 @@ from the **paper’s pure coboundary**
 the exact inverse gauge, not identified.
 
 **New math source integrated on existing `main`:**
-[`GRWTSK/LinearAlgebra/PeriodicCocycleData.lean`](../../../../GRWTSK/LinearAlgebra/PeriodicCocycleData.lean),
+[`GRWTSK/LinearAlgebra/PeriodicCocycleData.lean`](../../../../GRWTSK/Algebra/LinearAlgebra/PeriodicCocycleData.lean),
 first source commit
 [`153ee97c6f1a12b9e98a18f72e961f8d6227b2e7`](https://github.com/grwtsk/math/commit/153ee97c6f1a12b9e98a18f72e961f8d6227b2e7),
 Git blob **`11ca2a896e8844dcb483ce9c910c1bb07ae857e1`**.
 An exact mathematical exposition was integrated
 at main commit **`84cb7607487d63b0117e482864d1f5e61cc58931`**,
-[`docs/mathematics/LinearAlgebra/periodic-cocycle-data.md`](../../../mathematics/LinearAlgebra/periodic-cocycle-data.md),
+[`docs/mathematics/LinearAlgebra/periodic-cocycle-data.md`](../../../mathematics/Algebra/LinearAlgebra/periodic-cocycle-data.md),
 Git blob **`9a163ead73c561b0a00bc3b80f7b16768b06f48d`**.
 
 Full names with prefix

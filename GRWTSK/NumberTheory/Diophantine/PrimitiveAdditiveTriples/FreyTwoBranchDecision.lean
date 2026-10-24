@@ -9,7 +9,7 @@ failed search. No conductor, Kodaira, Tamagawa, completed-field, integral
 marked-port or uniform radical-height claim follows from this decision.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.C6ModEight
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.C6ModEight
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoMinimalBudget
 import Mathlib.Tactic.SplitIfs
 
@@ -19,10 +19,10 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoBranchDecision
 
 open WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve.C6ModEight
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.C4MinimalScale
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.C6ModEight
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.C4MinimalScale
 open FreyOddReduction FreyTwoLowDepth FreyTwoMinimalBudget
 
 local instance : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
@@ -271,9 +271,9 @@ theorem raw_additive_iff (t : PrimitiveAdditiveTriple) :
 /-- A concrete rational coordinate change selected by finite original-source guards. -/
 def selectedChange (t : PrimitiveAdditiveTriple) : VariableChange ℚ :=
   if t.a%4=1 ∧ 16 ∣ t.c then
-    GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.halfChange (t.a : ℚ)
+    GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.halfChange (t.a : ℚ)
   else if ((t.b : ℤ)-(t.a : ℤ))%4=1 ∧ 16 ∣ t.a*t.b then
-    GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.zeroChange
+    GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.zeroChange
   else 1
 
 def selectedCurve (t : PrimitiveAdditiveTriple) : WeierstrassCurve ℚ :=

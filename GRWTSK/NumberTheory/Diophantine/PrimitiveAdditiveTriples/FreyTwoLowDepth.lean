@@ -9,7 +9,7 @@ The weight-twelve window supplies actual minimality, hence additive reduction.
 No conductor exponent, Kodaira symbol, or high-depth complement classification.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Proof scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoEvenSummandChamber
 import Mathlib.Data.Nat.Factorization.Basic
 
@@ -20,8 +20,8 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoLowDep
 
 open WeierstrassCurve WithZero Multiplicative
 open IsDedekindDomain.HeightOneSpectrum
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
 open FreyOddReduction
 
 /-- The generator of the actual local maximal ideal, not a supplied normalization. -/

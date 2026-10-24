@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT. -/
-import GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation
+import GRWTSK.Analysis.ComplexAnalysis.RoundedLogPowerEvaluation
 
 set_option autoImplicit false
 
@@ -14,7 +14,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls
 
-open GRWTSK.Analysis.Complex.DyadicRoundedSquaring
+open GRWTSK.Analysis.ComplexAnalysis.DyadicRoundedSquaring
 open GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection
 
 noncomputable section

@@ -1,11 +1,11 @@
-import GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestrictionGluing
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
 
 open GRWTSK.Topology
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Logic.SimultaneousProofArchitecture
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
 
 /-- Local theorem slots for the restriction-and-gluing architecture. -/
@@ -18,58 +18,58 @@ inductive LocalIndex
 /-- The complete restriction path carries every selected certificate simultaneously. -/
 def restrictionClaim : Prop :=
   simultaneousProperty.Holds
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.restrictionPath.composite
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.restrictionPath.composite
 
 /-- The upper/lower half-plane cover has exact ordinary-function gluing. -/
 def gluingClaim : Prop :=
   ∀ s : BinaryDomainCover.MatchingData
-      GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover,
+      GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover,
     system.map
-        GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.xToU
-        (GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap s) =
+        GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.xToU
+        (GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap s) =
         s.1.1 ∧
       system.map
-        GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.xToV
-        (GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap s) =
+        GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.xToV
+        (GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap s) =
         s.1.2
 
 /-- Holomorphic globalization is available only from its separate exact certificate. -/
 def holomorphicBoundaryClaim : Prop :=
   ∀ s : BinaryDomainCover.HolomorphicMatchingData
-      GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover,
+      GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover,
     BinaryDomainCover.HolomorphicGlueCertificate
-        GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover s →
+        GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover s →
       ExtendsHolomorphically
-        GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.X
-        (GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap
+        GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.X
+        (GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap
           s.local)
 
 /-- Proof of all certificates on the composite restriction path. -/
 theorem restrictionClaim_proof : restrictionClaim :=
-  GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.restrictionPath.certified
+  GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.restrictionPath.certified
 
 /-- Proof of ordinary function gluing on both subdomains. -/
 theorem gluingClaim_proof : gluingClaim := by
   intro s
   exact ⟨
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap_left s,
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap_right s⟩
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap_left s,
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap_right s⟩
 
 /-- The boundary theorem consumes, rather than invents, a holomorphic gluing certificate. -/
 theorem holomorphicBoundaryClaim_proof : holomorphicBoundaryClaim := by
   intro s h
   exact
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.global_holomorphic_of_certificate
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.global_holomorphic_of_certificate
       s h
 
 /-- Restriction stage carrying a simultaneous holomorphy-preservation/topological-ring proof. -/
 def restrictionStage : BoundStage where
   Source := Section
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.whole
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.whole
   Target := Section
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.realAxis
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.realAxis
   map := system.map
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.restrictionPath.composite
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.restrictionPath.composite
   certificate := restrictionClaim
   certified := restrictionClaim_proof
   theoremClaim := restrictionClaim
@@ -84,16 +84,16 @@ def restrictionStage : BoundStage where
 /-- Constructive ordinary-function gluing stage for one exact binary cover. -/
 noncomputable def gluingStage : BoundStage where
   Source := BinaryDomainCover.MatchingData
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover
   Target := Section
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.X
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.X
   map :=
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap
   certificate :=
     GRWTSK.Topology.PortFiber.BinaryCover.SheafCertificate
-      GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.toPortCover
+      GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.toPortCover
   certified :=
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneFunctionSheaf
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneFunctionSheaf
   theoremClaim := gluingClaim
   theoremProof := gluingClaim_proof
   sourceIdentity :=
@@ -107,11 +107,11 @@ noncomputable def gluingStage : BoundStage where
 `HolomorphicGlueCertificate`. -/
 noncomputable def holomorphicBoundaryStage : BoundStage where
   Source := BinaryDomainCover.HolomorphicMatchingData
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover
   Target := Section
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.X
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.X
   map := fun s =>
-    GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.halfPlaneCover.glueMap
       s.local
   certificate := holomorphicBoundaryClaim
   certified := holomorphicBoundaryClaim_proof

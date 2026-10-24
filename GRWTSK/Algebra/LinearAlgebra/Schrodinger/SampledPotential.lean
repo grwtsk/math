@@ -12,7 +12,7 @@ This module proves local algebra/analysis and conditional returns, not P04.
 Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Analysis.Waveform
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform
 
 /-- The scalar value of a real potential, with angular phase and integer sites. -/
 def sampledPotential (v : ℝ → ℝ) (α θ : ℝ) (n : ℤ) : ℝ :=
@@ -28,4 +28,4 @@ theorem transfer_unbounded_trace (K : ℝ) :
   exact ⟨K+1,0,transfer_det _ _,by rw [transfer_trace]; linarith⟩
 
 
-end GRWTSK.Analysis.Waveform
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform

@@ -1,10 +1,10 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples
-import GRWTSK.Analysis.Calculus.EvenLinearDefect
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactProfileBoundaryCounterexamples
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EvenLinearDefect
 import GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy
-import GRWTSK.Analysis.Integration.TranslationSeamLowerBound
+import GRWTSK.Analysis.RealAnalysis.Integration.TranslationSeamLowerBound
 
 /-!
 Current source verification is recorded in
@@ -26,9 +26,9 @@ open scoped Topology ContDiff
 open GRWTSK.ProofHorizon.CorkscrewChamberCap
 open GRWTSK.RiemannHypothesis
 open BranchSecondDerivativeEnergy BranchCorrelationHigher
-open GRWTSK.Analysis.Calculus.EvenLinearDefect
+open GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EvenLinearDefect
 open GRWTSK.Analysis.Convolution.AutocorrelationTranslationEnergy
-open GRWTSK.Analysis.Integration.TranslationSeamLowerBound
+open GRWTSK.Analysis.RealAnalysis.Integration.TranslationSeamLowerBound
 
 noncomputable section
 

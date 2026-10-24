@@ -5,7 +5,7 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 
 set_option autoImplicit false
 
-open GRWTSK.Combinatorics.DirectedGraph.PrefixInventory.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory.Checks.Positive
 
 /- Equal endpoints cannot supply the missing equality of complete actual histories. -/
 example : falseOccurrence = trueOccurrence :=

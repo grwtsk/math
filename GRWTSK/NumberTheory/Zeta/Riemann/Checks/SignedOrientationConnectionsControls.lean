@@ -9,7 +9,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections.Checks
 
-open GRWTSK.LinearAlgebra.SignedOrientationBridge
+open GRWTSK.Algebra.LinearAlgebra.SignedOrientationBridge
 open GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections
 
 /-- Concrete hostile fixture: positive metric energy and signed-consumer sign

@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS
-open GRWTSK.Spectral.FreeIDS GRWTSK.Spectral.SturmianFiniteVolume
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 example : freeCount 2 0 = freeCount 1 0 + freeCount 1 0 := by
   have hc1 : cutoff 1 0 = 1 := by
     simp [cutoff, angleFraction]

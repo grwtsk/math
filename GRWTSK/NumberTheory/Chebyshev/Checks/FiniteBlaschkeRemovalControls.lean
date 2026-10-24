@@ -16,7 +16,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.FiniteBlaschkeRemovalControls
 
 open Set Metric
-open GRWTSK.Analysis.Complex.DiskBlaschkeFactors
+open GRWTSK.Analysis.ComplexAnalysis.DiskBlaschkeFactors
 open GRWTSK.RiemannHypothesis.JensenCentralLogDerivative
 
 /-- A double zero is removed twice, with the full disk-normalization numerator. -/

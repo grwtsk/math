@@ -1,12 +1,12 @@
 import Mathlib.LinearAlgebra.Matrix.ToLin
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import GRWTSK.Geometry.Hodge.FiniteGraphCellular
-import GRWTSK.LinearAlgebra.FramedFiberPort
+import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 namespace GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 
 open Matrix
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 open GRWTSK.Geometry.Hodge.FiniteGraphCellular
 
 universe u v

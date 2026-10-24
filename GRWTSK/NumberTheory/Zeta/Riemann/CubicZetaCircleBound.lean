@@ -67,7 +67,7 @@ theorem localCountBudget_nonneg (N : ℕ) : 0 ≤ localCountBudget N := by
   have hlog : 0 ≤ Real.log ((N : ℝ) + 2) := Real.log_nonneg (by linarith [Nat.cast_nonneg (α := ℝ) N])
   unfold localCountBudget
   exact div_nonneg (by positivity)
-    (GRWTSK.Analysis.Complex.JensenFiniteMultiplicity.log_six_fifths_pos.le)
+    (GRWTSK.Analysis.ComplexAnalysis.JensenFiniteMultiplicity.log_six_fifths_pos.le)
 
 /-- The maintained height selection is reused verbatim. -/
 theorem clearance_le_actual (N : ℕ) (hN : 2 ≤ N) :

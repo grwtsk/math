@@ -26,7 +26,7 @@ namespace GRWTSK.NumberTheory.Primes.GoldbachProgressionErrorTransfer
 
 open scoped BigOperators Real
 open Set MeasureTheory
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachWeighted
 open GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs

@@ -53,7 +53,7 @@ noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1
 
 open CategoryTheory CategoryTheory.Limits
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison

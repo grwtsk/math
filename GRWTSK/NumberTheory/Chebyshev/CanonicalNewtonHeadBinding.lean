@@ -19,8 +19,8 @@ NOT_KERNEL_AUDITED. The inherited classical witness choice remains explicit.
 namespace GRWTSK.NumberTheory.Chebyshev.CanonicalNewtonHeadBinding
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.RationalNewtonWitness
 open CanonicalZeroHeadBinding CanonicalRationalTentEvaluation
@@ -33,7 +33,7 @@ noncomputable def of_newton_enclosures (T : ℚ) {k : ℕ} (rows : Fin k → Wei
     (hradii : ∀ i, (data i).radius = (rows i).point.coordinateError)
     (hlocal : ∀ i, GRWTSK.RiemannHypothesis.RationalNewtonWitness.verify (stages i) (signs i) (data i) = true)
     (hvalues : ∀ i, CenterEnclosures (data i))
-    (hgeometry : GRWTSK.Analysis.Complex.RationalDiskSeparation.verify T
+    (hgeometry : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) = true)
     (hweights : ∀ i, (rows i).weight = 1)
     (hcount : heightCount (T : ℝ) ≤ k) : HeadBinding (T : ℝ) rows := by
@@ -59,11 +59,11 @@ theorem prime_of_newton_bound_head (n : ℕ) (hn : 2 ≤ n) (T : ℚ) (hT : 2 �
     (hradii : ∀ i, (data i).radius = (rows i).point.coordinateError)
     (hlocal : ∀ i, GRWTSK.RiemannHypothesis.RationalNewtonWitness.verify (stages i) (signs i) (data i) = true)
     (hvalues : ∀ i, CenterEnclosures (data i))
-    (hgeometry : GRWTSK.Analysis.Complex.RationalDiskSeparation.verify T
+    (hgeometry : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) = true)
     (hweights : ∀ i, (rows i).weight = 1) (hcount : heightCount (T : ℝ) ≤ k)
     (tolerance : ℚ) (out : State)
-    (hv : GRWTSK.Analysis.Complex.RationalTentAccumulation.verify
+    (hv : GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation.verify
       (squareCenterQ n) (squareRadiusQ n) bits rows tolerance out = true)
     (hmargin : 0 < CanonicalTentPrimeCriterion.canonicalPrimeMargin n (T : ℝ)
       ((QComplex.embed out.value).re + (out.error : ℝ)) (-SignedTentCorrection.squareTrivialBudget n)) :

@@ -6,7 +6,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 The source comparison is logical. Its corrected zero-moment witness and
 classical transport premises retain their own independent verification gates.
 -/
-import GRWTSK.Logic.InformationLoss.FactorizationFiber
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.FactorizationFiber
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 
 /-!
@@ -25,7 +25,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentInformationLossBridge
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 

@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
 import GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
 
 /-!
@@ -12,12 +12,12 @@ adjoint theorem for differential operators or a Hilbert space of global sections
 
 namespace GRWTSK.Analysis.Operator.HolomorphicLineAdjoint
 
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicSectionRing (HolomorphicSection)
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineGauge
-open GRWTSK.Analysis.Complex.HolomorphicLineMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
 open GRWTSK.Analysis.Operator.HolomorphicLinePort
 open GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
 
@@ -170,8 +170,8 @@ theorem adjoint_preservesHolomorphy_iff (A : CompatibleOperators C) :
 
 namespace Fixtures
 
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle.Fixtures
-open GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology (constantSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle.Fixtures
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicEvaluationTopology (constantSection)
 
 /-- A holomorphic multiplication operator need not be self-adjoint in a positive metric. -/
 theorem imaginary_multiplication_not_selfAdjoint :

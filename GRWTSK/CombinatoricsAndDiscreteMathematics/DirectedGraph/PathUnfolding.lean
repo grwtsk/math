@@ -31,7 +31,7 @@ that paper is imported by these separately stated and checked generic contracts.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding
 
 open Quiver
 
@@ -217,4 +217,4 @@ theorem origin_costar_not_surjective (incoming : Costar root) :
 theorem not_covering_of_incoming (incoming : Costar root) : ¬ (projection root).IsCovering :=
   fun covering => origin_costar_not_surjective incoming (covering.costar_bijective (origin root)).2
 
-end GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding

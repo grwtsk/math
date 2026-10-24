@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
-open GRWTSK.LinearAlgebra.OrderedTransfer GRWTSK.Algebra
+open GRWTSK.Algebra.LinearAlgebra.OrderedTransfer GRWTSK.Algebra
 
 example {G : Type} [Monoid G] (A : ℕ → G) (m n : ℕ) :
     orderedTransfer A m n = orderedProduct A n (m - n) := rfl

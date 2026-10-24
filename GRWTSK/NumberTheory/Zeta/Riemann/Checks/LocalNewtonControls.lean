@@ -14,7 +14,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.LocalNewtonControls
 open Metric
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalNewtonDisk
-open GRWTSK.Analysis.Complex.NewtonDisk
+open GRWTSK.Analysis.ComplexAnalysis.NewtonDisk
 
 /-- Center jet of z^2-2 at c=3/2, with exact inverse 1/3 and uniform |f''|=2. -/
 def quadraticData : Data := ⟨(1/3, 0), (1/4, 0), (3, 0), 0, 0, 2⟩

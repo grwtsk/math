@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalPolygonIndex
+import GRWTSK.Analysis.ComplexAnalysis.RationalPolygonIndex
 import GRWTSK.NumberTheory.Zeta.Riemann.PoleContourWinding
 
 set_option autoImplicit false
@@ -18,7 +18,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.PoleContourPolygonIndex
 
 open scoped unitInterval
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open RationalPoleContour
 

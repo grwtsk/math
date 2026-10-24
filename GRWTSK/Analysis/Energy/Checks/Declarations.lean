@@ -1,6 +1,6 @@
-import GRWTSK.LinearAlgebra.AlmostMathieu
+import GRWTSK.Algebra.LinearAlgebra.AlmostMathieu
 import GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold
-import GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm
+import GRWTSK.Algebra.LinearAlgebra.Determinant.RankOneQuadraticForm
 import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
 import GRWTSK.NumberTheory.Moebius.ComparisonEnergy
 import GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth
@@ -82,8 +82,8 @@ elab "#audit_ccc_energy" : command => do
           `GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy,
           `GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold,
           `GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy,
-          `GRWTSK.LinearAlgebra.AlmostMathieu,
-          `GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm,
+          `GRWTSK.Algebra.LinearAlgebra.AlmostMathieu,
+          `GRWTSK.Algebra.LinearAlgebra.Determinant.RankOneQuadraticForm,
           `GRWTSK.NumberTheory.Moebius.ComparisonEnergy,
           `GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity,
           `GRWTSK.NumberTheory.Moebius.DyadicEnergy,

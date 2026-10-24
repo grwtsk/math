@@ -1,12 +1,12 @@
-import GRWTSK.Analysis.Complex.PortFiberHolomorphy
+import GRWTSK.Analysis.ComplexAnalysis.PortFiberHolomorphy
 import GRWTSK.Topology.Algebra.PortFiberRing
-import GRWTSK.Logic.SimultaneousProofArchitecture
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 import GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
 
 open GRWTSK.Topology
-open GRWTSK.Logic.SimultaneousProofArchitecture
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 
 universe u v w
 
@@ -91,24 +91,24 @@ inductive StageIndex
 
 /-- Translation followed by squaring as a certified holomorphic path. -/
 def holomorphicPath :=
-  GRWTSK.Analysis.Complex.PortFiber.Fixtures.translatedSquarePath 1
+  GRWTSK.Analysis.ComplexAnalysis.PortFiber.Fixtures.translatedSquarePath 1
 
 /-- Composite port of the complete holomorphic path. -/
 def holomorphicPort := holomorphicPath.composite
 
 /-- Exact holomorphy proof for the whole path composite. -/
 def holomorphicCertificate :
-    GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate holomorphicPort :=
+    GRWTSK.Analysis.ComplexAnalysis.PortFiber.HolomorphicCertificate holomorphicPort :=
   holomorphicPath.certified
 
 /-- The path-level holomorphic certificate is the first local theorem. -/
 def holomorphicStage : BoundStage :=
   BoundStage.ofPort
-    GRWTSK.Analysis.Complex.PortFiber.system
+    GRWTSK.Analysis.ComplexAnalysis.PortFiber.system
     holomorphicPort
-    (GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate holomorphicPort)
+    (GRWTSK.Analysis.ComplexAnalysis.PortFiber.HolomorphicCertificate holomorphicPort)
     holomorphicCertificate
-    (GRWTSK.Analysis.Complex.PortFiber.HolomorphicCertificate holomorphicPort)
+    (GRWTSK.Analysis.ComplexAnalysis.PortFiber.HolomorphicCertificate holomorphicPort)
     holomorphicCertificate
     { repository := "grwtsk/math"
       revision := "issue-230-portfiber-holomorphy"

@@ -1,8 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.Enumerative.PositiveMassExhaustion
-import GRWTSK.Analysis.Complex.RationalDiskSeparation
+import GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.PositiveMassExhaustion
+import GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation
 import GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation
 
 set_option autoImplicit false
@@ -25,11 +25,11 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.CanonicalZeroHeadBinding
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Combinatorics.Enumerative.PositiveMassExhaustion
+open GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.PositiveMassExhaustion
 open CanonicalRationalTentEvaluation TentSource SignedTentCorrection CanonicalTentPrimeCriterion
 
 /-- Existence and a lower analytic order, NOT uniqueness or list completeness.
@@ -59,16 +59,16 @@ theorem head_subtype_mass (T : ℝ) :
 
 /-- Full membership and exact weights are derived simultaneously. -/
 noncomputable def of_local_witnesses (T : ℚ) {k : ℕ} (rows : Fin k → WeightedInput)
-    (hgeometry : GRWTSK.Analysis.Complex.RationalDiskSeparation.verify T
+    (hgeometry : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) = true)
     (hloc : LocalWitnesses rows)
     (hcount : heightCount (T : ℝ) ≤ ∑ i, (rows i).weight) : HeadBinding (T : ℝ) rows := by
   classical
   let center := fun i => (rows i).point.center
   let radius := fun i => (rows i).point.coordinateError
-  have hg := (GRWTSK.Analysis.Complex.RationalDiskSeparation.verify_iff T center radius).mp hgeometry
+  have hg := (GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify_iff T center radius).mp hgeometry
   have hheight (i : Fin k) : height (witness rows hloc i) ≤ (T : ℝ) :=
-    GRWTSK.Analysis.Complex.RationalDiskSeparation.abs_im_le_cutoff T center radius hg i
+    GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.abs_im_le_cutoff T center radius hg i
       (witness rows hloc i).1 (witness_spec rows hloc i).1
   let f : Fin k → ↥(heightHead (T : ℝ)) := fun i =>
     ⟨witness rows hloc i, (mem_heightHead _ _).mpr (hheight i)⟩
@@ -76,7 +76,7 @@ noncomputable def of_local_witnesses (T : ℚ) {k : ℕ} (rows : Fin k → Weigh
     intro i j he
     have he' : (witness rows hloc i).1 = (witness rows hloc j).1 :=
       congrArg (fun z : ↥(heightHead (T : ℝ)) => z.1.1) he
-    exact GRWTSK.Analysis.Complex.RationalDiskSeparation.witnesses_injective
+    exact GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.witnesses_injective
       T center radius hg (fun i => (witness rows hloc i).1)
       (fun i => (witness_spec rows hloc i).1) he'
   have htotal : (∑ z : ↥(heightHead (T : ℝ)), multiplicity z.1) ≤ ∑ i, (rows i).weight := by
@@ -102,21 +102,21 @@ theorem exact_count_of_binding (T : ℝ) {k : ℕ} (rows : Fin k → WeightedInp
 /-- A binding on separated, contained disks isolates one unique actual zero in
 EACH whole disk, not just among observed entries. -/
 theorem unique_zero_in_disk (T : ℚ) {k : ℕ} (rows : Fin k → WeightedInput)
-    (hg : GRWTSK.Analysis.Complex.RationalDiskSeparation.Admissible T
+    (hg : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.Admissible T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError))
     (b : HeadBinding (T : ℝ) rows) (i : Fin k) :
     ∃! z : ZeroPoint, ‖z.1 - QComplex.embed (rows i).point.center‖ ≤
       ((rows i).point.coordinateError : ℝ) := by
   refine ⟨(b.index i).1, b.coordinate i, ?_⟩
   intro z hz
-  have hh := GRWTSK.Analysis.Complex.RationalDiskSeparation.abs_im_le_cutoff T
+  have hh := GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.abs_im_le_cutoff T
     (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) hg i z.1 hz
   let zh : ↥(heightHead (T : ℝ)) := ⟨z, (mem_heightHead _ _).mpr hh⟩
   obtain ⟨j, hj⟩ := b.index.surjective zh
   have he : (b.index j).1 = z := congrArg Subtype.val hj
   have hji : j = i := by
     by_contra hne
-    exact GRWTSK.Analysis.Complex.RationalDiskSeparation.not_in_two_balls T
+    exact GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.not_in_two_balls T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) hg j i hne
       z.1 (by simpa only [he] using b.coordinate j) hz
   simpa only [hji] using he.symm
@@ -124,7 +124,7 @@ theorem unique_zero_in_disk (T : ℚ) {k : ℕ} (rows : Fin k → WeightedInput)
 /-- Unit weights need only local existence. Individual simplicity and global
 coverage are obtained from saturation, not required as local hypotheses. -/
 noncomputable def of_simple_witnesses (T : ℚ) {k : ℕ} (rows : Fin k → WeightedInput)
-    (hgeometry : GRWTSK.Analysis.Complex.RationalDiskSeparation.verify T
+    (hgeometry : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) = true)
     (hweights : ∀ i, (rows i).weight = 1)
     (hexists : ∀ i, ∃ z : ZeroPoint, ‖z.1 - QComplex.embed (rows i).point.center‖ ≤
@@ -154,12 +154,12 @@ theorem all_simple_of_unit_binding (T : ℝ) {k : ℕ} (rows : Fin k → Weighte
 complete count are still required by this arithmetic-to-canonical adapter. -/
 theorem verified_head_of_local_witnesses (x h T : ℚ) (bits : ℕ) {k : ℕ}
     (rows : Fin k → WeightedInput)
-    (hgeometry : GRWTSK.Analysis.Complex.RationalDiskSeparation.verify T
+    (hgeometry : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) = true)
     (hloc : LocalWitnesses rows)
     (hcount : heightCount (T : ℝ) ≤ ∑ i, (rows i).weight)
     (tolerance : ℚ) (out : State)
-    (hv : GRWTSK.Analysis.Complex.RationalTentAccumulation.verify x h bits rows tolerance out = true) :
+    (hv : GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation.verify x h bits rows tolerance out = true) :
     ‖(∑ z ∈ heightHead (T : ℝ), (multiplicity z : ℂ) * tentKernel (x : ℝ) (h : ℝ) z.1) -
       QComplex.embed out.value‖ ≤ (out.error : ℝ) ∧ out.error ≤ tolerance :=
   verified_head_sound x h (T : ℝ) bits rows
@@ -169,12 +169,12 @@ theorem verified_head_of_local_witnesses (x h T : ℚ) (bits : ℕ) {k : ℕ}
 actual total count and strict prime margin are NOT numerically manufactured. -/
 theorem prime_in_square_of_saturated_disks (n : ℕ) (hn : 2 ≤ n)
     (T : ℚ) (hT : 2 ≤ T) (bits : ℕ) {k : ℕ} (rows : Fin k → WeightedInput)
-    (hgeometry : GRWTSK.Analysis.Complex.RationalDiskSeparation.verify T
+    (hgeometry : GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation.verify T
       (fun i => (rows i).point.center) (fun i => (rows i).point.coordinateError) = true)
     (hloc : LocalWitnesses rows)
     (hcount : heightCount (T : ℝ) ≤ ∑ i, (rows i).weight)
     (tolerance : ℚ) (out : State)
-    (hv : GRWTSK.Analysis.Complex.RationalTentAccumulation.verify
+    (hv : GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation.verify
       (squareCenterQ n) (squareRadiusQ n) bits rows tolerance out = true)
     (hmargin : 0 < canonicalPrimeMargin n (T : ℝ)
       ((QComplex.embed out.value).re + (out.error : ℝ)) (-squareTrivialBudget n)) :

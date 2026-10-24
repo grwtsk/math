@@ -31,7 +31,7 @@ namespace GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation
 
 open scoped BigOperators Real
 open Set MeasureTheory intervalIntegral
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionCoefficientFactorization
 open GRWTSK.NumberTheory.Primes.GoldbachPeriodizedSingularWindow

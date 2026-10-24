@@ -30,9 +30,9 @@ are separate from the declarations and static acceptance specification.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.Observation.RevisionEvidence
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.RevisionEvidence
 
-open GRWTSK.Logic.FiniteSequences
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences
 
 universe u v
 
@@ -574,4 +574,4 @@ theorem malformed_state_counterexample :
 
 end Fixtures
 
-end GRWTSK.Logic.Observation.RevisionEvidence
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.RevisionEvidence

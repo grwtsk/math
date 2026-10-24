@@ -8,7 +8,7 @@ No claim of an all-scale arithmetic estimate is made by this module.
 -/
 import Mathlib
 import GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-import GRWTSK.Analysis.Integration.QuadraticReadoutBound
+import GRWTSK.Analysis.RealAnalysis.Integration.QuadraticReadoutBound
 
 /-!
 # Centered Stieltjes readout for the literal real prime-power discrepancy

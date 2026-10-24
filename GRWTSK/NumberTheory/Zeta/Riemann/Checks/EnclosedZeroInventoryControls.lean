@@ -19,7 +19,7 @@ namespace GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls
 open scoped BigOperators
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDiskSeparation
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalMellinFamily (Member)
 open RationalTentEnclosure (CoordinateData)
 

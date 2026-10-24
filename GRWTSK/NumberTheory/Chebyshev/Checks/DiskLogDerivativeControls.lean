@@ -7,8 +7,8 @@ set_option autoImplicit false
 /-! Pure source controls, not executed fixtures. NOT_RUN / NOT_KERNEL_AUDITED. -/
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls
 
-open GRWTSK.Analysis.Complex.DiskBlaschkeFactors
-open GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound
+open GRWTSK.Analysis.ComplexAnalysis.DiskBlaschkeFactors
+open GRWTSK.Analysis.ComplexAnalysis.NormalizedLogDerivativeBound
 
 noncomputable section
 

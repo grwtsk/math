@@ -1,6 +1,6 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
 
 -- Expected type mismatch: the old round-trip theorem cannot certify a reordered dictionary.
 -- The dictionary lengths, reference count, and valid index bounds are unchanged.

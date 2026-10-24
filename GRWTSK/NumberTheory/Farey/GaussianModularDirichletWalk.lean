@@ -30,7 +30,7 @@ open scoped BigOperators
 
 namespace GRWTSK.NumberTheory.Farey
 open GRWTSK.NumberTheory.Farey.GroupSuperwalk
-open GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 
 /-- The Gaussian imaginary cross product and the determinant of the actual
 orientation-correct integral Farey frame coincide at every cell. -/

@@ -16,7 +16,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Height.PrimitivePairNormalization
 
 open RationalVectorAffineHeight
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 
 /-- Ordered marked gap. Its nonvanishing is part of every normalized observation. -/
 def gap (y : Fin 3 → ℚ) : ℚ := y 1 - y 2

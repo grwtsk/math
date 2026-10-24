@@ -19,7 +19,7 @@ namespace GRWTSK.NumberTheory.Primes.GoldbachMinorPhaseBalance
 
 open scoped BigOperators Real
 open Set MeasureTheory
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral
 open GRWTSK.NumberTheory.Primes.GoldbachArcDecomposition
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs

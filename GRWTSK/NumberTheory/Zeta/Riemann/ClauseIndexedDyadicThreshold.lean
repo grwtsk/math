@@ -33,7 +33,7 @@ NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 
 /-- The exact counted clause fraction is the dyadic threshold of the same
 arity. -/
@@ -42,7 +42,7 @@ theorem countedSuccessFraction_eq_dyadicThreshold
     {k : ℕ} (polarity : ClausePolarity k) :
     countedSuccessFraction polarity = dyadicThreshold k := by
   simpa [dyadicThreshold] using
-    (GRWTSK.Logic.Satisfiability.countedSuccessFraction_eq polarity)
+    (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability.countedSuccessFraction_eq polarity)
 
 /-- Readable indexing alias.  Its inhabitant must still be supplied by the
 number-theoretic source recurrence. -/

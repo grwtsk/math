@@ -23,7 +23,7 @@ filesystem correctness assumption is introduced.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.BatchCertificate
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.BatchCertificate
 
 open IndexedDictionary IncrementalDictionary IncrementalComposition DecisionCertificate
 
@@ -93,4 +93,4 @@ theorem old_evidence_not_append_stable :
   subst decoded
   simp [emptyHistoryCertificate] at hpredicate
 
-end GRWTSK.Logic.FiniteSequences.BatchCertificate
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.BatchCertificate
