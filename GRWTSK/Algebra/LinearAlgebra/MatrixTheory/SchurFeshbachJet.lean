@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
 import Mathlib.Analysis.Matrix.Normed
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
 import Mathlib.Tactic.Ring
@@ -240,6 +240,133 @@ theorem full_zero_iff_jet_zero
   exact region.full_zero_iff_effective_zero z hz
 
 end CertifiedSchurJet
+
+
+/-!
+## Coercive moment-gap Schur reduction
+
+The Schur effective matrix is identified with a real Euclidean moment
+operator through an *exact linear-map equality*. Its coercivity must be
+supplied globally; no physical Navier--Stokes instance is inferred.
+For determinant-sign transport at two distinct points, the signs of the
+eliminated-block determinants must also agree.
+-/
+
+namespace InvertibleRegion
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+
+/-- Determinant transport under an exact Euclidean operator identification. -/
+theorem effective_det_eq_continuous_operator
+    {Z Q : Type*} [Fintype Q] [DecidableEq Q]
+    {n : ℕ} {pencil : BlockPencil Z (Fin n) Q ℝ}
+    (region : InvertibleRegion pencil) (z : Z) (hz : z ∈ region.carrier)
+    (J : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (hident : Matrix.toLpLin 2 2 (region.effective z hz) = J.toLinearMap) :
+    (region.effective z hz).det = J.det := by
+  have h := congrArg
+    (fun L : EuclideanSpace ℝ (Fin n) →ₗ[ℝ]
+      EuclideanSpace ℝ (Fin n) => L.det) hident
+  simpa only [LinearMap.det_toLpLin] using h
+
+/-- On a region with an invertible eliminated block, a globally coercive
+identified moment operator excludes zeros of the full block determinant. -/
+theorem full_det_ne_zero_of_coercive_moment
+    {Z Q E : Type*} [Fintype Q] [DecidableEq Q]
+    [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n : ℕ} {pencil : BlockPencil Z (Fin n) Q ℝ}
+    (region : InvertibleRegion pencil) (z : Z) (hz : z ∈ region.carrier)
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hident : Matrix.toLpLin 2 2 (region.effective z hz) =
+      (momentMatrix B C).toLinearMap) :
+    (pencil.full z).det ≠ 0 := by
+  have hinj : Function.Injective (momentMatrix B C) :=
+    certified_moment_injective B C R hε hB hR hcoercive
+  have hker : LinearMap.ker (momentMatrix B C).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  have hJ : (momentMatrix B C).det ≠ 0 := by
+    intro hzero
+    exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+  have hEff : (region.effective z hz).det = (momentMatrix B C).det :=
+    region.effective_det_eq_continuous_operator z hz
+      (momentMatrix B C) hident
+  intro hfull
+  apply hJ
+  calc
+    (momentMatrix B C).det = (region.effective z hz).det := hEff.symm
+    _ = 0 := (region.full_zero_iff_effective_zero z hz).mp hfull
+
+/-- A full determinant zero obstructs global coercivity if the effective
+operator is genuinely identified with the proposed moment matrix. -/
+theorem global_coercivity_fails_of_full_det_zero
+    {Z Q E : Type*} [Fintype Q] [DecidableEq Q]
+    [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n : ℕ} {pencil : BlockPencil Z (Fin n) Q ℝ}
+    (region : InvertibleRegion pencil) (z : Z) (hz : z ∈ region.carrier)
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hident : Matrix.toLpLin 2 2 (region.effective z hz) =
+      (momentMatrix B C).toLinearMap)
+    (hfull : (pencil.full z).det = 0) :
+    ¬ ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y) := by
+  intro hcoercive
+  exact (region.full_det_ne_zero_of_coercive_moment z hz
+    B C R hε hB hR hcoercive hident) hfull
+
+/-- The sign of the full block determinant is stable under moment-operator
+perturbation if *both* effective and eliminated-block determinants preserve
+their relative sign. No sign agreement is inferred across arbitrary points. -/
+theorem full_determinant_sign_of_coercive_moment_perturbation
+    {Z Q E : Type*} [Fintype Q] [DecidableEq Q]
+    [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n : ℕ} {pencil : BlockPencil Z (Fin n) Q ℝ}
+    (region : InvertibleRegion pencil)
+    (z w : Z) (hz : z ∈ region.carrier) (hw : w ∈ region.carrier)
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (T : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hzIdent : Matrix.toLpLin 2 2 (region.effective z hz) =
+      (momentMatrix B C).toLinearMap)
+    (hwIdent : Matrix.toLpLin 2 2 (region.effective w hw) =
+      T.toLinearMap)
+    (hpert : ‖T - momentMatrix B C‖ < ε / (ε + β * δ))
+    (hqqSign : 0 < (pencil.qq z).det * (pencil.qq w).det) :
+    0 < (pencil.full z).det * (pencil.full w).det := by
+  have hEffSign : 0 < (momentMatrix B C).det * T.det :=
+    certified_moment_determinant_sign B C R T
+      hε hB hR hcoercive hpert
+  have hzDet :
+      (region.effective z hz).det = (momentMatrix B C).det :=
+    region.effective_det_eq_continuous_operator z hz
+      (momentMatrix B C) hzIdent
+  have hwDet : (region.effective w hw).det = T.det :=
+    region.effective_det_eq_continuous_operator w hw T hwIdent
+  calc
+    0 < ((pencil.qq z).det * (pencil.qq w).det) *
+        ((momentMatrix B C).det * T.det) :=
+      mul_pos hqqSign hEffSign
+    _ = (pencil.full z).det * (pencil.full w).det := by
+      rw [region.det_factorization z hz, region.det_factorization w hw,
+        hzDet, hwDet]
+      ring
+
+end InvertibleRegion
+
 
 end
 
