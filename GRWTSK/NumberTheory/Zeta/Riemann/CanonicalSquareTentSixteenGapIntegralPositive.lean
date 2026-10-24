@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Formalization assistance: OpenAI.
+Local attribution: grwtsk contributors.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No root import.
 -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability
