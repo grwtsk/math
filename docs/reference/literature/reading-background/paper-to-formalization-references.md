@@ -7784,3 +7784,34 @@ noncommutative geometry, nilflow, zeta-zero, or RH consequence is established.
 **Immutable source and executed verification.** [`502574417279b1c6409792cb64927e833a093144`](https://github.com/grwtsk/math/commit/502574417279b1c6409792cb64927e833a093144). Lean 4.33.0, clean Mathlib pin above. All 37 targets passed, 9,449 jobs. Actual commands: `lake build --wfail` on all 37 root/leaf targets in external targets.json; `lake env lean --trust=0 -DwarningAsError=true` for FullAxiomAudit.lean, FullCoverageAudit.lean and FullRuntimeAudit.lean; `lake env lean --run KernelAffectedClosure.lean`. 743 modules; 23,365 logical declarations, zero disallowed axioms; 6,853 explained native-only entries, zero unexplained; 13 runtime helpers, zero failures; fresh kernel replay of all thirteen newly imported/changed modules, zero failures; 730 unchanged source/object hashes match baseline. Qualification is incremental against `2fe30d77577636a53bb9b3b3563bcb5dd1472ed2`, not a fresh replay of every imported declaration. Runners, target lists, source/object hashes and receipts stay outside canonical math at `/Users/local/Desktop/noeaaeue/.codex-runtime/math-raw-averages-kernel/`.
 
 **Separated classifications and remaining bridges.** Imported mathematics: upstream calculus/order/conjugation/inequalities. Kernel-verified bridges: the exact scopes above, including the finite counterexample. Conditional interface: decay of the actual mean oscillation is needed to remove raw averaging. Finite evidence: exact scale-ten arithmetic refutes the all-family lower-frame statement at that scale; it supplies no general asymptotic conclusion. Analogies: none used. Unresolved: identify sourceSlope and sourceIntercept with -log(2π) and logDeriv zeta(-1); prove the pointwise raw summation/order/tail/endpoint bridge; identify the exact RH application family and either prove that it excludes the demonstrated genuine kernel by an arithmetic theorem or provide an augmented observation with a proved source/application bridge. The full restriction family has not been silently narrowed. Both #189 and #966 remain open.
+
+
+## Case FINITE-SIGN-ORDERED-HEIGHT-VERIFIED-20261023 — exact source replay
+
+Verification amendment to FINITE-SIGN-ORDERED-HEIGHT-20261023 above. Source
+commit `f82bb2e044e63b84bc288e34f3bd3b51df55f8ad` contains both new maintained
+modules, with blobs `eb75ea9b5f7c985cebb5a213de0d591db0437dd4` (finite sign)
+and `ba84257e8855fb69a9612d48f78280e63964723c` (ordered height).
+
+**Actual verification:** Noe
+`managers/custody/python-quine/verification/verify_chowla_height.py --math-root
+/Users/local/Desktop/math --math-commit f82bb2e044e63b84bc288e34f3bd3b51df55f8ad
+--output /Users/local/Documents/ChatGPT/.noeaaeue-runtime/python-quine/formal-work/chowla-ordered-height/check-f82bb2e044e63b84bc288e34f3bd3b51df55f8ad-v1`
+exited 0. Six local modules freshly compiled in private external objects with
+Lean 4.33.0 `--trust=0 -DwarningAsError=true`. The 25 new public theorem types
+and transitive axioms passed audit; only `propext`, `Classical.choice` and
+`Quot.sound`. Both false claims were rejected: vanishing triple correlation
+for the inherited pairwise-only parity fixture, and equal XY/YX central height.
+
+Receipt (20556 bytes) in that output directory: `receipt.json`, SHA-256
+`d12136d5db3cc5c96e840d31af10876a5827aa80cfc7f03871385b53191937eb`.
+Classification: **kernel-verified local finite bridges**, with the exact
+nonempty-root / all-subset-moment and central-axis hypotheses retained.
+Mathlib source `db584cd6d46c92f209a44c0f1c829460d327499d` and dependency source
+HEADs match the manifest; existing upstream build artifacts were reused,
+without rebuilding or proving their source correspondence. Source bytes were
+checked against the immutable commit before and after replay. The external
+receipt and static Noe contract enumerate every checked theorem and source.
+The eight-row known-root entropy example is explanatory prose, not a checked
+conditional-entropy game. All arithmetic, entropy, cryptographic, geometry
+serialization, Hodge/nilflow and RH nonclaims above continue to apply.
