@@ -266,4 +266,21 @@ theorem complexDirichlet_orthogonalAt
   rw [card_complexDirichlet_eq_totient q]
   convert h using 1 <;> ring
 
+
+/-- The principal complex Dirichlet character is one on every reduced
+residue. This is not an assertion on nonunits. -/
+theorem complexDirichlet_principal_on_units
+    (q : ℕ) (b : (ZMod q)ˣ) :
+    (1 : DirichletCharacter ℂ q) (b : ZMod q) = 1 := by
+  exact MulChar.one_apply_coe b
+
+/-- A complex Dirichlet character has unit norm on reduced residues.
+The finite-unit roots-of-unity result is used without a cancellation
+or zero-free-region premise. -/
+theorem complexDirichlet_norm_on_units
+    (q : ℕ) (χ : DirichletCharacter ℂ q) (a : (ZMod q)ˣ) :
+    ‖χ (a : ZMod q)‖ = 1 := by
+  have h := MulChar.apply_mem_rootsOfUnity (a := a) (χ := χ)
+  exact norm_eq_one_of_mem_rootsOfUnity h
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
