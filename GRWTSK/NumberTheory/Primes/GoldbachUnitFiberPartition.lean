@@ -222,4 +222,13 @@ theorem complexDirichlet_unit_orthogonality_inverse
     (b : ZMod q)
   simpa only [Units.val_inj] using h
 
+
+/-- Complex conjugation of an actual Dirichlet character value equals
+evaluation of the inverse character. This is a pointwise fact, not
+yet the inverse-residue comparison used by unit orthogonality. -/
+theorem complexDirichlet_star_apply_eq_inv_character
+    (q : ℕ) (χ : DirichletCharacter ℂ q) (a : ZMod q) :
+    star (χ a) = (χ⁻¹) a := by
+  exact MulChar.star_apply' χ a
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
