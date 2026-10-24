@@ -15,6 +15,7 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
 
 open scoped BigOperators
+open GRWTSK.NumberTheory.Primes.FiniteCharacterOrthogonality
 open GRWTSK.NumberTheory.Primes.GoldbachUnitCharacterPsi
 open GRWTSK.NumberTheory.Primes.GoldbachPsiUnitNonunit
 open GRWTSK.NumberTheory.Primes.GoldbachUnitFiberMembership
