@@ -46,7 +46,7 @@ commands = [
   "test \"$(git hash-object GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean)\" = ac4339e781f4236c8b374e5bf7bd981f066ff2be",
   "cat lean-toolchain",
   "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0",
-  "grep -F db584cd6d46c92f209a44c0f1c829460d327499d lake-manifest.json",
+  "python3 -c 'import json; p=next(x for x in json.load(open(\"lake-manifest.json\"))[\"packages\"] if x[\"name\"]==\"mathlib\"); assert p[\"rev\"]==\"db584cd6d46c92f209a44c0f1c829460d327499d\" and p[\"inputRev\"]==\"db584cd6d46c92f209a44c0f1c829460d327499d\"'",
   "lake env lean --version",
   "lake build --wfail GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent",
   "lake env lean --trust=0 --wfail GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean",
