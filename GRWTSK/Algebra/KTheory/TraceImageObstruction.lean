@@ -120,6 +120,37 @@ theorem rationalizedTrace_of
     rationalizedTrace trace (rationalizationOf B b) = trace b := by
   simp
 
+/-- Rationalizing a composite additive map commutes with composing the
+rationalized maps. The proof covers all tensor-product elements, rather
+than relying only on a generating pure-tensor formula. -/
+theorem rationalizedAssembly_comp
+    {A B C : Type*}
+    [AddCommGroup A] [AddCommGroup B] [AddCommGroup C]
+    (f : A →+ B) (g : B →+ C) (x : Rationalization A) :
+    rationalizedAssembly (g.comp f) x =
+      rationalizedAssembly g (rationalizedAssembly f x) := by
+  refine TensorProduct.induction_on x ?_ ?_ ?_
+  · simp
+  · intro q a
+    simp
+  · intro u v hu hv
+    simpa only [map_add] using congrArg₂ (· + ·) hu hv
+
+/-- Trace extension is natural for every additive map and arbitrary
+tensor-product elements. This is a proved algebraic comparison law;
+it does not identify any group with analytic K₀. -/
+theorem rationalizedTrace_naturality
+    {A B : Type*} [AddCommGroup A] [AddCommGroup B]
+    (f : A →+ B) (trace : B →+ ℝ) (x : Rationalization A) :
+    rationalizedTrace trace (rationalizedAssembly f x) =
+      rationalizedTrace (trace.comp f) x := by
+  refine TensorProduct.induction_on x ?_ ?_ ?_
+  · simp
+  · intro q a
+    simp
+  · intro u v hu hv
+    simpa only [map_add] using congrArg₂ (· + ·) hu hv
+
 /-- A rational-linear trace restriction on the integral assembly image remains
 valid on all rationalized assembly classes, not just pure tensors. -/
 theorem rationalizedTrace_image_mem
@@ -274,6 +305,18 @@ theorem rationalizedKZeroMap_of (f : StablePort M N) (m : M) :
     rationalizationOf _
       (ofMul (Algebra.GrothendieckGroup.of (M := N) (f.objectMap m)))
   rw [rationalizedAssembly_of, additiveKZeroMap_of]
+
+/-- The rationalized Grothendieck stable port commutes with its target
+trace after precomposition, on every tensor element. This comparison
+requires no analytic-K₀ interpretation of the universal group completion. -/
+theorem rationalizedKZeroMap_trace_naturality
+    {M N : Type*} [CommMonoid M] [CommMonoid N]
+    (f : StablePort M N)
+    (trace : Additive (GrothendieckKZero N) →+ ℝ)
+    (x : Rationalization (Additive (GrothendieckKZero M))) :
+    rationalizedTrace trace (f.rationalizedKZeroMap x) =
+      rationalizedTrace (trace.comp f.additiveKZeroMap) x := by
+  exact rationalizedTrace_naturality f.additiveKZeroMap trace x
 
 end StablePort
 
