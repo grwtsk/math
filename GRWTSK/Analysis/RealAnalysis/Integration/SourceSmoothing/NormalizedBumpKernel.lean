@@ -19,15 +19,16 @@ Original source SHA-256: b397c3041d3a33260073e871f0c5d2e3bc80e7bb2d2e46838eaf261
 Organized source SHA-256: 9748d469bf3af377371b88f41fb6bb0720a622bacd8fcb5fd22b4cfb4253f04d
 Source archive: grwtsk/math@99f310907528f620d85095b675ec1b6f9d7a7046
 PMD: 510.5.010.040 integration; editorial subject placement only.
-All original imports and whole-file documentation are retained. This candidate
-contains its selected component; the inherited introduction covers the whole source.
+This component uses only Mathlib bump functions and retains the normalized
+kernel statements. Its unused legacy ZeroSideTargets import and namespace open
+have been removed; the source-specific convolution consumer still retains that
+unresolved dependency. The inherited introduction covers the whole source.
 Statements, hypotheses, declaration comments and bodies are exact source copies.
 Containing namespace, explicit namespace context and candidate imports are receipted
 changes. Historical proof-checking language is not a fresh replay claim.
 Outside the public library umbrella; Lean and Lake have not been invoked.
 -/
 
-import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSideTargets
 import Mathlib.Analysis.Calculus.BumpFunction.Convolution
 
 /-!
@@ -41,7 +42,6 @@ convergence, smooth explicit formula, or dominated zero-side descent.
 -/
 
 namespace GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing
-open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
 
 open MeasureTheory Set Filter
 open scoped ContDiff Convolution Topology Pointwise

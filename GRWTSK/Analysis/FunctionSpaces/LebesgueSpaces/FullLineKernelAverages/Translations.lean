@@ -20,24 +20,23 @@ Organized source SHA-256: 5023d9cbf1f63eff50f5ccca5411557b5209203afafd9ddec4c04c
 Source archive: grwtsk/math@99f310907528f620d85095b675ec1b6f9d7a7046
 PMD: 510.5.060.010 lebesgue spaces; editorial placement only.
 This component retains the full-line complex L² carrier, translation isometry,
-almost-everywhere formula and parameter continuity. Legacy dependency binding is
-UNRESOLVED; same-basename Scratch variants are not silently substituted.
+almost-everywhere formula and parameter continuity. This component uses only
+Mathlib Lp and measure-preserving translation constructions. The unused legacy
+half-line and fixed-kernel imports and namespace opens have been removed.
+The original archive provider selection remains unresolved; this component
+asserts no half-line kernel identity or RH consequence.
 All retained statements, explicit premises and proof/definition text are exact copies.
 Namespace, candidate imports and any explicit ambient-context edits are receipted.
 Original dependency selection, elaboration and proof checking remain unreplayed.
 This candidate is outside the public umbrella. Lean and Lake have not been invoked.
 -/
 
-import FormalResearch.RiemannHypothesis.SourceComparison.HalfLineExponential
-import FormalResearch.RiemannHypothesis.SourceComparison.FixedKernelAdmission
 import Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
 import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 
 set_option autoImplicit false
 namespace GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.FullLineKernelAverages
 open MeasureTheory Set
-open FormalResearch.RiemannHypothesis.SourceComparison
-open FixedSourceKernel FixedKernelAdmission HalfLineExponential
 noncomputable section
 abbrev FullH := Lp ℂ 2 (volume : Measure ℝ)
 
