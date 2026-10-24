@@ -93,8 +93,9 @@ the root is extra data. -/
 def RootedSoficGraph.asSoficGraph
     {Label : Type u} [Fintype Label]
     (G : RootedSoficGraph Label) :
-    @SoficGraph G.Vertex Label G.finiteVertex (inferInstance) where
-  edge := G.edge
+    @SoficGraph G.Vertex Label G.finiteVertex (inferInstance) := by
+  letI := G.finiteVertex
+  exact { edge := G.edge }
 
 /-- An admitted word carries a literal path witness and an end state. -/
 inductive LabeledPath {Label : Type u} [Fintype Label]
@@ -111,20 +112,20 @@ def Accepts {Label : Type u} [Fintype Label]
   ∃ finish : G.Vertex, LabeledPath G G.start word finish
 
 /-- Chronological finite prefix of a one-sided sequence. -/
-def prefix {Label : Type u} (trace : ℕ → Label) (n : ℕ) :
+def «prefix» {Label : Type u} (trace : ℕ → Label) (n : ℕ) :
     List Label :=
   (List.range n).map trace
 
 def AdmitsStream {Label : Type u} [Fintype Label]
     (G : RootedSoficGraph Label) (trace : ℕ → Label) : Prop :=
-  ∀ n, Accepts G (prefix trace n)
+  ∀ n, Accepts G («prefix» trace n)
 
 /-- Exact singleton-prefix presentation, NOT just permission to follow
 one path through a graph that admits many unrelated words. -/
 def ExactPrefixPresented {Label : Type u} [Fintype Label]
     (G : RootedSoficGraph Label) (trace : ℕ → Label) : Prop :=
   ∀ word, Accepts G word ↔
-    ∃ n : ℕ, word = prefix trace n
+    ∃ n : ℕ, word = «prefix» trace n
 
 /-- Chosen arithmetic-to-finite-state conclusion: AFTER some finite
 initial history is discarded, the remaining exact prefix language
@@ -132,7 +133,7 @@ has a finite rooted labeled graph presentation. -/
 def EventuallyExactPrefixPresented
     {Label : Type u} [Fintype Label]
     (trace : ℕ → Label) : Prop :=
-  ∃ offset : ℕ, ∃ G : RootedSoficGraph Label,
+  ∃ offset : ℕ, ∃ G : RootedSoficGraph.{u, v} Label,
     ExactPrefixPresented G (fun n => trace (offset + n))
 
 /-- One vertex, one loop with every alphabet symbol. A genuine
@@ -159,7 +160,7 @@ theorem every_stream_admitted
     (trace : ℕ → Label) :
     AdmitsStream (fullShiftGraph Label) trace := by
   intro n
-  exact ⟨PUnit.unit, fullShift_path (prefix trace n)⟩
+  exact ⟨PUnit.unit, fullShift_path («prefix» trace n)⟩
 
 /-- It is impossible that every finite graph rejects some prefix.
 The graph-admissibility version of the proposed contradiction is false. -/
@@ -167,7 +168,7 @@ theorem no_universal_prefix_rejection
     {Label : Type u} [Fintype Label]
     (trace : ℕ → Label) :
     ¬ (∀ G : RootedSoficGraph Label,
-        ∃ n, ¬ Accepts G (prefix trace n)) := by
+        ∃ n, ¬ Accepts G («prefix» trace n)) := by
   intro h
   obtain ⟨n, hn⟩ := h (fullShiftGraph Label)
   exact hn (every_stream_admitted trace n)
@@ -180,10 +181,10 @@ theorem fullShift_not_exact_for_constant_false :
   have hAccept : Accepts (fullShiftGraph Bool) [true] :=
     ⟨PUnit.unit, fullShift_path [true]⟩
   obtain ⟨n, hword⟩ := (h [true]).mp hAccept
-  have hTrue : true ∈ prefix (fun _ : ℕ => false) n := by
+  have hTrue : true ∈ «prefix» (fun _ : ℕ => false) n := by
     rw [← hword]
     simp
-  simp [prefix] at hTrue
+  simp [«prefix»] at hTrue
 
 /-- A full-precision process has its own states and exact recovery.
 A finite graph projection labels each actual spectral evolution step,
@@ -284,7 +285,7 @@ structure GrowingSoficSpectralDiagram
     (G : RootedSoficGraph Label)
     (X : Type w) (sourceStep : X → X) where
   partition : GrowingRefinement X sourceStep
-  spectral : CommutingLosslessGraphCover G X sourceStep
+  spectral : CommutingLosslessGraphCover.{u, w, z, v} G X sourceStep
   observedStage : ℕ
   present : StageCells partition.size observedStage → G.Vertex
   present_lift :
@@ -334,6 +335,8 @@ theorem GrowingSoficSpectralDiagram.no_vertex_only_decoder
       congrArg decode (D.graph_projection_collision hCell)
     _ = y := hdecode y
 
+-- The graph and spectral carriers intentionally have independent universes.
+set_option linter.checkUnivs false in
 /-- Source analytic stage + dynamic partition + rooted finite sofic
 graph + commuting left-invertible spectrum + ordinate readout.
 The 7/8→3/4 analytic estimates are an explicit supplied field. -/
@@ -341,8 +344,8 @@ structure AnalyticDynamicSoficPipeline
     (X : Type w) (Label : Type u) [Fintype Label] where
   sourceStep : X → X
   analytic : ThreeQuarterRefinement X
-  graph : RootedSoficGraph Label
-  diagram : GrowingSoficSpectralDiagram graph X sourceStep
+  graph : RootedSoficGraph.{u, v} Label
+  diagram : GrowingSoficSpectralDiagram.{u, v, w, z} graph X sourceStep
   ordinate : X → ℝ
 
 /-- The 3/4 strict half-plane follows only from cofinality AND ALL
@@ -373,13 +376,13 @@ structure OrdinateExactLanguageSuppliers
   trace : Zero → ℕ → Label
   rational_to_exact :
     ∀ z, isZero z → arithmetic.rational (height z) →
-      EventuallyExactPrefixPresented (trace z)
+      EventuallyExactPrefixPresented.{u, z} (trace z)
   algebraic_on_line_to_exact :
     ∀ z, isZero z → onCriticalLine z →
       arithmetic.algebraic (height z) →
-        EventuallyExactPrefixPresented (trace z)
+        EventuallyExactPrefixPresented.{u, z} (trace z)
   trace_not_eventually_exact :
-    ∀ z, isZero z → ¬ EventuallyExactPrefixPresented (trace z)
+    ∀ z, isZero z → ¬ EventuallyExactPrefixPresented.{u, z} (trace z)
 
 /-- Rational height implies eventual exact graph presentation, opposed by
 a genuine non-presentation theorem: irrationality WITHOUT GRH. -/
