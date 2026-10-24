@@ -361,4 +361,25 @@ theorem projection_sector_energy_lower_bound
     delta energy energy₁ energy₂ hdelta
     (S.norm_sq_eq_add_norm_sq_starProjection x) henergy hfirst hsecond
 
+/-- A projected two-sector energy bound with a quantified interaction loss.
+The projections provide the Pythagorean identity; the energy decomposition and
+interaction estimate remain assumptions about a concrete quadratic form. -/
+theorem projection_sector_energy_lower_bound_of_interaction
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (x : H) (delta epsilon energy energy₁ energy₂ cross : ℝ)
+    (hepsilon : 0 ≤ epsilon)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hinteraction :
+      -(2 * epsilon * |‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖|) ≤ cross)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤ energy₂) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ energy := by
+  exact norm_energy_lower_bound_of_bilinear_interaction
+    x (S.starProjection x) (Sᗮ.starProjection x)
+    delta epsilon energy energy₁ energy₂ cross hepsilon
+    (S.norm_sq_eq_add_norm_sq_starProjection x)
+    hsplit hinteraction hfirst hsecond
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
