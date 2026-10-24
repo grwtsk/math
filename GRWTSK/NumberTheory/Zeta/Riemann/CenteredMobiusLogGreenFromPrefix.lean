@@ -9,7 +9,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem abs_cumulative_le_of_prefix_bound
     {X : ℕ} (hX : 1 ≤ X)

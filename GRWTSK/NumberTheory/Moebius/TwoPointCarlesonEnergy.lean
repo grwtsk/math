@@ -41,7 +41,7 @@ noncomputable section
 
 open scoped BigOperators
 
-namespace GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+namespace GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Maximum absolute aligned block sum at scale `r` inside `[0,2^m)`.
 The index set has cardinality `2^(m-r)` and is therefore always nonempty;
@@ -406,12 +406,12 @@ theorem alignedDyadicScaleMaximum_zero_le_of_abs_le
   intro q hq
   simpa using hC q (Finset.mem_range.mp hq)
 
-end GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+end GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 namespace TwoPointConjectureJunction
 
-open GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+open GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Max-per-scale Carleson energy of one exact zero-padded two-point source. -/
 def twoPointCarlesonEnergy
@@ -579,7 +579,7 @@ theorem riemannHypothesis_of_mertensTwoPointCarlesonEnergy
 end TwoPointConjectureJunction
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
-#print axioms GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.dyadicPrefixMaximum_sq_le_alignedDyadicCarlesonEnergy
+#print axioms GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal.dyadicPrefixMaximum_sq_le_alignedDyadicCarlesonEnergy
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointCarlesonSingletonSum_le_endpoint
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointMaximalQuadraticEnergy_le_carlesonEnergySum
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensTwoPointCarlesonEnergy

@@ -17,7 +17,7 @@ noncomputable section
 open Set MeasureTheory
 open scoped BigOperators
 
-namespace GRWTSK.Analysis.Asymptotics.FinitePowerSum
+namespace GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
 /-- The closed positive-integer power sum has its sharp elementary integral
 allowance. -/
@@ -66,6 +66,6 @@ theorem sum_Icc_rpow_sub_one_le {β : ℝ}
             _ = _ := by field_simp [hβ0.ne']; ring_nf
         exact (add_le_add ih le_rfl).trans hcalc
 
-end GRWTSK.Analysis.Asymptotics.FinitePowerSum
+end GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
-#print axioms GRWTSK.Analysis.Asymptotics.FinitePowerSum.sum_Icc_rpow_sub_one_le
+#print axioms GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum.sum_Icc_rpow_sub_one_le

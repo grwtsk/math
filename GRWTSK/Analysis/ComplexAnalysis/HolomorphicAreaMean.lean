@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle
 import Mathlib.Analysis.SpecialFunctions.PolarCoord
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.MeasureTheory.Group.Integral
@@ -22,7 +22,7 @@ open scoped ENNReal
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle
 
 noncomputable section
 

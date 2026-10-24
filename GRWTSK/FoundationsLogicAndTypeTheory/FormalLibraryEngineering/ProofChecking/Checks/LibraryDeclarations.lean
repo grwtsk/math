@@ -12,7 +12,7 @@ import GRWTSK.NumberTheory.Moebius.MeanSquareGrowth
 import GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal
 import GRWTSK.Analysis.InnerProductSpace.CausalResponseGram
 import GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth
-import GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.CausalExponentialResponse
 import GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy
 import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
 import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries

@@ -21,11 +21,11 @@ of the functions $W_i$.
 ## Verification and limits
 
 The [source](../../../../../GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/CompactCutoff.lean),
-[joint positive controls](../../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean),
+[joint positive controls](../../../../../GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/Checks/Positive/GaussianCoupledSeparation.lean),
 joint native receipt (artifact:gitblob:e441245ed821fcd9d4711747c6d207e98a9c5e6e)
 and integration record (artifact:gitblob:fb51031e146f7d7409e02fab8c4a9331ca3f94cf)
 bind the actual reusable construction. This calculus module imports no Gaussian
-module. The [Gaussian separation application](../../MellinTransform/gaussian-coupled-separation.md)
+module. The [Gaussian separation application](../../IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-coupled-separation.md)
 uses this construction and is checked in the same analytic closure; that census
 must be counted once.
 

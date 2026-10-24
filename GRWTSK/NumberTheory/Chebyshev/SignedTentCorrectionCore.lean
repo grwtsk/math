@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Chebyshev.CountedTentTailCore
-import GRWTSK.Analysis.Real.TentRationalCorrection
+import GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 import GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection
 import GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls
 

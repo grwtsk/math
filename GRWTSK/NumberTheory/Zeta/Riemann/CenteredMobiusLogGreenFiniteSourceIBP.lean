@@ -12,7 +12,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem fourierModeValue_hasDerivAt_thin
     {k : ℤ} (hk : k ≠ 0) (t : ℝ) :

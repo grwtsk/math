@@ -38,17 +38,17 @@ import GRWTSK.Geometry.AlgebraicGeometry.PortFiberIndexedCoverDescent
 
 import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSections
-import GRWTSK.Analysis.Operator.HolomorphicLinePort
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLinePort
 import GRWTSK.Analysis.OperatorTheory.PortFiberLineBundle
 
 import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
 import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeTopology
-import GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLineGaugePort
 import GRWTSK.Analysis.OperatorTheory.PortFiberGaugeTransport
 
 import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
-import GRWTSK.Analysis.Operator.HolomorphicLineAdjoint
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLineAdjoint
 import GRWTSK.Analysis.OperatorTheory.PortFiberMetricAdjoint
 
 namespace GRWTSK.Analysis.ComplexAnalysis.PortFiberHolomorphyCore

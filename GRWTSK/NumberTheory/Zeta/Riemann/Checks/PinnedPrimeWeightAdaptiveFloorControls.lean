@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightAdaptiveFloorControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The literal dyadic prime inventory is exactly the difference of the two
 nested prime initial segments. -/

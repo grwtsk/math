@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.DyadicGreenGramFormControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem exact_full_form_is_augmented_energy
     {X : ℕ} (hX : 0 < X) :

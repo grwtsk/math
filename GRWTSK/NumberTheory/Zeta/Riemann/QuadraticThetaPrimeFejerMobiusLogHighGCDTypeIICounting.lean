@@ -25,7 +25,7 @@ SIGNED_LOW_GCD_TYPE_I_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 open GRWTSK.NumberTheory.FiniteDivisorCounting
 
 /-- The elementary reciprocal-square tail and divisor summatory estimate bound

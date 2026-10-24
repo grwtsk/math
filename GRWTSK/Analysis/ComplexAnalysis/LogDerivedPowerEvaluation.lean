@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.RationalLogEnclosure
+import GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 import GRWTSK.Analysis.ComplexAnalysis.TentKernelEnclosure
 
 set_option autoImplicit false
@@ -20,7 +20,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.LogDerivedPowerEvaluation
 
 open Filter
 open scoped Topology
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel

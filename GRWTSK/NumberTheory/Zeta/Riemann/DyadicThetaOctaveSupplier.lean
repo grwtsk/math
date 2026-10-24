@@ -33,7 +33,7 @@ THETA_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def thetaError (u : ℝ) : ℝ := θ u - u
 

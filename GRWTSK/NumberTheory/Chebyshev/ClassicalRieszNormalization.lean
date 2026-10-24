@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI. -/
-import GRWTSK.Analysis.Real.ClassicalRieszCorrection
+import GRWTSK.Analysis.RealAnalysis.ClassicalRieszCorrection
 import GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization
 
 /-! # Source normalization with the actual classical correction
@@ -11,7 +11,7 @@ set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.NumberTheory.Chebyshev.ClassicalRieszNormalization
 open GlobalRieszAffineNormalization TentSource
-open GRWTSK.Analysis.Real.ClassicalRieszCorrection
+open GRWTSK.Analysis.RealAnalysis.ClassicalRieszCorrection
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 
 def sourceSlope : ℂ := normalizationAtThree 2 - normalizationAtTwo 2 - (slope 2 : ℂ)

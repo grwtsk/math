@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierNorming
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierAtomic
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierAtomic
 
 /-!
 # Isolated atomic-evaluation producer leaf
@@ -14,8 +14,8 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierAtomic
 open Filter Topology MeasureTheory
 open scoped ENNReal
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -24,9 +24,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierAtomic
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorming
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierAtomic
 
 noncomputable section
 
@@ -87,9 +87,9 @@ def AddedClaim : AddedIndex → Prop
       (∀ (ι : Type) (D : IndexedDomainCover ι) (μ : Measure D.X.carrier) (x : D.X.carrier),
         (0 : ℝ≥0) • Measure.dirac x ≤ μ) ∧
       ¬ Nonempty (PositiveAtom
-        (D := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover)
-        (Measure.dirac GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center)
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.halfPoint)
+        (D := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover)
+        (Measure.dirac GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center)
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.halfPoint)
 
 theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
   cases i with

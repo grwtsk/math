@@ -27,7 +27,7 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaProjection
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaGaugeTransport
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicGaugeFieldL2
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 noncomputable section
 
@@ -81,9 +81,9 @@ def AddedClaim : AddedIndex → Prop
       quotientFieldEnergy G (areaMeasure D.X) h (fieldProjection G h q) ≤
         quotientFieldEnergy G (areaMeasure D.X) h q
   | .nullPointBoundary =>
-      let D := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover
-      let h := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-      let x := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
+      let D := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover
+      let h := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+      let x := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
       ∀ (C : Cocycle D) (G : Gauge (Cocycle.identity D) C),
         ¬ ∃ T : FieldL2 G (areaMeasure D.X) h → ℂ,
           ∀ s : FiniteField G (areaMeasure D.X) h,

@@ -34,7 +34,7 @@ NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringRationalMargin
 
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight

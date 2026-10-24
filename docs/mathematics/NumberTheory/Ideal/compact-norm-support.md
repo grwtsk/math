@@ -71,7 +71,7 @@ The integer-ideal example above retains its own domain and norms. Original
 coefficient objects and actual completed ideal sums,
 masks, correction factors, a common finite support for every frequency and
 the original detector and RH suppliers remain open. The separate
-[annular separation theorem](../../Analysis/MellinTransform/gaussian-annular-separation.md)
+[annular separation theorem](../../Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-annular-separation.md)
 supplies no missing arithmetic hypotheses automatically.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->

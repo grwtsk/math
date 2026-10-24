@@ -52,7 +52,7 @@ SEVEN_EIGHTHS_MOBIUS_LOG_LCM_PROGRESSION_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Augmented divisor index for the centered Mobius-log expansion.  `none` is
 the exact centering anchor and `some d` is a divisor modulus. -/

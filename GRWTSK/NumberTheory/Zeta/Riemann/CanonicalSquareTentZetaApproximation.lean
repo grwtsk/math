@@ -40,8 +40,8 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.Analysis.ErrorBounds
-open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.Analysis.RealAnalysis.TentWeight
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula
@@ -51,7 +51,7 @@ open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 open GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 
 /-- One canonical square-tent test.  Index `m` represents the square interval
 associated to source stage `m + 2`. -/

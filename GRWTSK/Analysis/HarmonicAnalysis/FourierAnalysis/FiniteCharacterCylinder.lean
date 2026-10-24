@@ -7,7 +7,7 @@ Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Owner: grwtsk/math#649. Parent draft: #632; related #121, #168, #444, #516.
 -/
 import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
-import GRWTSK.Analysis.FiniteSum.WalshCylinder
+import GRWTSK.Analysis.FiniteSums.WalshCylinder
 import Mathlib.Algebra.BigOperators.Ring.Finset
 
 /-!
@@ -33,7 +33,7 @@ namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteCharacterCylind
 
 open scoped BigOperators
 open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
-open GRWTSK.Analysis.FiniteSum.WalshCylinder
+open GRWTSK.Analysis.FiniteSums.WalshCylinder
 
 variable {ι : Type*}
 

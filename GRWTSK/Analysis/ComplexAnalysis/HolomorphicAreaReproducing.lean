@@ -17,7 +17,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open Filter Topology MeasureTheory
 open scoped ENNReal BigOperators
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
@@ -27,11 +27,11 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaLocalUniform
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete (coveredDomain_isOpen)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle (CircleWindow)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierComplete (coveredDomain_isOpen)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle (CircleWindow)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircleMixture
   (centeredWindow centeredWindow_center)
 
 universe u
@@ -283,13 +283,13 @@ theorem phase_wrong_sign (hOpen : D.IsOpenCover)
 
 /-- A concrete proper-domain counterexample supplies its finite-area and point hypotheses. -/
 theorem disk_phase_wrong_sign :
-    let D := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover
-    let h := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-    let x := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
+    let D := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover
+    let h := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+    let x := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
     (ContinuousLinearMap.adjoint (completedRepresentation (MetricWeights.identity D)
       (areaMeasure D.X) h (BoundedSymbol.constants D.X Complex.I)))
         (kernelVector h x) ≠ Complex.I • kernelVector h x :=
-  phase_wrong_sign _ GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.disk_finite_area _
+  phase_wrong_sign _ GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.disk_finite_area _
 
 /-- Empty Gram families have zero value; no phantom point or strict positivity is inserted. -/
 theorem empty_gram (hOpen : D.IsOpenCover) {κ : Type*} (p : κ → D.X.carrier) (c : κ → ℂ) :

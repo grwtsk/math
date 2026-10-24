@@ -14,7 +14,7 @@ global arithmetic growth witness or the global aggregate envelope consumer.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 theorem density_half_prime_denominator_lower {x : ℝ} (hx : 2 ≤ x) :
     3 * x / 4 ≤ x + 1 - Real.sqrt x := by
@@ -118,4 +118,4 @@ theorem density_correction_prime_half_tail {p : ℕ} (hp : p.Prime) (K : ℕ) :
       rw [density_prime_half_mass_algebra hp]
       ring
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

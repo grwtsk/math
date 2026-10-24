@@ -22,8 +22,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaProjection
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaKernelDensity
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 noncomputable section
 
@@ -79,10 +79,10 @@ def AddedClaim : AddedIndex → Prop
       (∀ (ι : Type) (D : IndexedDomainCover ι) (h : D.IsOpenCover), kernelSpan h ∅ = ⊥) ∧
       GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaKernelDensity.Fixtures.diskCoordinateVector ≠ 0 ∧
       ¬ Dense (kernelSpan
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-        {GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center} :
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+        {GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center} :
         Set (AreaCompletion
-          GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen))
+          GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen))
 
 theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
   cases i with

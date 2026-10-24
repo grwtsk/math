@@ -11,7 +11,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentSourceControls
 
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 

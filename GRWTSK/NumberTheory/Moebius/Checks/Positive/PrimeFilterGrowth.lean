@@ -62,7 +62,7 @@ elab "#audit_ccc_prime_cascade" : command => do
     fun (data, owner) =>
       if #[`GRWTSK.NumberTheory.Moebius.PrimeFactorFilters,
           `GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy,
-          `GRWTSK.NumberTheory.Prime.ReciprocalMass,
+          `GRWTSK.NumberTheory.Primes.ReciprocalMass,
           `GRWTSK.NumberTheory.Moebius.PrimeFilterGrowth].contains owner then
         -- Compiler-generated equations can be repeated in later module data.
         -- Keep each constant at its canonical environment owner.

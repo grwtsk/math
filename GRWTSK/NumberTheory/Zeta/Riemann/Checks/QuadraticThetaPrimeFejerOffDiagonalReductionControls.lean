@@ -26,19 +26,19 @@ def exactFrontier : List String :=
 
 theorem diagonalTargetClosed
     (j m : ℕ)
-    (hm0 : 2 * GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.dyadicScale j ≤ m)
-    (hm1 : m ≤ 4 * GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.dyadicScale j) :
+    (hm0 : 2 * GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.dyadicScale j ≤ m)
+    (hm1 : m ≤ 4 * GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.dyadicScale j) :
     nonAliasingFejerQuadraticDiagonal
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.dyadicScale j)
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.dyadicScale j)
         (sevenEighthsBoundaryMinimalFejerCutoff j)
         m
       ≤
     200 *
       Real.rpow
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.dyadicScale j : ℝ)
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.dyadicScale j : ℝ)
         ((3 : ℝ) / 2) *
       (Real.log
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.dyadicScale j : ℝ))^4 :=
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.dyadicScale j : ℝ))^4 :=
   sevenEighthsBoundaryMinimalFejerQuadraticDiagonal_le_exactTarget
     j m hm0 hm1
 

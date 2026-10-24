@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity
-import GRWTSK.NumberTheory.PrimeCounting.PrimeShellEnergyGrowth
+import GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.PrimeShellEnergyGrowth
 
 /-! Exact signed-correlation reformulation and rejection of an unsigned budget.
 This exposes the arithmetic producer that remains open. The component energies

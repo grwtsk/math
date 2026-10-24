@@ -24,7 +24,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open TentSource CountedTentTail LegendreLogBudget SignedTentCorrection
 open CanonicalTentAbsolute CanonicalTentExplicitFormula

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.CubicEulerMaclaurin
+import GRWTSK.Analysis.RealAnalysis.CubicEulerMaclaurin
 import GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 import Mathlib.Tactic.FieldSimp
 
@@ -21,7 +21,7 @@ namespace GRWTSK.RiemannHypothesis.CubicPowerSummation
 
 open MeasureTheory Set
 open scoped Interval BigOperators
-open GRWTSK.Analysis.Real.CubicEulerMaclaurin
+open GRWTSK.Analysis.RealAnalysis.CubicEulerMaclaurin
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 
 noncomputable section

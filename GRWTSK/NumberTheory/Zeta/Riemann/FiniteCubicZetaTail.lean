@@ -21,7 +21,7 @@ namespace GRWTSK.RiemannHypothesis.FiniteCubicZetaTail
 
 open Set Metric
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Real.PowerCellMajorant
+open GRWTSK.Analysis.RealAnalysis.PowerCellMajorant
 open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 open CubicRemainder FiniteCubicZetaApproximation
 

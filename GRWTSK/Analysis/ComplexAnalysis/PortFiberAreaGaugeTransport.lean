@@ -27,8 +27,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaProjection
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaGaugeTransport
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 noncomputable section
 

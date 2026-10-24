@@ -13,7 +13,7 @@ Formal recovery: OpenAI Codex.
 All ordered factors and squareful outputs are retained. No growth witness.
 -/
 namespace GRWTSK.NumberTheory.LSeries
-open GRWTSK.NumberTheory.ArithmeticFunctions
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 /-- The Dirichlet polynomial of the actual closed cutoff. -/

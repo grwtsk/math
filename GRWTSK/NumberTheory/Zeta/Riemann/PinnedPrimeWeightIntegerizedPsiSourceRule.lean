@@ -26,7 +26,7 @@ INTEGER_PSI_QUADRATIC_CAPACITY_OPEN / NO_RH_CLAIM.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Integer source point underlying a real target. -/
 def pinnedPrimeWeightPsiGridIndex (v : ℝ) : ℕ := ⌊v⌋₊
@@ -69,7 +69,7 @@ theorem thetaError_eq_integerPsiResponse_div_add_signedResidual
       pinnedPrimeWeightIntegerPsiResponse j v / (dyadicScale j : ℝ) +
         pinnedPrimeWeightIntegerPsiSignedResidual j v := by
   have hX : (dyadicScale j : ℝ) ≠ 0 := by
-    exact_mod_cast Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j)
+    exact_mod_cast Nat.ne_of_gt (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j)
   have hpsi := psi_eq_psi_gridIndex v
   unfold pinnedPrimeWeightIntegerPsiResponse
     pinnedPrimeWeightIntegerPsiSignedResidual thetaError psiError
@@ -284,7 +284,7 @@ theorem pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_stageEnvelope
   intro j v hv
   let X := dyadicScale j
   let e := quadraticThreshold ρ + η / 2
-  have hX : 0 < X := by dsimp [X]; exact GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+  have hX : 0 < X := by dsimp [X]; exact GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
   have he : 0 ≤ e := by
     dsimp [e]
     linarith [half_le_quadraticThreshold hρ]

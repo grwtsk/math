@@ -35,7 +35,7 @@ classical Weil form, and defines no criterion or RH adapter.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction
 
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction

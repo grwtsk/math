@@ -4,7 +4,7 @@ import Lean
 open Lean Elab Command
 open GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
 open GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter
-open GRWTSK.NumberTheory.ArithmeticFunctions
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 example (N : ℕ) :
     pickupReciprocalPrefix N = densityMobiusReciprocalPrefix (N : ℝ) :=

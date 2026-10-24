@@ -4,7 +4,7 @@ Formalization assistance: OpenAI Codex. Mathlib authorship retained. -/
 import GRWTSK.CombinatoricsAndDiscreteMathematics.Sequences.QuotaDiscrepancy
 import GRWTSK.CombinatoricsAndDiscreteMathematics.Sequences.PartialSumOrdering
 import GRWTSK.CombinatoricsAndDiscreteMathematics.Sequences.PartialSumCertificate
-import GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ContinuedFractions.ScheduledDenominators
 import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.TransitionSystems.StateReinitialization
 import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples
 import Mathlib.Data.ZMod.Basic

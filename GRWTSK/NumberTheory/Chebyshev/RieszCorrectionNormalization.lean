@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.RationalRieszPrimitive
+import GRWTSK.Analysis.RealAnalysis.RationalRieszPrimitive
 import GRWTSK.NumberTheory.Chebyshev.RieszSourceSecondDifference
 
 /-! # Corrected first-Riesz defect and actual normalization data
@@ -16,7 +16,7 @@ set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization
 open scoped BigOperators
-open GRWTSK.Analysis.Real.RationalRieszPrimitive
+open GRWTSK.Analysis.RealAnalysis.RationalRieszPrimitive
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 open TentSource RieszSourceSecondDifference
 

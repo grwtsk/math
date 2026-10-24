@@ -12,7 +12,7 @@ Mathematical results, formal proofs, and explicit open problems by **grwtsk cont
 - Consult the [theorem/result occurrence catalogue](docs/reference/result-occurrences.md) for the broader source inventory. A lexical occurrence is not a verified theorem.
 - The [Lean library](GRWTSK/) contains the formal sources; [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. [Verification specifications](docs/verification/README.md) describe static replay targets.
 
-Examples include [least natural prime](docs/mathematics/NumberTheory/Prime/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/Asymptotics/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
+Examples include [least natural prime](docs/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
 
 ## Reading the results
 

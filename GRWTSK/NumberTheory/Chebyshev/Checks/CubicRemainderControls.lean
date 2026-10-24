@@ -8,7 +8,7 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.CubicRemainderControls
 
 open scoped BigOperators
-open GRWTSK.Analysis.Real.PowerCellMajorant
+open GRWTSK.Analysis.RealAnalysis.PowerCellMajorant
 open GRWTSK.RiemannHypothesis.CubicPowerSummation
 open GRWTSK.RiemannHypothesis.CubicRemainder
 open GRWTSK.RiemannHypothesis.CubicRemainderHolomorphic

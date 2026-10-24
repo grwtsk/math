@@ -10,7 +10,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def centeredGreenDyadicMangoldtRawError (X : ℕ) : ℝ :=
   centeredGreenDyadicMangoldtMass X - (X : ℝ)

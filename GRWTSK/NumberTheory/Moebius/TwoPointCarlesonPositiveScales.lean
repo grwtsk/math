@@ -37,7 +37,7 @@ noncomputable section
 
 open scoped BigOperators
 
-namespace GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+namespace GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Sum of max-per-scale squares over exactly the positive scales `1,...,m`.
 The shifted finite range is empty at `m=0`. -/
@@ -65,12 +65,12 @@ theorem alignedDyadicCarlesonEnergy_eq_scaleZero_add_positive
     alignedDyadicPositiveScaleCarlesonEnergy
   rw [Finset.sum_range_succ']
 
-end GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+end GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 namespace TwoPointConjectureJunction
 
-open GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+open GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Positive-scale max-per-scale energy of one exact zero-padded two-point
 source. -/
@@ -235,7 +235,7 @@ theorem riemannHypothesis_of_mertensPositiveScaleCarleson
 end TwoPointConjectureJunction
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
-#print axioms GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.alignedDyadicCarlesonEnergy_eq_scaleZero_add_positive
+#print axioms GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal.alignedDyadicCarlesonEnergy_eq_scaleZero_add_positive
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointCarlesonEnergySum_eq_singleton_add_positive
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.subpolynomialMertensCarlesonEnergy_of_positiveScales
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensPositiveScaleCarleson

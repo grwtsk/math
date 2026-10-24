@@ -10,7 +10,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.DyadicGreenArithmeticFourierCoordinate
 
 open Filter Topology
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem arithmetic_coordinates_capture_green_energy
     {X : ℕ} (hX : 0 < X) :

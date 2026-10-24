@@ -45,7 +45,7 @@ NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- A scalar dyadic envelope is sublinear in the literal source scale.
 This is the form supplied by the classical PNT for the least theta envelope,
@@ -99,7 +99,7 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
       have hXone : (1 : ℝ) ≤ (dyadicScale j₀ : ℝ) := by
         exact_mod_cast
           (Nat.one_le_iff_ne_zero.mpr
-            (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j₀)))
+            (Nat.ne_of_gt (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j₀)))
       have hsqrt : 1 ≤ Real.sqrt (dyadicScale j₀ : ℝ) := by
         simpa using Real.sqrt_le_sqrt hXone
       have hE0 := hE j₀
@@ -112,7 +112,7 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
       let X : ℝ := (dyadicScale j : ℝ)
       have hX : 0 < X := by
         dsimp [X]
-        exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+        exact_mod_cast GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
       have hsmallj : E j ≤ δ * X := by
         exact hsmallStages j (by
           dsimp [j₀] at hj
@@ -211,7 +211,7 @@ theorem no_uniform_integerPsiResponse_of_sublinear_recurrence_and_jumps
   let X : ℝ := (dyadicScale j : ℝ)
   have hX : 0 < X := by
     dsimp [X]
-    exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+    exact_mod_cast GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
   have hEbound : E j ≤ M * Real.sqrt X := by
     simpa [X] using hMbound j hjM
   have hEsq : (E j)^2 ≤ M^2 * X := by
@@ -268,7 +268,7 @@ theorem integerPsiCapacity_to_envelopeQuadraticResponse
   refine ⟨j₀, ?_⟩
   intro j hj m hlow hup
   let X : ℕ := dyadicScale j
-  have hX : 0 < X := GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+  have hX : 0 < X := GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
   have hsq :
       (pinnedPrimeWeightedAmplitude X)^2 ≤
         (primeCoefficientL1Budget * E j)^2 :=

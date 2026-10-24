@@ -50,7 +50,7 @@ NO_GLOBAL_EXPLICIT_FORMULA_CLAIM / NO_RH_CLAIM.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Immutable source binding for the pinned Chebyshev declarations used by the
 psi source rule.  These strings retain provenance only; the exact identity and
@@ -103,7 +103,7 @@ theorem thetaError_eq_psiResponse_div_add_signedResidual
           (dyadicScale j : ℝ) +
         pinnedPrimeWeightPsiSignedResidual j v := by
   have hX : (dyadicScale j : ℝ) ≠ 0 := by
-    exact_mod_cast Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j)
+    exact_mod_cast Nat.ne_of_gt (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j)
   unfold pinnedPrimeWeightPsiResponse
     pinnedPrimeWeightPsiSignedResidual thetaError psiError
   field_simp [hX]
@@ -234,10 +234,10 @@ theorem pinnedPrimeWeightPsiSourceRule_signedResidual_stageEnvelope
   let Y : ℕ := dyadicScale (j + 1)
   have hX : 0 < X := by
     dsimp [X]
-    exact GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+    exact GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
   have hY : 0 < Y := by
     dsimp [Y]
-    exact GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos (j + 1)
+    exact GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos (j + 1)
   have hYeq : Y = 2 * X := by
     dsimp [X, Y]
     exact dyadicScale_succ_eq_two_mul j

@@ -14,7 +14,7 @@ This uniform prefix bound asserts no decay rate or pickup energy budget.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius
 
 def densityReciprocalPrefix (x : ℝ) : ℝ :=
@@ -97,4 +97,4 @@ theorem density_reciprocal_prefix_abs_le_mass (x : ℝ) :
       density_reciprocal_summable.sum_le_tsum _ (fun n _ => density_reciprocal_nonneg n)
     _ = ∑' n : ℕ, reciprocalSquare n := density_reciprocal_tsum
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

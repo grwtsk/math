@@ -52,7 +52,7 @@ SEVEN_EIGHTHS_SIGNED_OFFDIAGONAL_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- A sharp cyclic prefix indicator is pointwise nonnegative. -/
 theorem cyclicSharpPrefixIndicator_nonnegative

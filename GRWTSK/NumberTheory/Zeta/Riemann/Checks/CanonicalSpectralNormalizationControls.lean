@@ -12,7 +12,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.Checks
 open Filter Topology
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 
 /-- Radius normalization preserves finite-stage nonnegativity. -/
 theorem stage_zero_normalized_nonnegative :

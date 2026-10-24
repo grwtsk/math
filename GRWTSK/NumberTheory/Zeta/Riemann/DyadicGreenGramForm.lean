@@ -35,9 +35,9 @@ EXACT_FINITE_GREEN_GRAM_FORM_DEFINED.
 namespace GRWTSK.RiemannHypothesis
 
 open _root_.MeasureTheory Set
-open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
+open GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def greenPrimeFrameSum (X : ℕ) (t : ℝ) : ℝ :=
   ∑ n ∈ window X, coefficient n * feature (location X n) t

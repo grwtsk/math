@@ -3,7 +3,7 @@ import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Checks.Positive.Schwartz
 open scoped FourierTransform SchwartzMap
 open MeasureTheory
 open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments
-open GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.CompactGaussianWindow
 example :
     (1:ℝ)*(∫t : ℝ,(1+‖t‖)^0*‖(𝓕 (gaussianDyadicSchwartz 1 (by norm_num) 0)) t‖)≤
       (2:ℝ)^0*(coefficientMomentBound 0 0+coefficientMomentBound 0 0) :=

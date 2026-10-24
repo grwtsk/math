@@ -12,7 +12,7 @@ This finite unconditional arithmetic lemma does not pay a pickup budget.
 -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped BigOperators
 
 def densityMobiusReciprocalPrefix (x : ℝ) : ℝ :=
@@ -104,4 +104,4 @@ theorem density_mobius_reciprocal_prefix_abs_le_one {x : ℝ} (hx : 1 ≤ x) :
   · apply (le_of_mul_le_mul_left ?_ hx0)
     nlinarith
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

@@ -23,7 +23,7 @@ open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect
 open GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
-open GRWTSK.Analysis.Asymptotics.FinitePowerSum
+open GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
 /-- Weighted square budget for the first `n` Mertens-transform increments. -/
 def criticalMertensIncrementSquare (ε : ℝ) (n : ℕ) : ℝ :=

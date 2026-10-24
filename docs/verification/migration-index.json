@@ -12075,7 +12075,7 @@
     {
       "manifest_id": "finite-walsh-cylinder-628-v0.1",
       "migrated_sha256": "f4111a2381d98928756c1df751216b36263705b1607f61ccbd815ca710591ada",
-      "new_path": "docs/verification/Analysis/FiniteSum/WalshCylinder/finite-walsh-cylinder-628-v0.1.toml",
+      "new_path": "docs/verification/Analysis/FiniteSums/WalshCylinder/finite-walsh-cylinder-628-v0.1.toml",
       "old_path": "verification/finite-walsh-cylinder-628-v0.1.toml",
       "original_sha256": "f4111a2381d98928756c1df751216b36263705b1607f61ccbd815ca710591ada",
       "root_module": "GRWTSK.Analysis.FiniteSum.WalshCylinder",
@@ -12083,7 +12083,17 @@
       "version": "v0.1",
       "observed_content_sha256": "f4111a2381d98928756c1df751216b36263705b1607f61ccbd815ca710591ada",
       "original_digest_matches_observed_content": true,
-      "destination_repository": "grwtsk/math"
+      "destination_repository": "grwtsk/math",
+      "layout_bindings": [
+        {
+          "layout": "docs/verification/_unscoped/taxonomy-path-sync-v1.toml",
+          "from_path": "docs/verification/Analysis/FiniteSum/WalshCylinder/finite-walsh-cylinder-628-v0.1.toml",
+          "to_path": "docs/verification/Analysis/FiniteSums/WalshCylinder/finite-walsh-cylinder-628-v0.1.toml",
+          "previous_observed_sha256": "f4111a2381d98928756c1df751216b36263705b1607f61ccbd815ca710591ada",
+          "observed_content_sha256": "f4111a2381d98928756c1df751216b36263705b1607f61ccbd815ca710591ada",
+          "verification": "NOT_A_REPLAY_RECEIPT"
+        }
+      ]
     },
     {
       "manifest_id": "finite-zeta-center-core-v0.1",
@@ -15228,7 +15238,7 @@
     {
       "manifest_id": "liouville-walsh-source-635-v0.1",
       "migrated_sha256": "55b61e8ed99a809bd60b0b26261da6a4703b0e7c1e01aae2fa4d809fdbc4e630",
-      "new_path": "docs/verification/NumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder/liouville-walsh-source-635-v0.1.toml",
+      "new_path": "docs/verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder/liouville-walsh-source-635-v0.1.toml",
       "old_path": "verification/liouville-walsh-source-635-v0.1.toml",
       "original_sha256": "292554a8f0bdfd6721b3ede432bee5d0aa813d9f191b951d470b7d8c3b8ecdf9",
       "root_module": "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder",
@@ -15236,7 +15246,17 @@
       "version": "v0.1",
       "observed_content_sha256": "55b61e8ed99a809bd60b0b26261da6a4703b0e7c1e01aae2fa4d809fdbc4e630",
       "original_digest_matches_observed_content": false,
-      "destination_repository": "grwtsk/math"
+      "destination_repository": "grwtsk/math",
+      "layout_bindings": [
+        {
+          "layout": "docs/verification/_unscoped/taxonomy-path-sync-v1.toml",
+          "from_path": "docs/verification/NumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder/liouville-walsh-source-635-v0.1.toml",
+          "to_path": "docs/verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder/liouville-walsh-source-635-v0.1.toml",
+          "previous_observed_sha256": "55b61e8ed99a809bd60b0b26261da6a4703b0e7c1e01aae2fa4d809fdbc4e630",
+          "observed_content_sha256": "55b61e8ed99a809bd60b0b26261da6a4703b0e7c1e01aae2fa4d809fdbc4e630",
+          "verification": "NOT_A_REPLAY_RECEIPT"
+        }
+      ]
     },
     {
       "manifest_id": "local-jensen-count-core-v0.1",
@@ -19901,7 +19921,7 @@
     {
       "manifest_id": "rh-dyadic-log-absorption-538-v0.1",
       "migrated_sha256": "7727e7b028c215bd7aba669c4de96c5271f900eba1e0c320d937e155da93a8d6",
-      "new_path": "docs/verification/Analysis/Asymptotics/DyadicLogAbsorption/rh-dyadic-log-absorption-538-v0.1.toml",
+      "new_path": "docs/verification/Analysis/AsymptoticAnalysis/DyadicLogAbsorption/rh-dyadic-log-absorption-538-v0.1.toml",
       "old_path": "verification/rh-dyadic-log-absorption-538-v0.1.toml",
       "original_sha256": "7727e7b028c215bd7aba669c4de96c5271f900eba1e0c320d937e155da93a8d6",
       "root_module": "GRWTSK.Analysis.Asymptotics.DyadicLogAbsorption",
@@ -19909,7 +19929,17 @@
       "version": "v0.1",
       "observed_content_sha256": "7727e7b028c215bd7aba669c4de96c5271f900eba1e0c320d937e155da93a8d6",
       "original_digest_matches_observed_content": true,
-      "destination_repository": "grwtsk/math"
+      "destination_repository": "grwtsk/math",
+      "layout_bindings": [
+        {
+          "layout": "docs/verification/_unscoped/taxonomy-path-sync-v1.toml",
+          "from_path": "docs/verification/Analysis/Asymptotics/DyadicLogAbsorption/rh-dyadic-log-absorption-538-v0.1.toml",
+          "to_path": "docs/verification/Analysis/AsymptoticAnalysis/DyadicLogAbsorption/rh-dyadic-log-absorption-538-v0.1.toml",
+          "previous_observed_sha256": "7727e7b028c215bd7aba669c4de96c5271f900eba1e0c320d937e155da93a8d6",
+          "observed_content_sha256": "7727e7b028c215bd7aba669c4de96c5271f900eba1e0c320d937e155da93a8d6",
+          "verification": "NOT_A_REPLAY_RECEIPT"
+        }
+      ]
     },
     {
       "manifest_id": "rh-dyadic-maximal-mertens-two-point-energy-410-v0.1",
@@ -20282,7 +20312,7 @@
     {
       "manifest_id": "rh-dyadic-tree-maximal-437-v0.1",
       "migrated_sha256": "f108d6073c7012c189c44c6088740ae8e83fed89fb645b117af85fc1cc0d3815",
-      "new_path": "docs/verification/Analysis/FiniteSum/DyadicBlockSquareMaximal/rh-dyadic-tree-maximal-437-v0.1.toml",
+      "new_path": "docs/verification/Analysis/FiniteSums/DyadicBlockSquareMaximal/rh-dyadic-tree-maximal-437-v0.1.toml",
       "old_path": "verification/rh-dyadic-tree-maximal-437-v0.1.toml",
       "original_sha256": "f108d6073c7012c189c44c6088740ae8e83fed89fb645b117af85fc1cc0d3815",
       "root_module": "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal",
@@ -20290,7 +20320,17 @@
       "version": "v0.1",
       "observed_content_sha256": "f108d6073c7012c189c44c6088740ae8e83fed89fb645b117af85fc1cc0d3815",
       "original_digest_matches_observed_content": true,
-      "destination_repository": "grwtsk/math"
+      "destination_repository": "grwtsk/math",
+      "layout_bindings": [
+        {
+          "layout": "docs/verification/_unscoped/taxonomy-path-sync-v1.toml",
+          "from_path": "docs/verification/Analysis/FiniteSum/DyadicBlockSquareMaximal/rh-dyadic-tree-maximal-437-v0.1.toml",
+          "to_path": "docs/verification/Analysis/FiniteSums/DyadicBlockSquareMaximal/rh-dyadic-tree-maximal-437-v0.1.toml",
+          "previous_observed_sha256": "f108d6073c7012c189c44c6088740ae8e83fed89fb645b117af85fc1cc0d3815",
+          "observed_content_sha256": "f108d6073c7012c189c44c6088740ae8e83fed89fb645b117af85fc1cc0d3815",
+          "verification": "NOT_A_REPLAY_RECEIPT"
+        }
+      ]
     },
     {
       "manifest_id": "rh-dyadic-triangular-correlation-369-v0.1",

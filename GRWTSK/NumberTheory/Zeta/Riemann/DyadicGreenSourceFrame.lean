@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.MellinNormalizedGrowingCellPacking
-import GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -36,14 +36,14 @@ EXACT_DYADIC_GREEN_SOURCE_FRAME_DEFINED.
 namespace GRWTSK.RiemannHypothesis
 
 open _root_.MeasureTheory Set
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 open CanonicalZeroDivisor
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.CenteredReadout
-open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
-open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
+open GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.CenteredReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinReadout
 
 def centeredLogarithmAtom (t : ℝ) : ℝ :=
   logarithm t - (2 * Real.log 2 - 1)
@@ -123,7 +123,7 @@ theorem action_eq_greenSourceFrameReadout
     {X : ℕ} (hX : 0 < X)
     (φ : ComplexTest) :
     action X φ.value = greenSourceFrameReadout X φ := by
-  rw [GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.centered_ibp φ hX]
+  rw [GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout.centered_ibp φ hX]
   unfold greenSourceFrameReadout
   congr 1
   apply integral_congr_ae

@@ -34,7 +34,7 @@ GRADED_THETA_TO_SAME_ZERO_FREE_THRESHOLD_DEFINED.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def AllDyadicThetaAtThreshold (ρ : ℝ) : Prop :=
   ∀ η : ℝ, 0 < η →

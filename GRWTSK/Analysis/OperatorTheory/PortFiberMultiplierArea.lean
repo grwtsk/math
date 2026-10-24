@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.ComplexAnalysis.PortFiberAreaMean
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
 
 /-!
 # Isolated actual-area quotient evaluation and multiplier norming
@@ -14,8 +14,8 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierArea
 open Filter Topology MeasureTheory Metric Set
 open scoped ENNReal
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -23,9 +23,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle (CircleWindow)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle (CircleWindow)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
 
 noncomputable section
 
@@ -78,13 +78,13 @@ def AddedClaim : AddedIndex → Prop
         ‖completedRepresentation (MetricWeights.identity D) (areaMeasure D.X) hOpen f‖ = ‖f‖) ∧
       IsClosed (Set.range (completedRepresentation (MetricWeights.identity D) (areaMeasure D.X) hOpen))
   | .measurableBoundary =>
-      GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike =ᵐ[
-        areaMeasure GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk] 0 ∧
-      GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center = 1 ∧
+      GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike =ᵐ[
+        areaMeasure GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk] 0 ∧
+      GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center = 1 ∧
       ¬ ExtendsHolomorphically
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike
 
 theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
   cases i with
@@ -100,9 +100,9 @@ theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
       intro ι D hOpen hArea
       exact ⟨area_representation_norm hOpen hArea, area_representation_closed hOpen hArea⟩
   | measurableBoundary =>
-      exact ⟨GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike_ae_zero,
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike_center,
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike_not_holomorphic⟩
+      exact ⟨GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike_ae_zero,
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike_center,
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike_not_holomorphic⟩
 
 def portfolio : Portfolio AddedIndex AddedClaim where
   disposition i := .proved (addedClaim_proof i)

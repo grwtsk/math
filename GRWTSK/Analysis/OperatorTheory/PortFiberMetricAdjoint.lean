@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberGaugeTransport
-import GRWTSK.Analysis.Operator.HolomorphicLineAdjoint
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLineAdjoint
 
 /-!
 # Disjoint portfolio extension for compatible metrics and pointwise adjoints
@@ -17,9 +17,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
-open GRWTSK.Analysis.Operator.HolomorphicLinePort
-open GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
-open GRWTSK.Analysis.Operator.HolomorphicLineAdjoint
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLinePort
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineGaugePort
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineAdjoint
 
 noncomputable section
 

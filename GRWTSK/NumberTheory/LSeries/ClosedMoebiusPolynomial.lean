@@ -13,7 +13,7 @@ The positive closed cutoff is retained, including cutoff zero.
 These regularity reductions supply no arithmetic growth witness.
 -/
 namespace GRWTSK.NumberTheory.LSeries
-open GRWTSK.NumberTheory.ArithmeticFunctions
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius
 
 /-- The actual closed-cutoff series is a finite sum at every complex argument. -/

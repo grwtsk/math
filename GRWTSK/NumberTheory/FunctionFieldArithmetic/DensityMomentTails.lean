@@ -14,7 +14,7 @@ the closed head; the complementary strict infinite tail is fully paid.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 def densityClosedReciprocalHead (R : ℝ) : ℝ :=
   ∑' n : ℕ, if (n : ℝ) ≤ R then densityCorrectionReciprocal n else 0
@@ -79,4 +79,4 @@ theorem density_reciprocal_tail_bound {R : ℝ} (hR : 1 ≤ R) :
   (density_reciprocal_tail_le_half hR).trans
     (div_le_div_of_nonneg_right density_half_tsum_bound (Real.sqrt_nonneg R))
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

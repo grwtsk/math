@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.PrimeFilterEnergy
-import GRWTSK.NumberTheory.Prime.ReciprocalMass
+import GRWTSK.NumberTheory.Primes.ReciprocalMass
 
 /-! Source-specific prime/block reverberation remains an open premise.
 The exact induction and its polynomial/RH consumers do not assert that premise. -/

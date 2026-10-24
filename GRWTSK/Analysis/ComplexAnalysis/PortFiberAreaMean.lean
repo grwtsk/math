@@ -17,7 +17,7 @@ open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPor
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaMean
 
 noncomputable section

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.ReciprocalSquareTail
+import GRWTSK.Analysis.RealAnalysis.ReciprocalSquareTail
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 
 set_option autoImplicit false
@@ -20,7 +20,7 @@ namespace GRWTSK.RiemannHypothesis.RightHalfPlaneModulus
 
 open Filter
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Real.ReciprocalSquareTail
+open GRWTSK.Analysis.RealAnalysis.ReciprocalSquareTail
 
 noncomputable section
 

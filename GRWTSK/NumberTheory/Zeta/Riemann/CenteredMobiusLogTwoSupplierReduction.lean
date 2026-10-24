@@ -9,7 +9,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Endpoint prefix error is exactly the raw dyadic Mangoldt error. -/
 theorem prefixMangoldtError_two_mul_eq_raw

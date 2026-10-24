@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.FiniteIntervalSeparation
+import GRWTSK.Analysis.RealAnalysis.FiniteIntervalSeparation
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
 import Mathlib.Analysis.SpecificLimits.Basic
 
@@ -23,7 +23,7 @@ namespace GRWTSK.RiemannHypothesis.SeparatedContourHeights
 open Set Filter
 open scoped Topology BigOperators
 open CanonicalZeroDivisor
-open GRWTSK.Analysis.Real.FiniteIntervalSeparation
+open GRWTSK.Analysis.RealAnalysis.FiniteIntervalSeparation
 
 noncomputable section
 

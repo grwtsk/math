@@ -28,8 +28,8 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerAtoms
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization
 open GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort

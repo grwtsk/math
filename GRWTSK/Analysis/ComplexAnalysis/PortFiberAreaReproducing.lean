@@ -14,7 +14,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.PortFiberAreaReproducing
 open MeasureTheory
 open scoped ENNReal BigOperators
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -23,9 +23,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle (CircleWindow)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle (CircleWindow)
 
 noncomputable section
 

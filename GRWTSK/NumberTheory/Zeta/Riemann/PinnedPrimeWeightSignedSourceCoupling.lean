@@ -37,7 +37,7 @@ ACTUAL_ARITHMETIC_SOURCE_RULE_OPEN / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- One immutable signed cross-scale source law.  The strings bind the declared
 source and normalization, while `exactIdentity` is the mathematical content. -/
@@ -65,7 +65,7 @@ theorem target_le_response_add_residual
       |rule.response j v| / (dyadicScale j : ℝ) +
         (|rule.signedResidual j v| + 1) := by
   have hX : (0 : ℝ) < (dyadicScale j : ℝ) := by
-    exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+    exact_mod_cast GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
   calc
     |thetaError v| + 1 =
         |rule.response j v / (dyadicScale j : ℝ) +
@@ -95,7 +95,7 @@ theorem pointwise_to_amplitudeRequirement
     pinnedPrimeWeightAmplitudeRequirement
       (dyadicScale j) C v E := by
   have hX : (0 : ℝ) < (dyadicScale j : ℝ) := by
-    exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
+    exact_mod_cast GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j
   have htarget := rule.target_le_response_add_residual hv
   have hgap :
       (|thetaError v| + 1) - E ≤
@@ -129,7 +129,7 @@ theorem pointwise_to_bertrandRatioRequirement
   exact
     (pinnedPrimeWeightAmplitudeRequirement_iff_bertrandRatioRequirement
       (X := dyadicScale j) (C := C) (v := v) (E := E)
-      (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hC).1
+      (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hC).1
       (rule.pointwise_to_amplitudeRequirement
         hv hresponse hresidual)
 

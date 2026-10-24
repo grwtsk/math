@@ -24,7 +24,7 @@ namespace GRWTSK.RiemannHypothesis.ConcreteNewtonSecondSeed
 
 open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 /-- The midpoint of the inherited 18-term enclosure, NOT exact log(2). -/

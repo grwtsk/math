@@ -30,7 +30,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage
 open GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort
@@ -39,7 +39,7 @@ open GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.Polynomial.ConjugateQuartic
 
 /-- The signed spectral side of the selected complete square-tent explicit

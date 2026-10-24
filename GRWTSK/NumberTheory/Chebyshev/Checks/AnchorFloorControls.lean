@@ -14,7 +14,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.AnchorFloorControls
 
-open GRWTSK.Analysis.Real.ReciprocalSquareTail
+open GRWTSK.Analysis.RealAnalysis.ReciprocalSquareTail
 open GRWTSK.RiemannHypothesis.AnchoredLocalJensen
 open GRWTSK.RiemannHypothesis.LocalJensenCount
 

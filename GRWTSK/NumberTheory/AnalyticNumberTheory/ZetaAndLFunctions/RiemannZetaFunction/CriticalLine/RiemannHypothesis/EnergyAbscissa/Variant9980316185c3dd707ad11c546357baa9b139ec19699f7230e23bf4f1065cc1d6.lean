@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.AsymptoticAnalysis.PolynomialSubexponential
-import GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.ExponentialEnergy
 import GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound
 
 /-!

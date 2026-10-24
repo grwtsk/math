@@ -33,7 +33,7 @@ WEIGHTED_DFT_ARITHMETIC_COORDINATE_EXPOSED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Literal unit-circle phase at the unshifted normalized arithmetic position n/X. -/
 def greenDFTPhase (X : ℕ) (k : ℤ) (n : ℕ) : ℂ :=

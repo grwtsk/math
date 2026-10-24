@@ -23,7 +23,7 @@ namespace GRWTSK.RiemannHypothesis.ConcreteNewtonTerminalSeed
 open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
 open RationalPowerIntegerSeed
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 def encoding : Encoding where

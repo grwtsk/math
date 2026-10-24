@@ -2,7 +2,7 @@ import GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 import Lean
 
 open Lean Elab Command
-open GRWTSK.Analysis.Asymptotics.FinitePowerSum
+open GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
 example {β : ℝ} (hβ0 : 0 < β) (hβ1 : β ≤ 1) (N : ℕ) :
     (∑ k ∈ Finset.Icc 1 N, (k : ℝ) ^ (β - 1)) ≤
@@ -14,7 +14,7 @@ elab "#audit_finite_power_sum" : command => do
   let moduleNames := env.header.moduleNames
   unless env.header.moduleData.size == moduleNames.size do
     throwError "module ownership table is incomplete"
-  let owner := `GRWTSK.Analysis.Asymptotics.FinitePowerSum
+  let owner := `GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
   let declarations := (env.header.moduleData.toList.zip moduleNames.toList).flatMap
     fun (data, moduleName) =>
       if moduleName == owner then

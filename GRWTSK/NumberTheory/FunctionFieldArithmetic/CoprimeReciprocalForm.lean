@@ -12,7 +12,7 @@ The exact finite identity supplies no uniform arithmetic row bound or pickup bud
 -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 /-- The complete ordered coprime scalar form equals its signed squared rows.
 Weights are arbitrary real scalars; all closed inventory atoms are retained. -/
@@ -60,4 +60,4 @@ theorem weighted_coprime_divisor_quadratic (T : ℝ) (c : ℕ → ℝ) :
       intro m _
       rw [Finset.mul_sum]
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

@@ -13,8 +13,8 @@ open Filter
 open scoped Topology
 namespace GRWTSK.NumberTheory.Chebyshev.ClassicalRieszCoefficientLimits
 open ClassicalRieszNormalization GlobalRieszAffineNormalization
-open GRWTSK.Analysis.Real.ClassicalRieszCorrection
-open GRWTSK.Analysis.Real.RationalRieszPrimitive
+open GRWTSK.Analysis.RealAnalysis.ClassicalRieszCorrection
+open GRWTSK.Analysis.RealAnalysis.RationalRieszPrimitive
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 
 def finiteSourceSlope (T : ℝ) : ℂ :=

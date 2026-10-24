@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.DyadicPrimeOnlyCoordinateCriterionControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem prime_only_bound_is_exactly_RH_G01_supplier :
     AllDyadicPrimeOnlyFourierCoordinateBound ↔ AllDyadicEnergyBound :=

@@ -35,7 +35,7 @@ HIGHER_PRIME_POWER_FULL_FOURIER_ENERGY_CONTROLLED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Exact norm of the Fourier primitive denominator. -/
 theorem fourierFrequencyDenominator_norm (k : ℤ) :

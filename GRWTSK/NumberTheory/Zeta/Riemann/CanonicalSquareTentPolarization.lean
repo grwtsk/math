@@ -37,7 +37,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.Analysis.ErrorBounds
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound
+import GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound
 import GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringUpperTent
 
 set_option autoImplicit false
@@ -33,7 +33,7 @@ open GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
-open GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound
+open GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRationalTentEvaluation
 open CanonicalPositiveTuringPairedTent
@@ -67,12 +67,12 @@ theorem squareCorrectionAdmissible (n : ℕ) (hn : 2 ≤ n) :
 square trivial correction. The requested floor remains below it. -/
 theorem verified_square_correction_lower
     (N n correctionBits : ℕ) (prefixValue prefixError floor claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound.verify
+    (accepted : GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound.verify
       N (squareCenterQ n) (squareRadiusQ n)
       prefixValue prefixError correctionBits floor claimed = true)
     (enclosure : SquarePrefixEnclosure N n prefixValue prefixError) :
     (claimed : ℝ) ≤ squareTrivialCorrection n ∧ floor ≤ claimed := by
-  have hs := GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound.verify_sound
+  have hs := GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound.verify_sound
     N (squareCenterQ n) (squareRadiusQ n)
     prefixValue prefixError correctionBits floor claimed accepted enclosure
   constructor
@@ -82,7 +82,7 @@ theorem verified_square_correction_lower
 /-- The requested correction floor itself is sound. -/
 theorem verified_square_correction_floor
     (N n correctionBits : ℕ) (prefixValue prefixError floor claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound.verify
+    (accepted : GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound.verify
       N (squareCenterQ n) (squareRadiusQ n)
       prefixValue prefixError correctionBits floor claimed = true)
     (enclosure : SquarePrefixEnclosure N n prefixValue prefixError) :
@@ -107,7 +107,7 @@ theorem prime_in_square_of_verified_claimed_endpoints
     (N correctionBits : ℕ)
     (prefixValue prefixError correctionFloor correctionClaimed : ℚ)
     (prefixEnclosure : SquarePrefixEnclosure N n prefixValue prefixError)
-    (correctionAccepted : GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound.verify
+    (correctionAccepted : GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound.verify
       N (squareCenterQ n) (squareRadiusQ n)
       prefixValue prefixError correctionBits correctionFloor correctionClaimed = true)
     (margin : 0 < canonicalPrimeMargin n packet.certificate.height
@@ -141,7 +141,7 @@ theorem prime_in_square_of_verified_endpoint_thresholds
     (N correctionBits : ℕ)
     (prefixValue prefixError correctionFloor correctionClaimed : ℚ)
     (prefixEnclosure : SquarePrefixEnclosure N n prefixValue prefixError)
-    (correctionAccepted : GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound.verify
+    (correctionAccepted : GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionLowerBound.verify
       N (squareCenterQ n) (squareRadiusQ n)
       prefixValue prefixError correctionBits correctionFloor correctionClaimed = true)
     (margin : 0 < canonicalPrimeMargin n packet.certificate.height

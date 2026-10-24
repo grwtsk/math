@@ -33,9 +33,9 @@ namespace GRWTSK.RiemannHypothesis
 
 open Complex
 open CanonicalZeroDivisor
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 /-- Radius covering plus, minus and the a=0 center parameter. -/
 def safeDyadicQuarticRadius (z : ZeroPoint) : ℝ :=

@@ -35,7 +35,7 @@ UNIFORM_RATIO_BOUND_OPEN / NO_RH_CLAIM.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The repository's literal prime window is the difference between the two
 nested prime initial segments. -/

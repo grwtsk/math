@@ -14,7 +14,7 @@ source facts assert no infinite moment, cancellation rate or polynomial budget.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 /-- Multiplicativity belongs to the fixed density source. -/
@@ -90,4 +90,4 @@ theorem density_moebius_correction_pos {n : ℕ} (hn : n ≠ 0) :
     rw [density_moebius_correction_multiplicative.map_mul_of_coprime hab]
     exact mul_pos (ha' (by omega)) (hb' (by omega))
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

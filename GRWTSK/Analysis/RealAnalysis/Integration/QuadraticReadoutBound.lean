@@ -13,7 +13,7 @@ import GRWTSK.Analysis.Inequalities.ResidualEnclosure
 set_option autoImplicit false
 noncomputable section
 open MeasureTheory
-namespace GRWTSK.Analysis.Integral.QuadraticReadoutBound
+namespace GRWTSK.Analysis.RealAnalysis.Integration.QuadraticReadoutBound
 
 variable {α : Type*} [MeasurableSpace α] {μ : Measure α}
 
@@ -64,4 +64,4 @@ theorem reconstructed_readout_sq_le (f g : α → ℝ)
   dsimp [Q,D] at *
   nlinarith
 
-end GRWTSK.Analysis.Integral.QuadraticReadoutBound
+end GRWTSK.Analysis.RealAnalysis.Integration.QuadraticReadoutBound

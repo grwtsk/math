@@ -2,7 +2,7 @@
 -- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
 -- Original status, authors, copyright and AI attribution are retained in source.
 -- Source organization only; compilation and proof acceptance are deferred.
--- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Bitvec.Variant71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.Bitvec.Variant71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","mathematical_subject":"Computation.DataStructures","original_sha256":"71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Data/Bitvec/Defs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.BitVec.Variant71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.Bitvec.Variant71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","mathematical_subject":"Computation.DataStructures","original_sha256":"71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Data/Bitvec/Defs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
 /-
 Copyright (c) 2015 Joe Hendrix. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
@@ -14,7 +14,7 @@ import Init.Data.Format.Basic
 import Mathlib.Init.Data.Nat.Lemmas
 
 
-namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Bitvec.Variant71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.BitVec.Variant71fd25a4b9a20642cf8e6fe7323b3d487671dbf0b9be3d743a4451a618a194ac
 
 #align_import data.bitvec.core from "leanprover-community/mathlib"@"1126441d6bccf98c81214a0780c73d499f6721fe"
 /-!

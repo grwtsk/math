@@ -25,7 +25,7 @@ The identity supplies no radical-height estimate, bound uniform in `N`, infinite
 
 ## Source and verification scope
 
-[Typed triple reindexing and identity](../../../../../GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean), [finite pair moments](../../../../../GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean), and [reusable coprimality filter](../../../../../GRWTSK/NumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean). The canonical Möbius function and divisor cancellation are from the pinned Mathlib `NumberTheory/ArithmeticFunction/Moebius.lean`, by Aaron Anderson, Apache-2.0. This is a finite algebraic use of that theorem, with no originality claim for Möbius inversion.
+[Typed triple reindexing and identity](../../../../../GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean), [finite pair moments](../../../../../GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean), and [reusable coprimality filter](../../../../../GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/CoprimeDivisorFilter.lean). The canonical Möbius function and divisor cancellation are from the pinned Mathlib `NumberTheory/ArithmeticFunction/Moebius.lean`, by Aaron Anderson, Apache-2.0. This is a finite algebraic use of that theorem, with no originality claim for Möbius inversion.
 
 The selected replay binds exact sources and their local dependency closure, the pinned Lean compiler, native owned-declaration axiom audit, direct consumers and intended rejection controls. Cached dependency objects are reused; Mathlib sources are not rebuilt. Repository-wide layout and documentation checks are separate admission conditions, and historical failed receipts remain preserved.
 

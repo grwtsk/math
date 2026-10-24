@@ -1,4 +1,4 @@
-import GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ContinuedFractions.ScheduledDenominators
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-!

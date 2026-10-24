@@ -110,8 +110,8 @@ theorem reciprocalVariationDiagonal_le_harmonic (n : ℕ) :
   intro j _hj
   have habs : |moebiusReal (j + 1)| ≤ 1 := by
     simpa [GRWTSK.RiemannHypothesis.CCC.moebiusReal,
-      GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal] using
-        GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one (j + 1)
+      GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal] using
+        GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one (j + 1)
   have hsq : moebiusReal (j + 1) ^ 2 ≤ 1 := by
     rw [← sq_abs]
     nlinarith [abs_nonneg (moebiusReal (j + 1))]

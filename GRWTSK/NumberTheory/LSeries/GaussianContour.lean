@@ -20,7 +20,7 @@ The imported normalized Gaussian retains its original notices and source identit
 Mathematical direction: grwtsk contributors; formal implementation: OpenAI Codex.
 Released under Apache-2.0. No continuation to Re(s) <= 1 or zero-free/RH claim.
 -/
-import GRWTSK.Analysis.MellinTransform.NormalizedGaussian
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.NormalizedGaussian
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
@@ -28,7 +28,7 @@ namespace GRWTSK.NumberTheory.LSeries.GaussianContour
 noncomputable section
 open MeasureTheory Set Filter
 open scoped Topology
-open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.NormalizedGaussian
 
 noncomputable def gaussianZetaSummand (σ Z : ℝ) (n : ℕ) (v : ℝ) : ℂ :=
   (Z : ℂ)^((σ : ℂ)+v*Complex.I) * Complex.exp (((σ : ℂ)+v*Complex.I)^2) *
