@@ -12494,3 +12494,46 @@ remain outside math in Noe runtime
 `formalization/issue-burndown/20261024T090117.384628Z/`.
 The #1213 canonical-source checks still require actual native compilation and
 audit under managed admission; historical issue pins remain distinct tasks.
+
+
+## Noe neighborhood completion and prismatic research boundary — 2026-10-24
+
+Local attribution: grwtsk contributors. This records a direct human architectural
+request: Noe is the source search space and returns a reconstructible neighborhood
+with an explicit center for completion.
+
+**Primary research reference and scope.** Bhargav Bhatt and Peter Scholze,
+*Prisms and Prismatic Cohomology*, arXiv:1905.08229v4 (12 January 2022),
+https://arxiv.org/abs/1905.08229v4. Its prismatic site and comparison theories
+require the paper's prisms and p-adic geometric hypotheses. No prismatic theorem
+is imported or proved by this change. A reversible coordinate twist in the new
+finite model is not identified with a Tate twist. This reference is a requested
+research direction/analogy, not an assertion of historical influence.
+
+**Pure source candidate.** `GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/Serialization/ReconstructibleNeighborhood.lean`,
+Git blob `28538e66bf0e6da7241f405b0bddb95f7599449d`, SHA-256 `4cb63946646b4956845bf66e306158476808c5c95255a66194ac2afb75d3d5e5`.
+The source commit is the commit introducing this entry and source blob.
+Namespace `GRWTSK.TypeTheory.Serialization.ReconstructibleNeighborhood`: 
+`split_fill_original` proves list-span reconstruction; `decode_encoded_original`
+requires the explicitly supplied `LosslessCodec.roundTrip`;
+`interpretation_transport` requires literal, argument, addition, subtraction and
+multiplication homomorphism laws; `evalChecked_sound` and `evalChecked_complete`
+model signed-128-bit bounds at every evaluated node. `iterate_add` and
+`graph_iteration_successor` concern a finite recurrence with supplied predecessor
+lists. `iterate_twist` and `untwist_iteration` require both inverse laws.
+`d1_d0` is only the elementary integer-valued triangle coboundary law.
+
+**Verification and missing bridges.** Source proof candidates: **NOT_RUN**;
+fresh managed Lean replay and transitive axiom audits: **NOT_RUN**. The live
+managed replay owner is preserved. No runners, receipts or controller state are
+added to math. Noe owns the separately tested Python parser, Rust checked
+evaluator, Huffman/RS neighborhood custody and generated Lean source. Their
+compiler/parser/OS refinement, the map between runtime named arguments and
+`Fin arity`, BFS versus the separately defined integer predecessor recurrence,
+disk durability, continuous-time diffusion/convergence, and any performance or
+useful-signal maximization theorem remain separate obligations.
+
+A prismatic adapter remains **OPEN**: provide a prism/delta-ring, relevant
+completeness/geometric hypotheses, a coefficient complex, a prismatic comparison
+morphism and a proved relationship to traversal/completion invariants. Finite
+graph transport and similarly named existing modules do not supply these data.
