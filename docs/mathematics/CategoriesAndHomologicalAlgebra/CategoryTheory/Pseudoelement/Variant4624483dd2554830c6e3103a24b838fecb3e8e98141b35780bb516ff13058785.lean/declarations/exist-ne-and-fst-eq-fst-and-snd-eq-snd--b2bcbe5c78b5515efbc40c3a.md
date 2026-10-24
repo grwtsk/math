@@ -1,0 +1,105 @@
+# exist_ne_and_fst_eq_fst_and_snd_eq_snd
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "89d30969fc7f55f1af6e03e17eb4fd9fdde5d4fb",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 132,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/46/4624483dd2554830c6e3103a24b838fecb3e8e98141b35780bb516ff13058785.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:ec8335fb-c492-d5ef-5351-52e548f89179",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:2ac6effa-a383-7fa2-eea5-ce0d063ae9df",
+  "kind": "theorem",
+  "lexical_name": "exist_ne_and_fst_eq_fst_and_snd_eq_snd",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exist-ne-and-fst-eq-fst-and-snd-eq-snd--b2bcbe5c78b5515efbc40c3a",
+  "source": {
+    "blob": "89d30969fc7f55f1af6e03e17eb4fd9fdde5d4fb",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 143,
+    "line": 132,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pseudoelement/Variant4624483dd2554830c6e3103a24b838fecb3e8e98141b35780bb516ff13058785.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b2bcbe5c78b5515efbc40c3a9637e74fb2d5d00e9acad49eeb51acdd76b3b0f6",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Pseudoelement/Variant4624483dd2554830c6e3103a24b838fecb3e8e98141b35780bb516ff13058785.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2ac6effa-a383-7fa2-eea5-ce0d063ae9df`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 132–143.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem exist_ne_and_fst_eq_fst_and_snd_eq_snd :
+    ∃ x y, -- Porting note: removed type ascription `: of ℤ ℚ ⊞ of ℤ ℚ`, it gave an error about
+           -- `Type` not having zero morphisms. jmc: I don't understand where the error came from
+      x ≠ y ∧
+        (biprod.fst : of ℤ ℚ ⊞ of ℤ ℚ ⟶ _) x = (biprod.fst : of ℤ ℚ ⊞ of ℤ ℚ ⟶ _) y ∧
+          (biprod.snd : of ℤ ℚ ⊞ of ℤ ℚ ⟶ _) x = (biprod.snd : of ℤ ℚ ⊞ of ℤ ℚ ⟶ _) y :=
+  ⟨⟦x⟧, ⟦y⟧, mk'_x_ne_mk'_y, fst_mk'_x_eq_fst_mk'_y, snd_mk'_x_eq_snd_mk'_y⟩
+#align counterexample.exist_ne_and_fst_eq_fst_and_snd_eq_snd Counterexample.exist_ne_and_fst_eq_fst_and_snd_eq_snd
+
+end
+
+end Counterexample
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Pseudoelement/Variant4624483dd2554830c6e3103a24b838fecb3e8e98141b35780bb516ff13058785.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pseudoelement/Variant4624483dd2554830c6e3103a24b838fecb3e8e98141b35780bb516ff13058785.lean#L132).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `89d30969fc7f55f1af6e03e17eb4fd9fdde5d4fb` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

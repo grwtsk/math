@@ -1,0 +1,103 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:efff954fa67e469b2390288f72d6a8d09ef66f1e51a2a1eb97158060bc9ffa2f",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--55ab57687bbdd02faf0e7367",
+  "source": {
+    "blob": "e45bca924e16bcff1aabe10a862e78f81f4417e3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 213,
+    "line": 192,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitFunctor/Variant0e1f19270add07f1f91282b1a85c7d3bfe109294b37481574a4575ec4d2961e1.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:55ab57687bbdd02faf0e736717e0964742497f2b858bc2be856183603c9a6ad4",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitFunctor/Variant0e1f19270add07f1f91282b1a85c7d3bfe109294b37481574a4575ec4d2961e1.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:efff954fa67e469b2390288f72d6a8d09ef66f1e51a2a1eb97158060bc9ffa2f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 192–213.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+noncomputable instance : Module cR.pt (ModuleColimit hcR hcM) where
+  mul_smul r₁ r₂ m := by
+    obtain ⟨U, r₁, r₂, m, rfl, rfl, rfl⟩ := jointly_surjective₃ r₁ r₂ m
+    simp only [smul_eq, ← mul_smul, ← map_mul]
+  one_smul m := by
+    obtain ⟨U, m, rfl⟩ := ιM_jointly_surjective m
+    simpa using smul_eq hcR hcM 1 m
+  zero_smul m := by
+    obtain ⟨U, m, rfl⟩ := ιM_jointly_surjective m
+    simpa using smul_eq hcR hcM 0 m
+  smul_zero r := by
+    obtain ⟨U, r, rfl⟩ := ιR_jointly_surjective hcR r
+    simpa using smul_eq hcR hcM r 0
+  smul_add r m₁ m₂ := by
+    obtain ⟨U, r, m₁, m₂, rfl, rfl, rfl⟩ := jointly_surjective₃' r m₁ m₂
+    simp only [smul_eq, smul_add, ← map_add]
+  add_smul r₁ r₂ m := by
+    obtain ⟨U, r₁, r₂, m, rfl, rfl, rfl⟩ := jointly_surjective₃ r₁ r₂ m
+    simp only [smul_eq, ← map_add, add_smul]
+
+/-- Auxiliary definition for `homEquiv`. This is the universal property
+of `PresheafOfModules.ModuleColimit`, as an abelian group. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitFunctor/Variant0e1f19270add07f1f91282b1a85c7d3bfe109294b37481574a4575ec4d2961e1.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitFunctor/Variant0e1f19270add07f1f91282b1a85c7d3bfe109294b37481574a4575ec4d2961e1.lean#L192).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e45bca924e16bcff1aabe10a862e78f81f4417e3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

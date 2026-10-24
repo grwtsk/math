@@ -1,0 +1,182 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ArtinianObject.Variant91af0949a4c6d5274ff5c245332ff0198dd012206bf45bc5c1eb8c773c0e18cf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `32453e42f3d08eab6ddadd82b4d79943abfe0913` · SHA-256 `671f5413834f3749e55b9cb820e0d389e68f239cf5262845488c67682290ada8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsArtinianObject.Variant11a77190e0d4604844189749f876b56b661eb2a97f89465afe446e45b66830c7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"11a77190e0d4604844189749f876b56b661eb2a97f89465afe446e45b66830c7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.IsArtinianObject.Variant11a77190e0d4604844189749f876b56b661eb2a97f89465afe446e45b66830c7","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"11a77190e0d4604844189749f876b56b661eb2a97f89465afe446e45b66830c7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Subobject/ArtinianObject.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou, Kim Morrison
+-/
+module
+
+public import Mathlib.CategoryTheory.Subobject.Lattice
+public import Mathlib.CategoryTheory.ObjectProperty.ContainsZero
+public import Mathlib.CategoryTheory.ObjectProperty.EpiMono
+public import Mathlib.CategoryTheory.Limits.Constructions.EventuallyConstant
+public import Mathlib.Order.OrderIsoNat
+public import Mathlib.CategoryTheory.Simple
+
+/-!
+# Artinian objects
+
+We shall say that an object `X` in a category `C` is Artinian
+(type class `IsArtinianObject X`) if the ordered type `Subobject X`
+satisfies the descending chain condition. The corresponding property of
+objects `isArtinianObject : ObjectProperty C` is always
+closed under subobjects.
+
+## Future work
+
+* when `C` is an abelian category, relate `IsArtinianObject` in `C`
+  with `IsNoetherianObject` in `Cᵒᵖ`.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsArtinianObject.Variant11a77190e0d4604844189749f876b56b661eb2a97f89465afe446e45b66830c7
+
+@[expose] public section
+
+universe v u
+
+namespace CategoryTheory
+
+open Limits ZeroObject
+
+variable {C : Type u} [Category.{v} C]
+
+/-- An object `X` in a category `C` is Artinian if `Subobject X`
+satisfies the descending chain condition. This definition is a
+term in `ObjectProperty C` which allows to study the stability
+properties of Artinian objects. For statements regarding
+specific objects, it is advisable to use the type class
+`IsArtinianObject` instead. -/
+@[stacks 0FCF]
+def isArtinianObject : ObjectProperty C :=
+  fun X ↦ WellFoundedLT (Subobject X)
+
+variable (X Y : C)
+
+/-- An object `X` in a category `C` is Artinian if `Subobject X`
+satisfies the descending chain condition. -/
+@[stacks 0FCF]
+abbrev IsArtinianObject : Prop := isArtinianObject.Is X
+
+instance [IsArtinianObject X] : WellFoundedLT (Subobject X) :=
+  isArtinianObject.prop_of_is X
+
+lemma isArtinianObject_iff_antitone_chain_condition :
+    IsArtinianObject X ↔ ∀ (f : ℕ →o (Subobject X)ᵒᵈ),
+      ∃ (n : ℕ), ∀ (m : ℕ), n ≤ m → f n = f m := by
+  dsimp only [IsArtinianObject]
+  rw [ObjectProperty.is_iff, isArtinianObject,
+    ← wellFoundedGT_dual_iff,
+    wellFoundedGT_iff_monotone_chain_condition]
+
+variable {X} in
+lemma antitone_chain_condition_of_isArtinianObject
+    [IsArtinianObject X] (f : ℕ →o (Subobject X)ᵒᵈ) :
+    ∃ (n : ℕ), ∀ (m : ℕ), n ≤ m → f n = f m :=
+  (isArtinianObject_iff_antitone_chain_condition X).1 inferInstance f
+
+lemma isArtinianObject_iff_not_strictAnti :
+    IsArtinianObject X ↔ ∀ (f : ℕ → Subobject X), ¬ StrictAnti f := by
+  refine ⟨fun _ ↦ not_strictAnti_of_wellFoundedLT, fun h ↦ ?_⟩
+  dsimp only [IsArtinianObject]
+  rw [ObjectProperty.is_iff, isArtinianObject, WellFoundedLT, RelEmbedding.wellFounded_iff_isEmpty]
+  exact ⟨fun f ↦ h f.toFun (fun a b h ↦ f.map_rel_iff.2 h)⟩
+
+variable {X} in
+lemma not_strictAnti_of_isArtinianObject
+    [IsArtinianObject X] (f : ℕ → Subobject X) :
+    ¬ StrictAnti f :=
+  (isArtinianObject_iff_not_strictAnti X).1 inferInstance f
+
+set_option backward.isDefEq.respectTransparency.types false in
+set_option backward.defeqAttrib.useBackward true in
+lemma isArtinianObject_iff_isEventuallyConstant :
+    IsArtinianObject X ↔ ∀ (F : ℕ ⥤ (MonoOver X)ᵒᵖ),
+      IsFiltered.IsEventuallyConstant F := by
+  rw [isArtinianObject_iff_antitone_chain_condition]
+  refine ⟨fun h G ↦ ?_, fun h F ↦ ?_⟩
+  · obtain ⟨n, hn⟩ := h ⟨_, (G ⋙ (Subobject.equivMonoOver X).inverse.op ⋙
+      (orderDualEquivalence _).inverse).monotone⟩
+    refine ⟨n, fun m hm ↦ ?_⟩
+    rw [← isIso_unop_iff, MonoOver.isIso_iff_subobjectMk_eq]
+    exact (hn m (leOfHom hm)).symm
+  · obtain ⟨n, hn⟩ := h (F.monotone.functor ⋙ (orderDualEquivalence _).functor ⋙
+      Subobject.representative.op)
+    refine ⟨n, fun m hm ↦ Eq.symm ?_⟩
+    simpa [isIso_op_iff, isIso_iff_of_reflects_iso, PartialOrder.isIso_iff_eq]
+      using hn (homOfLE hm)
+
+variable {X} in
+lemma isEventuallyConstant_of_isArtinianObject [IsArtinianObject X]
+    (F : ℕ ⥤ (MonoOver X)ᵒᵖ) : IsFiltered.IsEventuallyConstant F :=
+  (isArtinianObject_iff_isEventuallyConstant X).1 inferInstance F
+
+variable {X Y}
+
+lemma isArtinianObject_of_isZero (hX : IsZero X) : IsArtinianObject X := by
+  rw [isArtinianObject_iff_antitone_chain_condition]
+  have := Subobject.subsingleton_of_isZero hX
+  intro f
+  exact ⟨0, fun m hm ↦ Subsingleton.elim _ _⟩
+
+instance [HasZeroObject C] : (isArtinianObject (C := C)).ContainsZero where
+  exists_zero := ⟨0, isZero_zero _, by
+    rw [← isArtinianObject.is_iff]
+    exact isArtinianObject_of_isZero (isZero_zero C)⟩
+
+lemma isArtinianObject_of_mono (i : X ⟶ Y) [Mono i] [IsArtinianObject Y] :
+    IsArtinianObject X := by
+  rw [isArtinianObject_iff_antitone_chain_condition]
+  intro f
+  obtain ⟨n, hn⟩ := antitone_chain_condition_of_isArtinianObject
+    ⟨fun n ↦ (Subobject.map i).obj (f n),
+      fun _ _ h ↦ (Subobject.map i).monotone (f.2 h)⟩
+  exact ⟨n, fun m hm ↦ Subobject.map_obj_injective i (hn m hm)⟩
+
+instance : (isArtinianObject (C := C)).IsClosedUnderSubobjects where
+  prop_of_mono f _ hY := by
+    rw [← isArtinianObject.is_iff] at hY ⊢
+    exact isArtinianObject_of_mono f
+
+open Subobject
+
+variable [HasZeroMorphisms C] [HasZeroObject C]
+
+theorem exists_simple_subobject {X : C} [IsArtinianObject X] (h : ¬IsZero X) :
+    ∃ Y : Subobject X, Simple (Y : C) := by
+  have : Nontrivial (Subobject X) := nontrivial_of_not_isZero h
+  obtain ⟨Y, s⟩ := (IsAtomic.eq_bot_or_exists_atom_le (⊤ : Subobject X)).resolve_left top_ne_bot
+  exact ⟨Y, (subobject_simple_iff_isAtom _).mpr s.1⟩
+
+/-- Choose an arbitrary simple subobject of a non-zero Artinian object. -/
+noncomputable def simpleSubobject {X : C} [IsArtinianObject X] (h : ¬IsZero X) : C :=
+  (exists_simple_subobject h).choose
+
+/-- The monomorphism from the arbitrary simple subobject of a non-zero Artinian object. -/
+noncomputable def simpleSubobjectArrow {X : C} [IsArtinianObject X] (h : ¬IsZero X) :
+    simpleSubobject h ⟶ X :=
+  (exists_simple_subobject h).choose.arrow
+
+set_option backward.isDefEq.respectTransparency false in
+instance mono_simpleSubobjectArrow {X : C} [IsArtinianObject X] (h : ¬IsZero X) :
+    Mono (simpleSubobjectArrow h) := by
+  dsimp only [simpleSubobjectArrow]
+  infer_instance
+
+instance {X : C} [IsArtinianObject X] (h : ¬IsZero X) : Simple (simpleSubobject h) :=
+  (exists_simple_subobject h).choose_spec
+
+end CategoryTheory
+```

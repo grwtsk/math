@@ -1,0 +1,114 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f5b0de156c80818a7f4e9c27afdfea109717c76d2873c0b290e4b21c417f87e7",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--8664a39705aa8be84ff43b2f",
+  "source": {
+    "blob": "94bea212340b01cdde85464312e04782578303b3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 185,
+    "line": 153,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant5de81d92c16fd64af68d3971e7280ba1ab831b159c3bd90a57fdd3b25c6a7f40.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:8664a39705aa8be84ff43b2f47b79c0bfb1eb9d6a0a646e241567fcdd48e665c",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant5de81d92c16fd64af68d3971e7280ba1ab831b159c3bd90a57fdd3b25c6a7f40.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f5b0de156c80818a7f4e9c27afdfea109717c76d2873c0b290e4b21c417f87e7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 153–185.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance : MonoidalCategory (F C) where
+  tensorObj X Y := FreeMonoidalCategory.tensor X Y
+  tensorHom := Quotient.map₂ Hom.tensor (fun _ _ hf _ _ hg ↦ HomEquiv.tensor hf hg)
+  whiskerLeft X _ _ f := Quot.map (fun f ↦ Hom.whiskerLeft X f) (fun f f' ↦ .whiskerLeft X f f') f
+  whiskerRight f Y := Quot.map (fun f ↦ Hom.whiskerRight f Y) (fun f f' ↦ .whiskerRight f f' Y) f
+  tensorHom_def := by
+    rintro W X Y Z ⟨f⟩ ⟨g⟩
+    exact Quotient.sound (tensorHom_def _ _)
+  tensor_id _ _ := Quot.sound tensor_id
+  tensor_comp := @fun X₁ Y₁ Z₁ X₂ Y₂ Z₂ => by
+    rintro ⟨f₁⟩ ⟨f₂⟩ ⟨g₁⟩ ⟨g₂⟩
+    exact Quotient.sound (tensor_comp _ _ _ _)
+  whiskerLeft_id X Y := Quot.sound (HomEquiv.whiskerLeft_id X Y)
+  id_whiskerRight X Y := Quot.sound (HomEquiv.id_whiskerRight X Y)
+  tensorUnit := FreeMonoidalCategory.unit
+  associator X Y Z :=
+    ⟨⟦Hom.α_hom X Y Z⟧, ⟦Hom.α_inv X Y Z⟧, Quotient.sound α_hom_inv, Quotient.sound α_inv_hom⟩
+  associator_naturality := @fun X₁ X₂ X₃ Y₁ Y₂ Y₃ => by
+    rintro ⟨f₁⟩ ⟨f₂⟩ ⟨f₃⟩
+    exact Quotient.sound (associator_naturality _ _ _)
+  leftUnitor X := ⟨⟦Hom.l_hom X⟧, ⟦Hom.l_inv X⟧, Quotient.sound l_hom_inv, Quotient.sound l_inv_hom⟩
+  leftUnitor_naturality := @fun X Y => by
+    rintro ⟨f⟩
+    exact Quotient.sound (l_naturality _)
+  rightUnitor X :=
+    ⟨⟦Hom.ρ_hom X⟧, ⟦Hom.ρ_inv X⟧, Quotient.sound ρ_hom_inv, Quotient.sound ρ_inv_hom⟩
+  rightUnitor_naturality := @fun X Y => by
+    rintro ⟨f⟩
+    exact Quotient.sound (ρ_naturality _)
+  pentagon _ _ _ _ := Quotient.sound pentagon
+  triangle _ _ := Quotient.sound triangle
+
+@[simp]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant5de81d92c16fd64af68d3971e7280ba1ab831b159c3bd90a57fdd3b25c6a7f40.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant5de81d92c16fd64af68d3971e7280ba1ab831b159c3bd90a57fdd3b25c6a7f40.lean#L153).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `94bea212340b01cdde85464312e04782578303b3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

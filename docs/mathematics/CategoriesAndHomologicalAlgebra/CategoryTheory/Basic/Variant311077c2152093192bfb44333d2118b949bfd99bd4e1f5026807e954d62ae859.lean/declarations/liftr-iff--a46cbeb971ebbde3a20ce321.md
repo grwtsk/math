@@ -1,0 +1,104 @@
+# liftR_iff
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:979b0d66-f263-0ab2-6fd2-dfadf78d3d1e",
+  "kind": "theorem",
+  "lexical_name": "liftR_iff",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "liftr-iff--a46cbeb971ebbde3a20ce321",
+  "source": {
+    "blob": "51f352a5d7c31d24e54ce38e116f54207fa71066",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 189,
+    "line": 167,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant311077c2152093192bfb44333d2118b949bfd99bd4e1f5026807e954d62ae859.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:a46cbeb971ebbde3a20ce3213247150ddc0f642e68615fe6e93bcf369967ca0f",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant311077c2152093192bfb44333d2118b949bfd99bd4e1f5026807e954d62ae859.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:979b0d66-f263-0ab2-6fd2-dfadf78d3d1e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 167–189.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem liftR_iff {α : TypeVec n} (r : ∀ ⦃i⦄, α i → α i → Prop) (x y : P α) :
+    LiftR @r x y ↔ ∃ a f₀ f₁, x = ⟨a, f₀⟩ ∧ y = ⟨a, f₁⟩ ∧ ∀ i j, r (f₀ i j) (f₁ i j) := by
+  constructor
+  · rintro ⟨u, xeq, yeq⟩
+    rcases h : u with ⟨a, f⟩
+    use a, fun i j => (f i j).val.fst, fun i j => (f i j).val.snd
+    constructor
+    · rw [← xeq, h]
+      rfl
+    constructor
+    · rw [← yeq, h]
+      rfl
+    intro i j
+    exact (f i j).property
+  rintro ⟨a, f₀, f₁, xeq, yeq, h⟩
+  use ⟨a, fun i j => ⟨(f₀ i j, f₁ i j), h i j⟩⟩
+  dsimp; constructor
+  · rw [xeq]
+    rfl
+  rw [yeq]; rfl
+
+open Set MvFunctor
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant311077c2152093192bfb44333d2118b949bfd99bd4e1f5026807e954d62ae859.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant311077c2152093192bfb44333d2118b949bfd99bd4e1f5026807e954d62ae859.lean#L167).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `51f352a5d7c31d24e54ce38e116f54207fa71066` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

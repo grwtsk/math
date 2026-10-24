@@ -1,0 +1,96 @@
+# inverse
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:298e4baef058aec3ab3f6c3c4325d02bc7d5053313c97ea478bbf7a9084bd9db",
+  "kind": "def",
+  "lexical_name": "inverse",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "inverse--a739d3a39599fbb65f4cd893",
+  "source": {
+    "blob": "a985b8ea2ac4dc017c6d6342e593c6e0c89cf28c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 50,
+    "line": 36,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variant5e9488d9de726244042e42fe43ffc6c659c924d1c758085ef53ff201b25081b6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a739d3a39599fbb65f4cd893e9d497b72ee859a3f105b9221aee3dcc6a47e266",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variant5e9488d9de726244042e42fe43ffc6c659c924d1c758085ef53ff201b25081b6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:298e4baef058aec3ab3f6c3c4325d02bc7d5053313c97ea478bbf7a9084bd9db`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 36–50.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+noncomputable def inverse : Grp.{u} ⥤ Grp_ (Type u) where
+  obj A :=
+    { MonTypeEquivalenceMon.inverse.obj ((forget₂ Grp MonCat).obj A) with
+      inv := ((·⁻¹) : A → A)
+      left_inv := by
+        ext x
+        exact inv_mul_cancel (G := A) x
+      right_inv := by
+        ext x
+        exact mul_inv_cancel (G := A) x }
+  map f := MonTypeEquivalenceMon.inverse.map ((forget₂ Grp MonCat).map f)
+
+end GrpTypeEquivalenceGrp
+
+/-- The category of group objects in `Type u` is equivalent to the category of groups. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variant5e9488d9de726244042e42fe43ffc6c659c924d1c758085ef53ff201b25081b6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variant5e9488d9de726244042e42fe43ffc6c659c924d1c758085ef53ff201b25081b6.lean#L36).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a985b8ea2ac4dc017c6d6342e593c6e0c89cf28c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

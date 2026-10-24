@@ -1,0 +1,118 @@
+# Verification target: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Limits.Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6eea41ba0294d30b1d45b8bdb67a627bb203e942",
+  "lexical_observation_count": 52,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/index.md) · [Full source](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6eea41ba0294d30b1d45b8bdb67a627bb203e942`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Category.MonCat.ForgetCorepresentable` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.Grp.ForgetCorepresentable` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.Grp.Preadditive` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.MonCat.Limits` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.ConcreteCategory.ReflectsIso` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.ConcreteCategory.Basic` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [groupObj](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/groupobj--7964d8e1e0b3b00229a2a171.md) | 35 | `declaration-track:7964d8e1e0b3b00229a2a1717bc0b3a1ad35a72bc461c90dbbdfbca739e63ce3` |
+| 2 | `def` | [sectionsSubgroup](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/sectionssubgroup--a2bcc960c5bda0d790c1e761.md) | 42 | `declaration-track:a2bcc960c5bda0d790c1e761ed40ba7a1aff236eb0125dc366cb8b619001cc60` |
+| 3 | `instance` | [sectionsGroup](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/sectionsgroup--009cab45a5be8d79495ffe28.md) | 51 | `declaration-track:009cab45a5be8d79495ffe2830b53600333916378068eb268a3e4556f56d0d5a` |
+| 4 | `def` | [sectionsπMonoidHom](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/sections-monoidhom--3ac48246c6c55a5f00e1f7cb.md) | 56 | `declaration-track:3ac48246c6c55a5f00e1f7cbff5215be44e3d329fcd1a217fe28ec74b62014f7` |
+| 5 | `instance` | [limitGroup](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/limitgroup--a10cc4259abe003ca9f0a0fa.md) | 66 | `declaration-track:a10cc4259abe003ca9f0a0faaf6cd14c8b8b1fa7b09cff87dd1e83b88d3ec8ec` |
+| 6 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/instance--086653099aa71cfe65fb08fe.md) | 71 | `declaration-track:086653099aa71cfe65fb08fe57aac9d9cbf6e5f80ab7067ba655327b76c6322e` |
+| 7 | `instance` | [Forget₂.createsLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimit--082df63d6e0e01e42f915ba1.md) | 82 | `declaration-track:082df63d6e0e01e42f915ba1cc6ed89fad223dd8af08f0781dca865205ada002` |
+| 8 | `def` | [limitCone](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/limitcone--7a3f6a835f0b2511ce333286.md) | 111 | `declaration-track:7a3f6a835f0b2511ce3332868ba0549110507eac2f5b149bfb222f382a401412` |
+| 9 | `def` | [limitConeIsLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/limitconeislimit--bcbf0fbcba64e734df636c9c.md) | 119 | `declaration-track:bcbf0fbcba64e734df636c9c90304d9c97bfd760994c6c685d72b573447e6964` |
+| 10 | `instance` | [hasLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimit--369cd99e0d8d478019880914.md) | 124 | `declaration-track:369cd99e0d8d47801988091474c05b4870930b1fab1a08ffdcb952e8ac1cbf96` |
+| 11 | `lemma` | [hasLimit_iff_small_sections](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimit-iff-small-sections--89adbb4259ae96618d0c69ad.md) | 136 | `result-track:89adbb4259ae96618d0c69ad4b358dcbf597ad3a03e73fa81992c13069f39751` |
+| 12 | `instance` | [hasLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimitsofshape--86c284110163b51d9154e14c.md) | 145 | `declaration-track:86c284110163b51d9154e14c4a0af0b25229e3901efc3b87e508d7581927ad86` |
+| 13 | `instance` | [hasLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimitsofsize--374c6e431a47a7f2a9adea8d.md) | 151 | `declaration-track:374c6e431a47a7f2a9adea8d52d60423a774d5fed5df7798a677d5cb8a017f44` |
+| 14 | `instance` | [hasLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimits--fc91e6b28a0c98193947d90d.md) | 155 | `declaration-track:fc91e6b28a0c98193947d90d42370c09e190879d6b0d36cf12eb1cbafd0e5f45` |
+| 15 | `instance` | [forget₂Mon_preservesLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-mon-preserveslimitsofsize--7414a8ee4bdb7a0eebd18483.md) | 168 | `declaration-track:7414a8ee4bdb7a0eebd18483d3228359515e437b3dc98f22a1dcedcd4c0a79e7` |
+| 16 | `instance` | [forget₂Mon_preservesLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-mon-preserveslimits--428ca84434277e19706c67fa.md) | 173 | `declaration-track:428ca84434277e19706c67fafceb1e64a1eb1de433abdf3238fae0a2bf78d432` |
+| 17 | `instance` | [forget_preservesLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-preserveslimitsofshape--a68294e01e9d67a51f7edefa.md) | 180 | `declaration-track:a68294e01e9d67a51f7edefa170421196bd5335fbe929039be082c1b6680c736` |
+| 18 | `instance` | [forget_preservesLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-preserveslimitsofsize--f13a4d0dc5ba4fff3926e069.md) | 193 | `declaration-track:f13a4d0dc5ba4fff3926e06987632484beda295cd8f876656deeca791336fd3f` |
+| 19 | `instance` | [forget_preservesLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-preserveslimits--a4b83e76796df5c67eece737.md) | 197 | `declaration-track:a4b83e76796df5c67eece737adb82955295972306f887d5a07934e17f121f5a7` |
+| 20 | `instance` | [forget_createsLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimit--b346c7f4fb8d53925f4735f6.md) | 201 | `declaration-track:b346c7f4fb8d53925f4735f6aba714bdebc29eb91ccc4cabe8804f63f3bb0ef1` |
+| 21 | `instance` | [forget_createsLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimitsofshape--a5e0fc835bc487bc732692ad.md) | 207 | `declaration-track:a5e0fc835bc487bc732692adc9daa99c3bee0946775f51df406fbcef89e5993a` |
+| 22 | `instance` | [forget_createsLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimitsofsize--09b699474981baec675c4bfb.md) | 216 | `declaration-track:09b699474981baec675c4bfbb28b3317533adfba2482288c3a3b7abbb388aecf` |
+| 23 | `instance` | [commGroupObj](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/commgroupobj--bf33914db87b8e07eb126439.md) | 226 | `declaration-track:bf33914db87b8e07eb1264396bdb78d15ca093cec08641f5d7c3d3ab170427eb` |
+| 24 | `instance` | [limitCommGroup](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/limitcommgroup--62054e8a5ffac53dd8605a1c.md) | 230 | `declaration-track:62054e8a5ffac53dd8605a1cef6852026e611487e7bb0c0389a6448c35f14b6b` |
+| 25 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/instance--608d20fe36a1a6637dae7c94.md) | 239 | `declaration-track:608d20fe36a1a6637dae7c94dc6c11a4f552b46c315ad7a32b137c55e8d494da` |
+| 26 | `instance` | [Forget₂.createsLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimit--33f286cbff5ee9bd3e786669.md) | 251 | `declaration-track:33f286cbff5ee9bd3e78666968e2b1cabd989087e7fcf7f5e0a4bbefd5144f51` |
+| 27 | `def` | [limitCone](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/limitcone--443d0e87b03f70d3983db40b.md) | 283 | `declaration-track:443d0e87b03f70d3983db40bc454a855aea74f7e1f824e5386ae045e0c20b948` |
+| 28 | `def` | [limitConeIsLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/limitconeislimit--0382e1f844463e4e605114a2.md) | 294 | `declaration-track:0382e1f844463e4e605114a2fe8b332240e418cec727692a24e1aee2bcca5fc6` |
+| 29 | `instance` | [hasLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimit--450888bead69eee05d0fa659.md) | 299 | `declaration-track:450888bead69eee05d0fa6592bf4b1aa6177dfed34a7e7ba325d7754589a8805` |
+| 30 | `lemma` | [hasLimit_iff_small_sections](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimit-iff-small-sections--19c252d8562ed25635fdc8e9.md) | 311 | `result-track:19c252d8562ed25635fdc8e9273b8b60e77ee719e2a53a7b4f4f4d8ce82cd1f2` |
+| 31 | `instance` | [hasLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimitsofshape--196fd7766dc93765b4bcdc36.md) | 320 | `declaration-track:196fd7766dc93765b4bcdc3633d2095eb43d6c0ba0f4749c31c295991047a610` |
+| 32 | `instance` | [hasLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimitsofsize--f76d41695cce78216bf5b5bf.md) | 326 | `declaration-track:f76d41695cce78216bf5b5bf30ec63ef8a725fb55e706982bb9e8fa71a3722a6` |
+| 33 | `instance` | [hasLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/haslimits--f0f88f63810d736196bb810c.md) | 330 | `declaration-track:f0f88f63810d736196bb810c73372fc9cccf326f96de84956b97c8901828c6b0` |
+| 34 | `instance` | [forget₂Group_preservesLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-group-preserveslimit--b2769a42b8edc222cfcadd46.md) | 334 | `declaration-track:b2769a42b8edc222cfcadd46b92c4e40861bf2e6f0943ebf1c90d8dc0cebbd54` |
+| 35 | `instance` | [forget₂Group_preservesLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-group-preserveslimitsofshape--b8a492d43d1c08adbbcc6b42.md) | 345 | `declaration-track:b8a492d43d1c08adbbcc6b427f71c59e5a0c1a7f0bb820099b2bc078ccea053c` |
+| 36 | `instance` | [forget₂Group_preservesLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-group-preserveslimitsofsize--635d239606824894faf49720.md) | 357 | `declaration-track:635d239606824894faf49720e6a4109891dbceacac0c1c46886c9b89f698860e` |
+| 37 | `instance` | [forget₂Group_preservesLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-group-preserveslimits--0f02b329a2a072387dc255be.md) | 361 | `declaration-track:0f02b329a2a072387dc255beedb1db4df2cca4a7da6ecefced1042072fd42834` |
+| 38 | `def` | [forget₂CommMon_preservesLimitsAux](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-commmon-preserveslimitsaux--52345deaa9d0f1e7f314f616.md) | 369 | `declaration-track:52345deaa9d0f1e7f314f616e0c7e56c1133fb8b86ca4b27cff87a281fd5cb1e` |
+| 39 | `instance` | [forget₂CommMon_preservesLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-commmon-preserveslimitsofshape--e0de11498e73aebb74da70e4.md) | 381 | `declaration-track:e0de11498e73aebb74da70e495be54c73d23643da0ba209e899bd8bcc890943e` |
+| 40 | `instance` | [forget₂CommMon_preservesLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-commmon-preserveslimitsofsize--403461165c7d726e794afc5c.md) | 394 | `declaration-track:403461165c7d726e794afc5cf930097b345360f5b03d8d0c414519544244ad7b` |
+| 41 | `instance` | [forget_preservesLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-preserveslimitsofshape--c5a1c9594c55699128c6de1f.md) | 402 | `declaration-track:c5a1c9594c55699128c6de1f8edaa889878bfd596236207f3721303896acfd09` |
+| 42 | `instance` | [forget_preservesLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-preserveslimitsofsize--99b10b0a891fa3381529a1be.md) | 414 | `declaration-track:99b10b0a891fa3381529a1bedbf4ce95b8a7eb30dfeae4eab398cc5fed49f732` |
+| 43 | `instance` | [_root_.AddCommGrp.forget_preservesLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/root-addcommgrp-forget-preserveslimits--5160002a1c25e923fad285f2.md) | 417 | `declaration-track:5160002a1c25e923fad285f22cf95ba529470a2a3df1ed388840b39fb72e6572` |
+| 44 | `instance` | [forget_preservesLimits](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-preserveslimits--8d316fc80de28c11344c0057.md) | 422 | `declaration-track:8d316fc80de28c11344c005741141007cb8c34e5f8f0dc167a7fb55245a6accd` |
+| 45 | `instance` | [forget_createsLimit](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimit--f9fbe47cc03cfc0121cc0477.md) | 426 | `declaration-track:f9fbe47cc03cfc0121cc0477a7a21f51f24947ff6c63d1461a945e34616b33d5` |
+| 46 | `instance` | [forget_createsLimitsOfShape](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimitsofshape--a8f2cbb537771e77d295d7b5.md) | 432 | `declaration-track:a8f2cbb537771e77d295d7b5cd8d63f02a1ee8369116341ebf157e20c4442eb2` |
+| 47 | `instance` | [forget_createsLimitsOfSize](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/forget-createslimitsofsize--e6512e729734972fe075b2ed.md) | 441 | `declaration-track:e6512e729734972fe075b2ed866b2841da431517ac8ae5eb51b2a19752441526` |
+| 48 | `example` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/example--2ee3d783f7e4da033d0c73c8.md) | 445 | `declaration-track:2ee3d783f7e4da033d0c73c8ab9448cbd698dba95b305c14bcfd2407b4556588` |
+| 49 | `def` | [kernelIsoKer](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/kernelisoker--37f7b9ba09dce851d72c9dbb.md) | 454 | `declaration-track:37f7b9ba09dce851d72c9dbb7fdda39bec3caaa4ab83cd37c9dcfa876d701f73` |
+| 50 | `theorem` | [kernelIsoKer_hom_comp_subtype](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/kernelisoker-hom-comp-subtype--e0838d441d7e2a6a3d371032.md) | 478 | `result-track:e0838d441d7e2a6a3d371032cf7ecf797ef7c71a9b63c5903d68bc6206763fc1` |
+| 51 | `theorem` | [kernelIsoKer_inv_comp_ι](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/kernelisoker-inv-comp--60846d41314387990b2c4038.md) | 482 | `result-track:60846d41314387990b2c40388a0a5915c504c3218aa945edef56d3c1aefcba29` |
+| 52 | `def` | [kernelIsoKerOver](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant6daeafa0c7991778b816a2bfa4e136ea6099c1e68b1ffac8bf35685f432f91c1.lean/declarations/kernelisokerover--a2fead3adce5ebe399879ffc.md) | 490 | `declaration-track:a2fead3adce5ebe399879ffc4afd13c589c92f4973b63ca836b7915e05ffc530` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

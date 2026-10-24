@@ -1,0 +1,196 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Projective.Variant7c23686175143cb12991102ca06bc501263b51c7891458258cb674d04cb0c22b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `590ad87dde755ae335bda07388b0a88a5aa102c9` · SHA-256 `47bd96bd05764812dfa84c393bff9c0333ba523b984b28b7fffa1a9b43f6513d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ExactDF.Variant1dfcb7bf714bf51f6670d7a8de62b0bbe2f6aa0f63113ef984a2170d6f48e95f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1dfcb7bf714bf51f6670d7a8de62b0bbe2f6aa0f63113ef984a2170d6f48e95f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.ExactDF.Variant1dfcb7bf714bf51f6670d7a8de62b0bbe2f6aa0f63113ef984a2170d6f48e95f","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"1dfcb7bf714bf51f6670d7a8de62b0bbe2f6aa0f63113ef984a2170d6f48e95f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/CategoryTheory/Abelian/Projective.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel, Scott Morrison, Jakob von Raumer
+-/
+import Mathlib.Algebra.Homology.QuasiIso
+import Mathlib.CategoryTheory.Preadditive.ProjectiveResolution
+import Mathlib.CategoryTheory.Preadditive.Yoneda.Limits
+import Mathlib.CategoryTheory.Preadditive.Yoneda.Projective
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ExactDF.Variant1dfcb7bf714bf51f6670d7a8de62b0bbe2f6aa0f63113ef984a2170d6f48e95f
+
+#align_import category_theory.abelian.projective from "leanprover-community/mathlib"@"f0c8bf9245297a541f468be517f1bde6195105e9"
+
+/-!
+# Abelian categories with enough projectives have projective resolutions
+
+When `C` is abelian `Projective.d f` and `f` are exact.
+Hence, starting from an epimorphism `P ⟶ X`, where `P` is projective,
+we can apply `Projective.d` repeatedly to obtain a projective resolution of `X`.
+-/
+
+
+noncomputable section
+
+open CategoryTheory CategoryTheory.Limits Opposite
+
+universe v u v' u'
+
+namespace CategoryTheory
+
+open CategoryTheory.Projective
+
+variable {C : Type u} [Category.{v} C] [Abelian C]
+
+/-- When `C` is abelian, `Projective.d f` and `f` are exact. -/
+theorem exact_d_f [EnoughProjectives C] {X Y : C} (f : X ⟶ Y) : Exact (d f) f :=
+  (Abelian.exact_iff _ _).2 <|
+    ⟨by simp, zero_of_epi_comp (π _) <| by rw [← Category.assoc, cokernel.condition]⟩
+#align category_theory.exact_d_f CategoryTheory.exact_d_f
+
+/-- The preadditive Co-Yoneda functor on `P` preserves colimits if `P` is projective. -/
+def preservesFiniteColimitsPreadditiveCoyonedaObjOfProjective (P : C) [hP : Projective P] :
+    PreservesFiniteColimits (preadditiveCoyonedaObj (op P)) := by
+  haveI := (projective_iff_preservesEpimorphisms_preadditiveCoyoneda_obj' P).mp hP
+  -- porting note: this next instance wasn't necessary in Lean 3
+  haveI := @Functor.preservesEpimorphisms_of_preserves_of_reflects _ _ _ _ _ _ _ _ this _
+  apply Functor.preservesFiniteColimitsOfPreservesEpisAndKernels
+#align category_theory.preserves_finite_colimits_preadditive_coyoneda_obj_of_projective CategoryTheory.preservesFiniteColimitsPreadditiveCoyonedaObjOfProjective
+
+/-- An object is projective if its preadditive Co-Yoneda functor preserves finite colimits. -/
+theorem projective_of_preservesFiniteColimits_preadditiveCoyonedaObj (P : C)
+    [hP : PreservesFiniteColimits (preadditiveCoyonedaObj (op P))] : Projective P := by
+  rw [projective_iff_preservesEpimorphisms_preadditiveCoyoneda_obj']
+  -- porting note: this next line wasn't necessary in Lean 3
+  dsimp only [preadditiveCoyoneda]
+  infer_instance
+#align category_theory.projective_of_preserves_finite_colimits_preadditive_coyoneda_obj CategoryTheory.projective_of_preservesFiniteColimits_preadditiveCoyonedaObj
+
+namespace ProjectiveResolution
+
+/-!
+Our goal is to define `ProjectiveResolution.of Z : ProjectiveResolution Z`.
+The `0`-th object in this resolution will just be `Projective.over Z`,
+i.e. an arbitrarily chosen projective object with a map to `Z`.
+After that, we build the `n+1`-st object as `Projective.syzygies`
+applied to the previously constructed morphism,
+and the map to the `n`-th object as `Projective.d`.
+-/
+
+
+variable [EnoughProjectives C]
+
+-- Porting note: compilation of CategoryTheory.ProjectiveResolution.ofComplex took 4.95s
+-- (was much faster in lean 3)
+/-- Auxiliary definition for `ProjectiveResolution.of`. -/
+@[simps!]
+def ofComplex (Z : C) : ChainComplex C ℕ :=
+  ChainComplex.mk' (Projective.over Z) (Projective.syzygies (Projective.π Z))
+    (Projective.d (Projective.π Z)) fun ⟨_, _, f⟩ =>
+    ⟨Projective.syzygies f, Projective.d f, (exact_d_f f).w⟩
+set_option linter.uppercaseLean3 false in
+#align category_theory.ProjectiveResolution.of_complex CategoryTheory.ProjectiveResolution.ofComplex
+
+/- Porting note:
+
+The declarations below are very slow.
+They could be given better proofs, which would hopefully also be efficient,
+by giving better simp lemmas for `ofComplex`.
+The current lemmas generated by `@[simps]` are terrible.
+
+As an example, we would like to be able to say:
+
+```
+lemma ofComplex_d_shape (Z : C) {i j : ℕ} (w : i = j + 1) :
+    (ofComplex Z).d (i + 1) (j + 1) = Projective.d ((ofComplex Z).d i j) := by
+  sorry
+```
+
+but sadly this doesn't typecheck.
+Even a version with appropriate `eqToHom`s on the RHS would be helpful.
+(We might even want a lemma describing `(ofComplex Z).d i j` on the assumptions
+`i = k + 2` and `j = k + 1` for some `k`.)
+
+It may even be possible to adjust `ChainComplex.mk` and `ChainComplex.mk'`
+to give better definitional equalities.
+See the notes where they are defined asking if there should be further lemmas
+describing the inductive steps. The problems apparent here clearly indicate that there should be!
+-/
+
+-- Porting note: the π in `of` was very, very slow. To assist,
+-- implicit arguments were filled in and this particular proof was broken
+-- out into a separate result
+theorem ofComplex_sq_10_comm (Z : C) :
+    0 ≫ HomologicalComplex.d ((ChainComplex.single₀ C).obj Z) 1 0 =
+    HomologicalComplex.d (ofComplex Z) 1 0 ≫ Projective.π Z := by
+  simp only [ofComplex_X, ChainComplex.single₀_obj_X_0, ChainComplex.single₀_obj_X_succ,
+    ComplexShape.down_Rel, not_true, ChainComplex.single₀_obj_X_d, comp_zero, ofComplex_d,
+    eqToHom_refl, Category.id_comp, dite_eq_ite, ite_true]
+  exact (exact_d_f (Projective.π Z)).w.symm
+
+-- Porting note: the `exact` in `of` was very, very slow. To assist,
+-- the whole proof was broken out into a separate result
+theorem exact_ofComplex (Z : C) (n : ℕ) :
+    Exact (HomologicalComplex.d (ofComplex Z) (n + 2) (n + 1))
+    (HomologicalComplex.d (ofComplex Z) (n + 1) n) :=
+  match n with
+-- Porting note: used to be simp; apply exact_d_f on both branches
+    | 0 => by simp; apply exact_d_f
+    | m+1 => by
+      simp only [ofComplex_X, ComplexShape.down_Rel, ofComplex_d, eqToHom_refl,
+        Category.id_comp, dite_eq_ite, not_true, ite_true]
+      -- Porting note: this is probably required now due to
+      -- https://github.com/leanprover/lean4/pull/2146
+      erw [if_pos (c := m + 1 + 1 + 1 = m + 2 + 1) rfl]
+      apply exact_d_f
+
+/-- In any abelian category with enough projectives,
+`ProjectiveResolution.of Z` constructs a projective resolution of the object `Z`.
+-/
+irreducible_def of (Z : C) : ProjectiveResolution Z :=
+  { complex := ofComplex Z
+    π := ChainComplex.mkHom (ofComplex Z) ((ChainComplex.single₀ C).obj Z) (Projective.π Z) 0
+           (ofComplex_sq_10_comm Z) (fun n _ ↦ ⟨0, by
+           -- Porting note: broken ext
+            apply HasZeroObject.to_zero_ext ⟩)
+    projective := by rintro (_ | _ | _ | n) <;> apply Projective.projective_over
+    exact₀ := by simpa using exact_d_f (Projective.π Z)
+    exact := exact_ofComplex Z
+    epi := Projective.π_epi Z }
+set_option linter.uppercaseLean3 false in
+#align category_theory.ProjectiveResolution.of CategoryTheory.ProjectiveResolution.of
+
+instance (priority := 100) (Z : C) : HasProjectiveResolution Z where out := ⟨of Z⟩
+
+instance (priority := 100) : HasProjectiveResolutions C where out Z := by infer_instance
+
+end ProjectiveResolution
+
+end CategoryTheory
+
+namespace HomologicalComplex.Hom
+
+variable {C : Type u} [Category.{v} C] [Abelian C]
+
+/-- If `X` is a chain complex of projective objects and we have a quasi-isomorphism `f : X ⟶ Y[0]`,
+then `X` is a projective resolution of `Y.` -/
+def toSingle₀ProjectiveResolution {X : ChainComplex C ℕ} {Y : C}
+    -- porting note: autoporter incorrectly went for `X.pt` at the end there
+    (f : X ⟶ (ChainComplex.single₀ C).obj Y) [QuasiIso f] (H : ∀ n, Projective (X.X n)) :
+    ProjectiveResolution Y where
+  complex := X
+  π := f
+  projective := H
+  -- porting note: Lean 3 used dot notation `f.to_single₀_exact_d_f_at_zero` etc
+  exact₀ := HomologicalComplex.Hom.to_single₀_exact_d_f_at_zero f
+  exact := HomologicalComplex.Hom.to_single₀_exact_at_succ f
+  epi := HomologicalComplex.Hom.to_single₀_epi_at_zero f
+set_option linter.uppercaseLean3 false in
+#align homological_complex.hom.to_single₀_ProjectiveResolution HomologicalComplex.Hom.toSingle₀ProjectiveResolution
+
+end HomologicalComplex.Hom
+````

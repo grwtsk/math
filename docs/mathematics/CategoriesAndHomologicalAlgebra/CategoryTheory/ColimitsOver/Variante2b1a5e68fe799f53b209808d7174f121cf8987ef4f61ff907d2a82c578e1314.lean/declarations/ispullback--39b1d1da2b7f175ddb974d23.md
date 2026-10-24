@@ -1,0 +1,114 @@
+# isPullback
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:7e1f3bb0-fe72-91b3-e7d6-624440cd83f2",
+  "kind": "lemma",
+  "lexical_name": "isPullback",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ispullback--39b1d1da2b7f175ddb974d23",
+  "source": {
+    "blob": "df3e1cbd5a174f6e271346af5460e6ee9abd0018",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 159,
+    "line": 127,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitsOver/Variante2b1a5e68fe799f53b209808d7174f121cf8987ef4f61ff907d2a82c578e1314.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:39b1d1da2b7f175ddb974d23ec628314871af5df57fe2801925808a2c24ad474",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitsOver/Variante2b1a5e68fe799f53b209808d7174f121cf8987ef4f61ff907d2a82c578e1314.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:7e1f3bb0-fe72-91b3-e7d6-624440cd83f2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 127–159.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma isPullback {i j : 𝒰.I₀} (hij : i ⟶ j) :
+    IsPullback (d.transitionMap hij).left (d.cocone i).pt.hom
+      (d.cocone j).pt.hom (𝒰.trans hij) := by
+  let iso1 : (d.cocone i).pt ≅ _ :=
+    (d.isColimit i).coconePointsIsoOfNatIso
+      (isColimitOfPreserves (Over.pullback P ⊤ (𝒰.trans hij)) (d.isColimit j)) <|
+      D.isoWhiskerLeft (Over.pullbackComp _ _ _) ≪≫ (Functor.associator _ _ _).symm
+  have heq : (Over.map _ (d.prop_trans hij)).map iso1.hom ≫
+        (Over.mapPullbackAdj _ _ _ (d.prop_trans hij) trivial).counit.app _ =
+      d.transitionMap hij := by
+    apply (isColimitOfPreserves (Over.map _ (d.prop_trans hij)) (d.isColimit i)).hom_ext
+    intro a
+    dsimp only [Functor.comp_obj, Functor.id_obj, Functor.mapCocone_pt, Functor.const_obj_obj,
+      Functor.mapCocone_ι_app, Iso.trans_hom, Functor.isoWhiskerLeft_hom, Iso.symm_hom]
+    rw [IsColimit.coconePointsIsoOfNatIso_hom, ← Functor.map_comp_assoc, IsColimit.ι_map,
+      Functor.mapCocone_ι_app, Functor.map_comp, Category.assoc,
+      Adjunction.counit_naturality, cocone_ι_transitionMap]
+    ext
+    dsimp
+    rw [Category.comp_id, ← Category.assoc]
+    congr 1
+    apply pullback.hom_ext <;> simp
+  let iso2 : (d.cocone i).pt.left ≅ pullback (d.cocone j).pt.hom (𝒰.trans hij) :=
+    (MorphismProperty.Over.forget _ _ _ ⋙ Over.forget _).mapIso iso1
+  refine .of_iso (IsPullback.of_hasPullback _ _) iso2.symm (.refl _) (.refl _) (.refl _) ?_ ?_
+      (by simp) (by simp)
+  · simpa [← cancel_epi iso2.hom] using! congr($(heq).left)
+  · exact (Over.w iso1.inv).symm
+
+set_option backward.isDefEq.respectTransparency false in
+/-- The relative gluing datum associated to the family of the `colim Dᵢ`. -/
+@[simps natTrans_app, simps -isSimp functor]
+noncomputable
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitsOver/Variante2b1a5e68fe799f53b209808d7174f121cf8987ef4f61ff907d2a82c578e1314.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/ColimitsOver/Variante2b1a5e68fe799f53b209808d7174f121cf8987ef4f61ff907d2a82c578e1314.lean#L127).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `df3e1cbd5a174f6e271346af5460e6ee9abd0018` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

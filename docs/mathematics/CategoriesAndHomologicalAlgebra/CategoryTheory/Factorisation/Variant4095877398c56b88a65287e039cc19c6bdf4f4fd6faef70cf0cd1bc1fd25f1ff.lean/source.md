@@ -1,0 +1,150 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Factorisation.Variant4095877398c56b88a65287e039cc19c6bdf4f4fd6faef70cf0cd1bc1fd25f1ff
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae4eb7720d611691572b2e7b9d1a0897e0d86d9a` · SHA-256 `3ac1fbdfc4e93db4a8666f5bfd8ad3ca05ec1270d6ae40ae013e16bd1eab9316`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Factorisation.Variant4f3aa834b23580d3c6e05bfc98192cdf2852388a7a5a60347979b21fa5d324e0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4f3aa834b23580d3c6e05bfc98192cdf2852388a7a5a60347979b21fa5d324e0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.Factorisation.Variant4f3aa834b23580d3c6e05bfc98192cdf2852388a7a5a60347979b21fa5d324e0","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"4f3aa834b23580d3c6e05bfc98192cdf2852388a7a5a60347979b21fa5d324e0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Category/Factorisation.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Jakob von Raumer. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jakob von Raumer
+-/
+import Mathlib.CategoryTheory.Category.Basic
+import Mathlib.CategoryTheory.Comma.Arrow
+import Mathlib.CategoryTheory.Limits.Shapes.Terminal
+
+/-!
+# The Factorisation Category of a Category
+
+`Factorisation f` is the category containing as objects all factorisations of a morphism `f`.
+
+We show that `Factorisation f` always has an initial and a terminal object.
+
+TODO: Show that `Factorisation f` is isomorphic to a comma category in two ways.
+
+TODO: Make `MonoFactorisation f` a special case of a `Factorisation f`.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Factorisation.Variant4f3aa834b23580d3c6e05bfc98192cdf2852388a7a5a60347979b21fa5d324e0
+
+namespace CategoryTheory
+
+universe v u
+
+variable {C : Type u} [Category.{v} C]
+
+/-- Factorisations of a morphism `f` as a structure, containing, one object, two morphisms,
+and the condition that their composition equals `f`. -/
+structure Factorisation {X Y : C} (f : X ⟶ Y) where
+  /-- The midpoint of the factorisation. -/
+  mid : C
+  /-- The morphism into the factorisation midpoint. -/
+  ι   : X ⟶ mid
+  /-- The morphism out of the factorisation midpoint. -/
+  π   : mid ⟶ Y
+  /-- The factorisation condition. -/
+  ι_π : ι ≫ π = f := by aesop_cat
+
+attribute [simp] Factorisation.ι_π
+
+namespace Factorisation
+
+variable {X Y : C} {f : X ⟶ Y}
+
+/-- Morphisms of `Factorisation f` consist of morphism between their midpoints and the obvious
+commutativity conditions. -/
+@[ext]
+protected structure Hom (d e : Factorisation f) : Type (max u v) where
+  /-- The morphism between the midpoints of the factorizations. -/
+  h : d.mid ⟶ e.mid
+  /-- The left commuting triangle of the factorization morphism. -/
+  ι_h : d.ι ≫ h = e.ι := by aesop_cat
+  /-- The right commuting triangle of the factorization morphism. -/
+  h_π : h ≫ e.π = d.π := by aesop_cat
+
+attribute [simp] Factorisation.Hom.ι_h Factorisation.Hom.h_π
+
+/-- The identity morphism of `Factorisation f`. -/
+@[simps]
+protected def Hom.id (d : Factorisation f) : Factorisation.Hom d d where
+  h := 𝟙 _
+
+/-- Composition of morphisms in `Factorisation f`. -/
+@[simps]
+protected def Hom.comp {d₁ d₂ d₃ : Factorisation f}
+    (f : Factorisation.Hom d₁ d₂) (g : Factorisation.Hom d₂ d₃) : Factorisation.Hom d₁ d₃ where
+  h := f.h ≫ g.h
+  ι_h := by rw [← Category.assoc, f.ι_h, g.ι_h]
+  h_π := by rw [Category.assoc, g.h_π, f.h_π]
+
+instance : Category.{max u v} (Factorisation f) where
+  Hom d e := Factorisation.Hom d e
+  id d := Factorisation.Hom.id d
+  comp f g := Factorisation.Hom.comp f g
+
+variable (d : Factorisation f)
+
+/-- The initial object in `Factorisation f`, with the domain of `f` as its midpoint. -/
+@[simps]
+protected def initial : Factorisation f where
+  mid := X
+  ι := 𝟙 _
+  π := f
+
+/-- The unique morphism out of `Factorisation.initial f`. -/
+@[simps]
+protected def initialHom (d : Factorisation f) :
+    Factorisation.Hom (Factorisation.initial : Factorisation f) d where
+  h := d.ι
+
+instance : Unique ((Factorisation.initial : Factorisation f) ⟶ d) where
+  default := Factorisation.initialHom d
+  uniq f := by apply Factorisation.Hom.ext; simp [← f.ι_h]
+
+/-- The terminal object in `Factorisation f`, with the codomain of `f` as its midpoint. -/
+@[simps]
+protected def terminal : Factorisation f where
+  mid := Y
+  ι := f
+  π := 𝟙 _
+
+/-- The unique morphism into `Factorisation.terminal f`. -/
+@[simps]
+protected def terminalHom (d : Factorisation f) :
+    Factorisation.Hom d (Factorisation.terminal : Factorisation f) where
+  h := d.π
+
+instance : Unique (d ⟶ (Factorisation.terminal : Factorisation f)) where
+  default := Factorisation.terminalHom d
+  uniq f := by apply Factorisation.Hom.ext; simp [← f.h_π]
+
+open Limits
+
+/-- The initial factorisation is an initial object -/
+def IsInitial_initial : IsInitial (Factorisation.initial : Factorisation f) := IsInitial.ofUnique _
+
+instance : HasInitial (Factorisation f) := Limits.hasInitial_of_unique Factorisation.initial
+
+/-- The terminal factorisation is a terminal object -/
+def IsTerminal_terminal : IsTerminal (Factorisation.terminal : Factorisation f) :=
+IsTerminal.ofUnique _
+
+instance : HasTerminal (Factorisation f) := Limits.hasTerminal_of_unique Factorisation.terminal
+
+/-- The forgetful functor from `Factorisation f` to the underlying category `C`. -/
+@[simps]
+def forget : Factorisation f ⥤ C where
+  obj := Factorisation.mid
+  map f := f.h
+
+end Factorisation
+
+end CategoryTheory
+```

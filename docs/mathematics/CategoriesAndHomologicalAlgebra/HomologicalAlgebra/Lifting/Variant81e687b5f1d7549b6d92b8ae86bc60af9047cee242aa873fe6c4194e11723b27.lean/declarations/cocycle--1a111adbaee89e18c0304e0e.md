@@ -1,0 +1,95 @@
+# cocycle₁
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f215833886eabc6b23facdb6b178bd2d6b55bcfef72415fbd0aa55b92016c423",
+  "kind": "def",
+  "lexical_name": "cocycle₁",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "cocycle--1a111adbaee89e18c0304e0e",
+  "source": {
+    "blob": "0faaaefb83a901103fe13d8770d7578ed25948ed",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 125,
+    "line": 112,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant81e687b5f1d7549b6d92b8ae86bc60af9047cee242aa873fe6c4194e11723b27.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1a111adbaee89e18c0304e0eace40a35ac008202dfe6b53e2753c7c6d55f169c",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant81e687b5f1d7549b6d92b8ae86bc60af9047cee242aa873fe6c4194e11723b27.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f215833886eabc6b23facdb6b178bd2d6b55bcfef72415fbd0aa55b92016c423`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 112–125.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+noncomputable def cocycle₁ : Cocycle Q K 1 :=
+  Cocycle.mk (cochain₁ sq hsq hQ hK) 2 (by simp) (by
+    have : Epi π := Cofork.IsColimit.epi hQ
+    have : Mono ι := Fork.IsLimit.mono hK
+    ext n _ rfl
+    have := Cochain.congr_v ((cocycle₁' sq hsq).δ_eq_zero 2) n _ rfl
+    rw [Cochain.zero_v, δ_v _ _ (by simp) _ _ _ _ (n + 1) _ (by lia) rfl,
+      Int.negOnePow_even 2 ⟨1, by simp⟩, one_smul] at this ⊢
+    rwa [← cancel_mono (ι.f (n + 2)), ← cancel_epi (π.f n),
+      Preadditive.add_comp, Category.assoc, Category.assoc, Preadditive.comp_add,
+      HomologicalComplex.Hom.comm_assoc,
+      π_f_cochain₁_v_ι_f, zero_comp, comp_zero, ← ι.comm,
+      π_f_cochain₁_v_ι_f_assoc])
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant81e687b5f1d7549b6d92b8ae86bc60af9047cee242aa873fe6c4194e11723b27.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant81e687b5f1d7549b6d92b8ae86bc60af9047cee242aa873fe6c4194e11723b27.lean#L112).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0faaaefb83a901103fe13d8770d7578ed25948ed` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

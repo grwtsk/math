@@ -1,0 +1,107 @@
+# counit
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:985b88899f3aa7b8d8593396ab2bd91b1f389057c012da792860f46a53e006bd",
+  "kind": "def",
+  "lexical_name": "counit",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "counit--19d3ff994e9ee9348a5eac45",
+  "source": {
+    "blob": "ddee0fd1ce72b50ccdb91956c214c2980ed3b477",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 694,
+    "line": 669,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/ChangeOfRings/Variant55647887f3ae0c9ed0c80973d90370f298f8536511bf3b2d2bf878bf28aaa570.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:19d3ff994e9ee9348a5eac45b70efa8f511fc2709f1f24bba9a5acb89e06d6f0",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/ChangeOfRings/Variant55647887f3ae0c9ed0c80973d90370f298f8536511bf3b2d2bf878bf28aaa570.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:985b88899f3aa7b8d8593396ab2bd91b1f389057c012da792860f46a53e006bd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 669–694.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def counit : restrictScalars.{max v u₂,u₁,u₂} f ⋙ extendScalars f ⟶ 𝟭 (ModuleCat S) where
+  app _ := Counit.map.{u₁,u₂,v} f
+  naturality Y Y' g := by
+    -- Porting note: this is very annoying; fix instances in concrete categories
+    letI m1 : Module R S := Module.compHom S f
+    letI m2 : Module R Y := Module.compHom Y f
+    letI m2 : Module R Y' := Module.compHom Y' f
+    apply LinearMap.ext; intro z
+    induction' z using TensorProduct.induction_on with s' y z₁ z₂ ih₁ ih₂
+    · rw [map_zero, map_zero]
+    · dsimp
+      rw [ModuleCat.coe_comp, ModuleCat.coe_comp,Function.comp,Function.comp,
+        ExtendScalars.map_tmul, restrictScalars.map_apply, Counit.map_apply, Counit.map_apply,
+        lift.tmul, lift.tmul, LinearMap.coe_mk, LinearMap.coe_mk]
+      set s' : S := s'
+      change s' • g y = g (s' • y)
+      rw [map_smul]
+    · rw [map_add,map_add]
+      congr 1
+#align category_theory.Module.extend_restrict_scalars_adj.counit CategoryTheory.ModuleCat.ExtendRestrictScalarsAdj.counit
+end ExtendRestrictScalarsAdj
+
+/-- Given commutative rings `R, S` and a ring hom `f : R →+* S`, the extension and restriction of
+scalars by `f` are adjoint to each other.
+-/
+-- @[simps] -- Porting note: removed not in normal form and not used
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/ChangeOfRings/Variant55647887f3ae0c9ed0c80973d90370f298f8536511bf3b2d2bf878bf28aaa570.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/ChangeOfRings/Variant55647887f3ae0c9ed0c80973d90370f298f8536511bf3b2d2bf878bf28aaa570.lean#L669).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ddee0fd1ce72b50ccdb91956c214c2980ed3b477` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,84 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Subobject.Variante00367bf7849b13c0bdd5e0b1f5669e3fc887c1e819939019cae05873418d5f2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a87dbc9150da5820874f35d5f3a0cc4ed9542360` · SHA-256 `670a1e1848805f49961847883621049b69ddc596a9186440d64bef9b6e33fd8c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.SubobjectIsoSubobjectOp.Variant5908f64f6226681a8cd42becf954882e67d4fed5623f4e7636d72824b2ce0ba9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5908f64f6226681a8cd42becf954882e67d4fed5623f4e7636d72824b2ce0ba9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.SubobjectIsoSubobjectOp.Variant5908f64f6226681a8cd42becf954882e67d4fed5623f4e7636d72824b2ce0ba9","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"5908f64f6226681a8cd42becf954882e67d4fed5623f4e7636d72824b2ce0ba9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/CategoryTheory/Abelian/Subobject.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+import Mathlib.CategoryTheory.Subobject.Limits
+import Mathlib.CategoryTheory.Abelian.Basic
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.SubobjectIsoSubobjectOp.Variant5908f64f6226681a8cd42becf954882e67d4fed5623f4e7636d72824b2ce0ba9
+
+#align_import category_theory.abelian.subobject from "leanprover-community/mathlib"@"70fd9563a21e7b963887c9360bd29b2393e6225a"
+
+/-!
+# Equivalence between subobjects and quotients in an abelian category
+
+-/
+
+
+open CategoryTheory CategoryTheory.Limits Opposite
+
+universe v u
+
+noncomputable section
+
+namespace CategoryTheory.Abelian
+
+variable {C : Type u} [Category.{v} C]
+
+/-- In an abelian category, the subobjects and quotient objects of an object `X` are
+    order-isomorphic via taking kernels and cokernels.
+    Implemented here using subobjects in the opposite category,
+    since mathlib does not have a notion of quotient objects at the time of writing. -/
+@[simps!]
+def subobjectIsoSubobjectOp [Abelian C] (X : C) : Subobject X ≃o (Subobject (op X))ᵒᵈ := by
+  refine' OrderIso.ofHomInv (cokernelOrderHom X) (kernelOrderHom X) _ _
+  · change (cokernelOrderHom X).comp (kernelOrderHom X) = _
+    refine' OrderHom.ext _ _ (funext (Subobject.ind _ _))
+    intro A f hf
+    dsimp only [OrderHom.comp_coe, Function.comp_apply, kernelOrderHom_coe, Subobject.lift_mk,
+      cokernelOrderHom_coe, OrderHom.id_coe, id.def]
+    refine' Subobject.mk_eq_mk_of_comm _ _ ⟨_, _, Quiver.Hom.unop_inj _, Quiver.Hom.unop_inj _⟩ _
+    · exact (Abelian.epiDesc f.unop _ (cokernel.condition (kernel.ι f.unop))).op
+    · exact (cokernel.desc _ _ (kernel.condition f.unop)).op
+    · rw [← cancel_epi (cokernel.π (kernel.ι f.unop))]
+      simp only [unop_comp, Quiver.Hom.unop_op, unop_id_op, cokernel.π_desc_assoc,
+        comp_epiDesc, Category.comp_id]
+    · simp only [← cancel_epi f.unop, unop_comp, Quiver.Hom.unop_op, unop_id, comp_epiDesc_assoc,
+        cokernel.π_desc, Category.comp_id]
+    · exact Quiver.Hom.unop_inj (by simp only [unop_comp, Quiver.Hom.unop_op, comp_epiDesc])
+  · change (kernelOrderHom X).comp (cokernelOrderHom X) = _
+    refine' OrderHom.ext _ _ (funext (Subobject.ind _ _))
+    intro A f hf
+    dsimp only [OrderHom.comp_coe, Function.comp_apply, cokernelOrderHom_coe, Subobject.lift_mk,
+      kernelOrderHom_coe, OrderHom.id_coe, id.def, unop_op, Quiver.Hom.unop_op]
+    refine' Subobject.mk_eq_mk_of_comm _ _ ⟨_, _, _, _⟩ _
+    · exact Abelian.monoLift f _ (kernel.condition (cokernel.π f))
+    · exact kernel.lift _ _ (cokernel.condition f)
+    · simp only [← cancel_mono (kernel.ι (cokernel.π f)), Category.assoc, image.fac, monoLift_comp,
+        Category.id_comp]
+    · simp only [← cancel_mono f, Category.assoc, monoLift_comp, image.fac, Category.id_comp]
+    · simp only [monoLift_comp]
+#align category_theory.abelian.subobject_iso_subobject_op CategoryTheory.Abelian.subobjectIsoSubobjectOp
+
+/-- A well-powered abelian category is also well-copowered. -/
+instance wellPowered_opposite [Abelian C] [WellPowered C] : WellPowered Cᵒᵖ
+    where subobject_small X :=
+    (small_congr (subobjectIsoSubobjectOp (unop X)).toEquiv).1 inferInstance
+#align category_theory.abelian.well_powered_opposite CategoryTheory.Abelian.wellPowered_opposite
+
+end CategoryTheory.Abelian
+```

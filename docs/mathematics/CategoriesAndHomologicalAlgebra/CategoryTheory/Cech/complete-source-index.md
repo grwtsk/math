@@ -1,0 +1,15 @@
+# Cech — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 32 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant028ff0d54ebe753a4b6570df4efccffa4697819be52599558d7f99a9a6bd9b07.lean](Variant028ff0d54ebe753a4b6570df4efccffa4697819be52599558d7f99a9a6bd9b07.lean/index.md) | module |
+| [Variant86693180ebeadfe92add95dac0ea3c51a7a79dbad6df849b8ed2dfaed988c01b.lean](Variant86693180ebeadfe92add95dac0ea3c51a7a79dbad6df849b8ed2dfaed988c01b.lean/index.md) | module |

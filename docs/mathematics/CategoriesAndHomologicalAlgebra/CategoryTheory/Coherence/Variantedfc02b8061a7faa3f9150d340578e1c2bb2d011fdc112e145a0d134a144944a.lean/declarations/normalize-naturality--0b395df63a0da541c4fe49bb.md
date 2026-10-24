@@ -1,0 +1,108 @@
+# normalize_naturality
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:23bea084-ae89-f22e-1ba4-dc20c489f29e",
+  "kind": "theorem",
+  "lexical_name": "normalize_naturality",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "normalize-naturality--0b395df63a0da541c4fe49bb",
+  "source": {
+    "blob": "8fc111bf3247f42fb4a61e9743ab48d86538c3c4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 281,
+    "line": 255,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Coherence/Variantedfc02b8061a7faa3f9150d340578e1c2bb2d011fdc112e145a0d134a144944a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:0b395df63a0da541c4fe49bb71ace62bfb86f08a20238f848998092731ade98e",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Coherence/Variantedfc02b8061a7faa3f9150d340578e1c2bb2d011fdc112e145a0d134a144944a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:23bea084-ae89-f22e-1ba4-dc20c489f29e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 255–281.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem normalize_naturality (n : NormalMonoidalObject C) {X Y : F C} (f : X ⟶ Y) :
+    inclusionObj n ◁ f ≫ (normalizeIsoApp' C Y n).hom =
+      (normalizeIsoApp' C X n).hom ≫
+        inclusion.map (eqToHom (Discrete.ext (normalizeObj_congr n f))) := by
+  revert n
+  induction f using Hom.inductionOn
+  case comp f g ihf ihg => simp [ihg, reassoc_of% (ihf _)]
+  case whiskerLeft X' X Y f ih =>
+    intro n
+    dsimp only [normalizeObj_tensor, normalizeIsoApp', tensor_eq_tensor, Iso.trans_hom,
+      Iso.symm_hom, whiskerRightIso_hom, Function.comp_apply, inclusion_obj]
+    rw [associator_inv_naturality_right_assoc, whisker_exchange_assoc, ih]
+    simp
+  case whiskerRight X Y h η' ih =>
+    intro n
+    dsimp only [normalizeObj_tensor, normalizeIsoApp', tensor_eq_tensor, Iso.trans_hom,
+      Iso.symm_hom, whiskerRightIso_hom, Function.comp_apply, inclusion_obj]
+    rw [associator_inv_naturality_middle_assoc, ← comp_whiskerRight_assoc, ih]
+    have := dcongr_arg (fun x => (normalizeIsoApp' C η' x).hom) (normalizeObj_congr n h)
+    simp [this]
+  all_goals simp
+
+end
+
+/-- The isomorphism between `n ⊗ X` and `normalize X n` is natural (in both `X` and `n`, but
+    naturality in `n` is trivial and was "proved" in `normalizeIsoAux`). This is the real heart
+    of our proof of the coherence theorem. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Coherence/Variantedfc02b8061a7faa3f9150d340578e1c2bb2d011fdc112e145a0d134a144944a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Coherence/Variantedfc02b8061a7faa3f9150d340578e1c2bb2d011fdc112e145a0d134a144944a.lean#L255).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8fc111bf3247f42fb4a61e9743ab48d86538c3c4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

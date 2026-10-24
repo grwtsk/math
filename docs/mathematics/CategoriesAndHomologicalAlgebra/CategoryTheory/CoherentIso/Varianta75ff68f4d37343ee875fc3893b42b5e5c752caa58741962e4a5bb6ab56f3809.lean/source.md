@@ -1,0 +1,214 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.CoherentIso.Varianta75ff68f4d37343ee875fc3893b42b5e5c752caa58741962e4a5bb6ab56f3809
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6bbe76f2c07b0241387d0431a454e3d2c6ab0acf` · SHA-256 `0dac83b80fa9c14146e25f552c47d69475b316d9a6d17c7189e2570de4eea682`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.WalkingIso.Variant3a2d331cdc2351e97920a0eb58f568d5649bab31475bce270a1f0e5d321591eb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3a2d331cdc2351e97920a0eb58f568d5649bab31475bce270a1f0e5d321591eb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.WalkingIso.Variant3a2d331cdc2351e97920a0eb58f568d5649bab31475bce270a1f0e5d321591eb","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"3a2d331cdc2351e97920a0eb58f568d5649bab31475bce270a1f0e5d321591eb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialSet/CoherentIso.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Johns Hopkins Category Theory Seminar. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johns Hopkins Category Theory Seminar, Arnoud van der Leer
+-/
+module
+
+public import Mathlib.AlgebraicTopology.SimplicialSet.CompStruct
+public import Mathlib.CategoryTheory.CodiscreteCategory
+public import Mathlib.AlgebraicTopology.SimplicialSet.Nerve
+
+/-!
+# The Coherent Isomorphism
+
+We define the free walking isomorphism `WalkingIso`; the category with objects `zero` and
+`one` and unique morphisms `zero ⟶ one` and `one ⟶ zero`. We construct an equivalence
+`WalkingIso.equiv` between the type of functors from `WalkingIso` into any category `C` and the type
+`Σ (X : C) (Y : C), (X ≅ Y)` of isomorphisms in that category.
+
+The simplicial set `SSet.coherentIso` is defined as the nerve of `WalkingIso`, with
+`coherentIso.x₀` and `coherentIso.x₁` the `0`-simplices corresponding to `WalkingIso.zero`
+and `WalkingIso.one` respectively, and `coherentIso.hom : Edge x₀ x₁` and
+`coherentIso.inv : Edge x₁ x₀` forward and backward edges corresponding to the morphisms in
+`WalkingIso`. Given any simplicial set `X`, with a morphism `g : coherentIso ⟶ X`, `0`-simplices
+`x₀ x₁: X _⦋0⦌` and an edge between them `f : Edge x₀ x₁`, such that `g` sends `coherentIso.hom` to
+`f`, then `f` has an inverse (in the sense of `Edge.InvStruct`), see `invStructOfEqMapHom`.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.WalkingIso.Variant3a2d331cdc2351e97920a0eb58f568d5649bab31475bce270a1f0e5d321591eb
+
+@[expose] public section
+
+universe w u v
+
+open CategoryTheory
+
+namespace CategoryTheory
+
+/-- This is the free-living isomorphism as the codiscrete category on `Bool`. -/
+abbrev WalkingIso : Type w := Codiscrete (ULift Bool)
+
+namespace WalkingIso
+
+/-- The underlying type of `WalkingIso` is equivalent to `Bool`, since they both have 2 elements. -/
+def equivBool : WalkingIso.{w} ≃ Bool := codiscreteEquiv.trans Equiv.ulift
+
+section
+
+variable {C : Type u} [Category.{v} C]
+
+/-- The domain of the isomorphism -/
+def zero : WalkingIso.{w} := .mk (.up false)
+
+/-- The codomain of the isomorphism -/
+def one : WalkingIso.{w} := .mk (.up true)
+
+/-- The isomorphism between `zero` and `one` in `WalkingIso`. -/
+def iso : zero.{w} ≅ one := Codiscrete.iso zero one
+
+lemma eq_iso_hom (f : zero.{w} ⟶ one) : f = iso.{w}.hom := Codiscrete.eq_iso_hom f
+
+lemma eq_iso_inv (f : one.{w} ⟶ zero) : f = iso.{w}.inv := Codiscrete.eq_iso_inv f
+
+/-- Functors out of `WalkingIso` define isomorphisms in the target category. -/
+@[simps!]
+def toIso (F : WalkingIso.{w} ⥤ C) : F.obj zero ≅ F.obj one := F.mapIso iso
+
+section induction
+
+variable {motive : WalkingIso.{u} → Sort*} (zero : motive zero) (one : motive one)
+
+/-- The recursor for WalkingIso, which constructs a term of `∏ (x : WalkingIso), A x` from
+a term of `A zero` and a term of `A one`. -/
+@[elab_as_elim, induction_eliminator]
+protected def rec : ∀ a, motive a
+  | .mk (.up false) => zero
+  | .mk (.up true) => one
+
+@[simp] lemma rec_zero : WalkingIso.rec zero one .zero = zero := rfl
+@[simp] lemma rec_one : WalkingIso.rec zero one .one = one := rfl
+
+end induction
+
+set_option backward.isDefEq.respectTransparency false in
+/-- From an isomorphism in a category, we can build a functor out of `WalkingIso` to
+that category. -/
+def fromIso {X Y : C} (e : X ≅ Y) : WalkingIso.{w} ⥤ C where
+  obj x := by induction x; exacts [X, Y]
+  map {x y} _ := by induction x <;> induction y; exacts [𝟙 X, e.hom, e.inv, 𝟙 Y]
+  map_comp {x y z} _ _ := by induction x <;> induction y <;> induction z <;> simp
+  map_id {x} := by induction x <;> rfl
+
+section
+
+variable {X Y : C} (e : X ≅ Y)
+
+@[simp]
+lemma fromIso_zero : (fromIso.{w} e).obj .zero = X := rfl
+
+@[simp]
+lemma fromIso_one : (fromIso.{w} e).obj .one = Y := rfl
+
+@[simp]
+lemma fromIso_map_zero_zero (f : zero ⟶ zero) : (fromIso.{w} e).map f = 𝟙 X := rfl
+
+@[simp]
+lemma fromIso_hom (f : zero ⟶ one) : (fromIso.{w} e).map f = e.hom := rfl
+
+@[simp]
+lemma fromIso_inv (f : one ⟶ zero) : (fromIso.{w} e).map f = e.inv := rfl
+
+@[simp]
+lemma fromIso_map_one_one (f : one ⟶ one) : (fromIso.{w} e).map f = 𝟙 Y := rfl
+
+end
+
+set_option backward.isDefEq.respectTransparency false in
+/-- An equivalence between the type of `WalkingIso`s in `C` and the type of isomorphisms in `C`. -/
+@[simps]
+def equiv : (WalkingIso.{w} ⥤ C) ≃ Σ (X : C) (Y : C), (X ≅ Y) where
+  toFun F := ⟨F.obj zero, F.obj one, toIso F⟩
+  invFun p := fromIso p.2.2
+  right_inv := fun ⟨X, Y, e⟩ ↦ rfl
+  left_inv F := Functor.ext (by rintro (_ | _) <;> rfl) <| by
+      intro X Y f
+      induction X <;>
+      induction Y <;>
+      simp [Codiscrete.eq_id] <;>
+      rfl
+
+end
+
+end WalkingIso
+
+end CategoryTheory
+
+namespace SSet
+
+open scoped Simplicial
+
+/-- The simplicial set that encodes a single isomorphism.
+Its n-simplices are formal compositions of arrows in WalkingIso. -/
+abbrev coherentIso : SSet := nerve WalkingIso.{u}
+
+namespace coherentIso
+
+/-- The source vertex of `coherentIso`. -/
+def x₀ : coherentIso.{u} _⦋0⦌ :=
+  ComposableArrows.mk₀ WalkingIso.zero
+
+/-- The target vertex of `coherentIso`. -/
+def x₁ : coherentIso.{u} _⦋0⦌ :=
+  ComposableArrows.mk₀ WalkingIso.one
+
+/-- The forwards edge of `coherentIso`. -/
+def hom : Edge.{u} x₀ x₁ where
+  edge := ComposableArrows.mk₁ WalkingIso.iso.hom
+  src_eq := ComposableArrows.ext₀ rfl
+  tgt_eq := ComposableArrows.ext₀ rfl
+
+/-- The backwards edge of `coherentIso`. -/
+def inv : Edge.{u} x₁ x₀ where
+  edge := ComposableArrows.mk₁ WalkingIso.iso.inv
+  src_eq := ComposableArrows.ext₀ rfl
+  tgt_eq := ComposableArrows.ext₀ rfl
+
+/-- The forwards and backwards edge of `coherentIso` compose to the identity. -/
+def homInvId : Edge.CompStruct.{u} hom inv (Edge.id x₀) where
+  simplex := ComposableArrows.mk₂ WalkingIso.iso.hom WalkingIso.iso.inv
+  d₂ := ComposableArrows.ext₁ rfl rfl rfl
+  d₀ := ComposableArrows.ext₁ rfl rfl rfl
+  d₁ := ComposableArrows.ext₁ rfl rfl rfl
+
+/-- The backwards and forwards edge of `coherentIso` compose to the identity. -/
+def invHomId : Edge.CompStruct.{u} inv hom (Edge.id x₁) where
+  simplex := ComposableArrows.mk₂ WalkingIso.iso.inv WalkingIso.iso.hom
+  d₂ := ComposableArrows.ext₁ rfl rfl rfl
+  d₀ := ComposableArrows.ext₁ rfl rfl rfl
+  d₁ := ComposableArrows.ext₁ rfl rfl rfl
+
+/-- The forwards edge of `coherentIso` has an inverse. -/
+@[simps]
+def invStructHom : Edge.InvStruct.{u} coherentIso.hom where
+  inv := inv
+  homInvId := homInvId
+  invHomId := invHomId
+
+/-- For a simplicial set `X`, if an edge in `X` is equal to the image of `hom`
+under a morphism of simplicial sets, this edge has an inverse. -/
+abbrev invStructOfEqMapHom {X : SSet.{u}} {x₀ x₁ : X _⦋0⦌}
+    {f : Edge x₀ x₁}
+    {g : coherentIso ⟶ X}
+    (hfg : f.edge = g.app _ hom.edge) :
+    f.InvStruct :=
+  (invStructHom.map g).ofEq hfg.symm
+
+end coherentIso
+
+end SSet
+```
