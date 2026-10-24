@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdaptiveTriangularThreeAuditPackageTypes.Variantabd3c86c4323fd001874dc5428891c34cb4ddbef83162e46f43099eff05801fc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5aa5e786064b0a51e98226f7d4b7f68bdfb2e40e` · SHA-256 `abd3c86c4323fd001874dc5428891c34cb4ddbef83162e46f43099eff05801fc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdaptiveTriangularThree
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.sourceEndpoint_abs_le_three
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.sourceEndpoint_abs_le_three
+#check FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.residual_upper_of_actualTriangular_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.residual_upper_of_actualTriangular_upper
+#check FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.residual_tail_of_actualTriangular_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.residual_tail_of_actualTriangular_tail
+#check FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.estimate_of_actualTriangular_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.estimate_of_actualTriangular_tail
+```

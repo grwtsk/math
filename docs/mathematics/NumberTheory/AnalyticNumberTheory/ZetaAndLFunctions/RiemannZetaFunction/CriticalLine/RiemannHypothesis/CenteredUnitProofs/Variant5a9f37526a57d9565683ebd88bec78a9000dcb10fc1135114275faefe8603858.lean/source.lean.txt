@@ -1,0 +1,7 @@
+import ActualCenteredColumnUnitRefinement
+set_option autoImplicit false
+open RH16IndependentChallengeNext
+#print actualCenteredBeta_interval_eq_nonunit_floor
+#print actualCenteredBeta_interval_abs_le_nonunit_mass
+#print actualCenteredBeta_interval_abs_le_cutoff_sub_one
+#print actualVaughanCenteredColumn_prefix_abs_le

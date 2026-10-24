@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiTailPrimitiveAbelAudit.Variantfcf54de9f4a578fbecb4a5d234ef049fed12c17e0238fb8342d978a7ed2878c8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `69979c2cae797911263d5b31824d1342650cf5f7` · SHA-256 `fa53b8d80c4722222267bb1b6247d2e33350100140000181babc1ceede5f3b75`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiTailPrimitiveAbel.Variantf0f10ccf232b4e2a2f71eb222d3304cd6d169128ed52aedb3d580c629238ac59","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f0f10ccf232b4e2a2f71eb222d3304cd6d169128ed52aedb3d580c629238ac59","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualXiTailPrimitiveAbel.Variantf0f10ccf232b4e2a2f71eb222d3304cd6d169128ed52aedb3d580c629238ac59","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f0f10ccf232b4e2a2f71eb222d3304cd6d169128ed52aedb3d580c629238ac59","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T233459Z-1791329699629503000/RootActualXiTailPrimitiveAbelAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualXiTailPrimitiveAbel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiTailPrimitiveAbel.Variantf0f10ccf232b4e2a2f71eb222d3304cd6d169128ed52aedb3d580c629238ac59
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.actualXiTailSourceTest
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.actualXiTailSourceTest
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.actualXiTailSourceTest
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_eq_log_pairing
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_eq_log_pairing
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_eq_log_pairing
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_eq_anchored_primitive
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_eq_anchored_primitive
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_eq_anchored_primitive
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_abs_le_primitive_average
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_abs_le_primitive_average
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_abs_le_primitive_average
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_lower_of_uniform_primitive_average
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_lower_of_uniform_primitive_average
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.completeXiTail_lower_of_uniform_primitive_average
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.estimate_of_uniform_primitive_average
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.estimate_of_uniform_primitive_average
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitiveAbel.estimate_of_uniform_primitive_average
+```

@@ -1,0 +1,67 @@
+# Verification target: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrimitiveSampling.Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1dae838b49909120779651528248204a5ee5d349",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/index.md) · [Full source](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1dae838b49909120779651528248204a5ee5d349`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.Conversation.SamplingReplication` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.Conversation.PrimitiveAggregation` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [literal_primitive_sampling_mean](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/declarations/literal-primitive-sampling-mean--c9828b15d79093cfa0284352.md) | 22 | `result-track:c9828b15d79093cfa0284352bc740538b2743da26b6b703878feff9826f11732` |
+| 2 | `theorem` | [literal_primitive_sampling_mass](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/declarations/literal-primitive-sampling-mass--13ed27c08e78975763baf93c.md) | 26 | `result-track:13ed27c08e78975763baf93cbcff3247d0487615643a17a36bec493d78c0acf5` |
+| 3 | `theorem` | [actual_primitive_sampling_unbiased](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/declarations/actual-primitive-sampling-unbiased--c4cb277e2f94f98d99a5c5f8.md) | 30 | `result-track:c4cb277e2f94f98d99a5c5f806de3af821f310bbff41aefe4f40255ed509c760` |
+| 4 | `theorem` | [actual_primitive_replication_lower](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/declarations/actual-primitive-replication-lower--e93d37b12827e105a2161d98.md) | 36 | `result-track:e93d37b12827e105a2161d98643b4f52c0fb834de47ef1aed02614c3a946abcb` |
+| 5 | `theorem` | [conditional_actual_primitive_sample_count](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimitiveSampling/Variante17e15625f2879d33ce1351dbf4d99af3c15a626b972b2cbdadcd7ed44239298.lean/declarations/conditional-actual-primitive-sample-count--286f3b8a7a67c6c1d18566e0.md) | 44 | `result-track:286f3b8a7a67c6c1d18566e0b808eebb43c6d53d95a2e16c58407042f188e23e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

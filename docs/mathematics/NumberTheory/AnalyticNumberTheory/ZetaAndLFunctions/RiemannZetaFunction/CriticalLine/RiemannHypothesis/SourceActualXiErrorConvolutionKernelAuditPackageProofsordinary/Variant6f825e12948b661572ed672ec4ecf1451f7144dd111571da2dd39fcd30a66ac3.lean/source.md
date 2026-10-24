@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolutionKernelAuditPackageProofsordinary.Variant6f825e12948b661572ed672ec4ecf1451f7144dd111571da2dd39fcd30a66ac3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a414f221e6dc57bfad5e3c6a205c04be44a6cb2e` · SHA-256 `6f825e12948b661572ed672ec4ecf1451f7144dd111571da2dd39fcd30a66ac3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiErrorConvolutionKernel
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_mass
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorConvolution_difference_eq_kernel
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualCenteredMangoldtLogError_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorConvolution_difference_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualDampedXiFinitePrimitive_centered_abs_le
+```

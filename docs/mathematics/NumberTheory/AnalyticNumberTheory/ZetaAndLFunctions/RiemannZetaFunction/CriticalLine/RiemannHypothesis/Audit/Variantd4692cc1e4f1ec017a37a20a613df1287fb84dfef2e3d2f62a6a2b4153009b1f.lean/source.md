@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variantd4692cc1e4f1ec017a37a20a613df1287fb84dfef2e3d2f62a6a2b4153009b1f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91821e5e73543b3ecdcd58745a399403ce156084` · SHA-256 `733aa65308f63f1687a85e90c06ae7772d3998c1d035b6e32c68723123297e34`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.KQHBootstrap.Variant12acadd1d6ccd007e03d76052e2a0191b302f7aa42515a00dc49e61fe67a3a9f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"12acadd1d6ccd007e03d76052e2a0191b302f7aa42515a00dc49e61fe67a3a9f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.KQHBootstrap.Variant12acadd1d6ccd007e03d76052e2a0191b302f7aa42515a00dc49e61fe67a3a9f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"12acadd1d6ccd007e03d76052e2a0191b302f7aa42515a00dc49e61fe67a3a9f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-kqh-20261007/bootstrap/audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.KQHBootstrap
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.KQHBootstrap.Variant12acadd1d6ccd007e03d76052e2a0191b302f7aa42515a00dc49e61fe67a3a9f
+
+set_option pp.fullNames true
+set_option pp.universes true
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.closingRoot_nonneg
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.closingRoot_nonneg
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.closingRoot_ge_coefficient
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.closingRoot_ge_coefficient
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.closingRoot_equation
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.closingRoot_equation
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.le_closingBound_of_sqrt_inequality
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.le_closingBound_of_sqrt_inequality
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.finiteHorizon_nonneg
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.finiteHorizon_nonneg
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.value_le_finiteHorizon
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.value_le_finiteHorizon
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.image_bddAbove_of_upper_bound
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.image_bddAbove_of_upper_bound
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.uniform_cap_of_finite_horizon_sqrt
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.uniform_cap_of_finite_horizon_sqrt
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.le_of_affine_contraction
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.le_of_affine_contraction
+#check FormalResearch.RiemannHypothesis.KQHBootstrap.uniform_cap_of_finite_horizon_contraction
+#print axioms FormalResearch.RiemannHypothesis.KQHBootstrap.uniform_cap_of_finite_horizon_contraction
+```

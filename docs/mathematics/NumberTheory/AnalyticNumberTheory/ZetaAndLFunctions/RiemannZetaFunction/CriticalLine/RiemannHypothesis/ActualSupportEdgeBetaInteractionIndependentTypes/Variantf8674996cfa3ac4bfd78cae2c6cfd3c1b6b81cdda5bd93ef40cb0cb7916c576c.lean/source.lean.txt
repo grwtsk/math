@@ -1,0 +1,13 @@
+import ActualSupportEdgeBetaInteraction
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction
+#check actualTerminalCenteredHalfDefect
+#print axioms actualTerminalCenteredHalfDefect
+#check actualFiniteBetaMangoldtInteraction
+#print axioms actualFiniteBetaMangoldtInteraction
+#check actualTerminalCenteredHalfDefect_abs_le
+#print axioms actualTerminalCenteredHalfDefect_abs_le
+#check actual_support_half_le_two_sqrt_terminal
+#print axioms actual_support_half_le_two_sqrt_terminal
+#check actualFiniteBetaMangoldtInteraction_abs_le
+#print axioms actualFiniteBetaMangoldtInteraction_abs_le

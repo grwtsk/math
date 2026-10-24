@@ -1,0 +1,103 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Halving.Variant1db771875e648680d4fce1782808f8b6947c7904ae25d2e93a05175dd44be1d5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dfde11aad73750de31bb824295527e1b849d061d` · SHA-256 `5a7763bff35cb15bbbe5b8386787bd9fc91e84690eacc88d20501784bc8c3ce4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ReflectInjective.Variantde1713457eee0763fdb1e02634939664d9ce000bb8e736f2c18b85425b7c5d30","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"de1713457eee0763fdb1e02634939664d9ce000bb8e736f2c18b85425b7c5d30","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ReflectInjective.Variantde1713457eee0763fdb1e02634939664d9ce000bb8e736f2c18b85425b7c5d30","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"de1713457eee0763fdb1e02634939664d9ce000bb8e736f2c18b85425b7c5d30","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/external-retrieved-3c2053/source/de/de1713457eee0763fdb1e02634939664d9ce000bb8e736f2c18b85425b7c5d30/Halving.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Anthropic, PBC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+SPDX-License-Identifier: Apache-2.0
+-/
+/-
+Zeta23/RvM/Halving.lean — the reflection-halving lemma.
+
+For an abstract zero configuration Z (invariant under ρ ↦ 1 − ρ̄ with equal multiplicities,
+Zeta23/Defs.lean), the zeros in a window T₁ < γ ≤ T₂ with β < 1/2 are mapped injectively by the
+reflection onto zeros in the same window with β > 1/2, preserving multiplicity. Hence
+    N(T₁,T₂) ≤ 2 · Σ_{window, β ≥ 1/2} m_ρ.
+Used in Zeta23/RvM/LocalCount.lean — it lets the Jensen/ZerosBound disc (centre
+2 + (t+½)i, radius 1.9·0.84) cover only {1/2 ≤ σ ≤ 1}, so ζ is never evaluated left of σ = 0.19
+and the σ > 0 growth bound of Zeta23/RvM/ZetaGrowth.lean suffices (no functional equation / Stirling).
+The statement is ℝ-valued to save casts downstream.
+-/
+import Zeta23.Defs.Counting
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ReflectInjective.Variantde1713457eee0763fdb1e02634939664d9ce000bb8e736f2c18b85425b7c5d30
+
+open Set
+
+noncomputable section
+
+namespace Zeta23
+
+@[simp] lemma reflect_re (ρ : ℂ) : (reflect ρ).re = 1 - ρ.re := by simp [reflect]
+@[simp] lemma reflect_im (ρ : ℂ) : (reflect ρ).im = ρ.im := by simp [reflect]
+
+@[simp] lemma reflect_reflect (ρ : ℂ) : reflect (reflect ρ) = ρ := by
+  simp [reflect]
+
+lemma reflect_injective : Function.Injective reflect :=
+  Function.LeftInverse.injective reflect_reflect
+
+namespace ZeroConfig
+
+variable (Z : ZeroConfig) (T₁ T₂ : ℝ)
+
+lemma reflect_mem_window {ρ : ℂ} (h : ρ ∈ Z.window T₁ T₂) : reflect ρ ∈ Z.window T₁ T₂ :=
+  ⟨Z.reflect_mem ρ h.1, by simpa [reflect_im] using h.2⟩
+
+/-- **Reflection halving.** N(T₁,T₂) ≤ 2 · Σ_{ρ ∈ window, Re ρ ≥ 1/2} m_ρ (as reals). -/
+theorem N_le_two_mul_half :
+    (Z.N T₁ T₂ : ℝ) ≤ 2 * ∑ᶠ ρ ∈ Z.window T₁ T₂ ∩ {ρ | 1 / 2 ≤ ρ.re}, (Z.mult ρ : ℝ) := by
+  have hW : (Z.window T₁ T₂).Finite := Z.window_finite T₁ T₂
+  set A := Z.window T₁ T₂ ∩ {ρ | ρ.re < 1 / 2} with hAdef
+  set B := Z.window T₁ T₂ ∩ {ρ | 1 / 2 ≤ ρ.re} with hBdef
+  have hA : A.Finite := hW.subset inter_subset_left
+  have hB : B.Finite := hW.subset inter_subset_left
+  have hWAB : Z.window T₁ T₂ = A ∪ B := by
+    ext ρ
+    simp only [hAdef, hBdef, mem_union, mem_inter_iff, mem_setOf_eq]
+    constructor
+    · intro h
+      rcases lt_or_ge ρ.re (1 / 2) with h' | h'
+      · exact Or.inl ⟨h, h'⟩
+      · exact Or.inr ⟨h, h'⟩
+    · rintro (⟨h, _⟩ | ⟨h, _⟩) <;> exact h
+  have hdisj : Disjoint A B := by
+    rw [Set.disjoint_left]
+    rintro ρ ⟨_, h1⟩ ⟨_, h2⟩
+    simp only [mem_setOf_eq] at h1 h2
+    linarith
+  have hN : Z.N T₁ T₂ = ∑ᶠ ρ ∈ A, Z.mult ρ + ∑ᶠ ρ ∈ B, Z.mult ρ := by
+    unfold ZeroConfig.N
+    rw [hWAB, finsum_mem_union hdisj hA hB]
+  have himage : reflect '' A ⊆ B := by
+    rintro _ ⟨ρ, ⟨hρW, hlt⟩, rfl⟩
+    refine ⟨Z.reflect_mem_window T₁ T₂ hρW, ?_⟩
+    simp only [mem_setOf_eq, reflect_re] at hlt ⊢
+    linarith
+  have hAB : ∑ᶠ ρ ∈ A, Z.mult ρ ≤ ∑ᶠ ρ ∈ B, Z.mult ρ := by
+    calc ∑ᶠ ρ ∈ A, Z.mult ρ = ∑ᶠ ρ ∈ A, Z.mult (reflect ρ) :=
+          finsum_mem_congr rfl (fun ρ hρ => (Z.mult_reflect ρ hρ.1.1).symm)
+      _ = ∑ᶠ σ ∈ reflect '' A, Z.mult σ := (finsum_mem_image reflect_injective.injOn).symm
+      _ ≤ ∑ᶠ σ ∈ B, Z.mult σ := Z.finsum_mult_mono T₁ T₂ himage inter_subset_left
+  have hcast : (∑ᶠ ρ ∈ B, (Z.mult ρ : ℝ)) = ((∑ᶠ ρ ∈ B, Z.mult ρ : ℕ) : ℝ) := by
+    rw [finsum_mem_eq_finite_toFinset_sum _ hB, finsum_mem_eq_finite_toFinset_sum _ hB,
+      Nat.cast_sum]
+  rw [hcast, hN]
+  have hAB' : ((∑ᶠ ρ ∈ A, Z.mult ρ : ℕ) : ℝ) ≤ ((∑ᶠ ρ ∈ B, Z.mult ρ : ℕ) : ℝ) := by
+    exact_mod_cast hAB
+  push_cast
+  linarith
+
+end ZeroConfig
+end Zeta23
+```

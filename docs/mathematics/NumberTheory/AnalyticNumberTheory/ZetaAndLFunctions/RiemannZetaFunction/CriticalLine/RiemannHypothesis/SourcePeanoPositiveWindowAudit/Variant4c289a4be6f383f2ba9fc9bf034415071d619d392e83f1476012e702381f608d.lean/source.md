@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoPositiveWindowAudit.Variant4c289a4be6f383f2ba9fc9bf034415071d619d392e83f1476012e702381f608d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f15207da965d5b3a46e379c38463f88fb4a15775` · SHA-256 `4c289a4be6f383f2ba9fc9bf034415071d619d392e83f1476012e702381f608d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePeanoPositiveWindow
+
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_deriv_formula
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_deriv_formula
+#print FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_deriv_formula
+#check FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_formula
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_formula
+#print FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_formula
+#check FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_window
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_window
+#print FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_window
+```

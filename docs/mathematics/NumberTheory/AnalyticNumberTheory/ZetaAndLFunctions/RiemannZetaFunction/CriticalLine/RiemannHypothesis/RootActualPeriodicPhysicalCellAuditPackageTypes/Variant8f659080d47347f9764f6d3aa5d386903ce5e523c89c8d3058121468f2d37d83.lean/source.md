@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualPeriodicPhysicalCellAuditPackageTypes.Variant8f659080d47347f9764f6d3aa5d386903ce5e523c89c8d3058121468f2d37d83
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `43f449a8cedf22d06436e3e6d76a13f3370a9df6` · SHA-256 `a92417e795aa46914910f87dffd0820ce02345ba3a0e370b828954d050cd6f9e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualPeriodicPhysicalCell.Variant33666996b8457da0d85c58db1ee25e23dbb0d03bf637b0e98085a93d9917ecc0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"33666996b8457da0d85c58db1ee25e23dbb0d03bf637b0e98085a93d9917ecc0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualPeriodicPhysicalCell.Variant33666996b8457da0d85c58db1ee25e23dbb0d03bf637b0e98085a93d9917ecc0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"33666996b8457da0d85c58db1ee25e23dbb0d03bf637b0e98085a93d9917ecc0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/RootActualPeriodicPhysicalCellAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualPeriodicPhysicalCell
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualPeriodicPhysicalCell.Variant33666996b8457da0d85c58db1ee25e23dbb0d03bf637b0e98085a93d9917ecc0
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_hasDerivAt
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_deriv
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_deriv
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_deriv_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_deriv_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicColumnEndpointWeight_eq_physical
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicColumnEndpointWeight_eq_physical
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_contDiffOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_contDiffOn
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_zero_right
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_zero_right
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicPhysicalCell.actualPeriodicPhysicalCellProfile_abs_le
+```

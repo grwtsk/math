@@ -1,0 +1,5 @@
+import FormalResearch.RiemannHypothesis.XiZeroTransport
+import FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure
+#print axioms FormalResearch.RiemannHypothesis.XiToeplitz.taylorDescent
+#print axioms FormalResearch.RiemannHypothesis.XiToeplitz.rh_iff_centeredZerosNonpositive
+#print axioms FormalResearch.RiemannHypothesis.ActualPairedProductInfrastructure.tendsto_taylorCoefficient_zero_of_locallyUniform

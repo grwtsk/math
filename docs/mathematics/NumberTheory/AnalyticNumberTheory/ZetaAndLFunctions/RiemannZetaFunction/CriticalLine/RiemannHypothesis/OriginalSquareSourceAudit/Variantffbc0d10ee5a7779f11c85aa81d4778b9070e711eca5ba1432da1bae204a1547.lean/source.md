@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.OriginalSquareSourceAudit.Variantffbc0d10ee5a7779f11c85aa81d4778b9070e711eca5ba1432da1bae204a1547
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db6c965c2469ceb6d487944fdf0262d63af5ad94` · SHA-256 `c1c774eb6c0a86f0a75b38a04ea61184cdff395c7a58cf15a5148557ce8c7d84`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSharpPrimeSquareConsumer.Variant71a588208d12249dc06094bb5c972d6818af48e5eeac4323a62afd47c9c0cde8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"71a588208d12249dc06094bb5c972d6818af48e5eeac4323a62afd47c9c0cde8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSharpPrimeSquareConsumer.Variant71a588208d12249dc06094bb5c972d6818af48e5eeac4323a62afd47c9c0cde8","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"71a588208d12249dc06094bb5c972d6818af48e5eeac4323a62afd47c9c0cde8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/reflection-analysis/independent-sharp-prime-square/OriginalSquareSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSharpPrimeSquareConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSharpPrimeSquareConsumer.Variant71a588208d12249dc06094bb5c972d6818af48e5eeac4323a62afd47c9c0cde8
+
+#print FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.primeSquareMoment
+#print axioms FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.primeSquareMoment
+#print FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.prime_square_source_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.prime_square_source_coefficient
+#print FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.prime_square_mem_source_inventory_iff
+#print axioms FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.prime_square_mem_source_inventory_iff
+#print FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.primeSquareMoment_eq_primeLogWindow
+#print axioms FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm.primeSquareMoment_eq_primeLogWindow
+#print FormalResearch.RiemannHypothesis.SourceDiagonalPrimeAbel.diagonalCorrelation
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalPrimeAbel.diagonalCorrelation
+#print FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalMainCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm.diagonalMainCoefficient
+#print FormalResearch.RiemannHypothesis.SourceCutoffOneLedger.cutoffOnePrimeDiagonal
+#print axioms FormalResearch.RiemannHypothesis.SourceCutoffOneLedger.cutoffOnePrimeDiagonal
+#print FormalResearch.RiemannHypothesis.SourceCutoffOneLedger.cutoffOnePrimeDiagonal_eq_window
+#print axioms FormalResearch.RiemannHypothesis.SourceCutoffOneLedger.cutoffOnePrimeDiagonal_eq_window
+#print RH16CutoffOneSharpTail.cutoffOnePrimeDiagonal_tail_error
+#print axioms RH16CutoffOneSharpTail.cutoffOnePrimeDiagonal_tail_error
+```

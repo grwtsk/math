@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualXiTerminalFractionBudgetAuditPackageTypes.Variant61067e9304dfd839d04ad8423866747560b5276ea3c98874d9ae5c6ee0c5ffa5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eea00580ee22b538cf07959c9e400b6b98dadf31` · SHA-256 `17637e4e2e4827d4ad1352fbe3975bcd772e820012105569826c6cb87b0a598c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualXiTerminalFractionBudget.Variantb8a34d0499421b41b405e07a93d43ce33e0c1a5469301d209a7e70bf5c80ff92","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b8a34d0499421b41b405e07a93d43ce33e0c1a5469301d209a7e70bf5c80ff92","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualXiTerminalFractionBudget.Variantb8a34d0499421b41b405e07a93d43ce33e0c1a5469301d209a7e70bf5c80ff92","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b8a34d0499421b41b405e07a93d43ce33e0c1a5469301d209a7e70bf5c80ff92","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualXiTerminalFractionBudgetAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualXiTerminalFractionBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualXiTerminalFractionBudget.Variantb8a34d0499421b41b405e07a93d43ce33e0c1a5469301d209a7e70bf5c80ff92
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction
+#print axioms FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction
+#check FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_nonneg
+#print axioms FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_nonneg
+#check FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_le_inverse_sqrt
+#print axioms FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_le_inverse_sqrt
+#check FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_le_exponential
+#print axioms FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_le_exponential
+#check FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiTerminalFraction_tendsto_zero
+#check FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiPrimitive_mean_prefix_error
+#print axioms FormalResearch.RiemannHypothesis.ActualXiTerminalFractionBudget.actualXiPrimitive_mean_prefix_error
+```

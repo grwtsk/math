@@ -1,0 +1,151 @@
+# Dsum_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:2ae719cb-3411-f464-bf84-4fa510a31a21",
+  "kind": "theorem",
+  "lexical_name": "Dsum_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "dsum-le--db0b7e048fec0a90ffeb7cf3",
+  "source": {
+    "blob": "3f4bca101844d3aaa2a246e1f56cee795701bb2e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 417,
+    "line": 348,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/NonSquarefree/Varianta1966d3def24ce21d9459c23a396301b24c71906cd33c979d322f873e2a10f1f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:db0b7e048fec0a90ffeb7cf3495c2b674bbc2b57bf67496a043b2485161c96e9",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/NonSquarefree/Varianta1966d3def24ce21d9459c23a396301b24c71906cd33c979d322f873e2a10f1f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2ae719cb-3411-f464-bf84-4fa510a31a21`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 348–417.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem Dsum_le {p : ℕ} (hp : p.Prime) : ∀ (m : ℕ) {u : ℝ}, 0 ≤ u →
+    Dsum (m + 1) p u ≤ (m + 1) * (2 * Real.log p / p) * Gb m u ^ m := by
+  have hlp : 0 ≤ 2 * Real.log p / p :=
+    div_nonneg (mul_nonneg zero_le_two (Real.log_natCast_nonneg p)) (Nat.cast_nonneg p)
+  intro m
+  induction m with
+  | zero =>
+      intro u hu
+      -- D_1 = Σ_{d: p|d} Λ d/d ≤ 2 log p/p
+      unfold Dsum
+      rw [pow_one]
+      have := sum_dvd_vonMangoldt_div_le hp ⌊Real.exp u⌋₊
+      unfold SdivP
+      simpa using this
+  | succ m ih =>
+      intro u hu
+      have hrec := SdivP_mul_le (g := Λ) (f := Λ ^ (m + 1)) vonMangoldt_nonneg' (lamPow_nonneg (m + 1))
+        (fun N => p ∣ N) (fun d => p ∣ d) (fun _ e => p ∣ e)
+        (fun d e _ _ h => (Nat.Prime.dvd_mul hp).mp h) u
+      rw [← pow_succ'] at hrec
+      unfold Dsum
+      refine hrec.trans ?_
+      -- first sum ≤ (2 log p/p)·Gb m u ^ (m+1)... we bound Sdiv (Λ^(m+1)) (u - log d) ≤ Gb (m+1) u ^ (m+1)
+      have hG0 : 0 ≤ Gb (m + 1) u := Gb_nonneg hu
+      have h1 : ∑ d ∈ (Ioc 0 ⌊Real.exp u⌋₊).filter (fun d => p ∣ d), Λ d / d * Sdiv (Λ ^ (m + 1)) (u - Real.log d)
+          ≤ (2 * Real.log p / p) * Gb (m + 1) u ^ (m + 1) := by
+        calc ∑ d ∈ (Ioc 0 ⌊Real.exp u⌋₊).filter (fun d => p ∣ d), Λ d / d * Sdiv (Λ ^ (m + 1)) (u - Real.log d)
+            ≤ ∑ d ∈ (Ioc 0 ⌊Real.exp u⌋₊).filter (fun d => p ∣ d), Λ d / d * Gb (m + 1) u ^ (m + 1) := by
+              refine sum_le_sum fun d hd => ?_
+              have hd' := (mem_filter.mp hd).1
+              have hlog : Real.log d ≤ u := log_le_of_mem_Ioc_floor_exp hd'
+              have hlog0 : 0 ≤ Real.log d := Real.log_natCast_nonneg d
+              refine mul_le_mul_of_nonneg_left ?_ (div_nonneg ArithmeticFunction.vonMangoldt_nonneg (Nat.cast_nonneg d))
+              refine (Sdiv_lamPow_le (m + 1) (by linarith)).trans ?_
+              refine (pow_bound_le_Gb_pow (by linarith)).trans ?_
+              exact pow_le_pow_left₀ (Gb_nonneg (by linarith)) (Gb_mono_u _ (by linarith)) _
+          _ = (∑ d ∈ (Ioc 0 ⌊Real.exp u⌋₊).filter (fun d => p ∣ d), Λ d / d) * Gb (m + 1) u ^ (m + 1) := by
+              rw [sum_mul]
+          _ ≤ (2 * Real.log p / p) * Gb (m + 1) u ^ (m + 1) :=
+              mul_le_mul_of_nonneg_right (sum_dvd_vonMangoldt_div_le hp _) (pow_nonneg hG0 _)
+      have h2 : ∑ d ∈ Ioc 0 ⌊Real.exp u⌋₊, Λ d / d * SdivP (Λ ^ (m + 1)) (fun e => p ∣ e) (u - Real.log d)
+          ≤ (u + KM) * ((m + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ m) := by
+        calc ∑ d ∈ Ioc 0 ⌊Real.exp u⌋₊, Λ d / d * SdivP (Λ ^ (m + 1)) (fun e => p ∣ e) (u - Real.log d)
+            ≤ ∑ d ∈ Ioc 0 ⌊Real.exp u⌋₊, Λ d / d * ((m + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ m) := by
+              refine sum_le_sum fun d hd => ?_
+              have hlog : Real.log d ≤ u := log_le_of_mem_Ioc_floor_exp hd
+              have hlog0 : 0 ≤ Real.log d := Real.log_natCast_nonneg d
+              refine mul_le_mul_of_nonneg_left ?_ (div_nonneg ArithmeticFunction.vonMangoldt_nonneg (Nat.cast_nonneg d))
+              have ih' := ih (u := u - Real.log d) (by linarith)
+              unfold Dsum at ih'
+              refine ih'.trans ?_
+              refine mul_le_mul_of_nonneg_left ?_ (mul_nonneg (by positivity) hlp)
+              exact pow_le_pow_left₀ (Gb_nonneg (by linarith))
+                ((Gb_mono_u m (by linarith : u - Real.log d ≤ u)).trans (by rw [Gb_succ]; linarith [KM_nonneg])) m
+          _ = Sdiv Λ u * ((m + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ m) := by
+              rw [← sum_mul]; rfl
+          _ ≤ (u + KM) * ((m + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ m) :=
+              mul_le_mul_of_nonneg_right (Sdiv_lam_le hu)
+                (mul_nonneg (mul_nonneg (by positivity) hlp) (pow_nonneg hG0 m))
+      have hGK : u + KM ≤ Gb (m + 1) u := u_add_KM_le_Gb _ _
+      calc _ ≤ (2 * Real.log p / p) * Gb (m + 1) u ^ (m + 1)
+            + (u + KM) * ((m + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ m) := add_le_add h1 h2
+        _ ≤ (2 * Real.log p / p) * Gb (m + 1) u ^ (m + 1)
+            + Gb (m + 1) u * ((m + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ m) := by
+            gcongr
+        _ = (↑(m + 1) + 1) * (2 * Real.log p / p) * Gb (m + 1) u ^ (m + 1) := by push_cast; ring
+
+/-! ### the non-squarefree sums:  Nsf m u := Σ_{N ≤ e^u, N not squarefree} Λ^{∗m}(N)/N -/
+
+/-- Σ_{N≤e^u, ¬Squarefree N} Λ^{∗m}(N)/N. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/NumberTheory/AnalyticNumberTheory/NonSquarefree/Varianta1966d3def24ce21d9459c23a396301b24c71906cd33c979d322f873e2a10f1f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/NonSquarefree/Varianta1966d3def24ce21d9459c23a396301b24c71906cd33c979d322f873e2a10f1f.lean#L348).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3f4bca101844d3aaa2a246e1f56cee795701bb2e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

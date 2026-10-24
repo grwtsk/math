@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointColumnTraceAudit.Variant0f35c5271e03c23cc4f123b11257a8c40e879c0703750fd9487215a0ae87e70e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `02c05a6028c648037ffee04546526e856574c201` · SHA-256 `91926c33c121a94ea6ff4a7ed7f7c459ceadcd40daa02c0f485404cf1506d7f5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointColumnTrace.Variant644360e0e0ae4f5b44365de9f6cb636b972a7de2852e611f6ec3acaf13cd7c05","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"644360e0e0ae4f5b44365de9f6cb636b972a7de2852e611f6ec3acaf13cd7c05","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAdjointColumnTrace.Variant644360e0e0ae4f5b44365de9f6cb636b972a7de2852e611f6ec3acaf13cd7c05","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"644360e0e0ae4f5b44365de9f6cb636b972a7de2852e611f6ec3acaf13cd7c05","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T213612Z-1791322572795064000/SourceActualAdjointColumnTraceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAdjointColumnTrace
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointColumnTrace.Variant644360e0e0ae4f5b44365de9f6cb636b972a7de2852e611f6ec3acaf13cd7c05
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnTerminalTrace
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnTerminalTrace
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualAdjointColumnPrimitive_at_lower_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualAdjointColumnPrimitive_at_lower_closed_inventory
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory_sub_terminal_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory_sub_terminal_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualAdjointColumnPrimitive_at_lower_abs_le_refined
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualAdjointColumnPrimitive_at_lower_abs_le_refined
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnTerminalTrace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnTerminalTrace_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory_abs_le_cutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory_abs_le_cutoff
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory_abs_le_scale
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointColumnTrace.actualCenteredColumnHalfInventory_abs_le_scale
+```

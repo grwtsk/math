@@ -1,0 +1,86 @@
+# Verification target: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FormalResearchRiemannHypothesisSourcePairedPrimeAverages.Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5d25812e9e386f38eec2e431377eeb2bd5e309e6",
+  "lexical_observation_count": 25,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/index.md) · [Full source](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5d25812e9e386f38eec2e431377eeb2bd5e309e6`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourcePairedPrimeWork` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [negativeErrorMean](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/negativeerrormean--474a990aefd6c8397b64761b.md) | 33 | `declaration-track:474a990aefd6c8397b64761bd0b5d33ae3df91e7e45185d5ce2e5464d6ee9be2` |
+| 2 | `def` | [pairedErrorContrast](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/pairederrorcontrast--ccd0925611de6cd45d674997.md) | 36 | `declaration-track:ccd0925611de6cd45d674997eb17c7e2cbb41647822de7920f5bf80ceb2da14e` |
+| 3 | `def` | [PairedContrastTailLowerBound](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/pairedcontrasttaillowerbound--a324a1f281456b33c1fb997a.md) | 41 | `declaration-track:a324a1f281456b33c1fb997a32954b5329fd5a416f99bed1f7f07723542723b3` |
+| 4 | `theorem` | [negativeMass_ge_one](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/negativemass-ge-one--2bfa92c3f2e281e71d159938.md) | 45 | `result-track:2bfa92c3f2e281e71d1599385b88c82bb85d5bf66088fa451b8ae826aa4cb6af` |
+| 5 | `theorem` | [negativeMass_pos](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/negativemass-pos--4f1294d8538b8357051a1ac0.md) | 49 | `result-track:4f1294d8538b8357051a1ac0923a585667773e60bfccaa91423f690dc1a2f868` |
+| 6 | `theorem` | [contrast_inner_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/contrast-inner-eq--155947a5600e6d6e2e42a1df.md) | 53 | `result-track:155947a5600e6d6e2e42a1df622ad77ff37fac5347d615293570a8bc2465e98f` |
+| 7 | `theorem` | [contrast_outer_intervalIntegrable](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/contrast-outer-intervalintegrable--f99d1c718c9a5c0cf89c5664.md) | 68 | `result-track:f99d1c718c9a5c0cf89c5664f5a66f5b4a02ceb914b7543794755b829538f0c5` |
+| 8 | `theorem` | [contrast_integral_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/contrast-integral-eq--7bb5c4487139f495e1a117be.md) | 84 | `result-track:7bb5c4487139f495e1a117beebca18746f728419fd8c914fec724df31a73b392` |
+| 9 | `theorem` | [pairedErrorContrast_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/pairederrorcontrast-eq--3f9d5dab7300e8c1264df100.md) | 101 | `result-track:3f9d5dab7300e8c1264df10062a4f67dd9289bb01ba25a592168e9a8ce155184` |
+| 10 | `theorem` | [criticalSignedWork_eq_contrast_sub_mean](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/criticalsignedwork-eq-contrast-sub-mean--f291a3c0f35b407e5f458d28.md) | 107 | `result-track:f291a3c0f35b407e5f458d2812cc223140acb11302e6e732890ab1f093fe78bf` |
+| 11 | `theorem` | [negativeSlopeWork_abs_le_mass](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/negativeslopework-abs-le-mass--9e57c5a1b3040347108e202c.md) | 118 | `result-track:9e57c5a1b3040347108e202c82ca6d9260d996e118c087d21aab64be2ee4c680` |
+| 12 | `theorem` | [negativeErrorMean_abs_le](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/negativeerrormean-abs-le--1f5a0ff102be82b299d299e0.md) | 133 | `result-track:1f5a0ff102be82b299d299e07693e50aadff93deea882e75687480b03f93a178` |
+| 13 | `theorem` | [negativeErrorMean_uniformly_bounded](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/negativeerrormean-uniformly-bounded--d03e148c511487e9db8822d3.md) | 141 | `result-track:d03e148c511487e9db8822d32b2a0ba647d05665442449bffad443dfb9663e3b` |
+| 14 | `theorem` | [firstPrimeStorageSurplus_eq_contrast](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/firstprimestoragesurplus-eq-contrast--7c6ceeb4002046803ab24e4f.md) | 147 | `result-track:7c6ceeb4002046803ab24e4fba4ace5d498bc1363f95c8ab79f1f5d2adab6866` |
+| 15 | `theorem` | [primeError_difference_window](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/primeerror-difference-window--f09c2cff4e28810ec9ffdc6c.md) | 157 | `result-track:f09c2cff4e28810ec9ffdc6cf57bc679b356b198e9234576b2a9a539d444ce5d` |
+| 16 | `theorem` | [pairedErrorContrast_eq_prime_window](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/pairederrorcontrast-eq-prime-window--93821eb2f06cb095dc2b2b74.md) | 163 | `result-track:93821eb2f06cb095dc2b2b746213ba47a1ca7023102c5343bf5a4b4df2935af5` |
+| 17 | `theorem` | [primeError_difference_before_first](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/primeerror-difference-before-first--c6841441c722998a350e8878.md) | 171 | `result-track:c6841441c722998a350e887842c479e44a08ecb378ea586652922fa401660cad` |
+| 18 | `theorem` | [primeError_negative_difference_fixture](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/primeerror-negative-difference-fixture--2e0c5a02e321d7823cc676fb.md) | 178 | `result-track:2e0c5a02e321d7823cc676fb06c578119839c62c66adcc44a4754933c3797ba5` |
+| 19 | `def` | [centeredNegativeErrorMean](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/centerednegativeerrormean--f698eaa7be1b16376c47d819.md) | 185 | `declaration-track:f698eaa7be1b16376c47d819eefe117d7e87f6e872a823a28ce73fb1ccd9a39b` |
+| 20 | `def` | [centeredPairedErrorContrast](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/centeredpairederrorcontrast--240a891dc2d0095f01380480.md) | 188 | `declaration-track:240a891dc2d0095f013804807ca00236ac29120a98eb1400123e263ac34bfef9` |
+| 21 | `theorem` | [centeredPairedErrorContrast_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/centeredpairederrorcontrast-eq--2c13b6d02d5b614e2076cf39.md) | 193 | `result-track:2c13b6d02d5b614e2076cf39551ca1880980c137152d66a645db23e26b824131` |
+| 22 | `theorem` | [centeredNegativeErrorMean_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/centerednegativeerrormean-eq--6e0c55bd63eea7f72c423ae3.md) | 198 | `result-track:6e0c55bd63eea7f72c423ae3e6fd988788de8537a690ba65f1613910bc4f57ad` |
+| 23 | `theorem` | [criticalSignedWork_eq_centered_contrast](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/criticalsignedwork-eq-centered-contrast--eba149a014b649889cbd2037.md) | 205 | `result-track:eba149a014b649889cbd2037375a5ea1036d0c8cb50b5bfaab9597682beafe6e` |
+| 24 | `theorem` | [pairedContrast_tail_iff_criticalAbel_tail](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/pairedcontrast-tail-iff-criticalabel-tail--dbec6e4cfb1b11debb40838a.md) | 213 | `result-track:dbec6e4cfb1b11debb40838a6a51776bb14c582b7907b65253543378054ec10a` |
+| 25 | `theorem` | [mertens_residual_tail_iff_pairedContrast_tail](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FormalResearchRiemannHypothesisSourcePairedPrimeAverages/Variant34c28958d611b6eceea9a5a3b62e368f28b23b51ee79d67a1defd8fb92236b2a.lean/declarations/mertens-residual-tail-iff-pairedcontrast-tail--4700bf0068df23c5f331f2c5.md) | 234 | `result-track:4700bf0068df23c5f331f2c5e847bc0b659fb1b5f933fee8c0f1197e70b4a7fb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

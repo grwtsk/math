@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualDoubleMixedKernelAuditTypes.Variant8f194b11c1ff341400471edffe46e30d34ab3edb9cc6284a5914d039a0183568
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e08a48b9f69e7481fbea2e4b476ce83634f0782a` · SHA-256 `8ae3ac8b34f86fc3830006344ce9a8eaf6c83cb858cc36e1b9f33cc57886e386`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualDoubleMixedKernel.Variant2794891d94b2d67ea04c58417f45dee52fa453841d49df96ba9fd24f67195896","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2794891d94b2d67ea04c58417f45dee52fa453841d49df96ba9fd24f67195896","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualDoubleMixedKernel.Variant2794891d94b2d67ea04c58417f45dee52fa453841d49df96ba9fd24f67195896","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"2794891d94b2d67ea04c58417f45dee52fa453841d49df96ba9fd24f67195896","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualDoubleMixedKernelAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualDoubleMixedKernel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualDoubleMixedKernel.Variant2794891d94b2d67ea04c58417f45dee52fa453841d49df96ba9fd24f67195896
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogColumnSource
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogColumnSource
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogMixedDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogMixedDensity
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogFourthKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogFourthKernel
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogColumnSource_mixed_derivative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogColumnSource_mixed_derivative
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogMixedDensity_mixed_derivative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogMixedDensity_mixed_derivative
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogColumnSource_at_log
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogColumnSource_at_log
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogFourthKernel_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogFourthKernel_at_zero
+#check FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogFourthKernel_at_zero_ge
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel.actualLogFourthKernel_at_zero_ge
+```

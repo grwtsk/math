@@ -1,0 +1,92 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRationalAudit.Variant70451b85673ed005ad88c2c35b018fb97e7c8f4c1f216ced4b9a7392beb48fa3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c2c5571b0df786aba08f866a772c435ca6125b0f` · SHA-256 `02297bf22fc2918ef60e41ef8f5c09f100aa873729f163e8a10b1182b67fef5d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRationalCompensation.Variant42096b2906eeb969b65f1620a919cc535ccda2d239ea6da63c84a95b19cf9a08","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"42096b2906eeb969b65f1620a919cc535ccda2d239ea6da63c84a95b19cf9a08","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceRationalCompensation.Variant42096b2906eeb969b65f1620a919cc535ccda2d239ea6da63c84a95b19cf9a08","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"42096b2906eeb969b65f1620a919cc535ccda2d239ea6da63c84a95b19cf9a08","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-signed-cycle-20261006/rational/historical-audit-v1/SourceRationalAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceRationalCompensation
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRationalCompensation.Variant42096b2906eeb969b65f1620a919cc535ccda2d239ea6da63c84a95b19cf9a08
+
+set_option linter.hashCommand false
+set_option pp.all true
+
+namespace FormalResearch.RiemannHypothesis.SourceRationalContinuousHalf
+
+#check continuousPoleHalf_eq_interval
+#print continuousPoleHalf_eq_interval
+#print axioms continuousPoleHalf_eq_interval
+
+#check continuousPoleHalf_eq_neg_negative
+#print continuousPoleHalf_eq_neg_negative
+#print axioms continuousPoleHalf_eq_neg_negative
+
+#check continuousPoleHalf_abs_le_two
+#print continuousPoleHalf_abs_le_two
+#print axioms continuousPoleHalf_abs_le_two
+
+#check rationalKernel_eq_laplace
+#print rationalKernel_eq_laplace
+#print axioms rationalKernel_eq_laplace
+
+#check rationalReadout_product_integrable
+#print rationalReadout_product_integrable
+#print axioms rationalReadout_product_integrable
+
+#check native_rational_readout_eq_continuousPoleHalf
+#print native_rational_readout_eq_continuousPoleHalf
+#print axioms native_rational_readout_eq_continuousPoleHalf
+
+end FormalResearch.RiemannHypothesis.SourceRationalContinuousHalf
+
+namespace FormalResearch.RiemannHypothesis.SourceRationalCompensation
+
+#check rationalKernel_norm_le_one
+#print rationalKernel_norm_le_one
+#print axioms rationalKernel_norm_le_one
+
+#check rationalRemainderMultiplier_norm_le
+#print rationalRemainderMultiplier_norm_le
+#print axioms rationalRemainderMultiplier_norm_le
+
+#check native_rational_integrable
+#print native_rational_integrable
+#print axioms native_rational_integrable
+
+#check rationalRemainderIntegrand_integrable
+#print rationalRemainderIntegrand_integrable
+#print axioms rationalRemainderIntegrand_integrable
+
+#check angularContour_eq_rational
+#print angularContour_eq_rational
+#print axioms angularContour_eq_rational
+
+#check mertensResidual_eq_rational
+#print mertensResidual_eq_rational
+#print axioms mertensResidual_eq_rational
+
+#check rationalBaseline_upper
+#print rationalBaseline_upper
+#print axioms rationalBaseline_upper
+
+#check mertensResidual_upper_of_rational
+#print mertensResidual_upper_of_rational
+#print axioms mertensResidual_upper_of_rational
+
+#check mertens_residual_tail_of_rational
+#print mertens_residual_tail_of_rational
+#print axioms mertens_residual_tail_of_rational
+
+#check estimate_of_rational_remainder
+#print estimate_of_rational_remainder
+#print axioms estimate_of_rational_remainder
+
+end FormalResearch.RiemannHypothesis.SourceRationalCompensation
+```

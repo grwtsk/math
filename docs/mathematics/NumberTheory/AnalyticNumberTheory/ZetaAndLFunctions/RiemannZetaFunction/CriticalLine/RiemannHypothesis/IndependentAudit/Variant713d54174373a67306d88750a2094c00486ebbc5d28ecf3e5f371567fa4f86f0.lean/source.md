@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentAudit.Variant713d54174373a67306d88750a2094c00486ebbc5d28ecf3e5f371567fa4f86f0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f4b757fce6b6d6111ade9a3e36a0c67fcb9c7f60` · SHA-256 `713d54174373a67306d88750a2094c00486ebbc5d28ecf3e5f371567fa4f86f0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceExactOverlapSamplingConsumer
+#print RH16ExactOverlapSamplingConsumer.exactSamplingLedgerCost
+#print axioms RH16ExactOverlapSamplingConsumer.exactSamplingLedgerCost
+#print RH16ExactOverlapSamplingConsumer.exactOverlapSamplingResidualBudget
+#print axioms RH16ExactOverlapSamplingConsumer.exactOverlapSamplingResidualBudget
+#print RH16ExactOverlapSamplingConsumer.exactSamplingLedgerCost_nonneg
+#print axioms RH16ExactOverlapSamplingConsumer.exactSamplingLedgerCost_nonneg
+#print RH16ExactOverlapSamplingConsumer.exactOverlapSamplingResidualBudget_nonneg
+#print axioms RH16ExactOverlapSamplingConsumer.exactOverlapSamplingResidualBudget_nonneg
+#print RH16ExactOverlapSamplingConsumer.residual_tail_of_overlap_with_exact_sampling
+#print axioms RH16ExactOverlapSamplingConsumer.residual_tail_of_overlap_with_exact_sampling
+#print RH16ExactOverlapSamplingConsumer.all_real_lower_of_overlap_with_exact_sampling
+#print axioms RH16ExactOverlapSamplingConsumer.all_real_lower_of_overlap_with_exact_sampling
+#print RH16ExactOverlapSamplingConsumer.estimate_of_overlap_with_exact_sampling
+#print axioms RH16ExactOverlapSamplingConsumer.estimate_of_overlap_with_exact_sampling
+```

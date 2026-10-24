@@ -1,0 +1,15 @@
+import PrimeAtomDecoder
+set_option pp.proofs false
+
+#print RH16Tandem.PrimeAtomDecoder.prime_resolving_error
+#print axioms RH16Tandem.PrimeAtomDecoder.prime_resolving_error
+
+#print RH16Tandem.PrimeAtomDecoder.primeCorrected_readout_error
+#print axioms RH16Tandem.PrimeAtomDecoder.primeCorrected_readout_error
+
+#print RH16Tandem.PrimeAtomDecoder.primeCorrected_readout_increment
+#print axioms RH16Tandem.PrimeAtomDecoder.primeCorrected_readout_increment
+
+#print RH16Tandem.PrimeAtomDecoder.prime_decoder_tail_transfer
+#print axioms RH16Tandem.PrimeAtomDecoder.prime_decoder_tail_transfer
+

@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Varianteb4ed687c1e8808b0461ae73de5873eeeb561410fe0213ae193ae281b275b11f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2534e9d85437966f8bed8670772935cc1bd9fefc` · SHA-256 `8af4663932b3cd2826057f78539b21bdb7e17df338bda7796770b63889e664e3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.Variant978baec0f02c81117845b5f1a86bdccc18038a281abfc2703447b1b96e37b337","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"978baec0f02c81117845b5f1a86bdccc18038a281abfc2703447b1b96e37b337","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPhysicalPeriodicPrimitive.Variant978baec0f02c81117845b5f1a86bdccc18038a281abfc2703447b1b96e37b337","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"978baec0f02c81117845b5f1a86bdccc18038a281abfc2703447b1b96e37b337","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-physical-periodic-primitive/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPhysicalPeriodicPrimitive
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.Variant978baec0f02c81117845b5f1a86bdccc18038a281abfc2703447b1b96e37b337
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualDivisorPeriodicResidual_abs_le_half
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_measurable
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_eq_original_prefix
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_at_integer
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_eq_affine
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actual_physical_prefix_abel
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actual_physical_prefix_abel_abs_le
+```

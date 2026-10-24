@@ -1,0 +1,14 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.DoubledPrefixProofs.Variant8b3baa8daec354ea21a741b911b0e722ed63050723838e7654fdb97f6379c493
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4f488fc99d43d464bea8be2b0cd3f55ff1f5eaa8` · SHA-256 `8b3baa8daec354ea21a741b911b0e722ed63050723838e7654fdb97f6379c493`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceStrictComplementaryDoubledPrefix
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.strictDivisorLogCoefficient_zero_of_le_two_mul_add_one
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.shortDivisorCumulative_eq_psi_of_floor_le_two_mul_add_one
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.complementaryCumulative_eq_neg_floor_of_floor_le_two_mul_add_one
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.complementaryCumulative_eq_neg_floor_before_first_atom
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.strictDivisorLogCoefficient_first_possible_atom
+```

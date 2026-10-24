@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMoebiusCosineFrequencyAudit.Variant3c57321d44374f0b2c4f18b825f2f3a0f0c75965f736201cdf01d433f84c89f9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `520ac5c61559af3f8671220f2c4d2429eabec417` · SHA-256 `8dd05e7532f7b6c59762f7119a8bb59864a5637415f2a95a07ab783bb93f394a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMoebiusCosineFrequency.Variant138fb2a5a95ba0a299bcfc5017ceb07b4597e9a7d089adfae1a9cc5ae44ca1f7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"138fb2a5a95ba0a299bcfc5017ceb07b4597e9a7d089adfae1a9cc5ae44ca1f7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMoebiusCosineFrequency.Variant138fb2a5a95ba0a299bcfc5017ceb07b4597e9a7d089adfae1a9cc5ae44ca1f7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"138fb2a5a95ba0a299bcfc5017ceb07b4597e9a7d089adfae1a9cc5ae44ca1f7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T202953Z-1791318593058025000/SourceActualMoebiusCosineFrequencyAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMoebiusCosineFrequency
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMoebiusCosineFrequency.Variant138fb2a5a95ba0a299bcfc5017ceb07b4597e9a7d089adfae1a9cc5ae44ca1f7
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two_pi
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two_pi
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_not_uniform_unit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_not_uniform_unit
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine
+#print FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two
+#print FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two_pi
+#print FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_not_uniform_unit
+```

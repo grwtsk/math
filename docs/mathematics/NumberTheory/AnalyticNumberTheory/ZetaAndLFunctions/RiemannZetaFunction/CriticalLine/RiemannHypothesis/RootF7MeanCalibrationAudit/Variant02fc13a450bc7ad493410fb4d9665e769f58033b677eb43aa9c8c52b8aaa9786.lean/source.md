@@ -1,0 +1,121 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootF7MeanCalibrationAudit.Variant02fc13a450bc7ad493410fb4d9665e769f58033b677eb43aa9c8c52b8aaa9786
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dc536b0b5e84d8a43d445d84c772a70a122ce64c` · SHA-256 `02fc13a450bc7ad493410fb4d9665e769f58033b677eb43aa9c8c52b8aaa9786`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualF7MeanConsumer
+
+set_option linter.style.setOption false
+set_option pp.all true
+set_option linter.hashCommand false
+
+#check RH16F7TailCalibration.physicalCurvatureCoefficient
+#print axioms RH16F7TailCalibration.physicalCurvatureCoefficient
+
+#check RH16F7TailCalibration.meanTailBudget
+#print axioms RH16F7TailCalibration.meanTailBudget
+
+#check RH16F7TailCalibration.meanAtomBudget
+#print axioms RH16F7TailCalibration.meanAtomBudget
+
+#check RH16F7TailCalibration.meanResidualBudget
+#print axioms RH16F7TailCalibration.meanResidualBudget
+
+#check RH16F7TailCalibration.calibratedRadius_pos
+#print axioms RH16F7TailCalibration.calibratedRadius_pos
+
+#check RH16F7TailCalibration.calibratedRadius_idempotent
+#print axioms RH16F7TailCalibration.calibratedRadius_idempotent
+
+#check RH16F7TailCalibration.meanTailBudget_nonneg
+#print axioms RH16F7TailCalibration.meanTailBudget_nonneg
+
+#check RH16F7TailCalibration.meanAtomBudget_eq
+#print axioms RH16F7TailCalibration.meanAtomBudget_eq
+
+#check RH16F7TailCalibration.meanAtomBudget_nonneg
+#print axioms RH16F7TailCalibration.meanAtomBudget_nonneg
+
+#check RH16F7TailCalibration.dynamic_mean_budget_le
+#print axioms RH16F7TailCalibration.dynamic_mean_budget_le
+
+#check RH16F7TailCalibration.complete_tail_lower_at_calibrated_radius
+#print axioms RH16F7TailCalibration.complete_tail_lower_at_calibrated_radius
+
+#check RH16F7TailCalibration.calibratedRadius_forty
+#print axioms RH16F7TailCalibration.calibratedRadius_forty
+
+#check RH16F7TailCalibration.meanTailBudget_forty
+#print axioms RH16F7TailCalibration.meanTailBudget_forty
+
+#check RH16F7TailCalibration.meanTailBudget_ninety_one
+#print axioms RH16F7TailCalibration.meanTailBudget_ninety_one
+
+#check RH16F7TailCalibration.remaining_lower_of_dynamic_mean
+#print axioms RH16F7TailCalibration.remaining_lower_of_dynamic_mean
+
+#check RH16F7TailCalibration.atom_witness_of_dynamic_mean
+#print axioms RH16F7TailCalibration.atom_witness_of_dynamic_mean
+
+#check RH16F7TailCalibration.all_real_lower_of_dynamic_mean
+#print axioms RH16F7TailCalibration.all_real_lower_of_dynamic_mean
+
+#check RH16F7TailCalibration.estimate_of_dynamic_mean
+#print axioms RH16F7TailCalibration.estimate_of_dynamic_mean
+
+#check RH16F7TailCalibration.residual_upper_of_dynamic_mean
+#print axioms RH16F7TailCalibration.residual_upper_of_dynamic_mean
+
+#check RH16F7TailCalibration.actual_leading_upper_of_dynamic_mean
+#print axioms RH16F7TailCalibration.actual_leading_upper_of_dynamic_mean
+
+#check RH16ActualF7Mean.physicalCurvatureWeight
+#print axioms RH16ActualF7Mean.physicalCurvatureWeight
+
+#check RH16ActualF7Mean.physicalWeightBudget
+#print axioms RH16ActualF7Mean.physicalWeightBudget
+
+#check RH16ActualF7Mean.actualF7MeanBound
+#print axioms RH16ActualF7Mean.actualF7MeanBound
+
+#check RH16ActualF7Mean.physicalWeightBudget_nonneg
+#print axioms RH16ActualF7Mean.physicalWeightBudget_nonneg
+
+#check RH16ActualF7Mean.physicalCurvatureWeight_abs_le
+#print axioms RH16ActualF7Mean.physicalCurvatureWeight_abs_le
+
+#check RH16ActualF7Mean.actualF7_abs_intervalIntegrable
+#print axioms RH16ActualF7Mean.actualF7_abs_intervalIntegrable
+
+#check RH16ActualF7Mean.complete_tail_abs_le_weighted_F7_mass
+#print axioms RH16ActualF7Mean.complete_tail_abs_le_weighted_F7_mass
+
+#check RH16ActualF7Mean.complete_tail_abs_le_of_mean
+#print axioms RH16ActualF7Mean.complete_tail_abs_le_of_mean
+
+#check RH16ActualF7Mean.complete_tail_lower_of_mean
+#print axioms RH16ActualF7Mean.complete_tail_lower_of_mean
+
+#check RH16ActualF7Mean.complete_tail_lower_of_mean_at_Rstar
+#print axioms RH16ActualF7Mean.complete_tail_lower_of_mean_at_Rstar
+
+#check RH16ActualF7Mean.remaining_lower_of_actual_mean
+#print axioms RH16ActualF7Mean.remaining_lower_of_actual_mean
+
+#check RH16ActualF7Mean.atom_witness_of_actual_mean
+#print axioms RH16ActualF7Mean.atom_witness_of_actual_mean
+
+#check RH16ActualF7Mean.all_real_lower_of_actual_mean
+#print axioms RH16ActualF7Mean.all_real_lower_of_actual_mean
+
+#check RH16ActualF7Mean.estimate_of_actual_mean
+#print axioms RH16ActualF7Mean.estimate_of_actual_mean
+
+#check RH16ActualF7Mean.residual_upper_of_actual_mean
+#print axioms RH16ActualF7Mean.residual_upper_of_actual_mean
+
+#check RH16ActualF7Mean.actual_leading_upper_of_actual_mean
+#print axioms RH16ActualF7Mean.actual_leading_upper_of_actual_mean
+```

@@ -1,0 +1,89 @@
+# zeta_pole_weighted_limit
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:3cab8ddf-2a19-9373-f66a-17d42e7cacbf",
+  "kind": "theorem",
+  "lexical_name": "zeta_pole_weighted_limit",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "zeta-pole-weighted-limit--bf032ab87c08aeeb63a9a125",
+  "source": {
+    "blob": "62929bd650a69d4f930d0b8d90577c3af75734dc",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 88,
+    "line": 81,
+    "path": "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalLogarithmicResidues.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:bf032ab87c08aeeb63a9a125e3a2920e17c17a10bb410b54cddee0d402bf04c8",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Zeta/Riemann/CanonicalLogarithmicResidues.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:3cab8ddf-2a19-9373-f66a-17d42e7cacbf`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 81–88.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem zeta_pole_weighted_limit (F : ℂ → ℂ) (hF : ContinuousAt F 1) :
+    Tendsto (fun s => (s - 1) * (-logDeriv riemannZeta s * F s))
+      (𝓝[≠] (1 : ℂ)) (𝓝 (F 1)) := by
+  simpa using tendsto_scaled_weighted_neg_logDeriv riemannZeta F 1 1
+    zeta_pole_scaled_limit hF
+
+/-- Mathlib's totalized quotient is zero at the zero itself. This is not its
+logarithmic residue and is not used in the punctured-limit proofs. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/NumberTheory/Zeta/Riemann/CanonicalLogarithmicResidues.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalLogarithmicResidues.lean#L81).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `62929bd650a69d4f930d0b8d90577c3af75734dc` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

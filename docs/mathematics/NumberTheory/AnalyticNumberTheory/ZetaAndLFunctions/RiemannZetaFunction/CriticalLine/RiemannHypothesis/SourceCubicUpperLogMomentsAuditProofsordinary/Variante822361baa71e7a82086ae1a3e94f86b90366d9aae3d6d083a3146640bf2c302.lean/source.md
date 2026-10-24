@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicUpperLogMomentsAuditProofsordinary.Variante822361baa71e7a82086ae1a3e94f86b90366d9aae3d6d083a3146640bf2c302
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1cb66f93b1b52288ab6ef72fdc74f5858ddcfe70` · SHA-256 `f3154ec0786783bfa64be34e034f64c4440ee2a1f8993aac91bd730728c8ebc0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicUpperLogMoments.Variant8f2e5bea611403400a2821bd9036a78636ad94f5c9e9c12e5495f271d7a84de0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8f2e5bea611403400a2821bd9036a78636ad94f5c9e9c12e5495f271d7a84de0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCubicUpperLogMoments.Variant8f2e5bea611403400a2821bd9036a78636ad94f5c9e9c12e5495f271d7a84de0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"8f2e5bea611403400a2821bd9036a78636ad94f5c9e9c12e5495f271d7a84de0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceCubicUpperLogMomentsAuditProofsordinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCubicUpperLogMoments
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicUpperLogMoments.Variant8f2e5bea611403400a2821bd9036a78636ad94f5c9e9c12e5495f271d7a84de0
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.upperLogWeight
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.exp_mul_upperLogWeight
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.upperLogWeight_integral
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.upperLogWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.upperLogWeight_nonneg
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.upper_fourth_log_moment
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.upper_fifth_log_moment
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.cubicUpperMajorant
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.cubicUpperMajorant_integrable
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.cubicUpperMajorant_nonneg
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.cubicUpperMajorant_integral
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.centeredSawtooth
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.centeredSawtooth_abs_le_half
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.centeredSawtooth_measurable
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.centered_cubic_row_integrable_of_bound
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.centered_cubic_row_abs_le_of_bound
+#print FormalResearch.RiemannHypothesis.SourceCubicUpperLogMoments.full_short_divisor_row_sum_abs_le
+```

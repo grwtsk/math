@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualComplexEndpointCoefficientTypesAxioms.Variantab35297ca9bb6a3c83286f11e5ddec4307ee5221ac42342c7f955645c86eb21a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f15b6774bbbb75363a1c8a41e1a149d51d89f8b8` · SHA-256 `5b7fcf6308f8ec74f2419c16862af57f822292c51115c85f3971168306bfa757`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualComplexEndpointCoefficient.Variantbcd638547e754b7c55ac2068ff295dd047db952641a0cfc5a626c4e2979df6eb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bcd638547e754b7c55ac2068ff295dd047db952641a0cfc5a626c4e2979df6eb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualComplexEndpointCoefficient.Variantbcd638547e754b7c55ac2068ff295dd047db952641a0cfc5a626c4e2979df6eb","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"bcd638547e754b7c55ac2068ff295dd047db952641a0cfc5a626c4e2979df6eb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-monotone-kernel-probe/SourceActualComplexEndpointCoefficientTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualComplexEndpointCoefficient
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualComplexEndpointCoefficient.Variantbcd638547e754b7c55ac2068ff295dd047db952641a0cfc5a626c4e2979df6eb
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexAntiderivative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexAntiderivative
+#check FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.complexMonomial_exponential_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.complexMonomial_exponential_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexAntiderivative_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexAntiderivative_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexAntiderivative_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexAntiderivative_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexCoefficient_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualLeadingComplexCoefficient_eq
+#check FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualSourceComplexTransform_normalized_tendsto_closed
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplexEndpointCoefficient.actualSourceComplexTransform_normalized_tendsto_closed
+```

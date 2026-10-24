@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEdgeLeadingLimitAudit.Variant530db5fa53a0f5dc7bacb102ab686c7c952f11bec84c1894c14355ffb5013e6e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `30eea8bcacdc0ce25828308c8ce42682eed5a6d1` · SHA-256 `c2669d90094454cd853a55a53b7c2dbdd3e936fcbcdd81a7a156ab46d3ed5279`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEdgeLeadingLimit.Variant7f2c6d2fd715f538a72c04a3bce3fd6224563b411f4c9924990f73e43ae48d4d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7f2c6d2fd715f538a72c04a3bce3fd6224563b411f4c9924990f73e43ae48d4d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEdgeLeadingLimit.Variant7f2c6d2fd715f538a72c04a3bce3fd6224563b411f4c9924990f73e43ae48d4d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7f2c6d2fd715f538a72c04a3bce3fd6224563b411f4c9924990f73e43ae48d4d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T032622Z-1791343582730535000/SourceActualEdgeLeadingLimitAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEdgeLeadingLimit
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEdgeLeadingLimit.Variant7f2c6d2fd715f538a72c04a3bce3fd6224563b411f4c9924990f73e43ae48d4d
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEndpointPolynomial
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEndpointPolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEndpointPolynomial
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointPolynomial_tendsto_leading
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointPolynomial_tendsto_leading
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointPolynomial_tendsto_leading
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_normalizedTest_scaled_edge_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_normalizedTest_scaled_edge_tendsto
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_normalizedTest_scaled_edge_tendsto
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeConvolution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeConvolution
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeConvolution
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeProduct_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeProduct_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeProduct_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointProduct_integral_tendsto_leading
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointProduct_integral_tendsto_leading
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointProduct_integral_tendsto_leading
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_correlation_scaled_edge_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_correlation_scaled_edge_tendsto
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_correlation_scaled_edge_tendsto
+```

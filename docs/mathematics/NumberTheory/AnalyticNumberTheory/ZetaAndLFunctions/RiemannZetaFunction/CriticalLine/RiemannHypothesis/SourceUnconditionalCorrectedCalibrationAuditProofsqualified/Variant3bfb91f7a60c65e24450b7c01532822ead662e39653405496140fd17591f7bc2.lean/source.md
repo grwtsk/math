@@ -1,0 +1,18 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUnconditionalCorrectedCalibrationAuditProofsqualified.Variant3bfb91f7a60c65e24450b7c01532822ead662e39653405496140fd17591f7bc2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `80fc6be4d03d13a85fbfe2bb755ef0cf14544f7d` · SHA-256 `3bfb91f7a60c65e24450b7c01532822ead662e39653405496140fd17591f7bc2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceUnconditionalCorrectedCalibration
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicRemainder_eq_stable
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicRemainder_abs_le
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicError_abs_le
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.completeOmega_sub_complete_pairing_abs_le
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.integerJ_sub_complete_pairing_abs_le
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.residual_sub_complete_pairing_sub_zeta_abs_lt
+#print FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.estimate_of_complete_corrected_signed_tail
+```

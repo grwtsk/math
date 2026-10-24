@@ -1,0 +1,360 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Attempt06.Variant212b93b5fb8ab956c58b4abdf335d6c0571bb62fd17aa4766a5ab658ecf3591f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `de21df3c388d76f80d0b60f3337d6bdc373da706` · SHA-256 `212b93b5fb8ab956c58b4abdf335d6c0571bb62fd17aa4766a5ab658ecf3591f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualMovingCriticalIncrement
+import SourceActualEdgeCorrelationDerivative
+
+/-!
+The literal signed upper-edge kernel retains its zeroth and first source jets.
+This local negative kernel exposes the positive actual Mangoldt jump correction
+to the continuous drift. No claim of a bound for the complete signed covariance
+or of divergence of that covariance follows from this finite sector.
+Research direction: grwtsk contributors. Formal development: OpenAI Codex.
+-/
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector
+
+open MeasureTheory Set
+open scoped Interval BigOperators
+open SourceActualMovingCriticalIncrement SourceActualEdgeCorrelationDerivative SourcePairing
+open SourceActualXiErrorConvolution SourceFirstPrimeAbel
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization EstimateSourceEdgeProfile EstimateSourceEdgeCorrelation
+
+noncomputable section
+
+private theorem edge_coordinate_bounds {A r : ℝ} (hA : 91 ≤ A)
+    (hr : 0 ≤ r) (hr1 : r ≤ 1) :
+    0 ≤ r / A ∧ r / A ≤ 1 / 10 := by
+  have hp : 0 < A := by linarith
+  constructor
+  · exact div_nonneg hr hp.le
+  · apply (div_le_iff₀ hp).2
+    linarith
+
+/-- The actual signed endpoint numerator is positive on this full fixed edge. -/
+theorem actualEndpointPolynomial_edge_lower {A r : ℝ} (hA : 91 ≤ A)
+    (hr : 0 ≤ r) (hr1 : r ≤ 1) :
+    100 * r ^ 2 ≤ endpointPolynomial A r := by
+  obtain ⟨hq0, hq1⟩ := edge_coordinate_bounds hA hr hr1
+  have hs0 : 9 / 10 ≤ 1 - r / A := by linarith
+  have hs1 : 1 - r / A ≤ 1 := by linarith
+  have hv0 : 19 / 10 ≤ 2 - r / A := by linarith
+  have hv1 : 2 - r / A ≤ 2 := by linarith
+  have hs2 : 81 / 100 ≤ (1 - r / A) ^ 2 := by nlinarith
+  have hv2 : 361 / 100 ≤ (2 - r / A) ^ 2 := by nlinarith
+  have hv4 : (2 - r / A) ^ 2 ≤ 4 := by nlinarith
+  have hr2 : r ^ 2 ≤ 1 := by nlinarith
+  have hg : r ^ 2 * (2 - r / A) ^ 2 ≤ 4 := by nlinarith
+  have hb : 36 ≤ 8 * (7 * (1 - r / A) ^ 2 - 1) -
+      r ^ 2 * (2 - r / A) ^ 2 / 4 := by nlinarith
+  have hm := mul_le_mul hv2 hb (by norm_num : (0 : ℝ) ≤ 36)
+    (sq_nonneg (2 - r / A))
+  have hh : 100 ≤ (2 - r / A) ^ 2 *
+      (8 * (7 * (1 - r / A) ^ 2 - 1) - r ^ 2 * (2 - r / A) ^ 2 / 4) := by
+    nlinarith
+  have hf := mul_le_mul_of_nonneg_left hh (sq_nonneg r)
+  unfold endpointPolynomial
+  nlinarith
+
+/-- The ordinary endpoint derivative has its genuine positive edge slope. -/
+theorem actualEndpointDerivative_edge_lower {A r : ℝ} (hA : 91 ≤ A)
+    (hr : 0 ≤ r) (hr1 : r ≤ 1) :
+    200 * r ≤ endpointDerivativePolynomial A r := by
+  obtain ⟨hq0, hq1⟩ := edge_coordinate_bounds hA hr hr1
+  have hp : 0 < A := by linarith
+  have hs0 : 9 / 10 ≤ 1 - r / A := by linarith
+  have hs1 : 1 - r / A ≤ 1 := by linarith
+  have hv0 : 19 / 10 ≤ 2 - r / A := by linarith
+  have hv1 : 2 - r / A ≤ 2 := by linarith
+  have hs2 : 81 / 100 ≤ (1 - r / A) ^ 2 := by nlinarith
+  have hv4 : (2 - r / A) ^ 2 ≤ 4 := by nlinarith
+  have hr2 : r ^ 2 ≤ r := by nlinarith
+  have hg0 : 0 ≤ r ^ 2 * (2 - r / A) ^ 2 := by positivity
+  have hg4 : r ^ 2 * (2 - r / A) ^ 2 ≤ 4 * r ^ 2 := by nlinarith
+  have hbr : 36 ≤ 8 * (7 * (1 - r / A) ^ 2 - 1) -
+      r ^ 2 * (2 - r / A) ^ 2 / 4 := by nlinarith
+  have hvs0 : 171 / 100 ≤ (2 - r / A) * (1 - r / A) := by
+    nlinarith [mul_le_mul hv0 hs0 (by norm_num : (0 : ℝ) ≤ 9 / 10)
+      (by linarith : 0 ≤ 2 - r / A)]
+  have hvs2 : (2 - r / A) * (1 - r / A) ≤ 2 := by
+    nlinarith [mul_le_mul hv1 hs1 (by linarith : 0 ≤ 1 - r / A)
+      (by norm_num : (0 : ℝ) ≤ 2)]
+  have hfirst : (171 / 100 : ℝ) * 36 ≤ (2 - r / A) * (1 - r / A) *
+      (8 * (7 * (1 - r / A) ^ 2 - 1) - r ^ 2 * (2 - r / A) ^ 2 / 4) :=
+    mul_le_mul hvs0 hbr (by norm_num) (by positivity)
+  have hfirst2 := mul_le_mul_of_nonneg_left hfirst (show 0 ≤ 4 * r by positivity)
+  have hdiv : 112 * (1 - r / A) / A ≤ 2 := by
+    apply (div_le_iff₀ hp).2
+    nlinarith
+  have hrvs : r * (2 - r / A) * (1 - r / A) ≤ 2 := by
+    nlinarith [mul_le_mul_of_nonneg_left hvs2 hr]
+  have hl : -4 ≤ -112 * (1 - r / A) / A -
+      r * (2 - r / A) * (1 - r / A) := by
+    rw [show -112 * (1 - r / A) / A = -(112 * (1 - r / A) / A) by ring]
+    linarith
+  have hlast := mul_le_mul_of_nonneg_left hl hg0
+  unfold endpointDerivativePolynomial
+  nlinarith
+
+/-- Both actual source jets give a strictly negative critical numerator away from the seam. -/
+theorem actualEndpointCritical_edge_upper {A r : ℝ} (hA : 91 ≤ A)
+    (hr : 0 ≤ r) (hr1 : r ≤ 1) :
+    endpointPolynomial A r / 4 - endpointDerivativePolynomial A r / 2 ≤ -50 * r := by
+  have hd := actualEndpointDerivative_edge_lower hA hr hr1
+  have hp := endpointPolynomial_abs_le A r (by linarith) hr (by linarith)
+  have hr2 : r ^ 2 ≤ r := by nlinarith
+  have hr4 : r ^ 4 ≤ r ^ 2 := by nlinarith [sq_nonneg (r ^ 2)]
+  have hh := (le_abs_self (endpointPolynomial A r)).trans hp
+  nlinarith
+
+private theorem overlap_moment (h : ℝ) :
+    (∫ r in 0..h, r * (h - r) ^ 2) = h ^ 4 / 12 := by
+  have hd (r : ℝ) : HasDerivAt
+      (fun r : ℝ => h ^ 2 * r ^ 2 / 2 - 2 * h * r ^ 3 / 3 + r ^ 4 / 4)
+      (r * (h - r) ^ 2) r := by
+    have hd := (((((hasDerivAt_id r).pow 2).const_mul (h ^ 2)).div_const 2).sub
+      ((((hasDerivAt_id r).pow 3).const_mul (2 * h)).div_const 3)).add
+        (((hasDerivAt_id r).pow 4).div_const 4)
+    exact hd.congr_deriv (by dsimp only [id_eq]; ring)
+  rw [intervalIntegral.integral_eq_sub_of_hasDerivAt (fun r _ => hd r)
+    ((by fun_prop : Continuous (fun r : ℝ => r * (h - r) ^ 2)).intervalIntegrable _ _)]
+  ring
+
+/-- The actual critical coefficient is quantitatively negative in the fixed true support edge. -/
+theorem actualCriticalKernel_edge_upper {A h : ℝ} (hA : 91 ≤ A)
+    (hh : 0 ≤ h) (hh1 : h ≤ 1) :
+    sourceCorrelation explicitSecondDerivative A (2 * A - h) / 4 +
+      deriv (sourceCorrelation explicitSecondDerivative A) (2 * A - h) / 2 ≤
+        -400 * h ^ 4 / (A ^ 9 * sourceNormalization A) := by
+  have h1 : 1 ≤ A := by linarith
+  have hhA : h ≤ 2 * A := by linarith
+  have hZ := source_normalization_pos A h1
+  have hd : 0 < A ^ 9 * sourceNormalization A := by positivity
+  have he : sourceCorrelation explicitSecondDerivative A (2 * A - h) / 4 +
+      deriv (sourceCorrelation explicitSecondDerivative A) (2 * A - h) / 2 =
+      1 / (A ^ 9 * sourceNormalization A) *
+        ∫ r in 0..h, (endpointPolynomial A r / 4 - endpointDerivativePolynomial A r / 2) *
+          endpointPolynomial A (h - r) := by
+    have hs : (∫ r in 0..h,
+        (endpointPolynomial A r / 4 - endpointDerivativePolynomial A r / 2) *
+          endpointPolynomial A (h - r)) =
+        (∫ r in 0..h, endpointPolynomial A r * endpointPolynomial A (h - r)) / 4 -
+          (∫ r in 0..h,
+            endpointDerivativePolynomial A r * endpointPolynomial A (h - r)) / 2 := by
+      have hf : (fun r : ℝ =>
+          (endpointPolynomial A r / 4 - endpointDerivativePolynomial A r / 2) *
+            endpointPolynomial A (h - r)) =
+          fun r => endpointPolynomial A r * endpointPolynomial A (h - r) / 4 -
+            endpointDerivativePolynomial A r * endpointPolynomial A (h - r) / 2 := by
+        funext r
+        ring
+      rw [hf, intervalIntegral.integral_sub
+        ((endpointProduct_intervalIntegrable A h).div_const 4)
+        ((endpointDerivativeProduct_intervalIntegrable A h).div_const 2)]
+      rw [intervalIntegral.integral_div, intervalIntegral.integral_div]
+    rw [sourceCorrelation_upper_edge A h h1 hh hhA,
+      actual_correlation_deriv_upper_edge A h h1 hh hhA, hs]
+    ring
+  have hm : (∫ r in 0..h,
+      (endpointPolynomial A r / 4 - endpointDerivativePolynomial A r / 2) *
+        endpointPolynomial A (h - r)) ≤
+      ∫ r in 0..h, -5000 * (r * (h - r) ^ 2) := by
+    apply intervalIntegral.integral_mono_on hh
+      (by
+        apply Continuous.intervalIntegrable
+        unfold endpointPolynomial endpointDerivativePolynomial
+        fun_prop)
+      (by apply Continuous.intervalIntegrable; fun_prop)
+    intro r hr
+    have hq := actualEndpointCritical_edge_upper hA hr.1 (hr.2.trans hh1)
+    have hp := actualEndpointPolynomial_edge_lower (r := h - r) hA (by linarith [hr.2])
+      (by linarith [hr.1])
+    have hs : 0 ≤ endpointPolynomial A (h - r) := by nlinarith [sq_nonneg (h - r)]
+    have hx := mul_le_mul_of_nonneg_right hq hs
+    have hy := mul_le_mul_of_nonpos_left hp (by linarith [hr.1] : -50 * r ≤ 0)
+    nlinarith
+  rw [intervalIntegral.integral_const_mul, overlap_moment] at hm
+  rw [he]
+  have hg := mul_le_mul_of_nonneg_left hm (by positivity : 0 ≤ 1 / (A ^ 9 * sourceNormalization A))
+  calc
+    _ ≤ 1 / (A ^ 9 * sourceNormalization A) * (-5000 * (h ^ 4 / 12)) := hg
+    _ ≤ _ := by
+      apply (le_div_iff₀ hd).2
+      field_simp
+      nlinarith [pow_nonneg hh 4]
+
+private theorem critical_kernel_continuous (A : ℝ) (hA : 0 < A) :
+    Continuous (fun t : ℝ => Real.exp (t / 2) *
+      (sourceCorrelation explicitSecondDerivative A t / 4 +
+        deriv (sourceCorrelation explicitSecondDerivative A) t / 2)) := by
+  have hd := (contDiff_one_iff_deriv.mp (criticalPrimeTest_contDiff A hA)).2
+  have he : (fun t : ℝ => Real.exp (t / 2) *
+      (sourceCorrelation explicitSecondDerivative A t / 4 +
+        deriv (sourceCorrelation explicitSecondDerivative A) t / 2)) =
+        fun t => deriv (criticalPrimeTest A) t / 2 := by
+    funext t
+    rw [criticalPrimeTest_deriv A t hA]
+    ring
+  rw [he]
+  exact hd.div_const 2
+
+/-- The full continuous drift in the actual last unit of logarithmic support. -/
+def actualUpperEdgeContinuousDrift (A : ℝ) : ℝ :=
+  ∫ t in (2 * A - 1)..2 * A, (2 * A - t) *
+    (Real.exp (t / 2) * (sourceCorrelation explicitSecondDerivative A t / 4 +
+      deriv (sourceCorrelation explicitSecondDerivative A) t / 2))
+
+/-- The actual closed prime-power jump correction in the same source sector. -/
+def actualUpperEdgePrimeJumpCompensation (A : ℝ) : ℝ :=
+  -(∫ t in (2 * A - 1)..2 * A,
+    (∑ n ∈ Finset.Ioc ⌊Real.exp t⌋₊ ⌊Real.exp (2 * A)⌋₊,
+      ArithmeticFunction.vonMangoldt n / (n : ℝ)) *
+      (Real.exp (t / 2) * (sourceCorrelation explicitSecondDerivative A t / 4 +
+        deriv (sourceCorrelation explicitSecondDerivative A) t / 2)))
+
+/-- The unchanged actual moving increment on this genuine finite source sector. -/
+def actualUpperEdgeMovingWork (A : ℝ) : ℝ :=
+  ∫ t in (2 * A - 1)..2 * A, actualClosedMangoldtIncrement t (2 * A) *
+    (Real.exp (t / 2) * (sourceCorrelation explicitSecondDerivative A t / 4 +
+      deriv (sourceCorrelation explicitSecondDerivative A) t / 2))
+
+/-- Actual local L1 precedes separation of the closed jump correction. -/
+theorem actualUpperEdgePrimeJump_intervalIntegrable {A : ℝ} (hA : 91 ≤ A) :
+    IntervalIntegrable (fun t =>
+      (∑ n ∈ Finset.Ioc ⌊Real.exp t⌋₊ ⌊Real.exp (2 * A)⌋₊,
+        ArithmeticFunction.vonMangoldt n / (n : ℝ)) *
+        (Real.exp (t / 2) * (sourceCorrelation explicitSecondDerivative A t / 4 +
+          deriv (sourceCorrelation explicitSecondDerivative A) t / 2)))
+      volume (2 * A - 1) (2 * A) := by
+  have hi := actualMangoldtErrorConvolution_intervalIntegrable 0 (by linarith : 0 ≤ 2 * A)
+  simp only [zero_mul, Real.exp_zero, mul_one] at hi
+  have hg : IntervalIntegrable actualCenteredMangoldtLogError volume (2 * A - 1) (2 * A) :=
+    hi.mono_set (by
+      rw [uIcc_of_le (by linarith : 0 ≤ 2 * A), uIcc_of_le (by linarith : 2 * A - 1 ≤ 2 * A)]
+      exact Icc_subset_Icc (by linarith) le_rfl)
+  have hs : IntervalIntegrable (fun t : ℝ => actualCenteredMangoldtLogError (2 * A) -
+      actualCenteredMangoldtLogError t + (2 * A - t)) volume (2 * A - 1) (2 * A) :=
+    (intervalIntegrable_const.sub hg).add
+      ((continuous_const.sub continuous_id).intervalIntegrable _ _)
+  have hj := hs.mul_continuousOn
+    (critical_kernel_continuous A (by linarith)).continuousOn
+  apply hj.congr
+  rw [uIoc_of_le (by linarith : 2 * A - 1 ≤ 2 * A)]
+  intro t ht
+  dsimp only
+  have he := actualCenteredError_increment_eq_closed ht.2
+  unfold actualClosedMangoldtIncrement at he
+  congr 1
+  linarith
+
+/-- Exact drift and actual positive jumps are retained together in this edge sector. -/
+theorem actualUpperEdgeMovingWork_eq_drift_add_jumps {A : ℝ} (hA : 91 ≤ A) :
+    actualUpperEdgeMovingWork A =
+      actualUpperEdgeContinuousDrift A + actualUpperEdgePrimeJumpCompensation A := by
+  have hi : IntervalIntegrable (fun t : ℝ => (2 * A - t) *
+      (Real.exp (t / 2) * (sourceCorrelation explicitSecondDerivative A t / 4 +
+        deriv (sourceCorrelation explicitSecondDerivative A) t / 2)))
+      volume (2 * A - 1) (2 * A) :=
+    ((continuous_const.sub continuous_id).intervalIntegrable (2 * A - 1) (2 * A)).mul_continuousOn
+      (critical_kernel_continuous A (by linarith)).continuousOn
+  unfold actualUpperEdgeMovingWork actualUpperEdgeContinuousDrift
+    actualUpperEdgePrimeJumpCompensation
+  rw [← sub_eq_add_neg, ← intervalIntegral.integral_sub hi
+    (actualUpperEdgePrimeJump_intervalIntegrable hA)]
+  apply intervalIntegral.integral_congr
+  intro t _
+  unfold actualClosedMangoldtIncrement
+  ring
+
+/-- The actual closed Mangoldt jump correction is nonnegative on this negative kernel sector. -/
+theorem actualUpperEdgePrimeJumpCompensation_nonneg {A : ℝ} (hA : 91 ≤ A) :
+    0 ≤ actualUpperEdgePrimeJumpCompensation A := by
+  unfold actualUpperEdgePrimeJumpCompensation
+  rw [← intervalIntegral.integral_neg]
+  apply intervalIntegral.integral_nonneg (by linarith)
+  intro t ht
+  have hh : 0 ≤ 2 * A - t := by linarith [ht.2]
+  have hh1 : 2 * A - t ≤ 1 := by linarith [ht.1]
+  have hk := actualCriticalKernel_edge_upper hA hh hh1
+  rw [show 2 * A - (2 * A - t) = t by ring] at hk
+  have hc : sourceCorrelation explicitSecondDerivative A t / 4 +
+      deriv (sourceCorrelation explicitSecondDerivative A) t / 2 ≤ 0 := by
+    have hZ := source_normalization_pos A (by linarith : 1 ≤ A)
+    have hb : -400 * (2 * A - t) ^ 4 / (A ^ 9 * sourceNormalization A) ≤ 0 := by
+      apply div_nonpos_of_nonpos_of_nonneg
+      · nlinarith [pow_nonneg hh 4]
+      · positivity
+    exact hk.trans hb
+  have hn : 0 ≤ ∑ n ∈ Finset.Ioc ⌊Real.exp t⌋₊ ⌊Real.exp (2 * A)⌋₊,
+      ArithmeticFunction.vonMangoldt n / (n : ℝ) := by
+    apply Finset.sum_nonneg
+    intro n _
+    exact div_nonneg (ArithmeticFunction.vonMangoldt_nonneg (n := n)) (Nat.cast_nonneg n)
+  have hw := mul_nonpos_of_nonneg_of_nonpos (Real.exp_pos (t / 2)).le hc
+  exact neg_nonneg.mpr (mul_nonpos_of_nonneg_of_nonpos hn hw)
+
+/-- The negative continuous edge drift has an explicit genuine critical exponential budget. -/
+theorem actualUpperEdgeContinuousDrift_upper {A : ℝ} (hA : 91 ≤ A) :
+    actualUpperEdgeContinuousDrift A ≤
+      -(200 / 3 : ℝ) * Real.exp (A - 1 / 2) / (A ^ 9 * sourceNormalization A) := by
+  have hZ := source_normalization_pos A (by linarith : 1 ≤ A)
+  have hd : 0 < A ^ 9 * sourceNormalization A := by positivity
+  have hp : 0 < A := by linarith
+  have hb : (∫ t in (2 * A - 1)..2 * A,
+      -(400 * Real.exp (A - 1 / 2) / (A ^ 9 * sourceNormalization A)) * (2 * A - t) ^ 5) =
+      -(200 / 3 : ℝ) * Real.exp (A - 1 / 2) / (A ^ 9 * sourceNormalization A) := by
+    rw [intervalIntegral.integral_const_mul,
+      intervalIntegral.integral_comp_sub_left (fun t : ℝ => t ^ 5) (2 * A)]
+    have hm : (∫ t in (0 : ℝ)..1, t ^ 5) = 1 / 6 := by
+      have hd5 (t : ℝ) : HasDerivAt (fun t : ℝ => t ^ 6 / 6) (t ^ 5) t := by
+        exact (((hasDerivAt_id t).pow 6).div_const 6).congr_deriv
+          (by dsimp only [id_eq]; ring)
+      rw [intervalIntegral.integral_eq_sub_of_hasDerivAt (fun t _ => hd5 t)
+        ((continuous_id.pow 5).intervalIntegrable _ _)]
+      norm_num
+    rw [show 2 * A - 2 * A = 0 by ring,
+      show 2 * A - (2 * A - 1) = 1 by ring, hm]
+    ring
+  rw [← hb]
+  unfold actualUpperEdgeContinuousDrift
+  apply intervalIntegral.integral_mono_on (by linarith)
+    (((continuous_const.sub continuous_id).intervalIntegrable (2 * A - 1) (2 * A)).mul_continuousOn
+      (critical_kernel_continuous A hp).continuousOn)
+    (by apply Continuous.intervalIntegrable; fun_prop)
+  intro t ht
+  have hh : 0 ≤ 2 * A - t := by linarith [ht.2]
+  have hh1 : 2 * A - t ≤ 1 := by linarith [ht.1]
+  have hk := actualCriticalKernel_edge_upper hA hh hh1
+  rw [show 2 * A - (2 * A - t) = t by ring] at hk
+  have he : Real.exp (A - 1 / 2) ≤ Real.exp (t / 2) :=
+    Real.exp_le_exp.mpr (by linarith [ht.1])
+  have hn : -400 * (2 * A - t) ^ 4 / (A ^ 9 * sourceNormalization A) ≤ 0 := by
+    apply div_nonpos_of_nonpos_of_nonneg
+    · nlinarith [pow_nonneg hh 4]
+    · positivity
+  have h0 := mul_le_mul_of_nonneg_left hk
+    (mul_nonneg hh (Real.exp_pos (t / 2)).le)
+  have h1 := mul_le_mul_of_nonpos_right he hn
+  have h2 := mul_le_mul_of_nonneg_left h1 hh
+  calc
+    _ = (2 * A - t) * Real.exp (t / 2) *
+        (sourceCorrelation explicitSecondDerivative A t / 4 +
+          deriv (sourceCorrelation explicitSecondDerivative A) t / 2) := by ring
+    _ ≤ (2 * A - t) * Real.exp (t / 2) *
+        (-400 * (2 * A - t) ^ 4 / (A ^ 9 * sourceNormalization A)) := h0
+    _ = (2 * A - t) * (Real.exp (t / 2) *
+        (-400 * (2 * A - t) ^ 4 / (A ^ 9 * sourceNormalization A))) := by ring
+    _ ≤ (2 * A - t) * (Real.exp (A - 1 / 2) *
+        (-400 * (2 * A - t) ^ 4 / (A ^ 9 * sourceNormalization A))) := h2
+    _ = _ := by ring
+
+end
+end FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector
+```

@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroDyadicShellQualified.Variant912d54332e78862d6267db9944b14ea48e11aa52b61a9adde3d220f2301e1665
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `37228331e185acacefda66c956653427bdaf4132` · SHA-256 `912d54332e78862d6267db9944b14ea48e11aa52b61a9adde3d220f2301e1665`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualSignedZeroDyadicShell
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualCompletedVerticalHead
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualFiniteHorizontalCorrection
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_head_sub
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualZeroHeightHead_eq_completedVertical_add_horizontal
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualSignedZeroHeightShell_eq_contour_difference
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actualOffAxisShell_compensated_norm_bound
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroDyadicShell.actual_good_dyadic_offAxis_shell_compensation
+```

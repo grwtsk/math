@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCubicCenteredRowsAudit.Variantc0dd53bc121070e794cf80746447bac3ab088bc5c6dc28f07f61e5a651351916
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e8866cd0ef2fd62c45155bb5fb45ad537d73d47e` · SHA-256 `11308218ced2b877a57c500d37c1a06714d78e0b93a17dc59027970f6f9ee3b2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCubicCenteredRows.Variantaa07d56f871c89db1809f2f5b35869ae2ce5622d51bc47c42c739df12b3798f3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"aa07d56f871c89db1809f2f5b35869ae2ce5622d51bc47c42c739df12b3798f3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCubicCenteredRows.Variantaa07d56f871c89db1809f2f5b35869ae2ce5622d51bc47c42c739df12b3798f3","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"aa07d56f871c89db1809f2f5b35869ae2ce5622d51bc47c42c739df12b3798f3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourceActualCubicCenteredRowsAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCubicCenteredRows
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCubicCenteredRows.Variantaa07d56f871c89db1809f2f5b35869ae2ce5622d51bc47c42c739df12b3798f3
+
+set_option pp.fullNames true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.cubicLogModelDerivative_measurable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.cubicLogModelDerivative_measurable
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_log_derivative_error_le_majorant
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_log_derivative_error_le_majorant
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_log_derivative_error_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_log_derivative_error_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_centered_row_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_centered_row_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_centered_row_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_centered_row_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_short_divisor_sum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_short_divisor_sum_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_full_divisor_sum_eq_short_add_complement
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_full_divisor_sum_eq_short_add_complement
+#check FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_full_divisor_sum_abs_le_short_budget_add_complement
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.actual_cubic_full_divisor_sum_abs_le_short_budget_add_complement
+#print FormalResearch.RiemannHypothesis.SourceActualCubicCenteredRows.cubicCenteredLogErrorRow
+```

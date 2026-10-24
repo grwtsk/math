@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedSamplingExplicitAudit.Variant9eba54ffb41e7b71f8c8c608099cc0659eb6d2bea50b9670926c0116de263f21
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `75bf4593f72b90177d9c95f98fa799fd1b5ec32d` · SHA-256 `9eba54ffb41e7b71f8c8c608099cc0659eb6d2bea50b9670926c0116de263f21`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceSignedSamplingExplicitBudget
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualMoebiusSqrtMass_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualMoebiusSqrtMass_le
+
+#check FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualLongMangoldtSqrtMass_le_cutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualLongMangoldtSqrtMass_le_cutoff
+
+#check FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualLongMangoldtSqrtMass_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualLongMangoldtSqrtMass_le
+
+#check FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualSignedQuotientSamplingError_abs_le_explicit
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedSamplingExplicitBudget.actualSignedQuotientSamplingError_abs_le_explicit
+
+```

@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorCriticalCovarianceAuditPackageProofsqualified.Variantbffa72a61f936534da1c614a5a7a347ea32fe6812b90cde3e49366b6bb7b6bfb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `65f91cdd3e1659d0dc3b6aaea5b2aef4b57402d6` · SHA-256 `49ba9f188f5314beeb59f7103886027c1b2f20eabee937c8b67f5ebc6e237648`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.Variantfe09020f2e2a79c94d63aa8f229d9fd8c91c73149b19d9b80cf37c6e191aea9a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fe09020f2e2a79c94d63aa8f229d9fd8c91c73149b19d9b80cf37c6e191aea9a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiErrorCriticalCovariance.Variantfe09020f2e2a79c94d63aa8f229d9fd8c91c73149b19d9b80cf37c6e191aea9a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"fe09020f2e2a79c94d63aa8f229d9fd8c91c73149b19d9b80cf37c6e191aea9a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualXiErrorCriticalCovarianceAuditPackageProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiErrorCriticalCovariance
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.Variantfe09020f2e2a79c94d63aa8f229d9fd8c91c73149b19d9b80cf37c6e191aea9a
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolution_return
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolution_return
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionReturn_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead_eq_closed_traces
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolution_difference_return
+```

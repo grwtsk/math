@@ -1,0 +1,53 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.Audit.Variant12505e9012f3826755e1c02b53394f42a05081b149cda7660b0531293a82df5d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7558ce6c972cda5e547f391db228fdab0ef463d5` · SHA-256 `12505e9012f3826755e1c02b53394f42a05081b149cda7660b0531293a82df5d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceContinuousHalfEnergy
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceContinuousHalfEnergy
+#check forwardHalfKernel
+#print axioms forwardHalfKernel
+#check forwardHalfKernel_continuous
+#print axioms forwardHalfKernel_continuous
+#check forwardHalfKernel_hasCompactSupport
+#print axioms forwardHalfKernel_hasCompactSupport
+#check forwardHalfKernel_integrable
+#print axioms forwardHalfKernel_integrable
+#check sourceCorrelation_eq_plus_shift
+#print axioms sourceCorrelation_eq_plus_shift
+#check negativeSmoothMoment_eq_forward_integral
+#print axioms negativeSmoothMoment_eq_forward_integral
+#check forwardHalfKernel_interval_eq_tail_pairing
+#print axioms forwardHalfKernel_interval_eq_tail_pairing
+#check negativeSmoothMoment_eq_tail_pairing
+#print axioms negativeSmoothMoment_eq_tail_pairing
+#check negativeSmoothMoment_eq_half_causal_energy
+#print axioms negativeSmoothMoment_eq_half_causal_energy
+#check negativeSmoothMoment_eq_normalized_energy
+#print axioms negativeSmoothMoment_eq_normalized_energy
+#check negativeSmoothMoment_eq_rational
+#print axioms negativeSmoothMoment_eq_rational
+#check criticalContinuousMoment_eq_neg_half_causal_energy
+#print axioms criticalContinuousMoment_eq_neg_half_causal_energy
+#check criticalContinuousMoment_eq_rational
+#print axioms criticalContinuousMoment_eq_rational
+#check negativeSmoothMoment_pos
+#print axioms negativeSmoothMoment_pos
+#check criticalContinuousMoment_lt_zero
+#print axioms criticalContinuousMoment_lt_zero
+#check criticalContinuousMoment_ne_zero
+#print axioms criticalContinuousMoment_ne_zero
+#check criticalContinuousMoment_strict_bounds
+#print axioms criticalContinuousMoment_strict_bounds
+#check mertensResidual_eq_neg_causal_energy_sub_work
+#print axioms mertensResidual_eq_neg_causal_energy_sub_work
+#check mertensResidual_eq_rational_sub_work
+#print axioms mertensResidual_eq_rational_sub_work
+#check mertensResidual_lt_neg_work
+#print axioms mertensResidual_lt_neg_work
+#check residual_tail_of_Mangoldt_work_tail
+#print axioms residual_tail_of_Mangoldt_work_tail
+```

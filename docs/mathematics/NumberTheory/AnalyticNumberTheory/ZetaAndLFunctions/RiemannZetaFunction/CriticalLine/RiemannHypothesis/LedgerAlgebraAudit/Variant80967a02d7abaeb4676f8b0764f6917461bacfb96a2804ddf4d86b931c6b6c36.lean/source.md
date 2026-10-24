@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.LedgerAlgebraAudit.Variant80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0971a3be046a22f79880b364b5c3a3b0599b7634` · SHA-256 `80967a02d7abaeb4676f8b0764f6917461bacfb96a2804ddf4d86b931c6b6c36`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceSamplingLedger
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.correlationRow
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.correlationRow
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.derivativeRow
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.derivativeRow
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.logCorrelationCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.logCorrelationCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.logDerivativeCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.logDerivativeCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainCorrelationCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainCorrelationCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainDerivativeCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainDerivativeCoefficient
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainLinearMain
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.plainLinearMain
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.logLinearMain
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.logLinearMain
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortLog_coefficient_aggregation
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortLog_coefficient_aggregation
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortPlain_coefficient_aggregation
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.shortPlain_coefficient_aggregation
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm_eq_sampling_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.coefficientMainTerm_eq_sampling_inventory
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_plus_coefficientMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_plus_coefficientMainTerm
+#check FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_error_of_sampling_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingLedger.ledger_error_of_sampling_bounds
+```

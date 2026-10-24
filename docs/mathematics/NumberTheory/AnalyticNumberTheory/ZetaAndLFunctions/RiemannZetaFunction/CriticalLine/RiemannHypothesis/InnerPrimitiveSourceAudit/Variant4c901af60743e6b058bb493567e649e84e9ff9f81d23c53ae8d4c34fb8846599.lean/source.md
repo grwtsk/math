@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.InnerPrimitiveSourceAudit.Variant4c901af60743e6b058bb493567e649e84e9ff9f81d23c53ae8d4c34fb8846599
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `74170ddfeb36dc7a42298a4db71f4904405e00f7` · SHA-256 `4c901af60743e6b058bb493567e649e84e9ff9f81d23c53ae8d4c34fb8846599`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.integral_shift_Ioi
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.correlation_tail_eq_neg_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.rootWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.rootWeight_exp_substitution
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.rootWeight_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.rootWeight_source_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.innerTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.innerTerm_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.innerTerm_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.innerTerm_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.sourceKernel_eq_inner_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.sourceKernel_rescaled_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.InnerPrimitiveTransport.sourceKernel_integral_eq_primitive_sum
+```

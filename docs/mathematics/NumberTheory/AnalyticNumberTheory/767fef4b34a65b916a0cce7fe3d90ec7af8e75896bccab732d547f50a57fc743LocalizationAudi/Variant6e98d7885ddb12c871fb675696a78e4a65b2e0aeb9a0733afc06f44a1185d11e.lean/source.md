@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743LocalizationAudi.Variant6e98d7885ddb12c871fb675696a78e4a65b2e0aeb9a0733afc06f44a1185d11e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2976940226d6e52f930b08f0d82c6a7ab1ea56ce` · SHA-256 `661632c4fb66b94d68e5a4a9696f120ab6b74d82d2597a806d8f49c731bf5822`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.EstimateMovingFrontLocalization.Variant767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.AnalyticNumberTheory.SourceCorpus.EstimateMovingFrontLocalization.Variant767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743","mathematical_subject":"NumberTheory.AnalyticNumberTheory","original_sha256":"767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/76/767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743--LocalizationAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.EstimateMovingFrontLocalization.Variant767fef4b34a65b916a0cce7fe3d90ec7af8e75896bccab732d547f50a57fc743
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization.mertensResidual_sub_movingTail_abs_le_uniform
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization.mertensResidual_sub_movingTail_abs_le_uniform
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization.mertensResidual_sub_movingTail_tendsto_zero
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization.mertensResidual_sub_movingTail_tendsto_zero
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization.mertens_residual_tail_iff_moving_signed_tail
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontLocalization.mertens_residual_tail_iff_moving_signed_tail
+```

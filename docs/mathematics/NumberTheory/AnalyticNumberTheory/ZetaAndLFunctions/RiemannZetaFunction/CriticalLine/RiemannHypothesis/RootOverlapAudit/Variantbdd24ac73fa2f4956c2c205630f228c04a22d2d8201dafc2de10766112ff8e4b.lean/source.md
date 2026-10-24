@@ -1,0 +1,69 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootOverlapAudit.Variantbdd24ac73fa2f4956c2c205630f228c04a22d2d8201dafc2de10766112ff8e4b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ead882f965d762929761f5a265e513e0236c9abe` · SHA-256 `bdd24ac73fa2f4956c2c205630f228c04a22d2d8201dafc2de10766112ff8e4b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceLowTimeRadius
+import SourceResidualBudget
+import SourceOverlapResidualDirect
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceLowTimeRadius
+#check lowTimeStripBudget
+#print lowTimeStripBudget
+#print axioms lowTimeStripBudget
+#check actual_low_sector_integrable
+#print actual_low_sector_integrable
+#print axioms actual_low_sector_integrable
+#check actual_low_mixed_restricted_abs_le_scaled
+#print actual_low_mixed_restricted_abs_le_scaled
+#print axioms actual_low_mixed_restricted_abs_le_scaled
+#check actual_retained_spatial_strip_abs_le_scaled
+#print actual_retained_spatial_strip_abs_le_scaled
+#print axioms actual_retained_spatial_strip_abs_le_scaled
+#check lowTimeStripBudget_le_at_radius
+#print lowTimeStripBudget_le_at_radius
+#print axioms lowTimeStripBudget_le_at_radius
+#check actual_retained_spatial_strip_abs_le_radius
+#print actual_retained_spatial_strip_abs_le_radius
+#print axioms actual_retained_spatial_strip_abs_le_radius
+#check actual_surplus_le_remainingOverlap_add_radius
+#print actual_surplus_le_remainingOverlap_add_radius
+#print axioms actual_surplus_le_remainingOverlap_add_radius
+#check remainingOverlap_le_actual_surplus_add_radius
+#print remainingOverlap_le_actual_surplus_add_radius
+#print axioms remainingOverlap_le_actual_surplus_add_radius
+open RH16ResumeBudget
+#check sourceQuadraticValue_eq_archimedean_sub_two_residual
+#print sourceQuadraticValue_eq_archimedean_sub_two_residual
+#print axioms sourceQuadraticValue_eq_archimedean_sub_two_residual
+#check source_lower_of_residual_upper
+#print source_lower_of_residual_upper
+#print axioms source_lower_of_residual_upper
+#check originalPrefixLower
+#print originalPrefixLower
+#print axioms originalPrefixLower
+#check originalPrefixLower_le_source
+#print originalPrefixLower_le_source
+#print axioms originalPrefixLower_le_source
+#check all_real_source_lower_of_residual_tail
+#print all_real_source_lower_of_residual_tail
+#print axioms all_real_source_lower_of_residual_tail
+#check estimate_of_residual_tail_direct
+#print estimate_of_residual_tail_direct
+#print axioms estimate_of_residual_tail_direct
+open FormalResearch.RiemannHypothesis.SourceOverlapResidualDirect
+#check residual_upper_of_overlap_upper
+#print residual_upper_of_overlap_upper
+#print axioms residual_upper_of_overlap_upper
+#check residual_tail_of_overlap_tail
+#print residual_tail_of_overlap_tail
+#print axioms residual_tail_of_overlap_tail
+#check all_real_lower_of_overlap_tail
+#print all_real_lower_of_overlap_tail
+#print axioms all_real_lower_of_overlap_tail
+#check estimate_of_overlap_tail
+#print estimate_of_overlap_tail
+#print axioms estimate_of_overlap_tail
+```

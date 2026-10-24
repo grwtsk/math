@@ -1,0 +1,114 @@
+# mertensTwoPointPrefixMax_sq_le_twoPointTreeEnergy
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:44db4563-be4b-54d3-c040-66ffec6ad806",
+  "kind": "theorem",
+  "lexical_name": "mertensTwoPointPrefixMax_sq_le_twoPointTreeEnergy",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mertenstwopointprefixmax-sq-le-twopointtreeenergy--09a37b5724d571e54a4bc1cd",
+  "source": {
+    "blob": "4c2a421b62915ddf0151fc3dd744570dd7b0eaa7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 258,
+    "line": 226,
+    "path": "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:09a37b5724d571e54a4bc1cdad0dcdb4b193c8ee304206e38e768e73ff0a4f73",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Moebius/TwoPointConjectureJunction.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:44db4563-be4b-54d3-c040-66ffec6ad806`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 226–258.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem mertensTwoPointPrefixMax_sq_le_twoPointTreeEnergy
+    (j h : ℕ) :
+    mertensTwoPointPrefixMax j h ^ 2 ≤
+      ((j : ℝ) + 2) *
+        twoPointTreeEnergy moebiusReal moebiusReal j h := by
+  have hmax :=
+    mertensTwoPointPrefixMax_le_twoPointDyadicPrefixMaximum j h
+  have hsquare :
+      mertensTwoPointPrefixMax j h ^ 2 ≤
+        twoPointDyadicPrefixMaximum moebiusReal moebiusReal j h ^ 2 :=
+    (sq_le_sq₀
+      (mertensTwoPointPrefixMax_nonneg j h)
+      (twoPointDyadicPrefixMaximum_nonneg
+        moebiusReal moebiusReal j h)).2 hmax
+  have htree :=
+    dyadicPrefixMaximum_sq_le_dyadicTreeSquareEnergy
+      (j + 1) (paddedTwoPointSequence moebiusReal moebiusReal j h)
+  calc
+    mertensTwoPointPrefixMax j h ^ 2 ≤
+        twoPointDyadicPrefixMaximum moebiusReal moebiusReal j h ^ 2 :=
+      hsquare
+    _ ≤ (((j + 1 : ℕ) : ℝ) + 1) *
+        dyadicTreeSquareEnergy (j + 1)
+          (paddedTwoPointSequence moebiusReal moebiusReal j h) := by
+      simpa [twoPointDyadicPrefixMaximum] using htree
+    _ = ((j : ℝ) + 2) *
+        twoPointTreeEnergy moebiusReal moebiusReal j h := by
+      dsimp [twoPointTreeEnergy]
+      push_cast
+      ring
+
+/-- Summing the shift-wise comparison gives the exact finite connection from
+local tree energy to the canonical maximal quadratic energy. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/NumberTheory/Moebius/TwoPointConjectureJunction.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean#L226).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4c2a421b62915ddf0151fc3dd744570dd7b0eaa7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

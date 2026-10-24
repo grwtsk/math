@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.DiagonalPrimeGrowthSourceAudit.Variant16558d15138745a7d6f58cc6f75bbedcd6b5842901db641dd9791f8a7d617560
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c6d53dc805f6e80c2d7a21489192ddde2679ef87` · SHA-256 `94588d035b350f13e9afba0cb7740c389173aa582d56b0e5a7d5b2b456fafb6f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.DiagonalRemainderBudget.Variantb3034b8bde00c71b883def47dafaae17ff8aade3885057c42f11819cf3048f7b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b3034b8bde00c71b883def47dafaae17ff8aade3885057c42f11819cf3048f7b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.DiagonalRemainderBudget.Variantb3034b8bde00c71b883def47dafaae17ff8aade3885057c42f11819cf3048f7b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b3034b8bde00c71b883def47dafaae17ff8aade3885057c42f11819cf3048f7b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/mertens/diagonal-prime-growth-source-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget
+import FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.DiagonalRemainderBudget.Variantb3034b8bde00c71b883def47dafaae17ff8aade3885057c42f11819cf3048f7b
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget.moebius_square_le_one
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget.moebius_square_le_one
+#check FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget.source_harmonic_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget.source_harmonic_sum_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget.diagonal_remainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.DiagonalRemainderBudget.diagonal_remainder_abs_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.reciprocal_sqrt_finite_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.reciprocal_sqrt_finite_sum_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.finite_product_le_exp_sqrt
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.finite_product_le_exp_sqrt
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.smallRatioPrimes
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.smallRatioPrimes
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.mem_smallRatioPrimes_iff
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.mem_smallRatioPrimes_iff
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.smallRatioPrimes_prime
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.smallRatioPrimes_prime
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.smallRatioPrimes_product_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.smallRatioPrimes_product_le
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.kernelBound_uniform_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeProductGrowth.kernelBound_uniform_le
+```

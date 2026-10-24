@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadoutAuditPackageTypes.Variantfd33811a980f91d2c451fdc0d347ac9180ee1bc49ee394149c91a61e59004bae
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `74b9672a95180ce4a1265310ca85be8e320bcd1b` · SHA-256 `40fab725158220b544cf5d1abd41ad8f8dc3451529f8990109539b42214cf375`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.Variantb7d662cf9b85890292a8c85a72374a20bc0badeff79f9b2995ccb8b613ea8b29","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b7d662cf9b85890292a8c85a72374a20bc0badeff79f9b2995ccb8b613ea8b29","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPeriodMeanMangoldtReadout.Variantb7d662cf9b85890292a8c85a72374a20bc0badeff79f9b2995ccb8b613ea8b29","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b7d662cf9b85890292a8c85a72374a20bc0badeff79f9b2995ccb8b613ea8b29","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualPeriodMeanMangoldtReadoutAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPeriodMeanMangoldtReadout
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.Variantb7d662cf9b85890292a8c85a72374a20bc0badeff79f9b2995ccb8b613ea8b29
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest_covariant_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest_covariant_deriv
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTests_at_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTests_at_upper
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeFactor_eq_closed_half_row
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeFactor_eq_closed_half_row
+```

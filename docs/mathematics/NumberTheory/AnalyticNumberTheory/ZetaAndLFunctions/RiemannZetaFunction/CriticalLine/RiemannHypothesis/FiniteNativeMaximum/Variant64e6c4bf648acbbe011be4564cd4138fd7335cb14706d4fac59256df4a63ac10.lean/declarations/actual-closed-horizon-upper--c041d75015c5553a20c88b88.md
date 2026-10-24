@@ -1,0 +1,110 @@
+# actual_closed_horizon_upper
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:b51bf7e5-9c04-8211-108f-b435f419f12b",
+  "kind": "theorem",
+  "lexical_name": "actual_closed_horizon_upper",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "actual-closed-horizon-upper--c041d75015c5553a20c88b88",
+  "source": {
+    "blob": "bba7bf2eb5fe505d3b082c961115e06667ec9342",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 61,
+    "line": 33,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FiniteNativeMaximum/Variant64e6c4bf648acbbe011be4564cd4138fd7335cb14706d4fac59256df4a63ac10.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:c041d75015c5553a20c88b8862e33cad632845f91d4ad8a4248115ffa404b3c5",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FiniteNativeMaximum/Variant64e6c4bf648acbbe011be4564cd4138fd7335cb14706d4fac59256df4a63ac10.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b51bf7e5-9c04-8211-108f-b435f419f12b`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 33–61.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem actual_closed_horizon_upper {N : ℕ} (hN : 1 ≤ N) (K : ℕ)
+    {x : ℝ} (hleft : (N : ℝ) ≤ x) (hright : x ≤ (N + K : ℕ)) :
+    ordinaryPrimePrimitive x - ordinaryPrimePrimitive N ≤ primeRecordLevel N K := by
+  have hint := (actual_bounded_horizon_spec hN K).1
+  have hbound (n : ℕ) (hn : N ≤ n) (hnK : n ≤ N + K) :
+      ordinaryPrimePrimitive n ≤ ordinaryPrimePrimitive N + primeRecordLevel N K := by
+    obtain ⟨j, rfl⟩ := Nat.exists_eq_add_of_le hn
+    have hj : j ≤ K := by omega
+    linarith [hint j hj]
+  by_cases he : x = (N + K : ℕ)
+  · rw [he]
+    exact hint K le_rfl
+  have hxlt : x < (N + K : ℕ) := lt_of_le_of_ne hright he
+  have hx0 : 0 ≤ x := (Nat.cast_nonneg N).trans hleft
+  have hfloor : N ≤ ⌊x⌋₊ := Nat.le_floor hleft
+  have hfloorlt : ⌊x⌋₊ < N + K := by
+    have hh : (⌊x⌋₊ : ℝ) < (N + K : ℕ) := (Nat.floor_le hx0).trans_lt hxlt
+    exact_mod_cast hh
+  have hl := hbound ⌊x⌋₊ hfloor (by omega)
+  have hr := hbound (⌊x⌋₊ + 1) (by omega) (by omega)
+  have hc : finitePrimitive ordinaryPrimeCoefficient x ⌊x⌋₊ ≤
+      ordinaryPrimePrimitive N + primeRecordLevel N K := by
+    apply finite_cell_upper (by omega) (Nat.floor_le hx0)
+      (by simpa only [Nat.cast_add, Nat.cast_one] using (Nat.lt_floor_add_one x).le)
+    · simpa only [ordinaryPrimePrimitive, closedPrimitive, Nat.floor_natCast] using hl
+    · simpa only [ordinaryPrimePrimitive, closedPrimitive, Nat.floor_natCast] using hr
+  change finitePrimitive ordinaryPrimeCoefficient x ⌊x⌋₊ - ordinaryPrimePrimitive N ≤ _
+  linarith
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FiniteNativeMaximum/Variant64e6c4bf648acbbe011be4564cd4138fd7335cb14706d4fac59256df4a63ac10.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FiniteNativeMaximum/Variant64e6c4bf648acbbe011be4564cd4138fd7335cb14706d4fac59256df4a63ac10.lean#L33).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bba7bf2eb5fe505d3b082c961115e06667ec9342` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

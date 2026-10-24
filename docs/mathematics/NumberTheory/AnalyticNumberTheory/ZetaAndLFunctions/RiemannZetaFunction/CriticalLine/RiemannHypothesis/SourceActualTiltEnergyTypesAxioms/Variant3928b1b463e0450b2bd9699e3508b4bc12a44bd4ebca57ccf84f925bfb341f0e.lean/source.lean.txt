@@ -1,0 +1,35 @@
+import SourceActualTiltEnergy
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt_sq_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt_sq_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy_eq_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy_eq_integral
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt_transform
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt_transform
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt_integral_sq_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTilt_integral_sq_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy_eventually_ge
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy_eventually_ge
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltEnergy.actualUnitTiltEnergy_tendsto_atTop

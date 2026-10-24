@@ -1,0 +1,11 @@
+import SourceActualEarlyFractionalZeta
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_eq_neg_samplingAlpha0
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.earlyFractionalConstant_add_zeta_half_eq_zero
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_zeta_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalZeta.actualEarly_add_scale_tendsto_neg_zeta_half

@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant802e1ea8c1122a522ec39487e926e9a481290554955e6e5e325341e642edb1ac
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c42345e7f26b46e143e53f17d1b7db439b1efcbe` · SHA-256 `802e1ea8c1122a522ec39487e926e9a481290554955e6e5e325341e642edb1ac`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualNearCriticalRelative
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelativePairing
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelativeMain
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualComplementCriticalRelativePairing
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualCriticalWeight_sub_half_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_sub_main_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_sub_main_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_normalized_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualCriticalRelative_eq_near_add_complement
+```

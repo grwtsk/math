@@ -1,0 +1,12 @@
+import SourceLowTimeScalarBudget
+
+open FormalResearch.RiemannHypothesis.SourceLowTimeScalarBudget
+
+#print axioms short_moebius_abs_sum_le_cutoff
+#print axioms centered_beta_prefix_abs_le_cutoff
+#print axioms mangoldt_error_budget_pos
+#print axioms mangoldt_error_on_low_time_abs_le
+#print axioms exponential_low_time_mass
+#print axioms exponential_low_time_mass_prefix_budget
+#print axioms twice_curvature_budget_le_margin
+#print axioms error_times_twice_curvature_budget_le_margin

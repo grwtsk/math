@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantba80e4fb0e90c480a4dd627cabb99e4bc860d94d1b3a4d9842e7cd7c56538455
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `778065e2e42f1e6afc267fe756be95ac58209225` · SHA-256 `ba80e4fb0e90c480a4dd627cabb99e4bc860d94d1b3a4d9842e7cd7c56538455`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiRealLaplaceUniform
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_at_lower
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualDampedXiFinitePrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiFiniteRealLaplace_abel
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiUndampedFinitePrimitive_eq_damped
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiFiniteRealLaplace_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiComplexLaplace_ofReal
+#print FormalResearch.RiemannHypothesis.SourceActualXiRealLaplaceUniform.actualXiComplexLaplace_real_norm_le
+```

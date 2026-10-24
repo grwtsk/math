@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrimeBlockSourceAudit.Variant33aa7990c8603775bcdf211f5c010948e36db097cf1805d01606862a640c9117
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `050424faf55b32b5787189d9024296fc3dcd43f5` · SHA-256 `8cd0e17a503d785fbdcd5b69dc711ac15a8057505e61a69291a5a25d8a47c816`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.GcdClassTransport.Variant18d85b81f495014da135a0ccf71aa247018f7af6f28a52d8948d37fef66b6296","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"18d85b81f495014da135a0ccf71aa247018f7af6f28a52d8948d37fef66b6296","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.GcdClassTransport.Variant18d85b81f495014da135a0ccf71aa247018f7af6f28a52d8948d37fef66b6296","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"18d85b81f495014da135a0ccf71aa247018f7af6f28a52d8948d37fef66b6296","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/arithmetic-routes/PrimeBlockSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport
+import FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.GcdClassTransport.Variant18d85b81f495014da135a0ccf71aa247018f7af6f28a52d8948d37fef66b6296
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.coprimePairs
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.gcdClasses
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.splitPair
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.joinClass
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.splitPair_mem
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.joinClass_mem
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.joinClass_splitPair
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.splitPair_joinClass
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.sum_eq_coprime_classes
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.GcdClassTransport.moebius_weighted_sum_eq_coprime_classes
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.quotientSupported
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.ratioClassContribution
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.primeSupportedBlock
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.ratioClassContribution_eq_original_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.primeSupportedBlock_eq_bounded_classes
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.ratioClassContribution_eq_zero_of_not_squarefree
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.ratioClassContribution_eq_zero_of_max_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.primeSupportedBlock_eq_supportedPairs
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.PrimeSupportedBlock.primeSupportedBlock_eq_supportedPairs
+```

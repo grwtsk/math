@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant320e54c6673f0ba7c50c7fb3c50e5d6361544dc8303cb329b11e19c20fc525ca
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1d84e3a000dc24f60c7151812ca0474e07d6c62a` · SHA-256 `4ed8ea762bd6f9e5fda0a4a14259aa3d36c28cd213d50c5c27297706563576c2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.Variant5410bcc4884356e22945efaf1137a6c37b51207fd71127a63b5c0fd1599d566c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5410bcc4884356e22945efaf1137a6c37b51207fd71127a63b5c0fd1599d566c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualDiscreteLogRowVolterra.Variant5410bcc4884356e22945efaf1137a6c37b51207fd71127a63b5c0fd1599d566c","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5410bcc4884356e22945efaf1137a6c37b51207fd71127a63b5c0fd1599d566c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/source-readbacks/owner-ignored-latest-20261007T154040Z/preserved/scratch/rh16-continuation-20261006-challenge-next/SourceActualDiscreteLogRowVolterra-IndependentAllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualDiscreteLogRowVolterra
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.Variant5410bcc4884356e22945efaf1137a6c37b51207fd71127a63b5c0fd1599d566c
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualDiscreteLogProfile
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualDiscreteLogProfile
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualDiscreteLogProfile_right_strip_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualDiscreteLogProfile_right_strip_zero
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile_eq_volterra
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile_eq_volterra
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile_right_strip_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile_right_strip_lower
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualLogRowEulerRemainder_right_strip_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualLogRowEulerRemainder_right_strip_le
+#check FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualLogRowEulerRemainder_right_strip_neg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualLogRowEulerRemainder_right_strip_neg
+```

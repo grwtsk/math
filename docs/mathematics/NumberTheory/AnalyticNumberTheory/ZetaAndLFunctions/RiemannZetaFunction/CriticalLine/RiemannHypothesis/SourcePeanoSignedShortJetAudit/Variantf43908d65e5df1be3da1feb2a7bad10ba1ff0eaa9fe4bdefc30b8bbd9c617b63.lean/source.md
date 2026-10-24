@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoSignedShortJetAudit.Variantf43908d65e5df1be3da1feb2a7bad10ba1ff0eaa9fe4bdefc30b8bbd9c617b63
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4b8031a771f2d2f9f80957489f616553e8f68f40` · SHA-256 `71a7de823758243131158b6a9588f877f140a983f01c4106da0be5214870ebd1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoSignedShortJet.Variantafd18c7b98ccea132454e788fb2a7755428629e793280058125bb9dbe7952427","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"afd18c7b98ccea132454e788fb2a7755428629e793280058125bb9dbe7952427","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePeanoSignedShortJet.Variantafd18c7b98ccea132454e788fb2a7755428629e793280058125bb9dbe7952427","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"afd18c7b98ccea132454e788fb2a7755428629e793280058125bb9dbe7952427","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourcePeanoSignedShortJetAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourcePeanoSignedShortJet
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoSignedShortJet.Variantafd18c7b98ccea132454e788fb2a7755428629e793280058125bb9dbe7952427
+
+set_option pp.fullNames true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_eq_conjugated
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_eq_conjugated
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actual_upper_continuous_row_eq_local_profile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actual_upper_continuous_row_eq_local_profile
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_eq_polynomial
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_eq_polynomial
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_nonneg
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.literal_I_eq_actual_local_profile_sum
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.literal_I_eq_actual_local_profile_sum
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.cubicUpperMainTerm_eq_actualFourKappaJet
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.cubicUpperMainTerm_eq_actualFourKappaJet
+#check FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.literal_I_add_cubic_main_eq_signed_Peano_kappa
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.literal_I_add_cubic_main_eq_signed_Peano_kappa
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualFourKappaJet
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualFourKappaJet
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualSignedPeanoKappaShortSector
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualSignedPeanoKappaShortSector
+```

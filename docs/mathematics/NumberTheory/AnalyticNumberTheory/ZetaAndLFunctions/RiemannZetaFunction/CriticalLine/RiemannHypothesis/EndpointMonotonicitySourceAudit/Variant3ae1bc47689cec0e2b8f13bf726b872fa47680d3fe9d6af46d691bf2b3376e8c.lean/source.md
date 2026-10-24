@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EndpointMonotonicitySourceAudit.Variant3ae1bc47689cec0e2b8f13bf726b872fa47680d3fe9d6af46d691bf2b3376e8c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a723761bb85f693a51afb87b286cd139fdc04c48` · SHA-256 `6c8ee10c7d8e80de0a27c2bdff0d9e5c13454732839034e6f20b2826f76374ac`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EndpointMonotonicity.Variant2beeab37d083181b3fcc6c99f0de0b72ae758223182668d835e20d2982c201ac","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2beeab37d083181b3fcc6c99f0de0b72ae758223182668d835e20d2982c201ac","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.EndpointMonotonicity.Variant2beeab37d083181b3fcc6c99f0de0b72ae758223182668d835e20d2982c201ac","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"2beeab37d083181b3fcc6c99f0de0b72ae758223182668d835e20d2982c201ac","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/mertens/EndpointMonotonicitySourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EndpointMonotonicity.Variant2beeab37d083181b3fcc6c99f0de0b72ae758223182668d835e20d2982c201ac
+
+set_option pp.universes true
+set_option pp.explicit true
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.endpoint_scaled_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.endpoint_scaled_bounds
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedInterior_factor
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedInterior_factor
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedInteriorDerivative_factor
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedInteriorDerivative_factor
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedTest_endpoint_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedTest_endpoint_nonneg
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedTest_derivative_endpoint_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.normalizedTest_derivative_endpoint_nonpos
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.endpoint_product_signs
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.endpoint_product_signs
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.sourceCorrelation_endpoint_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.sourceCorrelation_endpoint_nonneg
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.sourceCorrelation_derivative_endpoint_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.sourceCorrelation_derivative_endpoint_nonpos
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.correlationDifference_endpoint_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.correlationDifference_endpoint_nonpos
+#check @FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.sourceSamplingKernel_derivative_upper_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.EndpointMonotonicity.sourceSamplingKernel_derivative_upper_nonpos
+```

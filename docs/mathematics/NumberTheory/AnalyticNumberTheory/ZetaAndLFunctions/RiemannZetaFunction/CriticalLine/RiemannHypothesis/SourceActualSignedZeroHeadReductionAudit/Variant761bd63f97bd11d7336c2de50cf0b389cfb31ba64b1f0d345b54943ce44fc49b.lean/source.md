@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroHeadReductionAudit.Variant761bd63f97bd11d7336c2de50cf0b389cfb31ba64b1f0d345b54943ce44fc49b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `26e09f055663df6d70df4fc5101d353a77925cf3` · SHA-256 `3df961eb42658f262e79c0fdf8da1cabb3c48c560d7368a4a76b7b67f2d776ad`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroHeadReduction.Variant3b5781a62a0d03fc2975909563da9f639d6c16db3d64b816cf893d0a2fb7eada","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3b5781a62a0d03fc2975909563da9f639d6c16db3d64b816cf893d0a2fb7eada","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualSignedZeroHeadReduction.Variant3b5781a62a0d03fc2975909563da9f639d6c16db3d64b816cf893d0a2fb7eada","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3b5781a62a0d03fc2975909563da9f639d6c16db3d64b816cf893d0a2fb7eada","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T051445Z-1791350085278261000/SourceActualSignedZeroHeadReductionAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualSignedZeroHeadReduction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualSignedZeroHeadReduction.Variant3b5781a62a0d03fc2975909563da9f639d6c16db3d64b816cf893d0a2fb7eada
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_sub_signedHead_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_sub_signedHead_eq
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_sub_signedHead_eq
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_two_sided
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_two_sided
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_two_sided
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_signed_error_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_signed_error_bound
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_signed_error_bound
+#check FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_signed_error_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_signed_error_tendsto
+#print FormalResearch.RiemannHypothesis.SourceActualSignedZeroHeadReduction.actualResidual_movingHead_signed_error_tendsto
+```

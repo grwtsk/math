@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUnconditionalCorrectedCalibrationAuditTypes.Variant6104d68b81a5bdf6fee5ff27026bfadba70635e43063e64712447e5e61f77694
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f0d1f6f8121690bab94417683204ea2ee41a73ff` · SHA-256 `50c7e7eb9051859835ab7447b773926201f1d205522375bac2362f06c093c8ac`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.Variant1c75e678caa698508b2f5bffabf3f747ea8e8514fe7f6107150a23560ce0deba","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1c75e678caa698508b2f5bffabf3f747ea8e8514fe7f6107150a23560ce0deba","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceUnconditionalCorrectedCalibration.Variant1c75e678caa698508b2f5bffabf3f747ea8e8514fe7f6107150a23560ce0deba","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1c75e678caa698508b2f5bffabf3f747ea8e8514fe7f6107150a23560ce0deba","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceUnconditionalCorrectedCalibrationAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceUnconditionalCorrectedCalibration
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.Variant1c75e678caa698508b2f5bffabf3f747ea8e8514fe7f6107150a23560ce0deba
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicRemainder_eq_stable
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicRemainder_eq_stable
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicRemainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicRemainder_abs_le
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicError_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.actualPeanoCubicError_abs_le
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.completeOmega_sub_complete_pairing_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.completeOmega_sub_complete_pairing_abs_le
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.integerJ_sub_complete_pairing_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.integerJ_sub_complete_pairing_abs_le
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.residual_sub_complete_pairing_sub_zeta_abs_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.residual_sub_complete_pairing_sub_zeta_abs_lt
+#check FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.estimate_of_complete_corrected_signed_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceUnconditionalCorrectedCalibration.estimate_of_complete_corrected_signed_tail
+```

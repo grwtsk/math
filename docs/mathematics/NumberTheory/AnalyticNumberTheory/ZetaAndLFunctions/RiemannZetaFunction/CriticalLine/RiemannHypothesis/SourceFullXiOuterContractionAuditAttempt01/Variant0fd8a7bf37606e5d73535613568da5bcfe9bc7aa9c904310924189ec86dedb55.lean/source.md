@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFullXiOuterContractionAuditAttempt01.Variant0fd8a7bf37606e5d73535613568da5bcfe9bc7aa9c904310924189ec86dedb55
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `36d76867e8db2d5d9b3a29384b0d2c37c873e8c6` · SHA-256 `0fd8a7bf37606e5d73535613568da5bcfe9bc7aa9c904310924189ec86dedb55`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFullXiOuterContraction
+
+set_option linter.hashCommand false
+
+#check FormalResearch.RiemannHypothesis.SourceOuterPsiFubini.finiteDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceOuterPsiFubini.finiteDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceOuterPsiFubini.finiteDensity_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceOuterPsiFubini.actualFiniteSecondReadout_outer_fubini
+#print FormalResearch.RiemannHypothesis.SourceOuterPsiFubini.actualFiniteSecondReadout_outer_fubini
+#print axioms FormalResearch.RiemannHypothesis.SourceOuterPsiFubini.actualFiniteSecondReadout_outer_fubini
+
+#check FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.literal_full_Xi_pairing_eq_contracted
+#print FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.literal_full_Xi_pairing_eq_contracted
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.literal_full_Xi_pairing_eq_contracted
+
+#check FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.actual_signed_pairing_eq_contracted
+#print FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.actual_signed_pairing_eq_contracted
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.actual_signed_pairing_eq_contracted
+
+#check FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.remaining_lower_of_contracted_pairing
+#print FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.remaining_lower_of_contracted_pairing
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.remaining_lower_of_contracted_pairing
+
+#check FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.estimate_of_contracted_pairing
+#print FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.estimate_of_contracted_pairing
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction.estimate_of_contracted_pairing
+
+```

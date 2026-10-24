@@ -1,0 +1,7 @@
+import ScopeFixtures
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalDecayScopeFixtures
+
+#print endpoint_minus_one_required
+#print actual_square_tail_not_decay

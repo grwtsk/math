@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialAbsoluteLogMomentsAuditProofsordinary.Variant6b3111f2104a920cae97f9622d4aa4f3e603b9e90745f4c4c056b377d128c5fd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `659e39510780cf61e5879464fa35b219d778f947` · SHA-256 `06f81f8e3dc127d1d95660a9abd1310c342c9566315590551a5a1fcb508a1b16`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.Varianta97461100de58e0e12bb83a7f7513fa8faed2063852e2a82ed88fc807d8ea9c9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a97461100de58e0e12bb83a7f7513fa8faed2063852e2a82ed88fc807d8ea9c9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceFactorialAbsoluteLogMoments.Varianta97461100de58e0e12bb83a7f7513fa8faed2063852e2a82ed88fc807d8ea9c9","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a97461100de58e0e12bb83a7f7513fa8faed2063852e2a82ed88fc807d8ea9c9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceFactorialAbsoluteLogMomentsAuditProofsordinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFactorialAbsoluteLogMoments
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.Varianta97461100de58e0e12bb83a7f7513fa8faed2063852e2a82ed88fc807d8ea9c9
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three
+```

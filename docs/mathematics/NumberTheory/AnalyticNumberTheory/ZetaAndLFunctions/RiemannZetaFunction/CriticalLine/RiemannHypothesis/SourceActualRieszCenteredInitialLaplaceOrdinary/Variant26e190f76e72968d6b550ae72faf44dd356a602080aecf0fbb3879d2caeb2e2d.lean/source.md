@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredInitialLaplaceOrdinary.Variant26e190f76e72968d6b550ae72faf44dd356a602080aecf0fbb3879d2caeb2e2d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `28fb9f0a27cc46598377b9a91fa291a52c4aa313` · SHA-256 `38d7765190368a82a7bc055f3ac8e40228323c8cca1a4bc91ec751e574e0dacf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.Variant497b32062d2baf127b7467e2702d83db452e64837ea28fddde57df40e7c0f9a6","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"497b32062d2baf127b7467e2702d83db452e64837ea28fddde57df40e7c0f9a6","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRieszCenteredInitialLaplace.Variant497b32062d2baf127b7467e2702d83db452e64837ea28fddde57df40e7c0f9a6","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"497b32062d2baf127b7467e2702d83db452e64837ea28fddde57df40e7c0f9a6","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-riesz-centered-initial-laplace/SourceActualRieszCenteredInitialLaplaceOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszCenteredInitialLaplace
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.Variant497b32062d2baf127b7467e2702d83db452e64837ea28fddde57df40e7c0f9a6
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFixedCenteredRieszLaplace
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFiniteCenteredRieszLaplace
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFixedCenteredRieszLaplace_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFixedCenteredRieszLaplace_eq_regularization
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFiniteCenteredRieszLaplace_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFiniteCenteredRieszLaplace_eq_fixed_add_payment
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFiniteCenteredRieszLaplace_eq_regularization_add_payment
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredInitialLaplace.actualFiniteCenteredRieszLaplace_difference_bound
+```

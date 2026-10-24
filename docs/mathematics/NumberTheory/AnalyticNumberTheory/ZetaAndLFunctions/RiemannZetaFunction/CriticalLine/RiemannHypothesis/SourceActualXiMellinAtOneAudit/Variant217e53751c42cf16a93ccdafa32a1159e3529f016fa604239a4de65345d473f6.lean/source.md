@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinAtOneAudit.Variant217e53751c42cf16a93ccdafa32a1159e3529f016fa604239a4de65345d473f6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `20097da4210126eb00d731833756fb6c1b76fa19` · SHA-256 `fd3e066c57eece8b335430cbda8ea5c044ea672fadfaec4291c8da07a7b388aa`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinAtOne.Variantc4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiMellinAtOne.Variantc4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T025018Z-1791341418269555000/SourceActualXiMellinAtOneAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiMellinAtOne
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinAtOne.Variantc4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue
+```

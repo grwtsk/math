@@ -1,0 +1,41 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+
+#check @criticalCumulativeDiscrepancy
+#print axioms criticalCumulativeDiscrepancy
+#check @criticalDiscrepancyPrimitive
+#print axioms criticalDiscrepancyPrimitive
+#check @criticalDiscrepancyBridge
+#print axioms criticalDiscrepancyBridge
+#check @criticalCumulativeDiscrepancy_eq
+#print axioms criticalCumulativeDiscrepancy_eq
+#check @criticalCumulativeDiscrepancy_at_upper
+#print axioms criticalCumulativeDiscrepancy_at_upper
+#check @criticalCumulativeDiscrepancy_at_zero
+#print axioms criticalCumulativeDiscrepancy_at_zero
+#check @criticalCumulativeDiscrepancy_intervalIntegrable
+#print axioms criticalCumulativeDiscrepancy_intervalIntegrable
+#check @criticalDiscrepancyPrimitive_at_zero
+#print axioms criticalDiscrepancyPrimitive_at_zero
+#check @criticalDiscrepancyPrimitive_continuous
+#print axioms criticalDiscrepancyPrimitive_continuous
+#check @criticalDiscrepancyPrimitive_absolutelyContinuous
+#print axioms criticalDiscrepancyPrimitive_absolutelyContinuous
+#check @criticalDiscrepancyPrimitive_ae_hasDerivAt
+#print axioms criticalDiscrepancyPrimitive_ae_hasDerivAt
+#check @criticalDiscrepancyPrimitive_sub
+#print axioms criticalDiscrepancyPrimitive_sub
+#check @criticalDiscrepancyPrimitive_eq_primeLogSum
+#print axioms criticalDiscrepancyPrimitive_eq_primeLogSum
+#check @criticalDiscrepancyBridge_at_zero
+#print axioms criticalDiscrepancyBridge_at_zero
+#check @criticalDiscrepancyBridge_at_upper
+#print axioms criticalDiscrepancyBridge_at_upper
+#check @criticalDiscrepancyBridge_continuous
+#print axioms criticalDiscrepancyBridge_continuous
+#check @criticalDiscrepancyBridge_absolutelyContinuous
+#print axioms criticalDiscrepancyBridge_absolutelyContinuous
+#check @criticalDiscrepancyBridge_ae_hasDerivAt
+#print axioms criticalDiscrepancyBridge_ae_hasDerivAt

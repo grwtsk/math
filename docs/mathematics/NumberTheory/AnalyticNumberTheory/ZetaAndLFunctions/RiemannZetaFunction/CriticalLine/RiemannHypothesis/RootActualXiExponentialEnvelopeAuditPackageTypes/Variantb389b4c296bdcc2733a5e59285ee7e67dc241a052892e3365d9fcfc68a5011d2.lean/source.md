@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiExponentialEnvelopeAuditPackageTypes.Variantb389b4c296bdcc2733a5e59285ee7e67dc241a052892e3365d9fcfc68a5011d2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a76824a26bd812f00706dd063065d14a8fae5889` · SHA-256 `b389b4c296bdcc2733a5e59285ee7e67dc241a052892e3365d9fcfc68a5011d2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiExponentialEnvelope
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+```

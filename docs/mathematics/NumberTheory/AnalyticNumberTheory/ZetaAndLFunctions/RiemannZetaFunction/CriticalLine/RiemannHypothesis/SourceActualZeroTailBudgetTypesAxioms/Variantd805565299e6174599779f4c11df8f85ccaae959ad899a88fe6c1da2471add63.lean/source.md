@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroTailBudgetTypesAxioms.Variantd805565299e6174599779f4c11df8f85ccaae959ad899a88fe6c1da2471add63
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9394c0c831ba6de2ede604212e984505445673b` · SHA-256 `d805565299e6174599779f4c11df8f85ccaae959ad899a88fe6c1da2471add63`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualZeroTailBudget
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualInitialPrimeMellin_strip_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualInitialPrimeMellin_strip_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroTailWeightConstant
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroTailWeightConstant
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead_finite
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead_finite
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_summable
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_norm_bound
+```

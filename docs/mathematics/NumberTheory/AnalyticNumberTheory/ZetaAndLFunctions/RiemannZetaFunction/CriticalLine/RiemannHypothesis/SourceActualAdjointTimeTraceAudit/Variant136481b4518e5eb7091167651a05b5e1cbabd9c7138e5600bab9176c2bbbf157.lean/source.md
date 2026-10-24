@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointTimeTraceAudit.Variant136481b4518e5eb7091167651a05b5e1cbabd9c7138e5600bab9176c2bbbf157
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c04962557c4814659c495c622ed436a26eac8b13` · SHA-256 `136481b4518e5eb7091167651a05b5e1cbabd9c7138e5600bab9176c2bbbf157`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdjointTimeTrace
+
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualHalfMangoldtWindow_eq_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualHalfMangoldtWindow_eq_inventory
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualAdjointTimePrimitive_eq_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualAdjointTimePrimitive_eq_closed_inventory
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualRawTimePrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualRawTimePrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory_at_original_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory_at_original_upper
+```

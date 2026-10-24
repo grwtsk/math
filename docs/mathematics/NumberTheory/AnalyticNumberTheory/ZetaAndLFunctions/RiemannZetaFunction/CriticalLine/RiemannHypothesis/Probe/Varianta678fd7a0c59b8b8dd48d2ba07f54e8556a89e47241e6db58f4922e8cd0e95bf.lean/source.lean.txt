@@ -1,0 +1,10 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.ProperPrimePowers
+#check Nat.pow_left_injective
+#check Nat.pow_left_cancel
+#check sq_lt_sq₀
+#check Nat.sqrt_sq_eq
+#check Real.sqrt_sq
+#check Finset.sum_image
+#check Real.log_pow
+#check Nat.not_prime_pow
+#check Nat.Prime.not_prime_pow

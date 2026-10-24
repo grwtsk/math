@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceReducedOffAxisQuadraticSharpAudit.Variant5a8d4074fcccd6936ce1386ba0222bf63dc70952b9b9b1a2c168f4c6879ba0fe
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cfa86e387176cd53b31e1c97ba2b3717ea5bc158` · SHA-256 `85098aa3e5d1e2e09d262564af0ef3ea66d6dd7efd071020c1da19d1aff7ecfa`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.Variantd0375b9414264e9846fcda5572f9a659fa6b7b6a1d3ed4c4c09233ef81f7ddc7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d0375b9414264e9846fcda5572f9a659fa6b7b6a1d3ed4c4c09233ef81f7ddc7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceReducedOffAxisQuadraticSharp.Variantd0375b9414264e9846fcda5572f9a659fa6b7b6a1d3ed4c4c09233ef81f7ddc7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d0375b9414264e9846fcda5572f9a659fa6b7b6a1d3ed4c4c09233ef81f7ddc7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/followthrough4/review/sharp-audit01/SourceReducedOffAxisQuadraticSharpAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceReducedOffAxisQuadraticSharp
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.Variantd0375b9414264e9846fcda5572f9a659fa6b7b6a1d3ed4c4c09233ef81f7ddc7
+
+namespace FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp
+#check actualReducedZeroEnvelope_le_at_radius
+#print axioms actualReducedZeroEnvelope_le_at_radius
+#print actualReducedZeroEnvelope_le_at_radius
+#check quadratic_tail_of_reduced_offAxis_lower
+#print axioms quadratic_tail_of_reduced_offAxis_lower
+#print quadratic_tail_of_reduced_offAxis_lower
+#check all_real_sharp_lower_of_reduced_offAxis_lower
+#print axioms all_real_sharp_lower_of_reduced_offAxis_lower
+#print all_real_sharp_lower_of_reduced_offAxis_lower
+#check estimate_sharp_of_reduced_offAxis_lower
+#print axioms estimate_sharp_of_reduced_offAxis_lower
+#print estimate_sharp_of_reduced_offAxis_lower
+end FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp
+```

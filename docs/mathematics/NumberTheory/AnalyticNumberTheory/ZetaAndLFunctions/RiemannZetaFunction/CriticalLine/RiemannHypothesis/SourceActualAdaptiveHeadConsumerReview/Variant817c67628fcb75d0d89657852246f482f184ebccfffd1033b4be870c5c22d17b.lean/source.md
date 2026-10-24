@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdaptiveHeadConsumerReview.Variant817c67628fcb75d0d89657852246f482f184ebccfffd1033b4be870c5c22d17b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d36d9d10bd5a250f4301eeae3794f7176d4c598` · SHA-256 `05bb62e0013fc1ceeb77479d4fe7763a539ad9d08c7f0022a40d07fc8cb6e11b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdaptiveHeadConsumer.Variant5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAdaptiveHeadConsumer.Variant5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/reflection-analysis/independent-actual-adaptive-head-consumer/native/SourceActualAdaptiveHeadConsumerReview.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAdaptiveHeadConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdaptiveHeadConsumer.Variant5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9
+
+#check RH16ActualAdaptiveHeadConsumer.original_quadratic_lower_of_adaptive_head
+#print axioms RH16ActualAdaptiveHeadConsumer.original_quadratic_lower_of_adaptive_head
+#check RH16ActualAdaptiveHeadConsumer.estimate_of_actual_adaptive_head
+#print axioms RH16ActualAdaptiveHeadConsumer.estimate_of_actual_adaptive_head
+#check RH16ActualAdaptiveHeadConsumer.actual_adaptive_head_estimate_source_witness
+#print axioms RH16ActualAdaptiveHeadConsumer.actual_adaptive_head_estimate_source_witness
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTail_uniform_bound
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTail_uniform_bound
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction.estimate_of_quadratic_tail_lower_bound
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction.estimate_of_quadratic_tail_lower_bound
+open FormalResearch.RiemannHypothesis
+open SourceActualZeroTailBudget SourcePairing
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+#print CorrelationAssembly.EstimateObligation
+#print CorrelationAssembly.UniformLowerBound
+#print SourcePairing.sourceQuadraticValue
+#print SourcePairing.primePowerContribution
+#print actualZeroHeightHead
+#print actualZeroHeightTail
+#print RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight
+#print RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTailCost
+#print EstimateTailReduction.bounded_radius_lower
+#print EstimateTailReduction.estimate_of_quadratic_tail_lower_bound
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"
+```

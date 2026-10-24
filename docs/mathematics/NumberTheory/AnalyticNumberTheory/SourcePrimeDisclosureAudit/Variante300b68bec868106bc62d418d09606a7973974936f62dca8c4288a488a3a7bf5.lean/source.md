@@ -1,0 +1,66 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.SourcePrimeDisclosureAudit.Variante300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `755a73a5d3cd2bcf1f114310c796aa4c1d8f33f5` · SHA-256 `e300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePrimeDisclosure
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.fullNames true
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors_fresh_coprime
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors_fresh_coprime
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert_disjoint
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert_disjoint
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure
+#check RH16Tandem.SourcePrimeDisclosure.disclosedMean
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosedMean
+#check RH16Tandem.SourcePrimeDisclosure.disclosedDivisorSum
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosedDivisorSum
+#check RH16Tandem.SourcePrimeDisclosure.freshPrimeCorrection
+#print axioms RH16Tandem.SourcePrimeDisclosure.freshPrimeCorrection
+#check RH16Tandem.SourcePrimeDisclosure.moebius_fresh_prime_mul
+#print axioms RH16Tandem.SourcePrimeDisclosure.moebius_fresh_prime_mul
+#check RH16Tandem.SourcePrimeDisclosure.fresh_prime_discrepancy
+#print axioms RH16Tandem.SourcePrimeDisclosure.fresh_prime_discrepancy
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_insert_prime
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_insert_prime
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_primeDivisors_insert
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_primeDivisors_insert
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_coverage
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_coverage
+#check RH16Tandem.SourcePrimeDisclosure.disclosureSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosureSource
+#check RH16Tandem.SourcePrimeDisclosure.correctionSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.correctionSource
+#check RH16Tandem.SourcePrimeDisclosure.disclosureSource_insert_prime
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosureSource_insert_prime
+#check RH16Tandem.SourcePrimeDisclosure.disclosureSource_primeDivisors_insert
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosureSource_primeDivisors_insert
+#check RH16Tandem.SourcePrimeDisclosure.plainSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.plainSource
+#check RH16Tandem.SourcePrimeDisclosure.primeMultipleSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeMultipleSource
+#check RH16Tandem.SourcePrimeDisclosure.correctionSource_eq_mean_and_multiples
+#print axioms RH16Tandem.SourcePrimeDisclosure.correctionSource_eq_mean_and_multiples
+#check RH16Tandem.SourcePrimeDisclosure.physicalDiagonal
+#print axioms RH16Tandem.SourcePrimeDisclosure.physicalDiagonal
+#check RH16Tandem.SourcePrimeDisclosure.compensatedReadout
+#print axioms RH16Tandem.SourcePrimeDisclosure.compensatedReadout
+#check RH16Tandem.SourcePrimeDisclosure.compensatedReadout_row_increment
+#print axioms RH16Tandem.SourcePrimeDisclosure.compensatedReadout_row_increment
+#check RH16Tandem.SourcePrimeDisclosure.compensatedReadout_two_row_increment
+#print axioms RH16Tandem.SourcePrimeDisclosure.compensatedReadout_two_row_increment
+#check RH16Tandem.SourcePrimeDisclosure.repeated_prime_divisor_zero
+#print axioms RH16Tandem.SourcePrimeDisclosure.repeated_prime_divisor_zero
+#check RH16Tandem.SourcePrimeDisclosure.prime_power_mangoldt_coefficient
+#print axioms RH16Tandem.SourcePrimeDisclosure.prime_power_mangoldt_coefficient
+#check RH16Tandem.SourcePrimeDisclosure.prime_three_centering_fixture
+#print axioms RH16Tandem.SourcePrimeDisclosure.prime_three_centering_fixture
+```

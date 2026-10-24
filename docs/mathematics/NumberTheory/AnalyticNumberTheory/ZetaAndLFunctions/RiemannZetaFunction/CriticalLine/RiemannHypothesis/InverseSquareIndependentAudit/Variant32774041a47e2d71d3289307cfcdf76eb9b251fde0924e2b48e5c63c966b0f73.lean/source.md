@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.InverseSquareIndependentAudit.Variant32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a4d26039ece3b4c811b8bcd10b26c680d55bbf49` · SHA-256 `32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceInverseSquareEndpointConsumer
+namespace FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+#check actual_psi_inverse_square
+#print axioms actual_psi_inverse_square
+#check shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#print axioms shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#check shiftedActualChebyshev_inverse_square
+#print axioms shiftedActualChebyshev_inverse_square
+#check shiftedActualChebyshev_mul_intervalIntegrable
+#print axioms shiftedActualChebyshev_mul_intervalIntegrable
+#check shiftedPsiSecondPrimitive
+#print axioms shiftedPsiSecondPrimitive
+#check shiftedPsiFullPrimitive
+#print axioms shiftedPsiFullPrimitive
+#check shiftedPsiSecondPrimitive_intervalIntegrable
+#print axioms shiftedPsiSecondPrimitive_intervalIntegrable
+#check shiftedPsiFullPrimitive_eq
+#print axioms shiftedPsiFullPrimitive_eq
+end FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+namespace FormalResearch.RiemannHypothesis.SourceInverseSquareEndpointConsumer
+#check closed_upper_atom_weight_zero
+#print axioms closed_upper_atom_weight_zero
+#check inverse_square_at_two
+#print axioms inverse_square_at_two
+#check shifted_full_primitive_at_first_atom
+#print axioms shifted_full_primitive_at_first_atom
+#check shifted_second_primitive_at_first_atom
+#print axioms shifted_second_primitive_at_first_atom
+#check primitiveDensity_eq_inverse_square
+#print axioms primitiveDensity_eq_inverse_square
+#check centeredCriticalPrimitive_eq_lower_integral
+#print axioms centeredCriticalPrimitive_eq_lower_integral
+#check actualCesaroPrimitive_eq_inverse_square_double
+#print axioms actualCesaroPrimitive_eq_inverse_square_double
+#check shifted_full_primitive_first_component_applied
+#print axioms shifted_full_primitive_first_component_applied
+end FormalResearch.RiemannHypothesis.SourceInverseSquareEndpointConsumer
+```

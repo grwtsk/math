@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOffAxisEstimateEquivalenceTypesAxioms.Variant23574576699641f3238b5ebe102e6442bf99ea9916156b80f220ec1a36a3a53b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `27273545b6d6bfa20b841cd498cdadf861a86877` · SHA-256 `cd6e54e15207e2dbbfff90dc8907f529f1ed90dc275f8d5d737a75305ca4a1bf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.Variante62e22b4a1d8c5d04e197c784cba55b4d2ed0dedb3fb7a1834b32db4564b6a3c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e62e22b4a1d8c5d04e197c784cba55b4d2ed0dedb3fb7a1834b32db4564b6a3c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualOffAxisEstimateEquivalence.Variante62e22b4a1d8c5d04e197c784cba55b4d2ed0dedb3fb7a1834b32db4564b6a3c","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e62e22b4a1d8c5d04e197c784cba55b4d2ed0dedb3fb7a1834b32db4564b6a3c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T061516Z-1791353716903050000/SourceActualOffAxisEstimateEquivalenceTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualOffAxisEstimateEquivalence
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.Variante62e22b4a1d8c5d04e197c784cba55b4d2ed0dedb3fb7a1834b32db4564b6a3c
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.ActualSourceNegativeDefectTailBound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.ActualSourceNegativeDefectTailBound
+
+#check FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.ActualReducedOffAxisNegativeDefectTailBound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.ActualReducedOffAxisNegativeDefectTailBound
+
+#check FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualSourceNegativeDefectTailBound_iff_estimate
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualSourceNegativeDefectTailBound_iff_estimate
+
+#check FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisNegativeDefectTailBound_iff_source
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisNegativeDefectTailBound_iff_source
+
+#check FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisNegativeDefectTailBound_iff_estimate
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisNegativeDefectTailBound_iff_estimate
+
+#check FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisHeadLowerTail_iff_estimate
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOffAxisEstimateEquivalence.actualReducedOffAxisHeadLowerTail_iff_estimate
+```

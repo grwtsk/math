@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceExactOverlapConsumerAudit.Variantd3475a947c0435d19823a94993f4fc267a179adc20e34fc9fe7cdc495a55091b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bcd5698718caf1da2682ea21faf8460a87e9bb6f` · SHA-256 `d3475a947c0435d19823a94993f4fc267a179adc20e34fc9fe7cdc495a55091b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceExactOverlapConsumer
+#check RH16ExactOverlapConsumer.exactStripCost
+#print axioms RH16ExactOverlapConsumer.exactStripCost
+#check RH16ExactOverlapConsumer.exactOverlapResidualBudget
+#print axioms RH16ExactOverlapConsumer.exactOverlapResidualBudget
+#check RH16ExactOverlapConsumer.exactStripCost_nonneg
+#print axioms RH16ExactOverlapConsumer.exactStripCost_nonneg
+#check RH16ExactOverlapConsumer.exactOverlapResidualBudget_nonneg
+#print axioms RH16ExactOverlapConsumer.exactOverlapResidualBudget_nonneg
+#check RH16ExactOverlapConsumer.residual_upper_of_overlap_with_ledger
+#print axioms RH16ExactOverlapConsumer.residual_upper_of_overlap_with_ledger
+#check RH16ExactOverlapConsumer.residual_tail_of_overlap_with_exact_strip
+#print axioms RH16ExactOverlapConsumer.residual_tail_of_overlap_with_exact_strip
+#check RH16ExactOverlapConsumer.quadratic_lower_of_residual_upper
+#print axioms RH16ExactOverlapConsumer.quadratic_lower_of_residual_upper
+#check RH16ExactOverlapConsumer.all_real_lower_of_overlap_with_ledger
+#print axioms RH16ExactOverlapConsumer.all_real_lower_of_overlap_with_ledger
+#check RH16ExactOverlapConsumer.all_real_lower_of_overlap_with_exact_strip
+#print axioms RH16ExactOverlapConsumer.all_real_lower_of_overlap_with_exact_strip
+#check RH16ExactOverlapConsumer.estimate_of_overlap_with_exact_strip
+#print axioms RH16ExactOverlapConsumer.estimate_of_overlap_with_exact_strip
+```

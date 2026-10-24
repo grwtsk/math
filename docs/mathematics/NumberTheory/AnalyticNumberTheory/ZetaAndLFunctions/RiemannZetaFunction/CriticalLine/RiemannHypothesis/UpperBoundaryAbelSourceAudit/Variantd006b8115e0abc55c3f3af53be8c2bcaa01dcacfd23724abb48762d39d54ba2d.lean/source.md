@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryAbelSourceAudit.Variantd006b8115e0abc55c3f3af53be8c2bcaa01dcacfd23724abb48762d39d54ba2d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b9f23c594fe7b13d839b76524857175707eada37` · SHA-256 `ba15db3cb0f8c58c73715783df0ca23ef69c812b18850e037fb808c13dd933af`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryAbel.Variant1c1ae71ecbf4b03fb8c794db78f851b1505701dc287f56871319b85fde3b264e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1c1ae71ecbf4b03fb8c794db78f851b1505701dc287f56871319b85fde3b264e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.UpperBoundaryAbel.Variant1c1ae71ecbf4b03fb8c794db78f851b1505701dc287f56871319b85fde3b264e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1c1ae71ecbf4b03fb8c794db78f851b1505701dc287f56871319b85fde3b264e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/arithmetic-routes/UpperBoundaryAbelSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryAbel.Variant1c1ae71ecbf4b03fb8c794db78f851b1505701dc287f56871319b85fde3b264e
+
+set_option autoImplicit false
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductCoefficient
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductCoefficient_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductCoefficient_zero
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductCoefficient_one
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductCoefficient_one
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory_one
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory_one
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upper_rectangle_eq_weighted_product_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upper_rectangle_eq_weighted_product_sum
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory_eq_rectangle_cutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory_eq_rectangle_cutoff
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory_mul_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProductSummatory_mul_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProduct_sum_eq_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upperProduct_sum_eq_abel
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upper_rectangle_eq_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.upper_rectangle_eq_abel
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.source_upper_boundary_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.source_upper_boundary_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.source_upper_boundary_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.source_upper_boundary_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.source_upper_boundary_eq_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryAbel.source_upper_boundary_eq_abel
+```

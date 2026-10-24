@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCorrelationOppositeHalfAudit.Variant7d3cdaf355abae54b0c0b4971f4ba251228fe06a8104f1f4992ed0cb25cc890e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `716af40f9906261f660265ea2f044ada6127f99f` · SHA-256 `09c6831ef1568e39044ccf272caeef818c73488699a5ee3d1dc3688cb77ee4fe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCorrelationOppositeHalf.Variant23687de1b6163cec64be34910d72a6d0be6e8a798fb173153875fa719823b1d8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"23687de1b6163cec64be34910d72a6d0be6e8a798fb173153875fa719823b1d8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualCorrelationOppositeHalf.Variant23687de1b6163cec64be34910d72a6d0be6e8a798fb173153875fa719823b1d8","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"23687de1b6163cec64be34910d72a6d0be6e8a798fb173153875fa719823b1d8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T040045Z-1791345645638661000/ActualCorrelationOppositeHalfAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualCorrelationOppositeHalf
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCorrelationOppositeHalf.Variant23687de1b6163cec64be34910d72a6d0be6e8a798fb173153875fa719823b1d8
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform
+#print FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform_eq_halves
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform_eq_halves
+#print FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualBilateralCorrelationTransform_eq_halves
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_opposite_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_opposite_norm_le
+#print FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_opposite_norm_le
+#check FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_sub_bilateral_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_sub_bilateral_norm_le
+#print FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf.actualHalfCorrelationTransform_sub_bilateral_norm_le
+```

@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant5a7bac84082333d66ef7d6a23d2c13af7ab5e2166f31022d90ceb0a41cce0790
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd529dd3a85edc681bb82c71d3189ab50d15d654` · SHA-256 `d79a5e1027ab411296d1fad6b4f56bf44ac280dd23de7dbd827708d475d4e404`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedTailLinearConsumer.Variant4db3be4f1adf83d4387361e33439df6efbb0c1eb6140256077aa5ba9670e9ece","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4db3be4f1adf83d4387361e33439df6efbb0c1eb6140256077aa5ba9670e9ece","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSignedTailLinearConsumer.Variant4db3be4f1adf83d4387361e33439df6efbb0c1eb6140256077aa5ba9670e9ece","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4db3be4f1adf83d4387361e33439df6efbb0c1eb6140256077aa5ba9670e9ece","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/independent-early-linear/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSignedTailLinearConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedTailLinearConsumer.Variant4db3be4f1adf83d4387361e33439df6efbb0c1eb6140256077aa5ba9670e9ece
+
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.log_vaughanCutoff_le_early_window
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_pos
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_le
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_negative_budget
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_minus_early_budget
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_lower
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_neg_linear
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_sub_linear
+#print FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.signedShortAndComplementaryTail
+#print FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.complete_pairing_le_signed_short_tail_sub_linear
+#print FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.mertensResidual_lt_signed_short_tail_sub_linear_add_zeta
+#print FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.estimate_of_actual_signed_short_tail_linear_budget
+```

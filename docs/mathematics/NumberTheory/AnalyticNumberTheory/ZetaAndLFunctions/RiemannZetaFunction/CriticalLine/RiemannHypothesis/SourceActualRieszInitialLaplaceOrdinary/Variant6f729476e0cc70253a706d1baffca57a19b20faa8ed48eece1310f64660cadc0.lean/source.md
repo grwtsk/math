@@ -1,0 +1,62 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszInitialLaplaceOrdinary.Variant6f729476e0cc70253a706d1baffca57a19b20faa8ed48eece1310f64660cadc0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1c143572981515fc1325ad9a31781e0e386792b6` · SHA-256 `5b9cbf897d95ea329ac5556bbde8809680a0cae3329dbfcb7c133e25bf69e21b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszInitialLaplace.Variant614c633ff73f516481232bb486bb6a2de71650e29d27c1aed433d9194b28ce7a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"614c633ff73f516481232bb486bb6a2de71650e29d27c1aed433d9194b28ce7a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceActualRieszInitialLaplace.Variant614c633ff73f516481232bb486bb6a2de71650e29d27c1aed433d9194b28ce7a","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"614c633ff73f516481232bb486bb6a2de71650e29d27c1aed433d9194b28ce7a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T084248Z-1791362568270585000/SourceActualRieszInitialLaplaceOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszInitialLaplace
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszInitialLaplace.Variant614c633ff73f516481232bb486bb6a2de71650e29d27c1aed433d9194b28ce7a
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualSingleRieszRamp_integrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualSingleRieszRamp_integral_norm
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualSingleRieszRamp_integral
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtom
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualMangoldtRieszLaplace
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtom_integrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtom_integral_norm
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtoms_summable_integral_norm
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtoms_tsum
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtoms_tsum_integrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtoms_integral_tsum
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszLaplaceAtom_integral
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszContinuousRamp_laplace_integrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualRieszContinuousRamp_laplace_integral
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualMangoldtRieszLaplace_integrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualMangoldtRieszLaplace_eq_LSeries
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszInitialLaplace.actualMangoldtRieszLaplace_eq_logDeriv
+```

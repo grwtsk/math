@@ -1,0 +1,127 @@
+# weighted_convolution
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "a8d3b342297ea702f9a4d9c7fe6561b03255e815",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 48,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/bf/bf64ad1f6894e29b525d940b467918e318e2976148a2c3e624b9bd473720fd25.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:cf35d1fc-5a94-f31a-7183-3907250313ec",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:3fb3ae42-b827-e0d3-3030-d8c6cc4a1f2d",
+  "kind": "theorem",
+  "lexical_name": "weighted_convolution",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "weighted-convolution--de8d4142fbe378cab66d60d8",
+  "source": {
+    "blob": "a8d3b342297ea702f9a4d9c7fe6561b03255e815",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 81,
+    "line": 48,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaKernelTransport/Variantbf64ad1f6894e29b525d940b467918e318e2976148a2c3e624b9bd473720fd25.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:de8d4142fbe378cab66d60d8fa067f6e3d0bf86def6de64e4e3eb8a42ef6f33d",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaKernelTransport/Variantbf64ad1f6894e29b525d940b467918e318e2976148a2c3e624b9bd473720fd25.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:3fb3ae42-b827-e0d3-3030-d8c6cc4a1f2d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 48–81.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem weighted_convolution (f g : ArithmeticFunction ℝ) (B : ℕ) (W : ℕ → ℝ)
+    (hW : ∀ n : ℕ, B < n → W n = 0) :
+    (∑ n ∈ Icc 1 B, (f * g) n * W n) =
+      ∑ i ∈ Icc 1 B, f i * ∑ j ∈ Icc 1 B, g j * W (i * j) := by
+  let F : ℕ × ℕ → ℝ := fun p ↦ f p.1 * g p.2 * W (p.1 * p.2)
+  calc
+    _ = ∑ n ∈ Icc 1 B, ∑ p ∈ n.divisorsAntidiagonal, F p := by
+      apply sum_congr rfl
+      intro n _
+      rw [ArithmeticFunction.mul_apply, sum_mul]
+      apply sum_congr rfl
+      intro p hp
+      simp only [F, (Nat.mem_divisorsAntidiagonal.mp hp).1]
+    _ = ∑ i ∈ Icc 1 B, ∑ j ∈ Icc 1 B,
+        if i * j ∈ Icc 1 B then F (i, j) else 0 :=
+      divisors_sum_eq_filtered_product B (Icc 1 B) (fun _ h ↦ h) F
+    _ = _ := by
+      apply sum_congr rfl
+      intro i hi
+      rw [mul_sum]
+      apply sum_congr rfl
+      intro j hj
+      by_cases hij : i * j ∈ Icc 1 B
+      · simp only [if_pos hij, F]
+        ring
+      · have hprod : 1 ≤ i * j := by
+          have := (mem_Icc.mp hi).1
+          have := (mem_Icc.mp hj).1
+          nlinarith
+        have hB : B < i * j := by
+          by_contra h
+          exact hij (mem_Icc.mpr ⟨hprod, Nat.le_of_not_lt h⟩)
+        simp only [if_neg hij, hW _ hB, mul_zero]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaKernelTransport/Variantbf64ad1f6894e29b525d940b467918e318e2976148a2c3e624b9bd473720fd25.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaKernelTransport/Variantbf64ad1f6894e29b525d940b467918e318e2976148a2c3e624b9bd473720fd25.lean#L48).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a8d3b342297ea702f9a4d9c7fe6561b03255e815` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

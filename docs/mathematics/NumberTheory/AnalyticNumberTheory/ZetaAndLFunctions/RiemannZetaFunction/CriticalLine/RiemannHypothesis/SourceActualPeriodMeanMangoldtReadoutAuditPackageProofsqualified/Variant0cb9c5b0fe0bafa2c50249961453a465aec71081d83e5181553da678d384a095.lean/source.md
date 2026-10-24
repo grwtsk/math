@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadoutAuditPackageProofsqualified.Variant0cb9c5b0fe0bafa2c50249961453a465aec71081d83e5181553da678d384a095
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f88c888153068ec80112f776585d9baeacba9e58` · SHA-256 `295a5f1fd878f77c07b4de8f164adc1733be3fcbd02dd8767766a40e972d221c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.Variante2e394ac24f374d4e2acb3f1e2c15df1273188e75ff8114d576bd5f06f3f1caf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e2e394ac24f374d4e2acb3f1e2c15df1273188e75ff8114d576bd5f06f3f1caf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPeriodMeanMangoldtReadout.Variante2e394ac24f374d4e2acb3f1e2c15df1273188e75ff8114d576bd5f06f3f1caf","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e2e394ac24f374d4e2acb3f1e2c15df1273188e75ff8114d576bd5f06f3f1caf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualPeriodMeanMangoldtReadoutAuditPackageProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPeriodMeanMangoldtReadout
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.Variante2e394ac24f374d4e2acb3f1e2c15df1273188e75ff8114d576bd5f06f3f1caf
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest_covariant_deriv
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTests_at_upper
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeFactor_eq_closed_half_row
+```

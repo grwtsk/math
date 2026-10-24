@@ -1,0 +1,57 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceConstantOffsetAudit.Variantf41a2b113473b13b682ddb49f3a0ca22e4f7afdaff26359880888eb21d17bb45
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2ae7cf396c0955b70990fd557c1624d97c6b3b80` · SHA-256 `0fc867846eff045c5b1811fec2d7c1092c24aa27a03caf582930e795056dd2b6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAnchoredMixedWorkBound.Variant3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceAnchoredMixedWorkBound.Variant3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourceConstantOffsetAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceAnchoredMixedWorkBound
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAnchoredMixedWorkBound.Variant3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_contDiff
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_at_upper_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_at_upper_zero
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_log_cutoff_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_log_cutoff_bounds
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_derivative_window
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_derivative_window
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.centeredErrorWork_eq_original_add_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.centeredErrorWork_eq_original_add_lower
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.original_compensation_eq_constant_offset
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.original_compensation_eq_constant_offset
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.strictColumnInterior_eq_lower_anchored_error_work
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.strictColumnInterior_eq_lower_anchored_error_work
+
+#check FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_mixed_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_mixed_mass
+
+#check FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_columnEnvelopeMass
+#print axioms FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_columnEnvelopeMass
+
+#check FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorExpMass_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorExpMass_nonneg
+
+#check FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorWork_abs_le_twiceA_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorWork_abs_le_twiceA_mass
+
+#check FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.actual_lower_boundary_add_work_abs_le_anchored_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.actual_lower_boundary_add_work_abs_le_anchored_mass
+
+```

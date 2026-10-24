@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FirstAtomAudit.Variant61deeb568f7470346d86d3709e388bf3e473d8a26367dd8c5c3d845a874965de
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `480f6ea43db1f283caa5ca448066279ea6cf725d` · SHA-256 `3305f2c7bc36b336f209a1ebf01791d7c4efa555a7d767f42c5e0aeb757523fd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFirstAtomSignedWork.Variantf7fb5e7cc025140dce43abca1d180221a3f2e33090366432d35455fae05deb69","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f7fb5e7cc025140dce43abca1d180221a3f2e33090366432d35455fae05deb69","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceFirstAtomSignedWork.Variantf7fb5e7cc025140dce43abca1d180221a3f2e33090366432d35455fae05deb69","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f7fb5e7cc025140dce43abca1d180221a3f2e33090366432d35455fae05deb69","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/resume-first-atom/check-20261006T173346Z-1791308026398261000/FirstAtomAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFirstAtomSignedWork
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFirstAtomSignedWork.Variantf7fb5e7cc025140dce43abca1d180221a3f2e33090366432d35455fae05deb69
+
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.fullNames true
+set_option linter.hashCommand false
+set_option linter.style.longLine false
+
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.remainingAtomWork
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.remainingAtomWork
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork_eq_empty_prefix
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork_eq_empty_prefix
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.actual_criticalPrimeTest_deriv_first_interval
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.actual_criticalPrimeTest_deriv_first_interval
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork_signed_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork_signed_bounds
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork_nonpositive
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.firstAtomHeadWork_nonpositive
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.criticalMangoldtWork_eq_head_add_remaining
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.criticalMangoldtWork_eq_head_add_remaining
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.criticalMangoldtWork_lower_of_remaining_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.criticalMangoldtWork_lower_of_remaining_lower
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.remaining_lower_of_criticalMangoldtWork_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.remaining_lower_of_criticalMangoldtWork_lower
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.residual_upper_of_remaining_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.residual_upper_of_remaining_lower
+#check FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.estimate_of_remainingAtomWork_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstAtomSignedWork.estimate_of_remainingAtomWork_tail
+```

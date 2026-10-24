@@ -1,0 +1,20 @@
+import SourceActualPsiInverseSquare
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+#print actual_psi_inverse_square
+#print axioms actual_psi_inverse_square
+#print shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#print axioms shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#print shiftedActualChebyshev_inverse_square
+#print axioms shiftedActualChebyshev_inverse_square
+#print shiftedActualChebyshev_mul_intervalIntegrable
+#print axioms shiftedActualChebyshev_mul_intervalIntegrable
+#print shiftedPsiSecondPrimitive
+#print axioms shiftedPsiSecondPrimitive
+#print shiftedPsiFullPrimitive
+#print axioms shiftedPsiFullPrimitive
+#print shiftedPsiSecondPrimitive_intervalIntegrable
+#print axioms shiftedPsiSecondPrimitive_intervalIntegrable
+#print shiftedPsiFullPrimitive_eq
+#print axioms shiftedPsiFullPrimitive_eq
+end FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare

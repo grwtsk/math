@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SharperCesaroKernelBudgetAudit.Variant6ff7ae8ce443c73df28f56412293112300f7601053ef9742c3de766abe1cc104
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `66d60bc3b2aa4466356ff95c110157a3247ba010` · SHA-256 `6ff7ae8ce443c73df28f56412293112300f7601053ef9742c3de766abe1cc104`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SharperCesaroKernelBudget
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+#check RH16SharperCesaro.cesaroWeight_second_abs_le_upper
+#print axioms RH16SharperCesaro.cesaroWeight_second_abs_le_upper
+#print RH16SharperCesaro.cesaroWeight_second_abs_le_upper
+#check RH16SharperCesaro.cesaroWeight_second_abs_le_origin
+#print axioms RH16SharperCesaro.cesaroWeight_second_abs_le_origin
+#print RH16SharperCesaro.cesaroWeight_second_abs_le_origin
+#check RH16SharperCesaro.cesaroWeight_second_abs_le_both_distances
+#print axioms RH16SharperCesaro.cesaroWeight_second_abs_le_both_distances
+#print RH16SharperCesaro.cesaroWeight_second_abs_le_both_distances
+#check RH16SharperCesaro.cesaroWeight_weighted_budget_twenty
+#print axioms RH16SharperCesaro.cesaroWeight_weighted_budget_twenty
+#print RH16SharperCesaro.cesaroWeight_weighted_budget_twenty
+#check RH16SharperCesaro.cesaroWeight_weighted_budget_twenty_uniform
+#print axioms RH16SharperCesaro.cesaroWeight_weighted_budget_twenty_uniform
+#print RH16SharperCesaro.cesaroWeight_weighted_budget_twenty_uniform
+#check RH16SharperCesaro.cesaroWeight_weighted_budget_both_distances
+#print axioms RH16SharperCesaro.cesaroWeight_weighted_budget_both_distances
+#print RH16SharperCesaro.cesaroWeight_weighted_budget_both_distances
+#check RH16SharperCesaro.cesaroWeight_weighted_budget_both_distances_uniform
+#print axioms RH16SharperCesaro.cesaroWeight_weighted_budget_both_distances_uniform
+#print RH16SharperCesaro.cesaroWeight_weighted_budget_both_distances_uniform
+```

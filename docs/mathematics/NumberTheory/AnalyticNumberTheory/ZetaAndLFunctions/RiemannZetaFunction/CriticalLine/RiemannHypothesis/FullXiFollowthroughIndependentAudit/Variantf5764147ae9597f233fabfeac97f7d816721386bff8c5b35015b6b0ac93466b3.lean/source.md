@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FullXiFollowthroughIndependentAudit.Variantf5764147ae9597f233fabfeac97f7d816721386bff8c5b35015b6b0ac93466b3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `df93d869366edbc9643d2b09cfcb9446560188b5` · SHA-256 `de9f209c9c4213ec6026d7cee8e781a63beb3e6f087b0d3805eb6f3805be8577`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFullXiLeadingPropagation.Variant2743e5894cd124e26a70691a9067cdc0dbf63c7947c481f9c7aa47f1117fe3a4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2743e5894cd124e26a70691a9067cdc0dbf63c7947c481f9c7aa47f1117fe3a4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceFullXiLeadingPropagation.Variant2743e5894cd124e26a70691a9067cdc0dbf63c7947c481f9c7aa47f1117fe3a4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"2743e5894cd124e26a70691a9067cdc0dbf63c7947c481f9c7aa47f1117fe3a4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/independent-1791325109637114000/FullXiFollowthroughIndependentAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFullXiLeadingPropagation
+import SourceRawPsiPrimitiveAdapter
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFullXiLeadingPropagation.Variant2743e5894cd124e26a70691a9067cdc0dbf63c7947c481f9c7aa47f1117fe3a4
+
+set_option autoImplicit false
+
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.signedAtomPrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.literalXiWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.signedAtomPrimitive_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.literalXiWeight_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.signedAtomPrimitive_at_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.raw_psi_weight_eq_closed_atoms
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.plainAtomAntiderivative
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.plainAtomAntiderivative_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.baselineAtomAntiderivative
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.baselineAtomAntiderivative_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.fullXiKernel_eq_atoms_and_baseline
+#print axioms FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter.shiftedPsiFullPrimitive_eq_actualFiniteSecondReadout
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer.actualCesaroPrimitive_eq_literalXiKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer.actualCesaroPrimitive_eq_full_signed_reconstruction
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer.remaining_lower_of_literal_full_Xi_kernel_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer.estimate_of_literal_full_Xi_kernel_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer.signed_pairing_eq_literalXiKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer.estimate_of_literal_full_Xi_signed_pairing
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiLeadingPropagation.actual_leading_upper_of_literal_full_Xi
+#print axioms FormalResearch.RiemannHypothesis.SourceFullXiLeadingPropagation.actual_leading_upper_of_literal_full_Xi_signed_pairing
+```

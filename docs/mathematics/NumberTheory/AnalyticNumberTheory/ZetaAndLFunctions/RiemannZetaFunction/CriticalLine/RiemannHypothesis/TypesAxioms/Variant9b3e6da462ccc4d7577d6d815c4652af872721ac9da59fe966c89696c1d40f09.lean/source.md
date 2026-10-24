@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant9b3e6da462ccc4d7577d6d815c4652af872721ac9da59fe966c89696c1d40f09
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1f71f4d0843d529da6a0fafc108d5d52b029b37a` · SHA-256 `dfd871df12064e702021ffc6c1c5a53a722af6a95eb8df0b128233ff66878afe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.Variant1694de49cca57ee9f863a308d98e60ff80ace4475f3e8becb485a64886a5cf9d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1694de49cca57ee9f863a308d98e60ff80ace4475f3e8becb485a64886a5cf9d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualPrescribedCorrelationNegativeSequence.Variant1694de49cca57ee9f863a308d98e60ff80ace4475f3e8becb485a64886a5cf9d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1694de49cca57ee9f863a308d98e60ff80ace4475f3e8becb485a64886a5cf9d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualPrescribedCorrelationNegativeSequence-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualPrescribedCorrelationNegativeSequence
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.Variant1694de49cca57ee9f863a308d98e60ff80ace4475f3e8becb485a64886a5cf9d
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_tendsto
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_phase
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_phase
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_scaled_real_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_scaled_real_tendsto
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_eventually_negative
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_eventually_negative
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_negative_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_negative_beyond
+```

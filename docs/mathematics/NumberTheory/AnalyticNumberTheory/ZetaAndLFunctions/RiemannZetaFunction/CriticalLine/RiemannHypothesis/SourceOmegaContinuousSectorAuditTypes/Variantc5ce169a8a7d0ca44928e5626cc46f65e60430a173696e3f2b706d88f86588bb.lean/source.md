@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceOmegaContinuousSectorAuditTypes.Variantc5ce169a8a7d0ca44928e5626cc46f65e60430a173696e3f2b706d88f86588bb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `94b94bef6580f674c4adf394950d4023dfeef187` · SHA-256 `dcad9b2fdc6e1aa43144dc4708bd0a7293b4130d6dc9fe7f080bb8048fdcce85`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceOmegaContinuousSector.Variant489ce529bdee4e340c362771bf18c92f18213fd1e6451510d137a8296edc2009","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"489ce529bdee4e340c362771bf18c92f18213fd1e6451510d137a8296edc2009","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceOmegaContinuousSector.Variant489ce529bdee4e340c362771bf18c92f18213fd1e6451510d137a8296edc2009","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"489ce529bdee4e340c362771bf18c92f18213fd1e6451510d137a8296edc2009","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceOmegaContinuousSectorAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceOmegaContinuousSector
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceOmegaContinuousSector.Variant489ce529bdee4e340c362771bf18c92f18213fd1e6451510d137a8296edc2009
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.literalOmegaIntegralSector
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.literalOmegaIntegralSector
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.plainProfile_multiplicative
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.plainProfile_multiplicative
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.logProfile_eq_continuousDivisorIntegrand_mul
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.logProfile_eq_continuousDivisorIntegrand_mul
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_integrable
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_zero_above
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_zero_above
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_full_x
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_full_x
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_literal_row
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_literal_row
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.full_short_continuous_sector_eq_literal_I
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.full_short_continuous_sector_eq_literal_I
+```

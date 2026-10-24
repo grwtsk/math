@@ -1,0 +1,107 @@
+# goldbachFejerCoreMain_le_symmetric_re
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:aedbdfb3-37a3-7aa8-0913-d768dc7356f0",
+  "kind": "theorem",
+  "lexical_name": "goldbachFejerCoreMain_le_symmetric_re",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "goldbachfejercoremain-le-symmetric-re--11a7ce0bb9a265a89cca0fe3",
+  "source": {
+    "blob": "bf516f0e84b56741728594781af922e362708f05",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 326,
+    "line": 301,
+    "path": "GRWTSK/NumberTheory/Primes/GoldbachFejerCoreLowerBound.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:11a7ce0bb9a265a89cca0fe343382a047d9a9974a09fcd14c5fb1f651235e3e3",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Primes/GoldbachFejerCoreLowerBound.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:aedbdfb3-37a3-7aa8-0913-d768dc7356f0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 301–326.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem goldbachFejerCoreMain_le_symmetric_re
+    {Q N q : ℕ}
+    (hq : 0 < q) (hqQ : q ≤ Q) :
+    goldbachFejerCoreMain N ≤
+      (goldbachSymmetricRealSingularIntegral Q N q).re := by
+  rw [goldbachSymmetricRealSingularIntegral_re_eq_fejerIntegral]
+  calc
+    goldbachFejerCoreMain N ≤
+      goldbachFejerCoreIntegral N :=
+        goldbachFejerCoreMain_le_integral N
+    _ ≤
+      ∫ β in Set.Icc
+          (-goldbachRationalArcRadius Q N q)
+          (goldbachRationalArcRadius Q N q),
+        goldbachFejerKernel N β := by
+          unfold goldbachFejerCoreIntegral
+          apply setIntegral_mono_set
+            ((continuous_goldbachFejerKernel N).continuousOn.integrableOn_compact
+              isCompact_Icc)
+          · exact Filter.Eventually.of_forall
+              (fun β => goldbachFejerKernel_nonneg N β)
+          · exact Filter.Eventually.of_forall fun β hβ =>
+              goldbachFejerCoreInterval_subset_symmetric
+                (Q := Q) (N := N) hq hqQ hβ
+
+/-- Every indexed symmetric singular integral has positive real part. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/NumberTheory/Primes/GoldbachFejerCoreLowerBound.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Primes/GoldbachFejerCoreLowerBound.lean#L301).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bf516f0e84b56741728594781af922e362708f05` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

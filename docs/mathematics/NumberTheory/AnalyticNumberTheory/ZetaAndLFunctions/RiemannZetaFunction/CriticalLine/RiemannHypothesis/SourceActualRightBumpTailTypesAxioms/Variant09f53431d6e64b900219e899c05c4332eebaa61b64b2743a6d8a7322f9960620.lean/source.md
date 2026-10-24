@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRightBumpTailTypesAxioms.Variant09f53431d6e64b900219e899c05c4332eebaa61b64b2743a6d8a7322f9960620
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cd08cdb02c73691a12bc95c3b50c52d36adb3a14` · SHA-256 `09f53431d6e64b900219e899c05c4332eebaa61b64b2743a6d8a7322f9960620`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRightBumpTail
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualMangoldtCoefficients
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualMangoldtCoefficients
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_summable
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_eq_real_series
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_eq_real_series
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actual_zeta_logDeriv_on_line_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actual_zeta_logDeriv_on_line_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_eq_logDeriv
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_eq_logDeriv
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpTailNumerator
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpTailNumerator
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_norm_le
+```

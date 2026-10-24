@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDivisorSamplingAudit.Variante60701c6dbf5e952a8608f6203b81c9382dfdb6d5e9402b7c7d91e55038b799d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c5d8ec61f4e08f7470dd3b32f36c8bcfb72e3817` · SHA-256 `a03c56ca0f549c40b7ca1834f586adb5d298b8a6f9b01442cafe4b4694bb5c04`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedDivisorSamplingBudget.Variantb37937a3cc51243aa78d0abf82fcfde6f675070b4d50e9a228735b83e04d125e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b37937a3cc51243aa78d0abf82fcfde6f675070b4d50e9a228735b83e04d125e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSignedDivisorSamplingBudget.Variantb37937a3cc51243aa78d0abf82fcfde6f675070b4d50e9a228735b83e04d125e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b37937a3cc51243aa78d0abf82fcfde6f675070b4d50e9a228735b83e04d125e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourceDivisorSamplingAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSignedDivisorSamplingBudget
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedDivisorSamplingBudget.Variantb37937a3cc51243aa78d0abf82fcfde6f675070b4d50e9a228735b83e04d125e
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceDivisorQuotientSampling.divisorMultiplesInteraction_eq_quotient_sub_diagonal
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorQuotientSampling.divisorMultiplesInteraction_eq_quotient_sub_diagonal
+
+#check FormalResearch.RiemannHypothesis.SourceDivisorQuotientSampling.divisorRemainder_eq_quotient_sampling
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorQuotientSampling.divisorRemainder_eq_quotient_sampling
+
+#check FormalResearch.RiemannHypothesis.SourceDivisorQuotientSampling.actual_full_multiple_sample_sub_main_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorQuotientSampling.actual_full_multiple_sample_sub_main_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceDivisorQuotientRemainder.quotient_sample_eq_full_sub_short
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorQuotientRemainder.quotient_sample_eq_full_sub_short
+
+#check FormalResearch.RiemannHypothesis.SourceDivisorQuotientRemainder.quotient_sample_sub_main_minus_short_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorQuotientRemainder.quotient_sample_sub_main_minus_short_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.divisorRemainder_eq_original_sampling_rows
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.divisorRemainder_eq_original_sampling_rows
+
+#check FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.jointSignedRemainder_eq_original_sampling_rows
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.jointSignedRemainder_eq_original_sampling_rows
+
+#check FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.actualSignedQuotientSamplingError_abs_le_weighted_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.actualSignedQuotientSamplingError_abs_le_weighted_budget
+
+#print FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.actualQuotientSamplingError
+#print FormalResearch.RiemannHypothesis.SourceSignedDivisorSamplingBudget.actualSignedQuotientSamplingError
+```

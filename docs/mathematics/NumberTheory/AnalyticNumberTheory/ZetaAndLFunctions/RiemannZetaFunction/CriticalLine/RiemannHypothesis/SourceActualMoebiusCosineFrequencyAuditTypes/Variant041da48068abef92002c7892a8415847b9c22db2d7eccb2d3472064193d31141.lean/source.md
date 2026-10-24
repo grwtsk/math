@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMoebiusCosineFrequencyAuditTypes.Variant041da48068abef92002c7892a8415847b9c22db2d7eccb2d3472064193d31141
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0b5b3507d0060af9c425677e838cba28dc3ea2ed` · SHA-256 `041da48068abef92002c7892a8415847b9c22db2d7eccb2d3472064193d31141`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualMoebiusCosineFrequency
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two_pi
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_two_pi
+#check FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_not_uniform_unit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMoebiusCosineFrequency.actualReciprocalMoebiusCosine_not_uniform_unit
+```

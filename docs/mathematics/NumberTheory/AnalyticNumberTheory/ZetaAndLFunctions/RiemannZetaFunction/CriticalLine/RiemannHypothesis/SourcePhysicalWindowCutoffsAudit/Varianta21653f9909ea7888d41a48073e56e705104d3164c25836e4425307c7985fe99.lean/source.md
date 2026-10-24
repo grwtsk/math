@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalWindowCutoffsAudit.Varianta21653f9909ea7888d41a48073e56e705104d3164c25836e4425307c7985fe99
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2b0a6ee1ffa7fcd199999fa7f8d97b81e01e4b9a` · SHA-256 `72fbef24d4f770b8f76af1e066ac6d27ed9f5d223feee178f99839303b9b48a4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalWindowCutoffsFixtures.Variant36f7355033cee5cb7a4a6a283bf751727b652eaece6f16104b91f7390243c3cd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"36f7355033cee5cb7a4a6a283bf751727b652eaece6f16104b91f7390243c3cd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePhysicalWindowCutoffsFixtures.Variant36f7355033cee5cb7a4a6a283bf751727b652eaece6f16104b91f7390243c3cd","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"36f7355033cee5cb7a4a6a283bf751727b652eaece6f16104b91f7390243c3cd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle27/mutation-issue-regent-v1/source-left-strip-control-v1/lean-preparation-v1/SourcePhysicalWindowCutoffsAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourcePhysicalWindowCutoffsFixtures
+
+/-!
+Prepared exact statement and transitive-axiom inspection. NOT EXECUTED.
+Run only after the integration owner clears the coordinated native gate.
+-/
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalWindowCutoffsFixtures.Variant36f7355033cee5cb7a4a6a283bf751727b652eaece6f16104b91f7390243c3cd
+
+set_option pp.universes true
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceCutoffFlux.actual_adjacent_le_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceCutoffFlux.actual_adjacent_le_upper
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffs.actual_log_window_order
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffs.actual_log_window_order
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffs.actual_lower_strip_width
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffs.actual_lower_strip_width
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffs.actual_lower_strip_pointwise_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffs.actual_lower_strip_pointwise_bounds
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.weak_natural_order_does_not_insert_adjacent
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.weak_natural_order_does_not_insert_adjacent
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.negative_scale_adjacent_bound_fails
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.negative_scale_adjacent_bound_fails
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.actual_unit_scale_strip_has_positive_width
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.actual_unit_scale_strip_has_positive_width
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.empty_actual_work_on_every_interval
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalWindowCutoffFixtures.empty_actual_work_on_every_interval
+```

@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrimeFilterSelectedTypes.Variant2af2e02dbc524d4662359c637d9e03604701e5a40b99dd38c9ab0269d1c5c4e8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `133e212fb4475a271cc80e02156146090faaa9d8` · SHA-256 `2af2e02dbc524d4662359c637d9e03604701e5a40b99dd38c9ab0269d1c5c4e8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceCausalEnergy
+import FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+import FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+import FormalResearch.RiemannHypothesis.SourceCorrelationSignChange
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.SourceCausalEnergy
+#check normalizedPrimitiveBump_second_sub_quarter
+#print axioms normalizedPrimitiveBump_second_sub_quarter
+open FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+#check primitive_mixed_second_integrals
+#print axioms primitive_mixed_second_integrals
+#check sourceCorrelation_eq_primitive_filter
+#print axioms sourceCorrelation_eq_primitive_filter
+#check firstPrimeMoment_eq_primitive_filter
+#print axioms firstPrimeMoment_eq_primitive_filter
+open FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+#check closedPrimeMoment_eq_primeExponent_sum
+#print axioms closedPrimeMoment_eq_primeExponent_sum
+#check prime_power_source_coefficient
+#print axioms prime_power_source_coefficient
+open FormalResearch.RiemannHypothesis.SourceCorrelationSignChange
+#check sourceCorrelation_exists_neg_in_half_support
+#print axioms sourceCorrelation_exists_neg_in_half_support
+```

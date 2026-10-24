@@ -1,0 +1,76 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FormalResearchRiemannHypothesisMangoldtMobiusJacobiTypesAxioms.Variantfb7ad1d7178ab8ab44ec897e6ac22f5ed56ea434b4338bb296c35bc50f9c92ba
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b2a45641237a9fa74c5d94600128e5f6bdfc8041` · SHA-256 `fb66a9bb42a20fb4d091aa24b4d384a2bab13c7b06f15c8cac5242b26c43eb23`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.MangoldtMobiusJacobi.Variantb417c93d1a7640abc22c04cb697549d6ed759b38aca6e215e2d6f70ab070ebb7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b417c93d1a7640abc22c04cb697549d6ed759b38aca6e215e2d6f70ab070ebb7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.MangoldtMobiusJacobi.Variantb417c93d1a7640abc22c04cb697549d6ed759b38aca6e215e2d6f70ab070ebb7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b417c93d1a7640abc22c04cb697549d6ed759b38aca6e215e2d6f70ab070ebb7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T060922Z-1791353362663493000/FormalResearch.RiemannHypothesis.MangoldtMobiusJacobiTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.MangoldtMobiusJacobi.Variantb417c93d1a7640abc22c04cb697549d6ed759b38aca6e215e2d6f70ab070ebb7
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.jointVector
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.jointVector
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation_symmetric
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation_symmetric
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation_quadratic
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation_quadratic
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation_quadratic_sum
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedDilation_quadratic_sum
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.pairKernel
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.pairKernel
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.pairKernel_covariance
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.pairKernel_covariance
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.finiteMangoldtMobius_covariance
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.finiteMangoldtMobius_covariance
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.SourceAtom
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.SourceAtom
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomFintype
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomFintype
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomDecidableEq
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomDecidableEq
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceMobiusRow
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceMobiusRow
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceLogRow
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceLogRow
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomWeight
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomWeight
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceSignedOperator
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceSignedOperator
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceJointVector
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceJointVector
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue_eq_twice_mobius
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue_eq_twice_mobius
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue_eq_twice_residual
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue_eq_twice_residual
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.SignedOperatorTailUpperBound
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.SignedOperatorTailUpperBound
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedOperatorTail_iff_mertensResidualTail
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.signedOperatorTail_iff_mertensResidualTail
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.estimate_of_signedOperatorTail
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.estimate_of_signedOperatorTail
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.cancellation_fixture
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.cancellation_fixture
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.absolute_fixture
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.absolute_fixture
+#check FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.unbounded_representation_fixture
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.unbounded_representation_fixture
+```

@@ -1,0 +1,103 @@
+# add_eq_max_of_ne
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:aa7438a4-56df-d3c5-8914-bba0f9b615a7",
+  "kind": "theorem",
+  "lexical_name": "add_eq_max_of_ne",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "add-eq-max-of-ne--66bd194f2be06d70df00cab2",
+  "source": {
+    "blob": "f76eeda29641789b0f66f3d6a400a015156ffdb4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 224,
+    "line": 203,
+    "path": "GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicNorm/Variant0f01af66e40d109170e6d31322ec16dcc6caf8fa273dd4ed98a3afdde0c8ee8f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:66bd194f2be06d70df00cab27df39449bdc194c190613e35130761a52b2d8215",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicNorm/Variant0f01af66e40d109170e6d31322ec16dcc6caf8fa273dd4ed98a3afdde0c8ee8f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:aa7438a4-56df-d3c5-8914-bba0f9b615a7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 203–224.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem add_eq_max_of_ne {q r : ℚ} (hne : padicNorm p q ≠ padicNorm p r) :
+    padicNorm p (q + r) = max (padicNorm p q) (padicNorm p r) := by
+  wlog hlt : padicNorm p r < padicNorm p q
+  · rw [add_comm, max_comm]
+    exact this hne.symm (hne.lt_or_lt.resolve_right hlt)
+  have : padicNorm p q ≤ max (padicNorm p (q + r)) (padicNorm p r) :=
+    calc
+      padicNorm p q = padicNorm p (q + r + (-r)) := by ring_nf
+      _ ≤ max (padicNorm p (q + r)) (padicNorm p (-r)) := padicNorm.nonarchimedean
+      _ = max (padicNorm p (q + r)) (padicNorm p r) := by simp
+  have hnge : padicNorm p r ≤ padicNorm p (q + r) := by
+    apply le_of_not_gt
+    intro hgt
+    rw [max_eq_right_of_lt hgt] at this
+    exact not_lt_of_ge this hlt
+  have : padicNorm p q ≤ padicNorm p (q + r) := by rwa [max_eq_left hnge] at this
+  apply _root_.le_antisymm
+  · apply padicNorm.nonarchimedean
+  · rwa [max_eq_left_of_lt hlt]
+
+/-- The `p`-adic norm is an absolute value: positive-definite and multiplicative, satisfying the
+triangle inequality. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../verification/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicNorm/Variant0f01af66e40d109170e6d31322ec16dcc6caf8fa273dd4ed98a3afdde0c8ee8f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicNorm/Variant0f01af66e40d109170e6d31322ec16dcc6caf8fa273dd4ed98a3afdde0c8ee8f.lean#L203).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f76eeda29641789b0f66f3d6a400a015156ffdb4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

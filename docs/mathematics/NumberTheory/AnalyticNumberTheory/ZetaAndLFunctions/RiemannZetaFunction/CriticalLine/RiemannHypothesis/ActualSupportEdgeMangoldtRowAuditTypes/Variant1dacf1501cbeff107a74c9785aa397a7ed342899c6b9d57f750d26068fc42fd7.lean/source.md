@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeMangoldtRowAuditTypes.Variant1dacf1501cbeff107a74c9785aa397a7ed342899c6b9d57f750d26068fc42fd7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f6743a5725684d18ddb3ed9f3e8cb9274acd250` · SHA-256 `7e33f230894311fe17e0bd720b2a4d89c837de4ffb53ff74c7b24e2eb718d6e6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeMangoldtRow.Variant04b482927471b1496544fb1f746a77ab8368a8e29a5fe2b7ca3788b96fcaa992","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"04b482927471b1496544fb1f746a77ab8368a8e29a5fe2b7ca3788b96fcaa992","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualSupportEdgeMangoldtRow.Variant04b482927471b1496544fb1f746a77ab8368a8e29a5fe2b7ca3788b96fcaa992","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"04b482927471b1496544fb1f746a77ab8368a8e29a5fe2b7ca3788b96fcaa992","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualSupportEdgeMangoldtRowAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualSupportEdgeMangoldtRow
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeMangoldtRow.Variant04b482927471b1496544fb1f746a77ab8368a8e29a5fe2b7ca3788b96fcaa992
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_third_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_third_edge_abs_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_second_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_second_edge_abs_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_edge_abs_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_first_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_correlation_first_edge_abs_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_finite_mangoldt_half_row_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actual_finite_mangoldt_half_row_abs_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actualLowerColumnHalfMangoldtRow_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow.actualLowerColumnHalfMangoldtRow_abs_le
+```

@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredAreaTransferTypesAxioms.Variant96baccfbfd53ee9e637dabe872bbf5c0cbe3b93973c2269dd0ef1dbe1a9c5c7e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fdb3395c8946e3d4c2e0641e757c1db9094d4599` · SHA-256 `96baccfbfd53ee9e637dabe872bbf5c0cbe3b93973c2269dd0ef1dbe1a9c5c7e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszCenteredAreaTransfer
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_difference_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_difference_bound
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_difference_le_112
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_difference_le_112
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_paid_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_paid_bounds
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_quadratic_area_budget_transfer
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_quadratic_area_budget_transfer
+```

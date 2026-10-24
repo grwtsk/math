@@ -1,0 +1,20 @@
+import SourceActualAbsolutePrimeMomentObstruction
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment
+
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_eventually_lower
+
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_tendsto_atTop
+
+#print FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_no_constant_tail_bound

@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantc03daefaaa48ffc19826b592e36177ad85cbbe5ad354c6b85a14f1ed957cc80a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `450243bc67e8d7d726b414f0469414e4f09612cd` · SHA-256 `86ba40f13e871748c209652593c0ab0f21d3801ec7eba298b402d45d18d1b7a7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialSectorBudget.Variant9b8ea9a8ae6bded3b4f05d757d319318a221ce29c2fbbef586355156d7968117","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9b8ea9a8ae6bded3b4f05d757d319318a221ce29c2fbbef586355156d7968117","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCancelledFactorialSectorBudget.Variant9b8ea9a8ae6bded3b4f05d757d319318a221ce29c2fbbef586355156d7968117","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9b8ea9a8ae6bded3b4f05d757d319318a221ce29c2fbbef586355156d7968117","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/factorial-cancelled-sector/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCancelledFactorialSectorBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialSectorBudget.Variant9b8ea9a8ae6bded3b4f05d757d319318a221ce29c2fbbef586355156d7968117
+
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant_integrable
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant_integral_le
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant_integrable
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant_integral_le
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_coefficient_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_density_integrable
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_tail_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_full_abs_le
+```

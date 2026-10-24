@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7aModeBoundsAudit.Variant571b780b4378fd08d8f5a68975abb7add9df45695839c404760398e0b03f3482
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `71b927455aaa6da1d41c43e58bbca8749aaf9884` · SHA-256 `37532d170b22d5de4697c5c8559968a8d3d3e376fb42c86d77b9ff7a2dfbb3fe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaPhiWronskianModeBounds.Variant3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaPhiWronskianModeBounds.Variant3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/32/3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7a--ModeBoundsAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaPhiWronskianModeBounds
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaPhiWronskianModeBounds.Variant3253e9337f0a0ae207c9b230c65bb8cda8303effec82a4b338820a85da450f7a
+
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaExpThree_gt_twenty
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaExpThree_gt_twenty
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaExpThree_gt_twenty
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussianFromThree_summable
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussianFromThree_summable
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussianFromThree_summable
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussianFromThree_tsum_le
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussianFromThree_tsum_le
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussianFromThree_tsum_le
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussian_exp_neg_eight_le
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussian_exp_neg_eight_le
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussian_exp_neg_eight_le
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussian_ninth_power_bound
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussian_ninth_power_bound
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaGaussian_ninth_power_bound
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJetErrorCoefficient
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJetErrorCoefficient
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJetErrorCoefficient
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJetErrorCoefficient_values
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJetErrorCoefficient_values
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJetErrorCoefficient_values
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJet_remainder_summable
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJet_remainder_summable
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJet_remainder_summable
+#check FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJet_remainder_abs_le
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJet_remainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiJet_remainder_abs_le
+```

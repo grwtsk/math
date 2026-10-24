@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiClosedCellOscillationAudit.Variantd473c7f9f19b0f4d8e90a75326f2e3c74e2544baa17ea5811cfd1af8a883ba4c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7c9c3ac2e4378c42e6d8654de6105962961effe3` · SHA-256 `9f04ba93bd734ef2b3c18376253eb56a44064612cb4483c3954e948d4e45f2d6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiClosedCellOscillation.Variant623c168d2433bd91dc8c58ddd02e3ed17772190a20c666a5816a97a2eff4ae37","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"623c168d2433bd91dc8c58ddd02e3ed17772190a20c666a5816a97a2eff4ae37","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiClosedCellOscillation.Variant623c168d2433bd91dc8c58ddd02e3ed17772190a20c666a5816a97a2eff4ae37","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"623c168d2433bd91dc8c58ddd02e3ed17772190a20c666a5816a97a2eff4ae37","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T000038Z-1791331238499217000/SourceActualXiClosedCellOscillationAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiClosedCellOscillation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiClosedCellOscillation.Variant623c168d2433bd91dc8c58ddd02e3ed17772190a20c666a5816a97a2eff4ae37
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualClosedMangoldtXiPair_cell_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualClosedMangoldtXiPair_cell_difference
+#print FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualClosedMangoldtXiPair_cell_difference
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_difference
+#print FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_difference
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_abs_le
+```

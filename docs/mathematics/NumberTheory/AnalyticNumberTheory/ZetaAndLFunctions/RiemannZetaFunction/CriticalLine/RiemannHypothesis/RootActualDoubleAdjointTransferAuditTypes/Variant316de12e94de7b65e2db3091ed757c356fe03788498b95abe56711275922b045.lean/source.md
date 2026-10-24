@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualDoubleAdjointTransferAuditTypes.Variant316de12e94de7b65e2db3091ed757c356fe03788498b95abe56711275922b045
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ce80cbaaf80586aa430659fa0caae936e73ac66a` · SHA-256 `d9149640d37e04955280fa0c098859fca4fa332f7c7c188873aa96cb35adf3a4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualDoubleAdjointTransfer.Variantb183198b818c941269bd1d5cf1837234603c3bb3492a81b097879a35eba5a1fd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b183198b818c941269bd1d5cf1837234603c3bb3492a81b097879a35eba5a1fd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualDoubleAdjointTransfer.Variantb183198b818c941269bd1d5cf1837234603c3bb3492a81b097879a35eba5a1fd","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b183198b818c941269bd1d5cf1837234603c3bb3492a81b097879a35eba5a1fd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/RootActualDoubleAdjointTransferAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualDoubleAdjointTransfer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualDoubleAdjointTransfer.Variantb183198b818c941269bd1d5cf1837234603c3bb3492a81b097879a35eba5a1fd
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualTwistedTimeDensity
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualTwistedTimeDensity
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualTwistedTimeDensity_eq_time_deriv
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualTwistedTimeDensity_eq_time_deriv
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualTwistedTimeDensity_column_deriv
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualTwistedTimeDensity_column_deriv
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualAdjointInterior
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualAdjointInterior
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualAdjointLowerColumnTrace
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualAdjointLowerColumnTrace
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualOriginalMixedBox_integrable
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualOriginalMixedBox_integrable
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualAdjointInteriorBox_integrable
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.actualAdjointInteriorBox_integrable
+#check FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.jointMangoldtErrorWork_eq_actual_double_adjoint
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleAdjointTransfer.jointMangoldtErrorWork_eq_actual_double_adjoint
+```

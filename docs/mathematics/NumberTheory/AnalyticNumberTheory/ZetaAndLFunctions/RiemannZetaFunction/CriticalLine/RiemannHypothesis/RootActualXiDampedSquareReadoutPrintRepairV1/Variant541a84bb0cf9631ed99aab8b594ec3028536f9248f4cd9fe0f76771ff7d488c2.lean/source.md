@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiDampedSquareReadoutPrintRepairV1.Variant541a84bb0cf9631ed99aab8b594ec3028536f9248f4cd9fe0f76771ff7d488c2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `658aed424a972d576299ce9804b2ebc59c5e1b6e` · SHA-256 `541a84bb0cf9631ed99aab8b594ec3028536f9248f4cd9fe0f76771ff7d488c2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiDampedSquareReadout
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_nonneg
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_nonneg
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel_touching
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel_touching
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_eq_expanded
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_eq_expanded
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiFinitePrimitive_eq_square_readout
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiFinitePrimitive_eq_square_readout
+```

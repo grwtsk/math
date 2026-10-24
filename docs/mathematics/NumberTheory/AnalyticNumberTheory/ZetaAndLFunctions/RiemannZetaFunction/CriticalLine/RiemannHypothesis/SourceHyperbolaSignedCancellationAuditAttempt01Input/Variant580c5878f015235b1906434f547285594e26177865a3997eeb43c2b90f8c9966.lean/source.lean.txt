@@ -1,0 +1,40 @@
+import SourceHyperbolaSignedCancellation
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceHyperbolaSignedCancellation
+#check jointHyperbolaTail
+#print jointHyperbolaTail
+#print axioms jointHyperbolaTail
+#check compensatedJointHyperbolaTail
+#print compensatedJointHyperbolaTail
+#print axioms compensatedJointHyperbolaTail
+#check completeOmega_eq_joint_add_early
+#print completeOmega_eq_joint_add_early
+#print axioms completeOmega_eq_joint_add_early
+#check completeOmega_le_compensated_joint
+#print completeOmega_le_compensated_joint
+#print axioms completeOmega_le_compensated_joint
+#check residual_sub_completeOmega_sub_zeta_abs_le
+#print residual_sub_completeOmega_sub_zeta_abs_le
+#print axioms residual_sub_completeOmega_sub_zeta_abs_le
+#check reconstruction_error_le_at_radius
+#print reconstruction_error_le_at_radius
+#print axioms reconstruction_error_le_at_radius
+#check residual_le_of_completeOmega_tail
+#print residual_le_of_completeOmega_tail
+#print axioms residual_le_of_completeOmega_tail
+#check estimate_of_completeOmega_tail_sharp
+#print estimate_of_completeOmega_tail_sharp
+#print axioms estimate_of_completeOmega_tail_sharp
+#check residual_le_of_joint_linear_tail
+#print residual_le_of_joint_linear_tail
+#print axioms residual_le_of_joint_linear_tail
+#check estimate_of_joint_linear_tail
+#print estimate_of_joint_linear_tail
+#print axioms estimate_of_joint_linear_tail
+#check strict_upper_of_joint_linear_tail
+#print strict_upper_of_joint_linear_tail
+#print axioms strict_upper_of_joint_linear_tail
+#check strict_tail_of_joint_linear_tail
+#print strict_tail_of_joint_linear_tail
+#print axioms strict_tail_of_joint_linear_tail
+end FormalResearch.RiemannHypothesis.SourceHyperbolaSignedCancellation

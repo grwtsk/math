@@ -1,0 +1,72 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Followthrough3PrimitiveConsequencesIndependentAudit.Variantb9ee0e9b485899631f7096da126c48c6deaf613f2d028b1d96c82a9eb19a8b72
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d5cc2091b09094fb47d397e44f711c2c2ea7dac1` · SHA-256 `2765bb6a46e976d8dd0ad12a37497903a2f1a0d0d7fac8a1fa0476008a6dc3e1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiPrimitiveConsequences.Variant9d8f8ea042fb72bda5eb6dc5facfbfc4e72f07f96b38d440debeb1bda95f2cab","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9d8f8ea042fb72bda5eb6dc5facfbfc4e72f07f96b38d440debeb1bda95f2cab","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiPrimitiveConsequences.Variant9d8f8ea042fb72bda5eb6dc5facfbfc4e72f07f96b38d440debeb1bda95f2cab","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9d8f8ea042fb72bda5eb6dc5facfbfc4e72f07f96b38d440debeb1bda95f2cab","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/independent-1791328025610125000/Followthrough3PrimitiveConsequencesIndependentAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiPrimitiveConsequences
+import SourceDirectCorrectedPairingLeading
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiPrimitiveConsequences.Variant9d8f8ea042fb72bda5eb6dc5facfbfc4e72f07f96b38d440debeb1bda95f2cab
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveTransport
+
+#check actualXiLogDensity
+#print axioms actualXiLogDensity
+#check actualXiLogPrimitive
+#print axioms actualXiLogPrimitive
+#check actualXiLogDensity_intervalIntegrable
+#print axioms actualXiLogDensity_intervalIntegrable
+#check actualXiLogPrimitive_at_anchor
+#print axioms actualXiLogPrimitive_at_anchor
+#check actualXiLogPrimitive_absolutelyContinuous
+#print axioms actualXiLogPrimitive_absolutelyContinuous
+#check actualXiLogPrimitive_ae_hasDerivAt
+#print axioms actualXiLogPrimitive_ae_hasDerivAt
+#check actual_logarithmic_substitution
+#print axioms actual_logarithmic_substitution
+#check actual_log_weight_absolutelyContinuous
+#print axioms actual_log_weight_absolutelyContinuous
+#check actual_log_weight_at_upper
+#print axioms actual_log_weight_at_upper
+#check actual_contracted_pairing_eq_primitive_IBP
+#print axioms actual_contracted_pairing_eq_primitive_IBP
+#check contracted_lower_of_actual_primitive_bound
+#print axioms contracted_lower_of_actual_primitive_bound
+
+end FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveTransport
+
+namespace FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveConsequences
+
+#check contracted_lower_of_actual_primitive
+#print axioms contracted_lower_of_actual_primitive
+#check residual_upper_of_actual_primitive
+#print axioms residual_upper_of_actual_primitive
+#check all_real_lower_of_actual_primitive
+#print axioms all_real_lower_of_actual_primitive
+#check estimate_of_actual_primitive
+#print axioms estimate_of_actual_primitive
+#check leading_upper_of_actual_primitive
+#print axioms leading_upper_of_actual_primitive
+
+end FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveConsequences
+
+namespace FormalResearch.RiemannHypothesis.SourceDirectCorrectedPairingLeading
+
+#check leading_upper_of_complete_corrected_pairing
+#print axioms leading_upper_of_complete_corrected_pairing
+#check leading_tail_of_complete_corrected_pairing
+#print axioms leading_tail_of_complete_corrected_pairing
+
+end FormalResearch.RiemannHypothesis.SourceDirectCorrectedPairingLeading
+
+```

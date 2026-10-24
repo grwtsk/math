@@ -1,0 +1,12 @@
+import SourceActualHalfHarmonicZeta
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.deepTerms true
+set_option pp.proofs true
+set_option pp.funBinderTypes true
+set_option pp.letVarTypes true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualHalfHarmonicZeta.halfHarmonicFractionalTail
+#print FormalResearch.RiemannHypothesis.SourceActualHalfHarmonicZeta.finiteHalfHarmonic_eq_sqrt_zeta_tail
+#print FormalResearch.RiemannHypothesis.SourceActualHalfHarmonicZeta.halfHarmonicFractionalTail_bounds
+#print FormalResearch.RiemannHypothesis.SourceActualHalfHarmonicZeta.finiteHalfHarmonic_sub_sqrt_zeta_abs_le

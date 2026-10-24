@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Fd80fd8dcb777037d9e8SourceCompleteOmegaPeanoAssembly.Variantfd80fd8dcb777037d9e80677c0dbf2f460900ea2712fca8d245edc6fad254696
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `53eabc86084ed55c80291e26a2d966a56666a66a` · SHA-256 `fd80fd8dcb777037d9e80677c0dbf2f460900ea2712fca8d245edc6fad254696`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePeanoSignedShortJet
+import SourceCompleteOmegaReconstruction
+
+/-!
+# Exact signed Peano assembly in the independently specified complete Omega
+
+AI attribution: OpenAI Codex. The original independent I+P+L-discreteB Omega
+is retained. Genuine local Peano evaluation combines only I and the complete
+four-kappa short sector. Full L, the discrete unit-inclusive baseline, and
+actual signed cubic remainder stay explicit. No signed estimate is supplied.
+-/
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceCompleteOmegaPeanoAssembly
+open SourcePeanoSignedShortJet SourceCompleteOmegaReconstruction
+open SourceFullDivisorLogInventory
+open ContinuousResearch.ActualIntegerInventory
+noncomputable section
+
+/-- The full independent Omega retains its complementary and original discrete sectors. -/
+theorem completeOmega_eq_actual_signed_Peano_kappa (A : ℝ) (hA : 1 ≤ A) :
+    completeOmega A = actualSignedPeanoKappaShortSector A +
+      literalOmegaComplementarySector A - plainInventory A := by
+  unfold completeOmega
+  rw [literalOmegaCubicSector_eq_actual_main,
+    literal_I_add_cubic_main_eq_signed_Peano_kappa A hA]
+
+/-- The original integer source retains the actual error after the exact signed local assembly. -/
+theorem integerJ_eq_actual_signed_Peano_kappa_add_error (A : ℝ) (hA : 91 ≤ A) :
+    integerJ A = actualSignedPeanoKappaShortSector A + literalOmegaComplementarySector A -
+      plainInventory A + completeOmegaError A := by
+  rw [integerJ_eq_completeOmega_add_error A hA,
+    completeOmega_eq_actual_signed_Peano_kappa A (by linarith)]
+
+end
+end FormalResearch.RiemannHypothesis.SourceCompleteOmegaPeanoAssembly
+```

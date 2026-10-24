@@ -1,0 +1,5 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.PrimeBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeBudget.reciprocal_sqrt_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeBudget.prime_weight_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeBudget.prime_contribution_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeBudget.prime_contribution_le

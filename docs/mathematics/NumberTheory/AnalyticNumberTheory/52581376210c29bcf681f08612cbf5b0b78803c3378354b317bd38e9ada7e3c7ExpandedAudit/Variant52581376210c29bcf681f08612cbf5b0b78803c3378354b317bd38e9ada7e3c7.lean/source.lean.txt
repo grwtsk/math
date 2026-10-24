@@ -1,0 +1,32 @@
+import FormalResearch.RiemannHypothesis.SourceMangoldtRieszQuotientMean
+
+open FormalResearch.RiemannHypothesis.SourceMangoldtRieszReconstruction
+open FormalResearch.RiemannHypothesis.SourceMangoldtRieszQuotientMean
+
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.deepTerms true
+set_option pp.maxSteps 10000000
+
+#print continuumRieszPrimitive
+#print mangoldtRieszPrimitive
+#print mangoldtRieszPrimitive_zero
+#print rieszCenterSlope
+#print centeredRieszProfile
+#print fixedRieszAtoms
+#print mangoldtRieszPrimitive_eq_fixed_window
+#print mangoldtRieszPrimitive_continuousOn
+#print mertensResidual_eq_continuous_add_riesz_work
+#print sourceCorrelation_curvature_integral_eq_zero
+#print sourceCorrelation_linear_curvature_integral_eq_one
+#print centeredRieszProfile_continuousOn
+#print rieszCenterSlope_eq_anchor_sub_continuous
+#print mertensResidual_sub_half_anchor_eq_centered_riesz_work
+#print mertensResidual_sub_half_archimedean_eq_centered_riesz_work
+#print RieszQuotientMeanTailBound
+#print SourceRieszQuotientMeanTailBound
+#print mertensResidual_sub_half_anchor_abs_le_quotient_mean
+#print mertensResidual_sub_half_anchor_abs_le_five_mul_of_mean
+#print quotient_mean_tail_implies_absolute_source_tail
+#print source_quotient_mean_tail_implies_absolute_source_tail
+#print source_quotient_mean_tail_implies_source_upper_tail

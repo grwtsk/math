@@ -1,0 +1,20 @@
+import SourceActualRieszCenteredAreaTransfer
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_difference_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_difference_le_112
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_absolute_area_paid_bounds
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredAreaTransfer.actualRiesz_centered_quadratic_area_budget_transfer

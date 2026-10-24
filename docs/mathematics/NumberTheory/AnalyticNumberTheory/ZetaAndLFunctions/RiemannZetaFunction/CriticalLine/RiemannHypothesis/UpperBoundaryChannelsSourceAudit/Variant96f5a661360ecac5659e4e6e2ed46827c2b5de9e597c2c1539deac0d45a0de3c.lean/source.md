@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryChannelsSourceAudit.Variant96f5a661360ecac5659e4e6e2ed46827c2b5de9e597c2c1539deac0d45a0de3c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2d6fa5ccaf721da0b961c7270b5fca18ae941221` · SHA-256 `96f5a661360ecac5659e4e6e2ed46827c2b5de9e597c2c1539deac0d45a0de3c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels
+
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.channelKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.channelKernel
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.upperChannel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.upperChannel
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.coreValue
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.coreValue
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.channelKernel_eq_correlation_weight
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.channelKernel_eq_correlation_weight
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.sourceSamplingKernel_eq_channels
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.sourceSamplingKernel_eq_channels
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.source_upper_boundary_eq_channels
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.source_upper_boundary_eq_channels
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.coreValue_eq_fullKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.coreValue_eq_fullKernel
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.sourceQuadraticValue_eq_core_sub_channels
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryChannels.sourceQuadraticValue_eq_core_sub_channels
+```

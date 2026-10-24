@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationAsymptoticTypesAxioms.Variantb3aae822dac06543d1d2eea1548076766abbdb3b506012317a397eb3d788e025
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e3db7c4032fd2033872575402b7be8a916644c6b` · SHA-256 `d093703f4d5bef5ef3f67b5e7e4a1241552abedf6cb9fe382496f839961e0bb8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationAsymptotic.Variantbefa2cf3b8664c97062588c0519a9b2be6773e012b2a8964f99ab14912eb4e7a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"befa2cf3b8664c97062588c0519a9b2be6773e012b2a8964f99ab14912eb4e7a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualComplexCorrelationAsymptotic.Variantbefa2cf3b8664c97062588c0519a9b2be6773e012b2a8964f99ab14912eb4e7a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"befa2cf3b8664c97062588c0519a9b2be6773e012b2a8964f99ab14912eb4e7a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-monotone-kernel-probe/ActualComplexCorrelationAsymptoticTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualComplexCorrelationAsymptotic
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationAsymptotic.Variantbefa2cf3b8664c97062588c0519a9b2be6773e012b2a8964f99ab14912eb4e7a
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationNormalizer_sq
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationNormalizer_sq
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualSourceNormalization_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualSourceNormalization_tendsto
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale_tendsto_zero
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualBilateralCorrelationTransform_normalized_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualBilateralCorrelationTransform_normalized_tendsto
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_scaled_error_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_scaled_error_tendsto_zero
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_normalized_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_normalized_tendsto
+```

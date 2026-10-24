@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CorrectedOmegaFullProofsOrdinary.Variant0583ed2e5c288a77987e8f671219c20df21f6f9bc70b6872470c35b316a526a1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `18899e3159b206f65a47e0364b736c65f5b68c3f` · SHA-256 `0583ed2e5c288a77987e8f671219c20df21f6f9bc70b6872470c35b316a526a1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCorrectedOmegaPeanoTaylor
+
+set_option pp.all true
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.completeOmega_eq_corrected_add_actualPeanoError
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.actualPeanoCubicError_abs_le_of_actual_row_bound
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.integerJ_sub_corrected_abs_le_of_actual_row_bound
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.combined_corrected_calibration_budget_lt
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.residual_sub_corrected_sub_zeta_abs_lt_of_actual_row_bound
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.estimate_of_corrected_completeOmega_tail_at_radius
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.peanoCubicCompensation
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.actualPeanoCubicRemainder
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.correctedFourKappaJet
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.correctedCompleteOmega
+#print FormalResearch.RiemannHypothesis.SourceCorrectedOmegaPeanoTaylor.actualPeanoCubicError
+```

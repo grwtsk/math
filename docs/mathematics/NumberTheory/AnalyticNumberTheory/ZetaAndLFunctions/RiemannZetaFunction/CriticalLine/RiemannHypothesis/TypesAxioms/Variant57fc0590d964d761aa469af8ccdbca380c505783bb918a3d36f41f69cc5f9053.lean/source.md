@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant57fc0590d964d761aa469af8ccdbca380c505783bb918a3d36f41f69cc5f9053
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2dca636cc4b23f11ecb63ce35cc26d0b47d8c521` · SHA-256 `6bdc783570fe9971e8005e3b3445ef6ddc2cd6961c98cfef07e0f4d089e3478b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensGammaCalibration.Variant6df82bc27c4f318e1f77c54524ede3842fac120bad2110b0c90bb64533e709b2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6df82bc27c4f318e1f77c54524ede3842fac120bad2110b0c90bb64533e709b2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMertensGammaCalibration.Variant6df82bc27c4f318e1f77c54524ede3842fac120bad2110b0c90bb64533e709b2","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6df82bc27c4f318e1f77c54524ede3842fac120bad2110b0c90bb64533e709b2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualMertensGammaCalibration-BodyAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMertensGammaCalibration
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensGammaCalibration.Variant6df82bc27c4f318e1f77c54524ede3842fac120bad2110b0c90bb64533e709b2
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualClosedMangoldtMellinHeadSeven_at_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualClosedMangoldtMellinHeadSeven_at_one
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualXiInverseSquarePhysical_integral_eq_mertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualXiInverseSquarePhysical_integral_eq_mertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualXiSevenPoleValue_eq_convolutionSevenValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualXiSevenPoleValue_eq_convolutionSevenValue
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualPntMertensLimit_eq_neg_gamma
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualPntMertensLimit_eq_neg_gamma
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.mangoldtLogError_tendsto_neg_gamma
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.mangoldtLogError_tendsto_neg_gamma
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualCenteredMangoldtLogError_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualCenteredMangoldtLogError_tendsto_zero
+```

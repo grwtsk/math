@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEarlyFractionalLimitAudit2.Variantd1c9c7db8b336904757e1bb4bbaa294c81a139f3b475993744b9c4951f2c15f5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e4cc5146779f91e84e3e51eeeb7e11f62d266eed` · SHA-256 `69db9af2b18293b85d772dc17e42cc4f97b78ce63dc67f8247f83ef8bca7d562`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEarlyFractionalLimit.Variant54903b926ae08f809585a1c5a2d00a36ee7a2640d02e3d61a3554e9d5f679dbe","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"54903b926ae08f809585a1c5a2d00a36ee7a2640d02e3d61a3554e9d5f679dbe","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEarlyFractionalLimit.Variant54903b926ae08f809585a1c5a2d00a36ee7a2640d02e3d61a3554e9d5f679dbe","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"54903b926ae08f809585a1c5a2d00a36ee7a2640d02e3d61a3554e9d5f679dbe","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T192449Z-1791314689939003000/SourceActualEarlyFractionalLimitAudit2.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEarlyFractionalLimit
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEarlyFractionalLimit.Variant54903b926ae08f809585a1c5a2d00a36ee7a2640d02e3d61a3554e9d5f679dbe
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integral
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCriticalDeviation_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCriticalDeviation_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyFloorDifference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyFloorDifference_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualHeadUnitErrorBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualHeadUnitErrorBudget
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyBaseline_sub_unit_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyBaseline_sub_unit_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_split
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_split
+#check FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCutoff_sqrt_gap_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCutoff_sqrt_gap_bounds
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integral
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCriticalDeviation_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyFloorDifference_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualHeadUnitErrorBudget
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyBaseline_sub_unit_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_split
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCutoff_sqrt_gap_bounds
+```

@@ -1,0 +1,58 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Ba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267Audit.Variant7e9ffb90b984e1f3373c02e457285b0c45dda3c0ad1c3fa29e53059ac956bf8e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e4f4930e0517bc6d92674821c7f501ccb9719241` · SHA-256 `e657847a3b725c234d73cd46e9bab90ce029bd92d11c36125fbb550384972b75`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaCycle.Variantba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceKapitzaCycle.Variantba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"ba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/ba/ba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267--audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceKapitzaCycle
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaCycle.Variantba47a81d1969807b5189c73e53f771f3f403eac20ff376df1af2db5e7576b267
+
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy
+#print FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket
+```

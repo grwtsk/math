@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalEdgeNineTypesAxioms.Variant143f5bd701e6a748a43e2bf0542bc4a70d5a65561d61fe21aa008cd4cd32b9ee
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `931e0ec5dda4e800bde1438b2cb75aa0f11b2411` · SHA-256 `207cee78b3ffb9a599973bfa3b0422a2e0a5658a67ed8df7433cb60c9c479d3f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.Variant859410c5e917e5e65d6be44e4f1a821d087d2880a069e263b27e4096edd60489","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"859410c5e917e5e65d6be44e4f1a821d087d2880a069e263b27e4096edd60489","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalCovarianceEdgeNine.Variant859410c5e917e5e65d6be44e4f1a821d087d2880a069e263b27e4096edd60489","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"859410c5e917e5e65d6be44e4f1a821d087d2880a069e263b27e4096edd60489","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-critical-covariance-edge-nine/ActualCriticalEdgeNineTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalCovarianceEdgeNine
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.Variant859410c5e917e5e65d6be44e4f1a821d087d2880a069e263b27e4096edd60489
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+-- Expanded proof-print diagnostics preserve default pp.all annotations.
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+```

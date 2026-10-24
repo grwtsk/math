@@ -1,0 +1,115 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCorrelationOppositeHalf.Variant5a85f5ce142ad48636468f2525717bc86e9f6a0b2206589240aae3bb9f0abab1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e217020a3711396e61bf04bad495799be6d31358` · SHA-256 `5a85f5ce142ad48636468f2525717bc86e9f6a0b2206589240aae3bb9f0abab1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualCriticalExponentialResponse
+
+/-!
+The actual compact correlation separates into its positive and opposite halves.
+The opposite half has a uniform norm bound throughout the open complex right
+half-plane. This keeps the actual complex transform; it does not replace its
+ordinary complex product by a nonnegative square or supply an arithmetic bound.
+Research direction: grwtsk contributors. Formal development: OpenAI Codex.
+-/
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf
+
+open MeasureTheory Set
+open scoped Interval
+open ActualCriticalExponentialResponse SourcePairing
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization CorrelationRegularity EstimateCorrelation
+
+noncomputable section
+
+/-- The literal bilateral compact transform of the actual normalized correlation. -/
+def actualBilateralCorrelationTransform (A : ℝ) (z : ℂ) : ℂ :=
+  ∫ t in -(2 * A)..2 * A,
+    Complex.exp (z * (t : ℂ)) * (sourceCorrelation explicitSecondDerivative A t : ℂ)
+
+/-- The true negative half equals the opposite exponential response, with both halves L1. -/
+theorem actualBilateralCorrelationTransform_eq_halves {A : ℝ} (hA : 0 < A) (z : ℂ) :
+    actualBilateralCorrelationTransform A z =
+      actualHalfCorrelationTransform A z + actualHalfCorrelationTransform A (-z) := by
+  let f : ℝ → ℂ := fun t => Complex.exp (z * (t : ℂ)) *
+    (sourceCorrelation explicitSecondDerivative A t : ℂ)
+  have hc : Continuous f :=
+    (by fun_prop : Continuous (fun t : ℝ => Complex.exp (z * (t : ℂ)))).mul
+      (Complex.continuous_ofReal.comp (sourceCorrelation_contDiff A hA).continuous)
+  have href : (∫ t in -(2 * A)..0, f t) = actualHalfCorrelationTransform A (-z) := by
+    calc
+      _ = ∫ t in 0..2 * A, f (-t) := by
+        simpa only [neg_zero] using
+          (intervalIntegral.integral_comp_neg f (a := 0) (b := 2 * A)).symm
+      _ = _ := by
+        unfold actualHalfCorrelationTransform
+        apply intervalIntegral.integral_congr
+        intro t _
+        dsimp [f]
+        rw [sourceCorrelation_even A t, Complex.ofReal_neg]
+        congr 2
+        ring
+  have hs := intervalIntegral.integral_add_adjacent_intervals
+    (hc.intervalIntegrable (-(2 * A)) 0) (hc.intervalIntegrable 0 (2 * A))
+  rw [href] at hs
+  change actualBilateralCorrelationTransform A z = _ at hs ⊢
+  simpa only [add_comm] using hs.symm
+
+/-- Norm-one actual correlation bounds its opposite half uniformly in every real scale. -/
+theorem actualHalfCorrelationTransform_opposite_norm_le {A : ℝ} (hA : 1 ≤ A)
+    {z : ℂ} (hz : 0 < z.re) :
+    ‖actualHalfCorrelationTransform A (-z)‖ ≤ 1 / z.re := by
+  let r : ℝ := z.re
+  have hr : 0 < r := hz
+  have hbound (t : ℝ) : ‖Complex.exp ((-z) * (t : ℂ)) *
+      (sourceCorrelation explicitSecondDerivative A t : ℂ)‖ ≤ Real.exp (-r * t) := by
+    rw [norm_mul, Complex.norm_exp, Complex.norm_real, Real.norm_eq_abs]
+    have he : ((-z) * (t : ℂ)).re = -r * t := by
+      simp only [Complex.mul_re, Complex.neg_re, Complex.ofReal_re,
+        Complex.ofReal_im, mul_zero, sub_zero, r]
+    rw [he]
+    simpa only [mul_one] using mul_le_mul_of_nonneg_left
+      (actual_correlation_abs_le_one A t hA) (Real.exp_pos _).le
+  have hc : Continuous (fun t : ℝ => Real.exp (-r * t)) := by fun_prop
+  have hb := intervalIntegral.norm_integral_le_of_norm_le
+    (show (0 : ℝ) ≤ 2 * A by linarith)
+    (f := fun t => Complex.exp ((-z) * (t : ℂ)) *
+      (sourceCorrelation explicitSecondDerivative A t : ℂ))
+    (Eventually.of_forall (fun t _ => hbound t)) (hc.intervalIntegrable 0 (2 * A))
+  have hd (t : ℝ) : HasDerivAt (fun t : ℝ => Real.exp (-r * t) / (-r))
+      (Real.exp (-r * t)) t := by
+    exact (((hasDerivAt_id t).const_mul (-r)).exp.div_const (-r)).congr_deriv (by
+      dsimp
+      field_simp [hr.ne']
+      ring)
+  have hi : (∫ t in 0..2 * A, Real.exp (-r * t)) =
+      (1 - Real.exp (-r * (2 * A))) / r := by
+    rw [intervalIntegral.integral_eq_sub_of_hasDerivAt (fun t _ => hd t)
+      (hc.intervalIntegrable 0 (2 * A))]
+    simp only [mul_zero, Real.exp_zero]
+    field_simp
+    ring
+  unfold actualHalfCorrelationTransform
+  apply hb.trans
+  rw [hi]
+  apply div_le_div_of_nonneg_right _ hr.le
+  have := Real.exp_pos (-r * (2 * A))
+  linarith
+
+/-- The positive half differs from the literal bilateral transform by a bounded actual piece. -/
+theorem actualHalfCorrelationTransform_sub_bilateral_norm_le {A : ℝ} (hA : 1 ≤ A)
+    {z : ℂ} (hz : 0 < z.re) :
+    ‖actualHalfCorrelationTransform A z - actualBilateralCorrelationTransform A z‖ ≤
+      1 / z.re := by
+  rw [actualBilateralCorrelationTransform_eq_halves (show 0 < A by linarith) z,
+    sub_add_cancel_left, norm_neg]
+  exact actualHalfCorrelationTransform_opposite_norm_le hA hz
+
+end
+end FormalResearch.RiemannHypothesis.ActualCorrelationOppositeHalf
+```

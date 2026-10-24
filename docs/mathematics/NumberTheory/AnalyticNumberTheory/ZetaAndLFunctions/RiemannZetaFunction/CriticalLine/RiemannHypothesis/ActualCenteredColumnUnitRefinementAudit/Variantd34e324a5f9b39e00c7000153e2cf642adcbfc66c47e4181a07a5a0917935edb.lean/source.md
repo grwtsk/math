@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCenteredColumnUnitRefinementAudit.Variantd34e324a5f9b39e00c7000153e2cf642adcbfc66c47e4181a07a5a0917935edb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1fe720e2c2214f8b0210ac3c5f29a8684a0081ac` · SHA-256 `d34e324a5f9b39e00c7000153e2cf642adcbfc66c47e4181a07a5a0917935edb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualCenteredColumnUnitRefinement
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.actualCenteredBeta_interval_eq_nonunit_floor
+#print axioms RH16IndependentChallengeNext.actualCenteredBeta_interval_eq_nonunit_floor
+#check RH16IndependentChallengeNext.actualCenteredBeta_interval_abs_le_nonunit_mass
+#print axioms RH16IndependentChallengeNext.actualCenteredBeta_interval_abs_le_nonunit_mass
+#check RH16IndependentChallengeNext.actualCenteredBeta_interval_abs_le_cutoff_sub_one
+#print axioms RH16IndependentChallengeNext.actualCenteredBeta_interval_abs_le_cutoff_sub_one
+#check RH16IndependentChallengeNext.actualVaughanCenteredColumn_prefix_abs_le
+#print axioms RH16IndependentChallengeNext.actualVaughanCenteredColumn_prefix_abs_le
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.actualCenteredBeta_interval_eq_nonunit_floor
+#print RH16IndependentChallengeNext.actualCenteredBeta_interval_abs_le_nonunit_mass
+#print RH16IndependentChallengeNext.actualCenteredBeta_interval_abs_le_cutoff_sub_one
+#print RH16IndependentChallengeNext.actualVaughanCenteredColumn_prefix_abs_le
+```

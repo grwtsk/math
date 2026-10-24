@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualAnchoredStripRefinementPrintRepairV2.Variante90cf0b9f9c29b775f9bdfdab546e6f37b82dc821004463c67f576c41725a6c1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5825ad5da0fa2866a23f44f154337f166a4a188e` · SHA-256 `e90cf0b9f9c29b775f9bdfdab546e6f37b82dc821004463c67f576c41725a6c1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualAnchoredStripRefinement
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+
+#print FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_anchored_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_anchored_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_strip_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualAdjointTimePrimitive_strip_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_anchored_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_anchored_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_balanced_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualAnchoredStripRefinement.actualLowerStripInterior_balanced_abs_le
+```

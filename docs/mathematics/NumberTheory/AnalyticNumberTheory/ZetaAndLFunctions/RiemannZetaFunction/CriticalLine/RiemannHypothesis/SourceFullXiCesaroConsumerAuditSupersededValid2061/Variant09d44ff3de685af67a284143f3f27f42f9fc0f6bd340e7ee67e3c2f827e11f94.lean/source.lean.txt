@@ -1,0 +1,17 @@
+import SourceFullXiCesaroConsumer
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer
+
+#check actualCesaroPrimitive_eq_literalXiKernel
+#print actualCesaroPrimitive_eq_literalXiKernel
+#print axioms actualCesaroPrimitive_eq_literalXiKernel
+
+#check actualCesaroPrimitive_eq_full_signed_reconstruction
+#print actualCesaroPrimitive_eq_full_signed_reconstruction
+#print axioms actualCesaroPrimitive_eq_full_signed_reconstruction
+
+#check estimate_of_literal_full_Xi_kernel_budget
+#print estimate_of_literal_full_Xi_kernel_budget
+#print axioms estimate_of_literal_full_Xi_kernel_budget

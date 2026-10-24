@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualDoubleMixedPowerObstructionAudit.Variant3730bc3e51230d011a9af0fa4703e2dbcee867888fcb2e267302f33db4f8de33
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cbe2fdf162bf68879b2c7b14359a40ac914add98` · SHA-256 `3730bc3e51230d011a9af0fa4703e2dbcee867888fcb2e267302f33db4f8de33`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualDoubleMixedPowerObstruction
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue
+#check FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_lower
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_lower
+#check FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_fourth_power_failure
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_fourth_power_failure
+#check FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_not_uniform_fourth_power
+#print axioms FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_not_uniform_fourth_power
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue
+#print FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_lower
+#print FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_fourth_power_failure
+#print FormalResearch.RiemannHypothesis.RootActualDoubleMixedPowerObstruction.actualFirstLogMixedValue_not_uniform_fourth_power
+```

@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeLowerTracePrintRepairV1.Variant839145c9d18585277bb0095821a0dc2f1a2b513d765ded9c902b07af39406452
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6d70701209e7ea1433d4925eeaee7cd5bd8a32c3` · SHA-256 `518f9206992235f938a485336781cac5c723a2e7b46e42371d9f2a4c3c48d90d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeLowerTrace.Variant56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualSupportEdgeLowerTrace.Variant56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-root/ActualSupportEdgeLowerTracePrintRepairV1.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualSupportEdgeLowerTrace
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeLowerTrace.Variant56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_eq_negative_error_integral
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_eq_negative_error_integral
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_abs_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_tendsto_zero
+```

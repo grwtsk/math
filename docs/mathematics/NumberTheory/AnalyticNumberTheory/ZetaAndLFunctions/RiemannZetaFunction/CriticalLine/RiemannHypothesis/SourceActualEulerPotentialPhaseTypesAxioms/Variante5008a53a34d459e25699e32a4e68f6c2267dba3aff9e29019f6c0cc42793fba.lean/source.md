@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialPhaseTypesAxioms.Variante5008a53a34d459e25699e32a4e68f6c2267dba3aff9e29019f6c0cc42793fba
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ededb5cbdd93696f0561288d6d1a23ff40624e1a` · SHA-256 `1bcb8f60e5c6eefc290595173a22f42731688bfc245773133a7e2b1c6b357785`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialPhase.Variant253928839b1de872bc2f621bf87e53e05900166e34ac8f9aa443e6857f1cfadf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"253928839b1de872bc2f621bf87e53e05900166e34ac8f9aa443e6857f1cfadf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerPotentialPhase.Variant253928839b1de872bc2f621bf87e53e05900166e34ac8f9aa443e6857f1cfadf","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"253928839b1de872bc2f621bf87e53e05900166e34ac8f9aa443e6857f1cfadf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-euler-potential-phase-v1/SourceActualEulerPotentialPhaseTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerPotentialPhase
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialPhase.Variant253928839b1de872bc2f621bf87e53e05900166e34ac8f9aa443e6857f1cfadf
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_nonpos
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_prime_two
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_centered_re_prime_two
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re_negative_right_line
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialPhase.actualClosedPrimeLogPotential_re_negative_right_line
+```

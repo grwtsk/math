@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FiveCesaroKernelBudgetAudit.Variant6484d838fb3a20f35e4a964acf47b5d42a9efe92cc866e91032b3a38d249a026
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd6c350486871552c4ab85298a9e3a5e782c1811` · SHA-256 `6484d838fb3a20f35e4a964acf47b5d42a9efe92cc866e91032b3a38d249a026`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FiveCesaroKernelBudget
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16FiveCesaro.actualDerivativeEnergy_le_five
+#print axioms RH16FiveCesaro.actualDerivativeEnergy_le_five
+#check RH16FiveCesaro.actualCorrelation_second_abs_le_five
+#print axioms RH16FiveCesaro.actualCorrelation_second_abs_le_five
+#check RH16FiveCesaro.cesaroWeight_second_abs_le_upper
+#print axioms RH16FiveCesaro.cesaroWeight_second_abs_le_upper
+#check RH16FiveCesaro.cesaroWeight_second_abs_le_origin
+#print axioms RH16FiveCesaro.cesaroWeight_second_abs_le_origin
+#check RH16FiveCesaro.cesaroWeight_second_abs_le_both_distances
+#print axioms RH16FiveCesaro.cesaroWeight_second_abs_le_both_distances
+#check RH16FiveCesaro.cesaroWeight_weighted_budget_five
+#print axioms RH16FiveCesaro.cesaroWeight_weighted_budget_five
+#check RH16FiveCesaro.cesaroWeight_weighted_budget_five_uniform
+#print axioms RH16FiveCesaro.cesaroWeight_weighted_budget_five_uniform
+#check RH16FiveCesaro.cesaroWeight_weighted_budget_both_distances
+#print axioms RH16FiveCesaro.cesaroWeight_weighted_budget_both_distances
+#check RH16FiveCesaro.cesaroWeight_weighted_budget_both_distances_uniform
+#print axioms RH16FiveCesaro.cesaroWeight_weighted_budget_both_distances_uniform
+set_option pp.proofs true
+#print RH16FiveCesaro.actualDerivativeEnergy_le_five
+#print RH16FiveCesaro.actualCorrelation_second_abs_le_five
+#print RH16FiveCesaro.cesaroWeight_second_abs_le_upper
+#print RH16FiveCesaro.cesaroWeight_second_abs_le_origin
+#print RH16FiveCesaro.cesaroWeight_second_abs_le_both_distances
+#print RH16FiveCesaro.cesaroWeight_weighted_budget_five
+#print RH16FiveCesaro.cesaroWeight_weighted_budget_five_uniform
+#print RH16FiveCesaro.cesaroWeight_weighted_budget_both_distances
+#print RH16FiveCesaro.cesaroWeight_weighted_budget_both_distances_uniform
+```

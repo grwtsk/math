@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.Audit.Variantb35ec770163d4a52702ab0c305b2d5246f4bae41206d47df9fa8adea77f9b04a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `90880a49b06da9054255bccc27554f646b09ac7a` · SHA-256 `b35ec770163d4a52702ab0c305b2d5246f4bae41206d47df9fa8adea77f9b04a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceMangoldtAbel
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceMangoldtAbel
+#check mangoldtLogPrefix
+#print axioms mangoldtLogPrefix
+#check mangoldtLogSum
+#print axioms mangoldtLogSum
+#check mangoldtLogWindow
+#print axioms mangoldtLogWindow
+#check mangoldtLogError
+#print axioms mangoldtLogError
+#check criticalMangoldtWork
+#print axioms criticalMangoldtWork
+#check MangoldtWorkTailLowerBound
+#print axioms MangoldtWorkTailLowerBound
+#check mangoldtLogPrefix_eq_sum
+#print axioms mangoldtLogPrefix_eq_sum
+#check primePowerInventory_filter_log
+#print axioms primePowerInventory_filter_log
+#check mangoldtLogPrefix_eq_steps
+#print axioms mangoldtLogPrefix_eq_steps
+#check mangoldtInventory_log_bounds
+#print axioms mangoldtInventory_log_bounds
+#check mangoldtLogPrefix_zero
+#print axioms mangoldtLogPrefix_zero
+#check mangoldtLogPrefix_mul_deriv_intervalIntegrable
+#print axioms mangoldtLogPrefix_mul_deriv_intervalIntegrable
+#check mangoldtLogSum_abel
+#print axioms mangoldtLogSum_abel
+#check mangoldtLogWindow_abel
+#print axioms mangoldtLogWindow_abel
+#check mangoldtLogWindow_eq_filter
+#print axioms mangoldtLogWindow_eq_filter
+#check mangoldtLogWindow_eq_interval_sum
+#print axioms mangoldtLogWindow_eq_interval_sum
+#check mangoldtLogError_mul_deriv_intervalIntegrable
+#print axioms mangoldtLogError_mul_deriv_intervalIntegrable
+#check mangoldtLogWindow_sub_integral
+#print axioms mangoldtLogWindow_sub_integral
+#check natural_source_coefficient_eq_critical_test
+#print axioms natural_source_coefficient_eq_critical_test
+#check zero_index_weight_transport_guard
+#print axioms zero_index_weight_transport_guard
+#check closedPrimeMoment_eq_mangoldtLogSum
+#print axioms closedPrimeMoment_eq_mangoldtLogSum
+#check mangoldtLogWindow_zero
+#print axioms mangoldtLogWindow_zero
+#check closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#print axioms closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#check mertensResidual_eq_continuous_sub_Mangoldt_work
+#print axioms mertensResidual_eq_continuous_sub_Mangoldt_work
+#check primeWork_eq_Mangoldt_work_add_square_higher
+#print axioms primeWork_eq_Mangoldt_work_add_square_higher
+#check mangoldt_work_tail_iff_residual_tail
+#print axioms mangoldt_work_tail_iff_residual_tail
+#check criticalMangoldtWork_intervalIntegrable
+#print axioms criticalMangoldtWork_intervalIntegrable
+#check signed_pairing_tail_iff_Mangoldt_work_tail
+#print axioms signed_pairing_tail_iff_Mangoldt_work_tail
+#check criticalAbel_tail_iff_Mangoldt_work_tail
+#print axioms criticalAbel_tail_iff_Mangoldt_work_tail
+#check primeWork_minus_main_sub_Mangoldt_work_abs_le
+#print axioms primeWork_minus_main_sub_Mangoldt_work_abs_le
+#check primeWork_Mangoldt_work_uniform_replacement_error
+#print axioms primeWork_Mangoldt_work_uniform_replacement_error
+#check mangoldtLogError_abs_le
+#print axioms mangoldtLogError_abs_le
+#check mangoldtLogError_below_first_atom
+#print axioms mangoldtLogError_below_first_atom
+```

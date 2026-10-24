@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrimitiveFiniteAudit.Variantf08c80cd9aa85f25a405afafd53919719be32a1c09a3323d7d7ab861b8524645
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `563da456cea4c2ba57be4528ca145d16b0251967` · SHA-256 `c732a679626d4c5c1300afa0fe8b2bb98fbd71268067c5b51bfd180804a31c6f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFiniteCesaroConsumer.Variant9c7a3be28930389e0650631f666bc898ba679fb872627f5490ea30a1e1c54240","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9c7a3be28930389e0650631f666bc898ba679fb872627f5490ea30a1e1c54240","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualFiniteCesaroConsumer.Variant9c7a3be28930389e0650631f666bc898ba679fb872627f5490ea30a1e1c54240","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9c7a3be28930389e0650631f666bc898ba679fb872627f5490ea30a1e1c54240","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-root-01a11259-primitive-arithmetic/ActualPrimitiveFiniteAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFiniteCesaroConsumer
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFiniteCesaroConsumer.Variant9c7a3be28930389e0650631f666bc898ba679fb872627f5490ea30a1e1c54240
+
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+
+open FormalResearch.RiemannHypothesis.SourceActualPrimitiveFiniteReadout
+open FormalResearch.RiemannHypothesis.SourceActualPrimitiveFiniteConsumer
+open RH16ActualFiniteCesaro
+
+#check weightedActualSecondPrimitive
+#check actual_centered_second_primitive_eq_weighted
+#check weightedActualSecondPrimitive_eq_finite_window
+#check actualFiniteSecondReadout
+#check actual_nested_primitive_eq_finite_readout
+#check actualFiniteSecondReadout_at_first_atom
+#check global_second_primitive_budget_iff_finite_readout
+#print axioms weightedActualSecondPrimitive
+#print axioms actual_centered_second_primitive_eq_weighted
+#print axioms weightedActualSecondPrimitive_eq_finite_window
+#print axioms actualFiniteSecondReadout
+#print axioms actual_nested_primitive_eq_finite_readout
+#print axioms actualFiniteSecondReadout_at_first_atom
+#print axioms global_second_primitive_budget_iff_finite_readout
+#check actualCesaroPrimitive_eq_finite_readout
+#check remaining_lower_of_actual_finite_row
+#check estimate_of_actual_finite_row
+#print axioms actualCesaroPrimitive_eq_finite_readout
+#print axioms remaining_lower_of_actual_finite_row
+#print axioms estimate_of_actual_finite_row
+```

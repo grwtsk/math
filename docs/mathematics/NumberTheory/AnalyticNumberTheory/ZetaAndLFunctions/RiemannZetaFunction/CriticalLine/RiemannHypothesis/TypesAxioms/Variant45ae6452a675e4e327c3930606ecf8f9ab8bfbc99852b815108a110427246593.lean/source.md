@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant45ae6452a675e4e327c3930606ecf8f9ab8bfbc99852b815108a110427246593
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f25094c217800006117fab759d12ce3701945492` · SHA-256 `45ae6452a675e4e327c3930606ecf8f9ab8bfbc99852b815108a110427246593`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiLaplaceMellin
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_eq_MellinSeven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_eq_MellinSeven
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_finite_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_finite_abel
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_boundary_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_boundary_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_MellinSeven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_MellinSeven
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_logDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_logDerivative
+#check FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiLogDerivativeCombination_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiLogDerivativeCombination_norm_le
+```

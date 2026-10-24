@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroTailBudgetAudit.Variant01ff27be7d03198d4a17a4e27779e7682d9b9596f29ac7d36b1f5c97dd0888e7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a2c091c8a0b333c59bf76eb6978be385e8aac6fe` · SHA-256 `2555250a613d9b3743af6a292a4a8af93c5b59213f0c13780fb72a90abb72020`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroTailBudget.Variant7229254fab9732febbc7417f3973ea3b75c1d99971aad07239e15fdcb22b0bf4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7229254fab9732febbc7417f3973ea3b75c1d99971aad07239e15fdcb22b0bf4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualZeroTailBudget.Variant7229254fab9732febbc7417f3973ea3b75c1d99971aad07239e15fdcb22b0bf4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7229254fab9732febbc7417f3973ea3b75c1d99971aad07239e15fdcb22b0bf4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T050731Z-1791349651360257000/SourceActualZeroTailBudgetAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualZeroTailBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroTailBudget.Variant7229254fab9732febbc7417f3973ea3b75c1d99971aad07239e15fdcb22b0bf4
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualInitialPrimeMellin_strip_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualInitialPrimeMellin_strip_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualInitialPrimeMellin_strip_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroTailWeightConstant
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroTailWeightConstant
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroTailWeightConstant
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead_finite
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead_finite
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead_finite
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightHead
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_summable
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_summable
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_norm_bound
+#print FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualZeroHeightTail_norm_bound
+```

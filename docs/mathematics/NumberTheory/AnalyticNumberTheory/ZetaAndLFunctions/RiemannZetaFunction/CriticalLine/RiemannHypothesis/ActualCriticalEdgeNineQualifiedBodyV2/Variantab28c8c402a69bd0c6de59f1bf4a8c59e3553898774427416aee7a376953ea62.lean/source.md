@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalEdgeNineQualifiedBodyV2.Variantab28c8c402a69bd0c6de59f1bf4a8c59e3553898774427416aee7a376953ea62
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4420d5a5df14194520aa47413123a9399ea491bc` · SHA-256 `4c5349d1f38e0a5f6b526ef55dc96ff3b8285cf5e3898ae2ed03a3fdf205aa7e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.Variant51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalCovarianceEdgeNine.Variant51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-critical-covariance-edge-nine/ActualCriticalEdgeNineQualifiedBodyV2.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalCovarianceEdgeNine
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.Variant51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+-- Proof bodies and explicit arguments retained; inferable binder/let annotations omitted.
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+```

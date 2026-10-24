@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.AuditTransport.Variant9bb1384a8a6fa35d76699fb2409081ff8f4b71bee2a076b228a34c02a60e9851
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `070891dbcd1012416b9d70079e0905fcfc3f8ef0` · SHA-256 `e6a7c1d9c425f11c154854d3598911699c7a5fe61b5058d4d563285ccc92661a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoProfileTransport.Variant09ab61716f09f67e668a7ba92f5076fbff56f31ff74dc4988b419903ac186627","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"09ab61716f09f67e668a7ba92f5076fbff56f31ff74dc4988b419903ac186627","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePeanoProfileTransport.Variant09ab61716f09f67e668a7ba92f5076fbff56f31ff74dc4988b419903ac186627","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"09ab61716f09f67e668a7ba92f5076fbff56f31ff74dc4988b419903ac186627","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-packet-20261005/peano-worker/AuditTransport.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoProfileTransport.Variant09ab61716f09f67e668a7ba92f5076fbff56f31ff74dc4988b419903ac186627
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.normalizedOverlapProfile_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.normalizedOverlapProfile_hasDerivAt
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.normalizedOverlapProfile_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.normalizedOverlapProfile_deriv
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.normalizedOverlapProfile_second_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.normalizedOverlapProfile_second_hasDerivAt
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_deriv_eq_normalizedOverlapProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_deriv_eq_normalizedOverlapProfile
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_second_deriv_eq_normalizedOverlapProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_second_deriv_eq_normalizedOverlapProfile
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_deriv_eq_profile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_deriv_eq_profile
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_second_deriv_eq_profile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.primitiveCorrelationZero_second_deriv_eq_profile
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.sourcePeanoPrimitive_eq_profile
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.sourcePeanoPrimitive_eq_profile
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.sourcePeanoPrimitive_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.sourcePeanoPrimitive_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.sourcePeanoPrimitive_nonneg_iff
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport.sourcePeanoPrimitive_nonneg_iff
+
+```

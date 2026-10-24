@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialJointCancellationAudit.Variant5b14a5ed61d65faf9aa5edb19fba82bbb2d44714d545499604f8284f635aafbf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `166ed46a7ba0a7c84f2ba62d6dca33afa6861fcd` · SHA-256 `c98a985fa8f1d872809940952e4de16afa1ba42259affeab85aeaacf9e779dd0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialJointCancellation.Variant21443a2c9bacbc93655bdc528a82c5cec9cc7bdda46674ed53a59cf33785c353","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"21443a2c9bacbc93655bdc528a82c5cec9cc7bdda46674ed53a59cf33785c353","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualFactorialJointCancellation.Variant21443a2c9bacbc93655bdc528a82c5cec9cc7bdda46674ed53a59cf33785c353","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"21443a2c9bacbc93655bdc528a82c5cec9cc7bdda46674ed53a59cf33785c353","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T191852Z-1791314332717575000/SourceActualFactorialJointCancellationAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFactorialJointCancellation
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialJointCancellation.Variant21443a2c9bacbc93655bdc528a82c5cec9cc7bdda46674ed53a59cf33785c353
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.factorialNondefectSector
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.factorialNondefectSector
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_leading_and_tail_eq_joint_factorial_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_leading_and_tail_eq_joint_factorial_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_factorial_cancelled_kernel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_factorial_cancelled_kernel
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.factorialNondefectSector
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_leading_and_tail_eq_joint_factorial_integral
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_factorial_cancelled_kernel
+```

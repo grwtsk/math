@@ -1,0 +1,13 @@
+import SourceProperPowerCell
+#print RH16ProperPowerCell.powerTailBudget
+#print axioms RH16ProperPowerCell.powerTailBudget
+#print RH16ProperPowerCell.log_le_half_sub_inv
+#print axioms RH16ProperPowerCell.log_le_half_sub_inv
+#print RH16ProperPowerCell.powerTailBudget_nonneg
+#print axioms RH16ProperPowerCell.powerTailBudget_nonneg
+#print RH16ProperPowerCell.integer_cell_le
+#print axioms RH16ProperPowerCell.integer_cell_le
+#print RH16ProperPowerCell.finite_integer_tail_le
+#print axioms RH16ProperPowerCell.finite_integer_tail_le
+#print RH16ProperPowerCell.finite_integer_tail_budget
+#print axioms RH16ProperPowerCell.finite_integer_tail_budget

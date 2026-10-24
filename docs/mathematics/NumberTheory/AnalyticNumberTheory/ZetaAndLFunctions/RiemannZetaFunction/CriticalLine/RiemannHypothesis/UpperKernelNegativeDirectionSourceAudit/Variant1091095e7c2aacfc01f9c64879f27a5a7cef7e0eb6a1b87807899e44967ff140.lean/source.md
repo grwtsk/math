@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperKernelNegativeDirectionSourceAudit.Variant1091095e7c2aacfc01f9c64879f27a5a7cef7e0eb6a1b87807899e44967ff140
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c2270c4aa20f53cfe292037971acc99486d2cd54` · SHA-256 `64e993aa373c4e152ba5e095d003975935ff088de24771aadcb7a110d463e2b8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperKernelNegativeDirection.Variantc9001059b05b6939efad64253506d559725a773b03eee15e99744d3566e9d9c1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c9001059b05b6939efad64253506d559725a773b03eee15e99744d3566e9d9c1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.UpperKernelNegativeDirection.Variantc9001059b05b6939efad64253506d559725a773b03eee15e99744d3566e9d9c1","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c9001059b05b6939efad64253506d559725a773b03eee15e99744d3566e9d9c1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/upper-cancellation/UpperKernelNegativeDirectionSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperKernelNegativeDirection.Variantc9001059b05b6939efad64253506d559725a773b03eee15e99744d3566e9d9c1
+
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.log_thirty_two_ge_three
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.log_thirty_two_ge_three
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_upper_pair
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_upper_pair
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_diagonal_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_diagonal_zero
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_offDiagonal_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_offDiagonal_pos
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_pair_determinant_neg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_pair_determinant_neg
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_negative_direction
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.actual_negative_direction
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.not_actual_pair_positiveSemidefinite
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperKernelNegativeDirection.not_actual_pair_positiveSemidefinite
+```

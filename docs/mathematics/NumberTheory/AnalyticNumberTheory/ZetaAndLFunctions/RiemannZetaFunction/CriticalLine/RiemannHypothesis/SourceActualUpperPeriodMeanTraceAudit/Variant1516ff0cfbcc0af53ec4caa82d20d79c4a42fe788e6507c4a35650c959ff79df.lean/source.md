@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualUpperPeriodMeanTraceAudit.Variant1516ff0cfbcc0af53ec4caa82d20d79c4a42fe788e6507c4a35650c959ff79df
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0e3bdff534d322c93dcd7838035b5b4f95bc33f5` · SHA-256 `1516ff0cfbcc0af53ec4caa82d20d79c4a42fe788e6507c4a35650c959ff79df`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualUpperPeriodMeanTrace
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace
+#print axioms FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace
+#check FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTimeFactor_eq_support
+#print axioms FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTimeFactor_eq_support
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTimeFactor_eq_support
+#check FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualUpperPeriodMeanTrace.actualUpperPeriodMeanTrace_tendsto_zero
+```

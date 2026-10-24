@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.9526ae61336c2cbcSourceActualZeroFreeHeadGapAudit.Variant9fca6391fba6088af5728304a3da93f73bc1e53df50275c6accb269d79196b95
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `220035dd1da1a0701e6b307c861c58445be4bd72` · SHA-256 `326f4e124a053b3483f473ff586e796ceb0349d3994d2e901e8c3e76501e1b12`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroFreeHeadGap.Variant9526ae61336c2cbc3214c07e1f012594bff40aa89cec42935e39559cb5ba4c9b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9526ae61336c2cbc3214c07e1f012594bff40aa89cec42935e39559cb5ba4c9b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualZeroFreeHeadGap.Variant9526ae61336c2cbc3214c07e1f012594bff40aa89cec42935e39559cb5ba4c9b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9526ae61336c2cbc3214c07e1f012594bff40aa89cec42935e39559cb5ba4c9b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-refocus/concurrent-newer/9526ae61336c2cbc-SourceActualZeroFreeHeadGapAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualZeroFreeHeadGap
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroFreeHeadGap.Variant9526ae61336c2cbc3214c07e1f012594bff40aa89cec42935e39559cb5ba4c9b
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualCarrier_zero_free_gap
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualCarrier_zero_free_gap
+#print FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualCarrier_zero_free_gap
+#check FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualCarrier_below_height_gap
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualCarrier_below_height_gap
+#print FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualCarrier_below_height_gap
+#check FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingExponent_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingExponent_eq
+#print FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingExponent_eq
+#check FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingCorrection_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingCorrection_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingCorrection_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingAllowance_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingAllowance_tendsto_atTop
+#print FormalResearch.RiemannHypothesis.SourceActualZeroFreeHeadGap.actualZeroFreeMovingAllowance_tendsto_atTop
+```

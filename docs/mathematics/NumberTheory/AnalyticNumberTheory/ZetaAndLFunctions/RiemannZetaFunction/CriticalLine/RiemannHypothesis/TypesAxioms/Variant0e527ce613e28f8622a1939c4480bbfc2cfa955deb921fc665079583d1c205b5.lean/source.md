@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant0e527ce613e28f8622a1939c4480bbfc2cfa955deb921fc665079583d1c205b5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1024a78449b20d7baeffaaa48adb5e7c03e47764` · SHA-256 `5e55a70ac432365a54bcca3a6d01e0004ac8150e547f742fcd50702c1bc74c3c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalExponentialResponse.Variantf993f464b170a8b434177f779a03ac9de111b8d0ac1adb6040577479680efa2b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f993f464b170a8b434177f779a03ac9de111b8d0ac1adb6040577479680efa2b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualCriticalExponentialResponse.Variantf993f464b170a8b434177f779a03ac9de111b8d0ac1adb6040577479680efa2b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f993f464b170a8b434177f779a03ac9de111b8d0ac1adb6040577479680efa2b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualCriticalExponentialResponse-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualCriticalExponentialResponse
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalExponentialResponse.Variantf993f464b170a8b434177f779a03ac9de111b8d0ac1adb6040577479680efa2b
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualHalfCorrelationTransform
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualHalfCorrelationTransform
+#check FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse
+#check FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_eq_halfTransform
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_eq_halfTransform
+#check FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_at_half
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_at_half
+#check FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_mode_coefficient
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalExponentialResponse.actualCriticalExponentialResponse_mode_coefficient
+```

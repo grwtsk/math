@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant2a161855740c244ff3c4cbe3d2b8ab4b5895b195eb76a1af0d9511657d325eef
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0b5c911e856ae2d2d7bd2ef90652cca83551a2b7` · SHA-256 `e9e30dfbc9c3e92984fa0390fe2dd8c935aa79d1c3e99526786f23ce13441ecc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualArchimedeanUpper.Variant81336b6101a9a5ab1ec7de04cd82cfdff012c761ec81ab4d9658c1c63482a85a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"81336b6101a9a5ab1ec7de04cd82cfdff012c761ec81ab4d9658c1c63482a85a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualArchimedeanUpper.Variant81336b6101a9a5ab1ec7de04cd82cfdff012c761ec81ab4d9658c1c63482a85a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"81336b6101a9a5ab1ec7de04cd82cfdff012c761ec81ab4d9658c1c63482a85a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualArchimedeanUpper-IndependentAllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualArchimedeanUpper
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualArchimedeanUpper.Variant81336b6101a9a5ab1ec7de04cd82cfdff012c761ec81ab4d9658c1c63482a85a
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.kernel_quarter_quadratic
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.kernel_quarter_quadratic
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_multiplier_quadratic_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_multiplier_quadratic_upper
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_upper_by_derivative_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_upper_by_derivative_energy
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_quadratic_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_quadratic_upper
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_two_sided
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_two_sided
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_uniform_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_uniform_upper
+#check FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_tendsto_zero_frequency
+#print axioms FormalResearch.RiemannHypothesis.SourceActualArchimedeanUpper.actual_archimedean_tendsto_zero_frequency
+```

@@ -1,0 +1,90 @@
+# Complete source: GRWTSK.NumberTheory.EquivReindex.Variant66e4f91fff7529a1a33b4a600687ddff2c7e761870715b1d855536602a0edf6f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b97ef800f74f018462c59d710029ac2761fe51fd` · SHA-256 `5bc19951cf5d811bab70c005b181187146a4f98ce332ab8fdee71358377a659c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.EquivReindex.Variantbfb95ed4dbe9c4c9b6112eb06da78ccb71bc02bd82ca7af7817a1093314ef91a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bfb95ed4dbe9c4c9b6112eb06da78ccb71bc02bd82ca7af7817a1093314ef91a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.EquivReindex.Variantbfb95ed4dbe9c4c9b6112eb06da78ccb71bc02bd82ca7af7817a1093314ef91a","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"bfb95ed4dbe9c4c9b6112eb06da78ccb71bc02bd82ca7af7817a1093314ef91a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/NumberTheory/NumberField/EquivReindex.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Michail Karatarakis. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Michail Karatarakis
+-/
+import Mathlib.NumberTheory.NumberField.CanonicalEmbedding.Basic
+
+/-!
+
+# Reindexed basis
+This file introduces an equivalence between the set of embeddings of `K` into `ℂ` and the
+index set of the chosen basis of the ring of integers of `K`.
+
+## Tags
+
+house, number field, algebraic number
+-/
+
+
+namespace GRWTSK.NumberTheory.EquivReindex.Variantbfb95ed4dbe9c4c9b6112eb06da78ccb71bc02bd82ca7af7817a1093314ef91a
+
+variable (K : Type*) [Field K] [NumberField K]
+
+namespace NumberField
+
+noncomputable section
+
+open Module.Free Module canonicalEmbedding Matrix Finset
+
+/-- An equivalence between the set of embeddings of `K` into `ℂ` and the
+  index set of the chosen basis of the ring of integers of `K`. -/
+abbrev equivReindex : (K →+* ℂ) ≃ ChooseBasisIndex ℤ (𝓞 K) :=
+  Fintype.equivOfCardEq <| by
+    rw [Embeddings.card, ← finrank_eq_card_chooseBasisIndex, RingOfIntegers.rank]
+
+/-- The basis matrix for the embeddings of `K` into `ℂ`. This matrix is formed by
+  taking the lattice basis vectors of `K` and reindexing them according to the
+  equivalence `equivReindex`, then transposing the resulting matrix. -/
+abbrev basisMatrix : Matrix (K →+* ℂ) (K →+* ℂ) ℂ :=
+  (Matrix.of fun i ↦ latticeBasis K (equivReindex K i))
+
+theorem det_of_basisMatrix_non_zero [DecidableEq (K →+* ℂ)] : (basisMatrix K).det ≠ 0 := by
+  let e : (K →+* ℂ) ≃ ChooseBasisIndex ℤ (𝓞 K) := equivReindex K
+  let N := Algebra.embeddingsMatrixReindex ℚ ℂ (fun i => integralBasis K (e i))
+    RingHom.equivRatAlgHom
+  rw [show (basisMatrix K) = N by
+    ext:2; simp only [N, transpose_apply, latticeBasis_apply, integralBasis_apply,
+    of_apply, apply_at]; rfl, ← pow_ne_zero_iff two_ne_zero]
+  convert (map_ne_zero_iff _ (algebraMap ℚ ℂ).injective).mpr
+    (Algebra.discr_not_zero_of_basis ℚ (integralBasis K))
+  rw [← Algebra.discr_reindex ℚ (integralBasis K) e.symm]
+  exact (Algebra.discr_eq_det_embeddingsMatrixReindex_pow_two ℚ ℂ
+    (fun _ => integralBasis K (e _)) RingHom.equivRatAlgHom).symm
+
+instance [DecidableEq (K →+* ℂ)] : Invertible (basisMatrix K) := invertibleOfIsUnitDet _
+    (Ne.isUnit (det_of_basisMatrix_non_zero K))
+
+variable {K}
+
+theorem canonicalEmbedding_eq_basisMatrix_mulVec (α : K) :
+    canonicalEmbedding K α = (basisMatrix K).transpose.mulVec
+      (fun i ↦ (((integralBasis K).reindex (equivReindex K).symm).repr α i : ℂ)) := by
+  ext i
+  rw [← (latticeBasis K).sum_repr (canonicalEmbedding K α), ← Equiv.sum_comp (equivReindex K)]
+  simp only [canonicalEmbedding.integralBasis_repr_apply, mulVec, dotProduct,
+    transpose_apply, of_apply, Fintype.sum_apply, mul_comm, Basis.repr_reindex,
+    Finsupp.mapDomain_equiv_apply, Equiv.symm_symm, Pi.smul_apply, smul_eq_mul]
+
+theorem inverse_basisMatrix_mulVec_eq_repr [DecidableEq (K →+* ℂ)] (α : 𝓞 K) :
+    ∀ i, ((basisMatrix K).transpose)⁻¹.mulVec (fun j =>
+      canonicalEmbedding K (algebraMap (𝓞 K) K α) j) i =
+      ((integralBasis K).reindex (equivReindex K).symm).repr α i := fun i => by
+  rw [inv_mulVec_eq_vec (canonicalEmbedding_eq_basisMatrix_mulVec ((algebraMap (𝓞 K) K) α))]
+
+end
+
+end NumberField
+```

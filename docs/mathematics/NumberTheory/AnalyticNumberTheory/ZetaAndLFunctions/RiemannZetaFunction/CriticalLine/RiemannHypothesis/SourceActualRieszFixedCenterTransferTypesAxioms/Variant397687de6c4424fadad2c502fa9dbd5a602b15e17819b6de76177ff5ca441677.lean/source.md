@@ -1,0 +1,42 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszFixedCenterTransferTypesAxioms.Variant397687de6c4424fadad2c502fa9dbd5a602b15e17819b6de76177ff5ca441677
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ef1d8df850653142022b584c27f76b44fc57f3a5` · SHA-256 `0e9cf0d9ab41b764333ff05b8ba268ed6d7f5e14ac7dc7f86723151d03c0badf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.Variant8cace3b7dcf5023302bc733b482690a4a1f1ef56cbef216707ce1c6296300597","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8cace3b7dcf5023302bc733b482690a4a1f1ef56cbef216707ce1c6296300597","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRieszFixedCenterTransfer.Variant8cace3b7dcf5023302bc733b482690a4a1f1ef56cbef216707ce1c6296300597","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"8cace3b7dcf5023302bc733b482690a4a1f1ef56cbef216707ce1c6296300597","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T082903Z-1791361743758185000/SourceActualRieszFixedCenterTransferTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszFixedCenterTransfer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.Variant8cace3b7dcf5023302bc733b482690a4a1f1ef56cbef216707ce1c6296300597
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRieszPrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRieszPrimitive
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_intervalIntegrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_readout
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_paid_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_paid_bounds
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_error_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedCenterTransfer.actualFixedCenteredMangoldtRiesz_error_bound
+```

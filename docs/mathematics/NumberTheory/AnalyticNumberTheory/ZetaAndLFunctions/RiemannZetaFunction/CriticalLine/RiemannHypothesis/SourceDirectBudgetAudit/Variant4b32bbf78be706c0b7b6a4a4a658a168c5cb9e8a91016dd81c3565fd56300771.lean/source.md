@@ -1,0 +1,78 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDirectBudgetAudit.Variant4b32bbf78be706c0b7b6a4a4a658a168c5cb9e8a91016dd81c3565fd56300771
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6d7a0d8f3cc4c808b09e6a5c5f851ded78bdd6aa` · SHA-256 `83f671979f6a8bffe3241a3bae8dbd298c42b4ce5c4cccd05c9642af69ab1532`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceResidualBudget.Variant79bde5babec2aca634cd44b535f629c1f0b524dafde7e759772df76203e567cf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"79bde5babec2aca634cd44b535f629c1f0b524dafde7e759772df76203e567cf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceResidualBudget.Variant79bde5babec2aca634cd44b535f629c1f0b524dafde7e759772df76203e567cf","mathematical_subject":"Foundations.Unclassified","original_sha256":"79bde5babec2aca634cd44b535f629c1f0b524dafde7e759772df76203e567cf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/resume-budget/check-20261006T172901Z-1791307741453912000/SourceDirectBudgetAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceResidualBudget
+import SourceAbelDirectBudget
+import SourceCriticalDirectBudget
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceResidualBudget.Variant79bde5babec2aca634cd44b535f629c1f0b524dafde7e759772df76203e567cf
+
+set_option linter.hashCommand false
+set_option pp.fullNames true
+
+#check RH16ResumeBudget.sourceQuadraticValue_eq_archimedean_sub_two_residual
+#print axioms RH16ResumeBudget.sourceQuadraticValue_eq_archimedean_sub_two_residual
+#print RH16ResumeBudget.sourceQuadraticValue_eq_archimedean_sub_two_residual
+
+#check RH16ResumeBudget.source_lower_of_residual_upper
+#print axioms RH16ResumeBudget.source_lower_of_residual_upper
+#print RH16ResumeBudget.source_lower_of_residual_upper
+
+#check RH16ResumeBudget.originalPrefixLower
+#print axioms RH16ResumeBudget.originalPrefixLower
+#print RH16ResumeBudget.originalPrefixLower
+
+#check RH16ResumeBudget.originalPrefixLower_le_source
+#print axioms RH16ResumeBudget.originalPrefixLower_le_source
+#print RH16ResumeBudget.originalPrefixLower_le_source
+
+#check RH16ResumeBudget.all_real_source_lower_of_residual_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_residual_tail
+#print RH16ResumeBudget.all_real_source_lower_of_residual_tail
+
+#check RH16ResumeBudget.estimate_of_residual_tail_direct
+#print axioms RH16ResumeBudget.estimate_of_residual_tail_direct
+#print RH16ResumeBudget.estimate_of_residual_tail_direct
+
+#check RH16ResumeBudget.all_real_source_lower_of_compensatedJointWork_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_compensatedJointWork_tail
+#print RH16ResumeBudget.all_real_source_lower_of_compensatedJointWork_tail
+
+#check RH16ResumeBudget.all_real_source_lower_of_compensatedLocalizedWork_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_compensatedLocalizedWork_tail
+#print RH16ResumeBudget.all_real_source_lower_of_compensatedLocalizedWork_tail
+
+#check RH16ResumeBudget.criticalBaselineCorrection
+#print axioms RH16ResumeBudget.criticalBaselineCorrection
+#print RH16ResumeBudget.criticalBaselineCorrection
+
+#check RH16ResumeBudget.criticalBaselineCorrection_eq_actual
+#print axioms RH16ResumeBudget.criticalBaselineCorrection_eq_actual
+#print RH16ResumeBudget.criticalBaselineCorrection_eq_actual
+
+#check RH16ResumeBudget.criticalBaselineCorrection_antitone
+#print axioms RH16ResumeBudget.criticalBaselineCorrection_antitone
+#print RH16ResumeBudget.criticalBaselineCorrection_antitone
+
+#check RH16ResumeBudget.criticalBaselineCorrection_negative_of_six_le
+#print axioms RH16ResumeBudget.criticalBaselineCorrection_negative_of_six_le
+#print RH16ResumeBudget.criticalBaselineCorrection_negative_of_six_le
+
+#check RH16ResumeBudget.residual_upper_of_criticalRelative_tail
+#print axioms RH16ResumeBudget.residual_upper_of_criticalRelative_tail
+#print RH16ResumeBudget.residual_upper_of_criticalRelative_tail
+
+#check RH16ResumeBudget.all_real_source_lower_of_criticalRelative_tail
+#print axioms RH16ResumeBudget.all_real_source_lower_of_criticalRelative_tail
+#print RH16ResumeBudget.all_real_source_lower_of_criticalRelative_tail
+```

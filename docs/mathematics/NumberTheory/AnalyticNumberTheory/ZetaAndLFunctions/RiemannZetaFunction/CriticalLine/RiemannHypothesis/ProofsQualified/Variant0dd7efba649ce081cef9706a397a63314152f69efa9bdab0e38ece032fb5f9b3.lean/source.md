@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant0dd7efba649ce081cef9706a397a63314152f69efa9bdab0e38ece032fb5f9b3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `759c8f1c3ae10ec95dd6c02063c14c96d4a5d340` · SHA-256 `0dd7efba649ce081cef9706a397a63314152f69efa9bdab0e38ece032fb5f9b3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFactorialTailDecomposition
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.factorialLogDefect
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.shortReciprocalMoebius
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.shortLogReciprocalMoebius
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.shortFactorialDefect
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.sum_log_Icc_eq_log_factorial
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.floor_div_natCast
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.shortDivisorCumulative_eq_log_factorial
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.shortDivisorCumulative_eq_continuous_add_defect
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.complementaryCumulative_eq_factorial_sectors
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.factorial_sector_tail_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialTailDecomposition.complementarySignedTail_eq_factorial_sectors
+```

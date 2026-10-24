@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalFrontierSourceInspection.Variantae3f78de17ca6ca909bb07c991676adb8644e823d3437f0f9e1215eaec2970ce
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cbccc1895005dc7ea80ef716b004e3157d99535b` · SHA-256 `bd4f4eef75c3d9abe877aa45cb465bdb470f4938c9aa230076e58a5d5d4eb3e3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolution.Variantcb7870b5636efa496dd7517769cac5d28d61997da488b1449a3f7d9e46544b42","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cb7870b5636efa496dd7517769cac5d28d61997da488b1449a3f7d9e46544b42","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiErrorConvolution.Variantcb7870b5636efa496dd7517769cac5d28d61997da488b1449a3f7d9e46544b42","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"cb7870b5636efa496dd7517769cac5d28d61997da488b1449a3f7d9e46544b42","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualCriticalFrontierSourceInspection.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiErrorConvolution
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolution.Variantcb7870b5636efa496dd7517769cac5d28d61997da488b1449a3f7d9e46544b42
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCorrelationSignChange.sourceCorrelation_exists_neg_in_half_support
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationSignChange.sourceCorrelation_exists_neg_in_half_support
+#check FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_deriv
+#check FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_zero
+#check FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_upper
+#check FormalResearch.RiemannHypothesis.SourceMangoldtAbel.closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtAbel.closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mertensResidual_eq_quadratic
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mertensResidual_eq_quadratic
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.criticalMangoldtWork_eq_continuous_sub_quadratic
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.criticalMangoldtWork_eq_continuous_sub_quadratic
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonnegative
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonpositive
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonpositive
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.originalSourceState_norm
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.originalSourceState_norm
+```

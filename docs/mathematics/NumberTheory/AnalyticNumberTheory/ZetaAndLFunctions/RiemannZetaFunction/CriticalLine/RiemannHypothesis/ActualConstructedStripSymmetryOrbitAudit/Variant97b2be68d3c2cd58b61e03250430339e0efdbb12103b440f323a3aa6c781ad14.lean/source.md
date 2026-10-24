@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualConstructedStripSymmetryOrbitAudit.Variant97b2be68d3c2cd58b61e03250430339e0efdbb12103b440f323a3aa6c781ad14
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4c2d2c2b3c0695af5b3481ecfb3b8e5dbcc7c0ad` · SHA-256 `5a28f2971c2541302a4677cb66b868ce013c13f017398db2f368ce3592b1a93c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.Variant1dd6909c3d4fae2d43bab24912366f4cc32cfc40e134adc09e4ed4632edb760e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1dd6909c3d4fae2d43bab24912366f4cc32cfc40e134adc09e4ed4632edb760e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualConstructedStripSymmetryOrbit.Variant1dd6909c3d4fae2d43bab24912366f4cc32cfc40e134adc09e4ed4632edb760e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1dd6909c3d4fae2d43bab24912366f4cc32cfc40e134adc09e4ed4632edb760e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T051449Z-1791350089184316000/ActualConstructedStripSymmetryOrbitAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualConstructedStripSymmetryOrbit
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.Variant1dd6909c3d4fae2d43bab24912366f4cc32cfc40e134adc09e4ed4632edb760e
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_reflected_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_reflected_eq
+#print FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_reflected_eq
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_conjugated_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_conjugated_eq
+#print FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_conjugated_eq
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight
+#print FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_real
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_real
+#print FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_real
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_below_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_below_beyond
+#print FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_below_beyond
+```

@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceHyperbolaRadiusFollowthroughAuditAttempt01Input.Variant78aca6a911312a1956656fd9ef03097405282b518f5cf0a160c3c34019841aba
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4e912760bed3c7cff3229899c358f94e1eb5000e` · SHA-256 `ea6d784c8518a1d47bace1b0c78aa7743b23087709f2bfc20e8d5191e1b57a53`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceHyperbolaRadiusFollowthrough.Variantd530ab7c29f1d1815f5b2f917752bc7954c0688fe6f90557ffb7c23aadbe5fd7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d530ab7c29f1d1815f5b2f917752bc7954c0688fe6f90557ffb7c23aadbe5fd7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceHyperbolaRadiusFollowthrough.Variantd530ab7c29f1d1815f5b2f917752bc7954c0688fe6f90557ffb7c23aadbe5fd7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d530ab7c29f1d1815f5b2f917752bc7954c0688fe6f90557ffb7c23aadbe5fd7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-refocus-20261006/dependencies/native/SourceHyperbolaRadiusFollowthroughAudit.attempt01.input.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceHyperbolaRadiusFollowthrough
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceHyperbolaRadiusFollowthrough.Variantd530ab7c29f1d1815f5b2f917752bc7954c0688fe6f90557ffb7c23aadbe5fd7
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceHyperbolaRadiusFollowthrough
+#check strict_upper_of_joint_linear_tail_radius
+#print strict_upper_of_joint_linear_tail_radius
+#print axioms strict_upper_of_joint_linear_tail_radius
+#check strict_tail_of_joint_linear_tail_radius
+#print strict_tail_of_joint_linear_tail_radius
+#print axioms strict_tail_of_joint_linear_tail_radius
+#check primary_strict_frontier_of_joint_linear_tail
+#print primary_strict_frontier_of_joint_linear_tail
+#print axioms primary_strict_frontier_of_joint_linear_tail
+end FormalResearch.RiemannHypothesis.SourceHyperbolaRadiusFollowthrough
+```

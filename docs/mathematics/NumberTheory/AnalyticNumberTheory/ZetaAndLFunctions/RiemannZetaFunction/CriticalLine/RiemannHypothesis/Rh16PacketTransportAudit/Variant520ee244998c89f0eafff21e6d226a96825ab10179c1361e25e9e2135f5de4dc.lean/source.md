@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Rh16PacketTransportAudit.Variant520ee244998c89f0eafff21e6d226a96825ab10179c1361e25e9e2135f5de4dc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `afcb887520869ac1518f9a0d93a6445eefd669e3` · SHA-256 `ced43d594ab843cfb01ec97f14293ad3584e43124bd33dbf19303d3e354ee75b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PacketTransportCertificates.Variant89539caacafb475d496124d1af89b33f36c19ebc48efa8c7f2ad4d13fd565387","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"89539caacafb475d496124d1af89b33f36c19ebc48efa8c7f2ad4d13fd565387","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.PacketTransportCertificates.Variant89539caacafb475d496124d1af89b33f36c19ebc48efa8c7f2ad4d13fd565387","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"89539caacafb475d496124d1af89b33f36c19ebc48efa8c7f2ad4d13fd565387","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-packet-transport-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.PacketTransportCertificates
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PacketTransportCertificates.Variant89539caacafb475d496124d1af89b33f36c19ebc48efa8c7f2ad4d13fd565387
+
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.pair_mass_conservation
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.pair_mass_conservation
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.pair_variance_drop
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.pair_variance_drop
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.pair_variance_nonincrease
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.pair_variance_nonincrease
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.constant_density_refinement
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.constant_density_refinement
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.constant_observable_refinement
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.constant_observable_refinement
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.refinement_observable_correction
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.refinement_observable_correction
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.flux_pairing
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.flux_pairing
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.flux_total_mass
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.flux_total_mass
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.transported_readout
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.transported_readout
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.decoded_transported_readout
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.decoded_transported_readout
+#check FormalResearch.RiemannHypothesis.PacketTransportCertificates.masked_action_retains_and_advances
+#print axioms FormalResearch.RiemannHypothesis.PacketTransportCertificates.masked_action_retains_and_advances
+```

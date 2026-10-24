@@ -1,0 +1,124 @@
+# Complete source: GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonThirdBlockData
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0f4c374d7349abb5e6375a788fd54a109b4d1117` · SHA-256 `084b3aedb1d323babc766efafb15f3440157d74449810123d99af9d5af127210`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondBlockData
+
+set_option autoImplicit false
+
+/-!
+# Source-bound proposals for the THIRD prefix block
+
+Local index i represents global prefix index i+128 and integer base i+129.
+The original source, schedule and complete error are unchanged. These integer
+triples are proposals; companion scripts must justify every row. All bases
+129..192 use logarithm-reduction exponent seven.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+namespace GRWTSK.RiemannHypothesis.ConcreteNewtonThirdBlockData
+
+open GRWTSK.Analysis.Complex
+open RationalRoundedArithmetic IntegerDyadicTrace RationalTaylorSeedNormalization
+open ConcreteNewtonPacket RationalZetaCenterEvaluation
+
+def base (i : Fin 64) : ℕ := i.1 + 129
+
+def initial (i : Fin 64) : GridState :=
+  match i.1 with
+  | 0 => ⟨17618605401724348505, -4844403060189783242, 47⟩
+  | 1 => ⟨17616272632051428733, -4851841369375162828, 47⟩
+  | 2 => ⟨17613954638157432019, -4859221584710027919, 47⟩
+  | 3 => ⟨17611651219299590376, -4866544596781997861, 47⟩
+  | 4 => ⟨17609362178916386332, -4873811275918300193, 47⟩
+  | 5 => ⟨17607087324510461753, -4881022472794834956, 47⟩
+  | 6 => ⟨17604826467535635942, -4888179019022540676, 47⟩
+  | 7 => ⟨17602579423287860042, -4895281727712069083, 47⟩
+  | 8 => ⟨17600346010799943225, -4902331394017723956, 47⟩
+  | 9 => ⟨17598126052739894175, -4909328795661570692, 48⟩
+  | 10 => ⟨17595919375312728915, -4916274693438577375, 48⟩
+  | 11 => ⟨17593725808165603190, -4923169831703604801, 48⟩
+  | 12 => ⟨17591545184296134355, -4930014938841022147, 48⟩
+  | 13 => ⟨17589377339963784115, -4936810727717686495, 48⟩
+  | 14 => ⟨17587222114604179499, -4943557896119988067, 48⟩
+  | 15 => ⟨17585079350746255187, -4950257127175628760, 48⟩
+  | 16 => ⟨17582948893932105686, -4956909089760769183, 48⟩
+  | 17 => ⟨17580830592639441036, -4963514438893148745, 48⟩
+  | 18 => ⟨17578724298206544535, -4970073816111754464, 48⟩
+  | 19 => ⟨17576629864759635615, -4976587849843586767, 48⟩
+  | 20 => ⟨17574547149142545353, -4983057155758044664, 48⟩
+  | 21 => ⟨17572476010848616248, -4989482337109428199, 48⟩
+  | 22 => ⟨17570416311954741838, -4995863985068032863, 48⟩
+  | 23 => ⟨17568367917057465444, -5002202679040288696, 48⟩
+  | 24 => ⟨17566330693211060897, -5008498986978375995, 48⟩
+  | 25 => ⟨17564304509867521459, -5014753465679729786, 48⟩
+  | 26 => ⟨17562289238818386341, -5020966661076826561, 48⟩
+  | 27 => ⟨17560284754138337287, -5027139108517628985, 48⟩
+  | 28 => ⟨17558290932130500561, -5033271333037047491, 48⟩
+  | 29 => ⟨17556307651273392436, -5039363849619761664, 48⟩
+  | 30 => ⟨17554334792169448910, -5045417163454729172, 48⟩
+  | 31 => ⟨17552372237495082845, -5051431770181695586, 48⟩
+  | 32 => ⟨17550419871952214120, -5057408156130004731, 48⟩
+  | 33 => ⟨17548477582221220631, -5063346798549996213, 48⟩
+  | 34 => ⟨17546545256915260132, -5069248165837264399, 48⟩
+  | 35 => ⟨17544622786535914955, -5075112717750041351, 48⟩
+  | 36 => ⟨17542710063430113623, -5080940905619955039, 48⟩
+  | 37 => ⟨17540806981748285193, -5086733172556403507, 48⟩
+  | 38 => ⟨17538913437403703991, -5092489953644775515, 48⟩
+  | 39 => ⟨17537029328032984066, -5098211676138738563, 48⟩
+  | 40 => ⟨17535154552957684322, -5103898759646805976, 48⟩
+  | 41 => ⟨17533289013146986820, -5109551616313385980, 48⟩
+  | 42 => ⟨17531432611181412243, -5115170650994507381, 48⟩
+  | 43 => ⟨17529585251217537895, -5120756261428408454, 48⟩
+  | 44 => ⟨17527746838953684976, -5126308838401168110, 48⟩
+  | 45 => ⟨17525917281596543142, -5131828765907551141, 48⟩
+  | 46 => ⟨17524096487828701618, -5137316421307232446, 48⟩
+  | 47 => ⟨17522284367777057263, -5142772175476558564, 48⟩
+  | 48 => ⟨17520480832982071165, -5148196392955998545, 48⟩
+  | 49 => ⟨17518685796367846370, -5153589432093430161, 48⟩
+  | 50 => ⟨17516899172213000414, -5158951645183401767, 48⟩
+  | 51 => ⟨17515120876122307291, -5164283378602504599, 48⟩
+  | 52 => ⟨17513350824999084447, -5169584972940985089, 48⟩
+  | 53 => ⟨17511588937018301287, -5174856763130721746, 48⟩
+  | 54 => ⟨17509835131600386539, -5180099078569686398, 48⟩
+  | 55 => ⟨17508089329385712674, -5185312243243004974, 48⟩
+  | 56 => ⟨17506351452209736335, -5190496575840728657, 48⟩
+  | 57 => ⟨17504621423078774538, -5195652389872422047, 48⟩
+  | 58 => ⟨17502899166146397084, -5200779993778670931, 48⟩
+  | 59 => ⟨17501184606690416376, -5205879691039608475, 48⟩
+  | 60 => ⟨17499477671090456455, -5210951780280554920, 48⟩
+  | 61 => ⟨17497778286806083754, -5215996555374862395, 48⟩
+  | 62 => ⟨17496086382355482659, -5221014305544053043, 48⟩
+  | _ => ⟨17494401887294659577, -5226005315455335466, 48⟩
+
+def sourceArgument (i : Fin 64) : QComplex :=
+  RationalPowerEvaluation.argument (base i : ℚ) (sourceExponent center) (schedule (base i))
+def sourceRadius (i : Fin 64) : ℚ :=
+  RationalPowerEvaluation.radius (base i : ℚ) (sourceExponent center) (schedule (base i))
+def sourceDisplacement (i : Fin 64) : ℚ :=
+  RationalPowerEvaluation.displacement (base i : ℚ) (sourceExponent center) (schedule (base i))
+
+def InputValid (i : Fin 64) : Prop :=
+  RationalPowerEvaluation.Admissible (base i : ℚ) (sourceExponent center) (schedule (base i)) ∧
+    0 ≤ sourceRadius i ∧ 0 ≤ sourceDisplacement i
+
+def SeedWindows (i : Fin 64) : Prop :=
+  RationalTaylorSeedNormalization.Windows 64 (sourceArgument i)
+    (sourceRadius i) (sourceDisplacement i) 21 (initial i)
+
+def slot (g j : Fin 8) : Fin 64 := ConcreteNewtonFirstBlockData.slot g j
+
+theorem group_cover (i : Fin 64) : ∃ g j : Fin 8, slot g j = i :=
+  ConcreteNewtonFirstBlockData.group_cover i
+
+theorem group_unique (g j g' j' : Fin 8) (h : slot g j = slot g' j') :
+    g = g' ∧ j = j' := ConcreteNewtonFirstBlockData.group_unique g j g' j' h
+
+end GRWTSK.RiemannHypothesis.ConcreteNewtonThirdBlockData
+```

@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoOneSidedMassAudit.Variant09461127ded2316c60287d853c336e2ab35ab0729e4e20fd84cbd5037e18f8f5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fe96653a639c1f733cabb65c5650dec599fed279` · SHA-256 `f271c55e4c168abfa175ff6ecbdc3ddedc70f7a672315736b93c6324830c4ab8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoOneSidedMass.Variant7a5823f460c46ac8530fa31427676fe734964fcd8139a2893da3ca2d39916746","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7a5823f460c46ac8530fa31427676fe734964fcd8139a2893da3ca2d39916746","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePeanoOneSidedMass.Variant7a5823f460c46ac8530fa31427676fe734964fcd8139a2893da3ca2d39916746","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7a5823f460c46ac8530fa31427676fe734964fcd8139a2893da3ca2d39916746","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-refocus-20261006/root/independent-SourcePeanoOneSidedMassAudit-1791352614853923000/SourcePeanoOneSidedMassAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourcePeanoOneSidedMass
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePeanoOneSidedMass.Variant7a5823f460c46ac8530fa31427676fe734964fcd8139a2893da3ca2d39916746
+
+set_option autoImplicit false
+#print FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_deriv_formula
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_deriv_formula
+#print FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_formula
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_formula
+#print FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_window
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow.weightedCorrelation_second_deriv_window
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.criticalOneSidedMass
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.criticalOneSidedMass
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.actualOneSidedPairing
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.actualOneSidedPairing
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.actualOneSidedPairing_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.actualOneSidedPairing_integrable
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.oneSided_window_pointwise
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.oneSided_window_pointwise
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.criticalOneSidedMass_window_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.criticalOneSidedMass_window_integrable
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.actualOneSidedPairing_dominates_window
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.actualOneSidedPairing_dominates_window
+#print FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.oneSided_spikes_transfer
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass.oneSided_spikes_transfer
+#print FormalResearch.RiemannHypothesis.SourceNativeReadout.weightedCorrelation
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeReadout.weightedCorrelation
+#print FormalResearch.RiemannHypothesis.SourceFullPeanoEnergy.fullPeanoError
+#print axioms FormalResearch.RiemannHypothesis.SourceFullPeanoEnergy.fullPeanoError
+#print FormalResearch.RiemannHypothesis.SourceFullPeanoEnergy.fullPeanoRaw
+#print axioms FormalResearch.RiemannHypothesis.SourceFullPeanoEnergy.fullPeanoRaw
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+```

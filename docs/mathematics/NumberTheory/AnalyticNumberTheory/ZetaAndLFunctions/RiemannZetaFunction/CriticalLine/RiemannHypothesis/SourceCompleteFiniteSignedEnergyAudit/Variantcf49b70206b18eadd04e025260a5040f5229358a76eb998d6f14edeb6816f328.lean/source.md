@@ -1,0 +1,53 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteFiniteSignedEnergyAudit.Variantcf49b70206b18eadd04e025260a5040f5229358a76eb998d6f14edeb6816f328
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2478c9db6cfee30809c3be5744a42482c0174733` · SHA-256 `58ab961a92d89de71c378186aaa9db01945955fe0ca8b2af163b6130463c82f9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteFiniteSignedEnergy.Variant33f709a7ee403cf29815e778e961781205b1a262fbb15fef3aa0aaa7bbdbd498","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"33f709a7ee403cf29815e778e961781205b1a262fbb15fef3aa0aaa7bbdbd498","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCompleteFiniteSignedEnergy.Variant33f709a7ee403cf29815e778e961781205b1a262fbb15fef3aa0aaa7bbdbd498","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"33f709a7ee403cf29815e778e961781205b1a262fbb15fef3aa0aaa7bbdbd498","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-hilbert-cycle-20261006/finite-energy-replays/SourceCompleteFiniteSignedEnergyAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteFiniteSignedEnergy
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteFiniteSignedEnergy.Variant33f709a7ee403cf29815e778e961781205b1a262fbb15fef3aa0aaa7bbdbd498
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.fullNames true
+set_option pp.proofs false
+
+namespace FormalResearch.RiemannHypothesis
+
+#print SourceStrictColumnInterior.strictColumnInterior
+#print SourceCompensatedBilinearConsumer.timeRow
+#print SourceCompensatedBilinearConsumer.columnRow
+#print SourceJointMangoldtWork.jointMangoldtTestProfile
+#print SourceJointMangoldtWork.jointMangoldtErrorWork
+#print SourceDivisorCounterterms.globalBaseline
+#print SourceDivisorCounterterms.divisorCounterterm
+#print SourceDivisorCounterterms.divisorRemainder
+#print SourceSamplingLedger.independentMainTerm
+#print SourceVaughanHankel.centeredDeletedDiagonal
+#print SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print SourceJointCountertermAlignment.divisor_remainders_eq_joint_work_after_mean_cancellation
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_complete_signed_energy
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_aligned_divisor_energy
+#print SourceCompleteFiniteSignedEnergy.complete_density_square_completion
+#print axioms SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print axioms
+  SourceJointCountertermAlignment.divisor_remainders_eq_joint_work_after_mean_cancellation
+#print axioms SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_complete_signed_energy
+#print axioms SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_aligned_divisor_energy
+#print axioms SourceCompleteFiniteSignedEnergy.complete_density_square_completion
+
+set_option pp.proofs true
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_complete_signed_energy
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_aligned_divisor_energy
+#print SourceCompleteFiniteSignedEnergy.complete_density_square_completion
+
+end FormalResearch.RiemannHypothesis
+```

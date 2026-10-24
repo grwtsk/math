@@ -1,0 +1,9 @@
+import ActualCompletedHorizontalIntegrability
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualCompletedHorizontalIntegrability.actual_bilateral_transform_continuous
+#print FormalResearch.RiemannHypothesis.ActualCompletedHorizontalIntegrability.actual_completed_horizontal_intervalIntegrable

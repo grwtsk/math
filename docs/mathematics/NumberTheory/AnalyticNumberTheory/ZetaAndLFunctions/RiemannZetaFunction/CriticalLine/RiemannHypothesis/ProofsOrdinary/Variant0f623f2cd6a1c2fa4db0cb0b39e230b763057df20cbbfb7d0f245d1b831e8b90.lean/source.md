@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant0f623f2cd6a1c2fa4db0cb0b39e230b763057df20cbbfb7d0f245d1b831e8b90
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3a957ab8f15c585dc8f9e4cef7c01e1114ab561a` · SHA-256 `0f623f2cd6a1c2fa4db0cb0b39e230b763057df20cbbfb7d0f245d1b831e8b90`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPoleMomentAnnihilation
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_plain_pole_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_plain_pole_derivative_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_log_pole_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_log_pole_derivative_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_mellin_pole_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_mellin_pole_derivative_integral_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiFloorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiFloorPairing
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiFloorDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actualPsiContinuousPairing_eq_psi_floor
+#print FormalResearch.RiemannHypothesis.SourceActualPoleMomentAnnihilation.actual_leading_full_complement_sub_psi_floor_abs_le
+```
