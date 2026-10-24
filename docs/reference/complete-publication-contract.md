@@ -50,6 +50,13 @@ source index. Reviewed semantic subjects remain distinct from source directory
 navigation; a cross-branch proof requires an explicit statement, components and
 proved composition bridges.
 
+In complete-publication schema `noe.math-complete-documentation/2`, a source
+observation's unavailable metric records `profile_sha256` as the SHA-256 of the
+exact profile file bytes at the source commit. The evaluated metric schema's
+`profile_digest` instead hashes canonical JSON after parsing. These bindings
+have distinct encodings and must not be compared as interchangeable digests.
+Neither binding supplies missing graph evidence or a numerical measurement.
+
 Generation and effectful verification belong to `grwtsk/noeaaeue`. Its existing
 managed native owner retains activation locks, reservations and admission holds.
 Execution attempts, receipts, caches and mutable controller state are not stored

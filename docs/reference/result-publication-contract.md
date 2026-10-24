@@ -192,8 +192,13 @@ weights, distance decay, \(\tau\), upstream policy, normalization, verification
 eligibility, explicit trust policy, top-preview count, and the finite exact
 evaluation limit. Missingness is `unavailable_with_reason`. Ties use persistent
 result identity in ascending order. Every changed policy gets a new profile
-version/identity; canonical JSON SHA-256 binds the exact profile bytes after JSON
-parsing. Compare scores only with their profile and source scope visible.
+version/identity. The evaluator's `profile_digest` is SHA-256 of canonical JSON
+after parsing; it identifies the policy independently of JSON formatting.
+The complete source-observation schema instead records `profile_sha256` as the
+SHA-256 of the original profile file bytes at its pinned source commit. This is
+an artifact binding, not an evaluated metric's canonical policy digest. Compare
+digests only after checking their schema and encoding. Compare scores only with
+their profile and source scope visible.
 
 The Noe evaluator uses standard-library rational Gaussian elimination to compute
 the determinant exactly. It records the rational `exact_determinant`, vertex and
@@ -226,7 +231,7 @@ remain unavailable; the demonstration does not establish their missing closure.
 
 ## Formal statements and verification boundary
 
-[`FiniteDependencyVolume.lean`](../../GRWTSK/Combinatorics/DirectedGraph/FiniteDependencyVolume.lean)
+[`FiniteDependencyVolume.lean`](../../GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/FiniteDependencyVolume.lean)
 contains definitions and theorems under
 `GRWTSK.Combinatorics.DirectedGraph.FiniteDependencyVolume`:
 
