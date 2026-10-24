@@ -10433,3 +10433,57 @@ must not be presented as revised-source acceptance. Operational
 runners and receipts belong outside the math repository in
 \`grwtsk/noeaaeue\`. No Railway, force push or declined remote
 dispatch.
+
+
+### Follow-up: explicit map-only BaseSpecialization API
+
+Source commit:
+`720b3c0ddedb0fbab0da9695365f176213f12da9`.
+
+Current source blob for
+`GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`:
+`720d541d6f1d6942164327565174490c4b3ce971`.
+
+New fully qualified declarations:
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap`;
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map`.
+
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap`
+takes exactly a supplied map
+`embed : BaseZero → GeneralizedZero`,
+a zero-preservation proof, and a criticality-reflection proof. It contains no
+injectivity premise and proves no injectivity conclusion.
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map`
+then derives the base hypothesis from those three map properties and
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.GeneralizedHypothesis`.
+This source-level API is consistent with the preceding provenance correction
+that `BaseSpecialization.embed` is not an embedding theorem in the injective
+sense.
+
+External paper theorem/section/page locator: **NOT APPLICABLE**; this is a
+repository-derived interface refinement. Local source-snapshot attribution
+remains the 2026 `grwtsk contributors` / OpenAI header already recorded
+above; no new publication byline is created.
+
+Classification:
+- imported mathematics: unchanged;
+- kernel-verified bridges: none newly claimed;
+- source proof candidates: the two new declarations;
+- conditional interfaces: supplied map, zero preservation, criticality
+  reflection, and generalized family hypothesis;
+- finite evidence: none;
+- analogies: none;
+- unresolved premises: construction of the actual generalized-to-zeta map and
+  its zero/criticality properties in the intended L-function family.
+
+Operational validation is queued outside math at
+`grwtsk/noeaaeue#399`, pinned to the exact source commit/blob. The request is
+passive and is not an execution receipt.
+
+Actual status:
+`lake env lean`: **NOT_RUN**;
+target build: **NOT_RUN**;
+fresh trust-zero kernel replay: **NOT_RUN**;
+transitive axiom/`sorryAx`/unsafe audit:
+**NOT_RUN / NOT_KERNEL_AUDITED**.
