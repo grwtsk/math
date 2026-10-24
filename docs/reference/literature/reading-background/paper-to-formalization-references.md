@@ -6050,6 +6050,198 @@ preflight above is a distinct, limited, pinned receipt.
 
 
 
+### CAT-MEASURE-TRANSPORT-20261023 — measured strong mixing and positive open mass imply odd local returns
+
+**Exact paper/formalization provenance (method, NOT imported theorem).**
+**Marcel Morgenstern (2026)**,
+[lean4-ergodic-theory](https://github.com/marcmorningstar/lean4-ergodic-theory),
+immutable external Git commit
+[`040fec2e0ddf4fcba49af9f76c866d295308dd7f`](https://github.com/marcmorningstar/lean4-ergodic-theory/commit/040fec2e0ddf4fcba49af9f76c866d295308dd7f),
+exact declaration
+`ErgodicTheory.CatMapToral.catTorus_mixing`
+in `ErgodicTheory/Examples/CatMapMixing.lean`,
+Git blob `680a64b9746cf75579586041bda758c0f0eb824c`.
+Its **actual** hypotheses are two measurable subsets
+`A,B` of the REAL two-torus with the project's
+selected normalized Haar measure `volume`;
+its conclusion is
+`Tendsto (fun n => volume.real (A ∩
+catTorus^[n] ⁻¹' B)) atTop (nhds (volume.real A *
+volume.real B))`. This is MEASURE-THEORETIC
+strong mixing, not a source assertion of open
+mixing. Its formal development pins
+**Lean v4.30.0-rc2**; two external
+CI checks ("Build" and "Build project") at
+this exact commit were marked successful
+([CI run](https://github.com/marcmorningstar/lean4-ergodic-theory/actions/runs/29606825667)),
+but their native kernel/axiom closure was NOT
+replayed by GRWTSK. The theorem has NOT
+been imported into GRWTSK's distinct
+Lean v4.33.0/Mathlib environment.
+
+**Roy L. Adler and Benjamin Weiss**, *Entropy, a Complete Metric
+Invariant for Automorphisms of the Torus*,
+PNAS **57**(6) (**1967**), 1573–1576,
+DOI [10.1073/pnas.57.6.1573](https://doi.org/10.1073/pnas.57.6.1573),
+is **historical entropy/Markov-partition
+background only**, not the proof source
+of this local measure-to-open intersection
+lemma or an asserted formal import.
+No historical influence on unpublished
+Farey mathematics is inferred.
+
+**Precise new source method and hypotheses.**
+The source file
+`GRWTSK/NumberTheory/Farey/CatMapMeasuredMixingTransport.lean`,
+first routine `main` integration commit
+[`d616f89179e541ee6669f3cbacc9202f1418c8a8`](https://github.com/grwtsk/math/commit/d616f89179e541ee6669f3cbacc9202f1418c8a8),
+Git blob `3dbe401843fd2609231dc20ab77a430d1692a433`,
+imports the previous local
+`CatMapContinuousPhaseObstruction` at
+blob `b76d4c8bf7544a1800917fd111cc017011d172c0`,
+pinned `Mathlib.MeasureTheory.Measure.Real`
+Git blob `2be899626f4e667ab2434919350e73a0074fc0e8`,
+and `Mathlib.Tactic`. Source and exact
+hypothesis note:
+`docs/mathematics/NumberTheory/Farey/cat-map-measure-mixing-transport.md`,
+doc source commit
+`460b3aef8b8be1367cfee4d7ef3ce59ec40b090f`,
+Git blob
+`3762a99d12f79c9febc8debe6ec33fc473094b6`.
+
+Fully qualified new declarations, with prefix
+`GRWTSK.NumberTheory.Farey.CatMapMeasuredMixingTransport.`:
+
+- `HasPositiveOpenRealMass` (**definition**):
+  for a **supplied** measure `μ:Measure X` on a
+  Borel measurable topological space `X`,
+  every **nonempty open** `U` must satisfy
+  `0 < μ.real U`. This explicit
+  positivity, not mere nonzero total mass,
+  is necessary for the implication.
+- `HasRealSetMixing` (**definition**):
+  requires the actual **external-compatible**
+  real-valued set correlation limit for
+  **every measurable pair A,B**,
+  using the exact source map `T:X→X`.
+  No probability, invariance or measure-space
+  identity is silently asserted.
+- `eventualOpenMixing_of_realSetMixing`:
+  consumes BOTH named premises and deduces the
+  previously defined local
+  `CatMapContinuousPhaseObstruction.EventualOpenMixing T`:
+  for every pair of **nonempty open**
+  `U,V`, an `N` exists so
+  `∀n≥N, ∃x∈U, (T^[n])x∈V`.
+  Exact proof method: positive product of
+  the real open-set masses, convergence,
+  `Filter.eventually_gt_nhds`,
+  `Filter.eventually_atTop`, then the
+  actual pinned Mathlib theorem
+  `MeasureTheory.nonempty_of_measureReal_ne_zero`.
+- `oddLocalReturns_of_realSetMixing`:
+  with the same two premises, gives
+  `CatMapContinuousPhaseObstruction.HasOddLocalReturns T p`
+  for any explicitly provided basepoint `p`.
+- `catTorus_oddLocalReturns_of_realSetMixing`:
+  specializes to the genuinely defined
+  `CatMapArithmeticBridge.catTorus` and
+  the embedded torsion witness
+  `torsionEmbedding finiteWitness`,
+  while keeping the **same supplied μ**
+  and **both undischarged** `hMix`,
+  `hSupport` parameters.
+- `no_continuous_cat_phase_extension_of_realSetMixing`:
+  the consequent excludes any **continuous**
+  `F:Torus2→ℂ` agreeing with **all nine**
+  finite Farey values and satisfying the
+  **global** `F(catTorus x)=-F(x)`.
+  It does so **only conditionally** on
+  `HasRealSetMixing catTorus μ` and
+  `HasPositiveOpenRealMass μ`; it does
+  NOT instantiate these for the local
+  `volume` measure and does not forbid
+  continuous interpolation without the
+  global eigenlaw.
+
+**Classifications, actual verification and missing bridges.**
+`imported-mathematics`:
+the actual local Farey/torsion/odd-return
+definitions and pinned Mathlib real measure,
+Borel and filter convergence lemmas;
+**NO external Morgenstern formal theorem import**.
+`source-proof-candidate`:
+the four new Lean theorem bodies with no
+explicit source `sorry` or `axiom`,
+but elaboration and trust are **NOT_RUN**.
+`conditional-interfaces`:
+both the strong mixing of the *local* map and
+positive open mass of the *same* source measure
+remain premises, never conclusions.
+`finite-evidence`:
+**NO new finite numerical test** verifies a
+measure-theoretic convergence limit or Haar
+support. The previous actual
+`F₃²` nine-point Python receipt, held
+separately in `grwtsk/noeaaeue`,
+proves only finite arithmetic and cannot
+upgrade this measured theorem.
+`external-CI-reported`: the external
+successful 2026 build checks above; **not**
+a local kernel-verified import.
+`kernel-verified-bridge`:
+**NONE NEW** for this source.
+`methodological-analogy`: Adler–Weiss
+global entropy versus Farey finite
+return arithmetic; not a theorem implication.
+`unresolved-premises`:
+a common Lean source/measure identity between
+the local `catTorus` and external
+`ErgodicTheory.CatMapToral.catTorus`,
+the genuine local measure's
+`HasPositiveOpenRealMass` proof,
+import or native proof of
+`HasRealSetMixing`, and fresh checking
+of every new theorem and transitive
+proof environment.
+
+**Actual Lean verification status: `SOURCE_ONLY /
+NOT_RUN / NOT_KERNEL_AUDITED`.**
+Canonical toolchain remains
+`leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+No warning-clean new-leaf `lake build --wfail`,
+direct `lake env lean --trust=0`,
+fresh native `leanchecker`,
+complete declaration types or transitive
+`#print axioms`/unsafe/generated audit
+has run on the new source. **Actual command,
+exit status, and external execution receipt
+for this new Lean leaf: `NOT_RUN / UNAVAILABLE`.**
+A separately pinned manual validation
+issue must capture such commands and receipts
+outside canonical mathematics before
+any verification-status change.
+
+**Mathematical negative controls.** A
+Dirac probability measure supported at
+one point of a two-point discrete identity
+system has exact trivial product
+correlations, but does not mix disjoint
+nonempty open sets: **full support is
+essential**. Dropping continuity or
+the global `-1` eigenrelation
+invalidates the no-extension conclusion.
+An a.e.-vanishing measurable function
+can still have exceptional values on
+Haar-null torsion points; the abstract
+measure-to-open step explicitly keeps
+the missing full-support premise.
+There is no new KS entropy, Sturmian
+spectral-gap, Sarnak, Siegel-zero,
+3/4-strip, Hodge, nonsofic-group,
+or RH theorem here.
+
 ## Case BOMBIERI-CALIBRATED-THIRD-20261023 — nonzero source-coordinate gain
 
 **Reference:** Repository-derived 2026 source mathematics, with OpenAI formalization assistance; no external paper title, authors, year/version, DOI/arXiv or theorem locator applicable to this new local result. Bombieri and Weil names do not imply historical influence or imported analytic theorems.
