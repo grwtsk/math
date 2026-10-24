@@ -394,4 +394,107 @@ theorem shiftedSturmian_two_sector_unit_margin_injective
     delta hsectors.1 hsectors.2 hstrict
 
 
+
+/-!
+## Two-site unshifted Sturmian interior resolvent certificate
+
+For the literal Dirichlet restriction to two consecutive sites, the
+off-diagonal hopping entries are exactly one. Its determinant at energy E
+is a quadratic expression in the two actual Sturmian potential values.
+Unlike the preceding large-shift construction, this certifies an open
+*interior* finite-volume determinant gap around zero when coupling is small.
+
+No statement is made about arbitrary volume, an infinite-volume spectrum,
+uniform gap labels, or the Dry Ten Martini problem.
+-/
+
+/-- The two-site free restriction is the actual adjacency-exchange matrix. -/
+theorem freeDirichlet_two :
+    freeDirichlet 2 = !![0, 1; 1, 0] := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    norm_num [freeDirichlet, Matrix.cons_val_zero, Matrix.cons_val_one]
+
+/-- Exact characteristic determinant of the *unshifted* two-site Dirichlet
+Sturmian Hamiltonian, with the true potential at both consecutive sites. -/
+theorem twoSite_energy_det (α V ξ E : ℝ) (origin : ℤ) :
+    ((hamiltonian 2 α V ξ origin) - Matrix.diagonal (fun _ => E)).det =
+      (potential α V ξ origin - E) *
+        (potential α V ξ (origin + 1) - E) - 1 := by
+  rw [Matrix.det_fin_two]
+  norm_num [hamiltonian, freeDirichlet, Matrix.diagonal_apply,
+    Matrix.sub_apply, Matrix.add_apply]
+  ring
+
+/-- An exact iff for negative two-site energy determinant, without
+small-coupling or perturbation assumptions. -/
+theorem twoSite_energy_det_neg_iff (α V ξ E : ℝ) (origin : ℤ) :
+    ((hamiltonian 2 α V ξ origin) - Matrix.diagonal (fun _ => E)).det < 0 ↔
+      (potential α V ξ origin - E) *
+        (potential α V ξ (origin + 1) - E) < 1 := by
+  rw [twoSite_energy_det]
+  exact sub_lt_zero
+
+/-- The exact Sturmian binary potential at any site is bounded in absolute
+value by the absolute coupling. -/
+theorem abs_potential_le_abs_coupling (α V ξ : ℝ) (n : ℤ) :
+    |potential α V ξ n| ≤ |V| := by
+  have h := abs_potential_sub_le α V 0 ξ n
+  simpa [potential_zero] using h
+
+/-- A genuine finite-volume *interior* determinant gap: for every rotation
+parameter, phase, and integer origin, the two-site unshifted Hamiltonian
+has negative energy determinant throughout |E| + |V| < 1.
+
+The conclusion is stronger than nonsingularity of the literal shifted
+matrix H-EI, but does not imply any infinite-volume spectral gap. -/
+theorem twoSite_unshifted_det_negative_of_abs_energy_add_abs_coupling_lt_one
+    (α V ξ E : ℝ) (origin : ℤ) (hsmall : |E| + |V| < 1) :
+    ((hamiltonian 2 α V ξ origin) - Matrix.diagonal (fun _ => E)).det < 0 := by
+  have h0 : |potential α V ξ origin - E| < 1 := by
+    calc
+      |potential α V ξ origin - E| ≤
+          |potential α V ξ origin| + |E| := abs_sub_le _ _
+      _ ≤ |V| + |E| :=
+          add_le_add_right (abs_potential_le_abs_coupling α V ξ origin) _
+      _ = |E| + |V| := add_comm _ _
+      _ < 1 := hsmall
+  have h1 : |potential α V ξ (origin + 1) - E| < 1 := by
+    calc
+      |potential α V ξ (origin + 1) - E| ≤
+          |potential α V ξ (origin + 1)| + |E| := abs_sub_le _ _
+      _ ≤ |V| + |E| :=
+          add_le_add_right
+            (abs_potential_le_abs_coupling α V ξ (origin + 1)) _
+      _ = |E| + |V| := add_comm _ _
+      _ < 1 := hsmall
+  have hm :
+      |(potential α V ξ origin - E) *
+        (potential α V ξ (origin + 1) - E)| < 1 := by
+    rw [abs_mul]
+    calc
+      |potential α V ξ origin - E| *
+          |potential α V ξ (origin + 1) - E| ≤
+          |potential α V ξ origin - E| * 1 :=
+        mul_le_mul_of_nonneg_left h1.le (abs_nonneg _)
+      _ = |potential α V ξ origin - E| := mul_one _
+      _ < 1 := h0
+  rw [twoSite_energy_det]
+  have hle : (potential α V ξ origin - E) *
+      (potential α V ξ (origin + 1) - E) ≤
+        |(potential α V ξ origin - E) *
+          (potential α V ξ (origin + 1) - E)| :=
+    le_abs_self _
+  linarith
+
+/-- The strict signed determinant certificate excludes a zero determinant
+for the unshifted two-site energy operator at every certified E. -/
+theorem twoSite_unshifted_det_ne_zero_of_abs_energy_add_abs_coupling_lt_one
+    (α V ξ E : ℝ) (origin : ℤ) (hsmall : |E| + |V| < 1) :
+    ((hamiltonian 2 α V ξ origin) - Matrix.diagonal (fun _ => E)).det ≠ 0 :=
+  ne_of_lt
+    (twoSite_unshifted_det_negative_of_abs_energy_add_abs_coupling_lt_one
+      α V ξ E origin hsmall)
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
