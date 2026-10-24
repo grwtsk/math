@@ -94,7 +94,6 @@ structure ZetaSoficSuppliers (trace : ℂ → ℕ → Bool) where
 /-- The irrationality statement uses ONLY rational presentation and
 non-soficity. It does not assume GRH or critical-line placement. -/
 theorem zeta_zero_ordinate_irrational_without_GRH
-    (M : CorrectRealArithmetic)
     (trace : ℂ → ℕ → Bool)
     (rationalPresentation :
       ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
@@ -156,6 +155,57 @@ theorem ordinate_split_for_dynamic_spectral_cover
       (¬ AlgebraicReal (zetaHeight z)) :=
   actual_zeta_zero_irrational_and_conditional_transcendental
     C.labelTrace S hCritical
+
+/-- The eventual version is logically stronger in its NON-SOFIC
+supplier. A single non-sofic initial factor language does not by
+definition establish non-soficity of every eventual tail. -/
+structure ZetaEventualSoficSuppliers (trace : ℂ → ℕ → Bool) where
+  rationalEventually :
+    ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+      EventuallySoficTrace (trace z)
+  algebraicOnLineEventually :
+    ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
+      AlgebraicReal (zetaHeight z) →
+        EventuallySoficTrace (trace z)
+  noEventuallySoficZero :
+    ∀ z, ActualZetaZero z → ¬ EventuallySoficTrace (trace z)
+
+/-- No GRH or critical-line placement is needed to rule out
+RATIONAL ordinates when rationality entails eventual exact sofic
+factor-language compressibility and the actual spectral trace has
+no eventually sofic tail. BOTH are independent missing suppliers. -/
+theorem irrational_of_eventual_language_obstruction
+    (trace : ℂ → ℕ → Bool)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        EventuallySoficTrace (trace z))
+    (noEventually :
+      ∀ z, ActualZetaZero z → ¬ EventuallySoficTrace (trace z)) :
+    ∀ z, ActualZetaZero z →
+      ¬ RationalReal (zetaHeight z) := by
+  intro z hz hrat
+  exact noEventually z hz (rationalEventually z hz hrat)
+
+/-- Separate after-GRH conclusion. Critical-line placement
+does not prove the algebraic-to-sofic bridge or non-soficity. -/
+theorem eventual_sofic_irrational_and_conditional_transcendental
+    (trace : ℂ → ℕ → Bool)
+    (S : ZetaEventualSoficSuppliers trace)
+    (hCritical : ZetaCriticalPlacement) :
+    ∀ z, ActualZetaZero z →
+      (¬ RationalReal (zetaHeight z)) ∧
+      (z.re = (1 : ℝ) / 2) ∧
+      (¬ AlgebraicReal (zetaHeight z)) := by
+  intro z hz
+  have hrat : ¬ RationalReal (zetaHeight z) :=
+    irrational_of_eventual_language_obstruction trace
+      S.rationalEventually S.noEventuallySoficZero z hz
+  have hline : z.re = (1 : ℝ) / 2 := hCritical z hz
+  have halg : ¬ AlgebraicReal (zetaHeight z) := by
+    intro h
+    exact S.noEventuallySoficZero z hz
+      (S.algebraicOnLineEventually z hz hline h)
+  exact ⟨hrat, hline, halg⟩
 
 /-- Actual stagewise analytic premises, seeded at 7/8 and cofinal toward
 3/4, retain a separate dynamic refinement. The existence of this
