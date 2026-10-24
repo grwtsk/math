@@ -640,4 +640,126 @@ theorem not_all_volumes_free_central_gap
   exact (h 3 0 (by norm_num)) (threeSite_zeroCoupling_zero_in_spectrum α ξ origin)
 
 
+
+/-!
+## Exact finite Sturmian potential perturbation and energy-gap transport
+
+The nonzero-coupling operator is the *actual* finite Dirichlet Hamiltonian.
+The potential is diagonal with entries in `{0,V}`, hence its Euclidean
+operator norm is at most `|V|`. This part has no spectral-gap premise.
+
+A separate free-energy lower norm bound is then transported to the same
+energy of the coupled Hamiltonian, with exactly `|V|` lost. Supplying
+that free bound from the complete sine eigenbasis is a distinct proof
+obligation; no unshifted gap is postulated as a conclusion.
+-/
+
+/-- Exact difference of the actual coupled and free Euclidean operators. -/
+theorem sturmianCLM_sub_free_eq_diagonal
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) :
+    sturmianCLM N α V ξ origin -
+      Matrix.toEuclideanCLM (freeDirichlet N) =
+      Matrix.toEuclideanCLM
+        (Matrix.diagonal
+          (fun i : Fin N => potential α V ξ (origin + (i.val : ℤ)))) := by
+  simp [sturmianCLM, hamiltonian, map_add]
+
+/-- An assumption-free operator-norm bound for the *actual* Sturmian
+finite-volume diagonal potential, uniformly over volume and phase. -/
+open scoped Matrix.Norms.L2Operator in
+theorem sturmianCLM_sub_free_norm_le
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) :
+    ‖sturmianCLM N α V ξ origin -
+      Matrix.toEuclideanCLM (freeDirichlet N)‖ ≤ |V| := by
+  rw [sturmianCLM_sub_free_eq_diagonal]
+  rw [← Matrix.l2_opNorm_toEuclideanCLM, Matrix.l2_opNorm_diagonal]
+  apply (pi_norm_le_iff_of_nonneg (abs_nonneg V)).2
+  intro i
+  simpa [Real.norm_eq_abs] using
+    (abs_potential_le_abs_coupling α V ξ (origin + (i.val : ℤ)))
+
+/-- The free *energy residual* at E, with no artificial positive shift. -/
+noncomputable def freeEnergyCLM (N : ℕ) (E : ℝ) :
+    EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N) :=
+  Matrix.toEuclideanCLM (freeDirichlet N) -
+    E • ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin N))
+
+/-- The corresponding actual coupled finite-volume energy residual. -/
+noncomputable def sturmianEnergyCLM
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :
+    EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N) :=
+  sturmianCLM N α V ξ origin -
+    E • ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin N))
+
+/-- The energy shift cancels in the coupled-minus-free perturbation. -/
+theorem sturmianEnergyCLM_sub_freeEnergyCLM
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :
+    sturmianEnergyCLM N α V ξ origin E - freeEnergyCLM N E =
+      sturmianCLM N α V ξ origin -
+        Matrix.toEuclideanCLM (freeDirichlet N) := by
+  unfold sturmianEnergyCLM freeEnergyCLM
+  abel
+
+/-- At every real energy, the exact coupled/free residual operators differ
+by at most the absolute coupling, in the operator norm. -/
+theorem sturmianEnergyCLM_sub_free_norm_le
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :
+    ‖sturmianEnergyCLM N α V ξ origin E - freeEnergyCLM N E‖ ≤ |V| := by
+  rw [sturmianEnergyCLM_sub_freeEnergyCLM]
+  exact sturmianCLM_sub_free_norm_le N α V ξ origin
+
+/-- Quantitative transfer of an explicitly supplied free-energy norm gap.
+The supplier `hfree` is **not** asserted to follow merely from excluding
+zero from the finite free spectrum; a uniform norm estimate must be proved
+for the selected `N,E,γ` independently. -/
+theorem sturmianEnergyCLM_gap_of_free_gap
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E γ : ℝ)
+    (hfree : ∀ x : EuclideanSpace ℝ (Fin N),
+      γ * ‖x‖ ≤ ‖(freeEnergyCLM N E) x‖)
+    (x : EuclideanSpace ℝ (Fin N)) :
+    (γ - |V|) * ‖x‖ ≤
+      ‖(sturmianEnergyCLM N α V ξ origin E) x‖ := by
+  let A := freeEnergyCLM N E
+  let B := sturmianEnergyCLM N α V ξ origin E
+  have hdiff : ‖A - B‖ ≤ |V| := by
+    rw [show A - B = -(B - A) by abel, norm_neg]
+    exact sturmianEnergyCLM_sub_free_norm_le N α V ξ origin E
+  have hop : ‖(A - B) x‖ ≤ |V| * ‖x‖ := by
+    exact ((A - B).le_opNorm x).trans
+      (mul_le_mul_of_nonneg_right hdiff (norm_nonneg _))
+  have htriangle : ‖A x‖ ≤ ‖B x‖ + ‖(A - B) x‖ := by
+    have heq : A x = B x + (A - B) x := by
+      simp [map_sub]
+    rw [heq]
+    exact norm_add_le _ _
+  have h0 := hfree x
+  change γ * ‖x‖ ≤ ‖A x‖ at h0
+  change (γ - |V|) * ‖x‖ ≤ ‖B x‖
+  nlinarith [h0, htriangle, hop]
+
+/-- When the *proved* free residual gap exceeds the actual coupling,
+the finite coupled energy residual is injective. This is conditional
+on the quantitative free gap, not an infinite-volume spectral result. -/
+theorem sturmianEnergyCLM_injective_of_free_gap
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E γ : ℝ)
+    (hfree : ∀ x : EuclideanSpace ℝ (Fin N),
+      γ * ‖x‖ ≤ ‖(freeEnergyCLM N E) x‖)
+    (hsmall : |V| < γ) :
+    Function.Injective (sturmianEnergyCLM N α V ξ origin E) := by
+  intro x y hxy
+  have hz : (sturmianEnergyCLM N α V ξ origin E) (x - y) = 0 := by
+    rw [map_sub, hxy, sub_self]
+  have hbound := sturmianEnergyCLM_gap_of_free_gap
+    N α V ξ origin E γ hfree (x - y)
+  rw [hz, norm_zero] at hbound
+  have hnorm : ‖x - y‖ = 0 := by
+    by_contra hn
+    have hp : 0 < ‖x - y‖ :=
+      lt_of_le_of_ne (norm_nonneg _) (Ne.symm hn)
+    have hpositive : 0 < (γ - |V|) * ‖x - y‖ :=
+      mul_pos (sub_pos.mpr hsmall) hp
+    linarith
+  exact sub_eq_zero.mp (norm_eq_zero.mp hnorm)
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
