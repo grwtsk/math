@@ -192,6 +192,57 @@ theorem rh_implies_generalized_of_spectralCoverFamily
   intro i
   exact (covers.cover i).transport_hypothesis hRH
 
+/-- A concrete specialization of the base problem inside one generalized
+problem.  Base zeros are embedded as generalized zeros, and generalized
+criticality at those embedded points reflects back to base criticality. -/
+structure BaseSpecialization
+    {BaseZero : Type uBase} {GeneralizedZero : Type uGen}
+    (base : ZeroProblem BaseZero)
+    (generalized : ZeroProblem GeneralizedZero) where
+  embed : BaseZero → GeneralizedZero
+  mapsZero : ∀ z,
+    base.isZero z → generalized.isZero (embed z)
+  reflectsCritical : ∀ z,
+    base.isZero z →
+      generalized.critical (embed z) →
+        base.critical z
+
+/-- One actual generalized family member containing the base zero problem
+supplies the standard generalized-to-base direction. -/
+theorem generalized_implies_base_of_member_specialization
+    {Index : Type uIndex}
+    {BaseZero : Type uBase}
+    {Zero : Index → Type uGen}
+    {base : ZeroProblem BaseZero}
+    {family : ∀ i, ZeroProblem (Zero i)}
+    (i0 : Index)
+    (specialization : BaseSpecialization base (family i0))
+    (hGeneralized : GeneralizedHypothesis family) :
+    base.Hypothesis := by
+  intro z hz
+  exact specialization.reflectsCritical z hz
+    (hGeneralized i0 (specialization.embed z)
+      (specialization.mapsZero z hz))
+
+/-- Spectral covers from the base problem to every generalized member, together
+with an actual generalized member containing the base problem, give a typed
+conditional equivalence.  This is stronger than merely assuming an arbitrary
+implication between the two propositions. -/
+theorem rh_iff_generalized_of_spectralCovers_and_member_specialization
+    {Index : Type uIndex}
+    {BaseZero : Type uBase}
+    {Zero : Index → Type uGen}
+    {base : ZeroProblem BaseZero}
+    {family : ∀ i, ZeroProblem (Zero i)}
+    (covers : SpectralCoverFamily base family)
+    (i0 : Index)
+    (specialization : BaseSpecialization base (family i0)) :
+    base.Hypothesis ↔ GeneralizedHypothesis family := by
+  constructor
+  · exact rh_implies_generalized_of_spectralCoverFamily covers
+  · exact generalized_implies_base_of_member_specialization
+      i0 specialization
+
 theorem rh_iff_generalized_of_spectralCovers_and_specialization
     {Index : Type uIndex}
     {BaseZero : Type uBase}
