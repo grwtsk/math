@@ -207,6 +207,24 @@ theorem eventual_sofic_irrational_and_conditional_transcendental
       (S.algebraicOnLineEventually z hz hline h)
   exact ⟨hrat, hline, halg⟩
 
+/-- The entire proposed chain is now typed at the ACTUAL zeta
+predicate: source z -> dynamic refinement -> finite labeled graph path
+-> complex-linear spectral orbit -> full label trace -> z.im readout.
+The arithmetic proof still requires independently constructing
+eventual exact-language presentations and non-eventual-soficity. -/
+theorem eventual_ordinate_split_for_dynamic_spectral_cover
+    {Obs : Type u} {State : Type v} {Spectral : Type*}
+    [Fintype State] [AddCommGroup Spectral] [Module ℂ Spectral]
+    (C : DynamicSpectralCover ℂ Obs State Bool Spectral)
+    (S : ZetaEventualSoficSuppliers C.labelTrace)
+    (hCritical : ZetaCriticalPlacement) :
+    ∀ z, ActualZetaZero z →
+      (¬ RationalReal (zetaHeight z)) ∧
+      (z.re = (1 : ℝ) / 2) ∧
+      (¬ AlgebraicReal (zetaHeight z)) :=
+  eventual_sofic_irrational_and_conditional_transcendental
+    C.labelTrace S hCritical
+
 /-- Actual stagewise analytic premises, seeded at 7/8 and cofinal toward
 3/4, retain a separate dynamic refinement. The existence of this
 structure is a large, UNPROVED zero-free-stage supplier. -/

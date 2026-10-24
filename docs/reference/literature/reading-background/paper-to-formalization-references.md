@@ -8905,3 +8905,578 @@ External evidence in that directory: `anchor-pair-build.log` (initial failure),
 `anchor-pair-audit.log`, and `anchor-pair-validated-snapshot.json`. This dated
 acceptance is confined to the pinned closure; historical source-only statuses
 and unresolved premises outside that scope remain unchanged.
+
+
+## Case DYNAMIC-PARTITION-SOFIC-LANGUAGE-ORDINATE-20261023
+
+**Integrated mathematics; evidence status:** SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED, no fresh local Lean acceptance. The complete
+[mathematical statement and gap ledger](../../../mathematics/NumberTheory/Zeta/Riemann/dynamic-sofic-ordinate-process.md)
+retains distinct dynamic refinement, labeled graph, spectral operator,
+Bombieri loss, analytic stage and arithmetic source assumptions.
+The user-supplied predecessor is actual repository commit
+[9db6cf032653fafc7c7c26eb22f7480bafa2d28b](https://github.com/grwtsk/math/commit/9db6cf032653fafc7c7c26eb22f7480bafa2d28b),
+file GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean,
+blob 71277213e4c6da281d53c56ef57b84eb68ac7730;
+the corresponding pre-existing provenance commits are
+76bb36e6c4a959a9e78ce007eb19349d0dea4098 and
+aca91a1405aad549f70d1395897d42be6b9d6698.
+Those sources remain independent, not overwritten.
+
+### Actual paper/method sources and precise hypotheses
+
+1. **Brad Rodgers and Terence Tao**, *The de Bruijn--Newman constant is
+   non-negative*; initial arXiv posting **2018**, subsequently published
+   **2020**, stable [arXiv:1801.05914](https://arxiv.org/abs/1801.05914).
+   Exact imported content here: **none**. The only method comparison is
+   the dependence of a real-parameter entire-function deformation on
+   exp(t u^2) times the chosen theta kernel Phi and the analytic study
+   of its zeros. No heat-equation identity, infinite-time limit, zero
+   location, zero dynamics, or source identification with a finite
+   graph is imported. Corresponding new Lean declaration: **none**.
+   Its role is ANALOGY_ONLY to a process-oriented construction.
+2. **David A. Huffman**, *A Method for the Construction of
+   Minimum-Redundancy Codes*, **1952**, stable
+   [DOI 10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898).
+   Exact method used as background: prefix-free exact decodability,
+   not optimality or expected code length. Local predecessor declarations
+   \`GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.LosslessPrefixCode\`,
+   \`HuffmanLikeCover\` and
+   \`GRWTSK.NumberTheory.Farey.FiniteHeatCompressionBridge.ExactProcessRecovery\`
+   are conditional factorization interfaces, **not** a Huffman algorithm
+   on real heat signals. No direct paper theorem is ported.
+3. **Enrico Bombieri**, *Problems of the Millennium: The Riemann
+   Hypothesis*, Clay Mathematics Institute problem description,
+   **2000 exposition** (section V, actual test g and its two moments;
+   source exact publication edition/location should be rechecked
+   against the document cited by the existing repository).
+   Stable organizational link:
+   https://www.claymath.org/millennium-problems/riemann-hypothesis/ .
+   Exact local moment conditions: integral g(x) dx = 0 and
+   integral g(x) dx/x = 0 over the prescribed positive half-line
+   test class. The new code does NOT claim a new Bombieri theorem.
+   It consumes the actual repository
+   \`CanonicalSquareTentBombieriMomentInformationLoss\` witness on
+   three canonical square tents: the nonzero
+   \`correctedCoordinates\` and zero share the same complete pair
+   \`bombieriMomentProfile\` (source blob
+   9a2435d9c74b89ce1434c45bade1aa9beaa6cead).
+   The classical Weil diagonal separation/strict positivity remains
+   an unresolved independent premise.
+4. **Nataša Jonoska**, *Sofic shifts with synchronizing
+   presentations*, *Theoretical Computer Science* **158 (1996)**,
+   pp. 81--115,
+   [DOI 10.1016/0304-3975(96)00058-8](https://doi.org/10.1016/0304-3975(96)00058-8).
+   Method: labeled directed finite graph presentations of symbolic
+   subshifts and factor languages. Exact source theorem/section
+   defining all bi-infinite sequences: **not imported** into Lean.
+   The new \`WordPath\`, \`GraphLanguage\` and
+   \`ExactLanguagePresentation\` model exact finite graph *word*
+   language equality for a ONE-SIDED trace. A bi-infinite/essential
+   graph identification or regular-language theorem is NOT assumed,
+   and historical influence on this development is not inferred.
+5. **OpenAI**, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+   Re(s)>7/8*, **30 September 2026 preprint**, immutable source
+   [openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026).
+   External statement: zero-free zeta half-plane Re(s)>7/8.
+   Here it is only the boundary seed in the PRE-EXISTING
+   \`ThreeQuarterRefinement\`; every subsequent analytic
+   \`stageZeroFree\` remains an explicit independent hypothesis.
+   \`AsymptoticallyFree\` overhead by itself cannot produce one
+   stage's analytic nonvanishing. No external proof imported or
+   acceptance claimed.
+
+**Historical context (not imported mathematics):** Aristotle's
+proportion/change, Leibniz's derived/differential ratios and 1684
+differential formalism, Newton's fluxions/evolving fluents and Riemann's
+1851 global complex-function viewpoint are distinguished conceptually.
+The formalization chooses an actual refining equivalence relation and
+global source-reconstruction interface; it does not assert an exact
+theorem attribution or method lineage to those figures. Historical
+source links: [Newton Project, Method of Fluxions](https://www.newtonproject.ox.ac.uk/view/texts/diplomatic/NATP00356),
+[Stanford Encyclopedia, Continuity and Infinitesimals](https://plato.stanford.edu/entries/continuity/),
+[Riemann 1851 Göttingen manuscript](https://resolver.sub.uni-goettingen.de/purl?DE-611-HS-3205002).
+Classified as historical ANALOGY_ONLY, not imported theorem.
+
+### Exact local source declarations and commits
+
+- \`GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery\`:
+  [math commit f1e8f255c30c4d3568e0d888e6328e8344dd56f2](https://github.com/grwtsk/math/commit/f1e8f255c30c4d3568e0d888e6328e8344dd56f2),
+  file GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean,
+  blob **e2f6170aabf05e3a6df8f6a67009d4a8ba913379**.
+  Declarations \`DynamicRefinement\`, \`DynamicRefinement.SameAt\`,
+  \`sameAt_of_next\`, \`history\`,
+  \`history_injective_of_separating\`,
+  \`stage_factors_through_history\`, \`discreteDifference\`,
+  \`discreteDifference_constants_collide\`,
+  \`initialValue_not_factorsThrough_difference\`,
+  \`anchoredDifference\`, \`integrateDifference\`,
+  \`difference_telescoping\`, \`integrate_anchoredDifference\`,
+  \`anchoredDifference_injective\`. Hypotheses: supplied stage
+  observation/coarsening commuting for every source n, and
+  stage separation for injectivity. The integer differentiation
+  example proves distinct constant sequences collide unless
+  the basepoint is retained. Local source identity candidates only.
+- \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover\`:
+  revised main [1aa30b23564d52365ea93ce4baad9648504aee14](https://github.com/grwtsk/math/commit/1aa30b23564d52365ea93ce4baad9648504aee14),
+  file GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean,
+  blob **f0ffceafe53bcd88d6e4ae0332199335d3bafb6b**.
+  Declarations \`LabeledGraph\`, \`WordPath\`,
+  \`GraphLanguage\`, \`RunsOnGraph\`, \`fullShiftGraph\`,
+  \`every_trace_runs_on_full_shift\`,
+  \`fullShiftGraph_path_all\`, \`fullShiftGraph_language_all\`,
+  \`HasFiniteBlock\`, \`ExactLanguagePresentation\`,
+  \`IsSoficFactorLanguage\`, \`IsSoficTrace\`,
+  \`tailTrace\`, \`EventuallySoficTrace\`,
+  \`eventuallySofic_of_sofic\`,
+  \`sofic_of_exact_language\`,
+  \`fullShiftGraph_not_exact_for_constant_false\`.
+  A single full-shift path accepts every infinite trace, so
+  path acceptance is NOT a nontrivial sofic characterization.
+  Exact equality of FULL finite factor languages is required.
+  The one-sided versus bi-infinite convention is retained.
+- \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover\`:
+  revised main [82aa2a2b610d76ad4e67e0dfdc3f353810dd60a4](https://github.com/grwtsk/math/commit/82aa2a2b610d76ad4e67e0dfdc3f353810dd60a4),
+  file GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean,
+  blob **14f7e12bb6cc253a43491a96bd53182f86dafd84**.
+  Declarations \`DynamicSpectralCover\` with actual
+  \`[Fintype Vertex]\`, \`[Fintype Alphabet]\`, complex module
+  \`[AddCommGroup Spectral]\`, \`[Module ℂ Spectral]\`, supplied
+  complex-linear \`operator\`, \`spectralCommute\`, graph path,
+  \`stageCommute\` and exact decoder \`leftInverse\`;
+  \`runs_on_graph\`, \`refinement_commutes_on_trace\`,
+  \`trace_injective\`, \`readout_factors_through_trace\`,
+  \`stage_factors_through_trace\`, \`spectral_orbit_readout\`,
+  \`ExactLanguageAt\`, \`ExactLanguageAt.implies_sofic\`,
+  \`no_exact_language_at_of_nonsofic\`,
+  \`no_exact_language_at_of_non_eventual_sofic\`.
+  The local source DOES NOT construct a zeta/operator interface,
+  or prove the full language is sofic merely from a path.
+- \`GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction\`:
+  source main [8fda00ef937f8c43316d126997a686e0a6fdbffd](https://github.com/grwtsk/math/commit/8fda00ef937f8c43316d126997a686e0a6fdbffd),
+  file GRWTSK/NumberTheory/Zeta/Riemann/DynamicBombieriSoficObstruction.lean,
+  blob **a553edc13c8b85caf4db193fbca63779e286b468**.
+  Declarations \`MomentOnlyStages\`,
+  \`momentOnly_stage_collision\`,
+  \`momentOnly_history_collision\`,
+  \`no_exact_reconstruction_from_momentOnly_history\`,
+  \`trace_collision_of_momentOnly_history\`,
+  \`no_lossless_spectral_cover_after_moment_collapse\`.
+  The essential hypothesis \`∀n, FactorsThrough bombieriMomentProfile
+  (R.observe n)\` ensures EVERY new stage uses ONLY the same
+  collapsed two-moment data. The conclusion excludes any
+  left-invertible dynamic/spectral cover whose label trace itself
+  factors through that history. Enriched refinements that add a
+  different invariant are NOT excluded. Source-only obstruction,
+  not an unconditional zeta/Weil result.
+- \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion\`:
+  latest main [1880c8f80a61f03100f9506301bebfd161e03b9d](https://github.com/grwtsk/math/commit/1880c8f80a61f03100f9506301bebfd161e03b9d),
+  file GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean,
+  blob **ef37ba716cdc5bc514ce17991be957f7a574b81a**.
+  Declarations \`RationalReal\`, \`AlgebraicReal\`
+  (explicit Q-polynomial nonzero root),
+  \`CorrectRealArithmetic\` (uninstantiated normalization),
+  \`ActualZetaZero\`, \`zetaHeight\`,
+  \`ZetaCriticalPlacement\`, \`ZetaSoficSuppliers\`,
+  \`zeta_zero_ordinate_irrational_without_GRH\`,
+  \`zeta_zero_ordinate_transcendental_on_line\`,
+  \`actual_zeta_zero_irrational_and_conditional_transcendental\`,
+  \`ordinate_split_for_dynamic_spectral_cover\`,
+  \`ZetaEventualSoficSuppliers\`,
+  \`irrational_of_eventual_language_obstruction\`,
+  \`eventual_sofic_irrational_and_conditional_transcendental\`,
+  \`eventual_ordinate_split_for_dynamic_spectral_cover\`,
+  \`DynamicThreeQuarterSoficProgram\`,
+  \`DynamicThreeQuarterSoficProgram.zeroFree_strict_threeQuarters\`.
+
+### Exact conclusion limits
+
+The zeta-specific conclusion is **CONDITIONAL** on
+\`rationalEventually\` and \`noEventuallySoficZero\`, proving
+\`¬ RationalReal (z.im)\` *without* GRH. To conclude
+\`¬ AlgebraicReal (z.im)\`, independently supply
+\`algebraicOnLineEventually\` and
+\`ZetaCriticalPlacement\` (the zeta critical-line component of
+a correctly stated GRH, rather than GRH itself being proved).
+No algebraic/rational ordinate has been shown to force soficity,
+no actual zeta trace has been shown nonsofic, and no L-function
+zero-height arithmetic theorem has been proved.
+The 7/8 -> 3/4 half-plane interface still has an explicit
+\`stageZeroFree\` premise at every refinement level; negligible
+overhead does not construct those analytic estimates.
+
+**Relationship classification:** LOCAL_IDENTITY_SOURCE_CANDIDATE
+for finite graph, dynamic quotient and difference identities;
+conditional graph/spectral and moment-preserving no-go interfaces;
+finite symbolic full-shift FALSE-POSITIVE witness (not actual
+arithmetic evidence); ANALOGY_ONLY for historical calculus,
+Huffman and heat semantics; UNRESOLVED_PREMISE for source-defined
+infinite spectral operator, exact zeta symbolic trace, valid
+analytic stages, arithmetic-to-eventual-sofic implications,
+non-eventual-soficity and real geometric/topological limits.
+No \`IMPORTED_EXACT_THEOREM\` from the above recent papers is used,
+and no \`PAPER_TO_LEAN_BRIDGE_PROVED\` is claimed.
+
+### Verification, commands, actual results
+
+Source readback with exact blobs above: **performed**.
+Direct declaration-level \`sorry\`/\`admit\`/\`axiom\` text scan:
+**zero added declarations** in the five new files, not a transitive
+trust audit. Lean and Lake were absent in this authoring container.
+Lean toolchain \`leanprover/lean4:v4.33.0\` and Mathlib
+\`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+The following are **NOT_RUN** and have no source-bound exit-zero
+receipts: \`lake build --wfail\` for each target and full imports;
+\`lake env lean\` direct elaboration; \`lake env lean --trust=0\`;
+independent fresh kernel replay of all \`.olean\` objects and
+transitive dependencies; \`#check\` and \`#print axioms\` of
+every public theorem; full generated/opaque/unsafe/\`sorryAx\` audit.
+Effects, runners, and actual immutable receipts belong in
+\`grwtsk/noeaaeue\`, not in math. No Railway, force push, or
+unauthorized remote execution. Do not promote into GRWTSK.lean
+or claim a proved zero property until that closure is checked.
+
+
+## Case DYNAMIC-SOFIC-EXACT-LANGUAGE-20261023 — finite graph admission is not finite-state reconstruction
+
+### Source identity and exact mathematical result
+
+This is a **new repository-derived 2026 algebraic/information-theoretic source
+candidate**, not an imported proof of a published sofic theorem. The source
+credits mathematical direction to grwtsk contributors and formalization
+assistance to OpenAI, while maintaining the original authorship of external
+papers and imported source code. The precise source-of-truth note is
+[`dynamic-sofic-exact-language-boundary.md`](dynamic-sofic-exact-language-boundary.md).
+
+- `GRWTSK/NumberTheory/Farey/DynamicSoficExactLanguageBoundary.lean`,
+  initial main integration [`fa9a047832ea4ae811323b468b3c53958e784e12`](https://github.com/grwtsk/math/commit/fa9a047832ea4ae811323b468b3c53958e784e12),
+  Git blob `79d749e6d8ca99825df9e98305532454e0c446f1`.
+- `GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean`,
+  initial main integration [`f861e545096408ab1768f0c1ff438645efbfafbb`](https://github.com/grwtsk/math/commit/f861e545096408ab1768f0c1ff438645efbfafbb),
+  Git blob `5e52e67b72a1f4d1ee214442114d7f452e2395e6`.
+- Previously concurrent genuine dynamic/sofic source,
+  `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`,
+  Git blob `8210e2055447ebbe482a7122d21ee09177c3b1c0`,
+  and `GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean`,
+  Git blob `e2f6170aabf05e3a6df8f6a67009d4a8ba913379`,
+  remain intact. The latter already separates unrecoverable unanchored
+  difference data from exact reconstruction using the initial anchor.
+
+**Precise hypotheses and theorem claims.** A finite labeled graph has
+a finite vertex type, an alphabet with a `Fintype` instance, an explicit
+initial vertex, and an `edge : Vertex → Label → Vertex → Prop`
+relation. An admitted word has an actual finite path. The one-vertex
+graph allowing all labels admits **every prefix of every infinite
+trace**, proving that **admissibility of a single trace is no
+non-soficity obstruction**. The full-shift graph also accepts `[true]`,
+which is not a prefix of the constant-false trace: graph admission and
+*exact singleton-prefix-language recognition* differ.
+
+The stronger predicate
+`EventuallyExactPrefixPresented` requires **some** finite initial
+shift and an actual graph that accepts precisely and only the finite
+prefixes of the remaining trace. This is intentionally stronger than
+mere graph-path admission and is **not** presented as a general
+characterization of standard sofic subshifts or follower languages.
+
+A `GrowingRefinement` consists of cells
+`Fin (size n + 1)`, explicit source-to-stage maps, coarsening maps
+between adjacent stages, a finite stage transition and two
+commuting squares; it proves that an already distinguished pair cannot
+merge at the next compatible refinement. A
+`CommutingLosslessGraphCover` supplies a spectral lift with a total
+left inverse, source/spectral step commutation, a graph projection and
+actual path-label witnesses. Its spectral lift is injective and carries
+every declared source readout, while a finite graph projection can
+lose information. The typed `GrowingSoficSpectralDiagram` records
+the partition-to-graph projection and obstructs decoding from a
+colliding graph vertex. An
+`AnalyticDynamicSoficPipeline` includes the already conditional
+`ThreeQuarterRefinement` as a distinct field: zero-freeness to the
+strict right of `3/4` still REQUIRES every stage estimate and the
+cofinality premise, and cannot be generated by negligible overhead.
+
+Finally the `OrdinateExactLanguageSuppliers` structure uses explicit
+`HeightArithmetic` predicates, zero/critical-line predicates, a
+height and labeled trace, and THREE **unsupplied** mathematical
+assertions: rational height `→` eventual exact presentation,
+algebraic critical-line height `→` eventual exact presentation,
+and no eventual exact presentation for each selected trace. Given
+these, irrationality follows **without GRH**. A separate predicate
+`GRHFor` supplies critical-line placement and, **only in conjunction
+with the two independent arithmetic/non-presentation premises**,
+relative transcendence. GRH itself gives no transcendence.
+
+### Fully qualified Lean declaration map
+
+Namespace
+`GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary`:
+
+- Stage/motion layer: `StageCells`, `GrowingRefinement`,
+  `GrowingRefinement.distinction_persists`.
+- Literal sofic layer: `RootedSoficGraph`,
+  `RootedSoficGraph.asSoficGraph` (adapts to the existing
+  `DynamicSoficSpectralCover.SoficGraph` edge type),
+  `LabeledPath`, `Accepts`, `prefix`, `AdmitsStream`,
+  `ExactPrefixPresented`, `EventuallyExactPrefixPresented`.
+- Hostile sofic cases: `fullShiftGraph`, `fullShift_path`,
+  `every_stream_admitted`, `no_universal_prefix_rejection`,
+  `fullShift_not_exact_for_constant_false`.
+- Spectrum: `CommutingLosslessGraphCover`,
+  `CommutingLosslessGraphCover.lift_injective`,
+  `CommutingLosslessGraphCover.readout_factors`,
+  `CommutingLosslessGraphCover.no_recovery_after_collision`,
+  `emittedWord`,
+  `CommutingLosslessGraphCover.emittedWord_is_path`.
+- Dynamic source-to-graph diagram: `GrowingSoficSpectralDiagram`,
+  `GrowingSoficSpectralDiagram.graph_projection_collision`,
+  `GrowingSoficSpectralDiagram.no_vertex_only_decoder`.
+- Conditional analytics: `AnalyticDynamicSoficPipeline`,
+  `AnalyticDynamicSoficPipeline.limit_zeroFree`,
+  `AnalyticDynamicSoficPipeline.ordinate_from_spectrum`.
+- Arithmetic contradiction schema: `OrdinateExactLanguageSuppliers`,
+  `OrdinateExactLanguageSuppliers.irrational_without_grh`,
+  `OrdinateExactLanguageSuppliers.grh_critical_and_transcendental`.
+
+Namespace
+`GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary`:
+
+- `twoMoment_corrected_zero_collision`: exact nonzero corrected cofactor
+  and zero have the same actual stage-2/3/4 ordinary/reciprocal
+  `bombieriMomentProfile`.
+- `momentRefinementHistory`: dependent complete infinite sequence of
+  finite stage cells `(n : ℕ) → StageCells R.size n`.
+- `EveryStageUsesOnlyBombieriMoments`: each stage factors through
+  precisely the same `bombieriMomentProfile`, with an arbitrary
+  potentially different stage decoder.
+- `moment_only_history_collision`: those TWO source vectors have
+  identical FULL infinite partition histories.
+- `no_left_inverse_of_moment_only_refinement_history`: there is NO
+  decoder from the entire history back to the original coefficient
+  source, regardless of growing finite capacities.
+- `separating_readout_not_from_moment_only_history`: an arbitrary
+  source readout separating that pair cannot factor through
+  the same history (conditional separation hypothesis explicit).
+- `no_lossless_graph_cover_from_moment_only_history`: a commuting,
+  left-invertible spectral lift cannot factor through a moment-only
+  full history.
+- `no_lossless_graph_cover_from_two_moments`: the same obstruction
+  directly for arbitrary spectral postprocessing of the two moments.
+- `no_source_decoder_from_bombieri_huffman_packets`: an actual
+  `GRWTSK.InformationTheory.Huffman.encode` packet built from
+  arbitrary moment-to-byte preprocessing does not admit a total
+  decoder for the ORIGINAL coefficient source. The byte-level
+  `decode_encode` theorem remains valid.
+
+**Exact source hypothesis.** The last eight claims consume the
+unchanged canonical square-tent finite coefficient source
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile`
+and `bombieriMomentProfile_correctedCoordinates` (blob
+`9a2435d9c74b89ce1434c45bade1aa9beaa6cead`), the explicitly
+nonzero `correctedCoordinates`, and the actual current Huffman packet
+source `GRWTSK.InformationTheory.Huffman.RoundTrip` (blob
+`07e1a9a291bd5002fc8e2dceed980242ba0752ec`).
+The intervening `BombieriHuffmanLosslessBoundary` source is
+blob `901939ee5cce378631d0aad819fdf6fdb4a4775c`.
+No full Weil test space, analytic Bombieri criterion, zeta zero or
+Möbius/canonical Sarnak trace is assumed to have been constructed.
+
+### Exact literature identification and methodological boundaries
+
+1. **Benjamin Weiss**, *Subshifts of finite type and sofic systems*,
+   `Monatshefte für Mathematik` **77** (1973), 462–474.
+   DOI [10.1007/BF01295322](https://doi.org/10.1007/BF01295322).
+   **Exact method used:** the finite labeled graph/sofic system
+   distinction, motivating finite-path language representation.
+   **Hypotheses imported:** none of Weiss's classification or
+   ergodic conclusions; the graph edge and path types are freshly
+   encoded in Lean. Role: `methodological-analogy` plus
+   `source-proof-candidate`, NOT a direct theorem translation.
+2. **David A. Huffman**, *A Method for the Construction of
+   Minimum-Redundancy Codes* (1952).
+   DOI [10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898).
+   **Exact method:** prefix/packet reconstruction, not optimality
+   or expected byte length. The actual GRWTSK Huffman `RoundTrip`
+   source supplies an exact decoder; the new result proves that
+   such a decoder cannot restore an earlier collapsed moment source.
+3. **Enrico Bombieri**, *Problems of the Millennium: the Riemann
+   Hypothesis* (2000; Clay collected 2006), section V pp. 8–9,
+   [source](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf),
+   and *Remarks on Weil's quadratic functional in the theory of
+   prime numbers, I* (2000), [archival record](https://www.bdim.eu/item?id=RLIN_2000_9_11_3_183_0),
+   MR1841692. **Exact source extraction:** the ordinary and
+   reciprocal moments on the deliberately finite stage-2/3/4
+   corrected square-tent coefficient model. **Not imported:** the
+   complete function space `W`, the full Weil positivity theorem or
+   its exact prime/archimedean/zero summation and signs.
+4. **Brad Rodgers and Terence Tao**, *The De Bruijn--Newman constant
+   is non-negative* (2018 preprint, 2020 published),
+   [arXiv:1801.05914](https://arxiv.org/abs/1801.05914).
+   Zero-dynamics heat deformation is ONLY background for the abstract
+   reversible process comparison, not a proven source identity
+   with a Huffman or sofic finite labeled graph.
+5. **OpenAI**, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+   Re(s)>7/8* (30 September 2026), stable source
+   [`openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a`](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026).
+   `7/8` is a supplied analytic seed; subsequent cofinal stages
+   toward `3/4` are UNPROVED, not free consequences of stage cost.
+6. **Aristotle**, *Physics* III.1 (ancient text,
+   [English translation](https://classics.mit.edu/Aristotle/physics.3.iii.html));
+   **Gottfried Wilhelm Leibniz**, *Nova methodus pro maximis et
+   minimis* (1684, `Acta Eruditorum`, pp. 467–473,
+   [bibliographic description](https://proofwiki.org/wiki/Book%3AArticle/Gottfried_Wilhelm_von_Leibniz/Nova_methodus_pro_maximis_et_minimis));
+   **Isaac Newton**, *The Method of Fluxions and Infinite
+   Series* (1736 published edition,
+   [Library of Congress](https://www.loc.gov/item/42048007/));
+   and **Bernhard Riemann**, nineteenth-century global
+   analytic/geometric viewpoint. This is a `historical-analogy`
+   about change, ratios, fluxional evolution and global compatibility
+   ONLY. No claim of direct historical influence, equivalence of
+   mathematical methods, or imported analytic lemma is made.
+
+### Verification status and operational boundary
+
+**Neither new leaf has yet been compiled or kernel checked.**
+
+- Source integration, immutable blobs and file readback: **available**,
+  with exact identities given above. A source scan reported no
+  literal `sorry`, `admit` or `axiom` lines. Source scans
+  are **not** compiler or kernel acceptance; they cannot rule out
+  hidden `sorryAx`, generated axioms or incorrect imports.
+- Independent **finite evidence**: enumeration of 8191 Boolean
+  words of lengths 0–12 admitted by the one-state full-shift graph,
+  and the one-word `[true]` hostile witness for exact
+  all-false-prefix recognition. This finite check is not a Lean
+  replay or a proof of any analytic trace property.
+- Lean `leanprover/lean4:v4.33.0`; Mathlib
+  `db584cd6d46c92f209a44c0f1c829460d327499d`
+  according to existing repository pins.
+- `lake env lean GRWTSK/NumberTheory/Farey/DynamicSoficExactLanguageBoundary.lean`:
+  **NOT_RUN**.
+- `lake env lean GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean`:
+  **NOT_RUN**.
+- `lake build --wfail GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary`:
+  **NOT_RUN**.
+- Fresh trust-zero kernel replay, transitive axiom audit, complete
+  import-closure and source-blob receipt: **NOT_RUN / unavailable**.
+- Exact source-bound verification request is a separate GitHub issue;
+  runners, receipts and process state belong in `grwtsk/noeaaeue`,
+  never in mathematical source.
+
+**Classification:** `imported-mathematics`: only already present
+Huffman packet proof and Bombieri finite coefficient algebra;
+`kernel-verified-bridges`: none newly claimed;
+`source-proof-candidates`: graph/paths, dynamic refinement,
+all-stage information-loss lemmas, literal Huffman postprocessing
+no-go; `conditional-interfaces`: left-invertible spectral
+process, 7/8→3/4 stage estimates, correct zero ordinate readout,
+real algebraic/rational height predicates, actual arithmetic-to-exact
+finite graph bridges and all-graph non-presentation;
+`finite-evidence`: Boolean enumeration only; `analogies`:
+Rodgers--Tao heat/codec and historical ratio/differential/fluxions;
+`unresolved-premises`: ALL analytic and number-theoretic
+source transport, stage construction and non-soficity claims.
+
+**Precise missing mathematics:** an actually zero-indexed heat/Dirichlet
+trace and left-invertible source process; finite-stage arithmetic
+invariants not all reducible to two Bombieri moments; an actual
+source-preserving zero/ordinate spectral readout with multiplicities;
+rational-height-to-eventual-EXACT language and algebraic-critical-
+height-to-eventual-EXACT language suppliers; non-eventual-exact
+presentation for the intended trace against **every** finite graph;
+a `HeightArithmetic ℝ` with genuine rational/algebraic predicates;
+independently valid analytic zero-free bounds for EACH stage
+cofinal above 3/4, plus a separate full Weil/Hodge correspondence
+if positivity is the endpoint. Neither GRH nor full-shift graph
+admission discharges any of these suppliers.
+
+
+
+## Case ZETA-SPECTRAL-GRH-BRIDGE-20261023
+
+Source module:
+`GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`.
+
+Source integration commit:
+`13d3e49454c23f825ce730be569856daea2cb3e4`.
+
+Source blob:
+`0c69c768eca979698ece63c39ba0b9a50a33ba3a`.
+
+### Source relation
+
+No external paper theorem is newly imported in this increment. The module
+specializes already integrated local interfaces to the actual selected
+Riemann-zeta zero predicate from
+`ZeroOrdinateSoficLanguageCriterion.lean`. Previously recorded Rodgers--Tao,
+Huffman, OpenAI quasi-RH, and symbolic-dynamics references remain attached to
+their predecessor modules and are not promoted to stronger claims here.
+
+### Formal declarations
+
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates`
+
+### Exact hypotheses
+
+The forward family transport requires a
+`SpectralCoverFamily zetaZeroProblem family`: every generalized zero must map
+to an actual selected zeta zero and zeta criticality must pull back to the
+generalized critical locus.
+
+The reverse direction requires a typed
+`BaseSpecialization zetaZeroProblem (family i0)` for one generalized member,
+including an actual zero embedding, zero preservation, and reflection of
+criticality. The resulting equivalence is therefore conditional; it is not an
+unconditional `GRH = RH` theorem.
+
+The combined ordinate theorem additionally requires a supplied
+`DynamicSpectralCover`, rational/algebraic-to-eventual-sofic interfaces, and
+non-eventual-soficity of the actual selected zeta traces.
+
+### Classification
+
+- **Imported local mathematics:** actual zeta zero predicate, dynamic spectral
+  cover, exact-language/sofic interfaces, and typed spectral zero-cover
+  abstraction.
+- **Kernel-verified bridges:** none claimed for this source commit.
+- **Source proof candidates:** all declarations listed above.
+- **Conditional interfaces:** spectral-cover family, base specialization,
+  dynamic spectral process, arithmetic-to-sofic suppliers, and
+  non-eventual-soficity.
+- **Finite evidence:** none introduced.
+- **Analogies:** none promoted to theorem in this increment.
+- **Unresolved premises:** every concrete generalized spectral map,
+  criticality transport, specialization, and arithmetic/sofic supplier.
+
+### Verification
+
+For source commit
+`13d3e49454c23f825ce730be569856daea2cb3e4`:
+
+- source creation and exact blob readback: **performed**;
+- `lake env lean GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`:
+  **NOT_RUN**;
+- `lake build GRWTSK.NumberTheory.Zeta.Riemann.ZetaSpectralGRHBridge --wfail`:
+  **NOT_RUN**;
+- fresh kernel replay: **NOT_RUN**;
+- transitive axiom/`sorryAx`/unsafe audit:
+  **NOT_RUN / NOT_KERNEL_AUDITED**;
+- external verification receipt: **unavailable**.
+
+Source inspection is not compiler or kernel acceptance.
+
+
+**Commit-pinned verification queue for case DYNAMIC-PARTITION-SOFIC-LANGUAGE-ORDINATE-20261023:**
+[math issue #1167](https://github.com/grwtsk/math/issues/1167) for
+actual labeled graph/dynamic partition/spectral cover,
+[math issue #1168](https://github.com/grwtsk/math/issues/1168) for
+the source-canonical Bombieri collision and zeta-ordinate
+conditional arithmetic split. Immutable source-and-provenance
+snapshot **28b8048fbb60a2405bbe6b4bdf6560f7cdabe2b7**.
+Both issues are OPEN and all compiler, fresh kernel and
+transitive axiom checks are **NOT_RUN**; no executed receipt exists.
