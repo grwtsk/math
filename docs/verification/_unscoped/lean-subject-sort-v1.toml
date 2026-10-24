@@ -28,17 +28,17 @@ timeout_seconds = 7200
 # human review.  Digest drift invalidates the exception before classification.
 [[review_overrides]]
 path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/OutputFlipSignCorrelation.lean"
-source_sha256 = "2bcf657ea63d5e20d3f970bae9bee20a18bb8585e984a0e8f3ad535089e17e7c"
+source_sha256 = "075ec3a2364ef35477b0971432473251e3197344d0214736ff9b2e19c5770386"
 reason = "expectation and probability content is not justified as algebra by a generic import"
 
 [[review_overrides]]
 path = "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
-source_sha256 = "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+source_sha256 = "74c98d3a08bcf080acc07ddb3bc12c1eceda068c768936a24bfa00d1a4a7be59"
 reason = "current owner declarations and audits bind this exact module occurrence"
 
 [[review_overrides]]
 path = "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean"
-source_sha256 = "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05"
+source_sha256 = "e22e8035988db5cdb63e2915dc7aa240d02bd3d2f037943b91f66fcdaafaf72a"
 reason = "current owner and result contracts bind this exact module occurrence"
 
 [[review_overrides]]
@@ -53,27 +53,27 @@ reason = "mixed whole-library proof audit has no dominant whole-file subject"
 
 [[review_overrides]]
 path = "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/Bijections/ExplicitFieldRepresentationTransport/Variant7b67a64e7cab240c/TransportToBits.lean"
-source_sha256 = "7f4683ea975bf7a38dba9566b71a4a61581a0f397386cd64f49d40b170b5e16a"
+source_sha256 = "f3ad8ae42bbe07bd264049f9922351c538007181c3ae98e23bbcc24ecaf6b38a"
 reason = "generic transport across a supplied equivalence does not establish field or algebra subject placement"
 
 [[review_overrides]]
 path = "GRWTSK/Geometry/ConvexGeometry/ConvexSets/ConvexHulls/FiniteConvexCombinations/BarycentricCoefficients/FiniteSimplexGammaAndObservation/Variant5cc54b9c520347b4/FiniteRefinementParametersAndPoints.lean"
-source_sha256 = "e8720d893b82d8f6c37c6ae55d0bcd0876ec9c52f9e1ebdecd0da95ca3e03a70"
+source_sha256 = "d434f3efd98279fabcb815037077c0afa94c78eaa75731baaf934224ce2c8660"
 reason = "finite simplex weights admit geometric and probabilistic readings, so a whole-file probability placement is not sufficiently justified"
 
 [[review_overrides]]
 path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/PrefixCoverage.lean"
-source_sha256 = "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+source_sha256 = "74c98d3a08bcf080acc07ddb3bc12c1eceda068c768936a24bfa00d1a4a7be59"
 reason = "finite-sequence recurrences and coverage bounds do not establish an analysis subject placement"
 
 [[review_overrides]]
 path = "GRWTSK/Data/Sampling/Descriptions.lean"
-source_sha256 = "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f"
+source_sha256 = "d020aa1e4e686086eea4d6ba0c6aa321d9ff807cb621dd19abf25c674d1ed575"
 reason = "role and metadata records do not establish an analysis subject placement"
 
 [[review_overrides]]
 path = "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods/QuantifierElimination/EliminationData/Sampling/Descriptions.lean"
-source_sha256 = "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f"
+source_sha256 = "d020aa1e4e686086eea4d6ba0c6aa321d9ff807cb621dd19abf25c674d1ed575"
 reason = "role and metadata records do not establish an analysis subject placement"
 
 [[subject_profiles]]
@@ -180,12 +180,12 @@ namespace_prefixes = ["GRWTSK.Topology"]
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/AlmostMathieu.lean"
-source_sha256 = "17f2e239543cd7031a42d8d317cb69e18780a6c525fa9dc8c27d0f381b0883ff"
+source_sha256 = "2857809dee0c7a93715a0d0cd54fca7c298da336900b41913f3af8a091660180"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/CommonJCounterexamples.lean"
-source_sha256 = "4bed27e7c490006f93c462cee2e088c9d6655678da35d1e926a7d3cd75d3a892"
+source_sha256 = "47ed1f22a56e797ced844caef2019bffb8228e917d73f2ab318726af7e26776a"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
@@ -195,17 +195,17 @@ reason = "accepted mathematical subject placement is preserved by merge ab3e70df
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
-source_sha256 = "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e"
+source_sha256 = "0fa110d3a0c14635a38b19ed35c5112ac320fb35f2f53708b31c63858bbf3584"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/FiniteBooleanStructure/Variant3fe87eee19f8fad0/InvolutiveLinearEquivalence.lean"
-source_sha256 = "bb9ddccce898aa654d5c08485f0b85e83d119c88bba3fa28dc1e68f3186d9cc2"
+source_sha256 = "a7f516cae1bfc4d98ea4a131a3d4b5fb3ce1f61c024279b833c2ba4f7eb9302e"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/JacobiTransfer.lean"
-source_sha256 = "6c265b45514cc6a7f891599c0fc883a65cd3d2007a6bff4c8c329142ff964a48"
+source_sha256 = "73231b6e456d5e35831c66f11e6277ae9eee99e86f6df008b1624a0225d69484"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
@@ -215,17 +215,17 @@ reason = "accepted mathematical subject placement is preserved by merge ab3e70df
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean"
-source_sha256 = "f41b47de66e4be14fcf2dfb3c8c81cd438ceafb06fecd2935d90c6962fbb4632"
+source_sha256 = "24d434b242593656c6a7fc2c80b5c0375b673e375651853351be08c7200c1128"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
-source_sha256 = "de07a1a59c53ba6917090253f58cccc9daf289b48f98f0dfde16aa061182a8d9"
+source_sha256 = "4d633563e4befbab5989754694b6c9caf0f402e43ce6f685b230516b681a5dfb"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/SingularCongruenceObstruction.lean"
-source_sha256 = "7899d4d071aba9e9e84de316cbc902b24dbd0589041b6e11f53d40036ed20677"
+source_sha256 = "f9cca2260c5eb576e6062086a1b57a1ac01355a8de8d10db0da3e7afa88342e0"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
@@ -235,32 +235,32 @@ reason = "accepted mathematical subject placement is preserved by merge ab3e70df
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/SchrodingerTransfer.lean"
-source_sha256 = "25f93a03bb8e1b5df2f73c782160ed9f356f592c6cca4e56c92cde7fd974969d"
+source_sha256 = "016b44346fb6c07748a3129bc049ec821bf1963c99c79ff7409017230756ebd6"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/Sturmian.lean"
-source_sha256 = "1351cb694038a4696dc59fa29dca2bc76ee75612169e6f6589c8a22b88cc456d"
+source_sha256 = "b016011a349e293102ad67d969ffd002ae1337bdb87adbe78bd13ca00c805da2"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean"
-source_sha256 = "60a0800b62f570782227e57e7ccedba38c1db2a343724ff0951a113c9ac09044"
+source_sha256 = "42b26eb217805f708dd00719b094ba96ee390de615789f82b93d52514282e1fc"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Analysis/MeasureTheory/IntegrationTheorems/RadonNikodymTheorem/GammaDirichletPacketTransport/Variant26c780c4c6e69c9f/SuppliedChangeOfMeasure.lean"
-source_sha256 = "ad240f06f989d65a389d111bc71bc8fde1bd74884f994260167667c3fcb0f16b"
+source_sha256 = "a4930db5d6e67975fe8eb1d6660ead7cfda7aa34f364e80c37584788f93f66f6"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/Analysis/OperatorTheory/SpectralTheory/FreeDirichletSpectrum.lean"
-source_sha256 = "381cefa333b6202d49e45284e32fa39b62a54f1e2f8253ef128d33e0bf8c1d4a"
+source_sha256 = "8189962d68fbbfa2a8925c2ca0da35e1bc87beb7a7b6f3185b2787d9296c2fd9"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations/FiniteCycleAndAvalancheCounterexamples/Variant3c830f470ac69f39/ZeroAvalancheCounterexamples.lean"
-source_sha256 = "f71aa480c7610e752ca5a39dec32cc88db7863bdc7f066a9d42783cdf340fb47"
+source_sha256 = "3239905b8977bc081f5350f0ebde2e6dfe5d025724e2cab14877a38323fa292b"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
@@ -275,27 +275,27 @@ reason = "accepted mathematical subject placement is preserved by merge ab3e70df
 
 [[review_overrides]]
 path = "GRWTSK/NumberTheory/Moebius/LaplaceDirichletSeries.lean"
-source_sha256 = "8d81ba7f79fd0eabd4ee4c900553039b93e7171e9d7ee60ac4222175d4204242"
+source_sha256 = "539ca374e1520cff81ee07066bc4b2a71472fe941bf5881cf6ffd90a2be74744"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/NumberTheory/Moebius/PolynomialLaplaceHolomorphy.lean"
-source_sha256 = "f3387bbcc69c0f89cd2c071a6b2d8dd95d69240f393bf18774dba90a1d1773b1"
+source_sha256 = "688e3e75c0ab8d78614404bb45f28b9a477b1bbbb5e3f650b538c0bcabe92a1a"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/MeasureConstructions/ProductProbabilities/FiniteSimplexGammaAndObservation/Variant5cc54b9c520347b4/IndependentGammaProductLaw.lean"
-source_sha256 = "434fd01c36e41d456c4597e4a418747e7b11131db21578b80d5bac7764ed5f6d"
+source_sha256 = "1cd9a346abe5f48949b1deaf634fc7e8249f038a5a8dd51af51e95ea4eee1dc8"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/ProbabilityMeasures/FiniteAtomicPackets/Variante4efdc9c8d172f77/AtomicProbabilityMeasure.lean"
-source_sha256 = "56f5f30b966478ad7f7d4077cd482b566d39e9ab7e2929aff28cd26cedf6bcdf"
+source_sha256 = "4e01db03d1ae93b9125801fe8663bd2103c35cb329732a9352bad13d888db33d"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[review_overrides]]
 path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/ProbabilityMeasures/FiniteAtomicPackets/Variante4efdc9c8d172f77/TaggedMixtureMeasureEquality.lean"
-source_sha256 = "723824eedb3b9b0d3171fa464ae67675792d03a9fcd01e56b856b74ba022938d"
+source_sha256 = "92af595e38fb26f41dbcdb022215e0424a7a362ea4d99d4a78bf6adac75fc4a2"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
 
 [[filename_overrides]]
@@ -306,33 +306,33 @@ reason = "Complete-file editorial review: precise basename; accepted mathematica
 
 [[filename_overrides]]
 path = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
-source_sha256 = "ba3c0a4ddd3c137fdd803d4ba8aae2c1f42fb373a64e5e7bab797ab44b8dfbee"
+source_sha256 = "99172709bb9b2b2721b901e8dd174b0a61e56ea69d2ac97e78a622106832ab29"
 filename = "EqualTotalDifferentDiagonal.lean"
 reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
 
 [[filename_overrides]]
 path = "GRWTSK/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
-source_sha256 = "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e"
+source_sha256 = "0fa110d3a0c14635a38b19ed35c5112ac320fb35f2f53708b31c63858bbf3584"
 filename = "RankOneDeterminantEncoding.lean"
 reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
 
 [[filename_overrides]]
 path = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
-source_sha256 = "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e"
+source_sha256 = "0fa110d3a0c14635a38b19ed35c5112ac320fb35f2f53708b31c63858bbf3584"
 filename = "RankOneDeterminantEncoding.lean"
 reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
 
 [[filename_overrides]]
 path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonRegularPart.lean"
-source_sha256 = "d3e01c7d890af6604e58d74e57d8dfe3ede01c8383d63e6179f584645bd76910"
+source_sha256 = "3dcf1277d3b03853b028580d6b033ad93652ea83dee2ea7c7f07953d1f3cf992"
 filename = "ConcreteNewtonPoleSubtractedBounds.lean"
 reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
 
 [[consumer_rewrites]]
 path = "docs/reference/library-summary.json"
-source_sha256 = "6da15a3cf145b13571a947feb86dc93408886a8873e08f99eead1e8f3e022f0b"
+source_sha256 = "0240f67d5eaf7ff6ec107124be5c69b235e8c5642ea5a2b31651cdaa1dff4797"
 reason = "Exact current filename consumer; pinned historical fields retained"
-target_sha256 = "8b4a9a78110369d0071ae36b292d2687c58a8559dc47e51c334528482f983fb9"
+target_sha256 = "11204b424e78d9da212df81aac67159248790d7ae11104da1bbde1919c53d244"
 [[consumer_rewrites.edits]]
 start = 72032
 end = 72088
@@ -368,36 +368,36 @@ pointer = "/source_paths/466"
 
 [[consumer_rewrites]]
 path = "docs/reference/math-source-catalog.json"
-source_sha256 = "ab66635c7c23b73905f81e23383be5ecf3f10381dbf4f3c73becdd95be550da4"
+source_sha256 = "42edfedb227cbf81577cde3792fc589ee9f96e9ee8e53b77320ff23c59216d1b"
 reason = "Exact current filename consumer; pinned historical fields retained"
-target_sha256 = "08ca83ddbfd49c97f44a4299bef1e6d3a56f460a5027576dcb6abc38b75a50bc"
+target_sha256 = "165818f6704788ad264a567fa217d0a571b330108ed3fb8b98b31da30ee890c1"
 [[consumer_rewrites.edits]]
-start = 269669
-end = 269725
+start = 269671
+end = 269727
 old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
 new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
 source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
 target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
 pointer = "/current_source_observations/sources/2/path"
 [[consumer_rewrites.edits]]
-start = 240462
-end = 240513
+start = 240464
+end = 240515
 old = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
 new = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
 source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
 target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
 pointer = "/current_source_observations/public_entrypoint_closure/2"
 [[consumer_rewrites.edits]]
-start = 521964
-end = 522022
+start = 521966
+end = 522024
 old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
 new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
 source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
 target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
 pointer = "/current_source_observations/sources/465/path"
 [[consumer_rewrites.edits]]
-start = 255510
-end = 255563
+start = 255512
+end = 255565
 old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
 new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
 source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
