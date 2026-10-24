@@ -288,6 +288,40 @@ They do not assert a build, fresh kernel check, axiom acceptance or
 remote dispatch. The real finite Python receipt cited above is
 a distinct, source-bound, off-kernel evidence artifact.
 
+## 8. Downstream real-measured mixing-to-return source supplier
+
+A separate mathematical source increment
+[`CatMapMeasuredMixingTransport.lean`](../../../../GRWTSK/NumberTheory/Farey/CatMapMeasuredMixingTransport.lean)
+now provides a SOURCE_ONLY theorem deriving this module's
+`EventualOpenMixing` and `HasOddLocalReturns` from the
+**exact real measure correlation limit**
+`HasRealSetMixing T μ` plus **positive real measure of every
+nonempty open set** `HasPositiveOpenRealMass μ`.
+Its full local declaration name is
+`GRWTSK.NumberTheory.Farey.CatMapMeasuredMixingTransport.no_continuous_cat_phase_extension_of_realSetMixing`.
+First source commit
+`d616f89179e541ee6669f3cbacc9202f1418c8a8`,
+blob `3dbe401843fd2609231dc20ab77a430d1692a433`;
+math acceptance request
+[math #1152](https://github.com/grwtsk/math/issues/1152),
+execution handoff
+[noeaaeue #394](https://github.com/grwtsk/noeaaeue/issues/394),
+pinned at
+`c5ed3a83de29986cc60dbad098faa82f17e48014`.
+
+This **closes the generic logical link in source only**.
+Neither actual `HasRealSetMixing catTorus μ` nor
+actual `HasPositiveOpenRealMass μ` is proved for a
+concrete normalized local Haar measure. The external
+Morgenstern measured-mixing theorem has not been
+imported into the local, different Lean/Mathlib
+environment, and the map/measure identities
+remain unchecked. Thus this does **not** establish
+an unconditional continuous-phase obstruction,
+a verified cross-repository theorem, or a KS
+entropy claim. All new Lean compilation/kernel/
+transitive axiom checks remain **NOT_RUN/PENDING**.
+
 ## 8. Precisely missing suppliers
 
 1. For unconditional no-extension: prove
