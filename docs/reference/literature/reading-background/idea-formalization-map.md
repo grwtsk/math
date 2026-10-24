@@ -8000,3 +8000,5 @@ Next implementation pass: [rank-one Hecke, finite variance and convergent local 
 Next implementation pass: [normalized rank-one basis, approximate covariance and signed local orders by taxonomy](obligation-implementation-progress-v4.md). Four optional/corrective obligations completed; fourteen verified partial results; eighteen unresolved obligations.
 
 Next implementation pass: [rank-one bar, probability tails, local-order comparison and retraction projector by taxonomy](obligation-implementation-progress-v5.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+
+Next implementation pass: [concrete Laurent bar, retraction splitting and probability convergence by taxonomy](obligation-implementation-progress-v6.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
