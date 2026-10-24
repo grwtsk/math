@@ -311,4 +311,35 @@ theorem norm_finitePsiResidue_sub_main_dirichlet_le
   rw [card_complexDirichlet_eq_totient q] at h
   exact h
 
+
+/-- Convert the concrete complex Dirichlet psi estimate into a
+totient-scaled theta estimate, retaining the prime-power correction. -/
+theorem norm_finiteTheta_sub_main_dirichlet_le
+    (q N r : ℕ) (hq : 0 < q) (hr : r < q)
+    [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ) (ha : (a : ZMod q) = (r : ZMod q))
+    (E : DirichletCharacter ℂ q → ℝ)
+    (main : ℂ) (P C : ℝ)
+    (hE : ∀ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q),
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)‖ ≤ E χ)
+    (hmain : ‖unitPsiTotal q N - main‖ ≤ P)
+    (hcorr :
+      ‖(Nat.totient q : ℂ) *
+        (finiteProperPrimePowerCorrection N q r : ℂ)‖ ≤ C) :
+    ‖(Nat.totient q : ℂ) * finiteThetaResidue N q r - main‖ ≤
+      (∑ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q), E χ) + P + C := by
+  have hpsi := norm_finitePsiResidue_sub_main_dirichlet_le
+    q N r hq hr a ha E main P hE hmain
+  have hsplit := finitePsiResidue_eq_theta_add_correction N q r
+  have hd :
+      (Nat.totient q : ℂ) * finiteThetaResidue N q r - main =
+        ((Nat.totient q : ℂ) * (finitePsiResidue N q r : ℂ) - main) -
+          (Nat.totient q : ℂ) *
+            (finiteProperPrimePowerCorrection N q r : ℂ) := by
+    rw [hsplit]
+    ring
+  rw [hd]
+  exact (norm_sub_le _ _).trans (add_le_add hpsi hcorr)
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
