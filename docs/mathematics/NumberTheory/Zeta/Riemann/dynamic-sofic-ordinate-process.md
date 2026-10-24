@@ -295,3 +295,17 @@ session, so **no compiler/kernel/axiom audit was performed**.
 GitHub file reads and issue queuing are not receipts. Do not
 promote these modules into the public GRWTSK root until
 the above verification has actually succeeded.
+
+
+## Source-bound validation requests (not execution)
+
+- [Issue #1167: dynamic partition, exact finite sofic graph and spectral-orbit language](https://github.com/grwtsk/math/issues/1167).
+- [Issue #1168: Bombieri moment collapse, actual zeta height and conditional eventual-sofic split](https://github.com/grwtsk/math/issues/1168).
+
+Both requests pin the unmodified five mathematical source blobs above at
+[grwtsk/math main 28b8048fbb60a2405bbe6b4bdf6560f7cdabe2b7](https://github.com/grwtsk/math/commit/28b8048fbb60a2405bbe6b4bdf6560f7cdabe2b7),
+with Lean 4.33.0, pinned Mathlib closure, exact builds, direct
+elaboration, trust-zero checks, fresh independent kernel replay,
+full transitive axiom/sorryAx/unsafe audit and actual command
+statuses as requirements. An issue is an inert pending request,
+**not a mathematical or operational verification receipt**.
