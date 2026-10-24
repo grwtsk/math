@@ -10507,3 +10507,62 @@ Static source validation and a finite external Python graph fixture
 are not Lean compilation, independent kernel checking or axiom
 audit; those phases remain **NOT_RUN / NOT_KERNEL_AUDITED**,
 and no successful process exit receipt is available.
+
+
+### Follow-up: bounded zeta right-context capacity certificates
+
+Source commit:
+`b10d5736af4188a2a4ea46d148011683d164f214`.
+
+Source:
+`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean`,
+blob `5588d53d617578068d5b7fa8ab6c6daf20c9f6fd`.
+
+New fully qualified declarations:
+
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.TailRightContextCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.TailExactPresentationAtMost`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_tail_exactPresentationAtMost_of_contextCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaTailContextCapacityCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_bounded_tail_presentation_of_zeta_contextCertificate`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_capacityCertificate_of_unboundedTailContexts`.
+
+Exact scope: a finite witness of `capacity + 1` pairwise
+continuation-distinguishable contexts rules out exact finite labeled-graph
+presentations whose
+`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation.stateCapacity`
+is at most `capacity`. One fixed finite certificate does **not** prove
+non-soficity against arbitrarily large presentations. The existing
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaUnboundedTailContexts`
+supplier implies every such bounded certificate, but remains separately
+unproved for the actual selected zeta trace.
+
+External paper theorem/section/page locator: **NOT APPLICABLE** to this local
+bounded wrapper. Its finite-state method background remains the already
+recorded Myhill/Nerode and sofic-language bibliography; no new historical
+influence is inferred.
+
+Classification:
+- imported mathematics: existing local finite right-context capacity theorem;
+- kernel-verified bridges: none newly claimed;
+- source proof candidates: the six declarations above;
+- conditional interfaces: the selected zeta trace and its supplied bounded or
+  unbounded context certificates;
+- finite evidence: a bounded certificate is mathematical input, not evidence
+  that the actual zeta source satisfies it;
+- analogies: none newly promoted;
+- unresolved premises: construction of actual zeta context certificates and
+  the separate arithmetic-to-sofic and spectral-source bridges.
+
+Operational validation remains outside math at
+`grwtsk/noeaaeue#400`, pinned to the exact source commit/blob.
+The repaired validation-query discovery at
+`grwtsk/noeaaeue@623825aaa2a205733e33ea4ff04264c30132139d`
+does not change proof status: registry qualification is still unavailable,
+native readiness is not checked, and proof acceptance remains false. This
+ledger records only the source status; operational details and future receipts
+remain in `grwtsk/noeaaeue`.
+
+Actual status:
+**SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXIOMS NOT_RUN**.
