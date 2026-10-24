@@ -122,4 +122,41 @@ theorem zetaCriticalPlacement_transports_and_splits_ordinates
   exact eventual_ordinate_split_for_dynamic_spectral_cover
     process soficSuppliers hZeta
 
+
+/-- The non-eventual-sofic premise can be discharged by the explicit
+right-context certificate developed in the exact-language layer.  This theorem
+still keeps the two arithmetic-to-eventual-sofic classifications and zeta
+critical placement as independent hypotheses.  The spectral-cover family is
+likewise supplied rather than constructed. -/
+theorem zetaCriticalPlacement_transports_with_rightContext_certificate
+    {Index : Type uIndex}
+    {Zero : Index → Type uGen}
+    {family : ∀ i, ZeroProblem (Zero i)}
+    (covers : SpectralCoverFamily zetaZeroProblem family)
+    {Obs : Type uObs} {State : Type uState} {Spectral : Type uSpectral}
+    [Fintype State] [AddCommGroup Spectral] [Module ℂ Spectral]
+    (process : DynamicSpectralCover ℂ Obs State Bool Spectral)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+          (process.labelTrace z))
+    (algebraicOnLineEventually :
+      ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
+        AlgebraicReal (zetaHeight z) →
+          GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+            (process.labelTrace z))
+    (hcontexts : ZetaUnboundedTailContexts process.labelTrace)
+    (hZeta : ZetaCriticalPlacement) :
+    GeneralizedHypothesis family ∧
+      ∀ z, ActualZetaZero z →
+        (¬ RationalReal (zetaHeight z)) ∧
+        (z.re = (1 : ℝ) / 2) ∧
+        (¬ AlgebraicReal (zetaHeight z)) := by
+  apply zetaCriticalPlacement_transports_and_splits_ordinates
+    covers process
+  · exact eventualSuppliers_of_zeta_rightContexts
+      process.labelTrace
+      rationalEventually algebraicOnLineEventually hcontexts
+  · exact hZeta
+
 end GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge
