@@ -316,7 +316,7 @@ actual continuous Weil diagonal. This is the missing finite-image to full
 test-class inference, *provided* the required convergent approximation and
 continuity hypotheses have themselves been supplied. -/
 theorem positiveDiagonal_of_convergent_tests
-    {T : Type*} [NormedAddCommGroup T] [NormedSpace ℂ T]
+    {T : Type*} [TopologicalSpace T] [AddCommGroup T] [Module ℂ T]
     {space : WeilTestSpace T}
     (form : WeilHermitianForm space)
     (approximants : ∀ f : space.Vector, ℕ → space.Vector)
@@ -342,7 +342,7 @@ transfer. A cited Connes trace formula or finite arithmetic Gram is not
 automatically a source for any of the three analytic hypotheses below.
 The criterion is the exact accepted source-bound direction, not metadata. -/
 theorem riemannHypothesis_of_convergentWeilTests
-    {T : Type*} [NormedAddCommGroup T] [NormedSpace ℂ T]
+    {T : Type*} [TopologicalSpace T] [AddCommGroup T] [Module ℂ T]
     {space : WeilTestSpace T}
     {form : WeilHermitianForm space}
     (criterion : WeilPositivityImpliesRH form)
