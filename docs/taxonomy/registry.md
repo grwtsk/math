@@ -12,6 +12,7 @@ Source-reviewed standard additions (proposed; [evidence and limits](proposals/ne
 | --- | --- |
 | [Closure operator theory](subjects/order-theory/closure-operators/index.md) | `urn:uuid:5e8fb445-435f-4c23-bd1a-59bb873fc838` |
 | [Free group theory](subjects/algebra/group-theory/free-groups/index.md) | `urn:uuid:c0e28762-6b54-4feb-bff3-115f8c63d548` |
+| [Homological algebra](subjects/algebra/homological-algebra/index.md) | `urn:uuid:6df6424d-8992-4247-b777-72df69afe67d` |
 | [Order embedding theory](subjects/order-theory/order-embeddings/index.md) | `urn:uuid:455d5220-1e27-41f9-821a-fae4fa41c4db` |
 
 Source-reviewed resource additions (canonical identities; proposed resource kinds,
@@ -165,6 +166,7 @@ Source-signal draft additions (canonical identities; all proposed):
 | Record | Persistent identifier |
 | --- | --- |
 | [Source-reviewed standard subjects proposal](proposals/new-concepts/source-reviewed-standard-subjects.md) | `urn:uuid:ecc3f8d0-570a-436d-92a6-373d5b7d6254` |
+| [Homological algebra addition proposal](proposals/new-concepts/homological-algebra.md) | `urn:uuid:d7230c91-95de-4631-a2c5-5e1980ad93b2` |
 | [MSC compound mapping](crosswalks/msc2020/index.md) | `urn:uuid:4ebb4869-baba-42d6-8801-85f7981233ff` |
 | [arXiv mapping](crosswalks/arxiv/index.md) | `urn:uuid:3abad45e-df88-4369-8cef-aa9bf9ca1473` |
 | [LCC mapping](crosswalks/lcc/index.md) | `urn:uuid:de2c4156-27ee-49b4-9e36-e95870b60d6b` |

@@ -18,6 +18,10 @@ adds [closure operators](order-theory/closure-operators/index.md),
 subjects. Their identities are independent of source moves; their edges and
 source associations remain proposed.
 
+The [homological-algebra addition](../proposals/new-concepts/homological-algebra.md)
+separately indexes [abstract algebraic complexes and homology](algebra/homological-algebra/index.md).
+It does not identify an algebraic model with a specified space's topological homology.
+
 [Analysis](analysis/index.md) provides six nested specialization levels. [Probability theory](probability/index.md) supplies a second route to the same terminal concept. Every edge is proposed pending independent review; directory descent is not an exclusive semantic-parent claim.
 
 [History of mathematics](history-of-mathematics/index.md) and [mathematics education](mathematics-education/index.md) are additional subject entry points, not resource formats. Both reach the same [history of mathematics education](history-of-mathematics/mathematics-education/index.md) record. All new parentage remains proposed.
