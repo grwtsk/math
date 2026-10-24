@@ -250,4 +250,90 @@ theorem DynamicThreeQuarterSoficProgram.zeroFree_strict_threeQuarters
   rw [P.analyticRealPart z, P.analyticIsZeta] at h
   exact h hz
 
+
+/-! ## Finite-context obstruction, rather than an opaque non-sofic label -/
+
+/-- A source-bound and independently unproved nonsoficity supplier:
+every actual zeta-zero trace, after EVERY finite burn-in, has arbitrarily
+many pairwise continuation-distinguishable finite words.
+
+For each finite labeled graph with N states, the reachable-end-state
+argument gives at most 2^N possible right contexts. The present
+predicate requires a separate arithmetic/spectral construction
+violating ALL those finite bounds. It is not furnished by GRH, by
+an arbitrarily varying finite graph, or by one accepted graph path. -/
+def ZetaUnboundedTailContexts (trace : ℂ → ℕ → Bool) : Prop :=
+  ∀ z, ActualZetaZero z →
+    ∀ offset : ℕ,
+      UnboundedRightContexts
+        (HasFiniteBlock (tailTrace (trace z) offset))
+
+/-- The explicit right-context certificate would discharge precisely the
+NON-EVENTUAL-SOFIC field, and nothing about rational/algebraic ordinate
+arithmetic or the existence of the chosen trace. -/
+theorem no_eventual_sofic_of_zeta_rightContexts
+    (trace : ℂ → ℕ → Bool)
+    (hcontexts : ZetaUnboundedTailContexts trace) :
+    ∀ z, ActualZetaZero z → ¬ EventuallySoficTrace (trace z) := by
+  intro z hz
+  exact not_eventuallySoficTrace_of_all_tail_rightContexts
+    (trace z) (hcontexts z hz)
+
+/-- Form the prior exact supplier packet from TWO independent arithmetic
+presentations and the NEW independently supplied symbolic context
+certificate. No arithmetic-to-finite-graph theorem is hidden here. -/
+def eventualSuppliers_of_zeta_rightContexts
+    (trace : ℂ → ℕ → Bool)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        EventuallySoficTrace (trace z))
+    (algebraicOnLineEventually :
+      ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
+        AlgebraicReal (zetaHeight z) →
+          EventuallySoficTrace (trace z))
+    (hcontexts : ZetaUnboundedTailContexts trace) :
+    ZetaEventualSoficSuppliers trace where
+  rationalEventually := rationalEventually
+  algebraicOnLineEventually := algebraicOnLineEventually
+  noEventuallySoficZero :=
+    no_eventual_sofic_of_zeta_rightContexts trace hcontexts
+
+/-- The unconditional-in-GRH irrationality route now has a concrete
+automata-theoretic nonsoficity TEST, rather than a bare "not sofic"
+hypothesis. It still requires proving the two substantive suppliers. -/
+theorem zeta_irrational_of_rational_sofic_and_rightContexts
+    (trace : ℂ → ℕ → Bool)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        EventuallySoficTrace (trace z))
+    (hcontexts : ZetaUnboundedTailContexts trace) :
+    ∀ z, ActualZetaZero z → ¬ RationalReal (zetaHeight z) :=
+  irrational_of_eventual_language_obstruction
+    trace rationalEventually
+    (no_eventual_sofic_of_zeta_rightContexts trace hcontexts)
+
+/-- Critical-line placement is a SEPARATE premise; GRH, even if supplied,
+does not prove either the algebraic-to-sofic classification or unbounded
+continuation contexts. Both are mathematically open at the zeta source. -/
+theorem zeta_transcendental_of_critical_sofic_and_rightContexts
+    (trace : ℂ → ℕ → Bool)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        EventuallySoficTrace (trace z))
+    (algebraicOnLineEventually :
+      ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
+        AlgebraicReal (zetaHeight z) →
+          EventuallySoficTrace (trace z))
+    (hcontexts : ZetaUnboundedTailContexts trace)
+    (hCritical : ZetaCriticalPlacement) :
+    ∀ z, ActualZetaZero z →
+      (¬ RationalReal (zetaHeight z)) ∧
+      (z.re = (1 : ℝ) / 2) ∧
+      (¬ AlgebraicReal (zetaHeight z)) :=
+  eventual_sofic_irrational_and_conditional_transcendental trace
+    (eventualSuppliers_of_zeta_rightContexts trace
+      rationalEventually algebraicOnLineEventually hcontexts)
+    hCritical
+
+
 end GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion
