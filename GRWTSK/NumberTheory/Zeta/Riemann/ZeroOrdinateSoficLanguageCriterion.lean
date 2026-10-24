@@ -409,4 +409,61 @@ theorem zeta_capacityCertificate_of_unboundedTailContexts
   intro z hz offset
   exact hcontexts z hz offset (capacity + 1)
 
+
+/-- An *entire family* of exact finite-capacity certificates, one for
+every natural capacity and bound to the SAME actual zeta trace, supplies
+unbounded continuation contexts at every burn-in offset.
+
+The zero-word case is vacuous but is handled explicitly. A certificate
+for one fixed capacity (or a family about unrelated changing traces)
+does NOT meet this premise. -/
+theorem zeta_unboundedTailContexts_of_all_capacityCertificates
+    (trace : ℂ → ℕ → Bool)
+    (hall : ∀ capacity : ℕ,
+      ZetaTailContextCapacityCertificate trace capacity) :
+    ZetaUnboundedTailContexts trace := by
+  intro z hz offset n
+  cases n with
+  | zero =>
+      refine ⟨fun i : Fin 0 => i.elim0, ?_⟩
+      intro i j hij
+      exact i.elim0
+  | succ capacity =>
+      exact hall capacity z hz offset
+
+/-- Exact quantifier accounting: at the SAME source trace and for
+EVERY zero and EVERY tail, unbounded right contexts are equivalent
+to a certificate for EVERY finite reachable-state capacity.
+
+This is a logical equivalence between unconstructed suppliers,
+not a verification of either side for actual zeta zero ordinates. -/
+theorem zeta_unboundedTailContexts_iff_all_capacityCertificates
+    (trace : ℂ → ℕ → Bool) :
+    ZetaUnboundedTailContexts trace ↔
+      ∀ capacity : ℕ,
+        ZetaTailContextCapacityCertificate trace capacity := by
+  constructor
+  · intro hcontexts capacity
+    exact zeta_capacityCertificate_of_unboundedTailContexts
+      trace hcontexts capacity
+  · exact zeta_unboundedTailContexts_of_all_capacityCertificates trace
+
+/-- Conditional arithmetic consumer: a complete all-capacity family
+of concrete right-context certificates would supply the nonsofic
+obstruction needed for irrationality, provided rational-height-to-
+eventual-exact-soficity has INDEPENDENTLY been proved for this trace.
+GRH is not used. No source family or arithmetic bridge is built here. -/
+theorem zeta_irrational_of_all_capacityCertificates_and_rational_sofic
+    (trace : ℂ → ℕ → Bool)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        EventuallySoficTrace (trace z))
+    (hall : ∀ capacity : ℕ,
+      ZetaTailContextCapacityCertificate trace capacity) :
+    ∀ z, ActualZetaZero z → ¬ RationalReal (zetaHeight z) :=
+  zeta_irrational_of_rational_sofic_and_rightContexts
+    trace rationalEventually
+    (zeta_unboundedTailContexts_of_all_capacityCertificates trace hall)
+
+
 end GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion
