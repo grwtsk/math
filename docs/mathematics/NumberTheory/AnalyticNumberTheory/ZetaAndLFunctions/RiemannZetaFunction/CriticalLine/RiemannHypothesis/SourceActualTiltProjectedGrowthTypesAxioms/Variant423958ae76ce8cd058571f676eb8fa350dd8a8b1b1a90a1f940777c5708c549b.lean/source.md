@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualTiltProjectedGrowthTypesAxioms.Variant423958ae76ce8cd058571f676eb8fa350dd8a8b1b1a90a1f940777c5708c549b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `810fe05c228296fd496af3bfee597d449cd3d6c1` · SHA-256 `0735402db92ca4a7af6099127bfe6db619c007707afd2543573f326e6e5bb2e2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualTiltProjectedGrowth.Variant9b91640626dad7084daccf6e364d48d80ac17ad9cf047511405cfdd8cfd9b3e4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9b91640626dad7084daccf6e364d48d80ac17ad9cf047511405cfdd8cfd9b3e4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualTiltProjectedGrowth.Variant9b91640626dad7084daccf6e364d48d80ac17ad9cf047511405cfdd8cfd9b3e4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9b91640626dad7084daccf6e364d48d80ac17ad9cf047511405cfdd8cfd9b3e4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T122825Z-1791376105075820000/SourceActualTiltProjectedGrowthTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualTiltProjectedGrowth
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualTiltProjectedGrowth.Variant9b91640626dad7084daccf6e364d48d80ac17ad9cf047511405cfdd8cfd9b3e4
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltProjectedGrowth.actualCentralFrequencyMass_le_band_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltProjectedGrowth.actualCentralFrequencyMass_le_band_energy
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltProjectedGrowth.actualTiltBandState_norm_sq_mono
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltProjectedGrowth.actualTiltBandState_norm_sq_mono
+
+#check FormalResearch.RiemannHypothesis.SourceActualTiltProjectedGrowth.actualTiltBandState_moving_energy_eventually_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualTiltProjectedGrowth.actualTiltBandState_moving_energy_eventually_lower
+```

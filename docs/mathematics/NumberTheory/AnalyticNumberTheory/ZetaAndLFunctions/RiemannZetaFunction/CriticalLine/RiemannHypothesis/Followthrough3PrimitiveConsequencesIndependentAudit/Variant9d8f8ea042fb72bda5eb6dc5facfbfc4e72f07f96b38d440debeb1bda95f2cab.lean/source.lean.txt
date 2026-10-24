@@ -1,0 +1,56 @@
+import SourceActualXiPrimitiveConsequences
+import SourceDirectCorrectedPairingLeading
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveTransport
+
+#check actualXiLogDensity
+#print axioms actualXiLogDensity
+#check actualXiLogPrimitive
+#print axioms actualXiLogPrimitive
+#check actualXiLogDensity_intervalIntegrable
+#print axioms actualXiLogDensity_intervalIntegrable
+#check actualXiLogPrimitive_at_anchor
+#print axioms actualXiLogPrimitive_at_anchor
+#check actualXiLogPrimitive_absolutelyContinuous
+#print axioms actualXiLogPrimitive_absolutelyContinuous
+#check actualXiLogPrimitive_ae_hasDerivAt
+#print axioms actualXiLogPrimitive_ae_hasDerivAt
+#check actual_logarithmic_substitution
+#print axioms actual_logarithmic_substitution
+#check actual_log_weight_absolutelyContinuous
+#print axioms actual_log_weight_absolutelyContinuous
+#check actual_log_weight_at_upper
+#print axioms actual_log_weight_at_upper
+#check actual_contracted_pairing_eq_primitive_IBP
+#print axioms actual_contracted_pairing_eq_primitive_IBP
+#check contracted_lower_of_actual_primitive_bound
+#print axioms contracted_lower_of_actual_primitive_bound
+
+end FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveTransport
+
+namespace FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveConsequences
+
+#check contracted_lower_of_actual_primitive
+#print axioms contracted_lower_of_actual_primitive
+#check residual_upper_of_actual_primitive
+#print axioms residual_upper_of_actual_primitive
+#check all_real_lower_of_actual_primitive
+#print axioms all_real_lower_of_actual_primitive
+#check estimate_of_actual_primitive
+#print axioms estimate_of_actual_primitive
+#check leading_upper_of_actual_primitive
+#print axioms leading_upper_of_actual_primitive
+
+end FormalResearch.RiemannHypothesis.SourceActualXiPrimitiveConsequences
+
+namespace FormalResearch.RiemannHypothesis.SourceDirectCorrectedPairingLeading
+
+#check leading_upper_of_complete_corrected_pairing
+#print axioms leading_upper_of_complete_corrected_pairing
+#check leading_tail_of_complete_corrected_pairing
+#print axioms leading_tail_of_complete_corrected_pairing
+
+end FormalResearch.RiemannHypothesis.SourceDirectCorrectedPairingLeading
+

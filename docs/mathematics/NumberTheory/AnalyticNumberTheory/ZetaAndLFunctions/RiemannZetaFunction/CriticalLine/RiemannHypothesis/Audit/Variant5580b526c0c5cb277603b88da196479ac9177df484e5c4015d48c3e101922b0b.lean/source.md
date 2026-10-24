@@ -1,0 +1,61 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cebd05a15f516ab3d5df695733515ff29cfd6745` · SHA-256 `5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourcePairedPrimeAverages
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedPrimeAverages
+#check negativeErrorMean
+#print axioms negativeErrorMean
+#check pairedErrorContrast
+#print axioms pairedErrorContrast
+#check PairedContrastTailLowerBound
+#print axioms PairedContrastTailLowerBound
+#check negativeMass_ge_one
+#print axioms negativeMass_ge_one
+#check negativeMass_pos
+#print axioms negativeMass_pos
+#check contrast_inner_eq
+#print axioms contrast_inner_eq
+#check contrast_outer_intervalIntegrable
+#print axioms contrast_outer_intervalIntegrable
+#check contrast_integral_eq
+#print axioms contrast_integral_eq
+#check pairedErrorContrast_eq
+#print axioms pairedErrorContrast_eq
+#check criticalSignedWork_eq_contrast_sub_mean
+#print axioms criticalSignedWork_eq_contrast_sub_mean
+#check negativeSlopeWork_abs_le_mass
+#print axioms negativeSlopeWork_abs_le_mass
+#check negativeErrorMean_abs_le
+#print axioms negativeErrorMean_abs_le
+#check negativeErrorMean_uniformly_bounded
+#print axioms negativeErrorMean_uniformly_bounded
+#check firstPrimeStorageSurplus_eq_contrast
+#print axioms firstPrimeStorageSurplus_eq_contrast
+#check primeError_difference_window
+#print axioms primeError_difference_window
+#check pairedErrorContrast_eq_prime_window
+#print axioms pairedErrorContrast_eq_prime_window
+#check primeError_difference_before_first
+#print axioms primeError_difference_before_first
+#check primeError_negative_difference_fixture
+#print axioms primeError_negative_difference_fixture
+#check centeredNegativeErrorMean
+#print axioms centeredNegativeErrorMean
+#check centeredPairedErrorContrast
+#print axioms centeredPairedErrorContrast
+#check centeredPairedErrorContrast_eq
+#print axioms centeredPairedErrorContrast_eq
+#check centeredNegativeErrorMean_eq
+#print axioms centeredNegativeErrorMean_eq
+#check criticalSignedWork_eq_centered_contrast
+#print axioms criticalSignedWork_eq_centered_contrast
+#check pairedContrast_tail_iff_criticalAbel_tail
+#print axioms pairedContrast_tail_iff_criticalAbel_tail
+#check mertens_residual_tail_iff_pairedContrast_tail
+#print axioms mertens_residual_tail_iff_pairedContrast_tail
+```

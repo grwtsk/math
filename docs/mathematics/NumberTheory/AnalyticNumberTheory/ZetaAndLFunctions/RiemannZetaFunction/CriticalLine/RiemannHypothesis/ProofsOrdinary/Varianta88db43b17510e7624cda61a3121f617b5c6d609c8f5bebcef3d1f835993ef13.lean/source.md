@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Varianta88db43b17510e7624cda61a3121f617b5c6d609c8f5bebcef3d1f835993ef13
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `07a34c817ea78deb114a1ecb5293ad410b7258d5` · SHA-256 `a29a265ea11110e2934eef80f4d3ad07c88e42149c1ac97882989bc369ed9d2c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOuterHalfCutoff.Variantcd2a1bf1aff64dec16bc7755bb4ca226ce197f45fb7e187b9c926ea350394479","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cd2a1bf1aff64dec16bc7755bb4ca226ce197f45fb7e187b9c926ea350394479","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualOuterHalfCutoff.Variantcd2a1bf1aff64dec16bc7755bb4ca226ce197f45fb7e187b9c926ea350394479","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"cd2a1bf1aff64dec16bc7755bb4ca226ce197f45fb7e187b9c926ea350394479","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/source-readbacks/owner-ignored-latest-20261007T154040Z/preserved/scratch/rh16-continuation-20261006-challenge-next/SourceActualOuterHalfCutoff-IndependentAllAnnotationAudit01/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualOuterHalfCutoff
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOuterHalfCutoff.Variantcd2a1bf1aff64dec16bc7755bb4ca226ce197f45fb7e187b9c926ea350394479
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceKernelTerm_eq_actualLogProfile
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_eq_completeLogProfileSum
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_sharp_upper_zero
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow_sharp_upper
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualHighOuterContinuousEuler_sum_eq_zero
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingOuterSum
+#print FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingContinuousEulerSum
+```

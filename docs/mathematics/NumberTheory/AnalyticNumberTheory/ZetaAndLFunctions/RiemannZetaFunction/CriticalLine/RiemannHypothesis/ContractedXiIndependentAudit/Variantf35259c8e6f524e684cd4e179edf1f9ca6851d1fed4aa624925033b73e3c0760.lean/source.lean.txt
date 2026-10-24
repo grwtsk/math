@@ -1,0 +1,21 @@
+import SourceContractedXiConsequences
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceOuterPsiFubini
+#print axioms finiteDensity_integrable
+#print axioms actualFiniteSecondReadout_outer_fubini
+end FormalResearch.RiemannHypothesis.SourceOuterPsiFubini
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction
+#print axioms literal_full_Xi_pairing_eq_contracted
+#print axioms actual_signed_pairing_eq_contracted
+#print axioms remaining_lower_of_contracted_pairing
+#print axioms estimate_of_contracted_pairing
+end FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction
+
+namespace FormalResearch.RiemannHypothesis.SourceContractedXiConsequences
+#print axioms residual_upper_of_contracted_Xi
+#print axioms all_real_lower_of_contracted_Xi
+#print axioms actual_leading_upper_of_contracted_Xi
+end FormalResearch.RiemannHypothesis.SourceContractedXiConsequences

@@ -1,0 +1,34 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroMovingTail.Variant6d65a43e25961915f8f4ae24b766a08d097a775156b8c6feff7b601c041f0f9d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6d65a43e25961915f8f4ae24b766a08d097a775156b8c6feff7b601c041f0f9d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualZeroMovingTail.Variant6d65a43e25961915f8f4ae24b766a08d097a775156b8c6feff7b601c041f0f9d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6d65a43e25961915f8f4ae24b766a08d097a775156b8c6feff7b601c041f0f9d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-bessel-contour-recovery/SourceActualZeroMovingTailTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualZeroMovingTail
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroMovingTail.Variant6d65a43e25961915f8f4ae24b766a08d097a775156b8c6feff7b601c041f0f9d
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingRadius
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingRadius
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingEnvelope
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingHeight_ge_four
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingHeight_ge_four
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingTail_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingTail_norm_bound
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroAboveMovingHeight_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroAboveMovingHeight_norm_bound
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingTail_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualZeroMovingTail_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualFullZeroContribution_sub_movingHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualFullZeroContribution_sub_movingHead
+#check FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualSourceQuadraticValue_sub_movingHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroMovingTail.actualSourceQuadraticValue_sub_movingHead

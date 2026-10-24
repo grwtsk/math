@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4TypesAxioms.Variantbe5805f324946d2f45d33ef7c3ac205e304523085254aa58814d4d5c1156a7bf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `af0b61321bf2058c81eaf70485bdcf64637ebd16` · SHA-256 `d6fa087f8ba4538dea0bdfa6a6cd0da9ce3e6294f34b2d3aa4990a94d2ef5905`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroNormalizedCancellation.Variant94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceActualZeroNormalizedCancellation.Variant94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-boundary-next/owner57/20261007T072529Z/bytes/94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4--TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualZeroNormalizedCancellation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualZeroNormalizedCancellation.Variant94d20eba20c9fb13cecf8cdc358b40accaaabc977efe0ca2a5e64b4ab519d6f4
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_norm_bound
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualCarrierMellin_scaled_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualCarrierMellin_scaled_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualZeroHeightHead_scaled_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualZeroHeightHead_scaled_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualFullZeroContribution_scaled_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualFullZeroContribution_scaled_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualSourceQuadraticValue_scaled_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualSourceQuadraticValue_scaled_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualMertensResidual_scaled_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualMertensResidual_scaled_tendsto_zero
+```

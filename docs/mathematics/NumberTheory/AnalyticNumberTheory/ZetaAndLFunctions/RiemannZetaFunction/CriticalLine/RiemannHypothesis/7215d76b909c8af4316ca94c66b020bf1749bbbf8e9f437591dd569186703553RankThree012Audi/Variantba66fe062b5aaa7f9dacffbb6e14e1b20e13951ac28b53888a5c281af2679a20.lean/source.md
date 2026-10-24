@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553RankThree012Audi.Variantba66fe062b5aaa7f9dacffbb6e14e1b20e13951ac28b53888a5c281af2679a20
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d8c37e08d366304187c52da05e2a8e9d62d5e7d2` · SHA-256 `12fcd0db156fe469a3de5c8abfed94a3bd92061c0bd84342688f4d2ba4bbc025`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaTailRankThree012.Variant7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaTailRankThree012.Variant7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/72/7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553--RankThree012Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaTailRankThree012
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaTailRankThree012.Variant7215d76b909c8af4316ca94c66b020bf1749bbbf8e9f437591dd569186703553
+
+set_option pp.proofs false
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.rankThree_compound_numerator_identity
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.rankThree_compound_numerator_identity
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator_eq
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.hasDerivAt_thetaTail_compoundRatio
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.hasDerivAt_thetaTail_compoundRatio
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_compoundRatio_antitone_iff
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_compoundRatio_antitone_iff
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail012_det_nonpos_of_numerator_nonpos
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail012_det_nonpos_of_numerator_nonpos
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_three_zero_one_two_of_numerator_nonpos
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_three_zero_one_two_of_numerator_nonpos
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_jet_det_nonpos_of_wronskian
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhi_jet_det_nonpos_of_wronskian
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator_nonpos_of_wronskian
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator_nonpos_of_wronskian
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator_nonpos
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailRankThreeNumerator_nonpos
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_compoundRatio_antitone
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_compoundRatio_antitone
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_three_zero_one_two
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTailSignRegular_three_zero_one_two
+```

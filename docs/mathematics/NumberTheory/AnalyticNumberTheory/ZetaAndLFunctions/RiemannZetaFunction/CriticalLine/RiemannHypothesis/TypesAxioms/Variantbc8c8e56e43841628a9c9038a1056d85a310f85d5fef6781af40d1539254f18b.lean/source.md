@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantbc8c8e56e43841628a9c9038a1056d85a310f85d5fef6781af40d1539254f18b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f12724a5e774b6daf6c83bd917e3bb417f2ce8fd` · SHA-256 `bc8c8e56e43841628a9c9038a1056d85a310f85d5fef6781af40d1539254f18b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualVaughanMeanBound
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_moebius_quotient_sum_eq_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_moebius_quotient_sum_eq_one
+#check FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_alpha_unit_floor_defect
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_alpha_unit_floor_defect
+#check FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_alpha_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_alpha_bounds
+#check FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_alpha_abs_le_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_alpha_abs_le_one
+#check FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_vaughan_alpha_abs_le_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualVaughanMeanBound.actual_vaughan_alpha_abs_le_one
+```

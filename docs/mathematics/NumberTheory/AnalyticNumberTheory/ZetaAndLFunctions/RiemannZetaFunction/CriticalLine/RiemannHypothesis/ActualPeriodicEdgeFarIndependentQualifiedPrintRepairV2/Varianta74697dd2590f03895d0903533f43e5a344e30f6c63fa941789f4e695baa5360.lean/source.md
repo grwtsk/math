@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPeriodicEdgeFarIndependentQualifiedPrintRepairV2.Varianta74697dd2590f03895d0903533f43e5a344e30f6c63fa941789f4e695baa5360
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7274822927e88bcbc716955b88f611324e91264a` · SHA-256 `a74697dd2590f03895d0903533f43e5a344e30f6c63fa941789f4e695baa5360`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualPeriodicHalfExponentialFar
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+-- Diagnostic-only budget for a complete pretty-printed proof.
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 10000000
+set_option pp.deepTerms true
+#print FormalResearch.RiemannHypothesis.ActualPeriodicEdgeTimeBudget.actualPeriodicEdgeEndpointMass
+#print FormalResearch.RiemannHypothesis.ActualPeriodicEdgeTimeBudget.actualPeriodicEdgeDerivativeMass
+#print FormalResearch.RiemannHypothesis.ActualPeriodicEdgeTimeBudget.actualPeriodicProfile_time_norm_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicEdgeTimeBudget.actualPeriodicProfile_deriv_time_norm_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicEdgeTimeBudget.actualPeriodicEdgeEndpointMass_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicEdgeTimeBudget.actualPeriodicEdgeDerivativeMass_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualFarPeriodicWork_edge_abs_le
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialPeriodicCutoff_orders
+#print FormalResearch.RiemannHypothesis.ActualPeriodicHalfExponentialFar.actualHalfExponentialFarPeriodicWork_abs_le
+```

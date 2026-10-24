@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiMellinAtOneAudit.Variantc4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e753d30ed7e92bdbdf5965a9276eef3503c640b2` · SHA-256 `c4f48b23e61f05b4c82b3641cec29527e97a67c538b99e83e2dbb5703fa77175`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiMellinAtOne
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_at_one_eq_physical
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiComplexMellinTailSeven_tendsto_one
+#check FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue
+#print FormalResearch.RiemannHypothesis.SourceActualXiMellinAtOne.actualXiInverseSquarePhysical_integral_eq_poleValue
+```

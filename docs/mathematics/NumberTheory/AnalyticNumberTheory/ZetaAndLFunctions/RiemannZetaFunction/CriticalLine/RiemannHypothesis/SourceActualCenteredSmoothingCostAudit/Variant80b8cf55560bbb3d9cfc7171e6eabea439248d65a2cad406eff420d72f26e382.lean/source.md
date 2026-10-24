@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredSmoothingCostAudit.Variant80b8cf55560bbb3d9cfc7171e6eabea439248d65a2cad406eff420d72f26e382
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0585771f9709ab29fbc6fb491d758e692eebb21b` · SHA-256 `80b8cf55560bbb3d9cfc7171e6eabea439248d65a2cad406eff420d72f26e382`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCenteredSmoothingCost
+
+namespace FormalResearch.RiemannHypothesis.SourceActualCenteredSmoothingCost
+#check actualCenteredKernelVariation
+#print axioms actualCenteredKernelVariation
+#check actual_centered_Mangoldt_error_abs_le
+#print axioms actual_centered_Mangoldt_error_abs_le
+#check actual_critical_derivative_early_lower
+#print axioms actual_critical_derivative_early_lower
+#check actual_centered_kernel_variation_exponential_lower
+#print axioms actual_centered_kernel_variation_exponential_lower
+#check actual_centered_kernel_variation_linear_lower
+#print axioms actual_centered_kernel_variation_linear_lower
+#check actual_centered_kernel_variation_not_eventually_bounded
+#print axioms actual_centered_kernel_variation_not_eventually_bounded
+end FormalResearch.RiemannHypothesis.SourceActualCenteredSmoothingCost
+```

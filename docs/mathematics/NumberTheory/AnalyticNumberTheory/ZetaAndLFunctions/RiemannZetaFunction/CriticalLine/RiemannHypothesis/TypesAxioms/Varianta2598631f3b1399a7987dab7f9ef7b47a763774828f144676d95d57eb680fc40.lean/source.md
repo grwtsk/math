@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Varianta2598631f3b1399a7987dab7f9ef7b47a763774828f144676d95d57eb680fc40
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ca81af28b71c2073d9c6634f3d587e4528b5ddde` · SHA-256 `a2598631f3b1399a7987dab7f9ef7b47a763774828f144676d95d57eb680fc40`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiComplexMellin
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin
+#check FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_mul_eq_LSeries
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_mul_eq_LSeries
+#check FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_mul_eq_neg_zeta_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_mul_eq_neg_zeta_deriv
+```

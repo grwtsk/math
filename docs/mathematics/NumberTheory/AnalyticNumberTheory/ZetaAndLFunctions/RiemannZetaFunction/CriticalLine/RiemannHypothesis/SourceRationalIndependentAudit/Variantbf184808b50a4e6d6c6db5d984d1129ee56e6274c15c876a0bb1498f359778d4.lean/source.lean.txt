@@ -1,0 +1,53 @@
+import SourceRationalCompensation
+set_option linter.hashCommand false
+
+namespace FormalResearch.RiemannHypothesis.SourceRationalContinuousHalf
+#print continuousPoleHalf
+#print axioms continuousPoleHalf
+#print continuousPoleHalf_eq_interval
+#print axioms continuousPoleHalf_eq_interval
+#print continuousPoleHalf_eq_neg_negative
+#print axioms continuousPoleHalf_eq_neg_negative
+#print continuousPoleHalf_abs_le_two
+#print axioms continuousPoleHalf_abs_le_two
+#print rationalKernel_eq_laplace
+#print axioms rationalKernel_eq_laplace
+#print rationalReadout_product_integrable
+#print axioms rationalReadout_product_integrable
+#print native_rational_readout_eq_continuousPoleHalf
+#print axioms native_rational_readout_eq_continuousPoleHalf
+end FormalResearch.RiemannHypothesis.SourceRationalContinuousHalf
+namespace FormalResearch.RiemannHypothesis.SourceRationalCompensation
+#print rationalCompensator
+#print axioms rationalCompensator
+#print rationalRemainderMultiplier
+#print axioms rationalRemainderMultiplier
+#print rationalRemainderIntegrand
+#print axioms rationalRemainderIntegrand
+#print rationalRemainderContour
+#print axioms rationalRemainderContour
+#print rationalBaseline
+#print axioms rationalBaseline
+#print rationalKernel_norm_le_one
+#print axioms rationalKernel_norm_le_one
+#print rationalRemainderMultiplier_norm_le
+#print axioms rationalRemainderMultiplier_norm_le
+#print native_rational_integrable
+#print axioms native_rational_integrable
+#print rationalRemainderIntegrand_integrable
+#print axioms rationalRemainderIntegrand_integrable
+#print angularContour_eq_rational
+#print axioms angularContour_eq_rational
+#print mertensResidual_eq_rational
+#print axioms mertensResidual_eq_rational
+#print rationalBaseline_upper
+#print axioms rationalBaseline_upper
+#print RationalRemainderTailUpperBound
+#print axioms RationalRemainderTailUpperBound
+#print mertensResidual_upper_of_rational
+#print axioms mertensResidual_upper_of_rational
+#print mertens_residual_tail_of_rational
+#print axioms mertens_residual_tail_of_rational
+#print estimate_of_rational_remainder
+#print axioms estimate_of_rational_remainder
+end FormalResearch.RiemannHypothesis.SourceRationalCompensation

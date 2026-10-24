@@ -1,0 +1,95 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variante6103824b5ec4ebea2c7d37a04e1a3b87e6a78c0fe93a5f6ed9e9ab82b1884f8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f2893ae141374f384884567989f7f20ea0b2f58f` · SHA-256 `e6103824b5ec4ebea2c7d37a04e1a3b87e6a78c0fe93a5f6ed9e9ab82b1884f8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceWeightedOrbitAdapter
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceWeightedOrbitAdapter
+
+#check mangoldtCoefficient
+#print axioms mangoldtCoefficient
+#check centeredCoefficient
+#print axioms centeredCoefficient
+#check centeredCoefficient_eq
+#print axioms centeredCoefficient_eq
+#check centeredForwardAt
+#print axioms centeredForwardAt
+#check complexify_reflected_eq_reflection
+#print axioms complexify_reflected_eq_reflection
+#check mangoldtAt_eq_finiteProfile
+#print axioms mangoldtAt_eq_finiteProfile
+#check centeredForwardAt_eq_finiteProfile
+#print axioms centeredForwardAt_eq_finiteProfile
+#check reflectedMobiusAt_eq_reflection_forward
+#print axioms reflectedMobiusAt_eq_reflection_forward
+#check reflectedMobiusAt_eq_finiteProfile
+#print axioms reflectedMobiusAt_eq_finiteProfile
+#check mangoldtAt_mem_finiteOrbit
+#print axioms mangoldtAt_mem_finiteOrbit
+#check centeredForwardAt_mem_finiteOrbit
+#print axioms centeredForwardAt_mem_finiteOrbit
+#check reflectedMobiusAt_mem_finiteOrbit
+#print axioms reflectedMobiusAt_mem_finiteOrbit
+#check centeredForwardAt_actual
+#print axioms centeredForwardAt_actual
+#check mangoldtComplexL2_eq_finiteProfile
+#print axioms mangoldtComplexL2_eq_finiteProfile
+#check centeredMobiusComplexL2_eq_finiteProfile
+#print axioms centeredMobiusComplexL2_eq_finiteProfile
+#check centeredReflectedComplexL2_eq_finiteProfile
+#print axioms centeredReflectedComplexL2_eq_finiteProfile
+#check mangoldtComplexL2_mem_finiteOrbit
+#print axioms mangoldtComplexL2_mem_finiteOrbit
+#check centeredMobiusComplexL2_mem_finiteOrbit
+#print axioms centeredMobiusComplexL2_mem_finiteOrbit
+#check centeredReflectedComplexL2_mem_finiteOrbit
+#print axioms centeredReflectedComplexL2_mem_finiteOrbit
+#check source_reflected_atoms
+#print axioms source_reflected_atoms
+#check centeredDiagonalAt_eq_reflected_atoms
+#print axioms centeredDiagonalAt_eq_reflected_atoms
+#check arithmeticDiagonal_reflected_labels_distinct
+#print axioms arithmeticDiagonal_reflected_labels_distinct
+#check readoutAt_eq_reflected_profiles
+#print axioms readoutAt_eq_reflected_profiles
+#check jointAt_eq_reflected_profiles
+#print axioms jointAt_eq_reflected_profiles
+#check arithmeticReadout_eq_reflected_profiles
+#print axioms arithmeticReadout_eq_reflected_profiles
+#check actual_signed_profile_reconstruction
+#print axioms actual_signed_profile_reconstruction
+#check arithmeticReadout_eq_profiles_with_centering
+#print axioms arithmeticReadout_eq_profiles_with_centering
+#check weightedAtomInteraction
+#print axioms weightedAtomInteraction
+#check weighted_profile_pairing_eq_sum
+#print axioms weighted_profile_pairing_eq_sum
+#check jointAt_eq_arithmetic_offDiagonal_atoms
+#print axioms jointAt_eq_arithmetic_offDiagonal_atoms
+#check arithmeticReadout_eq_arithmetic_offDiagonal_atoms
+#print axioms arithmeticReadout_eq_arithmetic_offDiagonal_atoms
+#check mangoldtCoordinates
+#print axioms mangoldtCoordinates
+#check centeredCoordinates
+#print axioms centeredCoordinates
+#check mangoldtAt_eq_synthesis
+#print axioms mangoldtAt_eq_synthesis
+#check centeredForwardAt_eq_synthesis
+#print axioms centeredForwardAt_eq_synthesis
+#check reflectedMobiusAt_eq_synthesis
+#print axioms reflectedMobiusAt_eq_synthesis
+#check readoutAt_eq_reflected_matrix
+#print axioms readoutAt_eq_reflected_matrix
+#check jointAt_eq_reflected_matrix
+#print axioms jointAt_eq_reflected_matrix
+#check arithmeticReadout_eq_reflected_matrix
+#print axioms arithmeticReadout_eq_reflected_matrix
+#check actual_signed_matrix_reconstruction
+#print axioms actual_signed_matrix_reconstruction
+```

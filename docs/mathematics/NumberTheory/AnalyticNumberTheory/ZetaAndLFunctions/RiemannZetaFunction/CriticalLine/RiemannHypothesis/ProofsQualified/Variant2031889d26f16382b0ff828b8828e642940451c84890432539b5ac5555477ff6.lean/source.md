@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant2031889d26f16382b0ff828b8828e642940451c84890432539b5ac5555477ff6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b17dd69a1abe3a3bcc41c7afd463364ed370f38c` · SHA-256 `2031889d26f16382b0ff828b8828e642940451c84890432539b5ac5555477ff6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiEarlyReturnedWork
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiLateReturnedWork
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedBudget
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturned_split_orders
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiReturnedWork_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiReturnDensity_origin_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.completeXiTail_eq_early_add_late
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedBudget_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.completeXiTail_sub_late_tendsto_zero
+```

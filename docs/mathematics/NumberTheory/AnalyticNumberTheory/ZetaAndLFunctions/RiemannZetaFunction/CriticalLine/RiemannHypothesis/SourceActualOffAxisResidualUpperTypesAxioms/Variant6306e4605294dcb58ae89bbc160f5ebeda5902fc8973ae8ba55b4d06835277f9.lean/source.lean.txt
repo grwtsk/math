@@ -1,0 +1,17 @@
+import SourceActualOffAxisResidualUpper
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualOffAxisResidualUpper
+#check actualResidual_sub_offAxisHead_eq
+#print axioms actualResidual_sub_offAxisHead_eq
+#check actualResidual_movingOffAxisHead_upper
+#print axioms actualResidual_movingOffAxisHead_upper
+#check actualResidual_movingOffAxisHead_eventual_upper
+#print axioms actualResidual_movingOffAxisHead_eventual_upper

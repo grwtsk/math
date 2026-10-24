@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiExponentialEnvelopeAudit.Variant7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c5eaacb409335a5a862dfcebd3d93c29dd6801d6` · SHA-256 `7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiExponentialEnvelope
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+```

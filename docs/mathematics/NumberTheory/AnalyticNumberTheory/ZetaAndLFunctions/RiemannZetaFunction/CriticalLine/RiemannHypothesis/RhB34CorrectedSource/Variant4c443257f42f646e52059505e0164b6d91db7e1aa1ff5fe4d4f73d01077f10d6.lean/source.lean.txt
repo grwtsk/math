@@ -1,0 +1,12 @@
+import FormalResearch.RiemannHypothesis.Landau.Correction
+
+#print axioms FormalResearch.RiemannHypothesis.Landau.Correction.normalizationPolynomial_eq
+#print axioms FormalResearch.RiemannHypothesis.Landau.Correction.nonnegative_corrected_source_of_uniform
+#print axioms FormalResearch.RiemannHypothesis.Landau.Correction.integral_correction
+#print axioms FormalResearch.RiemannHypothesis.Landau.Correction.integral_corrected_source
+#print axioms FormalResearch.RiemannHypothesis.Landau.Correction.correctedTransform_meromorphic
+#print axioms FormalResearch.RiemannHypothesis.Landau.Correction.corrected_source_checkpoint
+
+example :
+    FormalResearch.RiemannHypothesis.Landau.Correction.CorrectedSourceCheckpoint :=
+  FormalResearch.RiemannHypothesis.Landau.Correction.corrected_source_checkpoint

@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentExplicitPrimeLogAudit.Variantb5e0b6c10965e2029489161bb57f26d55bae19038a2a3abfec78d32347620c56
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `857cb3f13d12c9e29047a1937f1e7e806378f868` · SHA-256 `b5e0b6c10965e2029489161bb57f26d55bae19038a2a3abfec78d32347620c56`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceExplicitPrimeLogError
+#print RH16ExplicitPrimeLogError.explicit_psi_theta_bound
+#print axioms RH16ExplicitPrimeLogError.explicit_psi_theta_bound
+#print RH16ExplicitPrimeLogError.explicit_global_proper_power_bound
+#print axioms RH16ExplicitPrimeLogError.explicit_global_proper_power_bound
+#print RH16ExplicitPrimeLogError.explicit_natural_prime_log_error
+#print axioms RH16ExplicitPrimeLogError.explicit_natural_prime_log_error
+#print RH16ExplicitPrimeLogError.explicitPrimeLogConstant
+#print axioms RH16ExplicitPrimeLogError.explicitPrimeLogConstant
+#print RH16ExplicitPrimeLogError.explicitPrimeLogConstant_nonneg
+#print axioms RH16ExplicitPrimeLogError.explicitPrimeLogConstant_nonneg
+#print RH16ExplicitPrimeLogError.explicitPrimeLogConstant_value
+#print axioms RH16ExplicitPrimeLogError.explicitPrimeLogConstant_value
+#print RH16ExplicitPrimeLogError.explicit_real_prime_log_error
+#print axioms RH16ExplicitPrimeLogError.explicit_real_prime_log_error
+#print RH16ExplicitPrimeLogError.explicit_log_cutoff_prime_error
+#print axioms RH16ExplicitPrimeLogError.explicit_log_cutoff_prime_error
+```

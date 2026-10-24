@@ -1,0 +1,14 @@
+import SourceActualNegativeEdgeSquareStorage
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeSquareStorage.actualNegativeEdgeSquareBaseline
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeSquareStorage.actualNegativeEdgeSquareStorage
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeSquareStorage.actualNegativeEdgeSquare_reconstruction
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeSquareStorage.actualNegativeEdgeSquareSurplus_eventually_positive

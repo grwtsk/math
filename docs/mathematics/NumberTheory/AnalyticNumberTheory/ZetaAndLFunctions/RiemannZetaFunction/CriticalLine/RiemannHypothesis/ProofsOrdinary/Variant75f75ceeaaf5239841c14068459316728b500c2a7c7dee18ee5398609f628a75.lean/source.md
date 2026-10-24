@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9ac1acfc4fdb5e6ffef91365d44f0c22b3c2d675` · SHA-256 `75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceOperatorObservable
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_pullback
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_signedDefect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_add
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_coordinates
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.source_readout_eq_operator
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_operator_add_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_twice_residual_add_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.twice_residual_eq_changedSourceReadout_sub_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_of_defect_zero
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout_eq_twice_residual
+```

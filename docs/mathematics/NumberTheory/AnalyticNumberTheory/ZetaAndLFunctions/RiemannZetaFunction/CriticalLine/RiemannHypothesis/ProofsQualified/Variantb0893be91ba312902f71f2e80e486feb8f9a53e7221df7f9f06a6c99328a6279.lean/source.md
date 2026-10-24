@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantb0893be91ba312902f71f2e80e486feb8f9a53e7221df7f9f06a6c99328a6279
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e52deceb1f5b83ca7fbb7d07bac9d453d21e7292` · SHA-256 `b0893be91ba312902f71f2e80e486feb8f9a53e7221df7f9f06a6c99328a6279`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEdgeLeadingLimit
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEndpointPolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointPolynomial_tendsto_leading
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_normalizedTest_scaled_edge_tendsto
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeConvolution
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actualLeadingEdgeProduct_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.endpointProduct_integral_tendsto_leading
+#print FormalResearch.RiemannHypothesis.SourceActualEdgeLeadingLimit.actual_correlation_scaled_edge_tendsto
+```

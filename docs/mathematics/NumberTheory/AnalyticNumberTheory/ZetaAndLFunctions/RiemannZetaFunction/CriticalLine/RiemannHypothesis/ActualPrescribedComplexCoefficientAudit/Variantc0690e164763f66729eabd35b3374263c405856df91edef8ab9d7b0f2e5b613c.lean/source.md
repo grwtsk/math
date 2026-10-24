@@ -1,0 +1,42 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrescribedComplexCoefficientAudit.Variantc0690e164763f66729eabd35b3374263c405856df91edef8ab9d7b0f2e5b613c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `05c82ac7dca3e8755d389782b1bf03b76f493d9a` · SHA-256 `30f73625e08aa6da45e5ce153bdfaa4e1c32c678d2f000a8f7fbd32a457ed74a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrescribedComplexCoefficient.Variant413491e46ff44d294f2bed7218b6d1a94c405d184ef49f639dc44ce9628d2568","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"413491e46ff44d294f2bed7218b6d1a94c405d184ef49f639dc44ce9628d2568","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualPrescribedComplexCoefficient.Variant413491e46ff44d294f2bed7218b6d1a94c405d184ef49f639dc44ce9628d2568","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"413491e46ff44d294f2bed7218b6d1a94c405d184ef49f639dc44ce9628d2568","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T043839Z-1791347919382689000/ActualPrescribedComplexCoefficientAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualPrescribedComplexCoefficient
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPrescribedComplexCoefficient.Variant413491e46ff44d294f2bed7218b6d1a94c405d184ef49f639dc44ce9628d2568
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualPrescribedComplexMode
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualPrescribedComplexMode
+#print FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualPrescribedComplexMode
+#check FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualPrescribedComplexMode_re_pos
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualPrescribedComplexMode_re_pos
+#print FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualPrescribedComplexMode_re_pos
+#check FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_at_prescribed_mode
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_at_prescribed_mode
+#print FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_at_prescribed_mode
+#check FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_prescribed_square_re
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_prescribed_square_re
+#print FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_prescribed_square_re
+#check FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_prescribed_square_re_neg
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_prescribed_square_re_neg
+#print FormalResearch.RiemannHypothesis.ActualPrescribedComplexCoefficient.actualLeadingComplexCoefficient_prescribed_square_re_neg
+```

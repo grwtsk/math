@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant7d57dbfeac8bec312e42d395fce2e023f645e96e3d7c7b228075f1d4f742fdf0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5250e11fb8acf0fe7a1eff308b422f8eda59ba0f` · SHA-256 `16f7a23418001cc8dd28eba145120327eba91c02e4f12b7e0b1de490eba05cb1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEvenProductSector.Variante9e91ea28bc070bca583839b05fa62839844db6aa3c077c463957a01c08f3d5b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e9e91ea28bc070bca583839b05fa62839844db6aa3c077c463957a01c08f3d5b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEvenProductSector.Variante9e91ea28bc070bca583839b05fa62839844db6aa3c077c463957a01c08f3d5b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e9e91ea28bc070bca583839b05fa62839844db6aa3c077c463957a01c08f3d5b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/xi-analysis/latest-private-owner-readback/latest-supplement-preserved/scratch/rh16-continuation-20261006-challenge-next/SourceActualEvenProductSector-IndependentAllAnnotationAudit01/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEvenProductSector
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEvenProductSector.Variante9e91ea28bc070bca583839b05fa62839844db6aa3c077c463957a01c08f3d5b
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualOddProductMoment
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenMobiusProductMoment
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenMobiusProductMoment_eq
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.mertensResidual_eq_even_add_odd
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenPowerInventory
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_eq_two_power_sum
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_eq_full_mobius_sum
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_eq_upper_add_closed_low
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_tendsto_zero
+```

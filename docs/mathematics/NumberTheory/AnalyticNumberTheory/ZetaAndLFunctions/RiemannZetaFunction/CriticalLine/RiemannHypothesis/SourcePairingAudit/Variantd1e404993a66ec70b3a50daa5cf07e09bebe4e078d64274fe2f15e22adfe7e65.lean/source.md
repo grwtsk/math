@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePairingAudit.Variantd1e404993a66ec70b3a50daa5cf07e09bebe4e078d64274fe2f15e22adfe7e65
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `945913b610648bdb25ffe548f02f11d0c2fee0e1` · SHA-256 `d1e404993a66ec70b3a50daa5cf07e09bebe4e078d64274fe2f15e22adfe7e65`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourcePairing
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceBump
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.scaledBump
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceNormalization
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.source_normalization_pos
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.IsWeakSecondDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.dilationTest
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.normalizedTest
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceCorrelation
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.chebyshevPrimePower
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.chebyshevError
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.lowerEndpoint
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.source_interval_order
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.chebyshev_error_at_two
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceWeight
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.errorProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.signedPairing
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceFourier
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.archimedeanMultiplier
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.archimedeanIntegrand
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.archimedeanValue
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.primeTwoBoundary
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.prime_two_boundary_eq_zero_iff
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.analyticCorrection
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.primePowerContribution
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceQuadraticValue
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.DilationRealization
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.SourceRealizationExists
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.SourceRealizationUnique
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.UniformSignedLowerBound
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.UniformSignedTailLowerBound
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.uniform_lower_bound_implies_tail
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.ArithmeticRepresentation
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.sourceReflection
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.source_reflection_involutive
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.source_reflection_preserves_interval
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.signed_pairing_polarization
+#print axioms FormalResearch.RiemannHypothesis.SourcePairing.signed_pairing_reflection_decomposition
+#check FormalResearch.RiemannHypothesis.SourcePairing.DilationRealization
+#check FormalResearch.RiemannHypothesis.SourcePairing.UniformSignedLowerBound
+#check FormalResearch.RiemannHypothesis.SourcePairing.UniformSignedTailLowerBound
+#check FormalResearch.RiemannHypothesis.SourcePairing.ArithmeticRepresentation
+#check FormalResearch.RiemannHypothesis.SourcePairing.signed_pairing_polarization
+#check FormalResearch.RiemannHypothesis.SourcePairing.signed_pairing_reflection_decomposition
+```

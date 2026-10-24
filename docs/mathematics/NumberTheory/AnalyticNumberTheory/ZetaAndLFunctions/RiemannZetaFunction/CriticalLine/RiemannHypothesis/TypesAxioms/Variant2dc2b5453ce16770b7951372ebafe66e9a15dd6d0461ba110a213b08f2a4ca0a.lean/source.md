@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant2dc2b5453ce16770b7951372ebafe66e9a15dd6d0461ba110a213b08f2a4ca0a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6190799503d79f257bf0c67185f472ab804b9a08` · SHA-256 `317690bebe7309d6970f66759d3bbe0264c5cf37112ceddd2ae5ac9189d51e85`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.Variantf28ba2aeb5b75fb71a506c62879646b5bde5df7624b3055fd2ddfeb26f424377","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f28ba2aeb5b75fb71a506c62879646b5bde5df7624b3055fd2ddfeb26f424377","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiErrorConvolutionKernel.Variantf28ba2aeb5b75fb71a506c62879646b5bde5df7624b3055fd2ddfeb26f424377","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f28ba2aeb5b75fb71a506c62879646b5bde5df7624b3055fd2ddfeb26f424377","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-xi-error-convolution-kernel/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiErrorConvolutionKernel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.Variantf28ba2aeb5b75fb71a506c62879646b5bde5df7624b3055fd2ddfeb26f424377
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorDifferenceKernel_mass
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorConvolution_difference_eq_kernel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorConvolution_difference_eq_kernel
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualCenteredMangoldtLogError_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualCenteredMangoldtLogError_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorConvolution_difference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualMangoldtErrorConvolution_difference_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualDampedXiFinitePrimitive_centered_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolutionKernel.actualDampedXiFinitePrimitive_centered_abs_le
+```

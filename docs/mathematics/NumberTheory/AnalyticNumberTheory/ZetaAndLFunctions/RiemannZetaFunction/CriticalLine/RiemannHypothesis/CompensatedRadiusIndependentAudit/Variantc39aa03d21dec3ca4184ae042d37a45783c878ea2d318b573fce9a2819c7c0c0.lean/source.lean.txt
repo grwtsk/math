@@ -1,0 +1,19 @@
+import SourceCompensatedRadiusConsumer
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.fullNames true
+set_option pp.explicit true
+open FormalResearch.RiemannHypothesis.SourceCompensatedRadiusConsumer
+#check @residual_tail_of_compensatedJointWork_tail
+#print axioms residual_tail_of_compensatedJointWork_tail
+#print residual_tail_of_compensatedJointWork_tail
+#check @estimate_of_compensatedJointWork_tail
+#print axioms estimate_of_compensatedJointWork_tail
+#print estimate_of_compensatedJointWork_tail
+#check @residual_tail_of_compensatedBilinearWork_tail
+#print axioms residual_tail_of_compensatedBilinearWork_tail
+#print residual_tail_of_compensatedBilinearWork_tail
+#check @estimate_of_compensatedBilinearWork_tail
+#print axioms estimate_of_compensatedBilinearWork_tail
+#print estimate_of_compensatedBilinearWork_tail

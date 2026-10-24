@@ -1,0 +1,70 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRationalFiniteHead.Variant09afc95353e4394a7d81a1f3e4e980dfa31f60419254eafcc031dea9b3fcb496","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"09afc95353e4394a7d81a1f3e4e980dfa31f60419254eafcc031dea9b3fcb496","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceRationalFiniteHead.Variant09afc95353e4394a7d81a1f3e4e980dfa31f60419254eafcc031dea9b3fcb496","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"09afc95353e4394a7d81a1f3e4e980dfa31f60419254eafcc031dea9b3fcb496","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-next-cycle-20261006/root/independent-SourceRationalFiniteHeadAudit-1791346384890298000/SourceRationalFiniteHeadAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceRationalFiniteHead
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRationalFiniteHead.Variant09afc95353e4394a7d81a1f3e4e980dfa31f60419254eafcc031dea9b3fcb496
+
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceRationalFiniteHead
+
+#check rationalKernelHeadMass
+#print rationalKernelHeadMass
+#print axioms rationalKernelHeadMass
+
+#check rationalRemainderHead
+#print rationalRemainderHead
+#print axioms rationalRemainderHead
+
+#check correctedRationalHead
+#print correctedRationalHead
+#print axioms correctedRationalHead
+
+#check angularHead_eq_rational_masses
+#print angularHead_eq_rational_masses
+#print axioms angularHead_eq_rational_masses
+
+#check correctedRationalHead_eq_head_sub_baseline
+#print correctedRationalHead_eq_head_sub_baseline
+#print axioms correctedRationalHead_eq_head_sub_baseline
+
+#check correctedRationalHead_real_readout
+#print correctedRationalHead_real_readout
+#print axioms correctedRationalHead_real_readout
+
+#check residual_sub_correctedRationalHead_norm_bound
+#print residual_sub_correctedRationalHead_norm_bound
+#print axioms residual_sub_correctedRationalHead_norm_bound
+
+#check residual_sub_correctedRationalHead_growing_norm_bound
+#print residual_sub_correctedRationalHead_growing_norm_bound
+#print axioms residual_sub_correctedRationalHead_growing_norm_bound
+
+#check residual_sub_correctedRationalHead_growing_abs_bound
+#print residual_sub_correctedRationalHead_growing_abs_bound
+#print axioms residual_sub_correctedRationalHead_growing_abs_bound
+
+#check residual_upper_of_correctedRationalHead_with_baseline
+#print residual_upper_of_correctedRationalHead_with_baseline
+#print axioms residual_upper_of_correctedRationalHead_with_baseline
+
+#check residual_upper_of_correctedRationalHead
+#print residual_upper_of_correctedRationalHead
+#print axioms residual_upper_of_correctedRationalHead
+
+#check CorrectedRationalHeadTailUpperBound
+#print CorrectedRationalHeadTailUpperBound
+#print axioms CorrectedRationalHeadTailUpperBound
+
+#check native_signed_head_of_corrected_rational
+#print native_signed_head_of_corrected_rational
+#print axioms native_signed_head_of_corrected_rational
+
+#check estimate_of_corrected_rational_head
+#print estimate_of_corrected_rational_head
+#print axioms estimate_of_corrected_rational_head
+
+end FormalResearch.RiemannHypothesis.SourceRationalFiniteHead

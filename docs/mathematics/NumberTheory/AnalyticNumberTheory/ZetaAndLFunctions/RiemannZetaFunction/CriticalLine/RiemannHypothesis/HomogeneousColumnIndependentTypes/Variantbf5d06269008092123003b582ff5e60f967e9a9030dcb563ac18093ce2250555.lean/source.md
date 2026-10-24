@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.HomogeneousColumnIndependentTypes.Variantbf5d06269008092123003b582ff5e60f967e9a9030dcb563ac18093ce2250555
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6f2f26bfb8d591413d973f753194b4c29755ffad` · SHA-256 `bf5d06269008092123003b582ff5e60f967e9a9030dcb563ac18093ce2250555`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualHomogeneousColumnCancellation
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.RootActualHomogeneousColumnCancellation
+#check actualHomogeneousColumnInner_eq_boundary
+#print axioms actualHomogeneousColumnInner_eq_boundary
+#check actualHomogeneousColumnCompensation
+#print axioms actualHomogeneousColumnCompensation
+#check actualCriticalHomogeneousColumnCompensation
+#print axioms actualCriticalHomogeneousColumnCompensation
+#check actualHomogeneousColumnCompensation_eq_upper_trace
+#print axioms actualHomogeneousColumnCompensation_eq_upper_trace
+#check actualCriticalHomogeneousColumnCompensation_eq_upper_trace
+#print axioms actualCriticalHomogeneousColumnCompensation_eq_upper_trace
+```

@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOddNegativeEdgeQualified.Variant2a4bb34150c7ed2d7e2ae4a99b1894e5dab65d3b11e762c6c99a7cbb6cc84602
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fc3f6925f8d92a57fc3c607c99007d8083c19e65` · SHA-256 `b4d4b62aee5f25cf375dc91051ddc4cfc12c799c4021ca697f80ac52922f4af3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOddNegativeEdge.Variant00e7e92d78bcd64f64d4a8e41b7634ccf1a9cba5683f0b560db3beb7a61f502d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"00e7e92d78bcd64f64d4a8e41b7634ccf1a9cba5683f0b560db3beb7a61f502d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualOddNegativeEdge.Variant00e7e92d78bcd64f64d4a8e41b7634ccf1a9cba5683f0b560db3beb7a61f502d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"00e7e92d78bcd64f64d4a8e41b7634ccf1a9cba5683f0b560db3beb7a61f502d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-odd-negative-edge-v1/SourceActualOddNegativeEdgeQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualOddNegativeEdge
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOddNegativeEdge.Variant00e7e92d78bcd64f64d4a8e41b7634ccf1a9cba5683f0b560db3beb7a61f502d
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualEvenProduct_subset_abs_sum_le
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeBlock
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualEvenNegativeEdgeBlock
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeComplement
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualNegativeEdgeMangoldtBlock_eq_even_add_odd
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeBlock_eq_full_mobius_sum
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualEvenNegativeEdgeBlock_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddProductMoment_eq_edge_add_complement
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualResidual_eq_even_add_oddEdge_add_complement
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeBlock_eventually_negative
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeBlock_tendsto_atBot
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeComplement_eventually_above_oddMoment
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualEvenNegativeEdgeComplement
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualNegativeEdgeComplement_eq_even_add_odd
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualEvenNegativeEdgeComplement_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeComplement_eventually_positive_growth
+#print FormalResearch.RiemannHypothesis.SourceActualOddNegativeEdge.actualOddNegativeEdgeComplement_tendsto_atTop
+```

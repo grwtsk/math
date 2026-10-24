@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant31a6f8e4960c8b88ec6d043b420abef1688a6b4ae067dae4f9db5d34169eb97e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ebb91187cd03419325ad19baa7eb88de6fa299b9` · SHA-256 `31a6f8e4960c8b88ec6d043b420abef1688a6b4ae067dae4f9db5d34169eb97e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCenteredHalfUpperDecay
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCriticalColumnTraceMain
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actual_half_upper_quotient_exp_lower
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_eq
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_tendsto_zero
+```

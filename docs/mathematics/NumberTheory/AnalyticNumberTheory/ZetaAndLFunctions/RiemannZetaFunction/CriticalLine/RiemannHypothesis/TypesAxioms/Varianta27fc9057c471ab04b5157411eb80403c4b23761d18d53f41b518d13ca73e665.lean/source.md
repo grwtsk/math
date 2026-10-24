@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Varianta27fc9057c471ab04b5157411eb80403c4b23761d18d53f41b518d13ca73e665
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `55f4e5096fc46b41fc93cf67280ba1412cb5606b` · SHA-256 `a27fc9057c471ab04b5157411eb80403c4b23761d18d53f41b518d13ca73e665`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSupportEdgeMangoldtMoments
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtPrefix
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtPrefix
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtPrefix_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtPrefix_le
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment_eq_prefix_integral
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment_eq_prefix_integral
+#check FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment_le
+```

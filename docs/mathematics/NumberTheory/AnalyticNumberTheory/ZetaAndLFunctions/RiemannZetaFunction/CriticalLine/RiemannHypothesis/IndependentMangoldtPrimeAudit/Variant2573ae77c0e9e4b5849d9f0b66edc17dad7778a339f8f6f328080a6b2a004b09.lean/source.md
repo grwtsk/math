@@ -1,0 +1,87 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentMangoldtPrimeAudit.Variant2573ae77c0e9e4b5849d9f0b66edc17dad7778a339f8f6f328080a6b2a004b09
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `77e967fdeef94763b629e0621f008ab9e94dadfa` · SHA-256 `a1bf003ced212c52b31df62aec1b22ee2c2865d502bcbcf6587fbc1020c18e5e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtPrimeDisclosure.Varianta45b71e87d8672398ccc46fae7988ccb77f015abf595d890bdea2612b83aafbb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a45b71e87d8672398ccc46fae7988ccb77f015abf595d890bdea2612b83aafbb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceMangoldtPrimeDisclosure.Varianta45b71e87d8672398ccc46fae7988ccb77f015abf595d890bdea2612b83aafbb","mathematical_subject":"Foundations.Unclassified","original_sha256":"a45b71e87d8672398ccc46fae7988ccb77f015abf595d890bdea2612b83aafbb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/xi-analysis/independent-prime-power/IndependentMangoldtPrimeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceMangoldtPrimeDisclosure
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtPrimeDisclosure.Varianta45b71e87d8672398ccc46fae7988ccb77f015abf595d890bdea2612b83aafbb
+
+#check RH16MangoldtPrimeDisclosure.disclosedMangoldtRow
+#print axioms RH16MangoldtPrimeDisclosure.disclosedMangoldtRow
+
+#check RH16MangoldtPrimeDisclosure.freshMangoldtRow
+#print axioms RH16MangoldtPrimeDisclosure.freshMangoldtRow
+
+#check RH16MangoldtPrimeDisclosure.freshPowerInventory
+#print axioms RH16MangoldtPrimeDisclosure.freshPowerInventory
+
+#check RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_insert
+#print axioms RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_insert
+
+#check RH16MangoldtPrimeDisclosure.freshMangoldtRow_eq_exact_power_weight
+#print axioms RH16MangoldtPrimeDisclosure.freshMangoldtRow_eq_exact_power_weight
+
+#check RH16MangoldtPrimeDisclosure.mem_freshPowerInventory_iff
+#print axioms RH16MangoldtPrimeDisclosure.mem_freshPowerInventory_iff
+
+#check RH16MangoldtPrimeDisclosure.freshMangoldtRow_at_prime_power
+#print axioms RH16MangoldtPrimeDisclosure.freshMangoldtRow_at_prime_power
+
+#check RH16MangoldtPrimeDisclosure.fresh_profile_eq_complete_power_sum
+#print axioms RH16MangoldtPrimeDisclosure.fresh_profile_eq_complete_power_sum
+
+#check RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_eq_actual_on_long
+#print axioms RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_eq_actual_on_long
+
+#check RH16MangoldtPrimeDisclosure.disclosed_profile_eq_actual_mangoldtAt
+#print axioms RH16MangoldtPrimeDisclosure.disclosed_profile_eq_actual_mangoldtAt
+
+#check RH16MangoldtPrimeDisclosure.disclosedBetaRow
+#print axioms RH16MangoldtPrimeDisclosure.disclosedBetaRow
+
+#check RH16MangoldtPrimeDisclosure.freshBetaRow
+#print axioms RH16MangoldtPrimeDisclosure.freshBetaRow
+
+#check RH16MangoldtPrimeDisclosure.disclosedBetaRow_insert
+#print axioms RH16MangoldtPrimeDisclosure.disclosedBetaRow_insert
+
+#check RH16MangoldtPrimeDisclosure.disclosedReadoutAt
+#print axioms RH16MangoldtPrimeDisclosure.disclosedReadoutAt
+
+#check RH16MangoldtPrimeDisclosure.disclosedReadoutAt_fresh_prime
+#print axioms RH16MangoldtPrimeDisclosure.disclosedReadoutAt_fresh_prime
+
+#check RH16MangoldtPrimeDisclosure.disclosedReadoutAt_eq_actual
+#print axioms RH16MangoldtPrimeDisclosure.disclosedReadoutAt_eq_actual
+
+#check RH16MangoldtPrimeDisclosure.actual_readoutAt_fresh_prime
+#print axioms RH16MangoldtPrimeDisclosure.actual_readoutAt_fresh_prime
+
+#print RH16MangoldtPrimeDisclosure.disclosedMangoldtRow
+
+#print RH16MangoldtPrimeDisclosure.freshMangoldtRow
+
+#print RH16MangoldtPrimeDisclosure.freshPowerInventory
+
+#print RH16MangoldtPrimeDisclosure.disclosedBetaRow
+
+#print RH16MangoldtPrimeDisclosure.freshBetaRow
+
+#print RH16MangoldtPrimeDisclosure.disclosedReadoutAt
+
+#print RH16Tandem.SourcePrimeDisclosure.freshPrimeCorrection
+
+#print RH16Tandem.SourcePrimeDisclosure.physicalDiagonal
+
+#print RH16Tandem.SourcePrimeDisclosure.compensatedReadout
+
+```

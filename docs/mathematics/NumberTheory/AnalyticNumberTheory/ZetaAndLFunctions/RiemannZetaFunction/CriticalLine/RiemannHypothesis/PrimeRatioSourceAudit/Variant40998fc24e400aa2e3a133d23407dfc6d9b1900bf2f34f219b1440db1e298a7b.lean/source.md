@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrimeRatioSourceAudit.Variant40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6c7cec594f0d7414a9ae224cc3f208ef82f33117` · SHA-256 `40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.ordered_disjoint_assignment_product
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.reciprocal_sqrt_product
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.reciprocal_sqrt_products
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.prime_product_squarefree
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.assignments
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.joinAssignment
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.supportedPairs
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.assignment_subsets
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.assignment_primeFactors
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.joinAssignment_injOn
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.mem_supportedPairs_iff
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.supportedPairs_weight_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.supportedPairs_moebius_weight_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.squareful_ratio_coefficient_zero
+```

@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.B16a3b399dbbb151f17f6f86a2c97c154b19ee7320817be4da2ddf2bfd3c12afSourceActualEdge.Variantb16a3b399dbbb151f17f6f86a2c97c154b19ee7320817be4da2ddf2bfd3c12af
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4749c858f20be5cc7911692ae9eebdbcfed4fc0b` · SHA-256 `b16a3b399dbbb151f17f6f86a2c97c154b19ee7320817be4da2ddf2bfd3c12af`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEdgeComplementCancellation
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeComplementCancellation.actualNegativeEdgeComplement_scaled_eventually_positive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeComplementCancellation.actualNegativeEdgeComplement_scaled_eventually_positive
+
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeComplementCancellation.actualNegativeEdgeComplement_eventually_positive_growth
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeComplementCancellation.actualNegativeEdgeComplement_eventually_positive_growth
+
+#check FormalResearch.RiemannHypothesis.SourceActualEdgeComplementCancellation.actualNegativeEdgeComplement_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEdgeComplementCancellation.actualNegativeEdgeComplement_tendsto_atTop
+```

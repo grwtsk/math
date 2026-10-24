@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalEdgeNineQualifiedBodyV2.Variant51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f85baba94bf47a7b1ce048901ca551f21d9c241a` · SHA-256 `51ec465d3a9aa41e0548b6b42cd0b72edad70383951cd1e7427da5834382b294`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCriticalCovarianceEdgeNine
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+-- Proof bodies and explicit arguments retained; inferable binder/let annotations omitted.
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+```

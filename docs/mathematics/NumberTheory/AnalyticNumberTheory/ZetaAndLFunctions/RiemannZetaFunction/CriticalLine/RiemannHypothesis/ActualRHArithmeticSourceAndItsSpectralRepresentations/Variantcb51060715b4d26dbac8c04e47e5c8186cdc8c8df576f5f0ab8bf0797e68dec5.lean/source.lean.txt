@@ -1,0 +1,30 @@
+import FormalResearch.RiemannHypothesis.SourcePairing
+import FormalResearch.RiemannHypothesis.MultiplicativePhase
+import FormalResearch.RiemannHypothesis.PhaseInvolution
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Realization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeNormalization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationMoment
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimePowerDescent
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeFourier
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeAdmissibility
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.AdmissionSource
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourcePlancherel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.DilationFourierFactorization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimePowerPhaseDefect
+
+/-!
+# Actual RH arithmetic source and its spectral representations
+
+This import boundary exposes the immutable source definitions, their explicit
+weak derivative and normalization, the actual correlation and arithmetic
+identity, and the Fourier and phase representations of the same source.
+Existing declarations retain their original namespaces and source paths.
+
+The positive autocorrelation density is distinct from the signed arithmetic
+quadratic value. Its phase decomposition retains the full negative prime-power
+budget, strict cutoff, Gamma multiplier, and source normalization. These
+identities do not prove the uniform estimate or the Riemann Hypothesis.
+-/

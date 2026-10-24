@@ -1,0 +1,198 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceBumpAutocorrelation.Variant72dc637d9280b4b840dce888047846214b58c4fe56c332a8e8ab6e39f0efee8e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"72dc637d9280b4b840dce888047846214b58c4fe56c332a8e8ab6e39f0efee8e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceBumpAutocorrelation.Variant72dc637d9280b4b840dce888047846214b58c4fe56c332a8e8ab6e39f0efee8e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"72dc637d9280b4b840dce888047846214b58c4fe56c332a8e8ab6e39f0efee8e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-packet-20261005/AuditIncrement-v3.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceBumpAutocorrelation
+import FormalResearch.RiemannHypothesis.SourceBumpPeano
+import FormalResearch.RiemannHypothesis.SourcePrimitiveBumpProfile
+import FormalResearch.RiemannHypothesis.SourcePrimitiveCorrelationCurvature
+import FormalResearch.RiemannHypothesis.SourcePositivePeanoPrimitive
+import FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport
+import FormalResearch.RiemannHypothesis.SourcePeanoBoundaryAtoms
+import FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceBumpAutocorrelation.Variant72dc637d9280b4b840dce888047846214b58c4fe56c332a8e8ab6e39f0efee8e
+
+namespace FormalResearch.RiemannHypothesis.SourceBumpAutocorrelation
+#check overlapP0
+#print axioms overlapP0
+#check overlapProfile
+#print axioms overlapProfile
+#check unitBump_overlap_integral
+#print axioms unitBump_overlap_integral
+#check sourceBump_overlap_eq_indicator
+#print axioms sourceBump_overlap_eq_indicator
+#check sourceBump_autocorrelation_eq_profile
+#print axioms sourceBump_autocorrelation_eq_profile
+#check scaledBump_autocorrelation_eq_profile
+#print axioms scaledBump_autocorrelation_eq_profile
+end FormalResearch.RiemannHypothesis.SourceBumpAutocorrelation
+
+namespace FormalResearch.RiemannHypothesis.SourceBumpPeano
+#check overlapP1
+#print axioms overlapP1
+#check overlapP2
+#print axioms overlapP2
+#check overlapProfile_neg_deriv
+#print axioms overlapProfile_neg_deriv
+#check overlapProfile_deriv
+#print axioms overlapProfile_deriv
+#check overlapProfile_deriv_eq
+#print axioms overlapProfile_deriv_eq
+#check overlapProfile_second_deriv_certificate
+#print axioms overlapProfile_second_deriv_certificate
+#check overlapP0_nonneg
+#print axioms overlapP0_nonneg
+#check overlapP1_nonneg
+#print axioms overlapP1_nonneg
+#check overlapP2_nonneg
+#print axioms overlapP2_nonneg
+#check overlapProfile_nonneg
+#print axioms overlapProfile_nonneg
+#check overlapProfile_deriv_nonpos
+#print axioms overlapProfile_deriv_nonpos
+#check overlapProfile_second_deriv_lower
+#print axioms overlapProfile_second_deriv_lower
+#check overlapProfile_zero
+#print axioms overlapProfile_zero
+#check overlapProfile_deriv_zero
+#print axioms overlapProfile_deriv_zero
+#check overlapProfile_second_deriv_zero
+#print axioms overlapProfile_second_deriv_zero
+#check peanoNumerator
+#print axioms peanoNumerator
+#check peanoNumerator_decomposition
+#print axioms peanoNumerator_decomposition
+#check peanoNumerator_nonneg
+#print axioms peanoNumerator_nonneg
+#check peanoNumerator_nonneg_iff
+#print axioms peanoNumerator_nonneg_iff
+end FormalResearch.RiemannHypothesis.SourceBumpPeano
+
+namespace FormalResearch.RiemannHypothesis.SourcePrimitiveBumpProfile
+#check sourceBump_overlap_integrable
+#print axioms sourceBump_overlap_integrable
+#check primitiveCorrelationZero_eq_profile
+#print axioms primitiveCorrelationZero_eq_profile
+end FormalResearch.RiemannHypothesis.SourcePrimitiveBumpProfile
+
+namespace FormalResearch.RiemannHypothesis.SourcePrimitiveCorrelationCurvature
+#check primitiveCorrelationZero_second_deriv_eq_neg_one
+#print axioms primitiveCorrelationZero_second_deriv_eq_neg_one
+#check primitiveCorrelationOne_second_deriv_eq_neg_two
+#print axioms primitiveCorrelationOne_second_deriv_eq_neg_two
+#check primitiveCorrelationZero_contDiff_two
+#print axioms primitiveCorrelationZero_contDiff_two
+#check primitiveCorrelationOne_contDiff_two
+#print axioms primitiveCorrelationOne_contDiff_two
+#check primitiveCorrelationZero_contDiff_four
+#print axioms primitiveCorrelationZero_contDiff_four
+end FormalResearch.RiemannHypothesis.SourcePrimitiveCorrelationCurvature
+
+namespace FormalResearch.RiemannHypothesis.SourcePositivePeanoPrimitive
+#check sourcePeanoPrimitive
+#print axioms sourcePeanoPrimitive
+#check primitiveCorrelationZero_fourth_deriv
+#print axioms primitiveCorrelationZero_fourth_deriv
+#check sourcePeanoPrimitive_second_deriv
+#print axioms sourcePeanoPrimitive_second_deriv
+#check sourcePeanoPrimitive_contDiff_two
+#print axioms sourcePeanoPrimitive_contDiff_two
+end FormalResearch.RiemannHypothesis.SourcePositivePeanoPrimitive
+
+namespace FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport
+#check normalizedOverlapProfile
+#print axioms normalizedOverlapProfile
+#check normalizedOverlapProfile_hasDerivAt
+#print axioms normalizedOverlapProfile_hasDerivAt
+#check normalizedOverlapProfile_deriv
+#print axioms normalizedOverlapProfile_deriv
+#check normalizedOverlapProfile_second_hasDerivAt
+#print axioms normalizedOverlapProfile_second_hasDerivAt
+#check primitiveCorrelationZero_deriv_eq_normalizedOverlapProfile
+#print axioms primitiveCorrelationZero_deriv_eq_normalizedOverlapProfile
+#check primitiveCorrelationZero_second_deriv_eq_normalizedOverlapProfile
+#print axioms primitiveCorrelationZero_second_deriv_eq_normalizedOverlapProfile
+#check primitiveCorrelationZero_deriv_eq_profile
+#print axioms primitiveCorrelationZero_deriv_eq_profile
+#check primitiveCorrelationZero_second_deriv_eq_profile
+#print axioms primitiveCorrelationZero_second_deriv_eq_profile
+#check sourcePeanoPrimitive_eq_profile
+#print axioms sourcePeanoPrimitive_eq_profile
+#check sourcePeanoPrimitive_nonneg
+#print axioms sourcePeanoPrimitive_nonneg
+#check sourcePeanoPrimitive_nonneg_iff
+#print axioms sourcePeanoPrimitive_nonneg_iff
+end FormalResearch.RiemannHypothesis.SourcePeanoProfileTransport
+
+namespace FormalResearch.RiemannHypothesis.SourcePeanoBoundaryAtoms
+#check peanoScale
+#print axioms peanoScale
+#check boundaryPeano
+#print axioms boundaryPeano
+#check boundaryKernel
+#print axioms boundaryKernel
+#check boundaryPeano_contDiff_two
+#print axioms boundaryPeano_contDiff_two
+#check boundaryPeano_second_deriv
+#print axioms boundaryPeano_second_deriv
+#check boundaryPeano_nonneg
+#print axioms boundaryPeano_nonneg
+#check peanoScale_mul_closedPrimeMoment_eq_atoms
+#print axioms peanoScale_mul_closedPrimeMoment_eq_atoms
+#check peanoScale_mul_mertensResidual_eq_atoms
+#print axioms peanoScale_mul_mertensResidual_eq_atoms
+end FormalResearch.RiemannHypothesis.SourcePeanoBoundaryAtoms
+
+namespace FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound
+#check mangoldtDirichletTerm
+#print axioms mangoldtDirichletTerm
+#check cellMajorant
+#print axioms cellMajorant
+#check dirichletBudget
+#print axioms dirichletBudget
+#check mangoldtDirichletTerm_zero
+#print axioms mangoldtDirichletTerm_zero
+#check mangoldtDirichletTerm_one
+#print axioms mangoldtDirichletTerm_one
+#check mangoldtDirichletTerm_nonneg
+#print axioms mangoldtDirichletTerm_nonneg
+#check mangoldtDirichletTerm_le_cellMajorant
+#print axioms mangoldtDirichletTerm_le_cellMajorant
+#check cellMajorant_nonneg
+#print axioms cellMajorant_nonneg
+#check majorantPrimitive
+#print axioms majorantPrimitive
+#check majorantPrimitive_hasDerivAt
+#print axioms majorantPrimitive_hasDerivAt
+#check cellMajorant_continuousOn
+#print axioms cellMajorant_continuousOn
+#check cellMajorant_intervalIntegrable
+#print axioms cellMajorant_intervalIntegrable
+#check majorantPrimitive_one
+#print axioms majorantPrimitive_one
+#check cellMajorant_integral_eq
+#print axioms cellMajorant_integral_eq
+#check cellMajorant_integral_le
+#print axioms cellMajorant_integral_le
+#check mangoldtDirichletTerm_le_cellIntegral
+#print axioms mangoldtDirichletTerm_le_cellIntegral
+#check mangoldtDirichlet_sum_range_le
+#print axioms mangoldtDirichlet_sum_range_le
+#check mangoldtDirichlet_summable
+#print axioms mangoldtDirichlet_summable
+#check mangoldtDirichlet_tsum_eq_shift
+#print axioms mangoldtDirichlet_tsum_eq_shift
+#check mangoldtDirichlet_tsum_le
+#print axioms mangoldtDirichlet_tsum_le
+#check tsum_vonMangoldt_div_rpow_le
+#print axioms tsum_vonMangoldt_div_rpow_le
+#check movingLine_one_lt
+#print axioms movingLine_one_lt
+#check mangoldtDirichlet_movingLine_le
+#print axioms mangoldtDirichlet_movingLine_le
+#check mangoldtDirichlet_movingLine_le_quadratic
+#print axioms mangoldtDirichlet_movingLine_le_quadratic
+end FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound

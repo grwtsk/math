@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant9291972f1d69da115ac6db5cbaf95507f760eb73fbf4ed5d9ac3214bbd45d02f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `757355900e17a47f45919a56a9ac29fc4b04a44f` · SHA-256 `9291972f1d69da115ac6db5cbaf95507f760eb73fbf4ed5d9ac3214bbd45d02f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Cycle14PhaseMassRegent
+
+set_option linter.hashCommand false
+
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_sub_one_eq_phase_prefix
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_sub_one_eq_phase_prefix
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positive_phase_prefix_le_mass
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positive_phase_prefix_le_mass
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_criticalPrimeTest_sub_one
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_criticalPrimeTest_sub_one
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_early_point_ge
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_early_point_ge
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.negativeMass_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.negativeMass_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_variation_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_variation_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.pairedTailTest_variation_ge_early_exponential
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.pairedTailTest_variation_ge_early_exponential
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_linear
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_linear
+#check FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_not_eventually_bounded
+#print axioms FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_not_eventually_bounded
+```

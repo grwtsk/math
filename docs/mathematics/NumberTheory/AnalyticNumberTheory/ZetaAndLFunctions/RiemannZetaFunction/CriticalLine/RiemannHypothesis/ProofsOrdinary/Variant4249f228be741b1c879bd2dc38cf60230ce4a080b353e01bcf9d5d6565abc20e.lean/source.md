@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant4249f228be741b1c879bd2dc38cf60230ce4a080b353e01bcf9d5d6565abc20e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4089cfce149fa17a30cd73279a18b720193ce4d3` · SHA-256 `4249f228be741b1c879bd2dc38cf60230ce4a080b353e01bcf9d5d6565abc20e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualDiscreteLogRowVolterra
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualDiscreteLogProfile
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualDiscreteLogProfile_right_strip_zero
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile_eq_volterra
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualContinuousLogProfile_right_strip_lower
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualLogRowEulerRemainder_right_strip_le
+#print FormalResearch.RiemannHypothesis.SourceActualDiscreteLogRowVolterra.actualLogRowEulerRemainder_right_strip_neg
+```

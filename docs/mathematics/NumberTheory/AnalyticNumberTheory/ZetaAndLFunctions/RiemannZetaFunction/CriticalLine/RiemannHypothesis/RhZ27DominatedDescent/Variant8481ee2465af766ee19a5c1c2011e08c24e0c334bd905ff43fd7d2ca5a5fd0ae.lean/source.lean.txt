@@ -1,0 +1,11 @@
+import FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent
+
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.source_transform_square_norms_summable
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.source_transform_squares_summable
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.zero_sum_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.arithmetic_form_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.arithmetic_zero_equality
+
+example :
+    FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.ArithmeticZeroEqualityObligation :=
+  FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent.arithmetic_zero_equality

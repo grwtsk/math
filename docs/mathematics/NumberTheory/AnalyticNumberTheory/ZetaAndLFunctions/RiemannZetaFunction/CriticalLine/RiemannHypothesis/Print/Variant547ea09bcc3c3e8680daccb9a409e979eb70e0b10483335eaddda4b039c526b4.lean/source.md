@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Print.Variant547ea09bcc3c3e8680daccb9a409e979eb70e0b10483335eaddda4b039c526b4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `18f742fce13711a77a02d3658da46a90741a4fd5` · SHA-256 `547ea09bcc3c3e8680daccb9a409e979eb70e0b10483335eaddda4b039c526b4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+
+#print criticalCumulativeDiscrepancy
+#print criticalDiscrepancyPrimitive
+#print criticalDiscrepancyBridge
+#print criticalCumulativeDiscrepancy_eq
+#print criticalCumulativeDiscrepancy_at_upper
+#print criticalCumulativeDiscrepancy_at_zero
+#print criticalCumulativeDiscrepancy_intervalIntegrable
+#print criticalDiscrepancyPrimitive_at_zero
+#print criticalDiscrepancyPrimitive_continuous
+#print criticalDiscrepancyPrimitive_absolutelyContinuous
+#print criticalDiscrepancyPrimitive_ae_hasDerivAt
+#print criticalDiscrepancyPrimitive_sub
+#print criticalDiscrepancyPrimitive_eq_primeLogSum
+#print criticalDiscrepancyBridge_at_zero
+#print criticalDiscrepancyBridge_at_upper
+#print criticalDiscrepancyBridge_continuous
+#print criticalDiscrepancyBridge_absolutelyContinuous
+#print criticalDiscrepancyBridge_ae_hasDerivAt
+```

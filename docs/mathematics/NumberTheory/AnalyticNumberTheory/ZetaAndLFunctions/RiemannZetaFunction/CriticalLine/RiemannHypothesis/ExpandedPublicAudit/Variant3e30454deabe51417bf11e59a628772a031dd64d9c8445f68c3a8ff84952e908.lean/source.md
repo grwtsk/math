@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ExpandedPublicAudit.Variant3e30454deabe51417bf11e59a628772a031dd64d9c8445f68c3a8ff84952e908
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91aefedfd17ba92de7ff815b9671a32008210d9b` · SHA-256 `5ac600e9015ccc1f87648f0b031baae8e5554e1d24a38a64df55672108781ff9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCutoffOneSharpTail.Variantde32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"de32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceCutoffOneSharpTail.Variantde32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1","mathematical_subject":"Foundations.Unclassified","original_sha256":"de32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/graph-review/cutoff-one-consequences/native/author-attempt03/ExpandedPublicAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCutoffOneSharpTail
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCutoffOneSharpTail.Variantde32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1
+
+set_option linter.hashCommand false
+#check RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost
+#print axioms RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost
+#check RH16CutoffOneSharpTail.cutoffOneSharpLedgerCost
+#print axioms RH16CutoffOneSharpTail.cutoffOneSharpLedgerCost
+#check RH16CutoffOneSharpTail.cutoffOneDiagonal_sub_prime_le_three_halves
+#print axioms RH16CutoffOneSharpTail.cutoffOneDiagonal_sub_prime_le_three_halves
+#check RH16CutoffOneSharpTail.cutoffOnePrimeDiagonal_tail_error
+#print axioms RH16CutoffOneSharpTail.cutoffOnePrimeDiagonal_tail_error
+#check RH16CutoffOneSharpTail.cutoffOneDiagonal_tail_error
+#print axioms RH16CutoffOneSharpTail.cutoffOneDiagonal_tail_error
+#check RH16CutoffOneSharpTail.cutoffOneSamplingError_tail
+#print axioms RH16CutoffOneSharpTail.cutoffOneSamplingError_tail
+#check RH16CutoffOneSharpTail.cutoffOneLedgerError_tail
+#print axioms RH16CutoffOneSharpTail.cutoffOneLedgerError_tail
+#check RH16CutoffOneSharpTail.actual_cumulative_jointFlux_tail
+#print axioms RH16CutoffOneSharpTail.actual_cumulative_jointFlux_tail
+#check RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost_ninety_one_lt_26
+#print axioms RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost_ninety_one_lt_26
+```

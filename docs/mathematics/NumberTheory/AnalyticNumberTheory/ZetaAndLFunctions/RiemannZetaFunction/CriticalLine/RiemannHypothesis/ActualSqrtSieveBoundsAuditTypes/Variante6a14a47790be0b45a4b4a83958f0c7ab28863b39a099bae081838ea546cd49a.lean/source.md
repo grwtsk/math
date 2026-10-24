@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSqrtSieveBoundsAuditTypes.Variante6a14a47790be0b45a4b4a83958f0c7ab28863b39a099bae081838ea546cd49a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0a90cd9c40c3665ce6c1c2186dd319fbd362b6ad` · SHA-256 `d7f14ac322d705b5b3f9e803e690c18e946a354aa4c2353837cf639e557b6aea`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSqrtSieveBounds.Variant4407504e9f758c571ef40ea9dbbcf726fc9f4eba87cf32bae980c7477c37308b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4407504e9f758c571ef40ea9dbbcf726fc9f4eba87cf32bae980c7477c37308b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualSqrtSieveBounds.Variant4407504e9f758c571ef40ea9dbbcf726fc9f4eba87cf32bae980c7477c37308b","mathematical_subject":"Foundations.Unclassified","original_sha256":"4407504e9f758c571ef40ea9dbbcf726fc9f4eba87cf32bae980c7477c37308b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualSqrtSieveBoundsAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualSqrtSieveBounds
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSqrtSieveBounds.Variant4407504e9f758c571ef40ea9dbbcf726fc9f4eba87cf32bae980c7477c37308b
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16IndependentChallengeNext.reciprocalSqrt_sum_upper
+#print axioms RH16IndependentChallengeNext.reciprocalSqrt_sum_upper
+#check RH16IndependentChallengeNext.reciprocalSqrt_sum_upper_total
+#print axioms RH16IndependentChallengeNext.reciprocalSqrt_sum_upper_total
+#check RH16IndependentChallengeNext.reciprocalSqrt_sum_lower
+#print axioms RH16IndependentChallengeNext.reciprocalSqrt_sum_lower
+#check RH16IndependentChallengeNext.reciprocalSquare_sum_upper
+#print axioms RH16IndependentChallengeNext.reciprocalSquare_sum_upper
+#check RH16IndependentChallengeNext.reciprocal_small_square_divisor_bonus
+#print axioms RH16IndependentChallengeNext.reciprocal_small_square_divisor_bonus
+```

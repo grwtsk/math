@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszQuadraticLaplaceTypesAxioms.Variante2fede1104b029f3f69be0f4f9ee0fc1dfdc45782e049909f12da5dcb75ca69a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f7a21278dac3d71b7298cb9e6a982bf95314aeb2` · SHA-256 `e2fede1104b029f3f69be0f4f9ee0fc1dfdc45782e049909f12da5dcb75ca69a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszQuadraticLaplace
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszQuadraticLaplaceBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszQuadraticLaplaceBudget
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative_future_envelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualRieszAbsoluteCumulative_future_envelope
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_absolute_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_absolute_budget
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszQuadraticLaplace.actualFixedCenteredRieszLaplace_positive_norm_le
+```

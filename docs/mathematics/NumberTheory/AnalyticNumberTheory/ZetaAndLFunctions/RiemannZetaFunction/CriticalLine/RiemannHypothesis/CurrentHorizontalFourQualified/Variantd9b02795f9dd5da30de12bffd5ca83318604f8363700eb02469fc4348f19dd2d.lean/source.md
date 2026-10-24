@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CurrentHorizontalFourQualified.Variantd9b02795f9dd5da30de12bffd5ca83318604f8363700eb02469fc4348f19dd2d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fe703c01abf8d4124f031dd41ffbdc89e81e2c5c` · SHA-256 `d4a27dfca4171088baf78fa147e5e949a46d6d3c276ce54768a9d655f07a6659`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualBumpHorizontalStripBudget.Variant5bba91631bbf8e39213854110733ab8debee8956e130ba9aae11f021a20c575d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5bba91631bbf8e39213854110733ab8debee8956e130ba9aae11f021a20c575d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualBumpHorizontalStripBudget.Variant5bba91631bbf8e39213854110733ab8debee8956e130ba9aae11f021a20c575d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5bba91631bbf8e39213854110733ab8debee8956e130ba9aae11f021a20c575d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-signed-zero-dyadic-shell/current-horizontal-prerequisites-v1/CurrentHorizontalFourQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualBumpHorizontalStripBudget
+import ActualCompletedHorizontalBudget
+import ActualMovingHorizontalCompletedBudget
+import ActualCompletedHorizontalIntegrability
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualBumpHorizontalStripBudget.Variant5bba91631bbf8e39213854110733ab8debee8956e130ba9aae11f021a20c575d
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_norm_le_abs_re
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_on_strip_norm_le
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bumpMellinWeight_on_strip_norm_le
+#print FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bilateral_on_strip_norm_le
+#print FormalResearch.RiemannHypothesis.ActualCompletedHorizontalBudget.actual_completed_logDeriv_good_line
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualCompletedHorizontalIntegral
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_exponential_height_ratio_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_completed_norm_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualHorizontalSourceConstant
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_moving_height_norm_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_budget
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_moving_goodheight_log_factor_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualUniformHorizontalSourceConstant
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_uniform_budget
+#print FormalResearch.RiemannHypothesis.ActualCompletedHorizontalIntegrability.actual_bilateral_transform_continuous
+#print FormalResearch.RiemannHypothesis.ActualCompletedHorizontalIntegrability.actual_completed_horizontal_intervalIntegrable
+```

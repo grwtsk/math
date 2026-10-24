@@ -1,0 +1,69 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant4d982c1835b7095e2afd63c6783305da5e8e5d4789e33ea964c5f3b8ac297046
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4611b2c540a4371c2aa7461316bd7946c0447e25` · SHA-256 `c5e59f2cde4cd1f3a6db9df45f191f87d3eced40a74cd3fa77b4aff23e04b8f0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePairedPrimeAverages.Variant5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePairedPrimeAverages.Variant5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle10/regent-paired-averages/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourcePairedPrimeAverages
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePairedPrimeAverages.Variant5580b526c0c5cb277603b88da196479ac9177df484e5c4015d48c3e101922b0b
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedPrimeAverages
+#check negativeErrorMean
+#print axioms negativeErrorMean
+#check pairedErrorContrast
+#print axioms pairedErrorContrast
+#check PairedContrastTailLowerBound
+#print axioms PairedContrastTailLowerBound
+#check negativeMass_ge_one
+#print axioms negativeMass_ge_one
+#check negativeMass_pos
+#print axioms negativeMass_pos
+#check contrast_inner_eq
+#print axioms contrast_inner_eq
+#check contrast_outer_intervalIntegrable
+#print axioms contrast_outer_intervalIntegrable
+#check contrast_integral_eq
+#print axioms contrast_integral_eq
+#check pairedErrorContrast_eq
+#print axioms pairedErrorContrast_eq
+#check criticalSignedWork_eq_contrast_sub_mean
+#print axioms criticalSignedWork_eq_contrast_sub_mean
+#check negativeSlopeWork_abs_le_mass
+#print axioms negativeSlopeWork_abs_le_mass
+#check negativeErrorMean_abs_le
+#print axioms negativeErrorMean_abs_le
+#check negativeErrorMean_uniformly_bounded
+#print axioms negativeErrorMean_uniformly_bounded
+#check firstPrimeStorageSurplus_eq_contrast
+#print axioms firstPrimeStorageSurplus_eq_contrast
+#check primeError_difference_window
+#print axioms primeError_difference_window
+#check pairedErrorContrast_eq_prime_window
+#print axioms pairedErrorContrast_eq_prime_window
+#check primeError_difference_before_first
+#print axioms primeError_difference_before_first
+#check primeError_negative_difference_fixture
+#print axioms primeError_negative_difference_fixture
+#check centeredNegativeErrorMean
+#print axioms centeredNegativeErrorMean
+#check centeredPairedErrorContrast
+#print axioms centeredPairedErrorContrast
+#check centeredPairedErrorContrast_eq
+#print axioms centeredPairedErrorContrast_eq
+#check centeredNegativeErrorMean_eq
+#print axioms centeredNegativeErrorMean_eq
+#check criticalSignedWork_eq_centered_contrast
+#print axioms criticalSignedWork_eq_centered_contrast
+#check pairedContrast_tail_iff_criticalAbel_tail
+#print axioms pairedContrast_tail_iff_criticalAbel_tail
+#check mertens_residual_tail_iff_pairedContrast_tail
+#print axioms mertens_residual_tail_iff_pairedContrast_tail
+```

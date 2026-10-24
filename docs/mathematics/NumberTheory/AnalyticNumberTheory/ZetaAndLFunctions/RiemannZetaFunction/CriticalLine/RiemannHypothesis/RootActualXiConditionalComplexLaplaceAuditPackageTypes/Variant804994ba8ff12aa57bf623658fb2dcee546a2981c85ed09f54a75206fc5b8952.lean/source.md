@@ -1,0 +1,17 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiConditionalComplexLaplaceAuditPackageTypes.Variant804994ba8ff12aa57bf623658fb2dcee546a2981c85ed09f54a75206fc5b8952
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ec409f849a4f92bf803f5fb82b40d996fdc8e6b5` · SHA-256 `804994ba8ff12aa57bf623658fb2dcee546a2981c85ed09f54a75206fc5b8952`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiConditionalComplexLaplace
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualXiConditionalComplexLaplace.actualXiComplexLaplaceKernel_norm_eq
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiConditionalComplexLaplace.actualXiComplexLaplaceKernel_norm_eq
+#check FormalResearch.RiemannHypothesis.RootActualXiConditionalComplexLaplace.actualXiComplexLaplace_integrableOn_of_future_average
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiConditionalComplexLaplace.actualXiComplexLaplace_integrableOn_of_future_average
+#check FormalResearch.RiemannHypothesis.RootActualXiConditionalComplexLaplace.actualXiComplexLaplace_norm_le_of_future_average
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiConditionalComplexLaplace.actualXiComplexLaplace_norm_le_of_future_average
+```

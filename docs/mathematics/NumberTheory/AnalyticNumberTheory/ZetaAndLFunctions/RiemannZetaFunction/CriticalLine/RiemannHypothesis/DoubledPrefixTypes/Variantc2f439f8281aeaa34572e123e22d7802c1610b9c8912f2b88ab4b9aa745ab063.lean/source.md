@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.DoubledPrefixTypes.Variantc2f439f8281aeaa34572e123e22d7802c1610b9c8912f2b88ab4b9aa745ab063
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0592ed06c532968beb421102cd87ecca1f31624f` · SHA-256 `61179df1e1997ebc0ff3de39c085046dc697a2ae85cf5ea3fe3fecc27b0d66ae`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.Variant7b4400232b02f79f4b2b3ab2036c8a0f08f2f0d912d1057cd4b9f99313ac9b79","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7b4400232b02f79f4b2b3ab2036c8a0f08f2f0d912d1057cd4b9f99313ac9b79","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceStrictComplementaryDoubledPrefix.Variant7b4400232b02f79f4b2b3ab2036c8a0f08f2f0d912d1057cd4b9f99313ac9b79","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7b4400232b02f79f4b2b3ab2036c8a0f08f2f0d912d1057cd4b9f99313ac9b79","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/DoubledPrefixTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceStrictComplementaryDoubledPrefix
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.Variant7b4400232b02f79f4b2b3ab2036c8a0f08f2f0d912d1057cd4b9f99313ac9b79
+
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.strictDivisorLogCoefficient_zero_of_le_two_mul_add_one
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.strictDivisorLogCoefficient_zero_of_le_two_mul_add_one
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.shortDivisorCumulative_eq_psi_of_floor_le_two_mul_add_one
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.shortDivisorCumulative_eq_psi_of_floor_le_two_mul_add_one
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.complementaryCumulative_eq_neg_floor_of_floor_le_two_mul_add_one
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.complementaryCumulative_eq_neg_floor_of_floor_le_two_mul_add_one
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.complementaryCumulative_eq_neg_floor_before_first_atom
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.complementaryCumulative_eq_neg_floor_before_first_atom
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.strictDivisorLogCoefficient_first_possible_atom
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryDoubledPrefix.strictDivisorLogCoefficient_first_possible_atom
+```

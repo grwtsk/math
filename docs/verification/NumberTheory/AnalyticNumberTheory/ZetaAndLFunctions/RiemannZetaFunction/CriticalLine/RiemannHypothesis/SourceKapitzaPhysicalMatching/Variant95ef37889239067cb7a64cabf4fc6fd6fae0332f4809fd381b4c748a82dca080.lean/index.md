@@ -1,0 +1,96 @@
+# Verification target: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaPhysicalMatching.Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8bc66725bae9e50c13fd6a919b9495dfd9729ae8",
+  "lexical_observation_count": 32,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/index.md) · [Full source](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8bc66725bae9e50c13fd6a919b9495dfd9729ae8`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceKapitzaCumulativeMatching` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceKapitzaFiniteFilter` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.BigOperators.Intervals` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [physicalWeight](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalweight--980ddbc876d52ad2d83813dc.md) | 25 | `declaration-track:980ddbc876d52ad2d83813dc98893ac51addb8007284c535f922a437ec3820ee` |
+| 2 | `def` | [analyticWeight](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/analyticweight--84f3a4309a7f2ba0fc2f42c5.md) | 30 | `declaration-track:84f3a4309a7f2ba0fc2f42c567f15967bd06515845c48690801cfa669836930b` |
+| 3 | `theorem` | [physicalWeight_one](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalweight-one--9886df1c15c36b451314dd04.md) | 33 | `result-track:9886df1c15c36b451314dd04c46206b04ada5ac627c8835c0a044d27f596c7f7` |
+| 4 | `theorem` | [analyticWeight_one](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/analyticweight-one--4e4f1d43ecf8b4c66609901b.md) | 36 | `result-track:4e4f1d43ecf8b4c66609901b8f3ef22d22340b033da3ca241cd4d784455c743a` |
+| 5 | `theorem` | [physicalWeight_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalweight-eq--3ceca234a3fbfd495482c19e.md) | 39 | `result-track:3ceca234a3fbfd495482c19e78c9d46c098cdefab38108aa4df24b675be5d48f` |
+| 6 | `theorem` | [physical_compensated_eq](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physical-compensated-eq--de9b6c67ff05b5cdfb28facb.md) | 47 | `result-track:de9b6c67ff05b5cdfb28facbcd93d36222d15c55e9a8816285f9f2cf5f879b56` |
+| 7 | `def` | [physicalRow](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalrow--81d92040f93baac7091e7222.md) | 56 | `declaration-track:81d92040f93baac7091e7222d30467fcf47d4f0a3bcb26daab530c5df0470175` |
+| 8 | `def` | [weightedRow](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/weightedrow--0eb9c2fe74a8dfc19af91a43.md) | 61 | `declaration-track:0eb9c2fe74a8dfc19af91a43f8b49966a12a375d7dca4d6cb9386e637e390ce4` |
+| 9 | `def` | [physicalResidual](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalresidual--54fc2c65a60b121c4bf258de.md) | 63 | `declaration-track:54fc2c65a60b121c4bf258de8127f1fa246875640b10c6e93638db8ea3033390` |
+| 10 | `def` | [head](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/head--1a7153bebf2254e658c04bbf.md) | 66 | `declaration-track:1a7153bebf2254e658c04bbfc3af2c7c724e23ca3cd4c0201678eefc328bad3a` |
+| 11 | `def` | [middle](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/middle--98bec087ccedb800945b5e5d.md) | 68 | `declaration-track:98bec087ccedb800945b5e5de403354e1b78918a994b4bc49a04fb821f899812` |
+| 12 | `def` | [top](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/top--820da7be69c5df3b4a3d4efd.md) | 70 | `declaration-track:820da7be69c5df3b4a3d4efd352e4a9362483fda7f2176296eee02b5aad2fb76` |
+| 13 | `def` | [headCutoff](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/headcutoff--a808dbb7cb30fbaacf24d6d5.md) | 73 | `declaration-track:a808dbb7cb30fbaacf24d6d55b57fe4ad6165feb88c6a6e16350361b1c9a4b15` |
+| 14 | `def` | [topCutoff](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/topcutoff--05e88f1d403976f182add538.md) | 75 | `declaration-track:05e88f1d403976f182add5381e437786d6e6d837e161a3c99f8083047e4ae0b3` |
+| 15 | `theorem` | [physicalResidual_three_strip](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalresidual-three-strip--60cd924cd4013d065d252f70.md) | 77 | `result-track:60cd924cd4013d065d252f70ac4b9ccb9bb6c5fce97e132d98b86da0453ba79a` |
+| 16 | `theorem` | [physicalWeight_zero_above](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalweight-zero-above--5df8f3fb391e03e0d2ac0956.md) | 84 | `result-track:5df8f3fb391e03e0d2ac0956c1d7d3651f5e518187ed7efa84d1013a160baac8` |
+| 17 | `theorem` | [physical_cutoff_ge_two](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physical-cutoff-ge-two--29dd2368bc90cdf6c01bc5a2.md) | 88 | `result-track:29dd2368bc90cdf6c01bc5a20b234a23ecc20ddab8ba45f142388e71ae7b9793` |
+| 18 | `def` | [physicalJ](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalj--ebd9abda62f3e39d3b28a797.md) | 96 | `declaration-track:ebd9abda62f3e39d3b28a7972091e0fa3eeb2d9c2b834891d52c23a249ee5ba6` |
+| 19 | `theorem` | [physicalResidual_eq_finiteResidual](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physicalresidual-eq-finiteresidual--1085f0f2c5429636e9a835f1.md) | 100 | `result-track:1085f0f2c5429636e9a835f13395af9f548194de6b6f75d4af722663097c9fdd` |
+| 20 | `theorem` | [physical_divisor_balance](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physical-divisor-balance--e4819da451dbd9d7830293c5.md) | 111 | `result-track:e4819da451dbd9d7830293c5ec27532cf287bface165c0196a9544235500d1ec` |
+| 21 | `theorem` | [compensated_eq_physicalJ_sub_residual](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/compensated-eq-physicalj-sub-residual--e827b47e8c52d222f3b25836.md) | 122 | `result-track:e827b47e8c52d222f3b2583637ae6e0fbf72276013fcd04984c7eeefce8a642c` |
+| 22 | `def` | [demandAtom](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/demandatom--c2547c99ecff8ce96d808850.md) | 128 | `declaration-track:c2547c99ecff8ce96d808850edc1a20437054009bc336d9b495f434fdea247fe` |
+| 23 | `def` | [supplyAtom](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/supplyatom--4e445d56d5d88873bc9a4c24.md) | 130 | `declaration-track:4e445d56d5d88873bc9a4c24465e583c74ca91c77d00b9285a13b0e9a0bf0ba9` |
+| 24 | `def` | [cumulative](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/cumulative--3f2e5c7c26878f641fba4123.md) | 133 | `declaration-track:3f2e5c7c26878f641fba4123e98dae905453443ff06eeda66b133b5292513cb7` |
+| 25 | `theorem` | [cumulative_zero](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/cumulative-zero--9fe798705b270b09dc2577c5.md) | 135 | `result-track:9fe798705b270b09dc2577c513f44e16786e2f17e86a94886411942980592bcf` |
+| 26 | `theorem` | [cumulative_monotone](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/cumulative-monotone--a7e7e616f4003cbdb38b90ea.md) | 138 | `result-track:a7e7e616f4003cbdb38b90ea03e4ff3a7ff58dc904f89647d20f66c529d5c2f5` |
+| 27 | `theorem` | [demandAtom_nonneg](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/demandatom-nonneg--e9c5abf10127dc0915ed67ad.md) | 145 | `result-track:e9c5abf10127dc0915ed67add3cfe160602ecd83b8a78c92115dd9d3b0fd1234` |
+| 28 | `theorem` | [supplyAtom_nonneg](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/supplyatom-nonneg--0905baf034a8974214577630.md) | 153 | `result-track:0905baf034a89742145776307e57df51cb8e01ca03ac9515dab42ab16d3e30a0` |
+| 29 | `theorem` | [demand_total](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/demand-total--974a6901c50cafecf0f5e29e.md) | 161 | `result-track:974a6901c50cafecf0f5e29e78122b41ae0a15bea436c5c42b890f545d64057f` |
+| 30 | `theorem` | [supply_total](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/supply-total--4534964237823a0c18dd55b0.md) | 174 | `result-track:4534964237823a0c18dd55b07d07361022709d1f1cdb1dd1458b06c1806a1f6c` |
+| 31 | `theorem` | [physical_matching_return](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/physical-matching-return--98b31392805534160f48526f.md) | 188 | `result-track:98b31392805534160f48526f051216dd3bee1f5b51499e18b42191cf365704f7` |
+| 32 | `theorem` | [estimate_of_physical_residual_budget](../../../../../../../../../mathematics/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaPhysicalMatching/Variant95ef37889239067cb7a64cabf4fc6fd6fae0332f4809fd381b4c748a82dca080.lean/declarations/estimate-of-physical-residual-budget--2f047bdb91641bf5d95d28f5.md) | 216 | `result-track:2f047bdb91641bf5d95d28f5b362a0fec1583d58c7d38fc9e4f657c5bbf03853` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

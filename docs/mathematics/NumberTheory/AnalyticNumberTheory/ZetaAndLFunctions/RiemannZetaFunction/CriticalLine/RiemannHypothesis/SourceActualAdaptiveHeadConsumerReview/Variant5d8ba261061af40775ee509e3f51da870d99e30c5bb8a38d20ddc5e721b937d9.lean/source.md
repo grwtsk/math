@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdaptiveHeadConsumerReview.Variant5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `41b01c1dbaf5b9ea248b4dffae444733d9158cd3` · SHA-256 `5d8ba261061af40775ee509e3f51da870d99e30c5bb8a38d20ddc5e721b937d9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdaptiveHeadConsumer
+#check RH16ActualAdaptiveHeadConsumer.original_quadratic_lower_of_adaptive_head
+#print axioms RH16ActualAdaptiveHeadConsumer.original_quadratic_lower_of_adaptive_head
+#check RH16ActualAdaptiveHeadConsumer.estimate_of_actual_adaptive_head
+#print axioms RH16ActualAdaptiveHeadConsumer.estimate_of_actual_adaptive_head
+#check RH16ActualAdaptiveHeadConsumer.actual_adaptive_head_estimate_source_witness
+#print axioms RH16ActualAdaptiveHeadConsumer.actual_adaptive_head_estimate_source_witness
+#check FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroArithmeticDictionary.actualFullZeroContribution_eq_original_sourceQuadraticValue
+#check FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualZeroTailBudget.actualFullZeroContribution_eq_head_add_tail
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTail_uniform_bound
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTail_uniform_bound
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction.estimate_of_quadratic_tail_lower_bound
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction.estimate_of_quadratic_tail_lower_bound
+open FormalResearch.RiemannHypothesis
+open SourceActualZeroTailBudget SourcePairing
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+#print CorrelationAssembly.EstimateObligation
+#print CorrelationAssembly.UniformLowerBound
+#print SourcePairing.sourceQuadraticValue
+#print SourcePairing.primePowerContribution
+#print actualZeroHeightHead
+#print actualZeroHeightTail
+#print RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight
+#print RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTailCost
+#print EstimateTailReduction.bounded_radius_lower
+#print EstimateTailReduction.estimate_of_quadratic_tail_lower_bound
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"
+```

@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant3d1d5b110c188a1d6949de0fb87fb8916ee4806116a7926f8748c6c598a0184f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c527e9232076ca765a37275de3de5063969f2a43` · SHA-256 `3d1d5b110c188a1d6949de0fb87fb8916ee4806116a7926f8748c6c598a0184f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiPntTimeDecay
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_integrableOn
+```

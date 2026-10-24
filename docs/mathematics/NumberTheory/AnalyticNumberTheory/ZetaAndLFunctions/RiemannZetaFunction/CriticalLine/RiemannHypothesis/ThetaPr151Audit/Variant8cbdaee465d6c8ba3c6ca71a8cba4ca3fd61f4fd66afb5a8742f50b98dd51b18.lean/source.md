@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaPr151Audit.Variant8cbdaee465d6c8ba3c6ca71a8cba4ca3fd61f4fd66afb5a8742f50b98dd51b18
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2920ecc0853ee7ed7543310319d3c65f64d44b74` · SHA-256 `dc6350de6984e656a3f24b4b73d5786183b7e8548ac0af8a3a65f4beccc5b94e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaTailCalculus.Variant3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaTailCalculus.Variant3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/theta_pr151_audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaTailCalculus
+import FormalResearch.RiemannHypothesis.ThetaPhiInvolutionCompression
+import FormalResearch.RiemannHypothesis.ThetaPhiKrylovNondegeneracy
+import FormalResearch.RiemannHypothesis.ThetaPhiKrylovWhitening
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaTailCalculus.Variant3f1a248d715d22014daeab980087ffd2ad93e0c0d0589f16a6dfc65740c77e00
+
+set_option pp.proofs false
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_positive
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_integrable
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaTail_integrable
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiBaseMomentMagnitude_pos
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiBaseMomentMagnitude_pos
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiSignedMomentKrylovGram_posDef
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiSignedMomentKrylovGram_posDef
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiParityInvolution_sq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiParityInvolution_sq
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiChristoffelHankel_signedMomentTruncation_eq_involutionCompression
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiChristoffelHankel_signedMomentTruncation_eq_involutionCompression
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiKrylovWhitening_gram
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiKrylovWhitening_gram
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityCompression_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityCompression_eq
+```

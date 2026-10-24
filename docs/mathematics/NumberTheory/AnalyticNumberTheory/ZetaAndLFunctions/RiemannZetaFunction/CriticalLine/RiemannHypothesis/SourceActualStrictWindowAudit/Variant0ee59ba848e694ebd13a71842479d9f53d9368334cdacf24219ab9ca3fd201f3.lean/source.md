@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualStrictWindowAudit.Variant0ee59ba848e694ebd13a71842479d9f53d9368334cdacf24219ab9ca3fd201f3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a37ee93b63b9694f440a7e3db24c2b0cec209a43` · SHA-256 `0ee59ba848e694ebd13a71842479d9f53d9368334cdacf24219ab9ca3fd201f3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualStrictWindow
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_cutoff_square_gap
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_cutoff_square_gap
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_quotient_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_quotient_lower
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_first_strict_cell_mem
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_first_strict_cell_mem
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_integer_box_mem
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_integer_box_mem
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_log_window
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_log_window
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_real_rectangle
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_real_rectangle
+#check FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_rectangle_source_support
+#print axioms FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_rectangle_source_support
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_cutoff_square_gap
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_quotient_lower
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_first_strict_cell_mem
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_integer_box_mem
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_log_window
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_real_rectangle
+#print FormalResearch.RiemannHypothesis.SourceActualStrictWindow.actual_strict_rectangle_source_support
+```

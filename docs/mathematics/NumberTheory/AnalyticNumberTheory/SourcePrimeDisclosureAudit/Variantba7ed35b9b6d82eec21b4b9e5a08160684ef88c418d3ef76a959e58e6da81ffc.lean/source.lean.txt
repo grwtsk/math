@@ -1,0 +1,66 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.SourcePrimeDisclosure.Variante300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.AnalyticNumberTheory.SourceCorpus.SourcePrimeDisclosure.Variante300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5","mathematical_subject":"NumberTheory.AnalyticNumberTheory","original_sha256":"e300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-tandem-01a1149a-prime-correction/SourcePrimeDisclosureAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourcePrimeDisclosure
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.SourcePrimeDisclosure.Variante300b68bec868106bc62d418d09606a7973974936f62dca8c4288a488a3a7bf5
+
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.fullNames true
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors_fresh_coprime
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors_fresh_coprime
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert
+#check RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert_disjoint
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeDivisors_insert_disjoint
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure
+#check RH16Tandem.SourcePrimeDisclosure.disclosedMean
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosedMean
+#check RH16Tandem.SourcePrimeDisclosure.disclosedDivisorSum
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosedDivisorSum
+#check RH16Tandem.SourcePrimeDisclosure.freshPrimeCorrection
+#print axioms RH16Tandem.SourcePrimeDisclosure.freshPrimeCorrection
+#check RH16Tandem.SourcePrimeDisclosure.moebius_fresh_prime_mul
+#print axioms RH16Tandem.SourcePrimeDisclosure.moebius_fresh_prime_mul
+#check RH16Tandem.SourcePrimeDisclosure.fresh_prime_discrepancy
+#print axioms RH16Tandem.SourcePrimeDisclosure.fresh_prime_discrepancy
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_insert_prime
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_insert_prime
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_primeDivisors_insert
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_primeDivisors_insert
+#check RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_coverage
+#print axioms RH16Tandem.SourcePrimeDisclosure.centeredDisclosure_coverage
+#check RH16Tandem.SourcePrimeDisclosure.disclosureSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosureSource
+#check RH16Tandem.SourcePrimeDisclosure.correctionSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.correctionSource
+#check RH16Tandem.SourcePrimeDisclosure.disclosureSource_insert_prime
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosureSource_insert_prime
+#check RH16Tandem.SourcePrimeDisclosure.disclosureSource_primeDivisors_insert
+#print axioms RH16Tandem.SourcePrimeDisclosure.disclosureSource_primeDivisors_insert
+#check RH16Tandem.SourcePrimeDisclosure.plainSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.plainSource
+#check RH16Tandem.SourcePrimeDisclosure.primeMultipleSource
+#print axioms RH16Tandem.SourcePrimeDisclosure.primeMultipleSource
+#check RH16Tandem.SourcePrimeDisclosure.correctionSource_eq_mean_and_multiples
+#print axioms RH16Tandem.SourcePrimeDisclosure.correctionSource_eq_mean_and_multiples
+#check RH16Tandem.SourcePrimeDisclosure.physicalDiagonal
+#print axioms RH16Tandem.SourcePrimeDisclosure.physicalDiagonal
+#check RH16Tandem.SourcePrimeDisclosure.compensatedReadout
+#print axioms RH16Tandem.SourcePrimeDisclosure.compensatedReadout
+#check RH16Tandem.SourcePrimeDisclosure.compensatedReadout_row_increment
+#print axioms RH16Tandem.SourcePrimeDisclosure.compensatedReadout_row_increment
+#check RH16Tandem.SourcePrimeDisclosure.compensatedReadout_two_row_increment
+#print axioms RH16Tandem.SourcePrimeDisclosure.compensatedReadout_two_row_increment
+#check RH16Tandem.SourcePrimeDisclosure.repeated_prime_divisor_zero
+#print axioms RH16Tandem.SourcePrimeDisclosure.repeated_prime_divisor_zero
+#check RH16Tandem.SourcePrimeDisclosure.prime_power_mangoldt_coefficient
+#print axioms RH16Tandem.SourcePrimeDisclosure.prime_power_mangoldt_coefficient
+#check RH16Tandem.SourcePrimeDisclosure.prime_three_centering_fixture
+#print axioms RH16Tandem.SourcePrimeDisclosure.prime_three_centering_fixture

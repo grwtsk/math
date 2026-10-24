@@ -1,0 +1,64 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant23863adf5aebebe98b4be2c7247a261c1abb6159d013f1979c398db75ec7bbf1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `68172763e11ef3c3b7dd763ab72d6866e353a9bc` · SHA-256 `23863adf5aebebe98b4be2c7247a261c1abb6159d013f1979c398db75ec7bbf1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.WeilSource
+import FormalResearch.RiemannHypothesis.SourceComparison.WeilComparison
+
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.explicit_formula
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.self_convolution_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.self_convolution_contDiff_two
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_product_integrable
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_contDiff_two
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_zero
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_integrable
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_even
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexCorrelation
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexCorrelation_contDiff_two
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexCorrelation_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexCorrelation_integrable
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.correlation_eq_source
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.sourcePointEquiv
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.sourcePointEquiv_val
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.sourcePointEquiv_mult
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.occurrence_tsum_eq_weighted
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.weighted_source_sum_eq_occurrences
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexTest
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexTest_continuous
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexTest_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.complexCorrelation_eq_weilTest
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.tilde_complexTest
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.paperFT_complexTest_fourier
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.paperFT_complexTest_bilateral
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.paperFT_complexCorrelation
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.paperFT_at_zero
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.paperFT_on_real
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.bilateral_real_moment
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.paperFT_moment
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.pole_transport
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.gammaBracket_eq_source
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.archimedean_transport
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.prime_term_zero_outside
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.prime_transport
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.literatureRHS_eq_source_form
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.arithmetic_zero_equality
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.zero_side_identity
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.arithmetic_zero_hasSum
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.normalized_hasSum
+#print axioms FormalResearch.RiemannHypothesis.WeilSource.original_source_equality
+
+#print FormalResearch.RiemannHypothesis.WeilSource.zero_side_identity
+#print FormalResearch.RiemannHypothesis.WeilSource.original_source_equality
+
+namespace WeilForwardingReplay
+theorem zero_side_identity : FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSideTargets.ZeroSideIdentityObligation :=
+  FormalResearch.RiemannHypothesis.WeilSource.zero_side_identity
+end WeilForwardingReplay
+#print axioms WeilForwardingReplay.zero_side_identity
+```

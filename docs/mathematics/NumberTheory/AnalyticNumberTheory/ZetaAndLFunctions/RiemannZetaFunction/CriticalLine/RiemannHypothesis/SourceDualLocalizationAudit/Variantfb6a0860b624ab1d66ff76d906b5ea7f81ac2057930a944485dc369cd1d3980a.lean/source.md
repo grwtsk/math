@@ -1,0 +1,53 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDualLocalizationAudit.Variantfb6a0860b624ab1d66ff76d906b5ea7f81ac2057930a944485dc369cd1d3980a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0663606af681348092ea27e977d3522e3d5220ae` · SHA-256 `83d8465bdfe052179f604dcd3a0d1545f7558be9722c8adc72c25361db3af42e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDualLocalization.Variant77380769c89eacc0e42511e10d8843bbb386bd919a521383a9f54d2900b2df85","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"77380769c89eacc0e42511e10d8843bbb386bd919a521383a9f54d2900b2df85","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceDualLocalization.Variant77380769c89eacc0e42511e10d8843bbb386bd919a521383a9f54d2900b2df85","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"77380769c89eacc0e42511e10d8843bbb386bd919a521383a9f54d2900b2df85","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-confluence/parent/SourceDualLocalization-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceDualLocalization
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDualLocalization.Variant77380769c89eacc0e42511e10d8843bbb386bd919a521383a9f54d2900b2df85
+
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_coe_ae
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_coe_ae
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_idempotent
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_idempotent
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_neg
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_neg
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_empty
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_empty
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.spatialMask_norm_le
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.indicator_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.indicator_hasCompactSupport
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.originalSource_spatialMask
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.originalSource_spatialMask
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.originalSource_mask_not_commute
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.originalSource_mask_not_commute
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask_dual
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask_dual
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask_neg_dual
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask_neg_dual
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask_idempotent
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.dualMask_idempotent
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.localized_dual_pairing
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.localized_dual_pairing
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.overlapMask
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.overlapMask
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.dualOverlapMask
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.dualOverlapMask
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.dualOverlapMask_dual
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.dualOverlapMask_dual
+#check FormalResearch.RiemannHypothesis.SourceDualLocalization.overlap_dual_pairing
+#print axioms FormalResearch.RiemannHypothesis.SourceDualLocalization.overlap_dual_pairing
+```

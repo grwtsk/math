@@ -1,0 +1,6 @@
+import RootActualCovariantWorkKernel
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.RootActualCovariantWorkKernel
+#print actual_covariant_ordinary_work_kernel
+#print actual_covariant_ordinary_work_abs_le
+#print actual_covariant_ordinary_work_eq_fourth_sub_second

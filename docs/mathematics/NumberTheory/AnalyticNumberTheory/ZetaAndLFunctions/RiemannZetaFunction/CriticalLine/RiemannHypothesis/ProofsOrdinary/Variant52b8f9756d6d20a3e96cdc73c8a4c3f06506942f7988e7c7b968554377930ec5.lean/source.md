@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant52b8f9756d6d20a3e96cdc73c8a4c3f06506942f7988e7c7b968554377930ec5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `32841e5fe7b9b05f3f23287aab795c99358556a8` · SHA-256 `03b4e07917f7d0ce7584cbb5e804269fb9faf7b73cbcf4f2492be839f6a34e43`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.Variante2eae45aefbab76d4f8466949468f4d9c88ede2ff05d348cc07b1fa217f05ccc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e2eae45aefbab76d4f8466949468f4d9c88ede2ff05d348cc07b1fa217f05ccc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalCovarianceOrdinarySplit.Variante2eae45aefbab76d4f8466949468f4d9c88ede2ff05d348cc07b1fa217f05ccc","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e2eae45aefbab76d4f8466949468f4d9c88ede2ff05d348cc07b1fa217f05ccc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-critical-covariance-ordinary-split/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalCovarianceOrdinarySplit
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.Variante2eae45aefbab76d4f8466949468f4d9c88ede2ff05d348cc07b1fa217f05ccc
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualEarlyCriticalErrorCenter
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_split
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_early_error_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_late_lower_bound
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCenteredMangoldtLogError_small_after
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_lower_estimate
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_eventual_amplitude
+```

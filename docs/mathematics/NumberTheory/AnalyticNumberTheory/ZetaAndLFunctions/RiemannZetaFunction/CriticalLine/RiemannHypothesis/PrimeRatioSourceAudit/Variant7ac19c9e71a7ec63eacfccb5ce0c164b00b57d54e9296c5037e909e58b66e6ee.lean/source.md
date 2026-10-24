@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrimeRatioSourceAudit.Variant7ac19c9e71a7ec63eacfccb5ce0c164b00b57d54e9296c5037e909e58b66e6ee
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a087fd8446e01d9d62c5ec951a63c1c80e79363c` · SHA-256 `271e21b57814410c46af7622ca36786361daec40f9e3657824c8dfd0ace38cd7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrimeRatioProduct.Variant40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.PrimeRatioProduct.Variant40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/mertens/prime-ratio-source-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrimeRatioProduct.Variant40998fc24e400aa2e3a133d23407dfc6d9b1900bf2f34f219b1440db1e298a7b
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.ordered_disjoint_assignment_product
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.reciprocal_sqrt_product
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.reciprocal_sqrt_products
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.prime_product_squarefree
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.assignments
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.joinAssignment
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.supportedPairs
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.assignment_subsets
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.assignment_primeFactors
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.joinAssignment_injOn
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.mem_supportedPairs_iff
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.supportedPairs_weight_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.supportedPairs_moebius_weight_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.PrimeRatioProduct.squareful_ratio_coefficient_zero
+```

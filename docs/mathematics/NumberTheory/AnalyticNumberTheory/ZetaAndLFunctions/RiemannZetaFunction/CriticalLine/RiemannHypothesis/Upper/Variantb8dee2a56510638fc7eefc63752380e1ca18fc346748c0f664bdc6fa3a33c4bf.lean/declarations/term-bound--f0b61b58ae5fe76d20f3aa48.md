@@ -1,0 +1,135 @@
+# term_bound
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "c60e8d08effd98dcb500b7a5c4ae72c83888fac1",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 75,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b8/b8dee2a56510638fc7eefc63752380e1ca18fc346748c0f664bdc6fa3a33c4bf.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:49f74408-9078-c5d2-48fd-f01fbeff45ef",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:002bef28-2b66-1fd8-5c62-4a2c04fa5755",
+  "kind": "lemma",
+  "lexical_name": "term_bound",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "term-bound--f0b61b58ae5fe76d20f3aa48",
+  "source": {
+    "blob": "c60e8d08effd98dcb500b7a5c4ae72c83888fac1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 116,
+    "line": 75,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Upper/Variantb8dee2a56510638fc7eefc63752380e1ca18fc346748c0f664bdc6fa3a33c4bf.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f0b61b58ae5fe76d20f3aa481f415cf6458e912280228c83be78535474d70927",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Upper/Variantb8dee2a56510638fc7eefc63752380e1ca18fc346748c0f664bdc6fa3a33c4bf.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:002bef28-2b66-1fd8-5c62-4a2c04fa5755`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 75–116.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma term_bound {x u : ℝ} (hx : 0 ≤ x) (hu : 0 ≤ u) (m : ℕ) :
+    2 ^ m * x ^ (2 * m) * u ^ m * ((u + m * KM) ^ m / m.factorial)
+      ≤ (4 * x ^ 2 * u ^ 2) ^ m / m.factorial + (4 * Real.exp 1 * KM * x ^ 2 * u) ^ m := by
+  have hK := KM_nonneg
+  have hm0 : (0:ℝ) ≤ m := Nat.cast_nonneg m
+  have hmf : (0:ℝ) < m.factorial := by exact_mod_cast Nat.factorial_pos m
+  -- (u + mK)^m ≤ (2 max)^m ≤ 2^m (u^m + (mK)^m)
+  have hsplit : (u + m * KM) ^ m ≤ 2 ^ m * (u ^ m + (m * KM) ^ m) := by
+    have hle : u + m * KM ≤ 2 * max u (m * KM) := by
+      rcases le_total u (m * KM) with h | h
+      · rw [max_eq_right h]; linarith
+      · rw [max_eq_left h]; linarith
+    calc (u + m * KM) ^ m ≤ (2 * max u (m * KM)) ^ m :=
+          pow_le_pow_left₀ (by positivity) hle m
+      _ = 2 ^ m * (max u (m * KM)) ^ m := by rw [mul_pow]
+      _ ≤ 2 ^ m * (u ^ m + (m * KM) ^ m) := by
+          refine mul_le_mul_of_nonneg_left ?_ (by positivity)
+          rcases le_total u (m * KM) with h | h
+          · rw [max_eq_right h]; linarith [pow_nonneg hu m]
+          · rw [max_eq_left h]; linarith [pow_nonneg (by positivity : (0:ℝ) ≤ m * KM) m]
+  -- m^m / m! ≤ e^m
+  have hStirling : (m : ℝ) ^ m / m.factorial ≤ Real.exp 1 ^ m := by
+    rw [Real.exp_one_pow]
+    exact Real.pow_div_factorial_le_exp (x := (m : ℝ)) hm0 m
+  have hA0 : 0 ≤ 2 ^ m * x ^ (2 * m) * u ^ m := by positivity
+  have hB0 : 0 ≤ (4 * KM * x ^ 2 * u) ^ m :=
+    pow_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (by norm_num) hK) (sq_nonneg x)) hu) m
+  calc 2 ^ m * x ^ (2 * m) * u ^ m * ((u + m * KM) ^ m / m.factorial)
+      ≤ 2 ^ m * x ^ (2 * m) * u ^ m * (2 ^ m * (u ^ m + (m * KM) ^ m) / m.factorial) := by
+        exact mul_le_mul_of_nonneg_left (div_le_div_of_nonneg_right hsplit hmf.le) hA0
+    _ = (4 * x ^ 2 * u ^ 2) ^ m / m.factorial
+        + (4 * KM * x ^ 2 * u) ^ m * ((m : ℝ) ^ m / m.factorial) := by
+        have h4 : (4:ℝ) ^ m = 2 ^ m * 2 ^ m := by rw [← mul_pow]; norm_num
+        simp only [div_eq_mul_inv, mul_pow, h4]
+        ring
+    _ ≤ (4 * x ^ 2 * u ^ 2) ^ m / m.factorial + (4 * KM * x ^ 2 * u) ^ m * Real.exp 1 ^ m :=
+        add_le_add le_rfl (mul_le_mul_of_nonneg_left hStirling hB0)
+    _ = (4 * x ^ 2 * u ^ 2) ^ m / m.factorial + (4 * Real.exp 1 * KM * x ^ 2 * u) ^ m := by
+        rw [← mul_pow]; ring
+
+/-- the m-th dyadic term is summable-small:  2^m x^{2m} u^m Σ_{N≤e^u}Λ^{∗m}(N)/N ≤ 64^m/m! + 2^{-m}
+(m = i+1), provided x·u ≤ 4 and 32eK·x ≤ 1. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Upper/Variantb8dee2a56510638fc7eefc63752380e1ca18fc346748c0f664bdc6fa3a33c4bf.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Upper/Variantb8dee2a56510638fc7eefc63752380e1ca18fc346748c0f664bdc6fa3a33c4bf.lean#L75).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c60e8d08effd98dcb500b7a5c4ae72c83888fac1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

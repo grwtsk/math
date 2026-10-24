@@ -1,0 +1,56 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceBumpLaplaceOrdinary.Variant25dbdbdcff0d3c64c186fc760461b205e13b4cf306f47b4df30bfcceb2e632f2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `529646d7c38005bd9b57dd8c3eb2b3a867ab3433` · SHA-256 `d82c5112bdb3450e40939edfedef1ce60f67dd36f08ac435af67d2e167daf8c7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceBumpLaplace.Variant4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceBumpLaplace.Variant4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-bessel-contour-recovery/SourceBumpLaplaceOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceBumpLaplace
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceBumpLaplace.Variant4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bumpLaplace
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bumpLaplaceMoment
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_interval_integrable
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_even
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_at_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_zero_ne_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_moment_factor_norm_le_one
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_ode
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBump
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpSlope
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpFlux
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_moment_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_slope_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_flux_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_slope_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_flux_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpMass
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpEnergy
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_mass_interval_integrable
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_energy_interval_integrable
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_energy_nonneg
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_mass_pos
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_radial_energy_of_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.re_eq_zero_of_energy
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_ne_zero_of_re_ne_zero
+```

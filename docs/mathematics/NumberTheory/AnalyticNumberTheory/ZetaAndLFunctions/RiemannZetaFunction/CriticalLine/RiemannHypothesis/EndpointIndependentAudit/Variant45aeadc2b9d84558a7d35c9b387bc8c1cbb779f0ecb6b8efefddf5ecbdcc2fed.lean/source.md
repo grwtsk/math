@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EndpointIndependentAudit.Variant45aeadc2b9d84558a7d35c9b387bc8c1cbb779f0ecb6b8efefddf5ecbdcc2fed
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `145d12c6ebf7f24d835a5ce79e0774792a21bf36` · SHA-256 `45aeadc2b9d84558a7d35c9b387bc8c1cbb779f0ecb6b8efefddf5ecbdcc2fed`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceEndpointRadiusConsumer
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.fullNames true
+set_option pp.explicit true
+open FormalResearch.RiemannHypothesis.SourceEndpointEnvelope
+#check @actual_centered_column_endpoint_abs_le_envelope
+#print axioms actual_centered_column_endpoint_abs_le_envelope
+#print actual_centered_column_endpoint_abs_le_envelope
+open RH16EndpointRadius
+#check @envelope_hasDerivAt
+#print axioms envelope_hasDerivAt
+#print envelope_hasDerivAt
+#check @envelope_antitoneOn
+#print axioms envelope_antitoneOn
+#print envelope_antitoneOn
+#check @envelope_le_peak
+#print axioms envelope_le_peak
+#print envelope_le_peak
+#check @envelope_le_budget
+#print axioms envelope_le_budget
+#print envelope_le_budget
+#check @envelope_peak_lt_three
+#print axioms envelope_peak_lt_three
+#print envelope_peak_lt_three
+#check @endpointBudget_nonneg
+#print axioms endpointBudget_nonneg
+#print endpointBudget_nonneg
+#check @endpointBudget_eq_of_three_le
+#print axioms endpointBudget_eq_of_three_le
+#print endpointBudget_eq_of_three_le
+#check @envelope
+#print axioms envelope
+#print envelope
+#check @endpointBudget
+#print axioms endpointBudget
+#print endpointBudget
+open FormalResearch.RiemannHypothesis.SourceEndpointRadiusConsumer
+#check @sourceEndpoint_abs_le_budget
+#print axioms sourceEndpoint_abs_le_budget
+#print sourceEndpoint_abs_le_budget
+#check @sourceEndpoint_abs_le_at_117
+#print axioms sourceEndpoint_abs_le_at_117
+#print sourceEndpoint_abs_le_at_117
+#check @covariance_upper_of_strictColumnInterior_upper
+#print axioms covariance_upper_of_strictColumnInterior_upper
+#print covariance_upper_of_strictColumnInterior_upper
+#check @residual_upper_of_strictColumnInterior_upper
+#print axioms residual_upper_of_strictColumnInterior_upper
+#print residual_upper_of_strictColumnInterior_upper
+#check @residual_tail_of_strictColumnInterior_tail
+#print axioms residual_tail_of_strictColumnInterior_tail
+#print residual_tail_of_strictColumnInterior_tail
+#check @estimate_of_strictColumnInterior_tail
+#print axioms estimate_of_strictColumnInterior_tail
+#print estimate_of_strictColumnInterior_tail
+#check @residual_upper_of_complete_pairing_upper
+#print axioms residual_upper_of_complete_pairing_upper
+#print residual_upper_of_complete_pairing_upper
+#check @estimate_of_complete_pairing_tail_direct
+#print axioms estimate_of_complete_pairing_tail_direct
+#print estimate_of_complete_pairing_tail_direct
+#check @strictColumnInterior_upper_of_complete_pairing_upper
+#print axioms strictColumnInterior_upper_of_complete_pairing_upper
+#print strictColumnInterior_upper_of_complete_pairing_upper
+#check @strictColumnInterior_tail_of_complete_pairing_tail
+#print axioms strictColumnInterior_tail_of_complete_pairing_tail
+#print strictColumnInterior_tail_of_complete_pairing_tail
+```

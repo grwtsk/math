@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.52581376210c29bcf681f08612cbf5b0b78803c3378354b317bd38e9ada7e3c7ExpandedAudit.Variant52581376210c29bcf681f08612cbf5b0b78803c3378354b317bd38e9ada7e3c7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `72f44c5a7ae2898795697b835a8e76c6c7734ac1` · SHA-256 `52581376210c29bcf681f08612cbf5b0b78803c3378354b317bd38e9ada7e3c7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceMangoldtRieszQuotientMean
+
+open FormalResearch.RiemannHypothesis.SourceMangoldtRieszReconstruction
+open FormalResearch.RiemannHypothesis.SourceMangoldtRieszQuotientMean
+
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.deepTerms true
+set_option pp.maxSteps 10000000
+
+#print continuumRieszPrimitive
+#print mangoldtRieszPrimitive
+#print mangoldtRieszPrimitive_zero
+#print rieszCenterSlope
+#print centeredRieszProfile
+#print fixedRieszAtoms
+#print mangoldtRieszPrimitive_eq_fixed_window
+#print mangoldtRieszPrimitive_continuousOn
+#print mertensResidual_eq_continuous_add_riesz_work
+#print sourceCorrelation_curvature_integral_eq_zero
+#print sourceCorrelation_linear_curvature_integral_eq_one
+#print centeredRieszProfile_continuousOn
+#print rieszCenterSlope_eq_anchor_sub_continuous
+#print mertensResidual_sub_half_anchor_eq_centered_riesz_work
+#print mertensResidual_sub_half_archimedean_eq_centered_riesz_work
+#print RieszQuotientMeanTailBound
+#print SourceRieszQuotientMeanTailBound
+#print mertensResidual_sub_half_anchor_abs_le_quotient_mean
+#print mertensResidual_sub_half_anchor_abs_le_five_mul_of_mean
+#print quotient_mean_tail_implies_absolute_source_tail
+#print source_quotient_mean_tail_implies_absolute_source_tail
+#print source_quotient_mean_tail_implies_source_upper_tail
+```

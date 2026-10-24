@@ -1,0 +1,58 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435PoleAbelTransfor.Variant7fc202956a5261ec1faa9574708faea4810cd98e5bd5163e3ae0103ce6acb00b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `47e3b9468e14a3d2f6cd9ff1f1cf73c04d6cd0b7` · SHA-256 `86b86dea04e40cfa0103c3dd84e32a74a61e75ca6d3e6dd8c3ba1cae3d86f593`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PoleAbelTransform.Variant86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.PoleAbelTransform.Variant86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/86/86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435--pole-abel-transform-axioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.PoleAbelTransform
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PoleAbelTransform.Variant86d1c379eff3a076b6f53c0758dc23a0d088541116ac80d97d7934ed5fe78435
+
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finiteStepCount
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finiteAbelError
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finiteAbelPrimitive
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.integral_closed_step_one
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finite_abel_error_interval_integrable
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finite_abel_primitive_eq_integral
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.ramp_second_abel_atom
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.continuum_second_abel
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.affine_second_abel_boundary
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finite_abel_primitive_continuous
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finite_second_abel_interval_integrable
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.finite_second_abel_identity
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lowerStepCount
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lowerAbelError
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lowerAbelPrimitive
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_inventory_log_bounds
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_abel_error_interval_integrable
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_abel_primitive_eq_integral
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_step_count_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_abel_error_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_abel_primitive_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.logarithmicAbelTest
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.sourceAbelTest
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.logarithmic_abel_test_log
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.exponential_logarithmic_abel_test
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.logarithmic_abel_test_second_deriv
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_discrepancy_second_abel
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.deriv_upper_endpoint_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_upper_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_cont_diff_one
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_upper_deriv_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_at_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_correlation_deriv_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_deriv_at_zero
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_discrepancy_second_abel_of_cont_diff
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_cont_diff_two
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_second_abel_interval_integrable
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_discrepancy_second_abel
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_affine_second_abel_boundary
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.source_abel_test_second_deriv
+#print axioms FormalResearch.RiemannHypothesis.PoleAbelTransform.lower_power_contribution_second_abel
+```

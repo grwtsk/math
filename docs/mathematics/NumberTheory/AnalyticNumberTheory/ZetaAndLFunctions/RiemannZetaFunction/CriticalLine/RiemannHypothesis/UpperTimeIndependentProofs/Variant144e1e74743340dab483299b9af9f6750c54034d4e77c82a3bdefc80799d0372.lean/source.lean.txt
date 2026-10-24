@@ -1,0 +1,7 @@
+import RootActualUpperTimeJets
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.RootActualUpperTimeJets
+#print actualUpperTimeJet_zero
+#print actualMixedDensity_upperTime_zero
+#print actualTwistedTimeWork_upperTime_zero
+#print actualCovariantWork_upperTime_zero

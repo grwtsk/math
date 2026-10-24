@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualRHArithmeticSourceAndItsSpectralRepresentations.Variantcb51060715b4d26dbac8c04e47e5c8186cdc8c8df576f5f0ab8bf0797e68dec5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a54924f3213a1bc71faaaa51ca143dec1bda068b` · SHA-256 `cb51060715b4d26dbac8c04e47e5c8186cdc8c8df576f5f0ab8bf0797e68dec5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourcePairing
+import FormalResearch.RiemannHypothesis.MultiplicativePhase
+import FormalResearch.RiemannHypothesis.PhaseInvolution
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Realization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeNormalization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationMoment
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimePowerDescent
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeFourier
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeAdmissibility
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.AdmissionSource
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourcePlancherel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.DilationFourierFactorization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimePowerPhaseDefect
+
+/-!
+# Actual RH arithmetic source and its spectral representations
+
+This import boundary exposes the immutable source definitions, their explicit
+weak derivative and normalization, the actual correlation and arithmetic
+identity, and the Fourier and phase representations of the same source.
+Existing declarations retain their original namespaces and source paths.
+
+The positive autocorrelation density is distinct from the signed arithmetic
+quadratic value. Its phase decomposition retains the full negative prime-power
+budget, strict cutoff, Gamma multiplier, and source normalization. These
+identities do not prove the uniform estimate or the Riemann Hypothesis.
+-/
+```

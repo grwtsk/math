@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCorrelationEnergyAudit.Variantb7e2f3f003917b74327fc751087146671b016e3195743022ac3c8018afde5efe
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `625d14d0f33392d711630ee600c8d9e8d508c059` · SHA-256 `f951770b2e1018fbd10db29a612b3b7a24548e0b5347381d73768355093d392c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCorrelationEnergy.Variant142053ec3a0ac3427ef2a67e4cbf98aff42b4691a12a6b0bf846565b84a4fb2f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"142053ec3a0ac3427ef2a67e4cbf98aff42b4691a12a6b0bf846565b84a4fb2f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCorrelationEnergy.Variant142053ec3a0ac3427ef2a67e4cbf98aff42b4691a12a6b0bf846565b84a4fb2f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"142053ec3a0ac3427ef2a67e4cbf98aff42b4691a12a6b0bf846565b84a4fb2f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/SourceCorrelationEnergyAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceCorrelationEnergy
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCorrelationEnergy.Variant142053ec3a0ac3427ef2a67e4cbf98aff42b4691a12a6b0bf846565b84a4fb2f
+
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_hasDerivAt_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_hasDerivAt_integral
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_eq_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_eq_integral
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_integrand_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_integrand_integrable
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_square_le_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_square_le_energy
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_abs_le_coefficient
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_abs_le_five_div
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_abs_le_five_div
+```

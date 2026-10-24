@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalFrontierLoadedInspection.Variant208a257138a6ca7aa977608368c4b1b7aaea46379a0677dbe616419eb8825fbb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f7d5f2e6d26251cfc545da51147a52b43afb38e` · SHA-256 `7dda17dca2d4ba561c94cbfbfcb01637cda154205426ea163ca3588d9a2dac39`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolution.Varianteee716d31734eef3699d1cdd6f9d8ebc7dacd748b5b489b945967506b7e8e732","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"eee716d31734eef3699d1cdd6f9d8ebc7dacd748b5b489b945967506b7e8e732","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiErrorConvolution.Varianteee716d31734eef3699d1cdd6f9d8ebc7dacd748b5b489b945967506b7e8e732","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"eee716d31734eef3699d1cdd6f9d8ebc7dacd748b5b489b945967506b7e8e732","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualCriticalFrontierLoadedInspection.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiErrorConvolution
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolution.Varianteee716d31734eef3699d1cdd6f9d8ebc7dacd748b5b489b945967506b7e8e732
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_deriv
+#check FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_zero
+#check FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.criticalPrimeTest_at_upper
+#check FormalResearch.RiemannHypothesis.SourceMangoldtAbel.closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtAbel.closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mertensResidual_eq_quadratic
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mertensResidual_eq_quadratic
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.criticalMangoldtWork_eq_continuous_sub_quadratic
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.criticalMangoldtWork_eq_continuous_sub_quadratic
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonnegative
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonpositive
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.mangoldtInteraction_not_nonpositive
+#check FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.originalSourceState_norm
+#print axioms FormalResearch.RiemannHypothesis.SourceMangoldtInteraction.originalSourceState_norm
+```

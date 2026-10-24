@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteFiniteSignedEnergyAuditFailed02.Variant081d2cbb3af5cbe29e6f14962b680d245ba1c69e3ef7bde9cce4bf0f8c0bc433
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `012ab59948d082a730dd097f2491fba4928f8297` · SHA-256 `081d2cbb3af5cbe29e6f14962b680d245ba1c69e3ef7bde9cce4bf0f8c0bc433`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCompleteFiniteSignedEnergy
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.fullNames true
+set_option pp.proofs false
+
+namespace FormalResearch.RiemannHypothesis
+
+#print SourceStrictColumnInterior.strictColumnInterior
+#print SourceCompensatedBilinearConsumer.timeRow
+#print SourceCompensatedBilinearConsumer.columnRow
+#print SourceJointMangoldtWork.jointMangoldtTestProfile
+#print SourceJointMangoldtWork.jointMangoldtErrorWork
+#print SourceDivisorCounterterms.globalBaseline
+#print SourceDivisorCounterterms.divisorCounterterm
+#print SourceDivisorCounterterms.divisorRemainder
+#print SourceSamplingLedger.independentMainTerm
+#print SourceVaughanHankel.centeredDeletedDiagonal
+#print SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print SourceJointCountertermAlignment.divisor_remainders_eq_joint_work_after_mean_cancellation
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_complete_signed_energy
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_aligned_divisor_energy
+#print SourceCompleteFiniteSignedEnergy.complete_density_square_completion
+#print axioms SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print axioms SourceJointCountertermAlignment.divisor_remainders_eq_joint_work_after_mean_cancellation
+#print axioms SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_complete_signed_energy
+#print axioms SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_aligned_divisor_energy
+#print axioms SourceCompleteFiniteSignedEnergy.complete_density_square_completion
+
+set_option pp.proofs true
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_complete_signed_energy
+#print SourceCompleteFiniteSignedEnergy.strictColumnInterior_eq_aligned_divisor_energy
+#print SourceCompleteFiniteSignedEnergy.complete_density_square_completion
+
+end FormalResearch.RiemannHypothesis
+```

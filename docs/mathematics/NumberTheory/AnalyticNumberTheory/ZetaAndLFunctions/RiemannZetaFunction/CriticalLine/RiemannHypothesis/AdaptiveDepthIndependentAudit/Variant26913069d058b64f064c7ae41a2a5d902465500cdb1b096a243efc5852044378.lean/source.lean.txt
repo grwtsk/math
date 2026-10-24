@@ -1,0 +1,12 @@
+import SourceActualAdaptiveDepthBudget
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check RH16ActualAdaptiveDepthBudget.actual_adaptive_depth_ge_four_square
+#print RH16ActualAdaptiveDepthBudget.actual_adaptive_depth_ge_four_square
+#print axioms RH16ActualAdaptiveDepthBudget.actual_adaptive_depth_ge_four_square

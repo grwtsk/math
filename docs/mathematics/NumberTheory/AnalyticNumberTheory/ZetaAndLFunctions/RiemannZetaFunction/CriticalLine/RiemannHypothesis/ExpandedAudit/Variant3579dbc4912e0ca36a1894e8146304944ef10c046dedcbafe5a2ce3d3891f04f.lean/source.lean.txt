@@ -1,0 +1,13 @@
+import SourceSquarefreeDirectEstimate
+set_option linter.hashCommand false
+#check RH16SquarefreeDirectEstimate.all_real_lower_of_readout_squarefree
+#print axioms RH16SquarefreeDirectEstimate.all_real_lower_of_readout_squarefree
+#check RH16SquarefreeDirectEstimate.actual_negative_defect_cap_squarefree
+#print axioms RH16SquarefreeDirectEstimate.actual_negative_defect_cap_squarefree
+#check RH16SquarefreeDirectEstimate.estimate_of_readout_squarefree_direct
+#print axioms RH16SquarefreeDirectEstimate.estimate_of_readout_squarefree_direct
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

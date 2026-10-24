@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePNTPairingBoundAudit.Variant61d24b413daa7a8a15b2f2aad0dd7ce7956a0928864213c06e24b1074df7dfd9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2070c37aabbfef73c7a74cbebfe5dd0eb10ce4b3` · SHA-256 `3c94e03f474f8175c390f676f45105b8e5816491724937d44b777389c91d4157`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePNTPairingBound.Variantd537d0f929fd6d440d9b7bb2f16a32ee4cdb30fa9777c090e5a88c3be49ea631","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d537d0f929fd6d440d9b7bb2f16a32ee4cdb30fa9777c090e5a88c3be49ea631","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePNTPairingBound.Variantd537d0f929fd6d440d9b7bb2f16a32ee4cdb30fa9777c090e5a88c3be49ea631","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d537d0f929fd6d440d9b7bb2f16a32ee4cdb30fa9777c090e5a88c3be49ea631","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/pnt-rate-one/SourcePNTPairingBoundAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePNTPairingBound.Variantd537d0f929fd6d440d9b7bb2f16a32ee4cdb30fa9777c090e5a88c3be49ea631
+
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.correlationBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.correlationBudget
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.correlationBudget_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.correlationBudget_nonneg
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.correlationDifference_uniform
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.correlationDifference_uniform
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.sourcePairing_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.sourcePairing_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.exp_half_intervalIntegral
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.exp_half_intervalIntegral
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.source_integrand_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.source_integrand_bound
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.source_interval_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.source_interval_bound
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.signedPairing_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.signedPairing_bound
+#print FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.signedPairing_eventual_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourcePNTPairingBound.signedPairing_eventual_bound
+```

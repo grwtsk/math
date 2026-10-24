@@ -1,0 +1,126 @@
+# Complete source: GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondBlockData
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5b60c5048f39271fa20aefc1c83786c5eb33eaec` · SHA-256 `92a44830dac00260c28e40e941dfca0d11f8816d0af4a9ba75310ddcc87ef283`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonFirstBlockData
+
+set_option autoImplicit false
+
+/-!
+# Source-bound proposals for the SECOND prefix block
+
+Local index i represents global prefix index i+64 and integer base i+65.
+The original source, schedule and complete error are unchanged. These integer
+triples are proposals; the companion seed scripts must justify every row.
+The final row is base 128, whose logarithm reduction exponent is SEVEN.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+namespace GRWTSK.RiemannHypothesis.ConcreteNewtonSecondBlockData
+
+open GRWTSK.Analysis.Complex
+open RationalRoundedArithmetic IntegerDyadicTrace RationalTaylorSeedNormalization
+open ConcreteNewtonPacket RationalZetaCenterEvaluation
+
+def base (i : Fin 64) : ℕ := i.1 + 65
+
+def initial (i : Fin 64) : GridState :=
+  match i.1 with
+  | 0 => ⟨17813112949095571874, -4179910988678323362, 40⟩
+  | 1 => ⟨17809052000209862394, -4194800417438351662, 40⟩
+  | 2 => ⟨17805039970973151197, -4209462151025246015, 40⟩
+  | 3 => ⟨17801075593904932043, -4223902982325446673, 40⟩
+  | 4 => ⟨17797157651719806863, -4238129405514346851, 40⟩
+  | 5 => ⟨17793284974667342109, -4252147633296788148, 40⟩
+  | 6 => ⟨17789456438047660747, -4265963612922223717, 40⟩
+  | 7 => ⟨17785670959888922483, -4279583041077548881, 40⟩
+  | 8 => ⟨17781927498774107711, -4293011377750640061, 40⟩
+  | 9 => ⟨17778225051805653169, -4306253859148769326, 40⟩
+  | 10 => ⟨17774562652697504338, -4319315509748142336, 40⟩
+  | 11 => ⟨17770939369985064346, -4332201153543728069, 40⟩
+  | 12 => ⟨17767354305344342989, -4344915424562210596, 40⟩
+  | 13 => ⟨17763806592012352556, -4357462776695210054, 40⟩
+  | 14 => ⟨17760295393301468269, -4369847492904816775, 40⟩
+  | 15 => ⟨17756819901201078032, -4382073693848893461, 40⟩
+  | 16 => ⟨17753379335060395760, -4394145345969467839, 40⟩
+  | 17 => ⟨17749972940346810831, -4406066269083811953, 40⟩
+  | 18 => ⟨17746599987474598486, -4417840143514439675, 40⟩
+  | 19 => ⟨17743259770699227071, -4429470516791212293, 41⟩
+  | 20 => ⟨17739951607072872052, -4440960809955988542, 41⟩
+  | 21 => ⟨17736674835457087439, -4452314323497759974, 41⟩
+  | 22 => ⟨17733428815588895964, -4463534242943948140, 41⟩
+  | 23 => ⟨17730212927196843007, -4474623644131482948, 41⟩
+  | 24 => ⟨17727026569163818515, -4485585498179410599, 41⟩
+  | 25 => ⟨17723869158733688275, -4496422676183076035, 41⟩
+  | 26 => ⟨17720740130758993112, -4507137953648372098, 41⟩
+  | 27 => ⟨17717638936987173635, -4517734014683130799, 41⟩
+  | 28 => ⟨17714565045382960824, -4528213455961438008, 41⟩
+  | 29 => ⟨17711517939484740507, -4538578790475469620, 41⟩
+  | 30 => ⟨17708497117792853989, -4548832451088364301, 41⟩
+  | 31 => ⟨17705502093187938993, -4558976793900655822, 41⟩
+  | 32 => ⟨17702532392377545720, -4569014101441878205, 41⟩
+  | 33 => ⟨17699587555369383308, -4578946585698121902, 41⟩
+  | 34 => ⟨17696667134969663021, -4588776390985552099, 41⟩
+  | 35 => ⟨17693770696305107127, -4598505596679194887, 41⟩
+  | 36 => ⟨17690897816367287152, -4608136219805647899, 41⟩
+  | 37 => ⟨17688048083578042878, -4617670217507774097, 41⟩
+  | 38 => ⟨17685221097374814548, -4627109489388886217, 41⟩
+  | 39 => ⟨17682416467814795853, -4636455879743420849, 41⟩
+  | 40 => ⟨17679633815196884936, -4645711179680631587, 41⟩
+  | 41 => ⟨17676872769700475191, -4654877129147396778, 41⟩
+  | 42 => ⟨17674132971040187613, -4663955418855836158, 41⟩
+  | 43 => ⟨17671414068135702112, -4672947692121059288, 41⟩
+  | 44 => ⟨17668715718795896988, -4681855546614024772, 41⟩
+  | 45 => ⟨17666037589416553885, -4690680536034170450, 41⟩
+  | 46 => ⟨17663379354690930344, -4699424171706179082, 41⟩
+  | 47 => ⟨17660740697332543848, -4708087924104969633, 41⟩
+  | 48 => ⟨17658121307809550095, -4716673224312749342, 41⟩
+  | 49 => ⟨17655520884090134547, -4725181465411724894, 41⟩
+  | 50 => ⟨17652939131398370138, -4733614003815850661, 41⟩
+  | 51 => ⟨17650375761980025615, -4741972160544786950, 41⟩
+  | 52 => ⟨17647830494877838535, -4750257222443050233, 41⟩
+  | 53 => ⟨17645303055715794531, -4758470443347159426, 41⟩
+  | 54 => ⟨17642793176491980279, -4766613045203416358, 41⟩
+  | 55 => ⟨17640300595379601759, -4774686219138803818, 41⟩
+  | 56 => ⟨17637825056535782052, -4782691126487340051, 41⟩
+  | 57 => ⟨17635366309917774075, -4790628899774093634, 41⟩
+  | 58 => ⟨17632924111106243580, -4798500643658936507, 42⟩
+  | 59 => ⟨17630498221135296334, -4806307435841994996, 42⟩
+  | 60 => ⟨17628088406328940942, -4814050327932648267, 43⟩
+  | 61 => ⟨17625694438143695155, -4821730346283820380, 44⟩
+  | 62 => ⟨17623316093017058959, -4829348492793215267, 45⟩
+  | _ => ⟨17620953152221592249, -4836905745673053329, 47⟩
+
+/-- Source quantities are recomputed, not supplied by the proposed grid state. -/
+def sourceArgument (i : Fin 64) : QComplex :=
+  RationalPowerEvaluation.argument (base i : ℚ) (sourceExponent center) (schedule (base i))
+def sourceRadius (i : Fin 64) : ℚ :=
+  RationalPowerEvaluation.radius (base i : ℚ) (sourceExponent center) (schedule (base i))
+def sourceDisplacement (i : Fin 64) : ℚ :=
+  RationalPowerEvaluation.displacement (base i : ℚ) (sourceExponent center) (schedule (base i))
+
+def InputValid (i : Fin 64) : Prop :=
+  RationalPowerEvaluation.Admissible (base i : ℚ) (sourceExponent center) (schedule (base i)) ∧
+    0 ≤ sourceRadius i ∧ 0 ≤ sourceDisplacement i
+
+def SeedWindows (i : Fin 64) : Prop :=
+  RationalTaylorSeedNormalization.Windows 64 (sourceArgument i)
+    (sourceRadius i) (sourceDisplacement i) 21 (initial i)
+
+/-- Reuse the already specified eight-by-eight LOCAL indexing, not its bases. -/
+def slot (g j : Fin 8) : Fin 64 := ConcreteNewtonFirstBlockData.slot g j
+
+theorem group_cover (i : Fin 64) : ∃ g j : Fin 8, slot g j = i :=
+  ConcreteNewtonFirstBlockData.group_cover i
+
+theorem group_unique (g j g' j' : Fin 8) (h : slot g j = slot g' j') :
+    g = g' ∧ j = j' := ConcreteNewtonFirstBlockData.group_unique g j g' j' h
+
+end GRWTSK.RiemannHypothesis.ConcreteNewtonSecondBlockData
+```

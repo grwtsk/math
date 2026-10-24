@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Dbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aaTypesAxioms.Variantdbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1e59c8f324e180cd1b8cec8f217e2b13654340bb` · SHA-256 `dbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAbsolutePrimeMomentObstruction
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_eventually_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_eventually_lower
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_tendsto_atTop
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_no_constant_tail_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_no_constant_tail_bound
+```

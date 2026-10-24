@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPsiFloorKernelSignChallengeAudit.Variantac9f700f799ffbc0a17ae04109c318bc4038d3539a29fa5e5bba67f7adb25283
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ee13bf0089c64933f143dafc8797ae7bef8a80c7` · SHA-256 `f20bf5d4db392c29c96e9804d49e4e7cd14cf5e5870ded32057520e2e870f3b8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPsiFloorKernelSignChallenge.Varianta812a3b04b26af6e3e91ac530c5d32387002be85dd62e825c17e5fc29bd4fa3b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a812a3b04b26af6e3e91ac530c5d32387002be85dd62e825c17e5fc29bd4fa3b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualPsiFloorKernelSignChallenge.Varianta812a3b04b26af6e3e91ac530c5d32387002be85dd62e825c17e5fc29bd4fa3b","mathematical_subject":"Foundations.Unclassified","original_sha256":"a812a3b04b26af6e3e91ac530c5d32387002be85dd62e825c17e5fc29bd4fa3b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T200930Z-1791317370068256000/ActualPsiFloorKernelSignChallengeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualPsiFloorKernelSignChallenge
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPsiFloorKernelSignChallenge.Varianta812a3b04b26af6e3e91ac530c5d32387002be85dd62e825c17e5fc29bd4fa3b
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.actualPsiFloor_small_block_critical_weight
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_small_block_critical_weight
+#check RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_upper
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_upper
+#check RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_neg
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_neg
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_negative_block
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_negative_block
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_positive_block
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_positive_block
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonnegative
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonnegative
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonpositive
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonpositive
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.actualPsiFloor_small_block_critical_weight
+#print RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_upper
+#print RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_neg
+#print RH16IndependentChallengeNext.actualPsiFloor_pairing_density_negative_block
+#print RH16IndependentChallengeNext.actualPsiFloor_pairing_density_positive_block
+#print RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonnegative
+#print RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonpositive
+```

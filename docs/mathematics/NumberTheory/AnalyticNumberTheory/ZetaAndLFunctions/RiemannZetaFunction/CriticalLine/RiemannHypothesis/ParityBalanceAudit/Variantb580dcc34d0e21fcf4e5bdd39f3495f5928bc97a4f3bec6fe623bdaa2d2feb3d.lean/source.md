@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ParityBalanceAudit.Variantb580dcc34d0e21fcf4e5bdd39f3495f5928bc97a4f3bec6fe623bdaa2d2feb3d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8539ff7640e27e15e2a5aa68d509d40d8fadaef9` · SHA-256 `5a56e26ff297077870e60260033243620ca1de8921165b95ce3ecba920404d6e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaPhiWhitenedParityBalance.Variant942fc47f43732afd9bf68a15b46126743e57acc2168648e03758ad39e741556b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"942fc47f43732afd9bf68a15b46126743e57acc2168648e03758ad39e741556b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaPhiWhitenedParityBalance.Variant942fc47f43732afd9bf68a15b46126743e57acc2168648e03758ad39e741556b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"942fc47f43732afd9bf68a15b46126743e57acc2168648e03758ad39e741556b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Documents/Codex/2026-09-30/task/audit/formal/ParityBalanceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaPhiWhitenedParityBalance
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaPhiWhitenedParityBalance.Variant942fc47f43732afd9bf68a15b46126743e57acc2168648e03758ad39e741556b
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector_transpose
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector_transpose
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector_sq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector_sq
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector_posSemidef
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiPositiveParityProjector_posSemidef
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiParityProjectors_add
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiParityProjectors_add
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedPositiveParityGram
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedPositiveParityGram
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedPositiveParityGram_posSemidef
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedPositiveParityGram_posSemidef
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityGrams_add
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityGrams_add
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityCompression_eq_positiveGram_sub_negativeGram
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedParityCompression_eq_positiveGram_sub_negativeGram
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedNegativeParityGram_eq_one_sub_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedNegativeParityGram_eq_one_sub_positive
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedPositiveParityGram_eq_one_sub_negative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.thetaPhiWhitenedPositiveParityGram_eq_one_sub_negative
+
+```

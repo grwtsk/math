@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant497e40d277869a6efb40b3ce7e307677a34898e5e7b7965bbbf79ad301287680
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `106745e55e417aea994cc6d3c5b3970e9e1f9506` · SHA-256 `66b3e448e177f380fbeedd561cdf790534eda36bb8b5f56f779ea77bc94130b7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerFrequencyCancellation.Variantf9ab89be0fd4d4975645fa5c5914c892b71bfa4b3002890f258337f25501b116","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f9ab89be0fd4d4975645fa5c5914c892b71bfa4b3002890f258337f25501b116","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerFrequencyCancellation.Variantf9ab89be0fd4d4975645fa5c5914c892b71bfa4b3002890f258337f25501b116","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f9ab89be0fd4d4975645fa5c5914c892b71bfa4b3002890f258337f25501b116","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/source-readbacks/owner-ignored-latest-20261007T154040Z/preserved/scratch/rh16-continuation-20261006-challenge-next/SourceActualEulerFrequencyCancellation-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerFrequencyCancellation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerFrequencyCancellation.Variantf9ab89be0fd4d4975645fa5c5914c892b71bfa4b3002890f258337f25501b116
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualCentralFrequencyMass_eventually_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualCentralFrequencyMass_eventually_pos
+#check FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualComplementaryFrequencyRatio_eventually_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualComplementaryFrequencyRatio_eventually_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualComplementaryFrequencyRatio_centered_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualComplementaryFrequencyRatio_centered_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualComplementaryFrequencyRatio_tendsto_neg_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerFrequencyCancellation.actualComplementaryFrequencyRatio_tendsto_neg_one
+```

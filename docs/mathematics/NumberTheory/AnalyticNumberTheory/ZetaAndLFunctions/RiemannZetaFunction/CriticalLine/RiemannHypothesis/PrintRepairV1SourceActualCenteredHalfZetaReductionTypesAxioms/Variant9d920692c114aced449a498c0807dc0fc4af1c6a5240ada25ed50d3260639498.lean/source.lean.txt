@@ -1,0 +1,23 @@
+import SourceActualCenteredHalfZetaReduction
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction
+set_option pp.fullNames true
+#check actualCenteredHalfZetaMain
+#print axioms actualCenteredHalfZetaMain
+#check halfHarmonicQuotientDefect
+#print axioms halfHarmonicQuotientDefect
+#check halfHarmonicQuotientDefect_abs_le
+#print axioms halfHarmonicQuotientDefect_abs_le
+#check closedCenteredHalfInventory_sub_zetaMain_eq
+#print axioms closedCenteredHalfInventory_sub_zetaMain_eq
+#check closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print axioms closedCenteredHalfInventory_sub_zetaMain_abs_le
+#check actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+#print axioms actualCenteredColumnHalfInventory_sub_zetaMain_abs_le

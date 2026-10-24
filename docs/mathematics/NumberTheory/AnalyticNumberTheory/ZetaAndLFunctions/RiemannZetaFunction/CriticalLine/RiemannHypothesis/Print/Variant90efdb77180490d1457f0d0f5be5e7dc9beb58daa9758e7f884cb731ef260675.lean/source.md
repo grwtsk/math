@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Print.Variant90efdb77180490d1457f0d0f5be5e7dc9beb58daa9758e7f884cb731ef260675
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `133b9e51cfad1529cb36029007fd25b7008d3d36` · SHA-256 `90efdb77180490d1457f0d0f5be5e7dc9beb58daa9758e7f884cb731ef260675`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Cycle14PhaseMassRegent
+
+set_option linter.hashCommand false
+
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_sub_one_eq_phase_prefix
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positive_phase_prefix_le_mass
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_criticalPrimeTest_sub_one
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_early_point_ge
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_early_exponential
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.negativeMass_ge_early_exponential
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.criticalPrimeTest_variation_ge_early_exponential
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.pairedTailTest_variation_ge_early_exponential
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_ge_linear
+#print FormalResearch.RiemannHypothesis.SourcePhaseMassFTC.positiveMass_not_eventually_bounded
+```

@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerSupportHeadTypesAxioms.Variantadd75dca5523e75720b7f703d7dc3f86201b5abe2fac6c5dde227f0172b1e8ed
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8024ad05032dba9bcefe1d8bdc9fd0436454f856` · SHA-256 `add75dca5523e75720b7f703d7dc3f86201b5abe2fac6c5dde227f0172b1e8ed`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEulerSupportHead
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeDirichletPolynomial
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeDirichletPolynomial
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeSeries
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeSeries
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualPrimeSeries_eq_closed_add_exterior
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualPrimeSeries_eq_closed_add_exterior
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimePolynomial_fullLine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimePolynomial_fullLine
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeDensity_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeDensity_fullLine_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeDensity_fullLine_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeSeries_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeSeries_norm_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead_error_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead_error_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHeadErrorConstant
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHeadErrorConstant
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead_moving_error_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead_moving_error_le
+```

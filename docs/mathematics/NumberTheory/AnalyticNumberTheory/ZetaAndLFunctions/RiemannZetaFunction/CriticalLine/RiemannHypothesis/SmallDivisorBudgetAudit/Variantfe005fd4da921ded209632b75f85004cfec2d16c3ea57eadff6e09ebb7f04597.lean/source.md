@@ -1,0 +1,18 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SmallDivisorBudgetAudit.Variantfe005fd4da921ded209632b75f85004cfec2d16c3ea57eadff6e09ebb7f04597
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c76854f921c20fe70eedf9103f463f49b4a74d5b` · SHA-256 `fe005fd4da921ded209632b75f85004cfec2d16c3ea57eadff6e09ebb7f04597`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget
+
+#print FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.initial_divisor_sum_abs_le
+#print FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.small_divisor_sum_abs_le
+#print FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.small_divisor_contribution_abs_le
+#print FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.abs_pairing_add_large_divisor_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.initial_divisor_sum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.small_divisor_sum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.small_divisor_contribution_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SmallDivisorBudget.abs_pairing_add_large_divisor_le
+```

@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualMovingCriticalIncrementQualified.Variantbb514e860d9b553270b3469bf76e5fb6918979a726d8af25ede6211549116b60
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `653b92a532f54ba5e0fa5c96b9c8d8ac3512ac56` · SHA-256 `86914b1620392cc290b48acd0c461b692f3240e09b6b06472723ded61c2b8919`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMovingCriticalIncrement.Variantbbdba8525265b0afa067d84403c19df8392a371ef9095221ecff89624acedfe7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bbdba8525265b0afa067d84403c19df8392a371ef9095221ecff89624acedfe7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMovingCriticalIncrement.Variantbbdba8525265b0afa067d84403c19df8392a371ef9095221ecff89624acedfe7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"bbdba8525265b0afa067d84403c19df8392a371ef9095221ecff89624acedfe7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-moving-critical-increment/ActualMovingCriticalIncrementQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMovingCriticalIncrement
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMovingCriticalIncrement.Variantbbdba8525265b0afa067d84403c19df8392a371ef9095221ecff89624acedfe7
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+-- Expanded diagnostic budgets preserve default pp.all proof annotations.
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualClosedMangoldtIncrement
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualMovingCriticalIncrementCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualMovingCriticalHead
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualCenteredError_increment_eq_closed
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualClosedMangoldtIncrement_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualClosedMangoldtIncrement_fixed_window_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualCriticalKernel_mass
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualMovingCriticalIncrement_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualCriticalErrorCovariance_eq_moving_increment
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualMovingCriticalHead_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualMovingCriticalHead_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualCriticalErrorCovariance_sub_moving_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualMovingCriticalHead_abs_le_uniform
+#print FormalResearch.RiemannHypothesis.SourceActualMovingCriticalIncrement.actualCriticalCovariance_lower_iff_moving
+```

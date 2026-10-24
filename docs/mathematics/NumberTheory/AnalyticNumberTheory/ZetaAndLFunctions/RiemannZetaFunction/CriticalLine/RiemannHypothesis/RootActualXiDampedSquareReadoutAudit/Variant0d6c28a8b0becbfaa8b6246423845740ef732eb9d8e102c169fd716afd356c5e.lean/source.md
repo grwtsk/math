@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiDampedSquareReadoutAudit.Variant0d6c28a8b0becbfaa8b6246423845740ef732eb9d8e102c169fd716afd356c5e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5666084386f332a13f327dc56caf72cd09b3d195` · SHA-256 `228f7e7786752500adf8e863919424fc5567be43bb74bcd81e51633561ace0fe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiDampedSquareReadout.Variant308156f212906a9c526d7a278e230f474e75e8ad1d5a4d85bb45adc7d5f992a5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"308156f212906a9c526d7a278e230f474e75e8ad1d5a4d85bb45adc7d5f992a5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualXiDampedSquareReadout.Variant308156f212906a9c526d7a278e230f474e75e8ad1d5a4d85bb45adc7d5f992a5","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"308156f212906a9c526d7a278e230f474e75e8ad1d5a4d85bb45adc7d5f992a5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T013044Z-1791336644331166000/RootActualXiDampedSquareReadoutAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualXiDampedSquareReadout
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiDampedSquareReadout.Variant308156f212906a9c526d7a278e230f474e75e8ad1d5a4d85bb45adc7d5f992a5
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_nonneg
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_nonneg
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel_touching
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareKernel_touching
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_eq_expanded
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiSquareWindowSeven_eq_expanded
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiFinitePrimitive_eq_square_readout
+#print FormalResearch.RiemannHypothesis.RootActualXiDampedSquareReadout.actualDampedXiFinitePrimitive_eq_square_readout
+```

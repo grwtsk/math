@@ -1,0 +1,8 @@
+import SourceActualFarPeriodicBudget
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget
+#print actualPhysicalPeriodicPrefixRow
+#print actualPhysicalPeriodicPrefixRow_abs_le
+#print actualPhysicalPeriodicPrefixRow_zero_right
+#print actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#print actualPhysicalPeriodicPrefixRow_eq_log

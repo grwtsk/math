@@ -1,0 +1,6 @@
+import SourceActualXiHalfFiniteReadout
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualMangoldtHalfWindowSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualXi_half_window_eq_finite
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualAnchoredXiTailPrimitive_eq_finite

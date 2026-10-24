@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EarlyBudgetProofs.Variant9bfbe2cea7e109bb57902a11653a76a4953b93882a52663e0ae126a9b2a54311
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f0fa742c8d2d408f00088c0f1f6d302893bc62dd` · SHA-256 `a6f0e195dfbbf42fa9449fd212273df72db24fe35152b0615b905f7ea128bd12`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.Variant909d6939dc66817cf5cf9ac206277b521bd4ff66f9ba031172f6ae7a07cae7b7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"909d6939dc66817cf5cf9ac206277b521bd4ff66f9ba031172f6ae7a07cae7b7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceStrictComplementaryEarlyBudget.Variant909d6939dc66817cf5cf9ac206277b521bd4ff66f9ba031172f6ae7a07cae7b7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"909d6939dc66817cf5cf9ac206277b521bd4ff66f9ba031172f6ae7a07cae7b7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/EarlyBudgetProofs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceStrictComplementaryEarlyBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.Variant909d6939dc66817cf5cf9ac206277b521bd4ff66f9ba031172f6ae7a07cae7b7
+
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.log_vaughanCutoff_le_early_window
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_pos
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_le
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_integrable
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_negative_budget
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_minus_early_budget
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_lower
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_neg_linear
+#print FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_sub_linear
+```

@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialMellinTransportAuditTypes.Variant33f91fccac32e24d330f646af905a4709b1ad5a36f67e51c599af5e91f4ad36b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9d77c7eb8a6e695f58e8af286842194a7377e7ea` · SHA-256 `03a9905a181c2bf7d97d872d2cb06ccbece6a02e903064d4a0abb02dab0bc4b8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialMellinTransport.Variant9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceActualFactorialMellinTransport.Variant9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualFactorialMellinTransportAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFactorialMellinTransport
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialMellinTransport.Variant9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+```

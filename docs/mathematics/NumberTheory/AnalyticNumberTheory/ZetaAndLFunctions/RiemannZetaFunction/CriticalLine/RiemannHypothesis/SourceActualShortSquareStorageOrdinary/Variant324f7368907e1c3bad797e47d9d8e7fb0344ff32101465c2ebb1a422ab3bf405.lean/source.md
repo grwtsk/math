@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualShortSquareStorageOrdinary.Variant324f7368907e1c3bad797e47d9d8e7fb0344ff32101465c2ebb1a422ab3bf405
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `84da25316c72be0d507da69fadba16bf1ad72ea0` · SHA-256 `9cced9b7aa05805881144a9e7b04b61b93fbf5e2e0204df115426fb3f32c17ec`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualShortSquareStorage.Variant1e5aa6de3fdc742ccc8ccf22f5d408626c5a4cc975c21ccc77c6d1a8ed761063","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1e5aa6de3fdc742ccc8ccf22f5d408626c5a4cc975c21ccc77c6d1a8ed761063","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualShortSquareStorage.Variant1e5aa6de3fdc742ccc8ccf22f5d408626c5a4cc975c21ccc77c6d1a8ed761063","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1e5aa6de3fdc742ccc8ccf22f5d408626c5a4cc975c21ccc77c6d1a8ed761063","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-short-square-storage/SourceActualShortSquareStorageOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualShortSquareStorage
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualShortSquareStorage.Variant1e5aa6de3fdc742ccc8ccf22f5d408626c5a4cc975c21ccc77c6d1a8ed761063
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquare_reconstruction
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline_le
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_le_envelope
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareSurplus_eventually_negative_linear
+```

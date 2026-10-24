@@ -1,0 +1,72 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAdaptiveSignedCoefficientAudit.Variantf1ca2c5670e90f7b73cdaba229b98110b15a737fe320408cfc5284890f51a15a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `89fd5d2ee7b97c6f94596791772c7a77852581d4` · SHA-256 `ee71431ca2fb444044a0ba86f44385f809e1d298b860c1445dc8c33c3de74d35`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAdaptiveSignedCoefficientRows.Variant6f72d36761f1cf1ce3c4cbe170de227982d4cd0c56624630d3f0797120f48a78","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6f72d36761f1cf1ce3c4cbe170de227982d4cd0c56624630d3f0797120f48a78","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceAdaptiveSignedCoefficientRows.Variant6f72d36761f1cf1ce3c4cbe170de227982d4cd0c56624630d3f0797120f48a78","mathematical_subject":"Foundations.Unclassified","original_sha256":"6f72d36761f1cf1ce3c4cbe170de227982d4cd0c56624630d3f0797120f48a78","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-root-01a11259-refocus-signed-coefficients/SourceAdaptiveSignedCoefficientAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceAdaptiveSignedCoefficientRows
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAdaptiveSignedCoefficientRows.Variant6f72d36761f1cf1ce3c4cbe170de227982d4cd0c56624630d3f0797120f48a78
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+
+#check RH16AdaptiveSignedCoefficients.truncatedConvolution
+#print RH16AdaptiveSignedCoefficients.truncatedConvolution
+#print axioms RH16AdaptiveSignedCoefficients.truncatedConvolution
+
+#check RH16AdaptiveSignedCoefficients.truncatedConvolution_weighted_sum
+#print RH16AdaptiveSignedCoefficients.truncatedConvolution_weighted_sum
+#print axioms RH16AdaptiveSignedCoefficients.truncatedConvolution_weighted_sum
+
+#check RH16AdaptiveSignedCoefficients.closed_mask_weighted_sum
+#print RH16AdaptiveSignedCoefficients.closed_mask_weighted_sum
+#print axioms RH16AdaptiveSignedCoefficients.closed_mask_weighted_sum
+
+#check RH16AdaptiveSignedCoefficients.adaptive_rectangle_le_cutoff
+#print RH16AdaptiveSignedCoefficients.adaptive_rectangle_le_cutoff
+#print axioms RH16AdaptiveSignedCoefficients.adaptive_rectangle_le_cutoff
+
+#check RH16AdaptiveSignedCoefficients.correlationCoefficient
+#print RH16AdaptiveSignedCoefficients.correlationCoefficient
+#print axioms RH16AdaptiveSignedCoefficients.correlationCoefficient
+
+#check RH16AdaptiveSignedCoefficients.derivativeCoefficient
+#print RH16AdaptiveSignedCoefficients.derivativeCoefficient
+#print axioms RH16AdaptiveSignedCoefficients.derivativeCoefficient
+
+#check RH16AdaptiveSignedCoefficients.actualCoefficientRows
+#print RH16AdaptiveSignedCoefficients.actualCoefficientRows
+#print axioms RH16AdaptiveSignedCoefficients.actualCoefficientRows
+
+#check RH16AdaptiveSignedCoefficients.actualCoefficientRows_eq_independentMain
+#print RH16AdaptiveSignedCoefficients.actualCoefficientRows_eq_independentMain
+#print axioms RH16AdaptiveSignedCoefficients.actualCoefficientRows_eq_independentMain
+
+#check RH16AdaptiveSignedCoefficients.convolutionSamplingError
+#print RH16AdaptiveSignedCoefficients.convolutionSamplingError
+#print axioms RH16AdaptiveSignedCoefficients.convolutionSamplingError
+
+#check RH16AdaptiveSignedCoefficients.signedError_eq_log_row_sub_convolution_row
+#print RH16AdaptiveSignedCoefficients.signedError_eq_log_row_sub_convolution_row
+#print axioms RH16AdaptiveSignedCoefficients.signedError_eq_log_row_sub_convolution_row
+
+#check RH16AdaptiveSignedCoefficients.actual_residual_eq_coefficientRows_add_signedError
+#print RH16AdaptiveSignedCoefficients.actual_residual_eq_coefficientRows_add_signedError
+#print axioms RH16AdaptiveSignedCoefficients.actual_residual_eq_coefficientRows_add_signedError
+
+#check RH16AdaptiveSignedCoefficients.centeredAdaptiveCoefficientDefect
+#print RH16AdaptiveSignedCoefficients.centeredAdaptiveCoefficientDefect
+#print axioms RH16AdaptiveSignedCoefficients.centeredAdaptiveCoefficientDefect
+
+#check RH16AdaptiveSignedCoefficients.centeredAdaptiveCoefficientDefect_eq_actual_residual
+#print RH16AdaptiveSignedCoefficients.centeredAdaptiveCoefficientDefect_eq_actual_residual
+#print axioms RH16AdaptiveSignedCoefficients.centeredAdaptiveCoefficientDefect_eq_actual_residual
+```

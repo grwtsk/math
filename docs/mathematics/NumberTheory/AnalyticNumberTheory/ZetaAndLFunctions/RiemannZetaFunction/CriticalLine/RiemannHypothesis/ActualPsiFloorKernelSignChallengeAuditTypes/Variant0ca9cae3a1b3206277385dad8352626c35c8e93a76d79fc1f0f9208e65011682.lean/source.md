@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPsiFloorKernelSignChallengeAuditTypes.Variant0ca9cae3a1b3206277385dad8352626c35c8e93a76d79fc1f0f9208e65011682
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `27f58d69ef6b859662a4120b0f1bc6979f4bcbc9` · SHA-256 `f5764163c3fc849daa721d575beab3e8fc250a1b8391dfb82134113b7e2f0e1f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPsiFloorKernelSignChallenge.Variantad7aa42dd906ba418613dbfd471ec7d4fbd20cebc85e31a44ac96829fc8c9e51","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ad7aa42dd906ba418613dbfd471ec7d4fbd20cebc85e31a44ac96829fc8c9e51","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualPsiFloorKernelSignChallenge.Variantad7aa42dd906ba418613dbfd471ec7d4fbd20cebc85e31a44ac96829fc8c9e51","mathematical_subject":"Foundations.Unclassified","original_sha256":"ad7aa42dd906ba418613dbfd471ec7d4fbd20cebc85e31a44ac96829fc8c9e51","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualPsiFloorKernelSignChallengeAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualPsiFloorKernelSignChallenge
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPsiFloorKernelSignChallenge.Variantad7aa42dd906ba418613dbfd471ec7d4fbd20cebc85e31a44ac96829fc8c9e51
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16IndependentChallengeNext.actualPsiFloor_small_block_critical_weight
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_small_block_critical_weight
+#check RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_upper
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_upper
+#check RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_neg
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_small_block_derivative_neg
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_negative_block
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_negative_block
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_positive_block
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_positive_block
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonnegative
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonnegative
+#check RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonpositive
+#print axioms RH16IndependentChallengeNext.actualPsiFloor_pairing_density_not_nonpositive
+```

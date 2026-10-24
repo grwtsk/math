@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ExpandedTypesAxioms.Variantb79ee99c10d18b1f80851842d52cfb70f2c7b57e2b9b5a7790df4c031b622cb5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `065245379cc769f859b807562b7ba20445835cc3` · SHA-256 `b79ee99c10d18b1f80851842d52cfb70f2c7b57e2b9b5a7790df4c031b622cb5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdaptiveSharpHeight
+set_option linter.hashCommand false
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTailCost
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTailCost
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight_ge_four
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight_ge_four
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight_fifth_power
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight_fifth_power
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight_log
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpHeight_log
+#check RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTail_uniform_bound
+#print axioms RH16ActualAdaptiveSharpHeight.actualAdaptiveSharpTail_uniform_bound
+```

@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant95a29218df5f0ee39f535942ab0e129d4831674d906ff1464af546f383736064
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `30019cb561624cba76045b03f5ac93856a3d242c` · SHA-256 `5aee032e46951fd163f9ff76e9bc1c672ff95d374fbbd38cf948bc61f00a67c2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCriticalGreenTent.Variant0f5634cbb8a0da85f0fe6a3eea570af27628a78920d87d6adfdfaecae8fc90cc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0f5634cbb8a0da85f0fe6a3eea570af27628a78920d87d6adfdfaecae8fc90cc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCriticalGreenTent.Variant0f5634cbb8a0da85f0fe6a3eea570af27628a78920d87d6adfdfaecae8fc90cc","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0f5634cbb8a0da85f0fe6a3eea570af27628a78920d87d6adfdfaecae8fc90cc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle21/principal-green-tent/repair-attempt-02/checks/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCriticalGreenTent
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCriticalGreenTent.Variant0f5634cbb8a0da85f0fe6a3eea570af27628a78920d87d6adfdfaecae8fc90cc
+
+set_option autoImplicit false
+set_option pp.universes true
+set_option pp.fullNames true
+
+#check @FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent
+#check @FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.positivePart_sub_affine_eq_neg_tent
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.positivePart_sub_affine_eq_neg_tent
+#check @FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent_nonneg
+#check @FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent_endpoints
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDirichletTent_endpoints
+#check @FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.primeLogSum_hinge_common_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.primeLogSum_hinge_common_inventory
+#check @FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDiscrepancyBridge_eq_green_tents
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalGreenTent.criticalDiscrepancyBridge_eq_green_tents
+```

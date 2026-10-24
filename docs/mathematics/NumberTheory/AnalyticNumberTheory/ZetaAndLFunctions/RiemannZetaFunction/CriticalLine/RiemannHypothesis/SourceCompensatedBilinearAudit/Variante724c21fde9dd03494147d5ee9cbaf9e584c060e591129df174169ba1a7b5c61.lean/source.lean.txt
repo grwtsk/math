@@ -1,0 +1,23 @@
+import SourceCompensatedBilinearConsumer
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.proofs false
+set_option pp.fullNames true
+
+namespace FormalResearch.RiemannHypothesis.SourceCompensatedBilinearConsumer
+
+#print timeRow
+#print columnRow
+#print actualBilinearWork
+#print compensatedBilinearWork
+#print actualBilinearWork_eq_jointMangoldtErrorWork
+#print compensatedBilinearWork_eq_compensatedJointWork
+#print residual_tail_of_compensatedBilinearWork_tail
+#print estimate_of_compensatedBilinearWork_tail
+#print axioms actualBilinearWork_eq_jointMangoldtErrorWork
+#print axioms compensatedBilinearWork_eq_compensatedJointWork
+#print axioms residual_tail_of_compensatedBilinearWork_tail
+#print axioms estimate_of_compensatedBilinearWork_tail
+
+end FormalResearch.RiemannHypothesis.SourceCompensatedBilinearConsumer

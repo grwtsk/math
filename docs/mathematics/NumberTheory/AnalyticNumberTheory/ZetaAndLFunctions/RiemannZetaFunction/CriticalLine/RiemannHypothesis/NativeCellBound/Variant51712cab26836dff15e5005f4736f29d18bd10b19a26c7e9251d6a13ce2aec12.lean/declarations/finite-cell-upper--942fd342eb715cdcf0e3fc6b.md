@@ -1,0 +1,95 @@
+# finite_cell_upper
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:653f5b47-aa87-b42d-f207-34bee14932f4",
+  "kind": "theorem",
+  "lexical_name": "finite_cell_upper",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "finite-cell-upper--942fd342eb715cdcf0e3fc6b",
+  "source": {
+    "blob": "04217bf07f5b768ad04c28a86429db1c6add4ef5",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 38,
+    "line": 25,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/NativeCellBound/Variant51712cab26836dff15e5005f4736f29d18bd10b19a26c7e9251d6a13ce2aec12.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:942fd342eb715cdcf0e3fc6b6b8497298fbbc4ff60f1a94705f1924e6c8a8eb3",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/NativeCellBound/Variant51712cab26836dff15e5005f4736f29d18bd10b19a26c7e9251d6a13ce2aec12.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:653f5b47-aa87-b42d-f207-34bee14932f4`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 25–38.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem finite_cell_upper {b : ℕ → ℝ} {n : ℕ} {x C : ℝ} (hn : 1 ≤ n)
+    (hx : (n : ℝ) ≤ x) (hx1 : x ≤ (n + 1 : ℕ))
+    (hleft : finitePrimitive b n n ≤ C)
+    (hright : finitePrimitive b (n + 1 : ℕ) (n + 1) ≤ C) :
+    finitePrimitive b x n ≤ C := by
+  rw [fixed_inventory_interpolation]
+  by_cases hB : cumulativeDiscrepancy b n ≤ 0
+  · have hp := mul_nonpos_of_nonpos_of_nonneg hB (cellClock_nonneg hn hx)
+    linarith
+  · have hBp : 0 ≤ cumulativeDiscrepancy b n := (lt_of_not_ge hB).le
+    have hp := mul_le_mul_of_nonneg_left (cellClock_le_full hn hx hx1) hBp
+    have hstep := adjacent_integer_increment b n hn
+    linarith
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/NativeCellBound/Variant51712cab26836dff15e5005f4736f29d18bd10b19a26c7e9251d6a13ce2aec12.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/NativeCellBound/Variant51712cab26836dff15e5005f4736f29d18bd10b19a26c7e9251d6a13ce2aec12.lean#L25).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `04217bf07f5b768ad04c28a86429db1c6add4ef5` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

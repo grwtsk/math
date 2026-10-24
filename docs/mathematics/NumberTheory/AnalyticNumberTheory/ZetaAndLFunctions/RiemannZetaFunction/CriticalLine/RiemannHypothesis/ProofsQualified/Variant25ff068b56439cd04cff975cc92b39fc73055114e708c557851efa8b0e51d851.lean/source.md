@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant25ff068b56439cd04cff975cc92b39fc73055114e708c557851efa8b0e51d851
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `861b07e45d8dfece895200849a17300e9e41a68c` · SHA-256 `25ff068b56439cd04cff975cc92b39fc73055114e708c557851efa8b0e51d851`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCriticalCovarianceOrdinarySplit
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualEarlyCriticalErrorCenter
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_split
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_early_error_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_late_lower_bound
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCenteredMangoldtLogError_small_after
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_lower_estimate
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceOrdinarySplit.actualCriticalErrorCovariance_eventual_amplitude
+```

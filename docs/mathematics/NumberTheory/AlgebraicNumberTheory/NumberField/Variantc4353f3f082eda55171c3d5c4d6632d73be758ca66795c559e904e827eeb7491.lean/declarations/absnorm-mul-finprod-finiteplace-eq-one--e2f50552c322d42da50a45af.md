@@ -1,0 +1,121 @@
+# absNorm_mul_finprod_finitePlace_eq_one
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:2ce02dca-30b2-1f82-01b8-ab4fa56e3ba7",
+  "kind": "lemma",
+  "lexical_name": "absNorm_mul_finprod_finitePlace_eq_one",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "absnorm-mul-finprod-finiteplace-eq-one--e2f50552c322d42da50a45af",
+  "source": {
+    "blob": "f31734cef92e81cc9730af18839c0b50fcfc9003",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 247,
+    "line": 208,
+    "path": "GRWTSK/NumberTheory/AlgebraicNumberTheory/NumberField/Variantc4353f3f082eda55171c3d5c4d6632d73be758ca66795c559e904e827eeb7491.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:e2f50552c322d42da50a45afeb2da0812823252fc83efd5adbbcf26793af8a5f",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AlgebraicNumberTheory/NumberField/Variantc4353f3f082eda55171c3d5c4d6632d73be758ca66795c559e904e827eeb7491.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2ce02dca-30b2-1f82-01b8-ab4fa56e3ba7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 208–247.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma absNorm_mul_finprod_finitePlace_eq_one (hx : x ≠ 0) :
+    (span <| Set.range x).absNorm * ∏ᶠ v : FinitePlace K, ⨆ i, v (x i) = 1 := by
+  obtain ⟨i₀, hi₀⟩ := Function.ne_iff.mp hx
+  let i' : { j // (x j : K) ≠ 0 } := ⟨i₀, mod_cast hi₀⟩
+  have : Nonempty _ := .intro i'
+  have hI : span (Set.range x) = span (Set.range fun i : { j // (x j : K) ≠ 0 } ↦ x i.val) := by
+    convert span_range_eq_span_range_support x <;> norm_cast
+  have hx₀ : (fun i ↦ (x i : K)) ≠ 0 := Function.ne_iff.mpr ⟨_, i'.prop⟩
+  simp_rw [Finite.iSup_eq_iSup_subtype hx₀, hI]
+  exact absNorm_mul_finprod_finitePlace_eq_one_aux fun j ↦ mod_cast j.prop
+
+end NumberField
+
+/-!
+### The Northcott property for heights on number fields
+
+We show that a number field `K` has the **Northcott property** with respect to the multiplicative
+and with respect to the logarithmic height, i.e., for any `B : ℝ` the set of elements `x : K`
+such that `mulHeight₁ x ≤ B` (resp., `logHeight₁ x ≤ B`) is finite.
+See `NumberField.finite_setOfPred_mulHeight₁_le` and `NumberField.finite_setOfPred_logHeight₁_le`.
+
+The main idea of the proof is as follows. We show that for every `x : K` there is `n : ℕ` such that
+`n * x` is an algebraic integer and `n ≤ mulHeight₁ x`; see `NumberField.exists_nat_le_mulHeight₁`.
+We also show that the set of `a : 𝓞 K` such that `mulHeight₁ (a / n)` is bounded is finite;
+see `NumberField.finite_setOfPred_prod_infinitePlace_iSup_le`. The result for the multiplicative
+height follows by combining these two ingredients, and the result for the logarithmic height follows
+from that for any field with a family of admissible absolute values
+(see `Mathlib.NumberTheory.Height.Northcott`).
+-/
+
+section Northcott
+
+namespace NumberField
+
+variable {K : Type*} [Field K] [NumberField K]
+
+section withIdeal
+
+open Ideal
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/NumberTheory/AlgebraicNumberTheory/NumberField/Variantc4353f3f082eda55171c3d5c4d6632d73be758ca66795c559e904e827eeb7491.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AlgebraicNumberTheory/NumberField/Variantc4353f3f082eda55171c3d5c4d6632d73be758ca66795c559e904e827eeb7491.lean#L208).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f31734cef92e81cc9730af18839c0b50fcfc9003` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

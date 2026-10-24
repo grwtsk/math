@@ -1,0 +1,27 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualHalfNearMeanInterior.Variant0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualHalfNearMeanInterior.Variant0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/independent-half-near-mean-20261006T235008Z/SourceActualHalfNearMeanInterior/SourceActualHalfNearMeanInteriorIndependentTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualHalfNearMeanInterior
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualHalfNearMeanInterior.Variant0dc9217576acb7bf241a3a95fd71582bbcc9d9b7d12eb152f1c46e521a219f01
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualHalfNearMeanInterior
+#check actualHalfNearPeriodicWork
+#print axioms actualHalfNearPeriodicWork
+#check actualHalfNearMeanInterior
+#print axioms actualHalfNearMeanInterior
+#check actualHalfNearMeanRetainedRemainder
+#print axioms actualHalfNearMeanRetainedRemainder
+#check actualHalfNearPeriodicWork_intervalIntegrable
+#print axioms actualHalfNearPeriodicWork_intervalIntegrable
+#check actualAdjustedInterior_eq_half_near_mean_sub_far
+#print axioms actualAdjustedInterior_eq_half_near_mean_sub_far
+#check actualRetainedRemainder_sub_half_near_mean_eq
+#print axioms actualRetainedRemainder_sub_half_near_mean_eq
+#check actualCompensatedWork_sub_half_near_mean_abs_le
+#print axioms actualCompensatedWork_sub_half_near_mean_abs_le
+#check actualResidual_half_near_mean_pointwise_comparison
+#print axioms actualResidual_half_near_mean_pointwise_comparison

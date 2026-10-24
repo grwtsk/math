@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant785e86ff1a322479a672cb3b054648c75f8d137ca01629a5f7e5c9eb97ca2ec4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3526417af36bb10cbcdceb16fb00888256c25fcc` · SHA-256 `bb2c792f6146e983492156c41a527a453b86149f2a18e83141c1945c6f456f2d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.Variant0f17cf83bfdb52c0f977b69983379706954c9b992a85ed7db21594509a7308c9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0f17cf83bfdb52c0f977b69983379706954c9b992a85ed7db21594509a7308c9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCenteredHalfUpperDecay.Variant0f17cf83bfdb52c0f977b69983379706954c9b992a85ed7db21594509a7308c9","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0f17cf83bfdb52c0f977b69983379706954c9b992a85ed7db21594509a7308c9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-centered-half-upper-decay/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCenteredHalfUpperDecay
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.Variant0f17cf83bfdb52c0f977b69983379706954c9b992a85ed7db21594509a7308c9
+
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCriticalColumnTraceMain
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCriticalColumnTraceMain
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actual_half_upper_quotient_exp_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actual_half_upper_quotient_exp_lower
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_eq
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_tendsto_zero
+```

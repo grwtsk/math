@@ -1,0 +1,50 @@
+import FormalResearch.RiemannHypothesis.SourceBumpPeano
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_neg_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_neg_deriv
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv_eq
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_second_deriv_certificate
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_second_deriv_certificate
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapP0_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapP0_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapP1_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapP1_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapP2_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapP2_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv_nonpos
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_second_deriv_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_second_deriv_lower
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_zero
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_deriv_zero
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_second_deriv_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.overlapProfile_second_deriv_zero
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.peanoNumerator_decomposition
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.peanoNumerator_decomposition
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.peanoNumerator_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.peanoNumerator_nonneg
+
+#print FormalResearch.RiemannHypothesis.SourceBumpPeano.peanoNumerator_nonneg_iff
+#print axioms FormalResearch.RiemannHypothesis.SourceBumpPeano.peanoNumerator_nonneg_iff
+

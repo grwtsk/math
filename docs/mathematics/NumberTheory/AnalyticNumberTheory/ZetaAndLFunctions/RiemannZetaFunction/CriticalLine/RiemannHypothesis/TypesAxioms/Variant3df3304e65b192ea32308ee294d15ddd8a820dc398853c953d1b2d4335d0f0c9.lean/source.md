@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant3df3304e65b192ea32308ee294d15ddd8a820dc398853c953d1b2d4335d0f0c9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `988142e4443ed1762961f51b1fbcf099ed2787bd` · SHA-256 `3df3304e65b192ea32308ee294d15ddd8a820dc398853c953d1b2d4335d0f0c9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualConstructedStripSymmetryOrbit
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_reflected_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_reflected_eq
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_conjugated_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualBilateral_conjugated_eq
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_real
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_real
+#check FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_below_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualConstructedStripSymmetryOrbit.actualConstructedStripOrbitWeight_below_beyond
+```

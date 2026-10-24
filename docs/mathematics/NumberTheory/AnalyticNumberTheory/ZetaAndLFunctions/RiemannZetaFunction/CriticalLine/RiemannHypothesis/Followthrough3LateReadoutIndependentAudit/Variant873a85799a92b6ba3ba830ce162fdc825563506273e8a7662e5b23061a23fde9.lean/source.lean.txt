@@ -1,0 +1,61 @@
+import SourceActualClosedXiSqrtConsumers
+import SourceNativeMellinLeadingPropagation
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceActualXiSqrtPrimitiveReadout
+
+#check actualXiLogPrimitive_log_eq_physical
+#print axioms actualXiLogPrimitive_log_eq_physical
+#check halfAtomPrimitive
+#print axioms halfAtomPrimitive
+#check halfAtomPrimitive_hasDerivAt
+#print axioms halfAtomPrimitive_hasDerivAt
+#check inverseThreeHalf_continuousOn
+#print axioms inverseThreeHalf_continuousOn
+#check psi_inverseThreeHalf_intervalIntegrable
+#print axioms psi_inverseThreeHalf_intervalIntegrable
+#check actual_psi_inverseThreeHalf
+#print axioms actual_psi_inverseThreeHalf
+
+end FormalResearch.RiemannHypothesis.SourceActualXiSqrtPrimitiveReadout
+
+namespace FormalResearch.RiemannHypothesis.SourceActualXiSqrtClosedReadout
+
+#check sqrtBaselinePrimitive
+#print axioms sqrtBaselinePrimitive
+#check sqrtBaselinePrimitive_hasDerivAt
+#print axioms sqrtBaselinePrimitive_hasDerivAt
+#check actualXiLogPrimitive_log_eq_closed_atoms
+#print axioms actualXiLogPrimitive_log_eq_closed_atoms
+
+end FormalResearch.RiemannHypothesis.SourceActualXiSqrtClosedReadout
+
+namespace FormalResearch.RiemannHypothesis.SourceActualClosedXiSqrtConsumers
+
+#check actualClosedXiSqrtReadout
+#print axioms actualClosedXiSqrtReadout
+#check actualClosedXiSqrtReadout_eq_primitive
+#print axioms actualClosedXiSqrtReadout_eq_primitive
+#check primitive_bound_of_closed_readout
+#print axioms primitive_bound_of_closed_readout
+#check residual_upper_of_closed_readout
+#print axioms residual_upper_of_closed_readout
+#check all_real_lower_of_closed_readout
+#print axioms all_real_lower_of_closed_readout
+#check estimate_of_closed_readout
+#print axioms estimate_of_closed_readout
+#check leading_tail_of_closed_readout
+#print axioms leading_tail_of_closed_readout
+
+end FormalResearch.RiemannHypothesis.SourceActualClosedXiSqrtConsumers
+
+namespace FormalResearch.RiemannHypothesis.SourceNativeMellinLeadingPropagation
+
+#check leading_tail_of_native_signed_head
+#print axioms leading_tail_of_native_signed_head
+#check leading_tail_of_native_compensated_contour
+#print axioms leading_tail_of_native_compensated_contour
+
+end FormalResearch.RiemannHypothesis.SourceNativeMellinLeadingPropagation
+

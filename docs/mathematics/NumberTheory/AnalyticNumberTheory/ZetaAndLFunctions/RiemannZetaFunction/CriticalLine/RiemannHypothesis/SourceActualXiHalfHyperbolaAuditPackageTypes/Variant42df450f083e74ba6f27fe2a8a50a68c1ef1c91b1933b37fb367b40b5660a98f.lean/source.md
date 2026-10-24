@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiHalfHyperbolaAuditPackageTypes.Variant42df450f083e74ba6f27fe2a8a50a68c1ef1c91b1933b37fb367b40b5660a98f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `20258e1d654a2ceb90eacbb8be1e3b374ed09b8e` · SHA-256 `284d74aeed148a0b166740a376d1e979c2a2bfd0a94febfb62eb59881778cbdd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiHalfHyperbola.Variant0385b105d53e332b060547c006e938c7fbfd37af8f2f4f058996e5fb81a95c95","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0385b105d53e332b060547c006e938c7fbfd37af8f2f4f058996e5fb81a95c95","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiHalfHyperbola.Variant0385b105d53e332b060547c006e938c7fbfd37af8f2f4f058996e5fb81a95c95","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0385b105d53e332b060547c006e938c7fbfd37af8f2f4f058996e5fb81a95c95","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualXiHalfHyperbolaAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiHalfHyperbola
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiHalfHyperbola.Variant0385b105d53e332b060547c006e938c7fbfd37af8f2f4f058996e5fb81a95c95
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusHalfFunction
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusHalfFunction
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualLogHalfFunction
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualLogHalfFunction
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusLogHalfHyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusLogHalfHyperbola
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusHalf_mul_logHalf
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMoebiusHalf_mul_logHalf
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMangoldtHalfPrefix_eq_hyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMangoldtHalfPrefix_eq_hyperbola
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMangoldtHalfWindowSeven_eq_hyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualMangoldtHalfWindowSeven_eq_hyperbola
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualAnchoredXiTailPrimitive_eq_hyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfHyperbola.actualAnchoredXiTailPrimitive_eq_hyperbola
+```

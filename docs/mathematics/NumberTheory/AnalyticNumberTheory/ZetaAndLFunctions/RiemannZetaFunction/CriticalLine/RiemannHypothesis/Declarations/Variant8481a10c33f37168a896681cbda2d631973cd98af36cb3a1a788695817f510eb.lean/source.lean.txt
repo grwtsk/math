@@ -1,0 +1,17 @@
+import FormalResearch.RiemannHypothesis.SourceHeatPacketExpansion
+
+open FormalResearch.RiemannHypothesis.SourceHeatPacketExpansion
+
+#check sourceProbability_power_integrable
+#check sourceProbability_moment_eq_tuples
+#check sourceProbability_absoluteMoment_le_bound
+#check sourceHeatPolynomial_integral_eq_packets
+#check sourceHeatRemainder_packet_error
+#check sourceHeatRemainder_packet_error_le_bound
+#check sourceHeatRemainder_cubic_packet_error
+#print axioms sourceProbability_power_integrable
+#print axioms sourceProbability_moment_eq_tuples
+#print axioms sourceHeatPolynomial_integral_eq_packets
+#print axioms sourceHeatRemainder_packet_error
+#print axioms sourceHeatRemainder_packet_error_le_bound
+#print axioms sourceHeatRemainder_cubic_packet_error

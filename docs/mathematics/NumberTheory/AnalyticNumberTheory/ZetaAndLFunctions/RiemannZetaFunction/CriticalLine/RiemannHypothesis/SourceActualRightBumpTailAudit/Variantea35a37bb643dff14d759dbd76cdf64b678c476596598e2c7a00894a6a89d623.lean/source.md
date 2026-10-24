@@ -1,0 +1,57 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRightBumpTailAudit.Variantea35a37bb643dff14d759dbd76cdf64b678c476596598e2c7a00894a6a89d623
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `116f09c0811a29f17cc6b8c10a2a3ff1618cc616` · SHA-256 `b3f4d88c49d4cbcc20878c7bcece774fbb7373caa817d706dfe62a8e2a1992d2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRightBumpTail.Variantb707040b69a10fb65f1bc25886694f654d6d46c1f97fa10c479c9846bb848a02","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b707040b69a10fb65f1bc25886694f654d6d46c1f97fa10c479c9846bb848a02","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRightBumpTail.Variantb707040b69a10fb65f1bc25886694f654d6d46c1f97fa10c479c9846bb848a02","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b707040b69a10fb65f1bc25886694f654d6d46c1f97fa10c479c9846bb848a02","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T043039Z-1791347439501157000/SourceActualRightBumpTailAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRightBumpTail
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRightBumpTail.Variantb707040b69a10fb65f1bc25886694f654d6d46c1f97fa10c479c9846bb848a02
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualMangoldtCoefficients
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualMangoldtCoefficients
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualMangoldtCoefficients
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_summable
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_summable
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_eq_real_series
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_eq_real_series
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_eq_real_series
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightLineMass_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actual_zeta_logDeriv_on_line_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actual_zeta_logDeriv_on_line_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actual_zeta_logDeriv_on_line_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_eq_logDeriv
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_eq_logDeriv
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_eq_logDeriv
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpTailNumerator
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpTailNumerator
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpTailNumerator
+#check FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualRightBumpTail.actualRightBumpDensity_norm_le
+```

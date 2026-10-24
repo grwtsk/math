@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FiveFullKappaShortProofs.Variantf8c94d87a2305a38e077d9b328b1e4bf4dce720ce43cc1397adadfb058eab9d9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `337e3ef8056fe1848f837eacfba4721fe9a8ab92` · SHA-256 `16262feaa665c90cca0a6219ae36aa2e0ca7070fa768e2726106cc9fc2c5b121`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFiveFullKappaShortReduction.Variant2f6a62d1119bc73cfa82daad578949eca3d316e6afacd4ef9a5d676b642dfcf4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2f6a62d1119bc73cfa82daad578949eca3d316e6afacd4ef9a5d676b642dfcf4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceFiveFullKappaShortReduction.Variant2f6a62d1119bc73cfa82daad578949eca3d316e6afacd4ef9a5d676b642dfcf4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"2f6a62d1119bc73cfa82daad578949eca3d316e6afacd4ef9a5d676b642dfcf4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/FiveFullKappaShortProofs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFiveFullKappaShortReduction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFiveFullKappaShortReduction.Variant2f6a62d1119bc73cfa82daad578949eca3d316e6afacd4ef9a5d676b642dfcf4
+
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.actualCorrelation_first_abs_le_five
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.actualCorrelation_sub_one_abs_le_five
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.fiveKappaJetRowBudget
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.fiveKappaJet_sub_leading_abs_le
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.fiveKappaShortBudget
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.actualFullKappaShort_sub_leading_abs_le_five
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.fiveKappaShortBudget_eq
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.fiveKappaShortBudget_le_fourteen
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.correctedCompleteOmega_sub_leading_early_abs_le_five
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.renormalized_tail_sub_actual_leading_abs_le_five
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.renormalized_tail_sub_actual_leading_abs_le_fourteen
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.actual_leading_complete_pairing_fourteen_comparisons
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.residual_sub_actual_leading_sub_zeta_abs_lt_fourteen
+#print FormalResearch.RiemannHypothesis.SourceFiveFullKappaShortReduction.estimate_of_actual_leading_signed_tail_fourteen
+```

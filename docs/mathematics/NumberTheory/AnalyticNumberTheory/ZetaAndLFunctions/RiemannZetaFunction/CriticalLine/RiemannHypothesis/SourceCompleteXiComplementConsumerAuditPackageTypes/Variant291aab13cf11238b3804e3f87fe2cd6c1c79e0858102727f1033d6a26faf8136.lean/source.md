@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteXiComplementConsumerAuditPackageTypes.Variant291aab13cf11238b3804e3f87fe2cd6c1c79e0858102727f1033d6a26faf8136
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `976bf014c54e16940bf7a7595f81bed94cc64964` · SHA-256 `902b94901c883e574ec597e21f3a7860dd3885f661ebfb00acbd34cb108c69aa`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteXiComplementConsumer.Variant797389b4a43f7303cf0a85c54af0e5f35157dec137b4613d5d7988c9b8487cb6","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"797389b4a43f7303cf0a85c54af0e5f35157dec137b4613d5d7988c9b8487cb6","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceCompleteXiComplementConsumer.Variant797389b4a43f7303cf0a85c54af0e5f35157dec137b4613d5d7988c9b8487cb6","mathematical_subject":"Foundations.Unclassified","original_sha256":"797389b4a43f7303cf0a85c54af0e5f35157dec137b4613d5d7988c9b8487cb6","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceCompleteXiComplementConsumerAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteXiComplementConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteXiComplementConsumer.Variant797389b4a43f7303cf0a85c54af0e5f35157dec137b4613d5d7988c9b8487cb6
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16CompleteXiComplement.completeXiComplement
+#print axioms RH16CompleteXiComplement.completeXiComplement
+#check RH16CompleteXiComplement.calibratedRadius
+#print axioms RH16CompleteXiComplement.calibratedRadius
+#check RH16CompleteXiComplement.complementAtomBudget
+#print axioms RH16CompleteXiComplement.complementAtomBudget
+#check RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#print axioms RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#check RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#print axioms RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#check RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#check RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#check RH16CompleteXiComplement.complementAtomBudget_nonneg
+#print axioms RH16CompleteXiComplement.complementAtomBudget_nonneg
+#check RH16CompleteXiComplement.atom_witness_of_complete_complement
+#print axioms RH16CompleteXiComplement.atom_witness_of_complete_complement
+#check RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#check RH16CompleteXiComplement.estimate_of_complete_complement
+#print axioms RH16CompleteXiComplement.estimate_of_complete_complement
+```

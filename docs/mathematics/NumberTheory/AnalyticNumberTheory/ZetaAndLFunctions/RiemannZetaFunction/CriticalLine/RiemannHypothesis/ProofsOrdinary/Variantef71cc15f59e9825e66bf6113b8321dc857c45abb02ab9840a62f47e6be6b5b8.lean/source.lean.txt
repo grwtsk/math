@@ -1,0 +1,14 @@
+import SourceActualXiPntAtOne
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualXiPntAtOne.actualXiInverseSquareTimeDensity
+#print FormalResearch.RiemannHypothesis.SourceActualXiPntAtOne.actualXiInverseSquareTimeDensity_eq_relative
+#print FormalResearch.RiemannHypothesis.SourceActualXiPntAtOne.actualXiInverseSquareTimeDensity_integrableOn
+#print FormalResearch.RiemannHypothesis.SourceActualXiPntAtOne.actualXiInverseSquareTimeDensity_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiPntAtOne.actualXiInverseSquarePhysical_integrableOn
+#print FormalResearch.RiemannHypothesis.SourceActualXiPntAtOne.actualXiInverseSquarePhysical_integral_eq_time

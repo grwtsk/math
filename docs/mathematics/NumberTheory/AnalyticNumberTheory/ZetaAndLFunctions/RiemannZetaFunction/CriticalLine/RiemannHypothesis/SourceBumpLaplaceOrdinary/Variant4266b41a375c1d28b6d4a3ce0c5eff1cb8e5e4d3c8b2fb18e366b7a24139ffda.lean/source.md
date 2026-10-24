@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceBumpLaplaceOrdinary.Variant4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae56cc59e068bf8cfc1c08fd5175ace97ea1287d` · SHA-256 `4266b41a375c1d28b6d4a3ce0c5eff1cb8e5e4d3c8b2fb18e366b7a24139ffda`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceBumpLaplace
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bumpLaplace
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bumpLaplaceMoment
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_interval_integrable
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_even
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_at_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_zero_ne_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_moment_factor_norm_le_one
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_moment_ode
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBump
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpSlope
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpFlux
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_moment_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_slope_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_flux_has_deriv_at
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_slope_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_flux_continuous
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpMass
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radialBumpEnergy
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_mass_interval_integrable
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_energy_interval_integrable
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_energy_nonneg
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.radial_bump_mass_pos
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_radial_energy_of_zero
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.re_eq_zero_of_energy
+#print FormalResearch.RiemannHypothesis.SourceBumpLaplace.bump_laplace_ne_zero_of_re_ne_zero
+```

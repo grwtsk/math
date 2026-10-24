@@ -1,0 +1,17 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCompactSquareBudgetAuditPackageTypes.Variantc3e211796ad00fddea45511ec2c86082419dab6ddbacebe632e52753de00a335
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f214711dec7398ac85389f19b8853a7fa0c3d768` · SHA-256 `c3e211796ad00fddea45511ec2c86082419dab6ddbacebe632e52753de00a335`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiCompactSquareBudget
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiCompactSevenCorrection
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiCompactSevenCorrection
+#check FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiFinitePrimitive_eq_compact_square
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiFinitePrimitive_eq_compact_square
+#check FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiSquare_logarithmic_deficiency_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiSquare_logarithmic_deficiency_abs_le
+```

@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FixtureAxioms.Variantc91bad474714360b4fde1c075fa80b398d533f68bbc51542c54a1e35b6f0af88
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `22c6dd947e9c54a88da4de1dbb25da41c6635efc` · SHA-256 `c91bad474714360b4fde1c075fa80b398d533f68bbc51542c54a1e35b6f0af88`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ScopeFixtures
+
+open FormalResearch.RiemannHypothesis.MangoldtColumnQuotientFixtures
+
+#check actual_tail_column_zero
+#print axioms actual_tail_column_zero
+#check actual_quotient_successor_zero
+#print axioms actual_quotient_successor_zero
+#check dropped_quotient_endpoint_changes_sum
+#print axioms dropped_quotient_endpoint_changes_sum
+#check divisible_product_endpoint_is_retained
+#print axioms divisible_product_endpoint_is_retained
+#check nondivisible_product_endpoint_is_retained
+#print axioms nondivisible_product_endpoint_is_retained
+#check quotient_equal_lower_has_empty_interval
+#print axioms quotient_equal_lower_has_empty_interval
+#check quotient_below_lower_has_empty_interval
+#print axioms quotient_below_lower_has_empty_interval
+#check original_empty_axis_and_increment_interval
+#print axioms original_empty_axis_and_increment_interval
+#check inclusive_quotient_inventory_differs_from_original_upper
+#print axioms inclusive_quotient_inventory_differs_from_original_upper
+#check centered_prefix_changes_sign
+#print axioms centered_prefix_changes_sign
+#check raw_beta_does_not_replace_centered_prefix
+#print axioms raw_beta_does_not_replace_centered_prefix
+#check actual_state_jump_with_unchanged_complete_readout
+#print axioms actual_state_jump_with_unchanged_complete_readout
+#check normalized_original_source_and_full_baseline
+#print axioms normalized_original_source_and_full_baseline
+#check generic_support_ceiling_supplies_no_uniform_bound
+#print axioms generic_support_ceiling_supplies_no_uniform_bound
+```

@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOuterHalfCutoffTypesAxioms.Variantc2fb784b24ee46e365d2ac645817c0c507c561e81a84432a790fb8ba14833173
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a0794978d9f56b2330d99eabcb313647171a107b` · SHA-256 `634f72a9663cd24e37669409a9c8d3b4ab86f3de66bfed4c58b78073fcb886b6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOuterHalfCutoff.Variant00ef1f0337b4494cc7dd64090a4176257c15aa937b65f409371564d5193bcf33","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"00ef1f0337b4494cc7dd64090a4176257c15aa937b65f409371564d5193bcf33","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualOuterHalfCutoff.Variant00ef1f0337b4494cc7dd64090a4176257c15aa937b65f409371564d5193bcf33","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"00ef1f0337b4494cc7dd64090a4176257c15aa937b65f409371564d5193bcf33","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-outer-half-cutoff-v1/SourceActualOuterHalfCutoffTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualOuterHalfCutoff
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualOuterHalfCutoff.Variant00ef1f0337b4494cc7dd64090a4176257c15aa937b65f409371564d5193bcf33
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceKernelTerm_eq_actualLogProfile
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceKernelTerm_eq_actualLogProfile
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_eq_completeLogProfileSum
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_eq_completeLogProfileSum
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_sharp_upper_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.sourceMobiusKernel_sharp_upper_zero
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterContinuousLogRow_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow_sharp_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualOuterEulerLogRow_sharp_upper
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualHighOuterContinuousEuler_sum_eq_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.actualHighOuterContinuousEuler_sum_eq_zero
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingOuterSum
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingOuterSum
+#check FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingContinuousEulerSum
+#print axioms FormalResearch.RiemannHypothesis.SourceActualOuterHalfCutoff.mertensResidual_eq_survivingContinuousEulerSum
+```

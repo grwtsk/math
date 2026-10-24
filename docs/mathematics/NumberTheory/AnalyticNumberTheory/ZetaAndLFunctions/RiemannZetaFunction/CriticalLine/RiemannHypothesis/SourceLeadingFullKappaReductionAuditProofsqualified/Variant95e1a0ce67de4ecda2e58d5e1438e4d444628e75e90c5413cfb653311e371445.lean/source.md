@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingFullKappaReductionAuditProofsqualified.Variant95e1a0ce67de4ecda2e58d5e1438e4d444628e75e90c5413cfb653311e371445
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8599429d2f2d3922a967270daeb8d6342c523459` · SHA-256 `37a0a08e0229fc96f6e53845f5e12d3b0b023f39441d75b21bdf0c5e7c02ff35`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingFullKappaReduction.Variant35da603dd43428ba78aadf781c8b883319758dc1fb797595b6012935bd9d78d8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"35da603dd43428ba78aadf781c8b883319758dc1fb797595b6012935bd9d78d8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceLeadingFullKappaReduction.Variant35da603dd43428ba78aadf781c8b883319758dc1fb797595b6012935bd9d78d8","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"35da603dd43428ba78aadf781c8b883319758dc1fb797595b6012935bd9d78d8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceLeadingFullKappaReductionAuditProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceLeadingFullKappaReduction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingFullKappaReduction.Variant35da603dd43428ba78aadf781c8b883319758dc1fb797595b6012935bd9d78d8
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualCorrelation_odd_jets_zero
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualDerivativeEnergy_le_twenty
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualCorrelation_second_abs_le_twenty
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualCorrelation_third_abs_le
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualCorrelation_first_abs_le
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualCorrelation_sub_one_abs_le
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualWeightedMoebiusHalfSum
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualFullKappaShortSector
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.fullKappaJetRowBudget
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.fullKappaJet_sub_leading_abs_le
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.fullKappaShortBudget
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualFullKappaShort_sub_leading_abs_le
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.fullKappaShortBudget_eq
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.actualLeadingKappaAndTail
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.correctedCompleteOmega_eq_short_early_tail
+#print FormalResearch.RiemannHypothesis.SourceLeadingFullKappaReduction.correctedCompleteOmega_sub_leading_early_abs_le
+```

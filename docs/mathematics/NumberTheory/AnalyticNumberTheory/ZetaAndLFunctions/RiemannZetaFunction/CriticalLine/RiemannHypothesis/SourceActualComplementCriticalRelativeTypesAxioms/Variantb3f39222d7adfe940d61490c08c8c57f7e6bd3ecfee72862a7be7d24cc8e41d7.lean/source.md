@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualComplementCriticalRelativeTypesAxioms.Variantb3f39222d7adfe940d61490c08c8c57f7e6bd3ecfee72862a7be7d24cc8e41d7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `76db2086b543d4bc700c29995559f33b6f722e36` · SHA-256 `b3f39222d7adfe940d61490c08c8c57f7e6bd3ecfee72862a7be7d24cc8e41d7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualComplementCriticalRelative
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelativeMain
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelativeMain
+
+#check FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualShortMangoldtBlock_sub_halfPrefix_log_square_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualShortMangoldtBlock_sub_halfPrefix_log_square_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelative_sub_main_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelative_sub_main_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelative_sub_main_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualComplementCriticalRelative.actualComplementCriticalRelative_sub_main_tendsto_zero
+```

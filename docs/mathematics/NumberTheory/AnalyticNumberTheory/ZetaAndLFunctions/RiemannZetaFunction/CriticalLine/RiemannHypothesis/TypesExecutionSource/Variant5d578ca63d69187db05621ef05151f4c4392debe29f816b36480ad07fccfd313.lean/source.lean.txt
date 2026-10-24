@@ -1,0 +1,19 @@
+import SourcePhysicalQuotientStrip
+
+open FormalResearch.RiemannHypothesis.SourcePhysicalQuotientStrip
+
+#check physicalQuotientRowsAt
+#check quotientStripRowsAt
+#check physicalQuotientOffRowsAt
+#check physicalQuotientDeletedRowsAt
+#check physicalRowsAt_eq_auxiliary_strict_add_strip
+#check physicalRowsAt_eq_auxiliary_add_full_strip_of_le
+#check auxiliaryStrictRowsAt_zero_of_quotient_le
+#check physicalRowsAt_eq_strip_of_quotient_le
+#check actual_physicalRows_eq_auxiliary_strict_add_strip
+#check physicalRowsAt_eq_off_add_deleted
+#check divisorMultiplesInteraction_eq_physicalOffRows
+#check divisorInteraction_eq_mean_sub_physicalOffRows
+#check generic_missing_strip_atom_fails
+#check generic_unclipped_strip_endpoint_fails
+#check generic_auxiliary_diagonal_deletion_fails

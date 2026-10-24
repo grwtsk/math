@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofBodiesQualified.Variant5a035d0b088a1ba9879040ef7d27df18f3c9cac48381a6d0e26a564a07b14804
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9941d3a95f8e965ac033d3913ceda9a0b5d28920` · SHA-256 `5a035d0b088a1ba9879040ef7d27df18f3c9cac48381a6d0e26a564a07b14804`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiErrorTimeNormalization
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.funBinderTypes false
+set_option pp.letVarTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_normalizedPsi
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_at_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_convolution
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualMangoldtErrorConvolution_one_eq_relative_primitive
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.mangoldtLogError_eq_relative_primitive
+```

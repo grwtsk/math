@@ -1,0 +1,36 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtNormComparison.Variant2fa917de88e5f1ee0562a1d1db81289225e8a670051377012f57008766b23f47
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0d8370e39412dcc91a399da54e91ace7343660b3` · SHA-256 `2fa917de88e5f1ee0562a1d1db81289225e8a670051377012f57008766b23f47`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceMangoldtNorm
+
+/-!
+# Pointwise full-norm comparison obstruction for the actual Mangoldt operator
+
+Prepared from existing literal-source declarations; this ignored module is
+UNCOMPILED. The inequality is an obstruction to bounded full-norm models.
+It is not an upper bound on the matched source form or the signed RH residual.
+No unbounded theta operator or unsupported common-carrier transport is assumed.
+
+AI attribution: prepared with OpenAI Codex; no Lean verification claimed.
+-/
+
+set_option autoImplicit false
+noncomputable section
+namespace FormalResearch.RiemannHypothesis.SourceMangoldtNorm
+open SourceReflectionDuality SourceMangoldtInteraction
+
+/-- Any full-norm comparison pays the actual source operator's proved lower mass. -/
+theorem actual_full_operator_comparison_norm_lower {A : ℝ} (hA : 1 ≤ A)
+    (B : ComplexL2 →L[ℂ] ComplexL2) :
+    2 * A - Real.log 2 - 1 - ‖B‖ ≤ ‖mangoldtInteraction A - B‖ := by
+  have hl := mangoldtInteraction_norm_lower hA
+  have ht := norm_add_le (mangoldtInteraction A - B) B
+  rw [sub_add_cancel] at ht
+  linarith
+
+end FormalResearch.RiemannHypothesis.SourceMangoldtNorm
+```

@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCenteredDampedReturnAudit.Variantf96dc86a121cbd6842610e4ade5684466c7a6fcca7ae7657ff6cfbd4121809b5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `14b413fe4e8f15e173d98655d212883c540218c3` · SHA-256 `2cb94bb1567a15cf62ad78bcf46c983f377eea9538059ab94837eb2f061b0e87`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCenteredDampedReturn.Varianta8bcac5336d8fe6fe4026088891296da7e32f59d76b80bc8a00c287556b63315","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a8bcac5336d8fe6fe4026088891296da7e32f59d76b80bc8a00c287556b63315","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiCenteredDampedReturn.Varianta8bcac5336d8fe6fe4026088891296da7e32f59d76b80bc8a00c287556b63315","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a8bcac5336d8fe6fe4026088891296da7e32f59d76b80bc8a00c287556b63315","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T013244Z-1791336764071569000/SourceActualXiCenteredDampedReturnAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiCenteredDampedReturn
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiCenteredDampedReturn.Varianta8bcac5336d8fe6fe4026088891296da7e32f59d76b80bc8a00c287556b63315
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualCenteredDampedXiReturn
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualCenteredDampedXiReturn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualConstantSectorLowerBudget
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualConstantSectorLowerBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualDampedXiReturnDensity_integral_eq_neg_lower
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualDampedXiReturnDensity_integral_eq_neg_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualCenteredDampedXiReturn_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualCenteredDampedXiReturn_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_eq_centered_damped_return
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_eq_centered_damped_return
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualDampedXiReturnTest_lower_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualDampedXiReturnTest_lower_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_sub_centered_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_sub_centered_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualConstantSectorLowerBudget_div_square_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.actualConstantSectorLowerBudget_div_square_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_sub_centered_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiCenteredDampedReturn.completeXiTail_sub_centered_tendsto_zero
+```

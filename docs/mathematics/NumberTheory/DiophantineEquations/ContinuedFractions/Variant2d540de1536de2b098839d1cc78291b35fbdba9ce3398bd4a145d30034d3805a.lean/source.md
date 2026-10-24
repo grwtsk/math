@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.NumberTheory.DiophantineEquations.ContinuedFractions.Variant2d540de1536de2b098839d1cc78291b35fbdba9ce3398bd4a145d30034d3805a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8eb79b5421d71fbb966192d7c4ed91ea8a331bad` · SHA-256 `1ad4bdee9fe5ab296bc2790cd743298f6f87c6c460dc68c614c72dcf80634612`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.DiophantineEquations
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.DiophantineEquations.ConvsEqConvergent.Variantbf321024753de2c3f2cf80db5135540666784633e9a841aabbeb011387d9549f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bf321024753de2c3f2cf80db5135540666784633e9a841aabbeb011387d9549f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.DiophantineEquations.SourceCorpus.ConvsEqConvergent.Variantbf321024753de2c3f2cf80db5135540666784633e9a841aabbeb011387d9549f","mathematical_subject":"NumberTheory.DiophantineEquations","original_sha256":"bf321024753de2c3f2cf80db5135540666784633e9a841aabbeb011387d9549f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/NumberTheory/DiophantineApproximation/ContinuedFractions.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Michael Stoll. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Michael Geißer, Michael Stoll
+-/
+module
+
+public import Mathlib.Algebra.ContinuedFractions.Computation.ApproximationCorollaries
+public import Mathlib.Algebra.ContinuedFractions.Computation.Translations
+public import Mathlib.NumberTheory.DiophantineApproximation.Basic
+
+/-!
+# Diophantine Approximation using continued fractions
+
+## Main statements
+
+There are two versions of Legendre's Theorem.`Real.exists_rat_eq_convergent`,
+defined in `Mathlib/NumberTheory/DiophantineApproximation/Basic.lean`, uses `Real.convergent`,
+a simple recursive definition of the convergents that is also defined in that file.
+This file provides `Real.exists_convs_eq_rat`, using `GenContFract.convs` of `GenContFract.of ξ`.
+-/
+
+
+namespace GRWTSK.NumberTheory.DiophantineEquations.ConvsEqConvergent.Variantbf321024753de2c3f2cf80db5135540666784633e9a841aabbeb011387d9549f
+
+public section
+
+section Convergent
+
+namespace Real
+
+open Int
+
+/-!
+Our `convergent`s agree with `GenContFract.convs`.
+-/
+
+open GenContFract
+
+/-- The `n`th convergent of the `GenContFract.of ξ` agrees with `ξ.convergent n`. -/
+theorem convs_eq_convergent (ξ : ℝ) (n : ℕ) :
+    (GenContFract.of ξ).convs n = ξ.convergent n := by
+  induction n generalizing ξ with
+  | zero => simp only [zeroth_conv_eq_h, of_h_eq_floor, convergent_zero, Rat.cast_intCast]
+  | succ n ih => rw [convs_succ, ih (fract ξ)⁻¹, convergent_succ, one_div]; norm_cast
+
+end Real
+
+end Convergent
+
+namespace Real
+
+variable {ξ : ℝ}
+
+/-- The main result, *Legendre's Theorem* on rational approximation:
+if `ξ` is a real number and `q` is a rational number such that `|ξ - q| < 1/(2*q.den^2)`,
+then `q` is a convergent of the continued fraction expansion of `ξ`.
+This is the version using `GenContFract.convs`. -/
+theorem exists_convs_eq_rat {q : ℚ}
+    (h : |ξ - q| < 1 / (2 * (q.den : ℝ) ^ 2)) : ∃ n, (GenContFract.of ξ).convs n = q := by
+  obtain ⟨n, hn⟩ := exists_rat_eq_convergent h
+  exact ⟨n, hn.symm ▸ convs_eq_convergent ξ n⟩
+
+end Real
+```

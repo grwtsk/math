@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentAudit.Variante3477a0c1f8b619719490e5eaf585e6433e0b2ae304d73715147c14a6a30885e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `24bedb48f5bab3861574cec1f1a1296af1af95a2` · SHA-256 `e3477a0c1f8b619719490e5eaf585e6433e0b2ae304d73715147c14a6a30885e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceBalancedFirstPrimeConsumer
+#print RH16BalancedFirstPrimeConsumer.firstPrimeZeroHeadCost
+#print axioms RH16BalancedFirstPrimeConsumer.firstPrimeZeroHeadCost
+#print RH16BalancedFirstPrimeConsumer.balancedFirstPrimeReturnCost
+#print axioms RH16BalancedFirstPrimeConsumer.balancedFirstPrimeReturnCost
+#print RH16BalancedFirstPrimeConsumer.balanced_density_abs_le_nonnegative
+#print axioms RH16BalancedFirstPrimeConsumer.balanced_density_abs_le_nonnegative
+#print RH16BalancedFirstPrimeConsumer.firstPrimeZeroHead_abs_le_at_radius
+#print axioms RH16BalancedFirstPrimeConsumer.firstPrimeZeroHead_abs_le_at_radius
+#print RH16BalancedFirstPrimeConsumer.firstPrime_main_upper_of_balanced_tail
+#print axioms RH16BalancedFirstPrimeConsumer.firstPrime_main_upper_of_balanced_tail
+#print RH16BalancedFirstPrimeConsumer.firstPrimeTail_of_balanced_tail
+#print axioms RH16BalancedFirstPrimeConsumer.firstPrimeTail_of_balanced_tail
+#print RH16BalancedFirstPrimeConsumer.estimate_of_balanced_firstPrime_tail
+#print axioms RH16BalancedFirstPrimeConsumer.estimate_of_balanced_firstPrime_tail
+#print RH16BalancedFirstPrimeConsumer.balancedFirstPrimeReturnCost_ninety_one_lt
+#print axioms RH16BalancedFirstPrimeConsumer.balancedFirstPrimeReturnCost_ninety_one_lt
+```

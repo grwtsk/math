@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.GenericAudit.Variant368a01c40d8314b842491a33a9857bc7b15dee5d9b0e9347fc438554a58c3564
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae6a2afcefa5309a72a5053f5d73c9ee099e634d` · SHA-256 `368a01c40d8314b842491a33a9857bc7b15dee5d9b0e9347fc438554a58c3564`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceHybridStorage
+set_option pp.universes true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.flow_integral_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.flow_integral_bound
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.signed_hybrid_telescope
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.signed_hybrid_telescope
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.signed_hybrid_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.signed_hybrid_bound
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.quadraticReadout
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.quadraticReadout
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.FormLE
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.FormLE
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.quadraticReadout_congruence
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.quadraticReadout_congruence
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.formLE_congruence
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.formLE_congruence
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.homogeneousProjector
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.homogeneousProjector
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.homogeneousProjector_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.homogeneousProjector_readout
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.homogeneousProjector_covariance
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.homogeneousProjector_covariance
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.transformedStorageDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.transformedStorageDerivative
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.flow_defect_covariance
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.flow_defect_covariance
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.event_defect_covariance
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.event_defect_covariance
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.simultaneous_affine_reset
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.simultaneous_affine_reset
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.simultaneous_impulse_mixed_term
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.simultaneous_impulse_mixed_term
+#check FormalResearch.RiemannHypothesis.SourceHybridStorage.offset_telescope
+#print axioms FormalResearch.RiemannHypothesis.SourceHybridStorage.offset_telescope
+```

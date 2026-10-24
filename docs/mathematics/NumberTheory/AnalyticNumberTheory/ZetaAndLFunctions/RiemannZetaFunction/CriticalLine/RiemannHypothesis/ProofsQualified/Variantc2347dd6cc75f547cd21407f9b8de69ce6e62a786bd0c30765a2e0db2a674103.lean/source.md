@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantc2347dd6cc75f547cd21407f9b8de69ce6e62a786bd0c30765a2e0db2a674103
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7ca3e91ab3c4f7c8d76d5f2313f520d6c1b76074` · SHA-256 `68c465f91afc36f355c64923c2a130415085d1f6cdcdfd8511ebf236f432fdc7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBound.Variant398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.ActualEarlyLowerBound.Variant398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/independent-early-lower/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualEarlyLowerBound
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBound.Variant398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd
+
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.normalizedTest_deriv_integrable
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.reflectedTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_eq_convolution
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_contDiff
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_contDiff_two
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_hasDerivAt_integral
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_eq_integral
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_integrand_integrable
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_energy
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_coefficient
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_increment_bound
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_linear_taylor_bound
+#print RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#print RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+```

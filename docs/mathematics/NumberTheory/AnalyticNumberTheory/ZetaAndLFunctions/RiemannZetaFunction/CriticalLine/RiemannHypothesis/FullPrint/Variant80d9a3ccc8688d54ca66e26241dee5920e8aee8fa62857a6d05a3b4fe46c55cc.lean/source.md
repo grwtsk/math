@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FullPrint.Variant80d9a3ccc8688d54ca66e26241dee5920e8aee8fa62857a6d05a3b4fe46c55cc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1253a0684a29c5a2b49c6dee049f71b665db276d` · SHA-256 `c1ce37d8987bcb3bfb7b52a13f3bb4a685443b45d94cd8c128b37a6b93630267`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtDirichletBound.Variant62b6c3d40011a5902b55ff5b6776fd0030763a7d2384b576a9a9df76c79f9848","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"62b6c3d40011a5902b55ff5b6776fd0030763a7d2384b576a9a9df76c79f9848","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceMangoldtDirichletBound.Variant62b6c3d40011a5902b55ff5b6776fd0030763a7d2384b576a9a9df76c79f9848","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"62b6c3d40011a5902b55ff5b6776fd0030763a7d2384b576a9a9df76c79f9848","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-packet-20261005/dirichlet-worker/FullPrint.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMangoldtDirichletBound.Variant62b6c3d40011a5902b55ff5b6776fd0030763a7d2384b576a9a9df76c79f9848
+
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichletTerm
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.cellMajorant
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.dirichletBudget
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichletTerm_zero
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichletTerm_one
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichletTerm_nonneg
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichletTerm_le_cellMajorant
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.cellMajorant_nonneg
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.majorantPrimitive
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.majorantPrimitive_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.cellMajorant_continuousOn
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.cellMajorant_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.majorantPrimitive_one
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.cellMajorant_integral_eq
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.cellMajorant_integral_le
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichletTerm_le_cellIntegral
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichlet_sum_range_le
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichlet_summable
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichlet_tsum_eq_shift
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichlet_tsum_le
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.tsum_vonMangoldt_div_rpow_le
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.movingLine_one_lt
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichlet_movingLine_le
+#print FormalResearch.RiemannHypothesis.SourceMangoldtDirichletBound.mangoldtDirichlet_movingLine_le_quadratic
+```

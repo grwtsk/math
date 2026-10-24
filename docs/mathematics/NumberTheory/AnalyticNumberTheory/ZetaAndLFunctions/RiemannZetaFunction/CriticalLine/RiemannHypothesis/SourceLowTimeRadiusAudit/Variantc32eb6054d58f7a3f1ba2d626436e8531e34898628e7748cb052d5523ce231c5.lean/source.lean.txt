@@ -1,0 +1,30 @@
+import SourceLowTimeRadius
+
+namespace FormalResearch.RiemannHypothesis.SourceLowTimeRadius
+
+#check lowTimeStripBudget
+#print axioms lowTimeStripBudget
+#print lowTimeStripBudget
+#check actual_low_sector_integrable
+#print axioms actual_low_sector_integrable
+#print actual_low_sector_integrable
+#check actual_low_mixed_restricted_abs_le_scaled
+#print axioms actual_low_mixed_restricted_abs_le_scaled
+#print actual_low_mixed_restricted_abs_le_scaled
+#check actual_retained_spatial_strip_abs_le_scaled
+#print axioms actual_retained_spatial_strip_abs_le_scaled
+#print actual_retained_spatial_strip_abs_le_scaled
+#check lowTimeStripBudget_le_at_radius
+#print axioms lowTimeStripBudget_le_at_radius
+#print lowTimeStripBudget_le_at_radius
+#check actual_retained_spatial_strip_abs_le_radius
+#print axioms actual_retained_spatial_strip_abs_le_radius
+#print actual_retained_spatial_strip_abs_le_radius
+#check actual_surplus_le_remainingOverlap_add_radius
+#print axioms actual_surplus_le_remainingOverlap_add_radius
+#print actual_surplus_le_remainingOverlap_add_radius
+#check remainingOverlap_le_actual_surplus_add_radius
+#print axioms remainingOverlap_le_actual_surplus_add_radius
+#print remainingOverlap_le_actual_surplus_add_radius
+
+end FormalResearch.RiemannHypothesis.SourceLowTimeRadius

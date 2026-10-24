@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialZetaPhaseTypesAxioms.Variant5e2b7ff021aed5fa7c8c9353c4e0c7f180fc1fde6437ebee78e650d39bec2214
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1fe18834cd180f51113985fd656be2bced3b1c7a` · SHA-256 `4025e72ac5d9e71916c8004675dba83bb85dddcbabd98af08c6f893fa70e6f25`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.Variant74621f6c5d10c55d977e4dd68e9c4efbd2d41e44332088c4e5ee9a421a59f585","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"74621f6c5d10c55d977e4dd68e9c4efbd2d41e44332088c4e5ee9a421a59f585","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerPotentialZetaPhase.Variant74621f6c5d10c55d977e4dd68e9c4efbd2d41e44332088c4e5ee9a421a59f585","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"74621f6c5d10c55d977e4dd68e9c4efbd2d41e44332088c4e5ee9a421a59f585","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-euler-potential-zeta-phase-v1/SourceActualEulerPotentialZetaPhaseTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerPotentialZetaPhase
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.Variant74621f6c5d10c55d977e4dd68e9c4efbd2d41e44332088c4e5ee9a421a59f585
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential_summable
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential_exp_eq_zeta
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential_exp_eq_zeta
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualClosedPrimeLogPotential_tendsto_full
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualClosedPrimeLogPotential_tendsto_full
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential_re_negative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualFullPrimeLogPotential_re_negative
+#check FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualZeta_norm_at_prime_two_phase_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerPotentialZetaPhase.actualZeta_norm_at_prime_two_phase_le
+```

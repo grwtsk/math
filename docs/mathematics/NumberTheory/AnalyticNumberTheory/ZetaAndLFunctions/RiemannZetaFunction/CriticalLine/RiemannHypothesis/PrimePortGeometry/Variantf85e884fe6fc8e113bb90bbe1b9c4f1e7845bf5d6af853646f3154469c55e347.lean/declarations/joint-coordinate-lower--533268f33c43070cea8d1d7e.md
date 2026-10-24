@@ -1,0 +1,104 @@
+# joint_coordinate_lower
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f4f319c5-7adf-6f5c-aa9c-f40a59bab502",
+  "kind": "theorem",
+  "lexical_name": "joint_coordinate_lower",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "joint-coordinate-lower--533268f33c43070cea8d1d7e",
+  "source": {
+    "blob": "70c6f020b36694bbb14ff09df24adfac4f5b0687",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 175,
+    "line": 153,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimePortGeometry/Variantf85e884fe6fc8e113bb90bbe1b9c4f1e7845bf5d6af853646f3154469c55e347.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:533268f33c43070cea8d1d7ea395c650330422eeeed84a13cef62eeff7a6eadf",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimePortGeometry/Variantf85e884fe6fc8e113bb90bbe1b9c4f1e7845bf5d6af853646f3154469c55e347.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f4f319c5-7adf-6f5c-aa9c-f40a59bab502`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 153–175.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem joint_coordinate_lower {ρ η : ℂ} {κ : ℝ}
+    (hρ : ρ.re ∈ Set.Icc 0 1) (hη : η.re ∈ Set.Icc 0 1)
+    (hκ : 0 ≤ κ) (hκL : κ ≤ logLength)
+    (hphase : κ * |ρ.im - η.im| ≤ phaseDistance ρ.im η.im) :
+    κ / Real.sqrt 3 * ‖ρ - η‖ ≤ ‖port ρ - port η‖ := by
+  have hs := port_norm_sq_lower hρ.2 hη.2
+  have hp := pow_le_pow_left₀ (mul_nonneg hκ (abs_nonneg _)) hphase 2
+  have hL := pow_le_pow_left₀ hκ hκL 2
+  have hLscaled := mul_le_mul_of_nonneg_right hL (sq_nonneg |ρ.re - η.re|)
+  have hn : ‖ρ - η‖ ^ 2 = (ρ.re - η.re) ^ 2 + (ρ.im - η.im) ^ 2 := by
+    rw [← Complex.normSq_eq_norm_sq, Complex.normSq_apply, Complex.sub_re, Complex.sub_im]
+    ring
+  have hf : (Real.sqrt 3) ^ 2 = (3 : ℝ) := Real.sq_sqrt (by norm_num)
+  apply (sq_le_sq₀ (mul_nonneg (div_nonneg hκ (Real.sqrt_nonneg _)) (norm_nonneg _))
+    (norm_nonneg _)).mp
+  rw [mul_pow, div_pow, hn]
+  rw [hf]
+  rw [mul_pow, sq_abs] at hp
+  rw [sq_abs] at hLscaled hs
+  nlinarith
+
+end
+end GRWTSK.RiemannHypothesis.Conversation.PrimePortGeometry
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimePortGeometry/Variantf85e884fe6fc8e113bb90bbe1b9c4f1e7845bf5d6af853646f3154469c55e347.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimePortGeometry/Variantf85e884fe6fc8e113bb90bbe1b9c4f1e7845bf5d6af853646f3154469c55e347.lean#L153).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `70c6f020b36694bbb14ff09df24adfac4f5b0687` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

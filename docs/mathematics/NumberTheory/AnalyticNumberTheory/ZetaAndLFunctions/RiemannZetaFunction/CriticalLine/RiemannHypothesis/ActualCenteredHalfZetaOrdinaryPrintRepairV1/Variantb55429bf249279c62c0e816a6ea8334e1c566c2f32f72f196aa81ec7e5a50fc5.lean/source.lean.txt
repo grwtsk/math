@@ -1,0 +1,19 @@
+import SourceActualCenteredHalfZetaReduction
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.deepTerms true
+set_option pp.proofs true
+set_option pp.funBinderTypes true
+set_option pp.letVarTypes true
+set_option pp.fullNames false
+-- Diagnostic-only budget for a complete pretty-printed proof.
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 10000000
+set_option pp.deepTerms true
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredHalfZetaMain
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_eq
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredColumnHalfInventory_sub_zetaMain_abs_le

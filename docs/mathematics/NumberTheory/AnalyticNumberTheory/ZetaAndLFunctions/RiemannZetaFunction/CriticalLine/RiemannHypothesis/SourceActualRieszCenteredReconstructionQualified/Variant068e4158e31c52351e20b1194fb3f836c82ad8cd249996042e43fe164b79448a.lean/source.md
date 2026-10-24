@@ -1,0 +1,60 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredReconstructionQualified.Variant068e4158e31c52351e20b1194fb3f836c82ad8cd249996042e43fe164b79448a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e0c3f0e87f364016aa62f0b5ffb75cc76e5f6150` · SHA-256 `c979cec7f9af84357c90bfe80b83b8ab5bf8b6e114d7d8ed312f59e695e46659`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredReconstruction.Variantc6657ca55a4bf91c6d97a714f85ca35ce5e712ad155557d6c493693f3c989e77","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c6657ca55a4bf91c6d97a714f85ca35ce5e712ad155557d6c493693f3c989e77","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRieszCenteredReconstruction.Variantc6657ca55a4bf91c6d97a714f85ca35ce5e712ad155557d6c493693f3c989e77","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c6657ca55a4bf91c6d97a714f85ca35ce5e712ad155557d6c493693f3c989e77","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T075343Z-1791359623392102000/SourceActualRieszCenteredReconstructionQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszCenteredReconstruction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszCenteredReconstruction.Variantc6657ca55a4bf91c6d97a714f85ca35ce5e712ad155557d6c493693f3c989e77
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualRieszContinuousRamp
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualMangoldtRieszPrimitive
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualRieszContinuousMagnitude
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualMangoldtRieszPrimitive_eq_fixed_ramps
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualMangoldtRieszPrimitive_continuousOn
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualMangoldtRieszPrimitive_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualMangoldtRiesz_pairing_intervalIntegrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualMangoldtRiesz_reconstruction
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualRiesz_continuousMoment_eq_neg_magnitude
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualCorrelation_Riesz_endpoint_ledger
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualCorrelation_Riesz_curvature_moments
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualRieszLinearCenter
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualCenteredMangoldtRieszPrimitive
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualCenteredMangoldtRiesz_intervalIntegrable
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualCenteredMangoldtRiesz_readout
+
+#print FormalResearch.RiemannHypothesis.SourceActualRieszCenteredReconstruction.actualCenteredMangoldtRiesz_area_bound
+```

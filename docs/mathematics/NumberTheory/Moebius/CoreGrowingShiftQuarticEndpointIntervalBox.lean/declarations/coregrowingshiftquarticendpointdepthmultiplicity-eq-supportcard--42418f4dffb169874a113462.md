@@ -1,0 +1,155 @@
+# coreGrowingShiftQuarticEndpointDepthMultiplicity_eq_supportCard
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:8610ee91-8ac4-51c1-059b-a1e29beeb506",
+  "kind": "theorem",
+  "lexical_name": "coreGrowingShiftQuarticEndpointDepthMultiplicity_eq_supportCard",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "coregrowingshiftquarticendpointdepthmultiplicity-eq-supportcard--42418f4dffb169874a113462",
+  "source": {
+    "blob": "2ccf6d46885121a4eadf47ced7523c8e1830418d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 327,
+    "line": 254,
+    "path": "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointIntervalBox.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:42418f4dffb169874a1134621642ef69c98dce1c0dd0b49565a6879711de3643",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointIntervalBox.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8610ee91-8ac4-51c1-059b-a1e29beeb506`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 254–327.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem coreGrowingShiftQuarticEndpointDepthMultiplicity_eq_supportCard
+    (j h b : ℕ) :
+    coreGrowingShiftQuarticEndpointDepthMultiplicity j (h, b) =
+      (coreGrowingShiftQuarticEndpointDepthSupport j h b).card := by
+  classical
+  unfold coreGrowingShiftQuarticEndpointDepthMultiplicity
+  apply Finset.card_bij (fun x _hx => x.1)
+  · intro x hx
+    have hactive := (Finset.mem_filter.mp hx).1
+    have hbox := (Finset.mem_filter.mp hx).2
+    rcases x with ⟨t, ⟨k, b0⟩⟩
+    simp only [coreGrowingShiftQuarticEndpointActiveCells,
+      Finset.mem_sigma] at hactive
+    rcases hactive with ⟨ht, hk, hb0⟩
+    simp only [coreGrowingShiftQuarticEndpointActiveCellBoxIndex,
+      Prod.mk.injEq] at hbox
+    rcases hbox with ⟨hheq, hbeq⟩
+    subst b0
+    have hkN : k < harmonicShiftCount j t :=
+      Finset.mem_range.mp hk
+    have hupper :
+        harmonicShiftLower j t + k < harmonicShiftUpper j t := by
+      unfold harmonicShiftCount at hkN
+      omega
+    have hrange :
+        harmonicShiftLower j t ≤ h ∧
+          h < harmonicShiftUpper j t := by
+      constructor <;> omega
+    apply Finset.mem_filter.mpr
+    exact ⟨ht, hrange, Finset.mem_range.mp hb0⟩
+  · intro x hx y hy hdepth
+    have hxq := (Finset.mem_filter.mp hx).2
+    have hyq := (Finset.mem_filter.mp hy).2
+    rcases x with ⟨tx, ⟨kx, bx⟩⟩
+    rcases y with ⟨ty, ⟨ky, by0⟩⟩
+    change tx = ty at hdepth
+    subst ty
+    have hindices :
+        (harmonicShiftLower j tx + kx, bx) =
+          (harmonicShiftLower j tx + ky, by0) := by
+      exact hxq.trans hyq.symm
+    simp only [Prod.mk.injEq] at hindices
+    rcases hindices with ⟨hhk, hhb⟩
+    have hk : kx = ky := by omega
+    subst ky
+    subst by0
+    rfl
+  · intro t ht
+    simp only [coreGrowingShiftQuarticEndpointDepthSupport,
+      Finset.mem_filter] at ht
+    rcases ht with ⟨htcore, hrange, hb⟩
+    rcases hrange with ⟨hlow, hupp⟩
+    let k : ℕ := h - harmonicShiftLower j t
+    have hkEq : harmonicShiftLower j t + k = h := by
+      dsimp [k]
+      omega
+    have hkCount : k < harmonicShiftCount j t := by
+      unfold harmonicShiftCount
+      dsimp [k]
+      omega
+    let x : CoreGrowingShiftQuarticEndpointActiveCell :=
+      ⟨t, ⟨k, b⟩⟩
+    refine ⟨x, ?_, ?_⟩
+    · apply Finset.mem_filter.mpr
+      constructor
+      · simp only [coreGrowingShiftQuarticEndpointActiveCells,
+          Finset.mem_sigma]
+        exact ⟨htcore, Finset.mem_range.mpr hkCount,
+          Finset.mem_range.mpr hb⟩
+      · change (harmonicShiftLower j t + k, b) = (h, b)
+        rw [hkEq]
+    · rfl
+
+/-- Literal piecewise interval-length formula for endpoint depth multiplicity. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointIntervalBox.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointIntervalBox.lean#L254).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2ccf6d46885121a4eadf47ced7523c8e1830418d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

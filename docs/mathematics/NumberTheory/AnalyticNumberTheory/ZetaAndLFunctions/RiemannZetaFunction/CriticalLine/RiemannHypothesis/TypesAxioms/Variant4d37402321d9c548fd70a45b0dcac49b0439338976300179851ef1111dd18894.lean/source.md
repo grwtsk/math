@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant4d37402321d9c548fd70a45b0dcac49b0439338976300179851ef1111dd18894
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d1cb7c0cff0f733fc483ddb5c8b612febddd637` · SHA-256 `cd9b2cdf96baa9d5f3f2446cd9a6d971debbad08ea165dfe7f0ab62080e2b6dd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiEarlyReturnedWork.Variantbbfe9a9bd3ec890fafa93f9bc9b5fbbf4e0b3b1379853f6ee6ad63cfa8ff13f2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bbfe9a9bd3ec890fafa93f9bc9b5fbbf4e0b3b1379853f6ee6ad63cfa8ff13f2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiEarlyReturnedWork.Variantbbfe9a9bd3ec890fafa93f9bc9b5fbbf4e0b3b1379853f6ee6ad63cfa8ff13f2","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"bbfe9a9bd3ec890fafa93f9bc9b5fbbf4e0b3b1379853f6ee6ad63cfa8ff13f2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-xi-early-returned-work/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiEarlyReturnedWork
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiEarlyReturnedWork.Variantbbfe9a9bd3ec890fafa93f9bc9b5fbbf4e0b3b1379853f6ee6ad63cfa8ff13f2
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiLateReturnedWork
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiLateReturnedWork
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedBudget
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturned_split_orders
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturned_split_orders
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiReturnedWork_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiReturnedWork_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiReturnDensity_origin_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiReturnDensity_origin_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.completeXiTail_eq_early_add_late
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.completeXiTail_eq_early_add_late
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedBudget_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedBudget_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.actualXiEarlyReturnedWork_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.completeXiTail_sub_late_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiEarlyReturnedWork.completeXiTail_sub_late_tendsto_zero
+```

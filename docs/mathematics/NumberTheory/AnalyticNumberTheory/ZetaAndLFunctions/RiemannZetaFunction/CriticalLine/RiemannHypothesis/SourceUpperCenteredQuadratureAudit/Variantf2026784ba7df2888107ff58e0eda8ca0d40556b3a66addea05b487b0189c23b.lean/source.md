@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUpperCenteredQuadratureAudit.Variantf2026784ba7df2888107ff58e0eda8ca0d40556b3a66addea05b487b0189c23b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6f7eaaaf73367448338f56482bc392249874f98a` · SHA-256 `51e6622ae9ac6eb92ea4b6d3dad4ef9b8997cda254cade1db06f178473b836c3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUpperCenteredQuadrature.Variant25a8a0fb6e2845807bdb9cd61b47d022ec8e6d433b79f7f3b6493f3466aaab62","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"25a8a0fb6e2845807bdb9cd61b47d022ec8e6d433b79f7f3b6493f3466aaab62","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceUpperCenteredQuadrature.Variant25a8a0fb6e2845807bdb9cd61b47d022ec8e6d433b79f7f3b6493f3466aaab62","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"25a8a0fb6e2845807bdb9cd61b47d022ec8e6d433b79f7f3b6493f3466aaab62","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourceUpperCenteredQuadratureAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceUpperCenteredQuadrature
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceUpperCenteredQuadrature.Variant25a8a0fb6e2845807bdb9cd61b47d022ec8e6d433b79f7f3b6493f3466aaab62
+
+set_option pp.fullNames true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.centered_deriv_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.centered_deriv_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.finite_upper_centered_quadrature
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.finite_upper_centered_quadrature
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.centered_deriv_upper_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.centered_deriv_upper_integrable
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.upper_centered_quadrature
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.upper_centered_quadrature
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.actual_logProfile_upper_centered_quadrature
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.actual_logProfile_upper_centered_quadrature
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.cubic_signed_upper_model_row_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.cubic_signed_upper_model_row_integrable
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.actual_logProfile_upper_cubic_sampling
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.actual_logProfile_upper_cubic_sampling
+#check FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.actual_short_divisor_upper_cubic_sampling
+#print axioms FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.actual_short_divisor_upper_cubic_sampling
+#print FormalResearch.RiemannHypothesis.SourceUpperCenteredQuadrature.cubicSignedUpperModelRow
+```

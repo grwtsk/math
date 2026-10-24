@@ -1,0 +1,23 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSamplingDerivative.Variantc34cc57f82bf56a67d2b15f0fb4ed24d3e43eee2e2dd0811a7e14165d472dd04","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c34cc57f82bf56a67d2b15f0fb4ed24d3e43eee2e2dd0811a7e14165d472dd04","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSamplingDerivative.Variantc34cc57f82bf56a67d2b15f0fb4ed24d3e43eee2e2dd0811a7e14165d472dd04","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c34cc57f82bf56a67d2b15f0fb4ed24d3e43eee2e2dd0811a7e14165d472dd04","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/arithmetic-routes/SourceSamplingDerivativeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSamplingDerivative.Variantc34cc57f82bf56a67d2b15f0fb4ed24d3e43eee2e2dd0811a7e14165d472dd04
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.source_derivative_zero_right
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.source_difference_zero_right
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.sampling_term_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.samplingIndices_subset_fixed
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.kernel_eq_fixed_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.difference_sum_eq_fixed_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.sourceSamplingKernel_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.sourceSamplingKernel_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.sourceSamplingKernel_differentiableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.difference_sampling_sum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.sourceSamplingKernel_derivative_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.SourceSamplingDerivative.sourceSamplingKernel_derivative_abs_le

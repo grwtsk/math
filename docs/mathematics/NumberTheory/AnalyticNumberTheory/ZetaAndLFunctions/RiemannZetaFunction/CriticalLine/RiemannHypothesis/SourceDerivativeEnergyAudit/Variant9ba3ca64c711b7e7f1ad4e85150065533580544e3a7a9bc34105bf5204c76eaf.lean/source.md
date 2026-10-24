@@ -1,0 +1,17 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDerivativeEnergyAudit.Variant9ba3ca64c711b7e7f1ad4e85150065533580544e3a7a9bc34105bf5204c76eaf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `927c0b0294611375d6d2b55490c03f4ed5baf1c6` · SHA-256 `9ba3ca64c711b7e7f1ad4e85150065533580544e3a7a9bc34105bf5204c76eaf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceDerivativeEnergy
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.sourceBump_contDiff_three
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.sourceBump_third_square_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_square_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_lt_twenty_five
+#check FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_upper
+#check FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_lt_twenty_five
+```

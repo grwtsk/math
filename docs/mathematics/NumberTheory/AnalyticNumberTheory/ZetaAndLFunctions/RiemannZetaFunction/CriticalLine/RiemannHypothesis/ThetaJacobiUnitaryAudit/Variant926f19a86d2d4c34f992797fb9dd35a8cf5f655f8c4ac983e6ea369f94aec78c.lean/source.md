@@ -1,0 +1,74 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaJacobiUnitaryAudit.Variant926f19a86d2d4c34f992797fb9dd35a8cf5f655f8c4ac983e6ea369f94aec78c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `10f6c86c2da090b4f73dc48c8eb7a2b749b592eb` · SHA-256 `8da53e91ae86434ef2d8d067de1a9013c1ef5b9ff56e967e08bb675668398a74`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaJacobiUnitary.Varianta33cb4e94e9cb2f96c3171f06e45015ddcf98429b5f55a59a568b8063fadcb1a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a33cb4e94e9cb2f96c3171f06e45015ddcf98429b5f55a59a568b8063fadcb1a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaJacobiUnitary.Varianta33cb4e94e9cb2f96c3171f06e45015ddcf98429b5f55a59a568b8063fadcb1a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a33cb4e94e9cb2f96c3171f06e45015ddcf98429b5f55a59a568b8063fadcb1a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/ThetaJacobiUnitaryAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ThetaJacobiUnitary
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaJacobiUnitary.Varianta33cb4e94e9cb2f96c3171f06e45015ddcf98429b5f55a59a568b8063fadcb1a
+
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.finite_power_sum_ae
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.finite_power_sum_ae
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.real_polynomial_eq_zero_of_ae
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.real_polynomial_eq_zero_of_ae
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.powers_linearIndependent
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.powers_linearIndependent
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial_orthonormal
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial_orthonormal
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial_span
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial_span
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.polynomialHilbertBasis
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.polynomialHilbertBasis
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.polynomialHilbertBasis_apply
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.polynomialHilbertBasis_apply
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_single
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_single
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial_zero
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.orthogonalPolynomial_zero
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_zero
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_zero
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_rawPoint
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_rawPoint
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiDomain
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiDomain
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.mem_jacobiDomain_iff
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.mem_jacobiDomain_iff
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.domainUnitary
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.domainUnitary
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_jacobiOperator
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.pointedUnitary_jacobiOperator
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiDomain_dense
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiDomain_dense
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_symmetric
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_symmetric
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_isSelfAdjoint
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_isSelfAdjoint
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_isClosed
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_isClosed
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerVector
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerVector_zero
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerVector_zero
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerVector_mem_domain
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerVector_mem_domain
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerDomainVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiPowerDomainVector
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_powerVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.jacobiOperator_powerVector
+#print FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.rawPoint_power_inner
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiUnitary.rawPoint_power_inner
+```

@@ -1,0 +1,88 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Followthrough3ConsumerExpandedTypesV2.Variant64aef8b0bfbdaa3beafed15d2b9083e6c95e7ff2e5dc5431c8671564ba41b4c3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d4982965f7d476c86a4976a54bc11ab4ce1aed99` · SHA-256 `64aef8b0bfbdaa3beafed15d2b9083e6c95e7ff2e5dc5431c8671564ba41b4c3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceBlockRadiusSharpPropagation
+
+set_option autoImplicit false
+
+namespace RH16ActualXiPositiveBlock
+
+#check actualTransformedXiBlockDensity
+#check blockMargin
+#check actual_transformed_kernel_negative
+#check actual_transformed_density_lower
+#check actual_transformed_density_intervalIntegrable
+#check blockMargin_pos
+#check actual_transformed_block_integral_lower
+
+end RH16ActualXiPositiveBlock
+
+namespace RH16ShiftedXiAdapter
+
+#check plain_derivative_prefactor_eq
+#check plainProfile_deriv_eq_actual_kernel
+#check signedCesaroPairing_eq_explicit_shiftedXi
+#check remainingAtomWork_eq_explicit_shiftedXi
+
+end RH16ShiftedXiAdapter
+
+namespace RH16CompleteXiComplement
+
+#check completeXiComplement
+#check calibratedRadius
+#check complementAtomBudget
+#check actual_transformed_whole_intervalIntegrable
+#check signed_pairing_eq_block_add_complement
+#check signed_pairing_lower_of_complete_complement
+#check remaining_lower_of_complete_complement
+#check complementAtomBudget_nonneg
+#check atom_witness_of_complete_complement
+#check all_real_lower_of_complete_complement
+#check estimate_of_complete_complement
+
+end RH16CompleteXiComplement
+
+namespace FormalResearch.RiemannHypothesis.SourceRawXiBlockGain
+
+#check contracted_pairing_eq_block_add_complement
+#check contracted_pairing_lower_of_complement_raw
+#check residual_upper_of_complement_raw
+#check all_real_lower_of_complement_at_91
+#check actual_leading_upper_of_complement_raw
+#check estimate_of_complement_at_91
+#check residual_tail_of_complement_raw
+#check all_real_lower_of_complement_raw
+#check estimate_of_complement_raw
+
+end FormalResearch.RiemannHypothesis.SourceRawXiBlockGain
+
+namespace FormalResearch.RiemannHypothesis.SourceLaterRadiusPropagation
+
+#check residual_upper_of_contracted_Xi_at_radius
+#check all_real_lower_of_contracted_Xi_at_radius
+#check estimate_of_contracted_Xi_at_radius
+#check leading_upper_of_contracted_Xi_at_radius
+#check leading_tail_of_contracted_Xi_at_radius
+#check leading_upper_of_residual_half
+#check leading_upper_of_residual_corrected
+#check leading_upper_of_residual_fourteen
+#check leading_upper_of_actual_corrected_pairing
+#check leading_tail_of_actual_corrected_pairing
+#check leading_tail_of_triangular_upper
+
+end FormalResearch.RiemannHypothesis.SourceLaterRadiusPropagation
+
+namespace FormalResearch.RiemannHypothesis.SourceBlockRadiusSharpPropagation
+
+#check residual_upper_of_complete_complement_at_radius
+#check all_real_lower_of_complete_complement_at_radius
+#check estimate_of_complete_complement_at_radius
+#check leading_upper_of_complete_complement_at_radius
+
+end FormalResearch.RiemannHypothesis.SourceBlockRadiusSharpPropagation
+
+```

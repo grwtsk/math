@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMellinHeightAudit.Variant58c71e4aa8f44d14eb6f7afa0d586277806169db3cea9770af20865b046cd145
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8a2edb29777e4ecbde614e0978cb17b16db940fb` · SHA-256 `8a3f2e51bef79eb3b389278b13998d9f6f53a896f50cfa1292d2caa0a9d2430f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMellinHeightTransfer.Variant4f08b5a604fe551dc5e56759d40597f5fb16cd8c440dd344736636aa0191e20a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4f08b5a604fe551dc5e56759d40597f5fb16cd8c440dd344736636aa0191e20a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceMellinHeightTransfer.Variant4f08b5a604fe551dc5e56759d40597f5fb16cd8c440dd344736636aa0191e20a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4f08b5a604fe551dc5e56759d40597f5fb16cd8c440dd344736636aa0191e20a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-hilbert-cycle-20261006/finite-energy-replays/hilbert-replay/SourceMellinHeightAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceMellinHeightTransfer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMellinHeightTransfer.Variant4f08b5a604fe551dc5e56759d40597f5fb16cd8c440dd344736636aa0191e20a
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis
+#print SourceMellinHeightTransfer.rightLineMajorant
+#print SourceMellinHeightTransfer.sourceNormalizationFloor
+#print SourceMellinHeightTransfer.rightLineTailConstant
+#print SourceMellinHeightTransfer.movingHeight
+#print SourceMellinHeightTransfer.movingHeight_ge_one
+#print SourceMellinHeightTransfer.movingHeight_tail_factor_eq
+#print SourceMellinHeightTransfer.tail_at_movingHeight_of_rightLine_contract
+#print SourceMellinHeightTransfer.full_readout_upper_of_head_and_tail
+#print axioms SourceMellinHeightTransfer.movingHeight_ge_one
+#print axioms SourceMellinHeightTransfer.movingHeight_tail_factor_eq
+#print axioms SourceMellinHeightTransfer.tail_at_movingHeight_of_rightLine_contract
+#print axioms SourceMellinHeightTransfer.full_readout_upper_of_head_and_tail
+```

@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant6d9b66867f0b370e983a50618fa8451a0e298cb9dce07831f9326cf71d2f786f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eced85367f36a2c9abd5f1fdccd6f02c690d4168` · SHA-256 `a13526b6fe4803f7d2384dcdab66c005a9c41b3c6a7d6b23294372a6936258de`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.Variantd2defdee6d808ab34ebc9f61103b034f9e7b5d34c5a7bd3d92b8f5d6584870b5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d2defdee6d808ab34ebc9f61103b034f9e7b5d34c5a7bd3d92b8f5d6584870b5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualNearMeanInteriorFrontier.Variantd2defdee6d808ab34ebc9f61103b034f9e7b5d34c5a7bd3d92b8f5d6584870b5","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d2defdee6d808ab34ebc9f61103b034f9e7b5d34c5a7bd3d92b8f5d6584870b5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-near-mean-interior-frontier/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualNearMeanInteriorFrontier
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.Variantd2defdee6d808ab34ebc9f61103b034f9e7b5d34c5a7bd3d92b8f5d6584870b5
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearPeriodicWork
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualIntegratedMeanResolvedBoundary
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearMeanInterior
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearMeanRetainedRemainder
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearPeriodicWork_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_eq_near_mean_sub_far
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_sub_near_mean_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_sub_near_mean_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualRetainedRemainder_sub_near_mean_eq
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualCompensatedWork_sub_near_mean_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualCompensatedWork_sub_near_mean_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualResidual_near_mean_pointwise_comparison
+```

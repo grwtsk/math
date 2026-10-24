@@ -1,0 +1,20 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant1ecc165070b07af67212d9146a6c6f8c2cfcbb41478fb98718092381848befd6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2de6f3092b61528b40b3931d7cfb2c36b25ab90f` · SHA-256 `1ecc165070b07af67212d9146a6c6f8c2cfcbb41478fb98718092381848befd6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCriticalRelativeConsumer
+set_option linter.hashCommand false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.integer_bound_at_radius
+#print FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.integer_bound_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.integer_bound_at_radius
+#check FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.residual_bound_at_radius
+#print FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.residual_bound_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.residual_bound_at_radius
+#check FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.estimate_of_criticalRelativePairing_bound_at_radius
+#print FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.estimate_of_criticalRelativePairing_bound_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalRelativeConsumer.estimate_of_criticalRelativePairing_bound_at_radius
+```

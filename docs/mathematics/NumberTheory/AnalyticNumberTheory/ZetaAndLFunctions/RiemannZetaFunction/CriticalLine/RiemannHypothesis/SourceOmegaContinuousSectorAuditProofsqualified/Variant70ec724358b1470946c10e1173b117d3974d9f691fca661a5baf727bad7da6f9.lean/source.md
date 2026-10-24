@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceOmegaContinuousSectorAuditProofsqualified.Variant70ec724358b1470946c10e1173b117d3974d9f691fca661a5baf727bad7da6f9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `65b2fb3b0bf00aa18f26ffbb0a6dd418533ffa31` · SHA-256 `70ec724358b1470946c10e1173b117d3974d9f691fca661a5baf727bad7da6f9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceOmegaContinuousSector
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.literalOmegaIntegralSector
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.plainProfile_multiplicative
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.logProfile_eq_continuousDivisorIntegrand_mul
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_integrable
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_zero_above
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_full_x
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_literal_row
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.full_short_continuous_sector_eq_literal_I
+```

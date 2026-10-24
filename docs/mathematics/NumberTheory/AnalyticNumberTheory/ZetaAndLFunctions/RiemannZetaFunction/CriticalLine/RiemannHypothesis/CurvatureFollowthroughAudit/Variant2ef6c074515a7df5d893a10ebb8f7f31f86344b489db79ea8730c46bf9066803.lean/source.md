@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CurvatureFollowthroughAudit.Variant2ef6c074515a7df5d893a10ebb8f7f31f86344b489db79ea8730c46bf9066803
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `01fcfd31ad8493bb2af61442e83d569dfc946355` · SHA-256 `ce88289a7ffc358a4ab196f7a5c6904b93bfb7777b6aa3c86c89b5c1ea6799a5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCurvatureFollowthrough.Variantf81eb37ec075d203b62630b2f0525f6aab53b61390e7a3abb7cf1c77527bb746","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f81eb37ec075d203b62630b2f0525f6aab53b61390e7a3abb7cf1c77527bb746","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceCurvatureFollowthrough.Variantf81eb37ec075d203b62630b2f0525f6aab53b61390e7a3abb7cf1c77527bb746","mathematical_subject":"Foundations.Unclassified","original_sha256":"f81eb37ec075d203b62630b2f0525f6aab53b61390e7a3abb7cf1c77527bb746","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-followthrough-20261006-curvature/CurvatureFollowthroughAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCurvatureFollowthrough
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCurvatureFollowthrough.Variantf81eb37ec075d203b62630b2f0525f6aab53b61390e7a3abb7cf1c77527bb746
+
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check @RH16CurvatureFollowthrough.remaining_lower_of_actual_finite_row_five
+#print axioms RH16CurvatureFollowthrough.remaining_lower_of_actual_finite_row_five
+#print RH16CurvatureFollowthrough.remaining_lower_of_actual_finite_row_five
+#check @RH16CurvatureFollowthrough.estimate_of_actual_finite_row_five
+#print axioms RH16CurvatureFollowthrough.estimate_of_actual_finite_row_five
+#print RH16CurvatureFollowthrough.estimate_of_actual_finite_row_five
+#check @RH16CurvatureFollowthrough.signed_pairing_eq_actual_finite_row
+#print axioms RH16CurvatureFollowthrough.signed_pairing_eq_actual_finite_row
+#print RH16CurvatureFollowthrough.signed_pairing_eq_actual_finite_row
+#check @RH16CurvatureFollowthrough.cesaro_growth_of_global_first_primitive
+#print axioms RH16CurvatureFollowthrough.cesaro_growth_of_global_first_primitive
+#print RH16CurvatureFollowthrough.cesaro_growth_of_global_first_primitive
+#check @RH16CurvatureFollowthrough.remaining_lower_of_global_first_primitive_five
+#print axioms RH16CurvatureFollowthrough.remaining_lower_of_global_first_primitive_five
+#print RH16CurvatureFollowthrough.remaining_lower_of_global_first_primitive_five
+#check @RH16CurvatureFollowthrough.estimate_of_global_first_primitive_five
+#print axioms RH16CurvatureFollowthrough.estimate_of_global_first_primitive_five
+#print RH16CurvatureFollowthrough.estimate_of_global_first_primitive_five
+#check @RH16CurvatureFollowthrough.estimate_of_actual_finite_signed_pairing
+#print axioms RH16CurvatureFollowthrough.estimate_of_actual_finite_signed_pairing
+#print RH16CurvatureFollowthrough.estimate_of_actual_finite_signed_pairing
+```

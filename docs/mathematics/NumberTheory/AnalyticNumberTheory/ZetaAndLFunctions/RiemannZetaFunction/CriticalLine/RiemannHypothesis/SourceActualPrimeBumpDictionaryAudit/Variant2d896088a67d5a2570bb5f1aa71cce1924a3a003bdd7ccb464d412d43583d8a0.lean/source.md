@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPrimeBumpDictionaryAudit.Variant2d896088a67d5a2570bb5f1aa71cce1924a3a003bdd7ccb464d412d43583d8a0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `57eb1e6eb31f92b35a865bd6e95200414e5904e4` · SHA-256 `8ac00fd9af062e6b1ebff64ea50808e6ea1a9716e3022f8e4e09ef4829bcc0bf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPrimeBumpDictionary.Variant3216f986e0329a943b18a9b421b1d171d804c8334c1b126f424dcd2b57f6b85e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3216f986e0329a943b18a9b421b1d171d804c8334c1b126f424dcd2b57f6b85e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPrimeBumpDictionary.Variant3216f986e0329a943b18a9b421b1d171d804c8334c1b126f424dcd2b57f6b85e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3216f986e0329a943b18a9b421b1d171d804c8334c1b126f424dcd2b57f6b85e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T044013Z-1791348013032922000/SourceActualPrimeBumpDictionaryAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPrimeBumpDictionary
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPrimeBumpDictionary.Variant3216f986e0329a943b18a9b421b1d171d804c8334c1b126f424dcd2b57f6b85e
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeMellin_eq_bumpMellinWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeMellin_eq_bumpMellinWeight
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeMellin_eq_bumpMellinWeight
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeDensity_eq_bump
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeDensity_eq_bump
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeDensity_eq_bump
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeTwoTail_eq_bump
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeTwoTail_eq_bump
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeTwoTail_eq_bump
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeTwoTail_movingHeight_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeTwoTail_movingHeight_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualInitialPrimeTwoTail_movingHeight_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_sub_head_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_sub_head_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_sub_head_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_sub_head_real_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_sub_head_real_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_sub_head_real_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_le_head_add
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_le_head_add
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary.actualMertensResidual_le_head_add
+```

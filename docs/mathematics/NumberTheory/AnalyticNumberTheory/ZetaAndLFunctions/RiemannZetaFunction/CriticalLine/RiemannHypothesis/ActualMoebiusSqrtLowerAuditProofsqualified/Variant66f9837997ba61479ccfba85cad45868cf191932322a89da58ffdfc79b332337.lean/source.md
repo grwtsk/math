@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualMoebiusSqrtLowerAuditProofsqualified.Variant66f9837997ba61479ccfba85cad45868cf191932322a89da58ffdfc79b332337
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8f14fdaf377a86afdec5df509027bf98a3e46ead` · SHA-256 `66f9837997ba61479ccfba85cad45868cf191932322a89da58ffdfc79b332337`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualMoebiusSqrtLower
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.actualAbsMoebius_eq_squarefreeIndicator
+#print RH16IndependentChallengeNext.actualAbsMoebius_lower_square_sieve
+#print RH16IndependentChallengeNext.squareDivisorSqrtMass
+#print RH16IndependentChallengeNext.squareDivisorSqrtMass_eq_quotient
+#print RH16IndependentChallengeNext.squareDivisorSqrtMass_eq_scaled
+#print RH16IndependentChallengeNext.squareDivisorSqrtMass_le
+#print RH16IndependentChallengeNext.squareDivisorSqrtMass_le_saved
+#print RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower_weighted_sieve
+#print RH16IndependentChallengeNext.squareDivisorSqrtMass_total_le
+#print RH16IndependentChallengeNext.actualMoebiusSqrtMass_lower
+```

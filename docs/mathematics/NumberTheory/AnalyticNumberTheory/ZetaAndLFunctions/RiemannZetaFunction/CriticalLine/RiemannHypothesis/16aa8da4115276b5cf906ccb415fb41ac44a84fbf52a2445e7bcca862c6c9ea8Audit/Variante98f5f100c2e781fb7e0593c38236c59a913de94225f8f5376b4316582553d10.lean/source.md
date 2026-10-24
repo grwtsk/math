@@ -1,0 +1,98 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8Audit.Variante98f5f100c2e781fb7e0593c38236c59a913de94225f8f5376b4316582553d10
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `19e78ee4ad5d8719945ed65dfc796401734754ae` · SHA-256 `68df96390ba81f82825166128a60d47afc91ed309ea9ae9e273964a40e42ee30`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaTailOrientation.Variant16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaTailOrientation.Variant16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/16/16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8--Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaTailOrientation
+import FormalResearch.RiemannHypothesis.ThetaTailBoundary
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaTailOrientation.Variant16aa8da4115276b5cf906ccb415fb41ac44a84fbf52a2445e7bcca862c6c9ea8
+
+set_option pp.proofs false
+set_option pp.universes true
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.rev_sign
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.rev_sign
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_strictAnti
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_strictAnti
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_apply
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_apply
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_rev
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingRowDebt_rev
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree_apply
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.increasingColumnDegree_apply
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_eq
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.Separation.rowDebt_det_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_zero
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_zero
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_one
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_one
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_two
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_two
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_three
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.det_reverse_rows_three
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_consecutive_det_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.monomial_cross_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.monomial_cross_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_two_det_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.evenBasis_two_det_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteSourceMatrix_rowDebt_ordered_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteSourceMatrix_rowDebt_ordered_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteTransverseMatrix_consecutive_ordered_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.finiteTransverseMatrix_consecutive_ordered_nonnegative
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.permutation_crosses_cut
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.permutation_crosses_cut
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_eq_zero_of_diagonal_violation
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_eq_zero_of_diagonal_violation
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.separated_iff_last_le_first
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.separated_iff_last_le_first
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_split_at_gap
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.minor_split_at_gap
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_classification
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_classification
+
+#print FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_two_nonnegative
+#print axioms FormalResearch.RiemannHypothesis.ThetaPositiveLift.boundary_two_nonnegative
+```

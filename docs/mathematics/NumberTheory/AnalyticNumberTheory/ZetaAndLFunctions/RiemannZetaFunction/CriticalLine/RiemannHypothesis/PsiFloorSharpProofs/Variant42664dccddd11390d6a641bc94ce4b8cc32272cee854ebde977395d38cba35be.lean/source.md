@@ -1,0 +1,14 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PsiFloorSharpProofs.Variant42664dccddd11390d6a641bc94ce4b8cc32272cee854ebde977395d38cba35be
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `31ec50324d7cd115ca2998040abc16b81c35b19b` · SHA-256 `42664dccddd11390d6a641bc94ce4b8cc32272cee854ebde977395d38cba35be`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiFloorSharpConsumer
+set_option autoImplicit false
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.complete_pairing_sub_psi_floor_abs_le_twenty_nine
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.residual_sub_psi_floor_sub_zeta_abs_lt_twenty_nine
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius_twenty_nine
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSharpConsumer.estimate_of_actual_psi_floor_signed_tail_twenty_nine
+```

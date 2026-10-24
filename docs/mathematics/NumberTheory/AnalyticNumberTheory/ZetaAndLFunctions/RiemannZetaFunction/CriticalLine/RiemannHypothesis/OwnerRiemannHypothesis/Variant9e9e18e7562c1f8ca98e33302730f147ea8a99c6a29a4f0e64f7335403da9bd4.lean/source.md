@@ -1,0 +1,158 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.OwnerRiemannHypothesis.Variant9e9e18e7562c1f8ca98e33302730f147ea8a99c6a29a4f0e64f7335403da9bd4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `57b1c6b8eb371016487a354d6538e85bc8e4fac4` · SHA-256 `466609b598ab9bfa72ab58dc3d70a58001503c64298c159e145342b9693dc8f2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Defect.Variant0b97966df98057d777f60bcfcd50a9405033bef14a09ba6d28c6b80d6200b0a4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0b97966df98057d777f60bcfcd50a9405033bef14a09ba6d28c6b80d6200b0a4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.Defect.Variant0b97966df98057d777f60bcfcd50a9405033bef14a09ba6d28c6b80d6200b0a4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0b97966df98057d777f60bcfcd50a9405033bef14a09ba6d28c6b80d6200b0a4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/continuous-research-01a109fc/pass22/arithmetic_laurent/owner-RiemannHypothesis.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.Defect
+import FormalResearch.RiemannHypothesis.ZeroSymmetry
+import FormalResearch.RiemannHypothesis.TargetComparator
+import FormalResearch.RiemannHypothesis.InferenceGuards
+import FormalResearch.RiemannHypothesis.CatalanJacobi
+import FormalResearch.RiemannHypothesis.CatalanJacobiResolvent
+import FormalResearch.RiemannHypothesis.ThetaJacobiAdapter
+import FormalResearch.RiemannHypothesis.ThetaJacobiDeformation
+import FormalResearch.RiemannHypothesis.ThetaMultiplicationDomain
+import FormalResearch.RiemannHypothesis.ThetaMultiplicationResolvent
+import FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi
+import FormalResearch.RiemannHypothesis.SignedSourceClosure
+import FormalResearch.RiemannHypothesis.WeightedPrimeMertens
+import FormalResearch.RiemannHypothesis.WeightedPrimeAbel
+import FormalResearch.RiemannHypothesis.SourceDiagonalPrimeAbel
+import FormalResearch.RiemannHypothesis.SourceDiagonalShortWindow
+import FormalResearch.RiemannHypothesis.SourceDiagonalMainTerm
+import FormalResearch.RiemannHypothesis.GevreyEnvelope
+import FormalResearch.RiemannHypothesis.GevreyProfile
+import FormalResearch.RiemannHypothesis.GevreyNormalization
+import FormalResearch.RiemannHypothesis.GevreyCorrelation
+import FormalResearch.RiemannHypothesis.GevreyPolynomial
+import FormalResearch.RiemannHypothesis.GevreyFourier
+import FormalResearch.RiemannHypothesis.GevreyDerivativeEnergy
+import FormalResearch.RiemannHypothesis.SourceDerivativeEnergy
+import FormalResearch.RiemannHypothesis.SourceCorrelationEnergy
+import FormalResearch.RiemannHypothesis.SourceCorrelationCurvature
+import FormalResearch.RiemannHypothesis.SourceCorrelationCurvatureSign
+import FormalResearch.RiemannHypothesis.SourceSamplingTaylor
+import FormalResearch.RiemannHypothesis.SourceFractionalQuadrature
+import FormalResearch.RiemannHypothesis.SourceSamplingCoefficients
+import FormalResearch.RiemannHypothesis.SourcePositiveSampling
+import FormalResearch.RiemannHypothesis.SourceSamplingRemainder
+import FormalResearch.RiemannHypothesis.SourceSamplingPointwise
+import FormalResearch.RiemannHypothesis.SourceHankelReflection
+import FormalResearch.RiemannHypothesis.SourceHankelFourier
+import FormalResearch.RiemannHypothesis.SourceHankelLocalization
+import FormalResearch.RiemannHypothesis.SourceScaleVariation
+import FormalResearch.RiemannHypothesis.StateScaledOperatorError
+import FormalResearch.RiemannHypothesis.SourcePairing
+import FormalResearch.RiemannHypothesis.ZeroSide.SmoothExplicitFormula
+import FormalResearch.RiemannHypothesis.ZeroSide.SmoothExplicitFormulaTransport
+import FormalResearch.RiemannHypothesis.ZeroSide.WeilFormulaImport
+import FormalResearch.RiemannHypothesis.ZeroSide.WeilArithmeticTransport
+import FormalResearch.RiemannHypothesis.ZeroSide.DominatedDescent
+import FormalResearch.RiemannHypothesis.ZeroSide.Assembly
+import FormalResearch.RiemannHypothesis.Laplace.Algebra
+import FormalResearch.RiemannHypothesis.Laplace.Kernel
+import FormalResearch.RiemannHypothesis.Laplace.Expansion
+import FormalResearch.RiemannHypothesis.Laplace.InitialFormula
+import FormalResearch.RiemannHypothesis.Laplace.Continuation
+import FormalResearch.RiemannHypothesis.Laplace.PoleCertificate
+import FormalResearch.RiemannHypothesis.Laplace.Assembly
+import FormalResearch.RiemannHypothesis.Landau.Correction
+import FormalResearch.RiemannHypothesis.Landau.Bridge
+import FormalResearch.RiemannHypothesis.SourceReflectionDuality
+import FormalResearch.RiemannHypothesis.SourceReflectionConjugation
+import FormalResearch.RiemannHypothesis.SourceL2FourierCompatibility
+import FormalResearch.RiemannHypothesis.SourceDualFourierJump
+import FormalResearch.RiemannHypothesis.SourceDualSupport
+
+import FormalResearch.RiemannHypothesis.SourceDualRotation
+
+import FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport
+
+import FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures
+
+import FormalResearch.RiemannHypothesis.CompensatedReadout
+
+import FormalResearch.RiemannHypothesis.SourceDualLocalization
+
+import FormalResearch.RiemannHypothesis.SourceDualTransport
+
+import FormalResearch.RiemannHypothesis.SourceArithmeticOrbit
+
+import FormalResearch.RiemannHypothesis.SourcePureRotationObstruction
+
+import FormalResearch.RiemannHypothesis.SourceScaleL2Continuity
+
+import FormalResearch.RiemannHypothesis.SourceOrbitCoordinates
+
+import FormalResearch.RiemannHypothesis.SourceScaleDerivative
+
+import FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm
+
+import FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+
+import FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel
+
+import FormalResearch.RiemannHypothesis.SourceMangoldtAbel
+import FormalResearch.RiemannHypothesis.SourceSpatialDerivativeContinuity
+import FormalResearch.RiemannHypothesis.SourceCausalEnergy
+import FormalResearch.RiemannHypothesis.SourcePrimeMomentScale
+import FormalResearch.RiemannHypothesis.SourceContinuousHalfEnergy
+
+import FormalResearch.RiemannHypothesis.SourceMangoldtWorkScale
+import FormalResearch.RiemannHypothesis.SourceGreenKernel
+import FormalResearch.RiemannHypothesis.SourceMangoldtInteraction
+
+import FormalResearch.RiemannHypothesis.SourceMangoldtStorage
+import FormalResearch.RiemannHypothesis.SourceMangoldtInteractionFourier
+import FormalResearch.RiemannHypothesis.SourceMangoldtNorm
+
+import FormalResearch.RiemannHypothesis.SourceHigherPrimePowerCoefficients
+import FormalResearch.RiemannHypothesis.SourceHigherPrimePowerStorage
+
+import FormalResearch.RiemannHypothesis.SourcePairedPrimeWork
+import FormalResearch.RiemannHypothesis.SourcePairedPrimeAverages
+import FormalResearch.RiemannHypothesis.SourcePairedContrastResidual
+
+import FormalResearch.RiemannHypothesis.SourcePairedTailTest
+import FormalResearch.RiemannHypothesis.SourcePairedTailQuadrature
+import FormalResearch.RiemannHypothesis.SourcePairedTailPrimeBlock
+
+import FormalResearch.RiemannHypothesis.SourcePrimeSquareTailWork
+
+import FormalResearch.RiemannHypothesis.SourcePairedSquareQuadrature
+import FormalResearch.RiemannHypothesis.SourcePairedSquareMainTerm
+
+import FormalResearch.RiemannHypothesis.SourcePhaseSignGeometry
+
+import FormalResearch.RiemannHypothesis.SourcePhaseMassFTC
+import FormalResearch.RiemannHypothesis.SourcePhasePolynomialBudget
+import FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+
+import FormalResearch.RiemannHypothesis.SourcePrimitiveBaseline
+
+import FormalResearch.RiemannHypothesis.SourceCriticalRemovedPrimeWork
+import FormalResearch.RiemannHypothesis.SourceCriticalDensityQuadrature
+import FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+import FormalResearch.RiemannHypothesis.SourceCriticalSecondAbel
+import FormalResearch.RiemannHypothesis.SourceCriticalGreenTent
+
+import FormalResearch.RiemannHypothesis.SourcePrimitiveCriticalMoment
+import FormalResearch.RiemannHypothesis.SourceCriticalDecayWork
+
+/-!
+# Riemann Hypothesis
+
+Exact target comparisons, zero symmetries, equivalent formulations, and scoped
+inference guards. No theorem asserting the Riemann Hypothesis is supplied.
+-/
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Defect.Variant0b97966df98057d777f60bcfcd50a9405033bef14a09ba6d28c6b80d6200b0a4
+
+```

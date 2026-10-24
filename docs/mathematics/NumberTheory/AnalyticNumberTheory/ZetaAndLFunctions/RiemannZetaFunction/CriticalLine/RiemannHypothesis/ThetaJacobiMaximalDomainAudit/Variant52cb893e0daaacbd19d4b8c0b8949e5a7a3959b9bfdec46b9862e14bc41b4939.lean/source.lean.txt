@@ -1,0 +1,85 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaJacobiMaximalDomain.Variante3f05acb67bade45e32549db68a3871c2d45cfd73c8228e61bdcafb0302e321d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e3f05acb67bade45e32549db68a3871c2d45cfd73c8228e61bdcafb0302e321d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ThetaJacobiMaximalDomain.Variante3f05acb67bade45e32549db68a3871c2d45cfd73c8228e61bdcafb0302e321d","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e3f05acb67bade45e32549db68a3871c2d45cfd73c8228e61bdcafb0302e321d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/hankel-reflection/theta/ThetaJacobiMaximalDomainAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ThetaJacobiMaximalDomain
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ThetaJacobiMaximalDomain.Variante3f05acb67bade45e32549db68a3871c2d45cfd73c8228e61bdcafb0302e321d
+
+set_option autoImplicit false
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression_zero
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression_succ
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression_succ
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.standard_zero_inner
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.standard_zero_inner
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.standard_succ_inner
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.standard_succ_inner
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiOperator_coordinate
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiOperator_coordinate
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression_memℓp_of_mem_domain
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiExpression_memℓp_of_mem_domain
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.standard_inner_of_expression_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.standard_inner_of_expression_eq
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.core_inner_of_expression_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.core_inner_of_expression_eq
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.domain_inner_of_expression_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.domain_inner_of_expression_eq
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_domain_of_expression_eq
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_domain_of_expression_eq
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_domain_of_jacobiExpression_memℓp
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_domain_of_jacobiExpression_memℓp
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_jacobiDomain_iff_memℓp_expression
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_jacobiDomain_iff_memℓp_expression
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientDomain
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientDomain
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_coefficientDomain_iff
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_coefficientDomain_iff
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientDomain_eq_jacobiDomain
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientDomain_eq_jacobiDomain
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_jacobiDomain_iff_summable_norm_sq
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_jacobiDomain_iff_summable_norm_sq
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientAction
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientAction
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientAction_apply
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientAction_apply
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientOperator
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientOperator
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientOperator_eq_jacobiOperator
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientOperator_eq_jacobiOperator
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientOperator_isSelfAdjoint
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.coefficientOperator_isSelfAdjoint
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_jacobiGraph_iff_expression
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.mem_jacobiGraph_iff_expression
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiOperator_eq_expression_vector
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.jacobiOperator_eq_expression_vector
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.rawPoint_mem_coefficientDomain
+#print axioms FormalResearch.RiemannHypothesis.ThetaJacobiMaximalDomain.rawPoint_mem_coefficientDomain

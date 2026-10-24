@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualDoubleMixedStrictWindowChallengeAuditProofsordinary.Variant908012516d8f1849b67475470fb301e4044585c1a0b721cc1e00bb4a3a5da8ae
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f3e1f0ac51de885aa32cafc2e3bf1a23036ddc88` · SHA-256 `e5a7ed3a071cdea812f77966adb1886dd0adf852fd90702d03f0349c23abf64b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualDoubleMixedStrictWindowChallenge.Variant1d899e6336cc8d7e5b8bdbc22800e8d3f9f6d8aa050be02d5902136205784be8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1d899e6336cc8d7e5b8bdbc22800e8d3f9f6d8aa050be02d5902136205784be8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualDoubleMixedStrictWindowChallenge.Variant1d899e6336cc8d7e5b8bdbc22800e8d3f9f6d8aa050be02d5902136205784be8","mathematical_subject":"Foundations.Unclassified","original_sha256":"1d899e6336cc8d7e5b8bdbc22800e8d3f9f6d8aa050be02d5902136205784be8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualDoubleMixedStrictWindowChallengeAuditProofsordinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualDoubleMixedStrictWindowChallenge
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualDoubleMixedStrictWindowChallenge.Variant1d899e6336cc8d7e5b8bdbc22800e8d3f9f6d8aa050be02d5902136205784be8
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.actualMixed_rectangle_correlation_lower
+#print RH16IndependentChallengeNext.actualDoubleMixed_firstColumn_kernel_lower
+#print RH16IndependentChallengeNext.actualMixed_rectangle_exp_prefactor_lower
+#print RH16IndependentChallengeNext.actualDoubleMixed_rectangle_density_lower
+#print RH16IndependentChallengeNext.actualDoubleMixed_rectangle_strict_support
+#print RH16IndependentChallengeNext.actualMixed_firstColumn_not_curvature_only
+```

@@ -1,0 +1,12 @@
+import ActualSamplingConstant
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print ContinuousResearch.ActualSamplingConstant.coefficientWeight_zero_unit_integral
+#print ContinuousResearch.ActualSamplingConstant.coefficientWeight_zero_split
+#print ContinuousResearch.ActualSamplingConstant.riemannZeta_half_real_euler
+#print ContinuousResearch.ActualSamplingConstant.real_euler_integral_eq
+#print ContinuousResearch.ActualSamplingConstant.samplingAlpha0_eq_riemannZeta_half_re

@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant6cb77bf3a544b2635b1554d82dbaa42f531688f2ce347459eaf727d7e3912b7f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b0ff4290413d622ac2a27cc2080c0c4484d2fdf2` · SHA-256 `6cb77bf3a544b2635b1554d82dbaa42f531688f2ce347459eaf727d7e3912b7f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFarPeriodicBudget
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_zero_right
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_zero_right
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_eq_log
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_eq_log
+```

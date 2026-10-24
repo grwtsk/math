@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant463136fa19318d15402dc015f262e87819022de7f79df0b65192b15cf81afb6a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `902bd298cba5aa35b8241f36b0e5fc180b3c7250` · SHA-256 `fcf81b4d3fc184bb0e7221304703fdf22e8eb086b69ff73b69c0ef8a7166cb4e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiContinuousFrontier.Variant55db7906db2378649538a0df378dcdded29e83a6fa4a06d121177a5568c74185","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"55db7906db2378649538a0df378dcdded29e83a6fa4a06d121177a5568c74185","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPsiContinuousFrontier.Variant55db7906db2378649538a0df378dcdded29e83a6fa4a06d121177a5568c74185","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"55db7906db2378649538a0df378dcdded29e83a6fa4a06d121177a5568c74185","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/psi-continuous-frontier/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPsiContinuousFrontier
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiContinuousFrontier.Variant55db7906db2378649538a0df378dcdded29e83a6fa4a06d121177a5568c74185
+
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_zero_below_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_zero_below_one
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_at_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_at_one
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementary_derivative_integrable_positive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementary_derivative_integrable_positive
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.literal_L_sub_plain_eq_positive_Abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.literal_L_sub_plain_eq_positive_Abel
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousPairing
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousPairing
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_eq_psi_continuous_add_factorial
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_eq_psi_continuous_add_factorial
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_sub_psi_continuous_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_sub_psi_continuous_abs_le
+```

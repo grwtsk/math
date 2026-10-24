@@ -1,0 +1,125 @@
+# Complete source: GRWTSK.NumberTheory.ElementaryNumberTheory.GodelBetaFunction.Variant36e352f9d0dd8a997fc216fc5f26d4ec4f03516a1965614c7d352592a914aa91
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `68bd7e3e60920361d6cb515fab9aea764f0a3e05` · SHA-256 `9a3e9953be2e9291bba41acfb287fe7dde68e3c76414a2c6382dd2bb597ee67f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.ElementaryNumberTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.ElementaryNumberTheory.CoprimeMulSucc.Variante29e9df1e9f29bc7daf71f88202062add1f4a3070189a59c31e05dc3ff2c1873","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e29e9df1e9f29bc7daf71f88202062add1f4a3070189a59c31e05dc3ff2c1873","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.PrimeArithmetic.SourceCorpus.CoprimeMulSucc.Variante29e9df1e9f29bc7daf71f88202062add1f4a3070189a59c31e05dc3ff2c1873","mathematical_subject":"NumberTheory.PrimeArithmetic","original_sha256":"e29e9df1e9f29bc7daf71f88202062add1f4a3070189a59c31e05dc3ff2c1873","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Logic/Godel/GodelBetaFunction.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Shogo Saito. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Shogo Saito. Adapted for mathlib by Hunter Monroe
+-/
+module
+
+public import Mathlib.Data.Nat.ModEq
+public import Mathlib.Data.Nat.ChineseRemainder
+public import Mathlib.Data.Nat.Prime.Defs
+public import Mathlib.Data.Nat.Pairing
+public import Mathlib.Order.Fin.Basic
+public import Mathlib.Data.Finset.Lattice.Fold
+public import Mathlib.Data.Fintype.Basic
+public import Mathlib.Data.Nat.Factorial.Basic
+
+/-!
+# Gödel's Beta Function Lemma
+
+This file proves Gödel's Beta Function Lemma, used to prove the First Incompleteness Theorem. It
+permits quantification over finite sequences of natural numbers in formal theories of arithmetic.
+This Beta Function has no connection with the unrelated Beta Function defined in analysis. Note
+that `Nat.beta` and `Nat.unbeta` provide similar functionality to `Encodable.encodeList` and
+`Encodable.decodeList`. We define these separately, because it is easier to prove that `Nat.beta`
+and `Nat.unbeta` are arithmetically definable, and this is hard to prove that for
+`Encodable.encodeList` and `Encodable.decodeList` directly. The arithmetic
+definability is needed for the proof of the First Incompleteness Theorem.
+
+## Main result
+
+- `beta_unbeta_coe`: Gödel's Beta Function Lemma.
+
+## Implementation note
+
+This code is a step towards eventually including a proof of Gödel's First Incompleteness Theorem
+and other key results from the repository https://github.com/iehality/lean4-logic.
+
+## References
+
+* [R. Kaye, *Models of Peano arithmetic*][kaye1991]
+* <https://en.wikipedia.org/wiki/G%C3%B6del%27s_%CE%B2_function>
+
+## Tags
+
+Gödel, beta function
+-/
+
+
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.CoprimeMulSucc.Variante29e9df1e9f29bc7daf71f88202062add1f4a3070189a59c31e05dc3ff2c1873
+
+@[expose] public section
+
+namespace Nat
+
+lemma coprime_mul_succ {n m a} (ha : m - n ∣ a) : Coprime (n * a + 1) (m * a + 1) :=
+  Nat.coprime_of_dvd fun p pp hn hm => by
+    have : p ∣ (m - n) * a := by
+      simpa [Nat.succ_sub_succ, ← Nat.mul_sub_right_distrib] using
+        Nat.dvd_sub hm hn
+    have : p ∣ a := by
+      rcases (Nat.Prime.dvd_mul pp).mp this with (hp | hp)
+      · exact Nat.dvd_trans hp ha
+      · exact hp
+    apply pp.ne_one
+    simpa [Nat.add_sub_cancel_left] using Nat.dvd_sub hn (this.mul_left n)
+
+variable {m : ℕ}
+
+private def supOfSeq (a : Fin m → ℕ) : ℕ := max m (Finset.sup .univ a) + 1
+
+private def coprimes (a : Fin m → ℕ) : Fin m → ℕ := fun i => (i + 1) * (supOfSeq a)! + 1
+
+private lemma coprimes_lt (a : Fin m → ℕ) (i) : a i < coprimes a i := by
+  have h₁ : a i < supOfSeq a :=
+    Nat.lt_add_one_iff.mpr (le_max_of_le_right <| Finset.le_sup (by simp))
+  have h₂ : supOfSeq a ≤ (i + 1) * (supOfSeq a)! + 1 :=
+    le_trans (self_le_factorial _) (le_trans (Nat.le_mul_of_pos_left (supOfSeq a)! (succ_pos i))
+      (le_add_right _ _))
+  simpa only [coprimes] using lt_of_lt_of_le h₁ h₂
+
+open scoped Function in -- required for scoped `on` notation
+private lemma pairwise_coprime_coprimes (a : Fin m → ℕ) : Pairwise (Coprime on coprimes a) := by
+  intro i j hij
+  wlog! ltij : i < j
+  · exact (this a hij.symm (lt_of_le_of_ne ltij hij.symm)).symm
+  unfold Function.onFun coprimes
+  have hja : j < supOfSeq a := lt_of_lt_of_le j.prop (le_succ_of_le (le_max_left _ _))
+  exact coprime_mul_succ
+    (Nat.dvd_factorial (by lia)
+      (by simpa only [Nat.succ_sub_succ] using le_of_lt (lt_of_le_of_lt (sub_le j i) hja)))
+
+/-- Gödel's Beta Function. This is similar to `(Encodable.decodeList)[i]`, but it is easier to
+prove that it is arithmetically definable. -/
+def beta (n i : ℕ) : ℕ := n.unpair.1 % ((i + 1) * n.unpair.2 + 1)
+
+/-- Inverse of Gödel's Beta Function. This is similar to `Encodable.encodeList`, but it is easier
+to prove that it is arithmetically definable. -/
+@[no_expose] def unbeta (l : List ℕ) : ℕ :=
+  (chineseRemainderOfFinset (ι := Fin l.length) (l[·]) (coprimes (l[·])) Finset.univ
+    (by simp [coprimes])
+    (by simpa using Set.pairwise_univ.mpr (pairwise_coprime_coprimes _)) : ℕ).pair
+  (supOfSeq (m := l.length) (l[·]))!
+
+/-- **Gödel's Beta Function Lemma** -/
+lemma beta_unbeta_coe (l : List ℕ) (i : Fin l.length) : beta (unbeta l) i = l[i] := by
+  simpa [beta, unbeta, coprimes] using mod_eq_of_modEq
+    ((chineseRemainderOfFinset (l[·]) (coprimes (l[·])) Finset.univ
+      (by simp [coprimes])
+      (by simpa using Set.pairwise_univ.mpr (pairwise_coprime_coprimes _))).prop i (by simp))
+    (coprimes_lt _ _)
+
+end Nat
+```

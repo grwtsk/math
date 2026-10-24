@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variant5103a803d07794a3e6f24cb2309f89de9e73646320bcdbe49fb45430a1df02d1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `37dcddb6ab9147b6035e1834b4ce7a2a781aa182` · SHA-256 `5103a803d07794a3e6f24cb2309f89de9e73646320bcdbe49fb45430a1df02d1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualLogColumnTransport
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actualLogColumnPrefix_ae_physical_cell
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actualLogColumnPrefix_ae_log_cell
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actual_continuous_physical_cell_log_transport
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actual_finite_log_prefix_transport
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actual_finite_physical_prefix_transport
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actualLogColumnPrefix_mul_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actual_physical_mixed_cell_log_transport
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.jointMangoldtTestProfile_deriv_eq_log_prefix
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.jointMangoldtErrorWork_eq_log_prefix
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.actual_column_window_nonempty
+#print FormalResearch.RiemannHypothesis.SourceActualLogColumnTransport.jointMangoldtErrorWork_eq_log_prefix_all_real
+```

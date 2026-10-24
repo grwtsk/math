@@ -1,0 +1,88 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeSignedBudgetApplicationsAudit.Variant368c5294086ba86f62e933b5ec950290d1472343b13531d7d98c688e4effcd61
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b623d9049f4dd83acf6982a689b216a8026e41b6` · SHA-256 `359f319f9ca8c949863ae6e228cff2331ce8c329a4c45afb3f711a7302a51121`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeSignedBudgetApplications.Variant7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceNativeSignedBudgetApplications.Variant7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-signed-cycle-20261006/root/independent-SourceNativeSignedBudgetApplicationsAudit-1791329388344659000/SourceNativeSignedBudgetApplicationsAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceNativeSignedBudgetApplications
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeSignedBudgetApplications.Variant7e049e8f60589fbd69c670219c52ade8c31a73774a5259c3a59d07e0ad54ba08
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+
+namespace FormalResearch.RiemannHypothesis.SourceNativeSignedBudgetApplications
+
+#check @correctedNativeHead
+#print correctedNativeHead
+#print axioms correctedNativeHead
+
+#check @correctedNativeHead_eq_head_sub_constant
+#print correctedNativeHead_eq_head_sub_constant
+#print axioms correctedNativeHead_eq_head_sub_constant
+
+#check @correctedNativeHead_tail_norm
+#print correctedNativeHead_tail_norm
+#print axioms correctedNativeHead_tail_norm
+
+#check @correctedNativeHead_growing_tail_norm
+#print correctedNativeHead_growing_tail_norm
+#print axioms correctedNativeHead_growing_tail_norm
+
+#check @correctedNativeHead_growing_tail_abs
+#print correctedNativeHead_growing_tail_abs
+#print axioms correctedNativeHead_growing_tail_abs
+
+#check @all_real_lower_of_native_head
+#print all_real_lower_of_native_head
+#print axioms all_real_lower_of_native_head
+
+#check @leading_of_native_head_at_receiving_radius
+#print leading_of_native_head_at_receiving_radius
+#print axioms leading_of_native_head_at_receiving_radius
+
+#check @all_real_lower_of_native_compensated
+#print all_real_lower_of_native_compensated
+#print axioms all_real_lower_of_native_compensated
+
+#check @leading_of_native_compensated
+#print leading_of_native_compensated
+#print axioms leading_of_native_compensated
+
+#check @residual_upper_of_correctedNativeHead
+#print residual_upper_of_correctedNativeHead
+#print axioms residual_upper_of_correctedNativeHead
+
+#check @all_real_lower_of_correctedNativeHead
+#print all_real_lower_of_correctedNativeHead
+#print axioms all_real_lower_of_correctedNativeHead
+
+#check @leading_of_correctedNativeHead_at_receiving_radius
+#print leading_of_correctedNativeHead_at_receiving_radius
+#print axioms leading_of_correctedNativeHead_at_receiving_radius
+
+#check @estimate_of_correctedNativeHead
+#print estimate_of_correctedNativeHead
+#print axioms estimate_of_correctedNativeHead
+
+#check @residual_upper_of_literal_compensated_head
+#print residual_upper_of_literal_compensated_head
+#print axioms residual_upper_of_literal_compensated_head
+
+#check @all_real_lower_of_literal_compensated_head
+#print all_real_lower_of_literal_compensated_head
+#print axioms all_real_lower_of_literal_compensated_head
+
+#check @leading_of_literal_compensated_head_at_receiving_radius
+#print leading_of_literal_compensated_head_at_receiving_radius
+#print axioms leading_of_literal_compensated_head_at_receiving_radius
+
+end FormalResearch.RiemannHypothesis.SourceNativeSignedBudgetApplications
+```

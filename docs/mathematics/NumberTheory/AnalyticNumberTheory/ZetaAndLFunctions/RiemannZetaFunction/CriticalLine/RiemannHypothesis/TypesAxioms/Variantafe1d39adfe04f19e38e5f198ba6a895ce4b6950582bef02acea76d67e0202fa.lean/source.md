@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantafe1d39adfe04f19e38e5f198ba6a895ce4b6950582bef02acea76d67e0202fa
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e8fcdcf50f3294da5d85dbed2c3d2d5710e8f09e` · SHA-256 `4ab5370f61444830d67f370145c4ad3bfdea80f7d775187c049863b99987fe46`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.Variant526cc0bc05d0ec2c1a7c12c3c4e8d50a55e977e2caebcc5eceaae1c3e3238116","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"526cc0bc05d0ec2c1a7c12c3c4e8d50a55e977e2caebcc5eceaae1c3e3238116","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualStrictRightKernelNegativeSequence.Variant526cc0bc05d0ec2c1a7c12c3c4e8d50a55e977e2caebcc5eceaae1c3e3238116","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"526cc0bc05d0ec2c1a7c12c3c4e8d50a55e977e2caebcc5eceaae1c3e3238116","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/ActualStrictRightKernelNegativeSequence-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualStrictRightKernelNegativeSequence
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.Variant526cc0bc05d0ec2c1a7c12c3c4e8d50a55e977e2caebcc5eceaae1c3e3238116
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMode
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMode
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMellin_re
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMellin_re
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_eq
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_square_re
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_square_re
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightSequence_phase
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightSequence_phase
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_scaled_real_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_scaled_real_tendsto
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_eventually_negative
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_eventually_negative
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_negative_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_negative_beyond
+```

@@ -1,0 +1,119 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SamplingMaintainedAudit.Variantbdc8d64e5ae1f49d59690d452711481c02b682696e03c74f83394855bd435179
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7d50f00be1b5e2d2087ecd36956c0f25ddc9ba5d` · SHA-256 `bdc8d64e5ae1f49d59690d452711481c02b682696e03c74f83394855bd435179`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourcePositiveSampling
+import FormalResearch.RiemannHypothesis.SourceSamplingRemainder
+import FormalResearch.RiemannHypothesis.SourceSamplingPointwise
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_eq_of_pos
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_eq_of_pos
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_eq_of_pos
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_eq_of_pos
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_eq_log_mul
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_eq_log_mul
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_zero_below
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_zero_below
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_zero_above
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_zero_above
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_hasCompactSupport
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_hasCompactSupport
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_contDiff
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_contDiff
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_hasDerivAt
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_hasDerivAt
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_integrable
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_integrable
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_positive_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_positive_integral_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_positive_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_positive_integral_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_integral_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_integral_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_cutoff_tail
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.plainProfile_cutoff_tail
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_cutoff_tail
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.logProfile_cutoff_tail
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.unextended_plain_unit_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.unextended_plain_unit_at_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourcePositiveSampling.zero_extension_unit_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourcePositiveSampling.zero_extension_unit_at_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.plainModelDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.plainModelDerivative
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.logModelDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.logModelDerivative
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.samplingDerivative_prefactor
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.samplingDerivative_prefactor
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.plain_derivative_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.plain_derivative_difference
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.log_derivative_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.log_derivative_difference
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.plain_derivative_difference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.plain_derivative_difference_abs_le
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingRemainder.log_derivative_difference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingRemainder.log_derivative_difference_abs_le
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingPointwise.sourcePlainSamplingMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingPointwise.sourcePlainSamplingMainTerm
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingPointwise.sourceLogSamplingMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingPointwise.sourceLogSamplingMainTerm
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingPointwise.plain_model_integral_eq_mainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingPointwise.plain_model_integral_eq_mainTerm
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingPointwise.log_model_integral_eq_mainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingPointwise.log_model_integral_eq_mainTerm
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingPointwise.plainProfile_sum_sub_mainTerm_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingPointwise.plainProfile_sum_sub_mainTerm_abs_le
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingPointwise.logProfile_sum_sub_mainTerm_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingPointwise.logProfile_sum_sub_mainTerm_abs_le
+```

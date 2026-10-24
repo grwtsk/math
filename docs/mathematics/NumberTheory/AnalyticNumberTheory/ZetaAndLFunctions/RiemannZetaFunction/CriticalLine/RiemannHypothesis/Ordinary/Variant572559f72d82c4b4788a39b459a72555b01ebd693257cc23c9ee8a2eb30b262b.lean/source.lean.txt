@@ -1,0 +1,23 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalBoundaryBalance.Variantdca534262176c5dc7ac40fc612b56705c710cc4ce4b245533cc821e59264b7c2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dca534262176c5dc7ac40fc612b56705c710cc4ce4b245533cc821e59264b7c2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePhysicalBoundaryBalance.Variantdca534262176c5dc7ac40fc612b56705c710cc4ce4b245533cc821e59264b7c2","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"dca534262176c5dc7ac40fc612b56705c710cc4ce4b245533cc821e59264b7c2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/source-readbacks/owner-ignored-latest-20261007T154040Z/preserved/scratch/confluence/cycle29/root/boundary8-held-audits-v2/Ordinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourcePhysicalBoundaryBalance
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalBoundaryBalance.Variantdca534262176c5dc7ac40fc612b56705c710cc4ce4b245533cc821e59264b7c2
+
+set_option autoImplicit false
+set_option pp.proofs true
+set_option pp.explicit true
+set_option pp.universes true
+
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.typeTwoSource_eq_negative_physicalRows
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.signed_physicalDeletedRows_eq_negative_rawDiagonal
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.centeredDeletedDiagonal_eq_signed_physical_payment
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.mertensResidual_eq_short_add_signed_column_sub_strip
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.divisorRemainder_eq_column_strip_and_sampling_payments
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.jointSignedRemainder_eq_physical_boundary_payments
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.short_add_signed_column_sub_strip_eq_closedPrimeMoment
+#print FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance.generic_zero_cutoff_long_beta_unit_fails

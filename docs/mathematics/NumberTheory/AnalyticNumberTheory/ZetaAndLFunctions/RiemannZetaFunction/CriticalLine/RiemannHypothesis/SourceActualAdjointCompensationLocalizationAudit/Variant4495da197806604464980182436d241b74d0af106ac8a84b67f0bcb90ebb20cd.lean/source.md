@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointCompensationLocalizationAudit.Variant4495da197806604464980182436d241b74d0af106ac8a84b67f0bcb90ebb20cd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3b9c6ac63ea17338052d06f3b310a05d3aca23ac` · SHA-256 `d25b8c8f37e796950bae2eea5344da348c20656d9c4dcd431628319388e6941a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointCompensationLocalization.Variant47a0042a922f46a2c04e6b020e410dd29c0786a388f64bf8c81957ca519c760b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"47a0042a922f46a2c04e6b020e410dd29c0786a388f64bf8c81957ca519c760b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAdjointCompensationLocalization.Variant47a0042a922f46a2c04e6b020e410dd29c0786a388f64bf8c81957ca519c760b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"47a0042a922f46a2c04e6b020e410dd29c0786a388f64bf8c81957ca519c760b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T214426Z-1791323066932825000/SourceActualAdjointCompensationLocalizationAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAdjointCompensationLocalization
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointCompensationLocalization.Variant47a0042a922f46a2c04e6b020e410dd29c0786a388f64bf8c81957ca519c760b
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.actualUpperAdjointInterior
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.actualUpperAdjointInterior
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.actualRetainedCompensationRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.actualRetainedCompensationRemainder
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.actualAdjointInterior_eq_lower_add_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.actualAdjointInterior_eq_lower_add_upper
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.compensatedJointWork_eq_retained_add_lowerStrip
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.compensatedJointWork_eq_retained_add_lowerStrip
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.compensatedJointWork_sub_retained_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization.compensatedJointWork_sub_retained_abs_le
+```

@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Ordinary39.Variant556e3fc8f49f552156a71af1e7017e130286b260f17b00601a932c6166e06f87
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1b183193f7945712567444ed691f6da6920b8e12` · SHA-256 `556e3fc8f49f552156a71af1e7017e130286b260f17b00601a932c6166e06f87`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualMixedWorkFubini
+
+set_option pp.universes true
+set_option pp.fullNames true
+set_option pp.width 1000000
+set_option pp.maxSteps 10000000
+
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualTimeProfile
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualReflectedProfile
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualMixedWorkDensity
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualWorkWindow
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.discreteOverlapWindow
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualWorkLeftStrip
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualMixedWorkDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_density
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualMixedWorkDensity_zero_outside_window
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_window_integral
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.discreteOverlapWindow_subset_actualWorkWindow
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualWorkLeftStrip_eq_Ico_inter
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_overlap_add_leftStrip
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.strictColumnInterior_eq_baseline_sub_localized_work
+#print FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.covariance_sub_main_eq_localized_work_with_endpoint
+```

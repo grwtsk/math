@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfZetaReductionPrintRepairV2.Variant4fc5f99a8ee2dc9ecb9b94434df7fba864d1833af8357332a46f6ce9a6bd278b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `865ca94da0fa4418f322dc63d56fcf36f8771870` · SHA-256 `1ec8b090a994fe93079f27dd07c7727818ae877dc0d01e2f2b75abb37e1bb79b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.Variant86e06f19f9d0ab02c95e8a43178e1f0b8172bd926c5f80905df31c827efedde0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"86e06f19f9d0ab02c95e8a43178e1f0b8172bd926c5f80905df31c827efedde0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCenteredHalfZetaReduction.Variant86e06f19f9d0ab02c95e8a43178e1f0b8172bd926c5f80905df31c827efedde0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"86e06f19f9d0ab02c95e8a43178e1f0b8172bd926c5f80905df31c827efedde0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-root/SourceActualCenteredHalfZetaReductionPrintRepairV2.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCenteredHalfZetaReduction
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.Variant86e06f19f9d0ab02c95e8a43178e1f0b8172bd926c5f80905df31c827efedde0
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredHalfZetaMain
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredHalfZetaMain
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.halfHarmonicQuotientDefect_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_eq
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction.actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+```

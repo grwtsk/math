@@ -1,0 +1,15 @@
+import SourceFourNineSampling
+set_option linter.hashCommand false
+#check RH16FourNineSampling.shortLog_error_le_of_sampling_error_four_nine
+#print axioms RH16FourNineSampling.shortLog_error_le_of_sampling_error_four_nine
+#check RH16FourNineSampling.shortPlain_error_uniform_le_of_sampling_error_four_nine
+#print axioms RH16FourNineSampling.shortPlain_error_uniform_le_of_sampling_error_four_nine
+#check RH16FourNineSampling.actual_shortLog_error_tail_four_nine
+#print axioms RH16FourNineSampling.actual_shortLog_error_tail_four_nine
+#check RH16FourNineSampling.actual_shortPlain_error_tail_four_nine
+#print axioms RH16FourNineSampling.actual_shortPlain_error_tail_four_nine
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

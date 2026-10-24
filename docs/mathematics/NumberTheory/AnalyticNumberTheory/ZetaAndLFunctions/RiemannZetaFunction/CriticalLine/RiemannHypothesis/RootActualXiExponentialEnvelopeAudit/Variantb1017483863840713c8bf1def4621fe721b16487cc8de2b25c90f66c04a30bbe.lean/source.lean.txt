@@ -1,0 +1,27 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiExponentialEnvelope.Variant7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualXiExponentialEnvelope.Variant7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T002154Z-1791332514049406000/RootActualXiExponentialEnvelopeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualXiExponentialEnvelope
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiExponentialEnvelope.Variant7b7a299f3e2ccd7394a06a14c7a858026600e32a0e29414a90200ab2786bfc8e
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+#print FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn

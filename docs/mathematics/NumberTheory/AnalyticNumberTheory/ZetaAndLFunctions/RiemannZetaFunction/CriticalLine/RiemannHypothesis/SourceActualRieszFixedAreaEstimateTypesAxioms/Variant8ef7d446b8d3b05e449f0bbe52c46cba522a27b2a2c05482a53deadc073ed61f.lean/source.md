@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszFixedAreaEstimateTypesAxioms.Variant8ef7d446b8d3b05e449f0bbe52c46cba522a27b2a2c05482a53deadc073ed61f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eb0cd7f546aa0892d786c9f184f07c9145eb0246` · SHA-256 `8ef7d446b8d3b05e449f0bbe52c46cba522a27b2a2c05482a53deadc073ed61f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszFixedAreaEstimate
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedAreaEstimate.actualFixedCenteredMangoldtRiesz_area_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedAreaEstimate.actualFixedCenteredMangoldtRiesz_area_bound
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedAreaEstimate.actualResidual_fixed_center_area_paid_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedAreaEstimate.actualResidual_fixed_center_area_paid_bound
+#check FormalResearch.RiemannHypothesis.SourceActualRieszFixedAreaEstimate.actualResidual_fixed_center_quadratic_area_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszFixedAreaEstimate.actualResidual_fixed_center_quadratic_area_bound
+```

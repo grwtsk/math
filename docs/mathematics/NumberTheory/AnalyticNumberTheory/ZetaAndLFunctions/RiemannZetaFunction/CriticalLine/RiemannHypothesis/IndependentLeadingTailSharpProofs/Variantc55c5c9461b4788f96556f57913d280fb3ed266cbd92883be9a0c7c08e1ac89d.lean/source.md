@@ -1,0 +1,14 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentLeadingTailSharpProofs.Variantc55c5c9461b4788f96556f57913d280fb3ed266cbd92883be9a0c7c08e1ac89d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e06d6d23d6c5bf57a03dea494b8a5257587528ec` · SHA-256 `c55c5c9461b4788f96556f57913d280fb3ed266cbd92883be9a0c7c08e1ac89d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceLeadingTailQuantitative
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.fullKappaShortBudget_le_fifty_five
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.renormalized_tail_sub_actual_leading_abs_le_fifty_five
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.actual_leading_complete_pairing_sharp_comparisons
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.residual_sub_actual_leading_sub_zeta_abs_lt_sharp
+#print FormalResearch.RiemannHypothesis.SourceLeadingTailQuantitative.estimate_of_actual_leading_signed_tail_sharp
+```

@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalEndpointAuditInitial.Variant87fdc8651651c4a3e09ea15892945bbe9109aa2ecb923624a0963c8709a88d62
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `abe5ba0944470e71dee4882f330454fab09e0700` · SHA-256 `a05f9fc9dbc4bc92557ef57268fbc3dfdf91355daf062f79a3359a0c748e0661`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalEndpointConvolution.Variant747ea96eda6f6a01b86167f5b27ed610b6117a2bace56f939470fe0c20c660a4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"747ea96eda6f6a01b86167f5b27ed610b6117a2bace56f939470fe0c20c660a4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePhysicalEndpointConvolution.Variant747ea96eda6f6a01b86167f5b27ed610b6117a2bace56f939470fe0c20c660a4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"747ea96eda6f6a01b86167f5b27ed610b6117a2bace56f939470fe0c20c660a4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/xi-analysis/native-physical-endpoint-convolution/SourcePhysicalEndpointAudit-initial.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourcePhysicalEndpointConvolution
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePhysicalEndpointConvolution.Variant747ea96eda6f6a01b86167f5b27ed610b6117a2bace56f939470fe0c20c660a4
+
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.universes true
+set_option pp.maxDepth 100000
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.sourceCorrelation_eq_normalizedOverlap_filter
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.sourceCorrelation_eq_normalizedOverlap_filter
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.endpointQ
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.endpointQ
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.endpointPolynomial
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.endpointPolynomial
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.sourceCorrelation_endpoint_eq_polynomial
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.sourceCorrelation_endpoint_eq_polynomial
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.endpointPolynomial_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.endpointPolynomial_eq_convolution
+#check FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.sourceCorrelation_endpoint_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution.sourceCorrelation_endpoint_eq_convolution
+```

@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FixtureTypesAxioms14.Variant6125731a80a54d2e6c6a974d9a89a386638112099484a02e21fbde852b3817f6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `37047a35eafcadb9baf3ddd75687a3b5d99ba6d0` · SHA-256 `6125731a80a54d2e6c6a974d9a89a386638112099484a02e21fbde852b3817f6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceMixedCurvatureGramFixtures
+
+open FormalResearch.RiemannHypothesis.SourceMixedCurvatureGramFixtures
+
+#check empty_stationary_readout
+#print axioms empty_stationary_readout
+#check zero_weights_stationary_readout
+#print axioms zero_weights_stationary_readout
+#check singleton_actual_two_square_identity
+#print axioms singleton_actual_two_square_identity
+#check two_point_stationary_nonpos
+#print axioms two_point_stationary_nonpos
+#check arbitrary_signed_coefficients_nonpos
+#print axioms arbitrary_signed_coefficients_nonpos
+#check common_translation_preserves_stationary_readout
+#print axioms common_translation_preserves_stationary_readout
+#check actual_center_mixed_bracket_negative
+#print axioms actual_center_mixed_bracket_negative
+#check actual_opposite_cross_weight_positive
+#print axioms actual_opposite_cross_weight_positive
+#check actual_cross_readouts_have_both_signs
+#print axioms actual_cross_readouts_have_both_signs
+#check actual_reflected_curvature_sign_guard
+#print axioms actual_reflected_curvature_sign_guard
+#check strict_upper_support_mixed_bracket_zero
+#print axioms strict_upper_support_mixed_bracket_zero
+#check reflected_difference_is_not_sum
+#print axioms reflected_difference_is_not_sum
+#check reflected_sum_center_negative
+#print axioms reflected_sum_center_negative
+#check same_negative_coefficient_still_stationary_nonpos
+#print axioms same_negative_coefficient_still_stationary_nonpos
+```

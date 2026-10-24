@@ -1,0 +1,5 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.ChebyshevBudget
+#print FormalResearch.RiemannHypothesis.SourceComparison.ChebyshevBudget.prime_weight_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ChebyshevBudget.prime_weight_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ChebyshevBudget.prime_contribution_abs_le_weight_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.ChebyshevBudget.prime_contribution_abs_le

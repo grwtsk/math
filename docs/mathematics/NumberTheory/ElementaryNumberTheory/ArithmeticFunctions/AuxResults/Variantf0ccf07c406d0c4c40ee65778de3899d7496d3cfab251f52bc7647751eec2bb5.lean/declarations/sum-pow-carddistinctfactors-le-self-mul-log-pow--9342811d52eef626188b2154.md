@@ -1,0 +1,101 @@
+# sum_pow_cardDistinctFactors_le_self_mul_log_pow
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:eae11f00-c411-f7de-7ecf-f5e1ae6a1972",
+  "kind": "theorem",
+  "lexical_name": "sum_pow_cardDistinctFactors_le_self_mul_log_pow",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "sum-pow-carddistinctfactors-le-self-mul-log-pow--9342811d52eef626188b2154",
+  "source": {
+    "blob": "10d55acd9197d90dc9f0062eacd7e0056f0eb3af",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 280,
+    "line": 261,
+    "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/AuxResults/Variantf0ccf07c406d0c4c40ee65778de3899d7496d3cfab251f52bc7647751eec2bb5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:9342811d52eef626188b215432ff02093bd9b406b2b81d69d2d35e4b037d9dc1",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/AuxResults/Variantf0ccf07c406d0c4c40ee65778de3899d7496d3cfab251f52bc7647751eec2bb5.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:eae11f00-c411-f7de-7ecf-f5e1ae6a1972`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 261–280.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem sum_pow_cardDistinctFactors_le_self_mul_log_pow {P h : ℕ} (x : ℝ) (hx : 1 ≤ x)
+    (hP : Squarefree P) :
+    (∑ d ∈ P.divisors, if ↑d ≤ x then (h : ℝ) ^ ω d else (0 : ℝ)) ≤
+      x * (1 + Real.log x) ^ h := by
+  trans (∑ d ∈ P.divisors, x * if ↑d ≤ x then (h : ℝ) ^ ω d / d else (0 : ℝ))
+  · simp_rw [mul_ite, mul_zero, ←sum_filter]
+    gcongr with i hi
+    rw [div_eq_mul_inv, mul_comm _ (i:ℝ)⁻¹, ←mul_assoc]
+    trans (1*(h:ℝ)^ω i)
+    · rw [one_mul]
+    gcongr
+    rw [mem_filter] at hi
+    rw [←div_eq_mul_inv]
+    apply one_le_div (by norm_cast; apply Nat.pos_of_mem_divisors hi.1) |>.mpr hi.2
+  rw [←mul_sum];
+  gcongr
+  apply sum_pow_cardDistinctFactors_div_self_le_log_pow x hx hP
+
+
+end Aux
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/AuxResults/Variantf0ccf07c406d0c4c40ee65778de3899d7496d3cfab251f52bc7647751eec2bb5.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/AuxResults/Variantf0ccf07c406d0c4c40ee65778de3899d7496d3cfab251f52bc7647751eec2bb5.lean#L261).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `10d55acd9197d90dc9f0062eacd7e0056f0eb3af` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

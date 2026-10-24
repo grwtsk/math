@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Fc7d6d663a53b01f9c5af1bd1a18570bf2e0b3eba556200a4f6de6492b81a59eProofsQualified.Variantfc7d6d663a53b01f9c5af1bd1a18570bf2e0b3eba556200a4f6de6492b81a59e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ba620fb96ed5a5f8bf2a9b1f5bb348cb97abad04` · SHA-256 `fc7d6d663a53b01f9c5af1bd1a18570bf2e0b3eba556200a4f6de6492b81a59e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualShortMangoldtBlock
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualShortMangoldtBlock
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualLongMangoldtBlock
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualShortMangoldt_unweighted_eq_psi
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualCorrelation_short_lower
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualShortMangoldtBlock_ge_psi
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualPsi_square_eventually_lower
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualShortMangoldtBlock_eventually_linear_lower
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualResidual_eq_short_add_long
+#print FormalResearch.RiemannHypothesis.SourceActualShortMangoldtBlock.actualLongMangoldtBlock_eventually_below_residual_sub_linear
+```

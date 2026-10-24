@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant08a07e97e689dbeb520573c12c33abfc044150a558c00afc5fa68cf9f4b9175e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d451aa82aee1c3768c336b793c03e9e32d6b3d4d` · SHA-256 `08a07e97e689dbeb520573c12c33abfc044150a558c00afc5fa68cf9f4b9175e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFiniteMoebiusDirichlet
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actualFiniteMoebiusDirichlet
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actualFiniteMoebiusDirichlet
+#check FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actualFiniteMoebiusDirichlet_eq_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actualFiniteMoebiusDirichlet_eq_abel
+#check FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actualFiniteMoebiusDirichlet_abs_le_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actualFiniteMoebiusDirichlet_abs_le_one
+#check FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actual_vaughan_finiteDirichlet_abs_le_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet.actual_vaughan_finiteDirichlet_abs_le_one
+```

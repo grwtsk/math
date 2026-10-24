@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant5a8e92667c6cc87746412d04880173366a709af5469b583adde9c934303a7904
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `05f35321f444894145cca242115757f48eaf17fc` · SHA-256 `681b6ccb8ecceb9830a2271fd803dacb0ac8b89a3230d9b64faffbd38062bef5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceScaleL2Continuity.Variant7a0becbf06c3535a16a47bddca21fc107d320831598a1d36bc6259594d607d0f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7a0becbf06c3535a16a47bddca21fc107d320831598a1d36bc6259594d607d0f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceScaleL2Continuity.Variant7a0becbf06c3535a16a47bddca21fc107d320831598a1d36bc6259594d607d0f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7a0becbf06c3535a16a47bddca21fc107d320831598a1d36bc6259594d607d0f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle2/source-continuity/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceScaleL2Continuity
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceScaleL2Continuity.Variant7a0becbf06c3535a16a47bddca21fc107d320831598a1d36bc6259594d607d0f
+
+set_option linter.hashCommand false
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.scaleProfile_contDiffAt_joint
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.scaleProfile_contDiffAt_joint
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.normalizedSource_continuousOn_joint
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.normalizedSource_continuousOn_joint
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.crossSourceIntegral_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.crossSourceIntegral_continuousOn
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.actual_source_cross_inner
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.actual_source_cross_inner
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.actual_source_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.actual_source_continuousOn
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState_eq
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState_coe_ae
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState_coe_ae
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.originalSourceState_continuousOn
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.orbitAtom_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.orbitAtom_continuousOn
+#check FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.finiteProfile_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceScaleL2Continuity.finiteProfile_continuousOn
+```

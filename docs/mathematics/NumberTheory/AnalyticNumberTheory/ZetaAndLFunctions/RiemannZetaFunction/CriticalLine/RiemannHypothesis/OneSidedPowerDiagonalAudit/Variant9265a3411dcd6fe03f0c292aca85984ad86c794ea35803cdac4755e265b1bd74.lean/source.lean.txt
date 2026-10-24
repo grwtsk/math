@@ -1,0 +1,27 @@
+import SourceOneSidedPowerDiagonal
+
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.actual_correlation_positive_inner
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.actual_diagonalCorrelation_positive_inner
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.properLargePowerInventory
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.properLargePowerDiagonal
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.properLargePowerUpperBudget
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.actual_power_atom_one_sided
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.actual_proper_power_diagonal_upper
+set_option pp.all true in
+#check RH16OneSidedPowerDiagonal.properLargePowerUpperBudget_eq_filtered
+
+#print axioms RH16OneSidedPowerDiagonal.actual_correlation_positive_inner
+#print axioms RH16OneSidedPowerDiagonal.actual_diagonalCorrelation_positive_inner
+#print axioms RH16OneSidedPowerDiagonal.properLargePowerInventory
+#print axioms RH16OneSidedPowerDiagonal.properLargePowerDiagonal
+#print axioms RH16OneSidedPowerDiagonal.properLargePowerUpperBudget
+#print axioms RH16OneSidedPowerDiagonal.actual_power_atom_one_sided
+#print axioms RH16OneSidedPowerDiagonal.actual_proper_power_diagonal_upper
+#print axioms RH16OneSidedPowerDiagonal.properLargePowerUpperBudget_eq_filtered

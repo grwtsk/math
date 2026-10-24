@@ -1,0 +1,20 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantec56f1eb9595f56e2361970f30d0cf854d9b01dc60cf9d977ec1103e904df1e1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `942d2b2cacbbe0bb1498ead226a1cb17a9419941` · SHA-256 `ec56f1eb9595f56e2361970f30d0cf854d9b01dc60cf9d977ec1103e904df1e1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiFloorSignBlocks
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actualPsiFloorDiscrepancy
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_on_six_block
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_on_nineteen_block
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_negative_block
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_positive_block
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_unit
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_not_nonnegative
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorSignBlocks.actual_psi_floor_not_nonpositive
+```

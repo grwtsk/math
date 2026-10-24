@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.0efd2066dbe4343ccc6fbdd8381c5609c67572d2b4ccf25e89faec20668cd193SourceActualZero.Variant0efd2066dbe4343ccc6fbdd8381c5609c67572d2b4ccf25e89faec20668cd193
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd713bd1b4b0a9f3ad442d3a27a72de4e242ec12` · SHA-256 `0efd2066dbe4343ccc6fbdd8381c5609c67572d2b4ccf25e89faec20668cd193`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualZeroNormalizedCancellation
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_norm_bound
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualInitialPrimeMellin_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualCarrierMellin_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualZeroHeightHead_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualFullZeroContribution_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualSourceQuadraticValue_scaled_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualZeroNormalizedCancellation.actualMertensResidual_scaled_tendsto_zero
+```

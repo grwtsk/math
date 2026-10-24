@@ -1,0 +1,76 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CompleteDivisorRadiusAudit.Variant51d5327250e9950a3513b0cce9893ecf302f9ccc250bc289ec9dd1b12f98e2ef
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `66bcbfc728ad3d50e23ccea14accdd314a52cc5f` · SHA-256 `971567cfb4057844a37d24caf8a75cce59255b66e7f1ed59d008ed2bac10aebe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteDivisorRadiusTailReturn.Variant4b972bf30d98a970f6e2b7cabaea7af70ff098bf24729fdc4026f9263c8c40ee","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4b972bf30d98a970f6e2b7cabaea7af70ff098bf24729fdc4026f9263c8c40ee","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCompleteDivisorRadiusTailReturn.Variant4b972bf30d98a970f6e2b7cabaea7af70ff098bf24729fdc4026f9263c8c40ee","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4b972bf30d98a970f6e2b7cabaea7af70ff098bf24729fdc4026f9263c8c40ee","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-joint/tail-return/CompleteDivisorRadiusAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteDivisorRadiusTailReturn
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteDivisorRadiusTailReturn.Variant4b972bf30d98a970f6e2b7cabaea7af70ff098bf24729fdc4026f9263c8c40ee
+
+open FormalResearch.RiemannHypothesis.SourceShortSamplingPointwise
+open FormalResearch.RiemannHypothesis.SourceSamplingLedger
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+
+#check RH16CompleteDivisorRadiusTailReturn.actualBeta
+#print RH16CompleteDivisorRadiusTailReturn.actualBeta
+#print axioms RH16CompleteDivisorRadiusTailReturn.actualBeta
+
+#check RH16CompleteDivisorRadiusTailReturn.radiusSamplingBudget
+#print RH16CompleteDivisorRadiusTailReturn.radiusSamplingBudget
+#print axioms RH16CompleteDivisorRadiusTailReturn.radiusSamplingBudget
+
+#check RH16CompleteDivisorRadiusTailReturn.radiusCompleteBlockTailBudget
+#print RH16CompleteDivisorRadiusTailReturn.radiusCompleteBlockTailBudget
+#print axioms RH16CompleteDivisorRadiusTailReturn.radiusCompleteBlockTailBudget
+
+#check RH16CompleteDivisorRadiusTailReturn.radiusSamplingBudget_eq
+#print RH16CompleteDivisorRadiusTailReturn.radiusSamplingBudget_eq
+#print axioms RH16CompleteDivisorRadiusTailReturn.radiusSamplingBudget_eq
+
+#check RH16CompleteDivisorRadiusTailReturn.actual_shortPlain_tight_uniform_error
+#print RH16CompleteDivisorRadiusTailReturn.actual_shortPlain_tight_uniform_error
+#print axioms RH16CompleteDivisorRadiusTailReturn.actual_shortPlain_tight_uniform_error
+
+#check RH16CompleteDivisorRadiusTailReturn.signed_sampling_correction_abs_le_at_radius
+#print RH16CompleteDivisorRadiusTailReturn.signed_sampling_correction_abs_le_at_radius
+#print axioms RH16CompleteDivisorRadiusTailReturn.signed_sampling_correction_abs_le_at_radius
+
+#check RH16CompleteDivisorRadiusTailReturn.residual_upper_of_complete_block_at_radius
+#print RH16CompleteDivisorRadiusTailReturn.residual_upper_of_complete_block_at_radius
+#print axioms RH16CompleteDivisorRadiusTailReturn.residual_upper_of_complete_block_at_radius
+
+#check RH16CompleteDivisorRadiusTailReturn.complete_tail_lower_of_complete_block_at_radius
+#print RH16CompleteDivisorRadiusTailReturn.complete_tail_lower_of_complete_block_at_radius
+#print axioms RH16CompleteDivisorRadiusTailReturn.complete_tail_lower_of_complete_block_at_radius
+
+#check RH16CompleteDivisorRadiusTailReturn.all_real_direct_lower_of_complete_block
+#print RH16CompleteDivisorRadiusTailReturn.all_real_direct_lower_of_complete_block
+#print axioms RH16CompleteDivisorRadiusTailReturn.all_real_direct_lower_of_complete_block
+
+#check RH16CompleteDivisorRadiusTailReturn.estimate_of_complete_signed_block
+#print RH16CompleteDivisorRadiusTailReturn.estimate_of_complete_signed_block
+#print axioms RH16CompleteDivisorRadiusTailReturn.estimate_of_complete_signed_block
+
+#check RH16CompleteDivisorRadiusTailReturn.estimate_of_complete_signed_block_witness
+#print RH16CompleteDivisorRadiusTailReturn.estimate_of_complete_signed_block_witness
+#print axioms RH16CompleteDivisorRadiusTailReturn.estimate_of_complete_signed_block_witness
+
+#check sourcePlainKernel_sub_mainTerm_abs_le
+#print sourcePlainKernel_sub_mainTerm_abs_le
+#print axioms sourcePlainKernel_sub_mainTerm_abs_le
+
+#check actual_shortLog_error
+#print actual_shortLog_error
+#print axioms actual_shortLog_error
+```

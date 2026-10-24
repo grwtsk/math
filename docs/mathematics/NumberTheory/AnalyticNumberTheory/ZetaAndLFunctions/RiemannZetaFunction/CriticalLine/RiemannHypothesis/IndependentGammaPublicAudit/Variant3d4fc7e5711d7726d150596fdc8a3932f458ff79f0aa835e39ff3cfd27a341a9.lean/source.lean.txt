@@ -1,0 +1,9 @@
+import SourceFiniteGammaReturn
+#check RH16FiniteGammaReturn.gammaTraceFloor
+#print axioms RH16FiniteGammaReturn.gammaTraceFloor
+#check RH16FiniteGammaReturn.actual_first_prime_correlation_lower
+#print axioms RH16FiniteGammaReturn.actual_first_prime_correlation_lower
+#check RH16FiniteGammaReturn.gammaTraceFloor_le_actual
+#print axioms RH16FiniteGammaReturn.gammaTraceFloor_le_actual
+#check RH16FiniteGammaReturn.gammaTraceFloor_nonneg
+#print axioms RH16FiniteGammaReturn.gammaTraceFloor_nonneg

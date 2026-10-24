@@ -1,0 +1,17 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualHalfExponentialStrongWindowAuditPackageTypes.Variant07a943b909ea8757c529788581e2bcca651c7da8f66a47980155b53f1f43f2e0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `713ba26cca17e4f66588e8f84ba37b7ecd925008` · SHA-256 `07a943b909ea8757c529788581e2bcca651c7da8f66a47980155b53f1f43f2e0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualHalfExponentialStrongWindow
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.ActualHalfExponentialStrongWindow.actualHalfExponentialPeriodicCutoff_lower_column
+#print axioms FormalResearch.RiemannHypothesis.ActualHalfExponentialStrongWindow.actualHalfExponentialPeriodicCutoff_lower_column
+#check FormalResearch.RiemannHypothesis.ActualHalfExponentialStrongWindow.actualHalfExponentialPeriodicCutoff_strong_orders
+#print axioms FormalResearch.RiemannHypothesis.ActualHalfExponentialStrongWindow.actualHalfExponentialPeriodicCutoff_strong_orders
+#check FormalResearch.RiemannHypothesis.ActualHalfExponentialStrongWindow.actualFullPhysicalPeriodicRow_eq_half_near_add_far
+#print axioms FormalResearch.RiemannHypothesis.ActualHalfExponentialStrongWindow.actualFullPhysicalPeriodicRow_eq_half_near_add_far
+```

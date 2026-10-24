@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiComplexLaplaceBudgetAuditPackageTypes.Variantdbddb42097ea4bf1148a26d6c96a2ec30ca37a7785fc282f591213152a40c7fc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `21b36cce9fbfd22a87965427900be9aa149184b6` · SHA-256 `dbddb42097ea4bf1148a26d6c96a2ec30ca37a7785fc282f591213152a40c7fc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiComplexLaplaceBudget
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplaceKernel_norm_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplaceKernel_norm_le
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_integrableOn
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_norm_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_norm_le
+```

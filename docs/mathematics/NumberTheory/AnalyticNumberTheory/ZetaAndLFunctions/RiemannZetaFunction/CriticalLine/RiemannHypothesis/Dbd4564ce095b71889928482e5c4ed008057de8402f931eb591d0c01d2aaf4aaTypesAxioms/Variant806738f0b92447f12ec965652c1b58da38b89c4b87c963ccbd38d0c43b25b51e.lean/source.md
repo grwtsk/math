@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Dbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aaTypesAxioms.Variant806738f0b92447f12ec965652c1b58da38b89c4b87c963ccbd38d0c43b25b51e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3769996d2f77628a4cdef531bce0fb36f00a4806` · SHA-256 `85f0f6b9decb58cf18bdc19de2a05c82cb0278efb34dae326267918f95bed529`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.Variantdbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAbsolutePrimeMomentObstruction.Variantdbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"dbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-boundary-next-rate-ingestion/informative58/recovered-selected/dbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa--TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAbsolutePrimeMomentObstruction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.Variantdbd4564ce095b71889928482e5c4ed008057de8402f931eb591d0c01d2aaf4aa
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_eventually_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_eventually_lower
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_tendsto_atTop
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_no_constant_tail_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentObstruction.actualClosedAbsolutePrimeMoment_no_constant_tail_bound
+```

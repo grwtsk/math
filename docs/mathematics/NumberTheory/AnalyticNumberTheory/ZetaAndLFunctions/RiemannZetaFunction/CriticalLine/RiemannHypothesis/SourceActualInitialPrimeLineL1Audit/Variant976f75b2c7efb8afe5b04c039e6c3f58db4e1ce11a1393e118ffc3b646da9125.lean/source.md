@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualInitialPrimeLineL1Audit.Variant976f75b2c7efb8afe5b04c039e6c3f58db4e1ce11a1393e118ffc3b646da9125
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b298a0a21ed68a53ec9cff870af5bc5d4e4f6ea4` · SHA-256 `dd320c426c0de9d0695ec46639d68a7e0254b777031104f7139e601e5440ea51`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualInitialPrimeLineL1.Variant5c93c68cafa78d503bf84e7ad9974b0fd7da54d14f66a504433bb7288dd93686","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5c93c68cafa78d503bf84e7ad9974b0fd7da54d14f66a504433bb7288dd93686","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualInitialPrimeLineL1.Variant5c93c68cafa78d503bf84e7ad9974b0fd7da54d14f66a504433bb7288dd93686","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5c93c68cafa78d503bf84e7ad9974b0fd7da54d14f66a504433bb7288dd93686","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T043424Z-1791347664191738000/SourceActualInitialPrimeLineL1Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualInitialPrimeLineL1
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualInitialPrimeLineL1.Variant5c93c68cafa78d503bf84e7ad9974b0fd7da54d14f66a504433bb7288dd93686
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity_eq_series
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity_eq_series
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity_eq_series
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeMellin_on_line_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeMellin_on_line_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeMellin_on_line_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeDensity_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeHead
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeHead
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeTwoTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeTwoTail
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeTwoTail
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeContour_eq_head_add_twoTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeContour_eq_head_add_twoTail
+#print FormalResearch.RiemannHypothesis.SourceActualInitialPrimeLineL1.actualInitialPrimeContour_eq_head_add_twoTail
+```

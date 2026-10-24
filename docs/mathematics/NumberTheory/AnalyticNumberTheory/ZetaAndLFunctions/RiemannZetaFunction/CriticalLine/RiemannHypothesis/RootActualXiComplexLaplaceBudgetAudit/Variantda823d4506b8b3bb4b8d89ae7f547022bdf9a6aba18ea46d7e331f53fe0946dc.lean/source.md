@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiComplexLaplaceBudgetAudit.Variantda823d4506b8b3bb4b8d89ae7f547022bdf9a6aba18ea46d7e331f53fe0946dc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8dd5cb99cddca6f7bba40679df56cc999979b5d1` · SHA-256 `a5a1498d1560b137c6b3627163e39a22638e60fb424c8deb38328e09178d264e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiComplexLaplaceBudget.Variant512f488727c221d15bf6e7d1423b5b62175d8eada94eb86035f1ac49c6fec27b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"512f488727c221d15bf6e7d1423b5b62175d8eada94eb86035f1ac49c6fec27b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualXiComplexLaplaceBudget.Variant512f488727c221d15bf6e7d1423b5b62175d8eada94eb86035f1ac49c6fec27b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"512f488727c221d15bf6e7d1423b5b62175d8eada94eb86035f1ac49c6fec27b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T003352Z-1791333232864581000/RootActualXiComplexLaplaceBudgetAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualXiComplexLaplaceBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiComplexLaplaceBudget.Variant512f488727c221d15bf6e7d1423b5b62175d8eada94eb86035f1ac49c6fec27b
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace
+#print FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplaceKernel_norm_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplaceKernel_norm_le
+#print FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplaceKernel_norm_le
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_integrableOn
+#print FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_integrableOn
+#check FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_norm_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_norm_le
+#print FormalResearch.RiemannHypothesis.RootActualXiComplexLaplaceBudget.actualXiComplexLaplace_norm_le
+```

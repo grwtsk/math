@@ -1,0 +1,42 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszZeroPoleTypesAxioms.Variantc59b6f1d7c25c5d58ad97ef5a5be2c77224357a3c0a4e1b34a873060f4844bc6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c5bd4ac679ecca88621b0c8210a2138df4295cfd` · SHA-256 `80c09b07f024d598b442dc5e1c3202c45c124d5a2ffc8e1de5215d181530b4b0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszZeroPole.Variantd1b1302ffa92c0df4e380b13baa0788676a7e98081d79d5097ea390d7ef0b786","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d1b1302ffa92c0df4e380b13baa0788676a7e98081d79d5097ea390d7ef0b786","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualRieszZeroPole.Variantd1b1302ffa92c0df4e380b13baa0788676a7e98081d79d5097ea390d7ef0b786","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d1b1302ffa92c0df4e380b13baa0788676a7e98081d79d5097ea390d7ef0b786","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T085953Z-1791363593211836000/SourceActualRieszZeroPoleTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualRieszZeroPole
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszZeroPole.Variantd1b1302ffa92c0df4e380b13baa0788676a7e98081d79d5097ea390d7ef0b786
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRiesz_zero_order_and_multiplicity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRiesz_zero_order_and_multiplicity
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_order_at_actual_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_order_at_actual_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_no_extension_at_actual_right_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalNumerator_no_extension_at_actual_right_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_order_at_actual_right_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_order_at_actual_right_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_no_extension_at_actual_right_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszZeroPole.actualRieszCriticalRegularization_no_extension_at_actual_right_zero
+```

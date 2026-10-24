@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalEdgeSectorTypesAxioms.Variant8e87c859f01a02dc6affeb5a7c543a65259907f52cfa4ba8ad414c82edb56ffb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db9e792c408bccdd6aad5db253f60388b7a9d0cb` · SHA-256 `92448c043d194b1a766d574ddb1ecec2c0397a13ea8f2e416c65aaf67e708be7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalEdgeSector.Variantef011c2b1b56d2d5ea3fcd31bd6a98ae35182bc6c3ee122aa74e9e7db061298c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ef011c2b1b56d2d5ea3fcd31bd6a98ae35182bc6c3ee122aa74e9e7db061298c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalEdgeSector.Variantef011c2b1b56d2d5ea3fcd31bd6a98ae35182bc6c3ee122aa74e9e7db061298c","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"ef011c2b1b56d2d5ea3fcd31bd6a98ae35182bc6c3ee122aa74e9e7db061298c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-critical-upper-edge-sector/ActualCriticalEdgeSectorTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalEdgeSector
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalEdgeSector.Variantef011c2b1b56d2d5ea3fcd31bd6a98ae35182bc6c3ee122aa74e9e7db061298c
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+-- Expanded diagnostics preserve default proof-body and binder annotations.
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualEndpointPolynomial_edge_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualEndpointPolynomial_edge_lower
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualEndpointDerivative_edge_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualEndpointDerivative_edge_lower
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualEndpointCritical_edge_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualEndpointCritical_edge_upper
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualCriticalKernel_edge_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualCriticalKernel_edge_upper
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeContinuousDrift
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeContinuousDrift
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgePrimeJumpCompensation
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgePrimeJumpCompensation
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeMovingWork
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeMovingWork
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgePrimeJump_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgePrimeJump_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeMovingWork_eq_drift_add_jumps
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeMovingWork_eq_drift_add_jumps
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgePrimeJumpCompensation_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgePrimeJumpCompensation_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeContinuousDrift_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalEdgeSector.actualUpperEdgeContinuousDrift_upper
+```

@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantb4155fb1a921d3f585211c0d2a5705322e5a11198fb704a67c4ce643fe1954c8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b8520c4953ff0c0ffdf4086c980a1440462aa120` · SHA-256 `3389a5077e95c00e2e855047a18f659af3a7ae717e359e22dcd14cd58b9884d8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointAbelPrimitives.Variant99edd0c9e955ecf492a2c53e570cf6728f1f4b6dc943d1e192545e036449a3eb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"99edd0c9e955ecf492a2c53e570cf6728f1f4b6dc943d1e192545e036449a3eb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAdjointAbelPrimitives.Variant99edd0c9e955ecf492a2c53e570cf6728f1f4b6dc943d1e192545e036449a3eb","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"99edd0c9e955ecf492a2c53e570cf6728f1f4b6dc943d1e192545e036449a3eb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-adjoint-primitives/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAdjointAbelPrimitives
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointAbelPrimitives.Variant99edd0c9e955ecf492a2c53e570cf6728f1f4b6dc943d1e192545e036449a3eb
+
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualTimeLower
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualColumnUpper
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualLogColumnPrefix
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointTimePrimitive
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointColumnPrimitive
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointTimePrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualLogColumnPrefix_measurable
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualLogColumnPrefix_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointColumnPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointTimePrimitive_at_lower
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointColumnPrimitive_at_upper
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualLogColumnPrefix_on_cell
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointTimePrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointTimePrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointColumnPrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actualAdjointColumnPrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actual_time_covariant_abel
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives.actual_column_covariant_abel
+```

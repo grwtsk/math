@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteOmegaReconstructionAuditProofsqualified.Variantae0a4e6848c626259616986004315f92dd6ac46587fac201a71246a556aee27d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3c3072d5236380548eef5bb68af1fa971db9961a` · SHA-256 `1e174c3f66a08bb74064536a8dd3bdec65815b1e81e93c00703fcbc958a946cd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteOmegaReconstruction.Variantb060207dc71b835c9d77a58edf65e876134731c8426d90c10da20e6798cdd938","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b060207dc71b835c9d77a58edf65e876134731c8426d90c10da20e6798cdd938","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCompleteOmegaReconstruction.Variantb060207dc71b835c9d77a58edf65e876134731c8426d90c10da20e6798cdd938","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"b060207dc71b835c9d77a58edf65e876134731c8426d90c10da20e6798cdd938","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceCompleteOmegaReconstructionAuditProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteOmegaReconstruction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteOmegaReconstruction.Variantb060207dc71b835c9d77a58edf65e876134731c8426d90c10da20e6798cdd938
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.literalOmegaCubicSector
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmega
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmegaError
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.literalOmegaCubicSector_eq_actual_main
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.mertensResidual_eq_completeOmega_add_baseline_add_error
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.integerJ_eq_completeOmega_add_error
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmegaError_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.integerJ_sub_completeOmega_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmega_reconstruction_plus_plain_calibration_lt
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.residual_sub_completeOmega_sub_zeta_abs_lt
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.residual_budget_of_completeOmega_tail
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.estimate_of_completeOmega_tail_at_radius
+```

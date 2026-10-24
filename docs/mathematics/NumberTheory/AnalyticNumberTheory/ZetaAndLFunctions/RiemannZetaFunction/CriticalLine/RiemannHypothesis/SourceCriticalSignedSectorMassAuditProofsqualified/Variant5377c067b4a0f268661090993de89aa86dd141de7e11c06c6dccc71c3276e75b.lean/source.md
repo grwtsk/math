@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCriticalSignedSectorMassAuditProofsqualified.Variant5377c067b4a0f268661090993de89aa86dd141de7e11c06c6dccc71c3276e75b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7b2ad59411e92c642e5214ee213444e8bfcc30af` · SHA-256 `193c86f08abd868b4ec994fb433412ac6698705735c49e2b97eaafc539283dca`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCriticalSignedSectorMass.Variant0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCriticalSignedSectorMass.Variant0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceCriticalSignedSectorMassAuditProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCriticalSignedSectorMass
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCriticalSignedSectorMass.Variant0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.positiveCriticalWeightMass
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.negativeCriticalWeightMass
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.positiveCriticalWeightMass_integrable
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.negativeCriticalWeightMass_integrable
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.positiveCriticalWeightMass_eq
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.negativeCriticalWeightMass_eq
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_difference
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_sum
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_difference_abs_lt_one
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_both_exponential_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_both_linear_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_both_exceed_constant
+```

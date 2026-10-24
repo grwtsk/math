@@ -1,0 +1,21 @@
+import SourceScaledWholePlainConvolution
+
+open FormalResearch.RiemannHypothesis.SourceScaledWholePlainConvolution
+
+#check completeMangoldtPlainRowsAt
+#check shortMangoldtPlainRowsAt
+#check longMangoldtPlainRowsAt
+#check shortColumnPlainRowsAt
+#check strictLongPlainRowsAt
+#check sourcePlainWeight_scaled_zero_of_cutoff_lt
+#check sourcePlainKernel_nat_zero_of_cutoff_lt
+#check completeRowsAt_eq_sourceMobiusKernel
+#check completeRowsAt_sub_mainTerm_abs_le
+#check completeRowsAt_eq_quotient_sum
+#check completeRowsAt_eq_short_add_long
+#check longRowsAt_eq_logKernel_sub_short
+#check longRowsAt_eq_strict_add_shortColumn
+#check strictRowsAt_eq_logKernel_sub_short_sub_column
+#check shortLog_sub_shortPlain_eq_signed_long_rows
+#check mertensResidual_eq_scaled_strict_rows_and_columns
+#check strictRowsAt_one_eq_plainOff_add_rawDiagonal

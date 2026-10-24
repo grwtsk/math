@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ExactPrint.Variant08f10fb7a3341b3c5f3b7d57aa57b585971539aa3ee4028fbbb8848f515745b8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eaf7922bcc31b5dea83799fe38aa219baa58360d` · SHA-256 `08f10fb7a3341b3c5f3b7d57aa57b585971539aa3ee4028fbbb8848f515745b8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceMangoldtAbel
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceMangoldtAbel
+
+#print mangoldtLogPrefix
+#print mangoldtLogSum
+#print mangoldtLogWindow
+#print mangoldtLogError
+#print criticalMangoldtWork
+#print MangoldtWorkTailLowerBound
+#print mangoldtLogPrefix_eq_sum
+#print primePowerInventory_filter_log
+#print mangoldtLogPrefix_eq_steps
+#print mangoldtInventory_log_bounds
+#print mangoldtLogPrefix_zero
+#print mangoldtLogPrefix_mul_deriv_intervalIntegrable
+#print mangoldtLogSum_abel
+#print mangoldtLogWindow_abel
+#print mangoldtLogWindow_eq_filter
+#print mangoldtLogWindow_eq_interval_sum
+#print mangoldtLogError_mul_deriv_intervalIntegrable
+#print mangoldtLogWindow_sub_integral
+#print natural_source_coefficient_eq_critical_test
+#print zero_index_weight_transport_guard
+#print closedPrimeMoment_eq_mangoldtLogSum
+#print mangoldtLogWindow_zero
+#print closedPrimeMoment_eq_continuous_sub_Mangoldt_work
+#print mertensResidual_eq_continuous_sub_Mangoldt_work
+#print primeWork_eq_Mangoldt_work_add_square_higher
+#print mangoldt_work_tail_iff_residual_tail
+#print criticalMangoldtWork_intervalIntegrable
+#print signed_pairing_tail_iff_Mangoldt_work_tail
+#print criticalAbel_tail_iff_Mangoldt_work_tail
+#print primeWork_minus_main_sub_Mangoldt_work_abs_le
+#print primeWork_Mangoldt_work_uniform_replacement_error
+#print mangoldtLogError_abs_le
+#print mangoldtLogError_below_first_atom
+```

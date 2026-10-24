@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variante1de9b31a6e13dcaaba8d25cfd9977135958492998e0ccd061eade4f57eac285
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `aed7cb01f0868177137ac8191090da4d567e9703` · SHA-256 `e1de9b31a6e13dcaaba8d25cfd9977135958492998e0ccd061eade4f57eac285`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdjointLowerStrip
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripUpper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripUpper
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_abs_le
+```

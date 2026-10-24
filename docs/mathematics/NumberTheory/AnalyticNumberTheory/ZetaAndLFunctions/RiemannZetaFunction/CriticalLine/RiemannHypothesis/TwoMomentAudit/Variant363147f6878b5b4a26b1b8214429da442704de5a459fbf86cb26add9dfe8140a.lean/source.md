@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TwoMomentAudit.Variant363147f6878b5b4a26b1b8214429da442704de5a459fbf86cb26add9dfe8140a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `08312ff0d3f20e5cde8311b7e55eee188c453f11` · SHA-256 `a75404a7642254fcc62db317826018a9c19fdb959320959ae559da3298d1671c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TwoMomentSampling.Variantdec7a1cd32c9da31b8f5e115c52f19343ebba942d0ac6793ba5a6b8b6c96a7c8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dec7a1cd32c9da31b8f5e115c52f19343ebba942d0ac6793ba5a6b8b6c96a7c8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.TwoMomentSampling.Variantdec7a1cd32c9da31b8f5e115c52f19343ebba942d0ac6793ba5a6b8b6c96a7c8","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"dec7a1cd32c9da31b8f5e115c52f19343ebba942d0ac6793ba5a6b8b6c96a7c8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/signed-estimate-review/two-moment-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TwoMomentSampling.Variantdec7a1cd32c9da31b8f5e115c52f19343ebba942d0ac6793ba5a6b8b6c96a7c8
+
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.weighted_moment_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.translated_first_moment
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.translated_first_moment_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.translated_first_moment_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.half_moment_transport
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.decaying_first_moment_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.decaying_first_moment_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.reflected_moment_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.reflected_moment_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.samplingIntegrand
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_exp_substitution
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_integral_transport
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_integral_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_eq_log_profile
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_deriv_exp
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.decaying_zeroth_moment_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.decaying_zeroth_moment_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.variationMajorant
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.variationMajorant_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.variationMajorant_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_variation_pointwise
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_variation_aestronglyMeasurable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_deriv_abs_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_deriv_integral_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_deriv_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.TwoMomentSampling.sampling_sum_abs_le
+```

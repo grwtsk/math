@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerSupportHeadQualified.Variant134731ec0768999c7a0c43118c59e0d81375b9474219244f75d3b0c053974163
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6fd807008ec573cfabae499c553092706140d7a0` · SHA-256 `134731ec0768999c7a0c43118c59e0d81375b9474219244f75d3b0c053974163`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEulerSupportHead
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeDirichletPolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeSeries
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualPrimeSeries_eq_closed_add_exterior
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimePolynomial_fullLine
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeDensity_fullLine_zero
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualExteriorPrimeSeries_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead_error_le
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHeadErrorConstant
+#print FormalResearch.RiemannHypothesis.SourceActualEulerSupportHead.actualClosedPrimeHead_moving_error_le
+```

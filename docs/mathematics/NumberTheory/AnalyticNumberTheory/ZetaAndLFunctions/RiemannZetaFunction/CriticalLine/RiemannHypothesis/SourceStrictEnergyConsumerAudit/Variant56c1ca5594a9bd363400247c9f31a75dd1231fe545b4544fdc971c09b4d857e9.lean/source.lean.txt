@@ -1,0 +1,33 @@
+import SourceStrictEnergyConsumer
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.fullNames true
+set_option pp.proofs false
+
+namespace FormalResearch.RiemannHypothesis.SourceStrictEnergyConsumer
+
+#print sourceEndpoint
+#print sourceEndpoint_abs_le_twelve
+#print strictColumnInterior_eq_complete_source_energy
+#print strictColumnInterior_eq_complete_hilbert_energy
+#print residual_upper_of_strictColumnInterior_upper
+#print residual_tail_of_strictColumnInterior_tail
+#print estimate_of_strictColumnInterior_tail
+#print axioms sourceEndpoint
+#print axioms sourceEndpoint_abs_le_twelve
+#print axioms strictColumnInterior_eq_complete_source_energy
+#print axioms strictColumnInterior_eq_complete_hilbert_energy
+#print axioms residual_upper_of_strictColumnInterior_upper
+#print axioms residual_tail_of_strictColumnInterior_tail
+#print axioms estimate_of_strictColumnInterior_tail
+
+set_option pp.proofs true
+#print sourceEndpoint_abs_le_twelve
+#print strictColumnInterior_eq_complete_source_energy
+#print strictColumnInterior_eq_complete_hilbert_energy
+#print residual_upper_of_strictColumnInterior_upper
+#print residual_tail_of_strictColumnInterior_tail
+#print estimate_of_strictColumnInterior_tail
+
+end FormalResearch.RiemannHypothesis.SourceStrictEnergyConsumer

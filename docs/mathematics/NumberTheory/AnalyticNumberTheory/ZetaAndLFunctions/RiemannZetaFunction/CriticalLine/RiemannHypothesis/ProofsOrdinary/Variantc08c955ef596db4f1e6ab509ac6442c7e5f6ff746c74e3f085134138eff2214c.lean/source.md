@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsOrdinary.Variantc08c955ef596db4f1e6ab509ac6442c7e5f6ff746c74e3f085134138eff2214c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9dfe439e94aafd6dfc140c3fbec02eb50e4bbc8b` · SHA-256 `c08c955ef596db4f1e6ab509ac6442c7e5f6ff746c74e3f085134138eff2214c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualComplexCorrelationSquare
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_test_integrable
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_eq_convolution
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_product_integrable
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_complex_correlation_integrable
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualSourceComplexTransform_eq_full
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualBilateralCorrelationTransform_eq_full
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actual_full_complex_correlation_integral_eq_square
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationSquare.actualBilateralCorrelationTransform_eq_square
+```

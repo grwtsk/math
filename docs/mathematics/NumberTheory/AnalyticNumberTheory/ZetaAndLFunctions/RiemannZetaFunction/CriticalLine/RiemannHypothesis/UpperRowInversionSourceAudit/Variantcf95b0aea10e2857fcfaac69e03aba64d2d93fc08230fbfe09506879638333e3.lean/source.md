@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperRowInversionSourceAudit.Variantcf95b0aea10e2857fcfaac69e03aba64d2d93fc08230fbfe09506879638333e3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2c2e8ab9f136029fc6e9bafe1a506c61982ea8b9` · SHA-256 `30701aefb20ec528489e1308c142a03cc9fc030a167ad3aa4ce36eca636857b0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperRowInversion.Variant6a5500e8476eb400c1735e92c6e03fdc2cd00992db9738dbb8944e6084159449","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6a5500e8476eb400c1735e92c6e03fdc2cd00992db9738dbb8944e6084159449","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.UpperRowInversion.Variant6a5500e8476eb400c1735e92c6e03fdc2cd00992db9738dbb8944e6084159449","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6a5500e8476eb400c1735e92c6e03fdc2cd00992db9738dbb8944e6084159449","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/arithmetic-routes/UpperRowInversionSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperRowInversion.Variant6a5500e8476eb400c1735e92c6e03fdc2cd00992db9738dbb8944e6084159449
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.finite_inner_padding
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.finite_inner_padding
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.finite_moebius_upper_inversion
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.finite_moebius_upper_inversion
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.upper_row_product_threshold
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.upper_row_product_threshold
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_row_support
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_row_support
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_row_inversion
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_row_inversion
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.positive_sum_split
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.positive_sum_split
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.rectangle_cutoff_split
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.rectangle_cutoff_split
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.rectangle_core_upper_identity
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.rectangle_core_upper_identity
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_rectangle_eq_linear
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_rectangle_eq_linear
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.upper_square_product_threshold
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.upper_square_product_threshold
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_square_eq_sampling
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.source_upper_square_eq_sampling
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.sourceQuadraticValue_core_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.sourceQuadraticValue_core_upper
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.core_rankOne_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.core_rankOne_nonneg
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.sourceQuadraticValue_core_rankOne
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperRowInversion.sourceQuadraticValue_core_rankOne
+```

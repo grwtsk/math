@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadoutAudit.Variant3b2bea3314a14f23bb6246b69233900fa11512cb9c6a48cf77f375e783444d36
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ca4377817176089871a0969113761dd1e68f1aa3` · SHA-256 `ad91eb463e9b0ffdaeb1baf1c7446ec9a659e979c4291595fe1b530736427caf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.Variant3af3cc46466ea56bdc30c848eb99a4771e3477f597401e28f63e750c2d802c88","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3af3cc46466ea56bdc30c848eb99a4771e3477f597401e28f63e750c2d802c88","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPeriodMeanMangoldtReadout.Variant3af3cc46466ea56bdc30c848eb99a4771e3477f597401e28f63e750c2d802c88","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3af3cc46466ea56bdc30c848eb99a4771e3477f597401e28f63e750c2d802c88","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T000626Z-1791331586630447000/SourceActualPeriodMeanMangoldtReadoutAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPeriodMeanMangoldtReadout
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.Variant3af3cc46466ea56bdc30c848eb99a4771e3477f597401e28f63e750c2d802c88
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanCorrelationTest_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest_covariant_deriv
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest_covariant_deriv
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeTest_covariant_deriv
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTests_at_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTests_at_upper
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTests_at_upper
+#check FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeFactor_eq_closed_half_row
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeFactor_eq_closed_half_row
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodMeanMangoldtReadout.actualPeriodMeanTimeFactor_eq_closed_half_row
+```

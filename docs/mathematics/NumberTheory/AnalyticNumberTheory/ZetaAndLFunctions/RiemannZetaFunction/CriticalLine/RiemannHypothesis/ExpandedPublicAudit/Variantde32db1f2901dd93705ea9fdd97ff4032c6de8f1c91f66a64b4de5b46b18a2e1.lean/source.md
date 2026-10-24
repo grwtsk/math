@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ExpandedPublicAudit.Variantde32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `94ea34ad472c5bccc4460cf29be3e0c5ec74acb4` · SHA-256 `de32db1f2901dd93705ea9fdd97ff4032c6de8f1c91f66a64b4de5b46b18a2e1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCutoffOneSharpTail
+set_option linter.hashCommand false
+#check RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost
+#print axioms RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost
+#check RH16CutoffOneSharpTail.cutoffOneSharpLedgerCost
+#print axioms RH16CutoffOneSharpTail.cutoffOneSharpLedgerCost
+#check RH16CutoffOneSharpTail.cutoffOneDiagonal_sub_prime_le_three_halves
+#print axioms RH16CutoffOneSharpTail.cutoffOneDiagonal_sub_prime_le_three_halves
+#check RH16CutoffOneSharpTail.cutoffOnePrimeDiagonal_tail_error
+#print axioms RH16CutoffOneSharpTail.cutoffOnePrimeDiagonal_tail_error
+#check RH16CutoffOneSharpTail.cutoffOneDiagonal_tail_error
+#print axioms RH16CutoffOneSharpTail.cutoffOneDiagonal_tail_error
+#check RH16CutoffOneSharpTail.cutoffOneSamplingError_tail
+#print axioms RH16CutoffOneSharpTail.cutoffOneSamplingError_tail
+#check RH16CutoffOneSharpTail.cutoffOneLedgerError_tail
+#print axioms RH16CutoffOneSharpTail.cutoffOneLedgerError_tail
+#check RH16CutoffOneSharpTail.actual_cumulative_jointFlux_tail
+#print axioms RH16CutoffOneSharpTail.actual_cumulative_jointFlux_tail
+#check RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost_ninety_one_lt_26
+#print axioms RH16CutoffOneSharpTail.cutoffOneSharpDiagonalCost_ninety_one_lt_26
+```

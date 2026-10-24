@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PrintRejectedDiagnostic.Variant438a269d6e07205d7fdc7f362acbea8e779abfc583cb2079c2dd47f369c7465f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e6a3eb8738feedf0e3eda0e5c974b4038a717df4` · SHA-256 `a863460a846075a297efd616250231a3118ee5bcf5e553f6bfed8df199c427c9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePrimePowerPartition.Variantdfb0a465d97939b50f56d147a819d3096127a1919ebb3941b12c0e6097819e87","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dfb0a465d97939b50f56d147a819d3096127a1919ebb3941b12c0e6097819e87","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourcePrimePowerPartition.Variantdfb0a465d97939b50f56d147a819d3096127a1919ebb3941b12c0e6097819e87","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"dfb0a465d97939b50f56d147a819d3096127a1919ebb3941b12c0e6097819e87","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle4/prime-power/Print-rejected-diagnostic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourcePrimePowerPartition.Variantdfb0a465d97939b50f56d147a819d3096127a1919ebb3941b12c0e6097819e87
+
+set_option linter.hashCommand false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.firstPrimeMoment
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.primeExponentInventory
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.higherPrimePowerInventory
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.higherPrimePowerMoment
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.source_coefficient_zero_of_not_isPrimePow
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.primeExponentInventory_pow_injective
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.closedPrimeMoment_eq_primeExponent_sum
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.closedPrimeMoment_eq_first_square_higher
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.prime_power_source_coefficient
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.prime_power_source_zero_exponent_guard
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.higherPrimePowerBudget_summability
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.higherPrimePowerBudget
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.higherPrimePowerBudget_nonneg
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.prime_power_source_coefficient_abs_le
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.higherPrimePowerMoment_abs_le
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.residual_sub_firstPrime_main_abs_le
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.residual_firstPrime_uniform_replacement_error
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.FirstPrimeTailUpperBound
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.firstPrime_tail_iff_residual_tail
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.signed_pairing_tail_iff_firstPrime_tail
+#print FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.estimate_of_firstPrime_tail
+```

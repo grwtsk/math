@@ -1,0 +1,62 @@
+import SourceRationalFiniteHead
+
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceRationalFiniteHead
+
+#check rationalKernelHeadMass
+#print rationalKernelHeadMass
+#print axioms rationalKernelHeadMass
+
+#check rationalRemainderHead
+#print rationalRemainderHead
+#print axioms rationalRemainderHead
+
+#check correctedRationalHead
+#print correctedRationalHead
+#print axioms correctedRationalHead
+
+#check angularHead_eq_rational_masses
+#print angularHead_eq_rational_masses
+#print axioms angularHead_eq_rational_masses
+
+#check correctedRationalHead_eq_head_sub_baseline
+#print correctedRationalHead_eq_head_sub_baseline
+#print axioms correctedRationalHead_eq_head_sub_baseline
+
+#check correctedRationalHead_real_readout
+#print correctedRationalHead_real_readout
+#print axioms correctedRationalHead_real_readout
+
+#check residual_sub_correctedRationalHead_norm_bound
+#print residual_sub_correctedRationalHead_norm_bound
+#print axioms residual_sub_correctedRationalHead_norm_bound
+
+#check residual_sub_correctedRationalHead_growing_norm_bound
+#print residual_sub_correctedRationalHead_growing_norm_bound
+#print axioms residual_sub_correctedRationalHead_growing_norm_bound
+
+#check residual_sub_correctedRationalHead_growing_abs_bound
+#print residual_sub_correctedRationalHead_growing_abs_bound
+#print axioms residual_sub_correctedRationalHead_growing_abs_bound
+
+#check residual_upper_of_correctedRationalHead_with_baseline
+#print residual_upper_of_correctedRationalHead_with_baseline
+#print axioms residual_upper_of_correctedRationalHead_with_baseline
+
+#check residual_upper_of_correctedRationalHead
+#print residual_upper_of_correctedRationalHead
+#print axioms residual_upper_of_correctedRationalHead
+
+#check CorrectedRationalHeadTailUpperBound
+#print CorrectedRationalHeadTailUpperBound
+#print axioms CorrectedRationalHeadTailUpperBound
+
+#check native_signed_head_of_corrected_rational
+#print native_signed_head_of_corrected_rational
+#print axioms native_signed_head_of_corrected_rational
+
+#check estimate_of_corrected_rational_head
+#print estimate_of_corrected_rational_head
+#print axioms estimate_of_corrected_rational_head
+
+end FormalResearch.RiemannHypothesis.SourceRationalFiniteHead

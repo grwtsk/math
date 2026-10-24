@@ -1,0 +1,20 @@
+import SourceActualBumpTwoTailBudget
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail
+#print FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail
+#check FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualBumpTwoTailBudget.actualBumpTwoTail_norm_le

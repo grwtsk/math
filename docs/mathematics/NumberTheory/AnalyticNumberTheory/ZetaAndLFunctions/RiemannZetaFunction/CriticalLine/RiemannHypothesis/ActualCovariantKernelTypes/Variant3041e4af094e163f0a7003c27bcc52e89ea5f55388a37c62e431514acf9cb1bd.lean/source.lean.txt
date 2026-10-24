@@ -1,0 +1,21 @@
+import SourceActualCovariantKernel
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualCovariantKernel
+#check covariantMixedDerivative
+#print axioms covariantMixedDerivative
+#check actualCovariantJet
+#print axioms actualCovariantJet
+#check actualCovariantJet_zero_eq_original
+#print axioms actualCovariantJet_zero_eq_original
+#check actual_covariant_mixed_second
+#print axioms actual_covariant_mixed_second
+#check actual_twice_covariant_mixed_fourth
+#print axioms actual_twice_covariant_mixed_fourth
+#check actual_covariant_mixed_second_abs_le
+#print axioms actual_covariant_mixed_second_abs_le
+#check actual_twice_covariant_fourth_abs_le
+#print axioms actual_twice_covariant_fourth_abs_le
+#check actual_covariant_eq_ordinary_add_quarter
+#print axioms actual_covariant_eq_ordinary_add_quarter
+#check actual_twice_covariant_eq_ordinary_add_lower
+#print axioms actual_twice_covariant_eq_ordinary_add_lower

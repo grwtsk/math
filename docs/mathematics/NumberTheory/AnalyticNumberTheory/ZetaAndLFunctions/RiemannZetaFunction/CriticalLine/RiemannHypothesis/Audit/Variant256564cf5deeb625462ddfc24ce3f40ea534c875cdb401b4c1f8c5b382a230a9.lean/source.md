@@ -1,0 +1,20 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant256564cf5deeb625462ddfc24ce3f40ea534c875cdb401b4c1f8c5b382a230a9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `88fcaf5e32a341842ca59dba2abbd5c498d5cfb5` · SHA-256 `256564cf5deeb625462ddfc24ce3f40ea534c875cdb401b4c1f8c5b382a230a9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceAdaptiveCoefficientFailure
+set_option pp.proofs true
+#print RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_five
+#print axioms RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_five
+#print RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_seven
+#print axioms RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_seven
+#print RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_thirty_five
+#print axioms RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_thirty_five
+#print RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_nonzero_factors
+#print axioms RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_nonzero_factors
+#print RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_not_multiplicative
+#print axioms RH16AdaptiveCoefficientFailure.rectangle_four_thirteen_not_multiplicative
+```

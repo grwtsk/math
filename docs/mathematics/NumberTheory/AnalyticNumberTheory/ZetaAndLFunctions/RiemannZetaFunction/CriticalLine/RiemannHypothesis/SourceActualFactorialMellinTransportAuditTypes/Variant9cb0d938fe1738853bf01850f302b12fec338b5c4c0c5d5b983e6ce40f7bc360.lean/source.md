@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialMellinTransportAuditTypes.Variant9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `477f648693627896777ee3f9c73c07cce31b49ef` · SHA-256 `9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFactorialMellinTransport
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+```

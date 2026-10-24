@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualPeriodicTransportKernelAuditPackageTypes.Variant2cb36ce1c7fb88e3cbebb814724b3c2f6b8fedac2c0fa949d2355f3a878fd616
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b2ba64ccb8a267a85ab63b9e7c497d54f27c1d08` · SHA-256 `36b57860a9b61b7a45dac79dc58ee4f395dd8391a31cfbbb4736f6c4747e174c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualPeriodicTransportKernel.Variant9e6031bd1b36934b6ab6120b40b09a810be14576df54d0402d6acf58f35be144","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9e6031bd1b36934b6ab6120b40b09a810be14576df54d0402d6acf58f35be144","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RootActualPeriodicTransportKernel.Variant9e6031bd1b36934b6ab6120b40b09a810be14576df54d0402d6acf58f35be144","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9e6031bd1b36934b6ab6120b40b09a810be14576df54d0402d6acf58f35be144","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/RootActualPeriodicTransportKernelAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RootActualPeriodicTransportKernel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualPeriodicTransportKernel.Variant9e6031bd1b36934b6ab6120b40b09a810be14576df54d0402d6acf58f35be144
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicTransportJet
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicTransportJet
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicTransportKernel_eq
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicTransportKernel_eq
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicTransportJet_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicTransportJet_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicWeightedTransport_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualPeriodicTransportKernel.actualPeriodicWeightedTransport_abs_le
+```

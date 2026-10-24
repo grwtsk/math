@@ -1,0 +1,18 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiLaplaceMellinAuditPackageProofsqualified.Variant4413891005f5242bdf051f53c3cc8bf4e3be310f849adf083343528a7611f5b6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cd910b691d77dbde220e753d2b494f07b7e9025d` · SHA-256 `4413891005f5242bdf051f53c3cc8bf4e3be310f849adf083343528a7611f5b6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiLaplaceMellin
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_eq_MellinSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_integrableOn
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_finite_abel
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_boundary_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_MellinSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_logDerivative
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiLogDerivativeCombination_norm_le
+```

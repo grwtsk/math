@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variantc9b92d650fb8373f05e51aa2b8e2b1a4ba03dd5829354b0d959fc8ae59fb6d5e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `493d3a2f49c60b3211f98ebd8fc60e2e6f6cb5df` · SHA-256 `bf0ee4da6927367df054691fef19db2c51754b47d27c29d40b3e09a4dcd71f3e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiLaplaceMellin.Variantcad0f4781fff92e8c2f21b8a2d31af433c174acd474ba971a03d066e24fe5c20","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cad0f4781fff92e8c2f21b8a2d31af433c174acd474ba971a03d066e24fe5c20","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiLaplaceMellin.Variantcad0f4781fff92e8c2f21b8a2d31af433c174acd474ba971a03d066e24fe5c20","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"cad0f4781fff92e8c2f21b8a2d31af433c174acd474ba971a03d066e24fe5c20","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-xi-laplace-mellin/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiLaplaceMellin
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiLaplaceMellin.Variantcad0f4781fff92e8c2f21b8a2d31af433c174acd474ba971a03d066e24fe5c20
+
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_eq_MellinSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiDensityLaplace_integrableOn
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_finite_abel
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_boundary_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_MellinSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiComplexLaplace_mul_eq_logDerivative
+#print FormalResearch.RiemannHypothesis.SourceActualXiLaplaceMellin.actualXiLogDerivativeCombination_norm_le
+```

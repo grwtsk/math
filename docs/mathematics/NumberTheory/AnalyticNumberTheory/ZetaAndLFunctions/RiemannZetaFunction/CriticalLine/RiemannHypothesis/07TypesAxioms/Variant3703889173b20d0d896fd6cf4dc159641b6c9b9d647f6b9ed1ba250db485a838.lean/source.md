@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.07TypesAxioms.Variant3703889173b20d0d896fd6cf4dc159641b6c9b9d647f6b9ed1ba250db485a838
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `93d864c708feb2a87dbbfdc92d54736c6e94ef63` · SHA-256 `299cd76a4938502ac6568e0e22bbf9121d2017ddb209cc325292a1b8630e88d2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalDeltaReturn.Varianta2051c9b9517e89ea91c5ce6082562352d63a0e013cd8697062469605cf50d85","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a2051c9b9517e89ea91c5ce6082562352d63a0e013cd8697062469605cf50d85","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualCriticalDeltaReturn.Varianta2051c9b9517e89ea91c5ce6082562352d63a0e013cd8697062469605cf50d85","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a2051c9b9517e89ea91c5ce6082562352d63a0e013cd8697062469605cf50d85","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/reflection-analysis/critical-half-pnt-consumer/prior-source/07-TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualCriticalDeltaReturn
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCriticalDeltaReturn.Varianta2051c9b9517e89ea91c5ce6082562352d63a0e013cd8697062469605cf50d85
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualRelativePsiTail
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualRelativePsiTail
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualDeltaCriticalReturn
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualDeltaCriticalReturn
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualRelativePsiTail_eq_total_sub_primitive
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualRelativePsiTail_eq_total_sub_primitive
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualRelativePsiTail_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualRelativePsiTail_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualDeltaCriticalReturn_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualDeltaCriticalReturn_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualCriticalErrorCovariance_eq_delta_return
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualCriticalErrorCovariance_eq_delta_return
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualCriticalDeltaReturn_lower_head_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualCriticalDeltaReturn_lower_head_abs_le
+#check FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualCriticalDeltaReturn_lower_head_error_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCriticalDeltaReturn.actualCriticalDeltaReturn_lower_head_error_abs_le
+```

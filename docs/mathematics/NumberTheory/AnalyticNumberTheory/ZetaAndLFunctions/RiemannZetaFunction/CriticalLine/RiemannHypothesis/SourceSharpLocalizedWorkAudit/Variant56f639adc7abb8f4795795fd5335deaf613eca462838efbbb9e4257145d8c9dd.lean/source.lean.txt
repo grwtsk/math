@@ -1,0 +1,26 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSharpLocalizedWorkBound.Variantc872de47409697fc6c51ca211c25f62d0c22167269666b57e60d4d72204836c4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c872de47409697fc6c51ca211c25f62d0c22167269666b57e60d4d72204836c4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSharpLocalizedWorkBound.Variantc872de47409697fc6c51ca211c25f62d0c22167269666b57e60d4d72204836c4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c872de47409697fc6c51ca211c25f62d0c22167269666b57e60d4d72204836c4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T163506Z/SourceSharpLocalizedWorkAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSharpLocalizedWorkBound
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSharpLocalizedWorkBound.Variantc872de47409697fc6c51ca211c25f62d0c22167269666b57e60d4d72204836c4
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+
+#check FormalResearch.RiemannHypothesis.SourceSharpColumnEnvelopeMass.columnEnvelopeMass_le_cutoff_ratio
+#print axioms FormalResearch.RiemannHypothesis.SourceSharpColumnEnvelopeMass.columnEnvelopeMass_le_cutoff_ratio
+#check FormalResearch.RiemannHypothesis.SourceSharpLocalizedWorkBound.centeredErrorWork_abs_le_localized_cutoff_ratio
+#print axioms FormalResearch.RiemannHypothesis.SourceSharpLocalizedWorkBound.centeredErrorWork_abs_le_localized_cutoff_ratio
+#check FormalResearch.RiemannHypothesis.SourceSharpLocalizedWorkBound.jointMangoldtErrorWork_abs_le_localized_cutoff_ratio
+#print axioms FormalResearch.RiemannHypothesis.SourceSharpLocalizedWorkBound.jointMangoldtErrorWork_abs_le_localized_cutoff_ratio
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceSharpColumnEnvelopeMass.columnEnvelopeMass_le_cutoff_ratio
+#print FormalResearch.RiemannHypothesis.SourceSharpLocalizedWorkBound.centeredErrorWork_abs_le_localized_cutoff_ratio
+#print FormalResearch.RiemannHypothesis.SourceSharpLocalizedWorkBound.jointMangoldtErrorWork_abs_le_localized_cutoff_ratio

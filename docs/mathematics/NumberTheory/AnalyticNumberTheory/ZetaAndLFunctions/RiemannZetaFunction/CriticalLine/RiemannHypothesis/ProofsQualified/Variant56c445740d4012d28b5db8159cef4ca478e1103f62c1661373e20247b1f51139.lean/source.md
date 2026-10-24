@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ProofsQualified.Variant56c445740d4012d28b5db8159cef4ca478e1103f62c1661373e20247b1f51139
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c5fce458a339c512310daa28d4be6ffde6c7b063` · SHA-256 `56c445740d4012d28b5db8159cef4ca478e1103f62c1661373e20247b1f51139`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiErrorCriticalCovariance
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolution_return
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolution_return
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionReturn_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead_eq_closed_traces
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolution_difference_return
+```

@@ -1,0 +1,17 @@
+import SourcePhysicalBoundaryBalance
+
+set_option autoImplicit false
+
+
+namespace FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance
+
+#print axioms typeTwoSource_eq_negative_physicalRows
+#print axioms signed_physicalDeletedRows_eq_negative_rawDiagonal
+#print axioms centeredDeletedDiagonal_eq_signed_physical_payment
+#print axioms mertensResidual_eq_short_add_signed_column_sub_strip
+#print axioms divisorRemainder_eq_column_strip_and_sampling_payments
+#print axioms jointSignedRemainder_eq_physical_boundary_payments
+#print axioms short_add_signed_column_sub_strip_eq_closedPrimeMoment
+#print axioms generic_zero_cutoff_long_beta_unit_fails
+
+end FormalResearch.RiemannHypothesis.SourcePhysicalBoundaryBalance

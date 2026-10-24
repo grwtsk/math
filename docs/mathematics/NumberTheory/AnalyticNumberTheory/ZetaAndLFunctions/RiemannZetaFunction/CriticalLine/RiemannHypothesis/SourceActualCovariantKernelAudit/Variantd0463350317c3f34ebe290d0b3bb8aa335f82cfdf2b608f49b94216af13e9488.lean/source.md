@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCovariantKernelAudit.Variantd0463350317c3f34ebe290d0b3bb8aa335f82cfdf2b608f49b94216af13e9488
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `87b67c96ce8c3aa00a0fb1c2a675a20800804c14` · SHA-256 `2966bdeefb18376919587b16ad910ae3dc62fcb46392e9d995226a30b5953380`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCovariantKernel.Variant20535d0c1d0d4648e04e37116e652f7830af01f011c15f1830dc293597e62c77","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"20535d0c1d0d4648e04e37116e652f7830af01f011c15f1830dc293597e62c77","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCovariantKernel.Variant20535d0c1d0d4648e04e37116e652f7830af01f011c15f1830dc293597e62c77","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"20535d0c1d0d4648e04e37116e652f7830af01f011c15f1830dc293597e62c77","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T210020Z-1791320420468452000/SourceActualCovariantKernelAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCovariantKernel
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCovariantKernel.Variant20535d0c1d0d4648e04e37116e652f7830af01f011c15f1830dc293597e62c77
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.covariantMixedDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.covariantMixedDerivative
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actualCovariantJet
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actualCovariantJet
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actualCovariantJet_zero_eq_original
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actualCovariantJet_zero_eq_original
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_mixed_second
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_mixed_second
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_mixed_fourth
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_mixed_fourth
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_mixed_second_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_mixed_second_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_fourth_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_fourth_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_eq_ordinary_add_quarter
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_eq_ordinary_add_quarter
+#check FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_eq_ordinary_add_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_eq_ordinary_add_lower
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.covariantMixedDerivative
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actualCovariantJet
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actualCovariantJet_zero_eq_original
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_mixed_second
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_mixed_fourth
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_mixed_second_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_fourth_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_covariant_eq_ordinary_add_quarter
+#print FormalResearch.RiemannHypothesis.SourceActualCovariantKernel.actual_twice_covariant_eq_ordinary_add_lower
+```

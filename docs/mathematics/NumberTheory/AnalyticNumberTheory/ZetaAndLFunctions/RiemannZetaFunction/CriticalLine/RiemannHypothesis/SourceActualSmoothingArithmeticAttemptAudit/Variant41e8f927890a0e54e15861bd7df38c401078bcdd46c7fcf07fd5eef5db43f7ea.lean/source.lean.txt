@@ -1,0 +1,29 @@
+import SourceActualSmoothingArithmeticAttempt
+
+namespace FormalResearch.RiemannHypothesis.SourceActualSmoothingArithmeticAttempt
+
+#check actualSmoothingCompanion
+#print axioms actualSmoothingCompanion
+
+#check actual_gamma_boundary_bounds
+#print axioms actual_gamma_boundary_bounds
+
+#check actual_moment_eq_residual_add_companion
+#print axioms actual_moment_eq_residual_add_companion
+
+#check actual_moment_eq_boundary_sub_Mangoldt_work
+#print axioms actual_moment_eq_boundary_sub_Mangoldt_work
+
+#check actual_smoothing_companion_bounds
+#print axioms actual_smoothing_companion_bounds
+
+#check actual_moment_residual_comparison
+#print axioms actual_moment_residual_comparison
+
+#check actualCenteredMangoldtWork
+#print axioms actualCenteredMangoldtWork
+
+#check actual_moment_eq_neg_centered_Mangoldt_work
+#print axioms actual_moment_eq_neg_centered_Mangoldt_work
+
+end FormalResearch.RiemannHypothesis.SourceActualSmoothingArithmeticAttempt

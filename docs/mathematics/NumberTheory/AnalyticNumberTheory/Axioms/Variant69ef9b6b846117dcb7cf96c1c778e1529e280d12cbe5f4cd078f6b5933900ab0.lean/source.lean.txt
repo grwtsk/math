@@ -1,0 +1,7 @@
+import SourceMangoldtColumnQuotient
+
+open FormalResearch.RiemannHypothesis.SourceMangoldtColumnQuotient
+
+#print axioms actual_mangoldt_column_eq_zero_of_quotient_lt
+#print axioms mangoldt_inner_eq_quotient_truncated_column_increments
+#print axioms covariance_sub_main_eq_quotient_truncated_column_increments

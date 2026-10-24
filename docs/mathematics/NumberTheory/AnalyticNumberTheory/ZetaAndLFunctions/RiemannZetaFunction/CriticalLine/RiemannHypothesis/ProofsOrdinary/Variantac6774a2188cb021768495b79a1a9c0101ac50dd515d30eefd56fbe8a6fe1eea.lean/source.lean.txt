@@ -1,0 +1,9 @@
+import RootActualCriticalHalfCrude
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCriticalHalfCrudeConstant
+#print FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCriticalMoebiusHalf_abs_le_harmonic
+#print FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.finiteHalfHarmonic_le_calibrated_sqrt
+#print FormalResearch.RiemannHypothesis.RootActualCriticalHalfCrude.actualCenteredHalfZetaMain_abs_le_crude_sqrt

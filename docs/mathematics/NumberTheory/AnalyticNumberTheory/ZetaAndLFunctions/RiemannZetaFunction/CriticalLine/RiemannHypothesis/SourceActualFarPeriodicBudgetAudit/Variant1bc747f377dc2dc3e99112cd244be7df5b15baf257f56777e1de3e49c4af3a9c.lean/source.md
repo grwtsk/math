@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFarPeriodicBudgetAudit.Variant1bc747f377dc2dc3e99112cd244be7df5b15baf257f56777e1de3e49c4af3a9c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4e9243496ed6d12fb910121be44ff20e0908a242` · SHA-256 `03d858ef4eadb2820bd2824a0f9477c3a216ce1da1d5d8178b67efdbfe48ce9d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFarPeriodicBudget.Variant331e33f7d0fd23e4152b2520118317a631b046103c7903471c0b8d4243ee94e4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"331e33f7d0fd23e4152b2520118317a631b046103c7903471c0b8d4243ee94e4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualFarPeriodicBudget.Variant331e33f7d0fd23e4152b2520118317a631b046103c7903471c0b8d4243ee94e4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"331e33f7d0fd23e4152b2520118317a631b046103c7903471c0b8d4243ee94e4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T231417Z-1791328457498635000/SourceActualFarPeriodicBudgetAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFarPeriodicBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFarPeriodicBudget.Variant331e33f7d0fd23e4152b2520118317a631b046103c7903471c0b8d4243ee94e4
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_zero_right
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_zero_right
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_zero_right
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_eq_log
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_eq_log
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget.actualPhysicalPeriodicPrefixRow_eq_log
+```

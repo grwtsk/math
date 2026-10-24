@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperProductSignGuardSourceAudit.Variant872cf063817bf462f05f4954abe132b97e323f4700ae2d1e841fffab68100c40
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b316cd98b9b65a7168a264cf1d68dc7e84195634` · SHA-256 `9aed0e0e564d76e641622ac386ee030c6e39e2366eec58745562004368878b6a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperProductSignGuard.Variant7dd269e0ae73c449f28f51e4fff6cf10a9613b1ae706b03da543e1dff1c6b4bc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7dd269e0ae73c449f28f51e4fff6cf10a9613b1ae706b03da543e1dff1c6b4bc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.UpperProductSignGuard.Variant7dd269e0ae73c449f28f51e4fff6cf10a9613b1ae706b03da543e1dff1c6b4bc","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7dd269e0ae73c449f28f51e4fff6cf10a9613b1ae706b03da543e1dff1c6b4bc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/prime-budget/UpperProductSignGuardSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperProductSignGuard.Variant7dd269e0ae73c449f28f51e4fff6cf10a9613b1ae706b03da543e1dff1c6b4bc
+
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.moebius_product_sign
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.moebius_product_sign
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.fixed_product_fiber_sign
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.fixed_product_fiber_sign
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.fixed_product_fiber_sign_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.fixed_product_fiber_sign_nonneg
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upper_cutoff_36
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upper_cutoff_36
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upper_cutoff_42
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upper_cutoff_42
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upper_square_10_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upper_square_10_eq
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upperProductCoefficient_sign
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upperProductCoefficient_sign
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upperProductSummatory_10_36
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upperProductSummatory_10_36
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upperProductSummatory_10_42
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.upperProductSummatory_10_42
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.not_upperProductSummatory_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.not_upperProductSummatory_nonneg
+#print FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.actual_signed_cumulative_negative_in_two_channel
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperProductSignGuard.actual_signed_cumulative_negative_in_two_channel
+```

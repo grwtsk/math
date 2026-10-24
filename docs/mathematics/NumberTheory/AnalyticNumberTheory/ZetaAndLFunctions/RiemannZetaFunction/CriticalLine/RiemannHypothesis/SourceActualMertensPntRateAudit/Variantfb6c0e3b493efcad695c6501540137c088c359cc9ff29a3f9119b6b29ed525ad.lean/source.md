@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensPntRateAudit.Variantfb6c0e3b493efcad695c6501540137c088c359cc9ff29a3f9119b6b29ed525ad
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fb3ef829b6afc26ec6ad640e356dc52b51f145ce` · SHA-256 `05ca8522725212013208c92747c9948b40eb1b789b8c2a23090ec6c8ddc2fb75`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensPntRate.Variant4076d3e30183bd1bb355f05f0223dc332c0dbc49ffdcebc50128625f4191795b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4076d3e30183bd1bb355f05f0223dc332c0dbc49ffdcebc50128625f4191795b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMertensPntRate.Variant4076d3e30183bd1bb355f05f0223dc332c0dbc49ffdcebc50128625f4191795b","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4076d3e30183bd1bb355f05f0223dc332c0dbc49ffdcebc50128625f4191795b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T033111Z-1791343871547883000/SourceActualMertensPntRateAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMertensPntRate
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensPntRate.Variant4076d3e30183bd1bb355f05f0223dc332c0dbc49ffdcebc50128625f4191795b
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualPntHalfRate_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualPntHalfRate_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualPntHalfRate_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualRelativePsiTimeError_tail_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_isBigO
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_isBigO
+#print FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_isBigO
+```

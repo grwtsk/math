@@ -1,0 +1,16 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeBetaInteractionAuditProofsordinary.Variant5b04b5b5bc2818abac25d5559bc0f1998e866cab2699298e70d3bcbb31002d94
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `865106c681eef95f75604b7fed75800250a11d66` · SHA-256 `5b04b5b5bc2818abac25d5559bc0f1998e866cab2699298e70d3bcbb31002d94`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSupportEdgeBetaInteraction
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualTerminalCenteredHalfDefect_abs_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actual_support_half_le_two_sqrt_terminal
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeBetaInteraction.actualFiniteBetaMangoldtInteraction_abs_le
+```

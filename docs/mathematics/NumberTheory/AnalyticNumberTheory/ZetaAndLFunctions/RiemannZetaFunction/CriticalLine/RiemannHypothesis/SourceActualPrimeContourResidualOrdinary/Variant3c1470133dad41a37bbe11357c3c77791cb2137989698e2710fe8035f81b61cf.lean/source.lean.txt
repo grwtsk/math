@@ -1,0 +1,13 @@
+import SourceActualPrimeContourResidual
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_strictPrime_eq_closedPrimeMoment
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actualInitialPrimeContour_eq_mertensResidual
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_mertensResidual_eq_head_add_twoTail

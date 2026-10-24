@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiReciprocalJointAbelAuditPackageTypes.Variant62bfd0587bdcdd9d538534f494002ca8d683b7286d8b40fa95275f054b87e287
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `88dad3abdd259e6dab80ed970c97f104865436f6` · SHA-256 `dfe3d51d8486bc03935734939052deb61f608d3e971054afa431e7f7f2af0412`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiReciprocalJointAbel.Variant6ff913f8ecbd69b8c76597d1cca183016044e648b71ace5e497481805f4dd009","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6ff913f8ecbd69b8c76597d1cca183016044e648b71ace5e497481805f4dd009","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualXiReciprocalJointAbel.Variant6ff913f8ecbd69b8c76597d1cca183016044e648b71ace5e497481805f4dd009","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6ff913f8ecbd69b8c76597d1cca183016044e648b71ace5e497481805f4dd009","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualXiReciprocalJointAbelAuditPackageTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiReciprocalJointAbel
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiReciprocalJointAbel.Variant6ff913f8ecbd69b8c76597d1cca183016044e648b71ace5e497481805f4dd009
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight
+#check FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight_one
+#check FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight_at_cutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight_at_cutoff
+#check FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualClosedMangoldtXiPair_eq_reciprocal_weight
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualClosedMangoldtXiPair_eq_reciprocal_weight
+#check FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualClosedMangoldtXiPair_eq_reciprocal_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualClosedMangoldtXiPair_eq_reciprocal_abel
+#check FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualAnchoredXiTailPrimitive_eq_reciprocal_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualAnchoredXiTailPrimitive_eq_reciprocal_abel
+```

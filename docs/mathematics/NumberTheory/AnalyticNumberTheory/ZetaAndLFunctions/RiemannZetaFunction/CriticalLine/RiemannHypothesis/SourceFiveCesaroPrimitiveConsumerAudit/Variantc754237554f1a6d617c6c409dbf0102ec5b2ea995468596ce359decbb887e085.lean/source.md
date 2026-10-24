@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFiveCesaroPrimitiveConsumerAudit.Variantc754237554f1a6d617c6c409dbf0102ec5b2ea995468596ce359decbb887e085
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `483fcb5b1a906d5dcb508bf77d6aaf21fae23e4c` · SHA-256 `c754237554f1a6d617c6c409dbf0102ec5b2ea995468596ce359decbb887e085`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFiveCesaroPrimitiveConsumer
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+#check RH16FiveCesaroConsumer.remainingAtomWork_lower_of_five_cesaro
+#print axioms RH16FiveCesaroConsumer.remainingAtomWork_lower_of_five_cesaro
+#print RH16FiveCesaroConsumer.remainingAtomWork_lower_of_five_cesaro
+#check RH16FiveCesaroConsumer.estimate_of_five_cesaro_global
+#print axioms RH16FiveCesaroConsumer.estimate_of_five_cesaro_global
+#print RH16FiveCesaroConsumer.estimate_of_five_cesaro_global
+#check RH16FiveCesaroConsumer.all_real_source_lower_of_five_cesaro_global
+#print axioms RH16FiveCesaroConsumer.all_real_source_lower_of_five_cesaro_global
+#print RH16FiveCesaroConsumer.all_real_source_lower_of_five_cesaro_global
+#check RH16FiveCesaroConsumer.estimate_of_five_cesaro_global_exists
+#print axioms RH16FiveCesaroConsumer.estimate_of_five_cesaro_global_exists
+#print RH16FiveCesaroConsumer.estimate_of_five_cesaro_global_exists
+```

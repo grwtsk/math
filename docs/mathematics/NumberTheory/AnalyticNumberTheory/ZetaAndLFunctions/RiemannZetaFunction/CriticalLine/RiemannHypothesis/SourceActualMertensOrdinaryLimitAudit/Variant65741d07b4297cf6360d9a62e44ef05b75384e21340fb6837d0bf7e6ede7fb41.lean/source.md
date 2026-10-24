@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensOrdinaryLimitAudit.Variant65741d07b4297cf6360d9a62e44ef05b75384e21340fb6837d0bf7e6ede7fb41
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9b70615edab1468e22b446e2ed261dbdf2046f3f` · SHA-256 `f40540a730eca6eca73c88fa537897d053eb211c2e590c35e14618baaf725ae1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensOrdinaryLimit.Variant244fe2a364df5788f9d1986031277e7a6a1e7a57b6d7b69954cf078fddf68a8f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"244fe2a364df5788f9d1986031277e7a6a1e7a57b6d7b69954cf078fddf68a8f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMertensOrdinaryLimit.Variant244fe2a364df5788f9d1986031277e7a6a1e7a57b6d7b69954cf078fddf68a8f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"244fe2a364df5788f9d1986031277e7a6a1e7a57b6d7b69954cf078fddf68a8f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T024411Z-1791341051869389000/SourceActualMertensOrdinaryLimitAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMertensOrdinaryLimit
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMertensOrdinaryLimit.Variant244fe2a364df5788f9d1986031277e7a6a1e7a57b6d7b69954cf078fddf68a8f
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#print FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualPntMertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#print FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimeError_eq_pnt_error
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#print FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_eq_pnt_relative_primitive
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#print FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualRelativePsiTimePrimitive_tendsto
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#print FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.mangoldtLogError_tendsto_actualPntMertensLimit
+#check FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+#print FormalResearch.RiemannHypothesis.SourceActualMertensOrdinaryLimit.actualCenteredMangoldtLogError_tendsto
+```

@@ -1,0 +1,10 @@
+import SourceSharpCutoffOneBaseline
+set_option linter.hashCommand false
+#check RH16SharpCutoffOneBaseline.sharpBaselineResidualBudget
+#print axioms RH16SharpCutoffOneBaseline.sharpBaselineResidualBudget
+#check RH16SharpCutoffOneBaseline.residual_tail_of_baseline
+#print axioms RH16SharpCutoffOneBaseline.residual_tail_of_baseline
+#check RH16SharpCutoffOneBaseline.all_real_lower_of_baseline
+#print axioms RH16SharpCutoffOneBaseline.all_real_lower_of_baseline
+#check RH16SharpCutoffOneBaseline.estimate_of_baseline
+#print axioms RH16SharpCutoffOneBaseline.estimate_of_baseline

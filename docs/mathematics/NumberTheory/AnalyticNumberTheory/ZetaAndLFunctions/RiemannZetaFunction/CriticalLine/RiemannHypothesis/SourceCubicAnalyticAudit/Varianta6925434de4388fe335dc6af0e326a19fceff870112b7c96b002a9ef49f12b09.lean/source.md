@@ -1,0 +1,53 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicAnalyticAudit.Varianta6925434de4388fe335dc6af0e326a19fceff870112b7c96b002a9ef49f12b09
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3fa71408c8ebaf61e9285f8c2b94c0940e8cfa18` · SHA-256 `75707ef1f82862660e2e3732c4f1cbae870f826dc67acebd3f67a2ee14333c43`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicCorrelationTaylor.Variant9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCubicCorrelationTaylor.Variant9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T171450Z-1791306890980262000/SourceCubicAnalyticAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCubicCorrelationTaylor
+import SourceCubicSamplingRemainder
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicCorrelationTaylor.Variant9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#check FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#check FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le
+```

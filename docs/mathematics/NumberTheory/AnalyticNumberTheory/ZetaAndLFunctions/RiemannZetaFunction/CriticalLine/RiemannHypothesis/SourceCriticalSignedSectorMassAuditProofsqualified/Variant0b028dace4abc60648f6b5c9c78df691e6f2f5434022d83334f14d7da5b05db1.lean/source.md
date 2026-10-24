@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCriticalSignedSectorMassAuditProofsqualified.Variant0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ecfa360a05a5c3ba503d6304cc341037dd68d617` · SHA-256 `0b028dace4abc60648f6b5c9c78df691e6f2f5434022d83334f14d7da5b05db1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCriticalSignedSectorMass
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.positiveCriticalWeightMass
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.negativeCriticalWeightMass
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.positiveCriticalWeightMass_integrable
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.negativeCriticalWeightMass_integrable
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.positiveCriticalWeightMass_eq
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.negativeCriticalWeightMass_eq
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_difference
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_sum
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_difference_abs_lt_one
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_both_exponential_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_both_linear_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalSignedSectorMass.criticalWeightMass_both_exceed_constant
+```

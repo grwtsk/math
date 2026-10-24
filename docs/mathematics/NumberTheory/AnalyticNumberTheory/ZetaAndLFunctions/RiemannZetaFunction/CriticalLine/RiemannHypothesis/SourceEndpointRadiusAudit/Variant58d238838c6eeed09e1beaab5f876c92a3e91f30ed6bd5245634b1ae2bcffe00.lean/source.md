@@ -1,0 +1,58 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceEndpointRadiusAudit.Variant58d238838c6eeed09e1beaab5f876c92a3e91f30ed6bd5245634b1ae2bcffe00
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2a7ded2db13a68100cef08dd7f14513a08fb5eaf` · SHA-256 `58d238838c6eeed09e1beaab5f876c92a3e91f30ed6bd5245634b1ae2bcffe00`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceEndpointEnvelope
+import EndpointRadius
+import SourceEndpointRadiusConsumer
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceEndpointEnvelope
+#print actual_centered_column_endpoint_abs_le_envelope
+#print axioms actual_centered_column_endpoint_abs_le_envelope
+end FormalResearch.RiemannHypothesis.SourceEndpointEnvelope
+namespace RH16EndpointRadius
+#print envelope_hasDerivAt
+#print axioms envelope_hasDerivAt
+#print envelope_antitoneOn
+#print axioms envelope_antitoneOn
+#print envelope_le_peak
+#print axioms envelope_le_peak
+#print envelope_le_budget
+#print axioms envelope_le_budget
+#print envelope_peak_lt_three
+#print axioms envelope_peak_lt_three
+#print endpointBudget_nonneg
+#print axioms endpointBudget_nonneg
+#print endpointBudget_eq_of_three_le
+#print axioms endpointBudget_eq_of_three_le
+end RH16EndpointRadius
+namespace FormalResearch.RiemannHypothesis.SourceEndpointRadiusConsumer
+#print sourceEndpoint_abs_le_budget
+#print axioms sourceEndpoint_abs_le_budget
+#print sourceEndpoint_abs_le_at_117
+#print axioms sourceEndpoint_abs_le_at_117
+#print covariance_upper_of_strictColumnInterior_upper
+#print axioms covariance_upper_of_strictColumnInterior_upper
+#print residual_upper_of_strictColumnInterior_upper
+#print axioms residual_upper_of_strictColumnInterior_upper
+#print residual_tail_of_strictColumnInterior_tail
+#print axioms residual_tail_of_strictColumnInterior_tail
+#print estimate_of_strictColumnInterior_tail
+#print axioms estimate_of_strictColumnInterior_tail
+#print residual_upper_of_complete_pairing_upper
+#print axioms residual_upper_of_complete_pairing_upper
+#print estimate_of_complete_pairing_tail_direct
+#print axioms estimate_of_complete_pairing_tail_direct
+#print strictColumnInterior_upper_of_complete_pairing_upper
+#print axioms strictColumnInterior_upper_of_complete_pairing_upper
+#print strictColumnInterior_tail_of_complete_pairing_tail
+#print axioms strictColumnInterior_tail_of_complete_pairing_tail
+end FormalResearch.RiemannHypothesis.SourceEndpointRadiusConsumer
+namespace FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+#print CorrelationAssembly.EstimateObligation
+#print CorrelationAssembly.UniformLowerBound
+end FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+```

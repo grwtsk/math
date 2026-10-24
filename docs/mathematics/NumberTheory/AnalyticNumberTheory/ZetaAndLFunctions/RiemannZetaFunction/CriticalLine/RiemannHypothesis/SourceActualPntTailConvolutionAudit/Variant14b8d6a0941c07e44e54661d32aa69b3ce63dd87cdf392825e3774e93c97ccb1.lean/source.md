@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPntTailConvolutionAudit.Variant14b8d6a0941c07e44e54661d32aa69b3ce63dd87cdf392825e3774e93c97ccb1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bc5f6d40a54467b83b85bd03cdd9694499ad3e0e` · SHA-256 `5eaa94e832994e47b3c3b8d2f922e4f3dd066e612f08a42d32de08378953d23a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPntTailConvolution.Variantad8766707ff8bc50e68ab006c7ececae40258731cc2ff3528a02a7409fcfde25","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ad8766707ff8bc50e68ab006c7ececae40258731cc2ff3528a02a7409fcfde25","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPntTailConvolution.Variantad8766707ff8bc50e68ab006c7ececae40258731cc2ff3528a02a7409fcfde25","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"ad8766707ff8bc50e68ab006c7ececae40258731cc2ff3528a02a7409fcfde25","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/reflection-analysis/pnt-tail-convolution/author-audit/SourceActualPntTailConvolutionAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPntTailConvolution
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPntTailConvolution.Variantad8766707ff8bc50e68ab006c7ececae40258731cc2ff3528a02a7409fcfde25
+
+set_option pp.all true
+set_option pp.universes true
+#check RH16ActualPntTailConvolution.actualRelativePsiTimeError_total_eq_neg_gamma_sub_one
+#print axioms RH16ActualPntTailConvolution.actualRelativePsiTimeError_total_eq_neg_gamma_sub_one
+#check RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_eq_neg_tail
+#print axioms RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_eq_neg_tail
+#check RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_abs_le
+#print axioms RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_abs_le
+#check RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_pnt_majorant
+#print axioms RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_pnt_majorant
+#check FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#check FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#check FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualPntMertensLimit_eq_neg_gamma
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMertensGammaCalibration.actualPntMertensLimit_eq_neg_gamma
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualCenteredMangoldtLogError
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution
+#print FormalResearch.RiemannHypothesis.SourceActualPsiPntTimeDecay.actualRelativePsiTimeError
+#print FormalResearch.RiemannHypothesis.SourceMangoldtAbel.mangoldtLogError
+#print FormalResearch.RiemannHypothesis.SourceMangoldtAbel.mangoldtLogPrefix
+#print FormalResearch.RiemannHypothesis.WeightedPrimeMertens.weightedMangoldt
+#print Chebyshev.psi
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"
+```

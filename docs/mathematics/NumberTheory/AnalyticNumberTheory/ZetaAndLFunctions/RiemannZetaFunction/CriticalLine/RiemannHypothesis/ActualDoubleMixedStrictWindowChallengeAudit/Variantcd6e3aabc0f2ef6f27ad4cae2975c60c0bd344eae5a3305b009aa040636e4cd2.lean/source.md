@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualDoubleMixedStrictWindowChallengeAudit.Variantcd6e3aabc0f2ef6f27ad4cae2975c60c0bd344eae5a3305b009aa040636e4cd2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f36eae29638d5dc3ec1f7da302e11288d14bd055` · SHA-256 `38053cde2255d568c8055c45a9b40f4a75a5ff5464cd5dc02521a728788fc351`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualDoubleMixedStrictWindowChallenge.Variantedbf5d45ba758abd44d2ac0e5950a5d78a020b5faae316d8d48d4bb8772d8f64","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"edbf5d45ba758abd44d2ac0e5950a5d78a020b5faae316d8d48d4bb8772d8f64","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualDoubleMixedStrictWindowChallenge.Variantedbf5d45ba758abd44d2ac0e5950a5d78a020b5faae316d8d48d4bb8772d8f64","mathematical_subject":"Foundations.Unclassified","original_sha256":"edbf5d45ba758abd44d2ac0e5950a5d78a020b5faae316d8d48d4bb8772d8f64","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T205411Z-1791320051021231000/ActualDoubleMixedStrictWindowChallengeAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualDoubleMixedStrictWindowChallenge
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualDoubleMixedStrictWindowChallenge.Variantedbf5d45ba758abd44d2ac0e5950a5d78a020b5faae316d8d48d4bb8772d8f64
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.actualMixed_rectangle_correlation_lower
+#print axioms RH16IndependentChallengeNext.actualMixed_rectangle_correlation_lower
+#check RH16IndependentChallengeNext.actualDoubleMixed_firstColumn_kernel_lower
+#print axioms RH16IndependentChallengeNext.actualDoubleMixed_firstColumn_kernel_lower
+#check RH16IndependentChallengeNext.actualMixed_rectangle_exp_prefactor_lower
+#print axioms RH16IndependentChallengeNext.actualMixed_rectangle_exp_prefactor_lower
+#check RH16IndependentChallengeNext.actualDoubleMixed_rectangle_density_lower
+#print axioms RH16IndependentChallengeNext.actualDoubleMixed_rectangle_density_lower
+#check RH16IndependentChallengeNext.actualDoubleMixed_rectangle_strict_support
+#print axioms RH16IndependentChallengeNext.actualDoubleMixed_rectangle_strict_support
+#check RH16IndependentChallengeNext.actualMixed_firstColumn_not_curvature_only
+#print axioms RH16IndependentChallengeNext.actualMixed_firstColumn_not_curvature_only
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.actualMixed_rectangle_correlation_lower
+#print RH16IndependentChallengeNext.actualDoubleMixed_firstColumn_kernel_lower
+#print RH16IndependentChallengeNext.actualMixed_rectangle_exp_prefactor_lower
+#print RH16IndependentChallengeNext.actualDoubleMixed_rectangle_density_lower
+#print RH16IndependentChallengeNext.actualDoubleMixed_rectangle_strict_support
+#print RH16IndependentChallengeNext.actualMixed_firstColumn_not_curvature_only
+```

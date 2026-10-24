@@ -1,0 +1,11 @@
+import SourceActualDoubleMixedKernel
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualDoubleMixedKernel
+#print actualLogColumnSource
+#print actualLogMixedDensity
+#print actualLogFourthKernel
+#print actualLogColumnSource_mixed_derivative
+#print actualLogMixedDensity_mixed_derivative
+#print actualLogColumnSource_at_log
+#print actualLogFourthKernel_at_zero
+#print actualLogFourthKernel_at_zero_ge

@@ -1,0 +1,7 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalOriginCurvature
+
+open FormalResearch.RiemannHypothesis.SourceCriticalOriginCurvature
+
+#print axioms pairedTailTest_second_deriv_at_zero_eq_energy
+#print axioms pairedTailTest_second_deriv_at_zero_neg_of_seven_le
+#print axioms pairedTailTest_second_deriv_at_zero_one

@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPrimeContourResidualAudit.Variant7662aef346fa14702c5a9e6de2c58333209fcf35a1341f2c5a0f369c5e94af32
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6fa6815e29eca0190cf41dd74e7fa72f5f7b34a7` · SHA-256 `7662aef346fa14702c5a9e6de2c58333209fcf35a1341f2c5a0f369c5e94af32`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPrimeContourResidual
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_strictPrime_eq_closedPrimeMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_strictPrime_eq_closedPrimeMoment
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_strictPrime_eq_closedPrimeMoment
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actualInitialPrimeContour_eq_mertensResidual
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actualInitialPrimeContour_eq_mertensResidual
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actualInitialPrimeContour_eq_mertensResidual
+#check FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_mertensResidual_eq_head_add_twoTail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_mertensResidual_eq_head_add_twoTail
+#print FormalResearch.RiemannHypothesis.SourceActualPrimeContourResidual.actual_mertensResidual_eq_head_add_twoTail
+```

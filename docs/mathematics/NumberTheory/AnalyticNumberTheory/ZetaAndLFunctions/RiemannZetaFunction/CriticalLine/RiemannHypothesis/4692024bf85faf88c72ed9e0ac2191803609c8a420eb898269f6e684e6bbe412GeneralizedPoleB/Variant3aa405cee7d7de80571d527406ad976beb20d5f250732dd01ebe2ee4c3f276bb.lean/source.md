@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412GeneralizedPoleB.Variant3aa405cee7d7de80571d527406ad976beb20d5f250732dd01ebe2ee4c3f276bb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `74231d53bc1811afc28708ea459961dfa1849efb` · SHA-256 `4a75d95fa8a080fb7a1d97077a22794c58e3a6d3d2d3691d6316cabe85956996`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.GeneralizedPoleBoundary.Variant4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.GeneralizedPoleBoundary.Variant4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/46/4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412--GeneralizedPoleBoundaryAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.GeneralizedPoleBoundary.Variant4692024bf85faf88c72ed9e0ac2191803609c8a420eb898269f6e684e6bbe412
+
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positiveHalfMoment
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positiveHalfMoment
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.negativeHalfMoment
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.negativeHalfMoment
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decayingFirstWeight
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decayingFirstWeight
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.source_correlation_fixed_tendsto
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.source_correlation_fixed_tendsto
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decaying_first_weight_nonneg
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decaying_first_weight_nonneg
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decaying_first_weight_integrable
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decaying_first_weight_integrable
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decaying_first_weight_integral
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.decaying_first_weight_integral
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.negative_half_moment_eq_weighted_integral
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.negative_half_moment_eq_weighted_integral
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.negative_half_moment_tendsto_four
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.negative_half_moment_tendsto_four
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positive_half_moment_eq_negative
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positive_half_moment_eq_negative
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positive_half_moment_tendsto_four
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positive_half_moment_tendsto_four
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positive_half_moment_eventually_pos
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.positive_half_moment_eventually_pos
+#check FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.not_all_positive_half_moments_zero
+#print axioms FormalResearch.RiemannHypothesis.GeneralizedPoleBoundary.not_all_positive_half_moments_zero
+```

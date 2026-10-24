@@ -1,0 +1,17 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiReciprocalJointAbelAuditPackageProofsqualified.Variant82b3d609f3f3cf090860e886390a3391482c01a4fff3ab2b82c02e12d4092823
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bdaae83ef38655830e4750fc47b1d4a03041a42c` · SHA-256 `82b3d609f3f3cf090860e886390a3391482c01a4fff3ab2b82c02e12d4092823`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiReciprocalJointAbel
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight
+#print FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight_one
+#print FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualReciprocalXiQuotientWeight_at_cutoff
+#print FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualClosedMangoldtXiPair_eq_reciprocal_weight
+#print FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualClosedMangoldtXiPair_eq_reciprocal_abel
+#print FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel.actualAnchoredXiTailPrimitive_eq_reciprocal_abel
+```

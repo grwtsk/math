@@ -1,0 +1,13 @@
+import SourceOneSidedMeanAudit
+#check @RH16OneSidedMeanAudit.actualProperDiagonalInventory
+#print axioms RH16OneSidedMeanAudit.actualProperDiagonalInventory
+#check @RH16OneSidedMeanAudit.actual_proper_diagonal_eq
+#print axioms RH16OneSidedMeanAudit.actual_proper_diagonal_eq
+#check @RH16OneSidedMeanAudit.ledger_one_sided
+#print axioms RH16OneSidedMeanAudit.ledger_one_sided
+#check @RH16OneSidedMeanAudit.residual_one_sided
+#print axioms RH16OneSidedMeanAudit.residual_one_sided
+#check @RH16OneSidedMeanAudit.residual_tail_of_one_sided_diagonal
+#print axioms RH16OneSidedMeanAudit.residual_tail_of_one_sided_diagonal
+#check @RH16OneSidedMeanAudit.estimate_of_one_sided_diagonal
+#print axioms RH16OneSidedMeanAudit.estimate_of_one_sided_diagonal

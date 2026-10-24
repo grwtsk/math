@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualSupportEdgeLowerTracePrintRepairV1.Variant56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d03549336b9332d4c8b747b3eda82ea73bdc594e` · SHA-256 `56d0557ae0c0364cf32fae6d31a51c58779a60f67d163c7dca4e5cfe57b4af22`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSupportEdgeLowerTrace
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_eq_negative_error_integral
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_eq_negative_error_integral
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualLowerTimeFactor_abs_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace.actualCriticalAdjustedLowerColumnTrace_tendsto_zero
+```

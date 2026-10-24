@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant2e6a5a4fef161a87339ab75ec310cc5e8d554e2d2213bda05bfbcea377fa55b1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a0b868194b9aa78cf1523f574712ea1c5ef48e70` · SHA-256 `2e6a5a4fef161a87339ab75ec310cc5e8d554e2d2213bda05bfbcea377fa55b1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualBumpHorizontalStripBudget
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_norm_le_abs_re
+#print axioms FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_norm_le_abs_re
+#check FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_on_strip_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bump_on_strip_norm_le
+#check FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bumpMellinWeight_on_strip_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bumpMellinWeight_on_strip_norm_le
+#check FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bilateral_on_strip_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualBumpHorizontalStripBudget.actual_bilateral_on_strip_norm_le
+```

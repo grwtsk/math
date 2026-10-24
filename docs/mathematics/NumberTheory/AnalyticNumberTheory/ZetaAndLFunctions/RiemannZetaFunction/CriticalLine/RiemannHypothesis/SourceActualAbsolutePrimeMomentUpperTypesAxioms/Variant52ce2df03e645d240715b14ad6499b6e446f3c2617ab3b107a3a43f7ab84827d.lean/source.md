@@ -1,0 +1,54 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpperTypesAxioms.Variant52ce2df03e645d240715b14ad6499b6e446f3c2617ab3b107a3a43f7ab84827d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0a77b2ff997e1ac919daae6724d589f8a9beeedd` · SHA-256 `d16ef39ebd216e6e6968b6d4aa13e9e2a652fd270de04b9b0310dd3fe77d8a98`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.Variant010516932b961b9af3d49269da596e859176badd82807ebdcd27980fb8e82fc2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"010516932b961b9af3d49269da596e859176badd82807ebdcd27980fb8e82fc2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAbsolutePrimeMomentUpper.Variant010516932b961b9af3d49269da596e859176badd82807ebdcd27980fb8e82fc2","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"010516932b961b9af3d49269da596e859176badd82807ebdcd27980fb8e82fc2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T083012Z-1791361812355083000/SourceActualAbsolutePrimeMomentUpperTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAbsolutePrimeMomentUpper
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.Variant010516932b961b9af3d49269da596e859176badd82807ebdcd27980fb8e82fc2
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsolutePrimeMomentUpperConstant
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsolutePrimeMomentUpperConstant
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsolutePrimeMomentUpperConstant_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsolutePrimeMomentUpperConstant_pos
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualClosedPrimeMoment_unit_atom
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualClosedPrimeMoment_unit_atom
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualClosedAbsolutePrimeMoment_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualClosedAbsolutePrimeMoment_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsoluteVariation_inverse_exp_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsoluteVariation_inverse_exp_lower
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsoluteVariation_inverse_eventually_two_sided
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualAbsoluteVariation_inverse_eventually_two_sided
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.ActualPositiveVariationExponentialPrecisionTailBound
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.ActualPositiveVariationExponentialPrecisionTailBound
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualPositiveVariationExponentialPrecisionTailBound_iff_residual
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualPositiveVariationExponentialPrecisionTailBound_iff_residual
+
+#check FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualPositiveVariationExponentialPrecisionTailBound_iff_estimate
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAbsolutePrimeMomentUpper.actualPositiveVariationExponentialPrecisionTailBound_iff_estimate
+```

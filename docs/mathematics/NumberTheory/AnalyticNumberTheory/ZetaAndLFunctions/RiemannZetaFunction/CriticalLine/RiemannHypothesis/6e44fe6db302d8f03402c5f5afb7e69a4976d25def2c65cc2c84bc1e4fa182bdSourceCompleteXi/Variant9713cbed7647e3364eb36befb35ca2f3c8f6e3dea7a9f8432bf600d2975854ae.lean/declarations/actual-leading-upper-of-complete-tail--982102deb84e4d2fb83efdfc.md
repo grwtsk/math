@@ -1,0 +1,90 @@
+# actual_leading_upper_of_complete_tail
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:6208c3a4-7877-8743-ef6c-dc549869fdee",
+  "kind": "theorem",
+  "lexical_name": "actual_leading_upper_of_complete_tail",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "actual-leading-upper-of-complete-tail--982102deb84e4d2fb83efdfc",
+  "source": {
+    "blob": "9ea40eb2582ea701e6ddf0a20c7641cfbe2e042e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 114,
+    "line": 106,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/6e44fe6db302d8f03402c5f5afb7e69a4976d25def2c65cc2c84bc1e4fa182bdSourceCompleteXi/Variant9713cbed7647e3364eb36befb35ca2f3c8f6e3dea7a9f8432bf600d2975854ae.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:982102deb84e4d2fb83efdfcd1c786927d8e582e60fb67b38e8fb743ca1ef379",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/6e44fe6db302d8f03402c5f5afb7e69a4976d25def2c65cc2c84bc1e4fa182bdSourceCompleteXi/Variant9713cbed7647e3364eb36befb35ca2f3c8f6e3dea7a9f8432bf600d2975854ae.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:6208c3a4-7877-8743-ef6c-dc549869fdee`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 106–114.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem actual_leading_upper_of_complete_tail (K R A : ℝ)
+    (hA : max 25600 (calibratedRadius R) ≤ A) (htail : -K ≤ completeXiTail A) :
+    actualLeadingRenormalizedTail A ≤ tailAtomBudget K - 3 / 8 +
+      criticalBaselineCorrection (calibratedRadius R) - (riemannZeta (1 / 2)).re +
+        3103 / 50 := by
+  apply actual_leading_upper_of_residual_upper A _ ((le_max_left _ _).trans hA)
+  exact residual_upper_of_complete_tail K R A ((le_max_right _ _).trans hA) htail
+
+end RH16CompleteXiTail
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/6e44fe6db302d8f03402c5f5afb7e69a4976d25def2c65cc2c84bc1e4fa182bdSourceCompleteXi/Variant9713cbed7647e3364eb36befb35ca2f3c8f6e3dea7a9f8432bf600d2975854ae.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/6e44fe6db302d8f03402c5f5afb7e69a4976d25def2c65cc2c84bc1e4fa182bdSourceCompleteXi/Variant9713cbed7647e3364eb36befb35ca2f3c8f6e3dea7a9f8432bf600d2975854ae.lean#L106).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9ea40eb2582ea701e6ddf0a20c7641cfbe2e042e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

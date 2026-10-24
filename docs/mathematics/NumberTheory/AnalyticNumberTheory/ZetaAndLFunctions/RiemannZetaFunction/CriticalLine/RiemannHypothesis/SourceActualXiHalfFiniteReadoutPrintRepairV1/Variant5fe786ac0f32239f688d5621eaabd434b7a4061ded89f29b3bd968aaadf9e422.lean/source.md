@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiHalfFiniteReadoutPrintRepairV1.Variant5fe786ac0f32239f688d5621eaabd434b7a4061ded89f29b3bd968aaadf9e422
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e7adbf31da38b4c104340e33c7a66f73cef579bb` · SHA-256 `5fe786ac0f32239f688d5621eaabd434b7a4061ded89f29b3bd968aaadf9e422`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiHalfFiniteReadout
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualMangoldtHalfWindowSeven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualMangoldtHalfWindowSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualMangoldtHalfWindowSeven
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualXi_half_window_eq_finite
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualXi_half_window_eq_finite
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualXi_half_window_eq_finite
+#check FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualAnchoredXiTailPrimitive_eq_finite
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualAnchoredXiTailPrimitive_eq_finite
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualAnchoredXiTailPrimitive_eq_finite
+```

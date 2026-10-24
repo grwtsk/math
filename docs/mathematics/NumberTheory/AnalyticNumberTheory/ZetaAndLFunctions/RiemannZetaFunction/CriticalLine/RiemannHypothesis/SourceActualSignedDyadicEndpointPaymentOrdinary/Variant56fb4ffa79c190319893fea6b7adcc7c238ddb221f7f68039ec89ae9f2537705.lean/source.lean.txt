@@ -1,0 +1,22 @@
+import SourceActualSignedDyadicEndpointPayment
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedDyadicEndpointPayment.actualCriticalZeroHeightHead_re_mono
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedDyadicEndpointPayment.actual_compensated_dyadic_endpoint_norm
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedDyadicEndpointPayment.actual_offAxis_dyadic_endpoint_real_bounds
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedDyadicEndpointPayment.actual_compensated_dyadic_shell_hasSum
+
+#print FormalResearch.RiemannHypothesis.SourceActualSignedDyadicEndpointPayment.actual_good_dyadic_exact_compensation_budget

@@ -1,0 +1,9 @@
+import SourceCutoffOneEstimateConsumer
+
+namespace FormalResearch.RiemannHypothesis.SourceCutoffOneEstimateConsumer
+
+#check estimate_of_cutoffOne_baseline_tail
+#print axioms estimate_of_cutoffOne_baseline_tail
+#print estimate_of_cutoffOne_baseline_tail
+
+end FormalResearch.RiemannHypothesis.SourceCutoffOneEstimateConsumer

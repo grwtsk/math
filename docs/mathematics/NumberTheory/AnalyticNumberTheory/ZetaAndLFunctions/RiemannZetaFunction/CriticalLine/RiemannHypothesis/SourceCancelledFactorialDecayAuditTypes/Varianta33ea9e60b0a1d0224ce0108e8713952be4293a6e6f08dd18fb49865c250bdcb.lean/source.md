@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialDecayAuditTypes.Varianta33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f608219084c7649a46e52d8689e6754381c16548` · SHA-256 `a33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCancelledFactorialDecay
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+```

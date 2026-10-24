@@ -1,0 +1,174 @@
+# ID
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "aa46871559d7a903f636955b5a3fa7b11259c755",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 20,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/27/2768d8e2dbdbef8768b3132febd64505747dafda1388cae7edd291ed22967db9.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:6f4c70c8-7102-a8c6-19bf-a9dd071d049b",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:86de2c38-462c-3e74-a986-aaff5b7fad5d",
+  "kind": "theorem",
+  "lexical_name": "ID",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "id--efa851eba4fc77cdb318663f",
+  "source": {
+    "blob": "aa46871559d7a903f636955b5a3fa7b11259c755",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 100,
+    "line": 20,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Declarations/Variant2768d8e2dbdbef8768b3132febd64505747dafda1388cae7edd291ed22967db9.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:efa851eba4fc77cdb318663fffedb23970185027141d8046ca79653962cbbde7",
+  "verification": {
+    "reference": "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Declarations/Variant2768d8e2dbdbef8768b3132febd64505747dafda1388cae7edd291ed22967db9.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:86de2c38-462c-3e74-a986-aaff5b7fad5d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 20–100.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+   theorem ID when its mathematical identity has changed.
+10. `MathematicalTooling` is for genuinely reusable mathematics; `Shared` is for
+    demonstrated reuse of project-specific definitions, not anticipated reuse.
+
+## Statements and proofs
+
+Define the exact proposition only after its mathematical meaning is specified.
+For the Riemann Hypothesis, the canonical proposition name is
+`FormalResearch.RiemannHypothesis.RiemannHypothesis`; an eventual proof would be
+the separate declaration
+`FormalResearch.RiemannHypothesis.riemann_hypothesis`.
+
+These are reserved naming examples, not claims that either declaration currently
+exists. Do not insert an arbitrary proposition, `True`, an axiom, or a `sorry`
+proof merely to populate a planned module. Documentation-only modules and partial
+infrastructure are appropriate until real mathematics is available.
+
+A substantial result can grow through `Definitions.lean`, `Statement.lean`,
+`Lemmas/`, `Construction/`, and `Main.lean`, with more specific mathematical
+submodules where useful. Supporting lemmas need publication entries only when
+they become independently significant results.
+
+## Source organization
+
+Begin definitions in the family that needs them. Reusable mathematical machinery
+belongs in a semantic location under `FormalResearch.MathematicalTooling` once
+its generality is established. Project-specific definitions used by two genuinely
+independent programs are candidates for `FormalResearch.Shared`, such as
+`Syntax`, `Semantics`, or `Verification`. Generally useful mathematics may
+eventually belong upstream in Mathlib.
+
+Keep accepted source reachable from `FormalResearch.lean`, either through a
+family aggregator or by an explicit root import. Family aggregators may remain
+documentation-only when making them import-bearing would force a repository-wide
+license-header decision that has not been made. Creating a `.lean` file outside
+the root import graph does not by itself add it to the default build. Every
+maintained Lean source file must compile; do not hide unfinished proofs in
+unimported source.
+
+The checked-in Lake configuration disables both `autoImplicit` and
+`relaxedAutoImplicit` and enables the standard Mathlib linter set except for
+`linter.style.header`. That style check hard-codes Apache-2.0 legal metadata,
+while this repository currently declares no source license; it is disabled rather
+than fabricating a license statement. This exception does not suppress Lean
+warnings, proof checks, theorem registry resolution, or axiom auditing. A
+misspelled identifier must not silently alter a theorem's quantification.
+
+## Verification layers
+
+Run `./scripts/verify.sh` before committing. It checks that the dependency manifest
+exists, executes `lake build --wfail`, resolves every real theorem registry target,
+prints each target declaration and its transitive axioms, rejects `sorryAx`, runs
+`lake lint`, and then runs `git diff --check`. With normal `warn.sorry` behavior,
+a `sorry` warning also fails the build. Do not suppress such warnings to bypass
+this gate.
+
+The local script is a source-acceptance gate, not a complete publication verifier.
+In particular, manifest existence does not establish that the lock is committed,
+and a successful source audit does not by itself bind the result to an immutable
+Git commit or generate publication evidence.
+
+The complete acceptance boundary for `main` is:
+
+- All maintained Lean source compiles.
+- No accepted declaration depends on `sorryAx`.
+- Publication declarations receive an axiom dependency audit.
+- Each real theorem registry entry resolves to its module and declaration.
+- The dependency lock and toolchain are committed with the source.
+
+The publication verifier must repeat the audit for the exact immutable release,
+record and review all remaining axioms, and bind that evidence to the release
+commit. Lean's foundational axioms must be distinguished from project assumptions;
+kernel acceptance does not make an assumed research claim an unconditional
+theorem. `scripts/audit-declaration.sh` performs the exact `#print` and
+`#print axioms` inspection used by the source gate.
+
+Work directly on `main` by default and preserve concurrent or unrelated edits.
+Use ignored `scratch/` for incomplete experiments. Create a work branch only
+when explicitly requested or direct work on `main` is technically impossible;
+branch naming is specified in [NAMING.md](NAMING.md). Do not weaken the acceptance
+boundary to accommodate an unfinished proof.
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../../../verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Declarations/Variant2768d8e2dbdbef8768b3132febd64505747dafda1388cae7edd291ed22967db9.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Declarations/Variant2768d8e2dbdbef8768b3132febd64505747dafda1388cae7edd291ed22967db9.lean#L20).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `aa46871559d7a903f636955b5a3fa7b11259c755` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

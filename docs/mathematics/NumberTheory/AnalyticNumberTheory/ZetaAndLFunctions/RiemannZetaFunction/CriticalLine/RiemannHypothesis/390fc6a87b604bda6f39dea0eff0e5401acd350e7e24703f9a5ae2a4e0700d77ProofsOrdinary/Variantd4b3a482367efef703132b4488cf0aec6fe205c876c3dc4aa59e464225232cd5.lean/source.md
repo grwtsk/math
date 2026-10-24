@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77ProofsOrdinary.Variantd4b3a482367efef703132b4488cf0aec6fe205c876c3dc4aa59e464225232cd5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `447ffa6d79f1f1f6e86648b127895e40a26d7372` · SHA-256 `d3f05370ac660dec826a52f1b338f78e6748ddc92adaa33bc35975c9cb5958e5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.Variant390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualNegativeEdgeMangoldt.Variant390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-boundary-next/owner57/20261007T072529Z/bytes/390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77--ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualNegativeEdgeMangoldt
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.Variant390fc6a87b604bda6f39dea0eff0e5401acd350e7e24703f9a5ae2a4e0700d77
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeConstant
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeWindow
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeMangoldtBlock
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeComplement
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeConstant_pos
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeMass_eq_psi
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeMass_eventually_lower
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeMangoldtBlock_eventually_negative
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualResidual_eq_negativeEdge_add_complement
+#print FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeMangoldt.actualNegativeEdgeComplement_eventually_above_residual
+```

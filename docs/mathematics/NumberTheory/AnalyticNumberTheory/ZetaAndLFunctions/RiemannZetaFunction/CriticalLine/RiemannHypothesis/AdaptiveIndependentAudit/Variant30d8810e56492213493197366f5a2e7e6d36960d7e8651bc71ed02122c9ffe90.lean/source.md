@@ -1,0 +1,57 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.AdaptiveIndependentAudit.Variant30d8810e56492213493197366f5a2e7e6d36960d7e8651bc71ed02122c9ffe90
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e614b39c74ab3b67f1732087e33bd6d8d0b59861` · SHA-256 `357028673a5e771ff02b76214505b9d6597c050264c32ce624dbf967ed322827`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAdaptiveVaughanSignedMain.Variant9c3e93bdd2fc2e14cf2e7ced2cef2ef418b463ad9a9d13583f1279e0a6debc50","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9c3e93bdd2fc2e14cf2e7ced2cef2ef418b463ad9a9d13583f1279e0a6debc50","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceAdaptiveVaughanSignedMain.Variant9c3e93bdd2fc2e14cf2e7ced2cef2ef418b463ad9a9d13583f1279e0a6debc50","mathematical_subject":"Foundations.Unclassified","original_sha256":"9c3e93bdd2fc2e14cf2e7ced2cef2ef418b463ad9a9d13583f1279e0a6debc50","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-refocus/mathematical-review/adaptive-independent-20261007T055419Z/AdaptiveIndependentAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceAdaptiveVaughanSignedMain
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceAdaptiveVaughanSignedMain.Variant9c3e93bdd2fc2e14cf2e7ced2cef2ef418b463ad9a9d13583f1279e0a6debc50
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+#check RH16AdaptiveVaughan.complete_long_long_vanishes
+#print RH16AdaptiveVaughan.complete_long_long_vanishes
+#print axioms RH16AdaptiveVaughan.complete_long_long_vanishes
+#check RH16AdaptiveVaughan.quotient_no_long_products
+#print RH16AdaptiveVaughan.quotient_no_long_products
+#print axioms RH16AdaptiveVaughan.quotient_no_long_products
+#check RH16AdaptiveVaughan.finite_vaughan_no_long_products
+#print RH16AdaptiveVaughan.finite_vaughan_no_long_products
+#print axioms RH16AdaptiveVaughan.finite_vaughan_no_long_products
+#check RH16AdaptiveVaughan.adaptiveMangoldtDepth
+#print RH16AdaptiveVaughan.adaptiveMangoldtDepth
+#print axioms RH16AdaptiveVaughan.adaptiveMangoldtDepth
+#check RH16AdaptiveVaughan.adaptiveSampledHead
+#print RH16AdaptiveVaughan.adaptiveSampledHead
+#print axioms RH16AdaptiveVaughan.adaptiveSampledHead
+#check RH16AdaptiveVaughan.fullMangoldtRow_eq_adaptiveSampledHead
+#print RH16AdaptiveVaughan.fullMangoldtRow_eq_adaptiveSampledHead
+#print axioms RH16AdaptiveVaughan.fullMangoldtRow_eq_adaptiveSampledHead
+#check RH16AdaptiveVaughan.adaptiveLogSample
+#print RH16AdaptiveVaughan.adaptiveLogSample
+#print axioms RH16AdaptiveVaughan.adaptiveLogSample
+#check RH16AdaptiveVaughan.adaptivePlainSample
+#print RH16AdaptiveVaughan.adaptivePlainSample
+#print axioms RH16AdaptiveVaughan.adaptivePlainSample
+#check RH16AdaptiveVaughan.adaptiveIndependentMain
+#print RH16AdaptiveVaughan.adaptiveIndependentMain
+#print axioms RH16AdaptiveVaughan.adaptiveIndependentMain
+#check RH16AdaptiveVaughan.adaptiveSignedSamplingError
+#print RH16AdaptiveVaughan.adaptiveSignedSamplingError
+#print axioms RH16AdaptiveVaughan.adaptiveSignedSamplingError
+#check RH16AdaptiveVaughan.fullMangoldtRow_eq_adaptiveIndependentMain_add_signedError
+#print RH16AdaptiveVaughan.fullMangoldtRow_eq_adaptiveIndependentMain_add_signedError
+#print axioms RH16AdaptiveVaughan.fullMangoldtRow_eq_adaptiveIndependentMain_add_signedError
+#check RH16AdaptiveVaughan.actual_residual_eq_adaptiveIndependentMain_add_signedError
+#print RH16AdaptiveVaughan.actual_residual_eq_adaptiveIndependentMain_add_signedError
+#print axioms RH16AdaptiveVaughan.actual_residual_eq_adaptiveIndependentMain_add_signedError
+```

@@ -1,0 +1,21 @@
+import SourceSquarefreeLedgerRadius
+set_option linter.hashCommand false
+#check RH16SquarefreeLedgerRadius.squarefreeLedgerCost_antitone
+#print axioms RH16SquarefreeLedgerRadius.squarefreeLedgerCost_antitone
+#check RH16SquarefreeLedgerRadius.squarefreeLedgerCost_ninety_one_lt_1305
+#print axioms RH16SquarefreeLedgerRadius.squarefreeLedgerCost_ninety_one_lt_1305
+#check RH16SquarefreeLedgerRadius.squarefreeLedgerCost_lt_1305
+#print axioms RH16SquarefreeLedgerRadius.squarefreeLedgerCost_lt_1305
+#check RH16SquarefreeLedgerRadius.actual_ledger_error_tail_lt_1305
+#print axioms RH16SquarefreeLedgerRadius.actual_ledger_error_tail_lt_1305
+#check RH16SquarefreeLedgerRadius.all_real_lower_with_fixed_squarefree_cap
+#print axioms RH16SquarefreeLedgerRadius.all_real_lower_with_fixed_squarefree_cap
+#check RH16SquarefreeLedgerRadius.actual_negative_defect_cap_fixed_squarefree
+#print axioms RH16SquarefreeLedgerRadius.actual_negative_defect_cap_fixed_squarefree
+#check RH16SquarefreeLedgerRadius.estimate_of_readout_fixed_squarefree_cap
+#print axioms RH16SquarefreeLedgerRadius.estimate_of_readout_fixed_squarefree_cap
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.AsymptoticTypes.Variant0d47b0ceb03002631470d540f256814d873f854c33ebbf25c5536d020e4f6d39
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1d1dcbc1391963a7d9a6277face1350ddc0fdf8e` · SHA-256 `0d47b0ceb03002631470d540f256814d873f854c33ebbf25c5536d020e4f6d39`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualLeadingAsymptotic
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_pairing_sub_zeta_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_pairing_sub_zeta_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.actualLeadingResidualEnvelope_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualLeadingAsymptotic.residual_sub_actual_leading_tendsto_zero
+```

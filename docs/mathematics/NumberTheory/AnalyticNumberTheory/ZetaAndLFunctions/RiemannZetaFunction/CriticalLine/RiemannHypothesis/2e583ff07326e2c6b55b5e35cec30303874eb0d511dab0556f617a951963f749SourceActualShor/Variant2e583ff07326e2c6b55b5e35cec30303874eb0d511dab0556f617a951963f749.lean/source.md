@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.2e583ff07326e2c6b55b5e35cec30303874eb0d511dab0556f617a951963f749SourceActualShor.Variant2e583ff07326e2c6b55b5e35cec30303874eb0d511dab0556f617a951963f749
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0fe5a8b5ec548fba9e45282f14a653cb0007c3db` · SHA-256 `2e583ff07326e2c6b55b5e35cec30303874eb0d511dab0556f617a951963f749`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualShortFirstPrimeBlock
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualShortFirstPrimeBlock
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualLongFirstPrimeBlock
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualShortFirstPrime_unweighted_eq_theta
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualShortFirstPrimeBlock_ge_theta
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualShortFirstPrimeBlock_eventually_linear_lower
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualFirstPrimeMoment_eq_short_add_long
+#print FormalResearch.RiemannHypothesis.SourceActualShortFirstPrimeBlock.actualLongFirstPrime_with_main_eventually_below_residual_sub_linear
+```

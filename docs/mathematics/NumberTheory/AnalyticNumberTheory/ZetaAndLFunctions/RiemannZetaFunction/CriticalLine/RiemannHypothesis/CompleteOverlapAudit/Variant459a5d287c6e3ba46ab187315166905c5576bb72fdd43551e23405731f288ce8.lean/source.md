@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.CompleteOverlapAudit.Variant459a5d287c6e3ba46ab187315166905c5576bb72fdd43551e23405731f288ce8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6471be7efca1b412e55d34e270784331f174b937` · SHA-256 `c87a71fc71140d0207a8b68580694ee28842e5f5d1cf4d64a33ad66d9eadc796`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteOverlapXiTail.Varianta0b0c109e5e6c7e21ba4163a8b001ce7fecb2f7b17d18e2d951226b41b836def","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a0b0c109e5e6c7e21ba4163a8b001ce7fecb2f7b17d18e2d951226b41b836def","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCompleteOverlapXiTail.Varianta0b0c109e5e6c7e21ba4163a8b001ce7fecb2f7b17d18e2d951226b41b836def","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a0b0c109e5e6c7e21ba4163a8b001ce7fecb2f7b17d18e2d951226b41b836def","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-joint/independent-reconstruction/CompleteOverlapAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteOverlapXiTail
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteOverlapXiTail.Varianta0b0c109e5e6c7e21ba4163a8b001ce7fecb2f7b17d18e2d951226b41b836def
+
+open FormalResearch.RiemannHypothesis.SourceRestrictedLowTimeWork
+open FormalResearch.RiemannHypothesis.SourceSamplingLedger
+open FormalResearch.RiemannHypothesis.SourceSamplingLedger
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+
+#check RH16CompleteOverlapPrimeRow.retainedSpatialStrip
+#print RH16CompleteOverlapPrimeRow.retainedSpatialStrip
+#print axioms RH16CompleteOverlapPrimeRow.retainedSpatialStrip
+
+#check RH16CompleteOverlapPrimeRow.finiteLedgerCorrection
+#print RH16CompleteOverlapPrimeRow.finiteLedgerCorrection
+#print axioms RH16CompleteOverlapPrimeRow.finiteLedgerCorrection
+
+#check RH16CompleteOverlapPrimeRow.complete_overlap_eq_actual_residual_row
+#print RH16CompleteOverlapPrimeRow.complete_overlap_eq_actual_residual_row
+#print axioms RH16CompleteOverlapPrimeRow.complete_overlap_eq_actual_residual_row
+
+#check RH16CompleteOverlapPrimeRow.complete_overlap_eq_closed_prime_row
+#print RH16CompleteOverlapPrimeRow.complete_overlap_eq_closed_prime_row
+#print axioms RH16CompleteOverlapPrimeRow.complete_overlap_eq_closed_prime_row
+
+#check RH16CompleteOverlapPrimeRow.complete_overlap_eq_full_mangoldt_row
+#print RH16CompleteOverlapPrimeRow.complete_overlap_eq_full_mangoldt_row
+#print axioms RH16CompleteOverlapPrimeRow.complete_overlap_eq_full_mangoldt_row
+
+#check RH16CompleteOverlapPrimeRow.finiteLedgerCorrection_uniform_abs_bound
+#print RH16CompleteOverlapPrimeRow.finiteLedgerCorrection_uniform_abs_bound
+#print axioms RH16CompleteOverlapPrimeRow.finiteLedgerCorrection_uniform_abs_bound
+
+#check RH16CompleteOverlapXiTail.completeXiHead
+#print RH16CompleteOverlapXiTail.completeXiHead
+#print axioms RH16CompleteOverlapXiTail.completeXiHead
+
+#check RH16CompleteOverlapXiTail.remaining_work_eq_gamma_head_tail
+#print RH16CompleteOverlapXiTail.remaining_work_eq_gamma_head_tail
+#print axioms RH16CompleteOverlapXiTail.remaining_work_eq_gamma_head_tail
+
+#check RH16CompleteOverlapXiTail.complete_tail_eq_joint_overlap_corrections
+#print RH16CompleteOverlapXiTail.complete_tail_eq_joint_overlap_corrections
+#print axioms RH16CompleteOverlapXiTail.complete_tail_eq_joint_overlap_corrections
+
+#check RH16CompleteOverlapXiTail.complete_tail_lower_of_joint_inputs
+#print RH16CompleteOverlapXiTail.complete_tail_lower_of_joint_inputs
+#print axioms RH16CompleteOverlapXiTail.complete_tail_lower_of_joint_inputs
+
+#check actual_surplus_eq_remainingOverlap_sub_strip
+#print actual_surplus_eq_remainingOverlap_sub_strip
+#print axioms actual_surplus_eq_remainingOverlap_sub_strip
+
+#check actual_residual_decomposition
+#print actual_residual_decomposition
+#print axioms actual_residual_decomposition
+
+#check actual_ledger_uniform_error
+#print actual_ledger_uniform_error
+#print axioms actual_ledger_uniform_error
+```

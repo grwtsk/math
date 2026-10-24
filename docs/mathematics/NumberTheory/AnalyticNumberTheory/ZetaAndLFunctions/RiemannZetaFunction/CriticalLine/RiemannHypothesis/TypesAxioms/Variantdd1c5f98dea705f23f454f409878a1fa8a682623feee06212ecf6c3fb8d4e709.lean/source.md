@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantdd1c5f98dea705f23f454f409878a1fa8a682623feee06212ecf6c3fb8d4e709
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8d80d69b3c2bfbd5855512d856ddd8e12d9d648e` · SHA-256 `a73fb56613ca363808454ceacd754bd92df75843656b63671f7cdf2ec9de3758`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerBandStorageResidual.Variant0bea9d7718f261b1f1c6e3bf858aba8f9624dc9bccf7fa1d4735ac9f90bbaba0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0bea9d7718f261b1f1c6e3bf858aba8f9624dc9bccf7fa1d4735ac9f90bbaba0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerBandStorageResidual.Variant0bea9d7718f261b1f1c6e3bf858aba8f9624dc9bccf7fa1d4735ac9f90bbaba0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0bea9d7718f261b1f1c6e3bf858aba8f9624dc9bccf7fa1d4735ac9f90bbaba0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/source-readbacks/owner-ignored-latest-20261007T154040Z/preserved/scratch/rh16-continuation-20261006-challenge-next/SourceActualEulerBandStorageResidual-AllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerBandStorageResidual
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerBandStorageResidual.Variant0bea9d7718f261b1f1c6e3bf858aba8f9624dc9bccf7fa1d4735ac9f90bbaba0
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeBandStorage
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeBandStorage
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeHead_real_eq_full_storage
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeHead_real_eq_full_storage
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_eventual_upper_iff_full_band_storage_payment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_eventual_upper_iff_full_band_storage_payment
+```

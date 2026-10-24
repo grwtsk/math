@@ -1,0 +1,105 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiPrincipalAudit.Variantaa0c4cb0f87a6edacdff1cbfcd2286424e66413dcfa4fa0eaf9d29eb3cd83a3e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a88186d55b80fe94cd94c062c9f8e395aa0e5e57` · SHA-256 `f9c940ebf23249c0e4f6fdd166942585baac40560c80fe054a6250adb0c7e952`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiPrincipalTailWitness.Variant7c36e6abd92306da9ead2cd9a8540ec7f04359e40f6767fe030b51e7e5f0d127","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7c36e6abd92306da9ead2cd9a8540ec7f04359e40f6767fe030b51e7e5f0d127","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceActualXiPrincipalTailWitness.Variant7c36e6abd92306da9ead2cd9a8540ec7f04359e40f6767fe030b51e7e5f0d127","mathematical_subject":"Foundations.Unclassified","original_sha256":"7c36e6abd92306da9ead2cd9a8540ec7f04359e40f6767fe030b51e7e5f0d127","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-joint/boundary/frozen-author/SourceActualXiPrincipalAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiPrincipalTailWitness
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiPrincipalTailWitness.Variant7c36e6abd92306da9ead2cd9a8540ec7f04359e40f6767fe030b51e7e5f0d127
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+
+#check RH16ActualXiWholeHead.wholeHeadHeight
+#print RH16ActualXiWholeHead.wholeHeadHeight
+#print axioms RH16ActualXiWholeHead.wholeHeadHeight
+
+#check RH16ActualXiWholeHead.wholeHeadBudget
+#print RH16ActualXiWholeHead.wholeHeadBudget
+#print axioms RH16ActualXiWholeHead.wholeHeadBudget
+
+#check RH16ActualXiWholeHead.actualWholeXiHead
+#print RH16ActualXiWholeHead.actualWholeXiHead
+#print axioms RH16ActualXiWholeHead.actualWholeXiHead
+
+#check RH16ActualXiWholeHead.gammaTraceBudget
+#print RH16ActualXiWholeHead.gammaTraceBudget
+#print axioms RH16ActualXiWholeHead.gammaTraceBudget
+
+#check RH16ActualXiWholeHead.wholeHeadHeight_nonneg
+#print RH16ActualXiWholeHead.wholeHeadHeight_nonneg
+#print axioms RH16ActualXiWholeHead.wholeHeadHeight_nonneg
+
+#check RH16ActualXiWholeHead.wholeHeadBudget_nonneg
+#print RH16ActualXiWholeHead.wholeHeadBudget_nonneg
+#print axioms RH16ActualXiWholeHead.wholeHeadBudget_nonneg
+
+#check RH16ActualXiWholeHead.gammaTraceBudget_nonneg
+#print RH16ActualXiWholeHead.gammaTraceBudget_nonneg
+#print axioms RH16ActualXiWholeHead.gammaTraceBudget_nonneg
+
+#check RH16ActualXiWholeHead.shiftedActualChebyshev_abs_le_wholeHeadHeight
+#print RH16ActualXiWholeHead.shiftedActualChebyshev_abs_le_wholeHeadHeight
+#print axioms RH16ActualXiWholeHead.shiftedActualChebyshev_abs_le_wholeHeadHeight
+
+#check RH16ActualXiWholeHead.actual_whole_head_density_abs_le
+#print RH16ActualXiWholeHead.actual_whole_head_density_abs_le
+#print axioms RH16ActualXiWholeHead.actual_whole_head_density_abs_le
+
+#check RH16ActualXiWholeHead.actual_whole_head_intervalIntegrable
+#print RH16ActualXiWholeHead.actual_whole_head_intervalIntegrable
+#print axioms RH16ActualXiWholeHead.actual_whole_head_intervalIntegrable
+
+#check RH16ActualXiWholeHead.actualWholeXiHead_abs_le
+#print RH16ActualXiWholeHead.actualWholeXiHead_abs_le
+#print axioms RH16ActualXiWholeHead.actualWholeXiHead_abs_le
+
+#check RH16ActualXiWholeHead.actualWholeXiHead_upper
+#print RH16ActualXiWholeHead.actualWholeXiHead_upper
+#print axioms RH16ActualXiWholeHead.actualWholeXiHead_upper
+
+#check RH16ActualXiWholeHead.actual_gamma_trace_abs_le
+#print RH16ActualXiWholeHead.actual_gamma_trace_abs_le
+#print axioms RH16ActualXiWholeHead.actual_gamma_trace_abs_le
+
+#check RH16ActualXiWholeHead.actual_gamma_trace_upper
+#print RH16ActualXiWholeHead.actual_gamma_trace_upper
+#print axioms RH16ActualXiWholeHead.actual_gamma_trace_upper
+
+#check RH16ActualXiBoundaryApplication.completeXiHead_eq_actualWholeXiHead
+#print RH16ActualXiBoundaryApplication.completeXiHead_eq_actualWholeXiHead
+#print axioms RH16ActualXiBoundaryApplication.completeXiHead_eq_actualWholeXiHead
+
+#check RH16ActualXiBoundaryApplication.residual_upper_implies_tail_lower_with_closed_boundary
+#print RH16ActualXiBoundaryApplication.residual_upper_implies_tail_lower_with_closed_boundary
+#print axioms RH16ActualXiBoundaryApplication.residual_upper_implies_tail_lower_with_closed_boundary
+
+#check RH16ActualXiBoundaryApplication.estimate_of_complete_block_without_boundary
+#print RH16ActualXiBoundaryApplication.estimate_of_complete_block_without_boundary
+#print axioms RH16ActualXiBoundaryApplication.estimate_of_complete_block_without_boundary
+
+#check RH16ActualXiPrincipalTailWitness.principalCompleteTailBudget
+#print RH16ActualXiPrincipalTailWitness.principalCompleteTailBudget
+#print axioms RH16ActualXiPrincipalTailWitness.principalCompleteTailBudget
+
+#check RH16ActualXiPrincipalTailWitness.principalCompleteTailBudget_nonneg
+#print RH16ActualXiPrincipalTailWitness.principalCompleteTailBudget_nonneg
+#print axioms RH16ActualXiPrincipalTailWitness.principalCompleteTailBudget_nonneg
+
+#check RH16ActualXiPrincipalTailWitness.complete_tail_lower_of_actual_signed_block
+#print RH16ActualXiPrincipalTailWitness.complete_tail_lower_of_actual_signed_block
+#print axioms RH16ActualXiPrincipalTailWitness.complete_tail_lower_of_actual_signed_block
+
+#check RH16ActualXiPrincipalTailWitness.complete_tail_witness_of_actual_signed_block
+#print RH16ActualXiPrincipalTailWitness.complete_tail_witness_of_actual_signed_block
+#print axioms RH16ActualXiPrincipalTailWitness.complete_tail_witness_of_actual_signed_block
+
+```

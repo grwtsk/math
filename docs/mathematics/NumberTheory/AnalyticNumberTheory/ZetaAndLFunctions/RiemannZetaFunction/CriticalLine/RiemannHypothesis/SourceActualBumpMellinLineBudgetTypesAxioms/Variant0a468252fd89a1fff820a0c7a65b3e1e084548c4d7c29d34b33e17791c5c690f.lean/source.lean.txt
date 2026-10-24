@@ -1,0 +1,16 @@
+import SourceActualBumpMellinLineBudget
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight
+#check FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bump_on_right_line_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bump_on_right_line_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight_on_line_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualBumpMellinLineBudget.bumpMellinWeight_on_line_norm_le

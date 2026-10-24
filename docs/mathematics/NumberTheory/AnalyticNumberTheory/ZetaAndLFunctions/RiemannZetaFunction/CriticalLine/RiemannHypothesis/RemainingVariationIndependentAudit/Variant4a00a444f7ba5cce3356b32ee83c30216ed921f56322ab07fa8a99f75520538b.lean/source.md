@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RemainingVariationIndependentAudit.Variant4a00a444f7ba5cce3356b32ee83c30216ed921f56322ab07fa8a99f75520538b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0d43861a64c6362a14d614edc10e9117b98ff859` · SHA-256 `fb0b655123c34522aef2b667853e65b0c041881564fd1b7623468140270d3de8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRemainingVariationConsumer.Variant8f028a79c0ffb671ef0a668dd529380e7e7dfe3cfc7f6e0f646c3614dc22f619","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8f028a79c0ffb671ef0a668dd529380e7e7dfe3cfc7f6e0f646c3614dc22f619","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceRemainingVariationConsumer.Variant8f028a79c0ffb671ef0a668dd529380e7e7dfe3cfc7f6e0f646c3614dc22f619","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"8f028a79c0ffb671ef0a668dd529380e7e7dfe3cfc7f6e0f646c3614dc22f619","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259/independent-variation-replay/RemainingVariationIndependentAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceRemainingVariationConsumer
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRemainingVariationConsumer.Variant8f028a79c0ffb671ef0a668dd529380e7e7dfe3cfc7f6e0f646c3614dc22f619
+
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+
+open FormalResearch.RiemannHypothesis.SourceRemainingVariationObstruction
+open FormalResearch.RiemannHypothesis.SourceRemainingVariationConsumer
+
+#check remainingDerivativeMass
+#check criticalPrimeTest_deriv_early_lower
+#check remainingDerivativeMass_exponential_lower
+#check remainingDerivativeMass_linear_lower
+#check remainingDerivativeMass_not_eventually_bounded
+#check remainingAtomWork_abs_le_elementary_budget
+#check elementary_remaining_budget_not_eventually_bounded
+#print axioms remainingDerivativeMass
+#print axioms criticalPrimeTest_deriv_early_lower
+#print axioms remainingDerivativeMass_exponential_lower
+#print axioms remainingDerivativeMass_linear_lower
+#print axioms remainingDerivativeMass_not_eventually_bounded
+#print axioms remainingAtomWork_abs_le_elementary_budget
+#print axioms elementary_remaining_budget_not_eventually_bounded
+```

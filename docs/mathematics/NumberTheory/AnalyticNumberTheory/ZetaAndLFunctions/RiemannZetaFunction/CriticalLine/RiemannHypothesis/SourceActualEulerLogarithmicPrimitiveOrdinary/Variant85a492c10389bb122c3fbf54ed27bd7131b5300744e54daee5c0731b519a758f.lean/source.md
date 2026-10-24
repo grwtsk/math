@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerLogarithmicPrimitiveOrdinary.Variant85a492c10389bb122c3fbf54ed27bd7131b5300744e54daee5c0731b519a758f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `289d8270874ce94169300a95b7d7ed95fa800d1e` · SHA-256 `37b7483cda5165eb7abc01e73b30ec51e11205b73355fd484f110f7b1819a2dd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.Variant0f46319a33c50becca3ebbc0ca08e498bb45b0ef43c7e8069ae5f7958ed9de63","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0f46319a33c50becca3ebbc0ca08e498bb45b0ef43c7e8069ae5f7958ed9de63","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerLogarithmicPrimitive.Variant0f46319a33c50becca3ebbc0ca08e498bb45b0ef43c7e8069ae5f7958ed9de63","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0f46319a33c50becca3ebbc0ca08e498bb45b0ef43c7e8069ae5f7958ed9de63","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-euler-logarithmic-primitive-v1/SourceActualEulerLogarithmicPrimitiveOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerLogarithmicPrimitive
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.Variant0f46319a33c50becca3ebbc0ca08e498bb45b0ef43c7e8069ae5f7958ed9de63
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogPotential
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogPotential_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualEulerMellinSlope
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualEulerMellin_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogBulk
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogBoundary
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogBulk_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeHead_eq_logBulk_add_boundary
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogPotential_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualEulerLogBoundaryConstant
+#print FormalResearch.RiemannHypothesis.SourceActualEulerLogarithmicPrimitive.actualClosedPrimeLogBoundary_moving_norm_le
+```

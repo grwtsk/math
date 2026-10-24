@@ -1,0 +1,23 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicCorrelationTaylorAuditTypes.Variantf7d7f341bf1a75533780516429b5748ecf2241806ad2ee3722de357218640f62
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6db6652e8e6ab48c312e71b12b14df30e6d74a54` · SHA-256 `f7d7f341bf1a75533780516429b5748ecf2241806ad2ee3722de357218640f62`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCubicCorrelationTaylor
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+```

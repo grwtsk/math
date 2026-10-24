@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualRieszRealConstantCenterTypesAxioms.Variant954c1e2da1671b66cfb7ebfe70b721becc2e01754ddf74dc377b7b49e61df978
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `797096a89f7c87865f8766569e43ae5d2e6d1f6a` · SHA-256 `954c1e2da1671b66cfb7ebfe70b721becc2e01754ddf74dc377b7b49e61df978`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualRieszRealConstantCenter
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszCriticalNumerator_conj
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszCriticalNumerator_conj
+#check FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszRealConstantCenter
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszRealConstantCenter
+#check FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszLocalConstantCenter_eq_real
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszLocalConstantCenter_eq_real
+#check FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszCriticalRegularization_eq_real_centers
+#print axioms FormalResearch.RiemannHypothesis.SourceActualRieszRealConstantCenter.actualRieszCriticalRegularization_eq_real_centers
+```

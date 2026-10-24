@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.AcceptedArrowAuditAttempt1.Variant62559172aa637f36ac300990fa317c901a9b8daf02a8bbf58ccf6f391ffa6cd1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5772c331a2e6b9c7e574a8cefc526eb985d74985` · SHA-256 `dc703ea70a980e4f9df83b2aa8f2735d480a2b032fefcf85dee1345375d143f5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EstimateMertensResidual.Variant5de70b53f015c827ceef05b8076bc9b2484a86c8110dca06ac204db031cca179","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5de70b53f015c827ceef05b8076bc9b2484a86c8110dca06ac204db031cca179","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.EstimateMertensResidual.Variant5de70b53f015c827ceef05b8076bc9b2484a86c8110dca06ac204db031cca179","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"5de70b53f015c827ceef05b8076bc9b2484a86c8110dca06ac204db031cca179","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-exact-abel-gate/AcceptedArrowAudit-attempt1.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual
+import FormalResearch.RiemannHypothesis.Landau.Bridge
+import FormalResearch.RiemannHypothesis.TargetComparator
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EstimateMertensResidual.Variant5de70b53f015c827ceef05b8076bc9b2484a86c8110dca06ac204db031cca179
+
+set_option pp.fullNames true
+set_option pp.universes true
+set_option pp.width 120
+
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.mertensResidual
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.mertensResidual
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.MertensResidualTailUpperBound
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.MertensResidualTailUpperBound
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.UniformLowerBound
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.UniformLowerBound
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+#print FormalResearch.RiemannHypothesis.Target.Statement
+#print axioms FormalResearch.RiemannHypothesis.Target.Statement
+#print RiemannHypothesis
+#print axioms RiemannHypothesis
+
+#check @FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.mertensResidual_eq_closedPrimeMoment
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.mertensResidual_eq_closedPrimeMoment
+#check @FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.signed_pairing_tail_iff_mertens_residual_tail
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.signed_pairing_tail_iff_mertens_residual_tail
+#check @FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.estimate_of_mertens_residual_tail
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.estimate_of_mertens_residual_tail
+#check @FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.source_arithmetic_representation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.source_arithmetic_representation
+#check @FormalResearch.RiemannHypothesis.Landau.Bridge.riemann_hypothesis_of_uniform_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.riemann_hypothesis_of_uniform_lower_bound
+#check @FormalResearch.RiemannHypothesis.Target.statement_eq_mathlib
+#print axioms FormalResearch.RiemannHypothesis.Target.statement_eq_mathlib
+#check @FormalResearch.RiemannHypothesis.Target.statement_iff_defect_zero
+#print axioms FormalResearch.RiemannHypothesis.Target.statement_iff_defect_zero
+```

@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicCorrelationTaylorAuditProofsordinary.Variant12bb9a12e26113ebc2b2af59e982639e253a4325065d79824cca97e37a836d66
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8d584f8be86e081e927762d02ec345ee45c461e5` · SHA-256 `0d152affa35ba2bb9282681023c550cad4840f63e7eed02eeda34478d4c07a0b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicCorrelationTaylor.Variante2b4683e2a766d33e773da9c6e436a1411a5f9234cf731c96ac3be47181a6429","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e2b4683e2a766d33e773da9c6e436a1411a5f9234cf731c96ac3be47181a6429","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCubicCorrelationTaylor.Variante2b4683e2a766d33e773da9c6e436a1411a5f9234cf731c96ac3be47181a6429","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"e2b4683e2a766d33e773da9c6e436a1411a5f9234cf731c96ac3be47181a6429","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceCubicCorrelationTaylorAuditProofsordinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCubicCorrelationTaylor
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCubicCorrelationTaylor.Variante2b4683e2a766d33e773da9c6e436a1411a5f9234cf731c96ac3be47181a6429
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+```

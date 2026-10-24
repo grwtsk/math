@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentAudit.Variant169aa8f548fddf7432dbb8957b71e347f951d86f35ce3238f1bbf69de9bcdf24
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `571e960308b9c0d5d7c2d2a43fae4b67ee2b05d5` · SHA-256 `169aa8f548fddf7432dbb8957b71e347f951d86f35ce3238f1bbf69de9bcdf24`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualSharpZeroTail
+#print RH16ActualSharpZeroTail.pole_norm_joint_strip_le
+#print axioms RH16ActualSharpZeroTail.pole_norm_joint_strip_le
+#print RH16ActualSharpZeroTail.actual_bump_complete_endpoint_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_complete_endpoint_norm_le
+#print RH16ActualSharpZeroTail.endpointScale
+#print axioms RH16ActualSharpZeroTail.endpointScale
+#print RH16ActualSharpZeroTail.endpointScale_pos
+#print axioms RH16ActualSharpZeroTail.endpointScale_pos
+#print RH16ActualSharpZeroTail.endpointScale_antitone
+#print axioms RH16ActualSharpZeroTail.endpointScale_antitone
+#print RH16ActualSharpZeroTail.actual_bump_endpoint_scale_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_endpoint_scale_norm_le
+#print RH16ActualSharpZeroTail.exp_pair_le_of_abs_le
+#print axioms RH16ActualSharpZeroTail.exp_pair_le_of_abs_le
+#print RH16ActualSharpZeroTail.endpointScale_three_sixty_four_lt
+#print axioms RH16ActualSharpZeroTail.endpointScale_three_sixty_four_lt
+#print RH16ActualSharpZeroTail.actual_bump_strip_high_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_strip_high_norm_le
+#print RH16ActualSharpZeroTail.exp_neg_large_le
+#print axioms RH16ActualSharpZeroTail.exp_neg_large_le
+#print RH16ActualSharpZeroTail.actualInitialPrimeMellin_sharp_strip_norm_le
+#print axioms RH16ActualSharpZeroTail.actualInitialPrimeMellin_sharp_strip_norm_le
+```

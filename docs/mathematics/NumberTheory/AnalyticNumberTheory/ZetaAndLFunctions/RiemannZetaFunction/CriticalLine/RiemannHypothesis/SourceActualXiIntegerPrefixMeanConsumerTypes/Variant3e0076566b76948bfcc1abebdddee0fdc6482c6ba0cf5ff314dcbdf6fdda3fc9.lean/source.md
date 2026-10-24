@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiIntegerPrefixMeanConsumerTypes.Variant3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `754f409a0af90b930855cd43fcbc6d1fbe1b138a` · SHA-256 `3e0076566b76948bfcc1abebdddee0fdc6482c6ba0cf5ff314dcbdf6fdda3fc9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiIntegerPrefixMeanConsumer
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiIntegerPrefixMeanConsumer
+#check actualIntegerPrefixMeanError
+#print axioms actualIntegerPrefixMeanError
+#check actualIntegerPrefixMeanCoefficient
+#print axioms actualIntegerPrefixMeanCoefficient
+#check actualIntegerPrefixMeanRadius
+#print axioms actualIntegerPrefixMeanRadius
+#check actualIntegerPrefixMeanError_nonneg
+#print axioms actualIntegerPrefixMeanError_nonneg
+#check actualIntegerPrefixMeanCoefficient_nonneg
+#print axioms actualIntegerPrefixMeanCoefficient_nonneg
+#check actualXiWeightedIntegerPrefix_eq_critical_readout
+#print axioms actualXiWeightedIntegerPrefix_eq_critical_readout
+#check actual_primitive_mean_of_integer_prefix
+#print axioms actual_primitive_mean_of_integer_prefix
+#check actual_uniform_primitive_mean_of_integer_prefix
+#print axioms actual_uniform_primitive_mean_of_integer_prefix
+#check completeXiTail_lower_of_integer_prefix
+#print axioms completeXiTail_lower_of_integer_prefix
+#check original_estimate_of_integer_prefix
+#print axioms original_estimate_of_integer_prefix
+#check original_estimate_of_integer_prefix_at_cutoff
+#print axioms original_estimate_of_integer_prefix_at_cutoff
+#check original_estimate_of_critical_integer_readout
+#print axioms original_estimate_of_critical_integer_readout
+```
