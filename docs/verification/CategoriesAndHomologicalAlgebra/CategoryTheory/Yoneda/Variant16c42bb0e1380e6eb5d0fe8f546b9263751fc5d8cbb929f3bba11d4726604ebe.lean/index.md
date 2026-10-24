@@ -1,0 +1,120 @@
+# Verification target: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Yoneda.Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8992435f9413dbadbfedc8a572c84932a7b09a2d",
+  "lexical_observation_count": 57,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/index.md) · [Full source](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8992435f9413dbadbfedc8a572c84932a7b09a2d`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Functor.Hom` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Functor.Currying` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Products.Basic` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [yoneda](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yoneda--e3082b4651bf92996624edfa.md) | 49 | `declaration-track:e3082b4651bf92996624edfa2ab53c6659bee4a99169db11611068e48e142085` |
+| 2 | `def` | [coyoneda](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coyoneda--f79881969c0fb8cdc9e56789.md) | 60 | `declaration-track:f79881969c0fb8cdc9e56789a480d1e9e9fbdcd14f7c76767e53cc364610b355` |
+| 3 | `theorem` | [obj_map_id](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/obj-map-id--08c6bff8a94c929ead5cd775.md) | 70 | `result-track:08c6bff8a94c929ead5cd775f7549739bdce1580f7ee42b98d9e512b191c3166` |
+| 4 | `theorem` | [naturality](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/naturality--c268ab03cae48a7619172e40.md) | 77 | `result-track:c268ab03cae48a7619172e40722e5b30bce4e660aa2072b8bd92429cab996043` |
+| 5 | `instance` | [yonedaFull](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedafull--6a2837a7ce515d54d253f539.md) | 86 | `declaration-track:6a2837a7ce515d54d253f539740d7302939665db7029fefc215c2bf772685cd7` |
+| 6 | `instance` | [yoneda_faithful](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yoneda-faithful--2bf3945f7806c01d44adafb7.md) | 94 | `declaration-track:2bf3945f7806c01d44adafb7a3df14f3dd2655226769eb103264d9d35af4a2c4` |
+| 7 | `def` | [ext](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/ext--01e98c59120b4c5bb8843bd9.md) | 107 | `declaration-track:01e98c59120b4c5bb8843bd93c24ef1d69ce98b33feed5cb072d8aba1d49a1e1` |
+| 8 | `theorem` | [isIso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/isiso--4996e3024b9c2054f6217a8c.md) | 118 | `result-track:4996e3024b9c2054f6217a8cda0a0ebef30f889a5880e38c30904db9fa25bf68` |
+| 9 | `theorem` | [naturality](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/naturality--64a197a36dfe542d1aecee79.md) | 127 | `result-track:64a197a36dfe542d1aecee79b756ac5b350d09fb402c866d14f5b126a164f660` |
+| 10 | `instance` | [coyonedaFull](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coyonedafull--9113a8d37d38894c31c5b644.md) | 132 | `declaration-track:9113a8d37d38894c31c5b64442792bbf10393fad5cbe87f03ac1a6e9e4691eab` |
+| 11 | `instance` | [coyoneda_faithful](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coyoneda-faithful--b0031aa26453c229c89bd3ae.md) | 137 | `declaration-track:b0031aa26453c229c89bd3ae2b145df65535ddc6394cf020e02bfd62b0de558f` |
+| 12 | `theorem` | [isIso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/isiso--a7c29012d3cffee5bcf34148.md) | 145 | `result-track:a7c29012d3cffee5bcf34148ce6d33cdd50d6ce732e32e43a2c4f4751646cb6c` |
+| 13 | `def` | [punitIso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/punitiso--665a2ebdb90ad74a5609ea16.md) | 150 | `declaration-track:665a2ebdb90ad74a5609ea16b979757548cb7871a7a7cb6e729380732bb55a13` |
+| 14 | `def` | [objOpOp](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/objopop--3f0c99f358fc82ffe328b281.md) | 158 | `declaration-track:3f0c99f358fc82ffe328b2817843f3ba0866c3e14397c08c9ede169ad4019c6c` |
+| 15 | `class` | [Representable](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/representable--2433b25a461e36368c474f83.md) | 170 | `declaration-track:2433b25a461e36368c474f83bea357bcc9ef163063659c6d32f8151c13c4cdbc` |
+| 16 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/instance--61c798a77c06c2d81d21ad99.md) | 175 | `declaration-track:61c798a77c06c2d81d21ad9938184299ad245edc843a00a906e960470647fbc3` |
+| 17 | `class` | [Corepresentable](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/corepresentable--5aec6515153cb3b9d86024eb.md) | 181 | `declaration-track:5aec6515153cb3b9d86024ebe36a137766f9f9ee468e5639cc5e14ef6b65db7e` |
+| 18 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/instance--6ccdf1cec96b12232913d4ae.md) | 186 | `declaration-track:6ccdf1cec96b12232913d4aebc1262dc9797de396e17af83d3dacd62aca85cc3` |
+| 19 | `def` | [reprX](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/reprx--110a94f33a4fee618cbc3114.md) | 198 | `declaration-track:110a94f33a4fee618cbc31140282703055f75561f4ca8621201467b3f28e4fe8` |
+| 20 | `def` | [reprF](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/reprf--3a2fbe903d0fd05bda64db02.md) | 204 | `declaration-track:3a2fbe903d0fd05bda64db0254be5c11abd9ca293afc3c2da34be720c25e0a83` |
+| 21 | `def` | [reprx](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/reprx--1f6c27ae0a5fa5a41c9fa539.md) | 211 | `declaration-track:1f6c27ae0a5fa5a41c9fa5398076dc423763e49a28ab4c8e5534b6667ec56d5d` |
+| 22 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/instance--853e863b4b17b40e20eed8d6.md) | 215 | `declaration-track:853e863b4b17b40e20eed8d6b60a3ba0130d445aed228ff4e8085fe5bfb0f645` |
+| 23 | `def` | [reprW](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/reprw--4d117de3263cbb3732011fd7.md) | 221 | `declaration-track:4d117de3263cbb3732011fd7338ea868f652817790ced6f9fba0a2ff810bb974` |
+| 24 | `theorem` | [reprW_hom](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/reprw-hom--064cbf1dd5e42f03219061ae.md) | 226 | `result-track:064cbf1dd5e42f03219061ae0902c984c4c4f8ef5580b06bf113d59bfea609f1` |
+| 25 | `theorem` | [reprW_app_hom](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/reprw-app-hom--476c1e6b868a8ba971912624.md) | 230 | `result-track:476c1e6b868a8ba971912624fa21ef47c99beeaffe5eecdd064491c39efd6fb9` |
+| 26 | `def` | [coreprX](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coreprx--a1baa797797cc0df9aca0123.md) | 247 | `declaration-track:a1baa797797cc0df9aca01236861cf06dcf89af39dbf026a3c86017ddb341dda` |
+| 27 | `def` | [coreprF](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coreprf--5adf2789173ce80d29a672b6.md) | 253 | `declaration-track:5adf2789173ce80d29a672b691b5a6d90396b79d5517833e65a880aad8e7f8d0` |
+| 28 | `def` | [coreprx](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coreprx--bce9525a0c6bd691b247e211.md) | 260 | `declaration-track:bce9525a0c6bd691b247e2112e28651f90969a07a32f2e33fcf0f216e6cfdbdb` |
+| 29 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/instance--47b6336b1085a47f5890c3a4.md) | 264 | `declaration-track:47b6336b1085a47f5890c3a4d64951c787af3f5cd1a8b4842d482558efedb41f` |
+| 30 | `def` | [coreprW](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coreprw--4ba32f6572ed4f465a8c9c3d.md) | 270 | `declaration-track:4ba32f6572ed4f465a8c9c3d1d7d686fcb1321127c1a3c2f9d6b7f710287130f` |
+| 31 | `theorem` | [coreprW_app_hom](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/coreprw-app-hom--e063644ce75bfc5674237ff9.md) | 274 | `result-track:e063644ce75bfc5674237ff947e3cce48aeb95c151c70c6e306d5011d0ca6f0a` |
+| 32 | `theorem` | [representable_of_nat_iso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/representable-of-nat-iso--be04837e4006136d5ea05cd2.md) | 286 | `result-track:be04837e4006136d5ea05cd28f66f752476469bcdbd0f56fd1ffedea3e6576b4` |
+| 33 | `theorem` | [corepresentable_of_nat_iso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/corepresentable-of-nat-iso--89c3db8fc344272546e9d6af.md) | 291 | `result-track:89c3db8fc344272546e9d6af5bf325f43756b315d0a2d6eeed4836e131f89e22` |
+| 34 | `instance` | [(anonymous)](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/instance--6cd35ad4a28735105c4dcddb.md) | 296 | `declaration-track:6cd35ad4a28735105c4dcddbe45e847de427e6671c1d59ad28d66a3af7b86a8a` |
+| 35 | `instance` | [prodCategoryInstance1](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/prodcategoryinstance1--815f58a0b9e16ca13b67e64d.md) | 304 | `declaration-track:815f58a0b9e16ca13b67e64de051fd77bc60f61061dfb2c99ee3daa3e7c7a182` |
+| 36 | `instance` | [prodCategoryInstance2](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/prodcategoryinstance2--762893b10f0b81b75b7aebaf.md) | 308 | `declaration-track:762893b10f0b81b75b7aebaf40c71accde6aae523e9b1e9690d30e0cf4831803` |
+| 37 | `def` | [yonedaEvaluation](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaevaluation--faa9c8659c820b8c1af3e6ae.md) | 317 | `declaration-track:faa9c8659c820b8c1af3e6ae2497e9c9b32c400c561932ce9e44043ea4314585` |
+| 38 | `theorem` | [yonedaEvaluation_map_down](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaevaluation-map-down--a208ef9b495b5ea9b52c4c25.md) | 322 | `result-track:a208ef9b495b5ea9b52c4c2514b8e1da07d1c49b74e3a31ebf63d79e5609f37e` |
+| 39 | `def` | [yonedaPairing](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedapairing--39d1de7f1bdfba135f82ddee.md) | 331 | `declaration-track:39d1de7f1bdfba135f82ddeec0260f4e11416c856532fe3b33daf0fd53782bec` |
+| 40 | `lemma` | [yonedaPairingExt](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedapairingext--9b4098b9a9ca71f915cd1e28.md) | 339 | `result-track:9b4098b9a9ca71f915cd1e28e1832464d242f7a53710ef8476bc04ab45d03355` |
+| 41 | `theorem` | [yonedaPairing_map](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedapairing-map--57c12fee3b94cad219fe3df1.md) | 343 | `result-track:57c12fee3b94cad219fe3df11880011f28be356249ef7f9fbeb584f0129d9815` |
+| 42 | `def` | [yonedaLemma](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedalemma--05a1ba8e26892b5e37018d83.md) | 354 | `declaration-track:05a1ba8e26892b5e37018d83cfa91ccfcec5fe3f39ee3cd97c4e3dfb5760b1ec` |
+| 43 | `def` | [yonedaSections](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedasections--4ac57d8875fbe78c5d3fecd0.md) | 397 | `declaration-track:4ac57d8875fbe78c5d3fecd0494b2eca2d3c0da382e79dfb17262f2b20445614` |
+| 44 | `def` | [yonedaEquiv](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv--a187d47f70e6a61bc6ff40f4.md) | 404 | `declaration-track:a187d47f70e6a61bc6ff40f48c60e684ce78cbdd396b8ababe6cabf2319f7aef` |
+| 45 | `theorem` | [yonedaEquiv_apply](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-apply--b29b4ce7936dc9e3bdecac70.md) | 409 | `result-track:b29b4ce7936dc9e3bdecac704cf4486044a0f9ba7179f59356baffe97810e25e` |
+| 46 | `theorem` | [yonedaEquiv_symm_app_apply](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-symm-app-apply--d446915a6839f69167a80dec.md) | 415 | `result-track:d446915a6839f69167a80decd94de879b7b4e970f8e648501b39edaaf3662358` |
+| 47 | `theorem` | [yonedaEquiv_naturality](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-naturality--92eee8e2ebf7550e29878e55.md) | 420 | `result-track:92eee8e2ebf7550e29878e55cd7d6254a615ad0c012d415f3d691c70d28c0fa7` |
+| 48 | `lemma` | [yonedaEquiv_naturality'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-naturality--1b5874941c8ce7ccabaaf4ca.md) | 428 | `result-track:1b5874941c8ce7ccabaaf4ca4ebfac584eebf1503bff9127d7693f57ec6e3a60` |
+| 49 | `lemma` | [yonedaEquiv_comp](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-comp--1c92aba9678ad00b9d6339e4.md) | 432 | `result-track:1c92aba9678ad00b9d6339e432eaaad95c93ce9d958d45b6a64cfc9cd8b4737e` |
+| 50 | `lemma` | [yonedaEquiv_comp'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-comp--740fca4148f3fc05e6dcdfa8.md) | 436 | `result-track:740fca4148f3fc05e6dcdfa8e5ff3672a3cd15533b5996c7f99fa3112e9d3834` |
+| 51 | `lemma` | [yonedaEquiv_yoneda_map](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-yoneda-map--0496ab28d134ba532e1cab23.md) | 441 | `result-track:0496ab28d134ba532e1cab23eea1b691c4926a70341e33821fac2ac3ddd40933` |
+| 52 | `lemma` | [yonedaEquiv_symm_map](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedaequiv-symm-map--84d87734257c9d3ea4595290.md) | 445 | `result-track:84d87734257c9d3ea45952905ad4427938d85b5ee47f4826ee289efd417cfdb4` |
+| 53 | `def` | [yonedaSectionsSmall](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedasectionssmall--21600d333719b129f0cf9479.md) | 453 | `declaration-track:21600d333719b129f0cf9479c8b83a2b1b2c3a992ac48b93f94f00cef35a29e4` |
+| 54 | `theorem` | [yonedaSectionsSmall_hom](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedasectionssmall-hom--af923f8cc9932e32c799ed4d.md) | 459 | `result-track:af923f8cc9932e32c799ed4d2a7e838c39073223b690f79c17c553118a46bb2d` |
+| 55 | `theorem` | [yonedaSectionsSmall_inv_app_apply](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/yonedasectionssmall-inv-app-apply--4fcf25f0c9fdbe6a26340293.md) | 465 | `result-track:4fcf25f0c9fdbe6a26340293cf3876020376aefa385ac563ee13389596b397aa` |
+| 56 | `def` | [curriedYonedaLemma](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/curriedyonedalemma--d1609ec19c1768f4d69f8a86.md) | 475 | `declaration-track:d1609ec19c1768f4d69f8a86984d60bac761c9107ecaf385c96e26b9d618c064` |
+| 57 | `def` | [curriedYonedaLemma'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variant16c42bb0e1380e6eb5d0fe8f546b9263751fc5d8cbb929f3bba11d4726604ebe.lean/declarations/curriedyonedalemma--790df34b7255ad11a24b537a.md) | 495 | `declaration-track:790df34b7255ad11a24b537a6949399bc9e5a03ceeafabd782023a6b4ca9167b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

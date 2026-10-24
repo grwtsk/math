@@ -1,0 +1,99 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Localization.Variantc125a91818b92b0d29068a23d3f768b1a9977e148ec1a394fa42ba490fecde5b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b4a64d6c5ddd2380814069c7e7f7e1a8e9e69261` · SHA-256 `2bc872ee94b5a47b7b41368b3e56d3a63c8d817c9c44261886af2bd50dbf0aee`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Localization.Variant914007ef93878b4a14ba4836aee0756e24baccbd89be015b5432f92b4826d73b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"914007ef93878b4a14ba4836aee0756e24baccbd89be015b5432f92b4826d73b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.Localization.Variant914007ef93878b4a14ba4836aee0756e24baccbd89be015b5432f92b4826d73b","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"914007ef93878b4a14ba4836aee0756e24baccbd89be015b5432f92b4826d73b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Center/Localization.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+import Mathlib.CategoryTheory.Center.Basic
+import Mathlib.CategoryTheory.Localization.Predicate
+import Mathlib.CategoryTheory.Preadditive.AdditiveFunctor
+
+/-!
+# Localization of the center of a category
+
+Given a localization functor `L : C ⥤ D` with respect to `W : MorphismProperty C`,
+we define a localization map `CatCenter C → CatCenter D` for the centers
+of these categories. In case `L` is an additive functor between preadditive
+categories, we promote this to a ring morphism `CatCenter C →+* CatCenter D`.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Localization.Variant914007ef93878b4a14ba4836aee0756e24baccbd89be015b5432f92b4826d73b
+
+universe w v₁ v₂ u₁ u₂
+
+namespace CategoryTheory
+
+variable {C : Type u₁} [Category.{v₁} C] {D : Type u₂} [Category.{v₂} D]
+  (r s : CatCenter C) (L : C ⥤ D) (W : MorphismProperty C) [L.IsLocalization W]
+
+namespace CatCenter
+
+/-- Given `r : CatCenter C` and `L : C ⥤ D` a localization functor with respect
+to `W : MorphismProperty D`, this is the induced element in `CatCenter D`
+obtained by localization. -/
+noncomputable def localization : CatCenter D :=
+  Localization.liftNatTrans L W L L (𝟭 D) (𝟭 D) (whiskerRight r L)
+
+@[simp]
+lemma localization_app (X : C) :
+    (r.localization L W).app (L.obj X) = L.map (r.app X) := by
+  dsimp [localization]
+  simp only [Localization.liftNatTrans_app, Functor.id_obj, whiskerRight_app,
+    NatTrans.naturality, Functor.comp_map, Functor.id_map, Iso.hom_inv_id_app_assoc]
+
+include W
+
+lemma ext_of_localization (r s : CatCenter D)
+    (h : ∀ (X : C), r.app (L.obj X) = s.app (L.obj X)) : r = s :=
+  Localization.natTrans_ext L W h
+
+lemma localization_one :
+    (1 : CatCenter C).localization L W = 1 :=
+  ext_of_localization L W _ _ (fun X => by simp)
+
+lemma localization_mul :
+    (r * s).localization L W = r.localization L W * s.localization L W :=
+  ext_of_localization L W _ _ (fun X => by simp)
+
+section Preadditive
+
+variable [Preadditive C] [Preadditive D] [L.Additive]
+
+lemma localization_zero :
+    (0 : CatCenter C).localization L W = 0 :=
+  ext_of_localization L W _ _ (fun X => by simp)
+
+lemma localization_add :
+    (r + s).localization L W = r.localization L W + s.localization L W :=
+  ext_of_localization L W _ _ (fun X => by
+    rw [localization_app, NatTrans.app_add, NatTrans.app_add, L.map_add,
+      localization_app, localization_app])
+
+/-- The morphism of rings `CatCenter C →+* CatCenter D` when `L : C ⥤ D`
+is an additive localization functor between preadditive categories. -/
+noncomputable def localizationRingHom : CatCenter C →+* CatCenter D where
+  toFun r := r.localization L W
+  map_zero' := localization_zero L W
+  map_one' := localization_one L W
+  map_add' _ _ := localization_add _ _ _ _
+  map_mul' _ _ := localization_mul _ _ _ _
+
+end Preadditive
+
+end CatCenter
+
+end CategoryTheory
+```

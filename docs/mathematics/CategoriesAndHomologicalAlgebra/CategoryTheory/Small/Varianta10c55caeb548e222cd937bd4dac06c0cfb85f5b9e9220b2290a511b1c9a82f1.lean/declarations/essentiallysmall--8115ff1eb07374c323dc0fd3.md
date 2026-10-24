@@ -1,0 +1,90 @@
+# essentiallySmall
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:3a5004883a9935228622ec34fbe63a8bb76e68adb9a6098c59c49b5b38b302f6",
+  "kind": "instance",
+  "lexical_name": "essentiallySmall",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "essentiallysmall--8115ff1eb07374c323dc0fd3",
+  "source": {
+    "blob": "557591b458ee28fd414927098f0906500a2493b4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 85,
+    "line": 77,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Small/Varianta10c55caeb548e222cd937bd4dac06c0cfb85f5b9e9220b2290a511b1c9a82f1.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:8115ff1eb07374c323dc0fd3a67b1fffc4b906eaa60543b0b6cd0c3be9987343",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Small/Varianta10c55caeb548e222cd937bd4dac06c0cfb85f5b9e9220b2290a511b1c9a82f1.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:3a5004883a9935228622ec34fbe63a8bb76e68adb9a6098c59c49b5b38b302f6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 77–85.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance essentiallySmall [EssentiallySmall.{w} C] [LocallySmall.{w} D] :
+    EssentiallySmall.{w} (CostructuredArrow S T) := by
+  rw [← essentiallySmall_congr
+    (CostructuredArrow.pre (equivSmallModel.{w} C).inverse S T).asEquivalence]
+  exact essentiallySmall_of_small_of_locallySmall _
+
+end CostructuredArrow
+
+end CategoryTheory
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Small/Varianta10c55caeb548e222cd937bd4dac06c0cfb85f5b9e9220b2290a511b1c9a82f1.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Small/Varianta10c55caeb548e222cd937bd4dac06c0cfb85f5b9e9220b2290a511b1c9a82f1.lean#L77).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `557591b458ee28fd414927098f0906500a2493b4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

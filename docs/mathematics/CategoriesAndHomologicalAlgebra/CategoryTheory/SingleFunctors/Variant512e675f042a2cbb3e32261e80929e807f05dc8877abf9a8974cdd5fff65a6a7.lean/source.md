@@ -1,0 +1,167 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.SingleFunctors.Variant512e675f042a2cbb3e32261e80929e807f05dc8877abf9a8974cdd5fff65a6a7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e1da9c368bb0668dc71ee79b3fe158256f9b9413` · SHA-256 `c79ae530e81606cab5fc8cae572b31a216e233376826f28b675bcee6e1ff0be8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.SingleFunctors.Variantc15fa40f27cb8e5dbfa3776aae4a6da11f25c86224b0d003b88746a327b409e8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c15fa40f27cb8e5dbfa3776aae4a6da11f25c86224b0d003b88746a327b409e8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.SingleFunctors.Variantc15fa40f27cb8e5dbfa3776aae4a6da11f25c86224b0d003b88746a327b409e8","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"c15fa40f27cb8e5dbfa3776aae4a6da11f25c86224b0d003b88746a327b409e8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Homology/HomotopyCategory/SingleFunctors.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+module
+
+public import Mathlib.Algebra.Homology.HomotopyCategory.Shift
+public import Mathlib.CategoryTheory.Shift.SingleFunctors
+
+/-!
+# Single functors from the homotopy category
+
+Let `C` be a preadditive category with a zero object.
+In this file, we put together all the single functors `C ⥤ CochainComplex C ℤ`
+along with their compatibilities with shifts into the definition
+`CochainComplex.singleFunctors C : SingleFunctors C (CochainComplex C ℤ) ℤ`.
+Similarly, we define
+`HomotopyCategory.singleFunctors C : SingleFunctors C (HomotopyCategory C (ComplexShape.up ℤ)) ℤ`.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.SingleFunctors.Variantc15fa40f27cb8e5dbfa3776aae4a6da11f25c86224b0d003b88746a327b409e8
+
+@[expose] public section
+
+assert_not_exists TwoSidedIdeal
+
+universe v' u' v u
+
+open CategoryTheory Category Limits
+
+variable (C : Type u) [Category.{v} C] [Preadditive C] [HasZeroObject C]
+
+namespace CochainComplex
+
+open HomologicalComplex
+
+set_option backward.isDefEq.respectTransparency.types false in
+set_option backward.defeqAttrib.useBackward true in
+/-- The collection of all single functors `C ⥤ CochainComplex C ℤ` along with
+their compatibilities with shifts. (This definition has purposely no `simps`
+attribute, as the generated lemmas would not be very useful.) -/
+noncomputable abbrev singleFunctors : SingleFunctors C (CochainComplex C ℤ) ℤ where
+  functor n := single _ _ n
+  shiftIso n a a' ha' := NatIso.ofComponents
+    (fun X => Hom.isoOfComponents
+      (fun i => eqToIso (by
+        obtain rfl : a' = a + n := by lia
+        by_cases h : i = a
+        · subst h
+          simp only [Functor.comp_obj, shiftFunctor_obj_X', single_obj_X_self]
+        · dsimp [single]
+          rw [ite_eq_right h, ite_eq_right (fun h' => h (by lia))])))
+    (fun {X Y} f => by
+      obtain rfl : a' = a + n := by lia
+      ext
+      simp [single])
+  shiftIso_zero a := by
+    ext
+    dsimp
+    simp only [single, shiftFunctorZero_eq, shiftFunctorZero'_hom_app_f,
+      XIsoOfEq, eqToIso.hom]
+  shiftIso_add n m a a' a'' ha' ha'' := by
+    ext
+    dsimp
+    simp only [shiftFunctorAdd_eq, shiftFunctorAdd'_hom_app_f, XIsoOfEq,
+      eqToIso.hom, eqToHom_trans, id_comp]
+
+instance (n : ℤ) : ((singleFunctors C).functor n).Additive := by
+  dsimp only [singleFunctors]
+  infer_instance
+
+set_option backward.isDefEq.respectTransparency false in
+instance (R : Type*) [Ring R] (n : ℤ) [Linear R C] :
+    Functor.Linear R ((singleFunctors C).functor n) where
+  map_smul f r := by
+    dsimp [CochainComplex.singleFunctors, HomologicalComplex.single]
+    aesop
+
+/-- The single functor `C ⥤ CochainComplex C ℤ` which sends `X` to the complex
+consisting of `X` in degree `n : ℤ` and zero otherwise.
+(This is definitionally equal to `HomologicalComplex.single C (up ℤ) n`,
+but `singleFunctor C n` is the preferred term when interactions with shifts are relevant.) -/
+noncomputable abbrev singleFunctor (n : ℤ) := (singleFunctors C).functor n
+
+variable {C} in
+@[simp]
+lemma singleFunctor_obj_d (X : C) (n p q : ℤ) :
+    ((singleFunctor C n).obj X).d p q = 0 := rfl
+
+instance (n : ℤ) : (singleFunctor C n).Full :=
+  inferInstanceAs (single _ _ _).Full
+
+instance (n : ℤ) : (singleFunctor C n).Faithful :=
+  inferInstanceAs (single _ _ _).Faithful
+
+end CochainComplex
+
+section
+
+variable {C} {D : Type u'} [Category.{v'} D] [Abelian D]
+variable (F : C ⥤ D) [F.Additive] [PreservesFiniteLimits F] [PreservesFiniteColimits F]
+
+/-- `CochainComplex.singleFunctor` commutes with `F` and `F.mapHomologicalComplex`. -/
+noncomputable def CategoryTheory.Functor.mapCochainComplexSingleFunctor (n : ℤ) :
+    CochainComplex.singleFunctor C n ⋙ F.mapHomologicalComplex (ComplexShape.up ℤ) ≅
+      F ⋙ CochainComplex.singleFunctor D n :=
+  HomologicalComplex.singleMapHomologicalComplex F (ComplexShape.up ℤ) n
+
+end
+
+namespace HomotopyCategory
+
+/-- The collection of all single functors `C ⥤ HomotopyCategory C (ComplexShape.up ℤ)`
+for `n : ℤ` along with their compatibilities with shifts. -/
+noncomputable def singleFunctors : SingleFunctors C (HomotopyCategory C (ComplexShape.up ℤ)) ℤ :=
+  (CochainComplex.singleFunctors C).postcomp (HomotopyCategory.quotient _ _)
+
+/-- The single functor `C ⥤ HomotopyCategory C (ComplexShape.up ℤ)`
+which sends `X` to the complex consisting of `X` in degree `n : ℤ` and zero otherwise. -/
+noncomputable abbrev singleFunctor (n : ℤ) :
+    C ⥤ HomotopyCategory C (ComplexShape.up ℤ) :=
+  (singleFunctors C).functor n
+
+instance (n : ℤ) : (singleFunctor C n).Additive := by
+  dsimp only [singleFunctor, singleFunctors, SingleFunctors.postcomp]
+  infer_instance
+
+-- The object level definitional equality underlying `singleFunctorsPostcompQuotientIso`.
+@[simp] theorem quotient_obj_singleFunctors_obj (n : ℤ) (X : C) :
+    (HomotopyCategory.quotient C (ComplexShape.up ℤ)).obj
+      ((CochainComplex.singleFunctor C n).obj X) =
+        (HomotopyCategory.singleFunctor C n).obj X :=
+  rfl
+
+instance (R : Type*) [Ring R] [Linear R C] (n : ℤ) :
+    Functor.Linear R (HomotopyCategory.singleFunctor C n) :=
+  inferInstanceAs (Functor.Linear R (CochainComplex.singleFunctor C n ⋙
+    HomotopyCategory.quotient _ _))
+
+/-- The isomorphism given by the very definition of `singleFunctors C`. -/
+noncomputable def singleFunctorsPostcompQuotientIso :
+    singleFunctors C ≅
+      (CochainComplex.singleFunctors C).postcomp (HomotopyCategory.quotient _ _) :=
+  Iso.refl _
+
+/-- `HomotopyCategory.singleFunctor C n` is induced by `CochainComplex.singleFunctor C n`. -/
+noncomputable def singleFunctorPostcompQuotientIso (n : ℤ) :
+    singleFunctor C n ≅ CochainComplex.singleFunctor C n ⋙ quotient _ _ :=
+  (SingleFunctors.evaluation _ _ n).mapIso (singleFunctorsPostcompQuotientIso C)
+
+end HomotopyCategory
+```

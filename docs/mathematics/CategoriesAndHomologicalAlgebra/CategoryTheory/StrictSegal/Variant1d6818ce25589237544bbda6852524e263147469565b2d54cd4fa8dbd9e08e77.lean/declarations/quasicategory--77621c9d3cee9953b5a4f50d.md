@@ -1,0 +1,146 @@
+# quasicategory
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:90ec1121-4d07-eb27-fcd8-ec54efcda784",
+  "kind": "theorem",
+  "lexical_name": "quasicategory",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "quasicategory--77621c9d3cee9953b5a4f50d",
+  "source": {
+    "blob": "1c574988460d5f8b92b7413840b7a15c2e2dd284",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 100,
+    "line": 36,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/StrictSegal/Variant1d6818ce25589237544bbda6852524e263147469565b2d54cd4fa8dbd9e08e77.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:77621c9d3cee9953b5a4f50d28aa2d74e9dd89908d69a593297b79813c621d15",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/StrictSegal/Variant1d6818ce25589237544bbda6852524e263147469565b2d54cd4fa8dbd9e08e77.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:90ec1121-4d07-eb27-fcd8-ec54efcda784`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 36–100.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem quasicategory {X : SSet.{u}} (sx : StrictSegal X) : Quasicategory X := by
+  apply quasicategory_of_filler X
+  intro n i σ₀ h₀ hₙ
+  use sx.spineToSimplex <| Path.map (horn.spineId i h₀ hₙ) σ₀
+  intro j hj
+  apply sx.spineInjective
+  ext k
+  dsimp only [spineEquiv, spine_arrow, Function.comp_apply, Equiv.coe_fn_mk]
+  rw [← types_comp_apply (σ₀.app _) (X.map _), ← σ₀.naturality]
+  let ksucc := k.succ.castSucc
+  obtain hlt | hgt | heq : ksucc < j ∨ j < ksucc ∨ j = ksucc := by omega
+  · rw [← spine_arrow, spine_δ_arrow_lt sx _ hlt]
+    dsimp only [Path.map_arrow, spine_arrow, Fin.coe_eq_castSucc]
+    apply congr_arg
+    apply Subtype.ext
+    dsimp [horn.face, CosimplicialObject.δ]
+    rw [Subcomplex.yonedaEquiv_coe, Subpresheaf.lift_ι, stdSimplex.map_apply,
+      Quiver.Hom.unop_op, stdSimplex.yonedaEquiv_map, Equiv.apply_symm_apply,
+      mkOfSucc_δ_lt hlt]
+    rfl
+  · rw [← spine_arrow, spine_δ_arrow_gt sx _ hgt]
+    dsimp only [Path.map_arrow, spine_arrow, Fin.coe_eq_castSucc]
+    apply congr_arg
+    apply Subtype.ext
+    dsimp [horn.face, CosimplicialObject.δ]
+    rw [Subcomplex.yonedaEquiv_coe, Subpresheaf.lift_ι, stdSimplex.map_apply,
+      Quiver.Hom.unop_op, stdSimplex.yonedaEquiv_map, Equiv.apply_symm_apply,
+      mkOfSucc_δ_gt hgt]
+    rfl
+  · obtain _ | n := n
+    · /- The only inner horn of `Δ[2]` does not contain the diagonal edge. -/
+      obtain rfl : k = 0 := by omega
+      fin_cases i <;> contradiction
+    · /- We construct the triangle in the standard simplex as a 2-simplex in
+      the horn. While the triangle is not contained in the inner horn `Λ[2, 1]`,
+      it suffices to inhabit `Λ[n + 3, i] _⦋2⦌`. -/
+      let triangle : (Λ[n + 3, i] : SSet.{u}) _⦋2⦌ :=
+        horn.primitiveTriangle i h₀ hₙ k (by omega)
+      /- The interval spanning from `k` to `k + 2` is equivalently the spine
+      of the triangle with vertices `k`, `k + 1`, and `k + 2`. -/
+      have hi : ((horn.spineId i h₀ hₙ).map σ₀).interval k 2 (by omega) =
+          X.spine 2 (σ₀.app _ triangle) := by
+        ext m
+        dsimp [spine_arrow, Path.map_interval, Path.map_arrow]
+        rw [← types_comp_apply (σ₀.app _) (X.map _), ← σ₀.naturality]
+        apply congr_arg
+        apply Subtype.ext
+        ext a : 1
+        fin_cases a <;> fin_cases m <;> rfl
+      rw [← spine_arrow, spine_δ_arrow_eq sx _ heq, hi]
+      simp only [spineToDiagonal, diagonal, spineToSimplex_spine_apply]
+      rw [← types_comp_apply (σ₀.app _) (X.map _), ← σ₀.naturality, types_comp_apply]
+      apply congr_arg
+      apply Subtype.ext
+      ext z : 1
+      dsimp [horn.face]
+      rw [Subcomplex.yonedaEquiv_coe, Subpresheaf.lift_ι, stdSimplex.map_apply,
+        Quiver.Hom.unop_op, stdSimplex.map_apply, Quiver.Hom.unop_op]
+      dsimp [CosimplicialObject.δ]
+      rw [stdSimplex.yonedaEquiv_map]
+      simp only [Fin.isValue, Equiv.apply_symm_apply, triangle]
+      rw [mkOfSucc_δ_eq heq]
+      fin_cases z <;> rfl
+
+/-- Any simplicial set satisfying `IsStrictSegal` is a `Quasicategory`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/StrictSegal/Variant1d6818ce25589237544bbda6852524e263147469565b2d54cd4fa8dbd9e08e77.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/StrictSegal/Variant1d6818ce25589237544bbda6852524e263147469565b2d54cd4fa8dbd9e08e77.lean#L36).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1c574988460d5f8b92b7413840b7a15c2e2dd284` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

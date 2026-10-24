@@ -1,0 +1,112 @@
+# isIso_prod_iff
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "f69acf6180035e480a922a05f4853fde06f8a77f",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 60,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/cd/cde65eafbe6b943b54b4f00e9e646bfd92fb3120f0feef23188bef0b1c789268.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:95d4b5ff-1242-eeb5-2fbb-276a5a73abc3",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:42430a87-0013-55a9-3da0-7900290f60b5",
+  "kind": "theorem",
+  "lexical_name": "isIso_prod_iff",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isiso-prod-iff--ff3ea3c01a54ef207ab979f7",
+  "source": {
+    "blob": "f69acf6180035e480a922a05f4853fde06f8a77f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 78,
+    "line": 60,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantcde65eafbe6b943b54b4f00e9e646bfd92fb3120f0feef23188bef0b1c789268.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ff3ea3c01a54ef207ab979f71d4ee5f9485a4ec952b56a490054a6286b3224db",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantcde65eafbe6b943b54b4f00e9e646bfd92fb3120f0feef23188bef0b1c789268.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:42430a87-0013-55a9-3da0-7900290f60b5`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 60–78.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem isIso_prod_iff {P Q : C} {S T : D} {f : (P, S) ⟶ (Q, T)} :
+    IsIso f ↔ IsIso f.1 ∧ IsIso f.2 := by
+  constructor
+  · rintro ⟨g, hfg, hgf⟩
+    simp? at hfg hgf says simp only [prod_Hom, prod_comp, prod_id, Prod.mk.injEq] at hfg hgf
+    rcases hfg with ⟨hfg₁, hfg₂⟩
+    rcases hgf with ⟨hgf₁, hgf₂⟩
+    exact ⟨⟨⟨g.1, hfg₁, hgf₁⟩⟩, ⟨⟨g.2, hfg₂, hgf₂⟩⟩⟩
+  · rintro ⟨⟨g₁, hfg₁, hgf₁⟩, ⟨g₂, hfg₂, hgf₂⟩⟩
+    dsimp at hfg₁ hgf₁ hfg₂ hgf₂
+    refine ⟨⟨(g₁, g₂), ?_, ?_⟩⟩
+    repeat { simp; constructor; assumption; assumption }
+
+section
+
+variable {C D}
+
+/-- The isomorphism between `(X.1, X.2)` and `X`. -/
+@[simps]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantcde65eafbe6b943b54b4f00e9e646bfd92fb3120f0feef23188bef0b1c789268.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantcde65eafbe6b943b54b4f00e9e646bfd92fb3120f0feef23188bef0b1c789268.lean#L60).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f69acf6180035e480a922a05f4853fde06f8a77f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

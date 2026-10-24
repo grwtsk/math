@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.LargeColimits.Variantf7fecebda890a5c87972e84c64f63de0dc3d058900a962a31f8db3fd12ae3062
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d38452c0161d7654694c4a11f719a6cce1869d22` · SHA-256 `6d990cfd452288d5e2030a493a6a8db799ba37107a3a36b52ef076191b3e0505`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsColimitIffBijectiveDesc.Variant6dab548be37748730c2fcde21c06ee69cd79606bc89b5b98e6230f34f3339194","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6dab548be37748730c2fcde21c06ee69cd79606bc89b5b98e6230f34f3339194","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.IsColimitIffBijectiveDesc.Variant6dab548be37748730c2fcde21c06ee69cd79606bc89b5b98e6230f34f3339194","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"6dab548be37748730c2fcde21c06ee69cd79606bc89b5b98e6230f34f3339194","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Category/Grp/LargeColimits.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Sophie Morel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sophie Morel
+-/
+module
+
+public import Mathlib.Algebra.Category.Grp.Colimits
+public import Mathlib.Algebra.Module.CharacterModule
+public import Mathlib.Algebra.Group.Equiv.Basic
+
+/-!
+# Existence of "big" colimits in the category of additive commutative groups
+
+If `F : J ⥤ AddCommGrpCat.{w}` is a functor, we show that `F` admits a colimit if and only
+if `Colimits.Quot F` (the quotient of the direct sum of the commutative groups `F.obj j`
+by the relations given by the morphisms in the diagram) is `w`-small.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsColimitIffBijectiveDesc.Variant6dab548be37748730c2fcde21c06ee69cd79606bc89b5b98e6230f34f3339194
+
+public section
+
+universe w u v
+
+open CategoryTheory Limits
+
+namespace AddCommGrpCat
+
+variable {J : Type u} [Category.{v} J] {F : J ⥤ AddCommGrpCat.{w}} (c : Cocone F)
+
+open Colimits
+
+set_option backward.defeqAttrib.useBackward true in
+set_option backward.isDefEq.respectTransparency false in
+/--
+If `c` is a cocone of `F` such that `Quot.desc F c` is bijective, then `c` is a colimit
+cocone of `F`.
+-/
+lemma isColimit_iff_bijective_desc [DecidableEq J] :
+     Nonempty (IsColimit c) ↔ Function.Bijective (Quot.desc F c) := by
+  refine ⟨fun ⟨hc⟩ => ?_, fun h ↦ Nonempty.intro (isColimit_of_bijective_desc F c h)⟩
+  change Function.Bijective (Quot.desc F c).toIntLinearMap
+  rw [← CharacterModule.dual_bijective_iff_bijective]
+  refine ⟨fun χ ψ eq ↦ ?_, fun χ ↦ ?_⟩
+  · apply AddEquiv.ulift.symm.addMonoidHomCongrRightEquiv.injective
+    apply ofHom_injective
+    refine hc.hom_ext (fun j ↦ ?_)
+    ext x
+    erw [ConcreteCategory.comp_apply, ConcreteCategory.comp_apply, ← Quot.ι_desc _ c j x]
+    exact DFunLike.congr_fun eq (Quot.ι F j x)
+  · set c' : Cocone F :=
+      { pt := ↧(ULift (AddCircle (1 : ℚ)))
+        ι :=
+          { app j := AddCommGrpCat.ofHom (((@AddEquiv.ulift _ _).symm.toAddMonoidHom.comp χ).comp
+                       (Quot.ι F j))
+            naturality {j j'} u := by
+              ext
+              dsimp
+              rw [Quot.map_ι F (f := u)] } }
+    use AddEquiv.ulift.toAddMonoidHom.comp (hc.desc c').hom
+    refine Quot.addMonoidHom_ext _ (fun j x ↦ ?_)
+    dsimp
+    rw [Quot.ι_desc]
+    change AddEquiv.ulift ((c.ι.app j ≫ hc.desc c') x) = _
+    rw [hc.fac]
+    dsimp [c']
+    rw [AddEquiv.apply_symm_apply]
+
+/--
+A functor `F : J ⥤ AddCommGrpCat.{w}` has a colimit if and only if `Colimits.Quot F` is
+`w`-small.
+-/
+lemma hasColimit_iff_small_quot [DecidableEq J] : HasColimit F ↔ Small.{w} (Quot F) :=
+  ⟨fun _ ↦ Small.mk ⟨_, ⟨(Equiv.ofBijective _ ((isColimit_iff_bijective_desc (colimit.cocone F)).mp
+    ⟨colimit.isColimit _⟩))⟩⟩, hasColimit_of_small_quot F⟩
+
+end AddCommGrpCat
+```

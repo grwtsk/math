@@ -1,0 +1,135 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Widesubcategory.Variantc4cf3261122f70c030048e2fd0f724c84868f2f701144313db5059c12deae7f7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c3d2d29a1eee7390eb841707a429ef9bed076559` · SHA-256 `d18ee2cdd8da00f792988c1a6d0c0900b089dc640e97c674f681de4986f9f15e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.WideSubcategory.Variantbb937be6ec00581cb4946a7c86057160329e4f01be869145664683fbe596569a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bb937be6ec00581cb4946a7c86057160329e4f01be869145664683fbe596569a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.WideSubcategory.Variantbb937be6ec00581cb4946a7c86057160329e4f01be869145664683fbe596569a","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"bb937be6ec00581cb4946a7c86057160329e4f01be869145664683fbe596569a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Widesubcategory.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Sina Hazratpour. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sina Hazratpour
+-/
+import Mathlib.CategoryTheory.Functor.FullyFaithful
+import Mathlib.CategoryTheory.MorphismProperty.Composition
+
+/-!
+# Wide subcategories
+
+A wide subcategory of a category `C` is a subcategory containing all the objects of `C`.
+
+## Main declarations
+
+Given a category `D`, a function `F : C → D` from a type `C` to the objects of `D`,
+and a morphism property `P` on `D` which contains identities and is stable under
+composition, the type class `InducedWideCategory D F P` is a typeclass
+synonym for `C` which comes equipped with a category structure whose morphisms `X ⟶ Y` are the
+morphisms in `D` which have the property `P`.
+
+The instance `WideSubcategory.category` provides a category structure on `WideSubcategory P`
+whose objects are the objects of `C` and morphisms are the morphisms in `C` which have the
+property `P`.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.WideSubcategory.Variantbb937be6ec00581cb4946a7c86057160329e4f01be869145664683fbe596569a
+
+namespace CategoryTheory
+
+universe v₁ v₂ u₁ u₂
+
+open MorphismProperty
+
+section Induced
+
+variable {C : Type u₁} (D : Type u₂) [Category.{v₁} D]
+variable (F : C → D) (P : MorphismProperty D) [P.IsMultiplicative]
+
+/-- `InducedWideCategory D F P`, where `F : C → D`, is a typeclass synonym for `C`,
+which provides a category structure so that the morphisms `X ⟶ Y` are the morphisms
+in `D` from `F X` to `F Y` which satisfy a property `P : MorphismProperty D` that is multiplicative.
+-/
+@[nolint unusedArguments]
+def InducedWideCategory (_F : C → D) (_P : MorphismProperty D) [IsMultiplicative _P] :=
+  C
+
+variable {D}
+
+instance InducedWideCategory.hasCoeToSort {α : Sort*} [CoeSort D α] :
+    CoeSort (InducedWideCategory D F P) α :=
+  ⟨fun c => F c⟩
+
+@[simps!]
+instance InducedWideCategory.category :
+    Category (InducedWideCategory D F P) where
+  Hom X Y := {f : F X ⟶ F Y | P f}
+  id X := ⟨𝟙 (F X), P.id_mem (F X)⟩
+  comp {_ _ _} f g := ⟨f.1 ≫ g.1, P.comp_mem _ _ f.2 g.2⟩
+
+/-- The forgetful functor from an induced wide category to the original category. -/
+@[simps]
+def wideInducedFunctor : InducedWideCategory D F P ⥤ D where
+  obj := F
+  map {_ _} f := f.1
+
+/-- The induced functor `wideInducedFunctor F P : InducedWideCategory D F P ⥤ D`
+is faithful. -/
+instance InducedWideCategory.faithful : (wideInducedFunctor F P).Faithful where
+  map_injective {X Y} f g eq := by
+    cases f
+    cases g
+    aesop
+
+end Induced
+
+section WideSubcategory
+
+variable {C : Type u₁} [Category.{v₁} C]
+variable (P : MorphismProperty C) [IsMultiplicative P]
+
+/--
+Structure for wide subcategories. Objects ignore the morphism property.
+-/
+@[ext, nolint unusedArguments]
+structure WideSubcategory (_P : MorphismProperty C) [IsMultiplicative _P] where
+  /-- The category of which this is a wide subcategory -/
+  obj : C
+
+instance WideSubcategory.category : Category.{v₁} (WideSubcategory P) :=
+  InducedWideCategory.category WideSubcategory.obj P
+
+@[simp]
+lemma WideSubcategory.id_def (X : WideSubcategory P) : (CategoryStruct.id X).1 = 𝟙 X.obj := rfl
+
+@[simp]
+lemma WideSubcategory.comp_def {X Y Z : WideSubcategory P} (f : X ⟶ Y) (g : Y ⟶ Z) :
+    (f ≫ g).1 = (f.1 ≫ g.1 : X.obj ⟶ Z.obj) := rfl
+
+/-- The forgetful functor from a wide subcategory into the original category
+("forgetting" the condition).
+-/
+def wideSubcategoryInclusion : WideSubcategory P ⥤ C :=
+  wideInducedFunctor WideSubcategory.obj P
+
+@[simp]
+theorem wideSubcategoryInclusion.obj (X) : (wideSubcategoryInclusion P).obj X = X.obj :=
+  rfl
+
+@[simp]
+theorem wideSubcategoryInclusion.map {X Y} {f : X ⟶ Y} :
+    (wideSubcategoryInclusion P).map f = f.1 :=
+  rfl
+
+/-- The inclusion of a wide subcategory is faithful. -/
+instance wideSubcategory.faithful : (wideSubcategoryInclusion P).Faithful :=
+  inferInstanceAs (wideInducedFunctor WideSubcategory.obj P).Faithful
+
+end WideSubcategory
+
+end CategoryTheory
+```

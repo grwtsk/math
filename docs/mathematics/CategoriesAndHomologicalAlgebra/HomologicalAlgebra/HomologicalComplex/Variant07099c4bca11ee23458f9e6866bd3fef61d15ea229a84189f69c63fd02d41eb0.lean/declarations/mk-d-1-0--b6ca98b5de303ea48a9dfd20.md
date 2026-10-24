@@ -1,0 +1,139 @@
+# mk'_d_1_0
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "70658d9a9b3f5e64111061af412a4d68ed9d8c64",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 833,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/07/07099c4bca11ee23458f9e6866bd3fef61d15ea229a84189f69c63fd02d41eb0.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:00a67da6-d566-9976-c16e-2bf552168e89",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:827b9ae7-4721-2008-e4f6-5fedadbfcd77",
+  "kind": "theorem",
+  "lexical_name": "mk'_d_1_0",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mk-d-1-0--b6ca98b5de303ea48a9dfd20",
+  "source": {
+    "blob": "70658d9a9b3f5e64111061af412a4d68ed9d8c64",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 878,
+    "line": 833,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/HomologicalComplex/Variant07099c4bca11ee23458f9e6866bd3fef61d15ea229a84189f69c63fd02d41eb0.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b6ca98b5de303ea48a9dfd200ccfc04e98de5c5ac7e137b58819771d0bd8d419",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/HomologicalComplex/Variant07099c4bca11ee23458f9e6866bd3fef61d15ea229a84189f69c63fd02d41eb0.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:827b9ae7-4721-2008-e4f6-5fedadbfcd77`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 833–878.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+theorem mk'_d_1_0 : (mk' X₀ X₁ d₀ succ').d 1 0 = d₀ := by
+  change ite (1 = 0 + 1) (𝟙 X₁ ≫ d₀) 0 = d₀
+  rw [if_pos rfl, Category.id_comp]
+#align chain_complex.mk'_d_1_0 ChainComplex.mk'_d_1_0
+
+/- Porting note:
+Downstream constructions using `mk'` (e.g. in `CategoryTheory.Abelian.Projective`)
+have very slow proofs, because of bad simp lemmas.
+It would be better to write good lemmas here if possible, such as
+
+```
+theorem mk'_X_succ (j : ℕ) :
+    (mk' X₀ X₁ d₀ succ').X (j + 2) = (succ' ⟨_, _, (mk' X₀ X₁ d₀ succ').d (j + 1) j⟩).1 := by
+  sorry
+
+theorem mk'_d_succ {i j : ℕ} :
+    (mk' X₀ X₁ d₀ succ').d (j + 2) (j + 1) =
+      eqToHom (mk'_X_succ X₀ X₁ d₀ succ' j) ≫
+      (succ' ⟨_, _, (mk' X₀ X₁ d₀ succ').d (j + 1) j⟩).2.1 :=
+  sorry
+```
+
+These are already tricky, and it may be better to write analogous lemmas for `mk` first.
+-/
+
+end Mk
+
+section MkHom
+
+variable {V}
+variable (P Q : ChainComplex V ℕ) (zero : P.X 0 ⟶ Q.X 0) (one : P.X 1 ⟶ Q.X 1)
+  (one_zero_comm : one ≫ Q.d 1 0 = P.d 1 0 ≫ zero)
+  (succ :
+    ∀ (n : ℕ)
+      (p :
+        Σ' (f : P.X n ⟶ Q.X n) (f' : P.X (n + 1) ⟶ Q.X (n + 1)),
+          f' ≫ Q.d (n + 1) n = P.d (n + 1) n ≫ f),
+      Σ'f'' : P.X (n + 2) ⟶ Q.X (n + 2), f'' ≫ Q.d (n + 2) (n + 1) = P.d (n + 2) (n + 1) ≫ p.2.1)
+
+/-- An auxiliary construction for `mkHom`.
+
+Here we build by induction a family of commutative squares,
+but don't require at the type level that these successive commutative squares actually agree.
+They do in fact agree, and we then capture that at the type level (i.e. by constructing a chain map)
+in `mkHom`.
+-/
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/HomologicalComplex/Variant07099c4bca11ee23458f9e6866bd3fef61d15ea229a84189f69c63fd02d41eb0.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/HomologicalComplex/Variant07099c4bca11ee23458f9e6866bd3fef61d15ea229a84189f69c63fd02d41eb0.lean#L833).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `70658d9a9b3f5e64111061af412a4d68ed9d8c64` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

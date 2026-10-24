@@ -1,0 +1,153 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.CartesianMonoidal.Variantbc3357ad42293822b9e5dd2748208470a149a1c74d6dc3d224fb05ea25520b9f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9a86a626b809e737a731d1163675d762a4a907ef` · SHA-256 `ed5ee776d11de56ee7e565f8d2b4b78aaabd410484dd2955b13d945ddb9120ae`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.BinaryProductLimitCone.Variantbb8d593edaae4176bef9bf9f5ca6e714774697854a4fa95c83207ae55f71c299","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bb8d593edaae4176bef9bf9f5ca6e714774697854a4fa95c83207ae55f71c299","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.BinaryProductLimitCone.Variantbb8d593edaae4176bef9bf9f5ca6e714774697854a4fa95c83207ae55f71c299","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"bb8d593edaae4176bef9bf9f5ca6e714774697854a4fa95c83207ae55f71c299","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Category/Grp/CartesianMonoidal.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+module
+
+public import Mathlib.Algebra.Category.Grp.Biproducts
+public import Mathlib.Algebra.Category.Grp.Zero
+public import Mathlib.Algebra.Ring.PUnit
+public import Mathlib.CategoryTheory.Monoidal.Types.Basic
+
+/-!
+# Chosen finite products in `GrpCat` and friends
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.BinaryProductLimitCone.Variantbb8d593edaae4176bef9bf9f5ca6e714774697854a4fa95c83207ae55f71c299
+
+@[expose] public section
+
+open CategoryTheory Limits MonoidalCategory ConcreteCategory
+
+universe u
+
+namespace GrpCat
+
+/-- Construct limit data for a binary product in `GrpCat`, using `GrpCat.of (G × H)` -/
+@[simps! cone_pt isLimit_lift]
+def binaryProductLimitCone (G H : GrpCat.{u}) : LimitCone (pair G H) where
+  cone := BinaryFan.mk (ofHom (MonoidHom.fst G H)) (ofHom (MonoidHom.snd G H))
+  isLimit := BinaryFan.IsLimit.mk _ (fun l r => ofHom (MonoidHom.prod l.hom r.hom))
+    (fun _ _ => rfl) (fun _ _ => rfl) (by cat_disch)
+
+/-- We choose `GrpCat.of (G × H)` as the product of `G` and `H` and `GrpCat.of PUnit` as
+the terminal object. -/
+noncomputable instance cartesianMonoidalCategoryGrp : CartesianMonoidalCategory GrpCat.{u} :=
+  .ofChosenFiniteProducts ⟨_, (isZero_of_subsingleton ↧PUnit.{u + 1}).isTerminal⟩
+    fun G H ↦ binaryProductLimitCone G H
+
+noncomputable instance : BraidedCategory GrpCat.{u} := .ofCartesianMonoidalCategory
+
+noncomputable instance : (forget GrpCat.{u}).Braided := .ofChosenFiniteProducts _
+
+theorem tensorObj_eq (G H : GrpCat.{u}) : (G ⊗ H) = of (G × H) := rfl
+
+@[simp]
+theorem μ_forget_apply {G H : GrpCat.{u}} (p : G) (q : H) :
+    Functor.LaxMonoidal.μ (forget GrpCat.{u}) G H (p, q) = (p, q) := by
+  apply Prod.ext
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_fst (forget GrpCat.{u}) G H) (p, q)
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_snd (forget GrpCat.{u}) G H) (p, q)
+
+end GrpCat
+
+namespace AddGrpCat
+
+/-- Construct limit data for a binary product in `AddGrpCat`, using `AddGrpCat.of (G × H)` -/
+@[simps! cone_pt isLimit_lift]
+def binaryProductLimitCone (G H : AddGrpCat.{u}) : LimitCone (pair G H) where
+  cone := BinaryFan.mk (ofHom (AddMonoidHom.fst G H)) (ofHom (AddMonoidHom.snd G H))
+  isLimit := BinaryFan.IsLimit.mk _ (fun l r => ofHom (AddMonoidHom.prod l.hom r.hom))
+    (fun _ _ => rfl) (fun _ _ => rfl) (by cat_disch)
+
+/-- We choose `AddGrpCat.of (G × H)` as the product of `G` and `H` and `AddGrpCat.of PUnit` as
+the terminal object. -/
+noncomputable instance cartesianMonoidalCategoryAddGrp : CartesianMonoidalCategory AddGrpCat.{u} :=
+  .ofChosenFiniteProducts ⟨_, (isZero_of_subsingleton ↧PUnit.{u + 1}).isTerminal⟩
+    fun G H ↦ binaryProductLimitCone G H
+
+noncomputable instance : BraidedCategory AddGrpCat.{u} := .ofCartesianMonoidalCategory
+
+noncomputable instance : (forget AddGrpCat.{u}).Braided := .ofChosenFiniteProducts _
+
+theorem tensorObj_eq (G H : AddGrpCat.{u}) : (G ⊗ H) = of (G × H) := rfl
+
+@[simp]
+theorem μ_forget_apply {G H : AddGrpCat.{u}} (p : G) (q : H) :
+    Functor.LaxMonoidal.μ (forget AddGrpCat.{u}) G H (p, q) = (p, q) := by
+  apply Prod.ext
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_fst (forget AddGrpCat.{u}) G H) (p, q)
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_snd (forget AddGrpCat.{u}) G H) (p, q)
+
+end AddGrpCat
+
+namespace CommGrpCat
+
+/-- Construct limit data for a binary product in `CommGrpCat`, using `CommGrpCat.of (G × H)` -/
+@[simps! cone_pt isLimit_lift]
+def binaryProductLimitCone (G H : CommGrpCat.{u}) : LimitCone (pair G H) where
+  cone := BinaryFan.mk (ofHom (MonoidHom.fst G H)) (ofHom (MonoidHom.snd G H))
+  isLimit := BinaryFan.IsLimit.mk _ (fun l r => ofHom (MonoidHom.prod l.hom r.hom))
+    (fun _ _ => rfl) (fun _ _ => rfl) (by cat_disch)
+
+/-- We choose `CommGrpCat.of (G × H)` as the product of `G` and `H` and `CommGrpCat.of PUnit` as
+the terminal object. -/
+noncomputable instance cartesianMonoidalCategory : CartesianMonoidalCategory CommGrpCat.{u} :=
+  .ofChosenFiniteProducts ⟨_, (isZero_of_subsingleton ↧PUnit.{u + 1}).isTerminal⟩
+    fun G H ↦ binaryProductLimitCone G H
+
+noncomputable instance : BraidedCategory CommGrpCat.{u} := .ofCartesianMonoidalCategory
+
+noncomputable instance : (forget CommGrpCat.{u}).Braided := .ofChosenFiniteProducts _
+
+theorem tensorObj_eq (G H : CommGrpCat.{u}) : (G ⊗ H) = of (G × H) := rfl
+
+@[simp]
+theorem μ_forget_apply {G H : CommGrpCat.{u}} (p : G) (q : H) :
+    Functor.LaxMonoidal.μ (forget CommGrpCat.{u}) G H (p, q) = (p, q) := by
+  apply Prod.ext
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_fst (forget CommGrpCat.{u}) G H) (p, q)
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_snd (forget CommGrpCat.{u}) G H) (p, q)
+
+end CommGrpCat
+
+namespace AddCommGrpCat
+
+/-- We choose `AddCommGrpCat.of (G × H)` as the product of `G` and `H` and
+`AddCommGrpCat.of PUnit` as the terminal object. -/
+@[instance_reducible]
+noncomputable def cartesianMonoidalCategory : CartesianMonoidalCategory AddCommGrpCat.{u} :=
+  .ofChosenFiniteProducts ⟨_, (isZero_of_subsingleton ↧PUnit.{u + 1}).isTerminal⟩
+    fun G H ↦ binaryProductLimitCone G H
+
+attribute [local instance] cartesianMonoidalCategory
+
+noncomputable instance : BraidedCategory AddCommGrpCat.{u} := .ofCartesianMonoidalCategory
+
+noncomputable instance : (forget AddCommGrpCat.{u}).Braided := .ofChosenFiniteProducts _
+
+theorem tensorObj_eq (G H : AddCommGrpCat.{u}) : (G ⊗ H) = of (G × H) := rfl
+
+@[simp]
+theorem μ_forget_apply {G H : AddCommGrpCat.{u}} (p : G) (q : H) :
+    Functor.LaxMonoidal.μ (forget AddCommGrpCat.{u}) G H (p, q) = (p, q) := by
+  apply Prod.ext
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_fst (forget AddCommGrpCat.{u}) G H) (p, q)
+  · exact congr_hom (CC := fun X ↦ X) (Functor.Monoidal.μ_snd (forget AddCommGrpCat.{u}) G H) (p, q)
+
+end AddCommGrpCat
+```

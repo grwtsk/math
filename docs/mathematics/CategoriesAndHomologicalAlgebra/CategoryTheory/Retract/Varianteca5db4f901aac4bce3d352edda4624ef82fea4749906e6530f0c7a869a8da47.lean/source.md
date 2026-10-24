@@ -1,0 +1,113 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Retract.Varianteca5db4f901aac4bce3d352edda4624ef82fea4749906e6530f0c7a869a8da47
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a88cd266821ef0b9885600f54eae2efdfb1d9b02` · SHA-256 `a056047a4497ef0c64d457273c181c4b68e51719624f2508c2b2661fe6812ac3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsStableUnderRetracts.Variantce9131c65fe8aa29044120536bbe6e052699a41efe8c1523c9de93647d5fb20f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ce9131c65fe8aa29044120536bbe6e052699a41efe8c1523c9de93647d5fb20f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.IsStableUnderRetracts.Variantce9131c65fe8aa29044120536bbe6e052699a41efe8c1523c9de93647d5fb20f","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"ce9131c65fe8aa29044120536bbe6e052699a41efe8c1523c9de93647d5fb20f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/MorphismProperty/Retract.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Jack McKoen. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jack McKoen
+-/
+import Mathlib.CategoryTheory.Retract
+import Mathlib.CategoryTheory.MorphismProperty.Basic
+
+/-!
+# Stability under retracts
+
+Given `P : MorphismProperty C`, we introduce a typeclass `P.IsStableUnderRetracts` which
+is the property that `P` is stable under retracts.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsStableUnderRetracts.Variantce9131c65fe8aa29044120536bbe6e052699a41efe8c1523c9de93647d5fb20f
+
+universe v u
+
+namespace CategoryTheory
+
+variable {C : Type u} [Category.{v} C]
+
+namespace MorphismProperty
+
+/-- A class of morphisms is stable under retracts if a retract of such a morphism still
+lies in the class. -/
+@[mk_iff]
+class IsStableUnderRetracts (P : MorphismProperty C) : Prop where
+  of_retract {X Y Z W : C} {f : X ⟶ Y} {g : Z ⟶ W} (h : RetractArrow f g) (hg : P g) : P f
+
+lemma of_retract {P : MorphismProperty C} [P.IsStableUnderRetracts]
+    {X Y Z W : C} {f : X ⟶ Y} {g : Z ⟶ W} (h : RetractArrow f g) (hg : P g) : P f :=
+  IsStableUnderRetracts.of_retract h hg
+
+instance IsStableUnderRetracts.monomorphisms : (monomorphisms C).IsStableUnderRetracts where
+  of_retract {_ _ _ _ f g} h (hg : Mono g) := ⟨fun α β w ↦ by
+    rw [← cancel_mono h.i.left, ← cancel_mono g, Category.assoc, Category.assoc,
+      h.i_w, reassoc_of% w]⟩
+
+instance IsStableUnderRetracts.epimorphisms : (epimorphisms C).IsStableUnderRetracts where
+  of_retract {_ _ _ _ f g} h (hg : Epi g) := ⟨fun α β w ↦ by
+    rw [← cancel_epi h.r.right, ← cancel_epi g, ← Category.assoc, ← Category.assoc, ← h.r_w,
+      Category.assoc, Category.assoc, w]⟩
+
+instance IsStableUnderRetracts.isomorphisms : (isomorphisms C).IsStableUnderRetracts where
+  of_retract {X Y Z W f g} h (_ : IsIso _) := by
+    refine ⟨h.i.right ≫ inv g ≫ h.r.left, ?_, ?_⟩
+    · rw [← h.i_w_assoc, IsIso.hom_inv_id_assoc, h.retract_left]
+    · rw [Category.assoc, Category.assoc, h.r_w, IsIso.inv_hom_id_assoc, h.retract_right]
+
+instance (P₁ P₂ : MorphismProperty C)
+    [P₁.IsStableUnderRetracts] [P₂.IsStableUnderRetracts] :
+    (P₁ ⊓ P₂).IsStableUnderRetracts where
+  of_retract := fun h ⟨h₁, h₂⟩ ↦ ⟨of_retract h h₁, of_retract h h₂⟩
+
+/-- The class of morphisms that are retracts of morphisms
+belonging to `P : MorphismProperty C`. -/
+def retracts (P : MorphismProperty C) : MorphismProperty C :=
+  fun _ _ f ↦ ∃ (Z W : C) (g : Z ⟶ W) (_ : RetractArrow f g), P g
+
+lemma le_retracts (P : MorphismProperty C) : P ≤ P.retracts := by
+  intro X Y f hf
+  exact ⟨_, _, f, { i := 𝟙 _, r := 𝟙 _}, hf⟩
+
+lemma retracts_monotone : Monotone (retracts (C := C)) := by
+  intro _ _ h _ _ _ ⟨_, _, _, hg, hg'⟩
+  exact ⟨_, _, _, hg, h _ hg'⟩
+
+lemma isStableUnderRetracts_iff_retracts_le (P : MorphismProperty C) :
+    P.IsStableUnderRetracts ↔ P.retracts ≤ P := by
+  rw [isStableUnderRetracts_iff]
+  constructor
+  · intro h₁ X Y f ⟨_, _, _, h₂, h₃⟩
+    exact h₁ h₂ h₃
+  · intro h₁ _ _ _ _ _ _ h₂ h₃
+    exact h₁ _ ⟨_, _, _, h₂, h₃⟩
+
+lemma retracts_le (P : MorphismProperty C) [P.IsStableUnderRetracts] :
+    P.retracts ≤ P := by
+  rwa [← isStableUnderRetracts_iff_retracts_le]
+
+@[simp]
+lemma retracts_le_iff {P Q : MorphismProperty C} [Q.IsStableUnderRetracts] :
+    P.retracts ≤ Q ↔ P ≤ Q := by
+  constructor
+  · exact le_trans P.le_retracts
+  · intro h
+    exact le_trans (retracts_monotone h) Q.retracts_le
+
+instance {P : MorphismProperty C} [P.IsStableUnderRetracts] :
+    P.RespectsIso :=
+  RespectsIso.of_respects_arrow_iso _
+    (fun _ _ e ↦ of_retract (Retract.ofIso e.symm))
+
+end MorphismProperty
+
+end CategoryTheory
+```

@@ -1,0 +1,113 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Pullbacks.Variantd436705f39116319ec94ee2bc935e6ccea83eeaa750ff63141c4b82403a20c26
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7868d262f09c8623654ac259f214c8c8aa6e59a0` · SHA-256 `5f0cf0883cbe46fda17f81ad4ddc3e44e4205d7c911b8323be6fdc160f20b90c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.HasLimitCospanOfHasLimitPairOfHasLimitParallelPair.Variant952843c9a7f75c5319726cd91bd116af4a6aaa35657d81c86cbe5ff45a5677c1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"952843c9a7f75c5319726cd91bd116af4a6aaa35657d81c86cbe5ff45a5677c1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.HasLimitCospanOfHasLimitPairOfHasLimitParallelPair.Variant952843c9a7f75c5319726cd91bd116af4a6aaa35657d81c86cbe5ff45a5677c1","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"952843c9a7f75c5319726cd91bd116af4a6aaa35657d81c86cbe5ff45a5677c1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Limits/Constructions/Pullbacks.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+module
+
+public import Mathlib.CategoryTheory.Limits.Shapes.Equalizers
+
+/-!
+# Constructing pullbacks from binary products and equalizers
+
+If a category has binary products and equalizers, then it has pullbacks.
+Also, if a category has binary coproducts and coequalizers, then it has pushouts.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.HasLimitCospanOfHasLimitPairOfHasLimitParallelPair.Variant952843c9a7f75c5319726cd91bd116af4a6aaa35657d81c86cbe5ff45a5677c1
+
+public section
+
+
+universe v u
+
+open CategoryTheory
+
+namespace CategoryTheory.Limits
+
+/-- If the product `X ⨯ Y` and the equalizer of `π₁ ≫ f` and `π₂ ≫ g` exist, then the
+pullback of `f` and `g` exists: It is given by composing the equalizer with the projections. -/
+theorem hasLimit_cospan_of_hasLimit_pair_of_hasLimit_parallelPair {C : Type u} [𝒞 : Category.{v} C]
+    {X Y Z : C} (f : X ⟶ Z) (g : Y ⟶ Z) [HasLimit (pair X Y)]
+    [HasLimit (parallelPair (prod.fst ≫ f) (prod.snd ≫ g))] : HasLimit (cospan f g) :=
+  let π₁ : X ⨯ Y ⟶ X := prod.fst
+  let π₂ : X ⨯ Y ⟶ Y := prod.snd
+  let e := equalizer.ι (π₁ ≫ f) (π₂ ≫ g)
+  HasLimit.mk
+    { cone :=
+        PullbackCone.mk (e ≫ π₁) (e ≫ π₂) <| by
+          rw [Category.assoc, equalizer.condition]
+          simp [e]
+      isLimit :=
+        PullbackCone.IsLimit.mk _ (fun s => equalizer.lift
+          (prod.lift (s.π.app WalkingCospan.left) (s.π.app WalkingCospan.right)) <| by
+            rw [← Category.assoc, limit.lift_π, ← Category.assoc, limit.lift_π]
+            exact PullbackCone.condition _)
+          (by simp [π₁, e]) (by simp [π₂, e]) fun s m h₁ h₂ => by
+          ext
+          · simpa using h₁
+          · simpa using h₂ }
+
+section
+
+attribute [local instance] hasLimit_cospan_of_hasLimit_pair_of_hasLimit_parallelPair
+
+/-- If a category has all binary products and all equalizers, then it also has all pullbacks.
+As usual, this is not an instance, since there may be a more direct way to construct
+pullbacks. -/
+theorem hasPullbacks_of_hasBinaryProducts_of_hasEqualizers (C : Type u) [Category.{v} C]
+    [HasBinaryProducts C] [HasEqualizers C] : HasPullbacks C :=
+  { has_limit := fun F => hasLimit_of_iso (diagramIsoCospan F).symm }
+
+end
+
+/-- If the coproduct `Y ⨿ Z` and the coequalizer of `f ≫ ι₁` and `g ≫ ι₂` exist, then the
+pushout of `f` and `g` exists: It is given by composing the inclusions with the coequalizer. -/
+theorem hasColimit_span_of_hasColimit_pair_of_hasColimit_parallelPair {C : Type u}
+    [𝒞 : Category.{v} C] {X Y Z : C} (f : X ⟶ Y) (g : X ⟶ Z) [HasColimit (pair Y Z)]
+    [HasColimit (parallelPair (f ≫ coprod.inl) (g ≫ coprod.inr))] : HasColimit (span f g) :=
+  let ι₁ : Y ⟶ Y ⨿ Z := coprod.inl
+  let ι₂ : Z ⟶ Y ⨿ Z := coprod.inr
+  let c := coequalizer.π (f ≫ ι₁) (g ≫ ι₂)
+  HasColimit.mk
+    { cocone :=
+        PushoutCocone.mk (ι₁ ≫ c) (ι₂ ≫ c) <| by
+          rw [← Category.assoc, ← Category.assoc, coequalizer.condition]
+      isColimit :=
+        PushoutCocone.IsColimit.mk _
+          (fun s => coequalizer.desc
+              (coprod.desc (s.ι.app WalkingSpan.left) (s.ι.app WalkingSpan.right)) <| by
+            rw [Category.assoc, colimit.ι_desc, Category.assoc, colimit.ι_desc]
+            exact PushoutCocone.condition _)
+          (by simp [ι₁, c]) (by simp [ι₂, c]) fun s m h₁ h₂ => by
+          ext
+          · simpa using h₁
+          · simpa using h₂ }
+
+section
+
+attribute [local instance] hasColimit_span_of_hasColimit_pair_of_hasColimit_parallelPair
+
+/-- If a category has all binary coproducts and all coequalizers, then it also has all pushouts.
+As usual, this is not an instance, since there may be a more direct way to construct pushouts. -/
+theorem hasPushouts_of_hasBinaryCoproducts_of_hasCoequalizers (C : Type u) [Category.{v} C]
+    [HasBinaryCoproducts C] [HasCoequalizers C] : HasPushouts C :=
+  hasPushouts_of_hasColimit_span C
+
+end
+
+end CategoryTheory.Limits
+```

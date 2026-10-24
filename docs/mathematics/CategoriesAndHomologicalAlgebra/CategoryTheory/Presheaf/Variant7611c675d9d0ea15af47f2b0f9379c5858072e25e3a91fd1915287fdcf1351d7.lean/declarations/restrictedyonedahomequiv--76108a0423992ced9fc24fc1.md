@@ -1,0 +1,124 @@
+# restrictedYonedaHomEquiv'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:374ef0eb694a0767d22257f6f824b6c628f3603576b93278089ae2cf9a42da62",
+  "kind": "def",
+  "lexical_name": "restrictedYonedaHomEquiv'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "restrictedyonedahomequiv--76108a0423992ced9fc24fc1",
+  "source": {
+    "blob": "accfc3d8296025cbdf3c5b552bc5329b8e5e2e6f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 122,
+    "line": 80,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Variant7611c675d9d0ea15af47f2b0f9379c5858072e25e3a91fd1915287fdcf1351d7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:76108a0423992ced9fc24fc1dcd58be21864c433d46bbf1f5f8d36440572bb56",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Variant7611c675d9d0ea15af47f2b0f9379c5858072e25e3a91fd1915287fdcf1351d7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:374ef0eb694a0767d22257f6f824b6c628f3603576b93278089ae2cf9a42da62`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 80–122.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def restrictedYonedaHomEquiv' (P : Cᵒᵖ ⥤ Type v₁) (E : ℰ) :
+    (CostructuredArrow.proj yoneda P ⋙ A ⟶
+      (Functor.const (CostructuredArrow yoneda P)).obj E) ≃
+      (P ⟶ (restrictedYoneda A).obj E) where
+  toFun f :=
+    { app := fun _ x => f.app (CostructuredArrow.mk (yonedaEquiv.symm x))
+      naturality := fun {X₁ X₂} φ => by
+        ext x
+        let ψ : CostructuredArrow.mk (yonedaEquiv.symm (P.toPrefunctor.map φ x)) ⟶
+          CostructuredArrow.mk (yonedaEquiv.symm x) := CostructuredArrow.homMk φ.unop (by
+            dsimp [yonedaEquiv]
+            aesop_cat )
+        simpa using (f.naturality ψ).symm }
+  invFun g :=
+    { app := fun y => yonedaEquiv (y.hom ≫ g)
+      naturality := fun {X₁ X₂} φ => by
+        dsimp
+        rw [← CostructuredArrow.w φ]
+        dsimp [yonedaEquiv]
+        simp only [comp_id, id_comp]
+        refine (congr_fun (g.naturality φ.left.op) (X₂.hom.app (Opposite.op X₂.left)
+          (𝟙 _))).symm.trans ?_
+        dsimp
+        apply congr_arg
+        simpa using congr_fun (X₂.hom.naturality φ.left.op).symm (𝟙 _) }
+  left_inv f := by
+    ext ⟨X, ⟨⟨⟩⟩, φ⟩
+    suffices yonedaEquiv.symm (φ.app (Opposite.op X) (𝟙 X)) = φ by
+      dsimp
+      erw [yonedaEquiv_apply]
+      dsimp [CostructuredArrow.mk]
+      erw [this]
+    exact yonedaEquiv.injective (by aesop_cat)
+  right_inv g := by
+    ext X x
+    dsimp
+    erw [yonedaEquiv_apply]
+    dsimp
+    rw [yonedaEquiv_symm_app_apply]
+    simp
+
+section
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Variant7611c675d9d0ea15af47f2b0f9379c5858072e25e3a91fd1915287fdcf1351d7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Variant7611c675d9d0ea15af47f2b0f9379c5858072e25e3a91fd1915287fdcf1351d7.lean#L80).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `accfc3d8296025cbdf3c5b552bc5329b8e5e2e6f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

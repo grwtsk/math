@@ -1,0 +1,122 @@
+# LawfulApplicative
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:ef5272d3e7a7a60c2906582d12fe20f64c1f6cb951ce274c9c5b28dda8e3f826",
+  "kind": "class",
+  "lexical_name": "LawfulApplicative",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "lawfulapplicative--74c38fc2b682c0b6b146761b",
+  "source": {
+    "blob": "c987ed1be10923027233af41faa78779108e1125",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 108,
+    "line": 68,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant7aee65ffd017978662f01ddc90932fbbe50379ee36267967d29bb7cf4cb5d2e0.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:74c38fc2b682c0b6b146761ba95cd09c18db27913e1c1ac6f76dfe435f37049e",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant7aee65ffd017978662f01ddc90932fbbe50379ee36267967d29bb7cf4cb5d2e0.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `class` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:ef5272d3e7a7a60c2906582d12fe20f64c1f6cb951ce274c9c5b28dda8e3f826`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 68–108.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+class LawfulApplicative (f : Type u → Type v) [Applicative f] : Prop extends LawfulFunctor f where
+  /-- `seqLeft` is equivalent to the default implementation. -/
+  seqLeft_eq  (x : f α) (y : f β)     : x <* y = const β <$> x <*> y
+  /-- `seqRight` is equivalent to the default implementation. -/
+  seqRight_eq (x : f α) (y : f β)     : x *> y = const α id <$> x <*> y
+  /--
+  `pure` before `seq` is equivalent to `Functor.map`.
+
+  This means that `pure` really is pure when occurring immediately prior to `seq`.
+   -/
+  pure_seq    (g : α → β) (x : f α)   : pure g <*> x = g <$> x
+
+  /--
+  Mapping a function over the result of `pure` is equivalent to applying the function under `pure`.
+
+  This means that `pure` really is pure with respect to `Functor.map`.
+  -/
+  map_pure    (g : α → β) (x : α)     : g <$> (pure x : f α) = pure (g x)
+
+  /--
+  `pure` after `seq` is equivalent to `Functor.map`.
+
+  This means that `pure` really is pure when occurring just after `seq`.
+  -/
+  seq_pure    {α β : Type u} (g : f (α → β)) (x : α) : g <*> pure x = (fun h => h x) <$> g
+
+  /--
+  `seq` is associative.
+
+  Changing the nesting of `seq` calls while maintaining the order of computations results in an
+  equivalent computation. This means that `seq` is not doing any more than sequencing.
+  -/
+  seq_assoc   {α β γ : Type u} (x : f α) (g : f (α → β)) (h : f (β → γ)) : h <*> (g <*> x) = ((@comp α β γ) <$> h) <*> g <*> x
+  comp_map g h x := (by
+    repeat rw [← pure_seq]
+    simp [seq_assoc, map_pure, seq_pure])
+
+export LawfulApplicative (seqLeft_eq seqRight_eq pure_seq map_pure seq_pure seq_assoc)
+
+attribute [simp] map_pure seq_pure
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant7aee65ffd017978662f01ddc90932fbbe50379ee36267967d29bb7cf4cb5d2e0.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant7aee65ffd017978662f01ddc90932fbbe50379ee36267967d29bb7cf4cb5d2e0.lean#L68).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c987ed1be10923027233af41faa78779108e1125` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

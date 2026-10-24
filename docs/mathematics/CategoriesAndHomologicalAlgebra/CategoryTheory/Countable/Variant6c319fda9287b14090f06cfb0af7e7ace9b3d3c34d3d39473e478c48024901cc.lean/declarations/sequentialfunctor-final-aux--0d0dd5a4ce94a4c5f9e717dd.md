@@ -1,0 +1,99 @@
+# sequentialFunctor_final_aux
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "ea476621dd2252da8ed5e60f416ea7149d6f354a",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 158,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/6c/6c319fda9287b14090f06cfb0af7e7ace9b3d3c34d3d39473e478c48024901cc.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:dae405c1-9085-15ab-4111-f7543994d8c3",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:aab772be-36c5-5b03-caff-b1d294c1c492",
+  "kind": "theorem",
+  "lexical_name": "sequentialFunctor_final_aux",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "sequentialfunctor-final-aux--0d0dd5a4ce94a4c5f9e717dd",
+  "source": {
+    "blob": "ea476621dd2252da8ed5e60f416ea7149d6f354a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 163,
+    "line": 158,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Countable/Variant6c319fda9287b14090f06cfb0af7e7ace9b3d3c34d3d39473e478c48024901cc.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:0d0dd5a4ce94a4c5f9e717dd43edde8606bed89647fd58b8568c87ee63df27ec",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Countable/Variant6c319fda9287b14090f06cfb0af7e7ace9b3d3c34d3d39473e478c48024901cc.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:aab772be-36c5-5b03-caff-b1d294c1c492`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 158–163.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem sequentialFunctor_final_aux (j : J) : ∃ (n : ℕ), j ≤ sequentialFunctor_obj J n := by
+  obtain ⟨m, h⟩ := (exists_surjective_nat _).choose_spec j
+  refine ⟨m + 1, ?_⟩
+  simpa only [h] using! leOfHom (IsFilteredOrEmpty.cocone_objs ((exists_surjective_nat _).choose m)
+    (sequentialFunctor_obj J m)).choose_spec.choose
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Countable/Variant6c319fda9287b14090f06cfb0af7e7ace9b3d3c34d3d39473e478c48024901cc.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Countable/Variant6c319fda9287b14090f06cfb0af7e7ace9b3d3c34d3d39473e478c48024901cc.lean#L158).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ea476621dd2252da8ed5e60f416ea7149d6f354a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

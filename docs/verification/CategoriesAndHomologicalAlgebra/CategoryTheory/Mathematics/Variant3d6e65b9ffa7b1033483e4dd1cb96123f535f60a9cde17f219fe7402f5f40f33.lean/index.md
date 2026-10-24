@@ -1,0 +1,118 @@
+# Verification target: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Mathematics.Variant3d6e65b9ffa7b1033483e4dd1cb96123f535f60a9cde17f219fe7402f5f40f33
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c1fe2adb6e90775e39559bfdc154e1a81f18cffa",
+  "lexical_observation_count": 0,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mathematics/Variant3d6e65b9ffa7b1033483e4dd1cb96123f535f60a9cde17f219fe7402f5f40f33.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Mathematics/Variant3d6e65b9ffa7b1033483e4dd1cb96123f535f60a9cde17f219fe7402f5f40f33.lean/index.md) · [Full source](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/Mathematics/Variant3d6e65b9ffa7b1033483e4dd1cb96123f535f60a9cde17f219fe7402f5f40f33.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c1fe2adb6e90775e39559bfdc154e1a81f18cffa`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mathematics/Variant3d6e65b9ffa7b1033483e4dd1cb96123f535f60a9cde17f219fe7402f5f40f33.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Mathematics/Variant3d6e65b9ffa7b1033483e4dd1cb96123f535f60a9cde17f219fe7402f5f40f33.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Core.SemanticIdentity` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathematics.Authority.All` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathematics.BinaryFrontier.All` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathematics.Boolean.All` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathematics.Capability.All` — import line 5; external provider; requires a separately pinned dependency.
+- `Mathematics.Juris.All` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathematics.Mutation.All` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathematics.Ecosystem.All` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathematics.Toolchain.All` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathematics.Ingestion.All` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathematics.Federation.All` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathematics.Relaxation.All` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathematics.Reflection.All` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathematics.Projects.All` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathematics.System.All` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathematics.Reactive.All` — import line 16; external provider; requires a separately pinned dependency.
+- `Mathematics.Fabric.All` — import line 17; external provider; requires a separately pinned dependency.
+- `Mathematics.Geometry.All` — import line 18; external provider; requires a separately pinned dependency.
+- `Mathematics.Terrain.All` — import line 19; external provider; requires a separately pinned dependency.
+- `Mathematics.Cubical.All` — import line 20; external provider; requires a separately pinned dependency.
+- `Mathematics.Homology.All` — import line 21; external provider; requires a separately pinned dependency.
+- `Mathematics.Polynomial.All` — import line 22; external provider; requires a separately pinned dependency.
+- `Mathematics.Prismatic.All` — import line 23; external provider; requires a separately pinned dependency.
+- `Mathematics.Kernel.All` — import line 24; external provider; requires a separately pinned dependency.
+- `Mathematics.Hilbert.All` — import line 25; external provider; requires a separately pinned dependency.
+- `Mathematics.Operator.All` — import line 26; external provider; requires a separately pinned dependency.
+- `Mathematics.Taxonomy.All` — import line 27; external provider; requires a separately pinned dependency.
+- `Mathematics.Projection.All` — import line 28; external provider; requires a separately pinned dependency.
+- `Mathematics.Concept.All` — import line 29; external provider; requires a separately pinned dependency.
+- `Mathematics.Inventory.All` — import line 30; external provider; requires a separately pinned dependency.
+- `Mathematics.Discovery.All` — import line 31; external provider; requires a separately pinned dependency.
+- `Mathematics.Extractor.All` — import line 32; external provider; requires a separately pinned dependency.
+- `Mathematics.ProofStrategy.All` — import line 33; external provider; requires a separately pinned dependency.
+- `Mathematics.Embedding.All` — import line 34; external provider; requires a separately pinned dependency.
+- `Mathematics.Element.All` — import line 35; external provider; requires a separately pinned dependency.
+- `Mathematics.SourceAnalysis.All` — import line 36; external provider; requires a separately pinned dependency.
+- `Mathematics.Refactor.All` — import line 37; external provider; requires a separately pinned dependency.
+- `Mathematics.Oracle.All` — import line 38; external provider; requires a separately pinned dependency.
+- `Mathematics.Progression.All` — import line 39; external provider; requires a separately pinned dependency.
+- `Mathematics.GammaBridge.All` — import line 40; external provider; requires a separately pinned dependency.
+- `Mathematics.Orbit.All` — import line 41; external provider; requires a separately pinned dependency.
+- `Mathematics.Trajectory.All` — import line 42; external provider; requires a separately pinned dependency.
+- `Mathematics.Surgery.All` — import line 43; external provider; requires a separately pinned dependency.
+- `Mathematics.NeuralDiffusion.All` — import line 44; external provider; requires a separately pinned dependency.
+- `Mathematics.Operational.All` — import line 45; external provider; requires a separately pinned dependency.
+- `Mathematics.Resolution.All` — import line 46; external provider; requires a separately pinned dependency.
+- `Mathematics.SemanticTokenization.All` — import line 47; external provider; requires a separately pinned dependency.
+- `Mathematics.TensorNetwork.All` — import line 48; external provider; requires a separately pinned dependency.
+- `Mathematics.Attention.All` — import line 49; external provider; requires a separately pinned dependency.
+- `Mathematics.AbelReynolds.All` — import line 50; external provider; requires a separately pinned dependency.
+- `Mathematics.MobiusOntology.All` — import line 51; external provider; requires a separately pinned dependency.
+- `Mathematics.ConnesBitfield.All` — import line 52; external provider; requires a separately pinned dependency.
+- `Mathematics.StratifiedBoundary.All` — import line 53; external provider; requires a separately pinned dependency.
+- `Mathematics.GraphAccess.All` — import line 54; external provider; requires a separately pinned dependency.
+- `Mathematics.RHIsolation.All` — import line 55; external provider; requires a separately pinned dependency.
+- `Mathematics.SemiLocalDefect.All` — import line 56; external provider; requires a separately pinned dependency.
+- `Mathematics.Web.Service` — import line 57; external provider; requires a separately pinned dependency.
+- `Mathematics.Export.All` — import line 58; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

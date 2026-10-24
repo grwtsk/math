@@ -1,0 +1,85 @@
+# forget_map
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:7c43f3aa-6147-c276-b8b1-4cd71b1d9157",
+  "kind": "lemma",
+  "lexical_name": "forget_map",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "forget-map--ae6e83c6dc84de0972c5cfb9",
+  "source": {
+    "blob": "5c4691df2b3f297cfc49a2f3758e89f8f85c26da",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 96,
+    "line": 93,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Preord/Variantf1ee9f735c0f83751de7232c34cc4053c5d46a3c73bdbd04801afa8a919be12c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ae6e83c6dc84de0972c5cfb90ef4fee7db8596e1e4bd7c55f4e0a09328886dc9",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Preord/Variantf1ee9f735c0f83751de7232c34cc4053c5d46a3c73bdbd04801afa8a919be12c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:7c43f3aa-6147-c276-b8b1-4cd71b1d9157`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 93–96.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma forget_map {X Y : Preord} (f : X ⟶ Y) :
+    (forget Preord).map f = f := rfl
+
+@[ext]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Preord/Variantf1ee9f735c0f83751de7232c34cc4053c5d46a3c73bdbd04801afa8a919be12c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Preord/Variantf1ee9f735c0f83751de7232c34cc4053c5d46a3c73bdbd04801afa8a919be12c.lean#L93).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5c4691df2b3f297cfc49a2f3758e89f8f85c26da` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

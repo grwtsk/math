@@ -1,0 +1,90 @@
+# ofArrowIso
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:2511ebab76dc94afc06ecd1d36335e2374e79419bc0a15d396f29e00b3cc7192",
+  "kind": "def",
+  "lexical_name": "ofArrowIso",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ofarrowiso--a471e7d0c31f9a1f2d8dd665",
+  "source": {
+    "blob": "a431c71f9762c88849569123d172f5fa6231abb0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 79,
+    "line": 71,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/TransfiniteComposition/Variant213b68198461910691a6fc8c72b91996fce16e8f29eb3d390ab6fc108a4159e4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a471e7d0c31f9a1f2d8dd6653f28f0e16b03a1c889f8e93e3567e84723941083",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/TransfiniteComposition/Variant213b68198461910691a6fc8c72b91996fce16e8f29eb3d390ab6fc108a4159e4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:2511ebab76dc94afc06ecd1d36335e2374e79419bc0a15d396f29e00b3cc7192`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 71–79.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def ofArrowIso {X' Y' : C}
+    {f' : X' ⟶ Y'} (e : Arrow.mk f ≅ Arrow.mk f') :
+    W.TransfiniteCompositionOfShape J f' where
+  __ := h.toTransfiniteCompositionOfShape.ofArrowIso e
+  map_mem := h.map_mem
+
+/-- If `W ≤ W'`, then transfinite compositions of shape `J` of morphisms in `W`
+are also transfinite composition of shape `J` of morphisms in `W'`. -/
+@[simps toTransfiniteCompositionOfShape]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/TransfiniteComposition/Variant213b68198461910691a6fc8c72b91996fce16e8f29eb3d390ab6fc108a4159e4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/TransfiniteComposition/Variant213b68198461910691a6fc8c72b91996fce16e8f29eb3d390ab6fc108a4159e4.lean#L71).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a431c71f9762c88849569123d172f5fa6231abb0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

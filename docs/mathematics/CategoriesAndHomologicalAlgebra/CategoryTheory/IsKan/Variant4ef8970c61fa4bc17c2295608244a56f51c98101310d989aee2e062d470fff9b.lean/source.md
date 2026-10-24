@@ -1,0 +1,265 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsKan.Variant4ef8970c61fa4bc17c2295608244a56f51c98101310d989aee2e062d470fff9b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d7ae896ad16bc060c35ed4efb5b63072f3386b5f` · SHA-256 `614c186183816502ee9d6cb64ffda4dc776ce387f13ea33bdb9a1db18f3f6c15`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsKan.Variantb75b48684342663b50a46c0b371945aa93fce6b29b7b98c352ef3d9a5f31b658","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b75b48684342663b50a46c0b371945aa93fce6b29b7b98c352ef3d9a5f31b658","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.IsKan.Variantb75b48684342663b50a46c0b371945aa93fce6b29b7b98c352ef3d9a5f31b658","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"b75b48684342663b50a46c0b371945aa93fce6b29b7b98c352ef3d9a5f31b658","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Bicategory/Kan/IsKan.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Yuma Mizuno. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yuma Mizuno
+-/
+import Mathlib.CategoryTheory.Bicategory.Extension
+
+/-!
+# Kan extensions and Kan lifts in bicategories
+
+The left Kan extension of a 1-morphism `g : a ⟶ c` along a 1-morphism `f : a ⟶ b` is the initial
+object in the category of left extensions `LeftExtension f g`. The universal property can be
+accessed by the following definition and lemmas:
+* `LeftExtension.IsKan.desc`: the family of 2-morphisms out of the left Kan extension.
+* `LeftExtension.IsKan.fac`: the unit of any left extension factors through the left Kan extension.
+* `LeftExtension.IsKan.hom_ext`: two 2-morphisms out of the left Kan extension are equal if their
+  compositions with each unit are equal.
+
+We also define left Kan lifts, right Kan extensions, and right Kan lifts.
+
+## Implementation Notes
+
+We use the Is-Has design pattern, which is used for the implementation of limits and colimits in
+the category theory library. This means that `IsKan t` is a structure containing the data of
+2-morphisms which ensure that `t` is a Kan extension, while `HasKan f g` defined in
+`CategoryTheory.Bicategory.Kan.HasKan` is a `Prop`-valued typeclass asserting that a Kan extension
+of `g` along `f` exists.
+
+We define `LeftExtension.IsKan t` for an extension `t : LeftExtension f g` (which is an
+abbreviation of `t : StructuredArrow g (precomp _ f)`) to be an abbreviation for
+`StructuredArrow.IsUniversal t`. This means that we can use the definitions and lemmas living
+in the namespace `StructuredArrow.IsUniversal`.
+
+## References
+https://ncatlab.org/nlab/show/Kan+extension
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsKan.Variantb75b48684342663b50a46c0b371945aa93fce6b29b7b98c352ef3d9a5f31b658
+
+namespace CategoryTheory
+
+namespace Bicategory
+
+universe w v u
+
+variable {B : Type u} [Bicategory.{w, v} B] {a b c : B}
+
+namespace LeftExtension
+
+variable {f : a ⟶ b} {g : a ⟶ c}
+
+/-- A left Kan extension of `g` along `f` is an initial object in `LeftExtension f g`. -/
+abbrev IsKan (t : LeftExtension f g) := t.IsUniversal
+
+/-- An absolute left Kan extension is a Kan extension that commutes with any 1-morphism. -/
+abbrev IsAbsKan (t : LeftExtension f g) :=
+  ∀ {x : B} (h : c ⟶ x), IsKan (t.whisker h)
+
+namespace IsKan
+
+variable {s t : LeftExtension f g}
+
+/-- To show that a left extension `t` is a Kan extension, we need to show that for every left
+extension `s` there is a unique morphism `t ⟶ s`. -/
+abbrev mk (desc : ∀ s, t ⟶ s) (w : ∀ s τ, τ = desc s) :
+    IsKan t :=
+  .ofUniqueHom desc w
+
+/-- The family of 2-morphisms out of a left Kan extension. -/
+abbrev desc (H : IsKan t) (s : LeftExtension f g) : t.extension ⟶ s.extension :=
+  StructuredArrow.IsUniversal.desc H s
+
+@[reassoc (attr := simp)]
+theorem fac (H : IsKan t) (s : LeftExtension f g) :
+    t.unit ≫ f ◁ H.desc s = s.unit :=
+  StructuredArrow.IsUniversal.fac H s
+
+/-- Two 2-morphisms out of a left Kan extension are equal if their compositions with
+each triangle 2-morphism are equal. -/
+theorem hom_ext (H : IsKan t) {k : b ⟶ c} {τ τ' : t.extension ⟶ k}
+    (w : t.unit ≫ f ◁ τ = t.unit ≫ f ◁ τ') : τ = τ' :=
+  StructuredArrow.IsUniversal.hom_ext H w
+
+/-- Kan extensions on `g` along `f` are unique up to isomorphism. -/
+def uniqueUpToIso (P : IsKan s) (Q : IsKan t) : s ≅ t :=
+  Limits.IsInitial.uniqueUpToIso P Q
+
+@[simp]
+theorem uniqueUpToIso_hom_right (P : IsKan s) (Q : IsKan t) :
+    (uniqueUpToIso P Q).hom.right = P.desc t := rfl
+
+@[simp]
+theorem uniqueUpToIso_inv_right (P : IsKan s) (Q : IsKan t) :
+    (uniqueUpToIso P Q).inv.right = Q.desc s := rfl
+
+/-- Transport evidence that a left extension is a Kan extension across an isomorphism
+of extensions. -/
+def ofIsoKan (P : IsKan s) (i : s ≅ t) : IsKan t :=
+  Limits.IsInitial.ofIso P i
+
+/-- If `t : LeftExtension f (g ≫ 𝟙 c)` is a Kan extension, then `t.ofCompId : LeftExtension f g`
+is also a Kan extension. -/
+def ofCompId (t : LeftExtension f (g ≫ 𝟙 c)) (P : IsKan t) : IsKan t.ofCompId :=
+  .mk (fun s ↦ t.whiskerIdCancel <| P.to (s.whisker (𝟙 c))) <| by
+    intro s τ
+    ext
+    apply P.hom_ext
+    simp [← LeftExtension.w τ]
+
+/-- If `s ≅ t` and `IsKan (s.whisker h)`, then `IsKan (t.whisker h)`. -/
+def whiskerOfCommute (s t : LeftExtension f g) (i : s ≅ t) {x : B} (h : c ⟶ x)
+    (P : IsKan (s.whisker h)) :
+    IsKan (t.whisker h) :=
+  P.ofIsoKan <| whiskerIso i h
+
+end IsKan
+
+namespace IsAbsKan
+
+variable {s t : LeftExtension f g}
+
+/-- The family of 2-morphisms out of an absolute left Kan extension. -/
+abbrev desc (H : IsAbsKan t) {x : B} {h : c ⟶ x} (s : LeftExtension f (g ≫ h)) :
+    t.extension ≫ h ⟶ s.extension :=
+  (H h).desc s
+
+/-- An absolute left Kan extension is a left Kan extension. -/
+def isKan (H : IsAbsKan t) : IsKan t :=
+  ((H (𝟙 c)).ofCompId _).ofIsoKan <| whiskerOfCompIdIsoSelf t
+
+/-- Transport evidence that a left extension is a Kan extension across an isomorphism
+of extensions. -/
+def ofIsoAbsKan (P : IsAbsKan s) (i : s ≅ t) : IsAbsKan t :=
+  fun h ↦ (P h).ofIsoKan (whiskerIso i h)
+
+end IsAbsKan
+
+end LeftExtension
+
+namespace LeftLift
+
+variable {f : b ⟶ a} {g : c ⟶ a}
+
+/-- A left Kan lift of `g` along `f` is an initial object in `LeftLift f g`. -/
+abbrev IsKan (t : LeftLift f g) := t.IsUniversal
+
+/-- An absolute left Kan lift is a Kan lift such that every 1-morphism commutes with it. -/
+abbrev IsAbsKan (t : LeftLift f g) :=
+  ∀ {x : B} (h : x ⟶ c), IsKan (t.whisker h)
+
+namespace IsKan
+
+variable {s t : LeftLift f g}
+
+/-- To show that a left lift `t` is a Kan lift, we need to show that for every left lift `s`
+there is a unique morphism `t ⟶ s`. -/
+abbrev mk (desc : ∀ s, t ⟶ s) (w : ∀ s τ, τ = desc s) :
+    IsKan t :=
+  .ofUniqueHom desc w
+
+/-- The family of 2-morphisms out of a left Kan lift. -/
+abbrev desc (H : IsKan t) (s : LeftLift f g) : t.lift ⟶ s.lift :=
+  StructuredArrow.IsUniversal.desc H s
+
+@[reassoc (attr := simp)]
+theorem fac (H : IsKan t) (s : LeftLift f g) :
+    t.unit ≫ H.desc s ▷ f = s.unit :=
+  StructuredArrow.IsUniversal.fac H s
+
+/-- Two 2-morphisms out of a left Kan lift are equal if their compositions with
+each triangle 2-morphism are equal. -/
+theorem hom_ext (H : IsKan t) {k : c ⟶ b} {τ τ' : t.lift ⟶ k}
+    (w : t.unit ≫ τ ▷ f = t.unit ≫ τ' ▷ f) : τ = τ' :=
+  StructuredArrow.IsUniversal.hom_ext H w
+
+/-- Kan lifts on `g` along `f` are unique up to isomorphism. -/
+def uniqueUpToIso (P : IsKan s) (Q : IsKan t) : s ≅ t :=
+  Limits.IsInitial.uniqueUpToIso P Q
+
+@[simp]
+theorem uniqueUpToIso_hom_right (P : IsKan s) (Q : IsKan t) :
+    (uniqueUpToIso P Q).hom.right = P.desc t := rfl
+
+@[simp]
+theorem uniqueUpToIso_inv_right (P : IsKan s) (Q : IsKan t) :
+    (uniqueUpToIso P Q).inv.right = Q.desc s := rfl
+
+/-- Transport evidence that a left lift is a Kan lift across an isomorphism of lifts. -/
+def ofIsoKan (P : IsKan s) (i : s ≅ t) : IsKan t :=
+  Limits.IsInitial.ofIso P i
+
+/-- If `t : LeftLift f (𝟙 c ≫ g)` is a Kan lift, then `t.ofIdComp : LeftLift f g` is also
+a Kan lift. -/
+def ofIdComp (t : LeftLift f (𝟙 c ≫ g)) (P : IsKan t) : IsKan t.ofIdComp :=
+  .mk (fun s ↦ t.whiskerIdCancel <| P.to (s.whisker (𝟙 c))) <| by
+    intro s τ
+    ext
+    apply P.hom_ext
+    simp [← LeftLift.w τ]
+
+/-- If `s ≅ t` and `IsKan (s.whisker h)`, then `IsKan (t.whisker h)`. -/
+def whiskerOfCommute (s t : LeftLift f g) (i : s ≅ t) {x : B} (h : x ⟶ c)
+    (P : IsKan (s.whisker h)) :
+    IsKan (t.whisker h) :=
+  P.ofIsoKan <| whiskerIso i h
+
+end IsKan
+
+namespace IsAbsKan
+
+variable {s t : LeftLift f g}
+
+/-- The family of 2-morphisms out of an absolute left Kan lift. -/
+abbrev desc (H : IsAbsKan t) {x : B} {h : x ⟶ c} (s : LeftLift f (h ≫ g)) :
+    h ≫ t.lift ⟶ s.lift :=
+  (H h).desc s
+
+/-- An absolute left Kan lift is a left Kan lift. -/
+def isKan (H : IsAbsKan t) : IsKan t :=
+  ((H (𝟙 c)).ofIdComp _).ofIsoKan <| whiskerOfIdCompIsoSelf t
+
+/-- Transport evidence that a left lift is a Kan lift across an isomorphism of lifts. -/
+def ofIsoAbsKan (P : IsAbsKan s) (i : s ≅ t) : IsAbsKan t :=
+  fun h ↦ (P h).ofIsoKan (whiskerIso i h)
+
+end IsAbsKan
+
+end LeftLift
+
+namespace RightExtension
+
+variable {f : a ⟶ b} {g : a ⟶ c}
+
+/-- A right Kan extension of `g` along `f` is a terminal object in `RightExtension f g`. -/
+abbrev IsKan (t : RightExtension f g) := t.IsUniversal
+
+end RightExtension
+
+namespace RightLift
+
+variable {f : b ⟶ a} {g : c ⟶ a}
+
+/-- A right Kan lift of `g` along `f` is a terminal object in `RightLift f g`. -/
+abbrev IsKan (t : RightLift f g) := t.IsUniversal
+
+end RightLift
+
+end Bicategory
+
+end CategoryTheory
+```

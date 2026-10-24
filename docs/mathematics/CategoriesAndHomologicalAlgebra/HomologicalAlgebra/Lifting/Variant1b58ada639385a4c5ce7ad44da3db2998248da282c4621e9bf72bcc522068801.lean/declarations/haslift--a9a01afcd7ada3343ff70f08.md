@@ -1,0 +1,128 @@
+# hasLift
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "aa6ffedbb0156fe28dee22715e21ddc3d251db05",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 141,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/1b/1b58ada639385a4c5ce7ad44da3db2998248da282c4621e9bf72bcc522068801.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:86fd8579-19cd-aa47-dae9-9e6f70180a36",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:58be5eee-b5ce-d929-5273-758fb52ce357",
+  "kind": "lemma",
+  "lexical_name": "hasLift",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "haslift--a9a01afcd7ada3343ff70f08",
+  "source": {
+    "blob": "aa6ffedbb0156fe28dee22715e21ddc3d251db05",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 175,
+    "line": 141,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant1b58ada639385a4c5ce7ad44da3db2998248da282c4621e9bf72bcc522068801.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:a9a01afcd7ada3343ff70f088284a66b30d020cdef4ce8d93d9a49f04dca7db8",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant1b58ada639385a4c5ce7ad44da3db2998248da282c4621e9bf72bcc522068801.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:58be5eee-b5ce-d929-5273-758fb52ce357`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 141–175.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma hasLift (α : Cochain Q K 0) (hα : δ 0 1 α = (cocycle₁ sq hsq hQ hK).1) :
+    sq.HasLift where
+  exists_lift := by
+    replace hα : (Cochain.ofHom π).comp ((δ 0 1 α).comp (.ofHom ι) (add_zero 1)) (zero_add 1) =
+        (cocycle₁' sq hsq).1 := by
+      rw [← comp_coe_cocycle₁_comp sq hsq hQ hK, hα]
+    let l : Cocycle B X 0 :=
+      Cocycle.mk (cochain₀ sq hsq -
+        (Cochain.ofHom π).comp
+          (α.comp (.ofHom ι) (add_zero 0)) (zero_add 0)) 1 (by simp) (by
+            ext p _ rfl
+            replace hα := Cochain.congr_v hα p _ rfl
+            simp only [Cochain.zero_cochain_comp_v, Cochain.ofHom_v, Cochain.comp_zero_cochain_v,
+              δ_zero_cochain_v, Preadditive.sub_comp, Category.assoc, Preadditive.comp_sub,
+              HomologicalComplex.Hom.comm_assoc, cocycle₁', Cocycle.mk_coe, Cochain.ofHoms_v,
+              HomologicalComplex.eval_obj, HomologicalComplex.eval_map] at hα
+            simp [hα])
+    exact ⟨{
+      l := l.homOf
+      fac_left := by
+        ext n
+        have h₁ : i.f n ≫ π.f n = 0 := by
+          simp [← HomologicalComplex.comp_f, hπ]
+        have h₂ := (hsq n).fac_left
+        dsimp at h₁ h₂
+        simp [l, reassoc_of% h₁, h₂]
+      fac_right := by
+        ext n
+        have : ι.f n ≫ p.f n = 0 := by
+          simp [← HomologicalComplex.comp_f, hι]
+        simpa [l, this] using (hsq n).fac_right }⟩
+
+end Lifting
+
+end CochainComplex
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant1b58ada639385a4c5ce7ad44da3db2998248da282c4621e9bf72bcc522068801.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/Lifting/Variant1b58ada639385a4c5ce7ad44da3db2998248da282c4621e9bf72bcc522068801.lean#L141).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `aa6ffedbb0156fe28dee22715e21ddc3d251db05` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,237 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ShortExact.Variant6dcc27adc6f267f810623148fb9824cc27da7b11c95aec5381e43d8b90eac6e9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `841bdf36f5a332d995438389ca15b3a86656ff9d` · SHA-256 `bc9079f920b78c18c45856398378d4b56e62245c507ca0b35f672e76d7569dd4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ShortExact.Variante719c23ef038f64c2862e6a3bc8dfe1aa85de27d389730131fb544222426a8b4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e719c23ef038f64c2862e6a3bc8dfe1aa85de27d389730131fb544222426a8b4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.ShortExact.Variante719c23ef038f64c2862e6a3bc8dfe1aa85de27d389730131fb544222426a8b4","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"e719c23ef038f64c2862e6a3bc8dfe1aa85de27d389730131fb544222426a8b4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Homology/ShortComplex/ShortExact.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+import Mathlib.Algebra.Homology.ShortComplex.Exact
+import Mathlib.CategoryTheory.Preadditive.Injective.Basic
+
+/-!
+# Short exact short complexes
+
+A short complex `S : ShortComplex C` is short exact (`S.ShortExact`) when it is exact,
+`S.f` is a mono and `S.g` is an epi.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ShortExact.Variante719c23ef038f64c2862e6a3bc8dfe1aa85de27d389730131fb544222426a8b4
+
+namespace CategoryTheory
+
+open Category Limits ZeroObject
+
+variable {C D : Type*} [Category C] [Category D]
+
+namespace ShortComplex
+
+section
+
+variable [HasZeroMorphisms C] [HasZeroMorphisms D]
+  (S : ShortComplex C) {S₁ S₂ : ShortComplex C}
+
+/-- A short complex `S` is short exact if it is exact, `S.f` is a mono and `S.g` is an epi. -/
+structure ShortExact : Prop where
+  exact : S.Exact
+  [mono_f : Mono S.f]
+  [epi_g : Epi S.g]
+
+variable {S}
+
+lemma ShortExact.mk' (h : S.Exact) (_ : Mono S.f) (_ : Epi S.g) : S.ShortExact where
+  exact := h
+
+lemma shortExact_of_iso (e : S₁ ≅ S₂) (h : S₁.ShortExact) : S₂.ShortExact where
+  exact := exact_of_iso e h.exact
+  mono_f := by
+    suffices Mono (S₂.f ≫ e.inv.τ₂) by
+      exact mono_of_mono _ e.inv.τ₂
+    have := h.mono_f
+    rw [← e.inv.comm₁₂]
+    apply mono_comp
+  epi_g := by
+    suffices Epi (e.hom.τ₂ ≫ S₂.g) by
+      exact epi_of_epi e.hom.τ₂ _
+    have := h.epi_g
+    rw [e.hom.comm₂₃]
+    apply epi_comp
+
+lemma shortExact_iff_of_iso (e : S₁ ≅ S₂) : S₁.ShortExact ↔ S₂.ShortExact := by
+  constructor
+  · exact shortExact_of_iso e
+  · exact shortExact_of_iso e.symm
+
+lemma ShortExact.op (h : S.ShortExact) : S.op.ShortExact where
+  exact := h.exact.op
+  mono_f := by
+    have := h.epi_g
+    dsimp
+    infer_instance
+  epi_g := by
+    have := h.mono_f
+    dsimp
+    infer_instance
+
+lemma ShortExact.unop {S : ShortComplex Cᵒᵖ} (h : S.ShortExact) : S.unop.ShortExact where
+  exact := h.exact.unop
+  mono_f := by
+    have := h.epi_g
+    dsimp
+    infer_instance
+  epi_g := by
+    have := h.mono_f
+    dsimp
+    infer_instance
+
+variable (S)
+
+lemma shortExact_iff_op : S.ShortExact ↔ S.op.ShortExact :=
+  ⟨ShortExact.op, ShortExact.unop⟩
+
+lemma shortExact_iff_unop (S : ShortComplex Cᵒᵖ) : S.ShortExact ↔ S.unop.ShortExact :=
+  S.unop.shortExact_iff_op.symm
+
+variable {S}
+
+lemma ShortExact.map (h : S.ShortExact) (F : C ⥤ D)
+    [F.PreservesZeroMorphisms] [F.PreservesLeftHomologyOf S]
+    [F.PreservesRightHomologyOf S] [Mono (F.map S.f)] [Epi (F.map S.g)] :
+    (S.map F).ShortExact where
+  exact := h.exact.map F
+  mono_f := (inferInstance : Mono (F.map S.f))
+  epi_g := (inferInstance : Epi (F.map S.g))
+
+lemma ShortExact.map_of_exact (hS : S.ShortExact)
+    (F : C ⥤ D) [F.PreservesZeroMorphisms] [PreservesFiniteLimits F]
+    [PreservesFiniteColimits F] : (S.map F).ShortExact := by
+  have := hS.mono_f
+  have := hS.epi_g
+  have := preserves_mono_of_preservesLimit F S.f
+  have := preserves_epi_of_preservesColimit F S.g
+  exact hS.map F
+
+end
+
+section Preadditive
+
+variable [Preadditive C]
+
+lemma ShortExact.isIso_f_iff {S : ShortComplex C} (hS : S.ShortExact) [Balanced C] :
+    IsIso S.f ↔ IsZero S.X₃ := by
+  have := hS.exact.hasZeroObject
+  have := hS.mono_f
+  have := hS.epi_g
+  constructor
+  · intro hf
+    simp only [IsZero.iff_id_eq_zero, ← cancel_epi S.g, ← cancel_epi S.f,
+      S.zero_assoc, zero_comp]
+  · intro hX₃
+    have : Epi S.f := (S.exact_iff_epi (hX₃.eq_of_tgt _ _)).1 hS.exact
+    apply isIso_of_mono_of_epi
+
+lemma ShortExact.isIso_g_iff  {S : ShortComplex C} (hS : S.ShortExact) [Balanced C] :
+    IsIso S.g ↔ IsZero S.X₁ := by
+  have := hS.exact.hasZeroObject
+  have := hS.mono_f
+  have := hS.epi_g
+  constructor
+  · intro hf
+    simp only [IsZero.iff_id_eq_zero, ← cancel_mono S.f, ← cancel_mono S.g,
+      S.zero, zero_comp, assoc, comp_zero]
+  · intro hX₁
+    have : Mono S.g := (S.exact_iff_mono (hX₁.eq_of_src _ _)).1 hS.exact
+    apply isIso_of_mono_of_epi
+
+lemma isIso₂_of_shortExact_of_isIso₁₃ [Balanced C] {S₁ S₂ : ShortComplex C} (φ : S₁ ⟶ S₂)
+    (h₁ : S₁.ShortExact) (h₂ : S₂.ShortExact) [IsIso φ.τ₁] [IsIso φ.τ₃] : IsIso φ.τ₂ := by
+  have := h₁.mono_f
+  have := h₂.mono_f
+  have := h₁.epi_g
+  have := h₂.epi_g
+  have := mono_τ₂_of_exact_of_mono φ h₁.exact
+  have := epi_τ₂_of_exact_of_epi φ h₂.exact
+  apply isIso_of_mono_of_epi
+
+lemma isIso₂_of_shortExact_of_isIso₁₃' [Balanced C] {S₁ S₂ : ShortComplex C} (φ : S₁ ⟶ S₂)
+    (h₁ : S₁.ShortExact) (h₂ : S₂.ShortExact) (_ : IsIso φ.τ₁) (_ : IsIso φ.τ₃) : IsIso φ.τ₂ :=
+  isIso₂_of_shortExact_of_isIso₁₃ φ h₁ h₂
+
+/-- If `S` is a short exact short complex in a balanced category,
+then `S.X₁` is the kernel of `S.g`. -/
+noncomputable def ShortExact.fIsKernel [Balanced C] {S : ShortComplex C} (hS : S.ShortExact) :
+    IsLimit (KernelFork.ofι S.f S.zero) := by
+  have := hS.mono_f
+  exact hS.exact.fIsKernel
+
+/-- If `S` is a short exact short complex in a balanced category,
+then `S.X₃` is the cokernel of `S.f`. -/
+noncomputable def ShortExact.gIsCokernel [Balanced C] {S : ShortComplex C} (hS : S.ShortExact) :
+    IsColimit (CokernelCofork.ofπ S.g S.zero) := by
+  have := hS.epi_g
+  exact hS.exact.gIsCokernel
+
+/-- Is `S` is an exact short complex and `h : S.HomologyData`, there is
+a short exact sequence `0 ⟶ h.left.K ⟶ S.X₂ ⟶ h.right.Q ⟶ 0`. -/
+lemma Exact.shortExact {S : ShortComplex C} (hS : S.Exact) (h : S.HomologyData) :
+    (ShortComplex.mk _ _ (h.exact_iff_i_p_zero.1 hS)).ShortExact where
+  exact := by
+    have := hS.epi_f' h.left
+    have := hS.mono_g' h.right
+    let S' := ShortComplex.mk h.left.i S.g (by simp)
+    let S'' := ShortComplex.mk _ _ (h.exact_iff_i_p_zero.1 hS)
+    let a : S ⟶ S' :=
+      { τ₁ := h.left.f'
+        τ₂ := 𝟙 _
+        τ₃ := 𝟙 _ }
+    let b : S'' ⟶ S' :=
+      { τ₁ := 𝟙 _
+        τ₂ := 𝟙 _
+        τ₃ := h.right.g' }
+    rwa [ShortComplex.exact_iff_of_epi_of_isIso_of_mono b,
+      ← ShortComplex.exact_iff_of_epi_of_isIso_of_mono a]
+
+/-- A split short complex is short exact. -/
+lemma Splitting.shortExact {S : ShortComplex C} [HasZeroObject C] (s : S.Splitting) :
+    S.ShortExact where
+  exact := s.exact
+  mono_f := s.mono_f
+  epi_g := s.epi_g
+
+namespace ShortExact
+
+/-- A choice of splitting for a short exact short complex `S` in a balanced category
+such that `S.X₁` is injective. -/
+noncomputable def splittingOfInjective {S : ShortComplex C} (hS : S.ShortExact)
+    [Injective S.X₁] [Balanced C] :
+    S.Splitting :=
+  have := hS.mono_f
+  Splitting.ofExactOfRetraction S hS.exact (Injective.factorThru (𝟙 S.X₁) S.f) (by simp) hS.epi_g
+
+/-- A choice of splitting for a short exact short complex `S` in a balanced category
+such that `S.X₃` is projective. -/
+noncomputable def splittingOfProjective {S : ShortComplex C} (hS : S.ShortExact)
+    [Projective S.X₃] [Balanced C] :
+    S.Splitting :=
+  have := hS.epi_g
+  Splitting.ofExactOfSection S hS.exact (Projective.factorThru (𝟙 S.X₃) S.g) (by simp) hS.mono_f
+
+end ShortExact
+
+end Preadditive
+
+end ShortComplex
+
+end CategoryTheory
+```

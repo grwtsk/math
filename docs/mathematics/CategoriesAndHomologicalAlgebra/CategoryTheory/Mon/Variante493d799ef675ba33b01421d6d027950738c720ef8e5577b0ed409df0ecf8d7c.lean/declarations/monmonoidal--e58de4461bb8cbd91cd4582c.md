@@ -1,0 +1,130 @@
+# monMonoidal
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:01267b3843d9fb169f6c81535545ac7b8187f777b5d4a3fa71b210fda53462cd",
+  "kind": "instance",
+  "lexical_name": "monMonoidal",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "monmonoidal--e58de4461bb8cbd91cd4582c",
+  "source": {
+    "blob": "b1e1e697de66beb6cfcbca1ab8cabeab7cb7e303",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 526,
+    "line": 478,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante493d799ef675ba33b01421d6d027950738c720ef8e5577b0ed409df0ecf8d7c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:e58de4461bb8cbd91cd4582cf67a6ebfc9034f3f964753a94e0230874d4e8bad",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante493d799ef675ba33b01421d6d027950738c720ef8e5577b0ed409df0ecf8d7c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:01267b3843d9fb169f6c81535545ac7b8187f777b5d4a3fa71b210fda53462cd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 478–526.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance monMonoidal : MonoidalCategory (Mon_ C) := .ofTensorHom
+  (tensorObj := fun M N ↦
+    { X := M.X ⊗ N.X
+      one := (λ_ (𝟙_ C)).inv ≫ (M.one ⊗ N.one)
+      mul := tensor_μ C (M.X, N.X) (M.X, N.X) ≫ (M.mul ⊗ N.mul)
+      one_mul := Mon_tensor_one_mul M N
+      mul_one := Mon_tensor_mul_one M N
+      mul_assoc := Mon_tensor_mul_assoc M N })
+  (tensorHom := fun f g ↦
+    { hom := f.hom ⊗ g.hom
+      one_hom := by
+        dsimp
+        slice_lhs 2 3 => rw [← tensor_comp, Hom.one_hom f, Hom.one_hom g]
+      mul_hom := by
+        dsimp
+        slice_rhs 1 2 => rw [tensor_μ_natural]
+        slice_lhs 2 3 => rw [← tensor_comp, Hom.mul_hom f, Hom.mul_hom g, tensor_comp]
+        simp only [Category.assoc] })
+  (tensor_id := by intros; ext; apply tensor_id)
+  (tensor_comp := by intros; ext; apply tensor_comp)
+  (tensorUnit' := trivial C)
+  (associator := fun M N P ↦ isoOfIso (α_ M.X N.X P.X) one_associator mul_associator)
+  (associator_naturality := by intros; ext; dsimp; apply associator_naturality)
+  (leftUnitor := fun M ↦ isoOfIso (λ_ M.X) one_leftUnitor mul_leftUnitor)
+  (leftUnitor_naturality := by intros; ext; dsimp; apply leftUnitor_naturality)
+  (rightUnitor := fun M ↦ isoOfIso (ρ_ M.X) one_rightUnitor mul_rightUnitor)
+  (rightUnitor_naturality := by intros; ext; dsimp; apply rightUnitor_naturality)
+  (pentagon := by intros; ext; dsimp; apply pentagon)
+  (triangle := by intros; ext; dsimp; apply triangle)
+#align Mon_.Mon_monoidal Mon_.monMonoidal
+
+end Mon_
+
+/-!
+Projects:
+* Check that `Mon_ MonCat ≌ CommMonCat`, via the Eckmann-Hilton argument.
+  (You'll have to hook up the cartesian monoidal structure on `MonCat` first,
+  available in mathlib3#3463)
+* More generally, check that `Mon_ (Mon_ C) ≌ CommMon_ C` when `C` is braided.
+* Check that `Mon_ TopCat ≌ [bundled topological monoids]`.
+* Check that `Mon_ AddCommGroupCat ≌ RingCat`.
+  (We've already got `Mon_ (ModuleCat R) ≌ AlgebraCat R`,
+  in `Mathlib.CategoryTheory.Monoidal.Internal.Module`.)
+* Can you transport this monoidal structure to `RingCat` or `AlgebraCat R`?
+  How does it compare to the "native" one?
+* Show that when `C` is braided, the forgetful functor `Mon_ C ⥤ C` is monoidal.
+* Show that when `F` is a lax braided functor `C ⥤ D`, the functor `map_Mon F : Mon_ C ⥤ Mon_ D`
+  is lax monoidal.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante493d799ef675ba33b01421d6d027950738c720ef8e5577b0ed409df0ecf8d7c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante493d799ef675ba33b01421d6d027950738c720ef8e5577b0ed409df0ecf8d7c.lean#L478).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b1e1e697de66beb6cfcbca1ab8cabeab7cb7e303` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

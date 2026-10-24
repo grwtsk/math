@@ -1,0 +1,139 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Pullbacks.Varianta82920daba854a60df72667f533d50b8267a635c685aad41558858b247c60b13
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `55b4d1d27f709530437717b35b9f02c07484b105` · SHA-256 `fab7a9990e518e109b94b3629506b15de5513ace9bdbdc592cd90daa8635f520`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.PullbackConeCombine.Variant83218b7d6b45940885a2316c587291ba32a193b09555aabdd808f37d9f16f3d9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"83218b7d6b45940885a2316c587291ba32a193b09555aabdd808f37d9f16f3d9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.PullbackConeCombine.Variant83218b7d6b45940885a2316c587291ba32a193b09555aabdd808f37d9f16f3d9","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"83218b7d6b45940885a2316c587291ba32a193b09555aabdd808f37d9f16f3d9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Limits/FunctorCategory/Shapes/Pullbacks.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+module
+
+public import Mathlib.CategoryTheory.Limits.FunctorCategory.Basic
+public import Mathlib.CategoryTheory.Limits.Shapes.Pullback.HasPullback
+
+/-!
+# Pullbacks in functor categories
+
+We prove the isomorphism `(pullback f g).obj d ≅ pullback (f.app d) (g.app d)`.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.PullbackConeCombine.Variant83218b7d6b45940885a2316c587291ba32a193b09555aabdd808f37d9f16f3d9
+
+@[expose] public section
+
+universe v₁ v₂ u₁ u₂
+
+namespace CategoryTheory.Limits
+
+variable {C : Type u₁} [Category.{v₁} C] {D : Type u₂} [Category.{v₂} D] {F G H : D ⥤ C}
+
+section Pullback
+
+/-- Given functors `F G H` and natural transformations `f : F ⟶ H` and `g : g : G ⟶ H`, together
+with a collection of limiting pullback cones for each cospan `F X ⟶ H X, G X ⟶ H X`, we can stitch
+them together to give a pullback cone for the cospan formed by `f` and `g`.
+`combinePullbackConesIsLimit` shows that this pullback cone is limiting. -/
+@[simps!]
+def PullbackCone.combine (f : F ⟶ H) (g : G ⟶ H) (c : ∀ X, PullbackCone (f.app X) (g.app X))
+    (hc : ∀ X, IsLimit (c X)) : PullbackCone f g :=
+  PullbackCone.mk (W := {
+    obj X := (c X).pt
+    map {X Y} h := (hc Y).lift ⟨_, (c X).π ≫ cospanHomMk (H.map h) (F.map h) (G.map h)⟩
+    map_id _ := (hc _).hom_ext <| by rintro (_ | _ | _); all_goals simp
+    map_comp _ _ := (hc _).hom_ext <| by rintro (_ | _ | _); all_goals simp })
+    { app X := (c X).fst }
+    { app X := (c X).snd }
+    (by ext; simp [(c _).condition])
+
+set_option backward.isDefEq.respectTransparency.types false in
+set_option backward.defeqAttrib.useBackward true in
+/--
+The pullback cone `combinePullbackCones` is limiting.
+-/
+def PullbackCone.combineIsLimit (f : F ⟶ H) (g : G ⟶ H)
+    (c : ∀ X, PullbackCone (f.app X) (g.app X)) (hc : ∀ X, IsLimit (c X)) :
+    IsLimit (combine f g c hc) :=
+  evaluationJointlyReflectsLimits _ fun k ↦ by
+    refine IsLimit.equivOfNatIsoOfIso ?_ _ _ ?_ (hc k)
+    · exact cospanIsoMk (Iso.refl _) (Iso.refl _) (Iso.refl _)
+    · refine Cone.ext (Iso.refl _) ?_
+      rintro (_ | _ | _)
+      all_goals cat_disch
+
+variable [HasPullbacks C]
+
+/-- Evaluating a pullback amounts to taking the pullback of the evaluations. -/
+noncomputable def pullbackObjIso (f : F ⟶ H) (g : G ⟶ H) (d : D) :
+    (pullback f g).obj d ≅ pullback (f.app d) (g.app d) :=
+  limitObjIsoLimitCompEvaluation (cospan f g) d ≪≫ HasLimit.isoOfNatIso (diagramIsoCospan _)
+
+@[reassoc (attr := simp)]
+theorem pullbackObjIso_hom_comp_fst (f : F ⟶ H) (g : G ⟶ H) (d : D) :
+    (pullbackObjIso f g d).hom ≫ pullback.fst (f.app d) (g.app d) = (pullback.fst f g).app d := by
+  simp [pullbackObjIso]
+
+@[reassoc (attr := simp)]
+theorem pullbackObjIso_hom_comp_snd (f : F ⟶ H) (g : G ⟶ H) (d : D) :
+    (pullbackObjIso f g d).hom ≫ pullback.snd (f.app d) (g.app d) = (pullback.snd f g).app d := by
+  simp [pullbackObjIso]
+
+set_option backward.defeqAttrib.useBackward true in
+@[reassoc (attr := simp)]
+theorem pullbackObjIso_inv_comp_fst (f : F ⟶ H) (g : G ⟶ H) (d : D) :
+    (pullbackObjIso f g d).inv ≫ (pullback.fst f g).app d = pullback.fst (f.app d) (g.app d) := by
+  simp [pullbackObjIso]
+
+set_option backward.defeqAttrib.useBackward true in
+@[reassoc (attr := simp)]
+theorem pullbackObjIso_inv_comp_snd (f : F ⟶ H) (g : G ⟶ H) (d : D) :
+    (pullbackObjIso f g d).inv ≫ (pullback.snd f g).app d = pullback.snd (f.app d) (g.app d) := by
+  simp [pullbackObjIso]
+
+end Pullback
+
+section Pushout
+
+variable [HasPushouts C]
+
+/-- Evaluating a pushout amounts to taking the pushout of the evaluations. -/
+noncomputable def pushoutObjIso (f : F ⟶ G) (g : F ⟶ H) (d : D) :
+    (pushout f g).obj d ≅ pushout (f.app d) (g.app d) :=
+  colimitObjIsoColimitCompEvaluation (span f g) d ≪≫ HasColimit.isoOfNatIso (diagramIsoSpan _)
+
+@[reassoc (attr := simp)]
+theorem inl_comp_pushoutObjIso_hom (f : F ⟶ G) (g : F ⟶ H) (d : D) :
+    (pushout.inl f g).app d ≫ (pushoutObjIso f g d).hom = pushout.inl (f.app d) (g.app d) := by
+  simp [pushoutObjIso]
+
+@[reassoc (attr := simp)]
+theorem inr_comp_pushoutObjIso_hom (f : F ⟶ G) (g : F ⟶ H) (d : D) :
+    (pushout.inr f g).app d ≫ (pushoutObjIso f g d).hom = pushout.inr (f.app d) (g.app d) := by
+  simp [pushoutObjIso]
+
+set_option backward.defeqAttrib.useBackward true in
+@[reassoc (attr := simp)]
+theorem inl_comp_pushoutObjIso_inv (f : F ⟶ G) (g : F ⟶ H) (d : D) :
+    pushout.inl (f.app d) (g.app d) ≫ (pushoutObjIso f g d).inv = (pushout.inl f g).app d := by
+  simp [pushoutObjIso]
+
+set_option backward.defeqAttrib.useBackward true in
+@[reassoc (attr := simp)]
+theorem inr_comp_pushoutObjIso_inv (f : F ⟶ G) (g : F ⟶ H) (d : D) :
+    pushout.inr (f.app d) (g.app d) ≫ (pushoutObjIso f g d).inv = (pushout.inr f g).app d := by
+  simp [pushoutObjIso]
+
+end Pushout
+
+end CategoryTheory.Limits
+```

@@ -1,0 +1,186 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.TwoP.Variant69c6e2b37070fb91138fc5c59edeaa72e623adc1573a5befc98cab64ed8fcfe8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `37beae0b8be6732abea3bde71d3cce32cc692027` · SHA-256 `0dc23ab08b1d3810434f4abbd970558422dc7fa2a196f83fecdd5d8be73da249`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.TwoP.Variant11acb6c550715be39dd623ee46136b1fc44faa3a73de4166871c526559baaf65","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"11acb6c550715be39dd623ee46136b1fc44faa3a73de4166871c526559baaf65","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.TwoP.Variant11acb6c550715be39dd623ee46136b1fc44faa3a73de4166871c526559baaf65","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"11acb6c550715be39dd623ee46136b1fc44faa3a73de4166871c526559baaf65","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Category/TwoP.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","implicit_eof_scopes","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+module
+
+public import Mathlib.Basic.TwoPointing
+public import Mathlib.CategoryTheory.Category.Bipointed
+
+/-!
+# The category of two-pointed types
+
+This defines `TwoP`, the category of two-pointed types.
+
+## References
+
+* [nLab, *coalgebra of the real interval*]
+  (https://ncatlab.org/nlab/show/coalgebra+of+the+real+interval)
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.TwoP.Variant11acb6c550715be39dd623ee46136b1fc44faa3a73de4166871c526559baaf65
+
+@[expose] public section
+
+
+open CategoryTheory Option
+
+universe u
+
+
+/-- The category of two-pointed types. -/
+structure TwoP : Type (u + 1) where
+  /-- The underlying type of a two-pointed type. -/
+  protected X : Type u
+  /-- The two points of a bipointed type, bundled together as a pair of distinct elements. -/
+  toTwoPointing : TwoPointing X
+
+namespace TwoP
+
+instance : CoeSort TwoP Type* :=
+  ⟨TwoP.X⟩
+
+/-- Turns a two-pointing into a two-pointed type. -/
+abbrev of {X : Type*} (toTwoPointing : TwoPointing X) : TwoP :=
+  ⟨X, toTwoPointing⟩
+
+theorem coe_of {X : Type*} (toTwoPointing : TwoPointing X) : ↥(of toTwoPointing) = X :=
+  rfl
+
+alias _root_.TwoPointing.TwoP := of
+
+instance : Inhabited TwoP :=
+  ⟨of TwoPointing.bool⟩
+
+/-- Turns a two-pointed type into a bipointed type, by forgetting that the pointed elements are
+distinct. -/
+noncomputable def toBipointed (X : TwoP) : Bipointed :=
+  X.toTwoPointing.toProd.Bipointed
+
+@[simp]
+theorem coe_toBipointed (X : TwoP) : ↥X.toBipointed = ↥X :=
+  rfl
+
+noncomputable instance largeCategory : LargeCategory TwoP :=
+  inferInstanceAs <| Category (InducedCategory _ toBipointed)
+
+noncomputable instance concreteCategory : ConcreteCategory TwoP
+    (fun X Y => Bipointed.HomSubtype X.toBipointed Y.toBipointed) :=
+  inferInstanceAs <| ConcreteCategory (InducedCategory _ toBipointed) _
+
+noncomputable instance hasForgetToBipointed : HasForget₂ TwoP Bipointed :=
+  inferInstanceAs <| HasForget₂ (InducedCategory _ toBipointed) _
+
+@[ext]
+lemma hom_ext {X Y : TwoP} {f g : X ⟶ Y} (h : f.hom = g.hom) : f = g :=
+  InducedCategory.hom_ext h
+
+/-- Swaps the pointed elements of a two-pointed type. `TwoPointing.swap` as a functor. -/
+@[simps]
+noncomputable def swap : TwoP ⥤ TwoP where
+  obj X := ⟨X, X.toTwoPointing.swap⟩
+  map f :=
+    InducedCategory.homMk
+      { toFun := f.hom
+        map_fst := f.hom.map_snd
+        map_snd := f.hom.map_fst }
+
+#adaptation_note
+/-- `respectTransparency.types true` changes the auto-generated lemmas' signature -/
+set_option backward.isDefEq.respectTransparency.types false in
+/-- The equivalence between `TwoP` and itself induced by `Prod.swap` both ways. -/
+@[simps!]
+noncomputable def swapEquiv : TwoP ≌ TwoP where
+  functor := swap
+  inverse := swap
+  unitIso := Iso.refl _
+  counitIso := Iso.refl _
+
+@[simp]
+theorem swapEquiv_symm : swapEquiv.symm = swapEquiv :=
+  rfl
+
+end TwoP
+
+@[simp, nolint simpNF] -- mathlib builds without this simp attribute
+theorem TwoP_swap_comp_forget_to_Bipointed :
+    TwoP.swap ⋙ forget₂ TwoP Bipointed = forget₂ TwoP Bipointed ⋙ Bipointed.swap :=
+  rfl
+
+/-- The functor from `Pointed` to `TwoP` which adds a second point. -/
+@[simps]
+noncomputable def pointedToTwoPFst : Pointed.{u} ⥤ TwoP where
+  obj X := ⟨Option X, ⟨X.point, none⟩, some_ne_none _⟩
+  map f := ⟨Option.map f.toFun, congr_arg _ f.map_point, rfl⟩
+  map_comp f g := by
+    ext : 3
+    exact (Option.map_comp_map f.1 g.1).symm
+
+/-- The functor from `Pointed` to `TwoP` which adds a first point. -/
+@[simps]
+noncomputable def pointedToTwoPSnd : Pointed.{u} ⥤ TwoP where
+  obj X := ⟨Option X, ⟨none, X.point⟩, (some_ne_none _).symm⟩
+  map f := ⟨Option.map f.toFun, rfl, congr_arg _ f.map_point⟩
+  map_comp f g := by
+    ext : 3
+    exact (Option.map_comp_map f.1 g.1).symm
+
+@[simp]
+theorem pointedToTwoPFst_comp_swap : pointedToTwoPFst ⋙ TwoP.swap = pointedToTwoPSnd :=
+  rfl
+
+@[simp]
+theorem pointedToTwoPSnd_comp_swap : pointedToTwoPSnd ⋙ TwoP.swap = pointedToTwoPFst :=
+  rfl
+
+@[simp, nolint simpNF] -- mathlib builds without this simp attribute
+theorem pointedToTwoPFst_comp_forget_to_bipointed :
+    pointedToTwoPFst ⋙ forget₂ TwoP Bipointed = pointedToBipointedFst :=
+  rfl
+
+@[simp, nolint simpNF] -- mathlib builds without this simp attribute
+theorem pointedToTwoPSnd_comp_forget_to_bipointed :
+    pointedToTwoPSnd ⋙ forget₂ TwoP Bipointed = pointedToBipointedSnd :=
+  rfl
+
+/-- Adding a second point is left adjoint to forgetting the second point. -/
+noncomputable def pointedToTwoPFstForgetCompBipointedToPointedFstAdjunction :
+    pointedToTwoPFst ⊣ forget₂ TwoP Bipointed ⋙ bipointedToPointedFst :=
+  Adjunction.mkOfHomEquiv
+    { homEquiv := fun X Y =>
+        { toFun := fun f => ⟨f.hom.toFun ∘ Option.some, f.hom.map_fst⟩
+          invFun := fun f => ⟨fun o => o.elim Y.toTwoPointing.toProd.2 f.toFun, f.map_point, rfl⟩
+          left_inv := fun f => by
+            ext (_ | _) : 4
+            · exact f.hom.map_snd.symm
+            · rfl }
+      homEquiv_naturality_left_symm := fun f g => by ext (_ | _) : 4 <;> rfl }
+
+/-- Adding a first point is left adjoint to forgetting the first point. -/
+noncomputable def pointedToTwoPSndForgetCompBipointedToPointedSndAdjunction :
+    pointedToTwoPSnd ⊣ forget₂ TwoP Bipointed ⋙ bipointedToPointedSnd :=
+  Adjunction.mkOfHomEquiv
+    { homEquiv := fun X Y =>
+        { toFun := fun f => ⟨f.hom.toFun ∘ Option.some, f.hom.map_snd⟩
+          invFun := fun f => ⟨fun o => o.elim Y.toTwoPointing.toProd.1 f.toFun, rfl, f.map_point⟩
+          left_inv := fun f => by
+            ext (_ | _) : 4
+            · exact f.hom.map_fst.symm
+            · rfl }
+      homEquiv_naturality_left_symm := fun f g => by
+        ext (_ | _) : 4 <;> rfl }
+```

@@ -1,0 +1,132 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:bb35e13fb3604b7335941af130553f5eee872eaa4827d58bec20266b6ae22e1e",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--b1d6aefc0b0394d53e6495a1",
+  "source": {
+    "blob": "a5cf2907343ea0bfd65e5f99eb7a4b7ae53066bc",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 206,
+    "line": 156,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantdedb4027fc52d3ed24f569dd43920663f10b047e8a5291662ad34ed12007795d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:b1d6aefc0b0394d53e6495a117dec825f968bcb422fdc66709853b32cbd82599",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantdedb4027fc52d3ed24f569dd43920663f10b047e8a5291662ad34ed12007795d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:bb35e13fb3604b7335941af130553f5eee872eaa4827d58bec20266b6ae22e1e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 156–206.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance : MonoidalCategory (F C) where
+  tensorObj X Y := FreeMonoidalCategory.tensor X Y
+  tensorHom := @fun X₁ Y₁ X₂ Y₂ =>
+    Quotient.map₂ Hom.tensor <| by
+      intro _ _ h _ _ h'
+      exact HomEquiv.tensor h h'
+  whiskerLeft := fun X _ _ f =>
+    Quotient.map (fun f' => Hom.tensor (Hom.id X) f')
+      (fun _ _ h => HomEquiv.tensor (HomEquiv.refl (Hom.id X)) h) f
+  whiskerRight := fun f Y =>
+    Quotient.map (fun f' => Hom.tensor f' (Hom.id Y))
+      (fun _ _ h => HomEquiv.tensor h (HomEquiv.refl (Hom.id Y))) f
+  tensorHom_def := by
+    rintro W X Y Z ⟨f⟩ ⟨g⟩
+    apply Quotient.sound
+    calc Hom.tensor f g
+      _ ≈ Hom.tensor (Hom.comp f (Hom.id X)) (Hom.comp (Hom.id Y) g) := by
+        apply HomEquiv.tensor (HomEquiv.comp_id f).symm (HomEquiv.id_comp g).symm
+      _ ≈ Hom.comp (Hom.tensor f (Hom.id Y)) (Hom.tensor (Hom.id X) g) := by
+        apply HomEquiv.tensor_comp
+  whiskerLeft_id := by
+    rintro X Y
+    apply Quotient.sound
+    apply HomEquiv.tensor_id
+  id_whiskerRight := by
+    intro X Y
+    apply Quotient.sound
+    apply HomEquiv.tensor_id
+  tensor_id X Y := Quotient.sound tensor_id
+  tensor_comp := @fun X₁ Y₁ Z₁ X₂ Y₂ Z₂ => by
+    rintro ⟨f₁⟩ ⟨f₂⟩ ⟨g₁⟩ ⟨g₂⟩
+    exact Quotient.sound (tensor_comp _ _ _ _)
+  tensorUnit' := FreeMonoidalCategory.Unit
+  associator X Y Z :=
+    ⟨⟦Hom.α_hom X Y Z⟧, ⟦Hom.α_inv X Y Z⟧, Quotient.sound α_hom_inv, Quotient.sound α_inv_hom⟩
+  associator_naturality := @fun X₁ X₂ X₃ Y₁ Y₂ Y₃ => by
+    rintro ⟨f₁⟩ ⟨f₂⟩ ⟨f₃⟩
+    exact Quotient.sound (associator_naturality _ _ _)
+  leftUnitor X := ⟨⟦Hom.l_hom X⟧, ⟦Hom.l_inv X⟧, Quotient.sound l_hom_inv, Quotient.sound l_inv_hom⟩
+  leftUnitor_naturality := @fun X Y => by
+    rintro ⟨f⟩
+    exact Quotient.sound (l_naturality _)
+  rightUnitor X :=
+    ⟨⟦Hom.ρ_hom X⟧, ⟦Hom.ρ_inv X⟧, Quotient.sound ρ_hom_inv, Quotient.sound ρ_inv_hom⟩
+  rightUnitor_naturality := @fun X Y => by
+    rintro ⟨f⟩
+    exact Quotient.sound (ρ_naturality _)
+  pentagon W X Y Z := Quotient.sound pentagon
+  triangle X Y := Quotient.sound triangle
+
+@[simp]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantdedb4027fc52d3ed24f569dd43920663f10b047e8a5291662ad34ed12007795d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantdedb4027fc52d3ed24f569dd43920663f10b047e8a5291662ad34ed12007795d.lean#L156).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a5cf2907343ea0bfd65e5f99eb7a4b7ae53066bc` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

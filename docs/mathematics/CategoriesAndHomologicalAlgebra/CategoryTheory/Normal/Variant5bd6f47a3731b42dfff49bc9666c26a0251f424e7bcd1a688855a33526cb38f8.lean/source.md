@@ -1,0 +1,134 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Normal.Variant5bd6f47a3731b42dfff49bc9666c26a0251f424e7bcd1a688855a33526cb38f8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `94606fc70ab07da6af4457f014dd0e9cb3af854e` · SHA-256 `9eb46f1297b324821dbeed13c9088288442e9c213b44f01463529e84596f9f5f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsAddMonHomNormal.Varianteb701b185c612ce06be4339b4aec51cd30351577658e32e68e382d76b363b4a5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"eb701b185c612ce06be4339b4aec51cd30351577658e32e68e382d76b363b4a5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.IsAddMonHomNormal.Varianteb701b185c612ce06be4339b4aec51cd30351577658e32e68e382d76b363b4a5","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"eb701b185c612ce06be4339b4aec51cd30351577658e32e68e382d76b363b4a5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Monoidal/Cartesian/Normal.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","scope_end_name_mismatch","uncompiled_organization"],"structural_qualification":"structural_issues_retained_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Christian Merten. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Thomas Browning, Christian Merten
+-/
+module
+
+public import Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic
+public import Mathlib.CategoryTheory.Monoidal.Cartesian.Grp
+
+/-!
+# Normal subgroup objects
+
+In this file we define normal subgroups of group objects in a cartesian monoidal category as
+a predicate on morphisms. A morphism `φ : H ⟶ G` of group objects is normal if it is mono, a
+monoid morphism and the conjugation map `(g, h) ↦ g * h * g⁻¹` factors through `φ`.
+
+This is applied in the study of group schemes.
+
+## Main declarations
+
+- `CategoryTheory.IsMonHom.Normal`: The predicate on morphisms to be a normal monoid morphism.
+- `CategoryTheory.IsMonHom.normal_iff_normal_monoidHom`: A monoid morphism `H ⟶ G` that is mono
+  is normal if and only if for every `X`, the image of `H(X)` in `G(X)` is a normal subgroup.
+
+## References
+
+- In the context of group schemes:
+  [Görtz, Wedhorn, Algebraic Geometry II, Definition 27.3][goertz-wedhorn-2]
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.IsAddMonHomNormal.Varianteb701b185c612ce06be4339b4aec51cd30351577658e32e68e382d76b363b4a5
+
+public section
+
+namespace CategoryTheory
+
+variable {C : Type*} [Category* C] [CartesianMonoidalCategory C]
+
+open MonObj GrpObj MonoidalCategory CartesianMonoidalCategory
+
+/-- A morphism `φ : H ⟶ G` of additive group objects is a normal monoid homomorphism if it is a
+monoid homomorphism that is mono and such that the conjugation map `(g, h) ↦ g + h - g`
+factors through `φ`. -/
+class IsAddMonHom.Normal {G H : C} [AddGrpObj G] [AddGrpObj H] (φ : H ⟶ G) : Prop where
+  mono : Mono φ := by infer_instance
+  isAddMonHom : IsAddMonHom φ := by infer_instance
+  exists_comp_eq_addConj : ∃ ψ : G ⊗ H ⟶ H, ψ ≫ φ = G ◁ φ ≫ AddGrpObj.addConj G
+
+attribute [instance] IsAddMonHom.Normal.mono IsAddMonHom.Normal.isAddMonHom
+
+namespace IsMonHom
+
+variable {G H : C} [GrpObj G] [GrpObj H] {φ : H ⟶ G}
+
+/-- A morphism `φ : H ⟶ G` of group objects is a normal monoid homomorphism if it is a
+monoid homomorphism that is mono and such that the conjugation map `(g, h) ↦ g * h * g⁻¹`
+factors through `φ`. -/
+@[to_additive]
+class Normal (φ : H ⟶ G) : Prop where
+  mono : Mono φ := by infer_instance
+  isMonHom : IsMonHom φ := by infer_instance
+  exists_comp_eq_conj (φ) : ∃ ψ : G ⊗ H ⟶ H, ψ ≫ φ = G ◁ φ ≫ conj G
+
+attribute [instance] Normal.mono Normal.isMonHom
+
+@[to_additive]
+instance : Normal (𝟙 G) where
+  exists_comp_eq_conj := by cat_disch
+
+@[to_additive]
+instance : Normal η[G] where
+  exists_comp_eq_conj := by
+    use toUnit _
+    simp [conj, comp_mul, comp_inv, toUnit_unique _ (toUnit _), ← Hom.one_def]
+
+@[to_additive]
+lemma isNormalHom_iff [IsMonHom φ] [Mono φ] : Normal φ ↔ ∃ ψ : G ⊗ H ⟶ H, ψ ≫ φ = G ◁ φ ≫ conj G :=
+  ⟨fun h ↦ h.exists_comp_eq_conj, fun h ↦ ⟨‹_›, ‹_›, h⟩⟩
+
+/-- If `φ` is mono, it is a normal group homomorphism if and only if for all `X` the image of
+`H(X)` in `G(X)` is a normal subgroup. -/
+@[to_additive /-- If `φ` is mono, it is a normal additive group homomorphism if and only if for all
+`X` the image of `H(X)` in `G(X)` is a normal additive subgroup. -/]
+theorem normal_iff_normal_monoidHom [IsMonHom φ] [Mono φ] :
+    Normal φ ↔ ∀ (X : C), (monoidHom φ X).range.Normal := by
+  rw [isNormalHom_iff]
+  refine ⟨?_, ?_⟩
+  · intro ⟨ψ, hψ⟩ X
+    constructor
+    rintro - ⟨x, rfl⟩ z
+    exact ⟨lift z x ≫ ψ, by simp [hψ]⟩
+  · intro hnormal
+    have (X : C) (g : X ⟶ G) (h : X ⟶ H) : ∃ (h' : X ⟶ H), h' ≫ φ = g * h ≫ φ * g⁻¹ :=
+      (hnormal X).conj_mem (h ≫ φ) (by simp) g
+    choose h' hh' using this
+    refine ⟨Yoneda.fullyFaithful.preimage ?_, ?_⟩
+    · refine ⟨fun X ↦ ↾fun x ↦ h' _ (x ≫ fst _ _) (x ≫ snd _ _), fun X Y f ↦ ?_⟩
+      ext
+      simp [← cancel_mono φ, hh', comp_mul, comp_inv]
+    · refine yoneda.map_injective ?_
+      ext
+      simp [hh', conj, comp_mul, comp_inv]
+
+@[to_additive]
+instance (priority := low) [BraidedCategory C] [IsCommMonObj G] [IsMonHom φ] [Mono φ] :
+    Normal φ := by
+  simp [isNormalHom_iff, conj_eq_snd_of_isCommMonObj]
+
+@[to_additive]
+lemma Normal.of_isPullback_η [IsMonHom φ] {P : C} (p : G ⟶ P) [GrpObj P] [IsMonHom p]
+    (h : IsPullback φ (toUnit _) p η) :
+    Normal φ where
+  mono := h.mono_fst_of_mono
+  exists_comp_eq_conj := by
+    refine ⟨h.lift (G ◁ φ ≫ conj G) (toUnit _) ?_, ?_⟩
+    · simp [conj, comp_mul, inv_comp, mul_comp, h.w, comp_inv, ← Hom.one_def]
+    · simp
+
+end CategoryTheory.IsMonHom
+```

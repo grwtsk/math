@@ -1,0 +1,170 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Equifibered.Variant52dc47c4b76842e62c4303862da7ff162acf947abd53057c4df4c17b0447d9d7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `beed60fcdb7f25769016318320173c7926612949` · SHA-256 `b05e57ed768d2b68a0b4c10afe025c988225e5baf395def9f05ad0b503824c5f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Equifibered.Variantc9096e736f3037576ec6ed2886ebf9cc0e9182d90215aa66f3b60263623f74ce","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c9096e736f3037576ec6ed2886ebf9cc0e9182d90215aa66f3b60263623f74ce","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.Equifibered.Variantc9096e736f3037576ec6ed2886ebf9cc0e9182d90215aa66f3b60263623f74ce","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"c9096e736f3037576ec6ed2886ebf9cc0e9182d90215aa66f3b60263623f74ce","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Limits/Shapes/Pullback/Equifibered.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Andrew Yang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Andrew Yang
+-/
+module
+
+public import Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic
+public import Mathlib.CategoryTheory.MorphismProperty.Composition
+
+/-!
+
+# Equifibered natural transformation
+
+## Main definition
+- `CategoryTheory.NatTrans.Equifibered`:
+  A natural transformation `α : F ⟶ G` is equifibered if every commutative square of the following
+  form is a pullback.
+  ```
+  F(X) → F(Y)
+   ↓      ↓
+  G(X) → G(Y)
+  ```
+- `CategoryTheory.NatTrans.Coequifibered`: The dual notion.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Equifibered.Variantc9096e736f3037576ec6ed2886ebf9cc0e9182d90215aa66f3b60263623f74ce
+
+@[expose] public section
+
+
+open CategoryTheory.Limits CategoryTheory.Functor
+
+namespace CategoryTheory
+
+variable {J K C D ι : Type*} [Category* J] [Category* C] [Category* K] [Category* D]
+
+namespace NatTrans
+
+/-- A natural transformation is equifibered if every commutative square of the following form is
+a pullback.
+```
+F(X) → F(Y)
+ ↓      ↓
+G(X) → G(Y)
+```
+-/
+def Equifibered : MorphismProperty (J ⥤ C) :=
+  fun {F G} α ↦ ∀ ⦃i j : J⦄ (f : i ⟶ j), IsPullback (F.map f) (α.app i) (α.app j) (G.map f)
+
+theorem Equifibered.of_isIso {F G : J ⥤ C} (α : F ⟶ G) [IsIso α] : Equifibered α :=
+  fun _ _ f => IsPullback.of_vert_isIso ⟨naturality _ f⟩
+
+theorem Equifibered.comp {F G H : J ⥤ C} {α : F ⟶ G} {β : G ⟶ H} (hα : Equifibered α)
+    (hβ : Equifibered β) : Equifibered (α ≫ β) :=
+  fun _ _ f => (hα f).paste_vert (hβ f)
+
+instance : (Equifibered (J := J) (C := C)).IsMultiplicative where
+  id_mem _ := .of_isIso _
+  comp_mem _ _ := .comp
+
+instance : (Equifibered (J := J) (C := C)).RespectsIso :=
+  MorphismProperty.respectsIso_of_isStableUnderComposition fun _ _ ↦ .of_isIso
+
+theorem Equifibered.whiskerRight {F G : J ⥤ C} {α : F ⟶ G} (hα : Equifibered α)
+    (H : C ⥤ D) [∀ (i j : J) (f : j ⟶ i), PreservesLimit (cospan (α.app i) (G.map f)) H] :
+    Equifibered (whiskerRight α H) :=
+  fun _ _ f => (hα f).map H
+
+theorem Equifibered.whiskerLeft {F G : J ⥤ C} {α : F ⟶ G} (hα : Equifibered α) (H : K ⥤ J) :
+    Equifibered (whiskerLeft H α) :=
+  fun _ _ f => hα (H.map f)
+
+theorem Equifibered.of_discrete {F G : Discrete ι ⥤ C} (α : F ⟶ G) : Equifibered α := by
+  rintro ⟨i⟩ ⟨j⟩ ⟨⟨rfl : i = j⟩⟩
+  simp only [Discrete.functor_map_id]
+  exact IsPullback.of_horiz_isIso ⟨by rw [Category.id_comp, Category.comp_id]⟩
+
+/-- A natural transformation is co-equifibered if every commutative square of the following form is
+a pushout.
+```
+F(X) → F(Y)
+ ↓      ↓
+G(X) → G(Y)
+```
+-/
+def Coequifibered : MorphismProperty (J ⥤ C) :=
+  fun {F G} α ↦ ∀ ⦃i j : J⦄ (f : i ⟶ j), IsPushout (F.map f) (α.app i) (α.app j) (G.map f)
+
+theorem Coequifibered.of_isIso {F G : J ⥤ C} (α : F ⟶ G) [IsIso α] : Coequifibered α :=
+  fun _ _ f => .of_vert_isIso ⟨naturality _ f⟩
+
+theorem Coequifibered.comp {F G H : J ⥤ C} {α : F ⟶ G} {β : G ⟶ H} (hα : Coequifibered α)
+    (hβ : Coequifibered β) : Coequifibered (α ≫ β) :=
+  fun _ _ f => (hα f).paste_vert (hβ f)
+
+instance : (Coequifibered (J := J) (C := C)).IsMultiplicative where
+  id_mem _ := .of_isIso _
+  comp_mem _ _ := .comp
+
+instance : (Coequifibered (J := J) (C := C)).RespectsIso :=
+  MorphismProperty.respectsIso_of_isStableUnderComposition fun _ _ ↦ .of_isIso
+
+theorem Coequifibered.whiskerRight {F G : J ⥤ C} {α : F ⟶ G} (hα : Coequifibered α)
+    (H : C ⥤ D) [∀ (i j : J) (f : j ⟶ i), PreservesColimit (span (F.map f) (α.app j)) H] :
+    Coequifibered (whiskerRight α H) :=
+  fun _ _ f => (hα f).map H
+
+theorem Coequifibered.whiskerLeft {F G : J ⥤ C} {α : F ⟶ G} (hα : Coequifibered α) (H : K ⥤ J) :
+    Coequifibered (whiskerLeft H α) :=
+  fun _ _ f => hα (H.map f)
+
+theorem Coequifibered.of_discrete {ι : Type*} {F G : Discrete ι ⥤ C}
+    (α : F ⟶ G) : Equifibered α := by
+  rintro ⟨i⟩ ⟨j⟩ ⟨⟨rfl : i = j⟩⟩
+  simp only [Discrete.functor_map_id]
+  exact IsPullback.of_horiz_isIso ⟨by rw [Category.id_comp, Category.comp_id]⟩
+
+section Opposite
+
+theorem Coequifibered.op {F G : J ⥤ C} {α : F ⟶ G} (hα : Coequifibered α) :
+    Equifibered (NatTrans.op α) := fun _ _ f ↦ (hα f.unop).op
+
+theorem Equifibered.op {F G : J ⥤ C} {α : F ⟶ G} (hα : Equifibered α) :
+    Coequifibered (NatTrans.op α) := fun _ _ f ↦ (hα f.unop).op
+
+theorem Coequifibered.unop {F G : Jᵒᵖ ⥤ Cᵒᵖ} {α : F ⟶ G} (hα : Coequifibered α) :
+    Equifibered (NatTrans.unop α) := fun _ _ f ↦ (hα f.op).unop
+
+theorem Equifibered.unop {F G : Jᵒᵖ ⥤ Cᵒᵖ} {α : F ⟶ G} (hα : Equifibered α) :
+    Coequifibered (NatTrans.unop α) := fun _ _ f ↦ (hα f.op).unop
+
+theorem Equifibered.rightOp {F G : Jᵒᵖ ⥤ C} {α : F ⟶ G} (hα : Equifibered α) :
+    Coequifibered α.rightOp := fun _ _ f ↦ (hα f.op).op
+
+theorem Coequifibered.rightOp {F G : Jᵒᵖ ⥤ C} {α : F ⟶ G} (hα : Coequifibered α) :
+    Equifibered α.rightOp := fun _ _ f ↦ (hα f.op).op
+
+theorem coequifibered_op_iff {F G : J ⥤ C} {α : F ⟶ G} :
+    Coequifibered (NatTrans.op α) ↔ Equifibered α := ⟨Coequifibered.unop, Equifibered.op⟩
+
+theorem equifibered_op_iff {F G : J ⥤ C} {α : F ⟶ G} :
+    Equifibered (NatTrans.op α) ↔ Coequifibered α := ⟨Equifibered.unop, Coequifibered.op⟩
+
+theorem coequifibered_unop_iff {F G : Jᵒᵖ ⥤ Cᵒᵖ} {α : F ⟶ G} :
+    Coequifibered (NatTrans.unop α) ↔ Equifibered α := ⟨Coequifibered.op, Equifibered.unop⟩
+
+theorem equifibered_unop_iff {F G : Jᵒᵖ ⥤ Cᵒᵖ} {α : F ⟶ G} :
+    Equifibered (NatTrans.unop α) ↔ Coequifibered α := ⟨Equifibered.op, Coequifibered.unop⟩
+
+end Opposite
+
+end NatTrans
+
+end CategoryTheory
+````
