@@ -181,4 +181,36 @@ theorem scalarCycle_commutator (z : ℂ) :
 
 end Fixtures
 
+/-! ## Finite-dimensional projection trace boundary -/
+
+/-- Over the complex numbers, the ordinary trace of an idempotent square matrix
+is exactly the complex cast of the dimension of the image of its linear map.
+This is a finite-dimensional rank computation, not an analytic K₀ theorem. -/
+theorem idempotent_matrix_trace_eq_finrank
+    (n : ℕ) (P : Matrix (Fin n) (Fin n) ℂ) (hP : P * P = P) :
+    P.trace = (Module.finrank ℂ (LinearMap.range P.toLin') : ℂ) := by
+  have hlin : IsIdempotentElem P.toLin' := by
+    change P.toLin'.comp P.toLin' = P.toLin'
+    rw [← Matrix.toLin'_mul, hP]
+  calc
+    P.trace = LinearMap.trace ℂ (Fin n → ℂ) P.toLin' :=
+      (Matrix.trace_toLin'_eq P).symm
+    _ = _ := hlin.isProj_range.trace
+
+/-- The normalized ordinary trace of a finite complex matrix star projection
+is rational. Consequently, an irrational canonical trace projection from an
+infinite reduced group C⋆-algebra cannot be represented by a single finite
+matrix carrying its normalized ordinary matrix trace. This theorem does not
+address traces integrated over an infinite family of matrix fibers. -/
+theorem star_projection_normalized_trace_rational
+    (n : ℕ) (P : Matrix (Fin n) (Fin n) ℂ) (hP : IsStarProjection P) :
+    ∃ q : ℚ, P.trace / (n : ℂ) = (q : ℂ) := by
+  let k : ℕ := Module.finrank ℂ (LinearMap.range P.toLin')
+  refine ⟨(k : ℚ) / (n : ℚ), ?_⟩
+  have htrace : P.trace = (k : ℂ) :=
+    idempotent_matrix_trace_eq_finrank n P hP.isIdempotentElem.eq
+  rw [htrace]
+  norm_cast
+
+
 end GRWTSK.Algebra.KTheory.FiniteFredholmCycle
