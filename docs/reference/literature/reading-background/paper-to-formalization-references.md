@@ -9390,3 +9390,14 @@ For source commit
 - external verification receipt: **unavailable**.
 
 Source inspection is not compiler or kernel acceptance.
+
+
+**Commit-pinned verification queue for case DYNAMIC-PARTITION-SOFIC-LANGUAGE-ORDINATE-20261023:**
+[math issue #1167](https://github.com/grwtsk/math/issues/1167) for
+actual labeled graph/dynamic partition/spectral cover,
+[math issue #1168](https://github.com/grwtsk/math/issues/1168) for
+the source-canonical Bombieri collision and zeta-ordinate
+conditional arithmetic split. Immutable source-and-provenance
+snapshot **28b8048fbb60a2405bbe6b4bdf6560f7cdabe2b7**.
+Both issues are OPEN and all compiler, fresh kernel and
+transitive axiom checks are **NOT_RUN**; no executed receipt exists.
