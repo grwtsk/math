@@ -1,0 +1,39 @@
+# Source-pinned verification request; do not execute.
+schema_version = "0.1"
+request_id = "proper-power-log-count-bound-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "55e23d484c0f84f82b352c04efe120dc4e68c2cb"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerLogCountBound.lean"
+source_blob = "3c991259a6e3d312a3972edd03409132b02b7815"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogCountBound.exponent_support_subset_logIcc",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogCountBound.properExponentCount_le_logIcc",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogCutoff",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCount",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Convert card(Icc 2 (Nat.log2 N)) to explicit Nat.log2 N bound",
+ "Transfer logarithmic count bound to properExponentLogMass",
+ "Aggregate improved finite nonunit proper-power mass bound",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerLogCountBound.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogCountBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerLogCountBound.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
