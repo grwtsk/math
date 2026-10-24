@@ -426,4 +426,19 @@ theorem self_adjoint_projection_cross_conjugate
   rw [hs]
   exact inner_conj_symm _ _
 
+/-- The self-adjoint projected energy pairing has conjugate off-diagonal
+contributions. The real-part reduction and quantitative bound are separate. -/
+theorem self_adjoint_projection_energy_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H) :
+    inner 𝕜 (T x) x =
+      inner 𝕜 (T (S.starProjection x)) (S.starProjection x) +
+      inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) +
+      star (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) +
+      inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x) := by
+  rw [continuous_operator_projection_inner_expansion S T x]
+  rw [self_adjoint_projection_cross_conjugate S T hT x]
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
