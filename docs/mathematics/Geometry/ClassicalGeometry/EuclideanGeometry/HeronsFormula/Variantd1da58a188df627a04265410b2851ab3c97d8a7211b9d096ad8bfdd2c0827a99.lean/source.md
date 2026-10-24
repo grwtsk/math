@@ -1,0 +1,84 @@
+# Complete source: GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.HeronsFormula.Variantd1da58a188df627a04265410b2851ab3c97d8a7211b9d096ad8bfdd2c0827a99
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a9e81cbd6eb69c2284fc458976b2ca2224a58f01` · SHA-256 `7764aadaa64cea3079668c35df5c276c081b9f5f3b5aec56b5e989646035256d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Geometry.ClassicalGeometry.EuclideanGeometry
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.Heron.Variant45b6bf1d63b83127c8378b74b4824ae9adbe77ca80ad7aee11265ee64462e00b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"45b6bf1d63b83127c8378b74b4824ae9adbe77ca80ad7aee11265ee64462e00b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Geometry.EuclideanGeometry.SourceCorpus.Heron.Variant45b6bf1d63b83127c8378b74b4824ae9adbe77ca80ad7aee11265ee64462e00b","mathematical_subject":"Geometry.EuclideanGeometry","original_sha256":"45b6bf1d63b83127c8378b74b4824ae9adbe77ca80ad7aee11265ee64462e00b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Archive/Wiedijk100Theorems/HeronsFormula.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Matt Kempster. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Matt Kempster
+-/
+module
+
+public import Mathlib.Geometry.Euclidean.Triangle
+
+/-!
+# Freek № 57: Heron's Formula
+
+This file proves Theorem 57 from the [100 Theorems List](https://www.cs.ru.nl/~freek/100/),
+also known as Heron's formula, which gives the area of a triangle based only on its three sides'
+lengths.
+
+## References
+
+* https://en.wikipedia.org/wiki/Herons_formula
+
+-/
+
+
+namespace GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.Heron.Variant45b6bf1d63b83127c8378b74b4824ae9adbe77ca80ad7aee11265ee64462e00b
+
+open Real EuclideanGeometry
+
+namespace Theorems100
+
+variable {V : Type*} {P : Type*} [NormedAddCommGroup V] [InnerProductSpace ℝ V] [MetricSpace P]
+  [NormedAddTorsor V P]
+
+/-- **Heron's formula**: The area of a triangle with side lengths `a`, `b`, and `c` is
+  `√(s * (s - a) * (s - b) * (s - c))` where `s = (a + b + c) / 2` is the semiperimeter.
+  We show this by equating this formula to `a * b * sin γ`, where `γ` is the angle opposite
+  the side `c`.
+-/
+public theorem heron {p₁ p₂ p₃ : P} (h1 : p₁ ≠ p₂) (h2 : p₃ ≠ p₂) :
+    let a := dist p₁ p₂
+    let b := dist p₃ p₂
+    let c := dist p₁ p₃
+    let s := (a + b + c) / 2
+    1 / 2 * a * b * sin (∠ p₁ p₂ p₃) = √(s * (s - a) * (s - b) * (s - c)) := by
+  intro a b c s
+  let γ := ∠ p₁ p₂ p₃
+  obtain := (dist_pos.mpr h1).ne', (dist_pos.mpr h2).ne'
+  have cos_rule : cos γ = (a * a + b * b - c * c) / (2 * a * b) := by
+    simp [field, a, b, c, γ, mul_comm,
+      dist_sq_eq_dist_sq_add_dist_sq_sub_two_mul_dist_mul_dist_mul_cos_angle p₁ p₂ p₃]
+  let numerator := (2 * a * b) ^ 2 - (a * a + b * b - c * c) ^ 2
+  let denominator := (2 * a * b) ^ 2
+  have split_to_frac : ↑1 - cos γ ^ 2 = numerator / denominator := by
+    simp [field, numerator, denominator, cos_rule]
+  have numerator_nonneg : 0 ≤ numerator := by
+    have frac_nonneg : 0 ≤ numerator / denominator :=
+      (sub_nonneg.mpr (cos_sq_le_one γ)).trans_eq split_to_frac
+    rcases div_nonneg_iff.mp frac_nonneg with h | h
+    · exact h.left
+    · simpa [numerator, denominator, a, b, c, h1, h2] using le_antisymm h.right (sq_nonneg _)
+  have ab2_nonneg : 0 ≤ 2 * a * b := by positivity
+  calc
+    1 / 2 * a * b * sin γ = 1 / 2 * a * b * (√numerator / √denominator) := by
+      rw [sin_eq_sqrt_one_sub_cos_sq, split_to_frac, sqrt_div numerator_nonneg] <;>
+        simp [γ, angle_nonneg, angle_le_pi]
+    _ = 1 / 4 * √((2 * a * b) ^ 2 - (a * a + b * b - c * c) ^ 2) := by
+      simp (disch := positivity) [field, numerator, denominator, -mul_eq_mul_left_iff]; ring
+    _ = ↑1 / ↑4 * √(s * (s - a) * (s - b) * (s - c) * ↑4 ^ 2) := by simp only [s]; ring_nf
+    _ = √(s * (s - a) * (s - b) * (s - c)) := by
+      rw [sqrt_mul', sqrt_sq, div_mul_eq_mul_div, one_mul, mul_div_cancel_right₀] <;> norm_num
+
+end Theorems100
+```

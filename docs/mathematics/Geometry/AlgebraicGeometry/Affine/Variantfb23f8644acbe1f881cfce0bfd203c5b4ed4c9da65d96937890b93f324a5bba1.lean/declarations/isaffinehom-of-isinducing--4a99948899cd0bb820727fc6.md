@@ -1,0 +1,121 @@
+# isAffineHom_of_isInducing
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "a37537ed8d4baf118d18e4205d679c240a95656f",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 192,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/fb/fb23f8644acbe1f881cfce0bfd203c5b4ed4c9da65d96937890b93f324a5bba1.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:7de46acf-8f1c-74c6-80d1-f1dda73e354f",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:c344084f-da63-ff24-ee54-f62a17a2bd92",
+  "kind": "lemma",
+  "lexical_name": "isAffineHom_of_isInducing",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isaffinehom-of-isinducing--4a99948899cd0bb820727fc6",
+  "source": {
+    "blob": "a37537ed8d4baf118d18e4205d679c240a95656f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 219,
+    "line": 192,
+    "path": "GRWTSK/Geometry/AlgebraicGeometry/Affine/Variantfb23f8644acbe1f881cfce0bfd203c5b4ed4c9da65d96937890b93f324a5bba1.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:4a99948899cd0bb820727fc6696140fd886a2103beaf977a4c61abd8536dc09f",
+  "verification": {
+    "reference": "docs/verification/Geometry/AlgebraicGeometry/Affine/Variantfb23f8644acbe1f881cfce0bfd203c5b4ed4c9da65d96937890b93f324a5bba1.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:c344084f-da63-ff24-ee54-f62a17a2bd92`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 192–219.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma isAffineHom_of_isInducing
+    (hf₁ : Topology.IsInducing f.base)
+    (hf₂ : IsClosed (Set.range f.base)) :
+    IsAffineHom f := by
+  apply isAffineHom_of_forall_exists_isAffineOpen
+  intro y
+  by_cases hy : y ∈ Set.range f.base
+  · obtain ⟨x, rfl⟩ := hy
+    obtain ⟨_, ⟨U, hU, rfl⟩, hxU, -⟩ :=
+      (isBasis_affine_open Y).exists_subset_of_mem_open (Set.mem_univ (f.base x)) isOpen_univ
+    obtain ⟨_, ⟨V, hV, rfl⟩, hxV, hVU⟩ :=
+      (isBasis_affine_open X).exists_subset_of_mem_open hxU (f ⁻¹ᵁ U).isOpen
+    obtain ⟨U', hU'U, rfl⟩ : ∃ U' : Y.Opens, U' ≤ U ∧ f ⁻¹ᵁ U' = V := by
+      obtain ⟨U', hU', e⟩ := hf₁.isOpen_iff.mp V.2
+      exact ⟨⟨U', hU'⟩ ⊓ U, inf_le_right, Opens.ext (by simpa [e] using hVU)⟩
+    obtain ⟨r, hrU', hxr⟩ := hU.exists_basicOpen_le ⟨f.base x, hxV⟩ hxU
+    refine ⟨_, hxr, hU.basicOpen r, ?_⟩
+    convert hV.basicOpen (f.app _ (Y.presheaf.map (homOfLE hU'U).op r)) using 1
+    simp only [Scheme.preimage_basicOpen, ← CommRingCat.comp_apply, f.naturality]
+    simpa using ((Opens.map f.base).map (homOfLE hrU')).le
+  · obtain ⟨_, ⟨U, hU, rfl⟩, hyU, hU'⟩ :=
+      (isBasis_affine_open Y).exists_subset_of_mem_open hy hf₂.isOpen_compl
+    rw [Set.subset_compl_iff_disjoint_right, ← Set.preimage_eq_empty_iff] at hU'
+    refine ⟨U, hyU, hU, ?_⟩
+    convert isAffineOpen_bot _
+    exact Opens.ext hU'
+
+end AlgebraicGeometry
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Geometry/AlgebraicGeometry/Affine/Variantfb23f8644acbe1f881cfce0bfd203c5b4ed4c9da65d96937890b93f324a5bba1.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Geometry/AlgebraicGeometry/Affine/Variantfb23f8644acbe1f881cfce0bfd203c5b4ed4c9da65d96937890b93f324a5bba1.lean#L192).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a37537ed8d4baf118d18e4205d679c240a95656f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

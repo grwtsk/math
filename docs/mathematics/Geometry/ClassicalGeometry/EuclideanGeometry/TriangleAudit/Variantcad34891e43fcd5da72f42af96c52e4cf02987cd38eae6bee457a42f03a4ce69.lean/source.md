@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.TriangleAudit.Variantcad34891e43fcd5da72f42af96c52e4cf02987cd38eae6bee457a42f03a4ce69
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c92f54a32db3161f5a28a1f54c114db8a979fa05` · SHA-256 `e0625e3c2a683478663786a006642e58da8f9664640cf76498b32903e55445b3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Geometry.ClassicalGeometry.EuclideanGeometry
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.FiniteCommonJTransportFixtures.Variantecd9369e78ce3bd7a514534539f2ad5d1ac8fc2aa07f44d1d00c559df2bff5d9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ecd9369e78ce3bd7a514534539f2ad5d1ac8fc2aa07f44d1d00c559df2bff5d9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Geometry.EuclideanGeometry.SourceCorpus.FiniteCommonJTransportFixtures.Variantecd9369e78ce3bd7a514534539f2ad5d1ac8fc2aa07f44d1d00c559df2bff5d9","mathematical_subject":"Geometry.EuclideanGeometry","original_sha256":"ecd9369e78ce3bd7a514534539f2ad5d1ac8fc2aa07f44d1d00c559df2bff5d9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-confluence/parent/regent-finite/triangle-audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures
+
+namespace GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.FiniteCommonJTransportFixtures.Variantecd9369e78ce3bd7a514534539f2ad5d1ac8fc2aa07f44d1d00c559df2bff5d9
+
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.forwardTriangle
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.forwardTriangle
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.forwardTriangleDecidable
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.forwardTriangleDecidable
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleEdge
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleEdge
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleEdge_reverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleEdge_reverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleEdge_diagonal
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleEdge_diagonal
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangle_backtrack_loop_identity
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangle_backtrack_loop_identity
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleSites
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleSites
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleSites_closed
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangleSites_closed
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangle_loop_nonidentity
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangle_loop_nonidentity
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangle_gauge_basepoint
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransportFixtures.triangle_gauge_basepoint
+```

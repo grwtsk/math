@@ -1,0 +1,147 @@
+# findModel
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:cbace0566f498db27a13279b97a90ec3d1dd0c0097ed56ed38e45bf1c38ad210",
+  "kind": "def",
+  "lexical_name": "findModel",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "findmodel--e7bc9e1f79f687037bc6aad2",
+  "source": {
+    "blob": "4c9ee8f837e8d1dd5b5df5fb821e953a42dcf6ac",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 820,
+    "line": 755,
+    "path": "GRWTSK/Geometry/DifferentialGeometry/Notation/Variantbb1d8890c94024e7806be4a60779417d498190207f2cafc07c42166a02584fb2.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:e7bc9e1f79f687037bc6aad2dbb3b8b33f3b22c59a583a628bd7c739cd81afed",
+  "verification": {
+    "reference": "docs/verification/Geometry/DifferentialGeometry/Notation/Variantbb1d8890c94024e7806be4a60779417d498190207f2cafc07c42166a02584fb2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:cbace0566f498db27a13279b97a90ec3d1dd0c0097ed56ed38e45bf1c38ad210`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 755–820.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def findModel (e : Expr) : TermElabM Expr := do
+  trace[Elab.DiffGeo.MDiff] "Finding a model with corners for: `{e}`"
+  if let some { model .. } ← go e then
+    return model
+  else
+    let tracing := (← isTracingEnabledFor `Elab.DiffGeo.MDiff)
+    let hint : MessageData := if e.hasExprMVar then
+      .hint' "the expected type contains metavariables, \
+        maybe you need to provide an implicit argument"
+      else if tracing then m!""
+      else .hint' "failures to find a model with corners can be debugged with the \
+          command `set_option trace.Elab.DiffGeo.MDiff true`."
+    throwError "Could not find a model with corners for `{e}`.{hint}"
+where
+  go (e : Expr)  : TermElabM (Option FindModelResult) := do
+    -- At first, try finding a model with corners on the space itself.
+    if let some m ← findModelInner e then return some m
+    -- Otherwise, we recurse into the expression,
+    -- depending whether we have an open subset of a space, a product, or a direct sum of spaces.
+    match_expr e with
+    -- Check if `e` is an open subset of `M`, i.e. a `TopologicalSpace.Opens`.
+    -- Because `e` is the result of coercing an actual `s : TopologicalSpace.Opens M` to a `Sort`
+    -- via `Subtype`, the resulting expression `e` has a somewhat complicated form:
+    -- `Subtype fun (x : M) => x ∈ s`.
+    | Subtype _M p =>
+      match (← instantiateMVars p).cleanupAnnotations with
+      | .lam _x _ body _ =>
+        match_expr body with
+        | Membership.mem _ sType inst _ b =>
+          unless b matches .bvar 0 do return none
+          match_expr inst with
+          | SetLike.instMembership _ _ _ =>
+            match_expr sType with
+            | TopologicalSpace.Opens M _ =>
+              trace[Elab.DiffGeo.MDiff] "`{e}` is an open set of `{M}`, finding a model on `{M}`"
+              -- `M` is not a open set of another manifold, as `Opens X` is (currently) not a
+              -- topological space (and this would be strange). Therefore, do not recurse into `M`.
+              go M
+            | _ => return none
+          | _ => return none
+        | _ => return none
+      | _ => return none
+    | Prod E F =>
+      trace[Elab.DiffGeo.MDiff] "Expression `{e}` is a product, recursing into each factor"
+      let some { model := srcE, normedSpaceInfo? := normedSpaceE } ← go E
+        | throwError "Found no model with corners on first factor `{E}`"
+      let some { model := srcF, normedSpaceInfo? := normedSpaceF } ← go F
+        | throwError "Found no model with corners on second factor `{F}`"
+      -- If both E and F are normed spaces, we have ambiguity: warn and exit.
+      if normedSpaceE.isSome && normedSpaceF.isSome then
+        throwError "`{e}` is a product of normed spaces, so there are two potential models with \
+        corners\nFor now, please specify the model by hand."
+      -- Otherwise, we are not a normed space, and normally form the product model.
+      return some { model := ← mkAppM ``ModelWithCorners.prod #[srcE, srcF] }
+    | Sum E F =>
+      trace[Elab.DiffGeo.MDiff] "Expression `{e}` is a direct sum of `{E}` and `{F}`\n\
+        We assume the models match, and only look into the first summand"
+      go E
+    | _ => return none
+
+/-- If the type of `e` is a non-dependent function between spaces `src` and `tgt`, try to find a
+model with corners on both `src` and `tgt`. If successful, return both models.
+
+We pass `e` instead of just its type for better diagnostics.
+
+If `es` is `some`, we verify that `src` and the type of `es` are definitionally equal. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Geometry/DifferentialGeometry/Notation/Variantbb1d8890c94024e7806be4a60779417d498190207f2cafc07c42166a02584fb2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Geometry/DifferentialGeometry/Notation/Variantbb1d8890c94024e7806be4a60779417d498190207f2cafc07c42166a02584fb2.lean#L755).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4c9ee8f837e8d1dd5b5df5fb821e953a42dcf6ac` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
