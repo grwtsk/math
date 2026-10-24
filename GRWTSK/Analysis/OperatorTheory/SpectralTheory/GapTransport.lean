@@ -720,4 +720,55 @@ theorem linearPMap_symmetric_projection_real_energy
   simp only [map_add, RCLike.re_conj]
   ring
 
+/-- A quantitative coercivity criterion on the genuine domain of a formally
+symmetric partial operator. The interaction estimate is explicit; no bounded
+off-diagonal operator or closed quadratic-form extension is inferred. -/
+theorem linearPMap_symmetric_projection_coercivity
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain)
+    (delta epsilon : ℝ) (hepsilon : 0 ≤ epsilon)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x)))
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x)))
+    (hcross : -(epsilon * ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖) ≤
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x))) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨x, hx⟩) x) := by
+  have hnorm := S.norm_sq_eq_add_norm_sq_starProjection x
+  have henergy := linearPMap_symmetric_projection_real_energy S A hA x hx hstable
+  have hsectors : delta * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x)) +
+      RCLike.re (inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x)) := by
+    rw [hnorm, mul_add]
+    exact add_le_add hfirst hsecond
+  have hmul : 2 * ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖ ≤
+      ‖x‖ ^ 2 := by
+    rw [hnorm]
+    nlinarith [sq_nonneg (‖S.starProjection x‖ - ‖Sᗮ.starProjection x‖)]
+  have hcrossTotal : -(epsilon * ‖x‖ ^ 2) ≤
+      2 * RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x)) := by
+    nlinarith [mul_nonneg hepsilon (sub_nonneg.mpr hmul), hcross]
+  rw [henergy]
+  have hrewrite : (delta - epsilon) * ‖x‖ ^ 2 =
+      delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
+  rw [hrewrite]
+  linarith
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
