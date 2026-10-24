@@ -214,4 +214,109 @@ theorem certificateGramMoment_unit_gap
 
 end GramEuclideanMoment
 
+
+/-!
+## Concrete coupled Schur realization of a certificate Gram operator
+
+The existing identity-block Schur construction takes B(z) to be the actual
+positive-semidefinite Euclidean Gram operator of the certificate S(z),
+and C(z)=id. This creates an explicit coupled block pencil, rather than
+assuming it is equal to some unrelated target or PDE operator. The
+certificate target and its equality/inequality constraints are retained
+separately and are not claimed to be positive without admissibility.
+-/
+
+section CertificateGramSchur
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+
+/-- The actual certificate Gram field gives a coupled block Schur pencil
+with effective operator I+W(z)ᵀW(z) and arbitrary off-diagonal couplings. -/
+noncomputable def certificateGramSchurLift
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    BlockPencil Z (Fin n) (Fin m) ℝ :=
+  BlockPencil.momentSchurLift
+    (fun z => certificateGramOperator (S z))
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V
+
+/-- The effective Schur matrix is exactly the Euclidean coordinate matrix
+of the shifted certificate Gram operator, without an identity hypothesis. -/
+theorem certificateGramSchurLift_effective
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    (certificateGramSchurLift S U V).effective z =
+      euclideanOperatorMatrix
+        (momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))) := by
+  exact BlockPencil.momentSchurLift_effective
+    (fun t => certificateGramOperator (S t))
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V z
+
+/-- The full coupled determinant equals that of the actual shifted Gram
+operator, independent of the off-diagonal couplings at this parameter. -/
+theorem certificateGramSchurLift_full_det
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((certificateGramSchurLift S U V).full z).det =
+      (momentMatrix (certificateGramOperator (S z))
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))).det := by
+  exact BlockPencil.momentSchurLift_full_det
+    (fun t => certificateGramOperator (S t))
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V z
+
+/-- Every shifted certificate Gram operator has a nonzero full Schur
+determinant. This does not require Valid S or Admissible x, because
+WᵀW itself is globally positive semidefinite. -/
+theorem certificateGramSchurLift_full_det_ne_zero
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((certificateGramSchurLift S U V).full z).det ≠ 0 := by
+  rw [certificateGramSchurLift_full_det]
+  have hinj :
+      Function.Injective
+        (momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))) :=
+    positive_operator_moment_injective
+      (certificateGramOperator (S z))
+      (certificateGramOperator_nonneg (S z))
+  have hker :
+      LinearMap.ker
+        (momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  intro hzero
+  exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+
+/-- The concrete finite-adjoint reconstruction associated with a real
+certificate Gram operator inherits the sharp relative factor 1-damping. -/
+theorem certificateGramMoment_unit_contraction
+    {n : ℕ} (S : Certificate ℝ (Fin n) ε γ ν)
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix
+      (momentMatrix (certificateGramOperator S)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+      (1 - damping Finset.univ Finset.univ A) * energy Finset.univ v ∧
+    1 - damping Finset.univ Finset.univ A < 1 :=
+  positive_euclidean_moment_sharp_contraction
+    (certificateGramOperator S) (certificateGramOperator_nonneg S) v
+
+end CertificateGramSchur
+
 end GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
