@@ -21,6 +21,8 @@ compilation = "NOT_RUN"
 fresh_kernel = "NOT_RUN"
 transitive_axiom_audit = "NOT_RUN"
 no_runner_dispatch = true
+specification_commit = "b503af2088d38a92df6b04bb31cbe49cacf0c645"
+specification_readback = "Fetch specification from current main or a pinned spec commit before detaching to historical mathematical source; do not expect it to exist in the source checkout."
 
 declarations = [
   "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction",
