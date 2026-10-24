@@ -10492,3 +10492,18 @@ target build: **NOT_RUN**;
 fresh trust-zero kernel replay: **NOT_RUN**;
 transitive axiom/`sorryAx`/unsafe audit:
 **NOT_RUN / NOT_KERNEL_AUDITED**.
+
+
+**Latest corrected-source validation queue:**
+[issue #1208](https://github.com/grwtsk/math/issues/1208),
+targeting immutable math main commit
+\`501d9c1548dc96ea441cc8f1a2ebb89c39279d78\`.
+The exact proof candidates in this case remain pinned to Git
+blobs \`6b28280b98527301af190f5c50696b9edcf0e05f\`
+and \`1d6ef4738af19edebd1d85e07f944ee4937a9001\`
+with conditional zeta consumer blob
+\`f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7\`.
+Static source validation and a finite external Python graph fixture
+are not Lean compilation, independent kernel checking or axiom
+audit; those phases remain **NOT_RUN / NOT_KERNEL_AUDITED**,
+and no successful process exit receipt is available.
