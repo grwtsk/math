@@ -1,0 +1,38 @@
+# Queued source-pinned verification; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-sigma-sum-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "c66cae78b0a3cf408d9ca39b1e3948ca15c6c81b"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerSigmaSum.lean"
+source_blob = "8d8ea3e1bca6f9bfa996c584965a7d932576502a"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSigmaSum.dependentFiberPacketMass_eq_sigmaPacketMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSigmaPacket",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Identify sigmaSupport membership subtype with FiberIndex",
+ "Transport sigmaPacketMass to fiberSupportedMass",
+ "Normalize rectangularProperPowerMass to rectangularSupportedMass",
+ "Compose unconditional proper-power reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerSigmaSum.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerSigmaSum"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerSigmaSum.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
