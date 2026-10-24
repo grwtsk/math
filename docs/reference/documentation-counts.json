@@ -8,16 +8,17 @@
     "all_grwtsk_source_namespaces": 24,
     "maintained_source_namespaces": 24,
     "lean_modules_by_namespace": {
-      "Algebra": 305,
+      "Algebra": 10065,
       "AlgebraicGeometry": 49,
-      "Analysis": 715,
-      "CategoriesAndHomologicalAlgebra": 57,
+      "Analysis": 9825,
+      "CategoriesAndHomologicalAlgebra": 5317,
       "Combinatorics": 102,
-      "CombinatoricsAndDiscreteMathematics": 186,
+      "CombinatoricsAndDiscreteMathematics": 9373,
       "Data": 2,
+      "DifferentialEquationsAndDynamicalSystems": 68,
       "DynamicalSystems": 27,
-      "FoundationsLogicAndTypeTheory": 433,
-      "Geometry": 38,
+      "FoundationsLogicAndTypeTheory": 18345,
+      "Geometry": 912,
       "GeometryOfNumbers": 6,
       "GroupTheory": 12,
       "InformationTheory": 39,
@@ -25,25 +26,25 @@
       "LinearAlgebra": 101,
       "Logic": 104,
       "MeasureTheory": 6,
-      "NumberTheory": 1897,
+      "NumberTheory": 12280,
       "Order": 9,
       "Probability": 5,
-      "ProbabilityAndMathematicalStatistics": 58,
-      "SourceCorpus": 68036,
+      "ProbabilityAndMathematicalStatistics": 549,
       "Spectral": 29,
-      "Topology": 117
+      "Topology": 5108
     },
     "maintained_lean_modules_by_namespace": {
-      "Algebra": 305,
+      "Algebra": 10065,
       "AlgebraicGeometry": 49,
-      "Analysis": 715,
-      "CategoriesAndHomologicalAlgebra": 57,
+      "Analysis": 9825,
+      "CategoriesAndHomologicalAlgebra": 5317,
       "Combinatorics": 102,
-      "CombinatoricsAndDiscreteMathematics": 186,
+      "CombinatoricsAndDiscreteMathematics": 9373,
       "Data": 2,
+      "DifferentialEquationsAndDynamicalSystems": 68,
       "DynamicalSystems": 27,
-      "FoundationsLogicAndTypeTheory": 433,
-      "Geometry": 38,
+      "FoundationsLogicAndTypeTheory": 18345,
+      "Geometry": 912,
       "GeometryOfNumbers": 6,
       "GroupTheory": 12,
       "InformationTheory": 39,
@@ -51,13 +52,12 @@
       "LinearAlgebra": 101,
       "Logic": 104,
       "MeasureTheory": 6,
-      "NumberTheory": 1897,
+      "NumberTheory": 12280,
       "Order": 9,
       "Probability": 5,
-      "ProbabilityAndMathematicalStatistics": 58,
-      "SourceCorpus": 68036,
+      "ProbabilityAndMathematicalStatistics": 549,
       "Spectral": 29,
-      "Topology": 117
+      "Topology": 5108
     }
   },
   "repository_lean_population": {
@@ -336,9 +336,9 @@
     "scope": "legacy curated source paths and pinned-parser observer census"
   },
   "input_digests": {
-    "grwtsk_lean_inventory": "b33582684bdd254e416a4bc9da18827ae23a54b8d51ff751f3f951fa24f3ecee",
-    "repository_owned_lean_inventory": "dc563bb4fa27fa68c709d69751d273136c1946d2fe93eefbb37051ef9f7240e8",
-    "docs_markdown_inventory_excluding_generated_count_surfaces": "2eaa66c569d60fc613b76e68c5f195d81b6c2624344278e242f6fe1894ce04fa",
+    "grwtsk_lean_inventory": "6e2fabf3c0095f5cb619340a48efcdca5485844911c1136818d86136342c684e",
+    "repository_owned_lean_inventory": "69983b7c5a11e83fd991bfa9dcb60e3ac12fcd9b947a6ffda629cb65c04970d1",
+    "docs_markdown_inventory_excluding_generated_count_surfaces": "677d3587d5ca58751695636062d4ca818e93473a7aa95bc07624f1172313d758",
     "object_source_bindings": "dea449625f78dc8c9446efa60ea0d35af5f6bcd059f4df1f3db9d231caa7c0f7",
     "selected_results": "67a1ae90005ffefe6b5ceaade7d92b412cb7589d5ec2ad988e8b0cd67627c9f9",
     "source_intake": "96bc1151c6034a3fab91335a4c334234d28566b8d960cb15abc0466ffb3b8bca",
@@ -350,5 +350,5 @@
     "Registered object guides and source bindings are curated documentation populations, not whole-library coverage.",
     "The legacy observer census remains historical and is not added to current filesystem populations."
   ],
-  "identity": "3743264109990cf94e13ee3d734de505bc57f0617f86d57c6974d39427d73d79"
+  "identity": "60e7cd8b60689d3a8f91b48b3d9eba97ddd6bb6bbb64d536256c09e1f8f9d93e"
 }

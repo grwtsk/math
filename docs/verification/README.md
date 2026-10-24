@@ -8,6 +8,16 @@ GRWTSK/Analysis/Example.lean
 docs/verification/Analysis/Example/
 ```
 
+The [SourceCorpus subject migration](_unscoped/sourcecorpus-taxonomy-v1.toml)
+retires the provenance-based Lean root. Its subject-local TOML manifests bind
+every moved source occurrence, original Git blob, current pre-move digest,
+destination digest and explicit namespace substitution. Its verification tasks
+separate byte preservation, coverage, subject review, import closure, module
+elaboration, declaration/trust checks and the public-library build. They are
+passive specifications, not execution receipts. Historical catalogues remain
+bound to their original revisions; relocated candidates and negative controls
+retain their original mathematical and verification limits.
+
 The migration index is [`migration-index.json`](migration-index.json). It
 records every relocated target, support file and historical evidence occurrence,
 its former path, destination repository/path, preserved manifest identity/version,

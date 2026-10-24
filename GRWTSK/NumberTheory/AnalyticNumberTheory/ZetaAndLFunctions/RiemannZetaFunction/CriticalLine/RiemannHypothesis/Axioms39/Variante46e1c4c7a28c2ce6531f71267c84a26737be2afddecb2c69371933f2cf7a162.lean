@@ -1,0 +1,31 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMixedWorkFubini.Variant3fba3d0c5d5dbcf66af6605b8e5fb4f9ed5af89090896baa814b4bc272d11607","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3fba3d0c5d5dbcf66af6605b8e5fb4f9ed5af89090896baa814b4bc272d11607","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualMixedWorkFubini.Variant3fba3d0c5d5dbcf66af6605b8e5fb4f9ed5af89090896baa814b4bc272d11607","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3fba3d0c5d5dbcf66af6605b8e5fb4f9ed5af89090896baa814b4bc272d11607","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle27/principal-actual-mixed-fubini-verification-v1/audit-sources-v1/Axioms39.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualMixedWorkFubini
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualMixedWorkFubini.Variant3fba3d0c5d5dbcf66af6605b8e5fb4f9ed5af89090896baa814b4bc272d11607
+
+set_option pp.universes true
+set_option pp.fullNames true
+set_option pp.width 1000000
+set_option pp.maxSteps 10000000
+
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_bilinear_profiles
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualTimeProfile
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualReflectedProfile
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualMixedWorkDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualWorkWindow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.discreteOverlapWindow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualWorkLeftStrip
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualMixedWorkDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_density
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualMixedWorkDensity_zero_outside_window
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_actual_window_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.discreteOverlapWindow_subset_actualWorkWindow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.actualWorkLeftStrip_eq_Ico_inter
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.jointMangoldtErrorWork_eq_overlap_add_leftStrip
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.strictColumnInterior_eq_baseline_sub_localized_work
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubini.covariance_sub_main_eq_localized_work_with_endpoint

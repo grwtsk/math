@@ -1,0 +1,19 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.HarmonicAnalysis.FourierAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.EstimateReduction.Variant8fa66334e35fd995193457a4b1f80c5f2b6992702223802c187c87d759326a5e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8fa66334e35fd995193457a4b1f80c5f2b6992702223802c187c87d759326a5e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.FourierAnalysis.SourceCorpus.EstimateReduction.Variant8fa66334e35fd995193457a4b1f80c5f2b6992702223802c187c87d759326a5e","mathematical_subject":"Analysis.FourierAnalysis","original_sha256":"8fa66334e35fd995193457a4b1f80c5f2b6992702223802c187c87d759326a5e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/pr151-repair-20260921T175258Z/candidate-snapshots/c2165bf58cfe7079ba78bd7f98623fb758d0d84525c0918f1eba27105e3dba85/tests/rh_estimate_reduction.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction
+
+
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.EstimateReduction.Variant8fa66334e35fd995193457a4b1f80c5f2b6992702223802c187c87d759326a5e
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourcePlancherel.actual_source_fourier_mass
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourceCorrectionEstimate.actual_correction_lower
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction.estimate_of_signed_pairing_uniform_lower_bound
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction.estimate_reduction_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction.SignedPairingUniformLowerBound →
+      FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction.estimate_of_signed_pairing_uniform_lower_bound

@@ -1,0 +1,32 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSecondProfileCorrelation.Variantd078d68a5b228aee130b8c3aac58e481699a2f85cde3b69535822d7d2ad94e9f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d078d68a5b228aee130b8c3aac58e481699a2f85cde3b69535822d7d2ad94e9f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSecondProfileCorrelation.Variantd078d68a5b228aee130b8c3aac58e481699a2f85cde3b69535822d7d2ad94e9f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d078d68a5b228aee130b8c3aac58e481699a2f85cde3b69535822d7d2ad94e9f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourceSecondProfileAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSecondProfileCorrelation
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSecondProfileCorrelation.Variantd078d68a5b228aee130b8c3aac58e481699a2f85cde3b69535822d7d2ad94e9f
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_measurable
+#print axioms FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_measurable
+
+#check FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_square_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_square_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_square_integral_eq_actual_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_square_integral_eq_actual_energy
+
+#check FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_correlation_integrand_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfile_correlation_integrand_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfileCorrelation_abs_le_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfileCorrelation_abs_le_energy
+
+#check FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfileCorrelation_abs_le_sixty_seven
+#print axioms FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfileCorrelation_abs_le_sixty_seven
+
+#print FormalResearch.RiemannHypothesis.SourceSecondProfileCorrelation.actualSecondProfileCorrelation

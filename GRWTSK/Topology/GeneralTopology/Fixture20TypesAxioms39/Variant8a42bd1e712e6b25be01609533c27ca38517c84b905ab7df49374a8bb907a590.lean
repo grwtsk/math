@@ -1,0 +1,52 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.ActualMixedWorkFubiniFixtures.Variant5f76821c116a70ffc054c2d155e64f697f47a812c10b75db1cedd8cc9cd7a884","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5f76821c116a70ffc054c2d155e64f697f47a812c10b75db1cedd8cc9cd7a884","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.ActualMixedWorkFubiniFixtures.Variant5f76821c116a70ffc054c2d155e64f697f47a812c10b75db1cedd8cc9cd7a884","mathematical_subject":"Topology.GeneralTopology","original_sha256":"5f76821c116a70ffc054c2d155e64f697f47a812c10b75db1cedd8cc9cd7a884","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle27/principal-actual-mixed-fubini-verification-v1/audit-template-v2/audit-sources/Fixture20TypesAxioms39.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualMixedWorkFubiniFixtures
+
+
+namespace GRWTSK.Topology.GeneralTopology.ActualMixedWorkFubiniFixtures.Variant5f76821c116a70ffc054c2d155e64f697f47a812c10b75db1cedd8cc9cd7a884
+
+open FormalResearch.RiemannHypothesis.SourceActualMixedWorkFubiniFixtures
+
+#check actual_factorization_keeps_independent_rows
+#print axioms actual_factorization_keeps_independent_rows
+#check actual_compensation_is_still_complete
+#print axioms actual_compensation_is_still_complete
+#check empty_time_window_has_zero_profile
+#print axioms empty_time_window_has_zero_profile
+#check empty_strict_inventory_keeps_zero_test
+#print axioms empty_strict_inventory_keeps_zero_test
+#check actual_cell_denominator_is_positive
+#print axioms actual_cell_denominator_is_positive
+#check continuous_left_overlap_is_not_discrete_left
+#print axioms continuous_left_overlap_is_not_discrete_left
+#check reflected_lag_is_a_sum
+#print axioms reflected_lag_is_a_sum
+#check actual_source_only_needs_global_C1
+#print axioms actual_source_only_needs_global_C1
+#check actual_correlation_has_global_C2
+#print axioms actual_correlation_has_global_C2
+#check reflected_first_derivative_carries_minus
+#print axioms reflected_first_derivative_carries_minus
+#check actual_curvature_at_zero_keeps_negative_square
+#print axioms actual_curvature_at_zero_keeps_negative_square
+#check two_negative_sectors_give_plus
+#print axioms two_negative_sectors_give_plus
+#check synthetic_unequal_rows_do_not_inherit_gram_sign
+#print axioms synthetic_unequal_rows_do_not_inherit_gram_sign
+#check synthetic_one_sided_bound_does_not_bound_absolute_value
+#print axioms synthetic_one_sided_bound_does_not_bound_absolute_value
+#check actual_time_row_keeps_literal_lower_endpoint
+#print axioms actual_time_row_keeps_literal_lower_endpoint
+#check actual_reflected_row_keeps_centered_prefix
+#print axioms actual_reflected_row_keeps_centered_prefix
+#check actual_left_strip_keeps_exact_half_open_endpoint
+#print axioms actual_left_strip_keeps_exact_half_open_endpoint
+#check actual_lower_endpoint_can_lie_in_retained_strip
+#print axioms actual_lower_endpoint_can_lie_in_retained_strip
+#check synthetic_positive_strip_is_not_zero
+#print axioms synthetic_positive_strip_is_not_zero
+#check actual_localization_uses_continuous_window
+#print axioms actual_localization_uses_continuous_window

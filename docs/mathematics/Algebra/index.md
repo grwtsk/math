@@ -56,7 +56,7 @@ Generated navigation, scores and source syntax inventories do not strengthen the
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
 | Inventory | Count |
 |---|---:|
-| Lean source modules (current regular filesystem files) | 305 |
+| Lean source modules (current regular filesystem files) | 10065 |
 | Curated registered object guides | 4 |
 | Curated documented object groups | 2 |
 | Curated primary sources linked | 4 |

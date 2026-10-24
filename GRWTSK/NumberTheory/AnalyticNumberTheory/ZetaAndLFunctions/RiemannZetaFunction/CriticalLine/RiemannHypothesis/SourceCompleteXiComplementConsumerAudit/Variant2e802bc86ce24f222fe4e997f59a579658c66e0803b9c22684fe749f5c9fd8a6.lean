@@ -1,0 +1,48 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteXiComplementConsumer.Variantadf58565d851ca48dfb68e7db02d9c36d47abad91774757c3d0937961536404e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"adf58565d851ca48dfb68e7db02d9c36d47abad91774757c3d0937961536404e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceCompleteXiComplementConsumer.Variantadf58565d851ca48dfb68e7db02d9c36d47abad91774757c3d0937961536404e","mathematical_subject":"Foundations.Unclassified","original_sha256":"adf58565d851ca48dfb68e7db02d9c36d47abad91774757c3d0937961536404e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T231759Z-1791328679851726000/SourceCompleteXiComplementConsumerAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteXiComplementConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteXiComplementConsumer.Variantadf58565d851ca48dfb68e7db02d9c36d47abad91774757c3d0937961536404e
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check RH16CompleteXiComplement.completeXiComplement
+#print axioms RH16CompleteXiComplement.completeXiComplement
+#print RH16CompleteXiComplement.completeXiComplement
+#check RH16CompleteXiComplement.calibratedRadius
+#print axioms RH16CompleteXiComplement.calibratedRadius
+#print RH16CompleteXiComplement.calibratedRadius
+#check RH16CompleteXiComplement.complementAtomBudget
+#print axioms RH16CompleteXiComplement.complementAtomBudget
+#print RH16CompleteXiComplement.complementAtomBudget
+#check RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#print axioms RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#print RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#check RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#print axioms RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#print RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#check RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#print RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#check RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#print RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#check RH16CompleteXiComplement.complementAtomBudget_nonneg
+#print axioms RH16CompleteXiComplement.complementAtomBudget_nonneg
+#print RH16CompleteXiComplement.complementAtomBudget_nonneg
+#check RH16CompleteXiComplement.atom_witness_of_complete_complement
+#print axioms RH16CompleteXiComplement.atom_witness_of_complete_complement
+#print RH16CompleteXiComplement.atom_witness_of_complete_complement
+#check RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#print RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#check RH16CompleteXiComplement.estimate_of_complete_complement
+#print axioms RH16CompleteXiComplement.estimate_of_complete_complement
+#print RH16CompleteXiComplement.estimate_of_complete_complement

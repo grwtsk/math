@@ -1,0 +1,387 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.PivotTransitions.Variant4c861f9aa190047fd402917a8ac4b30f200a18df44518f8b2ac5b39eb949f28c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4c861f9aa190047fd402917a8ac4b30f200a18df44518f8b2ac5b39eb949f28c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.PivotTransitions.Variant4c861f9aa190047fd402917a8ac4b30f200a18df44518f8b2ac5b39eb949f28c","mathematical_subject":"Topology.GeneralTopology","original_sha256":"4c861f9aa190047fd402917a8ac4b30f200a18df44518f8b2ac5b39eb949f28c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.worktrees/atlas-ghh-descent-20261007/artifacts/atlas-ghh/pivots/ExhaustiveAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.Grassmannian.PivotTransitions
+import FormalResearch.PositiveAtlas.Grassmannian.PivotBounds
+import FormalResearch.PositiveAtlas.Grassmannian.PivotOperatorBounds
+import FormalResearch.PositiveAtlas.Grassmannian.PivotCech
+import FormalResearch.PositiveAtlas.Grassmannian.PivotTransitionFixtures
+import FormalResearch.PositiveAtlas.Grassmannian.PivotOperatorFixtures
+import FormalResearch.PositiveAtlas.Grassmannian.PivotOrthonormal
+import FormalResearch.PositiveAtlas.Grassmannian.PivotChartTopology
+import FormalResearch.PositiveAtlas.Grassmannian.PivotControlledTopology
+
+
+namespace GRWTSK.Topology.GeneralTopology.PivotTransitions.Variant4c861f9aa190047fd402917a8ac4b30f200a18df44518f8b2ac5b39eb949f28c
+
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_eq_normalized_submatrix
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_eq_normalized_submatrix
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_mul_normalize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_mul_normalize
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_self
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_self
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_cocycle
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_cocycle
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_reverse_mul
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_reverse_mul
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.det_pivotTransition_ne_zero
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.det_pivotTransition_ne_zero
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_reverse
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_reverse
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.det_pivotTransition
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.det_pivotTransition
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.det_pivotTransition_pos
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.det_pivotTransition_pos
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_eq_of_rowSpace_eq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_eq_of_rowSpace_eq
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_mul_left
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_mul_left
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_realize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_realize
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_comp
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_comp
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientEquiv
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientEquiv
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_zero
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_zero
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_whole
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_whole
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.no_fullRankFrame_of_lt
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.no_fullRankFrame_of_lt
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.orderedPivotFintype
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orderedPivotFintype
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.card_orderedPivots
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.card_orderedPivots
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.orderedPermutationEquiv
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orderedPermutationEquiv
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.columnMinor_comp_perm_sq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.columnMinor_comp_perm_sq
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.sum_columnMinor_sq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.sum_columnMinor_sq
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.sum_orderedMinor_sq_eq_one
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.sum_orderedMinor_sq_eq_one
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.exists_orderedMinor_sq_margin
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.exists_orderedMinor_sq_margin
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.exists_orderedMinor_margin
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.exists_orderedMinor_margin
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.abs_columnMinor_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.abs_columnMinor_mul_left
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.orthonormalRows_dimension_le
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orthonormalRows_dimension_le
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledPivotThreshold
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotThreshold
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpen_controlledPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpen_controlledPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_cover
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_cover
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.abs_det_eq_one_of_orthogonal
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.abs_det_eq_one_of_orthogonal
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_orthogonal_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_orthogonal_iff
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_le_one_of_orthonormalRows
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_le_one_of_orthonormalRows
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_toEuclideanLin_le
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_toEuclideanLin_le
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.euclidean_norm_restrict_le
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.euclidean_norm_restrict_le
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_columnSubmatrix_le
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_columnSubmatrix_le
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.det_sq_mul_norm_sq_le_image
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.det_sq_mul_norm_sq_le_image
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_inverse_le_margin
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.l2_opNorm_inverse_le_margin
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlled_pivot_operator_bounds
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlled_pivot_operator_bounds
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlled_transition_operator_bounds
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlled_transition_operator_bounds
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledCover_normalization_bound
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledCover_normalization_bound
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledCover_transition_bounds
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledCover_transition_bounds
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledCover_rank_zero
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledCover_rank_zero
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_columnSubmatrix
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_columnSubmatrix
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_columnMinor
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_columnMinor
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.framePivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.framePivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpen_framePivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpen_framePivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuousAt_pivotNormalize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuousAt_pivotNormalize
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuousAt_pivotTransition
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuousAt_pivotTransition
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.NormalizedPivotFrame
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.NormalizedPivotFrame
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotFrame_rank
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotFrame_rank
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotPlane
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotPlane
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicAtlasMap
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicAtlasMap
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicAtlasTopology
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicAtlasTopology
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_normalizedPivotPlane
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_normalizedPivotPlane
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.representedPlane_mem_intrinsicPivotDomain_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.representedPlane_mem_intrinsicPivotDomain_iff
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpen_intrinsicPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpen_intrinsicPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotDomain_cover
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotDomain_cover
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicAtlasMap_surjective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicAtlasMap_surjective
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.NormalizedPivotOverlap
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.NormalizedPivotOverlap
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapChange
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapChange
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapChange_inverse
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapChange_inverse
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_normalizedOverlapChange
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_normalizedOverlapChange
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapHomeomorph
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapHomeomorph
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.OpenCoverCech
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.OpenCoverCech
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.openCoverCechTopology
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.openCoverCechTopology
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.cechReindex
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechReindex
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.cechReindex_id
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechReindex_id
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.cechReindex_comp
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechReindex_comp
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_cechReindex
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_cechReindex
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.cechAugment
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechAugment
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.continuous_cechAugment
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.continuous_cechAugment
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.cechAugment_surjective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechAugment_surjective
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.cechOverlapFiberEquiv
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.cechOverlapFiberEquiv
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.IntrinsicPivotCech
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.IntrinsicPivotCech
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotCech_augmentation_surjective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicPivotCech_augmentation_surjective
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstFrame
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstFrame
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.secondFrame
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.secondFrame
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstFrame_pivots
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstFrame_pivots
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.normalize_first_to_second
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.normalize_first_to_second
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.Overlap
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.Overlap
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlapInverse
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlapInverse
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlapHomeomorph
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlapHomeomorph
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlap_two_connected_pieces
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlap_two_connected_pieces
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlap_not_preconnected
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.overlap_not_preconnected
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.unitFrame
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.unitFrame
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.unitFrame_orthonormal
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.unitFrame_orthonormal
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstCircle
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstCircle
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.secondCircle
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.secondCircle
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstCircle_unit
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.firstCircle_unit
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.secondCircle_unit
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.secondCircle_unit
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.circle_formula_overlap
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.circle_formula_overlap
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_column_variance
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_column_variance
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_transition_realization
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_transition_realization
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivot_normalization_bound
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivot_normalization_bound
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivot_transition_bounds
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivot_transition_bounds
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicPlane_controlled_normalization_budget
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicPlane_controlled_normalization_budget
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.line_atlas_controlled_normalization
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.ProjectiveLine.line_atlas_controlled_normalization
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.exists_orthonormal_frame_of_intrinsicPlane
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.exists_orthonormal_frame_of_intrinsicPlane
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.exists_orthogonal_rowChange_of_orthonormal_frames
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.exists_orthogonal_rowChange_of_orthonormal_frames
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicPlane_controlled_orthonormal_pivot
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicPlane_controlled_orthonormal_pivot
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_orthonormal_representative_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_orthonormal_representative_iff
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotPlane_injective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotPlane_injective
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapChange_plane
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedOverlapChange_plane
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.chart_image_preimage_eq_overlap_image
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.chart_image_preimage_eq_overlap_image
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpenMap_normalizedPivotPlane
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpenMap_normalizedPivotPlane
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpenEmbedding_normalizedPivotPlane
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpenEmbedding_normalizedPivotPlane
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotChartHomeomorph
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalizedPivotChartHomeomorph
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.det_gram_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.det_gram_mul_left
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledGramPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledGramPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledGramPivotDomain_orthonormal_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledGramPivotDomain_orthonormal_iff
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.controlledGramPivotDomain_mul_left_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledGramPivotDomain_mul_left_iff
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpen_controlledGramPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpen_controlledGramPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.representedPlane_mem_intrinsicControlledPivotDomain_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.representedPlane_mem_intrinsicControlledPivotDomain_iff
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.isOpen_intrinsicControlledPivotDomain
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.isOpen_intrinsicControlledPivotDomain
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivotDomain_cover
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.intrinsicControlledPivotDomain_cover
+set_option pp.all true in
+#check FormalResearch.PositiveAtlas.Grassmannian.orthonormal_representedPlane_mem_intrinsicControlledPivotDomain_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orthonormal_representedPlane_mem_intrinsicControlledPivotDomain_iff

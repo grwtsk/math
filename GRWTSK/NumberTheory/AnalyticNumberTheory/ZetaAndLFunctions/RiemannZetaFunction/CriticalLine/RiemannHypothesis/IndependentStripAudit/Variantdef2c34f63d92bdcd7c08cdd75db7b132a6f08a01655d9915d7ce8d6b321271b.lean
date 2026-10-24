@@ -1,0 +1,23 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceExactRestrictedStrip.Variant51d4baf223207d057cc64dfc827e687f23ea794473ba44507773ab11755395e4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"51d4baf223207d057cc64dfc827e687f23ea794473ba44507773ab11755395e4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceExactRestrictedStrip.Variant51d4baf223207d057cc64dfc827e687f23ea794473ba44507773ab11755395e4","mathematical_subject":"Foundations.Unclassified","original_sha256":"51d4baf223207d057cc64dfc827e687f23ea794473ba44507773ab11755395e4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/root-strip-review/IndependentStripAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceExactRestrictedStrip
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceExactRestrictedStrip.Variant51d4baf223207d057cc64dfc827e687f23ea794473ba44507773ab11755395e4
+
+#print RH16ExactRestrictedStrip.restrictedDerivativePairing_abs_le_tail
+#print axioms RH16ExactRestrictedStrip.restrictedDerivativePairing_abs_le_tail
+#print RH16ExactRestrictedStrip.actual_derivative_low_sector_abs_le_tail
+#print axioms RH16ExactRestrictedStrip.actual_derivative_low_sector_abs_le_tail
+#print RH16ExactRestrictedStrip.actual_low_mixed_restricted_abs_le_tail
+#print axioms RH16ExactRestrictedStrip.actual_low_mixed_restricted_abs_le_tail
+#print RH16ExactRestrictedStrip.actual_retained_spatial_strip_abs_le_tail
+#print axioms RH16ExactRestrictedStrip.actual_retained_spatial_strip_abs_le_tail
+#print RH16ExactRestrictedStrip.actual_retained_spatial_strip_abs_le_uniform
+#print axioms RH16ExactRestrictedStrip.actual_retained_spatial_strip_abs_le_uniform
+#print RH16ExactRestrictedStrip.actual_surplus_le_remainingOverlap_add_exact_strip
+#print axioms RH16ExactRestrictedStrip.actual_surplus_le_remainingOverlap_add_exact_strip
+#print RH16ExactRestrictedStrip.remainingOverlap_le_actual_surplus_add_exact_strip
+#print axioms RH16ExactRestrictedStrip.remainingOverlap_le_actual_surplus_add_exact_strip
