@@ -1,4 +1,6 @@
 import Mathlib.LinearAlgebra.Matrix.ToLin
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Algebra.Order.Ring.Defs
 
@@ -13,7 +15,7 @@ on admissible vectors. The rational specialization is executable. The real
 specialization has the same soundness theorem.
 
 No general Positivstellensatz, source identification or certificate existence is
-assumed. AI attribution: Codex authored this module and its proofs.
+assumed. Local mathematical attribution: grwtsk contributors.
 -/
 
 namespace GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
@@ -152,5 +154,64 @@ theorem check_pullback (P : Problem R ι ε γ) (S : Certificate R ι ε γ ν)
   exact valid_pullback P S (of_decide_eq_true hS) T
 
 end Refinement
+
+
+/-!
+## Positive Euclidean operator carried by the actual Gram certificate
+
+The rectangular Gram field W of any certificate determines WᵀW. This
+Gram component is globally positive semidefinite as an operator on real
+finite Euclidean coordinates. Validity of a certificate is not needed for
+this Gram positivity, but the *target* matrix is only nonnegative on
+admissible vectors under the existing Valid assumptions. No target
+positivity or general Positivstellensatz is inferred from this section.
+
+The sharp unit moment lower bound is a direct Hilbert-space consequence
+of the Gram positivity and the existing NavierStokesMomentGap interface.
+-/
+
+section GramEuclideanMoment
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+
+variable [DecidableEq ι]
+
+/-- The positive-semidefinite Euclidean operator built from the actual
+rectangular Gram field of a finite real quadratic certificate. -/
+noncomputable def certificateGramOperator
+    (S : Certificate ℝ ι ε γ ν) :
+    EuclideanSpace ℝ ι →L[ℝ] EuclideanSpace ℝ ι :=
+  LinearMap.toContinuousLinearMap
+    (Matrix.toLpLin 2 2 (S.gram.transpose * S.gram))
+
+/-- The Euclidean operator acts by the existing Gram matrix WᵀW, with
+no implicit spectral-frame or coordinate-identification assumptions. -/
+theorem certificateGramOperator_apply
+    (S : Certificate ℝ ι ε γ ν) (x : ι → ℝ) :
+    certificateGramOperator S (WithLp.toLp 2 x) =
+      WithLp.toLp 2 ((S.gram.transpose * S.gram) *ᵥ x) := by
+  rfl
+
+/-- The actual Gram source field is positive semidefinite in the real
+Euclidean inner product; no Valid or Admissible premise is required. -/
+theorem certificateGramOperator_nonneg
+    (S : Certificate ℝ ι ε γ ν) (y : EuclideanSpace ℝ ι) :
+    0 ≤ inner ℝ (certificateGramOperator S y) y := by
+  let x : ι → ℝ := WithLp.ofLp y
+  have hy : y = WithLp.toLp 2 x := (WithLp.toLp_ofLp y).symm
+  rw [hy, certificateGramOperator_apply]
+  simpa [EuclideanSpace.inner_toLp_toLp, quadratic] using
+    (gram_nonnegative S.gram x)
+
+/-- The shifted Gram operator I+WᵀW inherits the sharp unit least-norm
+margin from its constructed global positive quadratic form. -/
+theorem certificateGramMoment_unit_gap
+    (S : Certificate ℝ ι ε γ ν) (y : EuclideanSpace ℝ ι) :
+    ‖y‖ ≤ ‖momentMatrix (certificateGramOperator S)
+      (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ ι)) y‖ := by
+  exact positive_operator_moment_sharp_gap
+    (certificateGramOperator S) (certificateGramOperator_nonneg S) y
+
+end GramEuclideanMoment
 
 end GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
