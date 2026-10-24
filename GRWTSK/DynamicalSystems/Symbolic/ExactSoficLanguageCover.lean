@@ -149,4 +149,169 @@ theorem fullShiftGraph_not_exact_for_constant_false :
   have h0 := heq (⟨0, by decide⟩ : Fin 1)
   simp at h0
 
+
+/-! ## Finite right-context bound for actual labeled graph languages -/
+
+/-- End states reachable after one word, allowing the same arbitrary initial
+state convention as \`GraphLanguage\`. This is a *finite* signature of the
+continuation behavior of the word. -/
+noncomputable def reachableEndStates
+    {State : Type u} {Alphabet : Type v} [Fintype State]
+    (G : LabeledGraph State Alphabet) (word : List Alphabet) :
+    Finset State := by
+  classical
+  exact Finset.univ.filter (fun finish =>
+    ∃ start, WordPath G start word finish)
+
+@[simp] theorem mem_reachableEndStates
+    {State : Type u} {Alphabet : Type v} [Fintype State]
+    (G : LabeledGraph State Alphabet) (word : List Alphabet)
+    (finish : State) :
+    finish ∈ reachableEndStates G word ↔
+      ∃ start, WordPath G start word finish := by
+  classical
+  simp [reachableEndStates]
+
+/-- Concatenate two genuine labeled paths with a shared intermediate state. -/
+theorem wordPath_append
+    {State : Type u} {Alphabet : Type v}
+    {G : LabeledGraph State Alphabet}
+    {start middle : State} {prefix : List Alphabet}
+    (hprefix : WordPath G start prefix middle) :
+    ∀ {suffix : List Alphabet} {finish : State},
+      WordPath G middle suffix finish →
+        WordPath G start (prefix ++ suffix) finish := by
+  induction hprefix with
+  | nil s =>
+      intro suffix finish hsuffix
+      simpa using hsuffix
+  | cons a word hedge htail ih =>
+      intro suffix finish hsuffix
+      simpa only [List.cons_append] using
+        (WordPath.cons a (word ++ suffix) hedge (ih hsuffix))
+
+/-- Split a path at the precisely given word boundary; no unverified
+existence of an intermediate state is hidden in the definition. -/
+theorem wordPath_split_append
+    {State : Type u} {Alphabet : Type v}
+    (G : LabeledGraph State Alphabet) (prefix suffix : List Alphabet) :
+    ∀ {start finish : State},
+      WordPath G start (prefix ++ suffix) finish →
+        ∃ middle, WordPath G start prefix middle ∧
+          WordPath G middle suffix finish := by
+  induction prefix with
+  | nil =>
+      intro start finish h
+      exact ⟨start, WordPath.nil start, by simpa using h⟩
+  | cons a prefix ih =>
+      intro start finish h
+      cases h with
+      | cons a word hedge htail =>
+          obtain ⟨middle, hprefix, hsuffix⟩ := ih htail
+          exact ⟨middle, WordPath.cons a prefix hedge hprefix, hsuffix⟩
+
+/-- Every right context of a graph word is determined only by its reachable
+end-state subset, not by the entire original word. -/
+theorem graphLanguage_append_iff_endStates
+    {State : Type u} {Alphabet : Type v} [Fintype State]
+    (G : LabeledGraph State Alphabet) (prefix suffix : List Alphabet) :
+    GraphLanguage G (prefix ++ suffix) ↔
+      ∃ middle, middle ∈ reachableEndStates G prefix ∧
+        ∃ finish, WordPath G middle suffix finish := by
+  constructor
+  · rintro ⟨start, finish, hpath⟩
+    obtain ⟨middle, hprefix, hsuffix⟩ :=
+      wordPath_split_append G prefix suffix hpath
+    exact ⟨middle,
+      (mem_reachableEndStates G prefix middle).2 ⟨start, hprefix⟩,
+      finish, hsuffix⟩
+  · rintro ⟨middle, hmiddle, finish, hsuffix⟩
+    obtain ⟨start, hprefix⟩ :=
+      (mem_reachableEndStates G prefix middle).1 hmiddle
+    exact ⟨start, finish, wordPath_append hprefix hsuffix⟩
+
+/-- Equal reachable-state signatures imply indistinguishable suffix
+behavior. This is the exact one-way finite-automaton information bound. -/
+theorem graphLanguage_context_iff_of_same_endStates
+    {State : Type u} {Alphabet : Type v} [Fintype State]
+    (G : LabeledGraph State Alphabet) (left right suffix : List Alphabet)
+    (h : reachableEndStates G left = reachableEndStates G right) :
+    GraphLanguage G (left ++ suffix) ↔
+      GraphLanguage G (right ++ suffix) := by
+  rw [graphLanguage_append_iff_endStates G left suffix,
+    graphLanguage_append_iff_endStates G right suffix, h]
+
+/-- A language has arbitrarily many distinct right contexts if every
+number of words can be distinguished pairwise by SOME continuation.
+This is a strong, testable anti-finite-state premise, not a declaration
+that a particular arithmetic trace already has this property. -/
+def UnboundedRightContexts
+    {Alphabet : Type v} (language : List Alphabet → Prop) : Prop :=
+  ∀ n : ℕ, ∃ words : Fin n → List Alphabet,
+    ∀ i j : Fin n, i ≠ j →
+      ∃ suffix : List Alphabet,
+        ¬ (language (words i ++ suffix) ↔
+            language (words j ++ suffix))
+
+/-- Any exact finite-state graph language has only finitely many distinct
+right contexts: a word's continuation behavior is determined by one of
+the finitely many subsets of graph states. Thus unbounded pairwise
+distinguishable contexts contradict ANY exact finite graph presentation. -/
+theorem not_soficFactorLanguage_of_unboundedRightContexts
+    {Alphabet : Type v} (language : List Alphabet → Prop)
+    (hunbounded : UnboundedRightContexts language) :
+    ¬ IsSoficFactorLanguage language := by
+  rintro ⟨P⟩
+  letI : Fintype P.State := P.finiteState
+  classical
+  let N : ℕ := Fintype.card (Finset P.State) + 1
+  obtain ⟨words, hdistinguishable⟩ := hunbounded N
+  have hinjective :
+      Function.Injective (fun i : Fin N =>
+        reachableEndStates P.graph (words i)) := by
+    intro i j heq
+    by_contra hij
+    obtain ⟨suffix, hdifference⟩ := hdistinguishable i j hij
+    apply hdifference
+    calc
+      language (words i ++ suffix) ↔
+          GraphLanguage P.graph (words i ++ suffix) :=
+        P.exactLanguage _
+      _ ↔ GraphLanguage P.graph (words j ++ suffix) :=
+        graphLanguage_context_iff_of_same_endStates
+          P.graph (words i) (words j) suffix heq
+      _ ↔ language (words j ++ suffix) :=
+        (P.exactLanguage _).symm
+  have hcard :
+      Fintype.card (Fin N) ≤ Fintype.card (Finset P.State) :=
+    Fintype.card_le_of_injective _ hinjective
+  have hbound : N ≤ Fintype.card (Finset P.State) := by
+    simpa only [Fintype.card_fin] using hcard
+  dsimp [N] at hbound
+  omega
+
+/-- A source trace with unbounded full-language continuation contexts
+has no exact finite labeled graph presentation. -/
+theorem not_soficTrace_of_unboundedRightContexts
+    {Alphabet : Type v} (trace : ℕ → Alphabet)
+    (hunbounded : UnboundedRightContexts (HasFiniteBlock trace)) :
+    ¬ IsSoficTrace trace :=
+  not_soficFactorLanguage_of_unboundedRightContexts
+    (HasFiniteBlock trace) hunbounded
+
+/-- For non-eventual-soficity the supplied continuation distinction must
+survive EVERY finite burn-in. It is insufficient to distinguish arbitrarily
+many contexts only before discarding the initial prefix. -/
+theorem not_eventuallySoficTrace_of_all_tail_rightContexts
+    {Alphabet : Type v} (trace : ℕ → Alphabet)
+    (hall : ∀ offset : ℕ,
+      UnboundedRightContexts
+        (HasFiniteBlock (tailTrace trace offset))) :
+    ¬ EventuallySoficTrace trace := by
+  rintro ⟨offset, hsofic⟩
+  exact
+    (not_soficTrace_of_unboundedRightContexts
+      (tailTrace trace offset) (hall offset)) hsofic
+
+
 end GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
