@@ -7093,3 +7093,54 @@ All seventeen unresolved specifications are retained verbatim in JSON and summar
 **Source identity:** [`grwtsk/math@1ff7a179a5bc2fcef72eed98d3c2a2f7c469729e`](https://github.com/grwtsk/math/commit/1ff7a179a5bc2fcef72eed98d3c2a2f7c469729e), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentActualExceptionalWeight.lean`, blob `e07c96e1d0980b199f70ba6097ede9f5f5b046dc`. Direct imports `CanonicalSquareTentSixteenMomentGaps` blob `388e2ee9a51815129cf5265fcce8ae074bdd30c3`, and `CanonicalSquareTentMixedWeightClassification` blob `52005eb0adcf8d1bbb15555ac10930ae8ecfefd1`; complete transitive import closure still pending actual checker.
 
 **Classification and actual status:** imported external-paper theorem none; kernel-verified bridge **NOT ESTABLISHED**; source proof candidate: theorem and definition; conditional interface: its transitive strict integral source proof dependencies remain unverified (despite no explicit premise at the theorem statement); finite numerical evidence none; analogy inverse problem/moment rank only; unresolved analytic and full Lean verification. [Verification #1159](https://github.com/grwtsk/math/issues/1159) pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d` and exact commands. **SOURCE_ONLY / GIT_BLOB_CONFIRMED / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Operational receipts in `grwtsk/noeaaeue` outside math. No root import, no force push or automatic merge.
+
+
+## Case RETRACTION-SPLIT-VALIDATION-20261023 — conditional direct-product equivalence
+
+**Source identity and scope.** This verifies the algebraic B2 fragment associated
+with *Boundary Regularization: A Framework for High-Rank Elimination*,
+owner-identified unpublished research by grwtsk contributors (printed byline
+`[]`; publication year/date, DOI and arXiv ID remain unestablished). The exact
+PDF, page 1, is the [archived source version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/g%20%282%29.pdf),
+blob `a6b1384d8b682feabc705eee0e058eb50c61df39`, SHA-256
+`796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362`.
+This run checks Lean mathematics; it does not independently validate the paper's
+geometric claims or infer historical influence. Existing B1/B4/B5/B6 unresolved
+statuses and B3's separate conditional scope remain unchanged.
+
+**Exact checked mathematics.** With `R` a commutative ring, `M` and `B` additive
+commutative groups and `R`-modules, linear maps `i : B →ₗ[R] M` and
+`r : M →ₗ[R] B`, and the explicit premise `∀ b, r (i b) = b`,
+`GRWTSK.LinearAlgebra.retractionSplitEquiv` constructs
+`M ≃ₗ[R] B × LinearMap.ker r`. Its coordinates are `r x` and
+`x - i (r x)`; its inverse is `i b + k`.
+`GRWTSK.LinearAlgebra.retractionSplitEquiv_coordinates`,
+`GRWTSK.LinearAlgebra.retractionSplitEquiv_inverse`, and
+`GRWTSK.LinearAlgebra.retractionComplement_zero_iff_range` verify these
+coordinates, reconstruction, and the equivalence of complementary-projector
+vanishing with membership in `LinearMap.range i`. The imported mathematics is
+Mathlib linear maps/projection; these local results are kernel-verified
+conditional algebraic bridges. They do not supply a cohomology theory,
+localization sequence, geometric retraction or compatible Hecke action, nor
+any RH implication without those exact missing constructions.
+
+**Immutable sources and actual evidence.** Source commit `c1b83fd06019129032a381b4071391e49d58f104`:
+`GRWTSK/LinearAlgebra/RetractionSplitEquiv.lean`, blob
+`4e39fbf33bc1146254562bd88f6c5ca8f839037c`; dependency
+`GRWTSK/LinearAlgebra/RetractionComplement.lean`, blob
+`10de52251b1390c30ecf1b568d8876b5bd635338`. Both source hashes and all eight
+theorem headers were unchanged during this run. No source repair was needed.
+Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.LinearAlgebra.RetractionSplitEquiv --wfail` passed (1187 jobs).
+- `lake build --wfail` passed on synced main (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/retraction-split-audit.lean`
+  passed; all 20 local declarations, including generated proof declarations,
+  were checked for axioms restricted to `propext`, `Classical.choice`, and
+  `Quot.sound`, rejected if unsafe, and had their types printed.
+
+External evidence in that same directory: `retraction-split-build.log`,
+`retraction-split-public.log`, `retraction-split-audit.log`, and
+`retraction-split-validated-snapshot.json`. This entry adds actual verification
+evidence to the existing B2 source record without broadening its premises.
