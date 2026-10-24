@@ -437,3 +437,128 @@ with unchanged mathematical source blobs. It requests warning-clean
 transitive builds, direct elaboration, trust-zero checks, fresh kernel
 replay and complete axiom/unsafe auditing on an authorized non-Railway
 executor. The issue is **OPEN / NOT_RUN**, not an acceptance receipt.
+
+
+## October 23, 2026: bounded finite-state continuation certificate
+
+**Status: SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.**
+This is a deliberately bounded follow-up to the previously sourced
+unbounded continuation obstruction. It does not supply any actual zeta
+trace or a global sofic/non-soficity theorem.
+
+### Exact mathematical source identities
+
+- \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
+  initial bounded-certificate commit
+  [5e940df90629e9565268f80249e3ccc6d5390bd0](https://github.com/grwtsk/math/commit/5e940df90629e9565268f80249e3ccc6d5390bd0).
+  **Current revised source** (finite-state typeclass capacity and explicit
+  decidable equality)
+  [84637e2b37fcd3ff018d01247337e223d7386855](https://github.com/grwtsk/math/commit/84637e2b37fcd3ff018d01247337e223d7386855);
+  exact Git blob **6b28280b98527301af190f5c50696b9edcf0e05f**.
+  The intermediate source `ee3b050b81482bcc944ecc316995d2ec54df7bd2`
+  has different blob `82fc612cce62fb1eabf09b7c737bc8a54705d939` and is
+  **not** an accepted validation receipt for this revision.
+- \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
+  bounded spectral-cover theorem initially committed in
+  [92277b5da59fd0e28c52ed4015362c8b39579d24](https://github.com/grwtsk/math/commit/92277b5da59fd0e28c52ed4015362c8b39579d24);
+  revised for the explicit state-capacity definition in
+  [e82b61a318cee9245b7533c08d4f582180991b82](https://github.com/grwtsk/math/commit/e82b61a318cee9245b7533c08d4f582180991b82);
+  exact Git blob **1d6ef4738af19edebd1d85e07f944ee4937a9001**.
+- Zeta consumer \`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean\`
+  remains unchanged, blob
+  **f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7**.
+
+### Statement, exact hypotheses, and logical boundary
+
+A finite labeled graph with vertex type \`State\` and actual
+\`[Fintype State]\` has at most
+\`Fintype.card (Finset State)\` possible reachable endpoint subsets.
+This quantity equals \`2^(Fintype.card State)\` mathematically, but
+the new Lean theorem deliberately states the bound in terms of
+\`Finset State\` cardinality, without asserting an independent
+arithmetical equality lemma.
+
+The graph-cardinality theorem explicitly uses the finite-state and
+chosen equality decision instances `[Fintype State] [DecidableEq State]`,
+while `P.stateCapacity` obtains the field-supplied finite type and
+classical equality internally. This prevents silent typeclass
+requirements in declaration types.
+
+The fully qualified new declarations are:
+
+- \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_graphLanguage\`.
+  For chosen \`n\` and \`words : Fin n → List Alphabet\`, **every two
+  distinct indices** must have a finite suffix distinguishing
+  membership in the actual **whole graph language**; then
+  \`n ≤ Fintype.card (Finset State)\`.
+- \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation.stateCapacity\`.
+  This is the explicit finite-subset capacity of the presentation,
+  with \`letI : Fintype P.State := P.finiteState\` inside the
+  definition. It makes the stored instance available during
+  elaboration instead of depending on implicit field search in the
+  theorem statement.
+- \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_exactPresentation\`.
+  An exact **entire-language** graph presentation \`P\` and the
+  same finite distinguishability witness yield
+  \`n ≤ P.stateCapacity\`.
+- The existing \`not_soficFactorLanguage_of_unboundedRightContexts\`
+  now calls this bounded theorem at
+  \`n = P.stateCapacity + 1\`, rather than duplicating a cardinality
+  argument inside the global proof.
+- \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le\`
+  transports the finite bound to the separately supplied exact
+  full-factor-language presentation of a selected dynamic
+  spectral trace. It does NOT derive exact-language presentation
+  from the fact that a finite graph accepts a trace path.
+
+**Finite-versus-infinite distinction:** A concrete finite witness of
+\`n\` different right contexts refutes only proposed presentations
+with \`P.stateCapacity < n\`, not all finite graphs. A genuine
+\`UnboundedRightContexts\` proof must provide such witnesses for
+**every** \`n\`, and the non-eventual variant requires that
+quantification after **every** tail offset. Therefore no finite
+test run, finite clock, compressed spectral path, or merely low
+refinement overhead implies non-soficity for an actual zeta source.
+
+### Static and bounded preflight evidence
+
+At preflight source snapshot
+\`5ed088e89d791adf366fcfe80cda56541ee00d7f\`, the exact source
+blob identities and direct repository dependency spine were inspected.
+An independent local Python enumeration ran **256** binary labeled
+graphs on two states, **31** words of length 0--4,
+**246,016** path concatenation/graph-language checks, and
+**228,563** right-context checks for identical reachable-state
+signatures, all **PASS**. The identities
+\`sum_(k=0)^m binomial(m,k)=2^m\` for \`m=0..8\`
+also passed off-kernel tests.
+This is strictly FINITE_EVIDENCE, not proof elaboration or
+kernel acceptance.
+
+The older verification issues [#1182](https://github.com/grwtsk/math/issues/1182),
+[#1195](https://github.com/grwtsk/math/issues/1195),
+[#1197](https://github.com/grwtsk/math/issues/1197), and
+[#1200](https://github.com/grwtsk/math/issues/1200) each have
+**their own frozen source revision**; they are not passing Lean
+receipts and must not be silently retargeted after the typeclass
+repair. Compilation, fresh kernel checking and complete transitive
+axiom/unsafe audit for the revised blobs remain
+**NOT_RUN / NOT_KERNEL_AUDITED**, to be executed only on a
+separately authorized non-Railway host with pinned Lean v4.33.0
+and Mathlib \`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+
+
+**Latest source-bound validation request (revised source, no execution):**
+[issue #1208](https://github.com/grwtsk/math/issues/1208),
+pinned to exact \`grwtsk/math\` main snapshot
+\`501d9c1548dc96ea441cc8f1a2ebb89c39279d78\`
+and source blobs
+\`6b28280b98527301af190f5c50696b9edcf0e05f\`,
+\`1d6ef4738af19edebd1d85e07f944ee4937a9001\` and
+\`f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7\`.
+The issue requires actual warning-clean compilation, fresh
+independent kernel replay, and full transitive axiom/unsafe audit
+with exact exit codes and immutable receipts; it does not
+constitute any executed verification. Current source status remains
+**COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT NOT_RUN**.

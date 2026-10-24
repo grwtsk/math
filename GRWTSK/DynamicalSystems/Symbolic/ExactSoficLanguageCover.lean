@@ -256,6 +256,74 @@ def UnboundedRightContexts
         ¬ (language (words i ++ suffix) ↔
             language (words j ++ suffix))
 
+/-- The exact number of reachable-state subsets available to a chosen
+finite presentation. The Fintype instance is explicitly sourced from
+the presentation field; it is not silently inferred in a theorem type. -/
+def ExactLanguagePresentation.stateCapacity
+    {Alphabet : Type v} {language : List Alphabet → Prop}
+    (P : ExactLanguagePresentation.{0,v} Alphabet language) : ℕ := by
+  classical
+  letI : Fintype P.State := P.finiteState
+  exact Fintype.card (Finset P.State)
+
+/-- A bounded, independently inspectable certificate: \`n\` words with
+pairwise distinguishable continuations in a *given* finite graph require
+at least \`n\` distinct reachable-end-state subsets. This is a finite
+capacity bound, not evidence against graphs of unbounded state size. -/
+theorem rightContexts_card_le_graphLanguage
+    {State : Type u} {Alphabet : Type v}
+    [Fintype State] [DecidableEq State]
+    (G : LabeledGraph State Alphabet) (n : ℕ)
+    (words : Fin n → List Alphabet)
+    (hdistinct : ∀ i j : Fin n, i ≠ j →
+      ∃ suffix : List Alphabet,
+        ¬ (GraphLanguage G (words i ++ suffix) ↔
+            GraphLanguage G (words j ++ suffix))) :
+    n ≤ Fintype.card (Finset State) := by
+  classical
+  have hinjective :
+      Function.Injective (fun i : Fin n =>
+        reachableEndStates G (words i)) := by
+    intro i j heq
+    by_contra hij
+    obtain ⟨suffix, hdiff⟩ := hdistinct i j hij
+    exact hdiff
+      (graphLanguage_context_iff_of_same_endStates
+        G (words i) (words j) suffix heq)
+  have hcard :
+      Fintype.card (Fin n) ≤ Fintype.card (Finset State) :=
+    Fintype.card_le_of_injective _ hinjective
+  simpa only [Fintype.card_fin] using hcard
+
+/-- An exact-language presentation transfers an arbitrary supplied
+finite distinguishability certificate to the graph-bound conclusion.
+The witness cannot be silently replaced by a single accepted path. -/
+theorem rightContexts_card_le_exactPresentation
+    {Alphabet : Type v} {language : List Alphabet → Prop}
+    (P : ExactLanguagePresentation.{0,v} Alphabet language)
+    (n : ℕ) (words : Fin n → List Alphabet)
+    (hdistinct : ∀ i j : Fin n, i ≠ j →
+      ∃ suffix : List Alphabet,
+        ¬ (language (words i ++ suffix) ↔
+            language (words j ++ suffix))) :
+    n ≤ P.stateCapacity := by
+  letI : Fintype P.State := P.finiteState
+  classical
+  change n ≤ Fintype.card (Finset P.State)
+  apply rightContexts_card_le_graphLanguage P.graph n words
+  intro i j hij
+  obtain ⟨suffix, hdiff⟩ := hdistinct i j hij
+  refine ⟨suffix, ?_⟩
+  intro hgraph
+  apply hdiff
+  calc
+    language (words i ++ suffix) ↔
+        GraphLanguage P.graph (words i ++ suffix) :=
+      P.exactLanguage _
+    _ ↔ GraphLanguage P.graph (words j ++ suffix) := hgraph
+    _ ↔ language (words j ++ suffix) :=
+      (P.exactLanguage _).symm
+
 /-- Any exact finite-state graph language has only finitely many distinct
 right contexts: a word's continuation behavior is determined by one of
 the finitely many subsets of graph states. Thus unbounded pairwise
@@ -265,31 +333,11 @@ theorem not_soficFactorLanguage_of_unboundedRightContexts
     (hunbounded : UnboundedRightContexts language) :
     ¬ IsSoficFactorLanguage language := by
   rintro ⟨P⟩
-  let : Fintype P.State := P.finiteState
-  classical
-  let N : ℕ := Fintype.card (Finset P.State) + 1
+  let N : ℕ := P.stateCapacity + 1
   obtain ⟨words, hdistinguishable⟩ := hunbounded N
-  have hinjective :
-      Function.Injective (fun i : Fin N =>
-        reachableEndStates P.graph (words i)) := by
-    intro i j heq
-    by_contra hij
-    obtain ⟨suffix, hdifference⟩ := hdistinguishable i j hij
-    apply hdifference
-    calc
-      language (words i ++ suffix) ↔
-          GraphLanguage P.graph (words i ++ suffix) :=
-        P.exactLanguage _
-      _ ↔ GraphLanguage P.graph (words j ++ suffix) :=
-        graphLanguage_context_iff_of_same_endStates
-          P.graph (words i) (words j) suffix heq
-      _ ↔ language (words j ++ suffix) :=
-        (P.exactLanguage _).symm
-  have hcard :
-      Fintype.card (Fin N) ≤ Fintype.card (Finset P.State) :=
-    Fintype.card_le_of_injective _ hinjective
-  have hbound : N ≤ Fintype.card (Finset P.State) := by
-    simpa only [Fintype.card_fin] using hcard
+  have hbound : N ≤ P.stateCapacity :=
+    rightContexts_card_le_exactPresentation
+      P N words hdistinguishable
   dsimp [N] at hbound
   omega
 

@@ -288,6 +288,52 @@ Read-only source inspection of the previous frontier found these exact Git blobs
 
 Mathlib and Lean transitive imports, including locally uniform limits, Mellin inversion, complex primitives and analytic geometry, have not been completely enumerated. **No complete recursive closure, cycle-freedom, or executable topological order is established.** Retain explanatory-only A–H mathematical phases, pending strict integral/cofactor and Weil/RH mathematical bridges, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` against historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` signatures and all stopping/no-merge/no-root/no-force-push/no-Railway/no-unauthorized-dispatch constraints. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**.
 
+## Import frontier continuation: nine source-verified modules
+
+Read-only audit of nine previously open project modules. Git blobs and direct GRWTSK imports are recorded; external Mathlib/Lean imports do **not** count as resolved recursive dependencies.
+
+| Module under `GRWTSK.` | Git blob | Direct project imports |
+|---|---|---|
+| `Analysis.Real.PowerCellMajorant` | `2b95abe2eeae712a78e522a58918f24819a5ccdc` | none |
+| `NumberTheory.Zeta.Riemann.CubicPowerSummation` | `fd25e7f5a1025387a239b418248f0b0344891dfa` | `Analysis.Real.CubicEulerMaclaurin`, `Analysis.Complex.IntervalMellinKernel` |
+| `Analysis.Complex.JensenFiniteMultiplicity` | `6b650bbfa1b71079ffca8241bbba64f1a409641e` | none |
+| `Analysis.Complex.NormalizedLogDerivativeBound` | `3ae623165f3b96582385ef690152e17403379525` | `Analysis.Complex.DiskBlaschkeFactors` |
+| `Analysis.Complex.FiniteBlaschkeRemoval` | `ee9c98333da16dc4bc9742c6545b387e4311384c` | `Analysis.Complex.DiskBlaschkeFactors` |
+| `NumberTheory.Zeta.Riemann.JensenDiskQuotientLog` | `364b622c593452a2c28a3a9a068a99bb59724100` | `NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`, `Analysis.Complex.BlaschkeQuotientLogarithm` |
+| `NumberTheory.Zeta.Riemann.HeightIndexedDivisor` | `ed74a8429c00713797a96309514010d8691d5d6a` | `NumberTheory.Zeta.Riemann.SeparatedContourHeights`, `NumberTheory.Zeta.Riemann.AdmissibleRectangles`, `Analysis.Complex.RectangularPoleReduction` |
+| `NumberTheory.Chebyshev.TentFiniteResidues` | `10451053d59556e4bbe608951e9ddbfb394f4720` | `Analysis.Complex.RectangularCauchyKernel`, `NumberTheory.Chebyshev.TentPoleSubtraction` |
+| `NumberTheory.Chebyshev.ProperPrimePowerCorrection` | `42df85115767d4aff286a4330778b81fe0f5f10d` | `NumberTheory.Chebyshev.PrimeIntervalWitness`, `NumberTheory.Chebyshev.CorrelationPairing`, `NumberTheory.Primes.LandauStatements` |
+
+**New unexpanded project frontier:** `Analysis.Real.CubicEulerMaclaurin`, `Analysis.Complex.DiskBlaschkeFactors`, `NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`, `Analysis.Complex.BlaschkeQuotientLogarithm`, `Analysis.Complex.RectangularPoleReduction`, `Analysis.Complex.RectangularCauchyKernel`, `NumberTheory.Chebyshev.TentPoleSubtraction`, `NumberTheory.Chebyshev.PrimeIntervalWitness`, `NumberTheory.Primes.LandauStatements`, and descendants. Existing `IntervalMellinKernel`, `SeparatedContourHeights`, `AdmissibleRectangles`, `CorrelationPairing` pins are retained rather than recounted.
+
+Historical stage A–H descriptions remain mathematical-only, not executable order. Preserve all exact previous blobs, repaired `CanonicalSquareTentSixteenGapIntegrability` `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` declarations, mathematical follow-up obligations and stopping conditions. Full transitive source/Mathlib closure and cycle-freedom remain **unverified**; no executable topological order. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** No theorem source edits, merge, root import, Railway, force push or unauthorized execution.
+
+## Import frontier continuation: nine rectilinear and arithmetic modules
+
+Read-only source inspection of nine outstanding GRWTSK modules recorded the following exact Git blobs and direct project imports. Rows with no project imports still have Mathlib/Lean dependencies.
+
+| Module under `GRWTSK.` | Git blob | Direct project imports |
+|---|---|---|
+| `Analysis.Real.CubicEulerMaclaurin` | `78b24832bcc40e98c2e145fbc5dd379e7ffff7b4` | none |
+| `Analysis.Complex.DiskBlaschkeFactors` | `b646b217415c2bc6ed3c1d5ace82085f3dde02a4` | none |
+| `NumberTheory.Zeta.Riemann.JensenDiskLogDerivative` | `d7a0cd1349d066049559f601ebb386a84c7be374` | `NumberTheory.Zeta.Riemann.CubicZetaCircleBound`, `Analysis.Complex.NormalizedLogDerivativeBound` |
+| `Analysis.Complex.BlaschkeQuotientLogarithm` | `0c37468dfc9414783070dce32ba1d5d1bb2ab89d` | `Analysis.Complex.NormalizedDiskLogarithm` |
+| `Analysis.Complex.RectangularPoleReduction` | `ef7f55995ba10f8c53b7595c584bbd64f95b376e` | `Analysis.Complex.FinitePoleSubtraction`, `Analysis.Complex.OrientedRectangle` |
+| `Analysis.Complex.RectangularCauchyKernel` | `12222c6f22bf8a0582695563dd8fa0433c35435f` | `Analysis.Real.CauchyEdgePrimitives`, `Analysis.Complex.RectangularPoleReduction` |
+| `NumberTheory.Chebyshev.TentPoleSubtraction` | `91c278ff6765e56215287464e6c7acecfeabe389` | `Analysis.Complex.RectangularPoleReduction`, `NumberTheory.Chebyshev.TentAdmissibleContours`, `NumberTheory.Chebyshev.TrivialZeroTentSeries` |
+| `NumberTheory.Chebyshev.PrimeIntervalWitness` | `49362dd6baa58206dddd5494f496012251d19d73` | `NumberTheory.Primes.ConfigurationCounts` |
+| `NumberTheory.Primes.LandauStatements` | `c6efd023b4ca69c68f0a3b8022c67f656a12d546` | `NumberTheory.Primes.ConfigurationCounts` |
+
+**Next unexpanded project frontier:** `Analysis.Complex.FinitePoleSubtraction`, `Analysis.Real.CauchyEdgePrimitives`, and `NumberTheory.Primes.ConfigurationCounts`, with their descendants. Other named imports here were pinned in preceding passes. Complete Mathlib and Lean closure remains outstanding. **No complete recursive source closure, cycle-freedom or executable topological check order is certified.**
+
+All historical pins, explanatory-only A–H mathematical phases, follow-up analytic obligations, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, and unchanged `Set.Ioi (0:ℝ)` domains are retained. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** No merge, root import, Railway, force push, or unauthorized dispatch.
+
+## Attribution-only source revision (2026-10-23)
+
+The repository's local attribution for these twelve active canonical-square-tent leaves was normalized to exactly **`grwtsk contributors`**. This replaces the tool-specific formalization-assistance header without changing theorem declarations, definitions, proof bodies or hypotheses. The earlier pinned blobs throughout the audit are **historical file identities** and remain intact. The new `CanonicalSquareTentSixteenGapIntegrability` current blob is `c822176ce651c91abf23b2860e8120566681d346`, whose predecessor is the repaired `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` (and the historical pre-repair blob `7df554fa8fff56c912bd4a6b100f032ef8bc73da`). Exact current blobs for the other eleven changed headers are recorded in `paper-to-formalization-references.md`, case section **Active source-header attribution update (2026-10-23)**. An actual fresh single-commit closure scan must read these newer blob IDs, not substitute older validation-issue pins.
+
+Upstream authors and license duties remain unchanged. No kernel acceptance follows from an attribution-only edit. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Mathematical phases, non-root import, no-merge/no-force-push/no-Railway and no unauthorized execution restrictions remain in force.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
