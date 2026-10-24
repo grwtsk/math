@@ -2,6 +2,7 @@ import Mathlib.LinearAlgebra.Matrix.ToLin
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import Mathlib.Analysis.InnerProductSpace.PiL2
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+import GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
 import GRWTSK.Geometry.Hodge.FiniteGraphCellular
 import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
@@ -571,5 +572,177 @@ theorem graphHodgePerturbedSchurLift_full_det_sign
     (momentMatrix (euclideanLaplacian G)
       (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)
     (euclideanLaplacian_nonneg G) hpert
+
+
+/-!
+## One-edge Hodge constraint as a genuine admissible certificate range
+
+The already formalized cellular Hodge Laplacian of a one-edge oriented
+graph is used as an equality constraint for an independently specified
+quadratic certificate. The certificate target is not assumed positive on
+the ambient two-coordinate space. Its constant-cochain subspace is
+identified by a literal nonzero matrix and is admissible.
+
+This is a finite graph/certificate algebra construction, not a physical
+Navier--Stokes or global Hodge claim.
+-/
+
+namespace SingleEdgeCertificate
+
+open GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+
+/-- An oriented interval with two vertices and one edge. -/
+def interval : OrientedIncidence (Fin 2) (Fin 1) where
+  source _ := 0
+  target _ := 1
+
+/-- The exact graph Hodge matrix DᵀD of the existing finite incidence
+operator, rather than a separately stipulated diagonal matrix. -/
+def intervalLaplacianMatrix : Matrix (Fin 2) (Fin 2) ℝ :=
+  (incidenceMatrix interval)ᵀ * incidenceMatrix interval
+
+/-- The Gram field is the identity. The equality is the actual Hodge
+energy, and the inequality is the nonnegative coordinate energy. The
+target is 2I - 2Δ and may be negative away from the kernel of Δ. -/
+def problem : Problem ℝ (Fin 2) (Fin 1) (Fin 1) where
+  target := (1 : Matrix (Fin 2) (Fin 2) ℝ) +
+    (1 : Matrix (Fin 2) (Fin 2) ℝ) +
+      (-2 : ℝ) • intervalLaplacianMatrix
+  equalities _ := intervalLaplacianMatrix
+  inequalities _ := 1
+
+/-- The actual finite Gram and certificate multipliers for the Hodge
+constraint packet. The equality multiplier is negative, as permitted
+by Valid, while the inequality multiplier is nonnegative. -/
+def certificate :
+    Certificate ℝ (Fin 2) (Fin 1) (Fin 1) (Fin 2) where
+  gram := 1
+  equalityMultipliers _ := -2
+  inequalityMultipliers _ := 1
+
+/-- The target/Gram/equality/inequality matrix identity is exact. -/
+theorem certificate_valid : Valid problem certificate := by
+  constructor
+  · intro g
+    simp [certificate]
+  · simp [problem, certificate, Fin.sum_univ_one]
+
+/-- A checker-success proposition derived from the exact source
+certificate identity, not an executed checker receipt. -/
+theorem certificate_check : check problem certificate = true := by
+  change decide (Valid problem certificate) = true
+  exact decide_eq_true certificate_valid
+
+/-- The constant-cochain embedding into the two graph vertices. -/
+def constantEmbedding : Matrix (Fin 2) (Fin 1) ℝ :=
+  fun _ _ => 1
+
+/-- The embedding really maps t to the constant vector (t,t). -/
+theorem constantEmbedding_apply (v : Fin 1 → ℝ) :
+    constantEmbedding *ᵥ v = fun _ : Fin 2 => v 0 := by
+  funext i
+  simp [constantEmbedding, Matrix.mulVec, Matrix.dotProduct, Fin.sum_univ_one]
+
+/-- The constant range is genuinely nonzero. -/
+theorem constantEmbedding_ne_zero : constantEmbedding ≠ 0 := by
+  intro h
+  have he := congrArg
+    (fun M : Matrix (Fin 2) (Fin 1) ℝ => M 0 0) h
+  norm_num [constantEmbedding] at he
+
+/-- Constant cochains are exact cellular cocycles of the original
+incidence operator; no graph connectivity assumption is needed. -/
+theorem delta_constant (v : Fin 1 → ℝ) :
+    delta interval (constantEmbedding *ᵥ v) = 0 := by
+  rw [delta_eq_coboundary]
+  funext e
+  simp [OrientedIncidence.coboundary_apply, constantEmbedding_apply]
+
+/-- The same constants are annihilated by the actual Hodge matrix Δ. -/
+theorem laplacianMatrix_constant (v : Fin 1 → ℝ) :
+    intervalLaplacianMatrix *ᵥ (constantEmbedding *ᵥ v) = 0 := by
+  unfold intervalLaplacianMatrix
+  rw [← Matrix.mulVec_mulVec]
+  have hdelta : (incidenceMatrix interval) *ᵥ
+      (constantEmbedding *ᵥ v) = 0 := by
+    simpa only [delta_apply] using delta_constant v
+  rw [hdelta]
+  simp
+
+/-- Every vector in the explicit nonzero constant range satisfies the
+equality constraint Δx=0 and the identity-matrix inequality. -/
+theorem constantEmbedding_admissible (v : Fin 1 → ℝ) :
+    problem.Admissible (constantEmbedding *ᵥ v) := by
+  change
+    (∀ e : Fin 1, quadratic intervalLaplacianMatrix
+      (constantEmbedding *ᵥ v) = 0) ∧
+    (∀ g : Fin 1, 0 ≤ quadratic (1 : Matrix (Fin 2) (Fin 2) ℝ)
+      (constantEmbedding *ᵥ v))
+  constructor
+  · intro _
+    simp [quadratic, laplacianMatrix_constant]
+  · intro _
+    simp only [quadratic, Matrix.one_mulVec, Matrix.dotProduct]
+    exact Finset.sum_nonneg (fun i _ => mul_self_nonneg _)
+
+/-- The actual linear submodule of constant graph cochains selected by
+the one-coordinate finite matrix, not an assumed admissible subset. -/
+def constantLine : Submodule ℝ (Fin 2 → ℝ) :=
+  LinearMap.range constantEmbedding.mulVecLin
+
+theorem constantLine_admissible :
+    ∀ x ∈ constantLine, problem.Admissible x := by
+  intro x hx
+  obtain ⟨v, hv⟩ := hx
+  rw [← hv]
+  simpa only [Matrix.mulVecLin_apply] using
+    constantEmbedding_admissible v
+
+/-- The Gram matrix is I, so its quadratic form equals the exact squared
+coordinate norm on the entire ambient space. -/
+theorem gram_quadratic (x : Fin 2 → ℝ) :
+    quadratic (certificate.gram.transpose * certificate.gram) x =
+      ∑ i, (x i) ^ 2 := by
+  simp [certificate, quadratic, Matrix.dotProduct, pow_two]
+
+/-- Both suppliers for the earlier constrained target coercivity theorem
+are constructed from the actual graph incidence constraints. -/
+theorem constantLine_gram_unit :
+    ∀ x ∈ constantLine,
+      (1 : ℝ) * (∑ i, (x i) ^ 2) ≤
+        quadratic (certificate.gram.transpose * certificate.gram) x := by
+  intro x _
+  rw [gram_quadratic]
+  simp
+
+/-- The target is coercive on the actual constant cochains, with a
+unit Gram lower bound. There is no global target PSD claim. -/
+theorem target_unit_coercive_on_constants
+    (x : Fin 2 → ℝ) (hx : x ∈ constantLine) :
+    (∑ i, (x i) ^ 2) ≤ quadratic problem.target x := by
+  have h := target_coercive_on_submodule problem certificate
+    certificate_valid constantLine (1 : ℝ)
+    constantLine_admissible constantLine_gram_unit x hx
+  simpa only [one_mul] using h
+
+/-- A concrete coupled Schur system with nonzero off-diagonal blocks. -/
+def couplingU : Unit → Matrix (Fin 1) (Fin 1) ℝ :=
+  fun _ _ _ => 1
+
+def couplingV : Unit → Matrix (Fin 1) (Fin 1) ℝ :=
+  fun _ _ _ => 1
+
+/-- The previously conditional target-Schur nonvanishing theorem is
+instantiated with the actual finite Hodge equality constraint and
+a nonzero admissible constant embedding. -/
+theorem interval_constrained_target_schur_det_ne_zero :
+    ((admissibleTargetSchurLift problem constantEmbedding couplingU couplingV).full ())
+      .det ≠ 0 := by
+  exact admissibleTargetSchurLift_full_det_ne_zero
+    problem certificate certificate_check constantEmbedding
+    constantEmbedding_admissible couplingU couplingV ()
+
+end SingleEdgeCertificate
 
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
