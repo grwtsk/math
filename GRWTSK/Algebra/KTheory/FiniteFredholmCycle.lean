@@ -685,6 +685,70 @@ theorem mvNRel_reindexed
   · change Matrix.reindex e e P.val = Vᴴ * V
     simpa only [hstar, hidem] using hright
 
+/-! ## Finite binary block-swap permutation -/
+
+/-- The explicit bijection that exchanges the two summands of a finite
+index sum, transporting the canonical `Fin (m+n)` indexing to
+`Fin (n+m)`. -/
+def finiteBlockSwapIndex (m n : ℕ) : Fin (m + n) ≃ Fin (n + m) :=
+  ((finSumFinEquiv : Fin m ⊕ Fin n ≃ Fin (m + n)).symm.trans
+    (Equiv.sumComm (Fin m) (Fin n))).trans
+      (finSumFinEquiv : Fin n ⊕ Fin m ≃ Fin (n + m))
+
+/-- Swapping the two finite block summands is exactly simultaneous
+reindexing of the block matrix by `finiteBlockSwapIndex`. -/
+theorem finiteBlockSumMatrix_reindex_swap
+    {m n : ℕ}
+    (P : Matrix (Fin m) (Fin m) ℂ)
+    (Q : Matrix (Fin n) (Fin n) ℂ) :
+    Matrix.reindex (finiteBlockSwapIndex m n) (finiteBlockSwapIndex m n)
+        (finiteBlockSumMatrix P Q) = finiteBlockSumMatrix Q P := by
+  let e₁ : Fin m ⊕ Fin n ≃ Fin (m + n) := finSumFinEquiv
+  let e₂ : Fin n ⊕ Fin m ≃ Fin (n + m) := finSumFinEquiv
+  let flip : Fin m ⊕ Fin n ≃ Fin n ⊕ Fin m :=
+    Equiv.sumComm (Fin m) (Fin n)
+  let e : Fin (m + n) ≃ Fin (n + m) := finiteBlockSwapIndex m n
+  have hswap :
+      Matrix.reindex flip flip (Matrix.fromBlocks P 0 0 Q) =
+        Matrix.fromBlocks Q 0 0 P := by
+    simpa [Matrix.reindex, flip, Equiv.sumComm_symm] using
+      (Matrix.fromBlocks_submatrix_sum_swap_sum_swap P
+        (0 : Matrix (Fin m) (Fin n) ℂ)
+        (0 : Matrix (Fin n) (Fin m) ℂ) Q)
+  change Matrix.reindex e e
+      (Matrix.reindex e₁ e₁ (Matrix.fromBlocks P 0 0 Q)) =
+    Matrix.reindex e₂ e₂ (Matrix.fromBlocks Q 0 0 P)
+  rw [← hswap]
+  change
+    ((Matrix.reindex e₁ e₁).trans (Matrix.reindex e e))
+        (Matrix.fromBlocks P 0 0 Q) =
+      ((Matrix.reindex flip flip).trans (Matrix.reindex e₂ e₂))
+        (Matrix.fromBlocks P 0 0 Q)
+  rw [Matrix.reindex_trans, Matrix.reindex_trans]
+  have he : e₁.trans e = flip.trans e₂ := by
+    ext i
+    simp [e, e₁, e₂, flip, finiteBlockSwapIndex, Equiv.trans_apply]
+  rw [he]
+
+/-- The componentwise block-swap permutation is an actual rectangular
+Murray–von Neumann correspondence, and so does not require an assumed
+commutativity law on the quotient. -/
+theorem finiteBlockSum_comm_mvNRel
+    {m n : ℕ} (P : FiniteStarProjection m)
+    (Q : FiniteStarProjection n) :
+    MvNRel (finiteBlockSum P Q) (finiteBlockSum Q P) := by
+  let e : Fin (m + n) ≃ Fin (n + m) := finiteBlockSwapIndex m n
+  have hmatrix :
+      (reindexedFiniteProjection e (finiteBlockSum P Q)).val =
+        (finiteBlockSum Q P).val := by
+    change Matrix.reindex e e (finiteBlockSumMatrix P.val Q.val) =
+      finiteBlockSumMatrix Q.val P.val
+    exact finiteBlockSumMatrix_reindex_swap P.val Q.val
+  have heq :
+      reindexedFiniteProjection e (finiteBlockSum P Q) =
+        finiteBlockSum Q P := Subtype.ext hmatrix
+  exact heq ▸ mvNRel_reindexed e (finiteBlockSum P Q)
+
 /-! ## Zero projection and explicit rectangular identity witnesses -/
 
 /-- The unique zero-dimensional complex matrix is a star projection.
