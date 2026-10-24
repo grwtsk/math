@@ -247,4 +247,23 @@ theorem complexDirichlet_star_eq_inv_residue
   rw [complexDirichlet_star_apply_eq_inv_character]
   exact complexDirichlet_inv_character_eq_inv_residue q χ a
 
+
+/-- Instantiate the abstract coefficient-orthogonality interface with
+the full complex Dirichlet-character family on reduced residues. -/
+theorem complexDirichlet_orthogonalAt
+    (q : ℕ) [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ) :
+    OrthogonalAt
+      (fun χ : DirichletCharacter ℂ q =>
+        fun b : (ZMod q)ˣ => χ (b : ZMod q)) a := by
+  intro b
+  change (∑ χ : DirichletCharacter ℂ q,
+      χ (b : ZMod q) * star (χ (a : ZMod q))) =
+    if b = a then (Fintype.card (DirichletCharacter ℂ q) : ℂ) else 0
+  simp_rw [complexDirichlet_star_eq_inv_residue q]
+  have h := complexDirichlet_unit_orthogonality_inverse q a b
+  rw [card_complexDirichlet_eq_totient q]
+  convert h using 1 <;> ring
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
