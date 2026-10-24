@@ -45,9 +45,12 @@ def prefixScan (values : List IntegralHeisenberg) : PrefixState :=
 
 theorem prefixProduct_step (state : PrefixState) (next : IntegralHeisenberg) :
     prefixProduct (prefixStep state next) = prefixProduct state * next := by
-  apply IntegralHeisenberg.ext <;>
-    simp only [prefixProduct, prefixStep, IntegralHeisenberg.mul_x,
-      IntegralHeisenberg.mul_y, IntegralHeisenberg.mul_z] <;> ring
+  apply IntegralHeisenberg.ext
+  · rfl
+  · rfl
+  · change (state.inputHeight + next.z) + (state.area + state.x * next.y) =
+      (state.inputHeight + state.area) + next.z + state.x * next.y
+    ring
 
 theorem prefixScan_product_aux (values : List IntegralHeisenberg) (state : PrefixState) :
     prefixProduct (values.foldl prefixStep state) = prefixProduct state * values.prod := by
@@ -149,8 +152,10 @@ theorem decodeCoordinate_encodeCoordinate (value : ℤ)
   have hmag := ByteWire.packNatLE_unpackNatLE 16 value.natAbs bound
   cases value with
   | ofNat value =>
+    change packNatLE (unpackNatLE 16 value) = value at hmag
     simp [decodeCoordinate, encodeCoordinate, ByteWire.unpackNatLE_length, hmag]
   | negSucc value =>
+    change packNatLE (unpackNatLE 16 (value + 1)) = value + 1 at hmag
     simp [decodeCoordinate, encodeCoordinate, ByteWire.unpackNatLE_length, hmag]
 
 /-- Input order is literal concatenation of x, then y, then z. -/
@@ -193,7 +198,8 @@ theorem decodeRecord_encodeRecord (value : IntegralHeisenberg)
     drop_field _ _ (encodeCoordinate_length _),
     decodeCoordinate_encodeCoordinate _ hx,
     decodeCoordinate_encodeCoordinate _ hy,
-    decodeCoordinate_encodeCoordinate _ hz] <;> rfl
+    decodeCoordinate_encodeCoordinate _ hz]
+  rfl
 
 theorem decodeCoordinate_negative_zero :
     decodeCoordinate (1 :: List.replicate 16 0) = none := by decide
@@ -235,7 +241,8 @@ theorem decodeRecords_encodeRecords (values : List IntegralHeisenberg)
     simp only [List.length_cons, encodeRecords, List.append_assoc, decodeRecords]
     rw [List.take_left' (encodeRecord_length value),
       List.drop_left' (encodeRecord_length value), decodeRecord_encodeRecord value hv]
-    simp only [Option.bind_some, ht]
+    simp only [ht]
+    rfl
 
 /-- The literal bytes of ASCII `NOEHEIS1`; no locale or Unicode conversion is
 part of the trusted mathematical wire definition. -/
@@ -252,7 +259,8 @@ def decodeEnvelope (bytes : List UInt8) :
 
 theorem encodeEnvelope_length (values : List IntegralHeisenberg) (source : List UInt8) :
     (encodeEnvelope values source).length = 16 + 51 * values.length + source.length := by
-  simp [encodeEnvelope, magic, ByteWire.unpackNatLE_length, encodeRecords_length] <;> omega
+  simp [encodeEnvelope, magic, ByteWire.unpackNatLE_length, encodeRecords_length]
+  omega
 
 /-- The concrete magic/count parser returns every signed coordinate in order
 and the arbitrary Python/source bytes exactly. The executable limit of 4096
@@ -320,7 +328,8 @@ theorem pipeline_roundtrip (profile : Fin 15) (values : List IntegralHeisenberg)
     decodePipeline profile (encodePipeline values source) = some (values, source) := by
   unfold decodePipeline encodePipeline
   rw [GRWTSK.InformationTheory.ReedSolomon.source_roundtrip]
-  exact decodeEnvelope_encodeEnvelope values source countBound coordinateBound
+  change decodeEnvelope (encodeEnvelope values source) = some (values, source)
+  rw [decodeEnvelope_encodeEnvelope values source countBound coordinateBound]
 
 theorem pipeline_preserves_source (profile : Fin 15) (values : List IntegralHeisenberg)
     (source : List UInt8) (countBound : values.length < 256 ^ 8)
