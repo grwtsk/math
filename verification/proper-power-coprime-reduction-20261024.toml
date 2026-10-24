@@ -1,0 +1,39 @@
+# Queued source-pinned verification; no compilation authorization.
+schema_version = "0.1"
+request_id = "proper-power-coprime-reduction-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "80f55ed17fdef184c61e1592f3deab4aa8938feb"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerCoprimeReduction.lean"
+source_blob = "7692465f09f87373b2de47923cb146ca680784fc"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerCoprimeReduction.coprime_base_of_power",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPowerDivisibility",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Coprime p q implies Coprime (p^k) q",
+ "ZMod unit iff coprime, including q=0 and q=1",
+ "Prime p noncoprime q iff p divides q",
+ "Discharge hsupport in downstream mass bridge",
+]
+source_api_evidence = "Mathlib default-branch source search found Nat.Coprime.coprime_dvd_left usage; pinned revision API remains unverified"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerCoprimeReduction.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerCoprimeReduction"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerCoprimeReduction.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
