@@ -177,6 +177,29 @@ Additional direct Mathlib imports remain subject to transitive closure; for exam
 
 Retain explanatory A–H mathematical stages (never executable import order), original source pins, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, its unchanged `Set.Ioi (0:ℝ)` domain, and all mathematical follow-up phases. **Recursive closure incomplete; cycle-freedom and executable topological order not certified. SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** No root import, merge, force push, Railway or unauthorized execution.
 
+## Import frontier continuation: twelve further inspected sources
+
+This read-only source audit records exact Git blobs and direct project imports for the twelve previously listed frontier modules. Project-import leaves still depend on Mathlib and are not proof of a complete closure.
+
+| Module (under `GRWTSK.`) | Git blob | Direct project imports |
+|---|---|---|
+| `Analysis.IntervalIntegral.Reflection` | `7dd5494d0ccdb6577aabab01e6bb9b55d659801d` | none |
+| `NumberTheory.Zeta.Riemann.CanonicalHighCounting` | `770a0591ebaba4ba5667863aaab8c6489a36fd49` | `NumberTheory.Zeta.Riemann.CubicZetaCircleBound`, `Analysis.Series.HeightCountingTail` |
+| `Analysis.Series.ScaledHeightCountingTail` | `62ce00c6ba233b3681b4660790fac76ed8a66c18` | `Analysis.Series.HeightCountingTail` |
+| `Analysis.Complex.TentKernelTail` | `f5bfb1f18d7440b26be9b918874ecb05beb7b386` | `Analysis.Series.HeightCountingTail`, `Analysis.Complex.TentMellinKernel` |
+| `NumberTheory.Chebyshev.TentHorizontalDecay` | `49b604222d80e7bf1544ae66fdf4b3b96669dd27` | `NumberTheory.Zeta.Riemann.ReflectedStripDecay`, `NumberTheory.Chebyshev.TentHorizontalRays` |
+| `NumberTheory.Chebyshev.SeparatedTentContours` | `444ee67f54a8cbe93c0bf40b2975dc9086254cba` | `NumberTheory.Zeta.Riemann.SeparatedContourHeights`, `NumberTheory.Chebyshev.TentAdmissibleContours` |
+| `Analysis.Complex.LogarithmicPrincipalPart` | `a9f568cb2242e69ff5e4b8d34e6505d24992184f` | none |
+| `NumberTheory.Zeta.Riemann.CanonicalLogarithmicResidues` | `d331631cbf1cb7e4e1a9eaf8f2c3b586ebc1dd81` | `Analysis.Complex.LogarithmicPrincipalPart`, `NumberTheory.Zeta.Riemann.CanonicalZeroDivisor` |
+| `Analysis.Complex.TentMellinKernel` | `50410f9474515d4a03812321188d71dd4b4ce0d5` | `Analysis.Real.TentWeight`, `Analysis.Complex.IntervalMellinKernel` |
+| `Analysis.Real.TentWeight` | `b12835c66ab08b64918a9543cd201043c1a99895` | none |
+| `NumberTheory.ArithmeticFunctions.PrimeExponentScale` | `9d6bad6b4b6ceb9b4668be4efedf65c35e7a543a` | none |
+| `Geometry.ThreePlusOne.DynamicWitnessChannel` | `3616667e26094c1a122e04f2b7ab9e092cdc6dcf` | none |
+
+**Next unexpanded project frontier:** `NumberTheory.Zeta.Riemann.CubicZetaCircleBound`, `Analysis.Series.HeightCountingTail`, `NumberTheory.Zeta.Riemann.ReflectedStripDecay`, `NumberTheory.Chebyshev.TentHorizontalRays`, `NumberTheory.Zeta.Riemann.SeparatedContourHeights`, `NumberTheory.Chebyshev.TentAdmissibleContours`, `NumberTheory.Zeta.Riemann.CanonicalZeroDivisor`, and `Analysis.Complex.IntervalMellinKernel`, plus descendants. The transitive Mathlib closure remains unenumerated.
+
+**Evidence boundary:** SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN. No complete import closure or executable topological order is claimed. Historical pinned sources, repaired `CanonicalSquareTentSixteenGapIntegrability` `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, `Set.Ioi (0:ℝ)` domains, explanatory-only mathematical A–H phases and all later mathematical obligations remain unchanged. No merge, root promotion, Railway, force push or unauthorized execution.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
