@@ -12,7 +12,7 @@ The study of integers, rational numbers and related arithmetic structures, inclu
 
 | Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 574 | 0 | 0 | 0 |
+| 575 | 2 | 2 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -20,11 +20,25 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Least natural prime](Prime/least-prime.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Statement.** Two is prime and every natural prime is at least two. Any natural prime `q` satisfying `∀ p, Nat.Prime p → q ≤ p` is therefore equal to two.
-- [`n^2 + 1` local roots and the thin Gaussian line](Prime/quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Infinitude remains
+- [Least natural prime](Prime/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+- [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+- [`n^2 + 1` local roots and the thin Gaussian line](Prime/quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. One positive finite count cannot be reused above every lower cutoff. The packet retains this quantifier boundary.
 - [A complete rational uniform-interval check](Chebyshev/interval-rational-quadrature.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.** These are Lean proof candidates, not accepted proof terms, a qualified executable, or a spectral prime certificate. All earlier source, hypotheses and replay…
 - [A cubic ceiling on the local Jensen circles](Zeta/Riemann/cubic-circle-ceiling.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This note advances the actual circle-modulus supplier for the local count in #189/#261. Its result is a classical, unconditional inequality for the actual Riemann zeta function. It is a written mathematical…
-- [A finite rational polygon index with an explicit logarithmic refinement](Chebyshev/pole-contour-polygon-index.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.** The mathematical construction and its Lean proof scripts are source candidates. No new or inherited Lean script has been elaborated or kernel accepted. The…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -48,7 +62,8 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
    Unranked previews: [Cubic characters on good third-cyclotomic quotients](Cyclotomic/third-cyclotomic-characters.md); [Cubic Jacobi congruence in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-jacobi.md).
 9. **[Diophantine](Diophantine/index.md)** — 1 immediate children · 6 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [ABC exceptional-set analytic interfaces](Diophantine/abc-exceptional-analytic-interfaces.md); [ABC exceptional-set geometry linearization](Diophantine/abc-exceptional-geometry-linearization.md).
-10. **[Elementary number theory](elementary/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of integer arithmetic through divisibility, congruences and related arguments that do not require the general machinery of analytic or algebraic number theory.
+10. **[Elementary number theory](elementary/index.md)** — 1 immediate children · 2 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integer arithmetic through divisibility, congruences and related arguments that do not require the general machinery of analytic or algebraic number theory.
+   Unranked previews: [Least natural prime](Prime/least-prime.md); [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md).
 11. **[Farey](Farey/index.md)** — 0 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Exact finite obstruction connections: Farey, Sturmian, projective channels, bounded gauges, Heisenberg](Farey/recent-obstructions-formalization-2026.md); [Exact real-measure mixing → open return transport for the Farey cat map](Farey/cat-map-measure-mixing-transport.md).
 12. **[Ideal](Ideal/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
@@ -59,12 +74,12 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
    Unranked previews: [A strict negative prime-prefix correlation](Moebius/PrimeFilters/negative-correlation.md); [Abel shift-mass telescope and global weighted quadratic energy](Moebius/Energy/signed-abel-mass-quadratic-energy.md).
 15. **[Polynomial](Polynomial/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Polynomial derivative and radical degree bounds](Polynomial/derivative-radical-bound.md).
-16. **[Prime](Prime/index.md)** — 0 immediate children · 24 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Least natural prime](Prime/least-prime.md); [`n^2 + 1` local roots and the thin Gaussian line](Prime/quadratic-plus-one-local-gaussian.md).
+16. **[Prime](Prime/index.md)** — 0 immediate children · 25 unique articles · 2 structured · 2 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Least natural prime](Prime/least-prime.md); [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md).
 17. **[Zeta](Zeta/index.md)** — 1 immediate children · 245 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A cubic ceiling on the local Jensen circles](Zeta/Riemann/cubic-circle-ceiling.md); [Absolute high-g Type II closure by finite divisor counting](Zeta/Riemann/quadratic-theta-prime-fejer-mobius-log-high-gcd-type-ii-counting.md).
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

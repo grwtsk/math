@@ -37,7 +37,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Finite primitive additive moments](moments.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `N` be any natural number, let `R` be any ring, and let `W : ℕ → ℕ → ℕ → R` be an arbitrary joint weight. Write `P_N` for the primitive positive additive triples with `c ≤ N`. Then
 - [Primitive additive triples and the abc target](abc-proof-frontier.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For positive natural numbers `a`, `b`, `c` with `a + b = c` and `Nat.Coprime a b`, the frozen target is
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

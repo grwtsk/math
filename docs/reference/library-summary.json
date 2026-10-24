@@ -17219,10 +17219,10 @@
     "unparsed_modules": 111
   },
   "count_report": "docs/reference/documentation-counts.json",
-  "count_report_identity": "7c6cec4b7e40d18c12ad1b9e4b603cc8115a59243687d963238917925ac8cdf0",
+  "count_report_identity": "3743264109990cf94e13ee3d734de505bc57f0617f86d57c6974d39427d73d79",
   "current_source_populations": {
-    "all_grwtsk_lean_modules": 72570,
-    "maintained_grwtsk_lean_modules": 72570,
+    "all_grwtsk_lean_modules": 72571,
+    "maintained_grwtsk_lean_modules": 72571,
     "grwtsk_root_lean_modules": 0,
     "all_grwtsk_source_namespaces": 24,
     "maintained_source_namespaces": 24,
@@ -17231,7 +17231,7 @@
       "AlgebraicGeometry": 49,
       "Analysis": 715,
       "CategoriesAndHomologicalAlgebra": 57,
-      "Combinatorics": 101,
+      "Combinatorics": 102,
       "CombinatoricsAndDiscreteMathematics": 186,
       "Data": 2,
       "DynamicalSystems": 27,
@@ -17257,7 +17257,7 @@
       "AlgebraicGeometry": 49,
       "Analysis": 715,
       "CategoriesAndHomologicalAlgebra": 57,
-      "Combinatorics": 101,
+      "Combinatorics": 102,
       "CombinatoricsAndDiscreteMathematics": 186,
       "Data": 2,
       "DynamicalSystems": 27,
@@ -17280,11 +17280,11 @@
     }
   },
   "current_documentation_populations": {
-    "all_docs_markdown_pages": 1062,
-    "core_documentation_markdown_pages": 827,
-    "mathematics_markdown_pages": 779,
-    "mathematics_area_indexes": 12,
-    "mathematics_object_candidate_pages": 767,
+    "all_docs_markdown_pages": 1272,
+    "core_documentation_markdown_pages": 1037,
+    "mathematics_markdown_pages": 984,
+    "mathematics_area_indexes": 33,
+    "mathematics_object_candidate_pages": 769,
     "registered_object_guides": 149,
     "documented_object_groups": 59,
     "distinct_primary_sources": 145,
@@ -17305,6 +17305,13 @@
         "archive_intake_records": 39,
         "selected_result_families": 1
       },
+      "CategoryTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Combinatorics": {
         "registered_object_guides": 26,
         "documented_object_groups": 2,
@@ -17312,7 +17319,28 @@
         "archive_intake_records": 0,
         "selected_result_families": 1
       },
+      "CombinatoricsAndDiscreteMathematics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Data": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "DifferentialEquations": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "DiscreteMathematics": {
         "registered_object_guides": 0,
         "documented_object_groups": 0,
         "distinct_primary_sources": 0,
@@ -17326,7 +17354,56 @@
         "archive_intake_records": 0,
         "selected_result_families": 0
       },
+      "ErrorCorrectingCodingTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "FoundationsLogicAndTypeTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Geometry": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "GeometryOfNumbers": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "GroupTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "HistoryOfMathematics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "InformationTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Interfaces": {
         "registered_object_guides": 0,
         "documented_object_groups": 0,
         "distinct_primary_sources": 0,
@@ -17347,11 +17424,25 @@
         "archive_intake_records": 3,
         "selected_result_families": 0
       },
+      "MathematicsEducation": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "MeasureTheory": {
         "registered_object_guides": 0,
         "documented_object_groups": 0,
         "distinct_primary_sources": 0,
         "archive_intake_records": 1,
+        "selected_result_families": 0
+      },
+      "Mechanics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
         "selected_result_families": 0
       },
       "NumberTheory": {
@@ -17361,6 +17452,20 @@
         "archive_intake_records": 19,
         "selected_result_families": 1
       },
+      "NumericalAnalysis": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Optimization": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Order": {
         "registered_object_guides": 1,
         "documented_object_groups": 1,
@@ -17368,10 +17473,52 @@
         "archive_intake_records": 2,
         "selected_result_families": 0
       },
+      "Probability": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "ProofAssistantMetaprogramming": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
       "Spectral": {
         "registered_object_guides": 7,
         "documented_object_groups": 4,
         "distinct_primary_sources": 6,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Statistics": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "TheoryOfDataStructures": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "Topology": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "TypeTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
         "archive_intake_records": 0,
         "selected_result_families": 0
       }
@@ -17390,8 +17537,8 @@
   },
   "current_repository_lean_population": {
     "method": "git_index_regular_files",
-    "all_lean_files": 72576,
-    "maintained_grwtsk_lean_files": 72570,
+    "all_lean_files": 72577,
+    "maintained_grwtsk_lean_files": 72571,
     "support_lean_files": 6,
     "root_lean_files": 1,
     "excluded_root_directories": [

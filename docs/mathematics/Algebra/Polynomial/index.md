@@ -33,7 +33,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Finite weighted signed-root traces](signed-root-traces.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $\Lambda\subset\mathbb C$ be a finite set closed under conjugation, and let $w:\mathbb C\to\mathbb R$ satisfy $w(z)>0$ for every $z\in\Lambda$. For a real polynomial $p$, define the signed square trace \[…
 - [Signed traces on a conjugate quartic](conjugate-quartic.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For real parameters $a,t$, retain the four-entry list \[ R(a,t)=[t+ia,t-ia,-t+ia,-t-ia]. \] The real quartic is \[ Q(X)=((X-t)^2+a^2)((X+t)^2+a^2) =X^4+2(a^2-t^2)X^2+(a^2+t^2)^2. \] `quartic_expansion` proves…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

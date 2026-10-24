@@ -35,7 +35,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [From ethical obligations to mechanistic reasoning](ethics-capsules.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **A mathematical exposition for the A–M–I–F–E–D–O–X capsule taxonomy**
 - [Revision-scoped timed evidence](revision-evidence.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Conceptual direction and authorship: grwtsk contributors. Mathematical formulation, formalization, and source development with AI assistance.
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

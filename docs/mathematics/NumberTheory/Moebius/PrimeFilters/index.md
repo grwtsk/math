@@ -18,7 +18,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 - [A strict negative prime-prefix correlation](negative-correlation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The maintained source links use the current PMD placement. Earlier verification receipts retain their recorded source paths, bytes and tool context. Fresh proof replay of the relocated context remains pending;…
 - [Conditional prime-filter growth and harmonic mass](conditional-growth.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `PrimeReverberation A B q` is the uniform source-class assertion
-- [Finite causal prime filters and insertion energy](cascade.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction and selection: grwtsk contributors. Formalization and checking assistance: OpenAI Codex. These are classical arithmetic and analysis arguments applied to the supplied Möbius…
+- [Finite causal prime filters and insertion energy](cascade.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $b(u)=2(1-e^{-u/2})\mathbf1_{[0,\infty)}(u)$ and $S_af(u)=\mathbf1_{[a,\infty)}(u)f(u-a)$. For $n\ge1$,
 - [Uniform finite-product suppliers: a written obstruction](uniform-supplier-obstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The following is a classical analytic argument recorded in prose, **not a Lean theorem in this contribution**. It uses the unconditional prime number theorem, for example DLMF 27.12.5. It does not assume RH.
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
@@ -34,10 +34,10 @@ No narrower directory is currently registered. Continue to the articles below.
 
 - [A strict negative prime-prefix correlation](negative-correlation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The maintained source links use the current PMD placement. Earlier verification receipts retain their recorded source paths, bytes and tool context. Fresh proof replay of the relocated context remains pending;…
 - [Conditional prime-filter growth and harmonic mass](conditional-growth.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `PrimeReverberation A B q` is the uniform source-class assertion
-- [Finite causal prime filters and insertion energy](cascade.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction and selection: grwtsk contributors. Formalization and checking assistance: OpenAI Codex. These are classical arithmetic and analysis arguments applied to the supplied Möbius…
+- [Finite causal prime filters and insertion energy](cascade.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $b(u)=2(1-e^{-u/2})\mathbf1_{[0,\infty)}(u)$ and $S_af(u)=\mathbf1_{[a,\infty)}(u)f(u-a)$. For $n\ge1$,
 - [Uniform finite-product suppliers: a written obstruction](uniform-supplier-obstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The following is a classical analytic argument recorded in prose, **not a Lean theorem in this contribution**. It uses the unconditional prime number theorem, for example DLMF 27.12.5. It does not assume RH.
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

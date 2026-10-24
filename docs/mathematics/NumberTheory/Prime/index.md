@@ -8,7 +8,7 @@ This directory groups existing source guides. Its storage name does not establis
 
 | Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 24 | 0 | 0 | 0 |
+| 25 | 2 | 2 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -16,11 +16,25 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Least natural prime](least-prime.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Statement.** Two is prime and every natural prime is at least two. Any natural prime `q` satisfying `∀ p, Nat.Prime p → q ≤ p` is therefore equal to two.
-- [`n^2 + 1` local roots and the thin Gaussian line](quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Infinitude remains
+- [Least natural prime](least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+- [Least-prime uniqueness by antisymmetry](least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+- [`n^2 + 1` local roots and the thin Gaussian line](quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. One positive finite count cannot be reused above every lower cutoff. The packet retains this quantifier boundary.
 - [An explicit scalar theta supplier for the two-arc Goldbach model](goldbach-theta-explicit-supplier.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
 - [Calibrating the signed minor target and testing scalar information](goldbach-signed-minor-calibration.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
-- [Concrete finite rational arcs for the Goldbach coefficient](goldbach-rational-arcs.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This packet specializes the abstract measurable partition from the preceding Goldbach truncation packet to a concrete finite family of reduced rational centers. It does not supply an approximation theorem on…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -33,7 +47,7 @@ No narrower directory is currently registered. Continue to the articles below.
 
 ## Articles at this level
 
-- [`n^2 + 1` local roots and the thin Gaussian line](quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Infinitude remains
+- [`n^2 + 1` local roots and the thin Gaussian line](quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. One positive finite count cannot be reused above every lower cutoff. The packet retains this quantifier boundary.
 - [An explicit scalar theta supplier for the two-arc Goldbach model](goldbach-theta-explicit-supplier.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
 - [Calibrating the signed minor target and testing scalar information](goldbach-signed-minor-calibration.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
 - [Concrete finite rational arcs for the Goldbach coefficient](goldbach-rational-arcs.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This packet specializes the abstract measurable partition from the preceding Goldbach truncation packet to a concrete finite family of reduced rational centers. It does not supply an approximation theorem on…
@@ -41,7 +55,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Goldbach composite denominator coefficients and the finite primorial tail](goldbach-composite-coefficients.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The earlier Goldbach progression stack reached a finite denominator model
 - [Goldbach Fejér core lower source](goldbach-fejer-core.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This note records the exact finite mathematics added by the Fejér-kernel increment. It is not an execution receipt and does not represent a proof of Goldbach's conjecture.
 - [Goldbach finite singular evaluation](goldbach-finite-singular-evaluation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This packet advances only the exact finite singular-window layer. It does not supply a prime-distribution estimate, a denominator-tail estimate, a minor-arc bound, finite exception coverage, or a proof of…
-- [Goldbach finite truncations and exact arc partition](goldbach-truncation-arcs.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This increment stacks on the exact prime-modulus local factors and continuous Goldbach coefficient. It introduces two finite or purely measure-theoretic layers:
+- [Goldbach finite truncations and exact arc partition](goldbach-truncation-arcs.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. 1. a finite local-product truncation through a prime cutoff; 2. an exact decomposition of the unit-circle coefficient into declared major and complementary minor contributions.
 - [Goldbach frequency envelopes and the cost of uniform arc maxima](goldbach-frequency-envelope.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
 - [Goldbach periodized common singular windows](goldbach-common-singular-window.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This packet advances only the exact geometry and change-of-variables layer of the finite Goldbach progression model. It does not execute Lean, evaluate a singular integral, estimate primes in arithmetic…
 - [Goldbach prefix discrepancy transfer and quantitative supplier](goldbach-prefix-discrepancy-transfer.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
@@ -51,14 +65,29 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Goldbach rational-arc coordinates and residue models](goldbach-rational-arc-models.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This packet follows the finite disjoint rational-arc expansion. Its purpose is to expose the exact algebra that an eventual major-arc estimate must approximate. It does not provide that estimate.
 - [Goldbach rational-arc separation and finite expansion](goldbach-rational-arc-separation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This note records the next exact geometric layer stacked on the concrete rational arcs for issue #259. It proves a sufficient separation regime for the declared widths and rewrites the rational major…
 - [Goldbach weighted mass and finite additive projector](goldbach-finite-fourier.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This source increment advances issue #259 through two exact finite bridges.
-- [Goldbach: the continuous unit-interval coefficient](goldbach-circle-integral.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For
-- [Least natural prime](least-prime.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Statement.** Two is prime and every natural prime is at least two. Any natural prime `q` satisfying `∀ p, Nat.Prime p → q ≤ p` is therefore equal to two.
+- [Goldbach: the continuous unit-interval coefficient](goldbach-circle-integral.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The right side is the existing `goldbachLogMass N`, embedded in `ℂ`.
+- [Least natural prime](least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+- [Least-prime uniqueness by antisymmetry](least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
 - [Prime-power roots of \(x^2+1\)](quadratic-plus-one-prime-power-lifting.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This note records the finite arithmetic used to lift roots of
 - [Quadratic primes: a fixed-sieve obstruction and the next analytic supplier](quadratic-sieve-obstruction-and-supplier.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Research direction and mathematical ownership: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT. Mathlib results retain their upstream authorship and Apache-2.0 license.
-- [Twin-prime shift-two arithmetic boundary](twin-shift-two-arithmetic.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The arithmetic endpoint remains
+- [Twin-prime shift-two arithmetic boundary](twin-shift-two-arithmetic.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. with infinitude expressed by a fresh witness above every lower cutoff. A positive finite count at one cutoff is not an infinitude theorem.
 - [Why the complete minor estimate needs signed cancellation](goldbach-minor-energy-barrier.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human research direction: grwtsk contributors. Mathematical analysis and source drafting assistance: OpenAI ChatGPT.
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

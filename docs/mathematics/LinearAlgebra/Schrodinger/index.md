@@ -37,7 +37,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Schrödinger transfer matrices](transfer.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This interface carries established two-coordinate transfer mathematics. The state is `(current, previous)` and the next state is `(next, current)`. Over any commutative ring, the exact scalar recurrence is…
 - [Sturmian potential, half-open coding and recurrence](sturmian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For Sturmian Hamiltonians, every irrational frequency and every real nonzero coupling give a Cantor spectrum of Lebesgue measure zero, with every permitted internal gap open. Zero coupling instead gives the…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
