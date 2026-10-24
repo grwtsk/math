@@ -146,7 +146,7 @@ theorem fullShiftGraph_not_exact_for_constant_false :
   have hblock : HasFiniteBlock (fun _ : ℕ => false) [true] :=
     (h [true]).mpr (fullShiftGraph_language_all [true])
   rcases hblock with ⟨offset, heq⟩
-  have h0 := heq (⟨0, by decide⟩ : Fin ([true] : List Bool).length)
+  have h0 := heq (⟨0, by decide⟩ : Fin 1)
   simp at h0
 
 end GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
