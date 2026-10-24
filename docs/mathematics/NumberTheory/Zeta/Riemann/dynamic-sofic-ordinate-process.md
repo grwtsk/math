@@ -451,9 +451,13 @@ trace or a global sofic/non-soficity theorem.
 - \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
   initial bounded-certificate commit
   [5e940df90629e9565268f80249e3ccc6d5390bd0](https://github.com/grwtsk/math/commit/5e940df90629e9565268f80249e3ccc6d5390bd0).
-  **Current revised source** (explicit finite-state typeclass capacity)
-  [ee3b050b81482bcc944ecc316995d2ec54df7bd2](https://github.com/grwtsk/math/commit/ee3b050b81482bcc944ecc316995d2ec54df7bd2);
-  exact Git blob **82fc612cce62fb1eabf09b7c737bc8a54705d939**.
+  **Current revised source** (finite-state typeclass capacity and explicit
+  decidable equality)
+  [84637e2b37fcd3ff018d01247337e223d7386855](https://github.com/grwtsk/math/commit/84637e2b37fcd3ff018d01247337e223d7386855);
+  exact Git blob **6b28280b98527301af190f5c50696b9edcf0e05f**.
+  The intermediate source `ee3b050b81482bcc944ecc316995d2ec54df7bd2`
+  has different blob `82fc612cce62fb1eabf09b7c737bc8a54705d939` and is
+  **not** an accepted validation receipt for this revision.
 - \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
   bounded spectral-cover theorem initially committed in
   [92277b5da59fd0e28c52ed4015362c8b39579d24](https://github.com/grwtsk/math/commit/92277b5da59fd0e28c52ed4015362c8b39579d24);
@@ -473,6 +477,12 @@ This quantity equals \`2^(Fintype.card State)\` mathematically, but
 the new Lean theorem deliberately states the bound in terms of
 \`Finset State\` cardinality, without asserting an independent
 arithmetical equality lemma.
+
+The graph-cardinality theorem explicitly uses the finite-state and
+chosen equality decision instances `[Fintype State] [DecidableEq State]`,
+while `P.stateCapacity` obtains the field-supplied finite type and
+classical equality internally. This prevents silent typeclass
+requirements in declaration types.
 
 The fully qualified new declarations are:
 
