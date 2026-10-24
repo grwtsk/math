@@ -822,6 +822,16 @@ representative, with its original finite size preserved. -/
 theorem classTrace_mk (P : PackedFiniteStarProjection) :
     classTrace (Quotient.mk finiteProjectionSetoid P) = P.2.val.trace := rfl
 
+/-- Bijective matrix reindexing preserves the finite Murray–von Neumann
+class. This is a proved permutation-invariance supplier for the pending
+commutativity and associativity laws on the quotient. -/
+theorem class_mk_reindexed
+    {m n : ℕ} (e : Fin m ≃ Fin n) (P : FiniteStarProjection m) :
+    Quotient.mk finiteProjectionSetoid ⟨m, P⟩ =
+      Quotient.mk finiteProjectionSetoid
+        ⟨n, reindexedFiniteProjection e P⟩ := by
+  exact Quotient.sound (mvNRel_reindexed e P)
+
 @[simp]
 theorem classTrace_classZero : classTrace classZero = 0 := by
   change (0 : Matrix (Fin 0) (Fin 0) ℂ).trace = 0
