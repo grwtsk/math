@@ -562,3 +562,71 @@ with exact exit codes and immutable receipts; it does not
 constitute any executed verification. Current source status remains
 **COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
 TRANSITIVE_AXIOM_AUDIT NOT_RUN**.
+
+
+## All finite capacities versus unbounded tail contexts — 2026-10-23
+
+**Pure mathematics, source-only; NOT_RUN / NOT_KERNEL_AUDITED.**
+This subsection records one exact missing logical comparison, not
+a newly constructed zeta trace, a completed sofic certificate, or
+any irrationality/transcendence result.
+
+On the same selected Boolean trace
+\`trace : ℂ → ℕ → Bool\`, the existing
+\`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaTailContextCapacityCertificate trace capacity\`
+requires, for EVERY actual nontrivial zero and EVERY finite tail
+offset, \`capacity + 1\` words with pairwise different continuation
+behavior in that tail's full finite-factor language.
+
+The following new source declarations are **literal fully
+qualified names** in
+\`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean\`:
+
+- \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_of_all_capacityCertificates\`.
+  Requires \`∀ capacity, ZetaTailContextCapacityCertificate trace capacity\`
+  at a SINGLE fixed \`trace\`; produces
+  \`ZetaUnboundedTailContexts trace\`. The empty \`Fin 0\`
+  family is discharged explicitly; nonempty sizes use the
+  certificate at capacity \`n-1\`.
+- \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_iff_all_capacityCertificates\`.
+  Pairs this direction with the prior bounded-projection theorem.
+  It is an equivalence of two UNINHABITED supplier propositions,
+  not a proof that either holds for any zeta ordinate.
+- \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_all_capacityCertificates_and_rational_sofic\`.
+  Its OTHER INDEPENDENT hypothesis is
+  \`∀ z, ActualZetaZero z → RationalReal (z.im) →
+  EventuallySoficTrace (trace z)\`; no such arithmetic-to-sofic
+  constructor exists. No GRH assumption is needed for this
+  conditional logical implication.
+
+The exact introduction commit on existing math main is
+[beaae68f34fc6980385aca48975246e440eb233f](https://github.com/grwtsk/math/commit/beaae68f34fc6980385aca48975246e440eb233f),
+source Git blob **ae3e016150c6b6ab131a76019b1f3571e15d4463**.
+A concurrent subsequent attribution-only source edit at
+[d84485b6c2a5b98c0dcbb68afb016bb1f2f19a88](https://github.com/grwtsk/math/commit/d84485b6c2a5b98c0dcbb68afb016bb1f2f19a88)
+produced blob **ef271172b8f792a189f3f7cd684448d05e0c7ddb**.
+The complete source from the first \`import\` onward is
+unchanged; the new current local header says **2026 grwtsk
+contributors**, without an independent mathematical-direction
+byline. Do not transfer a hypothetical verification receipt from
+the older to the newer blob.
+
+The external published context is not a theorem import:
+Myhill/Nerode finite-state right contexts (method analogy only)
+and Jonoska's full labeled-graph presentation require separate
+source-language matching. The source semantics remain strictly
+one-sided factor-language soficity, NOT finite path admission
+and NOT a proof of the classical bi-infinite sofic-shift
+equivalence.
+
+**Source-specific validation request:** passive
+[grwtsk/noeaaeue#402](https://github.com/grwtsk/noeaaeue/issues/402)
+targets exact \`math@beaae68f34fc6980385aca48975246e440eb233f\`,
+Lean \`v4.33.0\`, Mathlib
+\`db584cd6d46c92f209a44c0f1c829460d327499d\`, with
+complete source blob/command pins and expected \`#check\`,
+\`#print axioms\`, trust-zero, independent kernel and
+transitive unsafe/sorryAx audit. It is INERT METADATA, not
+execution authorization or an accepted proof receipt.
+**Actual compiler, fresh kernel and transitive axiom
+checks are all NOT_RUN** for this new increment.
