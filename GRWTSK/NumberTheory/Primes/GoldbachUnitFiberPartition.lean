@@ -156,4 +156,43 @@ theorem norm_totient_theta_sub_main_le
   rw [hdecomp]
   exact (norm_sub_le _ _).trans (add_le_add hpsi hcorr)
 
+
+/-- Normalize the totient-scaled theta discrepancy without losing its
+prime-power, principal, or nonprincipal error budgets. -/
+theorem norm_theta_sub_divided_main_le
+    (q N r : ℕ) (hq : 0 < q) (hr : r < q)
+    {κ : Type*} [Fintype κ]
+    (χ : κ → (ZMod q)ˣ → ℂ)
+    (a : (ZMod q)ˣ) (ha : (a : ZMod q) = (r : ZMod q))
+    (principal : κ) (E : κ → ℝ)
+    (main : ℂ) (P C : ℝ)
+    (hcard : Fintype.card κ = Nat.totient q)
+    (hχ : OrthogonalAt χ a)
+    (hprincipal : ∀ b : (ZMod q)ˣ, χ principal b = 1)
+    (hunit : ∀ k : κ, ‖χ k a‖ ≤ 1)
+    (hE : ∀ k ∈ Finset.univ.erase principal,
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ k b‖ ≤ E k)
+    (hmain : ‖unitPsiTotal q N - main‖ ≤ P)
+    (hcorr :
+      ‖(Nat.totient q : ℂ) *
+          (finiteProperPrimePowerCorrection N q r : ℂ)‖ ≤ C)
+    (hphi : 0 < Nat.totient q) :
+    ‖finiteThetaResidue N q r - main / (Nat.totient q : ℂ)‖ ≤
+      ((∑ k ∈ Finset.univ.erase principal, E k) + P + C) /
+        (Nat.totient q : ℝ) := by
+  have hscaled := norm_totient_theta_sub_main_le
+    q N r hq hr χ a ha principal E main P C hcard
+    hχ hprincipal hunit hE hmain hcorr
+  have hne : (Nat.totient q : ℂ) ≠ 0 := by
+    exact_mod_cast (Nat.ne_of_gt hphi)
+  have hnorm : ‖(Nat.totient q : ℂ)‖ =
+      (Nat.totient q : ℝ) := by simp
+  have hrewrite :
+      finiteThetaResidue N q r - main / (Nat.totient q : ℂ) =
+        ((Nat.totient q : ℂ) * finiteThetaResidue N q r - main) /
+          (Nat.totient q : ℂ) := by
+    field_simp
+  rw [hrewrite, norm_div, hnorm]
+  exact (div_le_div_of_nonneg_right hscaled (Nat.cast_nonneg _))
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
