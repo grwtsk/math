@@ -581,4 +581,63 @@ theorem twoSite_interval_spectrum_exclusion
   linarith
 
 
+
+/-!
+## Three-site obstruction to propagating the two-site interior gap
+
+The free Dirichlet restriction on three sites has an exact zero mode.
+Therefore the phase-independent two-site gap around zero cannot be
+promoted to a common gap of **all** finite Dirichlet volumes, even at
+zero coupling. This is a finite counterexample to that inference,
+not a claim about the infinite-volume Sturmian spectrum.
+-/
+
+/-- A nonzero vector with alternating signs supported at the endpoints. -/
+def threeSiteZeroMode : Fin 3 → ℝ := ![1, 0, -1]
+
+theorem threeSiteZeroMode_ne_zero : threeSiteZeroMode ≠ 0 := by
+  intro hz
+  have h := congrArg (fun v : Fin 3 → ℝ => v 0) hz
+  norm_num [threeSiteZeroMode] at h
+
+/-- The actual free three-site Dirichlet matrix kills the explicit vector. -/
+theorem freeDirichlet_three_zeroMode :
+    freeDirichlet 3 *ᵥ threeSiteZeroMode = 0 := by
+  ext i
+  fin_cases i <;>
+    norm_num [freeDirichlet, threeSiteZeroMode, Matrix.mulVec,
+      dotProduct, Fin.sum_univ_succ]
+
+/-- The characteristic polynomial of the literal three-site free
+Dirichlet matrix vanishes at zero. This uses exact finite determinants. -/
+theorem freeDirichlet_three_charpoly_zero :
+    (freeDirichlet 3).charpoly.eval (0 : ℝ) = 0 := by
+  rw [Matrix.eval_charpoly, Matrix.det_fin_three]
+  norm_num [Matrix.scalar_apply, Matrix.sub_apply, freeDirichlet]
+
+/-- Zero belongs to the actual matrix spectrum of the free three-site
+Dirichlet restriction. No infinite-volume spectrum is involved. -/
+theorem threeSite_free_zero_in_spectrum :
+    (0 : ℝ) ∈ spectrum ℝ (freeDirichlet 3) := by
+  apply Matrix.mem_spectrum_iff_isRoot_charpoly.mpr
+  exact freeDirichlet_three_charpoly_zero
+
+/-- At zero coupling, the Sturmian three-site Hamiltonian equals the
+free restriction for every rotation, phase and integer origin. -/
+theorem threeSite_zeroCoupling_zero_in_spectrum
+    (α ξ : ℝ) (origin : ℤ) :
+    (0 : ℝ) ∈ spectrum ℝ (hamiltonian 3 α 0 ξ origin) := by
+  simpa only [hamiltonian_zero] using threeSite_free_zero_in_spectrum
+
+/-- The two-site central free gap does not extend as the same common gap
+to all finite Dirichlet restrictions, already at volume three. -/
+theorem not_all_volumes_free_central_gap
+    (α ξ : ℝ) (origin : ℤ) :
+    ¬ ∀ N : ℕ, ∀ E : ℝ,
+      E ∈ Set.Ioo (-1 : ℝ) 1 →
+      E ∉ spectrum ℝ (hamiltonian N α 0 ξ origin) := by
+  intro h
+  exact (h 3 0 (by norm_num)) (threeSite_zeroCoupling_zero_in_spectrum α ξ origin)
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
