@@ -1203,9 +1203,16 @@ principal-character pole exception (chi=1 AND s=1), modulus NeZero,
 character conductor, Hecke field and finite order may not be silently
 dropped or inferred from the zeta specialization. No new finite evidence.
 
-**Verification and source pins.** The source blob hashes and a separate
-immutable math MAIN source commit are recorded in the bounded verification
-issue after integration. The baseline main for this edit is
+**Verification and source pins.** The immutable mathematical source
+integration commit is `6e860761d2e234443022f137dbb9c2b64bf23241`, tree `2e0ab7e2f440decc20c4c57a5dcb49471659518c` on existing `main`,
+containing `GRWTSK/NumberTheory/Zeta/Riemann/OpenAISevenEighthsPort.lean`
+blob `614342fc85bc643b873e58e96723ab9a53fbf2df` and
+`GRWTSK/NumberTheory/Zeta/Riemann/Checks/OpenAISevenEighthsPortControls.lean`
+blob `f999f9c2bb5f42253dd833bedb7fd6c1c74e7991`.
+The first ledger integration object has blob
+`5c0d375fbc75f270b989e6aaee325b77ea6e278e`; its subsequent
+documentation-only amendment must be distinguished by its own commit/blob.
+The baseline main for this edit is
 0c3709449a58aef23d1092e3e9b90b99a7d32894; baseline OpenAISevenEighthsPort.lean blob 9cb84ea0b8e56d589d03e98ac193e832b04a1c60,
 controls blob c61a90bcdaf19070fc7c5e07e5752b9a0f971ebb; baseline ledger blob
 7a1765a4def4609247976f1796d16f9dd41fbcf1.
