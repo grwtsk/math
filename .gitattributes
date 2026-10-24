@@ -1,2 +1,5 @@
 # A final empty text line has no mathematical or executable meaning.
 README.md whitespace=-blank-at-eof
+
+# Generated source issuances preserve pinned source bytes and line endings.
+docs/mathematics/**/*.lean/** -text
