@@ -271,4 +271,153 @@ theorem completedSquareToNativePoint_neg
     rw [completedSquare_negY_compat]
 
 
+
+/-!
+## Addition preservation for the actual normalized and native point groups
+
+Unlike the point-set equivalence above, the following proof handles all
+three branches of Mathlib's point addition: the identity, an opposite
+(vertical) pair, and a nonvertical tangent or secant. The zero-valued
+total-slope convention in the vertical branch is never shifted.
+-/
+
+/-- Opposite-pair detection is preserved by the completed-square
+coordinate transformation, including coincident x-coordinates. -/
+theorem completedSquare_opposite_iff
+    (x₁ x₂ Y₁ Y₂ : ℚ) :
+    (x₁ = x₂ ∧
+      Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂) ↔
+    (x₁ = x₂ ∧
+      Y₁ - x₁ / 2 =
+        nativeCurve.toAffine.negY x₂ (Y₂ - x₂ / 2)) := by
+  constructor
+  · rintro ⟨hx, hy⟩
+    refine ⟨hx, ?_⟩
+    rw [completedSquare_negY_compat, hx, hy]
+  · rintro ⟨hx, hy⟩
+    refine ⟨hx, ?_⟩
+    rw [completedSquare_negY_compat, hx] at hy
+    linarith
+
+/-- The x-coordinate of the actual sum agrees with the one in the
+normalized model, under the exact nonvertical point hypotheses. -/
+theorem completedSquare_actual_addX_compat
+    (x₁ x₂ Y₁ Y₂ : ℚ)
+    (h₁ : nativeCompletedSquareCurve.toAffine.Equation x₁ Y₁)
+    (h₂ : nativeCompletedSquareCurve.toAffine.Equation x₂ Y₂)
+    (hxy : ¬(x₁ = x₂ ∧
+      Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂)) :
+    nativeCurve.toAffine.addX x₁ x₂
+        (nativeCurve.toAffine.slope x₁ x₂
+          (Y₁ - x₁ / 2) (Y₂ - x₂ / 2)) =
+      nativeCompletedSquareCurve.toAffine.addX x₁ x₂
+        (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂) := by
+  rw [completedSquare_nonvertical_slope_compat x₁ x₂ Y₁ Y₂
+    h₁ h₂ hxy]
+  exact completedSquare_addX_compat
+    x₁ x₂ (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂)
+
+/-- The y-coordinate of the actual sum is the normalized y-coordinate
+minus one half of the resulting x-coordinate, for nonvertical pairs. -/
+theorem completedSquare_actual_addY_compat
+    (x₁ x₂ Y₁ Y₂ : ℚ)
+    (h₁ : nativeCompletedSquareCurve.toAffine.Equation x₁ Y₁)
+    (h₂ : nativeCompletedSquareCurve.toAffine.Equation x₂ Y₂)
+    (hxy : ¬(x₁ = x₂ ∧
+      Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂)) :
+    nativeCurve.toAffine.addY x₁ x₂ (Y₁ - x₁ / 2)
+        (nativeCurve.toAffine.slope x₁ x₂
+          (Y₁ - x₁ / 2) (Y₂ - x₂ / 2)) =
+      nativeCompletedSquareCurve.toAffine.addY x₁ x₂ Y₁
+        (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂) -
+      nativeCompletedSquareCurve.toAffine.addX x₁ x₂
+        (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂) / 2 := by
+  rw [completedSquare_nonvertical_slope_compat x₁ x₂ Y₁ Y₂
+    h₁ h₂ hxy]
+  exact completedSquare_addY_compat x₁ x₂ Y₁
+    (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂)
+
+/-- The completed-square map preserves *actual* elliptic-curve addition,
+including the point at infinity and the opposite-pair case. No additive
+homomorphism structure was assumed or introduced as a proof input. -/
+theorem completedSquareToNativePoint_add
+    (P Q : nativeCompletedSquareCurve.toAffine.Point) :
+    completedSquareToNativePoint (P + Q) =
+      completedSquareToNativePoint P + completedSquareToNativePoint Q := by
+  cases P with
+  | zero =>
+    simp only [zero_add, completedSquareToNativePoint_zero]
+  | some x₁ Y₁ h₁ =>
+    cases Q with
+    | zero =>
+      simp only [add_zero, completedSquareToNativePoint_zero]
+    | some x₂ Y₂ h₂ =>
+      by_cases hxy : x₁ = x₂ ∧
+          Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂
+      · have hnative := (completedSquare_opposite_iff x₁ x₂ Y₁ Y₂).mp hxy
+        change completedSquareToNativePoint
+            (WeierstrassCurve.Affine.Point.some x₁ Y₁ h₁ +
+              WeierstrassCurve.Affine.Point.some x₂ Y₂ h₂) =
+          (WeierstrassCurve.Affine.Point.some
+            x₁ (Y₁ - x₁ / 2) _ +
+            WeierstrassCurve.Affine.Point.some
+              x₂ (Y₂ - x₂ / 2) _)
+        rw [WeierstrassCurve.Affine.Point.add_of_Y_eq hxy.1 hxy.2,
+            WeierstrassCurve.Affine.Point.add_of_Y_eq hnative.1 hnative.2]
+        rfl
+      · have hnative : ¬(x₁ = x₂ ∧
+            Y₁ - x₁ / 2 =
+              nativeCurve.toAffine.negY x₂ (Y₂ - x₂ / 2)) := by
+          intro h
+          exact hxy ((completedSquare_opposite_iff x₁ x₂ Y₁ Y₂).mpr h)
+        have hxcompat := completedSquare_actual_addX_compat
+          x₁ x₂ Y₁ Y₂ h₁.1 h₂.1 hxy
+        have hycompat := completedSquare_actual_addY_compat
+          x₁ x₂ Y₁ Y₂ h₁.1 h₂.1 hxy
+        change completedSquareToNativePoint
+            (WeierstrassCurve.Affine.Point.some x₁ Y₁ h₁ +
+              WeierstrassCurve.Affine.Point.some x₂ Y₂ h₂) =
+          (WeierstrassCurve.Affine.Point.some
+            x₁ (Y₁ - x₁ / 2) _ +
+            WeierstrassCurve.Affine.Point.some
+              x₂ (Y₂ - x₂ / 2) _)
+        rw [WeierstrassCurve.Affine.Point.add_some hxy,
+            WeierstrassCurve.Affine.Point.add_some hnative]
+        change
+          (WeierstrassCurve.Affine.Point.some
+            (nativeCompletedSquareCurve.toAffine.addX x₁ x₂
+              (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂))
+            (nativeCompletedSquareCurve.toAffine.addY x₁ x₂ Y₁
+              (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂) -
+              nativeCompletedSquareCurve.toAffine.addX x₁ x₂
+                (nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂) / 2) _) =
+          (WeierstrassCurve.Affine.Point.some
+            (nativeCurve.toAffine.addX x₁ x₂
+              (nativeCurve.toAffine.slope x₁ x₂
+                (Y₁ - x₁ / 2) (Y₂ - x₂ / 2)))
+            (nativeCurve.toAffine.addY x₁ x₂ (Y₁ - x₁ / 2)
+              (nativeCurve.toAffine.slope x₁ x₂
+                (Y₁ - x₁ / 2) (Y₂ - x₂ / 2))) _)
+        rw [hxcompat, hycompat]
+
+/-- The original rational elliptic-curve group and its exact completed-
+square normalization are additively equivalent. This is a source-level
+proof candidate for the previously missing algebraic transport. -/
+noncomputable def completedSquarePointAddEquiv :
+    nativeCompletedSquareCurve.toAffine.Point ≃+
+      nativeCurve.toAffine.Point where
+  toFun := completedSquareToNativePoint
+  invFun := nativeToCompletedSquarePoint
+  left_inv := completedSquarePointEquiv.left_inv
+  right_inv := completedSquarePointEquiv.right_inv
+  map_add' := completedSquareToNativePoint_add
+
+/-- The additive equivalence respects every source-identified rational
+point, preserving its original curve and its ordering. -/
+theorem completedSquarePointAddEquiv_sourcePoint (i : Fin 32) :
+    completedSquarePointAddEquiv (nativeCompletedSquarePoint i) =
+      nativePoint i :=
+  completedSquarePointEquiv_sourcePoint i
+
+
 end GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
