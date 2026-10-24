@@ -416,6 +416,98 @@ theorem trace_eq_of_mvNRel {m n : ℕ}
     _ = (Vᴴ * V).trace := Matrix.trace_mul_comm V Vᴴ
     _ = Q.val.trace := congrArg Matrix.trace hQ.symm
 
+/-! ## Block sums preserve finite projection and witness identities -/
+
+/-- A finite dependent block diagonal of actual complex star projections
+is again a star projection. The blocks may have different finite row types.
+This is a matrix theorem, not yet an operation on quotient classes. -/
+theorem blockDiagonal'_isStarProjection
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    {m : ι → Type*} [∀ i, Fintype (m i)]
+    (P : ∀ i, Matrix (m i) (m i) ℂ)
+    (hP : ∀ i, IsStarProjection (P i)) :
+    IsStarProjection (Matrix.blockDiagonal' P) := by
+  refine ⟨?_, ?_⟩
+  · change Matrix.blockDiagonal' P * Matrix.blockDiagonal' P =
+      Matrix.blockDiagonal' P
+    calc
+      _ = Matrix.blockDiagonal' (fun i => P i * P i) :=
+        (Matrix.blockDiagonal'_mul P P).symm
+      _ = Matrix.blockDiagonal' P := by
+        congr 1
+        funext i
+        exact (hP i).isIdempotentElem.eq
+  · change (Matrix.blockDiagonal' P)ᴴ = Matrix.blockDiagonal' P
+    rw [Matrix.blockDiagonal'_conjTranspose]
+    congr 1
+    funext i
+    change star (P i) = P i
+    exact (hP i).isSelfAdjoint.star_eq
+
+/-- Componentwise rectangular Murray–von Neumann witnesses assemble into
+one witness for finite dependent block diagonals, even when their row and
+column types differ. This proof keeps both endpoint equalities explicit. -/
+theorem blockDiagonal'_mvN_witness
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    {m n : ι → Type*}
+    [∀ i, Fintype (m i)] [∀ i, Fintype (n i)]
+    (P : ∀ i, Matrix (m i) (m i) ℂ)
+    (Q : ∀ i, Matrix (n i) (n i) ℂ)
+    (V : ∀ i, Matrix (m i) (n i) ℂ)
+    (hP : ∀ i, P i = V i * (V i)ᴴ)
+    (hQ : ∀ i, Q i = (V i)ᴴ * V i) :
+    Matrix.blockDiagonal' P =
+      Matrix.blockDiagonal' V * (Matrix.blockDiagonal' V)ᴴ ∧
+    Matrix.blockDiagonal' Q =
+      (Matrix.blockDiagonal' V)ᴴ * Matrix.blockDiagonal' V := by
+  constructor
+  · calc
+      Matrix.blockDiagonal' P =
+          Matrix.blockDiagonal' (fun i => V i * (V i)ᴴ) := by
+        congr 1
+        funext i
+        exact hP i
+      _ = Matrix.blockDiagonal' V *
+          Matrix.blockDiagonal' (fun i => (V i)ᴴ) :=
+            Matrix.blockDiagonal'_mul V (fun i => (V i)ᴴ)
+      _ = Matrix.blockDiagonal' V * (Matrix.blockDiagonal' V)ᴴ := by
+        rw [Matrix.blockDiagonal'_conjTranspose]
+  · calc
+      Matrix.blockDiagonal' Q =
+          Matrix.blockDiagonal' (fun i => (V i)ᴴ * V i) := by
+        congr 1
+        funext i
+        exact hQ i
+      _ = Matrix.blockDiagonal' (fun i => (V i)ᴴ) *
+          Matrix.blockDiagonal' V :=
+            Matrix.blockDiagonal'_mul (fun i => (V i)ᴴ) V
+      _ = (Matrix.blockDiagonal' V)ᴴ * Matrix.blockDiagonal' V := by
+        rw [Matrix.blockDiagonal'_conjTranspose]
+
+/-- The assembled finite rectangular witness preserves ordinary trace.
+The result concerns sigma-indexed finite block matrices, rather than
+postulating an operation on the earlier quotient `FiniteProjectionClass`. -/
+theorem blockDiagonal'_mvN_witness_trace_eq
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    {m n : ι → Type*}
+    [∀ i, Fintype (m i)] [∀ i, Fintype (n i)]
+    (P : ∀ i, Matrix (m i) (m i) ℂ)
+    (Q : ∀ i, Matrix (n i) (n i) ℂ)
+    (V : ∀ i, Matrix (m i) (n i) ℂ)
+    (hP : ∀ i, P i = V i * (V i)ᴴ)
+    (hQ : ∀ i, Q i = (V i)ᴴ * V i) :
+    (Matrix.blockDiagonal' P).trace = (Matrix.blockDiagonal' Q).trace := by
+  obtain ⟨hleft, hright⟩ :=
+    blockDiagonal'_mvN_witness P Q V hP hQ
+  calc
+    (Matrix.blockDiagonal' P).trace =
+        (Matrix.blockDiagonal' V * (Matrix.blockDiagonal' V)ᴴ).trace :=
+          congrArg Matrix.trace hleft
+    _ = ((Matrix.blockDiagonal' V)ᴴ * Matrix.blockDiagonal' V).trace :=
+      Matrix.trace_mul_comm (Matrix.blockDiagonal' V) (Matrix.blockDiagonal' V)ᴴ
+    _ = (Matrix.blockDiagonal' Q).trace :=
+      congrArg Matrix.trace hright.symm
+
 /-! ## Finite projection classes and their trace -/
 
 /-- Every finite matrix size is retained in the object, rather than
