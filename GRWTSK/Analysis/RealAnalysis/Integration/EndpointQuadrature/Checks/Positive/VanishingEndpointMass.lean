@@ -27,7 +27,6 @@ changes. Historical proof-checking language is not a fresh replay claim.
 Outside the public library umbrella; Lean and Lake have not been invoked.
 -/
 
-import FormalResearch.RiemannHypothesis.SourceFractionalQuadrature
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 
 /-!
@@ -45,7 +44,6 @@ set_option autoImplicit false
 namespace GRWTSK.Analysis.RealAnalysis.Integration.EndpointQuadrature.Checks.Positive.VanishingEndpointMass
 
 open MeasureTheory
-open FormalResearch.RiemannHypothesis.SourceFractionalQuadrature
 
 /-- A generic continuous tail strictly between two sampled endpoints. -/
 def cellInterior (N u : ℝ) : ℝ := (u - N) ^ 2 * (N + 1 - u) ^ 2
