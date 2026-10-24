@@ -155,4 +155,32 @@ theorem dirichlet_unitPsi_twist_eq_vonMangoldt_integer_sum
       intro n hn
       rw [GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise.primePowerWeight_eq_vonMangoldt n]
 
+
+/-- The exact unit-fiber sum equals the direct Dirichlet evaluation.
+For nonunits, both sides vanish by the multiplicative-character
+nonunit law; no restriction to a coprime progression is hidden. -/
+theorem dirichlet_unit_fiber_sum_eq_apply
+    (q n : ℕ) (χ : DirichletCharacter ℂ q) :
+    (∑ b : (ZMod q)ˣ,
+      if (n : ZMod q) = (b : ZMod q) then χ (b : ZMod q) else 0) =
+      χ (n : ZMod q) := by
+  classical
+  by_cases hn : IsUnit (n : ZMod q)
+  · obtain ⟨u, hu, huniq⟩ :=
+      GRWTSK.NumberTheory.Primes.GoldbachUnitFiberRepresentative.exists_unique_unit_rep q n hn
+    have hsingle (b : (ZMod q)ˣ) :
+        ((n : ZMod q) = (b : ZMod q)) ↔ b = u := by
+      constructor
+      · intro hb
+        exact huniq b hb.symm
+      · intro hb
+        subst b
+        exact hu.symm
+    simp [hsingle, hu]
+  · have hnone (b : (ZMod q)ˣ) :
+        ¬ ((n : ZMod q) = (b : ZMod q)) := by
+      intro hb
+      exact hn (GRWTSK.NumberTheory.Primes.GoldbachUnitFiberMembership.unit_fiber_implies_isUnit q n b hb)
+    simp [hnone, MulChar.map_nonunit χ hn]
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
