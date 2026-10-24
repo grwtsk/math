@@ -690,6 +690,31 @@ representative, with its original finite size preserved. -/
 theorem classTrace_mk (P : PackedFiniteStarProjection) :
     classTrace (Quotient.mk finiteProjectionSetoid P) = P.2.val.trace := rfl
 
+/-- Binary block sum descends from actual finite star projections to
+Murray–von Neumann classes because `finiteBlockSum_mvNRel` transports
+both representatives through an assembled rectangular witness.
+This operation is not yet given associativity, commutativity, or unit laws. -/
+def classBlockSum (x y : FiniteProjectionClass) : FiniteProjectionClass :=
+  Quotient.liftOn₂ x y
+    (fun P Q : PackedFiniteStarProjection =>
+      Quotient.mk finiteProjectionSetoid
+        ⟨P.1 + Q.1, finiteBlockSum P.2 Q.2⟩)
+    (by
+      intro P P' Q Q' hP hQ
+      apply Quotient.sound
+      exact finiteBlockSum_mvNRel P.2 P'.2 Q.2 Q'.2 hP hQ)
+
+/-- The descended block sum agrees with the constructed finite block sum
+of representatives, retaining their exact dimension indices. -/
+@[simp]
+theorem classBlockSum_mk
+    (P Q : PackedFiniteStarProjection) :
+    classBlockSum
+      (Quotient.mk finiteProjectionSetoid P)
+      (Quotient.mk finiteProjectionSetoid Q) =
+        Quotient.mk finiteProjectionSetoid
+          ⟨P.1 + Q.1, finiteBlockSum P.2 Q.2⟩ := rfl
+
 /-- Every finite projection class has nonnegative integral ordinary
 trace. This uses the established finite idempotent trace/rank identity;
 it makes no statement about analytic traces on infinite algebras. -/
