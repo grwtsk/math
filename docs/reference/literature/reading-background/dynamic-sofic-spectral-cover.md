@@ -178,3 +178,36 @@ zero/criticality compatibility.
 
 Verification status of the refinement remains **NOT_RUN /
 NOT_KERNEL_AUDITED**.
+
+
+## Anchored-difference / finite-state bridge
+
+Follow-up source commit:
+`0c62dab0ecc8fe34ccc0e08a38a9248da5b51885`.
+
+Current source blob:
+`8210e2055447ebbe482a7122d21ee09177c3b1c0`.
+
+This refinement consumes the concurrent generic supplier
+`GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery` from commit
+`f1e8f255c30c4d3568e0d888e6328e8344dd56f2`.
+
+New declarations:
+
+- `no_finite_state_initial_recovery_from_unanchored_difference`: if a finite
+  state factors through the unanchored discrete-difference stream, and the
+  initial ordinate factors through that finite state, then contradiction.
+  Thus a sofic/finite-state layer sourced only from differences cannot recover
+  the lost additive anchor.
+- `readout_factorsThrough_anchoredDifference`: the anchored difference stream
+  factors every source readout because the generic supplier provides an exact
+  integration left inverse.
+
+This is the precise formal distinction needed for the differentiation
+subtlety: local differences identify sources modulo an additive constant;
+retaining an anchor restores global reconstruction. The theorem is mathematical
+and exact, but it is not a claim of historical equivalence among Aristotle,
+Newton, Leibniz, or Riemann, and it is not an analytic statement about zeta
+zeros.
+
+Verification remains **NOT_RUN / NOT_KERNEL_AUDITED**.
