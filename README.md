@@ -32,4 +32,4 @@ Finite spectral calculations do not by themselves identify the complete zeta-zer
 
 ## Licensing and provenance
 
-Local contributions use the [MIT license](LICENSE). Retained upstream terms and individual credit appear in [NOTICE](NOTICE), [LICENSES](LICENSES), and source headers. Effectful verification and publication provenance is recorded by Noeaaeue against exact repository commits, trees, paths, and blobs.
+Local contributions are attributed to **grwtsk contributors** and use the [MIT license](LICENSE). Retained upstream terms and upstream individual credit appear in [NOTICE](NOTICE), [LICENSES](LICENSES), and source headers. Effectful verification and publication provenance is recorded by Noeaaeue against exact repository commits, trees, paths, and blobs.

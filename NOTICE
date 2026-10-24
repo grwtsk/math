@@ -1,39 +1,44 @@
 GRWTSK local mathematical source: copyright 2026 grwtsk contributors, MIT.
+Current displayed local attributions and excerpts use grwtsk contributors.
+Historical source hashes and commit identities remain original; they do not
+authenticate attribution-edited display bytes. Upstream attribution and license
+obligations remain preserved.
+
 Developed with OpenAI Codex assistance. Historical human and machine contributions to the ordered-product and common-generator rotation sources are not completely reconstructed; no sole authorship or mathematical originality claim is made.
 Lean and the mathlib community supply upstream structures, definitions and lemmas through pinned direct dependencies. Their identities, named source authors and licenses remain upstream. See LICENSES and the source headers of the pinned dependencies. No upstream algebraic declaration is copied or renamed here.
 The rational-shear counterexample source is locally maintained with the same named direction and Codex assistance; its historical human/machine split is unknown. It carries established mathematics without a new-theorem claim.
 The gauge and chart identities are locally maintained under the same named direction and Codex assistance. Their historical human/machine split is unknown. Established group identities and exact closed-path premises are retained; no new-theorem claim is made.
 The real polarization access ramp and negative consequences are locally maintained under the same named direction and Codex assistance, MIT. Historical human/machine authoring split is unknown. Established identities and upstream formalization retain their identities, notices and source authors; no mathematical originality is claimed.
-The interval reflection and conditional integral interface is locally maintained under grwtsk contributors direction with OpenAI Codex assistance, MIT. Historical human/machine split is unknown. Established mathematics and upstream formalization retain their identities and notices; no originality or RH conclusion is claimed.
-Finite coverage and exact scope counterexamples are locally maintained under grwtsk contributors direction with OpenAI Codex assistance, MIT. Historical human/machine split is unknown. Established mathematics and upstream formalization retain their identities; no new theorem or RH conclusion is claimed.
-RH inference guards are locally maintained under grwtsk contributors direction with OpenAI Codex assistance, MIT. Historical human/machine authoring split is unknown. Established mathematics and upstream formalizations retain their source identities, authors and licenses; no RH proof or mathematical originality is claimed.
-Schrodinger transfer core: locally maintained MIT formalization under grwtsk contributors direction with OpenAI Codex assistance; historical authoring split unknown. Established mathematics and pinned upstream formalizations retain authors and licenses. Canonical relocation makes no originality or RH claim.
-Jacobi transfer interface: locally maintained MIT formalization under grwtsk contributors direction with OpenAI Codex assistance; historical authoring split unknown. Established mathematics and pinned upstream formalizations retain authors and licenses. Canonical relocation makes no originality or RH claim.
+The interval reflection and conditional integral interface is locally maintained under the direction of grwtsk contributors with OpenAI Codex assistance, MIT. Historical human/machine split is unknown. Established mathematics and upstream formalization retain their identities and notices; no originality or RH conclusion is claimed.
+Finite coverage and exact scope counterexamples are locally maintained under the direction of grwtsk contributors with OpenAI Codex assistance, MIT. Historical human/machine split is unknown. Established mathematics and upstream formalization retain their identities; no new theorem or RH conclusion is claimed.
+RH inference guards are locally maintained under the direction of grwtsk contributors with OpenAI Codex assistance, MIT. Historical human/machine authoring split is unknown. Established mathematics and upstream formalizations retain their source identities, authors and licenses; no RH proof or mathematical originality is claimed.
+Schrodinger transfer core: locally maintained MIT formalization under the direction of grwtsk contributors with OpenAI Codex assistance; historical authoring split unknown. Established mathematics and pinned upstream formalizations retain authors and licenses. Canonical relocation makes no originality or RH claim.
+Jacobi transfer interface: locally maintained MIT formalization under the direction of grwtsk contributors with OpenAI Codex assistance; historical authoring split unknown. Established mathematics and pinned upstream formalizations retain authors and licenses. Canonical relocation makes no originality or RH claim.
 
-CCC pickup energy research: grwtsk contributors direction, OpenAI Codex formalization assistance; existing CCC mathematics, local candidates, RH remains open. Model references: Svetlana Gavrilova and Leonid Petrov (arXiv:2305.17747v3); Artur Avila, Yoram Last, Mira Shamis and Qi Zhou (arXiv:2110.07974v2). Upstream Lean and Mathlib authorship and licenses remain preserved.
+CCC pickup energy research: direction by grwtsk contributors, OpenAI Codex formalization assistance; existing CCC mathematics, local candidates, RH remains open. Model references: Svetlana Gavrilova and Leonid Petrov (arXiv:2305.17747v3); Artur Avila, Yoram Last, Mira Shamis and Qi Zhou (arXiv:2110.07974v2). Upstream Lean and Mathlib authorship and licenses remain preserved.
 CCC continuum continuation: established growth-class, actual-integrability, sampling and complete-residual estimates; same local direction and formalization assistance, MIT. No mathematical originality, arithmetic supplier or RH proof is claimed.
-Ordered transfer: grwtsk contributors direction; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established mathematics and Mathlib matrix multiplication retain upstream identities and licenses. Matrix multiplication source authors: Ellen Arlt, Blair Shi, Sean Leather, Mario Carneiro, Johan Commelin, Lu-Ming Zhang (Apache-2.0). Canonical relocation makes no originality or RH claim.
-Ordered-product determinant interface: grwtsk contributors direction; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established mathematics and Mathlib determinant multiplication retain upstream identities and licenses. Determinant source authors: Kenny Lau, Chris Hughes, Anne Baanen (Apache-2.0). Canonical relocation makes no originality or RH claim.
+Ordered transfer: direction by grwtsk contributors; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established mathematics and Mathlib matrix multiplication retain upstream identities and licenses. Matrix multiplication source authors: Ellen Arlt, Blair Shi, Sean Leather, Mario Carneiro, Johan Commelin, Lu-Ming Zhang (Apache-2.0). Canonical relocation makes no originality or RH claim.
+Ordered-product determinant interface: direction by grwtsk contributors; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established mathematics and Mathlib determinant multiplication retain upstream identities and licenses. Determinant source authors: Kenny Lau, Chris Hughes, Anne Baanen (Apache-2.0). Canonical relocation makes no originality or RH claim.
 
-Ten Martini research and conditional gap transport: grwtsk contributors direction, OpenAI Codex assistance, locally maintained MIT formalization. Established source argument: Ram Band, Siegfried Beckus and Raphael Loewy, arXiv:2402.16703v2. Supporting source authors and AI acknowledgments remain identified in docs/ten-martini-zero.md; Lean and Mathlib retain upstream authorship and licenses. No mathematical originality, full spectral formalization, independent admission or RH proof is claimed.
+Ten Martini research and conditional gap transport: direction by grwtsk contributors, OpenAI Codex assistance, locally maintained MIT formalization. Established source argument: Ram Band, Siegfried Beckus and Raphael Loewy, arXiv:2402.16703v2. Supporting source authors and AI acknowledgments remain identified in docs/ten-martini-zero.md; Lean and Mathlib retain upstream authorship and licenses. No mathematical originality, full spectral formalization, independent admission or RH proof is claimed.
 
-CCC prime-note cascade: grwtsk contributors mathematical direction; OpenAI Codex formalization and checking assistance, MIT. Classical causal-filter, squarefree factorization, Chebyshev and Abel-summation arguments; Mathlib authorship and Apache-2.0 licensing remain preserved. Hong Wang and Joshua Zahl (arXiv:2502.17655v1) supply geometric research context, not a signed arithmetic supplier. No originality or unconditional RH claim.
+CCC prime-note cascade: mathematical direction by grwtsk contributors; OpenAI Codex formalization and checking assistance, MIT. Classical causal-filter, squarefree factorization, Chebyshev and Abel-summation arguments; Mathlib authorship and Apache-2.0 licensing remain preserved. Hong Wang and Joshua Zahl (arXiv:2502.17655v1) supply geometric research context, not a signed arithmetic supplier. No originality or unconditional RH claim.
 
-CCC recording-scale continuation: grwtsk contributors mathematical direction; OpenAI Codex derivation, formalization and checking assistance, MIT. Classical causal blocks, strict correlation counterexample and compensated dyadic induction; Mathlib attribution preserved. Uniform finite-prefix supplier rejection is a prose PNT argument, not a Lean theorem. No unconditional RH or originality claim.
+CCC recording-scale continuation: mathematical direction by grwtsk contributors; OpenAI Codex derivation, formalization and checking assistance, MIT. Classical causal blocks, strict correlation counterexample and compensated dyadic induction; Mathlib attribution preserved. Uniform finite-prefix supplier rejection is a prose PNT argument, not a Lean theorem. No unconditional RH or originality claim.
 
-CCC finite-window Laplace continuation: human mathematical direction grwtsk contributors; derivation and Lean formalization assistance OpenAI Codex. Exact compact-window identities and source counterexample; no RH proof or independent arithmetic supplier. Lean/Mathlib authorship and Apache-2.0 retained; local contribution MIT.
+CCC finite-window Laplace continuation: human mathematical direction by grwtsk contributors; derivation and Lean formalization assistance OpenAI Codex. Exact compact-window identities and source counterexample; no RH proof or independent arithmetic supplier. Lean/Mathlib authorship and Apache-2.0 retained; local contribution MIT.
 
-Sequence realization: grwtsk contributors mathematical direction; OpenAI Codex formalization and verification assistance, MIT. Pinned Lean and Mathlib retain upstream identities, named authors and licenses. The transferred source preserves hypotheses, counterexamples and open arithmetic obligations; no originality or unconditional RH claim. Source and proof-family bindings are in evidence/citation-sequence-realization.json and evidence/sequence-realization-checks.json.
-Cocycle product interface: grwtsk contributors direction; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established cocycle/gauge mathematics and upstream Lean/Mathlib identities retained. Function-iterate source credits Yury Kudryashov, Apache-2.0. Canonical placement is an engineering contribution, with no new mathematical originality or RH claim.
+Sequence realization: mathematical direction by grwtsk contributors; OpenAI Codex formalization and verification assistance, MIT. Pinned Lean and Mathlib retain upstream identities, named authors and licenses. The transferred source preserves hypotheses, counterexamples and open arithmetic obligations; no originality or unconditional RH claim. Source and proof-family bindings are in evidence/citation-sequence-realization.json and evidence/sequence-realization-checks.json.
+Cocycle product interface: direction by grwtsk contributors; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established cocycle/gauge mathematics and upstream Lean/Mathlib identities retained. Function-iterate source credits Yury Kudryashov, Apache-2.0. Canonical placement is an engineering contribution, with no new mathematical originality or RH claim.
 
-CCC cutoff Laplace continuation: human mathematical direction grwtsk contributors; derivation, formalization and checking assistance OpenAI Codex. Exact single-response and complete signed cutoff transforms, endpoint omission counterexamples and the cutoff-three arithmetic product debt; local MIT, original Lean/Mathlib authors and Apache-2.0 licensing retained. No RH proof or independent arithmetic upper estimate.
-State gauge interface: grwtsk contributors direction; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established group-action gauge mathematics and upstream Lean/Mathlib identities retained. Group-action source credits Chris Hughes and Yury Kudryashov, Apache-2.0. Canonical placement and checked reuse are engineering contributions, with no new mathematical originality or RH claim.
+CCC cutoff Laplace continuation: human mathematical direction by grwtsk contributors; derivation, formalization and checking assistance OpenAI Codex. Exact single-response and complete signed cutoff transforms, endpoint omission counterexamples and the cutoff-three arithmetic product debt; local MIT, original Lean/Mathlib authors and Apache-2.0 licensing retained. No RH proof or independent arithmetic upper estimate.
+State gauge interface: direction by grwtsk contributors; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established group-action gauge mathematics and upstream Lean/Mathlib identities retained. Group-action source credits Chris Hughes and Yury Kudryashov, Apache-2.0. Canonical placement and checked reuse are engineering contributions, with no new mathematical originality or RH claim.
 
 
 Archive candidate-source intake
 ------------------------------
-grwtsk contributors confirms ownership of the supplied formal proof sources and
-directs this work through ChatGPT and Codex. The existing Math repository MIT
+grwtsk contributors confirm ownership of the supplied formal proof sources and
+direct this work through ChatGPT and Codex. The existing Math repository MIT
 terms apply; original assistance credit, upstream mathematical authorship and
 Mathlib Apache-2.0 terms remain retained.
 See LICENSES/ArchiveCandidates-NOTICE.txt and evidence/source-intake.json for
@@ -454,7 +459,7 @@ Finite rooted prefix schedules
 -----------------------------
 GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean uses the existing
 State/batch/compaction/trace objects. Local formalization is MIT under
-grwtsk contributors direction with OpenAI Codex assistance. Imported Lean List
+direction by grwtsk contributors with OpenAI Codex assistance. Imported Lean List
 source retains Apache-2.0 and named authors Parikshit Khanna, Jeremy Avigad,
 Leonardo de Moura, Floris van Doorn, Mario Carneiro and Kim Morrison.
 
@@ -475,7 +480,7 @@ independent validation.
 
 Original-reference transport and good quotient cubic characters
 -------------------------------------------------------------
-PrefixTableReferenceTransport.lean is local MIT formalization under grwtsk contributors direction with OpenAI Codex assistance. Imported state/path/compaction
+PrefixTableReferenceTransport.lean is local MIT formalization under the direction of grwtsk contributors with OpenAI Codex assistance. Imported state/path/compaction
 credits remain; Lean List/Option retains Leonardo de Moura, Jeremy Avigad,
 Mario Carneiro, Parikshit Khanna and Floris van Doorn, Apache-2.0.
 ThirdCyclotomicCharacters.lean retains Apache-2.0 and adapts OpenAI's
@@ -511,7 +516,7 @@ separate obligations. No novelty or independent-validation claim is made.
 Direct lookup on original prefix-reference support
 -------------------------------------------------
 GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean and its controls
-are local MIT formalization under grwtsk contributors's mathematical direction
+are local MIT formalization under the mathematical direction of grwtsk contributors
 with OpenAI Codex assistance. The positive controls retain the source credits
 of copied local schedule/reference fixtures. Lean core's List.Nodup.idxOf_getElem
 in Init/Data/List/Nat/Pairwise.lean retains Mario Carneiro and James Gallicchio's

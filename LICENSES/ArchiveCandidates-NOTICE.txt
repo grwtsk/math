@@ -1,6 +1,6 @@
 Imported candidate-source attribution and licensing
 
-grwtsk contributors confirms ownership of the supplied proof sources and directs
+grwtsk contributors confirm ownership of the supplied proof sources and direct
 this work through ChatGPT and Codex. The Math repository MIT terms apply to the
 local formal-source contributions. Original source headers, specific assistance
 credits and upstream mathematical attribution are preserved. Mathematical origin,
