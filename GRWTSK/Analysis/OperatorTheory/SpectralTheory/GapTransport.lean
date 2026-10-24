@@ -669,4 +669,29 @@ theorem linearPMap_projection_cross_conjugate
   rw [hs]
   exact inner_conj_symm _ _
 
+/-- The domain-qualified pairing expansion for a formally symmetric partial
+operator, with the off-diagonal conjugacy made explicit. -/
+theorem linearPMap_symmetric_projection_energy_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    inner 𝕜 (A ⟨x, hx⟩) x =
+      inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x) +
+      inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x) +
+      star (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x)) +
+      inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x) := by
+  rw [linearPMap_projection_inner_expansion S A x hx hstable]
+  rw [linearPMap_projection_cross_conjugate S A hA x hx hstable]
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
