@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT. -/
+Local mathematical direction and proof code: grwtsk contributors. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.OpenAISevenEighthsPort
 import Mathlib.Tactic
 
@@ -80,5 +80,27 @@ theorem located_review_remains_blocked :
   exact ⟨openAISevenEighthsReview_sourceLocated.1,
     openAISevenEighthsReview_sourceLocated.2,
     openAISevenEighthsReview_not_admissionReady⟩
+
+
+/-- Even with reflection symmetry and an unconditional-looking
+seven-eighths bound, the central remaining supplier does not follow by
+pure logic: the reflected toy pair at 2/5 and 3/5 lies inside the band. -/
+theorem toy_remaining_right_gap_fails :
+    ¬ (∀ s : ℂ, (1 / 2 : ℝ) < s.re →
+      s.re ≤ (7 / 8 : ℝ) → ¬ ToySymmetricZero s) := by
+  intro h
+  have hbad := h (((3 : ℝ) / 5 : ℝ) : ℂ) (by norm_num) (by norm_num)
+  exact hbad (Or.inl rfl)
+
+/-- The presently inspected source record cannot be passed off as the
+completed admission record inside a constructed accepted port. -/
+theorem no_accepted_port_for_unready_review :
+    ¬ ∃ port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8),
+      port.review = openAISevenEighthsReview := by
+  rintro ⟨port, hreview⟩
+  have hready : openAISevenEighthsReview.AdmissionReady := by
+    rw [← hreview]
+    exact port.admissionReady
+  exact openAISevenEighthsReview_not_admissionReady hready
 
 end GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls
