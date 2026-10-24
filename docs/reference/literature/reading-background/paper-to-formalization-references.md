@@ -6744,3 +6744,53 @@ with the admissible test class, source binding, completed-zeta normalization,
 Mellin/Fourier convention, involution, full explicit-formula theorem, and sign
 conversion all explicit. Only after that theorem is source-bound can the present
 information-loss result constrain an actual criterion-facing reconstruction.
+
+
+## Case KERNEL-EXISTENCE-VALIDATION-20261023 — corrected dimension bound and algebraic complements
+
+**Provenance and scope.** Repository-derived linear algebra, 2026; no new
+paper theorem, authors, DOI or historical influence is asserted. The imported
+mathematics is Mathlib projection onto complementary submodules, existence of
+algebraic complements, and dimension monotonicity for injective linear maps.
+Lean is `leanprover/lean4:v4.33.0`; Mathlib is
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+**Exact checked declarations.** In namespace `GRWTSK.Logic.InformationLoss`,
+`old_kernel_finrank_le_extra_finrank` retains `[FiniteDimensional K W]` and
+injectivity of the paired observation; these imply the old kernel's natural
+finrank is at most that of the extra target. The finite-dimensional target
+hypothesis is essential: the previously checked infinite-target negative
+control remains in `kernel-finrank-obstruction.lean` with successful receipt
+`kernel-finrank-obstruction3.log` outside this repository. This is validation
+of the corrected statement, superseding only the pending validation status in
+the earlier chart/residual entry, not a claim for the false unconditional bound.
+`exists_kernel_retraction_of_isCompl` and
+`exists_sharp_measurement_of_isCompl` retain their explicit `IsCompl P.ker S`
+premise. `exists_old_kernel_complement` and
+`exists_sharp_extra_algebraically` supply algebraic existence over a field using
+classical complement choice. These are kernel-verified algebraic bridges,
+not canonical, computable, continuous, bounded, stable or algorithmic suppliers.
+No such analytic or effective bridge is supplied by this validation.
+
+**Immutable sources.** Source commit
+`1d225416a68b4adfe7220693ae27473ff9d98198`; all paths below are under
+`GRWTSK/Logic/InformationLoss/`:
+
+| Source | Git blob |
+| --- | --- |
+| `FiniteRankMeasurementLowerBound.lean` | `021383c209d402f9687bfe8db6f4bbef100d8d53` |
+| `KernelComplementExistence.lean` | `aa02d716d476d02e0b0de2fd8a3bb8569d291928` |
+| `AlgebraicKernelComplement.lean` | `7b082d468400ceb92637e177056ee8710478697a` |
+
+**Actual verification.** At that source pin,
+`lake build GRWTSK.Logic.InformationLoss.FiniteRankMeasurementLowerBound GRWTSK.Logic.InformationLoss.KernelComplementExistence GRWTSK.Logic.InformationLoss.AlgebraicKernelComplement --wfail`
+passed (1549 jobs), and `lake build --wfail` passed (9307 jobs).
+`lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/kernel-existence-audit.lean`
+passed, auditing all 62 local declarations and printing all 62 types;
+only `propext`, `Classical.choice`, and `Quot.sound` were allowed, with unsafe
+declarations rejected. All 20 transitive local source hashes and 51 theorem
+headers were unchanged across validation. External evidence in that directory:
+`kernel-existence-build.log`, `kernel-existence-public.log`,
+`kernel-existence-audit.log`, and `kernel-existence-validated-snapshot.json`.
+No new source repair or public-import promotion was needed. Existing source-only
+provenance remains historical; this entry records the exact checked scope.
