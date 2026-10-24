@@ -319,4 +319,121 @@ theorem certificateGramMoment_unit_contraction
 
 end CertificateGramSchur
 
+
+/-!
+## Unit-margin perturbations of the certificate Gram Schur operator
+
+A separate operator K(z) perturbs the concrete positive shift
+I+W(z)ᵀW(z) inside the Schur effective matrix. The strict unit
+operator-norm threshold is sufficient for determinant nonvanishing
+and orientation preservation relative to the unperturbed certificate
+Gram Schur system. No Gram positivity is assumed for K.
+-/
+
+section CertificateGramPerturbedSchur
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+
+/-- A literal coupled Schur pencil with effective operator
+I+W(z)ᵀW(z)+K(z) in finite Euclidean coordinates. -/
+noncomputable def certificateGramPerturbedSchurLift
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    BlockPencil Z (Fin n) (Fin m) ℝ :=
+  BlockPencil.identitySchurLift
+    (fun z => euclideanOperatorMatrix
+      (momentMatrix (certificateGramOperator (S z))
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z))
+    U V
+
+/-- The full determinant is exactly that of the perturbed shifted Gram
+operator. All off-diagonal Schur couplings cancel identically. -/
+theorem certificateGramPerturbedSchurLift_full_det
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((certificateGramPerturbedSchurLift S K U V).full z).det =
+      (momentMatrix (certificateGramOperator (S z))
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z).det := by
+  calc
+    ((certificateGramPerturbedSchurLift S K U V).full z).det =
+        (euclideanOperatorMatrix
+          (momentMatrix (certificateGramOperator (S z))
+            (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)).det := by
+      exact BlockPencil.identitySchurLift_full_det
+        (fun t => euclideanOperatorMatrix
+          (momentMatrix (certificateGramOperator (S t))
+            (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K t))
+        U V z
+    _ = _ := euclideanOperatorMatrix_det _
+
+/-- The sharp Gram moment gap excludes a zero full Schur determinant
+under the exact strict operator-norm condition ‖K(z)‖<1. -/
+theorem certificateGramPerturbedSchurLift_full_det_ne_zero
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z : Z) (hK : ‖K z‖ < 1) :
+    ((certificateGramPerturbedSchurLift S K U V).full z).det ≠ 0 := by
+  rw [certificateGramPerturbedSchurLift_full_det]
+  have hpert :
+      ‖(momentMatrix (certificateGramOperator (S z))
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z) -
+        momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))‖ < 1 := by
+    simpa only [add_sub_cancel_left] using hK
+  have hinj :
+      Function.Injective
+        (momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z) :=
+    positive_operator_perturbed_injective
+      (certificateGramOperator (S z))
+      (momentMatrix (certificateGramOperator (S z))
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)
+      (certificateGramOperator_nonneg (S z)) hpert
+  have hker :
+      LinearMap.ker
+        (momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  intro hzero
+  exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+
+/-- The exact full Schur determinant of a certificate Gram pencil
+retains its orientation after any perturbation K(z) with norm <1.
+No Valid certificate or positivity of the perturbation is required. -/
+theorem certificateGramPerturbedSchurLift_full_det_sign
+    {Z : Type*} {n m : ℕ}
+    (S : Z → Certificate ℝ (Fin n) ε γ ν)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z : Z) (hK : ‖K z‖ < 1) :
+    0 < ((certificateGramSchurLift S U V).full z).det *
+        ((certificateGramPerturbedSchurLift S K U V).full z).det := by
+  rw [certificateGramSchurLift_full_det,
+    certificateGramPerturbedSchurLift_full_det]
+  have hpert :
+      ‖(momentMatrix (certificateGramOperator (S z))
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z) -
+        momentMatrix (certificateGramOperator (S z))
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))‖ < 1 := by
+    simpa only [add_sub_cancel_left] using hK
+  exact positive_operator_perturbed_det_sign
+    (certificateGramOperator (S z))
+    (momentMatrix (certificateGramOperator (S z))
+      (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)
+    (certificateGramOperator_nonneg (S z)) hpert
+
+end CertificateGramPerturbedSchur
+
 end GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
