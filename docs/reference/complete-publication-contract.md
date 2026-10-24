@@ -18,7 +18,22 @@ in the complete source snapshot; no verification status, namespace, subject
 assignment or ranking threshold filters this population.
 
 Module indexes follow `<subject-path>/<Module>.lean/index.md`, with per-level `complete-source-index.md` pages and matching verification hierarchies.
-Portable directory casing preserves authored paths and exact original source identities.
+Current explicit taxonomy aliases and relocations determine publication locations;
+canonical subject spelling takes precedence over existing directory spelling,
+then deterministic portable casing resolves other ancestors. Original source
+paths, identities and verification pins remain unchanged. Distinct historical
+source occurrences that share a current destination retain separate module
+directories; consolidation never drops an occurrence.
+
+The source revision and publication layout are independent inputs. A long render
+can use a frozen layout root containing the exact taxonomy policy bytes and
+directory spellings, while reading all mathematics from its pinned Git revision.
+The manifest binds the policy and resulting path map, together with the producer
+sources captured at process start. A later folder move does not refresh that
+binding. Reconciliation must retain all source and declaration identities, bind
+its actual producer, and pass the maintained generator's exact-byte check before
+its output is presented as reproducible. Recomputed counts alone do not establish
+that unchanged source companions or declaration records were preserved.
 
 An issuance contains its title, source observation, exact source window,
 commit/tree/blob binding, revision, verification link and unresolved bridges.
