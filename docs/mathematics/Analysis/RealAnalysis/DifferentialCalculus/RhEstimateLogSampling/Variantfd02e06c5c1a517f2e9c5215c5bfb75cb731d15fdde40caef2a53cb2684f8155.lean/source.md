@@ -1,0 +1,20 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.RhEstimateLogSampling.Variantfd02e06c5c1a517f2e9c5215c5bfb75cb731d15fdde40caef2a53cb2684f8155
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5acc16ff5ef4c08c4668eb9c313316e06d99fd00` · SHA-256 `fd02e06c5c1a517f2e9c5215c5bfb75cb731d15fdde40caef2a53cb2684f8155`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.logSamplingTerm_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.deriv_logSamplingTerm
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.logSamplingTerm_source_eq
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.leftSampleSum_source_eq
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.abs_logSamplingDerivative_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.log_sampling_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.LogSamplingCheckpoint :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling.log_sampling_checkpoint
+```

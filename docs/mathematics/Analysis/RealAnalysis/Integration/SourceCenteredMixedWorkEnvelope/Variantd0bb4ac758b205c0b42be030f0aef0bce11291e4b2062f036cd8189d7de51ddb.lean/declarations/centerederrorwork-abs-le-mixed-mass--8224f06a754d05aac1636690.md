@@ -1,0 +1,166 @@
+# centeredErrorWork_abs_le_mixed_mass
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "bb6102f2326099456cd6779f0d71970d6ab7597b",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 217,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/d0/d0bb4ac758b205c0b42be030f0aef0bce11291e4b2062f036cd8189d7de51ddb.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:083da771-130c-d20e-8f44-9d661581e958",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:bf9aa5aa-12b7-0d22-0c8e-61605b6eeabb",
+  "kind": "theorem",
+  "lexical_name": "centeredErrorWork_abs_le_mixed_mass",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "centerederrorwork-abs-le-mixed-mass--8224f06a754d05aac1636690",
+  "source": {
+    "blob": "bb6102f2326099456cd6779f0d71970d6ab7597b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 289,
+    "line": 217,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceCenteredMixedWorkEnvelope/Variantd0bb4ac758b205c0b42be030f0aef0bce11291e4b2062f036cd8189d7de51ddb.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:8224f06a754d05aac1636690e569e3cb80c5f9251f286645b2fed3e436cceba3",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/SourceCenteredMixedWorkEnvelope/Variantd0bb4ac758b205c0b42be030f0aef0bce11291e4b2062f036cd8189d7de51ddb.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:bf9aa5aa-12b7-0d22-0c8e-61605b6eeabb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 217–289.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem centeredErrorWork_abs_le_mixed_mass (A offset : ℝ) (hA : 1 ≤ A) :
+    |centeredErrorWork A offset| ≤ (162826 / (7623 * A ^ 2) + 1 / 4) *
+      centeredErrorExpMass A offset *
+        (∑ k ∈ Finset.Ico (vaughanCutoff A + 1)
+          (sourceKernelCutoff A / (vaughanCutoff A + 1)),
+          |∑ n ∈ Finset.Ioc (vaughanCutoff A) k, centeredBeta (vaughanCutoff A) n| *
+            (∫ u in (k : ℝ)..((k : ℝ) + 1), 1 / (u * Real.sqrt u))) := by
+  have hp : 0 < A := by linarith
+  let U := vaughanCutoff A
+  let N := sourceKernelCutoff A
+  let s := Finset.Ico (U + 1) (N / (U + 1))
+  let B : ℕ → ℝ := fun k => ∑ n ∈ Finset.Ioc U k, centeredBeta U n
+  let l := Real.log (U : ℝ)
+  let b := Real.log (N : ℝ)
+  let c := 162826 / (7623 * A ^ 2) + (1 / 4 : ℝ)
+  have hpos : ∀ k ∈ s, 0 < (k : ℝ) := by
+    intro k hk
+    have hk0 : 0 < k := by have := (Finset.mem_Ico.mp hk).1; omega
+    exact_mod_cast hk0
+  have hUN := vaughanCutoff_le_sourceKernelCutoff A hA
+  have hU0 : 0 < (U : ℝ) := by
+    exact_mod_cast (by have := vaughanCutoff_pos A hA; dsimp only [U]; omega : 0 < U)
+  have hlb : l ≤ b := Real.log_le_log hU0 (by exact_mod_cast hUN)
+  have hd (t : ℝ) : deriv (jointMangoldtTestProfile A) t =
+      ∑ k ∈ s, B k * (sourceColumnTimeDeriv A t (k : ℝ) -
+        sourceColumnTimeDeriv A t ((k : ℝ) + 1)) := by
+    have h : HasDerivAt (fun t : ℝ => ∑ k ∈ s,
+        B k * (sourceColumn A (k : ℝ) t - sourceColumn A ((k : ℝ) + 1) t))
+        (∑ k ∈ s, B k * (sourceColumnTimeDeriv A t (k : ℝ) -
+          sourceColumnTimeDeriv A t ((k : ℝ) + 1))) t := by
+      apply HasDerivAt.fun_sum
+      intro k _
+      exact ((sourceColumn_hasDerivAt hp (k : ℝ) t).sub
+        (sourceColumn_hasDerivAt hp ((k : ℝ) + 1) t)).const_mul (B k)
+    convert h.deriv using 1
+    congr 2
+    funext z
+    simp only [jointMangoldtTestProfile, sourceColumn, U, N, s, B, Nat.cast_add, Nat.cast_one]
+  have hf : (fun t => (mangoldtLogError t - offset) * deriv (jointMangoldtTestProfile A) t) =
+      (fun t : ℝ => ∑ k ∈ s, B k * ((mangoldtLogError t - offset) *
+        (sourceColumnTimeDeriv A t (k : ℝ) - sourceColumnTimeDeriv A t ((k : ℝ) + 1)))) := by
+    funext t
+    rw [hd, Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro k _
+    ring
+  have he : centeredErrorWork A offset = ∑ k ∈ s, B k *
+      (∫ t in l..b, (mangoldtLogError t - offset) *
+        (sourceColumnTimeDeriv A t (k : ℝ) - sourceColumnTimeDeriv A t ((k : ℝ) + 1))) := by
+    unfold centeredErrorWork
+    rw [hf, intervalIntegral.integral_finsetSum (fun (k : ℕ) _ =>
+      (errorColumn_integrable hp offset l b (k : ℝ) hlb).const_mul (B k))]
+    simp_rw [intervalIntegral.integral_const_mul]
+  rw [he]
+  calc
+    _ ≤ ∑ k ∈ s, |B k * (∫ t in l..b, (mangoldtLogError t - offset) *
+        (sourceColumnTimeDeriv A t (k : ℝ) - sourceColumnTimeDeriv A t ((k : ℝ) + 1)))| :=
+      Finset.abs_sum_le_sum_abs _ _
+    _ ≤ ∑ k ∈ s, |B k| * (c * centeredErrorExpMass A offset * cellMass (k : ℝ)) := by
+      apply Finset.sum_le_sum
+      intro k hk
+      rw [abs_mul]
+      exact mul_le_mul_of_nonneg_left
+        (errorColumn_work_abs_le hA (hpos k hk) offset l b hlb) (abs_nonneg _)
+    _ = _ := by
+      rw [Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro k _
+      change |B k| * (c * centeredErrorExpMass A offset * cellMass (k : ℝ)) =
+        c * centeredErrorExpMass A offset * (|B k| * cellMass (k : ℝ))
+      ring
+
+/-- The new actual error mass transports against the unchanged original column mass. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/SourceCenteredMixedWorkEnvelope/Variantd0bb4ac758b205c0b42be030f0aef0bce11291e4b2062f036cd8189d7de51ddb.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/SourceCenteredMixedWorkEnvelope/Variantd0bb4ac758b205c0b42be030f0aef0bce11291e4b2062f036cd8189d7de51ddb.lean#L217).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bb6102f2326099456cd6779f0d71970d6ab7597b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

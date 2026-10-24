@@ -1,0 +1,62 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.ActualSecondEnergyBindingAudit.Variant1abdd3d5f07fce2d2977f854341342a4a9d93885f342f5db3f1d853f95e99d64
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `79351224e809ff5011f8350be1c37a771caab4cc` · SHA-256 `56307b3ee53910251e5055ae4220bae777cb2d0b9d63031c9c45dfefbe2789e5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.ActualSecondEnergyCalibration.Variant38673db1941d84f3671a5d7b13e9c509debd662798d085168babe7b5e9ef3cf5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"38673db1941d84f3671a5d7b13e9c509debd662798d085168babe7b5e9ef3cf5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.ActualSecondEnergyCalibration.Variant38673db1941d84f3671a5d7b13e9c509debd662798d085168babe7b5e9ef3cf5","mathematical_subject":"Analysis.Integration","original_sha256":"38673db1941d84f3671a5d7b13e9c509debd662798d085168babe7b5e9ef3cf5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T164137Z/ActualSecondEnergyBindingAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualSecondEnergyCalibration
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.ActualSecondEnergyCalibration.Variant38673db1941d84f3671a5d7b13e9c509debd662798d085168babe7b5e9ef3cf5
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.proofs false
+set_option pp.fullNames true
+
+#print RH16IndependentChallengeNext.cubic_energy_ratio_le_sixty_seven
+#print axioms RH16IndependentChallengeNext.cubic_energy_ratio_le_sixty_seven
+#print RH16IndependentChallengeNext.cubic_energy_ratio_le_sixty_seven_of_scale
+#print axioms RH16IndependentChallengeNext.cubic_energy_ratio_le_sixty_seven_of_scale
+#print RH16IndependentChallengeNext.refined_cubic_calibration_budget_lt
+#print axioms RH16IndependentChallengeNext.refined_cubic_calibration_budget_lt
+#print RH16IndependentChallengeNext.thirdInterior_hasDerivAt_fourth
+#print axioms RH16IndependentChallengeNext.thirdInterior_hasDerivAt_fourth
+#print RH16IndependentChallengeNext.normalizedInteriorDerivative_hasDerivAt_second
+#print axioms RH16IndependentChallengeNext.normalizedInteriorDerivative_hasDerivAt_second
+#print RH16IndependentChallengeNext.actual_first_derivative_eq_indicator
+#print axioms RH16IndependentChallengeNext.actual_first_derivative_eq_indicator
+#print RH16IndependentChallengeNext.actual_second_derivative_eq_interior
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_eq_interior
+#print RH16IndependentChallengeNext.scaled_unit_interval_iff
+#print axioms RH16IndependentChallengeNext.scaled_unit_interval_iff
+#print RH16IndependentChallengeNext.actualSecondProfile_eq_interior
+#print axioms RH16IndependentChallengeNext.actualSecondProfile_eq_interior
+#print RH16IndependentChallengeNext.actual_second_derivative_ae_eq_profile
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_ae_eq_profile
+#print RH16IndependentChallengeNext.unitFourth_square_integral
+#print axioms RH16IndependentChallengeNext.unitFourth_square_integral
+#print RH16IndependentChallengeNext.unitFourth_mul_second_integral
+#print axioms RH16IndependentChallengeNext.unitFourth_mul_second_integral
+#print RH16IndependentChallengeNext.unitSecondEnergyProfile_square_integrable
+#print axioms RH16IndependentChallengeNext.unitSecondEnergyProfile_square_integrable
+#print RH16IndependentChallengeNext.unitSecondEnergyProfile_square_integral
+#print axioms RH16IndependentChallengeNext.unitSecondEnergyProfile_square_integral
+#print RH16IndependentChallengeNext.actual_second_derivative_square_integrable
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_square_integrable
+#print RH16IndependentChallengeNext.actual_second_derivative_energy_eq
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_energy_eq
+#print RH16IndependentChallengeNext.actual_second_derivative_energy_le_global
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_energy_le_global
+#print RH16IndependentChallengeNext.actual_second_derivative_energy_le_sixty_seven
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_energy_le_sixty_seven
+#print RH16IndependentChallengeNext.actual_second_derivative_square_integral_le_sixty_seven
+#print axioms RH16IndependentChallengeNext.actual_second_derivative_square_integral_le_sixty_seven
+```

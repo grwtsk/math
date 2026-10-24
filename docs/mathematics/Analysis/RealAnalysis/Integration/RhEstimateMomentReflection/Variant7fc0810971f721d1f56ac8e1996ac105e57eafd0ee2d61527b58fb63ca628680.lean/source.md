@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.RhEstimateMomentReflection.Variant7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5ff39f8216eb96c7ce0d9fbcfa14a69b9f732065` · SHA-256 `7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.shiftedMoment_integral_zero
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.two_moment_reflection
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.sourceCorrelation_reflection
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.derivativeProfile_reflection
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.moment_reflection_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.MomentReflectionCheckpoint :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.moment_reflection_checkpoint
+```

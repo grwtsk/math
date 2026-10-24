@@ -1,0 +1,128 @@
+# Complete source: GRWTSK.Analysis.MeasureTheory.BorelCantelli.Variantcaa207437a072bfb41fcf42ac6f3b3a69d9952fc2f0e846a81b849f03ad1afaa
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dc98ab1ba7490e5190cb81a39d601285b1ab12f0` · SHA-256 `776f3a690801214d3745168a269241ba9851317057d635ac7c5856c493336bee`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.MeasureTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.MeasureTheory.MeasureLimsupCofiniteEqZero.Variant1dbb55ebc78506595d3cf36ca1ad539e54abec685c5d4d292471a2f1e1114ae8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1dbb55ebc78506595d3cf36ca1ad539e54abec685c5d4d292471a2f1e1114ae8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.MeasureTheory.SourceCorpus.MeasureLimsupCofiniteEqZero.Variant1dbb55ebc78506595d3cf36ca1ad539e54abec685c5d4d292471a2f1e1114ae8","mathematical_subject":"Analysis.MeasureTheory","original_sha256":"1dbb55ebc78506595d3cf36ca1ad539e54abec685c5d4d292471a2f1e1114ae8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/MeasureTheory/OuterMeasure/BorelCantelli.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel, Yury Kudryashov
+-/
+import Mathlib.MeasureTheory.OuterMeasure.AE
+
+/-!
+# Borel-Cantelli lemma, part 1
+
+In this file we show one implication of the **Borel-Cantelli lemma**:
+if `s i` is a countable family of sets such that `∑' i, μ (s i)` is finite,
+then a.e. all points belong to finitely many sets of the family.
+
+We prove several versions of this lemma:
+
+- `MeasureTheory.ae_finite_setOf_mem`: as stated above;
+- `MeasureTheory.measure_limsup_cofinite_eq_zero`:
+  in terms of `Filter.limsup` along `Filter.cofinite`;
+- `MeasureTheory.measure_limsup_atTop_eq_zero`:
+  in terms of `Filter.limsup` along `(Filter.atTop : Filter ℕ)`.
+
+For the *second* Borel-Cantelli lemma (applying to independent sets in a probability space),
+see `ProbabilityTheory.measure_limsup_eq_one`.
+-/
+
+
+namespace GRWTSK.Analysis.MeasureTheory.MeasureLimsupCofiniteEqZero.Variant1dbb55ebc78506595d3cf36ca1ad539e54abec685c5d4d292471a2f1e1114ae8
+
+open Filter Set
+open scoped ENNReal Topology
+
+namespace MeasureTheory
+
+variable {α ι F : Type*} [FunLike F (Set α) ℝ≥0∞] [OuterMeasureClass F α] [Countable ι] {μ : F}
+
+/-- One direction of the **Borel-Cantelli lemma**
+(sometimes called the "*first* Borel-Cantelli lemma"):
+if `(s i)` is a countable family of sets such that `∑' i, μ (s i)` is finite,
+then the limit superior of the `s i` along the cofinite filter is a null set.
+
+Note: for the *second* Borel-Cantelli lemma (applying to independent sets in a probability space),
+see `ProbabilityTheory.measure_limsup_eq_one`. -/
+theorem measure_limsup_cofinite_eq_zero {s : ι → Set α} (hs : ∑' i, μ (s i) ≠ ∞) :
+    μ (limsup s cofinite) = 0 := by
+  refine bot_unique <| ge_of_tendsto' (ENNReal.tendsto_tsum_compl_atTop_zero hs) fun t ↦ ?_
+  calc
+    μ (limsup s cofinite) ≤ μ (⋃ i : {i // i ∉ t}, s i) := by
+      gcongr
+      rw [hasBasis_cofinite.limsup_eq_iInf_iSup, iUnion_subtype]
+      exact iInter₂_subset _ t.finite_toSet
+    _ ≤ ∑' i : {i // i ∉ t}, μ (s i) := measure_iUnion_le _
+
+/-- One direction of the **Borel-Cantelli lemma**
+(sometimes called the "*first* Borel-Cantelli lemma"):
+if `(s i)` is a sequence of sets such that `∑' i, μ (s i)` is finite,
+then the limit superior of the `s i` along the `atTop` filter is a null set.
+
+Note: for the *second* Borel-Cantelli lemma (applying to independent sets in a probability space),
+see `ProbabilityTheory.measure_limsup_eq_one`. -/
+theorem measure_limsup_atTop_eq_zero {s : ℕ → Set α} (hs : ∑' i, μ (s i) ≠ ∞) :
+    μ (limsup s atTop) = 0 := by
+  rw [← Nat.cofinite_eq_atTop, measure_limsup_cofinite_eq_zero hs]
+
+/-- One direction of the **Borel-Cantelli lemma**
+(sometimes called the "*first* Borel-Cantelli lemma"):
+if `(s i)` is a countable family of sets such that `∑' i, μ (s i)` is finite,
+then a.e. all points belong to finitely sets of the family. -/
+theorem ae_finite_setOf_mem {s : ι → Set α} (h : ∑' i, μ (s i) ≠ ∞) :
+    ∀ᵐ x ∂μ, {i | x ∈ s i}.Finite := by
+  rw [ae_iff, ← measure_limsup_cofinite_eq_zero h]
+  congr 1 with x
+  simp [mem_limsup_iff_frequently_mem, Filter.Frequently]
+
+/-- A version of the **Borel-Cantelli lemma**: if `pᵢ` is a sequence of predicates such that
+`∑' i, μ {x | pᵢ x}` is finite, then the measure of `x` such that `pᵢ x` holds frequently as `i → ∞`
+(or equivalently, `pᵢ x` holds for infinitely many `i`) is equal to zero. -/
+theorem measure_setOf_frequently_eq_zero {p : ℕ → α → Prop} (hp : ∑' i, μ { x | p i x } ≠ ∞) :
+    μ { x | ∃ᶠ n in atTop, p n x } = 0 := by
+  simpa only [limsup_eq_iInf_iSup_of_nat, frequently_atTop, ← bex_def, setOf_forall,
+    setOf_exists] using measure_limsup_atTop_eq_zero hp
+
+/-- A version of the **Borel-Cantelli lemma**: if `sᵢ` is a sequence of sets such that
+`∑' i, μ sᵢ` is finite, then for almost all `x`, `x` does not belong to `sᵢ` for large `i`. -/
+theorem ae_eventually_notMem {s : ℕ → Set α} (hs : (∑' i, μ (s i)) ≠ ∞) :
+    ∀ᵐ x ∂μ, ∀ᶠ n in atTop, x ∉ s n :=
+  measure_setOf_frequently_eq_zero hs
+
+@[deprecated (since := "2025-05-23")] alias ae_eventually_not_mem := ae_eventually_notMem
+
+theorem measure_liminf_cofinite_eq_zero [Infinite ι] {s : ι → Set α} (h : ∑' i, μ (s i) ≠ ∞) :
+    μ (liminf s cofinite) = 0 := by
+  rw [← le_zero_iff, ← measure_limsup_cofinite_eq_zero h]
+  exact measure_mono liminf_le_limsup
+
+theorem measure_liminf_atTop_eq_zero {s : ℕ → Set α} (h : (∑' i, μ (s i)) ≠ ∞) :
+    μ (liminf s atTop) = 0 := by
+  rw [← Nat.cofinite_eq_atTop, measure_liminf_cofinite_eq_zero h]
+
+-- TODO: the next 2 lemmas are true for any filter with countable intersections, not only `ae`.
+-- Need to specify `α := Set α` below because of diamond; see https://github.com/leanprover-community/mathlib4/pull/19041
+theorem limsup_ae_eq_of_forall_ae_eq (s : ℕ → Set α) {t : Set α}
+    (h : ∀ n, s n =ᵐ[μ] t) : limsup (α := Set α) s atTop =ᵐ[μ] t := by
+  simp only [eventuallyEq_set, ← eventually_countable_forall] at h
+  refine eventuallyEq_set.2 <| h.mono fun x hx ↦ ?_
+  simp [mem_limsup_iff_frequently_mem, hx]
+
+-- Need to specify `α := Set α` above because of diamond; see https://github.com/leanprover-community/mathlib4/pull/19041
+theorem liminf_ae_eq_of_forall_ae_eq (s : ℕ → Set α) {t : Set α}
+    (h : ∀ n, s n =ᵐ[μ] t) : liminf (α := Set α) s atTop =ᵐ[μ] t := by
+  simp only [eventuallyEq_set, ← eventually_countable_forall] at h
+  refine eventuallyEq_set.2 <| h.mono fun x hx ↦ ?_
+  simp only [mem_liminf_iff_eventually_mem, hx, eventually_const]
+
+end MeasureTheory
+```

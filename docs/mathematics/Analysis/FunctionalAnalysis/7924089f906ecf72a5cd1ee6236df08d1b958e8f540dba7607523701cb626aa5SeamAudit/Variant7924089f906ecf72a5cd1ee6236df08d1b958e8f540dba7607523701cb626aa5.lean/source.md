@@ -1,0 +1,14 @@
+# Complete source: GRWTSK.Analysis.FunctionalAnalysis.7924089f906ecf72a5cd1ee6236df08d1b958e8f540dba7607523701cb626aa5SeamAudit.Variant7924089f906ecf72a5cd1ee6236df08d1b958e8f540dba7607523701cb626aa5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2d9debe5904e7614a4bb12e98a640c42abc33f45` · SHA-256 `7924089f906ecf72a5cd1ee6236df08d1b958e8f540dba7607523701cb626aa5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceSeamObstruction
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceSeamObstruction.sourceCorrelation_seam_neg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceSeamObstruction.sourceCorrelation_seam_neg
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceSeamObstruction.not_eventually_sourceCorrelation_nonnegative
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceSeamObstruction.not_eventually_sourceCorrelation_nonnegative
+```

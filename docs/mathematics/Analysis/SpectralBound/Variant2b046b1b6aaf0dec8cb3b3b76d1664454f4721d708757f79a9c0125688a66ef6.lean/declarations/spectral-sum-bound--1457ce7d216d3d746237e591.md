@@ -1,0 +1,120 @@
+# spectral_sum_bound
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "e6f0b69854b9801df56ebf5335d4e4c80c93a94b",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 73,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/2b/2b046b1b6aaf0dec8cb3b3b76d1664454f4721d708757f79a9c0125688a66ef6.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:49b8f0e3-0011-1396-3147-36012f9a6188",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:6c57a282-1e43-40c6-6404-3f498f12f1f5",
+  "kind": "theorem",
+  "lexical_name": "spectral_sum_bound",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "spectral-sum-bound--1457ce7d216d3d746237e591",
+  "source": {
+    "blob": "e6f0b69854b9801df56ebf5335d4e4c80c93a94b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 99,
+    "line": 73,
+    "path": "GRWTSK/Analysis/SpectralBound/Variant2b046b1b6aaf0dec8cb3b3b76d1664454f4721d708757f79a9c0125688a66ef6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1457ce7d216d3d746237e591ff683bb9c65143c2e399adbd4f1764ea44cb5838",
+  "verification": {
+    "reference": "docs/verification/Analysis/SpectralBound/Variant2b046b1b6aaf0dec8cb3b3b76d1664454f4721d708757f79a9c0125688a66ef6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:6c57a282-1e43-40c6-6404-3f498f12f1f5`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 73–99.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem spectral_sum_bound
+    (control : SameSpectrumControl trace)
+    (scale : Scale) :
+    ‖∑ spectral : Spectrum, trace.spectralTerm scale spectral‖ ≤
+      control.coefficientMass * control.envelope scale := by
+  calc
+    ‖∑ spectral : Spectrum, trace.spectralTerm scale spectral‖
+        ≤ ∑ spectral : Spectrum,
+            ‖trace.spectralTerm scale spectral‖ :=
+      norm_sum_le _ _
+    _ ≤ ∑ spectral : Spectrum,
+          control.coefficient spectral * control.envelope scale :=
+      Finset.sum_le_sum fun spectral _ =>
+        control.spectralTerm_bound scale spectral
+    _ =
+        (∑ spectral : Spectrum, control.coefficient spectral) *
+          control.envelope scale := by
+      rw [Finset.sum_mul]
+    _ ≤ control.coefficientMass * control.envelope scale :=
+      mul_le_mul_of_nonneg_right
+        control.coefficient_totalVariation
+        (control.envelope_nonnegative scale)
+
+/--
+After invariant-bias removal, purity or temperedness on the exact trace
+spectrum gives the certified square-root/logarithmic envelope.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Analysis/SpectralBound/Variant2b046b1b6aaf0dec8cb3b3b76d1664454f4721d708757f79a9c0125688a66ef6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/SpectralBound/Variant2b046b1b6aaf0dec8cb3b3b76d1664454f4721d708757f79a9c0125688a66ef6.lean#L73).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e6f0b69854b9801df56ebf5335d4e4c80c93a94b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

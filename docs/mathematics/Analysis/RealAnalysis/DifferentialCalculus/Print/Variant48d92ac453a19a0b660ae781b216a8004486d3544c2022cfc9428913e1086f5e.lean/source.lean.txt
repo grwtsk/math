@@ -1,0 +1,30 @@
+import FormalResearch.RiemannHypothesis.SourcePairedTailTest
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePairedTailTest
+
+#print negativeSurvival
+#print pairedTailTest
+#print negativeTimeMean
+#print negativeSurvival_hasDerivAt
+#print negativeSurvival_deriv
+#print negativeSurvival_contDiff
+#print negativeSurvival_continuous
+#print negativeSurvival_at_zero
+#print negativeSurvival_at_upper
+#print negativeSurvival_antitone
+#print negativeSurvival_nonneg
+#print negativeSurvival_le_one
+#print pairedTailTest_hasDerivAt
+#print pairedTailTest_deriv
+#print pairedTailTest_contDiff
+#print pairedTailTest_continuous
+#print pairedTailTest_at_zero
+#print pairedTailTest_at_upper
+#print negativeTimeMean_nonneg
+#print negativeTimeMean_le_upper
+#print negativeSurvival_integral_eq_timeMean
+#print pairedTailTest_integral_eq
+#print pairedTailTest_deriv_abs
+#print pairedTailTest_variation_eq

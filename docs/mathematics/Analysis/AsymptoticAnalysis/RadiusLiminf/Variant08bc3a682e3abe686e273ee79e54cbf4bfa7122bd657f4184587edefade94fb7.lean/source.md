@@ -1,0 +1,76 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.RadiusLiminf.Variant08bc3a682e3abe686e273ee79e54cbf4bfa7122bd657f4184587edefade94fb7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a83e925e29b8dd7ea2abe7d95dcc751621464445` · SHA-256 `80104c151c65dd0f6ae3ccf905ad96c53276e6da208200c34a02d9701b61c960`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.AsymptoticAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.AsymptoticAnalysis.RadiusEqLiminf.Variant88f71b3295c165b70997a612d6c8ff915dec65490de52925666d1b319024ef5b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"88f71b3295c165b70997a612d6c8ff915dec65490de52925666d1b319024ef5b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.AsymptoticsAndSeries.SourceCorpus.RadiusEqLiminf.Variant88f71b3295c165b70997a612d6c8ff915dec65490de52925666d1b319024ef5b","mathematical_subject":"Analysis.AsymptoticsAndSeries","original_sha256":"88f71b3295c165b70997a612d6c8ff915dec65490de52925666d1b319024ef5b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Analysis/Analytic/RadiusLiminf.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+import Mathlib.Analysis.Analytic.Basic
+import Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+
+/-!
+# Representation of `FormalMultilinearSeries.radius` as a `liminf`
+
+In this file we prove that the radius of convergence of a `FormalMultilinearSeries` is equal to
+$\liminf_{n\to\infty} \frac{1}{\sqrt[n]{‖p n‖}}$. This lemma can't go to `Analysis.Analytic.Basic`
+because this would create a circular dependency once we redefine `exp` using
+`FormalMultilinearSeries`.
+-/
+
+
+
+namespace GRWTSK.Analysis.AsymptoticAnalysis.RadiusEqLiminf.Variant88f71b3295c165b70997a612d6c8ff915dec65490de52925666d1b319024ef5b
+
+variable {𝕜 : Type*} [NontriviallyNormedField 𝕜] {E : Type*} [NormedAddCommGroup E]
+  [NormedSpace 𝕜 E] {F : Type*} [NormedAddCommGroup F] [NormedSpace 𝕜 F]
+
+open scoped Topology NNReal ENNReal
+
+open Filter Asymptotics
+
+namespace FormalMultilinearSeries
+
+variable (p : FormalMultilinearSeries 𝕜 E F)
+
+/-- The radius of a formal multilinear series is equal to
+$\liminf_{n\to\infty} \frac{1}{\sqrt[n]{‖p n‖}}$. The actual statement uses `ℝ≥0` and some
+coercions. -/
+theorem radius_eq_liminf :
+    p.radius = liminf (fun n => (1 / (‖p n‖₊ ^ (1 / (n : ℝ)) : ℝ≥0) : ℝ≥0∞)) atTop := by
+  have :
+    ∀ (r : ℝ≥0) {n},
+      0 < n → ((r : ℝ≥0∞) ≤ 1 / ↑(‖p n‖₊ ^ (1 / (n : ℝ))) ↔ ‖p n‖₊ * r ^ n ≤ 1) := by
+    intro r n hn
+    have : 0 < (n : ℝ) := Nat.cast_pos.2 hn
+    conv_lhs =>
+      rw [one_div, ENNReal.le_inv_iff_mul_le, ← ENNReal.coe_mul, ENNReal.coe_le_one_iff, one_div, ←
+        NNReal.rpow_one r, ← mul_inv_cancel₀ this.ne', NNReal.rpow_mul, ← NNReal.mul_rpow, ←
+        NNReal.one_rpow n⁻¹, NNReal.rpow_le_rpow_iff (inv_pos.2 this), mul_comm,
+        NNReal.rpow_natCast]
+  apply le_antisymm <;> refine ENNReal.le_of_forall_nnreal_lt fun r hr => ?_
+  · have := ((TFAE_exists_lt_isLittleO_pow (fun n => ‖p n‖ * r ^ n) 1).out 1 7).1
+      (p.isLittleO_of_lt_radius hr)
+    obtain ⟨a, ha, H⟩ := this
+    apply le_liminf_of_le
+    · infer_param
+    · rw [← eventually_map]
+      refine
+        H.mp ((eventually_gt_atTop 0).mono fun n hn₀ hn => (this _ hn₀).2 (NNReal.coe_le_coe.1 ?_))
+      push_cast
+      exact (le_abs_self _).trans (hn.trans (pow_le_one₀ ha.1.le ha.2.le))
+  · refine p.le_radius_of_isBigO <| .of_norm_eventuallyLE ?_
+    filter_upwards [eventually_lt_of_lt_liminf hr, eventually_gt_atTop 0] with n hn hn₀
+    simpa using NNReal.coe_le_coe.2 ((this _ hn₀).1 hn.le)
+
+end FormalMultilinearSeries
+```

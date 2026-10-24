@@ -1,0 +1,114 @@
+# mellin_convergent_zero_of_isBigO
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:fa9ef7c1-f029-d995-ac93-343ad2c302a9",
+  "kind": "theorem",
+  "lexical_name": "mellin_convergent_zero_of_isBigO",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mellin-convergent-zero-of-isbigo--629075ecad72a8674bbc5283",
+  "source": {
+    "blob": "25b9ec15830990f700c9e5dd190ee90ccf39262c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 278,
+    "line": 246,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/MellinTransform/Variantb4f47c0ac37036f74bac650a5cbf1a6b179b231f6027c5578430e761d6b2173c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:629075ecad72a8674bbc528353707f982394e8a22e4493ace4a79a293e40bba0",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/MellinTransform/Variantb4f47c0ac37036f74bac650a5cbf1a6b179b231f6027c5578430e761d6b2173c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:fa9ef7c1-f029-d995-ac93-343ad2c302a9`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 246–278.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem mellin_convergent_zero_of_isBigO {b : ℝ} {f : ℝ → ℝ}
+    (hfc : AEStronglyMeasurable f <| volume.restrict (Ioi 0))
+    (hf :  f =O[𝓝[>] 0] (· ^ (-b))) {s : ℝ} (hs : b < s) :
+    ∃ c : ℝ, 0 < c ∧ IntegrableOn (fun t : ℝ => t ^ (s - 1) * f t) (Ioc 0 c) := by
+  obtain ⟨d, hd, hd'⟩ := hf.exists_pos
+  simp_rw [IsBigOWith, eventually_nhdsWithin_iff, Metric.eventually_nhds_iff, gt_iff_lt] at hd'
+  obtain ⟨ε, hε, hε'⟩ := hd'
+  refine' ⟨ε, hε, integrableOn_Ioc_iff_integrableOn_Ioo.mpr ⟨_, _⟩⟩
+  · refine' AEStronglyMeasurable.mul _ (hfc.mono_set Ioo_subset_Ioi_self)
+    refine' (ContinuousAt.continuousOn fun t ht => _).aestronglyMeasurable measurableSet_Ioo
+    exact continuousAt_rpow_const _ _ (Or.inl ht.1.ne')
+  · apply HasFiniteIntegral.mono'
+    · show HasFiniteIntegral (fun t => d * t ^ (s - b - 1)) _
+      refine' (Integrable.hasFiniteIntegral _).const_mul _
+      rw [← IntegrableOn, ← integrableOn_Ioc_iff_integrableOn_Ioo, ←
+        intervalIntegrable_iff_integrable_Ioc_of_le hε.le]
+      exact intervalIntegral.intervalIntegrable_rpow' (by linarith)
+    · refine' (ae_restrict_iff' measurableSet_Ioo).mpr (eventually_of_forall fun t ht => _)
+      rw [mul_comm, norm_mul]
+      specialize hε' _ ht.1
+      · rw [dist_eq_norm, sub_zero, norm_of_nonneg (le_of_lt ht.1)]
+        exact ht.2
+      · refine' (mul_le_mul_of_nonneg_right hε' (norm_nonneg _)).trans _
+        simp_rw [norm_of_nonneg (rpow_nonneg_of_nonneg (le_of_lt ht.1) _), mul_assoc]
+        refine' mul_le_mul_of_nonneg_left (le_of_eq _) hd.le
+        rw [← rpow_add ht.1]
+        congr 1
+        abel
+set_option linter.uppercaseLean3 false in
+#align mellin_convergent_zero_of_is_O mellin_convergent_zero_of_isBigO
+
+/-- If `f` is a locally integrable real-valued function on `Ioi 0` which is `O(x ^ (-a))` at `∞`
+and `O(x ^ (-b))` at `0`, then its Mellin transform integral converges for `b < s < a`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/MellinTransform/Variantb4f47c0ac37036f74bac650a5cbf1a6b179b231f6027c5578430e761d6b2173c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/MellinTransform/Variantb4f47c0ac37036f74bac650a5cbf1a6b179b231f6027c5578430e761d6b2173c.lean#L246).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `25b9ec15830990f700c9e5dd190ee90ccf39262c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

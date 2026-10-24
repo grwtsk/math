@@ -1,0 +1,91 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.TypesAxioms.Variant15a88ca51fd79c833827eecd3b8258195ab0c5b8d84850132d90c1711b813684
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9e2a955da9f341cc3fb7a34421cf4a776411d9fc` · SHA-256 `15a88ca51fd79c833827eecd3b8258195ab0c5b8d84850132d90c1711b813684`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import scratch.common_mean_20261004.FiveModeFiniteActual
+set_option pp.universes true
+set_option pp.fullNames true
+#print CommonMeanScratch.zeroHeadSet
+#print axioms CommonMeanScratch.zeroHeadSet
+#print CommonMeanScratch.zeroStrictTailSet
+#print axioms CommonMeanScratch.zeroStrictTailSet
+#print CommonMeanScratch.actualZeroHead
+#print axioms CommonMeanScratch.actualZeroHead
+#print CommonMeanScratch.actualZeroStrictTail
+#print axioms CommonMeanScratch.actualZeroStrictTail
+#print CommonMeanScratch.zero_head_compl_eq_strict_tail
+#print axioms CommonMeanScratch.zero_head_compl_eq_strict_tail
+#print CommonMeanScratch.actual_zero_head_tail_decomposition
+#print axioms CommonMeanScratch.actual_zero_head_tail_decomposition
+#print CommonMeanScratch.actual_matrix_head_tail_decomposition
+#print axioms CommonMeanScratch.actual_matrix_head_tail_decomposition
+#print CommonMeanScratch.CompletePositiveVerifiedHeight
+#print axioms CommonMeanScratch.CompletePositiveVerifiedHeight
+#print CommonMeanScratch.CompleteVerifiedHeight
+#print axioms CommonMeanScratch.CompleteVerifiedHeight
+#print CommonMeanScratch.complete_verified_height_of_positive
+#print axioms CommonMeanScratch.complete_verified_height_of_positive
+#print CommonMeanScratch.complete_positive_verified_height_mono
+#print axioms CommonMeanScratch.complete_positive_verified_height_mono
+#print CommonMeanScratch.published_height_covers_working_cutoff
+#print axioms CommonMeanScratch.published_height_covers_working_cutoff
+#print CommonMeanScratch.working_complete_verified_height
+#print axioms CommonMeanScratch.working_complete_verified_height
+#print CommonMeanScratch.normalized_bilateral_im_zero_on_imaginary_axis
+#print axioms CommonMeanScratch.normalized_bilateral_im_zero_on_imaginary_axis
+#print CommonMeanScratch.normalized_bilateral_im_zero_of_critical
+#print axioms CommonMeanScratch.normalized_bilateral_im_zero_of_critical
+#print CommonMeanScratch.actual_zero_head_nonnegative
+#print axioms CommonMeanScratch.actual_zero_head_nonnegative
+#print CommonMeanScratch.normalized_bilateral_conjugate
+#print axioms CommonMeanScratch.normalized_bilateral_conjugate
+#print CommonMeanScratch.actualZeroSquareNorm
+#print axioms CommonMeanScratch.actualZeroSquareNorm
+#print CommonMeanScratch.actual_zero_square_norm_conjugate
+#print axioms CommonMeanScratch.actual_zero_square_norm_conjugate
+#print CommonMeanScratch.actual_zero_square_norms_summable
+#print axioms CommonMeanScratch.actual_zero_square_norms_summable
+#print CommonMeanScratch.zeroPositiveStrictTailSet
+#print axioms CommonMeanScratch.zeroPositiveStrictTailSet
+#print CommonMeanScratch.zeroNegativeStrictTailSet
+#print axioms CommonMeanScratch.zeroNegativeStrictTailSet
+#print CommonMeanScratch.actualAbsoluteZeroTail
+#print axioms CommonMeanScratch.actualAbsoluteZeroTail
+#print CommonMeanScratch.actualPositiveAbsoluteZeroTail
+#print axioms CommonMeanScratch.actualPositiveAbsoluteZeroTail
+#print CommonMeanScratch.actualNegativeAbsoluteZeroTail
+#print axioms CommonMeanScratch.actualNegativeAbsoluteZeroTail
+#print CommonMeanScratch.actual_negative_absolute_tail_eq_positive
+#print axioms CommonMeanScratch.actual_negative_absolute_tail_eq_positive
+#print CommonMeanScratch.actual_absolute_tail_eq_two_positive
+#print axioms CommonMeanScratch.actual_absolute_tail_eq_two_positive
+#print CommonMeanScratch.actual_strict_tail_norm_le_absolute
+#print axioms CommonMeanScratch.actual_strict_tail_norm_le_absolute
+#print CommonMeanScratch.actual_residual_eq_prime_power
+#print axioms CommonMeanScratch.actual_residual_eq_prime_power
+#print CommonMeanScratch.actual_residual_matrix_formula
+#print axioms CommonMeanScratch.actual_residual_matrix_formula
+#print CommonMeanScratch.actual_finite_bounds_of_premises
+#print axioms CommonMeanScratch.actual_finite_bounds_of_premises
+#print CommonMeanScratch.endpointEnvelope
+#print axioms CommonMeanScratch.endpointEnvelope
+#print CommonMeanScratch.endpointEnvelopeFirst
+#print axioms CommonMeanScratch.endpointEnvelopeFirst
+#print CommonMeanScratch.endpointEnvelopeSecond
+#print axioms CommonMeanScratch.endpointEnvelopeSecond
+#print CommonMeanScratch.endpointEnvelope_hasDerivAt
+#print axioms CommonMeanScratch.endpointEnvelope_hasDerivAt
+#print CommonMeanScratch.endpointEnvelopeFirst_hasDerivAt
+#print axioms CommonMeanScratch.endpointEnvelopeFirst_hasDerivAt
+#print CommonMeanScratch.endpointEnvelope_convex
+#print axioms CommonMeanScratch.endpointEnvelope_convex
+#print CommonMeanScratch.endpointEnvelope_le_endpoint_max
+#print axioms CommonMeanScratch.endpointEnvelope_le_endpoint_max
+#print CommonMeanScratch.endpointEnvelope_le_rational_max
+#print axioms CommonMeanScratch.endpointEnvelope_le_rational_max
+#print CommonMeanScratch.actual_finite_bounds_of_complete_height_and_strict_tail
+#print axioms CommonMeanScratch.actual_finite_bounds_of_complete_height_and_strict_tail
+```

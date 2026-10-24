@@ -1,0 +1,229 @@
+# abs_re_Lm_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "0bf0396dd18bbd64fbbbbda7263d8add161afe60",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 228,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/ac/ac389b4c7f04fc83b6dd3418782c4d355ac62b0114f328ecca601c480adf882b.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:ab59e417-da2f-4ac7-7480-f77fa6a3d43d",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:93096947-2402-1f27-b0bc-b8f31d00af2e",
+  "kind": "theorem",
+  "lexical_name": "abs_re_Lm_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "abs-re-lm-le--6e6c7f0a2d80cacae8a6aedb",
+  "source": {
+    "blob": "0bf0396dd18bbd64fbbbbda7263d8add161afe60",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 363,
+    "line": 228,
+    "path": "GRWTSK/Analysis/SpecialFunctions/ZeroFree/Variantac389b4c7f04fc83b6dd3418782c4d355ac62b0114f328ecca601c480adf882b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:6e6c7f0a2d80cacae8a6aedbd74818e531be806dd5a149b16a1260409c1a5c45",
+  "verification": {
+    "reference": "docs/verification/Analysis/SpecialFunctions/ZeroFree/Variantac389b4c7f04fc83b6dd3418782c4d355ac62b0114f328ecca601c480adf882b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:93096947-2402-1f27-b0bc-b8f31d00af2e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 228–363.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem abs_re_Lm_le : ∃ C : ℝ, 0 ≤ C ∧ ∀ s : ℂ, 1 ≤ s.re → s.re ≤ 2 → 4 ≤ |s.im| →
+    |(Lm s).re| ≤ C / s.im ^ 2 := by
+  refine ⟨11, by norm_num, fun s h1 h2 hi => ?_⟩
+  have hs : s.im ≠ 0 := fun h => by rw [h, abs_zero] at hi; linarith
+  have hs' : (1 - s).im ≠ 0 := Hardy.im_one_sub_ne_zero hs
+  set t : ℝ := s.im with ht
+  have ht2 : 16 ≤ t ^ 2 := by nlinarith [sq_abs t]
+  have ht0 : 0 < t ^ 2 := by linarith
+  -- generic: |Re(1/w)| ≤ |Re w| / (Im w)²
+  have hinv : ∀ w : ℂ, w.im ^ 2 = t ^ 2 → |(1 / w).re| ≤ |w.re| / t ^ 2 := by
+    intro w hw
+    rw [one_div, Complex.inv_re, abs_div, abs_of_nonneg (Complex.normSq_nonneg _)]
+    have hN : t ^ 2 ≤ Complex.normSq w := by rw [Complex.normSq_apply, ← hw]; nlinarith
+    exact div_le_div_of_nonneg_left (abs_nonneg _) ht0 hN
+  -- one functional-equation step for ψ((1−s)/2)
+  have hFE : Complex.digamma ((1 - s) / 2) = Complex.digamma ((3 - s) / 2) - 2 / (1 - s) := by
+    have h := Complex.digamma_apply_add_one ((1 - s) / 2) (Hardy.half_ne_neg_nat hs')
+    rw [show (1 - s) / 2 + 1 = ((3 : ℂ) - s) / 2 by ring] at h
+    rw [h]
+    have : (1 : ℂ) - s ≠ 0 := sub_ne_zero.mpr (Hardy.ne_one_of_im_ne_zero hs).symm
+    field_simp
+    ring
+  -- Stirling remainders at z₁ = s/2 and z₂ = (3−s)/2
+  set z₁ : ℂ := s / 2 with hz₁
+  set z₂ : ℂ := (3 - s) / 2 with hz₂
+  have hz₁re : z₁.re = s.re / 2 := by simp [hz₁]
+  have hz₁im : z₁.im = t / 2 := by simp [hz₁, ht]
+  have hz₂re : z₂.re = (3 - s.re) / 2 := by simp [hz₂]
+  have hz₂im : z₂.im = -t / 2 := by simp [hz₂, ht]
+  set E₁ : ℂ := Complex.digamma z₁ - Complex.log z₁ + (1 / 2 : ℂ) / z₁ with hE₁
+  set E₂ : ℂ := Complex.digamma z₂ - Complex.log z₂ + (1 / 2 : ℂ) / z₂ with hE₂
+  have hE₁b : ‖E₁‖ ≤ 12 / t ^ 2 := by
+    have h := Zeta23.StirlingVert.digamma_stirling (w := z₁) (by rw [hz₁re]; linarith)
+      (by rw [hz₁im, abs_div, abs_two]; linarith)
+    rw [hz₁im] at h
+    calc ‖E₁‖ ≤ 3 / (t / 2) ^ 2 := h
+      _ = 12 / t ^ 2 := by field_simp; ring
+  have hE₂b : ‖E₂‖ ≤ 12 / t ^ 2 := by
+    have h := Zeta23.StirlingVert.digamma_stirling (w := z₂) (by rw [hz₂re]; linarith)
+      (by rw [hz₂im, abs_div, abs_neg, abs_two]; linarith)
+    rw [hz₂im] at h
+    calc ‖E₂‖ ≤ 3 / (-t / 2) ^ 2 := h
+      _ = 12 / t ^ 2 := by field_simp; ring
+  -- the real part of log z₁ − log z₂
+  have hn₁ : Complex.normSq z₁ = (s.re ^ 2 + t ^ 2) / 4 := by
+    rw [Complex.normSq_apply, hz₁re, hz₁im]; ring
+  have hn₂ : Complex.normSq z₂ = ((3 - s.re) ^ 2 + t ^ 2) / 4 := by
+    rw [Complex.normSq_apply, hz₂re, hz₂im]; ring
+  have hn₁pos : t ^ 2 / 4 ≤ Complex.normSq z₁ := by rw [hn₁]; nlinarith
+  have hn₂pos : t ^ 2 / 4 ≤ Complex.normSq z₂ := by rw [hn₂]; nlinarith
+  have hlogre : |(Complex.log z₁).re - (Complex.log z₂).re| ≤ 3 / (2 * t ^ 2) := by
+    have hl : ∀ z : ℂ, Real.log ‖z‖ = Real.log (Complex.normSq z) / 2 := fun z => by
+      rw [Complex.normSq_eq_norm_sq, Real.log_pow]; ring
+    rw [Complex.log_re, Complex.log_re, hl, hl]
+    set a := Complex.normSq z₁
+    set b := Complex.normSq z₂
+    have ha : 0 < a := by linarith
+    have hb : 0 < b := by linarith
+    have hab : |a - b| ≤ 3 / 4 := by
+      rw [hn₁, hn₂, abs_le]; constructor <;> nlinarith
+    have h1 : Real.log a - Real.log b ≤ |a - b| / (t ^ 2 / 4) := by
+      rw [← Real.log_div ha.ne' hb.ne']
+      calc Real.log (a / b) ≤ a / b - 1 := Real.log_le_sub_one_of_pos (by positivity)
+        _ = (a - b) / b := by field_simp
+        _ ≤ |a - b| / b := div_le_div_of_nonneg_right (le_abs_self _) hb.le
+        _ ≤ |a - b| / (t ^ 2 / 4) := div_le_div_of_nonneg_left (abs_nonneg _) (by positivity) hn₂pos
+    have h2 : Real.log b - Real.log a ≤ |a - b| / (t ^ 2 / 4) := by
+      rw [← Real.log_div hb.ne' ha.ne']
+      calc Real.log (b / a) ≤ b / a - 1 := Real.log_le_sub_one_of_pos (by positivity)
+        _ = (b - a) / a := by field_simp
+        _ ≤ |a - b| / a := div_le_div_of_nonneg_right (by rw [abs_sub_comm]; exact le_abs_self _) ha.le
+        _ ≤ |a - b| / (t ^ 2 / 4) := div_le_div_of_nonneg_left (abs_nonneg _) (by positivity) hn₁pos
+    have h3 : |a - b| / (t ^ 2 / 4) ≤ 3 / t ^ 2 := by
+      rw [div_le_div_iff₀ (by positivity) ht0]; nlinarith
+    have h4 : (3 : ℝ) / (2 * t ^ 2) = (3 / t ^ 2) / 2 := by ring
+    rw [abs_le, h4]
+    constructor <;> linarith
+  -- the four rational terms
+  have r1 : |(1 / s).re| ≤ 2 / t ^ 2 := by
+    refine (hinv s (by rw [ht])).trans ?_
+    rw [abs_of_pos (by linarith)]
+    exact div_le_div_of_nonneg_right h2 ht0.le
+  have r2 : |(1 / (s - 1)).re| ≤ 1 / t ^ 2 := by
+    refine (hinv (s - 1) (by simp [ht])).trans ?_
+    apply div_le_div_of_nonneg_right _ ht0.le
+    rw [Complex.sub_re, Complex.one_re, abs_of_nonneg (by linarith)]; linarith
+  have r3 : |((1 / 2 : ℂ) / z₁).re| ≤ 2 / t ^ 2 := by
+    rw [show (1 / 2 : ℂ) / z₁ = 1 / s by rw [hz₁]; field_simp]
+    exact r1
+  have r4 : |((1 / 2 : ℂ) / z₂).re| ≤ 2 / t ^ 2 := by
+    rw [show (1 / 2 : ℂ) / z₂ = 1 / (3 - s) by rw [hz₂]; field_simp]
+    refine (hinv (3 - s) (by simp [ht])).trans ?_
+    apply div_le_div_of_nonneg_right _ ht0.le
+    rw [Complex.sub_re, show (3 : ℂ).re = 3 by norm_num, abs_of_nonneg (by linarith)]; linarith
+  have r5 : |(2 / (1 - s)).re| ≤ 2 / t ^ 2 := by
+    rw [show (2 : ℂ) / (1 - s) = 2 * (1 / (1 - s)) by ring,
+      show ((2 : ℂ) * (1 / (1 - s))).re = 2 * (1 / (1 - s)).re by simp [Complex.mul_re], abs_mul,
+      abs_two]
+    have := hinv (1 - s) (by simp [ht])
+    rw [Complex.sub_re, Complex.one_re] at this
+    have h' : |1 - s.re| ≤ 1 := by rw [abs_le]; constructor <;> linarith
+    calc 2 * |(1 / (1 - s)).re| ≤ 2 * (|1 - s.re| / t ^ 2) := by linarith
+      _ ≤ 2 * (1 / t ^ 2) := by gcongr
+      _ = 2 / t ^ 2 := by ring
+  have rE₁ : |E₁.re| ≤ 12 / t ^ 2 := (Complex.abs_re_le_norm _).trans hE₁b
+  have rE₂ : |E₂.re| ≤ 12 / t ^ 2 := (Complex.abs_re_le_norm _).trans hE₂b
+  -- the formula for Re L₋
+  have e : (Lm s).re = (1 / s).re + (1 / (s - 1)).re
+      + 1 / 4 * (((Complex.log z₁).re - (Complex.log z₂).re)
+        - ((1 / 2 : ℂ) / z₁).re + ((1 / 2 : ℂ) / z₂).re + E₁.re - E₂.re + (2 / (1 - s)).re) := by
+    have hψ : Complex.digamma (s / 2) - Complex.digamma ((1 - s) / 2)
+        = (Complex.log z₁ - Complex.log z₂) - ((1 / 2 : ℂ) / z₁ - (1 / 2 : ℂ) / z₂) + (E₁ - E₂)
+          + 2 / (1 - s) := by
+      rw [hFE, hE₁, hE₂, hz₁, hz₂]; ring
+    rw [Lm_eq hs, hψ, show (1 / 4 : ℂ) = ((1 / 4 : ℝ) : ℂ) by norm_num]
+    simp only [Complex.add_re, Complex.sub_re, Complex.re_ofReal_mul]
+    ring
+  rw [e]
+  have habs := abs_le.mp hlogre
+  have := abs_le.mp r1; have := abs_le.mp r2; have := abs_le.mp r3; have := abs_le.mp r4
+  have := abs_le.mp r5; have := abs_le.mp rE₁; have := abs_le.mp rE₂
+  rw [abs_le]
+  constructor
+  · have : -(11 / t ^ 2) = -(2 / t ^ 2) - 1 / t ^ 2
+        - 1 / 4 * (3 / (2 * t ^ 2) + 2 / t ^ 2 + 2 / t ^ 2 + 12 / t ^ 2 + 12 / t ^ 2 + 2 / t ^ 2)
+        - 1 / (8 * t ^ 2) := by ring
+    have h5 : 0 ≤ 1 / (8 * t ^ 2) := by positivity
+    linarith
+  · have : (11 / t ^ 2) = (2 / t ^ 2) + 1 / t ^ 2
+        + 1 / 4 * (3 / (2 * t ^ 2) + 2 / t ^ 2 + 2 / t ^ 2 + 12 / t ^ 2 + 12 / t ^ 2 + 2 / t ^ 2)
+        + 1 / (8 * t ^ 2) := by ring
+    have h5 : 0 ≤ 1 / (8 * t ^ 2) := by positivity
+    linarith
+
+/-! ## §3. The zero sum: Re ξ′/ξ(σ+it) ≥ N_T/(8t²) -/
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/SpecialFunctions/ZeroFree/Variantac389b4c7f04fc83b6dd3418782c4d355ac62b0114f328ecca601c480adf882b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/SpecialFunctions/ZeroFree/Variantac389b4c7f04fc83b6dd3418782c4d355ac62b0114f328ecca601c480adf882b.lean#L228).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0bf0396dd18bbd64fbbbbda7263d8add161afe60` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

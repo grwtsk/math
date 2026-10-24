@@ -1,0 +1,31 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceSharpDiagonalTailAudit.Variant66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b86751ee93e426a2d99572c6bff3c7243408eb90` · SHA-256 `66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceSharpDiagonalTail
+set_option autoImplicit false
+set_option linter.hashCommand false
+#check RH16SharpDiagonalTail.actual_zero_taylor_tail
+#print axioms RH16SharpDiagonalTail.actual_zero_taylor_tail
+#check RH16SharpDiagonalTail.diagonal_deriv_abs_le_tail
+#print axioms RH16SharpDiagonalTail.diagonal_deriv_abs_le_tail
+#check RH16SharpDiagonalTail.diagonal_variation_le_tail
+#print axioms RH16SharpDiagonalTail.diagonal_variation_le_tail
+#check RH16SharpDiagonalTail.diagonal_short_integral_error_tail
+#print axioms RH16SharpDiagonalTail.diagonal_short_integral_error_tail
+#check RH16SharpDiagonalTail.log_cube_div_square_le
+#print axioms RH16SharpDiagonalTail.log_cube_div_square_le
+#check RH16SharpDiagonalTail.floor_square_short_error_tail
+#print axioms RH16SharpDiagonalTail.floor_square_short_error_tail
+#check RH16SharpDiagonalTail.retainedPrimeDiagonal_tail_error_of_primeLogError
+#print axioms RH16SharpDiagonalTail.retainedPrimeDiagonal_tail_error_of_primeLogError
+#check RH16SharpDiagonalTail.retainedPrimeDiagonal_sharp_tail_error
+#print axioms RH16SharpDiagonalTail.retainedPrimeDiagonal_sharp_tail_error
+#check RH16SharpDiagonalTail.typeTwoDiagonal_tail_error_of_proper_bound
+#print axioms RH16SharpDiagonalTail.typeTwoDiagonal_tail_error_of_proper_bound
+#check RH16SharpDiagonalTail.actual_typeTwoDiagonal_sharp_tail_error
+#print axioms RH16SharpDiagonalTail.actual_typeTwoDiagonal_sharp_tail_error
+```

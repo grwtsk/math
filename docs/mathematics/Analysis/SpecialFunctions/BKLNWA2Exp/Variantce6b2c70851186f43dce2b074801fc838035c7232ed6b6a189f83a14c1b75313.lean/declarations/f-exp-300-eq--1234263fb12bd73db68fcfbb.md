@@ -1,0 +1,174 @@
+# f_exp_300_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "2f01a7978e08eb8f6b13f0839f56ac074321a14c",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 478,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/ce/ce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:844af608-df8a-c718-e23e-d005c9cbc66d",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:13b0e791-e315-4744-5b29-e958e54c70c6",
+  "kind": "lemma",
+  "lexical_name": "f_exp_300_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "f-exp-300-eq--1234263fb12bd73db68fcfbb",
+  "source": {
+    "blob": "2f01a7978e08eb8f6b13f0839f56ac074321a14c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 558,
+    "line": 478,
+    "path": "GRWTSK/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1234263fb12bd73db68fcfbb09743c6541e9f1ebbf2fdb0104f42e5596c5b49a",
+  "verification": {
+    "reference": "docs/verification/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:13b0e791-e315-4744-5b29-e958e54c70c6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 478–558.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private lemma f_exp_300_eq : f (exp (300:ℝ)) =
+    1 + exp (-25) + exp (-40) + exp (-50) + exp (-400/7) + exp (-125/2) +
+    exp (-200/3) + exp (-70) + exp (-800/11) + exp (-75) + exp (-1000/13) + exp (-550/7) +
+    exp (-80) + exp (-325/4) + exp (-1400/17) + exp (-250/3) + exp (-1600/19) + exp (-85) +
+    exp (-600/7) + exp (-950/11) + exp (-2000/23) + exp (-175/2) + exp (-88) + exp (-1150/13) +
+    exp (-800/9) + exp (-625/7) + exp (-2600/29) + exp (-90) + exp (-2800/31) + exp (-725/8) +
+    exp (-1000/11) + exp (-1550/17) + exp (-640/7) + exp (-275/3) + exp (-3400/37) + exp (-1750/19) +
+    exp (-1200/13) + exp (-185/2) + exp (-3800/41) + exp (-650/7) + exp (-4000/43) + exp (-1025/11) +
+    exp (-280/3) + exp (-2150/23) + exp (-4400/47) + exp (-375/4) + exp (-4600/49) + exp (-94) +
+    exp (-1600/17) + exp (-1225/13) + exp (-5000/53) + exp (-850/9) + exp (-1040/11) + exp (-1325/14) +
+    exp (-1800/19) + exp (-2750/29) + exp (-5600/59) + exp (-95) + exp (-5800/61) + exp (-2950/31) +
+    exp (-2000/21) + exp (-1525/16) + exp (-1240/13) + exp (-1050/11) + exp (-6400/67) + exp (-1625/17) +
+    exp (-2200/23) + exp (-670/7) + exp (-6800/71) + exp (-575/6) + exp (-7000/73) + exp (-3550/37) +
+    exp (-96) + exp (-1825/19) + exp (-7400/77) + exp (-1250/13) + exp (-7600/79) + exp (-385/4) +
+    exp (-2600/27) + exp (-3950/41) + exp (-8000/83) + exp (-675/7) + exp (-1640/17) + exp (-4150/43) +
+    exp (-2800/29) + exp (-2125/22) + exp (-8600/89) + exp (-290/3) + exp (-8800/91) + exp (-2225/23) +
+    exp (-3000/31) + exp (-4550/47) + exp (-1840/19) + exp (-775/8) + exp (-9400/97) + exp (-4750/49) +
+    exp (-3200/33) + exp (-97) + exp (-9800/101) + exp (-1650/17) + exp (-10000/103) + exp (-2525/26) +
+    exp (-680/7) + exp (-5150/53) + exp (-10400/107) + exp (-875/9) + exp (-10600/109) + exp (-1070/11) +
+    exp (-3600/37) + exp (-2725/28) + exp (-11000/113) + exp (-1850/19) + exp (-2240/23) + exp (-2825/29) +
+    exp (-3800/39) + exp (-5750/59) + exp (-11600/119) + exp (-195/2) + exp (-11800/121) + exp (-5950/61) +
+    exp (-4000/41) + exp (-3025/31) + exp (-488/5) + exp (-2050/21) + exp (-12400/127) + exp (-3125/32) +
+    exp (-4200/43) + exp (-1270/13) + exp (-12800/131) + exp (-1075/11) + exp (-13000/133) + exp (-6550/67) +
+    exp (-880/9) + exp (-3325/34) + exp (-13400/137) + exp (-2250/23) + exp (-13600/139) + exp (-685/7) +
+    exp (-4600/47) + exp (-6950/71) + exp (-14000/143) + exp (-1175/12) + exp (-2840/29) + exp (-7150/73) +
+    exp (-4800/49) + exp (-3625/37) + exp (-14600/149) + exp (-98) + exp (-14800/151) + exp (-3725/38) +
+    exp (-5000/51) + exp (-7550/77) + exp (-3040/31) + exp (-1275/13) + exp (-15400/157) + exp (-7750/79) +
+    exp (-5200/53) + exp (-785/8) + exp (-15800/161) + exp (-2650/27) + exp (-16000/163) + exp (-4025/41) +
+    exp (-1080/11) + exp (-8150/83) + exp (-16400/167) + exp (-1375/14) + exp (-16600/169) + exp (-1670/17) +
+    exp (-5600/57) + exp (-4225/43) + exp (-17000/173) + exp (-2850/29) + exp (-688/7) + exp (-4325/44) +
+    exp (-5800/59) + exp (-8750/89) + exp (-17600/179) + exp (-295/3) + exp (-17800/181) + exp (-8950/91) +
+    exp (-6000/61) + exp (-4525/46) + exp (-3640/37) + exp (-3050/31) + exp (-18400/187) + exp (-4625/47) +
+    exp (-6200/63) + exp (-1870/19) + exp (-18800/191) + exp (-1575/16) + exp (-19000/193) + exp (-9550/97) +
+    exp (-1280/13) + exp (-4825/49) + exp (-19400/197) + exp (-3250/33) + exp (-19600/199) + exp (-197/2) +
+    exp (-6600/67) + exp (-9950/101) + exp (-20000/203) + exp (-1675/17) + exp (-4040/41) + exp (-10150/103) +
+    exp (-6800/69) + exp (-5125/52) + exp (-20600/209) + exp (-690/7) + exp (-20800/211) + exp (-5225/53) +
+    exp (-7000/71) + exp (-10550/107) + exp (-4240/43) + exp (-1775/18) + exp (-21400/217) + exp (-10750/109) +
+    exp (-7200/73) + exp (-1085/11) + exp (-21800/221) + exp (-3650/37) + exp (-22000/223) + exp (-5525/56) +
+    exp (-296/3) + exp (-11150/113) + exp (-22400/227) + exp (-1875/19) + exp (-22600/229) + exp (-2270/23) +
+    exp (-7600/77) + exp (-5725/58) + exp (-23000/233) + exp (-3850/39) + exp (-4640/47) + exp (-5825/59) +
+    exp (-7800/79) + exp (-11750/119) + exp (-23600/239) + exp (-395/4) + exp (-23800/241) + exp (-11950/121) +
+    exp (-8000/81) + exp (-6025/61) + exp (-4840/49) + exp (-4050/41) + exp (-24400/247) + exp (-6125/62) +
+    exp (-8200/83) + exp (-494/5) + exp (-24800/251) + exp (-2075/21) + exp (-25000/253) + exp (-12550/127) +
+    exp (-1680/17) + exp (-6325/64) + exp (-25400/257) + exp (-4250/43) + exp (-25600/259) + exp (-1285/13) +
+    exp (-8600/87) + exp (-12950/131) + exp (-26000/263) + exp (-2175/22) + exp (-5240/53) + exp (-13150/133) +
+    exp (-8800/89) + exp (-6625/67) + exp (-26600/269) + exp (-890/9) + exp (-26800/271) + exp (-6725/68) +
+    exp (-9000/91) + exp (-13550/137) + exp (-1088/11) + exp (-2275/23) + exp (-27400/277) + exp (-13750/139) +
+    exp (-9200/93) + exp (-1385/14) + exp (-27800/281) + exp (-4650/47) + exp (-28000/283) + exp (-7025/71) +
+    exp (-1880/19) + exp (-14150/143) + exp (-28400/287) + exp (-2375/24) + exp (-28600/289) + exp (-2870/29) +
+    exp (-9600/97) + exp (-7225/73) + exp (-29000/293) + exp (-4850/49) + exp (-5840/59) + exp (-7325/74) +
+    exp (-9800/99) + exp (-14750/149) + exp (-29600/299) + exp (-99) + exp (-29800/301) + exp (-14950/151) +
+    exp (-10000/101) + exp (-7525/76) + exp (-6040/61) + exp (-5050/51) + exp (-30400/307) + exp (-7625/77) +
+    exp (-10200/103) + exp (-3070/31) + exp (-30800/311) + exp (-2575/26) + exp (-31000/313) + exp (-15550/157) +
+    exp (-2080/21) + exp (-7825/79) + exp (-31400/317) + exp (-5250/53) + exp (-31600/319) + exp (-1585/16) +
+    exp (-10600/107) + exp (-15950/161) + exp (-32000/323) + exp (-2675/27) + exp (-1288/13) + exp (-16150/163) +
+    exp (-10800/109) + exp (-8125/82) + exp (-32600/329) + exp (-1090/11) + exp (-32800/331) + exp (-8225/83) +
+    exp (-11000/111) + exp (-16550/167) + exp (-6640/67) + exp (-2775/28) + exp (-33400/337) + exp (-16750/169) +
+    exp (-11200/113) + exp (-1685/17) + exp (-33800/341) + exp (-5650/57) + exp (-34000/343) + exp (-8525/86) +
+    exp (-2280/23) + exp (-17150/173) + exp (-34400/347) + exp (-2875/29) + exp (-34600/349) + exp (-694/7) +
+    exp (-11600/117) + exp (-8725/88) + exp (-35000/353) + exp (-5850/59) + exp (-7040/71) + exp (-8825/89) +
+    exp (-11800/119) + exp (-17750/179) + exp (-35600/359) + exp (-595/6) + exp (-35800/361) + exp (-17950/181) +
+    exp (-12000/121) + exp (-9025/91) + exp (-7240/73) + exp (-6050/61) + exp (-36400/367) + exp (-9125/92) +
+    exp (-12200/123) + exp (-3670/37) + exp (-36800/371) + exp (-3075/31) + exp (-37000/373) + exp (-18550/187) +
+    exp (-496/5) + exp (-9325/94) + exp (-37400/377) + exp (-6250/63) + exp (-37600/379) + exp (-1885/19) +
+    exp (-12600/127) + exp (-18950/191) + exp (-38000/383) + exp (-3175/32) + exp (-7640/77) + exp (-19150/193) +
+    exp (-12800/129) + exp (-9625/97) + exp (-38600/389) + exp (-1290/13) + exp (-38800/391) + exp (-9725/98) +
+    exp (-13000/131) + exp (-19550/197) + exp (-7840/79) + exp (-3275/33) + exp (-39400/397) + exp (-19750/199) +
+    exp (-13200/133) + exp (-397/4) + exp (-39800/401) + exp (-6650/67) + exp (-40000/403) + exp (-10025/101) +
+    exp (-2680/27) + exp (-20150/203) + exp (-40400/407) + exp (-3375/34) + exp (-40600/409) + exp (-4070/41) +
+    exp (-13600/137) + exp (-10225/103) + exp (-41000/413) + exp (-6850/69) + exp (-8240/83) + exp (-10325/104) +
+    exp (-13800/139) + exp (-20750/209) + exp (-41600/419) + exp (-695/7) + exp (-41800/421) + exp (-20950/211) +
+    exp (-14000/141) + exp (-10525/106) + exp (-1688/17) + exp (-7050/71) + exp (-42400/427) + exp (-10625/107) +
+    exp (-14200/143) + exp (-4270/43) + exp (-42800/431) + exp (-3575/36) := by
+  unfold f
+  rw [show ⌊log (exp (300:ℝ)) / log 2⌋₊ = 432 from by rw [log_exp]; exact floor_300]
+  finsum_expand
+  simp only [Nat.cast_ofNat, ← exp_mul]
+  norm_num
+
+set_option maxRecDepth 65536 in
+set_option maxHeartbeats 512000000 in
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean#L478).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2f01a7978e08eb8f6b13f0839f56ac074321a14c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

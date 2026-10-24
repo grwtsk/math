@@ -1,0 +1,122 @@
+# snorm_le_snorm_mul_snorm_of_nnnorm
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:d9e6243d-ac8d-3f36-63b4-534d0f671082",
+  "kind": "theorem",
+  "lexical_name": "snorm_le_snorm_mul_snorm_of_nnnorm",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "snorm-le-snorm-mul-snorm-of-nnnorm--70ca6e7672ad0f84b7eca5ce",
+  "source": {
+    "blob": "a628aac6b054467a684f1afb2f7cb9d4406c69d5",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1463,
+    "line": 1423,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/LpSeminorm/Variantad798c19c64732ca7cee2cf5399fa82b07d3b78182d55a6dd7aafdb565f41ff7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:70ca6e7672ad0f84b7eca5ce91826f504235b44b69a7f580b29139092d2d49c8",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/LpSeminorm/Variantad798c19c64732ca7cee2cf5399fa82b07d3b78182d55a6dd7aafdb565f41ff7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d9e6243d-ac8d-3f36-63b4-534d0f671082`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1423–1463.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem snorm_le_snorm_mul_snorm_of_nnnorm {p q r : ℝ≥0∞} {f : α → E}
+    (hf : AEStronglyMeasurable f μ) {g : α → F} (hg : AEStronglyMeasurable g μ) (b : E → F → G)
+    (h : ∀ᵐ x ∂μ, ‖b (f x) (g x)‖₊ ≤ ‖f x‖₊ * ‖g x‖₊) (hpqr : 1 / p = 1 / q + 1 / r) :
+    snorm (fun x => b (f x) (g x)) p μ ≤ snorm f q μ * snorm g r μ := by
+  by_cases hp_zero : p = 0
+  · simp [hp_zero]
+  have hq_ne_zero : q ≠ 0 := by
+    intro hq_zero
+    simp only [hq_zero, hp_zero, one_div, ENNReal.inv_zero, top_add, ENNReal.inv_eq_top] at hpqr
+  have hr_ne_zero : r ≠ 0 := by
+    intro hr_zero
+    simp only [hr_zero, hp_zero, one_div, ENNReal.inv_zero, add_top, ENNReal.inv_eq_top] at hpqr
+  by_cases hq_top : q = ∞
+  · have hpr : p = r := by
+      simpa only [hq_top, one_div, ENNReal.inv_top, zero_add, inv_inj] using hpqr
+    rw [← hpr, hq_top]
+    exact snorm_le_snorm_top_mul_snorm p f hg b h
+  by_cases hr_top : r = ∞
+  · have hpq : p = q := by
+      simpa only [hr_top, one_div, ENNReal.inv_top, add_zero, inv_inj] using hpqr
+    rw [← hpq, hr_top]
+    exact snorm_le_snorm_mul_snorm_top p hf g b h
+  have hpq : p < q := by
+    suffices 1 / q < 1 / p by rwa [one_div, one_div, ENNReal.inv_lt_inv] at this
+    rw [hpqr]
+    refine' ENNReal.lt_add_right _ _
+    · simp only [hq_ne_zero, one_div, Ne.def, ENNReal.inv_eq_top, not_false_iff]
+    · simp only [hr_top, one_div, Ne.def, ENNReal.inv_eq_zero, not_false_iff]
+  rw [snorm_eq_snorm' hp_zero (hpq.trans_le le_top).ne, snorm_eq_snorm' hq_ne_zero hq_top,
+    snorm_eq_snorm' hr_ne_zero hr_top]
+  refine' snorm'_le_snorm'_mul_snorm' hf hg _ h _ _ _
+  · exact ENNReal.toReal_pos hp_zero (hpq.trans_le le_top).ne
+  · exact ENNReal.toReal_strict_mono hq_top hpq
+  rw [← ENNReal.one_toReal, ← ENNReal.toReal_div, ← ENNReal.toReal_div, ← ENNReal.toReal_div, hpqr,
+    ENNReal.toReal_add]
+  · simp only [hq_ne_zero, one_div, Ne.def, ENNReal.inv_eq_top, not_false_iff]
+  · simp only [hr_ne_zero, one_div, Ne.def, ENNReal.inv_eq_top, not_false_iff]
+#align measure_theory.snorm_le_snorm_mul_snorm_of_nnnorm MeasureTheory.snorm_le_snorm_mul_snorm_of_nnnorm
+
+/-- Hölder's inequality, as an inequality on the `ℒp` seminorm of an elementwise operation
+`fun x => b (f x) (g x)`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/LpSeminorm/Variantad798c19c64732ca7cee2cf5399fa82b07d3b78182d55a6dd7aafdb565f41ff7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/LpSeminorm/Variantad798c19c64732ca7cee2cf5399fa82b07d3b78182d55a6dd7aafdb565f41ff7.lean#L1423).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a628aac6b054467a684f1afb2f7cb9d4406c69d5` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.RhEstimateTwoMomentSamplingCore.Variant0d01454cc79cad0b2fdd14ffd4b49a12400d689c4a28de619b3a3aa0020737a6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8102246138a5113a820085bfa977e07b09846a11` · SHA-256 `0d01454cc79cad0b2fdd14ffd4b49a12400d689c4a28de619b3a3aa0020737a6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.unit_sampling_error_identity
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.abs_unit_sampling_error_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.integral_eq_sum_unit_intervals
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.abs_leftSampleSum_sub_integral_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.finite_sampling_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.FiniteSamplingCheckpoint :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.finite_sampling_checkpoint
+```

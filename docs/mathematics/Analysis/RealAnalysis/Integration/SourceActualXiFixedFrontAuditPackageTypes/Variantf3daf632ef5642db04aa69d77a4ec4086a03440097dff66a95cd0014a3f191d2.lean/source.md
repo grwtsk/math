@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.SourceActualXiFixedFrontAuditPackageTypes.Variantf3daf632ef5642db04aa69d77a4ec4086a03440097dff66a95cd0014a3f191d2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `29ef5225318f68399e9f42ed1970a5a33b3172c8` · SHA-256 `f3daf632ef5642db04aa69d77a4ec4086a03440097dff66a95cd0014a3f191d2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiFixedFront
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16ActualXiFixedFront.fixedFrontHeight
+#print axioms RH16ActualXiFixedFront.fixedFrontHeight
+#check RH16ActualXiFixedFront.fixedFrontBudget
+#print axioms RH16ActualXiFixedFront.fixedFrontBudget
+#check RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#print axioms RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#check RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#print axioms RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#check RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#print axioms RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#check RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#print axioms RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#check RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#check RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#check RH16ActualXiFixedFront.actual_transformed_front_integral_lower
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_integral_lower
+```

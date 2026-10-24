@@ -1,0 +1,111 @@
+# ValidatedArgumentIntegral
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e5922aded7b36e0e04eed31d85b4eaa8a65eade97b778f4bf1b2500a14297134",
+  "kind": "structure",
+  "lexical_name": "ValidatedArgumentIntegral",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "validatedargumentintegral--09099d32624f497f3148098f",
+  "source": {
+    "blob": "f5c54b5c8399701376e194814e9f531b7f11a387",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 78,
+    "line": 49,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/ArgumentPrinciple/Variant47b410a140a5a34a5f6a098b48f9183d2df83bd590e8984476b1e1a43ab8ebfa.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:09099d32624f497f3148098f7607a31470c5959f86113642303ec96efd507545",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/ArgumentPrinciple/Variant47b410a140a5a34a5f6a098b48f9183d2df83bd590e8984476b1e1a43ab8ebfa.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e5922aded7b36e0e04eed31d85b4eaa8a65eade97b778f4bf1b2500a14297134`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 49–78.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure ValidatedArgumentIntegral
+    (model : ContourIntegrationModel)
+    (xi xiPrime : ℂ → ℂ)
+    (cell : AnalyticCell) where
+  xiPrimeEnclosure :
+    ValidatedContourFunction cell.contour
+  quotientEnclosure :
+    ValidatedContourFunction cell.contour
+  quotient_correct :
+    ∀ z (_hz : z ∈ cell.contour.range),
+      xi z ≠ 0 →
+      quotientEnclosure.function z =
+        xiPrime z / xi z
+  integrationPartition :
+    FiniteContourPartition cell.contour
+  integralEnclosure : ComplexInterval
+  integralValue : ℂ
+  integral_eq :
+    integralValue =
+      model.integral
+        quotientEnclosure.function
+        cell.contour
+  integralSound :
+    integralEnclosure.Contains integralValue
+  count : Nat
+  isolatesUniqueInteger :
+    integralValue =
+      (2 * (Real.pi : ℂ) * Complex.I) *
+        (count : ℂ)
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/ArgumentPrinciple/Variant47b410a140a5a34a5f6a098b48f9183d2df83bd590e8984476b1e1a43ab8ebfa.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/ArgumentPrinciple/Variant47b410a140a5a34a5f6a098b48f9183d2df83bd590e8984476b1e1a43ab8ebfa.lean#L49).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f5c54b5c8399701376e194814e9f531b7f11a387` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

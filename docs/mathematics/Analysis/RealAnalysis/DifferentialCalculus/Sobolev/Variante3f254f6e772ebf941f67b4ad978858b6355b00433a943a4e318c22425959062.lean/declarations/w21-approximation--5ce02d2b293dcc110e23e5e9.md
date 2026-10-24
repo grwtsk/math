@@ -1,0 +1,226 @@
+# W21_approximation
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "4cc5a5a46d98f4b603b44282490fa1d35ff2de56",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 239,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/e3/e3f254f6e772ebf941f67b4ad978858b6355b00433a943a4e318c22425959062.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:d5eaca39-0d89-fb4e-6724-bd1346553aa0",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:966b2ffa-2cd1-c749-d745-85dbd3865e8f",
+  "kind": "theorem",
+  "lexical_name": "W21_approximation",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "w21-approximation--5ce02d2b293dcc110e23e5e9",
+  "source": {
+    "blob": "4cc5a5a46d98f4b603b44282490fa1d35ff2de56",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 371,
+    "line": 239,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Sobolev/Variante3f254f6e772ebf941f67b4ad978858b6355b00433a943a4e318c22425959062.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:5ce02d2b293dcc110e23e5e970dbfa02ad07249e618eb8ed3a13a88ae7d5831e",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/Sobolev/Variante3f254f6e772ebf941f67b4ad978858b6355b00433a943a4e318c22425959062.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:966b2ffa-2cd1-c749-d745-85dbd3865e8f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 239–371.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem W21_approximation (f : W21) (g : trunc) :
+    Tendsto (fun R => ‖f - (g.scale R * f : W21)‖) atTop (𝓝 0) := by
+
+  -- Definitions
+  let f' := f.deriv
+  let f'' := f'.deriv
+  let g' := (g : CS 2 ℝ).deriv
+  let g'' := g'.deriv
+  let h R v := 1 - g.scale R v
+  let h' R := - (g.scale R).deriv
+  let h'' R := - (g.scale R).deriv.deriv
+
+  -- Properties of h
+  have ch {R} : Continuous (fun v => (h R v : ℂ)) :=
+    continuous_ofReal.comp <| continuous_const.sub (CS.continuous _)
+  have ch' {R} : Continuous (fun v => (h' R v : ℂ)) := continuous_ofReal.comp (CS.continuous _)
+  have ch'' {R} : Continuous (fun v => (h'' R v : ℂ)) := continuous_ofReal.comp (CS.continuous _)
+  have dh R v : HasDerivAt (h R) (h' R v) v := by
+    convert! CS.hasDerivAt_scale (g : CS 2 ℝ) R v |>.const_sub 1 using 1
+    simp [h', CS.deriv_scale', show g.deriv.toFun = deriv g.toFun from rfl]
+  have dh' R v : HasDerivAt (h' R) (h'' R v) v := ((g.scale R).deriv.hasDerivAt v).neg
+  have hh1 R v : |h R v| ≤ 1 := by
+    by_cases hR : R = 0 <;>
+      simp only [CS.scale, funscale, smul_eq_mul, hR, ↓reduceDIte, Pi.zero_apply, sub_zero,
+        abs_one, le_refl, h]
+    rw [abs_le] ; constructor <;>
+    linarith [g.le_one (R⁻¹ * v), g.nonneg (R⁻¹ * v)]
+  have vR v : Tendsto (fun R : ℝ => v * R⁻¹) atTop (𝓝 0) := by
+    simpa using tendsto_inv_atTop_zero.const_mul v
+
+  -- Proof
+  convert_to Tendsto (fun R => W21.norm (fun v => h R v * f v)) atTop (𝓝 0)
+  · ext R ; change W21.norm _ = _ ; congr ; ext v ; simp [h, sub_mul] ; rfl
+  rw [show (0 : ℝ) = 0 + ((4 * π ^ 2)⁻¹ : ℝ) * 0 by simp]
+  refine Tendsto.add ?_ (Tendsto.const_mul _ ?_)
+
+  · let F R v := ‖h R v * f v‖
+    have eh v : ∀ᶠ R in atTop, h R v = 0 := by
+      filter_upwards [(vR v).eventually g.zero, eventually_ne_atTop 0] with R hR hR'
+      simp [h, hR, CS.scale, hR', funscale, mul_comm R⁻¹]
+    have e1 : ∀ᶠ (n : ℝ) in atTop, AEStronglyMeasurable (F n) volume := by
+      apply Eventually.of_forall ; intro R
+      exact (ch.mul f.continuous).norm.aestronglyMeasurable
+    have e2 : ∀ᶠ (n : ℝ) in atTop, ∀ᵐ (a : ℝ), ‖F n a‖ ≤ ‖f a‖ := by
+      apply Eventually.of_forall ; intro R
+      apply Eventually.of_forall ; intro v
+      simpa [F] using mul_le_mul (hh1 R v) le_rfl (by simp) zero_le_one
+    have e4 : ∀ᵐ (a : ℝ), Tendsto (fun n ↦ F n a) atTop (𝓝 0) := by
+      apply Eventually.of_forall ; intro v
+      apply tendsto_nhds_of_eventually_eq ; filter_upwards [eh v] with R hR ; simp [F, hR]
+    simpa [F] using tendsto_integral_filter_of_dominated_convergence _ e1 e2 f.hf.norm e4
+
+  · let F R v := ‖h'' R v * f v + 2 * h' R v * f' v + h R v * f'' v‖
+    convert_to Tendsto (fun R ↦ ∫ (v : ℝ), F R v) atTop (𝓝 0)
+    · have this R v :
+        deriv (deriv (fun v => h R v * f v)) v =
+          h'' R v * f v + 2 * h' R v * f' v + h R v * f'' v := by
+        have df v : HasDerivAt f (f' v) v := f.hasDerivAt v
+        have df' v : HasDerivAt f' (f'' v) v := f'.hasDerivAt v
+        have l3 v : HasDerivAt (fun v => h R v * f v) (h' R v * f v + h R v * f' v) v :=
+          (dh R v).ofReal_comp.mul (df v)
+        have l5 : HasDerivAt (fun v => h' R v * f v) (h'' R v * f v + h' R v * f' v) v :=
+          (dh' R v).ofReal_comp.mul (df v)
+        have l7 : HasDerivAt (fun v => h R v * f' v) (h' R v * f' v + h R v * f'' v) v :=
+          (dh R v).ofReal_comp.mul (df' v)
+        have d1 : deriv (fun v => h R v * f v) = fun v => h' R v * f v + h R v * f' v :=
+          funext (fun v => (l3 v).deriv)
+        rw [d1] ; convert! (l5.add l7).deriv using 1 ; ring
+      simp_rw [this, F]
+
+    obtain ⟨c1, mg'⟩ := g'.bounded
+    obtain ⟨c2, mg''⟩ := g''.bounded
+    let bound v := c2 * ‖f v‖ + 2 * c1 * ‖f' v‖ + ‖f'' v‖
+    have e1 : ∀ᶠ (n : ℝ) in atTop, AEStronglyMeasurable (F n) volume := by
+      apply Eventually.of_forall ; intro R ; apply (Continuous.norm ?_).aestronglyMeasurable
+      exact ((ch''.mul f.continuous).add ((continuous_const.mul ch').mul f.deriv.continuous)).add
+        (ch.mul f.deriv.deriv.continuous)
+    have e2 : ∀ᶠ R in atTop, ∀ᵐ (a : ℝ), ‖F R a‖ ≤ bound a := by
+      have hc1 : ∀ᶠ R in atTop, ∀ v, |h' R v| ≤ c1 := by
+        filter_upwards [eventually_ge_atTop 1] with R hR v
+        have hR' : R ≠ 0 := by linarith
+        have : 0 ≤ R := by linarith
+        simp only [CS.deriv_scale, CS.neg_apply, CS.smul_apply, smul_eq_mul, abs_neg, abs_mul,
+          abs_inv, abs_eq_self.mpr this, ge_iff_le, h']
+        simp only [CS.scale, hR', ↓reduceDIte, funscale, smul_eq_mul]
+        convert_to _ ≤ c1 * 1
+        · simp
+        · rw [mul_comm]
+          apply mul_le_mul (mg' _)
+            (inv_le_of_inv_le₀ (by linarith) (by simpa using hR)) (by positivity)
+          exact (abs_nonneg _).trans (mg' 0)
+      have hc2 : ∀ᶠ R in atTop, ∀ v, |h'' R v| ≤ c2 := by
+        filter_upwards [eventually_ge_atTop 1] with R hR v
+        have e1 : 0 ≤ R := by linarith
+        have e2 : R⁻¹ ≤ 1 := inv_le_of_inv_le₀ (by linarith) (by simpa using hR)
+        have e3 : R ≠ 0 := by linarith
+        simp only [CS.deriv_scale, CS.deriv_smul, CS.neg_apply, CS.smul_apply, smul_eq_mul, abs_neg,
+          abs_mul, abs_inv, abs_eq_self.mpr e1, ge_iff_le, h'']
+        convert_to _ ≤ 1 * (1 * c2)
+        · simp
+        apply mul_le_mul e2 ?_ (by positivity) zero_le_one
+        apply mul_le_mul e2 ?_ (by positivity) zero_le_one
+        simp only [CS.scale, e3, ↓reduceDIte, funscale, smul_eq_mul] ; apply mg''
+      filter_upwards [hc1, hc2] with R hc1 hc2
+      apply Eventually.of_forall ; intro v ; specialize hc1 v ; specialize hc2 v
+      simp only [F, bound, norm_norm]
+      refine (norm_add_le _ _).trans ?_ ; apply add_le_add
+      · refine (norm_add_le _ _).trans ?_ ; apply add_le_add <;> simp only [Complex.norm_mul,
+        Complex.norm_ofNat, norm_real, norm_eq_abs] <;> gcongr
+      · simpa using mul_le_mul (hh1 R v) le_rfl (by simp) zero_le_one
+    have e3 : Integrable bound volume :=
+      (((f.hf.norm).const_mul _).add ((f.hf'.norm).const_mul _)).add f.hf''.norm
+    have e4 : ∀ᵐ (a : ℝ), Tendsto (fun n ↦ F n a) atTop (𝓝 0) := by
+      apply Eventually.of_forall ; intro v
+      have evg' : g' =ᶠ[𝓝 0] 0 := by convert! ← g.zero.deriv ; exact deriv_const' _
+      have evg'' : g'' =ᶠ[𝓝 0] 0 := by convert! ← evg'.deriv ; exact deriv_const' _
+      refine tendsto_norm_zero.comp <| (ZeroAtFilter.add ?_ ?_).add ?_
+      · have eh'' v : ∀ᶠ R in atTop, h'' R v = 0 := by
+          filter_upwards [(vR v).eventually evg'', eventually_ne_atTop 0] with R hR hR'
+          simp only [CS.deriv_scale, CS.deriv_smul, CS.neg_apply, CS.smul_apply, smul_eq_mul,
+            neg_eq_zero, mul_eq_zero, inv_eq_zero, hR', false_or, h'']
+          simp only [CS.scale, hR', ↓reduceDIte, funscale, smul_eq_mul, mul_comm R⁻¹]
+          exact hR
+        apply tendsto_nhds_of_eventually_eq
+        filter_upwards [eh'' v] with R hR ; simp [hR]
+      · have eh' v : ∀ᶠ R in atTop, h' R v = 0 := by
+          filter_upwards [(vR v).eventually evg'] with R hR
+          simp [g'] at hR
+          simp [h', CS.deriv_scale', mul_comm R⁻¹, hR]
+        apply tendsto_nhds_of_eventually_eq
+        filter_upwards [eh' v] with R hR ; simp [hR]
+      · simpa [h] using! ((g.tendsto_scale v).const_sub 1).ofReal.mul tendsto_const_nhds
+    simpa [F] using tendsto_integral_filter_of_dominated_convergence bound e1 e2 e3 e4
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/Sobolev/Variante3f254f6e772ebf941f67b4ad978858b6355b00433a943a4e318c22425959062.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Sobolev/Variante3f254f6e772ebf941f67b4ad978858b6355b00433a943a4e318c22425959062.lean#L239).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4cc5a5a46d98f4b603b44282490fa1d35ff2de56` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

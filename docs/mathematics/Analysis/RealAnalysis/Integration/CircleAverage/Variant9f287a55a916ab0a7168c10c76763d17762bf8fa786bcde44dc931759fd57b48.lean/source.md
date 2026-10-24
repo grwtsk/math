@@ -1,0 +1,167 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.CircleAverage.Variant9f287a55a916ab0a7168c10c76763d17762bf8fa786bcde44dc931759fd57b48
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2f806d41a5e345319cc074b73c9945fdc806cd02` · SHA-256 `e67e6c2c3fe3c12554de28be073f3c2c8e05941414327b48db47cb8c1e402cdd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.CircleAverage.Variant0a4875b4db1a34c3829675da85138cf3c4d074c5c9f39a4f8d11c57ccb71a9ef","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0a4875b4db1a34c3829675da85138cf3c4d074c5c9f39a4f8d11c57ccb71a9ef","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.CircleAverage.Variant0a4875b4db1a34c3829675da85138cf3c4d074c5c9f39a4f8d11c57ccb71a9ef","mathematical_subject":"Analysis.Integration","original_sha256":"0a4875b4db1a34c3829675da85138cf3c4d074c5c9f39a4f8d11c57ccb71a9ef","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/MeasureTheory/Integral/CircleAverage.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Stefan Kebekus. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Stefan Kebekus
+-/
+import Mathlib.MeasureTheory.Integral.CircleIntegral
+import Mathlib.MeasureTheory.Integral.IntervalAverage
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.Periodic
+
+/-!
+# Circle Averages
+
+For a function `f` on the complex plane, this file introduces the definition
+`Real.circleAverage f c R` as a shorthand for the average of `f` on the circle with center `c` and
+radius `R`, equipped with the rotation-invariant measure of total volume one. Like
+`IntervalAverage`, this notion exists as a convenience. It avoids notationally inconvenient
+compositions of `f` with `circleMap` and avoids the need to manually elemininate `2 * π` every time
+an average is computed.
+
+Note: Like the interval average defined in `Mathlib/MeasureTheory/Integral/IntervalAverage.lean`,
+the `circleAverage` defined here is a purely measure-theoretic average. It should not be confused
+with `circleIntegral`, which is the path integral over the circle path. The relevant integrability
+property `circleAverage` is `CircleIntegrable`, as defined in
+`Mathlib/MeasureTheory/Integral/CircleIntegral.lean`.
+
+Implementation Note: Like `circleMap`, `circleAverage`s are defined for negative radii. The theorem
+`circleAverage_congr_negRadius` shows that the average is independent of the radius' sign.
+-/
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.CircleAverage.Variant0a4875b4db1a34c3829675da85138cf3c4d074c5c9f39a4f8d11c57ccb71a9ef
+
+open Filter Metric Real
+
+variable
+  {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  {𝕜 : Type*} [NormedDivisionRing 𝕜] [Module 𝕜 E] [NormSMulClass 𝕜 E] [SMulCommClass ℝ 𝕜 E]
+  {f f₁ f₂ : ℂ → E} {c : ℂ} {R : ℝ} {a : 𝕜}
+
+namespace Real
+
+/-!
+# Definition
+-/
+
+variable (f c R) in
+/--
+Define `circleAverage f c R` as the average value of `f` on the circle with center `c` and radius
+`R`. This is a real notion, which should not be confused with the complex path integral notion
+defined in `circleIntegral` (integrating with respect to `dz`).
+-/
+noncomputable def circleAverage : E :=
+  (2 * π)⁻¹ • ∫ θ in (0)..2 * π, f (circleMap c R θ)
+
+lemma circleAverage_def :
+    circleAverage f c R = (2 * π)⁻¹ • ∫ θ in (0)..2 * π, f (circleMap c R θ) := rfl
+
+/-- Expression of `circleAverage´ in terms of interval averages. -/
+lemma circleAverage_eq_intervalAverage :
+    circleAverage f c R = ⨍ θ in (0)..2 * π, f (circleMap c R θ) := by
+  simp [circleAverage, interval_average_eq]
+
+/-- Interval averages for zero radii equal values at the center point. -/
+@[simp] lemma circleAverage_zero [CompleteSpace E] :
+    circleAverage f c 0 = f c := by
+  rw [circleAverage]
+  simp only [circleMap_zero_radius, Function.const_apply,
+    intervalIntegral.integral_const, sub_zero,
+    ← smul_assoc, smul_eq_mul, inv_mul_cancel₀ (mul_ne_zero two_ne_zero pi_ne_zero),
+    one_smul]
+
+/--
+Expression of `circleAverage´ with arbitrary center in terms of `circleAverage` with center zero.
+-/
+lemma circleAverage_fun_add :
+    circleAverage (fun z ↦ f (z + c)) 0 R = circleAverage f c R := by
+  unfold circleAverage circleMap
+  congr
+  ext θ
+  simp only [zero_add]
+  congr 1
+  ring
+
+/-!
+## Congruence Lemmata
+-/
+
+/-- Circle averages do not change when shifting the angle. -/
+lemma circleAverage_eq_integral_add (η : ℝ) :
+    circleAverage f c R = (2 * π)⁻¹ • ∫ (θ : ℝ) in (0)..2 * π, f (circleMap c R (θ + η)) := by
+  rw [intervalIntegral.integral_comp_add_right (fun θ ↦ f (circleMap c R θ))]
+  have t₀ : (fun θ ↦ f (circleMap c R θ)).Periodic (2 * π) :=
+    fun x ↦ by simp [periodic_circleMap c R x]
+  have := t₀.intervalIntegral_add_eq 0 η
+  rw [zero_add, add_comm] at this
+  rw [zero_add]
+  simp only [circleAverage, mul_inv_rev]
+  congr
+
+/-- Circle averages do not change when replacing the radius by its negative. -/
+@[simp] theorem circleAverage_neg_radius :
+    circleAverage f c (-R) = circleAverage f c R := by
+  unfold circleAverage
+  simp_rw [circleMap_neg_radius, ← circleAverage_def, circleAverage_eq_integral_add π]
+
+/-- Circle averages do not change when replacing the radius by its absolute value. -/
+@[simp] theorem circleAverage_abs_radius :
+    circleAverage f c |R| = circleAverage f c R := by
+  by_cases hR : 0 ≤ R
+  · rw [abs_of_nonneg hR]
+  · rw [abs_of_neg (not_le.1 hR), circleAverage_neg_radius]
+
+/-- If two functions agree outside of a discrete set in the circle, then their averages agree. -/
+theorem circleAverage_congr_codiscreteWithin
+    (hf : f₁ =ᶠ[codiscreteWithin (sphere c |R|)] f₂) (hR : R ≠ 0) :
+    circleAverage f₁ c R = circleAverage f₂ c R := by
+  unfold circleAverage
+  congr 1
+  apply intervalIntegral.integral_congr_ae_restrict
+  apply ae_restrict_le_codiscreteWithin measurableSet_uIoc
+  apply codiscreteWithin.mono (by tauto) (circleMap_preimage_codiscrete hR hf)
+
+/-!
+## Behaviour with Respect to Arithmetic Operations
+-/
+
+/-- Circle averages commute with scalar multiplication. -/
+theorem circleAverage_smul :
+    circleAverage (a • f) c R = a • circleAverage f c R := by
+  unfold circleAverage
+  have := SMulCommClass.symm ℝ 𝕜 E
+  rw [smul_comm]
+  simp [intervalIntegral.integral_smul]
+
+/-- Circle averages commute with scalar multiplication. -/
+theorem circleAverage_fun_smul :
+    circleAverage (fun z ↦ a • f z) c R = a • circleAverage f c R :=
+  circleAverage_smul
+
+/-- Circle averages commute with addition. -/
+theorem circleAverage_add (hf₁ : CircleIntegrable f₁ c R) (hf₂ : CircleIntegrable f₂ c R) :
+    circleAverage (f₁ + f₂) c R = circleAverage f₁ c R + circleAverage f₂ c R := by
+  rw [circleAverage, circleAverage, circleAverage, ← smul_add]
+  congr
+  apply intervalIntegral.integral_add hf₁ hf₂
+
+/-- Circle averages commute with sums. -/
+theorem circleAverage_sum {ι : Type*} {s : Finset ι} {f : ι → ℂ → E}
+    (h : ∀ i ∈ s, CircleIntegrable (f i) c R) :
+    circleAverage (∑ i ∈ s, f i) c R = ∑ i ∈ s, circleAverage (f i) c R := by
+  unfold circleAverage
+  simp [← Finset.smul_sum, intervalIntegral.integral_finset_sum h]
+
+end Real
+```

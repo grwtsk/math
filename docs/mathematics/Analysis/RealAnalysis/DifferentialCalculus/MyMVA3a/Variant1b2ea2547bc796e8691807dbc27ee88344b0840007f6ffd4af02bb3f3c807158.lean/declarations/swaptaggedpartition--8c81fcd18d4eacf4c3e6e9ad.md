@@ -1,0 +1,127 @@
+# swapTaggedPartition
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:18451ed44caa29b0922822aa5d9df80fe86ef49474947fd8a0599230451ad701",
+  "kind": "def",
+  "lexical_name": "swapTaggedPartition",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "swaptaggedpartition--8c81fcd18d4eacf4c3e6e9ad",
+  "source": {
+    "blob": "661a74a18ecefb4e719f68267d0ff8888af929d7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1200,
+    "line": 1155,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/MyMVA3a/Variant1b2ea2547bc796e8691807dbc27ee88344b0840007f6ffd4af02bb3f3c807158.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:8c81fcd18d4eacf4c3e6e9ad105b508c48fc78c9e81889eca8e7ef6d0bb0ae55",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/MyMVA3a/Variant1b2ea2547bc796e8691807dbc27ee88344b0840007f6ffd4af02bb3f3c807158.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:18451ed44caa29b0922822aa5d9df80fe86ef49474947fd8a0599230451ad701`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1155–1200.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def swapTaggedPartition {a b : ℝ} (P : TaggedPartition a b) : TaggedPartition a b :=
+  { n := P.n + 1
+    x := swap_x P
+    monotone := by
+      intro i j hij;
+      induction' i using Fin.cases with i ih_i ; induction' j using Fin.cases with j ih_j ; aesop;
+      · unfold swap_x;
+        simp +decide [ Fin.cons, Fin.snoc ];
+        split_ifs <;> simp_all +decide [ Fin.castSucc_lt_last ];
+        · have := P.h_xi ( Fin.castLT j ‹_› );
+          linarith [ P.monotone ( show 0 ≤ Fin.castSucc ( Fin.castLT j ‹_› ) from Nat.zero_le _ ), P.left ];
+        · linarith [ P.left, P.right, P.monotone ( show 0 ≤ Fin.last P.n from Nat.zero_le _ ) ];
+      · induction' j using Fin.inductionOn with j ih_j;
+        · tauto;
+        · cases hij.eq_or_lt <;> simp_all +decide [ swap_x ];
+          simp +decide [ Fin.snoc, * ];
+          split_ifs <;> simp_all +decide [ Fin.castLT ];
+          · -- Since $P$ is a partition, its points are monotone.
+            have h_monotone : Monotone P.x := by
+              exact P.monotone;
+            exact h_monotone ( Nat.succ_le_of_lt ‹_› ) |> le_trans ( P.h_xi _ |>.2 ) |> le_trans <| P.h_xi _ |>.1;
+          · exact P.h_xi _ |>.2.trans ( P.monotone ( Fin.le_last _ ) ) |> le_trans <| by linarith [ P.right ] ;
+          · exact absurd ‹_› ( not_le_of_gt ( Nat.lt_of_lt_of_le ‹_› ( Nat.le_of_lt_succ ( by linarith [ Fin.is_lt i, Fin.is_lt j ] ) ) ) )
+    left := by
+      rfl
+    right := by
+      -- By definition of `swap_x`, the last element of the list is `b`.
+      simp [swap_x]
+    xi := swap_xi P
+    h_xi := by
+      intro i
+      unfold swap_x swap_xi
+      refine' ⟨ _, _ ⟩;
+      · induction' i using Fin.inductionOn with i IH;
+        · exact P.left.ge;
+        · simp +zetaDelta at *;
+          exact P.h_xi i |>.2;
+      · induction i using Fin.lastCases <;> simp_all +decide [ Fin.cons, Fin.snoc ];
+        · simp +decide [ Fin.last, Fin.snoc ];
+          exact P.right.le;
+        · exact P.h_xi _ |>.1
+  }
+
+/-
+The Riemann-Stieltjes sum of g with respect to f on P is equal to the boundary terms minus the Riemann-Stieltjes sum of f with respect to g on the swapped partition Q.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/MyMVA3a/Variant1b2ea2547bc796e8691807dbc27ee88344b0840007f6ffd4af02bb3f3c807158.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/MyMVA3a/Variant1b2ea2547bc796e8691807dbc27ee88344b0840007f6ffd4af02bb3f3c807158.lean#L1155).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `661a74a18ecefb4e719f68267d0ff8888af929d7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

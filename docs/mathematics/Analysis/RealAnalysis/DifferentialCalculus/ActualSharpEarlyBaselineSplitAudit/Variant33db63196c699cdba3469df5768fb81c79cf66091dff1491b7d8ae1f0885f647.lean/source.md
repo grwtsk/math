@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualSharpEarlyBaselineSplitAudit.Variant33db63196c699cdba3469df5768fb81c79cf66091dff1491b7d8ae1f0885f647
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `63b7a2c6d6ab03c653dd684d3d1e7ff95ec822ee` · SHA-256 `73cd22f81dd16153e137dd83de5133299ef9c34ce29652dc86d2878fdcaf95f1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualSharpEarlyBaseline.Variantcd941acbbd451ee89b6acfd182594ad810caf4689f3fcead2c28f80e90a5edc4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cd941acbbd451ee89b6acfd182594ad810caf4689f3fcead2c28f80e90a5edc4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.ActualSharpEarlyBaseline.Variantcd941acbbd451ee89b6acfd182594ad810caf4689f3fcead2c28f80e90a5edc4","mathematical_subject":"Analysis.Calculus","original_sha256":"cd941acbbd451ee89b6acfd182594ad810caf4689f3fcead2c28f80e90a5edc4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T184307Z-1791312187131651000/ActualSharpEarlyBaselineSplitAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualSharpEarlyBaseline
+
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualSharpEarlyBaseline.Variantcd941acbbd451ee89b6acfd182594ad810caf4689f3fcead2c28f80e90a5edc4
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.actualCorrelation_deriv_zero
+#print axioms RH16IndependentChallengeNext.actualCorrelation_deriv_zero
+#check RH16IndependentChallengeNext.actualCriticalWeight_lower_curvature
+#print axioms RH16IndependentChallengeNext.actualCriticalWeight_lower_curvature
+#check RH16IndependentChallengeNext.actualEarlyDerivative_le_curvature_majorant
+#print axioms RH16IndependentChallengeNext.actualEarlyDerivative_le_curvature_majorant
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_le_curvature_endpoint
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_le_curvature_endpoint
+#check RH16IndependentChallengeNext.actualCutoff_log_sq_le_sqrt
+#print axioms RH16IndependentChallengeNext.actualCutoff_log_sq_le_sqrt
+#check RH16IndependentChallengeNext.actualCutoff_sqrt_lower
+#print axioms RH16IndependentChallengeNext.actualCutoff_sqrt_lower
+#check RH16IndependentChallengeNext.actualCutoff_curvature_error_le
+#print axioms RH16IndependentChallengeNext.actualCutoff_curvature_error_le
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven
+#check RH16IndependentChallengeNext.literal_L_sub_plain_le_tail_sub_scale_add_seven
+#print axioms RH16IndependentChallengeNext.literal_L_sub_plain_le_tail_sub_scale_add_seven
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.actualCorrelation_deriv_zero
+#print RH16IndependentChallengeNext.actualCriticalWeight_lower_curvature
+#print RH16IndependentChallengeNext.actualEarlyDerivative_le_curvature_majorant
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_le_curvature_endpoint
+#print RH16IndependentChallengeNext.actualCutoff_log_sq_le_sqrt
+#print RH16IndependentChallengeNext.actualCutoff_sqrt_lower
+#print RH16IndependentChallengeNext.actualCutoff_curvature_error_le
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven
+#print RH16IndependentChallengeNext.literal_L_sub_plain_le_tail_sub_scale_add_seven
+```

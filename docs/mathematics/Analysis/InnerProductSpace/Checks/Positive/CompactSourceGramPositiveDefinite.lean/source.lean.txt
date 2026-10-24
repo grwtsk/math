@@ -1,0 +1,21 @@
+import GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
+
+#print axioms normalized_source_support_bddAbove
+#print axioms normalized_source_support_nonempty
+#print axioms finite_source_combination_ne_zero
+#print axioms distinct_source_vectors_linearIndependent
+#print axioms finite_source_gram_positive
+#print axioms distinct_source_gram_matrix_positive_definite
+
+#check normalized_source_support_bddAbove
+#check normalized_source_support_nonempty
+#check finite_source_combination_ne_zero
+#check distinct_source_vectors_linearIndependent
+#check finite_source_gram_positive
+#check distinct_source_gram_matrix_positive_definite
+
+end GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite

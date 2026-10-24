@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ExpandedTypesAxioms.Variant384139be7c2bdd11c1e30b024d8f2e7f15783004f313987e6e2baadac6f1e514
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1867ad0c4c42644235e8bcec9f7d5b5a891d1e4a` · SHA-256 `aa9d038de476b2eb1438e26786fca11e7fd759c7c80aba1eb6b70ea87236650e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceSharpBalancedFirstPrimeHead.Variant6b94ed4dcfddf611537807b0d86614ac6e7b8b98c9a774b1cd515016d1893d16","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6b94ed4dcfddf611537807b0d86614ac6e7b8b98c9a774b1cd515016d1893d16","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceSharpBalancedFirstPrimeHead.Variant6b94ed4dcfddf611537807b0d86614ac6e7b8b98c9a774b1cd515016d1893d16","mathematical_subject":"Analysis.Calculus","original_sha256":"6b94ed4dcfddf611537807b0d86614ac6e7b8b98c9a774b1cd515016d1893d16","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/graph-review/independent-sharp-balanced-first-prime-head/fresh-replay/ExpandedTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSharpBalancedFirstPrimeHead
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceSharpBalancedFirstPrimeHead.Variant6b94ed4dcfddf611537807b0d86614ac6e7b8b98c9a774b1cd515016d1893d16
+
+set_option linter.hashCommand false
+#check RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost
+#check RH16SharpBalancedFirstPrimeHead.balancedFirstPrimeHead_abs_le_sharp
+#print axioms RH16SharpBalancedFirstPrimeHead.balancedFirstPrimeHead_abs_le_sharp
+#check RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost_hasDerivAt
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost_hasDerivAt
+#check RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost_derivative_nonpositive
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost_derivative_nonpositive
+#check RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost_antitoneOn
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedHeadCost_antitoneOn
+#check RH16SharpBalancedFirstPrimeHead.balancedFirstPrimeHead_abs_le_sharp_at_radius
+#print axioms RH16SharpBalancedFirstPrimeHead.balancedFirstPrimeHead_abs_le_sharp_at_radius
+#check RH16SharpBalancedFirstPrimeHead.sharpBalancedFirstPrimeReturnCost
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedFirstPrimeReturnCost
+#check RH16SharpBalancedFirstPrimeHead.firstPrime_main_upper_of_sharp_balanced_tail
+#print axioms RH16SharpBalancedFirstPrimeHead.firstPrime_main_upper_of_sharp_balanced_tail
+#check RH16SharpBalancedFirstPrimeHead.firstPrimeTail_of_sharp_balanced_tail
+#print axioms RH16SharpBalancedFirstPrimeHead.firstPrimeTail_of_sharp_balanced_tail
+#check RH16SharpBalancedFirstPrimeHead.estimate_of_sharp_balanced_firstPrime_tail
+#print axioms RH16SharpBalancedFirstPrimeHead.estimate_of_sharp_balanced_firstPrime_tail
+#check RH16SharpBalancedFirstPrimeHead.sharpBalancedFirstPrimeReturnCost_le_original
+#print axioms RH16SharpBalancedFirstPrimeHead.sharpBalancedFirstPrimeReturnCost_le_original
+```

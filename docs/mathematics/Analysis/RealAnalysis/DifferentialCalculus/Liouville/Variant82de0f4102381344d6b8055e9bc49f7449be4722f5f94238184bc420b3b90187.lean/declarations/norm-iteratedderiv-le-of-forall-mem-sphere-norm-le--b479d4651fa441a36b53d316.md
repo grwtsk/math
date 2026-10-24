@@ -1,0 +1,103 @@
+# norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:31fe5c73-4838-b3b7-5be8-a325c7cef009",
+  "kind": "theorem",
+  "lexical_name": "norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "norm-iteratedderiv-le-of-forall-mem-sphere-norm-le--b479d4651fa441a36b53d316",
+  "source": {
+    "blob": "050c20b44512b802bfcf87b3a2d38d338d860b92",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 73,
+    "line": 52,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Liouville/Variant82de0f4102381344d6b8055e9bc49f7449be4722f5f94238184bc420b3b90187.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b479d4651fa441a36b53d316c6480000a3918e147e47176c78d613e8a977b2a5",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/Liouville/Variant82de0f4102381344d6b8055e9bc49f7449be4722f5f94238184bc420b3b90187.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:31fe5c73-4838-b3b7-5be8-a325c7cef009`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 52–73.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem norm_iteratedDeriv_le_of_forall_mem_sphere_norm_le [CompleteSpace F] {c : ℂ} {R C : ℝ}
+    {f : ℂ → F} (n : ℕ) (hR : 0 < R) (hf : DiffContOnCl ℂ f (ball c R))
+    (hC : ∀ z ∈ sphere c R, ‖f z‖ ≤ C) :
+    ‖iteratedDeriv n f c‖ ≤ n.factorial * C / R ^ n := by
+  have hp (z) (hz : z ∈ sphere c R) : ‖(z - c)⁻¹ ^ (n + 1) • f z‖ ≤ C / (R ^ n * R) := by
+    simpa [norm_smul, norm_pow, norm_inv, ← div_eq_inv_mul, mem_sphere_iff_norm.1 hz] using!
+      (div_le_div_iff_of_pos_right (mul_pos (pow_pos hR n) hR)).2 (hC z hz)
+  have hq : iteratedDeriv n f c = n.factorial • (2 * π * I)⁻¹ •
+    ∮ z in C(c, R), (z - c)⁻¹ ^ (n + 1) • f z := by
+    have : (2 * π * I / n.factorial) ≠ 0 := by simp [Nat.factorial_ne_zero]
+    rw [← inv_smul_smul₀ this (iteratedDeriv n f c), inv_div, div_eq_inv_mul, mul_comm,
+      ← nsmul_eq_mul, smul_assoc]
+    simp [← DiffContOnCl.circleIntegral_one_div_sub_center_pow_smul hR n hf]
+  calc
+    ‖iteratedDeriv n f c‖ = ‖n.factorial • (2 * π * I)⁻¹ •
+      ∮ z in C(c, R), (z - c)⁻¹ ^ (n + 1) • f z‖ := by rw [hq]
+    _ ≤ n.factorial * (R * (C / (R ^ (n + 1)))) := by
+      rw [RCLike.norm_nsmul (K := ℂ), nsmul_eq_mul, mul_le_mul_iff_right₀ (by positivity)]
+      exact circleIntegral.norm_two_pi_i_inv_smul_integral_le_of_norm_le_const hR.le hp
+    _ = n.factorial * C / R ^ n := by
+      grind
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/Liouville/Variant82de0f4102381344d6b8055e9bc49f7449be4722f5f94238184bc420b3b90187.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Liouville/Variant82de0f4102381344d6b8055e9bc49f7449be4722f5f94238184bc420b3b90187.lean#L52).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `050c20b44512b802bfcf87b3a2d38d338d860b92` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

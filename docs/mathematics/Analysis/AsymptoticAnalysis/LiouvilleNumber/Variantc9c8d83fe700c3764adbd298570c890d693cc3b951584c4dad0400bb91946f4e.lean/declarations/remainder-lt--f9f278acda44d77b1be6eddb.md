@@ -1,0 +1,120 @@
+# remainder_lt'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "d16acf090302c00147af3bdfeb4d9269dc4d97f1",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 110,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/c9/c9c8d83fe700c3764adbd298570c890d693cc3b951584c4dad0400bb91946f4e.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:b219a24e-2f36-9bb9-63f0-e0879b0fcd95",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:14dcd485-753f-d713-a434-31fb6a9d228d",
+  "kind": "theorem",
+  "lexical_name": "remainder_lt'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "remainder-lt--f9f278acda44d77b1be6eddb",
+  "source": {
+    "blob": "d16acf090302c00147af3bdfeb4d9269dc4d97f1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 136,
+    "line": 110,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/LiouvilleNumber/Variantc9c8d83fe700c3764adbd298570c890d693cc3b951584c4dad0400bb91946f4e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f9f278acda44d77b1be6eddbeb9cf94ba25a328b75248938422f7d580fb63151",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/LiouvilleNumber/Variantc9c8d83fe700c3764adbd298570c890d693cc3b951584c4dad0400bb91946f4e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:14dcd485-753f-d713-a434-31fb6a9d228d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 110–136.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem remainder_lt' (n : ℕ) {m : ℝ} (m1 : 1 < m) :
+    remainder m n < (1 - 1 / m)⁻¹ * (1 / m ^ (n + 1)!) :=
+  -- two useful inequalities
+  have m0 : 0 < m := zero_lt_one.trans m1
+  have mi : 1 / m < 1 := (div_lt_one m0).mpr m1
+  -- to show the strict inequality between these series, we prove that:
+  calc
+    (∑' i, 1 / m ^ (i + (n + 1))!) < ∑' i, 1 / m ^ (i + (n + 1)!) :=
+        -- 1. the second series dominates the first
+        tsum_lt_tsum (fun b => one_div_pow_le_one_div_pow_of_le m1.le
+          (b.add_factorial_succ_le_factorial_add_succ n))
+        -- 2. the term with index `i = 2` of the first series is strictly smaller than
+        -- the corresponding term of the second series
+        (one_div_pow_strictAnti m1 (n.add_factorial_succ_lt_factorial_add_succ (i := 2) le_rfl))
+        -- 3. the first series is summable
+        (remainder_summable m1 n)
+        -- 4. the second series is summable, since its terms grow quickly
+        (summable_one_div_pow_of_le m1 fun j => le_self_add)
+    -- split the sum in the exponent and massage
+    _ = ∑' i : ℕ, (1 / m) ^ i * (1 / m ^ (n + 1)!) :=
+    by simp only [pow_add, one_div, mul_inv, inv_pow]
+    -- factor the constant `(1 / m ^ (n + 1)!)` out of the series
+    _ = (∑' i, (1 / m) ^ i) * (1 / m ^ (n + 1)!) := tsum_mul_right
+    -- the series is the geometric series
+    _ = (1 - 1 / m)⁻¹ * (1 / m ^ (n + 1)!) := by rw [tsum_geometric_of_lt_1 (by positivity) mi]
+#align liouville_number.remainder_lt' LiouvilleNumber.remainder_lt'
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/LiouvilleNumber/Variantc9c8d83fe700c3764adbd298570c890d693cc3b951584c4dad0400bb91946f4e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/LiouvilleNumber/Variantc9c8d83fe700c3764adbd298570c890d693cc3b951584c4dad0400bb91946f4e.lean#L110).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d16acf090302c00147af3bdfeb4d9269dc4d97f1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

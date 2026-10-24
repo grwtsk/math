@@ -1,0 +1,81 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualStieltjesBoundaryAttempt03.Variant7a05f982b2948fc90b691a9150fbc61dcd485a9476c9ff8ae617105bfa90b78d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `09c13860f2d4e84edd5e9321daa09b3447a29155` · SHA-256 `4c91aff98794b121b408c387bb29614332c2506d8b56adfa2d43b7fde7f1fcc8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualTermTSumOne.Variantac1c0400e35beb789e94cf5acb1fe31ba2eeac8341a2c5b70c30eadf1c631aa1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ac1c0400e35beb789e94cf5acb1fe31ba2eeac8341a2c5b70c30eadf1c631aa1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.ActualTermTSumOne.Variantac1c0400e35beb789e94cf5acb1fe31ba2eeac8341a2c5b70c30eadf1c631aa1","mathematical_subject":"Analysis.Calculus","original_sha256":"ac1c0400e35beb789e94cf5acb1fe31ba2eeac8341a2c5b70c30eadf1c631aa1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/continuous-research-01a109fc/pass21/stieltjes_boundary/ActualStieltjesBoundary-attempt03.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualFirstStieltjes
+import Mathlib.NumberTheory.Harmonic.ZetaAsymp
+import Mathlib.Analysis.Complex.RealDeriv
+
+/-! Actual real-right regularization and the complex boundary derivative adapter.
+Research direction grwtsk contributors; focused scratch construction OpenAI Codex.
+The concrete actual termTSum derivative premise is explicit until independently supplied.
+No RH or arithmetic witness is asserted. -/
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualTermTSumOne.Variantac1c0400e35beb789e94cf5acb1fe31ba2eeac8341a2c5b70c30eadf1c631aa1
+
+set_option autoImplicit false
+noncomputable section
+namespace ContinuousResearch.ActualStieltjesBoundary
+open Set Filter
+open scoped Topology
+open ContinuousResearch.ActualFirstStieltjes
+
+ theorem actual_termTSum_one :
+    ZetaAsymptotics.termTSum 1 = 1-Real.eulerMascheroniConstant :=
+  ZetaAsymptotics.term_tsum_one.tsum_eq
+
+ theorem actual_regular_zeta_real_right {s : ℝ} (hs : 1 ≤ s) :
+    riemannZeta₀ (s : ℂ) = ((1-s*ZetaAsymptotics.termTSum s : ℝ) : ℂ) := by
+  rcases eq_or_lt_of_le hs with he | he
+  · subst s
+    simp [actual_termTSum_one]
+  · have hc : (s : ℂ) ≠ 1 := by
+      exact_mod_cast (ne_of_gt he)
+    calc
+      riemannZeta₀ (s : ℂ) = riemannZeta (s : ℂ)-1/((s:ℂ)-1) := by
+        simp [riemannZeta₀,hc,one_div]
+      _ = (((∑' n : ℕ, 1/(n+1:ℝ)^s)-1/(s-1) : ℝ) : ℂ) := by
+        simp only [Complex.ofReal_sub,Complex.ofReal_div,Complex.ofReal_one,
+          sub_left_inj,Complex.ofReal_tsum]
+        rw [zeta_eq_tsum_one_div_nat_add_one_cpow (by simpa using he)]
+        congr 1 with n
+        rw [Complex.ofReal_cpow (by positivity)]
+        norm_cast
+      _ = _ := congrArg (fun x : ℝ => (x : ℂ)) (ZetaAsymptotics.zeta_limit_aux1 he)
+
+ theorem actual_real_regular_derivative_of_termTSum
+    (hF : HasDerivAt ZetaAsymptotics.termTSum
+      (Real.eulerMascheroniConstant+firstStieltjesConstant-1) (1:ℝ)) :
+    HasDerivAt (fun s : ℝ => 1-s*ZetaAsymptotics.termTSum s)
+      (-firstStieltjesConstant) 1 := by
+  have h := (hasDerivAt_const (1:ℝ) (1:ℝ)).sub ((hasDerivAt_id (1:ℝ)).mul hF)
+  convert! h using 1
+  simp only [id_eq]
+  rw [actual_termTSum_one]
+  ring
+
+ theorem actual_regular_zeta_derivative_of_termTSum
+    (hF : HasDerivAt ZetaAsymptotics.termTSum
+      (Real.eulerMascheroniConstant+firstStieltjesConstant-1) (1:ℝ)) :
+    deriv riemannZeta₀ (1:ℂ) = -(firstStieltjesConstant:ℂ) := by
+  have hreal := (actual_real_regular_derivative_of_termTSum hF).ofReal_comp.hasDerivWithinAt
+    (s:=Ici (1:ℝ))
+  have hright : HasDerivWithinAt (fun s : ℝ => riemannZeta₀ (s:ℂ))
+      (-(firstStieltjesConstant:ℂ)) (Ici 1) 1 := by
+    simpa only [Complex.ofReal_neg] using
+      hreal.congr_of_mem (fun s hs => actual_regular_zeta_real_right hs) self_mem_Ici
+  have hcomplex := (differentiable_riemannZeta₀ (1:ℂ)).hasDerivAt
+  have hreald := hcomplex.comp_ofReal (z:= (1:ℝ))
+  exact UniqueDiffWithinAt.eq_deriv (Ici (1:ℝ))
+    ((uniqueDiffOn_Ici (1:ℝ)) 1 self_mem_Ici) hreald.hasDerivWithinAt hright
+
+end ContinuousResearch.ActualStieltjesBoundary
+```

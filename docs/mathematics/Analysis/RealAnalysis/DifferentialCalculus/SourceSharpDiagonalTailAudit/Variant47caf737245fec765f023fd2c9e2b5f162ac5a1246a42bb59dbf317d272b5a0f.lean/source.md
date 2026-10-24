@@ -1,0 +1,39 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceSharpDiagonalTailAudit.Variant47caf737245fec765f023fd2c9e2b5f162ac5a1246a42bb59dbf317d272b5a0f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a154dac59623bde3ca02ff474b37a910281a8782` · SHA-256 `fa8803b70a87a24783add3778628b71034892b3369ab1433f49e8ac006c6f709`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceSharpDiagonalTail.Variant66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceSharpDiagonalTail.Variant66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362","mathematical_subject":"Analysis.Calculus","original_sha256":"66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/graph-review/sharp-diagonal-tail/SourceSharpDiagonalTailAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSharpDiagonalTail
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceSharpDiagonalTail.Variant66a88679c4148d7c96c7d99a25caefe626a7597b643a614e0b9aa058c8a98362
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+#check RH16SharpDiagonalTail.actual_zero_taylor_tail
+#print axioms RH16SharpDiagonalTail.actual_zero_taylor_tail
+#check RH16SharpDiagonalTail.diagonal_deriv_abs_le_tail
+#print axioms RH16SharpDiagonalTail.diagonal_deriv_abs_le_tail
+#check RH16SharpDiagonalTail.diagonal_variation_le_tail
+#print axioms RH16SharpDiagonalTail.diagonal_variation_le_tail
+#check RH16SharpDiagonalTail.diagonal_short_integral_error_tail
+#print axioms RH16SharpDiagonalTail.diagonal_short_integral_error_tail
+#check RH16SharpDiagonalTail.log_cube_div_square_le
+#print axioms RH16SharpDiagonalTail.log_cube_div_square_le
+#check RH16SharpDiagonalTail.floor_square_short_error_tail
+#print axioms RH16SharpDiagonalTail.floor_square_short_error_tail
+#check RH16SharpDiagonalTail.retainedPrimeDiagonal_tail_error_of_primeLogError
+#print axioms RH16SharpDiagonalTail.retainedPrimeDiagonal_tail_error_of_primeLogError
+#check RH16SharpDiagonalTail.retainedPrimeDiagonal_sharp_tail_error
+#print axioms RH16SharpDiagonalTail.retainedPrimeDiagonal_sharp_tail_error
+#check RH16SharpDiagonalTail.typeTwoDiagonal_tail_error_of_proper_bound
+#print axioms RH16SharpDiagonalTail.typeTwoDiagonal_tail_error_of_proper_bound
+#check RH16SharpDiagonalTail.actual_typeTwoDiagonal_sharp_tail_error
+#print axioms RH16SharpDiagonalTail.actual_typeTwoDiagonal_sharp_tail_error
+```

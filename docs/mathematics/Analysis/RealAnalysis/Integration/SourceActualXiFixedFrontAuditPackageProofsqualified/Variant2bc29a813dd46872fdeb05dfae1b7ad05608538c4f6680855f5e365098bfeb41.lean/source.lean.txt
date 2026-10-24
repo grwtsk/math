@@ -1,0 +1,12 @@
+import SourceActualXiFixedFront
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16ActualXiFixedFront.fixedFrontHeight
+#print RH16ActualXiFixedFront.fixedFrontBudget
+#print RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#print RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#print RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#print RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#print RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#print RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#print RH16ActualXiFixedFront.actual_transformed_front_integral_lower

@@ -1,0 +1,16 @@
+import SourceActualMertensPntRate
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+open FormalResearch.RiemannHypothesis.SourceActualMertensPntRate
+#print actualRelativePsiTimeError_tail_integrable
+#print actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print actualPntHalfRate_integrable
+#print actualRelativePsiTimeError_tail_abs_le
+#print actualCenteredMangoldtLogError_isBigO

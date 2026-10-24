@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.TypesAxioms.Variant096b79c4586c4752bac4dceb7a52dcdd94e4b4d71e3a44dbf25362012478e4fc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1161dd6c62eb4371560be3a71b80f861f9bfb2b4` · SHA-256 `096b79c4586c4752bac4dceb7a52dcdd94e4b4d71e3a44dbf25362012478e4fc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSharpEarlyBaseline
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check RH16IndependentChallengeNext.actualCorrelation_deriv_zero
+#print axioms RH16IndependentChallengeNext.actualCorrelation_deriv_zero
+#check RH16IndependentChallengeNext.actualCriticalWeight_lower_curvature
+#print axioms RH16IndependentChallengeNext.actualCriticalWeight_lower_curvature
+#check RH16IndependentChallengeNext.actualEarlyDerivative_le_curvature_majorant
+#print axioms RH16IndependentChallengeNext.actualEarlyDerivative_le_curvature_majorant
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_le_curvature_endpoint
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_le_curvature_endpoint
+#check RH16IndependentChallengeNext.actualCutoff_log_sq_le_sqrt
+#print axioms RH16IndependentChallengeNext.actualCutoff_log_sq_le_sqrt
+#check RH16IndependentChallengeNext.actualCutoff_sqrt_lower
+#print axioms RH16IndependentChallengeNext.actualCutoff_sqrt_lower
+#check RH16IndependentChallengeNext.actualCutoff_curvature_error_le
+#print axioms RH16IndependentChallengeNext.actualCutoff_curvature_error_le
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven
+#check RH16IndependentChallengeNext.literal_L_sub_plain_le_tail_sub_scale_add_seven
+#print axioms RH16IndependentChallengeNext.literal_L_sub_plain_le_tail_sub_scale_add_seven
+```

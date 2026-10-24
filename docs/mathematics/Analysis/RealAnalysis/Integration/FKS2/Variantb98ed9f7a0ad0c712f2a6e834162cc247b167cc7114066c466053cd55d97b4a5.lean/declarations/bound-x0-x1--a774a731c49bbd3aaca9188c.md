@@ -1,0 +1,192 @@
+# bound_x0_x1
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:35d2b9dc-0370-9942-9020-69068347fdf3",
+  "kind": "lemma",
+  "lexical_name": "bound_x0_x1",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "bound-x0-x1--a774a731c49bbd3aaca9188c",
+  "source": {
+    "blob": "4bc63a57afc465f27db885b1686b1f5e58591aef",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 2957,
+    "line": 2847,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/FKS2/Variantb98ed9f7a0ad0c712f2a6e834162cc247b167cc7114066c466053cd55d97b4a5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:a774a731c49bbd3aaca9188c96be9474b08c3a264be998ece7ccf9e219ec2074",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/FKS2/Variantb98ed9f7a0ad0c712f2a6e834162cc247b167cc7114066c466053cd55d97b4a5.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:35d2b9dc-0370-9942-9020-69068347fdf3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 2847–2957.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private lemma bound_x0_x1 {x₀ x₁ : ℝ} (hx₀ : x₀ ≥ 2) (hx₀_le_x₁ : x₀ ≤ x₁)
+    {N : ℕ} (b : Fin (N + 1) → ℝ) (hmono : Monotone b)
+    (h_b_start : b 0 = log x₀)
+    (h_b_end : b (Fin.last N) = log x₁)
+    (εθ_num : ℝ → ℝ)
+    (h_εθ_num : ∀ i : Fin (N+1), Eθ.numericalBound (exp (b i)) εθ_num) :
+    (∫ t in x₀..x₁, Eθ t / log t ^ 2) ≤
+      ∑ i ∈ Finset.Iio (Fin.last N),
+        εθ_num (exp (b i)) *
+        (Li (exp (b (i + 1))) - Li (exp (b i)) +
+        exp (b i) / b i - exp (b (i + 1)) / b (i + 1)) := by
+  have h_int_x₀_x₁ := Eθ_integrable hx₀ hx₀_le_x₁
+  have h_exp_ge_2 (i : Fin (N + 1)) : 2 ≤ exp (b i) := by
+    have : b 0 ≤ b i := hmono (Nat.zero_le i)
+    rw [← exp_log (by positivity : 0 < x₀)] at hx₀
+    exact hx₀.trans (exp_le_exp.mpr (h_b_start ▸ this))
+  have h_x₀ : x₀ = exp (b 0) := by rw [h_b_start, exp_log (by positivity)]
+  have h_x₁ : x₁ = exp (b (Fin.last N)) := by rw [h_b_end, exp_log (by linarith)]
+  have h_int_b : IntervalIntegrable (fun t => Eθ t / (log t) ^ 2) volume (exp (b 0)) (exp (b (Fin.last N))) := by
+    rwa [← h_x₀, ← h_x₁]
+  have h_ind : ∀ n : Fin (N + 1), ∫ t in (exp (b 0))..(exp (b n)), Eθ t / (log t) ^ 2 = ∑ i ∈ Finset.Iio n, ∫ t in (exp (b i))..(exp (b (i + 1))), Eθ t / (log t) ^ 2 := by
+    intro n
+    induction n using Fin.induction with
+    | zero => simp [show (Finset.Iio 0 : Finset (Fin (N + 1))) = ∅ by ext i; simp]
+    | succ n ih =>
+      have h_RHS : Set.uIcc (exp (b 0)) (exp (b (Fin.last N))) = Set.Icc (exp (b 0)) (exp (b (Fin.last N))) :=
+        Set.uIcc_of_le (exp_le_exp.mpr (hmono (Fin.le_last _)))
+      have h_succ : n.castSucc + 1 = Fin.succ n := by
+        ext; simp
+      rw [show (Finset.Iio (Fin.succ n) : Finset (Fin (N + 1))) = Finset.Iio (Fin.castSucc n) ∪ {Fin.castSucc n} by ext i; simp [Fin.lt_def, Fin.le_def],
+        Finset.sum_union (by simp [Finset.disjoint_singleton_right]), Finset.sum_singleton, h_succ, ← ih, intervalIntegral.integral_add_adjacent_intervals]
+      · refine h_int_b.mono_set ?_
+        rw [h_RHS, Set.uIcc_of_le (exp_le_exp.mpr (hmono (Nat.zero_le n)))]
+        exact Set.Icc_subset_Icc_right (exp_le_exp.mpr (hmono (Fin.le_last _)))
+      · refine h_int_b.mono_set ?_
+        rw [h_RHS, Set.uIcc_of_le (exp_le_exp.mpr (hmono (Nat.le_succ _)))]
+        exact Set.Icc_subset_Icc (exp_le_exp.mpr (hmono (Nat.zero_le _))) (exp_le_exp.mpr (hmono (Fin.le_last _)))
+  have h_bound_x₀_x₁ : ∫ t in x₀..x₁, Eθ t / (log t) ^ 2 ≤ ∑ i ∈ Finset.Iio (Fin.last N), ∫ t in (exp (b i))..(exp (b (i + 1))), Eθ t / (log t) ^ 2 := by
+    rw [h_x₀, h_x₁]
+    rw [h_ind (Fin.last N)]
+  refine le_trans h_bound_x₀_x₁ <| Finset.sum_le_sum fun i hi => ?_
+  rw [Finset.mem_Iio, Fin.lt_def] at hi
+  have h_le : b i ≤ b (i + 1) := hmono (by
+    rw [Fin.le_iff_val_le_val, Fin.val_add]
+    have h_one : (1 : Fin (N + 1)).val = 1 % (N + 1) := rfl
+    rw [h_one]
+    have h1 : 1 < N + 1 := by omega
+    rw [Nat.mod_eq_of_lt h1]
+    have h2 : i.val + 1 < N + 1 := by omega
+    rw [Nat.mod_eq_of_lt h2]
+    omega)
+  have h_exp_le : exp (b i) ≤ exp (b (i + 1)) := exp_le_exp.mpr h_le
+  have h_bound_x₀_x₁ : ∫ t in (exp (b i))..(exp (b (i + 1))), Eθ t / (log t) ^ 2 ≤ εθ_num (exp (b i)) * ∫ t in (exp (b i))..(exp (b (i + 1))), 1 / (log t) ^ 2 := by
+    rw [intervalIntegral.integral_of_le h_exp_le, intervalIntegral.integral_of_le h_exp_le]
+    rw [← MeasureTheory.integral_const_mul]
+    apply MeasureTheory.setIntegral_mono_on
+    · refine h_int_x₀_x₁.1.mono_set ?_
+      refine Set.Ioc_subset_Ioc ?_ ?_
+      · rw [← exp_log (by linarith : 0 < x₀), ← h_b_start]
+        exact exp_le_exp.mpr (hmono (Nat.zero_le i))
+      · rw [← exp_log (by linarith : 0 < x₁), ← h_b_end]
+        exact exp_le_exp.mpr (hmono (by
+          rw [Fin.le_iff_val_le_val, Fin.val_add]
+          have h_one : (1 : Fin (N + 1)).val = 1 % (N + 1) := rfl
+          rw [h_one]
+          have h1 : 1 < N + 1 := by omega
+          rw [Nat.mod_eq_of_lt h1]
+          have h2 : i.val + 1 < N + 1 := by omega
+          rw [Nat.mod_eq_of_lt h2]
+          omega))
+    · have h_ge_2 : 2 ≤ exp (b i) := h_exp_ge_2 i
+      refine ContinuousOn.integrableOn_Icc ?_ |> fun h => h.mono_set Set.Ioc_subset_Icc_self
+      have h_log : ∀ x ∈ Set.Icc (exp (b i)) (exp (b (i + 1))), log x ≠ 0 := by
+        intro x hx
+        have : x > 1 := by linarith [h_ge_2.trans hx.1]
+        exact (Real.log_pos this).ne'
+      refine ContinuousOn.const_mul ?_ _
+      refine ContinuousOn.div continuousOn_const ?_ ?_
+      · refine continuousOn_of_forall_continuousAt fun x hx => ?_
+        refine ContinuousAt.pow (Real.continuousAt_log ?_) 2
+        linarith [h_ge_2.trans hx.1]
+      · intro x hx
+        exact pow_ne_zero 2 (h_log x hx)
+    · exact measurableSet_Ioc
+    · intro t ht₁
+      rw [mul_one_div]; gcongr
+      exact h_εθ_num i t ht₁.1.le
+  have h_int_eq : (∫ t in (exp (b i))..(exp (b (i + 1))), 1 / (log t) ^ 2) =
+      Li (exp (b (i + 1))) - Li (exp (b i)) + exp (b i) / b i - exp (b (i + 1)) / b (i + 1) := by
+    rw [Li_identity' (h_exp_ge_2 i) h_exp_le, log_exp, log_exp]
+    ring
+  rw [h_int_eq] at h_bound_x₀_x₁
+  exact h_bound_x₀_x₁
+
+blueprint_comment /--
+Now we can start estimating $E_\pi$.  We make the following running hypotheses. Let $x_0 > 0$ be chosen such that $\pi(x_0)$ and $\theta(x_0)$ are computable, and let   $x_1 \geq \max(x_0, 14)$. Let $\{b_i\}_{i=1}^N$ be a finite partition of   $[\log x_0, \log x_1]$, with $b_1 = \log x_0$ and $b_N = \log x_1$, and suppose that   $\varepsilon_{\theta,\mathrm{num}}$ gives numerical bounds for $x = \exp(b_i)$, for each $i=1,\dots,N$.
+-/
+
+
+
+@[blueprint
+  "fks2-theorem-6-1"
+  (title := "FKS2 Theorem 6, substep 1")
+  (statement := /-- With the above hypotheses, for all $x \geq x_1$ we have
+  $$ E_\pi(x) \leq \varepsilon_{\theta,num}(x_1) + \frac{\log x}{x} \frac{x_0}{\log x_0} (E_\pi(x_0) + E_\theta(x_0))$$
+  $$ + \frac{\log x}{x} \sum_{i=1}^{N-1} \varepsilon_{\theta,num}(e^{b_i}) \left( \Li(e^{b_{i+1}}) - \Li(e^{b_i}) + \frac{e^{b_i}}{b_i} - \frac{e^{b_{i+1}}}{b_{i+1}} \right) $$
+  $$ + \varepsilon_{\theta,num}(x_1) \frac{\log x}{x} \int_{x_1}^{x} \frac{1}{(\log t)^2} \, dt. $$ -/)
+  (proof := /-- This is obtained by combining Sublemma \ref{fks2-eq-30} with the admissibility of $\varepsilon_{\theta,num}$ and Lemma \ref{fks2-lemma-19}.
+  -/)
+  (latexEnv := "sublemma")
+  (discussion := 715)]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/FKS2/Variantb98ed9f7a0ad0c712f2a6e834162cc247b167cc7114066c466053cd55d97b4a5.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/FKS2/Variantb98ed9f7a0ad0c712f2a6e834162cc247b167cc7114066c466053cd55d97b4a5.lean#L2847).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4bc63a57afc465f27db885b1686b1f5e58591aef` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
