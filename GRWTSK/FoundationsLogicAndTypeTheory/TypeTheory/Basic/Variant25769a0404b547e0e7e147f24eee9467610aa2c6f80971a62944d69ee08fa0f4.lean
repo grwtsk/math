@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.TransactionOrchestration.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.BoundedCursorProtocols
 
 /-!
 Concrete staging lowers every phase to exactly one typed primitive request.

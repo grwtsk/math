@@ -1,5 +1,5 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CertificateCorrespondence.Basic
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FrontendCorrespondence.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.OccurrenceCertificateProjection
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.BoundedJsonRecordDecoding
 
 /-!
 Independent projection of the decoded wire records into the finite transport

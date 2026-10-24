@@ -1,5 +1,5 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.TaxonomyProjection.Basic
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.BoundedShards.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.TaggedOccurrenceProjection
+import GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.BoundedWordPartitions
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
 
 /-!
