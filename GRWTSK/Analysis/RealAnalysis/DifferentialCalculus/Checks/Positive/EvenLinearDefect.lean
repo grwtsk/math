@@ -1,0 +1,8 @@
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EvenLinearDefect
+set_option linter.hashCommand false
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EvenLinearDefect
+#check @even_deriv_at_zero
+#check @not_differentiable_at_zero_of_linear_defect
+#print axioms even_deriv_at_zero
+#print axioms not_differentiable_at_zero_of_linear_defect
+end GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EvenLinearDefect

@@ -1,10 +1,10 @@
-import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts
+import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.MoserPorts
 import GRWTSK.Geometry.Hodge.FiniteGraphCellular
 
 namespace GRWTSK.Geometry.Hodge.MoserColorHodgeSeparation
 
-open GRWTSK.Combinatorics.GraphTheory
-open GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson
 open GRWTSK.Geometry.Hodge.FiniteGraphCellular
 
 /-- Real zero-cochain obtained from the exact four-color witness. -/

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.GaussianRationalDivision
+import GRWTSK.Analysis.ComplexAnalysis.GaussianRationalDivision
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMultiplierNormalized
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalEvaluatedPair
 
@@ -19,8 +19,8 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.NormalizedRationalPair
 open Complex Set
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 open CenteredMellin.SexticPrimitive
 open RationalEvaluatedPair (plusPoint minusPoint pairCenter pairOffset displacement)
 namespace U

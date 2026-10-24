@@ -7,7 +7,7 @@ import Mathlib.Tactic
 
 set_option autoImplicit false
 
-namespace GRWTSK.Spectral.GapTransport
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
 
 open Set
 
@@ -181,4 +181,4 @@ theorem collapsed_coding_not_injective :
   have hbad : true = false := h rfl
   cases hbad
 
-end GRWTSK.Spectral.GapTransport
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport

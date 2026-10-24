@@ -8,7 +8,7 @@ No complementary additive classification, conductor, completed local field,
 integral marked-jet transport, or radical-height upper bound is asserted.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoSemistableChamber
 
 set_option autoImplicit false
@@ -17,8 +17,8 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoEvenSummandChamber
 
 open WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
 open FreyOddReduction
 open GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess
 

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Proof drafting assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.WeightedPairBudget
+import GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
 import GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion
 import Mathlib.Tactic.Linarith
@@ -31,7 +31,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Combinatorics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
 open scoped BigOperators
 
 noncomputable section

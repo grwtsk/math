@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI Codex. -/
-import GRWTSK.Combinatorics.DirectedEulerWalkCyclicIndex
+import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedEulerWalkCyclicIndex
 import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CountedCyclicEdgeSplicing
 import Mathlib.Data.List.NodupEquivFin
 
@@ -22,7 +22,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
 
-open GRWTSK.Combinatorics.DirectedEulerSplicing
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedEulerSplicing
 
 /-- An exhaustive edge-simple list has exactly the original counted total
 many entries. All individual parallel-edge IDs are included. -/

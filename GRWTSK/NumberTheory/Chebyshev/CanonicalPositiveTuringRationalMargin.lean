@@ -36,7 +36,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringRationalMargin
 
 open GRWTSK.Analysis.Real.RationalLogEnclosure
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers
 open CanonicalRationalTentEvaluation
@@ -83,7 +83,7 @@ theorem prime_in_square_of_rational_claimed_margin
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (zeroLimit zeroClaimed : ℚ)
-    (zeroAccepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (zeroAccepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) zeroBits rows
       zeroLimit zeroClaimed = true)
     (N correctionBits : ℕ)
@@ -117,7 +117,7 @@ theorem prime_in_square_of_rational_threshold_margin
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (zeroLimit zeroClaimed : ℚ)
-    (zeroAccepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (zeroAccepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) zeroBits rows
       zeroLimit zeroClaimed = true)
     (N correctionBits : ℕ)
@@ -150,7 +150,7 @@ theorem prime_in_square_of_direct_natural_log_margin
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (zeroLimit zeroClaimed : ℚ)
-    (zeroAccepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (zeroAccepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) zeroBits rows
       zeroLimit zeroClaimed = true)
     (N correctionBits : ℕ)

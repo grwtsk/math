@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Proof drafting assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.AnalyticOrderTransport
+import GRWTSK.Analysis.ComplexAnalysis.AnalyticOrderTransport
 import GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 import Mathlib.Analysis.Complex.CauchyIntegral
 import Mathlib.Analysis.SpecialFunctions.Gamma.Deligne
@@ -30,7 +30,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
-open GRWTSK.Analysis.Complex.AnalyticOrderTransport
+open GRWTSK.Analysis.ComplexAnalysis.AnalyticOrderTransport
 open Filter Set
 open scoped Topology ComplexConjugate
 

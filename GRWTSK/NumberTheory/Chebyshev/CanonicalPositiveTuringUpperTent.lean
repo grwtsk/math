@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalRealPairUpperBound
+import GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound
 import GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringPairedTent
 import GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion
 
@@ -33,11 +33,11 @@ open GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringFullHead
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringEnumeration
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
-open GRWTSK.Analysis.Complex.RationalRealPairAccumulation
-open GRWTSK.Analysis.Complex.RationalRealPairUpperBound
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalPositiveTuringPairedTent
 open CanonicalRationalTentEvaluation
@@ -57,12 +57,12 @@ theorem verified_upper_of_positive_pair_packet
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (limit claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       x h bits rows limit claimed = true) :
     (∑ z ∈ heightHead packet.certificate.height,
       (multiplicity z : ℂ) * tentKernel (x : ℝ) (h : ℝ) z.1).re ≤
         (claimed : ℝ) ∧ claimed ≤ limit := by
-  have hs := GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify_sound
+  have hs := GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify_sound
     x h bits rows limit claimed accepted
     (fun i => (packet.alignment.point (alignment.rowEquiv i)).1)
     (fun i => (point_mem_strip
@@ -85,7 +85,7 @@ theorem verified_limit_of_positive_pair_packet
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (limit claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       x h bits rows limit claimed = true) :
     (∑ z ∈ heightHead packet.certificate.height,
       (multiplicity z : ℂ) * tentKernel (x : ℝ) (h : ℝ) z.1).re ≤
@@ -99,17 +99,17 @@ proved by the arithmetic module. -/
 theorem accepted_claimed_lt_unrounded_add_grid
     (x h : ℚ) (bits : ℕ) {k : ℕ} (rows : Fin k → WeightedInput)
     (limit claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       x h bits rows limit claimed = true) :
     (claimed : ℝ) <
-      ((GRWTSK.Analysis.Complex.RationalRealPairAccumulation.sumRealValue x h rows +
-        GRWTSK.Analysis.Complex.RationalRealPairAccumulation.sumError x h rows : ℚ) : ℝ) +
-        1 / GRWTSK.Analysis.Complex.DyadicRoundedSquaring.scale bits := by
+      ((GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.sumRealValue x h rows +
+        GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.sumError x h rows : ℚ) : ℝ) +
+        1 / GRWTSK.Analysis.ComplexAnalysis.DyadicRoundedSquaring.scale bits := by
   obtain ⟨_, _, hfixed⟩ :=
-    (GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify_iff
+    (GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify_iff
       x h bits rows limit claimed).mp accepted
   rw [← hfixed]
-  exact GRWTSK.Analysis.Complex.RationalRealPairUpperBound.computeUpper_lt_base_add_grid
+  exact GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.computeUpper_lt_base_add_grid
     x h bits rows
 
 /-- The exact directly rounded endpoint can feed the one-sided prime consumer. -/
@@ -121,7 +121,7 @@ theorem prime_in_square_of_positive_pair_claimed_upper_packet
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (limit claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) bits rows limit claimed = true)
     (margin : 0 < canonicalPrimeMargin n packet.certificate.height
       (claimed : ℝ) (-squareTrivialBudget n)) :
@@ -146,7 +146,7 @@ theorem prime_in_square_of_positive_pair_upper_limit_packet
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (limit claimed : ℚ)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) bits rows limit claimed = true)
     (margin : 0 < canonicalPrimeMargin n packet.certificate.height
       (limit : ℝ) (-squareTrivialBudget n)) :

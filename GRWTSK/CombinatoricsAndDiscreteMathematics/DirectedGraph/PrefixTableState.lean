@@ -23,10 +23,10 @@ automatic new-row predicate inheritance is claimed here.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PrefixTableState
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState
 
 open Quiver PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary
-open GRWTSK.Logic.FiniteSequences IndexedDictionary DictionaryRevision
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences IndexedDictionary DictionaryRevision
 
 variable {V Key : Type*} [Quiver V]
 
@@ -395,4 +395,4 @@ theorem empty_wellFormed (root : V) : WellFormed (empty (Key := Key) root) := by
 omit [DecidableEq (EdgeTrace.TotalEdge V)] in
 theorem decode_empty (root : V) : decode (empty (Key := Key) root) = some [] := rfl
 
-end GRWTSK.Combinatorics.DirectedGraph.PrefixTableState
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState

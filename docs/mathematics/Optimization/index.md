@@ -4,13 +4,22 @@
 
 [Results index](../index.md) · [Up one directory](../index.md)
 
-**Subject:** `urn:uuid:ac890272-7f5e-4090-96ee-5b31b92812b0` · editorial status: **proposed** · [definition, scope and sources](../../taxonomy/subjects/optimization/index.md).
+**Subject:** `urn:uuid:ac890272-7f5e-4090-96ee-5b31b92812b0` · editorial status: **proposed** · [definition, scope and sources](../../taxonomy/subjects/Optimization/index.md).
 
 The study of selecting feasible mathematical objects to minimize or maximize a specified objective, including existence, structure, characterization and computation of optima.
 
 **Scope.** Continuous, discrete, constrained and unconstrained problems belong to the wider subject. Feasibility, attainment, uniqueness, local optimality and global optimality are different questions. The field is not limited to efficient algorithms or to convex problems, and an objective in a model is not an operational authorization or a guarantee that the model represents an application.
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+## Complete source publication
+
+[Every source module and declaration](../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
 | 0 | 0 | 0 | 0 |
 
@@ -25,13 +34,13 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Convex optimization](convex/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of minimizing convex objectives over convex feasible sets, together with the structure, optimality conditions and algorithms of those problems.
+1. **[Convex optimization](Convex/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of minimizing convex objectives over convex feasible sets, together with the structure, optimality conditions and algorithms of those problems.
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
 
 [Results index](../index.md)
 
-[Subject definition, scope, and sources](../../taxonomy/subjects/optimization/index.md). Subject identity: `urn:uuid:ac890272-7f5e-4090-96ee-5b31b92812b0`; editorial status: proposed.
+[Subject definition, scope, and sources](../../taxonomy/subjects/Optimization/index.md). Subject identity: `urn:uuid:ac890272-7f5e-4090-96ee-5b31b92812b0`; editorial status: proposed.

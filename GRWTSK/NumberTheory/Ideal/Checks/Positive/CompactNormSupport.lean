@@ -1,11 +1,11 @@
 /- Actual integer-ideal consumers and a proved failure without zero-ideal cancellation.
 OpenAI/Mathlib Apache-2.0 notices and named individual credit remain in imported sources. -/
 import GRWTSK.NumberTheory.Ideal.CompactNormSupport
-import GRWTSK.Analysis.Calculus.CompactCutoff
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 namespace GRWTSK.NumberTheory.Ideal.CompactNormSupport.Checks
 noncomputable section
 open scoped Classical SchwartzMap
-open GRWTSK.Analysis.Calculus.CompactCutoff
+open GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 
 noncomputable def integerWindow : ℝ→ℂ := schwartzCutoff 1
 lemma integerWindow_compact : HasCompactSupport integerWindow := schwartzCutoff_compact 1

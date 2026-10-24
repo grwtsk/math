@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Complex.HolomorphicLineSections
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSections
 
 /-!
 # Descent of operators through holomorphic line-bundle charts
@@ -12,9 +12,9 @@ mere existence of a fiber operator.
 
 namespace GRWTSK.Analysis.Operator.HolomorphicLinePort
 
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicSectionRing (HolomorphicSection)
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 
 universe u
 
@@ -126,14 +126,14 @@ def multiplication (C : Cocycle D) (f : HolomorphicSection D.X) : CompatibleOper
 theorem multiplication_preservesHolomorphy (f : HolomorphicSection D.X) :
     (multiplication C f).PreservesHolomorphy := by
   intro i g
-  exact ((GRWTSK.Analysis.Complex.HolomorphicSectionRing.restrictionRingHom (D.xTo i) f) *
+  exact ((GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.restrictionRingHom (D.xTo i) f) *
     g).property
 
 end CompatibleOperators
 
 namespace Fixtures
 
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle.Fixtures
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle.Fixtures
 
 /-- Equal-dimensional local operators can still disagree on an overlap. -/
 def badLocalOp (i : Bool) (_ : (twoCharts.U i).carrier) : ℂ →L[ℂ] ℂ :=

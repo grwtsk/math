@@ -41,7 +41,7 @@ namespace GRWTSK.RiemannHypothesis.CanonicalRectangleCompleteRegularization
 
 open Filter Set
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.FiniteRemovablePatching
+open GRWTSK.Analysis.ComplexAnalysis.FiniteRemovablePatching
 open CanonicalZeroDivisor
 open AdmissibleRectangles
 open TrivialZeroResidues

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.BernoulliMellinRecurrence
+import GRWTSK.Analysis.ComplexAnalysis.BernoulliMellinRecurrence
 import GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet
 
 set_option autoImplicit false
@@ -20,7 +20,7 @@ namespace GRWTSK.RiemannHypothesis.EndpointBernoulliResidual
 open Set MeasureTheory
 open scoped BigOperators
 open CriticalStripHeightDescent
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds
 open PeriodicBernoulliMellin BernoulliMellinRecurrence
 

@@ -7,7 +7,7 @@ not identify the de Bruijn--Newman heat flow with Huffman coding, prove a new
 zero-free region, prove a trace non-sofic, or prove irrationality or
 transcendence of any zeta-zero ordinate.
 -/
-import GRWTSK.Logic.InformationLoss.FactorizationFiber
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.FactorizationFiber
 import Mathlib.Data.Fintype.Basic
 import Mathlib.Data.Real.Basic
 
@@ -40,7 +40,7 @@ universe u v w q
 
 namespace GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 
 /-- `short` is a prefix of `long`, expressed without choosing a code tree. -/
 def IsPrefix {Alphabet : Type v} (short long : List Alphabet) : Prop :=

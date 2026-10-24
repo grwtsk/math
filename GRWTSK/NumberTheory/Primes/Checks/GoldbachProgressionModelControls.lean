@@ -18,7 +18,7 @@ Lean.
 namespace GRWTSK.NumberTheory.Primes.Checks.GoldbachProgressionModelControls
 
 open scoped Real
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open GRWTSK.NumberTheory.Primes.GoldbachWeighted
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs

@@ -10,9 +10,9 @@ import Mathlib.Tactic
 set_option autoImplicit false
 
 noncomputable section
-namespace GRWTSK.LinearAlgebra.Sturmian
+namespace GRWTSK.Algebra.LinearAlgebra.Sturmian
 
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 /-- The literal half-open rotation coding, with phase and integer lattice sites.
 Aperiodicity requires additional irrational-frequency hypotheses. -/
@@ -68,4 +68,4 @@ theorem zero_coupling_trace_iff (E α ξ : ℝ) (n : ℤ) :
   simp [zero_coupling_transfer, schrodingerTransfer, Matrix.trace,
     Fin.sum_univ_two, abs_le]
 
-end GRWTSK.LinearAlgebra.Sturmian
+end GRWTSK.Algebra.LinearAlgebra.Sturmian

@@ -1,9 +1,9 @@
 import GRWTSK.Algebra.LinearAlgebra.CommonJ
 import Lean
 
-open GRWTSK.Algebra GRWTSK.LinearAlgebra.CommonJ Lean Elab Command
+open GRWTSK.Algebra GRWTSK.Algebra.LinearAlgebra.CommonJ Lean Elab Command
 
-namespace GRWTSK.LinearAlgebra.CommonJ.SignChecks
+namespace GRWTSK.Algebra.LinearAlgebra.CommonJ.SignChecks
 
 theorem generic_sign_loop_consumer {R : Type u} [CommRing R] (c s : ℕ → R)
     (h : ∀ i, c i ^ 2 + s i ^ 2 = 1) (n k : ℕ) :
@@ -19,27 +19,27 @@ example {R : Type u} [CommRing R] :
     flipMatrix * rotationMatrix (0 : R) 1 * flipMatrix = -rotationMatrix 0 1 :=
   flip_commonJ_reverse
 
-end GRWTSK.LinearAlgebra.CommonJ.SignChecks
+end GRWTSK.Algebra.LinearAlgebra.CommonJ.SignChecks
 
 elab "#audit_common_j_signs" : command => liftTermElabM do
   let original ← getEnv
-  let some equations ← Meta.getEqnsFor? `GRWTSK.LinearAlgebra.CommonJ.flipUnit
+  let some equations ← Meta.getEqnsFor? `GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit
     | throwError "missing native flip-unit equation family"
-  unless equations == #[`GRWTSK.LinearAlgebra.CommonJ.flipUnit.eq_1] do
+  unless equations == #[`GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit.eq_1] do
     throwError "unexpected native flip-unit equation family"
   let env ← getEnv
-  let roots := #[`GRWTSK.LinearAlgebra.CommonJ.flipMatrix,
-    `GRWTSK.LinearAlgebra.CommonJ.flipUnit,
-    `GRWTSK.LinearAlgebra.CommonJ.flip_rotation_inverse,
-    `GRWTSK.LinearAlgebra.CommonJ.commonJ_loop_inverse,
-    `GRWTSK.LinearAlgebra.CommonJ.rational_reverse_loop_identity,
-    `GRWTSK.LinearAlgebra.CommonJ.flipUnit_inverse,
-    `GRWTSK.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation,
-    `GRWTSK.LinearAlgebra.CommonJ.flip_commonJ_reverse]
-  let companions := #[`GRWTSK.LinearAlgebra.CommonJ.flipMatrix.eq_1,
-    `GRWTSK.LinearAlgebra.CommonJ.flipUnit._proof_1,
-    `GRWTSK.LinearAlgebra.CommonJ.flipUnit.eq_1,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit.congr_simp]
+  let roots := #[`GRWTSK.Algebra.LinearAlgebra.CommonJ.flipMatrix,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.flip_rotation_inverse,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_loop_inverse,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rational_reverse_loop_identity,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit_inverse,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.flip_commonJ_reverse]
+  let companions := #[`GRWTSK.Algebra.LinearAlgebra.CommonJ.flipMatrix.eq_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit._proof_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit.eq_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit.congr_simp]
   for n in roots ++ companions do
     let some info := env.find? n | throwError "missing sign declaration: {n}"
     if info.isUnsafe then throwError "unsafe sign declaration: {n}"
@@ -58,14 +58,14 @@ elab "#audit_common_j_signs" : command => liftTermElabM do
       throwError "native equation type mismatch"
     logInfo m!"COMMON_J_SIGN_DERIVED::{n}::originallyStored={(original.find? n).isSome}"
   for (consumer, target) in
-      #[(`GRWTSK.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation,
-         `GRWTSK.LinearAlgebra.CommonJ.commonJ_loop_inverse),
-        (`GRWTSK.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation,
-         `GRWTSK.LinearAlgebra.CommonJ.flipUnit_inverse),
-        (`GRWTSK.LinearAlgebra.CommonJ.SignChecks.generic_sign_loop_consumer,
-         `GRWTSK.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation),
-        (`GRWTSK.LinearAlgebra.CommonJ.SignChecks.rational_reverse_consumer,
-         `GRWTSK.LinearAlgebra.CommonJ.rational_reverse_loop_identity)] do
+      #[(`GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation,
+         `GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_loop_inverse),
+        (`GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation,
+         `GRWTSK.Algebra.LinearAlgebra.CommonJ.flipUnit_inverse),
+        (`GRWTSK.Algebra.LinearAlgebra.CommonJ.SignChecks.generic_sign_loop_consumer,
+         `GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_loop_sign_conjugation),
+        (`GRWTSK.Algebra.LinearAlgebra.CommonJ.SignChecks.rational_reverse_consumer,
+         `GRWTSK.Algebra.LinearAlgebra.CommonJ.rational_reverse_loop_identity)] do
     let some info := env.find? consumer | throwError "missing sign consumer"
     let some proof := info.value? true | throwError "missing sign consumer proof"
     unless proof.getUsedConstants.contains target do

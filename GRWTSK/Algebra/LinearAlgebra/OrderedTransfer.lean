@@ -5,7 +5,7 @@ Established ordered transfer and exact state propagation mathematics; upstream i
 import GRWTSK.Algebra.OrderedProduct
 import GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
-namespace GRWTSK.LinearAlgebra.OrderedTransfer
+namespace GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
 
 /-!
 # Frozen ordered products and step-dependent gauges
@@ -35,10 +35,10 @@ universe u v w
 open GRWTSK.Algebra
 
 
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 
-open GRWTSK.LinearAlgebra.JacobiTransfer
+open GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
 /-- Endpoint notation `A(m,n) = A(m-1) ⋯ A(n)` for `n ≤ m`. -/
 def orderedTransfer {G : Type u} [Monoid G] (A : ℕ → G) (m n : ℕ) : G :=
@@ -70,4 +70,4 @@ theorem state_eq_orderedTransfer_mulVec {R : Type u} [CommSemiring R]
 
 
 
-end GRWTSK.LinearAlgebra.OrderedTransfer
+end GRWTSK.Algebra.LinearAlgebra.OrderedTransfer

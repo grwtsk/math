@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+import GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 
@@ -22,7 +22,7 @@ namespace GRWTSK.RiemannHypothesis.CanonicalLogarithmicResidues
 
 open Filter Set
 open scoped Topology
-open GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+open GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 
 noncomputable section

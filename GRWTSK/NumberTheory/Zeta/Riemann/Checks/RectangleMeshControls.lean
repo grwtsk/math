@@ -18,7 +18,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls
 
 open scoped unitInterval
 open Set
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open RationalPoleContour CriticalStripHeightDescent
 

@@ -48,7 +48,7 @@ The [source](../../../../GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean),
 native receipt (artifact:gitblob:5f87bda6353391391b75f1f53a1c4798806584d3)
 and integration record (artifact:gitblob:3ff649ee09650501e3512599445b186b4a8a8d2a)
 bind fresh selected local sources and actual controls, including the positive
-consumer's [compact cutoff](../../Analysis/Calculus/compact-cutoff.md).
+consumer's [compact cutoff](../../Analysis/RealAnalysis/DifferentialCalculus/compact-cutoff.md).
 Pinned Lean 4.33.0 checks trust zero, fatal warnings and every owned declaration
 and transitive axiom, allowing only `propext`, `Classical.choice` and
 `Quot.sound`. Clean pinned dependency objects are reused and fingerprinted;

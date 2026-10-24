@@ -17,7 +17,7 @@ No serializer, journal, runtime receipt, source identity, or execution authority
 is introduced by this module.
 -/
 
-namespace GRWTSK.Logic.StateTransition.ResearchObservation
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation
 
 open ResearchState
 
@@ -127,4 +127,4 @@ theorem change_of_structural_wires
   admitted_change
     (admitted_of_structural_wires operation sources versionEq history afterWire)
 
-end GRWTSK.Logic.StateTransition.ResearchObservation
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation

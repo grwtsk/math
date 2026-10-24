@@ -18,7 +18,7 @@ compression, serialization, filesystem updates, or external revision machinery.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.DictionaryRevision
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision
 
 open IndexedDictionary
 
@@ -127,4 +127,4 @@ theorem failed_decoders_do_not_imply_agreement :
   have hlookup := h (12, 0) (by simp)
   simp at hlookup
 
-end GRWTSK.Logic.FiniteSequences.DictionaryRevision
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision

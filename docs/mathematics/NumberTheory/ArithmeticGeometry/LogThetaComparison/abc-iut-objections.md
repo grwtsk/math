@@ -14,7 +14,7 @@ The retrieved 2026 LANA report also retains an explicit integral-structure compa
 
 ## Repair and open frontier
 
-A sufficient finite linear comparison retains a common ordered line, square weights, actual maps, pointwise indeterminacy bounds, positive lower calibration, upper q calibration and controlled total error. Its [conditional comparison theorem](../../../LinearAlgebra/OrientedRealLine/transport.md) derives a finite numerical inequality. Application requires every premise and a separate arithmetic bridge to the [frozen abc target](../../Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md). Region-valued, nonlinear and integral-structure repairs remain open alternatives; they are not modeled as already coherent scalar isomorphisms.
+A sufficient finite linear comparison retains a common ordered line, square weights, actual maps, pointwise indeterminacy bounds, positive lower calibration, upper q calibration and controlled total error. Its [conditional comparison theorem](../../../Algebra/LinearAlgebra/OrientedRealLine/transport.md) derives a finite numerical inequality. Application requires every premise and a separate arithmetic bridge to the [frozen abc target](../../Diophantine/PrimitiveAdditiveTriples/abc-proof-frontier.md). Region-valued, nonlinear and integral-structure repairs remain open alternatives; they are not modeled as already coherent scalar isomorphisms.
 
 ## Source and verification scope
 

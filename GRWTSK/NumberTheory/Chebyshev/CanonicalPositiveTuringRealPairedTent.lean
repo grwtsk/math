@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalRealPairAccumulation
+import GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation
 import GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringPairedTent
 
 set_option autoImplicit false
@@ -34,11 +34,11 @@ open GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringFullHead
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringEnumeration
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
-open GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation
-open GRWTSK.Analysis.Complex.RationalRealPairAccumulation
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalConjugatePairAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalPositiveTuringPairedTent
 open CanonicalRationalTentEvaluation TentSource SignedTentCorrection CanonicalTentPrimeCriterion
@@ -52,9 +52,9 @@ variable {family : DisjointCertifiedFamily Index Source Jet Transport Residual}
 complex pair accumulator's allowance. All analytic row errors are identical. -/
 theorem real_preRound_allowance_strictly_smaller
     (x h : ℚ) (bits : ℕ) {k : ℕ} (rows : Fin k → WeightedInput) :
-    GRWTSK.Analysis.Complex.RationalRealPairAccumulation.sumError x h rows +
+    GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.sumError x h rows +
         realRoundoffQ bits <
-      GRWTSK.Analysis.Complex.RationalRealPairAccumulation.sumError x h rows +
+      GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.sumError x h rows +
         roundoffQ bits :=
   preRoundError_lt_complexPreRoundError x h bits rows
 
@@ -65,13 +65,13 @@ theorem verified_head_of_positive_real_pair_packet
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (tolerance : ℚ) (out : State)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairAccumulation.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.verify
       x h bits rows tolerance out = true) :
     ‖(∑ z ∈ heightHead packet.certificate.height,
         (multiplicity z : ℂ) * tentKernel (x : ℝ) (h : ℝ) z.1) -
       QComplex.embed out.value‖ ≤ (out.error : ℝ) ∧
       out.error ≤ tolerance := by
-  have hs := GRWTSK.Analysis.Complex.RationalRealPairAccumulation.verify_sound
+  have hs := GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.verify_sound
     x h bits rows tolerance out accepted
     (fun i => (packet.alignment.point (alignment.rowEquiv i)).1)
     (fun i => (point_mem_strip (packet.alignment.point (alignment.rowEquiv i))).2.le)
@@ -87,17 +87,17 @@ theorem verified_head_of_positive_real_pair_packet
 theorem accepted_output_im_zero
     (x h : ℚ) (bits : ℕ) {k : ℕ} (rows : Fin k → WeightedInput)
     (tolerance : ℚ) (out : State)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairAccumulation.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.verify
       x h bits rows tolerance out = true) :
     out.value.im = 0 :=
-  GRWTSK.Analysis.Complex.RationalRealPairAccumulation.accepted_value_im_zero
+  GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.accepted_value_im_zero
     x h bits rows tolerance out accepted
 
 /-- The embedded accepted center is an exactly real complex number. -/
 theorem accepted_output_eq_real
     (x h : ℚ) (bits : ℕ) {k : ℕ} (rows : Fin k → WeightedInput)
     (tolerance : ℚ) (out : State)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairAccumulation.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.verify
       x h bits rows tolerance out = true) :
     QComplex.embed out.value = (((out.value.re : ℚ) : ℝ) : ℂ) := by
   apply Complex.ext
@@ -112,7 +112,7 @@ theorem verified_head_with_real_center
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (tolerance : ℚ) (out : State)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairAccumulation.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.verify
       x h bits rows tolerance out = true) :
     ‖(∑ z ∈ heightHead packet.certificate.height,
         (multiplicity z : ℂ) * tentKernel (x : ℝ) (h : ℝ) z.1) -
@@ -133,7 +133,7 @@ theorem prime_in_square_of_positive_real_pair_packet
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (tolerance : ℚ) (out : State)
-    (accepted : GRWTSK.Analysis.Complex.RationalRealPairAccumulation.verify
+    (accepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.verify
       (squareCenterQ n) (squareRadiusQ n) bits rows tolerance out = true)
     (margin : 0 < canonicalPrimeMargin n packet.certificate.height
       ((QComplex.embed out.value).re + (out.error : ℝ))
@@ -151,8 +151,8 @@ theorem prime_in_square_of_positive_real_pair_packet
 It only replaces the two-component quantization charge by the one-component charge. -/
 theorem analytic_pair_error_unchanged
     (x h : ℚ) {k : ℕ} (rows : Fin k → WeightedInput) :
-    GRWTSK.Analysis.Complex.RationalRealPairAccumulation.sumError x h rows =
-      GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation.sumError x h rows :=
+    GRWTSK.Analysis.ComplexAnalysis.RationalRealPairAccumulation.sumError x h rows =
+      GRWTSK.Analysis.ComplexAnalysis.RationalConjugatePairAccumulation.sumError x h rows :=
   rfl
 
 end

@@ -5,10 +5,10 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 
 set_option autoImplicit false
 
-open GRWTSK.Combinatorics.DirectedGraph.PrefixTableState
-open GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState.Checks.Positive
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Negative
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState.Checks.Negative
 
 /-- The valid full payloads do not supply the missing required prefix-closure field. -/
 example : WellFormed missingParent where
@@ -18,4 +18,4 @@ example : WellFormed missingParent where
   cells := missingParent_cells
   references := missingParent_references
 
-end GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Negative
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState.Checks.Negative

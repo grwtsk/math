@@ -35,7 +35,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.CanonicalPositiveTuringCountIsolation
 
 open scoped BigOperators
-open GRWTSK.Combinatorics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open PositiveHeightCountDeficit

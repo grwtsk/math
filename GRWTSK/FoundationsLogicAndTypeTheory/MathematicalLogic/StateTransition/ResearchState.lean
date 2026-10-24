@@ -19,9 +19,9 @@ Specification revision only restricts the present operation language. Arbitrary
 new transition languages and their executable correspondence are not supplied.
 -/
 
-namespace GRWTSK.Logic.StateTransition.ResearchState
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState
 
-open GRWTSK.Logic.Inference
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Inference
 open GRWTSK.ProofHorizon.CorkscrewChamberCap
 
 /-- Serialized source identity, separate from the proposition it names. -/
@@ -400,4 +400,4 @@ theorem statement_of_meaning {claim : Claim} (meaning : Meaning catalog claim)
 
 end Transitions
 
-end GRWTSK.Logic.StateTransition.ResearchState
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState

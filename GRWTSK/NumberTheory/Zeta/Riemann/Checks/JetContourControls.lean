@@ -17,7 +17,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.Checks.JetContourControls
 
 open scoped unitInterval
-open GRWTSK.Analysis.Complex GRWTSK.Analysis.ErrorBounds
+open GRWTSK.Analysis.ComplexAnalysis GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure
 open CriticalStripHeightDescent
 open ConstructedSourceControls

@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 import Mathlib.Analysis.InnerProductSpace.Adjoint
 
 /-!
@@ -14,16 +14,16 @@ namespace GRWTSK.Analysis.Operator.HolomorphicLineSectionBounded
 
 open MeasureTheory
 open scoped ENNReal
-open scoped GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineGauge
-open GRWTSK.Analysis.Complex.HolomorphicLineMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionEnergy
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion
+open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 
 universe u
 noncomputable section
@@ -290,9 +290,9 @@ theorem completed_adjoint_of_defect_zero (G : Gauge C E) (M : MetricWeights C)
 
 namespace Fixtures
 
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle.Fixtures
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionEnergy.Fixtures
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion.Fixtures
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle.Fixtures
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy.Fixtures
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion.Fixtures
 
 abbrev DiracSpace := SectionCompletion (MetricWeights.identity twoCharts)
   (Measure.dirac zeroPoint) twoCharts_isOpen

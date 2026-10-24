@@ -15,7 +15,7 @@ certificate. All declarations remain unelaborated source drafts.
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentPoleSubtractionControls
 
-open GRWTSK.Analysis.Complex.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
 

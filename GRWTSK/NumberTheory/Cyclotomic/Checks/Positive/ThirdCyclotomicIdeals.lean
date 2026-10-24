@@ -1,11 +1,11 @@
 /- Actual third-cyclotomic ideal consumers and a checked distinction from integer ideal norms.
 OpenAI/Mathlib Apache-2.0 notices and individual author credits remain in imported sources. -/
 import GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals
-import GRWTSK.Analysis.Calculus.CompactCutoff
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 namespace GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicIdeals.Checks
 noncomputable section
 open scoped Classical SchwartzMap
-open GRWTSK.Analysis.Calculus.CompactCutoff
+open GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 
 noncomputable def cyclotomicWindow : ℝ→ℂ := schwartzCutoff 1
 lemma cyclotomicWindow_compact : HasCompactSupport cyclotomicWindow := schwartzCutoff_compact 1

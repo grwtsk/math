@@ -20,8 +20,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentHorizontalDecay
 
 open MeasureTheory Filter Set
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.TentContourMajorants
-open GRWTSK.Analysis.Complex.TentHorizontalRayMajorant
+open GRWTSK.Analysis.ComplexAnalysis.TentContourMajorants
+open GRWTSK.Analysis.ComplexAnalysis.TentHorizontalRayMajorant
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.SeparatedContourHeights
 open GRWTSK.RiemannHypothesis.ReflectedStripBudget

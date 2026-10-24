@@ -18,7 +18,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.RationalFiniteEvaluation
 open Complex
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 open RationalPowerEvaluation RationalEvaluatedPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 
 /-- Both slots use a degree-12 log series and 16 exponential terms. -/
 def baseOne : Proposal := ⟨12,16,⟨1,0⟩,0⟩

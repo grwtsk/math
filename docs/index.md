@@ -35,28 +35,28 @@ Source modules count regular filesystem `.lean` files in every first-level `GRWT
 | Source namespace | Lean modules | Curated object guides | Curated object groups | Curated intake records | Curated selected families |
 |---|---:|---:|---:|---:|---:|
 | [Algebra](mathematics/Algebra/index.md) | 10065 | 4 | 2 | 1 | 0 |
-| [AlgebraicGeometry](../GRWTSK/AlgebraicGeometry) | 49 | 0 | 0 | 0 | 0 |
+| [AlgebraicGeometry](../GRWTSK/Geometry/AlgebraicGeometry) | 49 | 0 | 0 | 0 | 0 |
 | [Analysis](mathematics/Analysis/index.md) | 9825 | 43 | 18 | 39 | 1 |
 | [CategoriesAndHomologicalAlgebra](../GRWTSK/CategoriesAndHomologicalAlgebra) | 5317 | 0 | 0 | 0 | 0 |
-| [Combinatorics](mathematics/Combinatorics/index.md) | 102 | 26 | 2 | 0 | 1 |
+| [Combinatorics](mathematics/CombinatoricsAndDiscreteMathematics/Combinatorics/index.md) | 102 | 26 | 2 | 0 | 1 |
 | [CombinatoricsAndDiscreteMathematics](mathematics/CombinatoricsAndDiscreteMathematics/index.md) | 9373 | 0 | 0 | 0 | 0 |
-| [Data](mathematics/Data/index.md) | 2 | 0 | 0 | 0 | 0 |
+| [Data](reference/legacy-source-layout/data.md) | 2 | 0 | 0 | 0 | 0 |
 | [DifferentialEquationsAndDynamicalSystems](../GRWTSK/DifferentialEquationsAndDynamicalSystems) | 68 | 0 | 0 | 0 | 0 |
-| [DynamicalSystems](mathematics/DynamicalSystems/index.md) | 27 | 3 | 2 | 0 | 0 |
+| [DynamicalSystems](mathematics/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/index.md) | 27 | 3 | 2 | 0 | 0 |
 | [FoundationsLogicAndTypeTheory](mathematics/FoundationsLogicAndTypeTheory/index.md) | 18345 | 0 | 0 | 0 | 0 |
 | [Geometry](mathematics/Geometry/index.md) | 912 | 0 | 0 | 0 | 0 |
-| [GeometryOfNumbers](mathematics/GeometryOfNumbers/index.md) | 6 | 0 | 0 | 0 | 0 |
-| [GroupTheory](mathematics/GroupTheory/index.md) | 12 | 0 | 0 | 0 | 0 |
+| [GeometryOfNumbers](mathematics/NumberTheory/AlgebraicNumberTheory/GeometryOfNumbers/index.md) | 6 | 0 | 0 | 0 | 0 |
+| [GroupTheory](mathematics/Algebra/GroupTheory/index.md) | 12 | 0 | 0 | 0 | 0 |
 | [InformationTheory](mathematics/InformationTheory/index.md) | 39 | 0 | 0 | 0 | 0 |
-| [Interfaces](mathematics/Interfaces/index.md) | 238 | 0 | 0 | 0 | 0 |
-| [LinearAlgebra](mathematics/LinearAlgebra/index.md) | 101 | 14 | 10 | 3 | 0 |
-| [Logic](mathematics/Logic/index.md) | 104 | 10 | 3 | 3 | 0 |
-| [MeasureTheory](mathematics/MeasureTheory/index.md) | 6 | 0 | 0 | 1 | 0 |
+| [Interfaces](reference/legacy-source-layout/interfaces.md) | 238 | 0 | 0 | 0 | 0 |
+| [LinearAlgebra](mathematics/Algebra/LinearAlgebra/index.md) | 101 | 14 | 10 | 3 | 0 |
+| [Logic](mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/index.md) | 104 | 10 | 3 | 3 | 0 |
+| [MeasureTheory](mathematics/Analysis/MeasureTheory/index.md) | 6 | 0 | 0 | 1 | 0 |
 | [NumberTheory](mathematics/NumberTheory/index.md) | 12280 | 41 | 17 | 19 | 1 |
-| [Order](mathematics/Order/index.md) | 9 | 1 | 1 | 2 | 0 |
-| [Probability](mathematics/Probability/index.md) | 5 | 0 | 0 | 0 | 0 |
+| [Order](mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/index.md) | 9 | 1 | 1 | 2 | 0 |
+| [Probability](mathematics/ProbabilityAndMathematicalStatistics/ProbabilityTheory/index.md) | 5 | 0 | 0 | 0 | 0 |
 | [ProbabilityAndMathematicalStatistics](../GRWTSK/ProbabilityAndMathematicalStatistics) | 549 | 0 | 0 | 0 | 0 |
-| [Spectral](mathematics/Spectral/index.md) | 29 | 7 | 4 | 0 | 0 |
+| [Spectral](mathematics/Analysis/OperatorTheory/SpectralTheory/index.md) | 29 | 7 | 4 | 0 | 0 |
 | [Topology](mathematics/Topology/index.md) | 5108 | 0 | 0 | 0 | 0 |
 | **Total (24 namespaces)** | **72571** | — | — | — | — |
 

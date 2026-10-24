@@ -48,14 +48,14 @@ namespace GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition
 
 /-- The full additive frequency projector for the exact residue a = b. -/
 def additiveResidueSelector (q : ℕ) [NeZero q] (a b : ZMod q) : ℂ :=
-  GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterAverage q (a - b)
+  GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterAverage q (a - b)
 
 /-- Additive orthogonality detects every residue, including nonunits. -/
 theorem additiveResidueSelector_eq_indicator (q : ℕ) [NeZero q]
     (a b : ZMod q) :
     additiveResidueSelector q a b = if a = b then 1 else 0 := by
   simpa only [additiveResidueSelector, sub_eq_zero] using
-    (GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterAverage_eq_indicator
+    (GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterAverage_eq_indicator
       q (a - b))
 
 /-- The exact gcd label of a residue relative to its ambient modulus. -/

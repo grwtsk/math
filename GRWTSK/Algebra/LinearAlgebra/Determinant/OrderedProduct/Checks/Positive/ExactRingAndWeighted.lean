@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant
-open GRWTSK.LinearAlgebra.OrderedProductDeterminant GRWTSK.Algebra GRWTSK.LinearAlgebra.JacobiTransfer
+open GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant GRWTSK.Algebra GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
 example (A : ℕ → Matrix (Fin 2) (Fin 2) ℤ)
     (hdet : ∀ n, (A n).det = 1) (n k : ℕ) :

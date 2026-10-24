@@ -3,7 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights
 import GRWTSK.NumberTheory.Zeta.Riemann.AdmissibleRectangles
-import GRWTSK.Analysis.Complex.RectangularPoleReduction
+import GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 
 set_option autoImplicit false
 
@@ -22,7 +22,7 @@ namespace GRWTSK.RiemannHypothesis.HeightIndexedDivisor
 open Set
 open scoped BigOperators
 open CanonicalZeroDivisor TrivialZeroResidues AdmissibleRectangles SeparatedContourHeights
-open GRWTSK.Analysis.Complex.RectangularPoleReduction
+open GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 
 noncomputable section
 

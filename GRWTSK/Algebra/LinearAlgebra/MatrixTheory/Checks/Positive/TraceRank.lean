@@ -3,7 +3,7 @@ Consumer tests for the Apache-2.0 OpenAI-derived trace-rank interfaces. -/
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.TraceRank
 import Mathlib.Tactic.NormNum
 
-open GRWTSK.LinearAlgebra.Matrix.TraceRank
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.TraceRank
 open GRWTSK.Analysis.FiniteSquareSum
 open scoped BigOperators ComplexOrder
 

@@ -2,7 +2,7 @@
 -- Mathematical subject: Algebra.LinearAlgebra
 -- Original status, authors, copyright and AI attribution are retained in source.
 -- Source organization only; compilation and proof acceptance are deferred.
--- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.Matrix.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.Matrix.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Data/Matrix/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.MatrixTheory.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.Matrix.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Data/Matrix/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
 /-
 Copyright (c) 2018 Ellen Arlt. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
@@ -21,7 +21,7 @@ import Mathlib.Algebra.Star.Pi
 import Mathlib.Data.Fintype.BigOperators
 
 
-namespace GRWTSK.Algebra.LinearAlgebra.Matrix.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c
+namespace GRWTSK.Algebra.LinearAlgebra.MatrixTheory.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c
 
 #align_import data.matrix.basic from "leanprover-community/mathlib"@"eba5bb3155cab51d80af00e8d7d69fa271b1302b"
 
@@ -384,12 +384,12 @@ theorem map_op_smul' [Mul α] [Mul β] (f : α → β) (r : α) (A : Matrix n n 
   ext fun _ _ => hf _ _
 #align matrix.map_op_smul' Matrix.map_op_smul'
 
-theorem _root_.GRWTSK.Algebra.LinearAlgebra.Matrix.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c.IsSMulRegular.matrix [SMul R S] {k : R} (hk : IsSMulRegular S k) :
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.MatrixTheory.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c.IsSMulRegular.matrix [SMul R S] {k : R} (hk : IsSMulRegular S k) :
     IsSMulRegular (Matrix m n S) k :=
   IsSMulRegular.pi fun _ => IsSMulRegular.pi fun _ => hk
 #align is_smul_regular.matrix IsSMulRegular.matrix
 
-theorem _root_.GRWTSK.Algebra.LinearAlgebra.Matrix.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c.IsLeftRegular.matrix [Mul α] {k : α} (hk : IsLeftRegular k) :
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.MatrixTheory.Variant890bfbd672d6a7df66a72437cff95965ed94871e51442d6e4e5b505f4823c91c.IsLeftRegular.matrix [Mul α] {k : α} (hk : IsLeftRegular k) :
     IsSMulRegular (Matrix m n α) k :=
   hk.isSMulRegular.matrix
 #align is_left_regular.matrix IsLeftRegular.matrix

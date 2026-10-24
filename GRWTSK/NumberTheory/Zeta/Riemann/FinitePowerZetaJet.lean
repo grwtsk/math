@@ -20,7 +20,7 @@ namespace GRWTSK.RiemannHypothesis.FinitePowerZetaJet
 
 open Metric Set
 open CriticalStripHeightDescent ZetaDiskCauchyBounds
-open GRWTSK.Analysis.Complex.ClosedDiskCauchy
+open GRWTSK.Analysis.ComplexAnalysis.ClosedDiskCauchy
 
 noncomputable section
 

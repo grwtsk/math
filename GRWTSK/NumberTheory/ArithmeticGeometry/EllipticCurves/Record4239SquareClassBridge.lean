@@ -42,7 +42,7 @@ Record4239FiniteCharacterMatrix. That file remains source-only until replayed.
 
 namespace GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
 
-open GRWTSK.LinearAlgebra.ModTwoIndependenceDescent
+open GRWTSK.Algebra.LinearAlgebra.ModTwoIndependenceDescent
 
 /-- In a finite square matrix over a field, a left inverse is also a right
 inverse. This uses Mathlib's Dedekind-finite matrix theorem, not a numerical

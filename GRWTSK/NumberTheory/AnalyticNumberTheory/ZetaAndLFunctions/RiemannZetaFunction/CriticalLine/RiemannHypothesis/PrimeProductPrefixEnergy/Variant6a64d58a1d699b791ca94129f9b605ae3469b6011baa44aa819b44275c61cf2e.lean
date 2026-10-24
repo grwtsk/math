@@ -1,6 +1,6 @@
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
 import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction
-import GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SignedPrimePhaseExamples
 
 /-!
 # Actual-source diagnostics and controller certificates

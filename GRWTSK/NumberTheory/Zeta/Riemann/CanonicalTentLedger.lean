@@ -36,7 +36,7 @@ open GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula
 open GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
 open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt

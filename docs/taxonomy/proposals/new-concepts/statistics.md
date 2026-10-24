@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D09"]
 ---
 # Statistics, inference and regression: subject addition
 
-[Proposals](../index.md) · [Statistics](../../subjects/statistics/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Statistics](../../subjects/ProbabilityAndMathematicalStatistics/Statistics/index.md) · [Registry](../../registry.md)
 
 ## Problem and affected source
 

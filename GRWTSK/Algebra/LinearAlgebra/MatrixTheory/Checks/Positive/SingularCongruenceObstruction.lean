@@ -2,7 +2,7 @@ import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 set_option linter.hashCommand false
 
-namespace GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+namespace GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 #print axioms singular_square_congruence_ne_positive_definite
 #print axioms zero_row_square_congruence_ne_positive_definite
@@ -10,4 +10,4 @@ namespace GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
 #check singular_square_congruence_ne_positive_definite
 #check zero_row_square_congruence_ne_positive_definite
 
-end GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction

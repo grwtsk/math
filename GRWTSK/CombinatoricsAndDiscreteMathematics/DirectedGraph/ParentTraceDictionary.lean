@@ -27,10 +27,10 @@ refinement, byte or optimal compression, index stability, or proof authority.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary
 
 open Quiver PathUnfolding OccurrencePrefix PrefixInventory
-open GRWTSK.Logic.FiniteSequences
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences
 
 variable {V Key : Type*} [Quiver V] {root : V}
 
@@ -287,4 +287,4 @@ theorem no_root_decoder {first second : V} (hdistinct : first ≠ second) :
   rintro ⟨recoverRoot, hrecover⟩
   exact hdistinct ((hrecover first).symm.trans (hrecover second))
 
-end GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary

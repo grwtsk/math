@@ -18,7 +18,7 @@ decision_refs: [D01, D03, D04, D06]
 
 ## Problem, affected identities and evidence
 
-The declared scope includes history and education, but the previous pilot supplied no subject entry point for either. Add [history of mathematics](../../subjects/history-of-mathematics/index.md), [mathematics education](../../subjects/mathematics-education/index.md), and [history of mathematics education](../../subjects/history-of-mathematics/mathematics-education/index.md). Their definitions remain authoritative on those pages only.
+The declared scope includes history and education, but the previous pilot supplied no subject entry point for either. Add [history of mathematics](../../subjects/HistoryOfMathematics/index.md), [mathematics education](../../subjects/MathematicsEducation/index.md), and [history of mathematics education](../../subjects/HistoryOfMathematics/MathematicsEducation/index.md). Their definitions remain authoritative on those pages only.
 
 [L4 and L5](../../standards/index.md) supply representative scholarly scope. Selected [MSC references](../../standards/msc2020/index.md) distinguish a historical subject from teaching with mathematical history. The literature search is bounded, not an exhaustive prior-art or international terminology review. These are established subjects newly represented locally, not proposed new mathematics or formalizations.
 

@@ -6,10 +6,10 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDicti
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary
 
-namespace GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary.Checks.Positive
 
 noncomputable instance loopTagDecidableEq :
     DecidableEq (EdgeTrace.TotalEdge (SingleObj Bool)) := Classical.decEq _
@@ -149,4 +149,4 @@ example : (encode [(0, origin false)] : Representation Bool Nat).nodes =
     (encode [(0, origin true)] : Representation Bool Nat).nodes := by
   simp [encode, encodedNodes, inventory_singleton_origin, nodeFor]
 
-end GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary.Checks.Positive

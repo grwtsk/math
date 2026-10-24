@@ -17,7 +17,7 @@ namespace GRWTSK.RiemannHypothesis.JetRectangleCount
 
 open Set ContinuousMap
 open scoped unitInterval
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open ConstructedRectangleCount (Plan)
 open CriticalStripHeightDescent

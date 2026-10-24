@@ -8,7 +8,7 @@ The index |ab|^(k*k) differs from the sharp scalar annihilator |ab|^k.
 This is not intrinsic integral H0, a model lattice, or a height theorem.
 All declarations below are unelaborated source proof scripts.
 -/
-import GRWTSK.LinearAlgebra.WeightedPermutationCokernel
+import GRWTSK.Algebra.LinearAlgebra.WeightedPermutationCokernel
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
 import Mathlib.Algebra.BigOperators.Fin
@@ -21,7 +21,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedC
 
 open FreyWeightedBasis FreyWeightedLattice
 open scoped BigOperators
-open GRWTSK.LinearAlgebra.WeightedPermutationCokernel
+open GRWTSK.Algebra.LinearAlgebra.WeightedPermutationCokernel
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
 /-- The source exponent is unchanged from the coefficient-energy construction. -/
@@ -185,7 +185,7 @@ theorem lattice_cokernel_annihilator (a b : ℤ) (l : ℚ)
     · intro h z
       apply E.injective
       simpa only [map_smul, map_zero] using h (E z)
-  rw [he, annihilator_iff, ← GRWTSK.LinearAlgebra.WeightedPermutationIntegral.uniformClearing_iff]
+  rw [he, annihilator_iff, ← GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.uniformClearing_iff]
   exact integer_clearing_iff a b k d
 
 /-- A grade-two native example separates cokernel order 1296 from clearing factor 36. -/

@@ -23,7 +23,7 @@ set_option relaxedAutoImplicit false
 
 open GRWTSK.Algebra
 
-namespace GRWTSK.LinearAlgebra.CommonJ
+namespace GRWTSK.Algebra.LinearAlgebra.CommonJ
 
 universe u v
 
@@ -221,4 +221,4 @@ theorem flip_commonJ_reverse {R : Type u} [CommRing R] :
 
 
 
-end GRWTSK.LinearAlgebra.CommonJ
+end GRWTSK.Algebra.LinearAlgebra.CommonJ

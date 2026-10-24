@@ -6,12 +6,12 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefi
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary RootedTraceRevision
 open IncrementalPrefixTable
-open GRWTSK.Logic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
 
-namespace GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefixTable.Checks.Positive
 
 noncomputable instance loopVertexDecidableEq : DecidableEq (SingleObj Bool) :=
   Classical.decEq _
@@ -188,4 +188,4 @@ theorem empty_table_root_retained :
     emptyFalse.nodes = emptyTrue.nodes ∧ emptyFalse.references = emptyTrue.references ∧
       emptyFalse.root ≠ emptyTrue.root := ⟨rfl, rfl, Bool.false_ne_true⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.IncrementalPrefixTable.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.IncrementalPrefixTable.Checks.Positive

@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
-open GRWTSK.Spectral.SturmianFiniteVolume Filter
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume Filter
 
 -- Deliberately invalid: a free count limit does not supply the target limit.
 example (α V ξ : ℝ) (origin : ℤ) (free ids : ℝ → ℝ)

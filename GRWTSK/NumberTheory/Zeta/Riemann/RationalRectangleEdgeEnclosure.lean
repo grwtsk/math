@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalComplexBall
+import GRWTSK.Analysis.ComplexAnalysis.RationalComplexBall
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleCompleteRegularization
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleTuringPacket
 import Mathlib.Tactic
@@ -35,9 +35,9 @@ namespace GRWTSK.RiemannHypothesis.RationalRectangleEdgeEnclosure
 
 open MeasureTheory
 open scoped Interval
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalComplexBall
-open GRWTSK.Analysis.Complex.RationalComplexBall.Ball
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalComplexBall
+open GRWTSK.Analysis.ComplexAnalysis.RationalComplexBall.Ball
 open CanonicalZeroDivisor
 open AdmissibleRectangles
 open PositiveHeightCountDeficit

@@ -18,10 +18,10 @@ namespace GRWTSK.RiemannHypothesis.Checks.UniformPairRegion
 open Complex Set
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 open UniformFiniteC1 UniformPairRegion
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 namespace P
-export GRWTSK.Analysis.Complex.GaussianPolynomialPair
+export GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair
   (Poly eval add mul scale shift monomial taylor Disk pair enclose)
 end P
 namespace D
@@ -65,22 +65,22 @@ lemma eval_products (n : ℕ) (s : ℂ) : P.eval (products n) s=D.product n s :=
   induction n with
   | zero => simp [products,P.eval,D.product,Gaussian.value_ofRat]
   | succ n ih =>
-    rw [products,GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_mul,ih,eval_linear]
+    rw [products,GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_mul,ih,eval_linear]
     simp only [D.product,D.factor]
     push_cast
     ring
 
 lemma eval_series (s : ℂ) : P.eval series s=UniformPowerC1.poly 2 12 15 s := by
-  rw [series,GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_taylor]
+  rw [series,GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_taylor]
   unfold UniformPowerC1.poly complexExpTaylor
   have he : ((-RationalPowerEvaluation.logCenter 2 12 : ℚ) : ℂ)*s =
       -s*(RationalPowerEvaluation.logCenter 2 12 : ℂ) := by push_cast; ring
   simp only [he]
 
 lemma eval_weight (s : ℂ) : P.eval weightCoefficients s=RationalFiniteEvaluation.weightC 2 s := by
-  simp only [weightCoefficients,GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_add,
-    GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_scale,
-    GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_mul,eval_linear,eval_products,
+  simp only [weightCoefficients,GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_add,
+    GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_scale,
+    GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_mul,eval_linear,eval_products,
     P.eval,Gaussian.value_ofRat,D.product_four,D.product_six,RationalFiniteEvaluation.weightC]
   norm_num <;> ring
 
@@ -94,8 +94,8 @@ lemma unshifted_binding (s : ℂ) : P.eval unshifted s=config.polynomial s := by
       1+UniformPowerC1.poly 2 12 15 s := by
     rw [show Finset.Icc (1 : ℕ) 2={1,2} from by decide]
     simp [power_one]
-  simp only [unshifted,GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_add,
-    GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_mul,eval_linear,eval_series,eval_weight,
+  simp only [unshifted,GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_add,
+    GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_mul,eval_linear,eval_series,eval_weight,
     P.eval,Gaussian.value_ofRat,Config.polynomial,config]
   rw [hsum]
   norm_num <;> ring
@@ -104,7 +104,7 @@ lemma unshifted_binding (s : ℂ) : P.eval unshifted s=config.polynomial s := by
 theorem source_binding : certificate.Binds config := by
   intro s
   change P.eval shifted (s-certificate.anchor)=config.polynomial s
-  rw [shifted,GRWTSK.Analysis.Complex.GaussianPolynomialPair.eval_shift]
+  rw [shifted,GRWTSK.Analysis.ComplexAnalysis.GaussianPolynomialPair.eval_shift]
   have he : certificate.anchor=(⟨1/2,1⟩ : Gaussian).value := rfl
   rw [he,sub_add_cancel,unshifted_binding]
 

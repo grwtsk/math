@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 import GRWTSK.NumberTheory.Primes.GoldbachProgressionCoefficientFactorization
 import GRWTSK.NumberTheory.Primes.GoldbachTruncatedSeries
 import Mathlib.Algebra.CharP.Basic
@@ -36,7 +36,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Primes.GoldbachPrimeCoefficientBridge
 
 open scoped BigOperators Real
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 open GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionMainModel

@@ -19,7 +19,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope
 
 open scoped BigOperators Real
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates
 open GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition

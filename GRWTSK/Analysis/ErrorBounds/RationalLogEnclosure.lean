@@ -19,8 +19,8 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.IntervalMellinQuadrature
-open GRWTSK.Analysis.Complex.IntervalMellinElementary
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinQuadrature
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinElementary
 
 /-- Same affine grid as uniformNodes, represented in Q. -/
 def gridNode (t : ℚ) (L i : ℕ) : ℚ := 1 + (i : ℚ) * ((t - 1) / (L : ℚ))

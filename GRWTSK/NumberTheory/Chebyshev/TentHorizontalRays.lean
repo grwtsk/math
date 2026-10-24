@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.HorizontalLogDerivative
-import GRWTSK.Analysis.Complex.TentHorizontalRayMajorant
+import GRWTSK.Analysis.ComplexAnalysis.TentHorizontalRayMajorant
 import GRWTSK.NumberTheory.Chebyshev.TentLeftDecay
 import Mathlib.Tactic.LinearCombination
 
@@ -23,11 +23,11 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays
 
 open MeasureTheory Filter Set
 open scoped Topology Interval BigOperators
-open GRWTSK.Analysis.Complex.OrientedRectangle
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinInversion
-open GRWTSK.Analysis.Complex.TentContourMajorants
-open GRWTSK.Analysis.Complex.TentHorizontalRayMajorant
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.TentContourMajorants
+open GRWTSK.Analysis.ComplexAnalysis.TentHorizontalRayMajorant
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.HorizontalLogDerivative

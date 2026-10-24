@@ -5,10 +5,10 @@ import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Spectral.DirichletCut
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut
 
-open Matrix GRWTSK.Spectral.MatrixCountComparison
-open GRWTSK.Spectral.SturmianFiniteVolume
+open Matrix GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 
 /-- The two symmetric entries of the edge from site c to site c+1.
 If either site is outside the volume, the corresponding entry is absent. -/
@@ -193,4 +193,4 @@ theorem adjacent_normalized_count_error (N M : ℕ) (hN : 0 < N)
   exact div_le_div_of_nonneg_right (adjacent_count_error N M hN α V ξ origin E)
     (Nat.cast_nonneg (N+M))
 
-end GRWTSK.Spectral.DirichletCut
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.SymmetricPairRational
+import GRWTSK.Analysis.ComplexAnalysis.SymmetricPairRational
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairApproximation
 
 set_option autoImplicit false
@@ -18,7 +18,7 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.RationalMirror
 open Complex Set
-open GRWTSK.Analysis.Complex.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 open CenteredMellin.SexticPrimitive CenteredMellin.SexticPrimitive.C1Approximation
 
 structure Witness where

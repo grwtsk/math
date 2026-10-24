@@ -22,9 +22,9 @@ namespace GRWTSK.NumberTheory.Chebyshev.GeneralTentExplicitFormula
 
 open GRWTSK.Analysis.Real.TentWeight
 open GRWTSK.Analysis.Real.TentRationalCorrection
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinInversion
-open GRWTSK.Analysis.Complex.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.SeparatedContourHeights
 open GRWTSK.NumberTheory.LSeries.TentPairing

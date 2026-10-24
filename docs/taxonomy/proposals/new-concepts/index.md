@@ -14,7 +14,7 @@ decision_refs: [D01, D03, D04]
 ---
 # Add one polyhierarchical spectral subject
 
-[Proposals](../index.md) · [Canonical proposed concept](../../subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/finite-reversible-chains/index.md)
+[Proposals](../index.md) · [Canonical proposed concept](../../subjects/Analysis/OperatorTheory/SpectralTheory/SelfAdjointOperators/FiniteReversibleChains/index.md)
 
 ## Problem and exact scope
 

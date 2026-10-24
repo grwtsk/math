@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation
+import GRWTSK.Analysis.ComplexAnalysis.RationalConjugatePairAccumulation
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPositiveTuringEnumeration
 import GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation
 
@@ -38,10 +38,10 @@ open GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringFullHead
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringEnumeration
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
-open GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalConjugatePairAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRationalTentEvaluation TentSource SignedTentCorrection CanonicalTentPrimeCriterion
 
@@ -119,7 +119,7 @@ theorem verified_head_of_positive_pair_packet
         (multiplicity z : ℂ) * tentKernel (x : ℝ) (h : ℝ) z.1) -
       QComplex.embed out.value‖ ≤ (out.error : ℝ) ∧
       out.error ≤ tolerance := by
-  have hs := GRWTSK.Analysis.Complex.RationalConjugatePairAccumulation.verify_sound
+  have hs := GRWTSK.Analysis.ComplexAnalysis.RationalConjugatePairAccumulation.verify_sound
     x h bits rows tolerance out accepted
     (fun i => (packet.alignment.point (alignment.rowEquiv i)).1)
     (fun i => (point_mem_strip (packet.alignment.point (alignment.rowEquiv i))).2.le)

@@ -20,7 +20,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFirstBlock
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace
 open ConcreteNewtonPacket RationalZetaCenterEvaluation RationalZetaTranscript
 open ConcreteNewtonFirstBlockData ConcreteNewtonFirstBlockSeeds

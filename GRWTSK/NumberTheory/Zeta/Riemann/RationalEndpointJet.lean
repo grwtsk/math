@@ -21,7 +21,7 @@ namespace GRWTSK.RiemannHypothesis.RationalEndpointJet
 
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open CriticalStripHeightDescent
 
 /-- Total rational coordinates; inverse_refines requires the actual nonzero denominator. -/

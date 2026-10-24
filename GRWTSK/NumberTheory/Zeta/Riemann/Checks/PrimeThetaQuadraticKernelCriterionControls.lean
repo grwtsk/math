@@ -8,7 +8,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis.Checks.PrimeThetaQuadraticKernelCriterionControls
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
 
 /-- Canonical all-positive clause polarity used only to expose the numerical

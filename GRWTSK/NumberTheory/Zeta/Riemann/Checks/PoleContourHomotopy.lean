@@ -19,7 +19,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.PoleContourHomotopy
 
 open scoped unitInterval
 open ContinuousMap
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open CriticalStripHeightDescent RationalPoleContour
 open PoleContourCoverage

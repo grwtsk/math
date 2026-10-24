@@ -8,8 +8,8 @@ No public-root import until exact-commit compiler, fresh kernel and
 transitive axiom/unsafe audit receipts.
 -/
 import GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction
-import GRWTSK.LinearAlgebra.PeriodicCocycleData
-import GRWTSK.LinearAlgebra.Sturmian
+import GRWTSK.Algebra.LinearAlgebra.PeriodicCocycleData
+import GRWTSK.Algebra.LinearAlgebra.Sturmian
 import Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup
 import Mathlib.Tactic
 
@@ -50,8 +50,8 @@ open GRWTSK.NumberTheory.Farey.GroupSuperwalk
 open GRWTSK.NumberTheory.Farey.ReturnAngularChannel
 open GRWTSK.NumberTheory.Farey.ReturnSpectralChannel
 open GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction
-open GRWTSK.LinearAlgebra.CocycleProduct
-open GRWTSK.LinearAlgebra.PeriodicCocycleData
+open GRWTSK.Algebra.LinearAlgebra.CocycleProduct
+open GRWTSK.Algebra.LinearAlgebra.PeriodicCocycleData
 
 /-- The SAME two-letter alphabet as the actual positive Farey cell walk. -/
 abbrev Schedule := ℕ → Turn
@@ -244,13 +244,13 @@ No global spectral equivalence or irrational-frequency theorem
 is silently attached to this discrete coding choice. -/
 def sturmianTurns (α ξ : ℝ) : Schedule :=
   fun n =>
-    if GRWTSK.LinearAlgebra.Sturmian.bit α ξ (n : ℤ) = 1 then
+    if GRWTSK.Algebra.LinearAlgebra.Sturmian.bit α ξ (n : ℤ) = 1 then
       .left
     else .right
 
 theorem sturmianTurns_left_iff (α ξ : ℝ) (n : ℕ) :
     sturmianTurns α ξ n = .left ↔
-      GRWTSK.LinearAlgebra.Sturmian.bit α ξ (n : ℤ) = 1 := by
+      GRWTSK.Algebra.LinearAlgebra.Sturmian.bit α ξ (n : ℤ) = 1 := by
   simp [sturmianTurns]
 
 /-- The source-to-dual matrix bridge specializes literally to

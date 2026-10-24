@@ -17,7 +17,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.RationalEvaluationCover
 open Complex Set
 open CriticalStripHeightDescent CriticalStripHeightDescent.RationalEvaluationPatch
 open CriticalStripHeightDescent.RationalPatchCover
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 
 def baseOne : RationalPowerEvaluation.Proposal := ⟨12,16,⟨1,0⟩,0⟩
 def baseTwo : RationalPowerEvaluation.Proposal :=

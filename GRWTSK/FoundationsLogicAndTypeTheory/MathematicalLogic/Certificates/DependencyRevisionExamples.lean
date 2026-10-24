@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.DependencyRevision
-import GRWTSK.FoundationsLogicAndTypeTheory.Order.Closure.FiniteDependencyExamples
+import GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.ClosureOperators.FiniteDependencyExamples
 
 /-!
 # CCC selective revision fixtures

@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors; OpenAI Codex formalization as
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
-import GRWTSK.Analysis.Integration.ExponentialInterval
+import GRWTSK.Analysis.RealAnalysis.Integration.ExponentialInterval
 import GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
 import GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
@@ -31,7 +31,7 @@ namespace GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
-open GRWTSK.Analysis.Integration.ExponentialInterval
+open GRWTSK.Analysis.RealAnalysis.Integration.ExponentialInterval
 open GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
 open GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
 

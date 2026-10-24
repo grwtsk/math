@@ -8,7 +8,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightCanonicalDeficitControls
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
 
 /-- Canonical polarity used only to expose the numerical arity labels. -/

@@ -23,7 +23,7 @@ strings and event descriptions remain identity data, not authenticated custody
 or mathematical proofs. In particular, replay does not authenticate its input.
 -/
 
-namespace GRWTSK.Logic.StateTransition.ResearchObservation
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation
 
 open ResearchState
 
@@ -385,4 +385,4 @@ theorem source_mutation_rejected (s : ObservationState) (observation : Observati
   rw [admitted.2]
   rfl
 
-end GRWTSK.Logic.StateTransition.ResearchObservation
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation

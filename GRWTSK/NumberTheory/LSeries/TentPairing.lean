@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.TentMellinInversion
+import GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 import Mathlib.NumberTheory.LSeries.Basic
 import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
@@ -23,8 +23,8 @@ namespace GRWTSK.NumberTheory.LSeries.TentPairing
 open MeasureTheory Filter
 open scoped Topology BigOperators
 open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 
 noncomputable section
 

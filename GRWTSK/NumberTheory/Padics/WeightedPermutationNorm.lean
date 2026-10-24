@@ -8,7 +8,7 @@ nonzero. This is not a completed Q_p operator, an intrinsic lattice, a
 Euclidean energy, a determinant norm, or an adelic height theorem.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Proof scripts unelaborated.
 -/
-import GRWTSK.LinearAlgebra.WeightedPermutationIntegral
+import GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral
 import Mathlib.NumberTheory.Padics.PadicNorm
 import Mathlib.Data.Nat.Factorization.Defs
 import Mathlib.Data.Finset.Lattice.Fold
@@ -35,9 +35,9 @@ def transport (e : Equiv.Perm ι) (w : ι → ℤ) : (ι → ℚ) →ₗ[ℚ] (�
 /-- All integer inputs still use exactly the OLD integer map. -/
 theorem transport_integer (e : Equiv.Perm ι) (w v : ι → ℤ) :
     transport e w (fun i => (v i : ℚ)) =
-      fun i => (GRWTSK.LinearAlgebra.WeightedPermutationIntegral.transport e w v i : ℚ) := by
+      fun i => (GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.transport e w v i : ℚ) := by
   funext i
-  simp [transport, GRWTSK.LinearAlgebra.WeightedPermutationIntegral.transport]
+  simp [transport, GRWTSK.Algebra.LinearAlgebra.WeightedPermutationIntegral.transport]
 
 /-- Source slot i reads target e(i). The nonzero witnesses cannot be omitted. -/
 def inverse (e : Equiv.Perm ι) (w : ι → ℤ) (_hw : ∀ i, w i ≠ 0) :

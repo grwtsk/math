@@ -22,7 +22,7 @@ open Metric Set
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure
 open CanonicalZeroDivisor EnclosedZeroInventory
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalMellinFamily (Member memberAt)
 open RationalTentEnclosure (CoordinateData radiusAt)
 

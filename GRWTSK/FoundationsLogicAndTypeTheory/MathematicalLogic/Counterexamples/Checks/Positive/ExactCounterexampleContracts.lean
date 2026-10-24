@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
-open GRWTSK.LinearAlgebra.CommonJCounterexamples
+open GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
 set_option autoImplicit false
 example : hostileSign * hostileUpper * hostileSign⁻¹ = hostileUpper⁻¹ := hostileUpper_sign_inverse
 example : hostileSign * hostileLower * hostileSign⁻¹ = hostileLower⁻¹ := hostileLower_sign_inverse

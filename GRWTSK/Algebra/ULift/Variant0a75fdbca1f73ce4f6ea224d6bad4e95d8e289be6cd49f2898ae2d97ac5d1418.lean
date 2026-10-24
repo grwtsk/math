@@ -2,7 +2,7 @@
 -- Mathematical subject: Algebra
 -- Original status, authors, copyright and AI attribution are retained in source.
 -- Source organization only; compilation and proof acceptance are deferred.
--- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.Field.Variant99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.Field.Variant99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Field/ULift.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.FieldTheory.Variant99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.Field.Variant99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Field/ULift.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
 /-
 Copyright (c) 2023 Yaël Dillies. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
@@ -23,7 +23,7 @@ This file defines instances for fields, semifields, and related structures on `U
 -/
 
 
-namespace GRWTSK.Algebra.Field.Variant99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94
+namespace GRWTSK.Algebra.FieldTheory.Variant99b5fedec62a8afa4ffd3717505fd5655710b46851ce70c810ac543415d9ca94
 
 public section
 

@@ -17,7 +17,7 @@ The Lean scripts and `decide` proofs have NOT been executed.
 namespace GRWTSK.RiemannHypothesis.Checks.RationalMirrorPair
 open Complex Set
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
-open RationalMirror GRWTSK.Analysis.Complex.SymmetricPair
+open RationalMirror GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 open CenteredMellin CenteredMellin.SexticPrimitive
 
 /-- Complete rational witness data, not a sampled or fitted source value. -/

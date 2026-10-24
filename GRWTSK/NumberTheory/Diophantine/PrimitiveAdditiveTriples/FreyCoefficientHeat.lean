@@ -9,7 +9,7 @@ whole diagonal W_k; it is not a Dolbeault projection or arithmetic heat.
 The old weighted map and all source/grade metric costs are retained.
 Unelaborated source proof scripts; no global instance or execution receipt.
 -/
-import GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat
+import GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy
 
 set_option autoImplicit false
@@ -22,7 +22,7 @@ open FreyWeightedSections FreyWeightedBasis FreyWeightedEnergy
 open scoped BigOperators
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
-open GRWTSK.Analysis.LinearAlgebra
+open GRWTSK.Algebra.LinearAlgebra
 
 /-- Coefficients are observed in the old basis; phase labels are not torsion translations. -/
 def phaseCoefficients (a b : ℝ) (k : ℕ) (z : Fin 3 → stage a b k) (i : Index k) :
@@ -161,7 +161,7 @@ theorem lift_continuous (a b l : ℝ) (hl : a * b * l = 1) (k : ℕ) :
     continuous_iff_le_induced.mpr le_rfl
   apply continuous_induced_rng.mpr
   have heq : (coordinates a b k ∘ stageEquiv a b l hl k) =
-      (fun f => GRWTSK.LinearAlgebra.WeightedPermutationEnergy.transport
+      (fun f => GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.transport
         (reverse k) (weight (a * b) k) (coordinates a b k f)) :=
     funext (coordinates_stage a b l hl k)
   rw [heq]
@@ -184,7 +184,7 @@ theorem totalEnergy_agrees (a b : ℝ) (k : ℕ) (lam : ℝ)
       lam * coefficientEnergy a b k c := by
   simp only [totalEnergy, ThreePhaseCoefficientHeat.totalEnergy, ThreePhaseCoefficientHeat.phaseEnergy, Fin.sum_univ_three,
     phaseCoefficients, Finset.sum_add_distrib, ← Finset.mul_sum, coefficientEnergy,
-    GRWTSK.LinearAlgebra.WeightedPermutationEnergy.energy]
+    GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.energy]
 
 theorem defect_heat (a b : ℝ) (k : ℕ) (lam t : ℝ)
     (z : Fin 3 → stage a b k) (c : stage a b k) :
@@ -201,7 +201,7 @@ theorem total_heat (a b : ℝ) (k : ℕ) (lam t : ℝ)
         Real.exp (-6 * t) * defectEnergy a b k lam z c := by
   simp only [totalEnergy, heat_coordinates, closure_coordinates, ThreePhaseCoefficientHeat.total_flow,
     Finset.sum_add_distrib, ← Finset.mul_sum, coefficientEnergy,
-    GRWTSK.LinearAlgebra.WeightedPermutationEnergy.energy, mean_coordinates, defectEnergy]
+    GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.energy, mean_coordinates, defectEnergy]
 
 theorem defect_nonneg (a b : ℝ) (k : ℕ) (lam : ℝ) (hlam : 0 ≤ lam)
     (z : Fin 3 → stage a b k) (c : stage a b k) : 0 ≤ defectEnergy a b k lam z c :=

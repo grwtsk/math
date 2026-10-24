@@ -2,7 +2,7 @@
 -- Mathematical subject: Algebra
 -- Original status, authors, copyright and AI attribution are retained in source.
 -- Source organization only; compilation and proof acceptance are deferred.
--- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.Field.Variant87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.Field.Variant87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Field/ULift.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.FieldTheory.Variant87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.Field.Variant87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Field/ULift.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
 /-
 Copyright (c) 2023 Yaël Dillies. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
@@ -21,7 +21,7 @@ This file defines instances for field, semifield and related structures on `ULif
 -/
 
 
-namespace GRWTSK.Algebra.Field.Variant87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab
+namespace GRWTSK.Algebra.FieldTheory.Variant87595ed51afdbbc6e3b52b8b3e070357b87be7bcfc7654d18f29352f40407bab
 
 universe u
 variable {α : Type u}

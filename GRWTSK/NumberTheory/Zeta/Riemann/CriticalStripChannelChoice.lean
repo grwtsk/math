@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.SymmetricPairChannelChoice
+import GRWTSK.Analysis.ComplexAnalysis.SymmetricPairChannelChoice
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairRegion
 
 set_option autoImplicit false
@@ -19,8 +19,8 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation
 open Complex Set
 open UniformFiniteC1 CenteredMellin.SexticPrimitive.C1Approximation
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 noncomputable section
 namespace UniformPairRegion.Packet
 

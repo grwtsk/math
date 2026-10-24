@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation
+import GRWTSK.Analysis.ComplexAnalysis.LogDerivedPowerEvaluation
 import GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation
 
 set_option autoImplicit false
@@ -20,8 +20,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation
 
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.LogDerivedPowerEvaluation
 open TentSource CountedTentTail SignedTentCorrection CanonicalTentPrimeCriterion
 open CanonicalTentRecordEvaluation
 

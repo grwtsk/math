@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation
+import GRWTSK.Analysis.ComplexAnalysis.ScaledLogPowerEvaluation
 import Mathlib.Tactic.NormNum
 
 set_option autoImplicit false
@@ -9,8 +9,8 @@ set_option autoImplicit false
 /-! Synthetic algebra controls only. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. -/
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.DyadicExponentialControls
 
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
-open GRWTSK.Analysis.Complex.DyadicExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.DyadicExponentialEnclosure
 
 noncomputable section
 

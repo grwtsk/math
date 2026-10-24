@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalLogarithmicResidues
-import GRWTSK.Analysis.Complex.TentMellinKernel
+import GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 
 set_option autoImplicit false
 
@@ -23,8 +23,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
 
 open Filter
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.CanonicalLogarithmicResidues
 

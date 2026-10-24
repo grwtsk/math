@@ -1,11 +1,11 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
 open GRWTSK.Geometry.Hodge.MoserColorHodgeSeparation
 open GRWTSK.Geometry.Hodge.FiniteGraphCellular
-open GRWTSK.Combinatorics.GraphTheory
-open GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson
 example : ProperColoring moserAdj moserFourColor :=
   (properColoring_moserAdj_iff moserFourColor).2
     (fun _ _ hedge => moserFourColor_proper hedge)

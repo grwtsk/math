@@ -18,7 +18,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.JetContourBlocks
 
 open GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open ConstructedRectangleCount (Plan planAt)
 open RationalPoleContour (pointAt)

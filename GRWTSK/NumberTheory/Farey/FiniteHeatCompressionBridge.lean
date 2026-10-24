@@ -40,7 +40,7 @@ universe u v w
 
 namespace GRWTSK.NumberTheory.Farey.FiniteHeatCompressionBridge
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
 open GRWTSK.Geometry.Hodge.FiniteHeatRecovery
 open GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization

@@ -1,9 +1,9 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.BatchCertificate
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
-open GRWTSK.Logic.FiniteSequences.IncrementalDictionary
-open GRWTSK.Logic.FiniteSequences.DecisionCertificate
-open GRWTSK.Logic.FiniteSequences.BatchCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DecisionCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.BatchCertificate
 
 set_option autoImplicit false
 

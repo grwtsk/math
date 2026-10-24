@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.GammaVerticalBound
+import GRWTSK.Analysis.ComplexAnalysis.GammaVerticalBound
 import GRWTSK.NumberTheory.Zeta.Riemann.JensenCentralLogDerivative
 import GRWTSK.NumberTheory.Zeta.Riemann.HorizontalLogDerivative
 
@@ -25,8 +25,8 @@ open Set
 open JensenDiskLogDerivative CubicZetaCircleBound JensenCentralLogDerivative
 open SeparatedContourHeights LeftLogDerivative HorizontalLogDerivative
 open GRWTSK.NumberTheory.Chebyshev.TentPerronLine
-open GRWTSK.Analysis.Complex.GammaVerticalBound
-open GRWTSK.Analysis.Complex.TrigonometricHeightBounds
+open GRWTSK.Analysis.ComplexAnalysis.GammaVerticalBound
+open GRWTSK.Analysis.ComplexAnalysis.TrigonometricHeightBounds
 
 noncomputable section
 

@@ -19,7 +19,7 @@ theorem pole_is_excluded : ¬ NontrivialZetaZero 1
 
 The first proof uses Mathlib's negative even zero theorem and the witness `n = 0` in the exclusion clause. The second uses the explicit `s ≠ 1` clause. These statements preserve the domain of the target; they do not establish where its nontrivial zeros lie.
 
-The reusable [complex reflection result](../../../Analysis/Complex/CriticalReflection/reflection.md) and [Hermitian matrix counterexample](../../../LinearAlgebra/Matrix/HermitianCounterexamples/negative-identity.md) belong to their respective mathematical objects. Their existing declaration names remain compatibility names within `GRWTSK.RiemannHypothesis`.
+The reusable [complex reflection result](../../../Analysis/ComplexAnalysis/CriticalReflection/reflection.md) and [Hermitian matrix counterexample](../../../Algebra/LinearAlgebra/MatrixTheory/HermitianCounterexamples/negative-identity.md) belong to their respective mathematical objects. Their existing declaration names remain compatibility names within `GRWTSK.RiemannHypothesis`.
 
 ## Source and verification scope
 

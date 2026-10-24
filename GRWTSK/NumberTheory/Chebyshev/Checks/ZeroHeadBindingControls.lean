@@ -15,8 +15,8 @@ to be a zeta zero. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.ZeroHeadBindingControls
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalDiskSeparation
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalDiskSeparation
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 
 /-- A shared boundary point can be chosen twice; equality of squared distances

@@ -6,11 +6,11 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary PrefixTableState
-open GRWTSK.Logic.FiniteSequences IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences IndexedDictionary
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState.Checks.Positive
 
 noncomputable instance loopVertexDecidableEq : DecidableEq (SingleObj Bool) :=
   Classical.decEq _
@@ -200,4 +200,4 @@ example : (empty false : State Bool Nat).nodes = (empty true : State Bool Nat).n
       (empty false : State Bool Nat).root ≠ (empty true : State Bool Nat).root :=
   ⟨rfl, rfl, Bool.false_ne_true⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.PrefixTableState.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixTableState.Checks.Positive

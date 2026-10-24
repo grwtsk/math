@@ -18,7 +18,7 @@ set_option autoImplicit false
 noncomputable section
 open MeasureTheory
 
-namespace GRWTSK.MeasureTheory.Integral.Centering
+namespace GRWTSK.Analysis.MeasureTheory.Integral.Centering
 
 variable {α : Type*} [MeasurableSpace α] (μ : Measure α)
   [hμ : IsProbabilityMeasure μ]
@@ -95,4 +95,4 @@ theorem center_minimal (f : α → ℝ) (c : ℝ)
   rw [center_is_minimizer μ f c hf hf2]
   exact le_add_of_nonneg_right (sq_nonneg _)
 
-end GRWTSK.MeasureTheory.Integral.Centering
+end GRWTSK.Analysis.MeasureTheory.Integral.Centering

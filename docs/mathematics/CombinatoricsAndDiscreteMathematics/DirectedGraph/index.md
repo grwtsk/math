@@ -1,0 +1,95 @@
+# Directed Graph
+
+<!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
+
+[Results index](../../index.md) · [Up one directory](../index.md)
+
+This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
+
+## Complete source publication
+
+[Every source module and declaration](../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+Namespace totals and the complete namespace route:
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [CombinatoricsAndDiscreteMathematics](../complete-source-index.md) | 9,373 | 344,526 | 246,190 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+|---:|---:|---:|---:|
+| 21 | 1 | 1 | 0 |
+
+Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
+
+## Top results
+
+**Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
+
+- [Finite dependency neighborhoods and spectral volume](finite-dependency-volume.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A finite upstream dependency neighborhood records each prerequisite once, even when several roots share it. Neighborhoods preserve unions of root sets. A weighted incidence Laplacian defines a configurable…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Targeted Lean elaboration of the added source passed. This is not a whole-library build, transitive imported-source replay, complete axiom audit, graph extraction, or numerical refinement certificate.
+
+  </details>
+
+  **Unresolved premises.** The Lean derivation of positivity of det(I + τ L) from nonnegative incidence weights and τ > 0 remains to be supplied.; The compiler-extraction and numerical-refinement bridges remain separate obligations.
+- [A finite inventory of complete history prefixes](prefix-inventory.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver and root $r$. Let `rows` be a finite list of keys paired with actual rooted path occurrences. Write $t(p)$ for the complete typed edge trace of an occurrence and form
+- [Certified revision of rooted trace dictionaries](rooted-trace-revision.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix actual before and after parent dictionaries, retaining the complete ordered references from before. Exact agreement of their expanded optional lookups at every old reference preserves the actual decoded…
+- [Compaction and remapping of rooted prefix tables](prefix-table-compaction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start with an actual stored rooted prefix-table state satisfying its structural invariant. Compaction derives successful real-row decoding and rooted validity, recovers the actual keyed rooted occurrences, and…
+- [Compaction checkpoints between finite prefix batches](prefix-compaction-checkpoint.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let the initial actual stored prefix state satisfy `WellFormed`, and give two finite chronological lists of batches of rooted keyed occurrences. The checkpoint producer runs the first segment, applies the…
+
+Missing metric evidence: `verification_dependency_graph_unavailable`.
+
+[Ranking definition and weight profile](../../../reference/ranking-profile.json) · [Article standard](../../../reference/result-article-standard.md).
+Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88aeaac60d482693913193e74bf5bb87d0c156d5e876fa`.
+
+## Immediate specializations and directories
+
+No narrower directory is currently registered. Continue to the articles below.
+
+## Articles at this level
+
+- [A finite inventory of complete history prefixes](prefix-inventory.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver and root $r$. Let `rows` be a finite list of keys paired with actual rooted path occurrences. Write $t(p)$ for the complete typed edge trace of an occurrence and form
+- [Certified revision of rooted trace dictionaries](rooted-trace-revision.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix actual before and after parent dictionaries, retaining the complete ordered references from before. Exact agreement of their expanded optional lookups at every old reference preserves the actual decoded…
+- [Compaction and remapping of rooted prefix tables](prefix-table-compaction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start with an actual stored rooted prefix-table state satisfying its structural invariant. Compaction derives successful real-row decoding and rooted validity, recovers the actual keyed rooted occurrences, and…
+- [Compaction checkpoints between finite prefix batches](prefix-compaction-checkpoint.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let the initial actual stored prefix state satisfy `WellFormed`, and give two finite chronological lists of batches of rooted keyed occurrences. The checkpoint producer runs the first segment, applies the…
+- [Direct lookup after a finite rooted prefix schedule](prefix-table-direct-lookup.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver, decidable equality of its total edges, a root, a valid rooted prefix-table state and a finite list of actual schedule actions. The initial and final dictionaries contain complete rooted…
+- [Endpoint sections and incomparable ancestors](endpoint-section.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix any quiver and root $r$, and let $R$ be its root-reachable vertex subtype. Suppose $a,b,c\in R$ satisfy $a\rightsquigarrow c$ and $b\rightsquigarrow c$, while neither $a\rightsquigarrow b$ nor…
+- [Finite chronological batches of stored prefix states](prefix-finite-batch.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start with the existing stored `PrefixTableState.State`, and a finite chronological list of batches of actual rooted keyed occurrences. The runner uses `List.foldl` and the existing `State.update`. Its…
+- [Finite dependency neighborhoods and spectral volume](finite-dependency-volume.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A finite upstream dependency neighborhood records each prerequisite once, even when several roots share it. Neighborhoods preserve unions of root sets. A weighted incidence Laplacian defines a configurable…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Targeted Lean elaboration of the added source passed. This is not a whole-library build, transitive imported-source replay, complete axiom audit, graph extraction, or numerical refinement certificate.
+
+  </details>
+
+  **Unresolved premises.** The Lean derivation of positivity of det(I + τ L) from nonnegative incidence weights and τ > 0 remains to be supplied.; The compiler-extraction and numerical-refinement bridges remain separate obligations.
+- [Finite schedules of batches and compaction](prefix-compaction-schedule.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start from an actual stored prefix state with its structural `WellFormed` invariant and retained root. Each action is either an actual finite batch of rooted keyed occurrences or an actual compaction. The…
+- [Incremental prefix-state updates and relation reindexing](prefix-update-reindex.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix actual finite old and new relation tables, and an injective index map preserving source, target and role. Map actual rooted occurrences through its quiver prefunctor, retaining keys, order and repetitions.…
+- [Occurrence reachability and complete trace prefixes](occurrence-prefix.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The relation on the left is Mathlib's existing `Quiver.Reachable`; no new ancestry or path datatype is introduced. The trace retains every actual arrow, its source and target, and chronological occurrence…
+- [Ordered occurrences of directed paths](path-occurrences.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For actual typed quiver paths $p:a\to b$ and $q:b\to c$, chronological vertex occurrences include both endpoints and satisfy
+- [Parent dictionaries for complete rooted path traces](parent-trace-dictionary.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver, a root and a finite ordered list of keyed actual path occurrences. Let $D$ be the proved complete prefix inventory. The parent representation stores the root, original ordered references, and a…
+- [Reindexing finite relation tables and rooted histories](role-relation-reindex.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix old and new finite relation tables over the same vertex and role types, and an actual index map $\rho:\operatorname{Fin}(n)\to\operatorname{Fin}(m)$. Suppose every mapped row preserves its actual source,…
+- [Reindexing stored prefix-table states](prefix-table-reindex.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix old and new finite relation tables over the same vertex and role types. Let their actual relation-index map preserve source, target and selected role, and suppose it is injective. Start with an arbitrary…
+- [Role-qualified finite relation tables and typed histories](role-relation-table.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a finite table with source and target vertices and a role for each index, and fix a selected role. A qualified ID is an actual table index whose role equals that selection. The table and selected role…
+- [Stable incremental tables of rooted history prefixes](incremental-prefix-table.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a quiver, a root, and finite old and new lists of keyed actual rooted occurrences. The stable extension retains the complete old prefix dictionary, old parent cells and old real-row references as literal…
+- [Stable updates of stored rooted prefix tables](prefix-table-state.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. A stored state retains a root, a finite dictionary $D$ of complete typed edge traces, a parent table $N$, and ordered keyed real-row references. Its structural invariant requires duplicate freedom, prefix…
+- [Transport of original references through finite prefix-table schedules](prefix-reference-transport.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Start with the existing stored prefix state, its retained root and structural `WellFormed` invariant. Actions are the actual chronological batches and compactions from the finite schedule result. Full typed…
+- [Typed edge traces of directed paths](edge-trace.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a root $r$ in any quiver $V$. A tagged edge is an actual dependent triple $(a,b,e)$ with $e:a\to b$. A chronological edge list is valid from $r$ when its first source equals $r$ and every later source…
+- [Unfolding all rooted path occurrences](path-unfolding.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix a root $r$ in any quiver $V$. An occurrence wraps an existing `Quiver.PathStar r`: an endpoint $v$ and an actual finite typed path from $r$ to $v$. An extension from occurrence $p$ to occurrence $q$…
+
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
+
+<!-- END GENERATED MATHEMATICS NAVIGATION -->

@@ -30,7 +30,7 @@ For a bounded linear operator T on a complex Banach space, the set of complex sc
 
 This object record is restricted to the stated bounded setting. Unbounded operators require a domain-aware definition. Do not merge it with the [prime-ideal spectrum of a ring](ring-spectrum.md) because both admit the alternative label `spectrum`.
 
-The [spectral subject](../../subjects/analysis/functional-analysis/linear-operators/spectral-theory/index.md) studies such objects but is not itself an instance of this object. There are no accepted object-hierarchy parents or narrower-object records in this pilot; broader object-facet classification remains unassessed.
+The [spectral subject](../../subjects/Analysis/OperatorTheory/SpectralTheory/index.md) studies such objects but is not itself an instance of this object. There are no accepted object-hierarchy parents or narrower-object records in this pilot; broader object-facet classification remains unassessed.
 
 ## Sources
 

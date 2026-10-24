@@ -12,7 +12,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.UniformPairEvaluation
 open Complex Set
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 open UniformFiniteC1 UniformPairEvaluation
-open GRWTSK.Analysis.Complex.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 noncomputable section
 
 /-- Value polynomial: 16 terms. Its actual derivative: 15 terms. -/

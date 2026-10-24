@@ -10,7 +10,7 @@ conductor. The minimum uses Mathlib's existing existential choice, and its
 exponent is shown independent of that choice. No new global minimal equation.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Proof scripts unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.C4MinimalScale
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.C4MinimalScale
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoLowDepth
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
@@ -20,9 +20,9 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoMinimalBudget
 
 open WeierstrassCurve WithZero Multiplicative
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.C4MinimalScale
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.C4MinimalScale
 open FreyOddReduction FreyTwoLowDepth FreyMarkedJInvariant
 
 local instance : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
@@ -180,13 +180,13 @@ theorem correction_twelve_of_scale_two (t : PrimitiveAdditiveTriple)
 theorem correction_twelve_in_first_chamber {t : PrimitiveAdditiveTriple}
     (h : FreyTwoSemistableChamber.Chamber t) : dyadicCorrection t = 12 := by
   exact correction_twelve_of_scale_two t
-    (GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.halfChange (t.a : ℚ))
+    (GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.halfChange (t.a : ℚ))
     (FreyTwoSemistableChamber.minimal_at_two h) rfl
 
 theorem correction_twelve_in_even_chamber {t : PrimitiveAdditiveTriple}
     (h : FreyTwoEvenSummandChamber.Chamber t) : dyadicCorrection t = 12 := by
   exact correction_twelve_of_scale_two t
-    GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.zeroChange
+    GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.zeroChange
     (FreyTwoEvenSummandChamber.minimal_at_two h) rfl
 
 /-- This cost is only the removed model-discriminant contribution at the fixed prime two. -/

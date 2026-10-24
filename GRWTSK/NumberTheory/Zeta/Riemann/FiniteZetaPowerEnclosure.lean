@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.FiniteCubicZetaTail
-import GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation
+import GRWTSK.Analysis.ComplexAnalysis.RoundedLogPowerEvaluation
 
 set_option autoImplicit false
 
@@ -19,9 +19,9 @@ executed certificate. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.FiniteZetaPowerEnclosure
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
-open GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.RoundedLogPowerEvaluation
 open FiniteCubicZetaApproximation FiniteCubicZetaTail
 
 noncomputable section

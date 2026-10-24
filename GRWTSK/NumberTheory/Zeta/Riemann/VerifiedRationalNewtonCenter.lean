@@ -17,7 +17,7 @@ are not supplied here. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.VerifiedRationalNewtonCenter
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open RationalZetaCenterEvaluation CanonicalZeroDivisor
 
 /-- Literal source binding, not equality of approximate displayed coordinates. -/

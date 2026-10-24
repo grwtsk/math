@@ -22,7 +22,7 @@ serialization, source custody, filesystem updates, or a Python refinement.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.IncrementalDictionary
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary
 
 open IndexedDictionary DictionaryRevision
 
@@ -163,4 +163,4 @@ theorem missing_validity_counterexample :
   · simp [Valid]
   · decide
 
-end GRWTSK.Logic.FiniteSequences.IncrementalDictionary
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary

@@ -17,7 +17,7 @@ set_option autoImplicit false
 noncomputable section
 open Filter Set
 open scoped Topology
-namespace GRWTSK.Analysis.Complex.AnalyticLinearODE
+namespace GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE
 
 /-- A zero of finite positive order cannot satisfy f' = h*f near that zero.
 Differentiation lowers its order by one; multiplication by analytic h cannot. -/
@@ -77,4 +77,4 @@ theorem nonvanishing {f h : ℂ → ℂ} {U : Set ℂ} {anchor : ℂ}
   filter_upwards [hopen.mem_nhds hz] with w hw
   exact hode w hw
 
-end GRWTSK.Analysis.Complex.AnalyticLinearODE
+end GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE

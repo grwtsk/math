@@ -27,11 +27,11 @@ parent-pointer encoding, or runtime/JSON refinement theorem.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory
 
 open Quiver PathUnfolding OccurrencePrefix
 
-open GRWTSK.Logic.FiniteSequences
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences
 
 variable {V Key : Type*} [Quiver V] {root : V}
 
@@ -206,4 +206,4 @@ theorem inventory_singleton_origin (key : Key) :
     inventory [(key, origin root)] = [[]] := by
   simp [inventory, trace, EdgeTrace.encode, origin, ofPath]
 
-end GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory

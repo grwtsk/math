@@ -9,7 +9,7 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.RiemannHypothesis.CubicZetaIdentity
 open GRWTSK.RiemannHypothesis.CubicZetaCircleBound
 open GRWTSK.RiemannHypothesis.CubicRemainder

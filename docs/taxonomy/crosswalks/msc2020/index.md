@@ -22,7 +22,7 @@ decision_refs: [D02, D03, D04]
 
 ## Source and rationale
 
-The source is [spectral theory of finite reversible Markov chains](../../subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/finite-reversible-chains/index.md). The candidate uses MSC2020 `47A10` for operator-spectrum questions together with `60J10` for the discrete-time/discrete-state Markov setting. Code existence and the selected printed context were inspected in the official PDF; complete native hierarchy registration was not performed.
+The source is [spectral theory of finite reversible Markov chains](../../subjects/Analysis/OperatorTheory/SpectralTheory/SelfAdjointOperators/FiniteReversibleChains/index.md). The candidate uses MSC2020 `47A10` for operator-spectrum questions together with `60J10` for the discrete-time/discrete-state Markov setting. Code existence and the selected printed context were inspected in the official PDF; complete native hierarchy registration was not performed.
 
 ## Semantics and limitations
 

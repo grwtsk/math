@@ -12,7 +12,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.CountingTailControls
 
 open scoped BigOperators
 open GRWTSK.Analysis.Series.HeightCountingTail
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 
 /-- A finite empty observation has zero count, not an entire-family theorem. -/
 theorem empty_observation_control :

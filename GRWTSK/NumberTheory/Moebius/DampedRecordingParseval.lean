@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
-import GRWTSK.Analysis.Fourier.AngularFrequencyParseval
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.AngularFrequencyParseval
 import GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt
 
 /-!

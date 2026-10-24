@@ -8,7 +8,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightFeatureNormControls
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 

@@ -17,7 +17,7 @@ decision_refs: []
 
 The existing homology subject explicitly concerns invariants of spaces and pairs.
 The maintained corpus also constructs abstract algebraic complexes and their
-homology without supplying such a space. Add [Homological algebra](../../subjects/algebra/homological-algebra/index.md)
+homology without supplying such a space. Add [Homological algebra](../../subjects/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/index.md)
 with a fresh persistent identity; retain the meaning and identity of topological
 homology and all other canonical records.
 

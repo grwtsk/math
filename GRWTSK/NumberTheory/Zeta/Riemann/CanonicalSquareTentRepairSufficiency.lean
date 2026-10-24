@@ -24,7 +24,7 @@ universe u v
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairSufficiency
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.RiemannHypothesis
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss

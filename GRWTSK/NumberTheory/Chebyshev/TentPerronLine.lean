@@ -24,8 +24,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentPerronLine
 open MeasureTheory Filter
 open scoped Topology BigOperators
 open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 open GRWTSK.NumberTheory.LSeries.TentPairing
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CountedTentTail

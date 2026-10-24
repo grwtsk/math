@@ -18,8 +18,8 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.FiniteNewtonCenter
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 open FiniteCubicZetaTail FiniteZetaPowerEnclosure RationalNewtonWitness CanonicalZeroDivisor
 
 /-- A rational complete-tail ceiling at a rational center; no real-power evaluation. -/

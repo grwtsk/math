@@ -30,7 +30,7 @@ namespace GRWTSK.NumberTheory.Primes.GoldbachFejerCoreLowerBound
 
 open scoped BigOperators Real ENNReal
 open Set MeasureTheory
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionMainModel
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionCoefficientFactorization

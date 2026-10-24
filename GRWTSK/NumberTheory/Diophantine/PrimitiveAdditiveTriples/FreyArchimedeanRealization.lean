@@ -57,7 +57,7 @@ theorem realize_energy (a b : ℚ) (k : ℕ) (f : stage a b k) :
     FreyWeightedEnergy.coefficientEnergy (a : ℝ) (b : ℝ) k (realize a b k f) =
       ∑ i : Index k, ((((basis a b k).repr f i : ℚ) : ℝ)) ^ 2 := by
   unfold FreyWeightedEnergy.coefficientEnergy
-  unfold GRWTSK.LinearAlgebra.WeightedPermutationEnergy.energy
+  unfold GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.energy
   simp only [realize_coordinates]
 
 /-- The existing sharp energy factors apply to the same rationally defined operator. -/
@@ -161,6 +161,6 @@ theorem integer_energy (a b : ℤ) (k : ℕ) (v : Index k → ℤ) :
   rw [realize_integer_synthesize]
   simp only [realSynthesize, FreyWeightedEnergy.coefficientEnergy,
     FreyWeightedEnergy.coordinates_synthesize,
-    GRWTSK.LinearAlgebra.WeightedPermutationEnergy.energy]
+    GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.energy]
 
 end GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization

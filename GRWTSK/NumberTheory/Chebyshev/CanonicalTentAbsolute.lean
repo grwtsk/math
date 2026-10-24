@@ -3,7 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalHighCounting
 import GRWTSK.Analysis.Series.ScaledHeightCountingTail
-import GRWTSK.Analysis.Complex.TentKernelTail
+import GRWTSK.Analysis.ComplexAnalysis.TentKernelTail
 import Mathlib.Topology.Algebra.InfiniteSum.Group
 
 set_option autoImplicit false
@@ -25,8 +25,8 @@ open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.CanonicalHighCounting
 open GRWTSK.Analysis.Series.HeightCountingTail
 open GRWTSK.Analysis.Series.ScaledHeightCountingTail
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentKernelTail
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentKernelTail
 
 noncomputable section
 

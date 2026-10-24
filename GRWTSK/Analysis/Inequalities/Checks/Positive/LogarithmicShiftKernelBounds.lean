@@ -112,7 +112,7 @@ namespace GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights
 #print axioms logarithmic_sqrt_lower_weight
 end GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileWeights
 
-namespace GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments
+namespace GRWTSK.Analysis.RealAnalysis.Integration.CompactWeightedDerivativeMoments
 #check @compact_weight_integrable
 #check @weighted_deriv_integral
 #check @first_weighted_deriv_integral
@@ -125,21 +125,21 @@ namespace GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments
 #print axioms weighted_second_deriv_integral
 #print axioms first_weighted_second_deriv_integral
 #print axioms differential_moments_zero
-end GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments
+end GRWTSK.Analysis.RealAnalysis.Integration.CompactWeightedDerivativeMoments
 
-namespace GRWTSK.Analysis.Integration.FiniteUnitSumVariation
+namespace GRWTSK.Analysis.RealAnalysis.Integration.FiniteUnitSumVariation
 #check @unit_interval_sample_error
 #check @finite_unit_sum_error
 #print axioms unit_interval_sample_error
 #print axioms finite_unit_sum_error
-end GRWTSK.Analysis.Integration.FiniteUnitSumVariation
+end GRWTSK.Analysis.RealAnalysis.Integration.FiniteUnitSumVariation
 
-namespace GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance
+namespace GRWTSK.Analysis.RealAnalysis.Integration.PositiveHalfLineCutoffBalance
 #check @positive_halfline_cutoff_balance
 #check @positive_halfline_sample_price
 #print axioms positive_halfline_cutoff_balance
 #print axioms positive_halfline_sample_price
-end GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance
+end GRWTSK.Analysis.RealAnalysis.Integration.PositiveHalfLineCutoffBalance
 
 namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
 #check @literal_kernel_polynomial_price

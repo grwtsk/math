@@ -140,7 +140,7 @@ theorem energy_components (a b : ℝ) (k : ℕ) (f : ComplexStage a b k) :
     energy a b k f = FreyWeightedEnergy.coefficientEnergy a b k (component a b k 0 f) +
       FreyWeightedEnergy.coefficientEnergy a b k (component a b k 1 f) := by
   simp only [energy, FreyWeightedEnergy.coefficientEnergy,
-    GRWTSK.LinearAlgebra.WeightedPermutationEnergy.energy, component_coordinates,
+    GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.energy, component_coordinates,
     Complex.normSq_apply, scalarComponent, ← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro i _

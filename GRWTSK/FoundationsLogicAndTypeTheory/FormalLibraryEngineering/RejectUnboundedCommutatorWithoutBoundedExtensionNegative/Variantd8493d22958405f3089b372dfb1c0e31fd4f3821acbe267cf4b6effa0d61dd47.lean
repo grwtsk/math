@@ -1,4 +1,4 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 open GRWTSK.Analysis.Operator.UnboundedPort
 open GRWTSK.Algebra.KTheory.UnboundedKasparovCycle

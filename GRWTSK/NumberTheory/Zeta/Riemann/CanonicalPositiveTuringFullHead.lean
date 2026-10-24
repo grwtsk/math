@@ -33,8 +33,8 @@ open CanonicalZeroDivisor
 open PositiveHeightCountDeficit
 open PositiveHeightSymmetricCount
 open CanonicalPositiveTuringBridge
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedSubsetBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 

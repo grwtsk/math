@@ -10,7 +10,7 @@ The arguments below are conditional theorems. In particular, the
 homomorphisms "characters" are *hypotheses*, not constructions.
 No rank >= 32 theorem about the real record curve is asserted.
 -/
-import GRWTSK.LinearAlgebra.ModTwoIndependenceDescent
+import GRWTSK.Algebra.LinearAlgebra.ModTwoIndependenceDescent
 import GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239FiniteCharacterMatrix
 
 /-!
@@ -38,7 +38,7 @@ obstruction in PR #1051 remains the next open construction.
 
 namespace GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
 
-open GRWTSK.LinearAlgebra.ModTwoIndependenceDescent
+open GRWTSK.Algebra.LinearAlgebra.ModTwoIndependenceDescent
 
 /-- A source-faithful, conditional proof that exact rank-32 character
 data forces integral linear independence. Nothing in this statement

@@ -12,7 +12,7 @@ import Mathlib.Tactic.NormNum
 set_option autoImplicit false
 set_option relaxedAutoImplicit false
 
-namespace GRWTSK.Logic.FiniteCoverage
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteCoverage
 
 /-!
 # Finite certificate coverage
@@ -79,4 +79,4 @@ theorem endpoints_do_not_cover_interval :
 
 
 
-end GRWTSK.Logic.FiniteCoverage
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteCoverage

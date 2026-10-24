@@ -21,7 +21,7 @@ abstract mathematical fixtures, not records of external actions.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.Observation
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation
 
 universe u v w
 
@@ -213,4 +213,4 @@ theorem fine_witness_is_necessary :
 
 end FiniteExamples
 
-end GRWTSK.Logic.Observation
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation

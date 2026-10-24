@@ -8,7 +8,7 @@ retains the exact selected a4 denominator. No coefficient or source label
 is replaced. No intrinsic global jet bundle or uniform height claim.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassSecondJet
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassSecondJet
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionOrder
 
 set_option autoImplicit false
@@ -18,7 +18,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollision
 
 open WeierstrassCurve
 open GRWTSK.Algebra.RingTheory.QuadraticCollisionOrder
-open GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassSecondJet
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassSecondJet
 open FreyTwoBranchDecision FreyGlobalMinimalDiscriminant FreyCollisionOrder
 open FreySelectedProjectiveMarks FreySelectedSplitReduction FreyOddReduction
 

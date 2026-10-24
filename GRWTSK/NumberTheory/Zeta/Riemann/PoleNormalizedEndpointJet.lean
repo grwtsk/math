@@ -18,7 +18,7 @@ namespace GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet
 
 open scoped BigOperators
 open CriticalStripHeightDescent
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 
 noncomputable section
 

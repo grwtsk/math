@@ -22,10 +22,10 @@ validation, runtime refinement or proof authority follows from this construction
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.RootedTraceRevision
 
 open Quiver PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary
-open GRWTSK.Logic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
 
 variable {V Key : Type*} [Quiver V] {beforeRoot afterRoot : V}
 
@@ -174,4 +174,4 @@ theorem certified_revision (beforeRows : List (Key × Occurrence beforeRoot))
   rw [hentries] at hcertificate
   exact (unpack_after beforeRows afterRows hroot hagreement).trans hcertificate.symm
 
-end GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.RootedTraceRevision

@@ -1,7 +1,7 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
-open GRWTSK.Logic.FiniteSequences.IncrementalDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary
 
 private def invalid : Packed Nat Nat := ⟨[], [(11, 0)]⟩
 

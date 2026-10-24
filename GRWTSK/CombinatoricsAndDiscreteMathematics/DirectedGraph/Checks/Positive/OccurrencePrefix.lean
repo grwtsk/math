@@ -6,7 +6,7 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix
 
 section Generic
@@ -28,7 +28,7 @@ example (node : Occurrence root) :
 
 end Generic
 
-namespace GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix.Checks.Positive
 
 noncomputable def emptyOccurrence : Occurrence (SingleObj.star Bool) := origin _
 
@@ -139,4 +139,4 @@ example : reachableEndpoint (selectedOccurrence
     (⟨SingleObj.star Unit, Reachable.refl _⟩ : ReachableVertex (SingleObj.star Unit))) =
       ⟨SingleObj.star Unit, Reachable.refl _⟩ := endpoint_selectedOccurrence _
 
-end GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix.Checks.Positive

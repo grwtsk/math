@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Source-only arithmetic controls. No Lean execution is represented. -/
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.IntegerTraceControls
 
-open GRWTSK.Analysis.Complex.IntegerDyadicTrace
+open GRWTSK.Analysis.ComplexAnalysis.IntegerDyadicTrace
 open GRWTSK.RiemannHypothesis.ConcreteNewtonFirstEndpoint
 
 /-- Negative floor is not truncation toward zero. -/

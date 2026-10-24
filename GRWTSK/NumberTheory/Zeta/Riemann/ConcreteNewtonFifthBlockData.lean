@@ -7,7 +7,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFifthBlockData
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace RationalTaylorSeedNormalization
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 

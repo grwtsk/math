@@ -32,7 +32,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Farey.RamanujanFourierHodge
 
 open scoped BigOperators
-open GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 
 /-- Complex additive character mode on the finite cyclic residue graph. -/
 def additiveMode (q : ℕ) [NeZero q]

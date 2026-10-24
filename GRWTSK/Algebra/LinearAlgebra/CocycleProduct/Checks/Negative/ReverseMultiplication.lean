@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.CocycleProduct
-open GRWTSK.LinearAlgebra.CocycleProduct GRWTSK.Algebra GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.CocycleProduct GRWTSK.Algebra GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 example : cocycleProduct Nat.succ (fun i => schrodingerTransfer (i : ℚ) 0) 2 0 =
     schrodingerTransfer (0 : ℚ) 0 * schrodingerTransfer (1 : ℚ) 0 := by
   apply Matrix.ext

@@ -24,7 +24,7 @@ open scoped Topology
 open SeparatedContourHeights JensenDiskLogDerivative JensenCentralLogDerivative
 open ReflectedStripBudget
 open GRWTSK.NumberTheory.Chebyshev.TentPerronLine
-open GRWTSK.Analysis.Complex.GammaVerticalBound
+open GRWTSK.Analysis.ComplexAnalysis.GammaVerticalBound
 
 noncomputable section
 

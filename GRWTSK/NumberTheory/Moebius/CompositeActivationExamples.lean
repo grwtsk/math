@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity
-import GRWTSK.Order.WellFounded.AdditiveNaturalRank
+import GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.WellFounded.AdditiveNaturalRank
 
 /-! Exact finite fixtures for the signed horizon decomposition.
 The width log(3/2) and horizon log8 admit old primes 2,3,5 and new prime7.

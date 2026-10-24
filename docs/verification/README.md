@@ -8,6 +8,22 @@ GRWTSK/Analysis/Example.lean
 docs/verification/Analysis/Example/
 ```
 
+The [shared taxonomy path contract](_unscoped/taxonomy-path-sync-v1.toml)
+binds the same exact relative subject paths and capitalization under `GRWTSK/`,
+`docs/mathematics/`, `docs/verification/`, and `docs/taxonomy/subjects/`.
+It records retired folder and namespace aliases, source relocations, preserved
+proof variants, and passive verification tasks. Empty peer folders contain
+only a placeholder; they introduce no mathematical definition or acceptance.
+Noe checks this contract with:
+
+```sh
+python3 bindings/mathematics/organization/python/math_taxonomy_path_sync.py check --math-root /path/to/math
+```
+
+Historical source and verification records keep their original pins and hashes.
+Resolve later placement through the shared contract's relocation rows; a new
+folder or declaration name does not inherit an earlier replay receipt.
+
 The [SourceCorpus subject migration](_unscoped/sourcecorpus-taxonomy-v1.toml)
 retires the provenance-based Lean root. Its subject-local TOML manifests bind
 every moved source occurrence, original Git blob, current pre-move digest,

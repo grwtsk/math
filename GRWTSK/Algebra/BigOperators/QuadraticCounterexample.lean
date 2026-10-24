@@ -10,11 +10,11 @@ This module proves local algebra/analysis and conditional returns, not P04.
 Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Analysis.Waveform
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform
 
 /-- Total squared magnitude alone cannot identify contributions of two channels. -/
 theorem same_total_different_diagonal :
     ((1:ℝ)+0)^2 = ((1/2:ℝ)+(1/2))^2 ∧
     (1:ℝ)^2+0^2 ≠ (1/2:ℝ)^2+(1/2)^2 := by norm_num
 
-end GRWTSK.Analysis.Waveform
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform

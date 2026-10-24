@@ -11,7 +11,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.FiniteZetaCenterControls
 
 open GRWTSK.RiemannHypothesis.FiniteCubicZetaApproximation
 open GRWTSK.RiemannHypothesis.FiniteNewtonCenter
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 
 /-- An empty Dirichlet prefix has first omitted point one, not zero. -/
 theorem empty_cutoff : cutoff 0 = 1 := by norm_num [cutoff]
@@ -21,11 +21,11 @@ theorem one_term_cutoff : cutoff 1 = 2 := by norm_num [cutoff]
 /-- Even the empty prefix retains all terminal corrections. -/
 theorem empty_value (s : ℂ) : approximation 0 s = (s - 1)⁻¹ + 1 / 2 + s / 12 := by
   simp [approximation, terminalFactor, cutoff,
-    GRWTSK.Analysis.Complex.IntervalMellinKernel.logPower, one_div]
+    GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel.logPower, one_div]
 
 theorem empty_slope (s : ℂ) : approximationSlope 0 s = -(s - 1)⁻¹ ^ 2 + 1 / 12 := by
   simp [approximationSlope, terminalSlope, cutoff,
-    GRWTSK.Analysis.Complex.IntervalMellinKernel.logPower, one_div, inv_pow]
+    GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel.logPower, one_div, inv_pow]
 
 /-- The pointwise tail at a point does not control its derivative. -/
 theorem pointwise_zero_tail_nonzero_slope :

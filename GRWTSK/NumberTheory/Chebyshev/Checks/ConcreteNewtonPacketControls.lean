@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Source-only controls. None proves SourceAcceptance or executes the full checker. -/
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonPacketControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open ConcreteNewtonPacket
 
 theorem prefix_and_terminal : prefixLength = 4096 ∧ prefixLength + 1 = 4097 := by

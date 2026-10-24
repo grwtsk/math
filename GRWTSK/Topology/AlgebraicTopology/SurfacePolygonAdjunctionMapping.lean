@@ -19,7 +19,7 @@ set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping
 
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment

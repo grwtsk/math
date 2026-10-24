@@ -55,7 +55,7 @@ open GRWTSK.NumberTheory.VonMangoldt.MellinBlockHolomorphy
 open GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications
 open GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification
 open GRWTSK.NumberTheory.Zeta.PoleRemovedSource
-open GRWTSK.Analysis.Complex.AnalyticLinearODE
+open GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE
 open GRWTSK.Analysis.MellinTransform.DyadicBounds
 
 def rightHalfPlane (ρ : ℝ) : Set ℂ :=

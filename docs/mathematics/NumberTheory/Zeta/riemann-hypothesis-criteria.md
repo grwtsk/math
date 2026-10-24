@@ -88,7 +88,7 @@ retains the exponential allowance `2 * Real.exp T * T ^ 2`. The diagonal upper
 bound in [GramDiagonalBound](../../../../GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean)
 and the cross-energy lower bound in `PolynomialEnergyCriterion` leave the
 required cross-energy upper bound open.
-[RankOneQuadraticForm](../../../../GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean)
+[RankOneQuadraticForm](../../../../GRWTSK/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm.lean)
 and the determinant equivalence in `IntegerSampleGrowth` retain the same energy
 debt; a determinant identity does not pay it.
 
@@ -96,7 +96,7 @@ The separate explicit-formula route in
 [CorrelationPairing](../../../../GRWTSK/NumberTheory/ExplicitFormula/CorrelationPairing.lean)
 has two open propositions: `EstimateObligation` and `BridgeObligation`. Its
 arithmetic representation is not a proof of either. Generic transform assembly
-in [EnergyInterfaceEquivalence](../../../../GRWTSK/Logic/ProofEvidence/EnergyInterfaceEquivalence.lean)
+in [EnergyInterfaceEquivalence](../../../../GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofEvidence/EnergyInterfaceEquivalence.lean)
 can encode the whole original cross energy as its head; its equivalence to `P04`
 does not by itself identify a new kernel or prove cancellation. P05 and the
 pointwise return remain separate open obligations.

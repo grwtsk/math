@@ -18,7 +18,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalJetPolePatch
 
 open Metric Set
-open GRWTSK.Analysis.Complex GRWTSK.Analysis.ErrorBounds
+open GRWTSK.Analysis.ComplexAnalysis GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
 open RationalNewtonDisk (magnitude norm_le_magnitude)
 open CriticalStripHeightDescent

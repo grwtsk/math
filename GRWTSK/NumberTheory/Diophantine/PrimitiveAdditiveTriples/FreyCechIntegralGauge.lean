@@ -7,7 +7,7 @@ The integral quotient is split; orthogonal normalization has separate
 mod-3 and mod-4 costs. No intrinsic H0, model lattice or height conclusion.
 Source proof scripts only; no elaboration or kernel acceptance is asserted.
 -/
-import GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum
+import GRWTSK.Algebra.LinearAlgebra.ThreeCellIntegralMinimum
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGaugeMetric
 
@@ -20,7 +20,7 @@ open FreyWeightedSections FreyWeightedBasis FreyWeightedEnergy
 open FreyArchimedeanRealization FreyCechHodgeComparison
 open GRWTSK.Algebra.Homology.ThreeCellCech
 open GRWTSK.Algebra.Homology.ThreeCellIntegralGauge
-open GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum
+open GRWTSK.Algebra.LinearAlgebra.ThreeCellIntegralMinimum
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
 abbrev IntegerCell (k : ℕ) := Cell (Index k → ℤ)
@@ -38,7 +38,7 @@ theorem coefficient_realize (a b : ℤ) (k : ℕ) (v : IntegerCell k) (i : Index
     coefficientCell ((a : ℚ) : ℝ) ((b : ℚ) : ℝ) k (realize a b k v) i =
       castCell (scalarCell k v i) := by
   apply Prod.ext <;> funext j <;>
-    simp [coefficientCell, GRWTSK.Analysis.LinearAlgebra.ThreeCellHodgeGauge.mapCell,
+    simp [coefficientCell, GRWTSK.Algebra.LinearAlgebra.ThreeCellHodgeGauge.mapCell,
       coordinateMap, realize, mapFields, realEmbedding, realSynthesize,
       coordinates_synthesize, scalarCell, castCell]
 

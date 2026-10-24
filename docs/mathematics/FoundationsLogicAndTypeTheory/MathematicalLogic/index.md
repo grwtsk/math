@@ -4,11 +4,31 @@
 
 [Results index](../../index.md) · [Up one directory](../index.md)
 
-This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
+**Subject:** `urn:uuid:72d4d327-ab11-4ac8-a09c-0db545aed427` · editorial status: **proposed** · [definition, scope and sources](../../../taxonomy/subjects/FoundationsLogicAndTypeTheory/MathematicalLogic/index.md).
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+The mathematical study of formal languages, consequence, theories and their interpretations, including the capabilities and limitations of formal reasoning.
+
+**Scope.** The field includes syntactic, semantic, set-theoretic and effective approaches. It is not exhausted by one classical calculus, a particular proof assistant, or philosophical argumentation in general. Foundations of mathematics has broader connections than any single logical formalism; this page does not rename that whole field.
+
+## Complete source publication
+
+[Every source module and declaration](../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+Namespace totals and the complete namespace route:
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [FoundationsLogicAndTypeTheory](../complete-source-index.md) | 18,345 | 324,929 | 168,676 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 2 | 0 | 0 | 0 |
+| 15 | 0 | 0 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -16,8 +36,11 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
+- [Certificates for incrementally decoded batches](FiniteSequences/batch-certificate.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `certificate : Certificate Key Payload` contain an actual proof of its predicate on its exact entries. With decidable payload equality, assume
+- [Composition of incremental dictionary decoding](FiniteSequences/incremental-composition.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The validity premise supplies both the first append-decoding theorem and the validity needed for the second append. List append associativity then compares the actual decoder results. Starting from `pack…
 - [Constructive propositional derivations](Propositional/ConstructiveDerivation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `Formula` contains atoms, truth, falsity, conjunction, disjunction and implication. `Meaning valuation` interprets atoms as arbitrary propositions and each connective by its corresponding constructive…
 - [Content-bound observation reuse and completion claims](FiniteSequences/ContentBoundCache.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.observation_reuse` states that equal source bytes and equal observer profiles have equal observations. `unchanged_preserved` and `changed_refreshed`…
+- [Exact indexed dictionaries](FiniteSequences/indexed-dictionary.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For any finite list of key–payload pairs and decidable equality on payloads, `unpack_pack` proves the exact equation \[ \operatorname{unpack}(\operatorname{pack}(\mathrm{entries})) =…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -26,12 +49,88 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Finite Sequences](FiniteSequences/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Content-bound observation reuse and completion claims](FiniteSequences/ContentBoundCache.md).
-2. **[Propositional](Propositional/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+1. **[Computability theory](../Computability/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of effective computation, computable functions and sets, and the limits and relative strength of algorithmic procedures.
+2. **[Finite Coverage](FiniteCoverage/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Finite coverage and scope](FiniteCoverage/scope.md).
+3. **[Finite Sequences](FiniteSequences/index.md)** — 0 immediate children · 9 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Certificates for incrementally decoded batches](FiniteSequences/batch-certificate.md); [Composition of incremental dictionary decoding](FiniteSequences/incremental-composition.md).
+4. **[Mechanistic Reasoning](MechanisticReasoning/index.md)** — 0 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Finite observation classification](MechanisticReasoning/finite-observation-classification.md); [From ethical obligations to mechanistic reasoning](MechanisticReasoning/ethics-capsules.md).
+5. **[Model theory](../ModelTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of structures as interpretations of formal languages and of the connections between their properties, definability and the sentences they satisfy.
+6. **[Proof theory](../ProofTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of formal deductions, proof systems and their transformations, strengths and limitations.
+7. **[Propositional](Propositional/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Constructive propositional derivations](Propositional/ConstructiveDerivation.md).
+8. **[Set theory](../SetTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of sets, membership and the structures and principles governing collections, including infinite collections and axiomatic theories of them.
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+## Articles at this level
+
+- [Observable-fiber information loss: exact Farey and Bombieri adapters](information-loss-farey-weil.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Formalization state:** `SOURCE_INTEGRATED / NOT_LEAN_BUILT / NOT_FRESH_KERNEL_CHECKED / TRANSITIVE_AXIOMS_PENDING`. The declarations below are authored Lean proofs, not independently accepted kernel…
+
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
+
+# Logic
+
+
+
+[All mathematical areas](../../../index.md) · [Lean source folder](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic).
+
+<!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
+| Inventory | Count |
+|---|---:|
+| Lean source modules (current regular filesystem files) | 104 |
+| Curated registered object guides | 10 |
+| Curated documented object groups | 3 |
+| Curated primary sources linked | 10 |
+| Curated archive intake records | 3 |
+| Curated selected catalog families | 0 |
+
+No current whole-corpus source-command census is available.
+<!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
+
+These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../../reference/library-pages.md#count-definitions).
+
+Historical curated observer census (not current totals): At least 556 source declaration commands, including 296 theorem/lemma commands, across 60 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+
+## FiniteCoverage
+
+1 object guide · 1 distinct linked primary source file.
+
+Historical curated observer census (not current totals): Linked primary-source scope: 4 source declaration commands, including 4 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Finite coverage and scope](FiniteCoverage/scope.md).
+
+## FiniteSequences
+
+8 object guides · 8 distinct linked primary source files.
+
+Historical curated observer census (not current totals): Linked primary-source scope: 88 source declaration commands, including 68 theorem/lemma commands, across 8 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Certificates for incrementally decoded batches](FiniteSequences/batch-certificate.md).
+- [Composition of incremental dictionary decoding](FiniteSequences/incremental-composition.md).
+- [Exact indexed dictionaries](FiniteSequences/indexed-dictionary.md).
+- [Exact ordered history extensions](FiniteSequences/append-only-history.md).
+- [Prefix service intervals and obligation coverage](FiniteSequences/prefix-coverage.md).
+- [Revision of indexed dictionaries](FiniteSequences/dictionary-revision.md).
+- [Semantic certificates for finite premises](FiniteSequences/decision-certificate.md).
+- [Stable incremental dictionary encoding](FiniteSequences/incremental-dictionary.md).
+
+## ProofChecking
+
+1 object guide · 1 distinct linked primary source file.
+
+Historical curated observer census (not current totals): Linked primary-source scope: 19 source declaration commands, including 6 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+
+- [Proof-checking source roles](../FormalLibraryEngineering/ProofChecking/source-roles.md).
+
+## Sources and verification
+
+[Selected catalog](../../../reference/results.md) · [Archive source candidates](../../../reference/source-intake.md).
+
+## Mechanistic reasoning exposition
+
+[From ethical obligations to mechanistic reasoning](MechanisticReasoning/ethics-capsules.md) connects the A–M–I–F–E–D–O–X taxonomy to precise judgments and proof obligations. Three isolated mathematical companions address rooted authorization, support from partial observations, and effect-preserving simulation. This authored exposition is additional to the inventory snapshot above; the inventory counts have not been regenerated.
+
+[Finite observation classification](MechanisticReasoning/finite-observation-classification.md) specializes nonempty observation support to an executable four-outcome finite scan. It separates exact listed semantics from ambient conclusions requiring an explicit coverage premise. Source-bound verification evidence and unresolved acceptance gates are tracked in [PR #313](https://github.com/grwtsk/math/pull/313).

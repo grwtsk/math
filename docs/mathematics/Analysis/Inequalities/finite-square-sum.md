@@ -15,7 +15,7 @@ restores the original sums.
 The [source](../../../../GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean)
 extracts the reusable finite-sum result from OpenAI's
 [TraceRank source](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/Algebra/DepthFive/TraceRank.lean).
-It is used by the [Hermitian matrix trace-rank theorem](../../LinearAlgebra/Matrix/trace-rank.md)
+It is used by the [Hermitian matrix trace-rank theorem](../../Algebra/LinearAlgebra/MatrixTheory/trace-rank.md)
 on the real eigenvalue function. This makes the multiplier matrix rank rather
 than ambient dimension.
 

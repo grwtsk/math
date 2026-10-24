@@ -6,11 +6,11 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.RootedTraceRevis
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix PrefixInventory ParentTraceDictionary RootedTraceRevision
-open GRWTSK.Logic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences IndexedDictionary DictionaryRevision DecisionCertificate
 
-namespace GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.RootedTraceRevision.Checks.Positive
 
 noncomputable instance loopVertexDecidableEq : DecidableEq (SingleObj Bool) :=
   Classical.decEq _
@@ -187,4 +187,4 @@ theorem empty_roots_still_required :
       emptyBefore.root ≠ emptyAfter.root :=
   ⟨fun _ hmem => False.elim (List.not_mem_nil hmem), rfl, rfl, rfl, empty_root_context_lost⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.RootedTraceRevision.Checks.Positive

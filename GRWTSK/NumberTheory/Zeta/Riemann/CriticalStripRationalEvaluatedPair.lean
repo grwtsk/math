@@ -17,8 +17,8 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.RationalEvaluatedPair
 open Complex Set
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 open CenteredMellin.SexticPrimitive CenteredMellin.SexticPrimitive.C1Approximation
 open RationalFiniteEvaluation RationalMirror
 

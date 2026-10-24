@@ -13,9 +13,9 @@ discharging them. The negative examples expose absent debt, ungrounded cycles,
 non-entailment metadata, and changed source identities.
 -/
 
-namespace GRWTSK.Logic.StateTransition.ResearchState.Examples
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Examples
 
-open GRWTSK.Logic.Inference
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Inference
 open GRWTSK.ProofHorizon.CorkscrewChamberCap
 
 /-- Fixture identities distinguish revisions even for an unchanged printed name. -/
@@ -411,4 +411,4 @@ theorem mutual_circular_reduction_rejected (claim : Bool) :
 #print axioms mutual_cycle_has_no_support
 #print axioms mutual_circular_reduction_rejected
 
-end GRWTSK.Logic.StateTransition.ResearchState.Examples
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Examples

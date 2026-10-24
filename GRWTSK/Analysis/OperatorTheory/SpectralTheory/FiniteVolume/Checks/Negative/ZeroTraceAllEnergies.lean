@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.Sturmian
-open GRWTSK.LinearAlgebra.Sturmian
+open GRWTSK.Algebra.LinearAlgebra.Sturmian
 
 -- The free transfer at energy three remains outside the bounded-trace interval.
 example : |Matrix.trace (transfer 3 0 0 0 0)| ≤ 2 := by

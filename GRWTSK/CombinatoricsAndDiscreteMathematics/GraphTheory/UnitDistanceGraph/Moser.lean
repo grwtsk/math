@@ -7,7 +7,7 @@ See LICENSES/MIT.txt and evidence/source-manifest.json.
 import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.MoserSource
 import Mathlib.Data.Fin.SuccPred
 
-namespace GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson
 
 /-- The explicit four-color assignment, in upstream vertex order 0–6. -/
 def moserFourColor : Fin 7 → Fin 4 := ![0, 1, 2, 0, 1, 2, 3]
@@ -126,4 +126,4 @@ theorem plane_not_three_colorable : ¬ PlaneColorable 3 := by
   exact moser_not_three_colorable (fun i ↦ f (moserPoint i))
     (fun _ _ h ↦ hf _ _ (moser_edge_unit h))
 
-end GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson

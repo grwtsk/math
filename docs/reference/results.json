@@ -76,7 +76,7 @@
       "premises": "every batch>=1; fixed finite channels; Q>0; nonnegative quotas sum to Q; required fixed quotas positive",
       "verification": "historical-source-relocated",
       "evidence": "artifact:gitblob:65a87c069a4377b8007f7ec91de73833d500b216",
-      "page": "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+      "page": "docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md",
       "contribution": "Checked reuse/conditional interface; no originality claim",
       "integration": "local working source; broader layout replay separate",
       "publication": "no publication action in this packet",
@@ -132,6 +132,14 @@
         "expected_source_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a",
         "observed_source_sha256": "f98eee7c59ea15f6e66f20eddb079719d05bcd72a0613c052afdc441244a39aa",
         "source_matches_catalog": false
+      },
+      "current_layout_binding": {
+        "contract": "docs/verification/_unscoped/taxonomy-path-sync-v1.toml",
+        "historical_page": "docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md",
+        "page": "docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md",
+        "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Sequences/QuotaDiscrepancy.lean",
+        "verification": "NOT_A_REPLAY_RECEIPT",
+        "observed_source_sha256": "f98eee7c59ea15f6e66f20eddb079719d05bcd72a0613c052afdc441244a39aa"
       }
     },
     {

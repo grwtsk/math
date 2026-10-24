@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Real.TentRationalCorrection
-import GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+import GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -33,7 +33,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound
 
 open GRWTSK.Analysis.Real.TentRationalCorrection
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 
 noncomputable section
 
@@ -102,17 +102,17 @@ theorem computeLower_le_base
       (lowerBaseQ N x h value error : ℝ) := by
   unfold computeLower
   rw [cast_downQ]
-  exact (GRWTSK.Analysis.Complex.DyadicRoundedSquaring.down_bounds bits _).1
+  exact (GRWTSK.Analysis.ComplexAnalysis.DyadicRoundedSquaring.down_bounds bits _).1
 
 /-- The directly rounded lower endpoint loses strictly less than one dyadic unit. -/
 theorem base_lt_computeLower_add_grid
     (N : ℕ) (x h value error : ℚ) (bits : ℕ) :
     (lowerBaseQ N x h value error : ℝ) <
       (computeLower N x h value error bits : ℝ) +
-        1 / GRWTSK.Analysis.Complex.DyadicRoundedSquaring.scale bits := by
+        1 / GRWTSK.Analysis.ComplexAnalysis.DyadicRoundedSquaring.scale bits := by
   unfold computeLower
   rw [cast_downQ]
-  exact (GRWTSK.Analysis.Complex.DyadicRoundedSquaring.down_bounds bits _).2
+  exact (GRWTSK.Analysis.ComplexAnalysis.DyadicRoundedSquaring.down_bounds bits _).2
 
 /-- Prefix enclosure plus the complete geometric remainder gives a valid lower
 bound for the independently defined signed integral. -/

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Calculus.PolynomialBumpDerivativeEnergy
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.PolynomialBumpDerivativeEnergy
 
 /-!
 # A uniform first-derivative bound for the unchanged source correlation

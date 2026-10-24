@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D11"]
 ---
 # Number theory: subject addition
 
-[Proposals](../index.md) · [Number theory](../../subjects/number-theory/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Number theory](../../subjects/NumberTheory/index.md) · [Registry](../../registry.md)
 
 ## Problem and affected source
 

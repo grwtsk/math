@@ -14,7 +14,7 @@ open Filter
 open scoped Topology
 namespace GRWTSK.NumberTheory.Chebyshev.FirstRieszClassicalResidues
 open FirstRieszClassicalCoefficients TentResidueContributions
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 
 theorem riemannZeta_neg_one : riemannZeta (-1) = -1 / 12 := by
   have h := riemannZeta_neg_nat_eq_bernoulli 1

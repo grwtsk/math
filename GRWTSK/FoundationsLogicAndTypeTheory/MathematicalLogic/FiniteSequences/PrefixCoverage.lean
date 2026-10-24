@@ -19,7 +19,7 @@ This module proves local algebra/analysis and conditional returns, not P04.
 Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Analysis.Waveform
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform
 open scoped BigOperators FourierTransform
 open MeasureTheory
 
@@ -63,4 +63,4 @@ theorem unbounded_clock_does_not_imply_channel_service :
 theorem fractional_rounding_starves : ⌊(1 / 2 : ℝ)⌋₊ = 0 := by norm_num
 
 
-end GRWTSK.Analysis.Waveform
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform

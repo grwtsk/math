@@ -3,7 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
-import GRWTSK.Analysis.Complex.ClosedDiskCauchy
+import GRWTSK.Analysis.ComplexAnalysis.ClosedDiskCauchy
 
 set_option autoImplicit false
 
@@ -22,7 +22,7 @@ namespace GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds
 open Metric Set Filter
 open scoped Topology
 open CriticalStripHeightDescent
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 
 noncomputable section
 

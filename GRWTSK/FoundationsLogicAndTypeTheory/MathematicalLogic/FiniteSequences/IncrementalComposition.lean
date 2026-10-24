@@ -20,7 +20,7 @@ No runtime/hash/compression/filesystem refinement is asserted.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.IncrementalComposition
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalComposition
 
 open IndexedDictionary IncrementalDictionary
 
@@ -63,4 +63,4 @@ theorem sequential_representation_counterexample :
   change ([7, 8] : List Nat) = [8, 7] at hdictionary
   simp at hdictionary
 
-end GRWTSK.Logic.FiniteSequences.IncrementalComposition
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalComposition

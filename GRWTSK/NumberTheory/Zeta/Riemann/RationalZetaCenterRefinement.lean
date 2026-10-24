@@ -18,9 +18,9 @@ used. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalZetaCenterEvaluation
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 open FiniteCubicZetaApproximation FiniteCubicZetaTail
 
 @[simp] theorem embed_sourceExponent (c : QComplex) :
@@ -44,20 +44,20 @@ open FiniteCubicZetaApproximation FiniteCubicZetaTail
 
 /-- Both local values and errors are those of the already maintained power theorem. -/
 theorem powerLog_refines (q : ℚ) (c : QComplex)
-    (p : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule)
-    (hp : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible q (sourceExponent c) p) :
+    (p : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule)
+    (hp : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible q (sourceExponent c) p) :
     QComplex.embed (powerLogValue q c p) = FiniteZetaPowerEnclosure.logValue
-        (GRWTSK.Analysis.Complex.RationalPowerEvaluation.toSpec q (sourceExponent c) p hp) ∧
+        (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.toSpec q (sourceExponent c) p hp) ∧
       (powerLogError q c p : ℝ) = FiniteZetaPowerEnclosure.logError
-        (GRWTSK.Analysis.Complex.RationalPowerEvaluation.toSpec q (sourceExponent c) p hp) := by
-  have he := GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute_refines
+        (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.toSpec q (sourceExponent c) p hp) := by
+  have he := GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute_refines
     q (sourceExponent c) p hp
-  have hl : (GRWTSK.Analysis.Complex.RationalPowerEvaluation.toSpec
+  have hl : (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.toSpec
       q (sourceExponent c) p hp).base.logarithm.center =
-      GRWTSK.Analysis.Complex.RationalPowerEvaluation.logCenter q p := rfl
-  have hg : (GRWTSK.Analysis.Complex.RationalPowerEvaluation.toSpec
+      GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.logCenter q p := rfl
+  have hg : (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.toSpec
       q (sourceExponent c) p hp).base.logarithm.error =
-      GRWTSK.Analysis.Complex.RationalPowerEvaluation.logError q p := rfl
+      GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.logError q p := rfl
   constructor
   · simp only [powerLogValue, QComplex.embed_smul, Rat.cast_neg, Complex.ofReal_neg,
       FiniteZetaPowerEnclosure.logValue, hl, he.1]
@@ -65,23 +65,23 @@ theorem powerLog_refines (q : ℚ) (c : QComplex)
       QComplex.cast_rect, FiniteZetaPowerEnclosure.logError, hl, hg, he.1, he.2]
 
 theorem power_sound (q : ℚ) (c : QComplex)
-    (p : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule)
-    (hp : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible q (sourceExponent c) p) :
+    (p : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule)
+    (hp : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible q (sourceExponent c) p) :
     ‖logPower (q : ℝ) (-QComplex.embed c) -
-      QComplex.embed (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+      QComplex.embed (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
         q (sourceExponent c) p).value‖ ≤
-      ((GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute q (sourceExponent c) p).error : ℝ) := by
+      ((GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute q (sourceExponent c) p).error : ℝ) := by
   simpa only [embed_sourceExponent] using
-    GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute_sound q (sourceExponent c) p hp
+    GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute_sound q (sourceExponent c) p hp
 
 theorem powerLog_sound (q : ℚ) (c : QComplex)
-    (p : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule)
-    (hp : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible q (sourceExponent c) p) :
+    (p : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule)
+    (hp : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible q (sourceExponent c) p) :
     ‖-(Real.log (q : ℝ) : ℂ) * logPower (q : ℝ) (-QComplex.embed c) -
       QComplex.embed (powerLogValue q c p)‖ ≤ (powerLogError q c p : ℝ) := by
   rw [(powerLog_refines q c p hp).1, (powerLog_refines q c p hp).2]
   simpa only [embed_sourceExponent] using FiniteZetaPowerEnclosure.logValue_sound
-    (GRWTSK.Analysis.Complex.RationalPowerEvaluation.toSpec q (sourceExponent c) p hp)
+    (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.toSpec q (sourceExponent c) p hp)
 
 /-- No whole-prefix error certificate is supplied: each error is recomputed. -/
 theorem finite_sound (N : ℕ) (c : QComplex) (p : Plan N) (hp : Admissible N c p) :
@@ -90,9 +90,9 @@ theorem finite_sound (N : ℕ) (c : QComplex) (p : Plan N) (hp : Admissible N c 
       ‖approximationSlope N (QComplex.embed c) - QComplex.embed (finiteSlopeQ N c p)‖ ≤
         (finiteSlopeErrorQ N c p : ℝ) := by
   have hv : ‖(∑ i : Fin N, logPower ((i.1 : ℝ) + 1) (-QComplex.embed c)) -
-      ∑ i : Fin N, QComplex.embed (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+      ∑ i : Fin N, QComplex.embed (GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
         ((i.1 : ℚ) + 1) (sourceExponent c) (p.prefix i)).value‖ ≤
-      ∑ i : Fin N, ((GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
+      ∑ i : Fin N, ((GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.compute
         ((i.1 : ℚ) + 1) (sourceExponent c) (p.prefix i)).error : ℝ) := by
     rw [← Finset.sum_sub_distrib]
     refine (norm_sum_le _ _).trans (Finset.sum_le_sum ?_)

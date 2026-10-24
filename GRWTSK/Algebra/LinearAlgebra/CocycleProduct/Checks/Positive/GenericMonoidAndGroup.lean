@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.CocycleProduct
-open GRWTSK.LinearAlgebra.CocycleProduct GRWTSK.Algebra GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.CocycleProduct GRWTSK.Algebra GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 universe u v
 example {S : Type u} {G : Type v} [Monoid G] (T : S → S) (A : S → G) (n : ℕ) (x : S) :
     cocycleProduct T A n x = orderedProduct (fun k => A (T^[k] x)) 0 n :=

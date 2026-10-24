@@ -24,7 +24,7 @@ statements about actual typed paths, not a JSON or runtime representation theore
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace
 
 open Quiver
 
@@ -172,4 +172,4 @@ theorem broken_join_not_valid (root : V) (first second : TotalEdge V)
     (rest : List (TotalEdge V)) (hjoin : first.2.1 ≠ second.1) :
     ¬ ValidFrom root (first :: second :: rest) := fun h => hjoin h.2.1.symm
 
-end GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace

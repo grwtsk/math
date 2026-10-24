@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.LinearAlgebra.LinearMap.CommutingInvolutionSectors
+import GRWTSK.Algebra.LinearAlgebra.LinearMap.CommutingInvolutionSectors
 import Mathlib.Algebra.Order.Floor.Ring
 import Mathlib.Algebra.Order.Archimedean.Real.Basic
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
@@ -31,7 +31,7 @@ certificates.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 
-open GRWTSK.LinearAlgebra.LinearMap.CommutingInvolutionSectors
+open GRWTSK.Algebra.LinearAlgebra.LinearMap.CommutingInvolutionSectors
 
 /-- A nonempty closed real interval. -/
 structure ClosedInterval where

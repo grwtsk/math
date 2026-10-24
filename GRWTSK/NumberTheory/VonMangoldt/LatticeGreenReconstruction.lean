@@ -54,7 +54,7 @@ theorem cell_square_completion {X : ℕ} (hX : 0<X) (k : ℕ) (c : ℝ) :
 theorem source_square_intervalIntegrable {X k : ℕ} (hX : 0<X) (hk : k<X) (c : ℝ) :
     IntervalIntegrable (fun t ↦ (cumulative X t-c)^2) volume
       (edge X k) (edge X (k+1)) := by
-  have hsq := GRWTSK.MeasureTheory.Integral.Centering.shifted_square_integrable
+  have hsq := GRWTSK.Analysis.MeasureTheory.Integral.Centering.shifted_square_integrable
     unitVolume (cumulative X) c (cumulative_integrable X) (cumulative_square_integrable X)
   change IntegrableOn (fun t ↦ (cumulative X t-c)^2) (Icc (0:ℝ) 1) at hsq
   have hu := edges_in_unit hX hk

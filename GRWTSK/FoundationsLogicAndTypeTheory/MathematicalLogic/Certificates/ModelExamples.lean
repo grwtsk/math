@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.ProofCoverage
-import GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget
+import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.TransitionSystems.GuardedFiniteBudget
 import GRWTSK.Analysis.ErrorBounds.PartialMapComposition
 import GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance
 import GRWTSK.Analysis.ComplexAnalysis.VerticalReflection

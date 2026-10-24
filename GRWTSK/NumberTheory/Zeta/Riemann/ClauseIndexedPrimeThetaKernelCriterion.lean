@@ -23,7 +23,7 @@ NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 
 /-- Readable clause-arity indexing for the independently required arithmetic
 prime-kernel criterion. -/

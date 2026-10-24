@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Proof drafting assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.WeightedQuartetBudget
+import GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedQuartetBudget
 import GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin
 
@@ -27,8 +27,8 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedQuartetBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedQuartetBudget
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier
 open GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget

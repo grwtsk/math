@@ -1,6 +1,6 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
-open GRWTSK.Logic.PortPureTypeSystem
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.PortPureTypeSystem
 -- The deliberately weaker substitute omits lambda/product annotation reduction.
 inductive AnnotationFreeBeta : Expr Unit → Expr Unit → Prop
   | head (A b a) : AnnotationFreeBeta (.app (.lam A b) a) (b.instantiate a)

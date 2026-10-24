@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.WeightedInventoryQuartet
+import GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedInventoryQuartet
 import GRWTSK.NumberTheory.Zeta.Riemann.ContourCountDeficit
 
 set_option autoImplicit false
@@ -33,9 +33,9 @@ namespace GRWTSK.RiemannHypothesis.QuartetBandDeficit
 
 open Set Metric
 open CanonicalZeroDivisor ContourCountDeficit
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedInventoryDeficit
-open GRWTSK.Combinatorics.WeightedInventoryQuartet
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedInventoryDeficit
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedInventoryQuartet
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 open scoped BigOperators ComplexConjugate
 

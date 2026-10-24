@@ -22,7 +22,7 @@ decision_refs: [D02, D03, D04]
 
 ## Source and rationale
 
-The source is [spectral theory of finite reversible Markov chains](../../subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/finite-reversible-chains/index.md). The inspected `math.PR` category covers probability and stochastic-process topics more broadly. The proposed arrow is `local broadMatch math.PR`: the target is broader, not narrower.
+The source is [spectral theory of finite reversible Markov chains](../../subjects/Analysis/OperatorTheory/SpectralTheory/SelfAdjointOperators/FiniteReversibleChains/index.md). The inspected `math.PR` category covers probability and stochastic-process topics more broadly. The proposed arrow is `local broadMatch math.PR`: the target is broader, not narrower.
 
 ## Limitations and review
 

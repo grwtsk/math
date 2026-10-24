@@ -2,7 +2,7 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences
 import Mathlib.Combinatorics.SimpleGraph.Basic
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.PathOccurrences
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences
 
 set_option autoImplicit false
 

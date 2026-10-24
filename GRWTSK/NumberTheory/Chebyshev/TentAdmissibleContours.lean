@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.OrientedRectangle
+import GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 import GRWTSK.NumberTheory.Zeta.Riemann.AdmissibleRectangles
 import GRWTSK.NumberTheory.Chebyshev.TentPerronLine
 import GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
@@ -25,9 +25,9 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 
 open MeasureTheory Filter Set
 open scoped Topology Interval
-open GRWTSK.Analysis.Complex.OrientedRectangle
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
 open GRWTSK.NumberTheory.Chebyshev.TentPerronLine

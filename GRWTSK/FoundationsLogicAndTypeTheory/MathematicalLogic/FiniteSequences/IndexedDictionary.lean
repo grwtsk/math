@@ -20,7 +20,7 @@ No collision-freedom or external-integrity assumption is used by this codec.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.IndexedDictionary
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
 
 variable {Key Payload : Type*}
 
@@ -123,4 +123,4 @@ theorem unpack_pack_position (entries : List (Key × Payload)) (index : Nat) :
   rw [unpack_pack]
   rfl
 
-end GRWTSK.Logic.FiniteSequences.IndexedDictionary
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary

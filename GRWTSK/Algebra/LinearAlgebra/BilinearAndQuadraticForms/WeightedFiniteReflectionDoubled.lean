@@ -16,7 +16,7 @@ diffuser-free deterministic core. No real/complex metric or RH is selected.
 set_option autoImplicit false
 noncomputable section
 
-namespace GRWTSK.LinearAlgebra.WeightedFiniteReflection.OptionalDoubled
+namespace GRWTSK.Algebra.LinearAlgebra.WeightedFiniteReflection.OptionalDoubled
 
 variable {ι : Type*} [Fintype ι]
 
@@ -48,4 +48,4 @@ theorem lift_selfAdjoint_and_involutive (p : Weights ι) (b : ι → Bool) :
       Function.Involutive (lift p b) :=
   ⟨lift_selfAdjoint p b, lift_involutive p b⟩
 
-end GRWTSK.LinearAlgebra.WeightedFiniteReflection.OptionalDoubled
+end GRWTSK.Algebra.LinearAlgebra.WeightedFiniteReflection.OptionalDoubled

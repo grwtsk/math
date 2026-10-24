@@ -41,8 +41,8 @@ noncomputable section
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison
 
-open GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.IntegralHeisenbergPrimitive
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary
 

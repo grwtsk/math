@@ -22,14 +22,14 @@ namespace GRWTSK.NumberTheory.Chebyshev.TentLeftDecay
 
 open Set Filter MeasureTheory
 open scoped Topology Interval BigOperators
-open GRWTSK.Analysis.Complex.OrientedRectangle
+open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.LeftLogDerivative
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 open GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds
 open GRWTSK.NumberTheory.Chebyshev.HeightIndexedTentResidues
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 
 noncomputable section

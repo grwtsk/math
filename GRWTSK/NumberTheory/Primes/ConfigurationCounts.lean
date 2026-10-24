@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.Enumerative.BoundedWitnesses
+import GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.BoundedWitnesses
 import Mathlib.Data.Nat.Prime.Basic
 
 set_option autoImplicit false
@@ -17,7 +17,7 @@ counts count indices `1 <= n <= X`. No distribution estimate is supplied.
 
 namespace GRWTSK.NumberTheory.Primes.ConfigurationCounts
 
-open GRWTSK.Combinatorics.Enumerative.BoundedWitnesses
+open GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.BoundedWitnesses
 
 /-- Ordered first-prime choices; the cutoff protects natural subtraction. -/
 def goldbachCount (N : ℕ) : ℕ :=

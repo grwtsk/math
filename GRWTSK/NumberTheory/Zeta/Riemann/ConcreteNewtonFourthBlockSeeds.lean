@@ -7,7 +7,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFourthBlockSeeds
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
 open RationalTaylorSeedNormalization
 open GRWTSK.Analysis.Real.RationalLogEnclosure

@@ -16,7 +16,7 @@ and analytic source composition remains NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open RationalPolygonIndex ExponentialLoopIndex
 

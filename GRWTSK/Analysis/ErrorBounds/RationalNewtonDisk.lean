@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.NewtonDisk
+import GRWTSK.Analysis.ComplexAnalysis.NewtonDisk
 import GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 import Mathlib.Analysis.Calculus.FDeriv.Analytic
 import Mathlib.Tactic.NormNum
@@ -22,7 +22,7 @@ namespace GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk
 
 open Metric Set
 open RationalComplexEnclosure
-open GRWTSK.Analysis.Complex.NewtonDisk
+open GRWTSK.Analysis.ComplexAnalysis.NewtonDisk
 
 structure Data where
   inverse : Coordinates

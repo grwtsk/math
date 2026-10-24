@@ -6,7 +6,7 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace
 
 section Generic
 
@@ -29,7 +29,7 @@ example (trace : List (TotalEdge V)) (hvalid : ValidFrom root trace) :
 
 end Generic
 
-namespace GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace.Checks.Positive
 
 /- Two actual vertices, with two parallel arrows at each typed endpoint pair. -/
 local instance : Quiver Bool := ⟨fun _ _ => Bool⟩
@@ -86,4 +86,4 @@ example : ValidFrom false [firstEdge false] ∧
     ¬ ValidFrom false [firstEdge false, brokenEdge] :=
   ⟨⟨rfl, trivial⟩, broken_join_rejected⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace.Checks.Positive

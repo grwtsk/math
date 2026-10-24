@@ -17,7 +17,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollision
 
 open WeierstrassCurve
 open GRWTSK.Algebra.RingTheory.QuadraticCollisionOrder
-open GRWTSK.AlgebraicGeometry.EllipticCurve.ProjectiveHalfScaleMarks
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.ProjectiveHalfScaleMarks
 open FreyTwoBranchDecision FreyGlobalMinimalDiscriminant FreySelectedProjectiveMarks
 
 /-- Not two arbitrary fitted points: both coordinate equalities reference the

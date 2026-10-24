@@ -30,7 +30,7 @@ namespace GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan
 
 open scoped BigOperators Real ArithmeticFunction.Moebius
 open Finset Nat
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionMainModel
 open GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition

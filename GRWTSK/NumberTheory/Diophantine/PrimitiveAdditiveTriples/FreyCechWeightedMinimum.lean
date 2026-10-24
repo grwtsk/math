@@ -7,7 +7,7 @@ integral gauge quotient, or the denominator of a rectangular projection.
 Function realization uses the old six-field embeddings and normal form.
 Source proof scripts only: NOT_RUN / NOT_KERNEL_AUDITED.
 -/
-import GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum
+import GRWTSK.Algebra.LinearAlgebra.ThreeCellWeightedMinimum
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechIntegralGauge
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel
 
@@ -20,8 +20,8 @@ open FreyWeightedSections FreyWeightedBasis FreyArchimedeanRealization
 open FreyCechIntegralGauge FreyCechHodgeComparison
 open GRWTSK.Algebra.Homology.ThreeCellCech
 open GRWTSK.Algebra.Homology.ThreeCellIntegralGauge
-open GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum
-open GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum
+open GRWTSK.Algebra.LinearAlgebra.ThreeCellIntegralMinimum
+open GRWTSK.Algebra.LinearAlgebra.ThreeCellWeightedMinimum
 open scoped BigOperators
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
@@ -68,7 +68,7 @@ abbrev CombinedCokernel (a b : ℤ) (k : ℕ) :=
 
 def combinedCokernelEquiv (a b : ℤ) (k : ℕ) :
     CombinedCokernel a b k ≃ₗ[ℤ]
-      GRWTSK.LinearAlgebra.WeightedPermutationCokernel.Residues
+      GRWTSK.Algebra.LinearAlgebra.WeightedPermutationCokernel.Residues
         (combinedWeight (FreyWeightedLattice.weight (a*b) k)) :=
   cokernelEquiv (FreyWeightedLattice.reverse k) (FreyWeightedLattice.weight (a*b) k)
 
@@ -147,7 +147,7 @@ theorem realized_port_normal (a b : ℤ) (k : ℕ) (l : ℚ)
       (FreyCechIntegralGauge.realize a b k (integerPort a b k (integralCell q))) =
       FreyCechIntegralGauge.realize a b k (integerPort a b k (integralCell q)) := by
   rw [realized_port_source]
-  have hn := GRWTSK.Analysis.LinearAlgebra.ThreeCellGaugeMetric.normalForm_map
+  have hn := GRWTSK.Algebra.LinearAlgebra.ThreeCellGaugeMetric.normalForm_map
     (realLift (a : ℚ) (b : ℚ) l hl k).toLinearMap
     (FreyCechIntegralGauge.realize a b k (integralCell q))
   change FreyCechGaugeMetric.normalForm _ _ _

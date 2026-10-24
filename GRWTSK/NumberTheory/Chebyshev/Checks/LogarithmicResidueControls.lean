@@ -18,7 +18,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.LogarithmicResidueControls
 
 open Filter
 open scoped Topology
-open GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+open GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 open GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
 
 noncomputable section

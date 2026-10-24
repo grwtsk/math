@@ -6,10 +6,10 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix PrefixInventory
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PrefixInventory.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory.Checks.Positive
 
 noncomputable instance totalEdgeDecidableEq :
     DecidableEq (EdgeTrace.TotalEdge (SingleObj Bool)) := Classical.decEq _
@@ -73,7 +73,7 @@ example : inventory ([] : List (Nat × Occurrence (SingleObj.star Bool))) = [] :
 example : inventory [(5, origin (SingleObj.star Bool))] = [[]] :=
   inventory_singleton_origin 5
 
-example : GRWTSK.Logic.FiniteSequences.IndexedDictionary.unpack (packed parallelRows) =
+example : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary.unpack (packed parallelRows) =
     some [(11, [falseTag]), (12, [trueTag])] := unpack_packed parallelRows
 
 example : occurrence parallelRows [falseTag]
@@ -85,7 +85,7 @@ example : recoverRows (traceRows parallelRows) (traceRows_valid parallelRows) = 
   recoverRows_traceRows parallelRows
 
 example (entries : List (Nat × List (EdgeTrace.TotalEdge (SingleObj Bool))))
-    (hunpack : GRWTSK.Logic.FiniteSequences.IndexedDictionary.unpack (packed parallelRows) =
+    (hunpack : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary.unpack (packed parallelRows) =
       some entries) :
     recoverRows entries (unpack_valid parallelRows entries hunpack) = parallelRows :=
   unpack_recovers parallelRows entries hunpack
@@ -101,7 +101,7 @@ theorem repeated_references_exact : (packed repeatedRows).references =
 
 example : (packed repeatedRows).references.length = 3 := references_length repeatedRows
 
-example : GRWTSK.Logic.FiniteSequences.IndexedDictionary.unpack (packed repeatedRows) =
+example : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary.unpack (packed repeatedRows) =
     some [(21, [falseTag]), (22, [trueTag]), (21, [falseTag])] := unpack_packed repeatedRows
 
 example : recoverRows (traceRows repeatedRows) (traceRows_valid repeatedRows) = repeatedRows :=
@@ -109,4 +109,4 @@ example : recoverRows (traceRows repeatedRows) (traceRows_valid repeatedRows) = 
 
 example : (inventory repeatedRows).length ≤ 6 := inventory_length_le repeatedRows
 
-end GRWTSK.Combinatorics.DirectedGraph.PrefixInventory.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory.Checks.Positive

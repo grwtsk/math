@@ -17,7 +17,7 @@ Mathematical direction: grwtsk contributors; formal implementation: OpenAI Codex
 No coupled separation, cutoff, Hecke/calibration or physical-row theorem is inferred.
 -/
 import GRWTSK.Analysis.MellinTransform.GaussianLogFlow
-import GRWTSK.Analysis.Fourier.SchwartzMoments
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments
 import Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
 
 namespace GRWTSK.Analysis.MellinTransform.GaussianLogWindow
@@ -26,7 +26,7 @@ open scoped Classical ContDiff Topology SchwartzMap FourierTransform
 open Filter Set MeasureTheory
 open GRWTSK.Analysis.MellinTransform.GaussianLogFlow
 open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
-open GRWTSK.Analysis.Fourier.SchwartzMoments
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments
 
 lemma gaussianFlow_real_smooth (R : ℝ) : ContDiff ℝ ∞ (fun s : ℝ=>gaussianFlow R (s:ℂ)) := by
   rw [contDiff_iff_contDiffAt]

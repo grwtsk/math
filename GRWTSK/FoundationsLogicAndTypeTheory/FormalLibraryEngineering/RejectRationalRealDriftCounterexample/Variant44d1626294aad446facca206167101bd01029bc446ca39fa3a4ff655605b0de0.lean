@@ -1,4 +1,4 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 open GRWTSK.Geometry.Hodge.FiniteEdgeRealization

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI. -/
 import GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyFullAdjointReconstruction
-import GRWTSK.LinearAlgebra.Matrix.FiniteObservationGap
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteObservationGap
 
 /-! # Strictness on the genuine finite restriction family
 At each fixed scale qualitative kernel exclusion suffices for a strict damped
@@ -42,7 +42,7 @@ theorem restriction_strict_adjoint_of_kernel_exclusion (X : ℕ)
     Finset.sum_nonneg (fun _ _ => Finset.sum_nonneg (fun _ _ => sq_nonneg _))
   have hO (v : CanonicalFourFamilyRealPacket) : 0 ≤ canonicalFourFamilyWindowOutputEnergy X v :=
     Finset.sum_nonneg (fun _ _ => sq_nonneg _)
-  obtain ⟨a, ha, hab⟩ := GRWTSK.LinearAlgebra.Matrix.FiniteObservationGap.finite_gap
+  obtain ⟨a, ha, hab⟩ := GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteObservationGap.finite_gap
     (restrictionDifferenceSet_finite X) _ _ hE hO hker
   let d := min (fullAdjointDamping X * a) (1 / 2)
   have hd : 0 < d := lt_min (mul_pos (fullAdjointDamping_pos X) ha) (by norm_num)

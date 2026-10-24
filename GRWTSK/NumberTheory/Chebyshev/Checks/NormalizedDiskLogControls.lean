@@ -9,8 +9,8 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls
 
 open Set Metric
-open GRWTSK.Analysis.Complex.NormalizedDiskLogarithm
-open GRWTSK.Analysis.Complex.DiskBlaschkeFactors
+open GRWTSK.Analysis.ComplexAnalysis.NormalizedDiskLogarithm
+open GRWTSK.Analysis.ComplexAnalysis.DiskBlaschkeFactors
 
 noncomputable section
 

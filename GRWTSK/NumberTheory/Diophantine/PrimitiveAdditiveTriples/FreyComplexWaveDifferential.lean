@@ -9,7 +9,7 @@ The coherent part is not damped. No intrinsic Hodge operator, varying-source
 estimate, infinite-dimensional limit or arithmetic flow is asserted.
 Unelaborated source proof scripts; historical objects are unchanged.
 -/
-import GRWTSK.Analysis.Complex.DampedPhaseDifferential
+import GRWTSK.Analysis.ComplexAnalysis.DampedPhaseDifferential
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyComplexCechWave
 
 set_option autoImplicit false
@@ -19,9 +19,9 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyComplexWa
 
 open FreyWeightedSections FreyWeightedBasis FreyComplexRealization FreyComplexCechWave
 open GRWTSK.Algebra.Homology.ThreeCellCech
-open GRWTSK.Analysis.Complex.CubicWavePhase
-open GRWTSK.Analysis.Complex.DampedPhaseDifferential
-open GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat (decay)
+open GRWTSK.Analysis.ComplexAnalysis.CubicWavePhase
+open GRWTSK.Analysis.ComplexAnalysis.DampedPhaseDifferential
+open GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat (decay)
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
 /-- First label: vertex (0) or edge (1). Other labels retain phase and old basis slot. -/

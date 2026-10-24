@@ -27,7 +27,7 @@ For $p$ equal to Lebesgue measure's pinned `integrablePower`, the finite
 source family contains both weights $0,p$ at every derivative index through
 $J+p$. Positive-$R$ power cancellation supplies the actual paired source
 budget required by the separately proved
-[generic Fourier moment transfer](../Fourier/schwartz-moments.md).
+[generic Fourier moment transfer](../HarmonicAnalysis/FourierAnalysis/schwartz-moments.md).
 Its integrability theorem and integral bound yield the displayed result.
 Neither the desired moment nor convergence is assumed as a supplier.
 

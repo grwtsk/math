@@ -79,7 +79,7 @@ theorem tailSource_integrable (X : ℕ) : Integrable (tailSource X) unitVolume :
 
 theorem tailSource_square_integrable (X : ℕ) :
     Integrable (fun t ↦ (tailSource X t)^2) unitVolume := by
-  have h := GRWTSK.MeasureTheory.Integral.Centering.shifted_square_integrable
+  have h := GRWTSK.Analysis.MeasureTheory.Integral.Centering.shifted_square_integrable
     unitVolume (cumulative X) (mass0 X) (cumulative_integrable X)
     (cumulative_square_integrable X)
   have he : (fun t ↦ (tailSource X t)^2)=
@@ -93,10 +93,10 @@ theorem tailSource_square_integrable (X : ℕ) :
 /-- Both original boundary channels are present in the tail representation. -/
 theorem augmented_eq_tailEnergy {X : ℕ} (hX : 0<X) :
     augmentedEnergy X=tailEnergy X := by
-  have hshift := GRWTSK.MeasureTheory.Integral.Centering.integral_shifted_square
+  have hshift := GRWTSK.Analysis.MeasureTheory.Integral.Centering.integral_shifted_square
     unitVolume (cumulative X) (mass0 X) (cumulative_integrable X)
     (cumulative_square_integrable X)
-  have hmean : GRWTSK.MeasureTheory.Integral.Centering.mean unitVolume
+  have hmean : GRWTSK.Analysis.MeasureTheory.Integral.Centering.mean unitVolume
       (cumulative X)=center X := integral_cumulative hX
   rw [hmean,raw_cumulative_energy hX] at hshift
   have he : (∫ t, (tailSource X t)^2 ∂unitVolume)=

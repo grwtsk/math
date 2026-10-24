@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.JensenFiniteMultiplicity
+import GRWTSK.Analysis.ComplexAnalysis.JensenFiniteMultiplicity
 import GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Linarith
@@ -29,7 +29,7 @@ namespace GRWTSK.RiemannHypothesis.LocalJensenCount
 open Set Metric MeromorphicOn
 open scoped BigOperators
 open CanonicalZeroDivisor SeparatedContourHeights
-open GRWTSK.Analysis.Complex.JensenFiniteMultiplicity
+open GRWTSK.Analysis.ComplexAnalysis.JensenFiniteMultiplicity
 
 noncomputable section
 

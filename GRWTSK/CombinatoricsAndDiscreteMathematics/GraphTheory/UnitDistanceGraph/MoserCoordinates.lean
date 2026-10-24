@@ -1,7 +1,7 @@
 /- Reader coordinates: grwtsk contributors, with OpenAI Codex assistance. MIT. -/
 import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.MoserSource
 
-namespace GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson
 
 noncomputable section
 
@@ -32,4 +32,4 @@ theorem moserPoint_coordinates (i : Fin 7) :
 
 end
 
-end GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson

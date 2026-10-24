@@ -19,7 +19,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonTerminalEndpoint
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace RationalPowerIntegerSeed
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 open ConcreteNewtonTerminalSeed ConcreteNewtonBlockAcceptance

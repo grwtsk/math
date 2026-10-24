@@ -1,9 +1,9 @@
 import GRWTSK.Algebra.LinearAlgebra.CommonJ
 import Lean
 
-open GRWTSK.Algebra GRWTSK.LinearAlgebra.CommonJ Lean Elab Command
+open GRWTSK.Algebra GRWTSK.Algebra.LinearAlgebra.CommonJ Lean Elab Command
 
-namespace GRWTSK.LinearAlgebra.CommonJ.Checks
+namespace GRWTSK.Algebra.LinearAlgebra.CommonJ.Checks
 
 -- Explicit generic domain, multiplication direction and circle assumptions.
 example {R : Type u} [CommRing R] (c s : R) :
@@ -25,31 +25,31 @@ theorem rational_obstruction_consumer :
 -- Ask Lean's own reserved-name mechanism for the caller-generated theorem.
 #check rotationUnit.congr_simp
 
-end GRWTSK.LinearAlgebra.CommonJ.Checks
+end GRWTSK.Algebra.LinearAlgebra.CommonJ.Checks
 
 elab "#audit_common_j" : command => liftTermElabM do
-  unless ((← getEnv).find? `GRWTSK.LinearAlgebra.CommonJ.rotationUnit.congr_simp).isSome do
-    Lean.executeReservedNameAction `GRWTSK.LinearAlgebra.CommonJ.rotationUnit.congr_simp
+  unless ((← getEnv).find? `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit.congr_simp).isSome do
+    Lean.executeReservedNameAction `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit.congr_simp
   let env ← getEnv
-  let roots := #[`GRWTSK.LinearAlgebra.CommonJ.rotationMatrix,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationMatrix_comp,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationMatrix_commute,
-    `GRWTSK.LinearAlgebra.CommonJ.commonJ_square,
-    `GRWTSK.LinearAlgebra.CommonJ.circle_composition,
-    `GRWTSK.LinearAlgebra.CommonJ.circle_reverse,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationMatrix_reverse,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit_commute,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationMatrix_eq_commonJ,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit_reverse,
-    `GRWTSK.LinearAlgebra.CommonJ.rationalEdge,
-    `GRWTSK.LinearAlgebra.CommonJ.rational_two_edge_loop_nonidentity]
-  let generated := #[`GRWTSK.LinearAlgebra.CommonJ.rotationMatrix.eq_1,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit._proof_1,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit.eq_1,
-    `GRWTSK.LinearAlgebra.CommonJ.rotationUnit.congr_simp,
-    `GRWTSK.LinearAlgebra.CommonJ.rationalEdge._proof_1,
-    `GRWTSK.LinearAlgebra.CommonJ.rationalEdge.eq_1]
+  let roots := #[`GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationMatrix,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationMatrix_comp,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationMatrix_commute,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.commonJ_square,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.circle_composition,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.circle_reverse,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationMatrix_reverse,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit_commute,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationMatrix_eq_commonJ,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit_reverse,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rationalEdge,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rational_two_edge_loop_nonidentity]
+  let generated := #[`GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationMatrix.eq_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit._proof_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit.eq_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit.congr_simp,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rationalEdge._proof_1,
+    `GRWTSK.Algebra.LinearAlgebra.CommonJ.rationalEdge.eq_1]
   for n in roots ++ generated do
     let some info := env.find? n | throwError "missing declaration: {n}"
     if info.isUnsafe then throwError "unsafe interface: {n}"
@@ -62,10 +62,10 @@ elab "#audit_common_j" : command => liftTermElabM do
         throwError "unapproved axiom {ax} in {n}"
     logInfo m!"COMMON_J_DECL::{n}::{axioms.toList}"
   for (consumer, target) in
-      #[(`GRWTSK.LinearAlgebra.CommonJ.Checks.commuting_units_consumer,
-         `GRWTSK.LinearAlgebra.CommonJ.rotationUnit_commute),
-        (`GRWTSK.LinearAlgebra.CommonJ.Checks.rational_obstruction_consumer,
-         `GRWTSK.LinearAlgebra.CommonJ.rational_two_edge_loop_nonidentity)] do
+      #[(`GRWTSK.Algebra.LinearAlgebra.CommonJ.Checks.commuting_units_consumer,
+         `GRWTSK.Algebra.LinearAlgebra.CommonJ.rotationUnit_commute),
+        (`GRWTSK.Algebra.LinearAlgebra.CommonJ.Checks.rational_obstruction_consumer,
+         `GRWTSK.Algebra.LinearAlgebra.CommonJ.rational_two_edge_loop_nonidentity)] do
     let some info := env.find? consumer | throwError "missing consumer: {consumer}"
     let some proof := info.value? true | throwError "missing proof term: {consumer}"
     unless proof.getUsedConstants.contains target do

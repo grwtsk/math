@@ -9,7 +9,7 @@ raw vertices. Angle and heat time are independent. This is a finite selected
 coefficient model, not geometric Hodge heat or an arithmetic flow.
 Unelaborated source proof scripts; historical objects are unchanged.
 -/
-import GRWTSK.Analysis.Complex.CubicWavePhase
+import GRWTSK.Analysis.ComplexAnalysis.CubicWavePhase
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyComplexRealization
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat
 
@@ -20,8 +20,8 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyComplexCe
 
 open FreyWeightedSections FreyWeightedBasis FreyComplexRealization
 open GRWTSK.Algebra.Homology.ThreeCellCech
-open GRWTSK.Analysis.Complex.CubicWavePhase
-open GRWTSK.Analysis.LinearAlgebra
+open GRWTSK.Analysis.ComplexAnalysis.CubicWavePhase
+open GRWTSK.Algebra.LinearAlgebra
 open scoped BigOperators
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 

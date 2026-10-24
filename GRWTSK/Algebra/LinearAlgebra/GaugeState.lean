@@ -5,7 +5,7 @@ Established group-action state-gauge equivalence; upstream identities retained.
 import GRWTSK.Algebra.OrderedProductGauge
 import GRWTSK.Algebra.LinearAlgebra.CocycleProduct
 
-namespace GRWTSK.LinearAlgebra.GaugeState
+namespace GRWTSK.Algebra.LinearAlgebra.GaugeState
 
 /-!
 # Frozen ordered products and step-dependent gauges
@@ -35,19 +35,19 @@ universe u v w
 open GRWTSK.Algebra
 
 
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 
-open GRWTSK.LinearAlgebra.JacobiTransfer
+open GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
 
-open GRWTSK.LinearAlgebra.OrderedTransfer
+open GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
 
 
-open GRWTSK.LinearAlgebra.OrderedProductDeterminant
+open GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant
 
 
-open GRWTSK.LinearAlgebra.CocycleProduct
+open GRWTSK.Algebra.LinearAlgebra.CocycleProduct
 
 /-- A gauge changes the state by the inverse gauge at its own step. -/
 def gaugeState {G : Type u} {S : Type v} [Group G] [MulAction G S]
@@ -75,4 +75,4 @@ theorem gaugeState_step_iff {G : Type u} {S : Type v} [Group G] [MulAction G S]
 
 
 
-end GRWTSK.LinearAlgebra.GaugeState
+end GRWTSK.Algebra.LinearAlgebra.GaugeState

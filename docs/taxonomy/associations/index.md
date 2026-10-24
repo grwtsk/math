@@ -24,7 +24,7 @@ decision_refs: [D01, D05]
 ---
 # Source association: finite Dirichlet spectral code
 
-[Taxonomy](../index.md) · [Spectral subject](../subjects/analysis/functional-analysis/linear-operators/spectral-theory/index.md) · [Audit](../audit.md)
+[Taxonomy](../index.md) · [Spectral subject](../subjects/Analysis/OperatorTheory/SpectralTheory/index.md) · [Audit](../audit.md)
 
 ## Observed source and scope
 

@@ -11,10 +11,10 @@ import Mathlib.Topology.Order.OrderClosed
 
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Spectral.SturmianFiniteVolume
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 
-open Matrix GRWTSK.LinearAlgebra.Sturmian
-open GRWTSK.Spectral.MatrixCountComparison
+open Matrix GRWTSK.Algebra.LinearAlgebra.Sturmian
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
 open scoped RealInnerProductSpace ComplexOrder
 open Filter
 
@@ -155,10 +155,10 @@ theorem gap_width_le_abs_coupling_of_count_limits
       atTop (nhds (ids E)))
     (hleft : ∀ x, free x ≤ label → x ≤ freeEnergy)
     (hright : ∀ x, label ≤ free x → freeEnergy ≤ x)
-    (hgap : GRWTSK.Spectral.GapTransport.OpenLabelGap S ids label a b) :
+    (hgap : GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.OpenLabelGap S ids label a b) :
     0 < b-a ∧ b-a ≤ |V| := by
-  have h := GRWTSK.Spectral.GapTransport.gap_width_le_of_ids_comparison
+  have h := GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.gap_width_le_of_ids_comparison
     (ids_comparison_of_count_limits α V ξ origin free ids hfree hids) hleft hright hgap
   simpa only [comparison_offset_width] using h
 
-end GRWTSK.Spectral.SturmianFiniteVolume
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume

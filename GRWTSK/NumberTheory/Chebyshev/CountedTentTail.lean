@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.TentKernelTail
+import GRWTSK.Analysis.ComplexAnalysis.TentKernelTail
 import GRWTSK.NumberTheory.Chebyshev.TentSource
 import Mathlib.Tactic.Positivity
 
@@ -22,8 +22,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.CountedTentTail
 
 open scoped BigOperators
 open GRWTSK.Analysis.Series.HeightCountingTail
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentKernelTail
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentKernelTail
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget
 

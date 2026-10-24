@@ -1,7 +1,7 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.AppendOnlyHistory
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
-open GRWTSK.Logic.FiniteSequences.AppendOnlyHistory
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.AppendOnlyHistory
 
 set_option autoImplicit false
 
@@ -40,7 +40,7 @@ example :
   unpack_pack _
 
 example :
-    unpack (GRWTSK.Logic.FiniteSequences.DictionaryRevision.replaceDictionary
+    unpack (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision.replaceDictionary
       (pack ([(11, 7), (12, 8)] : List (Nat × Nat)))
       (pack ([(11, 7), (12, 8), (13, 7)] : List (Nat × Nat))).dictionary) =
       some [(11, 8), (12, 7)] := rfl

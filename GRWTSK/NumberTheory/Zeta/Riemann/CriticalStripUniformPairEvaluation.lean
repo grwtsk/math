@@ -21,8 +21,8 @@ namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.ZeroIsolation.Unif
 open Complex Set
 open UniformFiniteC1
 open CenteredMellin.SexticPrimitive CenteredMellin.SexticPrimitive.C1Approximation
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 open RationalEvaluatedPair
 noncomputable section
 

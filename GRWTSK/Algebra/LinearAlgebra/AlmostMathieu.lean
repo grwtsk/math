@@ -9,8 +9,8 @@ import Mathlib.LinearAlgebra.Matrix.Trace
 set_option autoImplicit false
 
 noncomputable section
-namespace GRWTSK.LinearAlgebra.AlmostMathieu
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+namespace GRWTSK.Algebra.LinearAlgebra.AlmostMathieu
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 /-- The literal almost Mathieu potential, with integer sites and the unscaled phase. -/
 def potential (α coupling θ : ℝ) (n : ℤ) : ℝ :=
@@ -39,4 +39,4 @@ theorem det_one_does_not_bound_trace :
   refine ⟨det_transfer _ _ _ _ _, ?_⟩
   norm_num [transfer, potential, schrodingerTransfer, Matrix.trace, Fin.sum_univ_two]
 
-end GRWTSK.LinearAlgebra.AlmostMathieu
+end GRWTSK.Algebra.LinearAlgebra.AlmostMathieu

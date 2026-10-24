@@ -16,10 +16,10 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechAffineHeight
 
 open FreyWeightedBasis FreyCechPadicNorm FreyCechArchimedeanNorm
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 open GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
 open GRWTSK.NumberTheory.Padics
-open GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum
+open GRWTSK.Algebra.LinearAlgebra.ThreeCellWeightedMinimum
 
 local instance slotsNonempty (k : ℕ) : Nonempty (Slot k) :=
   ⟨(Sum.inl ⟨0, Nat.zero_lt_succ k⟩, 0)⟩

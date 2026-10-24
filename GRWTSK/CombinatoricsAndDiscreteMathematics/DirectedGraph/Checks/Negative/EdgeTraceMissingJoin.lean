@@ -6,9 +6,9 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace
 
-namespace GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.Checks.Negative
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace.Checks.Negative
 
 local instance : Quiver Bool := ⟨fun _ _ => Bool⟩
 
@@ -24,4 +24,4 @@ theorem broken_join_rejected : ¬ ValidFrom false [firstEdge, brokenEdge] :=
 /- A valid initial edge does not prove the missing join for the full trace. -/
 noncomputable example : PathStar false := decode false [firstEdge, brokenEdge] valid_initial
 
-end GRWTSK.Combinatorics.DirectedGraph.EdgeTrace.Checks.Negative
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EdgeTrace.Checks.Negative

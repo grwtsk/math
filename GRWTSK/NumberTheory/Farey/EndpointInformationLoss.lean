@@ -6,7 +6,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 This adapter consumes a standalone Farey source candidate, not a checked
 public-root theorem. The finite witness does not prove a root from signs.
 -/
-import GRWTSK.Logic.InformationLoss.FactorizationFiber
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.FactorizationFiber
 import GRWTSK.NumberTheory.Farey.ResolvableQuinticEndpointControls
 
 /-!
@@ -28,7 +28,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Farey
 
 open Polynomial
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 
 /-- Both separate endpoint-sign predicates, not merely the truth value of
 their conjunction. This makes the information loss stronger than a collision

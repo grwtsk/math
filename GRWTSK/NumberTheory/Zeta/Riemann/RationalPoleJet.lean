@@ -3,7 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleValue
 import GRWTSK.NumberTheory.Zeta.Riemann.RationalPolePatch
-import GRWTSK.Analysis.Complex.CenterJetVariation
+import GRWTSK.Analysis.ComplexAnalysis.CenterJetVariation
 
 set_option autoImplicit false
 
@@ -19,7 +19,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalPoleJet
 
 open Metric Set
-open GRWTSK.Analysis.Complex GRWTSK.Analysis.ErrorBounds
+open GRWTSK.Analysis.ComplexAnalysis GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
 open RationalNewtonDisk (magnitude magnitude_nonneg norm_le_magnitude)
 open CriticalStripHeightDescent

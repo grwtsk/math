@@ -20,7 +20,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedObs
 
 open GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
 open GRWTSK.NumberTheory.Height.PrimitivePairNormalization
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 
 /-- The map already reads xRep from the actual three marked curve points. -/
 def raw (t : PrimitiveAdditiveTriple) : Fin 3 → ℚ :=

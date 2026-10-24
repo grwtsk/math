@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
-open GRWTSK.Spectral.SturmianFiniteVolume
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 
 -- Deliberately false contract: discard the upper shift for arbitrary signed V.
 example (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :

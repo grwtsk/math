@@ -7,9 +7,9 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.IntegerTaylorSeedControls
 
-open GRWTSK.Analysis.Complex.IntegerTaylorPolynomial
-open GRWTSK.Analysis.Complex.IntegerDyadicTrace
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.IntegerTaylorPolynomial
+open GRWTSK.Analysis.ComplexAnalysis.IntegerDyadicTrace
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 
 /-- Stage zero has the constant term, not an empty sum. -/
 theorem stage_zero : numeratorZ 7 (2, -3) 0 = (1, 0) ∧ denominatorZ 7 0 = 1 := by

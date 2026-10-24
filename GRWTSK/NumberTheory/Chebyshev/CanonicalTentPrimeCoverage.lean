@@ -19,7 +19,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCoverage
 
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open GRWTSK.NumberTheory.Primes.LandauStatements
 open TentSource SignedTentCorrection CanonicalTentPrimeCriterion

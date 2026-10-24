@@ -10,7 +10,7 @@ This file neither assumes nor proves the unresolved all-depth arithmetic bound.
 
 noncomputable section
 open scoped BigOperators
-namespace GRWTSK.LinearAlgebra.QuadraticForm.OrderedTransport
+namespace GRWTSK.Algebra.LinearAlgebra.QuadraticForm.OrderedTransport
 
 /-- A local quadratic estimate. The complete form qOut is retained. -/
 def Majorizes {X Y : Type*} (qIn : X → ℝ) (qOut : Y → ℝ)
@@ -72,4 +72,4 @@ theorem squared_to_norm {u v B : ℝ} (hu : 0 ≤ u) (hv : 0 ≤ v)
     (hB : 0 ≤ B) (h : u^2 ≤ B^2*v^2) : u ≤ B*v := by
   nlinarith [mul_nonneg hB hv]
 
-end GRWTSK.LinearAlgebra.QuadraticForm.OrderedTransport
+end GRWTSK.Algebra.LinearAlgebra.QuadraticForm.OrderedTransport

@@ -1,8 +1,8 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
+open GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat
 -- Discarding the complement loses all energy for this nonzero one-coordinate vector.
 example : energy (fun _ : Fin 1 => (1 : ℝ)) (fun _ => 1) ≠
     energy (fun _ : Fin 1 => (1 : ℝ))

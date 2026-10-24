@@ -9,7 +9,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.BoundaryAcceptanceControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open GRWTSK.RiemannHypothesis
 open ConcreteNewtonPacket ConcreteNewtonBlockAcceptance ConcreteNewtonBoundaryAcceptance
 open RationalZetaTranscript

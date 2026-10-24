@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 import GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
-import GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 /-!
 Current source verification is recorded in
@@ -35,7 +35,7 @@ open GRWTSK.ProofHorizon.CorkscrewChamberCap
 open ArithmeticPickupEnergy
 open GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 open GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
-open GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 noncomputable section
 

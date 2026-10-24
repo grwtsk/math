@@ -7,7 +7,7 @@ its declared subfamily. Actual Rat.den and the old vector denominator are
 used. No coefficient-height upper estimate or conductor statement follows.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassRescaledJet
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassRescaledJet
 import GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
 import Mathlib.Data.ZMod.Basic
 
@@ -17,7 +17,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Height.WeierstrassJetDenominator
 
 open Polynomial
-open GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassRescaledJet
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassRescaledJet
 open RationalVectorAffineHeight
 
 /-- No second parameter is chosen: these are coefficients of the old-lift representative. -/

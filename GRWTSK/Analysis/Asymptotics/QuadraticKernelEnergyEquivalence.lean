@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.ReciprocalZetaQuadraticKernel
 
 /-! Exact location of the remaining arithmetic obligation in the concrete
 right-line model. Once source identification and the polynomial tail are

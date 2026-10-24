@@ -14,7 +14,7 @@ replace elaboration or a transitive axiom audit.
 -/
 namespace GRWTSK.RiemannHypothesis.Checks.MirrorPairChannels
 open Complex Set
-open GRWTSK.Analysis.Complex.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 noncomputable section
 

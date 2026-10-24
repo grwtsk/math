@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity
-import GRWTSK.Order.WellFounded.AdditiveNaturalRank
+import GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.WellFounded.AdditiveNaturalRank
 
 /-! Source-preserving signed chart interfaces and conditional consumers.
 Every packet retains both actual mature and horizon waves. Bounds and chart

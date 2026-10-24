@@ -9,7 +9,7 @@ set_option autoImplicit false
 /-! Source controls only: not executed, and not actual zero certificates. -/
 namespace GRWTSK.RiemannHypothesis.RationalZetaCenterControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open RationalZetaCenterEvaluation
 
 theorem terminal_empty : cutoffQ 0 = 1 := by norm_num [cutoffQ]
@@ -47,12 +47,12 @@ theorem too_large_radius_rejected (N : ℕ) (c : QComplex) (p : Plan N)
   fun hp => (not_le_of_gt hr) hp.2.1
 
 theorem bad_prefix_rejected (N : ℕ) (c : QComplex) (p : Plan N) (i : Fin N)
-    (hb : ¬GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible
+    (hb : ¬GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible
       ((i.1 : ℚ) + 1) (sourceExponent c) (p.prefix i)) : ¬Admissible N c p :=
   fun hp => hb (hp.2.2.2.1 i)
 
 theorem bad_terminal_rejected (N : ℕ) (c : QComplex) (p : Plan N)
-    (hb : ¬GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible
+    (hb : ¬GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Admissible
       (cutoffQ N) (sourceExponent c) p.terminal) : ¬Admissible N c p :=
   fun hp => hb hp.2.2.2.2
 

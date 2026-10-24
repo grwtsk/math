@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.GaussianRationalArithmetic
+import GRWTSK.Analysis.ComplexAnalysis.GaussianRationalArithmetic
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor
 
 set_option autoImplicit false
@@ -18,7 +18,7 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.RationalPowerEvaluation
 open Complex Finset
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 
 /-- The j=0 summand is zero, following the pinned upstream total-field convention. -/
 def logTaylorQ (n : ℕ) (q : ℚ) : ℚ :=

@@ -19,7 +19,7 @@ can require decomposition or repair. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFirstBlockSeeds
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
 open RationalTaylorSeedNormalization
 open GRWTSK.Analysis.Real.RationalLogEnclosure

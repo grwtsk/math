@@ -23,7 +23,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedCoordinateExactness
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentMixedCoordinateRepair
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram

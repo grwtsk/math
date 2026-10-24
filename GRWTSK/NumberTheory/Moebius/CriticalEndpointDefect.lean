@@ -23,7 +23,7 @@ namespace GRWTSK.NumberTheory.Moebius.CriticalEndpointDefect
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
-open GRWTSK.Analysis.Integration.ExponentialInterval
+open GRWTSK.Analysis.RealAnalysis.Integration.ExponentialInterval
 
 /-- Difference between the weighted prefix and the left-endpoint-scaled
 Mertens prefix. -/

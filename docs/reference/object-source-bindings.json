@@ -2,35 +2,35 @@
   "schema": "documentation-object-bindings-v1",
   "status": "candidate editorial specification; not proof admission",
   "bindings": {
-    "LinearAlgebra/Cocycle": [
-      "GRWTSK/LinearAlgebra/CocycleProduct.lean"
+    "Algebra/LinearAlgebra/Cocycle": [
+      "GRWTSK/Algebra/LinearAlgebra/CocycleProduct.lean"
     ],
-    "LinearAlgebra/CommonGenerator": [
-      "GRWTSK/LinearAlgebra/CommonJ.lean",
-      "GRWTSK/LinearAlgebra/CommonJCounterexamples.lean"
+    "Algebra/LinearAlgebra/CommonGenerator": [
+      "GRWTSK/Algebra/LinearAlgebra/CommonJ.lean",
+      "GRWTSK/Algebra/LinearAlgebra/CommonJCounterexamples.lean"
     ],
-    "Logic/FiniteCoverage": [
-      "GRWTSK/Logic/FiniteCoverage.lean"
+    "FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteCoverage": [
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteCoverage.lean"
     ],
-    "LinearAlgebra/Gauge": [
-      "GRWTSK/LinearAlgebra/GaugeState.lean"
+    "Algebra/LinearAlgebra/Gauge": [
+      "GRWTSK/Algebra/LinearAlgebra/GaugeState.lean"
     ],
-    "Analysis/Integration": [
-      "GRWTSK/Analysis/Integration/ExponentialVolterraL2.lean",
+    "Analysis/RealAnalysis/Integration": [
+      "GRWTSK/Analysis/RealAnalysis/Integration/ExponentialVolterraL2.lean",
       "GRWTSK/Analysis/IntervalReflection.lean"
     ],
-    "LinearAlgebra/Jacobi": [
-      "GRWTSK/LinearAlgebra/JacobiTransfer.lean"
+    "Algebra/LinearAlgebra/Jacobi": [
+      "GRWTSK/Algebra/LinearAlgebra/JacobiTransfer.lean"
     ],
-    "LinearAlgebra/OrderedProduct": [
-      "GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean"
+    "Algebra/LinearAlgebra/OrderedProduct": [
+      "GRWTSK/Algebra/LinearAlgebra/OrderedProductDeterminant.lean"
     ],
     "Algebra/OrderedProduct": [
       "GRWTSK/Algebra/OrderedProduct.lean",
       "GRWTSK/Algebra/OrderedProductGauge.lean"
     ],
-    "LinearAlgebra/Transfer": [
-      "GRWTSK/LinearAlgebra/OrderedTransfer.lean"
+    "Algebra/LinearAlgebra/Transfer": [
+      "GRWTSK/Algebra/LinearAlgebra/OrderedTransfer.lean"
     ],
     "Analysis/InnerProductSpace": [
       "GRWTSK/Analysis/InnerProductSpace/CausalResponseGram.lean",
@@ -44,11 +44,11 @@
       "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean",
       "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
     ],
-    "LinearAlgebra/Schrodinger": [
-      "GRWTSK/LinearAlgebra/AlmostMathieu.lean",
-      "GRWTSK/LinearAlgebra/Schrodinger/SampledPotential.lean",
-      "GRWTSK/LinearAlgebra/SchrodingerTransfer.lean",
-      "GRWTSK/LinearAlgebra/Sturmian.lean"
+    "Algebra/LinearAlgebra/Schrodinger": [
+      "GRWTSK/Algebra/LinearAlgebra/AlmostMathieu.lean",
+      "GRWTSK/Algebra/LinearAlgebra/Schrodinger/SampledPotential.lean",
+      "GRWTSK/Algebra/LinearAlgebra/SchrodingerTransfer.lean",
+      "GRWTSK/Algebra/LinearAlgebra/Sturmian.lean"
     ],
     "NumberTheory/Moebius/Laplace": [
       "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean",
@@ -58,10 +58,10 @@
     "NumberTheory/Moebius/Pickup": [
       "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
     ],
-    "Spectral/FiniteVolume": [
-      "GRWTSK/Spectral/DirichletCut.lean",
-      "GRWTSK/Spectral/MatrixCountComparison.lean",
-      "GRWTSK/Spectral/SturmianBlockCounts.lean"
+    "Analysis/OperatorTheory/SpectralTheory/FiniteVolume": [
+      "GRWTSK/Analysis/OperatorTheory/SpectralTheory/DirichletCut.lean",
+      "GRWTSK/Analysis/OperatorTheory/SpectralTheory/MatrixCountComparison.lean",
+      "GRWTSK/Analysis/OperatorTheory/SpectralTheory/SturmianBlockCounts.lean"
     ],
     "NumberTheory/Moebius/Energy": [
       "GRWTSK/NumberTheory/Moebius/EnergyGrowthEquivalences.lean",
@@ -76,47 +76,47 @@
       "GRWTSK/NumberTheory/Moebius/PrimeFilterGrowth.lean",
       "GRWTSK/NumberTheory/Moebius/PrimePrefixGrowth.lean"
     ],
-    "Spectral/FreeDirichletSpectrum": [
-      "GRWTSK/Spectral/FreeDirichletSpectrum.lean"
+    "Analysis/OperatorTheory/SpectralTheory/FreeDirichletSpectrum": [
+      "GRWTSK/Analysis/OperatorTheory/SpectralTheory/FreeDirichletSpectrum.lean"
     ],
-    "Spectral/IntegratedDensityOfStates": [
-      "GRWTSK/Spectral/FreeIDS.lean"
+    "Analysis/OperatorTheory/SpectralTheory/IntegratedDensityOfStates": [
+      "GRWTSK/Analysis/OperatorTheory/SpectralTheory/FreeIDS.lean"
     ],
-    "Spectral/GapTransport": [
-      "GRWTSK/Spectral/GapTransport.lean"
+    "Analysis/OperatorTheory/SpectralTheory/GapTransport": [
+      "GRWTSK/Analysis/OperatorTheory/SpectralTheory/GapTransport.lean"
     ],
-    "Analysis/Fourier/WindowCertificates": [
-      "GRWTSK/Analysis/Fourier/WindowCertificates.lean"
+    "Analysis/HarmonicAnalysis/FourierAnalysis/WindowCertificates": [
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/WindowCertificates.lean"
     ],
-    "Logic/FiniteSequences": [
-      "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
-      "GRWTSK/Logic/FiniteSequences/BatchCertificate.lean",
-      "GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean",
-      "GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean",
-      "GRWTSK/Logic/FiniteSequences/IncrementalComposition.lean",
-      "GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean",
-      "GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean",
-      "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
+    "FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences": [
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/AppendOnlyHistory.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/BatchCertificate.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/DecisionCertificate.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/DictionaryRevision.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/IncrementalComposition.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/IncrementalDictionary.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/IndexedDictionary.lean",
+      "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/PrefixCoverage.lean"
     ],
-    "Combinatorics/Sequences": [
-      "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
-      "GRWTSK/Combinatorics/Sequences/ConditionalPartitionExposure.lean",
-      "GRWTSK/Combinatorics/Sequences/FixedSizeSubsetExposure.lean",
-      "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
-      "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean"
+    "CombinatoricsAndDiscreteMathematics/Sequences": [
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/Sequences/BalancedPartitionSampling.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/Sequences/ConditionalPartitionExposure.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/Sequences/FixedSizeSubsetExposure.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/Sequences/QuotaDiscrepancy.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/Sequences/ZeroSumIntervalRepair.lean"
     ],
-    "Analysis/Fourier/IntegerSeries": [
-      "GRWTSK/Analysis/Fourier/IntegerSeries.lean"
+    "Analysis/HarmonicAnalysis/FourierAnalysis/IntegerSeries": [
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/IntegerSeries.lean"
     ],
-    "Analysis/NormedSpace": [
-      "GRWTSK/Analysis/NormedSpace/QuadraticError.lean"
+    "Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces": [
+      "GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/QuadraticError.lean"
     ],
     "NumberTheory/ContinuedFractions": [
       "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean",
       "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean"
     ],
-    "DynamicalSystems/Sequences": [
-      "GRWTSK/DynamicalSystems/Sequences/ApproximationReturn.lean"
+    "DifferentialEquationsAndDynamicalSystems/DynamicalSystems/Sequences": [
+      "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/Sequences/ApproximationReturn.lean"
     ],
     "Analysis/TestFunctions": [
       "GRWTSK/Analysis/TestFunctions/ExponentialMomentVariation.lean",
@@ -138,9 +138,9 @@
     "NumberTheory/Prime": [
       "GRWTSK/NumberTheory/Prime/LeastPrime.lean"
     ],
-    "DynamicalSystems/TransitionSystems": [
-      "GRWTSK/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean",
-      "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean"
+    "DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems": [
+      "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean",
+      "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean"
     ],
     "NumberTheory/ArithmeticFunctions": [
       "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
@@ -154,8 +154,8 @@
       "GRWTSK/NumberTheory/LSeries/GaussianContour.lean",
       "GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean"
     ],
-    "Logic/ProofChecking": [
-      "GRWTSK/Logic/ProofChecking/RepositoryConformance.lean"
+    "FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofChecking": [
+      "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofChecking/RepositoryConformance.lean"
     ],
     "NumberTheory/Zeta": [
       "GRWTSK/NumberTheory/Zeta/Riemann/DefectCriterion.lean"
@@ -167,42 +167,42 @@
     "Analysis/Inequalities": [
       "GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean"
     ],
-    "LinearAlgebra/Matrix": [
-      "GRWTSK/LinearAlgebra/Matrix/TraceRank.lean"
+    "Algebra/LinearAlgebra/MatrixTheory": [
+      "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/TraceRank.lean"
     ],
-    "Analysis/Complex/CriticalReflection": [
-      "GRWTSK/Analysis/Complex/CriticalReflection.lean"
+    "Analysis/ComplexAnalysis/CriticalReflection": [
+      "GRWTSK/Analysis/ComplexAnalysis/CriticalReflection.lean"
     ],
     "Analysis/LaplaceTransform": [
       "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
     ],
-    "LinearAlgebra/Matrix/HermitianCounterexamples": [
-      "GRWTSK/LinearAlgebra/Matrix/HermitianCounterexamples.lean"
+    "Algebra/LinearAlgebra/MatrixTheory/HermitianCounterexamples": [
+      "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/HermitianCounterexamples.lean"
     ],
-    "Order/Embeddings": [
-      "GRWTSK/Order/Embeddings/PrefixObstruction.lean"
+    "CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings": [
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings/PrefixObstruction.lean"
     ],
-    "Combinatorics/DirectedGraph": [
-      "GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReferenceTransport.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean",
-      "GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean"
+    "CombinatoricsAndDiscreteMathematics/DirectedGraph": [
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/EdgeTrace.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/EndpointSection.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/IncrementalPrefixTable.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/OccurrencePrefix.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/ParentTraceDictionary.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PathOccurrences.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PathUnfolding.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixInventory.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableBatch.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableCheckpoint.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableCompaction.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableDirectLookup.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableReferenceTransport.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableReindex.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableSchedule.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableState.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/PrefixTableUpdateReindex.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/RoleRelationReindex.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/RoleRelationTable.lean",
+      "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/RootedTraceRevision.lean"
     ],
     "Analysis/MellinTransform": [
       "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
@@ -226,15 +226,15 @@
     "Analysis/Series": [
       "GRWTSK/Analysis/Series/DyadicKernel.lean"
     ],
-    "Analysis/Fourier": [
-      "GRWTSK/Analysis/Fourier/SchwartzMoments.lean",
-      "GRWTSK/Analysis/Fourier/ZModBalancedExpectedLayers.lean",
-      "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
-      "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean",
-      "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean"
+    "Analysis/HarmonicAnalysis/FourierAnalysis": [
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/SchwartzMoments.lean",
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ZModBalancedExpectedLayers.lean",
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ZModBalancedPartition.lean",
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ZModLargerSlice.lean",
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ZModSubsetSum.lean"
     ],
-    "Analysis/Calculus": [
-      "GRWTSK/Analysis/Calculus/CompactCutoff.lean"
+    "Analysis/RealAnalysis/DifferentialCalculus": [
+      "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/CompactCutoff.lean"
     ],
     "NumberTheory/Ideal": [
       "GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean"
@@ -251,8 +251,8 @@
       "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean",
       "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean"
     ],
-    "LinearAlgebra/OrientedRealLine": [
-      "GRWTSK/LinearAlgebra/OrientedRealLine/Coherence.lean"
+    "Algebra/LinearAlgebra/OrientedRealLine": [
+      "GRWTSK/Algebra/LinearAlgebra/OrientedRealLine/Coherence.lean"
     ],
     "Analysis/FiniteSums": [
       "GRWTSK/Analysis/FiniteSums/WeightedDegreeComparison.lean"
@@ -263,8 +263,8 @@
     "NumberTheory/ArithmeticGeometry/LogThetaComparison": [
       "GRWTSK/NumberTheory/ArithmeticGeometry/LogThetaComparison.lean"
     ],
-    "Analysis/Fourier/FiniteAdditiveProjector": [
-      "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+    "Analysis/HarmonicAnalysis/FourierAnalysis/FiniteAdditiveProjector": [
+      "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/FiniteAdditiveProjector.lean"
     ]
   },
   "subject_placements": {
@@ -413,5 +413,7 @@
     "GRWTSK/Analysis/Fourier/ZModLargerSlice.lean": "Analysis",
     "GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean": "Combinatorics",
     "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicJacobi.lean": "NumberTheory"
-  }
+  },
+  "layout_contract": "docs/verification/_unscoped/taxonomy-path-sync-v1.toml",
+  "layout_scope": "Current navigation locators only; editorial associations remain candidates and do not establish proof admission"
 }

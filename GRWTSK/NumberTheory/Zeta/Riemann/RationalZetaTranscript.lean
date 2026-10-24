@@ -19,7 +19,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalZetaTranscript
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic RationalZetaCenterEvaluation
 
 /-- Only the three rational state fields; no proof or logarithm oracle. -/

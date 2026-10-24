@@ -2,7 +2,7 @@ import GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.ZeroCoordinateObst
 
 set_option linter.hashCommand false
 
-namespace GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+namespace GRWTSK.Algebra.LinearAlgebra.ZeroCoordinateObstruction
 
 #print axioms coordinate_quadratic_eq
 #print axioms no_uniform_domination
@@ -14,4 +14,4 @@ namespace GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
 #check diagonal_scale_ne_positive
 #check zero_preserving_map_ne_target
 
-end GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+end GRWTSK.Algebra.LinearAlgebra.ZeroCoordinateObstruction

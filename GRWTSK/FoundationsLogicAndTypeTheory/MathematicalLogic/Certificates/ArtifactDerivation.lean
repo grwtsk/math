@@ -17,7 +17,7 @@ repository inventory is complete or that a Python generator implements one of
 these rules; those are separate adapter and coverage obligations.
 -/
 
-namespace GRWTSK.Logic.Certificates
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates
 
 universe u v
 
@@ -90,4 +90,4 @@ theorem reconstruction_exact {Artifact : Type u} {RuleId : Type v}
         exact inputExact input member]
       exact rulesExact ruleId admitted
 
-end GRWTSK.Logic.Certificates
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates

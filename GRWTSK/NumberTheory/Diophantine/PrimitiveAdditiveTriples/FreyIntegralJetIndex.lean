@@ -7,7 +7,7 @@ source. Quotient cardinality, quotient exponent/clearing, source torsion,
 minimal discriminant and source height remain noncoercible.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassImageIndex
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassImageIndex
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetImage
 
 set_option autoImplicit false
@@ -15,7 +15,7 @@ noncomputable section
 
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetIndex
 
-open GRWTSK.AlgebraicGeometry.EllipticCurve
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve
 open FreyGlobalMinimalDiscriminant FreyIntegralJetImage
 open FreyCollisionJetDenominator
 open GRWTSK.NumberTheory.Height.RationalVectorAffineHeight

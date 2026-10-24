@@ -15,8 +15,8 @@ not been elaborated or executed in Lean. SOURCE_ONLY / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentPerronLineControls
 
 open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinInversion
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 open GRWTSK.NumberTheory.LSeries.TentPairing
 
 /-- Zero imaginary height is a regular point of the selected vertical line. -/

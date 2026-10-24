@@ -3,7 +3,7 @@
 Let $\iota$ be finite, $W_i:\mathbb R\to\mathbb C$, $a_i\in\mathbb R$,
 and $M_i\ge0$. Suppose $W_i(y)\ne0$ implies $|y|\le M_i$. Put
 $T=\sum_i |a_i|M_i$ and choose the actual
-[compact smooth Schwartz cutoff](../Calculus/compact-cutoff.md) $V=\phi_T$.
+[compact smooth Schwartz cutoff](../RealAnalysis/DifferentialCalculus/compact-cutoff.md) $V=\phi_T$.
 This choice precedes every positive scale $R$ and every parameter tuple $y$.
 With $P$ the actual normalized logarithmic Gaussian and $D_{V,R}$ the actual
 [log-window Fourier density](gaussian-log-window.md), the pointwise identity is

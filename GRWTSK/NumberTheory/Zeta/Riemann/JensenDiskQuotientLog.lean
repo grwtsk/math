@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative
-import GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm
+import GRWTSK.Analysis.ComplexAnalysis.BlaschkeQuotientLogarithm
 
 set_option autoImplicit false
 
@@ -23,8 +23,8 @@ open Set Metric Filter
 open scoped Topology BigOperators
 open CanonicalZeroDivisor SeparatedContourHeights LocalJensenCount
 open CubicZetaCircleBound AnchoredLocalJensen JensenDiskLogDerivative
-open GRWTSK.Analysis.Complex.DiskBlaschkeFactors
-open GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm
+open GRWTSK.Analysis.ComplexAnalysis.DiskBlaschkeFactors
+open GRWTSK.Analysis.ComplexAnalysis.BlaschkeQuotientLogarithm
 
 noncomputable section
 

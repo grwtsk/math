@@ -18,7 +18,7 @@ open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 open CriticalStripHeightDescent.CenteredMellin.SexticPrimitive
 open CriticalStripHeightDescent.CenteredMellin.SexticPrimitive.C1Approximation
 open CriticalStripHeightDescent.ZeroIsolation.MirrorApproximation
-open GRWTSK.Analysis.Complex.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 open scoped Topology
 noncomputable section
 

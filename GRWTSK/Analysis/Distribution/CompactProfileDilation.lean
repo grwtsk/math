@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Integration.CompactPolynomialMoments
+import GRWTSK.Analysis.RealAnalysis.Integration.CompactPolynomialMoments
 import GRWTSK.Analysis.Convolution.CompactProfileCorrelation
 import GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability
 import Mathlib.MeasureTheory.Integral.IntegralEqImproper

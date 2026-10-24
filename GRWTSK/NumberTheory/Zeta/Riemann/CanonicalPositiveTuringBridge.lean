@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.PositiveHeightSymmetricCount
 import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
-import GRWTSK.Combinatorics.WeightedSubsetBudget
+import GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget
 
 set_option autoImplicit false
 
@@ -37,8 +37,8 @@ open Set
 open scoped BigOperators
 open CanonicalZeroDivisor
 open PositiveHeightCountDeficit
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedSubsetBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 

@@ -11,7 +11,7 @@ This module proves local algebra/analysis and conditional returns, not P04.
 Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Analysis.Waveform
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform
 
 /-- Generic exact return, preserving real exponents and the complete error. -/
 theorem polynomial_return {X R e : ℝ → ℝ} {CR Ce r s : ℝ}
@@ -32,4 +32,4 @@ theorem polynomial_return {X R e : ℝ → ℝ} {CR Ce r s : ℝ}
     _ = _ := by ring
 
 
-end GRWTSK.Analysis.Waveform
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform

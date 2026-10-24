@@ -10,7 +10,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. -/
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.FirstBlockControls
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace EuclideanDyadicRun
 open GRWTSK.RiemannHypothesis
 open ConcreteNewtonPacket ConcreteNewtonFirstBlockData ConcreteNewtonFirstBlock

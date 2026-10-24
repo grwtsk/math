@@ -1,10 +1,10 @@
 import GRWTSK.Algebra.KTheory.FormalKK
-import GRWTSK.LinearAlgebra.FramedFiberPort
+import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 namespace GRWTSK.Analysis.Operator.FramedLiftModes
 
 open GRWTSK.Algebra.KTheory.FormalKK
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 universe u v w x v₀ v₁ w₀ w₁
 

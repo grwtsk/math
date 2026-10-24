@@ -21,7 +21,7 @@ open FreyMarkedBoundaryCycle FreyMarkedObservationHeight FreyMarkedSUnit
 open GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryCycle
 open GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryJInvariant
 open GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 
 /-- The quadratic factor of the same displayed c4 invariant. -/
 def shape (t : PrimitiveAdditiveTriple) : ℕ := t.a^2 + t.a*t.b + t.b^2

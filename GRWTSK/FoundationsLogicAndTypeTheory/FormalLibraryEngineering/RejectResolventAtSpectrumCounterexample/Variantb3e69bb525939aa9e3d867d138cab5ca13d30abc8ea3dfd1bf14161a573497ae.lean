@@ -1,9 +1,9 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.FiniteSpectralHeat
-open GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
+open GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat
+open GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat
 def zeroSpectralModel : Model (Fin 1) (Fin 1 → ℝ) where
   frame := LinearEquiv.refl ℝ (Fin 1 → ℝ)
   operator := 0

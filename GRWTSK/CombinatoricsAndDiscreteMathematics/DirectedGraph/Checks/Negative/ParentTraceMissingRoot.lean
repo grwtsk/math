@@ -5,8 +5,8 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 
 set_option autoImplicit false
 
-open GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
-open GRWTSK.Combinatorics.DirectedGraph.ParentTraceDictionary.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.ParentTraceDictionary.Checks.Positive
 
 /- Equal empty words cannot supply the missing identity of their retained roots. -/
 example : (origin false).endpoint = (origin true).endpoint :=

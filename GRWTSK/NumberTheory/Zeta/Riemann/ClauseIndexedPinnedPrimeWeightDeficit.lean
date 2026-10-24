@@ -24,7 +24,7 @@ NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 
 /-- Clause-arity indexing for one immutable coefficient rule and its canonical
 deficit criterion. -/

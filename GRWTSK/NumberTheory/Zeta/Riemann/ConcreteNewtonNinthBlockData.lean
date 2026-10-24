@@ -17,7 +17,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonNinthBlockData
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace RationalTaylorSeedNormalization
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 

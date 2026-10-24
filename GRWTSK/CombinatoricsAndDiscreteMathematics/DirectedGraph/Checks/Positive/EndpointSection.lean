@@ -6,11 +6,11 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph
 open PathUnfolding OccurrencePrefix EndpointSection
-open GRWTSK.Order.Embeddings.PrefixObstruction
+open GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings.PrefixObstruction
 
-namespace GRWTSK.Combinatorics.DirectedGraph.EndpointSection.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection.Checks.Positive
 
 theorem diamond_middle_obstruction :
     Reachable Diamond.left Diamond.top ∧ Reachable Diamond.right Diamond.top ∧
@@ -69,4 +69,4 @@ example : (ofPath leftTopHistory).endpoint = (ofPath rightTopHistory).endpoint :
 
 example : leftTopHistory.length = 2 ∧ rightTopHistory.length = 2 := ⟨rfl, rfl⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.EndpointSection.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.EndpointSection.Checks.Positive

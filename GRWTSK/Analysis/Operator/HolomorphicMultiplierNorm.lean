@@ -14,16 +14,16 @@ namespace GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
 
 open MeasureTheory
 open scoped ENNReal Topology
-open scoped GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicSectionRing (HolomorphicSection)
-open GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology (section_continuous)
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineGauge
-open GRWTSK.Analysis.Complex.HolomorphicLineMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineGaugeMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion
+open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicEvaluationTopology (section_continuous)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.Operator.HolomorphicLineSectionBounded
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol

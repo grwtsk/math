@@ -11,8 +11,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
 

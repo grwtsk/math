@@ -18,7 +18,7 @@ They have not been executed in Lean.
 namespace GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls
 
 open scoped BigOperators Real
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs

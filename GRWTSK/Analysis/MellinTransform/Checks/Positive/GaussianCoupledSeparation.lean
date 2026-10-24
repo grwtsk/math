@@ -5,7 +5,7 @@ namespace GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation.Checks
 noncomputable section
 open scoped ContDiff SchwartzMap FourierTransform
 open MeasureTheory
-open GRWTSK.Analysis.Calculus.CompactCutoff
+open GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
 open GRWTSK.Analysis.MellinTransform.GaussianLogWindow
 

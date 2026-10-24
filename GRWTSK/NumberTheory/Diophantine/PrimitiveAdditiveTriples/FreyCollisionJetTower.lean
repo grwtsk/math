@@ -7,7 +7,7 @@ full finite-order algebra comparison; the old obstructed direction is
 preserved on the complement. Cubic normalization retains its own B^2 cost.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassOriginJet
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassOriginJet
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionSecondJet
 
 set_option autoImplicit false
@@ -16,7 +16,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionJetTower
 
 open WeierstrassCurve Polynomial
-open GRWTSK.AlgebraicGeometry.EllipticCurve
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve
 open FreyGlobalMinimalDiscriminant FreyTwoBranchDecision FreyOddReduction
 open FreyCollisionOrder FreyCollisionSecondJet
 

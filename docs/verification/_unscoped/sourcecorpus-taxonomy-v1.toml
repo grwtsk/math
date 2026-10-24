@@ -18,6 +18,8 @@ generated_receipts_repository = "grwtsk/noeaaeue"
 lean_verification = "NOT_RUN"
 semantic_review = "SOURCE_SPECIFIC_REVIEW_REQUIRED"
 mathematical_acceptance = "NOT_CLAIMED"
+path_scope = "Historical first-stage destinations and digests; resolve subsequent placement through taxonomy-path-sync-v1.toml relocations without extending earlier verification claims"
+successor_layout = "docs/verification/_unscoped/taxonomy-path-sync-v1.toml"
 
 [taxonomy_basis]
 repository = "grwtsk/noeaaeue"

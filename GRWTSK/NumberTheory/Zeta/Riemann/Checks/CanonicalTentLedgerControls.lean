@@ -14,7 +14,7 @@ open scoped Topology
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 
 /-- The selected signed ledger balances exactly. -/
 theorem square_two_ledger_balance :

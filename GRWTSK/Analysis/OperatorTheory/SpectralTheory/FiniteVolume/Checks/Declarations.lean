@@ -7,146 +7,146 @@ import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts
 import Lean
 
 open Lean Elab Command
-open GRWTSK.Spectral.GapTransport
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
 
 example {ι F : Type*} [Fintype ι] [DecidableEq ι]
     [AddCommGroup F] [Module ℝ F] [FiniteDimensional ℝ F]
     {A B : Matrix ι ι ℝ} (hA : A.IsHermitian) (hB : B.IsHermitian)
     (K : EuclideanSpace ℝ ι →ₗ[ℝ] F) :
     (∀ v, K v = 0 → A.toEuclideanLin v = B.toEuclideanLin v) → ∀ E,
-    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E ≤
-      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E + Module.finrank ℝ F :=
-  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_add_finrank_of_kernel hA hB K
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hB E ≤
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hA E + Module.finrank ℝ F :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount_le_add_finrank_of_kernel hA hB K
 
 example {ι : Type*} [Fintype ι] [DecidableEq ι] {A B : Matrix ι ι ℝ}
     (hA : A.IsHermitian) (hB : B.IsHermitian) : ∀ E,
-    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E ≤
-      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E +
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hB E ≤
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hA E +
       Module.finrank ℝ (LinearMap.range (B.toEuclideanLin - A.toEuclideanLin)) :=
-  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_add_difference_rank hA hB
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount_le_add_difference_rank hA hB
 
 example : ∀ N c,
     Module.finrank ℝ (LinearMap.range
-      (GRWTSK.Spectral.DirichletCut.joiningEdge N c).toEuclideanLin) ≤ 2 :=
-  GRWTSK.Spectral.DirichletCut.joiningEdge_rank_le_two
+      (GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.joiningEdge N c).toEuclideanLin) ≤ 2 :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.joiningEdge_rank_le_two
 
 example (N M : ℕ) (hN : 0 < N) (α V ξ : ℝ) (origin : ℤ) :
     Matrix.reindex (finSumFinEquiv : Fin N ⊕ Fin M ≃ Fin (N+M)).symm
       (finSumFinEquiv : Fin N ⊕ Fin M ≃ Fin (N+M)).symm
-      (GRWTSK.Spectral.DirichletCut.cutHamiltonian (N+M) α V ξ origin (N-1)) =
-    Matrix.fromBlocks (GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian N α V ξ origin) 0 0
-      (GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian M α V ξ (origin+(N:ℤ))) :=
-  GRWTSK.Spectral.DirichletCut.cutHamiltonian_reindex N M hN α V ξ origin
+      (GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.cutHamiltonian (N+M) α V ξ origin (N-1)) =
+    Matrix.fromBlocks (GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian N α V ξ origin) 0 0
+      (GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian M α V ξ (origin+(N:ℤ))) :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.cutHamiltonian_reindex N M hN α V ξ origin
 
 example : ∀ N M, 0 < N → ∀ α V ξ origin E,
-    |(GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount N α V ξ origin E : ℝ) +
-      (GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount M α V ξ (origin+(N:ℤ)) E : ℝ) -
-      (GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount (N+M) α V ξ origin E : ℝ)| ≤ 2 :=
-  GRWTSK.Spectral.DirichletCut.adjacent_count_error
+    |(GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount N α V ξ origin E : ℝ) +
+      (GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount M α V ξ (origin+(N:ℤ)) E : ℝ) -
+      (GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount (N+M) α V ξ origin E : ℝ)| ≤ 2 :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.adjacent_count_error
 
 example : ∀ N M, 0 < N → ∀ α V ξ origin E,
-    |((GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount N α V ξ origin E : ℝ) +
-        (GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount M α V ξ (origin+(N:ℤ)) E : ℝ)) /
+    |((GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount N α V ξ origin E : ℝ) +
+        (GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount M α V ξ (origin+(N:ℤ)) E : ℝ)) /
         (N+M:ℕ) -
-      GRWTSK.Spectral.SturmianFiniteVolume.sturmianNormalizedCount (N+M) α V ξ origin E| ≤
-      2/(N+M:ℕ) := GRWTSK.Spectral.DirichletCut.adjacent_normalized_count_error
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianNormalizedCount (N+M) α V ξ origin E| ≤
+      2/(N+M:ℕ) := GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.adjacent_normalized_count_error
 
-example : GRWTSK.Spectral.DirichletCut.cutHamiltonian 2 (1/2) 3 0 0 0 1 1 = 3 ∧
-    GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian 1 (1/2) 3 0 0 0 0 = 0 := by
+example : GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.cutHamiltonian 2 (1/2) 3 0 0 0 1 1 = 3 ∧
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian 1 (1/2) 3 0 0 0 0 = 0 := by
   constructor
-  · change GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian 2 (1/2) 3 0 0
+  · change GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian 2 (1/2) 3 0 0
       ⟨1,by decide⟩ ⟨1,by decide⟩ -
-      GRWTSK.Spectral.DirichletCut.joiningEdge 2 0 ⟨1,by decide⟩ ⟨1,by decide⟩ = 3
-    simp only [GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian, Matrix.add_apply,
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.joiningEdge 2 0 ⟨1,by decide⟩ ⟨1,by decide⟩ = 3
+    simp only [GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian, Matrix.add_apply,
       Matrix.diagonal_apply,
-      GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet,
-      GRWTSK.Spectral.DirichletCut.joiningEdge]
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeDirichlet,
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut.joiningEdge]
     norm_num [
-      GRWTSK.LinearAlgebra.Sturmian.potential, GRWTSK.LinearAlgebra.Sturmian.bit, Int.fract]
-  · norm_num [GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian,
-      GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet,
-      GRWTSK.LinearAlgebra.Sturmian.potential, GRWTSK.LinearAlgebra.Sturmian.bit, Int.fract]
+      GRWTSK.Algebra.LinearAlgebra.Sturmian.potential, GRWTSK.Algebra.LinearAlgebra.Sturmian.bit, Int.fract]
+  · norm_num [GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian,
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeDirichlet,
+      GRWTSK.Algebra.LinearAlgebra.Sturmian.potential, GRWTSK.Algebra.LinearAlgebra.Sturmian.bit, Int.fract]
 
 example : ∀ N E,
-    GRWTSK.Spectral.SturmianFiniteVolume.freeCount N E =
-      N - (Nat.ceil (GRWTSK.Spectral.FreeIDS.cutoff N E)-1) :=
-  GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeCount N E =
+      N - (Nat.ceil (GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.cutoff N E)-1) :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeCount_eq_ceil
 
 example : ∀ E, Filter.Tendsto
-    (fun N => GRWTSK.Spectral.SturmianFiniteVolume.freeNormalizedCount N E)
+    (fun N => GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeNormalizedCount N E)
     Filter.atTop (nhds (1-Real.arccos (E/2)/Real.pi)) :=
-  GRWTSK.Spectral.FreeIDS.freeNormalizedCount_tendsto
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeNormalizedCount_tendsto
 
 example : ∀ (N : ℕ), 0 < N → ∀ E,
-    GRWTSK.Spectral.FreeIDS.freeIDS E - 1/(N:ℝ) ≤
-      GRWTSK.Spectral.SturmianFiniteVolume.freeNormalizedCount N E ∧
-    GRWTSK.Spectral.SturmianFiniteVolume.freeNormalizedCount N E ≤
-      GRWTSK.Spectral.FreeIDS.freeIDS E + 1/(N:ℝ) :=
-  GRWTSK.Spectral.FreeIDS.normalized_count_bounds
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeIDS E - 1/(N:ℝ) ≤
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeNormalizedCount N E ∧
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeNormalizedCount N E ≤
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeIDS E + 1/(N:ℝ) :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.normalized_count_bounds
 
 example (α V ξ : ℝ) (origin : ℤ) {S : Set ℝ} {ids : ℝ → ℝ} {label a b : ℝ} :
     0 < label → label < 1 →
     (∀ E, Filter.Tendsto
-      (fun N => GRWTSK.Spectral.SturmianFiniteVolume.sturmianNormalizedCount N α V ξ origin E)
+      (fun N => GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianNormalizedCount N α V ξ origin E)
       Filter.atTop (nhds (ids E))) →
     OpenLabelGap S ids label a b → 0 < b-a ∧ b-a ≤ |V| :=
-  GRWTSK.Spectral.FreeIDS.gap_width_le_abs_coupling α V ξ origin
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.gap_width_le_abs_coupling α V ξ origin
 
-example : GRWTSK.Spectral.FreeIDS.freeIDS (-3) = 0 ∧
-    GRWTSK.Spectral.FreeIDS.freeEnergy 0 > (-3:ℝ) := by
+example : GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeIDS (-3) = 0 ∧
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeEnergy 0 > (-3:ℝ) := by
   constructor
-  · exact GRWTSK.Spectral.FreeIDS.freeIDS_of_le_neg_two (by norm_num)
-  · norm_num [GRWTSK.Spectral.FreeIDS.freeEnergy]
+  · exact GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeIDS_of_le_neg_two (by norm_num)
+  · norm_num [GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeEnergy]
 
 -- An eigenvalue exactly at the cut is counted (the one-site free matrix is zero).
-example : GRWTSK.Spectral.SturmianFiniteVolume.freeCount 1 0 = 1 := by
-  have hc : GRWTSK.Spectral.FreeIDS.cutoff 1 0 = 1 := by
-    simp [GRWTSK.Spectral.FreeIDS.cutoff, GRWTSK.Spectral.FreeIDS.angleFraction]
+example : GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeCount 1 0 = 1 := by
+  have hc : GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.cutoff 1 0 = 1 := by
+    simp [GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.cutoff, GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.angleFraction]
     field_simp
     norm_num
-  rw [GRWTSK.Spectral.FreeIDS.freeCount_eq_ceil, hc]
+  rw [GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS.freeCount_eq_ceil, hc]
   norm_num
 
 -- Inclusive counts use every eigenbasis index, preserving multiplicity.
 example {ι : Type*} [Fintype ι] [DecidableEq ι] {A : Matrix ι ι ℝ}
     (hA : A.IsHermitian) (E : ℝ) :
-    GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E =
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hA E =
       (Finset.univ.filter (fun i => hA.eigenvalues i ≤ E)).card := rfl
 
 example {ι : Type*} [Fintype ι] [DecidableEq ι] {A B : Matrix ι ι ℝ} :
     ∀ (hA : A.IsHermitian) (hB : B.IsHermitian), (B-A).PosSemidef → ∀ E,
-      GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hB E ≤
-        GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount hA E :=
-  GRWTSK.Spectral.MatrixCountComparison.eigenvalueCount_le_of_posSemidef
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hB E ≤
+        GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount hA E :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison.eigenvalueCount_le_of_posSemidef
 
 example : ∀ N α V ξ origin E,
-    GRWTSK.Spectral.SturmianFiniteVolume.freeCount N (E-max V 0) ≤
-      GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount N α V ξ origin E ∧
-    GRWTSK.Spectral.SturmianFiniteVolume.sturmianCount N α V ξ origin E ≤
-      GRWTSK.Spectral.SturmianFiniteVolume.freeCount N (E-min V 0) :=
-  GRWTSK.Spectral.SturmianFiniteVolume.finite_count_comparison
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeCount N (E-max V 0) ≤
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount N α V ξ origin E ∧
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianCount N α V ξ origin E ≤
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeCount N (E-min V 0) :=
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.finite_count_comparison
 
 example (α V ξ : ℝ) (origin : ℤ) (free ids : ℝ → ℝ) :
     (∀ E, Filter.Tendsto (fun N =>
-      GRWTSK.Spectral.SturmianFiniteVolume.freeNormalizedCount N E)
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeNormalizedCount N E)
       Filter.atTop (nhds (free E))) →
     (∀ E, Filter.Tendsto (fun N =>
-      GRWTSK.Spectral.SturmianFiniteVolume.sturmianNormalizedCount N α V ξ origin E)
+      GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.sturmianNormalizedCount N α V ξ origin E)
       Filter.atTop (nhds (ids E))) →
     ∀ E, free (E-max V 0) ≤ ids E ∧ ids E ≤ free (E-min V 0) :=
-  GRWTSK.Spectral.SturmianFiniteVolume.ids_comparison_of_count_limits α V ξ origin free ids
+  GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.ids_comparison_of_count_limits α V ξ origin free ids
 
 -- Endpoint boundary: the three-site restriction has no periodic corner.
-example : GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet 3 0 2 = 0 ∧
-    GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet 3 0 1 = 1 := by
-  norm_num [GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet]
+example : GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeDirichlet 3 0 2 = 0 ∧
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeDirichlet 3 0 1 = 1 := by
+  norm_num [GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeDirichlet]
 
 -- Nonzero potential at the included half-open left endpoint; zero at its wrap.
-example : GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian 1 (1/2) 3 (1/2) 0 0 0 = 3 ∧
-    GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian 1 (1/2) 3 0 0 0 0 = 0 := by
-  norm_num [GRWTSK.Spectral.SturmianFiniteVolume.hamiltonian,
-    GRWTSK.Spectral.SturmianFiniteVolume.freeDirichlet,
-    GRWTSK.LinearAlgebra.Sturmian.potential, GRWTSK.LinearAlgebra.Sturmian.bit, Int.fract]
+example : GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian 1 (1/2) 3 (1/2) 0 0 0 = 3 ∧
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian 1 (1/2) 3 0 0 0 0 = 0 := by
+  norm_num [GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.hamiltonian,
+    GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume.freeDirichlet,
+    GRWTSK.Algebra.LinearAlgebra.Sturmian.potential, GRWTSK.Algebra.LinearAlgebra.Sturmian.bit, Int.fract]
 
 -- Literal transport contract, including reference surjectivity, target coding,
 -- every target IDS hypothesis, and the strict positive-width conclusion.
@@ -177,21 +177,21 @@ example {S : Set ℝ} {free ids : ℝ → ℝ} {label freeEnergy lower upper a b
     OpenLabelGap S ids label a b → 0 < b - a ∧ b - a ≤ upper - lower :=
   @gap_width_le_of_ids_comparison S free ids label freeEnergy lower upper a b
 
-example (α ξ : ℝ) (n : ℤ) : GRWTSK.LinearAlgebra.Sturmian.bit α ξ n =
+example (α ξ : ℝ) (n : ℤ) : GRWTSK.Algebra.LinearAlgebra.Sturmian.bit α ξ n =
     if Int.fract (ξ + (n : ℝ) * α) ∈ Set.Ico (1 - α) 1 then 1 else 0 := rfl
 
 example (E α ξ : ℝ) (n : ℤ) :
-    GRWTSK.LinearAlgebra.Sturmian.transfer E α 0 ξ n =
-      GRWTSK.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E 0 :=
-  GRWTSK.LinearAlgebra.Sturmian.zero_coupling_transfer E α ξ n
+    GRWTSK.Algebra.LinearAlgebra.Sturmian.transfer E α 0 ξ n =
+      GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer.schrodingerTransfer E 0 :=
+  GRWTSK.Algebra.LinearAlgebra.Sturmian.zero_coupling_transfer E α ξ n
 
 example (E α ξ : ℝ) (n : ℤ) :
-    |Matrix.trace (GRWTSK.LinearAlgebra.Sturmian.transfer E α 0 ξ n)| ≤ 2 ↔
+    |Matrix.trace (GRWTSK.Algebra.LinearAlgebra.Sturmian.transfer E α 0 ξ n)| ≤ 2 ↔
       E ∈ Set.Icc (-2 : ℝ) 2 :=
-  GRWTSK.LinearAlgebra.Sturmian.zero_coupling_trace_iff E α ξ n
+  GRWTSK.Algebra.LinearAlgebra.Sturmian.zero_coupling_trace_iff E α ξ n
 
-open GRWTSK.Spectral.SturmianBlockCounts
-open GRWTSK.Spectral.SturmianFiniteVolume
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 example (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :
     sturmianCount N α V ξ origin E ≤ N := count_le_volume N α V ξ origin E
 example (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :
@@ -225,11 +225,11 @@ elab "#audit_ten_martini" : command => do
   let owners := env.header.moduleNames
   unless env.header.moduleData.size == owners.size do throwError "incomplete ownership table"
   let decls := (env.header.moduleData.toList.zip owners.toList).flatMap fun (data, owner) =>
-    if #[`GRWTSK.LinearAlgebra.SchrodingerTransfer, `GRWTSK.LinearAlgebra.Sturmian,
-        `GRWTSK.Spectral.GapTransport, `GRWTSK.Spectral.MatrixCountComparison,
-        `GRWTSK.Spectral.SturmianFiniteVolume, `GRWTSK.Spectral.FreeDirichletSpectrum,
-        `GRWTSK.Spectral.FreeIDS, `GRWTSK.Spectral.DirichletCut,
-        `GRWTSK.Spectral.SturmianBlockCounts].contains owner then
+    if #[`GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer, `GRWTSK.Algebra.LinearAlgebra.Sturmian,
+        `GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport, `GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison,
+        `GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume, `GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum,
+        `GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS, `GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut,
+        `GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts].contains owner then
       (data.constants.toList.filter fun info =>
         match env.getModuleIdxFor? info.name with
         | some idx => owners[idx]! == owner

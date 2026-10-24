@@ -20,9 +20,9 @@ Candidate 0.4 adds twelve original [geometry and topology subjects](proposals/ne
 
 Candidate 0.5 adds eleven [statistics subjects](proposals/new-concepts/statistics.md), reaching 52 proposed concepts. Its restricted least-squares subject has point-estimation and linear-regression parents, one canonical home and explicit model assumptions. The earlier source-only merge does not supply independent acceptance.
 
-Candidate 0.6 adds [numerical analysis](subjects/numerical-analysis/index.md) and [mathematical optimization](subjects/optimization/index.md), with one shared restricted conjugate-gradient page. See the [addition proposal](proposals/new-concepts/numerical-optimization.md). Earlier candidate histories, identities and review limits remain intact.
+Candidate 0.6 adds [numerical analysis](subjects/NumericalAnalysis/index.md) and [mathematical optimization](subjects/Optimization/index.md), with one shared restricted conjugate-gradient page. See the [addition proposal](proposals/new-concepts/numerical-optimization.md). Earlier candidate histories, identities and review limits remain intact.
 
-Candidate 0.7 adds twelve [number-theory subjects](subjects/number-theory/index.md), reaching 73 proposed concepts. [The proposal](proposals/new-concepts/number-theory.md) retains the analytic-placement question and one shared computational/algebraic subject, without importing external scheme data or accepting mathematical claims.
+Candidate 0.7 adds twelve [number-theory subjects](subjects/NumberTheory/index.md), reaching 73 proposed concepts. [The proposal](proposals/new-concepts/number-theory.md) retains the analytic-placement question and one shared computational/algebraic subject, without importing external scheme data or accepting mathematical claims.
 
 Candidate 0.8 adds twelve [equation, dynamics and mechanics subjects](proposals/new-concepts/equations-dynamics-mechanics.md), reaching 85 proposed concepts. Autonomous linear systems and restricted Hamiltonian oscillators each have two parents and one canonical page; modeling and existence assumptions are retained.
 

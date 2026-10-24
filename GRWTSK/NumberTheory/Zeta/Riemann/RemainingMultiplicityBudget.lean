@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Proof drafting assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Combinatorics.WeightedSubsetBudget
+import GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget
 import GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier
 
 set_option autoImplicit false
@@ -25,8 +25,8 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedSubsetBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier
 
@@ -42,14 +42,14 @@ theorem remaining_add_known (T : ℝ) (U : Set ℂ) (known : Finset ZeroPoint)
     (subset : known ⊆ regionHead T U) :
     remainingCount T U known + mass known multiplicity = regionCount T U := by
   classical
-  exact GRWTSK.Combinatorics.WeightedSubsetBudget.remaining_add_known (regionHead T U) known multiplicity subset
+  exact GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget.remaining_add_known (regionHead T U) known multiplicity subset
 
 /-- A natural-number difference is meaningful here because subset alignment is proved. -/
 theorem remaining_eq_sub (T : ℝ) (U : Set ℂ) (known : Finset ZeroPoint)
     (subset : known ⊆ regionHead T U) :
     remainingCount T U known = regionCount T U - mass known multiplicity := by
   classical
-  exact GRWTSK.Combinatorics.WeightedSubsetBudget.remaining_eq_sub (regionHead T U) known multiplicity subset
+  exact GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedSubsetBudget.remaining_eq_sub (regionHead T U) known multiplicity subset
 
 /-- An off-line point cannot have its critical reflection on the line. -/
 theorem reflected_off_line (z : ZeroPoint) (offLine : z.1.re ≠ 1 / 2) :

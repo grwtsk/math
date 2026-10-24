@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Source controls, not executed tests or claims about actual zeta zeros. -/
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.NewtonWitnessControls
 
-open GRWTSK.Analysis.Complex.ContractiveZeroDisk
+open GRWTSK.Analysis.ComplexAnalysis.ContractiveZeroDisk
 
 /-- An arbitrarily small nonzero constant has no zero. -/
 theorem residual_alone_fails (e : ℂ) (he : e ≠ 0) : ¬∃ z : ℂ, (fun _ : ℂ => e) z = 0 := by

@@ -1,6 +1,6 @@
 # Additive-character moments of primitive triples
 
-Let `M,d,q` be natural numbers, let `q > 2*M`, and let `W : ℕ → ℕ → ℕ → ℂ` be an arbitrary joint weight. Using the [normalized character projector](../../../Analysis/Fourier/FiniteAdditiveProjector/projector.md), the exact finite identity is
+Let `M,d,q` be natural numbers, let `q > 2*M`, and let `W : ℕ → ℕ → ℕ → ℂ` be an arbitrary joint weight. Using the [normalized character projector](../../../Analysis/HarmonicAnalysis/FourierAnalysis/FiniteAdditiveProjector/projector.md), the exact finite identity is
 
 \[
 \sum_{\substack{1\le u,v\le M\\u+v\le M}}W(du,dv,d(u+v))

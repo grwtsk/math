@@ -17,7 +17,7 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.RationalFiniteEvaluation
 open Complex Finset
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 open CenteredMellin CenteredMellin.SexticPrimitive RationalPowerEvaluation
 namespace D
 export CenteredMellin.SexticPrimitive.DerivativeSixteen

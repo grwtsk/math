@@ -23,7 +23,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonPacket
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open CanonicalZeroDivisor
 
 /-- The 4096 included integers are distinct from the terminal base 4097. -/
@@ -37,7 +37,7 @@ def logExponent : ℕ → ℕ → ℕ
   | 0, _ => 0
   | fuel + 1, n => if 2 ≤ n then 1 + logExponent fuel (n / 2) else 0
 
-def schedule (base : ℕ) : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule where
+def schedule (base : ℕ) : GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation.Schedule where
   logExponent := logExponent 13 base
   logTerms := 18
   squarings := 8

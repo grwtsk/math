@@ -95,7 +95,7 @@ def fullMatrixScaleBudget (X : ℕ) : ℝ :=
   4 * (2*(X:ℝ)+1) * X * (Real.log (2*(X:ℝ)))^2
 
 theorem fullMatrix_frobenius_le (X : ℕ) (hX : 1 ≤ X) :
-    GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent.frobenius
+    GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.frobenius
       (canonicalFourFamilyCells X) (centeredGreenWindow X)
       (fun n p => canonicalFourFamilyGreenMatrixEntry X n p.1 p.2) ≤ fullMatrixScaleBudget X := by
   have hlog : 0 ≤ Real.log (2*(X:ℝ)) := Real.log_nonneg (by exact_mod_cast (by omega : 1 ≤ 2*X))
@@ -104,7 +104,7 @@ theorem fullMatrix_frobenius_le (X : ℕ) (hX : 1 ≤ X) :
     have hn' : n ≤ 2*X := (Finset.mem_Ioc.mp hn).2
     have h := (sq_le_sq₀ (abs_nonneg _) hlog).mpr (abs_fullMatrixEntry_le_log hX hn' p.1 p.2)
     simpa only [sq_abs] using h
-  unfold GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent.frobenius
+  unfold GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.frobenius
   calc
     _ ≤ ∑ _p ∈ canonicalFourFamilyCells X, ∑ _n ∈ centeredGreenWindow X,
         (Real.log (2*(X:ℝ)))^2 := Finset.sum_le_sum (fun p _ => Finset.sum_le_sum (fun n hn => hb p n hn))
@@ -116,7 +116,7 @@ theorem fullMatrix_frobenius_le (X : ℕ) (hX : 1 ≤ X) :
 theorem fullAdjointDamping_scale_lower (X : ℕ) (hX : 1 ≤ X) :
     1 / (1+fullMatrixScaleBudget X) ≤ fullAdjointDamping X := by
   apply one_div_le_one_div_of_le
-  · have hB : 0 ≤ GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent.frobenius
+  · have hB : 0 ≤ GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.frobenius
         (canonicalFourFamilyCells X) (centeredGreenWindow X)
         (fun n p => canonicalFourFamilyGreenMatrixEntry X n p.1 p.2) :=
       Finset.sum_nonneg (fun _ _ => Finset.sum_nonneg (fun _ _ => sq_nonneg _))

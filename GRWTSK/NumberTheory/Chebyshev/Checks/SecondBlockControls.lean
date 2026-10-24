@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Boundary and source-identity controls. SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
 namespace GRWTSK.RiemannHypothesis.SecondBlockControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 /-- Local positions 0 and 63 do not mean integer bases 1 and 64 here. -/

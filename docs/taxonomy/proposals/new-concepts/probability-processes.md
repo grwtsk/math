@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D16"]
 ---
 # Probability limits and stochastic processes: addition proposal
 
-[Proposals](../index.md) · [Probability](../../subjects/probability/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Probability](../../subjects/ProbabilityAndMathematicalStatistics/ProbabilityTheory/index.md) · [Registry](../../registry.md)
 
 ## Problem and pinned source
 

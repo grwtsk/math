@@ -31,8 +31,8 @@ open scoped BigOperators ComplexConjugate
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
 open GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRationalTentEvaluation
@@ -101,7 +101,7 @@ theorem prime_in_square_of_verified_claimed_endpoints
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (zeroLimit zeroClaimed : ℚ)
-    (zeroAccepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (zeroAccepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) zeroBits rows
       zeroLimit zeroClaimed = true)
     (N correctionBits : ℕ)
@@ -135,7 +135,7 @@ theorem prime_in_square_of_verified_endpoint_thresholds
     (zeroGap : packet.certificate.gap = 0)
     (alignment : PositivePairRowAlignment packet rows)
     (zeroLimit zeroClaimed : ℚ)
-    (zeroAccepted : GRWTSK.Analysis.Complex.RationalRealPairUpperBound.verify
+    (zeroAccepted : GRWTSK.Analysis.ComplexAnalysis.RationalRealPairUpperBound.verify
       (squareCenterQ n) (squareRadiusQ n) zeroBits rows
       zeroLimit zeroClaimed = true)
     (N correctionBits : ℕ)

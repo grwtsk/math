@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI Codex. -/
-import GRWTSK.Combinatorics.DirectedEulerSplicing
+import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedEulerSplicing
 import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicEdgeCertificate
 
 /-!
@@ -18,7 +18,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
 
-open GRWTSK.Combinatorics.DirectedEulerSplicing
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedEulerSplicing
 
 /-- Directed walks in the exact graph of counted binary edge instances. -/
 abbrev CountedBinaryEdgeWalk (m : ℕ) (c : BinaryEdgeWord m → ℕ)

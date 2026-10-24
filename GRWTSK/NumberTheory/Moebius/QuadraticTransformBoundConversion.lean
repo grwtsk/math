@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.MoebiusQuadraticReturn
 import GRWTSK.Analysis.AsymptoticAnalysis.QuadraticKernelEnergyEquivalence
 
 /-! The concrete reciprocal-zeta route has unconditional identification and

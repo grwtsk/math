@@ -23,7 +23,7 @@ inputs or a different coefficient dimension require separate arguments.
 Research direction: grwtsk contributors. Lean implementation: OpenAI Codex.
 -/
 
-namespace GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction
+namespace GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
 
 noncomputable section
 
@@ -84,4 +84,4 @@ theorem zero_coordinate_no_independent_linear_mix (input : ι → E) (target : �
 
 end
 
-end GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction
+end GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction

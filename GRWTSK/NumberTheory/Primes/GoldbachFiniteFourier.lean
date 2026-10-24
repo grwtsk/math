@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 import GRWTSK.NumberTheory.Primes.GoldbachWeighted
 import Mathlib.Data.Complex.BigOperators
 import Mathlib.Tactic
@@ -25,7 +25,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier
 
 open scoped BigOperators
-open GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 open GRWTSK.NumberTheory.Primes.GoldbachWeighted
 
 /-- The prime-log weighted additive-character projector on the complete box. -/
