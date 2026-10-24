@@ -352,6 +352,28 @@ def MvNRel {m n : ℕ} (P : FiniteStarProjection m)
     (P : Matrix (Fin m) (Fin m) ℂ) = V * Vᴴ ∧
       (Q : Matrix (Fin n) (Fin n) ℂ) = Vᴴ * V
 
+/-- Every finite complex star projection admits the identity rectangular
+correspondence with itself. This only proves reflexivity, not transitivity
+of the correspondence relation. -/
+theorem mvNRel_refl {n : ℕ} (P : FiniteStarProjection n) :
+    MvNRel P P := by
+  have hstar : P.valᴴ = P.val := by
+    change star P.val = P.val
+    exact P.property.isSelfAdjoint.star_eq
+  refine ⟨P.val, ?_, ?_⟩
+  · simpa only [hstar] using (P.property.isIdempotentElem.eq).symm
+  · simpa only [hstar] using (P.property.isIdempotentElem.eq).symm
+
+/-- Transposing a rectangular witness reverses finite projection
+correspondence. No quotient or stable analytic K₀ is constructed. -/
+theorem mvNRel_symm {m n : ℕ}
+    (P : FiniteStarProjection m) (Q : FiniteStarProjection n)
+    (h : MvNRel P Q) : MvNRel Q P := by
+  obtain ⟨V, hP, hQ⟩ := h
+  refine ⟨Vᴴ, ?_, ?_⟩
+  · simpa only [Matrix.conjTranspose_conjTranspose] using hQ
+  · simpa only [Matrix.conjTranspose_conjTranspose] using hP
+
 /-- Finite Murray–von Neumann correspondence preserves ordinary trace
 across different matrix sizes, by rectangular trace cyclicity. -/
 theorem trace_eq_of_mvNRel {m n : ℕ}
