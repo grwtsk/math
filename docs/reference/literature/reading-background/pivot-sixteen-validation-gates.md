@@ -133,6 +133,28 @@ Additional direct Mathlib imports are `Mathlib.NumberTheory.Chebyshev` (HigherPr
 
 Retain explanatory-only A–H phases, unfinished strict integral and independent Weil/RH mathematical obligations, and **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. No root import/merge, Railway, force push or unauthorized executor dispatch.
 
+## Import frontier continuation: nine additional project modules
+
+Read-only GitHub source inspection extended the project DAG by nine modules. The table records exact file blobs and **direct GRWTSK imports**, not transitive Lean/kernel validation.
+
+| Source module (under `GRWTSK.`) | Git blob | Direct project imports |
+|---|---|---|
+| `NumberTheory.Chebyshev.QuadraticIntervals` | `29ffefcbeef17d9118f16268a42d5d8e5fd35114` | `NumberTheory.Chebyshev.CorrelationPairing` |
+| `NumberTheory.Chebyshev.HigherPrimePowers` | `255cfee7611bd21bb58f47e217ec2a14d1afe355` | `NumberTheory.Chebyshev.PowerOccupancy` |
+| `Analysis.ErrorBounds.FiniteSquareBudget` | `fbfd45fb3e82f019adc243338a9c3c4222e5a704` | none |
+| `NumberTheory.Chebyshev.CanonicalTentExplicitFormula` | `2172502e9be474731d409b31a2b2d288a770ba24` | `NumberTheory.Chebyshev.CanonicalTentAbsolute`, `NumberTheory.Chebyshev.TentSelectedResidueLimit` |
+| `NumberTheory.Chebyshev.TrivialZeroTentSeries` | `86361f98a33d3b2f79e79d7679a04cd1490c69be` | `NumberTheory.Zeta.Riemann.TrivialZeroResidues`, `NumberTheory.Chebyshev.TentResidueContributions`, `Analysis.Real.TentRationalCorrection` |
+| `NumberTheory.Zeta.Riemann.PrimePowerExplicitFormulaSource` | `d4b3ba1c722726a33fe9e3306809d8633ba2c8b2` | `NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt`, `NumberTheory.Zeta.Riemann.ArithmeticFeature` |
+| `NumberTheory.ArithmeticFunctions.PrimePowerAtoms` | `ca25892174bf9e483025f5126f1de1041fc89f07` | `NumberTheory.ArithmeticFunctions.PrimeExponentScaleTopology` |
+| `Algebra.Polynomial.ConjugateQuartic` | `3b19fa113f9493c2ef98f791507ae351ea927c20` | none |
+| `NumberTheory.Zeta.Riemann.ZeroDefinitions` | `3768bab2649a6ae19e4973bf2ee2dfe41bfe3fe9` | `Analysis.Complex.CriticalReflection` |
+
+Direct non-project imports include Mathlib components for ordered floors, arithmetic functions, harmonic bounds, complex analysis, polynomial evaluation, and infinite sums, plus `Lean.Elab.Tactic.NormCast`. These are source declarations, **not** a completed Mathlib closure.
+
+**Next unexpanded project frontier:** `CorrelationPairing`, `PowerOccupancy`, `CanonicalTentAbsolute`, `TentSelectedResidueLimit`, `TrivialZeroResidues`, `TentResidueContributions`, `TentRationalCorrection`, `PrimeExponentScaleTopology`, and `CriticalReflection`, together with their descendants. Exact project path prefixes are provided by the fully qualified imports in the source files; do not infer executable order from the table layout.
+
+All preceding hashes and history remain valid for their pinned sources, including repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1`, superseded blob `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged declarations and `Set.Ioi (0:ℝ)` domain. Mathematical A–H phases are explanatory only. **Recursive closure remains incomplete; no cycle-free import DAG or executable topological check order is certified.** SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN. Retain all pending analytic/Weil obligations and strict stopping/no-merge/no-root-import/no-force-push/no-Railway/no-unauthorized-dispatch constraints.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
