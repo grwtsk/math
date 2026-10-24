@@ -7765,3 +7765,14 @@ security, and an injective ordered Rust/Python geometry serialization remain
 separate obligations. Permutation-invariant input laws do not commute group
 factors: X*Y has central height 1 and Y*X has height 0. No Hodge, general
 noncommutative geometry, nilflow, zeta-zero, or RH consequence is established.
+
+
+## Case SIXTEEN-GAP-BRANCH-REPAIR-20261023 — explicit complement in support argument
+
+**Source provenance:** Repository-derived 2026 Lean proof robustness change with OpenAI assistance, no externally imported paper theorem (bibliographic locator/title/authors/year/version/DOI/arXiv NOT APPLICABLE). Prior classical Weil and phase-retrieval comparisons are contextual analogies, not source provenance.
+
+**Precise change and unchanged hypotheses:** Within `stageThreeSixteenGap_nonnegative` and `stageFourSixteenGap_nonnegative`, the proof branches for points outside the canonical support now pass `le_of_not_gt h` explicitly to `linarith`, instead of assuming the by-cases complement is automatically propagated. Strict mathematical assumptions and theorem statements are unchanged: pointwise gap nonnegativity only on `Set.Ioi (0:ℝ)` for actual stage-three/four tents. The integrable and positive-integral suppliers remain separate. No added Weil admissibility or RH conclusions.
+
+**Exact source:** [`grwtsk/math@c0ff10b964b4e305925814c8cc5ff8250e11c8a5`](https://github.com/grwtsk/math/commit/c0ff10b964b4e305925814c8cc5ff8250e11c8a5), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentSixteenGapIntegrability.lean`, NEW blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1`; prior blob `7df554fa8fff56c912bd4a6b100f032ef8bc73da` superseded. Direct imports `CanonicalSquareTentSixteenPivot` and Mathlib.Tactic; full transitive closure pending.
+
+**Evidence classes:** Imported math: previous local support lemmas/Mathlib tactics, not external paper; kernel verified: NONE; source candidate: proof repair, not a new theorem; conditional chain: existing strict integral dependency; finite evidence: none; analogy: none needed; unresolved: actual Lean compiler, fresh kernel, complete transitive axioms. [Verification #1165](https://github.com/grwtsk/math/issues/1165) pins Lean 4.33.0 and Mathlib db584cd6d46c92f209a44c0f1c829460d327499d with replay commands. **SOURCE_ONLY / BLOB_CONFIRMED / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**; receipts only in grwtsk/noeaaeue; no root import.
