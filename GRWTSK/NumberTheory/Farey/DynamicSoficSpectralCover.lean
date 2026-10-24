@@ -1,6 +1,5 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Formalization assistance: OpenAI.
 
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 This module is intentionally isolated from GRWTSK.lean. It proves no new
