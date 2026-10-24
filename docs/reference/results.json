@@ -10,7 +10,7 @@
       "priority": 1,
       "priority_basis": "Immediate architectural usefulness; editorial judgment, not measured influence",
       "source": "GRWTSK/NumberTheory/Prime/LeastPrime.lean",
-      "sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+      "sha256": "bc890aade6e0f7b58cc6cd9e0559e6316c6c09715b5d191191e142560cd0ff61",
       "premises": "Nat.Prime q; every natural prime p satisfies q<=p",
       "verification": "fresh-selected",
       "evidence": "artifact:gitblob:4f3b77b45e32c93c9f9b514c776c1d2df5174a9c",
@@ -18,14 +18,51 @@
       "contribution": "Checked reuse/conditional interface; no originality claim",
       "integration": "local working source; broader layout replay separate",
       "publication": "no publication action in this packet",
-      "status": "verification pending",
-      "status_reason": "current source bytes do not match the catalog binding",
+      "prior_catalog_binding": {
+        "source": "GRWTSK/NumberTheory/Prime/LeastPrime.lean",
+        "sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+        "verification": "fresh-selected",
+        "evidence": "artifact:gitblob:4f3b77b45e32c93c9f9b514c776c1d2df5174a9c",
+        "scope": "Historical source binding retained; its evidence is not rewritten by the new local replay."
+      },
+      "current_verification": "replayed",
+      "current_replay": {
+        "source_pin": {
+          "repository": "https://github.com/grwtsk/math",
+          "commit": "c288573d1e3cad54979fd95ebf17244f30224d41"
+        },
+        "declarations": [
+          "GRWTSK.NumberTheory.two_is_first_prime",
+          "GRWTSK.NumberTheory.Prime.least_prime_eq_two"
+        ],
+        "receipt": "public-local-replay:6c87b6bcf2391184e4bcfa3f81a1a73c2c5bde93731758595c74e45382628730",
+        "public_evidence": "https://github.com/grwtsk/noeaaeue/blob/6ea61287/verification/math/result-publication/least-prime-local-source-replay-v1/observation.json",
+        "scope": "Two exact local source files replayed twice with Lean --trust=0; type/value constant references and axiom closures observed under fingerprinted cached imports. No upstream source replay, complete upstream graph, or whole-library acceptance.",
+        "observed_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "environment_digest": "sha256:256844a116e3de1a1ad3437c3d7e0cf429b1bbeb96339162f88452a65399c0d8",
+        "default_spectral_ranking": "unavailable: upstream-inclusive dependency closure incomplete"
+      },
+      "source_version_reconciliation": {
+        "historical_source_sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+        "current_description_source_sha256": "bc890aade6e0f7b58cc6cd9e0559e6316c6c09715b5d191191e142560cd0ff61",
+        "verification_scope": "The new local source replay covers the current source bytes at its exact math commit and cached environment. It does not upgrade the retained historical receipt.",
+        "change_scope": "Privacy-redacted local source; scope reconciled by the separately recorded current local replay."
+      },
+      "evidence_limit": "Historical evidence retains its original source binding. Current verification covers only the two local source files under a fingerprinted imported environment; upstream source replay and complete dependency closure remain outside that scope.",
+      "status": "verification",
+      "status_reason": "current_verification=replayed",
       "status_observation": {
         "source_path": "GRWTSK/NumberTheory/Prime/LeastPrime.lean",
         "source_file": "PRESENT_REGULAR",
-        "expected_source_sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+        "expected_source_sha256": "bc890aade6e0f7b58cc6cd9e0559e6316c6c09715b5d191191e142560cd0ff61",
         "observed_source_sha256": "bc890aade6e0f7b58cc6cd9e0559e6316c6c09715b5d191191e142560cd0ff61",
-        "source_matches_catalog": false
+        "source_matches_catalog": true,
+        "current_verification": "replayed",
+        "verification_evidence_label": "fresh-selected"
       }
     },
     {
@@ -174,12 +211,12 @@
     "verification pending": "Current-source verification has not been replayed or its binding is not current."
   },
   "status_summary": {
-    "verification": 0,
-    "verification pending": 3
+    "verification": 1,
+    "verification pending": 2
   },
   "generator": {
     "schema": "noe.math-results-catalog/1",
-    "identity": "397c6d3f349d2e28fdbcfd606c10636a51eb666ebfa548ebceaa8821e9d176d4",
+    "identity": "407b3c285b374b3cee16912e06668dae770f77f64a75a0d0f80627278d7d70df",
     "status_source": "current source digest, current_verification and retained verification label",
     "nonclaims": [
       "Verification status does not establish theorem admission, originality or whole-library coverage.",
