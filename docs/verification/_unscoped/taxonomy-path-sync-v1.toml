@@ -5104,51 +5104,11 @@ from = "GRWTSK.Algebra.fields.FiniteFields"
 to = "GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields"
 
 [[namespace_aliases]]
-from = "GRWTSK.Algebra.fields.finite-fields"
-to = "GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.group-theory"
-to = "GRWTSK.Algebra.GroupTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.group-theory.finite-groups"
-to = "GRWTSK.Algebra.GroupTheory.FiniteGroups"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.group-theory.free-groups"
-to = "GRWTSK.Algebra.GroupTheory.CombinatorialGroupTheory.FreeGroups"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.homological-algebra"
-to = "GRWTSK.CategoriesAndHomologicalAlgebra.HomologicalAlgebra"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.linear-algebra"
-to = "GRWTSK.Algebra.LinearAlgebra"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.linear-algebra.matrices"
-to = "GRWTSK.Algebra.LinearAlgebra.MatrixTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.linear-algebra.vector-spaces"
-to = "GRWTSK.Algebra.LinearAlgebra.VectorSpaces"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.linear-algebra.vector-spaces.finite-dimensional"
-to = "GRWTSK.Algebra.LinearAlgebra.VectorSpaces.FiniteDimensional"
-
-[[namespace_aliases]]
 from = "GRWTSK.Algebra.modules"
 to = "GRWTSK.Algebra.ModuleTheory"
 
 [[namespace_aliases]]
 from = "GRWTSK.Algebra.modules.CommutativeRings"
-to = "GRWTSK.Algebra.ModuleTheory.ModulesOverCommutativeRings"
-
-[[namespace_aliases]]
-from = "GRWTSK.Algebra.modules.commutative-rings"
 to = "GRWTSK.Algebra.ModuleTheory.ModulesOverCommutativeRings"
 
 [[namespace_aliases]]
@@ -5220,43 +5180,11 @@ from = "GRWTSK.Analysis.Spectral"
 to = "GRWTSK.Analysis.OperatorTheory.SpectralTheory"
 
 [[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis"
-to = "GRWTSK.Analysis.FunctionalAnalysis"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis.banach-spaces"
-to = "GRWTSK.Analysis.FunctionalAnalysis.BanachSpaces"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis.banach-spaces.hilbert-spaces"
-to = "GRWTSK.Analysis.FunctionalAnalysis.HilbertSpaces"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis.linear-operators"
-to = "GRWTSK.Analysis.OperatorTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis.linear-operators.spectral-theory"
-to = "GRWTSK.Analysis.OperatorTheory.SpectralTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis.linear-operators.spectral-theory.self-adjoint"
-to = "GRWTSK.Analysis.OperatorTheory.SpectralTheory.SelfAdjointOperators"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.functional-analysis.linear-operators.spectral-theory.self-adjoint.finite-reversible-chains"
-to = "GRWTSK.Analysis.OperatorTheory.SpectralTheory.SelfAdjointOperators.FiniteReversibleChains"
-
-[[namespace_aliases]]
 from = "GRWTSK.Analysis.harmonic"
 to = "GRWTSK.Analysis.HarmonicAnalysis"
 
 [[namespace_aliases]]
 from = "GRWTSK.Analysis.harmonic.FourierSeriesCircle"
-to = "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FourierSeries.OnCircle"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.harmonic.fourier-series-circle"
 to = "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FourierSeries.OnCircle"
 
 [[namespace_aliases]]
@@ -5277,18 +5205,6 @@ to = "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.LpSpaces"
 
 [[namespace_aliases]]
 from = "GRWTSK.Analysis.real.measure.LebesgueIntegration.LpSpaces.l2"
-to = "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.LpSpaces.L2"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.real.measure.lebesgue-integration"
-to = "GRWTSK.Analysis.MeasureTheory.LebesgueIntegration"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.real.measure.lebesgue-integration.lp-spaces"
-to = "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.LpSpaces"
-
-[[namespace_aliases]]
-from = "GRWTSK.Analysis.real.measure.lebesgue-integration.lp-spaces.l2"
 to = "GRWTSK.Analysis.FunctionSpaces.LebesgueSpaces.LpSpaces.L2"
 
 [[namespace_aliases]]
@@ -5333,26 +5249,6 @@ to = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Coloring.FiniteSimp
 
 [[namespace_aliases]]
 from = "GRWTSK.Combinatorics.GraphTheory.coloring.FiniteVertexColoring.ChromaticPolynomials"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Coloring.FiniteSimpleVertexColoring.ChromaticPolynomials"
-
-[[namespace_aliases]]
-from = "GRWTSK.Combinatorics.enumerative-combinatorics"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics"
-
-[[namespace_aliases]]
-from = "GRWTSK.Combinatorics.graph-theory"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Combinatorics.graph-theory.coloring"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Coloring"
-
-[[namespace_aliases]]
-from = "GRWTSK.Combinatorics.graph-theory.coloring.finite-vertex-coloring"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Coloring.FiniteSimpleVertexColoring"
-
-[[namespace_aliases]]
-from = "GRWTSK.Combinatorics.graph-theory.coloring.finite-vertex-coloring.chromatic-polynomials"
 to = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Coloring.FiniteSimpleVertexColoring.ChromaticPolynomials"
 
 [[namespace_aliases]]
@@ -5432,14 +5328,6 @@ from = "GRWTSK.DifferentialEquations.ordinary.linear.AutonomousReal.HamiltonianO
 to = "GRWTSK.DifferentialEquationsAndDynamicalSystems.OrdinaryDifferentialEquations.LinearEquations.AutonomousReal.HamiltonianOscillators"
 
 [[namespace_aliases]]
-from = "GRWTSK.DifferentialEquations.ordinary.linear.autonomous-real"
-to = "GRWTSK.DifferentialEquationsAndDynamicalSystems.OrdinaryDifferentialEquations.LinearEquations.AutonomousReal"
-
-[[namespace_aliases]]
-from = "GRWTSK.DifferentialEquations.ordinary.linear.autonomous-real.hamiltonian-oscillators"
-to = "GRWTSK.DifferentialEquationsAndDynamicalSystems.OrdinaryDifferentialEquations.LinearEquations.AutonomousReal.HamiltonianOscillators"
-
-[[namespace_aliases]]
 from = "GRWTSK.DifferentialEquations.partial"
 to = "GRWTSK.DifferentialEquationsAndDynamicalSystems.PartialDifferentialEquations"
 
@@ -5512,10 +5400,6 @@ from = "GRWTSK.ErrorCorrectingCodingTheory.AlgebraicFiniteFields"
 to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.AlgebraicCodes.FiniteFields"
 
 [[namespace_aliases]]
-from = "GRWTSK.ErrorCorrectingCodingTheory.algebraic-finite-fields"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.AlgebraicCodes.FiniteFields"
-
-[[namespace_aliases]]
 from = "GRWTSK.ErrorCorrectingCodingTheory.block"
 to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.BlockCodes"
 
@@ -5525,14 +5409,6 @@ to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.AlgebraicCodes.Lin
 
 [[namespace_aliases]]
 from = "GRWTSK.ErrorCorrectingCodingTheory.block.LinearFiniteFields.cyclic"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.AlgebraicCodes.LinearCodes.FiniteFields.Cyclic"
-
-[[namespace_aliases]]
-from = "GRWTSK.ErrorCorrectingCodingTheory.block.linear-finite-fields"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.AlgebraicCodes.LinearCodes.FiniteFields"
-
-[[namespace_aliases]]
-from = "GRWTSK.ErrorCorrectingCodingTheory.block.linear-finite-fields.cyclic"
 to = "GRWTSK.CombinatoricsAndDiscreteMathematics.CodingTheory.AlgebraicCodes.LinearCodes.FiniteFields.Cyclic"
 
 [[namespace_aliases]]
@@ -5592,14 +5468,6 @@ from = "GRWTSK.FoundationsLogicAndTypeTheory.Order.Embeddings"
 to = "GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings"
 
 [[namespace_aliases]]
-from = "GRWTSK.Geometry.differential-geometry"
-to = "GRWTSK.Geometry.DifferentialGeometry"
-
-[[namespace_aliases]]
-from = "GRWTSK.Geometry.differential-geometry.riemannian-geometry"
-to = "GRWTSK.Geometry.DifferentialGeometry.RiemannianGeometry"
-
-[[namespace_aliases]]
 from = "GRWTSK.Geometry.euclidean"
 to = "GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry"
 
@@ -5610,10 +5478,6 @@ to = "GRWTSK.NumberTheory.AlgebraicNumberTheory.GeometryOfNumbers"
 [[namespace_aliases]]
 from = "GRWTSK.GroupTheory"
 to = "GRWTSK.Algebra.GroupTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.HistoryOfMathematics.mathematics-education"
-to = "GRWTSK.HistoryOfMathematics.MathematicsEducation"
 
 [[namespace_aliases]]
 from = "GRWTSK.HypergeometricLowerTail"
@@ -5633,22 +5497,6 @@ to = "GRWTSK.InformationTheory.SourceCoding.Lossless"
 
 [[namespace_aliases]]
 from = "GRWTSK.InformationTheory.SourceCoding.lossless.prefix"
-to = "GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes"
-
-[[namespace_aliases]]
-from = "GRWTSK.InformationTheory.channel-coding"
-to = "GRWTSK.InformationTheory.ChannelCoding"
-
-[[namespace_aliases]]
-from = "GRWTSK.InformationTheory.source-coding"
-to = "GRWTSK.InformationTheory.SourceCoding"
-
-[[namespace_aliases]]
-from = "GRWTSK.InformationTheory.source-coding.lossless"
-to = "GRWTSK.InformationTheory.SourceCoding.Lossless"
-
-[[namespace_aliases]]
-from = "GRWTSK.InformationTheory.source-coding.lossless.prefix"
 to = "GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes"
 
 [[namespace_aliases]]
@@ -5700,22 +5548,6 @@ from = "GRWTSK.Logic.TypeTheory"
 to = "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory"
 
 [[namespace_aliases]]
-from = "GRWTSK.Logic.computability-theory"
-to = "GRWTSK.FoundationsLogicAndTypeTheory.Computability"
-
-[[namespace_aliases]]
-from = "GRWTSK.Logic.model-theory"
-to = "GRWTSK.FoundationsLogicAndTypeTheory.ModelTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Logic.proof-theory"
-to = "GRWTSK.FoundationsLogicAndTypeTheory.ProofTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Logic.set-theory"
-to = "GRWTSK.FoundationsLogicAndTypeTheory.SetTheory"
-
-[[namespace_aliases]]
 from = "GRWTSK.MeasureTheory"
 to = "GRWTSK.Analysis.MeasureTheory"
 
@@ -5740,10 +5572,6 @@ from = "GRWTSK.NumberTheory.algebraic.NumberFields"
 to = "GRWTSK.NumberTheory.AlgebraicNumberTheory.NumberFields"
 
 [[namespace_aliases]]
-from = "GRWTSK.NumberTheory.algebraic.number-fields"
-to = "GRWTSK.NumberTheory.AlgebraicNumberTheory.NumberFields"
-
-[[namespace_aliases]]
 from = "GRWTSK.NumberTheory.analytic"
 to = "GRWTSK.NumberTheory.AnalyticNumberTheory"
 
@@ -5760,14 +5588,6 @@ from = "GRWTSK.NumberTheory.analytic.multiplicative.PrimeDistribution.Arithmetic
 to = "GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimesInProgressions"
 
 [[namespace_aliases]]
-from = "GRWTSK.NumberTheory.analytic.multiplicative.prime-distribution"
-to = "GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumberTheory.analytic.multiplicative.prime-distribution.arithmetic-progressions"
-to = "GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimesInProgressions"
-
-[[namespace_aliases]]
 from = "GRWTSK.NumberTheory.computational"
 to = "GRWTSK.NumberTheory.ComputationalNumberTheory"
 
@@ -5777,14 +5597,6 @@ to = "GRWTSK.NumberTheory.ComputationalNumberTheory.AlgebraicNumberTheory"
 
 [[namespace_aliases]]
 from = "GRWTSK.NumberTheory.computational.PrimalityTesting"
-to = "GRWTSK.NumberTheory.ComputationalNumberTheory.PrimalityTesting"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumberTheory.computational.algebraic-number-theory"
-to = "GRWTSK.NumberTheory.ComputationalNumberTheory.AlgebraicNumberTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumberTheory.computational.primality-testing"
 to = "GRWTSK.NumberTheory.ComputationalNumberTheory.PrimalityTesting"
 
 [[namespace_aliases]]
@@ -5808,35 +5620,11 @@ from = "GRWTSK.NumericalAnalysis.LinearAlgebra.LinearSystems.iterative.krylov.Co
 to = "GRWTSK.NumericalAnalysis.LinearAlgebra.LinearSystems.Iterative.Krylov.ConjugateGradientSPD"
 
 [[namespace_aliases]]
-from = "GRWTSK.NumericalAnalysis.linear-algebra"
-to = "GRWTSK.NumericalAnalysis.LinearAlgebra"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumericalAnalysis.linear-algebra.linear-systems"
-to = "GRWTSK.NumericalAnalysis.LinearAlgebra.LinearSystems"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumericalAnalysis.linear-algebra.linear-systems.iterative"
-to = "GRWTSK.NumericalAnalysis.LinearAlgebra.LinearSystems.Iterative"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumericalAnalysis.linear-algebra.linear-systems.iterative.krylov"
-to = "GRWTSK.NumericalAnalysis.LinearAlgebra.LinearSystems.Iterative.Krylov"
-
-[[namespace_aliases]]
-from = "GRWTSK.NumericalAnalysis.linear-algebra.linear-systems.iterative.krylov.conjugate-gradient-spd"
-to = "GRWTSK.NumericalAnalysis.LinearAlgebra.LinearSystems.Iterative.Krylov.ConjugateGradientSPD"
-
-[[namespace_aliases]]
 from = "GRWTSK.Optimization.convex"
 to = "GRWTSK.Optimization.Convex"
 
 [[namespace_aliases]]
 from = "GRWTSK.Optimization.convex.UnconstrainedPositiveDefiniteQuadratics"
-to = "GRWTSK.Optimization.Convex.UnconstrainedPositiveDefiniteQuadratics"
-
-[[namespace_aliases]]
-from = "GRWTSK.Optimization.convex.unconstrained-positive-definite-quadratics"
 to = "GRWTSK.Optimization.Convex.UnconstrainedPositiveDefiniteQuadratics"
 
 [[namespace_aliases]]
@@ -5857,14 +5645,6 @@ to = "GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheo
 
 [[namespace_aliases]]
 from = "GRWTSK.Order.OrderEmbeddings"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings"
-
-[[namespace_aliases]]
-from = "GRWTSK.Order.closure-operators"
-to = "GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.ClosureOperators"
-
-[[namespace_aliases]]
-from = "GRWTSK.Order.order-embeddings"
 to = "GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.OrderTheory.OrderEmbeddings"
 
 [[namespace_aliases]]
@@ -5933,54 +5713,6 @@ to = "GRWTSK.ProbabilityAndMathematicalStatistics.RandomStructures.GaussianProce
 
 [[namespace_aliases]]
 from = "GRWTSK.Probability.StochasticProcesses.gaussian.BrownianReal"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.BrownianMotion.StandardReal"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.limit-theory"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.ClassicalProbability.LimitTheorems"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.limit-theory.central-limit"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.ClassicalProbability.LimitTheorems.CentralLimitTheorems"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.limit-theory.central-limit.iid-finite-variance"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.ClassicalProbability.LimitTheorems.CentralLimitTheorems.IIDFinitePositiveVariance"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.limit-theory.laws-large-numbers"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.ClassicalProbability.LimitTheorems.LawsOfLargeNumbers"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.markov-chains"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.MarkovChains"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.markov-chains.finite-reversible"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.MarkovChains.FiniteReversible"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.markov-chains.lattice-random-walks"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.MarkovChains.LatticeRandomWalks"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.stochastic-processes"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.stochastic-processes.continuous-time-markov"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.MarkovProcesses.ContinuousTimeHomogeneous"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.stochastic-processes.discrete-time-martingales"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.Martingales.DiscreteTimeIntegrableReal"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.stochastic-processes.gaussian"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.RandomStructures.GaussianProcesses.RealValued"
-
-[[namespace_aliases]]
-from = "GRWTSK.Probability.stochastic-processes.gaussian.brownian-real"
 to = "GRWTSK.ProbabilityAndMathematicalStatistics.StochasticProcesses.BrownianMotion.StandardReal"
 
 [[namespace_aliases]]
@@ -6128,46 +5860,6 @@ from = "GRWTSK.Statistics.MathematicalStatistics.regression.LinearModels"
 to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.LinearModels.LinearRegression"
 
 [[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.decision-theory"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.DecisionTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.inference"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.Inference"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.inference.estimation"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.EstimationTheory"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.inference.estimation.confidence-intervals"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.EstimationTheory.FrequentistConfidenceIntervals"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.inference.estimation.point-estimation"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.EstimationTheory.PointEstimation"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.inference.estimation.point-estimation.linear-least-squares"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.LinearModels.LeastSquares.FixedDesignFullRank"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.inference.hypothesis-testing"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.HypothesisTesting"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.regression"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.Regression"
-
-[[namespace_aliases]]
-from = "GRWTSK.Statistics.mathematical-statistics.regression.linear-models"
-to = "GRWTSK.ProbabilityAndMathematicalStatistics.MathematicalStatistics.LinearModels.LinearRegression"
-
-[[namespace_aliases]]
 from = "GRWTSK.SubsetAntiConcentrationChecks"
 to = "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Checks.Positive.SubsetAntiConcentration"
 
@@ -6190,34 +5882,6 @@ to = "GRWTSK.Topology.AlgebraicTopology.Homology.SimplicialHomology.FinitePrimeF
 [[namespace_aliases]]
 from = "GRWTSK.Topology.AlgebraicTopology.HomotopyTheory"
 to = "GRWTSK.Topology.AlgebraicTopology.Homotopy"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.algebraic-topology"
-to = "GRWTSK.Topology.AlgebraicTopology"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.algebraic-topology.homology-theory"
-to = "GRWTSK.Topology.AlgebraicTopology.Homology"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.algebraic-topology.homology-theory.simplicial-homology"
-to = "GRWTSK.Topology.AlgebraicTopology.Homology.SimplicialHomology"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.algebraic-topology.homology-theory.simplicial-homology.finite-prime-field-computation"
-to = "GRWTSK.Topology.AlgebraicTopology.Homology.SimplicialHomology.FinitePrimeFieldComputation"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.algebraic-topology.homotopy-theory"
-to = "GRWTSK.Topology.AlgebraicTopology.Homotopy"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.computational-topology"
-to = "GRWTSK.Topology.ComputationalTopology"
-
-[[namespace_aliases]]
-from = "GRWTSK.Topology.general-topology"
-to = "GRWTSK.Topology.GeneralTopology"
 
 [[namespace_aliases]]
 from = "GRWTSK.TransitionSystems.EffectSimulation"
@@ -30254,3 +29918,12 @@ path = "NumberTheory/Primes"
 
 [[source_homes]]
 path = "NumberTheory/Zeta/Riemann"
+
+[[relocations]]
+from = "GRWTSK/LinearAlgebra/Matrix/NavierStokesMomentGap.lean"
+to = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/NavierStokesMomentGap.lean"
+action = "incoming_name_strings"
+source_sha256 = "a315bea1ced5ebfbb207756778e4739c9148a4a2b4b941a3a7763b81e1d010eb"
+target_sha256 = "77f84b267c00f4c9afca572fa239a652a43d5f217acba72422de875bb503c936"
+source_git_blob = "5d6f7ed8c0e37ca83d9f42581ae405b32fff56b3"
+source_revision = "7aee3d8a7bdfef02bf2019e97205c7b6ede9392f"
