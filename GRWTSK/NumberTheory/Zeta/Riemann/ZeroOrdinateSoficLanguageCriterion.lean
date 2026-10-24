@@ -278,6 +278,8 @@ theorem no_eventual_sofic_of_zeta_rightContexts
   exact not_eventuallySoficTrace_of_all_tail_rightContexts
     (trace z) (hcontexts z hz)
 
+-- Preserve the reducible supplier constructor; only the declaration-style lint is exempt.
+set_option linter.defProp false in
 /-- Form the prior exact supplier packet from TWO independent arithmetic
 presentations and the NEW independently supplied symbolic context
 certificate. No arithmetic-to-finite-graph theorem is hidden here. -/
