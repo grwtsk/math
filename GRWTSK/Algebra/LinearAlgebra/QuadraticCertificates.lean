@@ -960,6 +960,32 @@ theorem concrete_admissible_target_schur_det_ne_zero :
     problem certificate certificate_check axisEmbedding
     axisEmbedding_admissible couplingU couplingV ()
 
+
+/-- This single fully specified packet is a counterexample to the invalid
+inference that a checked quadratic certificate makes its ambient target
+globally positive semidefinite. The negative point is inadmissible. -/
+theorem checked_target_not_globally_nonnegative :
+    check problem certificate = true ∧
+      ¬ ∀ x : Fin 2 → ℝ, 0 ≤ quadratic problem.target x := by
+  refine ⟨certificate_check, ?_⟩
+  intro h
+  exact (not_le_of_gt target_negative_outside) (h ![0, 1])
+
+/-- The actual pulled-back target is the strictly positive one-coordinate
+quadratic form 2 t², not merely an abstract nonnegative form. -/
+theorem pulledback_target_exact (v : Fin 1 → ℝ) :
+    quadratic (problem.pullback axisEmbedding).target v =
+      2 * (v 0) ^ 2 := by
+  change quadratic (congruence axisEmbedding problem.target) v = _
+  rw [quadratic_congruence, axisEmbedding_apply]
+  change quadratic
+      (gramRow.transpose * gramRow +
+        (1 : ℝ) • inequalityMatrix + (-1 : ℝ) • equalityMatrix)
+      (![v 0, 0] : Fin 2 → ℝ) = _
+  rw [quadratic_add, quadratic_add, quadratic_smul, quadratic_smul]
+  simp [gram_quadratic, inequality_quadratic, equality_quadratic]
+  ring
+
 end ConcreteAdmissibleAxis
 
 end GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
