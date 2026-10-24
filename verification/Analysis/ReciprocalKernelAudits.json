@@ -1,0 +1,104 @@
+{
+  "schema": "grwtsk.reciprocal-kernel-audit-requirements/1",
+  "status": "requirements_only_not_execution_evidence",
+  "attribution": "grwtsk contributors",
+  "source_pins": [
+    {
+      "source": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Basic.lean",
+      "sha256": "af1756d2e61acdd5709e10d3b9da28967ac15208241b1833ed7ce4fc0ed0aee8"
+    },
+    {
+      "source": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Checks/Audit/ConsumerProbe.lean",
+      "sha256": "4e0287b96482c29a86c2cc96eb045bee6c892efae28562db85b017a174c3036f"
+    }
+  ],
+  "provider_declarations": [
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_zero",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_zero_sum",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_nonneg",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_antitone",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_quarter_le",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.primitive",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.hasDerivAt_primitive",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.primitive_tendsto",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integrable",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integral",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integral_quarter",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.shifted_primitive_tendsto",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.shifted_kernel_integrable",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.shifted_kernel_integral",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.decreasing_sum_bounds",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.shifted_kernel_antitone",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_summable",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_sum_bounds",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.sum_bounds",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.frequency_sum_bounds"
+  ],
+  "diagnostics": [
+    {
+      "kind": "exact_type",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integrable"
+    },
+    {
+      "kind": "exact_type",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integral_quarter"
+    },
+    {
+      "kind": "exact_type",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.sum_bounds"
+    },
+    {
+      "kind": "exact_type",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.frequency_sum_bounds"
+    },
+    {
+      "kind": "axioms",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_zero_sum"
+    },
+    {
+      "kind": "axioms",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integrable"
+    },
+    {
+      "kind": "axioms",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.kernel_integral_quarter"
+    },
+    {
+      "kind": "axioms",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.sum_bounds"
+    },
+    {
+      "kind": "axioms",
+      "declaration": "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic.frequency_sum_bounds"
+    }
+  ],
+  "named_positive_fixtures": [
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe.kernel_zero_sum_at_quarter",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe.kernel_integrable_at_quarter",
+    "GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe.kernel_one_at_quarter"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "required_acceptance": [
+    "fresh compilation of exact provider and fixture source",
+    "kernel replay with trust zero",
+    "complete matching named axiom reports within explicit policy",
+    "fresh exact-type importing consumers for original diagnostics and all three positive fixture types"
+  ],
+  "scope_limits": [
+    "positive spatial-coordinate hypotheses retained",
+    "all real parameters including zero",
+    "no special-function series identity",
+    "no RH source/tail bridge"
+  ],
+  "historical_source": {
+    "commit": "2d07edb5588b193291c639ee74822ac3795ffe27",
+    "source": "GRWTSK/Analysis/RealAnalysis/Integration/ReciprocalKernel/Varianta4d602c822efdaca02731b694d0beb6edf2b62b3c13f09d8012776c29b789bc2.lean",
+    "blob": "31eb5ead228c3e87f9d46f968aa17b75f447a4e7",
+    "sha256": "a4d602c822efdaca02731b694d0beb6edf2b62b3c13f09d8012776c29b789bc2"
+  }
+}
