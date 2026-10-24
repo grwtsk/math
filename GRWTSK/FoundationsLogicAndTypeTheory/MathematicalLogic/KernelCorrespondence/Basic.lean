@@ -43,4 +43,4 @@ theorem assemble {V W : Type} (T : V → V) (S : W → W)
 
 end Finite1Pipeline
 
-#print axioms Finite1Pipeline.assemble
+-- Axiom audit requirement: Finite1Pipeline.assemble

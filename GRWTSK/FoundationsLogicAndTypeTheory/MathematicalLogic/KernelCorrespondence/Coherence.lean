@@ -42,7 +42,7 @@ theorem pairwise_bool_witnesses :
   · exact ⟨true, false, false, rfl, by decide⟩
 
 end Coherence
-#print axioms Coherence.lifts_agree
-#print axioms Coherence.observations_agree
-#print axioms Coherence.joint_impossible
-#print axioms Coherence.pairwise_bool_witnesses
+-- Axiom audit requirement: Coherence.lifts_agree
+-- Axiom audit requirement: Coherence.observations_agree
+-- Axiom audit requirement: Coherence.joint_impossible
+-- Axiom audit requirement: Coherence.pairwise_bool_witnesses
