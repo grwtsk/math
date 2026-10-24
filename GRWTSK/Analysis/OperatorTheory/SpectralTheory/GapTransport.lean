@@ -548,4 +548,23 @@ theorem offDiagonalBlock_cross_lower_bound
   rw [hblock, offDiagonalBlock_pairing S T x] at h
   exact h
 
+/-- The off-diagonal block norm is the exact interaction-loss constant in
+the bounded self-adjoint two-sector coercivity criterion. This does not
+supply diagonal coercivity for a concrete physical Hamiltonian. -/
+theorem self_adjoint_coercivity_of_offDiagonalBlock
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H)
+    (delta : ℝ)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x))) :
+    (delta - ‖offDiagonalBlock S T‖) * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T x) x) := by
+  exact self_adjoint_projection_coercivity_of_interaction S T hT x
+    delta ‖offDiagonalBlock S T‖ (norm_nonneg _) hfirst hsecond
+    (offDiagonalBlock_cross_lower_bound S T x)
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
