@@ -110,6 +110,99 @@ theorem check_sound (P : Problem R ι ε γ) (S : Certificate R ι ε γ ν)
     0 ≤ quadratic P.target x :=
   sound P S (of_decide_eq_true h) x hx
 
+
+/-!
+## Admissibility-sensitive target comparison and subspace coercivity
+
+A certificate's Gram component is globally positive semidefinite, whereas
+the target matrix can only be compared to that component on admissible
+vectors. The multiplier terms that vanish or are nonnegative are kept
+visible in the proof. A positive Gram lower bound on a declared real
+submodule transports to a quantitative target lower bound only when all
+vectors of that submodule are admissible.
+
+This does not turn the entire original target into a positive operator.
+-/
+
+/-- On an admissible vector the certificate's target quadratic form
+dominates the *actual* Gram quadratic form. This refines the prior sound
+theorem: the equality multipliers vanish and the inequality multipliers
+are nonnegative, neither of which holds for arbitrary vectors. -/
+theorem target_ge_gram_of_admissible
+    (P : Problem R ι ε γ) (S : Certificate R ι ε γ ν)
+    (hS : Valid P S) (x : ι → R) (hx : P.Admissible x) :
+    quadratic (S.gram.transpose * S.gram) x ≤
+      quadratic P.target x := by
+  rw [hS.2, quadratic_add, quadratic_add, quadratic_sum, quadratic_sum]
+  have he : (∑ e,
+      quadratic (S.equalityMultipliers e • P.equalities e) x) = 0 := by
+    apply Finset.sum_eq_zero
+    intro e _
+    rw [quadratic_smul, hx.1 e, mul_zero]
+  rw [he, add_zero]
+  exact le_add_of_nonneg_right (Finset.sum_nonneg fun g _ => by
+    rw [quadratic_smul]
+    exact mul_nonneg (hS.1 g) (hx.2 g))
+
+/-- A successful executable certificate checker has the same exact
+Gram-versus-target comparison, with all constraints still required. -/
+theorem checked_target_ge_gram_of_admissible
+    (P : Problem R ι ε γ) (S : Certificate R ι ε γ ν)
+    (hS : check P S = true) (x : ι → R) (hx : P.Admissible x) :
+    quadratic (S.gram.transpose * S.gram) x ≤
+      quadratic P.target x :=
+  target_ge_gram_of_admissible P S (of_decide_eq_true hS) x hx
+
+section ConstrainedRealTarget
+
+/-- A quantitative Gram lower bound transfers to the certificate target
+on a specified real submodule only if every element of that submodule
+satisfies the original equality and inequality constraints. -/
+theorem target_coercive_on_submodule
+    (P : Problem ℝ ι ε γ) (S : Certificate ℝ ι ε γ ν)
+    (hS : Valid P S) (L : Submodule ℝ (ι → ℝ))
+    (μ : ℝ)
+    (hAdmissible : ∀ x ∈ L, P.Admissible x)
+    (hGram : ∀ x ∈ L,
+      μ * (∑ i, (x i) ^ 2) ≤
+        quadratic (S.gram.transpose * S.gram) x)
+    (x : ι → ℝ) (hx : x ∈ L) :
+    μ * (∑ i, (x i) ^ 2) ≤ quadratic P.target x :=
+  (hGram x hx).trans
+    (target_ge_gram_of_admissible P S hS x (hAdmissible x hx))
+
+/-- With a strictly positive Gram lower bound, the target quadratic
+form has no nonzero zero-vector on the admissible submodule.
+The conclusion says nothing about vectors outside the submodule. -/
+theorem target_quadratic_zero_imp_zero_on_submodule
+    (P : Problem ℝ ι ε γ) (S : Certificate ℝ ι ε γ ν)
+    (hS : Valid P S) (L : Submodule ℝ (ι → ℝ))
+    {μ : ℝ} (hμ : 0 < μ)
+    (hAdmissible : ∀ x ∈ L, P.Admissible x)
+    (hGram : ∀ x ∈ L,
+      μ * (∑ i, (x i) ^ 2) ≤
+        quadratic (S.gram.transpose * S.gram) x)
+    (x : ι → ℝ) (hx : x ∈ L)
+    (hzero : quadratic P.target x = 0) : x = 0 := by
+  have hle : μ * (∑ i, (x i) ^ 2) ≤ 0 := by
+    simpa only [hzero] using
+      (target_coercive_on_submodule P S hS L μ
+        hAdmissible hGram x hx)
+  have hnon : 0 ≤ μ * (∑ i, (x i) ^ 2) :=
+    mul_nonneg hμ.le (Finset.sum_nonneg fun i _ => sq_nonneg (x i))
+  have hmul : μ * (∑ i, (x i) ^ 2) = 0 :=
+    le_antisymm hle hnon
+  have hsum : (∑ i, (x i) ^ 2) = 0 :=
+    (mul_eq_zero.mp hmul).resolve_left (ne_of_gt hμ)
+  have hcoords : ∀ i ∈ (Finset.univ : Finset ι), (x i) ^ 2 = 0 :=
+    (Finset.sum_eq_zero_iff_of_nonneg
+      (fun i _ => sq_nonneg (x i))).mp hsum
+  funext i
+  exact sq_eq_zero_iff.mp (hcoords i (Finset.mem_univ i))
+
+end ConstrainedRealTarget
+
+
 section Refinement
 
 variable {κ : Type*} [Fintype κ]
