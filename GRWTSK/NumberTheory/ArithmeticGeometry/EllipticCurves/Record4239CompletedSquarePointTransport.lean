@@ -156,7 +156,7 @@ theorem completedSquare_secant_slope_compat
   rw [(nativeCurve.toAffine).slope_of_X_ne hx,
     (nativeCompletedSquareCurve.toAffine).slope_of_X_ne hx]
   have hden : x₁ - x₂ ≠ 0 := sub_ne_zero.mpr hx
-  field_simp
+  field_simp [hden]
   ring
 
 /-- At a nonvertical tangent, genuine derivative slopes differ by half.
@@ -183,7 +183,7 @@ theorem completedSquare_tangent_slope_compat
     (nativeCompletedSquareCurve.toAffine).slope_of_Y_ne rfl hy]
   simp only [WeierstrassCurve.Affine.negY,
     nativeCurve, nativeCompletedSquareCurve_eq]
-  field_simp
+  field_simp [hY]
   ring
 
 /-- Complete nonvertical comparison on actual equation points.
@@ -225,6 +225,23 @@ theorem completedSquare_vertical_slopes_zero
     rw [completedSquare_negY_compat, hx, hy]
   exact ⟨(nativeCurve.toAffine).slope_of_Y_eq hx hnative,
     (nativeCompletedSquareCurve.toAffine).slope_of_Y_eq hx hy⟩
+
+
+/-- A rigorous obstruction to the tempting unqualified half-slope
+transport. At a vertical pair, Mathlib's total slopes are both zero,
+and in characteristic zero, zero cannot equal zero minus one half. -/
+theorem completedSquare_vertical_global_shift_false
+    (x₁ x₂ Y₁ Y₂ : ℚ)
+    (hx : x₁ = x₂)
+    (hy : Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂) :
+    ¬ (nativeCurve.toAffine.slope x₁ x₂
+          (Y₁ - x₁ / 2) (Y₂ - x₂ / 2) =
+        nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂ -
+          1 / 2) := by
+  obtain ⟨h₁, h₂⟩ :=
+    completedSquare_vertical_slopes_zero x₁ x₂ Y₁ Y₂ hx hy
+  rw [h₁, h₂]
+  norm_num
 
 /-- The new point-carrier equivalence sends each actual published
 normalized rational point to its original native rational point.
