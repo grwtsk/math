@@ -8826,3 +8826,82 @@ blobs match the audited hashes. Earlier failing build attempts are diagnostic,
 not qualification. Operational runners, target lists, hashes, binding and logs
 remain outside math in that Noeaaeue runtime directory. Concurrent merge work
 and the pre-existing untracked `.noeaaeue/` were preserved.
+
+
+## Case FINITE-ANCHOR-CORRECTED-SOURCE-VALIDATION-20261023
+
+**Reference boundary.** Repository-derived 2026 mathematical increment,
+grwtsk contributors with OpenAI formalization assistance. No newly attributed
+external paper theorem or historical influence; external title, authors,
+year/version and DOI/arXiv are NOT APPLICABLE. Imported Mathlib mathematics
+includes finite divisor-antidiagonal sums, Möbius/von Mangoldt convolution,
+logarithm positivity and elementary induction/algebra. The actual centered
+four-family arithmetic source, signed anchor coefficients and other-shift
+defect are the repository's exact local suppliers.
+
+**Checked finite observation.** All declarations below are in namespace
+`GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling`.
+`finiteAnchorLogObservation` retains anchors in `Finset.Icc 1 N` and observes
+rows `2*a`, hence targets through 2N. `finiteAnchorLogObservation_sub` is the
+exact linear difference identity. `finiteAnchorLogObservation_diagonal`
+requires 1≤a≤N and vanishing at every smaller positive anchor, deriving the
+nonzero diagonal coefficient log 2. `finiteAnchorLogObservation_kernel` and
+`finiteAnchorLogObservation_injective` conclude vanishing/equality only on
+that finite anchor interval, not on all natural indices or the entire centered
+packet. `finiteAnchorLogObservation_moebius` identifies the literal arithmetic
+target as von Mangoldt for n≤2N; the boundary and all exact coefficients remain.
+
+**Checked corrected source and retained residual.**
+`correctedAnchorSource_eq_moebius` identifies the actual signed,
+other-shift-corrected anchor source with `moebiusReal` on 1≤a≤2X.
+`anchorLift_selected` requires a selected anchor in that interval and positive
+shift. `centeredSource_eq_anchor_add_debt` retains the explicitly defined
+`centeredAnchorDebt`; `centeredAnchorDebt_selected` identifies it with the
+actual other-shift defect at the selected positive-shift cell.
+`anchorLift_unmatched` is zero at the cell requiring excluded anchor 2X+1.
+`centeredAnchorDebt_ten` proves the actual centered residual is one at scale
+ten and family `(true,false)`, center ten. This is a kernel-verified exact
+finite arithmetic instance, not numerical evidence for a vanishing residual.
+`correctedAnchor_observation_injective` observes all anchors through 2X using
+rows through 4X. `correctedAnchor_observation_actual` identifies those targets
+through 4X with von Mangoldt. It does not reuse the old shorter observation
+window or imply injectivity of the complete centered source.
+
+**Classification and missing bridges.** These are kernel-verified finite
+algebra/arithmetic bridges, together with the imported exact unmatched-cell
+kernel obstruction. The full source decomposition contains its residual debt.
+A valid analytic bound, recovery or lower frame on that residual channel,
+a justified restriction family with quantitative constants, and any RH-facing
+supplier remain missing; enlarged anchor injectivity does not discharge them.
+No finite computation, analogy or conditional interface is promoted to RH or
+a full centered-packet reconstruction theorem.
+
+**Immutable repair pin.** Source commit `a2634449d626b3581fe9d6182f3c499ba5e102ce`:
+
+| Source | Git blob |
+| --- | --- |
+| `GRWTSK/NumberTheory/Moebius/FiniteAnchorLogObservation.lean` | `87c1b5d92441014138656f87266df6e0d9d8b275` |
+| `GRWTSK/NumberTheory/Moebius/CorrectedAnchorSourceBridge.lean` | `1977dbd3b094fa48f5e162520826e4bc4bef9989` |
+| `GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyUnmatchedKernel.lean` | `a7cd157774710fc6060c3cd8dd7ab156e7c30cf0` |
+
+The initial strict build exposed one unfinished definitional equality after
+rewriting a signed Möbius coefficient. The concurrent proof repair closes it
+with `rfl`, unfolding `moebiusReal`; statements and hypotheses are unchanged.
+All 1,676 theorem headers were preserved across the 169-file local closure.
+All 169 final source hashes match the pinned commit. Other concurrent work was
+preserved. Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.NumberTheory.Moebius.FiniteAnchorLogObservation GRWTSK.NumberTheory.Moebius.CorrectedAnchorSourceBridge --wfail`
+  passed after the proof repair (8874 jobs).
+- `lake build --wfail` passed (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/anchor-pair-audit.lean`
+  passed, auditing all 5349 local declarations including generated declarations,
+  and printing every type. Only `propext`, `Classical.choice`, and `Quot.sound`
+  were allowed; unsafe declarations, `sorryAx` and custom axioms were rejected.
+
+External evidence in that directory: `anchor-pair-build.log` (initial failure),
+`anchor-pair-rebuild.log` (success), `anchor-pair-public.log`,
+`anchor-pair-audit.log`, and `anchor-pair-validated-snapshot.json`. This dated
+acceptance is confined to the pinned closure; historical source-only statuses
+and unresolved premises outside that scope remain unchanged.
