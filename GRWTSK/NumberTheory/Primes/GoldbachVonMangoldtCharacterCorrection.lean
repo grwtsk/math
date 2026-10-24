@@ -275,4 +275,20 @@ theorem norm_dirichletVonMangoldtCoefficient_le_log
     _ = ArithmeticFunction.vonMangoldt n := one_mul _
     _ ≤ Real.log (n : ℝ) := hΛlog
 
+
+/-- Real logarithmic-power kernel used in the explicit absolute tail
+comparison. This is not a Perron kernel. -/
+def logarithmicPowerTailKernel (σ t : ℝ) : ℝ :=
+  Real.log t / t ^ σ
+
+/-- The logarithmic-power kernel is nonnegative on t ≥ 3.
+Monotonicity, integrability, and the improper integral remain separate. -/
+theorem logarithmicPowerTailKernel_nonneg
+    (σ t : ℝ) (ht : 3 ≤ t) :
+    0 ≤ logarithmicPowerTailKernel σ t := by
+  have htpos : 0 < t := by linarith
+  have hlog : 0 ≤ Real.log t := Real.log_nonneg (by linarith)
+  unfold logarithmicPowerTailKernel
+  positivity
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
