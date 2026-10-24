@@ -226,4 +226,31 @@ theorem norm_energy_lower_bound_of_two_sectors
     _ ≤ energy₁ + energy₂ := add_le_add hfirst hsecond
     _ ≤ energy := henergy
 
+/-- A nonnegative cross term is sufficient for the full energy to dominate the
+sum of the two sector energies. No operator invariance is inferred. -/
+theorem energy_domination_of_nonnegative_cross_term
+    {energy energy₁ energy₂ cross : ℝ}
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hcross : 0 ≤ cross) :
+    energy₁ + energy₂ ≤ energy := by
+  rw [hsplit]
+  linarith
+
+/-- Conditional Hilbert-space form comparison with an explicitly controlled
+cross term. Orthogonality and the energy identity must be established for each
+concrete operator; this theorem does not construct a Yang--Mills Hamiltonian. -/
+theorem norm_energy_lower_bound_of_nonnegative_cross_term
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta energy energy₁ energy₂ cross : ℝ)
+    (hdelta : 0 ≤ delta)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hcross : 0 ≤ cross)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    delta * ‖x‖ ^ 2 ≤ energy := by
+  exact norm_energy_lower_bound_of_two_sectors x x₁ x₂ delta energy energy₁ energy₂
+    hdelta hnorm (energy_domination_of_nonnegative_cross_term hsplit hcross)
+    hfirst hsecond
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
