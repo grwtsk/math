@@ -54,21 +54,23 @@ An article record contains the following data independently of its prose:
 
 | Field | Required content |
 | --- | --- |
-| `id`, `slug`, `aliases`, `article_kind` | Persistent identity, readable canonical slug, retained legacy names, and `result` or `composite`. |
-| `title`, `byline`, `abstract` | The article's own maintained prose. Higher-level previews derive from these fields. |
-| `subject_associations` | Subject IDs, typed relation, review status, and rationale. |
-| `statement` | Exact hypotheses, conclusion, fully qualified root declarations, and unresolved premises. |
-| `proof` | Proof text or outline, component result identities, and the exact composition argument. |
-| `source_bindings` | Repository, full source commit, path/blob, declaration identity, and relevant upstream pins. |
-| `evidence` | Kind, exact scope, receipt reference, environment, permitted axioms, trust policy, actual commands or `NOT_RUN`, and limitations. |
-| `contribution_class`, `references` | Imported mathematics, verified bridge, source candidate, conditional interface, finite evidence, analogy, and unresolved premises remain distinct. |
+| `id`, `slug`, `aliases`, `kind` | Persistent identity, readable canonical slug, retained legacy names, and `leaf` or `composite`. |
+| `title`, `author`, `abstract` | The article's maintained metadata. Higher-level previews derive from these fields. |
+| `subjects` | Primary subject ID and additional associations with review status and rationale. |
+| `statements` | Exact hypotheses, conclusion, classification, fully qualified declarations, and `source_pins` for each statement. |
+| Named proof section and `composition` | Authored proof text; composite component identities, roots, conclusion, bridge status, and unresolved premises. |
+| `statements[].source_pins` | Repository, full source commit, path/blob, and relevant upstream pins. |
+| `verification` | Status, exact scope, evidence references with their source pins, axiom policy, unresolved premises, and limitations. Operational receipts retain environment bindings and actual commands or `NOT_RUN` in Noeaaeue. |
+| Statement `classification` and named sources section | Imported mathematics, verified bridge, source candidate, conditional interface, finite evidence, analogy, and unresolved premises remain distinct. |
 | `metrics` | Observations with their own method, coverage, source/profile/graph identities, and missingness. |
-| `issue` | Local issue identity, revision, issue date when actually issued, and superseded revision. |
+| `issue` | Positive revision, canonical date, and actual issuance timestamp; dates remain null when no such event is recorded. |
 
 Do not invent publication dates, proof composition, verification receipts, or
-contribution claims to fill a template. Slug aliases preserve previous links;
-case and Unicode collisions require a stable identity suffix. Renaming or moving
-an article preserves its result identity and records the old location.
+contribution claims to fill a template. Slug aliases retain previous names as
+metadata; they do not create HTTP redirects or preserve a moved file's URL.
+Keep old locations addressable until an explicit link migration or redirect is
+published. Colliding slugs must be disambiguated before publication. Renaming or
+moving an article preserves its result identity and records the old location.
 
 A composite proof must state a conclusion and explain how its component
 statements establish that conclusion under their exact hypotheses. A collection
