@@ -1,0 +1,32 @@
+# Queued verification only; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-original-filter-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "e741543508164ba74df80d8d8715650621c4bdb9"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalFilter.lean"
+source_blob = "c68d2a1b464d2a78736ab7b4395a6e24eb7779fc"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalFilter.originalPacketMass_eq_indicator_sum"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPacket", "Mathlib.Tactic"]
+missing_suppliers = [
+  "Original indicator-weighted dependent sum equals originalSupportedMass",
+  "Rectangular indicator-weighted packet equals rectangularSupportedMass",
+  "Compose the two normalizations with indexEquiv sum transport",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalFilter.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalFilter"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalFilter.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATION"
