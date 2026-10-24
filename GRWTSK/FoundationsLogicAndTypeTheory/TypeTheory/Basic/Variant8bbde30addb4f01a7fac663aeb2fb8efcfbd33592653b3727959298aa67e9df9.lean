@@ -1,5 +1,5 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CertificateAdmission.Basic
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.GreedyShards.Refinement
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.FiniteInventoryAdmission
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.CombinatorialAlgorithms.WeightedGreedyPartitions
 
 /-!
 Finite resource admission for the checked Plan boundary. Natural arithmetic
