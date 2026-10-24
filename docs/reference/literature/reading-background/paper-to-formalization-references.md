@@ -11697,3 +11697,53 @@ strict target build. Runners, logs, snapshots and result JSON remain external to
 canonical math. No public-root import was added. Privacy aliases in displayed
 commands do not change original receipt bytes; editing or redacting a receipt
 would require a new digest and would not constitute a fresh replay.
+
+
+## Affine cancellation and retained centered residual energy candidates — 2026-10-23
+
+Local attribution: grwtsk contributors. External paper title/byline/year/DOI:
+not applicable; this increment derives from existing repository identities and
+Mathlib algebra/finite-sum tools, with no historical-influence claim.
+Candidate source commit: `d6f80e768b369d76d2cc646205870e77bef21b28`.
+
+**Source proof candidates, not verified bridges.** In
+`GRWTSK.NumberTheory.Chebyshev.RawPairedAffineCancellation`,
+`pairedDifference_affine` generalizes cancellation of arbitrary complex affine
+terms for any real-to-complex function. `raw_pair_eq_zero_head_and_correction`
+instantiates the actual raw head: its paired second difference retains only
+the canonical finite zero head and the actual rational-correction derivative.
+Neither a special-value equation nor paired-oscillation decay is supplied.
+In `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling`,
+`centeredSource_energy_le_anchor_and_debt` compares the full centered source
+energy with twice the anchor-lift energy plus twice the retained residual
+energy, for every natural scale X. `centeredAnchorDebt_energy_ten_ge_one`
+retains residual energy at least one at X=10. These source candidates preserve
+the actual full packet and its known unmatched cell. They do not supply an
+RH-scale bound or narrow the obstructed restriction family.
+
+**Actual verification status: BLOCKED before compilation.** The maintained Noe
+managed registry-v3 command was attempted:
+`python3 -B managers/formalization/lean/environment/python/managed_contract_replay.py prepare --math-root MATH_ROOT --commit d6f80e768b369d76d2cc646205870e77bef21b28 --profile RUNTIME/profile.json --registry RUNTIME/registry.json`.
+Here RUNTIME is the selected external Noe runtime's
+`formalization/paired-residual-progress` directory. It exited 1 with
+`ValueError: unsupported or multiline import header`. A pure parser diagnostic
+identified `Mathlib/Tactic/Finiteness/Attr.lean`, whose first post-import command
+is `declare_aesop_rule_sets [finiteness]`; this is not a Lean compiler error.
+No registry was emitted. Compilation: **NOT_RUN**. Kernel/axiom audits:
+**NOT_RUN**. Mathematical acceptance: **false**. The observed tool checkout was
+`1c7120e94e2814de6273440f7e82ad826ad5f16e` with concurrent dirty adapter sources;
+that HEAD does not certify the executed dirty bytes. Post-failure observed
+adapter SHA-256: `e6e767d4a5609a356710fc53c22ac55212def689a41a7e4b48bb75ce63afc121`.
+The existing native activation was preserved; no standalone compiler bypass,
+resource reset, source rewrite or verification promotion occurred. External
+profile, failed prepare log and scoped blocked record remain outside math.
+
+**Remaining tasks.** First repair/review the maintained adapter's supported
+header handling and obtain current resource ownership, then prepare a fresh
+registry if bindings changed, compile both candidate modules and audit their
+four named declarations against only propext, Classical.choice and Quot.sound.
+For #189 the global sourceSlope/sourceIntercept special-value identities and
+actual canonical paired-decay estimate remain unresolved. For #966 the exact
+RH application-family correspondence and quantitative control of the full
+retained residual remain unresolved. Existing historical audits do not qualify
+these new candidate bytes or privacy-edited sources automatically.
