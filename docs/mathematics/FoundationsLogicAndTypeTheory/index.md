@@ -6,9 +6,23 @@
 
 This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+## Complete source publication
+
+[Every source module and declaration](../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [FoundationsLogicAndTypeTheory](complete-source-index.md) | 18,436 | 325,667 | 168,933 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 2 | 0 | 0 | 0 |
+| 17 | 0 | 0 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -16,8 +30,11 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
+- [Certificates for incrementally decoded batches](MathematicalLogic/FiniteSequences/batch-certificate.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `certificate : Certificate Key Payload` contain an actual proof of its predicate on its exact entries. With decidable payload equality, assume
+- [Composition of incremental dictionary decoding](MathematicalLogic/FiniteSequences/incremental-composition.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The validity premise supplies both the first append-decoding theorem and the validity needed for the second append. List append associativity then compares the actual decoder results. Starting from `pack…
 - [Constructive propositional derivations](MathematicalLogic/Propositional/ConstructiveDerivation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `Formula` contains atoms, truth, falsity, conjunction, disjunction and implication. `Meaning valuation` interprets atoms as arbitrary propositions and each connective by its corresponding constructive…
 - [Content-bound observation reuse and completion claims](MathematicalLogic/FiniteSequences/ContentBoundCache.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. `GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.observation_reuse` states that equal source bytes and equal observer profiles have equal observations. `unchanged_preserved` and `changed_refreshed`…
+- [Exact indexed dictionaries](MathematicalLogic/FiniteSequences/indexed-dictionary.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For any finite list of key–payload pairs and decidable equality on payloads, `unpack_pack` proves the exact equation \[ \operatorname{unpack}(\operatorname{pack}(\mathrm{entries})) =…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -26,10 +43,18 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Mathematical Logic](MathematicalLogic/index.md)** — 2 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Constructive propositional derivations](MathematicalLogic/Propositional/ConstructiveDerivation.md); [Content-bound observation reuse and completion claims](MathematicalLogic/FiniteSequences/ContentBoundCache.md).
+1. **[Computability theory](Computability/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of effective computation, computable functions and sets, and the limits and relative strength of algorithmic procedures.
+2. **[Formal Library Engineering](FormalLibraryEngineering/index.md)** — 3 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Proof-checking source roles](FormalLibraryEngineering/ProofChecking/source-roles.md); [Typed normalization, rational CM descent, Hodge typing, and analytic restriction](FormalLibraryEngineering/ProofEvidence/openai-typed-hodge-bridge.md).
+3. **[Mathematical logic](MathematicalLogic/index.md)** — 8 immediate children · 15 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of formal languages, consequence, theories and their interpretations, including the capabilities and limitations of formal reasoning.
+   Unranked previews: [Certificates for incrementally decoded batches](MathematicalLogic/FiniteSequences/batch-certificate.md); [Composition of incremental dictionary decoding](MathematicalLogic/FiniteSequences/incremental-composition.md).
+4. **[Model theory](ModelTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of structures as interpretations of formal languages and of the connections between their properties, definability and the sentences they satisfy.
+5. **[Proof theory](ProofTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of formal deductions, proof systems and their transformations, strengths and limitations.
+6. **[Set theory](SetTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of sets, membership and the structures and principles governing collections, including infinite collections and axiomatic theories of them.
+7. **[Theory of data structures](DataStructureTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Mathematical specifications and properties of representations and operations on finite or recursively defined data.
+8. **[Type theory](TypeTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Formal systems of types, terms and typing judgments, with their rules of formation, introduction, elimination and equality.
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
