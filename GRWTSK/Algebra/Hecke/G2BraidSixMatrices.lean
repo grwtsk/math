@@ -1,6 +1,7 @@
 import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.Data.Matrix.Mul
-import Mathlib.Tactic
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.NormNum
 
 /-! Concrete common-parameter braid-six Hecke matrices for K1 in both KL drafts.
 These two-dimensional matrices satisfy the quadratic and G₂ braid relations.
