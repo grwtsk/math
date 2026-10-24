@@ -309,3 +309,121 @@ elaboration, trust-zero checks, fresh independent kernel replay,
 full transitive axiom/sorryAx/unsafe audit and actual command
 statuses as requirements. An issue is an inert pending request,
 **not a mathematical or operational verification receipt**.
+
+
+## 2026-10-23 finite right-context obstruction to exact sofic presentations
+
+**Status:** LOCAL_IDENTITY_SOURCE_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+This advances the existing labeled graph and zero-ordinate modules, not
+a new parallel definition of a zeta zero, sofic language, or heat flow.
+
+### Exact updated main source
+
+- \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
+  [math commit 2cd309f2a2722ffc63508c71e4d9617670bab270](https://github.com/grwtsk/math/commit/2cd309f2a2722ffc63508c71e4d9617670bab270),
+  blob **b35036a76e2a9ddef93103e1b049b1598dfc8a6a**.
+- \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
+  [math commit e75e40e23121b96e2dd7291ea5de86aaf7b05c66](https://github.com/grwtsk/math/commit/e75e40e23121b96e2dd7291ea5de86aaf7b05c66),
+  blob **e4321a4b6b04e701643d042d0ffe1e6791f163f7**.
+- \`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean\`,
+  [math commit 88f9f9328bdfd8b81bac20b727de8b72e3ef5b03](https://github.com/grwtsk/math/commit/88f9f9328bdfd8b81bac20b727de8b72e3ef5b03),
+  blob **f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7**.
+
+### Exact theorem and hypotheses
+
+For a labeled directed graph G on a FINITE state type S, let
+\`reachableEndStates G w\` be the finite set of endpoints reachable
+after a finite label word w from **any** initial state. The source
+proves path concatenation and splitting at an exact word boundary,
+then establishes
+
+    GraphLanguage G (w ++ suffix)
+      iff there exists an endpoint in reachableEndStates G w
+        from which suffix labels a path.
+
+If two words w,w' have identical reachable-end-state subsets, they
+have identical membership for ALL right continuations. There are at
+most 2^(card S) possible endpoint subsets. Therefore the statement
+
+    UnboundedRightContexts L :=
+      for every n, there exist n pairwise distinct-right-context
+      words (Fin n -> List Alphabet), such that for each unequal
+      pair there is a distinguishing suffix
+
+refutes **every** exact finite graph whose ENTIRE word language is L.
+This is a one-way finite reachable-subset proof, not the imported full
+Myhill–Nerode theorem or an algorithm deciding a regular language.
+
+Fully qualified source declarations under
+\`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover\`:
+\`reachableEndStates\`, \`mem_reachableEndStates\`,
+\`wordPath_append\`, \`wordPath_split_append\`,
+\`graphLanguage_append_iff_endStates\`,
+\`graphLanguage_context_iff_of_same_endStates\`,
+\`UnboundedRightContexts\`,
+\`not_soficFactorLanguage_of_unboundedRightContexts\`,
+\`not_soficTrace_of_unboundedRightContexts\`,
+\`not_eventuallySoficTrace_of_all_tail_rightContexts\`.
+
+This uses the original, already established **whole-factor-language**
+\`IsSoficTrace\`, not merely \`RunsOnGraph\` or the stricter and
+different Farey \`EventuallyExactPrefixPresented\`. Its eventual
+version requires \`UnboundedRightContexts\` for EVERY finite burn-in
+offset. One pair collision or one unshifted non-sofic language is
+insufficient.
+
+The conditional dynamic spectral consequences under
+\`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover\` are
+\`no_exact_language_at_of_unbounded_rightContexts\` and
+\`no_exact_language_at_of_all_tail_rightContexts\`. The cover may
+still have an entirely valid graph PATH; the contradiction is with
+an attempted exact **whole-language** identification, not path
+admissibility or complex-linear operator existence.
+
+The actual zeta-facing new supplier is
+\`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaUnboundedTailContexts trace\`,
+with exact \`ActualZetaZero z\`, \`zetaHeight z = z.im\`
+and Boolean trace chosen separately. It requires that for every
+actual nontrivial zeta zero and every offset, its tail's *factor*
+language has unbounded distinguishable continuation contexts.
+Then \`no_eventual_sofic_of_zeta_rightContexts\` constructs just the
+non-eventual-sofic component of the previous supplier record.
+\`eventualSuppliers_of_zeta_rightContexts\` still needs independent
+rational-height-to-eventual-sofic and algebraic-critical-line-to-
+eventual-sofic proofs. The qualified conclusions
+\`zeta_irrational_of_rational_sofic_and_rightContexts\` and
+\`zeta_transcendental_of_critical_sofic_and_rightContexts\` preserve
+the previous arithmetic split: **no GRH needed for conditional
+irrationality; critical-line placement is separately necessary for
+conditional transcendence; GRH alone proves neither arithmetic claim**.
+
+### Historical/method source; nonclaims
+
+This finite-state obstruction is a local one-direction argument
+analogous to the finite-index right-context theorem associated with
+John Myhill's 1957 technical report and Anil Nerode's 1958
+*Linear Automaton Transformations*,
+DOI https://doi.org/10.1090/S0002-9939-1958-0135681-9.
+The proof does not import that publication or identify its complete
+deterministic Myhill–Nerode theorem with this local nondeterministic
+reachable-subset argument. There is no claim of historical influence.
+
+The following remain **UNRESOLVED_PREMISES**, NOT theorems:
+constructing an actual source-bound zeta spectral operator and Boolean
+trace; proving any zero ordinate rational/algebraic implies eventual
+exact factor-language soficity; proving the uniform right-context
+witnesses for that same trace; connecting all-stage analytic
+7/8-to-3/4 nonvanishing; or crossing from finite Hodge/Bombieri
+moments to the actual classical Weil/xi zero source.
+
+### Required mathematical validation
+
+Pinned Lean toolchain \`leanprover/lean4:v4.33.0\`; Mathlib
+\`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+All three added theorem groups need warning-clean builds, direct
+elaboration, independent fresh kernel checks and transitive
+\`#print axioms\` / \`sorryAx\` / unsafe audits of source imports.
+Such checks have **NOT_RUN** in the current environment: no installed
+\`lean\`, \`lake\` or \`elan\`. Source/blob readback and ordinary
+finite graph tests do not establish kernel acceptance. No public-root
+promotion, remote executor dispatch, or force push was performed.
