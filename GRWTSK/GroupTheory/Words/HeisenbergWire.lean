@@ -328,8 +328,8 @@ theorem pipeline_roundtrip (profile : Fin 15) (values : List IntegralHeisenberg)
     decodePipeline profile (encodePipeline values source) = some (values, source) := by
   unfold decodePipeline encodePipeline
   rw [GRWTSK.InformationTheory.ReedSolomon.source_roundtrip]
-  change decodeEnvelope (encodeEnvelope values source) = some (values, source)
-  rw [decodeEnvelope_encodeEnvelope values source countBound coordinateBound]
+  simp only [Option.bind_eq_bind, Option.bind_some]
+  exact decodeEnvelope_encodeEnvelope values source countBound coordinateBound
 
 theorem pipeline_preserves_source (profile : Fin 15) (values : List IntegralHeisenberg)
     (source : List UInt8) (countBound : values.length < 256 ^ 8)
