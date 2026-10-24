@@ -61,6 +61,28 @@ For revised papers, pin the exact version, and distinguish review from
 historical influence. External formal projects are identified as code
 sources, **not falsely classified as journal papers**.
 
+## Case NS-MOMENT-01 — Navier–Stokes stationary moment gap and GRWTSK finite observation
+
+**Source identity and status.** *Stationary instability and nonuniqueness for axisymmetric swirl-free Navier–Stokes*, source title as cited in its Lean files, byline **OpenAI**, 2026 **Lean source snapshot**, formal file titled *Finite-rank gap and determinant perturbations*, Section 2 coercivity method. A separately verified publication date, manuscript version, DOI and arXiv identifier are **not established** by this intake; do not infer that the source file supplies the paper's global theorem. Stable source/argument: [`openai/math` at `1581d4cbdd69a0faf34b2089614fe2a814316a6a`](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/MathematicalPhysics/NavierStokes/FiniteRankGap.lean), file blob `f1ebe2af6bb031e2a524b613f8f07d2033072c83`, upstream declaration `OAI.StationaryNS.finite_rank_gap`. Upstream source and its code license are **OpenAI / Apache-2.0**; this relationship is mathematical proof adaptation, **not** a Lean import of `OAI`.
+
+**Exact theorem and premises.** For normed real spaces `E,F`, continuous linear maps `B : E →L[ℝ] F`, `C : F →L[ℝ] E`, continuous bilinear `R : F →L[ℝ] E →L[ℝ] ℝ`, reals `ε,β,δ`, `0 < ε`, `‖B‖ ≤ β`, `‖R‖ ≤ δ`, and **for every** `y : F` the coercivity premise `ε * ‖C y‖ ^ 2 ≤ R ((I + B.comp C) y) (C y)`, the conclusion is `ε / (ε + β*δ) * ‖y‖ ≤ ‖(I + B.comp C) y‖`. The denominator is strictly positive from the three bound hypotheses, not an extra assumption. The source theorem requires **no finite dimension**. Perturbation injectivity additionally requires strict `‖P - J‖ < γ`; determinant sign additionally requires `FiniteDimensional ℝ F`. No incompressible fluid object, numerical viscosity, Navier–Stokes equation, or solution class is part of these theorem types.
+
+**Local source candidates on existing `main`.** [`GRWTSK/LinearAlgebra/Matrix/NavierStokesMomentGap.lean`](https://github.com/grwtsk/math/blob/ae61dd06aa399cf1f398f390575c602312291de0/GRWTSK/LinearAlgebra/Matrix/NavierStokesMomentGap.lean), math **source commit** `ae61dd06aa399cf1f398f390575c602312291de0`, source blob `5d6f7ed8c0e37ca83d9f42581ae405b32fff56b3`. Fully qualified declarations in `GRWTSK.LinearAlgebra.Matrix.NavierStokesMomentGap`:
+`momentMatrix` (definition), `finite_rank_gap`, `injective_of_perturbation`, `injective_segment`, `same_sign_endpoints`, `determinant_sign_of_perturbation` (adapted upstream **source proof candidates**), `moment_gap_pos`, `certified_moment_injective`, `finite_observation_gap_of_coercivity`, `certified_moment_determinant_sign` (local **source proof candidates**). The direct local consumption of `GRWTSK.LinearAlgebra.Matrix.FiniteObservationGap.finite_gap` uses exactly `E(y)=‖y‖`, `O(y)=‖(I+BC)y‖`, finite `S`, and the coercivity-supplied strict observation implication. `FiniteObservationGap.lean` parent blob at initial inspection: `7d8a34611fd18debb3a1d16fd00e04f6c22b482e`. Thus the finite-observation connection has a concrete local Lean proof body, but **no new kernel receipt**.
+
+**Other targeted connections and precise missing bridges.**
+- `GRWTSK.LinearAlgebra.Matrix.SchurFeshbachJet.InvertibleRegion.full_zero_iff_effective_zero` and `...det_factorization`: a **conditional interface**. Need a typed, determinant-compatible real normed-space identification of the actual Schur effective block with `momentMatrix B C`, quantitative estimates for `B,R,ε,β,δ`, and block invertibility. Zero-set algebra is not a moment coercivity estimate.
+- `GRWTSK.LinearAlgebra.QuadraticCertificates.sound`: **conditional interface**. Need a specific certificate yielding `ε‖C y‖² ≤ R(My)(Cy)` *for all y* with matched scalar and pairing, not just a finite tested quadratic.
+- `GRWTSK.LinearAlgebra.FiniteSpectralHeat.Model.heat_gap_contracts` and `GRWTSK.LinearAlgebra.FiniteSpectralHeat.Model.heat_operator_comm`: **methodological analogy** only. A finite diagonal heat-eigenvalue gap and a least-singular-value coercivity gap are not the same; require an eigenframe, compatible inner product, and operator identification.
+- `GRWTSK.LinearAlgebra.Matrix.TraceRank.gram_rank_ge_trace_ratio`: **methodological analogy**. A trace/rank lower bound does not entail a uniform singular-value floor without an additional norm/coercivity estimate.
+- `GRWTSK.LinearAlgebra.Matrix.SingularCongruenceObstruction.singular_square_congruence_ne_positive_definite`: **conditional obstruction analogy**. Need identification between a singular congruence matrix and the certified moment operator before transferring any conclusion.
+- `GRWTSK.LinearAlgebra.OrderedProductDeterminant.det_orderedProduct_eq_one`: **methodological analogy**. Exact determinant-one products do not automatically imply the small-perturbation norm bound needed for determinant-sign stability.
+No bridge to the Navier–Stokes main PDE theorem, external fluid solution, Schur block, heat flow, RH, or spectral zero-distribution is asserted. No historical influence follows from these similarities.
+
+**Verification status / evidence.** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED` at the math source commit, for **both** adapted and local candidates. Git object creation and non-force `main` fast-forward succeeded; these are **not** elaboration, build, kernel checking, or axiom auditing. Local Lean executable was not available in the interactive environment. Pinned project toolchain `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`; upstream `openai/math` uses `leanprover/lean4:v4.34.1`, so no cross-project binary import is claimed. **Actual compilation command/exit: NOT_RUN; kernel checker command/exit: NOT_RUN; transitive `#print axioms`/exit: NOT_RUN; receipt URI: unavailable.** Executor should run `lake build --wfail GRWTSK.LinearAlgebra.Matrix.FiniteObservationGap GRWTSK.LinearAlgebra.Matrix.NavierStokesMomentGap`, `lake env lean --trust=0 --wfail GRWTSK/LinearAlgebra/Matrix/NavierStokesMomentGap.lean`, and an exact-pin independent fresh checker plus `#print axioms` for all nine listed theorems, recording actual supported flags, outputs, and exits. Store any execution receipts outside math in `grwtsk/noeaaeue`, linked from a pinned GitHub verification issue. Source scans are not substitutes for these checks.
+
+**Classification.** Upstream: **source proof candidate / mathematical inspiration**, not locally imported mathematics; existing `FiniteObservationGap.finite_gap`: **imported local source mathematics** with independent prior status; its new use: **source proof candidate**, not kernel-verified; determinant consequence: **source proof candidate** with explicit finite-dimensional and perturbation assumptions; all named alternative directions: **conditional interfaces, analogies, unresolved premises** as indicated. **Finite evidence:** none. **New kernel-verified bridges:** none claimed.
+
 ## Case R4239-01 — source record of 32 rational points
 
 **Source identity and type.** *Elliptic Curve Rank Leaderboard: curve #4239*;
@@ -1101,6 +1123,208 @@ CONDITIONAL_REDUCTION at the terminal zero-free proposition;
 LOCAL_ADMISSION_BLOCKED pending toolchain, dependency, trust and
 proof-transport alignment in OpenAISevenEighthsPort.lean.
 This cannot prove RH or the nonlinear 7/8 -> 3/4 arithmetic contraction.
+
+**Case QRH-7-8-RESIDUAL-01 — one new conditional Lean theorem family,
+source intake 2026-10-24.** Title/byline/year and stable paper URL are the
+September 30, 2026 OpenAI preprint immediately above; this is NOT the
+separate October 5, 2026 document entitled *The Quasi-Riemann Hypothesis*.
+The primary result is the displayed external theorem
+OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re, at
+openai/math commit 1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+source lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean,
+blob 46c67f4000906b1391a471d6e6396ac0da3c16a5;
+its delegated body is in
+OAI.SevenEighths.ProbeFinalAssemblyUnconditional.zeta_nonzero,
+blob e7c20910424837fb954796e1216f5aa453bbd5da.
+The comparator challenge file has a distinct sorry placeholder,
+blob e7d1caf6c579dc9afbf0d2b01f79e5cd2511b028: it is
+NOT the solution and supplies no theorem authority.
+No DOI or arXiv ID is asserted beyond the exact release URL.
+
+**Exact mathematical source constraint and local scope.** External theorem:
+forall complex s with (7/8 : real) < Re(s), riemannZeta(s) != 0;
+the strict boundary allows Re(s)=7/8. An accepted local port has two
+independent proof fields: review.AdmissionReady and a local theorem
+RiemannZetaZeroFreeRightHalfPlane (7/8). The pinned review currently
+proves NOT AdmissionReady, so NO accepted port is constructed.
+Source accepted + the existing NontrivialZetaZero.reflect theorem yields
+1/8 <= Re(s) <= 7/8 for every nontrivial zeta zero, with precisely
+Mathlib's negative-even and s!=1 exclusions. The additional
+RemainingSevenEighthsRightGap proposition says **no nontrivial zero** has
+1/2 < Re(s) <= 7/8; the additional RemainingSevenEighthsDefectGap
+requires rhDefect(s)=0 for each zero with 1/8 <= Re(s) <= 7/8.
+Under an accepted port, each additional proposition is equivalent to
+Mathlib RiemannHypothesis. This is a conditional REDUCTION to the
+UNPROVED residual band, NOT an RH proof or a new zero-free theorem.
+
+**Exact owning Lean modules and declarations (source proof candidates).**
+GRWTSK/NumberTheory/Zeta/Riemann/OpenAISevenEighthsPort.lean extends
+GRWTSK.RiemannHypothesis.RemainingSevenEighthsRightGap and
+GRWTSK.RiemannHypothesis.RemainingSevenEighthsDefectGap (definitions),
+and, in namespace
+GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort:
+toSevenEighthsZeroFree,
+nontrivialZero_mem_closed_source_band,
+remainingRightGap_iff_rh,
+remainingDefectGap_iff_rh,
+remainingDefectGap_iff_remainingRightGap,
+remainingRightGap_iff_target,
+remainingRightGap_iff_rawHalfPlane.
+No external OAI theorem module is imported.
+GRWTSK/NumberTheory/Zeta/Riemann/Checks/OpenAISevenEighthsPortControls.lean
+extends toy_remaining_right_gap_fails and
+no_accepted_port_for_unready_review.
+The new code consumes the EXISTING mathematical source declarations:
+GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_closed_seven_eighths_band
+(ExternalSevenEighthsBand.lean),
+GRWTSK.RiemannHypothesis.riemannHypothesis_of_nontrivialZeroFreeRightHalfPlane
+(ZeroFreeHalfPlaneCriterion.lean),
+GRWTSK.RiemannHypothesis.riemann_hypothesis_iff_defect_zero
+(CriticalLineDefect.lean),
+GRWTSK.RiemannHypothesis.riemannZetaZeroFreeRightHalfPlane_half_iff_riemannHypothesis
+(ZetaZeroFreeHalfPlaneAdapter.lean) and
+GRWTSK.RiemannHypothesis.Target.statement_eq_mathlib
+(Hypothesis.lean). These are exact local source comparisons, not
+replayed kernel-certified bridges at this integration pin.
+
+**Connection classes / missing bridges.**
+(1) External OAI source solution = **external SOURCE PROOF CANDIDATE**,
+not imported mathematics and NOT KERNEL_AUDITED locally.
+(2) AcceptedExternalRawHalfPlanePort = **CONDITIONAL INTERFACE**,
+its witness/admission missing for the pinned review.
+(3) Existing ExternalSevenEighthsBand + ZeroSymmetry =
+**IMPORTED LOCAL SOURCE MATHEMATICS**; new port-to-band edge and
+residual-strip/defect equivalences = **NEW SOURCE PROOF CANDIDATES**.
+(4) MirrorPairingCriterion.criticalLineMirrorPairingPositivity_iff_rh
+and CriticalLinePositivityCriterion.criticalLineDefectPositivity_iff_rh =
+**RELATED PROVED-IN-SOURCE CRITERION EQUIVALENCES**, not an analytic supplier
+of missing positivity/vanishing in the residual region.
+(5) SevenEighthsMechanismQuarticBridge = **CONDITIONAL ANALYTIC
+MECHANISM INTERFACE**: missing detector witness, accepted mechanism
+adapter, PNT-independent dependency closure, comparison residuals.
+(6) Farey residue, modular/Dirichlet, Hodge and Gaussian observation stacks =
+**METHODOLOGICAL ANALOGIES/UNRESOLVED MAPS** only until a typed zeta/Dirichlet
+L function identification and quantitative inequalities are built.
+(7) The stronger Dirichlet-character and Hecke nonvanishing claims in
+lean/docs/003.md remain **SEPARATE FUTURE THEOREMS**: the
+principal-character pole exception (chi=1 AND s=1), modulus NeZero,
+character conductor, Hecke field and finite order may not be silently
+dropped or inferred from the zeta specialization. No new finite evidence.
+
+**Verification and source pins.** The immutable mathematical source
+integration commit is `6e860761d2e234443022f137dbb9c2b64bf23241`, tree `2e0ab7e2f440decc20c4c57a5dcb49471659518c` on existing `main`,
+containing `GRWTSK/NumberTheory/Zeta/Riemann/OpenAISevenEighthsPort.lean`
+blob `614342fc85bc643b873e58e96723ab9a53fbf2df` and
+`GRWTSK/NumberTheory/Zeta/Riemann/Checks/OpenAISevenEighthsPortControls.lean`
+blob `f999f9c2bb5f42253dd833bedb7fd6c1c74e7991`.
+The first ledger integration object has blob
+`5c0d375fbc75f270b989e6aaee325b77ea6e278e`; its subsequent
+documentation-only amendment must be distinguished by its own commit/blob.
+The baseline main for this edit is
+0c3709449a58aef23d1092e3e9b90b99a7d32894; baseline OpenAISevenEighthsPort.lean blob 9cb84ea0b8e56d589d03e98ac193e832b04a1c60,
+controls blob c61a90bcdaf19070fc7c5e07e5752b9a0f971ebb; baseline ledger blob
+7a1765a4def4609247976f1796d16f9dd41fbcf1.
+Pinned GRWTSK Lean leanprover/lean4:v4.33.0,
+Mathlib db584cd6d46c92f209a44c0f1c829460d327499d;
+upstream Lean v4.34.1, Mathlib
+d13f23b723b8a846827a245b89c10fc7d3f11612.
+New local compilation **NOT_RUN**; fresh kernel checking **NOT_RUN**;
+transitive axiom audit **NOT_RUN**, receipts unavailable. A source-text
+diff, Git commit and a queued issue are not acceptance.
+Require exact-pin lake build --wfail on the two modified modules and all
+transitive dependencies, lean --trust=0, a fresh checker using actual
+supported flags, and #print axioms for each new theorem. The strongest
+verification target is AcceptedExternalRawHalfPlanePort.remainingRightGap_iff_rh,
+with explicit uninhabited/currently-unready port control and the hostile
+toy pair at Re=2/5, 3/5. Store executable receipts OUTSIDE math in
+grwtsk/noeaaeue; no Railway, remote dispatch, force-push or merge.
+
+**Case QRH-7-8-DEFECT-02 — exact seven-eighths/critical-line-defect
+equivalence, source integration 2026-10-24.** The mathematical primary
+source is OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+Re(s)>7/8*, September 30, 2026 preprint
+([stable pinned manuscript](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf)).
+Exact displayed theorem `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` in
+`lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean`, upstream commit
+`1581d4cbdd69a0faf34b2089614fe2a814316a6a`, blob
+`46c67f4000906b1391a471d6e6396ac0da3c16a5`; delegated proof source
+`OAI.SevenEighths.ProbeFinalAssemblyUnconditional.zeta_nonzero` in
+`Detector/FinalAssemblyUnconditional.lean`, blob
+`e7c20910424837fb954796e1216f5aa453bbd5da`. No DOI/arXiv ID
+established; this September release must not be collapsed into the separate
+October 5, 2026 OpenAI manuscript. The challenge comparator
+`QuasiRiemannHypothesis.lean` has a `sorry` and is not the solution.
+
+**Exact formal statement.** `GRWTSK.RiemannHypothesis.SevenEighthsDefectBound`
+means
+`∀ s : ℂ, NontrivialZetaZero s → rhDefect s ≤ (9/16 : ℝ)`.
+The existing `rh_defect_eq_square` identifies `rhDefect s` with
+`(2*s.re - 1)^2`. The new local candidate
+`GRWTSK.RiemannHypothesis.sevenEighthsZeroFree_iff_defectBound`
+proves the *proposition-level equivalence* between the exact raw
+`RiemannZetaZeroFreeRightHalfPlane (7/8)` and the 9/16 cap. Forward
+implication consumes existing reflection and the **closed** band
+`1/8 ≤ Re(s) ≤ 7/8`; converse consumes the native raw/nontrivial
+zero comparison at threshold `7/8 ≥ 0`, retaining all negative-even
+trivial-zero exclusions and the special totalized zeta value at `s=1`.
+The strict inequality `Re(s)>7/8` does **not** exclude an endpoint zero.
+
+**Owning source / source proof candidates.** On `grwtsk/math` existing
+`main`, mathematical source commit
+`ea6b6ba8faa0fcadd85051e8afd52a6af1ccab4a`, tree
+`c0712cb051fb784ce48b0b2d4a4ac5a5391e4c51`,
+`GRWTSK/NumberTheory/Zeta/Riemann/SevenEighthsDefectCriterion.lean`,
+blob `5885243b9c3a34658769a4a460ad9f136b455953`. Declarations,
+fully qualified under `GRWTSK.RiemannHypothesis`:
+`SevenEighthsDefectBound` (definition);
+`sevenEighthsZeroFree_iff_defectBound`,
+`acceptedPort_defectBound`, `defect_at_sevenEighths_fixture`,
+`rh_of_defectBound_and_remaining`,
+`remainingDefectGap_iff_rh_of_defectBound` (source proof candidates).
+The `9/16` endpoint fixture is an exact algebraic observation,
+**not** an assertion that `7/8` is an actual zero. No external OAI
+module or theorem proof is locally imported.
+
+**Connection/obligation classification.** Existing
+`ExternalSevenEighthsBand`, `ZeroSymmetry`,
+`ZetaZeroFreeHalfPlaneAdapter`, `CriticalLineDefect` and
+`OpenAISevenEighthsPort` are **imported local source mathematics**;
+their verification status must not be inferred from import presence.
+The new equivalence and cap extraction are **local source proof
+candidates**, NOT KERNEL_VERIFIED. `AcceptedExternalRawHalfPlanePort`
+is a **conditional interface** whose current pinned review is
+provably not admission-ready. Existing
+`RemainingSevenEighthsDefectGap` is a **separate unresolved analytic
+supplier**: zero-free `7/8` gives only `rhDefect≤9/16`, never
+`rhDefect=0`. Under BOTH the defect cap and this still-open supplier,
+the local candidate concludes the exact Mathlib `RiemannHypothesis`;
+this is a conditional reduction, not a proof of RH. Connections to
+`CriticalLinePositivityCriterion`, `MirrorPairingCriterion` and
+`SevenEighthsMechanismQuarticBridge` remain separate formal
+equivalence/conditional mechanisms, not new arithmetic suppliers.
+Farey, Gaussian modular/Dirichlet, Hodge and Hecke/Siegel connections
+remain **analogies/unresolved typed source maps**; none supplies
+principal-character pole handling, full Dirichlet/Hecke character
+universality, or a new zeta inequality. **Finite evidence:** only
+the algebraic 7/8 endpoint fixture; no enumerated zeta zeros.
+
+**Verification.** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
+GRWTSK toolchain Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`;
+upstream OpenAI Lean `v4.34.1`, Mathlib
+`d13f23b723b8a846827a245b89c10fc7d3f11612`.
+Actual local compile exit: **NOT_RUN**; fresh kernel checker exit:
+**NOT_RUN**; transitive axiom results: **NOT_RUN**; execution receipt:
+**unavailable**. Source inspection of declarations and a non-force
+Git integration are not Lean acceptance. Required exact-commit
+commands include `lake build --wfail
+GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsDefectCriterion`,
+fresh `lean --trust=0`, `leanchecker` with actual supported flags,
+and `#print axioms` on all new theorems. Preserve transitive
+dependencies, check source-order, and reject `sorryAx`, new project
+axioms or unsafe shortcuts. Queue verification in GitHub issues;
+effectful execution and receipts outside math in `grwtsk/noeaaeue`,
+no Railway or unauthorized remote dispatch, no force push or merge.
 
 ### OpenAI CM Hodge paper; two meanings of Hodge remain separated
 
