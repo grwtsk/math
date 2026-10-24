@@ -1,0 +1,57 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.FiniteNonemptyInterCompact.Variantb09de16935623ab4a79ffa1b2885d02c72a678cddfe1cbde07462e1a1e176465","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b09de16935623ab4a79ffa1b2885d02c72a678cddfe1cbde07462e1a1e176465","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.FiniteNonemptyInterCompact.Variantb09de16935623ab4a79ffa1b2885d02c72a678cddfe1cbde07462e1a1e176465","mathematical_subject":"Topology.GeneralTopology","original_sha256":"b09de16935623ab4a79ffa1b2885d02c72a678cddfe1cbde07462e1a1e176465","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Topology/Compactness/LocallyFinite.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+
+import Mathlib.Topology.LocallyFinite
+import Mathlib.Topology.Compactness.Compact
+
+/-!
+# Compact sets and compact spaces and locally finite functions
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.FiniteNonemptyInterCompact.Variantb09de16935623ab4a79ffa1b2885d02c72a678cddfe1cbde07462e1a1e176465
+
+open Set
+
+variable {X ι : Type*} [TopologicalSpace X] {s : Set X}
+
+namespace LocallyFinite
+
+/-- If `s` is a compact set in a topological space `X` and `f : ι → Set X` is a locally finite
+family of sets, then `f i ∩ s` is nonempty only for a finitely many `i`. -/
+theorem finite_nonempty_inter_compact {f : ι → Set X}
+    (hf : LocallyFinite f) (hs : IsCompact s) : { i | (f i ∩ s).Nonempty }.Finite := by
+  choose U hxU hUf using hf
+  rcases hs.elim_nhds_subcover U fun x _ => hxU x with ⟨t, -, hsU⟩
+  refine (t.finite_toSet.biUnion fun x _ => hUf x).subset ?_
+  rintro i ⟨x, hx⟩
+  rcases mem_iUnion₂.1 (hsU hx.2) with ⟨c, hct, hcx⟩
+  exact mem_biUnion hct ⟨x, hx.1, hcx⟩
+
+/-- If `X` is a compact space, then a locally finite family of sets of `X` can have only finitely
+many nonempty elements. -/
+theorem finite_nonempty_of_compact [CompactSpace X] {f : ι → Set X}
+    (hf : LocallyFinite f) : { i | (f i).Nonempty }.Finite := by
+  simpa only [inter_univ] using hf.finite_nonempty_inter_compact isCompact_univ
+
+/-- If `X` is a compact space, then a locally finite family of nonempty sets of `X` can have only
+finitely many elements, `Set.Finite` version. -/
+theorem finite_of_compact [CompactSpace X] {f : ι → Set X}
+    (hf : LocallyFinite f) (hne : ∀ i, (f i).Nonempty) : (univ : Set ι).Finite := by
+  simpa only [hne] using hf.finite_nonempty_of_compact
+
+/-- If `X` is a compact space, then a locally finite family of nonempty sets of `X` can have only
+finitely many elements, `Fintype` version. -/
+noncomputable def fintypeOfCompact [CompactSpace X] {f : ι → Set X}
+    (hf : LocallyFinite f) (hne : ∀ i, (f i).Nonempty) : Fintype ι :=
+  fintypeOfFiniteUniv (hf.finite_of_compact hne)
+
+end LocallyFinite

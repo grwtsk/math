@@ -1,0 +1,47 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeConstantCompensation.Variant26a5987116ee2cf97ca743a0f30f291bb3e8a9a6b31a0a99ba2b2e097d4a9eeb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"26a5987116ee2cf97ca743a0f30f291bb3e8a9a6b31a0a99ba2b2e097d4a9eeb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceNativeConstantCompensation.Variant26a5987116ee2cf97ca743a0f30f291bb3e8a9a6b31a0a99ba2b2e097d4a9eeb","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"26a5987116ee2cf97ca743a0f30f291bb3e8a9a6b31a0a99ba2b2e097d4a9eeb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-signed-cycle-20261006/rational/preserved-inputs/scratch/rh16-followthrough-20261006-mellin/SourceNativeConstantCompensationAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceNativeConstantCompensation
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceNativeConstantCompensation.Variant26a5987116ee2cf97ca743a0f30f291bb3e8a9a6b31a0a99ba2b2e097d4a9eeb
+
+set_option linter.hashCommand false
+
+namespace FormalResearch.RiemannHypothesis.SourceNativeConstantCompensation
+
+#check nativeMellin_angular_mass
+#print nativeMellin_angular_mass
+#print axioms nativeMellin_angular_mass
+
+#check compensatedAngularIntegrand_integrable
+#print compensatedAngularIntegrand_integrable
+#print axioms compensatedAngularIntegrand_integrable
+
+#check angularContour_eq_constant_add_compensated
+#print angularContour_eq_constant_add_compensated
+#print axioms angularContour_eq_constant_add_compensated
+
+#check angularHead_eq_mass_add_compensated
+#print angularHead_eq_mass_add_compensated
+#print axioms angularHead_eq_mass_add_compensated
+
+#check mertensResidual_eq_constant_add_compensated
+#print mertensResidual_eq_constant_add_compensated
+#print axioms mertensResidual_eq_constant_add_compensated
+
+#check mertensResidual_upper_of_compensated
+#print mertensResidual_upper_of_compensated
+#print axioms mertensResidual_upper_of_compensated
+
+#check mertens_residual_tail_of_compensated_native
+#print mertens_residual_tail_of_compensated_native
+#print axioms mertens_residual_tail_of_compensated_native
+
+#check estimate_of_compensated_native
+#print estimate_of_compensated_native
+#print axioms estimate_of_compensated_native
+
+end FormalResearch.RiemannHypothesis.SourceNativeConstantCompensation

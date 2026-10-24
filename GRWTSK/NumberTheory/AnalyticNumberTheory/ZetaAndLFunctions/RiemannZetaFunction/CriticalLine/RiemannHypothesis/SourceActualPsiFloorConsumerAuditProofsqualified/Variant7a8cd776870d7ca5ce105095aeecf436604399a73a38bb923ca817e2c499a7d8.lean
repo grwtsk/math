@@ -1,0 +1,20 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiFloorConsumer.Variant1ba307cbfad983c0811542378e966515dc9f9d991f7b382148a8b4225bcbc718","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1ba307cbfad983c0811542378e966515dc9f9d991f7b382148a8b4225bcbc718","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPsiFloorConsumer.Variant1ba307cbfad983c0811542378e966515dc9f9d991f7b382148a8b4225bcbc718","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1ba307cbfad983c0811542378e966515dc9f9d991f7b382148a8b4225bcbc718","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualPsiFloorConsumerAuditProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPsiFloorConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiFloorConsumer.Variant1ba307cbfad983c0811542378e966515dc9f9d991f7b382148a8b4225bcbc718
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_eq_psi_floor_add_actual_errors
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.fiveCancelledFactorialBudget_le_fifteen
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le_seventy
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.estimate_of_actual_psi_floor_signed_tail

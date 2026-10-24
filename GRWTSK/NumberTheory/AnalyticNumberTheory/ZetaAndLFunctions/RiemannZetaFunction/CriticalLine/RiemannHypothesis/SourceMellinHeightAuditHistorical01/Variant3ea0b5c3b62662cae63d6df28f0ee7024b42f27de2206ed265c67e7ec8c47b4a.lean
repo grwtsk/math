@@ -1,0 +1,23 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMellinHeightTransfer.Variant45d0ed8e1ef06e8ae4f51814124e0de00486d2eacabe8e4d4875a4b77ce68993","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"45d0ed8e1ef06e8ae4f51814124e0de00486d2eacabe8e4d4875a4b77ce68993","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceMellinHeightTransfer.Variant45d0ed8e1ef06e8ae4f51814124e0de00486d2eacabe8e4d4875a4b77ce68993","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"45d0ed8e1ef06e8ae4f51814124e0de00486d2eacabe8e4d4875a4b77ce68993","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-hilbert-cycle-20261006/finite-energy-replays/hilbert-replay/SourceMellinHeightAudit.historical01.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceMellinHeightTransfer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMellinHeightTransfer.Variant45d0ed8e1ef06e8ae4f51814124e0de00486d2eacabe8e4d4875a4b77ce68993
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis
+#print SourceMellinHeightTransfer.rightLineMajorant
+#print SourceMellinHeightTransfer.sourceNormalizationFloor
+#print SourceMellinHeightTransfer.rightLineTailConstant
+#print SourceMellinHeightTransfer.movingHeight
+#print SourceMellinHeightTransfer.movingHeight_ge_one
+#print SourceMellinHeightTransfer.movingHeight_tail_factor_eq
+#print SourceMellinHeightTransfer.tail_at_movingHeight_of_rightLine_contract
+#print SourceMellinHeightTransfer.full_readout_upper_of_head_and_tail
+#print axioms SourceMellinHeightTransfer.movingHeight_ge_one
+#print axioms SourceMellinHeightTransfer.movingHeight_tail_factor_eq
+#print axioms SourceMellinHeightTransfer.tail_at_movingHeight_of_rightLine_contract
+#print axioms SourceMellinHeightTransfer.full_readout_upper_of_head_and_tail

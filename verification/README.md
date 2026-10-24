@@ -10,7 +10,10 @@ records every former path, destination repository/path and transfer digest.
 Historical generated attribution, source-variant context and relocation exports
 are retained unchanged in `grwtsk/noeaaeue`, under
 `verification/math/retained-math-verification-v1/verification/`.
-No GRWTSK Lean source was removed; SourceCorpus remains maintained.
+No GRWTSK Lean source was removed; the former SourceCorpus files are maintained
+under mathematical subject paths. Their
+[relocation specification](../docs/verification/_unscoped/sourcecorpus-taxonomy-v1.toml)
+binds each old source to its new path and records separate verification tasks.
 
 This file is a navigation stub, not an alternate specification namespace.
 Do not add targets, fixtures, custody records or generated outputs here.

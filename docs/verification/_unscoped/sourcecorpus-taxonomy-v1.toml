@@ -1,0 +1,160 @@
+schema = "grwtsk.source-taxonomy-migration/1"
+id = "sourcecorpus-taxonomy-v1"
+owner_repository = "grwtsk/math"
+attribution = "grwtsk contributors"
+status = "STATIC_SPECIFICATION_NOT_A_REPLAY_RECEIPT"
+source_revision = "b2eb72c5f4c3d7187e8e603d02d242944f01a624"
+retired_root = "GRWTSK/SourceCorpus"
+lean_source_count = 68036
+source_count = 68038
+subject_manifest_count = 63
+namespace_rename_count = 33640
+namespace_policy = "GRWTSK subject namespaces for organized local variants; original upstream namespaces and source identities retained"
+placement_scope = "Physical subject homes; retained labels and lexical signals are navigation proposals, not completed semantic review"
+changes_allowed = ["file moves", "qualified namespace and exact physical import substitutions", "current subject and namespace header strings", "relocated Git byte-preservation patterns"]
+proof_logic_edits_allowed = false
+public_umbrella_admission_changed = false
+generated_receipts_repository = "grwtsk/noeaaeue"
+lean_verification = "NOT_RUN"
+semantic_review = "SOURCE_SPECIFIC_REVIEW_REQUIRED"
+mathematical_acceptance = "NOT_CLAIMED"
+
+[taxonomy_basis]
+repository = "grwtsk/noeaaeue"
+snapshot_path = "registry/taxonomy/classification/structure/.taxonomy/PMD-1/56a8b4fa4eb7f80ce017b03f055c22b65fa944c344e1dd6289a29e43eb108070/snapshot.json"
+snapshot_sha256 = "457b7bbf43350bd85f888d72096dcf3d1ccafc1d3e1cf3fd89a64e8025b33dee"
+scope = "Existing named PMD navigation hierarchy; not acceptance of a production semantic graph"
+
+[coverage]
+required_old_root_lean_count = 0
+require_every_source_occurrence = true
+require_unique_destinations = true
+require_current_digests = true
+require_no_executable_sourcecorpus_namespace = true
+require_exact_inverse_reconstruction = true
+preserve_original_notices_and_provenance = true
+preserve_historical_verification_statuses = true
+unresolved_imports_are_not_silently_resolved = true
+
+[manifests]
+paths = [
+  "docs/verification/Algebra/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Algebra/CommutativeAlgebra/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Algebra/FieldTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Algebra/GroupTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Algebra/LinearAlgebra/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Algebra/RingTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Algebra/UniversalAlgebra/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/AsymptoticAnalysis/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/ComplexAnalysis/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/FunctionalAnalysis/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/HarmonicAnalysis/FourierAnalysis/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/MeasureTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/RealAnalysis/Integration/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Analysis/SpecialFunctions/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CombinatoricsAndDiscreteMathematics/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CombinatoricsAndDiscreteMathematics/ExtremalCombinatorics/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CombinatoricsAndDiscreteMathematics/GraphTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/sourcecorpus-relocation-v1.toml",
+  "docs/verification/DifferentialEquationsAndDynamicalSystems/sourcecorpus-relocation-v1.toml",
+  "docs/verification/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/Computability/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/ModelTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/ProofTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/SetTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/FoundationsLogicAndTypeTheory/TypeTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Geometry/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Geometry/AlgebraicGeometry/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Geometry/ClassicalGeometry/EuclideanGeometry/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Geometry/ConvexGeometry/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Geometry/DifferentialGeometry/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AdditiveNumberTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AlgebraicNumberTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AnalyticNumberTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/AutomorphicForms/ModularForms/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/DiophantineEquations/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/ElementaryNumberTheory/sourcecorpus-relocation-v1.toml",
+  "docs/verification/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Distributions/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Independence/sourcecorpus-relocation-v1.toml",
+  "docs/verification/ProbabilityAndMathematicalStatistics/StochasticProcesses/Martingales/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Topology/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Topology/AlgebraicTopology/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Topology/GeneralTopology/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Topology/GeneralTopology/UniformSpaces/sourcecorpus-relocation-v1.toml",
+  "docs/verification/Topology/MetricTopology/sourcecorpus-relocation-v1.toml",
+]
+
+[[tasks]]
+id = "coverage"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Reconcile every pinned source path and Git blob with exactly one destination and its target SHA-256; no Lean remains under the retired root."
+
+[[tasks]]
+id = "names-and-bytes"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Reconstruct each original byte string by inverting only the recorded qualified-name and current-header substitutions; reject any changed proof term, hypothesis, notice or historical provenance field."
+
+[[tasks]]
+id = "subject-review"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Review every source body against the indicated subject definition, refining broad or mixed homes without treating retained labels, filenames, namespaces or lexical signals as semantic acceptance."
+
+[[tasks]]
+id = "import-closure"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Run Lean-native source dependency observation for each moved module, inventory unresolved historical imports and variant-provider ambiguities, and do not guess an alias or provider."
+
+[[tasks]]
+id = "per-module-elaboration"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Replay each source in its explicitly pinned upstream environment or compatible GRWTSK environment. Keep negative controls, source candidates, upstream copies and admitted modules separate; report each result independently."
+
+[[tasks]]
+id = "declaration-and-trust"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Compare fully qualified declaration names and elaborated types under the explicit renaming map; audit axioms, sorry, unsafe and native dependencies. Preserve conditional hypotheses and unresolved premises."
+
+[[tasks]]
+id = "public-library"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Build the existing public library with lake build GRWTSK; public success does not establish compilation or admission of unimported variants."
+
+[[tasks]]
+id = "historical-bindings"
+status = "NOT_RUN"
+executor_repository = "grwtsk/noeaaeue"
+math_revision = "REQUIRE_EXACT_MIGRATION_COMMIT_BEFORE_EXECUTION"
+obligation = "Rebind source-specific literature and semantic-review consumers explicitly to the moved occurrences; preserve pinned historical catalogues and source IDs, and mark changed inputs for renewed review."

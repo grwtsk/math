@@ -1,0 +1,2 @@
+**/Variant*.lean -text -filter
+**/Variant*.lean.in -text -filter

@@ -1,0 +1,18 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.ZeroLogarithmicEstimate.Varianta60885e0cc6e8999ce3269725422905ac9ef02c979b1a72570fd5fc3a007e7a0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a60885e0cc6e8999ce3269725422905ac9ef02c979b1a72570fd5fc3a007e7a0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.ZeroLogarithmicEstimate.Varianta60885e0cc6e8999ce3269725422905ac9ef02c979b1a72570fd5fc3a007e7a0","mathematical_subject":"Analysis.Integration","original_sha256":"a60885e0cc6e8999ce3269725422905ac9ef02c979b1a72570fd5fc3a007e7a0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/a6/a60885e0cc6e8999ce3269725422905ac9ef02c979b1a72570fd5fc3a007e7a0--ZeroLogarithmicEstimateAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.ZeroLogarithmicEstimate.Varianta60885e0cc6e8999ce3269725422905ac9ef02c979b1a72570fd5fc3a007e7a0
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.frequency_moment_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.frequency_moment_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.frequency_moment_plancherel
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.frequency_moment_plancherel
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.quadratic_integrand_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.quadratic_integrand_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.logarithmicEnergy_le_h1
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicEstimate.logarithmicEnergy_le_h1

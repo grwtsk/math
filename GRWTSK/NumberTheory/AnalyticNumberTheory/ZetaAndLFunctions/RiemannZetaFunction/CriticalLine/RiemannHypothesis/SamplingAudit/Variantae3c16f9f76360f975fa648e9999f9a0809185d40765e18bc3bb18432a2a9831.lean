@@ -1,0 +1,48 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSamplingTaylor.Variant74ca80b631cea0f8285dd3fbf853515dcc7910cf6c0e82eae12f1165a597bcc0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"74ca80b631cea0f8285dd3fbf853515dcc7910cf6c0e82eae12f1165a597bcc0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSamplingTaylor.Variant74ca80b631cea0f8285dd3fbf853515dcc7910cf6c0e82eae12f1165a597bcc0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"74ca80b631cea0f8285dd3fbf853515dcc7910cf6c0e82eae12f1165a597bcc0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/source-curvature/SamplingAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceSamplingTaylor
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSamplingTaylor.Variant74ca80b631cea0f8285dd3fbf853515dcc7910cf6c0e82eae12f1165a597bcc0
+
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSamplingTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSamplingTerm
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSamplingTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSamplingTerm
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSamplingTerm_eq_source_weight
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSamplingTerm_eq_source_weight
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSamplingTerm_eq_source_weight
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSamplingTerm_eq_source_weight
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.integral_comp_exp_univ
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.integral_comp_exp_univ
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSampling_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSampling_integrableOn
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSampling_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSampling_integrableOn
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSampling_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourcePlainSampling_integral_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSampling_integral_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.sourceLogSampling_integral_zero
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder_hasDerivAt
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder_abs_le
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder_deriv_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSamplingTaylor.correlationTaylorRemainder_deriv_abs_le

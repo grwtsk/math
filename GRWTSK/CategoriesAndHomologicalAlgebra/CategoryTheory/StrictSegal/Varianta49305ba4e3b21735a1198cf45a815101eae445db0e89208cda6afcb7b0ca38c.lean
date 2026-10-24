@@ -1,0 +1,114 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Quasicategory.Variant36f765c1b12508f88a5955136edf4c433e72f2f30acab9ac5d168a4f9a9cc25e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"36f765c1b12508f88a5955136edf4c433e72f2f30acab9ac5d168a4f9a9cc25e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.Quasicategory.Variant36f765c1b12508f88a5955136edf4c433e72f2f30acab9ac5d168a4f9a9cc25e","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"36f765c1b12508f88a5955136edf4c433e72f2f30acab9ac5d168a4f9a9cc25e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/AlgebraicTopology/Quasicategory/StrictSegal.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Nick Ward. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johan Commelin, Emily Riehl, Nick Ward
+-/
+module
+
+public import Mathlib.AlgebraicTopology.Quasicategory.Basic
+public import Mathlib.AlgebraicTopology.SimplicialSet.StrictSegal
+
+/-!
+# Strict Segal simplicial sets are quasicategories
+
+In `AlgebraicTopology.SimplicialSet.StrictSegal`, we define the strict Segal
+condition on a simplicial set `X`. We say that `X` is strict Segal if its
+simplices are uniquely determined by their spine.
+
+In this file, we prove that any simplicial set satisfying the strict Segal
+condition is a quasicategory.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Quasicategory.Variant36f765c1b12508f88a5955136edf4c433e72f2f30acab9ac5d168a4f9a9cc25e
+
+public section
+
+universe u
+
+open CategoryTheory
+open SimplicialObject SimplexCategory
+
+open scoped Simplicial
+
+namespace SSet.StrictSegal
+
+set_option backward.defeqAttrib.useBackward true in
+set_option backward.isDefEq.respectTransparency false in
+/-- Any `StrictSegal` simplicial set is a `Quasicategory`. -/
+theorem quasicategory {X : SSet.{u}} (sx : StrictSegal X) : Quasicategory X := by
+  apply quasicategory_of_filler X
+  intro n i σ₀ h₀ hₙ
+  use sx.spineToSimplex <| Path.map (horn.spineId i h₀ hₙ) σ₀
+  intro j hj
+  apply sx.spineInjective
+  ext k
+  dsimp only [spineEquiv, spine_arrow, Function.comp_apply, Equiv.coe_fn_mk]
+  rw [← types_comp_apply (σ₀.app _) (X.map _), ← σ₀.naturality]
+  let ksucc := k.succ.castSucc
+  obtain hlt | hgt | heq : ksucc < j ∨ j < ksucc ∨ j = ksucc := by lia
+  · rw [← spine_arrow, spine_δ_arrow_lt sx _ hlt]
+    dsimp only [Path.map_arrow, spine_arrow, Fin.coe_eq_castSucc]
+    dsimp
+    apply congr_arg
+    apply Subtype.ext
+    dsimp [horn.face, CosimplicialObject.δ]
+    rw [dsimp% Subcomplex.yonedaEquiv_coe, Subfunctor.lift_ι, stdSimplex.map_apply,
+      Quiver.Hom.unop_op, SSet.yonedaEquiv_map, Equiv.apply_symm_apply,
+      mkOfSucc_δ_lt hlt]
+    rfl
+  · rw [← spine_arrow, spine_δ_arrow_gt sx _ hgt]
+    dsimp
+    apply congr_arg
+    apply Subtype.ext
+    dsimp [horn.face, CosimplicialObject.δ]
+    rw [dsimp% Subcomplex.yonedaEquiv_coe, Subfunctor.lift_ι, stdSimplex.map_apply,
+      Quiver.Hom.unop_op, SSet.yonedaEquiv_map, Equiv.apply_symm_apply,
+      mkOfSucc_δ_gt hgt]
+    rfl
+  · obtain _ | n := n
+    · /- The only inner horn of `Δ[2]` does not contain the diagonal edge. -/
+      obtain rfl : k = 0 := by omega
+      fin_cases i <;> contradiction
+    · /- We construct the triangle in the standard simplex as a 2-simplex in
+      the horn. While the triangle is not contained in the inner horn `Λ[2, 1]`,
+      it suffices to inhabit `Λ[n + 3, i] _⦋2⦌`. -/
+      let triangle : (Λ[n + 3, i] : SSet.{u}) _⦋2⦌ :=
+        horn.primitiveTriangle i h₀ hₙ k (by grind)
+      /- The interval spanning from `k` to `k + 2` is equivalently the spine
+      of the triangle with vertices `k`, `k + 1`, and `k + 2`. -/
+      have hi : ((horn.spineId i h₀ hₙ).map σ₀).interval k 2 (by grind) =
+          X.spine 2 (σ₀.app _ triangle) := by
+        ext m
+        dsimp [spine_arrow, Path.map_interval, Path.map_arrow]
+        rw [← dsimp% σ₀.naturality_apply]
+        apply congr_arg
+        apply Subtype.ext
+        ext a : 1
+        fin_cases a <;> fin_cases m <;> rfl
+      rw [← spine_arrow, spine_δ_arrow_eq sx _ heq, hi]
+      simp only [spineToDiagonal, diagonal, spineToSimplex_spine_apply]
+      rw [← types_comp_apply (σ₀.app _) (X.map _), ← σ₀.naturality, types_comp_apply]
+      dsimp
+      apply congr_arg
+      apply Subtype.ext
+      ext z : 1
+      dsimp [horn.face]
+      rw [dsimp% Subcomplex.yonedaEquiv_coe, Subfunctor.lift_ι, stdSimplex.map_apply,
+        Quiver.Hom.unop_op, stdSimplex.map_apply, Quiver.Hom.unop_op]
+      dsimp [CosimplicialObject.δ]
+      rw [SSet.yonedaEquiv_map]
+      simp only [Equiv.apply_symm_apply, triangle]
+      rw [mkOfSucc_δ_eq heq]
+      fin_cases z <;> rfl
+
+/-- Any simplicial set satisfying `IsStrictSegal` is a `Quasicategory`. -/
+instance quasicategory' (X : SSet.{u}) [IsStrictSegal X] : Quasicategory X :=
+  quasicategory <| ofIsStrictSegal X
+
+end SSet.StrictSegal
