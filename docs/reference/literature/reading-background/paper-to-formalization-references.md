@@ -12083,3 +12083,45 @@ The documented managed runner requires all prior reservations released and expli
 ## Missing bridges by taxonomy
 
 Algebra K1 still lacks the twelve-element standard basis, general Coxeter/Laurent construction, semilinear bar and KL basis/recurrence. K2/K4/K5 retain their degree, geometric positivity and analytic-realization gaps; matrix faithfulness and E1 exceptional-group data remain open. Number theory, boundary geometry and recursive-refinement obligations are unchanged. All original acceptance conditions remain explicit in JSON. Imported mathematics, previous verified fragments, source proof candidates, conditional interfaces and finite evidence retain distinct scopes. No historical influence, reading event or understanding date is inferred.
+
+
+## Relocated transition-system import repairs — 2026-10-24
+
+Local attribution: grwtsk contributors. External paper title/byline/year/DOI:
+not applicable; this is source-path repair after taxonomy relocation.
+Source commits `30b49432769495cb24ccc2b1cacdbb4856cdf150` and
+`e71d24cf79e4b7a126a3400291a2fb1c4a982ef8`, starting from
+`706c62c1285a9857cb9d52e0620ec2cb514eb374`.
+
+The relocated public-import variant
+`GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/GRWTSK/Variant47b1656e7f146895a077ba60f9ce716e9e459b6e37a0e5dd9d0885660c3ca819.lean`
+contained 13 imports of removed modules under
+`GRWTSK.DifferentialEquationsAndDynamicalSystems`. Each was replaced by its
+unique existing canonical counterpart under `GRWTSK.DynamicalSystems`,
+including the four verification modules tracked by #1191/#1193/#1194/#1196.
+The sequence audit variant
+`GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SequenceRealizationAudit/Variant06d8787ce1b31bfb5513275848628d50cfc52b9c29439e5d95df181c55b19691.lean`
+had one further stale import of `Sequences.ApproximationReturn`, now repaired
+to the same canonical module already named by its declaration-owner selection.
+All non-import bytes in both consumers are unchanged. No theorem, hypothesis,
+proof body, acceptance predicate, audit logic or allowlist was edited.
+
+**Static checks actually performed.** Source hash/committed-blob checks passed;
+all direct literal GRWTSK import paths of the public-import variant resolve at
+the selected committed tree; a tracked GRWTSK-wide scan at `e71d24cf79e4b7a126a3400291a2fb1c4a982ef8`
+found zero remaining simple import commands (including public/meta modifiers)
+for the 13 removed module names. `git diff --check` passed. These are source
+and reference checks, not Lean elaboration or mathematical acceptance.
+Operational repair scripts, before/after hashes and exact scope are retained
+outside math in Noe runtime
+`formalization/issue-burndown/source-fix-20261024T085125Z/`.
+
+**Native status and remaining obligations.** Compilation: **NOT_RUN**;
+fresh kernel and transitive axiom audit: **NOT_RUN**. The live managed
+`declaration107-reconciled` owner and activation lock were preserved; no
+competing controller, standalone runner or resource-budget change was used.
+These commits repair successor source paths, not the immutable historical
+snapshots requested by the four verification issues. Those original exact
+pins remain separate pending native tasks. The source variants' historical
+content identifiers and old receipts do not certify these edited bytes.
+No RH-scale or other stronger mathematical conclusion follows from the repair.
