@@ -561,4 +561,4 @@ independent kernel replay, and full transitive axiom/unsafe audit
 with exact exit codes and immutable receipts; it does not
 constitute any executed verification. Current source status remains
 **COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
-TRANSITIVE_AXOM_AUDIT NOT_RUN**.
+TRANSITIVE_AXIOM_AUDIT NOT_RUN**.
