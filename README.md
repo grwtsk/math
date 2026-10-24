@@ -1,14 +1,26 @@
 # GRWTSK mathematics
 
-`grwtsk/math` is the canonical repository for GRWTSK mathematical definitions, theorems, certificate relations, exact finite mathematical kernels, public source fixtures, and explicit open mathematical obligations.
+Mathematical results, formal proofs, and explicit open problems by **grwtsk contributors**. This is the canonical source for GRWTSK mathematics.
 
-The formal sources live in `GRWTSK/`, with `GRWTSK.lean` as the public library entry point.
+[**Browse the results index →**](docs/reference/results.md)
 
-## Repository boundary
+## Navigating the collection
 
-This repository owns pure mathematics and static, source-bound verification specifications. It does **not** own process execution, mutable caches, operational receipts, scheduling, authority records, WSC coordination, Git publication workflows, or generated proof-capsule documentation. Those effects belong to [`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue), which consumes pinned `grwtsk/math` revisions through typed Git bindings.
+- Use the [results index](docs/reference/results.md) to find result families and their supporting mathematics.
+- Browse [mathematical subjects](docs/mathematics/) for increasingly specific subjects, object guides, and result articles, co-located at each level of that directory.
+- Start with the [least-prime walkthrough](docs/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
+- Consult the [theorem/result occurrence catalogue](docs/reference/result-occurrences.md) for the broader source inventory. A lexical occurrence is not a verified theorem.
+- The [Lean library](GRWTSK/) contains the formal sources; [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. [Verification specifications](docs/verification/README.md) describe static replay targets.
 
-A mathematical acceptance target may specify exact modules, declarations, source files, dependency revisions, trust policy, certificate relations, and hostile controls. The corresponding checkout, tool acquisition, process invocation, resource metering, log capture, receipt creation, and capsule publication are external effects.
+Examples include [least natural prime](docs/mathematics/NumberTheory/Prime/least-prime.md), [coverage and discrete quotas](docs/mathematics/Combinatorics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/Asymptotics/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
+
+## Reading the results
+
+The collection contains formal proofs, conditional results, written arguments, finite certificates, and source candidates awaiting verification. Each result must be read with its exact hypotheses, source revision, and verification scope. Historical evidence is not a fresh check of changed source bytes.
+
+[From ethical obligations to mechanistic reasoning](docs/mathematics/Logic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
+
+Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound.
 
 ## Build
 
@@ -22,13 +34,11 @@ The committed `lean-toolchain` and `lake-manifest.json` pin the public Lean and 
 
 Static replay targets for external verification are described under [`docs/verification/`](docs/verification/README.md). The legacy [`verification/`](verification/README.md) directory is only a compatibility boundary for non-target fixtures and custody records. No operational cache or execution receipt is canonical repository content.
 
-## Mathematical scope
+## Repository boundary
 
-Browse the [mathematical subjects](docs/index.md), follow the [least-prime tutorial](docs/start/least-prime.md), or consult the [selected result catalogue](docs/reference/results.md). Object guides state exact hypotheses and distinguish formal proofs, conditional results, written arguments, historical checks, finite certificates, and open obligations.
+This repository owns pure mathematics and static, source-bound verification specifications. Process execution, mutable caches, operational receipts, scheduling, authority records, WSC coordination, Git publication workflows, and generated proof-capsule documentation belong to [`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue), which consumes pinned `grwtsk/math` revisions through typed Git bindings.
 
-[From ethical obligations to mechanistic reasoning](docs/mathematics/Logic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
-
-Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound.
+A mathematical acceptance target may specify exact modules, declarations, source files, dependency revisions, trust policy, certificate relations, and hostile controls. Checkout, tool acquisition, process invocation, resource metering, log capture, receipt creation, and capsule publication are external effects.
 
 ## Licensing and provenance
 
