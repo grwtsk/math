@@ -1,4 +1,4 @@
-import Finite1Pipeline
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.KernelCorrespondence.Basic
 
 /-!
 COHERENCE-1. Agreement is relative to a common operator, domain and restriction.
