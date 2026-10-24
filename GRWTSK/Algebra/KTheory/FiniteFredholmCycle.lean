@@ -715,6 +715,44 @@ theorem classBlockSum_mk
         Quotient.mk finiteProjectionSetoid
           ⟨P.1 + Q.1, finiteBlockSum P.2 Q.2⟩ := rfl
 
+/-- The ordinary trace of a two-block matrix is the sum of its two
+ordinary traces, without dimension-dependent normalization. -/
+theorem matrix_trace_fromBlocks
+    {m n : Type*} [Fintype m] [Fintype n]
+    (P : Matrix m m ℂ) (Q : Matrix n n ℂ) :
+    (Matrix.fromBlocks P 0 0 Q).trace = P.trace + Q.trace := by
+  simp [Matrix.trace, Matrix.diag, Fintype.sum_sum_type]
+
+/-- Reindexing a two-block matrix to `Fin (m+n)` preserves its ordinary
+trace, hence this concrete binary sum has additive ordinary trace. -/
+theorem finiteBlockSumMatrix_trace
+    {m n : ℕ}
+    (P : Matrix (Fin m) (Fin m) ℂ)
+    (Q : Matrix (Fin n) (Fin n) ℂ) :
+    (finiteBlockSumMatrix P Q).trace = P.trace + Q.trace := by
+  calc
+    (finiteBlockSumMatrix P Q).trace =
+        (Matrix.fromBlocks P 0 0 Q).trace := by
+      unfold finiteBlockSumMatrix
+      simpa only [Matrix.coe_reindexAlgEquiv] using
+        (Matrix.trace_map
+          (Matrix.reindexAlgEquiv ℂ ℂ
+            (finSumFinEquiv : Fin m ⊕ Fin n ≃ Fin (m + n)))
+          (Matrix.fromBlocks P 0 0 Q))
+    _ = P.trace + Q.trace := matrix_trace_fromBlocks P Q
+
+/-- The actual descended class trace respects the quotient block sum.
+This is a trace compatibility theorem, not yet a declaration of a
+commutative monoid or its analytic K₀ completion. -/
+theorem classTrace_classBlockSum
+    (x y : FiniteProjectionClass) :
+    classTrace (classBlockSum x y) = classTrace x + classTrace y := by
+  refine Quotient.inductionOn₂ x y ?_
+  intro P Q
+  change (finiteBlockSumMatrix P.2.val Q.2.val).trace =
+    P.2.val.trace + Q.2.val.trace
+  exact finiteBlockSumMatrix_trace P.2.val Q.2.val
+
 /-- Every finite projection class has nonnegative integral ordinary
 trace. This uses the established finite idempotent trace/rank identity;
 it makes no statement about analytic traces on infinite algebras. -/
