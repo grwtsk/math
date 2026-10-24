@@ -1,0 +1,37 @@
+# Queued verification request; execution not authorized.
+schema_version = "0.1"
+request_id = "proper-power-original-indicator-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "73bf5f7fc361d80367b6350eb927e6c050d6fe04"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalIndicator.lean"
+source_blob = "3324d0e7fdd76f5f815a32def97c1d3d17a05253"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalIndicator.originalPacketMass_eq_inner_indicator",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalFilter",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Reindex dependent n,p,k finite sum to supportedTripleBox",
+ "Identify rectangularProperPowerMass with rectangularSupportedMass",
+ "Compose exact unconditional proper-power mass reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalIndicator.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalIndicator"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalIndicator.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
