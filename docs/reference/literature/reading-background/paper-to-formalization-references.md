@@ -11386,3 +11386,117 @@ External evidence in that directory: `sofic-cover-build.log` and repair logs,
 Historical SOURCE_ONLY/NOT_RUN labels describe earlier source states; this
 acceptance is limited to the exact repaired closure and leaves all unresolved
 premises, external background classifications and separate replay gates intact.
+
+
+## Case ZERO-ORDINATE-DYNAMIC-BOMBIERI-VALIDATION-20261023
+
+**Identity and scope.** *Actual zeta-zero ordinate and exact sofic factor-language criteria* and
+*The two Bombieri moments cannot support a lossless dynamic process cover*,
+local 2026 formalizations, byline `grwtsk contributors`, version
+[math@e8f983dc9be493e80e3ba0ea8c8fe29c19b85104](https://github.com/grwtsk/math/commit/e8f983dc9be493e80e3ba0ea8c8fe29c19b85104).
+This acceptance record qualifies the exact source versions below; earlier
+SOURCE_ONLY / NOT_RUN notes, passive Noe requests, and older blobs remain historical.
+It does not claim Noe dispatch, independent external replay, or discharged analytic premises.
+
+**Method background.** The existing Myhill/Nerode and sofic-language bibliography
+and the Bombieri/Guinand–Weil provenance above retain their original upstream
+bylines, versions and stable links. In particular, Anil Nerode (1958),
+*Linear Automaton Transformations*, [DOI 10.1090/S0002-9939-1958-0135681-9](https://doi.org/10.1090/S0002-9939-1958-0135681-9),
+is method background for finite continuation contexts, not an imported full
+classification theorem or evidence of historical influence. The exact Bombieri
+profile used here is the ordered pair of ordinary and reciprocal moments on
+the literal three-coordinate stage-two/three/four canonical square-tent space;
+no classical Weil-form identification is inferred from this analogy.
+
+**Kernel-verified conditional bridges.** Namespace
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion`:
+`RationalReal` is the actual image of the rationals, `AlgebraicReal` is a root
+of a nonzero rational polynomial, `ActualZetaZero` is `NontrivialZetaZero`, and
+`zetaHeight` is the imaginary part. `zeta_zero_ordinate_irrational_without_GRH`
+and `irrational_of_eventual_language_obstruction` require BOTH the independently
+supplied rational-to-exact-sofic presentation and nonsofic obstruction.
+`actual_zeta_zero_irrational_and_conditional_transcendental`,
+`eventual_sofic_irrational_and_conditional_transcendental`, and their dynamic-cover
+consumers additionally retain the algebraic-on-critical-line presentation and
+`ZetaCriticalPlacement`; the latter is the zeta RH component, not a proof of GRH.
+`DynamicThreeQuarterSoficProgram.zeroFree_strict_threeQuarters` retains the entire
+stagewise analytic zero-free supplier, source identity and real-part identity.
+Its exclusion boundary is strict; accounting overhead does not prove the stages.
+
+In that same fully qualified namespace,
+`no_tail_exactPresentationAtMost_of_contextCertificate` and
+`no_bounded_tail_presentation_of_zeta_contextCertificate` exclude only the
+specified finite reachable-subset capacity. `zeta_unboundedTailContexts_iff_all_capacityCertificates`
+requires EVERY capacity, EVERY zero and EVERY tail for the SAME trace.
+`zeta_irrational_of_all_capacityCertificates_and_rational_sofic` still needs the
+independent arithmetic presentation supplier. `eventualSuppliers_of_zeta_rightContexts`
+now uses `theorem` for its proposition-valued packet, satisfying the pinned
+strict linter; its exact type, fields and proof are unchanged. Local attribution
+was corrected to the current repository rule. No mathematical premise was removed.
+
+Namespace `GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction`:
+`MomentOnlyStages` requires every stage to factor through the SAME two moments.
+`momentOnly_stage_collision`, `momentOnly_history_collision`,
+`no_exact_reconstruction_from_momentOnly_history`, and
+`trace_collision_of_momentOnly_history` transport the exact nonzero
+`correctedCoordinates`/zero collision through all such stages.
+`no_lossless_spectral_cover_after_moment_collapse` additionally requires the
+label trace to factor through the complete stage history before contradicting
+the supplied cover's injectivity. The source was unchanged. Enriched stages
+retaining independent information are not excluded.
+
+**Classifications and missing bridges.** Imported mathematics: the pinned Mathlib
+and named GRWTSK dependencies. Kernel-verified bridges: the implications and
+finite-capacity obstruction just described. Conditional interfaces: arithmetic
+presentations, actual spectral process, critical placement, all-tail/all-capacity
+certificates and stagewise zero-free bounds. Finite evidence: the exact local
+three-coordinate collision, with no extension to arbitrary test spaces.
+Analogy/method background: finite automata and heat-flow/compression terminology.
+Unresolved premises: actual zeta trace construction and nonsoficity, rational or
+algebraic height-to-language implications, classical Guinand–Weil transport and
+separation, actual RH/GRH and analytic 7/8-to-3/4 estimates. No unconditional
+zero-ordinate irrationality/transcendence or spectral nonsoficity is established.
+
+**Source pin.** At the commit above:
+
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean`: blob `c04103e633e5af061511775f6c3940f1c30bbfb8`, SHA-256 `fb7d91b7c38637e1dc1c087da9f792db92262140eb16b2d08174a4c3b2e7f283`.
+
+- `GRWTSK/NumberTheory/Zeta/Riemann/DynamicBombieriSoficObstruction.lean`: blob `4490c3a65d8f1b44c2aa447c38c5b0445c6abbe3`, SHA-256 `8e13fff0f6e45c6918ea12306405f6b6a2b511732dcc92943e5055c3e849d10e`.
+
+The external `zero-bombieri-validated-snapshot.json` records all 122 lexical local
+source dependencies and their blobs/hashes. Byte comparison against the initial
+snapshot permits only the proposition declaration-kind and attribution edits
+above. The kernel audit independently enumerates imported GRWTSK declarations,
+including generated/private constants; lexical import discovery is not presented
+as a complete elaborated dependency analysis.
+
+**Actual verification evidence.** Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. Commands run from canonical main:
+
+```text
+lake build GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction --wfail
+lake env lean --trust=0 -t 0 /Users/think/Documents/ChatGPT/math-branch-integration-20261022/zero-bombieri-audit.lean
+lake build --wfail
+```
+
+All three commands exited 0. Strict target build: **8827 jobs**; public main
+build: **9307 jobs**. Fresh trust-level-zero replay: **3717 imported GRWTSK
+declarations**, with all types printed; unsafe declarations and any transitive
+axiom outside `propext`, `Classical.choice`, `Quot.sound` are rejected. No
+`sorryAx` or custom axiom passed this audit. This checks the stated conditional
+implications, not the existence of their supplier premises.
+
+Actual logs, runner, source snapshot and result JSON are stored outside canonical
+math under `/Users/think/Documents/ChatGPT/math-branch-integration-20261022/`:
+
+- `zero-bombieri-final-build.log`, SHA-256 `1e31b163d31154f218bbbe3797fd11fd842d537e28d073ab30a997b071b115a7`.
+- `zero-bombieri-audit.lean`, SHA-256 `ad260aca248bff4c4edf249c0783ca54da86ee0e1475bf18bbe834af8a9a1cf7`.
+- `zero-bombieri-audit.log`, SHA-256 `e51c896b96600bf52ca97111877d774347c47a67a4896c2e5c29073af1ee10fe`.
+- `zero-bombieri-validated-snapshot.json`, SHA-256 `34bcbd217daeb95eb9c3f6308bd822de9a709807fef807dc962ed25300fa1548`.
+- `zero-bombieri-public-build.log`, SHA-256 `d9eb8aa2eaa73aa2acd170fb5ff2b8162eb4e311b3266ec2670fefd017014bcd`.
+
+The initial `zero-bombieri-build.log` exited 1 solely on the proposition-definition
+lint warning; it is not the acceptance receipt. The subsequent strict build above
+passed after the exact declaration-kind repair. Operational receipts remain external;
+this canonical entry records their identities and scope. Public imports were not
+changed by this validation.
