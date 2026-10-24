@@ -423,4 +423,13 @@ theorem logarithmicPowerTailPrimitive_power_tendsto_zero
     congr 1
     ring
 
+
+/-- The logarithm is negligible compared to every positive real
+power at infinity. This is the exact asymptotic input for the
+logarithmic factor in the primitive. -/
+theorem logarithmicPowerTailPrimitive_log_isLittleO
+    (σ : ℝ) (hσ : 1 < σ) :
+    Real.log =o[Filter.atTop] (fun t : ℝ => t ^ ((σ - 1) / 2)) := by
+  exact Real.isLittleO_log_rpow_atTop (show 0 < (σ - 1) / 2 by linarith)
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
