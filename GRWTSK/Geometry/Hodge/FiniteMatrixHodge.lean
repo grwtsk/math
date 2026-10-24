@@ -304,4 +304,59 @@ theorem graphHodgeMomentSchurLift_full_det_sign
   have h := graphHodgeMomentSchurLift_full_det_ne_zero G U V z
   nlinarith [sq_pos_of_ne_zero h]
 
+
+/-!
+## Exact obstruction to an unshifted graph-Laplacian norm gap
+
+For any nonempty vertex set, the constant cochain has zero coboundary
+and hence zero Laplacian. Consequently the graph Laplacian itself is
+never injective, irrespective of graph connectivity. Its positive
+shift I+Δ, used in the moment Schur lift above, does not inherit this
+zero-mode obstruction. No positive gap is inferred for the unshifted
+operator.
+-/
+
+/-- The nonzero constant cochain is always annihilated by the graph
+Laplacian, independently of connectivity or edge count. -/
+theorem euclideanLaplacian_constant_zero
+    (G : OrientedIncidence Vertex Edge) :
+    euclideanLaplacian G
+      (WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ))) = 0 := by
+  rw [euclideanLaplacian_apply]
+  have hzero : laplacian G (fun _ : Vertex => (1 : ℝ)) = 0 := by
+    apply (laplacian_eq_zero_iff_delta_eq_zero G _).mpr
+    rw [delta_eq_coboundary]
+    ext e
+    simp [OrientedIncidence.coboundary_apply]
+  simp [hzero]
+
+/-- Any nonempty finite graph Hodge Laplacian has a nontrivial kernel. -/
+theorem euclideanLaplacian_not_injective [Nonempty Vertex]
+    (G : OrientedIncidence Vertex Edge) :
+    ¬ Function.Injective (euclideanLaplacian G) := by
+  intro hinj
+  have hzero := euclideanLaplacian_constant_zero G
+  have heq :
+      (WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ)) :
+        EuclideanSpace ℝ Vertex) = 0 :=
+    hinj (hzero.trans (map_zero (euclideanLaplacian G)).symm)
+  obtain ⟨v⟩ := ‹Nonempty Vertex›
+  have hv : (1 : ℝ) = 0 := by
+    simpa using congrArg (fun x : EuclideanSpace ℝ Vertex => x v) heq
+  norm_num at hv
+
+/-- The unshifted Laplacian cannot have a *global positive* least-norm
+gap when there is a vertex; the constant zero mode is an explicit
+counterexample. This does not obstruct the shifted operator I+Δ. -/
+theorem euclideanLaplacian_no_positive_gap [Nonempty Vertex]
+    (G : OrientedIncidence Vertex Edge) :
+    ¬ ∃ γ : ℝ, 0 < γ ∧ ∀ y : EuclideanSpace ℝ Vertex,
+      γ * ‖y‖ ≤ ‖euclideanLaplacian G y‖ := by
+  rintro ⟨γ, hγ, hgap⟩
+  have hinj : Function.Injective (euclideanLaplacian G) :=
+    GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap.injective_of_perturbation
+      (euclideanLaplacian G) (euclideanLaplacian G) hgap
+      (by simpa only [sub_self, norm_zero] using hγ)
+  exact euclideanLaplacian_not_injective G hinj
+
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
