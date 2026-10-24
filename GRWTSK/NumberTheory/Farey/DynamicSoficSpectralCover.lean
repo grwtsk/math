@@ -284,11 +284,10 @@ theorem generalized_implies_base_of_map
         (family i0).critical (embed z) →
           base.critical z)
     (hGeneralized : GeneralizedHypothesis family) :
-    base.Hypothesis :=
-  generalized_implies_base_of_member_specialization
-    i0
-    (BaseSpecialization.ofMap embed mapsZero reflectsCritical)
-    hGeneralized
+    base.Hypothesis := by
+  intro z hz
+  exact reflectsCritical z hz
+    (hGeneralized i0 (embed z) (mapsZero z hz))
 
 /-- One actual generalized family member containing the base zero problem
 supplies the standard generalized-to-base direction. -/
