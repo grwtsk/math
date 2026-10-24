@@ -8749,3 +8749,80 @@ Verification:
 **NOT_RUN**; module build **NOT_RUN**; fresh kernel replay **NOT_RUN**;
 transitive axiom audit **NOT_RUN / NOT_KERNEL_AUDITED**; external receipt
 unavailable.
+
+
+## Corrected anchor observation and jump-aware raw reconstruction — 2026-10-23
+
+**Sources and attribution.** Local derivations by grwtsk contributors, with
+OpenAI formalization assistance, using the existing repository source identities
+and pinned Mathlib. External paper title/byline/year/DOI: not applicable to this
+increment; no historical influence is inferred. Mathematical source commit:
+`2ea1cd96eb75792d7955e89732c526d44ee059dd`; the two anchor modules were incorporated concurrently at
+`a2634449d626b3581fe9d6182f3c499ba5e102ce`.
+
+**Kernel-verified correction and conditional unsmoothing.** In namespace
+`GRWTSK.Analysis.Real.ClassicalRawCorrection`, `slope_eq_raw_log` identifies the
+actual differentiated correction with −log(1−x⁻²)/2 for x>1. `slope_pos_le`
+proves 0<slope(x)≤1/(2(x²−1)). In namespace
+`GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation`,
+`rawClassicalHead_eq_log_correction` retains the actual finite canonical zero
+head and existing independent sourceSlope. `jumpProfile_pair` proves exact
+cancellation of the odd half-jump profile. `norm_average_sub_point_le_paired`
+bounds the actual average-to-point error by the normalized integral of the
+symmetric paired second difference, for h>0 and x−h>1.
+`norm_source_sub_raw_le_paired` adds the actual Riesz endpoint tail budget for
+M≥2, 0<h≤1, M−h>1 and T≥2. `exists_raw_reconstruction_paired` supplies actual
+heights tending to infinity and convergent raw averages; pointwise unaveraged
+convergence remains conditional on decay of this paired oscillation along those
+heights. Ordinary mean oscillation is not assumed at jumps.
+
+**Kernel-verified actual anchor bridge, with residual retained.** Declaration
+namespace `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling`:
+`finiteAnchorLogObservation` is the literal divisor-antidiagonal log transform
+of coefficients on anchors 1..N. `finiteAnchorLogObservation_diagonal` has
+nonzero diagonal log 2 on row 2a when lower coefficients vanish;
+`finiteAnchorLogObservation_kernel` and `finiteAnchorLogObservation_injective`
+prove injectivity using all rows 2a for 1≤a≤N. This enlarges target rows to 2N.
+`finiteAnchorLogObservation_moebius` equals the actual von Mangoldt source for
+n≤2N, since omitted anchors>N have cofactor 1 and log 1=0.
+`correctedAnchorSource_eq_moebius` recovers actual μ on 1..2X by subtracting the
+exact signed other-shift defect and retaining both zero-shift boundary anchors.
+`correctedAnchor_observation_actual` gives actual Λ for n≤4X, and
+`correctedAnchor_observation_injective` distinguishes all finite anchor vectors.
+`centeredSource_eq_anchor_add_debt` retains the entire actual centered source as
+anchor lift plus residual; `centeredAnchorDebt_selected` identifies the residual
+with the existing signed other-shift defect on selected positive-shift cells.
+`anchorLift_unmatched` and `centeredAnchorDebt_ten` preserve the previously
+invisible actual scale-ten cell with residual exactly 1.
+
+**Classification and unresolved bridges.** Imported mathematics: Mathlib real
+logarithms, interval integration, finite sums and arithmetic functions, together
+with the previously qualified canonical zero/Riesz and actual Möbius source
+identities. Checked local bridges are exactly those above. The paired-decay
+criterion is a conditional interface, not established decay. Missing for #189:
+sourceSlope=−log(2π), sourceIntercept=logDeriv ζ(−1), and an actual jump-aware
+oscillatory estimate with canonical multiplicities, height ordering and tails.
+The anchor injectivity is not a lower bound for the original full centered
+restriction family; its known kernel witness remains. Missing for #966:
+proof of the precise RH application domain/operator correspondence and
+quantitative RH-scale bounds controlling the retained residual, signed
+corrections, background and omitted cells. No finite evidence, analogy, supplied
+frame hypothesis or source draft is promoted to an RH theorem.
+
+**Actual verification.** Lean `leanprover/lean4:v4.33.0`; clean Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. `lake build --wfail` with the root
+`GRWTSK` and all 40 tracked leaf targets in the external target manifest passed
+(9453 jobs). The 747-module project import closure passed:
+
+- `lake env lean --trust=0 -DwarningAsError=true /Users/local/Desktop/noeaaeue/.codex-runtime/math-anchor-jump-bridge/FullAxiomAudit.lean`: 23412 logical declarations, zero disallowed axioms.
+- The same command for `FullCoverageAudit.lean`: 6859 explained native-only entries, zero unexplained.
+- The same command for `FullRuntimeAudit.lean`: 13 runtime helpers, zero failures.
+- `lake env lean --run /Users/local/Desktop/noeaaeue/.codex-runtime/math-anchor-jump-bridge/KernelAffectedClosure.lean`: fresh replay of all four new modules, zero failures.
+
+All 743 unchanged source/object pairs match qualified baseline
+`502574417279b1c6409792cb64927e833a093144`; this is incremental qualification,
+not fresh kernel replay of every imported module. All 747 committed source
+blobs match the audited hashes. Earlier failing build attempts are diagnostic,
+not qualification. Operational runners, target lists, hashes, binding and logs
+remain outside math in that Noeaaeue runtime directory. Concurrent merge work
+and the pre-existing untracked `.noeaaeue/` were preserved.
