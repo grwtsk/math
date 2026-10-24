@@ -1,0 +1,27 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-non-prime-power-zero-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "9603b482e5f25f3f6720df14de82d83575d8418d"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonPrimePowerZero.lean"
+source_blob = "2580f4d1320701fc56741632c32491a0f2374b90"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_source_path = "Mathlib/Algebra/IsPrimePow.lean"
+pinned_mathlib_source_blob = "e173af2f72b7cd607eb18990d901b71aeba28875"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerZero.properPrimePowerWeight_eq_zero_of_not_prime_pow"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeFullBridge","Mathlib.Algebra.IsPrimePow","Mathlib.Tactic"]
+exact_hypotheses = "n : Nat; not IsPrimePow n"
+missing_suppliers = ["Show primeLogWeight n=0 when not IsPrimePow n","Combine with canonical vonMangoldt zero criterion","Universal pointwise equality"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerZero"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonPrimePowerZero.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
