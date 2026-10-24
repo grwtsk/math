@@ -183,4 +183,30 @@ theorem dirichlet_unit_fiber_sum_eq_apply
       exact hn (GRWTSK.NumberTheory.Primes.GoldbachUnitFiberMembership.unit_fiber_implies_isUnit q n b hb)
     simp [hnone, MulChar.map_nonunit χ hn]
 
+
+/-- Full finite reduction of the unit-fiber Dirichlet twist to the
+canonical von Mangoldt-weighted sum. Nonunit character values are
+zero by definition, so no nonunit correction is introduced here. -/
+theorem dirichlet_unitPsi_twist_eq_vonMangoldt_sum
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) :
+    (∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)) =
+      ∑ n ∈ Finset.range (N + 1),
+        (ArithmeticFunction.vonMangoldt n : ℂ) * χ (n : ZMod q) := by
+  rw [dirichlet_unitPsi_twist_eq_vonMangoldt_integer_sum]
+  apply Finset.sum_congr rfl
+  intro n hn
+  calc
+    (∑ b : (ZMod q)ˣ,
+      if (n : ZMod q) = (b : ZMod q) then
+        (ArithmeticFunction.vonMangoldt n : ℂ) * χ (b : ZMod q)
+      else 0) =
+      (ArithmeticFunction.vonMangoldt n : ℂ) *
+        (∑ b : (ZMod q)ˣ,
+          if (n : ZMod q) = (b : ZMod q) then χ (b : ZMod q) else 0) := by
+        rw [Finset.mul_sum]
+        apply Finset.sum_congr rfl
+        intro b hb
+        split_ifs <;> simp
+    _ = _ := by rw [dirichlet_unit_fiber_sum_eq_apply]
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
