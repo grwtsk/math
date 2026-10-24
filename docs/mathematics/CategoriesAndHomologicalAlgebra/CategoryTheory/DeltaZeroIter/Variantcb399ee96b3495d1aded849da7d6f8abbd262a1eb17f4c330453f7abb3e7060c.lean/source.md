@@ -1,0 +1,186 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.DeltaZeroIter.Variantcb399ee96b3495d1aded849da7d6f8abbd262a1eb17f4c330453f7abb3e7060c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `08c61fccddc9ec2242d925bf0eda451a7d1ecd46` · SHA-256 `7ef9dc83582c166a90084ca207479abfac728a050b988eeef97abe3c16e7c388`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.DeltaZeroIter.Varianted7da5a40c75fbea817494b8b193e0feb979be6d0057f34e468a890dd89fcb84","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ed7da5a40c75fbea817494b8b193e0feb979be6d0057f34e468a890dd89fcb84","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.DeltaZeroIter.Varianted7da5a40c75fbea817494b8b193e0feb979be6d0057f34e468a890dd89fcb84","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"ed7da5a40c75fbea817494b8b193e0feb979be6d0057f34e468a890dd89fcb84","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/AlgebraicTopology/SimplicialObject/DeltaZeroIter.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+module
+
+public import Mathlib.AlgebraicTopology.SimplexCategory.DeltaZeroIter
+public import Mathlib.AlgebraicTopology.SimplicialObject.Basic
+
+/-!
+# Iterations of `δ 0` and `σ 0`
+
+This file introduces morphisms `δ₀Iter i` and `σ₀Iter i` for simplicial objects:
+they are obtained as the `i`th iteration of `δ 0` or `σ 0`.
+
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.DeltaZeroIter.Varianted7da5a40c75fbea817494b8b193e0feb979be6d0057f34e468a890dd89fcb84
+
+@[expose] public section
+
+open Opposite
+
+open scoped Simplicial
+
+namespace CategoryTheory.SimplicialObject
+
+variable {C : Type*} [Category* C] (X : SimplicialObject C)
+
+/-- If `X` is a simplicial object and `n + i = m`, this is the morphism
+`X _⦋m⦌ ⟶ X _⦋n⦌` obtained by iterating `i` times the face map `X.δ 0`. -/
+def δ₀Iter {n m : ℕ} (i : ℕ) (hi : n + i = m := by lia) :
+    X _⦋m⦌ ⟶ X _⦋n⦌ :=
+  X.map (SimplexCategory.δ₀Iter i hi).op
+
+@[simp]
+lemma δ₀Iter_zero (n : ℕ) : X.δ₀Iter 0 (add_zero n) = 𝟙 _ := by
+  simp [δ₀Iter]
+
+@[simp]
+lemma δ₀Iter_one (n : ℕ) : X.δ₀Iter 1 (n := n) rfl = X.δ 0 := rfl
+
+@[reassoc]
+lemma δ₀Iter_succ (i : ℕ) {n m : ℕ} (h : n + i = m := by lia) :
+    X.δ₀Iter (i + 1) = X.δ 0 ≫ X.δ₀Iter i h := by
+  simp [δ₀Iter, SimplexCategory.δ₀Iter_succ _ h, δ_def]
+
+@[reassoc]
+lemma δ₀Iter_succ' (i : ℕ) {n m : ℕ} (h : n + (i + 1) = m := by lia) :
+    X.δ₀Iter (i + 1) h = X.δ₀Iter i ≫ X.δ 0 := by
+  dsimp [δ, δ₀Iter]
+  rw [← Functor.map_comp, ← op_comp, SimplexCategory.δ₀Iter_succ' _ h]
+
+@[reassoc]
+lemma δ_δ₀Iter (i : ℕ) {n m : ℕ} (j : Fin (m + 2))
+    (hi : n + i = m := by lia) (hj : j.val ≤ i := by grind) :
+    X.δ j ≫ X.δ₀Iter i hi = X.δ₀Iter (i + 1) := by
+  dsimp [δ, δ₀Iter]
+  rw [← Functor.map_comp, ← op_comp, SimplexCategory.δ₀Iter_δ ..]
+
+@[reassoc]
+lemma δ_δ₀Iter' {n : ℕ} (i : Fin (n + 2)) (j : ℕ) {m : ℕ}
+    (i' : Fin (m + 2)) (h : n + j = m := by lia)
+    (hi'' : i'.val = i.val + j := by grind) :
+    X.δ i' ≫ X.δ₀Iter j = X.δ₀Iter j ≫ X.δ i := by
+  dsimp [δ, δ₀Iter]
+  simp only [← Functor.map_comp, ← op_comp, SimplexCategory.δ₀Iter_δ' _ _ _ _ hi'']
+
+@[reassoc]
+lemma σ_δ₀Iter (i : ℕ) {n m : ℕ} (j : Fin (m + 1))
+    (hi : n + (i + 1) = m + 1 := by lia)
+    (hj : j.val ≤ i := by grind) :
+    X.σ j ≫ X.δ₀Iter (i + 1) hi = X.δ₀Iter i := by
+  dsimp [σ, δ₀Iter]
+  rw [← Functor.map_comp, ← op_comp, SimplexCategory.δ₀Iter_σ ..]
+
+@[reassoc]
+lemma σ_δ₀Iter' (i : ℕ) {n m : ℕ} (j : Fin (m + 1)) (j' : Fin (n + 1))
+    (hi' : n + i = m := by lia)
+    (hj' : j.val = j'.val + i := by grind) :
+    X.σ j ≫ X.δ₀Iter i = X.δ₀Iter i hi' ≫ X.σ j' := by
+  simp [σ, δ₀Iter, ← Functor.map_comp, ← op_comp,
+    SimplexCategory.δ₀Iter_σ' i j j']
+
+/-- If `X` is a simplicial object and `n + i = m`, this is the morphism
+`X _⦋n⦌ ⟶ X _⦋m⦌` obtained by iterating `i` times the degeneracy map `X.σ 0`. -/
+def σ₀Iter {n m : ℕ} (i : ℕ) (hi : n + i = m := by lia) :
+    X _⦋n⦌ ⟶ X _⦋m⦌ :=
+  X.map (SimplexCategory.σ₀Iter i hi).op
+
+@[simp]
+lemma σ₀Iter_zero (n : ℕ) : X.σ₀Iter 0 (add_zero n) = 𝟙 _ := by
+  simp [σ₀Iter]
+
+@[simp]
+lemma σ₀Iter_one (n : ℕ) : X.σ₀Iter 1 (n := n) rfl = X.σ 0 := by
+  simp [σ₀Iter, σ_def]
+
+@[reassoc]
+lemma σ₀Iter_succ (i : ℕ) {n m : ℕ} (h : n + (i + 1) = m := by lia) :
+    X.σ₀Iter (i + 1) h = X.σ 0 ≫ X.σ₀Iter i := by
+  dsimp [σ, σ₀Iter]
+  rw [← Functor.map_comp, ← op_comp, SimplexCategory.σ₀Iter_succ ..]
+
+@[reassoc]
+lemma σ₀Iter_succ' (i : ℕ) {n m : ℕ} (h : n + i = m := by lia) :
+    X.σ₀Iter (i + 1) = X.σ₀Iter i h ≫ X.σ 0 := by
+  simp [σ₀Iter, SimplexCategory.σ₀Iter_succ' _ h, σ_def]
+
+@[reassoc]
+lemma σ₀Iter_δ {n : ℕ} (i : Fin (n + 2)) (j : ℕ) {m : ℕ} (h : m + (j + 1) = n + 1 := by lia)
+    (hi' : i.val ≤ j + 1 := by grind) :
+    X.σ₀Iter (n := m) (j + 1) h ≫ X.δ i = X.σ₀Iter j := by
+  simp only [σ₀Iter, δ, ← Functor.map_comp, ← op_comp, SimplexCategory.δ_σ₀Iter i j h]
+
+@[reassoc]
+lemma σ₀Iter_δ' {n : ℕ} (i : Fin (n + 2)) (j : ℕ) {m : ℕ}
+    (i' : Fin (m + 2)) (h : m + j = n := by lia)
+    (hi' : j < i.val := by grind)
+    (hi'' : i.val = i'.val + j := by grind) :
+    X.σ₀Iter (n := m + 1) j ≫ X.δ i = X.δ i' ≫ X.σ₀Iter j := by
+  simp only [σ₀Iter, δ, ← Functor.map_comp, ← op_comp,
+    SimplexCategory.δ_σ₀Iter' i j i']
+
+@[reassoc]
+lemma σ₀Iter_σ (i : ℕ) {n m : ℕ} (j : Fin (m + 1)) (hi : n + i = m := by lia)
+    (hj : j.val ≤ i := by grind) :
+    X.σ₀Iter i hi ≫ X.σ j = X.σ₀Iter (i + 1) := by
+  dsimp [σ, σ₀Iter]
+  rw [← Functor.map_comp, ← op_comp, SimplexCategory.σ_σ₀Iter ..]
+
+@[reassoc]
+lemma σ₀Iter_σ' (i : ℕ) {n m : ℕ} (j : Fin (m + 1)) (j' : Fin (n + 1))
+    (hi : n + i = m := by lia)
+    (hj : j.val = j'.val + i := by grind) :
+    X.σ₀Iter i hi ≫ X.σ j = X.σ j' ≫ X.σ₀Iter i := by
+  simp [σ, σ₀Iter, ← Functor.map_comp, ← op_comp,
+    SimplexCategory.σ_σ₀Iter' i j j']
+
+@[reassoc (attr := simp)]
+lemma σ₀Iter_δ₀Iter (i : ℕ) {n m : ℕ} (hi : n + i = m := by lia) :
+    X.σ₀Iter i hi ≫ X.δ₀Iter i hi = 𝟙 _ := by
+  simp [σ₀Iter, δ₀Iter, ← Functor.map_comp, ← op_comp]
+
+instance (i : ℕ) {n m : ℕ} (hi : n + i = m) : Mono (X.σ₀Iter i hi) :=
+  mono_of_mono_fac (X.σ₀Iter_δ₀Iter i hi)
+
+instance (i : ℕ) {n m : ℕ} (hi : n + i = m) : Epi (X.δ₀Iter i hi) :=
+  epi_of_epi_fac (X.σ₀Iter_δ₀Iter i hi)
+
+namespace Augmented
+
+variable (Y : Augmented C)
+
+set_option backward.defeqAttrib.useBackward true in
+@[reassoc (attr := simp)]
+lemma δ₀Iter_hom_app {n m : ℕ} (i : ℕ) (hi : n + i = m := by lia) :
+    dsimp% Y.left.δ₀Iter i hi ≫ Y.hom.app (op ⦋n⦌) = Y.hom.app (op ⦋m⦌) := by
+  simpa only [Functor.id_obj, Functor.const_obj_obj, Functor.const_obj_map, Category.comp_id] using!
+    Y.hom.naturality (SimplexCategory.δ₀Iter i hi).op
+
+set_option backward.defeqAttrib.useBackward true in
+@[reassoc (attr := simp)]
+lemma σ₀Iter_hom_app {n m : ℕ} (i : ℕ) (hi : n + i = m := by lia) :
+    dsimp% Y.left.σ₀Iter i hi ≫ Y.hom.app (op ⦋m⦌) = Y.hom.app (op ⦋n⦌) := by
+  simpa only [Functor.id_obj, Functor.const_obj_obj, Functor.const_obj_map, Category.comp_id] using!
+    Y.hom.naturality (SimplexCategory.σ₀Iter i hi).op
+
+end Augmented
+
+end CategoryTheory.SimplicialObject
+```

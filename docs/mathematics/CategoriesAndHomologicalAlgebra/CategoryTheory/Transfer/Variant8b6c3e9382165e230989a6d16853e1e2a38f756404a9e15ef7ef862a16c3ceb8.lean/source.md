@@ -1,0 +1,201 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Transfer.Variant8b6c3e9382165e230989a6d16853e1e2a38f756404a9e15ef7ef862a16c3ceb8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eecb896f223a066dcab942ab288e0636cff813fc` · SHA-256 `ac0e84885ab37f398dfbd25ad4f1ad025f7d356008cb25d5132ebb2bc9b84630`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.HasKernels.Variant530c864e1090626fbf88496a3b15f900d4dd3fa74ce375c0fc8d23a87405ca01","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"530c864e1090626fbf88496a3b15f900d4dd3fa74ce375c0fc8d23a87405ca01","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.HasKernels.Variant530c864e1090626fbf88496a3b15f900d4dd3fa74ce375c0fc8d23a87405ca01","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"530c864e1090626fbf88496a3b15f900d4dd3fa74ce375c0fc8d23a87405ca01","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Abelian/Transfer.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Kim Morrison. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kim Morrison
+-/
+import Mathlib.CategoryTheory.Abelian.Basic
+import Mathlib.CategoryTheory.Adjunction.Limits
+import Mathlib.CategoryTheory.Limits.Preserves.Shapes.AbelianImages
+import Mathlib.CategoryTheory.Preadditive.Transfer
+
+/-!
+# Transferring "abelian-ness" across a functor
+
+If `C` is an additive category, `D` is an abelian category,
+we have `F : C ⥤ D` `G : D ⥤ C` (both preserving zero morphisms),
+`G` is left exact (that is, preserves finite limits),
+and further we have `adj : G ⊣ F` and `i : F ⋙ G ≅ 𝟭 C`,
+then `C` is also abelian.
+
+A particular example is the transfer of `Abelian` instances from a category `C` to `ShrinkHoms C`;
+see `ShrinkHoms.abelian`. In this case, we also transfer the `Preadditive` structure.
+
+See <https://stacks.math.columbia.edu/tag/03A3>
+
+## Notes
+The hypotheses, following the statement from the Stacks project,
+may appear surprising: we don't ask that the counit of the adjunction is an isomorphism,
+but just that we have some potentially unrelated isomorphism `i : F ⋙ G ≅ 𝟭 C`.
+
+However Lemma A1.1.1 from [Elephant] shows that in this situation the counit itself
+must be an isomorphism, and thus that `C` is a reflective subcategory of `D`.
+
+Someone may like to formalize that lemma, and restate this theorem in terms of `Reflective`.
+(That lemma has a nice string diagrammatic proof that holds in any bicategory.)
+-/
+
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.HasKernels.Variant530c864e1090626fbf88496a3b15f900d4dd3fa74ce375c0fc8d23a87405ca01
+
+noncomputable section
+
+namespace CategoryTheory
+
+open Limits
+
+universe v₁ v₂ u₁ u₂
+
+namespace AbelianOfAdjunction
+
+variable {C : Type u₁} [Category.{v₁} C] [Preadditive C]
+variable {D : Type u₂} [Category.{v₂} D] [Abelian D]
+variable (F : C ⥤ D)
+variable (G : D ⥤ C) [Functor.PreservesZeroMorphisms G]
+
+/-- No point making this an instance, as it requires `i`. -/
+theorem hasKernels [PreservesFiniteLimits G] (i : F ⋙ G ≅ 𝟭 C) : HasKernels C :=
+  { has_limit := fun f => by
+      have := NatIso.naturality_1 i f
+      simp? at this says
+        simp only [Functor.id_obj, Functor.comp_obj, Functor.comp_map, Functor.id_map] at this
+      rw [← this]
+      haveI : HasKernel (G.map (F.map f) ≫ i.hom.app _) := Limits.hasKernel_comp_mono _ _
+      apply Limits.hasKernel_iso_comp }
+
+/-- No point making this an instance, as it requires `i` and `adj`. -/
+theorem hasCokernels (i : F ⋙ G ≅ 𝟭 C) (adj : G ⊣ F) : HasCokernels C :=
+  { has_colimit := fun f => by
+      have : PreservesColimits G := adj.leftAdjoint_preservesColimits
+      have := NatIso.naturality_1 i f
+      simp? at this says
+        simp only [Functor.id_obj, Functor.comp_obj, Functor.comp_map, Functor.id_map] at this
+      rw [← this]
+      haveI : HasCokernel (G.map (F.map f) ≫ i.hom.app _) := Limits.hasCokernel_comp_iso _ _
+      apply Limits.hasCokernel_epi_comp }
+
+end AbelianOfAdjunction
+
+open AbelianOfAdjunction
+
+/-- If `C` is an additive category, `D` is an abelian category,
+we have `F : C ⥤ D` `G : D ⥤ C` (with `G` preserving zero morphisms),
+`G` is left exact (that is, preserves finite limits),
+and further we have `adj : G ⊣ F` and `i : F ⋙ G ≅ 𝟭 C`,
+then `C` is also abelian. -/
+@[stacks 03A3]
+def abelianOfAdjunction {C : Type u₁} [Category.{v₁} C] [Preadditive C] [HasFiniteProducts C]
+    {D : Type u₂} [Category.{v₂} D] [Abelian D] (F : C ⥤ D)
+    (G : D ⥤ C) [Functor.PreservesZeroMorphisms G] [PreservesFiniteLimits G] (i : F ⋙ G ≅ 𝟭 C)
+    (adj : G ⊣ F) : Abelian C := by
+  haveI := hasKernels F G i
+  haveI := hasCokernels F G i adj
+  have : ∀ {X Y : C} (f : X ⟶ Y), IsIso (Abelian.coimageImageComparison f) := by
+    intro X Y f
+    let arrowIso : Arrow.mk (G.map (F.map f)) ≅ Arrow.mk f :=
+      ((Functor.mapArrowFunctor _ _).mapIso i).app (Arrow.mk f)
+    have : PreservesColimits G := adj.leftAdjoint_preservesColimits
+    let iso : Arrow.mk (G.map (Abelian.coimageImageComparison (F.map f))) ≅
+        Arrow.mk (Abelian.coimageImageComparison f) :=
+      Abelian.PreservesCoimageImageComparison.iso G (F.map f) ≪≫
+        Abelian.coimageImageComparisonFunctor.mapIso arrowIso
+    rw [Arrow.isIso_iff_isIso_of_isIso iso.inv]
+    infer_instance
+  apply Abelian.ofCoimageImageComparisonIsIso
+
+/-- If `C` is an additive category equivalent to an abelian category `D`
+via a functor that preserves zero morphisms,
+then `C` is also abelian.
+-/
+def abelianOfEquivalence {C : Type u₁} [Category.{v₁} C] [Preadditive C] [HasFiniteProducts C]
+    {D : Type u₂} [Category.{v₂} D] [Abelian D] (F : C ⥤ D)
+    [F.IsEquivalence] : Abelian C :=
+  abelianOfAdjunction F F.inv F.asEquivalence.unitIso.symm F.asEquivalence.symm.toAdjunction
+
+namespace ShrinkHoms
+
+universe w
+
+variable {C : Type*} [Category C] [LocallySmall.{w} C]
+
+section Preadditive
+
+variable [Preadditive C]
+
+variable (C)
+
+instance preadditive : Preadditive.{w} (ShrinkHoms C) :=
+  .ofFullyFaithful (equivalence C).fullyFaithfulInverse
+
+instance : (inverse C).Additive :=
+  (equivalence C).symm.fullyFaithfulFunctor.additive_ofFullyFaithful
+
+instance : (functor C).Additive :=
+  (equivalence C).symm.additive_inverse_of_FullyFaithful
+
+instance hasLimitsOfShape (J : Type*) [Category J]
+    [HasLimitsOfShape J C] : HasLimitsOfShape.{_, _, w} J (ShrinkHoms C) :=
+  Adjunction.hasLimitsOfShape_of_equivalence (inverse C)
+
+instance hasFiniteLimits [HasFiniteLimits C] :
+    HasFiniteLimits.{w} (ShrinkHoms C) := ⟨fun _ => inferInstance⟩
+
+end Preadditive
+
+variable (C) in
+noncomputable instance abelian [Abelian C] :
+    Abelian.{w} (ShrinkHoms C) := abelianOfEquivalence (inverse C)
+
+end ShrinkHoms
+
+
+namespace AsSmall
+
+universe w v u
+
+variable {C : Type u} [Category.{v} C]
+
+section Preadditive
+
+variable [Preadditive C]
+
+variable (C)
+
+instance preadditive : Preadditive (AsSmall.{w} C) :=
+  .ofFullyFaithful equiv.fullyFaithfulInverse
+
+instance : (down (C := C)).Additive :=
+  equiv.symm.fullyFaithfulFunctor.additive_ofFullyFaithful
+
+instance : (up (C := C)).Additive :=
+  equiv.symm.additive_inverse_of_FullyFaithful
+
+instance hasLimitsOfShape (J : Type*) [Category J]
+    [HasLimitsOfShape J C] : HasLimitsOfShape.{_, _, max u v w} J (AsSmall.{w} C) :=
+  Adjunction.hasLimitsOfShape_of_equivalence equiv.inverse
+
+instance hasFiniteLimits [HasFiniteLimits C] :
+    HasFiniteLimits (AsSmall.{w} C) := ⟨fun _ => inferInstance⟩
+
+end Preadditive
+
+variable (C) in
+noncomputable instance abelian [Abelian C] :
+    Abelian (AsSmall.{w} C) := abelianOfEquivalence equiv.inverse
+
+end AsSmall
+
+end CategoryTheory
+```

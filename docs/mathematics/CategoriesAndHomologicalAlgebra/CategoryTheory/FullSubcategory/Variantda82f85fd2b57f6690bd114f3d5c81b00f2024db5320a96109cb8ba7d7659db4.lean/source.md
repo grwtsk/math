@@ -1,0 +1,163 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.FullSubcategory.Variantda82f85fd2b57f6690bd114f3d5c81b00f2024db5320a96109cb8ba7d7659db4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `718637b3e08b0181514ab6bb8183a82bce4f33dc` · SHA-256 `f3e5d2840d1420f3f9d8841b6929ae4de9b07bb90435091f41d7b620d10419c0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ClosedUnderLimitsOfShape.Variant24370f0683b6b24584e5fce2abe94216534151775832c167d3b653b03efc3ed9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"24370f0683b6b24584e5fce2abe94216534151775832c167d3b653b03efc3ed9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.ClosedUnderLimitsOfShape.Variant24370f0683b6b24584e5fce2abe94216534151775832c167d3b653b03efc3ed9","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"24370f0683b6b24584e5fce2abe94216534151775832c167d3b653b03efc3ed9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/CategoryTheory/Limits/FullSubcategory.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+import Mathlib.CategoryTheory.Limits.Creates
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ClosedUnderLimitsOfShape.Variant24370f0683b6b24584e5fce2abe94216534151775832c167d3b653b03efc3ed9
+
+#align_import category_theory.limits.full_subcategory from "leanprover-community/mathlib"@"fe5e4ce6c72d96d77ad40ac832a6e7f8040990bc"
+
+/-!
+# Limits in full subcategories
+
+We introduce the notion of a property closed under taking limits and show that if `P` is closed
+under taking limits, then limits in `FullSubcategory P` can be constructed from limits in `C`.
+More precisely, the inclusion creates such limits.
+
+-/
+
+
+noncomputable section
+
+universe w' w v u
+
+open CategoryTheory
+
+namespace CategoryTheory.Limits
+
+/-- We say that a property is closed under limits of shape `J` if whenever all objects in a
+    `J`-shaped diagram have the property, any limit of this diagram also has the property. -/
+def ClosedUnderLimitsOfShape {C : Type u} [Category.{v} C] (J : Type w) [Category.{w'} J]
+    (P : C → Prop) : Prop :=
+  ∀ ⦃F : J ⥤ C⦄ ⦃c : Cone F⦄ (_hc : IsLimit c), (∀ j, P (F.obj j)) → P c.pt
+#align category_theory.limits.closed_under_limits_of_shape CategoryTheory.Limits.ClosedUnderLimitsOfShape
+
+/-- We say that a property is closed under colimits of shape `J` if whenever all objects in a
+    `J`-shaped diagram have the property, any colimit of this diagram also has the property. -/
+def ClosedUnderColimitsOfShape {C : Type u} [Category.{v} C] (J : Type w) [Category.{w'} J]
+    (P : C → Prop) : Prop :=
+  ∀ ⦃F : J ⥤ C⦄ ⦃c : Cocone F⦄ (_hc : IsColimit c), (∀ j, P (F.obj j)) → P c.pt
+#align category_theory.limits.closed_under_colimits_of_shape CategoryTheory.Limits.ClosedUnderColimitsOfShape
+
+section
+
+variable {C : Type u} [Category.{v} C] {J : Type w} [Category.{w'} J] {P : C → Prop}
+
+theorem ClosedUnderLimitsOfShape.limit (h : ClosedUnderLimitsOfShape J P) {F : J ⥤ C} [HasLimit F] :
+    (∀ j, P (F.obj j)) → P (limit F) :=
+  h (limit.isLimit _)
+#align category_theory.limits.closed_under_limits_of_shape.limit CategoryTheory.Limits.ClosedUnderLimitsOfShape.limit
+
+theorem ClosedUnderColimitsOfShape.colimit (h : ClosedUnderColimitsOfShape J P) {F : J ⥤ C}
+    [HasColimit F] : (∀ j, P (F.obj j)) → P (colimit F) :=
+  h (colimit.isColimit _)
+#align category_theory.limits.closed_under_colimits_of_shape.colimit CategoryTheory.Limits.ClosedUnderColimitsOfShape.colimit
+
+end
+
+section
+
+variable {J : Type w} [Category.{w'} J] {C : Type u} [Category.{v} C] {P : C → Prop}
+
+/-- If a `J`-shaped diagram in `FullSubcategory P` has a limit cone in `C` whose cone point lives
+    in the full subcategory, then this defines a limit in the full subcategory. -/
+def createsLimitFullSubcategoryInclusion' (F : J ⥤ FullSubcategory P)
+    {c : Cone (F ⋙ fullSubcategoryInclusion P)} (hc : IsLimit c) (h : P c.pt) :
+    CreatesLimit F (fullSubcategoryInclusion P) :=
+  createsLimitOfFullyFaithfulOfIso' hc ⟨_, h⟩ (Iso.refl _)
+#align category_theory.limits.creates_limit_full_subcategory_inclusion' CategoryTheory.Limits.createsLimitFullSubcategoryInclusion'
+
+/-- If a `J`-shaped diagram in `FullSubcategory P` has a limit in `C` whose cone point lives in the
+    full subcategory, then this defines a limit in the full subcategory. -/
+def createsLimitFullSubcategoryInclusion (F : J ⥤ FullSubcategory P)
+    [HasLimit (F ⋙ fullSubcategoryInclusion P)] (h : P (limit (F ⋙ fullSubcategoryInclusion P))) :
+    CreatesLimit F (fullSubcategoryInclusion P) :=
+  createsLimitFullSubcategoryInclusion' F (limit.isLimit _) h
+#align category_theory.limits.creates_limit_full_subcategory_inclusion CategoryTheory.Limits.createsLimitFullSubcategoryInclusion
+
+/-- If a `J`-shaped diagram in `FullSubcategory P` has a colimit cocone in `C` whose cocone point
+    lives in the full subcategory, then this defines a colimit in the full subcategory. -/
+def createsColimitFullSubcategoryInclusion' (F : J ⥤ FullSubcategory P)
+    {c : Cocone (F ⋙ fullSubcategoryInclusion P)} (hc : IsColimit c) (h : P c.pt) :
+    CreatesColimit F (fullSubcategoryInclusion P) :=
+  createsColimitOfFullyFaithfulOfIso' hc ⟨_, h⟩ (Iso.refl _)
+#align category_theory.limits.creates_colimit_full_subcategory_inclusion' CategoryTheory.Limits.createsColimitFullSubcategoryInclusion'
+
+/-- If a `J`-shaped diagram in `FullSubcategory P` has a colimit in `C` whose cocone point lives in
+    the full subcategory, then this defines a colimit in the full subcategory. -/
+def createsColimitFullSubcategoryInclusion (F : J ⥤ FullSubcategory P)
+    [HasColimit (F ⋙ fullSubcategoryInclusion P)]
+    (h : P (colimit (F ⋙ fullSubcategoryInclusion P))) :
+    CreatesColimit F (fullSubcategoryInclusion P) :=
+  createsColimitFullSubcategoryInclusion' F (colimit.isColimit _) h
+#align category_theory.limits.creates_colimit_full_subcategory_inclusion CategoryTheory.Limits.createsColimitFullSubcategoryInclusion
+
+/-- If `P` is closed under limits of shape `J`, then the inclusion creates such limits. -/
+def createsLimitFullSubcategoryInclusionOfClosed (h : ClosedUnderLimitsOfShape J P)
+    (F : J ⥤ FullSubcategory P) [HasLimit (F ⋙ fullSubcategoryInclusion P)] :
+    CreatesLimit F (fullSubcategoryInclusion P) :=
+  createsLimitFullSubcategoryInclusion F (h.limit fun j => (F.obj j).property)
+#align category_theory.limits.creates_limit_full_subcategory_inclusion_of_closed CategoryTheory.Limits.createsLimitFullSubcategoryInclusionOfClosed
+
+/-- If `P` is closed under limits of shape `J`, then the inclusion creates such limits. -/
+def createsLimitsOfShapeFullSubcategoryInclusion (h : ClosedUnderLimitsOfShape J P)
+    [HasLimitsOfShape J C] : CreatesLimitsOfShape J (fullSubcategoryInclusion P)
+    where CreatesLimit := @fun F => createsLimitFullSubcategoryInclusionOfClosed h F
+#align category_theory.limits.creates_limits_of_shape_full_subcategory_inclusion CategoryTheory.Limits.createsLimitsOfShapeFullSubcategoryInclusion
+
+theorem hasLimit_of_closed_under_limits (h : ClosedUnderLimitsOfShape J P)
+    (F : J ⥤ FullSubcategory P) [HasLimit (F ⋙ fullSubcategoryInclusion P)] : HasLimit F :=
+  have : CreatesLimit F (fullSubcategoryInclusion P) :=
+    createsLimitFullSubcategoryInclusionOfClosed h F
+  hasLimit_of_created F (fullSubcategoryInclusion P)
+#align category_theory.limits.has_limit_of_closed_under_limits CategoryTheory.Limits.hasLimit_of_closed_under_limits
+
+theorem hasLimitsOfShape_of_closed_under_limits (h : ClosedUnderLimitsOfShape J P)
+    [HasLimitsOfShape J C] : HasLimitsOfShape J (FullSubcategory P) :=
+  { has_limit := fun F => hasLimit_of_closed_under_limits h F }
+#align category_theory.limits.has_limits_of_shape_of_closed_under_limits CategoryTheory.Limits.hasLimitsOfShape_of_closed_under_limits
+
+/-- If `P` is closed under colimits of shape `J`, then the inclusion creates such colimits. -/
+def createsColimitFullSubcategoryInclusionOfClosed (h : ClosedUnderColimitsOfShape J P)
+    (F : J ⥤ FullSubcategory P) [HasColimit (F ⋙ fullSubcategoryInclusion P)] :
+    CreatesColimit F (fullSubcategoryInclusion P) :=
+  createsColimitFullSubcategoryInclusion F (h.colimit fun j => (F.obj j).property)
+#align category_theory.limits.creates_colimit_full_subcategory_inclusion_of_closed CategoryTheory.Limits.createsColimitFullSubcategoryInclusionOfClosed
+
+/-- If `P` is closed under colimits of shape `J`, then the inclusion creates such colimits. -/
+def createsColimitsOfShapeFullSubcategoryInclusion (h : ClosedUnderColimitsOfShape J P)
+    [HasColimitsOfShape J C] : CreatesColimitsOfShape J (fullSubcategoryInclusion P)
+    where CreatesColimit := @fun F => createsColimitFullSubcategoryInclusionOfClosed h F
+#align category_theory.limits.creates_colimits_of_shape_full_subcategory_inclusion CategoryTheory.Limits.createsColimitsOfShapeFullSubcategoryInclusion
+
+theorem hasColimit_of_closed_under_colimits (h : ClosedUnderColimitsOfShape J P)
+    (F : J ⥤ FullSubcategory P) [HasColimit (F ⋙ fullSubcategoryInclusion P)] : HasColimit F :=
+  have : CreatesColimit F (fullSubcategoryInclusion P) :=
+    createsColimitFullSubcategoryInclusionOfClosed h F
+  hasColimit_of_created F (fullSubcategoryInclusion P)
+#align category_theory.limits.has_colimit_of_closed_under_colimits CategoryTheory.Limits.hasColimit_of_closed_under_colimits
+
+theorem hasColimitsOfShape_of_closed_under_colimits (h : ClosedUnderColimitsOfShape J P)
+    [HasColimitsOfShape J C] : HasColimitsOfShape J (FullSubcategory P) :=
+  { has_colimit := fun F => hasColimit_of_closed_under_colimits h F }
+#align category_theory.limits.has_colimits_of_shape_of_closed_under_colimits CategoryTheory.Limits.hasColimitsOfShape_of_closed_under_colimits
+
+end
+
+end CategoryTheory.Limits
+```

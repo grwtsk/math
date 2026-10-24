@@ -1,0 +1,116 @@
+# preservesCoequalizersOfPreservesPushoutsAndBinaryCoproducts
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:1571c5ea0742549ecb188b62b928a9861204f59e8087df8f89bd15264633d912",
+  "kind": "def",
+  "lexical_name": "preservesCoequalizersOfPreservesPushoutsAndBinaryCoproducts",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "preservescoequalizersofpreservespushoutsandbinarycoproducts--84c19a03228b30bc212c6de4",
+  "source": {
+    "blob": "4cdebc3850962465a1475031bafc71942b1fc196",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 236,
+    "line": 202,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Equalizers/Variantdd186da56bc576c8f80b46cefafa8274dbb76ed17d821f516eb6c151583ec3ff.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:84c19a03228b30bc212c6de4fdd6f9b385afd06c75975af9321ea092475fa70b",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Equalizers/Variantdd186da56bc576c8f80b46cefafa8274dbb76ed17d821f516eb6c151583ec3ff.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:1571c5ea0742549ecb188b62b928a9861204f59e8087df8f89bd15264633d912`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 202–236.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def preservesCoequalizersOfPreservesPushoutsAndBinaryCoproducts [HasBinaryCoproducts C]
+    [HasPushouts C] [PreservesColimitsOfShape (Discrete WalkingPair) G]
+    [PreservesColimitsOfShape WalkingSpan G] : PreservesColimitsOfShape WalkingParallelPair G :=
+  ⟨fun {K} =>
+    preservesColimitOfPreservesColimitCocone (coequalizerCoconeIsColimit K) <|
+      { desc := fun c => by
+          refine' (PreservesPushout.iso _ _ _).inv ≫ pushout.desc _ _ _
+          · exact c.ι.app WalkingParallelPair.one
+          · exact c.ι.app WalkingParallelPair.one
+          apply (mapIsColimitOfPreservesOfIsColimit G _ _ (coprodIsCoprod _ _)).hom_ext
+          rintro (_ | _)
+          · simp only [BinaryCofan.ι_app_left, BinaryCofan.mk_inl, Category.assoc, ←
+              G.map_comp_assoc, coprod.inl_desc]
+          · simp only [BinaryCofan.ι_app_right, BinaryCofan.mk_inr, Category.assoc, ←
+              G.map_comp_assoc, coprod.inr_desc]
+            exact
+              (c.ι.naturality WalkingParallelPairHom.left).trans
+                (c.ι.naturality WalkingParallelPairHom.right).symm
+        fac := fun c j => by
+          rcases j with (_ | _) <;>
+            simp only [Functor.mapCocone_ι_app, Cocone.ofCofork_ι, Category.id_comp,
+              eqToHom_refl, Category.assoc, Functor.map_comp, Cofork.ofπ_ι_app, pushout.inl_desc,
+              PreservesPushout.inl_iso_inv_assoc]
+          exact (c.ι.naturality WalkingParallelPairHom.left).trans (Category.comp_id _)
+        uniq := fun s m h => by
+          rw [Iso.eq_inv_comp]
+          have := h WalkingParallelPair.one
+          dsimp [coequalizerCocone] at this
+          ext <;>
+            simp only [PreservesPushout.inl_iso_hom_assoc, Category.id_comp, pushout.inl_desc,
+              pushout.inr_desc, PreservesPushout.inr_iso_hom_assoc, ← pushoutInl_eq_pushout_inr, ←
+              this] }⟩
+#align category_theory.limits.preserves_coequalizers_of_preserves_pushouts_and_binary_coproducts CategoryTheory.Limits.preservesCoequalizersOfPreservesPushoutsAndBinaryCoproducts
+
+end CategoryTheory.Limits
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Equalizers/Variantdd186da56bc576c8f80b46cefafa8274dbb76ed17d821f516eb6c151583ec3ff.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Equalizers/Variantdd186da56bc576c8f80b46cefafa8274dbb76ed17d821f516eb6c151583ec3ff.lean#L202).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4cdebc3850962465a1475031bafc71942b1fc196` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

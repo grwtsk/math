@@ -1,0 +1,89 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Associator.Variant0764cc0a2fef2d6fcbe4f31824b823ae8aa47fb30e9d0ce711f9f4e1fcb9db9c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0ed74378c862977531ced98cff7dd3bb202c6b99` · SHA-256 `e7b23dfb8c41e325f4acc9bf5256ce9b4f567953898e7adb091db1053723bba6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Associator.Variantf5660eedb3e44defac15c7dee0a3239c314aee14325710ce05e04f89a66a82f7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f5660eedb3e44defac15c7dee0a3239c314aee14325710ce05e04f89a66a82f7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.Associator.Variantf5660eedb3e44defac15c7dee0a3239c314aee14325710ce05e04f89a66a82f7","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"f5660eedb3e44defac15c7dee0a3239c314aee14325710ce05e04f89a66a82f7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Products/Associator.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2017 Kim Morrison. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Stephen Morgan, Kim Morrison
+-/
+import Mathlib.CategoryTheory.Products.Basic
+
+/-!
+The associator functor `((C × D) × E) ⥤ (C × (D × E))` and its inverse form an equivalence.
+-/
+
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Associator.Variantf5660eedb3e44defac15c7dee0a3239c314aee14325710ce05e04f89a66a82f7
+
+universe v₁ v₂ v₃ v₄ u₁ u₂ u₃ u₄
+
+open CategoryTheory
+
+namespace CategoryTheory.prod
+
+variable (C : Type u₁) [Category.{v₁} C] (D : Type u₂) [Category.{v₂} D] (E : Type u₃)
+  [Category.{v₃} E]
+
+/-- The associator functor `(C × D) × E ⥤ C × (D × E)`.
+-/
+@[simps]
+def associator : (C × D) × E ⥤ C × D × E where
+  obj X := (X.1.1, (X.1.2, X.2))
+  map := @fun _ _ f => (f.1.1, (f.1.2, f.2))
+
+/-- The inverse associator functor `C × (D × E) ⥤ (C × D) × E `.
+-/
+@[simps]
+def inverseAssociator : C × D × E ⥤ (C × D) × E where
+  obj X := ((X.1, X.2.1), X.2.2)
+  map := @fun _ _ f => ((f.1, f.2.1), f.2.2)
+
+/-- The equivalence of categories expressing associativity of products of categories.
+-/
+@[simps]
+def associativity : (C × D) × E ≌ C × D × E where
+  functor := associator C D E
+  inverse := inverseAssociator C D E
+  unitIso := Iso.refl _
+  counitIso := Iso.refl _
+
+instance associatorIsEquivalence : (associator C D E).IsEquivalence :=
+  (by infer_instance : (associativity C D E).functor.IsEquivalence)
+
+instance inverseAssociatorIsEquivalence : (inverseAssociator C D E).IsEquivalence :=
+  (by infer_instance : (associativity C D E).inverse.IsEquivalence)
+
+-- TODO pentagon natural transformation? ...satisfying?
+
+variable (A : Type u₄) [Category.{v₄} A]
+
+/-- The associator isomorphism is compatible with `prodFunctorToFunctorProd`. -/
+@[simps!]
+def prodFunctorToFunctorProdAssociator :
+    (associativity _ _ _).functor ⋙ ((𝟭 _).prod (prodFunctorToFunctorProd A D E) ⋙
+      (prodFunctorToFunctorProd A C (D × E))) ≅
+        (prodFunctorToFunctorProd A C D).prod (𝟭 _) ⋙ (prodFunctorToFunctorProd A (C × D) E) ⋙
+          (associativity C D E).congrRight.functor :=
+  Iso.refl _
+
+/-- The associator isomorphism is compatible with `functorProdToProdFunctor`. -/
+@[simps!]
+def functorProdToProdFunctorAssociator :
+    (associativity _ _ _).congrRight.functor ⋙ functorProdToProdFunctor A C (D × E) ⋙
+      (𝟭 _).prod (functorProdToProdFunctor A D E) ≅
+        functorProdToProdFunctor A (C × D) E ⋙ (functorProdToProdFunctor A C D).prod (𝟭 _) ⋙
+          (associativity _ _ _).functor :=
+  Iso.refl _
+
+end CategoryTheory.prod
+```

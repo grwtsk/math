@@ -1,0 +1,86 @@
+# Functor.ReflectsIsomorphisms
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:510b97e606d2e160da0459aad977652b6a5f1457f1e7dbee1795909a02d6af64",
+  "kind": "class",
+  "lexical_name": "Functor.ReflectsIsomorphisms",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "functor-reflectsisomorphisms--8a783d79c62e8a333b2bb96d",
+  "source": {
+    "blob": "afb7367c36c9cfcaf1de7706c045bdfa829202d2",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 38,
+    "line": 34,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant101371ced34ff9c9463dba5e9163ac30443c412c4927318ec4f42a8d0c72471c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:8a783d79c62e8a333b2bb96dbd6afdc4acb282a8a4305f377f2d24f4e84a350b",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant101371ced34ff9c9463dba5e9163ac30443c412c4927318ec4f42a8d0c72471c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `class` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:510b97e606d2e160da0459aad977652b6a5f1457f1e7dbee1795909a02d6af64`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 34–38.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+class Functor.ReflectsIsomorphisms (F : C ⥤ D) : Prop where
+  /-- For any `f`, if `F.map f` is an iso, then so was `f`. -/
+  reflects : ∀ {A B : C} (f : A ⟶ B) [IsIso (F.map f)], IsIso f
+
+/-- If `F` reflects isos and `F.map f` is an iso, then `f` is an iso. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant101371ced34ff9c9463dba5e9163ac30443c412c4927318ec4f42a8d0c72471c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant101371ced34ff9c9463dba5e9163ac30443c412c4927318ec4f42a8d0c72471c.lean#L34).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `afb7367c36c9cfcaf1de7706c045bdfa829202d2` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

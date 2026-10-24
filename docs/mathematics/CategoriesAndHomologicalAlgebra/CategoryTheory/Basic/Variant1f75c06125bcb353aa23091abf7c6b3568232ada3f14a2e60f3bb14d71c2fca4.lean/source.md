@@ -1,0 +1,124 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Basic.Variant1f75c06125bcb353aa23091abf7c6b3568232ada3f14a2e60f3bb14d71c2fca4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `02f5e3c72b25a8e4efec520a33e89330499a8c01` · SHA-256 `4d35c692f4448f386f2256f5e7d62c054a9d31b4a7d36dc2fbc193eaed090f89`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ExternalProductBifunctorCurried.Variant1676405b7d715e67a239d68434eb2d8f2e7268f58d341ca75a42a2649ad119cb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1676405b7d715e67a239d68434eb2d8f2e7268f58d341ca75a42a2649ad119cb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.ExternalProductBifunctorCurried.Variant1676405b7d715e67a239d68434eb2d8f2e7268f58d341ca75a42a2649ad119cb","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"1676405b7d715e67a239d68434eb2d8f2e7268f58d341ca75a42a2649ad119cb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/CategoryTheory/Monoidal/ExternalProduct/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Robin Carlier. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Robin Carlier
+-/
+module
+
+public import Mathlib.CategoryTheory.Monoidal.FunctorCategory
+public import Mathlib.CategoryTheory.Functor.Currying
+
+/-!
+# External product of diagrams in a monoidal category
+
+In a monoidal category `C`, given a pair of diagrams `K₁ : J₁ ⥤ C` and `K₂ : J₂ ⥤ C`, we
+introduce the external product `K₁ ⊠ K₂ : J₁ × J₂ ⥤ C` as the bifunctor `(j₁, j₂) ↦ K₁ j₁ ⊗ K₂ j₂`.
+The notation `- ⊠ -` is scoped to `MonoidalCategory.ExternalProduct`.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ExternalProductBifunctorCurried.Variant1676405b7d715e67a239d68434eb2d8f2e7268f58d341ca75a42a2649ad119cb
+
+@[expose] public section
+
+universe v₁ v₂ v₃ v₄ u₁ u₂ u₃ u₄
+
+namespace CategoryTheory.MonoidalCategory
+open CategoryTheory.Functor
+
+variable (J₁ : Type u₁) (J₂ : Type u₂) (C : Type u₃)
+    [Category.{v₁} J₁] [Category.{v₂} J₂] [Category.{v₃} C] [MonoidalCategory C]
+
+/-- The (curried version of the) external product bifunctor: given diagrams
+`K₁ : J₁ ⥤ C` and `K₂ : J₂ ⥤ C`, this is the bifunctor `j₁ ↦ j₂ ↦ K₁ j₁ ⊗ K₂ j₂`. -/
+@[simps!, implicit_reducible]
+def externalProductBifunctorCurried : (J₁ ⥤ C) ⥤ (J₂ ⥤ C) ⥤ J₁ ⥤ J₂ ⥤ C :=
+  (Functor.postcompose₂.obj <| (evaluation _ _).obj <| curriedTensor C).obj <| whiskeringLeft₂ C
+
+/-- The external product bifunctor: given diagrams
+`K₁ : J₁ ⥤ C` and `K₂ : J₂ ⥤ C`, this is the bifunctor `(j₁, j₂) ↦ K₁ j₁ ⊗ K₂ j₂`. -/
+@[simps!, implicit_reducible]
+def externalProductBifunctor : ((J₁ ⥤ C) × (J₂ ⥤ C)) ⥤ J₁ × J₂ ⥤ C :=
+  uncurry.obj <| (Functor.postcompose₂.obj <| uncurry).obj <|
+    externalProductBifunctorCurried J₁ J₂ C
+
+variable {J₁ J₂ C}
+/-- An abbreviation for the action of `externalProductBifunctor J₁ J₂ C` on objects. -/
+abbrev externalProduct (F₁ : J₁ ⥤ C) (F₂ : J₂ ⥤ C) :=
+  externalProductBifunctor J₁ J₂ C |>.obj (F₁, F₂)
+
+namespace ExternalProduct
+/-- Notation for `externalProduct`.
+Do `open scoped CategoryTheory.MonoidalCategory.ExternalProduct`
+to bring this notation in scope. -/
+scoped infixr:80 " ⊠ " => externalProduct
+
+end ExternalProduct
+
+open scoped ExternalProduct
+
+variable (J₁ J₂ C)
+
+set_option backward.isDefEq.respectTransparency.types false in
+set_option backward.defeqAttrib.useBackward true in
+/-- When both diagrams have the same source category, composing the external product with
+the diagonal gives the pointwise functor tensor product.
+Note that `(externalProductCompDiagIso _ _).app (F₁, F₂) : Functor.diag J₁ ⋙ F₁ ⊠ F₂ ≅ F₁ ⊗ F₂`
+type checks. -/
+@[simps!]
+def externalProductCompDiagIso :
+    externalProductBifunctor J₁ J₁ C ⋙ (whiskeringLeft _ _ _ |>.obj <| Functor.diag J₁) ≅
+    tensor (J₁ ⥤ C) :=
+  NatIso.ofComponents
+    (fun _ ↦ NatIso.ofComponents (fun _ ↦ Iso.refl _) (by simp [tensorHom_def]))
+    (fun _ ↦ by ext; simp [tensorHom_def])
+
+set_option backward.defeqAttrib.useBackward true in
+/-- When `C` is braided, there is an isomorphism `Prod.swap _ _ ⋙ F₁ ⊠ F₂ ≅ F₂ ⊠ F₁`, natural
+in both `F₁` and `F₂`.
+Note that `(externalProductSwap _ _ _).app (F₁, F₂) : Prod.swap _ _ ⋙ F₁ ⊠ F₂ ≅ F₂ ⊠ F₁`
+type checks. -/
+@[simps!]
+def externalProductSwap [BraidedCategory C] :
+    externalProductBifunctor J₁ J₂ C ⋙ (whiskeringLeft _ _ _ |>.obj <| Prod.swap _ _) ≅
+    Prod.swap _ _ ⋙ externalProductBifunctor J₂ J₁ C :=
+  NatIso.ofComponents
+    (fun _ ↦ NatIso.ofComponents (fun _ ↦ β_ _ _) (by simp [whisker_exchange]))
+    (fun _ ↦ by ext; simp [whisker_exchange])
+
+set_option backward.defeqAttrib.useBackward true in
+/-- A version of `externalProductSwap` phrased in terms of the curried functors. -/
+@[simps!]
+def externalProductFlip [BraidedCategory C] :
+    (Functor.postcompose₂.obj <| flipFunctor _ _ _).obj
+      (externalProductBifunctorCurried J₁ J₂ C) ≅
+    (externalProductBifunctorCurried J₂ J₁ C).flip :=
+  NatIso.ofComponents <| fun _ ↦ NatIso.ofComponents <|
+    fun _ ↦ NatIso.ofComponents <| fun _ ↦ NatIso.ofComponents (fun _ ↦ β_ _ _)
+
+section Composition
+
+variable {J₁ J₂ C} {I₁ : Type u₃} {I₂ : Type u₄} [Category.{v₃} I₁] [Category.{v₄} I₂]
+
+set_option backward.defeqAttrib.useBackward true in
+/-- Composing `F₁ × F₂` with `G₁ ⊠ G₂` is isomorphic to `(F₁ ⋙ G₁) ⊠ (F₂ ⋙ G₂)`. -/
+@[simps!]
+def prodCompExternalProduct (F₁ : I₁ ⥤ J₁) (G₁ : J₁ ⥤ C) (F₂ : I₂ ⥤ J₂) (G₂ : J₂ ⥤ C) :
+     F₁.prod F₂ ⋙ G₁ ⊠ G₂ ≅ (F₁ ⋙ G₁) ⊠ (F₂ ⋙ G₂) := NatIso.ofComponents (fun _ ↦ Iso.refl _)
+
+end Composition
+
+end CategoryTheory.MonoidalCategory
+```

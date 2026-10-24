@@ -1,0 +1,116 @@
+# Verification target: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.CommShift.Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d5a3df2df7eaeda7f8832f0503836f11fc69c2be",
+  "lexical_observation_count": 55,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/index.md) · [Full source](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d5a3df2df7eaeda7f8832f0503836f11fc69c2be`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [isoZero](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isozero--fc770882d7b0ff9ea0ccc820.md) | 52 | `declaration-track:fc770882d7b0ff9ea0ccc820a04b901ffd4b0f4504efcc274f06825e2e133707` |
+| 2 | `def` | [isoZero'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isozero--30dc3ce1475dc3ccf2fc1955.md) | 60 | `declaration-track:30dc3ce1475dc3ccf2fc195545e7a7d05bc03386c161031ad5beae6eed97e3f2` |
+| 3 | `lemma` | [isoZero'_eq_isoZero](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isozero-eq-isozero--9e4f4d12f3bcb60fe1ff4a3f.md) | 65 | `result-track:9e4f4d12f3bcb60fe1ff4a3f01edd1ab485a96c9ed764b9342d5051eed8f2a43` |
+| 4 | `def` | [isoAdd'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isoadd--5e3e46967b9ef8b94e2d5816.md) | 74 | `declaration-track:5e3e46967b9ef8b94e2d581680720fa96b626ff36fd577ac932d832143daa466` |
+| 5 | `def` | [isoAdd](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isoadd--5d47631d5f3f3d68298fed3a.md) | 84 | `declaration-track:5d47631d5f3f3d68298fed3a643d02fa9a07b84604ad1ca7441c0bfd37d02790` |
+| 6 | `lemma` | [isoAdd_hom_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isoadd-hom-app--86f5f2f77320a4bf6657bb4a.md) | 91 | `result-track:86f5f2f77320a4bf6657bb4a1dcea8fcf3c0967ba5bc5215be20e79c7981f1de` |
+| 7 | `lemma` | [isoAdd_inv_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isoadd-inv-app--d0e8aaf07d66e8afccf707b7.md) | 100 | `result-track:d0e8aaf07d66e8afccf707b7aa7cbe5ce0024c3453d1e871fed5e0d845ad04fa` |
+| 8 | `lemma` | [isoAdd'_isoZero](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isoadd-isozero--f3e97413716d9c8e93336cdc.md) | 108 | `result-track:f3e97413716d9c8e93336cdce682dba5d2f9eb1ebb6e6cb94bc726609b85a6a5` |
+| 9 | `lemma` | [isoZero_isoAdd'_](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isozero-isoadd--f67cc7bf3b4924076aed620e.md) | 115 | `result-track:f67cc7bf3b4924076aed620ec4a47ebd9aae111ffd2bd056253035e68383f4bd` |
+| 10 | `lemma` | [isoAdd'_assoc](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isoadd-assoc--1c54e3f9a06ba9d73adfaa87.md) | 125 | `result-track:1c54e3f9a06ba9d73adfaa872aafb06a7820b0b391add381e729308246d6b378` |
+| 11 | `class` | [CommShift](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshift--6a149fb79d6e8258ad7c8d35.md) | 147 | `declaration-track:6a149fb79d6e8258ad7c8d352cbf1559b28dd5eacd177e72e50ac57992febc05` |
+| 12 | `lemma` | [commShiftIso_hom_naturality](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshiftiso-hom-naturality--49c88e7dd753a1d61655a7c3.md) | 168 | `result-track:49c88e7dd753a1d61655a7c3bfb90b5b4676e734c1c42d50251f8c6f3bd294b2` |
+| 13 | `lemma` | [commShiftIso_inv_naturality](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshiftiso-inv-naturality--99f78e9eb1e1c1feaa0cef75.md) | 174 | `result-track:99f78e9eb1e1c1feaa0cef754ef05e676509c51ba6d1bd8092d8d9c623dc7940` |
+| 14 | `lemma` | [commShiftIso_zero'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshiftiso-zero--42ebe5f76a3f3f057b8d01b7.md) | 181 | `result-track:42ebe5f76a3f3f057b8d01b75b1a47a0d1a965506209b38a81a768f79b51c57f` |
+| 15 | `lemma` | [commShiftIso_add'](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshiftiso-add--57c9aa7497a5b32c5aa6cddc.md) | 185 | `result-track:57c9aa7497a5b32c5aa6cddcf2f2398e56bf44f6f6bde3afb750ef976a694283` |
+| 16 | `instance` | [id](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/id--b36bd5483780b11dc2c6ab34.md) | 196 | `declaration-track:b36bd5483780b11dc2c6ab342cbb500457c67dcf64b04179878b8a38c7d36630` |
+| 17 | `instance` | [comp](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/comp--3823bce7ec459a17c4cc0a73.md) | 200 | `declaration-track:3823bce7ec459a17c4cc0a739c71a2a306b8535475973a69b03cb3774aed7fbb` |
+| 18 | `lemma` | [map_shiftFunctorComm_hom_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/map-shiftfunctorcomm-hom-app--71da5b30a7a312c2fab4bb34.md) | 228 | `result-track:71da5b30a7a312c2fab4bb3492ec60892474cd6189f481528be69ccb21a4d285` |
+| 19 | `lemma` | [map_shiftFunctorCompIsoId_hom_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/map-shiftfunctorcompisoid-hom-app--afdc677119d2bd2d61ba497c.md) | 248 | `result-track:afdc677119d2bd2d61ba497ca6a95e3b7d74b8fce140f1557855ccb8388aa152` |
+| 20 | `lemma` | [map_shiftFunctorCompIsoId_inv_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/map-shiftfunctorcompisoid-inv-app--ba473c33d1d3f9fe9c61705a.md) | 261 | `result-track:ba473c33d1d3f9fe9c61705ac79cd38a118ecbccd64b2051ed9654012f24dbd7` |
+| 21 | `structure` | [CommShiftCore](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshiftcore--eff856dc26bbfe1127d2bee0.md) | 286 | `declaration-track:eff856dc26bbfe1127d2bee0b3564d1feed90a9a3bd34fd41dd4c0da65631c1a` |
+| 22 | `lemma` | [shift_app_comm](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/shift-app-comm--be06344ee02158f4c139fbd4.md) | 301 | `result-track:be06344ee02158f4c139fbd439db801abc46348f519d10518550dd737364ab65` |
+| 23 | `lemma` | [shift_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/shift-app--18d1d1ba52a5c0e0625250ec.md) | 307 | `result-track:18d1d1ba52a5c0e0625250ec33e2fb0e92b1914a61fb9e08a1a711539a5d7e2c` |
+| 24 | `lemma` | [app_shift](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/app-shift--6b0515261c1d1ad466d57427.md) | 313 | `result-track:6b0515261c1d1ad466d574270f9e6c8381525a61bb85668838e91c9a3059db0b` |
+| 25 | `lemma` | [zero](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/zero--272f83f4c2328216c2a19023.md) | 322 | `result-track:272f83f4c2328216c2a19023b14254981b1284bcfe97894d671c5b3a1b5eda6b` |
+| 26 | `lemma` | [add](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/add--0a3efdd3eca24448f5dec03c.md) | 329 | `result-track:0a3efdd3eca24448f5dec03c48fc090c759ce392633cd7529094fe1cdf71fcc8` |
+| 27 | `class` | [CommShift](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshift--3d614fcdd3da92fd43410f27.md) | 346 | `declaration-track:3d614fcdd3da92fd43410f27eee995c4b08ad616f8d4241085b16c3f52b4f449` |
+| 28 | `lemma` | [CommShift.of_core](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/commshift-of-core--791db29dc09b8c75aac6ed92.md) | 355 | `result-track:791db29dc09b8c75aac6ed9255ce6cb94bca900b864bc42849f80af5be8fc7b5` |
+| 29 | `lemma` | [shift_comm](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/shift-comm--e1d1e6cf0047a4bbe6ded3ed.md) | 362 | `result-track:e1d1e6cf0047a4bbe6ded3edf5496980a9522484fd265f4cef5ad42f8597d7c3` |
+| 30 | `lemma` | [shift_app_comm](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/shift-app-comm--50bd51ac2ae24fe127f4a2c9.md) | 368 | `result-track:50bd51ac2ae24fe127f4a2c95bf5130094383169c2a0bf9fbd162201529fab24` |
+| 31 | `lemma` | [shift_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/shift-app--dfc8dafaedf11d5978ffd88b.md) | 374 | `result-track:dfc8dafaedf11d5978ffd88b4d77181d95cde5abfd9bc0fb52d1e294cbaacd89` |
+| 32 | `lemma` | [app_shift](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/app-shift--aff8916466b776185e66f467.md) | 380 | `result-track:aff8916466b776185e66f4670f7434384f518691042775433d42adefd9ef6ae5` |
+| 33 | `instance` | [of_iso_inv](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/of-iso-inv--4c8c3b574fe85ef736dfae1f.md) | 389 | `declaration-track:4c8c3b574fe85ef736dfae1f875479bd93ffd81339c70e7d4c03ad342f00c94a` |
+| 34 | `instance` | [of_iso_symm](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/of-iso-symm--a6cc3486cd1d59fa28f513a2.md) | 396 | `declaration-track:a6cc3486cd1d59fa28f513a277630e8a78e9e6f405f0f32d2cd17243dd7ed436` |
+| 35 | `lemma` | [of_isIso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/of-isiso--35e5fce52f12a7d559f48da0.md) | 399 | `result-track:35e5fce52f12a7d559f48da09d2ae206390d03f67b865ac1e540065b42ff1d6b` |
+| 36 | `instance` | [id](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/id--8be14cfc7cfba699e788d3fe.md) | 406 | `declaration-track:8be14cfc7cfba699e788d3fe624c03c9719d6d6ec506bbf7c86dccba19a9281e` |
+| 37 | `instance` | [isoRefl_hom](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/isorefl-hom--0777581010b8af6ffb21b815.md) | 408 | `declaration-track:0777581010b8af6ffb21b815ede8291b2e2e0030e2ac7b08646563edc1f915e8` |
+| 38 | `instance` | [comp](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/comp--d7f44892e608e523b21be8c8.md) | 414 | `declaration-track:d7f44892e608e523b21be8c8a9c9d1137b8748afee5599918012886ecd2841c8` |
+| 39 | `instance` | [whiskerRight](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/whiskerright--3134b38257c93e8b886f353f.md) | 417 | `declaration-track:3134b38257c93e8b886f353f2803fa32d22add44a5239d245124884c4ea92fdc` |
+| 40 | `instance` | [whiskerLeft](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/whiskerleft--c1bddc0002f0818ca35d1736.md) | 425 | `declaration-track:c1bddc0002f0818ca35d17367088b2629f529b7a575e82abae7b03c002635528` |
+| 41 | `instance` | [associator](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/associator--60efb6e6cb22cdf8af653d08.md) | 428 | `declaration-track:60efb6e6cb22cdf8af653d08c74a688d788eb4516bedf3dd7b653ebf9f198de5` |
+| 42 | `instance` | [leftUnitor](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/leftunitor--d6a56b746e4165e548818e7e.md) | 430 | `declaration-track:d6a56b746e4165e548818e7eafae509f7255087687a6c60358b6abbb82c64556` |
+| 43 | `instance` | [rightUnitor](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/rightunitor--e7589e4e735fe63c540d4955.md) | 432 | `declaration-track:e7589e4e735fe63c540d49558eb45a57d9a9c139b3eee0d63f01e3329ea2dfed` |
+| 44 | `lemma` | [of_comp_faithful](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/of-comp-faithful--f8b0f797617c08a5a56ccffd.md) | 435 | `result-track:f8b0f797617c08a5a56ccffd8d55ed2d6b800cc2ab55e619f43207aed0baa7db` |
+| 45 | `def` | [ofIso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/ofiso--a4fb5f3195cdd3fe5160199e.md) | 462 | `declaration-track:a4fb5f3195cdd3fe5160199e698cde59fe6b1caf36adf76b020858613edd0c74` |
+| 46 | `lemma` | [ofIso_compatibility](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/ofiso-compatibility--ec95f555e84ed0504c32ac09.md) | 476 | `result-track:ec95f555e84ed0504c32ac096b68cfda5330d8a4c721f5a43639840f2c490f27` |
+| 47 | `def` | [ofHasShiftOfFullyFaithful](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/ofhasshiftoffullyfaithful--b01e07b82c2be3b850a50997.md) | 502 | `declaration-track:b01e07b82c2be3b850a50997343a0ee16dcc7832551bd129f45b9b9246d81aee` |
+| 48 | `lemma` | [shiftFunctorIso_ofHasShiftOfFullyFaithful](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/shiftfunctoriso-ofhasshiftoffullyfaithful--21b4e7e851261fe5707a297a.md) | 517 | `result-track:21b4e7e851261fe5707a297a5182fe95bb6f706a81ab49537c74ec386080b433` |
+| 49 | `lemma` | [map_shiftFunctorComm](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/map-shiftfunctorcomm--f49e751a0255999a45ee2746.md) | 526 | `result-track:f49e751a0255999a45ee274653d47dcc86bc8fa9ee095299335e3c8fe146783a` |
+| 50 | `def` | [iso](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/iso--2d8a9619ee1cd4a3d345c392.md) | 546 | `declaration-track:2d8a9619ee1cd4a3d345c3922f6fca179fdc72319366e14b746086b5ce03a8d9` |
+| 51 | `lemma` | [map_iso_hom_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/map-iso-hom-app--33882ff7f4a03ebd3110f176.md) | 553 | `result-track:33882ff7f4a03ebd3110f17665e6edc4ef47126c00ee835ad2bedf28ae357814` |
+| 52 | `lemma` | [map_iso_inv_app](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/map-iso-inv-app--9eed242c61ae497765b28396.md) | 562 | `result-track:9eed242c61ae497765b28396109f85f7f9a3d18941e885fd00c4d6470fff0448` |
+| 53 | `def` | [ofComp](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/ofcomp--94190f887a753e50ea706398.md) | 577 | `declaration-track:94190f887a753e50ea706398ac02c927d36bd0ebcb274f11ba2d1cc5a5fd8b18` |
+| 54 | `lemma` | [ofComp_compatibility](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/ofcomp-compatibility--89c5b4d4b5d3809f4900c11b.md) | 594 | `result-track:89c5b4d4b5d3809f4900c11b912fb92ed39837b1677ef8f327473ec6f1ebd509` |
+| 55 | `lemma` | [NatTrans.CommShift.verticalComposition](../../../../../mathematics/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Varianta1e39db6b22c2281758f552fc94ca724d39d4b41605ef65f5cfbf3fd37c86c6d.lean/declarations/nattrans-commshift-verticalcomposition--a1f020286465d6955cf58f4b.md) | 629 | `result-track:a1f020286465d6955cf58f4bf38fc5bd55389742584cc626042efe2c20b4e8cd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

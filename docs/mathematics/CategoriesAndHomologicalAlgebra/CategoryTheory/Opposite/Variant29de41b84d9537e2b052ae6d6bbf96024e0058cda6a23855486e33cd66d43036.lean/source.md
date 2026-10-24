@@ -1,0 +1,105 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Opposite.Variant29de41b84d9537e2b052ae6d6bbf96024e0058cda6a23855486e33cd66d43036
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `720a90a06b406f02aed9f1ec7c844cd83efe96f7` · SHA-256 `256857d2254dcbc9bd8feec6b11b9a5bd27dce67d13973d84e4d0f845ae411fb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ProjectiveSeparator.Variant173b14a90086f0b6dbd28e2b338d67145d32ac26a5c983f4a29351bfa3e1c08a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"173b14a90086f0b6dbd28e2b338d67145d32ac26a5c983f4a29351bfa3e1c08a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.ProjectiveSeparator.Variant173b14a90086f0b6dbd28e2b338d67145d32ac26a5c983f4a29351bfa3e1c08a","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"173b14a90086f0b6dbd28e2b338d67145d32ac26a5c983f4a29351bfa3e1c08a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/CategoryTheory/Abelian/GrothendieckCategory/ModuleEmbedding/Opposite.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Markus Himmel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+import Mathlib.CategoryTheory.Abelian.Yoneda
+import Mathlib.CategoryTheory.Generator.Abelian
+import Mathlib.CategoryTheory.Abelian.GrothendieckCategory.EnoughInjectives
+
+/-!
+# Embedding opposites of Grothendieck categories
+
+If `C` is Grothendieck abelian and `F : D ⥤ Cᵒᵖ` is a functor from a small category, we construct
+an object `G : Cᵒᵖ` such that `preadditiveCoyonedaObj G : Cᵒᵖ ⥤ ModuleCat (End G)ᵐᵒᵖ` is faithful
+and exact and its precomposition with `F` is full if `F` is.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.ProjectiveSeparator.Variant173b14a90086f0b6dbd28e2b338d67145d32ac26a5c983f4a29351bfa3e1c08a
+
+universe v u
+
+open CategoryTheory Limits Opposite ZeroObject
+
+namespace CategoryTheory.Abelian.IsGrothendieckAbelian
+
+variable {C : Type u} [Category.{v} C] {D : Type v} [SmallCategory D] (F : D ⥤ Cᵒᵖ)
+
+namespace OppositeModuleEmbedding
+
+variable [Abelian C] [IsGrothendieckAbelian.{v} C]
+
+variable (C) in
+private noncomputable def projectiveSeparator : Cᵒᵖ :=
+  (has_projective_separator (coseparator Cᵒᵖ) (isCoseparator_coseparator Cᵒᵖ)).choose
+
+private instance : Projective (projectiveSeparator C) :=
+  (has_projective_separator (coseparator Cᵒᵖ) (isCoseparator_coseparator Cᵒᵖ)).choose_spec.1
+
+private theorem isSeparator_projectiveSeparator : IsSeparator (projectiveSeparator C) :=
+  (has_projective_separator (coseparator Cᵒᵖ) (isCoseparator_coseparator Cᵒᵖ)).choose_spec.2
+
+private noncomputable def generator : Cᵒᵖ :=
+  ∐ (fun (X : D) => ∐ fun (_ : projectiveSeparator C ⟶ F.obj X) => projectiveSeparator C)
+
+private theorem exists_epi (X : D) : ∃ f : generator F ⟶ F.obj X, Epi f := by
+  classical
+  refine ⟨Sigma.desc (Pi.single X (𝟙 _)) ≫ Sigma.desc (fun f => f), ?_⟩
+  have h := (isSeparator_iff_epi (projectiveSeparator C)).1
+    isSeparator_projectiveSeparator (F.obj X)
+  suffices Epi (Sigma.desc (Pi.single X (𝟙 _))) from epi_comp' this h
+  exact SplitEpi.epi ⟨Sigma.ι (fun (X : D) => ∐ fun _ => projectiveSeparator C) X, by simp⟩
+
+private instance : Projective (generator F) := by
+  rw [generator]
+  infer_instance
+
+private theorem isSeparator [Nonempty D] : IsSeparator (generator F) := by
+  apply isSeparator_sigma_of_isSeparator _ Classical.ofNonempty
+  apply isSeparator_sigma_of_isSeparator _ 0
+  exact isSeparator_projectiveSeparator
+
+/-- Given a functor `F : D ⥤ Cᵒᵖ`, where `C` is Grothendieck abelian, this is a ring `R` such that
+`Cᵒᵖ` has a nice embedding into `ModuleCat (EmbeddingRing F)`; see
+`OppositeModuleEmbedding.embedding`. -/
+def EmbeddingRing : Type v := (End (generator F))ᵐᵒᵖ
+
+noncomputable instance : Ring (EmbeddingRing F) :=
+  inferInstanceAs <| Ring (End (generator F))ᵐᵒᵖ
+
+/-- This is a functor `embedding F : Cᵒᵖ ⥤ ModuleCat (EmbeddingRing F)`. We have that `embedding F`
+is faithful and preserves finite limits and colimits. Furthermore, `F ⋙ embedding F` is full. -/
+noncomputable def embedding : Cᵒᵖ ⥤ ModuleCat.{v} (EmbeddingRing F) :=
+  preadditiveCoyonedaObj (generator F)
+
+instance faithful_embedding [Nonempty D] : (embedding F).Faithful :=
+  (isSeparator_iff_faithful_preadditiveCoyonedaObj _).1 (isSeparator F)
+
+instance full_embedding [Nonempty D] [F.Full] : (F ⋙ embedding F).Full :=
+  full_comp_preadditiveCoyonedaObj _ (isSeparator F) (exists_epi F)
+
+instance preservesFiniteLimits_embedding : PreservesFiniteLimits (embedding F) := by
+  rw [embedding]
+  apply preservesFiniteLimits_of_preservesFiniteLimitsOfSize
+  infer_instance
+
+instance preservesFiniteColimits_embedding : PreservesFiniteColimits (embedding F) := by
+  apply preservesFiniteColimits_preadditiveCoyonedaObj_of_projective
+
+end OppositeModuleEmbedding
+
+end CategoryTheory.Abelian.IsGrothendieckAbelian
+```

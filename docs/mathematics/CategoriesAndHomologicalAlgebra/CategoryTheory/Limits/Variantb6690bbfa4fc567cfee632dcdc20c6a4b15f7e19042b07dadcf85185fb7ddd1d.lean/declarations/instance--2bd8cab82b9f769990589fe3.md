@@ -1,0 +1,136 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:0b75a8131678b299d262982812940d54728ec5d9356f3af1a0c9636f5f9f5739",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--2bd8cab82b9f769990589fe3",
+  "source": {
+    "blob": "3c3d86e726381454cf3244fab9ceb86688a79ff7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 97,
+    "line": 43,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variantb6690bbfa4fc567cfee632dcdc20c6a4b15f7e19042b07dadcf85185fb7ddd1d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2bd8cab82b9f769990589fe3df890d1ca11cc8bbdf84ed4890ea1dc93da665df",
+  "verification": {
+    "reference": "docs/verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variantb6690bbfa4fc567cfee632dcdc20c6a4b15f7e19042b07dadcf85185fb7ddd1d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:0b75a8131678b299d262982812940d54728ec5d9356f3af1a0c9636f5f9f5739`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 43–97.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance : (lim (J := J) (C := C)).LaxMonoidal :=
+  Functor.LaxMonoidal.ofTensorHom
+    (ε' :=
+      limit.lift _
+        { pt := _
+          π := { app := fun _ => 𝟙 _ } })
+    (μ' := fun F G ↦
+      limit.lift (F ⊗ G)
+        { pt := limit F ⊗ limit G
+          π :=
+            { app := fun j => limit.π F j ⊗ limit.π G j
+              naturality := fun j j' f => by
+                dsimp
+                simp only [Category.id_comp, ← tensor_comp, limit.w] } })
+    (μ'_natural := fun f g ↦ limit.hom_ext (fun j ↦ by
+      dsimp
+      simp only [limit.lift_π, Cones.postcompose_obj_π, Monoidal.tensorHom_app, limit.lift_map,
+        NatTrans.comp_app, Category.assoc, ← tensor_comp, limMap_π]))
+    (associativity' := fun F G H ↦ limit.hom_ext (fun j ↦ by
+      dsimp
+      simp only [tensorHom_id, limit.lift_map, Category.assoc, limit.lift_π,
+        id_tensorHom]
+      dsimp
+      conv_lhs => rw [tensorHom_def, Category.assoc, ← comp_whiskerRight_assoc,
+        limit.lift_π, tensor_whiskerLeft, Category.assoc, Category.assoc,
+        Iso.inv_hom_id, Category.comp_id,
+        ← associator_naturality_right, ← tensorHom_def_assoc]
+      dsimp
+      conv_rhs => rw [tensorHom_def, ← whisker_exchange,
+        ← MonoidalCategory.whiskerLeft_comp_assoc, limit.lift_π,
+        whisker_exchange, ← associator_naturality_left_assoc]
+      dsimp only
+      conv_rhs => rw [tensorHom_def, MonoidalCategory.whiskerLeft_comp,
+        ← associator_naturality_middle_assoc,
+        ← associator_naturality_right, ← comp_whiskerRight_assoc,
+        ← tensorHom_def, ← tensorHom_def_assoc]))
+    (left_unitality' := fun F ↦ limit.hom_ext (fun j ↦ by
+      dsimp
+      simp only [tensorHom_id, limit.lift_map, Category.assoc, limit.lift_π]
+      dsimp
+      simp only [tensorHom_def, id_whiskerLeft, Category.assoc,
+        Iso.inv_hom_id, Category.comp_id, ← comp_whiskerRight_assoc]
+      erw [limit.lift_π]
+      rw [id_whiskerRight, Category.id_comp]))
+    (right_unitality' := fun F ↦ limit.hom_ext (fun j ↦ by
+      dsimp
+      simp only [id_tensorHom, limit.lift_map, Category.assoc, limit.lift_π]
+      dsimp
+      simp only [tensorHom_def, ← whisker_exchange,
+        MonoidalCategory.whiskerRight_id, Category.assoc, Iso.inv_hom_id,
+        Category.comp_id, ← MonoidalCategory.whiskerLeft_comp_assoc]
+      erw [limit.lift_π]
+      rw [MonoidalCategory.whiskerLeft_id, Category.id_comp]))
+
+@[reassoc (attr := simp)]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variantb6690bbfa4fc567cfee632dcdc20c6a4b15f7e19042b07dadcf85185fb7ddd1d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variantb6690bbfa4fc567cfee632dcdc20c6a4b15f7e19042b07dadcf85185fb7ddd1d.lean#L43).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3c3d86e726381454cf3244fab9ceb86688a79ff7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
