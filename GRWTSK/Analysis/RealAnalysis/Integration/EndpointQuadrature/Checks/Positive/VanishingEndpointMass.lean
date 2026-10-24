@@ -19,8 +19,9 @@ Original source SHA-256: b1692c02a45eaff5606892ff3359bbf8639f843d9500dbacd475498
 Organized source SHA-256: 83a6ce353352c64dc5a06cb03416db270c62631ba458ef530f581dfb6a766d2e
 Source archive: grwtsk/math@99f310907528f620d85095b675ec1b6f9d7a7046
 PMD: 510.5.010.040 integration; editorial subject placement only.
-All original imports and whole-file documentation are retained. This candidate
-contains its selected component; the inherited introduction covers the whole source.
+Whole-file source documentation is retained. The unused legacy quadrature import
+and namespace open were removed; the selected component uses Mathlib directly.
+The inherited introduction covers the whole source.
 Statements, hypotheses, declaration comments and bodies are exact source copies.
 Containing namespace, explicit namespace context and candidate imports are receipted
 changes. Historical proof-checking language is not a fresh replay claim.
