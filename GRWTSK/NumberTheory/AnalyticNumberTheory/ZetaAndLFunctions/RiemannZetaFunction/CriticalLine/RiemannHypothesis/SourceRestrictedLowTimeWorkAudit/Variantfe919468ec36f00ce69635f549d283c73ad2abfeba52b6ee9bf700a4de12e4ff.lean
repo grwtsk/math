@@ -1,0 +1,65 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRestrictedLowTimeWork.Variantfa59cb890561cd7515a8f5c82f09f6526f71e48a056d2c264d16711868d39ff0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fa59cb890561cd7515a8f5c82f09f6526f71e48a056d2c264d16711868d39ff0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceRestrictedLowTimeWork.Variantfa59cb890561cd7515a8f5c82f09f6526f71e48a056d2c264d16711868d39ff0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"fa59cb890561cd7515a8f5c82f09f6526f71e48a056d2c264d16711868d39ff0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-next-cycle-20261006-dependencies/SourceRestrictedLowTimeWorkAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceRestrictedLowTimeWork
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRestrictedLowTimeWork.Variantfa59cb890561cd7515a8f5c82f09f6526f71e48a056d2c264d16711868d39ff0
+
+namespace FormalResearch.RiemannHypothesis.SourceRestrictedLowTimeWork
+
+#check actualLowTimeProfile
+#print axioms actualLowTimeProfile
+#print actualLowTimeProfile
+#check actualLowMixedWorkDensity
+#print axioms actualLowMixedWorkDensity
+#print actualLowMixedWorkDensity
+#check remainingOverlapBalance
+#print axioms remainingOverlapBalance
+#print remainingOverlapBalance
+#check actual39_cell_kernel_restricted_integrable
+#print axioms actual39_cell_kernel_restricted_integrable
+#print actual39_cell_kernel_restricted_integrable
+#check restricted_cell_fubini_factorization
+#print axioms restricted_cell_fubini_factorization
+#print restricted_cell_fubini_factorization
+#check restricted_actual_low_sector_abs_le
+#print axioms restricted_actual_low_sector_abs_le
+#print restricted_actual_low_sector_abs_le
+#check actual_source_low_sector_abs_le
+#print axioms actual_source_low_sector_abs_le
+#print actual_source_low_sector_abs_le
+#check actual_derivative_low_sector_abs_le
+#print axioms actual_derivative_low_sector_abs_le
+#print actual_derivative_low_sector_abs_le
+#check actualLowMixedWorkDensity_integrable
+#print axioms actualLowMixedWorkDensity_integrable
+#print actualLowMixedWorkDensity_integrable
+#check actual_low_mixed_restricted_abs_le_margin
+#print axioms actual_low_mixed_restricted_abs_le_margin
+#print actual_low_mixed_restricted_abs_le_margin
+#check actual_left_strip_high_time_source_atoms_zero
+#print axioms actual_left_strip_high_time_source_atoms_zero
+#print actual_left_strip_high_time_source_atoms_zero
+#check actual_density_eq_low_density_on_left_strip
+#print axioms actual_density_eq_low_density_on_left_strip
+#print actual_density_eq_low_density_on_left_strip
+#check actual_retained_spatial_strip_abs_le_margin
+#print axioms actual_retained_spatial_strip_abs_le_margin
+#print actual_retained_spatial_strip_abs_le_margin
+#check actual_surplus_eq_remainingOverlap_sub_strip
+#print axioms actual_surplus_eq_remainingOverlap_sub_strip
+#print actual_surplus_eq_remainingOverlap_sub_strip
+#check actual_surplus_le_remainingOverlap_add_margin
+#print axioms actual_surplus_le_remainingOverlap_add_margin
+#print actual_surplus_le_remainingOverlap_add_margin
+#check remainingOverlap_le_actual_surplus_add_margin
+#print axioms remainingOverlap_le_actual_surplus_add_margin
+#print remainingOverlap_le_actual_surplus_add_margin
+#check actual_eventual_surplus_bound_iff_remainingOverlap_bound
+#print axioms actual_eventual_surplus_bound_iff_remainingOverlap_bound
+#print actual_eventual_surplus_bound_iff_remainingOverlap_bound
+
+end FormalResearch.RiemannHypothesis.SourceRestrictedLowTimeWork

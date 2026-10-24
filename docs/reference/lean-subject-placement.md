@@ -36,9 +36,14 @@ The executable policy is the versioned static manifest
 `docs/verification/_unscoped/lean-subject-sort-v1.toml`. Its subject profiles may be extended as
 the taxonomy grows. Existing top-level subject directories can be represented as
 provisional local profiles without being silently promoted to accepted taxonomy
-concepts. Immutable prefixes such as `GRWTSK/SourceCorpus` are custody roots, not
-discoverable destination subjects, and their archived vocabulary does not enter
-the trainable ranking corpus.
+concepts. The former `GRWTSK/SourceCorpus` custody root is retired by the
+name-and-path migration specified in
+[`sourcecorpus-taxonomy-v1.toml`](../verification/_unscoped/sourcecorpus-taxonomy-v1.toml).
+Its maintained Lean sources now have subject homes and explicit old-to-new
+bindings. Retained subject labels and lexical routing signals remain placement
+proposals requiring source-specific review; moving a file does not complete
+semantic review, Lean replay, public-library admission or mathematical acceptance.
+Historical source identities, notices and verification scopes remain historical.
 
 The first implementation is file-level. A source containing strongly mixed
 subjects is classified `review`; it is not automatically split. Declaration-level

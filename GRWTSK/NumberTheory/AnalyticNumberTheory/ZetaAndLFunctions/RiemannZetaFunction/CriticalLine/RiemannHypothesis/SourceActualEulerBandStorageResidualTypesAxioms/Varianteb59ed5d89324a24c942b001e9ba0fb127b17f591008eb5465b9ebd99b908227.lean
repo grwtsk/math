@@ -1,0 +1,34 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerBandStorageResidual.Variant3b3cdac0859ad5c08988000e6c9ce551f20f997a2d2b310bb282c6973f2bd668","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3b3cdac0859ad5c08988000e6c9ce551f20f997a2d2b310bb282c6973f2bd668","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualEulerBandStorageResidual.Variant3b3cdac0859ad5c08988000e6c9ce551f20f997a2d2b310bb282c6973f2bd668","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3b3cdac0859ad5c08988000e6c9ce551f20f997a2d2b310bb282c6973f2bd668","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261007T130815Z-1791378495645385000/SourceActualEulerBandStorageResidualTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualEulerBandStorageResidual
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerBandStorageResidual.Variant3b3cdac0859ad5c08988000e6c9ce551f20f997a2d2b310bb282c6973f2bd668
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeBandStorage
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeBandStorage
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeHead_real_eq_full_storage
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualClosedPrimeHead_real_eq_full_storage
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_sub_full_band_storage_tendsto_zero
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_eventual_upper_iff_full_band_storage_payment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandStorageResidual.actualResidual_eventual_upper_iff_full_band_storage_payment

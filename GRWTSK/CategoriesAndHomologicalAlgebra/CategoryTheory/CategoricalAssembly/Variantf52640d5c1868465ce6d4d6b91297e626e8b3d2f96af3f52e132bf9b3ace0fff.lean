@@ -1,0 +1,92 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.InverseWitnessComparison.Variantae4fedd0857a5b3979498c478503240b64ccc7af79ed6f15215a76ebda52ac48","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ae4fedd0857a5b3979498c478503240b64ccc7af79ed6f15215a76ebda52ac48","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.CategoryTheory.SourceCorpus.InverseWitnessComparison.Variantae4fedd0857a5b3979498c478503240b64ccc7af79ed6f15215a76ebda52ac48","mathematical_subject":"Algebra.CategoryTheory","original_sha256":"ae4fedd0857a5b3979498c478503240b64ccc7af79ed6f15215a76ebda52ac48","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/cache-source-audit/source/ae4fedd0857a5b3979498c478503240b64ccc7af79ed6f15215a76ebda52ac48.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathlib.CategoryTheory.Equivalence
+import Mathlib.CategoryTheory.Discrete.Basic
+import Mathlib.Data.ZMod.Basic
+
+/-!
+# Separately typed inverse witnesses and finite sector categories
+
+This module proves the categorical assembly implication independently of any
+geometric comparison. The finite consumer is the discrete category of pairs of
+`ZMod 3` labels, not the Fourier operator or the global QGL functor.
+
+Research direction, theorem selection, corrections and evaluation:
+grwtsk contributors. Formalization and checks: OpenAI Codex.
+The inverse-witness mechanism is extracted from OpenAI family 069, Section 13;
+the geometric hypotheses supplying these witnesses remain separate obligations.
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.InverseWitnessComparison.Variantae4fedd0857a5b3979498c478503240b64ccc7af79ed6f15215a76ebda52ac48
+
+namespace FormalResearch.QuantumLanglands.CategoricalAssembly
+
+open CategoryTheory CategoryTheory.Functor
+
+universe v₁ v₂ u₁ u₂
+
+variable {C : Type u₁} {D : Type u₂} [Category.{v₁} C] [Category.{v₂} D]
+
+/-- A left inverse and a separately typed right inverse agree by a natural
+isomorphism. No equality of the two inverse functors is assumed. -/
+def inverseWitnessComparison (F : C ⥤ D) (L R : D ⥤ C)
+    (left : F ⋙ L ≅ 𝟭 C) (right : R ⋙ F ≅ 𝟭 D) : L ≅ R :=
+  (Functor.leftUnitor L).symm ≪≫
+    isoWhiskerRight right.symm L ≪≫
+    Functor.associator R F L ≪≫
+    isoWhiskerLeft R left ≪≫
+    Functor.rightUnitor R
+
+/-- The comparison supplies the missing counit for the chosen left inverse.
+Mathlib's construction adjusts the unit to satisfy the triangle identities. -/
+def assemble (F : C ⥤ D) (L R : D ⥤ C)
+    (left : F ⋙ L ≅ 𝟭 C) (right : R ⋙ F ≅ 𝟭 D) : C ≌ D :=
+  CategoryTheory.Equivalence.mk F L left.symm
+    (isoWhiskerRight (inverseWitnessComparison F L R left right) F ≪≫ right)
+
+@[simp] theorem assemble_functor (F : C ⥤ D) (L R : D ⥤ C)
+    (left : F ⋙ L ≅ 𝟭 C) (right : R ⋙ F ≅ 𝟭 D) :
+    (assemble F L R left right).functor = F := rfl
+
+@[simp] theorem assemble_inverse (F : C ⥤ D) (L R : D ⥤ C)
+    (left : F ⋙ L ≅ 𝟭 C) (right : R ⋙ F ≅ 𝟭 D) :
+    (assemble F L R left right).inverse = L := rfl
+
+/-- Odd-torsion labels make the minus sign visible. -/
+abbrev Sector := ZMod 3 × ZMod 3
+
+def quarterTurn : Sector ≃ Sector where
+  toFun x := (x.2, -x.1)
+  invFun x := (-x.2, x.1)
+  left_inv x := by cases x; simp
+  right_inv x := by cases x; simp
+
+theorem quarterTurn_square (x : Sector) :
+    quarterTurn (quarterTurn x) = (-x.1, -x.2) := by
+  cases x
+  rfl
+
+theorem quarterTurn_fourth (x : Sector) :
+    quarterTurn (quarterTurn (quarterTurn (quarterTurn x))) = x := by
+  cases x
+  simp [quarterTurn]
+
+theorem quarterTurn_square_not_identity :
+    quarterTurn (quarterTurn ((1, 0) : Sector)) ≠ ((1, 0) : Sector) := by
+  decide
+
+/-- An actual finite category equivalence. No functor power law for QGL follows. -/
+def sectorEquivalence : Discrete Sector ≌ Discrete Sector :=
+  Discrete.equivalence quarterTurn
+
+/-- Consume the assembly with actual finite left and right inverse witnesses. -/
+def assembledSectorEquivalence : Discrete Sector ≌ Discrete Sector :=
+  assemble sectorEquivalence.functor sectorEquivalence.inverse
+    sectorEquivalence.inverse sectorEquivalence.unitIso.symm
+    sectorEquivalence.counitIso
+
+end FormalResearch.QuantumLanglands.CategoricalAssembly

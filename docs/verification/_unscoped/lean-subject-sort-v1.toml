@@ -3,7 +3,7 @@ schema = "grwtsk.lean-subject-sort/1"
 managed_root = "GRWTSK"
 umbrella = "GRWTSK.lean"
 taxonomy_root = "docs/taxonomy/subjects"
-immutable_prefixes = ["GRWTSK/SourceCorpus"]
+immutable_prefixes = []
 ignored_prefixes = []
 
 # A model score is only a placement proposal. Ambiguous files remain in REVIEW.
