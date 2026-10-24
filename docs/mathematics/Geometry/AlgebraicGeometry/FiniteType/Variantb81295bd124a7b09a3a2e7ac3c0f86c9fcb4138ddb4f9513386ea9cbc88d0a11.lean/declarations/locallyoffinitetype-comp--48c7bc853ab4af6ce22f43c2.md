@@ -1,0 +1,85 @@
+# locallyOfFiniteType_comp
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:6cb531b67c2e1570d4cac9bb046ef3e8050b48f3d0b1abdcd008b8795e6ecf51",
+  "kind": "instance",
+  "lexical_name": "locallyOfFiniteType_comp",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "locallyoffinitetype-comp--48c7bc853ab4af6ce22f43c2",
+  "source": {
+    "blob": "0abee0426da3e6702b25c083deaa0fca4efd13e7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 75,
+    "line": 72,
+    "path": "GRWTSK/Geometry/AlgebraicGeometry/FiniteType/Variantb81295bd124a7b09a3a2e7ac3c0f86c9fcb4138ddb4f9513386ea9cbc88d0a11.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:48c7bc853ab4af6ce22f43c28bee75535672cf5db44b68bf433abac1aa9eb68d",
+  "verification": {
+    "reference": "docs/verification/Geometry/AlgebraicGeometry/FiniteType/Variantb81295bd124a7b09a3a2e7ac3c0f86c9fcb4138ddb4f9513386ea9cbc88d0a11.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:6cb531b67c2e1570d4cac9bb046ef3e8050b48f3d0b1abdcd008b8795e6ecf51`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 72–75.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance locallyOfFiniteType_comp {X Y Z : Scheme} (f : X ⟶ Y) (g : Y ⟶ Z)
+    [hf : LocallyOfFiniteType f] [hg : LocallyOfFiniteType g] : LocallyOfFiniteType (f ≫ g) :=
+  MorphismProperty.comp_mem _ f g hf hg
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Geometry/AlgebraicGeometry/FiniteType/Variantb81295bd124a7b09a3a2e7ac3c0f86c9fcb4138ddb4f9513386ea9cbc88d0a11.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Geometry/AlgebraicGeometry/FiniteType/Variantb81295bd124a7b09a3a2e7ac3c0f86c9fcb4138ddb4f9513386ea9cbc88d0a11.lean#L72).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0abee0426da3e6702b25c083deaa0fca4efd13e7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,85 @@
+# Γ
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:019a4987fe0a36709e70b6ab82008ba278a1fc6a58c7f6ee0f36be18fe9727aa",
+  "kind": "def",
+  "lexical_name": "Γ",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "anonymous--64c103d16f9b8ee878bb808b",
+  "source": {
+    "blob": "eb4373799c548d13d1e2a75d2e7d49e75a96d6e3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 264,
+    "line": 261,
+    "path": "GRWTSK/Geometry/AlgebraicGeometry/Scheme/Variant53e6ad2ed79d04ca87dadd2a016463f666aceab599fa3e2b5438bf8b7b892fda.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:64c103d16f9b8ee878bb808bf04d7414cf4d7b56151e290933bc8aea0bf2bb0c",
+  "verification": {
+    "reference": "docs/verification/Geometry/AlgebraicGeometry/Scheme/Variant53e6ad2ed79d04ca87dadd2a016463f666aceab599fa3e2b5438bf8b7b892fda.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:019a4987fe0a36709e70b6ab82008ba278a1fc6a58c7f6ee0f36be18fe9727aa`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 261–264.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def Γ : Schemeᵒᵖ ⥤ CommRingCat :=
+  (inducedFunctor Scheme.toLocallyRingedSpace).op ⋙ LocallyRingedSpace.Γ
+#align algebraic_geometry.Scheme.Γ AlgebraicGeometry.Scheme.Γ
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Geometry/AlgebraicGeometry/Scheme/Variant53e6ad2ed79d04ca87dadd2a016463f666aceab599fa3e2b5438bf8b7b892fda.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Geometry/AlgebraicGeometry/Scheme/Variant53e6ad2ed79d04ca87dadd2a016463f666aceab599fa3e2b5438bf8b7b892fda.lean#L261).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `eb4373799c548d13d1e2a75d2e7d49e75a96d6e3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
