@@ -1,8 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.ContractiveZeroDisk
-import GRWTSK.Analysis.Complex.RationalComplexQuotient
+import GRWTSK.Analysis.ComplexAnalysis.ContractiveZeroDisk
+import GRWTSK.Analysis.ComplexAnalysis.RationalComplexQuotient
 import GRWTSK.NumberTheory.Zeta.Riemann.ZetaDiskCurvature
 
 set_option autoImplicit false
@@ -21,9 +21,9 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalNewtonWitness
 
 open Set Metric
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.FiniteExponentialEnclosure
-open GRWTSK.Analysis.Complex.ContractiveZeroDisk
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
+open GRWTSK.Analysis.ComplexAnalysis.ContractiveZeroDisk
 open CanonicalZeroDivisor LocalJensenCount ZetaDiskCurvature
 
 /-- Raw rational data. The error numbers do not certify the center facts. -/

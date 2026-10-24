@@ -1,0 +1,34 @@
+import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.TransitionSystems.FinitePhraseProcess
+
+open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.TransitionSystems.FinitePhraseProcess
+
+#check @Section.restrict_identity
+#check @Section.restrict_composition
+#check @pivotLocalCompatible
+#check @pivot_unique_gluing
+#check @frame_transport_identity
+#check @frame_transport_composition
+#check @frame_transport_cocycle
+#check @decode_encode
+#check @encode_decode
+#check @pilot_quine_exact_carrier
+#check @pilot_quine_certificate_reconstruction
+#check @pilot_quine_separation
+#check @pilot_quine_universal_factorization
+#check @clarify_source_is_revision
+#check @source_and_revision_are_not_exact
+#check @source_and_revision_preserve_frame_role
+#check @clarify_transition_congruence
+#check @induced_clarify_commutes
+#check @interpreter_preserves_structure
+#check @anchor_unit
+#check @pilot_text_scalar_length
+#check @pilot_phrase_unique_gluing
+#check @pilot_potential_decreases
+#check @concrete_transition_cost_coverage
+#check @pivot_stopping_envelope
+#check @contemplative_stopping_envelope
+#check @source_explanation_stopping_envelope
+#check @formal_stopping_envelope
+#check @transitional_pair_stopping_envelope
+#check @pilot_contract

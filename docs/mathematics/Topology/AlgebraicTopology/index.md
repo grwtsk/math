@@ -4,9 +4,31 @@
 
 [Results index](../../index.md) · [Up one directory](../index.md)
 
-This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
+**Subject:** `urn:uuid:488ac86e-75aa-43d0-a98d-17f305f6cad9` · editorial status: **proposed** · [definition, scope and sources](../../../taxonomy/subjects/Topology/AlgebraicTopology/index.md).
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+The study of spaces and maps by algebraic invariants and constructions, including fundamental and higher homotopy groups, homology, cohomology and their functorial relationships.
+
+**Scope.** The subject is not a synonym for all topology or all algebra. An invariant generally forgets information: agreement of one invariant is not by itself a classification theorem. Cohomology and generalized theories remain in the intended scope although their own pages are not populated in this batch.
+
+**Subject routes:** [Topology](../index.md). Parentage retains the taxonomy's recorded status.
+
+## Complete source publication
+
+[Every source module and declaration](../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+Namespace totals and the complete namespace route:
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [Topology](../complete-source-index.md) | 5,108 | 189,403 | 147,833 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
 | 58 | 0 | 0 | 0 |
 
@@ -29,7 +51,8 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-No narrower directory is currently registered. Continue to the articles below.
+1. **[Homology theory (topology)](Homology/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of homology invariants of spaces and pairs, their functorial and axiomatic properties, and concrete constructions for computing them.
+2. **[Homotopy theory (topological spaces)](Homotopy/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of spaces and continuous maps up to homotopy, including homotopy equivalences, homotopy groups and constructions that preserve or compare homotopy types.
 
 ## Articles at this level
 
@@ -92,7 +115,9 @@ No narrower directory is currently registered. Continue to the articles below.
 - [The unpaired polygon perimeter and the correct attaching-map direction](surface-polygon-perimeter-attachment.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-22).** This note documents authored Lean proof scripts. No Lean/Lake elaboration, kernel replay, generated declaration audit or completed…
 - [The unpaired polygon perimeter is the canonical additive circle](surface-polygon-perimeter-circle-equivalence.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-22).** The Lean module described here is an authored proof candidate. It has not been elaborated by Lean, accepted by the kernel, or audited for…
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
+
+# Algebraic topology

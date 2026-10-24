@@ -19,7 +19,7 @@ namespace GRWTSK.RiemannHypothesis.JetPoleContour
 
 open Set Metric ContinuousMap
 open scoped unitInterval
-open GRWTSK.Analysis.Complex GRWTSK.Analysis.ErrorBounds
+open GRWTSK.Analysis.ComplexAnalysis GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
 open CriticalStripHeightDescent RationalPoleContour
 open ConstructedRectangleCount (Plan planAt)

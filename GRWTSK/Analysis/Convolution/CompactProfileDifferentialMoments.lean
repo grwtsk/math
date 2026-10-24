@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Convolution.CompactProfileFirstPoleMoment
 import GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives
-import GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments
+import GRWTSK.Analysis.RealAnalysis.Integration.CompactWeightedDerivativeMoments
 
 /-!
 # The actual correlation differential expression's two moments
@@ -41,7 +41,7 @@ theorem actual_differential_moments_zero {A : ℝ} (hA : 1 ≤ A) :
     exact CorrelationMoment.full_correlation_moment_zero A hA
   have firstZero : (∫ x : ℝ, x * Real.exp ((1 / 2 : ℝ) * x) * correlation A x) = 0 :=
     CompactProfileFirstPoleMoment.first_pole_correlation_integral_zero positive (by norm_num)
-  exact GRWTSK.Analysis.Integration.CompactWeightedDerivativeMoments.differential_moments_zero
+  exact GRWTSK.Analysis.RealAnalysis.Integration.CompactWeightedDerivativeMoments.differential_moments_zero
     (correlation_contDiff_two positive) (correlation_hasCompactSupport positive)
     (1 / 2) (1 / 2) zero firstZero
 

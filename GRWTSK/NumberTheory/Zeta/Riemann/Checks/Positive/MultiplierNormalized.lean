@@ -19,8 +19,8 @@ namespace GRWTSK.RiemannHypothesis.Checks.MultiplierNormalized
 open Complex
 open CriticalStripHeightDescent CriticalStripHeightDescent.ZeroIsolation
 open NormalizedRationalPair
-open GRWTSK.Analysis.Complex.SymmetricPair
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 open CenteredMellin.SexticPrimitive
 
 def plus1 : RationalPowerEvaluation.Proposal :=

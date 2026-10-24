@@ -44,7 +44,7 @@ theorem nontrivial_zero_weighted_local_residue
     Tendsto
       (fun s =>
         (s - z.1) *
-          (-GRWTSK.Analysis.Complex.LogarithmicPrincipalPart.logDeriv
+          (-GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.logDeriv
             riemannZeta s * F s))
       (𝓝[≠] z.1)
       (𝓝 (-(multiplicity z : ℂ) * F z.1)) :=
@@ -55,7 +55,7 @@ theorem pole_weighted_local_residue
     Tendsto
       (fun s =>
         (s - 1) *
-          (-GRWTSK.Analysis.Complex.LogarithmicPrincipalPart.logDeriv
+          (-GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.logDeriv
             riemannZeta s * F s))
       (𝓝[≠] (1 : ℂ))
       (𝓝 (zetaPoleResidueTerm F)) := by

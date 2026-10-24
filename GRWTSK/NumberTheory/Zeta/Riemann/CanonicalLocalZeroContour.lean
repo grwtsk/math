@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.IsolatedFiniteOrderContour
+import GRWTSK.Analysis.ComplexAnalysis.IsolatedFiniteOrderContour
 import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonContour
 import GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 
@@ -27,9 +27,9 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED / SOURCE_ACCEPTANCE_OPEN (concrete ca
 namespace GRWTSK.RiemannHypothesis.CanonicalLocalZeroContour
 
 open Set Metric
-open GRWTSK.Analysis.Complex.IsolatedFiniteOrderContour
+open GRWTSK.Analysis.ComplexAnalysis.IsolatedFiniteOrderContour
 open GRWTSK.NumberTheory.Zeta.Riemann.CriticalReflectionIsolation
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open CanonicalZeroDivisor
 
 noncomputable section
@@ -114,7 +114,7 @@ theorem isolated_regionCount_eq_multiplicity (root : ZeroPoint) (c : ℂ) (r T :
   classical
   have head := isolated_regionHead_eq_singleton root c r T member heightBound isolated
   simp [ReflectionMultiplicityBudget.regionCount, head,
-    GRWTSK.Combinatorics.WeightedPairBudget.mass]
+    GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget.mass]
 
 /-- Exact local contour-to-count binding. This uses isolation and is NOT an
 independent count certificate that can be used circularly to establish that isolation. -/

@@ -19,7 +19,7 @@ open GRWTSK.RiemannHypothesis.LocalZeroSymmetry
 open GRWTSK.RiemannHypothesis.CanonicalSignedHeight
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 open GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open ClassicalRieszNormalization ClassicalRieszCoefficientLimits FirstRieszWeakRawLimit
 
 theorem conjugate_weighted_height_sum (T : ℝ) (f : ZeroPoint → ℂ)
@@ -95,7 +95,7 @@ theorem logDeriv_neg_one_eq :
   ring
 
 theorem logDeriv_neg_one_conj : conj (logDeriv riemannZeta (-1)) = logDeriv riemannZeta (-1) := by
-  have hd := GRWTSK.Analysis.Complex.ConjugateAnalyticOrder.deriv_conjugation
+  have hd := GRWTSK.Analysis.ComplexAnalysis.ConjugateAnalyticOrder.deriv_conjugation
     (f := riemannZeta) (fun w => by simpa only [Complex.star_def] using riemannZeta_conj w) (-1)
   have he : conj (deriv riemannZeta (-1)) = deriv riemannZeta (-1) := by
     simpa only [Complex.star_def,map_neg,map_one] using hd.symm

@@ -1,7 +1,7 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
-open GRWTSK.Logic.FiniteSequences.DictionaryRevision
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision
 
 set_option autoImplicit false
 

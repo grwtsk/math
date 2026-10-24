@@ -11,7 +11,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentLeftDecayControls
 
 open Filter Set
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.DigammaShift
+open GRWTSK.Analysis.ComplexAnalysis.DigammaShift
 open GRWTSK.RiemannHypothesis.LeftLogDerivative
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.NumberTheory.Chebyshev.TentLeftDecay

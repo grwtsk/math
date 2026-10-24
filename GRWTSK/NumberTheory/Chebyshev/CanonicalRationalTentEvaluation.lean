@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalTentAccumulation
+import GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
 import GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion
 
 set_option autoImplicit false
@@ -20,9 +20,9 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open TentSource SignedTentCorrection CanonicalTentPrimeCriterion
 

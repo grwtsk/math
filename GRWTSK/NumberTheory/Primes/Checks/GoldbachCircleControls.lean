@@ -17,7 +17,7 @@ in Lean.
 
 namespace GRWTSK.NumberTheory.Primes.Checks.GoldbachCircleControls
 
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachWeighted
 open GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral
 

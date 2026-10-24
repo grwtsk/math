@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D15"]
 ---
 # Analysis, measure and Fourier subjects: addition proposal
 
-[Proposals](../index.md) · [Analysis](../../subjects/analysis/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Analysis](../../subjects/Analysis/index.md) · [Registry](../../registry.md)
 
 ## Problem and pinned source
 

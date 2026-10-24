@@ -20,7 +20,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource
 
 open Metric Set
 open GRWTSK.Analysis.ErrorBounds
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalComplexEnclosure
 open EndpointCorrectedNewtonCandidate (center centerData innerRadius outerRadius)
 open scoped BigOperators

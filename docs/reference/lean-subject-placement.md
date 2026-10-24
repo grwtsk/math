@@ -45,6 +45,14 @@ proposals requiring source-specific review; moving a file does not complete
 semantic review, Lean replay, public-library admission or mathematical acceptance.
 Historical source identities, notices and verification scopes remain historical.
 
+The [shared taxonomy path contract](../verification/_unscoped/taxonomy-path-sync-v1.toml)
+is the current physical layout authority. Each bound subject has the same
+relative path and exact capitalization under the Lean, mathematics documentation,
+verification, and taxonomy roots. The navigation configuration projects those
+paths directly. Retired aliases cannot create another subject home. Distinct
+authored concept IDs retain their definitions and scope, and different proof
+bodies retain isolated variant namespaces.
+
 The first implementation is file-level. A source containing strongly mixed
 subjects is classified `review`; it is not automatically split. Declaration-level
 segmentation requires a separate source-preserving decomposition plan, exact

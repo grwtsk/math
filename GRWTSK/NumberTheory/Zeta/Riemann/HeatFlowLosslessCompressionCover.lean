@@ -74,12 +74,12 @@ theorem LosslessCodec.hasTotalLosslessDecoder
 lossless codec. This uses its stored packet metadata and its source
 `decode_encode` theorem; it does not assert that a heat flow is Huffman code. -/
 def huffmanByteCodec :
-    LosslessCodec (List UInt8) GRWTSK.InformationTheory.Huffman.Packet where
-  encode := GRWTSK.InformationTheory.Huffman.encode
-  decode := fun packet => (GRWTSK.InformationTheory.Huffman.decode packet).getD []
+    LosslessCodec (List UInt8) GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.Packet where
+  encode := GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.encode
+  decode := fun packet => (GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.decode packet).getD []
   leftInverse := by
     intro source
-    simp [GRWTSK.InformationTheory.Huffman.decode_encode]
+    simp [GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.decode_encode]
 
 /-- A coded evolution covers a process when encoding commutes with every
 specified time step. This is the precise replacement for the informal phrase

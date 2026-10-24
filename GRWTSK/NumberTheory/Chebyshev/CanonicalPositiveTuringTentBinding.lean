@@ -39,9 +39,9 @@ open GRWTSK.RiemannHypothesis.PositiveHeightSymmetricCount
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringFullHead
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringEnumeration
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
-open GRWTSK.Analysis.Complex.RationalTentAccumulation
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRationalTentEvaluation TentSource SignedTentCorrection CanonicalTentPrimeCriterion
 

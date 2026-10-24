@@ -31,7 +31,7 @@ all inherited imports: NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel
 
 open scoped BigOperators
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget
 open GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals
 open GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel

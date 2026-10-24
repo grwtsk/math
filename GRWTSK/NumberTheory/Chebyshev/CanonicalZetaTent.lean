@@ -22,8 +22,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.CanonicalZetaTent
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.Analysis.Series.HeightCountingTail
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentKernelTail
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentKernelTail
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CountedTentTail
 open GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection

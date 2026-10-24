@@ -7,7 +7,7 @@ identified with this torsion-free image. Determinant and coefficient-vector
 clearing are kept separate. No global section-space or Hodge claim.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.WeierstrassImageFrame
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassImageFrame
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCollisionJetDenominator
 
 set_option autoImplicit false
@@ -16,7 +16,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetImage
 
 open WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve
 open FreyGlobalMinimalDiscriminant FreyTwoBranchDecision FreyCollisionSecondJet
 open FreyCollisionJetTower
 

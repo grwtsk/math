@@ -18,8 +18,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentEdgeBoundControls
 
 open MeasureTheory
 open scoped Interval BigOperators
-open GRWTSK.Analysis.Complex.TentMellinKernel
-open GRWTSK.Analysis.Complex.TentContourMajorants
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentContourMajorants
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds
 

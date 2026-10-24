@@ -8,7 +8,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis.Checks.PrimeThetaSeparableKernelFactorizationControls
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
 
 /-- Canonical polarity used only to expose the exact numerical arity labels. -/

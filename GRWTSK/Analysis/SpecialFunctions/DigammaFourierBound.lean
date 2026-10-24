@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.DigammaSeries
 import GRWTSK.Analysis.ReciprocalKernel
-import GRWTSK.Analysis.Fourier.DigammaMultiplier
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.DigammaMultiplier
 
 /-!
 # Source-faithful admission from the actual digamma difference series

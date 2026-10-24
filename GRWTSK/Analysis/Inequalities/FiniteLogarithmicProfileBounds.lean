@@ -3,8 +3,8 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Inequalities.LogarithmicProfileIntegralPrices
 import GRWTSK.Analysis.IntegralTransforms.LogarithmicProfileCutoff
-import GRWTSK.Analysis.Integration.FiniteUnitSumVariation
-import GRWTSK.Analysis.Integration.PositiveHalfLineCutoffBalance
+import GRWTSK.Analysis.RealAnalysis.Integration.FiniteUnitSumVariation
+import GRWTSK.Analysis.RealAnalysis.Integration.PositiveHalfLineCutoffBalance
 
 /-!
 # Complete finite logarithmic profile price
@@ -19,7 +19,7 @@ is asserted by this generic analytic result.
 namespace GRWTSK.Analysis.Inequalities.FiniteLogarithmicProfileBounds
 
 open MeasureTheory Set
-open GRWTSK.Analysis.IntegralTransforms GRWTSK.Analysis.Integration
+open GRWTSK.Analysis.IntegralTransforms GRWTSK.Analysis.RealAnalysis.Integration
 
 noncomputable section
 

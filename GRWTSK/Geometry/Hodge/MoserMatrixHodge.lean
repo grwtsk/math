@@ -2,7 +2,7 @@ import GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 
 namespace GRWTSK.Geometry.Hodge.MoserMatrixHodge
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 open GRWTSK.Geometry.Hodge.FiniteGraphCellular
 open GRWTSK.Geometry.Hodge.FiniteMatrixHodge
 

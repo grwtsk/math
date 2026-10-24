@@ -9,14 +9,14 @@ Mathlib Fourier/Schwartz and imported Gaussian individual authors/licenses retai
 Mathematical direction: grwtsk contributors; formal implementation: OpenAI Codex.
 No log-window Gaussian density, Hecke, calibration or physical-row theorem is inferred.
 -/
-import GRWTSK.Analysis.Fourier.SchwartzMoments
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments
 import GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms
 
 namespace GRWTSK.Analysis.MellinTransform.GaussianFourierMoments
 noncomputable section
 open scoped Classical FourierTransform SchwartzMap
 open MeasureTheory
-open GRWTSK.Analysis.Fourier.SchwartzMoments
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments
 open GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
 open GRWTSK.Analysis.MellinTransform.GaussianWindowSeminorms
 

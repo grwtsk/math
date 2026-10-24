@@ -13,7 +13,7 @@ import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.IntervalCases
 import GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
-namespace GRWTSK.LinearAlgebra.JacobiTransfer
+namespace GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
 /-!
 # Exact Jacobi transfer normalization
@@ -36,7 +36,7 @@ universe u
 
 
 
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 /-- Raw general Jacobi transfer. Its determinant need not equal one. -/
 def rawJacobiTransfer {K : Type u} [Field K] (E b aCurrent aPrevious : K) :
@@ -311,4 +311,4 @@ theorem twoSiteJacobi_not_conjugate :
 
 
 
-end GRWTSK.LinearAlgebra.JacobiTransfer
+end GRWTSK.Algebra.LinearAlgebra.JacobiTransfer

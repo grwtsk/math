@@ -21,7 +21,7 @@ it makes no assertion about a single distinguished coefficient vector.
 Research direction: grwtsk contributors. Lean implementation: OpenAI Codex.
 -/
 
-namespace GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+namespace GRWTSK.Algebra.LinearAlgebra.ZeroCoordinateObstruction
 
 noncomputable section
 
@@ -83,4 +83,4 @@ theorem zero_preserving_map_ne_target {E F : Type*} [Zero E] [Zero F]
 
 end
 
-end GRWTSK.LinearAlgebra.ZeroCoordinateObstruction
+end GRWTSK.Algebra.LinearAlgebra.ZeroCoordinateObstruction

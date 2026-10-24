@@ -8,7 +8,7 @@ abstract comparison model. In particular its scalar-linear maps and any cycle
 identity are not asserted to occur in IUT or to be endorsed by a response.
 Source interpretation predicates are parameters, never mathematical axioms.
 -/
-import GRWTSK.LinearAlgebra.OrientedRealLine.Coherence
+import GRWTSK.Algebra.LinearAlgebra.OrientedRealLine.Coherence
 
 set_option autoImplicit false
 
@@ -16,7 +16,7 @@ noncomputable section
 
 namespace GRWTSK.NumberTheory.ArithmeticGeometry.LogThetaComparison
 
-open GRWTSK.LinearAlgebra.OrientedRealLine
+open GRWTSK.Algebra.LinearAlgebra.OrientedRealLine
 
 universe u
 

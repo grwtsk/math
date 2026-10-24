@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.ClosedDiskCauchy
+import GRWTSK.Analysis.ComplexAnalysis.ClosedDiskCauchy
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds
 
 set_option autoImplicit false
@@ -19,7 +19,7 @@ namespace GRWTSK.RiemannHypothesis.ZetaDiskCauchyBounds
 
 open Metric Set
 open CriticalStripHeightDescent
-open GRWTSK.Analysis.Complex.ClosedDiskCauchy
+open GRWTSK.Analysis.ComplexAnalysis.ClosedDiskCauchy
 
 /-- De-normalize the established actual source only away from the pole. -/
 theorem zeta_eq_fractional {z : ℂ} (hz : 0 < z.re) (hz1 : z ≠ 1) :

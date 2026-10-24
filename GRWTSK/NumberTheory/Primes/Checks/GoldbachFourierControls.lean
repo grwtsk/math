@@ -15,7 +15,7 @@ No native evaluator is used.
 
 namespace GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls
 
-open GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open GRWTSK.NumberTheory.Primes.GoldbachWeighted
 open GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier

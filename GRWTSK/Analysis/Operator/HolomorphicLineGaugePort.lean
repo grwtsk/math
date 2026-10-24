@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.Operator.HolomorphicLinePort
-import GRWTSK.Analysis.Complex.HolomorphicLineGaugeTopology
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeTopology
 
 /-!
 # Gauge-covariant transport of the existing line-fiber operators
@@ -11,10 +11,10 @@ operators on individual rank-one fibers, not differential, heat, or unbounded op
 
 namespace GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
 
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicSectionRing (HolomorphicSection)
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineGauge
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
 open GRWTSK.Analysis.Operator.HolomorphicLinePort
 
 universe u

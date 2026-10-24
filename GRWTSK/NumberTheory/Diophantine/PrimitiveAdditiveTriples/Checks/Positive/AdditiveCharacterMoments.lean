@@ -5,7 +5,7 @@ import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdditiveCharacte
 set_option autoImplicit false
 
 open GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
-open GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 open scoped BigOperators
 
 example (M d q : ℕ) [NeZero q] (W : ℕ → ℕ → ℕ → ℂ) (hq : 2 * M < q) :

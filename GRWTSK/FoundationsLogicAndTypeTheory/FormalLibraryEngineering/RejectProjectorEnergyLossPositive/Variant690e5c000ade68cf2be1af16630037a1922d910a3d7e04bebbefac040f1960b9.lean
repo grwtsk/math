@@ -1,8 +1,8 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
+open GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat
 example (mask : Fin 2 → Bool) :
     coordinateProjector mask + coordinateComplement mask = LinearMap.id :=
   coordinateProjector_add_complement mask

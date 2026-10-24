@@ -9,10 +9,10 @@ import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
 
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Spectral.FreeDirichletSpectrum
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
 open Matrix Polynomial Module
-open GRWTSK.Spectral.SturmianFiniteVolume
-open GRWTSK.Spectral.MatrixCountComparison
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
 
 def angle (N : ℕ) (k : Fin N) : ℝ := Real.pi * (k.val+1) / (N+1)
 def eigenvalue (N : ℕ) (k : Fin N) : ℝ := 2 * Real.cos (angle N k)
@@ -176,4 +176,4 @@ theorem freeCount_eq_cosine_count (N : ℕ) (E : ℝ) :
     Multiset.card_map, Finset.card_def, id_eq,
     ← Finset.filter_val, Function.comp_def] using h.symm
 
-end GRWTSK.Spectral.FreeDirichletSpectrum
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum

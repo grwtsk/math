@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D14"]
 ---
 # Algebraic structures: subject addition
 
-[Proposals](../index.md) · [Algebra](../../subjects/algebra/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Algebra](../../subjects/Algebra/index.md) · [Registry](../../registry.md)
 
 ## Problem and source
 

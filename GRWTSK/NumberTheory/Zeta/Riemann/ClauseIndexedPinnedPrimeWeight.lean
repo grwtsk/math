@@ -23,7 +23,7 @@ SOURCE_MAJORANT_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.Logic.Satisfiability
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 
 /-- Clause-arity indexing for the pinned rank-one prime-weight criterion. -/
 abbrev ClauseIndexedPinnedPrimeWeightCriterion

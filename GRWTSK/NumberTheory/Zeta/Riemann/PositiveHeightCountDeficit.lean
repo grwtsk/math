@@ -38,8 +38,8 @@ namespace GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 
 open Set
 open CanonicalZeroDivisor
-open GRWTSK.Combinatorics.WeightedPairBudget
-open GRWTSK.Combinatorics.WeightedInventoryDeficit
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedInventoryDeficit
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget
 open ContourCountDeficit

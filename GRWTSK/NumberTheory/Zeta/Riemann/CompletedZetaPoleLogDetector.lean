@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Complex.MeromorphicLogOrderDetector
+import GRWTSK.Analysis.ComplexAnalysis.MeromorphicLogOrderDetector
 import Mathlib.NumberTheory.LSeries.RiemannZeta
 import Mathlib.Analysis.Complex.CauchyIntegral
 import Mathlib.Tactic
@@ -7,7 +7,7 @@ import Mathlib.Tactic
 specialization of B3/E5. Pole coefficients of −logDeriv are +1; these are not
 residues of the completed function itself. No high-rank source is identified. -/
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CompletedPoleLogDetector
-open GRWTSK.Analysis.Complex.LogarithmicPrincipalPart
+open GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart
 open Filter
 open scoped Topology
 

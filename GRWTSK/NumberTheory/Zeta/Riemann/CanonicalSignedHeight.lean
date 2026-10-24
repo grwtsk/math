@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.ConjugateAnalyticOrder
+import GRWTSK.Analysis.ComplexAnalysis.ConjugateAnalyticOrder
 import GRWTSK.NumberTheory.Zeta.Riemann.LocalZeroSymmetry
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin
 
@@ -32,7 +32,7 @@ theorem im_ne_zero (z : ZeroPoint) : z.1.im ≠ 0 :=
 /-- Finite analytic order, including a hypothetical repeated nontrivial zero. -/
 theorem conjugate_multiplicity (z : ZeroPoint) :
     multiplicity (conjugatePoint z) = multiplicity z := by
-  have h := GRWTSK.Analysis.Complex.ConjugateAnalyticOrder.finite_order_conjugation
+  have h := GRWTSK.Analysis.ComplexAnalysis.ConjugateAnalyticOrder.finite_order_conjugation
     (f := riemannZeta) (z := z.1) (n := multiplicity z)
     (fun w => by simp [riemannZeta_conj])
     (analyticAt_point z) (analyticAt_point (conjugatePoint z))

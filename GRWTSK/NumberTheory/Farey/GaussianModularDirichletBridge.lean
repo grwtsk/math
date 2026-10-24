@@ -9,7 +9,7 @@ transitive Lean build, kernel check, and axiom audit are completed.
 -/
 import GRWTSK.NumberTheory.Farey.ResolvableQuintic
 import GRWTSK.NumberTheory.Primes.QuadraticGaussianLine
-import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector
 import GRWTSK.NumberTheory.Moebius.DirichletNonunitResidueObstruction
 import Mathlib.Tactic
 
@@ -90,16 +90,16 @@ theorem modularDet_eq_one (I : Cell) (q : ℕ) :
 /-- The additive projector recognizes the mediant *numerator* modulo `q`.
 No lift from a residue equality to an unbounded integer equality is used. -/
 theorem mediant_numerator_projector (I : Cell) (q : ℕ) [NeZero q] :
-    GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector
+    GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterProjector
       q I.leftNum I.rightNum (I.leftNum + I.rightNum) = 1 := by
-  rw [GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector_eq_modular_indicator]
+  rw [GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterProjector_eq_modular_indicator]
   simp
 
 /-- The corresponding exact additive projector for the mediant denominator. -/
 theorem mediant_denominator_projector (I : Cell) (q : ℕ) [NeZero q] :
-    GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector
+    GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterProjector
       q I.leftDen I.rightDen (I.leftDen + I.rightDen) = 1 := by
-  rw [GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector_eq_modular_indicator]
+  rw [GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterProjector_eq_modular_indicator]
   simp
 
 /-- The endpoint-sign eye together with exact Gaussian and modular certificates.
@@ -110,9 +110,9 @@ def GaussianModularEye (p : Polynomial ℚ) (q : ℕ) [NeZero q]
   ResolvableEye p I ∧
     (leftGaussian I * conjugateRightGaussian I).im = 1 ∧
     modularDet I q = 1 ∧
-    GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector
+    GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterProjector
       q I.leftNum I.rightNum (I.leftNum + I.rightNum) = 1 ∧
-    GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterProjector
+    GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterProjector
       q I.leftDen I.rightDen (I.leftDen + I.rightDen) = 1
 
 /-- Gaussian/modular decoration adds *no* assertion beyond a resolved eye:
@@ -175,9 +175,9 @@ theorem nonunitEye_right_dirichlet_vanishes
 /-- The full additive-frequency average still detects the right endpoint's
 residue exactly, even though that residue is a multiplicative nonunit. -/
 theorem nonunitEye_right_additive_selector :
-    GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterAverage 4
+    GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterAverage 4
       (((nonunitEye.rightNum : ℕ) : ZMod 4) - 2) = 1 := by
-  rw [GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterAverage_eq_indicator]
+  rw [GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.FiniteAdditiveProjector.characterAverage_eq_indicator]
   simp [nonunitEye]
 
 /-- Joint witness: the same true Gaussian/modular Farey eye cannot make a

@@ -7,12 +7,12 @@ import GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement
 import GRWTSK.NumberTheory.Zeta.Riemann.ScrewQuarticPathControl
 import GRWTSK.NumberTheory.Zeta.Riemann.LinearMomentComponents
-import GRWTSK.Spectral.Sheaf.SymmetryResolvedQuadraticDescent
+import GRWTSK.Analysis.OperatorTheory.SpectralTheory.Sheaf.SymmetryResolvedQuadraticDescent
 import GRWTSK.Analysis.ErrorBounds.ScrewSpectralReconstruction
-import GRWTSK.LinearAlgebra.Matrix.SchurFeshbachJet
-import GRWTSK.Spectral.Sheaf.SynchronizedSchurJet
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+import GRWTSK.Analysis.OperatorTheory.SpectralTheory.Sheaf.SynchronizedSchurJet
 import GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
-import GRWTSK.LinearAlgebra.Matrix.QuantumReadiness
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.QuantumReadiness
 import GRWTSK.Analysis.ErrorBounds.SchurJetScrewReconstruction
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport

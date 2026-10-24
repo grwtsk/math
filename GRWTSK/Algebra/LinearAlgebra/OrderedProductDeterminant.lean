@@ -6,7 +6,7 @@ import GRWTSK.Algebra.OrderedProduct
 import GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 import GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
 
-namespace GRWTSK.LinearAlgebra.OrderedProductDeterminant
+namespace GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant
 
 /-!
 # Frozen ordered products and step-dependent gauges
@@ -36,13 +36,13 @@ universe u v w
 open GRWTSK.Algebra
 
 
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 
-open GRWTSK.LinearAlgebra.JacobiTransfer
+open GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
 
-open GRWTSK.LinearAlgebra.OrderedTransfer
+open GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
 
 /-- Determinant-one transfer factors give a determinant-one ordered product. -/
 theorem det_orderedProduct_eq_one {R : Type u} [CommRing R]
@@ -63,4 +63,4 @@ theorem det_weightedJacobi_orderedProduct {K : Type u} [Field K]
 
 
 
-end GRWTSK.LinearAlgebra.OrderedProductDeterminant
+end GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant

@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Boundary and source-identity controls. SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
 namespace GRWTSK.RiemannHypothesis.ThirdBlockControls
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 theorem base_boundaries : ConcreteNewtonThirdBlockData.base 0 = 129 ∧

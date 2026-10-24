@@ -26,7 +26,7 @@ The finite family
 is supplied to the [uniform Gaussian seminorm estimate](gaussian-window-seminorms.md).
 Multiplying the actual source-pair bounds by $r^a$ and proving positive-real
 power cancellation gives one nonnegative budget independent of $Z,j$.
-The separately proved [Fourier-moment transfer](../Fourier/schwartz-moments.md)
+The separately proved [Fourier-moment transfer](../HarmonicAnalysis/FourierAnalysis/schwartz-moments.md)
 then gives the displayed bound. Its integrability helper applies to the
 actual Gaussian Schwartz map.
 

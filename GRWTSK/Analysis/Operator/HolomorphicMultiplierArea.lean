@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Complex.HolomorphicAreaMean
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaMean
 import GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture
 import Mathlib.MeasureTheory.Integral.Lebesgue.Map
 import Mathlib.MeasureTheory.Measure.Restrict
@@ -19,19 +19,19 @@ namespace GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
 
 open Filter Topology MeasureTheory Metric Set
 open scoped ENNReal
-open scoped GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
+open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicSectionRing (HolomorphicSection)
-open GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology (constantSection)
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionEnergy
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Complex.HolomorphicAreaMean
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicEvaluationTopology (constantSection)
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaMean
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete

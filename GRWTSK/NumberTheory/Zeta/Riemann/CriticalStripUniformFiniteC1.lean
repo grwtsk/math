@@ -21,7 +21,7 @@ open Complex Finset
 open CenteredMellin CenteredMellin.SexticPrimitive
 open CenteredMellin.SexticPrimitive.DerivativeSixteen
 open RationalFiniteEvaluation
-open GRWTSK.Analysis.Complex.SymmetricPair.Rational
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair.Rational
 noncomputable section
 
 structure Config where

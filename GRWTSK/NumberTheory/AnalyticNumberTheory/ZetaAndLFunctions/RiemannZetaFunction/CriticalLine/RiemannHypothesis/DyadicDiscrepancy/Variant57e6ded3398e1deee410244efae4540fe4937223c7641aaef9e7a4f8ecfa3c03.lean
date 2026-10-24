@@ -9,7 +9,7 @@ No claim of an all-scale arithmetic estimate is made by this module.
 import Mathlib
 import GRWTSK.Analysis.GreenKernel.UnitInterval
 import GRWTSK.Analysis.MeasureTheory.Integral.Centering
-import GRWTSK.Analysis.Integration.UnitIntervalPrimitives
+import GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
 
 /-!
 # Literal prime-power discrepancy on (X,2X]
@@ -203,11 +203,11 @@ theorem mass1_sq_le_energy (X : ℕ) : (mass1 X)^2≤augmentedEnergy X := by
 /-- The centered expression is not a replacement of either boundary channel. -/
 theorem raw_cumulative_energy {X : ℕ} (hX : 0<X) :
     (∫ t, cumulative X t^2 ∂unitVolume)=greenEnergy X+(center X)^2 := by
-  have h := GRWTSK.MeasureTheory.Integral.Centering.reconstruct_second_moment
+  have h := GRWTSK.Analysis.MeasureTheory.Integral.Centering.reconstruct_second_moment
     unitVolume (cumulative X) (cumulative_integrable X) (cumulative_square_integrable X)
-  simpa only [GRWTSK.MeasureTheory.Integral.Centering.mean,
-    GRWTSK.MeasureTheory.Integral.Centering.energy,
-    GRWTSK.MeasureTheory.Integral.Centering.centered,
+  simpa only [GRWTSK.Analysis.MeasureTheory.Integral.Centering.mean,
+    GRWTSK.Analysis.MeasureTheory.Integral.Centering.energy,
+    GRWTSK.Analysis.MeasureTheory.Integral.Centering.centered,
     integral_cumulative hX, greenEnergy] using h
 
 /-- Literal Mellin test; all powers use the real logarithm of positive coordinates. -/

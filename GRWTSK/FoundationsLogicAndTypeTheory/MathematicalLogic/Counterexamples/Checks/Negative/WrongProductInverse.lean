@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
-open GRWTSK.LinearAlgebra.CommonJCounterexamples
+open GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
 set_option autoImplicit false
 example : hostileSign * (hostileLower * hostileUpper) * hostileSign⁻¹ = (hostileLower * hostileUpper)⁻¹ := by
   apply Units.ext

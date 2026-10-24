@@ -22,7 +22,7 @@ These finite matrix results admit no surrounding circuit or zeta claim.
 
 set_option autoImplicit false
 
-namespace GRWTSK.LinearAlgebra.Matrix.TraceRank
+namespace GRWTSK.Algebra.LinearAlgebra.MatrixTheory.TraceRank
 
 open scoped BigOperators ComplexOrder
 open GRWTSK.Analysis.FiniteSquareSum
@@ -73,4 +73,4 @@ theorem gram_rank_ge_trace_ratio {ι κ : Type*} [Fintype ι] [Fintype κ]
   have h := hermitian_rank_ge_trace_ratio (Matrix.isHermitian_conjTranspose_mul_self A) hsecond
   simpa only [Matrix.rank_conjTranspose_mul_self] using h
 
-end GRWTSK.LinearAlgebra.Matrix.TraceRank
+end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.TraceRank

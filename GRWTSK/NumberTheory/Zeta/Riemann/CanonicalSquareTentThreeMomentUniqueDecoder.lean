@@ -4,7 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Not root imported.
 -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss
-import GRWTSK.Logic.InformationLoss.FactorizationUniqueReconstruction
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.FactorizationUniqueReconstruction
 
 /-!
 # Unique decoding of the actual augmented canonical-tent coefficient profile
@@ -26,7 +26,7 @@ universe u
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeMomentUniqueDecoder
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.RiemannHypothesis
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss

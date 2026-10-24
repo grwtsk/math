@@ -15,7 +15,7 @@ certificates. NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.ReflectedStripControls
 
 open Set
-open GRWTSK.Analysis.Complex.GammaVerticalBound
+open GRWTSK.Analysis.ComplexAnalysis.GammaVerticalBound
 
 /-- The negative strip maps into precisely the Gamma strip used by the supplier. -/
 theorem reflected_interval (σ : ℝ) (hσ : σ ∈ Icc (-3 : ℝ) 0) :

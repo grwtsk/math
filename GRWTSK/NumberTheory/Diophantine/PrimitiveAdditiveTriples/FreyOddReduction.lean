@@ -9,7 +9,7 @@ HasMultiplicativeReduction at every odd prime. No minimality at two,
 conductor exponent, splitness, Tate curve, or ABC upper bound is asserted.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedJInvariant
 import Mathlib.RingTheory.DedekindDomain.Dvr
 import Mathlib.RingTheory.Ideal.Maximal
@@ -20,7 +20,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddReduction
 
 open WeierstrassCurve IsDedekindDomain.HeightOneSpectrum
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
 
 /-- The genuine prime ideal (p) in Z, not a supplied bad-place label. -/
 def primePlace (p : ℕ) [Fact p.Prime] : IsDedekindDomain.HeightOneSpectrum ℤ where

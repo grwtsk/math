@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.ReciprocalZetaQuadraticKernel
 import Mathlib.MeasureTheory.Integral.Prod
 import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 

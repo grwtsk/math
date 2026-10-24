@@ -10,7 +10,7 @@ This module proves local algebra/analysis and conditional returns, not P04.
 Angular-frequency Parseval needs a separately checked convention adapter. -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Analysis.Waveform
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform
 open scoped BigOperators
 
 /-- Completed finite square, retaining all ordered off-diagonal terms. -/
@@ -28,4 +28,4 @@ theorem finite_ordered_energy {ι : Type*} [DecidableEq ι]
   by_cases h : i=j <;> simp [h]
 
 
-end GRWTSK.Analysis.Waveform
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform

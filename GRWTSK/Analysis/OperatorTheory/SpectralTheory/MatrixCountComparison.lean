@@ -9,7 +9,7 @@ import Mathlib.Tactic
 
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Spectral.MatrixCountComparison
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
 
 open scoped RealInnerProductSpace
 open Matrix
@@ -244,4 +244,4 @@ theorem eigenvalueCount_difference_bounds_of_kernel
       (eigenvalueCount hB E : ℝ) + Module.finrank ℝ F := by exact_mod_cast hab
   exact abs_le.mpr ⟨by linarith, by linarith⟩
 
-end GRWTSK.Spectral.MatrixCountComparison
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison

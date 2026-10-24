@@ -9,7 +9,7 @@ This is a fixed-source rational coefficient result, not complete H0,
 a completed real operator, a global source-height theorem, or abc.
 Unelaborated source proof scripts: NOT_RUN / NOT_KERNEL_AUDITED.
 -/
-import GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+import GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechPadicNorm
 
 set_option autoImplicit false
@@ -18,9 +18,9 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechArchimedeanNorm
 
 open FreyWeightedBasis FreyCechPadicNorm
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 open GRWTSK.NumberTheory.Padics
-open GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum
+open GRWTSK.Algebra.LinearAlgebra.ThreeCellWeightedMinimum
 
 local instance slotsNonempty (k : ℕ) : Nonempty (Slot k) :=
   ⟨(Sum.inl ⟨0, Nat.zero_lt_succ k⟩, 0)⟩

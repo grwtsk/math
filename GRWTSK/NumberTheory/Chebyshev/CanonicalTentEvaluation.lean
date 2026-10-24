@@ -20,7 +20,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation
 open scoped BigOperators
 open GRWTSK.RiemannHypothesis
 open CanonicalZeroDivisor EnclosedZeroInventory
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure
 open RationalMellinFamily (Member memberAt)
 open RationalTentEnclosure (CoordinateData radiusAt)

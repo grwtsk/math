@@ -8,7 +8,7 @@ arithmetic budget. This is not a minimal regular scheme, conductor, Neron
 model, integral marked-port theorem, or a radical-height upper estimate.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.UnitScaleReduction
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitScaleReduction
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoBranchDecision
 
 set_option autoImplicit false
@@ -17,9 +17,9 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyGlobalMinimalDiscriminant
 
 open WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
-open GRWTSK.AlgebraicGeometry.EllipticCurve.UnitScaleReduction
-open GRWTSK.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.UnitScaleReduction
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.DiscriminantWindowMinimality
 open FreyOddReduction FreyTwoLowDepth FreyTwoMinimalBudget FreyTwoBranchDecision
 open GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess
 

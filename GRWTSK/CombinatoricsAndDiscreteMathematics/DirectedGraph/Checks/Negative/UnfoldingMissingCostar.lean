@@ -6,8 +6,8 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
-open GRWTSK.Combinatorics.DirectedGraph.PathUnfolding.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding.Checks.Positive
 
 /- The imported accepted positive module proves the actual one-loop counterexample.
 Outgoing-star bijectivity does not supply the missing incoming-star obligation. -/

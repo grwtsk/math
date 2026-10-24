@@ -45,7 +45,7 @@ open scoped Interval BigOperators
 open GRWTSK.Analysis.Real.TentWeight
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.Analysis.Real.RationalTentCorrectionLowerBound
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 
 noncomputable section
 

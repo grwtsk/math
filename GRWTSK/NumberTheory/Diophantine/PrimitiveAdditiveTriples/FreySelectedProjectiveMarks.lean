@@ -7,7 +7,7 @@ The two colliding labels are retained; no recovery, etaleness, Neron-model,
 proper-model universal property, jet-lattice or height estimate is inferred.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.ProjectiveHalfScaleMarks
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.ProjectiveHalfScaleMarks
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySelectedSplitReduction
 
 set_option autoImplicit false
@@ -16,8 +16,8 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySelectedProjectiveMarks
 
 open WeierstrassCurve
-open GRWTSK.AlgebraicGeometry.EllipticCurve.ProjectiveHalfScaleMarks
-open GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.ProjectiveHalfScaleMarks
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale
 open FreyOddReduction FreyTwoBranchDecision FreyGlobalMinimalDiscriminant
 
 local instance : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩

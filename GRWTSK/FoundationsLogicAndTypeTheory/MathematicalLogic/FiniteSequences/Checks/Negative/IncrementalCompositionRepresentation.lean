@@ -1,8 +1,8 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalComposition
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
-open GRWTSK.Logic.FiniteSequences.IncrementalDictionary
-open GRWTSK.Logic.FiniteSequences.IncrementalComposition
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IncrementalComposition
 
 private def firstBatch : List (Nat × Nat) := [(11, 7), (12, 8)]
 private def secondBatch : List (Nat × Nat) := [(13, 7)]

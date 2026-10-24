@@ -40,7 +40,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.RationalRectangleRealEdgeEnclosure
 
 open GRWTSK.Analysis.Real.RationalClosedInterval
-open GRWTSK.Analysis.Complex.RationalComplexBall
+open GRWTSK.Analysis.ComplexAnalysis.RationalComplexBall
 open CanonicalZeroDivisor
 open AdmissibleRectangles
 open PositiveHeightCountDeficit

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.RationalPowerIntegerSeed
+import GRWTSK.Analysis.ComplexAnalysis.RationalPowerIntegerSeed
 import GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonPacket
 import Mathlib.Tactic.NormNum
 
@@ -20,7 +20,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonTerminalSeed
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
 open RationalPowerIntegerSeed
 open GRWTSK.Analysis.Real.RationalLogEnclosure

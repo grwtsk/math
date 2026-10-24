@@ -1,9 +1,9 @@
-import GRWTSK.LinearAlgebra.HodgeEquivalence
+import GRWTSK.Algebra.LinearAlgebra.HodgeEquivalence
 import GRWTSK.Geometry.Hodge.DegreeZeroCohomology
 
 namespace GRWTSK.Geometry.Hodge.HZeroTransport
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 open GRWTSK.Geometry.Hodge.DegreeZeroCohomology
 
 universe u v₀ v₁ w₀ w₁ h c h'
@@ -21,7 +21,7 @@ variable {B : TwoTermHodgeData R B₀ B₁}
 namespace HodgeEquiv
 
 /-- Exact Hodge equivalence induces an equivalence of degree-zero cocycle spaces. -/
-def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.cocycleEquiv
+def _root_.GRWTSK.Algebra.LinearAlgebra.FramedFiberPort.HodgeEquiv.cocycleEquiv
     (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B where
   toFun x :=
     ⟨P.equiv0 x, by
@@ -32,7 +32,7 @@ def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.cocycleEquiv
     ⟨P.equiv0.symm y, by
       have h := P.symm.delta_apply (y : B₀)
       rw [y.property] at h
-      simpa [GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.symm] using h.symm⟩
+      simpa [GRWTSK.Algebra.LinearAlgebra.FramedFiberPort.HodgeEquiv.symm] using h.symm⟩
   left_inv x := by
     apply Subtype.ext
     exact P.equiv0.symm_apply_apply x
@@ -51,7 +51,7 @@ abbrev cocycleEquiv (P : HodgeEquiv A B) : Cocycle0 A ≃ₗ[R] Cocycle0 B :=
   P.cocycleEquiv
 
 /-- Transport a complete degree-zero cohomology model through an exact Hodge equivalence. -/
-def _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHZeroModel
+def _root_.GRWTSK.Algebra.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHZeroModel
     {HZero : Type h} [AddCommGroup HZero] [Module R HZero]
     (P : HodgeEquiv A B) (M : HZeroModel A HZero) :
     HZeroModel B HZero where
@@ -64,7 +64,7 @@ abbrev transportHZeroModel
   P.transportHZeroModel M
 
 /-- Transport the exact equality `ker Δ₀ = ker δ` through an exact Hodge equivalence. -/
-theorem _root_.GRWTSK.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHarmonicKernel
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.FramedFiberPort.HodgeEquiv.transportHarmonicKernel
     (P : HodgeEquiv A B) (K : HarmonicKernelExact A) :
     HarmonicKernelExact B where
   harmonic_iff_cocycle := by

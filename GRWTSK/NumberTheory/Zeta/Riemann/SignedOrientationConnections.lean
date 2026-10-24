@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI GPT-5.6 Sol.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.LinearAlgebra.SignedOrientationBridge
+import GRWTSK.Algebra.LinearAlgebra.SignedOrientationBridge
 import GRWTSK.Algebra.Polynomial.SignedRootTrace
 import GRWTSK.Analysis.InnerProductSpace.SignedWindowGramIdentity
 import GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimit
@@ -33,7 +33,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections
 
-open GRWTSK.LinearAlgebra.SignedOrientationBridge
+open GRWTSK.Algebra.LinearAlgebra.SignedOrientationBridge
 open GRWTSK.Polynomial.SignedRootTrace
 open GRWTSK.NumberTheory.Zeta.Riemann.ScrewQuarticPathControl
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe

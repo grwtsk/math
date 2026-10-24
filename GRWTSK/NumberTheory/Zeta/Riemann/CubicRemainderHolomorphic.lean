@@ -23,7 +23,7 @@ open MeasureTheory Set Filter
 open scoped Topology Interval BigOperators
 open GRWTSK.Analysis.Real.PowerCellMajorant
 open GRWTSK.Analysis.Real.CubicEulerMaclaurin
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.RiemannHypothesis.CubicPowerSummation
 open GRWTSK.RiemannHypothesis.CubicRemainder
 

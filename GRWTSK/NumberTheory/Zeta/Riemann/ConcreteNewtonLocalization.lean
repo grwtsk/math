@@ -31,7 +31,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED / SOURCE_ACCEPTANCE_OPEN.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonLocalization
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open CanonicalZeroDivisor ConcreteNewtonCriticalLine
 
 /-- A new local domain, not a replacement for any source-evaluation radius. -/

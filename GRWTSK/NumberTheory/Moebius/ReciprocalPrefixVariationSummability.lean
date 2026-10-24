@@ -18,7 +18,7 @@ open scoped BigOperators
 
 namespace GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationSummability
 
-open GRWTSK.Analysis.Integration.ExponentialInterval
+open GRWTSK.Analysis.RealAnalysis.Integration.ExponentialInterval
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 open GRWTSK.NumberTheory.Moebius.ReciprocalPrefixKernel
 open GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationEnergy

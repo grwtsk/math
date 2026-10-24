@@ -1,4 +1,4 @@
-import GRWTSK.Interfaces.GraphHodgePortCore
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 import Lean.Util.CollectAxioms
 namespace GRWTSK.HostileAxiomPositive
 theorem valid : True := True.intro

@@ -37,7 +37,7 @@ namespace GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge
 
 open GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 open GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion
-open GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.DynamicSoficSpectralCover
 
 /-- The base zero problem is exactly the repository's selected nontrivial
 Riemann-zeta zeros with the literal critical-line predicate. -/
@@ -136,12 +136,12 @@ theorem zetaCriticalPlacement_transports_with_rightContext_certificate
     (process : DynamicSpectralCover ℂ Obs State Bool Spectral)
     (rationalEventually :
       ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
-        GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+        GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover.EventuallySoficTrace
           (process.labelTrace z))
     (algebraicOnLineEventually :
       ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
         AlgebraicReal (zetaHeight z) →
-          GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+          GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover.EventuallySoficTrace
             (process.labelTrace z))
     (hcontexts : ZetaUnboundedTailContexts process.labelTrace)
     (hZeta : ZetaCriticalPlacement) :
@@ -173,12 +173,12 @@ theorem zetaCriticalPlacement_transports_with_all_capacityCertificates
     (process : DynamicSpectralCover ℂ Obs State Bool Spectral)
     (rationalEventually :
       ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
-        GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+        GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover.EventuallySoficTrace
           (process.labelTrace z))
     (algebraicOnLineEventually :
       ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
         AlgebraicReal (zetaHeight z) →
-          GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+          GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover.EventuallySoficTrace
             (process.labelTrace z))
     (hall : ∀ capacity : ℕ,
       ZetaTailContextCapacityCertificate process.labelTrace capacity)

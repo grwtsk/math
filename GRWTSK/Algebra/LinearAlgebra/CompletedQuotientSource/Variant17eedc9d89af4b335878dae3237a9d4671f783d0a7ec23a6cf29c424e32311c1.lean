@@ -1,7 +1,7 @@
 import Mathlib
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ToeplitzHankel
 import GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic
-import GRWTSK.Analysis.NormedSpace.SimilarityReconstruction
+import GRWTSK.Analysis.FunctionalAnalysis.BanachSpaces.NormedSpaces.SimilarityReconstruction
 
 /-!
 Exact zero-time source declarations for the supplied manuscripts.
@@ -15,7 +15,7 @@ open scoped Matrix.Norms.L2Operator
 namespace GRWTSK.NumberTheory.Zeta.CompletedQuotientSource
 open GRWTSK.Analysis.SublinearDyadic
 open GRWTSK.Analysis.SimilarityReconstruction
-open GRWTSK.LinearAlgebra.ToeplitzHankel
+open GRWTSK.Algebra.LinearAlgebra.ToeplitzHankel
 
 /-- Entire xi normalization, including both formerly singular endpoints. -/
 def xi (s : ℂ) : ℂ := (s*(s-1)*completedRiemannZeta₀ s+1)/2

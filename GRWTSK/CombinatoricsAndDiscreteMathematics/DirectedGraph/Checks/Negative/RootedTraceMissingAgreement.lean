@@ -5,9 +5,9 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 
 set_option autoImplicit false
 
-open GRWTSK.Combinatorics.DirectedGraph.PrefixInventory
-open GRWTSK.Logic.FiniteSequences.DictionaryRevision
-open GRWTSK.Combinatorics.DirectedGraph.RootedTraceRevision.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PrefixInventory
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.DictionaryRevision
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.RootedTraceRevision.Checks.Positive
 
 /- In-bounds old indices cannot supply missing agreement of their complete rooted meanings. -/
 example : AgreesOnReferences (inventory oldRows) (inventory appendedRows)

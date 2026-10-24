@@ -1,9 +1,9 @@
 import GRWTSK.Geometry.Hodge.FiniteEdgeRealization
-import GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat
+import GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat
 
 namespace GRWTSK.Geometry.Hodge.FiniteEdgeScalarExtension
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 open GRWTSK.Geometry.Hodge.FiniteEdgeRealization
 
 /-- Positive Euclidean pairing on the real two-vertex cochains. -/

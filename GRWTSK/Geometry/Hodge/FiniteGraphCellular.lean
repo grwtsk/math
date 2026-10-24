@@ -1,5 +1,5 @@
 import Mathlib
-import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser
+import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.UnitDistanceGraph.Moser
 
 namespace GRWTSK.Geometry.Hodge.FiniteGraphCellular
 
@@ -138,7 +138,7 @@ end OrientedIncidence
 
 namespace Moser
 
-open GRWTSK.Combinatorics.GraphTheory.HadwigerNelson
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson
 
 /-- The eleven source-oriented Moser edges as an exact finite edge type. -/
 abbrev Edge := {p : Fin 7 × Fin 7 // p ∈ moserEdges}

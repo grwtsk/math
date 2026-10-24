@@ -1,7 +1,7 @@
-import GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel
-import GRWTSK.Analysis.Fourier.QuadraticKernelTruncation
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.ReciprocalZetaQuadraticKernel
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.QuadraticKernelTruncation
 import GRWTSK.Analysis.MeasureTheory.Integral.QuadraticFourierFubini
-import GRWTSK.Analysis.Fourier.AngularFrequencyParseval
+import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.AngularFrequencyParseval
 import Mathlib.Analysis.Fourier.Inversion
 
 /-! Actual reciprocal-right-line Fourier inversion and source-energy identification.

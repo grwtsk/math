@@ -4,7 +4,7 @@ Classical implications; imported Mathlib contributions retain their authorship. 
 import GRWTSK.Algebra.LinearAlgebra.Schrodinger.SampledPotential
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Analysis.Waveform
+namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform
 
 /-- Labels classify formula families; observational equality requires its own proof. -/
 inductive PotentialFamily where
@@ -37,4 +37,4 @@ theorem sampled_alias :
 theorem waveform_equality_implies_samples {v w : ℝ → ℝ} (h : v = w) (α θ : ℝ) :
     SameSampledPotential v w α θ := by subst w; intro n; rfl
 
-end GRWTSK.Analysis.Waveform
+end GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.Waveform

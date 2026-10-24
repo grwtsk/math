@@ -94,7 +94,7 @@ structure KnownZetaExplicitFormulaChannels where
     ∀ z : ZeroPoint,
       Tendsto (fun s =>
         (s - z.1) *
-          (-GRWTSK.Analysis.Complex.LogarithmicPrincipalPart.logDeriv
+          (-GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.logDeriv
             riemannZeta s))
         (𝓝[≠] z.1)
         (𝓝 (-(CanonicalZeroDivisor.multiplicity z : ℂ)))
@@ -136,7 +136,7 @@ multiplicity in the logarithmic residue. -/
 theorem pinned_nontrivial_zero_log_residue (z : ZeroPoint) :
     Tendsto (fun s =>
       (s - z.1) *
-        (-GRWTSK.Analysis.Complex.LogarithmicPrincipalPart.logDeriv
+        (-GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.logDeriv
           riemannZeta s))
       (𝓝[≠] z.1)
       (𝓝 (-(CanonicalZeroDivisor.multiplicity z : ℂ))) :=

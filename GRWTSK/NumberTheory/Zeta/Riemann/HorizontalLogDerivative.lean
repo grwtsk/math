@@ -21,7 +21,7 @@ namespace GRWTSK.RiemannHypothesis.HorizontalLogDerivative
 
 open Set Filter
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Complex.DigammaShift
+open GRWTSK.Analysis.ComplexAnalysis.DigammaShift
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues

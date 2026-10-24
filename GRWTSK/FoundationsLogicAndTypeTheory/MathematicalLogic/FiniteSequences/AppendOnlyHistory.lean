@@ -25,7 +25,7 @@ refinement or external authorization is asserted.
 
 set_option autoImplicit false
 
-namespace GRWTSK.Logic.FiniteSequences.AppendOnlyHistory
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.AppendOnlyHistory
 
 open IndexedDictionary DictionaryRevision
 
@@ -145,4 +145,4 @@ theorem append_repack_stale_slot_counterexample :
     have hslot := hagreement (11, 0) (by decide)
     simp [pack] at hslot
 
-end GRWTSK.Logic.FiniteSequences.AppendOnlyHistory
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.AppendOnlyHistory

@@ -1,16 +1,16 @@
-import GRWTSK.Logic.SimultaneousProofPortfolio
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 import GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
-import GRWTSK.Analysis.Complex.HolomorphicSectionRing
-import GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing
+import GRWTSK.Analysis.ComplexAnalysis.HolomorphicEvaluationSpectrum
 import GRWTSK.Topology.Algebra.PrimeSpectrumPort
-import GRWTSK.AlgebraicGeometry.AffineSpecPort
-import GRWTSK.AlgebraicGeometry.AffineStructureSheafPort
-import GRWTSK.AlgebraicGeometry.AnalyticAffineBridge
+import GRWTSK.Geometry.AlgebraicGeometry.AffineSpecPort
+import GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort
+import GRWTSK.Geometry.AlgebraicGeometry.AnalyticAffineBridge
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio
 
-open GRWTSK.Logic.SimultaneousProofArchitecture
-open GRWTSK.Logic.SimultaneousProofPortfolio
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture
 open GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal
 
@@ -23,41 +23,41 @@ structure OpenObligations where
 
 /-- The complete restriction path on actual holomorphic section rings carries both selected laws. -/
 def holomorphicSectionRingClaim : Prop :=
-  GRWTSK.Analysis.Complex.HolomorphicSectionRing.simultaneousProperty.Holds
-    GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+  GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.simultaneousProperty.Holds
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.Fixtures.restrictionPath.composite
 
 /-- Proof that the whole holomorphic-section restriction path is simultaneously holomorphic-fiber
 preserving and a continuous ring homomorphism. -/
 theorem holomorphicSectionRingClaim_proof : holomorphicSectionRingClaim :=
-  GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.certified
+  GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.Fixtures.restrictionPath.certified
 
 /-- Evaluation prime ideals commute with the complete holomorphic-section restriction path. -/
 def holomorphicEvaluationSpectrumClaim : Prop :=
-  GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate
-    GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+  GRWTSK.Analysis.ComplexAnalysis.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.Fixtures.restrictionPath.composite
 
 /-- Proof of evaluation-spectrum naturality for the complete restriction path. -/
 theorem holomorphicEvaluationSpectrumClaim_proof : holomorphicEvaluationSpectrumClaim :=
-  GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate.canonical
-    GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite
+  GRWTSK.Analysis.ComplexAnalysis.HolomorphicEvaluationSpectrum.EvaluationNaturalityCertificate.canonical
+    GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.Fixtures.restrictionPath.composite
 
 /-- Every supplied coordinate-ring map into whole-plane holomorphic sections remains pointwise
 compatible with the complete restriction to the real axis. -/
 def analyticAffineBridgeClaim : Prop :=
   ∀ (R : CommRingCat)
-    (C : GRWTSK.AlgebraicGeometry.AnalyticAffineBridge.Bridge R
-      GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.whole)
-    (z : GRWTSK.Analysis.Complex.HolomorphicRestriction.Fixtures.realAxis.carrier),
+    (C : GRWTSK.Geometry.AlgebraicGeometry.AnalyticAffineBridge.Bridge R
+      GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.whole)
+    (z : GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction.Fixtures.realAxis.carrier),
     (C.restrict
-      GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite).pointMap z =
+      GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.Fixtures.restrictionPath.composite).pointMap z =
       C.pointMap
         ⟨z.1,
-          GRWTSK.Analysis.Complex.HolomorphicSectionRing.Fixtures.restrictionPath.composite.subset
+          GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing.Fixtures.restrictionPath.composite.subset
             z.2⟩
 
 /-- Proof of the generic analytic-affine restriction law. -/
 theorem analyticAffineBridgeClaim_proof : analyticAffineBridgeClaim :=
-  GRWTSK.AlgebraicGeometry.AnalyticAffineBridge.Fixtures.restrictionPath_pointMap
+  GRWTSK.Geometry.AlgebraicGeometry.AnalyticAffineBridge.Fixtures.restrictionPath_pointMap
 
 /-- The exact arithmetic ring tower induces a continuous map of prime spectra. -/
 def primeSpectrumTopologyClaim : Prop :=
@@ -72,41 +72,41 @@ theorem primeSpectrumTopologyClaim_proof : primeSpectrumTopologyClaim :=
 /-- The same arithmetic ring tower carries an actual affine-scheme morphism at every stage. -/
 def affineSchemeClaim : Prop :=
   GRWTSK.Topology.PortFiber.ContinuousCertificate
-    GRWTSK.AlgebraicGeometry.AffineSpecPort.system
-    GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTowerPath.composite
+    GRWTSK.Geometry.AlgebraicGeometry.AffineSpecPort.system
+    GRWTSK.Geometry.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTowerPath.composite
 
 /-- Proof of continuity for the underlying map of the actual affine-scheme path. -/
 theorem affineSchemeClaim_proof : affineSchemeClaim :=
-  GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTower_continuous
+  GRWTSK.Geometry.AlgebraicGeometry.AffineSpecPort.Fixtures.arithmeticTower_continuous
 
 /-- The arithmetic ring morphism is recovered, up to the canonical affine global-section
 isomorphisms, from the actual affine scheme path. -/
 def affineGlobalSectionsClaim : Prop :=
   Nonempty
     (CategoryTheory.Arrow.mk
-        GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTowerPath.composite ≅
+        GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTowerPath.composite ≅
       CategoryTheory.Arrow.mk
         ((_root_.AlgebraicGeometry.Spec.map
-          GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTowerPath.composite).appTop))
+          GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTowerPath.composite).appTop))
 
 /-- Proof that the affine global-section path recovers the original arithmetic ring morphism. -/
 theorem affineGlobalSectionsClaim_proof : affineGlobalSectionsClaim :=
-  GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTower_recovers_original
+  GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.arithmeticTower_recovers_original
 
 /-- Every stalk map in the rational-to-complex affine `Spec` stage is a local ring homomorphism. -/
 def affineStalkLocalityClaim : Prop :=
   ∀ x : _root_.AlgebraicGeometry.Spec
-      GRWTSK.AlgebraicGeometry.AffineSpecPort.Fixtures.complex,
+      GRWTSK.Geometry.AlgebraicGeometry.AffineSpecPort.Fixtures.complex,
     IsLocalHom
-      (GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.stalkMap
-        GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.rationalToComplex x).hom
+      (GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.stalkMap
+        GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.rationalToComplex x).hom
 
 /-- Proof of local-ring compatibility at every exact complex affine point. -/
 theorem affineStalkLocalityClaim_proof : affineStalkLocalityClaim := by
   intro x
   exact
-    GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.stalkMap_isLocal
-      GRWTSK.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.rationalToComplex x
+    GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.stalkMap_isLocal
+      GRWTSK.Geometry.AlgebraicGeometry.AffineStructureSheafPort.Fixtures.rationalToComplex x
 
 /-- Local branches in the RH-facing theorem portfolio. -/
 inductive LocalIndex
@@ -164,7 +164,7 @@ def localPortfolio (O : OpenObligations) :
 
 /-- Local branch dispositions and the terminal RH disposition are recorded independently. -/
 def architecture (O : OpenObligations) :
-    GRWTSK.Logic.SimultaneousProofPortfolio.Architecture
+    GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio.Architecture
       LocalIndex (LocalClaim O) RiemannTarget where
   local := localPortfolio O
   target := .unresolved
@@ -218,14 +218,14 @@ theorem gluing_available (O : OpenObligations) :
 /-- Replace only the arithmetic-bridge status. -/
 def withArithmeticDisposition (O : OpenObligations)
     (d : ClaimDisposition O.arithmeticBridge) :
-    GRWTSK.Logic.SimultaneousProofPortfolio.Architecture
+    GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio.Architecture
       LocalIndex (LocalClaim O) RiemannTarget :=
   (architecture O).updateLocal .arithmeticBridge d
 
 /-- Replace only the source-comparison status. -/
 def withSourceComparisonDisposition (O : OpenObligations)
     (d : ClaimDisposition O.sourceComparison) :
-    GRWTSK.Logic.SimultaneousProofPortfolio.Architecture
+    GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio.Architecture
       LocalIndex (LocalClaim O) RiemannTarget :=
   (architecture O).updateLocal .sourceComparison d
 

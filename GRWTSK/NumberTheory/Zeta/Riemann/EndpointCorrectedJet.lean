@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.PochhammerJet
+import GRWTSK.Analysis.ComplexAnalysis.PochhammerJet
 import GRWTSK.NumberTheory.Zeta.Riemann.FinitePowerZetaJet
 import Mathlib.NumberTheory.Bernoulli
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
@@ -23,7 +23,7 @@ namespace GRWTSK.RiemannHypothesis.EndpointCorrectedJet
 
 open scoped BigOperators
 open CriticalStripHeightDescent
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 
 /-- j is positive in every correction sum; the exact base denominator is retained. -/
 def weight (N j : ℕ) : ℚ :=
@@ -139,7 +139,7 @@ theorem derivative_error_of_uniform_source {N p : ℕ} {c : ℂ} {S E : ℝ}
     (hpole : ∀ z ∈ Metric.closedBall c S, z ≠ 1)
     (hsource : ∀ z ∈ Metric.sphere c S, ‖riemannZeta z - model N p z‖ ≤ E) :
     ‖deriv riemannZeta c - slope N p c‖ ≤ E / S := by
-  have he := GRWTSK.Analysis.Complex.ClosedDiskCauchy.derivative_error_at_center hS
+  have he := GRWTSK.Analysis.ComplexAnalysis.ClosedDiskCauchy.derivative_error_at_center hS
     (fun z hz => differentiableAt_riemannZeta (hpole z hz))
     (fun z hz => (hasDerivAt_model hN p (hpole z hz)).differentiableAt) hsource
   rwa [deriv_model hN p (hpole c (Metric.mem_closedBall_self hS.le))] at he

@@ -12,17 +12,17 @@ Five additional taxonomy and classification candidates bring the current intake 
 
 | Subject / object | Source | Rights | Native status |
 |---|---|---|---|
-| Algebra/Ring | [FourTermDecomposition](../../GRWTSK/Algebra/Ring/FourTermDecomposition.lean) | MIT notice retained | Not run |
+| Algebra/Ring | [FourTermDecomposition](../../GRWTSK/Algebra/RingTheory/FourTermDecomposition.lean) | MIT notice retained | Not run |
 | Analysis/Asymptotics | [DyadicNormBudget](../../GRWTSK/Analysis/Asymptotics/DyadicNormBudget.lean) | MIT; ownership confirmed | Not run |
 | Analysis/Asymptotics | [LogarithmicGrowth](../../GRWTSK/Analysis/Asymptotics/LogarithmicGrowth.lean) | MIT; ownership confirmed | Not run |
 | Analysis/Asymptotics | [SquareRootResidualIteration](../../GRWTSK/Analysis/Asymptotics/SquareRootResidualIteration.lean) | MIT; ownership confirmed | Not run |
 | Analysis/Asymptotics | [SublinearDyadic](../../GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean) | MIT; ownership confirmed | Not run |
-| Analysis/Complex | [AnalyticLinearODE](../../GRWTSK/Analysis/Complex/AnalyticLinearODE.lean) | MIT notice retained | Not run |
+| Analysis/Complex | [AnalyticLinearODE](../../GRWTSK/Analysis/ComplexAnalysis/AnalyticLinearODE/Variants/Variant83c6f9c035e0d5c9.lean) | MIT notice retained | Not run |
 | Analysis/FiniteSum | [DyadicVariance](../../GRWTSK/Analysis/FiniteSum/DyadicVariance.lean) | MIT notice retained | Not run |
 | Analysis/FiniteSum | [TentReadout](../../GRWTSK/Analysis/FiniteSum/TentReadout.lean) | MIT notice retained | Not run |
 | Analysis/FiniteSum | [ThresholdEnergy](../../GRWTSK/Analysis/FiniteSum/ThresholdEnergy.lean) | MIT; ownership confirmed | Not run |
 | Analysis/FiniteSum | [WeightedCellRefinement](../../GRWTSK/Analysis/FiniteSum/WeightedCellRefinement.lean) | MIT notice retained | Not run |
-| Analysis/Fourier | [PrimePhaseLargeValueAdapter](../../GRWTSK/Analysis/Fourier/PrimePhaseLargeValueAdapter.lean) | MIT; ownership confirmed | Not run |
+| Analysis/Fourier | [PrimePhaseLargeValueAdapter](../../GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/PrimePhaseLargeValueAdapter.lean) | MIT; ownership confirmed | Not run |
 | Analysis/GreenKernel | [TailAugmentation](../../GRWTSK/Analysis/GreenKernel/TailAugmentation.lean) | MIT notice retained | Not run |
 | Analysis/GreenKernel | [UnitInterval](../../GRWTSK/Analysis/GreenKernel/UnitInterval.lean) | MIT notice retained | Not run |
 | Analysis/Inequalities | [AdaptiveResidualBudget](../../GRWTSK/Analysis/Inequalities/AdaptiveResidualBudget.lean) | MIT notice retained | Not run |
@@ -37,25 +37,25 @@ Five additional taxonomy and classification candidates bring the current intake 
 | Analysis/InnerProductSpace | [HankelGramBounds](../../GRWTSK/Analysis/InnerProductSpace/HankelGramBounds.lean) | MIT; ownership confirmed | Not run |
 | Analysis/InnerProductSpace | [SignedWindowRootBounds](../../GRWTSK/Analysis/InnerProductSpace/SignedWindowRootBounds.lean) | MIT; ownership confirmed | Not run |
 | Analysis/InnerProductSpace | [VariationalResidual](../../GRWTSK/Analysis/InnerProductSpace/VariationalResidual.lean) | MIT notice retained | Not run |
-| Analysis/Integration | [AffineWeightedTransport](../../GRWTSK/Analysis/Integration/AffineWeightedTransport.lean) | MIT; ownership confirmed | Not run |
-| Analysis/Integration | [QuadraticReadoutBound](../../GRWTSK/Analysis/Integration/QuadraticReadoutBound.lean) | MIT notice retained | Not run |
-| Analysis/Integration | [QuadraticRootTransport](../../GRWTSK/Analysis/Integration/QuadraticRootTransport.lean) | MIT; ownership confirmed | Not run |
-| Analysis/Integration | [UnitIntervalPrimitives](../../GRWTSK/Analysis/Integration/UnitIntervalPrimitives.lean) | MIT notice retained | Not run |
+| Analysis/Integration | [AffineWeightedTransport](../../GRWTSK/Analysis/RealAnalysis/Integration/AffineWeightedTransport.lean) | MIT; ownership confirmed | Not run |
+| Analysis/Integration | [QuadraticReadoutBound](../../GRWTSK/Analysis/RealAnalysis/Integration/QuadraticReadoutBound.lean) | MIT notice retained | Not run |
+| Analysis/Integration | [QuadraticRootTransport](../../GRWTSK/Analysis/RealAnalysis/Integration/QuadraticRootTransport.lean) | MIT; ownership confirmed | Not run |
+| Analysis/Integration | [UnitIntervalPrimitives](../../GRWTSK/Analysis/RealAnalysis/Integration/UnitIntervalPrimitives.lean) | MIT notice retained | Not run |
 | Analysis/MellinTransform | [DyadicBounds](../../GRWTSK/Analysis/MellinTransform/DyadicBounds.lean) | MIT notice retained | Not run |
 | Analysis/MellinTransform | [DyadicIntegralSeries](../../GRWTSK/Analysis/MellinTransform/DyadicIntegralSeries.lean) | MIT notice retained | Not run |
 | Analysis/MellinTransform | [PositiveCoordinates](../../GRWTSK/Analysis/MellinTransform/PositiveCoordinates.lean) | MIT notice retained | Not run |
-| Analysis/NormedSpace | [IntertwiningResidual](../../GRWTSK/Analysis/NormedSpace/IntertwiningResidual.lean) | MIT notice retained | Not run |
-| Analysis/NormedSpace | [NormTransport](../../GRWTSK/Analysis/NormedSpace/NormTransport.lean) | MIT; ownership confirmed | Not run |
-| Analysis/NormedSpace | [SimilarityReconstruction](../../GRWTSK/Analysis/NormedSpace/SimilarityReconstruction.lean) | MIT; ownership confirmed | Not run |
+| Analysis/NormedSpace | [IntertwiningResidual](../../GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/IntertwiningResidual.lean) | MIT notice retained | Not run |
+| Analysis/NormedSpace | [NormTransport](../../GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/NormTransport.lean) | MIT; ownership confirmed | Not run |
+| Analysis/NormedSpace | [SimilarityReconstruction](../../GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/SimilarityReconstruction.lean) | MIT; ownership confirmed | Not run |
 | Analysis/Resolvent | [ScreenAlgebra](../../GRWTSK/Analysis/Resolvent/ScreenAlgebra.lean) | MIT notice retained | Not run |
 | Analysis/Resolvent | [ScreenBudget](../../GRWTSK/Analysis/Resolvent/ScreenBudget.lean) | MIT notice retained | Not run |
 | Analysis/Series | [DyadicPartition](../../GRWTSK/Analysis/Series/DyadicPartition.lean) | MIT notice retained | Not run |
-| Analysis/Spectral | [LowMassSpecifications](../../GRWTSK/Analysis/Spectral/LowMassSpecifications.lean) | MIT notice retained | Not run |
-| Analysis/Spectral | [TwoHeightMoments](../../GRWTSK/Analysis/Spectral/TwoHeightMoments.lean) | MIT notice retained | Not run |
-| LinearAlgebra/Matrix | [ToeplitzHankel](../../GRWTSK/LinearAlgebra/Matrix/ToeplitzHankel.lean) | MIT; ownership confirmed | Not run |
-| LinearAlgebra/QuadraticForm | [BinaryFormIdentities](../../GRWTSK/LinearAlgebra/QuadraticForm/BinaryFormIdentities.lean) | MIT notice retained | Not run |
-| LinearAlgebra/QuadraticForm | [OrderedTransport](../../GRWTSK/LinearAlgebra/QuadraticForm/OrderedTransport.lean) | MIT; ownership confirmed | Not run |
-| MeasureTheory/Integral | [Centering](../../GRWTSK/MeasureTheory/Integral/Centering.lean) | MIT notice retained | Not run |
+| Analysis/Spectral | [LowMassSpecifications](../../GRWTSK/Analysis/OperatorTheory/SpectralTheory/LowMassSpecifications.lean) | MIT notice retained | Not run |
+| Analysis/Spectral | [TwoHeightMoments](../../GRWTSK/Analysis/OperatorTheory/SpectralTheory/TwoHeightMoments.lean) | MIT notice retained | Not run |
+| LinearAlgebra/Matrix | [ToeplitzHankel](../../GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ToeplitzHankel.lean) | MIT; ownership confirmed | Not run |
+| LinearAlgebra/QuadraticForm | [BinaryFormIdentities](../../GRWTSK/Algebra/LinearAlgebra/QuadraticForm/BinaryFormIdentities.lean) | MIT notice retained | Not run |
+| LinearAlgebra/QuadraticForm | [OrderedTransport](../../GRWTSK/Algebra/LinearAlgebra/QuadraticForm/OrderedTransport.lean) | MIT; ownership confirmed | Not run |
+| MeasureTheory/Integral | [Centering](../../GRWTSK/Analysis/MeasureTheory/Integral/Centering/Variants/Varianta16dadedca05c73b.lean) | MIT notice retained | Not run |
 | NumberTheory/BinaryDigits | [Carry](../../GRWTSK/NumberTheory/BinaryDigits/Carry.lean) | MIT; ownership confirmed | Not run |
 | NumberTheory/Powers | [OctaveSeparation](../../GRWTSK/NumberTheory/Powers/OctaveSeparation.lean) | MIT notice retained | Not run |
 | NumberTheory/VonMangoldt | [CenteredReadout](../../GRWTSK/NumberTheory/VonMangoldt/CenteredReadout.lean) | MIT notice retained | Not run |
@@ -80,11 +80,11 @@ Five additional taxonomy and classification candidates bring the current intake 
 
 | Subject / object | Source | Native status |
 |---|---|---|
-| Order/Taxonomy | [Address](../../GRWTSK/Order/Taxonomy/Address.lean) | Not run |
-| Order/Taxonomy | [Core](../../GRWTSK/Order/Taxonomy/Core.lean) | Not run |
-| Logic/Classification | [Catalogue](../../GRWTSK/Logic/Classification/Catalogue.lean) | Not run |
-| Logic/Classification | [Types](../../GRWTSK/Logic/Classification/Types.lean) | Not run |
-| Logic/Classification | [Provenance](../../GRWTSK/Logic/Classification/Provenance.lean) | Not run |
+| Order/Taxonomy | [Address](../../GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Taxonomy/Address.lean) | Not run |
+| Order/Taxonomy | [Core](../../GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Taxonomy/Core.lean) | Not run |
+| Logic/Classification | [Catalogue](../../GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ClassificationValidation/Catalogue.lean) | Not run |
+| Logic/Classification | [Types](../../GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ClassificationValidation/Types.lean) | Not run |
+| Logic/Classification | [Provenance](../../GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ClassificationValidation/Provenance.lean) | Not run |
 
 The taxonomy represents ancestry by finite natural-number paths while retaining external notation as text. Classification, actual typed values and justified bindings remain separate. The example taxonomy is illustrative, not the PMD catalogue or an official Dewey schedule.
 

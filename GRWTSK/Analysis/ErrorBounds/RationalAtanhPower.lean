@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.ErrorBounds.RationalAtanhLog
-import GRWTSK.Analysis.Complex.IntervalMellinRangeReduction
+import GRWTSK.Analysis.ComplexAnalysis.IntervalMellinRangeReduction
 
 set_option autoImplicit false
 
@@ -52,7 +52,7 @@ theorem inverse_power_sound {s : Coordinates} {t B : ℚ} {k n₂ nr bits squari
     simpa only [hcm, ← Complex.ofReal_sub, Complex.norm_real, Real.norm_eq_abs] using hh
   have ht : (1 : ℝ) ≤ t := by exact_mod_cast (RationalAtanhLog.scale_bounds hl).1
   have hnonneg : (0 : ℝ) ≤ ell.mid.1 := by exact_mod_cast hc.1
-  have hray := GRWTSK.Analysis.Complex.IntervalMellinRangeReduction.norm_exp_ray_sub_le
+  have hray := GRWTSK.Analysis.ComplexAnalysis.IntervalMellinRangeReduction.norm_exp_ray_sub_le
     (a := -toComplex s) (by change -(s.1 : ℝ) ≤ 0; exact_mod_cast (neg_nonpos.mpr hs))
     (Real.log_nonneg ht) hnonneg
   have hinput : ‖Complex.exp (-toComplex s * (Real.log (t : ℝ) : ℂ)) -

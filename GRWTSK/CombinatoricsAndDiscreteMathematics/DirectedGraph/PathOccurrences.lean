@@ -28,7 +28,7 @@ or communication roles; no JSON/runtime refinement or candidate promotion follow
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PathOccurrences
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences
 
 open Quiver
 
@@ -181,4 +181,4 @@ theorem endpoint_vertex_summary_not_injective :
     ((parallelLoop false).length, (parallelLoop false).vertices) =
       ((parallelLoop true).length, (parallelLoop true).vertices) from rfl))
 
-end GRWTSK.Combinatorics.DirectedGraph.PathOccurrences
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences

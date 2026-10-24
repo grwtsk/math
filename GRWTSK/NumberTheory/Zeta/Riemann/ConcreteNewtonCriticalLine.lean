@@ -33,7 +33,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No execution or hold release.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonCriticalLine
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open GRWTSK.NumberTheory.Zeta.Riemann.CriticalReflectionIsolation
 open CanonicalZeroDivisor
 open Set Metric

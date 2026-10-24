@@ -43,7 +43,7 @@ universe u v
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary
 
-open GRWTSK.Logic.InformationLoss
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
@@ -172,10 +172,10 @@ theorem no_source_decoder_from_bombieri_huffman_packets
     (momentToBytes : (ℂ × ℂ) → List UInt8) :
     ¬ HasTotalLosslessDecoder
       (fun u : Combination 2 =>
-        GRWTSK.InformationTheory.Huffman.encode
+        GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.encode
           (momentToBytes (bombieriMomentProfile u))) :=
   no_total_lossless_decoder_from_moment_only_postprocessing
     (fun moments =>
-      GRWTSK.InformationTheory.Huffman.encode (momentToBytes moments))
+      GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.encode (momentToBytes moments))
 
 end GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary

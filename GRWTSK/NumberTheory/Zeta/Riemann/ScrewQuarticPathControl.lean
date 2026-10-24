@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Algebra.Polynomial.ConjugateQuartic
-import GRWTSK.Combinatorics.GraphTheory.CertifiedPathOptimization
+import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CertifiedPathOptimization
 import GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Positivity
@@ -29,8 +29,8 @@ is silently converted into another here.
 namespace GRWTSK.NumberTheory.Zeta.Riemann.ScrewQuarticPathControl
 
 open GRWTSK.Polynomial.ConjugateQuartic
-open GRWTSK.Combinatorics.GraphTheory.CertifiedPathOptimization
-open GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CertifiedPathOptimization
+open GRWTSK.Algebra.LinearAlgebra.LinearMap.ReedSolomonRefinement
 open GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement
 
 /-- The nonnegative magnitude of the signed quartic witness obstruction. -/

@@ -16,9 +16,9 @@ decision_refs: []
 ## Problem and affected identities
 
 Broad order/group labels conceal standard distinctions in actual source bodies.
-Add [closure operators](../../subjects/order-theory/closure-operators/index.md),
-[order embeddings](../../subjects/order-theory/order-embeddings/index.md), and
-[free groups](../../subjects/algebra/group-theory/free-groups/index.md).
+Add [closure operators](../../subjects/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/ClosureOperators/index.md),
+[order embeddings](../../subjects/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings/index.md), and
+[free groups](../../subjects/Algebra/GroupTheory/CombinatorialGroupTheory/FreeGroups/index.md).
 Existing concept identities and definitions are unchanged. These proposed
 specializations are neither a production graph nor exhaustive coverage.
 

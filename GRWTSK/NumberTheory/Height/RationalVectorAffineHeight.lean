@@ -7,7 +7,7 @@ of reduced Rat.den values. Its primitive integer representative is supplied.
 This is a fixed-frame arithmetic construction, not a model-height theorem.
 Unelaborated source proof scripts: NOT_RUN / NOT_KERNEL_AUDITED.
 -/
-import GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+import GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 import Mathlib.Algebra.GCDMonoid.Finset
 import Mathlib.Algebra.GCDMonoid.Nat
 import Mathlib.Data.Rat.Lemmas
@@ -18,7 +18,7 @@ noncomputable section
 
 namespace GRWTSK.NumberTheory.Height.RationalVectorAffineHeight
 
-open GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm
+open GRWTSK.Algebra.LinearAlgebra.FourFieldArchimedeanNorm
 
 /-- A scalar clearing witness is an actual integer, not a small real error. -/
 def ClearsValue (d : ℕ) (q : ℚ) : Prop := ∃ z : ℤ, (d : ℚ) * q = (z : ℚ)

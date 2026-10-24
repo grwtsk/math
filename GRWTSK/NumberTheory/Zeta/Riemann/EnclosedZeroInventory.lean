@@ -4,7 +4,7 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
 import GRWTSK.Algebra.BigOperators.PositiveWeightExhaustion
 import GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation
-import GRWTSK.Analysis.Complex.RationalTentEnclosure
+import GRWTSK.Analysis.ComplexAnalysis.RationalTentEnclosure
 
 set_option autoImplicit false
 
@@ -25,7 +25,7 @@ open scoped BigOperators
 open CanonicalZeroDivisor
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalMellinFamily (Member memberAt)
 open RationalTentEnclosure (CoordinateData radiusAt)
 

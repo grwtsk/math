@@ -1,6 +1,6 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
 
-open GRWTSK.Logic.FiniteSequences.IndexedDictionary
+open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteSequences.IndexedDictionary
 
 -- Expected kernel failure: an absent dictionary slot cannot yield a payload.
 -- This uses the actual decoder, so no missing-input error should satisfy the control.

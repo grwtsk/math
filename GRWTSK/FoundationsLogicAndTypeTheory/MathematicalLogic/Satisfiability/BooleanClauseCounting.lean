@@ -23,7 +23,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 FINITE_BOOLEAN_CLAUSE_COUNT_ONLY.
 -/
 
-namespace GRWTSK.Logic.Satisfiability
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 
 /-- A Boolean assignment to `k` distinct local coordinates. -/
 abbrev BooleanAssignment (k : ℕ) := Fin k → Bool
@@ -144,4 +144,4 @@ theorem countedSuccessFraction_polarity_independent
     countedSuccessFraction left = countedSuccessFraction right := by
   rw [countedSuccessFraction_eq, countedSuccessFraction_eq]
 
-end GRWTSK.Logic.Satisfiability
+end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability

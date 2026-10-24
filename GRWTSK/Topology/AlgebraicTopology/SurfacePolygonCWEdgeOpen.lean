@@ -28,7 +28,7 @@ noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen
 
 open Set
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit

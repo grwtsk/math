@@ -7,9 +7,9 @@ import Mathlib.Analysis.SpecificLimits.Basic
 
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Spectral.FreeIDS
-open GRWTSK.Spectral.FreeDirichletSpectrum
-open GRWTSK.Spectral.SturmianFiniteVolume
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 open Filter
 
 def angleFraction (E : ℝ) : ℝ := Real.arccos (E/2) / Real.pi
@@ -217,7 +217,7 @@ theorem gap_width_le_abs_coupling (α V ξ : ℝ) (origin : ℤ)
     {S : Set ℝ} {ids : ℝ → ℝ} {label a b : ℝ} (hl : 0 < label) (hu : label < 1)
     (hids : ∀ E, Tendsto (fun N => sturmianNormalizedCount N α V ξ origin E)
       atTop (nhds (ids E)))
-    (hgap : GRWTSK.Spectral.GapTransport.OpenLabelGap S ids label a b) :
+    (hgap : GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.OpenLabelGap S ids label a b) :
     0 < b-a ∧ b-a ≤ |V| :=
   gap_width_le_abs_coupling_of_count_limits α V ξ origin freeNormalizedCount_tendsto hids
     (freeIDS_inverse_left hl hu) (freeIDS_inverse_right hl hu) hgap
@@ -235,11 +235,11 @@ theorem sturmianNormalizedCount_zero_tendsto (α ξ : ℝ) (origin : ℤ) (E : �
 plateau, independently of the proposed spectral set. Exterior labels are excluded. -/
 theorem no_internal_free_gap {S : Set ℝ} {label a b : ℝ}
     (hl : 0 < label) (hu : label < 1) :
-    ¬GRWTSK.Spectral.GapTransport.OpenLabelGap S freeIDS label a b := by
+    ¬GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.OpenLabelGap S freeIDS label a b := by
   intro hgap
   have h := gap_width_le_abs_coupling 0 0 0 0 hl hu
     (sturmianNormalizedCount_zero_tendsto 0 0 0) hgap
   norm_num only [abs_zero] at h
   linarith [h.1, h.2]
 
-end GRWTSK.Spectral.FreeIDS
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS

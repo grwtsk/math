@@ -8,7 +8,7 @@ retained. No reduction of a nonintegral rational, source relabeling, conductor,
 Tamagawa, completed-field or uniform height claim is introduced.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Scripts are unelaborated.
 -/
-import GRWTSK.AlgebraicGeometry.EllipticCurve.AffineSlopeTransport
+import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.AffineSlopeTransport
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddSplitReduction
 import Mathlib.Tactic.Tauto
 
@@ -19,8 +19,8 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySelectedS
 
 open WeierstrassCurve Polynomial
 open FreyOddReduction FreyTwoBranchDecision FreyGlobalMinimalDiscriminant
-open GRWTSK.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting
-open GRWTSK.AlgebraicGeometry.EllipticCurve.AffineSlopeTransport
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.TangentPolynomialSplitting
+open GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.AffineSlopeTransport
 
 /-- Reduce the OLD globally integral selected equation, not its fractional inverse chart. -/
 def selectedResidueModel (t : PrimitiveAdditiveTriple) (p : ℕ) :
@@ -61,10 +61,10 @@ theorem selected_scale_shear (t : PrimitiveAdditiveTriple) :
   split_ifs with hfirst heven
   · have hd : Descends t := Or.inl hfirst
     simp [slopeScale, slopeShear, hd,
-      GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.halfChange]
+      GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.halfChange]
   · have hd : Descends t := Or.inr heven
     simp [slopeScale, slopeShear, hd,
-      GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.zeroChange]
+      GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.zeroChange]
   · have hn : ¬ Descends t := fun h => h.elim hfirst heven
     simp [slopeScale, slopeShear, hn]
 
@@ -184,13 +184,13 @@ theorem selected_binary_tangent (t : PrimitiveAdditiveTriple) (hd : Descends t) 
   unfold selectedResidueModel integerModel
   split_ifs with hfirst heven
   · simpa [FreyTwoSemistableChamber.integralModel,
-      GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.model,
+      GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralHalfScale.model,
       WeierstrassCurve.map, map_one, map_zero] using
       binary_tangent (((firstWitness t hfirst).k : ZMod 2)+
         4*((firstWitness t hfirst).n : ZMod 2))
         ((4*((firstWitness t hfirst).k : ZMod 2)+1)*((firstWitness t hfirst).n : ZMod 2))
   · simpa [FreyTwoEvenSummandChamber.integralModel,
-      GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.model,
+      GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.IntegralZeroHalfScale.model,
       WeierstrassCurve.map, map_one, map_zero] using
       binary_tangent ((evenWitness t heven).k : ZMod 2) (-((evenWitness t heven).m : ZMod 2))
   · exact (hd.elim hfirst heven).elim

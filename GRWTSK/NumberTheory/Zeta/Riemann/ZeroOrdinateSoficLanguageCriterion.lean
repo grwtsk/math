@@ -3,7 +3,7 @@ Copyright (c) 2026 grwtsk contributors. MIT.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 No rational/algebraic-to-sofic theorem or non-sofic zeta trace is proved.
 -/
-import GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.DynamicSoficSpectralCover
 import GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry
 import Mathlib
@@ -44,8 +44,8 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion
 
 open GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
-open GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
-open GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.ExactSoficLanguageCover
+open GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.DynamicSoficSpectralCover
 
 universe u v
 

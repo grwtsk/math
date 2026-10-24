@@ -5,7 +5,7 @@ This source is an isolated paper-context comparison; do not import from
 GRWTSK.lean until a pinned warning-clean build, fresh kernel replay and
 full transitive axiom audit have accepted it.
 -/
-import GRWTSK.InformationTheory.Huffman.RoundTrip
+import GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.RoundTrip
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 
 set_option autoImplicit false
@@ -61,12 +61,12 @@ The result consumes the existing source proof of decode_encode; it
 does NOT prove Huffman's external optimality statement. -/
 theorem huffman_bytes_have_total_lossless_decoder :
     HasTotalLosslessDecoder
-      (GRWTSK.InformationTheory.Huffman.encode : List UInt8 →
-        GRWTSK.InformationTheory.Huffman.Packet) := by
+      (GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.encode : List UInt8 →
+        GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.Packet) := by
   refine ⟨fun packet =>
-    (GRWTSK.InformationTheory.Huffman.decode packet).getD [], ?_⟩
+    (GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.decode packet).getD [], ?_⟩
   intro source
-  simp [GRWTSK.InformationTheory.Huffman.decode_encode]
+  simp [GRWTSK.InformationTheory.SourceCoding.Lossless.PrefixCodes.Huffman.decode_encode]
 
 /-- The two actual canonical Bombieri moments alone are not a
 lossless encoding of all three source coefficients. The witness is

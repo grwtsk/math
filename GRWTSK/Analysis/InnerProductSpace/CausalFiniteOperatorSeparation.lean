@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction
+import GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
 import GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation
 import GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
 import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
@@ -38,7 +38,7 @@ open ArithmeticPickupEnergy
 open GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
 open GRWTSK.Analysis.InnerProductSpace.CausalContactHilbertSeparation
 open GRWTSK.Analysis.InnerProductSpace.CompactSourceGramPositiveDefinite
-open GRWTSK.LinearAlgebra.LinearMap.FiniteMixingObstruction
+open GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
 
 noncomputable section
 

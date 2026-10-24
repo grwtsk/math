@@ -19,7 +19,7 @@ retained. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.ConcreteNewtonBoundaryAcceptance
 
-open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
+open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open CanonicalZeroDivisor ConcreteNewtonPacket RationalZetaTranscript
 open ConcreteNewtonBlockAcceptance
 

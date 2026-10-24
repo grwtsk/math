@@ -7,7 +7,7 @@ coboundary accounts for the difference. Equal reduced observations do not
 identify full states, metrics, gauges, integral lattices or geometric H0.
 These are source proof scripts, not Lean-verified or intrinsic Hodge results.
 -/
-import GRWTSK.Analysis.LinearAlgebra.ThreeCellHodgeGauge
+import GRWTSK.Algebra.LinearAlgebra.ThreeCellHodgeGauge
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat
 
 set_option autoImplicit false
@@ -17,7 +17,7 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHodge
 
 open FreyWeightedSections FreyWeightedBasis FreyWeightedEnergy
 open GRWTSK.Algebra.Homology.ThreeCellCech
-open GRWTSK.Analysis.LinearAlgebra
+open GRWTSK.Algebra.LinearAlgebra
 open scoped BigOperators
 attribute [local instance] FreyWeightedSections.coefficientAlgebra
 
@@ -128,7 +128,7 @@ theorem sixEnergy_agrees (a b : ℝ) (k : ℕ) (v : FreyCechHeat.Data a b k) :
       (∑ j, coefficientEnergy a b k (v.1 j)) + ∑ j, coefficientEnergy a b k (v.2 j) := by
   simp only [sixEnergy, ThreeCellHodgeGauge.rawEnergy, ThreeCellHodgeGauge.dot3,
     Fin.sum_univ_three, coefficientCell, ThreeCellHodgeGauge.mapCell, coordinateMap,
-    coefficientEnergy, GRWTSK.LinearAlgebra.WeightedPermutationEnergy.energy,
+    coefficientEnergy, GRWTSK.Algebra.LinearAlgebra.WeightedPermutationEnergy.energy,
     Finset.sum_add_distrib, pow_two]
 
 /-- Positive-time contraction belongs to THIS metric and THIS standard finite flow. -/

@@ -40,7 +40,7 @@ open PositiveHeightCountDeficit
 open PositiveHeightSymmetricCount
 open CanonicalPositiveTuringBridge
 open CanonicalPositiveTuringFullHead
-open GRWTSK.Combinatorics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 

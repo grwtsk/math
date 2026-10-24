@@ -6,7 +6,7 @@ import GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.Checks.Positive.
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix.Checks.Positive
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix.Checks.Positive
 
 /- The accepted positive module proves this base reachability and the failure
 of the proposed occurrence reachability. Full history cannot be omitted. -/

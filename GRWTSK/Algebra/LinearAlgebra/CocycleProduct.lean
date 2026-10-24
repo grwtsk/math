@@ -5,7 +5,7 @@ Established cocycle-product and gauge mathematics; upstream identities retained.
 import GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant
 import Mathlib.Logic.Function.Iterate
 
-namespace GRWTSK.LinearAlgebra.CocycleProduct
+namespace GRWTSK.Algebra.LinearAlgebra.CocycleProduct
 
 /-!
 # Frozen ordered products and step-dependent gauges
@@ -35,16 +35,16 @@ universe u v w
 open GRWTSK.Algebra
 
 
-open GRWTSK.LinearAlgebra.SchrodingerTransfer
+open GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
 
 
-open GRWTSK.LinearAlgebra.JacobiTransfer
+open GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
 
 
-open GRWTSK.LinearAlgebra.OrderedTransfer
+open GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
 
 
-open GRWTSK.LinearAlgebra.OrderedProductDeterminant
+open GRWTSK.Algebra.LinearAlgebra.OrderedProductDeterminant
 
 /-- Cocycle product over base dynamics, again adding the newest step on the left. -/
 def cocycleProduct {S : Type u} {G : Type v} [Monoid G]
@@ -110,4 +110,4 @@ theorem cocycleProduct_gauge {S : Type u} {G : Type v} [Group G]
 
 
 
-end GRWTSK.LinearAlgebra.CocycleProduct
+end GRWTSK.Algebra.LinearAlgebra.CocycleProduct

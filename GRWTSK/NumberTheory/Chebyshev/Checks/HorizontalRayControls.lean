@@ -10,7 +10,7 @@ These are not numerical zeta-zero data or prime certificates. -/
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls
 
-open GRWTSK.Analysis.Complex.TentHorizontalRayMajorant
+open GRWTSK.Analysis.ComplexAnalysis.TentHorizontalRayMajorant
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
 
 noncomputable section

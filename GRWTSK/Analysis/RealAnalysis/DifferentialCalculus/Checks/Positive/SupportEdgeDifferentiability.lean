@@ -1,0 +1,8 @@
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SupportEdgeDifferentiability
+set_option linter.hashCommand false
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SupportEdgeDifferentiability
+#check @deriv_zero_of_zero_right
+#check @not_differentiable_of_left_linear_contact
+#print axioms deriv_zero_of_zero_right
+#print axioms not_differentiable_of_left_linear_contact
+end GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SupportEdgeDifferentiability

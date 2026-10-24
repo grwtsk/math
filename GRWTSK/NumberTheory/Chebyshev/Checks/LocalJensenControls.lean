@@ -16,7 +16,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.LocalJensenControls
 
 open Metric
 open GRWTSK.RiemannHypothesis.LocalJensenCount
-open GRWTSK.Analysis.Complex.JensenFiniteMultiplicity
+open GRWTSK.Analysis.ComplexAnalysis.JensenFiniteMultiplicity
 
 /-- Radius zero would make the displayed reciprocal/logarithmic formulas totalized. -/
 theorem radius_zero_rejected : ¬ (0 : ℝ) < 0 := lt_irrefl 0

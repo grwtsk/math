@@ -19,7 +19,7 @@ Lean and mathlib retain their upstream identities and credit.
 set_option autoImplicit false
 set_option relaxedAutoImplicit false
 
-namespace GRWTSK.LinearAlgebra.CommonJCounterexamples
+namespace GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
 
 universe u v
 
@@ -103,4 +103,4 @@ theorem hostile_edges_noncommute : ¬ Commute hostileUpper hostileLower := by
 
 
 
-end GRWTSK.LinearAlgebra.CommonJCounterexamples
+end GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples

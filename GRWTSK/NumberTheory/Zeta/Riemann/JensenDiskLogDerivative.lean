@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaCircleBound
-import GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound
+import GRWTSK.Analysis.ComplexAnalysis.NormalizedLogDerivativeBound
 
 set_option autoImplicit false
 
@@ -27,9 +27,9 @@ open Set Metric Filter MeromorphicOn
 open scoped Topology BigOperators
 open CanonicalZeroDivisor SeparatedContourHeights LocalJensenCount
 open CubicZetaCircleBound AnchoredLocalJensen
-open GRWTSK.Analysis.Complex.JensenFiniteMultiplicity
-open GRWTSK.Analysis.Complex.DiskBlaschkeFactors
-open GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound
+open GRWTSK.Analysis.ComplexAnalysis.JensenFiniteMultiplicity
+open GRWTSK.Analysis.ComplexAnalysis.DiskBlaschkeFactors
+open GRWTSK.Analysis.ComplexAnalysis.NormalizedLogDerivativeBound
 
 noncomputable section
 

@@ -17,14 +17,14 @@ Released under Apache-2.0 as described in LICENSE. Imported individual credit is
 Mathematical direction: grwtsk contributors; formal implementation: OpenAI Codex.
 No ideal, Hecke/calibration, completed physical-row or RH theorem is inferred.
 -/
-import GRWTSK.Analysis.Calculus.CompactCutoff
+import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 import GRWTSK.Analysis.MellinTransform.GaussianLogWindow
 
 namespace GRWTSK.Analysis.MellinTransform.GaussianCoupledSeparation
 noncomputable section
 open scoped ContDiff FourierTransform SchwartzMap
 open MeasureTheory
-open GRWTSK.Analysis.Calculus.CompactCutoff
+open GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.CompactCutoff
 open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
 open GRWTSK.Analysis.MellinTransform.GaussianLogWindow
 

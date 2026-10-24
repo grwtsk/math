@@ -30,8 +30,8 @@ namespace GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
 open MeasureTheory Set Filter
 open scoped Topology Interval BigOperators
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentWeight
 open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.NumberTheory.Chebyshev.TentResidueContributions

@@ -8,7 +8,7 @@ import Mathlib.Combinatorics.Quiver.Path.Vertices
 set_option autoImplicit false
 
 open Quiver
-open GRWTSK.Combinatorics.DirectedGraph.PathUnfolding
+open GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding
 
 section Generic
 
@@ -33,7 +33,7 @@ example {source target : Occurrence root} (lifted : Path source target) :
 
 end Generic
 
-namespace GRWTSK.Combinatorics.DirectedGraph.PathUnfolding.Checks.Positive
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding.Checks.Positive
 
 /- Parallel base loops have one base vertex and distinct actual edge identities. -/
 noncomputable def firstOccurrence : Occurrence (SingleObj.star Bool) :=
@@ -112,4 +112,4 @@ example : (∀ node : Occurrence (SingleObj.star Unit),
     ¬ (projection (SingleObj.star Unit)).IsCovering :=
   ⟨single_loop_outgoing_bijective, single_loop_not_covering⟩
 
-end GRWTSK.Combinatorics.DirectedGraph.PathUnfolding.Checks.Positive
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathUnfolding.Checks.Positive

@@ -28,7 +28,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Primes.GoldbachFejerKernel
 
 open scoped BigOperators Real ComplexConjugate
-open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
+open GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionMainModel
 open GRWTSK.NumberTheory.Primes.GoldbachProgressionCoefficientFactorization
 open GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion

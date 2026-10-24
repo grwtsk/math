@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.SymmetricPairUnitTransport
+import GRWTSK.Analysis.ComplexAnalysis.SymmetricPairUnitTransport
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairApproximation
 import Mathlib.Analysis.Calculus.Deriv.Inv
 
@@ -21,7 +21,7 @@ SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
 -/
 namespace GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.CenteredMellin.SexticPrimitive.UnitNormalization
 open Complex Set Filter MellinPrimitiveStep DerivativeSixteen C1Approximation
-open GRWTSK.Analysis.Complex.SymmetricPair
+open GRWTSK.Analysis.ComplexAnalysis.SymmetricPair
 open scoped Topology
 noncomputable section
 

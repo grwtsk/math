@@ -52,7 +52,7 @@ noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
 
 open _root_.Topology
-open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Algebra.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 

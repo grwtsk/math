@@ -17,7 +17,7 @@ no Heath--Brown cardinality inequality.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Issue: #427. Stacked parent: PR #418.
 -/
-import GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel
+import GRWTSK.NumberTheory.AlgebraicNumberTheory.GeometryOfNumbers.PrimitiveLinearKernel
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryPrimitivity
 import Mathlib.Tactic
 
@@ -29,8 +29,8 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
 open Finset
 open scoped BigOperators
 open AnatomicBoxes
-open GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount
-open GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel
+open GRWTSK.NumberTheory.AlgebraicNumberTheory.GeometryOfNumbers.PrimitiveLinearBoxCount
+open GRWTSK.NumberTheory.AlgebraicNumberTheory.GeometryOfNumbers.PrimitiveLinearKernel
 
 namespace ExceptionalSetAnalyticInterfaces
 
@@ -58,7 +58,7 @@ theorem paperSelectedMonomial_le_geometryUpper
 /-- The selected variables as one generic natural point. -/
 def geometrySelectedPoint {d : ℕ}
     (q : Point d) (I I' I'' : Finset (Fin d)) :
-    GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Point :=
+    GRWTSK.NumberTheory.AlgebraicNumberTheory.GeometryOfNumbers.PrimitiveLinearBoxCount.Point :=
   (geometryVariableA I q,
     geometryVariableB I' q,
     geometryVariableC I'' q)

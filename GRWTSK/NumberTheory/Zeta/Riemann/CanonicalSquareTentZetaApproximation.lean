@@ -50,7 +50,7 @@ open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 open GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Complex.TentMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection
 
 /-- One canonical square-tent test.  Index `m` represents the square interval

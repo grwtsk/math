@@ -26,7 +26,7 @@ a claim of proof implication, authorization, serialization or runtime refinement
 
 set_option autoImplicit false
 
-namespace GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix
 
 open Quiver PathUnfolding
 
@@ -136,4 +136,4 @@ theorem no_left_inverse_of_distinct_histories {first second : Occurrence root}
   rintro ⟨_, hleft⟩
   exact hdistinct (hleft.injective (Subtype.ext hendpoint))
 
-end GRWTSK.Combinatorics.DirectedGraph.OccurrencePrefix
+end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.OccurrencePrefix

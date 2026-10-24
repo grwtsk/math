@@ -17,7 +17,7 @@ e^{-\sigma t}\,\mathrm{wholePickup}(t)
 $$
 
 where `M` is the repository's literal closed real-cutoff `mertensPrefix` and
-$V$ is the [finite exponential Volterra operator](../../Analysis/Integration/exponential-volterra-l2.md).
+$V$ is the [finite exponential Volterra operator](../../Analysis/RealAnalysis/Integration/exponential-volterra-l2.md).
 The source is interval integrable on every finite interval. At `σ = 1/2`, it
 also proves finite-interval square integrability, the identity
 $G_{1/2}(u)=e^{-u}M(e^u)$, the pointwise bound $|G_{1/2}(u)|\le1$, and

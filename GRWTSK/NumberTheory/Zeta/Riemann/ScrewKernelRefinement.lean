@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement
+import GRWTSK.Algebra.LinearAlgebra.LinearMap.ReedSolomonRefinement
 import Mathlib.Analysis.Complex.Basic
 import Mathlib.Analysis.Complex.Exponential
 import Mathlib.Data.Fin.VecNotation
@@ -33,7 +33,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.ScrewKernelRefinement
 
 noncomputable section
 
-open GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement
+open GRWTSK.Algebra.LinearAlgebra.LinearMap.ReedSolomonRefinement
 
 /-- The three source values consumed by the screw kernel. -/
 abbrev SourcePayload := Fin 3 → ℂ

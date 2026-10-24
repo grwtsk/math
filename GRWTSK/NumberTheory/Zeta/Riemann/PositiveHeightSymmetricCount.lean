@@ -37,7 +37,7 @@ open PositiveHeightCoarseCount
 open CanonicalHighCounting
 open CanonicalLocalZeroContour
 open ContourCountDeficit
-open GRWTSK.Combinatorics.WeightedPairBudget
+open GRWTSK.CombinatoricsAndDiscreteMathematics.WeightedPairBudget
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier
 

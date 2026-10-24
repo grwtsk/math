@@ -14,10 +14,10 @@ frequency, infinite-volume IDS, spectral gap or arithmetic cancellation is assum
 
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.Spectral.SturmianBlockCounts
-open GRWTSK.Spectral.SturmianFiniteVolume
-open GRWTSK.Spectral.MatrixCountComparison GRWTSK.Spectral.DirichletCut
-open GRWTSK.LinearAlgebra.Sturmian
+namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
+open GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut
+open GRWTSK.Algebra.LinearAlgebra.Sturmian
 
 /-- Exact integer-origin shift of the literal half-open coding. -/
 theorem bit_origin_to_phase (α ξ : ℝ) (origin n : ℤ) :
@@ -189,4 +189,4 @@ theorem finite_block_approximation (N L : ℕ) (hN : 0 < N) (hL : 0 < L)
     _ ≤ 2/(L:ℝ)+(L:ℝ)/N :=
       add_le_add hqbound (div_le_div_of_nonneg_right hrr hn.le)
 
-end GRWTSK.Spectral.SturmianBlockCounts
+end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianBlockCounts

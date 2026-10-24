@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Complex.IntervalMellinKernel
+import GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 import GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals
 
 /-!
@@ -17,7 +17,7 @@ owned separately by #261. Source draft: NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel
 
 open GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals
-open GRWTSK.Analysis.Complex.IntervalMellinKernel
+open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open scoped BigOperators
 
 noncomputable section

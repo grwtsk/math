@@ -2,7 +2,7 @@ import GRWTSK.Geometry.Hodge.FiniteEdgeRealization
 
 namespace GRWTSK.Geometry.Hodge.DegreeZeroCohomology
 
-open GRWTSK.LinearAlgebra.FramedFiberPort
+open GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
 universe u v w x y
 

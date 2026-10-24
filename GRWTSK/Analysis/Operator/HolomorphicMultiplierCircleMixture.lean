@@ -14,13 +14,13 @@ namespace GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture
 
 open Filter Topology MeasureTheory Metric Set
 open scoped ENNReal
-open scoped GRWTSK.Analysis.Complex.HolomorphicLineSectionInnerProduct
+open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
 open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
-open GRWTSK.Analysis.Complex.HolomorphicRestriction
-open GRWTSK.Analysis.Complex.HolomorphicLineCocycle
-open GRWTSK.Analysis.Complex.HolomorphicLineMetric
-open GRWTSK.Analysis.Complex.HolomorphicLineSectionCompletion
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
+open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete
 open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming

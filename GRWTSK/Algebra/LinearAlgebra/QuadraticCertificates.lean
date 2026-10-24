@@ -16,7 +16,7 @@ No general Positivstellensatz, source identification or certificate existence is
 assumed. AI attribution: Codex authored this module and its proofs.
 -/
 
-namespace GRWTSK.LinearAlgebra.QuadraticCertificates
+namespace GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
 
 open Matrix
 
@@ -153,4 +153,4 @@ theorem check_pullback (P : Problem R ι ε γ) (S : Certificate R ι ε γ ν)
 
 end Refinement
 
-end GRWTSK.LinearAlgebra.QuadraticCertificates
+end GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates

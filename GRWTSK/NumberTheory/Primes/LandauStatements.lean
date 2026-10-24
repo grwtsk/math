@@ -16,7 +16,7 @@ all-input tail compose without proving either premise.
 
 namespace GRWTSK.NumberTheory.Primes.LandauStatements
 
-open GRWTSK.Combinatorics.Enumerative.BoundedWitnesses
+open GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.BoundedWitnesses
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 
 /-- Strong Goldbach, with its actual domain and quantifier order. -/

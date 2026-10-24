@@ -17,7 +17,7 @@ All decisions and source compositions remain NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.Checks.PoleContourCoverage
 
 open Set
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open GRWTSK.Analysis.ErrorBounds
 open RationalComplexEnclosure RationalDyadicArithmetic
 open RationalPoleContour CriticalStripHeightDescent

@@ -9,7 +9,7 @@ and Mathlib retain their authorship. Kernel compilation has not been run for
 this additive source. No arithmetic growth hypothesis is asserted.
 -/
 
-namespace GRWTSK.LinearAlgebra.ToeplitzHankel
+namespace GRWTSK.Algebra.LinearAlgebra.ToeplitzHankel
 open scoped BigOperators
 
 variable {K : Type*}
@@ -108,7 +108,7 @@ theorem squareSum_doubled (A C : Matrix (Fin n) (Fin n) ℝ) :
   ring
 
 end Real
-end GRWTSK.LinearAlgebra.ToeplitzHankel
-#print axioms GRWTSK.LinearAlgebra.ToeplitzHankel.toeplitz_doubling
-#print axioms GRWTSK.LinearAlgebra.ToeplitzHankel.cut_commutator
-#print axioms GRWTSK.LinearAlgebra.ToeplitzHankel.squareSum_doubled
+end GRWTSK.Algebra.LinearAlgebra.ToeplitzHankel
+#print axioms GRWTSK.Algebra.LinearAlgebra.ToeplitzHankel.toeplitz_doubling
+#print axioms GRWTSK.Algebra.LinearAlgebra.ToeplitzHankel.cut_commutator
+#print axioms GRWTSK.Algebra.LinearAlgebra.ToeplitzHankel.squareSum_doubled

@@ -10,7 +10,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.TerminalEndpointControls
 
-open GRWTSK.Analysis.Complex
+open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace RationalPowerIntegerSeed
 open GRWTSK.RiemannHypothesis
 open ConcreteNewtonPacket ConcreteNewtonTerminalSeed ConcreteNewtonTerminalEndpoint
