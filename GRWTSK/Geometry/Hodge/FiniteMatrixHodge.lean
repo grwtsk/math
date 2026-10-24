@@ -467,4 +467,109 @@ theorem graphHodge_shift_unit_gap_optimal [Nonempty Vertex]
     simpa only [one_mul] using h
   exact (mul_le_mul_iff_of_pos_right hcpos).mp hbound
 
+
+/-!
+## Explicit unit-margin perturbations of graph Hodge Schur lifts
+
+The perturbation K(z) acts directly on the concrete shifted graph
+operator I+Δ. Its full Schur block uses an arbitrary finite coupling,
+and its lower-right block is I. The actual operator error is exactly
+K(z), so the sharp unit margin, rather than the conservative source
+margin, controls determinant zero-exclusion and orientation.
+-/
+
+/-- A coupled finite Schur family whose effective operator is
+I+Δ+K(z), with actual Euclidean matrix coordinates. -/
+noncomputable def graphHodgePerturbedSchurLift
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    BlockPencil Z (Fin n) (Fin m) ℝ :=
+  BlockPencil.identitySchurLift
+    (fun z => euclideanOperatorMatrix
+      (momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z))
+    U V
+
+/-- The full perturbed Schur determinant is precisely the determinant
+of I+Δ+K(z); all coupling matrices disappear from the determinant. -/
+theorem graphHodgePerturbedSchurLift_full_det
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((graphHodgePerturbedSchurLift G K U V).full z).det =
+      (momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z).det := by
+  calc
+    ((graphHodgePerturbedSchurLift G K U V).full z).det =
+      (euclideanOperatorMatrix
+        (momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)).det := by
+        exact BlockPencil.identitySchurLift_full_det
+          (fun t => euclideanOperatorMatrix
+            (momentMatrix (euclideanLaplacian G)
+              (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K t))
+          U V z
+    _ = _ := euclideanOperatorMatrix_det _
+
+/-- An effective perturbation smaller than one in operator norm cannot
+introduce a zero of the full coupled Schur determinant. -/
+theorem graphHodgePerturbedSchurLift_full_det_ne_zero
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z : Z) (hk : ‖K z‖ < 1) :
+    ((graphHodgePerturbedSchurLift G K U V).full z).det ≠ 0 := by
+  rw [graphHodgePerturbedSchurLift_full_det]
+  have hpert :
+      ‖(momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z) -
+          momentMatrix (euclideanLaplacian G)
+            (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))‖ < 1 := by
+    simpa only [add_sub_cancel_left] using hk
+  have hinj :=
+    positive_operator_perturbed_injective
+      (euclideanLaplacian G)
+      (momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)
+      (euclideanLaplacian_nonneg G) hpert
+  have hker :
+      LinearMap.ker
+        (momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  intro hzero
+  exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+
+/-- The perturbation preserves the full Schur determinant orientation
+relative to the unperturbed graph Hodge moment lift whenever ‖K(z)‖<1. -/
+theorem graphHodgePerturbedSchurLift_full_det_sign
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (K : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z : Z) (hk : ‖K z‖ < 1) :
+    0 < ((graphHodgeMomentSchurLift G U V).full z).det *
+        ((graphHodgePerturbedSchurLift G K U V).full z).det := by
+  rw [graphHodgeMomentSchurLift_full_det,
+    graphHodgePerturbedSchurLift_full_det]
+  have hpert :
+      ‖(momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z) -
+          momentMatrix (euclideanLaplacian G)
+            (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))‖ < 1 := by
+    simpa only [add_sub_cancel_left] using hk
+  exact positive_operator_perturbed_det_sign
+    (euclideanLaplacian G)
+    (momentMatrix (euclideanLaplacian G)
+      (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))) + K z)
+    (euclideanLaplacian_nonneg G) hpert
+
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
