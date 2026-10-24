@@ -11924,3 +11924,48 @@ Operational logs, registry, native ownership and any eventual receipt remain out
 ## Missing bridges by taxonomy
 
 Algebra: K1 still lacks the twelve-element standard basis, general Coxeter/Laurent construction, semilinear bar, KL basis and recurrence. K2/K4/K5 retain their degree, geometric positivity and analytic-realization gaps. The matrix representation is not proved faithful and does not supply E1 exceptional-group data. Number theory, boundary geometry and recursive-refinement obligations are unchanged; all precise hypotheses and missing suppliers remain in the structured record. Imported mathematics, earlier verified fragments and the five new source candidates retain separate classifications. No historical influence, reading event or understanding date is inferred.
+
+
+## Supplier declaration reconciliation — 2026-10-23
+
+Local maintenance by `grwtsk contributors`,
+[math@8e17d4e044087ad1ac7434906c5538d61a2072a7](https://github.com/grwtsk/math/commit/8e17d4e044087ad1ac7434906c5538d61a2072a7),
+`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean`
+blob `98ce2d34115ac5326da6e79a8de75bb2dc645442`.
+
+The concurrent commit `9ba7973a2` intentionally retained
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventualSuppliers_of_zeta_rightContexts`
+as a reducible `def`. Pinned Lean treats its result as a proposition and the
+initial strict build rejected the declaration-style warning. To reconcile the
+public definition with strict compilation, the repair preserves `def` and adds
+only a documented, declaration-scoped `linter.defProp false` exception. This
+replaces the prior maintenance approach of changing the declaration to `theorem`.
+The exception is a style-policy choice, not a proof, an additional premise, or
+an axiom-audit exception. Kernel and other checks remain enabled.
+
+Byte comparison after removing just those two annotation lines equals the
+concurrent definition exactly: all mathematical statements, supplier fields,
+proofs, source identities and unresolved premises are unchanged. This is a
+conditional interface, not evidence that the rational/algebraic-to-sofic or
+all-tail-context suppliers exist. Bibliographic context and classification in
+the preceding spectral/sofic validation cases remain unchanged.
+
+Actual commands after the repair both exited 0:
+
+```text
+lake build GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion GRWTSK.NumberTheory.Zeta.Riemann.ZetaSpectralGRHBridge --wfail
+lake build --wfail
+```
+
+Strict targets: **8716 jobs**; public main: **9307 jobs**. These checks include
+exactly the documented style-lint exception; they do not claim that the old
+warning passed unchanged. Fresh trust-level-zero kernel replay and transitive
+axiom audit for this new blob: **NOT_RUN**. Earlier source pins and kernel
+receipts remain historical; neither colocation/privacy changes nor this source
+comparison transfer their acceptance to edited bytes.
+
+External receipt names and original SHA-256 digests:
+
+- `heartbeat-20261024-0439-build.log`: `0419b5e78c3ecf1674262ba3fc3155df6c6f4f02d36893d1915ec3b44db4fd3c`.
+- `heartbeat-20261024-0439-repaired-build.log`: `77be94d3719276b6077a2d46a55a6f96f48cc97e8a6442ccb5a7b04c0fa85ef3`.
+- `heartbeat-20261024-0439-public-build.log`: `6611ea96c7b74a7f43d55cced22fd1cef601b9ed1fdf1875eb801b5748f3f416`.
