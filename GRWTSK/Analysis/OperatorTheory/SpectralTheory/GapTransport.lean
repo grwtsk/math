@@ -316,4 +316,30 @@ theorem cross_amplitude_absorption
   rw [hproduct, ← ha, ← hb]
   nlinarith [mul_nonneg hepsilon hsquare]
 
+/-- A bilinear interaction bound on the two sector norms supplies the
+controlled-cross-term hypothesis. Orthogonality and form decomposition remain
+explicit; no physical Hamiltonian is constructed here. -/
+theorem norm_energy_lower_bound_of_bilinear_interaction
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta epsilon energy energy₁ energy₂ cross : ℝ)
+    (hepsilon : 0 ≤ epsilon)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hinteraction : -(2 * epsilon * |‖x₁‖ * ‖x₂‖|) ≤ cross)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ energy := by
+  have habsorb := cross_amplitude_absorption epsilon ‖x₁‖ ‖x₂‖ hepsilon
+  have hcross : -(epsilon * ‖x‖ ^ 2) ≤ cross := by
+    rw [hnorm]
+    exact habsorb.trans hinteraction
+  have hsectors : delta * ‖x‖ ^ 2 ≤ energy₁ + energy₂ := by
+    rw [hnorm, mul_add]
+    exact add_le_add hfirst hsecond
+  rw [hsplit]
+  have hrewrite : (delta - epsilon) * ‖x‖ ^ 2 =
+      delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
+  rw [hrewrite]
+  linarith
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
