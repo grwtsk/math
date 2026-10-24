@@ -1,0 +1,39 @@
+# Source-pinned verification queue; no execution.
+schema_version = "0.1"
+request_id = "proper-power-original-pair-filter-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "0be96ad8d5992977a6dcc16691c76481c1dd41b3"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalPairFilter.lean"
+source_blob = "83f4205ca36bdf105267af99a038c51da8e79336"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPairFilter.pairSupportAt",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPairFilter.mem_pairSupportAt_iff",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalSwap",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Fixed-n nested sum equals filtered pairSupportAt sum",
+ "Dependent sum over n and pairSupportAt equals supportedTriplePacketMass",
+ "Rectangular packet equals rectangularSupportedMass",
+ "Compose exact original-to-rectangular reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalPairFilter.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPairFilter"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalPairFilter.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
