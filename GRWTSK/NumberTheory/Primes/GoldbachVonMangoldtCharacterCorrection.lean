@@ -2,6 +2,7 @@
 import GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm
 import Mathlib.Tactic
+import Mathlib.NumberTheory.LSeries.Dirichlet
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -208,5 +209,36 @@ theorem dirichlet_unitPsi_twist_eq_vonMangoldt_sum
         intro b hb
         split_ifs <;> simp
     _ = _ := by rw [dirichlet_unit_fiber_sum_eq_apply]
+
+
+/-- A named coefficient sequence shared by the finite GRWTSK packet
+and Mathlib's analytic twisted von Mangoldt L-series. -/
+def dirichletVonMangoldtCoefficient
+    (q : ℕ) (χ : DirichletCharacter ℂ q) (n : ℕ) : ℂ :=
+  χ (n : ZMod q) * (ArithmeticFunction.vonMangoldt n : ℂ)
+
+/-- The exact finite GRWTSK twist is a partial sum of the coefficients
+appearing in Mathlib's L-series logarithmic derivative identity. -/
+theorem dirichlet_unitPsi_twist_eq_coefficient_sum
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) :
+    (∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)) =
+      ∑ n ∈ Finset.range (N + 1), dirichletVonMangoldtCoefficient q χ n := by
+  rw [dirichlet_unitPsi_twist_eq_vonMangoldt_sum]
+  apply Finset.sum_congr rfl
+  intro n hn
+  unfold dirichletVonMangoldtCoefficient
+  ring
+
+/-- Analytic identification of the same coefficient function, valid
+only in the half-plane Re(s)>1. This supplies no finite cutoff error,
+contour shift, or cancellation bound. -/
+theorem dirichlet_coefficient_LSeries_eq_log_derivative
+    (q : ℕ) (χ : DirichletCharacter ℂ q)
+    (s : ℂ) (hs : 1 < s.re) :
+    LSeries.L (dirichletVonMangoldtCoefficient q χ) s =
+      -deriv (LSeries.L (χ : ℕ → ℂ)) s /
+        LSeries.L (χ : ℕ → ℂ) s := by
+  simpa only [dirichletVonMangoldtCoefficient, mul_comm] using
+    (DirichletCharacter.LSeries_twist_vonMangoldt_eq χ hs)
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
