@@ -199,9 +199,10 @@ The Noe evaluator uses standard-library rational Gaussian elimination to compute
 the determinant exactly. It records the rational `exact_determinant`, vertex and
 typed-edge counts, distances, deliberate upstream exclusions, graph/profile
 digests, and source pin. It calculates the logarithm with decimal precision 50,
-then provides a floating display value. Display comparisons use absolute
-tolerance `1e-12`; exact determinants remain the primary finite calculation
-record. Inputs above `max_exact_vertices` are unavailable, not silently
+then provides a floating display value with absolute tolerance `1e-12`.
+Ranking compares exact rational determinants before rounding; per-vertex
+normalization compares the corresponding exact determinant powers. Persistent
+IDs break actual ties. Inputs above `max_exact_vertices` are unavailable, not silently
 truncated. This is a computational check, not a Lean proof certificate.
 
 An extensible observation has `metric_id`, `status`, `value`, `units`, `method`,
@@ -216,6 +217,12 @@ attribution, evidence, and assessment date. Unknown is explicit. Reviewer
 judgments are assessments, not inferred numerical facts. No secondary metric or
 rubric changes the spectral ranking unless a later explicit profile defines its
 aggregation, direction, weight, missingness, and justification.
+
+A [supplemental least-prime demonstration](https://github.com/grwtsk/noeaaeue/tree/main/verification/math/result-publication/least-prime-local-source-replay-v1)
+replays two exact local sources and measures their local dependency projection
+under a fingerprinted cached environment. It deliberately excludes upstream
+edges and records that narrower profile. The default upstream-inclusive scores
+remain unavailable; the demonstration does not establish their missing closure.
 
 ## Formal statements and verification boundary
 
