@@ -243,6 +243,51 @@ This read-only audit expands the prior eleven-module frontier with exact Git sou
 
 The earlier mathematical A–H phases remain explanatory, not executable order. Preserve exact historical source hashes and corrected `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` (superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`), unchanged `Set.Ioi (0:ℝ)` hypotheses, and pending strict-integral, mixed-weight, Weil and RH obligations. **No complete recursive closure, cycle-free DAG or executable topological order is certified.** Evidence remains **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Stop/no-merge/no-root-promotion/no-force-push/no-Railway/no-unauthorized-dispatch constraints remain in force.
 
+## Import frontier continuation: eleven additional audited sources
+
+Source-only inspection recorded exact Git file blobs and direct GRWTSK import edges for eleven previously unresolved sources.
+
+| Module under `GRWTSK.` | Blob | Direct project imports |
+|---|---|---|
+| `NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic` | `7bf8b41ba8b704fee0ee64a53b61d2842e9542da` | `NumberTheory.Zeta.Riemann.CubicRemainder` |
+| `NumberTheory.Zeta.Riemann.RightHalfPlaneModulus` | `6a6818872730e47da338cb1727de6c8848048142` | `Analysis.Real.ReciprocalSquareTail` |
+| `NumberTheory.Zeta.Riemann.AnchoredLocalJensen` | `c75ff632b011100da1dce61eb5df8526926f04e0` | `NumberTheory.Zeta.Riemann.LocalJensenCount`, `NumberTheory.Zeta.Riemann.RightHalfPlaneModulus` |
+| `Analysis.Complex.GammaVerticalBound` | `5c0a7ff1adb439387d5402125860952de849d472` | `Analysis.Complex.NormalizedDiskLogarithm`, `Analysis.Complex.TrigonometricHeightBounds` |
+| `NumberTheory.Zeta.Riemann.JensenCentralLogDerivative` | `54180e188c1f6986b0162b52a3c66ca5581eac7e` | `NumberTheory.Zeta.Riemann.JensenDiskQuotient` |
+| `NumberTheory.Zeta.Riemann.LeftLogDerivative` | `c15adaf6c97d88e7ba2c1e9dcd3c775dbd36889a` | `Analysis.Complex.DigammaShift`, `NumberTheory.Zeta.Riemann.AdmissibleRectangles`, `NumberTheory.Chebyshev.TentPerronLine` |
+| `Analysis.Complex.TentContourMajorants` | `649a824a52f4aac5b32f4ee5457f5f2db2b3a2b8` | `Analysis.Complex.TentMellinInversion`, `Analysis.Complex.OrientedRectangle` |
+| `NumberTheory.Chebyshev.TentEdgeBounds` | `204f8a0161e532c8aaff24a09de33e069a615336` | `Analysis.Complex.TentContourMajorants`, `NumberTheory.Chebyshev.HeightIndexedTentResidues` |
+| `NumberTheory.LSeries.TentPairing` | `7b50bbc2593501ab87420d1c44408a1041fdfb96` | `Analysis.Complex.TentMellinInversion` |
+| `NumberTheory.Chebyshev.TentSource` | `0af34334ffd769414bf0c95563676350c5db916d` | `Analysis.Real.TentWeight`, `NumberTheory.Chebyshev.LegendreLogBudget` |
+| `NumberTheory.Chebyshev.CountedTentTail` | `d4b6cd930855fd6f61d688ada798eb6681f1a76d` | `Analysis.Complex.TentKernelTail`, `NumberTheory.Chebyshev.TentSource` |
+
+**New unexpanded source frontier:** `NumberTheory.Zeta.Riemann.CubicRemainder`, `Analysis.Real.ReciprocalSquareTail`, `NumberTheory.Zeta.Riemann.LocalJensenCount`, `Analysis.Complex.NormalizedDiskLogarithm`, `Analysis.Complex.TrigonometricHeightBounds`, `NumberTheory.Zeta.Riemann.JensenDiskQuotient`, `Analysis.Complex.DigammaShift`, `Analysis.Complex.TentMellinInversion`, `NumberTheory.Chebyshev.HeightIndexedTentResidues`, `NumberTheory.Chebyshev.LegendreLogBudget`, and their descendants. Previously audited imports (including `AdmissibleRectangles`, `TentPerronLine`, `OrientedRectangle`, `TentKernelTail` and `TentWeight`) are reused as prior evidence, not new verification.
+
+The direct imports also include Mathlib modules for parametric integrals, Riemann zeta, digamma, improper integrals, dominated convergence, and tactics. Complete Mathlib/Lean transitive closure is still pending. This table is **not** an executable topological order and establishes neither closure completeness nor cycle-freedom.
+
+**Preserved constraints:** Explanatory-only A–H mathematical stages, all pending source-specific analytic and Weil/RH obligations, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` vs historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` theorem domains, no-root-import/no-merge/no-force-push/no-Railway/no-unauthorized-dispatch rules. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**.
+
+## Import frontier continuation: ten additional project sources
+
+Read-only source inspection of the previous frontier found these exact Git blobs and direct project-import edges.
+
+| Module under `GRWTSK.` | Git blob | Direct project imports |
+|---|---|---|
+| `NumberTheory.Zeta.Riemann.CubicRemainder` | `9ef1c1752a4f2f1389352f7b82ac4877bd84cfe1` | `Analysis.Real.PowerCellMajorant`, `NumberTheory.Zeta.Riemann.CubicPowerSummation` |
+| `Analysis.Real.ReciprocalSquareTail` | `75b3e9d4c49e2ca01b1eb6900e309a18380586da` | none |
+| `NumberTheory.Zeta.Riemann.LocalJensenCount` | `c4ea53e9e9e9d91659cb6d0aaab71cba9bb2046e` | `Analysis.Complex.JensenFiniteMultiplicity`, `NumberTheory.Zeta.Riemann.SeparatedContourHeights` |
+| `Analysis.Complex.NormalizedDiskLogarithm` | `b935a14d14d8a6fbc857594c5cc7f9da4267d3e8` | `Analysis.Complex.NormalizedLogDerivativeBound` |
+| `Analysis.Complex.TrigonometricHeightBounds` | `dbca4e3b6cbe50953e90bcb4d1134fb10166e86f` | none |
+| `NumberTheory.Zeta.Riemann.JensenDiskQuotient` | `d1338d39cae4962d60de341c24853f838630a248` | `Analysis.Complex.FiniteBlaschkeRemoval`, `NumberTheory.Zeta.Riemann.JensenDiskQuotientLog` |
+| `Analysis.Complex.DigammaShift` | `02718e42e2344fd225411ed56d1c46d7420c1547` | none |
+| `Analysis.Complex.TentMellinInversion` | `81e269984aa9158581081e2bacd39cc11708a8be` | `Analysis.Complex.TentMellinKernel`, `Analysis.Real.TentRationalCorrection` |
+| `NumberTheory.Chebyshev.HeightIndexedTentResidues` | `a9e34e974ca697d5f1217e7483b3c85ab2df8378` | `NumberTheory.Zeta.Riemann.HeightIndexedDivisor`, `NumberTheory.Chebyshev.TentFiniteResidues`, `NumberTheory.Chebyshev.SeparatedTentContours` |
+| `NumberTheory.Chebyshev.LegendreLogBudget` | `875d459d7e33941f9149c5e6a964109dc9c6fc4a` | `NumberTheory.Chebyshev.HigherPrimePowerSource`, `NumberTheory.Chebyshev.ProperPrimePowerCorrection` |
+
+**Remaining unexpanded project frontier:** `Analysis.Real.PowerCellMajorant`, `NumberTheory.Zeta.Riemann.CubicPowerSummation`, `Analysis.Complex.JensenFiniteMultiplicity`, `Analysis.Complex.NormalizedLogDerivativeBound`, `Analysis.Complex.FiniteBlaschkeRemoval`, `NumberTheory.Zeta.Riemann.JensenDiskQuotientLog`, `NumberTheory.Zeta.Riemann.HeightIndexedDivisor`, `NumberTheory.Chebyshev.TentFiniteResidues`, `NumberTheory.Chebyshev.ProperPrimePowerCorrection`, and descendants. The previously inspected `SeparatedContourHeights`, `TentMellinKernel`, `TentRationalCorrection`, `SeparatedTentContours` and `HigherPrimePowerSource` remain previously pinned sources, not newly accepted proofs.
+
+Mathlib and Lean transitive imports, including locally uniform limits, Mellin inversion, complex primitives and analytic geometry, have not been completely enumerated. **No complete recursive closure, cycle-freedom, or executable topological order is established.** Retain explanatory-only A–H mathematical phases, pending strict integral/cofactor and Weil/RH mathematical bridges, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` against historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` signatures and all stopping/no-merge/no-root/no-force-push/no-Railway/no-unauthorized-dispatch constraints. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
