@@ -813,6 +813,83 @@ def finiteBlockAssocIndex (m n k : ℕ) :
     (Equiv.sumAssoc (Fin m) (Fin n) (Fin k))).trans
       (finiteBlockRightIndex m n k)
 
+/-- The nested left-associated binary block matrix is obtained by
+flattening the corresponding three-block diagonal along the genuine
+finite-sum bijection. -/
+theorem finiteBlockSumMatrix_left_flat
+    {m n k : ℕ}
+    (P : Matrix (Fin m) (Fin m) ℂ)
+    (Q : Matrix (Fin n) (Fin n) ℂ)
+    (R : Matrix (Fin k) (Fin k) ℂ) :
+    finiteBlockSumMatrix (finiteBlockSumMatrix P Q) R =
+      Matrix.reindex (finiteBlockLeftIndex m n k)
+        (finiteBlockLeftIndex m n k)
+        (Matrix.fromBlocks (Matrix.fromBlocks P 0 0 Q) 0 0 R) := by
+  let inner : Fin m ⊕ Fin n ≃ Fin (m + n) := finSumFinEquiv
+  let outer : Fin (m + n) ⊕ Fin k ≃ Fin ((m + n) + k) := finSumFinEquiv
+  let middle : (Fin m ⊕ Fin n) ⊕ Fin k ≃
+      Fin (m + n) ⊕ Fin k :=
+    Equiv.sumCongr inner (Equiv.refl (Fin k))
+  let triple : Matrix ((Fin m ⊕ Fin n) ⊕ Fin k)
+      ((Fin m ⊕ Fin n) ⊕ Fin k) ℂ :=
+    Matrix.fromBlocks (Matrix.fromBlocks P 0 0 Q) 0 0 R
+  have hblock :
+      Matrix.fromBlocks (Matrix.reindex inner inner
+        (Matrix.fromBlocks P 0 0 Q)) 0 0 R =
+        Matrix.reindex middle middle triple := by
+    simpa only [Matrix.reindex_refl_refl] using
+      (fromBlocks_reindex inner (Equiv.refl (Fin k))
+        (Matrix.fromBlocks P 0 0 Q) R).symm
+  calc
+    finiteBlockSumMatrix (finiteBlockSumMatrix P Q) R =
+      Matrix.reindex outer outer
+        (Matrix.fromBlocks (Matrix.reindex inner inner
+          (Matrix.fromBlocks P 0 0 Q)) 0 0 R) := rfl
+    _ = Matrix.reindex outer outer (Matrix.reindex middle middle triple) :=
+      congrArg (Matrix.reindex outer outer) hblock
+    _ = Matrix.reindex (middle.trans outer) (middle.trans outer) triple :=
+      matrix_reindex_comp middle outer triple
+    _ = Matrix.reindex (finiteBlockLeftIndex m n k)
+          (finiteBlockLeftIndex m n k) triple := rfl
+
+/-- The nested right-associated binary block matrix is obtained from
+the other parenthesization of the same finite three-block diagonal. -/
+theorem finiteBlockSumMatrix_right_flat
+    {m n k : ℕ}
+    (P : Matrix (Fin m) (Fin m) ℂ)
+    (Q : Matrix (Fin n) (Fin n) ℂ)
+    (R : Matrix (Fin k) (Fin k) ℂ) :
+    finiteBlockSumMatrix P (finiteBlockSumMatrix Q R) =
+      Matrix.reindex (finiteBlockRightIndex m n k)
+        (finiteBlockRightIndex m n k)
+        (Matrix.fromBlocks P 0 0 (Matrix.fromBlocks Q 0 0 R)) := by
+  let inner : Fin n ⊕ Fin k ≃ Fin (n + k) := finSumFinEquiv
+  let outer : Fin m ⊕ Fin (n + k) ≃ Fin (m + (n + k)) := finSumFinEquiv
+  let middle : Fin m ⊕ (Fin n ⊕ Fin k) ≃
+      Fin m ⊕ Fin (n + k) :=
+    Equiv.sumCongr (Equiv.refl (Fin m)) inner
+  let triple : Matrix (Fin m ⊕ (Fin n ⊕ Fin k))
+      (Fin m ⊕ (Fin n ⊕ Fin k)) ℂ :=
+    Matrix.fromBlocks P 0 0 (Matrix.fromBlocks Q 0 0 R)
+  have hblock :
+      Matrix.fromBlocks P 0 0
+          (Matrix.reindex inner inner (Matrix.fromBlocks Q 0 0 R)) =
+        Matrix.reindex middle middle triple := by
+    simpa only [Matrix.reindex_refl_refl] using
+      (fromBlocks_reindex (Equiv.refl (Fin m)) inner P
+        (Matrix.fromBlocks Q 0 0 R)).symm
+  calc
+    finiteBlockSumMatrix P (finiteBlockSumMatrix Q R) =
+      Matrix.reindex outer outer
+        (Matrix.fromBlocks P 0 0
+          (Matrix.reindex inner inner (Matrix.fromBlocks Q 0 0 R))) := rfl
+    _ = Matrix.reindex outer outer (Matrix.reindex middle middle triple) :=
+      congrArg (Matrix.reindex outer outer) hblock
+    _ = Matrix.reindex (middle.trans outer) (middle.trans outer) triple :=
+      matrix_reindex_comp middle outer triple
+    _ = Matrix.reindex (finiteBlockRightIndex m n k)
+          (finiteBlockRightIndex m n k) triple := rfl
+
 /-! ## Zero projection and explicit rectangular identity witnesses -/
 
 /-- The unique zero-dimensional complex matrix is a star projection.
