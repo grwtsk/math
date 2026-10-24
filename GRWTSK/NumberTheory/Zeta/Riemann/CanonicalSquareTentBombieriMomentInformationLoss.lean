@@ -1,6 +1,4 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors.
-Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction
