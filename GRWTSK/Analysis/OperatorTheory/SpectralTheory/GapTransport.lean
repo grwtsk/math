@@ -529,4 +529,23 @@ theorem offDiagonalBlock_pairing
   rw [Sᗮ.inner_starProjection_left_eq_right]
   rw [Sᗮ.starProjection_eq_self_iff.mpr (Sᗮ.starProjection_apply_mem x)]
 
+/-- Quantitative cross-sector estimate using the off-diagonal block norm
+rather than the norm of the entire bounded operator. -/
+theorem offDiagonalBlock_cross_lower_bound
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    -(‖offDiagonalBlock S T‖ * ‖S.starProjection x‖ *
+        ‖Sᗮ.starProjection x‖) ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) := by
+  have h := projected_cross_lower_bound_of_operator_norm
+    (offDiagonalBlock S T) (S.starProjection x) (Sᗮ.starProjection x)
+  have hblock : (offDiagonalBlock S T) (S.starProjection x) =
+      (offDiagonalBlock S T) x := by
+    simp only [offDiagonalBlock, ContinuousLinearMap.comp_apply]
+    rw [S.starProjection_eq_self_iff.mpr (S.starProjection_apply_mem x)]
+  rw [hblock, offDiagonalBlock_pairing S T x] at h
+  exact h
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
