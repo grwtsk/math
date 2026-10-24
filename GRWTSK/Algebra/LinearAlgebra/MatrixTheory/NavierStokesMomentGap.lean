@@ -210,6 +210,69 @@ theorem certified_moment_determinant_sign [FiniteDimensional ℝ F]
     (fun y => finite_rank_gap B C R hε hB hR hcoercive y) hpert
 
 
+
+/-!
+## Explicit moment-matrix supplier for finite adjoint descent
+
+The finite-coordinate operator is required to intertwine with the specific
+coercive moment matrix `I + B.comp C` through an energy-preserving encoding.
+These hypotheses identify actual operators; they are not consequences of a
+shared subject label. No fluid-solution or PDE identification is asserted.
+-/
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+
+/-- Global residual coercivity supplies the finite adjoint observability
+constant when an actual energy-preserving coordinate intertwining is given.
+No finite-dimensionality of the moment operator's spaces is assumed. -/
+theorem certified_moment_adjoint_observability
+    {κ : Type*} (s : Finset κ) (A : κ → κ → ℝ)
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ)
+    (encode : (κ → ℝ) → F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (henergy : ∀ w : κ → ℝ, energy s w = ‖encode w‖ ^ 2)
+    (hintertwines : ∀ w : κ → ℝ,
+      encode (applyMatrix s A w) = momentMatrix B C (encode w))
+    (v : κ → ℝ) :
+    (ε / (ε + β * δ)) ^ 2 * energy s v ≤
+      energy s (applyMatrix s A v) := by
+  exact observability_of_intertwining s A (momentMatrix B C) encode
+    (ε / (ε + β * δ))
+    (moment_gap_pos B R hε hB hR).le
+    (fun y => finite_rank_gap B C R hε hB hR hcoercive y)
+    henergy hintertwines v
+
+/-- An identified finite matrix representation of the certified moment matrix
+has a strictly contracting finite-adjoint reconstruction step. The quantified
+coercivity hypothesis and the two coordinate-compatibility premises remain
+visible, and no physical Navier–Stokes conclusion is inferred. -/
+theorem certified_moment_adjoint_strict_contraction
+    {κ : Type*} (s : Finset κ) (A : κ → κ → ℝ)
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ)
+    (encode : (κ → ℝ) → F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (henergy : ∀ w : κ → ℝ, energy s w = ‖encode w‖ ^ 2)
+    (hintertwines : ∀ w : κ → ℝ,
+      encode (applyMatrix s A w) = momentMatrix B C (encode w))
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s s A (applyMatrix s A v) c) ≤
+      (1 - damping s s A * (ε / (ε + β * δ)) ^ 2) * energy s v ∧
+      1 - damping s s A * (ε / (ε + β * δ)) ^ 2 < 1 := by
+  exact residual_relative_contraction_of_intertwining
+    s A (momentMatrix B C) encode (ε / (ε + β * δ))
+    (moment_gap_pos B R hε hB hR)
+    (fun y => finite_rank_gap B C R hε hB hR hcoercive y)
+    henergy hintertwines v
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
