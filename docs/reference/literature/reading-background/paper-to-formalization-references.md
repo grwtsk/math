@@ -7708,3 +7708,60 @@ External evidence in that directory: `riesz-reality-build.log`,
 `riesz-reality-validated-snapshot.json`. Historical source-only/NOT_RUN labels
 remain provenance; this entry records acceptance only for the pinned audited
 closure, without promoting any unresolved premise or separate new module.
+
+
+## Case BOMBIERI-RIGHT-HALF-PLANE-20261023 — nonnegative-weight recovery
+
+**Attribution:** Repository-derived 2026 finite-dimensional coefficient theorem candidate with OpenAI formalization assistance. No external paper theorem is imported (paper title/authors/year/version/DOI/arXiv/theorem number NOT APPLICABLE). Inverse-measurement and Weil analogies are contextual, not historical influence or verified transport.
+
+**Declarations/hypotheses:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentNonnegativeWeightRecovery.right_half_plane_injective` asserts injectivity of `augmentedProfile bombieriMomentProfile (mixedCoordinate weight)` whenever `weight:ℂ` has `0 ≤ weight.re`. `nonnegative_real_weight_injective` specializes to `weight:ℝ` with `0 ≤ weight`. The proof candidates use earlier local source claims that the *only* exceptional weight has negative real part. Actual canonical-square-tent three-coefficient source and original two moments only. No new analytic measurement, classical Weil criterion, admissibility/density/positivity or RH claim.
+
+**Source:** [`grwtsk/math@0ae464a18c646a4c56a87b8684aa516d278b6918`](https://github.com/grwtsk/math/commit/0ae464a18c646a4c56a87b8684aa516d278b6918), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentNonnegativeWeightRecovery.lean`, blob `a3a9aed57e145a5ca202e83e0a8803ceaed9aa34`. Direct import `CanonicalSquareTentExceptionalWeightRealAxis` blob `ca1c91a7a51bdde0c9f391cdd5950d9e7aa7ddcb`; full closure pending executor enumeration.
+
+**Classification:** Imported mathematics: local exceptional-weight source candidates and Mathlib Complex casts, no external paper theorem; kernel-verified bridge: NONE; source candidates: two; conditional interface: all transitive pivot-16 integral proofs remain unverified; finite evidence: none; analogy: rank/measurement reconstruction; unresolved: source compilation, independent fresh-kernel, full axioms and analytic Weil mapping. [Validation #1164](https://github.com/grwtsk/math/issues/1164) pins Lean 4.33.0, Mathlib db584cd6d46c92f209a44c0f1c829460d327499d and commands. SOURCE_ONLY / GIT_BLOB_READBACK / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN. Operational receipts only grwtsk/noeaaeue; no root promotion.
+
+
+## Case FINITE-SIGN-ORDERED-HEIGHT-20261023 — independent inputs and central area
+
+**Source identity.** Repository-derived finite mathematics under human direction
+grwtsk contributors, formalization assistance OpenAI (2026). The inherited source
+identities are `FiniteWalshPatterns` and `IntegralHeisenbergPrimitive`; no paper
+is imported by the new modules. Historical influence is not asserted.
+
+**Formal destination and exact hypotheses.**
+`GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.FiniteSignIndependence`
+(in `ProbabilityFoundations/FiniteSignIndependence.lean`) characterizes zero
+nonempty mixed moments by every finite fair independent window. The sample is
+a nonempty finite set of natural-number roots; probabilities use uniform root
+selection. `fairWindows_reindex` preserves that law under a coordinate
+bijection. A singleton root cannot be fair at an existing coordinate.
+`GRWTSK.GroupTheory.Words.HeisenbergOrderedHeight` proves the exact central
+height swap determinant, ordered-list cross-term formula, complete integer
+coordinate chart, and the horizontal-observation collision. Only central-axis
+conjugation additionally requires zero first and second coordinates.
+
+**Classification and verification at introduction.** `source-proof-candidate`;
+source-pinned joint replay and exact source commit will be recorded by the
+verification amendment. This entry does not itself attest kernel acceptance.
+Maintained mathematics is canonical here; effectful replay lives in Noe's
+`managers/custody/python-quine/verification/verify_chowla_height.py` and its
+external evidence directory. No native orchestration queue was invoked.
+
+**Paper scope comparisons, not imports.** Terence Tao, *The logarithmically
+averaged Chowla and Elliott conjectures for two-point correlations*, 2016
+version [arXiv:1509.05422v4](https://arxiv.org/abs/1509.05422v4): its fixed
+nondegenerate affine two-point logarithmic average does not supply an ordinary
+finite all-order uniform bound. Terence Tao and Joni Teräväinen, *The structure
+of logarithmically averaged correlations of multiplicative functions, with
+applications to the Chowla and Elliott conjectures*, 2018 version
+[arXiv:1708.02610v2](https://arxiv.org/abs/1708.02610v2), Duke Math. J. 168
+(2019), 1977–2027, DOI 10.1215/00127094-2019-0002: the logarithmic structure
+and odd-order applications are not imported as an arithmetic supplier here.
+Relation: `unresolved` arithmetic bridge / scope comparison only.
+
+**Unresolved premises and nonclaims.** All-order arithmetic cancellation,
+uniform random selection, fresh conditional entropy, adversarial cryptographic
+security, and an injective ordered Rust/Python geometry serialization remain
+separate obligations. Permutation-invariant input laws do not commute group
+factors: X*Y has central height 1 and Y*X has height 0. No Hodge, general
+noncommutative geometry, nilflow, zeta-zero, or RH consequence is established.
