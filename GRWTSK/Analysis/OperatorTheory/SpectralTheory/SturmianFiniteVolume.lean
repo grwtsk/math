@@ -283,4 +283,115 @@ theorem shiftedSturmian_unit_margin_perturbation_injective
   simpa only [add_sub_cancel_left] using hsmall
 
 
+
+/-- The bounded operator associated with the Hermitian finite Sturmian matrix
+is genuinely self-adjoint under pinned Mathlib's star-algebra equivalence. -/
+theorem sturmianCLM_isSelfAdjoint (N : ℕ) (α V ξ : ℝ) (origin : ℤ) :
+    IsSelfAdjoint (sturmianCLM N α V ξ origin) := by
+  unfold sturmianCLM
+  exact (hamiltonian_isHermitian N α V ξ origin).isSelfAdjoint.map
+    (Matrix.toEuclideanCLM (n := Fin N) (𝕜 := ℝ))
+
+/-- Real scalar shifts preserve self-adjointness of the concrete operator. -/
+theorem shiftedSturmianCLM_isSelfAdjoint
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (shift : ℝ) :
+    IsSelfAdjoint (shiftedSturmianCLM N α V ξ origin shift) := by
+  have hscalar :
+      IsSelfAdjoint
+        (shift • ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin N))) := by
+    change star (shift • ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin N))) =
+      shift • ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin N))
+    simp
+  exact (sturmianCLM_isSelfAdjoint N α V ξ origin).add hscalar
+
+/-- The scalar shift has zero off-diagonal coupling between an orthogonal
+sector and its complement; the interaction comes only from the unshifted
+Sturmian operator. -/
+theorem shiftedSturmian_offDiagonalBlock_eq
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (shift : ℝ)
+    (S : Submodule ℝ (EuclideanSpace ℝ (Fin N)))
+    [S.HasOrthogonalProjection] :
+    GapTransport.offDiagonalBlock S (shiftedSturmianCLM N α V ξ origin shift) =
+      GapTransport.offDiagonalBlock S (sturmianCLM N α V ξ origin) := by
+  ext x
+  have hz : Sᗮ.starProjection (S.starProjection x) = 0 :=
+    S.starProjection_orthogonal_apply_eq_zero (S.starProjection_apply_mem x)
+  simp [GapTransport.offDiagonalBlock, shiftedSturmianCLM, hz]
+
+/-- Orthogonal projections are contractions; hence the cross-sector
+interaction is at most the norm of the actual unshifted finite matrix. -/
+theorem shiftedSturmian_offDiagonalBlock_norm_le
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (shift : ℝ)
+    (S : Submodule ℝ (EuclideanSpace ℝ (Fin N)))
+    [S.HasOrthogonalProjection] :
+    ‖GapTransport.offDiagonalBlock S
+        (shiftedSturmianCLM N α V ξ origin shift)‖ ≤
+      ‖sturmianCLM N α V ξ origin‖ := by
+  rw [shiftedSturmian_offDiagonalBlock_eq]
+  unfold GapTransport.offDiagonalBlock
+  calc
+    ‖(Sᗮ.starProjection).comp
+        ((sturmianCLM N α V ξ origin).comp S.starProjection)‖ ≤
+      ‖Sᗮ.starProjection‖ *
+        ‖(sturmianCLM N α V ξ origin).comp S.starProjection‖ :=
+      (Sᗮ.starProjection).opNorm_comp_le _
+    _ ≤ ‖Sᗮ.starProjection‖ *
+        (‖sturmianCLM N α V ξ origin‖ * ‖S.starProjection‖) :=
+      mul_le_mul_of_nonneg_left
+        ((sturmianCLM N α V ξ origin).opNorm_comp_le _)
+        (norm_nonneg _)
+    _ ≤ 1 * (‖sturmianCLM N α V ξ origin‖ * 1) := by
+      gcongr
+      · exact (Sᗮ).starProjection_norm_le
+      · exact S.starProjection_norm_le
+    _ = ‖sturmianCLM N α V ξ origin‖ := by ring
+
+/-- The explicit shift `2‖H‖+1` leaves a genuine unit lower margin
+even after paying the entire off-diagonal sector interaction. -/
+theorem shiftedSturmian_unit_offDiagonal_margin
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (S : Submodule ℝ (EuclideanSpace ℝ (Fin N)))
+    [S.HasOrthogonalProjection] :
+    1 ≤
+      ((2 * ‖sturmianCLM N α V ξ origin‖ + 1) -
+        ‖sturmianCLM N α V ξ origin‖) -
+      ‖GapTransport.offDiagonalBlock S
+        (shiftedSturmianCLM N α V ξ origin
+          (2 * ‖sturmianCLM N α V ξ origin‖ + 1))‖ := by
+  have hb := shiftedSturmian_offDiagonalBlock_norm_le N α V ξ origin
+    (2 * ‖sturmianCLM N α V ξ origin‖ + 1) S
+  linarith
+
+/-- Concrete finite Sturmian two-sector coercivity supplies every abstract
+hypothesis of the Navier--Stokes-inspired bounded-port injectivity bridge.
+The strict perturbation certificate is still separately required for `P`.
+No infinite-volume or unshifted gap is inferred. -/
+theorem shiftedSturmian_two_sector_unit_margin_injective
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (S : Submodule ℝ (EuclideanSpace ℝ (Fin N)))
+    [S.HasOrthogonalProjection]
+    (P : EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N))
+    (hsmall :
+      ‖GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.defect
+        (ContinuousLinearMap.id ℝ _)
+        (shiftedSturmianCLM N α V ξ origin
+          (2 * ‖sturmianCLM N α V ξ origin‖ + 1)) P‖ < 1) :
+    Function.Injective P := by
+  let shift : ℝ := 2 * ‖sturmianCLM N α V ξ origin‖ + 1
+  let T := shiftedSturmianCLM N α V ξ origin shift
+  let delta : ℝ := shift - ‖sturmianCLM N α V ξ origin‖
+  have hsectors := shiftedSturmian_two_sector_bounds N α V ξ origin shift S
+  have hmargin : 1 ≤ delta - ‖GapTransport.offDiagonalBlock S T‖ := by
+    dsimp [delta, shift, T]
+    exact shiftedSturmian_unit_offDiagonal_margin N α V ξ origin S
+  have hstrict :
+      ‖GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.defect
+        (ContinuousLinearMap.id ℝ _) T P‖ <
+        delta - ‖GapTransport.offDiagonalBlock S T‖ :=
+    lt_of_lt_of_le hsmall hmargin
+  exact GapTransport.self_adjoint_injective_of_offDiagonalBlock_small_defect
+    S T P (shiftedSturmianCLM_isSelfAdjoint N α V ξ origin shift)
+    delta hsectors.1 hsectors.2 hstrict
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
