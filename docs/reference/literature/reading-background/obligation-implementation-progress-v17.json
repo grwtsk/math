@@ -13,7 +13,7 @@
     "kernel-verified-correction-fragment": 1
   },
   "verification": {
-    "target_status": "PENDING / NOT_KERNEL_AUDITED",
+    "target_status": "NOT_RUN / NOT_KERNEL_AUDITED: replay interrupted before selected targets",
     "acceptance": "No new target acceptance",
     "prior_failure": {
       "prior_receipt_sha256": "7171ed9719e7acdbae7f661939a3fe23b78fadf04293f42985e895deece857f6",
@@ -38,7 +38,23 @@
     "required_source_modules": 1284,
     "expected_type_consumers": 2,
     "memory_policy": "Unchanged managed 1024 MiB per child; no budget increase or alternate runner.",
-    "limits": "Failed and partial dependencies do not accept any target. Installed Lean core remains a pinned trusted boundary. New proof scripts and resource hypothesis are unverified."
+    "limits": "Failed and partial dependencies do not accept any target. Installed Lean core remains a pinned trusted boundary. New proof scripts and resource hypothesis are unverified.",
+    "interrupted_replay_checkpoint": {
+      "evidence_directory": "literature-bridges-v18/run-1",
+      "outcome": "INCOMPLETE_NO_TERMINAL_RECEIPT",
+      "completed_dependency_records": 893,
+      "pending_module": "Mathlib.Algebra.Module.RingHom",
+      "pending_module_index": 893,
+      "selected_target_audits": 0,
+      "expected_type_consumers_passed": 0,
+      "gate_status": "UNKNOWN",
+      "returncode": null,
+      "termination_cause": "UNKNOWN",
+      "source_acceptance": "No new target acceptance; all candidate byte identities retain NOT_RUN",
+      "operational_closure_scope": "Explicit observer-only reconciliation, no parent wait/reap or stream EOF inferred; exact saved configuration restored. This is not Lean acceptance.",
+      "operational_closure_receipt_sha256": "9d72f91ed7168169582d5cedb5a4bb7aecabc905f0a098bcbad8275db2a9f444",
+      "missing_verification": "Fresh supported source-bound replay, all fifteen strict target audits, both exact-type consumers and final source/runtime/host gates remain required. Partial dependency artifacts cannot substitute."
+    }
   },
   "reviews": [
     {
