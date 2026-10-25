@@ -425,4 +425,120 @@ theorem cumulative_weightLoss_lower_of_tent_upper (N : ℕ) (C : ℝ)
   rw [Finset.sum_add_distrib] at hlow
   linarith
 
+/-! ## Exact centered-moment deficit criteria for Gram operators
+
+A large first absolute moment of complete von Mangoldt mass means the
+actual triangularly weighted source is small. The two implications below
+have exact constants and preserve the positive square radius. In the
+canonical finite Euclidean Gram, this gives a direct characterization of
+operator norm bounds and of strict injectivity, without introducing any
+short-interval theorem or an infinite-volume completion.
+-/
+
+/-- The exact pointwise arithmetic obstruction to a bounded tent mass.
+The inequality reverses because the centered moment is subtracted. -/
+theorem squareTentMangoldt_le_iff_moment_lower
+    (n : ℕ) (C : ℝ) :
+    squareTentMangoldt n ≤ C ↔
+      (squareIncrement n - C) * squareRadius n ≤
+        squareAbsoluteMoment n := by
+  rw [squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment]
+  constructor
+  · intro h
+    have hdiv :
+        squareIncrement n - C ≤
+          squareAbsoluteMoment n / squareRadius n := by linarith
+    exact (le_div_iff₀ (squareRadius_pos n)).mp hdiv
+  · intro h
+    have hdiv :
+        squareIncrement n - C ≤
+          squareAbsoluteMoment n / squareRadius n :=
+      (le_div_iff₀ (squareRadius_pos n)).mpr h
+    linarith
+
+/-- Positive actual tent mass is equivalent to a strict shortfall of
+the genuine centered moment from radius times full interval mass. -/
+theorem squareTentMangoldt_pos_iff_moment_strict
+    (n : ℕ) :
+    0 < squareTentMangoldt n ↔
+      squareAbsoluteMoment n <
+        squareIncrement n * squareRadius n := by
+  rw [squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment]
+  constructor
+  · intro h
+    have hdiv :
+        squareAbsoluteMoment n / squareRadius n <
+          squareIncrement n := by linarith
+    exact (div_lt_iff₀ (squareRadius_pos n)).mp hdiv
+  · intro h
+    have hdiv :
+        squareAbsoluteMoment n / squareRadius n <
+          squareIncrement n :=
+      (div_lt_iff₀ (squareRadius_pos n)).mpr h
+    linarith
+
+/-- EXACT criterion for a bound on the concrete finite Hilbert
+operator, with its original stage index i+2. The source remains
+the full von Mangoldt mass, including proper prime powers. -/
+theorem canonicalEuclideanGramOperator_norm_le_iff_moment_lower
+    (M : ℕ) (C : ℝ) (hC : 0 ≤ C) :
+    ‖canonicalEuclideanGramOperator M‖ ≤ C ↔
+      ∀ i : Fin (M + 1),
+        (squareIncrement (i.1 + 2) - C) *
+          squareRadius (i.1 + 2) ≤
+            squareAbsoluteMoment (i.1 + 2) := by
+  rw [canonicalEuclideanGramOperator_norm_eq]
+  rw [pi_norm_le_iff_of_nonneg hC]
+  constructor
+  · intro h i
+    apply (squareTentMangoldt_le_iff_moment_lower (i.1 + 2) C).mp
+    have hnonneg := squareTentMangoldt_nonneg (i.1 + 2)
+    have hbound := h i
+    rwa [arithmeticCrossCoefficient_diag_eq_mangoldt,
+      Complex.norm_real, Real.norm_of_nonneg hnonneg] at hbound
+  · intro h i
+    have ht :=
+      (squareTentMangoldt_le_iff_moment_lower (i.1 + 2) C).mpr (h i)
+    have hnonneg := squareTentMangoldt_nonneg (i.1 + 2)
+    simpa only [arithmeticCrossCoefficient_diag_eq_mangoldt,
+      Complex.norm_real, Real.norm_of_nonneg hnonneg] using ht
+
+/-- Exact strict first-moment criterion for injectivity of the
+SOURCE finite Gram. Neither direction assumes arithmetic positivity
+beyond the coefficients already proved nonnegative in the source. -/
+theorem canonicalGramOperator_injective_iff_moment_strict (M : ℕ) :
+    Function.Injective (canonicalGramOperator M) ↔
+      ∀ i : Fin (M + 1),
+        squareAbsoluteMoment (i.1 + 2) <
+          squareIncrement (i.1 + 2) *
+            squareRadius (i.1 + 2) := by
+  rw [canonicalGramOperator_injective_iff_square_masses_positive]
+  exact forall_congr' (fun i =>
+    squareTentMangoldt_pos_iff_moment_strict (i.1 + 2))
+
+/-- The identical strict gap makes the finite continuous Hilbert
+operator injective via its exact coordinate realization. This is
+not an infinite-dimensional spectral realization. -/
+theorem canonicalEuclideanGramOperator_injective_of_moment_strict
+    (M : ℕ)
+    (hgap : ∀ i : Fin (M + 1),
+        squareAbsoluteMoment (i.1 + 2) <
+          squareIncrement (i.1 + 2) *
+            squareRadius (i.1 + 2)) :
+    Function.Injective (canonicalEuclideanGramOperator M) := by
+  have hsource :
+      Function.Injective (canonicalGramOperator M) :=
+    (canonicalGramOperator_injective_iff_moment_strict M).mpr hgap
+  intro x y hxy
+  have hxy' :
+      canonicalEuclideanGramOperator M
+          (WithLp.toLp 2 (WithLp.ofLp x)) =
+        canonicalEuclideanGramOperator M
+          (WithLp.toLp 2 (WithLp.ofLp y)) := by
+    simpa only [WithLp.toLp_ofLp] using hxy
+  rw [canonicalEuclideanGramOperator_toLp,
+    canonicalEuclideanGramOperator_toLp] at hxy'
+  exact WithLp.ofLp_injective 2
+    (hsource (WithLp.toLp_injective 2 hxy'))
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
