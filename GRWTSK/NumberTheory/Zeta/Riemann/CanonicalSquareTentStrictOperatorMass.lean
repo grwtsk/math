@@ -35,6 +35,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictOperatorMass
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction
+open GRWTSK.NumberTheory.Chebyshev.TentSource
 
 /-- The canonical coefficient basis vector is genuinely nonzero. -/
 theorem basisCombination_ne_zero {M : ℕ} (i : Fin (M + 1)) :
