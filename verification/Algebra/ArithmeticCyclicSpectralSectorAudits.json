@@ -1,0 +1,84 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-spectral-sector-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "ELEVEN_SOURCE_PROOF_CANDIDATES_ZERO_DEFINITIONS",
+  "source_commit": "981e28036885c43d8472692bed7e9cdb4025fd2c",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralSector.lean",
+  "source_blob": "f2b51a7696b5cff405376e0f0be869226c1a5dee",
+  "source_sha256": "bab1189ff6099f639b1cd0c01ce40232d3291aaa373bb36172774ae37a38e773",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.basis_diagonal_action",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.hamiltonian_basis_coordinates",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.low_basis_coordinates",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_basis_coordinates",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.hamiltonian_energy_eigenbasis",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_low_coordinates_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_sector_energy_lower",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_sector_norm_lower",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_sector_kernel",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.arithmetic_high_sector_energy_lower",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.arithmetic_high_sector_norm_lower"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.arithmetic_high_sector_energy_lower": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real) (x : EuclideanSpace Complex (ZMod N)), E * norm ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) x) ^ 2 <= (inner Complex ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) x) ((Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w)) ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) x))).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.arithmetic_high_sector_norm_lower": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real) (x : EuclideanSpace Complex (ZMod N)), E * norm ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) x) <= norm ((Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w)) ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) x))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.basis_diagonal_action": "forall (N : Nat) [NeZero N] (T : ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))) (b : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (d : ZMod N -> Complex), (forall i, T (b i) = d i \u2022 b i) -> forall x : EuclideanSpace Complex (ZMod N), T x = b.repr.symm (WithLp.toLp 2 (fun i => d i * b.repr x i))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.hamiltonian_basis_coordinates": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (x : EuclideanSpace Complex (ZMod N)) (i : ZMod N), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q x) i = ((GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i : Complex) * (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr x i",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.hamiltonian_energy_eigenbasis": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (x : EuclideanSpace Complex (ZMod N)), (inner Complex x (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q x)).re = \u2211 i, (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i * norm ((GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr x i) ^ 2",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_basis_coordinates": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (x : EuclideanSpace Complex (ZMod N)) (i : ZMod N), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x) i = (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.cutMask N t q E i) * (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr x i",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_low_coordinates_zero": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (x : EuclideanSpace Complex (ZMod N)) (i : ZMod N), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < E -> (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x) i = 0",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_sector_energy_lower": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (x : EuclideanSpace Complex (ZMod N)), E * norm ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x) ^ 2 <= (inner Complex ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x))).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_sector_kernel": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), 0 < E -> forall x : EuclideanSpace Complex (ZMod N), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x) = 0 -> (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x = 0",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.high_sector_norm_lower": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (x : EuclideanSpace Complex (ZMod N)), E * norm ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x) <= norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q ((1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralSector.low_basis_coordinates": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (x : EuclideanSpace Complex (ZMod N)) (i : ZMod N), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E x) i = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.cutMask N t q E i * (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis.repr x i"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots;11explicit structural names do not cap the population.",
+  "scope": [
+    "Every nonzero N, including all N>=3; all signed real hopping/potentials and every real cutoff E, all full complex Euclidean input vectors x.",
+    "Generic complete-basis reconstruction retains the exact every-basis-vector action hypothesis and is demonstrated for the actual Hamiltonian and actual low projector.",
+    "Exact actual Hamiltonian/low/high coordinates and full eigenbasis energy identity, with all squared complex Euclidean coordinates and the actual real eigenvalues.",
+    "The vector is EXPLICITLY y=(1-lowOperator)x, with the existing strict eigenvalue<E cutoff. Low coordinates vanish; equal-cutoff eigenvalues remain in the high sector.",
+    "Energy bound E*norm(y)^2<=Re(inner y (H y)) and norm bound E*norm(y)<=norm(H y) hold for every real E. For E<=0, the norm lower bound may be vacuous.",
+    "ONLY with explicit E>0, H y=0 implies y=0 on this actual projected range. The high range may be zero; no nonzero excitation or full-space positivity/gap is supplied.",
+    "Actual arithmetic character/level/arbitrary natural labels/all real coefficients are retained, with no positivity of weights, m_i>=2, common-prime or mean-zero assumption.",
+    "No basis-choice independence, cutoff/rank perturbation stability, identified vacuum/infinite/AMO/RH/physical or continuum-mass bridge."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T200005.105494Z/sector-registry.json",
+    "registry_sha256": "f977b02f84f0e509d227635831912ed201154b333aa388c9d62ec85aa8ee5f7d",
+    "project_modules": 14,
+    "upstream_source_modules": 3190,
+    "source_assets": 27,
+    "complete_compiler_origin_audits_required": 1,
+    "required_structural_names": 11,
+    "selected_exact_types": 11,
+    "all_eleven_theorem_types_selected": true,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "noe_head": "13f89484a1df3a61df575a7dbf5003d4dba076d4",
+    "native_status": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every matching executed native acceptance gate.",
+    "Basis-choice independence, continuous-linear-map rank/dimension transfer, cutoff/rank perturbation stability.",
+    "Nonzero high-sector/excitation existence and any identified vacuum or full-space lower bound.",
+    "Identified infinite/rescaled/continuum/AMO/full RH-family operators and residual/reconstruction estimates.",
+    "Physical/gauge/Yang-Mills or continuum mass identification."
+  ],
+  "issue_state": "OPEN"
+}
