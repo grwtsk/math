@@ -699,12 +699,20 @@ theorem dirichletVonMangoldt_LSeries_eq_prefix_add_shifted
       Summable (LSeries.term (dirichletVonMangoldtCoefficient q χ) s) :=
     dirichlet_coefficient_LSeriesSummable q χ s hs
   have hsplit := hsum.sum_add_tsum_nat_add (N + 1)
-  unfold LSeries.L
-  rw [hsplit]
-  congr 1
-  apply tsum_congr
-  intro k
-  exact dirichletVonMangoldt_LSeries_term_pos q (k + N + 1) χ s (by omega)
+  change (∑' n : ℕ, LSeries.term (dirichletVonMangoldtCoefficient q χ) s n) = _
+  calc
+    (∑' n : ℕ, LSeries.term (dirichletVonMangoldtCoefficient q χ) s n) =
+        (∑ n ∈ Finset.range (N + 1),
+          LSeries.term (dirichletVonMangoldtCoefficient q χ) s n) +
+        (∑' k : ℕ,
+          LSeries.term (dirichletVonMangoldtCoefficient q χ) s (k + (N + 1))) :=
+      hsplit
+    _ = _ := by
+      congr 1
+      apply tsum_congr
+      intro k
+      simpa only [add_assoc] using
+        (dirichletVonMangoldt_LSeries_term_pos q (k + N + 1) χ s (by omega))
 
 
 /-- Explicit finite-prefix truncation error for the actual Mathlib
