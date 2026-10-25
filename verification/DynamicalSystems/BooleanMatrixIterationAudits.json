@@ -1,0 +1,94 @@
+{
+  "schema": "grwtsk.boolean-matrix-iteration-audit-requirements/1",
+  "attribution": "grwtsk contributors",
+  "classification": "STATIC_ACCEPTANCE_REQUIREMENTS_NOT_EXECUTION_EVIDENCE",
+  "source_commit": "6a3302715f612f291edbed3ed465f2943c84455c",
+  "historical_requests": [
+    {
+      "issue": 1173,
+      "commit": "9f7457af3725d0b1be4bea33e282992d0a301a65",
+      "blob": "9206cfafd332f423dcf831706ed0b4e9cd2523a1",
+      "native_status": "NOT_RUN",
+      "prepare_status": "FAILED_MISSING_BOOLEANMATRIX_APPLICATION_CORE"
+    },
+    {
+      "issue": 1174,
+      "commit": "78bfcbc94f39d7913e7698435e8de6174ef200c3",
+      "native_status": "NOT_RUN",
+      "prepare_status": "NOT_RUN"
+    }
+  ],
+  "contracts": [
+    {
+      "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/CountableBooleanMatrices/Variant8e457ae93b872fb8/CarrierAndEntrywiseExtensionality.lean",
+      "blob": "c4deed7ca45cbfea2200db1420b1bca068a6dba8",
+      "sha256": "6635b9312526840cad6e8d7ec574cf91b2eb6b4c7be959f2d641defd3c3d79b6",
+      "required_declarations": [
+        "BooleanMatrix.Matrix",
+        "BooleanMatrix.Matrix.ext"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "native_status": "NOT_RUN"
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/SimpleTypeTheory/FunctionTypes/BooleanMatrixSelfMaps/Variant904476e1a96b6b04/ApplicationOperations.lean",
+      "blob": "f7bb43c9206652b835cb9a5bb31744f622c4f75e",
+      "sha256": "2864c8bf17908c031504922043a2554576529a6d5fdd9f75c39fa3c695265ae4",
+      "required_declarations": [
+        "BooleanMatrix.Application",
+        "BooleanMatrix.Application.identity",
+        "BooleanMatrix.Application.comp",
+        "BooleanMatrix.Application.identity_apply",
+        "BooleanMatrix.Application.comp_apply"
+      ],
+      "allowed_axioms": [],
+      "native_status": "NOT_RUN"
+    },
+    {
+      "source": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/NaturalIterationOnBooleanMatrices/Variant1f1f2efdeade9306/FiniteIteration.lean",
+      "blob": "949d43ee67e384d44559bc6aa81c8ee028a5f982",
+      "sha256": "c3152a0136a25fe7046c5104d22b055d68412ee3f15e97eb5fb5ba7795fffe19",
+      "required_declarations": [
+        "BooleanMatrix.Application.iterate",
+        "BooleanMatrix.Application.iterate_zero",
+        "BooleanMatrix.Application.iterate_succ"
+      ],
+      "allowed_axioms": [],
+      "native_status": "NOT_RUN"
+    },
+    {
+      "source": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/NaturalIterationOnBooleanMatrices/Variant1f1f2efdeade9306/OrbitSequence.lean",
+      "blob": "6c2a4b5489ef74e98945c74d5e2a5ccfca6fa2e6",
+      "sha256": "57c15ee1d73571b62a9c5b3698f4e3c61b4e13f87c08d2baa67f1c22a3439e80",
+      "required_declarations": [
+        "BooleanMatrix.Application.orbit",
+        "BooleanMatrix.Application.orbit_zero",
+        "BooleanMatrix.Application.orbit_succ"
+      ],
+      "allowed_axioms": [],
+      "native_status": "NOT_RUN"
+    }
+  ],
+  "required_gates": [
+    "Freshly compile all four pinned project source modules with trust zero and warnings as errors",
+    "Complete compiler-origin audits for every declaration owned by each module, including all thirteen required roots",
+    "Apply empty allowed-axiom policy to self-map/iteration/orbit modules; explicit standard three-axiom allowance only to carrier/extensionality module",
+    "Preserve every source signature and proof body; the only repair is explicit provider imports with explanatory comments",
+    "Retain source, toolchain, manifest, producer, native resource and command identities in external Noe runtime",
+    "Keep original source snapshots, missing-provider preparation failure and current successor evidence distinct"
+  ],
+  "compiled_boundary": "Pinned installed Lean Init/Std library; no whole-toolchain or Std source replay is asserted",
+  "exact_type_consumers": {
+    "status": "NOT_RUN",
+    "count": 0,
+    "limitation": "Current managed named/expected-type route selects GRWTSK declarations only; legacy BooleanMatrix names are covered by complete module census with required structural root names. No exact type-consumer execution is claimed."
+  },
+  "native_compilation": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axiom_acceptance": "NOT_RUN",
+  "mathematical_scope": "Matrix is Nat \u2192 Nat \u2192 Bool; Application is Matrix \u2192 Matrix; no finiteness, periodicity, convergence, reversible execution, implementation refinement or compression follows."
+}
