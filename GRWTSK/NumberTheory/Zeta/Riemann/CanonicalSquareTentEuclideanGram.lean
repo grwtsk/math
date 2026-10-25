@@ -923,10 +923,12 @@ theorem centralSquarePrime_mass_ge_count_log (n : ℕ) :
         Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) ≤
       ∑ p ∈ centralSquarePrimes n,
         ArithmeticFunction.vonMangoldt p := by
-  rw [← Finset.sum_const_zero] -- normalize the finite sum target
-  simp only [Finset.sum_const, nsmul_eq_mul]
-  apply Finset.sum_le_sum
-  intro p hp
-  exact centralSquarePrime_log_lower n p hp
+  calc
+    _ = ∑ p ∈ centralSquarePrimes n,
+          Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) := by simp
+    _ ≤ _ := by
+      apply Finset.sum_le_sum
+      intro p hp
+      exact centralSquarePrime_log_lower n p hp
 
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
