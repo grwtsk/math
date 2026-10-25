@@ -160,10 +160,10 @@ theorem no_universal_scope_promotion :
   intro promote
   let domain : Nat → Prop := fun n => n = 0
   let property : Nat → Prop := fun n => n = 0
-  have local : ∀ n, domain n → property n := by
+  have «local» : ∀ n, domain n → property n := by
     intro n assumption
     exact assumption
-  have impossible : (1 : Nat) = 0 := promote Nat domain property local 1
+  have impossible : (1 : Nat) = 0 := promote Nat domain property «local» 1
   cases impossible
 
 /-- Scope and property transfer require separate proof-producing suppliers.
