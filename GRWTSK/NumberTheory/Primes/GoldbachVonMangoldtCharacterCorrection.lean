@@ -406,8 +406,8 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
   have hinner : HasDerivAt
       (fun x : ℝ => Real.log x / (σ - 1) + 1 / (σ - 1) ^ 2)
       (t⁻¹ / (σ - 1)) t := by
-    convert (hlog.div_const (σ - 1)).add_const (1 / (σ - 1) ^ 2) using 1
-    simp
+    simpa only using
+      (hlog.div_const (σ - 1)).add_const (1 / (σ - 1) ^ 2)
   unfold logarithmicPowerTailPrimitive logarithmicPowerTailKernel
   convert (hpow.mul hinner).neg using 1
   · field_simp
