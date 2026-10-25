@@ -843,4 +843,54 @@ theorem relative_moment_gap_of_centralSquareWitnesses
     (by norm_num) (centralSquareWitnesses_subset n)
     (centralSquareWitnesses_weight_half n) hsource
 
+/-! ## Prime versus proper-prime-power central inventory
+
+The central witness budget must distinguish prime terms from proper
+prime powers. The following exact finite partition does not assume
+the central prime mass is positive or controls the proper-power part.
+-/
+
+/-- Actual prime indices in the geometric central square window. -/
+def centralSquarePrimes (n : ℕ) : Finset ℕ :=
+  (centralSquareWitnesses n).filter Nat.Prime
+
+/-- Actual nonprime indices in the same central window. This retains
+all proper prime powers and zero-weight composite terms. -/
+def centralSquareNonprimes (n : ℕ) : Finset ℕ :=
+  (centralSquareWitnesses n).filter (fun m => ¬ Nat.Prime m)
+
+/-- Exact partition of the central von Mangoldt mass, without
+discarding higher prime powers or changing the interval endpoints. -/
+theorem centralSquareMass_eq_prime_add_nonprime (n : ℕ) :
+    (∑ m ∈ centralSquareWitnesses n,
+      ArithmeticFunction.vonMangoldt m) =
+      (∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) +
+      (∑ m ∈ centralSquareNonprimes n,
+        ArithmeticFunction.vonMangoldt m) := by
+  classical
+  unfold centralSquarePrimes centralSquareNonprimes
+  rw [← Finset.sum_filter_add_sum_filter_not
+    (s := centralSquareWitnesses n) (p := Nat.Prime)]
+
+/-- An explicit central prime-only mass budget, together with
+nonnegative residual prime-power mass, suffices for the original
+central fraction hypothesis. The prime-only budget is not proved. -/
+theorem relative_moment_gap_of_central_prime_budget
+    (n : ℕ) (δ : ℝ)
+    (hprime : δ * squareIncrement n ≤
+      ∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  apply relative_moment_gap_of_centralSquareWitnesses n δ
+  rw [centralSquareMass_eq_prime_add_nonprime]
+  have hnonneg : 0 ≤
+      ∑ m ∈ centralSquareNonprimes n,
+        ArithmeticFunction.vonMangoldt m :=
+    Finset.sum_nonneg (fun m hm =>
+      ArithmeticFunction.vonMangoldt_nonneg)
+  linarith
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
