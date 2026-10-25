@@ -706,4 +706,37 @@ theorem squareMoment_deficit_ge_witness_finset
     field_simp [ne_of_gt hr]
   linarith
 
+/-! ## Witness-budget supplier for a uniform relative gap
+
+The arithmetic supplier must account for a specified fraction of the
+FULL von Mangoldt mass in the exact square-tent window. This theorem
+does not assume the witness set consists only of primes, and does not
+establish that the required quantitative witness budget exists.
+-/
+
+/-- A finite set carrying at least a δ fraction of the complete
+source mass after tent weighting supplies the exact relative
+first-moment deficit required by the operator bridge. -/
+theorem relative_moment_gap_of_witness_budget
+    (n : ℕ) (S : Finset ℕ) (δ : ℝ)
+    (hS : S ⊆ Finset.Ioc (n ^ 2) ((n + 1) ^ 2))
+    (hbudget : δ * squareIncrement n ≤
+      ∑ m ∈ S, ArithmeticFunction.vonMangoldt m * squareWeight n m) :
+    squareAbsoluteMoment n ≤
+      (1 - δ) * squareRadius n * squareIncrement n := by
+  have hsum := squareMoment_deficit_ge_witness_finset n S hS
+  have hr := squareRadius_pos n
+  have hscaled := mul_le_mul_of_nonneg_left hbudget hr.le
+  nlinarith
+
+/-- The same witness budget implies a lower bound on the exact
+tapered arithmetic source, without any external spectral premise. -/
+theorem squareTentMangoldt_ge_of_witness_budget
+    (n : ℕ) (S : Finset ℕ) (δ : ℝ)
+    (hS : S ⊆ Finset.Ioc (n ^ 2) ((n + 1) ^ 2))
+    (hbudget : δ * squareIncrement n ≤
+      ∑ m ∈ S, ArithmeticFunction.vonMangoldt m * squareWeight n m) :
+    δ * squareIncrement n ≤ squareTentMangoldt n := by
+  exact hbudget.trans (squareTentMangoldt_ge_witness_finset n S hS)
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
