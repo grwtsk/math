@@ -90,7 +90,7 @@ theorem operator_vector_change_le (t : ℝ) (q r : ZMod N → ℝ)
       ‖q - r‖ * ‖x‖ := by
   have h := (hamiltonianOperator N t q - hamiltonianOperator N t r).le_opNorm x
   rw [operator_norm_sub_eq] at h
-  simpa only [ContinuousLinearMap.sub_apply] using h
+  simpa only [sub_apply] using h
 
 theorem operator_norm_change_le (t : ℝ) (q r : ZMod N → ℝ) :
     |‖hamiltonianOperator N t q‖ - ‖hamiltonianOperator N t r‖| ≤ ‖q - r‖ := by
