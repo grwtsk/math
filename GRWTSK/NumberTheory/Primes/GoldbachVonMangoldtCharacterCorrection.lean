@@ -382,7 +382,13 @@ theorem logarithmicPowerTailKernel_integrableOn_Ioi
     exact le_trans (by exact_mod_cast hN) hNt.le
   have hnonneg := logarithmicPowerTailKernel_nonneg σ t htthree
   have hbound := logarithmicPowerTailKernel_le_comparison σ t hσ htthree
-  simpa [Real.norm_eq_abs, abs_of_nonneg hnonneg] using hbound
+  have hpow_nonneg : 0 ≤ t ^ (-(σ + 1) / 2) :=
+    Real.rpow_nonneg (by linarith : 0 ≤ t) _
+  have hdom_nonneg :
+      0 ≤ (2 / (σ - 1)) * t ^ (-(σ + 1) / 2) :=
+    mul_nonneg hconstant hpow_nonneg
+  simpa only [Real.norm_eq_abs, abs_of_nonneg hnonneg,
+    abs_of_nonneg hdom_nonneg] using hbound
 
 
 /-- The elementary primitive for the logarithmic-power tail, with
