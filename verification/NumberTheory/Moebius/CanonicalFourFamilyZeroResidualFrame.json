@@ -1,0 +1,49 @@
+{
+  "schema": "grwtsk.zero-residual-frame-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "d5b1d3a21bfb58af865172c4433b28713152e83a",
+  "source": "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyZeroResidualFrame.lean",
+  "source_blob": "9c0f3386433ca68196cc49d70a6a8bf13f21b3a5",
+  "source_sha256": "19e92cbbd713bfbdc57a402c5db702018e0b2090f2c00e7e8debc8a15a87fc9b",
+  "declarations": [
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.reconstruction_agrees_on_energy_cells_of_zero_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.source_energy_eq_reconstruction_of_zero_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyLowerFrame_of_zero_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyLowerFrame_of_nonnegative_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoArithmetic_sharp_zero_boundary_application"
+  ],
+  "expected_types": {
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyLowerFrame_of_zero_residual": "\u2200 (X : \u2115) (D : Set GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.CanonicalFourFamilyRealPacket) (R : ({n : \u2115 // n \u2208 GRWTSK.RiemannHypothesis.centeredGreenWindow X} \u2192 \u211d) \u2192 GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.CanonicalFourFamilyRealPacket) (C : \u211d), 0 < C \u2192 (\u2200 v \u2208 D, GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyAmbientSourceEnergy X (R (GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyWindowReadout X v)) \u2264 C * GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyWindowOutputEnergy X v) \u2192 (\u2200 v \u2208 D, GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyAmbientSourceEnergy X (GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyReconstructionResidual X R v) \u2264 0) \u2192 GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.HasCanonicalFourFamilyRestrictedLowerFrame X D (1 / C)",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyLowerFrame_of_nonnegative_residual": "\u2200 (X : \u2115) (D : Set GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.CanonicalFourFamilyRealPacket) (R : ({n : \u2115 // n \u2208 GRWTSK.RiemannHypothesis.centeredGreenWindow X} \u2192 \u211d) \u2192 GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.CanonicalFourFamilyRealPacket) (C q : \u211d), 0 < C \u2192 0 \u2264 q \u2192 q < 1 \u2192 (\u2200 v \u2208 D, GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyAmbientSourceEnergy X (R (GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyWindowReadout X v)) \u2264 C * GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyWindowOutputEnergy X v) \u2192 (\u2200 v \u2208 D, GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyAmbientSourceEnergy X (GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyReconstructionResidual X R v) \u2264 q * GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyAmbientSourceEnergy X v) \u2192 GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.HasCanonicalFourFamilyRestrictedLowerFrame X D ((1 - Real.sqrt q) ^ 2 / C)",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoArithmetic_sharp_zero_boundary_application": "\u2200 {X : \u2115}, 10 \u2264 X \u2192 GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.HasCanonicalFourFamilyRestrictedLowerFrame X (GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.CanonicalTwoCoordinateArithmeticDifferences X) ((1 - Real.sqrt (0 : \u211d)) ^ 2 / (2 / (Real.log 2) ^ 2))"
+  },
+  "complete_compiler_module_origin_required": true,
+  "required_owned_roots": [
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.reconstruction_agrees_on_energy_cells_of_zero_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.source_energy_eq_reconstruction_of_zero_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyLowerFrame_of_zero_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyLowerFrame_of_nonnegative_residual",
+    "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoArithmetic_sharp_zero_boundary_application"
+  ],
+  "dependency_radius": 3,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "exact_hypotheses": "Same arbitrary D, C>0,0\u2264q<1,both reconstruction-energy and residual-energy estimates on every v in D.",
+  "application_family": "Existing CanonicalTwoCoordinateArithmeticDifferences at X\u226510 only; no full RH-family identification.",
+  "finite_energy_boundary": "Zero energy identifies coordinates only for c in range(2X+1); no global infinite-packet equality inferred.",
+  "native_compile": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "type_execution": "NOT_RUN",
+  "full_issue_exhaustive_trust_acceptance": "PENDING_SEPARATE_GATES",
+  "missing_bridges": [
+    "actual full RH application-family/operator correspondence",
+    "quantitative full-family reconstruction/residual estimates",
+    "RH-scale source/target normalization and limits"
+  ],
+  "boundary": "Source proof candidates. Existing Noe384/385 historical pins/receipts and complete trust gates are not replaced by this distinct source pin."
+}
