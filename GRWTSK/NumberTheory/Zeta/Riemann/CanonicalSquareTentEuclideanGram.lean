@@ -95,6 +95,17 @@ theorem canonicalEuclideanGram_inner_eq_source (M : ℕ)
     _ = sourcePolarizedForm u v :=
       coordinatePairing_operator_eq_source u v
 
+/-- The actual bounded operator is nonnegative on the ENTIRE finite
+Euclidean Hilbert space. This is the source arithmetic Gram positivity
+transported through the concrete L² coordinate equivalence. -/
+theorem canonicalEuclideanGramOperator_nonnegative (M : ℕ)
+    (u : EuclideanSpace ℂ (Fin (M + 1))) :
+    0 ≤ (inner ℂ u (canonicalEuclideanGramOperator M u)).re := by
+  have hu : u = WithLp.toLp 2 (WithLp.ofLp u) :=
+    (WithLp.toLp_ofLp u).symm
+  rw [hu, canonicalEuclideanGram_inner_eq_source]
+  exact sourcePolarizedForm_self_re_nonnegative _
+
 /-- Exact finite-stage operator norm. The right side is the true
 coordinate supremum of the source-derived arithmetic masses. -/
 open scoped Matrix.Norms.L2Operator in
