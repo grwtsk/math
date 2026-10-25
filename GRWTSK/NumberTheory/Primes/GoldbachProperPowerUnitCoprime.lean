@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.Primes.GoldbachProperPowerCoprimePowerIff
-import Mathlib.Data/ZMod/Basic
+import Mathlib.Data.ZMod.Basic
 
 /-!
 # ZMod units of positive prime-base powers
