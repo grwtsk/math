@@ -1,0 +1,41 @@
+schema = "grwtsk.static-mathematical-target/1"
+attribution = "grwtsk contributors"
+source = "GRWTSK/NumberTheory/Zeta/Riemann/ArithmeticCyclicZetaResidualCriterion.lean"
+namespace = "GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticCyclicZetaResidualCriterion"
+classification = "conditional_source_proof_candidates"
+verification = "NOT_RUN / NOT_KERNEL_AUDITED"
+
+declarations = [
+  "zetaSpectralParameter_re",
+  "zetaSpectralParameter_im",
+  "parameter_im_le_of_residual",
+  "critical_distance_le_of_residual",
+  "critical_distance_le_of_arithmeticApproximation",
+  "no_arithmeticApproximation_below_distance",
+  "critical_line_of_arbitrarily_small_arithmetic_residuals",
+  "riemannHypothesis_of_arithmetic_residual_supplier",
+]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[acceptance]
+requires = [
+  "exact committed source and declared import closure",
+  "warning-clean source elaboration and fresh trust-zero replay",
+  "complete declaration-scoped transitive axiom reports",
+  "the same arithmetic stage family is fixed before all zero and epsilon quantifiers",
+  "nonzero full Euclidean vectors and complete relative residuals",
+  "every positive real tolerance and every actual nontrivial zeta zero",
+]
+unresolved = [
+  "construct a mathematically source-identified arithmetic stage family",
+  "prove ZetaArithmeticResidualSupplier for that same fixed family",
+  "supply effective source/reconstruction/tail estimates rather than fitted potentials",
+  "separate independent ABC, GRH, Yang-Mills, Goldbach and BSD bridges",
+]
+nonclaims = [
+  "no arithmetic residual supplier is constructed",
+  "no zeta-spectrum correspondence or multiplicity theorem",
+  "no unconditional RH or other conjecture",
+  "no finite check discharges an infinite quantifier",
+  "no operational execution state or receipt is stored here",
+]
