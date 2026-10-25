@@ -18,11 +18,15 @@ Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provid
 
 /- Provider binding (2026-10-25): the retained exact ring-state and observer
 reducer components are imported explicitly. Matrix/packet imports below remain
-required and unresolved; no compilation or proof acceptance is asserted. -/
+required; packet binding is unresolved and no proof acceptance is asserted. -/
 
 import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.RingState.Variantb47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1
 import GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.FiniteGraphAndObservationComponents.Variant580cc666770ddb3d.WholeObserverReducerAndCanonicalFactor
-import BitMatrix.Runtime.MatrixRing
+/- Matrix-provider binding (2026-10-25): the full retained basic matrix
+implementation is selected, not a reduced carrier. Native qualification and
+remaining packet-provider bindings are pending. -/
+
+import GRWTSK.Algebra.LinearAlgebra.MatrixRing.Variant426363dc5b10c8f88dc2c6ec242612277a4d6a7d0ca02e262579fc6412169a5c
 import BitMatrix.Runtime.PacketRing
 
 /-!
