@@ -35,8 +35,8 @@ lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 # These values identify the authored source snapshot, not acceptance receipts.
-source_snapshot_commit = "492ac421c424265ae72956a4c9e3b6efee34bf16"
-source_snapshot_tree = "556fe5654117b680c827b434dc0e9ac46beb5c74"
+source_snapshot_commit = "d2996fb2d142cd8779690f88a5f9da8e4e9a32ac"
+source_snapshot_tree = "a9b2ab5b3f0700f4d8bc68c1185c4f854370c473"
 diagnostics_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
 examples_blob = "d9e2fd5be2eb2fd8be5eccb90e9c87088c651857"
 exposition_blob = "7f38dbcdf114a8cb4752d7ed7393ae026b3a0883"
@@ -101,9 +101,42 @@ required_heads = [
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.meaning",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.forwardStanding",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.statement",
-  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.asCrossSourceComparison"
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.asCrossSourceComparison",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasRefutation",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_established",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_refuted",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_conditional",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.meaning_of_hasProof",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.establishedExample",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.candidateExample",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.established_example_sound",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.candidate_example_has_no_proof_flag",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseRefutation",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseToTrue",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.forward_refutation_does_not_refute_true",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseConditional",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.conditional_false_is_not_established"
 ]
 complete_module_declaration_inventory_required = true
+# Source-local private names are listed for dependency tracing; Lean private
+# name mangling may prevent direct #check by these displayed source spellings.
+private_source_heads = [
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.fixtureSource",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.fixtureCatalog",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.positiveDescriptor",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.negativeDescriptor",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.natClaimCatalog",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.boolClaimCatalog",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.unitClaimCatalog",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.boolIndex",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.nat_one_meaning",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.alternateSource",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.originalUnitCatalog",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.alternateUnitCatalog"
+]
+private_names_are_source_lexical_not_elaborated = true
+generated_declaration_census_required = true
 
 
 [trust]
