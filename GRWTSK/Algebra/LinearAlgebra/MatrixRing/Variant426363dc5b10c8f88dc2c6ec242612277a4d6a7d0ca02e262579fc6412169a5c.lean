@@ -1,5 +1,9 @@
-import DAF.Runtime.RingState
-import BitMatrix.Core.Basic
+/- Matrix-provider binding (2026-10-25): the full retained basic matrix
+implementation is selected, not a reduced carrier. Native qualification and
+remaining packet-provider bindings are pending. -/
+
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.RingState.Variantb47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1
+import GRWTSK.Algebra.LinearAlgebra.Basic.Variant41f0242ace5e0ac7cfa9f6f682cebf8a255f8dde450dc87bbdc6788183dccfe2
 
 /-!
 # Binary-matrix ring adapter
