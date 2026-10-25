@@ -669,4 +669,17 @@ theorem norm_tsum_dirichletVonMangoldt_shifted_le
           (fun i j hij => by omega))
     _ ≤ _ := logarithmicPowerTailKernel_tsum_add_le s.re N hs hN
 
+
+/-- The actual Mathlib L-series term agrees with the GRWTSK
+coefficient times the negative complex power at positive indices.
+The exceptional zero index is handled by Mathlib's term definition. -/
+theorem dirichletVonMangoldt_LSeries_term_pos
+    (q n : ℕ) (χ : DirichletCharacter ℂ q) (s : ℂ)
+    (hn : 0 < n) :
+    LSeries.term (dirichletVonMangoldtCoefficient q χ) s n =
+      dirichletVonMangoldtCoefficient q χ n * ((n : ℂ) ^ (-s)) := by
+  have hn0 : n ≠ 0 := Nat.ne_of_gt hn
+  rw [LSeries.term_of_ne_zero hn0]
+  rw [div_eq_mul_inv, ← cpow_neg]
+  
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
