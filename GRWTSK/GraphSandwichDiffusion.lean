@@ -6,6 +6,7 @@ Sawin–Shusterman (2019), Bombieri (Riemann Hypothesis survey).
 Verification: NOT_RUN. No claim of kernel acceptance.
 -/
 import Mathlib
+import GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 
 namespace GRWTSK.GraphSandwichDiffusion
 
@@ -52,6 +53,21 @@ def certifiedWalkToCandidate {V L : Type} (s : SearchInventory V L)
     {u v : V} (walk : LabeledWalk s.certified u v) :
     LabeledWalk s.candidate u v :=
   LabeledWalk.map s.certified_candidate walk
+
+/- Existing repository sofic presentation is the source of graph edges.
+   This adapter changes argument order only; it does not assert spectral
+   completeness, analytic estimates, or a new Chowla theorem. -/
+def fromSoficGraph {V L : Type} [Fintype V] [Fintype L]
+    (g : GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SoficGraph V L) :
+    FiniteSearchGraph V L where
+  edge := fun u v => ∃ l, g.edge u l v
+  label := fun u v l => g.edge u l v
+
+theorem fromSoficGraph_label_edge {V L : Type} [Fintype V] [Fintype L]
+    (g : GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SoficGraph V L)
+    {u v : V} {l : L} (h : (fromSoficGraph g).label u v l) :
+    (fromSoficGraph g).edge u v :=
+  ⟨l, h⟩
 
 structure GraphSandwich (Vertex : Type) where
   lower : Vertex → Vertex → Prop
