@@ -236,6 +236,47 @@ theorem squareWeightLoss_le_iff_absoluteMoment_le
   rw [squareWeightLoss_eq_absoluteMoment_div_radius]
   exact (div_le_iff₀ (squareRadius_pos n))
 
+/-! ## Coarse unconditional moment budget from Mathlib Chebyshev
+
+The pinned Mathlib Chebyshev upper bound controls the COMPLETE cumulative
+von Mangoldt mass at the upper square, hence the actual taper loss.
+This bound is quadratic in the square-root window index; it is not
+uniform in the stage and provides no fine short-interval asymptotic.
+-/
+
+/-- Actual taper loss is bounded by the entire unsmoothed window mass,
+since the retained tent mass is nonnegative. -/
+theorem squareWeightLoss_le_squareIncrement (n : ℕ) :
+    squareWeightLoss n ≤ squareIncrement n := by
+  have h := squareIncrement_eq_tent_add_weightLoss n
+  linarith [squareTentMangoldt_nonneg n]
+
+/-- An unconditional but coarse bound on the discarded mass using
+Mathlib's cumulative Chebyshev inequality. No prime distribution
+claim on individual short intervals is introduced. -/
+theorem squareWeightLoss_le_chebyshev_quadratic (n : ℕ) :
+    squareWeightLoss n ≤
+      (Real.log 4 + 4) * ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+  have hwindow : squareIncrement n ≤
+      _root_.Chebyshev.psi ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+    rw [GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget.squareIncrement_eq_nat_source]
+    simp only [GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_eq_mathlib_psi]
+    have hleft := _root_.Chebyshev.psi_nonneg ((((n ^ 2 : ℕ) : ℝ)))
+    linarith
+  have hglobal := _root_.Chebyshev.psi_le_const_mul_self
+    (x := ((((n + 1) ^ 2 : ℕ) : ℝ))) (by positivity)
+  exact (squareWeightLoss_le_squareIncrement n).trans
+    (hwindow.trans hglobal)
+
+/-- Equivalent first-absolute-moment budget, retaining the full
+radius factor and upper-square endpoint contributions. -/
+theorem squareAbsoluteMoment_le_chebyshev_quadratic_radius (n : ℕ) :
+    squareAbsoluteMoment n ≤
+      ((Real.log 4 + 4) * ((((n + 1) ^ 2 : ℕ) : ℝ))) *
+        squareRadius n := by
+  exact (squareWeightLoss_le_iff_absoluteMoment_le n _).mp
+    (squareWeightLoss_le_chebyshev_quadratic n)
+
 /-- EXACT restoration of the complete closed-right arithmetic source.
 The upper square endpoint appears but has zero tent weight; its source
 contribution is therefore retained in the loss, not thrown away. -/
