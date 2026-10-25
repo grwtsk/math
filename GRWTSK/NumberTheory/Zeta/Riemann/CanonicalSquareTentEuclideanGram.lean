@@ -627,4 +627,43 @@ theorem squareAbsoluteMoment_lt_radius_mul_source_of_witness
   have hgap := (squareTentMangoldt_pos_iff_moment_strict n).mp hmass
   simpa only [mul_comm] using hgap
 
+/-! ## Quantitative contribution of a genuine interior source witness
+
+A single interior positive von Mangoldt term gives an explicit lower
+bound on the *absolute* centered-moment deficit. This is not a
+uniform relative deficit without additional arithmetic estimates.
+-/
+
+/-- Every actual interior witness contributes its own nonnegative
+tent-weighted von Mangoldt mass to the total source observable. -/
+theorem squareTentMangoldt_ge_witness_term
+    (n m : ℕ)
+    (hm : m ∈ Finset.Ioc (n ^ 2) ((n + 1) ^ 2)) :
+    ArithmeticFunction.vonMangoldt m * squareWeight n m ≤
+      squareTentMangoldt n := by
+  unfold squareTentMangoldt
+  exact Finset.single_le_sum (fun k hk =>
+    mul_nonneg ArithmeticFunction.vonMangoldt_nonneg
+      (squareWeight_nonneg n k)) hm
+
+/-- The exact centered-moment deficit is at least the positive
+witness contribution multiplied by the original square radius. -/
+theorem squareMoment_deficit_ge_witness_term
+    (n m : ℕ)
+    (hm : m ∈ Finset.Ioc (n ^ 2) ((n + 1) ^ 2)) :
+    squareRadius n * squareIncrement n - squareAbsoluteMoment n ≥
+      squareRadius n *
+        (ArithmeticFunction.vonMangoldt m * squareWeight n m) := by
+  have hsource := squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment n
+  have hw := squareTentMangoldt_ge_witness_term n m hm
+  have hr := squareRadius_pos n
+  have hscaled := mul_le_mul_of_nonneg_left hw hr.le
+  rw [hsource] at hscaled
+  have hidentity :
+      squareRadius n *
+        (squareIncrement n - squareAbsoluteMoment n / squareRadius n) =
+      squareRadius n * squareIncrement n - squareAbsoluteMoment n := by
+    field_simp [ne_of_gt hr]
+  linarith
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
