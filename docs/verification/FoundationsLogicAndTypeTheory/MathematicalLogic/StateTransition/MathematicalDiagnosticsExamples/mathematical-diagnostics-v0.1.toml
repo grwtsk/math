@@ -35,11 +35,11 @@ lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 # These values identify the authored source snapshot, not acceptance receipts.
-source_snapshot_commit = "796c598dc4056e616eb6b0d2917daf9bca004827"
-source_snapshot_tree = "8930544a7a6cc4e9818a4eed04ff11f00746aaab"
-diagnostics_blob = "6e67246884294128dcdc79ab6c2881fa4b608735"
-examples_blob = "175b1f8554de01c28bfc18a3fc1941e517678cd0"
-exposition_blob = "1bd0557d947036eb8c85ff8d3727ef908574c61b"
+source_snapshot_commit = "b1aca3b6d36281f10b1fb0e82cab4d82e262637d"
+source_snapshot_tree = "13064de38132f35d8c1ff1c82db1665571fd3991"
+diagnostics_blob = "77508e5ff9e87cbaefe851406b16b4f16b979dcc"
+examples_blob = "d9e2fd5be2eb2fd8be5eccb90e9c87088c651857"
+exposition_blob = "7f38dbcdf114a8cb4752d7ed7393ae026b3a0883"
 lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
 manifest_self_identity_requires_external_binding = true
 local_transitive_imports = [
@@ -85,7 +85,18 @@ required_heads = [
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_scope_promotion",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_counterexample",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.restricted_true_global_false",
-  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_scoped_transfer"
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_scoped_transfer",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.meaning",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.forwardStanding",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.statement_of_hasProof",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.comp",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.boolCatalogTransport",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.unitCatalogTransport",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.bool_indexed_transport_sound",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.bool_indexed_proof_status",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.composed_catalog_transport_sound",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.changed_blob_blocks_source_preserving_transport"
 ]
 complete_module_declaration_inventory_required = true
 
@@ -125,6 +136,22 @@ expected = "A forward implication does not transfer refutation in the wrong dire
 id = "conditional-false-premise"
 declaration = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.conditional_false_is_not_established"
 expected = "A conditional bridge retaining a false premise is not an established proof."
+
+[[hostile_controls]]
+id = "changed-blob-strict-transport"
+declaration = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.changed_blob_blocks_source_preserving_transport"
+expected = "A declaration-name match is insufficient for a strict cross-catalog source-identity equality: distinct recorded source blobs preclude this CatalogTransport instance."
+
+[transport_contract]
+kind = "source-preserving-claim-reindexing"
+index_types = ["Nat", "Bool", "Unit"]
+source_identity_equality_is_recorded_not_git_authenticated = true
+mathematical_meaning_implication_required = true
+target_contextual_hypotheses_preserved = true
+explicit_coverage_of_different_source_identities = false
+different_sources_require_separate_adapter = true
+composition_preserves_source_and_target_indices = true
+lean_kernel_proof_of_new_transport_not_yet_observed = true
 
 [verification_status]
 source_inspected = true
