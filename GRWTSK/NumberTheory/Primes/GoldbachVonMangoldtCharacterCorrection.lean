@@ -400,7 +400,7 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
   have hden : σ - 1 ≠ 0 := ne_of_gt (by linarith)
   have hpow : HasDerivAt (fun x : ℝ => x ^ (1 - σ))
       ((1 - σ) * t ^ ((1 - σ) - 1)) t :=
-    (hasDerivAt_id t).rpow_const (Or.inl ht.ne')
+    Real.hasDerivAt_rpow_const (Or.inl ht.ne')
   have hlog : HasDerivAt (fun x : ℝ => Real.log x)
       t⁻¹ t := Real.hasDerivAt_log ht.ne'
   have hinner : HasDerivAt
