@@ -34,3 +34,5 @@ The [typed critical-strip witness classification](typed-critical-strip-witness-c
 [Diophantine equations](new-concepts/diophantine-equations.md) adds one standard proposed subject with a bounded official terminology warrant; no source review or proof acceptance follows from navigation.
 
 [Bilinear and quadratic forms](new-concepts/bilinear-quadratic-forms.md) adds one standard proposed subject, with explicit field/characteristic and restricted-positivity boundaries.
+
+[Localization and field extensions](new-concepts/localization-field-extensions.md) adds two standard proposed scopes with explicit base embeddings, multiplicative subsets and universal-property boundaries.

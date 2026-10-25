@@ -13,8 +13,10 @@ Source-reviewed standard additions (proposed; [evidence and limits](proposals/ne
 | [Bilinear and quadratic form theory](subjects/Algebra/LinearAlgebra/BilinearAndQuadraticForms/index.md) | `urn:uuid:288184e4-fc3b-4ab8-a49b-f1f8eb6c583c` |
 | [Closure operator theory](subjects/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/ClosureOperators/index.md) | `urn:uuid:5e8fb445-435f-4c23-bd1a-59bb873fc838` |
 | [Diophantine equations](subjects/NumberTheory/DiophantineEquations/index.md) | `urn:uuid:6c64b305-8ae3-4988-8135-306f0463758a` |
+| [Field extension theory](subjects/Algebra/FieldTheory/FieldExtensions/index.md) | `urn:uuid:3f6d760c-4e4d-4946-af53-7e4008e23dc1` |
 | [Free group theory](subjects/Algebra/GroupTheory/CombinatorialGroupTheory/FreeGroups/index.md) | `urn:uuid:c0e28762-6b54-4feb-bff3-115f8c63d548` |
 | [Homological algebra](subjects/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/index.md) | `urn:uuid:6df6424d-8992-4247-b777-72df69afe67d` |
+| [Localization theory (commutative rings)](subjects/Algebra/CommutativeAlgebra/Localization/index.md) | `urn:uuid:b4e2fb1e-4ebf-4c6c-954a-cf663cc8efd3` |
 | [Order embedding theory](subjects/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings/index.md) | `urn:uuid:455d5220-1e27-41f9-821a-fae4fa41c4db` |
 
 Source-reviewed resource additions (canonical identities; proposed resource kinds,
@@ -184,6 +186,7 @@ Source-signal draft additions (canonical identities; all proposed):
 | [Equation/dynamics/mechanics addition](proposals/new-concepts/equations-dynamics-mechanics.md) | `urn:uuid:f7e8b07d-f572-484f-9ed5-cef8e6ee863a` |
 | [Information/coding addition](proposals/new-concepts/information-coding.md) | `urn:uuid:515b8a95-4009-5d30-9037-a039f2c7694a` |
 | [Bilinear and quadratic forms](proposals/new-concepts/bilinear-quadratic-forms.md) | `urn:uuid:9302bac7-b930-46d0-a980-1fd4b95f1d25` |
+| [Localization and field-extension addition](proposals/new-concepts/localization-field-extensions.md) | `urn:uuid:ed21ffa1-e8ad-47ee-a485-d83441f4235f` |
 | [Diophantine equations addition](proposals/new-concepts/diophantine-equations.md) | `urn:uuid:95e63305-e3f6-4f91-a517-6ddd8cb2435f` |
 | [Algebraic structures addition](proposals/new-concepts/algebra-structures.md) | `urn:uuid:c5134679-7a75-4f0d-9aee-4ecd34cc581f` |
 | [Analysis, measure and Fourier addition](proposals/new-concepts/analysis-measure-fourier.md) | `urn:uuid:a2ba1baa-9bc0-4c26-81cf-f964a90e9634` |
