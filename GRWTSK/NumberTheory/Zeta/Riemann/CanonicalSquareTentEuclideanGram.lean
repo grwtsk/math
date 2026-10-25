@@ -259,8 +259,8 @@ theorem sum_squareIncrement_range_eq_psi (N : ℕ) :
       simp [_root_.Chebyshev.psi]
   | succ N ih =>
       rw [Finset.sum_range_succ, ih]
-      rw [GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget.squareIncrement_eq_nat_source,
-        GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_eq_mathlib_psi]
+      rw [GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget.squareIncrement_eq_nat_source]
+      simp only [GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_eq_mathlib_psi]
       ring
 
 /-- The source's untapered cumulative mass splits EXACTLY into the
