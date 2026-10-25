@@ -1,0 +1,99 @@
+{
+  "schema": "grwtsk.finite-spectral-sector-completeness-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "THIRTEEN_NEW_THEOREM_CANDIDATES_TWO_NEW_DEFINITIONS",
+  "source_commit": "226a30ab3115517283f4a986d2697be4efe6a0ab",
+  "source": "GRWTSK/Algebra/LinearAlgebra/FiniteSpectralHeatGap.lean",
+  "source_blob": "d21a74277a9bf8815b4ad88778fd1771e5aa0533",
+  "source_sha256": "f7bf4b95a87303bf301977275d57559144a0acce6097d593aa360941223a393f",
+  "original_request_commit": "dcf80faa32e22bc10bf32b943329a9dede872b25",
+  "original_gap_source_blob": "d174d5dc02bcc50a55c913a7219249d2ed08058a",
+  "original_source_whole_bytes_preserved_before_appended_section": true,
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.eigenvalue_lower_of_complementary_masks",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat_gap_contracts_of_complementary_masks",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_selected_gap",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_projected_support",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_heat_gap",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_ne_zero",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_projected_zero",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_projector_ne_zero",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_projector_ne_id",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_operator_zero",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_heat_fixed",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_no_full_positive_gap",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_no_global_heat_gap"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.eigenvalue_lower_of_complementary_masks": "forall {iota : Type u} [Fintype iota] {E : Type v} [AddCommGroup E] [Module Real E] (M : GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model iota E) (mask : iota -> Bool) (g : Real), (forall i, mask i = true -> g <= M.eigenvalue i) -> (forall i, GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.complementMask mask i = true -> g <= M.eigenvalue i) -> forall i, g <= M.eigenvalue i",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat_gap_contracts_of_complementary_masks": "forall {iota : Type u} [Fintype iota] {E : Type v} [AddCommGroup E] [Module Real E] (M : GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model iota E) (mask : iota -> Bool) {g t : Real}, 0 < g -> (forall i, mask i = true -> g <= M.eigenvalue i) -> (forall i, GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.complementMask mask i = true -> g <= M.eigenvalue i) -> forall (x : E), 0 <= t -> M.pairing (M.heat t x) (M.heat t x) <= Real.exp (-2 * t * g) * M.pairing x x /\\ (0 < t -> Real.exp (-2 * t * g) < 1)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel": "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model Bool (Bool -> Real)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector": "Bool -> Real",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_selected_gap": "forall i : Bool, i = true -> 1 <= GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.eigenvalue GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel i",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_projected_support": "forall x : Bool -> Real, GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.SupportedAbove GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel 1 (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) x)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_heat_gap": "forall (x : Bool -> Real) {t : Real}, 0 <= t -> GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.pairing GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel t ((GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) x))) (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel t ((GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) x))) <= Real.exp (-2 * t * 1) * GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.pairing GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel ((GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) x)) ((GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) x))",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_ne_zero": "Not (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector = 0)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_projected_zero": "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector = 0",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_projector_ne_zero": "Not (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) = 0)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_projector_ne_id": "Not (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.sectorProjector GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (fun i => i) = LinearMap.id)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_operator_zero": "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.operator GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector = 0",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector_heat_fixed": "forall t : Real, GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel t GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector = GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.zeroComplementVector",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_no_full_positive_gap": "forall {g : Real}, 0 < g -> Not (forall i, g <= GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.eigenvalue GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel i)",
+    "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSector_no_global_heat_gap": "forall {g t : Real}, 0 < g -> 0 < t -> Not (forall x : Bool -> Real, GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.pairing GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel t (x)) (GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel t (x)) <= Real.exp (-2 * t * g) * GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.pairing GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.properSectorZeroModel (x) (x))"
+  },
+  "universes": [
+    "u",
+    "v"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_whole_module_census_required": true,
+  "type_scope": "ALL fifteen NEW interfaces selected, including thirteen theorems and two definitions. Not an exhaustive type audit of the pre-existing module declarations. The whole compiler-origin census still includes every old/new private/generated/instance/punctuation root.",
+  "scope": [
+    "Arbitrary finite coordinate type and real module with the EXISTING Model full linear-equivalence frame, nonnegative eigenvalues and exact operator diagonalization data. No selected subfamily is substituted for its complete coordinates.",
+    "The coefficient bound requires BOTH the selected mask and its actual complement to satisfy the same lower bound at EVERY selected coordinate. The coefficient lemma works for any real bound; the heat application retains an explicitly POSITIVE gap and nonnegative time, and its multiplier is strictly below one at positive times.",
+    "Explicit Bool-coordinate identity-frame model: eigenvalue 0 at false and 1 at true. The actual selected projector is neither zero nor identity and has the unit spectral heat bound.",
+    "The explicit complementary vector is nonzero, killed by the actual selected projector and original model operator, and fixed by actual heat at EVERY real time. Thus no full positive coefficient gap exists and no global positive exponential heat estimate holds at any positive time.",
+    "Finite auxiliary diagonal mathematics only; no physical Yang-Mills, gauge sector, lattice uniformity, continuum reconstruction or RH-family operator identification."
+  ],
+  "preparation": {
+    "exit_code": 0,
+    "native_execution": false,
+    "registry_sha256": "048323b7a965419bc3d86093bfddde5175f6a5bbdcc7932b14a71e9a2126f0d3",
+    "project_modules": 7,
+    "upstream_source_modules": 8690,
+    "assets": 27,
+    "required_structural_names": 15,
+    "independent_new_exact_types": 15,
+    "all_new_interfaces_selected": true,
+    "all_old_module_types_selected": false,
+    "whole_module_census_required": true,
+    "fresh_importers_required": 1,
+    "all_13_current_producers_worktree_committed_match": true,
+    "noe_commit": "9df335f171a223e164de57f2b39fdad39c8bf1d0",
+    "project_source_hashes_match": true,
+    "gated_dependencies_absent": true,
+    "native_compile_origin_kernel_axiom_types_root": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "affected_imports": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every executed matching native acceptance gate.",
+    "Exact comparison of the auxiliary Model to any physical, gauge-invariant, infinite or continuum operator and its full excitation sector.",
+    "Lattice-uniform bounds and continuum reconstruction."
+  ],
+  "issue_state": "OPEN"
+}
