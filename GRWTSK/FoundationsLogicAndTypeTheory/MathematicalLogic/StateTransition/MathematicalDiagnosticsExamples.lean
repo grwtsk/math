@@ -103,4 +103,96 @@ theorem arithmetic_scoped_transfer :
   · intro n _ sourceBound
     exact Nat.le_trans sourceBound (by decide)
 
+/-!
+## Cross-catalog transport fixtures
+
+The source and target catalogs have different claim-index types (Nat, Bool,
+and Unit) but intentionally carry one exact recorded source identity. Source
+meaning still requires a mathematical adapter; identity equality alone gives
+no implication. A changed blob blocks this strict source-preserving interface.
+-/
+
+private def natClaimCatalog : Catalog Nat where
+  statement := fun n => n ≤ 2
+  hypotheses := fun _ => []
+  source := fun _ => fixtureSource
+
+private def boolClaimCatalog : Catalog Bool where
+  statement := fun b => (if b then (1 : Nat) else 0) ≤ 2
+  hypotheses := fun _ => []
+  source := fun _ => fixtureSource
+
+private def unitClaimCatalog : Catalog Unit where
+  statement := fun _ => (1 : Nat) ≤ 2
+  hypotheses := fun _ => []
+  source := fun _ => fixtureSource
+
+private def boolIndex (b : Bool) : Nat := if b then 1 else 0
+
+/-- Same recorded source, but different claim indexing and an explicit
+semantic implication at each Boolean index. -/
+def boolCatalogTransport : CatalogTransport natClaimCatalog boolClaimCatalog where
+  reindex := boolIndex
+  sourceIdentity := by
+    intro _
+    rfl
+  preservesMeaning := by
+    intro _ sourceProof
+    exact sourceProof
+
+/-- Another source-preserving transport used to exercise composition. -/
+def unitCatalogTransport : CatalogTransport boolClaimCatalog unitClaimCatalog where
+  reindex := fun _ => true
+  sourceIdentity := by
+    intro _
+    rfl
+  preservesMeaning := by
+    intro _ sourceProof
+    exact sourceProof
+
+private theorem nat_one_meaning : Meaning natClaimCatalog 1 := by
+  intro _
+  decide
+
+/-- Proofs travel from Nat-indexed claims to Bool-indexed claims only through
+the displayed, proof-carrying catalog transport. -/
+theorem bool_indexed_transport_sound : Meaning boolClaimCatalog true :=
+  boolCatalogTransport.meaning true nat_one_meaning
+
+/-- The existing Standing semantics, not the source label, provides the
+corresponding proof-status transfer. -/
+theorem bool_indexed_proof_status :
+    (boolCatalogTransport.forwardStanding true
+      (.established nat_one_meaning)).hasProof = true := rfl
+
+/-- The two semantic implications and two recorded source equalities compose
+without dropping the intermediate claim-index type. -/
+theorem composed_catalog_transport_sound : Meaning unitClaimCatalog () :=
+  (boolCatalogTransport.comp unitCatalogTransport).meaning () nat_one_meaning
+
+private def alternateSource : SourceIdentity :=
+  { fixtureSource with blob := "different-test-blob" }
+
+private def originalUnitCatalog : Catalog Unit where
+  statement := fun _ => True
+  hypotheses := fun _ => []
+  source := fun _ => fixtureSource
+
+private def alternateUnitCatalog : Catalog Unit where
+  statement := fun _ => True
+  hypotheses := fun _ => []
+  source := fun _ => alternateSource
+
+/-- A matching declaration name does not make two different recorded blobs
+equal. The exact-source transport cannot be constructed in this fixture. -/
+theorem changed_blob_blocks_source_preserving_transport :
+    ¬ Nonempty (CatalogTransport originalUnitCatalog alternateUnitCatalog) := by
+  intro candidate
+  obtain ⟨transport⟩ := candidate
+  have same : fixtureSource = alternateSource := by
+    simpa [originalUnitCatalog, alternateUnitCatalog] using
+      (transport.sourceIdentity ())
+  have blobEquality := congrArg SourceIdentity.blob same
+  simp [fixtureSource, alternateSource] at blobEquality
+
 end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples
