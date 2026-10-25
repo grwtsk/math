@@ -1,0 +1,93 @@
+# IVar.mkCoverMapProof
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:dca517c86ac9962a0602a78fc270b837d25705c6315d9075de8557694d7319bd",
+  "kind": "def",
+  "lexical_name": "IVar.mkCoverMapProof",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ivar-mkcovermapproof--4f0170219c618cdfae5aae0f",
+  "source": {
+    "blob": "016c942f92f7effe30c7564e1ec485e5f90a0f61",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 79,
+    "line": 68,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Expr/Variant71941b26cc95b95cb9d617183c51f1bda81a45d9179e2958a6e7a51762061199.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:4f0170219c618cdfae5aae0fc205528d2701729b45269063e2a9aa7a24cd5934",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Expr/Variant71941b26cc95b95cb9d617183c51f1bda81a45d9179e2958a6e7a51762061199.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:dca517c86ac9962a0602a78fc270b837d25705c6315d9075de8557694d7319bd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 68–79.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def IVar.mkCoverMapProof (iVar : IVar) (output : IExpr)
+    (source : ExprInclusionBody) (cover coarsen inclusion proof : Expr) : MetaM Expr := do
+  let outputLevel ← getDecLevel output.iType.setType
+  let setLevel ← getDecLevel iVar.type.setType
+  let elemLevel ← getDecLevel iVar.type.elemType
+  return mkAppN (mkConst ``Cover.mem_coverMap [outputLevel, setLevel, elemLevel])
+    #[iVar.type.setType, iVar.type.elemType, iVar.type.toSetInst, cover,
+      output.iType.setType, output.iType.elemType, output.iType.toSetInst, coarsen,
+      source.inclusionBody, inclusion, iVar.expr, output.expr, source.proofBody, proof]
+
+/-- Given `iType : IType`, synthesize an expression of type
+`Coarsen iType.setType iType.elemType`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Expr/Variant71941b26cc95b95cb9d617183c51f1bda81a45d9179e2958a6e7a51762061199.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Expr/Variant71941b26cc95b95cb9d617183c51f1bda81a45d9179e2958a6e7a51762061199.lean#L68).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `016c942f92f7effe30c7564e1ec485e5f90a0f61` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

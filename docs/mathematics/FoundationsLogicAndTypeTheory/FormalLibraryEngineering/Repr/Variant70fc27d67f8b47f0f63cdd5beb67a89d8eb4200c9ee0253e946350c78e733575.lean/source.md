@@ -1,0 +1,153 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Repr.Variant70fc27d67f8b47f0f63cdd5beb67a89d8eb4200c9ee0253e946350c78e733575
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bb9d3b1ff2e5d5c254e58c64ef2ff6897186ef5e` · SHA-256 `618871541153f77d4e0a1b9ae4547131ba5f82f6bd6c7d451450fc47ac43ed1d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MkReprHeader.Variant9b90b2cf7024bd6bf1809e25c5e060214d98219faf3bd4f158f709d82fa61b70","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9b90b2cf7024bd6bf1809e25c5e060214d98219faf3bd4f158f709d82fa61b70","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.MkReprHeader.Variant9b90b2cf7024bd6bf1809e25c5e060214d98219faf3bd4f158f709d82fa61b70","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"9b90b2cf7024bd6bf1809e25c5e060214d98219faf3bd4f158f709d82fa61b70","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Elab/Deriving/Repr.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","external_root_references_preserved","implicit_eof_scopes","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Meta.Inductive
+public import Lean.Elab.Deriving.Basic
+public import Lean.Elab.Deriving.Util
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MkReprHeader.Variant9b90b2cf7024bd6bf1809e25c5e060214d98219faf3bd4f158f709d82fa61b70
+
+public section
+
+namespace Lean.Elab.Deriving.Repr
+open Lean.Parser.Term
+open Meta
+open _root_.Std
+
+def mkReprHeader (indVal : InductiveVal) : TermElabM Header := do
+  let header ← mkHeader `Repr 1 indVal
+  return { header with
+    binders := header.binders.push (← `(bracketedBinderF| (prec : Nat)))
+  }
+
+def mkBodyForStruct (header : Header) (indVal : InductiveVal) : TermElabM Term := do
+  let ctorVal ← getConstInfoCtor indVal.ctors.head!
+  let fieldNames := getStructureFields (← getEnv) indVal.name
+  let numParams  := indVal.numParams
+  let target     := mkIdent header.targetNames[0]!
+  forallTelescopeReducing ctorVal.type fun xs _ => do
+    let mut fields ← `(Format.nil)
+    if xs.size != numParams + fieldNames.size then
+      throwError "'deriving Repr' failed, unexpected number of fields in structure"
+    for h : i in *...fieldNames.size do
+      let fieldName := fieldNames[i]
+      let fieldNameLit := Syntax.mkStrLit (toString fieldName)
+      let x := xs[numParams + i]!
+      if i != 0 then
+        fields ← `($fields ++ "," ++ Format.line)
+      if (← isType x <||> isProof x) then
+        fields ← `($fields ++ $fieldNameLit ++ " := " ++ "_")
+      else
+        let indent := Syntax.mkNumLit <| toString ((toString fieldName |>.chars.length) + " := ".lengthAssumingAscii)
+        fields ← `($fields ++ $fieldNameLit ++ " := " ++ (Format.group (Format.nest $indent (repr ($target.$(mkIdent fieldName):ident)))))
+    `(Format.bracket "{ " $fields:term " }")
+
+def mkBodyForInduct (header : Header) (indVal : InductiveVal) (auxFunName : Name) : TermElabM Term := do
+  let discrs ← mkDiscrs header indVal
+  let alts ← mkAlts
+  `(match $[$discrs],* with $alts:matchAlt*)
+where
+  mkAlts : TermElabM (Array (TSyntax ``matchAlt)) := do
+    let mut alts := #[]
+    for ctorName in indVal.ctors do
+      let ctorInfo ← getConstInfoCtor ctorName
+      let alt ← forallTelescopeReducing ctorInfo.type fun xs _ => do
+        let mut patterns := #[]
+        -- add `_` pattern for indices
+        for _ in *...indVal.numIndices do
+          patterns := patterns.push (← `(_))
+        let mut ctorArgs := #[]
+        let mut rhs : Term := Syntax.mkStrLit (toString ctorInfo.name)
+        rhs ← `(Format.text $rhs)
+        for h : i in *...xs.size do
+          -- Note: some inductive parameters are explicit if they were promoted from indices,
+          -- so we process all constructor arguments in the same loop.
+          let x := xs[i]
+          let a ← mkIdent <$> if i < indVal.numParams then pure header.argNames[i]! else mkFreshUserName `a
+          if i < indVal.numParams then
+            -- add `_` for inductive parameters, they are inaccessible
+            ctorArgs := ctorArgs.push (← `(_))
+          else
+            ctorArgs := ctorArgs.push a
+          if (← x.fvarId!.getBinderInfo).isExplicit then
+            if (← inferType x).isAppOf indVal.name then
+              rhs ← `($rhs ++ Format.line ++ $(mkIdent auxFunName):ident $a:ident max_prec)
+            else if (← isType x <||> isProof x) then
+              rhs ← `($rhs ++ Format.line ++ "_")
+            else
+              rhs ← `($rhs ++ Format.line ++ reprArg $a)
+        patterns := patterns.push (← `(@$(mkIdent ctorName):ident $ctorArgs:term*))
+        `(matchAltExpr| | $[$patterns:term],* => Repr.addAppParen (Format.group (Format.nest (if prec >= max_prec then 1 else 2) ($rhs:term))) prec)
+      alts := alts.push alt
+    return alts
+
+def mkBody (header : Header) (indVal : InductiveVal) (auxFunName : Name) : TermElabM Term := do
+  if isStructure (← getEnv) indVal.name then
+    mkBodyForStruct header indVal
+  else
+    mkBodyForInduct header indVal auxFunName
+
+def mkAuxFunction (ctx : Context) (i : Nat) : TermElabM Command := do
+  let auxFunName := ctx.auxFunNames[i]!
+  let indVal     := ctx.typeInfos[i]!
+  let header     ← mkReprHeader indVal
+  let mut body   ← mkBody header indVal auxFunName
+  if ctx.usePartial then
+    let letDecls ← mkLocalInstanceLetDecls ctx `Repr header.argNames
+    body ← mkLet letDecls body
+  let binders    := header.binders
+  if ctx.usePartial then
+    `(@[no_expose] partial def $(mkIdent auxFunName):ident $binders:bracketedBinder* : Format := $body:term)
+  else
+    `(@[no_expose] def $(mkIdent auxFunName):ident $binders:bracketedBinder* : Format := $body:term)
+
+def mkMutualBlock (ctx : Context) : TermElabM Syntax := do
+  let mut auxDefs := #[]
+  for i in *...ctx.typeInfos.size do
+    auxDefs := auxDefs.push (← mkAuxFunction ctx i)
+  `(mutual
+     $auxDefs:command*
+    end)
+
+private def mkReprInstanceCmd (declName : Name) : TermElabM (Array Syntax) := do
+  let ctx ← mkContext ``Repr "repr" declName
+  let cmds := #[← mkMutualBlock ctx] ++ (← mkInstanceCmds ctx `Repr #[declName])
+  trace[Elab.Deriving.repr] "\n{cmds}"
+  return cmds
+
+open Command
+
+def mkReprInstanceHandler (declNames : Array Name) : CommandElabM Bool := do
+  if (← declNames.allM isInductive) then
+    for declName in declNames do
+      withoutExposeFromCtors declName do
+        let cmds ← liftTermElabM <| mkReprInstanceCmd declName
+        cmds.forM elabCommand
+    return true
+  else
+    return false
+
+builtin_initialize
+  registerDerivingHandler `Repr mkReprInstanceHandler
+  registerTraceClass `Elab.Deriving.repr
+
+end Lean.Elab.Deriving.Repr
+```

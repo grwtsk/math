@@ -1,0 +1,214 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.LpEquiv.Variantf7aeb2184562e41c7fd798ad881a3a252a5c2a506972a1e1228bfb212f341e01
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d8e057f70a7b33fd02f1651e325717d3fc5985b` · SHA-256 `e2f965665a79e5864fc73b7ad2e95783e8478138a301dcec52145966db46fa59`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.MathematicalLogic
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Mem.Variantf9dc5a80d37d60244e3579ae5e4488f13b88946aee0cedd653649f9c019d94a3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f9dc5a80d37d60244e3579ae5e4488f13b88946aee0cedd653649f9c019d94a3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.Foundations.SourceCorpus.Mem.Variantf9dc5a80d37d60244e3579ae5e4488f13b88946aee0cedd653649f9c019d94a3","mathematical_subject":"Logic.Foundations","original_sha256":"f9dc5a80d37d60244e3579ae5e4488f13b88946aee0cedd653649f9c019d94a3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Analysis/Normed/Lp/LpEquiv.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Jireh Loreaux. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jireh Loreaux
+-/
+import Mathlib.Analysis.Normed.Lp.PiLp
+import Mathlib.Analysis.Normed.Lp.lpSpace
+import Mathlib.Topology.ContinuousMap.Bounded.Normed
+
+/-!
+# Equivalences among $L^p$ spaces
+
+In this file we collect a variety of equivalences among various $L^p$ spaces.  In particular,
+when `α` is a `Fintype`, given `E : α → Type u` and `p : ℝ≥0∞`, there is a natural linear isometric
+equivalence `lpPiLpₗᵢₓ : lp E p ≃ₗᵢ PiLp p E`. In addition, when `α` is a discrete topological
+space, the bounded continuous functions `α →ᵇ β` correspond exactly to `lp (fun _ ↦ β) ∞`.
+Here there can be more structure, including ring and algebra structures,
+and we implement these equivalences accordingly as well.
+
+We keep this as a separate file so that the various $L^p$ space files don't import the others.
+
+Recall that `PiLp` is just a type synonym for `Π i, E i` but given a different metric and norm
+structure, although the topological, uniform and bornological structures coincide definitionally.
+These structures are only defined on `PiLp` for `Fintype α`, so there are no issues of convergence
+to consider.
+
+While `PreLp` is also a type synonym for `Π i, E i`, it allows for infinite index types. On this
+type there is a predicate `Memℓp` which says that the relevant `p`-norm is finite and `lp E p` is
+the subtype of `PreLp` satisfying `Memℓp`.
+
+## TODO
+
+* Equivalence between `lp` and `MeasureTheory.Lp`, for `f : α → E` (i.e., functions rather than
+  pi-types) and the counting measure on `α`
+
+-/
+
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Mem.Variantf9dc5a80d37d60244e3579ae5e4488f13b88946aee0cedd653649f9c019d94a3
+
+open scoped ENNReal
+
+section LpPiLp
+
+
+variable {α : Type*} {E : α → Type*} [∀ i, NormedAddCommGroup (E i)] {p : ℝ≥0∞}
+
+section Finite
+
+variable [Finite α]
+
+/-- When `α` is `Finite`, every `f : PreLp E p` satisfies `Memℓp f p`. -/
+theorem Memℓp.all (f : ∀ i, E i) : Memℓp f p := by
+  rcases p.trichotomy with (rfl | rfl | _h)
+  · exact memℓp_zero_iff.mpr { i : α | f i ≠ 0 }.toFinite
+  · exact memℓp_infty_iff.mpr (Set.Finite.bddAbove (Set.range fun i : α ↦ ‖f i‖).toFinite)
+  · cases nonempty_fintype α; exact memℓp_gen ⟨Finset.univ.sum _, hasSum_fintype _⟩
+
+/-- The canonical `Equiv` between `lp E p ≃ PiLp p E` when `E : α → Type u` with `[Finite α]`. -/
+def Equiv.lpPiLp : lp E p ≃ PiLp p E where
+  toFun f := ⇑f
+  invFun f := ⟨f, Memℓp.all f⟩
+  left_inv _f := rfl
+  right_inv _f := rfl
+
+theorem coe_equiv_lpPiLp (f : lp E p) : Equiv.lpPiLp f = ⇑f :=
+  rfl
+
+theorem coe_equiv_lpPiLp_symm (f : PiLp p E) : (Equiv.lpPiLp.symm f : ∀ i, E i) = f :=
+  rfl
+
+/-- The canonical `AddEquiv` between `lp E p` and `PiLp p E` when `E : α → Type u` with
+`[Fintype α]`. -/
+def AddEquiv.lpPiLp : lp E p ≃+ PiLp p E :=
+  { Equiv.lpPiLp with map_add' := fun _f _g ↦ rfl }
+
+theorem coe_addEquiv_lpPiLp (f : lp E p) : AddEquiv.lpPiLp f = ⇑f :=
+  rfl
+
+theorem coe_addEquiv_lpPiLp_symm (f : PiLp p E) :
+    (AddEquiv.lpPiLp.symm f : ∀ i, E i) = f :=
+  rfl
+
+end Finite
+
+theorem equiv_lpPiLp_norm [Fintype α] (f : lp E p) : ‖Equiv.lpPiLp f‖ = ‖f‖ := by
+  rcases p.trichotomy with (rfl | rfl | h)
+  · simp [Equiv.lpPiLp, PiLp.norm_eq_card, lp.norm_eq_card_dsupport]
+  · rw [PiLp.norm_eq_ciSup, lp.norm_eq_ciSup]; rfl
+  · rw [PiLp.norm_eq_sum h, lp.norm_eq_tsum_rpow h, tsum_fintype]; rfl
+
+section Equivₗᵢ
+
+variable [Fintype α] (𝕜 : Type*) [NontriviallyNormedField 𝕜] [∀ i, NormedSpace 𝕜 (E i)]
+variable (E)
+
+/-- The canonical `LinearIsometryEquiv` between `lp E p` and `PiLp p E` when `E : α → Type u`
+with `[Fintype α]` and `[Fact (1 ≤ p)]`. -/
+noncomputable def lpPiLpₗᵢ [Fact (1 ≤ p)] : lp E p ≃ₗᵢ[𝕜] PiLp p E :=
+  { AddEquiv.lpPiLp with
+    map_smul' := fun _k _f ↦ rfl
+    norm_map' := equiv_lpPiLp_norm }
+
+variable {𝕜 E}
+
+theorem coe_lpPiLpₗᵢ [Fact (1 ≤ p)] (f : lp E p) : (lpPiLpₗᵢ E 𝕜 f : ∀ i, E i) = ⇑f :=
+  rfl
+
+theorem coe_lpPiLpₗᵢ_symm [Fact (1 ≤ p)] (f : PiLp p E) :
+    ((lpPiLpₗᵢ E 𝕜).symm f : ∀ i, E i) = f :=
+  rfl
+
+end Equivₗᵢ
+
+end LpPiLp
+
+section LpBCF
+
+open scoped BoundedContinuousFunction
+
+open BoundedContinuousFunction
+
+-- note: `R` and `A` are explicit because otherwise Lean has elaboration problems
+variable {α E : Type*} (R A 𝕜 : Type*) [TopologicalSpace α] [DiscreteTopology α]
+variable [NormedRing A] [NormOneClass A] [NontriviallyNormedField 𝕜] [NormedAlgebra 𝕜 A]
+variable [NormedAddCommGroup E] [NormedSpace 𝕜 E] [NonUnitalNormedRing R]
+
+section NormedAddCommGroup
+
+/-- The canonical map between `lp (fun _ : α ↦ E) ∞` and `α →ᵇ E` as an `AddEquiv`. -/
+noncomputable def AddEquiv.lpBCF : lp (fun _ : α ↦ E) ∞ ≃+ (α →ᵇ E) where
+  toFun f := ofNormedAddCommGroupDiscrete f ‖f‖ <| le_ciSup (memℓp_infty_iff.mp f.prop)
+  invFun f := ⟨⇑f, f.bddAbove_range_norm_comp⟩
+  left_inv _f := lp.ext rfl
+  right_inv _f := rfl
+  map_add' _f _g := rfl
+
+
+theorem coe_addEquiv_lpBCF (f : lp (fun _ : α ↦ E) ∞) : (AddEquiv.lpBCF f : α → E) = f :=
+  rfl
+
+theorem coe_addEquiv_lpBCF_symm (f : α →ᵇ E) : (AddEquiv.lpBCF.symm f : α → E) = f :=
+  rfl
+
+variable (E)
+
+/-- The canonical map between `lp (fun _ : α ↦ E) ∞` and `α →ᵇ E` as a `LinearIsometryEquiv`. -/
+noncomputable def lpBCFₗᵢ : lp (fun _ : α ↦ E) ∞ ≃ₗᵢ[𝕜] α →ᵇ E :=
+  { AddEquiv.lpBCF with
+    map_smul' := fun _ _ ↦ rfl
+    norm_map' := fun f ↦ by simp only [norm_eq_iSup_norm, lp.norm_eq_ciSup]; rfl }
+
+
+variable {𝕜 E}
+
+theorem coe_lpBCFₗᵢ (f : lp (fun _ : α ↦ E) ∞) : (lpBCFₗᵢ E 𝕜 f : α → E) = f :=
+  rfl
+
+theorem coe_lpBCFₗᵢ_symm (f : α →ᵇ E) : ((lpBCFₗᵢ E 𝕜).symm f : α → E) = f :=
+  rfl
+
+end NormedAddCommGroup
+
+section RingAlgebra
+
+/-- The canonical map between `lp (fun _ : α ↦ R) ∞` and `α →ᵇ R` as a `RingEquiv`. -/
+noncomputable def RingEquiv.lpBCF : lp (fun _ : α ↦ R) ∞ ≃+* (α →ᵇ R) :=
+  { @AddEquiv.lpBCF _ R _ _ _ with
+    map_mul' := fun _f _g => rfl }
+
+
+variable {R}
+
+theorem coe_ringEquiv_lpBCF (f : lp (fun _ : α ↦ R) ∞) : (RingEquiv.lpBCF R f : α → R) = f :=
+  rfl
+
+theorem coe_ringEquiv_lpBCF_symm (f : α →ᵇ R) : ((RingEquiv.lpBCF R).symm f : α → R) = f :=
+  rfl
+
+variable (α)
+
+-- even `α` needs to be explicit here for elaboration
+-- the `NormOneClass A` shouldn't really be necessary, but currently it is for
+-- `one_memℓp_infty` to get the `Ring` instance on `lp`.
+/-- The canonical map between `lp (fun _ : α ↦ A) ∞` and `α →ᵇ A` as an `AlgEquiv`. -/
+noncomputable def AlgEquiv.lpBCF : lp (fun _ : α ↦ A) ∞ ≃ₐ[𝕜] α →ᵇ A :=
+  { RingEquiv.lpBCF A with commutes' := fun _k ↦ rfl }
+
+
+variable {α A 𝕜}
+
+theorem coe_algEquiv_lpBCF (f : lp (fun _ : α ↦ A) ∞) : (AlgEquiv.lpBCF α A 𝕜 f : α → A) = f :=
+  rfl
+
+theorem coe_algEquiv_lpBCF_symm (f : α →ᵇ A) : ((AlgEquiv.lpBCF α A 𝕜).symm f : α → A) = f :=
+  rfl
+
+end RingAlgebra
+
+end LpBCF
+```

@@ -1,0 +1,121 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Have.Variantfe72d24cef5fd8c3caec0142a92ad8c63f628c51c04da70f132493c7113821aa
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6b4f7d600950ca2ca902ca0df2a294d1b81d1f58` · SHA-256 `f7f316d057374805dc4741026e2c9d139bc00d97d4287e6261f3aac21353f149`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.OptBinderIdent.Variantfca8e36992e0da499b2aeb972f77916ddd72690b4caf23725bb2c575cf8c0f90","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fca8e36992e0da499b2aeb972f77916ddd72690b4caf23725bb2c575cf8c0f90","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.OptBinderIdent.Variantfca8e36992e0da499b2aeb972f77916ddd72690b4caf23725bb2c575cf8c0f90","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"fca8e36992e0da499b2aeb972f77916ddd72690b4caf23725bb2c575cf8c0f90","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Tactic/Have.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Arthur Paulino. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Arthur Paulino, Edward Ayers, Mario Carneiro
+-/
+import Mathlib.Init
+import Lean.Elab.Binders
+import Lean.Elab.SyntheticMVars
+import Lean.Meta.Tactic.Assert
+
+/-!
+# Extending `have`, `let` and `suffices`
+
+This file extends the `have`, `let` and `suffices` tactics to allow the addition of hypotheses to
+the context without requiring their proofs to be provided immediately.
+
+As a style choice, this should not be used in mathlib; but is provided for downstream users who
+preferred the old style.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.OptBinderIdent.Variantfca8e36992e0da499b2aeb972f77916ddd72690b4caf23725bb2c575cf8c0f90
+
+namespace Mathlib.Tactic
+open Lean Elab.Tactic Meta Parser Term Syntax.MonadTraverser
+
+/-- A parser for optional binder identifiers -/
+def optBinderIdent : Parser := leading_parser
+  -- Note: the withResetCache is because leading_parser seems to add a cache boundary,
+  -- which causes the `hygieneInfo` parser not to be able to undo the trailing whitespace
+  (ppSpace >> Term.binderIdent) <|> withResetCache hygieneInfo
+
+/-- Retrieves the name of the optional identifier, if provided. Returns `this` otherwise -/
+def optBinderIdent.name (id : TSyntax ``optBinderIdent) : Name :=
+  if id.raw[0].isIdent then id.raw[0].getId else HygieneInfo.mkIdent ⟨id.raw[0]⟩ `this |>.getId
+
+/--
+Uses `checkColGt` to prevent
+
+```lean
+have h
+exact Nat
+```
+
+From being interpreted as
+```lean
+have h
+  exact Nat
+```
+-/
+def haveIdLhs' : Parser :=
+  optBinderIdent >> many (ppSpace >>
+    checkColGt "expected to be indented" >> letIdBinder) >> optType
+
+syntax "have" haveIdLhs' : tactic
+syntax "let " haveIdLhs' : tactic
+syntax "suffices" haveIdLhs' : tactic
+
+open Elab Term in
+/--
+Adds hypotheses to the context, turning them into goals to be proved later if their proof terms
+aren't provided (`t: Option Term := none`).
+
+If the bound term is intended to be kept in the context, pass `keepTerm : Bool := true`. This is
+useful when extending the `let` tactic, which is expected to show the proof term in the infoview.
+-/
+def haveLetCore (goal : MVarId) (name : TSyntax ``optBinderIdent)
+    (bis : Array (TSyntax ``letIdBinder))
+    (t : Option Term) (keepTerm : Bool) : TermElabM (MVarId × MVarId) :=
+  let declFn := if keepTerm then MVarId.define else MVarId.assert
+  goal.withContext do
+    let n := optBinderIdent.name name
+    let elabBinders k := if bis.isEmpty then k #[] else elabBinders bis k
+    let (goal1, t, p) ← elabBinders fun es ↦ do
+      let t ← match t with
+      | none => mkFreshTypeMVar
+      | some stx => withRef stx do
+        let e ← Term.elabType stx
+        Term.synthesizeSyntheticMVars (postpone := .no)
+        instantiateMVars e
+      let p ← mkFreshExprMVar t MetavarKind.syntheticOpaque n
+      pure (p.mvarId!, ← mkForallFVars es t, ← mkLambdaFVars es p)
+    let (fvar, goal2) ← (← declFn goal n t p).intro1P
+    goal2.withContext do
+      Term.addTermInfo' (isBinder := true) name.raw[0] (mkFVar fvar)
+    pure (goal1, goal2)
+
+/-- An extension of the `have` tactic that turns the hypothesis into a goal to be proved later -/
+elab_rules : tactic
+| `(tactic| have $n:optBinderIdent $bs* $[: $t:term]?) => do
+  let (goal1, goal2) ← haveLetCore (← getMainGoal) n bs t false
+  replaceMainGoal [goal1, goal2]
+
+/--
+An extension of the `suffices` tactic that turns the hypothesis into a goal to be proved later
+-/
+elab_rules : tactic
+| `(tactic| suffices $n:optBinderIdent $bs* $[: $t:term]?) => do
+  let (goal1, goal2) ← haveLetCore (← getMainGoal) n bs t false
+  replaceMainGoal [goal2, goal1]
+
+/-- An extension of the `let` tactic that turns the hypothesis into a goal to be proved later -/
+elab_rules : tactic
+| `(tactic| let $n:optBinderIdent $bs* $[: $t:term]?) => withMainContext do
+  let (goal1, goal2) ← haveLetCore (← getMainGoal) n bs t true
+  replaceMainGoal [goal1, goal2]
+
+end Mathlib.Tactic
+````

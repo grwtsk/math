@@ -1,0 +1,10 @@
+import FormalResearch.PositiveAtlas.Grassmannian.PivotBounds
+
+#print FormalResearch.PositiveAtlas.Grassmannian.sum_orderedMinor_sq_eq_one
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.sum_orderedMinor_sq_eq_one
+#print FormalResearch.PositiveAtlas.Grassmannian.exists_orderedMinor_margin
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.exists_orderedMinor_margin
+#print FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_cover
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_cover
+#print FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_orthogonal_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.controlledPivotDomain_orthogonal_iff

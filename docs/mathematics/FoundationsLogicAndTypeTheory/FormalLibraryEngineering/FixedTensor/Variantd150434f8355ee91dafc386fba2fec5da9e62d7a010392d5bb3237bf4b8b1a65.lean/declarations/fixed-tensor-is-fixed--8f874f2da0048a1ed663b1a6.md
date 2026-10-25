@@ -1,0 +1,108 @@
+# fixed_tensor_is_fixed
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "c5c885b40d85a805dab07ab9abb6572ae5608f02",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 30,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/d1/d150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:1b9e18d7-ade1-dac7-685e-c45baceea6d2",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:dfe60f1c-5c9e-c84c-ab8e-4b37620b93bb",
+  "kind": "theorem",
+  "lexical_name": "fixed_tensor_is_fixed",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "fixed-tensor-is-fixed--8f874f2da0048a1ed663b1a6",
+  "source": {
+    "blob": "c5c885b40d85a805dab07ab9abb6572ae5608f02",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 44,
+    "line": 30,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FixedTensor/Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:8f874f2da0048a1ed663b1a6ae49c097b34af7105bd3ddc38390e2c8f789bf97",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FixedTensor/Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:dfe60f1c-5c9e-c84c-ab8e-4b37620b93bb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 30–44.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem fixed_tensor_is_fixed
+    {C : Folder.CrystallineTensor.CrystallineSite}
+    {F : Folder.CrystallineTensor.Crystal C}
+    {nabla : Folder.CrystallineTensor.Connection F}
+    {e : Folder.CrystallineTensor.CrystalEndomorphism F}
+    {X : C.Site.Obj}
+    (T : Folder.CrystallineTensor.FixedTensor nabla e X) :
+    e.map X T.tensor.underlyingSection =
+      T.tensor.underlyingSection :=
+  Folder.CrystallineTensor.fixed_tensor_is_fixed T
+
+end FixedTensor
+end CrystallineTensor
+end Theorem
+end Folder
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FixedTensor/Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FixedTensor/Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65.lean#L30).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c5c885b40d85a805dab07ab9abb6572ae5608f02` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

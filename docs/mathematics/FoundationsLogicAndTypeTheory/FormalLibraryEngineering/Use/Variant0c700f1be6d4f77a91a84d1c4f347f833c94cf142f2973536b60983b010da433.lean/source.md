@@ -1,0 +1,228 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Use.Variant0c700f1be6d4f77a91a84d1c4f347f833c94cf142f2973536b60983b010da433
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `65263e52f6ac22013f89d6e5d6a47e2dbbdfb810` · SHA-256 `e63857198fa70f77defee2bde9160d4435d6e4a61bbcd47935d20d612bae001b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Foo.Variant83dc5725b999a784202c31a08e96ca94956e3488e15fd6de008eb574c850d68b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"83dc5725b999a784202c31a08e96ca94956e3488e15fd6de008eb574c850d68b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Foo.Variant83dc5725b999a784202c31a08e96ca94956e3488e15fd6de008eb574c850d68b","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"83dc5725b999a784202c31a08e96ca94956e3488e15fd6de008eb574c850d68b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/test/Use.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Arthur Paulino. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Arthur Paulino
+-/
+
+import Mathlib.Tactic.Use
+import Mathlib.Tactic.Basic
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Foo.Variant83dc5725b999a784202c31a08e96ca94956e3488e15fd6de008eb574c850d68b
+
+namespace UseTests
+
+set_option autoImplicit true
+
+example : ∃ x : Nat, x = x := by use 42
+
+-- Since `Eq` is an inductive type, `use` naturally handles it when applying the constructor.
+/-- error: too many arguments supplied to `use` -/
+#guard_msgs in
+example : ∃ x : Nat, x = x := by use 42, rfl
+
+example : ∃ x : Nat, x = x := by use! 42
+
+example (h : 42 = y) : ∃ x : Nat, x = y := by use 42, h
+
+-- `trivial` uses `assumption`
+example (h : 42 = y) : ∃ x : Nat, x = y := by use 42
+
+-- Check that `use` inserts a coercion:
+/-- info: Try this: Exists.intro (↑n) (Eq.refl ↑n) -/
+#guard_msgs (info) in
+example (n : Fin 3) : ∃ x : Nat, x = x := show_term by use n
+
+example : ∃ x : Nat, ∃ y : Nat, x = y := by use 42, 42
+
+/--
+error: failed to synthesize instance
+  OfNat (Nat × Nat) 42
+-/
+#guard_msgs in
+example : ∃ p : Nat × Nat, p.1 = p.2 := by use 42; sorry
+
+example : ∃ p : Nat × Nat, p.1 = p.2 := by use! 42, 42
+
+example : ∃ p : Nat × Nat, p.1 = p.2 := by use! (42, 42)
+
+example (r : Nat → Nat → Prop) (h : ∀ x, r x x) :
+    ∃ p : Nat × Nat, r p.1 p.2 := by use! 42; use! 42; apply h
+
+example (r : Nat → Nat → Prop) (h : ∀ x, r x x) :
+    ∃ p : Nat × Nat, r p.1 p.2 := by use! 42, 42; apply h
+
+example (r : Nat → Nat → Prop) (h : ∀ x, r x x) :
+    ∃ p : Nat × Nat, r p.1 p.2 := by use! 42, 42, h _
+
+example : ∃ x : String × String, x.1 = x.2 := by use ("a", "a")
+
+example : ∃ x : String × String, x.1 = x.2 := by use! "a", "a"
+
+-- This example is why `use` always tries applying the constructor before refining.
+example : ∃ x : Nat, x = x := by
+  use ?_
+  exact 42
+
+example (α : Type) : ∃ S : List α, S = S := by use ∅
+
+example : ∃ x : Int, x = x := by use 42
+
+example : ∃ a b c : Int, a + b + c = 6 := by
+  use 1, 2, 3
+  rfl
+
+example : ∃ p : Int × Int, p.1 = 1 := by use ⟨1, 42⟩
+
+example : ∃ p : Int × Int, p.1 = 1 := by use! 1, 42
+
+example : ∃ n : Int, n * 3 = 3 * 2 := by
+  use 2
+  rfl
+
+example : Σ _x _y : Int, Int × Int × Int := by
+  use 1, 2, 3, 4, 5
+
+example : Σ _x _y : Int, (Int × Int) × Int := by
+  use! 1, 2, 3, 4, 5
+
+-- There are two constructors, so applying a constructor fails and it tries to just refine
+/--
+error: failed to synthesize instance
+  OfNat (Option Nat) 1
+-/
+#guard_msgs in
+example : Option Nat := by use 1
+
+/--
+error: failed to synthesize instance
+  OfNat (Nat → Nat) 1
+-/
+#guard_msgs in
+example : Nat → Nat := by use 1
+
+inductive foo
+| mk : Nat → Bool × Nat → Nat → foo
+
+example : foo := by
+  use 100, ⟨true, 4⟩, 3
+
+example : foo := by
+  use! 100, true, 4, 3
+
+/-- info: Try this: foo.mk 100 (true, 4) 3 -/
+#guard_msgs in
+-- `use` puts placeholders after the current goal
+example : foo := show_term by
+  use ?x, ⟨?b, 4⟩
+  exact (3 : Nat)
+  exact (100 : Nat)
+  exact true
+
+/-- info: Try this: foo.mk 100 (true, 4) 3 -/
+#guard_msgs in
+-- `use` puts placeholders after the current goal
+example : foo := show_term by
+  -- Type ascriptions keep refinement from occurring before applying the constructor
+  use! (?x : Nat), (?b : Bool), 4
+  exact (3 : Nat)
+  exact (100 : Nat)
+  exact true
+
+-- `use!` is helpful for auto-flattening quantifiers over subtypes
+example : ∃ p : {x : Nat // 0 < x}, 1 < p.1 := by use! 2 <;> decide
+
+inductive Baz : Nat → Nat → Prop
+  | cons (x : Nat) : Baz 0 x
+
+example : Baz 0 3 := by use _
+
+example : Baz 0 3 := by use 3
+
+/--
+error: argument is not definitionally equal to inferred value
+  3
+-/
+#guard_msgs in
+example : Baz 0 3 := by use 4
+
+-- Could not apply constructor due to defeq check
+/--
+error: type mismatch
+  3
+has type
+  Nat : Type
+but is expected to have type
+  Baz 1 3 : Prop
+-/
+#guard_msgs in
+example : Baz 1 3 := by use (3 : Nat)
+
+structure DecidableType where
+  (α : Type)
+  [deq : DecidableEq α]
+
+-- Auto-synthesizes instance
+example : DecidableType := by
+  use Nat
+
+example (β : Type) [DecidableEq β] : DecidableType := by
+  use β
+
+-- Leaves instances as extra goals when synthesis fails
+noncomputable
+example (β : Type) : DecidableType := by
+  use β
+  guard_target = DecidableEq β
+  apply Classical.typeDecidableEq
+
+-- https://github.com/leanprover-community/mathlib4/issues/5072
+example (n : Nat) : Nat := by use n
+
+structure Embedding (α β : Sort _) where
+  toFun : α → β
+  inj : ∀ x y, toFun x = toFun y → x = y
+
+example (α : Type u) : Embedding α α × Unit := by
+  constructor
+  -- testing that `use` actually focuses on the main goal
+  use id
+  · simp
+  constructor
+
+
+-- FIXME Failing tests ported from mathlib3
+
+-- Note(kmill): mathlib3 `use` would try to rewrite any lingering existentials with
+-- `exists_prop` to turn them into conjunctions. It did not do this recursively.
+
+-- example : ∃ (n : Nat) (h : n > 0), n = n :=
+-- by
+--   use 1
+--   -- goal should now be `1 > 0 ∧ 1 = 1`, whereas it would be `∃ (H : 1 > 0), 1 = 1` after existsi 1.
+--   guard_target = 1 > 0 ∧ 1 = 1
+--   exact ⟨Nat.zero_lt_one, rfl⟩
+
+-- This feature might not be useful anymore since bounded `Exists` already uses a conjunction.
+example : ∃ n > 0, n = n :=
+by
+  use (discharger := skip) 1
+  guard_target = 1 > 0 ∧ 1 = 1
+  decide
+
+-- The discharger knows about `exists_prop`.
+example (h1 : 1 > 0) : ∃ (n : Nat) (_h : n > 0), n = n := by
+  use 1
+```

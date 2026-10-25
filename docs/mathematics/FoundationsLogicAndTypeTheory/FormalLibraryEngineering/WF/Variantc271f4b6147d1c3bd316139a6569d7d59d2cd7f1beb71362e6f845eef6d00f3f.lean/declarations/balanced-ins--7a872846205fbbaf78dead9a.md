@@ -1,0 +1,121 @@
+# Balanced.ins
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "4520aa9ebb20e1785ae4abf6adab1b7d37642d69",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 242,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/c2/c271f4b6147d1c3bd316139a6569d7d59d2cd7f1beb71362e6f845eef6d00f3f.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:8a81b893-f65b-96f3-31ec-420dd8a9d854",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:d3569a96-f2f1-76da-860b-9099de116cd9",
+  "kind": "theorem",
+  "lexical_name": "Balanced.ins",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "balanced-ins--7a872846205fbbaf78dead9a",
+  "source": {
+    "blob": "4520aa9ebb20e1785ae4abf6adab1b7d37642d69",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 269,
+    "line": 242,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/WF/Variantc271f4b6147d1c3bd316139a6569d7d59d2cd7f1beb71362e6f845eef6d00f3f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:7a872846205fbbaf78dead9aa46ad8a44c2afebdad5e31c89b09bd4b3f24d116",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/WF/Variantc271f4b6147d1c3bd316139a6569d7d59d2cd7f1beb71362e6f845eef6d00f3f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d3569a96-f2f1-76da-860b-9099de116cd9`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 242–269.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+protected theorem Balanced.ins (cmp v) {t : RBNode α}
+    (h : t.Balanced c n) : (ins cmp v t).RedRed (t.isRed = red) n := by
+  induction h with
+  | nil => exact .balanced (.red .nil .nil)
+  | @red a n b x hl hr ihl ihr =>
+    unfold ins; split
+    · match ins cmp v a, ihl with
+      | _, .balanced .nil => exact .balanced (.red .nil hr)
+      | _, .balanced (.red ha hb) => exact .redred rfl (.red ha hb) hr
+      | _, .balanced (.black ha hb) => exact .balanced (.red (.black ha hb) hr)
+      | _, .redred h .. => cases hl <;> cases h
+    · match ins cmp v b, ihr with
+      | _, .balanced .nil => exact .balanced (.red hl .nil)
+      | _, .balanced (.red ha hb) => exact .redred rfl hl (.red ha hb)
+      | _, .balanced (.black ha hb) => exact .balanced (.red hl (.black ha hb))
+      | _, .redred h .. => cases hr <;> cases h
+    · exact .balanced (.red hl hr)
+  | @black a ca n b cb x hl hr ihl ihr =>
+    unfold ins; split
+    · exact have ⟨c, h⟩ := ihl.balance1 hr; .balanced h
+    · exact have ⟨c, h⟩ := ihr.balance2 hl; .balanced h
+    · exact .balanced (.black hl hr)
+
+/--
+The `insert` function is balanced if the input is balanced.
+(We lose track of both the color and the black-height of the result,
+so this is only suitable for use on the root of the tree.)
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/WF/Variantc271f4b6147d1c3bd316139a6569d7d59d2cd7f1beb71362e6f845eef6d00f3f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/WF/Variantc271f4b6147d1c3bd316139a6569d7d59d2cd7f1beb71362e6f845eef6d00f3f.lean#L242).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4520aa9ebb20e1785ae4abf6adab1b7d37642d69` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

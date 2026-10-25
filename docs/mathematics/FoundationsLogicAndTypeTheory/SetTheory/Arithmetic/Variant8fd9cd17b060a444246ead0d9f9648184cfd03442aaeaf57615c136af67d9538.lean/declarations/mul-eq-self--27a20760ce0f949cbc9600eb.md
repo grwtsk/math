@@ -1,0 +1,129 @@
+# mul_eq_self
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:66cc6183-597d-7d7b-656e-e519a9029f6f",
+  "kind": "theorem",
+  "lexical_name": "mul_eq_self",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mul-eq-self--27a20760ce0f949cbc9600eb",
+  "source": {
+    "blob": "f305683007986bde0cf6a215f1969fda392f1d0f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 95,
+    "line": 48,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/Arithmetic/Variant8fd9cd17b060a444246ead0d9f9648184cfd03442aaeaf57615c136af67d9538.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:27a20760ce0f949cbc9600eb71bbccb04e726b24ea8a79316e0689e35fc0ef55",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/SetTheory/Arithmetic/Variant8fd9cd17b060a444246ead0d9f9648184cfd03442aaeaf57615c136af67d9538.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:66cc6183-597d-7d7b-656e-e519a9029f6f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 48–95.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem mul_eq_self {c : Cardinal} (h : ℵ₀ ≤ c) : c * c = c := by
+  refine le_antisymm ?_ (by simpa only [mul_one] using mul_le_mul_left' (one_le_aleph0.trans h) c)
+  -- the only nontrivial part is `c * c ≤ c`. We prove it inductively.
+  refine Acc.recOn (Cardinal.lt_wf.apply c) (fun c _ => Cardinal.inductionOn c fun α IH ol => ?_) h
+  -- consider the minimal well-order `r` on `α` (a type with cardinality `c`).
+  rcases ord_eq α with ⟨r, wo, e⟩
+  classical
+  letI := linearOrderOfSTO r
+  haveI : IsWellOrder α (· < ·) := wo
+  -- Define an order `s` on `α × α` by writing `(a, b) < (c, d)` if `max a b < max c d`, or
+  -- the max are equal and `a < c`, or the max are equal and `a = c` and `b < d`.
+  let g : α × α → α := fun p => max p.1 p.2
+  let f : α × α ↪ Ordinal × α × α :=
+    ⟨fun p : α × α => (typein (· < ·) (g p), p), fun p q => congr_arg Prod.snd⟩
+  let s := f ⁻¹'o Prod.Lex (· < ·) (Prod.Lex (· < ·) (· < ·))
+  -- this is a well order on `α × α`.
+  haveI : IsWellOrder _ s := (RelEmbedding.preimage _ _).isWellOrder
+  /- it suffices to show that this well order is smaller than `r`
+       if it were larger, then `r` would be a strict prefix of `s`. It would be contained in
+      `β × β` for some `β` of cardinality `< c`. By the inductive assumption, this set has the
+      same cardinality as `β` (or it is finite if `β` is finite), so it is `< c`, which is a
+      contradiction. -/
+  suffices type s ≤ type r by exact card_le_card this
+  refine le_of_forall_lt fun o h => ?_
+  rcases typein_surj s h with ⟨p, rfl⟩
+  rw [← e, lt_ord]
+  refine lt_of_le_of_lt
+    (?_ : _ ≤ card (succ (typein (· < ·) (g p))) * card (succ (typein (· < ·) (g p)))) ?_
+  · have : { q | s q p } ⊆ insert (g p) { x | x < g p } ×ˢ insert (g p) { x | x < g p } := by
+      intro q h
+      simp only [s, f, Preimage, Embedding.coeFn_mk, Prod.lex_def, typein_lt_typein,
+        typein_inj, mem_setOf_eq] at h
+      exact max_le_iff.1 (le_iff_lt_or_eq.2 <| h.imp_right And.left)
+    suffices H : (insert (g p) { x | r x (g p) } : Set α) ≃ { x | r x (g p) } ⊕ PUnit from
+      ⟨(Set.embeddingOfSubset _ _ this).trans
+        ((Equiv.Set.prod _ _).trans (H.prodCongr H)).toEmbedding⟩
+    refine (Equiv.Set.insert ?_).trans ((Equiv.refl _).sumCongr punitEquivPUnit)
+    apply @irrefl _ r
+  rcases lt_or_le (card (succ (typein (· < ·) (g p)))) ℵ₀ with qo | qo
+  · exact (mul_lt_aleph0 qo qo).trans_le ol
+  · suffices (succ (typein LT.lt (g p))).card < #α from (IH _ this qo).trans_lt this
+    rw [← lt_ord]
+    apply (isLimit_ord ol).succ_lt
+    rw [e]
+    apply typein_lt_type
+
+/-- If `α` and `β` are infinite types, then the cardinality of `α × β` is the maximum
+of the cardinalities of `α` and `β`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/SetTheory/Arithmetic/Variant8fd9cd17b060a444246ead0d9f9648184cfd03442aaeaf57615c136af67d9538.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/Arithmetic/Variant8fd9cd17b060a444246ead0d9f9648184cfd03442aaeaf57615c136af67d9538.lean#L48).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f305683007986bde0cf6a215f1969fda392f1d0f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

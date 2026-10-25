@@ -1,0 +1,129 @@
+# grewriteCore
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:1467c23349be4680f978ed0177c55269f4e2c402b04c1a25ce39f51d9c732571",
+  "kind": "def",
+  "lexical_name": "grewriteCore",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "grewritecore--2ff88a76c5e00577f63b3083",
+  "source": {
+    "blob": "1381b2ca2184bed11453f20c7d7cb89b37aeec71",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 367,
+    "line": 320,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9a3c2ee0ec91b2b14f029d108f715f781ea35e0be7d67dbd857adb260702d724.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2ff88a76c5e00577f63b30830cd22714aad1c164402d9cf7c39cd463744913bf",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9a3c2ee0ec91b2b14f029d108f715f781ea35e0be7d67dbd857adb260702d724.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:1467c23349be4680f978ed0177c55269f4e2c402b04c1a25ce39f51d9c732571`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 320–367.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def grewriteCore (relName : Name) (rel? : Option Expr) (e : Expr) (forward : Bool)
+    (config : Config) : GRewriteM (Option (Expr × Expr)) :=
+  withTraceNodeBefore `Meta.grewrite (fun _ ↦ return m!"visiting `{e}` in the \
+    {if forward then "LHS" else "RHS"} of relation `{rel?.elim m!"→" (m!"{·}")}`") do
+  let e ← instantiateMVars e; let rel? ← rel?.mapM instantiateMVars
+  let cacheKey := (rel?, e, forward)
+  if (← get).cache.contains cacheKey then
+    trace[Meta.grewrite] "cached: no rewrite"
+    return none
+  let (mvar, goal) ← makeGCongrGoal rel? e forward
+  -- Try the given grewrite lemma.
+  let lem ← read
+  if (e.toHeadIndex, e.headNumArgs) == lem.index then
+    if ← lem.apply goal.mvarId! (forward == lem.symm) config then
+      modify ({ · with progress := .matched })
+      return (mvar, goal)
+  -- Try all applicable `@[gcongr]` lemmas.
+  if let some (head, args) := getCongrAppFnArgs e then
+    let mut lemmas ← findGCongrLemmas?' relName head forward args.size
+    if relName == `_Implies then
+      lemmas := lemmas ++ relImpRelLemma args.size
+    let mctx ← getMCtx
+    for gcongrLem in lemmas do
+      if gcongrLem.forGrw then
+        if ← processGCongrLemma goal.mvarId! gcongrLem forward config then
+          -- Preserve the binder name/info in a forall.
+          match e, ← instantiateMVars mvar with
+          | .forallE n _ _ bi, .forallE _ d b _ => return some (.forallE n d b bi, goal)
+          | _, result => return some (result, goal)
+        setMCtx mctx
+  -- Cache the fact that there was nothing to rewrite.
+  modify fun s ↦ { s with cache := s.cache.insert cacheKey }
+  return none
+
+end
+
+end singlePass
+
+/--
+Rewrite `e` using the relation `hrel : x ~ y`, and construct an implication proof
+using the `gcongr` tactic to discharge this goal.
+
+if `forwardImp = true`, we prove that `e → eNew`; otherwise `eNew → e`.
+
+If `symm = false`, we rewrite `e` to `eNew := e[x/y]`; otherwise `eNew := e[y/x]`.
+
+The code aligns with `Lean.MVarId.rewrite` as much as possible.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9a3c2ee0ec91b2b14f029d108f715f781ea35e0be7d67dbd857adb260702d724.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9a3c2ee0ec91b2b14f029d108f715f781ea35e0be7d67dbd857adb260702d724.lean#L320).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1381b2ca2184bed11453f20c7d7cb89b37aeec71` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

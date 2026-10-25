@@ -1,0 +1,127 @@
+# processNewEq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:5d0ba02be5cd4d3bb8eb5d3cdcee2224817a4929272bcbed38f96170e284b638",
+  "kind": "def",
+  "lexical_name": "processNewEq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "processneweq--fc11ce8f11a3310c2c616e20",
+  "source": {
+    "blob": "594ada1a082947cdf91e044010ea092a8febbc79",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 417,
+    "line": 372,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Assert/Variant0686fcbff6e1940a60345812cc98c5aa7a374271649545a411452a5e19ad04a6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:fc11ce8f11a3310c2c616e20e1383d16344060c8a1e6c13813069b83f77ad4ca",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Assert/Variant0686fcbff6e1940a60345812cc98c5aa7a374271649545a411452a5e19ad04a6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:5d0ba02be5cd4d3bb8eb5d3cdcee2224817a4929272bcbed38f96170e284b638`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 372–417.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+public def processNewEq (a b : Expr) : GoalM Unit := do
+  unless isSameExpr a b do
+    let h ← mkEqProof a b
+    if let some { e := a', h := h₁, α } ← getAuxTerm? a then
+      let some { e := b', h := h₂, .. } ← getAuxTerm? b | return ()
+      /-
+      We have
+      - `h  : a = b`
+      - `h₁ : ↑a = a'`
+      - `h₂ : ↑b = b'`
+      where `a'` and `b'` are `NatCast.natCast α inst _` for some type `α`.
+      -/
+      if α == Int.mkType then
+        let h := mkApp7 (mkConst ``Grind.Order.of_nat_eq) a b a' b' h₁ h₂ h
+        go a' b' h
+      else
+        let u ← getDecLevel α
+        let inst ← synthInstance (mkApp (mkConst ``NatCast [u]) α)
+        let h := mkApp9 (mkConst ``Grind.Order.of_natCast_eq [u]) α inst a b a' b' h₁ h₂ h
+        go a' b' h
+    else
+      go a b h
+where
+  getAuxTerm? (e : Expr) : GoalM (Option TermMapEntry) := do
+    return (← get').termMap.find? { expr := e }
+
+  go (a b h : Expr) : GoalM Unit := do
+    let some id₁ ← getStructIdOf? a | return ()
+    let some id₂ ← getStructIdOf? b | return ()
+    unless id₁ == id₂ do return ()
+    OrderM.run id₁ do
+      trace[grind.order.assert] "{a} = {b}"
+      let u ← getNodeId a
+      let v ← getNodeId b
+      if (← isRing) then
+        let h₁ := mkApp3 (← mkOrdRingPrefix ``Grind.Order.le_of_eq_1_k) a b h
+        let h₂ := mkApp3 (← mkOrdRingPrefix ``Grind.Order.le_of_eq_2_k) a b h
+        addEdge u v {} h₁
+        addEdge v u {} h₂
+      else
+        let h₁ := mkApp3 (← mkLePreorderPrefix ``Grind.Order.le_of_eq_1) a b h
+        let h₂ := mkApp3 (← mkLePreorderPrefix ``Grind.Order.le_of_eq_2) a b h
+        addEdge u v {} h₁
+        addEdge v u {} h₂
+
+end Lean.Meta.Grind.Order
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Assert/Variant0686fcbff6e1940a60345812cc98c5aa7a374271649545a411452a5e19ad04a6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Assert/Variant0686fcbff6e1940a60345812cc98c5aa7a374271649545a411452a5e19ad04a6.lean#L372).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `594ada1a082947cdf91e044010ea092a8febbc79` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

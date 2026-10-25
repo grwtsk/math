@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.All.Variant5cb494e0b34e956ef262eafe5c8f95197d359f80fb9aed41b364bf36c14722f8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4b6e4a9851e4a32439a48c248f264b66e2e1d620` · SHA-256 `f87c0be76dacc4bfef17a08f712f862ca7946b7476167f8d315ef5ef51849d14`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.All.Variantd3810a11f197b94fbcbcd904465b775b8d3e7a0bcfd2e7c467b8c019a6e3cebb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d3810a11f197b94fbcbcd904465b775b8d3e7a0bcfd2e7c467b8c019a6e3cebb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.All.Variantd3810a11f197b94fbcbcd904465b775b8d3e7a0bcfd2e7c467b8c019a6e3cebb","mathematical_subject":"Foundations.Unclassified","original_sha256":"d3810a11f197b94fbcbcd904465b775b8d3e7a0bcfd2e7c467b8c019a6e3cebb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Head/Think_retired/formal/Think/Bit1/Bit1/Bit1/Bit0/Bit0/Bit0/All.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Think.Bit1.Bit1.Bit1.Bit0.Bit0.Bit0.Bit0.All
+import Think.Bit1.Bit1.Bit1.Bit0.Bit0.Bit0.Bit1.All
+
+/- source-tree-label: STL1|L|addr=111000|role=cover_barrel|slug=cover-111000|owner=cover_non_owner|core=cover:111000|leaf=All.lean -/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.All.Variantd3810a11f197b94fbcbcd904465b775b8d3e7a0bcfd2e7c467b8c019a6e3cebb
+
+set_option autoImplicit false
+```

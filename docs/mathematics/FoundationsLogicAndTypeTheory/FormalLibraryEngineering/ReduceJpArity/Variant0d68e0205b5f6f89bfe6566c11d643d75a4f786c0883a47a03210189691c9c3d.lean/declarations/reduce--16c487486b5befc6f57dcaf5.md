@@ -1,0 +1,132 @@
+# reduce
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:27717becf9285e07e9f201e070cc1f51620b75415f3a770c013ed6b2279bffdf",
+  "kind": "def",
+  "lexical_name": "reduce",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "reduce--16c487486b5befc6f57dcaf5",
+  "source": {
+    "blob": "cb7040bf1899c8a0e6f570b03fe87c0607481df7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 71,
+    "line": 21,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReduceJpArity/Variant0d68e0205b5f6f89bfe6566c11d643d75a4f786c0883a47a03210189691c9c3d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:16c487486b5befc6f57dcaf5cf00c60e7b8f165317aad5258809c9de48ff5826",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReduceJpArity/Variant0d68e0205b5f6f89bfe6566c11d643d75a4f786c0883a47a03210189691c9c3d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:27717becf9285e07e9f201e070cc1f51620b75415f3a770c013ed6b2279bffdf`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 21–71.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def reduce (code : Code .pure) : ReduceM (Code .pure) := do
+  match code with
+  | .let decl k => return code.updateLet! decl (← reduce k)
+  | .fun decl k =>
+    let value ← reduce decl.value
+    let decl ← decl.update' decl.type value
+    return code.updateFun! decl (← reduce k)
+  | .jp decl k =>
+    let value ← reduce decl.value
+    let mut used := value.collectUsed
+    let mut mask := #[]
+    let mut paramsNew := #[]
+    for param in decl.params.reverse do
+      if used.contains param.fvarId then
+        used := collectUsedAtExpr used param.type
+        mask := mask.push true
+        paramsNew := paramsNew.push param
+      else
+        eraseParam param
+        mask := mask.push false
+    mask := mask.reverse
+    paramsNew := paramsNew.reverse
+    if paramsNew.size != decl.params.size then
+      let type ← mkForallParams paramsNew (← value.inferType)
+      let decl ← decl.update type paramsNew value
+      let k ← withReader (·.insert decl.fvarId mask) (reduce k)
+      return .jp decl k
+    else
+      let decl ← decl.update' decl.type value
+      return code.updateFun! decl (← reduce k)
+  | .cases c =>
+    let alts ← c.alts.mapMonoM fun alt => return alt.updateCode (← reduce alt.getCode)
+    return code.updateAlts! alts
+  | .return .. | .unreach .. => return code
+  | .jmp fvarId args =>
+    if let some mask := (← read).get? fvarId then
+      let mut argsNew := #[]
+      for keep in mask, arg in args do
+        if keep then
+          argsNew := argsNew.push arg
+      return .jmp fvarId argsNew
+    else
+      return code
+
+end ReduceJpArity
+
+open ReduceJpArity
+
+/--
+Try to reduce arity of join points
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReduceJpArity/Variant0d68e0205b5f6f89bfe6566c11d643d75a4f786c0883a47a03210189691c9c3d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReduceJpArity/Variant0d68e0205b5f6f89bfe6566c11d643d75a4f786c0883a47a03210189691c9c3d.lean#L21).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cb7040bf1899c8a0e6f570b03fe87c0607481df7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

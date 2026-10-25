@@ -1,0 +1,104 @@
+# eqvTypes
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:7e35e2585b51577260728336dc22aa27f482c5685d202b48e5571e869d0a19d3",
+  "kind": "def",
+  "lexical_name": "eqvTypes",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "eqvtypes--adf8dbac91684e0019a880d4",
+  "source": {
+    "blob": "cf0b45db1d34d2f68cbbc22c0f89513e48680efc",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 381,
+    "line": 359,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/InferType/Variant264f7776ea812787c3dc88d3158c9e6f9f8cc079ad2809ada37f2df119696f1e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:adf8dbac91684e0019a880d4b654a89d6f1006022f2fe3934e7d55badae8c9ac",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/InferType/Variant264f7776ea812787c3dc88d3158c9e6f9f8cc079ad2809ada37f2df119696f1e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:7e35e2585b51577260728336dc22aa27f482c5685d202b48e5571e869d0a19d3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 359–381.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def eqvTypes (a b : Expr) : Bool :=
+  if a == b then
+    true
+  else if a.isErased && b.isErased then
+    -- `◾ α` is equivalent to `◾`
+    true
+  else
+    let a' := a.headBeta
+    let b' := b.headBeta
+    if a != a' || b != b' then
+      eqvTypes a' b'
+    else
+      match a, b with
+      | .mdata _ a, b => eqvTypes a b
+      | a, .mdata _ b => eqvTypes a b
+      | .app f a, .app g b => eqvTypes f g && eqvTypes a b
+      | .forallE _ d₁ b₁ _, .forallE _ d₂ b₂ _ => eqvTypes d₁ d₂ && eqvTypes b₁ b₂
+      | .lam _ d₁ b₁ _, .lam _ d₂ b₂ _ => eqvTypes d₁ d₂ && eqvTypes b₁ b₂
+      | .sort u, .sort v => Level.isEquiv u v
+      | .const n us, .const m vs => n == m && List.isEqv us vs Level.isEquiv
+      | _, _ => false
+
+end Lean.Compiler.LCNF
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/InferType/Variant264f7776ea812787c3dc88d3158c9e6f9f8cc079ad2809ada37f2df119696f1e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/InferType/Variant264f7776ea812787c3dc88d3158c9e6f9f8cc079ad2809ada37f2df119696f1e.lean#L359).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cf0b45db1d34d2f68cbbc22c0f89513e48680efc` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

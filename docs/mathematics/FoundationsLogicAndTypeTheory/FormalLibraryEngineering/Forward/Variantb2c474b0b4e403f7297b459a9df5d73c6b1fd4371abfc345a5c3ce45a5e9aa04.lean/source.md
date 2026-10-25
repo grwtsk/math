@@ -1,0 +1,108 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Forward.Variantb2c474b0b4e403f7297b459a9df5d73c6b1fd4371abfc345a5c3ce45a5e9aa04
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `27a3d0e5d0552a058da36ce716ffaa5f54c13838` · SHA-256 `387bae54d3881c9e594ab9dbd3b297044b2022fb63cf9d30ef037a25a7106574`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ElabDoForward.Variant38cb99286641fbab0fa638216de52a7b99226024d86e6e9a1b55961fd38ed72d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"38cb99286641fbab0fa638216de52a7b99226024d86e6e9a1b55961fd38ed72d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.ElabDoForward.Variant38cb99286641fbab0fa638216de52a7b99226024d86e6e9a1b55961fd38ed72d","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"38cb99286641fbab0fa638216de52a7b99226024d86e6e9a1b55961fd38ed72d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Elab/BuiltinDo/Forward.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Lean FRO LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sebastian Graf
+-/
+module
+
+prelude
+public import Lean.Elab.Do.Basic
+meta import Lean.Parser.Do
+import Lean.Elab.Do.Control
+import Lean.Elab.Do.InferControlInfo
+import Lean.Elab.Binders
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ElabDoForward.Variant38cb99286641fbab0fa638216de52a7b99226024d86e6e9a1b55961fd38ed72d
+
+namespace Lean.Elab.Do
+
+open Lean.Parser.Term
+open Lean.Meta
+
+@[builtin_term_elab Lean.Parser.Term.doForward]
+public def elabDoForward : Term.TermElab := fun _ _ =>
+  throwError "\
+    `do←` may only appear as the last argument of a function application \
+    inside an enclosing `do` block, optionally inside a `fun` binder"
+
+private def forwardHint (headApp : Term) (reason : MessageData) : MessageData :=
+  m!"\
+    `{headApp}` is not a valid `do←` wrapper: {reason}. The wrapper must have type \
+    `(… → m α) → m α` for some `α` that is universally quantified in the wrapper's signature and \
+    does not appear elsewhere."
+
+/--
+Check that `probeExpr` (the elaboration of `headApp ?forwarded`) has the shape required for
+`do←`: its result type is `m α` for an unassigned `α`, the `forwarded` slot is `… → m α` with
+the same `α` (and `α` not occurring in the slot's input types), and `α` does not occur in any
+*other* explicit argument of the elaborated probe.
+-/
+private def validateForwarder (headApp : Term) (forwarded probeExpr : Expr) : MetaM Unit := do
+  let reject {α} (reason : MessageData) : MetaM α := throwError forwardHint headApp reason
+  let probeType ← whnfD (← instantiateMVars (← inferType probeExpr))
+  let .app _ alphaRet := probeType
+    | reject m!"its return type `{probeType}` is not of the form `m α`"
+  unless alphaRet.isMVar do
+    reject m!"its return type pins `α` to a concrete type"
+  let argMentionsAlpha (arg : Expr) : MetaM (Option Expr) := do
+    let ty ← inferType arg
+    if (← instantiateMVars ty).findMVar? (· == alphaRet.mvarId!) |>.isSome then
+      return some ty
+    else return none
+  forallTelescopeReducing (← inferType forwarded) fun args body => do
+    unless ← isDefEq probeType (← whnfD (← instantiateMVars body)) do
+      reject m!"the forwarded body's `α` differs from the wrapper's return `α`"
+    for arg in args do
+      if let some ty ← argMentionsAlpha arg then
+        reject m!"`α` appears in the forwarded body's input type `{ty}`"
+  forallTelescopeReducing (← inferType probeExpr.getAppFn) fun fvars _ => do
+    for (fvar, appArg) in fvars.zip probeExpr.getAppArgs do
+      unless (← fvar.fvarId!.getDecl).binderInfo matches .default do continue
+      let appArgInst ← instantiateMVars appArg
+      if appArgInst == forwarded then continue
+      if let some ty ← argMentionsAlpha appArgInst then
+        reject m!"`α` appears in an applied explicit argument of type `{ty}`"
+
+/--
+Elaborate `e` as an application whose last argument is a `do←` body, performing the effect
+forwarding. Returns `none` if `e` doesn't have that shape.
+
+Strategy: build `headApp ?forwarded` with a fresh metavariable in the body slot and elaborate
+it. Lean's elaborator handles named args, defaults, and dot notation. We then check the
+wrapper's shape against the probe; on success, the lifted body is assigned into `?forwarded`
+and the probe expression itself is the result.
+-/
+public def tryElabForwardApp? (e : Term) (dec : DoElemCont) : DoElabM (Option Expr) := do
+  let some (headApp, arg) := Forward.matchApp? e | return none
+  let (forwarded, probeExpr) ← controlAtTermElabM fun _ => withFreshMacroScope do
+    let forwardedStx ← `(?forwarded)
+    let forwarded ← Term.elabTerm forwardedStx none
+    let probeExpr ← Term.elabTerm (← `($headApp $forwardedStx)) none
+    pure (forwarded, probeExpr)
+  validateForwarder headApp forwarded probeExpr
+  let bodyInfo ← InferControlInfo.ofSeq arg.body
+  let forwarder ← EffectForwarder.ofCont bodyInfo dec
+  let liftedBody ← controlAtTermElabM fun runInBase => do
+    Term.elabFunBinders (arg.binders.map (·.raw)) none fun bsExpr _ => runInBase do
+      mkLambdaFVars bsExpr (← forwarder.lift (elabDoSeq arg.body))
+  unless ← forwarded.mvarId!.checkedAssign liftedBody do
+    throwError "the lifted body's type does not match the wrapper's body slot type"
+  -- NB: No `withDeadCode` wrap on `restoreCont`'s result, because it is unclear whether `body` is
+  --     even called.
+  return some (← (← forwarder.restoreCont).mkBindUnlessPure probeExpr)
+
+end Lean.Elab.Do
+```

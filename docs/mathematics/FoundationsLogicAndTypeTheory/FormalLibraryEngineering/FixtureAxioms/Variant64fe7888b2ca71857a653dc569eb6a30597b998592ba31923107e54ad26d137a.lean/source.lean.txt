@@ -1,0 +1,7 @@
+import RecordedForeignPrimitiveFixtures
+
+open Cycle24RecordedForeignPrimitiveFixtures
+
+#print axioms primitive_five_nonneg_on_closed_support
+#print axioms primitive_five_second_derivative_negative_inside
+#print axioms primitive_five_second_derivative_at_zero_one

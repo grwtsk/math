@@ -1,0 +1,5 @@
+import FormalResearch.MathematicalTooling.SymbolCounts.Reordering
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling
+universe u v w
+example : ∀ {α : Type u}, Function.Bijective (@FormalResearch.MathematicalTooling.SymbolCounts.quotientCountProfile α) := @FormalResearch.MathematicalTooling.SymbolCounts.count_profiles_classify_reordering
+example : FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.FiniteSamplingCheckpoint := @FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.finite_sampling_checkpoint

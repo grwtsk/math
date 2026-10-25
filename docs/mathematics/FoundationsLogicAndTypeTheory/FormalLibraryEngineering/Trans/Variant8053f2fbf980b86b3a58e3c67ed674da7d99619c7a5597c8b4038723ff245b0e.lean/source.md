@@ -1,0 +1,192 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Trans.Variant8053f2fbf980b86b3a58e3c67ed674da7d99619c7a5597c8b4038723ff245b0e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91d617875b17d4c5ce9b937ef90d3672212b2d57` · SHA-256 `61b32f6557e5a90a223b9e5f262b068d123d672c9024a219c00b69368cbd9200`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RootTransSimple.Variantc0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.RootTransSimple.Variantc0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"c0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Tactic/Relation/Trans.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Siddhartha Gadgil. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Siddhartha Gadgil, Mario Carneiro
+-/
+import Mathlib.Lean.Meta
+import Mathlib.Lean.Elab.Tactic.Basic
+import Lean.Elab.Tactic.Location
+
+/-!
+# `trans` tactic
+
+This implements the `trans` tactic, which can apply transitivity theorems with an optional middle
+variable argument.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RootTransSimple.Variantc0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590
+
+set_option autoImplicit true
+
+namespace Mathlib.Tactic
+open Lean Meta Elab
+
+initialize registerTraceClass `Tactic.trans
+
+/-- Environment extension storing transitivity lemmas -/
+initialize transExt :
+    SimpleScopedEnvExtension (Name × Array (DiscrTree.Key true)) (DiscrTree Name true) ←
+  registerSimpleScopedEnvExtension {
+    addEntry := fun dt (n, ks) ↦ dt.insertCore ks n
+    initial := {}
+  }
+
+initialize registerBuiltinAttribute {
+  name := `trans
+  descr := "transitive relation"
+  add := fun decl _ kind ↦ MetaM.run' do
+    let declTy := (← getConstInfo decl).type
+    let (xs, _, targetTy) ← withReducible <| forallMetaTelescopeReducing declTy
+    let fail := throwError
+      "@[trans] attribute only applies to lemmas proving
+      x ∼ y → y ∼ z → x ∼ z, got {indentExpr declTy} with target {indentExpr targetTy}"
+    let .app (.app rel _) _ := targetTy | fail
+    let some yzHyp := xs.back? | fail
+    let some xyHyp := xs.pop.back? | fail
+    let .app (.app _ _) _ ← inferType yzHyp | fail
+    let .app (.app _ _) _ ← inferType xyHyp | fail
+    let key ← withReducible <| DiscrTree.mkPath rel
+    transExt.add (decl, key) kind
+}
+
+/-- Composition using the `Trans` class in the homogeneous case. -/
+def _root_.GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RootTransSimple.Variantc0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590.Trans.simple {a b c : α} [Trans r r r] : r a b → r b c → r a c := trans
+
+/-- Composition using the `Trans` class in the general case. -/
+def _root_.GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RootTransSimple.Variantc0f3b3d051d3493ba51217856ab1f8c2c9fb1ac383150ce0585c515ea1766590.Trans.het {a : α} {b : β} {c : γ}
+  {r : α → β → Sort u} {s : β → γ → Sort v} {t : outParam (α → γ → Sort w)}
+  [Trans r s t] : r a b → s b c → t a c := trans
+
+
+open Lean.Elab.Tactic
+
+/-- solving `e ← mkAppM' f #[x]` -/
+def getExplicitFuncArg? (e : Expr) : MetaM (Option <| Expr × Expr) := do
+  match e with
+  | Expr.app f a => do
+    if ← isDefEq (← mkAppM' f #[a]) e then
+      return some (f, a)
+    else
+      getExplicitFuncArg? f
+  | _ => return none
+
+/-- solving `tgt ← mkAppM' rel #[x, z]` given `tgt = f z` -/
+def getExplicitRelArg? (tgt f z : Expr) : MetaM (Option <| Expr × Expr) := do
+  match f with
+  | Expr.app rel x => do
+    let check: Bool ← do
+      try
+        let folded ← mkAppM' rel #[x, z]
+        isDefEq folded tgt
+      catch _ =>
+        pure false
+    if check then
+      return some (rel, x)
+    else
+      getExplicitRelArg? tgt rel z
+  | _ => return none
+
+/-- refining `tgt ← mkAppM' rel #[x, z]` dropping more arguments if possible -/
+def getExplicitRelArgCore (tgt rel x z : Expr) : MetaM (Expr × Expr) := do
+  match rel with
+  | Expr.app rel' _ => do
+    let check: Bool ← do
+      try
+        let folded ← mkAppM' rel' #[x, z]
+        isDefEq folded tgt
+      catch _ =>
+        pure false
+    if !check then
+      return (rel, x)
+    else
+      getExplicitRelArgCore tgt rel' x z
+  | _ => return (rel ,x)
+
+/--
+`trans` applies to a goal whose target has the form `t ~ u` where `~` is a transitive relation,
+that is, a relation which has a transitivity lemma tagged with the attribute [trans].
+
+* `trans s` replaces the goal with the two subgoals `t ~ s` and `s ~ u`.
+* If `s` is omitted, then a metavariable is used instead.
+-/
+elab "trans" t?:(ppSpace colGt term)? : tactic => withMainContext do
+  let tgt ← getMainTarget''
+  let (rel, x, z) ←
+    match tgt with
+    | Expr.app f z =>
+      match (← getExplicitRelArg? tgt f z) with
+      | some (rel, x) =>
+        let (rel, x) ← getExplicitRelArgCore tgt rel x z
+        pure (rel, x, z)
+      | none => throwError "transitivity lemmas only apply to
+        binary relations, not {indentExpr tgt}"
+    | _ => throwError "transitivity lemmas only apply to binary relations, not {indentExpr tgt}"
+  trace[Tactic.trans]"goal decomposed"
+  trace[Tactic.trans]"rel: {indentExpr rel}"
+  trace[Tactic.trans]"x: {indentExpr x}"
+  trace[Tactic.trans]"z: {indentExpr z}"
+  -- first trying the homogeneous case
+  try
+    let ty ← inferType x
+    let t'? ← t?.mapM (elabTermWithHoles · ty (← getMainTag))
+    let s ← saveState
+    trace[Tactic.trans]"trying homogeneous case"
+    for lem in (← (transExt.getState (← getEnv)).getUnify rel).push ``Trans.simple do
+      trace[Tactic.trans]"trying lemma {lem}"
+      try
+        liftMetaTactic fun g ↦ do
+          let lemTy ← inferType (← mkConstWithLevelParams lem)
+          let arity ← withReducible <| forallTelescopeReducing lemTy fun es _ ↦ pure es.size
+          let y ← (t'?.map (pure ·.1)).getD (mkFreshExprMVar ty)
+          let g₁ ← mkFreshExprMVar (some <| ← mkAppM' rel #[x, y]) .synthetic
+          let g₂ ← mkFreshExprMVar (some <| ← mkAppM' rel #[y, z]) .synthetic
+          g.assign (← mkAppOptM lem (mkArray (arity - 2) none ++ #[some g₁, some g₂]))
+          pure <| [g₁.mvarId!, g₂.mvarId!] ++ if let some (_, gs') := t'? then gs' else [y.mvarId!]
+        return
+      catch _ => s.restore
+    pure ()
+  catch _ =>
+  trace[Tactic.trans]"trying heterogeneous case"
+  let t'? ← t?.mapM (elabTermWithHoles · none (← getMainTag))
+  let s ← saveState
+  for lem in (← (transExt.getState (← getEnv)).getUnify rel).push
+      ``HEq.trans |>.push ``HEq.trans do
+    try
+      liftMetaTactic fun g ↦ do
+        trace[Tactic.trans]"trying lemma {lem}"
+        let lemTy ← inferType (← mkConstWithLevelParams lem)
+        let arity ← withReducible <| forallTelescopeReducing lemTy fun es _ ↦ pure es.size
+        trace[Tactic.trans]"arity: {arity}"
+        trace[Tactic.trans]"lemma-type: {lemTy}"
+        let y ← (t'?.map (pure ·.1)).getD (mkFreshExprMVar none)
+        trace[Tactic.trans]"obtained y: {y}"
+        trace[Tactic.trans]"rel: {indentExpr rel}"
+        trace[Tactic.trans]"x:{indentExpr x}"
+        trace[Tactic.trans]"z:  {indentExpr z}"
+        let g₂ ← mkFreshExprMVar (some <| ← mkAppM' rel #[y, z]) .synthetic
+        trace[Tactic.trans]"obtained g₂: {g₂}"
+        let g₁ ← mkFreshExprMVar (some <| ← mkAppM' rel #[x, y]) .synthetic
+        trace[Tactic.trans]"obtained g₁: {g₁}"
+        g.assign (← mkAppOptM lem (mkArray (arity - 2) none ++ #[some g₁, some g₂]))
+        pure <| [g₁.mvarId!, g₂.mvarId!] ++ if let some (_, gs') := t'? then gs' else [y.mvarId!]
+      return
+    catch e =>
+      trace[Tactic.trans]"failed: {e.toMessageData}"
+      s.restore
+
+  throwError m!"no applicable transitivity lemma found for {indentExpr tgt}
+"
+```

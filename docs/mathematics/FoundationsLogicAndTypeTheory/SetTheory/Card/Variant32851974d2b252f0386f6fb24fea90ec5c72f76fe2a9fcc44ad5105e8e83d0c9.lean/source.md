@@ -1,0 +1,110 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Card.Variant32851974d2b252f0386f6fb24fea90ec5c72f76fe2a9fcc44ad5105e8e83d0c9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1d4fa315bc4c5c8deeb1ed5ec101ed8d148eee9b` · SHA-256 `0101563f18a7c05f47be968a22c70b70378d0d57c9710ffb17d55a358475fcc9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.SetTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.SetTheory.SourceCorpus.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7","mathematical_subject":"Logic.SetTheory","original_sha256":"99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Group/Pointwise/Set/Card.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+import Mathlib.Algebra.Group.Action.Basic
+import Mathlib.Algebra.Group.Pointwise.Set.Finite
+import Mathlib.Data.Set.Card
+
+/-!
+# Cardinalities of pointwise operations on sets
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7
+
+assert_not_exists Field
+
+open scoped Cardinal Pointwise
+
+namespace Set
+variable {G M α : Type*}
+
+section Mul
+variable [Mul M] {s t : Set M}
+
+@[to_additive]
+lemma _root_.GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7.Cardinal.mk_mul_le : #(s * t) ≤ #s * #t := by
+  rw [← image2_mul]; exact Cardinal.mk_image2_le
+
+variable [IsCancelMul M]
+
+@[to_additive]
+lemma natCard_mul_le : Nat.card (s * t) ≤ Nat.card s * Nat.card t := by
+  obtain h | h := (s * t).infinite_or_finite
+  · simp [Set.Infinite.card_eq_zero h]
+  simp only [Nat.card, ← Cardinal.toNat_mul]
+  refine Cardinal.toNat_le_toNat Cardinal.mk_mul_le ?_
+  aesop (add simp [Cardinal.mul_lt_aleph0_iff, finite_mul])
+
+end Mul
+
+section InvolutiveInv
+variable [InvolutiveInv G]
+
+@[to_additive (attr := simp)]
+lemma _root_.GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7.Cardinal.mk_inv (s : Set G) : #↥(s⁻¹) = #s := by
+  rw [← image_inv_eq_inv, Cardinal.mk_image_eq_of_injOn _ _ inv_injective.injOn]
+
+@[to_additive (attr := simp)]
+lemma natCard_inv (s : Set G) : Nat.card ↥(s⁻¹) = Nat.card s := by
+  rw [← image_inv_eq_inv, Nat.card_image_of_injective inv_injective]
+
+@[to_additive (attr := simp)]
+lemma encard_inv (s : Set G) : s⁻¹.encard = s.encard := by
+  simp [ENat.card, ← toENat_cardinalMk]
+
+@[to_additive (attr := simp)]
+lemma ncard_inv (s : Set G) : s⁻¹.ncard = s.ncard := by simp [ncard]
+
+end InvolutiveInv
+
+section DivInvMonoid
+variable [DivInvMonoid M] {s t : Set M}
+
+@[to_additive]
+lemma _root_.GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7.Cardinal.mk_div_le : #(s / t) ≤ #s * #t := by
+  rw [← image2_div]; exact Cardinal.mk_image2_le
+
+end DivInvMonoid
+
+section Group
+variable [Group G] {s t : Set G}
+
+@[to_additive]
+lemma natCard_div_le : Nat.card (s / t) ≤ Nat.card s * Nat.card t := by
+  rw [div_eq_mul_inv, ← natCard_inv t]; exact natCard_mul_le
+
+variable [MulAction G α]
+
+@[to_additive (attr := simp)]
+lemma _root_.GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.RootCardinalMkMulLe.Variant99d4499af6a2a23fde2277e5ba6c6ef0e169355e8b67c461c31bf2d291d852f7.Cardinal.mk_smul_set (a : G) (s : Set α) : #↥(a • s) = #s :=
+  Cardinal.mk_image_eq_of_injOn _ _ (MulAction.injective a).injOn
+
+@[to_additive (attr := simp)]
+lemma natCard_smul_set (a : G) (s : Set α) : Nat.card ↥(a • s) = Nat.card s :=
+  Nat.card_image_of_injective (MulAction.injective a) _
+
+@[to_additive (attr := simp)]
+lemma encard_smul_set (a : G) (s : Set α) : (a • s).encard = s.encard := by
+  simp [ENat.card, ← toENat_cardinalMk]
+
+@[to_additive (attr := simp)]
+lemma ncard_smul_set (a : G) (s : Set α) : (a • s).ncard = s.ncard := by simp [ncard]
+
+end Group
+end Set
+```

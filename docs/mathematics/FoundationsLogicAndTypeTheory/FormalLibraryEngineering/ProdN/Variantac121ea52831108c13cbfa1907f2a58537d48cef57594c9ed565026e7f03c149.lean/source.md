@@ -1,0 +1,82 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProdN.Variantac121ea52831108c13cbfa1907f2a58537d48cef57594c9ed565026e7f03c149
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8719fed9fdc00b4e917a776579a946979a83890d` · SHA-256 `4765bc451e7eeb5ec300f00391b8db540293069c1c52eeb44af66f392a0abfc0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MkProdN.Variant486707cc9fc5dc3b9887a77e0234bcc96e5ede7c4c014e28dffb7a7ef8b3ba89","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"486707cc9fc5dc3b9887a77e0234bcc96e5ede7c4c014e28dffb7a7ef8b3ba89","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.MkProdN.Variant486707cc9fc5dc3b9887a77e0234bcc96e5ede7c4c014e28dffb7a7ef8b3ba89","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"486707cc9fc5dc3b9887a77e0234bcc96e5ede7c4c014e28dffb7a7ef8b3ba89","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Meta/ProdN.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sebastian Graf
+-/
+
+module
+
+prelude
+public import Lean.Meta.InferType
+import Lean.Meta.DecLevel
+import Init.Data.Range.Polymorphic.Iterators
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MkProdN.Variant486707cc9fc5dc3b9887a77e0234bcc96e5ede7c4c014e28dffb7a7ef8b3ba89
+
+public section
+
+namespace Lean.Meta
+
+/--
+Given types `tᵢ`, return the tuple type `t₁ × t₂ × … × tₙ`.
+For `n = 0`, return `PUnit` with the given level + 1.
+-/
+def mkProdN (ts : Array Expr) (u : Level /- used as `Type u` -/) : MetaM Expr := do
+  if h : ts.size > 0 then
+    let mut tupleTy := ts.back
+    let mut u ← getDecLevel tupleTy
+    let mut ts := ts.pop
+    for i in 0...ts.size do
+      let ty := ts.back!
+      let u' ← getDecLevel ty
+      tupleTy := mkApp2 (mkConst ``Prod [u', u]) ty tupleTy
+      u := (mkLevelMax u u').normalize
+      ts := ts.pop
+    return tupleTy
+  else
+    return mkConst ``PUnit [mkLevelSucc u]
+
+/--
+Given expressions `eᵢ`, return the tuple `(e₁, e₂, …, eₙ)` and its type `t₁ × t₂ × … × tₙ`.
+For `n = 0`, return `PUnit.unit` with the given level + 1.
+-/
+def mkProdMkN (es : Array Expr) (u : Level /- used as `Type u` -/) : MetaM (Expr × Expr) := do
+  if h : es.size > 0 then
+    let mut tuple := es.back
+    let mut tupleTy ← inferType tuple
+    let mut u ← getDecLevel tupleTy
+    let mut es := es.pop
+    for i in 0...es.size do
+      let e := es.back!
+      let ty ← inferType e
+      let u' ← getDecLevel ty
+      tuple := mkApp4 (mkConst ``Prod.mk [u', u]) ty tupleTy e tuple
+      tupleTy := mkApp2 (mkConst ``Prod [u', u]) ty tupleTy
+      u := (mkLevelMax u u').normalize
+      es := es.pop
+    return (tuple, tupleTy)
+  else
+    return (mkConst ``PUnit.unit [mkLevelSucc u], mkConst ``PUnit [mkLevelSucc u])
+
+/-- Given a product `(e₁, e₂)` of type `t₁ × t₂`, return `(e₁, t₁, e₂, t₂)`. -/
+def getProdFields (tuple tupleTy : Expr) : MetaM (Expr × Expr × Expr × Expr) := do
+  let tupleTy ← instantiateMVarsIfMVarApp tupleTy
+  let_expr c@Prod fstTy sndTy := tupleTy
+    | throwError "Internal error: Expected Prod, got {tuple} of type {tupleTy}"
+  let fst := mkApp3 (mkConst ``Prod.fst c.constLevels!) fstTy sndTy tuple
+  let snd := mkApp3 (mkConst ``Prod.snd c.constLevels!) fstTy sndTy tuple
+  return (fst, fstTy, snd, sndTy)
+```

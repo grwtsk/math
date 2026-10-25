@@ -1,0 +1,22 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.All.Variant05865cf19300cbdce239098d7c96518627928dedd53f8b98b6b8d15d1dc95466
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ff6d79e880b953aa73f77c52db06f5c3036354aa` · SHA-256 `80e41b94288b74ef397b6c1e7a5cb053a8bd09c1c1e081c2c622183c39d768b1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.M506970656c696e652f43656e7465722f436f6d70616374506970656c696e652e6c65616e.Variantf9f494e74edb1e5f88274f386eca04c06d01e68bd8f1a1f49351f4ff2beed6e8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f9f494e74edb1e5f88274f386eca04c06d01e68bd8f1a1f49351f4ff2beed6e8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.M506970656c696e652f43656e7465722f436f6d70616374506970656c696e652e6c65616e.Variantf9f494e74edb1e5f88274f386eca04c06d01e68bd8f1a1f49351f4ff2beed6e8","mathematical_subject":"Foundations.Unclassified","original_sha256":"f9f494e74edb1e5f88274f386eca04c06d01e68bd8f1a1f49351f4ff2beed6e8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Head/Think_retired/formal/Think/Bit1/Bit0/Bit0/Bit1/Bit1/Bit1/Bit0/All.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Think.Bit1.Bit0.Bit0.Bit1.Bit1.Bit1.Bit0.M506970656c696e652f43656e7465722f436f6d70616374506970656c696e652e6c65616e
+import Think.Bit1.Bit0.Bit0.Bit1.Bit1.Bit1.Bit0.M506970656c696e652f52657369647565547265652f4b69726368686f6666426f756e646172792e6c65616e
+
+/- source-tree-label: STL1|L|addr=1001110|role=cover_barrel|slug=cover-1001110|owner=cover_non_owner|core=cover:1001110|leaf=All.lean -/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.M506970656c696e652f43656e7465722f436f6d70616374506970656c696e652e6c65616e.Variantf9f494e74edb1e5f88274f386eca04c06d01e68bd8f1a1f49351f4ff2beed6e8
+
+set_option autoImplicit false
+```

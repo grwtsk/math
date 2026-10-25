@@ -1,0 +1,132 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Hygiene.Variantdf65869ee474fad20ddfd12c9dd181aeba7851a7fd703c8abcb61a5f713185f4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7915386f8cdc7957f3dcf68392343a3dc3ee4770` · SHA-256 `109ed9575f7f64deddd0a93e6e3cff950407feca1f79fe2389b4b51330157bf0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.UnhygienicContext.Variant1f4304254fb225c42914df5c756943bca8ba0188b1ac37b48c8d0e0722e2143e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1f4304254fb225c42914df5c756943bca8ba0188b1ac37b48c8d0e0722e2143e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.UnhygienicContext.Variant1f4304254fb225c42914df5c756943bca8ba0188b1ac37b48c8d0e0722e2143e","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"1f4304254fb225c42914df5c756943bca8ba0188b1ac37b48c8d0e0722e2143e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Hygiene.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2019 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sebastian Ullrich
+-/
+module
+
+prelude
+public import Lean.Data.Format
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.UnhygienicContext.Variant1f4304254fb225c42914df5c756943bca8ba0188b1ac37b48c8d0e0722e2143e
+
+public section
+
+namespace Lean
+/-! Remark: `MonadQuotation` class is part of the `Init` package and loaded by default since it is used in the builtin command `macro`. -/
+
+structure Unhygienic.Context where
+  ref   : Syntax
+  scope : MacroScope
+
+/--
+Simplistic MonadQuotation that does not guarantee globally fresh names, that
+is, between different runs of this or other MonadQuotation implementations.
+It is only safe if the syntax quotations do not introduce bindings around
+antiquotations, and if references to globals are prefixed with `_root_.`
+(which is not allowed to refer to a local variable)
+`Unhygienic` can also be seen as a model implementation of `MonadQuotation`
+(since it is completely hygienic as long as it is "run" only once and can
+assume that there are no other implementations in use, as is the case for the
+elaboration monads that carry their macro scope state through the entire
+processing of a file). It uses the state monad to query and allocate the
+next macro scope, and uses the reader monad to store the stack of scopes
+corresponding to `withFreshMacroScope` calls.
+-/
+abbrev Unhygienic := ReaderT Lean.Unhygienic.Context <| StateM MacroScope
+namespace Unhygienic
+instance : MonadQuotation Unhygienic where
+  getRef              := return (← read).ref
+  withRef             := fun ref => withReader ({ · with ref := ref })
+  getCurrMacroScope   := return (← read).scope
+  getContext          := pure `UnhygienicMain
+  withFreshMacroScope := fun x => do
+    let fresh ← modifyGet fun n => (n, n + 1)
+    withReader ({ · with scope := fresh}) x
+
+@[inline]
+protected def run {α : Type} (x : Unhygienic α) : α := (x ⟨Syntax.missing, firstFrontendMacroScope⟩).run' (firstFrontendMacroScope+1)
+end Unhygienic
+
+private def mkInaccessibleUserNameAux (unicode : Bool) (name : Name) (idx : Nat) : Name :=
+  if unicode then
+    if idx == 0 then
+      name.appendAfter "✝"
+    else
+      name.appendAfter ("✝" ++ idx.toSuperscriptString)
+  else
+    name ++ Name.num `_inaccessible idx
+
+private def mkInaccessibleUserName (unicode : Bool) : Name → Name
+  | .num p@(.str ..) idx =>
+    mkInaccessibleUserNameAux unicode p idx
+  | .num .anonymous idx =>
+    mkInaccessibleUserNameAux unicode Name.anonymous idx
+  | .num p idx =>
+    if unicode then
+      (mkInaccessibleUserName unicode p).appendAfter ("⁻" ++ idx.toSuperscriptString)
+    else
+      Name.mkNum (mkInaccessibleUserName unicode p) idx
+  | n => n
+
+register_builtin_option pp.sanitizeNames : Bool := {
+  defValue := true
+  descr    := "add suffix to shadowed/inaccessible variables when pretty printing"
+}
+
+def getSanitizeNames (o : Options) : Bool := pp.sanitizeNames.get o
+
+structure NameSanitizerState where
+  options            : Options
+  /-- `x` ~> 2 if we're already using `x✝`, `x✝¹` -/
+  nameStem2Idx       : NameMap Nat := {}
+  /-- `x._hyg...` ~> `x✝` -/
+  userName2Sanitized : NameMap Name := {}
+
+private partial def mkFreshInaccessibleUserName (userName : Name) (idx : Nat) : StateM NameSanitizerState Name := do
+  let s ← get
+  let userNameNew := mkInaccessibleUserName (Std.Format.getUnicode s.options) (Name.mkNum userName idx)
+  if s.nameStem2Idx.contains userNameNew then
+    mkFreshInaccessibleUserName userName (idx+1)
+  else do
+    modify fun s => { s with nameStem2Idx := s.nameStem2Idx.insert userName (idx+1) }
+    pure userNameNew
+
+/-- Erase macro scopes from `userName` and add "tombstone" + superscript (or `._hyg`). -/
+def sanitizeName (userName : Name) : StateM NameSanitizerState Name := do
+  let stem := userName.eraseMacroScopes;
+  let idx  := (← get).nameStem2Idx.find? stem |>.getD 0
+  let san ← mkFreshInaccessibleUserName stem idx
+  modify fun s => { s with userName2Sanitized := s.userName2Sanitized.insert userName san }
+  pure san
+
+private partial def sanitizeSyntaxAux : Syntax → StateM NameSanitizerState Syntax
+  | stx@(Syntax.ident _ _ n _) => do
+    let n ← match (← get).userName2Sanitized.find? n with
+      | some n' => pure n'
+      | none    => if n.hasMacroScopes then sanitizeName n else pure n
+    return mkIdentFrom stx n
+  | Syntax.node info k args => Syntax.node info k <$> args.mapM sanitizeSyntaxAux
+  | stx => pure stx
+
+def sanitizeSyntax (stx : Syntax) : StateM NameSanitizerState Syntax := do
+  if getSanitizeNames (← get).options then
+    sanitizeSyntaxAux stx
+  else
+    pure stx
+
+end Lean
+```

@@ -1,0 +1,151 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Basic.Varianted6c066cb28f47e595c78abe347a497221c4f7d4cacc8f267724743097e535a3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `32564e74db677b03254b3549ce2481c6afebc496` · SHA-256 `bbaf10b2b3774bb314023365fb7b7fc7dba7c9e8b5000c9e58f460b97ccb3455`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Database.Variantd01dce48a8bb2e7442b2079139e082da9c8c28d41f83661538b5fe2c5dec38bc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d01dce48a8bb2e7442b2079139e082da9c8c28d41f83661538b5fe2c5dec38bc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Database.Variantd01dce48a8bb2e7442b2079139e082da9c8c28d41f83661538b5fe2c5dec38bc","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"d01dce48a8bb2e7442b2079139e082da9c8c28d41f83661538b5fe2c5dec38bc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Time/Zoned/Database/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Std.Time.Zoned.ZoneRules
+public import Std.Time.Zoned.Database.TzIf
+import Std.Time.Zoned.Database.PosixTz
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Database.Variantd01dce48a8bb2e7442b2079139e082da9c8c28d41f83661538b5fe2c5dec38bc
+
+public section
+
+namespace Std
+namespace Time
+
+set_option linter.all true
+
+/--
+A timezone database from which we can read the `ZoneRules` of some area by it's id.
+-/
+protected class Database (α : Type) where
+
+  /--
+  Retrieves the zone rules information (`ZoneRules`) for a given area at a specific point in time.
+  -/
+  getZoneRules : α → String → IO TimeZone.ZoneRules
+
+  /--
+  Retrieves the local zone rules information (`ZoneRules`) at a given timestamp.
+  -/
+  getLocalZoneRules : α → IO TimeZone.ZoneRules
+
+namespace TimeZone
+open Std.Time.Internal
+
+/--
+Converts a Boolean value to a corresponding `StdWall` type.
+-/
+def convertWall : Bool → StdWall
+  | true => .standard
+  | false => .wall
+
+/--
+Converts a Boolean value to a corresponding `UTLocal` type.
+-/
+def convertUt : Bool → UTLocal
+  | true => .ut
+  | false => .local
+
+/--
+Converts a given time index into a `LocalTimeType` by using a time zone (`tz`) and its identifier.
+-/
+def convertLocalTimeType (index : Nat) (tz : TZif.TZifV1) (identifier : String) : Option LocalTimeType := do
+  let localType ← tz.localTimeTypes[index]?
+  let offset := Offset.ofSeconds <| .ofInt localType.gmtOffset
+  let abbreviation := tz.abbreviations.getD index (offset.toIsoString true)
+  let wallflag := convertWall (tz.stdWallIndicators.getD index true)
+  let utLocal := convertUt (tz.utLocalIndicators.getD index true)
+
+  return {
+    gmtOffset := offset
+    isDst := localType.isDst
+    abbreviation
+    wall := wallflag
+    utLocal
+    identifier
+  }
+
+/--
+Converts a transition.
+-/
+def convertTransition (times: Array LocalTimeType) (index : Nat) (tz : TZif.TZifV1) : Option Transition := do
+  let time := tz.transitionTimes[index]!
+  let time := Second.Offset.ofInt time
+  let indice := tz.transitionIndices[index]!
+  return { time, localTimeType := times[indice.toNat]! }
+
+/--
+Converts a `TZif.TZifV1` structure to a `ZoneRules` structure.
+-/
+def convertTZifV1 (tz : TZif.TZifV1) (id : String) : Except String ZoneRules := do
+  let mut times : Array LocalTimeType := #[]
+
+  for i in *...tz.header.typecnt.toNat do
+    if let some result := convertLocalTimeType i tz id
+      then times := times.push result
+      else .error s!"cannot convert local time {i} of the file"
+
+  let mut transitions := #[]
+
+  for i in *...tz.transitionTimes.size do
+    if let some result := convertTransition times i tz
+      then transitions := transitions.push result
+      else .error s!"cannot convert transition {i} of the file"
+
+  -- Local time for timestamps before the first transition is specified by the first time
+  -- type (time type 0).
+
+  let initialLocalTimeType ←
+    if let some res := convertLocalTimeType 0 tz id
+      then .ok res
+      else .error s!"empty transitions for {id}"
+
+  .ok { transitions, initialLocalTimeType }
+
+
+/--
+Converts a `TZif.TZifV2` structure to a `ZoneRules` structure, extending transitions beyond
+the last stored entry using the POSIX TZ footer string when present.
+-/
+def convertTZifV2 (tz : TZif.TZifV2) (id : String) : Except String ZoneRules := do
+  let rules ← convertTZifV1 tz.toTZifV1 id
+
+  let some footer := tz.footer
+    | return rules
+
+  -- TZif v3 files allow extended hour ranges (±0–167) in transition times (RFC 8536 §3.3).
+  let extended := tz.header.version == '3'.toUInt8
+
+  if footer == "" then
+    return rules
+
+  match parsePosixTz footer extended with
+  | .ok transitionRule => return { rules with transitionRule := some transitionRule }
+  | .error err => throw s!"failed to parse tzif footer: {err}"
+
+/--
+Converts a `TZif.TZif` structure to a `ZoneRules` structure.
+-/
+def convertTZif (tz : TZif.TZif) (id : String) : Except String ZoneRules := do
+  if let some v2 := tz.v2
+    then convertTZifV2 v2 id
+    else convertTZifV1 tz.v1 id
+```

@@ -1,0 +1,206 @@
+# addEqStep
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:01748c7be9540d1ccd126637b04a3ad03e0ba0e09f028bf525d907dcaf9b0a5a",
+  "kind": "def",
+  "lexical_name": "addEqStep",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addeqstep--6e8d548c6731aef39fdcdce2",
+  "source": {
+    "blob": "af42767f692c69e2158ac7e9531b5cacc5371092",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 281,
+    "line": 157,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd7690a08a1bb4dd9ea9d958e9d2c601862641a12dd51e7c4e061afe04fa7a6ee.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6e8d548c6731aef39fdcdce2ffa5f77ce8674d86a0ac587cc1e1891d8e5ddef2",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd7690a08a1bb4dd9ea9d958e9d2c601862641a12dd51e7c4e061afe04fa7a6ee.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:01748c7be9540d1ccd126637b04a3ad03e0ba0e09f028bf525d907dcaf9b0a5a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 157–281.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private partial def addEqStep (lhs rhs proof : Expr) (isHEq : Bool) : GoalM Unit := do
+  let lhsNode ← getENode lhs
+  let rhsNode ← getENode rhs
+  if isSameExpr lhsNode.root rhsNode.root then
+    -- `lhs` and `rhs` are already in the same equivalence class.
+    trace_goal[grind.debug] "{← ppENodeRef lhs} and {← ppENodeRef rhs} are already in the same equivalence class"
+    return ()
+  trace_goal[grind.eqc] "{← if isHEq then mkHEq lhs rhs else mkEq lhs rhs}"
+  let lhsRoot ← getENode lhsNode.root
+  let rhsRoot ← getENode rhsNode.root
+  let mut valueInconsistency := false
+  let mut trueEqFalse := false
+  if lhsRoot.interpreted && rhsRoot.interpreted then
+    if lhsNode.root.isTrue || rhsNode.root.isTrue then
+      markAsInconsistent
+      trueEqFalse := true
+    else
+      let hasHEq := isHEq || lhsRoot.heqProofs || rhsRoot.heqProofs
+      -- **Note**: We only have to check the types if there are heterogeneous equalities.
+      if (← pure !hasHEq <||> hasSameType lhsRoot.self rhsRoot.self) then
+        valueInconsistency := true
+  if    (lhsRoot.interpreted && !rhsRoot.interpreted)
+     || (lhsRoot.ctor && !rhsRoot.ctor)
+     || (lhsRoot.size > rhsRoot.size && !rhsRoot.interpreted && !rhsRoot.ctor) then
+    go rhs lhs rhsNode lhsNode rhsRoot lhsRoot true
+  else
+    go lhs rhs lhsNode rhsNode lhsRoot rhsRoot false
+  if trueEqFalse then
+    closeGoalWithTrueEqFalse
+  unless (← isInconsistent) do
+    if lhsRoot.ctor && rhsRoot.ctor then
+      propagateCtor lhsRoot.self rhsRoot.self
+  unless (← isInconsistent) do
+    if valueInconsistency then
+      closeGoalWithValuesEq lhsRoot.self rhsRoot.self
+  trace_goal[grind.debug] "after addEqStep, {← (← get).ppState}"
+  checkInvariants
+where
+  go (lhs rhs : Expr) (lhsNode rhsNode lhsRoot rhsRoot : ENode) (flipped : Bool) : GoalM Unit := do
+    trace_goal[grind.debug] "adding {← ppENodeRef lhs} ↦ {← ppENodeRef rhs}"
+    /-
+    We have the following `target?/proof?`
+    `lhs -> ... -> lhsNode.root`
+    `rhs -> ... -> rhsNode.root`
+    We want to convert it to
+    `lhsNode.root -> ... -> lhs -*-> rhs -> ... -> rhsNode.root`
+    where step `-*->` is justified by `proof` (or `proof.symm` if `flipped := true`)
+    -/
+    invertTrans lhs
+    setENode lhs { lhsNode with
+      target? := rhs
+      proof?  := proof
+      flipped
+    }
+    let lams₁ ← getEqcLambdas lhsRoot
+    let lams₂ ← getEqcLambdas rhsRoot
+    let fns₁  ← if lams₁.isEmpty then pure #[] else getFnRoots rhsRoot.self
+    let fns₂  ← if lams₂.isEmpty then pure #[] else getFnRoots lhsRoot.self
+    let parents ← removeParents lhsRoot.self
+    updateRoots lhs rhsNode.root
+    trace_goal[grind.debug] "{← ppENodeRef lhs} new root {← ppENodeRef rhsNode.root}, {← ppENodeRef (← getRoot lhs)}"
+    reinsertParents parents
+    /-
+    Remark: we used to `propagateDown` here, but this was problematic
+    because it limits what the propagator can do because several invariants do not
+    hold until we complete all updates.
+    -/
+    -- TODO: improve performance: we only need to collect terms that may propagate.
+    let toPropagateDown ← getEqc lhs
+    setENode lhsNode.root { (← getENode lhsRoot.self) with -- We must retrieve `lhsRoot` since it was updated.
+      next := rhsRoot.next
+    }
+    setENode rhsNode.root { rhsRoot with
+      next       := lhsRoot.next
+      size       := rhsRoot.size + lhsRoot.size
+      hasLambdas := rhsRoot.hasLambdas || lhsRoot.hasLambdas
+      heqProofs  := isHEq || rhsRoot.heqProofs || lhsRoot.heqProofs
+    }
+    propagateBeta lams₁ fns₁
+    propagateBeta lams₂ fns₂
+    let toPropagateSolvers ← Solvers.mergeTerms rhsRoot lhsRoot
+    resetParentsOf lhsRoot.self
+    copyParentsTo parents rhsNode.root
+    unless (← isInconsistent) do
+      updateMT rhsRoot.self
+    unless (← isInconsistent) do
+      for parent in parents.elems do
+        propagateUp parent
+      for e in toPropagateDown do
+        propagateDown e
+      propagateUnitConstFuns lams₁ lams₂
+      toPropagateSolvers.propagate
+      if rhsNode.root.isTrue then
+        checkDelayedThmInsts toPropagateDown
+  checkDelayedThmInsts (toPropagateDown : List Expr) : GoalM Unit := do
+    if (← isInconsistent) then return ()
+    if (← get).ematch.delayedThmInsts.isEmpty then return ()
+    for e in toPropagateDown do
+      let some delayedThms := (← get).ematch.delayedThmInsts.find? { expr := e } | pure ()
+      modify fun s => { s with ematch.delayedThmInsts := s.ematch.delayedThmInsts.erase { expr := e } }
+      delayedThms.forM (·.check)
+
+  updateRoots (lhs : Expr) (rootNew : Expr) : GoalM Unit := do
+    let isFalseRoot ← isFalseExpr rootNew
+    traverseEqc lhs fun n => do
+      let n := { n with root := rootNew }
+      setENode n.self n
+      /-
+      If `n` is an equality being inserted into the `False` equivalence class,
+      we must ensure it is root `m` of its congruence class if the root is not already
+      in the `False` equivalence class.
+      This can happen when the equality `n = m` is still has to be processed. That is,
+      it is in the `newFacts` todo array.
+      A similar swap is performed at `addCongrTable`.
+      -/
+      if isFalseRoot && n.self.isAppOfArity ``Eq 3 && !n.isCongrRoot then
+        if let some { e } := (← get).congrTable.find? { e := n.self } then
+        -- If the current congruence root is already `False`, we don't need to swap
+        unless (← isFalseExpr e) do
+          -- We must swap the congruence root to ensure `isDiseq` and `getDiseqFor?` work properly
+          modify fun s => { s with congrTable := s.congrTable.insert { e := n.self } }
+          setENode n.self { n with congr := n.self }
+          setENode e { (← getENode e) with congr := n.self }
+
+/-- Ensures collection of equations to be processed is empty. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd7690a08a1bb4dd9ea9d958e9d2c601862641a12dd51e7c4e061afe04fa7a6ee.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd7690a08a1bb4dd9ea9d958e9d2c601862641a12dd51e7c4e061afe04fa7a6ee.lean#L157).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `af42767f692c69e2158ac7e9531b5cacc5371092` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

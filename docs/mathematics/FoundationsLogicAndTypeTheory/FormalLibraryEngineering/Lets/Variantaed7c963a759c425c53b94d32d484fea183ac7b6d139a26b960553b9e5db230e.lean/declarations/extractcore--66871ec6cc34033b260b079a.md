@@ -1,0 +1,156 @@
+# extractCore
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:49d9932ec4eac725ceed7213217cfd469b73de33a8f72b0b0d20aea61ca4d691",
+  "kind": "def",
+  "lexical_name": "extractCore",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "extractcore--66871ec6cc34033b260b079a",
+  "source": {
+    "blob": "f74e98679e7a7eec0aab656beedf23975b71437d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 291,
+    "line": 217,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lets/Variantaed7c963a759c425c53b94d32d484fea183ac7b6d139a26b960553b9e5db230e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:66871ec6cc34033b260b079a9b54715b5de195f7d9bf07e47dafcd2f8e119dc2",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lets/Variantaed7c963a759c425c53b94d32d484fea183ac7b6d139a26b960553b9e5db230e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:49d9932ec4eac725ceed7213217cfd469b73de33a8f72b0b0d20aea61ca4d691`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 217–291.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def extractCore (fvars : List Expr) (e : Expr) (topLevel : Bool := false) : M Expr := do
+  let cfg ← read
+  if e.isAtomic then
+    return e
+  else if !cfg.descend && !topLevel then
+    return e
+  else
+    checkCache (topLevel, (e : ExprStructEq)) fun _ => do
+      if !containsLet e then
+        return e
+      -- Don't honor `proofs := false` or `types := false` for top-level lets, since it's confusing not having them be extracted.
+      unless topLevel && (e.isLet || e.isMData) do
+        if !cfg.proofs then
+          if ← isProof e then
+            return e
+        if !cfg.types then
+          if ← isType e then
+            return e
+      let whenDescend (k : M Expr) : M Expr := do if cfg.descend then k else pure e
+      match e with
+      | .bvar .. | .fvar .. | .mvar .. | .sort .. | .const .. | .lit .. => unreachable!
+      | .mdata _ e'      => return e.updateMData! (← extractCore fvars e' (topLevel := topLevel))
+      | .letE n t v b nondep  => extractLetLike (!nondep) n t v b (topLevel := topLevel)
+      | .app ..          => whenDescend do extractApp e.getAppFn e.getAppArgs
+      | .proj _ _ s      => whenDescend do return e.updateProj! (← extractCore fvars s)
+      | .lam n t b i     => whenDescend do extractBinder n t b i (fun t b => e.updateLambda! i t b)
+      | .forallE n t b i => whenDescend do extractBinder n t b i (fun t b => e.updateForall! i t b)
+where
+  extractBinder (n : Name) (t b : Expr) (i : BinderInfo) (mk : Expr → Expr → Expr) : M Expr := do
+    let t ← extractCore fvars t
+    if (← read).underBinder then
+      withLocalDecl n i t fun x => do
+        let b ← extractCore (x :: fvars) (b.instantiate1 x)
+        if (← read).lift then
+          let toFlush ← flushDecls x.fvarId!
+          let b := mkLetDecls toFlush b
+          return mk t (b.abstract #[x])
+        else
+          return mk t (b.abstract #[x])
+    else
+      return mk t b
+  extractLetLike (isLet : Bool) (n : Name) (t v b : Expr) (topLevel : Bool) : M Expr := do
+    let cfg ← read
+    let t ← extractCore fvars t
+    let v ← extractCore fvars v
+    if cfg.usedOnly && !b.hasLooseBVars then
+      return ← extractCore fvars b (topLevel := topLevel)
+    if cfg.merge then
+      if let some fvarId := (← get).valueMap.get? v then
+        if isLet && cfg.lift then ensureIsLet fvarId
+        return ← withDeclInContext fvarId <|
+          extractCore fvars (b.instantiate1 (.fvar fvarId)) (topLevel := topLevel)
+    let (extract, n) ← isExtractableLet fvars n t v
+    if !extract && (!cfg.underBinder || !cfg.descend) then
+      return e.updateLetE! t v b
+    withLetDecl n t v fun x => do
+      if extract then
+        addDecl (← x.fvarId!.getDecl) isLet
+        extractCore fvars (b.instantiate1 x) (topLevel := topLevel)
+      else
+        let b ← extractCore (x :: fvars) (b.instantiate1 x)
+        return e.updateLetE! t v (b.abstract #[x])
+  extractApp (f : Expr) (args : Array Expr) : M Expr := do
+    let cfg ← read
+    let f' ← extractCore fvars f
+    if cfg.implicits then
+      return mkAppN f' (← args.mapM (extractCore fvars))
+    else
+      let (paramInfos, _) ← instantiateForallWithParamInfos (← inferType f) args
+      let mut args := args
+      for i in *...args.size do
+        if paramInfos[i]!.binderInfo.isExplicit then
+          args := args.set! i (← extractCore fvars args[i]!)
+      return mkAppN f' args
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lets/Variantaed7c963a759c425c53b94d32d484fea183ac7b6d139a26b960553b9e5db230e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lets/Variantaed7c963a759c425c53b94d32d484fea183ac7b6d139a26b960553b9e5db230e.lean#L217).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f74e98679e7a7eec0aab656beedf23975b71437d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

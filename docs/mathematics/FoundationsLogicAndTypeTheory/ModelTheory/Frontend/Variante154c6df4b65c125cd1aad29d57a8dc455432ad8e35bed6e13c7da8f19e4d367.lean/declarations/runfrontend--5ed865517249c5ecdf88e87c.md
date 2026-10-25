@@ -1,0 +1,226 @@
+# runFrontend
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e78adc92e2df97b44cb1e5fbbce8349e3829e5adf98cfe0d5777b84592108347",
+  "kind": "def",
+  "lexical_name": "runFrontend",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "runfrontend--5ed865517249c5ecdf88e87c",
+  "source": {
+    "blob": "ab296b81b15379f9aae54d4b49af132bc976ecbe",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 421,
+    "line": 277,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Frontend/Variante154c6df4b65c125cd1aad29d57a8dc455432ad8e35bed6e13c7da8f19e4d367.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:5ed865517249c5ecdf88e87c83fb212eb65cbe6842066b55eababc73e52b7e31",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/ModelTheory/Frontend/Variante154c6df4b65c125cd1aad29d57a8dc455432ad8e35bed6e13c7da8f19e4d367.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e78adc92e2df97b44cb1e5fbbce8349e3829e5adf98cfe0d5777b84592108347`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 277–421.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def runFrontend
+    (input : String)
+    (opts : Options)
+    (fileName : String)
+    (mainModuleName : Name)
+    (trustLevel : UInt32 := 0)
+    (oleanFileName? : Option System.FilePath := none)
+    (ileanFileName? : Option System.FilePath := none)
+    (jsonOutput : Bool := false)
+    (errorOnKinds : Array Name := #[])
+    (plugins : Array Plugin := #[])
+    (printStats : Bool := false)
+    (setup? : Option ModuleSetup := none)
+    (incrSaveFileName? : Option System.FilePath := none)
+    (incrLoadFileName? : Option System.FilePath := none)
+    (incrHeaderSaveFileName? : Option System.FilePath := none)
+    : IO (Option Environment) := do
+  let startTime := (← IO.monoNanosNow).toFloat / 1000000000
+  let inputCtx := Parser.mkInputContext input fileName
+  -- default `cmdlineSnapshots` to true (not done as default value for API back-compat reasons)
+  -- except when full-snapshotting so that enough information for resumption is available
+  let opts := Lean.internal.cmdlineSnapshots.setIfNotSet opts incrSaveFileName?.isNone
+  -- default to async elaboration; see also `Elab.async` docs
+  let opts := Elab.async.setIfNotSet opts true
+  let ctx := { inputCtx with }
+  let setup stx := do
+    if let some setup := setup? then
+      liftM <| setup.dynlibs.forM Lean.loadDynlib
+      return .ok {
+        trustLevel
+        package? := setup.package?
+        mainModuleName := setup.name
+        isModule := strictOr setup.isModule stx.isModule
+        imports := setup.imports?.getD stx.imports
+        plugins := plugins ++ setup.plugins
+        importArts := setup.importArts
+        -- override cmdline options with setup options
+        opts := opts.mergeBy (fun _ _ hOpt => hOpt) setup.options.toOptions
+      }
+    else
+      return .ok {
+        imports := stx.imports
+        isModule := stx.isModule
+        mainModuleName, opts, trustLevel, plugins
+      }
+  let old? ← incrLoadFileName?.mapM fun incrFile => do
+    let incr ← unsafe loadIncrSnapshot incrFile
+    -- A loaded snapshot may have been saved from a different file (e.g. via `--incr-header-save`
+    -- on stdin) and so bake in a different `mainModule`. Patch it to match this invocation
+    -- so generated names like `_private.<mainModule>.<hash>...` stay consistent.
+    let snap := setMainModule incr.snap mainModuleName
+    if let some res := snap.processedResult.get then
+      withImporting do
+        -- The central incr HACK:
+        -- Initializers roughly perform one of two functions: initializing their own variable, or
+        -- contributing to some IO.Ref whose value will likely end up in the environment. Any
+        -- environment changes should already be available in the loaded env, but we still need to
+        -- initialize global vars used even after the environment is assembled, so we run all
+        -- initializers. This works in practice but at least in theory, it could lead to some
+        -- divergence in behavior when strange initializers are involved.
+        unsafe Lean.runInitAttrsForModules res.cmdState.env incr.initModIdxs opts
+      -- `withImporting` resets the initializer-execution flag in `finally`, but the slow path in
+      -- `Language.Lean.process` (taken when the loaded header doesn't match the new file's
+      -- imports) calls `importModules`, which in turn requires the flag to be set. Restore it.
+      unsafe enableInitializersExecution
+    return snap
+  let processor := Language.Lean.process
+  let snap ← processor setup old? ctx
+  let snaps := Language.toSnapshotTree snap
+  let severityOverrides := errorOnKinds.foldl (·.insert · .error) {}
+
+  -- reporting should be done before any early exit from the function
+  let hasErrors ← snaps.runAndReport opts jsonOutput severityOverrides
+
+  let some cmdState := Language.Lean.waitForFinalCmdState? snap
+    | return none
+  let env := cmdState.env
+  let finalOpts := cmdState.scopes[0]!.opts
+
+  -- Saves `snapToSave` wrapped with the init-mod indices used by `runInitAttrsForModules` on load.
+  -- Writes a `<incrFile>.deps` JSON helper alongside: the dep regions grouped per module (see
+  -- `regionsToModuleArtifacts`), needed to map the snapshot back in before we can access `env`.
+  let saveSnap (incrFile : System.FilePath) (snapToSave : Language.Lean.InitialSnapshot) :
+      IO Unit := do
+    let toSave : IncrSnapshot :=
+      { snap := snapToSave, initModIdxs := getRegularInitAttrModIdxs env }
+    let compactor ← (unsafe CompactedRegion.save incrFile `_snap toSave
+      env.header.regions none (allowClosures := true))
+    let moduleArts := regionsToModuleArtifacts env.header.regions
+    IO.FS.writeFile (incrFile.addExtension "deps") (toJson moduleArts).compress
+    Runtime.forget compactor
+
+  -- save full incremental snapshot for next invocation
+  if let some incrFile := incrSaveFileName? then
+    -- Per-command `CancelToken`s are left unresolved on success; their internal `Promise`
+    -- tasks would block the compactor's `lean_task_get`. Fire them all before save.
+    -- `truncateToHeader` discards everything below the header so this isn't needed for the
+    -- header-only save below.
+    resolveCancelTokensForSave (Language.toSnapshotTree snap)
+    saveSnap incrFile snap
+
+  -- save header-only snapshot (skips elaborated command bodies)
+  if let some incrFile := incrHeaderSaveFileName? then
+    saveSnap incrFile (Language.Lean.truncateToHeader snap)
+
+  -- stats should be displayed even if there are (non-import) errors
+  if printStats then
+    env.displayStats
+
+  if hasErrors then
+    return none
+
+  if let some oleanFileName := oleanFileName? then
+    profileitIO ".olean serialization" finalOpts do
+      let commandLints := collectCommandLints snaps none #[]
+      let env ← Linter.recordLints inputCtx.fileMap env commandLints
+      writeModule (writeIR := !Compiler.compiler.postponeCompile.get finalOpts) env oleanFileName
+
+  if let some ileanFileName := ileanFileName? then
+    let trees := snaps.getAll.flatMap (match ·.infoTree? with | some t => #[t] | _ => #[])
+    let references := Lean.Server.findModuleRefs inputCtx.fileMap trees (localVars := false)
+    let (moduleRefs, decls) ← references.toLspModuleRefs
+    let ilean := {
+      module        := mainModuleName
+      directImports := Server.collectImports ⟨snap.stx⟩
+      references    := moduleRefs
+      decls
+      : Lean.Server.Ilean
+    }
+    IO.FS.writeFile ileanFileName $ Json.compress $ toJson ilean
+
+  if let some out := trace.profiler.output.get? opts then
+    let traceStates := snaps.getAll.map (·.traces)
+    let profile ← Firefox.Profile.export mainModuleName.toString startTime traceStates opts
+    IO.FS.writeFile ⟨out⟩ <| Json.compress <| toJson profile
+  else if trace.profiler.serve.get finalOpts then
+    let traceStates := snaps.getAll.map (·.traces)
+    let profile ← Firefox.Profile.export mainModuleName.toString startTime traceStates opts
+    Firefox.Profile.serve <| Json.compress <| toJson profile
+
+  -- no point in freeing the snapshot graph and all referenced data this close to process exit
+  Runtime.forget snaps
+  return some env
+
+end Lean.Elab
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/ModelTheory/Frontend/Variante154c6df4b65c125cd1aad29d57a8dc455432ad8e35bed6e13c7da8f19e4d367.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Frontend/Variante154c6df4b65c125cd1aad29d57a8dc455432ad8e35bed6e13c7da8f19e4d367.lean#L277).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ab296b81b15379f9aae54d4b49af132bc976ecbe` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

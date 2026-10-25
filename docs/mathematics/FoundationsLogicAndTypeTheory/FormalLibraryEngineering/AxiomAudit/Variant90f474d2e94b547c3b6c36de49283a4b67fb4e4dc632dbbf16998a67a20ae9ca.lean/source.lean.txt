@@ -1,0 +1,89 @@
+import Surface.ContinuousAssurance.WorldModel.Examples
+import Surface.ContinuousAssurance.WorldModel.Serialization
+import Surface.ContinuousAssurance.WorldModel.Coupling
+import Surface.ContinuousAssurance.WorldModel.Stability
+
+/-!
+# World-model foundation axiom audit
+
+The adjacent `#check`/`#print axioms` commands identify the load-bearing public
+theorems of the finite foundation without modifying the repository-wide audit.
+-/
+
+#check Surface.ContinuousAssurance.WorldModel.CanonicalMathematicalIndex.object_identifiers_unique
+#print axioms Surface.ContinuousAssurance.WorldModel.CanonicalMathematicalIndex.object_identifiers_unique
+
+#check Surface.ContinuousAssurance.WorldModel.CanonicalMathematicalIndex.declaration_refers_to_object
+#print axioms Surface.ContinuousAssurance.WorldModel.CanonicalMathematicalIndex.declaration_refers_to_object
+
+#check Surface.ContinuousAssurance.WorldModel.ObligationRecord.discharged_has_artifact
+#print axioms Surface.ContinuousAssurance.WorldModel.ObligationRecord.discharged_has_artifact
+
+#check Surface.ContinuousAssurance.WorldModel.WorldModelRegistry.no_supersession_cycle
+#print axioms Surface.ContinuousAssurance.WorldModel.WorldModelRegistry.no_supersession_cycle
+
+#check Surface.ContinuousAssurance.WorldModel.ActiveModelRegion.activeClosure_is_least_dependencyClosedRegion
+#print axioms Surface.ContinuousAssurance.WorldModel.ActiveModelRegion.activeClosure_is_least_dependencyClosedRegion
+
+#check Surface.ContinuousAssurance.WorldModel.ActiveModelRegion.Certificate.rejected_of_stale
+#print axioms Surface.ContinuousAssurance.WorldModel.ActiveModelRegion.Certificate.rejected_of_stale
+
+#check Surface.ContinuousAssurance.WorldModel.ModelTranslation.compose_authority_nonIncreasing
+#print axioms Surface.ContinuousAssurance.WorldModel.ModelTranslation.compose_authority_nonIncreasing
+
+#check Surface.ContinuousAssurance.WorldModel.CounterexampleTransport.compose_transport
+#print axioms Surface.ContinuousAssurance.WorldModel.CounterexampleTransport.compose_transport
+
+#check Surface.ContinuousAssurance.WorldModel.exact_certificate_has_inverse
+#print axioms Surface.ContinuousAssurance.WorldModel.exact_certificate_has_inverse
+
+#check Surface.ContinuousAssurance.WorldModel.illustrative_then_theoremTransport_rejected
+#print axioms Surface.ContinuousAssurance.WorldModel.illustrative_then_theoremTransport_rejected
+
+#check Surface.ContinuousAssurance.WorldModel.ExactLocusAssignment.active_model_has_finite_exact_locus
+#print axioms Surface.ContinuousAssurance.WorldModel.ExactLocusAssignment.active_model_has_finite_exact_locus
+
+#check Surface.ContinuousAssurance.WorldModel.carrier_adjacency_not_semantic_compatibility
+#print axioms Surface.ContinuousAssurance.WorldModel.carrier_adjacency_not_semantic_compatibility
+
+#check Surface.ContinuousAssurance.WorldModel.FiniteWorldModelPresheaf.restriction_composition
+#print axioms Surface.ContinuousAssurance.WorldModel.FiniteWorldModelPresheaf.restriction_composition
+
+#check Surface.ContinuousAssurance.WorldModel.FiniteDescentCapability.glued_section_unique
+#print axioms Surface.ContinuousAssurance.WorldModel.FiniteDescentCapability.glued_section_unique
+
+#check Surface.ContinuousAssurance.WorldModel.Cech.d1_d0
+#print axioms Surface.ContinuousAssurance.WorldModel.Cech.d1_d0
+
+#check Surface.ContinuousAssurance.WorldModel.Cech.coboundary_is_cocycle
+#print axioms Surface.ContinuousAssurance.WorldModel.Cech.coboundary_is_cocycle
+
+#check Surface.ContinuousAssurance.WorldModel.zero_defect_not_compatibility_theorem
+#print axioms Surface.ContinuousAssurance.WorldModel.zero_defect_not_compatibility_theorem
+
+#check Surface.ContinuousAssurance.WorldModel.prototypeRegistry_card
+#print axioms Surface.ContinuousAssurance.WorldModel.prototypeRegistry_card
+
+#check Surface.ContinuousAssurance.WorldModel.ModelTranslation.ofEquiv_apply_inverse
+#print axioms Surface.ContinuousAssurance.WorldModel.ModelTranslation.ofEquiv_apply_inverse
+
+#check Surface.ContinuousAssurance.WorldModel.CanonicalIndexSerializer.round_trip
+#print axioms Surface.ContinuousAssurance.WorldModel.CanonicalIndexSerializer.round_trip
+
+#check Surface.ContinuousAssurance.WorldModel.CanonicalIndexSerializer.encode_injective
+#print axioms Surface.ContinuousAssurance.WorldModel.CanonicalIndexSerializer.encode_injective
+
+#check Surface.ContinuousAssurance.WorldModel.DeclarationSourceDigestObservation.rejected_of_stale
+#print axioms Surface.ContinuousAssurance.WorldModel.DeclarationSourceDigestObservation.rejected_of_stale
+
+#check Surface.ContinuousAssurance.WorldModel.CanonicalIndexSupersessionLedger.no_cycle
+#print axioms Surface.ContinuousAssurance.WorldModel.CanonicalIndexSupersessionLedger.no_cycle
+
+#check Surface.ContinuousAssurance.WorldModel.proof_stable_under_representation_migration
+#print axioms Surface.ContinuousAssurance.WorldModel.proof_stable_under_representation_migration
+
+#check Surface.ContinuousAssurance.WorldModel.proof_stable_under_dependency_update
+#print axioms Surface.ContinuousAssurance.WorldModel.proof_stable_under_dependency_update
+
+#check Surface.ContinuousAssurance.WorldModel.ProjectedGradientTrajectory.subdiffusive_displacement_le_of_projected_updates
+#print axioms Surface.ContinuousAssurance.WorldModel.ProjectedGradientTrajectory.subdiffusive_displacement_le_of_projected_updates

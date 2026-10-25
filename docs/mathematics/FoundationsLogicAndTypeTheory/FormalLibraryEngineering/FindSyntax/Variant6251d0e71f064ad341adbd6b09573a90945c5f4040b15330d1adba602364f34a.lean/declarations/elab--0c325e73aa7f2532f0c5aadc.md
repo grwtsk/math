@@ -1,0 +1,112 @@
+# Anonymous elab
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:7e46bd8fbe8934acd7ee0c826de251954925597128e8ff6200eb7e3822489de6",
+  "kind": "elab",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "elab--0c325e73aa7f2532f0c5aadc",
+  "source": {
+    "blob": "ff85b46c91d60f8431405ab3aac98e7545357952",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 105,
+    "line": 75,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FindSyntax/Variant6251d0e71f064ad341adbd6b09573a90945c5f4040b15330d1adba602364f34a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:0c325e73aa7f2532f0c5aadc88b945da200d533974bd8b78fa4eabb7b9e98d16",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FindSyntax/Variant6251d0e71f064ad341adbd6b09573a90945c5f4040b15330d1adba602364f34a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `elab` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:7e46bd8fbe8934acd7ee0c826de251954925597128e8ff6200eb7e3822489de6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 75–105.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+elab "#find_syntax " id:str d:(&" approx")? : command => do
+  let prsr : Array Expr := #[.const ``ParserDescr [], .const ``TrailingParserDescr []]
+  let mut symbs : Std.HashSet (Name × Array Expr) := {}
+  -- We scan the environment in search of "parsers" whose name is not internal and that
+  -- contain some `symbol` information and we store them in `symbs`
+  for (declName, cinfo) in (← getEnv).constants do
+    if prsr.contains cinfo.type && cinfo.hasValue then
+      let ls := extractSymbols cinfo.value!
+      if !declName.isInternal && !ls.isEmpty then symbs := symbs.insert (declName, ls)
+  -- From among the parsers in `symbs`, we extract the ones whose `symbols` contain the input `str`
+  let mut match_results : NameMap (Array (Name × String)) := {}
+  for (nm, ar) in symbs.toList do
+    let rem : String := " _ ".intercalate (ar.map litToString).toList
+    -- If either the name of the parser or the regenerated syntax stub contains the input string,
+    -- then we include an entry into the final message.
+    if 2 ≤ (nm.toString.splitOn id.getString).length || 2 ≤ (rem.splitOn id.getString).length then
+      let mod := (← findModuleOf? nm).getD (← getMainModule)
+      match_results := match_results.insert mod <| (match_results.findD mod #[]).push (nm, rem.trim)
+  -- We sort the messages to produce a more stable output.
+  let sorted_results := match_results.toArray.qsort (·.1.lt ·.1)
+  let sorted_results := sorted_results.map fun (mod, msgs) => (mod, msgs.qsort (·.1.lt ·.1))
+  let mods := (sorted_results.toList).map fun (mod, msgs) =>
+    m!"In `{mod}`:" ++ (MessageData.nest 2 <|
+      m!"".joinSep <| msgs.toList.map fun (decl, patt) =>
+        m!"\n{MessageData.ofConstName decl}: '{patt}'")
+  let uses := (sorted_results.toList.map fun (_, msgs) => msgs.size).sum
+  let numSymbs := if d.isSome then s!"over {(symbs.size / 100) * 100}" else s!"{symbs.size}"
+  let head := m!"Found {uses} use{if uses == 1 then "" else "s"} \
+                among {numSymbs} syntax declarations"
+  logInfo <| head ++ m!"\n" ++ m!"\n\n".joinSep mods
+end Mathlib.FindSyntax
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FindSyntax/Variant6251d0e71f064ad341adbd6b09573a90945c5f4040b15330d1adba602364f34a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FindSyntax/Variant6251d0e71f064ad341adbd6b09573a90945c5f4040b15330d1adba602364f34a.lean#L75).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ff85b46c91d60f8431405ab3aac98e7545357952` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

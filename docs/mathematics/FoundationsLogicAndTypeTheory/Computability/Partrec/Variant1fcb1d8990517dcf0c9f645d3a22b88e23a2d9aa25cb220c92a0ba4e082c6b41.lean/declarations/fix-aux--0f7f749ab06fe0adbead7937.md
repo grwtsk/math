@@ -1,0 +1,142 @@
+# fix_aux
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "4c4c27318b14650076b1ae7bf38970b895d8d90b",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 720,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/1f/1fcb1d8990517dcf0c9f645d3a22b88e23a2d9aa25cb220c92a0ba4e082c6b41.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:694b063d-c211-c7f3-1144-90df20228399",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:a9f0053e-b0c4-91bc-d60c-4919dee062c6",
+  "kind": "theorem",
+  "lexical_name": "fix_aux",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "fix-aux--0f7f749ab06fe0adbead7937",
+  "source": {
+    "blob": "4c4c27318b14650076b1ae7bf38970b895d8d90b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 768,
+    "line": 720,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/Computability/Partrec/Variant1fcb1d8990517dcf0c9f645d3a22b88e23a2d9aa25cb220c92a0ba4e082c6b41.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:0f7f749ab06fe0adbead793768fd649d4134ce7bd60d9ea6d8fcc45b4b93370a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/Computability/Partrec/Variant1fcb1d8990517dcf0c9f645d3a22b88e23a2d9aa25cb220c92a0ba4e082c6b41.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:a9f0053e-b0c4-91bc-d60c-4919dee062c6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 720–768.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+theorem fix_aux {α σ} (f : α →. σ ⊕ α) (a : α) (b : σ) :
+    let F : α → ℕ →. σ ⊕ α := fun a n =>
+      n.rec (some (Sum.inr a)) fun _ IH => IH.bind fun s => Sum.casesOn s (fun _ => Part.some s) f
+    (∃ n : ℕ,
+        ((∃ b' : σ, Sum.inl b' ∈ F a n) ∧ ∀ {m : ℕ}, m < n → ∃ b : α, Sum.inr b ∈ F a m) ∧
+          Sum.inl b ∈ F a n) ↔
+      b ∈ PFun.fix f a := by
+  intro F; refine ⟨fun h => ?_, fun h => ?_⟩
+  · rcases h with ⟨n, ⟨_x, h₁⟩, h₂⟩
+    have : ∀ m a', Sum.inr a' ∈ F a m → b ∈ PFun.fix f a' → b ∈ PFun.fix f a := by
+      intro m a' am ba
+      induction m generalizing a' with simp [F] at am
+      | zero => rwa [← am]
+      | succ m IH =>
+        rcases am with ⟨a₂, am₂, fa₂⟩
+        exact IH _ am₂ (PFun.mem_fix_iff.2 (Or.inr ⟨_, fa₂, ba⟩))
+    cases n <;> simp [F] at h₂
+    #adaptation_note /-- Before https://github.com/leanprover/lean4/pull/13166
+    (replacing grind's canonicalizer with a type-directed normalizer), `grind` closed this goal
+    without the `obtain`/`specialize`. It is not yet clear whether this is due to defeq abuse
+    in Mathlib or a problem in the new canonicalizer; a minimization would help. The original
+    proof was:
+    ```
+    have := h₁ (Nat.lt_succ_self _)
+    grind [mem_unique, PFun.mem_fix_iff]
+    ```
+    -/
+    obtain ⟨c, hc⟩ := h₁ (Nat.lt_succ_self _)
+    specialize this _ _ hc
+    grind [mem_unique, PFun.mem_fix_iff]
+  · suffices ∀ a', b ∈ PFun.fix f a' → ∀ k, Sum.inr a' ∈ F a k →
+        ∃ n, Sum.inl b ∈ F a n ∧ ∀ m < n, k ≤ m → ∃ a₂, Sum.inr a₂ ∈ F a m by
+      rcases this _ h 0 (by simp [F]) with ⟨n, hn₁, hn₂⟩
+      exact ⟨_, ⟨⟨_, hn₁⟩, fun {m} mn => hn₂ m mn (Nat.zero_le _)⟩, hn₁⟩
+    intro a₁ h₁
+    apply @PFun.fixInduction _ _ _ _ _ _ h₁
+    intro a₂ h₂ IH k hk
+    rcases PFun.mem_fix_iff.1 h₂ with (h₂ | ⟨a₃, am₃, _⟩)
+    · refine ⟨k.succ, ?_, fun m mk km => ⟨a₂, ?_⟩⟩
+      · simpa [F] using Or.inr ⟨_, hk, h₂⟩
+      · rwa [le_antisymm (Nat.le_of_lt_succ mk) km]
+    · rcases IH _ am₃ k.succ (by simpa [F] using ⟨_, hk, am₃⟩) with ⟨n, hn₁, hn₂⟩
+      #adaptation_note /-- Before https://github.com/leanprover/lean4/pull/13166
+      (replacing grind's canonicalizer with a type-directed normalizer),
+      the `clear_value F` was not required here. -/
+      clear_value F
+      grind
+
+set_option backward.isDefEq.respectTransparency false in
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/Computability/Partrec/Variant1fcb1d8990517dcf0c9f645d3a22b88e23a2d9aa25cb220c92a0ba4e082c6b41.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/Computability/Partrec/Variant1fcb1d8990517dcf0c9f645d3a22b88e23a2d9aa25cb220c92a0ba4e082c6b41.lean#L720).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4c4c27318b14650076b1ae7bf38970b895d8d90b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

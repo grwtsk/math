@@ -1,0 +1,87 @@
+# RawCode.appendTall_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:75df4011-1531-0fa2-45a9-57f7d57ef300",
+  "kind": "theorem",
+  "lexical_name": "RawCode.appendTall_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "rawcode-appendtall-eq--124a2006da7ea5b6b7dcc5b6",
+  "source": {
+    "blob": "9a4f6ba52cee1b237312e6506a51104dda240a0c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 91,
+    "line": 86,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/Syntax/Variantae6b684eef5124c724f3108f311da613d99640b717fe0ec9d0f045140889e249.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:124a2006da7ea5b6b7dcc5b6f3776d9c5e688c6b7b01b070d4f8d5ad5f7dd19a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/SetTheory/Syntax/Variantae6b684eef5124c724f3108f311da613d99640b717fe0ec9d0f045140889e249.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:75df4011-1531-0fa2-45a9-57f7d57ef300`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 86–91.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+@[simp] theorem RawCode.appendTall_eq
+    (left right : Nat) :
+    RawCode.appendTall left right =
+      .tall (left + right) :=
+  rfl
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/SetTheory/Syntax/Variantae6b684eef5124c724f3108f311da613d99640b717fe0ec9d0f045140889e249.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/Syntax/Variantae6b684eef5124c724f3108f311da613d99640b717fe0ec9d0f045140889e249.lean#L86).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9a4f6ba52cee1b237312e6506a51104dda240a0c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

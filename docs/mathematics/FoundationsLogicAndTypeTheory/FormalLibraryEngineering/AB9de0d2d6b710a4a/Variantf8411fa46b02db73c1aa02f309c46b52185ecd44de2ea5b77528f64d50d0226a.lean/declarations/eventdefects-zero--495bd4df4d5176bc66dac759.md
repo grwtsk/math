@@ -1,0 +1,88 @@
+# EventDefects.zero
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:d5898fc0e4543e8a1c8e07f473e1067d41634a6de510318e9487e30f1fff19a3",
+  "kind": "def",
+  "lexical_name": "EventDefects.zero",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "eventdefects-zero--495bd4df4d5176bc66dac759",
+  "source": {
+    "blob": "50b71d809f737e858b67dd51a03062e6a9a44143",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 16,
+    "line": 10,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AB9de0d2d6b710a4a/Variantf8411fa46b02db73c1aa02f309c46b52185ecd44de2ea5b77528f64d50d0226a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:495bd4df4d5176bc66dac75933d5f0d52b75f82273376c8d2189239b264a8ea9",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AB9de0d2d6b710a4a/Variantf8411fa46b02db73c1aa02f309c46b52185ecd44de2ea5b77528f64d50d0226a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:d5898fc0e4543e8a1c8e07f473e1067d41634a6de510318e9487e30f1fff19a3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 10–16.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def EventDefects.zero : EventDefects where
+  cycleDefect := 0
+  twistedClassDefect := 0
+  cycleDefectNonnegative := le_rfl
+  twistedClassDefectNonnegative := le_rfl
+
+end Mathematics.Trajectory
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AB9de0d2d6b710a4a/Variantf8411fa46b02db73c1aa02f309c46b52185ecd44de2ea5b77528f64d50d0226a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AB9de0d2d6b710a4a/Variantf8411fa46b02db73c1aa02f309c46b52185ecd44de2ea5b77528f64d50d0226a.lean#L10).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `50b71d809f737e858b67dd51a03062e6a9a44143` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

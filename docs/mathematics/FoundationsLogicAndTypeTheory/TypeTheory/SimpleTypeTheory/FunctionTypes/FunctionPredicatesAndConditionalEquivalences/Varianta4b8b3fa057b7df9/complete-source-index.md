@@ -1,0 +1,15 @@
+# Varianta4b8b3fa057b7df9 — complete source
+
+[Complete source index](../../../../../../complete-source-index.md)
+
+**2 source modules · 11 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [ComparisonPredicatesAndComposition.lean](ComparisonPredicatesAndComposition.lean/index.md) | module |
+| [EquivalenceFromSuppliedBijectivity.lean](EquivalenceFromSuppliedBijectivity.lean/index.md) | module |

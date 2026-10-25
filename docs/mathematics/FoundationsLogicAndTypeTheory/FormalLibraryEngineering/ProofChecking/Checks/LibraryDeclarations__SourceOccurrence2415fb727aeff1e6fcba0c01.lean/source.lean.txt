@@ -1,0 +1,1559 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.Logic.Inference.FiniteRuleExamples
+import GRWTSK.Logic.Locality.FiniteRuleTransport
+import GRWTSK.Logic.Inference.FiniteRuleSystems
+import GRWTSK.NumberTheory.Moebius.EnergyGrowthEquivalences
+import GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity
+import GRWTSK.NumberTheory.Moebius.DiagonalEnergyBounds
+import GRWTSK.NumberTheory.Moebius.WeightedIntegralEnergy
+import GRWTSK.NumberTheory.Moebius.MeanSquareGrowth
+import GRWTSK.NumberTheory.Zeta.HolomorphicFilteredReciprocal
+import GRWTSK.Analysis.InnerProductSpace.CausalResponseGram
+import GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth
+import GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse
+import GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy
+import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
+import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries
+import GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums
+import GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria
+import GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral
+import GRWTSK.NumberTheory.Moebius.SignedIntegralSectorBounds
+import GRWTSK.NumberTheory.Moebius.SectorEssentialSuprema
+import GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget
+import GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability
+import GRWTSK.Analysis.Complex.VerticalReflection
+import GRWTSK.Order.Closure.FiniteDependencyClosure
+import GRWTSK.Order.Closure.FiniteDependencyExamples
+import GRWTSK.Logic.Certificates.ProofCoverage
+import GRWTSK.Logic.Certificates.BatchVerification
+import GRWTSK.Logic.Certificates.BatchVerificationExamples
+import GRWTSK.Logic.Certificates.ModelExamples
+import GRWTSK.Logic.Locality.RevisionCertificates
+import GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationExamples
+import GRWTSK.DynamicalSystems.TransitionSystems.CertifiedPartialMaps
+import GRWTSK.Logic.Certificates.DependencyRevision
+import GRWTSK.Analysis.Inequalities.FiniteShiftedDerivativeBounds
+import GRWTSK.Analysis.ErrorBounds.PartialMapComposition
+import GRWTSK.Logic.Certificates.AnchoredBatchVerification
+import GRWTSK.Logic.Certificates.AnchoredDependencyRevision
+import GRWTSK.Logic.Locality.AnchoredCertificates
+import GRWTSK.DynamicalSystems.TransitionSystems.AnchoredReinitialization
+import GRWTSK.DynamicalSystems.TransitionSystems.AnchoredVerificationReachability
+import GRWTSK.DynamicalSystems.TransitionSystems.StateReinitialization
+import GRWTSK.DynamicalSystems.TransitionSystems.BudgetResetCounterexamples
+import GRWTSK.DynamicalSystems.TransitionSystems.StateReinitializationExamples
+import GRWTSK.Logic.Certificates.DependencyRevisionExamples
+import GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachability
+import GRWTSK.DynamicalSystems.TransitionSystems.VerificationReachabilityExamples
+import GRWTSK.Analysis.Inequalities.DiscreteEnergyBalance
+import GRWTSK.NumberTheory.Chebyshev.CompactProfileExplicitFormula
+import GRWTSK.Analysis.Integration.CompactPolynomialMoments
+import GRWTSK.Analysis.Distribution.CompactProfileDilation
+import GRWTSK.Analysis.InnerProductSpace.DilationGram
+import GRWTSK.Analysis.Convolution.CompactProfileHigherDerivatives
+import GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation
+import GRWTSK.Analysis.InnerProductSpace.CompactResidualNormalization
+import GRWTSK.Analysis.Convolution.CompactProfileCorrelation
+import GRWTSK.Analysis.Calculus.CompactPolynomialDerivatives
+import GRWTSK.Analysis.Calculus.CompactProfileBoundaryCounterexamples
+import GRWTSK.NumberTheory.Chebyshev.CompactProfilePairingIntegrability
+import GRWTSK.Analysis.Distribution.WeakSecondDerivativeUniqueness
+import GRWTSK.NumberTheory.Zeta.PoleRegularization
+set_option linter.hashCommand false
+open GRWTSK.ProofHorizon.CorkscrewChamberCap
+#check @guard_preserves_safe
+#check @reachable_safe
+#check @reachable_obligation_retention
+#check @no_infinite_guarded_trajectory
+#check @finite_to_uniform
+#check @conditional_to_terminal
+#check @FramedPort.composition_observation
+#check @FramedPort.comp_defect_bound
+#check @RankLosingReduction.packet_injective
+#check @SignedWorkLedger.finite_balance
+#check @SignedWorkLedger.energy_le_of_cumulativeSupplyBound
+#check @signed_readout_reconstruction
+#check @critical_line_of_defect_vanishing
+#check @guard_of_terminal_caps
+#check @admitted_traversal_safe_and_accounted
+#check @admitted_traversal_retains_obligation
+#check @RevisionCertificate.current_target
+#check @mem_affectedClosure_iff
+#check @correction_preserves_safe
+#check @revision_verified_to_terminal
+#check @correctMany_safe
+#check @correction_reachable_history
+#check @fresh_controller_safe
+#check @admitted_session_advance_safe
+#check @mem_supportedClaims_iff
+#check @certified_supported_target
+#check @admission_preserves_safe
+#check @admitted_certificate_target
+#check @workflow_safe
+#check @workflow_verified_target
+#check @ArithmeticPickupSource.material_integral_eq_finite
+#check @ArithmeticPickupSource.pickup_original_reset
+#check @ArithmeticPickupSource.WholePickupPoly
+#check @ArithmeticPickupSource.pickup_reset_signed_bound
+#check @ArithmeticPickupEnergy.energy_eq_diagonal_add_cross
+#check @ArithmeticPickupEnergy.PickupEnergyBudgets
+#check @ArithmeticPickupGram.signedSignal_integral_square_eq_quadraticForm
+#check @ArithmeticPickupGram.actual_cross_lower_bound
+#check @ArithmeticSupplier.OriginalSupplierEstimate
+#check @ArithmeticSupplier.whole_pickup_poly_supplies_original
+#check @ArithmeticPickupDiagonal.diagonal_polynomial_bound
+#check @ArithmeticPickupBudget.whole_pickup_poly_iff_budgets
+#check @ArithmeticSupplierMeter.real_meter_le_iff
+#check @ArithmeticSupplierMeter.original_supplier_estimate_iff_real_meter
+#check @ArithmeticPickupContinuity.pickup_continuous
+#check @ArithmeticPickupContinuity.positive_envelope_attained
+#check @AlternativeLocality.computed_support_replay_target
+#check @AlternativeLocality.HostileFixture.no_union_revision_certificate
+#check @ArithmeticPickupEnergyGrowth.cross_poly_iff_energy_poly
+#check @ArithmeticPickupLaplaceAtom.laplace_response_integral_cpow
+#check @ArithmeticPickupLaplaceSum.inventory_laplace_signal_integral
+#check @ArithmeticPickupLaplaceGrowth.whole_pickup_poly_laplace_holomorphic
+#check @ReplayEvidence.ReplayCertificate.current_target
+#check @ReplayEvidence.ofGrounded
+#check @ReplayEvidence.HostileFixture.replayQ_has_no_global_certificate
+#check @ArithmeticPickupLaplaceInfinite.original_pickup_laplace_zeta_identity
+#check @ZetaPoleRegularization.regularized_product_identity
+#check @ArithmeticPickupLaplaceEnergy.energy_poly_laplace_holomorphic
+#check @ArithmeticPickupRHConsumer.whole_pickup_poly_implies_rh
+#check @ArithmeticPickupRHConsumer.energy_poly_implies_rh
+#check @ArithmeticPickupRHConsumer.cross_poly_implies_rh
+#check @ReplayAdmissionModel.replay_admission_preserves_safe
+#check @ReplayCorrection.replay_correctMany_safe
+#check @ReplayRestart.start_replay_session_safe
+#check @RestartBudgetBoundary.arbitrarily_many_safe_positive_cost_rounds
+#check @ReplayWorkflowModel.replay_workflow_safe
+#check @ArithmeticPickupFilterConsumer.AnalyticPickupFilter.implies_rh
+open ArithmeticPickupFilterConsumer.FrequencyAxisFixture
+namespace GRWTSK.ProofHorizon.CorkscrewChamberCap.GroundedReplayFixture
+#check schema
+#check policy
+#check replayP
+#check replayQ
+#check replay_P_reads
+#check replay_Q_reads
+#check recordP
+#check recordQ
+#check batchRecords
+#check baseLedger
+#check base_revision_safe
+#check initialLedger
+#check initial_replay_safe
+#check batchAdmission
+#check admittedLedger
+#check admitted_replay_safe
+#check admitted_status
+#check admitted_current_target
+#check admitted_archive_exact
+#check admitted_base_not_revision_safe
+#check same_footprint_Q_global_blocked
+#check config
+#check session
+#check restarted_safe
+#check restarted_history_exact
+#check restarted_has_no_effects
+#check unreadChange
+#check readChange
+#check unread_change_tokens
+#check unread_change_affected_empty
+#check read_change_affected_all
+#check unreadLedger
+#check changedLedger
+#check unread_corrected_safe
+#check changed_corrected_safe
+#check unread_verified_all
+#check unread_current_targets
+#check changed_status
+#check Q_true_but_reopened
+#check correction_archives_literal
+end GRWTSK.ProofHorizon.CorkscrewChamberCap.GroundedReplayFixture
+
+#check @SourceResidual.clipped_zero_hasDerivAt
+#check @SourceResidual.clipped_profile_hasDerivAt
+#check @SourceResidual.bump_polynomial_hasDerivAt
+#check @SourceResidual.bump_first_polynomial_hasDerivAt
+#check @SourceResidual.bump_second_polynomial_hasDerivAt
+#check @SourceResidual.bump_hasDerivAt
+#check @SourceResidual.bump_first_hasDerivAt
+#check @SourceResidual.bump_second_hasDerivAt
+#check @SourceResidual.bump_deriv
+#check @SourceResidual.bump_second_deriv
+#check @SourceResidual.bump_continuous
+#check @SourceResidual.bump_second_continuous
+#check @SourceResidual.source_hasDerivAt
+#check @SourceResidual.sourceFirst_hasDerivAt
+#check @SourceResidual.source_deriv
+#check @SourceResidual.source_second_deriv
+#check @SourceResidual.sourceResidual_eq
+#check @SourceResidual.sourceResidual_continuous
+#check @SourceResidual.scaled_mem_iff
+#check @SourceResidual.sourceResidual_eq_ite
+#check @SourceResidual.source_first_zero_outside
+#check @SourceResidual.source_second_zero_outside
+#check @SourceResidual.source_first_endpoints_zero
+#check @SourceResidual.source_second_endpoints_zero
+#check @SourceResidual.sourceResidual_zero_eq
+#check @SourceResidual.sourceResidual_endpoints_zero
+#check @SourceResidual.sourceResidual_zero_outside
+#check @SourceResidual.sourceResidual_hasCompactSupport
+#check @SourceResidual.sourceResidual_square_integrable
+#check @SourceNormalization.source_normalization_nonneg
+#check @SourceNormalization.source_normalization_pos_of_analytic
+#check @SourceNormalization.residual_center_negative_of_formula
+#check @SourceNormalization.source_normalization_pos
+#check @SourceNormalization.source_normalization_pos_of_one_le
+#check @SourceNormalization.normalized_source_continuous
+#check @SourceNormalization.normalized_source_square
+#check @SourceNormalization.normalized_source_square_integral
+#check @SourceNormalization.normalized_source_square_integrable
+#check @SourceNormalization.correlation_center_eq_one
+#check @SourceNormalization.normalized_source_square_integrable_of_pos
+#check @SourceNormalization.normalized_source_square_integral_of_pos
+#check @SourceNormalization.correlation_center_eq_one_of_pos
+#check @SourceNormalization.correlation_center_eq_one_of_one_le
+#check @SourceNormalization.normalized_source_eq_zero_of_normalization_zero
+#check @SourceNormalization.correlation_eq_zero_of_normalization_zero
+#check @SourceNormalization.source_residual_zero_scale
+#check @SourceNormalization.source_normalization_zero_scale
+#check @SourceNormalization.correlation_zero_scale
+#check @SourceNormalization.correlation_center_exact
+#check @SourceGram.normalized_source_measurable
+#check @SourceGram.source_gram_eq_integral
+#check @SourceGram.source_gram_symm
+#check @SourceGram.source_vector_memLp
+#check @SourceGram.source_vectors_product_integrable
+#check @SourceGram.source_gram_diagonal
+#check @SourceGram.source_gram_diagonal_eq_one
+#check @SourceGram.finite_weighted_source_square
+#check @SourceGram.finite_source_energy_eq_gram
+#check @SourceGram.finite_weighted_source_square_integrable
+#check @SourceGram.finite_source_gram_nonnegative
+#check @SourceGram.source_energy_eq_gram
+#check @SourceGram.source_energy_nonnegative
+#check @SourceGram.source_gram_matrix_positive_semidefinite
+#check @SourceClosedNormalization.monomial_primitive_hasDerivAt
+#check @SourceClosedNormalization.square_primitive_hasDerivAt
+#check @SourceClosedNormalization.unscaled_square_integral
+#check @SourceClosedNormalization.source_amplitude_square
+#check @SourceClosedNormalization.source_normalization_eq_interval
+#check @SourceClosedNormalization.source_normalization_eq_rational
+#check @SourceClosedNormalization.source_eq_scaled_bump
+#check @SourceClosedNormalization.dilation_test_eq_residual
+#check @SourceClosedNormalization.normalized_test_eq_source
+#check @SourceClosedNormalization.source_pairing_correlation_eq
+#check @SourceRegularity.bump_third_continuous
+#check @SourceRegularity.sourceSecond_hasDerivAt
+#check @SourceRegularity.residual_hasDerivAt
+#check @SourceRegularity.residual_first_continuous
+#check @SourceRegularity.residual_contDiff_one
+#check @SourceRegularity.normalized_source_contDiff_one
+#check @SourceRegularity.normalized_source_zero_outside
+#check @SourceRegularity.normalized_source_hasCompactSupport
+#check @SourceRegularity.normalized_source_integrable
+#check @SourceRegularity.reflected_source_contDiff_one
+#check @SourceRegularity.reflected_source_hasCompactSupport
+#check @SourceRegularity.correlation_eq_convolution
+#check @SourceRegularity.correlation_contDiff_one
+#check @SourceRegularity.correlation_deriv_eq_convolution
+#check @SourceRegularity.correlation_deriv_contDiff_one
+#check @SourceRegularity.correlation_contDiff_two
+#check @SourceRegularity.reflected_source_deriv
+#check @SourceRegularity.correlation_second_deriv_eq_integral
+#check @SourceRegularity.polarity_kernel_continuous
+#check @SourceRegularity.correlation_zero_of_two_mul_lt
+#check @SourceRegularity.correlation_eventually_zero
+#check @SourceRegularity.correlation_derivatives_zero_of_two_mul_lt
+#check @SourceRegularity.polarity_kernel_zero_of_upper_tail
+#check @SourceRegularity.correlation_hasCompactSupport
+#check @SourceRegularity.correlation_deriv_integrable
+#check @SourceRegularity.correlation_second_deriv_integrable
+#check @SourceRegularity.polarity_kernel_integrable
+#check @SourceRegularity.polarity_kernel_zero_of_empty_inventory
+#check @SourceRegularity.strict_sector_empty_of_small_scale
+#check @SourceNativeSeparation.native_touching_diagonal_zero
+#check @SourceNativeSeparation.touching_atom_in_inventory
+#check @SourceNativeSeparation.native_touching_ne_prescribed
+#check @SourceNativeSeparation.positive_horizon_obstruction
+#check @SourceNativeSeparation.prescribed_horizon_obstruction
+#check @SourceSignedIntegrability.chebyshev_prime_power_nonneg
+#check @SourceSignedIntegrability.chebyshev_prime_power_monotone
+#check @SourceSignedIntegrability.error_profile_measurable
+#check @SourceSignedIntegrability.error_profile_bound
+#check @SourceSignedIntegrability.source_weight_continuous
+#check @SourceSignedIntegrability.signed_pairing_integrable
+#check @SourceDilation.source_continuous
+#check @SourceDilation.source_first_continuous
+#check @SourceDilation.source_second_continuous
+#check @SourceDilation.source_hasCompactSupport
+#check @SourceDilation.source_first_hasCompactSupport
+#check @SourceDilation.source_second_hasCompactSupport
+#check @SourceDilation.compact_product_integrable
+#check @SourceDilation.actual_weak_second_derivative
+#check @SourceDilation.exponential_hasDerivAt
+#check @SourceDilation.second_derivative_exponential_integral
+#check @SourceDilation.normalized_source_exponential_integrable
+#check @SourceDilation.residual_exponential_integral_zero
+#check @SourceDilation.normalized_source_exponential_integral_zero
+#check @SourceDilation.positive_pole_integral_zero
+#check @SourceDilation.negative_pole_integral_zero
+#check @SourceDilation.actualDilationRealization
+namespace GRWTSK.ProofHorizon.CorkscrewChamberCap
+#print axioms guard_preserves_safe
+#print axioms reachable_safe
+#print axioms reachable_obligation_retention
+#print axioms guarded_steps_receipts_append
+#print axioms no_infinite_guarded_trajectory
+#print axioms finite_to_uniform
+#print axioms conditional_to_terminal
+#print axioms uniform_to_terminal
+namespace FramedPort
+#print axioms composition_observation
+#print axioms comp_defect_bound
+#print axioms comp_residual_assoc
+end FramedPort
+namespace RankLosingReduction
+#print axioms packet_injective
+end RankLosingReduction
+namespace SignedWorkLedger
+#print axioms finite_balance
+#print axioms energy_le_of_cumulativeSupplyBound
+end SignedWorkLedger
+#print axioms signed_readout_reconstruction
+#print axioms gram_residual_nonnegative
+#print axioms critical_packet_injective
+#print axioms critical_line_of_defect_vanishing
+#print axioms guard_of_terminal_caps
+#print axioms verified_to_terminal_cap
+#print axioms admitted_traversal_safe_and_accounted
+#print axioms admitted_traversal_retains_obligation
+namespace Fixtures
+#print axioms finite_check_does_not_supply_coverage
+#print axioms conditional_cap_keeps_missing_premise
+#print axioms theorem_does_not_grant_rights
+#print axioms positive_transition_preserves_safe
+#print axioms false_obligation_rejected
+#print axioms forbidden_effect_rejected
+#print axioms coefficient_orthogonality_keeps_mixed_terms
+#print axioms determinant_one_does_not_force_identity
+end Fixtures
+namespace RevisionCertificate
+#print axioms current_target
+#print axioms stale_read_rejects
+#print axioms to_terminal
+end RevisionCertificate
+namespace FreshnessFixtures
+#print axioms stale_true_claim_rejected
+end FreshnessFixtures
+#print axioms affectedClosure_least
+#print axioms mem_affectedClosure_iff
+#print axioms affectedClosure_idempotent
+#print axioms mem_correctionAffected_iff
+#print axioms correction_preserves_safe
+#print axioms correction_archive_preserved
+#print axioms correction_records_append
+#print axioms revision_verified_to_terminal
+#print axioms changed_snapshot_receipt_not_current
+namespace DependencyFixtures
+#print axioms cyclic_affected_exact
+#print axioms unseeded_cycle_stays_clear
+#print axioms transitive_consumer_invalidated
+end DependencyFixtures
+namespace RevisionFixtures
+#print axioms original_ledger_safe
+#print axioms corrected_ledger_safe
+#print axioms corrected_verified_exact
+#print axioms unrelated_current_target
+#print axioms cyclic_and_transitive_reopened
+#print axioms archive_and_old_proofs_retained
+#print axioms historical_receipt_not_current
+#print axioms correction_event_retained
+#print axioms recheck_preserves_status_and_history
+end RevisionFixtures
+#print axioms correctMany_safe
+#print axioms correctMany_archive_preserved
+#print axioms correctMany_receipts_preserved
+#print axioms correctMany_issued_covered
+#print axioms correctMany_correction_suffix
+#print axioms correctMany_correction_length
+#print axioms correctMany_last_snapshot
+#print axioms correction_reachable_safe
+#print axioms correction_reachable_history
+#print axioms correction_reachable_status
+#print axioms fresh_controller_safe
+#print axioms start_session_safe
+#print axioms admitted_session_advance_safe
+#print axioms session_advance_history_preserved
+#print axioms admitted_session_receipts_current
+#print axioms stale_receipt_rejects_current_guard
+namespace RestartFixtures
+#print axioms restarted_session_safe
+#print axioms current_proposal_guard
+#print axioms admitted_restart_step_safe
+#print axioms stale_historical_receipt_rejected
+end RestartFixtures
+#print axioms mem_supportedClaims_iff
+#print axioms supportedClaims_empty_of_no_ground
+#print axioms certified_supported_target
+#print axioms certified_supported_to_terminal
+#print axioms certified_supported_not_withdrawn
+namespace AlternativeFixtures
+#print axioms false_cycle_self_closed_but_not_grounded
+#print axioms source_dependent_alternate_returns_exact_target
+#print axioms grounded_cycle_empty_after_ground_loss
+#print axioms and_route_supported_with_both_premises
+end AlternativeFixtures
+#print axioms admission_preserves_safe
+#print axioms admitted_certificate_target
+#print axioms admission_pending_accounted
+#print axioms admission_archive_prefix
+#print axioms admission_effect_history_preserved
+namespace EvidenceAdmissionFixtures
+#print axioms currentFourCertificate
+#print axioms readmitted_ledger_safe
+#print axioms readmission_retains_history
+#print axioms false_current_claim_not_admissible
+#print axioms incomplete_singleton_prerequisite_rejected
+end EvidenceAdmissionFixtures
+#print axioms workflow_safe
+#print axioms workflow_issued_preserved
+#print axioms workflow_archive_prefix
+#print axioms workflow_receipts_preserved
+#print axioms workflow_correction_prefix
+#print axioms workflow_obligation_retained
+#print axioms workflow_verified_target
+namespace RevisionWorkflowFixtures
+#print axioms concrete_workflow
+#print axioms final_ledger_safe
+#print axioms every_original_obligation_retained
+#print axioms workflow_returns_actual_target_four
+#print axioms forged_status_accounting_plausible
+#print axioms forged_final_not_reachable
+end RevisionWorkflowFixtures
+namespace ArithmeticPickupSource
+#print axioms material_integral_eq_finite
+#print axioms material_integrand_integrable
+#print axioms pickup_eq_interval_integral
+#print axioms finite_integration_identity
+#print axioms pickup_eq_closed_finite_sum
+#print axioms finite_pickup_prefix_flux
+#print axioms upper_touching_atom_zero
+#print axioms lower_touching_atom_later_reading
+#print axioms mem_closed_prefix_iff
+#print axioms mem_reset_remainder_iff
+#print axioms pickup_original_reset
+#print axioms pickup_bound_iff_material_bound
+#print axioms whole_pickup_poly_iff_material
+#print axioms pickup_reset_signed_bound
+#print axioms whole_pickup_poly_reset
+end ArithmeticPickupSource
+namespace ArithmeticPickupEnergy
+#print axioms actual_waveform_on_inventory
+#print axioms response_touching_atom_zero
+#print axioms response_product_integrable
+#print axioms pickup_square_integrable
+#print axioms energy_eq_full_gram
+#print axioms full_gram_eq_diagonal_add_cross
+#print axioms energy_eq_diagonal_add_cross
+#print axioms pickup_window_bound
+#print axioms pickup_image_bdd_above
+end ArithmeticPickupEnergy
+namespace ArithmeticPickupGram
+#print axioms weighted_response_product_integrable
+#print axioms signedSignal_square_integrable
+#print axioms signedSignal_integral_square_eq_quadraticForm
+#print axioms gram_symmetric
+#print axioms gram_diagonal_nonnegative
+#print axioms quadraticForm_nonnegative
+#print axioms actual_energy_nonnegative
+#print axioms actual_diagonal_nonnegative
+#print axioms actual_cross_lower_bound
+end ArithmeticPickupGram
+namespace ArithmeticSupplier
+#print axioms positive_envelope_history_bounded
+#print axioms positive_envelope_dominates_history
+#print axioms positive_envelope_eq_sup
+#print axioms whole_pickup_poly_supplies_original
+end ArithmeticSupplier
+namespace ArithmeticPickupDiagonal
+#print axioms moebius_coefficient_abs_le_one
+#print axioms moebius_coefficient_sq_le_one
+#print axioms inverse_half_square
+#print axioms response_square_le_reciprocal
+#print axioms diagonal_density_active
+#print axioms diagonal_density_le
+#print axioms diagonal_density_integrable
+#print axioms diagonal_density_integral_eq
+#print axioms diagonal_nonnegative
+#print axioms diagonal_polynomial_bound
+#print axioms diagonal_upper_bound
+end ArithmeticPickupDiagonal
+namespace ArithmeticPickupBudget
+#print axioms local_pickup_square_nonnegative
+#print axioms local_pickup_square_le_energy
+#print axioms growth_energy_bound
+#print axioms whole_pickup_poly_implies_budgets
+#print axioms budgets_imply_whole_pickup_poly
+#print axioms whole_pickup_poly_iff_budgets
+end ArithmeticPickupBudget
+namespace ArithmeticSupplierMeter
+#print axioms gated_reading_ae_le_iff
+#print axioms sector_esssup_le_iff
+#print axioms sector_esssup_eq_sInf
+#print axioms null_sector_esssup
+#print axioms empty_sector_esssup
+#print axioms zero_sector_silent
+#print axioms extended_meter_le_real_iff
+#print axioms reset_pickup_window_bound
+#print axioms extended_meter_ne_top
+#print axioms real_meter_embedding
+#print axioms real_meter_le_iff
+#print axioms original_supplier_estimate_iff_real_meter
+#print axioms whole_pickup_poly_supplies_meter
+#print axioms pickup_budgets_supply_meter
+end ArithmeticSupplierMeter
+namespace ArithmeticPickupContinuity
+#print axioms pickup_nonpositive
+#print axioms response_continuous
+#print axioms fixed_inventory_signal_continuous
+#print axioms actual_waveform_on_inventory_all
+#print axioms pickup_continuous
+#print axioms reset_pickup_continuous
+#print axioms positive_envelope_attained
+end ArithmeticPickupContinuity
+namespace AlternativeLocality
+#print axioms mem_providerReadUnion
+#print axioms provider_read_agreement
+#print axioms currently_eligible_preserved
+#print axioms eligible_rule_transport
+#print axioms grounded_replay_target
+#print axioms computed_support_preserved
+#print axioms computed_support_replay_target
+end AlternativeLocality
+namespace AlternativeLocality.HostileFixture
+#print axioms all_providers_eligible
+#print axioms footprint_exact
+#print axioms grounded_P
+#print axioms grounded_Q
+#print axioms computed_Q
+#print axioms hostile_pair_agrees
+#print axioms global_conclusion_locality_fails
+#print axioms no_union_revision_certificate
+#print axioms hostile_left_not_fresh
+#print axioms safe_unread_change_replay
+end AlternativeLocality.HostileFixture
+namespace ArithmeticPickupEnergyGrowth
+#print axioms energy_bound_of_cross_bound
+#print axioms cross_poly_implies_energy_poly
+#print axioms energy_poly_implies_cross_poly
+#print axioms cross_poly_iff_energy_poly
+#print axioms whole_pickup_poly_implies_energy_poly
+end ArithmeticPickupEnergyGrowth
+namespace ArithmeticPickupLaplaceAtom
+#print axioms weighted_kernel_identity
+#print axioms laplace_response_indicator
+#print axioms ungated_laplace_response_integrable
+#print axioms laplace_response_integrable
+#print axioms laplace_response_integral
+#print axioms atom_inverse_half_eq_exp
+#print axioms laplace_response_integral_cpow
+end ArithmeticPickupLaplaceAtom
+namespace ArithmeticPickupLaplaceSum
+#print axioms finite_laplace_signal_expansion
+#print axioms finite_laplace_signal_integrable
+#print axioms finite_laplace_signal_integral
+#print axioms finite_inventory_signal_eq_pickup
+#print axioms finite_inventory_laplace_signal_eq_pickup
+#print axioms inventory_laplace_signal_integral
+end ArithmeticPickupLaplaceSum
+namespace ArithmeticPickupLaplaceGrowth
+#print axioms polynomial_exponential_integrable
+#print axioms norm_pickup_laplace_integrand
+#print axioms pickup_laplace_integrable_of_bound
+#print axioms whole_pickup_poly_laplace_integrable
+#print axioms pickup_laplace_hasDerivAt_of_bound
+#print axioms whole_pickup_poly_laplace_holomorphic
+end ArithmeticPickupLaplaceGrowth
+namespace ReplayEvidence.ReplayCertificate
+#print axioms current_target
+#print axioms accepted_iff_fresh
+#print axioms recorded_accepted
+#print axioms stale_read_rejects
+#print axioms to_terminal
+end ReplayEvidence.ReplayCertificate
+namespace ReplayEvidence
+#print axioms ofGlobal_recorded
+#print axioms ofGlobal_reads
+#print axioms ofGrounded_recorded
+#print axioms ofGrounded_reads
+end ReplayEvidence
+namespace ReplayEvidence.HostileFixture
+#print axioms replayQ_reads
+#print axioms replayQ_accepted
+#print axioms replayQ_has_no_global_certificate
+end ReplayEvidence.HostileFixture
+namespace ReplayAdmissionModel
+#print axioms supplied_replay_accepted
+#print axioms admitted_replay_target
+#print axioms replay_safe_of_revision
+#print axioms replay_admission_preserves_safe
+#print axioms replay_verified_current_target
+#print axioms replay_verified_to_terminal
+#print axioms replay_admission_histories
+#print axioms replay_admission_archive_prefix
+#print axioms replay_admission_source_issued_preserved
+#print axioms replay_admission_pending_accounted
+#print axioms false_target_blocks_replay_admission
+#print axioms stale_supplied_record_blocks_admission
+#print axioms original_archive_same_footprint_blocker
+end ReplayAdmissionModel
+namespace RestartBudgetBoundary
+#print axioms Session
+#print axioms State
+#print axioms roundProposal
+#print axioms nextConfig
+#print axioms sessionRun
+#print axioms restartedSession
+#print axioms next_round_exact
+#print axioms session_history_exact
+#print axioms restarted_session_history_exact
+#print axioms restarted_session_budget_exact
+#print axioms restarted_session_safe
+#print axioms round_proposal_guard
+#print axioms session_run_safe
+#print axioms each_restarted_round_guarded
+#print axioms completed_round_budget_exact
+#print axioms session_run_lift_exact
+#print axioms totalRoundCost
+#print axioms total_round_cost_exact
+#print axioms arbitrarily_many_safe_positive_cost_rounds
+#print axioms completed_rounds_are_not_guarded_steps
+#print axioms immutable_session_termination_still_holds
+end RestartBudgetBoundary
+namespace ReplayCorrection
+#print axioms replay_correction_preserves_safe
+#print axioms replay_correction_verified_iff
+#print axioms replay_affected_verified_reopened
+#print axioms replay_corrected_current_target
+#print axioms replay_correction_histories
+#print axioms replay_correction_records_append
+#print axioms replay_correction_same_snapshot_status
+#print axioms replay_correctMany_nil
+#print axioms replay_correctMany_cons
+#print axioms replay_correctMany_base
+#print axioms replay_correctMany_safe
+#print axioms replay_correctMany_replay_archive_preserved
+#print axioms replay_correctMany_histories
+#print axioms replay_correctMany_correction_suffix
+#print axioms replay_correctMany_correction_prefix
+#print axioms replay_correctMany_correction_length
+#print axioms replay_correctMany_status
+#print axioms replay_correctMany_current_target
+#print axioms replay_correctMany_last_snapshot
+end ReplayCorrection
+namespace ReplayRestart
+#print axioms replay_fresh_controller_safe
+#print axioms ReplaySession
+#print axioms startReplaySession
+#print axioms ReplaySessionSafe
+#print axioms start_replay_session_safe
+#print axioms start_replay_session_history_preserved
+#print axioms start_replay_session_active_exact
+end ReplayRestart
+namespace ReplayRestart.ReplaySession
+#print axioms advance
+end ReplayRestart.ReplaySession
+namespace ReplayRestart
+#print axioms admitted_replay_session_advance_safe
+#print axioms replay_session_advance_history_preserved
+#print axioms replay_session_advance_histories
+#print axioms replay_session_advance_source_fixed
+#print axioms replay_session_advance_current_receipts
+#print axioms admitted_replay_session_receipts_current
+#print axioms replay_stale_receipt_rejects_guard
+end ReplayRestart
+namespace ReplayWorkflowModel
+#print axioms ReplayWorkflow
+#print axioms replay_workflow_safe
+#print axioms replay_workflow_issued_preserved
+#print axioms replay_workflow_global_archive_preserved
+#print axioms replay_workflow_archive_prefix
+#print axioms replay_workflow_receipts_preserved
+#print axioms replay_workflow_correction_prefix
+#print axioms replay_workflow_obligation_retained
+#print axioms replay_workflow_prior_status_accounted
+#print axioms replay_workflow_verified_target
+#print axioms replay_workflow_verified_to_terminal
+end ReplayWorkflowModel
+namespace ReplayEvidence
+#print axioms ofGlobal
+#print axioms ofGrounded
+end ReplayEvidence
+namespace ArithmeticPickupLaplaceInfinite
+#print axioms response_nonnegative
+#print axioms response_upper
+#print axioms moebius_laplace_term_zero
+#print axioms moebius_laplace_term_integrable
+#print axioms norm_moebius_laplace_term_le
+#print axioms atom_majorant_integrable
+#print axioms atom_majorant_integral
+#print axioms moebius_laplace_hasSum_pickup
+#print axioms integrated_norm_moebius_laplace_term_le
+#print axioms summable_integrated_norm_moebius_laplace_term
+#print axioms original_pickup_laplace_integrable
+#print axioms original_pickup_laplace_integral_eq_tsum
+#print axioms moebius_laplace_term_integral
+#print axioms original_pickup_laplace_integral_eq_LSeries
+#print axioms native_moebius_complex_coefficient
+#print axioms native_moebius_series_zeta_identity
+#print axioms original_pickup_laplace_zeta_identity
+end ArithmeticPickupLaplaceInfinite
+namespace ZetaPoleRegularization
+#print axioms raw_product_at_one
+#print axioms regularized_zeta_at_one
+#print axioms regularized_zeta_of_ne_one
+#print axioms raw_product_residue_one
+#print axioms raw_product_not_continuousAt_one
+#print axioms regularized_zeta_continuousAt_one
+#print axioms raw_product_differentiableAt_of_ne_one
+#print axioms regularized_zeta_differentiableAt_of_ne_one
+#print axioms regularized_zeta_analyticAt_one
+#print axioms regularized_zeta_differentiable
+#print axioms regularized_zeta_analyticOnNhd
+#print axioms regularized_zeta_analyticAt
+#print axioms right_half_plane_isOpen
+#print axioms right_half_plane_isPreconnected
+#print axioms regularized_product_analyticOnNhd
+#print axioms regularized_product_initial
+#print axioms regularized_product_identity
+#print axioms zeta_ne_zero_right_of_holomorphic_reciprocal
+end ZetaPoleRegularization
+namespace ArithmeticPickupLaplaceEnergy
+#print axioms interval_energy_eq_energy
+#print axioms pickup_square_continuous
+#print axioms interval_energy_hasDerivAt
+#print axioms interval_energy_continuous
+#print axioms interval_energy_nonnegative
+#print axioms damped_energy_continuous
+#print axioms damped_energy_nonnegative
+#print axioms damped_energy_bound
+#print axioms damped_energy_integrable_of_bound
+#print axioms polynomial_exponential_tendsto_zero
+#print axioms damped_energy_tendsto_zero_of_bound
+#print axioms weighted_squared_pickup_nonnegative
+#print axioms weighted_energy_primitive_hasDerivAt
+#print axioms weighted_energy_primitive_tendsto_of_bound
+#print axioms energy_poly_weighted_squared_pickup_integrable
+#print axioms weighted_absolute_pickup_continuous
+#print axioms weighted_absolute_pickup_nonnegative
+#print axioms weighted_absolute_pickup_bound
+#print axioms energy_poly_weighted_absolute_pickup_integrable
+#print axioms energy_poly_laplace_integrable
+#print axioms time_weighted_absolute_pickup_continuous
+#print axioms time_weighted_absolute_pickup_nonnegative
+#print axioms time_weighted_absolute_pickup_bound
+#print axioms energy_poly_time_weighted_absolute_pickup_integrable
+#print axioms pickup_laplace_derivative_energy_bound
+#print axioms energy_poly_laplace_hasDerivAt
+#print axioms energy_poly_laplace_holomorphic
+end ArithmeticPickupLaplaceEnergy
+namespace ArithmeticPickupRHConsumer
+#print axioms original_pickup_initial_identity
+#print axioms original_laplace_holomorphic_excludes_right_zeros
+#print axioms original_laplace_holomorphic_implies_rh
+#print axioms whole_pickup_poly_excludes_right_zeros
+#print axioms whole_pickup_poly_implies_rh
+#print axioms energy_poly_implies_rh
+#print axioms cross_poly_implies_rh
+end ArithmeticPickupRHConsumer
+namespace ArithmeticPickupFilterConsumer.AnalyticPickupFilter
+#print axioms reconstructed_holomorphic
+#print axioms reconstructed_original
+#print axioms initial_identity
+#print axioms excludes_right_zeros
+#print axioms implies_rh
+end ArithmeticPickupFilterConsumer.AnalyticPickupFilter
+namespace ArithmeticPickupFilterConsumer.FrequencyAxisFixture
+#print axioms imaginary_axis_norm_lower
+#print axioms imaginary_axis_nonzero
+#print axioms imaginary_axis_inverse_gain
+#print axioms positive_half_plane_zero
+#print axioms axis_inverse_does_not_supply_complex_nonvanishing
+end ArithmeticPickupFilterConsumer.FrequencyAxisFixture
+namespace GroundedReplayFixture
+#print axioms schema
+#print axioms policy
+#print axioms replayP
+#print axioms replayQ
+#print axioms replay_P_reads
+#print axioms replay_Q_reads
+#print axioms recordP
+#print axioms recordQ
+#print axioms batchRecords
+#print axioms baseLedger
+#print axioms base_revision_safe
+#print axioms initialLedger
+#print axioms initial_replay_safe
+#print axioms batchAdmission
+#print axioms admittedLedger
+#print axioms admitted_replay_safe
+#print axioms admitted_status
+#print axioms admitted_current_target
+#print axioms admitted_archive_exact
+#print axioms admitted_base_not_revision_safe
+#print axioms same_footprint_Q_global_blocked
+#print axioms config
+#print axioms session
+#print axioms restarted_safe
+#print axioms restarted_history_exact
+#print axioms restarted_has_no_effects
+#print axioms unreadChange
+#print axioms readChange
+#print axioms unread_change_tokens
+#print axioms unread_change_affected_empty
+#print axioms read_change_affected_all
+#print axioms unreadLedger
+#print axioms changedLedger
+#print axioms unread_corrected_safe
+#print axioms changed_corrected_safe
+#print axioms unread_verified_all
+#print axioms unread_current_targets
+#print axioms changed_status
+#print axioms Q_true_but_reopened
+#print axioms correction_archives_literal
+end GroundedReplayFixture
+#print axioms GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect
+namespace SourceResidual
+#print axioms clipped_zero_hasDerivAt
+#print axioms clipped_profile_hasDerivAt
+#print axioms bump_polynomial_hasDerivAt
+#print axioms bump_first_polynomial_hasDerivAt
+#print axioms bump_second_polynomial_hasDerivAt
+#print axioms bump_hasDerivAt
+#print axioms bump_first_hasDerivAt
+#print axioms bump_second_hasDerivAt
+#print axioms bump_deriv
+#print axioms bump_second_deriv
+#print axioms bump_continuous
+#print axioms bump_second_continuous
+#print axioms source_hasDerivAt
+#print axioms sourceFirst_hasDerivAt
+#print axioms source_deriv
+#print axioms source_second_deriv
+#print axioms sourceResidual_eq
+#print axioms sourceResidual_continuous
+#print axioms scaled_mem_iff
+#print axioms sourceResidual_eq_ite
+#print axioms source_first_zero_outside
+#print axioms source_second_zero_outside
+#print axioms source_first_endpoints_zero
+#print axioms source_second_endpoints_zero
+#print axioms sourceResidual_zero_eq
+#print axioms sourceResidual_endpoints_zero
+#print axioms sourceResidual_zero_outside
+#print axioms sourceResidual_hasCompactSupport
+#print axioms sourceResidual_square_integrable
+end SourceResidual
+namespace SourceNormalization
+#print axioms source_normalization_nonneg
+#print axioms source_normalization_pos_of_analytic
+#print axioms residual_center_negative_of_formula
+#print axioms source_normalization_pos
+#print axioms source_normalization_pos_of_one_le
+#print axioms normalized_source_continuous
+#print axioms normalized_source_square
+#print axioms normalized_source_square_integral
+#print axioms normalized_source_square_integrable
+#print axioms correlation_center_eq_one
+#print axioms normalized_source_square_integrable_of_pos
+#print axioms normalized_source_square_integral_of_pos
+#print axioms correlation_center_eq_one_of_pos
+#print axioms correlation_center_eq_one_of_one_le
+#print axioms normalized_source_eq_zero_of_normalization_zero
+#print axioms correlation_eq_zero_of_normalization_zero
+#print axioms source_residual_zero_scale
+#print axioms source_normalization_zero_scale
+#print axioms correlation_zero_scale
+#print axioms correlation_center_exact
+end SourceNormalization
+namespace SourceGram
+#print axioms normalized_source_measurable
+#print axioms source_gram_eq_integral
+#print axioms source_gram_symm
+#print axioms source_vector_memLp
+#print axioms source_vectors_product_integrable
+#print axioms source_gram_diagonal
+#print axioms source_gram_diagonal_eq_one
+#print axioms finite_weighted_source_square
+#print axioms finite_source_energy_eq_gram
+#print axioms finite_weighted_source_square_integrable
+#print axioms finite_source_gram_nonnegative
+#print axioms source_energy_eq_gram
+#print axioms source_energy_nonnegative
+#print axioms source_gram_matrix_positive_semidefinite
+end SourceGram
+namespace SourceClosedNormalization
+#print axioms monomial_primitive_hasDerivAt
+#print axioms square_primitive_hasDerivAt
+#print axioms unscaled_square_integral
+#print axioms source_amplitude_square
+#print axioms source_normalization_eq_interval
+#print axioms source_normalization_eq_rational
+#print axioms source_eq_scaled_bump
+#print axioms dilation_test_eq_residual
+#print axioms normalized_test_eq_source
+#print axioms source_pairing_correlation_eq
+end SourceClosedNormalization
+namespace SourceRegularity
+#print axioms bump_third_continuous
+#print axioms sourceSecond_hasDerivAt
+#print axioms residual_hasDerivAt
+#print axioms residual_first_continuous
+#print axioms residual_contDiff_one
+#print axioms normalized_source_contDiff_one
+#print axioms normalized_source_zero_outside
+#print axioms normalized_source_hasCompactSupport
+#print axioms normalized_source_integrable
+#print axioms reflected_source_contDiff_one
+#print axioms reflected_source_hasCompactSupport
+#print axioms correlation_eq_convolution
+#print axioms correlation_contDiff_one
+#print axioms correlation_deriv_eq_convolution
+#print axioms correlation_deriv_contDiff_one
+#print axioms correlation_contDiff_two
+#print axioms reflected_source_deriv
+#print axioms correlation_second_deriv_eq_integral
+#print axioms polarity_kernel_continuous
+#print axioms correlation_zero_of_two_mul_lt
+#print axioms correlation_eventually_zero
+#print axioms correlation_derivatives_zero_of_two_mul_lt
+#print axioms polarity_kernel_zero_of_upper_tail
+#print axioms correlation_hasCompactSupport
+#print axioms correlation_deriv_integrable
+#print axioms correlation_second_deriv_integrable
+#print axioms polarity_kernel_integrable
+#print axioms polarity_kernel_zero_of_empty_inventory
+#print axioms strict_sector_empty_of_small_scale
+end SourceRegularity
+namespace SourceNativeSeparation
+#print axioms native_touching_diagonal_zero
+#print axioms touching_atom_in_inventory
+#print axioms native_touching_ne_prescribed
+#print axioms positive_horizon_obstruction
+#print axioms prescribed_horizon_obstruction
+end SourceNativeSeparation
+namespace SourceSignedIntegrability
+#print axioms chebyshev_prime_power_nonneg
+#print axioms chebyshev_prime_power_monotone
+#print axioms error_profile_measurable
+#print axioms error_profile_bound
+#print axioms source_weight_continuous
+#print axioms signed_pairing_integrable
+end SourceSignedIntegrability
+namespace SourceDilation
+#print axioms source_continuous
+#print axioms source_first_continuous
+#print axioms source_second_continuous
+#print axioms source_hasCompactSupport
+#print axioms source_first_hasCompactSupport
+#print axioms source_second_hasCompactSupport
+#print axioms compact_product_integrable
+#print axioms actual_weak_second_derivative
+#print axioms exponential_hasDerivAt
+#print axioms second_derivative_exponential_integral
+#print axioms normalized_source_exponential_integrable
+#print axioms residual_exponential_integral_zero
+#print axioms normalized_source_exponential_integral_zero
+#print axioms positive_pole_integral_zero
+#print axioms negative_pole_integral_zero
+#print axioms actualDilationRealization
+end SourceDilation
+end GRWTSK.ProofHorizon.CorkscrewChamberCap
+namespace GRWTSK
+namespace ProofHorizon
+namespace CorkscrewChamberCap
+namespace SourceAdmission
+#check @source_second_eq_explicit
+#print axioms source_second_eq_explicit
+#check @normalized_test_eq_explicit
+#print axioms normalized_test_eq_explicit
+#check @actual_archimedean_integrable
+#print axioms actual_archimedean_integrable
+#check @admittedDilationRealization
+#print axioms admittedDilationRealization
+#check @admitted_second_derivative
+#print axioms admitted_second_derivative
+#check @source_realization_exists
+#print axioms source_realization_exists
+#check @arithmetic_representation
+#print axioms arithmetic_representation
+end SourceAdmission
+end CorkscrewChamberCap
+end ProofHorizon
+namespace Analysis
+namespace DigammaSeries
+#check @gammaSeq_locally_uniform
+#print axioms gammaSeq_locally_uniform
+#check @euler_derivative_limit
+#print axioms euler_derivative_limit
+#check @hasSum_difference
+#print axioms hasSum_difference
+end DigammaSeries
+end Analysis
+namespace Analysis
+namespace ReciprocalKernel
+#check @kernel_integral_quarter
+#print axioms kernel_integral_quarter
+#check @frequency_sum_bounds
+#print axioms frequency_sum_bounds
+end ReciprocalKernel
+end Analysis
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace BridgeFourier
+#check @actual_derivative_integrable
+#print axioms actual_derivative_integrable
+#check @actual_fourier_frequency_bound
+#print axioms actual_fourier_frequency_bound
+#check @actual_logarithmic_fourier_integrable
+#print axioms actual_logarithmic_fourier_integrable
+#check @actual_fourier_square_integrable
+#print axioms actual_fourier_square_integrable
+end BridgeFourier
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace BridgeAdmissibility
+#check @actual_logarithmic_domain
+#print axioms actual_logarithmic_domain
+end BridgeAdmissibility
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace BridgeMultiplier
+#check @actual_archimedean_integrable_of_multiplier_estimate
+#print axioms actual_archimedean_integrable_of_multiplier_estimate
+end BridgeMultiplier
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace AdmissionSource
+#check @quarter_series
+#print axioms quarter_series
+#check @multiplier_estimate
+#print axioms multiplier_estimate
+#check @archimedean_integrability
+#print axioms archimedean_integrability
+#check @normalization_admissibility
+#print axioms normalization_admissibility
+end AdmissionSource
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace Realization
+#check @scaledBump_weak_second_derivative
+#print axioms scaledBump_weak_second_derivative
+end Realization
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace CorrelationRegularity
+#check @normalizedTest_contDiff
+#print axioms normalizedTest_contDiff
+end CorrelationRegularity
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace BridgeNormalization
+#check @normalized_square_integrable
+#print axioms normalized_square_integrable
+end BridgeNormalization
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace CorrelationAssembly
+#check @source_arithmetic_representation
+#print axioms source_arithmetic_representation
+end CorrelationAssembly
+end SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+namespace ProofHorizon
+namespace CorkscrewChamberCap
+namespace SourceUniqueness
+#check @weak_second_derivative_ae_unique
+#print axioms weak_second_derivative_ae_unique
+#check @source_realization_unique
+#print axioms source_realization_unique
+#check @realization_second_derivative_ae_eq
+#print axioms realization_second_derivative_ae_eq
+end SourceUniqueness
+end CorkscrewChamberCap
+end ProofHorizon
+end GRWTSK
+#check @ae_eq_of_integral_contDiff_smul_eq
+#print axioms ae_eq_of_integral_contDiff_smul_eq
+namespace GRWTSK
+namespace RiemannHypothesis
+namespace GevreyProfile
+#check @squaredExpNegInvGlue
+#print axioms squaredExpNegInvGlue
+#check @squaredExpNegInvGlue_zero_of_nonpos
+#print axioms squaredExpNegInvGlue_zero_of_nonpos
+#check @tendsto_polynomial_inv_mul_zero
+#print axioms tendsto_polynomial_inv_mul_zero
+#check @hasDerivAt_polynomial_eval_inv_mul
+#print axioms hasDerivAt_polynomial_eval_inv_mul
+#check @differentiable_polynomial_eval_inv_mul
+#print axioms differentiable_polynomial_eval_inv_mul
+#check @continuous_polynomial_eval_inv_mul
+#print axioms continuous_polynomial_eval_inv_mul
+#check @contDiff_polynomial_eval_inv_mul
+#print axioms contDiff_polynomial_eval_inv_mul
+#check @squaredExpNegInvGlue_contDiff
+#print axioms squaredExpNegInvGlue_contDiff
+#check @profile
+#print axioms profile
+#check @profile_eq_glue
+#print axioms profile_eq_glue
+#check @profile_contDiff
+#print axioms profile_contDiff
+#check @profile_pos_of_abs_lt_one
+#print axioms profile_pos_of_abs_lt_one
+#check @profile_zero_of_one_le_abs
+#print axioms profile_zero_of_one_le_abs
+#check @profile_nonzero
+#print axioms profile_nonzero
+#check @profile_support
+#print axioms profile_support
+#check @profile_hasCompactSupport
+#print axioms profile_hasCompactSupport
+end GevreyProfile
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace GevreyNormalization
+#check @scaledProfile
+#print axioms scaledProfile
+#check @dilationOperator
+#print axioms dilationOperator
+#check @normalization
+#print axioms normalization
+#check @integral_second_mul_profile
+#print axioms integral_second_mul_profile
+#check @deriv_scaledProfile
+#print axioms deriv_scaledProfile
+#check @second_scaledProfile
+#print axioms second_scaledProfile
+#check @dilationOperator_eq
+#print axioms dilationOperator_eq
+#check @scaledProfile_eq_rpow
+#print axioms scaledProfile_eq_rpow
+#check @deriv_scaledProfile_eq_rpow
+#print axioms deriv_scaledProfile_eq_rpow
+#check @second_scaledProfile_eq_rpow
+#print axioms second_scaledProfile_eq_rpow
+#check @dilationOperator_eq_rpow
+#print axioms dilationOperator_eq_rpow
+#check @profile_square_integrable
+#print axioms profile_square_integrable
+#check @dilationOperator_square_integrable
+#print axioms dilationOperator_square_integrable
+#check @dilationOperator_integrable
+#print axioms dilationOperator_integrable
+#check @normalization_expanded
+#print axioms normalization_expanded
+#check @normalization_eq
+#print axioms normalization_eq
+#check @tendsto_normalization
+#print axioms tendsto_normalization
+#check @normalization_uniform_lower_bound
+#print axioms normalization_uniform_lower_bound
+#check @normalization_pos
+#print axioms normalization_pos
+#check @normalization_uniform_positive_lower_bound
+#print axioms normalization_uniform_positive_lower_bound
+#check @normalizedOperator
+#print axioms normalizedOperator
+#check @normalizedOperator_square_integral
+#print axioms normalizedOperator_square_integral
+#check @normalizedOperator_integrable
+#print axioms normalizedOperator_integrable
+#check @profile_normalization
+#print axioms profile_normalization
+#check @profile_normalization_lower_bound
+#print axioms profile_normalization_lower_bound
+#check @profile_normalization_pos
+#print axioms profile_normalization_pos
+#check @profile_normalization_uniform_positive_lower_bound
+#print axioms profile_normalization_uniform_positive_lower_bound
+#check @profile_normalizedOperator_square_integral
+#print axioms profile_normalizedOperator_square_integral
+#check @profile_normalization_expanded
+#print axioms profile_normalization_expanded
+#check @tendsto_profile_normalization
+#print axioms tendsto_profile_normalization
+end GevreyNormalization
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace GevreyPolynomial
+#check @firstDerivative
+#print axioms firstDerivative
+#check @bumpInterior_frontier
+#print axioms bumpInterior_frontier
+#check @firstInterior_frontier
+#print axioms firstInterior_frontier
+#check @scaledBump_hasDerivAt
+#print axioms scaledBump_hasDerivAt
+#check @firstDerivative_hasDerivAt
+#print axioms firstDerivative_hasDerivAt
+#check @deriv_scaledBump
+#print axioms deriv_scaledBump
+#check @second_scaledBump
+#print axioms second_scaledBump
+#check @scaledBump_contDiff
+#print axioms scaledBump_contDiff
+#check @sourceBump_eq_scaled_unit
+#print axioms sourceBump_eq_scaled_unit
+#check @scaledProfile_sourceBump_eq
+#print axioms scaledProfile_sourceBump_eq
+#check @sourceBump_contDiff
+#print axioms sourceBump_contDiff
+#check @sourceBump_hasCompactSupport
+#print axioms sourceBump_hasCompactSupport
+#check @sourceBump_nonzero
+#print axioms sourceBump_nonzero
+#check @sourceBump_eq_indicator
+#print axioms sourceBump_eq_indicator
+#check @sourceBump_second_eq_indicator
+#print axioms sourceBump_second_eq_indicator
+#check @sourceBump_square_integral
+#print axioms sourceBump_square_integral
+#check @sourceBump_second_square_integral
+#print axioms sourceBump_second_square_integral
+#check @sourceBump_second_mul_integral
+#print axioms sourceBump_second_mul_integral
+#check @sourceBump_deriv_square_integral
+#print axioms sourceBump_deriv_square_integral
+#check @normalization_sourceBump_eq
+#print axioms normalization_sourceBump_eq
+#check @dilationOperator_sourceBump_eq
+#print axioms dilationOperator_sourceBump_eq
+#check @normalizedOperator_sourceBump_eq
+#print axioms normalizedOperator_sourceBump_eq
+end GevreyPolynomial
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace GevreyDerivativeEnergy
+#check @integral_third_mul_first
+#print axioms integral_third_mul_first
+#check @deriv_dilationOperator
+#print axioms deriv_dilationOperator
+#check @deriv_normalizedOperator
+#print axioms deriv_normalizedOperator
+#check @normalizedOperator_deriv_square_integrable
+#print axioms normalizedOperator_deriv_square_integrable
+#check @normalizedOperator_deriv_square_integral_factorized
+#print axioms normalizedOperator_deriv_square_integral_factorized
+#check @normalizedOperator_deriv_square_integral
+#print axioms normalizedOperator_deriv_square_integral
+#check @profile_normalizedOperator_deriv_square_integral
+#print axioms profile_normalizedOperator_deriv_square_integral
+end GevreyDerivativeEnergy
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace SourceDerivativeCoefficientBound
+#check @normPolynomial
+#print axioms normPolynomial
+#check @derivativePolynomial
+#print axioms derivativePolynomial
+#check @squaredCoefficient
+#print axioms squaredCoefficient
+#check @normPolynomial_pos
+#print axioms normPolynomial_pos
+#check @exact_coefficient_gap
+#print axioms exact_coefficient_gap
+#check @derivativePolynomial_le
+#print axioms derivativePolynomial_le
+#check @exact_ratio_upper_bound
+#print axioms exact_ratio_upper_bound
+#check @squaredCoefficient_lt_twenty_five
+#print axioms squaredCoefficient_lt_twenty_five
+end SourceDerivativeCoefficientBound
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace SourceDerivativeEnergy
+#check @thirdDerivative
+#print axioms thirdDerivative
+#check @secondInterior_frontier
+#print axioms secondInterior_frontier
+#check @explicitSecondDerivative_hasDerivAt
+#print axioms explicitSecondDerivative_hasDerivAt
+#check @third_scaledBump
+#print axioms third_scaledBump
+#check @thirdInterior_continuous
+#print axioms thirdInterior_continuous
+#check @scaledBump_contDiff_three
+#print axioms scaledBump_contDiff_three
+#check @sourceBump_contDiff_three
+#print axioms sourceBump_contDiff_three
+#check @unitThird
+#print axioms unitThird
+#check @sourceBump_third_eq_indicator
+#print axioms sourceBump_third_eq_indicator
+#check @unitThird_square_integral
+#print axioms unitThird_square_integral
+#check @sourceBump_third_square_integral
+#print axioms sourceBump_third_square_integral
+#check @actual_derivative_square_integrable
+#print axioms actual_derivative_square_integrable
+#check @actual_derivative_energy_eq
+#print axioms actual_derivative_energy_eq
+#check @actual_derivative_energy_upper
+#print axioms actual_derivative_energy_upper
+#check @actual_derivative_energy_lt_twenty_five
+#print axioms actual_derivative_energy_lt_twenty_five
+end SourceDerivativeEnergy
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace BranchSecondDerivativeEnergy
+#check @unitFourth
+#print axioms unitFourth
+#check @fourthInterior
+#print axioms fourthInterior
+#check @normalizedSecondInterior
+#print axioms normalizedSecondInterior
+#check @secondRepresentative
+#print axioms secondRepresentative
+#check @thirdInterior_hasDerivAt
+#print axioms thirdInterior_hasDerivAt
+#check @normalizedInteriorDerivative_hasDerivAt
+#print axioms normalizedInteriorDerivative_hasDerivAt
+#check @actual_first_derivative_eq_indicator
+#print axioms actual_first_derivative_eq_indicator
+#check @actual_second_derivative_eq_off_endpoints
+#print axioms actual_second_derivative_eq_off_endpoints
+#check @actual_second_derivative_ae_eq
+#print axioms actual_second_derivative_ae_eq
+#check @unitFourth_square_integral
+#print axioms unitFourth_square_integral
+#check @unitFourth_mul_second_integral
+#print axioms unitFourth_mul_second_integral
+#check @unit_second_energy
+#print axioms unit_second_energy
+#check @secondRepresentative_square_integrable
+#print axioms secondRepresentative_square_integrable
+#check @actual_second_derivative_square_integrable
+#print axioms actual_second_derivative_square_integrable
+#check @normalizedSecondInterior_square
+#print axioms normalizedSecondInterior_square
+#check @actual_second_energy_integral
+#print axioms actual_second_energy_integral
+#check @denominator
+#print axioms denominator
+#check @numerator
+#print axioms numerator
+#check @squaredCoefficient
+#print axioms squaredCoefficient
+#check @actual_second_energy_eq
+#print axioms actual_second_energy_eq
+#check @denominator_pos
+#print axioms denominator_pos
+#check @exact_coefficient_gap
+#print axioms exact_coefficient_gap
+#check @exact_ratio_upper_bound
+#print axioms exact_ratio_upper_bound
+#check @actual_second_energy_upper
+#print axioms actual_second_energy_upper
+#check @squaredCoefficient_lt_815
+#print axioms squaredCoefficient_lt_815
+#check @actual_second_energy_lt_twenty_nine_sq
+#print axioms actual_second_energy_lt_twenty_nine_sq
+#check @actual_first_energy_lt_twenty_two
+#print axioms actual_first_energy_lt_twenty_two
+#check @first_second_coefficient_gap
+#print axioms first_second_coefficient_gap
+#check @actual_second_energy_unit
+#print axioms actual_second_energy_unit
+#check @ratio_cross_difference
+#print axioms ratio_cross_difference
+#check @ratio_strictMonoOn
+#print axioms ratio_strictMonoOn
+#check @actual_second_derivative_memLp
+#print axioms actual_second_derivative_memLp
+#check @actual_first_second_energy_product_lt
+#print axioms actual_first_second_energy_product_lt
+end BranchSecondDerivativeEnergy
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace SourceCorrelationEnergy
+#check @sourceCorrelation_hasDerivAt_integral
+#print axioms sourceCorrelation_hasDerivAt_integral
+#check @sourceCorrelation_deriv_eq_integral
+#print axioms sourceCorrelation_deriv_eq_integral
+#check @sourceCorrelation_deriv_integrand_integrable
+#print axioms sourceCorrelation_deriv_integrand_integrable
+#check @sourceCorrelation_deriv_square_le_energy
+#print axioms sourceCorrelation_deriv_square_le_energy
+#check @sourceCorrelation_deriv_abs_le_coefficient
+#print axioms sourceCorrelation_deriv_abs_le_coefficient
+#check @sourceCorrelation_deriv_abs_le_five_div
+#print axioms sourceCorrelation_deriv_abs_le_five_div
+end SourceCorrelationEnergy
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace SourceCorrelationCurvature
+#check @normalizedTest_deriv_integrable
+#print axioms normalizedTest_deriv_integrable
+#check @reflectedTest_hasDerivAt
+#print axioms reflectedTest_hasDerivAt
+#check @sourceCorrelation_deriv_eq_convolution
+#print axioms sourceCorrelation_deriv_eq_convolution
+#check @sourceCorrelation_deriv_contDiff
+#print axioms sourceCorrelation_deriv_contDiff
+#check @sourceCorrelation_contDiff_two
+#print axioms sourceCorrelation_contDiff_two
+#check @sourceCorrelation_deriv_hasDerivAt_integral
+#print axioms sourceCorrelation_deriv_hasDerivAt_integral
+#check @sourceCorrelation_second_deriv_eq_integral
+#print axioms sourceCorrelation_second_deriv_eq_integral
+#check @sourceCorrelation_second_deriv_integrand_integrable
+#print axioms sourceCorrelation_second_deriv_integrand_integrable
+#check @sourceCorrelation_second_deriv_abs_le_energy
+#print axioms sourceCorrelation_second_deriv_abs_le_energy
+#check @sourceCorrelation_second_deriv_abs_le_coefficient
+#print axioms sourceCorrelation_second_deriv_abs_le_coefficient
+#check @sourceCorrelation_deriv_increment_bound
+#print axioms sourceCorrelation_deriv_increment_bound
+#check @sourceCorrelation_linear_taylor_bound
+#print axioms sourceCorrelation_linear_taylor_bound
+end SourceCorrelationCurvature
+end RiemannHypothesis
+namespace RiemannHypothesis
+namespace BranchCorrelationHigher
+#check @actual_first_derivative_lipschitz
+#print axioms actual_first_derivative_lipschitz
+#check @actual_first_derivative_hasDerivAt_off_endpoints
+#print axioms actual_first_derivative_hasDerivAt_off_endpoints
+#check @secondRepresentative_integrable
+#print axioms secondRepresentative_integrable
+#check @translated_first_derivative_integral_hasDerivAt
+#print axioms translated_first_derivative_integral_hasDerivAt
+#check @sourceCorrelation_third_deriv_eq_integral
+#print axioms sourceCorrelation_third_deriv_eq_integral
+#check @sourceCorrelation_third_deriv_integrand_integrable
+#print axioms sourceCorrelation_third_deriv_integrand_integrable
+#check @sourceCorrelation_third_deriv_continuous
+#print axioms sourceCorrelation_third_deriv_continuous
+#check @sourceCorrelation_contDiff_three
+#print axioms sourceCorrelation_contDiff_three
+#check @sourceCorrelation_third_deriv_square_le_energy_product
+#print axioms sourceCorrelation_third_deriv_square_le_energy_product
+#check @sourceCorrelation_third_deriv_abs_le
+#print axioms sourceCorrelation_third_deriv_abs_le
+#check @sourceCorrelation_third_deriv_hasDerivAt_integral
+#print axioms sourceCorrelation_third_deriv_hasDerivAt_integral
+#check @sourceCorrelation_fourth_deriv_eq_integral
+#print axioms sourceCorrelation_fourth_deriv_eq_integral
+#check @secondRepresentative_bounded
+#print axioms secondRepresentative_bounded
+#check @secondRepresentative_continuousAt_off_endpoints
+#print axioms secondRepresentative_continuousAt_off_endpoints
+#check @sourceCorrelation_fourth_deriv_continuous
+#print axioms sourceCorrelation_fourth_deriv_continuous
+#check @sourceCorrelation_contDiff_four
+#print axioms sourceCorrelation_contDiff_four
+#check @sourceCorrelation_fourth_deriv_abs_le_energy
+#print axioms sourceCorrelation_fourth_deriv_abs_le_energy
+#check @sourceCorrelation_fourth_deriv_abs_le
+#print axioms sourceCorrelation_fourth_deriv_abs_le
+#check @actual_first_derivative_absolutelyContinuous
+#print axioms actual_first_derivative_absolutelyContinuous
+#check @secondRepresentative_integral_eq_sub
+#print axioms secondRepresentative_integral_eq_sub
+#check @secondRepresentative_integration_by_parts
+#print axioms secondRepresentative_integration_by_parts
+end BranchCorrelationHigher
+end RiemannHypothesis
+namespace ProofHorizon
+namespace CorkscrewChamberCap
+namespace SourceHigherRegularity
+#check @normalized_source_eq_native
+#print axioms normalized_source_eq_native
+#check @correlation_eq_native
+#print axioms correlation_eq_native
+#check @correlation_contDiff_four
+#print axioms correlation_contDiff_four
+#check @correlation_first_contDiff_three
+#print axioms correlation_first_contDiff_three
+#check @correlation_second_contDiff_two
+#print axioms correlation_second_contDiff_two
+#check @correlation_third_contDiff_one
+#print axioms correlation_third_contDiff_one
+#check @correlation_third_deriv_eq_integral
+#print axioms correlation_third_deriv_eq_integral
+#check @correlation_fourth_deriv_eq_integral
+#print axioms correlation_fourth_deriv_eq_integral
+#check @correlation_third_deriv_integrable
+#print axioms correlation_third_deriv_integrable
+#check @correlation_fourth_deriv_integrable
+#print axioms correlation_fourth_deriv_integrable
+#check @correlation_third_deriv_abs_le
+#print axioms correlation_third_deriv_abs_le
+#check @correlation_fourth_deriv_abs_le
+#print axioms correlation_fourth_deriv_abs_le
+#check @normalized_source_first_lipschitz
+#print axioms normalized_source_first_lipschitz
+#check @normalized_source_first_absolutelyContinuous
+#print axioms normalized_source_first_absolutelyContinuous
+#check @polarity_kernel_contDiff_two
+#print axioms polarity_kernel_contDiff_two
+#check @polarity_kernel_hasCompactSupport
+#print axioms polarity_kernel_hasCompactSupport
+#check @polarity_kernel_deriv_integrable
+#print axioms polarity_kernel_deriv_integrable
+#check @polarity_kernel_second_deriv_integrable
+#print axioms polarity_kernel_second_deriv_integrable
+end SourceHigherRegularity
+end CorkscrewChamberCap
+end ProofHorizon
+end GRWTSK
+
+
+namespace GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice
+#check @weightMass
+#check @literal_weight_nonneg
+#check @weighted_difference_abs_le
+#check @finite_shifted_price
+#check @correlation_first_abs_le
+#check @correlation_second_abs_le
+#check @polarity_kernel_hasDerivAt
+#check @polarity_kernel_deriv_eq
+#check @polarity_kernel_first_hasDerivAt
+#check @polarity_kernel_second_deriv_eq
+#check @polarity_kernel_abs_price
+#check @polarity_kernel_first_abs_price
+#check @polarity_kernel_second_abs_price
+#print axioms weightMass
+#print axioms literal_weight_nonneg
+#print axioms weighted_difference_abs_le
+#print axioms finite_shifted_price
+#print axioms correlation_first_abs_le
+#print axioms correlation_second_abs_le
+#print axioms polarity_kernel_hasDerivAt
+#print axioms polarity_kernel_deriv_eq
+#print axioms polarity_kernel_first_hasDerivAt
+#print axioms polarity_kernel_second_deriv_eq
+#print axioms polarity_kernel_abs_price
+#print axioms polarity_kernel_first_abs_price
+#print axioms polarity_kernel_second_abs_price
+end GRWTSK.ProofHorizon.CorkscrewChamberCap.KernelDerivativePrice
+
+namespace GRWTSK.ProofHorizon.CorkscrewChamberCap.SourceSeamObstruction
+#check @indicator_not_differentiable_at_right
+#check @normalized_second_interior_right_eq
+#check @normalized_second_interior_right_pos
+#check @native_first_not_differentiable_at_right
+#check @normalized_source_first_not_differentiable_at_right
+#check @normalized_source_not_contDiff_two
+#print axioms indicator_not_differentiable_at_right
+#print axioms normalized_second_interior_right_eq
+#print axioms normalized_second_interior_right_pos
+#print axioms native_first_not_differentiable_at_right
+#print axioms normalized_source_first_not_differentiable_at_right
+#print axioms normalized_source_not_contDiff_two
+end GRWTSK.ProofHorizon.CorkscrewChamberCap.SourceSeamObstruction

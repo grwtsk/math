@@ -1,0 +1,190 @@
+# ModuleName.parse?
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:12810c07eeb8304d8dc5b75b0d16322219380163a68b06431c75ab8fb80610c4",
+  "kind": "def",
+  "lexical_name": "ModuleName.parse?",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "modulename-parse--9d5b9eec4412281cc73a907d",
+  "source": {
+    "blob": "e91bd82e52b7126e422f52f9167f62164eaf53a7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 427,
+    "line": 319,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tests/Variant3805074643818f7e2935ff363195bd4cd9aeb87bf1fea2c2ace558b4a1aa2db5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:9d5b9eec4412281cc73a907ddd680fb8ec80f374cd6146dd28aee5ddf7d5b1ae",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tests/Variant3805074643818f7e2935ff363195bd4cd9aeb87bf1fea2c2ace558b4a1aa2db5.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:12810c07eeb8304d8dc5b75b0d16322219380163a68b06431c75ab8fb80610c4`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 319–427.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def ModuleName.parse? : String → Option ModuleName := ParseableType.parse?
+
+section ValidInputs
+
+/-- info: some `Lean.Mathlib.Data -/
+#guard_msgs in
+#eval ModuleName.parse? "Lean.Mathlib.Data"
+
+/-- info: some `F00Bar.BarF00 -/
+#guard_msgs in
+#eval ModuleName.parse? "F00Bar.BarF00"
+
+/-- info: some `foo_bar -/
+#guard_msgs in
+#eval ModuleName.parse? "foo_bar"
+
+/-- info: some `asdf.«foo bar» -/
+#guard_msgs in
+#eval ModuleName.parse? "asdf.«foo bar»"
+
+/-- info: some `«1».«2» -/
+#guard_msgs in
+#eval ModuleName.parse? "«1».«2»"
+
+/-- info: some `« » -/
+#guard_msgs in
+#eval ModuleName.parse? "« »"
+
+/-- info: some `Lean.Mathlib.Data.Afile -/
+#guard_msgs in
+#eval ModuleName.parse? "Lean/Mathlib/Data/Afile.lean"
+
+/-- info: some `Foo -/
+#guard_msgs in
+#eval ModuleName.parse? "Foo.lean"
+
+/-- info: some `«.» -/
+#guard_msgs in
+#eval ModuleName.parse? "..lean"
+
+/-- info: some `« » -/
+#guard_msgs in
+#eval ModuleName.parse? " .lean"
+
+/-- info: some `« ».Foo -/
+#guard_msgs in
+#eval ModuleName.parse? " /Foo.lean"
+
+end ValidInputs
+
+section InvalidInputs
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? ""
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "."
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? ".asdf"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "asdf."
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "1.asdf"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "asdf.1"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "1asdf"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "foo bar"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "foo,bar"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "«»"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "x.«»"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? ".lean"
+
+/-- info: none -/
+#guard_msgs in
+#eval ModuleName.parse? "/foo.lean"
+
+end InvalidInputs
+
+end ModuleName
+
+end Cli
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tests/Variant3805074643818f7e2935ff363195bd4cd9aeb87bf1fea2c2ace558b4a1aa2db5.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tests/Variant3805074643818f7e2935ff363195bd4cd9aeb87bf1fea2c2ace558b4a1aa2db5.lean#L319).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e91bd82e52b7126e422f52f9167f62164eaf53a7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

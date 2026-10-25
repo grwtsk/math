@@ -1,0 +1,138 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.ProofTheory.Lie.Variant4af604b12b3168e36e966a5852922c8799f1f35d075d0e0e7d5a57faf48c0f2c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a519450c3e9e72b68dbbb3b4f536ec306e57f029` · SHA-256 `c495f6ecbcc133bbc7d5456ce81c6f6edb65061eeb6d50c0aab7c53796330ce0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.ProofTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.ProofTheory.CommutatorCoeLinearMap.Variant8428bae7bea1fdcf8b7abf8fc3d401c56bb229ea91c7b8763ebe65b7857e09ce","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8428bae7bea1fdcf8b7abf8fc3d401c56bb229ea91c7b8763ebe65b7857e09ce","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.ProofTheory.SourceCorpus.CommutatorCoeLinearMap.Variant8428bae7bea1fdcf8b7abf8fc3d401c56bb229ea91c7b8763ebe65b7857e09ce","mathematical_subject":"Logic.ProofTheory","original_sha256":"8428bae7bea1fdcf8b7abf8fc3d401c56bb229ea91c7b8763ebe65b7857e09ce","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/Derivation/Lie.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Nicolò Cavalleri. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Nicolò Cavalleri, Andrew Yang
+-/
+module
+
+public import Mathlib.Algebra.Lie.OfAssociative
+public import Mathlib.RingTheory.Derivation.Basic
+public import Mathlib.Algebra.Lie.Prod
+
+/-!
+# Lie Algebra Structure on Derivations
+
+## Main statements
+
+- `Derivation.instLieAlgebra`: The `R`-derivations from `A` to `A` form a Lie algebra over `R`.
+
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.ProofTheory.CommutatorCoeLinearMap.Variant8428bae7bea1fdcf8b7abf8fc3d401c56bb229ea91c7b8763ebe65b7857e09ce
+
+@[expose] public section
+
+
+namespace Derivation
+
+variable {R : Type*} [CommRing R]
+variable {A : Type*} [CommRing A] [Algebra R A]
+variable {D1 D2 : Derivation R A A} (a : A)
+
+section LieStructures
+
+/-! ### Lie structures -/
+
+
+/-- The commutator of derivations is again a derivation. -/
+instance : Bracket (Derivation R A A) (Derivation R A A) :=
+  ⟨fun D1 D2 =>
+    mk' ⁅(D1 : Module.End R A), (D2 : Module.End R A)⁆ fun a b => by
+      simp only [Ring.lie_def, map_add, smul_eq_mul, Module.End.mul_apply, leibniz,
+        coeFn_coe, LinearMap.sub_apply]
+      ring⟩
+
+@[simp]
+theorem commutator_coe_linear_map : ↑⁅D1, D2⁆ = ⁅(D1 : Module.End R A), (D2 : Module.End R A)⁆ :=
+  rfl
+
+theorem commutator_apply : ⁅D1, D2⁆ a = D1 (D2 a) - D2 (D1 a) :=
+  rfl
+
+instance : LieRing (Derivation R A A) where
+  add_lie d e f := by ext a; simp only [commutator_apply, add_apply, map_add]; ring
+  lie_add d e f := by ext a; simp only [commutator_apply, add_apply, map_add]; ring
+  lie_self d := by ext a; simp only [commutator_apply]; ring_nf; simp
+  leibniz_lie d e f := by ext a; simp only [commutator_apply, add_apply, map_sub]; ring
+
+instance instLieAlgebra : LieAlgebra R (Derivation R A A) :=
+  { Derivation.instModule with
+    lie_smul := fun r d e => by
+      ext a; simp only [commutator_apply, map_smul, smul_sub, smul_apply] }
+
+instance : LieRingModule (Derivation R A A) A where
+  bracket X a := X a
+  add_lie _ _ m := add_apply m
+  lie_add _ _ _ := Derivation.map_add _ _ _
+  leibniz_lie _ _ _ := by rw [commutator_apply]; abel
+
+instance : LieModule R (Derivation R A A) A where
+  smul_lie _ _ _ := rfl
+  lie_smul _ _ _ := Derivation.map_smul_of_tower _ _ _
+
+@[simp]
+lemma bracket_eq_fun (X : Derivation R A A) (a : A) : ⁅X, a⁆ = X a := rfl
+
+section CompatibleDerivations
+variable {A' : Type*} [CommRing A'] [Algebra R A'] [Algebra A A'] [IsScalarTower R A A']
+attribute [local instance 100] LieRing.ofAssociativeRing
+
+variable (R A A') in
+/-- Let `σ : A → A'` be a an homomorphism. A derivation `d : A → A` and a derivation
+`d' : A' → A'` are called compatible if `d' ∘ σ = σ ∘ d`. Couples of derivations
+with this property form a Lie subalgebra of all couples of derivations. -/
+def couple : LieSubalgebra R (Derivation R A' A' × Derivation R A A) where
+  carrier := { x | x.fst.compAlgebraMapL R A A' A' = (Algebra.ofId A A').toLinearMap.compDer x.snd }
+  add_mem' := by simp_all
+  zero_mem' := by simp
+  smul_mem' := by simp_all
+  lie_mem' {x y} hx hy := by
+    have hxx (a : A) := congrArg (fun f => f a) hx
+    have hyy (a : A) := congrArg (fun f => f a) hy
+    ext z
+    simp at hxx hyy
+    simp [Derivation.commutator_apply, hxx, hyy]
+
+namespace Compatible
+lemma mem (x : (Derivation R A' A') × (Derivation R A A)) :
+    x ∈ couple R A A' ↔ x.1 ∘ Algebra.ofId A A' = Algebra.ofId A A' ∘ x.2 := by
+  constructor
+  · intro hx; ext a; exact congrArg (· a) hx
+  · intro hx; ext a; exact congrArg (· a) hx
+
+/-- Generate an element of `couple` from `x y` satisfying the compatibility equation. -/
+def mk (x : Derivation R A' A') (y : Derivation R A A)
+  (h : x ∘ (Algebra.ofId A A') = (Algebra.ofId A A') ∘ y) : couple R A A' :=
+⟨(x, y), (Compatible.mem _).mpr h⟩
+
+lemma mk_left (x : Derivation R A' A') (y : Derivation R A A)
+    (h : x ∘ (Algebra.ofId A A') = (Algebra.ofId A A') ∘ y) : (mk x y h).1.1 = x := rfl
+
+lemma mk_right (x : Derivation R A' A') (y : Derivation R A A)
+    (h : x ∘ (Algebra.ofId A A') = (Algebra.ofId A A') ∘ y) : (mk x y h).1.2 = y := rfl
+
+lemma apply (x : couple R A A') (a : A) :
+    x.1.1 (Algebra.ofId A A' a) = (Algebra.ofId A A') (x.1.2 a) := by
+  exact congrArg (· a) x.2
+
+end Compatible
+
+end CompatibleDerivations
+
+end LieStructures
+
+end Derivation
+```

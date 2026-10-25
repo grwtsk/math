@@ -1,0 +1,114 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.RankOne.Variant4843075f18a3064381bad8dfe2aa45d8376f046aa3d8c0b298dbf1ff5273e5f9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `042124f35d3465e95890c6e641d11fc1ac8f9876` · SHA-256 `aee5e8fd5cd20509583e396b95520f51c8b9df1861257bf28ed8a1ee3bc9e454`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.MathematicalLogic
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ValueGroupEquivWithZeroMulInt.Variant21e5cad97778280f027a320f90e2f29b1cdd4e5b01e2b9d8f73d725ef8bf8f51","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"21e5cad97778280f027a320f90e2f29b1cdd4e5b01e2b9d8f73d725ef8bf8f51","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.Foundations.SourceCorpus.ValueGroupEquivWithZeroMulInt.Variant21e5cad97778280f027a320f90e2f29b1cdd4e5b01e2b9d8f73d725ef8bf8f51","mathematical_subject":"Logic.Foundations","original_sha256":"21e5cad97778280f027a320f90e2f29b1cdd4e5b01e2b9d8f73d725ef8bf8f51","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/Valuation/Discrete/RankOne.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 María Inés de Frutos-Fernández. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: María Inés de Frutos-Fernández, Filippo A. E. Nuccio
+-/
+module
+
+public import Mathlib.RingTheory.Valuation.Discrete.Basic
+public import Mathlib.RingTheory.Valuation.RankOne
+public import Mathlib.Data.Int.WithZero
+
+/-!
+# Discrete valuations have rank one
+
+## Main Definitions and Results
+* `Valuation.IsRankOneDiscrete.valueGroup₀_equiv_withZeroMulInt` : the order-preserving isomorphism
+  between the `ValueGroup₀` of a discrete valuation and `ℤᵐ⁰`.
+* `Valuation.IsRankOneDiscrete.rankOne` : a discrete valuation has rank one.
+
+## Tags
+valuation, discrete, rank one
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ValueGroupEquivWithZeroMulInt.Variant21e5cad97778280f027a320f90e2f29b1cdd4e5b01e2b9d8f73d725ef8bf8f51
+
+@[expose] public section
+
+namespace Valuation.IsRankOneDiscrete
+
+open WithZero MonoidWithZeroHom NNReal WithZeroMulInt
+
+variable {Γ : Type*} [LinearOrderedCommGroupWithZero Γ]
+
+section Ring
+
+variable {R : Type*} [Ring R]
+
+section LinearOrderedCommGroupWithZero
+
+variable (v : Valuation R Γ) [hv : v.IsRankOneDiscrete]
+
+/-- An order-preserving isomorphism between the `ValueGroup₀` of a discrete valuation and `ℤᵐ⁰`.
+TODO: rename this into lowerCamelCase. -/
+@[simps!]
+noncomputable def valueGroup₀_equiv_withZeroMulInt : ValueGroup₀ (.ofClass v) ≃*o ℤᵐ⁰ where
+  __ := MulEquiv.withZero (intEquivOfZPowersEqTop _
+    (Subgroup.zpowers_inv (g := hv.generator') ▸ hv.generator'_zpowers_eq_top)).symm
+  map_le_map_iff' {x y} := by
+    rw [(WithZero.map'_strictMono (MulEquiv.strictMono_symm (mulintEquivOfZPowersEqTop_strictMono
+    (Subgroup.zpowers_inv (g := hv.generator') ▸ hv.generator'_zpowers_eq_top)
+    (Left.one_lt_inv_iff.mpr hv.generator'_lt_one)))).le_iff_le]
+
+lemma valueGroup₀_equiv_withZeroMulInt_apply_zero :
+    valueGroup₀_equiv_withZeroMulInt v 0 = 0 := by simp
+
+lemma valueGroup₀_equiv_withZeroMulInt_apply_zpow (k : ℤ) :
+    valueGroup₀_equiv_withZeroMulInt v (hv.generator' ^ k) = WithZero.exp (- k) := by
+  simp [WithZero.exp, ← mulintEquivOfZPowersEqTop_symm_apply_zpow
+    (Subgroup.zpowers_inv (g := hv.generator') ▸ hv.generator'_zpowers_eq_top)]
+
+lemma valueGroup₀_equiv_withZeroMulInt_strictMono :
+    StrictMono (valueGroup₀_equiv_withZeroMulInt v) := by
+  intro x y hxy
+  rwa [(WithZero.map'_strictMono (MulEquiv.strictMono_symm (mulintEquivOfZPowersEqTop_strictMono
+    (Subgroup.zpowers_inv (g := hv.generator') ▸ hv.generator'_zpowers_eq_top)
+    (Left.one_lt_inv_iff.mpr hv.generator'_lt_one)))).lt_iff_lt]
+
+/-- A discrete valuation has rank one. -/
+@[instance_reducible]
+noncomputable def rankOne {e : ℝ≥0} (he : 1 < e) : v.RankOne where
+  hom' := (toNNReal (ne_of_gt (lt_trans zero_lt_one he))).comp
+      (.ofClass (valueGroup₀_equiv_withZeroMulInt v))
+  strictMono' := (toNNReal_strictMono he).comp (valueGroup₀_equiv_withZeroMulInt_strictMono v)
+  exists_val_nontrivial := IsNontrivial.exists_val_nontrivial
+
+end LinearOrderedCommGroupWithZero
+
+section WithZeroMulInt
+
+variable {v : Valuation R ℤᵐ⁰} [hv : v.IsRankOneDiscrete]
+
+lemma valueGroup₀_equiv_withZeroMulInt_restrict_apply_of_surjective (hsurj : Function.Surjective v)
+    (x : R) : (valueGroup₀_equiv_withZeroMulInt v) (v.restrict x) = v x := by
+  simp only [Valuation.restrict_def, ValueGroup₀.restrict₀_apply,
+    valueGroup₀_equiv_withZeroMulInt_apply]
+  split_ifs with h0 <;>
+  simp only [MonoidWithZeroHom.coe_ofClass] at h0
+  · simp [h0]
+  · rw [WithZero.map'_coe, ← coe_unzero h0, WithZero.coe_inj,
+    ← (MulEquiv.injective (intEquivOfZPowersEqTop _
+    (Subgroup.zpowers_inv (g := hv.generator') ▸ hv.generator'_zpowers_eq_top))).eq_iff]
+    ext
+    simp [generator', generator_eq_exp_neg_one_of_surjective hsurj, toAdd_unzero_eq_log h0,
+      exp_log h0]
+
+end WithZeroMulInt
+
+end Ring
+
+end Valuation.IsRankOneDiscrete
+```

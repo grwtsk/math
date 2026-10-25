@@ -1,0 +1,121 @@
+# solve
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:4c8fb9301a00b696d25054e93cdf9a7232a476e5542ac7afbb86e4dc5a710d8c",
+  "kind": "def",
+  "lexical_name": "solve",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "solve--6b29adf6b08d7333ec3e379f",
+  "source": {
+    "blob": "5e07f66a75406425f659ddd9108e560034a3fcc7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 421,
+    "line": 382,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9be74301f477caf46e487fb94991cd9f6e7199f58092b3a0bdc24572ee32421c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6b29adf6b08d7333ec3e379f8eaac4740c7223b8a43e02f79470f79352c83c0a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9be74301f477caf46e487fb94991cd9f6e7199f58092b3a0bdc24572ee32421c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:4c8fb9301a00b696d25054e93cdf9a7232a476e5542ac7afbb86e4dc5a710d8c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 382–421.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def solve (t : Q(Prop)) : MetaM Expr := do
+  let rest {u : Level} (α : Q(Type u)) z e (relDesired : OrderRel) : MetaM Expr := do
+    let zα ← synthInstanceQ q(Zero $α)
+    assumeInstancesCommute
+    let .true ← isDefEq z q(0 : $α) | throwError "not a positivity goal"
+    let pα ← synthInstanceQ q(PartialOrder $α)
+    assumeInstancesCommute
+    let r ← catchNone <| Meta.Positivity.core zα pα e
+    let throw (a b : String) : MetaM Expr := throwError
+      "failed to prove {a}, but it would be possible to prove {b} if desired"
+    let p ← show MetaM Expr from match relDesired, r with
+    | .lt, .positive p
+    | .le, .nonnegative p
+    | .ne, .nonzero p => pure p
+    | .le, .positive p => pure q(le_of_lt $p)
+    | .ne, .positive p => pure q(ne_of_gt $p)
+    | .ne', .positive p => pure q(ne_of_lt $p)
+    | .ne', .nonzero p => pure q(Ne.symm $p)
+    | .lt, .nonnegative _ => throw "strict positivity" "nonnegativity"
+    | .lt, .nonzero _ => throw "strict positivity" "nonzeroness"
+    | .le, .nonzero _ => throw "nonnegativity" "nonzeroness"
+    | .ne, .nonnegative _
+    | .ne', .nonnegative _ => throw "nonzeroness" "nonnegativity"
+    | _, .none => throwError "failed to prove positivity/nonnegativity/nonzeroness"
+    pure p
+  match t with
+  | ~q(@LE.le $α $_a $z $e) => rest α z e .le
+  | ~q(@LT.lt $α $_a $z $e) => rest α z e .lt
+  | ~q($a ≠ ($b : ($α : Type _))) =>
+    let _zα ← synthInstanceQ q(Zero $α)
+    if ← isDefEq b q((0 : $α)) then
+      rest α b a .ne
+    else
+      let .true ← isDefEq a q((0 : $α)) | throwError "not a positivity goal"
+      rest α a b .ne'
+  | _ => throwError "not a positivity goal"
+
+/-- The main entry point to the `positivity` tactic. Given a goal `goal` of the form `0 [≤/</≠] e`,
+attempts to recurse on the structure of `e` to prove the goal.
+It will either close `goal` or fail. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9be74301f477caf46e487fb94991cd9f6e7199f58092b3a0bdc24572ee32421c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variant9be74301f477caf46e487fb94991cd9f6e7199f58092b3a0bdc24572ee32421c.lean#L382).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5e07f66a75406425f659ddd9108e560034a3fcc7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

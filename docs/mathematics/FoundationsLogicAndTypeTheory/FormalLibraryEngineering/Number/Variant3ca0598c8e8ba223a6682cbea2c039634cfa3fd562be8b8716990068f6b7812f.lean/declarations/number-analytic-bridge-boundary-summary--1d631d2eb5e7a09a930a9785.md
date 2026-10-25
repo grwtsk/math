@@ -1,0 +1,115 @@
+# number_analytic_bridge_boundary_summary
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "81210c2bf0dd0da160ae5b0b96189438846e22f0",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 192,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/3c/3ca0598c8e8ba223a6682cbea2c039634cfa3fd562be8b8716990068f6b7812f.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:bc3f2633-d2de-7e32-6000-fe106c56c34b",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:85f03377-30cd-a731-0efc-27320eb5ac3e",
+  "kind": "theorem",
+  "lexical_name": "number_analytic_bridge_boundary_summary",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "number-analytic-bridge-boundary-summary--1d631d2eb5e7a09a930a9785",
+  "source": {
+    "blob": "81210c2bf0dd0da160ae5b0b96189438846e22f0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 213,
+    "line": 192,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Number/Variant3ca0598c8e8ba223a6682cbea2c039634cfa3fd562be8b8716990068f6b7812f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1d631d2eb5e7a09a930a97857a83cf7c3887864a815feb476daa9a694f884b0a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Number/Variant3ca0598c8e8ba223a6682cbea2c039634cfa3fd562be8b8716990068f6b7812f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:85f03377-30cd-a731-0efc-27320eb5ac3e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 192–213.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem number_analytic_bridge_boundary_summary
+    (B : NumberToAnalyticBridge) :
+    B.numberPayload.finiteSound ∧
+      B.analyticShadow.authority.sound ∧
+      B.numberToAnalyticSound ∧
+      B.analyticToNumberSound ∧
+      B.numberRoundTripSound ∧
+      B.analyticRoundTripSound ∧
+      ¬ ArithmeticPayloadOwnsFullAnalyticNumberObject B.numberPayload ∧
+      ¬ AnalyticNumberShadowIsFullAnalyticNumberObject B.analyticShadow :=
+  ⟨B.numberPayload.finiteSoundProof,
+    B.analyticShadow.authority.soundProof,
+    B.numberToAnalyticProof,
+    B.analyticToNumberProof,
+    B.numberRoundTripProof,
+    B.analyticRoundTripProof,
+    arithmetic_payload_not_full_analytic_number_object B.numberPayload,
+    analytic_shadow_not_full_analytic_number_object B.analyticShadow⟩
+
+end Number
+end Bridge
+end AnalyticNumber
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Number/Variant3ca0598c8e8ba223a6682cbea2c039634cfa3fd562be8b8716990068f6b7812f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Number/Variant3ca0598c8e8ba223a6682cbea2c039634cfa3fd562be8b8716990068f6b7812f.lean#L192).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `81210c2bf0dd0da160ae5b0b96189438846e22f0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

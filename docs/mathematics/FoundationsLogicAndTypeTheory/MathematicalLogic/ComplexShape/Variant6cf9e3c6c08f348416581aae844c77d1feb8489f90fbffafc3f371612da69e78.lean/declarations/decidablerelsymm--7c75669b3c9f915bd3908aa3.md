@@ -1,0 +1,86 @@
+# decidableRelSymm
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:6d6bf24c9ec8830b614889a11e588bdb2f4a1c0da162f9b40b30297e53109fa9",
+  "kind": "def",
+  "lexical_name": "decidableRelSymm",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "decidablerelsymm--7c75669b3c9f915bd3908aa3",
+  "source": {
+    "blob": "f28889b981c35b3c171eba6a92aa6603a5af8a70",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 104,
+    "line": 100,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ComplexShape/Variant6cf9e3c6c08f348416581aae844c77d1feb8489f90fbffafc3f371612da69e78.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:7c75669b3c9f915bd3908aa36a9baf1fbc6a0cfc76a5f9154c5c7257d6a12e23",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/ComplexShape/Variant6cf9e3c6c08f348416581aae844c77d1feb8489f90fbffafc3f371612da69e78.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:6d6bf24c9ec8830b614889a11e588bdb2f4a1c0da162f9b40b30297e53109fa9`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 100–104.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def decidableRelSymm {α : Type*} (c : ComplexShape α) [DecidableRel c.Rel] :
+    DecidableRel c.symm.Rel :=
+  fun a b ↦ decidable_of_iff (c.Rel b a) Iff.rfl
+
+@[simp]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/MathematicalLogic/ComplexShape/Variant6cf9e3c6c08f348416581aae844c77d1feb8489f90fbffafc3f371612da69e78.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ComplexShape/Variant6cf9e3c6c08f348416581aae844c77d1feb8489f90fbffafc3f371612da69e78.lean#L100).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f28889b981c35b3c171eba6a92aa6603a5af8a70` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

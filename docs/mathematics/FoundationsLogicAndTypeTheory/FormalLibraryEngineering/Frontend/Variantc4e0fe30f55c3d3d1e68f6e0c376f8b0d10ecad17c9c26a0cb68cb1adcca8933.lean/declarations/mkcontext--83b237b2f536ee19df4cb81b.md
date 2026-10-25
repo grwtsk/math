@@ -1,0 +1,161 @@
+# mkContext
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:8e283dd9603f58d392649c2aa88b1fe33d1e664e3400a26bed8e6cfd1cb40ed2",
+  "kind": "def",
+  "lexical_name": "mkContext",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mkcontext--83b237b2f536ee19df4cb81b",
+  "source": {
+    "blob": "494f36ec6c9300d22a88632a31ac279aa14715a8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 134,
+    "line": 55,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Frontend/Variantc4e0fe30f55c3d3d1e68f6e0c376f8b0d10ecad17c9c26a0cb68cb1adcca8933.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:83b237b2f536ee19df4cb81bbb95b1d722ba11f6eb2f07cc153d24c757f7f733",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Frontend/Variantc4e0fe30f55c3d3d1e68f6e0c376f8b0d10ecad17c9c26a0cb68cb1adcca8933.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:8e283dd9603f58d392649c2aa88b1fe33d1e664e3400a26bed8e6cfd1cb40ed2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 55–134.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+public def mkContext (lemmas : Syntax) (goal : MVarId) (ignoreStarArg := false) :
+    TermElabM (VCGen.Context × VCGen.Scope) := do
+  let mut specThms ← getSpecTheorems
+  let mut simpStuff := #[]
+  let mut starArg := false
+  for arg in lemmas[1].getSepArgs do
+    if arg.getKind == ``simpErase then
+      -- Try to interpret as a spec theorem erasure; fall back to simp erasure. A definition
+      -- registered with `attribute [spec] foo` contributes its unfold equations to the database, so
+      -- `[-foo]` must erase each of those proofs, not just a proof named `foo`.
+      let mut erased := false
+      try
+        if let some fvar ← Term.isLocalIdent? arg[1] then
+          if let some specThm ← mkSpecTheoremFromLocal fvar.fvarId! then
+            specThms := specThms.erase specThm.proof
+            erased := true
+        else
+          let id := arg[1]
+          let .ok declName ← observing (realizeGlobalConstNoOverloadWithInfo id)
+            | withRef id <| throwUnknownConstant id.getId.eraseMacroScopes
+          for proof in (← specEraseProofs declName) do
+            specThms := specThms.erase proof
+            erased := true
+      catch _ => pure ()
+      unless erased do
+        simpStuff := simpStuff.push ⟨arg⟩ -- simp tracks its own erase stuff
+    else if arg.getKind == ``simpLemma then
+      unless arg[0].isNone && arg[1].isNone do
+        -- When there is ←, →, ↑ or ↓ then this is for simp
+        simpStuff := simpStuff.push ⟨arg⟩
+        continue
+      let term := arg[2]
+      match ← Term.resolveId? term (withInfo := true) <|> Term.elabCDotFunctionAlias? ⟨term⟩ with
+      | some (.const declName _) =>
+        try
+          let some thm ← mkSpecTheoremFromConst declName
+            | throwError "not a spec theorem"
+          specThms := specThms.insert thm
+        catch _ =>
+          simpStuff := simpStuff.push ⟨arg⟩
+      | some (.fvar fvar) =>
+        try
+          let some thm ← mkSpecTheoremFromLocal fvar
+            | throwError "not a spec theorem"
+          specThms := specThms.insert thm
+        catch _ =>
+          simpStuff := simpStuff.push ⟨arg⟩
+      | _ => withRef term <| throwError "Could not resolve spec theorem `{term}`"
+    else if arg.getKind == ``simpStar then
+      starArg := true
+      simpStuff := simpStuff.push ⟨arg⟩
+    else
+      throwUnsupportedSyntax
+  -- Build a simp context from the collected per-call simp/unfold arguments only. Global
+  -- `@[spec]`-registered equations and unfold definitions already live in the internal spec
+  -- database (inserted at annotation time), so the context is not seeded from `mvcgen_simp`.
+  let stx ← `(tactic| simp +unfoldPartialApp -zeta [$(Syntax.TSepArray.ofElems simpStuff),*])
+  let res ← runTacticM (goals := [goal]) <| mkSimpContext stx.raw
+    (eraseLocal := false)
+    (simpTheorems := pure {})
+    (ignoreStarArg := ignoreStarArg)
+  let simpThms := res.ctx.simpTheorems[0]?.getD {}
+  -- Add local spec hypotheses when `*` is used.
+  if starArg && !ignoreStarArg then
+    let fvars ← getPropHyps
+    for fvar in fvars do
+      unless specThms.isErased (.local fvar) do
+        try
+          if let some thm ← mkSpecTheoremFromLocal fvar then
+            specThms := specThms.insert thm
+        catch _ => continue
+  let backwardRules ← VCGen.mkBackwardRules
+  let allSpecThms ← extendWithSimpSpecs specThms simpThms
+  let ctx : VCGen.Context := { backwardRules }
+  return (ctx, { specs := allSpecThms })
+
+/-- True iff `m` carries a `WPMonad m _ _` instance, i.e. it is a genuine weakest-precondition monad
+rather than a deep-embedding program type with a bespoke `WP`. The `Pred`/`EPred` `outParam`s are left
+as metavariables for instance search to fill; instance search runs at default transparency, while the
+caller reduces types at reducible transparency. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Frontend/Variantc4e0fe30f55c3d3d1e68f6e0c376f8b0d10ecad17c9c26a0cb68cb1adcca8933.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Frontend/Variantc4e0fe30f55c3d3d1e68f6e0c376f8b0d10ecad17c9c26a0cb68cb1adcca8933.lean#L55).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `494f36ec6c9300d22a88632a31ac279aa14715a8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

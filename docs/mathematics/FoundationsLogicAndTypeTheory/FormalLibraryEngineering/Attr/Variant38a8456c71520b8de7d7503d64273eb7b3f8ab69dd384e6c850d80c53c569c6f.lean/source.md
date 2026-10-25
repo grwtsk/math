@@ -1,0 +1,152 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Attr.Variant38a8456c71520b8de7d7503d64273eb7b3f8ab69dd384e6c850d80c53c569c6f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `31accedf065bb210d8e8606226a58db3f541715c` · SHA-256 `bccc33ca7e270500296f804060ac04c5a593569c40d874dbff4726c5e4a776c4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TacticCodeActionEntry.Variantaa178b9fd3fd65bb716bf10781a070239b9f2ff7dc2d58037a92a2f7afd93fbc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"aa178b9fd3fd65bb716bf10781a070239b9f2ff7dc2d58037a92a2f7afd93fbc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.TacticCodeActionEntry.Variantaa178b9fd3fd65bb716bf10781a070239b9f2ff7dc2d58037a92a2f7afd93fbc","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"aa178b9fd3fd65bb716bf10781a070239b9f2ff7dc2d58037a92a2f7afd93fbc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/restored-inputs/packages/batteries/Batteries/CodeAction/Attr.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Mario Carneiro. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mario Carneiro
+-/
+module
+
+public import Lean.Server.CodeActions.Basic
+public import Lean.Compiler.IR.CompilerM
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TacticCodeActionEntry.Variantaa178b9fd3fd65bb716bf10781a070239b9f2ff7dc2d58037a92a2f7afd93fbc
+
+@[expose] public section
+
+/-!
+# Initial setup for code action attributes
+
+* `@[hole_code_action]` and `@[command_code_action]` now live in the Lean repository,
+  and are builtin.
+
+* Attribute `@[tactic_code_action]` collects code actions which will be called
+  on each occurrence of a tactic.
+-/
+namespace Batteries.CodeAction
+
+open Lean Elab Server Lsp RequestM Snapshots
+
+/-- A tactic code action extension. -/
+abbrev TacticCodeAction :=
+  CodeActionParams → Snapshot →
+  (ctx : ContextInfo) → (stack : Syntax.Stack) → (node : InfoTree) →
+  RequestM (Array LazyCodeAction)
+
+/-- A tactic code action extension. -/
+abbrev TacticSeqCodeAction :=
+  CodeActionParams → Snapshot →
+  (ctx : ContextInfo) → (i : Nat) → (stack : Syntax.Stack) → (goals : List MVarId) →
+  RequestM (Array LazyCodeAction)
+
+/-- Read a tactic code action from a declaration of the right type. -/
+def mkTacticCodeAction (n : Name) : ImportM TacticCodeAction := do
+  let { env, opts, .. } ← read
+  IO.ofExcept <| unsafe env.evalConstCheck TacticCodeAction opts ``TacticCodeAction n
+
+/-- Read a tacticSeq code action from a declaration of the right type. -/
+def mkTacticSeqCodeAction (n : Name) : ImportM TacticSeqCodeAction := do
+  let { env, opts, .. } ← read
+  IO.ofExcept <| unsafe env.evalConstCheck TacticSeqCodeAction opts ``TacticSeqCodeAction n
+
+/-- An entry in the tactic code actions extension, containing the attribute arguments. -/
+structure TacticCodeActionEntry where
+  /-- The declaration to tag -/
+  declName : Name
+  /-- The tactic kinds that this extension supports. If empty it is called on all tactic kinds. -/
+  tacticKinds : Array Name
+  deriving Inhabited
+
+/-- The state of the tactic code actions extension. -/
+structure TacticCodeActions where
+  /-- The list of tactic code actions to apply on any tactic. -/
+  onAnyTactic : Array TacticCodeAction := {}
+  /-- The list of tactic code actions to apply when a particular tactic kind is highlighted. -/
+  onTactic : NameMap (Array TacticCodeAction) := {}
+  deriving Inhabited
+
+/-- Insert a tactic code action entry into the `TacticCodeActions` structure. -/
+def TacticCodeActions.insert (self : TacticCodeActions)
+    (tacticKinds : Array Name) (action : TacticCodeAction) : TacticCodeActions :=
+  if tacticKinds.isEmpty then
+    { self with onAnyTactic := self.onAnyTactic.push action }
+  else
+    { self with onTactic := tacticKinds.foldl (init := self.onTactic) fun m a =>
+        m.insert a ((m.getD a #[]).push action) }
+
+/-- An extension which collects all the tactic code actions. -/
+initialize tacticSeqCodeActionExt :
+    PersistentEnvExtension Name (Name × TacticSeqCodeAction)
+      (Array Name × Array TacticSeqCodeAction) ←
+  registerPersistentEnvExtension {
+    mkInitial := pure (#[], #[])
+    addImportedFn := fun as => return (#[], ← as.foldlM (init := #[]) fun m as =>
+      as.foldlM (init := m) fun m a => return m.push (← mkTacticSeqCodeAction a))
+    addEntryFn := fun (s₁, s₂) (n₁, n₂) => (s₁.push n₁, s₂.push n₂)
+    exportEntriesFn := (·.1)
+  }
+
+/-- An extension which collects all the tactic code actions. -/
+initialize tacticCodeActionExt :
+    PersistentEnvExtension TacticCodeActionEntry (TacticCodeActionEntry × TacticCodeAction)
+      (Array TacticCodeActionEntry × TacticCodeActions) ←
+  registerPersistentEnvExtension {
+    mkInitial := pure (#[], {})
+    addImportedFn := fun as => return (#[], ← as.foldlM (init := {}) fun m as =>
+      as.foldlM (init := m) fun m ⟨name, kinds⟩ =>
+        return m.insert kinds (← mkTacticCodeAction name))
+    addEntryFn := fun (s₁, s₂) (e, n₂) => (s₁.push e, s₂.insert e.tacticKinds n₂)
+    exportEntriesFn := (·.1)
+  }
+
+/--
+This attribute marks a code action, which is used to suggest new tactics or replace existing ones.
+
+* `@[tactic_code_action]`: This is a code action which applies to the spaces between tactics,
+  to suggest a new tactic to change the goal state.
+
+* `@[tactic_code_action kind]`: This is a code action which applies to applications of the tactic
+  `kind` (a tactic syntax kind), which can replace the tactic or insert things before or after it.
+
+* `@[tactic_code_action kind₁ kind₂]`: shorthand for
+  `@[tactic_code_action kind₁, tactic_code_action kind₂]`.
+
+* `@[tactic_code_action *]`: This is a tactic code action that applies to all tactics.
+  Use sparingly.
+-/
+syntax (name := tactic_code_action) "tactic_code_action" ("*" <|> (ppSpace ident)*) : attr
+
+initialize
+  registerBuiltinAttribute {
+    name := `tactic_code_action
+    descr := "Declare a new tactic code action, to appear in the code actions on tactics"
+    applicationTime := .afterCompilation
+    add := fun decl stx kind => do
+      unless kind == AttributeKind.global do
+        throwError "invalid attribute 'tactic_code_action', must be global"
+      match stx with
+      | `(attr| tactic_code_action *) =>
+        if (IR.getSorryDep (← getEnv) decl).isSome then return -- ignore in progress definitions
+        modifyEnv (tacticCodeActionExt.addEntry · (⟨decl, #[]⟩, ← mkTacticCodeAction decl))
+      | `(attr| tactic_code_action $[$args]*) =>
+        if args.isEmpty then
+          if (IR.getSorryDep (← getEnv) decl).isSome then return -- ignore in progress definitions
+          modifyEnv (tacticSeqCodeActionExt.addEntry · (decl, ← mkTacticSeqCodeAction decl))
+        else
+          let args ← args.mapM realizeGlobalConstNoOverloadWithInfo
+          if (IR.getSorryDep (← getEnv) decl).isSome then return -- ignore in progress definitions
+          modifyEnv (tacticCodeActionExt.addEntry · (⟨decl, args⟩, ← mkTacticCodeAction decl))
+      | _ => pure ()
+  }
+```

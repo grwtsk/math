@@ -1,0 +1,181 @@
+# elabForIn'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:b0912585b4436b78ea530198c8e6b708080699eca2919f545d81a82c43546431",
+  "kind": "def",
+  "lexical_name": "elabForIn'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "elabforin--4db77ec6f43f1b4861b153a9",
+  "source": {
+    "blob": "375749812ea7bd835d5a3ce0fae993d9fc5888f1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 153,
+    "line": 54,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extra/Variantc5eefa98916a3c958dc08abb0dd8a0b769dc237069b4da608581bc36490d8d17.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:4db77ec6f43f1b4861b153a99d551cb19565d1a5eb89afad5e638fcb4983b1c5",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extra/Variantc5eefa98916a3c958dc08abb0dd8a0b769dc237069b4da608581bc36490d8d17.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:b0912585b4436b78ea530198c8e6b708080699eca2919f545d81a82c43546431`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 54–153.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+@[builtin_term_elab forInMacro'] def elabForIn' : TermElab :=  fun stx expectedType? => do
+  match stx with
+  | `(for_in'% $col $init $body) =>
+        tryPostponeIfNoneOrMVar expectedType?
+        let colE ← elabTerm col none
+        let m ← getMonadForIn expectedType?
+        let colType ← inferType colE
+        let elemType ← mkFreshExprMVar (mkSort (mkLevelSucc (← mkFreshLevelMVar)))
+        let forInInstance ←
+          try
+            let memType ← mkFreshExprMVar (← mkAppM ``Membership #[elemType, colType])
+            mkAppM ``ForIn' #[m, colType, elemType, memType]
+          catch _ =>
+            tryPostpone; throwError "failed to construct `ForIn'` instance for collection{indentExpr colType}\nand monad{indentExpr m}"
+        match (← trySynthInstance forInInstance) with
+        | .some inst  =>
+          let forInFn ← mkConst ``forIn'
+          elabAppArgs forInFn
+            (namedArgs := #[{ name := `m, val := Arg.expr m}, { name := `α, val := Arg.expr elemType}, { name := `self, val := Arg.expr inst }])
+            (args := #[Arg.expr colE, Arg.stx init, Arg.stx body])
+            (expectedType? := expectedType?)
+            (explicit := false) (ellipsis := false) (resultIsOutParamSupport := false)
+        | .undef    => tryPostpone; throwForInFailure forInInstance
+        | .none     => throwForInFailure forInInstance
+  | _ => throwUnsupportedSyntax
+
+namespace Op
+/-!
+
+The elaborator for expression trees of `binop%`, `binop_lazy%`, `leftact%`, `rightact%`, and `unop%` terms.
+
+At a high level, the elaborator tries to solve for a type that each of the operands in the expression tree
+can be coerced to, while taking into account the expected type for the entire expression tree.
+Once this type is computed (and if it exists), it inserts coercions where needed.
+
+Here are brief descriptions of each of the operator types:
+- `binop% f a b` elaborates `f a b` as a binary operator with two operands `a` and `b`,
+  and each operand participates in the protocol.
+- `binop_lazy% f a b` is like `binop%` but elaborates as `f a (fun () => b)`.
+- `unop% f a` elaborates `f a` as a unary operator with one operand `a`, which participates in the protocol.
+- `leftact% f a b` elaborates `f a b` as a left action (the `a` operand "acts upon" the `b` operand).
+  Only `b` participates in the protocol since `a` can have an unrelated type, for example scalar multiplication of vectors.
+- `rightact% f a b` elaborates `f a b` as a right action (the `b` operand "acts upon" the `a` operand).
+  Only `a` participates in the protocol since `b` can have an unrelated type.
+  This is used by `HPow` since, for example, there are both `Real -> Nat -> Real` and `Real -> Real -> Real`
+  exponentiation functions, and we prefer the former in the case of `x ^ 2`, but `binop%` would choose the latter. (#2854)
+- There are also `binrel%` and `binrel_no_prop%` (see the docstring for `elabBinRelCore`).
+
+The elaborator works as follows:
+
+1- Expand macros.
+2- Convert `Syntax` object corresponding to the `binop%/...` term into a `Tree`.
+   The `toTree` method visits nested `binop%/...` terms and parentheses.
+3- Synthesize pending metavariables without applying default instances and using the
+   `(mayPostpone := true)`.
+4- Tries to compute a maximal type for the tree computed at step 2.
+   We say a type α is smaller than type β if there is a (nondependent) coercion from α to β.
+   We are currently ignoring the case we may have cycles in the coercion graph.
+   If there are "uncomparable" types α and β in the tree, we skip the next step.
+   We say two types are "uncomparable" if there isn't a coercion between them.
+   Note that two types may be "uncomparable" because some typing information may still be missing.
+5- We traverse the tree and inject coercions to the "maximal" type when needed.
+
+Recall that the coercions are expanded eagerly by the elaborator.
+
+Properties:
+
+a) Given `n : Nat` and `i : Nat`, it can successfully elaborate `n + i` and `i + n`. Recall that Lean 3
+   fails on the former.
+
+b) The coercions are inserted in the "leaves" like in Lean 3.
+
+c) There are no coercions "hidden" inside instances, and we can elaborate
+```
+axiom Int.add_comm (i j : Int) : i + j = j + i
+
+example (n : Nat) (i : Int) : n + i = i + n := by
+  rw [Int.add_comm]
+```
+Recall that the `rw` tactic used to fail because our old `binop%` elaborator would hide
+coercions inside of a `HAdd` instance.
+
+Remarks:
+
+* In the new `binop%` and related elaborators the decision whether a coercion will be inserted or not
+  is made at `binop%` elaboration time. This was not the case in the old elaborator.
+  For example, an instance, such as `HAdd Int ?m ?n`, could be created when executing
+  the `binop%` elaborator, and only resolved much later. We try to minimize this problem
+  by synthesizing pending metavariables at step 3.
+
+* For types containing heterogeneous operators (e.g., matrix multiplication), step 4 will fail
+  and we will skip coercion insertion. For example, `x : Matrix Real 5 4` and `y : Matrix Real 4 8`,
+  there is no coercion `Matrix Real 5 4` from `Matrix Real 4 8` and vice-versa, but
+  `x * y` is elaborated successfully and has type `Matrix Real 5 8`.
+
+* The `leftact%` and `rightact%` elaborators are to handle binary operations where only one of
+  the arguments participates in the protocol. For example, in `2 ^ n + y` with `n : Nat` and `y : Real`,
+  we do not want to coerce `n` to be a real as well, but we do want to elaborate `2 : Real`.
+-/
+
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extra/Variantc5eefa98916a3c958dc08abb0dd8a0b769dc237069b4da608581bc36490d8d17.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extra/Variantc5eefa98916a3c958dc08abb0dd8a0b769dc237069b4da608581bc36490d8d17.lean#L54).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `375749812ea7bd835d5a3ce0fae993d9fc5888f1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,155 @@
+# RwLemma.try
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:d9ad8f8fd6b92449be0eb0a66317f45a26fb91afaf519cc5e28de6eeb1155906",
+  "kind": "def",
+  "lexical_name": "RwLemma.try",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "rwlemma-try--e05333858cb2ddd46be9cb05",
+  "source": {
+    "blob": "4cd221f64d49dd86b3f2e27eb7de57ccbe33b0cc",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 166,
+    "line": 93,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Rewrite/Variant48b0335bb520173e6308ec74ea82f7ffb6831c01d05ed8a6526db39f90dd7f77.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:e05333858cb2ddd46be9cb054ebe3d5d5ae1f1369b6cd40b9ababe248ff1d42a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Rewrite/Variant48b0335bb520173e6308ec74ea82f7ffb6831c01d05ed8a6526db39f90dd7f77.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:d9ad8f8fd6b92449be0eb0a66317f45a26fb91afaf519cc5e28de6eeb1155906`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 93–166.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def RwLemma.try (i : RwInfo) (lem : RwLemma) (assignableMVars : Array Expr) :
+    ClickSuggestionsM (Result RwKey) := do
+  let e := i.subExpr
+  let (proof, mvars, binderInfos, eqn) ← lem.name.forallMetaTelescopeReducing
+  let mkApp2 _ lhs rhs ← whnf eqn | throwError "Exected an equality or iff, not {eqn}"
+  let (lhs, rhs) := if lem.symm then (rhs, lhs) else (lhs, rhs)
+  let lhsOrig := lhs; let mctxOrig ← getMCtx
+  unless ← isDefEq lhs e do throwError "{lhs} does not unify with {e}"
+  -- just like in `kabstract`, we compare the `HeadIndex` and number of arguments
+  let lhs ← instantiateMVars lhs
+  -- TODO: if the `headIndex` doesn't match, then use `simp_rw` instead of `rw` in the suggestion,
+  -- instead of just not showing the suggestion.
+  if lhs.toHeadIndex != e.toHeadIndex || lhs.headNumArgs != e.headNumArgs then
+    throwError "{lhs} and {e} do not match according to the head-constant indexing"
+  synthAppInstances `click_suggestions default mvars binderInfos false false
+  let mvars ← mvars.map (·.mvarId!) |>.filterM (not <$> ·.isAssigned)
+  let mut extraGoals := #[]
+  let mut justLemmaName := true
+  let mut rwKind := i.rwKind
+  for mvarId in mvars do
+    let type ← instantiateMVars (← mvarId.getType)
+    if rwKind matches .valid .. then
+      if ← isProp type then
+        if let some fvarId ← withNewMCtxDepth <| findLocalDeclWithType? type then
+          mvarId.assign (.fvar fvarId)
+          justLemmaName := false
+          continue
+    extraGoals := extraGoals.push type
+
+  let replacement ← instantiateMVars rhs
+  let unhelpfulMVars ← hasUnhelpfulMVars mvars assignableMVars (extraGoals.push replacement)
+  let proof ← instantiateMVars proof
+  let isRefl ← isExplicitEq e replacement
+  if let .valid tpCorrect _ := rwKind then
+    if justLemmaName then
+      if ← withMCtx mctxOrig do kabstractFindsPositions i.rootExpr lhsOrig i.pos then
+        rwKind := .valid tpCorrect none
+      else
+        justLemmaName := false
+  let key := {
+    numGoals := extraGoals.size
+    symm := lem.symm
+    nameLength := lem.name.length
+    replacementSize := (← ppExpr replacement).pretty.length
+    name := lem.name.toString
+    replacement := ← abstractMVars replacement
+  }
+  let tactic ← tacticSyntax lem rwKind (← getHypIdent?) proof justLemmaName
+  let isClosing ← (do
+    if extraGoals.isEmpty then
+      if let some rflTarget := i.rflTarget? then
+        return ← withoutModifyingMCtx <| isDefEq replacement rflTarget
+      else if (← read).pos == .root && (← read).hyp?.isNone then
+        return ← succeeds (← mkFreshExprMVar replacement).mvarId!.applyRfl
+    return false)
+  if isClosing then
+    addSolvedSuggestion tactic
+  let mut htmls := #[← exprToHtml replacement]
+  for goal in extraGoals do
+    htmls := htmls.push <div> <strong className="goal-vdash">⊢ </strong> {← exprToHtml goal} </div>
+  let filtered ←
+    if isRefl || unhelpfulMVars then
+      pure none
+    else
+      some <$> mkSuggestion tactic (.element "div" #[] htmls) (isClosing := isClosing)
+  htmls := htmls.push (<div> {← lem.name.toHtml} </div>)
+  let unfiltered ← mkSuggestion tactic (.element "div" #[] htmls) (isClosing := isClosing)
+  let pattern ← do
+    let (_, _, e) ← forallMetaTelescopeReducing (← lem.name.getType)
+    let mkApp2 _ lhs rhs ← whnf e | throwError "Expected equation, not{indentExpr e}"
+    exprToHtml <| if lem.symm then rhs else lhs
+  return { filtered, unfiltered, key, pattern }
+
+end Mathlib.Tactic.ClickSuggestions
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Rewrite/Variant48b0335bb520173e6308ec74ea82f7ffb6831c01d05ed8a6526db39f90dd7f77.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Rewrite/Variant48b0335bb520173e6308ec74ea82f7ffb6831c01d05ed8a6526db39f90dd7f77.lean#L93).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4cd221f64d49dd86b3f2e27eb7de57ccbe33b0cc` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

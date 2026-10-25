@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Metadata.Variant0024927524bb7164389d1ea83e047ea34c7ff1e4686ff88085028f7385c3e171
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `159b3c46218fbd6fe4f61883be96a17b9ab47612` · SHA-256 `f8e8712ddc5b4da30546b2064cfaad7bf91038ec0e7d9fc832d00c86b783bfa5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Command.Variant0cbc44082f18650b4b3fa81a7386f7e75b9853b5c702cd7bbb18d6f1423818e7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0cbc44082f18650b4b3fa81a7386f7e75b9853b5c702cd7bbb18d6f1423818e7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Command.Variant0cbc44082f18650b4b3fa81a7386f7e75b9853b5c702cd7bbb18d6f1423818e7","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"0cbc44082f18650b4b3fa81a7386f7e75b9853b5c702cd7bbb18d6f1423818e7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Native/continuous-assurance/.dev-sessions/review-checks/6a49371b702c396d6f7055954e69f7f26a5e0c4570597e9fa77ea7165739c0a0/lean/sources/0cbc44082f18650b4b3fa81a7386f7e75b9853b5c702cd7bbb18d6f1423818e7/Metadata.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Lean.Elab.Command
+import Candidate
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Command.Variant0cbc44082f18650b4b3fa81a7386f7e75b9853b5c702cd7bbb18d6f1423818e7
+
+open Lean
+
+namespace Surface.ContinuousAssurance
+
+run_cmd Elab.Command.liftTermElabM do
+  let expectedType ← Lean.Elab.Term.elabType (← `(True))
+  let candidate ← Lean.Elab.Term.elabTermEnsuringType (← `(by exact True.intro) ) (some expectedType)
+  Lean.Elab.Term.synthesizeSyntheticMVarsNoPostponing
+  let candidate ← instantiateMVars candidate
+  let env ← getEnv
+  let mut pending := candidate.getUsedConstants.toList
+  let mut visited : NameSet := {}
+  while !pending.isEmpty do
+    let dependency := pending.head!
+    pending := pending.tail!
+    if !visited.contains dependency then
+      visited := visited.insert dependency
+      if let some dependencyInfo := env.find? dependency then
+        logInfo m!"CA_DEV_0de746322765fc51aebac673_USED_CONSTANT:{dependency}"
+        logInfo m!"CA_DEV_0de746322765fc51aebac673_USED_TYPE:{dependency}:{repr dependencyInfo.type}"
+        match dependencyInfo with
+        | .axiomInfo _ => logInfo m!"CA_DEV_0de746322765fc51aebac673_AXIOM:{dependency}"
+        | _ => pure ()
+        if let some body := dependencyInfo.value? true then
+          pending := body.getUsedConstants.toList ++ pending
+  logInfo "CA_DEV_0de746322765fc51aebac673_DEPENDENCY_SCAN_COMPLETE"
+  logInfo "CA_DEV_0de746322765fc51aebac673_AXIOM_SCAN_COMPLETE"
+  logInfo "CA_DEV_0de746322765fc51aebac673_TARGET_DIGEST:3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+
+end Surface.ContinuousAssurance
+```

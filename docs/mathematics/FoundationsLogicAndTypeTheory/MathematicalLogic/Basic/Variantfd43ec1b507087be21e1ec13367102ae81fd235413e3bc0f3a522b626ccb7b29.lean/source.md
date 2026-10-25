@@ -1,0 +1,171 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Basic.Variantfd43ec1b507087be21e1ec13367102ae81fd235413e3bc0f3a522b626ccb7b29
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `24502a5abddf8283f5e178a5e90037d30a8ec499` · SHA-256 `74d889694c41d860af0e12a038b812b9b1b2316a9b42d4bbb81bfdd97e13e7c7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.MathematicalLogic
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CountableIffNonemptyEmbedding.Variantcb76a047e3e6b3e1fd9f992c25f0278b6fe4439ad6424a365a544f35b22301d1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cb76a047e3e6b3e1fd9f992c25f0278b6fe4439ad6424a365a544f35b22301d1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.Foundations.SourceCorpus.CountableIffNonemptyEmbedding.Variantcb76a047e3e6b3e1fd9f992c25f0278b6fe4439ad6424a365a544f35b22301d1","mathematical_subject":"Logic.Foundations","original_sha256":"cb76a047e3e6b3e1fd9f992c25f0278b6fe4439ad6424a365a544f35b22301d1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Basic/Countable/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+module
+
+public import Mathlib.Basic.Countable.Defs
+public import Mathlib.Data.ENat.Defs
+public import Mathlib.Data.Fin.Tuple.Basic
+public import Mathlib.Logic.Equiv.Nat
+
+/-!
+# Countable types
+
+In this file we provide basic instances of the `Countable` typeclass defined elsewhere.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CountableIffNonemptyEmbedding.Variantcb76a047e3e6b3e1fd9f992c25f0278b6fe4439ad6424a365a544f35b22301d1
+
+public section
+
+assert_not_exists Monoid
+
+universe u v w
+
+open Function
+
+instance : Countable ℤ :=
+  Countable.of_equiv ℕ Equiv.intEquivNat.symm
+
+/-!
+### Definition in terms of `Function.Embedding`
+-/
+
+section Embedding
+
+variable {α : Sort u} {β : Sort v}
+
+theorem countable_iff_nonempty_embedding : Countable α ↔ Nonempty (α ↪ ℕ) :=
+  ⟨fun ⟨⟨f, hf⟩⟩ => ⟨⟨f, hf⟩⟩, fun ⟨f⟩ => ⟨⟨f, f.2⟩⟩⟩
+
+theorem uncountable_iff_isEmpty_embedding : Uncountable α ↔ IsEmpty (α ↪ ℕ) := by
+  rw [← not_countable_iff, countable_iff_nonempty_embedding, not_nonempty_iff]
+
+theorem nonempty_embedding_nat (α) [Countable α] : Nonempty (α ↪ ℕ) :=
+  countable_iff_nonempty_embedding.1 ‹_›
+
+protected theorem Function.Embedding.countable [Countable β] (f : α ↪ β) : Countable α :=
+  f.injective.countable
+
+protected lemma Function.Embedding.uncountable [Uncountable α] (f : α ↪ β) : Uncountable β :=
+  f.injective.uncountable
+
+end Embedding
+
+/-!
+### Operations on `Type*`s
+-/
+
+section type
+
+variable {α : Type u} {β : Type v} {π : α → Type w}
+
+instance [Countable α] [Countable β] : Countable (α ⊕ β) := by
+  rcases exists_injective_nat α with ⟨f, hf⟩
+  rcases exists_injective_nat β with ⟨g, hg⟩
+  exact (Equiv.natSumNatEquivNat.injective.comp <| hf.sumMap hg).countable
+
+instance Sum.uncountable_inl [Uncountable α] : Uncountable (α ⊕ β) :=
+  inl_injective.uncountable
+
+instance Sum.uncountable_inr [Uncountable β] : Uncountable (α ⊕ β) :=
+  inr_injective.uncountable
+
+instance Option.instCountable [Countable α] : Countable (Option α) :=
+  Countable.of_equiv _ (Equiv.optionEquivSumPUnit.{0, _} α).symm
+
+instance WithTop.instCountable [Countable α] : Countable (WithTop α) := Option.instCountable
+instance WithBot.instCountable [Countable α] : Countable (WithBot α) := Option.instCountable
+instance ENat.instCountable : Countable ℕ∞ := Option.instCountable
+
+instance Option.instUncountable [Uncountable α] : Uncountable (Option α) :=
+  Injective.uncountable fun _ _ ↦ Option.some_inj.1
+
+instance WithTop.instUncountable [Uncountable α] : Uncountable (WithTop α) := Option.instUncountable
+instance WithBot.instUncountable [Uncountable α] : Uncountable (WithBot α) := Option.instUncountable
+
+@[simp] lemma untopD_coe_enat (d n : ℕ) : WithTop.untopD d (n : ℕ∞) = n := rfl
+
+instance [Countable α] [Countable β] : Countable (α × β) := by
+  rcases exists_injective_nat α with ⟨f, hf⟩
+  rcases exists_injective_nat β with ⟨g, hg⟩
+  exact (Nat.pairEquiv.injective.comp <| hf.prodMap hg).countable
+
+instance [Uncountable α] [Nonempty β] : Uncountable (α × β) := by
+  inhabit β
+  exact (Prod.mk_left_injective default).uncountable
+
+instance [Nonempty α] [Uncountable β] : Uncountable (α × β) := by
+  inhabit α
+  exact (Prod.mk_right_injective default).uncountable
+
+lemma countable_left_of_prod_of_nonempty [Nonempty β] (h : Countable (α × β)) : Countable α := by
+  contrapose! h
+  infer_instance
+
+lemma countable_right_of_prod_of_nonempty [Nonempty α] (h : Countable (α × β)) : Countable β := by
+  contrapose! h
+  infer_instance
+
+lemma countable_prod_swap [Countable (α × β)] : Countable (β × α) :=
+  Countable.of_equiv _ (Equiv.prodComm α β)
+
+instance [Countable α] [∀ a, Countable (π a)] : Countable (Sigma π) := by
+  rcases exists_injective_nat α with ⟨f, hf⟩
+  choose g hg using fun a => exists_injective_nat (π a)
+  exact ((Equiv.sigmaEquivProd ℕ ℕ).injective.comp <| hf.sigma_map hg).countable
+
+lemma Sigma.uncountable (a : α) [Uncountable (π a)] : Uncountable (Sigma π) :=
+  (sigma_mk_injective (i := a)).uncountable
+
+instance [Nonempty α] [∀ a, Uncountable (π a)] : Uncountable (Sigma π) := by
+  inhabit α; exact Sigma.uncountable default
+
+instance (priority := 500) SetCoe.countable [Countable α] (s : Set α) : Countable s :=
+  Subtype.countable
+
+end type
+
+section sort
+
+variable {α : Sort u} {β : Sort v} {π : α → Sort w}
+
+/-!
+### Operations on `Sort*`s
+-/
+
+instance [Countable α] [Countable β] : Countable (α ⊕' β) :=
+  Countable.of_equiv (PLift α ⊕ PLift β) (Equiv.plift.sumPSum Equiv.plift)
+
+instance [Countable α] [Countable β] : Countable (PProd α β) :=
+  Countable.of_equiv (PLift α × PLift β) (Equiv.plift.prodPProd Equiv.plift)
+
+instance [Countable α] [∀ a, Countable (π a)] : Countable (PSigma π) :=
+  Countable.of_equiv (Σ a : PLift α, PLift (π a.down)) (Equiv.psigmaEquivSigmaPLift π).symm
+
+instance [Finite α] [∀ a, Countable (π a)] : Countable (∀ a, π a) := by
+  have (n : ℕ) : Countable (Fin n → ℕ) := by
+    induction n with
+    | zero => infer_instance
+    | succ n ihn => exact Countable.of_equiv (ℕ × (Fin n → ℕ)) (Fin.consEquiv fun _ ↦ ℕ)
+  rcases Finite.exists_equiv_fin α with ⟨n, ⟨e⟩⟩
+  have f := fun a => (nonempty_embedding_nat (π a)).some
+  exact ((Embedding.piCongrRight f).trans (Equiv.piCongrLeft' _ e).toEmbedding).countable
+
+end sort
+```

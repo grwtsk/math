@@ -1,0 +1,86 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lemmas.Variant97e2c8678cf0656ec05619da1a6f869619367229261bbf6adaae794285406502
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `35178e6062fcd2792c6fab3f7f917104efe5b47d` · SHA-256 `edad586f6998588b35206f7167da7ee5cc0cd555e7e94e08e233947cd0edcf42`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IteEqLtDistrib.Variant48bd7640ee71e20038c7782a2ad4b1a01907b31bc1f4b0eecaf58c7a5c67efdf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"48bd7640ee71e20038c7782a2ad4b1a01907b31bc1f4b0eecaf58c7a5c67efdf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.IteEqLtDistrib.Variant48bd7640ee71e20038c7782a2ad4b1a01907b31bc1f4b0eecaf58c7a5c67efdf","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"48bd7640ee71e20038c7782a2ad4b1a01907b31bc1f4b0eecaf58c7a5c67efdf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Init/Data/Ordering/Lemmas.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2017 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+
+import Mathlib.Init.Data.Ordering.Basic
+import Mathlib.Init.Algebra.Classes
+import Mathlib.Init.IteSimp
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IteEqLtDistrib.Variant48bd7640ee71e20038c7782a2ad4b1a01907b31bc1f4b0eecaf58c7a5c67efdf
+
+#align_import init.data.ordering.lemmas from "leanprover-community/lean"@"4bd314f7bd5e0c9e813fc201f1279a23f13f9f1d"
+
+/-!
+# Some `Ordering` lemmas
+-/
+
+universe u
+
+namespace Ordering
+
+@[simp]
+theorem ite_eq_lt_distrib (c : Prop) [Decidable c] (a b : Ordering) :
+    ((if c then a else b) = Ordering.lt) = if c then a = Ordering.lt else b = Ordering.lt := by
+  by_cases c <;> simp [*]
+#align ordering.ite_eq_lt_distrib Ordering.ite_eq_lt_distrib
+
+@[simp]
+theorem ite_eq_eq_distrib (c : Prop) [Decidable c] (a b : Ordering) :
+    ((if c then a else b) = Ordering.eq) = if c then a = Ordering.eq else b = Ordering.eq := by
+  by_cases c <;> simp [*]
+#align ordering.ite_eq_eq_distrib Ordering.ite_eq_eq_distrib
+
+@[simp]
+theorem ite_eq_gt_distrib (c : Prop) [Decidable c] (a b : Ordering) :
+    ((if c then a else b) = Ordering.gt) = if c then a = Ordering.gt else b = Ordering.gt := by
+  by_cases c <;> simp [*]
+#align ordering.ite_eq_gt_distrib Ordering.ite_eq_gt_distrib
+
+end Ordering
+
+section
+
+variable {α : Type u} {lt : α → α → Prop} [DecidableRel lt]
+
+attribute [local simp] cmpUsing
+
+@[simp]
+theorem cmpUsing_eq_lt (a b : α) : (cmpUsing lt a b = Ordering.lt) = lt a b := by simp
+#align cmp_using_eq_lt cmpUsing_eq_lt
+
+@[simp]
+theorem cmpUsing_eq_gt [IsStrictOrder α lt] (a b : α) :
+    (cmpUsing lt a b = Ordering.gt) = lt b a := by
+  simp only [cmpUsing, Ordering.ite_eq_gt_distrib, if_false_right_eq_and, and_true,
+    if_false_left_eq_and]
+  apply propext
+  apply Iff.intro
+  · exact fun h => h.2
+  · intro hba
+    constructor
+    · intro hab
+      exact absurd (_root_.trans hab hba) (irrefl a)
+    · assumption
+#align cmp_using_eq_gt cmpUsing_eq_gt
+
+@[simp]
+theorem cmpUsing_eq_eq (a b : α) : (cmpUsing lt a b = Ordering.eq) = (¬lt a b ∧ ¬lt b a) := by simp
+#align cmp_using_eq_eq cmpUsing_eq_eq
+
+end
+```

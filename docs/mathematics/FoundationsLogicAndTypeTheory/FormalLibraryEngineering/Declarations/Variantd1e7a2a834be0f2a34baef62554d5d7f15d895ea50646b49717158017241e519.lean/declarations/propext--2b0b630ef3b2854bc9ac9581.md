@@ -1,0 +1,172 @@
+# &#96;propext&#96;,
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:532ae9dbc1136c4f1aff136c7e1ead106ff43cc2c48d4e177de414418023c016",
+  "kind": "axioms",
+  "lexical_name": "`propext`,",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "propext--2b0b630ef3b2854bc9ac9581",
+  "source": {
+    "blob": "1a5001e3eb33a922aeb0e4b40fc1c8cbe28f042a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 265,
+    "line": 175,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Declarations/Variantd1e7a2a834be0f2a34baef62554d5d7f15d895ea50646b49717158017241e519.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2b0b630ef3b2854bc9ac95817078e6ca270c2047ebd118fe761ef107c0637435",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Declarations/Variantd1e7a2a834be0f2a34baef62554d5d7f15d895ea50646b49717158017241e519.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `axioms` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:532ae9dbc1136c4f1aff136c7e1ead106ff43cc2c48d4e177de414418023c016`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 175–265.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+axioms `propext`, `Classical.choice`, `Quot.sound`, and replays the solution through the Lean kernel (and, with
+`enable_nanoda`, the independent [NanoDa](https://github.com/ammkrn/nanoda_lib) kernel).
+
+| file | role | trusted? |
+|---|---|---|
+| `ChallengeDeps.lean` | the counting functions (nontrivial zeros of Mathlib's `riemannZeta` / `DirichletCharacter.LFunction`, multiplicity via `analyticOrderAt`, N, N₀*, N₀ˢ, N_d) and the Theorem-D constant c₁*, **defined from Mathlib alone** — exactly the definitions the challenge statements depend on, nothing else; inlined character-for-character into `Challenge.lean` (likewise `ChallengeDeps/XiPrime.lean` into `Challenge/XiPrime.lean`), so that each challenge module imports only Mathlib and can be read on its own | yes — read it (15 definitions) |
+| `Challenge.lean` | seventeen theorem statements: Theorems A–E, each at the constant stated in the paper (2/3 on-line, 2/3 simple, 5/6 distinct, the optimal-window constants 2 − 1/c₁* and (3 − 1/c₁*)/2, and the Dirichlet analogues), proofs `sorry`; imports only Mathlib (the definition layer is inlined) | yes — read it |
+| `Solution.lean` | the same seventeen statements, proved by delegating to the `Zeta23` library | no (checked by Comparator) |
+| `comparator.json` | Comparator configuration (theorem names, permitted axioms) — the submitted configuration | yes |
+| `ChallengeDeps/XiPrime.lean`, `Challenge/XiPrime.lean`, `Solution/XiPrime.lean`, `comparator-xiprime.json` | the second topic: the counting functions for the zeros of ξ′ (defined from Mathlib alone) and six statements about them (all zeros in the open strip; Re ξ′/ξ > 0 on Re s ≥ 1; ≥ 0.85838 simple and on the line, ≥ 0.92919 distinct, and the quartic-window constants), proofs `sorry`; its solution and configuration | the challenge files, yes; the solution, no |
+| `scripts/PrintAxioms.lean`, `scripts/PrintAxioms/XiPrime.lean`, `scripts/PrintAxioms/PairCeiling.lean` | `#print axioms` for the statements — the quick check without Comparator (`PairCeiling` has no trusted statement file: its theorems carry the displayed hypothesis `EnclOK`, see above) | — |
+
+### Quick check (no extra tooling)
+
+```bash
+lake build Solution                      # builds the Zeta23 cone the seventeen theorems need (+ Mathlib)
+lake env lean scripts/PrintAxioms.lean
+# every line must read:  '<name>' depends on axioms: [propext, Classical.choice, Quot.sound]
+```
+
+### Full Comparator run
+
+`scripts/verify-comparator.sh` is the template's pinned runner, with the pins moved to this project's toolchain: it
+checks out and builds Comparator and lean4export at their `v4.33.0-rc2` tags (matching `lean-toolchain`), Landrun and
+NanoDa at fixed commits, fetches the Mathlib cache, and runs Comparator through `scripts/landrun-wrapper.sh` (which
+supplies Landrun's command delimiter and refuses any request to switch off part of the sandbox). It needs Linux, Git,
+Go, Rust/Cargo, Python 3, `lake`, and a working Landrun (Landlock) sandbox.
+
+```bash
+./scripts/verify-comparator.sh                          # comparator.json — the submitted configuration
+./scripts/verify-comparator.sh comparator-xiprime.json  # the ξ′ topic
+```
+
+Success ends with `Your solution is okay!`. Do not rely on a run against a tree in which you have already built
+`Challenge`/`Solution` yourself (Comparator README, assumption 2); a clean checkout, or deleting
+`.lake/build/lib/lean/{Challenge,Solution}*`, lets Comparator build both in its sandbox. To run Comparator by hand
+instead (its README has the details; any release of the same era as `lean-toolchain` works):
+
+```bash
+systemd-run --property=RestrictAddressFamilies=~AF_UNIX --user --pty -E PATH="$PATH" \
+  --working-directory "$(pwd)" -- \
+  bash -c 'lake env /path/to/comparator/.lake/build/bin/comparator comparator.json'
+```
+
+The three `[[lean_lib]]` stanzas at the end of `lakefile.toml` make the modules `ChallengeDeps`, `Challenge`,
+`Solution` (and their `*.XiPrime` submodules) resolvable by those bare names, as Comparator expects.
+
+### Layout convention: one topic per configuration
+
+The base set is `Challenge.lean` / `Solution.lean` / `comparator.json` / `scripts/PrintAxioms.lean` (Theorems A–E,
+each at the constant stated in the paper). Every further group of results is a **topic** `<Topic>` with its own files
+`Challenge/<Topic>.lean` (`import Mathlib` only, with the definition layer inlined verbatim; statements `:= by sorry` —
+trusted), `ChallengeDeps/<Topic>.lean` (only if the statements need notions beyond `ChallengeDeps.lean`; Mathlib-only
+definitions, each a character-for-character copy of the corresponding Zeta23 definition — trusted),
+`Solution/<Topic>.lean` (the same statements byte-for-byte, proved by delegating to Zeta23 — untrusted),
+`comparator-<topic>.json` and `scripts/PrintAxioms/<Topic>.lean`. Rules for the trusted side: Mathlib only, never
+`import Zeta23…`; theorem names in the root namespace, globally unique and descriptive; constants that Zeta23 carries
+as definitions (`HD`, `GD`, `cStar`, window constants, …) written out in closed Mathlib form in the challenge and
+bridged by a lemma on the solution side; statements in the ε-form over the counting functions of `ChallengeDeps`,
+with every hypothesis of the Zeta23 theorem (e.g. `1 < q`, `χ.IsPrimitive`) as an explicit binder; a statement enters a
+challenge file only when the Zeta23 theorem it delegates to is sorry-free with `#print axioms` = the standard three; a
+deps module contains exactly the definitions in the dependency closure of its challenge statements. The topic in the
+tree is `XiPrime` (above).
+
+## Submitting to Palomar
+
+The [Palomar](https://palomar-registry.org/) submission of this formalization is the repository
+`anthropics/formal-math` at a pinned commit, with **selected project** `zeta23` (this directory; Palomar's
+[CONTRIBUTING.md](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md), §6.1) and
+**Comparator configuration path** `zeta23/comparator.json`. The licence file is the repository-root `LICENSE`
+(Apache-2.0, identical to the copy here); `zeta23/lean-toolchain` is the toolchain; the metadata is
+`zeta23/formalization.yaml`, whose `project.description` is the registry abstract. Submissions go through
+<https://submit.palomar-registry.org/> with the full 40-character commit SHA. The ξ′ configuration
+`zeta23/comparator-xiprime.json` is not submitted.
+
+## Provenance and attribution
+
+Files under `Zeta23/FromPNTPlus/` are ported from the
+[PrimeNumberTheoremAnd](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd) project (Apache 2.0); each
+carries a header naming the upstream file and commit, the upstream copyright and license, and the local
+modifications; the upstream text (including its informal comments) is otherwise unedited. `Zeta23/LinAlg/` (the
+linear-algebra core of §3: von Neumann's trace inequality for Hermitian matrices, both directions of Sylvester's law
+of inertia, the rank–trace inequality and Weyl's bound) was produced first, as a self-contained development (namespace `RHLinalg`)
+accompanying §3 of the paper, and is incorporated here unchanged; it has no upstream outside this project. Everything builds on [Mathlib](https://github.com/leanprover-community/mathlib4).
+
+Authorship: **all Lean code in this repository — `Zeta23/LinAlg/` included — was written by Claude (Anthropic)**; the
+paper's authors (Levent Alpöge and Ralph Furman) wrote the mathematics being formalized and, with Eric Easley, directed
+the formalization and reviewed its outputs; they wrote no Lean by hand. `formalization.yaml` (`project.authors`,
+`automation`, `review`) and `AUDIT.md` record the same account.
+
+Released under the Apache License, Version 2.0 — see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Declarations/Variantd1e7a2a834be0f2a34baef62554d5d7f15d895ea50646b49717158017241e519.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Declarations/Variantd1e7a2a834be0f2a34baef62554d5d7f15d895ea50646b49717158017241e519.lean#L175).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1a5001e3eb33a922aeb0e4b40fc1c8cbe28f042a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

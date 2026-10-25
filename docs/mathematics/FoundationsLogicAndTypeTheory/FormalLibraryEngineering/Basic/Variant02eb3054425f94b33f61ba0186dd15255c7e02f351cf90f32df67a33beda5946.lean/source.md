@@ -1,0 +1,105 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Basic.Variant02eb3054425f94b33f61ba0186dd15255c7e02f351cf90f32df67a33beda5946
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `562db8925f5df8d0ee6ee0b48bfafd4e7bcc2833` · SHA-256 `b587b2825c0848dec3adc96fd90460a61e6b92aad1f8fdc8365c12a5946a2d83`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Format.Variant1e0dbd99de769af969ded5aa41c34ef30de090a2e06292a5c7a17da6f9340f34","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1e0dbd99de769af969ded5aa41c34ef30de090a2e06292a5c7a17da6f9340f34","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Format.Variant1e0dbd99de769af969ded5aa41c34ef30de090a2e06292a5c7a17da6f9340f34","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"1e0dbd99de769af969ded5aa41c34ef30de090a2e06292a5c7a17da6f9340f34","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Data/Float/Model/Format/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Julia M. Himmel
+-/
+module
+
+prelude
+public import Init.Data.Nat.Log2
+public import Init.Data.Int.Basic
+
+-- This file is part of the logical model for floats which authors of float libraries
+-- need to rely on.
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Format.Variant1e0dbd99de769af969ded5aa41c34ef30de090a2e06292a5c7a17da6f9340f34
+
+@[expose] public section
+
+namespace Float.Model
+
+/--
+The position of the most significant digit, where the unit digit corresponds to `1`.
+So, for example, `1.0b` has total exponent `1`, `0.1b` has total exponent `0`,
+`0.01b` has total exponent `-1`, and so on.
+-/
+def totalExponent (mantissa : Nat) (exponent : Int) :=
+  mantissa.log2 + 1 + exponent
+
+/--
+A floating point format is specified by two pieces of information: the number
+of bits in the mantissa, and the number of bits in the exponent.
+-/
+structure Format where
+  /-- The number of bits in the mantissa, *excluding the implicit bit*. -/
+  mantissaBitsWithoutImplicit : Nat
+  hm : 0 < mantissaBitsWithoutImplicit := by decide
+  /-- The number of bits in the exponent. -/
+  exponentBits : Nat
+  he : 0 < exponentBits := by decide
+
+namespace Format
+
+/-- Specification corresponding to the IEEE `binary32` format. -/
+abbrev binary32 : Format where
+  mantissaBitsWithoutImplicit := 23
+  exponentBits := 8
+
+/-- Specification corresponding to the IEEE `binary64` format. -/
+abbrev binary64 : Format where
+  mantissaBitsWithoutImplicit := 52
+  exponentBits := 11
+
+/-- The total number of bits in the packed representation. -/
+abbrev numBits (spec : Format) : Nat :=
+  1 + spec.exponentBits + spec.mantissaBitsWithoutImplicit
+
+/-- The number of bits in the mantissa, *including the implicit bit*. -/
+def mantissaBits (spec : Format) : Nat :=
+  1 + spec.mantissaBitsWithoutImplicit
+
+/--
+The exponent bias. In packed formats, we store the sum of the true exponent and
+the bias.
+-/
+def exponentBias (spec : Format) : Nat :=
+  2 ^ (spec.exponentBits - 1) - 1
+
+/--
+The smallest exponent possible for a number using the given specification,
+including subnormals.
+-/
+def minExponent (spec : Format) : Int :=
+  3 - 2 ^ (spec.exponentBits - 1) - spec.mantissaBits
+
+/--
+Suppose we have written a number where `totalExponent` is the position of the
+most significant digit, where the unit digit corresponds to `1`. So, for example,
+`1.0b` has total exponent `1`, `0.1b` has total exponent `0`, `0.01b` has total
+exponent `-1`, and so on. This function computes which exponent that number
+should have according to the given `Format`. So, for example, for the number
+`0.1b` in `binary64` format, it wants us to use the exponent `-53`, corresponding
+to the representation `2^52 * 2^(-53)`, which has a 53-bit mantissa. If the total
+exponent gets quite small, then the result exponent eventually gets capped at
+`spec.minExponent`, which first forces the result to be a subnormal number and
+then, if the total exponent is even smaller, to be zero.
+-/
+def targetExponent (spec : Format) (totalExponent : Int) : Int :=
+  max (totalExponent - spec.mantissaBits) spec.minExponent
+
+end Format
+
+end Float.Model
+```

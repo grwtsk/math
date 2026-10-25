@@ -1,0 +1,217 @@
+# emitGroundDecl
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:53cb39d28c3bdd2208ebfd38cab927f6eba17d88eb46b385d8bd5eaa8d57d19f",
+  "kind": "def",
+  "lexical_name": "emitGroundDecl",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "emitgrounddecl--21ebfca9c1c4e11b35c4f15c",
+  "source": {
+    "blob": "849a1be3e4db322a5391a667acadecff93c67642",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 444,
+    "line": 309,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EmitC/Variantb583be256c880a879bf723bb4c2cd87bd80d433d0539ea67d87c28a6da500216.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:21ebfca9c1c4e11b35c4f15c0204041bfd1493c48bab6c85497f607e93c15f4d",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EmitC/Variantb583be256c880a879bf723bb4c2cd87bd80d433d0539ea67d87c28a6da500216.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:53cb39d28c3bdd2208ebfd38cab927f6eba17d88eb46b385d8bd5eaa8d57d19f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 309–444.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def emitGroundDecl (decl : Decl .impure) (cppBaseName : String) : EmitM Unit := do
+  let some ground := getSimpleGroundExpr (← getEnv) decl.name | unreachable!
+  discard <| compileGround ground |>.run {}
+where
+  compileGround (e : SimpleGroundExpr) : GroundM Unit := do
+    let valueName ← compileGroundToValue e
+    let declPrefix := if isClosedTermName (← getEnv) decl.name then "static" else "LEAN_EXPORT"
+    emitLn <| s!"{declPrefix} const lean_object* {cppBaseName} = (const lean_object*)&{valueName};"
+
+  compileGroundToValue (e : SimpleGroundExpr) : GroundM String := do
+    match e with
+    | .ctor cidx objArgs usizeArgs scalarArgs =>
+      let val ← compileCtor cidx objArgs usizeArgs scalarArgs
+      mkValueCLit "lean_ctor_object" val
+    | .string data =>
+      let leanStringTag := 249
+      let header := mkHeader 0 0 leanStringTag
+      let size := data.utf8ByteSize + 1 -- null byte
+      let length := data.length
+      let data : String := quoteString data
+      mkValueCLit
+        "lean_string_object"
+        s!"\{.m_header = {header}, .m_size = {size}, .m_capacity = {size}, .m_length = {length}, .m_data = {data}}"
+    | .pap func args =>
+      let numFixed := args.size
+      let leanClosureTag := 245
+      let header := mkHeader s!"sizeof(lean_closure_object) + sizeof(void*)*{numFixed}" 0 leanClosureTag
+      let funPtr := s!"(void*){← toCName func}"
+      let arity := (← getImpureSignature? func).get!.params.size
+      let args ← args.mapM groundArgToCLit
+      let argArray := String.intercalate "," args.toList
+      mkValueCLit
+        "lean_closure_object"
+        s!"\{.m_header = {header}, .m_fun = {funPtr}, .m_arity = {arity}, .m_num_fixed = {numFixed}, .m_objs = \{{argArray}} }"
+    | .nameMkStr args =>
+      let obj ← groundNameMkStrToCLit args
+      mkValueCLit "lean_ctor_object" obj
+    | .array elems =>
+      let leanArrayTag := 246
+      let header := mkHeader s!"sizeof(lean_array_object) + sizeof(void*)*{elems.size}" 0 leanArrayTag
+      let elemLits ← elems.mapM groundArgToCLit
+      let dataArray := String.intercalate "," elemLits.toList
+      mkValueCLit
+        "lean_array_object"
+        s!"\{.m_header = {header}, .m_size = {elems.size}, .m_capacity = {elems.size}, .m_data = \{{dataArray}}}"
+    | .byteArray data =>
+      let leanScalarArrayTag := 248
+      let elemSize : Nat := 1
+      let header := mkHeader s!"sizeof(lean_sarray_object) + {data.size}" elemSize leanScalarArrayTag
+      let dataLits := data.map toString
+      let dataArray := String.intercalate "," dataLits.toList
+      mkValueCLit
+        "lean_sarray_object"
+        s!"\{.m_header = {header}, .m_size = {data.size}, .m_capacity = {data.size}, .m_data = \{{dataArray}}}"
+    | .reference refDecl => findValueDecl refDecl
+
+  mkValueName (name : String) : String :=
+    name ++ "_value"
+
+  mkAuxValueName (name : String) (idx : Nat) : String :=
+    mkValueName name ++ s!"_aux_{idx}"
+
+  mkAuxDecl (type value : String) : GroundM String := do
+    let idx ← modifyGet fun s => (s.auxCounter, { s with auxCounter := s.auxCounter + 1 })
+    let name := mkAuxValueName cppBaseName idx
+    emitLn <| s!"static const {type} {name} = {value};"
+    return name
+
+  mkValueCLit (type value : String) : GroundM String := do
+    let valueName := mkValueName cppBaseName
+    emitLn <| s!"static const {type} {valueName} = {value};"
+    return valueName
+
+  groundNameMkStrToCLit (args : Array (Name × UInt64)) : GroundM String := do
+    assert! args.size > 0
+    if h : args.size = 1 then
+      let (ref, hash) := args[0]
+      let hash := uint64ToByteArrayLE hash
+      compileCtor 1 #[.tagged 0, .reference ref] #[] hash
+    else
+      let (ref, hash) := args.back!
+      let args := args.pop
+      let lit ← groundNameMkStrToCLit args
+      let auxName ← mkAuxDecl "lean_ctor_object" lit
+      let hash := uint64ToByteArrayLE hash
+      compileCtor 1 #[.rawReference auxName, .reference ref] #[] hash
+
+  groundArgToCLit (a : SimpleGroundArg) : GroundM String := do
+    match a with
+    | .tagged val => return s!"((lean_object*)(((size_t)({val}) << 1) | 1))"
+    | .reference decl =>  return s!"((lean_object*)&{← findValueDecl decl})"
+    | .rawReference decl => return s!"((lean_object*)&{decl})"
+
+  findValueDecl (decl : Name) : GroundM String := do
+    let mut decl := decl
+    while true do
+      if let some (.reference ref) := getSimpleGroundExpr (← getEnv) decl then
+        decl := ref
+      else
+        break
+    return mkValueName (← toCName decl)
+
+  compileCtor (cidx : Nat) (objArgs : Array SimpleGroundArg) (usizeArgs : Array UInt64)
+      (scalarArgs : Array UInt8) : GroundM String := do
+    let header := mkCtorHeader objArgs.size usizeArgs.size scalarArgs.size cidx
+    let objArgs ← objArgs.mapM groundArgToCLit
+    let usizeArgs : Array String := usizeArgs.map fun val => s!"(lean_object*)(size_t)({val}ULL)"
+    assert! scalarArgs.size % 8 == 0
+    let scalarArgs : Array String := Id.run do
+      let chunks := scalarArgs.size / 8
+      let mut packed := Array.emptyWithCapacity chunks
+      for h : idx in 0...chunks do
+        have : idx * 8 + 7 < scalarArgs.size := by
+          have : idx < scalarArgs.size / 8 := Std.Rco.lt_upper_of_mem h
+          omega
+        let b1 := scalarArgs[idx * 8]
+        let b2 := scalarArgs[idx * 8 + 1]
+        let b3 := scalarArgs[idx * 8 + 2]
+        let b4 := scalarArgs[idx * 8 + 3]
+        let b5 := scalarArgs[idx * 8 + 4]
+        let b6 := scalarArgs[idx * 8 + 5]
+        let b7 := scalarArgs[idx * 8 + 6]
+        let b8 := scalarArgs[idx * 8 + 7]
+        let lit := s!"LEAN_SCALAR_PTR_LITERAL({b1}, {b2}, {b3}, {b4}, {b5}, {b6}, {b7}, {b8})"
+        packed := packed.push lit
+      return packed
+    let argArray := String.intercalate "," (objArgs ++ usizeArgs ++ scalarArgs).toList
+    return s!"\{.m_header = {header}, .m_objs = \{{argArray}}}"
+
+  mkCtorHeader (numObjs : Nat) (usize : Nat) (ssize : Nat) (tag : Nat) : String :=
+    let size := s!"sizeof(lean_ctor_object) + sizeof(void*)*{numObjs} + {ctorScalarSizeExpression usize ssize}"
+    mkHeader size numObjs tag
+
+  mkHeader {α : Type} [ToString α] (csSz : α) (other : Nat) (tag : Nat) : String :=
+    s!"\{.m_rc = 0, .m_cs_sz = {csSz}, .m_other = {other}, .m_tag = {tag}}"
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EmitC/Variantb583be256c880a879bf723bb4c2cd87bd80d433d0539ea67d87c28a6da500216.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EmitC/Variantb583be256c880a879bf723bb4c2cd87bd80d433d0539ea67d87c28a6da500216.lean#L309).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `849a1be3e4db322a5391a667acadecff93c67642` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

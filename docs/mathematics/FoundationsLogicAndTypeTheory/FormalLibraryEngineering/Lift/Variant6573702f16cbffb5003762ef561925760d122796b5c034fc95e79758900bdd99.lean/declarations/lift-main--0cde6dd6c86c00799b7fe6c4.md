@@ -1,0 +1,134 @@
+# Lift.main
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:58014b204476cb13e99f81cb3626b739838503dda974f00a63d9077a5007fa19",
+  "kind": "def",
+  "lexical_name": "Lift.main",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "lift-main--0cde6dd6c86c00799b7fe6c4",
+  "source": {
+    "blob": "5980adbac0edad17fd7b5e4386efca6ab5c93e05",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 169,
+    "line": 117,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lift/Variant6573702f16cbffb5003762ef561925760d122796b5c034fc95e79758900bdd99.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:0cde6dd6c86c00799b7fe6c4ca8117ad36b9ee1da6971d6bef0b9dbf52584506",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lift/Variant6573702f16cbffb5003762ef561925760d122796b5c034fc95e79758900bdd99.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:58014b204476cb13e99f81cb3626b739838503dda974f00a63d9077a5007fa19`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 117–169.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def Lift.main (e t : TSyntax `term) (hUsing : Option (TSyntax `term))
+    (newVarName newEqName : Option (TSyntax `ident)) (keepUsing : Bool) : TacticM Unit :=
+    withMainContext do
+  -- Are we using a new variable for the lifted var?
+  let isNewVar := !newVarName.isNone
+  -- Name of the new hypothesis containing the equality of the lifted variable with the old one
+  -- rfl if none is given
+  let newEqName := (newEqName.map Syntax.getId).getD `rfl
+  -- Was a new hypothesis given?
+  let isNewEq := newEqName != `rfl
+  let e ← elabTerm e none
+  let goal ← getMainGoal
+  if !(← inferType (← instantiateMVars (← goal.getType))).isProp then throwError
+    "lift tactic failed. Tactic is only applicable when the target is a proposition."
+  if newVarName == none ∧ !e.isFVar then throwError
+    "lift tactic failed. When lifting an expression, a new variable name must be given"
+  let (p, coe, inst) ← Lift.getInst (← inferType e) (← Term.elabType t)
+  let prf ← match hUsing with
+    | some h => elabTermEnsuringType h (p.betaRev #[e])
+    | none => mkFreshExprMVar (some (p.betaRev #[e]))
+  let newVarName ← match newVarName with
+                 | some v => pure v.getId
+                 | none   => e.fvarId!.getUserName
+  let prfEx ← mkAppOptM ``CanLift.prf #[none, none, coe, p, inst, e, prf]
+  let prfEx ← instantiateMVars prfEx
+  let prfSyn ← prfEx.toSyntax
+  -- if we have a new variable, but no hypothesis name was provided, we temporarily use a dummy
+  -- hypothesis name
+  let newEqName ← if isNewVar && !isNewEq then withMainContext <| getUnusedUserName `tmpVar
+               else pure newEqName
+  let newEqIdent := mkIdent newEqName
+  -- Run rcases on the proof of the lift condition
+  replaceMainGoal (← Std.Tactic.RCases.rcases #[(none, prfSyn)]
+    (.tuple Syntax.missing <| [newVarName, newEqName].map (.one Syntax.missing)) goal)
+  -- if we use a new variable, then substitute it everywhere
+  if isNewVar then
+    for decl in ←getLCtx do
+      if decl.userName != newEqName then
+        let declIdent := mkIdent decl.userName
+        -- The line below fails if $declIdent is there only once.
+        evalTactic (← `(tactic| simp (config := {failIfUnchanged := false})
+          only [← $newEqIdent] at $declIdent $declIdent))
+    evalTactic (← `(tactic| simp (config := {failIfUnchanged := false}) only [← $newEqIdent]))
+  -- Clear the temporary hypothesis used for the new variable name if applicable
+  if isNewVar && !isNewEq then
+    evalTactic (← `(tactic| clear $newEqIdent))
+  -- Clear the "using" hypothesis if it's a variable in the context
+  if prf.isFVar && !keepUsing then
+    let some hUsingStx := hUsing | throwError "lift tactic failed: unreachable code was reached"
+    evalTactic (← `(tactic| clear $hUsingStx))
+    evalTactic (← `(tactic| try clear $hUsingStx))
+  if hUsing.isNone then withMainContext <| setGoals (prf.mvarId! :: (← getGoals))
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lift/Variant6573702f16cbffb5003762ef561925760d122796b5c034fc95e79758900bdd99.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lift/Variant6573702f16cbffb5003762ef561925760d122796b5c034fc95e79758900bdd99.lean#L117).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5980adbac0edad17fd7b5e4386efca6ab5c93e05` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

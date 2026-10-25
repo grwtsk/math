@@ -1,0 +1,155 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FinCases.Variant3908b6ca5d2fedb745de3e87c17f327773d2af2ef2567c7ba029fd545be0659c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a59c00750d3d327ebe95f90c40a5cdcc06b45d9f` · SHA-256 `76c4e4d778dc25dcae940edf94306e167f123a0757b753e8df7a823db8915f59`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FinCases.Variantde46d8dd62e0a406c304755c42effe2d3660197bdb023bc15d211d3eec45fd43","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"de46d8dd62e0a406c304755c42effe2d3660197bdb023bc15d211d3eec45fd43","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.FinCases.Variantde46d8dd62e0a406c304755c42effe2d3660197bdb023bc15d211d3eec45fd43","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"de46d8dd62e0a406c304755c42effe2d3660197bdb023bc15d211d3eec45fd43","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/MathlibTest/fin_cases.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathlib.Tactic.FinCases
+import Mathlib.Tactic.NormNum.Basic
+import Mathlib.Order.Interval.Finset.Nat
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FinCases.Variantde46d8dd62e0a406c304755c42effe2d3660197bdb023bc15d211d3eec45fd43
+
+example {x : Nat} (h : x ∈ [0, 2, 37]) : x ≤ 57 := by
+  fin_cases h
+  repeat decide
+
+example {x : Nat} (h : x ∈ [0, 2, 37]) : x = 0 ∨ x = 2 ∨ x = 37 := by
+  fin_cases h
+  repeat simp
+
+example {x : Nat} (h : x ∈ List.range 5) : x ≤ 4 := by
+  fin_cases h
+  repeat decide
+
+example {p : Fin 4 → Prop} (i : Fin 4) (h : p i) : p i := by
+  fin_cases i
+  repeat exact h
+
+example (f : Nat → Prop) (p : Fin 3) (h0 : f 0) (h1 : f 1) (h2 : f 2) : f p.val := by
+  fin_cases p
+  all_goals
+    assumption
+
+example (f : Nat → Prop) (p : Fin 0) : f p.val := by
+  fin_cases p
+
+example (x2 : Fin 2) (x3 : Fin 3) : True := by
+  fin_cases x2, x3
+  all_goals trivial
+
+-- Checking that `fin_cases` can handle a metavariable for the type
+example (p : ℕ) (h2 : 2 < p) (h5 : p < 5) : p = 3 ∨ p = 4 := by
+  have hp : ?_ := ?foo
+  case foo => exact (Finset.mem_Ioo).2 ⟨h2, h5⟩
+  fin_cases hp
+  · norm_num
+  · norm_num
+
+-- Check naming of cases
+/--
+info: case «0».«0»
+⊢ True
+
+case «0».«1»
+⊢ True
+
+case «1».«0»
+⊢ True
+
+case «1».«1»
+⊢ True
+-/
+#guard_msgs in
+example (x y : Fin 2): True := by
+  fin_cases x, y
+  trace_state
+  all_goals trivial
+
+-- TODO Restore the remaining tests from mathlib3:
+-- Some of these test the `with` and `using` clauses which haven't been re-implemented.
+
+set_option linter.unusedVariables false in
+example (x2 : Fin 2) (x3 : Fin 3) (n : Nat) (y : Fin n) : x2.val * x3.val = x3.val * x2.val := by
+  fin_cases x2 <;> fin_cases x3
+  fail_if_success
+    fin_cases y
+  all_goals rfl
+
+-- example (x : ℕ) (h : x ∈ [2,3,5,7]) : True := by
+--   fail_if_success
+--     fin_cases h with [3,3,5,7]
+--   trivial
+
+-- example (x : List Nat) (h : x ∈ [[1],[2]]) : x.length = 1 := by
+--   fin_cases h with [[1],[1+1]]
+--   · simp
+--   · guard_target = [1 + 1].length = 1
+--     simp
+
+--  -- testing that `with` arguments are elaborated with respect to the expected type:
+-- example (x : Int) (h : x ∈ ([2,3] : List Int)) : x = 2 ∨ x = 3 := by
+--   fin_cases h with [2,3]
+--   all_goals simp
+
+-- example (n : ℕ) (h : n % 3 ∈ [0,1]) : True := by
+--   fin_cases h
+--   · guard_hyp h : n % 3 = 0
+--     trivial
+--   · guard_hyp h : n % 3 = 1
+--     trivial
+
+-- instance (n : ℕ) : Decidable (Nat.Prime n) := decidablePrime_1 n
+-- example (x : ℕ) (h : x ∈ (List.range 10).filter Nat.prime) : x = 2 ∨ x = 3 ∨ x = 5 ∨ x = 7 := by
+--   fin_cases h <;> decide
+
+-- open Equiv.Perm
+-- example (x : (Σ (a : Fin 4), Fin 4)) (h : x ∈ finPairsLT 4) : x.1.val < 4 := by
+--   fin_cases h; simp
+--   any_goals exact dec_trivial
+
+-- /-
+-- In some circumstances involving `let`,
+-- the temporary hypothesis that `fin_cases` creates does not get deleted.
+-- We test that this is correctly named and that the name can be changed.
+
+-- Note: after `fin_cases`, we have `this : (a : Fin 3) = (0 : Fin (2 + 1))`
+-- for some reason. I don't know why, and it complicates the test.
+-- -/
+-- example (f : ℕ → Fin 3) : true := by
+--   let a := f 3
+--   fin_cases a
+--   guard_hyp a := f 3
+--   guard_hyp this : a = (0 : Fin (2 + 1))
+--   trivial; trivial
+
+--   let b := f 2
+--   fin_cases b using what
+--   guard_hyp what : b = (0 : Fin (2 + 1))
+
+--   all_goals trivial
+
+-- /-
+-- The behavior above can be worked around with `fin_cases with`.
+-- -/
+-- example (f : ℕ → Fin 3) : true := by
+--   let a := f 3
+--   fin_cases a with [0, 1, 2]
+--   guard_hyp a := f 3
+--   guard_hyp this : a = 0
+--   trivial
+--   guard_hyp this : a = 1
+--   trivial
+--   guard_hyp this : a = 2
+--   let b := f 2
+--   fin_cases b with [0, 1, 2] using what
+--   guard_hyp what : b = 0
+--   all_goals trivial
+```

@@ -1,0 +1,86 @@
+# MulEquiv.multiplicativeAdditive
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:b7dd5036b569b49204e968800a8f4fa302afcda80f5a030eca6b40ac7f4f1e0e",
+  "kind": "def",
+  "lexical_name": "MulEquiv.multiplicativeAdditive",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mulequiv-multiplicativeadditive--6d4cb248e9772b83515c54f6",
+  "source": {
+    "blob": "fb53ea09e0ce40aeccbd668d1bd4c8b70d34c2ab",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 95,
+    "line": 91,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeTags/Variantb4b2bb0e220e99756a11b230e90e5cf9bf463ae8d56e89270132faff394a918c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6d4cb248e9772b83515c54f6e4eb72e686c398b2e9482b9e01c1fb5937513383",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeTags/Variantb4b2bb0e220e99756a11b230e90e5cf9bf463ae8d56e89270132faff394a918c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:b7dd5036b569b49204e968800a8f4fa302afcda80f5a030eca6b40ac7f4f1e0e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 91–95.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def MulEquiv.multiplicativeAdditive [MulOneClass H] : Multiplicative (Additive H) ≃* H :=
+  AddEquiv.toMultiplicative'' (AddEquiv.refl (Additive H))
+#align mul_equiv.multiplicative_additive MulEquiv.multiplicativeAdditive
+
+end
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeTags/Variantb4b2bb0e220e99756a11b230e90e5cf9bf463ae8d56e89270132faff394a918c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeTags/Variantb4b2bb0e220e99756a11b230e90e5cf9bf463ae8d56e89270132faff394a918c.lean#L91).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `fb53ea09e0ce40aeccbd668d1bd4c8b70d34c2ab` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

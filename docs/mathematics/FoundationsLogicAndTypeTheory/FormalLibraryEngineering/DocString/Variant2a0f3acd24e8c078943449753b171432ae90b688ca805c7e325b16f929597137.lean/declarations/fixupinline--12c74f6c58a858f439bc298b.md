@@ -1,0 +1,128 @@
+# fixupInline
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e03136c81727f433d348610280961ba23553eb31b95b552914226f470393fb0e",
+  "kind": "def",
+  "lexical_name": "fixupInline",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "fixupinline--12c74f6c58a858f439bc298b",
+  "source": {
+    "blob": "014689ae16d0f21928edb8900d54e926c7b9471b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1829,
+    "line": 1783,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DocString/Variant2a0f3acd24e8c078943449753b171432ae90b688ca805c7e325b16f929597137.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:12c74f6c58a858f439bc298b8b3cf8dac21081dd967def14f9250788b266804f",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DocString/Variant2a0f3acd24e8c078943449753b171432ae90b688ca805c7e325b16f929597137.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e03136c81727f433d348610280961ba23553eb31b95b552914226f470393fb0e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1783–1829.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def fixupInline (inl : Inline ElabInline) : DocM (Inline ElabInline) := do
+  match inl with
+  | .concat xs => .concat <$> xs.mapM fixupInline
+  | .emph xs => .emph <$> xs.mapM fixupInline
+  | .bold xs => .bold <$> xs.mapM fixupInline
+  | .link content url => (.link · url) <$> content.mapM fixupInline
+  | .footnote name content => .footnote name <$> content.mapM fixupInline
+  | .text s => pure (.text s)
+  | .image alt url => pure (.image alt url)
+  | .code s => pure (.code s)
+  | .math mode s => pure (.math mode s)
+  | .linebreak s => pure (.linebreak s)
+  | .other i xs =>
+    let some val := getCustom i
+      | .other i <$> xs.mapM fixupInline
+    if let some { name } := val.get? ElabLink then
+      let nameStr := name.getString
+      if let some r@{content := url, seen, .. } := (← getThe InternalState).urls[nameStr]? then
+        unless seen do modifyThe InternalState fun st => { st with urls := st.urls.insert nameStr { r with seen := true } }
+        return .link (← xs.mapM fixupInline) url
+      else
+        logErrorAt name "Reference not found"
+        return .concat (← xs.mapM fixupInline)
+    else if let some { alt, name } := val.get? ElabImage then
+      let nameStr := name.getString
+      if let some r@{content := url, seen, ..} := (← getThe InternalState).urls[nameStr]? then
+        unless seen do modifyThe InternalState fun st => { st with urls := st.urls.insert nameStr { r with seen := true } }
+        return .image alt url
+      else
+        logErrorAt name "Reference not found"
+        return .empty
+    else if let some { name } := val.get? ElabFootnote then
+      let nameStr := name.getString
+      if let some r@{ content, seen, .. } := (← getThe InternalState).footnotes[nameStr]? then
+        unless seen do modifyThe InternalState fun st =>
+          { st with footnotes := st.footnotes.insert nameStr { r with seen := true } }
+        return .footnote nameStr #[← fixupInline content]
+      else
+        logErrorAt name "Footnote not found"
+        return .empty
+    else
+      .other i <$> xs.mapM fixupInline
+where
+  getCustom : ElabInline → Option Dynamic
+    | .custom c => some c
+    | .deferred _ => none
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DocString/Variant2a0f3acd24e8c078943449753b171432ae90b688ca805c7e325b16f929597137.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DocString/Variant2a0f3acd24e8c078943449753b171432ae90b688ca805c7e325b16f929597137.lean#L1783).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `014689ae16d0f21928edb8900d54e926c7b9471b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

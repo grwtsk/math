@@ -1,0 +1,174 @@
+# ofWallTime
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:cc403ef3ddc798c8d939871a7969768c4d09764fd3b989b09375a268905c84ba",
+  "kind": "def",
+  "lexical_name": "ofWallTime",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ofwalltime--fa4eb182bd1c375f55211739",
+  "source": {
+    "blob": "416bb910378e16805ca01b7bcc0f09a44f34f787",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 157,
+    "line": 65,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PlainDateTime/Varianta483dc8bcf755f666bdc5357af4afbbccc0f006d461ee67d6c635c32046576d7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:fa4eb182bd1c375f552117397e8778f051188bbac39a3f780cb6a68fc8b56ff3",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PlainDateTime/Varianta483dc8bcf755f666bdc5357af4afbbccc0f006d461ee67d6c635c32046576d7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:cc403ef3ddc798c8d939871a7969768c4d09764fd3b989b09375a268905c84ba`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 65–157.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def ofWallTime (stamp : WallTime) : PlainDateTime := Id.run do
+  let leapYearEpoch := 11017
+  let daysPer400Y := 365 * 400 + 97
+  let daysPer100Y := 365 * 100 + 24
+  let daysPer4Y := 365 * 4 + 1
+
+  let nanos := stamp.toNanoseconds
+
+  let secs : Second.Offset := nanos.toSeconds
+  let remNano := Bounded.LE.byMod nanos.val 1000000000 (by decide)
+
+  let (remNano, secs) :=
+    if h : remNano.val < 0 then
+      (remNano.truncateTop (Int.le_sub_one_of_lt h) |>.add 1000000000 |>.expandBottom (by decide), secs - 1)
+    else
+      (remNano.truncateBottom (Int.not_lt.mp h), secs)
+
+  let daysSinceEpoch : Day.Offset := secs.toDays
+  let boundedDaysSinceEpoch := daysSinceEpoch
+
+  let mut rawDays := boundedDaysSinceEpoch - leapYearEpoch
+  let mut rem := Bounded.LE.byMod secs.val 86400 (by decide)
+
+  let ⟨remSecs, days⟩ :=
+    if h : rem.val ≤ -1 then
+      let remSecs := rem.truncateTop h
+      let remSecs : Bounded.LE 1 86399 := remSecs.add 86400
+      let rawDays := rawDays - 1
+      (remSecs.expandBottom (by decide), rawDays)
+    else
+      let h := rem.truncateBottom (Int.not_le.mp h)
+      (h, rawDays)
+
+  let mut quadracentennialCycles := days.val / daysPer400Y;
+  let mut remDays := days.val % daysPer400Y;
+
+  if remDays < 0 then
+    remDays := remDays + daysPer400Y
+    quadracentennialCycles := quadracentennialCycles - 1
+
+  let mut centenialCycles := remDays / daysPer100Y;
+
+  if centenialCycles = 4 then
+    centenialCycles := centenialCycles - 1
+
+  remDays := remDays - centenialCycles * daysPer100Y
+  let mut quadrennialCycles := remDays / daysPer4Y;
+
+  if quadrennialCycles = 25 then
+    quadrennialCycles := quadrennialCycles - 1
+
+  remDays := remDays - quadrennialCycles * daysPer4Y
+  let mut remYears := remDays / 365;
+
+  if remYears = 4 then
+    remYears := remYears - 1
+
+  remDays := remDays - remYears * 365
+
+  let mut year := 2000 + remYears + 4 * quadrennialCycles + 100 * centenialCycles + 400 * quadracentennialCycles
+  let months := [31, 30, 31, 30, 31, 31, 30, 31, 30, 31, 31, 29];
+  let mut mon : Fin 13 := 0;
+
+  for monLen in months do
+    mon := mon + 1;
+    if remDays < monLen then
+      break
+    remDays := remDays - monLen
+
+  let mday : Fin 31 := Fin.ofNat _ (Int.toNat remDays)
+
+  let hmon ←
+    if h₁ : mon.val > 10
+      then do
+        year := year + 1
+        pure (Month.Ordinal.ofNat (mon.val - 10) (by omega))
+      else
+        pure (Month.Ordinal.ofNat (mon.val + 2) (by omega))
+
+  let second : Bounded.LE 0 59 := remSecs.emod 60 (by decide)
+  let minute : Bounded.LE 0 59 := (remSecs.ediv 60 (by decide)).emod 60 (by decide)
+  let hour : Bounded.LE 0 23 := remSecs.ediv 3600 (by decide)
+  let nano : Bounded.LE 0 999999999 := Bounded.LE.byEmod nanos.val 1000000000 (by decide)
+
+  return {
+    date := PlainDate.ofYearMonthDayClip year hmon (Day.Ordinal.ofFin (Fin.succ mday))
+    time := PlainTime.ofHourMinuteSecondsNano (hour.expandTop (by decide)) minute (second.expandTop (by decide)) nano
+  }
+
+/--
+Returns the local (civil) date of the `PlainDateTime` as a `Day.Offset` relative to 1970-01-01.
+-/
+@[inline]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PlainDateTime/Varianta483dc8bcf755f666bdc5357af4afbbccc0f006d461ee67d6c635c32046576d7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PlainDateTime/Varianta483dc8bcf755f666bdc5357af4afbbccc0f006d461ee67d6c635c32046576d7.lean#L65).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `416bb910378e16805ca01b7bcc0f09a44f34f787` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

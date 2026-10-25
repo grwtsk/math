@@ -1,0 +1,131 @@
+# mkFromSMatch
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:fe713b7a78ee08241994ef8735a6682f1afdafe11cbdcb2847f9a6eee87d4e95",
+  "kind": "def",
+  "lexical_name": "mkFromSMatch",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mkfromsmatch--c967bb5f13b16e97ab118dd6",
+  "source": {
+    "blob": "fcc9a7d47514df1eecb2e6f85eb24d6acedc65f1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 250,
+    "line": 201,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DeriveEncodable/Variante1628cb9a47fa22d6710a61d4eca7f479669c06020d1671aaa624e0ad63e725b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:c967bb5f13b16e97ab118dd643a71052bf56f25b5b34373229901ccd87c11970",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DeriveEncodable/Variante1628cb9a47fa22d6710a61d4eca7f479669c06020d1671aaa624e0ad63e725b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:fe713b7a78ee08241994ef8735a6682f1afdafe11cbdcb2847f9a6eee87d4e95`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 201–250.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private def mkFromSMatch (ctx : Deriving.Context) (indVal : InductiveVal)
+    (fromSNames : Array Name) : TermElabM Term := do
+  let alts ← mkAlts
+  `(fun $alts:matchAlt*)
+where
+  mkAlts : TermElabM (Array (TSyntax ``matchAlt)) := do
+    let mut alts := #[]
+    for ctorName in indVal.ctors do
+      let ctorInfo ← getConstInfoCtor ctorName
+      alts := alts.push <| ← forallTelescopeReducing ctorInfo.type fun xs _ => do
+        let mut patternArgs : Array Term := #[]
+        let mut discrs : Array (TSyntax ``Lean.Parser.Term.matchDiscr) := #[]
+        let mut ctorArgs : Array Term := #[]
+        let mut patternArgs2 : Array Term := #[]
+        let mut patternArgs3 : Array Term := #[]
+        for _ in [:indVal.numParams] do
+          ctorArgs := ctorArgs.push (← `(_))
+        for i in [:ctorInfo.numFields] do
+          let a := mkIdent (← mkFreshUserName `a)
+          let x := xs[ctorInfo.numParams + i]!
+          let xTy ← inferType x
+          let recName? := ctx.typeInfos.findIdx? (xTy.isAppOf ·.name) |>.map (fromSNames[·]!)
+          if let some recName := recName? then
+            patternArgs := patternArgs.push a
+            discrs := discrs.push <| ← `(matchDiscr| $(mkIdent recName) $a)
+          else
+            patternArgs := patternArgs.push <| ← ``(S.nat $a)
+            discrs := discrs.push <| ← `(matchDiscr| $(mkCIdent ``Encodable.decode) $a)
+          ctorArgs := ctorArgs.push a
+          patternArgs2 := patternArgs2.push <| ← ``(some $a)
+          patternArgs3 := patternArgs3.push <| ← `(_)
+        let pattern ← patternArgs.foldrM (init := ← ``(S.nat 0)) fun arg acc => ``(S.cons $arg $acc)
+        let pattern ← ``(S.cons (S.nat $(quote ctorInfo.cidx)) $pattern)
+        -- Note: this is where we could try to handle indexed types.
+        -- The idea would be to use DecidableEq to test the computed index against the expected
+        -- index and then rewrite.
+        let res ← ``(some <| @$(mkIdent ctorName):ident $ctorArgs:term*)
+        if discrs.isEmpty then
+          `(matchAltExpr| | $pattern:term => $res)
+        else
+          let rhs : Term ← `(
+              match $[$discrs],* with
+              | $[$patternArgs2],* => $res
+              | $[$patternArgs3],* => none
+            )
+          `(matchAltExpr| | $pattern:term => $rhs)
+    alts := alts.push <| ← `(matchAltExpr| | _ => none)
+    return alts
+
+/-- Constructs a function from `S` to the inductive type. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DeriveEncodable/Variante1628cb9a47fa22d6710a61d4eca7f479669c06020d1671aaa624e0ad63e725b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DeriveEncodable/Variante1628cb9a47fa22d6710a61d4eca7f479669c06020d1671aaa624e0ad63e725b.lean#L201).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `fcc9a7d47514df1eecb2e6f85eb24d6acedc65f1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

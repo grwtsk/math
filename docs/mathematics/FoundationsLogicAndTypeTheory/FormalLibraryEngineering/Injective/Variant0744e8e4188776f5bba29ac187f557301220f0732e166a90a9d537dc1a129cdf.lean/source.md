@@ -1,0 +1,81 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Injective.Variant0744e8e4188776f5bba29ac187f557301220f0732e166a90a9d537dc1a129cdf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b4440309bbafd766f5807dad318fe99ba0c4712f` · SHA-256 `0744e8e4188776f5bba29ac187f557301220f0732e166a90a9d537dc1a129cdf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+prelude
+public import Lean.Meta.Tactic.Grind.EMatchTheorem
+import Init.Data.Function
+import Init.Data.Range.Polymorphic.Iterators
+public section
+namespace Lean.Meta.Grind
+
+builtin_initialize registerTraceClass `grind.inj
+builtin_initialize registerTraceClass `grind.inj.assert
+builtin_initialize registerTraceClass `grind.debug.inj
+
+/-- Set of Injective theorems. -/
+abbrev InjectiveTheorems := Theorems InjectiveTheorem
+
+/-- A collections of sets of Injective theorems. -/
+abbrev InjectiveTheoremsArray := TheoremsArray InjectiveTheorem
+
+private partial def getSymbols (proof : Expr) (hasUniverses : Bool) : MetaM (List HeadIndex) := do
+  let type ← inferType proof
+  forallTelescope type fun xs type => do
+    unless type.isAppOfArity ``Function.Injective 3 do
+      throwError "invalid `[grind inj]` theorem, resulting type is not of the form `Function.Injective <fun>`{indentExpr type}"
+    if xs.isEmpty && hasUniverses then
+      throwError "invalid `[grind inj]` theorem, theorem has universe levels, but no hypotheses{indentExpr type}"
+    let f := type.appArg!.eta
+    let cs ← collectFnNames f
+    if cs.isEmpty then
+      throwError "invalid `[grind inj]` theorem, injective function must use at least one constant function symbol{indentExpr f}"
+    return cs.toList.map (.const ·)
+where
+  collectFnNames (f : Expr) : MetaM NameSet := do
+    if let .const declName _ := f then
+      return { declName }
+    else
+      Prod.snd <$> (go f |>.run {})
+
+  go (e : Expr) : StateRefT NameSet MetaM Unit := do
+    if e.isApp then e.withApp fun f args => do
+      if let .const declName _ := f then
+        modify (·.insert declName)
+      let kinds ← NormalizePattern.getPatternArgKinds f args.size
+      for h : i in *...args.size do
+        let arg  := args[i]
+        let kind := kinds[i]?.getD .relevant
+        if kind matches .relevant | .typeFormer then
+          go arg
+
+private def symbolsToNames (s : List HeadIndex) : List Name :=
+  s.map fun
+    | .const n => n
+    | _ => Name.anonymous
+
+def mkInjectiveTheorem (declName : Name) : MetaM InjectiveTheorem := do
+  let info ← getConstInfo declName
+  let proof ← getProofForDecl declName
+  let symbols ← getSymbols proof !info.levelParams.isEmpty
+  trace[grind.inj] "{declName}: {symbolsToNames symbols}"
+  return {
+    levelParams := #[]
+    origin := .decl declName
+    proof, symbols
+  }
+
+def Extension.addInjectiveAttr (ext : Extension) (declName : Name) (attrKind : AttributeKind) : MetaM Unit := do
+  ext.add (.inj (← mkInjectiveTheorem declName)) attrKind
+
+end Lean.Meta.Grind
+```

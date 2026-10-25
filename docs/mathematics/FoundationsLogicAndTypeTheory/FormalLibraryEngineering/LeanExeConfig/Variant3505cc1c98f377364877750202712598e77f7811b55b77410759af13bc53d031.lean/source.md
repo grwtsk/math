@@ -1,0 +1,105 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.LeanExeConfig.Variant3505cc1c98f377364877750202712598e77f7811b55b77410759af13bc53d031
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `da749b24e78d95b9a9b12c5a265584e9a32aaed4` · SHA-256 `8cc87e6b2a1a8457acad1ea4f26fa4dd9436d89317a8b7a0b977e3050f9717c1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Name.Variant1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceEnvironments.SourceCorpus.Name.Variant1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828","mathematical_subject":"MathematicalTooling.SourceEnvironments","original_sha256":"1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/lake/Lake/Config/LeanExeConfig.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Mac Malone. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mac Malone
+-/
+module
+
+prelude
+public import Lake.Build.Facets
+public import Lake.Config.LeanConfig
+meta import all Lake.Config.Meta
+import Lake.Config.Meta
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Name.Variant1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828
+
+namespace Lake
+open Lean System
+
+/-- A Lean executable's declarative configuration. -/
+public configuration LeanExeConfig (name : Name) extends LeanConfig where
+  /--
+  The subdirectory of the package's source directory containing the executable's
+  Lean source file. Defaults simply to said `srcDir`.
+
+  (This will be passed to `lean` as the `-R` option.)
+  -/
+  srcDir : FilePath := "."
+
+  /--
+  The root module of the binary executable.
+  Should include a `main` definition that will serve
+  as the entry point of the program.
+
+  The root is built by recursively building its
+  local imports (i.e., fellow modules of the workspace).
+
+  Defaults to the name of the target.
+  -/
+  root : Name := name
+
+  /--
+  The name of the binary executable.
+  Defaults to the target name with any `.` replaced with a `-`.
+  -/
+  exeName : String := name.toStringWithSep "-" (escape := false)
+
+  /-- An `Array` of targets to build before the executable's modules. -/
+  needs : Array PartialBuildKey := #[]
+
+  /--
+  **Deprecated. Use `needs` instead.**
+  An `Array` of target names to build before the executable's modules.
+  -/
+  extraDepTargets : Array Name := #[]
+
+  /--
+  Enables the executable to interpret Lean files (e.g., via
+  `Lean.Elab.runFrontend`) by exposing symbols within the  executable
+  to the Lean interpreter.
+
+  Implementation-wise, on Windows, the Lean shared libraries are linked
+  to the executable and, on other systems, the executable is linked with
+  `-rdynamic`. This increases the size of the binary on Linux and, on Windows,
+  requires `libInit_shared.dll` and `libleanshared.dll` to  be co-located
+  with the executable or part of `PATH` (e.g., via `lake exe`). Thus, this
+  feature should only be enabled when necessary.
+
+  Defaults to `false`.
+  -/
+  supportInterpreter : Bool := false
+
+  /--
+  The module facets to build and combine into the executable.
+  If `shouldExport` is true, the module facets should export any symbols
+  a user may expect to lookup in the executable. For example, the Lean
+  interpreter will use exported symbols in the executable. Thus, `shouldExport`
+  will be `true` if `supportInterpreter := true`.
+
+  Defaults to a singleton of `Module.oExportFacet` (if `shouldExport`) or
+  `Module.oFacet`. That is, the  object file compiled from the Lean source,
+  potentially with exported Lean symbols.
+  -/
+  nativeFacets (shouldExport : Bool) : Array (ModuleFacet FilePath) :=
+    #[if shouldExport then Module.oExportFacet else Module.oFacet]
+
+deriving Inhabited
+
+namespace LeanExeConfig
+
+/-- The executable's name. -/
+public abbrev name (_ : LeanExeConfig n) := n
+```

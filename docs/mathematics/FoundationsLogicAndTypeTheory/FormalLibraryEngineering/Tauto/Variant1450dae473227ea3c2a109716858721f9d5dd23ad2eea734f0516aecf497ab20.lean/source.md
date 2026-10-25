@@ -1,0 +1,195 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Tauto.Variant1450dae473227ea3c2a109716858721f9d5dd23ad2eea734f0516aecf497ab20
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9b6ae0314caa1b7973f6aedb33229fbb426b628` · SHA-256 `d07a17285784f329a9b6dc496c211c73bb997ac5b02d552663b904dbc9ae435e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Tauto.Variant3d1cf2492c7e76593be8e8c4c52dce7600fccacc5caa0d0e2ef59ddca61e8a53","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3d1cf2492c7e76593be8e8c4c52dce7600fccacc5caa0d0e2ef59ddca61e8a53","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Tauto.Variant3d1cf2492c7e76593be8e8c4c52dce7600fccacc5caa0d0e2ef59ddca61e8a53","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"3d1cf2492c7e76593be8e8c4c52dce7600fccacc5caa0d0e2ef59ddca61e8a53","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/test/Tauto.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Simon Hudon. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Simon Hudon, David Renshaw
+-/
+import Mathlib.Tactic.Tauto
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Tauto.Variant3d1cf2492c7e76593be8e8c4c52dce7600fccacc5caa0d0e2ef59ddca61e8a53
+
+set_option autoImplicit true
+section tauto₀
+variable (p q r : Prop)
+variable (h : p ∧ q ∨ p ∧ r)
+
+example : p ∧ p :=
+by tauto
+
+end tauto₀
+
+section tauto₁
+variable (α : Type)
+variable (p q r : α → Prop)
+variable (h : (∃ x, p x ∧ q x) ∨ (∃ x, p x ∧ r x))
+
+example : ∃ x, p x :=
+by tauto
+
+end tauto₁
+
+section tauto₂
+variable (α : Type)
+variable (x : α)
+variable (p q r : α → Prop)
+variable (h₀ : (∀ x, p x → q x → r x) ∨ r x)
+variable (h₁ : p x)
+variable (h₂ : q x)
+
+example : ∃ x, r x :=
+by tauto
+
+end tauto₂
+
+section tauto₃
+
+example (p : Prop) : p ∧ True ↔ p := by tauto
+example (p : Prop) : p ∨ False ↔ p := by tauto
+
+example (p q : Prop) (h : p ≠ q) : ¬ p ↔ q := by tauto
+example (p q : Prop) (h : ¬ p = q) : ¬ p ↔ q := by tauto
+
+example (p q r : Prop) : p ∨ (q ∧ r) ↔ (p ∨ q) ∧ (r ∨ p ∨ r) :=
+  by tauto
+example (p q r : Prop) : p ∨ (q ∧ r) ↔ (p ∨ q) ∧ (r ∨ p ∨ r) :=
+  by tauto
+
+example (p q : Prop) (h : ¬ (p ↔ q)) (h' : ¬ p) : q := by tauto
+example (p q : Prop) (h : ¬ (p ↔ q)) (h' : p) : ¬ q := by tauto
+example (p q : Prop) (h : ¬ (p ↔ q)) (h' : q) : ¬ p := by tauto
+example (p q : Prop) (h : ¬ (p ↔ q)) (h' : ¬ q) : p := by tauto
+
+example (p q : Prop) (h : ¬ (p ↔ q)) (h' : ¬ q) (h'' : ¬ p) : False :=
+by tauto
+
+example (p q r : Prop) (h : p ↔ q) (h' : r ↔ q) (h'' : ¬ r) : ¬ p :=
+by tauto
+
+example (p q r : Prop) (h : p ↔ q) (h' : r ↔ q) : p ↔ r :=
+by tauto
+
+example (p q r : Prop) (h : ¬ p = q) (h' : r = q) : p ↔ ¬ r := by tauto
+
+example (p : Prop) : p → ¬ (p → ¬ p) := by tauto
+example (p : Prop) (em : p ∨ ¬ p) : ¬ (p ↔ ¬ p) := by tauto
+
+-- reported at https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/weird.20tactic.20bug/near/370505747
+open Classical in
+example (hp : p) (hq : q) : (if p ∧ q then 1 else 0) = 1 := by
+  -- split_ifs creates a hypothesis with a type that's a metavariable
+  split_ifs
+  · rfl
+  · tauto
+
+example (hp : p) (hq : q) (h : ¬ (p ∧ q)) : False := by
+  -- causes `h'` to have a type that's a metavariable:
+  have h' := h
+  clear h
+  tauto
+
+example (p : Prop) (h : False) : p := by
+  -- causes `h'` to have a type that's a metavariable:
+  have h' := h
+  clear h
+  tauto
+
+example (hp : p) (hq : q) : p ∧ q := by
+  -- causes goal to have a type that's a metavariable:
+  suffices h : ?foo by exact h
+  tauto
+
+-- Checking `tauto` can deal with annotations:
+example (hp : ¬ p) (hq : ¬ (q ↔ p) := by sorry) : q := by
+  tauto
+
+example (P : Nat → Prop) (n : Nat) : P n → n = 7 ∨ n = 0 ∨ ¬ (n = 7 ∨ n = 0) ∧ P n :=
+by tauto
+
+section implementation_detail_ldecl
+variable (a b c : Nat)
+
+/--
+Mathlib.Tactic.Tauto.distribNot must ignore any LocalDecl where isImplementationDetail
+is true. Otherwise, this example yields an error saying "well-founded recursion cannot
+be used".
+-/
+example : ¬(¬a ≤ b ∧ a ≤ c ∨ ¬a ≤ c ∧ a ≤ b) ↔ a ≤ b ∧ a ≤ c ∨ ¬a ≤ c ∧ ¬a ≤ b :=
+by tauto
+
+end implementation_detail_ldecl
+
+section modulo_symmetry
+variable {p q r : Prop} {α : Type} {x y : α}
+variable (h : x = y)
+variable (h'' : (p ∧ q ↔ q ∨ r) ↔ (r ∧ p ↔ r ∨ q))
+
+-- Currently this hits a "failed to show termination error"
+-- because it erroneously used a recursive hypothesis.
+-- See https://github.com/leanprover-community/mathlib4/issues/1061 and
+-- https://github.com/leanprover/lean4/issues/1963
+-- example (h' : ¬ y = x) : p ∧ q := by tauto
+
+/-
+example (h' : p ∧ ¬ y = x) : p ∧ q := by tauto
+example : y = x := by tauto
+example (h' : ¬ x = y) : p ∧ q := by tauto
+example : x = y := by tauto
+-/
+end modulo_symmetry
+
+section pair_eq_pair_iff
+
+variable (α : Type)
+variable (x y z w : α)
+
+-- This example is taken from pair_eq_pair_iff in Data.Set.Basic.
+-- It currently doesn't work because `tauto` does not apply `symm`.
+--example : ((x = z ∨ x = w) ∧ (y = z ∨ y = w)) ∧
+--           (z = x ∨ z = y) ∧ (w = x ∨ w = y) → x = z ∧ y = w ∨ x = w ∧ y = z :=
+--by tauto
+
+end pair_eq_pair_iff
+
+end tauto₃
+
+/-
+section closer
+
+example {α : Type _} {β : Type _} (a : α)
+  {s_1 : set α} :
+  (∃ (a_1 : α), a_1 = a ∨ a_1 ∈ s_1) :=
+begin
+  tauto {closer := `[simp]}
+end
+
+variables {p q r : Prop} {α : Type} {x y z w : α}
+variables (h : x = y) (h₁ : y = z) (h₂ : z = w)
+variables (h'' : (p ∧ q ↔ q ∨ r) ↔ (r ∧ p ↔ r ∨ q))
+include h h₁ h₂ h''
+
+example : (((r ∧ p ↔ r ∨ q) ∧ (q ∨ r)) → (p ∧ (x = w) ∧ (¬ x = w → p ∧ q ∧ r))) :=
+begin
+  tauto {closer := `[cc]}
+end
+
+end closer
+-/
+
+/-  Zulip discussion:
+https://leanprover.zulipchat.com/#narrow/stream/113488-general/topic/tauto!.20fails.20on.20ne
+-/
+example {x y : Nat} (h : ¬x ≠ y) : x = y :=
+by tauto
+```

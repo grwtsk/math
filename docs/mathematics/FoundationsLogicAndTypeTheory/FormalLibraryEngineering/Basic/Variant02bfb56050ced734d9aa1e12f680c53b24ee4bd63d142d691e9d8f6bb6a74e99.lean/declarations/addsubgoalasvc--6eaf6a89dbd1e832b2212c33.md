@@ -1,0 +1,98 @@
+# addSubGoalAsVC
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:838eb9900d513ac08872e68728df8c5e0f71d37d5e5f79b282080959bca2c5ff",
+  "kind": "def",
+  "lexical_name": "addSubGoalAsVC",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addsubgoalasvc--6eaf6a89dbd1e832b2212c33",
+  "source": {
+    "blob": "65a96e4cf9db0ee154e9d050fd156703c5e16c8f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 112,
+    "line": 96,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6eaf6a89dbd1e832b2212c3370dbbfe2ce21b4c3ead74e8addf34566c9061acf",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:838eb9900d513ac08872e68728df8c5e0f71d37d5e5f79b282080959bca2c5ff`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 96–112.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def addSubGoalAsVC (goal : MVarId) : VCGenM PUnit := do
+  goal.freshenLCtxUserNamesSinceIdx (← read).initialCtxSize
+  let ty ← goal.getType
+  -- Here we make `mvar` a synthetic opaque goal upon discharge failure.
+  -- This is the right call for (previously natural) holes such as loop invariants, which
+  -- would otherwise lead to spurious instantiations and unwanted renamings (when leaving the
+  -- scope of a local).
+  -- We also do this for, e.g. schematic variables. One reason is that at this point, we have
+  -- already tried to assign them by unification. Another reason is that we want to display the
+  -- VC to the user as-is, without abstracting any variables in the local context.
+  -- This only makes sense for synthetic opaque metavariables.
+  goal.setKind .syntheticOpaque
+  if isSpecInvariantType (← getEnv) ty then
+    modify fun s => { s with invariants := s.invariants.push goal }
+  else
+    modify fun s => { s with vcs := s.vcs.push goal }
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean#L96).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `65a96e4cf9db0ee154e9d050fd156703c5e16c8f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

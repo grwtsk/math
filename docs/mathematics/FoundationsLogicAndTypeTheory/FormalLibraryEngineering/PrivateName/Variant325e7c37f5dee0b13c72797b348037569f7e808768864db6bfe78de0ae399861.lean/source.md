@@ -1,0 +1,90 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.PrivateName.Variant325e7c37f5dee0b13c72797b348037569f7e808768864db6bfe78de0ae399861
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd2224d8e7ecae721685cb6cb12f42a9909112ed` · SHA-256 `1bd4ae5745a60ddf4a83801f6b66ded4ab7509590d8c1d117f2c21539217c100`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.PrivateHeader.Variant21569296df3d69ca3f48dd109ed875c040509f9f693419e44cea9fa130b08179","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"21569296df3d69ca3f48dd109ed875c040509f9f693419e44cea9fa130b08179","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.PrivateHeader.Variant21569296df3d69ca3f48dd109ed875c040509f9f693419e44cea9fa130b08179","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"21569296df3d69ca3f48dd109ed875c040509f9f693419e44cea9fa130b08179","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/PrivateName.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2019 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Init.Notation
+public import Init.Data.Option.Coe
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.PrivateHeader.Variant21569296df3d69ca3f48dd109ed875c040509f9f693419e44cea9fa130b08179
+
+public section
+
+namespace Lean
+
+/-! # Private name support.
+
+   Suppose the user marks as declaration `n` as private. Then, we create
+   the name: `_private.<module_name>.0 ++ n`.
+   We say `_private.<module_name>.0` is the "private prefix"
+
+   We assume that `n` is a valid user name and does not contain
+   `Name.num` constructors. Thus, we can easily convert from
+   private internal name to the user given name.
+-/
+
+def privateHeader : Name := `_private
+
+def mkPrivateNameCore (mainModule : Name) (n : Name) : Name :=
+  Name.mkNum (privateHeader ++ mainModule) 0 ++ n
+
+def isPrivateName : Name → Bool
+  | n@(.str p _) => n == privateHeader || isPrivateName p
+  | .num p _     => isPrivateName p
+  | _            => false
+
+/--
+Return `true` if `n` is of the form `_private.<module_name>.0`
+See comment above.
+-/
+def isPrivatePrefix (n : Name) : Bool :=
+  match n with
+  | .num p 0 => go p
+  | _ => false
+where
+  go (n : Name) : Bool :=
+    n == privateHeader ||
+    match n with
+    | .str p _ => go p
+    | _ => false
+
+private def privateToUserNameAux (n : Name) : Name :=
+  match n with
+  | .str p s => .str (privateToUserNameAux p) s
+  | .num p i => if isPrivatePrefix n then .anonymous else .num (privateToUserNameAux p) i
+  | _        => .anonymous
+
+def privateToUserName? (n : Name) : Option Name :=
+  if isPrivateName n then privateToUserNameAux n
+  else none
+
+def privateToUserName (n : Name) : Name :=
+  if isPrivateName n then privateToUserNameAux n
+  else n
+
+private def privatePrefixAux : Name → Name
+  | .str p _ => privatePrefixAux p
+  | n        => n
+
+def privatePrefix? (n : Name) : Option Name :=
+  if isPrivateName n then privatePrefixAux n
+  else none
+
+end Lean
+```

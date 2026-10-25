@@ -1,0 +1,15 @@
+# Baer — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 16 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variantc66ebad7ba850e793b14596c40a5f97e66615560637e027cabf4c6d5b506675b.lean](Variantc66ebad7ba850e793b14596c40a5f97e66615560637e027cabf4c6d5b506675b.lean/index.md) | module |
+| [Variantf7b37ae4a7af15c5e845a745bf615a3af7db9cc899ab46c6ef6106e5761d1560.lean](Variantf7b37ae4a7af15c5e845a745bf615a3af7db9cc899ab46c6ef6106e5761d1560.lean/index.md) | module |

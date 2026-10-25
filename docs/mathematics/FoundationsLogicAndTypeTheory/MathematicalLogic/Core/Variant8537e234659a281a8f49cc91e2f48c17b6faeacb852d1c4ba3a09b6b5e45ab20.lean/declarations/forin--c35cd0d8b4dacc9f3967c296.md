@@ -1,0 +1,108 @@
+# ForIn
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:99e49a21075c901f62c383d4bf22cd25951a6b02746821fe2608fd27e723c147",
+  "kind": "class",
+  "lexical_name": "ForIn",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "forin--c35cd0d8b4dacc9f3967c296",
+  "source": {
+    "blob": "c00f44d589c186526ee811958ab745a2b1078de6",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 398,
+    "line": 372,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:c35cd0d8b4dacc9f3967c296aabb2c3994f1525c7ab8692cce2fd7c237cc2fb0",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `class` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:99e49a21075c901f62c383d4bf22cd25951a6b02746821fe2608fd27e723c147`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 372–398.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+class ForIn (m : Type u₁ → Type u₂) (ρ : Type u) (α : outParam (Type v)) where
+  /--
+  Monadically iterates over the contents of a collection `xs`, with a local state `b` and the
+  possibility of early termination.
+
+  Because a `do` block supports local mutable bindings along with `return`, and `break`, the monadic
+  action passed to `ForIn.forIn` takes a starting state in addition to the current element of the
+  collection and returns an updated state together with an indication of whether iteration should
+  continue or terminate. If the action returns `ForInStep.done`, then `ForIn.forIn` should stop
+  iteration and return the updated state. If the action returns `ForInStep.yield`, then
+  `ForIn.forIn` should continue iterating if there are further elements, passing the updated state
+  to the action.
+
+  More information about the translation of `for` loops into `ForIn.forIn` is available in [the Lean
+  reference manual](lean-manual://section/monad-iteration-syntax).
+  -/
+  forIn {β} (xs : ρ) (b : β) (f : α → β → m (ForInStep β)) : m β
+
+export ForIn (forIn)
+
+/--
+Monadic iteration in `do`-blocks with a membership proof, using the `for h : x in xs` notation.
+
+The parameter `m` is the monad of the `do`-block in which iteration is performed, `ρ` is the type of
+the collection being iterated over, `α` is the type of elements, and `d` is the specific membership
+predicate to provide.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant8537e234659a281a8f49cc91e2f48c17b6faeacb852d1c4ba3a09b6b5e45ab20.lean#L372).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c00f44d589c186526ee811958ab745a2b1078de6` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

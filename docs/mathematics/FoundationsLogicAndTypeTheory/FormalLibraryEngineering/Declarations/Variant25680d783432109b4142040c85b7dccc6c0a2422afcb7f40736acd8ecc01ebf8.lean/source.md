@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Declarations.Variant25680d783432109b4142040c85b7dccc6c0a2422afcb7f40736acd8ecc01ebf8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fcbc7c1daa883ee70a3d9f518fdb9b2d2280e5e4` · SHA-256 `ba1be83d9fcaa3f97d9791df0b6281a3d2024e40c677a2823490023c99e442cb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Shared.Variantbc8e1f2cac48b738c753fc748090c8eee76d252864642fa30ca45b1d93496f05","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bc8e1f2cac48b738c753fc748090c8eee76d252864642fa30ca45b1d93496f05","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceOrganization.SourceCorpus.Shared.Variantbc8e1f2cac48b738c753fc748090c8eee76d252864642fa30ca45b1d93496f05","mathematical_subject":"MathematicalTooling.SourceOrganization","original_sha256":"bc8e1f2cac48b738c753fc748090c8eee76d252864642fa30ca45b1d93496f05","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/cache-source-audit/source/bc8e1f2cac48b738c753fc748090c8eee76d252864642fa30ca45b1d93496f05.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.Shared
+import FormalResearch.MathematicalTooling
+import FormalResearch.MathematicalTooling.SymbolCounts.Reordering
+
+import FormalResearch.Noeaaeue
+-- Historical import adapter: archive 2053b40b2eafc90dac8e614c87fa7550f8ba7ae2.
+import FormalResearch.SUCAS
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.HistoricalContinuity
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroObject
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSideTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.Targets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.CausalFixtures
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationMemoryTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationSupplement
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroEta
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSummability
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCountFixtures
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothingTransform
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelation
+import FormalResearch.RiemannHypothesis
+import FormalResearch.GrahamNumberNeighborhoodFactorization
+import FormalResearch.ProofHorizon
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Shared.Variantbc8e1f2cac48b738c753fc748090c8eee76d252864642fa30ca45b1d93496f05
+
+```

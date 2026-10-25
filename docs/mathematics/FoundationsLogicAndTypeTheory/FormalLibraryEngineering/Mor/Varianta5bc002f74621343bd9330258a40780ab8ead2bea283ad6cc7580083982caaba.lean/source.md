@@ -1,0 +1,181 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Mor.Varianta5bc002f74621343bd9330258a40780ab8ead2bea283ad6cc7580083982caaba
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3782d91e477c644a9eada4e9c3227114d3e9d35b` · SHA-256 `3e6c6dede6d6d7ca3ebb1eef3dcd6a5a93961b1d9fc10cf23d3057365e4d455f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.App.Variant93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.App.Variant93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Tactic/FunProp/Mor.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Tomáš Skřivan. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Tomáš Skřivan
+-/
+import Mathlib.Data.FunLike.Basic
+import Mathlib.Tactic.FunProp.ToBatteries
+
+/-!
+## `funProp` Meta programming functions like in Lean.Expr.* but for working with bundled morphisms.
+
+Function application in normal lean expression looks like `.app f x` but when we work with bundled
+morphism `f` it looks like `.app (.app coe f) x` where `f`. In mathlib `coe` is usually
+`DFunLike.coe` but it can be any coercion that is registered with the `coe` attribute.
+
+The main difference when working with expression involving morphisms is that the notion the head of
+expression changes. For example in:
+```
+  coe (f a) b
+```
+the head of expression is considered to be `f` and not `coe`.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.App.Variant93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962
+
+namespace Mathlib
+open Lean Meta
+
+namespace Meta.FunProp
+
+namespace Mor
+
+/-- Is `name` a coerction from some function space to functions? -/
+def isCoeFunName (name : Name) : CoreM Bool := do
+  let .some info ← getCoeFnInfo? name | return false
+  return info.type == .coeFun
+
+/-- Is `e` a coerction from some function space to functions? -/
+def isCoeFun (e : Expr) : MetaM Bool := do
+  let .some (name,_) := e.getAppFn.const? | return false
+  let .some info ← getCoeFnInfo? name | return false
+  return e.getAppNumArgs' + 1 == info.numArgs
+
+/-- Morphism application -/
+structure App where
+  /-- morphism coercion -/
+  coe : Expr
+  /-- bundled morphism -/
+  fn  : Expr
+  /-- morphism argument -/
+  arg : Expr
+
+/-- Is `e` morphism application? -/
+def isMorApp? (e : Expr) : MetaM (Option App) := do
+
+  let .app (.app coe f) x := e | return none
+  if ← isCoeFun coe then
+    return .some { coe := coe, fn := f, arg := x }
+  else
+    return none
+
+/--
+Weak normal head form of an expression involving morphism applications. Additionally, `pred`
+can specify which when to unfold definitions.
+
+For example calling this on `coe (f a) b` will put `f` in weak normal head form instead of `coe`.
+-/
+partial def whnfPred (e : Expr) (pred : Expr → MetaM Bool) :
+    MetaM Expr := do
+  whnfEasyCases e fun e => do
+    let e ← whnfCore e
+
+    if let .some ⟨coe,f,x⟩ ← isMorApp? e then
+      let f ← whnfPred f pred
+      if (← getConfig).zeta then
+        return (coe.app f).app x
+      else
+        return ← letTelescope f fun xs f' =>
+          mkLambdaFVars xs ((coe.app f').app x)
+
+    if (← pred e) then
+        match (← unfoldDefinition? e) with
+        | some e => whnfPred e pred
+        | none   => return e
+    else
+      return e
+
+/--
+Weak normal head form of an expression involving morphism applications.
+
+For example calling this on `coe (f a) b` will put `f` in weak normal head form instead of `coe`.
+-/
+def whnf (e : Expr) : MetaM Expr :=
+  whnfPred e (fun _ => return false)
+
+
+/-- Argument of morphism application that stores corresponding coercion if necessary -/
+structure Arg where
+  /-- argument of type `α` -/
+  expr : Expr
+  /-- coercion `F → α → β` -/
+  coe : Option Expr := none
+  deriving Inhabited
+
+/-- Morphism application -/
+def app (f : Expr) (arg : Arg) : Expr :=
+  match arg.coe with
+  | .none => f.app arg.expr
+  | .some coe => (coe.app f).app arg.expr
+
+
+/-- Given `e = f a₁ a₂ ... aₙ`, returns `k f #[a₁, ..., aₙ]` where `f` can be bundled morphism. -/
+partial def withApp {α} (e : Expr) (k : Expr → Array Arg → MetaM α) : MetaM α :=
+  go e #[]
+where
+  /-- -/
+  go : Expr → Array Arg →  MetaM α
+    | .mdata _ b, as => go b as
+    | .app (.app c f) x, as => do
+      if ← isCoeFun c then
+        go f (as.push { coe := c, expr := x})
+      else
+        go (.app c f) (as.push { expr := x})
+    | .app (.proj n i f) x, as => do
+      -- convert proj back to function application
+      let env ← getEnv
+      let info := getStructureInfo? env n |>.get!
+      let projFn := getProjFnForField? env n (info.fieldNames[i]!) |>.get!
+      let .app c f ← mkAppM projFn #[f] | panic! "bug in Mor.withApp"
+
+      go (.app (.app c f) x) as
+    | .app f a, as =>
+      go f (as.push { expr := a })
+    | f        , as => k f as.reverse
+
+
+/--
+If the given expression is a sequence of morphism applications `f a₁ .. aₙ`, return `f`.
+Otherwise return the input expression.
+-/
+def getAppFn (e : Expr) : MetaM Expr :=
+  match e with
+  | .mdata _ b => getAppFn b
+  | .app (.app c f) _ => do
+    if ← isCoeFun c then
+      getAppFn f
+    else
+      getAppFn (.app c f)
+  | .app f _ =>
+    getAppFn f
+  | e => return e
+
+/-- Given `f a₁ a₂ ... aₙ`, returns `#[a₁, ..., aₙ]` where `f` can be bundled morphism. -/
+def getAppArgs (e : Expr) : MetaM (Array Arg) := withApp e fun _ xs => return xs
+
+/-- `mkAppN f #[a₀, ..., aₙ]` ==> `f a₀ a₁ .. aₙ` where `f` can be bundled morphism. -/
+def mkAppN (f : Expr) (xs : Array Arg) : Expr :=
+  xs.foldl (init := f) (fun f x =>
+    match x with
+    | ⟨x, .none⟩ => (f.app x)
+    | ⟨x, .some coe⟩ => (coe.app f).app x)
+
+end Mor
+
+end Meta.FunProp
+
+end Mathlib
+````

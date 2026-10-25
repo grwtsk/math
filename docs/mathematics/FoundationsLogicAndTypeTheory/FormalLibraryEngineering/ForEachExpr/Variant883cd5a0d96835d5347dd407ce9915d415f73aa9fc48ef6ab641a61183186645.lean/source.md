@@ -1,0 +1,160 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ForEachExpr.Variant883cd5a0d96835d5347dd407ce9915d415f73aa9fc48ef6ab641a61183186645
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c7b122754019f5a29c19b51e99cee99cf37a0df0` · SHA-256 `b2c99247ae473f91681bb1dd64747d27dd83b56d23051f8688392d23fd81040d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.VisitLambda.Variant15cc18f25f2c7a2dc5b0295ffcaaa176895d02a408699f7b0f7968edc4a40f00","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"15cc18f25f2c7a2dc5b0295ffcaaa176895d02a408699f7b0f7968edc4a40f00","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.VisitLambda.Variant15cc18f25f2c7a2dc5b0295ffcaaa176895d02a408699f7b0f7968edc4a40f00","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"15cc18f25f2c7a2dc5b0295ffcaaa176895d02a408699f7b0f7968edc4a40f00","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Meta/ForEachExpr.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Meta.Basic
+import Init.Data.Range.Polymorphic.Iterators
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.VisitLambda.Variant15cc18f25f2c7a2dc5b0295ffcaaa176895d02a408699f7b0f7968edc4a40f00
+
+public section
+
+namespace Lean.Meta
+
+variable {m} [Monad m] [MonadLiftT MetaM m] [MonadControlT MetaM m]
+
+/-- Given an expression `e = fun (x₁ : α₁) .. (xₙ : αₙ) => b`, runs `f` on each `αᵢ` and `b`. -/
+def visitLambda (f : Expr → m Unit) (e : Expr) : m Unit := visit #[] e
+  where visit (fvars : Array Expr) : Expr → m Unit
+    | Expr.lam n d b c => do
+      let d := d.instantiateRev fvars
+      f d
+      withLocalDecl n c d fun x =>
+        visit (fvars.push x) b
+    | e => do
+      f <| e.instantiateRev fvars
+
+/-- Given an expression `e =  (x₁ : α₁) → .. (xₙ : αₙ) → b`, runs `f` on each `αᵢ` and `b`. -/
+def visitForall (f : Expr → m Unit) (e : Expr) : m Unit := visit #[] e
+  where visit (fvars : Array Expr) : Expr → m Unit
+    | Expr.forallE n d b c => do
+      let d := d.instantiateRev fvars
+      f d
+      withLocalDecl n c d fun x =>
+        visit (fvars.push x) b
+    | e => do
+      f <| e.instantiateRev fvars
+
+/-- Given a sequence of let binders `let (x₁ : α₁ := v₁) ... in b`, runs `f` on each `αᵢ`, `vᵢ` and `b`. -/
+def visitLet (f : Expr → m Unit) (e : Expr) : m Unit := visit #[] e
+  where visit (fvars : Array Expr) : Expr → m Unit
+    | Expr.letE n d v b _ => do
+      let d := d.instantiateRev fvars
+      let v := v.instantiateRev fvars
+      f d
+      f v
+      withLetDecl n d v fun x =>
+        visit (fvars.push x) b
+    | e => do
+      f <| e.instantiateRev fvars
+
+/-- Similar to `Expr.forEach'`, but creates free variables whenever going inside of a binder.
+If the inner function returns `false`, deeper subexpressions will not be visited.
+ -/
+partial def forEachExpr'
+  (input : Expr)
+  (fn : Expr → m Bool)
+  : m Unit := do
+  let _ : STWorld IO.RealWorld m := ⟨⟩
+  let _ : MonadLiftT (ST IO.RealWorld) m := { monadLift := fun x => liftM (m := MetaM) (liftM (m := ST IO.RealWorld) x) }
+  let rec visit (e : Expr) : MonadCacheT Expr Unit m Unit :=
+    checkCache e fun _ => do
+      if (← liftM (fn e)) then
+        match e with
+        | .forallE ..   => visitForall visit e
+        | .lam ..       => visitLambda visit e
+        | .letE ..      => visitLet visit e
+        | .app f a      => visit f; visit a
+        | .mdata _ b    => visit b
+        | .proj _ _ b   => visit b
+        | _             => return ()
+  visit input |>.run
+
+/-- Similar to `Expr.forEach`, but creates free variables whenever going inside of a binder. -/
+def forEachExpr (e : Expr) (f : Expr → m Unit) : m Unit :=
+  forEachExpr' e fun e => do
+    f e
+    return true
+
+/-- Return true iff `x` is a metavariable with an anonymous user facing name. -/
+private def shouldInferBinderName (x : Expr) : m Bool := do
+  match x with
+  | .mvar mvarId => return (← mvarId.getDecl).userName.isAnonymous
+  | _ => return false
+
+/--
+  Auxiliary method for (temporarily) setting the user facing name of metavariables.
+  Let `?m` be a metavariable in `isTarget.contains ?m`, and `?m` does not have a user facing name.
+  Then, we try to find an application `f ... ?m` in `e`, and (temporarily) use the
+  corresponding parameter name (with a fresh macro scope) as the user facing name for `?m`.
+  This method returns all metavariables whose user facing name has been updated.
+-/
+def setMVarUserNamesAt (e : Expr) (isTarget : Array Expr) : MetaM (Array MVarId) := do
+  let toReset ← IO.mkRef #[]
+  forEachExpr (← instantiateMVars e) fun e => do
+    if e.isApp then
+      let args := e.getAppArgs
+      for h : i in *...args.size do
+        let arg := args[i]
+        if arg.isMVar && isTarget.contains arg then
+          let mvarId := arg.mvarId!
+          if (← mvarId.getDecl).userName.isAnonymous then
+            forallBoundedTelescope (← inferType e.getAppFn) (some (i+1)) fun xs _ => do
+              if i < xs.size then
+                let mvarId := arg.mvarId!
+                let userName ← mkFreshUserName (← getFVarLocalDecl xs[i]!).userName
+                toReset.modify (·.push mvarId)
+                modifyMCtx fun mctx => mctx.setMVarUserNameTemporarily mvarId userName
+  toReset.get
+
+/--
+  Remove user facing name for metavariables in `toReset`.
+  This a low-level method for "undoing" the effect of `setMVarUserNamesAt`
+-/
+def resetMVarUserNames (toReset : Array MVarId) : MetaM Unit := do
+  for mvarId in toReset do
+    modifyMCtx fun mctx => mctx.setMVarUserNameTemporarily mvarId Name.anonymous
+
+/--
+  Similar to `mkForallFVars`, but tries to infer better binder names when `xs` contains metavariables.
+  Let `?m` be a metavariable in `xs` s.t. `?m` does not have a user facing name.
+  Then, we try to find an application `f ... ?m` in the other binder type and `type`, and
+  (temporarily) use the corresponding parameter name (with a fresh macro scope) as the user facing name for `?m`.
+  The "renaming" is temporary.
+-/
+def mkForallFVars' (xs : Array Expr) (type : Expr) : MetaM Expr := do
+  if (← xs.anyM shouldInferBinderName) then
+    let setMVarsAt (e : Expr) : StateRefT (Array MVarId) MetaM Unit := do
+      let mvarIds ← setMVarUserNamesAt e xs
+      modify (· ++ mvarIds)
+    let go : StateRefT (Array MVarId) MetaM Expr := do
+      try
+        for x in xs do
+          setMVarsAt (← inferType x)
+        setMVarsAt type
+        mkForallFVars xs type
+      finally
+        resetMVarUserNames (← get)
+    go |>.run' #[]
+  else
+    mkForallFVars xs type
+
+end Lean.Meta
+```

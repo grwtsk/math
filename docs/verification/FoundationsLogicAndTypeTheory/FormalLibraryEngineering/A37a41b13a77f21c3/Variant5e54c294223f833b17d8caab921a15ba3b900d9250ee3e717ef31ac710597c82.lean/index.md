@@ -1,0 +1,67 @@
+# Verification target: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.A37a41b13a77f21c3.Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d524b4bdfed3b854bbbf6866975aabb40f44e7be",
+  "lexical_observation_count": 2,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean/index.md) · [Full source](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d524b4bdfed3b854bbbf6866975aabb40f44e7be`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Lean` — import line 1; external provider; requires a separately pinned dependency.
+- `MathDiscovery.Core.Id` — import line 2; external provider; requires a separately pinned dependency.
+- `MathDiscovery.Extractor.Authority` — import line 3; external provider; requires a separately pinned dependency.
+- `MathDiscovery.Extractor.Expr` — import line 4; external provider; requires a separately pinned dependency.
+- `MathDiscovery.Core.IdAtoms.A_ac5db8f52326a0f1` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Version](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean/declarations/version--87b7ac6f280463e1d0d7f1c5.md) | 14 | `declaration-track:87b7ac6f280463e1d0d7f1c56b4df5e378d920bb39118b117037507302b6153a` |
+| 2 | `structure` | [ToolchainReceipt](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A37a41b13a77f21c3/Variant5e54c294223f833b17d8caab921a15ba3b900d9250ee3e717ef31ac710597c82.lean/declarations/toolchainreceipt--35778752ae1d1225e51eb230.md) | 18 | `declaration-track:35778752ae1d1225e51eb230abb1d1ca899b45d69e7e54e3e06605e925651667` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

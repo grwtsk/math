@@ -1,0 +1,197 @@
+# Anonymous elab
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:b74ec64f4e6be57fcf524872c7c16a8efad940d9764634be1d6b44a5ae5a6bcc",
+  "kind": "elab",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "elab--c86bdd4d86b2f4db4d2487e2",
+  "source": {
+    "blob": "e4b1b3bddb9200a9b697b02b3ba7c5fb83b85780",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 159,
+    "line": 44,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ProofChecking/Checks/OwnedDeclarationAudit.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:c86bdd4d86b2f4db4d2487e2e2344548cf6f2743717a60c35122d9d7cdfc583a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofChecking/Checks/OwnedDeclarationAudit__SourceOccurrence5914f59a540768ed7c764bbb.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `elab` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:b74ec64f4e6be57fcf524872c7c16a8efad940d9764634be1d6b44a5ae5a6bcc`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 44–159.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+elab "#audit_math_trust" ownerSources:str : command => do
+  let env ← getEnv
+  let owners := env.header.moduleNames
+  unless env.header.moduleData.size == owners.size do
+    throwError "incomplete module ownership table"
+  let sourceText := ownerSources.getString
+  let sourceJson ← match Json.parse (if sourceText.isEmpty then "{}" else sourceText) with
+    | .ok value => pure value
+    | .error error => throwError "invalid source profile JSON: {error}"
+  let scope := (sourceJson.getObjValAs? String "scope").toOption.getD "project"
+  let runtimeProfiles ← match scope with
+    | "project" => pure mathTrustProjectRuntimeProfiles
+    | "native-fixtures" => pure mathTrustFixtureRuntimeProfiles
+    | _ => throwError "unrecognized runtime profile scope"
+  let observedSources := (sourceJson.getObjVal? "sources").toOption.getD (Json.mkObj [])
+  let sourceHash := fun owner => (observedSources.getObjValAs? String owner.toString).toOption.getD ""
+  let ownerOf := fun name => (env.getModuleIdxFor? name).bind fun idx => owners[idx]?
+  let mut violations : Array String := #[]
+  let mut qualified : Array Name := #[]
+  for (owner, name, parentName, acceptedHash) in runtimeProfiles do
+    if owners.contains owner then
+      let profileMatches : Bool := match env.find? name, env.find? parentName with
+        | some (.defnInfo helper), some (.defnInfo parent) =>
+          Compiler.isUnsafeRecName? name == some parentName &&
+          helper.safety == .partial && parent.safety == .safe &&
+          ownerOf name == some owner && ownerOf parentName == some owner &&
+          helper.type == parent.type && helper.levelParams == parent.levelParams &&
+          sourceHash owner == acceptedHash
+        | _, _ => false
+      if profileMatches then
+        qualified := qualified.push name
+      else
+        violations := violations.push s!"runtime profile mismatch: {name}"
+  let mut count : Nat := 0
+  let mut moduleCount : Nat := 0
+  for (data, owner) in env.header.moduleData.toList.zip owners.toList do
+    if (`GRWTSK).isPrefixOf owner then
+      moduleCount := moduleCount + 1
+      let declarations := data.constants.toList.filter fun info => ownerOf info.name == some owner
+      logInfo m!"MATH_TRUST_MODULE::{(Json.mkObj [
+        ("module", toJson owner.toString),
+        ("declarations", toJson declarations.length)]).compress}"
+      for info in declarations do
+        let name := info.name
+        let knownRuntime := qualified.contains name
+        if info.isUnsafe then violations := violations.push s!"unsafe declaration: {name}"
+        if info.isPartial && !knownRuntime then violations := violations.push s!"partial declaration: {name}"
+        match info with
+        | .axiomInfo _ => violations := violations.push s!"new axiom: {name}"
+        | _ => pure ()
+        let axioms ← collectAxioms name
+        for ax in axioms do
+          unless #[`propext, `Classical.choice, `Quot.sound].contains ax do
+            violations := violations.push s!"unapproved axiom {ax} in {name}"
+        let typeReferences := qualified.filter fun helper => info.type.getUsedConstants.contains helper
+        let valueReferences := match info.value? true with
+          | some value => qualified.filter fun helper => value.getUsedConstants.contains helper
+          | none => #[]
+        if !knownRuntime && !typeReferences.isEmpty then
+          violations := violations.push s!"non-helper type references runtime helper: {name}"
+        if !knownRuntime && !valueReferences.isEmpty then
+          violations := violations.push s!"non-helper value references runtime helper: {name}"
+        let compilerParent := Compiler.isUnsafeRecName? name
+        let profile := runtimeProfiles.find? fun (o, n, _, _) => o == owner && n == name
+        let profileHash := profile.map (fun (_, _, _, h) => h) |>.getD ""
+        let typeEqual := match compilerParent.bind env.find? with
+          | some parent => info.type == parent.type
+          | none => false
+        let levelsEqual := match compilerParent.bind env.find? with
+          | some parent => info.levelParams == parent.levelParams
+          | none => false
+        let sameOwner := match compilerParent with
+          | some parent => ownerOf parent == some owner
+          | none => false
+        let type ← liftTermElabM do Meta.ppExpr info.type
+        let kind := match info with
+          | .thmInfo _ => "theorem"
+          | .defnInfo _ => "definition"
+          | .opaqueInfo _ => "opaque"
+          | .axiomInfo _ => "axiom"
+          | .ctorInfo _ => "constructor"
+          | .recInfo _ => "recursor"
+          | .inductInfo _ => "inductive"
+          | _ => "generated"
+        let entry := Json.mkObj [
+          ("module", toJson owner.toString), ("name", toJson name.toString),
+          ("kind", toJson kind), ("type", toJson type.pretty),
+          ("level_params", toJson (info.levelParams.map Name.toString)),
+          ("unsafe", toJson info.isUnsafe), ("partial", toJson info.isPartial),
+          ("known_generated_runtime_helper", toJson knownRuntime),
+          ("mathematical_admission", toJson (!knownRuntime && !info.isPartial && !info.isUnsafe && kind != "axiom" &&
+            axioms.toList.all (fun ax => #[`propext, `Classical.choice, `Quot.sound].contains ax) &&
+            typeReferences.isEmpty && valueReferences.isEmpty)),
+          ("runtime_helper_parent", toJson (compilerParent.map Name.toString)),
+          ("runtime_helper_same_owner", toJson sameOwner),
+          ("runtime_helper_type_equal", toJson typeEqual),
+          ("runtime_helper_level_params_equal", toJson levelsEqual),
+          ("runtime_helper_profile_source_sha256", toJson profileHash),
+          ("runtime_helper_owner_source_sha256", toJson (sourceHash owner)),
+          ("direct_type_references_to_runtime_helpers", toJson (typeReferences.toList.map Name.toString)),
+          ("direct_value_references_to_runtime_helpers", toJson (valueReferences.toList.map Name.toString)),
+          ("direct_value_reference_to_runtime_helper", toJson (!valueReferences.isEmpty)),
+          ("axioms", toJson (axioms.toList.map Name.toString))]
+        logInfo m!"MATH_TRUST_DECL::{entry.compress}"
+        count := count + 1
+    else
+      logInfo m!"MATH_TRUST_DEPENDENCY_MODULE::{owner}"
+  logInfo m!"MATH_TRUST_COUNT::{count}"
+  logInfo m!"MATH_TRUST_MODULE_COUNT::{moduleCount}"
+  if moduleCount == 0 || count == 0 then throwError "empty project census"
+  for violation in violations do
+    logInfo m!"MATH_TRUST_VIOLATION::{(toJson violation).compress}"
+  unless violations.isEmpty do
+    throwError "project trust audit failed: {violations.toList}"
+
+#audit_math_trust ""
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofChecking/Checks/OwnedDeclarationAudit__SourceOccurrence5914f59a540768ed7c764bbb.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ProofChecking/Checks/OwnedDeclarationAudit.lean#L44).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e4b1b3bddb9200a9b697b02b3ba7c5fb83b85780` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

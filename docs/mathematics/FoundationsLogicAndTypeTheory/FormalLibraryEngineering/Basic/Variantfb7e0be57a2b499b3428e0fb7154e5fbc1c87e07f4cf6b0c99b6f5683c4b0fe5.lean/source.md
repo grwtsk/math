@@ -1,0 +1,115 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Basic.Variantfb7e0be57a2b499b3428e0fb7154e5fbc1c87e07f4cf6b0c99b6f5683c4b0fe5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6128a80257bcebe488fb1ee00d7d40f215abc6e5` · SHA-256 `7f47721853b636e74065d9f26ff05738f187825e3882b828bc07005310d2ff50`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RecAuxOn.Variant1cd5d01c0375d2908bc424afc1e17c2de83089f400938a4cf8350dc6730ceebf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1cd5d01c0375d2908bc424afc1e17c2de83089f400938a4cf8350dc6730ceebf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.RecAuxOn.Variant1cd5d01c0375d2908bc424afc1e17c2de83089f400938a4cf8350dc6730ceebf","mathematical_subject":"Foundations.Unclassified","original_sha256":"1cd5d01c0375d2908bc424afc1e17c2de83089f400938a4cf8350dc6730ceebf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/restored-inputs/packages/batteries/Batteries/Data/Nat/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2016 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura, Jeremy Avigad, Mario Carneiro
+-/
+module
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RecAuxOn.Variant1cd5d01c0375d2908bc424afc1e17c2de83089f400938a4cf8350dc6730ceebf
+
+@[expose] public section
+
+namespace Nat
+
+/--
+  Recursor identical to `Nat.recOn` but uses notations `0` for `Nat.zero` and `·+1` for `Nat.succ`
+-/
+@[elab_as_elim]
+protected def recAuxOn {motive : Nat → Sort _} (t : Nat) (zero : motive 0)
+  (succ : ∀ n, motive n → motive (n+1)) : motive t := Nat.recAux zero succ t
+
+/--
+  Strong recursor for `Nat`
+-/
+@[elab_as_elim]
+protected def strongRec {motive : Nat → Sort _} (ind : ∀ n, (∀ m, m < n → motive m) → motive n)
+  (t : Nat) : motive t := ind t fun m _ => Nat.strongRec ind m
+
+/--
+  Strong recursor via a `Nat`-valued measure
+-/
+@[elab_as_elim]
+def strongRecMeasure (f : α → Nat) {motive : α → Sort _}
+    (ind : ∀ x, (∀ y, f y < f x → motive y) → motive x) (x : α) : motive x :=
+  ind x fun y _ => strongRecMeasure f ind y
+termination_by f x
+
+/--
+  Simple diagonal recursor for `Nat`
+-/
+@[elab_as_elim]
+protected def recDiagAux {motive : Nat → Nat → Sort _}
+  (zero_left : ∀ n, motive 0 n)
+  (zero_right : ∀ m, motive m 0)
+  (succ_succ : ∀ m n, motive m n → motive (m+1) (n+1)) :
+    (m n : Nat) → motive m n
+  | 0, _ => zero_left _
+  | _, 0 => zero_right _
+  | _+1, _+1 => succ_succ _ _ (Nat.recDiagAux zero_left zero_right succ_succ _ _)
+
+/--
+  Diagonal recursor for `Nat`
+-/
+@[elab_as_elim]
+protected def recDiag {motive : Nat → Nat → Sort _}
+  (zero_zero : motive 0 0)
+  (zero_succ : ∀ n, motive 0 n → motive 0 (n+1))
+  (succ_zero : ∀ m, motive m 0 → motive (m+1) 0)
+  (succ_succ : ∀ m n, motive m n → motive (m+1) (n+1)) :
+    (m n : Nat) → motive m n := Nat.recDiagAux left right succ_succ
+where
+  /-- Left leg for `Nat.recDiag` -/
+  left : ∀ n, motive 0 n
+  | 0 => zero_zero
+  | _+1 => zero_succ _ (left _)
+  /-- Right leg for `Nat.recDiag` -/
+  right : ∀ m, motive m 0
+  | 0 => zero_zero
+  | _+1 => succ_zero _ (right _)
+
+/--
+  Diagonal recursor for `Nat`
+-/
+@[elab_as_elim]
+protected def recDiagOn {motive : Nat → Nat → Sort _} (m n : Nat)
+  (zero_zero : motive 0 0)
+  (zero_succ : ∀ n, motive 0 n → motive 0 (n+1))
+  (succ_zero : ∀ m, motive m 0 → motive (m+1) 0)
+  (succ_succ : ∀ m n, motive m n → motive (m+1) (n+1)) :
+    motive m n := Nat.recDiag zero_zero zero_succ succ_zero succ_succ m n
+
+/--
+  Diagonal recursor for `Nat`
+-/
+@[elab_as_elim]
+protected def casesDiagOn {motive : Nat → Nat → Sort _} (m n : Nat)
+  (zero_zero : motive 0 0)
+  (zero_succ : ∀ n, motive 0 (n+1))
+  (succ_zero : ∀ m, motive (m+1) 0)
+  (succ_succ : ∀ m n, motive (m+1) (n+1)) :
+    motive m n :=
+  Nat.recDiag zero_zero (fun _ _ => zero_succ _) (fun _ _ => succ_zero _)
+    (fun _ _ _ => succ_succ _ _) m n
+
+/--
+Construct a natural number from a sequence of bits using little endian convention.
+-/
+@[inline] def ofBits (f : Fin n → Bool) : Nat :=
+  Fin.foldr n (fun i v => 2 * v + (f i).toNat) 0
+
+-- Forward port of lean4#10739
+instance {n : Nat} : NeZero (n^0) := ⟨Nat.one_ne_zero⟩
+```

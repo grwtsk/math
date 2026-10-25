@@ -1,0 +1,67 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ConfigTarget.Variant2ab2ede8234c851c73f4bda84c95fdc1c2dcfe182ba8eac3eb9ebe5de0dda9b9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c270c74dd32290d22af6e05eac77c5df0bce48f9` · SHA-256 `c3183abd011750cace71593f5e0ab32f29b608173bf9af0445e7d86ccc0604b7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ConfigTarget.Variant2304efd322fe0ccfb71c7745ab6561913c0a5f8c0169f17783cf5c443d061eda","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2304efd322fe0ccfb71c7745ab6561913c0a5f8c0169f17783cf5c443d061eda","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceEnvironments.SourceCorpus.ConfigTarget.Variant2304efd322fe0ccfb71c7745ab6561913c0a5f8c0169f17783cf5c443d061eda","mathematical_subject":"MathematicalTooling.SourceEnvironments","original_sha256":"2304efd322fe0ccfb71c7745ab6561913c0a5f8c0169f17783cf5c443d061eda","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/lake/Lake/Config/ConfigTarget.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Mac Malone. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mac Malone
+-/
+module
+
+prelude
+public import Lake.Config.Package
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ConfigTarget.Variant2304efd322fe0ccfb71c7745ab6561913c0a5f8c0169f17783cf5c443d061eda
+
+open Lean
+
+namespace Lake
+
+/--
+A user-configured target -- its package and its configuration.
+This is the general structure from which `LeanLib`, `LeanExe`, etc. are derived.
+-/
+public structure ConfigTarget (kind : Name) where
+  /-- The package the target belongs to. -/
+  pkg : Package
+  /-- The target's name. -/
+  name : Name
+  /-- The target's user-defined configuration. -/
+  config : ConfigType kind pkg.keyName name
+
+public instance : Hashable (ConfigTarget k) := ⟨(hash ·.name)⟩
+public instance : BEq (ConfigTarget k) := ⟨(·.name == ·.name)⟩
+
+@[simp] public axiom OpaqueConfigTarget.def {k : Name} : OpaqueConfigTarget k = ConfigTarget k
+
+@[inline] public def PConfigDecl.mkConfigTarget (pkg : Package) (self : PConfigDecl pkg.keyName) : ConfigTarget self.kind :=
+  ConfigTarget.mk pkg self.name self.config'
+
+/-- Returns the package targets of the specified kind (as an `Array`). -/
+@[inline] public def Package.configTargets (kind : Name) (self : Package) : Array (ConfigTarget kind) :=
+  self.targetDecls.foldl (init := #[]) fun a t =>
+    let {name := n, kind := k, config, pkg_eq, ..} := t
+    if kind_eq : k = kind then
+      a.push ⟨self, n, kind_eq ▸ pkg_eq ▸ config⟩
+    else
+      a
+
+/-- Try to find a package target of the given name and kind. -/
+@[inline] public def Package.findConfigTarget? (kind : Name) (name : Name) (self : Package) : Option (ConfigTarget kind) :=
+  self.findTargetDecl? name |>.bind fun t =>
+    let {name, kind := k, config, pkg_eq, ..} := t
+    if kind_eq : k = kind then
+      some ⟨self, name, kind_eq ▸ pkg_eq ▸ config⟩
+    else
+      none
+```

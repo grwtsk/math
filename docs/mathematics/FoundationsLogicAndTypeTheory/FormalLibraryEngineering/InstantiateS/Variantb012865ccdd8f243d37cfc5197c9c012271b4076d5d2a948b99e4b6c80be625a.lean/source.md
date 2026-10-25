@@ -1,0 +1,234 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.InstantiateS.Variantb012865ccdd8f243d37cfc5197c9c012271b4076d5d2a948b99e4b6c80be625a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f19669a1a57c279a0a4d779d7e3ed4ac6c91b04a` · SHA-256 `88fd8b9b7c723ebf2440eb5d4bab3903789e3d687a41e3adc825a4efa2e8d475`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.InstantiateRevRangeS.Variant579ffb5927d82126585549ddd8a8e4dfbf742a8f2e2af71759945979969b6c6a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"579ffb5927d82126585549ddd8a8e4dfbf742a8f2e2af71759945979969b6c6a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.InstantiateRevRangeS.Variant579ffb5927d82126585549ddd8a8e4dfbf742a8f2e2af71759945979969b6c6a","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"579ffb5927d82126585549ddd8a8e4dfbf742a8f2e2af71759945979969b6c6a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Meta/Sym/InstantiateS.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+prelude
+public import Lean.Meta.Sym.SymM
+import Lean.Meta.Sym.LooseBVarsS
+import Init.Grind
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.InstantiateRevRangeS.Variant579ffb5927d82126585549ddd8a8e4dfbf742a8f2e2af71759945979969b6c6a
+
+namespace Lean.Meta.Sym
+open Lean.Meta.Sym.Internal
+/--
+Similar to `Lean.Expr.instantiateRevRange`.
+It assumes the input is maximally shared, and ensures the output is too.
+It assumes `beginIdx ≤ endIdx` and `endIdx ≤ subst.size`
+-/
+public def instantiateRevRangeS (e : Expr) (beginIdx endIdx : Nat) (subst : Array Expr) : SymM Expr :=
+  if _ : beginIdx > endIdx then unreachable! else
+  if _ : endIdx > subst.size then unreachable! else
+  let s := beginIdx
+  let n := endIdx - beginIdx
+  replaceS e fun e offset => do
+    let s₁ := s + offset
+    match e with
+    | .bvar idx =>
+      if _h : idx >= s₁ then
+        if _h : idx < offset + n then
+          let v := subst[n - (idx - offset) - 1]
+          liftLooseBVarsS' v 0 offset
+        else
+          mkBVarS (idx - n)
+      else
+        return some e
+    | .lit _ | .mvar _ | .fvar _ | .const _ _ | .sort _ =>
+      return some e
+    | _ =>
+      if s₁ >= e.looseBVarRange then
+        return some e
+      else
+        return none
+
+/--
+Similar to `Lean.Expr.instantiateRev`.
+It assumes the input is maximally shared, and ensures the output is too.
+-/
+@[inline] public def instantiateRevS (e : Expr) (subst : Array Expr) : SymM Expr :=
+  instantiateRevRangeS e 0 subst.size subst
+
+/--
+Similar to `Lean.Expr.instantiateRange`.
+It assumes the input is maximally shared, and ensures the output is too.
+It assumes `beginIdx ≤ endIdx` and `endIdx ≤ subst.size`
+-/
+def instantiateRangeS' (e : Expr) (beginIdx endIdx : Nat) (subst : Array Expr) : AlphaShareBuilderM Expr :=
+  if _ : beginIdx > endIdx then unreachable! else
+  if _ : endIdx > subst.size then unreachable! else
+  let n := endIdx - beginIdx
+  replaceS' e fun e offset => do
+    match e with
+    | .bvar idx =>
+      if _h : idx >= offset then
+        if _h : idx < offset + n then
+          let v := subst[beginIdx + idx - offset]
+          liftLooseBVarsS' v 0 offset
+        else
+          mkBVarS (idx - n)
+      else
+        return some e
+    | .lit _ | .mvar _ | .fvar _ | .const _ _ | .sort _ =>
+      return some e
+    | _ =>
+      if offset >= e.looseBVarRange then
+        return some e
+      else
+        return none
+
+/-- Internal variant of `instantiateS` that runs in `AlphaShareBuilderM`. -/
+def instantiateS' (e : Expr) (subst : Array Expr) : AlphaShareBuilderM Expr :=
+  instantiateRangeS' e 0 subst.size subst
+
+/--
+Similar to `Lean.Expr.instantiate`.
+It assumes the input is maximally shared, and ensures the output is too.
+-/
+public def instantiateS  (e : Expr) (subst : Array Expr) : SymM Expr :=
+  liftBuilderM <| instantiateS' e subst
+
+/-- Internal variant of `betaRevS` that runs in `AlphaShareBuilderM`. -/
+private partial def betaRevS' (f : Expr) (revArgs : Array Expr) : AlphaShareBuilderM Expr :=
+  if revArgs.size == 0 then
+    return f
+  else
+    let sz := revArgs.size
+    let rec go (e : Expr) (i : Nat) : AlphaShareBuilderM Expr := do
+      match e with
+      | .lam _ _ b _ =>
+        if i + 1 < sz then
+          go b (i+1)
+        else
+          instantiateS' b revArgs
+      | .mdata _ b => go b i
+      | _ =>
+        let n := sz - i
+        mkAppRevRangeS (← instantiateRangeS' e n sz revArgs) 0 n revArgs
+    go f 0
+
+/-- Monad for `instantiateRevBetaS'` with caching keyed by `(expression pointer, binder offset)`. -/
+abbrev M := StateT (Std.HashMap (ExprPtr × Nat) Expr) AlphaShareBuilderM
+
+/-- Caches the result `r` for `key` and returns `r`. -/
+def save (key : ExprPtr × Nat) (r : Expr) : M Expr := do
+  modify fun cache => cache.insert key r
+  return r
+
+/-- Internal variant of `instantiateRevBetaS` that runs in `AlphaShareBuilderM`. -/
+partial def instantiateRevBetaS' (e : Expr) (subst : Array Expr) : AlphaShareBuilderM Expr := do
+  if subst.isEmpty || !e.hasLooseBVars then return e
+  visit e 0 |>.run' {}
+where
+  visitBVar (e : Expr) (bidx : Nat) (offset : Nat) : M Expr := do
+    let n := subst.size
+    if _h : bidx >= offset then
+      if _h : bidx < offset + n then
+        let v := subst[n - (bidx - offset) - 1]
+        liftLooseBVarsS' v 0 offset
+      else
+        mkBVarS (bidx - n)
+    else
+      return e
+
+  visitChild (e : Expr) (offset : Nat) : M Expr := do
+    if offset >= e.looseBVarRange then
+      return e
+    else
+      let key := (⟨e⟩, offset)
+      if let some r := (← get)[key]? then
+        return r
+      else match e with
+        | .bvar bidx => save key (← visitBVar e bidx offset)
+        | .lit _ | .mvar _ | .fvar _ | .const _ _ | .sort _ => save key e
+        | e => save key (← visit e offset)
+
+  visitAppDefault (e : Expr) (offset : Nat) : M Expr := do
+    match e with
+    | .app f a =>
+      let key := (⟨e⟩, offset)
+      if let some r := (← get)[key]? then
+        return r
+      else
+        save key (← e.updateAppS! (← visitAppDefault f offset) (← visitChild a offset))
+    | e => visitChild e offset
+
+  visitAppBeta (e : Expr) (f : Expr) (argsRev : Array Expr) (offset : Nat) (modified : Bool) : M Expr := do
+    match f with
+    | .app f a =>
+      let a' ← visitChild a offset
+      visitAppBeta e f (argsRev.push a') offset (modified || !isSameExpr a a')
+    | .bvar bidx =>
+      let f' ← visitBVar f bidx offset
+      if modified || !isSameExpr f f' then
+        betaRevS' f' argsRev
+      else
+        return e
+    | _ => unreachable!
+
+  visitApp (e : Expr) (f : Expr) (arg : Expr) (offset : Nat) (_ : e = .app f arg) : M Expr := do
+    let arg' ← visitChild arg offset
+    if f.getAppFn.isBVar then
+      visitAppBeta e f #[arg'] offset (!isSameExpr arg arg')
+    else
+      e.updateAppS! (← visitAppDefault f offset) arg'
+
+  visit (e : Expr) (offset : Nat) : M Expr := do
+    match h : e with
+    | .lit _ | .mvar _ | .fvar _ | .const _ _ | .sort _ => unreachable!
+    | .bvar bidx => visitBVar e bidx offset
+    | .app f a => visitApp e f a offset h
+    | .mdata _ a => e.updateMDataS! (← visitChild a offset)
+    | .proj _ _ a => e.updateProjS! (← visitChild a offset)
+    | .forallE _ d b _ => e.updateForallS! (← visitChild d offset) (← visitChild b (offset+1))
+    | .lam _ d b _ => e.updateLambdaS! (← visitChild d offset) (← visitChild b (offset+1))
+    | .letE _ t v b _ => e.updateLetS! (← visitChild t offset) (← visitChild v offset) (← visitChild b (offset+1))
+
+/--
+Similar to `instantiateRevS`, but beta-reduces nested applications whose function becomes a lambda
+after substitution.
+
+For example, if `e` contains a subterm `#0 a` and we apply the substitution `#0 := fun x => x + 1`,
+then `instantiateRevBetaS` produces `a + 1` instead of `(fun x => x + 1) a`.
+
+This is useful when applying theorems. For example, when applying `Exists.intro`:
+```
+Exists.intro.{u} {α : Sort u} {p : α → Prop} (w : α) (h : p w) : Exists p
+```
+to a goal of the form `∃ x : Nat, p x ∧ q x`, we create metavariables `?w` and `?h`.
+With `instantiateRevBetaS`, the type of `?h` becomes `p ?w ∧ q ?w` instead of
+`(fun x => p x ∧ q x) ?w`.
+-/
+public def instantiateRevBetaS (e : Expr) (subst : Array Expr) : SymM Expr := do
+  if !e.hasLooseBVars || subst.isEmpty then return e
+  else liftBuilderM <| instantiateRevBetaS' e subst
+
+/--
+Beta-reduces `f` applied to reversed arguments `revArgs`, ensuring maximally shared terms.
+`betaRevS f #[a₃, a₂, a₁]` computes the beta-normal form of `f a₁ a₂ a₃`.
+-/
+public def betaRevS (f : Expr) (revArgs : Array Expr) : SymM Expr :=
+  liftBuilderM <| betaRevS' f revArgs
+
+/--
+Apply the given arguments to `f`, beta-reducing if `f` is a lambda expression,
+ensuring maximally shared terms. See `betaRevS` for details.
+-/
+public def betaS (f : Expr) (args : Array Expr) : SymM Expr :=
+  betaRevS f args.reverse
+
+end Lean.Meta.Sym
+````

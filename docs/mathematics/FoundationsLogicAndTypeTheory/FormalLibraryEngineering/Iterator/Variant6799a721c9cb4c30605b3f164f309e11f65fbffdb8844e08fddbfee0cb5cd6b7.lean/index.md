@@ -1,0 +1,23 @@
+# GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Iterator.Variant6799a721c9cb4c30605b3f164f309e11f65fbffdb8844e08fddbfee0cb5cd6b7
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**2 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Iterator/Variant6799a721c9cb4c30605b3f164f309e11f65fbffdb8844e08fddbfee0cb5cd6b7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f2232b7149b998019d96fbb1c1b339bf2fc3555`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Iterator/Variant6799a721c9cb4c30605b3f164f309e11f65fbffdb8844e08fddbfee0cb5cd6b7.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [iter](declarations/iter--e1e40b4434a68f60e0092709.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [toList_iter](declarations/tolist-iter--3a93fc85658d2112a1b56ac1.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |

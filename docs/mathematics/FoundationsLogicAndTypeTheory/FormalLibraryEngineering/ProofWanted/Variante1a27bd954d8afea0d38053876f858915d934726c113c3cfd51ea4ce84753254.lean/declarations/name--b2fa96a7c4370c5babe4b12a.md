@@ -1,0 +1,198 @@
+# $name
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:a7c999de4be5ac65ea1af968de28c9249f4dd20a34a42c97eab0cd3e3a7da9f2",
+  "kind": "def",
+  "lexical_name": "$name",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "name--b2fa96a7c4370c5babe4b12a",
+  "source": {
+    "blob": "29ca012651350b3adfc2c5a6c1af1a3770c0d137",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 687,
+    "line": 571,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofWanted/Variante1a27bd954d8afea0d38053876f858915d934726c113c3cfd51ea4ce84753254.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:b2fa96a7c4370c5babe4b12a7ea2152e24b70155c5ebb2ba771c6c1840abd1ab",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofWanted/Variante1a27bd954d8afea0d38053876f858915d934726c113c3cfd51ea4ce84753254.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:a7c999de4be5ac65ea1af968de28c9249f4dd20a34a42c97eab0cd3e3a7da9f2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 571–687.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+          private def $name $args* $binders* : $wrapper $resAscribed := $rhs
+          end)
+  -- Include-on-use: an ambient `instance_wanted` is otherwise bolted onto *every* later wanted,
+  -- but a declaration should only carry the holes it actually needs (cf. `variable [inst]`). We
+  -- emit with
+  -- *all* generated binders, inspect the genuine elaborated declaration for the binders
+  -- actually used (in its value or type, transitively through binders' own types), roll the
+  -- emission back, and
+  -- re-emit keeping only those. Using the real declaration elaboration — rather than a hand-rolled
+  -- one — gets section variables, instance arguments, autobound implicits and universes right.
+  -- Unused ambient instances (and any deps orphaned by their removal) are dropped, removing
+  -- noise and the
+  -- quadratic binder growth a chain of `instance_wanted`s used to cause. It is best effort: if the
+  -- full emission fails (e.g. an intentional error-case test) we keep every binder so the final
+  -- emission reports the canonical error.
+  let allBinders ← order.mapM mkBinderStx
+  let declId : Syntax.Ident := ⟨name.raw[0]⟩
+  let keep : Array Bool ← if order.isEmpty then pure #[] else do
+    let errCount (s : Command.State) : Nat :=
+      (s.messages.toList.filter (·.severity == .error)).length
+    let saved ← get
+    let errsBefore := errCount saved
+    -- Emit with *all* generated binders. `elabCommand` *logs* elaboration errors rather than
+    -- throwing; if emitting with all binders errored (e.g. an intentional error-case test, or a
+    -- body that genuinely fails to type-check), keep every binder and let the final emission
+    -- report the
+    -- canonical error. Otherwise the usage analysis below *must* succeed — a failure there is an
+    -- internal bug and should surface, not silently degrade to "keep all" (which would mask exactly
+    -- the regression include-on-use prevents).
+    emitDecl allBinders
+    let mask : Array Bool ←
+      if errCount (← get) > errsBefore then
+        pure (Array.replicate order.size true)
+      else
+        let nm ← Command.liftTermElabM <| Lean.Elab.realizeGlobalConstNoOverloadWithInfo declId
+        let some val := (← getConstInfo nm).value?
+          | throwError "internal: emitted wanted has no value"
+        Command.liftTermElabM <| Lean.Meta.lambdaTelescope val fun fvars vbody => do
+          let lctx ← getLCtx
+          let collect (s : Std.HashSet FVarId) (e : Expr) : Std.HashSet FVarId :=
+            (Lean.collectFVars {} e).fvarIds.foldl (·.insert ·) s
+          let mut used : Std.HashSet FVarId :=
+            collect (collect {} vbody) (← Lean.Meta.inferType vbody)
+          let mut changed := true
+          while changed do
+            changed := false
+            for fv in used.toArray do
+              if let some d := lctx.find? fv then
+                for w in (Lean.collectFVars {} d.type).fvarIds do
+                  unless used.contains w do used := used.insert w; changed := true
+          let genStart := fvars.size - order.size
+          return (Array.range order.size).map fun i => used.contains fvars[genStart + i]!.fvarId!
+    -- Roll back the probe emission (and its messages) so only the final, pruned emission remains.
+    set saved
+    pure mask
+  let order := (order.zip keep).filterMap fun (e, k) => if k then some e else none
+  let extraBinders ← order.mapM mkBinderStx
+  emitDecl extraBinders
+  -- Record how many of this declaration's binders are auto-generated (`extraBinders`), so a later
+  -- `❰…❱` reference can tell them apart from the user binders and surface the leaf holes. For a
+  -- transparent declaration, also register it so references inline it instead of making a hole.
+  let identStx : Syntax.Ident := ⟨name.raw[0]⟩
+  let declName ← Command.liftTermElabM do
+    Lean.Elab.realizeGlobalConstNoOverloadWithInfo identStx
+  modifyEnv (wantedArityExt.addEntry · (declName, order.size))
+
+/-- This proof would be a welcome contribution to the library!
+
+The syntax of `theorem_wanted` declarations is just like that of `theorem`. Without `:=` and a
+proof body it records a wanted theorem; with one it records a partial proof that still depends on
+other wanted lemmas. Lean checks that `theorem_wanted` declarations are well-formed (e.g. it
+ensures that all the mentioned names are in scope, and that the theorem statement is a valid
+proposition), and records a private placeholder declaration of type `... → ProofWanted statement`.
+
+Modifiers (such as `@[simp]`) are accepted for syntactic compatibility with `theorem` but are
+currently ignored.
+
+`proof_wanted` is a synonym for `theorem_wanted`.
+
+Inside another `theorem_wanted` or `def_wanted`, write `❰foo❱` to reference an earlier
+`theorem_wanted` or `def_wanted` named `foo`. The bracket may appear in the statement or
+the body, and each distinct reference becomes a fresh parameter binder of the matching type. For
+parametrised `foo : ∀ args, ProofWanted _`, the binder type is itself Π-quantified, so `❰foo❱ x
+y` applies the parameter to `x y`. `❰foo❱` only resolves names within the current file, since
+the placeholders are `private`.
+
+A body must reference at least one `❰…❱` (in the statement or the body); otherwise the body is
+a complete proof and the declaration should be a `theorem`.
+
+Typical usage:
+```
+-- A parameterless wanted fact:
+theorem_wanted size_of_two_pushes_onto_empty :
+    ((#[] : Array Nat).push 1 |>.push 2).size = 2
+
+-- Referencing an earlier `theorem_wanted` inside a statement (here in the `Fin`
+-- bound proof, which rewrites by the wanted fact):
+theorem_wanted first_index_after_two_pushes :
+    (⟨0, by rw [❰size_of_two_pushes_onto_empty❱]; decide⟩
+      : Fin ((#[] : Array Nat).push 1 |>.push 2).size).val = 0
+
+-- A parametrised wanted fact:
+theorem_wanted size_after_two_pushes {α : Type _} (a : Array α) (x y : α) :
+    ((a.push x).push y).size = a.size + 2
+
+-- Referencing the parametrised wanted with arguments: `❰foo❱ a x y`.
+theorem_wanted index_after_two_pushes {α : Type _} (a : Array α) (x y : α) :
+    (⟨a.size, by rw [❰size_after_two_pushes❱ a x y]; omega⟩
+      : Fin ((a.push x).push y).size).val = a.size
+
+-- A partial proof may be supplied with `:= body`, deferring the harder step via `❰…❱`:
+theorem_wanted size_after_three_pushes {α : Type _} (a : Array α) (x y z : α) :
+    (((a.push x).push y).push z).size = a.size + 3 := by
+  rw [Array.size_push, ❰size_after_two_pushes❱ a x y]
+```
+-/
+@[command_parser]
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofWanted/Variante1a27bd954d8afea0d38053876f858915d934726c113c3cfd51ea4ce84753254.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofWanted/Variante1a27bd954d8afea0d38053876f858915d934726c113c3cfd51ea4ce84753254.lean#L571).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `29ca012651350b3adfc2c5a6c1af1a3770c0d137` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,9 @@
+import scratch.mertens.EndpointPositivity
+set_option pp.universes true
+set_option pp.explicit true
+#check @EndpointPositivityScratch.normalizedTest_endpoint_pos
+#print axioms EndpointPositivityScratch.normalizedTest_endpoint_pos
+#check @EndpointPositivityScratch.sourceCorrelation_endpoint_pos
+#print axioms EndpointPositivityScratch.sourceCorrelation_endpoint_pos
+#check @EndpointPositivityScratch.sourceSamplingKernel_upper_pos
+#print axioms EndpointPositivityScratch.sourceSamplingKernel_upper_pos

@@ -1,0 +1,96 @@
+# addInheritedDocString
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:9b61c9fea7be9e2dc8067b0cd3f1bccf597fe2b23e734e97dfd291367ad7965e",
+  "kind": "def",
+  "lexical_name": "addInheritedDocString",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addinheriteddocstring--ccf2874d9f8fc2d8fdfd760d",
+  "source": {
+    "blob": "8958b216039fe926ae10421fca2cfb371f9d365f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 195,
+    "line": 181,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extension/Variantc87808441ccf7d40f1330a7be3e3326229a286bda4b6a20341d2599f2d0b1f46.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:ccf2874d9f8fc2d8fdfd760d1a3862c8d9122831ea55ae7431215494dc2f1a5a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extension/Variantc87808441ccf7d40f1330a7be3e3326229a286bda4b6a20341d2599f2d0b1f46.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:9b61c9fea7be9e2dc8067b0cd3f1bccf597fe2b23e734e97dfd291367ad7965e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 181–195.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def addInheritedDocString [Monad m] [MonadError m] [MonadEnv m] (declName target : Name) : m Unit := do
+  unless (← getEnv).getModuleIdxFor? declName |>.isNone do
+    throwError "invalid `[inherit_doc]` attribute, declaration `{.ofConstName declName}` is in an imported module"
+  if inheritDocStringExt.find? (level := .server) (← getEnv) declName |>.isSome then
+    throwError "invalid `[inherit_doc]` attribute, declaration `{.ofConstName declName}` already has an `[inherit_doc]` attribute"
+  if inheritDocStringExt.find? (level := .server) (← getEnv) target == some declName then
+    throwError "invalid `[inherit_doc]` attribute, cycle detected"
+  modifyEnv fun env => inheritDocStringExt.insert env declName target
+
+/--
+Finds a docstring without performing any alias resolution or enrichment with extra metadata.
+For Markdown docstrings, the result is a string; for Verso docstrings, it's a `VersoDocString`.
+
+Docstrings to be shown to a user should be looked up with `Lean.findDocString?` instead.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extension/Variantc87808441ccf7d40f1330a7be3e3326229a286bda4b6a20341d2599f2d0b1f46.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Extension/Variantc87808441ccf7d40f1330a7be3e3326229a286bda4b6a20341d2599f2d0b1f46.lean#L181).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8958b216039fe926ae10421fca2cfb371f9d365f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

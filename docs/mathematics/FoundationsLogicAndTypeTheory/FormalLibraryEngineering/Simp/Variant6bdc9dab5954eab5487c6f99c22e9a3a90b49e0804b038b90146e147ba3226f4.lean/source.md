@@ -1,0 +1,271 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Simp.Variant6bdc9dab5954eab5487c6f99c22e9a3a90b49e0804b038b90146e147ba3226f4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `64be566a136b59ddf3f98dd9d752d398ccbe8531` · SHA-256 `9866b428f38f7294740a30bdf6c80e1f77bfe566700a4822c547f1e663d750fb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.LeanPHashSetToList.Variant06cf3ef0b6f94b658304cc1613a9c4d4c0c2431bc95c86ccd563b480a7f5ff71","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"06cf3ef0b6f94b658304cc1613a9c4d4c0c2431bc95c86ccd563b480a7f5ff71","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.LeanPHashSetToList.Variant06cf3ef0b6f94b658304cc1613a9c4d4c0c2431bc95c86ccd563b480a7f5ff71","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"06cf3ef0b6f94b658304cc1613a9c4d4c0c2431bc95c86ccd563b480a7f5ff71","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Lean/Meta/Simp.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","scope_end_name_mismatch","uncompiled_organization"],"structural_qualification":"structural_issues_retained_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Scott Morrison. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Scott Morrison, Gabriel Ebner, Floris van Doorn
+-/
+import Lean
+import Std.Tactic.OpenPrivate
+
+/-!
+# Helper functions for using the simplifier.
+
+[TODO] Needs documentation, cleanup, and possibly reunification of `mkSimpContext'` with core.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.LeanPHashSetToList.Variant06cf3ef0b6f94b658304cc1613a9c4d4c0c2431bc95c86ccd563b480a7f5ff71
+
+set_option autoImplicit true
+
+open Lean Elab.Tactic
+
+def Lean.PHashSet.toList [BEq α] [Hashable α] (s : Lean.PHashSet α) : List α :=
+  s.1.toList.map (·.1)
+
+namespace Lean
+
+namespace Meta.DiscrTree
+
+partial def Trie.getElements : Trie α s → Array α
+  | Trie.node vs children =>
+    vs ++ children.concatMap fun (_, child) ↦ child.getElements
+
+def getElements (d : DiscrTree α s) : Array α :=
+  d.1.toList.toArray.concatMap fun (_, child) => child.getElements
+
+end Meta.DiscrTree
+
+namespace Meta.Simp
+open Elab.Tactic
+
+instance : ToFormat SimpTheorems where
+  format s :=
+f!"pre:
+{s.pre.getElements.toList}
+post:
+{s.post.getElements.toList}
+lemmaNames:
+{s.lemmaNames.toList.map (·.key)}
+toUnfold: {s.toUnfold.toList}
+erased: {s.erased.toList.map (·.key)}
+toUnfoldThms: {s.toUnfoldThms.toList}"
+
+def mkEqSymm (e : Expr) (r : Simp.Result) : MetaM Simp.Result :=
+  ({ expr := e, proof? := · }) <$>
+  match r.proof? with
+  | none => pure none
+  | some p => some <$> Meta.mkEqSymm p
+
+def mkCast (r : Simp.Result) (e : Expr) : MetaM Expr := do
+  mkAppM ``cast #[← r.getProof, e]
+
+/-- Return all propositions in the local context. -/
+def getPropHyps : MetaM (Array FVarId) := do
+  let mut result := #[]
+  for localDecl in (← getLCtx) do
+    unless localDecl.isAuxDecl do
+      if (← isProp localDecl.type) then
+        result := result.push localDecl.fvarId
+  return result
+
+export private mkDischargeWrapper from Lean.Elab.Tactic.Simp
+
+-- copied from core
+/--
+If `ctx == false`, the config argument is assumed to have type `Meta.Simp.Config`,
+and `Meta.Simp.ConfigCtx` otherwise.
+If `ctx == false`, the `discharge` option must be none
+-/
+def mkSimpContext' (simpTheorems : SimpTheorems) (stx : Syntax) (eraseLocal : Bool)
+    (kind := SimpKind.simp) (ctx := false) (ignoreStarArg : Bool := false) :
+    TacticM MkSimpContextResult := do
+  if ctx && !stx[2].isNone then
+    if kind == SimpKind.simpAll then
+      throwError "'simp_all' tactic does not support 'discharger' option"
+    if kind == SimpKind.dsimp then
+      throwError "'dsimp' tactic does not support 'discharger' option"
+  let dischargeWrapper ← mkDischargeWrapper stx[2]
+  let simpOnly := !stx[3].isNone
+  let simpTheorems ← if simpOnly then
+    simpOnlyBuiltins.foldlM (·.addConst ·) {}
+  else
+    pure simpTheorems
+  let congrTheorems ← Meta.getSimpCongrTheorems
+  let r ← elabSimpArgs stx[4] (eraseLocal := eraseLocal) (kind := kind) {
+    config       := (← elabSimpConfig stx[1] (kind := kind))
+    simpTheorems := #[simpTheorems], congrTheorems
+  }
+  if !r.starArg || ignoreStarArg then
+    return { r with dischargeWrapper }
+  else
+    let mut simpTheorems := r.ctx.simpTheorems
+    let hs ← getPropHyps
+    for h in hs do
+      unless simpTheorems.isErased (.fvar h) do
+        simpTheorems ← simpTheorems.addTheorem (.fvar h) (← h.getDecl).toExpr
+    return { ctx := { r.ctx with simpTheorems }, dischargeWrapper }
+
+export private checkTypeIsProp shouldPreprocess preprocess mkSimpTheoremCore
+  from Lean.Meta.Tactic.Simp.SimpTheorems
+
+/-- Similar to `mkSimpTheoremsFromConst` except that it also returns the names of the generated
+lemmas.
+Remark: either the length of the arrays is the same,
+or the length of the first one is 0 and the length of the second one is 1. -/
+def mkSimpTheoremsFromConst' (declName : Name) (post : Bool) (inv : Bool) (prio : Nat) :
+  MetaM (Array Name × Array SimpTheorem) := do
+  let cinfo ← getConstInfo declName
+  let val := mkConst declName (cinfo.levelParams.map mkLevelParam)
+  withReducible do
+    let type ← inferType val
+    checkTypeIsProp type
+    if inv || (← shouldPreprocess type) then
+      let mut r := #[]
+      let mut auxNames := #[]
+      for (val, type) in (← preprocess val type inv (isGlobal := true)) do
+        let auxName ← mkAuxLemma cinfo.levelParams type val
+        auxNames := auxNames.push auxName
+        r := r.push <| ← mkSimpTheoremCore (.decl declName)
+          (mkConst auxName (cinfo.levelParams.map mkLevelParam)) #[] (mkConst auxName) post prio
+      return (auxNames, r)
+    else
+      return (#[], #[← mkSimpTheoremCore (.decl declName) (mkConst declName <|
+        cinfo.levelParams.map mkLevelParam) #[] (mkConst declName) post prio])
+
+/-- Similar to `addSimpTheorem` except that it returns an array of all auto-generated
+  simp-theorems. -/
+def addSimpTheorem' (ext : SimpExtension) (declName : Name) (post : Bool) (inv : Bool)
+  (attrKind : AttributeKind) (prio : Nat) : MetaM (Array Name) := do
+  let (auxNames, simpThms) ← mkSimpTheoremsFromConst' declName post inv prio
+  for simpThm in simpThms do
+    ext.add (SimpEntry.thm simpThm) attrKind
+  return auxNames
+
+/-- Similar to `AttributeImpl.add` in `mkSimpAttr` except that it doesn't require syntax,
+  and returns an array of all auto-generated lemmas. -/
+def addSimpAttr (declName : Name) (ext : SimpExtension) (attrKind : AttributeKind)
+  (post : Bool) (prio : Nat) :
+    MetaM (Array Name) := do
+  let info ← getConstInfo declName
+  if (← isProp info.type) then
+    addSimpTheorem' ext declName post (inv := false) attrKind prio
+  else if info.hasValue then
+    if let some eqns ← getEqnsFor? declName then
+      let mut auxNames := #[]
+      for eqn in eqns do
+        -- Is this list is always empty?
+        let newAuxNames ← addSimpTheorem' ext eqn post (inv := false) attrKind prio
+        auxNames := auxNames ++ newAuxNames
+      ext.add (SimpEntry.toUnfoldThms declName eqns) attrKind
+      if hasSmartUnfoldingDecl (← getEnv) declName then
+        ext.add (SimpEntry.toUnfold declName) attrKind
+      return auxNames
+    else
+      ext.add (SimpEntry.toUnfold declName) attrKind
+      return #[]
+  else
+    throwError "invalid 'simp', it is not a proposition nor a definition (to unfold)"
+
+/-- Similar to `AttributeImpl.add` in `mkSimpAttr` except that it returns an array of all
+  auto-generated lemmas. -/
+def addSimpAttrFromSyntax (declName : Name) (ext : SimpExtension) (attrKind : AttributeKind)
+  (stx : Syntax) : MetaM (Array Name) := do
+  let post := if stx[1].isNone then true else stx[1][0].getKind == ``Lean.Parser.Tactic.simpPost
+  let prio ← getAttrParamOptPrio stx[2]
+  addSimpAttr declName ext attrKind post prio
+
+end Simp
+
+/-- Construct a `SimpTheorems` from a list of names. -/
+def simpTheoremsOfNames (lemmas : List Name := []) (simpOnly : Bool := false) :
+    MetaM SimpTheorems := do
+  lemmas.foldlM (·.addConst ·)
+    (if simpOnly then
+      ← simpOnlyBuiltins.foldlM (·.addConst ·) {}
+    else
+      ← getSimpTheorems)
+
+-- TODO We need to write a `mkSimpContext` in `MetaM`
+-- that supports all the bells and whistles in `simp`.
+-- It should generalize this, and another partial implementation in `Tactic.Simps.Basic`.
+
+/-- Construct a `Simp.Context` from a list of names. -/
+def Simp.Context.ofNames (lemmas : List Name := []) (simpOnly : Bool := false)
+    (config : Simp.Config := {}) : MetaM Simp.Context := do pure <|
+  { simpTheorems := #[← simpTheoremsOfNames lemmas simpOnly],
+    congrTheorems := ← Lean.Meta.getSimpCongrTheorems,
+    config := config }
+
+/-- Simplify an expression using only a list of lemmas specified by name. -/
+def simpOnlyNames (lemmas : List Name) (e : Expr) (config : Simp.Config := {}) :
+    MetaM Simp.Result := do
+  (·.1) <$> simp e (← Simp.Context.ofNames lemmas true config)
+
+/--
+Given a simplifier `S : Expr → MetaM Simp.Result`,
+and an expression `e : Expr`, run `S` on the type of `e`, and then
+convert `e` into that simplified type, using a combination of type hints and `Eq.mp`.
+-/
+def simpType (S : Expr → MetaM Simp.Result) (e : Expr) : MetaM Expr := do
+  match (← S (← inferType e)) with
+  | ⟨ty', none, _⟩ => mkExpectedTypeHint e ty'
+  -- We use `mkExpectedTypeHint` in this branch as well, in order to preserve the binder types.
+  | ⟨ty', some prf, _⟩ => mkExpectedTypeHint (← mkEqMP prf e) ty'
+
+/-- Independently simplify both the left-hand side and the right-hand side
+of an equality. The equality is allowed to be under binders.
+Returns the simplified equality and a proof of it. -/
+def simpEq (S : Expr → MetaM Simp.Result) (type pf : Expr) : MetaM (Expr × Expr) := do
+  forallTelescope type fun fvars type => do
+    let .app (.app (.app (.const `Eq [u]) α) lhs) rhs := type | throwError "simpEq expecting Eq"
+    let ⟨lhs', lhspf?, _⟩ ← S lhs
+    let ⟨rhs', rhspf?, _⟩ ← S rhs
+    let mut pf' := mkAppN pf fvars
+    if let some lhspf := lhspf? then
+      pf' ← mkEqTrans (← mkEqSymm lhspf) pf'
+    if let some rhspf := rhspf? then
+      pf' ← mkEqTrans pf' rhspf
+    let type' := mkApp3 (mkConst ``Eq [u]) α lhs' rhs'
+    return (← mkForallFVars fvars type', ← mkLambdaFVars fvars pf')
+
+/-- Checks whether `declName` is in `SimpTheorems` as either a lemma or definition to unfold. -/
+def SimpTheorems.contains (d : SimpTheorems) (declName : Name) :=
+  d.isLemma (.decl declName) || d.isDeclToUnfold declName
+
+/-- Tests whether `decl` has `simp`-attribute `simpAttr`. Returns `false` is `simpAttr` is not a
+valid simp-attribute. -/
+def isInSimpSet (simpAttr decl : Name) : CoreM Bool := do
+  let .some simpDecl ← getSimpExtension? simpAttr | return false
+  return (← simpDecl.getTheorems).contains decl
+
+/-- Returns all declarations with the `simp`-attribute `simpAttr`.
+  Note: this also returns many auxiliary declarations. -/
+def getAllSimpDecls (simpAttr : Name) : CoreM (List Name) := do
+  let .some simpDecl ← getSimpExtension? simpAttr | return []
+  let thms ← simpDecl.getTheorems
+  return thms.toUnfold.toList ++ thms.lemmaNames.toList.filterMap fun
+    | .decl decl => some decl
+    | _ => none
+
+/-- Gets all simp-attributes given to declaration `decl`. -/
+def getAllSimpAttrs (decl : Name) : CoreM (Array Name) := do
+  let mut simpAttrs := #[]
+  for (simpAttr, simpDecl) in (← simpExtensionMapRef.get).toList do
+    if (← simpDecl.getTheorems).contains decl then
+      simpAttrs := simpAttrs.push simpAttr
+  return simpAttrs
+
+end Lean.Meta
+```

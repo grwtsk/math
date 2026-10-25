@@ -1,0 +1,165 @@
+# reduceLTLE
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:5885b2957f8e3718225b8f2712894152a2f0063a915a4fc9a74d3c362e3a8769",
+  "kind": "def",
+  "lexical_name": "reduceLTLE",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "reduceltle--b54e120c11bfa9a5296426ed",
+  "source": {
+    "blob": "248c7877ed6ab21e0ebccef88d382f0621327822",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 371,
+    "line": 288,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Nat/Variantc841f7f58673353be455cf627e83196f4254f3fe39b5d419da75d6ddad18f7b6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:b54e120c11bfa9a5296426edc9e3c02c9e227e70b3ed289430c136bd88fed0f1",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Nat/Variantc841f7f58673353be455cf627e83196f4254f3fe39b5d419da75d6ddad18f7b6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:5885b2957f8e3718225b8f2712894152a2f0063a915a4fc9a74d3c362e3a8769`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 288–371.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private def reduceLTLE (nm : Name) (arity : Nat) (isLT : Bool) (e : Expr) : SimpM Step := do
+  unless e.isAppOfArity nm arity do
+    return .continue
+  let x := e.appFn!.appArg!
+  let y := e.appArg!
+  let some xno ← NatOffset.fromExpr? x (inc := cond isLT 1 0) | return .continue
+  let some yno ← NatOffset.fromExpr? y | return .continue
+  match xno, yno with
+  | .const xn, .const yn =>
+    Meta.Simp.evalPropStep e (xn ≤ yn)
+  | .offset xb xo xn, .const yn => do
+    if xn ≤ yn then
+      let finExpr := mkLENat xb (toExpr (yn - xn))
+      let leProof ← mkOfDecideEqTrue (mkLENat xo y)
+      applySimprocConst finExpr ``Nat.Simproc.add_le_le #[xb, xo, y, leProof]
+    else
+      let gtProof ← mkOfDecideEqTrue (mkGTNat xo y)
+      applySimprocConst (mkConst ``False) ``Nat.Simproc.add_le_gt #[xb, xo, y, gtProof]
+  | .const xn, .offset yb yo yn => do
+    if xn ≤ yn then
+      let leProof ← mkOfDecideEqTrue (mkLENat x yo)
+      applySimprocConst (mkConst ``True) ``Nat.Simproc.le_add_le #[x, yb, yo, leProof]
+    else
+      let finExpr := mkLENat (toExpr (xn - yn)) yb
+      let geProof ← mkOfDecideEqTrue (mkGENat x yo)
+      applySimprocConst finExpr ``Nat.Simproc.le_add_ge #[x, yb, yo, geProof]
+  | .offset xb xo xn, .offset yb yo yn => do
+    if xn ≤ yn then
+      let finExpr := mkLENat xb (if xn = yn then yb else mkAddNat yb (toExpr (yn - xn)))
+      let leProof ← mkOfDecideEqTrue (mkLENat xo yo)
+      applySimprocConst finExpr ``Nat.Simproc.add_le_add_le  #[xb, yb, xo, yo, leProof]
+    else
+      let finExpr := mkLENat (mkAddNat xb (toExpr (xn - yn))) yb
+      let geProof ← mkOfDecideEqTrue (mkGENat xo yo)
+      applySimprocConst finExpr ``Nat.Simproc.add_le_add_ge  #[xb, yb, xo, yo, geProof]
+
+builtin_simproc [simp, seval] reduceLeDiff ((_ : Nat) ≤ _) := reduceLTLE ``LE.le 4 false
+
+builtin_simproc [simp, seval] reduceSubDiff ((_ - _ : Nat)) := fun e => do
+  unless e.isAppOfArity ``HSub.hSub 6 do
+    return .continue
+  let p := e.appFn!.appArg!
+  let some pno ← NatOffset.fromExpr? p | return .continue
+  let q := e.appArg!
+  let some qno ← NatOffset.fromExpr? q | return .continue
+  match pno, qno with
+  | .const pn, .const qn =>
+    -- Generate rfl proof  showing (p - q) = pn - qn
+    let finExpr := toExpr (pn - qn)
+    let finProof ← Meta.mkEqRefl finExpr
+    return .done  { expr := finExpr, proof? := finProof, cache := true }
+  | .offset pb po pn, .const n => do
+    if pn ≤ n then
+      let finExpr := if pn = n then pb else mkSubNat pb (toExpr (n - pn))
+      let leProof ← mkOfDecideEqTrue (mkLENat po q)
+      applySimprocConst finExpr ``Nat.Simproc.add_sub_le  #[pb, po, q, leProof]
+    else
+      let finExpr := mkAddNat pb (toExpr (pn - n))
+      let geProof ← mkOfDecideEqTrue (mkGENat po q)
+      applySimprocConst finExpr ``Nat.add_sub_assoc #[po, q, geProof, pb]
+  | .const po, .offset nb no nn => do
+      let finExpr := mkSubNat (toExpr (po - nn)) nb
+      applySimprocConst finExpr ``Nat.Simproc.sub_add_eq_comm #[p, nb, no]
+  | .offset pb po pn, .offset nb no nn => do
+    if pn ≤ nn then
+      let finExpr := mkSubNat pb (if pn = nn then nb else mkAddNat nb (toExpr (nn - pn)))
+      let leProof ← mkOfDecideEqTrue (mkLENat po no)
+      applySimprocConst finExpr ``Nat.Simproc.add_sub_add_le #[pb, nb, po, no, leProof]
+    else
+      let finExpr := mkSubNat (mkAddNat pb (toExpr (pn - nn))) nb
+      let geProof ← mkOfDecideEqTrue (mkGENat po no)
+      applySimprocConst finExpr ``Nat.Simproc.add_sub_add_ge #[pb, nb, po, no, geProof]
+
+builtin_simproc [simp, seval] reduceDvd ((_ : Nat) ∣ _) := fun e => do
+  let_expr Dvd.dvd _ i a b ← e | return .continue
+  unless ← matchesInstance i (mkConst ``instDvd) do return .continue
+  let some va ← fromExpr? a | return .continue
+  let some vb ← fromExpr? b | return .continue
+  if vb % va == 0 then
+    return .done { expr := mkConst ``True, proof? := mkApp3 (mkConst ``Nat.dvd_eq_true_of_mod_eq_zero) a b eagerReflBoolTrue}
+  else
+    return .done { expr := mkConst ``False, proof? := mkApp3 (mkConst ``Nat.dvd_eq_false_of_mod_ne_zero) a b eagerReflBoolTrue}
+
+end Nat
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Nat/Variantc841f7f58673353be455cf627e83196f4254f3fe39b5d419da75d6ddad18f7b6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Nat/Variantc841f7f58673353be455cf627e83196f4254f3fe39b5d419da75d6ddad18f7b6.lean#L288).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `248c7877ed6ab21e0ebccef88d382f0621327822` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

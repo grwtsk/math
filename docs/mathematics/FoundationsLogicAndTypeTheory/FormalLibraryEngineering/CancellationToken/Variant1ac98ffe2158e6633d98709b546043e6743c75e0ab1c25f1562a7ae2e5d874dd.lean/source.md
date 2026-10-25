@@ -1,0 +1,210 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CancellationToken.Variant1ac98ffe2158e6633d98709b546043e6743c75e0ab1c25f1562a7ae2e5d874dd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d37997ffa834fc738a57d880093be0edae4c4fc` · SHA-256 `9e1280554081c47455e8444c52a878b14642665489f396775e9d9001d5949ef7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CancellationReason.Variantf0bc9e1a7863dce91f5d61487feba1888d75fcc42f3def3ed784a3b02d86de3b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f0bc9e1a7863dce91f5d61487feba1888d75fcc42f3def3ed784a3b02d86de3b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.CancellationReason.Variantf0bc9e1a7863dce91f5d61487feba1888d75fcc42f3def3ed784a3b02d86de3b","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"f0bc9e1a7863dce91f5d61487feba1888d75fcc42f3def3ed784a3b02d86de3b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Sync/CancellationToken.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Std.Data
+public import Init.Data.Queue
+public import Std.Sync.Mutex
+public import Std.Async.Select
+public import Init.Data.ToString.Macro
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CancellationReason.Variantf0bc9e1a7863dce91f5d61487feba1888d75fcc42f3def3ed784a3b02d86de3b
+
+public section
+
+/-!
+This module contains the implementation of `Std.CancellationToken`. `Std.CancellationToken` provides a
+cancellation primitive for signaling cancellation between tasks or threads. It supports both synchronous
+and asynchronous waiting, and is useful for cases where you want to notify one or more waiters
+that a cancellation has occurred.
+-/
+
+namespace Std
+open Std.Async
+
+/--
+Reasons for cancellation.
+-/
+inductive CancellationReason where
+  /--
+  Cancelled due to a deadline or timeout
+  -/
+  | deadline
+
+  /--
+  Cancelled due to shutdown
+  -/
+  | shutdown
+
+  /--
+  Explicitly cancelled
+  -/
+  | cancel
+
+  /--
+  Custom cancellation reason
+  -/
+  | custom (msg : String)
+  deriving Repr, BEq
+
+instance : ToString CancellationReason where
+  toString
+    | .deadline => "deadline"
+    | .shutdown => "shutdown"
+    | .cancel => "cancel"
+    | .custom msg => s!"custom(\"{msg}\")"
+
+inductive CancellationToken.Consumer where
+  | normal (promise : IO.Promise Unit)
+  | select (finished : Waiter Unit)
+
+def CancellationToken.Consumer.resolve (c : Consumer) : BaseIO Bool := do
+  match c with
+  | .normal promise =>
+    promise.resolve ()
+    return true
+  | .select waiter =>
+    let lose := return false
+    let win promise := do
+      promise.resolve (.ok ())
+      return true
+    waiter.race lose win
+
+/--
+The central state structure for a `CancellationToken`.
+-/
+structure CancellationToken.State where
+  /--
+  The cancellation reason if cancelled, none otherwise.
+  -/
+  reason : Option CancellationReason
+
+  /--
+  Consumers that are blocked waiting for cancellation.
+  --/
+  consumers : Std.Queue (CancellationToken.Consumer)
+
+/--
+A cancellation token is a synchronization primitive that allows multiple consumers to wait
+until cancellation is requested.
+-/
+structure CancellationToken where
+  state : Std.Mutex CancellationToken.State
+
+namespace CancellationToken
+
+/--
+Creates a new cancellation token.
+-/
+def new : BaseIO CancellationToken := do
+  return { state := ← Std.Mutex.new { reason := none, consumers := ∅ } }
+
+/--
+Cancels the token with the given reason, notifying all currently waiting consumers.
+Once cancelled, the token remains cancelled.
+-/
+def cancel (x : CancellationToken) (reason : CancellationReason := .cancel) : BaseIO Unit := do
+  x.state.atomically do
+    let mut st ← get
+
+    if st.reason.isSome then
+      return
+
+    let mut remainingConsumers := st.consumers
+    st := { reason := some reason, consumers := ∅ }
+
+    while true do
+      if let some (consumer, rest) := remainingConsumers.dequeue? then
+        remainingConsumers := rest
+        discard <| consumer.resolve
+      else
+        break
+
+    set st
+
+/--
+Checks if the token is cancelled.
+-/
+def isCancelled (x : CancellationToken) : BaseIO Bool := do
+  x.state.atomically do
+    let st ← get
+    return st.reason.isSome
+
+/--
+Gets the cancellation reason if the token is cancelled.
+-/
+def getCancellationReason (x : CancellationToken) : BaseIO (Option CancellationReason) := do
+  x.state.atomically do
+    let st ← get
+    return st.reason
+
+/--
+Waits for cancellation. Returns a task that completes when cancelled.
+-/
+def wait (x : CancellationToken) : IO (AsyncTask Unit) :=
+  x.state.atomically do
+    let st ← get
+
+    if st.reason.isSome then
+      return Task.pure (.ok ())
+
+    let promise ← IO.Promise.new
+
+    modify fun st => { st with consumers := st.consumers.enqueue (.normal promise) }
+
+    IO.bindTask promise.result? fun
+      | some _ => pure <| Task.pure (.ok ())
+      | none => throw (IO.userError "cancellation token dropped")
+
+/--
+Creates a selector that waits for cancellation.
+-/
+def selector (token : CancellationToken) : Selector Unit := {
+  tryFn := do
+    if ← token.isCancelled then
+      return some ()
+    else
+      return none
+
+  registerFn := fun waiter => do
+    token.state.atomically do
+      let st ← get
+
+      if st.reason.isSome then
+        discard <| waiter.race (return false) (fun promise => do
+          promise.resolve (.ok ())
+          return true)
+      else
+        modify fun st => { st with consumers := st.consumers.enqueue (.select waiter) }
+
+  unregisterFn := do
+    token.state.atomically do
+      let st ← get
+
+      let consumers ← st.consumers.filterM fun
+        | .normal _ => return true
+        | .select waiter => return !(← waiter.checkFinished)
+
+      set { st with consumers }
+}
+
+end CancellationToken
+end Std
+```

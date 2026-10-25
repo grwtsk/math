@@ -1,0 +1,53 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ContinuousAssurance.Varianta230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d8e4b45a4bec53268a85c3503f0ed11059b0993e` · SHA-256 `a230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Surface.ContinuousAssurance.Authority
+import Surface.ContinuousAssurance.AssuranceLevel
+import Surface.ContinuousAssurance.Ownership
+import Surface.ContinuousAssurance.Evidence
+import Surface.ContinuousAssurance.Transformation
+import Surface.ContinuousAssurance.ProgressiveEvidence
+import Surface.ContinuousAssurance.QuantizationLevel
+import Surface.ContinuousAssurance.CompilerTarget
+import Surface.ContinuousAssurance.AnalyticTarget
+import Surface.ContinuousAssurance.PositiveQuantization
+import Surface.ContinuousAssurance.InvolutiveRelaxation
+import Surface.ContinuousAssurance.AnalyticTheoremRegistry
+import Surface.ContinuousAssurance.AnalyticTheoremPolicy
+import Surface.ContinuousAssurance.ReductiveSiteSelection
+import Surface.ContinuousAssurance.ReductiveSelectionTrace
+import Surface.ContinuousAssurance.SurgicalSitePlan
+import Surface.ContinuousAssurance.QuantizationDecomposition
+import Surface.ContinuousAssurance.QuantizedEvidence
+import Surface.ContinuousAssurance.QuantizationCommunication
+import Surface.ContinuousAssurance.Claim
+import Surface.ContinuousAssurance.Dependency
+import Surface.ContinuousAssurance.Profile
+import Surface.ContinuousAssurance.Pipeline
+import Surface.ContinuousAssurance.PipelineSemantics
+import Surface.ContinuousAssurance.InteractiveDevelopment
+import Surface.ContinuousAssurance.Communication
+import Surface.ContinuousAssurance.LiteratureTranslation
+import Surface.ContinuousAssurance.Index.Core
+import Surface.ContinuousAssurance.Index.Records
+import Surface.ContinuousAssurance.Index.Change
+import Surface.ContinuousAssurance.Index.Validation
+import Surface.ContinuousAssurance.Index.Query
+import Surface.ContinuousAssurance.Index.Serialization
+import Surface.ContinuousAssurance.Index.ReviewBinding
+import Surface.ContinuousAssurance.Index.AuthorizationBinding
+import Surface.ContinuousAssurance.Index.PipelineExtension
+import Surface.ContinuousAssurance.Communication.Restriction
+import Surface.ContinuousAssurance.Communication.Cech
+import Surface.ContinuousAssurance.Communication.Obstruction
+import Surface.ContinuousAssurance.Authorization
+import Surface.ContinuousAssurance.Refinement
+import Surface.ContinuousAssurance.Reflexive
+import Surface.ContinuousAssurance.Workspace
+import Surface.ContinuousAssurance.WorldModel
+import Surface.ContinuousAssurance.Examples
+```

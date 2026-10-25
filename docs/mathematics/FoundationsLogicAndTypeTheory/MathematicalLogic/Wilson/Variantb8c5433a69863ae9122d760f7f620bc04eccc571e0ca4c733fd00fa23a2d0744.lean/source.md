@@ -1,0 +1,125 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Wilson.Variantb8c5433a69863ae9122d760f7f620bc04eccc571e0ca4c733fd00fa23a2d0744
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0c65646e2027e772ceaf6a5aab812ce439c79ee0` · SHA-256 `ff716bf185939d525c7293f7c2e0c2e405e057328879f44c337e70a28f3ab4e0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.MathematicalLogic
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.WilsonsLemma.Variant674ec3da6741df690b74dd3865bd76fb6702560b9ec5c251ffc82b92caaa5f1f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"674ec3da6741df690b74dd3865bd76fb6702560b9ec5c251ffc82b92caaa5f1f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.Foundations.SourceCorpus.WilsonsLemma.Variant674ec3da6741df690b74dd3865bd76fb6702560b9ec5c251ffc82b92caaa5f1f","mathematical_subject":"Logic.Foundations","original_sha256":"674ec3da6741df690b74dd3865bd76fb6702560b9ec5c251ffc82b92caaa5f1f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/NumberTheory/Wilson.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 John Nicol. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: John Nicol
+-/
+import Mathlib.FieldTheory.Finite.Basic
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.WilsonsLemma.Variant674ec3da6741df690b74dd3865bd76fb6702560b9ec5c251ffc82b92caaa5f1f
+
+#align_import number_theory.wilson from "leanprover-community/mathlib"@"c471da714c044131b90c133701e51b877c246677"
+
+/-!
+# Wilson's theorem.
+
+This file contains a proof of Wilson's theorem.
+
+The heavy lifting is mostly done by the previous `wilsons_lemma`,
+but here we also prove the other logical direction.
+
+This could be generalized to similar results about finite abelian groups.
+
+## References
+
+* [Wilson's Theorem](https://en.wikipedia.org/wiki/Wilson%27s_theorem)
+
+## TODO
+
+* Give `wilsons_lemma` a descriptive name.
+-/
+
+
+open Finset Nat FiniteField ZMod
+
+open scoped BigOperators Nat
+
+namespace ZMod
+
+variable (p : ℕ) [Fact p.Prime]
+
+/-- **Wilson's Lemma**: the product of `1`, ..., `p-1` is `-1` modulo `p`. -/
+@[simp]
+theorem wilsons_lemma : ((p - 1)! : ZMod p) = -1 := by
+  refine'
+    calc
+      ((p - 1)! : ZMod p) = ∏ x in Ico 1 (succ (p - 1)), (x : ZMod p) := by
+        rw [← Finset.prod_Ico_id_eq_factorial, prod_natCast]
+      _ = ∏ x : (ZMod p)ˣ, (x : ZMod p) := _
+      _ = -1 := by
+        -- Porting note: `simp` is less powerful.
+        -- simp_rw [← Units.coeHom_apply, ← (Units.coeHom (ZMod p)).map_prod,
+        --   prod_univ_units_id_eq_neg_one, Units.coeHom_apply, Units.val_neg, Units.val_one]
+        simp_rw [← Units.coeHom_apply]
+        rw [← (Units.coeHom (ZMod p)).map_prod]
+        simp_rw [prod_univ_units_id_eq_neg_one, Units.coeHom_apply, Units.val_neg, Units.val_one]
+  have hp : 0 < p := (Fact.out (p := p.Prime)).pos
+  symm
+  refine' prod_bij (fun a _ => (a : ZMod p).val) _ _ _ _
+  · intro a ha
+    rw [mem_Ico, ← Nat.succ_sub hp, Nat.succ_sub_one]
+    constructor
+    · apply Nat.pos_of_ne_zero; rw [← @val_zero p]
+      intro h; apply Units.ne_zero a (val_injective p h)
+    · exact val_lt _
+  · rintro a -; simp only [cast_id, nat_cast_val]
+  · intro _ _ _ _ h; rw [Units.ext_iff]; exact val_injective p h
+  · intro b hb
+    rw [mem_Ico, Nat.succ_le_iff, ← succ_sub hp, succ_sub_one, pos_iff_ne_zero] at hb
+    refine' ⟨Units.mk0 b _, Finset.mem_univ _, _⟩
+    · intro h; apply hb.1; apply_fun val at h
+      simpa only [val_cast_of_lt hb.right, val_zero] using h
+    · simp only [val_cast_of_lt hb.right, Units.val_mk0]
+#align zmod.wilsons_lemma ZMod.wilsons_lemma
+
+@[simp]
+theorem prod_Ico_one_prime : ∏ x in Ico 1 p, (x : ZMod p) = -1 := by
+  -- Porting note: was `conv in Ico 1 p =>`
+  conv =>
+    congr
+    congr
+    rw [← succ_sub_one p, succ_sub (Fact.out (p := p.Prime)).pos]
+  rw [← prod_natCast, Finset.prod_Ico_id_eq_factorial, wilsons_lemma]
+#align zmod.prod_Ico_one_prime ZMod.prod_Ico_one_prime
+
+end ZMod
+
+namespace Nat
+
+variable {n : ℕ}
+
+/-- For `n ≠ 1`, `(n-1)!` is congruent to `-1` modulo `n` only if n is prime. -/
+theorem prime_of_fac_equiv_neg_one (h : ((n - 1)! : ZMod n) = -1) (h1 : n ≠ 1) : Prime n := by
+  rcases eq_or_ne n 0 with (rfl | h0)
+  · norm_num at h
+  replace h1 : 1 < n := n.two_le_iff.mpr ⟨h0, h1⟩
+  by_contra h2
+  obtain ⟨m, hm1, hm2 : 1 < m, hm3⟩ := exists_dvd_of_not_prime2 h1 h2
+  have hm : m ∣ (n - 1)! := Nat.dvd_factorial (pos_of_gt hm2) (le_pred_of_lt hm3)
+  refine' hm2.ne' (Nat.dvd_one.mp ((Nat.dvd_add_right hm).mp (hm1.trans _)))
+  rw [← ZMod.nat_cast_zmod_eq_zero_iff_dvd, cast_add, cast_one, h, add_left_neg]
+#align nat.prime_of_fac_equiv_neg_one Nat.prime_of_fac_equiv_neg_one
+
+/-- **Wilson's Theorem**: For `n ≠ 1`, `(n-1)!` is congruent to `-1` modulo `n` iff n is prime. -/
+theorem prime_iff_fac_equiv_neg_one (h : n ≠ 1) : Prime n ↔ ((n - 1)! : ZMod n) = -1 := by
+  refine' ⟨fun h1 => _, fun h2 => prime_of_fac_equiv_neg_one h2 h⟩
+  haveI := Fact.mk h1
+  exact ZMod.wilsons_lemma n
+#align nat.prime_iff_fac_equiv_neg_one Nat.prime_iff_fac_equiv_neg_one
+
+end Nat
+
+assert_not_exists legendre_sym.quadratic_reciprocity
+```

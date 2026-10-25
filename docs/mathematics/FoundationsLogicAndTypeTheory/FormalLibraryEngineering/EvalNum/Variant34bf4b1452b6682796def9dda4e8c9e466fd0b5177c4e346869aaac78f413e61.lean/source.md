@@ -1,0 +1,106 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.EvalNum.Variant34bf4b1452b6682796def9dda4e8c9e466fd0b5177c4e346869aaac78f413e61
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2650f7342472bd3f6b44ef08dba127e7409a9769` · SHA-256 `be75299a9942db8cea361190d43c734b6e471df7dc6739eace8cdb91e7117995`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CheckExp.Variantafce6f9ec97f1448f62de52870c35d44ce98f33cf9fa3a0a7b1cee0cd5a2635a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"afce6f9ec97f1448f62de52870c35d44ce98f33cf9fa3a0a7b1cee0cd5a2635a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.CheckExp.Variantafce6f9ec97f1448f62de52870c35d44ce98f33cf9fa3a0a7b1cee0cd5a2635a","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"afce6f9ec97f1448f62de52870c35d44ce98f33cf9fa3a0a7b1cee0cd5a2635a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Meta/Sym/Arith/EvalNum.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["scope_end_name_mismatch","uncompiled_organization"],"structural_qualification":"structural_issues_retained_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+prelude
+public import Lean.Meta.Sym.Arith.Types
+import Lean.Meta.Sym.LitValues
+import Lean.Meta.IntInstTesters
+import Lean.Meta.NatInstTesters
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CheckExp.Variantafce6f9ec97f1448f62de52870c35d44ce98f33cf9fa3a0a7b1cee0cd5a2635a
+
+public section
+
+namespace Lean.Meta.Sym.Arith
+
+/-!
+Functions for evaluating simple `Nat` and `Int` expressions that appear in type classes
+(e.g., `ToInt` and `IsCharP`). Using `whnf` for this purpose is too expensive and can
+exhaust the stack. We considered `evalExpr` as an alternative, but it introduces
+considerable overhead. We may use `evalExpr` as a fallback in the future.
+-/
+
+def checkExp (k : Nat) : OptionT SymM Unit := do
+  let exp ← getExpThreshold
+  if k > exp then
+    reportIssue! "exponent {k} exceeds threshold for exponentiation `(exp := {exp})`"
+    failure
+
+/-
+**Note**: It is safe to use (the more efficient) structural instance tests here because
+`Sym.Canon` has already run.
+-/
+open Structural in
+mutual
+private partial def evalNatCore (e : Expr) : OptionT SymM Nat := do
+  match_expr e with
+  | Nat.zero => return 0
+  | Nat.succ a => return (← evalNatCore a) + 1
+  | Int.toNat a => return (← evalIntCore a).toNat
+  | Int.natAbs a => return (← evalIntCore a).natAbs
+  | HAdd.hAdd _ _ _ inst a b => guard (← isInstHAddNat inst); return (← evalNatCore a) + (← evalNatCore b)
+  | HMul.hMul _ _ _ inst a b => guard (← isInstHMulNat inst); return (← evalNatCore a) * (← evalNatCore b)
+  | HSub.hSub _ _ _ inst a b => guard (← isInstHSubNat inst); return (← evalNatCore a) - (← evalNatCore b)
+  | HDiv.hDiv _ _ _ inst a b => guard (← isInstHDivNat inst); return (← evalNatCore a) / (← evalNatCore b)
+  | HMod.hMod _ _ _ inst a b => guard (← isInstHModNat inst); return (← evalNatCore a) % (← evalNatCore b)
+  | OfNat.ofNat _ _ _ =>
+    let some n := Sym.getNatValue? e |>.run | failure
+    return n
+  | HPow.hPow _ _ _ inst a k =>
+    guard (← isInstHPowNat inst)
+    let k ← evalNatCore k
+    checkExp k
+    let a ← evalNatCore a
+    return a ^ k
+  | _ => failure
+
+private partial def evalIntCore (e : Expr) : OptionT SymM Int := do
+  match_expr e with
+  | Neg.neg _ i a => guard (← isInstNegInt i); return - (← evalIntCore a)
+  | HAdd.hAdd _ _ _ i a b => guard (← isInstHAddInt i); return (← evalIntCore a) + (← evalIntCore b)
+  | HSub.hSub _ _ _ i a b => guard (← isInstHSubInt i); return (← evalIntCore a) - (← evalIntCore b)
+  | HMul.hMul _ _ _ i a b => guard (← isInstHMulInt i); return (← evalIntCore a) * (← evalIntCore b)
+  | HDiv.hDiv _ _ _ i a b => guard (← isInstHDivInt i); return (← evalIntCore a) / (← evalIntCore b)
+  | HMod.hMod _ _ _ i a b => guard (← isInstHModInt i); return (← evalIntCore a) % (← evalIntCore b)
+  | HPow.hPow _ _ _ i a k =>
+    guard (← isInstHPowInt i)
+    let a ← evalIntCore a
+    let k ← evalNatCore k
+    checkExp k
+    return a ^ k
+  | OfNat.ofNat _ _ _ =>
+    let some n := Sym.getIntValue? e |>.run | failure
+    return n
+  | NatCast.natCast _ i a =>
+    let_expr instNatCastInt ← i | failure
+    return (← evalNatCore a)
+  | Nat.cast _ i a =>
+    let_expr instNatCastInt ← i | failure
+    return (← evalNatCore a)
+  | _ => failure
+
+end
+
+def evalNat? (e : Expr) : SymM (Option Nat) :=
+  evalNatCore e |>.run
+
+def evalInt? (e : Expr) : SymM (Option Int) :=
+  evalIntCore e |>.run
+
+end Lean.Meta.Sym.Arith
+```

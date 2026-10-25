@@ -1,0 +1,64 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Unfold.Variant9c17c3c1ff90581a68345111d413acc8040d0062ea1cab53be3683d5840df96a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7d599a3b94860d11ef581ed04d31ae5a77912513` · SHA-256 `46d7115df2849b6533b5dc90d500da3fb0522ecd5825633b05efae5daccadd69`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.HasConst.Variant8464fbf97cc3adce5373b7a4462320080d4865493c0dd1acd6f7a502dd9a325d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8464fbf97cc3adce5373b7a4462320080d4865493c0dd1acd6f7a502dd9a325d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.HasConst.Variant8464fbf97cc3adce5373b7a4462320080d4865493c0dd1acd6f7a502dd9a325d","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"8464fbf97cc3adce5373b7a4462320080d4865493c0dd1acd6f7a502dd9a325d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/restored-inputs/packages/aesop/Aesop/Builder/Unfold.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Jannis Limperg. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jannis Limperg
+-/
+module
+
+public import Aesop.Builder.Basic
+public import Aesop.Util.Unfold
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.HasConst.Variant8464fbf97cc3adce5373b7a4462320080d4865493c0dd1acd6f7a502dd9a325d
+
+public section
+
+open Lean
+open Lean.Meta
+
+namespace Aesop.RuleBuilder
+
+-- Somewhat inefficient since `foldConsts` doesn't short-circuit.
+def hasConst (c : Name) (e : Expr) : Bool :=
+  e.foldConsts (init := false) λ c' acc => acc || c' == c
+
+def checkUnfoldableConst (decl : Name) : MetaM (Option Name) :=
+  withoutModifyingState do
+    let e ← mkConstWithFreshMVarLevels decl
+    let t := (← getConstInfo decl).type
+    let unfoldThm? ← getUnfoldEqnFor? decl
+    forallTelescope t λ args _ => do
+      let testExpr := mkAppN e args
+      let unfoldResult ←
+        unfoldMany (if · == decl then some unfoldThm? else none) testExpr
+      match unfoldResult with
+      | none =>
+        throwError "Declaration '{decl}' cannot be unfolded."
+      | some (e', _) =>
+        if hasConst decl e' then
+          throwError "Recursive definition '{decl}' cannot be used as an unfold rule (it would be unfolded infinitely often). Try adding a simp rule for it."
+    return unfoldThm?
+
+def unfoldCore (decl : Name) : MetaM LocalRuleSetMember := do
+  let unfoldThm? ← checkUnfoldableConst decl
+  return .global $ .base $ .unfoldRule { decl, unfoldThm? }
+
+-- TODO support local unfold rules
+def unfold : RuleBuilder := λ input => do
+  let decl ← elabGlobalRuleIdent .unfold input.term
+  unfoldCore decl
+
+end Aesop.RuleBuilder
+```

@@ -1,0 +1,112 @@
+# solverAction
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:bc72f29ac1044a55ebef87349e16563db80a84aa21426b188ee403d8ab70ebe5",
+  "kind": "def",
+  "lexical_name": "solverAction",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "solveraction--a1d3d598538ce339d020b93f",
+  "source": {
+    "blob": "4e7c3eef92b1bebc73ee70e4ca9346ea4484a7c1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 356,
+    "line": 326,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Action/Variant55f599a46aa6a8a99acfd2582b04720d622ddc346273ea6e465ac0447e4fff0f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a1d3d598538ce339d020b93f09353f99effda388c01eade5204dc26d1888fd44",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Action/Variant55f599a46aa6a8a99acfd2582b04720d622ddc346273ea6e465ac0447e4fff0f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:bc72f29ac1044a55ebef87349e16563db80a84aa21426b188ee403d8ab70ebe5`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 326–356.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def solverAction (check : GoalM CheckResult) (mkTac : GrindM TGrind) : Action := fun goal kna kp => do
+  let saved? ← saveStateIfTracing
+  let (result, goal') ← GoalM.run goal check
+  match result with
+  | .none       => kna goal'
+  | .progress   => kp goal'
+  | .propagated =>
+    let goal' ← GoalM.run' goal' processNewFacts
+    if goal'.inconsistent then
+      closeWith mkTac
+    else if (← getConfig).trace then
+      match (← kp goal') with
+      | .closed seq =>
+        /-
+        **Note**: Check whether the progress made by this solver was actually used to close the goal.
+        This is not just an optimization, if we include an unnecessary step, we may fail to replay
+        the generated script when `cases` steps are pruned using non-chronological backtracking (NCB).
+        For example, when executing `finish?`, we may have performed a `cases #<anchor>` step
+        that enabled `ring` to propagate a new fact. If this fact is not used in the final proof,
+        and the corresponding `cases #<anchor>` step is pruned by NCB, the `ring` step will fail during replay.
+        -/
+        if (← checkSeqAt saved? goal seq) then
+          return .closed seq
+        else
+          let tac ← mkTac
+          return .closed (tac :: seq)
+      | r => return r
+    else
+      kp goal'
+  | .closed     => closeWith mkTac
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Action/Variant55f599a46aa6a8a99acfd2582b04720d622ddc346273ea6e465ac0447e4fff0f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Action/Variant55f599a46aa6a8a99acfd2582b04720d622ddc346273ea6e465ac0447e4fff0f.lean#L326).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4e7c3eef92b1bebc73ee70e4ca9346ea4484a7c1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

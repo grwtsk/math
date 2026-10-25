@@ -1,0 +1,107 @@
+# JumpSiteInfo
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:ad5f0146d3df5f3b0dbefc438ef0f6932a2f2b0e4a144282746ccdfb67ce40b7",
+  "kind": "structure",
+  "lexical_name": "JumpSiteInfo",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "jumpsiteinfo--6565cd087f2cc5008cf8a224",
+  "source": {
+    "blob": "65a96e4cf9db0ee154e9d050fd156703c5e16c8f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 60,
+    "line": 35,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6565cd087f2cc5008cf8a224dbbce927b54ce07cda8b351c72bc0ddd60ff5257",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:ad5f0146d3df5f3b0dbefc438ef0f6932a2f2b0e4a144282746ccdfb67ce40b7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 35–60.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure JumpSiteInfo where
+  /-- Number of join point arguments. -/
+  numJoinParams : Nat
+  /-- Index of the match alternative. -/
+  altIdx : Nat
+  /-- Parameter FVars of the match alternative. -/
+  altParams : Array Expr
+  /--
+  The size of the local context in the alternative after the match has been split and all splitter
+  parameters have been introduced.
+  This is so that we can construct the `Σ Lᵢ` part of the `hyps` field.
+  -/
+  altLCtxIdx : Nat
+  /--
+  MVar to be filled with the stateful hypotheses of the match arm. This should include
+  bindings from the local context `Lᵢ` of the call site and is of the form (`x,y,z ∈ Lᵢ`)
+  `Σ Lᵢ, ⌜x = a ∧ y = b ∧ z = c⌝ ∧ Hᵢ`, where `..., Lᵢ ⊢ Hᵢ ⊢ₛ wp[jp x y z] Q` is the call site.
+  The `Σ Lᵢ` is short for something like
+  `let x := ...; ∃ y (h : y = ...), ∃ z, ∃ (h₂ : p)`.
+  -/
+  hyps : MVarId
+  /--
+  The proof that jump sites should use to discharge `Hᵢ ⊢ₛ wp[jp a b c] Q`.
+  -/
+  joinPrf : Expr
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant02bfb56050ced734d9aa1e12f680c53b24ee4bd63d142d691e9d8f6bb6a74e99.lean#L35).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `65a96e4cf9db0ee154e9d050fd156703c5e16c8f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,116 @@
+# LocalDecl
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:ff226b514b5d21606849e209fedc00f673da8ffdf02d1fec2eed1c1cff6c72df",
+  "kind": "inductive",
+  "lexical_name": "LocalDecl",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "localdecl--88ae7cecb19503434def0179",
+  "source": {
+    "blob": "b70a646cd7bceed2d536a20ce52dc2fffe6b4df5",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 97,
+    "line": 63,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LocalContext/Variant80065338728efb36a3f895aed30bb799adbf5df90438880936bc077835917a6c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:88ae7cecb19503434def01790252f746f50db6fc47d8ece4dc08c20c77216944",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LocalContext/Variant80065338728efb36a3f895aed30bb799adbf5df90438880936bc077835917a6c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `inductive` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:ff226b514b5d21606849e209fedc00f673da8ffdf02d1fec2eed1c1cff6c72df`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 63–97.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+inductive LocalDecl where
+  /-- A local variable without any value.
+  `Lean.LocalContext.mkBinding` creates lambdas or foralls from `cdecl`s. -/
+  | cdecl (index : Nat) (fvarId : FVarId) (userName : Name) (type : Expr) (bi : BinderInfo) (kind : LocalDeclKind)
+  /-- A let-bound free variable, with a value `value : Expr`.
+  If `nondep := false`, then the variable is definitionally equal to its value.
+  If `nondep := true`, then the variable has an opaque value; we call these "have-bound free variables."
+  `Lean.LocalContext.mkBinding` creates let/have expressions from `ldecl`s.
+
+  **Important:** The `nondep := true` case is subtle; it is not merely an opaque `ldecl`!
+  - In most contexts, nondependent `ldecl`s should be treated like `cdecl`s.
+    For example, suppose we have a tactic goal `x : α := v (nondep) ⊢ b`.
+    It would be incorrect for `revert x` to produce the goal `⊢ have x : α := v; b`,
+    since this would be saying "to prove `b` without knowledge of the value of `x`, it suffices to
+    prove `have x : α := v; b` for this particular value of `x`."
+    Instead, `revert x` *must* produce the goal `⊢ ∀ x : α, b`.
+    Furthermore, given a goal `⊢ have x : α := v; b`, the `intro x` tactic should yield a *dependent* `ldecl`,
+    since users expect to be able to make use of the value of `x`,
+    plus, as discussed, if `intro` yielded a nondep `ldecl` then `intro x; revert x` would convert the goal into a forall, not a `have`.
+  - Also: `value` might not be type correct. Metaprograms may decide to pretend that all `nondep := true`
+    `ldecl`s are `cdecl`s (for example, when reverting variables). As a consequence, nondep `ldecl`s may
+    have type-incorrect values. This design decision allows metaprograms to not have to think about nondep `ldecl`s,
+    so long as `LocalDecl` values are consumed through `LocalDecl.isLet` and `LocalDecl.value?` with `(allowNondep := false)`.
+    **Rule:** never use `(generalizeNondepLet := false)` in `mkBinding`-family functions
+    on a local context entry you did not create.
+    See `LocalDecl.setNondep` for some additional discussion.
+  - Where then do nondep ldecls come from? Common functions are `Meta.mapLetDecl`, `Meta.withLetDecl`, and `Meta.letTelescope`.
+    The `have` term syntax makes use of a nondep ldecl as well.
+
+  Therefore, `nondep := true` should be used with consideration.
+  Its primary use is in metaprograms that enter `let`/`have` telescopes and wish to reconstruct them. -/
+  | ldecl (index : Nat) (fvarId : FVarId) (userName : Name) (type : Expr) (value : Expr) (nondep : Bool) (kind : LocalDeclKind)
+  deriving Inhabited
+
+@[export lean_mk_local_decl]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LocalContext/Variant80065338728efb36a3f895aed30bb799adbf5df90438880936bc077835917a6c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LocalContext/Variant80065338728efb36a3f895aed30bb799adbf5df90438880936bc077835917a6c.lean#L63).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b70a646cd7bceed2d536a20ce52dc2fffe6b4df5` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

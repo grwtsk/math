@@ -1,0 +1,126 @@
+# main
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:c4cf1f38eb0fbeddafe71d1fe7ac226c3bff60b262eb1da55c2536da587c1cd0",
+  "kind": "def",
+  "lexical_name": "main",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "main--ecea30ddbfc985ef8206369a",
+  "source": {
+    "blob": "5cd2c68aee97ee39785c352026d83fe60476183b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 122,
+    "line": 78,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanChecker/Variant000b74ec37ddc838382e1ea99fd118dea5f767beaf3ed9cdc8f87ceb42977138.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:ecea30ddbfc985ef8206369a5775be2b14804c892bd639e551c0a31bd7603554",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanChecker/Variant000b74ec37ddc838382e1ea99fd118dea5f767beaf3ed9cdc8f87ceb42977138.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:c4cf1f38eb0fbeddafe71d1fe7ac226c3bff60b262eb1da55c2536da587c1cd0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 78–122.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+unsafe def main (args : List String) : IO UInt32 := do
+  -- Contributor's note: lean4lean is intended to have a CLI interface matching leanchecker,
+  -- so if you want to make a change here please either make a sibling PR to
+  -- https://github.com/digama0/lean4lean or ping @digama0 (Mario Carneiro) to go fix it.
+  initSearchPath (← findSysroot)
+  let (flags, args) := args.partition fun s => s.startsWith "-"
+  let verbose := "-v" ∈ flags || "--verbose" ∈ flags
+  let fresh := "--fresh" ∈ flags
+  let targets ← do
+    match args with
+    | [] => pure [← getCurrentModule]
+    | args => args.mapM fun arg => do
+      let mod := arg.toName
+      if mod.isAnonymous then
+        throw <| IO.userError s!"Could not resolve module: {arg}"
+      else
+        pure mod
+  let mut targetModules := []
+  let sp ← searchPathRef.get
+  for target in targets do
+    let mut found := false
+    for path in (← SearchPath.findAllWithExt sp "olean") do
+      if let some m := (← searchModuleNameOfFileName path sp) then
+        if !fresh && target.isPrefixOf m || target == m then
+          targetModules := targetModules.insert m
+          found := true
+    if not found then
+      throw <| IO.userError s!"Could not find any oleans for: {target}"
+  if fresh then
+    if targetModules.length != 1 then
+      throw <| IO.userError s!"--fresh flag is only valid when specifying a single module:\n\
+        {targetModules}"
+    for m in targetModules do
+      if verbose then IO.println s!"replaying {m} with --fresh"
+      replayFromFresh m
+  else
+    let mut tasks := #[]
+    for m in targetModules do
+      tasks := tasks.push (m, ← IO.asTask (replayFromImports m))
+    for (m, t) in tasks do
+      if verbose then IO.println s!"replaying {m}"
+      if let .error e := t.get then
+        IO.eprintln s!"leanchecker found a problem in {m}"
+        throw e
+  return 0
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanChecker/Variant000b74ec37ddc838382e1ea99fd118dea5f767beaf3ed9cdc8f87ceb42977138.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanChecker/Variant000b74ec37ddc838382e1ea99fd118dea5f767beaf3ed9cdc8f87ceb42977138.lean#L78).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5cd2c68aee97ee39785c352026d83fe60476183b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

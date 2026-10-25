@@ -1,0 +1,83 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Require.Variant520c50f2c433b261533478b71ddb19975760d6dab0f71e49bacfa6e8e4381dbf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dc6ab417438abb8d979897b57aed269c7bdd27ab` · SHA-256 `5a2914e5d863bdc205b93ccac4b6951d154ef859f169d487226e516c350fdd4a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ExpandDepSpec.Variantb086246bf6f1fc3e8c0c5325dcd41e3211d5336434e8bedeaa84c47c63b2f983","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b086246bf6f1fc3e8c0c5325dcd41e3211d5336434e8bedeaa84c47c63b2f983","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceEnvironments.SourceCorpus.ExpandDepSpec.Variantb086246bf6f1fc3e8c0c5325dcd41e3211d5336434e8bedeaa84c47c63b2f983","mathematical_subject":"MathematicalTooling.SourceEnvironments","original_sha256":"b086246bf6f1fc3e8c0c5325dcd41e3211d5336434e8bedeaa84c47c63b2f983","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/lake/Lake/DSL/Require.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Mac Malone. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mac Malone
+-/
+module
+
+prelude
+public import Lake.DSL.Syntax
+import Lake.Config.Dependency
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ExpandDepSpec.Variantb086246bf6f1fc3e8c0c5325dcd41e3211d5336434e8bedeaa84c47c63b2f983
+
+open Lean Parser Command
+
+namespace Lake.DSL
+
+/-! # The `require` syntax
+
+This module contains the expansion of the `require` DSL syntax used to specify package dependencies.
+-/
+
+@[inline] private def quoteOptTerm [Monad m] [MonadQuotation m] (term? : Option Term) : m Term :=
+  if let some term := term? then withRef term ``(some $term) else ``(none)
+
+def expandDepSpec (stx : TSyntax ``depSpec) (doc? : Option DocComment) : MacroM Command := do
+  let `(depSpec| $fullNameStx $[@ $ver?]? $[from $src?]? $[with $opts?]?) := stx
+    | Macro.throwErrorAt stx "ill-formed require syntax"
+  let src? ← src?.mapM fun src =>
+    match src with
+    | `(fromSource|git%$tk $url $[@ $rev?]? $[/ $subDir?]?) => withRef tk do
+      let rev ← quoteOptTerm rev?
+      let subDir ← quoteOptTerm subDir?
+      ``(DependencySrc.git $url $rev $subDir)
+    | `(fromSource|$path:term) => withRef src do
+      ``(DependencySrc.path $path)
+    | _ => Macro.throwErrorAt src "ill-formed from syntax"
+  let `(depName|$[$scope? /]? $nameStx) := fullNameStx
+    | Macro.throwErrorAt fullNameStx "ill-formed name syntax"
+  let scope :=
+    match scope? with
+    | some scope => scope
+    | none => Syntax.mkStrLit "" (.fromRef fullNameStx)
+  let ver ←
+    if let some ver := ver? then withRef ver do
+      match ver with
+      | `(verSpec|git $rev) => ``(InputVer.git $rev)
+      | `(verSpec|$ver:term) => ``((eval_ver% $ver : InputVer))
+      | _ => Macro.throwErrorAt ver "ill-formed version syntax"
+    else if let some src := src? then
+      match src with
+      | `(fromSource|git $_ @ $rev $[/ $_]?) => withRef rev ``(InputVer.git $rev)
+      | _ => ``(InputVer.none)
+    else
+       ``(InputVer.none)
+  let name := expandIdentOrStrAsIdent nameStx
+  `($[$doc?:docComment]? @[package_dep] def $name : $(mkCIdent ``Dependency) := {
+    name :=  $(quote name.getId),
+    scope := $scope,
+    version := $ver,
+    src? := $(← quoteOptTerm src?),
+    opts := $(opts?.getD <| ← `({})),
+  })
+
+@[builtin_macro requireDecl]
+def expandRequireDecl : Macro := fun stx => do
+  let `(requireDecl|$(doc?)? require%$kw $spec) := stx
+    | Macro.throwErrorAt stx "ill-formed require declaration"
+  withRef kw do expandDepSpec spec doc?
+```

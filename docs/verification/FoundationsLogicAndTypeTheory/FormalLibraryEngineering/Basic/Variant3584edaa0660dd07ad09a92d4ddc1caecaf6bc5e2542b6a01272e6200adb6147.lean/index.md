@@ -1,0 +1,112 @@
+# Verification target: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Basic.Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b4fcb5296f6848b2ddc25e7fb8633924a53a92a5",
+  "lexical_observation_count": 51,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/index.md) · [Full source](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b4fcb5296f6848b2ddc25e7fb8633924a53a92a5`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Location](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/location--0fe70cf38ad61d9c893d3cad.md) | 36 | `declaration-track:0fe70cf38ad61d9c893d3cad3648d62bee69f45615e3e79ac5f320db6a054bdc` |
+| 2 | `structure` | [LocationLink](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/locationlink--2890f523e2c95921a0d728ac.md) | 41 | `declaration-track:2890f523e2c95921a0d728ac4c4f9546535312cbdf6d030da3e2fbfee156280c` |
+| 3 | `structure` | [Command](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/command--9ca2372706bf56ce5b4d5d79.md) | 57 | `declaration-track:9ca2372706bf56ce5b4d5d792723e89bd645da3cc9a4939971c528aa5f6eb261` |
+| 4 | `structure` | [SnippetString](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/snippetstring--e7a665ff53e4f8e3d42493f0.md) | 94 | `declaration-track:e7a665ff53e4f8e3d42493f02f264121532b497a9d1820f0656e3c5ff80f42f1` |
+| 5 | `structure` | [TextEdit](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/textedit--f192f9336043846b139ef97c.md) | 101 | `declaration-track:f192f9336043846b139ef97ce884e8f7f925d93499a9daf6d5f17df1dab98788` |
+| 6 | `def` | [TextEditBatch](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/texteditbatch--064002314e960bddecdcb93f.md) | 133 | `declaration-track:064002314e960bddecdcb93fa01bf79389d3eb81fda02d4200bcf042b257bf17` |
+| 7 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--bde422c6c564db38e5e6dba2.md) | 135 | `declaration-track:bde422c6c564db38e5e6dba236a8383c8e82cca26ada22ade9be1012aae7963d` |
+| 8 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--13ea1b4ba89f863ed2b1718e.md) | 138 | `declaration-track:13ea1b4ba89f863ed2b1718e5d6bf6ebe86e9914795d0eef19ef8c765184b04e` |
+| 9 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--f46365685881a6e4a9a6d44d.md) | 141 | `declaration-track:f46365685881a6e4a9a6d44d2a9e841f9d9f310bfad98ecbdde32732fe388080` |
+| 10 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--d20af6b26e1fa22a40aa7a01.md) | 143 | `declaration-track:d20af6b26e1fa22a40aa7a018a65991a2aad7af23185c6ac7b28042f9a9180e1` |
+| 11 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--2c1575f65affbf8b2f60fef9.md) | 146 | `declaration-track:2c1575f65affbf8b2f60fef966ddce410d5c92a1161ebb61429f010c6e402cc5` |
+| 12 | `structure` | [TextDocumentIdentifier](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/textdocumentidentifier--3ba31c471d1f64b745683edc.md) | 149 | `declaration-track:3ba31c471d1f64b745683edc03b3c20633f5b5a1676209c85f0ad1518f576d6a` |
+| 13 | `structure` | [VersionedTextDocumentIdentifier](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/versionedtextdocumentidentifier--8f6a4a7d7ba0899b0344fe3e.md) | 153 | `declaration-track:8f6a4a7d7ba0899b0344fe3e699742134658209b5890fc48a2783c973fb98420` |
+| 14 | `structure` | [TextDocumentEdit](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/textdocumentedit--5612d135c0863fcc44b7e8c7.md) | 161 | `declaration-track:5612d135c0863fcc44b7e8c7daf50dac00e42c65f265c8ada37e321f766b162e` |
+| 15 | `structure` | [ChangeAnnotation](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/changeannotation--bbc9c9151f9340de47783f04.md) | 169 | `declaration-track:bbc9c9151f9340de47783f04d6adde8069978c2b6925ea1d2eae3045707dfde7` |
+| 16 | `structure` | [CreateFile.Options](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/createfile-options--5ef888ecec6863550283957a.md) | 180 | `declaration-track:5ef888ecec6863550283957a2cd97e58832590f22ba846d778852cd9d2f89f10` |
+| 17 | `structure` | [DeleteFile.Options](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/deletefile-options--a5b80a942cb43ac394c2fa15.md) | 186 | `declaration-track:a5b80a942cb43ac394c2fa15c48e4ed5532bc21d3737ba371c5b8e41ed76d43c` |
+| 18 | `structure` | [CreateFile](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/createfile--3ab9dce8897a6b005704cd80.md) | 191 | `declaration-track:3ab9dce8897a6b005704cd8042d392fa421524bcb5bb0a984de7a3785b40b2b1` |
+| 19 | `structure` | [RenameFile](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/renamefile--05e5ec3353e90bb7015ae3da.md) | 197 | `declaration-track:05e5ec3353e90bb7015ae3dafbb758f1f7660810e410dbf1b809e26ce412fde7` |
+| 20 | `structure` | [DeleteFile](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/deletefile--d5abce3302a74a1a819d0133.md) | 204 | `declaration-track:d5abce3302a74a1a819d0133e3a962349725fa18733fb6a7a30ec3920715e404` |
+| 21 | `inductive` | [DocumentChange](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/documentchange--e3eec66d4855704c2b173d8d.md) | 213 | `declaration-track:e3eec66d4855704c2b173d8d53eccd5e9d55eca3a00011200b92dbb10858fbda` |
+| 22 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--f55215280262a7afc5f3a9d5.md) | 219 | `declaration-track:f55215280262a7afc5f3a9d5cfc3d5f45012bf42aeeb222d77ef00aa4cb052c9` |
+| 23 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--ca8343377906b62cdb29a927.md) | 226 | `declaration-track:ca8343377906b62cdb29a927f407ef50e23b9fbe6662f63bb320a68b6a94286e` |
+| 24 | `structure` | [WorkspaceEdit](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/workspaceedit--9d8f447372885735d58e810b.md) | 239 | `declaration-track:9d8f447372885735d58e810bbbe32e82841418be258b5eb9b185cce4a42d1a7e` |
+| 25 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--8745effcfa21f7ce1025d685.md) | 267 | `declaration-track:8745effcfa21f7ce1025d685e86dfcc702a4b69d59ef6b3e97a6166193f8df9e` |
+| 26 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--a91bbc37801350b33717def3.md) | 269 | `declaration-track:a91bbc37801350b33717def37ea9c127a9e00ae1efec1c7572f4ac9956bdb08b` |
+| 27 | `def` | [ofTextDocumentEdit](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/oftextdocumentedit--185cabc962df5839c6421f23.md) | 285 | `declaration-track:185cabc962df5839c6421f23c9026ffddf2700a156a5e06e469c5ce04dc8ce33` |
+| 28 | `def` | [ofTextEdit](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/oftextedit--c84d2390e50ee7c1a90bfcf1.md) | 288 | `declaration-track:c84d2390e50ee7c1a90bfcf1afa4c26a6639e5f971222449b0a57ddd9cf16c37` |
+| 29 | `structure` | [ApplyWorkspaceEditParams](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/applyworkspaceeditparams--bc40ec300ceda758055840db.md) | 296 | `declaration-track:bc40ec300ceda758055840dbcd492b376570c3fb1577f12bb7dab249a7937617` |
+| 30 | `structure` | [TextDocumentItem](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/textdocumentitem--87534892d17dac36c1ac6357.md) | 309 | `declaration-track:87534892d17dac36c1ac635716744deb7b7a0bb879b37ff2aa08765ab45313b0` |
+| 31 | `structure` | [TextDocumentPositionParams](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/textdocumentpositionparams--c9f8d8478bf96057b3da5623.md) | 320 | `declaration-track:c9f8d8478bf96057b3da56231a6236eb3348641b66c0715fb1b6bfa867bb633f` |
+| 32 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--222ba2b15e14ccb323847dd1.md) | 325 | `declaration-track:222ba2b15e14ccb323847dd15dade9c7a07f01f6b995cf7820702fd525c9d344` |
+| 33 | `structure` | [DocumentFilter](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/documentfilter--ba52ecdc5bbb390a08e7721e.md) | 328 | `declaration-track:ba52ecdc5bbb390a08e7721ec760200f4a0f6f16344bbd61d263d93f8a84745c` |
+| 34 | `def` | [DocumentSelector](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/documentselector--43d377e8226922698d8fe265.md) | 334 | `declaration-track:43d377e8226922698d8fe265928522c6a4520792ab48e1c6d6a4df81c3679b8a` |
+| 35 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--716c8f03819adf62b112a41e.md) | 336 | `declaration-track:716c8f03819adf62b112a41e5f7b622265dfe6210e07c1e0ba93852b23450b94` |
+| 36 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--1c2fd038a374165d236f06b5.md) | 339 | `declaration-track:1c2fd038a374165d236f06b57e7657bdca002f9f29098d48666f25e6ef759f67` |
+| 37 | `structure` | [StaticRegistrationOptions](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/staticregistrationoptions--b66aa2776d84b91e19fbb3fd.md) | 342 | `declaration-track:b66aa2776d84b91e19fbb3fd85cdc9f240ddcdc3b678c8cbbbfd3af7e4321e59` |
+| 38 | `structure` | [TextDocumentRegistrationOptions](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/textdocumentregistrationoptions--2a3f9d4fa8b49c70f1006883.md) | 346 | `declaration-track:2a3f9d4fa8b49c70f100688373aafe5907c07481b9d00a87d9ff4b7c7e912688` |
+| 39 | `inductive` | [MarkupKind](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/markupkind--d0c81f6e5f053fab89b795fb.md) | 350 | `declaration-track:d0c81f6e5f053fab89b795fbbf4a8c4594fbd5f8a9fda9320069b696e87b4c15` |
+| 40 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--d387ec8cdba34bfd4cff34af.md) | 354 | `declaration-track:d387ec8cdba34bfd4cff34af4e3fd012d08ee5cf5a7c8eec803899143856fe1a` |
+| 41 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/instance--5283995a4b9074a710afd2be.md) | 359 | `declaration-track:5283995a4b9074a710afd2be175b08bbc0dfe4574d9b4948eefd904a524939f4` |
+| 42 | `structure` | [MarkupContent](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/markupcontent--b4bf3cbc46210144e539ee58.md) | 363 | `declaration-track:b4bf3cbc46210144e539ee58cf0dd5af1656b92d1062e5a9567d26b9ee3c2f99` |
+| 43 | `abbrev` | [ProgressToken](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/progresstoken--29274952f6b757f5f2b98db2.md) | 372 | `declaration-track:29274952f6b757f5f2b98db29f6ce900ef265ef9522df88d5a2103affabcb0d6` |
+| 44 | `structure` | [ProgressParams](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/progressparams--51fae2649ced055045ff1b74.md) | 377 | `declaration-track:51fae2649ced055045ff1b74feff0a8378ae49bd69bcab1ca0b7ff6c93840fd3` |
+| 45 | `structure` | [WorkDoneProgressReport](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/workdoneprogressreport--b5483dadae5c03f061e90f6b.md) | 382 | `declaration-track:b5483dadae5c03f061e90f6b9f1858d9ee4b88a303e4d5dfbc63e02e9ea0feab` |
+| 46 | `structure` | [WorkDoneProgressBegin](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/workdoneprogressbegin--390169d97541f30d5e106068.md) | 394 | `declaration-track:390169d97541f30d5e1060688a8b2e5b91cac4a148b6324848ac29109a9d15a5` |
+| 47 | `structure` | [WorkDoneProgressEnd](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/workdoneprogressend--7ec3e121ab364dc583d0f945.md) | 400 | `declaration-track:7ec3e121ab364dc583d0f945943556a2ba27775ba1fbcb23bf4fd920094c764e` |
+| 48 | `structure` | [WorkDoneProgressParams](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/workdoneprogressparams--0e99bbe3967975fe4e07cdd0.md) | 405 | `declaration-track:0e99bbe3967975fe4e07cdd03614f3628459fdc86662d4f1cd2789899b60782e` |
+| 49 | `structure` | [PartialResultParams](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/partialresultparams--e455feb11f2fa09ecd18733a.md) | 409 | `declaration-track:e455feb11f2fa09ecd18733a658e56515a276faa5717121c4fd56ee896e47846` |
+| 50 | `structure` | [WorkDoneProgressOptions](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/workdoneprogressoptions--1931068a1c514a3320c9fb53.md) | 414 | `declaration-track:1931068a1c514a3320c9fb53a8dbee43ba1e36fb3ef7129d4a05e4a2b9c88d9b` |
+| 51 | `structure` | [ResolveSupport](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant3584edaa0660dd07ad09a92d4ddc1caecaf6bc5e2542b6a01272e6200adb6147.lean/declarations/resolvesupport--74882abffd884babb0febec1.md) | 418 | `declaration-track:74882abffd884babb0febec169dd29fb7781bef45f77d1c2f357cf012b87475a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

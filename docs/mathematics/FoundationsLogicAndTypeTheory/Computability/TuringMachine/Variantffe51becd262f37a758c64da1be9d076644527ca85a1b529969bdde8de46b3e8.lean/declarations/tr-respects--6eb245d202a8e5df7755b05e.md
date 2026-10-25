@@ -1,0 +1,162 @@
+# tr_respects
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:b0712354-4dd0-53a0-ee6b-fc3ec4e3611e",
+  "kind": "theorem",
+  "lexical_name": "tr_respects",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "tr-respects--6eb245d202a8e5df7755b05e",
+  "source": {
+    "blob": "8e5b31d39d6dea47790cb5fec7eafa75b7029607",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 2113,
+    "line": 2033,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/Computability/TuringMachine/Variantffe51becd262f37a758c64da1be9d076644527ca85a1b529969bdde8de46b3e8.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:6eb245d202a8e5df7755b05e7147108612e4656c34f10485624c5269c1a4260a",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/Computability/TuringMachine/Variantffe51becd262f37a758c64da1be9d076644527ca85a1b529969bdde8de46b3e8.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b0712354-4dd0-53a0-ee6b-fc3ec4e3611e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 2033–2113.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem tr_respects : Respects (TM0.step M) (TM1.step (tr M)) fun a b ↦ trCfg M a = b :=
+  fun_respects.2 fun ⟨q, T⟩ ↦ by
+    cases' e : M q T.1 with val
+    · simp only [TM0.step, trCfg, e]; exact Eq.refl none
+    cases' val with q' s
+    simp only [FRespects, TM0.step, trCfg, e, Option.isSome, cond, Option.map_some']
+    revert e  -- Porting note: Added this so that `e` doesn't get into the `match`.
+    have : TM1.step (tr M) ⟨some (Λ'.act s q'), (), T⟩ = some ⟨some (Λ'.normal q'), (), match s with
+        | TM0.Stmt.move d => T.move d
+        | TM0.Stmt.write a => T.write a⟩ := by
+      cases' s with d a <;> rfl
+    intro e
+    refine' TransGen.head _ (TransGen.head' this _)
+    · simp only [TM1.step, TM1.stepAux]
+      rw [e]
+      rfl
+    cases e' : M q' _
+    · apply ReflTransGen.single
+      simp only [TM1.step, TM1.stepAux]
+      rw [e']
+      rfl
+    · rfl
+#align turing.TM0to1.tr_respects Turing.TM0to1.tr_respects
+
+end
+
+end TM0to1
+
+/-!
+## The TM2 model
+
+The TM2 model removes the tape entirely from the TM1 model, replacing it with an arbitrary (finite)
+collection of stacks, each with elements of different types (the alphabet of stack `k : K` is
+`Γ k`). The statements are:
+
+* `push k (f : σ → Γ k) q` puts `f a` on the `k`-th stack, then does `q`.
+* `pop k (f : σ → Option (Γ k) → σ) q` changes the state to `f a (S k).head`, where `S k` is the
+  value of the `k`-th stack, and removes this element from the stack, then does `q`.
+* `peek k (f : σ → Option (Γ k) → σ) q` changes the state to `f a (S k).head`, where `S k` is the
+  value of the `k`-th stack, then does `q`.
+* `load (f : σ → σ) q` reads nothing but applies `f` to the internal state, then does `q`.
+* `branch (f : σ → Bool) qtrue qfalse` does `qtrue` or `qfalse` according to `f a`.
+* `goto (f : σ → Λ)` jumps to label `f a`.
+* `halt` halts on the next step.
+
+The configuration is a tuple `(l, var, stk)` where `l : Option Λ` is the current label to run or
+`none` for the halting state, `var : σ` is the (finite) internal state, and `stk : ∀ k, List (Γ k)`
+is the collection of stacks. (Note that unlike the `TM0` and `TM1` models, these are not
+`ListBlank`s, they have definite ends that can be detected by the `pop` command.)
+
+Given a designated stack `k` and a value `L : List (Γ k)`, the initial configuration has all the
+stacks empty except the designated "input" stack; in `eval` this designated stack also functions
+as the output stack.
+-/
+
+
+namespace TM2
+
+-- "TM2"
+set_option linter.uppercaseLean3 false
+
+section
+
+variable {K : Type*} [DecidableEq K]
+
+-- Index type of stacks
+variable (Γ : K → Type*)
+
+-- Type of stack elements
+variable (Λ : Type*)
+
+-- Type of function labels
+variable (σ : Type*)
+
+-- Type of variable settings
+/-- The TM2 model removes the tape entirely from the TM1 model,
+  replacing it with an arbitrary (finite) collection of stacks.
+  The operation `push` puts an element on one of the stacks,
+  and `pop` removes an element from a stack (and modifying the
+  internal state based on the result). `peek` modifies the
+  internal state but does not remove an element. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/Computability/TuringMachine/Variantffe51becd262f37a758c64da1be9d076644527ca85a1b529969bdde8de46b3e8.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/Computability/TuringMachine/Variantffe51becd262f37a758c64da1be9d076644527ca85a1b529969bdde8de46b3e8.lean#L2033).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8e5b31d39d6dea47790cb5fec7eafa75b7029607` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

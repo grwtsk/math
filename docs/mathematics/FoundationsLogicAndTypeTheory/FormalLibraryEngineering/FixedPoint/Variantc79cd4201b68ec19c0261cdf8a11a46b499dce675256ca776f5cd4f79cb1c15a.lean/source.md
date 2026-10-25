@@ -1,0 +1,68 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FixedPoint.Variantc79cd4201b68ec19c0261cdf8a11a46b499dce675256ca776f5cd4f79cb1c15a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6e5a66d6dead2bab70dc5e1529d51565d4904e61` · SHA-256 `c79cd4201b68ec19c0261cdf8a11a46b499dce675256ca776f5cd4f79cb1c15a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathematics.Stability.DefectTransport
+
+/-! # Fixed points and explicitly open analytic obligations -/
+
+namespace Mathematics.Stability
+
+def IsFixedPoint {X : Type} (construction : X → X) (point : X) : Prop :=
+  construction point = point
+
+structure FixedPointCertificate
+    {X : Type}
+    (construction : ReflectiveMap X) where
+  point : X
+  member : construction.domain.contains point
+  fixed : IsFixedPoint construction.apply point
+
+theorem certified_point_satisfies_exact_equation
+    {X : Type}
+    {construction : ReflectiveMap X}
+    (certificate : FixedPointCertificate construction) :
+    construction.apply certificate.point = certificate.point :=
+  certificate.fixed
+
+structure FixedPointAnalyticObligations
+    {X : Type}
+    (construction : ReflectiveMap X) where
+  existenceStatement :
+    ∃ point, construction.domain.contains point ∧
+      IsFixedPoint construction.apply point
+  uniquenessStatement :
+    ∀ p q,
+      construction.domain.contains p →
+      construction.domain.contains q →
+      IsFixedPoint construction.apply p →
+      IsFixedPoint construction.apply q →
+      p = q
+  basinStatement : X → Prop
+  existenceStatus : ProofDisposition
+  uniquenessStatus : ProofDisposition
+  basinStatus : ProofDisposition
+
+/-!
+This is a theorem from a supplied separation premise, not an assertion that
+every registered map has a unique fixed point.
+-/
+theorem fixed_point_unique_from_separation
+    {X : Type}
+    (construction : X → X)
+    (separates :
+      ∀ p q,
+        IsFixedPoint construction p →
+        IsFixedPoint construction q →
+        p = q)
+    {p q : X}
+    (pFixed : IsFixedPoint construction p)
+    (qFixed : IsFixedPoint construction q) :
+    p = q :=
+  separates p q pFixed qFixed
+
+end Mathematics.Stability
+```

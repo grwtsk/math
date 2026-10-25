@@ -1,0 +1,106 @@
+# Anonymous syntax
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:7e7c15f7ffee9e405d30f778fc670b1ffdf321724a827ff858297ac5f0dfe605",
+  "kind": "syntax",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "syntax--a549af0a737deff07865b0e8",
+  "source": {
+    "blob": "1bafb4df56922fab687e1bea8e5a6c4d8fc5083d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1045,
+    "line": 1021,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tactics/Variantb3fd9963477ff632469620a2b83c8259a3d0545dea12e742b5779a600da8a46a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a549af0a737deff07865b0e8c47f7cec9663e4b8e0558fa1d73d99e553c048d4",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tactics/Variantb3fd9963477ff632469620a2b83c8259a3d0545dea12e742b5779a600da8a46a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `syntax` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:7e7c15f7ffee9e405d30f778fc670b1ffdf321724a827ff858297ac5f0dfe605`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1021–1045.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+syntax (name := generalize) "generalize " generalizeArg,+ (location)? : tactic
+
+/--
+Assuming `x` is a variable in the local context with an inductive type,
+`cases x` splits the main goal, producing one goal for each constructor of the
+inductive type, in which the target is replaced by a general instance of that constructor.
+If the type of an element in the local context depends on `x`,
+that element is reverted and reintroduced afterward,
+so that the case split affects that hypothesis as well.
+`cases` detects unreachable cases and closes them automatically.
+
+For example, given `n : Nat` and a goal with a hypothesis `h : P n` and target `Q n`,
+`cases n` produces one goal with hypothesis `h : P 0` and target `Q 0`,
+and one goal with hypothesis `h : P (Nat.succ a)` and target `Q (Nat.succ a)`.
+Here the name `a` is chosen automatically and is not accessible.
+You can use `with` to provide the variables names for each constructor.
+- `cases e`, where `e` is an expression instead of a variable, generalizes `e` in the goal,
+  and then cases on the resulting variable.
+- Given `as : List α`, `cases as with | nil => tac₁ | cons a as' => tac₂`,
+  uses tactic `tac₁` for the `nil` case, and `tac₂` for the `cons` case,
+  and `a` and `as'` are used as names for the new variables introduced.
+- `cases h : e`, where `e` is a variable or an expression,
+  performs cases on `e` as above, but also adds a hypothesis `h : e = ...` to each goal,
+  where `...` is the constructor instance for that particular case.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tactics/Variantb3fd9963477ff632469620a2b83c8259a3d0545dea12e742b5779a600da8a46a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Tactics/Variantb3fd9963477ff632469620a2b83c8259a3d0545dea12e742b5779a600da8a46a.lean#L1021).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1bafb4df56922fab687e1bea8e5a6c4d8fc5083d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

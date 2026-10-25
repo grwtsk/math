@@ -1,0 +1,148 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Second.Variant215712b74d4189b1059902788d02265dae015e1392cfc277871af5f9f6663ab4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ba7630a28981565cdb7248c10030b3fddfbefbc5` · SHA-256 `9a213aaf8c51eba5a3b34a7691a09da4e2d608fcd93d863d5b7f2cb3675fceb2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.SetTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Ordinal.Variant13a612935f0cfe9d1f5fbb94ccf40550ab1b86a0ab14541e5bb60678a589da0b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"13a612935f0cfe9d1f5fbb94ccf40550ab1b86a0ab14541e5bb60678a589da0b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Ordinal.Variant13a612935f0cfe9d1f5fbb94ccf40550ab1b86a0ab14541e5bb60678a589da0b","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"13a612935f0cfe9d1f5fbb94ccf40550ab1b86a0ab14541e5bb60678a589da0b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Time/Time/Unit/Second.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Std.Time.Time.Unit.Nanosecond
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Ordinal.Variant13a612935f0cfe9d1f5fbb94ccf40550ab1b86a0ab14541e5bb60678a589da0b
+
+@[expose] public section
+
+namespace Std
+namespace Time
+namespace Second
+open Internal
+
+set_option linter.all true
+
+/--
+`Ordinal` represents a bounded value for second, which ranges between 0 and 59 or 60. This accounts
+for potential leap second.
+-/
+def Ordinal (leap : Bool) := Bounded.LE 0 (.ofNat (if leap then 60 else 59))
+
+instance : LE (Ordinal leap) where
+  le x y := LE.le x.val y.val
+
+instance : LT (Ordinal leap) where
+  lt x y := LT.lt x.val y.val
+
+instance : Repr (Ordinal leap) where
+  reprPrec r := reprPrec r.val
+
+instance : ToString (Ordinal leap) where
+  toString r := toString r.val
+
+instance : OfNat (Ordinal leap) n := by
+  have inst : OfNat (Bounded.LE 0 (0 + (59 : Nat))) n := inferInstance
+  cases leap
+  · exact inst
+  · exact ⟨inst.ofNat.expandTop (by decide)⟩
+
+instance {x y : Ordinal leap} : Decidable (x ≤ y) :=
+  inferInstanceAs (Decidable (x.val ≤ y.val))
+
+instance {x y : Ordinal leap} : Decidable (x < y) :=
+  inferInstanceAs (Decidable (x.val < y.val))
+
+instance : DecidableEq (Ordinal leap) := inferInstanceAs <| DecidableEq (Bounded.LE 0 _)
+
+instance : Ord (Ordinal leap) := inferInstanceAs <| Ord (Bounded.LE 0 _)
+
+instance : TransOrd (Ordinal leap) := inferInstanceAs <| TransOrd (Bounded.LE 0 _)
+
+instance : LawfulEqOrd (Ordinal leap) := inferInstanceAs <| LawfulEqOrd (Bounded.LE 0 _)
+
+/--
+`Offset` represents an offset in seconds. It is defined as an `Int`.
+-/
+def Offset : Type := UnitVal 1
+deriving Repr, DecidableEq, Inhabited, Add, Sub, Neg, LE, LT, ToString
+
+instance {x y : Offset} : Decidable (x ≤ y) :=
+  inferInstanceAs (Decidable (x.val ≤ y.val))
+
+instance {x y : Offset} : Decidable (x < y) :=
+  inferInstanceAs (Decidable (x.val < y.val))
+
+instance : OfNat Offset n :=
+  ⟨UnitVal.ofNat n⟩
+
+instance : Ord Offset := inferInstanceAs <| Ord (UnitVal _)
+
+instance : TransOrd Offset := inferInstanceAs <| TransOrd (UnitVal _)
+
+instance : LawfulEqOrd Offset := inferInstanceAs <| LawfulEqOrd (UnitVal _)
+
+namespace Offset
+
+/--
+Creates an `Second.Offset` from a natural number.
+-/
+@[inline]
+def ofNat (data : Nat) : Second.Offset :=
+  UnitVal.ofInt data
+
+/--
+Creates an `Second.Offset` from an integer.
+-/
+@[inline]
+def ofInt (data : Int) : Second.Offset :=
+  UnitVal.ofInt data
+
+end Offset
+
+namespace Ordinal
+
+/--
+Creates an `Ordinal` from an integer, ensuring the value is within bounds.
+-/
+@[inline]
+def ofInt (data : Int) (h : 0 ≤ data ∧ data ≤ Int.ofNat (if leap then 60 else 59)) : Ordinal leap :=
+  Bounded.LE.mk data h
+
+/--
+Creates an `Ordinal` from a natural number, ensuring the value is within bounds.
+-/
+@[inline]
+def ofNat (data : Nat) (h : data ≤ (if leap then 60 else 59)) : Ordinal leap :=
+  Bounded.LE.ofNat data h
+
+/--
+Creates an `Ordinal` from a `Fin`, ensuring the value is within bounds.
+-/
+@[inline]
+def ofFin (data : Fin (if leap then 61 else 60)) : Ordinal leap :=
+  match leap with
+  | true => Bounded.LE.ofFin data
+  | false => Bounded.LE.ofFin data
+
+/--
+Converts an `Ordinal` to an `Second.Offset`.
+-/
+@[inline]
+def toOffset (ordinal : Ordinal leap) : Second.Offset :=
+  UnitVal.ofInt ordinal.val
+
+end Ordinal
+end Second
+end Time
+end Std
+```

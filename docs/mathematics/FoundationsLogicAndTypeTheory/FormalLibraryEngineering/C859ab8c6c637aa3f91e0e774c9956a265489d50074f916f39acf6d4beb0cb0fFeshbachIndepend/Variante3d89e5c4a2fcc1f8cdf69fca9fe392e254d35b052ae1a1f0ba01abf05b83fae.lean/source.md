@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.C859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0fFeshbachIndepend.Variante3d89e5c4a2fcc1f8cdf69fca9fe392e254d35b052ae1a1f0ba01abf05b83fae
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eabed0eac1805c5e662909a94a5fd57c24643e97` · SHA-256 `0c8b8d891aadd5214b9063e217102c0d5456d2d1f4bc60a8b5a90b528bdaf18e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FeshbachReconstruction.Variantc859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.FeshbachReconstruction.Variantc859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0f","mathematical_subject":"Foundations.Unclassified","original_sha256":"c859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/c8/c859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0f--feshbach-independent-review.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.FeshbachReconstruction
+import FormalResearch.PositiveAtlas.FiniteQuadraticCertificate
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FeshbachReconstruction.Variantc859ab8c6c637aa3f91e0e774c9956a265489d50074f916f39acf6d4beb0cb0f
+
+#check FormalResearch.PositiveAtlas.Feshbach.blockMap_eq_fromBlocks
+#print axioms FormalResearch.PositiveAtlas.Feshbach.blockMap_eq_fromBlocks
+#check FormalResearch.PositiveAtlas.Feshbach.restrict_comp_lift
+#print axioms FormalResearch.PositiveAtlas.Feshbach.restrict_comp_lift
+#check FormalResearch.PositiveAtlas.Feshbach.project_idempotent
+#print axioms FormalResearch.PositiveAtlas.Feshbach.project_idempotent
+#check FormalResearch.PositiveAtlas.Feshbach.lower_eq_zero_iff
+#print axioms FormalResearch.PositiveAtlas.Feshbach.lower_eq_zero_iff
+#check FormalResearch.PositiveAtlas.Feshbach.blockMap_lift
+#print axioms FormalResearch.PositiveAtlas.Feshbach.blockMap_lift
+#check FormalResearch.PositiveAtlas.Feshbach.blockMap_eq_zero_iff
+#print axioms FormalResearch.PositiveAtlas.Feshbach.blockMap_eq_zero_iff
+#check FormalResearch.PositiveAtlas.Feshbach.kernel_eq_lift
+#print axioms FormalResearch.PositiveAtlas.Feshbach.kernel_eq_lift
+#check FormalResearch.PositiveAtlas.Feshbach.kernelEquiv
+#print axioms FormalResearch.PositiveAtlas.Feshbach.kernelEquiv
+#check FormalResearch.PositiveAtlas.MatrixBlockRealization.provenanceInvertible
+#print axioms FormalResearch.PositiveAtlas.MatrixBlockRealization.provenanceInvertible
+#check FormalResearch.PositiveAtlas.MatrixBlockRealization.feshbachLift_eq_phaseIIResidualization
+#print axioms FormalResearch.PositiveAtlas.MatrixBlockRealization.feshbachLift_eq_phaseIIResidualization
+#check FormalResearch.PositiveAtlas.MatrixBlockRealization.feshbachSchur_eq_schurMatrix
+#print axioms FormalResearch.PositiveAtlas.MatrixBlockRealization.feshbachSchur_eq_schurMatrix
+#check FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.Problem.Admissible
+#print axioms FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.Problem.Admissible
+#check FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.Valid
+#print axioms FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.Valid
+#check FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.check
+#print axioms FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.check
+#check FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.sound
+#print axioms FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.sound
+#check FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.check_sound
+#print axioms FormalResearch.PositiveAtlas.FiniteQuadraticCertificate.check_sound
+```

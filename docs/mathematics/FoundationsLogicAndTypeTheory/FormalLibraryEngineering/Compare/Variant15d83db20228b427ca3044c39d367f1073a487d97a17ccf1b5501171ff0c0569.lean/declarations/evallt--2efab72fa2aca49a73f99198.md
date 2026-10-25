@@ -1,0 +1,116 @@
+# evalLT
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:3c021cea0a37eb192023301ca436b90bec7b1555bae0a79beef68b629b4cc106",
+  "kind": "def",
+  "lexical_name": "evalLT",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "evallt--2efab72fa2aca49a73f99198",
+  "source": {
+    "blob": "cee194ca1a2b63d49b11598baf672da54ca5f72d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 208,
+    "line": 174,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Compare/Variant15d83db20228b427ca3044c39d367f1073a487d97a17ccf1b5501171ff0c0569.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2efab72fa2aca49a73f99198f87040808ad971da28131ef8061a9126134a7591",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Compare/Variant15d83db20228b427ca3044c39d367f1073a487d97a17ccf1b5501171ff0c0569.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:3c021cea0a37eb192023301ca436b90bec7b1555bae0a79beef68b629b4cc106`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 174–208.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def evalLT {v : Level} {α : Q(Type v)}
+    (ics : Q(CommSemiring $α)) (_ : Q(PartialOrder $α)) (_ : Q(IsStrictOrderedRing $α))
+    {a b : Q($α)} (va : Ring.ExSum q($ics) a) (vb : Ring.ExSum q($ics) b) :
+    MetaM (Except ExceptType Q($a < $b)) := do
+  let lα : Q(LT $α) := q(ltOfPartialOrder $α)
+  assumeInstancesCommute
+  let ⟨_, pz⟩ ← NormNum.mkOfNat α q(addMonoidWithOneOfCommSemiring $α) q(nat_lit 0)
+  let rz : NormNum.Result q((0:$α)) :=
+    NormNum.Result.isNat q(addMonoidWithOneOfCommSemiring $α) q(nat_lit 0)
+                        (q(NormNum.isNat_ofNat $α $pz):)
+  match (dependent := true) va, vb with
+  /- `0 < 0` -/
+  | .zero, .zero => return .error tooSmall
+  /- For numerals `ca` and `cb`, `ca + x < cb + x` if `ca < cb` -/
+  | .add (b := a') (.const (e := xa) ⟨ca, hypa⟩) va', .add (.const (e := xb) ⟨cb, hypb⟩) vb' => do
+    unless va'.eq rcℕ ringCompare vb' do return .error notComparable
+    let rxa := NormNum.Result.ofRawRat ca xa hypa
+    let rxb := NormNum.Result.ofRawRat cb xb hypb
+    let NormNum.Result.isTrue pf ← NormNum.evalLT.core lα rxa rxb | return .error tooSmall
+    pure <| .ok (q(add_lt_add_left $pf $a'):)
+  /- For a numeral `ca < 0`, `ca + x < x` -/
+  | .add (.const (e := xa) ⟨ca, hypa⟩) va', _ => do
+    unless va'.eq rcℕ ringCompare vb do return .error notComparable
+    let rxa := NormNum.Result.ofRawRat ca xa hypa
+    let NormNum.Result.isTrue pf ← NormNum.evalLT.core lα rxa rz | return .error tooSmall
+    have pf : Q($xa < 0) := pf
+    pure <| .ok (q(add_lt_of_neg_left $b $pf):)
+  /- For a numeral `0 < cb`, `x < cb + x` -/
+  | _, .add (.const (e := xb) ⟨cb, hypb⟩) vb' => do
+    unless va.eq rcℕ ringCompare vb' do return .error notComparable
+    let rxb := NormNum.Result.ofRawRat cb xb hypb
+    let NormNum.Result.isTrue pf ← NormNum.evalLT.core lα rz rxb | return .error tooSmall
+    pure <| .ok (q(lt_add_of_pos_left $a $pf):)
+  | _, _ => return .error notComparable
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Compare/Variant15d83db20228b427ca3044c39d367f1073a487d97a17ccf1b5501171ff0c0569.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Compare/Variant15d83db20228b427ca3044c39d367f1073a487d97a17ccf1b5501171ff0c0569.lean#L174).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cee194ca1a2b63d49b11598baf672da54ca5f72d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

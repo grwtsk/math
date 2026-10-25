@@ -1,0 +1,2 @@
+-- Materialized target surface for `src/origin/bit-matrix-stream/model.lean`.
+-- This file creates no theorem authority by materialization alone.

@@ -1,0 +1,15 @@
+# A17eb5bf6d195cdb7 — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 2 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant932790cd42749bc98fa28c9a87ead892d82d5cb57a27a27d1737e9cfcc66642f.lean](Variant932790cd42749bc98fa28c9a87ead892d82d5cb57a27a27d1737e9cfcc66642f.lean/index.md) | module |
+| [Varianta275323710707c52bc449416c5f2229ee55c1294d037079583f3b9c0fcccb9b8.lean](Varianta275323710707c52bc449416c5f2229ee55c1294d037079583f3b9c0fcccb9b8.lean/index.md) | module |

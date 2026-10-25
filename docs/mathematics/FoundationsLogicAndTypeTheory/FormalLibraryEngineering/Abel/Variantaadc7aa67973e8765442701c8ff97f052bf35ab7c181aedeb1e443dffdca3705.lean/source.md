@@ -1,0 +1,205 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Abel.Variantaadc7aa67973e8765442701c8ff97f052bf35ab7c181aedeb1e443dffdca3705
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2ef3d7d91df4e54dd79a19fd8a7fb59548717da5` · SHA-256 `711963fe6021f0203918203e40b9480e5df18ab857bc30331164d6f83846a569`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MyTrue.Variant71ca43f6f54b2b74a489a8b908ef6b08af1ade48cd55ae5007997354aabc98ec","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"71ca43f6f54b2b74a489a8b908ef6b08af1ade48cd55ae5007997354aabc98ec","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.MyTrue.Variant71ca43f6f54b2b74a489a8b908ef6b08af1ade48cd55ae5007997354aabc98ec","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"71ca43f6f54b2b74a489a8b908ef6b08af1ade48cd55ae5007997354aabc98ec","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/MathlibTest/abel.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathlib.Tactic.Abel
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MyTrue.Variant71ca43f6f54b2b74a489a8b908ef6b08af1ade48cd55ae5007997354aabc98ec
+
+set_option linter.unusedVariables false
+
+variable {α : Type _} {a b : α}
+
+example [AddCommMonoid α] : a + (b + a) = a + a + b := by abel
+example [AddCommGroup α] : (a + b) - ((b + a) + a) = -a := by abel
+example [AddCommGroup α] (x : α) : x - 0 = x := by abel
+example [AddCommMonoid α] : (3 : ℕ) • a = a + (2 : ℕ) • a := by abel
+example [AddCommGroup α] : (3 : ℤ) • a = a + (2 : ℤ) • a := by abel
+example [AddCommGroup α] (a b : α) : a-2•b = a -2•b := by abel
+
+example [AddCommMonoid α] (a b : α) : a + (b + a) = a + a + b := by abel1
+example [AddCommGroup α] (a b : α) : (a + b) - ((b + a) + a) = -a := by abel1
+example [AddCommGroup α] (x : α) : x - 0 = x := by abel1
+example [AddCommMonoid α] (a : α) : (3 : ℕ) • a = a + (2 : ℕ) • a := by abel1
+example [AddCommGroup α] (a : α) : (3 : ℤ) • a = a + (2 : ℤ) • a := by abel1
+example [AddCommGroup α] (a b : α) : a - 2•b = a - 2•b := by abel1
+example [AddCommGroup α] (a : α) : 0 + a = a := by abel1
+example [AddCommGroup α] (n : ℕ) (a : α) : n • a = n • a := by abel1
+example [AddCommGroup α] (n : ℕ) (a : α) : 0 + n • a = n • a := by abel1
+
+
+example [AddCommMonoid α] (a b c d e : α) :
+  a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 4 • a := by abel1
+example [AddCommGroup α] (a b c d e : α) :
+  a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 4 • a := by abel1
+example [AddCommGroup α] (a b c d : α) :
+  a + b + (c + d - a) = b + c + d := by abel1
+example [AddCommGroup α] (a b c : α) :
+  a + b + c + (c - a - a) = (-1)•a + b + 2•c := by abel1
+
+-- Make sure we fail on some non-equalities.
+example [AddCommMonoid α] (a b c d e : α) :
+    a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 3 • a ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+example [AddCommGroup α] (a b c d e : α) :
+    a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 3 • a ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+example [AddCommGroup α] (a b c d : α) :
+    a + b + (c + d - a) = b + c - d ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+example [AddCommGroup α] (a b c : α) :
+    a + b + c + (c - a - a) = (-1)•a + b + c ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+
+/-- `MyTrue` should be opaque to `abel`. -/
+private def MyTrue := True
+
+/--
+error: abel_nf made no progress
+-/
+#guard_msgs in
+example : MyTrue := by
+  abel_nf
+
+-- `abel!` should see through terms that are definitionally equal,
+def id' (x : α) := x
+example [AddCommGroup α] (a b : α) : a + b - b - id' a = 0 := by
+  fail_if_success
+    abel1
+  abel1!
+
+-- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Interaction.20of.20abel.20with.20casting/near/319895001
+example [AddCommGroup α] : True := by
+  have : ∀ (p q r s : α), s + p - q = s - r - (q - r - p) := by
+    intro p q r s
+    abel
+  trivial
+
+-- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Interaction.20of.20abel.20with.20casting/near/319897374
+example [AddCommGroup α] (x y z : α) : y = x + z - (x - y + z) := by
+  have : True := trivial
+  abel
+
+-- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/abel.20bug.3F/near/368707560
+example [AddCommGroup α] (a b s : α) : -b + (s - a) = s - b - a := by abel_nf
+
+-- inspired by automated testing
+example : True := by
+  have := 0
+  abel_nf
+
+/--
+error: abel_nf made no progress
+-/
+#guard_msgs in
+example : False := by abel_nf
+
+/--
+error: abel_nf made no progress
+-/
+#guard_msgs in
+example [AddCommGroup α] (x y z : α) (w : x = y + z) : False := by
+  abel_nf at w
+
+example [AddCommGroup α] (x y z : α) (h : False) (w : x - x = y + z) : False := by
+  abel_nf at w
+  guard_hyp w : 0 = y + z
+  assumption
+
+/--
+error: abel_nf made no progress
+-/
+#guard_msgs in
+example [AddCommGroup α] (x y z : α) (_w : x = y + z) : False := by
+  abel_nf at *
+
+-- Prior to https://github.com/leanprover/lean4/pull/2917 this would fail
+-- (the `at *` would close the goal,
+-- and then error when trying to work on the hypotheses because there was no goal.)
+example [AddCommGroup α] (x y z : α) (_w : x = y + z) : x - x = 0 := by
+  abel_nf at *
+
+/--
+error: abel_nf made no progress
+-/
+-- Ideally this would specify that it made no progress at `w`.
+#guard_msgs in
+example [AddCommGroup α] (x y z : α) (w : x = y + z) : x - x = 0 := by
+  abel_nf at w ⊢
+
+/--
+error: abel_nf made no progress
+-/
+-- Ideally this would specify that it made no progress at `⊢`.
+#guard_msgs in
+example [AddCommGroup α] (x y z : α) (w : x - x = y + z) : x = 0 := by
+  abel_nf at w ⊢
+
+example [AddCommGroup α] (x y z : α) (h : False) (w : x - x = y + z) : False := by
+  abel_nf at *
+  guard_hyp w : 0 = y + z
+  assumption
+
+section
+abbrev myId (a : ℤ) : ℤ := a
+
+/-
+Test that when `abel_nf` normalizes multiple expressions which contain a particular atom, it uses a
+form for that atom which is consistent between expressions.
+
+We can't use `guard_hyp h :ₛ` here, as while it does tell apart `x` and `myId x`, it also complains
+about differing instance paths.
+-/
+/--
+info: α : Type _
+a b : α
+x : ℤ
+R : ℤ → ℤ → Prop
+hR : Reflexive R
+h : R (2 • myId x) (2 • myId x)
+⊢ True
+-/
+#guard_msgs (info) in
+set_option pp.mvars false in
+example (x : ℤ) (R : ℤ → ℤ → Prop) (hR : Reflexive R) : True := by
+  have h : R (myId x + x) (x + myId x) := hR ..
+  abel_nf at h
+  trace_state
+  trivial
+
+end
+
+-- Test that `abel_nf` doesn't unfold local let expressions, and `abel_nf!` does
+example [AddCommGroup α] (x : α) (f : α → α) : True := by
+  let y := x
+  have : x = y := by
+    fail_if_success abel_nf
+    abel_nf!
+  have : x - y = 0 := by
+    abel_nf
+    abel_nf!
+  have : f x = f y := by
+    fail_if_success abel_nf
+    abel_nf!
+  have : f x - f y = 0 := by
+    abel_nf
+    abel_nf!
+  trivial
+```

@@ -1,0 +1,156 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AsyncList.Variant7e11204c2172eba626904f5b42034a82df01ff9695364195b0acd3e71136f39c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `242d45c0a5daf3e2b7bb33ade325ee3b3ca4ede0` · SHA-256 `8c4a140d84b5cb60abacfca368ad6d4b77d4b8afe581fe4ca216d2445e5411e2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AsyncList.Variant80cb063b8f96d2bf58b0cd8c8cadb26ec6958d4d04fe70552308e1079b34e92b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"80cb063b8f96d2bf58b0cd8c8cadb26ec6958d4d04fe70552308e1079b34e92b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.AsyncList.Variant80cb063b8f96d2bf58b0cd8c8cadb26ec6958d4d04fe70552308e1079b34e92b","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"80cb063b8f96d2bf58b0cd8c8cadb26ec6958d4d04fe70552308e1079b34e92b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Server/AsyncList.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Wojciech Nawrocki. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+
+Authors: Wojciech Nawrocki
+-/
+module
+
+prelude
+public import Lean.Server.ServerTask
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AsyncList.Variant80cb063b8f96d2bf58b0cd8c8cadb26ec6958d4d04fe70552308e1079b34e92b
+
+public section
+
+namespace Lean
+
+universe u v
+
+/-- An async IO list is like a lazy list but instead of being *unevaluated* `Thunk`s,
+`delayed` suffixes are `Task`s *being evaluated asynchronously*. A delayed suffix can signal the end
+of computation (successful or due to a failure) with a terminating value of type `ε`. -/
+inductive AsyncList (ε : Type u) (α : Type v) where
+  | cons (hd : α) (tl : AsyncList ε α)
+  | delayed (tl : Lean.Server.ServerTask $ Except ε $ AsyncList ε α)
+  | nil
+
+namespace AsyncList
+
+open Lean.Server
+
+instance : Inhabited (AsyncList ε α) := ⟨nil⟩
+
+def ofList : List α → AsyncList ε α :=
+  List.foldr AsyncList.cons AsyncList.nil
+
+instance : Coe (List α) (AsyncList ε α) := ⟨ofList⟩
+
+/-- Spawns a `Task` returning the prefix of elements up to (including) the first element for which `p` is true.
+When `p` is not true of any element, it returns the entire list. -/
+partial def waitUntil (p : α → Bool) : AsyncList ε α → ServerTask (List α × Option ε)
+  | cons hd tl =>
+    if !p hd then
+      (tl.waitUntil p).mapCheap fun ⟨l, e?⟩ => ⟨hd :: l, e?⟩
+    else
+      .pure ⟨[hd], none⟩
+  | nil => .pure ⟨[], none⟩
+  | delayed tl =>
+    tl.bindCheap fun
+      | .ok tl   => tl.waitUntil p
+      | .error e => .pure ⟨[], some e⟩
+
+/-- Spawns a `Task` waiting on all elements. -/
+def waitAll : AsyncList ε α → ServerTask (List α × Option ε) :=
+  waitUntil (fun _ => false)
+
+/-- Spawns a `Task` acting like `List.find?` but which will wait for tail evaluation
+when necessary to traverse the list. If the tail terminates before a matching element
+is found, the task throws the terminating value. -/
+partial def waitFind? (p : α → Bool) : AsyncList ε α → ServerTask (Except ε (Option α))
+  | nil => .pure <| .ok none
+  | cons hd tl =>
+    if p hd then .pure <| Except.ok <| some hd
+    else tl.waitFind? p
+  | delayed tl =>
+    tl.bindCheap fun
+      | .ok tl   => tl.waitFind? p
+      | .error e => .pure <| .error e
+
+/--
+Retrieve the already-computed prefix of the list. If computation has finished with an error, return it as well.
+The returned boolean indicates whether the complete `AsyncList` was returned, or whether only a
+proper prefix was returned.
+-/
+partial def getFinishedPrefix : AsyncList ε α → BaseIO (List α × Option ε × Bool)
+  | cons hd tl => do
+    let ⟨tl, e?, isComplete⟩ ← tl.getFinishedPrefix
+    pure ⟨hd :: tl, e?, isComplete⟩
+  | nil => pure ⟨[], none, true⟩
+  | delayed tl => do
+    if ← tl.hasFinished then
+      match ← tl.wait with
+      | Except.ok tl => tl.getFinishedPrefix
+      | Except.error e => pure ⟨[], some e, true⟩
+    else pure ⟨[], none, false⟩
+
+partial def getFinishedPrefixWithTimeout (xs : AsyncList ε α) (timeoutMs : UInt32)
+    (cancelTks : List (ServerTask Unit) := []) : BaseIO (List α × Option ε × Bool) := do
+  let timeoutTask : ServerTask (Unit ⊕ Except ε (AsyncList ε α)) ←
+    if timeoutMs == 0 then
+      pure <| ServerTask.pure (Sum.inl ())
+    else
+      ServerTask.BaseIO.asTask do
+        IO.sleep timeoutMs
+        return .inl ()
+  go timeoutTask xs
+where
+  go (timeoutTask : ServerTask (Unit ⊕ Except ε (AsyncList ε α)))
+      (xs : AsyncList ε α) : BaseIO (List α × Option ε × Bool) := do
+    match xs with
+    | cons hd tl =>
+      let ⟨tl, e?, isComplete⟩ ← go timeoutTask tl
+      return ⟨hd :: tl, e?, isComplete⟩
+    | nil => return ⟨[], none, true⟩
+    | delayed tl =>
+      if ← tl.hasFinished then
+        match ← tl.wait with
+        | .ok tl => go timeoutTask tl
+        | .error e => return ⟨[], some e, true⟩
+      else
+        let tl := tl.mapCheap .inr
+        let cancelTks := cancelTks.map (·.mapCheap .inl)
+        let r ← ServerTask.waitAny (tl :: cancelTks ++ [timeoutTask])
+        match r with
+        | .inl _ => return ⟨[], none, false⟩ -- Timeout or cancellation - stop waiting
+        | .inr (.ok tl) => go timeoutTask tl
+        | .inr (.error e) => return ⟨[], some e, true⟩
+
+partial def getFinishedPrefixWithConsistentLatency (xs : AsyncList ε α) (latencyMs : UInt32)
+    (cancelTks : List (ServerTask Unit) := []) : BaseIO (List α × Option ε × Bool) := do
+  let timestamp ← IO.monoMsNow
+  let r ← xs.getFinishedPrefixWithTimeout latencyMs cancelTks
+  let passedTimeMs := (← IO.monoMsNow) - timestamp
+  let remainingLatencyMs := (latencyMs.toNat - passedTimeMs).toUInt32
+  sleepWithCancellation remainingLatencyMs
+  return r
+where
+  sleepWithCancellation (sleepDurationMs : UInt32) : BaseIO Unit := do
+    if sleepDurationMs == 0 then
+      return
+    if cancelTks.isEmpty then
+      IO.sleep sleepDurationMs
+      return
+    if ← cancelTks.anyM (·.hasFinished) then
+      return
+    let sleepTask ← Lean.Server.ServerTask.BaseIO.asTask do
+      IO.sleep sleepDurationMs
+    ServerTask.waitAny <| sleepTask :: cancelTks
+
+end AsyncList
+
+end Lean
+```

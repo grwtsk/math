@@ -1,0 +1,78 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lemmas.Variant16ea031d7ec100ba8668904e4bd86d63e1e8139070b5bea096d0f6b2715162d5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd4134f0947767d6ea0e630bc0bfcdd7578d82d7` · SHA-256 `1de819e44fa5a25244ed5a51dd23d49764ec80910c9a6308749b5e399207f6c8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MapInjOfLeftInverse.Variant2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.MapInjOfLeftInverse.Variant2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Control/Lawful/Lemmas.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kim Morrison
+-/
+module
+
+prelude
+public import Init.Control.Lawful.Basic
+public import Init.Classical
+public import Init.Ext
+import Init.ByCases
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MapInjOfLeftInverse.Variant2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b
+
+public section
+
+-- Mapping by a function with a left inverse is injective.
+theorem map_inj_of_left_inverse [Functor m] [LawfulFunctor m] {f : α → β}
+    (w : ∃ g : β → α, ∀ x, g (f x) = x) {x y : m α} :
+    f <$> x = f <$> y ↔ x = y := by
+  constructor
+  · intro h
+    rcases w with ⟨g, w⟩
+    replace h := congrArg (g <$> ·) h
+    simpa [w] using h
+  · rintro rfl
+    rfl
+
+-- Mapping by an injective function is injective, as long as the domain is nonempty.
+@[simp] theorem map_inj_right_of_nonempty [Functor m] [LawfulFunctor m] [Nonempty α] {f : α → β}
+    (w : ∀ {x y}, f x = f y → x = y) {x y : m α} :
+    f <$> x = f <$> y ↔ x = y := by
+  constructor
+  · intro h
+    apply (map_inj_of_left_inverse ?_).mp h
+    let ⟨a⟩ := ‹Nonempty α›
+    refine ⟨?_, ?_⟩
+    · intro b
+      by_cases p : ∃ a, f a = b
+      · exact Exists.choose p
+      · exact a
+    · intro b
+      simp only [exists_apply_eq_apply, ↓reduceDIte]
+      apply w
+      apply Exists.choose_spec (p := fun a => f a = f b)
+  · rintro rfl
+    rfl
+
+@[simp] theorem map_inj_right [Monad m] [LawfulMonad m]
+    {f : α → β} (h : ∀ {x y : α}, f x = f y → x = y) {x y : m α} :
+    f <$> x = f <$> y ↔ x = y := by
+  by_cases hempty : Nonempty α
+  · exact map_inj_right_of_nonempty h
+  · constructor
+    · intro h'
+      have (z : m α) : z = (do let a ← z; let b ← pure (f a); x) := by
+        conv => lhs; rw [← bind_pure z]
+        congr; funext a
+        exact (hempty ⟨a⟩).elim
+      rw [this x, this y]
+      rw [← bind_assoc, ← map_eq_pure_bind, h', map_eq_pure_bind, bind_assoc]
+    · intro h'
+      rw [h']
+```

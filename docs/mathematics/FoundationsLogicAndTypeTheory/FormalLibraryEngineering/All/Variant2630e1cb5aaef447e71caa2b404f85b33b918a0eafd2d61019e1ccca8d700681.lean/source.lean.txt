@@ -1,0 +1,10 @@
+import Mathematics.SemiLocalDefect.ResidueDeflection.Arithmetic.TraceCorrespondence
+import Mathematics.SemiLocalDefect.ResidueDeflection.Arithmetic.TransportDifference
+import Mathematics.SemiLocalDefect.ResidueDeflection.Arithmetic.TransportBudget
+import Mathematics.SemiLocalDefect.ResidueDeflection.Arithmetic.TraceInvariance
+import Mathematics.SemiLocalDefect.ResidueDeflection.Arithmetic.WeilSpecialization
+import Mathematics.SemiLocalDefect.ResidueDeflection.Arithmetic.SquareRootScale
+
+/-!
+# Arithmetic trace correspondence for residue deflection
+-/
