@@ -1,0 +1,73 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-fourier-energy-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "2c9092c635fdcd1ef79ef5dc2221f34d74e568a0",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicFourierEnergy.lean",
+  "source_blob": "d912379fb3785f68ddae8512454dea92349fe82a",
+  "source_sha256": "779b2163ea5699583f7621ba4c80266705edb8345415c3484b06ba34d57c798a",
+  "classification": "EIGHT_SOURCE_PROOF_CANDIDATES_ZERO_NEW_DEFINITIONS",
+  "native": "NOT_RUN",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.conjugate_dft",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.parseval_pairing",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.parseval_norm_sq",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.laplacian_readout_fourier",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.laplacian_energy_fourier",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.conductance_floor_fourier",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.arithmetic_energy_fourier_lower_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.arithmetic_energy_sine_lower_bound"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.arithmetic_energy_fourier_lower_bound": "forall (N : Nat) [NeZero N] (m : ZMod N -> Nat) (_hm : forall i, 2 <= m i) (x : ZMod N -> Complex), (Real.log 2 / (N : Real)) * Finset.sum Finset.univ (fun k => (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N k).re * norm (ZMod.dft x k) ^ 2) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N m p.1 p.2)).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.arithmetic_energy_sine_lower_bound": "forall (N : Nat) [NeZero N] (m : ZMod N -> Nat) (_hm : forall i, 2 <= m i) (x : ZMod N -> Complex), (Real.log 2 / (N : Real)) * Finset.sum Finset.univ (fun k : ZMod N => (4 * Real.sin (Real.pi * ((k.val : Real) / (N : Real))) ^ 2) * norm (ZMod.dft x k) ^ 2) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N m p.1 p.2)).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.conductance_floor_fourier": "forall (N : Nat) [NeZero N] (a : ZMod N -> Real) (c : Real) (_ha : forall i, c <= a i) (x : ZMod N -> Complex), (c / (N : Real)) * Finset.sum Finset.univ (fun k => (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N k).re * norm (ZMod.dft x k) ^ 2) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N a p.1 p.2)).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.conjugate_dft": "forall (N : Nat) [NeZero N] (x : ZMod N -> Complex) (k : ZMod N), star (ZMod.dft x k) = Finset.sum Finset.univ (fun i => star (x i) * GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N k i)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.laplacian_energy_fourier": "forall (N : Nat) [NeZero N] (a : Real) (x : ZMod N -> Complex), (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => a) p.1 p.2)).re = (a / (N : Real)) * Finset.sum Finset.univ (fun k => (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N k).re * norm (ZMod.dft x k) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.laplacian_readout_fourier": "forall (N : Nat) [NeZero N] (a : Real) (x : ZMod N -> Complex), GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => a) p.1 p.2) = (N : Complex)⁻¹ * Finset.sum Finset.univ (fun k => ((a : Complex) * GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N k) * ((norm (ZMod.dft x k) ^ 2 : Real) : Complex))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.parseval_norm_sq": "forall (N : Nat) [NeZero N] (x : ZMod N -> Complex), Finset.sum Finset.univ (fun i => norm (x i) ^ 2) = (N : Real)⁻¹ * Finset.sum Finset.univ (fun k => norm (ZMod.dft x k) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourierEnergy.parseval_pairing": "forall (N : Nat) [NeZero N] (x y : ZMod N -> Complex), Finset.sum Finset.univ (fun i => star (x i) * y i) = (N : Complex)⁻¹ * Finset.sum Finset.univ (fun k => star (ZMod.dft x k) * ZMod.dft y k)"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "Every additional private/generated/instance/punctuation root; eight public names are not a cap.",
+  "preserved_hypotheses": [
+    "All complex vectors x,y on every nonzero ZMod N; no selected frequency or vector family.",
+    "Exact constant-real-a identities include signed a; variable-a comparison retains EVERY c<=a_i, with no variable-conductance diagonalization claim.",
+    "Arithmetic labels are arbitrary naturals with EVERY m_i>=2; no common-prime or equal-label premise."
+  ],
+  "normalization": "Exact counting-measure 1/N; explicit sum of coordinate norm squares, not Pi sup norm. Full complex readout, no half factor.",
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T165947.831356Z/fourier-energy-registry.json",
+    "registry_sha256": "b1cf57313c102a2950286da611d41217748c6d2f14e8bb0e4304be03d693fb6f",
+    "project_modules": 15,
+    "upstream_source_modules": 3405,
+    "source_assets": 27,
+    "complete_compiler_origin_audit_contracts": 1,
+    "required_structural_names": 8,
+    "selected_type_expressions": 8,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "all_producer_hashes_match": true,
+    "noe_head": "2827790f3cd4a72d2f9d2410f30ebdb03e4bf080",
+    "native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Minimum over ALL nonzero frequencies and the sharp full mean-zero Poincare lower bound.",
+    "Formal spectrum/perturbation/operator comparison.",
+    "Infinite-volume, arithmetic L-function/RH residual and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}
