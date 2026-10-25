@@ -1,0 +1,38 @@
+# Source-pinned verification only; no compilation.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-packet-product-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "2e47bc0812e4c1e671b3918fad2f41e453aeb97e"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPacketProduct.lean"
+source_blob = "f035d617f95344a69955f63c650ab21bc50e731f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPacketProduct.properPrimePowerWeight_eq_filtered_product",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtUniqueSupport",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "n : Nat; no additional assumptions"
+missing_suppliers = [
+ "Apply singleton support to evaluate properPrimePowerWeight (p^k) as log p",
+ "Identify canonical von Mangoldt on proper prime powers",
+ "Handle non-prime-powers and n=0,1",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPacketProduct.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPacketProduct"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPacketProduct.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

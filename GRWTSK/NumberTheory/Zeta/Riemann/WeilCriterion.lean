@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Local mathematical attribution: grwtsk contributors.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport
 import Mathlib.Tactic
@@ -295,5 +295,67 @@ theorem negativeScalar_reverses_positive
     {c x : ℝ} (hc : c < 0) (hx : 0 < x) :
     c * x < 0 :=
   mul_neg_of_neg_of_pos hc hx
+
+
+/-!
+## Positivity transfer from approximating classical test vectors
+
+This is a topological supplier for extending positivity beyond a finite
+arithmetic realization. Convergence of the *test vectors*, continuity of the
+actual diagonal, and positivity of the actual diagonal on every approximant
+are independent mathematical obligations. No density or continuity of the
+classical zeta Weil form is asserted by this theorem.
+-/
+
+open Filter Topology
+
+namespace WeilHermitianForm
+
+/-- Convergent test-vector approximations preserve nonnegativity of the
+actual continuous Weil diagonal. This is the missing finite-image to full
+test-class inference, *provided* the required convergent approximation and
+continuity hypotheses have themselves been supplied. -/
+theorem positiveDiagonal_of_convergent_tests
+    {T : Type*} [TopologicalSpace T] [AddCommGroup T] [Module ℂ T]
+    {space : WeilTestSpace T}
+    (form : WeilHermitianForm space)
+    (approximants : ∀ f : space.Vector, ℕ → space.Vector)
+    (happroximates :
+      ∀ f, Tendsto (approximants f) atTop (𝓝 f))
+    (hcontinuous : Continuous form.diagonal)
+    (hpositive :
+      ∀ (f : space.Vector) (n : ℕ),
+        0 ≤ form.diagonal (approximants f n)) :
+    form.PositiveDiagonal := by
+  intro f
+  have hlimit :
+      Tendsto (fun n => form.diagonal (approximants f n))
+        atTop (𝓝 (form.diagonal f)) :=
+    (hcontinuous.tendsto f).comp (happroximates f)
+  exact ge_of_tendsto hlimit
+    (Filter.Eventually.of_forall (hpositive f))
+
+end WeilHermitianForm
+
+/-- Conditional classical-RH consumer of the topological Weil positivity
+transfer. A cited Connes trace formula or finite arithmetic Gram is not
+automatically a source for any of the three analytic hypotheses below.
+The criterion is the exact accepted source-bound direction, not metadata. -/
+theorem riemannHypothesis_of_convergentWeilTests
+    {T : Type*} [TopologicalSpace T] [AddCommGroup T] [Module ℂ T]
+    {space : WeilTestSpace T}
+    {form : WeilHermitianForm space}
+    (criterion : WeilPositivityImpliesRH form)
+    (approximants : ∀ f : space.Vector, ℕ → space.Vector)
+    (happroximates :
+      ∀ f, Tendsto (approximants f) atTop (𝓝 f))
+    (hcontinuous : Continuous form.diagonal)
+    (hpositive :
+      ∀ (f : space.Vector) (n : ℕ),
+        0 ≤ form.diagonal (approximants f n)) :
+    _root_.RiemannHypothesis :=
+  criterion.proof
+    (form.positiveDiagonal_of_convergent_tests
+      approximants happroximates hcontinuous hpositive)
 
 end GRWTSK.RiemannHypothesis

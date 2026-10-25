@@ -1,0 +1,38 @@
+# Source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-proper-power-value-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "b910bd8243fb0b113bf20ad3d4229616a128b062"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtProperPowerValue.lean"
+source_blob = "2b9916157bbf51704770ffd9221917cf8e870abc"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerValue.properPrimePowerWeight_prime_pow",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPacketProduct",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "p k : Nat; Nat.Prime p; 2<=k"
+missing_suppliers = [
+ "Show primeLogWeight (p^k)=0 for prime p and k>=2",
+ "Identify ArithmeticFunction.vonMangoldt (p^k)=log p",
+ "Prove pointwise primePowerWeight=vonMangoldt including non-prime-powers and n=0,1",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtProperPowerValue.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerValue"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtProperPowerValue.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

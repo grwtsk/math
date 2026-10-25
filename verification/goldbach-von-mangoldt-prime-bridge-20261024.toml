@@ -1,0 +1,41 @@
+# Source-pinned verification request only; compilation prohibited.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-prime-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "5f770ca7ab12d1b20269cd181a9b8d4bc0719e6e"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPrimeBridge.lean"
+source_blob = "caa8d51f468b8807bf2f5aa295ff1cca5a20f33c"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_source_path = "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean"
+pinned_mathlib_source_blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeBridge.primeLogWeight_eq_vonMangoldt_of_prime",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection",
+ "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+]
+exact_hypotheses = "p : Nat; Nat.Prime p"
+missing_suppliers = [
+ "Identify properPrimePowerWeight with von Mangoldt on prime powers of exponent >=2",
+ "Establish zero weights on non-prime-powers and n=0,1",
+ "Prove pointwise primePowerWeight = ArithmeticFunction.vonMangoldt",
+ "Only then derive finite Chebyshev psi identification and quantitative transfers",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPrimeBridge.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPrimeBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

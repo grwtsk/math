@@ -1,0 +1,76 @@
+# Passive source-pinned verification specification. Not an execution receipt.
+schema_version = 1
+id = "NS-ADJOINT-OBSERVABILITY-01"
+title = "Navier–Stokes finite-adjoint observability and relative contraction"
+status = "NOT_RUN"
+priority = "P1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "d5240f8066ab731a4c3284da7b60538d6b7de48a"
+source_path = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean"
+source_blob = "ac4339e781f4236c8b374e5bf7bd981f066ff2be"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+upstream_commit = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+upstream_blob = "f1ebe2af6bb031e2a524b613f8f07d2033072c83"
+upstream_path = "lean/OAI/MathematicalPhysics/NavierStokes/FiniteRankGap.lean"
+issue = "https://github.com/grwtsk/math/issues/1225"
+execution_receipt = "NOT_RUN"
+compilation = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+no_runner_dispatch = true
+specification_origin_commit = "26f2f74846d74452261456bbafa063b630ea1b67"
+specification_readback = "Fetch specification from current main or a pinned spec commit before detaching to historical mathematical source; do not expect it to exist in the source checkout."
+
+declarations = [
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_factor_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.observability_of_normed_realization",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction_of_normed_realization",
+]
+direct_imports = ["Mathlib.Tactic"]
+related_modules = [
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteObservationGap",
+]
+transitive_import_closure = "NOT_ENUMERATED"
+downstream = ["Strict relative finite-adjoint energy contraction", "Concrete moment-matrix coordinate adapter (unresolved)"]
+unresolved = [
+  "Construct finite-coordinate norm and energy preserving representation of I + B ∘ C",
+  "Check actual transitive import closure and declaration axioms",
+  "Validate all four declarations using pinned Lean and Mathlib",
+]
+commands = [
+  "test -z \"$(git status --porcelain --untracked-files=all)\"",
+  "git diff --quiet",
+  "git diff --cached --quiet",
+  "git checkout --detach d5240f8066ab731a4c3284da7b60538d6b7de48a",
+  "test \"$(git rev-parse HEAD)\" = d5240f8066ab731a4c3284da7b60538d6b7de48a",
+  "test \"$(git hash-object GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean)\" = ac4339e781f4236c8b374e5bf7bd981f066ff2be",
+  "cat lean-toolchain",
+  "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0",
+  "python3 -c 'import json; p=next(x for x in json.load(open(\"lake-manifest.json\"))[\"packages\"] if x[\"name\"]==\"mathlib\"); assert p[\"rev\"]==\"db584cd6d46c92f209a44c0f1c829460d327499d\" and p[\"inputRev\"]==\"db584cd6d46c92f209a44c0f1c829460d327499d\"'",
+  "lake env lean --version",
+  "lake build --wfail GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent",
+  "lake env lean --trust=0 --wfail GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean",
+  "lake env leanchecker --help",
+]
+audit_declarations = [
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_factor_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.observability_of_normed_realization",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction_of_normed_realization",
+]
+audit_import = "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent"
+audit_file_location = "executor-local temporary file outside math repository"
+audit_instructions = "Generate an audit Lean file with the audit_import and #check and #print axioms for each audit_declarations entry; run using lake env lean and preserve exit status and output."
+audit_status = "NOT_RUN"
+# End audit specification
+[acceptance]
+elaboration = "All four declarations elaborate with no sorry/admit or new project axioms"
+kernel = "Fresh independent kernel replay; use CLI supported by installed leanchecker"
+axioms = "Run #check and #print axioms for each declaration and audit transitive imports"
+receipts = "Record exact commands, stdout/stderr, exit statuses and SHA in grwtsk/noeaaeue"
+scope = "Conditional normed realization; no physical Navier–Stokes operator identification"

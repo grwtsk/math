@@ -9,6 +9,7 @@ Original upstream author and license are retained here as provenance; the local
 GRWTSK bridge declarations are by grwtsk contributors.
 -/
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteObservationGap
+import GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeatGap
 import Mathlib.Analysis.Normed.Module.FiniteDimension
 import Mathlib.Topology.Order.IntermediateValue
 import Mathlib.Tactic.Abel
@@ -208,6 +209,659 @@ theorem certified_moment_determinant_sign [FiniteDimensional ℝ F]
     0 < (momentMatrix B C).det * P.det := by
   exact determinant_sign_of_perturbation (momentMatrix B C) P
     (fun y => finite_rank_gap B C R hε hB hR hcoercive y) hpert
+
+
+
+/-!
+## Explicit moment-matrix supplier for finite adjoint descent
+
+The finite-coordinate operator is required to intertwine with the specific
+coercive moment matrix `I + B.comp C` through an energy-preserving encoding.
+These hypotheses identify actual operators; they are not consequences of a
+shared subject label. No fluid-solution or PDE identification is asserted.
+-/
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+
+/-- Global residual coercivity supplies the finite adjoint observability
+constant when an actual energy-preserving coordinate intertwining is given.
+No finite-dimensionality of the moment operator's spaces is assumed. -/
+theorem certified_moment_adjoint_observability
+    {κ : Type*} (s : Finset κ) (A : κ → κ → ℝ)
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ)
+    (encode : (κ → ℝ) → F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (henergy : ∀ w : κ → ℝ, energy s w = ‖encode w‖ ^ 2)
+    (hintertwines : ∀ w : κ → ℝ,
+      encode (applyMatrix s A w) = momentMatrix B C (encode w))
+    (v : κ → ℝ) :
+    (ε / (ε + β * δ)) ^ 2 * energy s v ≤
+      energy s (applyMatrix s A v) := by
+  exact observability_of_intertwining s A (momentMatrix B C) encode
+    (ε / (ε + β * δ))
+    (moment_gap_pos B R hε hB hR).le
+    (fun y => finite_rank_gap B C R hε hB hR hcoercive y)
+    henergy hintertwines v
+
+/-- An identified finite matrix representation of the certified moment matrix
+has a strictly contracting finite-adjoint reconstruction step. The quantified
+coercivity hypothesis and the two coordinate-compatibility premises remain
+visible, and no physical Navier–Stokes conclusion is inferred. -/
+theorem certified_moment_adjoint_strict_contraction
+    {κ : Type*} (s : Finset κ) (A : κ → κ → ℝ)
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ)
+    (encode : (κ → ℝ) → F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (henergy : ∀ w : κ → ℝ, energy s w = ‖encode w‖ ^ 2)
+    (hintertwines : ∀ w : κ → ℝ,
+      encode (applyMatrix s A w) = momentMatrix B C (encode w))
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s s A (applyMatrix s A v) c) ≤
+      (1 - damping s s A * (ε / (ε + β * δ)) ^ 2) * energy s v ∧
+      1 - damping s s A * (ε / (ε + β * δ)) ^ 2 < 1 := by
+  exact residual_relative_contraction_of_intertwining
+    s A (momentMatrix B C) encode (ε / (ε + β * δ))
+    (moment_gap_pos B R hε hB hR)
+    (fun y => finite_rank_gap B C R hε hB hR hcoercive y)
+    henergy hintertwines v
+
+
+
+/-!
+## Quantitative margin under operator perturbation
+
+The earlier injectivity theorem gives only a qualitative conclusion. The next
+estimate retains the entire remaining lower-bound margin. It applies to a
+perturbed represented operator and separates the perturbation norm from the
+coercivity supplier.
+-/
+
+/-- The least-norm lower bound degrades by at most the operator-norm error.
+This is meaningful even when the remaining signed margin is nonpositive. -/
+theorem perturbation_lower_bound
+    (J P : F →L[ℝ] F) {γ : ℝ}
+    (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
+    (x : F) :
+    (γ - ‖P - J‖) * ‖x‖ ≤ ‖P x‖ := by
+  have hJ : J x = P x - (P - J) x := by
+    simp only [sub_apply]
+    abel
+  have htri : ‖J x‖ ≤ ‖P x‖ + ‖(P - J) x‖ := by
+    calc
+      ‖J x‖ = ‖P x - (P - J) x‖ := congrArg norm hJ
+      _ ≤ ‖P x‖ + ‖(P - J) x‖ := norm_sub_le _ _
+  have hnorm := (P - J).le_opNorm x
+  nlinarith [hgap x]
+
+/-- The Navier–Stokes-derived moment gap retains an explicit quantitative
+margin under arbitrary continuous-linear perturbations. No injectivity or
+positivity is claimed unless the perturbation is strictly below the gap. -/
+theorem certified_moment_perturbed_lower_bound
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ) (P : F →L[ℝ] F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (y : F) :
+    (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) * ‖y‖ ≤ ‖P y‖ := by
+  exact perturbation_lower_bound (momentMatrix B C) P
+    (fun x => finite_rank_gap B C R hε hB hR hcoercive x) y
+
+/-- If a square finite matrix exactly represents a perturbation of the coercive
+moment operator, strict relative contraction persists with the reduced positive
+margin. The energy-preserving encoding and intertwining remain explicit. -/
+theorem certified_perturbed_moment_adjoint_strict_contraction
+    {κ : Type*} (s : Finset κ) (A : κ → κ → ℝ)
+    (B : E →L[ℝ] F) (C : F →L[ℝ] E)
+    (R : F →L[ℝ] E →L[ℝ] ℝ) (P : F →L[ℝ] F)
+    (encode : (κ → ℝ) → F)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : F,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hpert : ‖P - momentMatrix B C‖ < ε / (ε + β * δ))
+    (henergy : ∀ w : κ → ℝ, energy s w = ‖encode w‖ ^ 2)
+    (hintertwines : ∀ w : κ → ℝ,
+      encode (applyMatrix s A w) = P (encode w))
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s s A (applyMatrix s A v) c) ≤
+      (1 - damping s s A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2) * energy s v ∧
+      1 - damping s s A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2 < 1 := by
+  exact residual_relative_contraction_of_intertwining
+    s A P encode (ε / (ε + β * δ) - ‖P - momentMatrix B C‖)
+    (sub_pos.mpr hpert)
+    (fun y => certified_moment_perturbed_lower_bound
+      B C R P hε hB hR hcoercive y)
+    henergy hintertwines v
+
+
+
+/-!
+## Concrete one-coordinate moment realization
+
+When the moment operator acts on `ℝ`, its coordinate matrix has one entry,
+the image of `1`. The coordinate encoding is evaluation at `0 : Fin 1`.
+Both the energy identity and the intertwining identity are proved here, rather
+than supplied as premises. The intermediate space `E` need not be finite
+dimensional. This is a scalar specialization, not a representation of a
+general fluid PDE or an infinite-dimensional moment operator.
+-/
+
+/-- The unique coordinate of a real one-dimensional vector. -/
+def scalarEncode (v : Fin 1 → ℝ) : ℝ := v 0
+
+/-- The literal one-by-one matrix representing a continuous real-linear
+endomorphism of `ℝ`. -/
+def scalarOperatorMatrix (J : ℝ →L[ℝ] ℝ) : Fin 1 → Fin 1 → ℝ :=
+  fun _ _ => J 1
+
+/-- The full one-coordinate energy is exactly the squared real norm. -/
+theorem scalarEncode_energy (v : Fin 1 → ℝ) :
+    energy (Finset.univ : Finset (Fin 1)) v = ‖scalarEncode v‖ ^ 2 := by
+  simp [energy, scalarEncode, Real.norm_eq_abs, sq_abs, Fin.sum_univ_one]
+
+/-- A continuous real-linear map on `ℝ` is multiplication by its image of
+`1`; the scalar coordinate matrix therefore intertwines exactly. -/
+theorem scalarOperatorMatrix_intertwines (J : ℝ →L[ℝ] ℝ)
+    (v : Fin 1 → ℝ) :
+    scalarEncode (applyMatrix (Finset.univ : Finset (Fin 1))
+      (scalarOperatorMatrix J) v) = J (scalarEncode v) := by
+  have hmul (x : ℝ) : J x = J 1 * x := by
+    calc
+      J x = J (x • (1 : ℝ)) := by simp [smul_eq_mul]
+      _ = x • J 1 := by rw [map_smul]
+      _ = J 1 * x := by simp [smul_eq_mul, mul_comm]
+  calc
+    scalarEncode (applyMatrix (Finset.univ : Finset (Fin 1))
+        (scalarOperatorMatrix J) v) = J 1 * v 0 := by
+      simp [scalarEncode, applyMatrix, scalarOperatorMatrix, Fin.sum_univ_one]
+    _ = J (scalarEncode v) := by
+      simpa only [scalarEncode] using (hmul (v 0)).symm
+
+/-- The scalar moment matrix has a concrete one-coordinate energy
+observability estimate, without abstract coordinate-compatibility assumptions. -/
+theorem scalar_moment_adjoint_observability
+    (B : E →L[ℝ] ℝ) (C : ℝ →L[ℝ] E)
+    (R : ℝ →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : ℝ,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin 1 → ℝ) :
+    (ε / (ε + β * δ)) ^ 2 *
+        energy (Finset.univ : Finset (Fin 1)) v ≤
+      energy (Finset.univ : Finset (Fin 1))
+        (applyMatrix Finset.univ (scalarOperatorMatrix (momentMatrix B C)) v) := by
+  exact certified_moment_adjoint_observability
+    (Finset.univ : Finset (Fin 1))
+    (scalarOperatorMatrix (momentMatrix B C))
+    B C R scalarEncode hε hB hR hcoercive
+    scalarEncode_energy
+    (scalarOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- A genuine one-coordinate realization of the coercive scalar moment matrix
+has a strict relative finite-adjoint contraction factor. The only analytical
+supplier is the original global coercivity inequality. -/
+theorem scalar_moment_adjoint_strict_contraction
+    (B : E →L[ℝ] ℝ) (C : ℝ →L[ℝ] E)
+    (R : ℝ →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : ℝ,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin 1 → ℝ) :
+    let A := scalarOperatorMatrix (momentMatrix B C)
+    energy (Finset.univ : Finset (Fin 1))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ)) ^ 2) * energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ)) ^ 2 < 1 := by
+  dsimp only
+  exact certified_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin 1))
+    (scalarOperatorMatrix (momentMatrix B C))
+    B C R scalarEncode hε hB hR hcoercive
+    scalarEncode_energy
+    (scalarOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- The scalar coordinate realization also gives the quantitative contraction
+for an arbitrary scalar perturbation `P` lying strictly inside the certified
+moment gap. No separate coordinate intertwining hypotheses are needed. -/
+theorem scalar_perturbed_moment_adjoint_strict_contraction
+    (B : E →L[ℝ] ℝ) (C : ℝ →L[ℝ] E)
+    (R : ℝ →L[ℝ] E →L[ℝ] ℝ) (P : ℝ →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : ℝ,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hpert : ‖P - momentMatrix B C‖ < ε / (ε + β * δ))
+    (v : Fin 1 → ℝ) :
+    let A := scalarOperatorMatrix P
+    energy (Finset.univ : Finset (Fin 1))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2) *
+          energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2 < 1 := by
+  dsimp only
+  exact certified_perturbed_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin 1)) (scalarOperatorMatrix P)
+    B C R P scalarEncode hε hB hR hcoercive hpert
+    scalarEncode_energy (scalarOperatorMatrix_intertwines P) v
+
+
+
+/-!
+## Concrete finite-dimensional Euclidean moment realization
+
+The Euclidean coordinate encoding and its operator matrix are constructed in
+FiniteAdjointDescent. For the Navier–Stokes-derived moment gap, these concrete
+objects discharge all finite-coordinate energy and intertwining hypotheses.
+This applies to any finite n, but still requires the original global residual
+coercivity premise. It does not identify arbitrary physical PDE operators.
+-/
+
+/-- A moment operator acting on EuclideanSpace ℝ (Fin n) has an explicit
+finite matrix whose observation energy inherits the coercivity gap. -/
+theorem euclidean_moment_adjoint_observability {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin n → ℝ) :
+    (ε / (ε + β * δ)) ^ 2 *
+        energy (Finset.univ : Finset (Fin n)) v ≤
+      energy (Finset.univ : Finset (Fin n))
+        (applyMatrix Finset.univ (euclideanOperatorMatrix (momentMatrix B C)) v) := by
+  exact certified_moment_adjoint_observability
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix (momentMatrix B C))
+    B C R euclideanEncode hε hB hR hcoercive
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- Every finite Euclidean coercive moment operator supplies a concrete
+strict-relative-contraction estimate for the adjoint residual iteration,
+without assumed coordinate-energy or intertwining lemmas. -/
+theorem euclidean_moment_adjoint_strict_contraction {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix (momentMatrix B C)
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ)) ^ 2) * energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ)) ^ 2 < 1 := by
+  dsimp only
+  exact certified_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix (momentMatrix B C))
+    B C R euclideanEncode hε hB hR hcoercive
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- A perturbed finite Euclidean moment operator retains a concrete
+strict-relative-contraction bound with the exact remaining operator-norm
+margin; only the strict perturbation and original coercivity are assumed. -/
+theorem euclidean_perturbed_moment_adjoint_strict_contraction {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (P : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hpert : ‖P - momentMatrix B C‖ < ε / (ε + β * δ))
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix P
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2) *
+          energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2 < 1 := by
+  dsimp only
+  exact certified_perturbed_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix P)
+    B C R P euclideanEncode hε hB hR hcoercive hpert
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines P) v
+
+
+
+/-!
+## Coercive moment gaps transferred to existing finite spectral and Hodge models
+
+The spectralFiniteMatrix is an actual diagonal model from FiniteSpectralHeat.
+The operator-identification hypothesis below is an equality of its coordinate
+matrix with the matrix of the coercive moment operator, rather than a
+restatement of the desired spectral gap. Only after this exact equality and
+the original global coercivity certificate are supplied does the quantitative
+moment gap exclude each zero spectral coefficient and control Hodge heat.
+No physical Navier--Stokes or zeta operator identification is inferred.
+-/
+
+/-- A coercive Euclidean moment operator whose coordinate matrix is the
+specified diagonal spectral matrix has a squared gap in every eigenmode. -/
+theorem certified_spectral_coefficient_gap {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    (i : Fin n) :
+    (ε / (ε + β * δ)) ^ 2 ≤ (a i) ^ 2 := by
+  apply GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix_coefficient_gap
+    a (γ := ε / (ε + β * δ))
+  intro v
+  simpa only [hdiag] using
+    (euclidean_moment_adjoint_observability
+      B C R hε hB hR hcoercive v)
+
+/-- The exact diagonal spectral matrix of a coercive Euclidean moment
+operator has a strictly contracting finite-adjoint residual step. -/
+theorem certified_spectral_adjoint_strict_contraction {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    (v : Fin n → ℝ) :
+    let A := GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ)) ^ 2) * energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ)) ^ 2 < 1 := by
+  simpa only [hdiag] using
+    (euclidean_moment_adjoint_strict_contraction
+      B C R hε hB hR hcoercive v)
+
+/-- The Navier--Stokes-derived finite-rank gap forces exponential decay
+of the named positive diagonal Hodge heat model, once its coefficients
+are identified with the actual moment operator's diagonal coordinates. -/
+theorem certified_spectral_hodge_heat_decay {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    {t : ℝ} (ht : 0 ≤ t) (x : Fin n → ℝ) :
+    GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.dot
+      (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.heat a t x)
+      (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.heat a t x) ≤
+      Real.exp (-2 * t * (ε / (ε + β * δ)) ^ 2) *
+        GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.dot x x := by
+  exact GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix_hodge_heat_gap
+    a (γ := ε / (ε + β * δ)) (t := t)
+    (by
+      intro v
+      simpa only [hdiag] using
+        (euclidean_moment_adjoint_observability
+          B C R hε hB hR hcoercive v))
+    ht x
+
+/-- Under the same typed diagonal identification and global coercivity,
+the degree-zero harmonic space of the positive diagonal Hodge model is
+trivial. The hypothesis does not assert that an unrelated Hodge operator is
+this particular moment model. -/
+theorem certified_spectral_hodge_harmonic_trivial {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    (x : Fin n → ℝ) :
+    (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.positiveDiagonalHodge a).IsHarmonic0 x
+      ↔ x = 0 := by
+  apply GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.harmonic0_iff_eq_zero
+  intro i hai
+  have hgap := certified_spectral_coefficient_gap
+    B C R a hε hB hR hcoercive hdiag i
+  have hpos : 0 < (ε / (ε + β * δ)) ^ 2 :=
+    sq_pos_of_pos (moment_gap_pos B R hε hB hR)
+  rw [hai] at hgap
+  nlinarith
+
+
+
+/-!
+## A concrete global coercivity supplier from positive-semidefinite operators
+
+For a positive-semidefinite continuous real Hilbert-space operator B, choose
+C = id and R = the actual real inner-product pairing. Then
+R ((I+B)y) (Cy) = ‖y‖² + ⟪B y, y⟫, so the original global residual
+coercivity is obtained with ε=1, rather than being assumed.
+This supplies the coercivity *for this operator class*, not for arbitrary
+Navier--Stokes PDE solutions or unrelated spectral operators.
+-/
+
+section PositiveOperators
+
+variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+
+/-- Real Hilbert-space positivity constructs the full global coercivity
+certificate for the moment operator I+B, with C=id and residual pairing
+equal to the real inner product. -/
+theorem positive_operator_residual_coercivity
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    (1 : ℝ) * ‖(ContinuousLinearMap.id ℝ H) y‖ ^ 2 ≤
+      (innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)
+        (momentMatrix B (ContinuousLinearMap.id ℝ H) y)
+        ((ContinuousLinearMap.id ℝ H) y) := by
+  have hJ : momentMatrix B (ContinuousLinearMap.id ℝ H) y =
+      y + B y := by
+    simp [momentMatrix, add_comm]
+  simp only [one_mul, ContinuousLinearMap.id_apply, innerSL_apply_apply]
+  rw [hJ, inner_add_left, real_inner_self_eq_norm_sq]
+  exact le_add_of_nonneg_right (hBpos y)
+
+/-- The actual positivity certificate discharges the global coercivity
+hypothesis of the adapted OpenAI finite-rank gap, with explicit operator
+norm choices β=‖B‖ and δ=‖innerSL ℝ‖. -/
+theorem positive_operator_moment_gap
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    (1 / (1 + ‖B‖ *
+      ‖(innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)‖) * ‖y‖ ≤
+      ‖momentMatrix B (ContinuousLinearMap.id ℝ H) y‖ := by
+  exact finite_rank_gap B (ContinuousLinearMap.id ℝ H)
+    (innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)
+    (by norm_num) (le_refl _) (le_refl _)
+    (fun x => positive_operator_residual_coercivity B hBpos x) y
+
+/-- A positive-semidefinite continuous real Hilbert-space operator has an
+injective identity shift. Here the result is supplied by the global
+coercivity certificate, not merely by a finite numerical observation. -/
+theorem positive_operator_moment_injective
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y) :
+    Function.Injective (momentMatrix B (ContinuousLinearMap.id ℝ H)) := by
+  exact certified_moment_injective B (ContinuousLinearMap.id ℝ H)
+    (innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)
+    (by norm_num) (le_refl _) (le_refl _)
+    (fun x => positive_operator_residual_coercivity B hBpos x)
+
+
+/-!
+## Sharp unit norm gap for shifted positive operators
+
+The upstream-derived quantitative moment gap has a norm-dependent factor.
+For the more specific case C=id and a positive-semidefinite real Hilbert
+operator B, expanding the squared norm gives the stronger unit lower
+bound. This estimate is sharp when B has a nonzero kernel.
+-/
+
+/-- Positivity supplies the norm-independent unit lower bound
+for I+B, stronger than the generic finite-rank constant. -/
+theorem positive_operator_moment_sharp_gap
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    ‖y‖ ≤ ‖momentMatrix B (ContinuousLinearMap.id ℝ H) y‖ := by
+  have hJ : momentMatrix B (ContinuousLinearMap.id ℝ H) y = y + B y := by
+    simp [momentMatrix, add_comm]
+  rw [hJ]
+  have hsquare : ‖y‖ ^ 2 ≤ ‖y + B y‖ ^ 2 := by
+    rw [norm_add_sq_real, real_inner_comm (B y) y]
+    nlinarith [hBpos y, sq_nonneg (‖B y‖)]
+  exact (sq_le_sq₀ (norm_nonneg _) (norm_nonneg _)).mp hsquare
+
+/-- The norm margin of a perturbation of I+B is bounded below by
+one minus the perturbation operator norm, without a positivity
+assumption on the perturbing operator. -/
+theorem positive_operator_perturbed_sharp_gap
+    (B P : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    (1 - ‖P - momentMatrix B (ContinuousLinearMap.id ℝ H)‖) * ‖y‖ ≤
+      ‖P y‖ := by
+  exact perturbation_lower_bound
+    (momentMatrix B (ContinuousLinearMap.id ℝ H)) P
+    (fun x => by
+      simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos x)
+    y
+
+/-- Any perturbation inside the unit margin preserves injectivity. -/
+theorem positive_operator_perturbed_injective
+    (B P : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (hpert : ‖P - momentMatrix B (ContinuousLinearMap.id ℝ H)‖ < 1) :
+    Function.Injective P := by
+  exact injective_of_perturbation
+    (momentMatrix B (ContinuousLinearMap.id ℝ H)) P
+    (fun x => by
+      simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos x)
+    hpert
+
+/-- In finite dimensions a perturbation inside the unit norm
+margin has the same strict determinant sign as I+B. -/
+theorem positive_operator_perturbed_det_sign [FiniteDimensional ℝ H]
+    (B P : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (hpert : ‖P - momentMatrix B (ContinuousLinearMap.id ℝ H)‖ < 1) :
+    0 < (momentMatrix B (ContinuousLinearMap.id ℝ H)).det * P.det := by
+  exact determinant_sign_of_perturbation
+    (momentMatrix B (ContinuousLinearMap.id ℝ H)) P
+    (fun x => by
+      simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos x)
+    hpert
+
+/-- The literal Euclidean representation of I+B has a squared
+observation constant of one, without the generic norm-dependent loss. -/
+theorem positive_euclidean_moment_sharp_observability {n : ℕ}
+    (B : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (hBpos : ∀ y : EuclideanSpace ℝ (Fin n), 0 ≤ inner ℝ (B y) y)
+    (v : Fin n → ℝ) :
+    energy (Finset.univ : Finset (Fin n)) v ≤
+      energy (Finset.univ : Finset (Fin n))
+        (applyMatrix Finset.univ
+          (euclideanOperatorMatrix
+            (momentMatrix B
+              (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))) v) := by
+  have hgap : ∀ y : EuclideanSpace ℝ (Fin n),
+      (1 : ℝ) * ‖y‖ ≤
+        ‖momentMatrix B (ContinuousLinearMap.id ℝ _) y‖ := by
+    intro y
+    simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos y
+  have h := observability_of_intertwining
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))))
+    (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    euclideanEncode (1 : ℝ) (by norm_num) hgap
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))) v
+  simpa only [one_pow, one_mul] using h
+
+/-- In any finite Euclidean dimension the strict finite-adjoint
+relative residual factor is 1-damping for the positive shifted
+operator, with the literal Frobenius damping unchanged. -/
+theorem positive_euclidean_moment_sharp_contraction {n : ℕ}
+    (B : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (hBpos : ∀ y : EuclideanSpace ℝ (Fin n), 0 ≤ inner ℝ (B y) y)
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+      (1 - damping Finset.univ Finset.univ A) * energy Finset.univ v ∧
+    1 - damping Finset.univ Finset.univ A < 1 := by
+  dsimp only
+  have hgap : ∀ y : EuclideanSpace ℝ (Fin n),
+      (1 : ℝ) * ‖y‖ ≤
+        ‖momentMatrix B (ContinuousLinearMap.id ℝ _) y‖ := by
+    intro y
+    simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos y
+  have h := residual_relative_contraction_of_intertwining
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))))
+    (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    euclideanEncode (1 : ℝ) (by norm_num) hgap
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))) v
+  simpa only [one_pow, mul_one] using h
+
+end PositiveOperators
 
 
 end
