@@ -34,6 +34,28 @@ inspected_research_state_blob = "dc3e778e1ddf826e8557036c5c1439e522dfdbe7"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+# These values identify the authored source snapshot, not acceptance receipts.
+source_snapshot_commit = "796c598dc4056e616eb6b0d2917daf9bca004827"
+source_snapshot_tree = "8930544a7a6cc4e9818a4eed04ff11f00746aaab"
+diagnostics_blob = "6e67246884294128dcdc79ab6c2881fa4b608735"
+examples_blob = "175b1f8554de01c28bfc18a3fc1941e517678cd0"
+exposition_blob = "1bd0557d947036eb8c85ff8d3727ef908574c61b"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+manifest_self_identity_requires_external_binding = true
+local_transitive_imports = [
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchState.lean@dc3e778e1ddf826e8557036c5c1439e522dfdbe7",
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/Invariant.lean@dc5d4d9d900727e554bbd70950a65ab6d5dcdc51",
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Inference/RuleSoundness.lean@e79f2cafd5932d7951c85bdd6a22c5b2f9f2ff16",
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Inference/FiniteRuleSystems.lean@f0dd07d16b37e235a83b096496381b72faff5ca0",
+  "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/ClosureOperators/FiniteDependencyClosure.lean@f17dc71a6fee9e75fbf3e217e86b94f6b1a0c867",
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Locality/RevisionCertificates.lean@54a2506878a5fd4c04fbf13ac0e3a99550d077fd",
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Certificates/ProofCoverage.lean@2442265284f2c5e155ac68c63949e1cc5b467e27",
+]
+external_import_boundaries = [
+  "Init", "Mathlib.Data.Fintype.Card", "Lean.Elab.Tactic.Omega",
+  "Mathlib.Data.Finset.Basic",
+]
+external_import_transitive_closure_not_audited = true
 source_pin_policy = "A verifier must resolve the actual published commit/tree plus blobs for both newly added modules, this manifest, all transitive imports, toolchain, and lake manifest; inspection parent is not acceptance."
 
 [[modules]]
@@ -58,10 +80,12 @@ required_heads = [
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.statement_of_hasProof",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_counterexample",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_transfer",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_descriptor_promotion",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_scope_promotion",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_counterexample",
-  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.restricted_true_global_false"
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.restricted_true_global_false",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_scoped_transfer"
 ]
 complete_module_declaration_inventory_required = true
 
