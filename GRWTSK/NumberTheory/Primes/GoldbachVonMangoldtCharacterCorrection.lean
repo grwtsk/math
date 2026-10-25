@@ -541,9 +541,10 @@ theorem logarithmicPowerTailKernel_tsum_add_le
       (N : ℝ) ^ (1 - σ) *
         (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
   have hanti :
-      AntitoneOn (logarithmicPowerTailKernel σ) (Set.Ici (N : ℝ)) :=
-    (logarithmicPowerTailKernel_antitoneOn_three σ hσ).mono
-      (Set.Ici_subset_Ici.mpr (by exact_mod_cast hN))
+      AntitoneOn (logarithmicPowerTailKernel σ) (Set.Ici (N : ℝ)) := by
+    apply (logarithmicPowerTailKernel_antitoneOn_three σ hσ).mono
+    intro t ht
+    exact le_trans (by exact_mod_cast hN : (3 : ℝ) ≤ (N : ℝ)) ht
   have hnonneg :
       ∀ t ∈ Set.Ioi (N : ℝ), 0 ≤ logarithmicPowerTailKernel σ t := by
     intro t ht
