@@ -25,10 +25,11 @@ direct_imports = [
 exact_hypotheses = "q N : Nat; q != 0"
 mathematical_class = "finite_arithmetic_source_candidate"
 missing_suppliers = [
- "Optionally sharpen the downstream proper-power bound to Nat.log2 N * log(radical q)",
- "Confirm elaboration of the pinned Real.log_le_log API, casts and upstream radical log proof"
+ "Confirm elaboration of the pinned Real.log_le_log API, casts and upstream radical log proof",
  "Pinned Lean compilation, fresh kernel checking and transitive axiom audit",
 ]
+downstream_refinement_source_commit = "7ae1a6175e7c1625640bd14bd474af57121987eb"
+downstream_refinement_source_blob = "7afdd6851153ce626fbb977664457bd5a5851383"
 transitive_import_closure = "PENDING_SOURCE_INVENTORY"
 receipts = "NOT_RUN"
 
