@@ -931,4 +931,19 @@ theorem centralSquarePrime_mass_ge_count_log (n : ℕ) :
       intro p hp
       exact centralSquarePrime_log_lower n p hp
 
+/-- A quantitative central prime count, measured against the
+complete square-interval von Mangoldt source, supplies the precise
+relative centered-moment gap. The count hypothesis is not proved. -/
+theorem relative_moment_gap_of_central_prime_count
+    (n : ℕ) (δ : ℝ)
+    (hcount :
+      δ * squareIncrement n ≤
+        (centralSquarePrimes n).card *
+          Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  apply relative_moment_gap_of_central_prime_budget n δ
+  exact hcount.trans (centralSquarePrime_mass_ge_count_log n)
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
