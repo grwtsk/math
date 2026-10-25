@@ -18,7 +18,11 @@ Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provid
 Scope: physical GRWTSK subject placement only. Exact original namespace blocks, imported provider names, fields, hypotheses, equations and proofs are preserved. Historical provider lookup is unreplayed; the archive path is not an activated import alias. Distinct historical candidate versions are isolated and are not claimed compatible for coimport. No extra algebraic, analytic or computational acceptance claim is added.
 -/
 
-import BooleanMatrix.Application.Core
+/- Dependency repair (2026-10-25): earlier provenance describes the historical
+imports. The explicit canonical provider below preserves the carrier and all
+declaration bodies; fresh compiler/kernel/axiom acceptance remains pending. -/
+
+import GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.SimpleTypeTheory.FunctionTypes.BooleanMatrixSelfMaps.Variant904476e1a96b6b04.ApplicationOperations
 
 /-!
 # Iterated BooleanMatrix execution
