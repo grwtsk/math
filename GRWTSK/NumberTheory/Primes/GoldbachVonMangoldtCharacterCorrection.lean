@@ -567,4 +567,18 @@ theorem logarithmicPowerTailKernel_summable_nat
     exact logarithmicPowerTailKernel_nonneg σ t (le_of_lt ht)
   exact hanti.summable_of_integrableOn_Ioi hint hnonneg
 
+
+/-- Infinite shifted tail as the full convergent logarithmic-power
+series minus its initial segment. This is a summability-based
+infinite reindexing, with no formal conditional-sum assumptions. -/
+theorem logarithmicPowerTailKernel_tsum_shift_eq_sub_prefix
+    (σ : ℝ) (N : ℕ) (hσ : 1 < σ) :
+    (∑' k : ℕ, logarithmicPowerTailKernel σ ((k + N + 1 : ℕ) : ℝ)) =
+      (∑' n : ℕ, logarithmicPowerTailKernel σ (n : ℝ)) -
+      ∑ n ∈ Finset.range (N + 1), logarithmicPowerTailKernel σ (n : ℝ) := by
+  have hs := logarithmicPowerTailKernel_summable_nat σ hσ
+  have hsplit := hs.sum_add_tsum_nat_add (N + 1)
+  rw [hsplit]
+  ring
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
