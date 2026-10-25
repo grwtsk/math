@@ -524,11 +524,13 @@ theorem logarithmicPowerTailKernel_integral_Ioi
     apply logarithmicPowerTailPrimitive_hasDerivAt σ t hσ
     have hNpos : (0 : ℝ) < (N : ℝ) := by exact_mod_cast (show 0 < N by omega)
     exact lt_of_lt_of_le hNpos ht
-  have hftc :=
+  have hftc :
+      (∫ t in Set.Ioi (N : ℝ), logarithmicPowerTailKernel σ t) =
+        (0 : ℝ) - logarithmicPowerTailPrimitive σ (N : ℝ) :=
     MeasureTheory.integral_Ioi_of_hasDerivAt_of_tendsto'
       hderiv (logarithmicPowerTailKernel_integrableOn_Ioi σ N hσ hN)
       (logarithmicPowerTailPrimitive_tendsto_zero σ hσ)
-  simpa [logarithmicPowerTailPrimitive] using hftc
+  simpa only [logarithmicPowerTailPrimitive, zero_sub, neg_neg] using hftc
 
 
 /-- Explicit upper bound for the reindexed logarithmic Dirichlet
