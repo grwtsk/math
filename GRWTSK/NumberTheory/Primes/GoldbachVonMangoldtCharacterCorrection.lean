@@ -401,6 +401,8 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
   have hpow : HasDerivAt (fun x : ℝ => x ^ (1 - σ))
       ((1 - σ) * t ^ ((1 - σ) - 1)) t :=
     Real.hasDerivAt_rpow_const (Or.inl ht.ne')
+  have hexponent : (1 - σ) - 1 = -σ := by ring
+  rw [hexponent] at hpow
   have hlog : HasDerivAt (fun x : ℝ => Real.log x)
       t⁻¹ t := Real.hasDerivAt_log ht.ne'
   have hinner : HasDerivAt
