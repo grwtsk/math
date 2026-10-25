@@ -180,3 +180,70 @@ elaboration = "NOT_RUN"
 fresh_kernel_check = "NOT_RUN"
 transitive_axiom_audit = "NOT_RUN"
 all_checks_passed = false
+
+# Authored expected type contracts, not observed elaboration results.
+[type_expectation_contract]
+status = "SOURCE_SPECIFICATION_ONLY"
+source_commit = "492ac421c424265ae72956a4c9e3b6efee34bf16"
+source_tree = "556fe5654117b680c827b434dc0e9ac46beb5c74"
+core_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+requires_elaborated_type_comparison = true
+requires_all_source_and_target_identity_fields = true
+requires_exact_contextual_hypotheses = true
+fresh_kernel = "NOT_RUN"
+transitive_axioms = "NOT_RUN"
+
+[[expected_declarations]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison"
+kind = "structure"
+source_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+expected_input = "(sourceCatalog : Catalog SourceClaim) (targetCatalog : Catalog TargetClaim)"
+expected_output = "Type"
+status = "NOT_ELABORATED"
+expected_fields = [
+  "reindex : TargetClaim → SourceClaim",
+  "sourceIdentity : TargetClaim → SourceIdentity",
+  "targetIdentity : TargetClaim → SourceIdentity",
+  "sourceBound : ∀ targetClaim, sourceIdentity targetClaim = sourceCatalog.source (reindex targetClaim)",
+  "targetBound : ∀ targetClaim, targetIdentity targetClaim = targetCatalog.source targetClaim",
+  "preservesMeaning : ∀ targetClaim, Meaning sourceCatalog (reindex targetClaim) → Meaning targetCatalog targetClaim"
+]
+
+[[expected_declarations]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.meaning"
+kind = "theorem"
+source_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+expected_input = "(comparison : CrossSourceComparison sourceCatalog targetCatalog) (claim : B) (sourceProof : Meaning sourceCatalog (comparison.reindex claim))"
+expected_output = "Meaning targetCatalog claim"
+status = "NOT_ELABORATED"
+
+[[expected_declarations]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.forwardStanding"
+kind = "definition"
+source_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+expected_input = "(comparison : CrossSourceComparison sourceCatalog targetCatalog) (claim : B) (standing : Standing (Meaning sourceCatalog (comparison.reindex claim)))"
+expected_output = "Standing (Meaning targetCatalog claim)"
+status = "NOT_ELABORATED"
+
+[[expected_declarations]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.statement"
+kind = "theorem"
+source_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+expected_input = "(comparison : CrossSourceComparison sourceCatalog targetCatalog) (claim : B) (sourceProof : Meaning sourceCatalog (comparison.reindex claim)) (targetHypotheses : ∀ h ∈ targetCatalog.hypotheses claim, h)"
+expected_output = "targetCatalog.statement claim"
+status = "NOT_ELABORATED"
+
+[[expected_declarations]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.asCrossSourceComparison"
+kind = "definition"
+source_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+expected_input = "(transport : CatalogTransport sourceCatalog targetCatalog)"
+expected_output = "CrossSourceComparison sourceCatalog targetCatalog"
+status = "NOT_ELABORATED"
+
+[expected_type_audit]
+command_source = "At exact pinned commit, create a temporary Lean audit file importing MathematicalDiagnostics and use #check and #print for every expected_declarations.name; compare the elaborated type against expected_input/expected_output and all structure fields."
+axiom_source = "At exact pinned commit, use #print axioms for each theorem and the imported transitive dependency closure; record exact stdout, stderr, exit status and source identities externally in grwtsk/noeaaeue."
+source_identity_equality_is_not_git_authentication = true
+failed_compilation_is_not_mathematical_refutation = true
+status = "NOT_RUN"
