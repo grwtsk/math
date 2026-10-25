@@ -485,4 +485,27 @@ theorem logarithmicPowerTailPrimitive_tendsto_zero
     ring
   · simp
 
+
+/-- Exact positive-tail integral of the logarithmic-power kernel.
+This invokes the improper fundamental theorem with its derivative,
+integrability and boundary-limit premises separately supplied. -/
+theorem logarithmicPowerTailKernel_integral_Ioi
+    (σ : ℝ) (N : ℕ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    (∫ t in Set.Ioi (N : ℝ), logarithmicPowerTailKernel σ t) =
+      (N : ℝ) ^ (1 - σ) *
+        (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
+  have hderiv :
+      ∀ t ∈ Set.Ici (N : ℝ),
+        HasDerivAt (logarithmicPowerTailPrimitive σ)
+          (logarithmicPowerTailKernel σ t) t := by
+    intro t ht
+    apply logarithmicPowerTailPrimitive_hasDerivAt σ t hσ
+    have hNpos : (0 : ℝ) < (N : ℝ) := by exact_mod_cast (show 0 < N by omega)
+    exact lt_of_lt_of_le hNpos ht
+  have hftc :=
+    MeasureTheory.integral_Ioi_of_hasDerivAt_of_tendsto'
+      hderiv (logarithmicPowerTailKernel_integrableOn_Ioi σ N hσ hN)
+      (logarithmicPowerTailPrimitive_tendsto_zero σ hσ)
+  simpa [logarithmicPowerTailPrimitive] using hftc
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
