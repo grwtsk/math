@@ -1,0 +1,78 @@
+{
+  "schema": "grwtsk.codec-serialization-audit-requirements/1",
+  "attribution": "grwtsk contributors",
+  "classification": "STATIC_REQUIREMENTS_NOT_RECEIPT",
+  "source_commit": "64ea27ed54049e415c16e33174484612f679648a",
+  "contracts": [
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Codec/Variant8136e4b65fdd2b32c0a6c3485ceef6e5dc6876cec11df03ccdbeff9110e9fadd.lean",
+      "blob": "86b5bba51d09e998df3d5a8c27cc5c4fa9b3b862",
+      "sha256": "8136e4b65fdd2b32c0a6c3485ceef6e5dc6876cec11df03ccdbeff9110e9fadd",
+      "required_module_declarations": [
+        "DAF.LeftInverseCodec",
+        "DAF.LeftInverseCodec.encode",
+        "DAF.LeftInverseCodec.decode",
+        "DAF.LeftInverseCodec.decode_encode",
+        "DAF.LeftInverseCodec.encode_injective",
+        "DAF.LeftInverseCodec.ValidOutput",
+        "DAF.LeftInverseCodec.ValidOutputType",
+        "DAF.LeftInverseCodec.encode_decode_of_valid",
+        "DAF.LeftInverseCodec.sourceEquivValidOutput"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module_expected_types": {
+        "DAF.LeftInverseCodec.encode_decode_of_valid": "\u2200 {Source : Type u} {Encoded : Type v} (C : DAF.LeftInverseCodec Source Encoded) {encoded : Encoded}, C.ValidOutput encoded \u2192 Option.map C.encode (C.decode encoded) = some encoded",
+        "DAF.LeftInverseCodec.encode_injective": "\u2200 {Source : Type u} {Encoded : Type v} (C : DAF.LeftInverseCodec Source Encoded), Function.Injective C.encode",
+        "DAF.LeftInverseCodec.sourceEquivValidOutput": "\u2200 {Source : Type u} {Encoded : Type v} (C : DAF.LeftInverseCodec Source Encoded), Source \u2243 C.ValidOutputType"
+      },
+      "universes": [
+        "u",
+        "v"
+      ]
+    },
+    {
+      "source": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Serialization/Variantd5c802d5af8f0ca6a60779f85c22bc89dd023ccc8550edd11c1d2b611323658e.lean",
+      "blob": "8ce11b3293ef2c90c9b88da8ff40cc4ce8a44246",
+      "sha256": "fd68db684f3f0660ac915dd9ecbfd94ab34468900c27f027eb1e55f19c540483",
+      "required_module_declarations": [
+        "FilesystemCodec.FramedBytes",
+        "FilesystemCodec.CanonicalSerializer",
+        "FilesystemCodec.CanonicalSerializer.Valid",
+        "FilesystemCodec.CanonicalSerializer.encode_injective"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module_expected_types": {
+        "FilesystemCodec.CanonicalSerializer.Valid": "\u2200 {Snapshot : Type u} (S : FilesystemCodec.CanonicalSerializer Snapshot), FilesystemCodec.FramedBytes \u2192 Prop",
+        "FilesystemCodec.CanonicalSerializer.encode_injective": "\u2200 {Snapshot : Type u} (S : FilesystemCodec.CanonicalSerializer Snapshot), Function.Injective S.encode"
+      },
+      "universes": [
+        "u"
+      ]
+    }
+  ],
+  "required_gates": [
+    "Fresh trust-zero warnings-as-errors compilation of both project modules and all 125 pinned upstream source modules",
+    "Complete compiler-origin root/axiom census including all thirteen required structural roots and every additional compiler-owned declaration",
+    "Five exact type expressions in two fresh importing consumers after the same-source complete ownership/axiom qualifications",
+    "Retain partial decoder behavior outside encoder image, arbitrary source/encoded universes, abstract framing policy and all declared left-inverse hypotheses",
+    "Retain unsafe/native/unknown-body observations and separate abstract source laws from live filesystem or runtime implementation refinement",
+    "Resolve full PacketRing, Blocks, Galois, Avalanche and SAT source bindings before ring-observer acceptance"
+  ],
+  "exact_type_expressions": 5,
+  "fresh_type_modules": 2,
+  "native_compile": "NOT_RUN",
+  "compiler_origin_qualification": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axiom_acceptance": "NOT_RUN",
+  "exact_type_execution": "NOT_RUN",
+  "whole_ring_closure": "BLOCKED_MISSING_PACKETRING",
+  "scope": "Arbitrary source/encoded types and a supplied left-inverse codec; equivalence with encoder image only; no guarantee for arbitrary byte arrays or live filesystem implementation"
+}
