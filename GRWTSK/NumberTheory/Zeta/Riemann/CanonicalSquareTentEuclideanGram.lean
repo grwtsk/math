@@ -598,4 +598,33 @@ theorem squareTentMangoldt_ge_of_relative_gap_and_source_lower
   exact (mul_le_mul_of_nonneg_left hB hδ).trans
     (squareTentMangoldt_ge_fraction_of_moment_gap n δ hδ hgap)
 
+/-! ## A certified source witness for a relative moment deficit
+
+Rather than postulating a relative gap, a single actual von Mangoldt
+term in the open square window supplies an explicit (possibly small)
+gap. This is not a uniform-in-n estimate.
+-/
+
+/-- A positive term in the actual square-window inventory forces a
+strict first-moment gap, retaining prime powers and both cutoffs. -/
+theorem squareAbsoluteMoment_lt_radius_mul_source_of_witness
+    (n m : ℕ)
+    (hm : m ∈ Finset.Ioc (n ^ 2) ((n + 1) ^ 2))
+    (hinside : m < (n + 1) ^ 2)
+    (hLambda : 0 < ArithmeticFunction.vonMangoldt m) :
+    squareAbsoluteMoment n <
+      squareRadius n * squareIncrement n := by
+  have hw : 0 < squareWeight n m :=
+    (squareWeight_pos_iff n m).mpr
+      ⟨(Finset.mem_Ioc.mp hm).1, hinside⟩
+  have hterm : 0 < ArithmeticFunction.vonMangoldt m * squareWeight n m :=
+    mul_pos hLambda hw
+  have hmass : 0 < squareTentMangoldt n := by
+    unfold squareTentMangoldt
+    exact Finset.sum_pos' (fun k hk =>
+      mul_nonneg ArithmeticFunction.vonMangoldt_nonneg
+        (squareWeight_nonneg n k)) ⟨m, hm, hterm⟩
+  have hgap := (squareTentMangoldt_pos_iff_moment_strict n).mp hmass
+  simpa only [mul_comm] using hgap
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
