@@ -51,6 +51,10 @@ theorem exact_zero_gain_converges_after_one_step
     (initialDefect : Nat)
     (n : Nat) :
     constantAffineBound 0 0 initialDefect (n + 1) = 0 := by
-  simp only [constantAffineBound_succ, Nat.zero_mul, Nat.zero_add]
+  calc
+    constantAffineBound 0 0 initialDefect (n + 1) =
+        0 * constantAffineBound 0 0 initialDefect n + 0 := rfl
+    _ = 0 * constantAffineBound 0 0 initialDefect n := Nat.add_zero _
+    _ = 0 := Nat.zero_mul _
 
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
