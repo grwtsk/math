@@ -679,9 +679,10 @@ theorem dirichletVonMangoldt_LSeries_term_pos
     LSeries.term (dirichletVonMangoldtCoefficient q χ) s n =
       dirichletVonMangoldtCoefficient q χ n * ((n : ℂ) ^ (-s)) := by
   have hn0 : n ≠ 0 := Nat.ne_of_gt hn
-  rw [LSeries.term_of_ne_zero hn0]
-  rw [div_eq_mul_inv, ← cpow_neg]
-  
+  simpa only [LSeries.term_of_ne_zero hn0, cpow_neg, div_eq_mul_inv] using
+    (show dirichletVonMangoldtCoefficient q χ n / (n : ℂ) ^ s =
+      dirichletVonMangoldtCoefficient q χ n * ((n : ℂ) ^ (-s)) by
+      rw [cpow_neg, div_eq_mul_inv])
 
 /-- In the open half-plane of absolute convergence, the actual
 Mathlib L-series is its first N+1 terms plus the shifted tail. -/
