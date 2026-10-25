@@ -199,4 +199,139 @@ theorem spectralFiniteMatrix_adjoint_strict_contraction [DecidableEq ι]
       (Finset.univ : Finset ι) (Finset.univ : Finset ι)
       (spectralFiniteMatrix a) (γ ^ 2) (sq_pos_of_pos hγ)
 
+/-!
+## Complementary-sector completeness and a proper-sector obstruction
+
+Local mathematical attribution: grwtsk contributors (2026).
+SOURCE_PROOF_CANDIDATES / NOT_RUN / NOT_KERNEL_AUDITED.
+The frame and its full finite coordinate family remain explicit. No physical
+Yang-Mills operator, gauge-invariant sector or continuum limit is identified.
+-/
+
+namespace Model
+
+/-- Bounds on both complementary masks cover every spectral coordinate. -/
+theorem eigenvalue_lower_of_complementary_masks
+    (M : Model ι E) (mask : ι → Bool) (γ : ℝ)
+    (hselected : ∀ i, mask i = true → γ ≤ M.eigenvalue i)
+    (hcomplement : ∀ i, complementMask mask i = true → γ ≤ M.eigenvalue i) :
+    ∀ i, γ ≤ M.eigenvalue i := by
+  intro i
+  cases hi : mask i
+  · exact hcomplement i (by simp [complementMask, hi])
+  · exact hselected i hi
+
+/-- A positive gap on both complete masks gives global heat damping;
+the multiplier is strictly below one at every positive time. -/
+theorem heat_gap_contracts_of_complementary_masks
+    (M : Model ι E) (mask : ι → Bool) {γ t : ℝ} (hγ : 0 < γ)
+    (hselected : ∀ i, mask i = true → γ ≤ M.eigenvalue i)
+    (hcomplement : ∀ i, complementMask mask i = true → γ ≤ M.eigenvalue i)
+    (x : E) (ht : 0 ≤ t) :
+    M.pairing (M.heat t x) (M.heat t x) ≤
+        Real.exp (-2 * t * γ) * M.pairing x x ∧
+      (0 < t → Real.exp (-2 * t * γ) < 1) := by
+  constructor
+  · exact M.heat_gap_contracts x ht
+      (fun i _ => M.eigenvalue_lower_of_complementary_masks mask γ hselected hcomplement i)
+  · intro htpos
+    apply Real.exp_lt_one_iff.mpr
+    nlinarith [mul_pos htpos hγ]
+
+end Model
+
+/-- The identity frame with eigenvalues zero at false and one at true. -/
+noncomputable def properSectorZeroModel : Model Bool (Bool → ℝ) where
+  frame := LinearEquiv.refl ℝ (Bool → ℝ)
+  operator := spectralOperator (fun i : Bool => if i then 1 else 0)
+  eigenvalue := fun i => if i then 1 else 0
+  eigenvalue_nonneg := by intro i; cases i <;> norm_num
+  diagonalizes := by ext x i; rfl
+
+/-- The nonzero vector in the complementary zero-eigenvalue coordinate. -/
+def zeroComplementVector : Bool → ℝ := fun i => if i then 0 else 1
+
+theorem properSector_selected_gap :
+    ∀ i : Bool, i = true → 1 ≤ properSectorZeroModel.eigenvalue i := by
+  intro i hi
+  cases i
+  · cases hi
+  · norm_num [properSectorZeroModel]
+
+theorem properSector_projected_support (x : Bool → ℝ) :
+    properSectorZeroModel.SupportedAbove 1
+      (properSectorZeroModel.sectorProjector (fun i => i) x) := by
+  intro i hi
+  cases i
+  · exact False.elim (hi (by
+      simp [properSectorZeroModel, Model.sectorProjector, maskProjector,
+        diagonal, LinearMap.comp_apply]))
+  · norm_num [properSectorZeroModel]
+
+theorem properSector_heat_gap (x : Bool → ℝ) {t : ℝ} (ht : 0 ≤ t) :
+    properSectorZeroModel.pairing
+        (properSectorZeroModel.heat t (properSectorZeroModel.sectorProjector (fun i => i) x))
+        (properSectorZeroModel.heat t (properSectorZeroModel.sectorProjector (fun i => i) x)) ≤
+      Real.exp (-2 * t * 1) * properSectorZeroModel.pairing
+        (properSectorZeroModel.sectorProjector (fun i => i) x)
+        (properSectorZeroModel.sectorProjector (fun i => i) x) :=
+  properSectorZeroModel.heat_gap_contracts _ ht (properSector_projected_support x)
+
+theorem zeroComplementVector_ne_zero : zeroComplementVector ≠ 0 := by
+  intro h
+  have hf := congrFun h false
+  norm_num [zeroComplementVector] at hf
+
+theorem zeroComplementVector_projected_zero :
+    properSectorZeroModel.sectorProjector (fun i => i) zeroComplementVector = 0 := by
+  funext i
+  cases i <;> simp [properSectorZeroModel, Model.sectorProjector, maskProjector,
+    diagonal, LinearMap.comp_apply, zeroComplementVector]
+
+theorem properSector_projector_ne_zero :
+    properSectorZeroModel.sectorProjector (fun i => i) ≠ 0 := by
+  intro h
+  have hf := congrArg (fun L : (Bool → ℝ) →ₗ[ℝ] (Bool → ℝ) => L (fun _ => 1) true) h
+  norm_num [properSectorZeroModel, Model.sectorProjector, maskProjector,
+    diagonal, LinearMap.comp_apply] at hf
+
+theorem properSector_projector_ne_id :
+    properSectorZeroModel.sectorProjector (fun i => i) ≠ LinearMap.id := by
+  intro h
+  have hz : properSectorZeroModel.sectorProjector (fun i => i) zeroComplementVector =
+      zeroComplementVector := by rw [h]; rfl
+  rw [zeroComplementVector_projected_zero] at hz
+  exact zeroComplementVector_ne_zero hz.symm
+
+theorem zeroComplementVector_operator_zero :
+    properSectorZeroModel.operator zeroComplementVector = 0 := by
+  funext i
+  cases i <;> simp [properSectorZeroModel, spectralOperator, diagonal, zeroComplementVector]
+
+theorem zeroComplementVector_heat_fixed (t : ℝ) :
+    properSectorZeroModel.heat t zeroComplementVector = zeroComplementVector :=
+  properSectorZeroModel.heat_fixed_of_operator_eq_zero zeroComplementVector_operator_zero t
+
+theorem properSector_no_full_positive_gap {γ : ℝ} (hγ : 0 < γ) :
+    ¬ ∀ i, γ ≤ properSectorZeroModel.eigenvalue i := by
+  intro h
+  have hf : γ ≤ 0 := by simpa [properSectorZeroModel] using h false
+  exact (not_le_of_gt hγ) hf
+
+theorem properSector_no_global_heat_gap {γ t : ℝ} (hγ : 0 < γ) (ht : 0 < t) :
+    ¬ ∀ x : Bool → ℝ,
+      properSectorZeroModel.pairing (properSectorZeroModel.heat t x)
+          (properSectorZeroModel.heat t x) ≤
+        Real.exp (-2 * t * γ) * properSectorZeroModel.pairing x x := by
+  intro h
+  have hv := h zeroComplementVector
+  simp only [zeroComplementVector_heat_fixed] at hv
+  have hp : properSectorZeroModel.pairing zeroComplementVector zeroComplementVector = 1 := by
+    norm_num [Model.pairing, properSectorZeroModel, zeroComplementVector, dot]
+  simp only [hp, mul_one] at hv
+  have he : Real.exp (-2 * t * γ) < 1 := by
+    apply Real.exp_lt_one_iff.mpr
+    nlinarith [mul_pos ht hγ]
+  exact (not_le_of_gt he) hv
+
 end GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat
