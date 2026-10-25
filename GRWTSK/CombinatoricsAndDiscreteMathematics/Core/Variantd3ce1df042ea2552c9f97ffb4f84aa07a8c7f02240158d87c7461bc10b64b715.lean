@@ -1,5 +1,7 @@
-import BitMatrix.Core.Basic
-import Quantization.Resolution
+-- Explicit retained providers for the complete packet dependency chain.
+-- Mathematical declarations, hypotheses and proof bodies are unchanged.
+import GRWTSK.Algebra.LinearAlgebra.Basic.Variant41f0242ace5e0ac7cfa9f6f682cebf8a255f8dde450dc87bbdc6788183dccfe2
+import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Resolution.Variant2f85d0a528643fe195fab7eb73b0020edcfd6ca18802bffe62d32c49f716f6ee
 import Batteries.Data.Nat.Lemmas
 import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Tactic
