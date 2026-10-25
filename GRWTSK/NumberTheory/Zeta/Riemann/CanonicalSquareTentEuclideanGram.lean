@@ -792,4 +792,55 @@ theorem relative_moment_gap_of_central_mass
           ArithmeticFunction.vonMangoldt_nonneg
   exact relative_moment_gap_of_witness_budget n S (η * δ) hS hbudget
 
+/-! ## Explicit central window with a geometric weight floor
+
+The central witness inventory is defined using the exact square center
+and radius, rather than a surrogate interval. The remaining source
+hypothesis is a genuine arithmetic mass fraction on this inventory.
+-/
+
+/-- Natural indices in the true square window whose distance from the
+square center is at most half the original radius. -/
+def centralSquareWitnesses (n : ℕ) : Finset ℕ :=
+  (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter
+    (fun m => |(m : ℝ) - squareCenter n| ≤ squareRadius n / 2)
+
+/-- The central inventory is an actual subset of the original source
+inventory, with the same open-left/closed-right endpoints. -/
+theorem centralSquareWitnesses_subset (n : ℕ) :
+    centralSquareWitnesses n ⊆
+      Finset.Ioc (n ^ 2) ((n + 1) ^ 2) := by
+  intro m hm
+  exact (Finset.mem_filter.mp hm).1
+
+/-- The exact triangular weight is at least one half throughout
+the central inventory, including all genuine arithmetic indices. -/
+theorem centralSquareWitnesses_weight_half (n : ℕ)
+    (m : ℕ) (hm : m ∈ centralSquareWitnesses n) :
+    (1 / 2 : ℝ) ≤ squareWeight n m := by
+  have hi := (Finset.mem_filter.mp hm).1
+  have hcenter := (Finset.mem_filter.mp hm).2
+  rw [squareWeight_eq_one_sub_abs_div_radius n m hi]
+  have hr := squareRadius_pos n
+  have hratio :
+      |(m : ℝ) - squareCenter n| / squareRadius n ≤ 1 / 2 :=
+    (div_le_iff₀ hr).mpr (by linarith)
+  linarith
+
+/-- A central-window mass fraction δ of the complete source
+automatically supplies a relative first-moment deficit δ/2.
+The central mass fraction itself remains an open arithmetic input. -/
+theorem relative_moment_gap_of_centralSquareWitnesses
+    (n : ℕ) (δ : ℝ)
+    (hsource : δ * squareIncrement n ≤
+      ∑ m ∈ centralSquareWitnesses n,
+        ArithmeticFunction.vonMangoldt m) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  exact relative_moment_gap_of_central_mass n
+    (centralSquareWitnesses n) (1 / 2) δ
+    (by norm_num) (centralSquareWitnesses_subset n)
+    (centralSquareWitnesses_weight_half n) hsource
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
