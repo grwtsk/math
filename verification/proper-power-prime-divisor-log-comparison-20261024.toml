@@ -4,9 +4,9 @@ request_id = "proper-power-prime-divisor-log-comparison-20261024"
 priority = "P0"
 repository = "grwtsk/math"
 branch = "main"
-source_commit = "95c1e4da0e948d27b0bc6b5255cfa7dbaa679ea1"
+source_commit = "e0e43b5e9d089b7adebdca7a346aaa50cedc3421"
 source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogComparison.lean"
-source_blob = "7aeeefd40c612814a18075861560e34f0bdae6c4"
+source_blob = "761bf0e22b0dbb698d58b4d6acacd33aee55c2f0"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 status = "NOT_RUN"
@@ -16,6 +16,7 @@ execution_authorized = false
 remote_dispatch_authorized = false
 merge_authorized = false
 declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison.primeDivisorLogMass_le_log_radical",
  "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison.primeDivisorLogMass_le_log",
 ]
 direct_imports = [
@@ -24,8 +25,8 @@ direct_imports = [
 exact_hypotheses = "q N : Nat; q != 0"
 mathematical_class = "finite_arithmetic_source_candidate"
 missing_suppliers = [
- "Compose with nonunitProperPowerMass <= Nat.log2 N * D(q,N)",
- "Confirm Real.log_le_log API, casts and full radical log chain",
+ "Optionally sharpen the downstream proper-power bound to Nat.log2 N * log(radical q)",
+ "Confirm elaboration of the pinned Real.log_le_log API, casts and upstream radical log proof"
  "Pinned Lean compilation, fresh kernel checking and transitive axiom audit",
 ]
 transitive_import_closure = "PENDING_SOURCE_INVENTORY"
@@ -36,4 +37,4 @@ source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Pri
 compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison"
 elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogComparison.lean"
 fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
-transitive_axioms = "PENDING_EXACT_DECLARATIONS"
+transitive_axioms = "PENDING_CHECKER_CAPABILITY_DISCOVERY_FOR_BOTH_DECLARATIONS"

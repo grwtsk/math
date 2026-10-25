@@ -19,15 +19,24 @@ open GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeFactorLogBound
 open GRWTSK.NumberTheory.Primes.GoldbachProperPowerRadicalLog
 open GRWTSK.NumberTheory.Primes.GoldbachProperPowerRadicalBound
 
-/-- The finite truncated prime-divisor log weight is at most log q. -/
-theorem primeDivisorLogMass_le_log (q N : ℕ) (hq : q ≠ 0) :
-    primeDivisorLogMass q N ≤ Real.log (q : ℝ) := by
+/-- For a nonzero modulus, truncated prime-divisor logarithmic mass is
+bounded by the logarithm of its squarefree radical. The hypothesis excludes
+q = 0, whose finite prime-divisor support is not a subset of 0.primeFactors. -/
+theorem primeDivisorLogMass_le_log_radical (q N : ℕ) (hq : q ≠ 0) :
+    primeDivisorLogMass q N ≤ Real.log (Nat.radical q : ℝ) := by
   calc
     primeDivisorLogMass q N ≤
         ∑ p ∈ q.primeFactors, Real.log (p : ℝ) :=
       primeDivisorLogMass_le_primeFactors_sum q N hq
     _ = Real.log (Nat.radical q : ℝ) :=
       primeFactors_log_sum_eq_log_radical q
+
+/-- The finite truncated prime-divisor log weight is at most log q. -/
+theorem primeDivisorLogMass_le_log (q N : ℕ) (hq : q ≠ 0) :
+    primeDivisorLogMass q N ≤ Real.log (q : ℝ) := by
+  calc
+    primeDivisorLogMass q N ≤ Real.log (Nat.radical q : ℝ) :=
+      primeDivisorLogMass_le_log_radical q N hq
     _ ≤ Real.log (q : ℝ) := by
       apply Real.log_le_log
       · exact_mod_cast Nat.radical_pos q
