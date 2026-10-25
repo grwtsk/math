@@ -35,9 +35,9 @@ lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 # These values identify the authored source snapshot, not acceptance receipts.
-source_snapshot_commit = "b1aca3b6d36281f10b1fb0e82cab4d82e262637d"
-source_snapshot_tree = "13064de38132f35d8c1ff1c82db1665571fd3991"
-diagnostics_blob = "77508e5ff9e87cbaefe851406b16b4f16b979dcc"
+source_snapshot_commit = "492ac421c424265ae72956a4c9e3b6efee34bf16"
+source_snapshot_tree = "556fe5654117b680c827b434dc0e9ac46beb5c74"
+diagnostics_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
 examples_blob = "d9e2fd5be2eb2fd8be5eccb90e9c87088c651857"
 exposition_blob = "7f38dbcdf114a8cb4752d7ed7393ae026b3a0883"
 lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
@@ -96,9 +96,15 @@ required_heads = [
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.bool_indexed_transport_sound",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.bool_indexed_proof_status",
   "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.composed_catalog_transport_sound",
-  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.changed_blob_blocks_source_preserving_transport"
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.changed_blob_blocks_source_preserving_transport",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.meaning",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.forwardStanding",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CrossSourceComparison.statement",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.asCrossSourceComparison"
 ]
 complete_module_declaration_inventory_required = true
+
 
 [trust]
 allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
@@ -152,6 +158,18 @@ explicit_coverage_of_different_source_identities = false
 different_sources_require_separate_adapter = true
 composition_preserves_source_and_target_indices = true
 lean_kernel_proof_of_new_transport_not_yet_observed = true
+
+[cross_source_comparison]
+status = "SOURCE_CANDIDATE_NOT_RUN"
+different_source_identities_retained = true
+proof_of_semantic_implication_required = true
+strict_source_equality_not_required = true
+distinct_source_example_not_integrated = true
+prior_example_write_blocked = true
+core_source_blob = "8d3a91a8084983016ea5b37868f6d8beb8e53436"
+compiler = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axioms = "NOT_RUN"
 
 [verification_status]
 source_inspected = true
