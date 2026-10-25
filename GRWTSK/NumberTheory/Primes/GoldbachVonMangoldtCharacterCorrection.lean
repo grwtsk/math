@@ -8,6 +8,7 @@ import Mathlib.Analysis.SpecialFunctions.Log.Monotone
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+import Mathlib.Analysis.SumIntegralComparisons
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -507,5 +508,29 @@ theorem logarithmicPowerTailKernel_integral_Ioi
       hderiv (logarithmicPowerTailKernel_integrableOn_Ioi σ N hσ hN)
       (logarithmicPowerTailPrimitive_tendsto_zero σ hσ)
   simpa [logarithmicPowerTailPrimitive] using hftc
+
+
+/-- Explicit upper bound for the reindexed logarithmic Dirichlet
+series tail beyond N. No cancellation or zero-free region is used. -/
+theorem logarithmicPowerTailKernel_tsum_add_le
+    (σ : ℝ) (N : ℕ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    (∑' n : ℕ, logarithmicPowerTailKernel σ ((n + N + 1 : ℕ) : ℝ)) ≤
+      (N : ℝ) ^ (1 - σ) *
+        (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
+  have hanti :
+      AntitoneOn (logarithmicPowerTailKernel σ) (Set.Ici (N : ℝ)) :=
+    (logarithmicPowerTailKernel_antitoneOn_three σ hσ).mono
+      (Set.Ici_subset_Ici.mpr (by exact_mod_cast hN))
+  have hnonneg :
+      ∀ t ∈ Set.Ioi (N : ℝ), 0 ≤ logarithmicPowerTailKernel σ t := by
+    intro t ht
+    apply logarithmicPowerTailKernel_nonneg
+    exact le_trans (by exact_mod_cast hN) (le_of_lt ht)
+  calc
+    (∑' n : ℕ, logarithmicPowerTailKernel σ ((n + N + 1 : ℕ) : ℝ)) ≤
+        ∫ t in Set.Ioi (N : ℝ), logarithmicPowerTailKernel σ t :=
+      hanti.tsum_comp_add_le_integral N
+        (logarithmicPowerTailKernel_integrableOn_Ioi σ N hσ hN) hnonneg
+    _ = _ := logarithmicPowerTailKernel_integral_Ioi σ N hσ hN
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
