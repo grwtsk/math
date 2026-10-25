@@ -1,0 +1,31 @@
+schema = "grwtsk.source-verification-requirements/1"
+attribution = "grwtsk contributors"
+issue = 1296
+source = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicProjectionRankStability.lean"
+status = "SOURCE_PROOF_CANDIDATE"
+native_compile = "NOT_RUN"
+kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exact_type_consumers = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+required_declarations = [
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.fixed_of_mem_range",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.zero_of_fixed_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.range_injective_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.finrank_range_le_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.finrank_range_eq_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.lowOperator_finrank_eq_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.lowProjector_rank_eq_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.low_index_count_eq_of_norm_sub_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicProjectionRankStability.arithmetic_lowProjector_rank_eq_of_norm_sub_lt_one",
+]
+required_gates = [
+  "Fresh immutable project and upstream import closure with pinned toolchain and manifest",
+  "Complete compiler-origin module census including private, generated and instance declarations",
+  "Every required structural declaration name and transitive axiom closure",
+  "All nine independently authored exact types in a fresh qualified importing module",
+  "Affected importers and the root GRWTSK acceptance gate remain separate obligations",
+]
+scope = "Finite rank equality under the explicit norm bound on the actual projections; all eigenvalue indices and multiplicities retained"
+missing_bridge = "Derive projector-norm distance below one from actual Hamiltonian perturbation and spectral separation; no such supplier is assumed or proved here"
+excluded_inferences = ["Whole-space positive gap", "Nonzero high sector", "Identified vacuum", "Infinite-volume operator identification", "RH", "Physical Yang-Mills mass"]
