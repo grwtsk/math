@@ -4,7 +4,8 @@ request_id = "proper-power-positive-modulus-bound-20261024"
 priority = "P0"
 repository = "grwtsk/math"
 branch = "main"
-source_commit = "7ae1a6175e7c1625640bd14bd474af57121987eb"
+source_commit = "e963e8f86f37b173f784dc5458aecbe0fcf52189"
+theorem_authoring_commit = "7ae1a6175e7c1625640bd14bd474af57121987eb"
 source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean"
 source_blob = "7afdd6851153ce626fbb977664457bd5a5851383"
 lean_toolchain = "leanprover/lean4:v4.33.0"
@@ -29,8 +30,15 @@ upstream_mass_bound_source_blob = "ad7175e02ccab0fec9747a4fb4dad5e7491e7ee7"
 upstream_radical_comparison_source_blob = "761bf0e22b0dbb698d58b4d6acacd33aee55c2f0"
 upstream_radical_bound_source_blob = "ba239003cf9b2ba7cc76fde3e4b885e7923fb513"
 source_review = "STATIC_ONLY_NO_ELABORATION"
+transitive_import_repair_source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean"
+transitive_import_repair_commit = "e963e8f86f37b173f784dc5458aecbe0fcf52189"
+transitive_import_repair_blob = "22adf2e6eca3979a5680b29fa5bae18b35aaabe0"
+transitive_import_repair_detail = "Corrected import Mathlib.Data/ZMod/Basic to Mathlib.Data.ZMod.Basic; pinned upstream Mathlib file exists and contains ZMod.isUnit_iff_coprime"
+known_transitive_import_path = "PositiveModulusBound -> PrimeDivisorMassBound -> PrimeDivisorLog -> LogMassUpperBound -> ExponentMassComposition -> MassBridgeUnconditional -> NonunitSupport -> PrimeDivisor -> UnitCoprime"
+
 missing_suppliers = [
  "Pinned Lean compilation of full transitive proper-power mass and radical chains, including Real.log_prod cast normalization",
+ "Confirm elaboration of repaired transitive ZMod unit-coprimality supplier at new checkout pin",
  "Fresh kernel checking and transitive axiom audit",
  "No prime-counting error, Dirichlet character cancellation, or density transfer without independent quantitative suppliers",
 ]
@@ -38,8 +46,11 @@ transitive_import_closure = "PENDING_SOURCE_INVENTORY"
 receipts = "NOT_RUN"
 
 [checks]
-source_identity = "test \"$(git rev-parse HEAD)\" = 7ae1a6175e7c1625640bd14bd474af57121987eb && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean)\" = 7afdd6851153ce626fbb977664457bd5a5851383"
+source_identity = "test \"$(git rev-parse HEAD)\" = e963e8f86f37b173f784dc5458aecbe0fcf52189 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean)\" = 7afdd6851153ce626fbb977664457bd5a5851383 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean)\" = 22adf2e6eca3979a5680b29fa5bae18b35aaabe0"
 compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound"
+import_supplier_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerUnitCoprime"
+import_supplier_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean"
+log_comparison_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison"
 elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean"
 fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
 transitive_axioms = "PENDING_BOTH_DECLARATIONS_AND_DOWNSTREAM_CONSUMERS"
