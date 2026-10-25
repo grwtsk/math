@@ -14,8 +14,8 @@ sources: [{"key": "L44", "locator": "Michael Artin, MIT 18.702 Spring 2011 sylla
 warrant: {"literary": "Established subject terminology supported by the registered author, publisher and course sources; their inspected scope and conventions remain explicit.", "user": "Retrieve algebraic structure and scalar restrictions without depending on repository filenames.", "organizational": "Separate subject specialization, object equality, software artifacts, proof evidence and attribution."}
 status: {"editorial": "proposed", "mathematical_novelty": "not_claimed", "proof": "not_applicable", "attribution": "local_editorial_text", "operational_permission": "not_conferred"}
 rights: {"local_prose": "MIT", "source_reuse": "reference_only"}
-revision_history: [{"version": "0.10-pilot", "date": "2026-10-20", "change": "Original local subject record with proposed parentage and explicit conventions."}]
-proposal_refs: ["urn:uuid:c5134679-7a75-4f0d-9aee-4ecd34cc581f"]
+revision_history: [{"version": "0.10-pilot", "date": "2026-10-20", "change": "Original local subject record with proposed parentage and explicit conventions."}, {"version": "2026-10-25-form-navigation", "date": "2026-10-25", "change": "Add proposed bilinear/quadratic form browse link; preserve definition and scope."}]
+proposal_refs: ["urn:uuid:c5134679-7a75-4f0d-9aee-4ecd34cc581f", "urn:uuid:9302bac7-b930-46d0-a980-1fd4b95f1d25"]
 decision_refs: ["D01", "D03", "D04", "D14"]
 ---
 # Linear algebra
@@ -32,7 +32,7 @@ The default scalar system here is a specified commutative field. Both finite-dim
 
 ## Browse
 
-Selected division criterion: Principal object of study. Browse [Vector space theory (over fields)](VectorSpaces/index.md), [Matrix theory (over fields)](MatrixTheory/index.md).
+Selected division criterion: Principal object of study. Browse [Vector space theory (over fields)](VectorSpaces/index.md), [Matrix theory (over fields)](MatrixTheory/index.md), [Bilinear and quadratic form theory](BilinearAndQuadraticForms/index.md).
 
 ## Example and boundary
 
