@@ -622,4 +622,21 @@ theorem norm_dirichletVonMangoldtCoefficient_mul_cpow_le
   exact mul_le_mul_of_nonneg_right
     (norm_dirichletVonMangoldtCoefficient_le_log q n χ) hpow
 
+
+/-- Shifted absolute Dirichlet terms are summable in the open
+right half-plane, by the established logarithmic majorant. -/
+theorem summable_norm_dirichletVonMangoldt_shifted
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (s : ℂ) (hs : 1 < s.re) :
+    Summable (fun k : ℕ =>
+      ‖dirichletVonMangoldtCoefficient q χ (k + N + 1) *
+        (((k + N + 1 : ℕ) : ℂ) ^ (-s))‖) := by
+  have hmajor : Summable (fun k : ℕ =>
+      logarithmicPowerTailKernel s.re (((k + N + 1 : ℕ) : ℝ))) :=
+    (logarithmicPowerTailKernel_summable_nat s.re hs).comp_injective
+      (fun i j hij => by omega)
+  apply Summable.of_nonneg_of_le (fun _ => norm_nonneg _) (fun k => ?_) hmajor
+  exact norm_dirichletVonMangoldtCoefficient_mul_cpow_le q (k + N + 1) χ s
+    (by omega)
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
