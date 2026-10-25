@@ -533,4 +533,19 @@ theorem logarithmicPowerTailKernel_tsum_add_le
         (logarithmicPowerTailKernel_integrableOn_Ioi σ N hσ hN) hnonneg
     _ = _ := logarithmicPowerTailKernel_integral_Ioi σ N hσ hN
 
+
+/-- Finite reindexing of the strict tail: the terms numbered
+N+1,...,N+K coincide with the first K shifted terms.
+An infinite-tsum identification requires its own summability bridge. -/
+theorem logarithmicPowerTailKernel_sum_Ico_eq_range
+    (σ : ℝ) (N K : ℕ) :
+    (∑ n ∈ Finset.Ico (N + 1) (N + 1 + K),
+      logarithmicPowerTailKernel σ (n : ℝ)) =
+    ∑ k ∈ Finset.range K,
+      logarithmicPowerTailKernel σ ((k + N + 1 : ℕ) : ℝ) := by
+  rw [Finset.sum_Ico_eq_sum_range]
+  congr 1
+  ext k
+  simp only [add_assoc, add_comm, add_left_comm]
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
