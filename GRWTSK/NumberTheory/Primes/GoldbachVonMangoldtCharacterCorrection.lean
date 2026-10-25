@@ -432,4 +432,16 @@ theorem logarithmicPowerTailPrimitive_log_isLittleO
     Real.log =o[Filter.atTop] (fun t : ℝ => t ^ ((σ - 1) / 2)) := by
   exact Real.isLittleO_log_rpow_atTop (show 0 < (σ - 1) / 2 by linarith)
 
+
+/-- The logarithmic factor divided by its positive-power benchmark
+vanishes at infinity. This is the ratio consequence of the
+already pinned little-o estimate, before multiplication by the
+remaining negative power. -/
+theorem logarithmicPowerTailPrimitive_log_ratio_tendsto_zero
+    (σ : ℝ) (hσ : 1 < σ) :
+    Filter.Tendsto
+      (fun t : ℝ => Real.log t / t ^ ((σ - 1) / 2))
+      Filter.atTop (nhds (0 : ℝ)) := by
+  exact (logarithmicPowerTailPrimitive_log_isLittleO σ hσ).tendsto_div_nhds_zero
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
