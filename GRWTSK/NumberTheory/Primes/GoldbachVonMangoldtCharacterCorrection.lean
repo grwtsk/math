@@ -548,4 +548,23 @@ theorem logarithmicPowerTailKernel_sum_Ico_eq_range
   ext k
   simp only [add_assoc, add_comm, add_left_comm]
 
+
+/-- Absolute summability of the real logarithmic-power sequence.
+This supplies the convergence prerequisite for passing from finite
+strict-tail reindexing to a full infinite-tail identity. -/
+theorem logarithmicPowerTailKernel_summable_nat
+    (σ : ℝ) (hσ : 1 < σ) :
+    Summable (fun n : ℕ => logarithmicPowerTailKernel σ (n : ℝ)) := by
+  have hanti :
+      AntitoneOn (logarithmicPowerTailKernel σ) (Set.Ici (3 : ℝ)) :=
+    logarithmicPowerTailKernel_antitoneOn_three σ hσ
+  have hint :
+      IntegrableOn (logarithmicPowerTailKernel σ) (Set.Ioi (3 : ℝ)) :=
+    logarithmicPowerTailKernel_integrableOn_Ioi σ 3 hσ (by omega)
+  have hnonneg :
+      ∀ t ∈ Set.Ioi (3 : ℝ), 0 ≤ logarithmicPowerTailKernel σ t := by
+    intro t ht
+    exact logarithmicPowerTailKernel_nonneg σ t (le_of_lt ht)
+  exact hanti.summable_of_integrableOn_Ioi hint hnonneg
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
