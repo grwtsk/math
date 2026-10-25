@@ -549,7 +549,8 @@ theorem logarithmicPowerTailKernel_tsum_add_le
       ∀ t ∈ Set.Ioi (N : ℝ), 0 ≤ logarithmicPowerTailKernel σ t := by
     intro t ht
     apply logarithmicPowerTailKernel_nonneg
-    exact le_trans (by exact_mod_cast hN) (le_of_lt ht)
+    have hNreal : (3 : ℝ) ≤ (N : ℝ) := by exact_mod_cast hN
+    exact hNreal.trans (le_of_lt ht)
   calc
     (∑' n : ℕ, logarithmicPowerTailKernel σ ((n + N + 1 : ℕ) : ℝ)) ≤
         ∫ t in Set.Ioi (N : ℝ), logarithmicPowerTailKernel σ t :=
