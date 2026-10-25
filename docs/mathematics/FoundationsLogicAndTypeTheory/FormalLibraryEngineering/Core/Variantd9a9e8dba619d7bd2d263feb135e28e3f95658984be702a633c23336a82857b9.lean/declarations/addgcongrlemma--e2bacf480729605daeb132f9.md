@@ -1,0 +1,178 @@
+# addGCongrLemma
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:3beaaf9e4711ee77f1d43fb210fe52dc9b972d7e122580bc58c410e45375170d",
+  "kind": "def",
+  "lexical_name": "addGCongrLemma",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addgcongrlemma--e2bacf480729605daeb132f9",
+  "source": {
+    "blob": "d699139254f5b9e8aca76feedf3c9ea7c32fc88d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 484,
+    "line": 388,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd9a9e8dba619d7bd2d263feb135e28e3f95658984be702a633c23336a82857b9.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:e2bacf480729605daeb132f99d7fc8385beeefee7578f36683e167e60917de24",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd9a9e8dba619d7bd2d263feb135e28e3f95658984be702a633c23336a82857b9.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:3beaaf9e4711ee77f1d43fb210fe52dc9b972d7e122580bc58c410e45375170d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 388–484.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def addGCongrLemma (declName : Name) (stx : Syntax) (kind : AttributeKind) : MetaM Unit :=
+  withReducible do
+  let strict := !stx[1].isNone
+  let forGrw := stx[2].isNone
+  let prio ← getAttrParamOptPrio stx[3]
+  let cinfo ← getConstInfo declName
+  let type := cinfo.type
+  forallTelescope type fun xs type => do
+  -- Special case the unfolding of `Monotone`-like conclusions.
+  if type.getAppFn.constName? matches
+      `Monotone | `Antitone | `StrictMono | `StrictAnti |
+      `MonotoneOn | `AntitoneOn | `StrictMonoOn | `StrictAntiOn then
+    forallTelescope (← withDefault <| unfoldDefinition type) fun xs' type => do
+      gcongrExt.add (← makeGCongrLemma (xs ++ xs') type declName prio strict forGrw) kind
+    return
+  -- If the conclusion is a free variable, it is a lemma like `imp_imp_imp` or `forall_imp`,
+  -- so we revert the last two variables.
+  if type.getAppFn.isFVar then
+    let type ← mkForallFVars xs[(xs.size-2)...xs.size] type
+    gcongrExt.add (← makeGCongrLemma xs.pop.pop type declName prio strict forGrw) kind
+    return
+  try
+    -- Add a `gcongr` lemma in the "normal" way.
+    gcongrExt.add (← makeGCongrLemma xs type declName prio strict forGrw) kind
+  catch e => try
+    match_expr type with
+    | Iff lhs rhs => addIffGCongrLemma prio strict forGrw cinfo xs lhs rhs
+    | _ => addImpGCongrLemma prio strict forGrw cinfo xs type
+  catch _ =>
+    -- If none of the methods work, we throw the error thrown by the "normal" attempt.
+    throw e
+where
+  /-- Assuming the lemma has conslusion `lhs ↔ rhs`, mark one of the implications
+  `lhs → rhs` or `rhs → lhs` as a `gcongr` lemma. -/
+  addIffGCongrLemma (prio : Nat) (strict forGrw : Bool) (cinfo : ConstantInfo)
+      (xs : Array Expr) (lhs rhs : Expr) : MetaM Unit := do
+    try
+      -- Try using the `←` implication.
+      withLocalDeclD `_a rhs fun x => do
+        let gcongrLemma ← makeGCongrLemma (xs.push x) lhs declName prio strict forGrw
+        let auxType ← mkForallFVars (xs.push x) lhs
+        let auxValue ← mkLambdaFVars xs <| mkApp3 (.const ``Iff.mpr []) lhs rhs <|
+          mkAppN (.const declName (cinfo.levelParams.map .param)) xs
+        let auxDeclName ← mkAuxLemma cinfo.levelParams auxType auxValue (kind? := `_gcongr)
+          (forceExpose := true)
+        gcongrExt.add { gcongrLemma with declName := auxDeclName } kind
+    catch _ =>
+      -- Try using the `→` implication.
+      withLocalDeclD `_a lhs fun x => do
+        let gcongrLemma ← makeGCongrLemma (xs.push x) rhs declName prio strict forGrw
+        let auxType ← mkForallFVars (xs.push x) rhs
+        let auxValue ← mkLambdaFVars xs <| mkApp3 (.const ``Iff.mp []) lhs rhs <|
+          mkAppN (.const declName (cinfo.levelParams.map .param)) xs
+        let auxDeclName ← mkAuxLemma cinfo.levelParams auxType auxValue (kind? := `_gcongr)
+          (forceExpose := true)
+        gcongrExt.add { gcongrLemma with declName := auxDeclName } kind
+  /--
+  Mark the lemma as a `gcongr` lemma, using implication as the relation.
+  For example, `Or.imp : (a → c) → (b → d) → a ∨ b → c ∨ d`. In the non-strict case,
+  we want to support such lemmas even if the hypotheses are given in a different order.
+  So, we find the last hypothesis whose head matches that of the conclusion,
+  and move it to the end.
+  -/
+  addImpGCongrLemma (prio : Nat) (strict forGrw : Bool) (cinfo : ConstantInfo)
+      (xs : Array Expr) (type : Expr) : MetaM Unit := do
+    if strict then
+      let some x := xs.back? | failure
+      let type ← mkForallFVars #[x] type
+      let gcongrLemma ← makeGCongrLemma xs.pop type declName prio strict forGrw
+      gcongrExt.add gcongrLemma kind
+    else
+      let .const c _ := type.getAppFn | failure
+      let rec findIdx (i : Nat) (h : i ≤ xs.size) : MetaM (Fin xs.size) :=
+        match i with
+        | 0 => failure
+        | i + 1 => do
+          if (← inferType xs[i]).getAppFn.isConstOf c then
+            return ⟨i, by lia⟩
+          else
+            findIdx i (by lia)
+      let i ← findIdx xs.size xs.size.le_refl
+      let type ← mkForallFVars #[xs[i]] type
+      let xs' :=  xs.eraseIdx i i.isLt
+      let gcongrLemma ← makeGCongrLemma xs' type declName prio strict forGrw
+      if i == xs.size - 1 then
+        -- The argument order is already correct.
+        gcongrExt.add gcongrLemma kind
+      else
+        -- We need to make an auxiliary theorem with the correct argument order.
+        let auxType ← mkForallFVars xs' type
+        let auxValue ← mkLambdaFVars (xs'.push xs[i]) <|
+          mkAppN (.const declName (cinfo.levelParams.map .param)) xs
+        let auxDeclName ← mkAuxLemma cinfo.levelParams auxType auxValue (kind? := `_gcongr)
+          (forceExpose := true)
+        gcongrExt.add { gcongrLemma with declName := auxDeclName } kind
+
+@[inherit_doc gcongrAttr]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd9a9e8dba619d7bd2d263feb135e28e3f95658984be702a633c23336a82857b9.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Core/Variantd9a9e8dba619d7bd2d263feb135e28e3f95658984be702a633c23336a82857b9.lean#L388).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d699139254f5b9e8aca76feedf3c9ea7c32fc88d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

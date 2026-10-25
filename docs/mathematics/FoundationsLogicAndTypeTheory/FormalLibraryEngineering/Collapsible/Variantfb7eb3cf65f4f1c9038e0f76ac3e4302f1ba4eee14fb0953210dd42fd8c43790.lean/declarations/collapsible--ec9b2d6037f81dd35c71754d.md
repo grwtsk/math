@@ -1,0 +1,126 @@
+# Collapsible
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:7eb5ca91672f2e02525d59a5eac0812a14f73c80e9422c25545837564f09efba",
+  "kind": "def",
+  "lexical_name": "Collapsible",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "collapsible--ec9b2d6037f81dd35c71754d",
+  "source": {
+    "blob": "924af55c999f98c9a0a9cb78b9a8046511641cee",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 105,
+    "line": 61,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Collapsible/Variantfb7eb3cf65f4f1c9038e0f76ac3e4302f1ba4eee14fb0953210dd42fd8c43790.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:ec9b2d6037f81dd35c71754dac5ff4008ddd924af9509686df90a5ed4217c557",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Collapsible/Variantfb7eb3cf65f4f1c9038e0f76ac3e4302f1ba4eee14fb0953210dd42fd8c43790.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:7eb5ca91672f2e02525d59a5eac0812a14f73c80e9422c25545837564f09efba`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 61–105.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+def Collapsible : Widget.Module where javascript :=
+r#"
+import * as React from 'react'
+import { InteractiveMessageData } from '@leanprover/infoview'
+const h = React.createElement
+
+export default function (props) {
+  const { summary, body, initiallyOpen } = props
+  const [open, setOpen] = React.useState(!!initiallyOpen)
+  const [everOpened, setEverOpened] = React.useState(!!initiallyOpen)
+  const onClick = e => {
+    // Clicks inside React portals (e.g. pinned tooltips) bubble here through
+    // the React tree, but their DOM nodes live outside the summary.
+    if (!(e.target instanceof Node)) return
+    if (!e.currentTarget.contains(e.target)) return
+    e.preventDefault()
+    setEverOpened(true)
+    setOpen(o => !o)
+  }
+  return h('details', { open },
+    h('summary',
+      { style: { cursor: 'pointer', userSelect: 'none' }, onClick },
+      h(InteractiveMessageData, { msg: summary })),
+    everOpened && h('div',
+      { style: { marginLeft: '1em', marginTop: '0.25em' } },
+      h(InteractiveMessageData, { msg: body })))
+}
+"#
+
+/-- Build a `MessageData` that renders as a collapsible dropdown: `summary` is
+the header and `body` is the `MessageData` revealed when expanded. For example:
+```
+⯈ This is the header!
+```
+may be clicked to expand to
+```
+▼ This is the header!
+  And this is the body.
+```
+
+`initiallyOpen` controls whether the dropdown starts expanded (default `false`).
+
+Note that the `body` is already indented, and e.g. `indentD body` may insert an unwanted extra
+line.
+-/
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Collapsible/Variantfb7eb3cf65f4f1c9038e0f76ac3e4302f1ba4eee14fb0953210dd42fd8c43790.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Collapsible/Variantfb7eb3cf65f4f1c9038e0f76ac3e4302f1ba4eee14fb0953210dd42fd8c43790.lean#L61).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `924af55c999f98c9a0a9cb78b9a8046511641cee` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

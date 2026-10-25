@@ -1,0 +1,113 @@
+# registerParametricAttribute
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:3d7330c98398f3fc41eecc33535f598f190c7fe0ad696ac3da4ba88cb21bf24c",
+  "kind": "def",
+  "lexical_name": "registerParametricAttribute",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "registerparametricattribute--f8b9888d68a875586c89a78b",
+  "source": {
+    "blob": "a0dedc7f44f57f9d8b74d6705b30ebae22a11f0b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 294,
+    "line": 263,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Attributes/Variant009bf062dcf0b534e5d0a43b0bdf4fc42370742c5e5bc74fc67f92a1a82902c0.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:f8b9888d68a875586c89a78b516104aa79b8423739ce74aaf3c6edd5068ad83e",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Attributes/Variant009bf062dcf0b534e5d0a43b0bdf4fc42370742c5e5bc74fc67f92a1a82902c0.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:3d7330c98398f3fc41eecc33535f598f190c7fe0ad696ac3da4ba88cb21bf24c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 263–294.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def registerParametricAttribute (impl : ParametricAttributeImpl α) : IO (ParametricAttribute α) := do
+  let ext : PersistentEnvExtension (Name × α) (Name × α) (List Name × NameMap α) ← registerPersistentEnvExtension {
+    name            := impl.ref
+    mkInitial       := pure ([], {})
+    addImportedFn   := fun _ => pure ([], {})
+    addEntryFn      := fun (decls, m) (p : Name × α) => (p.1 :: decls, m.insert p.1 p.2)
+    exportEntriesFnEx := fun env (decls, m) => Id.run do
+      let all := if impl.preserveOrder then
+        decls.toArray.reverse.filterMap (fun n => return (n, ← m.find? n))
+      else
+        let r := m.foldl (fun a n p => a.push (n, p)) #[]
+        r.qsort (fun a b => Name.quickLt a.1 b.1)
+      let exported := all.filter (fun ⟨n, a⟩ => impl.filterExport env n a)
+      { exported, server := exported, «private» := all }
+    statsFn         := fun (_, m) => "parametric attribute" ++ Format.line ++ "number of local entries: " ++ format m.size
+  }
+  let attrImpl : AttributeImpl := {
+    impl.toAttributeImplCore with
+    add   := fun decl stx kind => do
+      unless kind == AttributeKind.global do throwAttrMustBeGlobal impl.name kind
+      let env ← getEnv
+      unless (env.getModuleIdxFor? decl).isNone do
+        throwAttrDeclInImportedModule impl.name decl
+      let val ← impl.getParam decl stx
+      modifyEnv fun env => ext.addEntry (asyncDecl := decl) env (decl, val)
+      try impl.afterSet decl val catch _ => setEnv env
+  }
+  registerBuiltinAttribute attrImpl
+  pure { attr := attrImpl, ext, preserveOrder := impl.preserveOrder }
+
+namespace ParametricAttribute
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Attributes/Variant009bf062dcf0b534e5d0a43b0bdf4fc42370742c5e5bc74fc67f92a1a82902c0.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Attributes/Variant009bf062dcf0b534e5d0a43b0bdf4fc42370742c5e5bc74fc67f92a1a82902c0.lean#L263).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a0dedc7f44f57f9d8b74d6705b30ebae22a11f0b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

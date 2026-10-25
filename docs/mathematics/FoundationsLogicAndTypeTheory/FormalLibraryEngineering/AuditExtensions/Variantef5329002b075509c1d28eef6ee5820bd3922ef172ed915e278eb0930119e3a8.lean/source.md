@@ -1,0 +1,165 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AuditExtensions.Variantef5329002b075509c1d28eef6ee5820bd3922ef172ed915e278eb0930119e3a8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `18c950a17d584d97ab402ac3a75ec0bb39b8ebfa` · SHA-256 `ef5329002b075509c1d28eef6ee5820bd3922ef172ed915e278eb0930119e3a8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import GenericMetric
+import ExtraGeometry
+import SourceRefinement
+import LocalForms
+set_option pp.universes true
+#check FormalResearch.MutationGame.cartanMatrix
+#print axioms FormalResearch.MutationGame.cartanMatrix
+#check FormalResearch.MutationGame.mutationMatrix_cartan
+#print axioms FormalResearch.MutationGame.mutationMatrix_cartan
+#check FormalResearch.MutationGame.mutation_form_entry
+#print axioms FormalResearch.MutationGame.mutation_form_entry
+#check FormalResearch.MutationGame.weightedCartan_symmetric
+#print axioms FormalResearch.MutationGame.weightedCartan_symmetric
+#check FormalResearch.MutationGame.mutationMatrix_weighted_metric
+#print axioms FormalResearch.MutationGame.mutationMatrix_weighted_metric
+#check FormalResearch.MutationGame.mutationMatrix_symmetric_metric
+#print axioms FormalResearch.MutationGame.mutationMatrix_symmetric_metric
+#check FormalResearch.MutationGame.wordMatrix_weighted_metric
+#print axioms FormalResearch.MutationGame.wordMatrix_weighted_metric
+#check FormalResearch.MutationGame.wordMatrix_symmetric_metric
+#print axioms FormalResearch.MutationGame.wordMatrix_symmetric_metric
+#check FormalResearch.MutationGame.mutationMatrix_nonadjacent_commute
+#print axioms FormalResearch.MutationGame.mutationMatrix_nonadjacent_commute
+#check FormalResearch.MutationGame.cartan_row_square
+#print axioms FormalResearch.MutationGame.cartan_row_square
+#check FormalResearch.MutationGame.cartan_row_triple
+#print axioms FormalResearch.MutationGame.cartan_row_triple
+#check FormalResearch.MutationGame.mutationMatrix_adjacent_braid
+#print axioms FormalResearch.MutationGame.mutationMatrix_adjacent_braid
+#check FormalResearch.MutationGame.ExtraGeometry.rational_ldl_real_positive
+#print axioms FormalResearch.MutationGame.ExtraGeometry.rational_ldl_real_positive
+#check FormalResearch.MutationGame.ExtraGeometry.d4RealCartan
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4RealCartan
+#check FormalResearch.MutationGame.ExtraGeometry.e8RealCartan
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8RealCartan
+#check FormalResearch.MutationGame.ExtraGeometry.d4_real_positive_definite
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_real_positive_definite
+#check FormalResearch.MutationGame.ExtraGeometry.e8_real_positive_definite
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_real_positive_definite
+#check FormalResearch.MutationGame.ExtraGeometry.d4_real_quadratic_positive
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_real_quadratic_positive
+#check FormalResearch.MutationGame.ExtraGeometry.e8_real_quadratic_positive
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_real_quadratic_positive
+#check FormalResearch.MutationGame.ExtraGeometry.height
+#print axioms FormalResearch.MutationGame.ExtraGeometry.height
+#check FormalResearch.MutationGame.ExtraGeometry.d4Highest
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4Highest
+#check FormalResearch.MutationGame.ExtraGeometry.e8Highest
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8Highest
+#check FormalResearch.MutationGame.ExtraGeometry.d4_highest_membership
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_highest_membership
+#check FormalResearch.MutationGame.ExtraGeometry.e8_highest_membership
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_highest_membership
+#check FormalResearch.MutationGame.ExtraGeometry.d4_lowest_membership
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_lowest_membership
+#check FormalResearch.MutationGame.ExtraGeometry.e8_lowest_membership
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_lowest_membership
+#check FormalResearch.MutationGame.ExtraGeometry.d4_highest_positive
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_highest_positive
+#check FormalResearch.MutationGame.ExtraGeometry.e8_highest_positive
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_highest_positive
+#check FormalResearch.MutationGame.ExtraGeometry.d4_highest_reachable
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_highest_reachable
+#check FormalResearch.MutationGame.ExtraGeometry.e8_highest_reachable
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_highest_reachable
+#check FormalResearch.MutationGame.ExtraGeometry.d4_lowest_reachable
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_lowest_reachable
+#check FormalResearch.MutationGame.ExtraGeometry.e8_lowest_reachable
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_lowest_reachable
+#check FormalResearch.MutationGame.ExtraGeometry.d4_height_bound_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_height_bound_checked
+#check FormalResearch.MutationGame.ExtraGeometry.e8_height_bound_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_height_bound_checked
+#check FormalResearch.MutationGame.ExtraGeometry.d4_highest_unique_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_highest_unique_checked
+#check FormalResearch.MutationGame.ExtraGeometry.e8_highest_unique_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_highest_unique_checked
+#check FormalResearch.MutationGame.ExtraGeometry.d4_height_bound
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_height_bound
+#check FormalResearch.MutationGame.ExtraGeometry.e8_height_bound
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_height_bound
+#check FormalResearch.MutationGame.ExtraGeometry.d4_highest_unique
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_highest_unique
+#check FormalResearch.MutationGame.ExtraGeometry.e8_highest_unique
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_highest_unique
+#check FormalResearch.MutationGame.ExtraGeometry.d4_coordinate_bounds_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_coordinate_bounds_checked
+#check FormalResearch.MutationGame.ExtraGeometry.e8_coordinate_bounds_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_coordinate_bounds_checked
+#check FormalResearch.MutationGame.ExtraGeometry.d4_coordinate_bounds
+#print axioms FormalResearch.MutationGame.ExtraGeometry.d4_coordinate_bounds
+#check FormalResearch.MutationGame.ExtraGeometry.e8_coordinate_bounds
+#print axioms FormalResearch.MutationGame.ExtraGeometry.e8_coordinate_bounds
+#check FormalResearch.MutationGame.ExtraGeometry.diagramPermutation
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagramPermutation
+#check FormalResearch.MutationGame.ExtraGeometry.diagramMatrix
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagramMatrix
+#check FormalResearch.MutationGame.ExtraGeometry.diagramComposition
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagramComposition
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_permutation_injective
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_permutation_injective
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_permutations_distinct
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_permutations_distinct
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_permutation_fixes_center
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_permutation_fixes_center
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_composition_checked
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_composition_checked
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_identity
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_identity
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_matrix_composition
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_matrix_composition
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_metric
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_metric
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_mutation_equivariance
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_mutation_equivariance
+#check FormalResearch.MutationGame.ExtraGeometry.diagram_adjacency_preservation
+#print axioms FormalResearch.MutationGame.ExtraGeometry.diagram_adjacency_preservation
+#check FormalResearch.MutationGame.SourceRefinement.retentionMatrix
+#print axioms FormalResearch.MutationGame.SourceRefinement.retentionMatrix
+#check FormalResearch.MutationGame.SourceRefinement.retentionMatrix_apply
+#print axioms FormalResearch.MutationGame.SourceRefinement.retentionMatrix_apply
+#check FormalResearch.MutationGame.SourceRefinement.retentionMatrix_self
+#print axioms FormalResearch.MutationGame.SourceRefinement.retentionMatrix_self
+#check FormalResearch.MutationGame.SourceRefinement.transportAt
+#print axioms FormalResearch.MutationGame.SourceRefinement.transportAt
+#check FormalResearch.MutationGame.SourceRefinement.firstIncrement
+#print axioms FormalResearch.MutationGame.SourceRefinement.firstIncrement
+#check FormalResearch.MutationGame.SourceRefinement.secondIncrement
+#print axioms FormalResearch.MutationGame.SourceRefinement.secondIncrement
+#check FormalResearch.MutationGame.SourceRefinement.first_refinement
+#print axioms FormalResearch.MutationGame.SourceRefinement.first_refinement
+#check FormalResearch.MutationGame.SourceRefinement.second_refinement
+#print axioms FormalResearch.MutationGame.SourceRefinement.second_refinement
+#check FormalResearch.MutationGame.SourceRefinement.firstIncrement_apply
+#print axioms FormalResearch.MutationGame.SourceRefinement.firstIncrement_apply
+#check FormalResearch.MutationGame.SourceRefinement.secondIncrement_apply
+#print axioms FormalResearch.MutationGame.SourceRefinement.secondIncrement_apply
+#check FormalResearch.MutationGame.SourceRefinement.literal_refinement_increment
+#print axioms FormalResearch.MutationGame.SourceRefinement.literal_refinement_increment
+#check FormalResearch.MutationGame.LocalForms.d4ReducedCartan
+#print axioms FormalResearch.MutationGame.LocalForms.d4ReducedCartan
+#check FormalResearch.MutationGame.LocalForms.e8ReducedCartan
+#print axioms FormalResearch.MutationGame.LocalForms.e8ReducedCartan
+#check FormalResearch.MutationGame.LocalForms.d4_reduced_determinant
+#print axioms FormalResearch.MutationGame.LocalForms.d4_reduced_determinant
+#check FormalResearch.MutationGame.LocalForms.e8_reduced_determinant
+#print axioms FormalResearch.MutationGame.LocalForms.e8_reduced_determinant
+#check FormalResearch.MutationGame.LocalForms.d4_reduced_form_unit_iff
+#print axioms FormalResearch.MutationGame.LocalForms.d4_reduced_form_unit_iff
+#check FormalResearch.MutationGame.LocalForms.e8_reduced_form_unit
+#print axioms FormalResearch.MutationGame.LocalForms.e8_reduced_form_unit
+#check FormalResearch.MutationGame.LocalForms.d4_reduced_form_at_two
+#print axioms FormalResearch.MutationGame.LocalForms.d4_reduced_form_at_two
+#check FormalResearch.MutationGame.LocalForms.d4_prime_power_form_unit_iff
+#print axioms FormalResearch.MutationGame.LocalForms.d4_prime_power_form_unit_iff
+#check FormalResearch.MutationGame.LocalForms.d4_prime_power_form_unit_iff_odd
+#print axioms FormalResearch.MutationGame.LocalForms.d4_prime_power_form_unit_iff_odd
+```

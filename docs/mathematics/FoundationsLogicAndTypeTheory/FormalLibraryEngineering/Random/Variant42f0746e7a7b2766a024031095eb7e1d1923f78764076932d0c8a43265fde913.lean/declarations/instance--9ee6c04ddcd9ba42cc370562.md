@@ -1,0 +1,101 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:d5486800915e04a001c6e271395d03fdd45c04ea636623cca9bf87237befe91e",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--9ee6c04ddcd9ba42cc370562",
+  "source": {
+    "blob": "bdba0490344937336b89003a9cccfe4a1d8317f7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 199,
+    "line": 180,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Random/Variant42f0746e7a7b2766a024031095eb7e1d1923f78764076932d0c8a43265fde913.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:9ee6c04ddcd9ba42cc37056243f0f0feb67d67b37e032d5c288121757e3ef03c",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Random/Variant42f0746e7a7b2766a024031095eb7e1d1923f78764076932d0c8a43265fde913.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:d5486800915e04a001c6e271395d03fdd45c04ea636623cca9bf87237befe91e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 180–199.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance {n : Nat} : BoundedRandom m (BitVec n) where
+  randomR lo hi h _ := do
+    let ⟨r, h1, h2⟩ ← randBound Nat lo.toNat hi.toNat h
+    return ⟨⟨r, by omega⟩, h1, h2⟩
+
+end Random
+
+open IO
+variable {m : Type _ → Type _}
+variable [Monad m] [MonadLiftT (ST RealWorld) m]
+
+/--
+Computes a `RandT m α` using the global `stdGenRef` as RNG.
+
+Note that:
+- `stdGenRef` is not necessarily properly seeded on program startup
+  as of now and will therefore be deterministic.
+- `stdGenRef` is not thread local, hence two threads accessing it
+  at the same time will get the exact same generator.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Random/Variant42f0746e7a7b2766a024031095eb7e1d1923f78764076932d0c8a43265fde913.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Random/Variant42f0746e7a7b2766a024031095eb7e1d1923f78764076932d0c8a43265fde913.lean#L180).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bdba0490344937336b89003a9cccfe4a1d8317f7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

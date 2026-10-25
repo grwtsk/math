@@ -1,0 +1,86 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.Imo1960Q2.Variantd71d6c2dc4959db41b6bddeb284575b9b6e257755f0cd05a4ce927b80a16e500
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b07cb0155840a9e79a2dfc6353dc45657feca417` · SHA-256 `3b4e5caf9627e5d96329cc02c3798d470e89afef2e61e24da74df057d7c9c0bc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.IsGood.Variantfdd53c2329892b05ce5f6d7addb3f79b56a7def3e458c22b23687598858fe539","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fdd53c2329892b05ce5f6d7addb3f79b56a7def3e458c22b23687598858fe539","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.IsGood.Variantfdd53c2329892b05ce5f6d7addb3f79b56a7def3e458c22b23687598858fe539","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"fdd53c2329892b05ce5f6d7addb3f79b56a7def3e458c22b23687598858fe539","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Archive/Imo/Imo1960Q2.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+import Mathlib.Data.Real.Sqrt
+
+/-!
+# IMO 1960 Q2
+
+For what values of the variable $x$ does the following inequality hold:
+
+\[\dfrac{4x^2}{(1 - \sqrt {2x + 1})^2} < 2x + 9 \ ?\]
+
+We follow solution at
+[Art of Problem Solving](https://artofproblemsolving.com/wiki/index.php/1960_IMO_Problems/Problem_2)
+with minor modifications.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.IsGood.Variantfdd53c2329892b05ce5f6d7addb3f79b56a7def3e458c22b23687598858fe539
+
+open Real Set
+
+namespace Imo1960Q2
+
+/-- The predicate says that `x` satisfies the inequality
+
+\[\dfrac{4x^2}{(1 - \sqrt {2x + 1})^2} < 2x + 9\]
+
+and belongs to the domain of the function on the left-hand side.
+-/
+@[mk_iff isGood_iff']
+structure IsGood (x : ℝ) : Prop where
+  /-- The number satisfies the inequality. -/
+  ineq : 4 * x ^ 2 / (1 - sqrt (2 * x + 1)) ^ 2 < 2 * x + 9
+  /-- The number belongs to the domain of \(\sqrt {2x + 1}\). -/
+  sqrt_dom : 0 ≤ 2 * x + 1
+  /-- The number belongs to the domain of the denominator. -/
+  denom_dom : (1 - sqrt (2 * x + 1)) ^ 2 ≠ 0
+
+/-- Solution of IMO 1960 Q2: solutions of the inequality
+are the numbers of the half-closed interval \([-1/2, 45/8)\) except for the number zero. -/
+theorem isGood_iff {x} : IsGood x ↔ x ∈ Ico (-1/2) (45/8) \ {0} := by
+  -- First, note that the denominator is equal to zero at `x = 0`, hence it's not a solution.
+  rcases eq_or_ne x 0 with rfl | hx
+  · simp [isGood_iff']
+  cases lt_or_le x (-1/2) with
+  | inl hx2 =>
+    -- Next, if `x < -1/2`, then the square root is undefined.
+    have : 2 * x + 1 < 0 := by linarith
+    simp [hx2.not_le, isGood_iff', this.not_le]
+  | inr hx2 =>
+    -- Now, if `x ≥ -1/2`, `x ≠ 0`, then the expression is well-defined.
+    have hx2' : 0 ≤ 2 * x + 1 := by linarith
+    have H : 1 - sqrt (2 * x + 1) ≠ 0 := by
+      rw [sub_ne_zero, ne_comm, ne_eq, sqrt_eq_iff_eq_sq hx2' zero_le_one]
+      simpa
+    calc
+      -- Note that the fraction in the LHS is equal to `(1 + sqrt (2 * x + 1)) ^ 2`
+      IsGood x ↔ (1 + sqrt (2 * x + 1)) ^ 2 < 2 * x + 9 := by
+        have : 4 * x ^ 2 = (1 + sqrt (2 * x + 1)) ^ 2 * (1 - sqrt (2 * x + 1)) ^ 2 := by
+          rw [← mul_pow, ← sq_sub_sq, sq_sqrt hx2']
+          ring
+        simp [isGood_iff', *]
+      -- Simplify the inequality
+      _ ↔ sqrt (2 * x + 1) < 7 / 2 := by
+        rw [add_sq, sq_sqrt hx2']; constructor <;> intro <;> linarith
+      _ ↔ 2 * x + 1 < (7 / 2) ^ 2 := sqrt_lt' <| by positivity
+      _ ↔ x < 45 / 8 := by constructor <;> intro <;> linarith
+      _ ↔ x ∈ Ico (-1/2) (45/8) \ {0} := by simp [*]
+
+end Imo1960Q2
+```

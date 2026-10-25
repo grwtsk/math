@@ -1,0 +1,158 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Types.Variante8d28d8cf4ff0891748cdee7af03fdcdf139b1d17bfdc453a399f8e06b3e7a81
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d55477698718499a3445802cf3c79d18a45175cc` · SHA-256 `f8502f7a0735edc48ecf06f0bb21ebcb7dc6def3544fb7af1599618d99d1713e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CommandResultSnapshot.Variant17dc57647a274ed317493de4262d3779b1244b1152a3b2d562e96c0d21ccd0f2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"17dc57647a274ed317493de4262d3779b1244b1152a3b2d562e96c0d21ccd0f2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.CommandResultSnapshot.Variant17dc57647a274ed317493de4262d3779b1244b1152a3b2d562e96c0d21ccd0f2","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"17dc57647a274ed317493de4262d3779b1244b1152a3b2d562e96c0d21ccd0f2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Language/Lean/Types.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Lean FRO. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+
+Implementation of the Lean language: parsing and processing of header and commands, incremental
+recompilation
+
+Authors: Sebastian Ullrich
+-/
+
+module
+
+prelude
+public import Lean.Elab.Command
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CommandResultSnapshot.Variant17dc57647a274ed317493de4262d3779b1244b1152a3b2d562e96c0d21ccd0f2
+
+public section
+
+set_option linter.missingDocs true
+
+namespace Lean.Language.Lean
+open Lean.Elab Command
+open Lean.Parser
+
+/-- Pushes `a?` into the array if it is `some`. -/
+def pushOpt (a? : Option α) (as : Array α) : Array α :=
+  match a? with
+  | some a => as.push a
+  | none   => as
+
+/-! The hierarchy of Lean snapshot types -/
+
+/--
+Snapshot after command elaborator has returned. Also contains diagnostics from the elaborator's main
+task. Asynchronous elaboration tasks may not yet be finished.
+-/
+structure CommandResultSnapshot extends Language.Snapshot where
+  /-- Resulting elaboration state. -/
+  cmdState : Command.State
+deriving Nonempty
+instance : ToSnapshotTree CommandResultSnapshot where
+  toSnapshotTreeM s := return ⟨← Snapshot.transform s.toSnapshot, #[]⟩
+
+/--
+State before a command is elaborated. This is separate from `CommandParsedSnapshot` so that all
+snapshots belonging to a command are grouped below a task with the command's syntax tree.
+-/
+structure CommandElaboratingSnapshot extends Snapshot where
+  /--
+  Snapshot for incremental reporting and reuse during elaboration, type dependent on specific
+  elaborator.
+   -/
+  elabSnap : SnapshotTask DynamicSnapshot
+  /-- State after command elaborator has returned. -/
+  resultSnap : SnapshotTask CommandResultSnapshot
+  /--
+  State after all elaborator tasks are finished. In particular, contains the complete info tree.
+  -/
+  infoTreeSnap : SnapshotTask SnapshotLeaf
+  /-- Additional, untyped snapshots used for reporting, not reuse. -/
+  reportSnap : SnapshotTask SnapshotTree
+deriving Nonempty
+instance : ToSnapshotTree CommandElaboratingSnapshot where
+  toSnapshotTreeM s := return ⟨← Snapshot.transform s.toSnapshot,
+    #[← s.elabSnap.transform,
+      ← s.resultSnap.transform,
+      ← s.infoTreeSnap.transform,
+      ← s.reportSnap.transform]⟩
+
+/-- State after a command has been parsed. -/
+structure CommandParsedSnapshot extends Snapshot where
+  /-- Syntax tree of the command. -/
+  stx : Syntax
+  /-- Resulting parser state. -/
+  parserState : Parser.ModuleParserState
+  /-- State before the command is elaborated. This snapshot is always fulfilled immediately. -/
+  elabSnap : CommandElaboratingSnapshot
+  /-- Next command, unless this is a terminal command. -/
+  nextCmdSnap? : Option (SnapshotTask CommandParsedSnapshot)
+deriving Nonempty
+partial instance : ToSnapshotTree CommandParsedSnapshot where
+  toSnapshotTreeM := go where
+    go s := do
+      return ⟨← Snapshot.transform s.toSnapshot,
+        #[.finished s.stx (← toSnapshotTreeM s.elabSnap)] |>
+          pushOpt (← s.nextCmdSnap?.mapM (·.transformWith go))⟩
+
+/-- State after successful importing. -/
+structure HeaderProcessedState where
+  /-- The resulting initial elaboration state. -/
+  cmdState : Command.State
+  /-- First command task (there is always at least a terminal command). -/
+  firstCmdSnap : SnapshotTask CommandParsedSnapshot
+
+/-- State after the module header has been processed including imports. -/
+structure HeaderProcessedSnapshot extends Snapshot where
+  /--
+  Holds produced diagnostics and info tree. Separate snapshot so that it can be tagged with the
+  header syntax, which should not be done for this snapshot containing `firstCmdSnap`.
+  -/
+  metaSnap : SnapshotTask SnapshotLeaf
+  /-- State after successful importing. -/
+  result? : Option HeaderProcessedState
+  isFatal := result?.isNone
+instance : ToSnapshotTree HeaderProcessedSnapshot where
+  toSnapshotTreeM s := return ⟨← Snapshot.transform s.toSnapshot,
+    #[← s.metaSnap.transform] |>
+      pushOpt (← s.result?.mapM (·.firstCmdSnap.transform))⟩
+
+/-- State after successfully parsing the module header. -/
+structure HeaderParsedState where
+  /-- Resulting parser state. -/
+  parserState : Parser.ModuleParserState
+  /-- Header processing task. -/
+  processedSnap : SnapshotTask HeaderProcessedSnapshot
+
+/-- State after the module header has been parsed. -/
+structure HeaderParsedSnapshot extends Snapshot where
+  /--
+  Holds produced diagnostics. Separate snapshot so that it can be tagged with the header syntax,
+  which should not be done for this snapshot containing `firstCmdSnap`.
+  -/
+  metaSnap : SnapshotTask SnapshotLeaf
+  /-- Parser input context supplied by the driver, stored here for incremental parsing. -/
+  ictx : Parser.InputContext
+  /-- Resulting syntax tree. -/
+  stx : Syntax
+  /-- State after successful parsing. -/
+  result? : Option HeaderParsedState
+  isFatal := result?.isNone
+
+instance : ToSnapshotTree HeaderParsedSnapshot where
+  toSnapshotTreeM s := return ⟨← Snapshot.transform s.toSnapshot,
+    #[← s.metaSnap.transform] |>
+      pushOpt (← s.result?.mapM (·.processedSnap.transform))⟩
+
+/-- Shortcut accessor to the final header state, if successful. -/
+def HeaderParsedSnapshot.processedResult (snap : HeaderParsedSnapshot) :
+    SnapshotTask (Option HeaderProcessedState) :=
+  snap.result?.bind (·.processedSnap.map (sync := true) (·.result?)) |>.getD (.finished none none)
+
+/-- Initial snapshot of the Lean language processor: a "header parsed" snapshot. -/
+abbrev InitialSnapshot := HeaderParsedSnapshot
+```

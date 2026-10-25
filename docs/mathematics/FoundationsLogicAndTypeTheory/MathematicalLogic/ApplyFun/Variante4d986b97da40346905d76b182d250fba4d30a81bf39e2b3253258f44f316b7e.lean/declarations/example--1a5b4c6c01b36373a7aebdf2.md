@@ -1,0 +1,87 @@
+# Anonymous example
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:0eecb5f2c313190fd92b0ee3400ef8970e1980b93bc216bc2d31b9f379fa905f",
+  "kind": "example",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "example--1a5b4c6c01b36373a7aebdf2",
+  "source": {
+    "blob": "f92607f35e6cb0798b784a6bf0dc551c115a9c4b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 66,
+    "line": 61,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ApplyFun/Variante4d986b97da40346905d76b182d250fba4d30a81bf39e2b3253258f44f316b7e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1a5b4c6c01b36373a7aebdf2e3b656eda1168acafe959e0b0e0000af5a0805d1",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/ApplyFun/Variante4d986b97da40346905d76b182d250fba4d30a81bf39e2b3253258f44f316b7e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `example` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:0eecb5f2c313190fd92b0ee3400ef8970e1980b93bc216bc2d31b9f379fa905f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 61–66.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+example (f : ℕ → ℕ → ℕ) (h : f 1 x ≠ f 1 y) : x ≠ y := by
+  apply_fun f ?foo
+  guard_target = f ?foo x ≠ f ?foo y
+  case foo => exact 1
+  assumption
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/MathematicalLogic/ApplyFun/Variante4d986b97da40346905d76b182d250fba4d30a81bf39e2b3253258f44f316b7e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ApplyFun/Variante4d986b97da40346905d76b182d250fba4d30a81bf39e2b3253258f44f316b7e.lean#L61).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f92607f35e6cb0798b784a6bf0dc551c115a9c4b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

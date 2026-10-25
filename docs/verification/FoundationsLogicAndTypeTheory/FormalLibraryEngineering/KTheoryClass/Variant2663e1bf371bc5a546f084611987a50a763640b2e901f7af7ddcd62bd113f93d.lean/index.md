@@ -1,0 +1,64 @@
+# Verification target: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.KTheoryClass.Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e36dccd7b2c81e6fdb815cc4b91320e7aa607883",
+  "lexical_observation_count": 3,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean/index.md) · [Full source](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e36dccd7b2c81e6fdb815cc4b91320e7aa607883`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Folder.DerivedSheaf.ModuliStackKTheory` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ktheory_class_has_value](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean/declarations/ktheory-class-has-value--c167ed8152d57a4241f77512.md) | 19 | `result-track:c167ed8152d57a4241f77512a3f2715843f712080a646ac3fc6378cec7d029ca` |
+| 2 | `theorem` | [mell_k_theory_targets_mell](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean/declarations/mell-k-theory-targets-mell--7bd5bf3044904bc5bf8e1402.md) | 25 | `result-track:7bd5bf3044904bc5bf8e1402a151d0c4b367cf0e66efd9aa37ad1263a46bb46c` |
+| 3 | `theorem` | [mell_contract_is_mell](../../../../../mathematics/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/KTheoryClass/Variant2663e1bf371bc5a546f084611987a50a763640b2e901f7af7ddcd62bd113f93d.lean/declarations/mell-contract-is-mell--c18b61ca8d1645ca08489803.md) | 30 | `result-track:c18b61ca8d1645ca0848980360ebeee5fa7a1fbf9d27d8480f509459b4451488` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

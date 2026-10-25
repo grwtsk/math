@@ -1,0 +1,98 @@
+# etaStructAll
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:65efbad33d374cd5116e1406e27122fb2c69d93b633abd20ebabc025760f52e3",
+  "kind": "def",
+  "lexical_name": "etaStructAll",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "etastructall--4763e09d31c972450ebf1b4c",
+  "source": {
+    "blob": "6b99ff21025b008cf778c9bac2f0ccf038d94cea",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 294,
+    "line": 278,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DefEqTransformations/Variant9170d95863a31ce5f12b7f8a7aac2fb07882ee4dac928b5bb2742ceee5277282.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:4763e09d31c972450ebf1b4c583941b3c89e5bf610fe89bae9ee122098b734b5",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DefEqTransformations/Variant9170d95863a31ce5f12b7f8a7aac2fb07882ee4dac928b5bb2742ceee5277282.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:65efbad33d374cd5116e1406e27122fb2c69d93b633abd20ebabc025760f52e3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 278–294.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def etaStructAll (e : Expr) : MetaM Expr :=
+  transform e fun node => do
+    if let some node' ← etaStruct? node then
+      return .visit node'
+    else
+      return .continue
+
+/--
+`eta_struct at loc` transforms structure constructor applications such as `S.mk x.1 ... x.n`
+(pretty printed as, for example, `{a := x.a, b := x.b, ...}`) into `x`.
+This also exists as a `conv`-mode tactic.
+
+The transformation is known as eta reduction for structures, and it yields definitionally
+equal expressions.
+
+For example, given `x : α × β`, then `(x.1, x.2)` becomes `x` after this transformation.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DefEqTransformations/Variant9170d95863a31ce5f12b7f8a7aac2fb07882ee4dac928b5bb2742ceee5277282.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DefEqTransformations/Variant9170d95863a31ce5f12b7f8a7aac2fb07882ee4dac928b5bb2742ceee5277282.lean#L278).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `6b99ff21025b008cf778c9bac2f0ccf038d94cea` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,132 @@
+# handleProj
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:6c763e1f6c8a72b353dc4fadd362684f32f6278e61522bc5b2a853bee776472c",
+  "kind": "def",
+  "lexical_name": "handleProj",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "handleproj--ac6f57ae4963e88b23448bfe",
+  "source": {
+    "blob": "d444ffc407a56b7dae67dec365884c769d768c11",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 247,
+    "line": 197,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Main/Variante0b04fb88ff3228ce55cac597f089a4038bdbe3afdaaf2d1a7fcc4e6965a68d8.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:ac6f57ae4963e88b23448bfe6bf85fb6a97049222cb33a9d0c3034eaba53dc3e",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Main/Variante0b04fb88ff3228ce55cac597f089a4038bdbe3afdaaf2d1a7fcc4e6965a68d8.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:6c763e1f6c8a72b353dc4fadd362684f32f6278e61522bc5b2a853bee776472c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 197–247.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def handleProj : Simproc := fun e => do
+  let Expr.proj typeName idx struct := e | return .rfl
+  withTraceNode `Debug.Meta.Tactic.cbv.reduce (fun
+      | .ok (Result.step e' ..) => return m!"proj `{typeName}`.{idx}:{indentExpr e}\n==>{indentExpr e'}"
+      | .ok (Result.rfl true _) => return m!"proj `{typeName}`.{idx}: stuck{indentExpr e}"
+      | .ok _                   => return m!"proj `{typeName}`.{idx}: no change"
+      | .error err              => return m!"proj `{typeName}`.{idx}: {err.toMessageData}") do
+  -- We recursively simplify the projection
+  let res ← simp struct
+  match res with
+  | .rfl _ cd =>
+    let some reduced ← withCbvOpaqueGuard <| withDefault <| reduceProj? <| .proj typeName idx struct | do
+      return .rfl (done := true) cd
+
+    let reduced ← Sym.share reduced
+    return .step reduced (← Sym.mkEqRefl reduced) cd
+  | .step e' proof _ cd =>
+    let type ← Sym.inferType e'
+    let congrArgFun := Lean.mkLambda `x .default type <| .proj typeName idx <| .bvar 0
+    let congrArgFunType ← Sym.inferType congrArgFun
+    -- If the type of a projection function is non-dependent, we can safely prove `e.i = e'.i` from `e = e'`
+    if congrArgFunType.isArrow then
+      let .forallE _ α β _ := congrArgFunType | unreachable!
+      let u ← Sym.getLevel α
+      let v ← Sym.getLevel β
+      let newProof := mkApp6 (mkConst ``congrArg [u, v]) α β struct e' congrArgFun proof
+      return .step (← Lean.Expr.updateProjS! e e') newProof cd
+    else
+      -- If the type of the projection function is dependent, we first try to reduce the projection
+      let reduced ← withCbvOpaqueGuard <| withDefault <| reduceProj? e
+      match reduced with
+      | .some reduced =>
+        let reduced ← Sym.share reduced
+        return .step reduced (← Sym.mkEqRefl reduced) cd
+      | .none =>
+       -- If we failed to reduce it, we turn to a last resort; we try use heterogeneous congruence lemma that we then try to turn into an equality.
+        unless (← Sym.isDefEqI struct e') do
+          -- If we rewrote the projection body using something that holds up to propositional equality, then there is nothing we can do.
+          -- TODO: Check if there is a need to report this to a user, or shall we fail silently.
+          return .rfl (done := true) cd
+        let hcongr ← mkHCongr congrArgFun
+        let newProof := mkApp3 (hcongr.proof) struct e' proof
+        -- We have already checked if `struct` and `e'` are defEq, so we can skip the check.
+        let newProof ← mkEqOfHEq newProof (check := false)
+        return .step (← Lean.Expr.updateProjS! e e') newProof cd
+
+open Sym.Internal in
+/--
+For an application whose head is neither a constant nor a lambda (e.g. a projection
+like `p.1 x`), simplify the function head and lift the proof via `congrArg`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Main/Variante0b04fb88ff3228ce55cac597f089a4038bdbe3afdaaf2d1a7fcc4e6965a68d8.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Main/Variante0b04fb88ff3228ce55cac597f089a4038bdbe3afdaaf2d1a7fcc4e6965a68d8.lean#L197).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d444ffc407a56b7dae67dec365884c769d768c11` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

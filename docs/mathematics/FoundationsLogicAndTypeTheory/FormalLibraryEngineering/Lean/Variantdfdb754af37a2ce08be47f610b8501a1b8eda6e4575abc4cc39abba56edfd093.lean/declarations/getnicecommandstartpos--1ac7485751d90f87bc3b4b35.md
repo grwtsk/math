@@ -1,0 +1,116 @@
+# getNiceCommandStartPos?
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e436f059650b187c778a3bd17c235e000f62e1adb46a04bb203fb301ab1abc90",
+  "kind": "def",
+  "lexical_name": "getNiceCommandStartPos?",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "getnicecommandstartpos--1ac7485751d90f87bc3b4b35",
+  "source": {
+    "blob": "c5acf0b35b3e0d7add7d10fab9f81f78151290e3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 395,
+    "line": 361,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lean/Variantdfdb754af37a2ce08be47f610b8501a1b8eda6e4575abc4cc39abba56edfd093.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1ac7485751d90f87bc3b4b353c8e61fdadbb2cc3825961f6f434bb0c9389314b",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lean/Variantdfdb754af37a2ce08be47f610b8501a1b8eda6e4575abc4cc39abba56edfd093.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e436f059650b187c778a3bd17c235e000f62e1adb46a04bb203fb301ab1abc90`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 361–395.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private def getNiceCommandStartPos? (stx : Syntax) : Option String.Pos.Raw := do
+  let mut stx := stx
+  if stx[0].isOfKind ``Command.declModifiers then
+    -- modifiers are morally before the actual declaration
+    stx := stx[1]
+  stx.getPos?
+
+/-- No-op, deprecated -/
+register_builtin_option experimental.module : Bool := {
+  defValue := false
+  descr := "no-op, deprecated"
+}
+
+/--
+Entry point of the Lean language processor.
+
+The `setupImports` function is called after the header has been parsed and before the first command
+is parsed in order to supply additional file metadata (or abort with a given terminal snapshot); see
+`SetupImportsResult`.
+
+`old?` is a previous resulting snapshot, if any, to be reused for incremental processing.
+-/
+/-
+General notes:
+* For each processing function we pass in the previous state, if any, in order to reuse still-valid
+  state. As there is no cheap way to check whether the `Environment` is unchanged, i.e. *semantic*
+  change detection is currently not possible, we must make sure to pass `none` as all follow-up
+  "previous states" from the first *syntactic* change onwards.
+* We must make sure to trigger `oldCancelTk?` as soon as discarding `old?`.
+* Control flow up to finding the last still-valid snapshot (which should be quick) is synchronous so
+  as not to report this "fast forwarding" to the user as well as to make sure the next run sees all
+  fast-forwarded snapshots without having to wait on tasks. It also ensures this part cannot be
+  delayed by threadpool starvation. We track whether we are still on the fast-forwarding path using
+  the `sync` parameter on `parseCmd` and spawn an elaboration task when we leave it.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lean/Variantdfdb754af37a2ce08be47f610b8501a1b8eda6e4575abc4cc39abba56edfd093.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lean/Variantdfdb754af37a2ce08be47f610b8501a1b8eda6e4575abc4cc39abba56edfd093.lean#L361).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c5acf0b35b3e0d7add7d10fab9f81f78151290e3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

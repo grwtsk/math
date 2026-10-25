@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lakefile.Variant280377cec40486f7d523f3e1e71746a8277cea7886de307fde70c2c2a764847a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bb3566b4df4b7059c6a5fff48e3e30ca1ffa6d45` · SHA-256 `d0c270a7fe25c0b63d3c3d06ee92615346c25306b30833491b9d2a398454e617`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lake.Variant817932dc1c4896810f436786740079018682efec07026031dfacdfbc37916992","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"817932dc1c4896810f436786740079018682efec07026031dfacdfbc37916992","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceEnvironments.SourceCorpus.Lake.Variant817932dc1c4896810f436786740079018682efec07026031dfacdfbc37916992","mathematical_subject":"MathematicalTooling.SourceEnvironments","original_sha256":"817932dc1c4896810f436786740079018682efec07026031dfacdfbc37916992","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/N/cord/src/theory/lakefile.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["lake_or_runtime_control","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Lake
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lake.Variant817932dc1c4896810f436786740079018682efec07026031dfacdfbc37916992
+
+open Lake DSL
+
+package «cord-single-entry» where
+  srcDir := "/Users/local/Desktop/NoeaaeueFormal/artifacts/lean-corpus-proof-start-20261007/relocation/native-source-ports/c0ec7c2505f92490eca644efd77434885e47cabe78ddf343dcf9d8e4ae6c20b7/src"
+  version := v!"1.0.0"
+
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4.git" @ "v4.32.2"
+
+@[default_target]
+lean_lib CordTheory where
+  srcDir := "/Users/local/Desktop/NoeaaeueFormal/artifacts/lean-corpus-proof-start-20261007/relocation/native-source-ports/c0ec7c2505f92490eca644efd77434885e47cabe78ddf343dcf9d8e4ae6c20b7/src"
+
+lean_exe cordTheoryCheck where
+  srcDir := "/Users/local/Desktop/NoeaaeueFormal/artifacts/lean-corpus-proof-start-20261007/relocation/native-source-ports/c0ec7c2505f92490eca644efd77434885e47cabe78ddf343dcf9d8e4ae6c20b7/src"
+  root := `Main
+```

@@ -1,0 +1,94 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Format.Variant0b95117fed79190a0dcd5523437acc19da0c34946a22fa2b55da924e4bd8639a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `79771256598186f01b1ca8cdff7d8c6c7cab51aa` · SHA-256 `97eca2892bb31ce94f98a44f957e263620d3d257d0a136dffa5a16ae608f215b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.GetWidth.Variant903df519aa4f7727be158631a3e8a5aac00ca17dae5ef220f56c4b24c08c64ff","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"903df519aa4f7727be158631a3e8a5aac00ca17dae5ef220f56c4b24c08c64ff","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.GetWidth.Variant903df519aa4f7727be158631a3e8a5aac00ca17dae5ef220f56c4b24c08c64ff","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"903df519aa4f7727be158631a3e8a5aac00ca17dae5ef220f56c4b24c08c64ff","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Data/Format.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","implicit_eof_scopes","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Author: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Data.Options
+public import Init.Data.Format.Instances
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.GetWidth.Variant903df519aa4f7727be158631a3e8a5aac00ca17dae5ef220f56c4b24c08c64ff
+
+public section
+universe u v
+
+open Std.Format
+
+namespace Lean.Std
+namespace Format
+open Lean
+
+def getWidth (o : Options) : Nat    := o.get `format.width  defWidth
+def getIndent (o : Options) : Nat   := o.get `format.indent defIndent
+def getUnicode (o : Options) : Bool := o.get `format.unicode defUnicode
+
+register_builtin_option format.width : Nat := {
+  defValue := defWidth
+  descr := "indentation"
+}
+
+register_builtin_option format.unicode : Bool := {
+  defValue := defUnicode
+  descr    := "unicode characters"
+}
+
+register_builtin_option format.indent : Nat := {
+  defValue := defIndent
+  descr    := "indentation"
+}
+
+def pretty' (f : _root_.Std.Format) (o : Options := {}) : String :=
+  pretty f (format.width.get o)
+
+end Format
+end Lean.Std
+
+namespace Lean
+
+export _root_.Std
+  (Format ToFormat Format.nest Format.nil Format.joinSep Format.line Format.text
+   Format.sbracket Format.bracket Format.group Format.tag Format.pretty
+   Format.fill Format.paren Format.join Format.align)
+export _root_.Std.ToFormat (format)
+
+instance : ToFormat Name where
+  format n := n.toString
+
+instance : ToFormat DataValue where
+  format
+    | DataValue.ofString v => format (repr v)
+    | DataValue.ofBool v   => format v
+    | DataValue.ofName v   => "`" ++ format v
+    | DataValue.ofNat v    => format v
+    | DataValue.ofInt v    => format v
+    | DataValue.ofSyntax v => format v
+
+instance : ToFormat (Name × DataValue) where
+  format
+    | (n, v) => format n ++ " := " ++ format v
+
+
+open Std.Format
+
+def formatKVMap (m : KVMap) : Format :=
+  sbracket (Format.joinSep m.entries ", ")
+
+instance : ToFormat KVMap := ⟨formatKVMap⟩
+
+end Lean
+```

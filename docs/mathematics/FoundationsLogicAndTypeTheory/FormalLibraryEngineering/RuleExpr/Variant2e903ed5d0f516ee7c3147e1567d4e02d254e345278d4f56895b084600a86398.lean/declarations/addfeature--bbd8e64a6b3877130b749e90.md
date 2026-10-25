@@ -1,0 +1,96 @@
+# addFeature
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:c0680d2b432724fbbf80d08d26de8481250aad29a55cc2111ac2a1cc54df98da",
+  "kind": "def",
+  "lexical_name": "addFeature",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addfeature--bbd8e64a6b3877130b749e90",
+  "source": {
+    "blob": "176ee61ffe1abf3960e56b359503cbb7db0aea9f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 416,
+    "line": 402,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/RuleExpr/Variant2e903ed5d0f516ee7c3147e1567d4e02d254e345278d4f56895b084600a86398.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:bbd8e64a6b3877130b749e90c54bdce0b8988ea7a2c8a4a35cccb7f888ef8ee9",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/RuleExpr/Variant2e903ed5d0f516ee7c3147e1567d4e02d254e345278d4f56895b084600a86398.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:c0680d2b432724fbbf80d08d26de8481250aad29a55cc2111ac2a1cc54df98da`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 402–416.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def addFeature (c : RuleConfig) : Feature → m RuleConfig
+  | .phase phase => return { c with phase? := phase }
+  | .priority priority => return { c with priority? := priority }
+  | .term term => do
+    if let some oldTerm := c.term? then
+      throwError "duplicate rule '{term}'; rule '{oldTerm}' was already given.\nUse [<term>,...] to give multiple rules."
+    return { c with term? := term }
+  | .builder builder => return { c with builder? := builder }
+  | .builderOption opt =>
+    return { c with builderOptions := addBuilderOption c.builderOptions opt }
+  | .ruleSets newRuleSets =>
+    have _ : Ord RuleSetName := ⟨Name.quickCmp⟩
+    let ruleSets := ⟨Array.mergeDedup c.ruleSets.ruleSets newRuleSets.ruleSets.qsortOrd⟩
+    return { c with ruleSets := ruleSets }
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/RuleExpr/Variant2e903ed5d0f516ee7c3147e1567d4e02d254e345278d4f56895b084600a86398.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/RuleExpr/Variant2e903ed5d0f516ee7c3147e1567d4e02d254e345278d4f56895b084600a86398.lean#L402).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `176ee61ffe1abf3960e56b359503cbb7db0aea9f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

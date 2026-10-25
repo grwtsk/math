@@ -1,0 +1,163 @@
+# processParam
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:1432bebe8553fa29aca25d76a2e4ddcc2b6cbe8bc63d240ed03b568ce16440e5",
+  "kind": "def",
+  "lexical_name": "processParam",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "processparam--5d095f86a380040e4a2d738f",
+  "source": {
+    "blob": "304b09a2289df047b83e96768c6c53d2c0c1d828",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 281,
+    "line": 200,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Param/Variant09148dbd32aec9670be16354adbe8195c56867e57f3595cec16de54ed9a8ffb6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:5d095f86a380040e4a2d738f1c930db2b8b0780ea5fc4d77a513b0a7553584b4",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Param/Variant09148dbd32aec9670be16354adbe8195c56867e57f3595cec16de54ed9a8ffb6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:1432bebe8553fa29aca25d76a2e4ddcc2b6cbe8bc63d240ed03b568ce16440e5`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 200–281.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def processParam (params : Grind.Params)
+    (p : TSyntax `Lean.Parser.Tactic.grindParam)
+    (mod? : Option (TSyntax `Lean.Parser.Attr.grindMod))
+    (id : TSyntax `ident)
+    (minIndexable : Bool)
+    (only : Bool)
+    (incremental : Bool)
+    : TermElabM Grind.Params := do
+  let mut params := params
+  let declName ← try
+    realizeGlobalConstNoOverloadWithInfo id
+  catch err =>
+    if (← resolveLocalName id.getId).isSome then
+      throwErrorAt id "redundant parameter `{id}`, `grind` uses local hypotheses automatically"
+    else if let some ext ← Grind.getExtension? id.getId then
+      if let some mod := mod? then
+        throwErrorAt mod "invalid use of modifier in `grind` attribute `{id.getId}`"
+      return { params with extensions := params.extensions.push (ext.getState (← getEnv)) }
+    else if !id.getId.getPrefix.isAnonymous then
+      -- Fall back to term elaboration for compound identifiers like `foo.le` (dot notation on declarations)
+      return (← processTermParam params p mod? id minIndexable)
+    else
+      throw err
+  Term.checkDeprecatedCore declName
+  let kind ← if let some mod := mod? then Grind.getAttrKindCore mod else pure .infer
+  match kind with
+  | .ematch .user =>
+    unless only do
+      withRef p <| Grind.throwInvalidUsrModifier
+    ensureNoMinIndexable minIndexable
+    -- **Note**: This check is hard-coded to the default `grind` attribute. Possible improvement: `usr` modifier that specifies the attribute where
+    -- the user pattern is coming from.
+    let thms := (← Grind.grindExt.getEMatchTheorems).find (.decl declName)
+    let thms := thms.filter fun thm => thm.kind == .user
+    if thms.isEmpty then
+      throwErrorAt p "invalid use of `usr` modifier, `{.ofConstName declName}` does not have patterns specified with the command `grind_pattern`"
+    for thm in thms do
+      params := { params with extra := params.extra.push thm }
+  | .ematch kind =>
+    params ← withRef p <| addEMatchTheorem params id declName kind minIndexable
+  | .cases eager =>
+    if incremental then throwError "`cases` parameter are not supported here"
+    ensureNoMinIndexable minIndexable
+    withRef p <| Grind.validateCasesAttr declName eager
+    params := params.insertCasesTypes declName eager
+  | .intro =>
+    if let some info ← Grind.isCasesAttrPredicateCandidate? declName false then
+      if incremental then throwError "`cases` parameter are not supported here"
+      for ctor in info.ctors do
+        params ← withRef p <| addEMatchTheorem params id ctor (.default false) minIndexable
+    else
+      throwError "invalid use of `intro` modifier, `{.ofConstName declName}` is not an inductive predicate"
+  | .inj =>
+    let thm ← Grind.mkInjectiveTheorem declName
+    params := { params with extraInj := params.extraInj.push thm }
+  | .ext =>
+    throwError "`[grind ext]` cannot be set using parameters"
+  | .infer =>
+    if let some declName ← Grind.isCasesAttrCandidate? declName false then
+      params := params.insertCasesTypes declName false
+      if let some info ← isInductivePredicate? declName then
+        -- If it is an inductive predicate,
+        -- we also add the constructors (intro rules) as E-matching rules
+        for ctor in info.ctors do
+          -- **Note**: We should not warn if `declName` is an inductive
+          params ← withRef p <| addEMatchTheorem params id ctor (.default false) minIndexable (warn := False)
+    else
+      params ← withRef p <| addEMatchTheorem params id declName (.default false) minIndexable (suggest := true)
+  | .symbol prio =>
+    ensureNoMinIndexable minIndexable
+    params := { params with symPrios := params.symPrios.insert declName prio }
+  | .funCC =>
+    params := params.insertFunCC declName
+  | .norm .. => throwError "normalization theorems should be registered using the `@[grind norm]` attribute"
+  | .unfold => throwError "declarations to be unfolded during normalization should be registered using the `@[grind unfold]` attribute"
+  return params
+
+/--
+Elaborates `grind` parameters.
+`incremental = true` for tactics such as `finish`, in this case, we disable some kinds of parameters
+such as `- ident`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Param/Variant09148dbd32aec9670be16354adbe8195c56867e57f3595cec16de54ed9a8ffb6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Param/Variant09148dbd32aec9670be16354adbe8195c56867e57f3595cec16de54ed9a8ffb6.lean#L200).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `304b09a2289df047b83e96768c6c53d2c0c1d828` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.All.Variant6ff20d087b4063b7f8d130f611eab5a3a1cb233a01ad30c92f4750d6caf8ba87
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0dff5964d6eb1da4a53ada87bbaef21a7cd16c23` · SHA-256 `f6a2a02572091fb524659ced29a2871bb0e30e063b5b511709db692347329323`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Profile.Variant30a1ee04f095f2df681f8ea7421642e870660ffe71f01ea37aeed57ed9da8343","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"30a1ee04f095f2df681f8ea7421642e870660ffe71f01ea37aeed57ed9da8343","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Profile.Variant30a1ee04f095f2df681f8ea7421642e870660ffe71f01ea37aeed57ed9da8343","mathematical_subject":"Foundations.Unclassified","original_sha256":"30a1ee04f095f2df681f8ea7421642e870660ffe71f01ea37aeed57ed9da8343","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Surface/.surface/oracle/recovery/e7ca3ab08a9941d3b0d081a02fe454bdf10e695cc272c56d32f3ad446cc76aee-superseded-json-wrapper-grid-v1/candidate-tree/Mathematics/Refactor/All.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathematics.Refactor.Profile
+import Mathematics.Refactor.Constraint
+import Mathematics.Refactor.Partition
+import Mathematics.Refactor.Plan
+import Mathematics.Refactor.Receipt
+import Mathematics.Refactor.Invariant
+
+/-! Import-only refactoring umbrella. -/
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Profile.Variant30a1ee04f095f2df681f8ea7421642e870660ffe71f01ea37aeed57ed9da8343
+
+```

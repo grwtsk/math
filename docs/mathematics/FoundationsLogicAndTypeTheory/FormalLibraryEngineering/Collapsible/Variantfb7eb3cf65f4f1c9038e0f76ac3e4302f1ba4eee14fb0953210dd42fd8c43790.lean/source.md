@@ -1,0 +1,127 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Collapsible.Variantfb7eb3cf65f4f1c9038e0f76ac3e4302f1ba4eee14fb0953210dd42fd8c43790
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `924af55c999f98c9a0a9cb78b9a8046511641cee` · SHA-256 `84af39420aaa04849e98e2c12bfbf941dd71a466d3b2a8fc19133cf67765dc93`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CollapsibleProps.Variantc6f15fca0b9a1ff95d91db8dd3f1554267a6424bf7709651d7f6a4a5a69ecd1c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c6f15fca0b9a1ff95d91db8dd3f1554267a6424bf7709651d7f6a4a5a69ecd1c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.CollapsibleProps.Variantc6f15fca0b9a1ff95d91db8dd3f1554267a6424bf7709651d7f6a4a5a69ecd1c","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"c6f15fca0b9a1ff95d91db8dd3f1554267a6424bf7709651d7f6a4a5a69ecd1c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/importGraph/ImportGraph/Widget/Collapsible.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Thomas R. Murrills. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Thomas R. Murrills
+-/
+module
+
+public meta import Lean.Widget.UserWidget
+
+/-!
+# Collapsible `MessageData` widget
+
+`collapsible summary body` produces a `MessageData` that
+renders in the infoview as a dropdown `<details>` element:
+```
+▼ summary
+  body
+```
+
+`summary` is the header, and `body` is shown only when expanded.
+Both `summary` and `body` are `MessageData`.
+
+Unlike `MessageData.trace`, this carries no trace styling or `cls` tag, and unfortunately is not
+lazy.
+
+## Future work
+
+- Make the body lazy (i.e. only constructed when the dropdown is expanded).
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CollapsibleProps.Variantc6f15fca0b9a1ff95d91db8dd3f1554267a6424bf7709651d7f6a4a5a69ecd1c
+
+open Lean Server
+
+public meta section
+
+namespace ImportGraph.Widget
+
+/-- Props for the `Collapsible` widget. -/
+structure CollapsibleProps where
+  /-- The header `MessageData`. -/
+  summary       : WithRpcRef MessageData
+  /-- The hideable body revealed when the dropdown is expanded. -/
+  body          : WithRpcRef MessageData
+  /-- Whether the dropdown starts expanded. -/
+  initiallyOpen : Bool := false
+deriving Server.RpcEncodable
+
+/-- The dropdown widget: a `<details>` component with `MessageData` header and body.
+
+Note: The body is mounted lazily. Since an ordinary closed `<details>` component would still mount
+the body even if it were closed, we track whether the `<details>` component has ever been opened
+manually and mount it on first open. It then stays mounted. -/
+@[widget_module]
+def Collapsible : Widget.Module where javascript :=
+r#"
+import * as React from 'react'
+import { InteractiveMessageData } from '@leanprover/infoview'
+const h = React.createElement
+
+export default function (props) {
+  const { summary, body, initiallyOpen } = props
+  const [open, setOpen] = React.useState(!!initiallyOpen)
+  const [everOpened, setEverOpened] = React.useState(!!initiallyOpen)
+  const onClick = e => {
+    // Clicks inside React portals (e.g. pinned tooltips) bubble here through
+    // the React tree, but their DOM nodes live outside the summary.
+    if (!(e.target instanceof Node)) return
+    if (!e.currentTarget.contains(e.target)) return
+    e.preventDefault()
+    setEverOpened(true)
+    setOpen(o => !o)
+  }
+  return h('details', { open },
+    h('summary',
+      { style: { cursor: 'pointer', userSelect: 'none' }, onClick },
+      h(InteractiveMessageData, { msg: summary })),
+    everOpened && h('div',
+      { style: { marginLeft: '1em', marginTop: '0.25em' } },
+      h(InteractiveMessageData, { msg: body })))
+}
+"#
+
+/-- Build a `MessageData` that renders as a collapsible dropdown: `summary` is
+the header and `body` is the `MessageData` revealed when expanded. For example:
+```
+⯈ This is the header!
+```
+may be clicked to expand to
+```
+▼ This is the header!
+  And this is the body.
+```
+
+`initiallyOpen` controls whether the dropdown starts expanded (default `false`).
+
+Note that the `body` is already indented, and e.g. `indentD body` may insert an unwanted extra
+line.
+-/
+public def collapsible {m : Type → Type} [Monad m] [MonadLiftT CoreM m]
+    [AddMessageContext m] (summary body : MessageData)
+    (initiallyOpen : Bool := false) : m MessageData := do
+  let summary ← addMessageContext summary
+  let body ← addMessageContext body
+  let props : CollapsibleProps := {
+    summary := ← (WithRpcRef.mk summary : CoreM _)
+    body := ← (WithRpcRef.mk body : CoreM _ )
+    initiallyOpen }
+  return .ofWidget (← Widget.WidgetInstance.ofHash Collapsible.javascriptHash
+    (Server.RpcEncodable.rpcEncode props))
+    m!"▼ {summary}{indentD body}\n"
+
+end ImportGraph.Widget
+````

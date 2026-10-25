@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Metadata.Variantac720b967844e44ad336b2ef678024bd53befde6176c8d80d6849b9878da3f63
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `55b079d2d07c2246d472352f6755cc730baf4c8a` · SHA-256 `ac720b967844e44ad336b2ef678024bd53befde6176c8d80d6849b9878da3f63`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Lean.Elab.Command
+import Candidate
+
+open Lean
+
+namespace Surface.ContinuousAssurance
+
+run_cmd Elab.Command.liftTermElabM do
+  let expectedType ← Lean.Elab.Term.elabType (← `(True))
+  let candidate ← Lean.Elab.Term.elabTermEnsuringType (← `(by exact False.elim (by exact True.intro)) ) (some expectedType)
+  Lean.Elab.Term.synthesizeSyntheticMVarsNoPostponing
+  let candidate ← instantiateMVars candidate
+  let expectedType ← instantiateMVars expectedType
+  let env ← getEnv
+  let mut pending := candidate.getUsedConstants.toList ++ expectedType.getUsedConstants.toList
+  let mut visited : NameSet := {}
+  while !pending.isEmpty do
+    let dependency := pending.head!
+    pending := pending.tail!
+    if !visited.contains dependency then
+      visited := visited.insert dependency
+      if let some dependencyInfo := env.find? dependency then
+        logInfo m!"CA_DEV_571c9c4b7dfe053c25e5a12e_USED_CONSTANT:{dependency}"
+        logInfo m!"CA_DEV_571c9c4b7dfe053c25e5a12e_USED_TYPE:{dependency}:{repr dependencyInfo.type}"
+        match dependencyInfo with
+        | .axiomInfo _ => logInfo m!"CA_DEV_571c9c4b7dfe053c25e5a12e_AXIOM:{dependency}"
+        | _ => pure ()
+        pending := dependencyInfo.type.getUsedConstants.toList ++ pending
+        if let some body := dependencyInfo.value? true then
+          pending := body.getUsedConstants.toList ++ pending
+  logInfo "CA_DEV_571c9c4b7dfe053c25e5a12e_DEPENDENCY_SCAN_COMPLETE"
+  logInfo "CA_DEV_571c9c4b7dfe053c25e5a12e_AXIOM_SCAN_COMPLETE"
+  logInfo "CA_DEV_571c9c4b7dfe053c25e5a12e_TARGET_DIGEST:3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+
+end Surface.ContinuousAssurance
+```

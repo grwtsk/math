@@ -1,0 +1,58 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TestStressMultivar.Variant59d9c813be4bb8b8ec83f81234d0285d2f028c6745267571c6e556cbf6aae7f9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `699effbc2d2fae7e88b3f55cb297615d71407d18` · SHA-256 `59d9c813be4bb8b8ec83f81234d0285d2f028c6745267571c6e556cbf6aae7f9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import LeanCert
+
+open LeanCert.Core
+open LeanCert.Engine
+open LeanCert.Engine.Optimization
+open LeanCert.Validity.GlobalOpt
+
+-- Box domains for global optimization.
+def I01 : IntervalRat := ⟨0, 1, by norm_num⟩
+def B01_2D : Box := [I01, I01]
+def B01_3D : Box := [I01, I01, I01]
+
+-- Multivariate stress tests via global optimization theorems.
+theorem stress_opt_2d_sum_sq :
+    ∀ ρ, Box.envMem ρ B01_2D → (∀ i, i ≥ B01_2D.length → ρ i = 0) →
+      Expr.eval ρ (Expr.add (Expr.mul (Expr.var 0) (Expr.var 0))
+                           (Expr.mul (Expr.var 1) (Expr.var 1))) ≤ (2 : ℚ) :=
+  verify_global_upper_bound
+    (Expr.add (Expr.mul (Expr.var 0) (Expr.var 0)) (Expr.mul (Expr.var 1) (Expr.var 1)))
+    (ExprSupportedCore.add
+      (ExprSupportedCore.mul (ExprSupportedCore.var 0) (ExprSupportedCore.var 0))
+      (ExprSupportedCore.mul (ExprSupportedCore.var 1) (ExprSupportedCore.var 1)))
+    B01_2D 2 ⟨1500, 1/1000, false, 10⟩
+    (by native_decide)
+
+theorem stress_opt_2d_xy_nonneg :
+    ∀ ρ, Box.envMem ρ B01_2D → (∀ i, i ≥ B01_2D.length → ρ i = 0) →
+      (0 : ℚ) ≤ Expr.eval ρ (Expr.mul (Expr.var 0) (Expr.var 1)) :=
+  verify_global_lower_bound
+    (Expr.mul (Expr.var 0) (Expr.var 1))
+    (ExprSupportedCore.mul (ExprSupportedCore.var 0) (ExprSupportedCore.var 1))
+    B01_2D 0 ⟨1500, 1/1000, false, 10⟩
+    (by native_decide)
+
+theorem stress_opt_3d_sum_sq :
+    ∀ ρ, Box.envMem ρ B01_3D → (∀ i, i ≥ B01_3D.length → ρ i = 0) →
+      Expr.eval ρ
+        (Expr.add (Expr.add (Expr.mul (Expr.var 0) (Expr.var 0))
+                             (Expr.mul (Expr.var 1) (Expr.var 1)))
+                  (Expr.mul (Expr.var 2) (Expr.var 2))) ≤ (3 : ℚ) :=
+  verify_global_upper_bound
+    (Expr.add (Expr.add (Expr.mul (Expr.var 0) (Expr.var 0)) (Expr.mul (Expr.var 1) (Expr.var 1)))
+              (Expr.mul (Expr.var 2) (Expr.var 2)))
+    (ExprSupportedCore.add
+      (ExprSupportedCore.add
+        (ExprSupportedCore.mul (ExprSupportedCore.var 0) (ExprSupportedCore.var 0))
+        (ExprSupportedCore.mul (ExprSupportedCore.var 1) (ExprSupportedCore.var 1)))
+      (ExprSupportedCore.mul (ExprSupportedCore.var 2) (ExprSupportedCore.var 2)))
+    B01_3D 3 ⟨2000, 1/1000, false, 10⟩
+    (by native_decide)
+```

@@ -1,0 +1,101 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Frame.Variante2f42bce8576f5a63a34c8f0a1e3848cfe2d1003bc5548bbd4ff5a0deba34c17
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e270f04226d14f8bf03989a99814e6276de780be` · SHA-256 `046bc5c22faccdbc7ccb78121a2e0d0751055e945fa03e2cdb9bd66ea087b30d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TransferHypNames.Variantb5da29c08b6597f1880d1b4123b6607f50b5bb6ef64922779f532a505de3ba02","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b5da29c08b6597f1880d1b4123b6607f50b5bb6ef64922779f532a505de3ba02","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.TransferHypNames.Variantb5da29c08b6597f1880d1b4123b6607f50b5bb6ef64922779f532a505de3ba02","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"b5da29c08b6597f1880d1b4123b6607f50b5bb6ef64922779f532a505de3ba02","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Elab/Tactic/Do/ProofMode/Frame.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lars König. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sebastian Graf
+-/
+module
+
+prelude
+public import Std.Tactic.Do.Syntax
+public import Lean.Elab.Tactic.Do.ProofMode.Focus
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TransferHypNames.Variantb5da29c08b6597f1880d1b4123b6607f50b5bb6ef64922779f532a505de3ba02
+
+public section
+
+namespace Lean.Elab.Tactic.Do.ProofMode
+open Std.Do SPred.Tactic
+open Lean Elab Tactic Meta
+
+-- #synth ∀ {w x P Q y z}, HasFrame spred(⌜w = 2⌝ ∧ ⌜x = 3⌝ ∧ P ∧ ⌜y = 4⌝ ∧ Q ∧ ⌜z=6⌝) _ _
+
+/-- If `P'` is a conjunction of unnamed hypotheses that are a subset of the named hypotheses of `P`,
+transfer the names of the hypotheses of `P` to the hypotheses of `P'`. -/
+partial def transferHypNames (P P' : Expr) : MetaM Expr := (·.snd) <$> label (collectHyps P) P'
+  where
+    collectHyps (P : Expr) (acc : List Hyp := []) : List Hyp :=
+      if let some hyp := parseHyp? P then
+        hyp :: acc
+      else if let some (_, _, L, R) := parseAnd? P then
+        collectHyps L (collectHyps R acc)
+      else
+        acc
+
+    label (Ps : List Hyp) (P' : Expr) : MetaM (List Hyp × Expr) := do
+      let P' ← instantiateMVarsIfMVarApp P'
+      if let some _ := parseEmptyHyp? P' then
+        return (Ps, P')
+      if let some (u, σs, L, R) := parseAnd? P' then
+        let (Ps, L') ← label Ps L
+        let (Ps, R') ← label Ps R
+        return (Ps, SPred.mkAnd! u σs L' R')
+      else
+        let mut Ps' := Ps
+        repeat
+          -- If we cannot find the hyp, it might be in a nested conjunction.
+          -- Just pick a default name for it.
+          let name ← mkFreshUserName `h
+          let uniq ← mkFreshId
+          let P :: Ps'' := Ps' | return (Ps, { name, uniq, p := P' : Hyp }.toExpr)
+          Ps' := Ps''
+          if ← isDefEq P.p P' then
+            return (Ps, { P with p := P' }.toExpr)
+        unreachable!
+
+def mFrameCore [Monad m] [MonadControlT MetaM m] [MonadLiftT MetaM m]
+  (goal : MGoal) (kFail : m Expr) (kSuccess : Expr /-φ:Prop-/ → Expr /-h:φ-/ → MGoal → m Expr) : m Expr := do
+  let P := goal.hyps
+  let φ ← mkFreshExprMVar (mkSort .zero)
+  let P' ← mkFreshExprMVar (mkApp (mkConst ``SPred [goal.u]) goal.σs)
+  if let .some inst ← trySynthInstance (mkApp4 (mkConst ``HasFrame [goal.u]) goal.σs P P' φ) then
+    if ← isDefEq (mkConst ``True) φ then return (← kFail)
+    -- copy the name of P to P' if it is a named hypothesis
+    let P' ← transferHypNames P P'
+    let goal := { goal with hyps := P' }
+    withLocalDeclD (← liftMetaM <| mkFreshUserName `h) φ fun hφ => do
+      let prf ← kSuccess φ hφ goal
+      let prf ← mkLambdaFVars #[hφ] prf
+      let prf := mkApp7 (mkConst ``Frame.frame [goal.u]) goal.σs P P' goal.target φ inst prf
+      return prf
+  else
+    kFail
+
+def mTryFrame [Monad m] [MonadControlT MetaM m] [MonadLiftT MetaM m]
+  (goal : MGoal) (k : MGoal → m Expr) : m Expr :=
+  mFrameCore goal (k goal) (fun _ _ goal => k goal)
+
+@[builtin_tactic Lean.Parser.Tactic.mframe]
+def elabMFrame : Tactic | _ => do
+  let mvar ← getMainGoal
+  mvar.withContext do
+  let g ← instantiateMVars <| ← mvar.getType
+  let some goal := parseMGoal? g | throwError "not in proof mode"
+  let prf ← mFrameCore goal (fun _ => throwError "Could not infer frame") fun _ _ goal => do
+    let m ← mkFreshExprSyntheticOpaqueMVar goal.toExpr
+    replaceMainGoal [m.mvarId!]
+    return m
+  mvar.assign prf
+```

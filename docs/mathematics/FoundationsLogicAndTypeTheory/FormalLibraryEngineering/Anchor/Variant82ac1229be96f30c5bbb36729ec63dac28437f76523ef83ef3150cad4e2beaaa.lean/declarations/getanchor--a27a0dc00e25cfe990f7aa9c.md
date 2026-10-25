@@ -1,0 +1,131 @@
+# getAnchor
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:c18ab5d7513cd0bb379b32ba527c42d091b81e16e554700798c8ad986fe47231",
+  "kind": "def",
+  "lexical_name": "getAnchor",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "getanchor--a27a0dc00e25cfe990f7aa9c",
+  "source": {
+    "blob": "b3c62c9e1417fd34723792d25f468eed43d98872",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 91,
+    "line": 42,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Anchor/Variant82ac1229be96f30c5bbb36729ec63dac28437f76523ef83ef3150cad4e2beaaa.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a27a0dc00e25cfe990f7aa9ca25241c9a8e8ec55ea1f991368d1779fec007935",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Anchor/Variant82ac1229be96f30c5bbb36729ec63dac28437f76523ef83ef3150cad4e2beaaa.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:c18ab5d7513cd0bb379b32ba527c42d091b81e16e554700798c8ad986fe47231`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 42–91.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+public partial def getAnchor (e : Expr) : GrindM UInt64 := do
+  if let some a := (← get).anchors.find? { expr := e } then
+    return a
+  let a ← match e with
+    | .const declName _ =>
+      /-
+      **Note**: we skip matcher declaration names because they may introduce some
+      "instability". Recall that `match` auxiliary declarations are reused.
+      -/
+      if (← isMatcher declName) then pure 0
+      else pure <| hashName declName
+    | .fvar fvarId =>
+      let userName := (← fvarId.getDecl).userName
+      pure <| hashName userName
+    | .mdata _ b => getAnchor b
+    | .letE n v t b _ =>
+      pure <| mix (hashName n) <| mix (← getAnchor t) <| mix (← getAnchor v) (← getAnchor b)
+    | .lam n d b _ | .forallE n d b _ =>
+      pure <| mix (hashName n) <| mix (← getAnchor d) (← getAnchor b)
+    | .proj _ i s => pure <| mix (hash i) (← getAnchor s)
+    | .bvar idx => pure <| hash idx
+    | .lit v => pure <| hash v
+    | .app .. => e.withApp fun f args => do
+      if isMarkedSubsingletonConst f && args.size == 2 then
+        -- **Note**: we only visit the type of marked subsingleton terms.
+        getAnchor args[0]!
+      else
+        let pinfos ← if f.hasLooseBVars then
+          pure #[]
+        else
+          pure <| (← getFunInfo f).paramInfo
+        let mut r ← getAnchor f
+        for h : i in *...args.size do
+          let arg := args[i]
+          if h : i < pinfos.size then
+            let info := pinfos[i]
+            -- **Note**: we ignore instances we computing stable hash codes
+            -- TODO: evaluate whether we should ignore regular implicit arguments too.
+            unless info.isImplicit do
+              r := mix r (← getAnchor arg)
+          else
+            r := mix r (← getAnchor arg)
+        pure r
+    | .sort _ | .mvar _ => pure 0
+  modify fun s => { s with anchors := s.anchors.insert { expr := e } a }
+  return a
+
+/--
+Example: `{ numDigits := 4, anchorPrefix := 0x0c88 }.matches 0x0c88ab10ef20206a` returns `true`
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Anchor/Variant82ac1229be96f30c5bbb36729ec63dac28437f76523ef83ef3150cad4e2beaaa.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Anchor/Variant82ac1229be96f30c5bbb36729ec63dac28437f76523ef83ef3150cad4e2beaaa.lean#L42).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b3c62c9e1417fd34723792d25f468eed43d98872` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

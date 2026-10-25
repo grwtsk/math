@@ -1,0 +1,114 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TacticsExtra.Variantab37f8066e7a2eec53ed9573eb3c9dcae6f6b9d8cbb20820f3fc7c3233d2e2eb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91568ad24260855f7cd608921279594e4ca2a7c9` · SHA-256 `adb31a0343fede1f6ff278e46b8aab25ce923c97a776693edffef079efbe2edc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Meta.Variant1f028ce33f212c80897ef51b591953a5cc404b2b16c0f31bd99fdf4f249ff241","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1f028ce33f212c80897ef51b591953a5cc404b2b16c0f31bd99fdf4f249ff241","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Meta.Variant1f028ce33f212c80897ef51b591953a5cc404b2b16c0f31bd99fdf4f249ff241","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"1f028ce33f212c80897ef51b591953a5cc404b2b16c0f31bd99fdf4f249ff241","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/TacticsExtra.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura, Mario Carneiro
+-/
+module
+
+prelude
+public meta import Init.Meta
+public import Init.Tactics
+import Init.Data.Array.Basic
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Meta.Variant1f028ce33f212c80897ef51b591953a5cc404b2b16c0f31bd99fdf4f249ff241
+
+public section
+
+/-!
+Extra tactics and implementation for some tactics defined at `Init/Tactic.lean`
+-/
+namespace Lean.Parser.Tactic
+
+private meta def expandIfThenElse
+    (ifTk thenTk elseTk pos neg : Syntax)
+    (mkIf : Term → Term → MacroM Term) : MacroM (TSyntax `tactic) := do
+  let mkCase tk holeOrTacticSeq mkName : MacroM (Term × Array (TSyntax `tactic)) := do
+    if holeOrTacticSeq.isOfKind `Lean.Parser.Term.syntheticHole then
+      pure (⟨holeOrTacticSeq⟩, #[])
+    else if holeOrTacticSeq.isOfKind `Lean.Parser.Term.hole then
+      pure (← mkName, #[])
+    else if tk.isMissing then
+      pure (← `(sorry), #[])
+    else
+      let hole ← withFreshMacroScope mkName
+      let holeId : Ident := ⟨hole.raw[1]⟩
+      let tacticSeq : TSyntax `Lean.Parser.Tactic.tacticSeq := ⟨holeOrTacticSeq⟩
+      -- Use `missing` for ref to ensure that the source range is the same as `holeOrTacticSeq`'s.
+      let tacticSeq : TSyntax `Lean.Parser.Tactic.tacticSeq ← MonadRef.withRef .missing `(tacticSeq|
+        with_annotate_state $tk skip
+        ($tacticSeq))
+      let case ← withRef tk <| `(tactic| case $holeId:ident =>%$tk $tacticSeq:tacticSeq)
+      pure (hole, #[case])
+  let (posHole, posCase) ← mkCase thenTk pos `(?pos)
+  let (negHole, negCase) ← mkCase elseTk neg `(?neg)
+  `(tactic| ((open Classical in refine%$ifTk $(← mkIf posHole negHole)); $[$(posCase ++ negCase)]*))
+
+macro_rules
+  | `(tactic| if%$tk $h : $c then%$ttk $pos else%$etk $neg) =>
+    -- Limit ref variability for incrementality; see Note [Incremental Macros]
+    withRef tk do
+      expandIfThenElse tk ttk etk pos neg fun pos neg => `(if $h : $c then $pos else $neg)
+
+macro_rules
+  | `(tactic| if%$tk $c then%$ttk $pos else%$etk $neg) =>
+    -- Limit ref variability for incrementality; see Note [Incremental Macros]
+    withRef tk do
+      expandIfThenElse tk ttk etk pos neg fun pos neg => `(if h : $c then $pos else $neg)
+
+/--
+`iterate n tac` runs `tac` exactly `n` times.
+`iterate tac` runs `tac` repeatedly until failure.
+
+`iterate`'s argument is a tactic sequence,
+so multiple tactics can be run using `iterate n (tac₁; tac₂; ⋯)` or
+```lean
+iterate n
+  tac₁
+  tac₂
+  ⋯
+```
+-/
+syntax "iterate" (ppSpace num)? ppSpace tacticSeq : tactic
+macro_rules
+  | `(tactic| iterate $seq:tacticSeq) =>
+    `(tactic| try ($seq:tacticSeq); iterate $seq:tacticSeq)
+  | `(tactic| iterate $n $seq:tacticSeq) =>
+    match n.1.toNat with
+    | 0 => `(tactic| skip)
+    | n+1 => `(tactic| ($seq:tacticSeq); iterate $(quote n) $seq:tacticSeq)
+
+/--
+Rewrites with the given rules, normalizing casts prior to each step.
+-/
+syntax "rw_mod_cast" optConfig rwRuleSeq (location)? : tactic
+macro_rules
+  | `(tactic| rw_mod_cast $cfg:optConfig [$rules,*] $[$loc]?) => do
+    let tacs ← rules.getElems.mapM fun rule =>
+      `(tactic| (norm_cast at *; rw $cfg [$rule] $[$loc]?))
+    `(tactic| ($[$tacs]*))
+
+/--
+Normalize casts in the goal and the given expression, then close the goal with `exact`.
+-/
+macro "exact_mod_cast " e:term : tactic => `(tactic| exact mod_cast ($e : _))
+
+/--
+Normalize casts in the goal and the given expression, then `apply` the expression to the goal.
+-/
+macro "apply_mod_cast " e:term : tactic => `(tactic| apply mod_cast ($e : _))
+
+end Lean.Parser.Tactic
+````

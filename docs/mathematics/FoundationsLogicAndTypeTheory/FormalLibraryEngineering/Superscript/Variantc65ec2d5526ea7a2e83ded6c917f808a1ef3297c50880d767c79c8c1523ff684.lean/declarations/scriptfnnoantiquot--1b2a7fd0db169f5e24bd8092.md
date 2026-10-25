@@ -1,0 +1,148 @@
+# scriptFnNoAntiquot
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:c85482672e7f286b1f1bff40e2780ed7a33a80f55617fc0119803cfa500b2804",
+  "kind": "def",
+  "lexical_name": "scriptFnNoAntiquot",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "scriptfnnoantiquot--1b2a7fd0db169f5e24bd8092",
+  "source": {
+    "blob": "dff7155caf8ce49bc615073aa197eeddbabe3256",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 194,
+    "line": 128,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Superscript/Variantc65ec2d5526ea7a2e83ded6c917f808a1ef3297c50880d767c79c8c1523ff684.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1b2a7fd0db169f5e24bd8092d6a7ef0063cb7ed8f27f8cb9c176f782192d1395",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Superscript/Variantc65ec2d5526ea7a2e83ded6c917f808a1ef3297c50880d767c79c8c1523ff684.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:c85482672e7f286b1f1bff40e2780ed7a33a80f55617fc0119803cfa500b2804`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 128–194.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+partial def scriptFnNoAntiquot (m : Mapping) (errorMsg : String) (p : ParserFn)
+    (many := true) : ParserFn := fun c s =>
+  let start := s.pos
+  satisfyTokensFn m.toNormal.contains errorMsg many c s (k := fun toks s => Id.run do
+    let input := c.input
+    let mut newStr := ""
+    -- This consists of a sorted array of `(from, to)` pairs, where indexes `from+i` in `newStr`
+    -- such that `from+i < from'` for the next element of the array, are mapped to `to+i`.
+    let mut aligns := #[((0 : String.Pos), start)]
+    for (start, stopTk, stopWs) in toks do
+      let mut pos := start
+      while pos < stopTk do
+        let c := input.get pos
+        let c' := m.toNormal[c]!
+        newStr := newStr.push c'
+        pos := pos + c
+        if c.utf8Size != c'.utf8Size then
+          aligns := aligns.push (newStr.endPos, pos)
+      newStr := newStr.push ' '
+      if stopWs.1 - stopTk.1 != 1 then
+        aligns := aligns.push (newStr.endPos, stopWs)
+    let ictx := mkInputContext newStr "<superscript>"
+    let s' := p.run ictx c.toParserModuleContext c.tokens (mkParserState newStr)
+    let rec /-- Applies the alignment mapping to a position. -/
+    align (pos : String.Pos) :=
+      let i := partitionPoint aligns (·.1 ≤ pos)
+      let (a, b) := aligns[i - 1]!
+      pos - a + b
+    let s := { s with pos := align s'.pos, errorMsg := s'.errorMsg }
+    if s.hasError then return s
+    let rec
+    /-- Applies the alignment mapping to a `Substring`. -/
+    alignSubstr : Substring → Substring
+      | ⟨_newStr, start, stop⟩ => ⟨input, align start, align stop⟩,
+    /-- Applies the alignment mapping to a `SourceInfo`. -/
+    alignInfo : SourceInfo → SourceInfo
+      | .original leading pos trailing endPos =>
+        -- Marking these as original breaks semantic highlighting,
+        -- marking them as canonical breaks the unused variables linter. :(
+        .original (alignSubstr leading) (align pos) (alignSubstr trailing) (align endPos)
+      | .synthetic pos endPos canonical =>
+        .synthetic (align pos) (align endPos) canonical
+      | .none => .none,
+     /-- Applies the alignment mapping to a `Syntax`. -/
+     alignSyntax : Syntax → Syntax
+      | .missing => .missing
+      | .node info kind args => .node (alignInfo info) kind (args.map alignSyntax)
+      | .atom info val =>
+        -- We have to preserve the unsubscripted `val` even though it breaks `Syntax.reprint`
+        -- because basic parsers like `num` read the `val` directly
+        .atom (alignInfo info) val
+      | .ident info rawVal val preresolved =>
+        .ident (alignInfo info) (alignSubstr rawVal) val preresolved
+    s.pushSyntax (alignSyntax s'.stxStack.back)
+  )
+
+/-- The super/subscript parser.
+
+* `m`: the character mapping
+* `antiquotName`: the name to use for antiquotation bindings `$a:antiquotName`.
+  Note that the actual syntax kind bound will be the body kind (parsed by `p`), not `kind`.
+* `errorMsg`: shown when the parser does not match
+* `p`: the inner parser (usually `term`), to be called on the body of the superscript
+* `many`: if false, whitespace is not allowed inside the superscript
+* `kind`: the term will be wrapped in a node with this kind;
+  generally this is a name of the parser declaration itself.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Superscript/Variantc65ec2d5526ea7a2e83ded6c917f808a1ef3297c50880d767c79c8c1523ff684.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Superscript/Variantc65ec2d5526ea7a2e83ded6c917f808a1ef3297c50880d767c79c8c1523ff684.lean#L128).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `dff7155caf8ce49bc615073aa197eeddbabe3256` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

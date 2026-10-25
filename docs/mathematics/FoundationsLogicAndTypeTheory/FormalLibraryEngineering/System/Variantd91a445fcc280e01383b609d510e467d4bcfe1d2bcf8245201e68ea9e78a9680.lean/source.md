@@ -1,0 +1,334 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.System.Variantd91a445fcc280e01383b609d510e467d4bcfe1d2bcf8245201e68ea9e78a9680
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `071c9e4b765496711616fe4c9cbb028d3d17f388` · SHA-256 `7cf68a728fd41fe9eaee16dad07cb9131405d4c8ad0b618168455a8c8702bb38`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.GroupId.Variant4f55caf319f26e780e01272267ec87b56f7d16c7ff68daa59d42594f5c6746e4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4f55caf319f26e780e01272267ec87b56f7d16c7ff68daa59d42594f5c6746e4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.GroupId.Variant4f55caf319f26e780e01272267ec87b56f7d16c7ff68daa59d42594f5c6746e4","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"4f55caf319f26e780e01272267ec87b56f7d16c7ff68daa59d42594f5c6746e4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Async/System.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Std.Time
+public import Std.Internal.UV.System
+public import Std.Data.HashMap
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.GroupId.Variant4f55caf319f26e780e01272267ec87b56f7d16c7ff68daa59d42594f5c6746e4
+
+public section
+
+/-!
+This module contains all system related functions and environment variables
+manipulation.
+-/
+
+open Std Time
+open System
+open Std.Internal
+
+namespace Std
+namespace Async
+namespace System
+
+/--
+A group identifier, represented by a numeric ID in UNIX systems (e.g. 1000).
+-/
+structure GroupId where
+  /--
+  The numeric group ID.
+  -/
+  toNat : Nat
+deriving Inhabited, DecidableEq, Ord
+
+instance : Repr GroupId where
+  reprPrec g := Repr.addAppParen ("GroupId.mk " ++ repr g.toNat)
+
+/--
+A user identifier, represented by a numeric ID in UNIX systems  (e.g. 1001).
+-/
+structure UserId where
+  /--
+  The numeric user ID.
+  -/
+  toNat : Nat
+deriving Inhabited, DecidableEq, Ord
+
+instance : Repr UserId where
+  reprPrec u := Repr.addAppParen ("UserId.mk " ++ repr u.toNat)
+
+/--
+Information about the current user.
+-/
+structure SystemUser where
+  /--
+  The user's name.
+  -/
+  username : String
+
+  /--
+  The user's ID.
+  -/
+  userId : Option UserId
+
+  /--
+  The group the user belongs to.
+  -/
+  groupId : Option GroupId
+
+  /--
+  The user's login shell.
+  -/
+  shell : Option String
+
+  /--
+  The home directory of the user.
+  -/
+  homeDir : Option System.FilePath
+deriving Inhabited, DecidableEq, Repr
+
+/--
+Information about a group.
+-/
+structure GroupInfo where
+  /--
+  The name of the group.
+  -/
+  groupName : String
+
+  /--
+  The ID of the group.
+  -/
+  groupId : GroupId
+
+  /--
+  The list of users in the group.
+  -/
+  members : Array String
+  deriving Repr, Inhabited
+
+/--
+Represents the breakdown of CPU time usage in milliseconds.
+-/
+structure CPUTimes where
+
+  /--
+  Time spent in user mode.
+  -/
+  userTime : Millisecond.Offset
+
+  /--
+  Time spent on low-priority user processes.
+  -/
+  niceTime : Millisecond.Offset
+
+  /--
+  time spent in kernel mode.
+  -/
+  systemTime : Millisecond.Offset
+
+  /--
+  Time the CPU was idle.
+  -/
+  idleTime : Millisecond.Offset
+
+  /--
+  Time spent servicing hardware interrupts.
+  -/
+  interruptTime  : Millisecond.Offset
+deriving Inhabited, DecidableEq, Repr
+
+/--
+Information about a single CPU core.
+-/
+structure CPUInfo where
+  /--
+  CPU model name.
+  -/
+  model : String
+
+  /--
+  The approximate clock speed of the CPU core in MHz.
+  -/
+  speed : Nat
+
+  /--
+  The time spent on the CPU.
+  -/
+  times : CPUTimes
+deriving Inhabited, DecidableEq, Repr
+
+/--
+Gets information about the operating system.
+-/
+structure OSInfo where
+  /--
+  OS name.
+  -/
+  name : String
+
+  /--
+  OS version.
+  -/
+  release : String
+
+  /--
+  OS build.
+  -/
+  version : String
+
+  /--
+  CPU architecture.
+  -/
+  machine : String
+deriving Repr, Inhabited
+
+/--
+All the environment variables.
+-/
+structure Environment where
+  private mk ::
+  /--
+  The list of all environment variables.
+  -/
+  private toHashMap : HashMap String String
+deriving Inhabited, Repr
+
+@[inline]
+def Environment.get? (env : Environment) (key : String) : Option String :=
+  env.toHashMap[key]?
+
+/--
+Gets information about the operating system.
+-/
+def getSystemInfo : IO OSInfo := do
+  let uname ← UV.System.osUname
+  return {
+    name := uname.sysname
+    release := uname.release
+    version := uname.version
+    machine := uname.machine
+  }
+
+/--
+Gets information about the CPU cores.
+-/
+def getCPUInfo : IO (Array CPUInfo) := do
+  let cpuinfo ← UV.System.cpuInfo
+  return cpuinfo.map fun coreInfo =>
+    {
+      model := coreInfo.model
+      speed := UInt64.toNat <| coreInfo.speed
+      times := {
+        userTime := Millisecond.Offset.ofNat <| UInt64.toNat <| coreInfo.times.user
+        niceTime := Millisecond.Offset.ofNat <| UInt64.toNat <| coreInfo.times.nice
+        systemTime := Millisecond.Offset.ofNat <| UInt64.toNat <| coreInfo.times.sys
+        idleTime := Millisecond.Offset.ofNat <| UInt64.toNat <| coreInfo.times.idle
+        interruptTime := Millisecond.Offset.ofNat <| UInt64.toNat <| coreInfo.times.irq
+      }
+    }
+
+/--
+Gets the system uptime in seconds.
+-/
+@[inline]
+def getUpTime : IO Second.Offset := do
+  return .ofNat <| UInt64.toNat (← UV.System.uptime)
+
+/--
+The current high-resolution timestamp in nanoseconds. It is relative to an arbitrary time in the past.
+-/
+@[inline]
+def getHighResolutionTime : IO Nanosecond.Offset := do
+  return .ofNat <| UInt64.toNat <| (← UV.System.hrtime)
+
+/--
+Gets the hostname of the machine.
+-/
+@[inline]
+def getHostName : IO String :=
+  UV.System.osGetHostname
+
+/--
+Sets an environment variable to `value`.
+-/
+@[inline]
+def setEnvVar (name : String) (value : String) : IO Unit := do
+  UV.System.osSetenv name value
+
+/--
+Gets an environment variable.
+-/
+@[inline]
+def getEnvVar (name : String) : IO (Option String) :=
+  UV.System.osGetenv name
+
+/--
+Unset an environment variable.
+-/
+@[inline]
+def unsetEnvVar (name : String) : IO Unit := do
+  UV.System.osUnsetenv name
+
+/--
+Gets all environment variables.
+-/
+@[inline]
+def getEnv : IO Environment := do
+  let array ← UV.System.osEnviron
+  return ⟨HashMap.insertMany (.emptyWithCapacity array.size) array⟩
+
+/--
+Gets the current user's home directory.
+-/
+@[inline]
+def getHomeDir : IO FilePath :=
+  FilePath.mk <$> UV.System.osHomedir
+
+/--
+Gets the temporary directory.
+-/
+@[inline]
+def getTmpDir : IO FilePath := do
+  FilePath.mk <$> UV.System.osTmpdir
+
+/--
+Gets the current user by using `passwd`.
+
+On Windows systems, `userId`, `groupId` and `shell` are set to none
+-/
+def getCurrentUser : IO SystemUser := do
+  let passwd ← UV.System.osGetPasswd
+  return {
+    userId := (UserId.mk ∘ UInt64.toNat) <$> passwd.uid,
+    groupId := (GroupId.mk ∘ UInt64.toNat) <$> passwd.gid,
+    username := passwd.username,
+    homeDir := passwd.homedir,
+    shell := passwd.shell
+  }
+
+/--
+Gets the group by its ID.
+-/
+def getGroup (groupId : GroupId) : IO (Option GroupInfo) := do
+  let groupInfo ← UV.System.osGetGroup groupId.toNat.toUInt64
+
+  return groupInfo <&> fun group => {
+    groupName := group.groupname
+    groupId := GroupId.mk <| UInt64.toNat group.gid
+    members := group.members
+  }
+
+end System
+end Async
+end Std
+```

@@ -1,0 +1,61 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ContinuousAssurance.Variante306709d69100a2eee48e679b47b7533a2ac90a818a669716ac49be29dfc90df
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `308f4c69de97a99dc784077aed26a26ad606ab90` · SHA-256 `bab2853a5f250b9813a5ba1c089be5e5a27d34ea07ad9eb1e1966cb28f624bf4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Authority.Varianta230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Authority.Varianta230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf","mathematical_subject":"Foundations.Unclassified","original_sha256":"a230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/Surface/ContinuousAssurance.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Surface.ContinuousAssurance.Authority
+import Surface.ContinuousAssurance.AssuranceLevel
+import Surface.ContinuousAssurance.Ownership
+import Surface.ContinuousAssurance.Evidence
+import Surface.ContinuousAssurance.Transformation
+import Surface.ContinuousAssurance.ProgressiveEvidence
+import Surface.ContinuousAssurance.QuantizationLevel
+import Surface.ContinuousAssurance.CompilerTarget
+import Surface.ContinuousAssurance.AnalyticTarget
+import Surface.ContinuousAssurance.PositiveQuantization
+import Surface.ContinuousAssurance.InvolutiveRelaxation
+import Surface.ContinuousAssurance.AnalyticTheoremRegistry
+import Surface.ContinuousAssurance.AnalyticTheoremPolicy
+import Surface.ContinuousAssurance.ReductiveSiteSelection
+import Surface.ContinuousAssurance.ReductiveSelectionTrace
+import Surface.ContinuousAssurance.SurgicalSitePlan
+import Surface.ContinuousAssurance.QuantizationDecomposition
+import Surface.ContinuousAssurance.QuantizedEvidence
+import Surface.ContinuousAssurance.QuantizationCommunication
+import Surface.ContinuousAssurance.Claim
+import Surface.ContinuousAssurance.Dependency
+import Surface.ContinuousAssurance.Profile
+import Surface.ContinuousAssurance.Pipeline
+import Surface.ContinuousAssurance.PipelineSemantics
+import Surface.ContinuousAssurance.InteractiveDevelopment
+import Surface.ContinuousAssurance.Communication
+import Surface.ContinuousAssurance.LiteratureTranslation
+import Surface.ContinuousAssurance.Index.Core
+import Surface.ContinuousAssurance.Index.Records
+import Surface.ContinuousAssurance.Index.Change
+import Surface.ContinuousAssurance.Index.Validation
+import Surface.ContinuousAssurance.Index.Query
+import Surface.ContinuousAssurance.Index.Serialization
+import Surface.ContinuousAssurance.Index.ReviewBinding
+import Surface.ContinuousAssurance.Index.AuthorizationBinding
+import Surface.ContinuousAssurance.Index.PipelineExtension
+import Surface.ContinuousAssurance.Communication.Restriction
+import Surface.ContinuousAssurance.Communication.Cech
+import Surface.ContinuousAssurance.Communication.Obstruction
+import Surface.ContinuousAssurance.Authorization
+import Surface.ContinuousAssurance.Refinement
+import Surface.ContinuousAssurance.Reflexive
+import Surface.ContinuousAssurance.Workspace
+import Surface.ContinuousAssurance.WorldModel
+import Surface.ContinuousAssurance.Examples
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Authority.Varianta230033dd2adf32a86191d4da1c866dfa06134e07029a016616499dec7bebfcf
+
+```

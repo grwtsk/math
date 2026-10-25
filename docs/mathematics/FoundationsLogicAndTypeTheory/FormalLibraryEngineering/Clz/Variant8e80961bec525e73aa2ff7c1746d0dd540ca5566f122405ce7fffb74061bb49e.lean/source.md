@@ -1,0 +1,108 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Clz.Variant8e80961bec525e73aa2ff7c1746d0dd540ca5566f122405ce7fffb74061bb49e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `06443f0a47a6b99f877a748457970cf2433a613b` · SHA-256 `02b79217f5888032f36dfed7ee01ac741e99ef00bc0c5d2ea867b4f936e56b6f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.BlastClz.Variantf7ffbe47a33d34aeb53411978bc055040af743bd20abb40a113082e49426f86e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f7ffbe47a33d34aeb53411978bc055040af743bd20abb40a113082e49426f86e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.BlastClz.Variantf7ffbe47a33d34aeb53411978bc055040af743bd20abb40a113082e49426f86e","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"f7ffbe47a33d34aeb53411978bc055040af743bd20abb40a113082e49426f86e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Tactic/BVDecide/Bitblast/BVExpr/Circuit/Impl/Operations/Clz.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Luisa Cicolini, Siddharth Bhat, Henrik Böving
+-/
+module
+
+prelude
+public import Std.Tactic.BVDecide.Bitblast.BVExpr.Circuit.Impl.Const
+public import Std.Sat.AIG.If
+import Init.Omega
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.BlastClz.Variantf7ffbe47a33d34aeb53411978bc055040af743bd20abb40a113082e49426f86e
+
+@[expose] public section
+
+/-!
+This module contains the implementation of a bitblaster for `BitVec.clz`.
+-/
+
+namespace Std.Tactic.BVDecide
+
+open Std.Sat
+
+variable [Hashable α] [DecidableEq α]
+
+namespace BVExpr
+namespace bitblast
+
+def blastClz (aig : AIG α) (x : AIG.RefVec aig w) :
+    AIG.RefVecEntry α w :=
+  let wconst := blastConst aig w
+  go aig x 0 wconst
+where
+  go (aig : AIG α) (x : AIG.RefVec aig w) (curr : Nat) (acc : AIG.RefVec aig w) :=
+    if hc : curr < w then
+      let lhs := blastConst aig (w := w) (w - 1 - curr)
+      let res := AIG.RefVec.ite aig ⟨x.get curr hc, lhs, acc⟩
+      let aig := res.aig
+      let acc := res.vec
+      have := AIG.LawfulVecOperator.le_size (f := AIG.RefVec.ite) ..
+      let x : AIG.RefVec aig w := x.cast this
+      go aig x (curr + 1) acc
+    else
+      ⟨aig, acc⟩
+  termination_by w - curr
+
+namespace blastClz
+
+end blastClz
+
+theorem blastClz.go_le_size (aig : AIG α) (curr : Nat) (acc : AIG.RefVec aig w)
+    (xc : AIG.RefVec aig w) :
+    aig.decls.size ≤ (go aig xc curr acc).aig.decls.size := by
+  unfold go
+  dsimp only
+  split
+  · refine Nat.le_trans ?_ (by apply go_le_size)
+    apply AIG.LawfulVecOperator.le_size (f := AIG.RefVec.ite)
+  · simp
+termination_by w - curr
+
+theorem blastClz.go_decl_eq (aig : AIG α) (curr : Nat) (acc : AIG.RefVec aig w)
+    (xc : AIG.RefVec aig w) :
+    ∀ (idx : Nat) h1 h2,
+        (go aig xc curr acc).aig.decls[idx]'h1 = aig.decls[idx]'h2 := by
+  generalize hgo : go aig xc curr acc = res
+  unfold go at hgo
+  dsimp only at hgo
+  split at hgo
+  · rw [← hgo]
+    intros
+    rw [blastClz.go_decl_eq, AIG.LawfulVecOperator.decl_eq (f := AIG.RefVec.ite)]
+    apply AIG.LawfulVecOperator.lt_size_of_lt_aig_size (f := AIG.RefVec.ite)
+    assumption
+  · simp [← hgo]
+termination_by w - curr
+
+instance : AIG.LawfulVecOperator α AIG.RefVec blastClz where
+  le_size := by
+    intros
+    unfold blastClz
+    dsimp only
+    apply blastClz.go_le_size
+  decl_eq := by
+    intros
+    unfold blastClz
+    dsimp only
+    apply blastClz.go_decl_eq
+
+end bitblast
+end BVExpr
+
+end Std.Tactic.BVDecide
+```

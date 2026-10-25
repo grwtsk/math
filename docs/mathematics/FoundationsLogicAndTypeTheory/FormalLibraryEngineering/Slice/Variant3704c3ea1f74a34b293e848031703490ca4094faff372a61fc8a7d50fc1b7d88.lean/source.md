@@ -1,0 +1,127 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Slice.Variant3704c3ea1f74a34b293e848031703490ca4094faff372a61fc8a7d50fc1b7d88
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `213075eaf7ca988f6f5110922b24133969483199` · SHA-256 `b6a59bbffc38e3f44e2be129c0a12831ab9d47869108888822446ac131b81d2d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Slice.Variant204a4d3070a366d10d3e4c5ad0418a1136228437828df56d1c30b24836392c74","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"204a4d3070a366d10d3e4c5ad0418a1136228437828df56d1c30b24836392c74","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Slice.Variant204a4d3070a366d10d3e4c5ad0418a1136228437828df56d1c30b24836392c74","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"204a4d3070a366d10d3e4c5ad0418a1136228437828df56d1c30b24836392c74","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Data/TreeMap/Slice.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Wojciech Różowski
+-/
+module
+
+prelude
+public import Std.Data.TreeMap.Raw.Slice
+public import Std.Data.TreeMap.Basic
+
+/-!
+This module provides slice notation for `TreeMap` slices and implements an iterator
+for those slices.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Slice.Variant204a4d3070a366d10d3e4c5ad0418a1136228437828df56d1c30b24836392c74
+
+namespace Std.TreeMap
+open Std.Iterators
+
+public instance {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) :
+    Rii.Sliceable (TreeMap α β cmp) α (DTreeMap.Internal.Const.RiiSlice α β) where
+  mkSlice carrier range := ⟨carrier.inner.inner, range⟩
+
+@[simp] public theorem toList_rii {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) {t : TreeMap α β cmp} :
+    t[*...*].toList = t.toList := by
+  apply DTreeMap.Internal.Const.toList_rii
+
+public instance {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) :
+    Ric.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RicSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_ric {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) [TransCmp cmp]
+    {t : TreeMap α β cmp} {bound : α} : t[*...=bound].toList =
+      t.toList.filter (fun e => (cmp e.fst bound).isLE) :=
+  @DTreeMap.Internal.Const.toList_ric α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) bound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Rio.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RioSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_rio {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) [TransCmp cmp]
+    {t : TreeMap α β cmp} {bound : α} : t[*...<bound].toList =
+      t.toList.filter (fun e => (cmp e.fst bound).isLT) :=
+  @DTreeMap.Internal.Const.toList_rio α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) bound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Rci.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RciSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_rci {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare)
+    [TransCmp cmp] {t : TreeMap α β cmp} {bound : α} : t[bound...*].toList =
+      t.toList.filter (fun e => (cmp e.fst bound).isGE) :=
+  @DTreeMap.Internal.Const.toList_rci α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) bound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Rco.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RcoSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_rco {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) [TransCmp cmp]
+  {t : TreeMap α β cmp} {lowerBound upperBound : α} :
+  t[lowerBound...<upperBound].toList =
+    t.toList.filter (fun e => (cmp e.fst lowerBound).isGE ∧ (cmp e.fst upperBound).isLT) :=
+  @DTreeMap.Internal.Const.toList_rco α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) lowerBound upperBound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Rcc.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RccSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_rcc {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare)  [TransCmp cmp]
+    {t : TreeMap α β cmp} {lowerBound upperBound : α} : t[lowerBound...=upperBound].toList =
+    t.toList.filter (fun e => (cmp e.fst lowerBound).isGE ∧ (cmp e.fst upperBound).isLE) :=
+  @DTreeMap.Internal.Const.toList_rcc α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) lowerBound upperBound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Roi.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RoiSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_roi {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) [TransCmp cmp]
+    {t : TreeMap α β cmp} {bound : α} : t[bound<...*].toList =
+      t.toList.filter (fun e => (cmp e.fst bound).isGT) :=
+  @DTreeMap.Internal.Const.toList_roi α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) bound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Roc.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RocSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_roc {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) [TransCmp cmp]
+    {t : TreeMap α β cmp} {lowerBound upperBound : α} :
+    t[lowerBound<...=upperBound].toList =
+      t.toList.filter (fun e => (cmp e.fst lowerBound).isGT ∧ (cmp e.fst upperBound).isLE) :=
+  @DTreeMap.Internal.Const.toList_roc α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) lowerBound upperBound
+
+public instance {α : Type u} {β : Type v} (cmp : α → α → Ordering := by exact compare) :
+    Roo.Sliceable (TreeMap α β cmp) α (@DTreeMap.Internal.Const.RooSlice α β ⟨cmp⟩) :=
+  letI _ : Ord α := ⟨cmp⟩; ⟨fun carrier range => ⟨carrier.inner.inner, range⟩⟩
+
+@[simp] public theorem toList_roo {α : Type u} {β : Type v}
+    (cmp : α → α → Ordering := by exact compare) [TransCmp cmp]
+    {t : TreeMap α β cmp} {lowerBound upperBound : α} : t[lowerBound<...upperBound].toList =
+      t.toList.filter (fun e => (cmp e.fst lowerBound).isGT ∧ (cmp e.fst upperBound).isLT) :=
+  @DTreeMap.Internal.Const.toList_roo α β ⟨cmp⟩ _ t.inner.inner (@t.inner.wf.ordered α (fun _ => β) ⟨cmp⟩ _) lowerBound upperBound
+
+end Std.TreeMap
+```

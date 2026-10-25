@@ -1,0 +1,109 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Embedding.Variantc5e2233b835323c541077e504463379f8f868ec18823aad1bd9b73d85651a767
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f54579d93f406b5039c47df60fb82fe2548ef9a6` · SHA-256 `370a057aaf9c83e04d709ce30fee37c981c67f60852c0b1993e9771205fbbfdc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.SetTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.ExistsEmbeddingDisjointRangeOfAddLeENatCard.Variant5f36b5dc9c1767820477935ddde2deb38912158a8d566f1bdc3f157fba24c336","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5f36b5dc9c1767820477935ddde2deb38912158a8d566f1bdc3f157fba24c336","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.ExistsEmbeddingDisjointRangeOfAddLeENatCard.Variant5f36b5dc9c1767820477935ddde2deb38912158a8d566f1bdc3f157fba24c336","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"5f36b5dc9c1767820477935ddde2deb38912158a8d566f1bdc3f157fba24c336","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/SetTheory/Cardinal/Embedding.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Antoine Chambert-Loir. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Antoine Chambert-Loir
+-/
+module
+
+public import Mathlib.Data.Fin.Tuple.Embedding
+public import Mathlib.Data.Set.Card
+public import Mathlib.SetTheory.Cardinal.NatCard
+public import Mathlib.Data.Set.Finite.Range
+
+/-! # Existence of embeddings from finite types
+
+Let `s : Set α` be a finite set.
+
+* `Fin.Embedding.exists_embedding_disjoint_range_of_add_le_ENat_card`
+  If `s.ncard + n ≤ ENat.card α`,
+  then there exists an embedding `Fin n ↪ α`
+  whose range is disjoint from `s`.
+
+* `Fin.Embedding.exists_embedding_disjoint_range_of_add_le_Nat_card`
+  If `α` is finite and `s.ncard + n ≤ Nat.card α`,
+  then there exists an embedding `Fin n ↪ α`
+  whose range is disjoint from `s`.
+
+* `Fin.Embedding.restrictSurjective_of_add_le_ENatCard`
+  If `m + n ≤ ENat.card α`, then the restriction map
+  from `Fin (m + n) ↪ α` to `Fin m ↪ α` is surjective.
+
+* `Fin.Embedding.restrictSurjective_of_add_le_natCard`
+  If `α` is finite and `m + n ≤ Nat.card α`, then the restriction
+  map from `Fin (m + n) ↪ α` to `Fin m ↪ α` is surjective.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.ExistsEmbeddingDisjointRangeOfAddLeENatCard.Variant5f36b5dc9c1767820477935ddde2deb38912158a8d566f1bdc3f157fba24c336
+
+public section
+
+open Set Fin Function Function.Embedding
+
+namespace Fin.Embedding
+
+variable {α : Type*} {m n : ℕ} {s : Set α}
+
+theorem exists_embedding_disjoint_range_of_add_le_ENat_card
+    [Finite s] (hs : s.ncard + n ≤ ENat.card α) :
+    ∃ y : Fin n ↪ α, Disjoint s (range y) := by
+  rsuffices ⟨y⟩ : Nonempty (Fin n ↪ (sᶜ : Set α))
+  · use y.trans (subtype _)
+    rw [Set.disjoint_right]
+    rintro _ ⟨i, rfl⟩
+    simpa only [← mem_compl_iff] using! Subtype.coe_prop (y i)
+  rcases finite_or_infinite α with hα | hα
+  · let _ : Fintype α := Fintype.ofFinite α
+    classical
+    apply nonempty_of_card_le
+    rwa [Fintype.card_fin, ← add_le_add_iff_left s.ncard,
+      ← Nat.card_eq_fintype_card, Nat.card_coe_set_eq,
+        ncard_add_ncard_compl, ← ENat.natCast_le_natCast,
+        ← ENat.card_eq_coe_natCard, ENat.natCast_add]
+  · exact ⟨valEmbedding.trans s.toFinite.infinite_compl.to_subtype.natEmbedding⟩
+
+theorem exists_embedding_disjoint_range_of_add_le_Nat_card
+    [Finite α] (hs : s.ncard + n ≤ Nat.card α) :
+    ∃ y : Fin n ↪ α, Disjoint s (range y) := by
+  apply exists_embedding_disjoint_range_of_add_le_ENat_card
+  rwa [← ENat.natCast_add, ENat.card_eq_coe_natCard, ENat.natCast_le_natCast]
+
+theorem restrictSurjective_of_add_le_ENatCard (hn : m + n ≤ ENat.card α) :
+    Surjective (fun (x : Fin (m + n) ↪ α) ↦ (Fin.castAddEmb n).trans x) := by
+  intro x
+  obtain ⟨y, hxy⟩ :=
+    exists_embedding_disjoint_range_of_add_le_ENat_card (s := range x)
+      (by simpa [← Nat.card_coe_set_eq, Nat.card_range_of_injective x.injective])
+  use append hxy
+  ext i
+  simp [trans_apply, coe_castAddEmb, append]
+
+theorem restrictSurjective_of_le_ENatCard (hmn : m ≤ n) (hn : n ≤ ENat.card α) :
+    Function.Surjective (fun x : Fin n ↪ α ↦ (castLEEmb hmn).trans x) := by
+  obtain ⟨k, rfl⟩ := Nat.exists_eq_add_of_le hmn
+  exact Fin.Embedding.restrictSurjective_of_add_le_ENatCard hn
+
+theorem restrictSurjective_of_add_le_natCard [Finite α] (hn : m + n ≤ Nat.card α) :
+    Surjective (fun x : Fin (m + n) ↪ α ↦ (castAddEmb n).trans x) := by
+  apply restrictSurjective_of_add_le_ENatCard
+  rwa [← ENat.natCast_add, ENat.card_eq_coe_natCard, ENat.natCast_le_natCast]
+
+theorem restrictSurjective_of_le_natCard [Finite α] (hmn : m ≤ n) (hn : n ≤ Nat.card α) :
+    Function.Surjective (fun x : Fin n ↪ α ↦ (castLEEmb hmn).trans x) := by
+  obtain ⟨k, rfl⟩ := Nat.exists_eq_add_of_le hmn
+  exact Fin.Embedding.restrictSurjective_of_add_le_natCard hn
+
+end Fin.Embedding
+```

@@ -1,0 +1,336 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Timestamp.Variant449fbc1ba6d7897c21d090b20956266e62622b13da488951efb4b8e0e78cdc4c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `421a92c3fee068b72275754ffb4bf4e3be2ed862` · SHA-256 `8f393dba3db2496cd736f1c101d4c42ba29a98278beb7a7e8f4914575d5ded0f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Timestamp.Varianta293e2bfcc06e674cb993d4385042943f3472d97eb4eac844953b81aee2f4a20","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a293e2bfcc06e674cb993d4385042943f3472d97eb4eac844953b81aee2f4a20","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Timestamp.Varianta293e2bfcc06e674cb993d4385042943f3472d97eb4eac844953b81aee2f4a20","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"a293e2bfcc06e674cb993d4385042943f3472d97eb4eac844953b81aee2f4a20","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Time/DateTime/Timestamp.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Init.System.IO
+public import Std.Time.Duration
+public import Std.Time.DateTime.WallTime
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Timestamp.Varianta293e2bfcc06e674cb993d4385042943f3472d97eb4eac844953b81aee2f4a20
+
+public section
+
+namespace Std
+namespace Time
+open Internal
+
+set_option linter.all true
+
+/--
+Represents an exact point in time as a UNIX Epoch timestamp.
+-/
+@[ext]
+structure Timestamp where
+  private mk ::
+
+  /--
+  Duration since the unix epoch.
+  -/
+  val : Duration
+deriving Repr, DecidableEq, Inhabited
+
+instance : LE Timestamp where
+  le x y := x.val ≤ y.val
+
+instance { x y : Timestamp } : Decidable (x ≤ y) :=
+  inferInstanceAs (Decidable (x.val ≤ y.val))
+
+instance : LT Timestamp where
+  lt x y := x.val < y.val
+
+instance { x y : Timestamp } : Decidable (x < y) :=
+  inferInstanceAs (Decidable (x.val < y.val))
+
+instance : ToString Timestamp where
+  toString s := toString s.val.toSeconds
+
+instance : Repr Timestamp where
+  reprPrec s := Repr.addAppParen ("Timestamp.ofNanoseconds " ++ repr s.val.toNanoseconds)
+
+instance : Ord Timestamp where
+  compare := compareOn (·.val)
+
+theorem Timestamp.compare_def :
+    compare (α := Timestamp) = compareOn (·.val) := rfl
+
+instance : TransOrd Timestamp := inferInstanceAs <| TransCmp (compareOn _)
+
+instance : LawfulEqOrd Timestamp where
+  eq_of_compare {a b} h := by
+    simp only [Timestamp.compare_def] at h
+    apply Timestamp.ext
+    exact LawfulEqOrd.eq_of_compare h
+
+namespace Timestamp
+
+/--
+Fetches the current duration from the system.
+-/
+@[extern "lean_get_current_time"]
+opaque now : IO Timestamp
+
+/--
+Converts a `Timestamp` to a `Minute.Offset`.
+-/
+@[inline]
+def toMinutesSinceUnixEpoch (tm : Timestamp) : Minute.Offset :=
+  tm.val.second.toMinutes
+
+/--
+Converts a `Timestamp` to a `Day.Offset`.
+-/
+@[inline]
+def toDaysSinceUnixEpoch (tm : Timestamp) : Day.Offset :=
+  tm.val.second.toDays
+
+/--
+Creates a `Timestamp` from a `Second.Offset`.
+-/
+@[inline]
+def ofSecondsSinceUnixEpoch (secs : Second.Offset) : Timestamp :=
+  ⟨Duration.ofSeconds secs⟩
+
+/--
+Creates a `Timestamp` from a `Nanosecond.Offset`.
+-/
+@[inline]
+def ofNanosecondsSinceUnixEpoch (nanos : Nanosecond.Offset) : Timestamp :=
+  ⟨Duration.ofNanoseconds nanos⟩
+
+/--
+Creates a `Timestamp` from a `Duration`.
+-/
+@[inline]
+def ofDurationSinceUnixEpoch (duration : Duration) : Timestamp :=
+  ⟨duration⟩
+
+/--
+Creates a `Timestamp` from a `Millisecond.Offset`.
+-/
+@[inline]
+def ofMillisecondsSinceUnixEpoch (milli : Millisecond.Offset) : Timestamp :=
+  ⟨Duration.ofNanoseconds milli.toNanoseconds⟩
+
+/--
+Converts a `Timestamp` to a `Second.Offset`.
+-/
+@[inline]
+def toSecondsSinceUnixEpoch (t : Timestamp) : Second.Offset :=
+  t.val.second
+
+/--
+Converts a `Timestamp` to nanoseconds as `Nanosecond.Offset`.
+-/
+@[inline]
+def toNanosecondsSinceUnixEpoch (tm : Timestamp) : Nanosecond.Offset :=
+  let nanos := tm.toSecondsSinceUnixEpoch.mul 1000000000
+  let nanos := nanos + (.ofInt tm.val.nano.val)
+  nanos
+
+/--
+Converts a `Timestamp` to nanoseconds as `Millisecond.Offset`.
+-/
+@[inline]
+def toMillisecondsSinceUnixEpoch (tm : Timestamp) : Millisecond.Offset :=
+  tm.toNanosecondsSinceUnixEpoch.toMilliseconds
+
+/--
+Calculates the duration from the given `Timestamp` to the current time.
+-/
+@[inline]
+def since (f : Timestamp) : IO Duration := do
+  let cur ← Timestamp.now
+  return Std.Time.Duration.sub cur.val f.val
+
+/--
+Returns the `Duration` represented by the `Timestamp` since the Unix epoch.
+-/
+@[inline]
+def toDurationSinceUnixEpoch (tm : Timestamp) : Duration :=
+  tm.val
+
+/--
+Adds a `Millisecond.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addMilliseconds (t : Timestamp) (s : Millisecond.Offset) : Timestamp :=
+  ⟨t.val + s⟩
+
+/--
+Subtracts a `Millisecond.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subMilliseconds (t : Timestamp) (s : Millisecond.Offset) : Timestamp :=
+  ⟨t.val - s⟩
+
+/--
+Adds a `Nanosecond.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addNanoseconds (t : Timestamp) (s : Nanosecond.Offset) : Timestamp :=
+  ⟨t.val + s⟩
+
+/--
+Subtracts a `Nanosecond.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subNanoseconds (t : Timestamp) (s : Nanosecond.Offset) : Timestamp :=
+  ⟨t.val - s⟩
+
+/--
+Adds a `Second.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addSeconds (t : Timestamp) (s : Second.Offset) : Timestamp :=
+  ⟨t.val + s⟩
+
+/--
+Subtracts a `Second.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subSeconds (t : Timestamp) (s : Second.Offset) : Timestamp :=
+  ⟨t.val - s⟩
+
+/--
+Adds a `Minute.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addMinutes (t : Timestamp) (m : Minute.Offset) : Timestamp :=
+  ⟨t.val + m⟩
+
+/--
+Subtracts a `Minute.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subMinutes (t : Timestamp) (m : Minute.Offset) : Timestamp :=
+  ⟨t.val - m⟩
+
+/--
+Adds an `Hour.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addHours (t : Timestamp) (h : Hour.Offset) : Timestamp :=
+  ⟨t.val + h⟩
+
+/--
+Subtracts an `Hour.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subHours (t : Timestamp) (h : Hour.Offset) : Timestamp :=
+  ⟨t.val - h⟩
+
+/--
+Adds a `Day.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addDays (t : Timestamp) (d : Day.Offset) : Timestamp :=
+  ⟨t.val + d⟩
+
+/--
+Subtracts a `Day.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subDays (t : Timestamp) (d : Day.Offset) : Timestamp :=
+  ⟨t.val - d⟩
+
+/--
+Adds a `Week.Offset` to the given `Timestamp`.
+-/
+@[inline]
+def addWeeks (t : Timestamp) (d : Week.Offset) : Timestamp :=
+  ⟨t.val + d⟩
+
+/--
+Subtracts a `Week.Offset` from the given `Timestamp`.
+-/
+@[inline]
+def subWeeks (t : Timestamp) (d : Week.Offset) : Timestamp :=
+  ⟨t.val - d⟩
+
+/--
+Adds a `Duration` to the given `Timestamp`.
+-/
+@[inline]
+def addDuration (t : Timestamp) (d : Duration) : Timestamp :=
+  ⟨t.val + d⟩
+
+/--
+Subtracts a `Duration` from the given `Timestamp`.
+-/
+@[inline]
+def subDuration (t : Timestamp) (d : Duration) : Timestamp :=
+  ⟨t.val - d⟩
+
+instance : HAdd Timestamp Duration Timestamp where
+  hAdd := addDuration
+
+instance : HSub Timestamp Duration Timestamp where
+  hSub := subDuration
+
+instance : HAdd Timestamp Day.Offset Timestamp where
+  hAdd := addDays
+
+instance : HSub Timestamp Day.Offset Timestamp where
+  hSub := subDays
+
+instance : HAdd Timestamp Week.Offset Timestamp where
+  hAdd := addWeeks
+
+instance : HSub Timestamp Week.Offset Timestamp where
+  hSub := subWeeks
+
+instance : HAdd Timestamp Hour.Offset Timestamp where
+  hAdd := addHours
+
+instance : HSub Timestamp Hour.Offset Timestamp where
+  hSub := subHours
+
+instance : HAdd Timestamp Minute.Offset Timestamp where
+  hAdd := addMinutes
+
+instance : HSub Timestamp Minute.Offset Timestamp where
+  hSub := subMinutes
+
+instance : HAdd Timestamp Second.Offset Timestamp where
+  hAdd := addSeconds
+
+instance : HSub Timestamp Second.Offset Timestamp where
+  hSub := subSeconds
+
+instance : HAdd Timestamp Millisecond.Offset Timestamp where
+  hAdd := addMilliseconds
+
+instance : HSub Timestamp Millisecond.Offset Timestamp where
+  hSub := subMilliseconds
+
+instance : HAdd Timestamp Nanosecond.Offset Timestamp where
+  hAdd := addNanoseconds
+
+instance : HSub Timestamp Nanosecond.Offset Timestamp where
+  hSub := subNanoseconds
+
+instance : HSub Timestamp Timestamp Duration where
+  hSub x y := x.val - y.val
+
+instance : OfNat Timestamp n where
+  ofNat := .ofSecondsSinceUnixEpoch (Second.Offset.ofNat n)
+
+end Timestamp
+```

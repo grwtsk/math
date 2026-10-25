@@ -1,0 +1,28 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198Audit.Variant8a332a3419770d3d5a8b54d766efab886ddc0c2c1330492d73e9076d54cc549d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a05c85ed552502403f883d60acf854ef8be6e348` · SHA-256 `39e6b7b7ca36a5cea85b19326ff014735d9720cadf0305f44e3016da1ff997bc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Reordering.Variant49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceOrganization.SourceCorpus.Reordering.Variant49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198","mathematical_subject":"MathematicalTooling.SourceOrganization","original_sha256":"49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/49/49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198--Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.MathematicalTooling.SymbolCounts.Reordering
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Reordering.Variant49f41c59c6808113319a6477831bc1a6b3c031ff234baa1449eccba13b44c198
+
+#check FormalResearch.MathematicalTooling.SymbolCounts.count_profiles_classify_reordering
+#print axioms FormalResearch.MathematicalTooling.SymbolCounts.count_profiles_classify_reordering
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.finite_sampling_checkpoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling.finite_sampling_checkpoint
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.exp_neg_log_half_eq_inv_sqrt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.exp_neg_log_half_eq_inv_sqrt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.two_moment_sampling_checkpoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.two_moment_sampling_checkpoint
+```

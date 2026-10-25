@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Counterexamples.Variant43985fde79a55822e331c2cad21178b4ee3c06b1de4aed3a3658b8b416731da8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ea11ed169c30037f03681f418744cb7d7edaddd7` · SHA-256 `43985fde79a55822e331c2cad21178b4ee3c06b1de4aed3a3658b8b416731da8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Counterexamples.AharoniKorman
+import Counterexamples.CanonicallyOrderedCommSemiringTwoMul
+import Counterexamples.CharPZeroNeCharZero
+import Counterexamples.CliffordAlgebraNotInjective
+import Counterexamples.Cyclotomic105
+import Counterexamples.DirectSumIsInternal
+import Counterexamples.DiscreteTopologyNonDiscreteUniformity
+import Counterexamples.GameMultiplication
+import Counterexamples.Girard
+import Counterexamples.HomogeneousPrimeNotPrime
+import Counterexamples.IrrationalPowerOfIrrational
+import Counterexamples.LinearOrderWithPosMulPosEqZero
+import Counterexamples.MapFloor
+import Counterexamples.MonicNonRegular
+import Counterexamples.OrderedCancelAddCommMonoidWithBounds
+import Counterexamples.Phillips
+import Counterexamples.Pseudoelement
+import Counterexamples.QuadraticForm
+import Counterexamples.SeminormLatticeNotDistrib
+import Counterexamples.SorgenfreyLine
+import Counterexamples.ZeroDivisorsInAddMonoidAlgebras
+```

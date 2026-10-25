@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Algebraization.Variant5ea3a8cdef6d3acb0720835c8b80f77ba8139e016e33a03a47afd639d06c2b24
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `66a4ba8488da91380b5953494695c8c5762fb32c` · SHA-256 `a18744298e44b4445644fafe08fcb798a57fda3c8c131cf8b945cb006e92cecf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Metadata.Variant792f3b34925e1610e796b16332f3353aa3e0bccca5deb4f7053180b77c7fbc78","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"792f3b34925e1610e796b16332f3353aa3e0bccca5deb4f7053180b77c7fbc78","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Metadata.Variant792f3b34925e1610e796b16332f3353aa3e0bccca5deb4f7053180b77c7fbc78","mathematical_subject":"Foundations.Unclassified","original_sha256":"792f3b34925e1610e796b16332f3353aa3e0bccca5deb4f7053180b77c7fbc78","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/22/Reflexive/formal/lean/fcrs/FCRS/Algebraization.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FCRS.Algebraization.Metadata
+import FCRS.Algebraization.Theorems.ALG01_PolarizedEffectivity
+import FCRS.Algebraization.Theorems.ALG02_ProperGAGA
+import FCRS.Algebraization.Theorems.ALG03_PolarizedCompleteness
+import FCRS.Algebraization.Theorems.ALG04_FormalPolarizedEffectivity
+import FCRS.Algebraization.Theorems.HEN01_ExactFullyFaithful
+import FCRS.Algebraization.Theorems.HEN02_SubquotientClosure
+import FCRS.Algebraization.Theorems.HEN03_EssentialImageCharacterization
+import FCRS.Algebraization.Theorems.HEN04_GeneratorCompleteness
+import FCRS.Algebraization.Theorems.HEN05_HSGCriterion
+import FCRS.Algebraization.Theorems.HEN06_HRegImpliesHSG
+import FCRS.Algebraization.Theorems.HEN07_CharacteristicBoundary
+import FCRS.Algebraization.Theorems.HEN08_FiberCanonicity
+import FCRS.Algebraization.Theorems.HEN09_AmpleIndependence
+import FCRS.Algebraization.Theorems.HEN10_PositiveCharacteristicAffine
+import FCRS.Algebraization.Theorems.HEN11_UnrestrictedCompletenessFromHSG
+import FCRS.Algebraization.Theorems.HEN12_ExtensionNonclosure
+import FCRS.Algebraization.Theorems.HEN13_EffectiveFiberNonempty
+import FCRS.Algebraization.Theorems.HEN14_ThreeWayCriterion
+import FCRS.Algebraization.Theorems.HEN15_EffectiveTargetClosure
+import FCRS.Algebraization.Theorems.HEN16_PositiveCharacteristicRoute
+import FCRS.Algebraization.Theorems.MOD01_BoundedAlgebraicModuli
+import FCRS.Algebraization.Theorems.MOD02_FormalEffectivity
+import FCRS.Algebraization.Theorems.MOD03_ApproximationAndLifting
+import FCRS.Algebraization.Theorems.MOD04_FiniteDeterminacy
+import FCRS.Algebraization.Theorems.MOD05_IsomorphismDescent
+import FCRS.Algebraization.Theorems.MOD06_ConditionalAlgebraization
+import FCRS.Algebraization.Theorems.MOD07_SemanticEquivalence
+import FCRS.Algebraization.Theorems.TAN01_EffectiveTannaka
+import FCRS.Algebraization.Theorems.TAN02_UnrestrictedUpgrade
+import FCRS.Algebraization.Theorems.GLOB01_GlobalProvenance
+import FCRS.Algebraization.Theorems.EXT01_ExtensionCriterion
+import FCRS.Algebraization.Theorems.ALG_HEN_ConditionalCompleteness
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Metadata.Variant792f3b34925e1610e796b16332f3353aa3e0bccca5deb4f7053180b77c7fbc78
+
+```

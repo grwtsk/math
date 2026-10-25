@@ -1,0 +1,159 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ConductorThreeCharacterArithmetic.Variant3f1a8519517f3a38980905cb89eb6026695d84679363d3b3fcbb9147ac72a8ff
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6353f61880c2f6b548dd1e67f58a023d04d28320` · SHA-256 `3f1a8519517f3a38980905cb89eb6026695d84679363d3b3fcbb9147ac72a8ff`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+module
+
+public meta import Surface.Core.Classification
+public import Surface.Core.AnalyticPrimeWalk
+import Mathlib.Tactic
+
+/-!
+# Exact arithmetic of the primitive conductor-three character
+
+This module exposes the integer-valued character underlying
+`AnalyticPrimeWalk.conductorThreeCharacter`.  Keeping the value in `ℤ` is
+essential: the third residue class has value `-1`, so a natural-valued
+surrogate would erase the sign used by the prime race.
+
+No analytic estimate is used here.  Every statement is finite arithmetic in
+`ZMod 3`, and the bridge to the existing complex Dirichlet character is
+definitionally exact.
+-/
+
+public section
+
+namespace Surface.Core.ConductorThreeCharacterArithmetic
+
+open Surface.Core.AnalyticPrimeWalk
+
+noncomputable section
+
+/-- The primitive quadratic character modulo three with integer values. -/
+@[expose]
+def conductorThreeIntegerCharacter : DirichletCharacter ℤ 3 :=
+  quadraticChar (ZMod 3)
+
+/-- Natural-number evaluation of the conductor-three character.  The domain
+is `ℕ`; the codomain remains `ℤ` so that the value `-1` is represented
+faithfully. -/
+@[expose]
+def conductorThreeIntegerValue (n : ℕ) : ℤ :=
+  conductorThreeIntegerCharacter n
+
+@[surface_novel, surface_published, simp]
+theorem conductorThreeIntegerValue_mod_zero
+    {n : ℕ} (h : n % 3 = 0) :
+    conductorThreeIntegerValue n = 0 := by
+  rw [conductorThreeIntegerValue, conductorThreeIntegerCharacter,
+    quadraticChar_eq_zero_iff]
+  exact (ZMod.natCast_eq_zero_iff n 3).2 (Nat.dvd_of_mod_eq_zero h)
+
+@[surface_novel, surface_published, simp]
+theorem conductorThreeIntegerValue_mod_one
+    {n : ℕ} (h : n % 3 = 1) :
+    conductorThreeIntegerValue n = 1 := by
+  rw [conductorThreeIntegerValue, conductorThreeIntegerCharacter]
+  have hn : (n : ZMod 3) = 1 :=
+    (ZMod.natCast_eq_natCast_iff' n 1 3).2 (by simpa using h)
+  rw [hn]
+  exact map_one _
+
+/-- `2` is not a square in `ZMod 3`.  `decide` reduces the three finite
+cases in the kernel; no analytic or number-theoretic hypothesis is involved. -/
+private theorem not_isSquare_two_zmod_three :
+    ¬ IsSquare (2 : ZMod 3) := by
+  decide
+
+private theorem two_ne_zero_zmod_three :
+    (2 : ZMod 3) ≠ 0 := by
+  decide
+
+@[surface_novel, surface_published, simp]
+theorem conductorThreeIntegerValue_mod_two
+    {n : ℕ} (h : n % 3 = 2) :
+    conductorThreeIntegerValue n = -1 := by
+  rw [conductorThreeIntegerValue, conductorThreeIntegerCharacter]
+  have hn : (n : ZMod 3) = 2 :=
+    (ZMod.natCast_eq_natCast_iff' n 2 3).2 (by simpa using h)
+  rw [hn]
+  norm_num [quadraticChar_apply, quadraticCharFun,
+    not_isSquare_two_zmod_three, two_ne_zero_zmod_three]
+
+/-- Exact three-way value table for `χ₃`. -/
+@[surface_novel, surface_published]
+theorem conductorThreeIntegerValue_cases (n : ℕ) :
+    (n % 3 = 0 ∧ conductorThreeIntegerValue n = 0) ∨
+    (n % 3 = 1 ∧ conductorThreeIntegerValue n = 1) ∨
+    (n % 3 = 2 ∧ conductorThreeIntegerValue n = -1) := by
+  have hlt : n % 3 < 3 := Nat.mod_lt n (by omega)
+  interval_cases h : n % 3 <;> simp [h]
+
+@[surface_novel, surface_published]
+theorem conductorThreeIntegerValue_eq_zero_iff (n : ℕ) :
+    conductorThreeIntegerValue n = 0 ↔ 3 ∣ n := by
+  rw [Nat.dvd_iff_mod_eq_zero]
+  have hlt : n % 3 < 3 := Nat.mod_lt n (by omega)
+  interval_cases h : n % 3 <;> simp [h]
+
+@[surface_novel, surface_published]
+theorem conductorThreeIntegerValue_eq_one_iff (n : ℕ) :
+    conductorThreeIntegerValue n = 1 ↔ n % 3 = 1 := by
+  have hlt : n % 3 < 3 := Nat.mod_lt n (by omega)
+  interval_cases h : n % 3 <;> simp [h]
+
+@[surface_novel, surface_published]
+theorem conductorThreeIntegerValue_eq_neg_one_iff (n : ℕ) :
+    conductorThreeIntegerValue n = -1 ↔ n % 3 = 2 := by
+  have hlt : n % 3 < 3 := Nat.mod_lt n (by omega)
+  interval_cases h : n % 3 <;> simp [h]
+
+/-- Multiplicativity is inherited from the bundled quadratic character. -/
+@[surface_novel, surface_published]
+theorem conductorThreeIntegerValue_mul (m n : ℕ) :
+    conductorThreeIntegerValue (m * n) =
+      conductorThreeIntegerValue m * conductorThreeIntegerValue n := by
+  change conductorThreeIntegerCharacter ((m * n : ℕ) : ZMod 3) = _
+  simpa only [conductorThreeIntegerValue, Nat.cast_mul] using
+    (map_mul conductorThreeIntegerCharacter (m : ZMod 3) (n : ZMod 3))
+
+@[surface_novel, surface_published]
+theorem conductorThreeIntegerValue_pow (n k : ℕ) :
+    conductorThreeIntegerValue (n ^ k) = conductorThreeIntegerValue n ^ k := by
+  change conductorThreeIntegerCharacter ((n ^ k : ℕ) : ZMod 3) = _
+  simpa only [conductorThreeIntegerValue, Nat.cast_pow] using
+    (map_pow conductorThreeIntegerCharacter (n : ZMod 3) k)
+
+/-- The existing complex character is literally the integer character followed
+by the canonical cast `ℤ → ℂ`. -/
+@[surface_adapter, surface_published]
+theorem conductorThreeCharacter_eq_intCast (n : ℕ) :
+    conductorThreeCharacter n = (conductorThreeIntegerValue n : ℂ) := by
+  rfl
+
+/-- The primitive conductor-three character is odd.  This pins the gamma
+factor used by the completed functional equation. -/
+@[surface_novel, surface_published]
+theorem conductorThreeCharacter_odd : conductorThreeCharacter.Odd := by
+  change conductorThreeCharacter (-1 : ZMod 3) = -1
+  rw [show (-1 : ZMod 3) = (2 : ZMod 3) by decide]
+  change conductorThreeCharacter (2 : ℕ) = -1
+  rw [conductorThreeCharacter_eq_intCast,
+    conductorThreeIntegerValue_mod_two (by norm_num)]
+  norm_num
+
+/-- Quadraticity makes the character self-dual. -/
+@[surface_novel, surface_published]
+theorem conductorThreeCharacter_inv :
+    conductorThreeCharacter⁻¹ = conductorThreeCharacter := by
+  unfold conductorThreeCharacter
+  exact ((quadraticChar_isQuadratic (F := ZMod 3)).comp
+    (Int.castRingHom ℂ)).inv
+
+end
+
+end Surface.Core.ConductorThreeCharacterArithmetic
+```

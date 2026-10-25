@@ -1,0 +1,88 @@
+# Package.findLeanExe?
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e836d96331965e913c89f564337125a4596e7e8d8e84d4f45f586c4e49bbe529",
+  "kind": "def",
+  "lexical_name": "Package.findLeanExe?",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "package-findleanexe--9ac3c90cf0b00b19f853ae32",
+  "source": {
+    "blob": "e427c3775735603ab7d986aa4efbab6486bcc80f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 36,
+    "line": 30,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanExe/Variant1089d83f2a29402cbd9e7c53195d38cfe5c2e6685fe83b41dc558beee2e8ee50.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:9ac3c90cf0b00b19f853ae326baf7ea8d02aea3decbfb6554bb528dfd802ed54",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanExe/Variant1089d83f2a29402cbd9e7c53195d38cfe5c2e6685fe83b41dc558beee2e8ee50.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e836d96331965e913c89f564337125a4596e7e8d8e84d4f45f586c4e49bbe529`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 30–36.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+@[inline] public def Package.findLeanExe? (name : Name) (self : Package) : Option LeanExe :=
+  self.findConfigTarget? LeanExe.configKind name
+
+/--
+Converts the executable configuration into a library
+with a single module (the root).
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanExe/Variant1089d83f2a29402cbd9e7c53195d38cfe5c2e6685fe83b41dc558beee2e8ee50.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanExe/Variant1089d83f2a29402cbd9e7c53195d38cfe5c2e6685fe83b41dc558beee2e8ee50.lean#L30).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e427c3775735603ab7d986aa4efbab6486bcc80f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

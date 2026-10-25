@@ -1,0 +1,118 @@
+# Verification target: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Testable.Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "89df7d17deb2a2cd6f6d9deaf4342e5774a50324",
+  "lexical_observation_count": 56,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/index.md) · [Full source](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `89df7d17deb2a2cd6f6d9deaf4342e5774a50324`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Testing.SlimCheck.Sampleable` — import line 11; external provider; requires a separately pinned dependency.
+- `Lean` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [TestResult](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/testresult--2f43c1fb408738b78d3c9fe5.md) | 113 | `declaration-track:2f43c1fb408738b78d3c9fe5f9b66fb51e4b6090ce4325b0d462c53f5f3d526e` |
+| 2 | `structure` | [Configuration](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/configuration--dded227e55eae36d7ee0d4b9.md) | 120 | `declaration-track:dded227e55eae36d7ee0d4b9771cfc9a981aa57fa613e3e7f6d63f708ef8f181` |
+| 3 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/instance--c7b36bb27a5dbd6efee0649f.md) | 133 | `declaration-track:c7b36bb27a5dbd6efee0649f2fb9b2c60fd4024dcd55a8d2c3be85dd332b5a0b` |
+| 4 | `class` | [PrintableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/printableprop--e30ccf9b614ba6054bedef86.md) | 150 | `declaration-track:e30ccf9b614ba6054bedef8669c24d80bb981cb0af0e6da0e14204377085cd9c` |
+| 5 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/instance--b4000d1ea708731fea741c11.md) | 155 | `declaration-track:b4000d1ea708731fea741c1170c5305092d6c515273fa35c64a7f64f3ec1610d` |
+| 6 | `class` | [Testable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/testable--cad5d1f5299cf4243bdc680b.md) | 159 | `declaration-track:cad5d1f5299cf4243bdc680bfc035b03a05d77756ed1ac91f51fc4ed59d1166e` |
+| 7 | `def` | [NamedBinder](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/namedbinder--706e24d56a7baea6b6dcf684.md) | 163 | `declaration-track:706e24d56a7baea6b6dcf6849ff489340def3dded2c8866549cfb2e779a4de57` |
+| 8 | `def` | [toString](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/tostring--0b5e2989e5648f4962d26d84.md) | 167 | `declaration-track:0b5e2989e5648f4962d26d842b5dcd41ff6b09d32b011c34f3edb49b1cfa9752` |
+| 9 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/instance--089545cfc2bfe95388537844.md) | 173 | `declaration-track:089545cfc2bfe953885378446cf31a3bb59f1c25a23406ebf1acb8e47da9ebd3` |
+| 10 | `def` | [combine](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/combine--049a17b38cf49dae9f75f32a.md) | 176 | `declaration-track:049a17b38cf49dae9f75f32a0633185ad526a93128dc21c7d2d3b16266dec1c3` |
+| 11 | `def` | [and](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/and--bd6932b8af0b7df7afdfeba7.md) | 181 | `declaration-track:bd6932b8af0b7df7afdfeba7d418f6abc54019681b1c38b61fff6f8389cb94ae` |
+| 12 | `def` | [or](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/or--d54b7a28e00170ff1983fcc6.md) | 190 | `declaration-track:d54b7a28e00170ff1983fcc66a19270fc3b34444fb465ae11740ee2efbb7cf85` |
+| 13 | `def` | [imp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/imp--6e1eab7c40214210ba6f787c.md) | 205 | `declaration-track:6e1eab7c40214210ba6f787c7822915b6ef2414ea32ed0bba385c5e265f2d836` |
+| 14 | `def` | [iff](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/iff--5b1257ec274e00a4a33e4a01.md) | 213 | `declaration-track:5b1257ec274e00a4a33e4a015260c2a3d9626a3c3276cc878664c2cb557920ce` |
+| 15 | `def` | [addInfo](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/addinfo--09923787690aca79370b4641.md) | 219 | `declaration-track:09923787690aca79370b46413f6cf58f4ee543c4967d7b1cd70024931d46bf06` |
+| 16 | `def` | [addVarInfo](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/addvarinfo--8d1ce82ee2a271e527d3a48c.md) | 227 | `declaration-track:8d1ce82ee2a271e527d3a48cd0f68f3f40697987e5c695fe1fdd6f034be0134c` |
+| 17 | `def` | [isFailure](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/isfailure--cdd6c9d5bcbabf3fe5b5f33d.md) | 231 | `declaration-track:cdd6c9d5bcbabf3fe5b5f33de89f1277c891b1865aa7e6689e0bd32d56402ff2` |
+| 18 | `def` | [verbose](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/verbose--acfcd2f4c68c3f57581c64b1.md) | 240 | `declaration-track:acfcd2f4c68c3f57581c64b116e2d07641495ca768c9ad3ce4973fe1c8db208e` |
+| 19 | `def` | [runProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/runprop--1840db388add024d481fb540.md) | 252 | `declaration-track:1840db388add024d481fb54037c3b720a2ce6d181649746106d95d5e8d68b380` |
+| 20 | `def` | [slimTrace](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/slimtrace--df26fee15ff84b7f9e08ce30.md) | 255 | `declaration-track:df26fee15ff84b7f9e08ce30c49e4bf2cb7a0cc042fe84c3a9828bf470e27f5e` |
+| 21 | `instance` | [andTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/andtestable--4d0319a552c83552df3aabd4.md) | 257 | `declaration-track:4d0319a552c83552df3aabd4b67ad446ed3d0680883b82aeb97a2f77d4c7c568` |
+| 22 | `instance` | [orTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/ortestable--fac7f5d7bf8cd406e1e6c1a0.md) | 263 | `declaration-track:fac7f5d7bf8cd406e1e6c1a0af3538e2386e9fc824341efc117494e9dd858e0f` |
+| 23 | `instance` | [iffTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/ifftestable--e307fb1f888e3c1814c30084.md) | 275 | `declaration-track:e307fb1f888e3c1814c30084f27a938d767489c031051be0d8062dec10f85838` |
+| 24 | `instance` | [decGuardTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/decguardtestable--fae14f564faa77f2b805dca4.md) | 282 | `declaration-track:fae14f564faa77f2b805dca4ab960cf0fe6aa6e002396fb88a88aad2b4688cda` |
+| 25 | `instance` | [forallTypesTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/foralltypestestable--e6d2886ca739f5ba0b324c95.md) | 296 | `declaration-track:e6d2886ca739f5ba0b324c95dcce3ab67a2d71c6a48ec00419761b0d0deedcf8` |
+| 26 | `def` | [formatFailure](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/formatfailure--a8180f7d19ed5076bf9f8b30.md) | 305 | `declaration-track:a8180f7d19ed5076bf9f8b3056cd41b26c5aa64eb05e10e9cf521707ea741c3f` |
+| 27 | `def` | [addShrinks](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/addshrinks--6517fcb3e292b0621a880c91.md) | 319 | `declaration-track:6517fcb3e292b0621a880c910357ce43bb0f60507078d563d403a07c9482135a` |
+| 28 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/instance--7b31e4f87633608e22d758f7.md) | 323 | `declaration-track:7b31e4f87633608e22d758f79caf6afc385523c9ccdbe12944a6f1dc6200ef1a` |
+| 29 | `def` | [minimizeAux](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/minimizeaux--b467c0ac485581c20b9164b1.md) | 330 | `declaration-track:b467c0ac485581c20b9164b164d438c6cfa07e69d6c31f8c7aee490d62a5251c` |
+| 30 | `def` | [minimize](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/minimize--dc752f20fd81b313155037bc.md) | 352 | `declaration-track:dc752f20fd81b313155037bce10c3e8ae438a838ad32252e8a2785a1fbcb2483` |
+| 31 | `instance` | [varTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/vartestable--0c1e37c82f8fcd077f06ada3.md) | 363 | `declaration-track:0c1e37c82f8fcd077f06ada364fd4458f3c48d52d19750ca81da48e41dca5f99` |
+| 32 | `instance` | [propVarTestable](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/propvartestable--cfcf89eedd42bcd94226b150.md) | 383 | `declaration-track:cfcf89eedd42bcd94226b15063b04fac8168e0e5f5697d54ea15755c9d49eab3` |
+| 33 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/instance--af1d0050a4b30aca05565161.md) | 389 | `declaration-track:af1d0050a4b30aca055651612133bf3a3737501dad01b370edfc389f9aac2aa7` |
+| 34 | `instance` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/instance--ebff916d3957c3a067a767d5.md) | 399 | `declaration-track:ebff916d3957c3a067a767d589e340c221a9aadb5e024455b3bdaba98b019c49` |
+| 35 | `instance` | [Eq.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/eq-printableprop--3e121cc4005988498d5842c1.md) | 412 | `declaration-track:3e121cc4005988498d5842c19ef2e21809a40368c3592e9dcca22aa43522c56c` |
+| 36 | `instance` | [Ne.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/ne-printableprop--76e3f30eaf82a107a4685246.md) | 415 | `declaration-track:76e3f30eaf82a107a4685246da1c72749a36de83f4081eb813a84f3c65d88b66` |
+| 37 | `instance` | [LE.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/le-printableprop--c4f47505ad607a1049b2b1d1.md) | 418 | `declaration-track:c4f47505ad607a1049b2b1d1c3d3438febda87b092491c3995cced55b2291d1f` |
+| 38 | `instance` | [LT.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/lt-printableprop--e75da3b247862986f4d0a157.md) | 421 | `declaration-track:e75da3b247862986f4d0a1572af2781e6a6c0760d3297780a0ed454f120df138` |
+| 39 | `instance` | [And.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/and-printableprop--1651ea3a5863e25f8beb3805.md) | 424 | `declaration-track:1651ea3a5863e25f8beb3805a2f4e0a74d36e1762ae365190ab60a742c96089f` |
+| 40 | `instance` | [Or.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/or-printableprop--e3506636618d02452b6f0404.md) | 427 | `declaration-track:e3506636618d02452b6f040426a376a86e89b71ba3e6d82b8139915a5ca00454` |
+| 41 | `instance` | [Iff.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/iff-printableprop--cf25ff6cbf984bda331b5631.md) | 430 | `declaration-track:cf25ff6cbf984bda331b563142b3a7eb4b43ce8cbc9107103f21c99342cb7d6f` |
+| 42 | `instance` | [Imp.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/imp-printableprop--84da71609067ebf891496448.md) | 433 | `declaration-track:84da71609067ebf891496448be8b12770f8739da9064327432452cb4240920bd` |
+| 43 | `instance` | [Not.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/not-printableprop--1db96353b2836e0afe62a4ec.md) | 436 | `declaration-track:1db96353b2836e0afe62a4ec82f0e10b4fa927124019b8748782a9b4393a7ebc` |
+| 44 | `instance` | [True.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/true-printableprop--ebe2789d6086cc046ec08c66.md) | 439 | `declaration-track:ebe2789d6086cc046ec08c66709c82cbcad7c4e90a28f148a1cab4137b015e3f` |
+| 45 | `instance` | [False.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/false-printableprop--fb2aea54ff1c3fbbfb472f91.md) | 442 | `declaration-track:fb2aea54ff1c3fbbfb472f91ff0be51c25889909cb077295f7b4585c949a0786` |
+| 46 | `instance` | [Bool.printableProp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/bool-printableprop--e0d5984fe93ab68cd0a96975.md) | 445 | `declaration-track:e0d5984fe93ab68cd0a969758eea41afc1bfc2efd263612e70e377cd5f8e557f` |
+| 47 | `def` | [retry](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/retry--9840c6cbdd77c3f239314280.md) | 454 | `declaration-track:9840c6cbdd77c3f239314280b09fa16aa6257bb1b8fa9d080188be7c0e9f7438` |
+| 48 | `def` | [giveUp](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/giveup--91997d5bd24372f0f55e8c34.md) | 464 | `declaration-track:91997d5bd24372f0f55e8c341319062f95c0b263513c3a5a3ff8867068d11890` |
+| 49 | `def` | [Testable.runSuiteAux](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/testable-runsuiteaux--2fdc8887135902eeeae161a1.md) | 471 | `declaration-track:2fdc8887135902eeeae161a10358ffda8f792feebf84cce21a1907bc9cb7baea` |
+| 50 | `def` | [Testable.runSuite](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/testable-runsuite--46026cda545750662c4b3a8c.md) | 486 | `declaration-track:46026cda545750662c4b3a8c10c63fe3c09b86565a0c619d6466b0c1528f63e1` |
+| 51 | `def` | [Testable.checkIO](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/testable-checkio--e3926baf0d5c39f75057547f.md) | 490 | `declaration-track:e3926baf0d5c39f75057547f4a570d8cb9f6b52937b415e19bb068bd52466bc0` |
+| 52 | `def` | [addDecorations](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/adddecorations--fc9c02d61137fa8fb89be505.md) | 503 | `declaration-track:fc9c02d61137fa8fb89be5054f163eb5ecb79fc22b9f182ea51bd2ed067db9be` |
+| 53 | `abbrev` | [DecorationsOf](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/decorationsof--1bdd96c83c602d651fd99fb0.md) | 518 | `declaration-track:1bdd96c83c602d651fd99fb0fdf0439934d7a4d630143b2dae6ae50385b77ac0` |
+| 54 | `elab` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/elab--17f5fe996ee0867b40dd934d.md) | 533 | `declaration-track:17f5fe996ee0867b40dd934ded650f9ab013bdac23dac2f5a3435a0b6581d417` |
+| 55 | `def` | [Testable.check](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/testable-check--9afd929f69635be639d932af.md) | 543 | `declaration-track:9afd929f69635be639d932af2cc53dc6c903ae6829a17a376490d683ebdafc1a` |
+| 56 | `macro` | [(anonymous)](../../../../../mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/Testable/Variant4d21c6169a136eb8236054c917f428d98af84c5a0f56004cabc68904cab619f7.lean/declarations/macro--3fafad52e550f06996356d34.md) | 557 | `declaration-track:3fafad52e550f06996356d34673b9dfd3850a2843101845d40a5705a118283ff` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

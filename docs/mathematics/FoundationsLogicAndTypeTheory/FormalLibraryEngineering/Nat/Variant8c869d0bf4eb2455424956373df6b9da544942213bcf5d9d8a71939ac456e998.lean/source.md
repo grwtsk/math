@@ -1,0 +1,170 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Nat.Variant8c869d0bf4eb2455424956373df6b9da544942213bcf5d9d8a71939ac456e998
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `972010363e9405992448478a367304604ca7e7cf` · SHA-256 `a3886f64e34edf763a15f89e5e82f0085af03b5b38f58c35042c8453fa179f36`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lemmas.Variant7449225ce0254c2b6b09d5518bec2368793746c10a234d340dff61e5f6ec56f9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7449225ce0254c2b6b09d5518bec2368793746c10a234d340dff61e5f6ec56f9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Lemmas.Variant7449225ce0254c2b6b09d5518bec2368793746c10a234d340dff61e5f6ec56f9","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"7449225ce0254c2b6b09d5518bec2368793746c10a234d340dff61e5f6ec56f9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Data/Range/Polymorphic/Nat.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["scope_end_name_mismatch","uncompiled_organization"],"structural_qualification":"structural_issues_retained_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Paul Reichert
+-/
+module
+
+prelude
+import Init.Data.Nat.Lemmas
+public import Init.Data.Range.Polymorphic.Instances
+import Init.Data.Nat.MinMax
+import Init.Omega
+import Init.RCases
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Lemmas.Variant7449225ce0254c2b6b09d5518bec2368793746c10a234d340dff61e5f6ec56f9
+
+set_option doc.verso true
+
+public section
+
+open Std PRange
+
+namespace Std.PRange
+
+instance : UpwardEnumerable Nat where
+  succ? n := some (n + 1)
+  succMany? k n := some (n + k)
+
+instance : Least? Nat where
+  least? := some 0
+
+instance : LawfulUpwardEnumerableLeast? Nat where
+  least?_le a := by
+    simpa [Least?.least?] using ⟨a, by simp [UpwardEnumerable.succMany?]⟩
+
+instance : LawfulUpwardEnumerableLE Nat where
+  le_iff a b := by
+    constructor
+    · intro h
+      exact ⟨b - a, by simp [UpwardEnumerable.succMany?, Nat.add_sub_cancel' h]⟩
+    · rintro ⟨n, hn⟩
+      simp only [UpwardEnumerable.succMany?, Option.some.injEq] at hn
+      rw [← hn]
+      exact Nat.le_add_right _ _
+
+instance : LawfulUpwardEnumerable Nat where
+  succMany?_zero := by simp [UpwardEnumerable.succMany?]
+  succMany?_add_one := by simp [UpwardEnumerable.succMany?, UpwardEnumerable.succ?, Nat.add_assoc]
+  ne_of_lt a b hlt := by
+    have hn := hlt.choose_spec
+    simp only [UpwardEnumerable.succMany?, Option.some.injEq] at hn
+    omega
+
+instance : LawfulUpwardEnumerableLT Nat := inferInstance
+
+instance : InfinitelyUpwardEnumerable Nat where
+  isSome_succ? a := by simp [UpwardEnumerable.succ?]
+
+instance : Rxc.HasSize Nat where
+  size lo hi := hi + 1 - lo
+
+instance : Rxo.HasSize Nat := .ofClosed
+
+instance : Rxc.LawfulHasSize Nat where
+  size_eq_zero_of_not_le lo hi hu := by
+    simp only [Rxc.HasSize.size] at hu ⊢
+    omega
+  size_eq_one_of_succ?_eq_none upperBound init hu h := by
+    simp only [UpwardEnumerable.succ?] at h
+    cases h
+  size_eq_succ_of_succ?_eq_some upperBound init hu h := by
+    simp only [Rxc.HasSize.size, UpwardEnumerable.succ?,
+      Option.some.injEq] at hu h ⊢
+    omega
+
+instance : Rxc.IsAlwaysFinite Nat := inferInstance
+instance : Rxo.LawfulHasSize Nat := inferInstance
+instance : Rxo.IsAlwaysFinite Nat := inferInstance
+
+instance : LinearlyUpwardEnumerable Nat := inferInstance
+
+end PRange
+
+/-!
+The following instances are used for the implementation of array slices a.k.a.
+{name (scope := "Init.Data.Array.Subarray")}`Subarray`.
+See also {module -checked}`Init.Data.Slice.Array`.
+-/
+
+instance : Roo.HasRcoIntersection Nat where
+  intersection r s := (max (r.lower + 1) s.lower)...(min r.upper s.upper)
+
+example (h : b + 1 ≤ a) : b < a := by omega
+
+instance : Roo.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Roo.HasRcoIntersection.intersection, Membership.mem, Nat.max_le, Nat.lt_min]
+    omega
+
+instance : Roc.HasRcoIntersection Nat where
+  intersection r s := (max (r.lower + 1) s.lower)...(min (r.upper + 1) s.upper)
+
+instance : Roc.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Roc.HasRcoIntersection.intersection, Membership.mem, Nat.max_le, Nat.lt_min]
+    omega
+
+instance : Roi.HasRcoIntersection Nat where
+  intersection r s := (max (r.lower + 1) s.lower)...s.upper
+
+instance : Roi.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Roi.HasRcoIntersection.intersection, Membership.mem, Nat.max_le]
+    omega
+
+instance : Rco.HasRcoIntersection Nat where
+  intersection r s := (max r.lower s.lower)...(min r.upper s.upper)
+
+instance : Rco.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Rco.HasRcoIntersection.intersection, Membership.mem, Nat.max_le, Nat.lt_min]
+    omega
+
+instance : Rcc.HasRcoIntersection Nat where
+  intersection r s := (max r.lower s.lower)...(min (r.upper + 1) s.upper)
+
+instance : Rcc.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Rcc.HasRcoIntersection.intersection, Membership.mem, Nat.max_le, Nat.lt_min]
+    omega
+
+instance : Rci.HasRcoIntersection Nat where
+  intersection r s := (max r.lower s.lower)...s.upper
+
+instance : Rci.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Rci.HasRcoIntersection.intersection, Membership.mem, Nat.max_le]
+    omega
+
+instance : Rio.HasRcoIntersection Nat where
+  intersection r s := s.lower...(min r.upper s.upper)
+
+instance : Rio.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Rio.HasRcoIntersection.intersection, Membership.mem]
+    omega
+
+instance : Ric.HasRcoIntersection Nat where
+  intersection r s := s.lower...(min (r.upper + 1) s.upper)
+
+instance : Ric.LawfulRcoIntersection Nat where
+  mem_intersection_iff {a r s} := by
+    simp only [Ric.HasRcoIntersection.intersection, Membership.mem]
+    omega
+
+end Std
+```

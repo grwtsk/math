@@ -1,0 +1,118 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Main.Variant0e4b107803974c71ba7ab9192af744dffdf905d03dffec2cceabd50a8db785b4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e87480ff8a4c821015e67c40e207bb64e52038c9` · SHA-256 `4f99109257de32a76d03043a876ee30ea3d3439b40a9e98ba25e050637ab89c4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.WfRecursion.Variantcc673e422dd83756dda6cfc04ea3a02f3aae04dc00b37d11e61e18b6cde0b01d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cc673e422dd83756dda6cfc04ea3a02f3aae04dc00b37d11e61e18b6cde0b01d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.WfRecursion.Variantcc673e422dd83756dda6cfc04ea3a02f3aae04dc00b37d11e61e18b6cde0b01d","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"cc673e422dd83756dda6cfc04ea3a02f3aae04dc00b37d11e61e18b6cde0b01d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Elab/PreDefinition/WF/Main.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Elab.PreDefinition.WF.PackMutual
+public import Lean.Elab.PreDefinition.WF.FloatRecApp
+public import Lean.Elab.PreDefinition.WF.Rel
+public import Lean.Elab.PreDefinition.WF.Fix
+public import Lean.Elab.PreDefinition.WF.Unfold
+public import Lean.Elab.PreDefinition.WF.Preprocess
+public import Lean.Elab.PreDefinition.WF.GuessLex
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.WfRecursion.Variantcc673e422dd83756dda6cfc04ea3a02f3aae04dc00b37d11e61e18b6cde0b01d
+
+public section
+
+namespace Lean.Elab
+open WF
+open Meta
+
+def wfRecursion (docCtx : LocalContext × LocalInstances) (preDefs : Array PreDefinition) (termMeasure?s : Array (Option TerminationMeasure)) : TermElabM Unit := do
+  let termMeasures? := termMeasure?s.mapM id -- Either all or none, checked by `elabTerminationByHints`
+  let preDefs ← preDefs.mapM fun preDef =>
+    return { preDef with value := (← floatRecApp preDef.value) }
+  let (fixedParamPerms, argsPacker, unaryPreDef) ← withoutModifyingEnv do
+    for preDef in preDefs do
+      addAsAxiom preDef
+    let fixedParamPerms ← getFixedParamPerms preDefs
+    let varNamess ← preDefs.mapIdxM fun i preDef => varyingVarNames fixedParamPerms i preDef
+    for varNames in varNamess, preDef in preDefs do
+      if varNames.isEmpty then
+        throwError "well-founded recursion cannot be used, `{preDef.declName}` does not take any (non-fixed) arguments"
+    let argsPacker := { varNamess }
+    let numSectionVars := preDefs[0]!.numSectionVars
+    let preDefs' ← preDefs.mapM fun preDef => do
+      return { preDef with value := (← unfoldIfArgIsAppOf (preDefs.map (·.declName)) numSectionVars preDef.value) }
+    let unaryPreDef ← packMutual fixedParamPerms argsPacker preDefs'
+    return (fixedParamPerms, argsPacker, unaryPreDef)
+  trace[Elab.definition.wf] "unaryPreDef:{indentD unaryPreDef.value}"
+
+  let (unaryPreDefProcessed, wfPreprocessProof) ← withoutModifyingEnv do
+    addAsAxiom unaryPreDef
+    let result ← preprocess unaryPreDef.value
+    pure ({unaryPreDef with value := result.expr}, result)
+  trace[Elab.definition.wf] "unaryPreDefProcessed:{indentD unaryPreDef.value}"
+
+  let wf : TerminationMeasures ← do
+    if let some tms := termMeasures? then pure tms else
+    withoutExporting do  -- generating proof
+    -- No termination_by here, so use GuessLex to infer one
+    guessLex preDefs unaryPreDefProcessed fixedParamPerms argsPacker
+
+  let preDefNonRec ← forallBoundedTelescope unaryPreDef.type fixedParamPerms.numFixed fun fixedArgs type => do
+    let type ← whnfForall type
+    unless type.isForall do
+      throwError "wfRecursion: expected unary function type: {type}"
+    let packedArgType := type.bindingDomain!
+    elabWFRel (preDefs.map (·.declName)) unaryPreDef.declName fixedParamPerms fixedArgs argsPacker packedArgType wf fun wfRel => do
+      trace[Elab.definition.wf] "wfRel: {wfRel}"
+      let useNatRec := (← isNatLtWF wfRel).isSome
+      -- Warn about likely unwanted reducibility attributes
+      unless useNatRec do
+        preDefs.forM fun preDef =>
+          preDef.modifiers.attrs.forM fun a => do
+            if a.name = `reducible || a.name = `semireducible then
+              logWarningAt a.stx s!"marking functions defined by well-founded recursion as `{a.name}` is not effective"
+
+      let (value, envNew) ← withoutModifyingEnv' do
+        addAsAxiom unaryPreDef
+        let value ← mkFix unaryPreDefProcessed fixedArgs argsPacker wfRel (preDefs.map (·.declName)) (preDefs.map (·.termination.decreasingBy?))
+        eraseRecAppSyntaxExpr value
+      /- `mkFix` invokes `decreasing_tactic` which may add auxiliary theorems to the environment. -/
+      let value ← unfoldDeclsFrom envNew value
+      -- Make sure we remember invoked tactics
+      modifyEnv (copyExtraModUses envNew)
+      return { unaryPreDefProcessed with value }
+
+  trace[Elab.definition.wf] ">> {preDefNonRec.declName} :=\n{preDefNonRec.value}"
+  let preDefsNonrec ← preDefsFromUnaryNonRec fixedParamPerms argsPacker preDefs preDefNonRec
+  Mutual.addPreDefsFromUnary (cacheProofs := false) docCtx preDefs preDefsNonrec preDefNonRec
+  addAndCompilePartialRec docCtx preDefs
+  let unaryPreDef ← Mutual.cleanPreDef (cacheProofs := false) unaryPreDef
+  let preDefs ← preDefs.mapM (Mutual.cleanPreDef (cacheProofs := false) ·)
+  registerEqnsInfo preDefs preDefNonRec.declName fixedParamPerms argsPacker
+  markAsRecursive unaryPreDef.declName
+  unless (← isProp unaryPreDef.type) do
+    WF.mkUnfoldEq unaryPreDef preDefNonRec.declName wfPreprocessProof
+  for preDef in preDefs do
+    unless preDef.declName = preDefNonRec.declName do
+      unless preDef.kind.isTheorem do
+        unless (← isProp preDef.type) do
+          WF.mkBinaryUnfoldEq preDef preDefNonRec.declName
+  -- must happen before `addPreDefAttributes` enables realizations for the top-level functions,
+  -- which may need to use realizations on `preDefNonRec`
+  enableRealizationsForConst preDefNonRec.declName
+  Mutual.addPreDefAttributes preDefs
+
+builtin_initialize registerTraceClass `Elab.definition.wf
+
+end Lean.Elab
+```

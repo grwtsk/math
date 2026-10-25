@@ -1,0 +1,167 @@
+# doForToCode
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:1b5eaca6e9197dc1c0b2c768de4b242bcb47d2a180f60ee0dc61f05b6ed96a15",
+  "kind": "def",
+  "lexical_name": "doForToCode",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "dofortocode--1419fa7d24be2ee11b4598ba",
+  "source": {
+    "blob": "8c8da9f50ee7a399431280e0ec5e9dd066fa0789",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1662,
+    "line": 1577,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Legacy/Variantbae1a4a72d5249cb41d801ff1fc6b7f879a3ec4918ce84053e460ea9c0988250.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1419fa7d24be2ee11b4598ba095f1b8f09c8a73813eb6c3add1cae48f2e7d1d6",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Legacy/Variantbae1a4a72d5249cb41d801ff1fc6b7f879a3ec4918ce84053e460ea9c0988250.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:1b5eaca6e9197dc1c0b2c768de4b242bcb47d2a180f60ee0dc61f05b6ed96a15`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1577–1662.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+  partial def doForToCode (doFor : Syntax) (doElems : List Syntax) : M CodeBlock := do
+    let doForDecls := doFor[1].getSepArgs
+    if h : doForDecls.size > 1 then
+      /-
+        Expand
+        ```
+        for x in xs, y in ys do
+          body
+        ```
+        into
+        ```
+        let s := Std.toStream ys
+        for x in xs do
+          match Std.Stream.next? s with
+          | none => break
+          | some (y, s') =>
+            s := s'
+            body
+        ```
+      -/
+      -- Extract second element
+      let doForDecl := doForDecls[1]!
+      unless doForDecl[0].isNone do
+        throwErrorAt doForDecl[0] "the proof annotation here has not been implemented yet"
+      let y  := doForDecl[1]
+      let ys := doForDecl[3]
+      let doForDecls := doForDecls.eraseIdx 1
+      let body := doFor[3]
+      withFreshMacroScope do
+        /- Recall that `@` (explicit) disables `coeAtOutParam`.
+           We used `@` at `Stream` functions to make sure `resultIsOutParamSupport` is not used. -/
+        let toStreamApp ← withRef ys `(@Std.toStream _ _ _ $ys)
+        let auxDo ←
+          `(do let mut s := $toStreamApp:term
+               for $doForDecls:doForDecl,* do
+                 match @Std.Stream.next? _ _ _ s with
+                 | none => break
+                 | some ($y, s') =>
+                   s := s'
+                   do $body)
+        doSeqToCode (getDoSeqElems (getDoSeq auxDo) ++ doElems)
+    else withRef doFor do
+      let h?        := if doForDecls[0]![0].isNone then none else some doForDecls[0]![0][0]
+      let x         := doForDecls[0]![1]
+      withRef x <| checkNotShadowingMutable (← getPatternVarsEx x)
+      let xs        := doForDecls[0]![3]
+      let forElems  := getDoSeqElems doFor[3]
+      let forInBodyCodeBlock ← withFor (doSeqToCode forElems)
+      let ⟨uvars, forInBody⟩ ← mkForInBody x forInBodyCodeBlock
+      let ctx ← read
+      -- semantic no-op that replaces the `uvars`' position information (which all point inside the loop)
+      -- with that of the respective mutable declarations outside the loop, which allows the language
+      -- server to identify them as conceptually identical variables
+      let uvars := uvars.map fun v => ctx.mutableVars.getD v.getId v
+      let uvarsTuple ← liftMacroM do mkTuple uvars
+      if hasReturn forInBodyCodeBlock.code then
+        let forInBody ← liftMacroM <| destructTuple uvars (← `(r)) forInBody
+        let optType ← `(Option $((← read).returnType))
+        let forInTerm ← if let some h := h? then
+          annotate doFor
+            (← `(for_in'% $(xs) (MProd.mk (none : $optType) $uvarsTuple) fun $x $h (r : MProd $optType _) => let r := r.2; $forInBody))
+        else
+          annotate doFor
+            (← `(for_in% $(xs) (MProd.mk (none : $optType) $uvarsTuple) fun $x (r : MProd $optType _) => let r := r.2; $forInBody))
+        let auxDo ← `(do let r ← $forInTerm:term;
+                         $uvarsTuple:term := r.2;
+                         match r.1 with
+                         | none => Pure.pure (ensure_expected_type% "type mismatch, `for`" PUnit.unit)
+                         | some a => return ensure_expected_type% "type mismatch, `for`" a)
+        doSeqToCode (getDoSeqElems (getDoSeq auxDo) ++ doElems)
+      else
+        let forInBody ← liftMacroM <| destructTuple uvars (← `(r)) forInBody
+        let forInTerm ← if let some h := h? then
+          annotate doFor (← `(for_in'% $(xs) $uvarsTuple fun $x $h r => $forInBody))
+        else
+          annotate doFor (← `(for_in% $(xs) $uvarsTuple fun $x r => $forInBody))
+        if doElems.isEmpty then
+          let auxDo ← `(do let r ← $forInTerm:term;
+                           $uvarsTuple:term := r;
+                           Pure.pure (ensure_expected_type% "type mismatch, `for`" PUnit.unit))
+          doSeqToCode <| getDoSeqElems (getDoSeq auxDo)
+        else
+          let auxDo ← `(do let r ← $forInTerm:term; $uvarsTuple:term := r)
+          doSeqToCode <| getDoSeqElems (getDoSeq auxDo) ++ doElems
+
+  /-- Generate `CodeBlock` for `doMatch; doElems` -/
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Legacy/Variantbae1a4a72d5249cb41d801ff1fc6b7f879a3ec4918ce84053e460ea9c0988250.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Legacy/Variantbae1a4a72d5249cb41d801ff1fc6b7f879a3ec4918ce84053e460ea9c0988250.lean#L1577).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8c8da9f50ee7a399431280e0ec5e9dd066fa0789` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

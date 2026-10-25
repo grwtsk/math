@@ -1,0 +1,160 @@
+# withFields
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:edd9bbbdced20738e65fae6a7d9ce17e294e605087c039b464df7bfcf3873f22",
+  "kind": "def",
+  "lexical_name": "withFields",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "withfields--7ba5248f5f0bcf087b40454c",
+  "source": {
+    "blob": "a1c91bd6fe151224d413a2c083e3d0385d2386eb",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1087,
+    "line": 1009,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Structure/Variant283064a7fd3fb6d650ea5670cf26108df06fe96aa6d03baf982a58164ea8e0ea.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:7ba5248f5f0bcf087b40454c570bf2dfeef77bc089a6f4e367d12580dd1b4bf1",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Structure/Variant283064a7fd3fb6d650ea5670cf26108df06fe96aa6d03baf982a58164ea8e0ea.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:edd9bbbdced20738e65fae6a7d9ce17e294e605087c039b464df7bfcf3873f22`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1009–1087.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private partial def withFields (structParams : Array Expr) (views : Array StructFieldView) (k : StructElabM α) : StructElabM α := do
+  go 0
+where
+  go (i : Nat) : StructElabM α := do
+    if h : i < views.size then
+      let view := views[i]
+      -- `withLocalDecl` may need access to private data in case of private fields but we recurse
+      -- for further fields inside of it, so save and later restore exporting flag
+      let wasExporting := (← getEnv).isExporting
+      withoutExporting (when := isPrivateName view.declName) do
+      withRef view.ref do
+      if let some parent := (← get).parents.find? (·.name == view.name) then
+        throwError "Field `{view.name}` has already been declared as a projection for parent `{.ofConstName parent.structName}`"
+      match ← findFieldInfo? view.name with
+      | none      =>
+        let (type, paramInfoOverrides, numBinders) ← elabFieldType structParams view
+        /-
+        Currently, having autoParams with binders is accepted for new fields.
+        This code is a possibility in case it should be an error.
+        (However, we could also arrange for the tactic to enter `numBinders` automatically!)
+        -- if numBinders > 0 && view.default? matches some (.autoParam ..) then
+        --   throwErrorAt view.binders "Invalid field: Unexpected binders for field `{view.name}` when setting auto-param tactic"
+        -/
+        withLocalDecl view.rawName view.binderInfo type fun fieldFVar => do
+          addFieldInfo { ref := view.nameId, sourceStructNames := [],
+                         name := view.name, declName := view.declName,
+                         numBinders, fvar := fieldFVar, default? := none,
+                         binfo := view.binderInfo, paramInfoOverrides,
+                         kind := StructFieldKind.newField }
+          withExporting (isExporting := wasExporting) do
+            go (i+1)
+      | some info =>
+        match info.kind with
+        | StructFieldKind.newField      => throwError "Field `{view.name}` has already been declared"
+        | StructFieldKind.subobject n
+        | StructFieldKind.otherParent n =>
+          -- If this were a parent projection, we'd have caught it in the initial check, so it must be a transitive parent
+          let parentMsgs := (← get).parents.map (m!"`{.ofConstName ·.structName}`") |>.toList
+          let inheritanceMsg := if let [parent] := parentMsgs then
+            m!"this structure's immediate parent {parent}"
+          else
+            m!"one of this structure's immediate parents {.orList parentMsgs}"
+          throwError m!"Field `{view.name}` has already been declared as a projection for an indirect parent structure `{.ofConstName n}`"
+            ++ .note m!"This projection was inherited from {inheritanceMsg}"
+        | StructFieldKind.copiedField
+        | StructFieldKind.fromSubobject =>
+          match view.default? with
+          | none => throwError "Field `{view.name}` has already been declared in a parent structure"
+          | some default =>
+            -- Prepare the default value for later elaboration by `elabStructFieldDefaults`.
+            if let some projFn := info.projFn? then Term.addTermInfo' view.ref (← mkConstWithLevelParams projFn)
+            pushInfoLeaf <| .ofFieldRedeclInfo { stx := view.ref }
+            match default with
+            | .optParam _ =>
+              let (_, paramInfoOverrides) ← elabParamInfoUpdatesForField structParams view.binders.getArgs
+              unless paramInfoOverrides.isEmpty do
+                let params := MessageData.joinSep (paramInfoOverrides.toList.map (m!"{·.1}")) ", "
+                throwError "Cannot override structure parameter binder kinds when overriding the default value: {params}"
+              withExporting (isExporting := wasExporting) do
+                go (i+1)
+            | .autoParam _ =>
+              if let some type := view.type? then
+                throwErrorAt type "Invalid field: Uexpected type for field `{view.name}` when setting auto-param tactic for inherited field"
+              unless view.binders.getArgs.isEmpty do
+                throwErrorAt view.binders "Invalid field: Unexpected binders for field `{view.name}` when setting auto-param tactic for inherited field"
+              withExporting (isExporting := wasExporting) do
+                go (i+1)
+    else
+      k
+
+/--
+Elaborates the field defaults, with all the fields in scope.
+
+The behavior is slightly different between new fields and inherited fields:
+- New fields: We re-enter the binders elaborated in `elabFieldType`, then elaborate the value.
+- Inherited fields: We wrap the value in `fun` syntax to make use of the binders, then elaborate that.
+
+For inherited fields, we have already done checks that the binders and types are suitable.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Structure/Variant283064a7fd3fb6d650ea5670cf26108df06fe96aa6d03baf982a58164ea8e0ea.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Structure/Variant283064a7fd3fb6d650ea5670cf26108df06fe96aa6d03baf982a58164ea8e0ea.lean#L1009).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a1c91bd6fe151224d413a2c083e3d0385d2386eb` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

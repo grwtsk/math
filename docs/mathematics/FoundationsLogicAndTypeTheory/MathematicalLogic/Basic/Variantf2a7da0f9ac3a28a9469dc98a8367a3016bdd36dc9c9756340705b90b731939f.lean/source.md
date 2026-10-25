@@ -1,0 +1,147 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Basic.Variantf2a7da0f9ac3a28a9469dc98a8367a3016bdd36dc9c9756340705b90b731939f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b1a7c0a1a2b5255fe0267940b60062dcda7efde9` · SHA-256 `0131fef6a4f5e94c7cd99ad13ec22b24edea6aa03fa1858023a35d386c8d41bf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.MathematicalLogic
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.MulSingle.Varianta344389e80436bba04e2d480813597099dae69ddaf0eefc44ed1763a9440bfd0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a344389e80436bba04e2d480813597099dae69ddaf0eefc44ed1763a9440bfd0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.Foundations.SourceCorpus.MulSingle.Varianta344389e80436bba04e2d480813597099dae69ddaf0eefc44ed1763a9440bfd0","mathematical_subject":"Logic.Foundations","original_sha256":"a344389e80436bba04e2d480813597099dae69ddaf0eefc44ed1763a9440bfd0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Notation/Pi/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Simon Hudon, Patrick Massot, Eric Wieser
+-/
+module
+
+public import Mathlib.Algebra.Notation.Pi.Defs
+public import Mathlib.Logic.Function.Basic
+
+/-!
+# Very basic algebraic operations on pi types
+
+This file provides very basic algebraic operations on functions.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.MulSingle.Varianta344389e80436bba04e2d480813597099dae69ddaf0eefc44ed1763a9440bfd0
+
+@[expose] public section
+
+assert_not_exists Monoid Preorder
+
+open Function
+
+variable {ι ι' α : Type*} {M N O : ι → Type*}
+
+namespace Pi
+variable [∀ i, One (M i)] [∀ i, One (N i)] [∀ i, One (O i)] [DecidableEq ι] {i : ι} {x : M i}
+
+/-- The function supported at `i`, with value `x` there, and `1` elsewhere. -/
+@[to_additive /-- The function supported at `i`, with value `x` there, and `0` elsewhere. -/]
+def mulSingle (i : ι) (x : M i) : ∀ j, M j := Function.update 1 i x
+
+@[to_additive (attr := simp)]
+lemma mulSingle_eq_same (i : ι) (x : M i) : mulSingle i x i = x := Function.update_self i x _
+
+@[to_additive (attr := simp)]
+lemma mulSingle_eq_of_ne {i i' : ι} (h : i' ≠ i) (x : M i) : mulSingle i x i' = 1 :=
+  Function.update_of_ne h x _
+
+/-- Abbreviation for `mulSingle_eq_of_ne h.symm`, for ease of use by `simp`. -/
+@[to_additive (attr := simp)
+  /-- Abbreviation for `single_eq_of_ne h.symm`, for ease of use by `simp`. -/]
+lemma mulSingle_eq_of_ne' {i i' : ι} (h : i ≠ i') (x : M i) : mulSingle i x i' = 1 :=
+  mulSingle_eq_of_ne h.symm x
+
+@[to_additive (attr := simp)]
+lemma mulSingle_one (i : ι) : mulSingle i (1 : M i) = 1 := Function.update_eq_self _ _
+
+@[to_additive (attr := simp)]
+lemma mulSingle_eq_one_iff : mulSingle i x = 1 ↔ x = 1 := by
+  refine ⟨fun h => ?_, fun h => h.symm ▸ mulSingle_one i⟩
+  rw [← mulSingle_eq_same i x, h, one_apply]
+
+@[to_additive]
+lemma mulSingle_ne_one_iff : mulSingle i x ≠ 1 ↔ x ≠ 1 :=
+  mulSingle_eq_one_iff.ne
+
+@[to_additive]
+lemma apply_mulSingle (f' : ∀ i, M i → N i) (hf' : ∀ i, f' i 1 = 1) (i : ι) (x : M i) (j : ι) :
+    f' j (mulSingle i x j) = mulSingle i (f' i x) j := by
+  simpa only [Pi.one_apply, hf', mulSingle] using! Function.apply_update f' 1 i x j
+
+@[to_additive apply_single₂]
+lemma apply_mulSingle₂ (f' : ∀ i, M i → N i → O i) (hf' : ∀ i, f' i 1 1 = 1) (i : ι)
+    (x : M i) (y : N i) (j : ι) :
+    f' j (mulSingle i x j) (mulSingle i y j) = mulSingle i (f' i x y) j := by
+  by_cases h : j = i
+  · subst h
+    simp only [mulSingle_eq_same]
+  · simp only [mulSingle_eq_of_ne h, hf']
+
+@[to_additive]
+lemma mulSingle_op (op : ∀ i, M i → N i) (h : ∀ i, op i 1 = 1) (i : ι) (x : M i) :
+    mulSingle i (op i x) = fun j => op j (mulSingle i x j) :=
+  .symm <| funext <| apply_mulSingle op h i x
+
+@[to_additive]
+lemma mulSingle_op₂ (op : ∀ i, M i → N i → O i) (h : ∀ i, op i 1 1 = 1) (i : ι) (x : M i)
+    (y : N i) : mulSingle i (op i x y) = fun j ↦ op j (mulSingle i x j) (mulSingle i y j) :=
+  .symm <| funext <| apply_mulSingle₂ op h i x y
+
+@[to_additive]
+lemma mulSingle_injective (i : ι) : Function.Injective (mulSingle i : M i → ∀ i, M i) :=
+  Function.update_injective _ i
+
+@[to_additive (attr := simp)]
+lemma mulSingle_inj (i : ι) {x y : M i} : mulSingle i x = mulSingle i y ↔ x = y :=
+  (mulSingle_injective _).eq_iff
+
+variable {M : Type*} [One M]
+
+/--
+A congruence lemma for `Pi.mulSingle`, specialized for the non-dependent case. Without this,
+`simp` can't rewrite in the first and third argument (`i` and `j`) because of dependence.
+See also https://github.com/leanprover/lean4/issues/12478.
+-/
+@[to_additive (attr := congr) /--
+A congruence lemma for `Pi.single`, specialized for the non-dependent case. Without this,
+`simp` can't rewrite in the first and third argument (`i` and `j`) because of dependence.
+See also https://github.com/leanprover/lean4/issues/12478.
+-/]
+lemma mulSingle_congr {i₁ i₂ : ι} (hi : i₁ = i₂)
+    {x₁ x₂ : M} (hx : x₁ = x₂) {j₁ j₂ : ι} (hj : j₁ = j₂) :
+    (mulSingle i₁ x₁ : ι → M) j₁ = (mulSingle i₂ x₂ : ι → M) j₂ :=
+  update_congr rfl hi hx hj
+
+/-- On non-dependent functions, `Pi.mulSingle` can be expressed as an `ite` -/
+@[to_additive (attr := grind =)
+  /-- On non-dependent functions, `Pi.single` can be expressed as an `ite` -/]
+lemma mulSingle_apply (i : ι) (x : M) (i' : ι) :
+    (mulSingle i x : ι → M) i' = if i' = i then x else 1 :=
+  Function.update_apply (1 : ι → M) i x i'
+
+-- Porting note: added type ascription (_ : ι → M)
+/-- On non-dependent functions, `Pi.mulSingle` is symmetric in the two indices. -/
+@[to_additive /-- On non-dependent functions, `Pi.single` is symmetric in the two indices. -/]
+lemma mulSingle_comm (i : ι) (x : M) (j : ι) :
+    (mulSingle i x : ι → M) j = (mulSingle j x : ι → M) i := by simp [mulSingle_apply, eq_comm]
+
+variable [DecidableEq ι']
+
+@[to_additive (attr := simp)]
+theorem curry_mulSingle (i : ι × ι') (b : M) :
+    curry (Pi.mulSingle i b) = Pi.mulSingle i.1 (Pi.mulSingle i.2 b) :=
+  curry_update _ _ _
+
+@[to_additive (attr := simp)]
+theorem uncurry_mulSingle_mulSingle (i : ι) (i' : ι') (b : M) :
+    uncurry (Pi.mulSingle i (Pi.mulSingle i' b)) = Pi.mulSingle (i, i') b :=
+  uncurry_update_update _ _ _ _
+
+end Pi
+```

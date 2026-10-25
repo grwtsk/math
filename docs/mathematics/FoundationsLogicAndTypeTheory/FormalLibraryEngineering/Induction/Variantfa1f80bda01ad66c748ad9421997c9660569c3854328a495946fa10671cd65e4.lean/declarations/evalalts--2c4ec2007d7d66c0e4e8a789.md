@@ -1,0 +1,328 @@
+# evalAlts
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:d3fe14012eabcbf55e2430df0ce1898c606586d506da724a1a0677c345b7b076",
+  "kind": "def",
+  "lexical_name": "evalAlts",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "evalalts--2c4ec2007d7d66c0e4e8a789",
+  "source": {
+    "blob": "e1ac382d587c03dd137dad0d3b17273cb7572b72",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 595,
+    "line": 349,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Induction/Variantfa1f80bda01ad66c748ad9421997c9660569c3854328a495946fa10671cd65e4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2c4ec2007d7d66c0e4e8a789b76cf54c5e637727d78bcf3946b82bd60cdc0057",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Induction/Variantfa1f80bda01ad66c748ad9421997c9660569c3854328a495946fa10671cd65e4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:d3fe14012eabcbf55e2430df0ce1898c606586d506da724a1a0677c345b7b076`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 349–595.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+def evalAlts (elimInfo : ElimInfo) (alts : Array Alt) (optPreTac : Syntax) (altStxs? : Option (Array Syntax))
+    (mkInfo : TacticM Info) (tacStx : Syntax)
+    (numEqs : Nat := 0) (generalized : Array FVarId := #[]) (toClear : Array FVarId := #[])
+    (toTag : Array (Ident × FVarId) := #[]) : TacticM Unit := do
+  let hasAlts := altStxs?.isSome
+  -- We defer admitting goals for missing alternatives so that they can be captured by `mkInfo`.
+  let toAdmit ←
+    if hasAlts then
+      -- HACK: because this node may have the same span as the original tactic,
+      -- we need to take all the info trees we have produced so far and re-nest them
+      -- inside this node as well
+      let treesSaved ← getResetInfoTrees
+      withInfoContext ((modifyInfoState fun s => { s with trees := treesSaved }) *> goWithInfo) mkInfo
+    else
+      goWithInfo
+  toAdmit.forM fun mvarId => admitGoal mvarId
+where
+  -- continuation in the correct info context
+  goWithInfo : TacticM (List MVarId) := do
+    if let some altStxs := altStxs? then
+      if let some tacSnap := (← readThe Term.Context).tacSnap? then
+        -- incrementality: create a new promise for each alternative, resolve current snapshot to
+        -- them, eventually put each of them back in `Context.tacSnap?` in `applyAltStx`
+        let finished ← IO.Promise.new
+        let altPromises ← altStxs.mapM fun _ => IO.Promise.new
+        let cancelTk? := (← readThe Core.Context).cancelTk?
+        tacSnap.new.resolve {
+          transformed.raw := {
+            -- save all relevant syntax here for comparison with next document version
+            stx := mkNullNode altStxs
+            diagnostics := .empty
+            inner? := none
+            finished := {
+              stx? := mkNullNode altStxs, task := finished.resultD default, cancelTk?
+              -- Do not cover up progress from `next` as no significant work happens after `next` and
+              -- before `finished` is resolved.
+              reportingRange := .skip
+            }
+          }
+          next := Array.zipWith
+            (fun stx prom => { stx? := some stx, task := prom.resultD default, cancelTk? })
+            altStxs altPromises
+        }
+        let toAdmit ← goWithIncremental <| altPromises.mapIdx fun i prom => {
+          old? := do
+            let old ← tacSnap.old?
+            -- waiting is fine here: this is the old version of the snapshot resolved above
+            -- immediately at the beginning of the tactic
+            -- (access to `raw` is fine here as there should be no transformation in this case
+            -- anyway, see `resolve` above)
+            let oldParsed := old.val.get.transformed.raw
+            -- use old version of `mkNullNode altsSyntax` as guard, will be compared with new
+            -- version and picked apart in `applyAltStx`
+            return ⟨oldParsed.stx, (← old.val.get.next[i]?)⟩
+          new := prom
+        }
+        finished.resolve {
+          diagnostics := .empty
+          state? := (← saveState)
+          moreSnaps := (← Core.getAndEmptySnapshotTasks)
+        }
+        return toAdmit
+
+    goWithIncremental #[]
+
+  -- continuation in the correct incrementality context
+  goWithIncremental (tacSnaps : Array (SnapshotBundle TacticParsedSnapshot)) : TacticM (List MVarId) := withRef tacStx do
+    let hasAlts := altStxs?.isSome
+    let altStxs := altStxs?.getD #[]
+
+    -- initial sanity checks: named cases should be known, wildcards should be last
+    checkAltNames alts altStxs
+
+    -- `checkAltNames` may have looked at arbitrary alternatives, so we need to disable incremental
+    -- processing of alternatives if it had any effect lest we end up with stale messages
+    let tacSnaps := if (← MonadLog.hasErrors) then #[] else tacSnaps
+    Term.withoutTacticIncrementality (cond := (← MonadLog.hasErrors)) do
+
+    let mut alts := alts
+    let mut toAdmit := []
+
+    /-
+    First process `altsSyntax` in order, removing covered alternatives from `alts`. Previously we
+    did one loop through `alts`, looking up suitable alternatives from `altsSyntax`.
+    Motivations for the change:
+
+    1- It improves the effectiveness of incremental reuse. Consider the following example:
+    ```lean
+    example (h₁ : p ∨ q) (h₂ : p → x = 0) (h₃ : q → y = 0) : x * y = 0 := by
+      cases h₁ with
+      | inr h =>
+        sleep 5000 -- sleeps for 5 seconds
+        save
+        have : y = 0 := h₃ h
+        -- We can comfortably work here
+      | inl h => stop ...
+    ```
+    If we iterated through `alts` instead of `altsSyntax`, the `inl` alternative would be executed
+    first, making partial reuse in `inr` impossible (without support for reuse with position
+    adjustments).
+
+    2- The errors are produced in the same order the alternatives appear in the code. This is not
+    super important when using IDEs.
+    -/
+    for h : altStxIdx in *...altStxs.size do
+      let altStx := altStxs[altStxIdx]
+      let some altName := getAltName? altStx | continue
+      if let some i := alts.findFinIdx? (·.1 == altName) then
+        -- cover named alternative
+        applyAltStx tacSnaps altStxs altStxIdx altStx alts[i]
+        alts := alts.eraseIdx i
+      else if isAltWildcard altStx then
+        if alts.isEmpty then
+          throwOrLogErrorAt altStx m!"Wildcard alternative is not needed"
+        else
+          -- cover all remaining alternatives
+          for alt in alts do
+            applyAltStx tacSnaps altStxs altStxIdx altStx alt
+          alts := #[]
+      else
+        -- Skip this alternative. We have already validated the alternatives in `checkAltNames`
+        -- and thrown/logged errors.
+        pure ()
+
+    -- now process remaining alternatives; these might either be unreachable or we're in `induction`
+    -- without `with`. In all other cases, remaining alternatives are flagged as errors.
+    for { name := altName, info, mvarId := altMVarId } in alts do
+      let numFields ← getAltNumFields elimInfo altName
+      let mut (_, altMVarId) ← altMVarId.introN numFields
+      let some (altMVarId', subst) ← Cases.unifyEqs? numEqs altMVarId {}
+        | continue  -- alternative is not reachable
+      altMVarId.withContext do
+        for x in subst.domain do
+          if let .fvar y := subst.get x then
+            if let some decl ← x.findDecl? then
+              Elab.pushInfoLeaf (.ofFVarAliasInfo { id := y, baseId := x, userName := decl.userName })
+      altMVarId ← if info.provesMotive then
+        let (generalized', altMVarId') ← altMVarId'.introNP generalized.size
+        altMVarId'.withContext do
+          for x in generalized, y in generalized' do
+            Elab.pushInfoLeaf (.ofFVarAliasInfo { id := y, baseId := x, userName := ← y.getUserName })
+        pure altMVarId'
+      else
+        pure altMVarId'
+      for fvarId in toClear do
+        altMVarId ← altMVarId.tryClear fvarId
+      altMVarId.withContext do
+        for (stx, fvar) in toTag do
+          Term.addLocalVarInfo stx (subst.get fvar)
+      let some altMVarIds ← applyPreTac altMVarId
+        | continue
+      appendGoals altMVarIds
+      if hasAlts && !altMVarIds.isEmpty then
+        throwOrLogErrorAt tacStx m!"Alternative `{altName}` has not been provided"
+        toAdmit := altMVarIds ++ toAdmit
+    return toAdmit
+
+  /-- Applies syntactic alternative to alternative goal. -/
+  applyAltStx tacSnaps altStxs altStxIdx altStx alt := withRef altStx do
+    let { name := altName, info, mvarId := altMVarId } := alt
+    -- also checks for unknown alternatives
+    let numFields ← getAltNumFields elimInfo altName
+    let altVars := getAltVars altStx
+    let numFieldsToName ← if altHasExplicitModifier altStx then pure numFields else getNumExplicitFields altMVarId numFields
+    if altVars.size > numFieldsToName then
+      throwOrLogError m!"Too many variable names provided at alternative `{altName}`: {altVars.size} provided, but {numFieldsToName} expected"
+    let mut (fvarIds, altMVarId) ← altMVarId.introN numFields (altVars.toList.map getNameOfIdent') (useNamesForExplicitOnly := !altHasExplicitModifier altStx)
+    -- Delay adding the infos for the pattern LHS because we want them to nest
+    -- inside tacticInfo for the current alternative (in `evalAlt`)
+    let addInfo : TermElabM Unit := do
+      if (← getInfoState).enabled then
+        if let some declName := info.declName? then
+          addConstInfo (getAltNameStx altStx) declName
+        saveAltVarsInfo altMVarId altStx fvarIds
+    let unusedAlt := do
+      addInfo
+      if !isAltWildcard altStx then
+        throwOrLogError m!"Alternative `{altName}` is not needed"
+    let some (altMVarId', subst) ← Cases.unifyEqs? numEqs altMVarId {}
+      | unusedAlt
+    altMVarId.withContext do
+      for x in subst.domain do
+        if let .fvar y := subst.get x then
+          if let some decl ← x.findDecl? then
+            Elab.pushInfoLeaf (.ofFVarAliasInfo { id := y, baseId := x, userName := decl.userName })
+    altMVarId ← if info.provesMotive then
+      let (generalized', altMVarId') ← altMVarId'.introNP generalized.size
+      altMVarId'.withContext do
+        for x in generalized, y in generalized' do
+          Elab.pushInfoLeaf (.ofFVarAliasInfo { id := y, baseId := x, userName := ← y.getUserName })
+      pure altMVarId'
+    else
+      pure altMVarId'
+    for fvarId in toClear do
+      altMVarId ← altMVarId.tryClear fvarId
+    altMVarId.withContext do
+      for (stx, fvar) in toTag do
+        Term.addLocalVarInfo stx (subst.get fvar)
+    let some altMVarIds ← applyPreTac altMVarId
+      | return
+    if altMVarIds.isEmpty then
+      return (← unusedAlt)
+
+    -- select corresponding snapshot bundle for incrementality of this alternative
+    -- note that `tacSnaps[altStxIdx]?` is `none` if `tacSnap?` was `none` to begin with
+    withTheReader Term.Context ({ · with tacSnap? := tacSnaps[altStxIdx]? }) do
+    -- all previous alternatives have to be unchanged for reuse
+    Term.withNarrowedArgTacticReuse (stx := mkNullNode altStxs) (argIdx := altStxIdx) fun altStx => do
+    -- everything up to rhs has to be unchanged for reuse
+    Term.withNarrowedArgTacticReuse (stx := altStx) (argIdx := 1) fun rhs? => do
+    Term.withNarrowedArgTacticReuse (stx := rhs?) (argIdx := 1) fun _rhs => do
+    -- disable reuse if rhs is run multiple times
+    Term.withoutTacticIncrementality (altMVarIds.length != 1 || isAltWildcard altStx) do
+      for altMVarId' in altMVarIds do
+        evalAlt altMVarId' altStx addInfo
+
+  /-- Applies `induction .. with $preTac | ..`, if any, to an alternative goal. -/
+  applyPreTac (mvarId : MVarId) : TacticM (Option (List MVarId)) :=
+    if optPreTac.isNone then
+      return some [mvarId]
+    else
+      -- disable incrementality for the pre-tactic to avoid non-monotonic progress reporting; it
+      -- would be possible to include a custom task around the pre-tac with an appropriate range in
+      -- the snapshot such that it is cached as well if it turns out that this is valuable
+      Term.withoutTacticIncrementality true do
+        let go := evalTacticAt optPreTac[0] mvarId
+        if (← read).recover then
+          let saved ← saveState
+          Tactic.tryCatch go fun ex => do
+            logException ex
+            let msgLog ← Core.getMessageLog
+            saved.restore (restoreInfo := false)
+            Core.setMessageLog msgLog
+            admitGoal mvarId
+            return none
+        else
+          go
+
+end ElimApp
+
+/-
+  Recall that
+  ```
+  generalizingVars := optional (" generalizing " >> many1 ident)
+  «induction»  := leading_parser nonReservedSymbol "induction " >> majorPremise >> usingRec >> generalizingVars >> optional inductionAlts
+  ```
+  `stx` is syntax for `induction` or `fun_induction`. -/
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Induction/Variantfa1f80bda01ad66c748ad9421997c9660569c3854328a495946fa10671cd65e4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Induction/Variantfa1f80bda01ad66c748ad9421997c9660569c3854328a495946fa10671cd65e4.lean#L349).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e1ac382d587c03dd137dad0d3b17273cb7572b72` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

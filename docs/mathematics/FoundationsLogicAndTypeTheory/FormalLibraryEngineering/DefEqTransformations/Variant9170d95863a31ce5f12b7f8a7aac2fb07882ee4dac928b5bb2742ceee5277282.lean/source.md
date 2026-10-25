@@ -1,0 +1,309 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.DefEqTransformations.Variant9170d95863a31ce5f12b7f8a7aac2fb07882ee4dac928b5bb2742ceee5277282
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6b99ff21025b008cf778c9bac2f0ccf038d94cea` · SHA-256 `602c6c343b661492a91f53d835557f6634b1e79cb7e3c8bf37a93cfdbd372096`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RunDefEqTactic.Variant20a07c60f5d7503bb6b0e7317975340dd57eebc9ada43326a36283419a4eece9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"20a07c60f5d7503bb6b0e7317975340dd57eebc9ada43326a36283419a4eece9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.RunDefEqTactic.Variant20a07c60f5d7503bb6b0e7317975340dd57eebc9ada43326a36283419a4eece9","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"20a07c60f5d7503bb6b0e7317975340dd57eebc9ada43326a36283419a4eece9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Tactic/DefEqTransformations.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Kyle Miller. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kyle Miller
+-/
+import Mathlib.Tactic.Basic
+
+/-! # Tactics that transform types into definitionally equal types
+
+This module defines a standard wrapper that can be used to create tactics that
+change hypotheses and the goal to things that are definitionally equal.
+
+It then provides a number of tactics that transform local hypotheses and/or the target.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RunDefEqTactic.Variant20a07c60f5d7503bb6b0e7317975340dd57eebc9ada43326a36283419a4eece9
+
+namespace Mathlib.Tactic
+
+open Lean Meta Elab Elab.Tactic
+
+/-- For the main goal, use `m` to transform the types of locations specified by `loc?`.
+If `loc?` is none, then transforms the type of target. `m` is provided with an expression
+with instantiated metavariables.
+
+`m` *must* transform expressions to defeq expressions.
+If `checkDefEq = true` (the default) then `runDefEqTactic` will throw an error
+if the resulting expression is not definitionally equal to the original expression. -/
+def runDefEqTactic (m : Expr → MetaM Expr)
+    (loc? : Option (TSyntax ``Parser.Tactic.location))
+    (tacticName : String)
+    (checkDefEq : Bool := true) :
+    TacticM Unit := withMainContext do
+  withLocation (expandOptLocation (Lean.mkOptionalNode loc?))
+    (atLocal := fun h => liftMetaTactic1 fun mvarId => do
+      let ty ← instantiateMVars (← h.getType)
+      mvarId.changeLocalDecl' (checkDefEq := checkDefEq) h (← m ty))
+    (atTarget := liftMetaTactic1 fun mvarId => do
+      let ty ← instantiateMVars (← mvarId.getType)
+      mvarId.change (checkDefEq := checkDefEq) (← m ty))
+    (failed := fun _ => throwError "{tacticName} failed")
+
+/-- Like `Mathlib.Tactic.runDefEqTactic` but for `conv` mode. -/
+def runDefEqConvTactic (m : Expr → MetaM Expr) : TacticM Unit := withMainContext do
+  Conv.changeLhs <| ← m (← instantiateMVars <| ← Conv.getLhs)
+
+
+/-! ### `whnf` -/
+
+/--
+`whnf at loc` puts the given location into weak-head normal form.
+This also exists as a `conv`-mode tactic.
+
+Weak-head normal form is when the outer-most expression has been fully reduced, the expression
+may contain subexpressions which have not been reduced.
+-/
+elab "whnf" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic (checkDefEq := false) whnf loc? "whnf"
+
+
+/-! ### `beta_reduce` -/
+
+/--
+`beta_reduce at loc` completely beta reduces the given location.
+This also exists as a `conv`-mode tactic.
+
+This means that whenever there is an applied lambda expression such as
+`(fun x => f x) y` then the argument is substituted into the lambda expression
+yielding an expression such as `f y`.
+-/
+elab (name := betaReduceStx) "beta_reduce" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic (checkDefEq := false) (Core.betaReduce ·) loc? "beta_reduce"
+
+@[inherit_doc betaReduceStx]
+elab "beta_reduce" : conv => runDefEqConvTactic (Core.betaReduce ·)
+
+
+/-! ### `reduce` -/
+
+/--
+`reduce at loc` completely reduces the given location.
+This also exists as a `conv`-mode tactic.
+
+This does the same transformation as the `#reduce` command.
+-/
+elab "reduce" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic (reduce · (skipTypes := false) (skipProofs := false)) loc? "reduce"
+
+
+/-! ### `unfold_let` -/
+
+/-- Unfold all the fvars from `fvars` in `e` that have local definitions (are "let-bound"). -/
+def unfoldFVars (fvars : Array FVarId) (e : Expr) : MetaM Expr := do
+  transform (usedLetOnly := true) e fun node => do
+    match node with
+    | .fvar fvarId =>
+      if fvars.contains fvarId then
+        if let some val ← fvarId.getValue? then
+          return .visit (← instantiateMVars val)
+        else
+          return .continue
+      else
+        return .continue
+    | _ => return .continue
+
+/--
+`unfold_let x y z at loc` unfolds the local definitions `x`, `y`, and `z` at the given
+location, which is known as "zeta reduction."
+This also exists as a `conv`-mode tactic.
+
+If no local definitions are given, then all local definitions are unfolded.
+This variant also exists as the `conv`-mode tactic `zeta`.
+
+This is similar to the `unfold` tactic, which instead is for unfolding global definitions.
+-/
+syntax (name := unfoldLetStx) "unfold_let" (ppSpace colGt term:max)*
+  (ppSpace Parser.Tactic.location)? : tactic
+
+elab_rules : tactic
+  | `(tactic| unfold_let $[$loc?]?) =>
+    runDefEqTactic zetaReduce loc? "unfold_let"
+  | `(tactic| unfold_let $hs:term* $[$loc?]?) => do
+    runDefEqTactic (unfoldFVars (← getFVarIds hs)) loc? "unfold_let"
+
+@[inherit_doc unfoldLetStx]
+syntax "unfold_let" (ppSpace colGt term:max)* : conv
+
+elab_rules : conv
+  | `(conv| unfold_let) => runDefEqConvTactic zetaReduce
+  | `(conv| unfold_let $hs:term*) => do
+    runDefEqConvTactic (unfoldFVars (← getFVarIds hs))
+
+
+/-! ### `unfold_projs` -/
+
+/-- Recursively unfold all the projection applications for class instances. -/
+def unfoldProjs (e : Expr) : MetaM Expr := do
+  transform e fun node => do
+    if let some node' ← unfoldProjInst? node then
+      return .visit (← instantiateMVars node')
+    else
+      return .continue
+
+/--
+`unfold_projs at loc` unfolds projections of class instances at the given location.
+This also exists as a `conv`-mode tactic.
+-/
+elab (name := unfoldProjsStx) "unfold_projs" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic unfoldProjs loc? "unfold_projs"
+
+@[inherit_doc unfoldProjsStx]
+elab "unfold_projs" : conv => runDefEqConvTactic unfoldProjs
+
+
+/-! ### `eta_reduce` -/
+
+/-- Eta reduce everything -/
+def etaReduceAll (e : Expr) : MetaM Expr := do
+  transform e fun node => pure <| .continue node.etaExpanded?
+
+/--
+`eta_reduce at loc` eta reduces all sub-expressions at the given location.
+This also exists as a `conv`-mode tactic.
+
+For example, `fun x y => f x y` becomes `f` after eta reduction.
+-/
+elab (name := etaReduceStx) "eta_reduce" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic etaReduceAll loc? "eta_reduce"
+
+@[inherit_doc etaReduceStx]
+elab "eta_reduce" : conv => runDefEqConvTactic etaReduceAll
+
+
+/-! ### `eta_expand` -/
+
+/-- Eta expand every sub-expression in the given expression.
+
+As a side-effect, beta reduces any pre-existing instances of eta expanded terms.  -/
+partial def etaExpandAll (e : Expr) : MetaM Expr := do
+  let betaOrApp (f : Expr) (args : Array Expr) : Expr :=
+    if f.etaExpanded?.isSome then f.beta args else mkAppN f args
+  let expand (e : Expr) : MetaM Expr := do
+    if e.isLambda then
+      return e
+    else
+      forallTelescopeReducing (← inferType e) fun xs _ => do
+        mkLambdaFVars xs (betaOrApp e xs)
+  transform e
+    (pre := fun node => do
+      if node.isApp then
+        let f ← etaExpandAll node.getAppFn
+        let args ← node.getAppArgs.mapM etaExpandAll
+        .done <$> expand (betaOrApp f args)
+      else
+        pure .continue)
+    (post := (.done <$> expand ·))
+
+/--
+`eta_expand at loc` eta expands all sub-expressions at the given location.
+It also beta reduces any applications of eta expanded terms, so it puts it
+into an eta-expanded "normal form."
+This also exists as a `conv`-mode tactic.
+
+For example, if `f` takes two arguments, then `f` becomes `fun x y => f x y`
+and `f x` becomes `fun y => f x y`.
+
+This can be useful to turn, for example, a raw `HAdd.hAdd` into `fun x y => x + y`.
+-/
+elab (name := etaExpandStx) "eta_expand" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic etaExpandAll loc? "eta_expand"
+
+@[inherit_doc etaExpandStx]
+elab "eta_expand" : conv => runDefEqConvTactic etaExpandAll
+
+
+/-! ### `eta_struct` -/
+
+/-- Given an expression that's either a native projection or a registered projection
+function, gives (1) the name of the structure type, (2) the index of the projection, and
+(3) the object being projected. -/
+def getProjectedExpr (e : Expr) : MetaM (Option (Name × Nat × Expr)) := do
+  if let .proj S i x := e then
+    return (S, i, x)
+  if let .const fn _ := e.getAppFn then
+    if let some info ← getProjectionFnInfo? fn then
+      if e.getAppNumArgs == info.numParams + 1 then
+        if let some (ConstantInfo.ctorInfo fVal) := (← getEnv).find? info.ctorName then
+          return (fVal.induct, info.i, e.appArg!)
+  return none
+
+/-- Checks if the expression is of the form `S.mk x.1 ... x.n` with `n` nonzero
+and `S.mk` a structure constructor and returns `x`.
+Each projection `x.i` can be either a native projection or from a projection function.
+
+`tryWhnfR` controls whether to try applying `whnfR` to arguments when none of them
+are obviously projections.
+
+Once an obviously correct projection is found, relies on the structure eta rule in `isDefEq`. -/
+def etaStruct? (e : Expr) (tryWhnfR : Bool := true) : MetaM (Option Expr) := do
+  let .const f _ := e.getAppFn | return none
+  let some (ConstantInfo.ctorInfo fVal) := (← getEnv).find? f | return none
+  unless 0 < fVal.numFields && e.getAppNumArgs == fVal.numParams + fVal.numFields do return none
+  unless isStructureLike (← getEnv) fVal.induct do return none
+  let args := e.getAppArgs
+  let mut x? ← findProj fVal args pure
+  if tryWhnfR then
+    if let .undef := x? then
+      x? ← findProj fVal args whnfR
+  if let .some x := x? then
+    -- Rely on eta for structures to make the check:
+    if ← isDefEq x e then
+      return x
+  return none
+where
+  /-- Check to see if there's an argument at some index `i`
+  such that it's the `i`th projection of a some expression.
+  Returns the expression. -/
+  findProj (fVal : ConstructorVal) (args : Array Expr) (m : Expr → MetaM Expr) :
+      MetaM (LOption Expr) := do
+    for i in [0 : fVal.numFields] do
+      let arg ← m args[fVal.numParams + i]!
+      let some (S, j, x) ← getProjectedExpr arg | continue
+      if S == fVal.induct && i == j then
+        return .some x
+      else
+        -- Then the eta rule can't apply since there's an obviously wrong projection
+        return .none
+    return .undef
+
+/-- Finds all occurrences of expressions of the form `S.mk x.1 ... x.n` where `S.mk`
+is a structure constructor and replaces them by `x`. -/
+def etaStructAll (e : Expr) : MetaM Expr :=
+  transform e fun node => do
+    if let some node' ← etaStruct? node then
+      return .visit node'
+    else
+      return .continue
+
+/--
+`eta_struct at loc` transforms structure constructor applications such as `S.mk x.1 ... x.n`
+(pretty printed as, for example, `{a := x.a, b := x.b, ...}`) into `x`.
+This also exists as a `conv`-mode tactic.
+
+The transformation is known as eta reduction for structures, and it yields definitionally
+equal expressions.
+
+For example, given `x : α × β`, then `(x.1, x.2)` becomes `x` after this transformation.
+-/
+elab (name := etaStructStx) "eta_struct" loc?:(ppSpace Parser.Tactic.location)? : tactic =>
+  runDefEqTactic etaStructAll loc? "eta_struct"
+
+@[inherit_doc etaStructStx]
+elab "eta_struct" : conv => runDefEqConvTactic etaStructAll
+
+end Mathlib.Tactic
+```

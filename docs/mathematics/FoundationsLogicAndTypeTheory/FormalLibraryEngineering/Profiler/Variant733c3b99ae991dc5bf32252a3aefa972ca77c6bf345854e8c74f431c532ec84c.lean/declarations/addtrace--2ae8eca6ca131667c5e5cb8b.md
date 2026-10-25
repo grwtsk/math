@@ -1,0 +1,162 @@
+# addTrace
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:362e6fafcfaa06692a23c5299429b8adcf61ebd31ca779c76b1e2690a6ba3ea1",
+  "kind": "def",
+  "lexical_name": "addTrace",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addtrace--2ae8eca6ca131667c5e5cb8b",
+  "source": {
+    "blob": "8c9ab49cdc22f356de3afc9620307d3c659235bf",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 282,
+    "line": 202,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Profiler/Variant733c3b99ae991dc5bf32252a3aefa972ca77c6bf345854e8c74f431c532ec84c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2ae8eca6ca131667c5e5cb8b4418b55b2a4e25847acde7e67f12e499218b3d92",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Profiler/Variant733c3b99ae991dc5bf32252a3aefa972ca77c6bf345854e8c74f431c532ec84c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:362e6fafcfaa06692a23c5299429b8adcf61ebd31ca779c76b1e2690a6ba3ea1`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 202–282.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private partial def addTrace (pp : Bool) (thread : ThreadWithMaps) (trace : MessageData) :
+    IO ThreadWithMaps :=
+  (·.2) <$> StateT.run (go none none trace) thread
+where
+  go parentStackIdx? ctx? : _ → StateT ThreadWithMaps IO Unit
+    | .trace data msg children => do
+      if data.startTime == 0 then
+        return  -- no time data, skip
+      let mut funcName := data.cls.toString
+      if !data.tag.isEmpty then
+        funcName := s!"{funcName}: {data.tag}"
+      if pp then
+        funcName := s!"{funcName}: {← msg.format ctx?}"
+      let strIdx ← modifyGet fun thread =>
+        if let some idx := thread.stringMap[funcName]? then
+          (idx, thread)
+        else
+          (thread.stringMap.size, { thread with
+            stringArray := thread.stringArray.push funcName
+            stringMap := thread.stringMap.insert funcName thread.stringMap.size })
+      let category := categories.findIdx? (·.name.isPrefixOf data.cls) |>.getD 0
+      let funcIdx ← modifyGet fun thread =>
+        if let some idx := thread.funcMap[strIdx]? then
+          (idx, thread)
+        else
+          (thread.funcMap.size, { thread with
+            funcTable := {
+              name := thread.funcTable.name.push strIdx
+              resource := thread.funcTable.resource.push (-1)
+              -- the following fields could be inferred from `Syntax` in the message
+              fileName := thread.funcTable.fileName.push none
+              lineNumber := thread.funcTable.lineNumber.push none
+              columnNumber := thread.funcTable.columnNumber.push none
+              length := thread.funcTable.length + 1
+            }
+            frameTable := thread.frameTable.push {
+              func := thread.funcMap.size
+              category := category
+            }
+            funcMap := thread.funcMap.insert strIdx thread.funcMap.size })
+      let frameIdx := funcIdx
+      let stackIdx ← modifyGet fun thread =>
+        if let some idx := thread.stackMap[(frameIdx, parentStackIdx?)]? then
+          (idx, thread)
+        else
+          (thread.stackMap.size, { thread with
+            stackTable := {
+              frame := thread.stackTable.frame.push frameIdx
+              «prefix» := thread.stackTable.prefix.push parentStackIdx?
+              category := thread.stackTable.category.push category
+              subcategory := thread.stackTable.subcategory.push 0
+              length := thread.stackTable.length + 1
+            }
+            stackMap := thread.stackMap.insert (frameIdx, parentStackIdx?) thread.stackMap.size })
+      modify fun thread => { thread with lastTime := data.startTime }
+      for c in children do
+        if let some nextStart := getFirstStart? c then
+          -- add run time slice between children/before first child
+          -- a "slice" is always a pair of samples as otherwise Firefox Profiler interpolates
+          -- between adjacent samples in undesirable ways
+          modify fun thread => { thread with samples := {
+            stack := thread.samples.stack.push stackIdx |>.push stackIdx
+            time := thread.samples.time.push thread.lastTime |>.push nextStart
+            weight := thread.samples.weight.push 0.0 |>.push (nextStart - thread.lastTime)
+            threadCPUDelta := thread.samples.threadCPUDelta.push 0.0 |>.push (nextStart - thread.lastTime)
+            length := thread.samples.length + 2
+          } }
+          go (some stackIdx) ctx? c
+      -- add remaining slice after last child
+      modify fun thread => { thread with
+        lastTime := data.stopTime
+        samples := {
+          stack := thread.samples.stack.push stackIdx |>.push stackIdx
+          time := thread.samples.time.push thread.lastTime |>.push data.stopTime
+          weight := thread.samples.weight.push 0.0 |>.push (data.stopTime - thread.lastTime)
+          threadCPUDelta := thread.samples.threadCPUDelta.push 0.0 |>.push (data.stopTime - thread.lastTime)
+          length := thread.samples.length + 2
+        } }
+    | .withContext ctx msg => go parentStackIdx? (some ctx) msg
+    | _ => return
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Profiler/Variant733c3b99ae991dc5bf32252a3aefa972ca77c6bf345854e8c74f431c532ec84c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Profiler/Variant733c3b99ae991dc5bf32252a3aefa972ca77c6bf345854e8c74f431c532ec84c.lean#L202).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8c9ab49cdc22f356de3afc9620307d3c659235bf` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

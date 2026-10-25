@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TensorAlignment.Variant06316cf5c99ad2c928ef31b4bc22114876c2d677bed9701439cc368c134452c0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d9cf842fcd1c5cef66e7059eec2632c4d065d524` · SHA-256 `06316cf5c99ad2c928ef31b4bc22114876c2d677bed9701439cc368c134452c0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathematics.AbelReynolds.Unified
+import Mathematics.TensorNetwork.All
+
+/-!
+# Abel--Reynolds tensor-alignment integration
+
+Tensor alignment refines a proof-bearing unified candidate.  Missing tensor
+evidence cannot manufacture a unified domain candidate.
+-/
+
+namespace Mathematics.AbelReynolds
+
+open Mathematics.TensorNetwork
+
+universe u
+
+structure TensorAlignedUnifiedCandidate
+    (cut : UnifiedCutBinding)
+    (Context : Type u)
+    (N D : Nat) where
+  base : UnifiedCandidate cut
+  alignment : TensorAlignmentCandidate Context N D
+  alignmentCertificate :
+    CertifiedTensorAlignment alignment
+
+/-- The wrapper preserves the complete Abel--Reynolds proof-bearing payload. -/
+theorem TensorAlignedUnifiedCandidate.base_sound
+    {cut : UnifiedCutBinding}
+    (candidate :
+      TensorAlignedUnifiedCandidate cut Context N D) :
+    CertifiedSymmetryFixedTallyLiftedSEAReuse
+      cut candidate.base.payload :=
+  candidate.base.certificate
+
+/-- The tensor candidate cannot bypass its branch-specific certificate. -/
+theorem TensorAlignedUnifiedCandidate.alignment_sound
+    {cut : UnifiedCutBinding}
+    (candidate :
+      TensorAlignedUnifiedCandidate cut Context N D) :
+    CertifiedTensorAlignment candidate.alignment :=
+  candidate.alignmentCertificate
+
+end Mathematics.AbelReynolds
+```

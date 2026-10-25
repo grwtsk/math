@@ -1,0 +1,100 @@
+# IterM.foldM_empty
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "1ab8fc00ba9379b531a905bf2303ae61199ca797",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 48,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/0b/0ba71a218f445a7bfdfcd58f2f4e1806f877d596d6a606aaa298f2c1d8eae020.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:e86a3af4-6b50-1f64-8a60-e31c036a3fe8",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:38b3f1ca-be4d-0d1d-671a-a46f4e279fb8",
+  "kind": "theorem",
+  "lexical_name": "IterM.foldM_empty",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "iterm-foldm-empty--44de7b858107cd888e93b901",
+  "source": {
+    "blob": "1ab8fc00ba9379b531a905bf2303ae61199ca797",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 54,
+    "line": 48,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Empty/Variant0ba71a218f445a7bfdfcd58f2f4e1806f877d596d6a606aaa298f2c1d8eae020.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:44de7b858107cd888e93b901413332205b88b6997da39e827047427fac4acacd",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Empty/Variant0ba71a218f445a7bfdfcd58f2f4e1806f877d596d6a606aaa298f2c1d8eae020.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:38b3f1ca-be4d-0d1d-671a-a46f4e279fb8`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 48–54.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem IterM.foldM_empty {m n β γ} [Monad m] [LawfulMonad m]
+    [Monad n] [LawfulMonad n] [MonadLiftT m n] [LawfulMonadLiftT m n]
+    {init : γ} {f} :
+    (IterM.empty m β).foldM (n := n) (init := init) f = pure init := by
+  simp [IterM.foldM_eq_forIn]
+
+@[simp]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Empty/Variant0ba71a218f445a7bfdfcd58f2f4e1806f877d596d6a606aaa298f2c1d8eae020.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Empty/Variant0ba71a218f445a7bfdfcd58f2f4e1806f877d596d6a606aaa298f2c1d8eae020.lean#L48).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1ab8fc00ba9379b531a905bf2303ae61199ca797` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

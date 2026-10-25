@@ -1,0 +1,109 @@
+# BClosed
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:1de62b2cc5e055d7fb5ecc787051bf97c6471dd8c95c1d881f027ec2e616c437",
+  "kind": "def",
+  "lexical_name": "BClosed",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "bclosed--6deecded242d63683c966dfd",
+  "source": {
+    "blob": "26bc0b92709fb260d2d5e1f9a77b7246cc0bdd2a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 103,
+    "line": 76,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/Boundary/Variant902b876a0b5664bedc1714e745b5096257e66367e07b53fa8465cc8b4b03d417.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6deecded242d63683c966dfd87423cc20800427a4610f8cf2d2139dc6c0987ef",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/ProofTheory/Boundary/Variant902b876a0b5664bedc1714e745b5096257e66367e07b53fa8465cc8b4b03d417.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:1de62b2cc5e055d7fb5ecc787051bf97c6471dd8c95c1d881f027ec2e616c437`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 76–103.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def BClosed
+    {K : KernelPresentation.{u}} {J : K.Judgment}
+    (boundary : Finset K.ConstantName)
+    (derivation : RawDer K J) : Prop :=
+  letI := K.constantNameDecidableEq
+  derivation.constantReferences ⊆ boundary ∪ K.primitiveConstants
+
+/--
+**Architectural problem:** Keep boundary-only plans distinct from unrestricted
+local plans.
+
+**Important data and indices:** The subtype retains `K`, fixed `boundary`, exact
+root `J`, and a subset witness over evaluated references.
+
+**Used by:** `CompB` is the only M1a constructor from a raw derivation.
+
+**Type-enforced invariant:** The subtype witness fixes the same boundary and
+root judgment as its plan.
+**Layer boundary:** This is a restricted local tree, not a linked global plan.
+**Worked example:** The private restricted fixture retains its internal name
+under the explicitly fixed boundary.
+**Proof idea:** Pair a `TreePlan K J` with its reference-subset proof.
+**Equality notion:** Values use subtype equality over exact plan syntax and the
+closure proposition.
+**Boundary cases:** An empty boundary permits only primitives and no other names.
+**Validation consequence:** Construction exposes, but does not independently
+justify, the selected boundary.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/ProofTheory/Boundary/Variant902b876a0b5664bedc1714e745b5096257e66367e07b53fa8465cc8b4b03d417.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/Boundary/Variant902b876a0b5664bedc1714e745b5096257e66367e07b53fa8465cc8b4b03d417.lean#L76).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `26bc0b92709fb260d2d5e1f9a77b7246cc0bdd2a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,122 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Triplewise.Variant3a3e51458d7aed4f35eb32dcef00ba2231f782495f1e7e8248abcf1c1b5f6d02
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `95d7f2d45eabc6051a045f6bebae20b0f1302c13` · SHA-256 `e8b1e6f1502bbb73a41cdc2091c798e3c56ae304cb3d896f923ae2bea383ad81`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Triplewise.Variantdfbd321aeb3b7e2ea70e386a082e4584694a124252b5f6380a86b22bc5251229","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dfbd321aeb3b7e2ea70e386a082e4584694a124252b5f6380a86b22bc5251229","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Triplewise.Variantdfbd321aeb3b7e2ea70e386a082e4584694a124252b5f6380a86b22bc5251229","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"dfbd321aeb3b7e2ea70e386a082e4584694a124252b5f6380a86b22bc5251229","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/List/Triplewise.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Joseph Myers, Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joseph Myers, Yaël Dillies
+-/
+import Aesop
+import Mathlib.Tactic.Lemma
+import Mathlib.Tactic.MkIffOfInductiveProp
+
+/-!
+# Triplewise predicates on list.
+
+## Main definitions
+
+* `List.Triplewise` says that a predicate applies to all ordered triples of elements of a list.
+
+-/
+
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Triplewise.Variantdfbd321aeb3b7e2ea70e386a082e4584694a124252b5f6380a86b22bc5251229
+
+namespace List
+
+variable {α β : Type*}
+
+/-- Whether a predicate holds for all ordered triples of elements of a list. -/
+@[mk_iff]
+inductive Triplewise (p : α → α → α → Prop) : List α → Prop
+  | nil : [].Triplewise p
+  | cons {a : α} {l : List α} : l.Pairwise (p a) → l.Triplewise p → (a :: l).Triplewise p
+
+attribute [simp] Triplewise.nil
+
+variable {a b c : α} {l l₁ l₂ : List α} {p q : α → α → α → Prop} {f : α → β} {p' : β → β → β → Prop}
+
+lemma triplewise_cons : (a :: l).Triplewise p ↔ l.Pairwise (p a) ∧ l.Triplewise p := by
+  rw [triplewise_iff]; aesop
+
+variable (a b p)
+
+@[simp] lemma triplewise_singleton : [a].Triplewise p := by
+  simp [triplewise_cons]
+
+@[simp] lemma triplewise_pair : [a, b].Triplewise p := by
+  simp [triplewise_cons]
+
+variable {a b p}
+
+@[simp] lemma triplewise_triple : [a, b, c].Triplewise p ↔ p a b c := by
+  simp [triplewise_cons]
+
+lemma Triplewise.imp (h : ∀ {a b c}, p a b c → q a b c) (hl : l.Triplewise p) :
+    l.Triplewise q := by
+  induction hl with
+  | nil => exact .nil
+  | cons head tail ih => exact .cons (head.imp h) ih
+
+lemma triplewise_map :
+    (l.map f).Triplewise p' ↔ l.Triplewise (fun a b c ↦ p' (f a) (f b) (f c)) := by
+  induction l with
+  | nil => simp
+  | cons h t ih => simp [map, triplewise_cons, ih, pairwise_map]
+
+lemma Triplewise.of_map
+    (h : ∀ {a b c}, p' (f a) (f b) (f c) → p a b c) (hl : (l.map f).Triplewise p') :
+    l.Triplewise p := by
+  rw [triplewise_map] at hl
+  exact hl.imp h
+
+lemma Triplewise.map (h : ∀ {a b c}, p a b c → p' (f a) (f b) (f c)) (hl : l.Triplewise p) :
+    (l.map f).Triplewise p' :=
+  triplewise_map.2 (hl.imp h)
+
+lemma triplewise_iff_getElem : l.Triplewise p ↔ ∀ i j k (hij : i < j) (hjk : j < k)
+    (hk : k < l.length), p l[i] l[j] l[k] := by
+  induction l with
+  | nil => simp
+  | cons head tail ih =>
+    simp only [triplewise_cons, length_cons, pairwise_iff_getElem, ih]
+    refine ⟨fun ⟨hh, ht⟩ i j k hij hjk hk ↦ ?_,
+            fun h ↦ ⟨fun i j hi hj hij ↦ ?_, fun i j k hij hjk hk ↦ ?_⟩⟩
+    · rcases i with - | i <;> rcases j with - | j
+      · simp at hij
+      · rcases k with - | k
+        · omega
+        · simpa using hh j k (by omega) (by omega) (by omega)
+      · simp at hij
+      · rcases k with - | k
+        · omega
+        · simpa using ht i j k (by omega) (by omega) (by omega)
+    · simpa using h 0 (i + 1) (j + 1) (by omega) (by omega) (by omega)
+    · simpa using h (i + 1) (j + 1) (k + 1) (by omega) (by omega) (by omega)
+
+lemma triplewise_append : (l₁ ++ l₂).Triplewise p ↔ l₁.Triplewise p ∧ l₂.Triplewise p ∧
+    (∀ a ∈ l₁, l₂.Pairwise (p a)) ∧ ∀ a ∈ l₂, l₁.Pairwise fun x y ↦ p x y a := by
+  induction l₁ with
+  | nil => simp
+  | cons h t ih =>
+    simp [triplewise_cons, ih, pairwise_append]
+    aesop
+
+lemma triplewise_reverse : l.reverse.Triplewise p ↔ l.Triplewise fun a b c ↦ p c b a := by
+  induction l with
+  | nil => simp
+  | cons h t ih =>
+    simp [triplewise_append, pairwise_reverse, triplewise_cons, ih, and_comm]
+
+end List
+```

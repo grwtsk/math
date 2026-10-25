@@ -1,0 +1,122 @@
+# eval
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:d819c6fdeaf6017255387040dda67577cac26160851dc0042f5ff5e0f6960c4b",
+  "kind": "def",
+  "lexical_name": "eval",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "eval--f91678d1a5e2e9b36fba2da7",
+  "source": {
+    "blob": "ff3c8d98086c1766a674afbe0dba144815751274",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 719,
+    "line": 679,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/Computability/PostTuringMachine/Variant510babc15f4750a3dce1f3bfb562ad45ffb00c052b80e8f6aa1b221cda14cf38.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:f91678d1a5e2e9b36fba2da712dc7d662fd4d101873d7b55d62772b58c60ded9",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/Computability/PostTuringMachine/Variant510babc15f4750a3dce1f3bfb562ad45ffb00c052b80e8f6aa1b221cda14cf38.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:d819c6fdeaf6017255387040dda67577cac26160851dc0042f5ff5e0f6960c4b`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 679–719.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def eval (M : Λ → Stmt Γ Λ σ) (l : List Γ) : Part (ListBlank Γ) :=
+  (Turing.eval (step M) (init l)).map fun c ↦ c.Tape.right₀
+
+end
+
+end TM1
+
+/-!
+## TM1 emulator in TM0
+
+To prove that TM1 computable functions are TM0 computable, we need to reduce each TM1 program to a
+TM0 program. So suppose a TM1 program is given. We take the following:
+
+* The alphabet `Γ` is the same for both TM1 and TM0
+* The set of states `Λ'` is defined to be `Option Stmt₁ × σ`, that is, a TM1 statement or `none`
+  representing halt, and the possible settings of the internal variables.
+  Note that this is an infinite set, because `Stmt₁` is infinite. This is okay because we assume
+  that from the initial TM1 state, only finitely many other labels are reachable, and there are
+  only finitely many statements that appear in all of these functions.
+
+Even though `Stmt₁` contains a statement called `halt`, we must separate it from `none`
+(`some halt` steps to `none` and `none` actually halts) because there is a one step stutter in the
+TM1 semantics.
+-/
+
+
+namespace TM1to0
+
+variable {Γ : Type*}
+variable {Λ : Type*} [Inhabited Λ]
+variable {σ : Type*} [Inhabited σ]
+
+variable (M : Λ → TM1.Stmt Γ Λ σ)
+
+set_option linter.unusedVariables false in
+/-- The base machine state space is a pair of an `Option Stmt₁` representing the current program
+to be executed, or `none` for the halt state, and a `σ` which is the local state (stored in the TM,
+not the tape). Because there are an infinite number of programs, this state space is infinite, but
+for a finitely supported TM1 machine and a finite type `σ`, only finitely many of these states are
+reachable. -/
+@[nolint unusedArguments] -- We need the M assumption
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/Computability/PostTuringMachine/Variant510babc15f4750a3dce1f3bfb562ad45ffb00c052b80e8f6aa1b221cda14cf38.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/Computability/PostTuringMachine/Variant510babc15f4750a3dce1f3bfb562ad45ffb00c052b80e8f6aa1b221cda14cf38.lean#L679).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ff3c8d98086c1766a674afbe0dba144815751274` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

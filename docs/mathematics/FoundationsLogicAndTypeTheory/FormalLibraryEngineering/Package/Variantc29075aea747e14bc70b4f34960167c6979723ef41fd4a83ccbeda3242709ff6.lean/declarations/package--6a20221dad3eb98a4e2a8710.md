@@ -1,0 +1,143 @@
+# Package
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:764ff2f4e05c4e77814805dd07d8453baa428f294552a634facaf86ed6102a87",
+  "kind": "structure",
+  "lexical_name": "Package",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "package--6a20221dad3eb98a4e2a8710",
+  "source": {
+    "blob": "c244b5d7c3b6009aea49f9fae9eaa5318218ae2e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 97,
+    "line": 36,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Package/Variantc29075aea747e14bc70b4f34960167c6979723ef41fd4a83ccbeda3242709ff6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:6a20221dad3eb98a4e2a8710b1dc8a2881f44af032221944aca56224645573ac",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Package/Variantc29075aea747e14bc70b4f34960167c6979723ef41fd4a83ccbeda3242709ff6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:764ff2f4e05c4e77814805dd07d8453baa428f294552a634facaf86ed6102a87`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 36–97.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+public structure Package where
+  /-- The index of the package in the workspace. Used to disambiguate packages with the same name. -/
+  wsIdx : Nat
+  /-- The assigned name of the package. -/
+  baseName : Name
+  /-- The package identifier used in target keys and configuration types. -/
+  keyName : Name := baseName.num wsIdx
+  /-- The name specified by the package. -/
+  origName : Name
+  /-- The absolute path to the package's directory. -/
+  dir : FilePath
+  /-- The path to the package's directory relative to the workspace. -/
+  relDir : FilePath
+  /-- The package's user-defined configuration. -/
+  config : PackageConfig keyName origName
+  /-- The absolute path to the package's configuration file. -/
+  configFile : FilePath
+  /-- The path to the package's configuration file (relative to `dir`). -/
+  relConfigFile : FilePath
+  /-- The path to the package's JSON manifest of remote dependencies (relative to `dir`). -/
+  relManifestFile : FilePath
+  /-- The package's scope (e.g., in Reservoir). -/
+  scope : String
+  /-- The URL to this package's Git remote. -/
+  remoteUrl : String
+  /-- Dependency configurations for the package. -/
+  depConfigs : Array Dependency := #[]
+  /-- **For internal use only.** Workspace indices of the resolved direct dependencies of the package. -/
+  depIdxs : Array Nat := #[]
+  /-- **For internal use only.** Resolved direct dependences of the package. -/
+  depPkgs : Array Package := #[]
+  /-- Target configurations in the order declared by the package. -/
+  targetDecls : Array (PConfigDecl keyName) := #[]
+  /-- Name-declaration map of target configurations in the package. -/
+  targetDeclMap : DNameMap (NConfigDecl keyName) :=
+    targetDecls.foldl (fun m d => m.insert d.name (.mk d rfl)) {}
+  /--
+  The names of the package's targets to build by default
+  (i.e., on a bare `lake build` of the package).
+  -/
+  defaultTargets : Array Name := #[]
+  /-- Scripts for the package. -/
+  scripts : NameMap Script := {}
+  /--
+  The names of the package's scripts run by default
+  (i.e., on a bare `lake run` of the package).
+  -/
+  defaultScripts : Array Script := #[]
+  /-- Post-`lake update` hooks for the package. -/
+  postUpdateHooks : Array (OpaquePostUpdateHook keyName) := #[]
+  /-- The package's `buildArchive`/`buildArchive?` configuration. -/
+  buildArchive : String :=
+    if let some n := config.buildArchive then n else defaultBuildArchive baseName
+  /-- The driver used for `lake test` when this package is the workspace root. -/
+  testDriver : String := config.testDriver
+  /-- The driver used for `lake lint` when this package is the workspace root. -/
+  lintDriver : String := config.lintDriver
+
+deriving Inhabited
+
+namespace Package
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Package/Variantc29075aea747e14bc70b4f34960167c6979723ef41fd4a83ccbeda3242709ff6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Package/Variantc29075aea747e14bc70b4f34960167c6979723ef41fd4a83ccbeda3242709ff6.lean#L36).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c244b5d7c3b6009aea49f9fae9eaa5318218ae2e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

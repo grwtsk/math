@@ -1,0 +1,109 @@
+# test_sorry
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f9f119477b75ee4e951cab6ed680faa20383efa2f5c72fdd66c9e142aa8145a3",
+  "kind": "axiom",
+  "lexical_name": "test_sorry",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "test-sorry--d068e1ef896c58e7cd9ac700",
+  "source": {
+    "blob": "f54f840889b040a07451ae0c07d4fadd446d4df9",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 345,
+    "line": 318,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Euclidean/Variantd4455babd33da90ac3fbe369473eeaa1d4a419bd2458df8adca7ef442c7eb60b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:d068e1ef896c58e7cd9ac70021d620af2971e607d1144d477026ae9cd175ac36",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Euclidean/Variantd4455babd33da90ac3fbe369473eeaa1d4a419bd2458df8adca7ef442c7eb60b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `axiom` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f9f119477b75ee4e951cab6ed680faa20383efa2f5c72fdd66c9e142aa8145a3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 318–345.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+axiom test_sorry {α} : α
+
+show_panel_widgets [local EuclideanConstructions]
+
+/-! # Example construction -/
+
+/- Try constructing an equilateral triangle abc
+with line segment ab as the base.
+
+Place your cursor in the proof below.
+To make a construction involving objects `x, y, z`,
+shift-click their names in 'Tactic state'
+in order to select them.
+Due to a limitation of the widget,
+you can only click-to-select in 'Tactic state',
+and not in the diagram.
+
+- To construct a line on two points,
+  select `a` and `b` in `a b : Point`.
+- To construct a circle with center `a` passing through `b`,
+  select `a` and `b` in `a b : Point`.
+  You may have to prove that `a ≠ b`.
+- To construct an intersection point of two circles `C` and `D`,
+  you first have to provide a local proof
+  of `have h : circlesInter C D := ...`
+  (i.e., show that the circles intersect)
+  using the axioms of `IncidenceGeometry` above.
+  Then select `h` in `h : circlesInter C D`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Euclidean/Variantd4455babd33da90ac3fbe369473eeaa1d4a419bd2458df8adca7ef442c7eb60b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Euclidean/Variantd4455babd33da90ac3fbe369473eeaa1d4a419bd2458df8adca7ef442c7eb60b.lean#L318).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f54f840889b040a07451ae0c07d4fadd446d4df9` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

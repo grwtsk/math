@@ -1,0 +1,96 @@
+# importsOf
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:6c0caba2c97415229169123d19038a14b08b6dcb5edcd2e20382524b3683d517",
+  "kind": "def",
+  "lexical_name": "importsOf",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "importsof--12e2baebd3a2e55d015b563e",
+  "source": {
+    "blob": "39b05d69ba7494c240cd75b0ea5aeeda258e60ac",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 30,
+    "line": 16,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ImportGraph/Variantbdf53f84c3ee34acbf6245467141247c7cf266131f8e02ed42f4949fa5e6e387.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:12e2baebd3a2e55d015b563e5c83ab9f3e883d519a446be7f675cb1689cab7c2",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ImportGraph/Variantbdf53f84c3ee34acbf6245467141247c7cf266131f8e02ed42f4949fa5e6e387.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:6c0caba2c97415229169123d19038a14b08b6dcb5edcd2e20382524b3683d517`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 16–30.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+public def importsOf (env : Environment) (n : Name) : Array Name :=
+  let imports :=
+    if n = env.header.mainModule then
+      env.header.imports.map Import.module
+    else match env.getModuleIdx? n with
+      | .some idx => env.header.moduleData[idx.toNat]!.imports.map Import.module
+      | .none => #[]
+  -- Note: we use `filter` rather than `erase`, since module-system files may contain
+  -- both an implicit `public import Init` and a `meta import Init`, so `Init` can
+  -- appear more than once in the parsed imports.
+  imports.filter (· != `Init)
+
+/--
+Construct the import graph of the current file.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ImportGraph/Variantbdf53f84c3ee34acbf6245467141247c7cf266131f8e02ed42f4949fa5e6e387.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ImportGraph/Variantbdf53f84c3ee34acbf6245467141247c7cf266131f8e02ed42f4949fa5e6e387.lean#L16).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `39b05d69ba7494c240cd75b0ea5aeeda258e60ac` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

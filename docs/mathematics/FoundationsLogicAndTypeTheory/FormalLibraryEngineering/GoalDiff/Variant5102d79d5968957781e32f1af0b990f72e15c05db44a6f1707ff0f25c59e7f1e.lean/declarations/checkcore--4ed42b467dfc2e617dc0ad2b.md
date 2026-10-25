@@ -1,0 +1,147 @@
+# checkCore
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:c578263727f8cacf3ea45478f0139e4cec57b4f5a7dadfda00695513f841b847",
+  "kind": "def",
+  "lexical_name": "checkCore",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "checkcore--4ed42b467dfc2e617dc0ad2b",
+  "source": {
+    "blob": "91fa800ac228a2c70189f734d8972a313afa763d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 211,
+    "line": 146,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GoalDiff/Variant5102d79d5968957781e32f1af0b990f72e15c05db44a6f1707ff0f25c59e7f1e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:4ed42b467dfc2e617dc0ad2bef5ad33d5f0fa094b3cc9c471909c8aaa23b1810",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GoalDiff/Variant5102d79d5968957781e32f1af0b990f72e15c05db44a6f1707ff0f25c59e7f1e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:c578263727f8cacf3ea45478f0139e4cec57b4f5a7dadfda00695513f841b847`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 146–211.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def checkCore (diff : GoalDiff) (old new : MVarId) :
+    BaseM (Option MessageData) := new.withContext do
+  if diff.oldGoal != old then
+    return some m!"incorrect old goal: expected {old.name}, got {diff.oldGoal.name}"
+  if diff.newGoal != new then
+    return some m!"incorrect new goal: expected {new.name}, got {diff.newGoal.name}"
+
+  let oldLCtx := (← old.getDecl).lctx
+  let newLCtx := (← new.getDecl).lctx
+
+  -- Check that the added hypotheses were indeed added
+  for fvarId in diff.addedFVars do
+    if let some oldLDecl := oldLCtx.find? fvarId then
+      if ← isGoalDiffDefeqLDecl oldLDecl (← fvarId.getDecl) then
+        return some m!"addedFVars contains hypothesis {oldLDecl.userName} which was already present in the old goal"
+    unless newLCtx.contains fvarId do
+      return some m!"addedFVars contains hypothesis {fvarId.name} but this fvar does not exist in the new goal"
+
+  -- Check that the removed hypotheses were indeed removed
+  for fvarId in diff.removedFVars do
+    if let some newLDecl := newLCtx.find? fvarId then
+      if ← isGoalDiffDefeqLDecl (← fvarId.getDecl) newLDecl then
+        return some m!"removedFVars contains hypothesis {newLDecl.userName} but it is still present in the new goal"
+    unless oldLCtx.contains fvarId do
+      return some m!"removedFVars contains hypothesis {fvarId.name} but this fvar does not exist in the old goal"
+
+  -- Check that all added hypotheses appear in addedFVars
+  for newLDecl in newLCtx do
+    if newLDecl.isImplementationDetail then
+      continue
+    let newFVarId := newLDecl.fvarId
+    if ! oldLCtx.contains newFVarId &&
+       ! diff.addedFVars.contains newFVarId then
+      return some m!"hypothesis {newLDecl.userName} was added, but does not appear in addedFVars"
+
+  -- Check that all removed hypotheses appear in removedFVars
+  for oldLDecl in oldLCtx do
+    if oldLDecl.isImplementationDetail then
+      continue
+    let oldFVarId := oldLDecl.fvarId
+    if ! newLCtx.contains oldFVarId &&
+       ! diff.removedFVars.contains oldFVarId then
+      return some m!"hypothesis {oldLDecl.userName} was removed, but does not appear in removedFVars"
+
+  -- Check that all common hypotheses are equal.
+  for newLDecl in newLCtx do
+    if newLDecl.isImplementationDetail then
+      continue
+    if let some oldLDecl := oldLCtx.find? newLDecl.fvarId then
+      unless ← isGoalDiffDefeqLDecl oldLDecl newLDecl do
+        return some m!"hypotheses {oldLDecl.userName} and {newLDecl.userName} have the same FVarId but their types/values are not reducibly defeq"
+
+  -- Check the target
+  let oldTgt ← old.getType
+  let newTgt ← new.getType
+  if ← pure diff.targetChanged <&&> isGoalDiffDefeqExpr oldTgt newTgt then
+    let oldTgt ← old.withContext do addMessageContext m!"{oldTgt}"
+    let newTgt ← new.withContext do addMessageContext m!"{newTgt}"
+    return some m!"diff says target changed, but old target{indentD oldTgt}\nis reducibly defeq to new target{indentD newTgt}"
+  if ← pure (! diff.targetChanged) <&&> notM (isGoalDiffDefeqExpr oldTgt newTgt) then
+    let oldTgt ← old.withContext do addMessageContext m!"{oldTgt}"
+    let newTgt ← new.withContext do addMessageContext m!"{newTgt}"
+    return some m!"diff says target did not change, but old target{indentD oldTgt}\nis not reducibly defeq to new target{indentD newTgt}"
+
+  return none
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GoalDiff/Variant5102d79d5968957781e32f1af0b990f72e15c05db44a6f1707ff0f25c59e7f1e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GoalDiff/Variant5102d79d5968957781e32f1af0b990f72e15c05db44a6f1707ff0f25c59e7f1e.lean#L146).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `91fa800ac228a2c70189f734d8972a313afa763d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,118 @@
+# TypeIIScaleSurgeryData.initialState
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:5ca72a50d5656cbf724e1aef45a872f047732ac049ec1132397236483d1198ab",
+  "kind": "def",
+  "lexical_name": "TypeIIScaleSurgeryData.initialState",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "typeiiscalesurgerydata-initialstate--5310ccdde9a3816544c54f1d",
+  "source": {
+    "blob": "5d40b5f56f814f9f0b8f0a6f40c8f0a1ef6745b0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 318,
+    "line": 282,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConductorThreeDeltaRicciSurgeryData/Variantecedad8ff5d9650140b7c3963197cbebbfac2756e18c1dc43f13aa97dd50e221.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:5310ccdde9a3816544c54f1da8190dd29e53a497b4e12f4b90d403c7bae64ad2",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConductorThreeDeltaRicciSurgeryData/Variantecedad8ff5d9650140b7c3963197cbebbfac2756e18c1dc43f13aa97dd50e221.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:5ca72a50d5656cbf724e1aef45a872f047732ac049ec1132397236483d1198ab`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 282–318.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def TypeIIScaleSurgeryData.initialState {N : ℕ}
+    (scale : TypeIIScaleSurgeryData N) : TypeIIBilinearSurgeryState scale where
+  leftCoefficient := scale.packetData.factorization.leftCoefficient
+  rightCoefficient := scale.packetData.factorization.rightCoefficient
+  leftSynthesis := scale.packetData.factorization.leftSynthesis
+  rightSynthesis := scale.packetData.factorization.rightSynthesis
+  leftVector := ∑ left : scale.packetData.Left,
+    scale.packetData.factorization.leftCoefficient left •
+      scale.packetData.factorization.leftSynthesis
+        (EuclideanSpace.single left 1)
+  rightVector := ∑ right : scale.packetData.Right,
+    scale.packetData.factorization.rightCoefficient right •
+      scale.packetData.factorization.rightSynthesis
+        (EuclideanSpace.single right 1)
+  leftVector_from_coefficients := rfl
+  rightVector_from_coefficients := rfl
+  incidence := scale.packetData.factorization.incidence
+  residualMatrix := scale.packetData.factorization.residualMatrix
+  cutoffMatrix := fun x ↦ typeIICutoffMatrix
+    (fun left ↦ (scale.packetData.factorization.leftIndex left).1)
+    (fun right ↦ (scale.packetData.factorization.rightIndex right).1) x
+  exactFactorization := scale.packetData.factorization.exactFactorization
+  leftPacket_ae_zero_outside_shading :=
+    scale.leftPacket_ae_zero_outside_shading
+  rightPacket_ae_zero_outside_shading :=
+    scale.rightPacket_ae_zero_outside_shading
+  interaction_realizes_incidence :=
+    scale.interaction_realizes_packet_incidence
+  complexity :=
+    { unprocessedScales := Nat.log2 (2 * N) + 1
+      badClusters := scale.interaction.incidenceHypergraph.hyperedges.card
+      activeInteractions :=
+        Fintype.card scale.packetData.Left * Fintype.card scale.packetData.Right }
+
+/-- The initial intrinsic pairing is exactly the checked Vaughan Type II
+prefix.  No operator norm or cancellation estimate is used. -/
+@[surface_novel, surface_published]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConductorThreeDeltaRicciSurgeryData/Variantecedad8ff5d9650140b7c3963197cbebbfac2756e18c1dc43f13aa97dd50e221.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConductorThreeDeltaRicciSurgeryData/Variantecedad8ff5d9650140b7c3963197cbebbfac2756e18c1dc43f13aa97dd50e221.lean#L282).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5d40b5f56f814f9f0b8f0a6f40c8f0a1ef6745b0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

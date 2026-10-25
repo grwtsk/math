@@ -1,0 +1,89 @@
+# unaryBV
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f449fbdd04a5e16a28fe42c8c7cb5ab3dd7188ae9ef761a4be988cd22f5bd386",
+  "kind": "def",
+  "lexical_name": "unaryBV",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "unarybv--40e2ff74c3515c07f4cd4c60",
+  "source": {
+    "blob": "d8e0de255f12dde928f940d3a9a969af601740c5",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 92,
+    "line": 85,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BitVec/Variant523c5c94490a1af0a6beb2bf04ffba56df6dd7d50e44906346e7d9cccee0c4bf.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:40e2ff74c3515c07f4cd4c60e186c67dbcc3fa14a2af9d4c281ef5fb8c463ba1",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BitVec/Variant523c5c94490a1af0a6beb2bf04ffba56df6dd7d50e44906346e7d9cccee0c4bf.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f449fbdd04a5e16a28fe42c8c7cb5ab3dd7188ae9ef761a4be988cd22f5bd386`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 85–92.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+@[inline] private def unaryBV (declName : Name) (arity : Nat)
+    (op : {n : Nat} → BitVec n → BitVec n) (e : Expr) : GoalM Unit := do
+  unless e.isAppOfArity declName arity do return ()
+  unaryOp e fun r => do
+    let some ⟨n, v⟩ ← getBitVecValue? r | return none
+    some <$> mkBVLit n (op v)
+
+/-- Table entry for `op : (m : Nat) → BitVec n → BitVec m` where `m` is argument 1. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BitVec/Variant523c5c94490a1af0a6beb2bf04ffba56df6dd7d50e44906346e7d9cccee0c4bf.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BitVec/Variant523c5c94490a1af0a6beb2bf04ffba56df6dd7d50e44906346e7d9cccee0c4bf.lean#L85).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d8e0de255f12dde928f940d3a9a969af601740c5` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

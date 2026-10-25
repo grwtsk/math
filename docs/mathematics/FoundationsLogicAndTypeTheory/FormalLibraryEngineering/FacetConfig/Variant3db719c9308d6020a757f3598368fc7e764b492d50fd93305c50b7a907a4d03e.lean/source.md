@@ -1,0 +1,135 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FacetConfig.Variant3db719c9308d6020a757f3598368fc7e764b492d50fd93305c50b7a907a4d03e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f4984e5c85cd567325956c5d491e4c8cd447b5d6` · SHA-256 `834cf4f9c5c4709699c0d0aa32151b820c8949a1c5f5356bf17b080717c1361b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FacetConfig.Variant29c45a7f6e6d67e05ad8c0e103d64fe779d14dffba8dbf031cc769eb05f09763","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"29c45a7f6e6d67e05ad8c0e103d64fe779d14dffba8dbf031cc769eb05f09763","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceEnvironments.SourceCorpus.FacetConfig.Variant29c45a7f6e6d67e05ad8c0e103d64fe779d14dffba8dbf031cc769eb05f09763","mathematical_subject":"MathematicalTooling.SourceEnvironments","original_sha256":"29c45a7f6e6d67e05ad8c0e103d64fe779d14dffba8dbf031cc769eb05f09763","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/lake/Lake/Config/FacetConfig.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Mac Malone. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mac Malone, Mario Carneiro
+-/
+module
+
+prelude
+public import Lake.Build.Fetch
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FacetConfig.Variant29c45a7f6e6d67e05ad8c0e103d64fe779d14dffba8dbf031cc769eb05f09763
+
+namespace Lake
+open Lean (Name)
+
+/-- A facet's declarative configuration. -/
+public structure FacetConfig (name : Name) : Type where
+  /-- The facet kind (i.e., the kind of targets that support this facet). -/
+  kind : Name
+  /-- The facet's fetch function. -/
+  fetchFn : DataType kind → FetchM (Job (FacetOut name))
+  /-- The optional data kind of the facet's output. -/
+  [outKind : OptDataKind (FacetOut name)]
+  /-- Is this facet compatible with the `lake build` CLI? -/
+  buildable : Bool := true
+  /-- Format this facet's output (e.g., for `lake query`). -/
+  format : OutFormat → FacetOut name → String
+  /-- Whether the fetch of this facet should be cached in the Lake build store. -/
+  memoize : Bool := true
+  deriving Inhabited
+
+/-- A mapping of facet names to the configuration for that name. -/
+public abbrev FacetConfigMap := DNameMap FacetConfig
+
+/--
+Tries to retrieve the facet configuration for the given {lean}`name`,
+returning {lean}`none` if no such mapping is present.
+-/
+public nonrec def FacetConfigMap.get? (name : Name) (self : FacetConfigMap) : Option (FacetConfig name) :=
+  self.get? name -- specializes `get?`
+
+/-- Inserts the facet configuration {lean}`cfg` into the map (overwriting any existing configuration). -/
+public nonrec def FacetConfigMap.insert {name} (cfg : FacetConfig name) (self : FacetConfigMap) : FacetConfigMap :=
+  self.insert name cfg -- specializes `insert`
+
+public protected abbrev FacetConfig.name (_ : FacetConfig name) := name
+
+public structure KFacetConfig (k : Name) (name : Name) extends FacetConfig name where
+  kind := k
+  kind_eq : toFacetConfig.kind = k := by rfl
+
+public abbrev FacetConfig.toKind
+  {kind : Name} (self : FacetConfig name) (h : self.kind = kind)
+: KFacetConfig kind name := KFacetConfig.mk self h
+
+public def FacetConfig.toKind? (kind : Name) (self : FacetConfig name) : Option (KFacetConfig kind name) :=
+  if h : self.kind = kind then
+    some (self.toKind h)
+  else
+    none
+
+/-- Run the facet configuration's fetch function. -/
+@[inline] public def KFacetConfig.run
+  [FamilyOut DataType kind α]
+  [FamilyOut FacetOut facet β]
+  (self : KFacetConfig kind facet) (info : α)
+: FetchM (Job β) :=
+  cast (by simp) <| self.fetchFn <| cast (by simp [self.kind_eq]) info
+
+/-- A smart constructor for facet configurations that generate jobs for the CLI. -/
+@[inline] public def mkFacetJobConfig
+  [FormatQuery β]
+  [outKind : OptDataKind β]
+  [i : FamilyOut DataType kind α]
+  [o : FamilyOut FacetOut facet β]
+  (build : α → FetchM (Job β))
+  (buildable := true) (memoize := true)
+: KFacetConfig kind facet where
+  buildable; memoize
+  outKind := o.fam_eq ▸ outKind
+  fetchFn := i.fam_eq ▸ o.fam_eq ▸ build
+  format := o.fam_eq ▸ formatQuery
+
+/-- A dependently typed configuration based on its registered name. -/
+public structure NamedConfigDecl (β : Name → Type u) where
+  name : Name
+  config : β name
+
+/-- A facet declaration from a configuration file. -/
+public abbrev FacetDecl := NamedConfigDecl FacetConfig
+
+/-- A module facet's declarative configuration. -/
+public abbrev ModuleFacetConfig := KFacetConfig Module.facetKind
+
+/-- A module facet declaration from a configuration file. -/
+public abbrev ModuleFacetDecl := NamedConfigDecl ModuleFacetConfig
+
+/-- A package facet's declarative configuration. -/
+public abbrev PackageFacetConfig := KFacetConfig Package.facetKind
+
+/-- A package facet declaration from a configuration file. -/
+public abbrev PackageFacetDecl := NamedConfigDecl PackageFacetConfig
+
+/-- A library facet's declarative configuration. -/
+public abbrev LibraryFacetConfig := KFacetConfig LeanLib.facetKind
+
+/-- A library facet declaration from a configuration file. -/
+public abbrev LibraryFacetDecl := NamedConfigDecl LibraryFacetConfig
+
+public instance : TypeName ModuleFacetDecl := unsafe (.mk _ ``ModuleFacetDecl)
+public instance : TypeName PackageFacetDecl := unsafe (.mk _ ``PackageFacetDecl)
+public instance : TypeName LibraryFacetDecl := unsafe (.mk _ ``LibraryFacetDecl)
+
+/-- A library facet's declarative configuration. -/
+public abbrev LeanLibFacetConfig := LibraryFacetConfig
+
+/-- A Lean executable facet's declarative configuration. -/
+public abbrev LeanExeFacetConfig := KFacetConfig LeanExe.facetKind
+
+/-- An external library facet's declarative configuration. -/
+public abbrev ExternLibFacetConfig := KFacetConfig ExternLib.facetKind
+```

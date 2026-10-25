@@ -1,0 +1,90 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Abel.Variantfa5d36eb694543e873d08a18b5401a574db9bf61cf8a2f11d8a73f9d16d98469
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2b83c41b4ffdc258fff4ba0b9d7c74e6a6550658` · SHA-256 `a01b2bf5b25e567e1ddcd90db9d3f4ea66c55531dc40a47cf5eab6c408a4a7fb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IdPrime.Variant1dceb8e2b710286250fd0484d4c7edcf42ff341b68fabc07ba37e1232da61797","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1dceb8e2b710286250fd0484d4c7edcf42ff341b68fabc07ba37e1232da61797","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.IdPrime.Variant1dceb8e2b710286250fd0484d4c7edcf42ff341b68fabc07ba37e1232da61797","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"1dceb8e2b710286250fd0484d4c7edcf42ff341b68fabc07ba37e1232da61797","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/test/abel.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathlib.Tactic.Abel
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IdPrime.Variant1dceb8e2b710286250fd0484d4c7edcf42ff341b68fabc07ba37e1232da61797
+
+variable {α : Type _} {a b : α}
+
+example [AddCommMonoid α] : a + (b + a) = a + a + b := by abel
+example [AddCommGroup α] : (a + b) - ((b + a) + a) = -a := by abel
+example [AddCommGroup α] (x : α) : x - 0 = x := by abel
+example [AddCommMonoid α] : (3 : ℕ) • a = a + (2 : ℕ) • a := by abel
+example [AddCommGroup α] : (3 : ℤ) • a = a + (2 : ℤ) • a := by abel
+example [AddCommGroup α] (a b : α) : a-2•b = a -2•b := by abel
+
+example [AddCommMonoid α] (a b : α) : a + (b + a) = a + a + b := by abel1
+example [AddCommGroup α] (a b : α) : (a + b) - ((b + a) + a) = -a := by abel1
+example [AddCommGroup α] (x : α) : x - 0 = x := by abel1
+example [AddCommMonoid α] (a : α) : (3 : ℕ) • a = a + (2 : ℕ) • a := by abel1
+example [AddCommGroup α] (a : α) : (3 : ℤ) • a = a + (2 : ℤ) • a := by abel1
+example [AddCommGroup α] (a b : α) : a - 2•b = a - 2•b := by abel1
+example [AddCommGroup α] (a : α) : 0 + a = a := by abel1
+example [AddCommGroup α] (n : ℕ) (a : α) : n • a = n • a := by abel1
+example [AddCommGroup α] (n : ℕ) (a : α) : 0 + n • a = n • a := by abel1
+
+
+example [AddCommMonoid α] (a b c d e : α) :
+  a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 4 • a := by abel1
+example [AddCommGroup α] (a b c d e : α) :
+  a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 4 • a := by abel1
+example [AddCommGroup α] (a b c d : α) :
+  a + b + (c + d - a) = b + c + d := by abel1
+example [AddCommGroup α] (a b c : α) :
+  a + b + c + (c - a - a) = (-1)•a + b + 2•c := by abel1
+
+-- Make sure we fail on some non-equalities.
+example [AddCommMonoid α] (a b c d e : α) :
+    a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 3 • a ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+example [AddCommGroup α] (a b c d e : α) :
+    a + (b + (a + (c + (a + (d + (a + e)))))) = e + d + c + b + 3 • a ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+example [AddCommGroup α] (a b c d : α) :
+    a + b + (c + d - a) = b + c - d ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+example [AddCommGroup α] (a b c : α) :
+    a + b + c + (c - a - a) = (-1)•a + b + c ∨ True := by
+  fail_if_success
+    left; abel1
+  right; trivial
+
+-- `abel!` should see through terms that are definitionally equal,
+def id' (x : α) := x
+example [AddCommGroup α] (a b : α) : a + b - b - id' a = 0 := by
+  fail_if_success
+    abel1
+  abel1!
+
+-- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Interaction.20of.20abel.20with.20casting/near/319895001
+example [AddCommGroup α] : True := by
+  have : ∀ (p q r s : α), s + p - q = s - r - (q - r - p) := by
+    intro p q r s
+    abel
+  trivial
+
+-- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Interaction.20of.20abel.20with.20casting/near/319897374
+example [AddCommGroup α] (x y z : α) : y = x + z - (x - y + z) := by
+  have : True := trivial
+  abel
+
+-- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/abel.20bug.3F/near/368707560
+example [AddCommGroup α] (a b s : α) : -b + (s - a) = s - b - a := by abel_nf
+```

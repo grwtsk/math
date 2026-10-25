@@ -1,0 +1,145 @@
+# replay_correction_preserves_safe
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:e7089c2f-73a6-5c9d-4f84-8d379e5abef2",
+  "kind": "theorem",
+  "lexical_name": "replay_correction_preserves_safe",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "replay-correction-preserves-safe--7657f7bf9d47dac2dadfa248",
+  "source": {
+    "blob": "b99a8d631cb2beaaec6bae7b6efb3bd1a47dafbc",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 138,
+    "line": 75,
+    "path": "GRWTSK/Logic/Certificates/AnchoredDependencyRevision.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:7657f7bf9d47dac2dadfa248163e1e61787ef2afba06bda8f5c37ad7aff34171",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/Certificates/AnchoredDependencyRevision__SourceOccurrence2529dea74304d261db32a9b2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:e7089c2f-73a6-5c9d-4f84-8d379e5abef2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 75–138.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem replay_correction_preserves_safe (schema : DependencySchema Artifact Claim)
+    (policy : Policy) (ledger : ReplayLedger policy) (current : Snapshot)
+    (withdrawn : Finset Claim) (safe : ReplaySafe schema policy ledger) :
+    ReplaySafe schema policy (ledger.correct schema policy current withdrawn) := by
+  constructor
+  · intro claim member
+    rcases Finset.mem_union.mp member with pending | reopened
+    · exact safe.pending_issued pending
+    · exact safe.verified_issued (Finset.mem_inter.mp reopened).1
+  · intro claim member
+    exact safe.verified_issued (Finset.mem_sdiff.mp member).1
+  · intro claim issued
+    rcases Finset.mem_union.mp (safe.issued_covered issued) with pending | verified
+    · exact Finset.mem_union_left _ (Finset.mem_union_left _ pending)
+    · by_cases affected : claim ∈ correctionAffected schema ledger.base.snapshot current withdrawn
+      · exact Finset.mem_union_left _
+          (Finset.mem_union_right _ (Finset.mem_inter.mpr ⟨verified, affected⟩))
+      · exact Finset.mem_union_right _ (Finset.mem_sdiff.mpr ⟨verified, affected⟩)
+  · apply Finset.disjoint_left.mpr
+    intro claim pending verified
+    have retained := Finset.mem_sdiff.mp verified
+    rcases Finset.mem_union.mp pending with oldPending | reopened
+    · exact Finset.disjoint_left.mp safe.statuses_disjoint oldPending retained.1
+    · exact retained.2 (Finset.mem_inter.mp reopened).2
+  · intro claim verified prerequisite dependency
+    have retained := Finset.mem_sdiff.mp verified
+    refine Finset.mem_sdiff.mpr ⟨safe.verified_dependencies claim retained.1
+      prerequisite dependency, ?_⟩
+    intro affected
+    exact retained.2 (affectedClosure_closed schema.dependencies
+      (directChanged schema ledger.base.snapshot current ∪ withdrawn)
+      claim prerequisite dependency affected)
+  · intro claim verified
+    have retained := Finset.mem_sdiff.mp verified
+    rcases safe.verified_evidence claim retained.1 with legacy | replay
+    · rcases legacy with ⟨record, archived, claimEq, readsEq, accepted⟩
+      refine Or.inl ⟨record, archived, claimEq, readsEq, ?_⟩
+      have agreement : SnapshotAgreesOn record.certificate.reads ledger.base.snapshot current := by
+        rw [readsEq]
+        exact unchanged_reads_of_unaffected schema ledger.base.snapshot current withdrawn
+          claim retained.2
+      exact record.certificate.fresh_accepts (snapshot_agrees_trans accepted.1 agreement)
+    · rcases replay with ⟨record, archived, claimEq, readsEq, accepted⟩
+      refine Or.inr ⟨record, archived, claimEq, readsEq, ?_⟩
+      have agreement : SnapshotAgreesOn record.certificate.reads ledger.base.snapshot current := by
+        rw [readsEq]
+        exact unchanged_reads_of_unaffected schema ledger.base.snapshot current withdrawn
+          claim retained.2
+      exact (record.certificate.accepted_iff_fresh current).mpr
+        (snapshot_agrees_trans accepted.1 agreement)
+  · exact safe.receipts_historical
+  · intro record member
+    rcases List.mem_append.mp member with old | added
+    · exact safe.corrections_exact record old
+    · have same : record = {
+          before := ledger.base.snapshot
+          after := current
+          withdrawn := withdrawn
+          affected := correctionAffected schema ledger.base.snapshot current withdrawn } := by
+        simpa only [List.mem_singleton] using added
+      subst record
+      rfl
+
+/-- The active claim survives exactly when the original fixed-schema closure misses it. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/MathematicalLogic/Certificates/AnchoredDependencyRevision__SourceOccurrence2529dea74304d261db32a9b2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Logic/Certificates/AnchoredDependencyRevision.lean#L75).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b99a8d631cb2beaaec6bae7b6efb3bd1a47dafbc` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,96 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AxiomAudit.Variant2c7a0cba72ca62ce5372d1e49a127af4b511c11b2cd644ecf58387e1841475a2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `759681ce1d3fe0776338ae6afa309b374dee452e` · SHA-256 `d757bb0b66ba70482c74a6b60bbc02643f194fa6f489fa9ac9a3740288d69b55`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.StatementPreservationEvidence.Variant5f845322d0ce5fb2a15c8fea07123f7473e253252c93702d8df5228b9868ec6b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5f845322d0ce5fb2a15c8fea07123f7473e253252c93702d8df5228b9868ec6b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceOrganization.SourceCorpus.StatementPreservationEvidence.Variant5f845322d0ce5fb2a15c8fea07123f7473e253252c93702d8df5228b9868ec6b","mathematical_subject":"MathematicalTooling.SourceOrganization","original_sha256":"5f845322d0ce5fb2a15c8fea07123f7473e253252c93702d8df5228b9868ec6b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:f8ff4aee8f63f8901f3dcfee/workspace/SurfaceRefactorProbe/AxiomAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+module
+
+public import Surface.Core.Receipt
+
+/-!
+# Executable evidence verification
+
+Evidence is finite data, verification is executable, and soundness is a Lean
+theorem.  No structure carries a proposition together with an assumptive proof
+field supplied by an external process.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.StatementPreservationEvidence.Variant5f845322d0ce5fb2a15c8fea07123f7473e253252c93702d8df5228b9868ec6b
+
+public section
+
+namespace Surface.Core
+
+/-- Finite evidence that an observed statement has an expected identity. -/
+@[surface_novel, surface_certificate]
+structure StatementPreservationEvidence where
+  expected : Digest
+  observed : Digest
+deriving DecidableEq, Repr
+
+@[expose] def StatementPreservationEvidence.Valid
+    (evidence : StatementPreservationEvidence) : Prop :=
+  evidence.observed = evidence.expected
+
+@[expose] def verifyStatementPreservation
+    (evidence : StatementPreservationEvidence) : Bool :=
+  evidence.observed == evidence.expected
+
+@[surface_novel, surface_published, surface_certificate]
+theorem verifyStatementPreservation_sound
+    (evidence : StatementPreservationEvidence)
+    (h : verifyStatementPreservation evidence = true) :
+    evidence.Valid := by
+  change evidence.observed = evidence.expected
+  apply eq_of_beq
+  simpa [verifyStatementPreservation] using h
+
+/-- Receipt verification implies exact statement preservation for its task. -/
+@[surface_novel, surface_published, surface_certificate]
+theorem KernelReceipt.matchesTask_preserves_statement
+    (receipt : KernelReceipt)
+    (task : TheoremTask)
+    (h : receipt.matchesTask task = true) :
+    receipt.statementHash = task.statementHash :=
+  (receipt.matchesTask_sound task h).2.2.2.1
+
+/-- A checked trial always refers to the immutable statement of its task. -/
+@[surface_novel, surface_published]
+theorem CheckedTrial.statement_preserved (trial : CheckedTrial) :
+    trial.receipt.statementHash = trial.task.statementHash :=
+  trial.receiptMatchesTask.2.2.2.1
+
+/-- Kernel acceptance exposes the task proposition only because it stores a Lean proof term. -/
+@[surface_novel, surface_published]
+theorem CheckedTrial.kernel_proof (trial : CheckedTrial) :
+    trial.task.proposition :=
+  trial.checkedProof
+
+end Surface.Core
+
+
+open Lean
+
+run_meta do
+  let axioms ← Lean.collectAxioms `Surface.Core.verifyStatementPreservation_sound
+  let names := axioms.toList.map Name.toString |>.mergeSort (· < ·)
+  let info ← getConstInfo `Surface.Core.verifyStatementPreservation_sound
+  let normalizedType := toString (← Meta.ppExpr info.type)
+  let env ← getEnv
+  let moduleSurface := env.constants.toList |>.filter (fun entry => (env.getModuleIdxFor? entry.1).isNone) |>.map (fun entry => entry.1.toString ++ "\u001f" ++ (if entry.2.isAxiom then "axiom" else if entry.2.isTheorem then "theorem" else "declaration") ++ "\u001f" ++ toString entry.2.type) |>.mergeSort (· < ·)
+  let classifications :=
+    (if Surface.Core.surfaceAdapterAttr.hasTag env `Surface.Core.verifyStatementPreservation_sound then ["surface_adapter"] else []) ++
+    (if Surface.Core.surfaceNovelAttr.hasTag env `Surface.Core.verifyStatementPreservation_sound then ["surface_novel"] else []) ++
+    (if Surface.Core.surfaceCandidateAttr.hasTag env `Surface.Core.verifyStatementPreservation_sound then ["surface_candidate"] else []) ++
+    (if Surface.Core.surfacePublishedAttr.hasTag env `Surface.Core.verifyStatementPreservation_sound then ["surface_published"] else []) ++
+    (if Surface.Core.surfaceCertificateAttr.hasTag env `Surface.Core.verifyStatementPreservation_sound then ["surface_certificate"] else [])
+  liftM <| IO.println <| Json.compress <| Json.mkObj [("schema", toJson "surface.refactor.axiom-probe.v1"), ("axioms", toJson names), ("normalizedType", toJson normalizedType), ("classificationTags", toJson classifications), ("isTheorem", toJson info.isTheorem), ("moduleDeclarationSurface", toJson moduleSurface)]
+```

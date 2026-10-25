@@ -1,0 +1,13 @@
+import FormalResearch.TypeTheory.PureTypeSystem.BetaConversion
+import FormalResearch.TypeTheory.PureTypeSystem.BetaFixtures
+
+#check FormalResearch.TypeTheory.BetaReduction.conversionFuel
+#check FormalResearch.TypeTheory.BetaReduction.conversion_iff_normal_eq
+#check FormalResearch.TypeTheory.BetaReduction.conversionFuel_correct
+#check FormalResearch.TypeTheory.BetaReduction.conversionFuel_complete
+#print axioms FormalResearch.TypeTheory.BetaReduction.conversion_iff_normal_eq
+#print axioms FormalResearch.TypeTheory.BetaReduction.conversionFuel_correct
+#print axioms FormalResearch.TypeTheory.BetaReduction.conversionFuel_complete
+#eval FormalResearch.TypeTheory.BetaReduction.conversionFuel 1 0
+  FormalResearch.TypeTheory.BetaReduction.identityRedex
+  (OAI.PureTypeSystem.Expr.var 0)

@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ReplaceExpr.Variant228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `747ae4b7d4ebf8fb19ec7c14600f26998fe07800` · SHA-256 `228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2020 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura, Gabriel Ebner, Sebastian Ullrich
+-/
+module
+
+prelude
+public import Lean.Expr
+public import Lean.Util.PtrSet
+
+public section
+
+namespace Lean.Expr
+
+@[extern "lean_replace_expr"]
+opaque replaceImpl (f? : @& (Expr → Option Expr)) (e : @& Expr) : Expr
+
+@[inline] def replace (f? : Expr → Option Expr) (e : Expr) : Expr :=
+  replaceImpl f? e
+
+@[specialize]
+def replaceNoCache (f? : Expr → Option Expr) (e : Expr) : Expr :=
+  match f? e with
+  | some eNew => eNew
+  | none      => match e with
+    | .forallE _ d b _ => let d := replaceNoCache f? d; let b := replaceNoCache f? b; e.updateForallE! d b
+    | .lam _ d b _     => let d := replaceNoCache f? d; let b := replaceNoCache f? b; e.updateLambdaE! d b
+    | .mdata _ b       => let b := replaceNoCache f? b; e.updateMData! b
+    | .letE _ t v b _  => let t := replaceNoCache f? t; let v := replaceNoCache f? v; let b := replaceNoCache f? b; e.updateLetE! t v b
+    | .app f a         => let f := replaceNoCache f? f; let a := replaceNoCache f? a; e.updateApp! f a
+    | .proj _ _ b      => let b := replaceNoCache f? b; e.updateProj! b
+    | e                => e
+
+end Lean.Expr
+```

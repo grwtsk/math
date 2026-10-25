@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Compare.Variant1a7c8c8acddb31c8a79aa7be7c4f8d9c4731d4bb544685e6159969e102c90e3f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `216f82bb8909a8a3fca48d86ef2f60c09143f4a3` · SHA-256 `bc2ae084e1e4050b1823b4f84bbd97987f564835dbedc668b0903b5ed9a237f9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CompareEqIteLt.Variant276ed8bb20e86143475fd016fb282e00b33c3f66012d4cdc0cbdb5706ff83d2f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"276ed8bb20e86143475fd016fb282e00b33c3f66012d4cdc0cbdb5706ff83d2f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.CompareEqIteLt.Variant276ed8bb20e86143475fd016fb282e00b33c3f66012d4cdc0cbdb5706ff83d2f","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"276ed8bb20e86143475fd016fb282e00b33c3f66012d4cdc0cbdb5706ff83d2f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Data/Nat/Compare.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2016 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura, Jeremy Avigad, Mario Carneiro
+-/
+module
+
+prelude
+public import Init.Data.Order.ClassesExtra
+import all Init.Data.Ord.Basic
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CompareEqIteLt.Variant276ed8bb20e86143475fd016fb282e00b33c3f66012d4cdc0cbdb5706ff83d2f
+
+public section
+
+/-! # Basic lemmas about comparing natural numbers
+
+This file introduce some basic lemmas about compare as applied to natural
+numbers.
+
+Import `Std.Classes.Ord` in order to obtain the `TransOrd` and `LawfulEqOrd` instances for `Nat`.
+-/
+namespace Nat
+
+theorem compare_eq_ite_lt (a b : Nat) :
+    compare a b = if a < b then .lt else if b < a then .gt else .eq := by
+  simp only [compare, compareOfLessAndEq]
+  split
+  · rfl
+  next h =>
+    match Nat.lt_or_eq_of_le (Nat.not_lt.1 h) with
+    | .inl h => simp [h, Nat.ne_of_gt h]
+    | .inr rfl => simp
+
+theorem compare_eq_ite_le (a b : Nat) :
+    compare a b = if a ≤ b then if b ≤ a then .eq else .lt else .gt := by
+  rw [compare_eq_ite_lt]
+  split
+  next hlt => simp [Nat.le_of_lt hlt, Nat.not_le.2 hlt]
+  next hge =>
+    split
+    next hgt => simp [Nat.not_le.2 hgt]
+    next hle => simp [Nat.not_lt.1 hge, Nat.not_lt.1 hle]
+
+protected theorem compare_swap (a b : Nat) : (compare a b).swap = compare b a := by
+  simp only [compare_eq_ite_le]; (repeat' split) <;> try rfl
+  next h1 h2 => cases h1 (Nat.le_of_not_le h2)
+
+protected theorem compare_eq_eq {a b : Nat} : compare a b = .eq ↔ a = b := by
+  rw [compare_eq_ite_lt]; (repeat' split) <;> simp [Nat.ne_of_lt, Nat.ne_of_gt, *]
+  next hlt hgt => exact Nat.le_antisymm (Nat.not_lt.1 hgt) (Nat.not_lt.1 hlt)
+
+protected theorem compare_eq_lt {a b : Nat} : compare a b = .lt ↔ a < b := by
+  rw [compare_eq_ite_lt]; (repeat' split) <;> simp [*]
+
+protected theorem compare_eq_gt {a b : Nat} : compare a b = .gt ↔ b < a := by
+  rw [compare_eq_ite_lt]; (repeat' split) <;> simp [Nat.le_of_lt, *]
+
+protected theorem compare_ne_gt {a b : Nat} : compare a b ≠ .gt ↔ a ≤ b := by
+  rw [compare_eq_ite_le]; (repeat' split) <;> simp [*]
+
+protected theorem compare_ne_lt {a b : Nat} : compare a b ≠ .lt ↔ b ≤ a := by
+  rw [compare_eq_ite_le]; (repeat' split) <;> simp [Nat.le_of_not_le, *]
+
+protected theorem isLE_compare {a b : Nat} :
+    (compare a b).isLE ↔ a ≤ b := by
+  simp only [Nat.compare_eq_ite_le]
+  repeat' split <;> simp_all
+
+protected theorem isGE_compare {a b : Nat} :
+    (compare a b).isGE ↔ b ≤ a := by
+  rw [← Nat.compare_swap, Ordering.isGE_swap]
+  exact Nat.isLE_compare
+
+instance : Std.LawfulOrderOrd Nat where
+  isLE_compare _ _ := Nat.isLE_compare
+  isGE_compare _ _ := Nat.isGE_compare
+
+end Nat
+```

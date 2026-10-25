@@ -1,0 +1,125 @@
+# LetDecl.explicitRc
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:89ff37efc3e5ad746d99c09d259546a11ccf853ab986f35b707194bf1f7bd43c",
+  "kind": "def",
+  "lexical_name": "LetDecl.explicitRc",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "letdecl-explicitrc--83bb3f78e1a01d7c5e0526cd",
+  "source": {
+    "blob": "7b7ef1e41b5cea84d054d59625e52fafc96b4c26",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 606,
+    "line": 563,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ExplicitRC/Variant92ddda0e93a0736bcc7bd9accbe702e60c9bf613313a90c34f1b2a46bb6ca1b2.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:83bb3f78e1a01d7c5e0526cd38157380834811cb1bc57e7065cf50e88753ee17",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ExplicitRC/Variant92ddda0e93a0736bcc7bd9accbe702e60c9bf613313a90c34f1b2a46bb6ca1b2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:89ff37efc3e5ad746d99c09d259546a11ccf853ab986f35b707194bf1f7bd43c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 563–606.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def LetDecl.explicitRc (code : Code .impure) (decl : LetDecl .impure) (k : Code .impure) :
+    RcM (Code .impure) := do
+  /-
+  `decl.fvarId` can be unused in `k` so we might have to drop it. Note that we do not remove the let
+  because we are in the impure phase of the compiler so `decl.value` can have side effects that we
+  don't want to loose.
+  -/
+  let k ← addDecIfNeeded decl.fvarId k
+  let k ←
+    match decl.value with
+    | .ctor (args := args) .. | .reuse (args := args) .. | .pap (args := args) .. =>
+      addIncBeforeConsumeAll args (code.updateLet! decl k)
+    | .oproj (var := fvarId) .. =>
+      let k ← addDecIfNeeded fvarId k
+      let k ← if ← isBorrowed decl.fvarId then pure k else addInc decl.fvarId k
+      pure <| code.updateLet! decl k
+    | .uproj (var := fvarId) .. | .sproj (var := fvarId) .. | .unbox (fvarId := fvarId) .. =>
+      let k ← addDecIfNeeded fvarId k
+      pure <| code.updateLet! decl k
+    | .fap f args =>
+      let ps := (← getImpureSignature? f).get!.params
+      let k ← addDecAfterFullApp args ps k
+      let value ←
+        if f == ``Array.getInternal && (← isBorrowed decl.fvarId) then
+          pure <| .fap ``Array.getInternalBorrowed args
+        else if f == ``Array.get!Internal && (← isBorrowed decl.fvarId) then
+          pure <| .fap ``Array.get!InternalBorrowed args
+        else if f == ``Array.uget && (← isBorrowed decl.fvarId) then
+          pure <| .fap ``Array.ugetBorrowed args
+        else
+          pure <| decl.value
+      let decl ← decl.updateValue value
+      let k := code.updateLet! decl k
+      addIncBefore args ps k
+    | .fvar fvarId args =>
+      let allArgs := args.push <| .fvar fvarId
+      addIncBeforeConsumeAll allArgs (code.updateLet! decl k)
+    | .lit .. | .box .. | .reset .. | .erased .. =>
+      pure <| code.updateLet! decl k
+    | .isShared .. => unreachable!
+  useLetValue decl.value
+  bindVar decl.fvarId
+  return k
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ExplicitRC/Variant92ddda0e93a0736bcc7bd9accbe702e60c9bf613313a90c34f1b2a46bb6ca1b2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ExplicitRC/Variant92ddda0e93a0736bcc7bd9accbe702e60c9bf613313a90c34f1b2a46bb6ca1b2.lean#L563).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7b7ef1e41b5cea84d054d59625e52fafc96b4c26` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,98 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Arithmetic.Varianta15bdc3db0684e69c76baaf1752aa61050d9ac14905de09f2681a4fba93fb0de
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `80113af484c588239e673efe5d17a2f8db376c20` · SHA-256 `c1fb4492bbefca7a1864ad5181a63d8ae728b15f4e5717e673a99339c3bc5287`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.SetTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.FinsetExistsDisjointUnionOfEvenCard.Variant0578545bbfb5f8b474ae4bfaeed406c9b47c35a48496041a8612638bb316fb21","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0578545bbfb5f8b474ae4bfaeed406c9b47c35a48496041a8612638bb316fb21","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.SetTheory.SourceCorpus.FinsetExistsDisjointUnionOfEvenCard.Variant0578545bbfb5f8b474ae4bfaeed406c9b47c35a48496041a8612638bb316fb21","mathematical_subject":"Logic.SetTheory","original_sha256":"0578545bbfb5f8b474ae4bfaeed406c9b47c35a48496041a8612638bb316fb21","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/Set/Card/Arithmetic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Pim Otte. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Pim Otte
+-/
+
+import Mathlib.Data.Set.Card
+import Mathlib.SetTheory.Cardinal.Arithmetic
+
+/-!
+# Results using cardinal arithmetic
+
+This file contains results using cardinal arithmetic that are not in the main cardinal theory files.
+It has been separated out to not burden `Matlib.Data.Set.Card` with extra imports.
+
+## Main results
+
+- `exists_union_disjoint_ncard_eq_of_even`: Given a set `s` with an even cardinality, there exist
+  disjoint sets `t` and `u` such that `t ∪ u = s` and `t.ncard = u.ncard`.
+- `exists_union_disjoint_cardinal_eq_iff` is the same, except using cardinal notation.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.FinsetExistsDisjointUnionOfEvenCard.Variant0578545bbfb5f8b474ae4bfaeed406c9b47c35a48496041a8612638bb316fb21
+
+variable {α : Type*}
+
+open scoped Finset
+
+theorem Finset.exists_disjoint_union_of_even_card [DecidableEq α] {s : Finset α} (he : Even #s) :
+    ∃ (t u : Finset α), t ∪ u = s ∧ Disjoint t u ∧ #t = #u :=
+  let ⟨n, hn⟩ := he
+  let ⟨t, ht, ht'⟩ := exists_subset_card_eq (show n ≤ #s by omega)
+  ⟨t, s \ t, by simp [card_sdiff, disjoint_sdiff, *]⟩
+
+theorem Finset.exists_disjoint_union_of_even_card_iff [DecidableEq α] (s : Finset α) :
+    Even #s ↔ ∃ (t u : Finset α), t ∪ u = s ∧ Disjoint t u ∧ #t = #u :=
+  ⟨Finset.exists_disjoint_union_of_even_card, by
+    rintro ⟨t, u, rfl, hdtu, hctu⟩
+    simp_all⟩
+
+namespace Set
+
+variable {s : Set α}
+
+open Cardinal
+
+theorem Infinite.exists_union_disjoint_cardinal_eq_of_infinite (h : s.Infinite) :
+    ∃ (t u : Set α), t ∪ u = s ∧ Disjoint t u ∧ #t = #u := by
+  have := h.to_subtype
+  obtain ⟨f⟩ : Nonempty (s ≃ s ⊕ s) := by
+    rw [← Cardinal.eq, ← add_def, add_mk_eq_self]
+  refine ⟨Subtype.val '' (f ⁻¹' (range .inl)), Subtype.val '' (f ⁻¹' (range .inr)), ?_, ?_, ?_⟩
+  · simp [← image_union, ← preimage_union]
+  · exact disjoint_image_of_injective Subtype.val_injective
+      (isCompl_range_inl_range_inr.disjoint.preimage f)
+  · simp [mk_image_eq Subtype.val_injective]
+
+theorem exists_union_disjoint_cardinal_eq_of_even (he : Even s.ncard) :
+    ∃ (t u : Set α), t ∪ u = s ∧ Disjoint t u ∧ #t = #u := by
+  obtain hs | hs := s.infinite_or_finite
+  · exact hs.exists_union_disjoint_cardinal_eq_of_infinite
+  classical
+  rw [ncard_eq_toFinset_card s hs] at he
+  obtain ⟨t, u, hutu, hdtu, hctu⟩ := Finset.exists_disjoint_union_of_even_card he
+  use t.toSet, u.toSet
+  simp [← Finset.coe_union, *]
+
+theorem exists_union_disjoint_ncard_eq_of_even (he : Even s.ncard) :
+    ∃ (t u : Set α), t ∪ u = s ∧ Disjoint t u ∧ t.ncard = u.ncard := by
+  obtain ⟨t, u, hutu, hdtu, hctu⟩ := exists_union_disjoint_cardinal_eq_of_even he
+  exact ⟨t, u, hutu, hdtu, congrArg Cardinal.toNat hctu⟩
+
+theorem exists_union_disjoint_cardinal_eq_iff (s : Set α) :
+    Even (s.ncard) ↔ ∃ (t u : Set α), t ∪ u = s ∧ Disjoint t u ∧ #t = #u := by
+  use exists_union_disjoint_cardinal_eq_of_even
+  rintro ⟨t, u, rfl, hdtu, hctu⟩
+  obtain hfin | hnfin := (t ∪ u).finite_or_infinite
+  · rw [finite_union] at hfin
+    have hn : t.ncard = u.ncard := congrArg Cardinal.toNat hctu
+    rw [ncard_union_eq hdtu hfin.1 hfin.2, hn]
+    exact Even.add_self u.ncard
+  · simp [hnfin.ncard]
+
+end Set
+```

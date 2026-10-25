@@ -1,0 +1,127 @@
+# access_recovery
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:0f86a558-167f-d78b-a465-aadc58483361",
+  "kind": "theorem",
+  "lexical_name": "access_recovery",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "access-recovery--b87a629bf322a03004ff08b3",
+  "source": {
+    "blob": "70756e84995b57eaf9e2f43f282e72f58c1bb6f8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1238,
+    "line": 1193,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Pairs/Variante7c2b5405060ac47bf871674b978e0b56a313620a25470223299a9780a0160fd.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b87a629bf322a03004ff08b3efc0a3a3c80255046d58cea28de804a71e724086",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Pairs/Variante7c2b5405060ac47bf871674b978e0b56a313620a25470223299a9780a0160fd.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0f86a558-167f-d78b-a465-aadc58483361`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1193–1238.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem access_recovery {T pMap m c₀ c : Expr S} (hT : SortedAt P Γ T I) (mT : WellModed γ T .data)
+    (hp : DataMap P Γ γ (R.paramType T) (U.apply T) pMap)
+    (hm : HasType P Γ m (R.paramType T)) (mm : WellModed γ m .data)
+    (h₀ : HasType P Γ c₀ T) (m₀ : WellModed γ c₀ .data)
+    (hc : HasType P Γ c T) (mc : WellModed γ c .data)
+    {s r : S} (hs : HasType P Γ T (.sort s)) (hr : HasType P Γ (R.bpType T) (.sort r))
+    (hnd : Proves P Γ γ (L.neg (R.isDummy L.code T m))) :
+    Equivalent P Γ γ
+      (R.recoverAccess U L.code T
+        (R.bundle L.code (R.paramType T) (R.dummy L.code T) m (R.point U L.code T c₀ c)) pMap)
+      (U.observe T (pMap.instantiate m) c) := by
+  have hf := h.accessMap_typed hU hI hH hT mT hp
+  have hd := h.dummy_typed hT mT
+  have hy := h.point_typed hU hT mT h₀ m₀ hc mc hs hr
+  have hpm := hp.apply hm mm
+  have hid₀ := h.innerProbe_dummy hU hT mT hpm.1 hpm.2
+  have hid : Proves P Γ γ (L.neg (R.first.observe (R.paramType T)
+      ((R.accessMap U L.code T pMap).instantiate m) (R.dummy L.code T))) := by
+    simpa only [accessMap_instantiate] using hid₀
+  obtain ⟨a,ha⟩ := hI
+  have he₀ := h.access_bundle (h.param_sorted hT) (h.param_mode mT) hd.1 hd.2 hm mm hy.1 hy.2
+    (h.dummyBody_family hT mT) hf (h.param_sorted hT a ha)
+    (by simpa only [dummyBody_instantiate] using h.dummy_law hT mT)
+    (by simpa only [dummyBody_instantiate] using hnd) hid
+  have he : Equivalent P Γ γ
+      (R.recoverAccess U L.code T
+        (R.bundle L.code (R.paramType T) (R.dummy L.code T) m (R.point U L.code T c₀ c)) pMap)
+      (R.first.observe (R.paramType T) (R.innerProbe U L.code T (pMap.instantiate m))
+        (R.point U L.code T c₀ c)) := by
+    simpa only [recoverAccess,accessMap_instantiate] using he₀
+  have he' := h.innerProbe_point hU hT mT h₀ m₀ hc mc hs hr hpm.1 hpm.2
+  have hw := h.bundle_typed (h.param_sorted hT) (h.param_mode mT) hd.1 hd.2 hm mm hy.1 hy.2
+  have hfe := h.accessProbe_typed (h.param_sorted hT) (h.param_mode mT)
+    (h.dummyBody_family hT mT) hw.1 hw.2 hf (h.param_sorted hT a ha)
+  have hW := (h.second.sound (h.first.sorted (h.param_sorted hT)) (h.first.mode (h.param_mode
+    mT))).2
+    _ _ hw.1 hw.2 hfe
+  have hfi := h.innerProbe_typed hU hT mT hpm.1 hpm.2
+  have hY := (h.first.sound (h.param_sorted hT) (h.param_mode mT)).2 _ _ hfi.1 hfi.2 hy
+  have hQ := (hU.sound hT mT).2 _ _ hpm.1 hpm.2 ⟨hc,mc⟩
+  obtain ⟨b,hb⟩ := L.triple.codomain.1
+  exact he.trans he' (hW.1 b hb) (hY.1 b hb) (hQ.1 b hb)
+end Formed
+end
+
+variable (R : DoubleCode S) {A B : Expr S}
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Pairs/Variante7c2b5405060ac47bf871674b978e0b56a313620a25470223299a9780a0160fd.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Pairs/Variante7c2b5405060ac47bf871674b978e0b56a313620a25470223299a9780a0160fd.lean#L1193).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `70756e84995b57eaf9e2f43f282e72f58c1bb6f8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,118 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.Imo2019Q4.Varianta19df6ecaf7ec328ffa9a9df4aa6458f2edf42643bf7385f3896951e6b83829f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9b8d8f8511d02740420911881ef63775f7dfa8fd` · SHA-256 `7b99a46c7120b5a383e9e12148791f72540af53fcb9e6b9be58fa12ba1a79701`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.UpperBound.Variant97c6c3c0f62b82d8d7e0f8a159614ff6b82600d55374e2f49f891a8345dd447c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"97c6c3c0f62b82d8d7e0f8a159614ff6b82600d55374e2f49f891a8345dd447c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.UpperBound.Variant97c6c3c0f62b82d8d7e0f8a159614ff6b82600d55374e2f49f891a8345dd447c","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"97c6c3c0f62b82d8d7e0f8a159614ff6b82600d55374e2f49f891a8345dd447c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Archive/Imo/Imo2019Q4.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","implicit_eof_scopes","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Floris van Doorn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Floris van Doorn
+-/
+module
+
+public import Mathlib.Data.Nat.Factorial.BigOperators
+public import Mathlib.Data.Nat.Multiplicity
+public import Mathlib.Data.Nat.Prime.Int
+public import Mathlib.Tactic.IntervalCases
+public import Mathlib.Tactic.GCongr
+
+/-!
+# IMO 2019 Q4
+
+Find all pairs `(k, n)` of positive integers such that
+```
+  k! = (2 ^ n - 1)(2 ^ n - 2)(2 ^ n - 4)···(2 ^ n - 2 ^ (n - 1))
+```
+We show in this file that this property holds iff `(k, n) = (1, 1) ∨ (k, n) = (3, 2)`.
+
+Proof sketch:
+The idea of the proof is to count the factors of 2 on both sides. The LHS has less than `k` factors
+of 2, and the RHS has exactly `n * (n - 1) / 2` factors of 2. So we know that `n * (n - 1) / 2 < k`.
+Now for `n ≥ 6` we have `RHS < 2 ^ (n ^ 2) < (n(n-1)/2)! < k!`. We then treat the cases `n < 6`
+individually.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.UpperBound.Variant97c6c3c0f62b82d8d7e0f8a159614ff6b82600d55374e2f49f891a8345dd447c
+
+public section
+
+open Nat Finset
+
+namespace Imo2019Q4
+
+theorem upper_bound {k n : ℕ} (hk : k > 0)
+    (h : (k ! : ℤ) = ∏ i ∈ range n, ((2 : ℤ) ^ n - (2 : ℤ) ^ i)) : n < 6 := by
+  have h2 : ∑ i ∈ range n, i < k := by
+    suffices emultiplicity 2 (k ! : ℤ) = ↑(∑ i ∈ range n, i : ℕ) by
+      rw [← Nat.cast_lt (α := ℕ∞), ← this]; change emultiplicity ((2 : ℕ) : ℤ) _ < _
+      simp_rw [Int.natCast_emultiplicity, emultiplicity_two_factorial_lt hk.lt.ne.symm]
+    rw [h, Finset.emultiplicity_prod Int.prime_two, Nat.cast_sum]
+    apply sum_congr rfl; intro i hi
+    rw [emultiplicity_sub_of_gt, emultiplicity_pow_self_of_prime Int.prime_two]
+    rwa [emultiplicity_pow_self_of_prime Int.prime_two,
+      emultiplicity_pow_self_of_prime Int.prime_two, Nat.cast_lt, ← mem_range]
+  rw [← not_le]; intro hn
+  apply _root_.ne_of_gt _ h
+  calc ∏ i ∈ range n, ((2 : ℤ) ^ n - (2 : ℤ) ^ i) ≤ ∏ _ ∈ range n, (2 : ℤ) ^ n := ?_
+    _ < k ! := ?_
+  · gcongr
+    · intro i hi
+      rw [mem_range] at hi
+      have : (2 : ℤ) ^ i ≤ (2 : ℤ) ^ n := by gcongr; norm_num
+      linarith
+    · apply sub_le_self
+      positivity
+  norm_cast
+  calc ∏ _ ∈ range n, 2 ^ n = 2 ^ (n * n) := by rw [prod_const, card_range, ← pow_mul]
+    _ < (∑ i ∈ range n, i)! := ?_
+    _ ≤ k ! := by gcongr
+  clear h h2
+  induction n, hn using Nat.le_induction with
+  | base => decide
+  | succ n' hn' IH =>
+    let A := ∑ i ∈ range n', i
+    have le_sum : ∑ i ∈ range 6, i ≤ A := by
+      apply sum_le_sum_of_subset
+      simpa using hn'
+    calc 2 ^ ((n' + 1) * (n' + 1))
+        ≤ 2 ^ (n' * n' + 4 * n') := by gcongr; linarith
+      _ = 2 ^ (n' * n') * (2 ^ 4) ^ n' := by rw [← pow_mul, ← pow_add]
+      _ < A ! * (2 ^ 4) ^ n' := by gcongr
+      _ = A ! * (15 + 1) ^ n' := rfl
+      _ ≤ A ! * (A + 1) ^ n' := by gcongr; exact le_sum
+      _ ≤ (A + n')! := factorial_mul_pow_le_factorial
+      _ = (∑ i ∈ range (n' + 1), i)! := by rw [sum_range_succ]
+
+end Imo2019Q4
+
+theorem imo2019_q4 {k n : ℕ} (hk : 0 < k) (hn : 0 < n) :
+    (k ! : ℤ) = ∏ i ∈ range n, ((2 : ℤ) ^ n - (2 : ℤ) ^ i) ↔ (k, n) = (1, 1) ∨ (k, n) = (3, 2) := by
+  -- The implication `←` holds.
+  constructor
+  swap
+  · rintro (h | h) <;> rcases Prod.ext_iff.mp h with ⟨rfl, rfl⟩ <;> decide
+  intro h
+  -- We know that n < 6.
+  have := Imo2019Q4.upper_bound hk h
+  interval_cases n
+  -- n = 1
+  · norm_num at h; simp [le_antisymm h (succ_le_of_lt hk)]
+  -- n = 2
+  · right; congr; norm_num [prod_range_succ] at h; norm_cast at h; rwa [← factorial_inj']
+    norm_num
+  all_goals exfalso; norm_num [prod_range_succ] at h; norm_cast at h
+  -- n = 3
+  · refine monotone_factorial.ne_of_lt_of_lt_nat 5 ?_ ?_ _ h <;> decide
+  -- n = 4
+  · refine monotone_factorial.ne_of_lt_of_lt_nat 7 ?_ ?_ _ h <;> decide
+  -- n = 5
+  · refine monotone_factorial.ne_of_lt_of_lt_nat 10 ?_ ?_ _ h <;> decide
+````

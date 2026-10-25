@@ -1,0 +1,139 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ExceptCps.Variantae7819983529113d2be54920d88727fbfa251b4e034a40e65f2243e017786a6c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b67abc80770d9cd6706fb5f4f14b2c65349a194a` · SHA-256 `7cde57a68c900cb8840f644f92b070945b2bbcc943469969b2041bbb5cdaa18f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Run.Variantdc07a202fd2f811aa5082f6f2a1fd1ca54fa199c3c5ec3e6c5ee00b881c5225e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dc07a202fd2f811aa5082f6f2a1fd1ca54fa199c3c5ec3e6c5ee00b881c5225e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.Run.Variantdc07a202fd2f811aa5082f6f2a1fd1ca54fa199c3c5ec3e6c5ee00b881c5225e","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"dc07a202fd2f811aa5082f6f2a1fd1ca54fa199c3c5ec3e6c5ee00b881c5225e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Control/ExceptCps.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Init.Control.Lawful.Basic
+import Init.SimpLemmas
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Run.Variantdc07a202fd2f811aa5082f6f2a1fd1ca54fa199c3c5ec3e6c5ee00b881c5225e
+
+public section
+
+/-!
+The Exception monad transformer using CPS style.
+-/
+
+/--
+Adds exceptions of type `ε` to a monad `m`.
+
+Instead of using `Except ε` to model exceptions, this implementation uses continuation passing
+style. This has different performance characteristics from `ExceptT ε`.
+-/
+@[expose, instance_reducible] def ExceptCpsT (ε : Type u) (m : Type u → Type v) (α : Type u) := (β : Type u) → (α → m β) → (ε → m β) → m β
+
+namespace ExceptCpsT
+
+/--
+Use a monadic action that may throw an exception as an action that may return an exception's value.
+-/
+@[always_inline, inline, expose]
+def run {ε α : Type u} [Monad m] (x : ExceptCpsT ε m α) : m (Except ε α) :=
+  x _ (fun a => pure (Except.ok a)) (fun e => pure (Except.error e))
+
+set_option linter.unusedVariables false in  -- `s` unused
+/--
+Use a monadic action that may throw an exception by providing explicit success and failure
+continuations.
+-/
+@[always_inline, inline, expose]
+def runK {ε α : Type u} (x : ExceptCpsT ε m α) (s : ε) (ok : α → m β) (error : ε → m β) : m β :=
+  x _ ok error
+
+/--
+Returns the value of a computation, forgetting whether it was an exception or a success.
+
+This corresponds to early return.
+-/
+@[always_inline, inline, expose]
+def runCatch [Monad m] (x : ExceptCpsT α m α) : m α :=
+  x α pure pure
+
+@[always_inline]
+instance : Monad (ExceptCpsT ε m) where
+  map f x  := fun _ k₁ k₂ => x _ (fun a => k₁ (f a)) k₂
+  pure a   := fun _ k _ => k a
+  bind x f := fun _ k₁ k₂ => x _ (fun a => f a _ k₁ k₂) k₂
+
+instance : LawfulMonad (ExceptCpsT σ m) := by
+  refine LawfulMonad.mk' _ ?_ ?_ ?_ <;> intros <;> rfl
+
+instance : MonadExceptOf ε (ExceptCpsT ε m) where
+  throw e  := fun _ _ k => k e
+  tryCatch x handle := fun _ k₁ k₂ => x _ k₁ (fun e => handle e _ k₁ k₂)
+
+/--
+Run an action from the transformed monad in the exception monad.
+-/
+@[always_inline, inline, expose]
+def lift [Monad m] (x : m α) : ExceptCpsT ε m α :=
+  fun _ k _ => x >>= k
+
+instance [Monad m] : MonadLift m (ExceptCpsT σ m) where
+  monadLift := ExceptCpsT.lift
+
+instance [Inhabited ε] : Inhabited (ExceptCpsT ε m α) where
+  default := fun _ _ k₂ => k₂ default
+
+/--
+For continuation monads, it is not possible to provide a computable `MonadAttach` instance that
+actually adds information about the return value. Therefore, this instance always attaches a proof
+of `True`.
+-/
+instance : MonadAttach (ExceptCpsT ε m) := .trivial
+
+@[simp] theorem throw_bind [Monad m] (e : ε) (f : α → ExceptCpsT ε m β) : (throw e >>= f : ExceptCpsT ε m β) = throw e := rfl
+
+@[simp] theorem run_pure [Monad m] : run (pure x : ExceptCpsT ε m α) = pure (Except.ok x) := rfl
+
+@[simp] theorem run_lift {α ε : Type u} [Monad m] (x : m α) : run (ExceptCpsT.lift x : ExceptCpsT ε m α) = (x >>= fun a => pure (Except.ok a) : m (Except ε α)) := rfl
+
+@[simp] theorem run_throw [Monad m] : run (throw e : ExceptCpsT ε m β) = pure (Except.error e) := rfl
+
+@[simp] theorem run_bind_lift [Monad m] (x : m α) (f : α → ExceptCpsT ε m β) : run (ExceptCpsT.lift x >>= f : ExceptCpsT ε m β) = x >>= fun a => run (f a) := rfl
+
+@[deprecated throw_bind (since := "2026-03-13")]
+theorem run_bind_throw [Monad m] (e : ε) (f : α → ExceptCpsT ε m β) : run (throw e >>= f : ExceptCpsT ε m β) = run (throw e) := rfl
+
+@[simp] theorem runK_pure :
+    runK (pure x : ExceptCpsT ε m α) s ok error = ok x := rfl
+
+@[simp] theorem runK_lift {α ε : Type u} [Monad m] (x : m α) (s : ε) (ok : α → m β) (error : ε → m β) :
+    runK (ExceptCpsT.lift x : ExceptCpsT ε m α) s ok error = x >>= ok := rfl
+
+@[simp] theorem runK_throw [Monad m] :
+    runK (throw e : ExceptCpsT ε m β) s ok error = error e := rfl
+
+@[simp] theorem runK_bind_lift [Monad m] (x : m α) (f : α → ExceptCpsT ε m β) :
+    runK (ExceptCpsT.lift x >>= f : ExceptCpsT ε m β) s ok error = x >>= fun a => runK (f a) s ok error := rfl
+
+@[simp] theorem runCatch_pure [Monad m] : runCatch (pure x : ExceptCpsT α m α) = pure x := rfl
+
+@[simp] theorem runCatch_lift {α : Type u} [Monad m] [LawfulMonad m] (x : m α) : runCatch (ExceptCpsT.lift x : ExceptCpsT α m α) = x := by
+  simp [runCatch, lift]
+
+@[simp] theorem runCatch_throw [Monad m] : runCatch (throw a : ExceptCpsT α m α) = pure a := rfl
+
+@[simp] theorem runCatch_bind_lift [Monad m] (x : m α) (f : α → ExceptCpsT β m β) : runCatch (ExceptCpsT.lift x >>= f : ExceptCpsT β m β) = x >>= fun a => runCatch (f a) := rfl
+
+@[deprecated throw_bind (since := "2026-03-13")]
+theorem runCatch_bind_throw [Monad m] (e : β) (f : α → ExceptCpsT β m β) : runCatch (throw e >>= f : ExceptCpsT β m β) = pure e := rfl
+
+end ExceptCpsT
+```

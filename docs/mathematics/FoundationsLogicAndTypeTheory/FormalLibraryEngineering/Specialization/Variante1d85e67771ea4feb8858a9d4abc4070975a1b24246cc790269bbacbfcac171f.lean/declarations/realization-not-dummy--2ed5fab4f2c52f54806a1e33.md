@@ -1,0 +1,107 @@
+# realization_not_dummy
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:fb9d08d5-4367-68b9-4448-22ee21f6af83",
+  "kind": "theorem",
+  "lexical_name": "realization_not_dummy",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "realization-not-dummy--2ed5fab4f2c52f54806a1e33",
+  "source": {
+    "blob": "865305ad13773a1bfae279e1cdb9a1aa4fd17a6f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 427,
+    "line": 402,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Specialization/Variante1d85e67771ea4feb8858a9d4abc4070975a1b24246cc790269bbacbfcac171f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:2ed5fab4f2c52f54806a1e33ec720dc7a8e5f080cfa521d4a0ee71032ad28eed",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Specialization/Variante1d85e67771ea4feb8858a9d4abc4070975a1b24246cc790269bbacbfcac171f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:fb9d08d5-4367-68b9-4448-22ee21f6af83`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 402–427.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem realization_not_dummy :
+    Proves P Γ γ (L.neg (R.isDummy L.code T (R.realization U L.code T c Q))) := by
+  have hb := h.bpBottom_typed hT mT
+  have hd := h.decode_typed hU hT mT hb.1 hb.2 hs
+  have he := h.realization_evaluation hU hT mT hc mc hs hr hQ hb.1 hb.2
+  have hm : ∀ u, L.Formula (R.mark L.code (u : Fin 7).castSucc T c (R.bpBottom L.code T)) := by
+    intro u
+    simpa only [markBody_instantiate] using (h.markBody_family hT mT u.castSucc hc
+      mc).instantiate hb.1 hb.2
+  have hprop := fun u => (hQ u).instantiate hd.1 hd.2
+  have hfalse := L.choices_false (List.finRange 7) (fun u _ => hm u) (fun u _ => hprop u)
+    (fun u _ => h.bottom_mark hT mT u.castSucc hc mc)
+  have ho := h.realization_typed hU hT mT hc mc hs hr hQ
+  have f₀ := (h.second.sound (h.bp_sorted hT) (h.bp_mode mT)).2 _ _ ho.1 ho.2 hb
+  have f₁ := L.choices_formula (List.finRange 7) (fun u _ => hm u) (fun u _ => hprop u)
+  obtain ⟨a,ha⟩ := f₀.sorted L
+  obtain ⟨b,hb⟩ := f₁.sorted L
+  obtain ⟨d,hd⟩ := L.bottom_formula.sorted L
+  exact L.equivalent_bottom_neg f₀ (he.trans hfalse ha hb hd)
+end Formed
+end DoubleCode
+end
+
+section
+universe u
+/-- An observation code with its selected source type expression. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Specialization/Variante1d85e67771ea4feb8858a9d4abc4070975a1b24246cc790269bbacbfcac171f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Specialization/Variante1d85e67771ea4feb8858a9d4abc4070975a1b24246cc790269bbacbfcac171f.lean#L402).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `865305ad13773a1bfae279e1cdb9a1aa4fd17a6f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

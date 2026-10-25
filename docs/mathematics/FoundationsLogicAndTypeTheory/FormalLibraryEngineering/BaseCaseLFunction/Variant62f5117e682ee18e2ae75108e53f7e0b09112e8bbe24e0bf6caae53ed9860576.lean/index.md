@@ -1,0 +1,23 @@
+# GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.BaseCaseLFunction.Variant62f5117e682ee18e2ae75108e53f7e0b09112e8bbe24e0bf6caae53ed9860576
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**2 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BaseCaseLFunction/Variant62f5117e682ee18e2ae75108e53f7e0b09112e8bbe24e0bf6caae53ed9860576.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `14b4d952082da16c0e0dc20d03511eae956f6f64`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BaseCaseLFunction/Variant62f5117e682ee18e2ae75108e53f7e0b09112e8bbe24e0bf6caae53ed9860576.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [base_lfunction_center_is_spectral_pivot](declarations/base-lfunction-center-is-spectral-pivot--53d425aebb3678586c92d454.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [base_lfunction_central_value_nonzero](declarations/base-lfunction-central-value-nonzero--ee1bec416a64076b568e2268.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |

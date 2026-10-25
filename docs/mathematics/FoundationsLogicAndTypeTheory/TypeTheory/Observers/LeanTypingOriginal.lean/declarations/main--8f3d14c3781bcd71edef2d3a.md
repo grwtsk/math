@@ -1,0 +1,136 @@
+# main
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:00e9dad262230297922d00ba0caa5e24f2dfb8d4759d9b02d6cacccadd099cbf",
+  "kind": "def",
+  "lexical_name": "main",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "main--8f3d14c3781bcd71edef2d3a",
+  "source": {
+    "blob": "78de3a12d81a5b3621a3acb05243dca82198eceb",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 224,
+    "line": 170,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeTheory/Observers/LeanTypingOriginal.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:8f3d14c3781bcd71edef2d3aca73e594635ac69fa0e764233c3f3a4d1bfeb958",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/TypeTheory/Observers/LeanTypingOriginal.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:00e9dad262230297922d00ba0caa5e24f2dfb8d4759d9b02d6cacccadd099cbf`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 170–224.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+unsafe def main (args : List String) : IO UInt32 := do
+  if Lean.versionString != "4.33.0" then
+    IO.eprintln "BLOCKED_TOOLCHAIN: helper requires Lean 4.33.0"
+    return 3
+  let [source, output, moduleName, optionsPath] := args | do
+    IO.eprintln "usage: lake env lean --run LeanTypingOriginal.lean SOURCE OUTPUT MODULE LAKE_OPTIONS_JSON"
+    return 2
+  Lean.initSearchPath (← Lean.findSysroot)
+  Lean.enableInitializersExecution
+  let input ← IO.FS.readFile source
+  let inputCtx := Lean.Parser.mkInputContext input source
+  let (header, parserState, messages) ← Lean.Parser.parseHeader inputCtx
+  let module := moduleName.toName
+  let optionsJson ← IO.ofExcept (Lean.Json.parse (← IO.FS.readFile optionsPath))
+  let lakeOptions : Lean.LeanOptions ← IO.ofExcept (Lean.fromJson? optionsJson)
+  let opts := lakeOptions.toOptions.setBool `Elab.async false
+  let (env, messages) ← Lean.Elab.processHeader header opts messages inputCtx (mainModule := module)
+  let dir : System.FilePath := output
+  IO.FS.createDirAll (dir / "artifacts")
+  let h ← IO.FS.Handle.mk (dir / "observations.jsonl") .write
+  if messages.hasErrors then
+    let mut diagnostics : Array String := #[]
+    for message in messages.toList do
+      diagnostics := diagnostics.push (← message.toString)
+    LeanTyping.emit h <| LeanTyping.obj [("schema_version", LeanTyping.nat 1),
+      ("record_type", LeanTyping.str "FailureObservation"), ("status", LeanTyping.str "UNAVAILABLE"),
+      ("reason", LeanTyping.str "BLOCKED_ENVIRONMENT_IMPORT"), ("diagnostics", toJson diagnostics),
+      ("mathematical_refutation", toJson false)]
+    h.flush
+    return 1
+  LeanTyping.emit h <| LeanTyping.obj [("schema_version", LeanTyping.nat 1),
+    ("record_type", LeanTyping.str "LeanCommand"), ("status", LeanTyping.str "KNOWN_PARTIAL"),
+    ("provenance_origin", LeanTyping.str "compiler_observation"),
+    ("command_index", LeanTyping.nat 0), ("start_byte", LeanTyping.nat 0),
+    ("end_byte", LeanTyping.nat parserState.pos.byteIdx), ("syntax_kind", LeanTyping.str "module_header"),
+    ("declarations", toJson (#[] : Array String)),
+    ("imports", toJson (Lean.Elab.headerToImports header |>.map fun i => i.module.toString)),
+    ("loaded_modules", toJson (env.header.moduleNames.map toString)),
+    ("import_observation", LeanTyping.str "REQUIRES_HOST_ORIGINAL_CONTEXT_REPLAY_BINDING"),
+    ("lake_options", Lean.toJson lakeOptions),
+    ("observer_option_override", LeanTyping.str "Elab.async=false"), ("module", LeanTyping.str module.toString)]
+  let st : Lean.Elab.Frontend.State := {
+    commandState := Lean.Elab.Command.mkState env messages opts
+    parserState := parserState
+    cmdPos := parserState.pos }
+  try
+    let (_, _) ← (LeanTyping.extract dir h).run { inputCtx } |>.run st
+    h.flush
+    return 0
+  catch e =>
+    LeanTyping.emit h <| LeanTyping.obj [("schema_version", LeanTyping.nat 1),
+      ("record_type", LeanTyping.str "FailureObservation"), ("status", LeanTyping.str "UNAVAILABLE"),
+      ("reason", LeanTyping.str e.toString), ("mathematical_refutation", toJson false)]
+    h.flush
+    return 1
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/TypeTheory/Observers/LeanTypingOriginal.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeTheory/Observers/LeanTypingOriginal.lean#L170).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `78de3a12d81a5b3621a3acb05243dca82198eceb` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

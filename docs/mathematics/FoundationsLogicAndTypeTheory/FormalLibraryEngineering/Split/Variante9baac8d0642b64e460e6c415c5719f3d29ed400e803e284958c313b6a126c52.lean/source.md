@@ -1,0 +1,127 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Split.Variante9baac8d0642b64e460e6c415c5719f3d29ed400e803e284958c313b6a126c52
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `721c8bb0061c201ea7bb91f5d304f82eea217761` · SHA-256 `d07a37c40608c995fd429b9f6d88d938f7af92d96297351262ad3ccd0e92b8e2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Split.Variant01e45a7c699b854dad76fa35453a7b63ffbf27afb21a43de2fdca1190d355ba9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"01e45a7c699b854dad76fa35453a7b63ffbf27afb21a43de2fdca1190d355ba9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Split.Variant01e45a7c699b854dad76fa35453a7b63ffbf27afb21a43de2fdca1190d355ba9","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"01e45a7c699b854dad76fa35453a7b63ffbf27afb21a43de2fdca1190d355ba9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Elab/Tactic/Split.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Meta.Tactic.Split
+public import Lean.Elab.Tactic.Location
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Split.Variant01e45a7c699b854dad76fa35453a7b63ffbf27afb21a43de2fdca1190d355ba9
+
+public section
+
+namespace Lean.Elab.Tactic
+open Meta
+
+@[builtin_tactic Lean.Parser.Tactic.split] def evalSplit : Tactic := fun stx => do
+  if let `(tactic|split $t:term $[at $loc]?) := stx then
+    throwTermUnsupported t loc
+  let loc := expandOptLocation stx[2]
+  match loc with
+  | Location.targets hyps simplifyTarget =>
+    if (hyps.size > 0 && simplifyTarget) || hyps.size > 1 then
+      throwMultipleLocationsAt stx[2] simplifyTarget hyps
+    if simplifyTarget then
+      liftMetaTactic fun mvarId => do
+       let some mvarIds ← splitTarget? mvarId | throwCouldNotSplitGoal mvarId
+        return mvarIds
+    else
+      let fvarId ← getFVarId hyps[0]!
+      liftMetaTactic fun mvarId => do
+        let some mvarIds ← splitLocalDecl? mvarId fvarId | throwCouldNotSplitHyp fvarId mvarId
+        return mvarIds
+  | Location.wildcard =>
+    liftMetaTactic fun mvarId => do
+      let fvarIds ← mvarId.getNondepPropHyps
+      for fvarId in fvarIds do
+        if let some mvarIds ← splitLocalDecl? mvarId fvarId then
+          return mvarIds
+      let some mvarIds ← splitTarget? mvarId
+        | throwCouldNotSplitWildcard fvarIds mvarId
+      return mvarIds
+where
+  traceHint : MessageData := .ofLazyM do
+    if ! (← getBoolOption `trace.split.failure) then
+      return .hint' m!"Use `set_option trace.split.failure true` to display additional diagnostic information"
+    else return .nil
+
+  throwTermUnsupported (t : Term) (loc : Option Syntax) := do
+    withMainContext do
+      let mut error := m!"Tactic `split` failed: Specifying a term to split is not supported yet"
+      if t.raw.isIdent then
+        let name := t.raw.getId
+        let lctx ← getLCtx
+        if name.isStr && loc.isNone then
+          if let some decl := lctx.findFromUserName? name then
+            let e := decl.toExpr
+            let hint ← MessageData.hint
+              m!"To apply `split` at the hypothesis `{e}`, use `split at {e}`:"
+              #[{ suggestion := (← `(tactic|split at $(mkIdent name):ident)) }]
+            error := error ++ hint
+      throwErrorAt t error
+
+  throwMultipleLocationsAt (stx : Syntax) (simplifyTarget : Bool) (hyps : Array Syntax) {α} : MetaM α := do
+    let goalStr := if simplifyTarget then "the goal and " else ""
+    let hypsStr :=
+      (if hyps.size == 1 then m!"hypothesis" else m!"hypotheses") ++
+      MessageData.andList (hyps.toList.map (m!"`{·}`"))
+    throwErrorAt stx m!"Tactic `split` failed: Specifying multiple targets ({goalStr ++ hypsStr}) is not supported"
+      ++ .hint' m!"Specify a single target to split, or use `split at *` to split the first target that can be automatically split"
+
+  throwCouldNotSplitGoal (mvarId : MVarId) := do
+    Meta.throwTacticEx `split mvarId <| m!"Could not split an `if` or `match` expression in the goal"
+      ++ (← mkCasesHint <$> mvarId.getType) ++ traceHint
+
+  throwCouldNotSplitHyp (fvarId : FVarId) (mvarId: MVarId) := do
+    let fvarType ← fvarId.getType
+    Meta.throwTacticEx `split mvarId <| m!"Could not split an `if` or `match` expression in \
+      the type{inlineExpr fvarType}of `{Expr.fvar fvarId}`" ++ mkCasesHint fvarType ++ traceHint
+
+  throwCouldNotSplitWildcard {α} (fvarIds : Array FVarId) (mvarId : MVarId) : MetaM α := do
+    let note := .note "`split at *` does not attempt to split at non-propositional hypotheses \
+      or those on which other hypotheses depend. It may still be possible to manually split a \
+      hypothesis using `split at`"
+    if fvarIds.size > 0 then
+      let fvarMsgs := fvarIds.toList.map (m!"`{Expr.fvar ·}`")
+      let fvarMsgs := MessageData.joinSep fvarMsgs ", "
+      Meta.throwTacticEx `split mvarId <|
+        m!"Could not split the goal or any of the following hypotheses: {fvarMsgs}" ++ note ++ traceHint
+    else
+      Meta.throwTacticEx `split mvarId <|
+        m!"Could not split the goal, and no hypotheses that could be automatically split were found" ++ note ++ traceHint
+
+  mkCasesHint (type : Expr) : MessageData := MessageData.ofLazyM do
+    let isFnStructureConst (t : Expr) : MetaM Bool := do
+      if let .const c _ := t.getAppFn then
+        let env ← getEnv
+        return isStructure env c && (getStructureFields env c).size > 0
+      else
+        return false
+    let kind? ←
+      if type.isAppOf ``And then pure <| some "conjunction"
+      else if type.isAppOf ``Prod then pure <| some "pair"
+      else if (← isFnStructureConst type.getAppFn) then pure <| some "structure"
+      else pure <| none
+    if let some kind := kind? then
+      return .hint' m!"If you meant to destruct this {kind}, use the `cases` tactic instead"
+    else
+      return .nil
+
+end Lean.Elab.Tactic
+```

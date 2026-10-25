@@ -1,0 +1,118 @@
+# evalAll_comp
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "f64c00384c6316318c5e7d2162537c8b1994e684",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 160,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/0d/0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:fcf116ca-7ad1-61b9-d8c9-65bed2246e2e",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:84581662-9418-3d49-7b04-645f31bc91f4",
+  "kind": "theorem",
+  "lexical_name": "evalAll_comp",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "evalall-comp--339d4cd363d222d0305721fd",
+  "source": {
+    "blob": "f64c00384c6316318c5e7d2162537c8b1994e684",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 184,
+    "line": 160,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:339d4cd363d222d0305721fdcc1e6f5e4e782b2adc59998d8e20fca4f9537f92",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:84581662-9418-3d49-7b04-645f31bc91f4`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 160–184.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+  private theorem evalAll_comp
+      {K : KernelPresentation.{u}} {js : List K.Judgment}
+      (children : IndexedAll (RawDer K) js) :
+      evalAll (compAll children) = children := by
+    cases children with
+    | nil => rfl
+    | cons head tail =>
+        simp only [compAll, evalAll]
+        rw [eval_comp head, evalAll_comp tail]
+end
+
+namespace TreePlan
+
+/--
+**Architectural problem:** Plans must expose internal constant references.
+**Important data and indices:** Names come from `K`; the plan is indexed by `J`.
+**Type-enforced invariant:** Accounting evaluates the same indexed plan tree.
+**Layer boundary:** This is local accounting, not linked declaration closure.
+**Worked example:** The private unary plan reports `Project.helper`.
+**Used by:** `BTreePlan` and `constantReferences_comp`.
+**Proof idea:** Evaluate the plan and reuse raw reference traversal.
+**Equality notion:** Results are exact finite sets of presentation names.
+**Boundary cases:** A reference-free plan returns `∅`.
+**Validation consequence:** Abstract references remain visible after planning.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean#L160).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f64c00384c6316318c5e7d2162537c8b1994e684` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

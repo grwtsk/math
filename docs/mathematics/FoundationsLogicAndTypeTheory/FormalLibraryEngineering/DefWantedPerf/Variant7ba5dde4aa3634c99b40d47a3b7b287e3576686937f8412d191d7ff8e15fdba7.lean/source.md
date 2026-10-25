@@ -1,0 +1,57 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.DefWantedPerf.Variant7ba5dde4aa3634c99b40d47a3b7b287e3576686937f8412d191d7ff8e15fdba7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a0228f89841e22873b472549316e07525941a969` · SHA-256 `1e442837c294a341f101f99e35bd8c1a482eb0464791daf0e1eae8f4d24f94f7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.P1.Variantdf7b9c5b476f58cb2ec48b9895f6c380ab6d11f2c8c74b123299ce354e8a07f4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"df7b9c5b476f58cb2ec48b9895f6c380ab6d11f2c8c74b123299ce354e8a07f4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.P1.Variantdf7b9c5b476f58cb2ec48b9895f6c380ab6d11f2c8c74b123299ce354e8a07f4","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"df7b9c5b476f58cb2ec48b9895f6c380ab6d11f2c8c74b123299ce354e8a07f4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/restored-inputs/packages/batteries/BatteriesTest/def_wanted_perf.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Batteries.Util.ProofWanted
+
+/-!
+# Performance guard for `def_wanted` / `instance_wanted`
+
+`instance_wanted`s are included *on use* (like `variable [inst]`): a later declaration carries only
+the instances it actually needs. A declaration whose statement does not use the sibling instances
+carries none of them — it never re-nests every prior instance's binders into the next, which used to
+blow up super-exponentially in the number of `instance_wanted`s (and left a shared dependency
+dangling), making `def_wanted` unusable for specifications carrying several wanted instances (e.g. a
+group scheme that is at once proper, smooth, and geometrically irreducible).
+
+That this file elaborates quickly *is* the test; the `#check` pins the resulting flat shape.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.P1.Variantdf7b9c5b476f58cb2ec48b9895f6c380ab6d11f2c8c74b123299ce354e8a07f4
+
+namespace DefWantedPerf
+
+private class P1 (n : Nat) : Prop
+private class P2 (n : Nat) : Prop
+private class P3 (n : Nat) : Prop
+private class P4 (n : Nat) : Prop
+private class P5 (n : Nat) : Prop
+private class P6 (n : Nat) : Prop
+
+def_wanted shared_base : Nat
+
+instance_wanted iP1 : P1 ❰shared_base❱
+instance_wanted iP2 : P2 ❰shared_base❱
+instance_wanted iP3 : P3 ❰shared_base❱
+instance_wanted iP4 : P4 ❰shared_base❱
+instance_wanted iP5 : P5 ❰shared_base❱
+instance_wanted iP6 : P6 ❰shared_base❱
+
+-- The sixth instance carries only the shared dependency it uses; none of `iP1 … iP5` (it does not
+-- use them), so there is no nesting to blow up.
+/--
+info: @iP6 : {d_shared_base : shared_base.Val} → DefWanted (P6 d_shared_base)
+-/
+#guard_msgs in #check @iP6
+
+end DefWantedPerf
+```

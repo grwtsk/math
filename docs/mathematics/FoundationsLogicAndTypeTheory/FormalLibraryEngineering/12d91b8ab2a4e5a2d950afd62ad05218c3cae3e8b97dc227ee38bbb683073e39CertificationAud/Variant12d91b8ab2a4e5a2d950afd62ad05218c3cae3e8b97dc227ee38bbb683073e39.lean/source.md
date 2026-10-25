@@ -1,0 +1,58 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.12d91b8ab2a4e5a2d950afd62ad05218c3cae3e8b97dc227ee38bbb683073e39CertificationAud.Variant12d91b8ab2a4e5a2d950afd62ad05218c3cae3e8b97dc227ee38bbb683073e39
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f753494ec03d517824e9d6f4cc673bba9c310cc6` · SHA-256 `12d91b8ab2a4e5a2d950afd62ad05218c3cae3e8b97dc227ee38bbb683073e39`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.PositiveAtlas.CertificationUniverseFixtures
+set_option pp.universes true
+#print FormalResearch.PositiveAtlas.CertificateFamily
+#print axioms FormalResearch.PositiveAtlas.CertificateFamily
+#print FormalResearch.PositiveAtlas.CertificateFamily.index
+#print axioms FormalResearch.PositiveAtlas.CertificateFamily.index
+#print FormalResearch.PositiveAtlas.CertificateFamily.Equivalent
+#print axioms FormalResearch.PositiveAtlas.CertificateFamily.Equivalent
+#print FormalResearch.PositiveAtlas.CertificateFamily.equivalent_refl
+#print axioms FormalResearch.PositiveAtlas.CertificateFamily.equivalent_refl
+#print FormalResearch.PositiveAtlas.CertificateFamily.equivalent_symm
+#print axioms FormalResearch.PositiveAtlas.CertificateFamily.equivalent_symm
+#print FormalResearch.PositiveAtlas.CertificateFamily.equivalent_trans
+#print axioms FormalResearch.PositiveAtlas.CertificateFamily.equivalent_trans
+#print FormalResearch.PositiveAtlas.SufficientRepresentation
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.FactorsThrough
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.FactorsThrough
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.IsMinimal
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.IsMinimal
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.equivalent_of_compress_eq
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.equivalent_of_compress_eq
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.factor_of_minimal
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.factor_of_minimal
+#print FormalResearch.PositiveAtlas.StructuralQuine
+#print axioms FormalResearch.PositiveAtlas.StructuralQuine
+#print FormalResearch.PositiveAtlas.StructuralQuine.project
+#print axioms FormalResearch.PositiveAtlas.StructuralQuine.project
+#print FormalResearch.PositiveAtlas.StructuralQuine.project_idempotent
+#print axioms FormalResearch.PositiveAtlas.StructuralQuine.project_idempotent
+#print FormalResearch.PositiveAtlas.StructuralQuine.project_certificate_equivalent
+#print axioms FormalResearch.PositiveAtlas.StructuralQuine.project_certificate_equivalent
+#print FormalResearch.PositiveAtlas.StructuralQuine.quotient_factors_through
+#print axioms FormalResearch.PositiveAtlas.StructuralQuine.quotient_factors_through
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.family
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.family
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.representation
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.representation
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.representation_minimal
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.representation_minimal
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.quine
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.quine
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.observable_distinguishes
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.observable_distinguishes
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.compress_distinguishes
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.compress_distinguishes
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.quine_factors_through
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.quine_factors_through
+#print FormalResearch.PositiveAtlas.CertificationUniverseFixtures.index_eq
+#print axioms FormalResearch.PositiveAtlas.CertificationUniverseFixtures.index_eq
+```

@@ -1,0 +1,26 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.All.Variant19d689251cd8155bf89677bac913a0c343d5c9221d7d194747b0fef02162b1a4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `52fa38e3fa1221df6f16101ffdd2299d73b08da2` · SHA-256 `727c8abf45a0b4cc968e21fac4149808981fdb725e355b21810703f7569d2e61`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Kind.Variant7b2902b2a668d106264ab0d586b97dd462786612c035ce1b946bb5bb940f86c3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7b2902b2a668d106264ab0d586b97dd462786612c035ce1b946bb5bb940f86c3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Kind.Variant7b2902b2a668d106264ab0d586b97dd462786612c035ce1b946bb5bb940f86c3","mathematical_subject":"Foundations.Unclassified","original_sha256":"7b2902b2a668d106264ab0d586b97dd462786612c035ce1b946bb5bb940f86c3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Surface/.surface/revoked-artifacts/source-structure/2487c9da77d9d8ececb8ffd882948a360b9125bba2b28ca69972182b0e8e2352/failed-candidates/post-application-e89443c73810dcdf/MathDiscovery/SourceAnalysis/All.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import MathDiscovery.SourceAnalysis.Kind
+import MathDiscovery.SourceAnalysis.Command
+import MathDiscovery.SourceAnalysis.Context
+import MathDiscovery.SourceAnalysis.Binding
+import MathDiscovery.SourceAnalysis.Barrier
+import MathDiscovery.SourceAnalysis.Unit
+import MathDiscovery.SourceAnalysis.Invariant
+import MathDiscovery.SourceAnalysis.Validation
+
+/-! Import-only source-analysis umbrella. -/
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Kind.Variant7b2902b2a668d106264ab0d586b97dd462786612c035ce1b946bb5bb940f86c3
+
+```

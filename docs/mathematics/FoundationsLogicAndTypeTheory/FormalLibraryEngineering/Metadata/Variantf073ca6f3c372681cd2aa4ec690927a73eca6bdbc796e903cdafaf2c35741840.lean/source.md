@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Metadata.Variantf073ca6f3c372681cd2aa4ec690927a73eca6bdbc796e903cdafaf2c35741840
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `499c8600e993b3011b7d801e4f42ad89d809be55` · SHA-256 `eb0f15f21b3d27dde7636648b54f100686cc6728bf6eb98b13c5d9dec2458c5e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Command.Variantf07a4a75b4bd282a674a1215e965b1255e3e881eccbd0594579f01f88d087bb3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f07a4a75b4bd282a674a1215e965b1255e3e881eccbd0594579f01f88d087bb3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Command.Variantf07a4a75b4bd282a674a1215e965b1255e3e881eccbd0594579f01f88d087bb3","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"f07a4a75b4bd282a674a1215e965b1255e3e881eccbd0594579f01f88d087bb3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Native/continuous-assurance/.dev-sessions/review-checks/cb71edf696b455e952649ae26293eaf1cab1b22bc86696a2bbe8147c8be7ecc5/lean/sources/f07a4a75b4bd282a674a1215e965b1255e3e881eccbd0594579f01f88d087bb3/Metadata.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Lean.Elab.Command
+import Candidate
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Command.Variantf07a4a75b4bd282a674a1215e965b1255e3e881eccbd0594579f01f88d087bb3
+
+open Lean
+
+namespace Surface.ContinuousAssurance
+
+run_cmd Elab.Command.liftTermElabM do
+  let expectedType ← Lean.Elab.Term.elabType (← `(True))
+  let candidate ← Lean.Elab.Term.elabTermEnsuringType (← `(by exact True.intro) ) (some expectedType)
+  Lean.Elab.Term.synthesizeSyntheticMVarsNoPostponing
+  let candidate ← instantiateMVars candidate
+  let expectedType ← instantiateMVars expectedType
+  let env ← getEnv
+  let mut pending := candidate.getUsedConstants.toList ++ expectedType.getUsedConstants.toList
+  let mut visited : NameSet := {}
+  while !pending.isEmpty do
+    let dependency := pending.head!
+    pending := pending.tail!
+    if !visited.contains dependency then
+      visited := visited.insert dependency
+      if let some dependencyInfo := env.find? dependency then
+        logInfo m!"CA_DEV_00b7c344fcaec01eb57740bb_USED_CONSTANT:{dependency}"
+        logInfo m!"CA_DEV_00b7c344fcaec01eb57740bb_USED_TYPE:{dependency}:{repr dependencyInfo.type}"
+        match dependencyInfo with
+        | .axiomInfo _ => logInfo m!"CA_DEV_00b7c344fcaec01eb57740bb_AXIOM:{dependency}"
+        | _ => pure ()
+        pending := dependencyInfo.type.getUsedConstants.toList ++ pending
+        if let some body := dependencyInfo.value? true then
+          pending := body.getUsedConstants.toList ++ pending
+  logInfo "CA_DEV_00b7c344fcaec01eb57740bb_DEPENDENCY_SCAN_COMPLETE"
+  logInfo "CA_DEV_00b7c344fcaec01eb57740bb_AXIOM_SCAN_COMPLETE"
+  logInfo "CA_DEV_00b7c344fcaec01eb57740bb_TARGET_DIGEST:3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+
+end Surface.ContinuousAssurance
+```

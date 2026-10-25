@@ -1,0 +1,63 @@
+import Surface.Core.NetworkSurgery
+import Surface.Refactor.NetworkSurgeryPatch
+
+/-!
+# Network-surgery finite theorem axiom audit
+
+The printed closure is expected to contain only the standard foundations
+already permitted by repository policy.  No runtime receipt appears as a
+proposition-valued certificate.
+-/
+
+#print axioms Surface.Core.NetworkSurgery.binaryLogicProjection_is_lossy
+#print axioms Surface.Core.NetworkSurgery.projectTree_prefixValid
+#print axioms Surface.Core.NetworkSurgery.projectTree_balanced
+#print axioms Surface.Core.NetworkSurgery.projectTree_length_eq_twice_nodeCount
+#print axioms Surface.Core.NetworkSurgery.inboundRound_at_half_up
+#print axioms Surface.Core.NetworkSurgery.outboundRound_at_half_down
+#print axioms Surface.Core.NetworkSurgery.rounding_does_not_mutate_gameState
+#print axioms Surface.Core.NetworkSurgery.rounding_has_no_source_authority
+#print axioms Surface.Core.NetworkSurgery.boundaryLedger_zero_of_balanced_excision_graft
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_internalContractInvalid
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_invalidContractHash
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_invalidSourceSnapshotHash
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_invalidSession
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_unknownPiece
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_unknownEdge
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_sourceRangeMismatch
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_overlappingEdits
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_capacityExceeded
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_boundaryLedgerUnbalanced
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_identityChange
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_statementChange
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_classificationChange
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_axiomGrowth
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_languageValidationError
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_deterministicResultMismatch
+#print axioms Surface.Core.NetworkSurgery.legalMove_preserves_sourceSnapshotIdentity
+#print axioms Surface.Core.NetworkSurgery.legalMove_preserves_declarationIdentity
+#print axioms Surface.Core.NetworkSurgery.legalTheoremMove_preserves_statementIdentity
+#print axioms Surface.Core.NetworkSurgery.verifyNetworkSurgeryProposal_sound
+#print axioms Surface.Core.NetworkSurgery.rejectedMove_leavesGameStateUnchanged
+#print axioms Surface.Core.NetworkSurgery.staleMove_leavesGameStateUnchanged
+#print axioms Surface.Core.NetworkSurgery.equalRevisionConflict_leavesGameStateUnchanged
+#print axioms Surface.Core.NetworkSurgery.acceptedRepair_strictlyImproves_or_consumesBudget
+#print axioms Surface.Core.NetworkSurgery.ambiguousRepair_is_rejected_before_selection
+#print axioms Surface.Core.NetworkSurgery.emptyRepairSet_has_no_safe_candidate
+#print axioms Surface.Core.NetworkSurgery.repairLoop_terminates
+#print axioms Surface.Core.NetworkSurgery.zeroStructuralEnergy_iff_allFiniteStructuralChecksPass
+#print axioms Surface.Core.NetworkSurgery.zeroStructuralEnergy_does_not_imply_languageValidity
+#print axioms Surface.Core.NetworkSurgery.successfulCommit_projects_exactPreparedSnapshot
+#print axioms Surface.Core.NetworkSurgery.successfulCommit_records_reverseBundle
+#print axioms Surface.Refactor.NetworkSurgery.forwardReversePatch_roundTrip
+#print axioms Surface.Refactor.NetworkSurgery.reverseForwardPatch_roundTrip
+#print axioms Surface.Core.NetworkSurgery.eventual_convergence_to_latestAdmittedGameState
+#print axioms Surface.Core.NetworkSurgery.binaryLogicMatrix_has_no_source_authority
+#print axioms Surface.Core.NetworkSurgery.finiteSurgeryEnergy_has_no_theorem_authority
+#print axioms Surface.Core.NetworkSurgery.gameScore_has_no_kernel_authority
+#print axioms Surface.Core.NetworkSurgery.networkSurgeryTransport_has_no_analytic_authority
+#print axioms Surface.Core.NetworkSurgery.transportedTheoremTask_preserves_identity
+#print axioms Surface.Core.NetworkSurgery.transportedTheoremTask_preserves_statementHash
+#print axioms Surface.Core.NetworkSurgery.transportedCheckedReference_requires_same_task
+#print axioms Surface.Core.NetworkSurgery.networkSurgeryMetadata_does_not_prove_task
+#print axioms Surface.Core.NetworkSurgery.rustNetworkSurgery_eq_leanNetworkSurgery

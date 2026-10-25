@@ -1,0 +1,258 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Process.Variant55ece0f90b00c0e175dd3b53cec87ef38094e442ea956a7c806d0e3029ba0698
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `85e596d35a6a5195c43f3e64eefece7a7ecb548c` · SHA-256 `7bda78dc5e66081aa54b22a845702de55546866bbdb66e6536f6b88df9fd2f66`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ResourceUsageStats.Variantdd3d95269cfd245390c446e7fb8ce9473f4fdb6c465173a23c51708049bd7bf8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dd3d95269cfd245390c446e7fb8ce9473f4fdb6c465173a23c51708049bd7bf8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.ResourceUsageStats.Variantdd3d95269cfd245390c446e7fb8ce9473f4fdb6c465173a23c51708049bd7bf8","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"dd3d95269cfd245390c446e7fb8ce9473f4fdb6c465173a23c51708049bd7bf8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Async/Process.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Std.Time
+public import Std.Internal.UV.System
+public import Std.Data.HashMap
+import Init.Data.Ord.UInt
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ResourceUsageStats.Variantdd3d95269cfd245390c446e7fb8ce9473f4fdb6c465173a23c51708049bd7bf8
+
+public section
+
+open Std Time
+open System
+open Std.Internal
+
+namespace Std
+namespace IO
+namespace Process
+
+/--
+Represents resource usage statistics for a process or thread.
+All time values are in milliseconds.
+-/
+structure ResourceUsageStats where
+  /--
+  CPU time spent in user mode (milliseconds)
+  -/
+  cpuUserTime : Time.Millisecond.Offset
+
+  /--
+  CPU time spent in kernel mode (milliseconds)
+  -/
+  cpuSystemTime : Time.Millisecond.Offset
+
+  /--
+  Peak resident set size (max physical memory usage) in kilobytes
+  -/
+  peakResidentSetSizeKb : UInt64
+
+  /--
+  Size of shared memory segments (kilobytes)
+  -/
+  sharedMemorySizeKb : UInt64
+
+  /--
+  Size of unshared data segment (kilobytes)
+  -/
+  unsharedDataSizeKb : UInt64
+
+  /--
+  Size of unshared stack segment (kilobytes)
+  -/
+  unsharedStackSizeKb : UInt64
+
+  /--
+  Number of minor (soft) page faults (no disk I/O)
+  -/
+  minorPageFaults : UInt64
+
+  /--
+  Number of major (hard) page faults (disk I/O required)
+  -/
+  majorPageFaults : UInt64
+
+  /--
+  Number of swap ins or swap outs
+  -/
+  swapOperations : UInt64
+
+  /--
+  Number of block input operations (disk reads)
+  -/
+  blockInputOps : UInt64
+
+  /--
+  Number of block output operations (disk writes)
+  -/
+  blockOutputOps : UInt64
+
+  /--
+  Number of IPC messages sent
+  -/
+  messagesSent : UInt64
+
+  /--
+  Number of IPC messages received
+  -/
+  messagesReceived : UInt64
+
+  /--
+  Number of signals received
+  -/
+  signalsReceived : UInt64
+
+  /--
+  Number of voluntary context switches (process yielded CPU)
+  -/
+  voluntaryContextSwitches : UInt64
+
+  /--
+  Number of involuntary context switches (process preempted)
+  -/
+  involuntaryContextSwitches : UInt64
+deriving Repr, Inhabited
+
+
+/--
+A process identifier, represented by a numeric ID in UNIX systems (e.g. 1000).
+-/
+structure PId where
+  /--
+  The numeric process ID.
+  -/
+  toUInt64 : UInt64
+deriving Inhabited, DecidableEq, Ord
+
+instance : Repr PId where
+  reprPrec u := Repr.addAppParen ("PId.mk " ++ repr u.toUInt64)
+
+/--
+Gets the title of the current process.
+-/
+@[inline]
+def getProcessTitle : IO String :=
+  UV.System.getProcessTitle
+
+/--
+Sets the title of the current process.
+-/
+@[inline]
+def setProcessTitle (title : String) : IO Unit :=
+  UV.System.setProcessTitle title
+
+/--
+Gets the current process id.
+-/
+@[inline]
+def getId : IO PId :=
+  PId.mk <$> UV.System.osGetPid
+
+/--
+Gets the current process parent id.
+-/
+@[inline]
+def getParentId : IO PId :=
+  PId.mk <$> UV.System.osGetPpid
+
+/--
+Gets the current working directory.
+-/
+@[inline]
+def getCwd : IO System.FilePath :=
+  UV.System.cwd
+
+/--
+Changes the current working directory to a new one.
+-/
+@[inline]
+def setCwd (path : System.FilePath) : IO Unit :=
+  UV.System.chdir path.toString
+
+/--
+Gets the scheduling priority of a process.
+-/
+@[inline]
+def getPriority (pid : PId) : IO Int64 :=
+  UV.System.osGetPriority pid.toUInt64
+
+/--
+Sets the scheduling priority of a process.
+-/
+@[inline]
+def setPriority (pid : PId) (priority : Int64) : IO Unit :=
+  UV.System.osSetPriority pid.toUInt64 priority
+
+/--
+Retrieves resource usage statistics.
+-/
+@[inline]
+def getResourceUsage : IO ResourceUsageStats :=
+  UV.System.getrusage <&> fun rusage =>
+    {
+      cpuUserTime := .ofNat <| UInt64.toNat rusage.userTime
+      cpuSystemTime := .ofNat <| UInt64.toNat rusage.systemTime
+      peakResidentSetSizeKb := rusage.maxRSS
+      sharedMemorySizeKb := rusage.ixRSS
+      unsharedDataSizeKb := rusage.idRSS
+      unsharedStackSizeKb := rusage.isRSS
+      minorPageFaults := rusage.minFlt
+      majorPageFaults := rusage.majFlt
+      swapOperations := rusage.nSwap
+      blockInputOps := rusage.inBlock
+      blockOutputOps := rusage.outBlock
+      messagesSent := rusage.msgSent
+      messagesReceived := rusage.msgRecv
+      signalsReceived := rusage.signals
+      voluntaryContextSwitches := rusage.voluntaryCS
+      involuntaryContextSwitches := rusage.involuntaryCS
+    }
+
+/--
+Returns the absolute path of the current executable.
+-/
+@[inline]
+def getExecutablePath : IO FilePath :=
+  FilePath.mk <$> UV.System.exePath
+
+/--
+Returns the amount of free system memory in bytes.
+-/
+@[inline]
+def freeMemory : IO UInt64 :=
+  UV.System.freeMemory
+
+/--
+Returns the total system memory in bytes.
+-/
+@[inline]
+def totalMemory : IO UInt64 :=
+  UV.System.totalMemory
+
+/--
+Returns the constrained memory limit in bytes.
+-/
+@[inline]
+def constrainedMemory : IO UInt64 :=
+  UV.System.constrainedMemory
+
+/--
+Returns the available memory for allocation in bytes.
+-/
+@[inline]
+def availableMemory : IO UInt64 :=
+  UV.System.availableMemory
+
+end Process
+end IO
+end Std
+```

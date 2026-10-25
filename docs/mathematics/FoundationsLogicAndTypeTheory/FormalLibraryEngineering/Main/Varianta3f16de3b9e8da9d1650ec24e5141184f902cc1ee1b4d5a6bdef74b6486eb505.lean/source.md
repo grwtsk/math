@@ -1,0 +1,121 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Main.Varianta3f16de3b9e8da9d1650ec24e5141184f902cc1ee1b4d5a6bdef74b6486eb505
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d412b4e6ad0fcedb5122461fcac772184a29961c` · SHA-256 `74205cb0c6fb724c5088629f20f3a2ed7bec3a7b8463146b43a12cb57a2e1f71`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AsDotGraph.Variant007aab4596b6966fdfd20857143766d44cd2bceb17fbdd6f17c6ce8d31f62512","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"007aab4596b6966fdfd20857143766d44cd2bceb17fbdd6f17c6ce8d31f62512","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceOrganization.SourceCorpus.AsDotGraph.Variant007aab4596b6966fdfd20857143766d44cd2bceb17fbdd6f17c6ce8d31f62512","mathematical_subject":"MathematicalTooling.SourceOrganization","original_sha256":"007aab4596b6966fdfd20857143766d44cd2bceb17fbdd6f17c6ce8d31f62512","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/ImportGraph/Main.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Scott Morrison. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Scott Morrison
+-/
+import Mathlib.Util.Imports
+import Mathlib.Lean.CoreM
+import Mathlib.Lean.Data.NameMap
+import Mathlib.Lean.IO.Process
+import Mathlib.Lean.Name
+import Std.Lean.Util.Path
+import Cli
+
+/-!
+# `lake exe graph`
+
+This is a replacement for Lean 3's `leanproject import-graph` tool.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AsDotGraph.Variant007aab4596b6966fdfd20857143766d44cd2bceb17fbdd6f17c6ce8d31f62512
+
+open Cli
+
+open Lean Meta
+
+/-- Write an import graph, represented as a `NameMap (Array Name)` to the ".dot" graph format. -/
+def asDotGraph (graph : NameMap (Array Name)) (header := "import_graph") : String := Id.run do
+  let mut lines := #[s!"digraph \"{header}\" " ++ "{"]
+  for (n, is) in graph do
+    for i in is do
+      lines := lines.push s!"  \"{i}\" -> \"{n}\";"
+  lines := lines.push "}"
+  return "\n".intercalate lines.toList
+
+open Lean Core System
+
+open IO.FS IO.Process Name in
+/-- Implementation of the import graph command line program. -/
+def importGraphCLI (args : Cli.Parsed) : IO UInt32 := do
+  let to := match args.flag? "to" with
+  | some to => to.as! ModuleName
+  | none => `Mathlib -- autodetect the main module from the `lakefile.lean`?
+  let from? := match args.flag? "from" with
+  | some fr => some <| fr.as! ModuleName
+  | none => none
+  searchPathRef.set compile_time_search_path%
+  let dotFile ← unsafe withImportModules [{module := to}] {} (trustLevel := 1024) fun env => do
+    let mut graph := env.importGraph
+    if let .some f := from? then
+      graph := graph.dependenciesOf (NameSet.empty.insert f)
+    if ¬(args.hasFlag "include-deps") then
+      let p := getModule to
+      graph := graph.filterMap (fun n i =>
+        if p.isPrefixOf n then (i.filter (isPrefixOf p)) else none)
+    if args.hasFlag "exclude-meta" then
+      let filterMeta : Name → Bool := fun n => (
+        isPrefixOf `Mathlib.Tactic n ∨
+        isPrefixOf `Mathlib.Lean n ∨
+        isPrefixOf `Mathlib.Util n)
+      -- create a list of all files imported by any of the filtered files
+      -- and remove all imports starting with `Mathlib` to avoid loops
+      let mut tacticImports := graph.toList.bind
+        (fun ⟨n, i⟩ => if filterMeta n then i.toList else [])
+        |>.eraseDup |>.filter (not <| isPrefixOf `Mathlib ·) |>.toArray
+      -- iterate over the graph, removing all filtered nodes and
+      -- replace any filtered import with `«Mathlib.Tactics»`
+      graph := graph.filterMap (fun n i => if filterMeta n then none else some <|
+        (i.map (fun name => if filterMeta name then `«Mathlib.Tactics» else name)
+          |>.toList.eraseDup.toArray))
+      -- add the new node `«Mathlib.Tactics»`
+      graph := graph.insert `«Mathlib.Tactics» tacticImports
+    if args.hasFlag "reduce" then
+      graph := graph.transitiveReduction
+    return asDotGraph graph
+  match args.variableArgsAs! String with
+  | #[] => writeFile "import_graph.dot" dotFile
+  | outputs => for o in outputs do
+     let fp : FilePath := o
+     match fp.extension with
+     | none
+     | "dot" => writeFile fp dotFile
+     | some ext => _ ← runCmdWithInput "dot" #["-T" ++ ext, "-o", o] dotFile
+  return 0
+
+/-- Setting up command line options and help text for `lake exe graph`. -/
+def graph : Cmd := `[Cli|
+  graph VIA importGraphCLI; ["0.0.1"]
+  "Generate representations of a Lean import graph."
+
+  FLAGS:
+    reduce;               "Remove transitively redundant edges."
+    to : ModuleName;      "Only show the upstream imports of the specified module."
+    "from" : ModuleName;  "Only show the downstream dependencies of the specified module."
+    "exclude-meta";       "Exclude any files starting with `Mathlib.[Tactic|Lean|Util]`."
+    "include-deps";       "Include used files from other projects (e.g. lake packages)"
+
+  ARGS:
+    ...outputs : String;  "Filename(s) for the output. " ++
+      "If none are specified, generates `import_graph.dot`. " ++
+      "Automatically chooses the format based on the file extension. " ++
+      "Currently `.dot` is supported, " ++
+      "and if you have `graphviz` installed then any supported output format is allowed."
+]
+
+/-- `lake exe graph` -/
+def main (args : List String) : IO UInt32 :=
+  graph.validate args
+```

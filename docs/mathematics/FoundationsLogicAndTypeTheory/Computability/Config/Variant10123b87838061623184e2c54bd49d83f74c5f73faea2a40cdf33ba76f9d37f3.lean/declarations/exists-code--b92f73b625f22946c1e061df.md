@@ -1,0 +1,231 @@
+# exists_code
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:ff6e2ac5-588d-5d1b-fa4a-afa420b405eb",
+  "kind": "theorem",
+  "lexical_name": "exists_code",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exists-code--b92f73b625f22946c1e061df",
+  "source": {
+    "blob": "a0ea76331ace188dd8f3f634e25a71662305cab1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 429,
+    "line": 280,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/Computability/Config/Variant10123b87838061623184e2c54bd49d83f74c5f73faea2a40cdf33ba76f9d37f3.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b92f73b625f22946c1e061dfc32b65cc949ece24fe985b767d317b948e5d21bb",
+  "verification": {
+    "reference": "docs/verification/FoundationsLogicAndTypeTheory/Computability/Config/Variant10123b87838061623184e2c54bd49d83f74c5f73faea2a40cdf33ba76f9d37f3.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:ff6e2ac5-588d-5d1b-fa4a-afa420b405eb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 280–429.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem exists_code {n} {f : List.Vector ℕ n →. ℕ} (hf : Nat.Partrec' f) :
+    ∃ c : Code, ∀ v : List.Vector ℕ n, c.eval v.1 = pure <$> f v := by
+  induction hf with
+  | prim hf =>
+    induction hf with
+    | zero => exact ⟨zero', fun ⟨[], _⟩ => rfl⟩
+    | succ => exact ⟨succ, fun ⟨[v], _⟩ => rfl⟩
+    | get i =>
+      refine Fin.succRec (fun n => ?_) (fun n i IH => ?_) i
+      · exact ⟨head, fun ⟨List.cons a as, _⟩ => by simp; rfl⟩
+      · obtain ⟨c, h⟩ := IH
+        exact ⟨c.comp tail, fun v => by simpa [← Vector.get_tail, Bind.bind] using h v.tail⟩
+    | comp g hf hg IHf IHg =>
+      simpa [Part.bind_eq_bind] using exists_code.comp IHf IHg
+    | @prec n f g _ _ IHf IHg =>
+      obtain ⟨cf, hf⟩ := IHf
+      obtain ⟨cg, hg⟩ := IHg
+      simp only [Part.map_eq_map, Part.map_some, PFun.coe_val] at hf hg
+      refine ⟨prec cf cg, fun v => ?_⟩
+      rw [← v.cons_head_tail]
+      specialize hf v.tail
+      replace hg := fun a b => hg (a ::ᵥ b ::ᵥ v.tail)
+      simp only [Vector.cons_val, Vector.tail_val] at hf hg
+      simp only [Part.map_eq_map, Part.map_some, Vector.cons_val, PFun.coe_val, Vector.tail_val]
+      simp only [← Part.pure_eq_some] at hf hg ⊢
+      induction v.head with
+      | zero => simp [prec, hf, Bind.bind]
+      | succ n _ =>
+      suffices ∀ a b, a + b = n →
+        (n.succ :: 0 ::
+          g (n ::ᵥ Nat.rec (f v.tail) (fun y IH => g (y ::ᵥ IH ::ᵥ v.tail)) n ::ᵥ v.tail) ::
+              v.val.tail : List ℕ) ∈
+          PFun.fix
+            (fun v : List ℕ => Part.bind (cg.eval (v.headI :: v.tail.tail))
+              (fun x => Part.some (if v.tail.headI = 0
+                then Sum.inl
+                  (v.headI.succ :: v.tail.headI.pred :: x.headI :: v.tail.tail.tail : List ℕ)
+                else Sum.inr
+                  (v.headI.succ :: v.tail.headI.pred :: x.headI :: v.tail.tail.tail))))
+            (a :: b :: Nat.rec (f v.tail) (fun y IH => g (y ::ᵥ IH ::ᵥ v.tail)) a :: v.val.tail) by
+        have := Part.eq_some_iff.mpr (this _ _ (zero_add _))
+        simp [prec, Part.bind_assoc, Bind.bind]
+        simp_all
+      intro a b e
+      induction b generalizing a with
+      | zero =>
+        refine PFun.mem_fix_iff.2 (Or.inl <| Part.eq_some_iff.1 ?_)
+        simp only [hg, ← e, Part.bind_some, List.tail_cons, pure]
+        rfl
+      | succ b IH =>
+        refine PFun.mem_fix_iff.2 (Or.inr ⟨_, ?_, IH (a + 1) (by rwa [add_right_comm])⟩)
+        simp only [hg, Part.bind_some, List.tail_cons, pure]
+        exact Part.mem_some_iff.2 rfl
+  | comp g _ _ IHf IHg => exact exists_code.comp IHf IHg
+  | @rfind n f _ IHf =>
+    obtain ⟨cf, hf⟩ := IHf; refine ⟨rfind cf, fun v => ?_⟩
+    replace hf := fun a => hf (a ::ᵥ v)
+    simp only [Part.map_eq_map, Part.map_some, Vector.cons_val, PFun.coe_val,
+      show ∀ x, pure x = [x] from fun _ => rfl] at hf ⊢
+    refine Part.ext fun x => ?_
+    simp only [rfind, Part.bind_eq_bind, Part.pure_eq_some, Part.bind_some,
+      cons_eval, comp_eval, fix_eval, tail_eval, succ_eval, zero'_eval,
+      List.headI_cons, pred_eval, Part.map_some, false_eq_decide_iff,
+      Part.mem_bind_iff, Part.mem_map_iff, Nat.mem_rfind,
+      List.tail_cons, true_eq_decide_iff, Part.mem_some_iff, Part.map_bind]
+    constructor
+    · rintro ⟨v', h1, rfl⟩
+      suffices ∀ v₁ : List ℕ, v' ∈ PFun.fix
+        (fun v => (cf.eval v).bind fun y => Part.some <|
+          if y.headI = 0 then Sum.inl (v.headI.succ :: v.tail)
+            else Sum.inr (v.headI.succ :: v.tail)) v₁ →
+        ∀ n, (v₁ = n :: v.val) → (∀ m < n, ¬f (m ::ᵥ v) = 0) →
+          ∃ a : ℕ,
+            (f (a ::ᵥ v) = 0 ∧ ∀ {m : ℕ}, m < a → ¬f (m ::ᵥ v) = 0) ∧ [a] = [v'.headI.pred]
+        by exact this _ h1 0 rfl (by rintro _ ⟨⟩)
+      clear h1
+      intro v₀ h1
+      refine PFun.fixInduction h1 fun v₁ h2 IH => ?_
+      clear h1
+      rintro n rfl hm
+      have := PFun.mem_fix_iff.1 h2
+      simp only [hf, Part.bind_some] at this
+      split_ifs at this with h
+      · simp only [List.headI_cons, exists_false, or_false, Part.mem_some_iff,
+          List.tail_cons, false_and, Sum.inl.injEq, reduceCtorEq] at this
+        subst this
+        exact ⟨_, ⟨h, @hm⟩, rfl⟩
+      · refine IH (n.succ::v.val) (by simp_all) _ rfl fun m h' => ?_
+        obtain h | rfl := Nat.lt_succ_iff_lt_or_eq.1 h'
+        exacts [hm _ h, h]
+    · rintro ⟨n, ⟨hn, hm⟩, rfl⟩
+      refine ⟨n.succ::v.1, ?_, rfl⟩
+      have : (n.succ::v.1 : List ℕ) ∈
+        PFun.fix (fun v =>
+          (cf.eval v).bind fun y =>
+            Part.some <|
+              if y.headI = 0 then Sum.inl (v.headI.succ :: v.tail)
+                else Sum.inr (v.headI.succ :: v.tail))
+            (n::v.val) :=
+        PFun.mem_fix_iff.2 (Or.inl (by simp [hf, hn]))
+      generalize (n.succ :: v.1 : List ℕ) = w at this ⊢
+      clear hn
+      induction n with
+      | zero => exact this
+      | succ n IH =>
+        refine IH (fun {m} h' => hm (Nat.lt_succ_of_lt h'))
+          (PFun.mem_fix_iff.2 (Or.inr ⟨_, ?_, this⟩))
+        simp only [hf, hm n.lt_succ_self, Part.bind_some, List.headI, ite_false,
+          Part.mem_some_iff, List.tail_cons]
+
+end Code
+
+/-!
+## From compositional semantics to sequential semantics
+
+Our initial sequential model is designed to be as similar as possible to the compositional
+semantics in terms of its primitives, but it is a sequential semantics, meaning that rather than
+defining an `eval c : List ℕ →. List ℕ` function for each program, defined by recursion on
+programs, we have a type `Cfg` with a step function `step : Cfg → Option cfg` that provides a
+deterministic evaluation order. In order to do this, we introduce the notion of a *continuation*,
+which can be viewed as a `Code` with a hole in it where evaluation is currently taking place.
+Continuations can be assigned a `List ℕ →. List ℕ` semantics as well, with the interpretation
+being that given a `List ℕ` result returned from the code in the hole, the remainder of the
+program will evaluate to a `List ℕ` final value.
+
+The continuations are:
+
+* `halt`: the empty continuation: the hole is the whole program, whatever is returned is the
+  final result. In our notation this is just `_`.
+* `cons₁ fs v k`: evaluating the first part of a `cons`, that is `k (_ :: fs v)`, where `k` is the
+  outer continuation.
+* `cons₂ ns k`: evaluating the second part of a `cons`: `k (ns.headI :: _)`. (Technically we don't
+  need to hold on to all of `ns` here since we are already committed to taking the head, but this
+  is more regular.)
+* `comp f k`: evaluating the first part of a composition: `k (f _)`.
+* `fix f k`: waiting for the result of `f` in a `fix f` expression:
+  `k (if _.headI = 0 then _.tail else fix f (_.tail))`
+
+The type `Cfg` of evaluation states is:
+
+* `ret k v`: we have received a result, and are now evaluating the continuation `k` with result
+  `v`; that is, `k v` where `k` is ready to evaluate.
+* `halt v`: we are done and the result is `v`.
+
+The main theorem of this section is that for each code `c`, the state `stepNormal c halt v` steps
+to `v'` in finitely many steps if and only if `Code.eval c v = some v'`.
+-/
+
+
+/-- The type of continuations, built up during evaluation of a `Code` expression. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/FoundationsLogicAndTypeTheory/Computability/Config/Variant10123b87838061623184e2c54bd49d83f74c5f73faea2a40cdf33ba76f9d37f3.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/Computability/Config/Variant10123b87838061623184e2c54bd49d83f74c5f73faea2a40cdf33ba76f9d37f3.lean#L280).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a0ea76331ace188dd8f3f634e25a71662305cab1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

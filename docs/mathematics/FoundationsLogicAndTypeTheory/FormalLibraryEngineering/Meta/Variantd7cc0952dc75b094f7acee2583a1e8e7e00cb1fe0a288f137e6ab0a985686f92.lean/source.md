@@ -1,0 +1,122 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Meta.Variantd7cc0952dc75b094f7acee2583a1e8e7e00cb1fe0a288f137e6ab0a985686f92
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9451d8c2b21f724d703bae9e77ecfeb9004f3550` · SHA-256 `9d4b6fd328a624b35e2c77e368ff6b823e175a01501bf5d4d39484446e9fd568`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Existsi.Variant14967cfc88da78a9338688257cfac6eecf9947df70464afffa28f261a663d913","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"14967cfc88da78a9338688257cfac6eecf9947df70464afffa28f261a663d913","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Existsi.Variant14967cfc88da78a9338688257cfac6eecf9947df70464afffa28f261a663d913","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"14967cfc88da78a9338688257cfac6eecf9947df70464afffa28f261a663d913","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Lean/Meta.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Mario Carneiro. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mario Carneiro
+-/
+module
+
+public import Mathlib.Init
+public import Lean.Elab.Term
+public import Lean.Elab.Tactic.Basic
+public import Lean.Meta.Tactic.Assert
+public import Lean.Meta.Tactic.Clear
+
+/-! # Additional utilities in `Lean.MVarId` -/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Existsi.Variant14967cfc88da78a9338688257cfac6eecf9947df70464afffa28f261a663d913
+
+public section
+
+open Lean Meta
+
+namespace Lean.MVarId
+
+/-- Add the hypothesis `h : t`, given `v : t`, and return the new `FVarId`. -/
+def «let» (g : MVarId) (h : Name) (v : Expr) (t : Option Expr := none) :
+    MetaM (FVarId × MVarId) := do
+  (← g.define h (← t.getDM (inferType v)) v).intro1P
+
+/-- Has the effect of `refine ⟨e₁,e₂,⋯, ?_⟩`.
+-/
+def existsi (mvar : MVarId) (es : List Expr) : MetaM MVarId := do
+  es.foldlM (fun mv e ↦ do
+      let (subgoals,_) ← Elab.Term.TermElabM.run <| Elab.Tactic.run mv do
+        Elab.Tactic.evalTactic (← `(tactic| refine ⟨?_,?_⟩))
+      let [sg1, sg2] := subgoals | throwError "expected two subgoals"
+      sg1.assign e
+      pure sg2)
+    mvar
+
+/-- Applies `intro` repeatedly until it fails. We use this instead of
+`Lean.MVarId.intros` to allowing unfolding.
+For example, if we want to do introductions for propositions like `¬p`,
+the `¬` needs to be unfolded into `→ False`, and `intros` does not do such unfolding. -/
+partial def intros! (mvarId : MVarId) : MetaM (Array FVarId × MVarId) :=
+  run #[] mvarId
+where
+  /-- Implementation of `intros!`. -/
+  run (acc : Array FVarId) (g : MVarId) :=
+    try
+      let ⟨f, g⟩ ← mvarId.intro1
+      run (acc.push f) g
+    catch _ =>
+      pure (acc, g)
+
+end Lean.MVarId
+
+namespace Lean.Meta
+
+/-- Get the type the given metavariable after instantiating metavariables and cleaning up
+annotations. -/
+def _root_.GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Existsi.Variant14967cfc88da78a9338688257cfac6eecf9947df70464afffa28f261a663d913.Lean.MVarId.getType'' (mvarId : MVarId) : MetaM Expr :=
+  return (← instantiateMVars (← mvarId.getType)).cleanupAnnotations
+
+end Lean.Meta
+
+namespace Lean.Elab.Tactic
+
+/-- Analogue of `liftMetaTactic` for tactics that return a single goal. -/
+-- I'd prefer to call that `liftMetaTactic1`,
+-- but that is taken in core by a function that lifts a `tac : MVarId → MetaM (Option MVarId)`.
+def liftMetaTactic' (tac : MVarId → MetaM MVarId) : TacticM Unit :=
+  liftMetaTactic fun g => do pure [← tac g]
+
+variable {α : Type}
+
+@[inline] private def TacticM.runCore (x : TacticM α) (ctx : Context) (s : State) :
+    TermElabM (α × State) :=
+  x ctx |>.run s
+
+@[inline] private def TacticM.runCore' (x : TacticM α) (ctx : Context) (s : State) : TermElabM α :=
+  Prod.fst <$> x.runCore ctx s
+
+/-- Copy of `Lean.Elab.Tactic.run` that can return a value. -/
+-- We need this because Lean 4 core only provides `TacticM` functions for building simp contexts,
+-- making it quite painful to call `simp` from `MetaM`.
+def run_for (mvarId : MVarId) (x : TacticM α) : TermElabM (Option α × List MVarId) :=
+  mvarId.withContext do
+    let pendingMVarsSaved := (← get).pendingMVars
+    modify fun s => { s with pendingMVars := [] }
+    let aux : TacticM (Option α × List MVarId) :=
+      /- Important: the following `try` does not backtrack the state.
+          This is intentional because we don't want to backtrack the error message
+          when we catch the "abort internal exception"
+          We must define `run` here because we define `MonadExcept` instance for `TacticM` -/
+      try
+        let a ← x
+        pure (a, ← getUnsolvedGoals)
+      catch ex =>
+        if isAbortTacticException ex then
+          pure (none, ← getUnsolvedGoals)
+        else
+          throw ex
+    try
+      aux.runCore' { elaborator := .anonymous } { goals := [mvarId] }
+    finally
+      modify fun s => { s with pendingMVars := pendingMVarsSaved }
+
+end Lean.Elab.Tactic
+```

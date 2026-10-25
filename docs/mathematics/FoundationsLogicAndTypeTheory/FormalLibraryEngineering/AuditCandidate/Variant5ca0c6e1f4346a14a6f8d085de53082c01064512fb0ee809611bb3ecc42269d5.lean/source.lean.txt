@@ -1,0 +1,119 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Grassmannian.Variantde2ec2a4d6d28877708ce618ba2a0ce63b92e1dc328588469cdfc3022022b7c2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"de2ec2a4d6d28877708ce618ba2a0ce63b92e1dc328588469cdfc3022022b7c2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Grassmannian.Variantde2ec2a4d6d28877708ce618ba2a0ce63b92e1dc328588469cdfc3022022b7c2","mathematical_subject":"Foundations.Unclassified","original_sha256":"de2ec2a4d6d28877708ce618ba2a0ce63b92e1dc328588469cdfc3022022b7c2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/packet-publication-unit/source/de2ec2a4d6d28877708ce618ba2a0ce63b92e1dc328588469cdfc3022022b7c2/audit-candidate.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.Grassmannian
+
+-- Candidate selection only; this file is NOT an executed audit.
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Grassmannian.Variantde2ec2a4d6d28877708ce618ba2a0ce63b92e1dc328588469cdfc3022022b7c2
+
+#print FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_coordinates
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_coordinates
+
+#print FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_positive
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_positive
+
+#print FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_ordered_minors
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_ordered_minors
+
+#print FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_pivot
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.positiveFixture24_pivot
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_coordinates
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_coordinates
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_ordered_minors
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_ordered_minors
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_not_positive
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_not_positive
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_pivot
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryFixture24_pivot
+
+#print FormalResearch.PositiveAtlas.Grassmannian.incompatibleOnes24_positive
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.incompatibleOnes24_positive
+
+#print FormalResearch.PositiveAtlas.Grassmannian.incompatibleOnes24_not_compatible
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.incompatibleOnes24_not_compatible
+
+#print FormalResearch.PositiveAtlas.Grassmannian.incompatibleOnes24_not_matrix
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.incompatibleOnes24_not_matrix
+
+#print FormalResearch.PositiveAtlas.Grassmannian.rows_same_squares
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.rows_same_squares
+
+#print FormalResearch.PositiveAtlas.Grassmannian.rows_not_proportional
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.rows_not_proportional
+
+#print FormalResearch.PositiveAtlas.Grassmannian.mixedSignRow_positive_gram_and_mixed_signs
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.mixedSignRow_positive_gram_and_mixed_signs
+
+#print FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsNonneg_of_pos
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsNonneg_of_pos
+
+#print FormalResearch.PositiveAtlas.Grassmannian.columnSubmatrix_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.columnSubmatrix_mul_left
+
+#print FormalResearch.PositiveAtlas.Grassmannian.columnMinor_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.columnMinor_mul_left
+
+#print FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_mul_left
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_mul_left
+
+#print FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_mul_left_eq_zero_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_mul_left_eq_zero_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsPos_mul_left_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsPos_mul_left_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsNonneg_mul_left_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsNonneg_mul_left_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.minor₂_eq_columnMinor
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.minor₂_eq_columnMinor
+
+#print FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_two
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_two
+
+#print FormalResearch.PositiveAtlas.Grassmannian.minor₂_swap
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.minor₂_swap
+
+#print FormalResearch.PositiveAtlas.Grassmannian.minor₂_plucker
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.minor₂_plucker
+
+#print FormalResearch.PositiveAtlas.Grassmannian.PluckerCoordinates24.ofMatrix_compatible
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.PluckerCoordinates24.ofMatrix_compatible
+
+#print FormalResearch.PositiveAtlas.Grassmannian.PluckerCoordinates24.allOrderedMinorsPos_of_strictlyPositive
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.PluckerCoordinates24.allOrderedMinorsPos_of_strictlyPositive
+
+#print FormalResearch.PositiveAtlas.Grassmannian.PluckerCoordinates24.allOrderedMinorsNonneg_of_nonnegative
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.PluckerCoordinates24.allOrderedMinorsNonneg_of_nonnegative
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_eq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_eq
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.pivot_eq_one
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.pivot_eq_one
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_strictlyPositive_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_strictlyPositive_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_injective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_injective
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_fromCoordinates
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.coordinates_fromCoordinates
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.fromCoordinates_coordinates
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.fromCoordinates_coordinates
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.normalized_recognition
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.normalized_recognition
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.positive_normalized_recognition
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.positive_normalized_recognition
+

@@ -1,0 +1,76 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.NoncommRing.Variantecd428090ac262e13cff5d8bf61c10a46d4b6dd693fee32a0c0516d0b58486cf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `45b5cf952eeba6b5aa26c0a6810cafda3bd00f7f` · SHA-256 `43b37130ae2f0cd45034d519b5bceb60738c9f0a934398747c8efe7dbeefe2e9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.NatLitMulEqNsmul.Variant4f8b6f9e5193db99305e1b016610b0d0befb836be8e69613173111f9befe71a4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4f8b6f9e5193db99305e1b016610b0d0befb836be8e69613173111f9befe71a4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.NatLitMulEqNsmul.Variant4f8b6f9e5193db99305e1b016610b0d0befb836be8e69613173111f9befe71a4","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"4f8b6f9e5193db99305e1b016610b0d0befb836be8e69613173111f9befe71a4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Tactic/NoncommRing.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Oliver Nash. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jireh Loreaux, Scott Morrison, Oliver Nash
+-/
+import Mathlib.Tactic.Abel
+
+/-! # The `noncomm_ring` tactic
+
+Solve goals in not necessarily commutative rings.
+
+This tactic is rudimentary, but useful for solving simple goals in noncommutative rings. One
+glaring flaw is that numeric powers are unfolded entirely with `pow_succ` and can easily exceed the
+maximum recursion depth.
+
+`noncomm_ring` is just a `simp only [some lemmas]` followed by `abel`. It automatically uses `abel1`
+to close the goal, and if that doesn't succeed, defaults to `abel_nf`.
+ -/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.NatLitMulEqNsmul.Variant4f8b6f9e5193db99305e1b016610b0d0befb836be8e69613173111f9befe71a4
+
+namespace Mathlib.Tactic.NoncommRing
+
+section nat_lit_mul
+variable {R : Type*} [NonAssocSemiring R] (r : R) (n : ℕ)
+
+lemma nat_lit_mul_eq_nsmul [n.AtLeastTwo] : no_index (OfNat.ofNat n) * r = n • r := by
+  simp only [nsmul_eq_mul, Nat.cast_eq_ofNat]
+lemma mul_nat_lit_eq_nsmul [n.AtLeastTwo] : r * no_index (OfNat.ofNat n) = n • r := by
+  simp only [nsmul_eq_mul', Nat.cast_eq_ofNat]
+
+end nat_lit_mul
+
+/-- A tactic for simplifying identities in not-necessarily-commutative rings.
+
+An example:
+```lean
+example {R : Type*} [Ring R] (a b c : R) : a * (b + c + c - b) = 2*a*c :=
+by noncomm_ring
+```
+-/
+syntax (name := noncomm_ring) "noncomm_ring" : tactic
+macro_rules
+  | `(tactic| noncomm_ring) => `(tactic| (
+      (first | simp only [
+          -- Expand everything out.
+          add_mul, mul_add, sub_eq_add_neg,
+          -- Right associate all products.
+          mul_assoc,
+          -- Expand powers to numerals.
+          pow_one, pow_zero, pow_succ,
+          -- Replace multiplication by numerals with `zsmul`.
+          one_mul, mul_one, zero_mul, mul_zero,
+          nat_lit_mul_eq_nsmul, mul_nat_lit_eq_nsmul,
+          -- Pull `zsmul n` out the front so `abel` can see them.
+          mul_smul_comm, smul_mul_assoc,
+          -- Pull out negations.
+          neg_mul, mul_neg] |
+        fail "`noncomm_ring` simp lemmas don't apply; try `abel` instead") <;>
+      first | abel1 | abel_nf ))
+
+end Mathlib.Tactic.NoncommRing
+````

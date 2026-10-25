@@ -1,0 +1,261 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.Day.Variant7989af8662347f914d19d57fdfd8876b367e5774736d93cf56ad7390dad464a7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1ed276014659722c7cfb4f71a72aaae982432329` · SHA-256 `95f5d62a98202700b7188cc7f768227a37b6b479935e932c0b7c6fbc56b7cbfe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.SetTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.OfInt.Variantdf23e53117c852b2acc8c3b8c05d88f9a30f3344a3e54a182fe0717ba3779089","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"df23e53117c852b2acc8c3b8c05d88f9a30f3344a3e54a182fe0717ba3779089","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.OfInt.Variantdf23e53117c852b2acc8c3b8c05d88f9a30f3344a3e54a182fe0717ba3779089","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"df23e53117c852b2acc8c3b8c05d88f9a30f3344a3e54a182fe0717ba3779089","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Std/Time/Date/Unit/Day.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sofia Rodrigues
+-/
+module
+
+prelude
+public import Std.Time.Time
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.OfInt.Variantdf23e53117c852b2acc8c3b8c05d88f9a30f3344a3e54a182fe0717ba3779089
+
+public section
+
+namespace Std
+namespace Time
+namespace Day
+open Lean Internal
+
+set_option linter.all true
+
+/--
+`Ordinal` represents a bounded value for days, which ranges between 1 and 31.
+-/
+@[expose] def Ordinal := Bounded.LE 1 31
+deriving Repr, DecidableEq, LE, LT
+
+instance : OfNat Ordinal n :=
+  inferInstanceAs (OfNat (Bounded.LE 1 (1 + (30 : Nat))) n)
+
+instance {x y : Ordinal} : Decidable (x ≤ y) :=
+  inferInstanceAs (Decidable (x.val ≤ y.val))
+
+instance {x y : Ordinal} : Decidable (x < y) :=
+  inferInstanceAs (Decidable (x.val < y.val))
+
+instance : Inhabited Ordinal where default := 1
+
+instance : Ord Ordinal := inferInstanceAs <| Ord (Bounded.LE 1 _)
+
+instance : TransOrd Ordinal := inferInstanceAs <| TransOrd (Bounded.LE 1 _)
+
+instance : LawfulEqOrd Ordinal := inferInstanceAs <| LawfulEqOrd (Bounded.LE 1 _)
+
+/--
+`Offset` represents an offset in days. It is defined as an `Int` with a base unit of 86400
+(the number of seconds in a day).
+-/
+@[expose] def Offset : Type := UnitVal 86400
+deriving Repr, DecidableEq, Inhabited, Add, Sub, Neg, LE, LT, ToString
+
+instance : OfNat Offset n := ⟨UnitVal.ofNat n⟩
+
+instance {x y : Offset} : Decidable (x ≤ y) :=
+  inferInstanceAs (Decidable (x.val ≤ y.val))
+
+instance {x y : Offset} : Decidable (x < y) :=
+  inferInstanceAs (Decidable (x.val < y.val))
+
+instance : Ord Offset := inferInstanceAs <| Ord (UnitVal _)
+
+instance : TransOrd Offset := inferInstanceAs <| TransOrd (UnitVal _)
+
+instance : LawfulEqOrd Offset := inferInstanceAs <| LawfulEqOrd (UnitVal _)
+
+namespace Ordinal
+
+/--
+Creates an `Ordinal` from an integer, ensuring the value is within bounds.
+-/
+@[inline]
+def ofInt (data : Int) (h : 1 ≤ data ∧ data ≤ 31) : Ordinal :=
+  Bounded.LE.mk data h
+
+/--
+`OfYear` represents the day ordinal within a year, which can be bounded between 1 and 365 or 366,
+depending on whether it's a leap year.
+-/
+@[expose] def OfYear (leap : Bool) := Bounded.LE 1 (.ofNat (if leap then 366 else 365))
+
+instance : Repr (OfYear leap) where
+  reprPrec r p := reprPrec r.val p
+
+instance : ToString (OfYear leap) where
+  toString r := toString r.val
+
+instance : DecidableEq (OfYear leap) := inferInstanceAs <| DecidableEq (Bounded.LE 1 _)
+
+instance : Ord (OfYear leap) := inferInstanceAs <| Ord (Bounded.LE 1 _)
+
+instance : TransOrd (OfYear leap) := inferInstanceAs <| TransOrd (Bounded.LE 1 _)
+
+instance : LawfulEqOrd (OfYear leap) := inferInstanceAs <| LawfulEqOrd (Bounded.LE 1 _)
+
+namespace OfYear
+
+/--
+Creates an ordinal for a specific day within the year, ensuring that the provided day (`data`)
+is within the valid range for the year, which can be 1 to 365 or 366 for leap years.
+-/
+@[inline]
+def ofNat (data : Nat) (h : data ≥ 1 ∧ data ≤ (if leap then 366 else 365) := by decide) : OfYear leap :=
+  Bounded.LE.ofNat' data h
+
+end OfYear
+
+instance : OfNat (Ordinal.OfYear leap) n :=
+  match leap with
+  | true => inferInstanceAs (OfNat (Bounded.LE 1 (1 + (365 : Nat))) n)
+  | false => inferInstanceAs (OfNat (Bounded.LE 1 (1 + (364 : Nat))) n)
+
+instance : Inhabited (Ordinal.OfYear leap) where
+  default := by
+    refine ⟨1, And.intro (by decide) ?_⟩
+    split <;> simp
+
+/--
+Creates an ordinal from a natural number, ensuring the number is within the valid range
+for days of a month (1 to 31).
+-/
+@[inline]
+def ofNat (data : Nat) (h : data ≥ 1 ∧ data ≤ 31 := by decide) : Ordinal :=
+  Bounded.LE.ofNat' data h
+
+/--
+Creates an ordinal from a `Fin` value, ensuring it is within the valid range for days of the month (1 to 31).
+If the `Fin` value is 0, it is converted to 1.
+-/
+@[inline]
+def ofFin (data : Fin 32) : Ordinal :=
+  Bounded.LE.ofFin' data (by decide)
+
+/--
+Converts an `Ordinal` to an `Offset`.
+-/
+@[inline]
+def toOffset (ordinal : Ordinal) : Offset :=
+  UnitVal.ofInt ordinal.val
+
+namespace OfYear
+
+/--
+Converts an `OfYear` ordinal to a `Offset`.
+-/
+def toOffset (ofYear : OfYear leap) : Offset :=
+  UnitVal.ofInt ofYear.val
+
+end OfYear
+end Ordinal
+
+namespace Offset
+
+/--
+Converts an `Offset` to an `Ordinal`.
+-/
+@[inline]
+def toOrdinal (off : Day.Offset) (h : off.val ≥ 1 ∧ off.val ≤ 31) : Ordinal :=
+  Bounded.LE.mk off.val h
+
+/--
+Creates an `Offset` from a natural number.
+-/
+@[inline]
+def ofNat (data : Nat) : Day.Offset :=
+  UnitVal.ofInt data
+
+/--
+Creates an `Offset` from an integer.
+-/
+@[inline]
+def ofInt (data : Int) : Day.Offset :=
+  UnitVal.ofInt data
+
+/--
+Convert `Day.Offset` into `Nanosecond.Offset`.
+-/
+@[inline]
+def toNanoseconds (days : Day.Offset) : Nanosecond.Offset :=
+  days.mul 86400000000000 |>.cast (by decide +kernel)
+
+/--
+Convert `Nanosecond.Offset` into `Day.Offset`.
+-/
+@[inline]
+def ofNanoseconds (ns : Nanosecond.Offset) : Day.Offset :=
+  ns.ediv 86400000000000 |>.cast (by decide +kernel)
+
+/--
+Convert `Day.Offset` into `Millisecond.Offset`.
+-/
+@[inline]
+def toMilliseconds (days : Day.Offset) : Millisecond.Offset :=
+  days.mul 86400000 |>.cast (by decide +kernel)
+
+/--
+Convert `Millisecond.Offset` into `Day.Offset`.
+-/
+@[inline]
+def ofMilliseconds (ms : Millisecond.Offset) : Day.Offset :=
+  ms.ediv 86400000 |>.cast (by decide +kernel)
+
+/--
+Convert `Day.Offset` into `Second.Offset`.
+-/
+@[inline]
+def toSeconds (days : Day.Offset) : Second.Offset :=
+  days.mul 86400 |>.cast (by decide +kernel)
+
+/--
+Convert `Second.Offset` into `Day.Offset`.
+-/
+@[inline]
+def ofSeconds (secs : Second.Offset) : Day.Offset :=
+  secs.ediv 86400 |>.cast (by decide +kernel)
+
+/--
+Convert `Day.Offset` into `Minute.Offset`.
+-/
+@[inline]
+def toMinutes (days : Day.Offset) : Minute.Offset :=
+  days.mul 1440 |>.cast (by decide +kernel)
+
+/--
+Convert `Minute.Offset` into `Day.Offset`.
+-/
+@[inline]
+def ofMinutes (minutes : Minute.Offset) : Day.Offset :=
+  minutes.ediv 1440 |>.cast (by decide +kernel)
+
+/--
+Convert `Day.Offset` into `Hour.Offset`.
+-/
+@[inline]
+def toHours (days : Day.Offset) : Hour.Offset :=
+  days.mul 24 |>.cast (by decide +kernel)
+
+/--
+Convert `Hour.Offset` into `Day.Offset`.
+-/
+@[inline]
+def ofHours (hours : Hour.Offset) : Day.Offset :=
+  hours.ediv 24 |>.cast (by decide +kernel)
+
+end Offset
+end Day
+end Time
+end Std
+```

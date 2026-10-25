@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.StrInterpolation.Variantc0e9da00b79adcf1ff7cd30ae2e21c70df0756419206101c79478fa80c65fdea
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `efe4542d1ea511fbb01c8ceb19220aaa02bee090` · SHA-256 `0c999676ada8d8b3ddc643b6d77d034e157d167e9549098fa516541cdf45851a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IsQuotableCharForStrInterpolant.Variant0e795ac67be7cf3457a30571c2ba03133fbc76179a20618bdb8e71c5df6b6602","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0e795ac67be7cf3457a30571c2ba03133fbc76179a20618bdb8e71c5df6b6602","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.IsQuotableCharForStrInterpolant.Variant0e795ac67be7cf3457a30571c2ba03133fbc76179a20618bdb8e71c5df6b6602","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"0e795ac67be7cf3457a30571c2ba03133fbc76179a20618bdb8e71c5df6b6602","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Parser/StrInterpolation.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Parser.Basic
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IsQuotableCharForStrInterpolant.Variant0e795ac67be7cf3457a30571c2ba03133fbc76179a20618bdb8e71c5df6b6602
+
+public section
+namespace Lean.Parser
+
+def isQuotableCharForStrInterpolant (c : Char) : Bool :=
+  c == '{' || isQuotableCharDefault c
+
+partial def interpolatedStrFn (p : ParserFn) : ParserFn := fun c s =>
+  let stackSize := s.stackSize
+  let rec parse (startPos : String.Pos.Raw) (c : ParserContext) (s : ParserState) : ParserState :=
+    let i := s.pos
+    if c.atEnd i then
+      let s := s.mkError "unterminated string literal"
+      s.mkNode interpolatedStrKind stackSize
+    else
+      let curr := c.get i
+      let s    := s.setPos (c.next i)
+      if curr == '\"' then
+        let s := mkNodeToken interpolatedStrLitKind startPos true c s
+        s.mkNode interpolatedStrKind stackSize
+      else if curr == '\\' then
+        andthenFn (quotedCharCoreFn isQuotableCharForStrInterpolant true) (parse startPos) c s
+      else if curr == '{' then
+        let s := mkNodeToken interpolatedStrLitKind startPos true c s
+        let s := p c s
+        if s.hasError then s
+        else
+          let i := s.pos
+          let curr := c.get i
+          if curr == '}' then
+            let s := s.setPos (c.next i)
+            parse i c s
+          else
+            let s := s.mkError "'}'"
+            s.mkNode interpolatedStrKind stackSize
+      else
+        parse startPos c s
+  let startPos := s.pos
+  if c.atEnd startPos then
+    s.mkEOIError
+  else
+    let curr  := c.get s.pos;
+    if curr != '\"' then
+      s.mkError "interpolated string"
+    else
+      let s := s.next c startPos
+      parse startPos c s
+
+@[inline] def interpolatedStrNoAntiquot (p : Parser) : Parser := {
+  fn   := interpolatedStrFn (withoutPosition p).fn,
+  info := mkAtomicInfo "interpolatedStr"
+}
+
+/-- The parser `interpolatedStr(p)` parses a string literal like `"foo"` (see `str`), but the string
+may also contain `{}` escapes, and within the escapes the parser `p` is used. For example,
+`interpolatedStr(term)` will parse `"foo {2 + 2}"`, where `2 + 2` is parsed as a term rather than
+as a string. Note that the full Lean term grammar is available here, including string literals,
+so for example `"foo {"bar" ++ "baz"}"` is a legal interpolated string (which evaluates to
+`foo barbaz`).
+
+This parser has arity 1, and returns a `interpolatedStrKind` with an odd number of arguments,
+alternating between chunks of literal text and results from `p`. The literal chunks contain
+uninterpreted substrings of the input. For example, `"foo\n{2 + 2}"` would have three arguments:
+an atom `"foo\n{`, the parsed `2 + 2` term, and then the atom `}"`. -/
+@[builtin_doc] def interpolatedStr (p : Parser) : Parser :=
+  withAntiquot (mkAntiquot "interpolatedStr" interpolatedStrKind) $ interpolatedStrNoAntiquot p
+
+end Lean.Parser
+```
