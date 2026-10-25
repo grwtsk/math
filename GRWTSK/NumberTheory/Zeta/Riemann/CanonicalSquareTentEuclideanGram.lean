@@ -241,4 +241,69 @@ theorem uniform_fullSource_bound_implies_operator_bound
   rw [Complex.norm_real, Real.norm_of_nonneg hs]
   exact hsource _ (by omega)
 
+/-! ## Cumulative Chebyshev lower bound and the precise tapering debt
+
+The unsmoothed square intervals partition the natural numbers after
+their first boundary. Thus their full sums telescope to Chebyshev psi.
+Its unconditional lower bound controls the SUM of the smoothed values
+and discarded mass; it does not bound their two components separately.
+-/
+
+/-- Exact finite square-window partition for the complete von Mangoldt
+increment; both endpoints and the n=0 case retain their true values. -/
+theorem sum_squareIncrement_range_eq_psi (N : ℕ) :
+    (∑ n ∈ Finset.range N, squareIncrement n) =
+      _root_.Chebyshev.psi (((N ^ 2 : ℕ) : ℝ)) := by
+  induction N with
+  | zero =>
+      simp [_root_.Chebyshev.psi]
+  | succ N ih =>
+      rw [Finset.sum_range_succ, ih]
+      rw [GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget.squareIncrement_eq_nat_source,
+        GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_eq_mathlib_psi]
+      ring
+
+/-- The source's untapered cumulative mass splits EXACTLY into the
+finite tent Gram masses and the nonnegative discarded taper losses. -/
+theorem sum_tent_add_weightLoss_eq_psi (N : ℕ) :
+    (∑ n ∈ Finset.range N,
+      (squareTentMangoldt n + squareWeightLoss n)) =
+        _root_.Chebyshev.psi (((N ^ 2 : ℕ) : ℝ)) := by
+  calc
+    _ = ∑ n ∈ Finset.range N, squareIncrement n := by
+      apply Finset.sum_congr rfl
+      intro n hn
+      exact (squareIncrement_eq_tent_add_weightLoss n).symm
+    _ = _ := sum_squareIncrement_range_eq_psi N
+
+/-- Genuine Chebyshev lower growth for the TOTAL source mass.
+A large sum may sit in either tents or discarded endpoint losses;
+there is no unproved lower bound for individual tents. -/
+theorem cumulative_tent_add_loss_chebyshev_lower (N : ℕ) :
+    (((N ^ 2 : ℕ) : ℝ) * Real.log 2 -
+      Real.log (((N ^ 2 + 1 : ℕ) : ℝ))) ≤
+      ∑ n ∈ Finset.range N,
+        (squareTentMangoldt n + squareWeightLoss n) := by
+  rw [sum_tent_add_weightLoss_eq_psi]
+  exact _root_.Chebyshev.psi_ge (N ^ 2)
+
+/-- If the smoothed source stays below C on these N windows, the
+complete discarded mass must absorb the remaining Chebyshev lower
+budget. No assertion that C exists is made. -/
+theorem cumulative_weightLoss_lower_of_tent_upper (N : ℕ) (C : ℝ)
+    (hupper : ∀ n ∈ Finset.range N, squareTentMangoldt n ≤ C) :
+    (((N ^ 2 : ℕ) : ℝ) * Real.log 2 -
+      Real.log (((N ^ 2 + 1 : ℕ) : ℝ))) - (N : ℝ) * C ≤
+        ∑ n ∈ Finset.range N, squareWeightLoss n := by
+  have htent :
+      (∑ n ∈ Finset.range N, squareTentMangoldt n) ≤
+        (N : ℝ) * C := by
+    calc
+      _ ≤ ∑ _n ∈ Finset.range N, C :=
+        Finset.sum_le_sum (fun n hn => hupper n hn)
+      _ = (N : ℝ) * C := by simp
+  have hlow := cumulative_tent_add_loss_chebyshev_lower N
+  rw [Finset.sum_add_distrib] at hlow
+  linarith
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
