@@ -32,7 +32,10 @@
         "Classical.choice",
         "Quot.sound"
       ],
-      "native_status": "NOT_RUN"
+      "native_status": "NOT_RUN",
+      "module_expected_types": {
+        "BooleanMatrix.Matrix.ext": "\u2200 {left right : BooleanMatrix.Matrix}, (\u2200 row column : Nat, left row column = right row column) \u2192 left = right"
+      }
     },
     {
       "source": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/SimpleTypeTheory/FunctionTypes/BooleanMatrixSelfMaps/Variant904476e1a96b6b04/ApplicationOperations.lean",
@@ -46,7 +49,11 @@
         "BooleanMatrix.Application.comp_apply"
       ],
       "allowed_axioms": [],
-      "native_status": "NOT_RUN"
+      "native_status": "NOT_RUN",
+      "module_expected_types": {
+        "BooleanMatrix.Application.identity_apply": "\u2200 input : BooleanMatrix.Matrix, BooleanMatrix.Application.identity input = input",
+        "BooleanMatrix.Application.comp_apply": "\u2200 (after before : BooleanMatrix.Application) (input : BooleanMatrix.Matrix), BooleanMatrix.Application.comp after before input = after (before input)"
+      }
     },
     {
       "source": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/NaturalIterationOnBooleanMatrices/Variant1f1f2efdeade9306/FiniteIteration.lean",
@@ -58,7 +65,11 @@
         "BooleanMatrix.Application.iterate_succ"
       ],
       "allowed_axioms": [],
-      "native_status": "NOT_RUN"
+      "native_status": "NOT_RUN",
+      "module_expected_types": {
+        "BooleanMatrix.Application.iterate_zero": "\u2200 (application : BooleanMatrix.Application) (input : BooleanMatrix.Matrix), BooleanMatrix.Application.iterate application 0 input = input",
+        "BooleanMatrix.Application.iterate_succ": "\u2200 (application : BooleanMatrix.Application) (steps : Nat) (input : BooleanMatrix.Matrix), BooleanMatrix.Application.iterate application (Nat.succ steps) input = application (BooleanMatrix.Application.iterate application steps input)"
+      }
     },
     {
       "source": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/NaturalIterationOnBooleanMatrices/Variant1f1f2efdeade9306/OrbitSequence.lean",
@@ -70,7 +81,11 @@
         "BooleanMatrix.Application.orbit_succ"
       ],
       "allowed_axioms": [],
-      "native_status": "NOT_RUN"
+      "native_status": "NOT_RUN",
+      "module_expected_types": {
+        "BooleanMatrix.Application.orbit_zero": "\u2200 (application : BooleanMatrix.Application) (initial : BooleanMatrix.Matrix), BooleanMatrix.Application.orbit application initial 0 = initial",
+        "BooleanMatrix.Application.orbit_succ": "\u2200 (application : BooleanMatrix.Application) (initial : BooleanMatrix.Matrix) (step : Nat), BooleanMatrix.Application.orbit application initial (Nat.succ step) = application (BooleanMatrix.Application.orbit application initial step)"
+      }
     }
   ],
   "required_gates": [
@@ -79,16 +94,20 @@
     "Apply empty allowed-axiom policy to self-map/iteration/orbit modules; explicit standard three-axiom allowance only to carrier/extensionality module",
     "Preserve every source signature and proof body; the only repair is explicit provider imports with explanatory comments",
     "Retain source, toolchain, manifest, producer, native resource and command identities in external Noe runtime",
-    "Keep original source snapshots, missing-provider preparation failure and current successor evidence distinct"
+    "Keep original source snapshots, missing-provider preparation failure and current successor evidence distinct",
+    "After each same-source complete passing compiler-origin audit, require its fresh module-owned exact-type consumer; bind source/module/audit digest/root identities and reject nonempty streams"
   ],
   "compiled_boundary": "Pinned installed Lean Init/Std library; no whole-toolchain or Std source replay is asserted",
   "exact_type_consumers": {
     "status": "NOT_RUN",
-    "count": 0,
-    "limitation": "Current managed named/expected-type route selects GRWTSK declarations only; legacy BooleanMatrix names are covered by complete module census with required structural root names. No exact type-consumer execution is claimed."
+    "count": 7,
+    "fresh_importing_modules": 4,
+    "route": "Compiler-owned module_expected_types after complete passing source-bound module census; exact structural ownership required before child start",
+    "ordinary_named_GRWTSK_namespace_guard": "UNCHANGED"
   },
   "native_compilation": "NOT_RUN",
   "kernel_replay": "NOT_RUN",
   "transitive_axiom_acceptance": "NOT_RUN",
-  "mathematical_scope": "Matrix is Nat \u2192 Nat \u2192 Bool; Application is Matrix \u2192 Matrix; no finiteness, periodicity, convergence, reversible execution, implementation refinement or compression follows."
+  "mathematical_scope": "Matrix is Nat \u2192 Nat \u2192 Bool; Application is Matrix \u2192 Matrix; no finiteness, periodicity, convergence, reversible execution, implementation refinement or compression follows.",
+  "previous_requirement_commit": "8d0ec7a74c74d09922b22673800571348268e282"
 }
