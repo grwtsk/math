@@ -166,4 +166,17 @@ theorem no_universal_scope_promotion :
   have impossible : (1 : Nat) = 0 := promote Nat domain property local 1
   cases impossible
 
+/-- Scope and property transfer require separate proof-producing suppliers.
+A target-domain point must be in the source domain, and the proved source
+property must imply the desired property at that point. No string-based
+subject match, diagnostic tag, or validation status supplies either map. -/
+theorem scoped_transfer {α : Type}
+    {sourceDomain targetDomain sourceProperty targetProperty : α → Prop}
+    (sourceProof : ∀ x, sourceDomain x → sourceProperty x)
+    (domainSupplier : ∀ x, targetDomain x → sourceDomain x)
+    (propertySupplier : ∀ x, targetDomain x → sourceProperty x → targetProperty x) :
+    ∀ x, targetDomain x → targetProperty x := by
+  intro x inTarget
+  exact propertySupplier x inTarget (sourceProof x (domainSupplier x inTarget))
+
 end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics
