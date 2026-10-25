@@ -1,0 +1,132 @@
+{
+  "schema": "grwtsk.arithmetic-feature-gram-rank-audit-requirements/1",
+  "attribution": "grwtsk contributors",
+  "classification": "STATIC_REQUIREMENTS_NOT_RECEIPT",
+  "source_commit": "59d8e969f2304183bdeb6c2d8910ea3fc7fe2fc3",
+  "contracts": [
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "blob": "322afe9666ba662598c3ca67ed56ee24244432ac",
+      "module_expected_types": {
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_isHermitian": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).IsHermitian",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_posSemidef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).PosSemidef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_realification": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.realSource (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s p.1 p.2) = GRWTSK.Analysis.ErrorBounds.QuadraticGramResidual.gram (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.pairedFeatures (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature N \u03c4 level \u03c7 s))",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel_matrix": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel N \u03c4 level \u03c7 s).matrix = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_posSemidef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram N \u03c4 s).PosSemidef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.complexGram_posSemidef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} {\u03ba : Type v} [Fintype \u03b9] [Fintype \u03ba] (f : \u03ba \u2192 \u03b9 \u2192 \u2102), (fun i j => GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexGram f (i, j)).PosSemidef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.radical_prime_power": "\u2200 {p k : \u2115} (_hp : p.Prime) (_hk : 0 < k), UniqueFactorizationMonoid.radical (p ^ k) = p",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight_prime_power": "\u2200 (\u03c4 : \u211d) {p k : \u2115} (_hp : p.Prime) (_hk : 0 < k), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight \u03c4 (p ^ k) = Real.log p / (p : \u211d) ^ \u03c4"
+      },
+      "required_module_declarations": [
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.Window",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.window_lower",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.window_upper",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.radical_prime_power",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.vonMangoldt_prime_power",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.radical_power_positive",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight_nonnegative",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight_prime_power",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseFeature",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature_eq_character_mul_base",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature_eq_exp",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.complexGram_posSemidef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_posSemidef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_isHermitian",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_realification",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_readout_nonnegative",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_posSemidef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_isHermitian",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel_matrix",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_realification",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_readout_nonnegative",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_readout_im_zero"
+      ],
+      "sha256": "511710423e972e350dc85c4cb5c65a35d622e8cdba02b500503dd4b731620085",
+      "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticFeatureGram.lean",
+      "universes": [
+        "u",
+        "v"
+      ]
+    },
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "blob": "e0c2f03b9ca8d0c41845bf82e1f187685765954a",
+      "module_expected_types": {
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_det_eq_zero": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] [DecidableEq \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102) (_hdim : N - 1 < Fintype.card \u03b9), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).det = 0",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_exists_kernel": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102) (_hdim : N - 1 < Fintype.card \u03b9), \u2203 test : \u03b9 \u2192 \u2102, test \u2260 0 \u2227 (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).mulVec test = 0",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_not_posDef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102) (_hdim : N - 1 < Fintype.card \u03b9), \u00ac (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).PosDef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_rank_le": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102) , (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).rank \u2264 N - 1",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_det_eq_zero": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] [DecidableEq \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (s : \u03b9 \u2192 \u2102) (_hdim : N - 1 < Fintype.card \u03b9), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram N \u03c4 s).det = 0",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_exists_kernel": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (s : \u03b9 \u2192 \u2102) (_hdim : N - 1 < Fintype.card \u03b9), \u2203 test : \u03b9 \u2192 \u2102, test \u2260 0 \u2227 (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram N \u03c4 s).mulVec test = 0",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_not_posDef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (s : \u03b9 \u2192 \u2102) (_hdim : N - 1 < Fintype.card \u03b9), \u00ac (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram N \u03c4 s).PosDef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_rank_le": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (_hN : 2 \u2264 N) (\u03c4 : \u211d) (s : \u03b9 \u2192 \u2102) , (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram N \u03c4 s).rank \u2264 N - 1",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.complexGram_rank_le_card": "\u2200 {\u03b9 : Type u} {\u03ba : Type v} [Fintype \u03b9] [Fintype \u03ba] (f : \u03ba \u2192 \u03b9 \u2192 \u2102), (fun i j => GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexGram f (i, j)).rank \u2264 Fintype.card \u03ba",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.window_card": "\u2200 (N : \u2115) (_hN : 2 \u2264 N), Fintype.card (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.Window N) = N - 1"
+      },
+      "required_module_declarations": [
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.window_card",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.complexGram_rank_le_card",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_rank_le",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_rank_le",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_det_eq_zero",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_det_eq_zero",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_exists_kernel",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_exists_kernel",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.baseGram_not_posDef",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGramRank.arithmeticGram_not_posDef"
+      ],
+      "sha256": "0d26018a676085783f0d877ddbafc72fc3b89afd88c5036f44feb51b19d982c0",
+      "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticFeatureGramRank.lean",
+      "universes": [
+        "u",
+        "v"
+      ]
+    }
+  ],
+  "new_rank_proof_candidates": 10,
+  "preexisting_arithmetic_proof_candidates": 20,
+  "preexisting_arithmetic_source_wholly_unchanged": true,
+  "explicit_required_names": 37,
+  "selected_exact_type_expressions": 18,
+  "fresh_type_importers": 2,
+  "required_gates": [
+    "Fresh warnings-as-errors trust-zero compilation of11project modules,3007upstream-source modules and27source assets",
+    "Two complete compiler-origin/axiom censuses including37required structural names and all additional compiler-owned declarations",
+    "Eighteen selected independent type expressions after same-source complete ownership/axiom/structural qualification; all ten rank theorem types are included",
+    "Retain explicit N>=2 and strict dimension N-1<card(index) premises; prefixing unused binder names never removes premises",
+    "Determinant statements carry their DecidableEq instance; kernel and non-PosDef statements cover all Fintype indices using classical choice only internally",
+    "Preserve existing arbitrary-index PositiveKernel API and full untwisted/character-dependent-level arithmetic families",
+    "Keep full-space non-PosDef separate from excitation gaps on a kernel complement or unrelated physical operators",
+    "Root GRWTSK compilation and every applicable original request/native gate remain separate"
+  ],
+  "scope": {
+    "sample_count": "N-1 under N>=2",
+    "rank": "upper bound only,no independence/full-rank premise",
+    "dimension_obstruction": "If N-1<card(index),determinant zero and an actual nonzero mulVec-kernel vector for both families",
+    "not_claimed": [
+      "Any strict positivity for smaller coordinate families",
+      "Sharp rank or characterization of kernel",
+      "Excitation gap on the kernel complement",
+      "Infinite-cutoff or physical Hamiltonian/Yang-Mills comparison"
+    ]
+  },
+  "native_compile": "NOT_RUN",
+  "compiler_origin_qualification": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axiom_acceptance": "NOT_RUN",
+  "exact_type_execution": "NOT_RUN",
+  "root_GRWTSK_compile": "NOT_RUN"
+}
