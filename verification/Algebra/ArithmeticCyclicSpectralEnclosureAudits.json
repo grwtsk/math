@@ -1,0 +1,85 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-spectral-enclosure-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "230d228fc49f48e448c5e2828e020868debd578a",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralEnclosure.lean",
+  "source_blob": "428d5dc9c06367204d102f556bc889a376034820",
+  "source_sha256": "9420d59c99eee0c0316a81216c8a08f31c4e70d1a0912229fdf8e83fb885df8d",
+  "classification": "TWELVE_SOURCE_PROOF_CANDIDATES_ZERO_NEW_DEFINITIONS",
+  "native_status": "NOT_RUN",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.operator_spectrum_eq_matrix",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.operator_spectrum_has_eigenvalue",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.eigenvalue_near_potential",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.spectrum_near_potential",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.spectrum_subset_diagonal_neighborhoods",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.separated_point_mem_resolvent",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.spectrum_im_eq_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.real_spectrum_near_potential",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.real_separated_point_mem_resolvent",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.open_interval_mem_resolvent",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.arithmetic_spectrum_near_potential",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.arithmetic_open_interval_mem_resolvent"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.arithmetic_open_interval_mem_resolvent": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w a b E : Real), (forall i, GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w i + 2 * abs t <= a \u2228 b <= GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w i - 2 * abs t) -> E \u2208 Set.Ioo a b -> (E : Complex) \u2208 resolventSet Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.arithmetic_spectrum_near_potential": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w : Real) (z : Complex), z \u2208 spectrum Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w)) -> exists i : ZMod N, norm (z - (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w i : Complex)) <= 2 * abs t",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.eigenvalue_near_potential": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex), Module.End.HasEigenvalue (Matrix.toLin' (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian N t q)) z -> exists i : ZMod N, norm (z - (q i : Complex)) <= 2 * abs t",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.open_interval_mem_resolvent": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (a b E : Real), (forall i, q i + 2 * abs t <= a \u2228 b <= q i - 2 * abs t) -> E \u2208 Set.Ioo a b -> (E : Complex) \u2208 resolventSet Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.operator_spectrum_eq_matrix": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real), spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) = spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.operator_spectrum_has_eigenvalue": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex), z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> Module.End.HasEigenvalue (Matrix.toLin' (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian N t q)) z",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.real_separated_point_mem_resolvent": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), (forall i, 2 * abs t < abs (E - q i)) -> (E : Complex) \u2208 resolventSet Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.real_spectrum_near_potential": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex), z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> exists i : ZMod N, abs (z.re - q i) <= 2 * abs t",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.separated_point_mem_resolvent": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex), (forall i, 2 * abs t < norm (z - (q i : Complex))) -> z \u2208 resolventSet Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.spectrum_im_eq_zero": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex), z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> z.im = 0",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.spectrum_near_potential": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex), z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> exists i : ZMod N, norm (z - (q i : Complex)) <= 2 * abs t",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralEnclosure.spectrum_subset_diagonal_neighborhoods": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real), spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) \u2286 \u22c3 i : ZMod N, {z : Complex | norm (z - (q i : Complex)) <= 2 * abs t}"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots; twelve explicit structural names do not cap the population.",
+  "scope": [
+    "The actual Matrix.toEuclideanCLM operator on EuclideanSpace Complex (ZMod N) has the actual matrix spectrum, explicitly transferred to the full finite-dimensional eigenvalue API.",
+    "Every nonzero N, including the full N>=3 family. Maximum modulus is taken over every coordinate of an actual nonzero eigenvector; both genuine cyclic neighbors are retained, even when coincident at small sizes.",
+    "For every signed real t and potential q, every actual operator spectral point z lies within closed complex distance2*abs(t) of some actual coordinate q i. The full spectrum is contained in the union of these individual-coordinate neighborhoods.",
+    "Strict complex distance greater than2*abs(t) from every q i gives actual resolvent membership. Self-adjointness makes every actual spectral point real.",
+    "For a real E in the open interval(a,b), the per-site condition q i+2*abs(t)<=a or b<=q i-2*abs(t) gives actual resolvent membership. Closed neighborhoods may touch the interval endpoints; no spectral endpoint exclusion is asserted.",
+    "Actual arithmetic character/level, arbitrary natural label assignment and all real t,u,v,w remain included. No positivity, label>=2, common-prime, selected-mode or mean-zero restriction is inserted.",
+    "This is a finite spectral enclosure, not a positive gap, a projection/rank or spectrum-to-spectrum perturbation comparison, an infinite/AMO/RH operator correspondence or physical/gauge/Yang-Mills identification."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T191447.205787Z/enclosure-registry.json",
+    "registry_sha256": "8ad6ceff321e7b80b113e60e1212d2855d9de30453f57a7558b7b0881845e757",
+    "project_modules": 13,
+    "upstream_source_modules": 3415,
+    "source_assets": 27,
+    "complete_compiler_origin_audit_contracts": 1,
+    "required_structural_names": 12,
+    "selected_type_expressions": 12,
+    "all_twelve_theorem_types_selected": true,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "noe_head": "3377014b059ce902fda21b27389f5275ec1824bb",
+    "native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Matching executed native compilation, complete origin census, kernel replay, transitive axiom/type checks and root GRWTSK compilation.",
+    "Actual spectral projection/complementary sector comparisons and spectrum-to-spectrum perturbation, beyond enclosure in neighborhoods of diagonal values.",
+    "Actual infinite/rescaled/continuum operators and AMO correspondence.",
+    "Full RH-family correspondence/residual/reconstruction estimates and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}
