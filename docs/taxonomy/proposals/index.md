@@ -30,3 +30,5 @@ The [statistics addition](new-concepts/statistics.md) proposes eleven statistica
 
 Candidate 0.12: [probability limits and stochastic processes](new-concepts/probability-processes.md), including explicit convergence modes, two Brownian parents and retained older Markov scope.
 The [typed critical-strip witness classification](typed-critical-strip-witness-classification.md) proposes a statement-level relation profile for analytic zero witnesses, group-valued binary squares, path-groupoid transport and null-loop obstructions. It adds no subject concept, Number Theory parent or mathematical implication from navigation.
+
+[Diophantine equations](new-concepts/diophantine-equations.md) adds one standard proposed subject with a bounded official terminology warrant; no source review or proof acceptance follows from navigation.

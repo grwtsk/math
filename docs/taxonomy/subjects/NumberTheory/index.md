@@ -14,7 +14,7 @@ sources: [{"key": "L27", "locator": "Publisher edition and contents: divisibilit
 warrant: {"literary": "Established terminology with bounded literature warrants; precise local scope and placement need independent review.", "user": "Find arithmetic subjects independently of repository research priorities or implementations.", "organizational": "Keep subject, algorithm, theorem, evidence and operational permission distinct."}
 status: {"editorial": "proposed", "mathematical_novelty": "not_claimed", "proof": "not_applicable", "attribution": "local_editorial_text", "operational_permission": "not_conferred"}
 rights: {"local_prose": "MIT", "source_reuse": "reference_only"}
-revision_history: [{"version": "0.7-pilot", "date": "2026-10-20", "change": "Original local subject description and proposed placement; no source migration or external-data import."}]
+revision_history: [{"version": "0.7-pilot", "date": "2026-10-20", "change": "Original local subject description and proposed placement; no source migration or external-data import."}, {"version": "2026-10-25-proposed", "date": "2026-10-25", "change": "Add proposed Diophantine equations navigation; definition and scope unchanged."}]
 proposal_refs: ["urn:uuid:b3592120-494d-41c9-a967-9dd0c8e653f0"]
 decision_refs: ["D01", "D03", "D04", "D11"]
 ---
@@ -32,9 +32,9 @@ The subject includes structural, analytic and algorithmic questions. Arithmetic 
 
 ## Browse
 
-Selected division criterion: Established disciplinary perspectives; additive, Diophantine and other branches remain unpopulated.
+Selected division criterion: Established disciplinary perspectives and arithmetic problem families; additive and other branches remain unpopulated.
 
-Selected narrower subjects: [Elementary number theory](ElementaryNumberTheory/index.md), [Analytic number theory](AnalyticNumberTheory/index.md), [Algebraic number theory](AlgebraicNumberTheory/index.md), [Computational number theory](ComputationalNumberTheory/index.md).
+Selected narrower subjects: [Elementary number theory](ElementaryNumberTheory/index.md), [Analytic number theory](AnalyticNumberTheory/index.md), [Algebraic number theory](AlgebraicNumberTheory/index.md), [Computational number theory](ComputationalNumberTheory/index.md), [Diophantine equations](DiophantineEquations/index.md).
 
 ## Example and boundary
 
