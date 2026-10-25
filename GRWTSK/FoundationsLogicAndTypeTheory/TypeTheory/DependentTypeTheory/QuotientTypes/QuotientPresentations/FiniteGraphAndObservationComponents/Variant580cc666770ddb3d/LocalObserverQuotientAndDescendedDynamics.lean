@@ -18,7 +18,11 @@ Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provid
 Scope: Complete observer-local equivalence/setoid/quotient and descended local transition+observation, all exact proofs. Root selected this complete seam after full individual source/provider reads. Original whole-file documentation below is retained unchanged and can also describe other components. Historical providers remain literal; no stronger quotient, equivalence, canonicality or semantic law is inferred.
 -/
 
-import DAF.Causal.CausalState
+/- Dependency repair (2026-10-25): earlier provenance records historical
+providers. The explicit canonical provider below retains every declaration
+and proof body. Fresh compilation/kernel/axiom checks remain pending. -/
+
+import GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.QuotientTypes.QuotientPresentations.FiniteGraphAndObservationComponents.Variant8cc1ad83113e89b6.ParameterizedFutureTraceQuotient
 
 /-!
 # Observer-localState causal factors
