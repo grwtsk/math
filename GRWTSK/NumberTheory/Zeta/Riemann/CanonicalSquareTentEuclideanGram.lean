@@ -236,6 +236,29 @@ theorem squareWeightLoss_le_iff_absoluteMoment_le
   rw [squareWeightLoss_eq_absoluteMoment_div_radius]
   exact (div_le_iff₀ (squareRadius_pos n))
 
+/-- EXACT restoration of the complete closed-right arithmetic source.
+The upper square endpoint appears but has zero tent weight; its source
+contribution is therefore retained in the loss, not thrown away. -/
+theorem squareIncrement_eq_tent_add_weightLoss (n : ℕ) :
+    squareIncrement n = squareTentMangoldt n + squareWeightLoss n := by
+  rw [squareIncrement_eq_vonMangoldt_sum]
+  unfold squareTentMangoldt squareWeightLoss
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro m hm
+  ring
+
+/-- Exact source mass as complete window mass minus its actual
+centered first absolute moment. The source center/radius cannot be
+replaced with an arbitrary comparison observable. -/
+theorem squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment
+    (n : ℕ) :
+    squareTentMangoldt n =
+      squareIncrement n - squareAbsoluteMoment n / squareRadius n := by
+  have h := squareIncrement_eq_tent_add_weightLoss n
+  rw [squareWeightLoss_eq_absoluteMoment_div_radius] at h
+  linarith
+
 /-! ## Coarse unconditional moment budget from Mathlib Chebyshev
 
 The pinned Mathlib Chebyshev upper bound controls the COMPLETE cumulative
@@ -276,29 +299,6 @@ theorem squareAbsoluteMoment_le_chebyshev_quadratic_radius (n : ℕ) :
         squareRadius n := by
   exact (squareWeightLoss_le_iff_absoluteMoment_le n _).mp
     (squareWeightLoss_le_chebyshev_quadratic n)
-
-/-- EXACT restoration of the complete closed-right arithmetic source.
-The upper square endpoint appears but has zero tent weight; its source
-contribution is therefore retained in the loss, not thrown away. -/
-theorem squareIncrement_eq_tent_add_weightLoss (n : ℕ) :
-    squareIncrement n = squareTentMangoldt n + squareWeightLoss n := by
-  rw [squareIncrement_eq_vonMangoldt_sum]
-  unfold squareTentMangoldt squareWeightLoss
-  rw [← Finset.sum_add_distrib]
-  apply Finset.sum_congr rfl
-  intro m hm
-  ring
-
-/-- Exact source mass as complete window mass minus its actual
-centered first absolute moment. The source center/radius cannot be
-replaced with an arbitrary comparison observable. -/
-theorem squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment
-    (n : ℕ) :
-    squareTentMangoldt n =
-      squareIncrement n - squareAbsoluteMoment n / squareRadius n := by
-  have h := squareIncrement_eq_tent_add_weightLoss n
-  rw [squareWeightLoss_eq_absoluteMoment_div_radius] at h
-  linarith
 
 /-- The normalized triangular weight cannot exceed the actual untapered
 source interval mass. This is only one direction of comparison. -/
