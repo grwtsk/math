@@ -8022,3 +8022,5 @@ Latest follow-up: [fresh source replay for pending Hecke character candidates](o
 Latest follow-up: [dependency replay failure and source-asset repair](obligation-implementation-progress-v15.md). Five targets remain unverified; all obligation counts unchanged.
 
 Latest follow-up: [Hecke character replay blocked by resource custody](obligation-implementation-progress-v16.md). No target acceptance; all obligation counts unchanged.
+
+Latest follow-up: [Hecke memory failure and smaller matrix proof candidates](obligation-implementation-progress-v17.md). No new target acceptance; counts unchanged.
