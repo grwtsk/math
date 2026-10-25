@@ -51,6 +51,25 @@ Arithmetic fixtures exercise a concrete counterexample, a false conditional,
 wrong-way refutation transfer, and a local-but-not-global assertion. They do
 not establish results in every listed subject or a general automation theorem.
 
+## Explicit scope transport
+
+`scoped_transfer` is a proof-carrying comparison across two scoped claims
+over the same underlying type. It takes a proof of the source property on
+the source domain, an exact function transporting target-domain membership
+into source-domain membership, and a pointwise implication from the source
+property to the target property at each target point. Its conclusion holds
+only on the stated target domain. The accompanying
+`Examples.arithmetic_scoped_transfer` exercises both supplier maps using
+natural-number inequalities. A string describing the scope does not
+construct either map.
+
+This result is a general logical interface; it supplies neither a particular
+spectral or gauge-theoretic comparison nor a continuum-uniform estimate.
+Any cross-model correspondence, source identity transport, nontrivial domain
+normalization, or physical-sector completeness still requires its own proof.
+The source declarations remain candidates pending actual Lean elaboration,
+fresh kernel checks, and transitive axiom audit.
+
 ## Existing structure and validation
 
 This package **extends** rather than replaces `ResearchState.Catalog`,
