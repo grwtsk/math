@@ -1,0 +1,146 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-spectral-perturbation-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "NINE_NEW_SOURCE_PROOF_CANDIDATES_ONE_EXACT_DEPRECATED_ALIAS_REPAIR",
+  "source_commit": "a1617e3d26eb79b8b33b72a2cb458160e14a3306",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralPerturbation.lean",
+  "source_blob": "6cedbd36a5efd66a6459b5c616dcf23cac2e5e40",
+  "source_sha256": "237a64fc7b30c935293fb7cb8ac107eeb815eba6725b8c136b7095d03a02fb16",
+  "repaired_supplier": {
+    "commit": "958122d56fb55bc183448030fbfd916f6497f4e1",
+    "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicOperatorStability.lean",
+    "blob": "fe077143705bb1d4b09b4911d6782b1ee88ebef1",
+    "sha256": "916b3d6c15fbae6e45d493ca6fef1a6fd9ce32d545ad5cef671b63a431d78587"
+  },
+  "repair_scope": {
+    "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicOperatorStability.lean",
+    "predecessor_commit": "4f6a88d1c7bbf8c765cd8cad74d21fcaf91d3e2e",
+    "predecessor_blob": "78df25f150e742331b387037648739a5a94f1603",
+    "predecessor_sha256": "3fe46f502fa2c5c1a1396181b785ec7d92587248e5e339d18bedb7801ea11e2e",
+    "repaired_sha256": "916b3d6c15fbae6e45d493ca6fef1a6fd9ce32d545ad5cef671b63a431d78587",
+    "exact_single_replacement": "ContinuousLinearMap.sub_apply -> sub_apply",
+    "pinned_supplier": "Mathlib/Topology/Algebra/Module/ContinuousLinearMap/Basic.lean:860",
+    "supplier_definition": "@[deprecated (since :=2026-05-20)] protected alias sub_apply := _root_.sub_apply",
+    "all_other_bytes_unchanged": true,
+    "all_statements_hypotheses_policies_unchanged": true,
+    "native_status": "NOT_RUN"
+  },
+  "contracts": [
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "blob": "fe077143705bb1d4b09b4911d6782b1ee88ebef1",
+      "declarations": [],
+      "discover_module_declarations": true,
+      "module_expected_types": {
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.arithmetic_operator_norm_sub_eq": "forall (N : Nat) [NeZero N] (level level' : Nat) (chi : DirichletCharacter Complex level) (chi' : DirichletCharacter Complex level') (m m' : ZMod N -> Nat) (t u v w u' v' w' : Real), norm (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w) - Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level' chi' m' t u' v' w')) = norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level' chi' m' u' v' w')",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator": "forall (N : Nat) [NeZero N] (q : ZMod N -> Real), ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator_mulVec": "forall (N : Nat) [NeZero N] (q : ZMod N -> Real) (x : EuclideanSpace Complex (ZMod N)), WithLp.ofLp (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator N q x) = fun i => (q i : Complex) * WithLp.ofLp x i",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator_norm": "forall (N : Nat) [NeZero N] (q : ZMod N -> Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator N q) = norm q",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real), ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator_isSelfAdjoint": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real), IsSelfAdjoint (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator_mulVec": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (x : EuclideanSpace Complex (ZMod N)), WithLp.ofLp (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q x) = Matrix.mulVec (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian N t q) (WithLp.ofLp x)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator_sub": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator N (fun i => q i - r i)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_norm_change_le": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real), abs (norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) - norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r)) <= norm (q - r)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_norm_sub_eq": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r) = norm (q - r)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_norm_sub_le_iff": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real) (e : Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r) <= e <-> forall i, abs (q i - r i) <= e",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_vector_change_le": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real) (x : EuclideanSpace Complex (ZMod N)), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q x - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r x) <= norm (q - r) * norm x"
+      },
+      "required_module_declarations": [
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator_mulVec",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator_mulVec",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator_isSelfAdjoint",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator_sub",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator_norm",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_norm_sub_eq",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_norm_sub_le_iff",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_vector_change_le",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.operator_norm_change_le",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.arithmetic_operator_norm_sub_eq"
+      ],
+      "sha256": "916b3d6c15fbae6e45d493ca6fef1a6fd9ce32d545ad5cef671b63a431d78587",
+      "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicOperatorStability.lean"
+    },
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "blob": "6cedbd36a5efd66a6459b5c616dcf23cac2e5e40",
+      "declarations": [],
+      "discover_module_declarations": true,
+      "module_expected_types": {
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.arithmetic_joint_spectrum_point_near": "forall (N : Nat) [NeZero N] (level level' : Nat) (chi : DirichletCharacter Complex level) (chi' : DirichletCharacter Complex level') (m m' : ZMod N -> Nat) (t s u v w u' v' w' : Real) (z : Complex), z \u2208 spectrum Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w)) -> exists z', z' \u2208 spectrum Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level' chi' m' s u' v' w')) \u2227 norm (z - z') <= norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level' chi' m' u' v' w') + 2 * abs (t - s)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.arithmetic_spectrum_point_near": "forall (N : Nat) [NeZero N] (level level' : Nat) (chi : DirichletCharacter Complex level) (chi' : DirichletCharacter Complex level') (m m' : ZMod N -> Nat) (t u v w u' v' w' : Real) (z : Complex), z \u2208 spectrum Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w)) -> exists z', z' \u2208 spectrum Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level' chi' m' t u' v' w')) \u2227 norm (z - z') <= norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level' chi' m' u' v' w')",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.diagonal_approximate_eigenvalue": "forall (n : Nat) (d : Fin n -> Complex) (y : EuclideanSpace Complex (Fin n)) (z : Complex) (e : Real), 0 <= e -> y \u2260 0 -> norm (WithLp.toLp 2 (fun i => (d i - z) * y i)) <= e * norm y -> exists i : Fin n, norm (d i - z) <= e",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.hamiltonian_spectra_mutual_neighborhoods": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real), (forall z, z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> exists w, w \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r) \u2227 norm (z - w) <= norm (q - r)) \u2227 (forall w, w \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r) -> exists z, z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) \u2227 norm (w - z) <= norm (q - r))",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.hamiltonian_spectrum_point_near": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real) (z : Complex), z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> exists w, w \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r) \u2227 norm (z - w) <= norm (q - r)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.joint_hopping_spectrum_point_near": "forall (N : Nat) [NeZero N] (t s : Real) (q r : ZMod N -> Real) (z : Complex), z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) -> exists w, w \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N s r) \u2227 norm (z - w) <= norm (q - r) + 2 * abs (t - s)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.selfAdjoint_approximate_eigenvalue": "forall (N : Nat) [NeZero N] (T : ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))), IsSelfAdjoint T -> forall (z : Complex) (e : Real) (x : EuclideanSpace Complex (ZMod N)), 0 <= e -> x \u2260 0 -> norm (T x - z \u2022 x) <= e * norm x -> exists w, w \u2208 spectrum Complex T \u2227 norm (w - z) <= e",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.selfAdjoint_spectrum_point_near": "forall (N : Nat) [NeZero N] (T U : ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))), IsSelfAdjoint U -> forall z : Complex, z \u2208 spectrum Complex T -> exists w, w \u2208 spectrum Complex U \u2227 norm (z - w) <= norm (T - U)",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.separated_reference_spectrum_mem_resolvent": "forall (N : Nat) [NeZero N] (t : Real) (q r : ZMod N -> Real) (E : Complex), (forall w, w \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t r) -> norm (q - r) < norm (E - w)) -> E \u2208 resolventSet Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)"
+      },
+      "required_module_declarations": [
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.diagonal_approximate_eigenvalue",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.selfAdjoint_approximate_eigenvalue",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.selfAdjoint_spectrum_point_near",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.hamiltonian_spectrum_point_near",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.hamiltonian_spectra_mutual_neighborhoods",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.separated_reference_spectrum_mem_resolvent",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.joint_hopping_spectrum_point_near",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.arithmetic_spectrum_point_near",
+        "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralPerturbation.arithmetic_joint_spectrum_point_near"
+      ],
+      "sha256": "237a64fc7b30c935293fb7cb8ac107eeb815eba6725b8c136b7095d03a02fb16",
+      "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralPerturbation.lean"
+    }
+  ],
+  "complete_census_required": true,
+  "census_scope": "Two full compiler-owned populations including all additional private/generated/instance/punctuation roots;21explicit names do not cap either population.",
+  "scope": [
+    "Diagonal residual helper requires explicit epsilon>=0 and a nonzero full complex Euclidean vector. The squared residual sums every coordinate; no Pi sup norm substitution.",
+    "A self-adjoint reference operator on finite complex Euclidean space uses a complete orthonormal eigenbasis and isometric coordinates to yield an actual spectral point within epsilon of a nonzero-vector residual bound.",
+    "For a general finite source operator T and self-adjoint reference U, each actual spectral point of T lies within norm(T-U) of some actual spectral point of U. Self-adjointness of T is not required for this one direction.",
+    "Actual signed Hamiltonians are self-adjoint in both directions. Their complete spectra lie in mutual closed neighborhoods of radius norm(q-r), for a shared real hopping t. The radius is the finite maximum absolute potential error; operator vectors retain Euclidean norm.",
+    "Strict separation from every actual reference spectral point by more than norm(q-r) gives actual resolvent membership for the perturbed Hamiltonian.",
+    "Changing both hopping and potential gives radius norm(q-r)+2*abs(t-s). Two arbitrary actual character levels/characters/natural-label assignments and all real coefficients remain in the arithmetic applications.",
+    "No ordered eigenvalue/multiplicity matching, formal Hausdorff metric value, spectral-projection/rank/complementary-sector or infinite/RH/physical result is inferred."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T192948.919349Z/perturbation-registry.json",
+    "registry_sha256": "8c98cf2bbc88e2ecfad0b92fa8ddceb86715d99d38139d4ddb0d8bff5dea4ce5",
+    "project_modules": 14,
+    "upstream_source_modules": 3187,
+    "source_assets": 27,
+    "complete_compiler_origin_audits_required": 2,
+    "required_structural_names": 21,
+    "selected_exact_types": 21,
+    "all_nine_new_and_twelve_supplier_types_selected": true,
+    "fresh_importers_required": 2,
+    "producer_pins": 13,
+    "noe_head": "3377014b059ce902fda21b27389f5275ec1824bb",
+    "native_status": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every matching executed native acceptance gate for both exact repaired/new source modules.",
+    "Spectral projections, multiplicity/rank or complementary-sector estimates; ordered eigenvalue pairing.",
+    "Actual identified infinite/rescaled/continuum/AMO/RH-family operators and residual/reconstruction estimates.",
+    "Physical/gauge/Yang-Mills operator or mass identification."
+  ],
+  "issue_state": "OPEN"
+}
