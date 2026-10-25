@@ -739,4 +739,57 @@ theorem squareTentMangoldt_ge_of_witness_budget
     δ * squareIncrement n ≤ squareTentMangoldt n := by
   exact hbudget.trans (squareTentMangoldt_ge_witness_finset n S hS)
 
+/-! ## Source-faithful central-window budget
+
+A fixed positive lower bound on the tent throughout a genuine central
+subwindow converts an *untapered* central von Mangoldt mass estimate into
+the finite witness budget. Both assumptions are explicit; no prime
+distribution result is inferred from Chebyshev cumulative growth.
+-/
+
+/-- A quantitative lower bound for every witness weight converts
+untapered witness mass into the actual weighted tent budget. -/
+theorem squareTentMangoldt_ge_weight_floor_mul_source
+    (n : ℕ) (S : Finset ℕ) (η : ℝ)
+    (hS : S ⊆ Finset.Ioc (n ^ 2) ((n + 1) ^ 2))
+    (hweight : ∀ m ∈ S, η ≤ squareWeight n m) :
+    η * (∑ m ∈ S, ArithmeticFunction.vonMangoldt m) ≤
+      squareTentMangoldt n := by
+  have hsum :
+      η * (∑ m ∈ S, ArithmeticFunction.vonMangoldt m) ≤
+        ∑ m ∈ S, ArithmeticFunction.vonMangoldt m * squareWeight n m := by
+    rw [Finset.mul_sum]
+    apply Finset.sum_le_sum
+    intro m hm
+    exact mul_le_mul_of_nonneg_left (hweight m hm)
+      ArithmeticFunction.vonMangoldt_nonneg
+  exact hsum.trans (squareTentMangoldt_ge_witness_finset n S hS)
+
+/-- A genuine central arithmetic-mass fraction and an explicit
+positive tent-weight floor provide the required relative moment
+deficit, with the exact product of the two constants. -/
+theorem relative_moment_gap_of_central_mass
+    (n : ℕ) (S : Finset ℕ) (η δ : ℝ)
+    (hη : 0 ≤ η)
+    (hS : S ⊆ Finset.Ioc (n ^ 2) ((n + 1) ^ 2))
+    (hweight : ∀ m ∈ S, η ≤ squareWeight n m)
+    (hsource : δ * squareIncrement n ≤
+      ∑ m ∈ S, ArithmeticFunction.vonMangoldt m) :
+    squareAbsoluteMoment n ≤
+      (1 - η * δ) * squareRadius n * squareIncrement n := by
+  have hbudget :
+      (η * δ) * squareIncrement n ≤
+        ∑ m ∈ S, ArithmeticFunction.vonMangoldt m * squareWeight n m := by
+    calc
+      _ = η * (δ * squareIncrement n) := by ring
+      _ ≤ η * (∑ m ∈ S, ArithmeticFunction.vonMangoldt m) :=
+        mul_le_mul_of_nonneg_left hsource hη
+      _ ≤ _ := by
+        rw [Finset.mul_sum]
+        apply Finset.sum_le_sum
+        intro m hm
+        exact mul_le_mul_of_nonneg_left (hweight m hm)
+          ArithmeticFunction.vonMangoldt_nonneg
+  exact relative_moment_gap_of_witness_budget n S (η * δ) hS hbudget
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
