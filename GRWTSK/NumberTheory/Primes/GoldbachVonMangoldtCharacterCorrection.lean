@@ -581,4 +581,17 @@ theorem logarithmicPowerTailKernel_tsum_shift_eq_sub_prefix
   rw [hsplit]
   ring
 
+
+/-- Quantitative estimate for the full logarithmic-power series
+after removal of the finite prefix through N. This presentation is
+independent of any indicator-sum reindexing convention. -/
+theorem logarithmicPowerTailKernel_tsum_sub_prefix_le
+    (σ : ℝ) (N : ℕ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    (∑' n : ℕ, logarithmicPowerTailKernel σ (n : ℝ)) -
+        ∑ n ∈ Finset.range (N + 1), logarithmicPowerTailKernel σ (n : ℝ) ≤
+      (N : ℝ) ^ (1 - σ) *
+        (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
+  rw [← logarithmicPowerTailKernel_tsum_shift_eq_sub_prefix σ N hσ]
+  exact logarithmicPowerTailKernel_tsum_add_le σ N hσ hN
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
