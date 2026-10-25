@@ -594,4 +594,15 @@ theorem logarithmicPowerTailKernel_tsum_sub_prefix_le
   rw [← logarithmicPowerTailKernel_tsum_shift_eq_sub_prefix σ N hσ]
   exact logarithmicPowerTailKernel_tsum_add_le σ N hσ hN
 
+
+/-- Exact complex-power denominator norm at positive natural indices.
+This isolates the analytic normalization needed for coefficient bounds. -/
+theorem norm_nat_cpow_neg_eq_rpow
+    (n : ℕ) (s : ℂ) (hn : 0 < n) :
+    ‖((n : ℂ) ^ (-s))‖ = (n : ℝ) ^ (-s.re) := by
+  have hnreal : (0 : ℝ) < n := by exact_mod_cast hn
+  rw [← Complex.ofReal_natCast]
+  simpa only [Complex.neg_re] using
+    (Complex.norm_cpow_eq_rpow_re_of_pos hnreal (-s))
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
