@@ -1,0 +1,90 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-hopping-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "d7959cde2517aadea32395301dc9200e73d6e3c0",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicHoppingBounds.lean",
+  "source_blob": "878addea1125f0201b9c401a42ee50cf1865b4ea",
+  "source_sha256": "b95d3c227487b6b3cc4f0badbaddc07a763772c2dfd7ef8f2e9e757fde003235",
+  "classification": "TWELVE_SOURCE_PROOF_CANDIDATES_TWO_ACTUAL_OPERATOR_DEFINITIONS",
+  "native_status": "NOT_RUN",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.shiftOperator",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.cyclicShift_eq_perm",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.shiftOperator_norm",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_decomposition",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator_sub",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator_norm_le",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_hopping_change_le",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_norm_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_joint_change_le",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.spectrum_norm_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.outside_global_ball_resolvent",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.arithmetic_operator_norm_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.arithmetic_spectrum_norm_bound"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.arithmetic_operator_norm_bound": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w : Real), norm (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w)) <= 2 * abs t + norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.arithmetic_spectrum_norm_bound": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w : Real) (z : Complex) (_hz : z \u2208 spectrum Complex (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w))), norm z <= 2 * abs t + norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.cyclicShift_eq_perm": "forall (N : Nat) [NeZero N], GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.cyclicShift N = Equiv.Perm.permMatrix Complex (Equiv.addRight (1 : ZMod N))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator": "forall (N : Nat) [NeZero N] (t : Real), ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator_norm_le": "forall (N : Nat) [NeZero N] (t : Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator N t) <= 2 * abs t",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator_sub": "forall (N : Nat) [NeZero N] (t s : Real), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator N t - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator N s = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator N (t - s)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_decomposition": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.hoppingOperator N t + GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.diagonalOperator N q",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_hopping_change_le": "forall (N : Nat) [NeZero N] (t s : Real) (q : ZMod N -> Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N s q) <= 2 * abs (t - s)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_joint_change_le": "forall (N : Nat) [NeZero N] (t s : Real) (q r : ZMod N -> Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N s r) <= norm (q - r) + 2 * abs (t - s)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.operator_norm_bound": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real), norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q) <= 2 * abs t + norm q",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.outside_global_ball_resolvent": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex) (_hz : 2 * abs t + norm q < norm z), z \u2208 resolventSet Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.shiftOperator": "forall (N : Nat) [NeZero N], ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.shiftOperator_norm": "forall (N : Nat) [NeZero N], norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.shiftOperator N) = 1",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHoppingBounds.spectrum_norm_bound": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (z : Complex) (_hz : z \u2208 spectrum Complex (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)), norm z <= 2 * abs t + norm q"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots; fourteen explicit structural names do not cap the population.",
+  "scope": [
+    "Actual cyclic shift is identified with the additive-one permutation matrix. Its Matrix.toEuclideanCLM has norm one on EuclideanSpace Complex (ZMod N), for every nonzero N including the entire N>=3 family.",
+    "Actual hopping operator t*(S+S*) has Euclidean operator norm at most 2*abs(t), for every signed real t. This is an upper bound, not asserted optimality or norm equality.",
+    "Actual signed Hamiltonian decomposes as hopping plus the actual diagonal operator. Hopping-change and joint hopping/potential-change bounds retain all signed t,s and real q,r.",
+    "Real potential functions have their finite sup norm, the maximum absolute coordinate value; operator vectors have the complex Euclidean norm.",
+    "Every point of the actual continuous-linear-map spectrum has complex norm at most 2*abs(t)+norm(q). Strictly outside this global disk, the actual operator is in the resolvent set.",
+    "This global disk is coarser than the union of disks of radius 2*abs(t) centered on the individual diagonal values. The sharper requested enclosure is not claimed.",
+    "Actual arithmetic Hamiltonians retain arbitrary Dirichlet character and level, arbitrary natural labels and all real t,u,v,w; no positivity or label>=2 restriction.",
+    "No spectral gap, positivity, infinite/rescaled/continuum operator, AMO/RH correspondence or physical/gauge/Yang-Mills identification."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T185503.909258Z/hopping-registry.json",
+    "registry_sha256": "be26b5f49ca4b01572b93cbed2618b203fc52c7a7d95e2eebd17ae2a429d5bff",
+    "project_modules": 13,
+    "upstream_source_modules": 3116,
+    "source_assets": 27,
+    "complete_compiler_origin_audit_contracts": 1,
+    "required_structural_names": 14,
+    "selected_type_expressions": 14,
+    "all_twelve_theorem_and_two_definition_types_selected": true,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "noe_head": "3377014b059ce902fda21b27389f5275ec1824bb",
+    "native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Executed native acceptance of this exact source and every matching audit/type gate.",
+    "The sharper union of radius2*abs(t) neighborhoods of individual diagonal values, and spectral perturbation comparison.",
+    "Actual infinite/rescaled/continuum operators and AMO correspondence.",
+    "Full RH-family correspondence/residual/reconstruction estimates and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}
