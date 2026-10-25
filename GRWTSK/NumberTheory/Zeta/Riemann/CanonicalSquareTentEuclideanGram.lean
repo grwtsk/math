@@ -666,4 +666,44 @@ theorem squareMoment_deficit_ge_witness_term
     field_simp [ne_of_gt hr]
   linarith
 
+/-! ## Additive finite witness budgets
+
+A genuine subset of the exact square-window inventory contributes
+additively to the tapered von Mangoldt mass. This avoids treating
+individual witness lower bounds as independent or double counting.
+-/
+
+/-- Every finite subset of the genuine square-window inventory
+contributes its full weighted mass to the canonical tent observable. -/
+theorem squareTentMangoldt_ge_witness_finset
+    (n : ℕ) (S : Finset ℕ)
+    (hS : S ⊆ Finset.Ioc (n ^ 2) ((n + 1) ^ 2)) :
+    (∑ m ∈ S, ArithmeticFunction.vonMangoldt m * squareWeight n m) ≤
+      squareTentMangoldt n := by
+  unfold squareTentMangoldt
+  exact Finset.sum_le_sum_of_subset_of_nonneg hS
+    (fun m hm hnot =>
+      mul_nonneg ArithmeticFunction.vonMangoldt_nonneg
+        (squareWeight_nonneg n m))
+
+/-- A finite set of distinct genuine witnesses gives an additive
+lower bound for the actual centered-moment deficit. -/
+theorem squareMoment_deficit_ge_witness_finset
+    (n : ℕ) (S : Finset ℕ)
+    (hS : S ⊆ Finset.Ioc (n ^ 2) ((n + 1) ^ 2)) :
+    squareRadius n * squareIncrement n - squareAbsoluteMoment n ≥
+      squareRadius n *
+        (∑ m ∈ S,
+          ArithmeticFunction.vonMangoldt m * squareWeight n m) := by
+  have hw := squareTentMangoldt_ge_witness_finset n S hS
+  have hr := squareRadius_pos n
+  have hscaled := mul_le_mul_of_nonneg_left hw hr.le
+  rw [squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment] at hscaled
+  have hidentity :
+      squareRadius n *
+        (squareIncrement n - squareAbsoluteMoment n / squareRadius n) =
+      squareRadius n * squareIncrement n - squareAbsoluteMoment n := by
+    field_simp [ne_of_gt hr]
+  linarith
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
