@@ -726,8 +726,9 @@ theorem norm_dirichletVonMangoldt_LSeries_sub_prefix_le
           LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)‖ ≤
       (N : ℝ) ^ (1 - s.re) *
         (Real.log (N : ℝ) / (s.re - 1) + 1 / (s.re - 1) ^ 2) := by
-  rw [dirichletVonMangoldt_LSeries_eq_prefix_add_shifted q N χ s hs]
-  rw [add_sub_cancel_left]
-  exact norm_tsum_dirichletVonMangoldt_shifted_le q N χ s hs hN
+  have hdecomp := dirichletVonMangoldt_LSeries_eq_prefix_add_shifted q N χ s hs
+  have htail := norm_tsum_dirichletVonMangoldt_shifted_le q N χ s hs hN
+  rw [hdecomp]
+  simpa only [add_sub_cancel_left] using htail
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
