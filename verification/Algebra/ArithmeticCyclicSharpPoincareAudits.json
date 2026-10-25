@@ -1,0 +1,84 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-sharp-poincare-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "fdecc4973d56d1b640e240b94d35aa33da9a02f4",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSharpPoincare.lean",
+  "source_blob": "af495b4d2a301b3ecbd4863a862d1c57fcb880c6",
+  "source_sha256": "4ca9d306192c654c77372210b556fda8beb05d73a68e8bf7a4ee7a248c8ba524",
+  "classification": "THIRTEEN_SOURCE_PROOF_CANDIDATES_ZERO_NEW_DEFINITIONS",
+  "native_status": "NOT_RUN",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.base_sine_positive",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.mode_sine_lower_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.nonzero_symbol_lower_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.symbol_at_one",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.cycle_coefficient_positive",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.mean_zero_spectral_sum_lower_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.sharp_cycle_poincare",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.arithmetic_poincare_cycle_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.mode_norm_sq",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.one_mode_mean_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.one_mode_energy",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.unweighted_constant_upper_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.positive_floor_cycle_coefficient"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.arithmetic_poincare_cycle_bound": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (m : ZMod N -> Nat) (_hm : forall i, 2 <= m i) (x : ZMod N -> Complex) (_hx : Finset.sum Finset.univ (fun i => x i) = 0), (Real.log 2 * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) * Finset.sum Finset.univ (fun i => norm (x i) ^ 2) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N m p.1 p.2)).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.base_sine_positive": "forall (N : Nat) [NeZero N] (_hN : 3 <= N), 0 < Real.sin (Real.pi / (N : Real))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.cycle_coefficient_positive": "forall (N : Nat) [NeZero N] (_hN : 3 <= N), 0 < (4 * Real.sin (Real.pi / (N : Real)) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.mean_zero_spectral_sum_lower_bound": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (x : ZMod N -> Complex) (_hx : Finset.sum Finset.univ (fun i => x i) = 0), (4 * Real.sin (Real.pi / (N : Real)) ^ 2) * Finset.sum Finset.univ (fun k => norm (ZMod.dft x k) ^ 2) <= Finset.sum Finset.univ (fun k => (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N k).re * norm (ZMod.dft x k) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.mode_norm_sq": "forall (N : Nat) [NeZero N] (k : ZMod N), Finset.sum Finset.univ (fun i => norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N k i) ^ 2) = (N : Real)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.mode_sine_lower_bound": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (k : ZMod N) (_hk : k ≠ 0), Real.sin (Real.pi / (N : Real)) <= Real.sin (Real.pi * ((k.val : Real) / (N : Real)))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.nonzero_symbol_lower_bound": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (k : ZMod N) (_hk : k ≠ 0), (4 * Real.sin (Real.pi / (N : Real)) ^ 2) <= (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N k).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.one_mode_energy": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (a : Real), (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N)) (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => a) p.1 p.2)).re = (a * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) * Finset.sum Finset.univ (fun i => norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N) i) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.one_mode_mean_zero": "forall (N : Nat) [NeZero N] (_hN : 3 <= N), Finset.sum Finset.univ (fun i => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N) i) = 0",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.positive_floor_cycle_coefficient": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (c : Real) (_hc : 0 < c), 0 < c * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.sharp_cycle_poincare": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (a : ZMod N -> Real) (c : Real) (_hc : 0 <= c) (_ha : forall i, c <= a i) (x : ZMod N -> Complex) (_hx : Finset.sum Finset.univ (fun i => x i) = 0), (c * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) * Finset.sum Finset.univ (fun i => norm (x i) ^ 2) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N a p.1 p.2)).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.symbol_at_one": "forall (N : Nat) [NeZero N] (_hN : 3 <= N), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.cyclicSymbol N (1 : ZMod N)).re = (4 * Real.sin (Real.pi / (N : Real)) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSharpPoincare.unweighted_constant_upper_bound": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (b : Real) (_hb : forall x : ZMod N -> Complex, Finset.sum Finset.univ (fun i => x i) = 0 -> b * Finset.sum Finset.univ (fun i => norm (x i) ^ 2) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => 1) p.1 p.2)).re), b <= (4 * Real.sin (Real.pi / (N : Real)) ^ 2)"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "Every additional private/generated/instance/punctuation root; explicit required names are not a cap.",
+  "scope": [
+    "N>=3 and every nonzero frequency; sine reflection treats both half intervals.",
+    "Every complex mean-zero vector; explicit sum of coordinate norm squares, not Pi sup norm.",
+    "Variable real a with c>=0 and EVERY c<=a_i. The geometric cycle factor is sharp; arbitrary fixed variable-a eigenvalue equality is not claimed.",
+    "Arithmetic EVERY m_i>=2; log2 is a valid floor, not claimed optimal within the arithmetic family.",
+    "First complex character attains the unit-cycle factor; every uniform unit-cycle coefficient is no larger. No real-only/selected-mode restriction on the lower-bound family."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T172223.729513Z/sharp-poincare-registry.json",
+    "registry_sha256": "dec839383c1718fe976a2c0dfff526c7af12f6b72a24cbf348feec06083c8aa1",
+    "project_modules": 16,
+    "upstream_source_modules": 3405,
+    "source_assets": 27,
+    "complete_compiler_origin_audit_contracts": 1,
+    "required_structural_names": 13,
+    "selected_type_expressions": 13,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "all_producer_hashes_match": true,
+    "noe_head": "2a9100cb2293753ea8d31b0f78215d9d76cc96d8",
+    "native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Formal operator spectrum and perturbation comparison.",
+    "Optimal conductance floor in the arithmetic subfamily.",
+    "Infinite-volume, AMO, RH-scale residual and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}
