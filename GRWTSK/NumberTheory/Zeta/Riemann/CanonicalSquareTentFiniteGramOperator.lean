@@ -34,6 +34,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentFiniteGramOperator
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictOperatorMass
+open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 
 /-- The exact source arithmetic Gram, represented by a diagonal linear
@@ -157,5 +158,75 @@ theorem canonicalGramOperator_strict_iff_square_masses (M : ℕ) :
       ∀ i : Fin (M + 1), 0 < squareTentMangoldt (i.1 + 2) := by
   simpa only [coordinatePairing_operator_eq_source, realTargetForm] using
     source_strictly_positive_iff_all_square_masses_positive M
+
+
+/-! ## Exact kernel and injectivity boundary
+
+The finite Gram operator is injective exactly when every represented
+arithmetic window has positive mass. This characterization uses its actual
+kernel and stage coefficients. No positivity beyond the finite coefficient
+space, classical Weil transport, or prime-gap assertion follows.
+-/
+
+/-- A vanishing source window gives a concrete nonzero kernel vector. -/
+theorem canonicalGramOperator_basis_in_kernel_of_zero_mass
+    {M : ℕ} (i : Fin (M + 1))
+    (hzero : squareTentMangoldt (i.1 + 2) = 0) :
+    canonicalGramOperator M (basisCombination i) = 0 := by
+  apply (canonicalGramOperator_eq_zero_iff (basisCombination i)).2
+  intro j
+  by_cases hji : j = i
+  · subst j
+    left
+    rw [arithmeticCrossCoefficient_diag_eq_mangoldt]
+    exact hzero
+  · right
+    exact basisCombination_apply_of_ne hji
+
+/-- Injectivity of the concrete finite operator is exactly positivity
+of all actual arithmetic diagonal coefficients. Nonnegativity is
+already supplied by the source; strict mass estimates are not. -/
+theorem canonicalGramOperator_injective_iff_square_masses_positive (M : ℕ) :
+    Function.Injective (canonicalGramOperator M) ↔
+      ∀ i : Fin (M + 1), 0 < squareTentMangoldt (i.1 + 2) := by
+  constructor
+  · intro hinj i
+    have hcoeff : arithmeticCrossCoefficient i i ≠ 0 := by
+      intro hzero
+      have hmass : squareTentMangoldt (i.1 + 2) = 0 := by
+        rw [← arithmeticCrossCoefficient_diag_eq_mangoldt]
+        exact hzero
+      have hker := canonicalGramOperator_basis_in_kernel_of_zero_mass i hmass
+      have heq : basisCombination i = (0 : Combination M) := by
+        apply hinj
+        simpa only [map_zero] using hker
+      exact basisCombination_ne_zero i heq
+    have hp : 0 < arithmeticCrossCoefficient i i :=
+      lt_of_le_of_ne (arithmeticCrossCoefficient_diag_nonnegative i)
+        (Ne.symm hcoeff)
+    rwa [arithmeticCrossCoefficient_diag_eq_mangoldt] at hp
+  · intro hmass u v huv
+    have hzero : canonicalGramOperator M (u - v) = 0 := by
+      simpa only [map_sub, sub_eq_zero] using huv
+    have hcoord := (canonicalGramOperator_eq_zero_iff (u - v)).mp hzero
+    have hdiff : u - v = 0 := by
+      funext i
+      rcases hcoord i with hweight | hcoordZero
+      · have hp : 0 < arithmeticCrossCoefficient i i := by
+          rw [arithmeticCrossCoefficient_diag_eq_mangoldt]
+          exact hmass i
+        exact (hp.ne' hweight).elim
+      · exact hcoordZero
+    exact sub_eq_zero.mp hdiff
+
+/-- On the actual nonnegative arithmetic Gram, injectivity and
+strict positive definiteness coincide and have the same exact
+square-window mass obstruction. -/
+theorem canonicalGramOperator_injective_iff_strict (M : ℕ) :
+    Function.Injective (canonicalGramOperator M) ↔
+      ∀ u : Combination M, u ≠ 0 →
+        0 < (coordinatePairing u (canonicalGramOperator M u)).re := by
+  exact (canonicalGramOperator_injective_iff_square_masses_positive M).trans
+    (canonicalGramOperator_strict_iff_square_masses M).symm
 
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentFiniteGramOperator
