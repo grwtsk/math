@@ -1,0 +1,113 @@
+# Copyright (c) 2026 grwtsk contributors. MIT.
+# Authored source-bound mathematical verification specification, not an execution receipt.
+schema = "grwtsk-math-replay-target-v1"
+id = "mathematical-diagnostics-v0.1"
+owner_repository = "grwtsk/math"
+root_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnosticsExamples"
+build_target = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnosticsExamples"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+status = "STATIC_SPECIFICATION_ONLY"
+
+[scope]
+kind = "claim-bound-mathematical-diagnostics"
+subject_roots = [
+  "Algebra", "Analysis", "CategoriesAndHomologicalAlgebra",
+  "CombinatoricsAndDiscreteMathematics", "DifferentialEquationsAndDynamicalSystems",
+  "FoundationsLogicAndTypeTheory", "Geometry", "HistoryOfMathematics",
+  "InformationTheory", "MathematicsEducation", "Mechanics", "NumberTheory",
+  "NumericalAnalysis", "Optimization", "ProbabilityAndMathematicalStatistics", "Topology"
+]
+subject_roots_are_scope_not_all_independently_verified = true
+requires_exact_committed_source_inputs = true
+requires_exact_declaration_types = true
+requires_full_transitive_import_closure = true
+requires_fresh_kernel_checking = true
+requires_transitive_axiom_audit = true
+full_public_library_build_required = false
+root_library_import_unchanged = true
+receipt_storage = "grwtsk/noeaaeue"
+
+[source_binding]
+inspected_main_parent = "9c5e3b3367b38082cd9438a319ae1555b6f41034"
+inspected_research_state_blob = "dc3e778e1ddf826e8557036c5c1439e522dfdbe7"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_pin_policy = "A verifier must resolve the actual published commit/tree plus blobs for both newly added modules, this manifest, all transitive imports, toolchain, and lake manifest; inspection parent is not acceptance."
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean"
+status = "NOT_RUN"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnosticsExamples"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnosticsExamples.lean"
+status = "NOT_RUN"
+
+[declarations]
+required_heads = [
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Family",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Descriptor",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.proof_of_hasProof",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.refutation_of_hasRefutation",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.not_both",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.statement_of_hasProof",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_counterexample",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_descriptor_promotion",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_scope_promotion",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_counterexample",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.restricted_true_global_false"
+]
+complete_module_declaration_inventory_required = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_project_added_axioms = true
+require_exact_expected_declaration_types = true
+require_compiler_acceptance = true
+require_kernel_recheck = true
+require_full_transitive_axiom_audit = true
+require_no_new_unsafe_declarations = true
+
+[commands]
+module = "lake env lean -DwarningAsError=true GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean"
+examples = "lake env lean -DwarningAsError=true GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnosticsExamples.lean"
+build = "lake build GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnosticsExamples --wfail"
+kernel = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnosticsExamples.lean"
+axioms = "Use pinned toolchain #print axioms on every explicit theorem in both modules, followed by a transitive dependency audit; external execution and receipts only."
+
+[[hostile_controls]]
+id = "arbitrary-descriptor-promotion"
+declaration = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_descriptor_promotion"
+expected = "A descriptor never uniformly implies every proposition."
+
+[[hostile_controls]]
+id = "scoped-to-global-promotion"
+declaration = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_scope_promotion"
+expected = "One scoped proof does not imply the universally quantified result."
+
+[[hostile_controls]]
+id = "wrong-way-refutation-transfer"
+declaration = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.forward_refutation_does_not_refute_true"
+expected = "A forward implication does not transfer refutation in the wrong direction."
+
+[[hostile_controls]]
+id = "conditional-false-premise"
+declaration = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.conditional_false_is_not_established"
+expected = "A conditional bridge retaining a false premise is not an established proof."
+
+[verification_status]
+source_inspected = true
+source_written = true
+static_preflight = "NOT_RUN"
+lean_compilation = "NOT_RUN"
+elaboration = "NOT_RUN"
+fresh_kernel_check = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+all_checks_passed = false
