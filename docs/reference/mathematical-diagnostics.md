@@ -70,6 +70,42 @@ normalization, or physical-sector completeness still requires its own proof.
 The source declarations remain candidates pending actual Lean elaboration,
 fresh kernel checks, and transitive axiom audit.
 
+## Source-preserving transport between distinct claim types
+
+`CatalogTransport` relates `ResearchState.Catalog` values whose claim-index
+types may differ. It is a **strict same-source reindexing**: for every target
+claim it specifies a source claim, proves equality of the complete recorded
+`SourceIdentity` values (not merely the declaration names), and supplies a
+Lean implication between the two exact `Meaning` propositions. The meaning
+propositions retain the hypotheses of their respective catalogs. The equality
+is a mathematical comparison of source records, not external Git custody.
+
+`CatalogTransport.meaning` consumes the explicit implication.
+`CatalogTransport.forwardStanding` reuses the existing directional
+`Standing.forward` semantics without turning a refuted antecedent into a
+refuted consequent. `CatalogTransport.statement_of_hasProof` additionally
+requires every target hypothesis before exposing the raw target conclusion.
+`CatalogTransport.comp` composes the index maps, recorded identity
+equalities and mathematical implications, retaining the exact intermediate
+catalog rather than inferring a proof from a descriptive graph edge.
+
+The examples instantiate Nat-indexed, Bool-indexed and Unit-indexed catalogs,
+prove the two corresponding transport implications and their composition,
+and check that proof-carrying status transfers. The
+`changed_blob_blocks_source_preserving_transport` negative control gives
+two Unit-indexed catalogs with different recorded Git blob strings (although
+the declaration name is unchanged) and proves no strict `CatalogTransport`
+can exist between them. This does **not** assert a mathematical impossibility
+of relating separately sourced theorems: such a relation instead requires
+its own explicit adapter that preserves both original source identities
+rather than pretending they are equal.
+
+These are generic foundational implications, not a blanket theorem of
+semantic correspondence between arbitrary GRWTSK subject modules.
+Connections to different physical models, mathematical statements, or
+source versions remain separately unresolved. Fresh Lean compilation,
+kernel checking and transitive axiom auditing are pending.
+
 ## Existing structure and validation
 
 This package **extends** rather than replaces `ResearchState.Catalog`,
