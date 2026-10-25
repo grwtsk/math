@@ -11,6 +11,7 @@ Source-reviewed standard additions (proposed; [evidence and limits](proposals/ne
 | Label / canonical page | Persistent identifier |
 | --- | --- |
 | [Closure operator theory](subjects/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/ClosureOperators/index.md) | `urn:uuid:5e8fb445-435f-4c23-bd1a-59bb873fc838` |
+| [Diophantine equations](subjects/NumberTheory/DiophantineEquations/index.md) | `urn:uuid:6c64b305-8ae3-4988-8135-306f0463758a` |
 | [Free group theory](subjects/Algebra/GroupTheory/CombinatorialGroupTheory/FreeGroups/index.md) | `urn:uuid:c0e28762-6b54-4feb-bff3-115f8c63d548` |
 | [Homological algebra](subjects/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/index.md) | `urn:uuid:6df6424d-8992-4247-b777-72df69afe67d` |
 | [Order embedding theory](subjects/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings/index.md) | `urn:uuid:455d5220-1e27-41f9-821a-fae4fa41c4db` |
@@ -181,6 +182,7 @@ Source-signal draft additions (canonical identities; all proposed):
 | [Number-theory addition](proposals/new-concepts/number-theory.md) | `urn:uuid:b3592120-494d-41c9-a967-9dd0c8e653f0` |
 | [Equation/dynamics/mechanics addition](proposals/new-concepts/equations-dynamics-mechanics.md) | `urn:uuid:f7e8b07d-f572-484f-9ed5-cef8e6ee863a` |
 | [Information/coding addition](proposals/new-concepts/information-coding.md) | `urn:uuid:515b8a95-4009-5d30-9037-a039f2c7694a` |
+| [Diophantine equations addition](proposals/new-concepts/diophantine-equations.md) | `urn:uuid:95e63305-e3f6-4f91-a517-6ddd8cb2435f` |
 | [Algebraic structures addition](proposals/new-concepts/algebra-structures.md) | `urn:uuid:c5134679-7a75-4f0d-9aee-4ecd34cc581f` |
 | [Analysis, measure and Fourier addition](proposals/new-concepts/analysis-measure-fourier.md) | `urn:uuid:a2ba1baa-9bc0-4c26-81cf-f964a90e9634` |
 | [Probability/process additions](proposals/new-concepts/probability-processes.md) | `urn:uuid:ef76df22-8a02-56a7-b64a-3c363473c2b1` |
