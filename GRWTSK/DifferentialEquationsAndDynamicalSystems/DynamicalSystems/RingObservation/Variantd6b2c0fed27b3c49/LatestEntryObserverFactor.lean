@@ -16,8 +16,12 @@ Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provid
 
 /- The full/latest dependent observation family and entire latest-entry reducer stay together. Inhabited Entry is retained for both surjectivity cases; none uses a zero-sequence default state and some uses exact push/latestEntry. Local transition and both commuting equations remain whole. Original declaration namespaces and historical providers remain exact; only explicit public same-source component imports are added. Whole-file documentation below may describe companion material. No kernel replay or runtime/platform implementation is claimed. -/
 
-import DAF.Runtime.RingState
-import DAF.Causal.ObserverFactor
+/- Provider binding (2026-10-25): the retained exact ring-state and observer
+reducer components are imported explicitly. Matrix/packet imports below remain
+required and unresolved; no compilation or proof acceptance is asserted. -/
+
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.RingState.Variantb47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1
+import GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.FiniteGraphAndObservationComponents.Variant580cc666770ddb3d.WholeObserverReducerAndCanonicalFactor
 import BitMatrix.Runtime.MatrixRing
 import BitMatrix.Runtime.PacketRing
 
