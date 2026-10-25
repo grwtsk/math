@@ -417,9 +417,10 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
   convert (hpow.mul hinner).neg using 1
   · rw [hpower_split]
     have htne : t ≠ 0 := ne_of_gt ht
+    have htpow : t ^ σ ≠ 0 := ne_of_gt (Real.rpow_pos_of_pos ht σ)
     have hpowneg : t ^ (-σ) = (t ^ σ)⁻¹ := Real.rpow_neg ht.le σ
     rw [hpowneg]
-    field_simp
+    field_simp [hden, htne, htpow]
     ring
   · rfl
 
