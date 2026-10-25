@@ -253,4 +253,62 @@ def CatalogTransport.comp {A B C : Type}
     exact second.preservesMeaning claim
       (first.preservesMeaning (second.reindex claim) sourceProof)
 
+/-- A cross-source comparison retains both recorded source identities.
+Unlike CatalogTransport, it does not assert that those identities coincide.
+The semantic implication is an independent mathematical supplier. -/
+structure CrossSourceComparison {SourceClaim TargetClaim : Type}
+    (sourceCatalog : Catalog SourceClaim) (targetCatalog : Catalog TargetClaim) where
+  reindex : TargetClaim → SourceClaim
+  sourceIdentity : TargetClaim → SourceIdentity :=
+    fun targetClaim => sourceCatalog.source (reindex targetClaim)
+  targetIdentity : TargetClaim → SourceIdentity :=
+    targetCatalog.source
+  sourceBound : ∀ targetClaim,
+    sourceIdentity targetClaim = sourceCatalog.source (reindex targetClaim)
+  targetBound : ∀ targetClaim,
+    targetIdentity targetClaim = targetCatalog.source targetClaim
+  preservesMeaning : ∀ targetClaim,
+    Meaning sourceCatalog (reindex targetClaim) → Meaning targetCatalog targetClaim
+
+/-- A source comparison transfers a theorem only through its explicit
+mathematical implication, not through a source-identity equality. -/
+theorem CrossSourceComparison.meaning {A B : Type}
+    {sourceCatalog : Catalog A} {targetCatalog : Catalog B}
+    (comparison : CrossSourceComparison sourceCatalog targetCatalog)
+    (claim : B)
+    (sourceProof : Meaning sourceCatalog (comparison.reindex claim)) :
+    Meaning targetCatalog claim :=
+  comparison.preservesMeaning claim sourceProof
+
+/-- Status transfer retains conditional obligations and cannot propagate a
+refutation in the wrong direction. -/
+def CrossSourceComparison.forwardStanding {A B : Type}
+    {sourceCatalog : Catalog A} {targetCatalog : Catalog B}
+    (comparison : CrossSourceComparison sourceCatalog targetCatalog)
+    (claim : B)
+    (standing : Standing (Meaning sourceCatalog (comparison.reindex claim))) :
+    Standing (Meaning targetCatalog claim) :=
+  Standing.forward (comparison.preservesMeaning claim) standing
+
+/-- The target's contextual hypotheses must still be discharged. -/
+theorem CrossSourceComparison.statement {A B : Type}
+    {sourceCatalog : Catalog A} {targetCatalog : Catalog B}
+    (comparison : CrossSourceComparison sourceCatalog targetCatalog)
+    (claim : B)
+    (sourceProof : Meaning sourceCatalog (comparison.reindex claim))
+    (targetHypotheses : ∀ h ∈ targetCatalog.hypotheses claim, h) :
+    targetCatalog.statement claim :=
+  (comparison.meaning claim sourceProof) targetHypotheses
+
+/-- Strict same-source transport specializes to a comparison which retains
+both source records. The reverse direction is not automatic. -/
+def CatalogTransport.asCrossSourceComparison {A B : Type}
+    {sourceCatalog : Catalog A} {targetCatalog : Catalog B}
+    (transport : CatalogTransport sourceCatalog targetCatalog) :
+    CrossSourceComparison sourceCatalog targetCatalog where
+  reindex := transport.reindex
+  sourceBound := by intro _; rfl
+  targetBound := by intro _; rfl
+  preservesMeaning := transport.preservesMeaning
+
 end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics
