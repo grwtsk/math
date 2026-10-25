@@ -503,6 +503,30 @@ theorem canonicalEuclideanGramOperator_norm_le_iff_moment_lower
     simpa only [arithmeticCrossCoefficient_diag_eq_mangoldt,
       Complex.norm_real, Real.norm_of_nonneg hnonneg] using ht
 
+/-- The complete family of finite Euclidean Gram operators is
+bounded by C EXACTLY when every genuine source square window n >= 2
+has sufficient centered first absolute moment to cancel all but C
+of its full interval mass. This theorem does NOT supply such a C. -/
+theorem uniform_operator_norm_bound_iff_global_moment_lower
+    (C : ℝ) (hC : 0 ≤ C) :
+    (∀ M : ℕ, ‖canonicalEuclideanGramOperator M‖ ≤ C) ↔
+      ∀ n : ℕ, 2 ≤ n →
+        (squareIncrement n - C) * squareRadius n ≤
+          squareAbsoluteMoment n := by
+  constructor
+  · intro h M hM
+    have hbound :=
+      (canonicalEuclideanGramOperator_norm_le_iff_moment_lower
+        (M - 2) C hC).mp (h (M - 2))
+    have hidx : M - 2 + 2 = M := by omega
+    simpa only [Fin.val_mk, hidx] using
+      hbound ⟨M - 2, Nat.lt_succ_self (M - 2)⟩
+  · intro h M
+    apply (canonicalEuclideanGramOperator_norm_le_iff_moment_lower
+      M C hC).mpr
+    intro i
+    exact h (i.1 + 2) (by omega)
+
 /-- Exact strict first-moment criterion for injectivity of the
 SOURCE finite Gram. Neither direction assumes arithmetic positivity
 beyond the coefficients already proved nonnegative in the source. -/
