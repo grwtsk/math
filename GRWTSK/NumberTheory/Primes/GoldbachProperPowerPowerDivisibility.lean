@@ -1,5 +1,4 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
-import GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeSupport
 import Mathlib.Tactic
 
 /-!
