@@ -9,7 +9,6 @@
   "source_sha256": "f7bf4b95a87303bf301977275d57559144a0acce6097d593aa360941223a393f",
   "original_request_commit": "dcf80faa32e22bc10bf32b943329a9dede872b25",
   "original_gap_source_blob": "d174d5dc02bcc50a55c913a7219249d2ed08058a",
-  "original_source_whole_bytes_preserved_before_appended_section": true,
   "required_module_declarations": [
     "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.eigenvalue_lower_of_complementary_masks",
     "GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.Model.heat_gap_contracts_of_complementary_masks",
@@ -95,5 +94,7 @@
     "Exact comparison of the auxiliary Model to any physical, gauge-invariant, infinite or continuum operator and its full excitation sector.",
     "Lattice-uniform bounds and continuum reconstruction."
   ],
-  "issue_state": "OPEN"
+  "issue_state": "OPEN",
+  "removing_inserted_section_restores_original_whole_module": true,
+  "additional_native_gate_outside_prepared_closure": "FiniteSpectralResolvent source compilation requested by #1306 remains required and is NOT included in this seven-project prepared closure."
 }
