@@ -179,4 +179,78 @@ theorem scoped_transfer {α : Type}
   intro x inTarget
   exact propertySupplier x inTarget (sourceProof x (domainSupplier x inTarget))
 
+/-!
+## Exact-source, cross-catalog claim transport
+
+An indexed catalog transport is not a name-based identification. Each target
+claim selects an exact source claim, proves equality of the *recorded* source
+identities, and supplies the actual implication between their contextual
+meanings. This is a deliberately strict same-source reindexing interface;
+comparisons between different source identities need a separate, explicit
+mathematical adapter. Recorded identity equality is not Git authentication.
+-/
+
+/-- A proof-producing reindexing between catalogs with potentially different
+claim types. Every target claim has a source claim, literal recorded source
+identity equality, and a theorem preserving the complete contextual meaning. -/
+structure CatalogTransport {SourceClaim TargetClaim : Type}
+    (sourceCatalog : Catalog SourceClaim) (targetCatalog : Catalog TargetClaim) where
+  reindex : TargetClaim → SourceClaim
+  sourceIdentity : ∀ targetClaim,
+    sourceCatalog.source (reindex targetClaim) = targetCatalog.source targetClaim
+  preservesMeaning : ∀ targetClaim,
+    Meaning sourceCatalog (reindex targetClaim) → Meaning targetCatalog targetClaim
+
+/-- A transported contextual theorem is justified by the explicit source
+claim implication; a matching source name or blob string alone is insufficient. -/
+theorem CatalogTransport.meaning {SourceClaim TargetClaim : Type}
+    {sourceCatalog : Catalog SourceClaim} {targetCatalog : Catalog TargetClaim}
+    (transport : CatalogTransport sourceCatalog targetCatalog)
+    (targetClaim : TargetClaim)
+    (sourceProof : Meaning sourceCatalog (transport.reindex targetClaim)) :
+    Meaning targetCatalog targetClaim :=
+  transport.preservesMeaning targetClaim sourceProof
+
+/-- Existing proof/refutation status carries forward using the established
+directional semantics of Standing.forward. A refuted antecedent is not enough
+to refute the consequent, and a conditional premise is not discharged. -/
+def CatalogTransport.forwardStanding {SourceClaim TargetClaim : Type}
+    {sourceCatalog : Catalog SourceClaim} {targetCatalog : Catalog TargetClaim}
+    (transport : CatalogTransport sourceCatalog targetCatalog)
+    (targetClaim : TargetClaim)
+    (standing : Standing (Meaning sourceCatalog (transport.reindex targetClaim))) :
+    Standing (Meaning targetCatalog targetClaim) :=
+  Standing.forward (transport.preservesMeaning targetClaim) standing
+
+/-- Even after a source-bound transport has produced the target contextual
+theorem, obtaining the raw target conclusion requires every target hypothesis. -/
+theorem CatalogTransport.statement_of_hasProof {SourceClaim TargetClaim : Type}
+    {sourceCatalog : Catalog SourceClaim} {targetCatalog : Catalog TargetClaim}
+    (transport : CatalogTransport sourceCatalog targetCatalog)
+    (targetClaim : TargetClaim)
+    (standing : Standing (Meaning sourceCatalog (transport.reindex targetClaim)))
+    (accepted : standing.hasProof = true)
+    (hypotheses : ∀ h ∈ targetCatalog.hypotheses targetClaim, h) :
+    targetCatalog.statement targetClaim :=
+  (transport.meaning targetClaim (standing.proof_of_hasProof accepted)) hypotheses
+
+/-- Compose cross-catalog transports without changing the recorded endpoints.
+The intermediate source equality and mathematical implication are both
+explicitly consumed; no inference is made from a descriptive graph edge. -/
+def CatalogTransport.comp {A B C : Type}
+    {firstCatalog : Catalog A} {middleCatalog : Catalog B}
+    {lastCatalog : Catalog C}
+    (first : CatalogTransport firstCatalog middleCatalog)
+    (second : CatalogTransport middleCatalog lastCatalog) :
+    CatalogTransport firstCatalog lastCatalog where
+  reindex := fun claim => first.reindex (second.reindex claim)
+  sourceIdentity := by
+    intro claim
+    exact (first.sourceIdentity (second.reindex claim)).trans
+      (second.sourceIdentity claim)
+  preservesMeaning := by
+    intro claim sourceProof
+    exact second.preservesMeaning claim
+      (first.preservesMeaning (second.reindex claim) sourceProof)
+
 end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics
