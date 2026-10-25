@@ -705,4 +705,20 @@ theorem dirichletVonMangoldt_LSeries_eq_prefix_add_shifted
   intro k
   exact dirichletVonMangoldt_LSeries_term_pos q (k + N + 1) χ s (by omega)
 
+
+/-- Explicit finite-prefix truncation error for the actual Mathlib
+von Mangoldt–Dirichlet L-series in its absolute convergence region.
+This is not a cancellation or analytic-continuation statement. -/
+theorem norm_dirichletVonMangoldt_LSeries_sub_prefix_le
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (s : ℂ) (hs : 1 < s.re) (hN : 3 ≤ N) :
+    ‖LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+        (∑ n ∈ Finset.range (N + 1),
+          LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)‖ ≤
+      (N : ℝ) ^ (1 - s.re) *
+        (Real.log (N : ℝ) / (s.re - 1) + 1 / (s.re - 1) ^ 2) := by
+  rw [dirichletVonMangoldt_LSeries_eq_prefix_add_shifted q N χ s hs]
+  rw [add_sub_cancel_left]
+  exact norm_tsum_dirichletVonMangoldt_shifted_le q N χ s hs hN
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
