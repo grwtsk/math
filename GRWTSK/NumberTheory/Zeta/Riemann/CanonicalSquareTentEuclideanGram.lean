@@ -221,7 +221,7 @@ moment divided by the source radius, not a fitted error allowance. -/
 theorem squareWeightLoss_eq_absoluteMoment_div_radius (n : ℕ) :
     squareWeightLoss n = squareAbsoluteMoment n / squareRadius n := by
   unfold squareWeightLoss squareAbsoluteMoment
-  rw [← Finset.sum_div]
+  rw [Finset.sum_div]
   apply Finset.sum_congr rfl
   intro m hm
   rw [squareWeight_eq_one_sub_abs_div_radius n m hm]
