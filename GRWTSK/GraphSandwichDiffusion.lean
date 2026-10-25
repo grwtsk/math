@@ -1,21 +1,44 @@
-/-!
-Graph Sandwich spectral diffusion: finite process interface.
-This file defines search-graph data and conditional comparison, not a new analytic theorem.
-Paper-derived interfaces: Kim–Vu (2004), Nechaev–Polovnikov (2017),
-Sawin–Shusterman (2019), Bombieri (Riemann Hypothesis survey).
-Verification: NOT_RUN. No claim of kernel acceptance.
--/
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Local mathematical attribution: grwtsk contributors.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+
 import Mathlib
+import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich
 import GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
+
+set_option autoImplicit false
+
+/-!
+# Search-led Graph Sandwich diffusion interfaces
+
+This module keeps candidate search relationships separate from certified
+mathematical consequences.  It reuses the repository's deterministic
+`RelationSandwich.Sandwich`, the Farey sofic interfaces, and explicit finite
+search depth.  Paper-derived edges carry source identities, assumptions, open
+proof obligations, and separate verification dimensions.
+
+The current bounded increment constructs the source inventory, graph-sandwich
+adapter, deterministic finite traversal, search soundness, relative
+completeness, and negative controls.  It does not yet construct graph
+Laplacians, heat semigroups, a complete finite spectral tensor, a function-field
+Chowla supplier in Lean, or the proposed `a ≤ 1 / 2` compression supplier.
+
+SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+universe u
 
 namespace GRWTSK.GraphSandwichDiffusion
 
+open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich
+
+/-- A labeled directed graph surface retained for the existing sofic adapter. -/
 structure FiniteSearchGraph (Vertex Label : Type) where
   edge : Vertex → Vertex → Prop
   label : Vertex → Vertex → Label → Prop
 
-/- A finite searchable universe is explicit; completeness is relative to this inventory,
-   not to all mathematical propositions. -/
+/-- Legacy labeled candidate/certified inventory.  The source-bound inventory
+below adds admissible relations, provenance, semantics, and executable scope. -/
 structure SearchInventory (Vertex Label : Type) where
   vertices : List Vertex
   labels : List Label
@@ -34,8 +57,8 @@ theorem certified_is_candidate {V L : Type} (s : SearchInventory V L)
   rcases h with ⟨l, hl⟩
   exact ⟨l, s.certified_candidate u v l hl⟩
 
-/- Labeled finite walks are proof-carrying paths, independent of probabilistic
-   or arithmetic cancellation claims. -/
+/-- Labeled finite walks are proof-carrying paths, independent of probabilistic
+or arithmetic cancellation claims. -/
 inductive LabeledWalk {V L : Type} (edge : V → V → L → Prop) :
     V → V → Type where
   | nil (v : V) : LabeledWalk edge v v
@@ -54,9 +77,8 @@ def certifiedWalkToCandidate {V L : Type} (s : SearchInventory V L)
     LabeledWalk s.candidate u v :=
   LabeledWalk.map s.certified_candidate walk
 
-/- Existing repository sofic presentation is the source of graph edges.
-   This adapter changes argument order only; it does not assert spectral
-   completeness, analytic estimates, or a new Chowla theorem. -/
+/-- Existing repository sofic presentation is the source of graph edges.
+This adapter changes argument order only. -/
 def fromSoficGraph {V L : Type} [Fintype V] [Fintype L]
     (g : GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SoficGraph V L) :
     FiniteSearchGraph V L where
@@ -69,21 +91,21 @@ theorem fromSoficGraph_label_edge {V L : Type} [Fintype V] [Fintype L]
     (fromSoficGraph g).edge u v :=
   ⟨l, h⟩
 
-structure GraphSandwich (Vertex : Type) where
-  lower : Vertex → Vertex → Prop
-  middle : Vertex → Vertex → Prop
-  upper : Vertex → Vertex → Prop
-  lower_le_middle : ∀ u v, lower u v → middle u v
-  middle_le_upper : ∀ u v, middle u v → upper u v
+/-- Compatibility name for the canonical repository relation sandwich. -/
+abbrev GraphSandwich (Vertex : Type) := Sandwich Vertex
 
+/-- The existing compatibility theorem now delegates to the canonical module. -/
 theorem lower_le_upper {V : Type} (s : GraphSandwich V) (u v : V)
     (h : s.lower u v) : s.upper u v :=
-  s.middle_le_upper u v (s.lower_le_middle u v h)
+  Sandwich.lower_le_upper s h
 
+/-- Height metadata only.  No zeta-zero interpretation is inferred. -/
 structure SpectralHeight (Vertex : Type) where
   height : Vertex → ℕ
   diffusionWeight : Vertex → Vertex → ℝ
 
+/-- The stronger compression inequality is input data, not a consequence of
+`original_le`. -/
 structure CompressionCertificate where
   original : ℚ
   compressed : ℚ
@@ -94,5 +116,882 @@ structure CompressionCertificate where
 theorem compression_bound (c : CompressionCertificate) :
     3 / 4 + c.compressed ≤ (5 / 4 : ℚ) := by
   linarith [c.compressed_le]
+
+/-- Mathematical status of a source-grounded relationship. -/
+inductive RelationshipClass where
+  | verifiedImplication
+  | structuralCorrespondence
+  | conditionalInterface
+  | finiteEvidence
+  | analogy
+  | unresolvedSupplier
+  deriving DecidableEq, Repr
+
+/-- Kind of source supplying a vertex or relationship. -/
+inductive SourceKind where
+  | leanDeclaration
+  | arXiv
+  | doi
+  | stableUrl
+  | unresolved
+  deriving DecidableEq, Repr
+
+/-- Exact source identity.  Repository fields are populated for Lean sources. -/
+structure SourceIdentity where
+  kind : SourceKind
+  identifier : String
+  locator : String
+  repository : Option String
+  commit : Option String
+  path : Option String
+  blob : Option String
+  deriving Repr
+
+/-- Verification dimensions are separate; source inspection is not compilation,
+kernel acceptance, an axiom audit, or completion of an analytic supplier. -/
+structure VerificationStatus where
+  sourceInspected : Bool
+  compiled : Bool
+  kernelAccepted : Bool
+  axiomAudited : Bool
+  supplierComplete : Bool
+  deriving Repr
+
+/-- Provenance and obligations for one directed relationship.  The source and
+target are type parameters, so a record cannot silently describe another edge. -/
+structure RelationshipRecord {V : Type u} (source target : V) where
+  relationship : RelationshipClass
+  mathematicalMeaning : String
+  provenance : List SourceIdentity
+  assumptions : List String
+  obligations : List String
+  verification : VerificationStatus
+  deriving Repr
+
+/-- A finite, source-bound graph sandwich with a separately declared semantic
+relation.  The lower relation is certified only through `certified_sound`. -/
+structure SourceSearchInventory (V : Type u) [DecidableEq V] where
+  vertices : Finset V
+  certified : EdgeRelation V
+  candidate : EdgeRelation V
+  admissible : EdgeRelation V
+  semantic : EdgeRelation V
+  certified_le_candidate : Subrelation certified candidate
+  candidate_le_admissible : Subrelation candidate admissible
+  admissible_scoped :
+    ∀ ⦃source target : V⦄, admissible source target →
+      source ∈ vertices ∧ target ∈ vertices
+  certified_sound : Subrelation certified semantic
+  candidateRecord :
+    ∀ ⦃source target : V⦄, candidate source target →
+      RelationshipRecord source target
+  admissibleRecord :
+    ∀ ⦃source target : V⦄, admissible source target →
+      RelationshipRecord source target
+
+variable {V : Type u} [DecidableEq V]
+
+/-- Candidate edges are confined to the same declared finite inventory. -/
+theorem SourceSearchInventory.candidate_scoped (inventory : SourceSearchInventory V) :
+    ∀ ⦃source target : V⦄, inventory.candidate source target →
+      source ∈ inventory.vertices ∧ target ∈ inventory.vertices := by
+  intro source target edge
+  exact inventory.admissible_scoped (inventory.candidate_le_admissible edge)
+
+/-- The search inventory reuses the repository's exact relation sandwich. -/
+def SourceSearchInventory.graphSandwich (inventory : SourceSearchInventory V) : Sandwich V where
+  lower := inventory.certified
+  middle := inventory.candidate
+  upper := inventory.admissible
+  lower_le_middle := inventory.certified_le_candidate
+  middle_le_upper := inventory.candidate_le_admissible
+
+/-- A path with an exact edge count.  Length zero is included so bounded search
+returns its source when the source lies in scope. -/
+inductive BoundedPath (edge : EdgeRelation V) : Nat → V → V → Prop
+  | refl (vertex : V) : BoundedPath edge 0 vertex vertex
+  | tail {length : Nat} {source middle target : V} :
+      BoundedPath edge length source middle →
+      edge middle target →
+      BoundedPath edge (length + 1) source target
+
+/-- Exact-length paths transport upward along relation inclusion. -/
+def BoundedPath.mono {lower upper : EdgeRelation V}
+    (included : Subrelation lower upper)
+    {length : Nat} {source target : V}
+    (path : BoundedPath lower length source target) :
+    BoundedPath upper length source target := by
+  induction path with
+  | refl vertex => exact BoundedPath.refl vertex
+  | tail path edge inductionHypothesis =>
+      exact BoundedPath.tail inductionHypothesis (included edge)
+
+/-- A bounded path of individually sound edges is semantically sound when the
+semantic relation is reflexive and transitive. -/
+theorem BoundedPath.semantic
+    {edge semantic : EdgeRelation V}
+    (edgeSound : Subrelation edge semantic)
+    (semanticRefl : ∀ vertex, semantic vertex vertex)
+    (semanticTrans :
+      ∀ ⦃source middle target : V⦄,
+        semantic source middle → semantic middle target → semantic source target)
+    {length : Nat} {source target : V}
+    (path : BoundedPath edge length source target) :
+    semantic source target := by
+  induction path with
+  | refl vertex => exact semanticRefl vertex
+  | tail path edge inductionHypothesis =>
+      exact semanticTrans inductionHypothesis (edgeSound edge)
+
+/-- One deterministic finite-state expansion step inside `scope`. -/
+noncomputable def successors
+    (scope : Finset V) (edge : EdgeRelation V) (frontier : Finset V) : Finset V := by
+  classical
+  exact scope.filter (fun target => ∃ source ∈ frontier, edge source target)
+
+@[simp]
+theorem mem_successors
+    (scope : Finset V) (edge : EdgeRelation V) (frontier : Finset V) (target : V) :
+    target ∈ successors scope edge frontier ↔
+      target ∈ scope ∧ ∃ source ∈ frontier, edge source target := by
+  classical
+  simp [successors]
+
+/-- Deterministic traversal through all paths of length at most `depth`. -/
+noncomputable def reachableWithin
+    (scope : Finset V) (edge : EdgeRelation V) (source : V) : Nat → Finset V
+  | 0 => if source ∈ scope then {source} else ∅
+  | depth + 1 =>
+      let previous := reachableWithin scope edge source depth
+      previous ∪ successors scope edge previous
+
+@[simp]
+theorem mem_reachableWithin_zero
+    (scope : Finset V) (edge : EdgeRelation V) (source target : V) :
+    target ∈ reachableWithin scope edge source 0 ↔
+      source ∈ scope ∧ target = source := by
+  classical
+  by_cases sourceIn : source ∈ scope <;>
+    simp [reachableWithin, sourceIn]
+
+@[simp]
+theorem mem_reachableWithin_succ
+    (scope : Finset V) (edge : EdgeRelation V)
+    (source target : V) (depth : Nat) :
+    target ∈ reachableWithin scope edge source (depth + 1) ↔
+      target ∈ reachableWithin scope edge source depth ∨
+        (target ∈ scope ∧
+          ∃ middle ∈ reachableWithin scope edge source depth,
+            edge middle target) := by
+  classical
+  simp [reachableWithin, successors]
+
+/-- Increasing the depth by one cannot remove a result. -/
+theorem reachableWithin_subset_succ
+    (scope : Finset V) (edge : EdgeRelation V) (source : V) (depth : Nat) :
+    reachableWithin scope edge source depth ⊆
+      reachableWithin scope edge source (depth + 1) := by
+  intro target member
+  exact (mem_reachableWithin_succ scope edge source target depth).2 (Or.inl member)
+
+/-- Bounded search is monotone in its finite depth. -/
+theorem reachableWithin_mono
+    (scope : Finset V) (edge : EdgeRelation V) (source : V)
+    {smaller larger : Nat} (depthLe : smaller ≤ larger) :
+    reachableWithin scope edge source smaller ⊆
+      reachableWithin scope edge source larger := by
+  induction larger with
+  | zero =>
+      have smallerZero : smaller = 0 := Nat.eq_zero_of_le_zero depthLe
+      subst smaller
+      exact fun _ member => member
+  | succ larger inductionHypothesis =>
+      rcases Nat.eq_or_lt_of_le depthLe with rfl | strict
+      · exact fun _ member => member
+      · have smallerLe : smaller ≤ larger := Nat.le_of_lt_succ strict
+        intro target member
+        exact reachableWithin_subset_succ scope edge source larger
+          (inductionHypothesis smallerLe member)
+
+/-- Every returned target has an exact bounded path certificate. -/
+theorem exists_boundedPath_of_mem_reachableWithin
+    (scope : Finset V) (edge : EdgeRelation V)
+    (source target : V) (depth : Nat)
+    (member : target ∈ reachableWithin scope edge source depth) :
+    ∃ length ≤ depth, BoundedPath edge length source target := by
+  induction depth generalizing target with
+  | zero =>
+      rcases (mem_reachableWithin_zero scope edge source target).1 member with
+        ⟨_, rfl⟩
+      exact ⟨0, Nat.le_refl 0, BoundedPath.refl source⟩
+  | succ depth inductionHypothesis =>
+      rcases (mem_reachableWithin_succ scope edge source target depth).1 member with
+        previous | ⟨_, middle, middleMember, edgeStep⟩
+      · rcases inductionHypothesis target previous with
+          ⟨length, lengthLe, path⟩
+        exact ⟨length, Nat.le_trans lengthLe (Nat.le_succ depth), path⟩
+      · rcases inductionHypothesis middle middleMember with
+          ⟨length, lengthLe, path⟩
+        exact ⟨length + 1, Nat.succ_le_succ lengthLe,
+          BoundedPath.tail path edgeStep⟩
+
+/-- An in-scope exact path appears at its exact length. -/
+theorem BoundedPath.mem_reachableWithin
+    (scope : Finset V) (edge : EdgeRelation V)
+    {length : Nat} {source target : V}
+    (sourceIn : source ∈ scope)
+    (edgeScoped :
+      ∀ ⦃u v : V⦄, edge u v → u ∈ scope ∧ v ∈ scope)
+    (path : BoundedPath edge length source target) :
+    target ∈ reachableWithin scope edge source length := by
+  induction path with
+  | refl vertex =>
+      exact (mem_reachableWithin_zero scope edge vertex vertex).2
+        ⟨sourceIn, rfl⟩
+  | @tail length source middle target path edgeStep inductionHypothesis =>
+      exact (mem_reachableWithin_succ scope edge source target length).2
+        (Or.inr
+          ⟨(edgeScoped edgeStep).2, middle, inductionHypothesis, edgeStep⟩)
+
+/-- Relative completeness: the deterministic traversal returns exactly the
+in-scope paths whose length is at most the declared depth. -/
+theorem mem_reachableWithin_iff
+    (scope : Finset V) (edge : EdgeRelation V)
+    (source target : V) (depth : Nat)
+    (sourceIn : source ∈ scope)
+    (edgeScoped :
+      ∀ ⦃u v : V⦄, edge u v → u ∈ scope ∧ v ∈ scope) :
+    target ∈ reachableWithin scope edge source depth ↔
+      ∃ length ≤ depth, BoundedPath edge length source target := by
+  constructor
+  · exact exists_boundedPath_of_mem_reachableWithin scope edge source target depth
+  · rintro ⟨length, lengthLe, path⟩
+    exact reachableWithin_mono scope edge source lengthLe
+      (BoundedPath.mem_reachableWithin scope edge sourceIn edgeScoped path)
+
+/-- Certified search uses only the lower graph. -/
+noncomputable def SourceSearchInventory.certifiedSearch
+    (inventory : SourceSearchInventory V) (source : V) (depth : Nat) : Finset V :=
+  reachableWithin inventory.vertices inventory.certified source depth
+
+/-- Candidate search exposes source-grounded possibilities, including unresolved
+bridges, without certifying their semantics. -/
+noncomputable def SourceSearchInventory.candidateSearch
+    (inventory : SourceSearchInventory V) (source : V) (depth : Nat) : Finset V :=
+  reachableWithin inventory.vertices inventory.candidate source depth
+
+/-- Certified search results have a semantic proof. -/
+theorem SourceSearchInventory.certifiedSearch_sound
+    (inventory : SourceSearchInventory V)
+    (semanticRefl : ∀ vertex, inventory.semantic vertex vertex)
+    (semanticTrans :
+      ∀ ⦃source middle target : V⦄,
+        inventory.semantic source middle →
+        inventory.semantic middle target →
+        inventory.semantic source target)
+    (source target : V) (depth : Nat)
+    (member : target ∈ inventory.certifiedSearch source depth) :
+    inventory.semantic source target := by
+  rcases exists_boundedPath_of_mem_reachableWithin
+      inventory.vertices inventory.certified source target depth member with
+    ⟨_, _, path⟩
+  exact BoundedPath.semantic inventory.certified_sound semanticRefl semanticTrans path
+
+/-- Candidate search is relatively complete for the declared finite inventory. -/
+theorem SourceSearchInventory.mem_candidateSearch_iff
+    (inventory : SourceSearchInventory V)
+    (source target : V) (depth : Nat)
+    (sourceIn : source ∈ inventory.vertices) :
+    target ∈ inventory.candidateSearch source depth ↔
+      ∃ length ≤ depth,
+        BoundedPath inventory.candidate length source target :=
+  mem_reachableWithin_iff
+    inventory.vertices inventory.candidate source target depth
+    sourceIn inventory.candidate_scoped
+
+/-- Every candidate result transports to an admissible path, but not to a
+semantic consequence. -/
+theorem SourceSearchInventory.candidateSearch_has_admissiblePath
+    (inventory : SourceSearchInventory V)
+    (source target : V) (depth : Nat)
+    (member : target ∈ inventory.candidateSearch source depth) :
+    ∃ length ≤ depth,
+      BoundedPath inventory.admissible length source target := by
+  rcases exists_boundedPath_of_mem_reachableWithin
+      inventory.vertices inventory.candidate source target depth member with
+    ⟨length, lengthLe, path⟩
+  exact ⟨length, lengthLe,
+    BoundedPath.mono inventory.candidate_le_admissible path⟩
+
+/-- An admissible edge not yet represented in the candidate graph is an explicit
+coverage obligation. -/
+def MissingCandidateEdge (inventory : SourceSearchInventory V) (source target : V) : Prop :=
+  inventory.admissible source target ∧ ¬ inventory.candidate source target
+
+/-- Completion means candidate coverage of the declared admissible relation.
+It does not mean that every admissible edge is certified or semantically valid. -/
+def CandidateComplete (inventory : SourceSearchInventory V) : Prop :=
+  Subrelation inventory.admissible inventory.candidate
+
+/-- Candidate completion is exactly the absence of a missing admissible edge. -/
+theorem candidateComplete_iff_no_missing (inventory : SourceSearchInventory V) :
+    CandidateComplete inventory ↔
+      ∀ source target, ¬ MissingCandidateEdge inventory source target := by
+  constructor
+  · intro complete source target missing
+    exact missing.2 (complete missing.1)
+  · intro noMissing source target admissible
+    by_contra notCandidate
+    exact noMissing source target ⟨admissible, notCandidate⟩
+
+/-- Under completion the candidate and admissible relations agree.  No theorem
+here promotes either relation to `certified`. -/
+theorem candidate_eq_admissible_of_complete
+    (inventory : SourceSearchInventory V) (complete : CandidateComplete inventory) :
+    inventory.candidate = inventory.admissible := by
+  funext source target
+  apply propext
+  constructor
+  · exact inventory.candidate_le_admissible
+  · exact complete
+
+/-! ## Concrete bounded seed inventory -/
+
+/-- Concepts included in the first finite source inventory. -/
+inductive SeedConcept where
+  | thomaeFunction
+  | linearChainSpectrum
+  | fareyStructure
+  | dedekindEtaRegularization
+  | lifshitzLocalization
+  | zetaZeros
+  | criticalStripCriterion
+  | explicitFormula
+  | spectralOperatorAnalogy
+  | randomGraphCoupling
+  | lowerRandomContainment
+  | upperRandomDefect
+  | monotonePropertyTransfer
+  | functionFieldMobius
+  | dirichletCharacterProxy
+  | chowlaCorrelation
+  | primeLevelOfDistribution
+  | relationSandwich
+  | soficPresentation
+  | informationLossBoundary
+  | quadraticThresholdDescent
+  | arithmeticWalkObservation
+  | heightIndexedDiffusion
+  | compressionParameterA
+  | searchInventory
+  deriving DecidableEq, Fintype, Repr
+
+/-- Curated source-grounded relationships in the initial candidate graph. -/
+inductive SeedPaperEdge where
+  | spectrumToThomae
+  | spectrumToFarey
+  | thomaeToDedekindEta
+  | spectrumToLifshitz
+  | fareyToSofic
+  | zerosToCriticalStrip
+  | zerosToExplicitFormula
+  | zerosToSpectralAnalogy
+  | spectralAnalogyToDiffusion
+  | couplingToLowerContainment
+  | couplingToUpperDefect
+  | couplingToMonotoneTransfer
+  | lowerContainmentToSandwich
+  | upperDefectToSandwich
+  | mobiusToCharacterProxy
+  | characterProxyToChowla
+  | chowlaToWalkObservation
+  | mobiusToPrimeDistribution
+  | walkObservationToSofic
+  | soficToInformationBoundary
+  | soficToDiffusion
+  | thresholdToCompressionQuestion
+  deriving DecidableEq, Fintype, Repr
+
+/-- Source of each curated candidate edge. -/
+def seedPaperEdgeSource : SeedPaperEdge → SeedConcept
+  | .spectrumToThomae => .linearChainSpectrum
+  | .spectrumToFarey => .linearChainSpectrum
+  | .thomaeToDedekindEta => .thomaeFunction
+  | .spectrumToLifshitz => .linearChainSpectrum
+  | .fareyToSofic => .fareyStructure
+  | .zerosToCriticalStrip => .zetaZeros
+  | .zerosToExplicitFormula => .zetaZeros
+  | .zerosToSpectralAnalogy => .zetaZeros
+  | .spectralAnalogyToDiffusion => .spectralOperatorAnalogy
+  | .couplingToLowerContainment => .randomGraphCoupling
+  | .couplingToUpperDefect => .randomGraphCoupling
+  | .couplingToMonotoneTransfer => .randomGraphCoupling
+  | .lowerContainmentToSandwich => .lowerRandomContainment
+  | .upperDefectToSandwich => .upperRandomDefect
+  | .mobiusToCharacterProxy => .functionFieldMobius
+  | .characterProxyToChowla => .dirichletCharacterProxy
+  | .chowlaToWalkObservation => .chowlaCorrelation
+  | .mobiusToPrimeDistribution => .functionFieldMobius
+  | .walkObservationToSofic => .arithmeticWalkObservation
+  | .soficToInformationBoundary => .soficPresentation
+  | .soficToDiffusion => .soficPresentation
+  | .thresholdToCompressionQuestion => .quadraticThresholdDescent
+
+/-- Target of each curated candidate edge. -/
+def seedPaperEdgeTarget : SeedPaperEdge → SeedConcept
+  | .spectrumToThomae => .thomaeFunction
+  | .spectrumToFarey => .fareyStructure
+  | .thomaeToDedekindEta => .dedekindEtaRegularization
+  | .spectrumToLifshitz => .lifshitzLocalization
+  | .fareyToSofic => .soficPresentation
+  | .zerosToCriticalStrip => .criticalStripCriterion
+  | .zerosToExplicitFormula => .explicitFormula
+  | .zerosToSpectralAnalogy => .spectralOperatorAnalogy
+  | .spectralAnalogyToDiffusion => .heightIndexedDiffusion
+  | .couplingToLowerContainment => .lowerRandomContainment
+  | .couplingToUpperDefect => .upperRandomDefect
+  | .couplingToMonotoneTransfer => .monotonePropertyTransfer
+  | .lowerContainmentToSandwich => .relationSandwich
+  | .upperDefectToSandwich => .relationSandwich
+  | .mobiusToCharacterProxy => .dirichletCharacterProxy
+  | .characterProxyToChowla => .chowlaCorrelation
+  | .chowlaToWalkObservation => .arithmeticWalkObservation
+  | .mobiusToPrimeDistribution => .primeLevelOfDistribution
+  | .walkObservationToSofic => .soficPresentation
+  | .soficToInformationBoundary => .informationLossBoundary
+  | .soficToDiffusion => .heightIndexedDiffusion
+  | .thresholdToCompressionQuestion => .compressionParameterA
+
+/-- Additional edges permitted by the initial vocabulary but not yet admitted as
+source-grounded candidates. -/
+inductive SeedPotentialEdge where
+  | etaToExplicitFormula
+  | explicitFormulaToDiffusion
+  | chowlaToExplicitFormula
+  | sandwichToDiffusion
+  | compressionToDiffusion
+  deriving DecidableEq, Fintype, Repr
+
+def seedPotentialEdgeSource : SeedPotentialEdge → SeedConcept
+  | .etaToExplicitFormula => .dedekindEtaRegularization
+  | .explicitFormulaToDiffusion => .explicitFormula
+  | .chowlaToExplicitFormula => .chowlaCorrelation
+  | .sandwichToDiffusion => .relationSandwich
+  | .compressionToDiffusion => .compressionParameterA
+
+def seedPotentialEdgeTarget : SeedPotentialEdge → SeedConcept
+  | .etaToExplicitFormula => .explicitFormula
+  | .explicitFormulaToDiffusion => .heightIndexedDiffusion
+  | .chowlaToExplicitFormula => .explicitFormula
+  | .sandwichToDiffusion => .heightIndexedDiffusion
+  | .compressionToDiffusion => .heightIndexedDiffusion
+
+private def inspectedNotRun : VerificationStatus where
+  sourceInspected := true
+  compiled := false
+  kernelAccepted := false
+  axiomAudited := false
+  supplierComplete := false
+
+private def literatureSource
+    (kind : SourceKind) (identifier locator : String) : SourceIdentity where
+  kind := kind
+  identifier := identifier
+  locator := locator
+  repository := none
+  commit := none
+  path := none
+  blob := none
+
+private def repositorySource
+    (identifier path blob : String) : SourceIdentity where
+  kind := .leanDeclaration
+  identifier := identifier
+  locator := identifier
+  repository := some "grwtsk/math"
+  commit := some "bd1e92a31d3609c42b3846f53f3f0be34d3f95a2"
+  path := some path
+  blob := some blob
+
+private def nechaevPolovnikovSource : SourceIdentity :=
+  literatureSource .arXiv "arXiv:1702.06757v2"
+    "Number-theoretic aspects of 1D localization"
+
+private def bombieriSource : SourceIdentity :=
+  literatureSource .stableUrl "Bombieri: Problems of the Millennium: the Riemann Hypothesis"
+    "Clay Mathematics Institute article"
+
+private def kimVuSource : SourceIdentity :=
+  literatureSource .doi "10.1016/j.aim.2003.10.007"
+    "Sandwiching random graphs: universality between random graph models"
+
+private def sawinShustermanSource : SourceIdentity :=
+  literatureSource .arXiv "arXiv:1808.04001v2"
+    "On the Chowla and twin primes conjectures over F_q[T]"
+
+private def relationSandwichSource : SourceIdentity :=
+  repositorySource
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich"
+    "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean"
+    "9761b5dd5d6ada7344031c07386586c72c1d970a"
+
+private def dynamicSoficSource : SourceIdentity :=
+  repositorySource
+    "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover"
+    "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean"
+    "7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+
+private def heatFlowSoficSource : SourceIdentity :=
+  repositorySource
+    "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic"
+    "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean"
+    "f8b956c411e386d56af206ccc8a46b4c2b1c13c3"
+
+private def quadraticThresholdSource : SourceIdentity :=
+  repositorySource
+    "GRWTSK.RiemannHypothesis.quadraticThreshold"
+    "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticThresholdDescentProgram.lean"
+    "6e0eca3e3863a9147a4ef3facde60556355543ea"
+
+private def searchInventorySource : SourceIdentity where
+  kind := .leanDeclaration
+  identifier :=
+    "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory"
+  locator :=
+    "GRWTSK/GraphSandwichDiffusion.lean"
+  repository := some "grwtsk/math"
+  commit := none
+  path := some
+    "GRWTSK/GraphSandwichDiffusion.lean"
+  blob := none
+
+private def sourceForConcept : SeedConcept → SourceIdentity
+  | .thomaeFunction => nechaevPolovnikovSource
+  | .linearChainSpectrum => nechaevPolovnikovSource
+  | .fareyStructure => nechaevPolovnikovSource
+  | .dedekindEtaRegularization => nechaevPolovnikovSource
+  | .lifshitzLocalization => nechaevPolovnikovSource
+  | .zetaZeros => bombieriSource
+  | .criticalStripCriterion => bombieriSource
+  | .explicitFormula => bombieriSource
+  | .spectralOperatorAnalogy => bombieriSource
+  | .randomGraphCoupling => kimVuSource
+  | .lowerRandomContainment => kimVuSource
+  | .upperRandomDefect => kimVuSource
+  | .monotonePropertyTransfer => kimVuSource
+  | .functionFieldMobius => sawinShustermanSource
+  | .dirichletCharacterProxy => sawinShustermanSource
+  | .chowlaCorrelation => sawinShustermanSource
+  | .primeLevelOfDistribution => sawinShustermanSource
+  | .relationSandwich => relationSandwichSource
+  | .soficPresentation => dynamicSoficSource
+  | .informationLossBoundary => heatFlowSoficSource
+  | .quadraticThresholdDescent => quadraticThresholdSource
+  | .arithmeticWalkObservation => searchInventorySource
+  | .heightIndexedDiffusion => searchInventorySource
+  | .compressionParameterA => searchInventorySource
+  | .searchInventory => searchInventorySource
+
+/-- Candidate classification records the source-level mathematical role.  It
+never promotes an edge to the certified lower relation; that promotion still
+requires `SourceSearchInventory.certified_sound`. -/
+private def edgeClass : SeedPaperEdge → RelationshipClass
+  | .spectrumToThomae => .conditionalInterface
+  | .spectrumToFarey => .conditionalInterface
+  | .thomaeToDedekindEta => .conditionalInterface
+  | .spectrumToLifshitz => .conditionalInterface
+  | .fareyToSofic => .structuralCorrespondence
+  | .zerosToCriticalStrip => .structuralCorrespondence
+  | .zerosToExplicitFormula => .conditionalInterface
+  | .zerosToSpectralAnalogy => .analogy
+  | .spectralAnalogyToDiffusion => .structuralCorrespondence
+  | .couplingToLowerContainment => .conditionalInterface
+  | .couplingToUpperDefect => .conditionalInterface
+  | .couplingToMonotoneTransfer => .conditionalInterface
+  | .lowerContainmentToSandwich => .structuralCorrespondence
+  | .upperDefectToSandwich => .structuralCorrespondence
+  | .mobiusToCharacterProxy => .conditionalInterface
+  | .characterProxyToChowla => .conditionalInterface
+  | .chowlaToWalkObservation => .structuralCorrespondence
+  | .mobiusToPrimeDistribution => .conditionalInterface
+  | .walkObservationToSofic => .structuralCorrespondence
+  | .soficToInformationBoundary => .structuralCorrespondence
+  | .soficToDiffusion => .structuralCorrespondence
+  | .thresholdToCompressionQuestion => .unresolvedSupplier
+
+private def edgeMeaning : SeedPaperEdge → String
+  | .spectrumToThomae =>
+      "The sparse linear-chain spectral density is related to the Thomae profile."
+  | .spectrumToFarey =>
+      "Monotone spectral-peak sequences are organized by Farey mediants."
+  | .thomaeToDedekindEta =>
+      "Dedekind eta near the real axis gives the stated asymptotic regularization."
+  | .spectrumToLifshitz =>
+      "The spectral-edge asymptotic has the stated one-dimensional Lifshitz form."
+  | .fareyToSofic =>
+      "Farey transitions are a candidate alphabet for a finite labelled presentation."
+  | .zerosToCriticalStrip =>
+      "The critical-line condition is the selected zero-location criterion."
+  | .zerosToExplicitFormula =>
+      "Zeta zeros enter the explicit formula relating prime and spectral data."
+  | .zerosToSpectralAnalogy =>
+      "The Hilbert--Polya operator picture is an analogy, not an operator construction."
+  | .spectralAnalogyToDiffusion =>
+      "A supplied finite graph operator would instantiate a height-indexed diffusion target."
+  | .couplingToLowerContainment =>
+      "Kim--Vu lower containment holds only under the paper's coupling hypotheses."
+  | .couplingToUpperDefect =>
+      "The upper comparison retains the paper's maximum-degree defect bound."
+  | .couplingToMonotoneTransfer =>
+      "Increasing graph properties transfer only through the probabilistic coupling."
+  | .lowerContainmentToSandwich =>
+      "The lower containment is represented by the lower-to-middle sandwich inclusion."
+  | .upperDefectToSandwich =>
+      "Exact upper inclusion requires a separate repair of the probabilistic defect."
+  | .mobiusToCharacterProxy =>
+      "On the specified function-field slices, Möbius is represented by shifted characters."
+  | .characterProxyToChowla =>
+      "Character cancellation supplies the function-field Chowla correlation estimate."
+  | .chowlaToWalkObservation =>
+      "Chowla products are candidate arithmetic labels on finite sofic walks."
+  | .mobiusToPrimeDistribution =>
+      "The paper derives prime-distribution results through additional convolution estimates."
+  | .walkObservationToSofic =>
+      "Arithmetic observations annotate a finite labelled transition system."
+  | .soficToInformationBoundary =>
+      "A finite presentation is lossless only with an explicit reconstruction map."
+  | .soficToDiffusion =>
+      "Eligible finite graphs may later carry adjacency, Laplacian, and heat operators."
+  | .thresholdToCompressionQuestion =>
+      "The quadratic threshold map is not identified with the requested parameter a."
+
+private def edgeProvenance : SeedPaperEdge → List SourceIdentity
+  | .spectrumToThomae => [nechaevPolovnikovSource]
+  | .spectrumToFarey => [nechaevPolovnikovSource]
+  | .thomaeToDedekindEta => [nechaevPolovnikovSource]
+  | .spectrumToLifshitz => [nechaevPolovnikovSource]
+  | .fareyToSofic => [nechaevPolovnikovSource, dynamicSoficSource]
+  | .zerosToCriticalStrip => [bombieriSource]
+  | .zerosToExplicitFormula => [bombieriSource]
+  | .zerosToSpectralAnalogy => [bombieriSource]
+  | .spectralAnalogyToDiffusion => [bombieriSource, searchInventorySource]
+  | .couplingToLowerContainment => [kimVuSource]
+  | .couplingToUpperDefect => [kimVuSource]
+  | .couplingToMonotoneTransfer => [kimVuSource]
+  | .lowerContainmentToSandwich => [kimVuSource, relationSandwichSource]
+  | .upperDefectToSandwich => [kimVuSource, relationSandwichSource]
+  | .mobiusToCharacterProxy => [sawinShustermanSource]
+  | .characterProxyToChowla => [sawinShustermanSource]
+  | .chowlaToWalkObservation => [sawinShustermanSource, searchInventorySource]
+  | .mobiusToPrimeDistribution => [sawinShustermanSource]
+  | .walkObservationToSofic => [searchInventorySource, dynamicSoficSource]
+  | .soficToInformationBoundary => [dynamicSoficSource, heatFlowSoficSource]
+  | .soficToDiffusion => [dynamicSoficSource, searchInventorySource]
+  | .thresholdToCompressionQuestion => [quadraticThresholdSource, searchInventorySource]
+
+private def edgeAssumptions : SeedPaperEdge → List String
+  | .spectrumToThomae =>
+      ["linear chains are weighted by f^L with 0 < f < 1",
+       "the Thomae comparison is the paper's sparse-limit asymptotic"]
+  | .spectrumToFarey =>
+      ["spectral peaks are indexed by coprime numerator-denominator pairs",
+       "the selected peak sequence is monotone"]
+  | .thomaeToDedekindEta =>
+      ["0 < x < 1",
+       "the modular parameter is x + i epsilon with epsilon tending to zero from above"]
+  | .spectrumToLifshitz =>
+      ["0 < f < 1",
+       "the spectral parameter approaches the upper edge from below"]
+  | .fareyToSofic =>
+      ["a declared finite inventory and finite-state presentation"]
+  | .zerosToCriticalStrip =>
+      ["zeros are nontrivial zeta zeros with the pole and trivial zeros excluded"]
+  | .zerosToExplicitFormula =>
+      ["the test function belongs to Bombieri's stated Weil class W",
+       "the Mellin transform and zero sum use the survey's convergence convention"]
+  | .zerosToSpectralAnalogy =>
+      ["the Hilbert--Polya statement is treated only as an analogy"]
+  | .spectralAnalogyToDiffusion =>
+      ["a declared finite inventory and finite graph operator"]
+  | .couplingToLowerContainment =>
+      ["log n is asymptotically smaller than d",
+       "d is asymptotically smaller than n^(1/3) / log^2 n",
+       "sqrt(d log n) <= xi(d) and xi(d) is asymptotically smaller than d",
+       "the joint distribution is the Kim--Vu coupling"]
+  | .couplingToUpperDefect =>
+      ["the Kim--Vu Theorem 2 degree and xi(d) hypotheses",
+       "the upper statement retains the maximum-degree defect bound"]
+  | .couplingToMonotoneTransfer =>
+      ["the graph property is increasingly monotone",
+       "the transfer is interpreted in the Kim--Vu probability space"]
+  | .lowerContainmentToSandwich =>
+      ["the probabilistic containment event has been supplied"]
+  | .upperDefectToSandwich =>
+      ["a defect-aware relation or an exact-containment repair has been supplied"]
+  | .mobiusToCharacterProxy =>
+      ["the base field has odd characteristic p",
+       "the Lemma 3.2 degree condition k != d + m holds",
+       "a and M are coprime and the stated derivative-dependent modulus is used"]
+  | .characterProxyToChowla =>
+      ["p is an odd prime",
+       "q is a power of p with q > p^2 k^2 e^2",
+       "the polynomial shifts are distinct"]
+  | .chowlaToWalkObservation =>
+      ["the walk labels retain the function-field domain and the selected finite shifts"]
+  | .mobiusToPrimeDistribution =>
+      ["the modulus and residue satisfy the paper's squarefreeness and coprimality hypotheses",
+       "the explicit q and level-of-distribution bounds are retained"]
+  | .walkObservationToSofic =>
+      ["a declared finite inventory and finite-state presentation"]
+  | .soficToInformationBoundary =>
+      ["losslessness is asserted only when an explicit reconstruction map is present"]
+  | .soficToDiffusion =>
+      ["a declared finite graph and explicit operator normalization"]
+  | .thresholdToCompressionQuestion =>
+      ["an exact parameter correspondence between rho and a"]
+
+private def edgeObligations : SeedPaperEdge → List String
+  | .fareyToSofic =>
+      ["construct labelled states and prove all selected Farey transitions"]
+  | .spectralAnalogyToDiffusion =>
+      ["construct the finite graph operator; do not identify graph height with a zeta ordinate"]
+  | .upperDefectToSandwich =>
+      ["replace the defect bound by exact containment or retain a defect-aware upper interface"]
+  | .chowlaToWalkObservation =>
+      ["separate finite walk identities from asymptotic Chowla cancellation"]
+  | .walkObservationToSofic =>
+      ["prove label-transition compatibility and scoped language coverage"]
+  | .soficToInformationBoundary =>
+      ["supply a reconstruction map before claiming losslessness"]
+  | .soficToDiffusion =>
+      ["define weights, degree operator, Laplacian, spectrum, and heat semigroup"]
+  | .thresholdToCompressionQuestion =>
+      ["identify the domain and meaning of a",
+       "prove an independent supplier for a <= 1/2; do not infer it from a <= 9/16"]
+  | _ => []
+
+private def seedPaperRecord (edge : SeedPaperEdge) :
+    RelationshipRecord (seedPaperEdgeSource edge) (seedPaperEdgeTarget edge) where
+  relationship := edgeClass edge
+  mathematicalMeaning := edgeMeaning edge
+  provenance := edgeProvenance edge
+  assumptions := edgeAssumptions edge
+  obligations := edgeObligations edge
+  verification := inspectedNotRun
+
+private def seedPaperRelation (source target : SeedConcept) : Prop :=
+  ∃ edge : SeedPaperEdge,
+    seedPaperEdgeSource edge = source ∧ seedPaperEdgeTarget edge = target
+
+/-- In addition to curated paper edges, every indexed concept has a structural
+edge to the inventory hub.  This makes the finite candidate graph source-connected
+without turning indexing into mathematical entailment. -/
+def seedCandidate (source target : SeedConcept) : Prop :=
+  seedPaperRelation source target ∨
+    (source ≠ .searchInventory ∧ target = .searchInventory)
+
+private def seedPotentialRelation (source target : SeedConcept) : Prop :=
+  ∃ edge : SeedPotentialEdge,
+    seedPotentialEdgeSource edge = source ∧ seedPotentialEdgeTarget edge = target
+
+def seedAdmissible (source target : SeedConcept) : Prop :=
+  seedCandidate source target ∨ seedPotentialRelation source target
+
+def seedCertified (_source _target : SeedConcept) : Prop := False
+
+def seedSemantic (_source _target : SeedConcept) : Prop := False
+
+private def seedCandidateRecordFor
+    {source target : SeedConcept} (edge : seedCandidate source target) :
+    RelationshipRecord source target := by
+  rcases edge with paperEdge | ⟨notHub, targetHub⟩
+  · rcases paperEdge with ⟨edgeId, sourceEq, targetEq⟩
+    subst source
+    subst target
+    exact seedPaperRecord edgeId
+  · subst target
+    exact
+      { relationship := .structuralCorrespondence
+        mathematicalMeaning :=
+          "This concept is explicitly indexed by the declared finite search inventory."
+        provenance := [sourceForConcept source, searchInventorySource]
+        assumptions := ["the current finite seed scope"]
+        obligations := []
+        verification := inspectedNotRun }
+
+private def seedPotentialRecord
+    (edge : SeedPotentialEdge) :
+    RelationshipRecord (seedPotentialEdgeSource edge) (seedPotentialEdgeTarget edge) where
+  relationship := .unresolvedSupplier
+  mathematicalMeaning :=
+    "This cross-source edge is admissible under the declared vocabulary but is not yet a candidate."
+  provenance :=
+    [sourceForConcept (seedPotentialEdgeSource edge),
+      sourceForConcept (seedPotentialEdgeTarget edge)]
+  assumptions := ["an exact typed bridge with preserved hypotheses"]
+  obligations :=
+    ["supply the mathematical bridge and then promote this edge to the candidate graph"]
+  verification := inspectedNotRun
+
+private def seedPotentialRecordFor
+    {source target : SeedConcept} (edge : seedPotentialRelation source target) :
+    RelationshipRecord source target := by
+  rcases edge with ⟨edgeId, sourceEq, targetEq⟩
+  subst source
+  subst target
+  exact seedPotentialRecord edgeId
+
+private def seedAdmissibleRecordFor
+    {source target : SeedConcept} (edge : seedAdmissible source target) :
+    RelationshipRecord source target := by
+  rcases edge with candidate | potential
+  · exact seedCandidateRecordFor candidate
+  · exact seedPotentialRecordFor potential
+
+/-- The concrete initial source inventory.  Its lower graph is empty because no
+paper-to-repository bridge in this new module has yet been compiled and kernel
+checked.  This is deliberate rather than a completeness claim. -/
+def seedInventory : SourceSearchInventory SeedConcept where
+  vertices := Finset.univ
+  certified := seedCertified
+  candidate := seedCandidate
+  admissible := seedAdmissible
+  semantic := seedSemantic
+  certified_le_candidate := by
+    intro source target certified
+    exact False.elim certified
+  candidate_le_admissible := by
+    intro source target candidate
+    exact Or.inl candidate
+  admissible_scoped := by
+    intro source target _
+    simp
+  certified_sound := by
+    intro source target certified
+    exact False.elim certified
+  candidateRecord := seedCandidateRecordFor
+  admissibleRecord := seedAdmissibleRecordFor
+
+/-- Every seed concept is the inventory hub or has a structural candidate edge
+to it.  This is connectivity of source representation, not logical entailment. -/
+theorem seed_source_connected (concept : SeedConcept) :
+    concept = .searchInventory ∨ seedCandidate concept .searchInventory := by
+  by_cases isHub : concept = .searchInventory
+  · exact Or.inl isHub
+  · exact Or.inr (Or.inr ⟨isHub, rfl⟩)
+
+/-- Negative control: a source-grounded candidate edge is not thereby certified. -/
+theorem spectrumToThomae_candidate_not_certified :
+    seedInventory.candidate .linearChainSpectrum .thomaeFunction ∧
+      ¬ seedInventory.certified .linearChainSpectrum .thomaeFunction := by
+  constructor
+  · exact Or.inl ⟨.spectrumToThomae, rfl, rfl⟩
+  · simp [seedInventory, seedCertified]
+
+/-- Negative control: no semantic consequence follows from the empty certified
+seed relation.  Future promotion requires an actual proof in `certified_sound`. -/
+theorem seed_has_no_certified_edge (source target : SeedConcept) :
+    ¬ seedInventory.certified source target := by
+  simp [seedInventory, seedCertified]
 
 end GRWTSK.GraphSandwichDiffusion
