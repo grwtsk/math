@@ -466,4 +466,23 @@ theorem logarithmicPowerTailPrimitive_log_power_tendsto_zero
     ring
   exact hmul.congr' heq
 
+
+/-- The entire logarithmic-power primitive tends to zero at positive
+infinity. This is a boundary-limit supplier, not yet an integral formula. -/
+theorem logarithmicPowerTailPrimitive_tendsto_zero
+    (σ : ℝ) (hσ : 1 < σ) :
+    Filter.Tendsto (logarithmicPowerTailPrimitive σ)
+      Filter.atTop (nhds (0 : ℝ)) := by
+  have hlog := logarithmicPowerTailPrimitive_log_power_tendsto_zero σ hσ
+  have hpow := logarithmicPowerTailPrimitive_power_tendsto_zero σ hσ
+  have hsum :=
+    (hlog.div_const (σ - 1)).add
+      (hpow.mul_const (1 / (σ - 1) ^ 2))
+  have hneg := hsum.neg
+  convert hneg using 1
+  · ext t
+    simp only [logarithmicPowerTailPrimitive]
+    ring
+  · simp
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
