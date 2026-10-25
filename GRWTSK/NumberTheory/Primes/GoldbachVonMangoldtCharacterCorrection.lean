@@ -605,4 +605,21 @@ theorem norm_nat_cpow_neg_eq_rpow
   simpa only [Complex.neg_re] using
     (Complex.norm_cpow_eq_rpow_re_of_pos hnreal (-s))
 
+
+/-- Pointwise upper bound for the exact complex Dirichlet-twisted
+von Mangoldt coefficient after multiplying by its complex-power
+Dirichlet-series weight. This is an absolute bound, not cancellation. -/
+theorem norm_dirichletVonMangoldtCoefficient_mul_cpow_le
+    (q n : ℕ) (χ : DirichletCharacter ℂ q) (s : ℂ)
+    (hn : 0 < n) :
+    ‖dirichletVonMangoldtCoefficient q χ n * ((n : ℂ) ^ (-s))‖ ≤
+      logarithmicPowerTailKernel s.re (n : ℝ) := by
+  have hnreal : (0 : ℝ) < n := by exact_mod_cast hn
+  have hpow : 0 ≤ (n : ℝ) ^ (-s.re) := Real.rpow_nonneg hnreal.le _
+  rw [norm_mul, norm_nat_cpow_neg_eq_rpow n s hn]
+  unfold logarithmicPowerTailKernel
+  rw [Real.rpow_neg hnreal.le, div_eq_mul_inv]
+  exact mul_le_mul_of_nonneg_right
+    (norm_dirichletVonMangoldtCoefficient_le_log q n χ) hpow
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
