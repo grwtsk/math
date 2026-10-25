@@ -1,5 +1,7 @@
-import DAF.Runtime.RingState
-import FilesystemCodec.Blocks
+-- Explicit retained providers for the complete packet dependency chain.
+-- Mathematical declarations, hypotheses and proof bodies are unchanged.
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.RingState.Variantb47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1
+import GRWTSK.Algebra.UniversalAlgebra.Blocks.Variant5ed626a0b32688e7c00d5c2201a0e1df8ded14a627979442f150adaadd2f286a
 
 /-!
 # Framed filesystem-packet ring adapter

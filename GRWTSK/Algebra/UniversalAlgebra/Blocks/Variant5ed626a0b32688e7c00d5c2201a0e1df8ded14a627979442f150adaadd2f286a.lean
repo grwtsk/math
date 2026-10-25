@@ -1,5 +1,7 @@
-import FilesystemCodec.Serialization
-import BitMatrix.FiniteField.Galois
+-- Explicit retained providers for the complete packet dependency chain.
+-- Mathematical declarations, hypotheses and proof bodies are unchanged.
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Serialization.Variantd5c802d5af8f0ca6a60779f85c22bc89dd023ccc8550edd11c1d2b611323658e
+import GRWTSK.Algebra.LinearAlgebra.Galois.Variantd9d307f9fc4eb0f70539d3fb84809fc24f00c8c80fb99fc4fd541f8037b44081
 import Mathlib.Algebra.Order.Floor.Div
 
 /-!

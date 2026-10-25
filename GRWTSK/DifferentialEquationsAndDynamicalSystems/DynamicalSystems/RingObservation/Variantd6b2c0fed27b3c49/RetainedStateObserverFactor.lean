@@ -1,3 +1,5 @@
+-- Explicit retained providers for the complete packet dependency chain.
+-- Mathematical declarations, hypotheses and proof bodies are unchanged.
 /-
 RetainedStateObserverFactor — exact individually reviewed source
 Attribution: ATTRIBUTION_CLARIFICATION_NEEDED
@@ -27,7 +29,7 @@ implementation is selected, not a reduced carrier. Native qualification and
 remaining packet-provider bindings are pending. -/
 
 import GRWTSK.Algebra.LinearAlgebra.MatrixRing.Variant426363dc5b10c8f88dc2c6ec242612277a4d6a7d0ca02e262579fc6412169a5c
-import BitMatrix.Runtime.PacketRing
+import GRWTSK.Algebra.LinearAlgebra.PacketRing.Variant5909f9f1854e7f918ddb953e9f8302bb6fa667e5ef067d75cc6b89a552efb33d
 
 /-!
 # Binary-matrix and filesystem ring-buffer adapters

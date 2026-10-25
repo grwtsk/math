@@ -1,4 +1,6 @@
-import BitMatrix.Dynamics.Avalanche
+-- Explicit retained providers for the complete packet dependency chain.
+-- Mathematical declarations, hypotheses and proof bodies are unchanged.
+import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Avalanche.Variant3aabaea1e6b94d5b07c708e43795b4c39aa5a298bf88964eeb2f1f83ff5ddf0c
 import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
 import Mathlib.Tactic.IntervalCases
 import Mathlib.Tactic.Linarith

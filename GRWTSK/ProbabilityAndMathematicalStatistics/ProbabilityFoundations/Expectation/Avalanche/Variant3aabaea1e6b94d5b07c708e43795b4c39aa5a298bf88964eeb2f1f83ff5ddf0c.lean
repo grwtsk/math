@@ -1,5 +1,7 @@
-import BitMatrix.Quantization.Core
-import BitMatrix.Reduction.SAT
+-- Explicit retained providers for the complete packet dependency chain.
+-- Mathematical declarations, hypotheses and proof bodies are unchanged.
+import GRWTSK.CombinatoricsAndDiscreteMathematics.Core.Variantd3ce1df042ea2552c9f97ffb4f84aa07a8c7f02240158d87c7461bc10b64b715
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.SAT.Variant9cbcf4e6d3c10e19ca1590633b0d1be6186be089e53ddf524b5750ae76e4e78a
 import Mathlib.Algebra.BigOperators.Ring.Nat
 import Mathlib.Algebra.BigOperators.Field
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
