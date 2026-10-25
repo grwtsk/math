@@ -1,4 +1,6 @@
-import DAF.Codec
+-- Explicit retained provider for the full left-inverse codec and encoder-image equivalence.
+-- The abstract serializer, framing obligations and all mathematical bodies are unchanged.
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Codec.Variant8136e4b65fdd2b32c0a6c3485ceef6e5dc6876cec11df03ccdbeff9110e9fadd
 
 /-!
 # Abstract canonical filesystem serialization
