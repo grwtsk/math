@@ -2,6 +2,8 @@
 Local mathematical attribution: grwtsk contributors.
 Upstream mathematics retains its authorship and licenses. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentFiniteGramOperator
+import GRWTSK.NumberTheory.Chebyshev.TentSource
+import GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource
 import Mathlib.Analysis.CStarAlgebra.Matrix
 import Mathlib.Tactic
 
@@ -29,6 +31,9 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
 open Matrix
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentFiniteGramOperator
+open GRWTSK.NumberTheory.Chebyshev.TentSource
+open GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals
+open GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource
 
 /-- The actual source Gram matrix on the canonical square-tent coordinates. -/
 def canonicalEuclideanGramMatrix (M : ℕ) :
@@ -136,5 +141,104 @@ theorem uniform_operator_norm_bound_iff_arithmetic_bound
   · intro h M
     rw [canonicalEuclideanGramOperator_norm_eq]
     exact (pi_norm_le_iff_of_nonneg hC).mpr (h M)
+
+/-! ## Exact unsmoothing and arithmetic norm supplier
+
+The normalized square-tent mass is an arithmetic smoothing, NOT the
+untapered von Mangoldt interval increment. The loss is the complete
+nonnegative source sum of one minus the genuine triangular weight.
+The operator's unnormalized norm can be bounded by the full interval
+masses, but only if the latter admit a supplied uniform bound.
+
+This does not assert such a bound, discard proper prime powers, or
+identify the smoothed source with the classical Weil form.
+-/
+
+/-- Exact nonnegative source mass discarded by the normalized tent.
+Both the interval cutoff and the von Mangoldt weight are unchanged. -/
+def squareWeightLoss (n : ℕ) : ℝ :=
+  ∑ m ∈ Finset.Ioc (n ^ 2) ((n + 1) ^ 2),
+    ArithmeticFunction.vonMangoldt m * (1 - squareWeight n m)
+
+/-- The actual cutoff loss is nonnegative without any prime theorem. -/
+theorem squareWeightLoss_nonnegative (n : ℕ) :
+    0 ≤ squareWeightLoss n := by
+  unfold squareWeightLoss
+  apply Finset.sum_nonneg
+  intro m hm
+  exact mul_nonneg ArithmeticFunction.vonMangoldt_nonneg
+    (sub_nonneg.mpr (squareWeight_le_one n m))
+
+/-- EXACT restoration of the complete closed-right arithmetic source.
+The upper square endpoint appears but has zero tent weight; its source
+contribution is therefore retained in the loss, not thrown away. -/
+theorem squareIncrement_eq_tent_add_weightLoss (n : ℕ) :
+    squareIncrement n = squareTentMangoldt n + squareWeightLoss n := by
+  rw [squareIncrement_eq_vonMangoldt_sum]
+  unfold squareTentMangoldt squareWeightLoss
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro m hm
+  ring
+
+/-- The normalized triangular weight cannot exceed the actual untapered
+source interval mass. This is only one direction of comparison. -/
+theorem squareTentMangoldt_le_squareIncrement (n : ℕ) :
+    squareTentMangoldt n ≤ squareIncrement n := by
+  have h := squareWeightLoss_nonnegative n
+  rw [squareIncrement_eq_tent_add_weightLoss]
+  linarith
+
+/-- The source interval increment is nonnegative for exactly this
+natural-number square inventory. -/
+theorem squareIncrement_nonnegative (n : ℕ) :
+    0 ≤ squareIncrement n := by
+  rw [squareIncrement_eq_tent_add_weightLoss]
+  exact add_nonneg (squareTentMangoldt_nonneg n)
+    (squareWeightLoss_nonnegative n)
+
+/-- The norm of the actual bounded Euclidean operator is controlled
+by the maximum COMPLETE von Mangoldt square-window source, rather
+than a surrogate prime-only sum. This imports no uniform estimate. -/
+theorem canonicalEuclideanGramOperator_norm_le_fullSource (M : ℕ) :
+    ‖canonicalEuclideanGramOperator M‖ ≤
+      ‖(fun i : Fin (M + 1) =>
+        ((squareIncrement (i.1 + 2) : ℝ) : ℂ))‖ := by
+  rw [canonicalEuclideanGramOperator_norm_eq]
+  apply (pi_norm_le_iff_of_nonneg (norm_nonneg _)).2
+  intro i
+  have hn : 0 ≤ squareTentMangoldt (i.1 + 2) :=
+    squareTentMangoldt_nonneg _
+  have hs : 0 ≤ squareIncrement (i.1 + 2) :=
+    squareIncrement_nonnegative _
+  calc
+    ‖(arithmeticCrossCoefficient i i : ℂ)‖ =
+        squareTentMangoldt (i.1 + 2) := by
+      rw [arithmeticCrossCoefficient_diag_eq_mangoldt, Complex.norm_real,
+        Real.norm_of_nonneg hn]
+    _ ≤ squareIncrement (i.1 + 2) :=
+      squareTentMangoldt_le_squareIncrement _
+    _ = ‖((squareIncrement (i.1 + 2) : ℝ) : ℂ)‖ := by
+      rw [Complex.norm_real, Real.norm_of_nonneg hs]
+    _ ≤ ‖(fun j : Fin (M + 1) =>
+        ((squareIncrement (j.1 + 2) : ℝ) : ℂ))‖ :=
+      norm_le_pi_norm _ i
+
+/-- A FULL unsmoothed interval-mass upper bound suffices for a uniform
+finite-operator norm bound. The required arithmetic hypothesis is
+not established by this theorem. -/
+theorem uniform_fullSource_bound_implies_operator_bound
+    (C : ℝ) (hC : 0 ≤ C)
+    (hsource : ∀ n : ℕ, 2 ≤ n → squareIncrement n ≤ C) :
+    ∀ M : ℕ, ‖canonicalEuclideanGramOperator M‖ ≤ C := by
+  intro M
+  have hmax := canonicalEuclideanGramOperator_norm_le_fullSource M
+  apply hmax.trans
+  apply (pi_norm_le_iff_of_nonneg hC).2
+  intro i
+  have hs : 0 ≤ squareIncrement (i.1 + 2) :=
+    squareIncrement_nonnegative _
+  rw [Complex.norm_real, Real.norm_of_nonneg hs]
+  exact hsource _ (by omega)
 
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
