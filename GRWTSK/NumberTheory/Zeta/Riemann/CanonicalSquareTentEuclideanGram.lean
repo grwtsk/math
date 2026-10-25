@@ -565,4 +565,37 @@ theorem canonicalEuclideanGramOperator_injective_of_moment_strict
   exact WithLp.ofLp_injective 2
     (hsource (WithLp.toLp_injective 2 hxy'))
 
+/-! ## Relative centered-moment gap: quantitative supplier interface
+
+A relative deficit from the maximal possible first moment produces
+a proportionate lower bound for the actual tapered von Mangoldt mass.
+This is a conditional inequality, not a proved distribution estimate.
+-/
+
+/-- An explicit relative moment deficit yields an exact positive
+fraction of the complete source interval mass. -/
+theorem squareTentMangoldt_ge_fraction_of_moment_gap
+    (n : ℕ) (δ : ℝ) (hδ : 0 ≤ δ)
+    (hgap : squareAbsoluteMoment n ≤
+      (1 - δ) * squareRadius n * squareIncrement n) :
+    δ * squareIncrement n ≤ squareTentMangoldt n := by
+  rw [squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment]
+  have hr := squareRadius_pos n
+  have hdiv : squareAbsoluteMoment n / squareRadius n ≤
+      (1 - δ) * squareIncrement n := by
+    apply (div_le_iff₀ hr).mpr
+    nlinarith [hgap]
+  nlinarith
+
+/-- A uniform relative moment deficit and a lower bound on complete
+interval mass supply the corresponding finite Gram lower bound. -/
+theorem squareTentMangoldt_ge_of_relative_gap_and_source_lower
+    (n : ℕ) (δ B : ℝ) (hδ : 0 ≤ δ)
+    (hB : B ≤ squareIncrement n)
+    (hgap : squareAbsoluteMoment n ≤
+      (1 - δ) * squareRadius n * squareIncrement n) :
+    δ * B ≤ squareTentMangoldt n := by
+  exact (mul_le_mul_of_nonneg_left hB hδ).trans
+    (squareTentMangoldt_ge_fraction_of_moment_gap n δ hδ hgap)
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
