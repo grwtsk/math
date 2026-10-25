@@ -444,4 +444,26 @@ theorem logarithmicPowerTailPrimitive_log_ratio_tendsto_zero
       Filter.atTop (nhds (0 : ℝ)) := by
   exact (logarithmicPowerTailPrimitive_log_isLittleO σ hσ).tendsto_div_nhds_zero
 
+
+/-- The logarithmic term of the tail primitive vanishes at infinity
+for every exponent strictly above one. -/
+theorem logarithmicPowerTailPrimitive_log_power_tendsto_zero
+    (σ : ℝ) (hσ : 1 < σ) :
+    Filter.Tendsto (fun t : ℝ => t ^ (1 - σ) * Real.log t)
+      Filter.atTop (nhds (0 : ℝ)) := by
+  have hhalf : 0 < (σ - 1) / 2 := by linarith
+  have hratio := logarithmicPowerTailPrimitive_log_ratio_tendsto_zero σ hσ
+  have hpower := Real.tendsto_rpow_neg_atTop hhalf
+  have hmul := hratio.mul hpower
+  have heq : (fun t : ℝ =>
+      (Real.log t / t ^ ((σ - 1) / 2)) * t ^ (-((σ - 1) / 2))) =ᶠ[Filter.atTop]
+      (fun t : ℝ => t ^ (1 - σ) * Real.log t) := by
+    filter_upwards [Filter.eventually_gt_atTop (0 : ℝ)] with t ht
+    have hpow : t ^ ((σ - 1) / 2) ≠ 0 := ne_of_gt (Real.rpow_pos_of_pos ht _)
+    rw [div_eq_mul_inv, ← Real.rpow_neg ht.le, ← mul_assoc,
+      ← Real.rpow_add ht]
+    congr 1
+    ring
+  exact hmul.congr' heq
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
