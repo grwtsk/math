@@ -354,11 +354,15 @@ theorem logarithmicPowerTailKernel_le_comparison
     Real.log t / t ^ σ ≤
         (t ^ ((σ - 1) / 2) / ((σ - 1) / 2)) / t ^ σ :=
       div_le_div_of_nonneg_right hlog hpow.le
+    _ = (2 / (σ - 1)) * (t ^ ((σ - 1) / 2) / t ^ σ) := by
+      have hδne : (σ - 1) / 2 ≠ 0 := ne_of_gt hδ
+      have hσne : σ - 1 ≠ 0 := by linarith
+      field_simp
+      ring
     _ = (2 / (σ - 1)) * t ^ (-(σ + 1) / 2) := by
-      rw [← div_div_eq_div_mul, ← Real.rpow_sub htpos]
+      rw [← Real.rpow_sub htpos]
       congr 1
-      · ring
-      · ring
+      ring
 
 
 /-- Integrability of the original logarithmic-power kernel follows
