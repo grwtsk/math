@@ -1,0 +1,126 @@
+{
+  "schema": "grwtsk.matrix-ring-audit-requirements/1",
+  "attribution": "grwtsk contributors",
+  "classification": "STATIC_REQUIREMENTS_NOT_RECEIPT",
+  "source_commit": "19942d4581d0a8efa38ab9763e72b9e6211b378e",
+  "contracts": [
+    {
+      "source": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RingState/Variantb47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1.lean",
+      "blob": "c266012f62d56462339a2d87bd002ceaef667bac",
+      "sha256": "b47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1",
+      "required_module_declarations": [
+        "DAF.Runtime.RingState",
+        "DAF.Runtime.RingState.ext",
+        "DAF.Runtime.RingState.nextWriteIndex",
+        "DAF.Runtime.RingState.latestIndex",
+        "DAF.Runtime.RingState.count",
+        "DAF.Runtime.RingState.push",
+        "DAF.Runtime.RingState.chronologicalIndex",
+        "DAF.Runtime.RingState.push_sequence",
+        "DAF.Runtime.RingState.push_written_slot",
+        "DAF.Runtime.RingState.push_other_slot",
+        "DAF.Runtime.RingState.count_le_capacity",
+        "DAF.Runtime.RingState.latestEntry",
+        "DAF.Runtime.RingState.latestEntry_push"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/Algebra/LinearAlgebra/Basic/Variant41f0242ace5e0ac7cfa9f6f682cebf8a255f8dde450dc87bbdc6788183dccfe2.lean",
+      "blob": "03355acf82bc6a8f39d2e5b8832d7f15ac1b8fc6",
+      "sha256": "41f0242ace5e0ac7cfa9f6f682cebf8a255f8dde450dc87bbdc6788183dccfe2",
+      "required_module_declarations": [
+        "BitMatrix",
+        "BitMatrix.map",
+        "BitMatrix.zipWith",
+        "BitMatrix.and",
+        "BitMatrix.or",
+        "BitMatrix.xor",
+        "BitMatrix.not",
+        "BitMatrix.map_apply",
+        "BitMatrix.zipWith_apply",
+        "BitMatrix.and_apply",
+        "BitMatrix.or_apply",
+        "BitMatrix.xor_apply",
+        "BitMatrix.not_apply",
+        "BitMatrix.ext",
+        "BitMatrix.and_comm",
+        "BitMatrix.and_assoc",
+        "BitMatrix.or_comm",
+        "BitMatrix.xor_comm",
+        "BitMatrix.not_not",
+        "BitMatrix.ArrayBacked",
+        "BitMatrix.ArrayBacked.flatIdx",
+        "BitMatrix.ArrayBacked.fill",
+        "BitMatrix.ArrayBacked.get",
+        "BitMatrix.ArrayBacked.toMatrix",
+        "BitMatrix.ArrayBacked.mapInPlace",
+        "BitMatrix.ArrayBacked.zipWithInPlace",
+        "BitMatrix.ArrayBacked.andInPlace",
+        "BitMatrix.ArrayBacked.orInPlace",
+        "BitMatrix.ArrayBacked.xorInPlace",
+        "BitMatrix.ArrayBacked.notInPlace",
+        "BitMatrix.ArrayBacked.get_mapInPlace",
+        "BitMatrix.ArrayBacked.get_zipWithInPlace",
+        "BitMatrix.ArrayBacked.mapInPlace_spec",
+        "BitMatrix.ArrayBacked.zipWithInPlace_spec",
+        "BitMatrix.ArrayBacked.andInPlace_spec",
+        "BitMatrix.ArrayBacked.orInPlace_spec",
+        "BitMatrix.ArrayBacked.xorInPlace_spec",
+        "BitMatrix.ArrayBacked.notInPlace_spec",
+        "BitMatrix.Refines",
+        "BitMatrix.ArrayBacked.refines_toMatrix",
+        "BitMatrix.ArrayBacked.mapInPlace_refines",
+        "BitMatrix.ArrayBacked.zipWithInPlace_refines",
+        "BitMatrix.ArrayBacked.andInPlace_refines",
+        "BitMatrix.ArrayBacked.andInPlace_comm_toMatrix",
+        "BitMatrix.ArrayBacked.andInPlace_assoc_toMatrix",
+        "BitMatrix.ArrayBacked.notInPlace_involutive_toMatrix"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module_expected_types": {
+        "BitMatrix.ArrayBacked.mapInPlace_spec": "\u2200 {m n : Nat} (A : BitMatrix.ArrayBacked m n) (f : Bool \u2192 Bool), (A.mapInPlace f).toMatrix = BitMatrix.map f A.toMatrix",
+        "BitMatrix.ArrayBacked.zipWithInPlace_spec": "\u2200 {m n : Nat} (A B : BitMatrix.ArrayBacked m n) (f : Bool \u2192 Bool \u2192 Bool), (A.zipWithInPlace B f).toMatrix = BitMatrix.zipWith f A.toMatrix B.toMatrix",
+        "BitMatrix.map_apply": "\u2200 {m n : Nat} (f : Bool \u2192 Bool) (A : BitMatrix m n) (i : Fin m) (j : Fin n), BitMatrix.map f A i j = f (A i j)",
+        "BitMatrix.zipWith_apply": "\u2200 {m n : Nat} (f : Bool \u2192 Bool \u2192 Bool) (A B : BitMatrix m n) (i : Fin m) (j : Fin n), BitMatrix.zipWith f A B i j = f (A i j) (B i j)"
+      }
+    },
+    {
+      "source": "GRWTSK/Algebra/LinearAlgebra/MatrixRing/Variant426363dc5b10c8f88dc2c6ec242612277a4d6a7d0ca02e262579fc6412169a5c.lean",
+      "blob": "678272db4d01ebc8ffa8a076fe00403748c33b9c",
+      "sha256": "fd8cb17adcaa19d4adcc9382e0d3650df39c18308d0fe3b17085c17e93be940b",
+      "required_module_declarations": [
+        "BitMatrix.Runtime.FixedMatrixRingState",
+        "BitMatrix.Runtime.selectedRowsObservation",
+        "BitMatrix.Runtime.selectedColumnsObservation"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "required_gates": [
+    "Fresh trust-zero warnings-as-errors compilation of all three project modules and entire pinned upstream source/asset closure",
+    "Complete compiler-origin module/axiom census including all 62 required structural roots and every additional compiler-owned constant",
+    "Four exact core type expressions in a fresh importing consumer only after same-source ownership qualification",
+    "Record unsafe/native/unknown-body observations without inferring platform execution or C++/destructive-array correctness",
+    "Resolve retained PacketRing and complete framing/serialization/field dependencies before whole-ring acceptance"
+  ],
+  "exact_type_expressions": 4,
+  "fresh_type_modules": 1,
+  "native_compile": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axiom_acceptance": "NOT_RUN",
+  "whole_ring_closure": "BLOCKED_MISSING_PACKETRING",
+  "scope": "Full original finite Boolean-matrix core including logical ArrayBacked invariant/refinement declarations; not a minimal carrier and not runtime/platform refinement evidence"
+}
