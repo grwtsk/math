@@ -682,4 +682,27 @@ theorem dirichletVonMangoldt_LSeries_term_pos
   rw [LSeries.term_of_ne_zero hn0]
   rw [div_eq_mul_inv, ← cpow_neg]
   
+
+/-- In the open half-plane of absolute convergence, the actual
+Mathlib L-series is its first N+1 terms plus the shifted tail. -/
+theorem dirichletVonMangoldt_LSeries_eq_prefix_add_shifted
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (s : ℂ) (hs : 1 < s.re) :
+    LSeries.L (dirichletVonMangoldtCoefficient q χ) s =
+      (∑ n ∈ Finset.range (N + 1),
+        LSeries.term (dirichletVonMangoldtCoefficient q χ) s n) +
+      (∑' k : ℕ,
+        dirichletVonMangoldtCoefficient q χ (k + N + 1) *
+          (((k + N + 1 : ℕ) : ℂ) ^ (-s))) := by
+  have hsum :
+      Summable (LSeries.term (dirichletVonMangoldtCoefficient q χ) s) :=
+    dirichlet_coefficient_LSeriesSummable q χ s hs
+  have hsplit := hsum.sum_add_tsum_nat_add (N + 1)
+  unfold LSeries.L
+  rw [hsplit]
+  congr 1
+  apply tsum_congr
+  intro k
+  exact dirichletVonMangoldt_LSeries_term_pos q (k + N + 1) χ s (by omega)
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
