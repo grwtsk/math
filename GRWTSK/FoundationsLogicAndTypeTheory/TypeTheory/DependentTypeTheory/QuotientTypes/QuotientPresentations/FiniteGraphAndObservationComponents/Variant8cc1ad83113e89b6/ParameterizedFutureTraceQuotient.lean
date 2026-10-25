@@ -18,7 +18,11 @@ Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provid
 Scope: Complete future-trace quotient core (first9 source declarations). Root selected this complete seam after full individual source/provider reads. Original whole-file documentation below is retained unchanged and can also describe other components. Historical providers remain literal; no stronger quotient, equivalence, canonicality or semantic law is inferred.
 -/
 
-import DAF.Causal.ObservableRecursion
+/- Dependency repair (2026-10-25): earlier provenance records historical
+providers. The explicit canonical provider below retains every declaration
+and proof body. Fresh compilation/kernel/axiom checks remain pending. -/
+
+import GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.FiniteGraphAndObservationComponents.Variantd5a8255ef12565e8.WholeDependentSystemAndFiniteTraceRun
 import Mathlib.Data.Quot
 import Mathlib.Logic.Equiv.Defs
 
