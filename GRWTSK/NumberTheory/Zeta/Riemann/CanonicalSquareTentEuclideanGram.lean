@@ -893,4 +893,40 @@ theorem relative_moment_gap_of_central_prime_budget
       ArithmeticFunction.vonMangoldt_nonneg)
   linarith
 
+/-! ## Central prime-count and logarithmic mass suppliers
+
+Prime counting alone does not furnish a uniform mass fraction without
+a quantitative comparison to the complete interval source. The
+following exact implication retains the actual logarithmic weight of
+each prime and the original central inventory.
+-/
+
+/-- Every central prime is at least n²+1, so its von Mangoldt weight
+is at least log(n²+1). This remains valid for n=0. -/
+theorem centralSquarePrime_log_lower (n p : ℕ)
+    (hp : p ∈ centralSquarePrimes n) :
+    Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) ≤
+      ArithmeticFunction.vonMangoldt p := by
+  have hprime : Nat.Prime p :=
+    (Finset.mem_filter.mp hp).2
+  have hleft : n ^ 2 < p :=
+    (Finset.mem_Ioc.mp
+      (centralSquareWitnesses_subset n
+        (Finset.mem_filter.mp hp).1)).1
+  rw [ArithmeticFunction.vonMangoldt_apply_prime hprime]
+  exact Real.log_le_log (by positivity) (by exact_mod_cast (Nat.succ_le_iff.mpr hleft))
+
+/-- A source-backed lower bound on the number of central primes gives
+a quantitative prime-only von Mangoldt mass lower bound. -/
+theorem centralSquarePrime_mass_ge_count_log (n : ℕ) :
+    (centralSquarePrimes n).card *
+        Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) ≤
+      ∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p := by
+  rw [← Finset.sum_const_zero] -- normalize the finite sum target
+  simp only [Finset.sum_const, nsmul_eq_mul]
+  apply Finset.sum_le_sum
+  intro p hp
+  exact centralSquarePrime_log_lower n p hp
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
