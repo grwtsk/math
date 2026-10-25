@@ -410,10 +410,15 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
       (t⁻¹ / (σ - 1)) t := by
     simpa only using
       (hlog.div_const (σ - 1)).add_const (1 / (σ - 1) ^ 2)
+  have hpower_split : t ^ (1 - σ) = t ^ (-σ) * t := by
+    conv_lhs => rw [show (1 - σ : ℝ) = -σ + 1 by ring]
+    rw [Real.rpow_add ht, Real.rpow_one]
   unfold logarithmicPowerTailPrimitive logarithmicPowerTailKernel
   convert (hpow.mul hinner).neg using 1
-  · field_simp
-    rw [← Real.rpow_sub ht]
+  · rw [hpower_split]
+    have htne : t ≠ 0 := ne_of_gt ht
+    have hpowneg : t ^ (-σ) = (t ^ σ)⁻¹ := Real.rpow_neg ht.le σ
+    rw [hpowneg]
     field_simp
     ring
   · rfl
