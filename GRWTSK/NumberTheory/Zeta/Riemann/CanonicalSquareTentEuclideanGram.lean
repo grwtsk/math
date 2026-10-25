@@ -68,4 +68,62 @@ theorem canonicalEuclideanGramOperator_eq_zero_iff (M : ℕ)
   rw [canonicalEuclideanGramOperator_toLp]
   exact (WithLp.toLp_eq_zero 2).trans (Iff.rfl)
 
+
+/-! ## Exact Hilbert pairing and operator-norm boundary
+
+The inner-product identification uses the actual finite Euclidean Hilbert
+space rather than a stand-in algebraic pairing. The operator norm is
+the maximum modulus of the genuine arithmetic diagonal coefficients
+at each finite stage. Consequently uniform operator norm control is
+equivalent to a uniform bound on these coefficients. Neither the bound
+nor an infinite-dimensional operator is claimed without the arithmetic
+supplier.
+-/
+
+/-- The real Hilbert model reproduces the FULL original polarized
+arithmetic source form, not just diagonal nonnegativity. -/
+theorem canonicalEuclideanGram_inner_eq_source (M : ℕ)
+    (u v : Combination M) :
+    inner ℂ (WithLp.toLp 2 u)
+        (canonicalEuclideanGramOperator M (WithLp.toLp 2 v)) =
+      sourcePolarizedForm u v := by
+  rw [canonicalEuclideanGramOperator_toLp]
+  calc
+    _ = coordinatePairing u (canonicalGramOperator M v) := by
+      simp [coordinatePairing, PiLp.inner_apply, RCLike.inner_apply,
+        mul_comm]
+    _ = sourcePolarizedForm u v :=
+      coordinatePairing_operator_eq_source u v
+
+/-- Exact finite-stage operator norm. The right side is the true
+coordinate supremum of the source-derived arithmetic masses. -/
+open scoped Matrix.Norms.L2Operator in
+theorem canonicalEuclideanGramOperator_norm_eq (M : ℕ) :
+    ‖canonicalEuclideanGramOperator M‖ =
+      ‖(fun i : Fin (M + 1) =>
+        (arithmeticCrossCoefficient i i : ℂ))‖ := by
+  change ‖Matrix.toEuclideanCLM
+      (Matrix.diagonal (fun i : Fin (M + 1) =>
+        (arithmeticCrossCoefficient i i : ℂ)))‖ =
+      ‖(fun i : Fin (M + 1) =>
+        (arithmeticCrossCoefficient i i : ℂ))‖
+  rw [Matrix.l2_opNorm_toEuclideanCLM, Matrix.l2_opNorm_diagonal]
+
+/-- A uniform bound on the growing finite Hilbert operators is EXACTLY
+a uniform modulus bound on all the actual finite-stage arithmetic
+coefficients. This theorem provides neither bound. -/
+theorem uniform_operator_norm_bound_iff_arithmetic_bound
+    (C : ℝ) (hC : 0 ≤ C) :
+    (∀ M : ℕ, ‖canonicalEuclideanGramOperator M‖ ≤ C) ↔
+      ∀ M : ℕ, ∀ i : Fin (M + 1),
+        ‖(arithmeticCrossCoefficient i i : ℂ)‖ ≤ C := by
+  constructor
+  · intro h M i
+    have hM := h M
+    rw [canonicalEuclideanGramOperator_norm_eq] at hM
+    exact (pi_norm_le_iff_of_nonneg hC).mp hM i
+  · intro h M
+    rw [canonicalEuclideanGramOperator_norm_eq]
+    exact (pi_norm_le_iff_of_nonneg hC).mpr (h M)
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
