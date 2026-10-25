@@ -639,4 +639,34 @@ theorem summable_norm_dirichletVonMangoldt_shifted
   exact norm_dirichletVonMangoldtCoefficient_mul_cpow_le q (k + N + 1) χ s
     (by omega)
 
+
+/-- Explicit shifted complex Dirichlet-tail norm bound in the
+half-plane of absolute convergence. No character cancellation is used. -/
+theorem norm_tsum_dirichletVonMangoldt_shifted_le
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (s : ℂ) (hs : 1 < s.re) (hN : 3 ≤ N) :
+    ‖∑' k : ℕ, dirichletVonMangoldtCoefficient q χ (k + N + 1) *
+        (((k + N + 1 : ℕ) : ℂ) ^ (-s))‖ ≤
+      (N : ℝ) ^ (1 - s.re) *
+        (Real.log (N : ℝ) / (s.re - 1) + 1 / (s.re - 1) ^ 2) := by
+  have hnorm := summable_norm_dirichletVonMangoldt_shifted q N χ s hs
+  have hterms : ∀ k : ℕ,
+      ‖dirichletVonMangoldtCoefficient q χ (k + N + 1) *
+          (((k + N + 1 : ℕ) : ℂ) ^ (-s))‖ ≤
+        logarithmicPowerTailKernel s.re (((k + N + 1 : ℕ) : ℝ)) := by
+    intro k
+    exact norm_dirichletVonMangoldtCoefficient_mul_cpow_le q (k + N + 1) χ s
+      (by omega)
+  calc
+    ‖∑' k : ℕ, dirichletVonMangoldtCoefficient q χ (k + N + 1) *
+        (((k + N + 1 : ℕ) : ℂ) ^ (-s))‖ ≤
+      ∑' k : ℕ, ‖dirichletVonMangoldtCoefficient q χ (k + N + 1) *
+        (((k + N + 1 : ℕ) : ℂ) ^ (-s))‖ := norm_tsum_le_tsum_norm hnorm
+    _ ≤ ∑' k : ℕ,
+        logarithmicPowerTailKernel s.re (((k + N + 1 : ℕ) : ℝ)) := by
+      exact Summable.tsum_le_tsum hterms hnorm
+        ((logarithmicPowerTailKernel_summable_nat s.re hs).comp_injective
+          (fun i j hij => by omega))
+    _ ≤ _ := logarithmicPowerTailKernel_tsum_add_le s.re N hs hN
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
