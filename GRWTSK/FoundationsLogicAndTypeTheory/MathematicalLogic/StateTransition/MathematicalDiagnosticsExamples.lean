@@ -91,4 +91,16 @@ theorem restricted_true_global_false :
     have impossible : (1 : Nat) = 0 := global 1
     cases impossible
 
+/-- A real scope transition uses both a domain inclusion and an
+inequality comparison; a diagnostic label cannot supply them. -/
+theorem arithmetic_scoped_transfer :
+    (∀ n : Nat, n ≤ 2 → n ≤ 2) →
+      (∀ n : Nat, n = 0 → n ≤ 3) := by
+  intro source
+  refine scoped_transfer source ?_ ?_
+  · intro n isZero
+    simp [isZero]
+  · intro n _ sourceBound
+    exact Nat.le_trans sourceBound (by decide)
+
 end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples
