@@ -946,4 +946,38 @@ theorem relative_moment_gap_of_central_prime_count
   apply relative_moment_gap_of_central_prime_budget n δ
   exact hcount.trans (centralSquarePrime_mass_ge_count_log n)
 
+/-! ## Explicit central prime-count threshold
+
+The global Chebyshev upper bound is available at the upper square
+endpoint, but supplies no central short-interval lower bound. We use
+it only as a denominator bound: a separately supplied central count
+of sufficient size implies the exact moment-gap budget.
+-/
+
+/-- A prime-count lower bound expressed against the cumulative
+Chebyshev quadratic upper envelope is sufficient for the actual
+complete square-interval source. The count hypothesis remains open. -/
+theorem relative_moment_gap_of_central_prime_count_chebyshev
+    (n : ℕ) (δ : ℝ) (hδ : 0 ≤ δ)
+    (hcount :
+      δ * ((Real.log 4 + 4) *
+        ((((n + 1) ^ 2 : ℕ) : ℝ))) ≤
+      (centralSquarePrimes n).card *
+        Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  have hfull : squareIncrement n ≤
+      (Real.log 4 + 4) * ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+    have hwindow : squareIncrement n ≤
+        _root_.Chebyshev.psi ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+      rw [GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget.squareIncrement_eq_nat_source]
+      simp only [GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_eq_mathlib_psi]
+      have hleft := _root_.Chebyshev.psi_nonneg ((((n ^ 2 : ℕ) : ℝ)))
+      linarith
+    exact hwindow.trans (_root_.Chebyshev.psi_le_const_mul_self
+      (x := ((((n + 1) ^ 2 : ℕ) : ℝ))) (by positivity))
+  apply relative_moment_gap_of_central_prime_count n δ
+  exact (mul_le_mul_of_nonneg_left hfull hδ).trans hcount
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
