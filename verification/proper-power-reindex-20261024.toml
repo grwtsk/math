@@ -1,0 +1,39 @@
+# Queued verification request only. Do not execute.
+schema_version = "0.1"
+request_id = "proper-power-reindex-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "8a6944d4bc74c986c5a57f18fd28b4eb0c08a6ee"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerReindex.lean"
+source_blob = "a07fa1b1087b58547c94c0e0ea9ec31c3364d461"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerReindex.rectangularProperPowerMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerReindex.rectangularProperPowerMass_swap",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitSplit",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Prove rectangularProperPowerMass equals nonunitProperPowerMass using finite sum reindexing",
+ "Prove unit of p^k iff unit of p for k>=2 and q>0",
+ "Reindex prime bases to finitePrimeDivisors q N",
+ "Derive logarithmic exponent-count bound",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerReindex.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerReindex"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerReindex.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom audit source>"

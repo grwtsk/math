@@ -1,0 +1,41 @@
+# Queued source-pinned verification only; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-box-sum-transport-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "293212a3ae5060c3eab6046f57d81f41a95e2f96"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerBoxSumTransport.lean"
+source_blob = "60fc30f5b52defebcfccd9a131a3ce31f0c758bb"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport.boxWeight",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport.boxWeight_eq_originalWeight",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport.box_sum_eq_originalSupportedMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleEquiv",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Normalize original dependent sum to supportedTriplePacketMass",
+ "Identify supportedTriplePacketMass with sum over BoxIndex",
+ "Normalize rectangular packet to rectangularSupportedMass",
+ "Compose original-to-rectangular proper-power mass equality",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerBoxSumTransport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerBoxSumTransport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

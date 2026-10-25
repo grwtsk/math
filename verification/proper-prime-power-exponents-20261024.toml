@@ -1,0 +1,44 @@
+# Queued source-pinned verification request; do not execute.
+schema_version = "0.1"
+request_id = "proper-prime-power-exponents-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "7877500fdf65a04c63f9a6c76250060d75f0a26e"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentCount.lean"
+source_blob = "6d61ac9047e3e086d5f37ae6aaa96fb32f01dd43"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+
+declarations = [
+  "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCount.properExponentCount",
+  "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCount.properExponentLogMass",
+  "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCount.properExponentLogMass_le",
+]
+direct_imports = [
+  "GRWTSK.NumberTheory.Primes.GoldbachNonunitCombinedBudget",
+  "Mathlib.Tactic",
+]
+downstream_targets = [
+  "GRWTSK.NumberTheory.Primes.GoldbachNonunitCombinedBudget.nonunitPsiMass_le_prime_count_add_proper",
+]
+missing_suppliers = [
+  "Reindex actual nonunit proper-prime-power mass by prime divisors of q and exponent",
+  "Prove prime-power representation uniqueness and canonical von Mangoldt identification",
+  "Bound exponent counts quantitatively by log N / log p",
+  "Prove unit/coprimality support for prime powers modulo positive q",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentCount.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCount"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentCount.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom-audit file>"

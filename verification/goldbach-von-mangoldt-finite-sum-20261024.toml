@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-finite-sum-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "93c7a61b3ca16be6bcf654b04ede558da6d581ad"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtFiniteSum.lean"
+source_blob = "51e0d24c6cf7ae5546f269f835c63d2fa7e3423c"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtFiniteSum.totalPsiMass_eq_vonMangoldt_sum"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise","GRWTSK.NumberTheory.Primes.GoldbachNonunitBudget"]
+exact_hypotheses = "N : Nat; inclusive range(N+1)"
+missing_suppliers = ["Identify finite inclusive sum with Mathlib Chebyshev.psi at natural argument","Residue-class and nonunit restricted sum identities","Full transitive Lean/kernel/axiom verification"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtFiniteSum"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtFiniteSum.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

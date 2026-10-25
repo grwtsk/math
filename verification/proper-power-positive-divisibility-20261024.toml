@@ -1,0 +1,38 @@
+# Queued source-pinned verification; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-positive-divisibility-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "53cbc8f43356c2979a4897a0dc48ab668297199c"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPowerDivisibility.lean"
+source_blob = "9b5ffeee06e15a88612e66668df0467a03df3864"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPowerDivisibility.base_dvd_positive_power",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeSupport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Positive-power coprimality iff base coprimality",
+ "ZMod unit iff Nat.Coprime with modulus, including q=0 and q=1",
+ "Prime p noncoprime to q iff p divides q",
+ "Discharge hsupport in nonunitProperPowerMass_eq_divisor_packet_of_support",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPowerDivisibility.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPowerDivisibility"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPowerDivisibility.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

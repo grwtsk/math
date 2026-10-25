@@ -1,0 +1,44 @@
+# Source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-proper-power-prime-zero-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "1db20dc233712d001a2a41da7c4232d32175cbd4"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtProperPowerPrimeZero.lean"
+source_blob = "ccb77212200b7cabf83667465b246a317beeaf2e"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_prime_source_path = "Mathlib/Data/Nat/Prime/Basic.lean"
+pinned_prime_source_blob = "e059d0ae408fdf5dcf90e34afbcc397a2f880a9b"
+pinned_von_mangoldt_source_path = "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean"
+pinned_von_mangoldt_source_blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerPrimeZero.primeLogWeight_prime_pow_eq_zero",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerPrimeZero.vonMangoldt_prime_pow_eq_log",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerValue",
+ "Mathlib.Data.Nat.Prime.Basic",
+ "Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt",
+]
+exact_hypotheses = "p k : Nat; k>=2; Nat.Prime p for canonical von Mangoldt identity"
+missing_suppliers = [
+ "Compose primePowerWeight (p^k)=vonMangoldt (p^k)",
+ "Prove non-prime-power and n=0,1 zero cases",
+ "Prove pointwise primePowerWeight=canonical vonMangoldt for all n",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtProperPowerPrimeZero.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerPrimeZero"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtProperPowerPrimeZero.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

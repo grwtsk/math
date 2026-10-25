@@ -1,0 +1,38 @@
+# Queued verification only; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-fiber-membership-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "363011edda451d32f2dd970ac83247f44afb38cf"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberMembership.lean"
+source_blob = "dfa2511d5ab831305d3a622eb190bf9b64895910"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberMembership.pairSupport_iff_originalSupport",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSum",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Flatten n-indexed pairSupportAt fibers to supportedTripleBox",
+ "Normalize rectangularProperPowerMass to rectangularSupportedMass",
+ "Compose original-to-rectangular mass equality",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberMembership.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberMembership"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberMembership.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

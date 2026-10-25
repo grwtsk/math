@@ -73,4 +73,45 @@ theorem Intertwines.comp
   rw [defect_comp, hU, hV]
   simp
 
+
+section QuantitativeGapTransport
+
+variable {X : Type*} [NormedAddCommGroup X] [NormedSpace ℝ X]
+variable {Y : Type*} [SeminormedAddCommGroup Y] [NormedSpace ℝ Y]
+
+/-- A small bounded intertwining defect preserves injectivity of the transported
+operator when the reference composite has a quantitative lower norm bound.
+
+This extends the perturbation-injectivity argument used in the OpenAI
+Navier–Stokes finite-rank gap stack to distinct source and target spaces.
+The gap is an explicit hypothesis, not a consequence of the defect bound. -/
+theorem injective_of_defect_lt_gap
+    (U : X →L[ℝ] Y) (D_X : X →L[ℝ] X) (D_Y : Y →L[ℝ] Y)
+    {γ : ℝ}
+    (hgap : ∀ x, γ * ‖x‖ ≤ ‖(U.comp D_X) x‖)
+    (hsmall : ‖defect U D_X D_Y‖ < γ) :
+    Function.Injective (D_Y.comp U) := by
+  intro x y hxy
+  have hz : (D_Y.comp U) (x - y) = 0 := by
+    rw [map_sub, hxy, sub_self]
+  have hd : ‖(U.comp D_X) (x - y)‖ =
+      ‖(defect U D_X D_Y) (x - y)‖ := by
+    simp [defect, hz]
+  have hle : ‖(U.comp D_X) (x - y)‖ ≤
+      ‖defect U D_X D_Y‖ * ‖x - y‖ := by
+    rw [hd]
+    exact (defect U D_X D_Y).le_opNorm (x - y)
+  have hbound : γ * ‖x - y‖ ≤ ‖defect U D_X D_Y‖ * ‖x - y‖ :=
+    (hgap (x - y)).trans hle
+  have hzero : ‖x - y‖ = 0 := by
+    by_contra hn
+    have hp : 0 < ‖x - y‖ :=
+      lt_of_le_of_ne (norm_nonneg _) (Ne.symm hn)
+    have hlt : ‖defect U D_X D_Y‖ * ‖x - y‖ <
+        γ * ‖x - y‖ := mul_lt_mul_of_pos_right hsmall hp
+    exact (lt_irrefl _) (hbound.trans_lt hlt)
+  exact sub_eq_zero.mp (norm_eq_zero.mp hzero)
+
+end QuantitativeGapTransport
+
 end GRWTSK.Analysis.OperatorTheory.BoundedPortDefect

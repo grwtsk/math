@@ -1,0 +1,41 @@
+# Exact finite reindexing proof obligation, queued only.
+schema_version = "0.1"
+request_id = "proper-power-subtype-normalizations-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f551a6cae366403d654152bcad512771dc8936e8"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[obligation]]
+name = "original_subtype_normalization"
+module = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalPacket.lean"
+source_blob = "8e7c837452010d0d63cd9585a634679783e1daea"
+statement = "forall q N, originalPacketMass q N = originalSupportedMass q N"
+strategy = "Use a supported triple sigma index over n in range(N+1), p in range(n+1), k in Icc 2 n, filter prime p and p^k=n. Move nonunit indicator to summand; identify filtered triple with OriginalIndex. Preserve every pair and multiplicity."
+
+[[obligation]]
+name = "rectangular_subtype_normalization"
+module = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPacket.lean"
+source_blob = "7015d7c6d77cb067f974308e300f1994e61a0b7c"
+statement = "forall q N, rectangularProperPowerMass q N = rectangularSupportedMass q N"
+strategy = "Use Finset product of range(N+1) and Icc 2 N, filter Nat.Prime p and p^k<=N. Identify the filtered pair with RectangularIndex; retain nonunit indicator as summand."
+
+[[obligation]]
+name = "compose_exact_reindex"
+module = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerIndexEquiv.lean"
+source_blob = "6afda480732ebb79244863f10f9b5ebd8fdd13b8"
+statement = "forall q N, nonunitProperPowerMass q N = rectangularProperPowerMass q N"
+strategy = "Compose definitional original packet identity, original subtype normalization, supported-index sum transport, and rectangular subtype normalization. No assumed reindex equality."
+
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPacket GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPacket GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
+receipts = "NOT_RUN"

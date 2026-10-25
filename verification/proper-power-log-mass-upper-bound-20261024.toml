@@ -1,0 +1,41 @@
+# P0 source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-log-mass-upper-bound-20261024"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "a25ce2d391a1bb537e6dffaaf7ff02ddf10d8a67"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerLogMassUpperBound.lean"
+source_blob = "a97d82e2e693222c112d4e44954f23a9b7bd758d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogMassUpperBound.nonunitProperPowerMass_le_log2_primeDivisorLogSum",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentMassComposition",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogMassBound",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "forall q N : Nat; no additional assumptions"
+mathematical_class = "finite_quantitative_source_candidate"
+missing_suppliers = [
+ "Compare prime-divisor logarithmic sum with an exact arithmetic function if justified",
+ "Separate any prime-density or prime-counting error transfer from finite correction",
+ "Pinned Lean compilation, fresh kernel checking, and transitive axiom audit",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerLogMassUpperBound.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogMassUpperBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerLogMassUpperBound.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

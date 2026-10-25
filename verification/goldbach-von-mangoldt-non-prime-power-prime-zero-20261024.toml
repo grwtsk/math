@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-non-prime-power-prime-zero-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f1054659d6b886d92a85d0560fd73a2676b7088e"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonPrimePowerPrimeZero.lean"
+source_blob = "845df4554ef5685622d4c6edcd68d157ee58f08f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerPrimeZero.primeLogWeight_eq_zero_of_not_prime_pow"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerZero","Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt"]
+exact_hypotheses = "n : Nat; not IsPrimePow n"
+missing_suppliers = ["Compose full primePowerWeight=0 outside prime powers","Compare with vonMangoldt_eq_zero_iff","Universal pointwise identification"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerPrimeZero"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonPrimePowerPrimeZero.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

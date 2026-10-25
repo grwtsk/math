@@ -1,9 +1,14 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Local mathematical attribution: grwtsk contributors.
 Source argument: Ram Band, Siegfried Beckus, Raphael Loewy, arXiv:2402.16703v2,
 Theorem 1.1 proof using Theorem 1.10. Mathlib authorship and licenses remain upstream. -/
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 import Mathlib.Tactic
+import Mathlib.Analysis.Normed.Group.Basic
+import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+import Mathlib.Analysis.InnerProductSpace.Adjoint
+import Mathlib.Analysis.InnerProductSpace.LinearPMap
+import GRWTSK.Analysis.OperatorTheory.BoundedPortDefect
 
 set_option autoImplicit false
 
@@ -180,5 +185,664 @@ theorem collapsed_coding_not_injective :
   intro h
   have hbad : true = false := h rfl
   cases hbad
+
+/-- A quantitative sector-completeness supplier: controlling both orthogonal
+sector energies controls their sum. The inputs are squared norms and energy
+contributions; identifying them with an actual physical Hamiltonian is a
+separate theorem. -/
+theorem full_energy_lower_bound_of_two_sectors
+    {delta a b energy₁ energy₂ : ℝ}
+    (hdelta : 0 ≤ delta) (ha : 0 ≤ a) (hb : 0 ≤ b)
+    (hfirst : delta * a ≤ energy₁)
+    (hsecond : delta * b ≤ energy₂) :
+    delta * (a + b) ≤ energy₁ + energy₂ := by
+  nlinarith
+
+/-- A gapped sector alone cannot impose a positive lower bound on an
+uncontrolled complementary sector. This is an algebraic obstruction, not a
+Yang--Mills counterexample. -/
+theorem one_sector_gap_insufficient :
+    ∀ delta : ℝ, 0 < delta →
+      ∃ a b energy₁ energy₂ : ℝ,
+        0 ≤ a ∧ 0 ≤ b ∧ delta * a ≤ energy₁ ∧
+        0 ≤ energy₂ ∧ energy₁ + energy₂ < delta * (a + b) := by
+  intro delta hdelta
+  refine ⟨0, 1, 0, 0, by norm_num, by norm_num, ?_, by norm_num, ?_⟩
+  · norm_num
+  · simpa using hdelta
+
+/-- Hilbert-space energy comparison with the exact norm decomposition supplied.
+The Pythagorean identity and energy splitting are hypotheses, not inferred from
+an arbitrary lift. This is a conditional quadratic-form supplier, not a
+physical Yang--Mills Hamiltonian construction. -/
+theorem norm_energy_lower_bound_of_two_sectors
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta energy energy₁ energy₂ : ℝ)
+    (hdelta : 0 ≤ delta)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (henergy : energy₁ + energy₂ ≤ energy)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    delta * ‖x‖ ^ 2 ≤ energy := by
+  calc
+    delta * ‖x‖ ^ 2 = delta * (‖x₁‖ ^ 2 + ‖x₂‖ ^ 2) := by rw [hnorm]
+    _ = delta * ‖x₁‖ ^ 2 + delta * ‖x₂‖ ^ 2 := mul_add _ _ _
+    _ ≤ energy₁ + energy₂ := add_le_add hfirst hsecond
+    _ ≤ energy := henergy
+
+/-- A nonnegative cross term is sufficient for the full energy to dominate the
+sum of the two sector energies. No operator invariance is inferred. -/
+theorem energy_domination_of_nonnegative_cross_term
+    {energy energy₁ energy₂ cross : ℝ}
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hcross : 0 ≤ cross) :
+    energy₁ + energy₂ ≤ energy := by
+  rw [hsplit]
+  linarith
+
+/-- Conditional Hilbert-space form comparison with an explicitly controlled
+cross term. Orthogonality and the energy identity must be established for each
+concrete operator; this theorem does not construct a Yang--Mills Hamiltonian. -/
+theorem norm_energy_lower_bound_of_nonnegative_cross_term
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta energy energy₁ energy₂ cross : ℝ)
+    (hdelta : 0 ≤ delta)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hcross : 0 ≤ cross)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    delta * ‖x‖ ^ 2 ≤ energy := by
+  exact norm_energy_lower_bound_of_two_sectors x x₁ x₂ delta energy energy₁ energy₂
+    hdelta hnorm (energy_domination_of_nonnegative_cross_term hsplit hcross)
+    hfirst hsecond
+
+/-- A negative cross term is admissible when its magnitude is bounded by a
+strictly smaller fraction of the sector coercivity. This makes explicit the
+quantitative loss of the gap, rather than assuming cross-term positivity. -/
+theorem norm_energy_lower_bound_of_controlled_cross_term
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta epsilon energy energy₁ energy₂ cross : ℝ)
+    (hdelta : 0 ≤ delta) (hepsilon : 0 ≤ epsilon)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hcross : -(epsilon * ‖x‖ ^ 2) ≤ cross)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ energy := by
+  have hsectors : delta * ‖x‖ ^ 2 ≤ energy₁ + energy₂ := by
+    rw [hnorm, mul_add]
+    exact add_le_add hfirst hsecond
+  rw [hsplit]
+  have hrewrite : (delta - epsilon) * ‖x‖ ^ 2 =
+      delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
+  rw [hrewrite]
+  linarith
+
+/-- Uniform sector and cross-term estimates yield a strictly positive common
+coercivity constant. The quantified parameter may represent a regulator; no
+continuum convergence or Yang--Mills identification is supplied. -/
+theorem uniform_gap_of_controlled_cross_terms
+    {H : Type*} [NormedAddCommGroup H]
+    {I : Type*} (x x₁ x₂ : I → H)
+    (energy energy₁ energy₂ cross : I → ℝ)
+    (delta epsilon : ℝ)
+    (hpositive : epsilon < delta)
+    (hnorm : ∀ i, ‖x i‖ ^ 2 = ‖x₁ i‖ ^ 2 + ‖x₂ i‖ ^ 2)
+    (hsplit : ∀ i, energy i = energy₁ i + energy₂ i + cross i)
+    (hcross : ∀ i, -(epsilon * ‖x i‖ ^ 2) ≤ cross i)
+    (hfirst : ∀ i, delta * ‖x₁ i‖ ^ 2 ≤ energy₁ i)
+    (hsecond : ∀ i, delta * ‖x₂ i‖ ^ 2 ≤ energy₂ i) :
+    0 < delta - epsilon ∧
+      ∀ i, (delta - epsilon) * ‖x i‖ ^ 2 ≤ energy i := by
+  constructor
+  · exact sub_pos.mpr hpositive
+  · intro i
+    have hsectors : delta * ‖x i‖ ^ 2 ≤ energy₁ i + energy₂ i := by
+      rw [hnorm i, mul_add]
+      exact add_le_add (hfirst i) (hsecond i)
+    rw [hsplit i]
+    have hrewrite : (delta - epsilon) * ‖x i‖ ^ 2 =
+        delta * ‖x i‖ ^ 2 - epsilon * ‖x i‖ ^ 2 := sub_mul _ _ _
+    rw [hrewrite]
+    linarith [hcross i]
+
+/-- A cross interaction bounded by the product of sector amplitudes can be
+absorbed into the sum of their squared amplitudes. This is the elementary
+estimate needed before applying a two-sector form comparison. -/
+theorem cross_amplitude_absorption
+    (epsilon a b : ℝ) (hepsilon : 0 ≤ epsilon) :
+    -(epsilon * (a ^ 2 + b ^ 2)) ≤ -(2 * epsilon * |a * b|) := by
+  have hsquare : 0 ≤ (|a| - |b|) ^ 2 := sq_nonneg (|a| - |b|)
+  have hproduct : |a * b| = |a| * |b| := abs_mul a b
+  have ha : |a| ^ 2 = a ^ 2 := sq_abs a
+  have hb : |b| ^ 2 = b ^ 2 := sq_abs b
+  rw [hproduct, ← ha, ← hb]
+  nlinarith [mul_nonneg hepsilon hsquare]
+
+/-- A bilinear interaction bound on the two sector norms supplies the
+controlled-cross-term hypothesis. Orthogonality and form decomposition remain
+explicit; no physical Hamiltonian is constructed here. -/
+theorem norm_energy_lower_bound_of_bilinear_interaction
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta epsilon energy energy₁ energy₂ cross : ℝ)
+    (hepsilon : 0 ≤ epsilon)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hinteraction : -(2 * epsilon * |‖x₁‖ * ‖x₂‖|) ≤ cross)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ energy := by
+  have habsorb := cross_amplitude_absorption epsilon ‖x₁‖ ‖x₂‖ hepsilon
+  have hcross : -(epsilon * ‖x‖ ^ 2) ≤ cross := by
+    rw [hnorm]
+    exact habsorb.trans hinteraction
+  have hsectors : delta * ‖x‖ ^ 2 ≤ energy₁ + energy₂ := by
+    rw [hnorm, mul_add]
+    exact add_le_add hfirst hsecond
+  rw [hsplit]
+  have hrewrite : (delta - epsilon) * ‖x‖ ^ 2 =
+      delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
+  rw [hrewrite]
+  linarith
+
+/-- The two-sector norm decomposition is derived from an actual orthogonal
+projection, rather than postulated. The energy comparison is still an explicit
+hypothesis and must be proved for any intended physical Hamiltonian. -/
+theorem projection_sector_energy_lower_bound
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (x : H) (delta energy energy₁ energy₂ : ℝ)
+    (hdelta : 0 ≤ delta)
+    (henergy : energy₁ + energy₂ ≤ energy)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤ energy₂) :
+    delta * ‖x‖ ^ 2 ≤ energy := by
+  exact norm_energy_lower_bound_of_two_sectors
+    x (S.starProjection x) (Sᗮ.starProjection x)
+    delta energy energy₁ energy₂ hdelta
+    (S.norm_sq_eq_add_norm_sq_starProjection x) henergy hfirst hsecond
+
+/-- A projected two-sector energy bound with a quantified interaction loss.
+The projections provide the Pythagorean identity; the energy decomposition and
+interaction estimate remain assumptions about a concrete quadratic form. -/
+theorem projection_sector_energy_lower_bound_of_interaction
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (x : H) (delta epsilon energy energy₁ energy₂ cross : ℝ)
+    (hepsilon : 0 ≤ epsilon)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hinteraction :
+      -(2 * epsilon * |‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖|) ≤ cross)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤ energy₂) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ energy := by
+  exact norm_energy_lower_bound_of_bilinear_interaction
+    x (S.starProjection x) (Sᗮ.starProjection x)
+    delta epsilon energy energy₁ energy₂ cross hepsilon
+    (S.norm_sq_eq_add_norm_sq_starProjection x)
+    hsplit hinteraction hfirst hsecond
+
+/-- An actual bounded linear operator decomposes along complementary orthogonal
+projections. This is an operator identity, not a postulated energy splitting.
+No invariance of either projected sector under the operator is asserted. -/
+theorem continuous_operator_projection_decomposition
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    T x = T (S.starProjection x) + T (Sᗮ.starProjection x) := by
+  conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
+  exact map_add T _ _
+
+/-- Exact four-term inner-product expansion along complementary projections.
+No self-adjointness or cross-term sign is inferred. -/
+theorem continuous_operator_projection_inner_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    inner 𝕜 (T x) x =
+      inner 𝕜 (T (S.starProjection x)) (S.starProjection x) +
+      inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) +
+      inner 𝕜 (T (Sᗮ.starProjection x)) (S.starProjection x) +
+      inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x) := by
+  rw [continuous_operator_projection_decomposition S T x]
+  conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
+  simp only [inner_add_left, inner_add_right]
+  abel
+
+/-- For a bounded self-adjoint operator, the two off-diagonal pairings
+are conjugate. This identifies the real interaction term without asserting
+that it is small or positive. -/
+theorem self_adjoint_projection_cross_conjugate
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H) :
+    inner 𝕜 (T (Sᗮ.starProjection x)) (S.starProjection x) =
+      star (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) := by
+  have hs := hT.isSymmetric (Sᗮ.starProjection x) (S.starProjection x)
+  rw [hs]
+  exact inner_conj_symm _ _
+
+/-- The self-adjoint projected energy pairing has conjugate off-diagonal
+contributions. The real-part reduction and quantitative bound are separate. -/
+theorem self_adjoint_projection_energy_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H) :
+    inner 𝕜 (T x) x =
+      inner 𝕜 (T (S.starProjection x)) (S.starProjection x) +
+      inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) +
+      star (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) +
+      inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x) := by
+  rw [continuous_operator_projection_inner_expansion S T x]
+  rw [self_adjoint_projection_cross_conjugate S T hT x]
+
+/-- The real energy of a bounded self-adjoint operator decomposes into
+diagonal sector energies and twice the real off-diagonal pairing. -/
+theorem self_adjoint_projection_real_energy_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H) :
+    RCLike.re (inner 𝕜 (T x) x) =
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)) +
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)) +
+      2 * RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) := by
+  have h := self_adjoint_projection_energy_expansion S T hT x
+  rw [h]
+  simp only [map_add, RCLike.re_conj]
+  ring
+
+/-- The real quadratic form of a bounded self-adjoint operator inherits a
+coercivity bound from both projected sectors and a controlled real interaction.
+The interaction bound is explicit and must be proved for any concrete model. -/
+theorem self_adjoint_projection_coercivity_of_interaction
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H)
+    (delta epsilon : ℝ) (hepsilon : 0 ≤ epsilon)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)))
+    (hcross : -(epsilon * ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖) ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x))) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ RCLike.re (inner 𝕜 (T x) x) := by
+  apply projection_sector_energy_lower_bound_of_interaction
+    S x delta epsilon
+    (RCLike.re (inner 𝕜 (T x) x))
+    (RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)))
+    (2 * RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)))
+    hepsilon
+  · exact self_adjoint_projection_real_energy_expansion S T hT x
+  · have hnorm : 0 ≤ ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖ :=
+      mul_nonneg (norm_nonneg _) (norm_nonneg _)
+    rw [abs_of_nonneg hnorm]
+    nlinarith [hcross]
+  · exact hfirst
+  · exact hsecond
+
+/-- The off-diagonal real pairing is bounded below by the operator norm
+of the bounded interaction. This is a general Cauchy--Schwarz supplier,
+not a smallness theorem for any particular gauge Hamiltonian. -/
+theorem projected_cross_lower_bound_of_operator_norm
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (T : H →L[𝕜] H) (u v : H) :
+    -(‖T‖ * ‖u‖ * ‖v‖) ≤ RCLike.re (inner 𝕜 (T u) v) := by
+  have hre : -(‖inner 𝕜 (T u) v‖) ≤
+      RCLike.re (inner 𝕜 (T u) v) := by
+    have hneg := RCLike.re_le_norm (-(inner 𝕜 (T u) v))
+    simpa only [map_neg, norm_neg, neg_neg] using (neg_le_neg hneg)
+  have hinner : ‖inner 𝕜 (T u) v‖ ≤ ‖T u‖ * ‖v‖ :=
+    norm_inner_le_norm _ _
+  have hop : ‖T u‖ ≤ ‖T‖ * ‖u‖ := T.le_opNorm u
+  have hprod : ‖T u‖ * ‖v‖ ≤ (‖T‖ * ‖u‖) * ‖v‖ :=
+    mul_le_mul_of_nonneg_right hop (norm_nonneg _)
+  have hbound : ‖inner 𝕜 (T u) v‖ ≤ ‖T‖ * ‖u‖ * ‖v‖ :=
+    hinner.trans hprod
+  linarith
+
+/-- The bounded off-diagonal block between complementary orthogonal sectors. -/
+def offDiagonalBlock
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) : H →L[𝕜] H :=
+  (Sᗮ.starProjection).comp (T.comp S.starProjection)
+
+/-- The off-diagonal block has the same cross-sector pairing as the
+unprojected operator. -/
+theorem offDiagonalBlock_pairing
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    inner 𝕜 ((offDiagonalBlock S T) x) (Sᗮ.starProjection x) =
+      inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) := by
+  simp only [offDiagonalBlock, ContinuousLinearMap.comp_apply]
+  rw [Sᗮ.inner_starProjection_left_eq_right]
+  rw [Sᗮ.starProjection_eq_self_iff.mpr (Sᗮ.starProjection_apply_mem x)]
+
+/-- Quantitative cross-sector estimate using the off-diagonal block norm
+rather than the norm of the entire bounded operator. -/
+theorem offDiagonalBlock_cross_lower_bound
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    -(‖offDiagonalBlock S T‖ * ‖S.starProjection x‖ *
+        ‖Sᗮ.starProjection x‖) ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) := by
+  have h := projected_cross_lower_bound_of_operator_norm
+    (offDiagonalBlock S T) (S.starProjection x) (Sᗮ.starProjection x)
+  have hblock : (offDiagonalBlock S T) (S.starProjection x) =
+      (offDiagonalBlock S T) x := by
+    simp only [offDiagonalBlock, ContinuousLinearMap.comp_apply]
+    rw [S.starProjection_eq_self_iff.mpr (S.starProjection_apply_mem x)]
+  rw [hblock, offDiagonalBlock_pairing S T x] at h
+  exact h
+
+/-- The off-diagonal block norm is the exact interaction-loss constant in
+the bounded self-adjoint two-sector coercivity criterion. This does not
+supply diagonal coercivity for a concrete physical Hamiltonian. -/
+theorem self_adjoint_coercivity_of_offDiagonalBlock
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H)
+    (delta : ℝ)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x))) :
+    (delta - ‖offDiagonalBlock S T‖) * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T x) x) := by
+  exact self_adjoint_projection_coercivity_of_interaction S T hT x
+    delta ‖offDiagonalBlock S T‖ (norm_nonneg _) hfirst hsecond
+    (offDiagonalBlock_cross_lower_bound S T x)
+
+
+/-- An operator's global real quadratic-form bound supplies an operator-norm
+lower bound by Cauchy--Schwarz. This does not manufacture coercivity. -/
+theorem norm_gap_of_quadratic_bound
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (T : H →L[𝕜] H) (γ : ℝ)
+    (hquad : ∀ x : H, γ * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T x) x)) :
+    ∀ x : H, γ * ‖x‖ ≤ ‖T x‖ := by
+  intro x
+  have hcs : RCLike.re (inner 𝕜 (T x) x) ≤ ‖T x‖ * ‖x‖ :=
+    (RCLike.re_le_norm _).trans (norm_inner_le_norm _ _)
+  have hmul : (γ * ‖x‖) * ‖x‖ ≤ ‖T x‖ * ‖x‖ := by
+    calc
+      (γ * ‖x‖) * ‖x‖ = γ * ‖x‖ ^ 2 := by ring
+      _ ≤ RCLike.re (inner 𝕜 (T x) x) := hquad x
+      _ ≤ ‖T x‖ * ‖x‖ := hcs
+  by_cases hz : ‖x‖ = 0
+  · simpa [hz] using (norm_nonneg (T x))
+  · have hp : 0 < ‖x‖ :=
+      lt_of_le_of_ne (norm_nonneg _) (Ne.symm hz)
+    exact (mul_le_mul_iff_of_pos_right hp).mp hmul
+
+/-- Global diagonal sector coercivity, with the exact norm of the
+off-diagonal block paid, supplies the quantitative gap required by
+bounded-port perturbation arguments. -/
+theorem self_adjoint_norm_gap_of_offDiagonalBlock
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (delta : ℝ)
+    (hfirst : ∀ x : H, delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : ∀ x : H, delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x))) :
+    ∀ x : H, (delta - ‖offDiagonalBlock S T‖) * ‖x‖ ≤ ‖T x‖ := by
+  apply norm_gap_of_quadratic_bound T (delta - ‖offDiagonalBlock S T‖)
+  intro x
+  exact self_adjoint_coercivity_of_offDiagonalBlock S T hT x delta
+    (hfirst x) (hsecond x)
+
+/-- Real self-adjoint spectral coercivity plus a strict bounded-port
+intertwining-defect estimate yields injectivity of the transported map.
+The sector inequalities are global hypotheses; this does not establish
+them for a particular PDE, Hamiltonian or infinite-volume spectrum. -/
+theorem self_adjoint_injective_of_offDiagonalBlock_small_defect
+    {H : Type*} [NormedAddCommGroup H]
+    [InnerProductSpace ℝ H] [CompleteSpace H]
+    (S : Submodule ℝ H) [S.HasOrthogonalProjection]
+    (T P : H →L[ℝ] H) (hT : IsSelfAdjoint T) (delta : ℝ)
+    (hfirst : ∀ x : H, delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner ℝ (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : ∀ x : H, delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner ℝ (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)))
+    (hdefect : ‖GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.defect
+      (ContinuousLinearMap.id ℝ H) T P‖ < delta - ‖offDiagonalBlock S T‖) :
+    Function.Injective P := by
+  have hgap : ∀ x : H,
+      (delta - ‖offDiagonalBlock S T‖) * ‖x‖ ≤
+        ‖((ContinuousLinearMap.id ℝ H).comp T) x‖ := by
+    intro x
+    simpa using
+      (self_adjoint_norm_gap_of_offDiagonalBlock S T hT delta hfirst hsecond x)
+  have hi :=
+    GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.injective_of_defect_lt_gap
+      (ContinuousLinearMap.id ℝ H) T P hgap hdefect
+  simpa using hi
+
+/-- If one orthogonal projection preserves the domain of a partially defined
+operator, the complementary projection preserves it too. This is an actual
+operator-domain statement, not an assertion about its closed form domain. -/
+theorem linearPMap_complementary_projection_mem_domain
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (x : H)
+    (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    S.starProjection x ∈ A.domain ∧ Sᗮ.starProjection x ∈ A.domain := by
+  have hp := hstable x hx
+  refine ⟨hp, ?_⟩
+  have hq : Sᗮ.starProjection x = x - S.starProjection x := by
+    have hsum := S.starProjection_add_starProjection_orthogonal x
+    have hsum' : Sᗮ.starProjection x + S.starProjection x = x := by
+      rw [add_comm]
+      exact hsum
+    exact (eq_sub_iff_add_eq).2 hsum'
+  rw [hq]
+  exact A.domain.sub_mem hx hp
+
+/-- A partially defined linear operator splits along complementary projections
+when its domain is preserved. All three applications carry domain witnesses;
+this does not imply that either sector is invariant under the operator. -/
+theorem linearPMap_projection_decomposition
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (x : H)
+    (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    A ⟨x, hx⟩ =
+      A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩ +
+      A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩ := by
+  let xp : A.domain :=
+    ⟨S.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩
+  let xq : A.domain :=
+    ⟨Sᗮ.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩
+  have hsum : (⟨x, hx⟩ : A.domain) = xp + xq := by
+    apply Subtype.ext
+    exact (S.starProjection_add_starProjection_orthogonal x).symm
+  change A.toFun ⟨x, hx⟩ = A.toFun xp + A.toFun xq
+  rw [hsum]
+  exact map_add A.toFun xp xq
+
+/-- Exact four-term energy pairing for a partially defined operator on a
+projection-stable domain. This does not assert symmetry or form closure. -/
+theorem linearPMap_projection_inner_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (x : H)
+    (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    inner 𝕜 (A ⟨x, hx⟩) x =
+      inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x) +
+      inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x) +
+      inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (S.starProjection x) +
+      inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x) := by
+  rw [linearPMap_projection_decomposition S A x hx hstable]
+  conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
+  simp only [inner_add_left, inner_add_right]
+  abel
+
+/-- Formal-adjoint symmetry gives conjugate off-diagonal pairings for
+domain-qualified projected states of a partially defined operator. -/
+theorem linearPMap_projection_cross_conjugate
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    inner 𝕜
+      (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+      (S.starProjection x) =
+    star (inner 𝕜
+      (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+      (Sᗮ.starProjection x)) := by
+  let xp : A.domain :=
+    ⟨S.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩
+  let xq : A.domain :=
+    ⟨Sᗮ.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩
+  have hs := hA xq xp
+  rw [hs]
+  exact inner_conj_symm _ _
+
+/-- The domain-qualified pairing expansion for a formally symmetric partial
+operator, with the off-diagonal conjugacy made explicit. -/
+theorem linearPMap_symmetric_projection_energy_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    inner 𝕜 (A ⟨x, hx⟩) x =
+      inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x) +
+      inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x) +
+      star (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x)) +
+      inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x) := by
+  rw [linearPMap_projection_inner_expansion S A x hx hstable]
+  rw [linearPMap_projection_cross_conjugate S A hA x hx hstable]
+
+/-- The real quadratic energy of a formally symmetric partially defined
+operator splits into two diagonal energies and twice the real interaction.
+All operator applications retain explicit domain witnesses. -/
+theorem linearPMap_symmetric_projection_real_energy
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    RCLike.re (inner 𝕜 (A ⟨x, hx⟩) x) =
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x)) +
+      RCLike.re (inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x)) +
+      2 * RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x)) := by
+  have h := linearPMap_symmetric_projection_energy_expansion
+    S A hA x hx hstable
+  rw [h]
+  simp only [map_add, RCLike.re_conj]
+  ring
+
+/-- A quantitative coercivity criterion on the genuine domain of a formally
+symmetric partial operator. The interaction estimate is explicit; no bounded
+off-diagonal operator or closed quadratic-form extension is inferred. -/
+theorem linearPMap_symmetric_projection_coercivity
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain)
+    (delta epsilon : ℝ) (hepsilon : 0 ≤ epsilon)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x)))
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x)))
+    (hcross : -(epsilon * ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖) ≤
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x))) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨x, hx⟩) x) := by
+  have hnorm := S.norm_sq_eq_add_norm_sq_starProjection x
+  have henergy := linearPMap_symmetric_projection_real_energy S A hA x hx hstable
+  have hsectors : delta * ‖x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (S.starProjection x)) +
+      RCLike.re (inner 𝕜 (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+        (Sᗮ.starProjection x)) := by
+    rw [hnorm, mul_add]
+    exact add_le_add hfirst hsecond
+  have hmul : 2 * ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖ ≤
+      ‖x‖ ^ 2 := by
+    rw [hnorm]
+    nlinarith [sq_nonneg (‖S.starProjection x‖ - ‖Sᗮ.starProjection x‖)]
+  have hcrossTotal : -(epsilon * ‖x‖ ^ 2) ≤
+      2 * RCLike.re (inner 𝕜 (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+        (Sᗮ.starProjection x)) := by
+    nlinarith [mul_nonneg hepsilon (sub_nonneg.mpr hmul), hcross]
+  rw [henergy]
+  have hrewrite : (delta - epsilon) * ‖x‖ ^ 2 =
+      delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
+  rw [hrewrite]
+  linarith
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport

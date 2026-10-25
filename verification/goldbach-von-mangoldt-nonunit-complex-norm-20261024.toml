@@ -1,0 +1,26 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-nonunit-complex-norm-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "27a38364e2e09b7630453e8a2e06855fd952b493"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitComplexNorm.lean"
+source_blob = "749e814702be001cef15275793ab70e5ced21da3"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm.norm_nonunitPsiTotal_le_log_correction"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitCharacterBridge","GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitLogBound","Mathlib.Tactic"]
+exact_hypotheses = "q N : Nat; q != 0"
+mathematical_class = "finite_complex_norm_source_candidate"
+missing_suppliers = ["Confirm Complex.norm_real and Real.norm_eq_abs rewrite elaboration","Integrate norm bound with unit/nonunit character reconstruction without discharging character hypotheses","Pinned transitive Lean compilation, fresh kernel check and axiom audit"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitComplexNorm.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

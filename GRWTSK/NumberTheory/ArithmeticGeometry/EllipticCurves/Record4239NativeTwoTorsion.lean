@@ -4,7 +4,7 @@ The elliptic-curve record and 32 points are due to Noam Elkies,
 Zev Klagsbrun, and Samuel Li (ICARM #4239, 2026-10-15).
 The genuine Weierstrass group law and its point-negation theorem
 are Mathlib results (original authorship and license retained).
-Formalization assistance: OpenAI.
+Local mathematical formalization: grwtsk contributors.
 
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 These Lean proof terms have not been elaborated in the current authoring
@@ -12,6 +12,7 @@ environment. Do not promote to a verified theorem before clean replay.
 -/
 import GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NegationObstruction
 import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+import Mathlib.AlgebraicGeometry.EllipticCurve.NormalForms
 
 /-!
 # Native Weierstrass two-torsion obstruction for ICARM record #4239
@@ -76,6 +77,71 @@ theorem nativeDiscriminant_ne_zero : nativeCurve.Δ ≠ 0 := by
 `Point.mk` turns equation witnesses into nonsingular rational points. -/
 noncomputable instance : nativeCurve.IsElliptic where
   isUnit := isUnit_iff_ne_zero.mpr nativeDiscriminant_ne_zero
+
+
+/-!
+## Source-identified characteristic-not-two normal form
+
+The completed-square coordinates are (X,Y) = (x,y+x/2).  The exact
+admissible Weierstrass change is an arithmetic precursor to Stoll's
+`x-T` descent, which is stated for `a₁=a₃=0`.  This does NOT construct
+a group-law equivalence between the two point groups, import Stoll's
+later-toolchain theorem, or prove finite generation.
+-/
+
+/-- Exact admissible change of variables for the published record equation.
+Its coordinate map sends a normalized point (x,Y) to (x,Y-x/2). -/
+def nativeCompletedSquareChange : WeierstrassCurve.VariableChange ℚ :=
+  ⟨1, 0, -(1 / 2 : ℚ), 0⟩
+
+/-- The same published elliptic curve after an admissible change of variables. -/
+def nativeCompletedSquareCurve : WeierstrassCurve ℚ :=
+  nativeCompletedSquareChange • nativeCurve
+
+/-- Fully determined normalized coefficients, not merely a model with
+unspecified characteristic-not-two parameters. -/
+theorem nativeCompletedSquareCurve_eq :
+    nativeCompletedSquareCurve =
+      { a₁ := 0, a₂ := (1 / 4 : ℚ), a₃ := 0,
+        a₄ := -(A : ℚ), a₆ := (B : ℚ) } := by
+  ext <;> norm_num [nativeCompletedSquareCurve, nativeCompletedSquareChange,
+    nativeCurve, WeierstrassCurve.variableChange_def] <;> ring
+
+/-- Genuine ellipticity is preserved by this admissible change. -/
+noncomputable instance : nativeCompletedSquareCurve.IsElliptic := by
+  change (nativeCompletedSquareChange • nativeCurve).IsElliptic
+  infer_instance
+
+/-- Exactly the Stoll-style `y²=f(x)` normal-form prerequisite.
+This does not import his x-minus-T descent homomorphism. -/
+instance : nativeCompletedSquareCurve.IsCharNeTwoNF where
+  a₁ := by rw [nativeCompletedSquareCurve_eq]; rfl
+  a₃ := by rw [nativeCompletedSquareCurve_eq]; rfl
+
+/-- Exact affine equation of the normalized native curve. -/
+theorem nativeCompletedSquareEquation_iff (x Y : ℚ) :
+    nativeCompletedSquareCurve.toAffine.Equation x Y ↔
+      Y ^ 2 = x ^ 3 + (1 / 4 : ℚ) * x ^ 2 -
+        (A : ℚ) * x + (B : ℚ) := by
+  rw [nativeCompletedSquareCurve_eq]
+  simp [WeierstrassCurve.Affine.equation_iff]
+
+/-- The coordinate change is reversible on the actual affine equations,
+with the source's nontrivial `xy` term accounted for exactly. -/
+theorem nativeCompletedSquare_coordinate_iff (x y : ℚ) :
+    OnRecordModel x y ↔
+      nativeCompletedSquareCurve.toAffine.Equation x (y + x / 2) := by
+  rw [nativeCompletedSquareEquation_iff]
+  unfold OnRecordModel
+  constructor <;> intro h <;> nlinarith [h]
+
+/-- All 32 published rational points are genuine nonsingular points of the
+normalized Mathlib curve.  This supplies no independence or local characters. -/
+noncomputable def nativeCompletedSquarePoint (i : Fin 32) :
+    nativeCompletedSquareCurve.toAffine.Point :=
+  WeierstrassCurve.Affine.Point.mk
+    ((nativeCompletedSquare_coordinate_iff (pointX i) (pointY i)).mp
+      (points_on_record_model i))
 
 /-- Every one of the 32 *source-identified* rational coordinates becomes
 a point in Mathlib's genuine elliptic point group, not a bare pair. -/
