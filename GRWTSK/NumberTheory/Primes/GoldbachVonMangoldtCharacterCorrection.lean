@@ -357,7 +357,7 @@ theorem logarithmicPowerTailKernel_le_comparison
     _ = (2 / (σ - 1)) * (t ^ ((σ - 1) / 2) / t ^ σ) := by
       have hδne : (σ - 1) / 2 ≠ 0 := ne_of_gt hδ
       have hσne : σ - 1 ≠ 0 := by linarith
-      field_simp
+      field_simp [hδne, hσne]
       ring
     _ = (2 / (σ - 1)) * t ^ (-(σ + 1) / 2) := by
       rw [← Real.rpow_sub htpos]
