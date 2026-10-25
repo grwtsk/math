@@ -169,6 +169,85 @@ theorem squareWeightLoss_nonnegative (n : ℕ) :
   exact mul_nonneg ArithmeticFunction.vonMangoldt_nonneg
     (sub_nonneg.mpr (squareWeight_le_one n m))
 
+/-! ## Exact first absolute moment of the discarded source
+
+On the actual closed-right square interval the tent is the affine
+profile 1 - |m-center|/radius; the expression remains valid at the
+right endpoint where the weight is zero. The discarded mass therefore
+equals the complete first absolute moment divided by the exact radius.
+-/
+
+/-- Geometry of the original normalized tent at every actual integer
+in the source inventory, including the closed-right endpoint. -/
+theorem squareWeight_eq_one_sub_abs_div_radius
+    (n m : ℕ) (hm : m ∈ Finset.Ioc (n ^ 2) ((n + 1) ^ 2)) :
+    squareWeight n m =
+      1 - |(m : ℝ) - squareCenter n| / squareRadius n := by
+  have hb := Finset.mem_Ioc.mp hm
+  have hleft : (((n ^ 2 : ℕ) : ℝ)) ≤ (m : ℝ) := by
+    exact_mod_cast hb.1.le
+  have hright : (m : ℝ) ≤ ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+    exact_mod_cast hb.2
+  rw [← center_sub_radius n] at hleft
+  rw [← center_add_radius n] at hright
+  have habs :
+      |(m : ℝ) - squareCenter n| ≤ squareRadius n := by
+    apply abs_le.mpr
+    constructor <;> linarith
+  have hratio :
+      0 ≤ 1 - |(m : ℝ) - squareCenter n| / squareRadius n := by
+    apply sub_nonneg.mpr
+    exact (div_le_one (squareRadius_pos n)).mpr habs
+  unfold squareWeight GRWTSK.Analysis.RealAnalysis.TentWeight.tent
+  exact max_eq_right hratio
+
+/-- Complete centered absolute first moment of actual von Mangoldt
+mass on the same square-interval inventory. The proper prime-power and
+upper endpoint contributions are not discarded. -/
+def squareAbsoluteMoment (n : ℕ) : ℝ :=
+  ∑ m ∈ Finset.Ioc (n ^ 2) ((n + 1) ^ 2),
+    ArithmeticFunction.vonMangoldt m * |(m : ℝ) - squareCenter n|
+
+/-- First absolute moment is nonnegative. -/
+theorem squareAbsoluteMoment_nonnegative (n : ℕ) :
+    0 ≤ squareAbsoluteMoment n := by
+  unfold squareAbsoluteMoment
+  apply Finset.sum_nonneg
+  intro m hm
+  exact mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (abs_nonneg _)
+
+/-- Exact equality: the loss is the genuine centered first absolute
+moment divided by the source radius, not a fitted error allowance. -/
+theorem squareWeightLoss_eq_absoluteMoment_div_radius (n : ℕ) :
+    squareWeightLoss n = squareAbsoluteMoment n / squareRadius n := by
+  unfold squareWeightLoss squareAbsoluteMoment
+  rw [Finset.sum_div]
+  apply Finset.sum_congr rfl
+  intro m hm
+  rw [squareWeight_eq_one_sub_abs_div_radius n m hm]
+  ring
+
+/-- An upper bound on the discarded weight is equivalent, with no
+loss of constants, to a centered absolute-moment upper bound. -/
+theorem squareWeightLoss_le_iff_absoluteMoment_le
+    (n : ℕ) (B : ℝ) :
+    squareWeightLoss n ≤ B ↔
+      squareAbsoluteMoment n ≤ B * squareRadius n := by
+  rw [squareWeightLoss_eq_absoluteMoment_div_radius]
+  exact (div_le_iff₀ (squareRadius_pos n))
+
+/-- Exact source mass as complete window mass minus its actual
+centered first absolute moment. The source center/radius cannot be
+replaced with an arbitrary comparison observable. -/
+theorem squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment
+    (n : ℕ) :
+    squareTentMangoldt n =
+      squareIncrement n - squareAbsoluteMoment n / squareRadius n := by
+  rw [squareWeightLoss_eq_absoluteMoment_div_radius] at
+    (squareIncrement_eq_tent_add_weightLoss n)
+  linarith [squareIncrement_eq_tent_add_weightLoss n,
+    squareWeightLoss_eq_absoluteMoment_div_radius n]
+
 /-- EXACT restoration of the complete closed-right arithmetic source.
 The upper square endpoint appears but has zero tent weight; its source
 contribution is therefore retained in the loss, not thrown away. -/
