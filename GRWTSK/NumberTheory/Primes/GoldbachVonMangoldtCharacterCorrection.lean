@@ -421,6 +421,8 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
     have htpow : t ^ σ ≠ 0 := ne_of_gt (Real.rpow_pos_of_pos ht σ)
     have hpowneg : t ^ (-σ) = (t ^ σ)⁻¹ := Real.rpow_neg ht.le σ
     rw [hpowneg]
+    have hσsub : 1 - σ = -(σ - 1) := by ring
+    rw [hσsub]
     field_simp [hden, htne, htpow]
     ring
   · rfl
