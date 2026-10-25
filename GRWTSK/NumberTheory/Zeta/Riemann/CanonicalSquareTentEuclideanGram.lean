@@ -221,7 +221,7 @@ moment divided by the source radius, not a fitted error allowance. -/
 theorem squareWeightLoss_eq_absoluteMoment_div_radius (n : ℕ) :
     squareWeightLoss n = squareAbsoluteMoment n / squareRadius n := by
   unfold squareWeightLoss squareAbsoluteMoment
-  rw [Finset.sum_div]
+  rw [← Finset.sum_div]
   apply Finset.sum_congr rfl
   intro m hm
   rw [squareWeight_eq_one_sub_abs_div_radius n m hm]
@@ -243,10 +243,9 @@ theorem squareTentMangoldt_eq_squareIncrement_sub_absoluteMoment
     (n : ℕ) :
     squareTentMangoldt n =
       squareIncrement n - squareAbsoluteMoment n / squareRadius n := by
-  rw [squareWeightLoss_eq_absoluteMoment_div_radius] at
-    (squareIncrement_eq_tent_add_weightLoss n)
-  linarith [squareIncrement_eq_tent_add_weightLoss n,
-    squareWeightLoss_eq_absoluteMoment_div_radius n]
+  have h := squareIncrement_eq_tent_add_weightLoss n
+  rw [squareWeightLoss_eq_absoluteMoment_div_radius] at h
+  linarith
 
 /-- EXACT restoration of the complete closed-right arithmetic source.
 The upper square endpoint appears but has zero tent weight; its source
