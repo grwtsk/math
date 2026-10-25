@@ -4,7 +4,7 @@ request_id = "proper-power-positive-modulus-bound-20261024"
 priority = "P0"
 repository = "grwtsk/math"
 branch = "main"
-source_commit = "e963e8f86f37b173f784dc5458aecbe0fcf52189"
+source_commit = "412dbd3dbb01c1a4698833757e6424a92331b6b2"
 theorem_authoring_commit = "7ae1a6175e7c1625640bd14bd474af57121987eb"
 source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean"
 source_blob = "7afdd6851153ce626fbb977664457bd5a5851383"
@@ -34,11 +34,37 @@ transitive_import_repair_source_path = "GRWTSK/NumberTheory/Primes/GoldbachPrope
 transitive_import_repair_commit = "e963e8f86f37b173f784dc5458aecbe0fcf52189"
 transitive_import_repair_blob = "22adf2e6eca3979a5680b29fa5bae18b35aaabe0"
 transitive_import_repair_detail = "Corrected import Mathlib.Data/ZMod/Basic to Mathlib.Data.ZMod.Basic; pinned upstream Mathlib file exists and contains ZMod.isUnit_iff_coprime"
-known_transitive_import_path = "PositiveModulusBound -> PrimeDivisorMassBound -> PrimeDivisorLog -> LogMassUpperBound -> ExponentMassComposition -> MassBridgeUnconditional -> NonunitSupport -> PrimeDivisor -> UnitCoprime"
+primitive_import_isolation_commit = "412dbd3dbb01c1a4698833757e6424a92331b6b2"
+primitive_source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPowerDivisibility.lean"
+primitive_source_blob = "c86db1b9276ca2485a0443f475b5689f0806fae6"
+primitive_import_change = "Dropped unused GoldbachProperPowerPrimeSupport import; retained Mathlib.Tactic and unchanged theorem/proof"
+local_unit_chain_status = "SOURCE_INSPECTED_NOT_COMPILED"
+local_unit_chain_paths = [
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPowerDivisibility.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerCoprimeReduction.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerCoprimePowerIff.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisor.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerNonunitSupport.lean",
+]
+local_unit_chain_blobs = [
+ "c86db1b9276ca2485a0443f475b5689f0806fae6",
+ "7692465f09f87373b2de47923cb146ca680784fc",
+ "32cee6cdac01f8b9b9f2f6d9ff15ebba4f518eb1",
+ "22adf2e6eca3979a5680b29fa5bae18b35aaabe0",
+ "7debaca33cb3275f27b34eb8f7512ec625aee3e9",
+ "3672e2888d589f3b809ff994dbdb330e30731973",
+]
+pinned_mathlib_checked_apis = [
+ "ZMod.isUnit_iff_coprime (Mathlib/Data/ZMod/Basic.lean)",
+ "Nat.Prime.coprime_iff_not_dvd (Mathlib/Data/Nat/Prime/Defs.lean)",
+]
+known_transitive_import_path = "PositiveModulusBound -> PrimeDivisorMassBound -> PrimeDivisorLog -> LogMassUpperBound -> ExponentMassComposition -> MassBridgeUnconditional -> NonunitSupport -> PrimeDivisor -> UnitCoprime -> CoprimePowerIff -> CoprimeReduction -> PowerDivisibility"
 
 missing_suppliers = [
  "Pinned Lean compilation of full transitive proper-power mass and radical chains, including Real.log_prod cast normalization",
- "Confirm elaboration of repaired transitive ZMod unit-coprimality supplier at new checkout pin",
+ "Confirm elaboration of repaired transitive ZMod unit-coprimality supplier and decoupled elementary divisibility at new checkout pin",
+ "Check exact pinned Mathlib APIs for Nat.Coprime.coprime_dvd_left and Nat.Coprime.pow_left",
  "Fresh kernel checking and transitive axiom audit",
  "No prime-counting error, Dirichlet character cancellation, or density transfer without independent quantitative suppliers",
 ]
@@ -46,9 +72,14 @@ transitive_import_closure = "PENDING_SOURCE_INVENTORY"
 receipts = "NOT_RUN"
 
 [checks]
-source_identity = "test \"$(git rev-parse HEAD)\" = e963e8f86f37b173f784dc5458aecbe0fcf52189 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean)\" = 7afdd6851153ce626fbb977664457bd5a5851383 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean)\" = 22adf2e6eca3979a5680b29fa5bae18b35aaabe0"
+source_identity = "test \"$(git rev-parse HEAD)\" = 412dbd3dbb01c1a4698833757e6424a92331b6b2 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean)\" = 7afdd6851153ce626fbb977664457bd5a5851383 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean)\" = 22adf2e6eca3979a5680b29fa5bae18b35aaabe0 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPowerDivisibility.lean)\" = c86db1b9276ca2485a0443f475b5689f0806fae6"
 compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound"
+primitive_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPowerDivisibility"
+reduction_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerCoprimeReduction"
+power_iff_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerCoprimePowerIff"
 import_supplier_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerUnitCoprime"
+prime_divisor_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisor"
+nonunit_support_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerNonunitSupport"
 import_supplier_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean"
 log_comparison_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison"
 elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean"
