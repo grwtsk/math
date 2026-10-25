@@ -893,4 +893,91 @@ theorem relative_moment_gap_of_central_prime_budget
       ArithmeticFunction.vonMangoldt_nonneg)
   linarith
 
+/-! ## Central prime-count and logarithmic mass suppliers
+
+Prime counting alone does not furnish a uniform mass fraction without
+a quantitative comparison to the complete interval source. The
+following exact implication retains the actual logarithmic weight of
+each prime and the original central inventory.
+-/
+
+/-- Every central prime is at least n²+1, so its von Mangoldt weight
+is at least log(n²+1). This remains valid for n=0. -/
+theorem centralSquarePrime_log_lower (n p : ℕ)
+    (hp : p ∈ centralSquarePrimes n) :
+    Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) ≤
+      ArithmeticFunction.vonMangoldt p := by
+  have hprime : Nat.Prime p :=
+    (Finset.mem_filter.mp hp).2
+  have hleft : n ^ 2 < p :=
+    (Finset.mem_Ioc.mp
+      (centralSquareWitnesses_subset n
+        (Finset.mem_filter.mp hp).1)).1
+  rw [ArithmeticFunction.vonMangoldt_apply_prime hprime]
+  exact Real.log_le_log (by positivity) (by exact_mod_cast (Nat.succ_le_iff.mpr hleft))
+
+/-- A source-backed lower bound on the number of central primes gives
+a quantitative prime-only von Mangoldt mass lower bound. -/
+theorem centralSquarePrime_mass_ge_count_log (n : ℕ) :
+    (centralSquarePrimes n).card *
+        Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) ≤
+      ∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p := by
+  calc
+    _ = ∑ p ∈ centralSquarePrimes n,
+          Real.log (((n ^ 2 + 1 : ℕ) : ℝ)) := by simp
+    _ ≤ _ := by
+      apply Finset.sum_le_sum
+      intro p hp
+      exact centralSquarePrime_log_lower n p hp
+
+/-- A quantitative central prime count, measured against the
+complete square-interval von Mangoldt source, supplies the precise
+relative centered-moment gap. The count hypothesis is not proved. -/
+theorem relative_moment_gap_of_central_prime_count
+    (n : ℕ) (δ : ℝ)
+    (hcount :
+      δ * squareIncrement n ≤
+        (centralSquarePrimes n).card *
+          Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  apply relative_moment_gap_of_central_prime_budget n δ
+  exact hcount.trans (centralSquarePrime_mass_ge_count_log n)
+
+/-! ## Explicit central prime-count threshold
+
+The global Chebyshev upper bound is available at the upper square
+endpoint, but supplies no central short-interval lower bound. We use
+it only as a denominator bound: a separately supplied central count
+of sufficient size implies the exact moment-gap budget.
+-/
+
+/-- A prime-count lower bound expressed against the cumulative
+Chebyshev quadratic upper envelope is sufficient for the actual
+complete square-interval source. The count hypothesis remains open. -/
+theorem relative_moment_gap_of_central_prime_count_chebyshev
+    (n : ℕ) (δ : ℝ) (hδ : 0 ≤ δ)
+    (hcount :
+      δ * ((Real.log 4 + 4) *
+        ((((n + 1) ^ 2 : ℕ) : ℝ))) ≤
+      (centralSquarePrimes n).card *
+        Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  have hfull : squareIncrement n ≤
+      (Real.log 4 + 4) * ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+    have hwindow : squareIncrement n ≤
+        _root_.Chebyshev.psi ((((n + 1) ^ 2 : ℕ) : ℝ)) := by
+      rw [GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget.squareIncrement_eq_nat_source]
+      simp only [GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_eq_mathlib_psi]
+      have hleft := _root_.Chebyshev.psi_nonneg ((((n ^ 2 : ℕ) : ℝ)))
+      linarith
+    exact hwindow.trans (_root_.Chebyshev.psi_le_const_mul_self
+      (x := ((((n + 1) ^ 2 : ℕ) : ℝ))) (by positivity))
+  apply relative_moment_gap_of_central_prime_count n δ
+  exact (mul_le_mul_of_nonneg_left hfull hδ).trans hcount
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
