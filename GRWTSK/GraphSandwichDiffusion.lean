@@ -1980,6 +1980,57 @@ theorem resetKernel_typeMass_pos_iff_coprime_witness
     exact ⟨n, Finset.mem_filter.mpr ⟨hn, ht⟩,
       (radicalCoprimeWeight_pos_iff q n).mpr hc⟩
 
+/-- The concrete arithmetic support relation for positive transitions:
+both endpoints are in the finite integer scope and the target survives
+the coprimality sieve. This is a *mathematical relation*, not an
+automatic promotion of a repository candidate graph edge. -/
+def positiveSieveEdge (q N : ℕ) (source target : ℕ) : Prop :=
+  source ∈ scope N ∧ target ∈ scope N ∧ Nat.Coprime target q
+
+/-- On an in-scope source, the concrete reset kernel has a positive
+transition exactly on the specified arithmetic sieve edges. -/
+theorem resetKernel_transition_pos_iff_positiveSieveEdge
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ) (source_mem : source ∈ scope N) :
+    0 < (resetKernel q N hN).transition source target ↔
+      positiveSieveEdge q N source target := by
+  by_cases target_mem : target ∈ scope N
+  · rw [resetKernel_transition_pos_iff_coprime
+      q N hN source target target_mem]
+    simp [positiveSieveEdge, source_mem, target_mem]
+  · have hzero :
+        (resetKernel q N hN).transition source target = 0 :=
+      FiniteSieveMarkovKernel.normalizedTargetKernel_transition_zero_of_not_mem
+        (scope N) (radicalCoprimeWeight q)
+        (fun n hn => radicalCoprimeWeight_nonneg q n)
+        (totalWeight_pos q N hN)
+        source target target_mem
+    rw [hzero]
+    simp [positiveSieveEdge, target_mem]
+
+/-- A path with strictly positive transitions is certified by an
+existing graph inventory ONLY IF that inventory has a supplied proof
+that every concrete positive sieve edge is certified. The kernel
+construction does not synthesize such a certificate or a heat graph. -/
+theorem resetKernel_positivePath_to_certifiedPath
+    (q N : ℕ) (hN : 1 ≤ N)
+    (inventory : SourceSearchInventory ℕ)
+    (certifiesSieve :
+      ∀ source ∈ scope N, ∀ target ∈ scope N,
+        Nat.Coprime target q → inventory.certified source target)
+    (depth : ℕ) (source target : ℕ)
+    (target_mem : target ∈ scope N)
+    (path : (resetKernel q N hN).positivePath depth source target) :
+    BoundedPath inventory.certified depth source target := by
+  apply (resetKernel q N hN).positivePath_to_certifiedPath
+    inventory
+    (by
+      intro x hx y hy positive
+      exact certifiesSieve x hx y hy
+        ((resetKernel_transition_pos_iff_coprime
+          q N hN x y hy).mp positive))
+    depth source target target_mem path
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
