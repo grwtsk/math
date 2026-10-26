@@ -1225,4 +1225,33 @@ theorem outerSquarePrimes_eq_left_union_right (n : ℕ) :
       exact ⟨hp, by linarith⟩
   · rintro (⟨hp, _⟩ | ⟨hp, _⟩) <;> exact hp
 
+/-! ## Disjoint outer tails and exact arithmetic mass
+
+The geometric tails are disjoint because the left endpoint is
+strictly below the central midpoint and the right endpoint is
+strictly above it. This supplies an exact additive prime-only mass
+identity without a distributional estimate.
+-/
+
+/-- The left and right prime tails are disjoint. -/
+theorem outerSquarePrime_tails_disjoint (n : ℕ) :
+    Disjoint (leftOuterSquarePrimes n) (rightOuterSquarePrimes n) := by
+  apply Finset.disjoint_left.mpr
+  intro p hpLeft hpRight
+  have hl := (Finset.mem_filter.mp hpLeft).2
+  have hr := (Finset.mem_filter.mp hpRight).2
+  linarith
+
+/-- Exact decomposition of outer prime von Mangoldt mass into its
+two disjoint geometric boundary tails. -/
+theorem outerSquarePrimeMass_eq_left_add_right (n : ℕ) :
+    (∑ p ∈ outerSquarePrimes n,
+      ArithmeticFunction.vonMangoldt p) =
+      (∑ p ∈ leftOuterSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) +
+      (∑ p ∈ rightOuterSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) := by
+  rw [outerSquarePrimes_eq_left_union_right]
+  exact Finset.sum_union (outerSquarePrime_tails_disjoint n)
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
