@@ -504,6 +504,77 @@ theorem not_real_type_complete_of_absent_type
   rw [hzero] at hpos
   exact (lt_irrefl (0 : ℝ)) hpos
 
+/-!
+## Converse finite-path support extraction
+
+These lemmas extract an actual admissible path from strictly positive
+real Gibbs heat. They use nonnegativity of the summands and the fact
+that forbidden transitions have exactly zero probability. No new
+transition or mixing hypothesis is introduced.
+-/
+
+/-- Positive next-step heat has a positive-heat predecessor connected by
+an actually admissible edge. -/
+theorem realStep_pos_has_allowed_source
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (target : V) (positive : 0 < S.realStep heat target) :
+    ∃ source, 0 < heat source ∧ S.allowed source target = true := by
+  by_contra noSource
+  have hzero : S.realStep heat target = 0 := by
+    unfold realStep
+    apply Finset.sum_eq_zero
+    intro source _
+    by_cases hheat : heat source = 0
+    · simp [hheat]
+    · have hpositive : 0 < heat source :=
+        lt_of_le_of_ne (nonnegative source) (Ne.symm hheat)
+      cases hallowed : S.allowed source target
+      · rw [S.probability_zero_of_forbidden source target hallowed]
+        ring
+      · exact False.elim (noSource ⟨source, hpositive, hallowed⟩)
+  rw [hzero] at positive
+  exact (lt_irrefl (0 : ℝ)) positive
+
+/-- Every strictly positive heat value after a finite number of steps
+comes from an initially positive source along an allowed path of exactly
+that length. -/
+theorem realEvolve_pos_has_allowedPath (S : Sampler V) :
+    ∀ (length : ℕ) (heat : V → ℝ) (target : V),
+      (∀ v, 0 ≤ heat v) →
+      0 < S.realEvolve heat length target →
+      ∃ source, 0 < heat source ∧
+        AllowedPath S source target length := by
+  intro length
+  induction length with
+  | zero =>
+      intro heat target nonnegative positive
+      refine ⟨target, ?_, AllowedPath.refl target⟩
+      simpa [realEvolve] using positive
+  | succ length ih =>
+      intro heat target nonnegative positive
+      have htail : 0 < S.realEvolve (S.realStep heat) length target := by
+        simpa [realEvolve] using positive
+      obtain ⟨middle, hmiddle, tail⟩ := ih
+        (S.realStep heat) target
+        (S.realStep_nonneg heat nonnegative) htail
+      obtain ⟨source, hsource, hedge⟩ :=
+        S.realStep_pos_has_allowed_source heat nonnegative middle hmiddle
+      exact ⟨source, hsource, AllowedPath.step hedge tail⟩
+
+/-- Exact finite-time support equivalence for the real Gibbs sampler.
+The witness path has precisely the queried number of transitions. -/
+theorem realEvolve_pos_iff_allowedPath (S : Sampler V)
+    (heat : V → ℝ) (nonnegative : ∀ v, 0 ≤ heat v)
+    (length : ℕ) (target : V) :
+    0 < S.realEvolve heat length target ↔
+      ∃ source, 0 < heat source ∧
+        AllowedPath S source target length := by
+  constructor
+  · exact S.realEvolve_pos_has_allowedPath length heat target nonnegative
+  · rintro ⟨source, hsource, path⟩
+    exact S.realEvolve_pos_of_allowedPath path heat nonnegative hsource
+
 end TypeHeat
 
 end Sampler
