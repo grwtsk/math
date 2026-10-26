@@ -1,5 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.Algebra.KTheory.GrothendieckPort
+import GRWTSK.GraphSandwichDiffusion
+import Mathlib.Data.Nat.Factorization.Basic
 import Mathlib.RingTheory.Radical.NatInt
 import Mathlib.Tactic
 
@@ -134,5 +136,110 @@ theorem no_type_complete_feature_only_steering_of_collision
     _ = steer (kZeroRadical lift n) :=
       steered_observation_eq_of_radical_eq lift steer hRadical
     _ = typeOf n := correct n
+
+/-! ## A concrete multiplicity-sensitive certified-sieve collision
+
+This comparison keeps the arithmetic kernel/inventory separate from
+the K₀-shaped group completion: the former certifies positive finite
+coprimality transitions, while the latter depends only on the radical.
+Two different exact 2-adic valuation types can both carry positive
+sieve mass even though K₀-shaped radical-only decoding fails.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+open GRWTSK.GraphSandwichDiffusion
+open GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel
+
+/-- Multiplicity-sensitive arithmetic type: the actual exponent of
+prime 2 in the natural factorization. Unlike radical support, this
+classifier records prime-power depth. -/
+def twoAdicMultiplicityType (n : ℕ) : ℕ := n.factorization 2
+
+theorem twoAdicMultiplicityType_two :
+    twoAdicMultiplicityType 2 = 1 := by
+  change (2 : ℕ).factorization 2 = 1
+  have hp : Nat.Prime 2 := by norm_num
+  exact hp.factorization_self
+
+theorem twoAdicMultiplicityType_four :
+    twoAdicMultiplicityType 4 = 2 := by
+  change (4 : ℕ).factorization 2 = 2
+  have hp : Nat.Prime 2 := by norm_num
+  have hpow : (2 : ℕ) ^ 2 = 4 := by norm_num
+  rw [← hpow]
+  exact Nat.factorization_pow_self (p := 2) (n := 2) hp
+
+/-- The two positive integers 2 and 4 have distinct exact
+multiplicity types despite the same arithmetic radical. -/
+theorem twoAdicMultiplicityType_two_ne_four :
+    twoAdicMultiplicityType 2 ≠ twoAdicMultiplicityType 4 := by
+  rw [twoAdicMultiplicityType_two, twoAdicMultiplicityType_four]
+  norm_num
+
+/-- Both multiplicity types are positively represented in the
+certified arithmetic sieve at depth one, for q = 3 and N ≥ 4.
+The type set here is the two exhibited types, not every possible
+multiplicity type. -/
+theorem two_four_certified_type_hits
+    (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N) :
+    (certifiedArithmeticInventory 3 N hN).sieveTypeHit
+        1 twoAdicMultiplicityType
+        (fun _ n => radicalCoprimeWeight 3 n) 1
+        (twoAdicMultiplicityType 2) ∧
+    (certifiedArithmeticInventory 3 N hN).sieveTypeHit
+        1 twoAdicMultiplicityType
+        (fun _ n => radicalCoprimeWeight 3 n) 1
+        (twoAdicMultiplicityType 4) := by
+  constructor
+  · apply (certifiedArithmeticInventory_oneStep_hit_iff
+      3 N hN twoAdicMultiplicityType
+        (twoAdicMultiplicityType 2)).mpr
+    refine ⟨2, ?_, rfl, ?_⟩
+    · change (2 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+    · decide
+  · apply (certifiedArithmeticInventory_oneStep_hit_iff
+      3 N hN twoAdicMultiplicityType
+        (twoAdicMultiplicityType 4)).mpr
+    refine ⟨4, ?_, rfl, ?_⟩
+    · change (4 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+    · decide
+
+/-- The actual arithmetic certified inventory contains two distinct
+exact multiplicity types but a K₀-shaped radical-only feature cannot
+decode their types on that certified scope. This obstruction uses the
+explicit finite graph construction, not the unrelated seed graph.
+It does not prevent the two types from receiving positive mass. -/
+theorem no_exact_twoAdic_type_decoder_on_certified_sieve
+    (lift : ℕ →* M) (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N) :
+    ¬ ∃ decode : GrothendieckKZero M → ℕ,
+        ∀ n ∈ (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1,
+          twoAdicMultiplicityType n = decode (kZeroRadical lift n) := by
+  have htwoScope : (2 : ℕ) ∈ scope N := by
+    change (2 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+  have hfourScope : (4 : ℕ) ∈ scope N := by
+    change (4 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+  have htwoCoprime : Nat.Coprime 2 3 := by decide
+  have hfourCoprime : Nat.Coprime 4 3 := by decide
+  have htwoReach :
+      (2 : ℕ) ∈
+        (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+    exact Finset.mem_filter.mpr ⟨htwoScope, htwoCoprime⟩
+  have hfourReach :
+      (4 : ℕ) ∈
+        (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+    exact Finset.mem_filter.mpr ⟨hfourScope, hfourCoprime⟩
+  have hpow : (2 : ℕ) ^ 2 = 4 := by norm_num
+  have hsameK : kZeroRadical lift (2 : ℕ) =
+      kZeroRadical lift (4 : ℕ) := by
+    have h := kZeroRadical_pow lift 2 2 (by norm_num)
+    simpa only [hpow] using h.symm
+  exact (certifiedArithmeticInventory 3 N hN).no_exact_feature_type_of_collision
+    1 twoAdicMultiplicityType (kZeroRadical lift) 1
+    htwoReach hfourReach hsameK twoAdicMultiplicityType_two_ne_four
 
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
