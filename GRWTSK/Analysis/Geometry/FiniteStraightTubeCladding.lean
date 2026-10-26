@@ -41,8 +41,9 @@ theorem measurableSet_exterior (T : Tube d) :
 /-- Purely geometric exterior potential: zero inside the tube and λ
 outside. This is a scalar finite potential model, not refractive
 index, optical path length, or an imposed Dirichlet boundary. -/
-def exteriorPotential (T : Tube d) (λ : ℝ) (x : Space d) : ℝ :=
-  if x ∈ T.region then 0 else λ
+def exteriorPotential (T : Tube d) (λ : ℝ) (x : Space d) : ℝ := by
+  classical
+  exact if x ∈ T.region then 0 else λ
 
 theorem exteriorPotential_zero_of_mem (T : Tube d) (λ : ℝ)
     {x : Space d} (h : x ∈ T.region) :
@@ -58,7 +59,8 @@ theorem exteriorPotential_nonneg (T : Tube d)
     {λ : ℝ} (hλ : 0 ≤ λ) (x : Space d) :
     0 ≤ T.exteriorPotential λ x := by
   by_cases h : x ∈ T.region
-  · simp [T.exteriorPotential_zero_of_mem λ h]
+  · rw [T.exteriorPotential_zero_of_mem λ h]
+    exact le_refl 0
   · rw [T.exteriorPotential_eq_of_not_mem λ h]
     exact hλ
 
@@ -74,17 +76,20 @@ theorem mem_region_of_potential_lt_strength (T : Tube d)
 
 /-- Actual sampled sites, not an abstract arbitrary graph mask. -/
 def outsideMask (T : Tube d) (site : Fin 4 → Space d) :
-    Fin 4 → Bool :=
-  fun i => decide (site i ∉ T.region)
+    Fin 4 → Bool := by
+  classical
+  exact fun i => decide (site i ∉ T.region)
 
 theorem outsideMask_eq_true_iff (T : Tube d)
     (site : Fin 4 → Space d) (i : Fin 4) :
     T.outsideMask site i = true ↔ site i ∉ T.region := by
+  classical
   simp [outsideMask]
 
 theorem outsideMask_eq_false_iff (T : Tube d)
     (site : Fin 4 → Space d) (i : Fin 4) :
     T.outsideMask site i = false ↔ site i ∈ T.region := by
+  classical
   simp [outsideMask]
 
 /-- The existing positive Hodge energy plus the *geometric* tube
