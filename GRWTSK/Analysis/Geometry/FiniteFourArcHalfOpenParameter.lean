@@ -50,7 +50,9 @@ def point (a : HalfOpenArcTime) : Plane :=
 
 theorem point_zero (a : HalfOpenArcTime) (h : a.time = 0) :
     a.point = vertex a.arc := by
-  simp [point, h, patch, GRWTSK.Analysis.Geometry.QuadraticBezierContact.Segment.eval_zero]
+  change (patch a.arc).eval a.time = vertex a.arc
+  rw [h, GRWTSK.Analysis.Geometry.QuadraticBezierContact.Segment.eval_zero]
+  rfl
 
 /-- Every nonzero canonical time lies in the genuine open source
 arc and is excluded from all four seam vertices. -/
