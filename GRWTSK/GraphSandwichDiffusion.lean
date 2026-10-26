@@ -2262,6 +2262,121 @@ theorem certifiedArithmeticInventory_positivePath
       exact ⟨hx, hy, hc⟩)
     depth source target target_mem path
 
+/-! ## Source-dependent diagonal-bias kernel on certified arithmetic edges
+
+For an in-scope source x, surviving target y receives a weight
+`(if x=y then 2 else 1) * radicalCoprimeWeight q y`.
+The source-dependent boost changes transition probabilities without
+introducing new positive edges or providing an analytic heat operator.
+The row normalizer is positive because the target 1 survives.
+-/
+
+/-- Raw positive-edge weight with a source-dependent diagonal boost.
+Only the target radical and coprimality influence whether it vanishes. -/
+noncomputable def diagonalEdgeWeight (q source target : ℕ) : ℝ :=
+  (if source = target then (2 : ℝ) else 1) *
+    radicalCoprimeWeight q target
+
+private theorem diagonalBoost_pos (source target : ℕ) :
+    0 < (if source = target then (2 : ℝ) else 1) := by
+  split_ifs <;> norm_num
+
+theorem diagonalEdgeWeight_nonneg (q source target : ℕ) :
+    0 ≤ diagonalEdgeWeight q source target := by
+  unfold diagonalEdgeWeight
+  exact mul_nonneg (diagonalBoost_pos source target).le
+    (radicalCoprimeWeight_nonneg q target)
+
+/-- Diagonal bias preserves the exact positive-edge support of the
+arithmetic coprimality sieve, while modifying the row weights. -/
+theorem diagonalEdgeWeight_pos_iff_coprime (q source target : ℕ) :
+    0 < diagonalEdgeWeight q source target ↔
+      Nat.Coprime target q := by
+  unfold diagonalEdgeWeight
+  exact (mul_pos_iff_of_pos_left
+    (diagonalBoost_pos source target)).trans
+      (radicalCoprimeWeight_pos_iff q target)
+
+/-- Every in-scope source has positive outgoing raw edge mass. The
+common target 1 is sufficient regardless of the source and modulus. -/
+theorem diagonalRowMass_pos
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    0 < ∑ target ∈ scope N, diagonalEdgeWeight q source target := by
+  apply Finset.sum_pos'
+  · intro target ht
+    exact diagonalEdgeWeight_nonneg q source target
+  · have hOne : (1 : ℕ) ∈ scope N := by
+      change (1 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+    refine ⟨1, hOne, ?_⟩
+    exact (diagonalEdgeWeight_pos_iff_coprime q source 1).mpr (by simp)
+
+/-- A genuinely source-dependent finite Markov kernel, normalized
+separately at every source, with the same *positive support* as the
+previous reset kernel. It remains a dense directed arithmetic sieve,
+not a graph Laplacian or a prime-distribution theorem. -/
+noncomputable def diagonalKernel (q N : ℕ) (hN : 1 ≤ N) :
+    FiniteSieveMarkovKernel ℕ :=
+  FiniteSieveMarkovKernel.normalizedEdgeKernel
+    (scope N) (diagonalEdgeWeight q)
+    (by
+      intro source hs target ht
+      exact diagonalEdgeWeight_nonneg q source target)
+    (by
+      intro source hs
+      exact diagonalRowMass_pos q N hN source)
+
+/-- An in-scope target receives a positive diagonal-bias transition
+from any in-scope source iff it survives coprimality with q. -/
+theorem diagonalKernel_transition_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (hs : source ∈ scope N) (ht : target ∈ scope N) :
+    0 < (diagonalKernel q N hN).transition source target ↔
+      Nat.Coprime target q := by
+  unfold diagonalKernel
+  exact (FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_pos_iff
+    (scope N) (diagonalEdgeWeight q)
+    (by
+      intro x hx y hy
+      exact diagonalEdgeWeight_nonneg q x y)
+    (by
+      intro x hx
+      exact diagonalRowMass_pos q N hN x)
+    source target hs ht).trans
+      (diagonalEdgeWeight_pos_iff_coprime q source target)
+
+/-- Every positive transition of the new source-dependent kernel is
+exactly a certified arithmetic sieve edge when both endpoints are in
+scope. Candidate-only or unrelated semantic edges are not promoted. -/
+theorem diagonalKernel_edge_iff_certified
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (hs : source ∈ scope N) (ht : target ∈ scope N) :
+    0 < (diagonalKernel q N hN).transition source target ↔
+      (certifiedArithmeticInventory q N hN).certified source target := by
+  rw [diagonalKernel_transition_pos_iff_coprime q N hN source target hs ht]
+  change Nat.Coprime target q ↔ positiveSieveEdge q N source target
+  simp [positiveSieveEdge, hs, ht]
+
+/-- Positive paths of the source-dependent arithmetic kernel are
+certified by the *existing concrete* arithmetic inventory, not by the
+unrelated paper-to-concept seed graph. -/
+theorem diagonalKernel_positivePath_certified
+    (q N : ℕ) (hN : 1 ≤ N)
+    (depth source target : ℕ)
+    (target_mem : target ∈ scope N)
+    (path : (diagonalKernel q N hN).positivePath depth source target) :
+    BoundedPath (certifiedArithmeticInventory q N hN).certified
+      depth source target := by
+  apply (diagonalKernel q N hN).positivePath_to_certifiedPath
+    (certifiedArithmeticInventory q N hN)
+    (by
+      intro x hx y hy positive
+      exact (diagonalKernel_edge_iff_certified
+        q N hN x y hx hy).mp positive)
+    depth source target target_mem path
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
