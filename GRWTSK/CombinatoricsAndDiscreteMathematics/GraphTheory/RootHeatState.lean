@@ -608,6 +608,44 @@ theorem eventually_type_complete_of_anchor_reinjection
       nonnegative typeOf anchor beta delta (le_of_lt delta_pos)
       reinject outgoing time kind)
 
+/-!
+### Absorbing-sink obstruction to common-anchor steering
+
+An absorbing sink and another distinct type prevent both positive
+common-anchor bounds from holding for the same source-preserving kernel.
+An artificial restart changes the kernel and needs separate justification.
+-/
+
+/-- No common anchor can both receive uniformly positive heat from every
+source and send a uniformly positive edge into each type when a distinct-
+type absorbing sink is present. -/
+theorem no_positive_anchor_steering_of_absorbing_sink
+    (kernel : HeatKernel Root) (typeOf : Root → Kind)
+    (sink other : Root)
+    (different : typeOf sink ≠ typeOf other)
+    (absorbing : ∀ target, target ≠ sink →
+      kernel.transition target sink = 0)
+    (beta delta : ℚ) (beta_pos : 0 < beta) (delta_pos : 0 < delta) :
+    ¬ ∃ anchor : Root,
+        AnchorReinjection kernel anchor beta ∧
+        AnchorTypeMinorization kernel typeOf anchor delta := by
+  rintro ⟨anchor, reinject, outgoing⟩
+  by_cases hanchor : anchor = sink
+  · subst anchor
+    obtain ⟨target, htype, hdelta⟩ := outgoing (typeOf other)
+    have htarget : target ≠ sink := by
+      intro h
+      apply different
+      rw [← h, htype]
+    have hzero := absorbing target htarget
+    have hbound : delta ≤ (0 : ℚ) := by
+      simpa [hzero] using hdelta
+    exact (not_lt_of_ge hbound) delta_pos
+  · have hzero := absorbing anchor hanchor
+    have hbound : beta ≤ (0 : ℚ) := by
+      simpa [hzero] using reinject sink
+    exact (not_lt_of_ge hbound) beta_pos
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
