@@ -1,0 +1,96 @@
+schema_version = "0.1"
+request_id = "goldbach-perron-off-endpoint-oscillation-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "ad1699d52e648e326fdbf0c6932baacf0bd0f754"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+source_blob = "648798310a4072bda606cca8bc3adeecb3bffa1e"
+source_lines = 1261
+source_parent_commit = "fff5291fc61bcdb4af47b9a07d157df5c8c36b95"
+source_parent_blob = "f8f2d4b58880ad9a4edc61a0eec86f8e2d29356d"
+source_repair = "Explicit real cast witnesses; stable norm simplification; no theorem hypotheses removed. Initial source uncompiled."
+imported_local_file = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+imported_local_blob = "520f24cea3bf2c592524ee939fe05b82b756f4dc"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_integrals_blob = "335df785f4a6b999c0836dc5a67c359f7766d56a"
+mathlib_complex_trigonometric_blob = "3d37f9aa071a00ec1837ddb8084275676bb30ea2"
+mathlib_log_basic_blob = "2776daac653ac8de9603408765b37a02d63f3e55"
+mathlib_interval_integral_blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+priority = "P1"
+class = "unweighted_off_endpoint_Perron_oscillatory_primitive_and_integer_gap"
+status = "SOURCE_DRAFT_NOT_RUN"
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+command_exits = "NOT_RUN"
+receipt = "UNAVAILABLE"
+execution_authorized = false
+railway_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+force_push_authorized = false
+
+direct_imports = [
+  "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection",
+  "GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.SiegelRealZeroWindow",
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+  "Mathlib.NumberTheory.LSeries.Deriv",
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+  "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+  "Mathlib.Order.Filter.AtTopBot.Field",
+  "Mathlib.Analysis.Complex.Trigonometric",
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+  "Mathlib.Tactic"
+]
+qualified_prefix = "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution."
+new_declarations = [
+  "offEndpointLogFrequency",
+  "offEndpointLogFrequency_pos",
+  "one_sub_ratio_le_offEndpointLogFrequency",
+  "offEndpointOscillatoryIntegral",
+  "offEndpointOscillatoryIntegral_eq_exp_sub",
+  "norm_offEndpointOscillatoryIntegral_le",
+  "norm_offEndpointOscillatoryIntegral_le_logFrequency",
+  "norm_offEndpointOscillatoryIntegral_le_discreteGap",
+  "finitePerronTermIntegral_zero_index",
+  "norm_offEndpointVonMangoldtOscillatoryPacket_le"
+]
+mathlib_apis = [
+  "Real.log_pos",
+  "Real.one_sub_inv_le_log_of_pos",
+  "intervalIntegral.integral_exp_mul_complex",
+  "Complex.norm_exp_ofReal_mul_I",
+  "LSeries.term_zero",
+  "Complex.ofReal_ne_zero",
+  "Complex.I_ne_zero",
+  "norm_sub_le",
+  "norm_sum_le",
+  "Finset.mem_Ico"
+]
+exact_hypotheses = "N,n:Nat, 0<n<N; for the Fourier primitive real u>0, arbitrary real a,b; for packet q,N:Nat, chi:DirichletCharacter C q and a,b:Real. n=0 excluded explicitly. No sigma, hSeven, character primitiveness, root-of-unity hypothesis, explicit formula or prime main-term assumptions."
+conclusion = "u(N,n)=log(N/n)>0 and 1-n/N<=u. A(u,a,b)=integral_a^b exp(i*t*u)dt=[exp(i*u*b)-exp(i*u*a)]/(i*u), norm(A)<=2/u; for 0<n<N norm(A(u(N,n),a,b))<=2/u(N,n)<=2/(1-n/N)=2N/(N-n). Summation against ACTUAL a_n=dirichletVonMangoldtCoefficient q chi n gives norm(sum_{1<=n<N} a_n*A(u(N,n),a,b))<=sum_{1<=n<N} norm(a_n)*2/(1-n/N). Actual finitePerronTermIntegral for n=0 is zero."
+scope_guardrail = "Only the UNWEIGHTED oscillatory NUMERATOR primitive is estimated. The ACTUAL off-endpoint Perron integrand additionally contains a resolvent 1/(sigma+i*t) and x^sigma. This manifest does NOT claim full kernel error O(1/(T*log(N/n))), decay of finitePerronHeightDefect, projector value 1 at n<N, prime-distribution consequences, or an OpenAI 7/8 theorem."
+next_missing_suppliers = [
+  "Exact positive-base complex power factorization of the actual off-endpoint LSeries.term*Perron weight",
+  "Genuine weighted integration by parts retaining boundary and derivative integral and uniform control by 1/(T*log(N/n))",
+  "Infinity-height Perron projector identification with value 1 off endpoint",
+  "Full right-line L-series polynomial+tail decomposition and normalized contour reparameterization",
+  "Horizontal/left contour shifts, zero/gamma residues, conductor-uniform remainder, global psi(N)-N estimate",
+  "Full pinned Lean compiler, fresh independent kernel and transitive axiom verification"
+]
+upstream_OpenAI = "openai/math commit 1581d4cbdd69a0faf34b2089614fe2a814316a6a, OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re: RESEARCH_REFERENCE_ONLY_NOT_IMPORTED"
+
+[checks]
+pin_commit = "test \"$(git rev-parse HEAD)\" = ad1699d52e648e326fdbf0c6932baacf0bd0f754"
+pin_file = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = 648798310a4072bda606cca8bc3adeecb3bffa1e"
+pin_dependency = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean)\" = 520f24cea3bf2c592524ee939fe05b82b756f4dc"
+compile_dependency = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution"
+source_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+axiom_audit = "#check / #print / #print axioms on all EIGHT new theorem declarations, full transitive dependencies and previous Perron endpoint consumers in an external temporary Lean audit file; NOT_RUN."
+fresh_kernel = "INDEPENDENT_CHECKER_IF_SUPPORTED; NOT_RUN"
+expected = "True pinned imports, correct Real/Complex casts and integrals, no sorry/admit/new axioms, full transitive source-bound proof acceptance recorded with command exits and receipts. Source scan/manifest existence alone is NOT acceptance."
+receipt_location = "grwtsk/noeaaeue only after separate authorized execution; mathematical TOML is not an execution receipt."
