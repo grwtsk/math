@@ -243,6 +243,64 @@ theorem real_type_complete_of_supported_allowed_edges
     typeOf source target hsource hedge
   simpa [hkind] using hpos
 
+/-! Exact negative support boundary for the real Gibbs sampler. -/
+
+/-- A type with no admissible incoming edge from any positive-heat source
+has exactly zero heat after one real Gibbs diffusion step. -/
+theorem realTypeMass_step_eq_zero_of_no_supported_allowed_edge
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ source, 0 ≤ heat source)
+    (typeOf : V → Kind) (kind : Kind)
+    (noEdge : ∀ source target, typeOf target = kind →
+      0 < heat source → S.allowed source target = false) :
+    realTypeMass typeOf (S.realStep heat) kind = 0 := by
+  have htarget : ∀ target, typeOf target = kind →
+      S.realStep heat target = 0 := by
+    intro target hkind
+    unfold realStep
+    apply Finset.sum_eq_zero
+    intro source _
+    by_cases hzero : heat source = 0
+    · simp [hzero]
+    · have hpositive : 0 < heat source :=
+        lt_of_le_of_ne (nonnegative source) (Ne.symm hzero)
+      rw [S.probability_zero_of_forbidden source target
+        (noEdge source target hkind hpositive)]
+      ring
+  unfold realTypeMass
+  apply Finset.sum_eq_zero
+  intro target _
+  by_cases hkind : typeOf target = kind
+  · simp [hkind, htarget target hkind]
+  · simp [hkind]
+
+/-- The one-step real Gibbs type-coverage criterion is equivalent to
+having a positive-heat admissible incoming edge for every type. -/
+theorem real_type_complete_iff_supported_allowed_edges
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ source, 0 ≤ heat source)
+    (typeOf : V → Kind) :
+    (∀ kind, 0 < realTypeMass typeOf (S.realStep heat) kind) ↔
+      (∀ kind, ∃ source target,
+        typeOf target = kind ∧ 0 < heat source ∧
+        S.allowed source target = true) := by
+  constructor
+  · intro complete kind
+    by_contra noReach
+    have noEdge : ∀ source target, typeOf target = kind →
+        0 < heat source → S.allowed source target = false := by
+      intro source target hkind hpositive
+      cases h : S.allowed source target
+      · rfl
+      · exfalso
+        exact noReach ⟨source, target, hkind, hpositive, h⟩
+    have hzero := realTypeMass_step_eq_zero_of_no_supported_allowed_edge
+      S heat nonnegative typeOf kind noEdge
+    have hpos := complete kind
+    rw [hzero] at hpos
+    exact (lt_irrefl (0 : ℝ)) hpos
+  · exact real_type_complete_of_supported_allowed_edges S heat nonnegative typeOf
+
 end TypeHeat
 
 end Sampler
