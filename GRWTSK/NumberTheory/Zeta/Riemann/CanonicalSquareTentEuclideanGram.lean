@@ -1173,4 +1173,52 @@ theorem relative_moment_gap_of_outer_prime_budget
   apply relative_moment_gap_of_central_prime_budget n δ
   linarith
 
+/-! ## Geometric two-tail decomposition of outer prime inventory
+
+The complement of the central absolute-distance window is exactly
+the union of two disjoint boundary tails. These are finite source
+inventories, not asymptotic prime-count estimates.
+-/
+
+/-- Left boundary prime tail, strictly below the central half-radius. -/
+def leftOuterSquarePrimes (n : ℕ) : Finset ℕ :=
+  (outerSquarePrimes n).filter
+    (fun p => (p : ℝ) < squareCenter n - squareRadius n / 2)
+
+/-- Right boundary prime tail, strictly above the central half-radius. -/
+def rightOuterSquarePrimes (n : ℕ) : Finset ℕ :=
+  (outerSquarePrimes n).filter
+    (fun p => squareCenter n + squareRadius n / 2 < (p : ℝ))
+
+/-- Every outer prime lies in exactly one of the two geometric tails. -/
+theorem outerSquarePrimes_eq_left_union_right (n : ℕ) :
+    outerSquarePrimes n =
+      leftOuterSquarePrimes n ∪ rightOuterSquarePrimes n := by
+  classical
+  ext p
+  simp only [leftOuterSquarePrimes, rightOuterSquarePrimes,
+    Finset.mem_union, Finset.mem_filter]
+  constructor
+  · intro hp
+    have hfull : p ∈
+        (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime :=
+      (Finset.mem_sdiff.mp hp).1
+    have hnot : p ∉ centralSquarePrimes n :=
+      (Finset.mem_sdiff.mp hp).2
+    have hnotcentral :
+        ¬ |(p : ℝ) - squareCenter n| ≤ squareRadius n / 2 := by
+      intro h
+      apply hnot
+      exact Finset.mem_filter.mpr
+        ⟨Finset.mem_filter.mpr
+          ⟨(Finset.mem_filter.mp hfull).1, h⟩,
+          (Finset.mem_filter.mp hfull).2⟩
+    rcases (not_le.mp hnotcentral) with habs
+    rcases (lt_or_gt_of_ne (ne_of_gt habs)) with hleft | hright
+    · left
+      exact ⟨hp, by linarith⟩
+    · right
+      exact ⟨hp, by linarith⟩
+  · rintro (⟨hp, _⟩ | ⟨hp, _⟩) <;> exact hp
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
