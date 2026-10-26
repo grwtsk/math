@@ -980,4 +980,51 @@ theorem relative_moment_gap_of_central_prime_count_chebyshev
   apply relative_moment_gap_of_central_prime_count n δ
   exact (mul_le_mul_of_nonneg_left hfull hδ).trans hcount
 
+/-! ## A weaker source-faithful central prime-count interface
+
+A direct upper estimate for the COMPLETE short-interval von Mangoldt
+mass is strictly more appropriate than the coarse cumulative
+Chebyshev quadratic envelope. It is an explicit independent supplier;
+no short-interval estimate is inferred from cumulative Chebyshev.
+-/
+
+/-- A separately supplied bound on the true square-window increment,
+together with a central prime-count estimate, gives the same moment
+gap without the overly strong quadratic cumulative envelope. -/
+theorem relative_moment_gap_of_central_prime_count_short_interval
+    (n : ℕ) (δ U : ℝ) (hδ : 0 ≤ δ)
+    (hsource : squareIncrement n ≤ U)
+    (hcount :
+      δ * U ≤ (centralSquarePrimes n).card *
+        Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  apply relative_moment_gap_of_central_prime_count n δ
+  exact (mul_le_mul_of_nonneg_left hsource hδ).trans hcount
+
+/-! ## Prime-only central mass versus proper-power source budget
+
+The true complete short-interval von Mangoldt increment includes
+proper prime powers. An upper bound for the prime-only part cannot
+replace an upper bound for the full source without charging this
+residual. The following exact supplier keeps that debt explicit.
+-/
+
+/-- A prime-count lower bound and a separately controlled full
+source, including its proper-power component, yield the same relative
+moment deficit. The residual upper bound is an explicit hypothesis. -/
+theorem relative_moment_gap_of_central_prime_count_with_residual
+    (n : ℕ) (δ Uprime Uproper : ℝ) (hδ : 0 ≤ δ)
+    (hsource : squareIncrement n ≤ Uprime + Uproper)
+    (hcount :
+      δ * (Uprime + Uproper) ≤
+        (centralSquarePrimes n).card *
+          Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  exact relative_moment_gap_of_central_prime_count_short_interval
+    n δ (Uprime + Uproper) hδ hsource hcount
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
