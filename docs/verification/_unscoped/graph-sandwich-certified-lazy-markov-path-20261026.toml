@@ -1,0 +1,98 @@
+# Static source-bound verification and future theorem specification. No execution dispatch.
+schema_version = "0.1"
+request_id = "graph-sandwich-certified-lazy-markov-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "abcc289a8d926dab071031ecef7225bd6e3aa86b"
+source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+source_blob = "92ef6e49faa6e633c09b21976a4ee4a4b1ec587b"
+relation_sandwich_path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean"
+relation_sandwich_blob = "9761b5dd5d6ada7344031c07386586c72c1d970a"
+sofic_source_path = "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean"
+sofic_source_blob = "7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+math_reference_path = "docs/reference/literature/reading-background/tao-hyperdissipation-radical-sieve-type-completeness-20261025.md"
+math_reference_commit = "bffac85e5d80429d0f1cfc0a1c948b3193bddd44"
+math_reference_blob = "6de1ca782ede457caa5a8b9e3f01995a83438bf6"
+prior_verification_request = "docs/verification/_unscoped/graph-sandwich-weighted-sieve-type-completeness-20261025.toml"
+prior_source_blob = "19eeb18c11ada786f5633ae95079722fb9583a46"
+blocking_issue = "https://github.com/grwtsk/math/issues/1267"
+frontier_issue = "https://github.com/grwtsk/math/issues/1329"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+direct_imports = [
+  "Mathlib",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+source_status = "SOURCE_CANDIDATE_UNCHECKED"
+new_lazy_constructor_source = "NOT_WRITTEN"
+new_stutter_erasure_lemma = "NOT_WRITTEN"
+new_uniform_floor_lemma = "NOT_WRITTEN"
+compiled = "NOT_RUN"
+kernel_checked = "NOT_RUN"
+transitive_axioms_audited = "NOT_RUN"
+receipt_reference = "NOT_RUN"
+remote_execution_authorized = false
+execution_dispatched = false
+merging_authorized = false
+force_push_authorized = false
+classification = "FINITE_CERTIFIED_GRAPH_MARKOV_SUPPORT_FRONTIER"
+historical_pins_preserved = true
+
+existing_declarations_to_audit = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.sum_evolve_eq_sum",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.positivePath_to_certifiedPath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_transition_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_step_of_unit_mass",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_pow",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pow_collision",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths",
+  "GRWTSK.GraphSandwichDiffusion.seed_has_no_certified_edge",
+]
+
+future_mathematical_theorems_not_yet_source = [
+  "Construct a source-first row-stochastic kernel from positive holding weights and nonnegative edge weights positive exactly on genuinely certified off-diagonal edges within finite scope.",
+  "Prove positive transition iff diagonal hold or certified off-diagonal edge.",
+  "Prove exact positive Markov weight after n steps iff initially positive source has a certified path of at most n edges, by deleting or padding positive holding steps.",
+  "Prove finite strongly connected certified graph plus positive holds implies D-step all-entry minorization >= q^D where D=max(1,card(S)-1) and q=min positive transition probability.",
+  "Prove all-type positive mass for represented types from any positive input mass after every time n>=D.",
+  "Prove each-row total-variation error epsilon<q retains required positive transitions and floor (q-epsilon)^D for stochastic perturbed steps; add exact support condition for certified provenance.",
+  "Do not infer strong connectivity of actual source seed; its certified relation is empty.",
+  "Distinguish source-first GraphSandwichDiffusion.FiniteSieveMarkovKernel from target-first RootHeatState.HeatKernel.",
+]
+
+adversarial_checks = [
+  "The source-independent normalizedTargetKernel may jump to uncertified destinations: it cannot automatically instantiate positivePath_to_certifiedPath.",
+  "Positive holding loops are not necessarily certified edges: strict certified-support premise of the existing lemma must not be reused.",
+  "The directed three-state cycle with all stays removed remains strongly connected but periodic, so all-entry D-step positivity fails.",
+  "The lazy directed three-cycle over synthetic 12,18,25 has q=1/2, D=2 and exact K^2 minimum 1/4.",
+  "At row TV error epsilon=q=1/2, replacing the lazy cycle by identity eliminates cross-type coverage; a strict epsilon<q is required.",
+  "Arbitrarily small uncertified positive transition leakage invalidates certified reachability equivalence despite small total variation error.",
+  "ArithmeticSieveKernel with modulus 2 and scope 1..4 yields weights 1,0,3,0; even parity type has representatives but no positive target weight.",
+  "The real seed inventory has no certified edges; synthetic fixture edges cannot be passed as genuine certified source relations.",
+  "No H-uniform all-type probability bound follows without uniform graph connectivity, D, q and actual arithmetic type witnesses.",
+]
+
+[checks]
+pin_exact_checkout = 'test "$(git rev-parse HEAD)" = abcc289a8d926dab071031ecef7225bd6e3aa86b'
+pin_source_blob = 'test "$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)" = 92ef6e49faa6e633c09b21976a4ee4a4b1ec587b'
+pin_relation_blob = 'test "$(git hash-object GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean)" = 9761b5dd5d6ada7344031c07386586c72c1d970a'
+pin_sofic_blob = 'test "$(git hash-object GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean)" = 7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8'
+pin_mathlib = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+lean_version = "lake env lean --version"
+compile_existing_module = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+elaborate_existing_source = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/GraphSandwichDiffusion.lean"
+axiom_audit = "Make a temporary external import driver, perform #check and #print axioms for all listed declarations, then capture the full transitive axiom closure with exit statuses."
+fresh_kernel = "Determine actually supported pinned leanchecker CLI from --help; run independently and record command, exit, diagnostic output. Do not claim this is executed."
+future_new_source_pin = "UNDEFINED UNTIL GATE RELEASES; do not reuse existing source pin as new Lean acceptance."
+observed_existing_compile_exit = "NOT_RUN"
+observed_elaboration_exit = "NOT_RUN"
+observed_fresh_kernel_exit = "NOT_RUN"
+observed_transitive_axiom_result = "NOT_RUN"
+
+# Operational runners, execution receipts, stdout and stderr belong outside math under grwtsk/noeaaeue.
