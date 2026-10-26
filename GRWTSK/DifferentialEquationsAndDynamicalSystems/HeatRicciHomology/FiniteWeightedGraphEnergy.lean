@@ -470,4 +470,54 @@ theorem weighted_edge_difference_sq_le
     (edge_difference_sq_le_two_vertex_squares a b) hw
   nlinarith
 
+/-! ## Finite degree-weighted Dirichlet upper bound
+
+Summing the edgewise estimate yields a symmetric graph bound in
+terms of the weighted degrees. A uniform degree bound D is then
+sufficient for the familiar 4D upper bound on the directed-edge
+Dirichlet energy. This is a finite algebraic estimate.
+-/
+
+/-- Exact finite graph bound by the weighted vertex-square sums. -/
+theorem weightedDirichlet_le_degree_squares
+    (w : V → V → ℚ) (v : V → ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hsym : ∀ i j, w i j = w j i) :
+    weightedDirichlet w v ≤
+      4 * ∑ i : V, weightedDegree w i * (v i) ^ 2 := by
+  classical
+  unfold weightedDirichlet
+  have hedge :
+      (∑ i : V, ∑ j : V, w i j * (v i - v j) ^ 2) ≤
+        ∑ i : V, ∑ j : V,
+          (2 * w i j * (v i) ^ 2 + 2 * w i j * (v j) ^ 2) := by
+    apply Finset.sum_le_sum
+    intro i hi
+    apply Finset.sum_le_sum
+    intro j hj
+    exact weighted_edge_difference_sq_le (w i j) (v i) (v j) (hw i j)
+  have hswap :
+      (∑ i : V, ∑ j : V, w i j * (v j) ^ 2) =
+      (∑ i : V, ∑ j : V, w i j * (v i) ^ 2) := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro j hj
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [hsym j i]
+  have hdegree :
+      (∑ i : V, ∑ j : V, w i j * (v i) ^ 2) =
+      ∑ i : V, weightedDegree w i * (v i) ^ 2 := by
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [← Finset.sum_mul]
+    rfl
+  calc
+    _ ≤ ∑ i : V, ∑ j : V,
+          (2 * w i j * (v i) ^ 2 + 2 * w i j * (v j) ^ 2) := hedge
+    _ = 4 * ∑ i : V, weightedDegree w i * (v i) ^ 2 := by
+      simp only [Finset.sum_add_distrib, ← Finset.mul_sum]
+      rw [hswap, hdegree]
+      ring
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
