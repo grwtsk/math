@@ -50,11 +50,9 @@ theorem transversePart_norm_sq
     rw [real_inner_smul_right]
     dsimp [a]
     ring
-  have h := norm_sub_sq_real z (a • (ω : Space d))
-  change ‖transversePart ω z‖ ^ 2 =
-    ‖z‖ ^ 2 - 2 * inner ℝ z (a • (ω : Space d)) +
-      ‖a • (ω : Space d)‖ ^ 2
-  rw [hinner, hnorm]
+  change ‖z - a • (ω : Space d)‖ ^ 2 =
+    ‖z‖ ^ 2 - a ^ 2
+  rw [norm_sub_sq_real, hinner, hnorm]
   ring
 
 /-- The exact Gram expression for the difference of the two true
