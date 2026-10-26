@@ -268,4 +268,64 @@ theorem edge_relevantCostEdges_endpoints
   relevantCostEdges_endpoints_in_next_cone G
     ({e.1, e.2} : Finset V) n f hf
 
+/-! ## A finite obstruction to replacing the edge cone by the induced vertex ball -/
+
+/-- A four-cycle with one edge representative per underlying undirected
+edge. This is only a FINITE graph carrier, not a proof of its Mathlib
+girth value or of any probabilistic regular-graph assertion. -/
+def fourCyclePresentation : SimpleEdgePresentation (Fin 4) where
+  edges := {
+    ((0 : Fin 4), (1 : Fin 4)),
+    ((1 : Fin 4), (2 : Fin 4)),
+    ((2 : Fin 4), (3 : Fin 4)),
+    ((3 : Fin 4), (0 : Fin 4))
+  }
+  loopless := by decide
+  noReverse := by decide
+
+/-- At depth one, the opposite edge (2,3) of this four-cycle has BOTH
+endpoints in the radius-one vertex cone of the distinguished edge
+(0,1), but is NOT among the cost edges touching the original support.
+This formally separates the relevant edge cone from all edges induced
+on the larger vertex cone. -/
+theorem fourCycle_fringe_edge_not_relevant :
+    ((2 : Fin 4), (3 : Fin 4)) ∈ fourCyclePresentation.edges ∧
+    (2 : Fin 4) ∈ cone fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4)) 1 ∧
+    (3 : Fin 4) ∈ cone fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4)) 1 ∧
+    ((2 : Fin 4), (3 : Fin 4)) ∉ relevantCostEdges fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4)) 1 := by
+  constructor
+  · decide
+  constructor
+  · change (2 : Fin 4) ∈ incidentClosure fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4))
+    apply (mem_incidentClosure_iff fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4)) 2).mpr
+    right
+    refine ⟨1, by decide, ?_⟩
+    change presentedAdj fourCyclePresentation (1 : Fin 4) (2 : Fin 4)
+    exact Or.inl (by decide)
+  constructor
+  · change (3 : Fin 4) ∈ incidentClosure fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4))
+    apply (mem_incidentClosure_iff fourCyclePresentation
+      ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4)) 3).mpr
+    right
+    refine ⟨0, by decide, ?_⟩
+    change presentedAdj fourCyclePresentation (0 : Fin 4) (3 : Fin 4)
+    exact Or.inr (by decide)
+  · intro he
+    have ht : touches
+        ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4))
+        ((2 : Fin 4), (3 : Fin 4)) :=
+      ((mem_relevantCostEdges_succ fourCyclePresentation
+        ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4))
+        0 ((2 : Fin 4), (3 : Fin 4))).mp he).2
+    have hnot : ¬ touches
+        ({(0 : Fin 4), (1 : Fin 4)} : Finset (Fin 4))
+        ((2 : Fin 4), (3 : Fin 4)) := by decide
+    exact hnot ht
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.QAOARelevantCostEdges
