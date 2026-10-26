@@ -468,4 +468,43 @@ theorem pairDifferenceEnergy_heat_le
   have henergy : 0 ≤ pairDifferenceEnergy q r := sq_nonneg _
   nlinarith
 
+/-! ## Finite two-vertex Hodge Laplacian
+
+The oriented edge coboundary is q-r. Its unnormalized graph
+Laplacian is (q-r,r-q), with exact Dirichlet energy (q-r)^2.
+This is a finite graph analogue, not a continuum Hodge theorem.
+-/
+
+def pairCoboundary (q r : ℚ) : ℚ := q - r
+
+def pairHodgeLaplacian (q r : ℚ) : ℚ × ℚ :=
+  (q - r, r - q)
+
+theorem pairHodgeLaplacian_eq_twice_antisymmetric (q r : ℚ) :
+    pairHodgeLaplacian q r =
+      (2 * (antisymmetricPair q r).1,
+       2 * (antisymmetricPair q r).2) := by
+  apply Prod.ext <;> simp [pairHodgeLaplacian, antisymmetricPair] <;> ring
+
+theorem pairHodge_energy_identity (q r : ℚ) :
+    (q * (pairHodgeLaplacian q r).1 +
+      r * (pairHodgeLaplacian q r).2) =
+      pairDifferenceEnergy q r := by
+  unfold pairHodgeLaplacian pairDifferenceEnergy
+  ring
+
+theorem pairHodgeLaplacian_heat_scale (c t q r : ℚ) :
+    pairHodgeLaplacian (heatStep c t q) (heatStep c t r) =
+      ((1 - t) * (pairHodgeLaplacian q r).1,
+       (1 - t) * (pairHodgeLaplacian q r).2) := by
+  apply Prod.ext <;> simp [pairHodgeLaplacian, heatStep] <;> ring
+
+theorem pairHodge_energy_heat_eq (c t q r : ℚ) :
+    (heatStep c t q *
+      (pairHodgeLaplacian (heatStep c t q) (heatStep c t r)).1 +
+     heatStep c t r *
+      (pairHodgeLaplacian (heatStep c t q) (heatStep c t r)).2) =
+      (1 - t) ^ 2 * pairDifferenceEnergy q r := by
+  rw [pairHodge_energy_identity, pairDifferenceEnergy_heat_eq]
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
