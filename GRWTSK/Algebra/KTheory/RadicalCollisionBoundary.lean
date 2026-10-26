@@ -459,4 +459,60 @@ theorem multiplicityOneType_diagonal_complete_all_positive_steps
           3 N hN initial initial_nonneg initial_mass_one
           depth 2 htwo (by decide))
 
+/-! ## Arithmetic-progression suppliers for the buffered sieve
+
+The progressions 12*k+1 and 12*k+2 are both coprime to 3.
+Their exact prime-2 factorization types are respectively zero and
+one, hence the existing Boolean classifier assigns them false and
+true. These are unconditional elementary arithmetic witnesses, not
+prime-counting or character-cancellation estimates. -/
+
+/-- All integers 12*k+1 are coprime to the nontrivial modulus 3. -/
+theorem twelve_mul_add_one_coprime_three (k : ℕ) :
+    Nat.Coprime (12 * k + 1) 3 := by
+  have hnot : ¬ (3 : ℕ) ∣ (12 * k + 1) := by
+    rintro ⟨c, hc⟩
+    omega
+  have hp : Nat.Prime 3 := by norm_num
+  exact ((Nat.Prime.coprime_iff_not_dvd hp).mpr hnot).symm
+
+/-- The progression 12*k+2 survives the same arithmetic sieve. -/
+theorem twelve_mul_add_two_coprime_three (k : ℕ) :
+    Nat.Coprime (12 * k + 2) 3 := by
+  have hnot : ¬ (3 : ℕ) ∣ (12 * k + 2) := by
+    rintro ⟨c, hc⟩
+    omega
+  have hp : Nat.Prime 3 := by norm_num
+  exact ((Nat.Prime.coprime_iff_not_dvd hp).mpr hnot).symm
+
+/-- The progression 12*k+1 contains no prime factor 2, so it has
+multiplicityOneType=false at every k. -/
+theorem multiplicityOneType_twelve_mul_add_one (k : ℕ) :
+    multiplicityOneType (12 * k + 1) = false := by
+  have hnot : ¬ (2 : ℕ) ∣ (12 * k + 1) := by
+    rintro ⟨c, hc⟩
+    omega
+  have hfactor : (12 * k + 1).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hnot
+  simp [multiplicityOneType, twoAdicMultiplicityType, hfactor]
+
+/-- The progression 12*k+2 has exactly one factor 2, and hence
+multiplicityOneType=true at every k. -/
+theorem multiplicityOneType_twelve_mul_add_two (k : ℕ) :
+    multiplicityOneType (12 * k + 2) = true := by
+  have hmzero : 6 * k + 1 ≠ 0 := by omega
+  have hodd : ¬ (2 : ℕ) ∣ (6 * k + 1) := by
+    rintro ⟨c, hc⟩
+    omega
+  have hfactorOdd : (6 * k + 1).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hodd
+  have hfactorTwo : (2 : ℕ).factorization 2 = 1 := by
+    have hp : Nat.Prime 2 := by norm_num
+    exact hp.factorization_self
+  have hdecomp : 12 * k + 2 = 2 * (6 * k + 1) := by omega
+  have hfactor : (12 * k + 2).factorization 2 = 1 := by
+    rw [hdecomp, Nat.factorization_mul (by norm_num) hmzero]
+    simp [hfactorOdd, hfactorTwo]
+  simp [multiplicityOneType, twoAdicMultiplicityType, hfactor]
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
