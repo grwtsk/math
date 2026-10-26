@@ -646,6 +646,39 @@ theorem no_positive_anchor_steering_of_absorbing_sink
       simpa [hzero] using reinject sink
     exact (not_lt_of_ge hbound) beta_pos
 
+/-!
+### Support-level type steering without quantitative minorization
+
+This is weaker than all common-anchor or uniform epsilon conditions:
+the positive source and target may depend on the type. It proves finite
+positive support, not a time-uniform asymptotic lower bound.
+-/
+
+/-- Each declared type has an incoming positive transition from a source
+which currently carries strictly positive heat. -/
+def SupportedTypeReachability
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (typeOf : Root → Kind) : Prop :=
+  ∀ kind, ∃ source target,
+    typeOf target = kind ∧
+    0 < heat source ∧
+    0 < kernel.transition target source
+
+/-- Support-level reachability suffices for one-step type completeness
+without selecting a common anchor or a uniform quantitative minorant. -/
+theorem type_complete_of_supported_type_reachability
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind)
+    (reachable : SupportedTypeReachability kernel heat typeOf) :
+    TypeCompleteAt typeOf (kernel.step heat) := by
+  intro kind
+  obtain ⟨source, target, hkind, hheat, hedge⟩ := reachable kind
+  have hbound := aggregate_step_lower_of_edge kernel heat
+    nonnegative typeOf source target
+  rw [hkind] at hbound
+  exact lt_of_lt_of_le (mul_pos hedge hheat) hbound
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
