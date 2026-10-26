@@ -289,4 +289,59 @@ theorem graphEulerHeat_sum_eq
   rw [weightedGraphLaplacian_sum_zero w u hsym]
   ring
 
+/-! ## Exact Euler energy change and conditional dissipation
+
+The finite Euler step changes the quadratic graph energy by a
+first-order dissipative term plus a second-order correction.
+A source-faithful operator inequality on the correction is
+required before asserting energy decay. This isolates that
+missing estimate without inventing a spectral norm bound.
+-/
+
+/-- Symmetric bilinear pairing of a rational field with the
+weighted graph Laplacian applied to another field. -/
+def graphMixedPairing (w : V → V → ℚ)
+    (u v : V → ℚ) : ℚ :=
+  ∑ i : V, u i * weightedGraphLaplacian w v i
+
+/-- Exact polarization of the Laplacian quadratic pairing. -/
+theorem graphLaplacianPairing_sub_expand
+    (w : V → V → ℚ) (u v : V → ℚ) (τ : ℚ) :
+    graphLaplacianPairing w (fun i => u i - τ * v i) =
+      graphLaplacianPairing w u -
+        τ * graphMixedPairing w u v -
+        τ * graphMixedPairing w v u +
+        τ ^ 2 * graphLaplacianPairing w v := by
+  classical
+  unfold graphLaplacianPairing graphMixedPairing weightedGraphLaplacian
+  simp only [Finset.mul_sum]
+  rw [← Finset.sum_sub_distrib]
+  apply Finset.sum_congr rfl
+  intro i hi
+  rw [← Finset.sum_sub_distrib]
+  ring
+
+/-- An explicit second-order correction budget suffices for
+dissipation of the actual graph Euler step. The correction bound
+is an unresolved arithmetic/spectral supplier. -/
+theorem graphEulerHeat_pairing_le_of_correction_budget
+    (w : V → V → ℚ) (u : V → ℚ) (τ : ℚ)
+    (hτ : 0 ≤ τ)
+    (hmixed :
+      graphMixedPairing w u (weightedGraphLaplacian w u) =
+        graphMixedPairing w (weightedGraphLaplacian w u) u)
+    (hbudget :
+      τ * graphLaplacianPairing w (weightedGraphLaplacian w u) ≤
+        2 * graphMixedPairing w u (weightedGraphLaplacian w u)) :
+    graphLaplacianPairing w (graphEulerHeat w τ u) ≤
+      graphLaplacianPairing w u := by
+  have hexpand := graphLaplacianPairing_sub_expand
+    w u (weightedGraphLaplacian w u) τ
+  change graphLaplacianPairing w
+    (fun i => u i - τ * weightedGraphLaplacian w u i) =
+    _ at hexpand
+  rw [← graphEulerHeat] at hexpand
+  rw [hmixed] at hexpand
+  nlinarith
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
