@@ -1349,4 +1349,62 @@ theorem rightOuterCutoff_lt_prime (n p : ℕ)
   unfold rightOuterCutoff
   exact Nat.floor_lt (by exact_mod_cast h)
 
+/-! ## Exact theta increments on the integer boundary tails
+
+The left tail is closed at its floor cutoff. The right tail is open
+at its floor cutoff and closed at the upper square endpoint.
+The following identities retain those endpoint conventions.
+-/
+
+/-- A genuine left-tail prime lies in the exact integer cutoff
+interval, with the original open-left square boundary. -/
+theorem leftOuterPrime_mem_cutoff_interval (n p : ℕ)
+    (hp : p ∈ leftOuterSquarePrimes n) :
+    p ∈ Finset.Ioc (n ^ 2) (leftOuterCutoff n) := by
+  have hfull := (Finset.mem_filter.mp
+    (Finset.mem_sdiff.mp (Finset.mem_filter.mp hp).1).1).1
+  exact Finset.mem_Ioc.mpr
+    ⟨(Finset.mem_Ioc.mp hfull).1, leftOuterPrime_le_cutoff n p hp⟩
+
+/-- A genuine right-tail prime lies in the exact integer cutoff
+interval, retaining the closed-right upper square endpoint. -/
+theorem rightOuterPrime_mem_cutoff_interval (n p : ℕ)
+    (hp : p ∈ rightOuterSquarePrimes n) :
+    p ∈ Finset.Ioc (rightOuterCutoff n) ((n + 1) ^ 2) := by
+  have hfull := (Finset.mem_filter.mp
+    (Finset.mem_sdiff.mp (Finset.mem_filter.mp hp).1).1).1
+  exact Finset.mem_Ioc.mpr
+    ⟨rightOuterCutoff_lt_prime n p hp, (Finset.mem_Ioc.mp hfull).2⟩
+
+/-- A source-faithful left-tail theta bound over the narrower
+integer interval. The cutoff ordering is explicit. -/
+theorem leftOuterPrimeMass_le_cutoff_theta
+    (n : ℕ) (hcut : n ^ 2 ≤ leftOuterCutoff n) :
+    (∑ p ∈ leftOuterSquarePrimes n,
+      ArithmeticFunction.vonMangoldt p) ≤
+      Chebyshev.theta ((leftOuterCutoff n : ℕ) : ℝ) -
+        Chebyshev.theta (((n ^ 2 : ℕ) : ℝ)) := by
+  have hsubset :
+      leftOuterSquarePrimes n ⊆
+        (Finset.Ioc (n ^ 2) (leftOuterCutoff n)).filter Nat.Prime := by
+    intro p hp
+    exact Finset.mem_filter.mpr
+      ⟨leftOuterPrime_mem_cutoff_interval n p hp,
+        (Finset.mem_filter.mp
+          (Finset.mem_sdiff.mp (Finset.mem_filter.mp hp).1).1).2⟩
+  have hle := Finset.sum_le_sum_of_subset_of_nonneg hsubset
+    (fun p hp hnot => ArithmeticFunction.vonMangoldt_nonneg)
+  have htheta :=
+    GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness.theta_sub_nat_eq_prime_sum
+      (n ^ 2) (leftOuterCutoff n) hcut
+  rw [htheta]
+  calc
+    _ ≤ ∑ p ∈ (Finset.Ioc (n ^ 2) (leftOuterCutoff n)).filter Nat.Prime,
+          ArithmeticFunction.vonMangoldt p := hle
+    _ = _ := by
+      apply Finset.sum_congr rfl
+      intro p hp
+      exact ArithmeticFunction.vonMangoldt_apply_prime
+        (Finset.mem_filter.mp hp).2
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
