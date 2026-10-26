@@ -5,6 +5,9 @@ import GRWTSK.Analysis.Geometry.FiniteFourArcSourceFidelity
 import GRWTSK.Analysis.Geometry.FiniteFourArcCohomology
 import GRWTSK.Analysis.Geometry.FiniteFourArcTrace
 import GRWTSK.Analysis.Geometry.FiniteFourArcReturnMetric
+import GRWTSK.Analysis.Geometry.FiniteFourArcHodge
+import GRWTSK.Analysis.Geometry.FiniteFourArcGap
+import GRWTSK.Analysis.Geometry.FiniteFourArcDeterminant
 import Mathlib
 
 set_option autoImplicit false
@@ -99,5 +102,23 @@ theorem geometric_cycle_nonexact :
     ¬ ∃ f : FourCochain,
       edgeDifference f = (fun _ : Fin 4 => (1 : ℝ)) :=
   constant_one_not_edgeDifference
+
+/-- A finite positive contact-Hodge gap and a finite geometric
+rotation determinant coexist, but they are mathematically different
+operators and therefore carry separate certificates. -/
+theorem geometric_hodge_and_determinant_certificate :
+    (∀ f : FourCochain,
+      2 * centeredEnergy f ≤ fourDot f (cycleLaplacian f)) ∧
+    (∃ f : FourCochain,
+      centeredEnergy f = 2 ∧
+        fourDot f (cycleLaplacian f) = 4) ∧
+    quarterDeterminant Complex.I = 0 ∧
+    quarterDeterminant (-Complex.I) = 0 ∧
+    (∀ n : ℕ,
+      closedWalkMoment geometricSystem.complexReturnOperator n = (2 : ℂ)) := by
+  refine ⟨cycleLaplacian_gap_two, ?_, quarterDeterminant_at_I,
+    quarterDeterminant_at_neg_I, fourPhase_closedWalkMoment⟩
+  exact ⟨gapAttainingMode, gapAttainingMode_centeredEnergy,
+    gapAttainingMode_laplacianEnergy⟩
 
 end GRWTSK.Analysis.Geometry.FiniteFourArcContact
