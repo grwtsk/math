@@ -679,6 +679,57 @@ theorem type_complete_of_supported_type_reachability
   rw [hkind] at hbound
   exact lt_of_lt_of_le (mul_pos hedge hheat) hbound
 
+/-!
+### Exact support obstruction
+
+For nonnegative heat, a missing positive source-to-type transition
+forces zero next-step mass for that type. This is the negative half of
+the support criterion, without a mixing or asymptotic hypothesis.
+-/
+
+/-- If no positive-heat source has a positive edge into a selected type,
+the next diffusion step assigns that type exactly zero mass. -/
+theorem aggregate_step_eq_zero_of_no_supported_edge
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (kind : Kind)
+    (noEdge : ∀ source target, typeOf target = kind →
+      0 < heat source → kernel.transition target source = 0) :
+    aggregate typeOf (kernel.step heat) kind = 0 := by
+  have htarget : ∀ target, typeOf target = kind →
+      kernel.step heat target = 0 := by
+    intro target hkind
+    unfold HeatKernel.step
+    apply Finset.sum_eq_zero
+    intro source _
+    by_cases hzero : heat source = 0
+    · simp [hzero]
+    · have hpositive : 0 < heat source :=
+        lt_of_le_of_ne (nonnegative source) (Ne.symm hzero)
+      simp [noEdge source target hkind hpositive]
+  unfold aggregate
+  apply Finset.sum_eq_zero
+  intro target _
+  by_cases hkind : typeOf target = kind
+  · simp [hkind, htarget target hkind]
+  · simp [hkind]
+
+/-- A type without a supported incoming edge obstructs next-step
+type completeness, even for a normalized stochastic kernel. -/
+theorem not_type_complete_of_no_supported_edge
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (kind : Kind)
+    (noEdge : ∀ source target, typeOf target = kind →
+      0 < heat source → kernel.transition target source = 0) :
+    ¬ TypeCompleteAt typeOf (kernel.step heat) := by
+  intro complete
+  have hzero := aggregate_step_eq_zero_of_no_supported_edge
+    kernel heat nonnegative typeOf kind noEdge
+  have hpositive := complete kind
+  rw [hzero] at hpositive
+  exact (lt_irrefl (0 : ℚ)) hpositive
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
