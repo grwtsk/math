@@ -308,8 +308,50 @@ theorem coarseObservationKernel_step_totalMass
 
 /-! ## Collision-mode annihilation and non-reconstruction -/
 
-/-- The coarse quotient projection annihilates the signed exponent-sensitive
-collision mode in every quotient fibre. -/
+/-- Rational form of the signed exponent-sensitive collision mode. -/
+def rationalCollisionModeVector (state : State) : ℚ :=
+  if state = 0 then 0
+  else if state = 1 then 1
+  else -1
+
+/-- The rational collision mode casts exactly to the real spectral collision
+mode used by the finite spectrum. -/
+@[simp]
+theorem rationalCollisionModeVector_cast (state : State) :
+    (rationalCollisionModeVector state : ℝ) =
+      collisionModeVector state := by
+  fin_cases state <;>
+    norm_num [rationalCollisionModeVector, collisionModeVector]
+
+/-- The rational quotient projection annihilates the signed collision mode. -/
+theorem coarseRationalPushforward_collisionMode_zero
+    {M : Type*} [CommMonoid M]
+    (lift : ℕ →* M)
+    (quotient : CoarseObservationQuotient M lift) :
+    coarseRationalPushforward lift
+        rationalCollisionModeVector quotient = 0 := by
+  classical
+  rcases coarseObservationQuotient_eq_anchor_or_collision lift quotient with
+    anchorClass | collisionClass
+  · subst quotient
+    norm_num [
+      coarseRationalPushforward,
+      aggregate,
+      rationalCollisionModeVector,
+      coarseObservationClass_eq_anchor_iff,
+      Fin.sum_univ_three
+    ]
+  · subst quotient
+    norm_num [
+      coarseRationalPushforward,
+      aggregate,
+      rationalCollisionModeVector,
+      coarseObservationClass_eq_collision_iff,
+      Fin.sum_univ_three
+    ]
+
+/-- The real quotient projection annihilates the real collision mode in every
+quotient fibre. -/
 theorem coarseObservationMass_collisionMode_zero
     {M : Type*} [CommMonoid M]
     (lift : ℕ →* M)
@@ -346,22 +388,20 @@ theorem coarseObservationMass_transitionCollision_zero
   rw [transitionAction_collision height]
   simp [coarseObservationMass]
 
-/-- Quotient evolution preserves the zero image of the collision mode at every
-finite time. -/
+/-- Quotient evolution preserves the zero rational image of the collision mode
+at every finite time. -/
 theorem coarseObservationKernel_collision_evolve_zero
     {M : Type*} [CommMonoid M]
     (lift : ℕ →* M)
     (height time : Nat) :
     (coarseObservationKernel lift height).evolve
-        (fun quotient =>
-          (coarseObservationMass lift collisionModeVector quotient : ℚ))
+        (coarseRationalPushforward lift rationalCollisionModeVector)
         time =
       fun _ => 0 := by
   rw [coarseObservationKernel_evolve]
   funext quotient
-  have zeroReal :=
-    coarseObservationMass_collisionMode_zero lift quotient
-  exact_mod_cast zeroReal
+  exact coarseRationalPushforward_collisionMode_zero
+    lift quotient
 
 /-- Fibre summation is not injective on real state vectors: the nonzero collision
 mode and the zero vector have the same quotient image. -/
@@ -435,14 +475,17 @@ structure CoarseObservationMarkovBoundaryCertificate
     ∀ height,
       CoarseObservationCompleteAt lift
         (observationAt height).realHeat
-  collisionProjectionZero :
+  rationalCollisionProjectionZero :
+    ∀ quotient,
+      coarseRationalPushforward lift
+        rationalCollisionModeVector quotient = 0
+  realCollisionProjectionZero :
     ∀ quotient,
       coarseObservationMass lift collisionModeVector quotient = 0
   collisionDynamicsZero :
     ∀ height time,
       (coarseObservationKernel lift height).evolve
-          (fun quotient =>
-            (coarseObservationMass lift collisionModeVector quotient : ℚ))
+          (coarseRationalPushforward lift rationalCollisionModeVector)
           time =
         fun _ => 0
   projectionNotInjective :
@@ -491,7 +534,11 @@ noncomputable def canonicalCoarseObservationMarkovBoundaryCertificate
   quotientComplete := by
     intro height
     exact coarseObservationCompleteAt_height lift height
-  collisionProjectionZero := by
+  rationalCollisionProjectionZero := by
+    intro quotient
+    exact coarseRationalPushforward_collisionMode_zero
+      lift quotient
+  realCollisionProjectionZero := by
     intro quotient
     exact coarseObservationMass_collisionMode_zero
       lift quotient
