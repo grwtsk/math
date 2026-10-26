@@ -56,7 +56,10 @@ theorem source_preserved_on_contact (L : LabeledLoop Label)
     {i j : Fin 4} (h : contactEdge i j) :
     L.arcSourceLabel i = L.arcSourceLabel j ∧
       L.arcMultiplicity i = L.arcMultiplicity j := by
-  constructor <;> rfl
+  change j = next i at h
+  subst j
+  exact ⟨(L.arcSourceLabel_preserved i).symm,
+    (L.arcMultiplicity_preserved i).symm⟩
 
 /-- The four physical arc records may be counted individually, but
 their *source's* declared multiplicity remains just `L.multiplicity`.
