@@ -1,0 +1,123 @@
+# Finite Markov dynamics and positive certified path verification request.
+# Source review only. No local compiler, independent kernel or remote runner receipt.
+schema_version = "0.1"
+request_id = "graph-sandwich-finite-markov-positive-path-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "6ce278184edc5d359490a16b23d0144a1125390d"
+source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+source_blob = "51465630e8836478e578c1721f24cc37cac317ea"
+source_commits = [
+  "b06d3ac8e7a843c10cfb0ebf3b0d9c2675edcf29",
+  "d08fc29bd31a26715c0228d2ef76fcd2a6db4a6e",
+  "08cc097a2f282937882d1a213813fa950cc03aa9",
+  "6ce278184edc5d359490a16b23d0144a1125390d",
+]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_sum_pos_source = "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean"
+mathlib_sum_pos_blob = "3745e5cb7ff4b16ad6532357837698f4bf54c4a8"
+collision_comparison_source = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+collision_comparison_blob = "ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "FINITE_MARKOV_AND_CERTIFIED_COVERAGE_SOURCE_CANDIDATE"
+new_structure = "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel"
+finite_kernel_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.sum_step_eq_sum",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.sum_evolve_eq_sum",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.positivePath_to_certifiedPath",
+]
+certified_inventory_bridges = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_eq_kernelTypeMass_of_scope",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_iff_kernelPath_of_scope",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths",
+]
+preserved_prior_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_of_mass_pos",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_pos_iff_hit_of_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_all_mass_pos_of_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error",
+]
+direct_imports = [
+  "Mathlib",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+exact_hypotheses = [
+  "FiniteSieveMarkovKernel State: a fixed finite scope, real transition State -> State -> Real",
+  "Every x,y in scope: 0 <= transition x y; every x in scope: sum over y in scope of transition x y = 1",
+  "Step and all iterates: initial weights nonnegative on scope where positivity claims are used",
+  "One-step and multi-step target positivity: target lies in scope, initial positive source lies in scope",
+  "positivePath depth source target: exact length with each intermediate in scope and each transition factor strictly positive",
+  "Type mass: target types specified by typeOf : State -> TypeLabel; sum over type fiber restricted to scope",
+  "positivePath_to_certifiedPath: positive in-scope transitions imply inventory.certified edges, separately supplied",
+  "Certified sieve bridges: kernel scope equals inventory.certifiedSearch source searchDepth; fixed inventory depth and Markov step count are distinct",
+  "Unconditional row-stochastic mass conservation is independent of positive weights and analytic mixing",
+]
+mathematical_conclusions = [
+  "Sum of one-step transported weights over the finite scope equals original total mass",
+  "All finite iterates preserve total mass and nonnegativity for nonnegative initial weights",
+  "Mass at a target after n steps is positive iff some positive initial source has an exact length n positive-transition path to target",
+  "Positive mass in a finite target type fiber iff such a path ends at some state of that exact type",
+  "Positive kernel paths imply certified bounded paths only under explicit positive-edge-to-certified-edge support",
+  "At equal finite scope, kernel type mass matches existing certified sieve type mass and coverage criteria",
+]
+unresolved_premises = [
+  "Source draft has not been elaborated against pinned Lean v4.33.0 or full Mathlib transitive dependencies",
+  "Confirm recursion equations for evolve and positivePath, Finset.sum_pos_iff_of_nonneg, sum_comm, mul_sum and searchDepth binder fix",
+  "Full dependency source inventory, fresh kernel checking and transitive axiom audit remain pending",
+  "No concrete kernel from number-theoretic weighted sieve, graph Laplacian, heat semigroup or arithmetic steering weights has been supplied",
+  "No stationary distribution, spectral gap, quantitative mixing, asymptotic prime-type lower bound or E(chi) cancellation estimate",
+  "No concrete Nat-to-certified-graph adapter instantiates the independent radical K0-shaped collision fixture",
+  "Kernel scope need not be nonempty; do not claim probability normalization without positive total initial mass",
+  "No claim of exact type decoding or unconditional asymptotic type completeness",
+]
+source_review = "STATIC_API_AND_DECLARATION_REVIEW_ONLY"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 6ce278184edc5d359490a16b23d0144a1125390d && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 51465630e8836478e578c1721f24cc37cac317ea && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+independent_fresh_kernel = "PENDING_SUPPORTED_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_FULL_IMPORT_CLOSURE"
+axiom_targets = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.sum_step_eq_sum",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.sum_evolve_eq_sum",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.positivePath_to_certifiedPath",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_eq_kernelTypeMass_of_scope",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_iff_kernelPath_of_scope",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths",
+]
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0
