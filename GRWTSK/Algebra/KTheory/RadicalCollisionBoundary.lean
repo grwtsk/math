@@ -1167,7 +1167,10 @@ theorem primeValuation_buffered_mass_ge_fixed_rate
       ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) depth hcount
   calc
     (1 : ℝ) / (8 * (primeValuationPeriod p k : ℝ)) =
-        ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) / 4 := by ring
+        ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) / 4 := by
+      rw [div_div_eq_div_mul]
+      congr 1
+      ring
     _ ≤ (bufferedDiagonalKernel 3 N hN).typeMass
           initial (primeValuationType p) (depth + 1) k := hmass
 
