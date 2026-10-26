@@ -77,4 +77,53 @@ theorem terminal_heatStep (c q : ℚ) :
   unfold heatStep
   ring
 
+/-! ## Finite Hodge-style refinement commuting with heat
+
+A linear rational refinement R preserves a reference vector when it
+maps the constant function at c to itself. Under that explicit
+hypothesis it commutes with the synthetic Euler heat relaxation.
+This is a finite algebraic analogue, not an analytic Hodge theorem.
+-/
+
+/-- Pointwise heat relaxation of a rational finite spectral field. -/
+def heatField {ι : Type*} (c t : ℚ) (u : ι → ℚ) : ι → ℚ :=
+  fun i => heatStep c t (u i)
+
+/-- A linear refinement of rational spectral coordinates. -/
+def refinedField {ι κ : Type*}
+    (R : (ι → ℚ) →ₗ[ℚ] (κ → ℚ)) (u : ι → ℚ) : κ → ℚ :=
+  R u
+
+/-- Exact commutation when the refinement preserves the constant
+reference field. This is the missing hypothesis for heat transport. -/
+theorem refinement_commutes_heat
+    {ι κ : Type*}
+    (R : (ι → ℚ) →ₗ[ℚ] (κ → ℚ))
+    (c t : ℚ)
+    (hreference : R (fun _ : ι => c) = (fun _ : κ => c))
+    (u : ι → ℚ) :
+    refinedField R (heatField c t u) =
+      heatField c t (refinedField R u) := by
+  have hfield : heatField c t u =
+      (1 - t) • u + t • (fun _ : ι => c) := by
+    funext i
+    simp [heatField, heatStep, Pi.add_apply, Pi.smul_apply, smul_eq_mul]
+  unfold refinedField
+  rw [hfield, map_add, map_smul, map_smul, hreference]
+  funext i
+  simp [heatField, heatStep, Pi.add_apply, Pi.smul_apply, smul_eq_mul]
+
+/-- Constant-preserving refinement carries a terminal collision field
+to the same reference level. -/
+theorem refinement_preserves_terminal_collision
+    {ι κ : Type*}
+    (R : (ι → ℚ) →ₗ[ℚ] (κ → ℚ))
+    (c : ℚ)
+    (hreference : R (fun _ : ι => c) = (fun _ : κ => c))
+    (u : ι → ℚ) :
+    refinedField R (heatField c 1 u) = (fun _ : κ => c) := by
+  rw [refinement_commutes_heat R c 1 hreference u]
+  funext i
+  exact terminal_heatStep c (refinedField R u i)
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
