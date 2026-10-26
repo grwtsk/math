@@ -994,4 +994,86 @@ theorem seed_has_no_certified_edge (source target : SeedConcept) :
     ¬ seedInventory.certified source target := by
   simp [seedInventory, seedCertified]
 
+
+/-! ## Certified type coverage under weighted-sieve steering -/
+
+/-- A type is detected at a finite depth only if a vertex of that type is
+reachable by the *certified* relation and carries strictly positive
+diffused sieve weight. Candidate-only edges do not count. The weights
+are supplied data, not a heat-semigroup construction. -/
+def SourceSearchInventory.sieveTypeHit
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T) : Prop :=
+  ∃ vertex ∈ inventory.certifiedSearch source depth,
+    typeOf vertex = targetType ∧ 0 < diffusedSieveWeight depth vertex
+
+/-- Completeness is relative to the declared type space, certified
+reachability and the supplied diffusion/sieve weights. -/
+def SourceSearchInventory.sieveTypeCompleteAt
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ) (depth : ℕ) : Prop :=
+  ∀ targetType : T,
+    inventory.sieveTypeHit source typeOf diffusedSieveWeight depth targetType
+
+/-- A positive sieve-weighted type witness retains a certified bounded
+path. This theorem does not promote candidates to certified edges. -/
+theorem SourceSearchInventory.sieveTypeHit_has_certifiedPath
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (hit : inventory.sieveTypeHit source typeOf
+      diffusedSieveWeight depth targetType) :
+    ∃ vertex : V, ∃ length : ℕ,
+      length ≤ depth ∧
+      BoundedPath inventory.certified length source vertex ∧
+      typeOf vertex = targetType ∧
+      0 < diffusedSieveWeight depth vertex := by
+  rcases hit with ⟨vertex, member, sameType, positive⟩
+  obtain ⟨length, hlength, path⟩ :=
+    exists_boundedPath_of_mem_reachableWithin
+      inventory.vertices inventory.certified source vertex depth member
+  exact ⟨vertex, length, hlength, path, sameType, positive⟩
+
+/-- For a *finite* type space, per-type asymptotic steering to a
+positive certified witness gives a uniform stage after which every
+type is detected at every depth. The per-type steering premise is a
+genuine additional supplier, not a consequence of graph connectivity
+or positivity of an arbitrary heat kernel. -/
+theorem SourceSearchInventory.sieveTypeComplete_eventually_of_steering
+    {T : Type*} [Fintype T]
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → T) (diffusedSieveWeight : ℕ → V → ℝ)
+    (hsteering : ∀ targetType : T, ∃ cutoff : ℕ, ∀ depth : ℕ,
+      cutoff ≤ depth →
+        inventory.sieveTypeHit source typeOf
+          diffusedSieveWeight depth targetType) :
+    ∃ cutoff : ℕ, ∀ depth : ℕ, cutoff ≤ depth →
+      inventory.sieveTypeCompleteAt source typeOf
+        diffusedSieveWeight depth := by
+  classical
+  choose cutoff hcutoff using hsteering
+  refine ⟨Finset.univ.sup cutoff, ?_⟩
+  intro depth hdepth targetType
+  exact hcutoff targetType depth
+    ((Finset.le_sup (Finset.mem_univ targetType)).trans hdepth)
+
+/-- Missing certified access to one type defeats type completeness at
+that depth regardless of the assigned sieve/diffusion weights. -/
+theorem SourceSearchInventory.not_sieveTypeCompleteAt_of_missing_type
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (missing : ∀ vertex ∈ inventory.certifiedSearch source depth,
+      typeOf vertex ≠ targetType) :
+    ¬ inventory.sieveTypeCompleteAt source typeOf
+      diffusedSieveWeight depth := by
+  intro complete
+  obtain ⟨vertex, member, sameType, _⟩ := complete targetType
+  exact (missing vertex member) sameType
+
 end GRWTSK.GraphSandwichDiffusion
