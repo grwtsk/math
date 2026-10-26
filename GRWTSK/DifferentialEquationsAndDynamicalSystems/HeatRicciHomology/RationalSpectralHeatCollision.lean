@@ -244,4 +244,50 @@ theorem pullback_refinement_heat_gap_le
     (pullback_preserves_reference f c)
     (pullback_gapNonexpansive f scale) a b u
 
+/-! ## Collision preservation under injective coordinate pullback
+
+Injectivity of the INDEX map ensures distinct output indices have
+distinct source indices. It does not alone ensure the source field
+takes distinct values there: that is a separate spectral
+noncollision hypothesis. Both are preserved explicitly.
+-/
+
+/-- Injective pullback preserves noncollision of the designated
+source values for any two output indices. -/
+theorem pullback_noncollision_of_source_noncollision
+    {ι κ : Type*} (f : κ → ι)
+    (u : ι → ℚ) (a b : κ)
+    (hsource : u (f a) ≠ u (f b)) :
+    pullbackRefinement f u a ≠ pullbackRefinement f u b := by
+  exact hsource
+
+/-- Injective index refinement and a source field separating
+distinct source indices ensure distinct output spectral values. -/
+theorem pullback_preserves_pairwise_distinct
+    {ι κ : Type*} (f : κ → ι)
+    (hf : Function.Injective f)
+    (u : ι → ℚ)
+    (hu : Function.Injective u) :
+    Function.Injective (pullbackRefinement f u) := by
+  intro a b hab
+  apply hf
+  apply hu
+  exact hab
+
+/-- Strictly subterminal heat flow after an injective pullback
+preserves pairwise distinct rational spectral coordinates. -/
+theorem pullback_heat_preserves_pairwise_distinct
+    {ι κ : Type*} (f : κ → ι)
+    (hf : Function.Injective f)
+    (u : ι → ℚ) (hu : Function.Injective u)
+    (c t : ℚ) (ht : t < 1) :
+    Function.Injective
+      (pullbackRefinement f (heatField c t u)) := by
+  intro a b hab
+  have hsource :
+      heatStep c t (u (f a)) = heatStep c t (u (f b)) := hab
+  have hbefore :=
+    (heatStep_collision_iff c t (u (f a)) (u (f b)) ht).mp hsource
+  exact hf (hu hbefore)
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
