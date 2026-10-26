@@ -2099,4 +2099,68 @@ theorem jointTwoThreeValuation_buffered_eventually_certified_hit (a b : ℕ) :
   exact ⟨jointTwoThreeValuationProgression a b 0, hreach,
     jointTwoThreeValuationProgression_type a b 0, hpositive⟩
 
+/-- No fixed finite arithmetic cutoff can cover the entire
+unbounded type space ℕ×ℕ of exact (v₂,v₃) pairs. The first
+valuation coordinate at any integer n∈[1,N] is strictly less
+than N, so the target pair (N,0) is missing, regardless of
+the chosen weights or finite diffusion dynamics. -/
+theorem jointTwoThreeValuation_no_finite_all_pair_coverage
+    (q N : ℕ) (hN : 1 ≤ N)
+    (weights : ℕ → ℕ → ℝ) :
+    ¬ (certifiedArithmeticInventory q N hN).sieveTypeCompleteAt
+      1 jointTwoThreeValuationType weights 1 := by
+  intro complete
+  obtain ⟨n, hn, htype, _⟩ := complete (N, 0)
+  have hscope : n ∈ scope N := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN] at hn
+    exact (Finset.mem_filter.mp hn).1
+  have hlt : primeValuationType 2 n < N :=
+    primeValuationType_lt_cutoff 2 N n hscope
+  have hfirst : primeValuationType 2 n = N := by
+    exact congrArg Prod.fst htype
+  omega
+
+/-- Concrete joint-type information-loss obstruction in the SAME
+modulus-five certified sieve. Once both 2 and 4 lie inside scope,
+they are coprime to 5 and certified reachable at depth one, but
+their radical-derived K₀-shaped features are equal. Their first
+exact valuation coordinates are 1 and 2, so they have different
+joint types. No feature-only exact joint-type decoder exists. -/
+theorem jointTwoThreeValuation_no_exact_radical_decoder
+    (lift : ℕ →* M) (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N) :
+    ¬ ∃ decode : GrothendieckKZero M → ℕ × ℕ,
+        ∀ n ∈ (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1,
+          jointTwoThreeValuationType n = decode (kZeroRadical lift n) := by
+  have htwo : (2 : ℕ) ∈ scope N := by
+    change (2 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+  have hfour : (4 : ℕ) ∈ scope N := by
+    change (4 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+  have hcop2 : Nat.Coprime 2 5 := by decide
+  have hcop4 : Nat.Coprime 4 5 := by decide
+  have hreach2 :
+      (2 : ℕ) ∈ (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 5 N hN]
+    exact Finset.mem_filter.mpr ⟨htwo, hcop2⟩
+  have hreach4 :
+      (4 : ℕ) ∈ (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 5 N hN]
+    exact Finset.mem_filter.mpr ⟨hfour, hcop4⟩
+  have hpow : (2 : ℕ) ^ 2 = 4 := by norm_num
+  have hfeature :
+      kZeroRadical lift (2 : ℕ) = kZeroRadical lift (4 : ℕ) := by
+    have hp := kZeroRadical_pow lift 2 2 (by norm_num)
+    simpa only [hpow] using hp.symm
+  have htype : jointTwoThreeValuationType 2 ≠
+      jointTwoThreeValuationType 4 := by
+    intro h
+    have hfirst : twoAdicMultiplicityType 2 =
+        twoAdicMultiplicityType 4 := by
+      exact congrArg Prod.fst h
+    exact twoAdicMultiplicityType_two_ne_four hfirst
+  exact (certifiedArithmeticInventory 5 N hN).no_exact_feature_type_of_collision
+    1 jointTwoThreeValuationType (kZeroRadical lift) 1
+    hreach2 hreach4 hfeature htype
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
