@@ -1066,4 +1066,174 @@ theorem primeValuationProgression_mem_scope
   exact Finset.mem_Icc.mpr
     ⟨Nat.succ_le_iff.mpr (primeValuationProgression_pos p k j hp), hupper⟩
 
+/-- For any chosen prime p coprime to 3, the finite sieve has
+at least floor(N/(3*p^(k+1))) distinct survivors with *exact*
+prime-p valuation k. This is elementary finite counting. -/
+theorem primeValuation_survivors_card_ge_floor
+    (p k N : ℕ) (hp : Nat.Prime p) (hcop : Nat.Coprime p 3) :
+    N / primeValuationPeriod p k ≤
+      (bufferedTypeSurvivors 3 N (primeValuationType p) k).card := by
+  classical
+  have hsub :
+      ((Finset.range (N / primeValuationPeriod p k)).image
+        (primeValuationProgression p k)) ⊆
+          bufferedTypeSurvivors 3 N (primeValuationType p) k := by
+    intro target ht
+    obtain ⟨j, hj, rfl⟩ := Finset.mem_image.mp ht
+    have hscope :
+        primeValuationProgression p k j ∈ scope N :=
+      primeValuationProgression_mem_scope
+        p k N j hp (Finset.mem_range.mp hj)
+    change primeValuationProgression p k j ∈
+      (scope N).filter
+        (fun n => primeValuationType p n = k ∧ Nat.Coprime n 3)
+    exact Finset.mem_filter.mpr
+      ⟨hscope, primeValuationProgression_factorization p k j hp,
+        primeValuationProgression_coprime_three p k j hp hcop⟩
+  calc
+    N / primeValuationPeriod p k =
+        (Finset.range (N / primeValuationPeriod p k)).card := by simp
+    _ = ((Finset.range (N / primeValuationPeriod p k)).image
+          (primeValuationProgression p k)).card :=
+      (Finset.card_image_of_injective _
+        (primeValuationProgression_injective p k hp)).symm
+    _ ≤ (bufferedTypeSurvivors 3 N (primeValuationType p) k).card :=
+      Finset.card_le_card hsub
+
+/-- For a fixed prime-p valuation k, once the cutoff exceeds the
+progression period, the coprime type-k survivors occupy at least
+N/(2*period) of the integer interval. The period depends on p,k. -/
+theorem primeValuation_survivor_density
+    (p k N : ℕ) (hp : Nat.Prime p) (hcop : Nat.Coprime p 3)
+    (hcutoff : primeValuationPeriod p k ≤ N) :
+    ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) * (N : ℝ) ≤
+      ((bufferedTypeSurvivors 3 N (primeValuationType p) k).card : ℝ) := by
+  let d := primeValuationPeriod p k
+  have hdpos : 0 < d := primeValuationPeriod_pos p k hp
+  have hq : 1 ≤ N / d := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hdle : d ≤ d * (N / d) := by
+    calc
+      d = d * 1 := by simp
+      _ ≤ d * (N / d) := Nat.mul_le_mul_left d hq
+  have hmodlt : N % d < d := Nat.mod_lt N hdpos
+  have hmod : N % d + d * (N / d) = N := Nat.mod_add_div N d
+  have hfloor : N ≤ 2 * (d * (N / d)) := by omega
+  have hcard : N / d ≤
+      (bufferedTypeSurvivors 3 N (primeValuationType p) k).card :=
+    primeValuation_survivors_card_ge_floor p k N hp hcop
+  have hbound : N ≤
+      (2 * d) * (bufferedTypeSurvivors 3 N (primeValuationType p) k).card := by
+    calc
+      N ≤ 2 * (d * (N / d)) := hfloor
+      _ = (2 * d) * (N / d) := by ring
+      _ ≤ (2 * d) *
+          (bufferedTypeSurvivors 3 N (primeValuationType p) k).card :=
+        Nat.mul_le_mul_left _ hcard
+  have hreal : (N : ℝ) ≤
+      (2 : ℝ) * (d : ℝ) *
+        ((bufferedTypeSurvivors 3 N (primeValuationType p) k).card : ℝ) := by
+    exact_mod_cast hbound
+  have hden : (0 : ℝ) < (2 : ℝ) * (d : ℝ) := by positivity
+  have hscaled : (N : ℝ) / ((2 : ℝ) * (d : ℝ)) ≤
+      ((bufferedTypeSurvivors 3 N (primeValuationType p) k).card : ℝ) := by
+    apply (div_le_iff₀ hden).mpr
+    nlinarith [hreal]
+  convert hscaled using 1 <;> ring
+
+/-- Every fixed prime-p exact valuation class has positive mass
+in the *buffered* modulus-three sieve at all sufficiently large
+cutoffs. This bound is independent of the cutoff and Markov time,
+but depends on p and k through the arithmetic period. -/
+theorem primeValuation_buffered_mass_ge_fixed_rate
+    (p k N : ℕ) (hp : Nat.Prime p) (hcop : Nat.Coprime p 3)
+    (hN : 1 ≤ N) (hcutoff : primeValuationPeriod p k ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) :
+    (1 : ℝ) / (8 * (primeValuationPeriod p k : ℝ)) ≤
+      (bufferedDiagonalKernel 3 N hN).typeMass
+        initial (primeValuationType p) (depth + 1) k := by
+  have hcount :
+      ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) * (N : ℝ) ≤
+        ((bufferedTypeSurvivors 3 N (primeValuationType p) k).card : ℝ) :=
+    primeValuation_survivor_density p k N hp hcop hcutoff
+  have hmass :=
+    bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+      3 N hN initial initial_nonneg initial_mass_one
+      (primeValuationType p) k
+      ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) depth hcount
+  calc
+    (1 : ℝ) / (8 * (primeValuationPeriod p k : ℝ)) =
+        ((1 : ℝ) / (2 * (primeValuationPeriod p k : ℝ))) / 4 := by ring
+    _ ≤ (bufferedDiagonalKernel 3 N hN).typeMass
+          initial (primeValuationType p) (depth + 1) k := hmass
+
+/-- Pointwise eventual type positivity for any prime p coprime to 3.
+The source cutoff and the positive mass floor depend on p and k.
+Unit-mass input distributions may vary with N. -/
+theorem primeValuation_buffered_eventually_pos
+    (p k : ℕ) (hp : Nat.Prime p) (hcop : Nat.Coprime p 3) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel 3 N hN).typeMass
+            initial (primeValuationType p) (depth + 1) k := by
+  refine ⟨primeValuationPeriod p k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : (0 : ℝ) < (primeValuationPeriod p k : ℝ) := by
+    exact_mod_cast (primeValuationPeriod_pos p k hp)
+  have hr : (0 : ℝ) <
+      (1 : ℝ) / (8 * (primeValuationPeriod p k : ℝ)) := by positivity
+  exact hr.trans_le
+    (primeValuation_buffered_mass_ge_fixed_rate
+      p k N hp hcop hN hcutoff initial hnonneg hmass depth)
+
+/-- For any finite positive sieve cutoff, no exact valuation type
+at any prime can equal the cutoff N: factorization_p(n) < n ≤ N. -/
+theorem primeValuationType_lt_cutoff
+    (p N n : ℕ) (hn : n ∈ scope N) :
+    primeValuationType p n < N := by
+  have hrange : 1 ≤ n ∧ n ≤ N := Finset.mem_Icc.mp hn
+  have hn0 : n ≠ 0 := by omega
+  have hval : primeValuationType p n < n := Nat.factorization_lt p hn0
+  exact hval.trans_le hrange.2
+
+/-- No one finite certified arithmetic inventory can cover every
+natural valuation type at any chosen prime p, regardless of how its
+weights are steered. This does not contradict eventual coverage
+of each separately fixed k under the increasing-cutoff program. -/
+theorem primeValuationType_no_finite_all_type_coverage
+    (p q N : ℕ) (hN : 1 ≤ N) (weights : ℕ → ℕ → ℝ) :
+    ¬ (certifiedArithmeticInventory q N hN).sieveTypeCompleteAt
+      1 (primeValuationType p) weights 1 := by
+  intro complete
+  obtain ⟨n, hn, heq, _⟩ := complete N
+  have hscope : n ∈ scope N := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN] at hn
+    exact (Finset.mem_filter.mp hn).1
+  have hlt := primeValuationType_lt_cutoff p N n hscope
+  omega
+
+/-- A collision persists for every chosen prime p, independent of
+the stable-object lift: p and p squared have equal radical-derived
+K₀-shaped observations but different exact prime-p valuations. -/
+theorem primeValuation_radical_pow_collision
+    (lift : ℕ →* M) (p : ℕ) (hp : Nat.Prime p) :
+    kZeroRadical lift (p ^ 2) = kZeroRadical lift p ∧
+      primeValuationType p (p ^ 2) ≠ primeValuationType p p := by
+  refine ⟨kZeroRadical_pow lift p 2 (by norm_num), ?_⟩
+  have htwo : (p ^ 2).factorization p = 2 :=
+    Nat.factorization_pow_self hp
+  have hone : p.factorization p = 1 := hp.factorization_self
+  intro heq
+  have hfalse : (2 : ℕ) = 1 := by
+    simpa only [primeValuationType, htwo, hone] using heq
+  norm_num at hfalse
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
