@@ -2529,6 +2529,85 @@ theorem diagonalRowMass_le_twice_total
     _ = (2 : ℝ) * totalWeight q N := by
       simp only [totalWeight, Finset.mul_sum]
 
+/-- The exact diagonal outgoing row normalizer is at most
+2*N*N for every positive integer cutoff. This quantitative
+majorant is purely elementary and independent of character sums. -/
+theorem diagonalRowMass_le_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+      (2 : ℝ) * (N : ℝ) * (N : ℝ) := by
+  calc
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+        (2 : ℝ) * totalWeight q N :=
+      diagonalRowMass_le_twice_total q N source
+    _ ≤ (2 : ℝ) * ((N : ℝ) * (N : ℝ)) :=
+      mul_le_mul_of_nonneg_left
+        (totalWeight_le_cutoff_sq q N hN) (by norm_num)
+    _ = (2 : ℝ) * (N : ℝ) * (N : ℝ) := by ring
+
+/-- Every coprime target carries at least one unit of unnormalized
+arithmetic radical weight, including modulus 0 or 1. -/
+theorem radicalCoprimeWeight_one_le_of_coprime
+    (q target : ℕ) (hc : Nat.Coprime target q) :
+    (1 : ℝ) ≤ radicalCoprimeWeight q target := by
+  have hrad : 1 ≤ Nat.radical target := Nat.radical_pos target
+  have hcast : (1 : ℝ) ≤ (Nat.radical target : ℝ) := by
+    exact_mod_cast hrad
+  simpa [radicalCoprimeWeight, hc] using hcast
+
+/-- The diagonal boost is never smaller than one, so it cannot
+suppress a positive arithmetic target weight. -/
+theorem radicalCoprimeWeight_le_diagonalEdgeWeight
+    (q source target : ℕ) :
+    radicalCoprimeWeight q target ≤
+      diagonalEdgeWeight q source target := by
+  unfold diagonalEdgeWeight
+  split_ifs <;> nlinarith [radicalCoprimeWeight_nonneg q target]
+
+/-- An explicit polynomial transition minorization. For N ≥ 1
+and each coprime target within the cutoff, every in-scope source
+has probability at least 1/(2*N²) of transitioning to that target.
+The bound depends on N and therefore proves no positive limiting
+density as N increases. -/
+theorem diagonalKernel_transition_ge_inv_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N)
+    (target_mem : target ∈ scope N)
+    (hc : Nat.Coprime target q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).transition source target := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hBpos : (0 : ℝ) < (2 : ℝ) * (N : ℝ) * (N : ℝ) := by
+    positivity
+  have hRpos :
+      0 < ∑ z ∈ scope N, diagonalEdgeWeight q source z :=
+    diagonalRowMass_pos q N hN source
+  have hRle :
+      (∑ z ∈ scope N, diagonalEdgeWeight q source z) ≤
+        (2 : ℝ) * (N : ℝ) * (N : ℝ) :=
+    diagonalRowMass_le_two_cutoff_sq q N hN source
+  have hweight : (1 : ℝ) ≤ diagonalEdgeWeight q source target :=
+    (radicalCoprimeWeight_one_le_of_coprime q target hc).trans
+      (radicalCoprimeWeight_le_diagonalEdgeWeight q source target)
+  change ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+    (if target ∈ scope N then
+      diagonalEdgeWeight q source target /
+        (∑ z ∈ scope N, diagonalEdgeWeight q source z)
+    else 0)
+  rw [if_pos target_mem]
+  have hcomparison :
+      (1 : ℝ) / ((2 : ℝ) * (N : ℝ) * (N : ℝ)) ≤
+        diagonalEdgeWeight q source target /
+          (∑ z ∈ scope N, diagonalEdgeWeight q source z) := by
+    apply (div_le_div_iff₀ hBpos hRpos).mpr
+    simp only [one_mul]
+    exact hRle.trans (by
+      simpa only [one_mul] using
+        mul_le_mul_of_nonneg_right hweight hBpos.le)
+  simpa only [one_div] using hcomparison
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
