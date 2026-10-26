@@ -575,6 +575,53 @@ theorem realEvolve_pos_iff_allowedPath (S : Sampler V)
   · rintro ⟨source, hsource, path⟩
     exact S.realEvolve_pos_of_allowedPath path heat nonnegative hsource
 
+/-! Exact finite-horizon type-support criterion for the actual real Gibbs sampler. -/
+
+/-- Positive aggregate type mass has a positive-heat vertex witness. -/
+theorem realTypeMass_pos_has_vertex
+    (typeOf : V → Kind) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (kind : Kind) (positive : 0 < realTypeMass typeOf heat kind) :
+    ∃ target, typeOf target = kind ∧ 0 < heat target := by
+  by_contra noTarget
+  have hzero : realTypeMass typeOf heat kind = 0 := by
+    unfold realTypeMass
+    apply Finset.sum_eq_zero
+    intro target _
+    by_cases hkind : typeOf target = kind
+    · have hheat : heat target = 0 := by
+        by_contra hnonzero
+        have hpos : 0 < heat target :=
+          lt_of_le_of_ne (nonnegative target) (Ne.symm hnonzero)
+        exact noTarget ⟨target, hkind, hpos⟩
+      simp [hkind, hheat]
+    · simp [hkind]
+  rw [hzero] at positive
+  exact (lt_irrefl (0 : ℝ)) positive
+
+/-- Type completeness at exactly n Gibbs steps is equivalent to an
+admissible length-n path from positive initial heat into every type. -/
+theorem real_type_complete_iff_allowed_paths
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (length : ℕ) :
+    (∀ kind, 0 < realTypeMass typeOf (S.realEvolve heat length) kind) ↔
+      (∀ kind, ∃ source target,
+        typeOf target = kind ∧ 0 < heat source ∧
+        AllowedPath S source target length) := by
+  constructor
+  · intro complete kind
+    obtain ⟨target, hkind, hpositive⟩ :=
+      realTypeMass_pos_has_vertex typeOf
+        (S.realEvolve heat length)
+        (fun v => S.realEvolve_nonneg heat nonnegative length v)
+        kind (complete kind)
+    obtain ⟨source, hsource, path⟩ :=
+      S.realEvolve_pos_has_allowedPath length heat target
+        nonnegative hpositive
+    exact ⟨source, target, hkind, hsource, path⟩
+  · exact S.real_type_complete_of_allowed_paths heat nonnegative typeOf length
+
 end TypeHeat
 
 end Sampler
