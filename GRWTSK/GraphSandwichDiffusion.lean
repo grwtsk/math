@@ -1587,9 +1587,9 @@ theorem SourceSearchInventory.sieveTypeMass_eq_kernelTypeMass_of_scope
     {TypeLabel : Type*}
     (inventory : SourceSearchInventory V) (source : V)
     (typeOf : V → TypeLabel)
-    (K : FiniteSieveMarkovKernel V)
+    (K : FiniteSieveMarkovKernel V) (searchDepth : ℕ)
     (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
-    (weight : V → ℝ) (steps searchDepth : ℕ)
+    (weight : V → ℝ) (steps : ℕ)
     (targetType : TypeLabel) :
     inventory.sieveTypeMass source typeOf
       (fun _ vertex => K.evolve weight steps vertex)
@@ -1606,11 +1606,11 @@ theorem SourceSearchInventory.sieveTypeHit_iff_kernelPath_of_scope
     {TypeLabel : Type*}
     (inventory : SourceSearchInventory V) (source : V)
     (typeOf : V → TypeLabel)
-    (K : FiniteSieveMarkovKernel V)
+    (K : FiniteSieveMarkovKernel V) (searchDepth : ℕ)
     (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
     (weight : V → ℝ)
     (weight_nonneg : ∀ vertex ∈ K.scope, 0 ≤ weight vertex)
-    (steps searchDepth : ℕ) (targetType : TypeLabel) :
+    (steps : ℕ) (targetType : TypeLabel) :
     inventory.sieveTypeHit source typeOf
         (fun _ vertex => K.evolve weight steps vertex)
         searchDepth targetType ↔
@@ -1645,11 +1645,11 @@ theorem SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths
     {TypeLabel : Type*}
     (inventory : SourceSearchInventory V) (source : V)
     (typeOf : V → TypeLabel)
-    (K : FiniteSieveMarkovKernel V)
+    (K : FiniteSieveMarkovKernel V) (searchDepth : ℕ)
     (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
     (weight : V → ℝ)
     (weight_nonneg : ∀ vertex ∈ K.scope, 0 ≤ weight vertex)
-    (steps searchDepth : ℕ) :
+    (steps : ℕ) :
     inventory.sieveTypeCompleteAt source typeOf
         (fun _ vertex => K.evolve weight steps vertex)
         searchDepth ↔
@@ -1661,11 +1661,11 @@ theorem SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths
   constructor
   · intro complete targetType
     exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
-      source typeOf K scope_eq weight weight_nonneg
-        steps searchDepth targetType).mp (complete targetType)
+      source typeOf K searchDepth scope_eq weight weight_nonneg
+        steps targetType).mp (complete targetType)
   · intro paths targetType
     exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
-      source typeOf K scope_eq weight weight_nonneg
-        steps searchDepth targetType).mpr (paths targetType)
+      source typeOf K searchDepth scope_eq weight weight_nonneg
+        steps targetType).mpr (paths targetType)
 
 end GRWTSK.GraphSandwichDiffusion
