@@ -1576,6 +1576,94 @@ theorem positivePath_to_certifiedPath
       exact BoundedPath.tail (ih middle hm prefix)
         (support_certified middle hm target target_mem positive)
 
+/-- Convert an explicitly nonnegative finite target-weight function
+with positive normalizer into a source-independent row-stochastic
+kernel. This is a one-step reset kernel, not a graph-local heat
+semigroup. Out-of-scope transitions are defined to be zero. -/
+noncomputable def normalizedTargetKernel
+    (scope : Finset State) (targetWeight : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y) :
+    FiniteSieveMarkovKernel State where
+  scope := scope
+  transition := fun _ y =>
+    if y ∈ scope then
+      targetWeight y / (∑ z ∈ scope, targetWeight z)
+    else 0
+  transition_nonneg := by
+    intro x hx y hy
+    simp only [if_pos hy]
+    exact div_nonneg (weight_nonneg y hy) normalizer_pos.le
+  row_sum_one := by
+    intro x hx
+    have hsum :
+        (∑ y ∈ scope,
+          if y ∈ scope then
+            targetWeight y / (∑ z ∈ scope, targetWeight z)
+          else 0) =
+        ∑ y ∈ scope,
+          targetWeight y / (∑ z ∈ scope, targetWeight z) := by
+      apply Finset.sum_congr rfl
+      intro y hy
+      simp only [if_pos hy]
+    rw [hsum]
+    simp_rw [div_eq_mul_inv]
+    rw [← Finset.sum_mul]
+    exact mul_inv_cancel₀ (ne_of_gt normalizer_pos)
+
+/-- The reset kernel's in-scope positive transition support consists
+exactly of strictly positive target sieve weights. Every in-scope
+source shares this support; it is not asserted to be certified by an
+arbitrary graph inventory. -/
+theorem normalizedTargetKernel_transition_pos_iff
+    (scope : Finset State) (targetWeight : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y)
+    (source target : State) (target_mem : target ∈ scope) :
+    0 < (normalizedTargetKernel scope targetWeight
+      weight_nonneg normalizer_pos).transition source target ↔
+        0 < targetWeight target := by
+  change 0 < (if target ∈ scope then
+    targetWeight target / (∑ y ∈ scope, targetWeight y)
+    else 0) ↔ 0 < targetWeight target
+  rw [if_pos target_mem]
+  exact div_pos_iff_of_pos_right normalizer_pos
+
+/-- A reset kernel has no transitions into vertices outside scope. -/
+theorem normalizedTargetKernel_transition_zero_of_not_mem
+    (scope : Finset State) (targetWeight : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y)
+    (source target : State) (target_not_mem : target ∉ scope) :
+    (normalizedTargetKernel scope targetWeight
+      weight_nonneg normalizer_pos).transition source target = 0 := by
+  change (if target ∈ scope then
+    targetWeight target / (∑ y ∈ scope, targetWeight y)
+    else 0) = 0
+  simp only [if_neg target_not_mem]
+
+/-- If the initial distribution already sums to one, this reset
+kernel produces its normalized target-weight distribution in one
+step, independently of the starting distribution. No asymptotic
+mixing assertion is involved. -/
+theorem normalizedTargetKernel_step_of_unit_mass
+    (scope : Finset State) (targetWeight initial : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y)
+    (initial_mass_one : (∑ x ∈ scope, initial x) = 1)
+    (target : State) (target_mem : target ∈ scope) :
+    (normalizedTargetKernel scope targetWeight
+      weight_nonneg normalizer_pos).step initial target =
+      targetWeight target / (∑ y ∈ scope, targetWeight y) := by
+  unfold FiniteSieveMarkovKernel.step
+  change (∑ x ∈ scope,
+    initial x * (if target ∈ scope then
+      targetWeight target / (∑ y ∈ scope, targetWeight y)
+    else 0)) =
+    targetWeight target / (∑ y ∈ scope, targetWeight y)
+  simp only [if_pos target_mem]
+  rw [← Finset.sum_mul, initial_mass_one, one_mul]
+
 end FiniteSieveMarkovKernel
 
 /-- A finite Markov type mass agrees with the existing certified
