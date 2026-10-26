@@ -943,4 +943,127 @@ theorem twoAdicMultiplicityType_no_finite_all_type_coverage
   have hlt := twoAdicMultiplicityType_lt_cutoff N n hscope
   omega
 
+/-! ## Exact valuation types for arbitrary primes coprime to 3
+
+The earlier fixed-prime-2 result is left unchanged. For an explicitly
+supplied prime p with Nat.Coprime p 3, the progression
+  p^k * (3*p*j + 1)
+has exact p-adic exponent k, is coprime to 3 and has positive terms.
+Its period 3*p^(k+1) gives a finite count without a prime-number
+theorem, analytic character estimate or a claim about analytic K₀.
+
+These are source-level proof candidates. -/
+
+/-- The exact multiplicity of any chosen prime p, retaining
+exponent information lost by the arithmetic radical. -/
+def primeValuationType (p n : ℕ) : ℕ := n.factorization p
+
+/-- A positive arithmetic period for each prime and exponent. -/
+def primeValuationPeriod (p k : ℕ) : ℕ := 3 * p ^ (k + 1)
+
+/-- A progression of integers with fixed prime-p exponent. -/
+def primeValuationProgression (p k j : ℕ) : ℕ :=
+  p ^ k * (3 * p * j + 1)
+
+theorem primeValuationPeriod_pos
+    (p k : ℕ) (hp : Nat.Prime p) :
+    0 < primeValuationPeriod p k := by
+  dsimp [primeValuationPeriod]
+  positivity
+
+theorem primeValuationProgression_pos
+    (p k j : ℕ) (hp : Nat.Prime p) :
+    0 < primeValuationProgression p k j := by
+  dsimp [primeValuationProgression]
+  positivity
+
+/-- The tail 3*p*j+1 has no factor p, so the whole progression has
+exact factorization exponent k at the chosen prime p. -/
+theorem primeValuationProgression_factorization
+    (p k j : ℕ) (hp : Nat.Prime p) :
+    primeValuationType p (primeValuationProgression p k j) = k := by
+  have hpow : (p ^ k).factorization p = k :=
+    Nat.factorization_pow_self hp
+  have hpow_ne : p ^ k ≠ 0 := by
+    exact pow_ne_zero k hp.ne_zero
+  have htail_ne : 3 * p * j + 1 ≠ 0 := by omega
+  have hdivp : p ∣ 3 * p * j := by
+    refine ⟨3 * j, ?_⟩
+    ring
+  have hnot : ¬ p ∣ (3 * p * j + 1) := by
+    intro h
+    have hone : p ∣ 1 := (Nat.dvd_add_iff_right hdivp).mp h
+    have hle : p ≤ 1 := Nat.le_of_dvd (by decide : 0 < (1 : ℕ)) hone
+    exact (not_le_of_gt hp.one_lt) hle
+  have htail : (3 * p * j + 1).factorization p = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hnot
+  change (p ^ k * (3 * p * j + 1)).factorization p = k
+  rw [Nat.factorization_mul hpow_ne htail_ne]
+  simp [hpow, htail]
+
+/-- This progression survives the fixed modulus-three sieve provided
+the chosen prime p is coprime to 3. The condition excludes p=3. -/
+theorem primeValuationProgression_coprime_three
+    (p k j : ℕ) (hp : Nat.Prime p) (hcop : Nat.Coprime p 3) :
+    Nat.Coprime (primeValuationProgression p k j) 3 := by
+  have hdiv3 : (3 : ℕ) ∣ 3 * p * j := by
+    refine ⟨p * j, ?_⟩
+    ring
+  have hnot : ¬ (3 : ℕ) ∣ (3 * p * j + 1) := by
+    intro h
+    have hone : (3 : ℕ) ∣ 1 := (Nat.dvd_add_iff_right hdiv3).mp h
+    norm_num at hone
+  have hprime3 : Nat.Prime 3 := by norm_num
+  have htail : Nat.Coprime (3 * p * j + 1) 3 :=
+    ((Nat.Prime.coprime_iff_not_dvd hprime3).mpr hnot).symm
+  have hpow : Nat.Coprime (p ^ k) 3 := hcop.pow_left k
+  change Nat.Coprime (p ^ k * (3 * p * j + 1)) 3
+  exact Nat.coprime_mul_iff_left.mpr ⟨hpow, htail⟩
+
+/-- The progression is injective in its index for prime p. -/
+theorem primeValuationProgression_injective
+    (p k : ℕ) (hp : Nat.Prime p) :
+    Function.Injective (primeValuationProgression p k) := by
+  intro i j heq
+  have hpow : p ^ k ≠ 0 := pow_ne_zero k hp.ne_zero
+  have hmul :
+      p ^ k * (3 * p * i + 1) = p ^ k * (3 * p * j + 1) := by
+    simpa only [primeValuationProgression] using heq
+  have htail : 3 * p * i + 1 = 3 * p * j + 1 :=
+    mul_left_cancel₀ hpow hmul
+  have hprod : (3 * p) * i = (3 * p) * j :=
+    Nat.add_right_cancel htail
+  have hperiod : 3 * p ≠ 0 := by positivity
+  exact mul_left_cancel₀ hperiod hprod
+
+/-- Every progression term with j below N/period lies inside
+the inclusive finite positive integer scope of the sieve. -/
+theorem primeValuationProgression_mem_scope
+    (p k N j : ℕ) (hp : Nat.Prime p)
+    (hj : j < N / primeValuationPeriod p k) :
+    primeValuationProgression p k j ∈ scope N := by
+  have hjle : j + 1 ≤ N / primeValuationPeriod p k := by omega
+  have hsmall : 1 ≤ 3 * p := by
+    have hppos := hp.pos
+    omega
+  have hupper : primeValuationProgression p k j ≤ N := by
+    calc
+      primeValuationProgression p k j ≤
+          p ^ k * (3 * p * (j + 1)) := by
+        dsimp [primeValuationProgression]
+        apply Nat.mul_le_mul_left
+        calc
+          3 * p * j + 1 ≤ 3 * p * j + 3 * p :=
+            Nat.add_le_add_left hsmall _
+          _ = 3 * p * (j + 1) := by ring
+      _ = primeValuationPeriod p k * (j + 1) := by
+        simp [primeValuationPeriod, pow_succ]
+        ring
+      _ ≤ primeValuationPeriod p k * (N / primeValuationPeriod p k) :=
+        Nat.mul_le_mul_left _ hjle
+      _ ≤ N := Nat.mul_div_le N (primeValuationPeriod p k)
+  change primeValuationProgression p k j ∈ Finset.Icc 1 N
+  exact Finset.mem_Icc.mpr
+    ⟨Nat.succ_le_iff.mpr (primeValuationProgression_pos p k j hp), hupper⟩
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
