@@ -1315,4 +1315,38 @@ theorem rightOuterSquarePrimeMass_le_theta_increment (n : ℕ) :
   rw [squarePrimeIncrement_eq_vonMangoldt_sum] at hle
   exact hle
 
+/-! ## Exact integer endpoints for the two outer tails
+
+The geometric boundaries are real half-integers or quarter-integers.
+Using the floor of each boundary retains the precise strict/weak
+inequality for natural-number prime indices. No distributional
+estimate is added.
+-/
+
+/-- Integer cutoff at the left central boundary. -/
+def leftOuterCutoff (n : ℕ) : ℕ :=
+  Nat.floor (squareCenter n - squareRadius n / 2)
+
+/-- Integer cutoff at the right central boundary. -/
+def rightOuterCutoff (n : ℕ) : ℕ :=
+  Nat.floor (squareCenter n + squareRadius n / 2)
+
+/-- A left-tail prime lies below the integer floor of the left
+geometric boundary (with the strict inequality retained). -/
+theorem leftOuterPrime_le_cutoff (n p : ℕ)
+    (hp : p ∈ leftOuterSquarePrimes n) :
+    p ≤ leftOuterCutoff n := by
+  have h := (Finset.mem_filter.mp hp).2
+  unfold leftOuterCutoff
+  exact Nat.le_floor (by exact_mod_cast h.le)
+
+/-- A right-tail prime lies strictly above the integer floor of
+the right geometric boundary. -/
+theorem rightOuterCutoff_lt_prime (n p : ℕ)
+    (hp : p ∈ rightOuterSquarePrimes n) :
+    rightOuterCutoff n < p := by
+  have h := (Finset.mem_filter.mp hp).2
+  unfold rightOuterCutoff
+  exact Nat.floor_lt (by exact_mod_cast h)
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
