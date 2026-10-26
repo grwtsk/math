@@ -14,8 +14,9 @@ observable by its complete finite sum. At moment n the budget must cover the
 actual n-th powers of the chosen matrices; a first-moment or entrywise
 operator estimate cannot be silently reused for all powers.
 
-These are finite trace-norm inequalities, not spectral eigenvalue enclosure,
-a determinant zero certificate, or a limiting Fredholm result.
+These are bounds on the absolute value of scalar finite-trace differences,
+not matrix trace-class (nuclear) norms, eigenvalue enclosures, determinant
+zero certificates, or a limiting Fredholm result.
 -/
 
 namespace GRWTSK.Algebra.LinearAlgebra.FiniteClosedWalkTrace
