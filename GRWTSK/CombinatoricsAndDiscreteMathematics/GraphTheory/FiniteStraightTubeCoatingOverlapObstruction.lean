@@ -67,14 +67,6 @@ theorem totalIncidence_coating_invariant
     (C.indexedCells cells).totalIncidence =
       (D.indexedCells cells).totalIncidence := rfl
 
-/-- An actual shared-point shading mark is similarly independent
-of either coating; it is a property of the original shadings. -/
-theorem sharedShadingMark_coating_invariant
-    (cells : Cell → Set (Space d))
-    (i j : Index) (c : Cell) :
-    S.sharedShadingMark cells i j c =
-      S.sharedShadingMark cells i j c := rfl
-
 /-- Coating-dependent finite *energy* and coating-independent physical
 volume coexist. No implication from increasing barrier strength
 to improving a geometric overlap bound is assumed. -/
