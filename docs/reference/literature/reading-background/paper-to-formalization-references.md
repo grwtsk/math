@@ -497,3 +497,133 @@ Required receipt fields outside `grwtsk/math`:
 4. Prove comparison only under an explicit operator-order or intertwining hypothesis.
 5. Add typed Chowla observations while retaining all `F_q[T]` hypotheses.
 6. Identify the repository meaning of `a` before testing any independent compression supplier.
+
+---
+
+## Search-led Graph Sandwich and spectral diffusion — bounded increment 2
+
+### Scope and immutable source identity
+
+This increment adds finite labeled-word and relative sofic-language interfaces over the source inventory from bounded increment 1. It extends the established Graph Theory and Farey sofic modules; it does not replace them.
+
+- Source commit: `a81ff9104c965fd443a023b98adb9f764ae0640c`
+- Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/SearchSoficLanguage.lean`
+- Source blob: `4acfdfb09b735a8cfa1ba95a6e2ce527306d84b0`
+- Direct source dependency: `GRWTSK/GraphSandwichDiffusion.lean`, blob `798c78b0bafd56439246d91a1d30d748c1d7d568`
+- Reused sofic dependency: `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`, blob `7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8`
+- Reused losslessness dependency: `GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean`, blob `f8b956c411e386d56af206ccc8a46b4c2b1c13c3`
+- Source inspection: **DONE**
+- Affected-module compilation: **NOT_RUN**
+- Fresh kernel checking: **NOT_RUN**
+- Transitive axiom audit: **NOT_RUN**
+- Root import status: **not imported by `GRWTSK.lean`**
+
+### Fully qualified declarations
+
+Under
+`GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage`:
+
+- `LabeledEdgeRelation`
+- `LabeledSubrelation`
+- `LabeledSandwich`
+- `eraseLabels`
+- `LabeledSandwich.erase`
+- `WordPath`
+- `WordPath.mono`
+- `AcceptsFrom`
+- `acceptsFrom_mono`
+- `LabeledSandwich.lower_accepts_to_middle`
+- `LabeledSandwich.middle_accepts_to_upper`
+- `LabeledSandwich.lowerGraph`
+- `LabeledSandwich.middleGraph`
+- `LabeledSandwich.upperGraph`
+- `ScopedPresentation`
+- `ScopedPresentation.middle_scoped`
+- `ScopedPresentation.lower_scoped`
+- `ScopedPresentation.lowerFiniteGraph`
+- `ScopedPresentation.middleFiniteGraph`
+- `ScopedPresentation.upperFiniteGraph`
+- `MissingState`
+- `StateComplete`
+- `MissingTransition`
+- `TransitionComplete`
+- `CandidateLanguageCompleteUpTo`
+- `MissingWordUpTo`
+- `candidateLanguageCompleteUpTo_iff_no_missingWord`
+- `candidateLanguageCompleteUpTo_of_transitionComplete`
+- `SoficCompleteWithin`
+- `soficCompleteWithin_or_obligation`
+- `SourceSearchInventory.unitLabeledSandwich`
+- `SourceSearchInventory.unitScopedPresentation`
+- `SourceSearchInventory.candidateSoficGraph`
+- `SourceSearchInventory.admissibleSoficGraph`
+- `SourceSearchInventory.candidateSoficGraph_edge`
+- `SourceSearchInventory.admissibleSoficGraph_edge`
+- `losslessWalkCode_injective`
+- `no_losslessWalkCode_of_collision`
+
+### Mathematical classification
+
+**Imported mathematics.** The module reuses the existing finite `SoficGraph` type and the exact `LosslessPrefixCode` reconstruction interface. It also reuses the certified/candidate/admissible inventory and canonical relation sandwich from bounded increment 1.
+
+**Kernel-verified bridges.** None are newly claimed. The source has not been compiled or kernel audited at the pinned commit.
+
+**Source proof candidates.** `WordPath.mono` and the accepted-language transport theorems are direct finite combinatorial bridges from lower to middle to upper labeled relations. They remain source proof candidates until compilation and kernel checking are executed.
+
+**Conditional interfaces.** `CandidateLanguageCompleteUpTo` and `SoficCompleteWithin` are relative to an explicitly supplied finite state set, alphabet, upper vocabulary, start state, and word-length bound. `candidateLanguageCompleteUpTo_of_transitionComplete` requires upper-to-middle transition coverage as a premise.
+
+**Finite evidence.** A `WordPath` witnesses one exact finite word. It does not supply asymptotic arithmetic cancellation or a complete infinite language.
+
+**Structural correspondence.** `SourceSearchInventory.unitLabeledSandwich` gives every inventory edge a neutral `PUnit` label so that the graph can be presented through the existing Farey `SoficGraph`. This labeling carries no extra mathematical meaning; relationship meaning remains in the provenance record.
+
+**Unresolved premises.** Paper-derived transition alphabets, Farey word semantics, Chowla observation labels, dynamic traces, reconstruction maps, and spectral operators remain open.
+
+### Coverage and losslessness boundaries
+
+- `MissingState` records a desired inventory vertex absent from a selected finite presentation.
+- `MissingTransition` records an admissible labeled transition absent from the candidate layer.
+- `MissingWordUpTo` records an upper-language word of bounded length absent from the candidate language.
+- `soficCompleteWithin_or_obligation` produces relative completeness or a precise missing-state/missing-transition obligation.
+- `LabeledSandwich.lower_accepts_to_middle` and `middle_accepts_to_upper` transport finite-word acceptance upward only.
+- No theorem transports a candidate word downward into the certified language.
+- `no_losslessWalkCode_of_collision` reuses the existing exact decoder interface: equal encoded words for distinct sources rule out any matching lossless prefix code. Accepted finite-state language is therefore not described as lossless without reconstruction.
+
+The four papers remain connected to this increment through the classifications recorded above:
+
+- Farey and linear-chain relationships can supply future labels only after exact transition semantics are formalized.
+- Bombieri's spectral analogy does not supply a transition system or trace.
+- Kim–Vu containment does not supply deterministic labeled transitions without a coupling bridge.
+- Sawin–Shusterman arithmetic values can label finite walks only after the function-field objects and hypotheses are formalized; a finite labeled walk is not a Chowla cancellation theorem.
+
+### Verification queue
+
+All commands are **NOT_RUN**.
+
+```sh
+git checkout --detach a81ff9104c965fd443a023b98adb9f764ae0640c
+git rev-parse HEAD
+cat lean-toolchain
+
+lake env lean GRWTSK/GraphSandwichDiffusion.lean
+lake env lean GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/SearchSoficLanguage.lean
+```
+
+Fresh audit module:
+
+```lean
+import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage
+
+#print axioms GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage.WordPath.mono
+#print axioms GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage.LabeledSandwich.lower_accepts_to_middle
+#print axioms GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage.candidateLanguageCompleteUpTo_iff_no_missingWord
+#print axioms GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage.soficCompleteWithin_or_obligation
+#print axioms GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage.no_losslessWalkCode_of_collision
+```
+
+Required negative controls:
+
+- candidate/admissible acceptance does not produce certified acceptance;
+- a missing upper transition prevents transition completeness;
+- finite-state acceptance without an injective reconstruction map is not lossless;
+- the neutral `PUnit` label does not create arithmetic meaning;
+- no Chowla estimate, spectral theorem, or compression improvement follows from language coverage.
