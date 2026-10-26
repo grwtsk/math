@@ -106,4 +106,33 @@ theorem no_exact_nat_type_decoder (lift : ℕ →* M) :
       _ = 2 := correct 2
   norm_num at hcontra
 
+/-- Any deterministic steering or diffusion output that only reads the
+radical-derived K₀-shaped feature remains constant on equal-radical
+inputs. This is a collision obstruction, not an analytic mixing theorem. -/
+theorem steered_observation_eq_of_radical_eq
+    {State : Type*} (lift : ℕ →* M)
+    (steer : GrothendieckKZero M → State)
+    {m n : ℕ} (h : Nat.radical m = Nat.radical n) :
+    steer (kZeroRadical lift m) = steer (kZeroRadical lift n) :=
+  congrArg steer (kZeroRadical_eq_of_radical_eq lift h)
+
+/-- If two inputs have the same radical-derived K₀-shaped feature but
+different exact types, no feature-only steering map can decode both.
+The type-separation premise is explicit. -/
+theorem no_type_complete_feature_only_steering_of_collision
+    {TypeLabel : Type*} (lift : ℕ →* M)
+    (typeOf : ℕ → TypeLabel)
+    {m n : ℕ}
+    (hRadical : Nat.radical m = Nat.radical n)
+    (hType : typeOf m ≠ typeOf n) :
+    ¬ ∃ steer : GrothendieckKZero M → TypeLabel,
+        ∀ x : ℕ, steer (kZeroRadical lift x) = typeOf x := by
+  rintro ⟨steer, correct⟩
+  apply hType
+  calc
+    typeOf m = steer (kZeroRadical lift m) := (correct m).symm
+    _ = steer (kZeroRadical lift n) :=
+      steered_observation_eq_of_radical_eq lift steer hRadical
+    _ = typeOf n := correct n
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary

@@ -462,6 +462,74 @@ theorem eventually_type_complete_of_anchor_type_minorization
     typeOf anchor delta massFloor delta_pos massFloor_pos
     minor (retained time htime)
 
+/-!
+### Persistent positive anchor without a uniform mass floor
+
+A positive self-loop prevents an initially positive anchor from becoming
+exactly zero at any finite time. This proves positive type support at every
+positive finite time but supplies no time-uniform quantitative lower bound.
+-/
+
+/-- A positive anchor self-loop preserves strict positivity for one step. -/
+theorem anchor_positive_step_of_self_loop
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (anchor : Root)
+    (self_pos : 0 < kernel.transition anchor anchor)
+    (anchor_pos : 0 < heat anchor) :
+    0 < kernel.step heat anchor := by
+  have hsingle :
+      kernel.transition anchor anchor * heat anchor ≤ kernel.step heat anchor := by
+    unfold HeatKernel.step
+    exact Finset.single_le_sum
+      (fun source _ => mul_nonneg
+        (kernel.nonnegative anchor source) (nonnegative source))
+      (Finset.mem_univ anchor)
+  exact lt_of_lt_of_le (mul_pos self_pos anchor_pos) hsingle
+
+/-- Strict anchor positivity persists through every finite diffusion time
+when the anchor has a strictly positive self-loop. -/
+theorem anchor_positive_evolve_of_self_loop
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (anchor : Root)
+    (self_pos : 0 < kernel.transition anchor anchor)
+    (anchor_pos : 0 < initial anchor) :
+    ∀ time, 0 < kernel.evolve initial time anchor := by
+  intro time
+  induction time with
+  | zero =>
+      simpa [HeatKernel.evolve] using anchor_pos
+  | succ time ih =>
+      change 0 < kernel.step (kernel.evolve initial time) anchor
+      exact anchor_positive_step_of_self_loop kernel
+        (kernel.evolve initial time)
+        (kernel.evolve_nonneg initial nonnegative time)
+        anchor self_pos ih
+
+/-- A self-loop and type-spanning outgoing anchor edges give complete
+type support after every positive finite time. No uniform-in-time lower
+bound is claimed: the anchor heat may tend to zero asymptotically. -/
+theorem all_positive_times_type_complete_of_anchor_self_loop
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind) (anchor : Root)
+    (delta : ℚ) (delta_pos : 0 < delta)
+    (minor : AnchorTypeMinorization kernel typeOf anchor delta)
+    (self_pos : 0 < kernel.transition anchor anchor)
+    (anchor_pos : 0 < initial anchor) :
+    ∀ time, TypeCompleteAt typeOf (kernel.evolve initial (time + 1)) := by
+  intro time
+  change TypeCompleteAt typeOf (kernel.step (kernel.evolve initial time))
+  have hpos : 0 < kernel.evolve initial time anchor :=
+    anchor_positive_evolve_of_self_loop kernel initial nonnegative
+      anchor self_pos anchor_pos time
+  exact type_complete_of_anchor_type_minorization kernel
+    (kernel.evolve initial time)
+    (kernel.evolve_nonneg initial nonnegative time)
+    typeOf anchor delta (kernel.evolve initial time anchor)
+    delta_pos hpos minor (le_refl _)
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
