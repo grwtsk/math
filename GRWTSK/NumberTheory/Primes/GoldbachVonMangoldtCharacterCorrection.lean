@@ -310,9 +310,9 @@ contour shift, or cancellation bound. -/
 theorem dirichlet_coefficient_LSeries_eq_log_derivative
     (q : ℕ) (χ : DirichletCharacter ℂ q)
     (s : ℂ) (hs : 1 < s.re) :
-    LSeries.L (dirichletVonMangoldtCoefficient q χ) s =
-      -deriv (LSeries.L (χ : ℕ → ℂ)) s /
-        LSeries.L (χ : ℕ → ℂ) s := by
+    LSeries (dirichletVonMangoldtCoefficient q χ) s =
+      -deriv (LSeries (χ : ℕ → ℂ)) s /
+        LSeries (χ : ℕ → ℂ) s := by
   simpa only [dirichletVonMangoldtCoefficient, mul_comm] using
     (DirichletCharacter.LSeries_twist_vonMangoldt_eq χ hs)
 
@@ -783,7 +783,7 @@ Mathlib L-series is its first N+1 terms plus the shifted tail. -/
 theorem dirichletVonMangoldt_LSeries_eq_prefix_add_shifted
     (q N : ℕ) (χ : DirichletCharacter ℂ q)
     (s : ℂ) (hs : 1 < s.re) :
-    LSeries.L (dirichletVonMangoldtCoefficient q χ) s =
+    LSeries (dirichletVonMangoldtCoefficient q χ) s =
       (∑ n ∈ Finset.range (N + 1),
         LSeries.term (dirichletVonMangoldtCoefficient q χ) s n) +
       (∑' k : ℕ,
@@ -815,7 +815,7 @@ This is not a cancellation or analytic-continuation statement. -/
 theorem norm_dirichletVonMangoldt_LSeries_sub_prefix_le
     (q N : ℕ) (χ : DirichletCharacter ℂ q)
     (s : ℂ) (hs : 1 < s.re) (hN : 3 ≤ N) :
-    ‖LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+    ‖LSeries (dirichletVonMangoldtCoefficient q χ) s -
         (∑ n ∈ Finset.range (N + 1),
           LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)‖ ≤
       (N : ℝ) ^ (1 - s.re) *

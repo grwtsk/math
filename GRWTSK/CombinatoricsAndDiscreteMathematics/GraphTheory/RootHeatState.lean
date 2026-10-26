@@ -608,6 +608,162 @@ theorem eventually_type_complete_of_anchor_reinjection
       nonnegative typeOf anchor beta delta (le_of_lt delta_pos)
       reinject outgoing time kind)
 
+/-!
+### Absorbing-sink obstruction to common-anchor steering
+
+An absorbing sink and another distinct type prevent both positive
+common-anchor bounds from holding for the same source-preserving kernel.
+An artificial restart changes the kernel and needs separate justification.
+-/
+
+/-- No common anchor can both receive uniformly positive heat from every
+source and send a uniformly positive edge into each type when a distinct-
+type absorbing sink is present. -/
+theorem no_positive_anchor_steering_of_absorbing_sink
+    (kernel : HeatKernel Root) (typeOf : Root → Kind)
+    (sink other : Root)
+    (different : typeOf sink ≠ typeOf other)
+    (absorbing : ∀ target, target ≠ sink →
+      kernel.transition target sink = 0)
+    (beta delta : ℚ) (beta_pos : 0 < beta) (delta_pos : 0 < delta) :
+    ¬ ∃ anchor : Root,
+        AnchorReinjection kernel anchor beta ∧
+        AnchorTypeMinorization kernel typeOf anchor delta := by
+  rintro ⟨anchor, reinject, outgoing⟩
+  by_cases hanchor : anchor = sink
+  · subst anchor
+    obtain ⟨target, htype, hdelta⟩ := outgoing (typeOf other)
+    have htarget : target ≠ sink := by
+      intro h
+      apply different
+      rw [← h, htype]
+    have hzero := absorbing target htarget
+    have hbound : delta ≤ (0 : ℚ) := by
+      simpa [hzero] using hdelta
+    exact (not_lt_of_ge hbound) delta_pos
+  · have hzero := absorbing anchor hanchor
+    have hbound : beta ≤ (0 : ℚ) := by
+      simpa [hzero] using reinject sink
+    exact (not_lt_of_ge hbound) beta_pos
+
+/-!
+### Support-level type steering without quantitative minorization
+
+This is weaker than all common-anchor or uniform epsilon conditions:
+the positive source and target may depend on the type. It proves finite
+positive support, not a time-uniform asymptotic lower bound.
+-/
+
+/-- Each declared type has an incoming positive transition from a source
+which currently carries strictly positive heat. -/
+def SupportedTypeReachability
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (typeOf : Root → Kind) : Prop :=
+  ∀ kind, ∃ source target,
+    typeOf target = kind ∧
+    0 < heat source ∧
+    0 < kernel.transition target source
+
+/-- Support-level reachability suffices for one-step type completeness
+without selecting a common anchor or a uniform quantitative minorant. -/
+theorem type_complete_of_supported_type_reachability
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind)
+    (reachable : SupportedTypeReachability kernel heat typeOf) :
+    TypeCompleteAt typeOf (kernel.step heat) := by
+  intro kind
+  obtain ⟨source, target, hkind, hheat, hedge⟩ := reachable kind
+  have hbound := aggregate_step_lower_of_edge kernel heat
+    nonnegative typeOf source target
+  rw [hkind] at hbound
+  exact lt_of_lt_of_le (mul_pos hedge hheat) hbound
+
+/-!
+### Exact support obstruction
+
+For nonnegative heat, a missing positive source-to-type transition
+forces zero next-step mass for that type. This is the negative half of
+the support criterion, without a mixing or asymptotic hypothesis.
+-/
+
+/-- If no positive-heat source has a positive edge into a selected type,
+the next diffusion step assigns that type exactly zero mass. -/
+theorem aggregate_step_eq_zero_of_no_supported_edge
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (kind : Kind)
+    (noEdge : ∀ source target, typeOf target = kind →
+      0 < heat source → kernel.transition target source = 0) :
+    aggregate typeOf (kernel.step heat) kind = 0 := by
+  have htarget : ∀ target, typeOf target = kind →
+      kernel.step heat target = 0 := by
+    intro target hkind
+    unfold HeatKernel.step
+    apply Finset.sum_eq_zero
+    intro source _
+    by_cases hzero : heat source = 0
+    · simp [hzero]
+    · have hpositive : 0 < heat source :=
+        lt_of_le_of_ne (nonnegative source) (Ne.symm hzero)
+      simp [noEdge source target hkind hpositive]
+  unfold aggregate
+  apply Finset.sum_eq_zero
+  intro target _
+  by_cases hkind : typeOf target = kind
+  · simp [hkind, htarget target hkind]
+  · simp [hkind]
+
+/-- A type without a supported incoming edge obstructs next-step
+type completeness, even for a normalized stochastic kernel. -/
+theorem not_type_complete_of_no_supported_edge
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (kind : Kind)
+    (noEdge : ∀ source target, typeOf target = kind →
+      0 < heat source → kernel.transition target source = 0) :
+    ¬ TypeCompleteAt typeOf (kernel.step heat) := by
+  intro complete
+  have hzero := aggregate_step_eq_zero_of_no_supported_edge
+    kernel heat nonnegative typeOf kind noEdge
+  have hpositive := complete kind
+  rw [hzero] at hpositive
+  exact (lt_irrefl (0 : ℚ)) hpositive
+
+/-!
+### Exact one-step type-support equivalence
+
+This closes the finite support boundary: nonnegative heat and a
+nonnegative stochastic kernel give positive type mass exactly when a
+positive-heat source has a positive edge into each declared type.
+-/
+
+/-- Complete type support after one step is equivalent to the existence
+of a positive weighted incoming edge for each declared type. -/
+theorem type_complete_iff_supported_type_reachability
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) :
+    TypeCompleteAt typeOf (kernel.step heat) ↔
+      SupportedTypeReachability kernel heat typeOf := by
+  constructor
+  · intro complete kind
+    by_contra noReach
+    have noEdge : ∀ source target, typeOf target = kind →
+        0 < heat source → kernel.transition target source = 0 := by
+      intro source target hkind hpositive
+      by_contra hnonzero
+      have hedgeNonneg := kernel.nonnegative target source
+      have hedgePositive : 0 < kernel.transition target source :=
+        lt_of_le_of_ne hedgeNonneg (Ne.symm hnonzero)
+      apply noReach
+      exact ⟨source, target, hkind, hpositive, hedgePositive⟩
+    exact (not_type_complete_of_no_supported_edge
+      kernel heat nonnegative typeOf kind noEdge) complete
+  · intro reachable
+    exact type_complete_of_supported_type_reachability
+      kernel heat nonnegative typeOf reachable
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/

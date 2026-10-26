@@ -39,7 +39,7 @@ theorem patch_eval_eq_arcFormula (i : Fin 4) (t : ℝ) :
     (patch i).eval t = arcFormula i t := by
   funext j
   fin_cases i <;> fin_cases j <;>
-    norm_num [arcFormula, patch, QuadraticBezierContact.Segment.eval,
+    norm_num [arcFormula, patch, Segment.eval,
       vertex, control, xy, next] <;> ring
 
 /-- Strict positivity of both base-arc coordinates at interior times. -/
