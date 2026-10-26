@@ -73,4 +73,64 @@ theorem weightedDirichlet_heat_le
   have hsq : (1 - t) ^ 2 ≤ (1 : ℚ) := by nlinarith
   nlinarith
 
+/-! ## Genuine symmetric weighted graph Laplacian
+
+For symmetric weights the rational graph-Laplacian pairing equals
+half the directed-edge Dirichlet energy. This is a finite identity,
+not a claim about continuum Hodge theory or PDE regularity.
+-/
+
+/-- The actual weighted graph Laplacian, rather than the common
+reference affine relaxation. -/
+def weightedGraphLaplacian (w : V → V → ℚ) (u : V → ℚ) : V → ℚ :=
+  fun i => ∑ j : V, w i j * (u i - u j)
+
+/-- Quadratic pairing of the graph Laplacian with its input field. -/
+def graphLaplacianPairing (w : V → V → ℚ) (u : V → ℚ) : ℚ :=
+  ∑ i : V, u i * weightedGraphLaplacian w u i
+
+/-- Exact pairing identity, with a factor of two because the
+Dirichlet sum counts both edge orientations. -/
+theorem graphLaplacianPairing_twice_eq_dirichlet
+    (w : V → V → ℚ) (u : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    2 * graphLaplacianPairing w u = weightedDirichlet w u := by
+  classical
+  unfold graphLaplacianPairing weightedGraphLaplacian weightedDirichlet
+  simp only [Finset.mul_sum]
+  have hswap :
+      (∑ i : V, ∑ j : V, u i * (w i j * (u i - u j))) =
+      (∑ i : V, ∑ j : V, u j * (w i j * (u j - u i))) := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro j hj
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [hsym j i]
+  calc
+    2 * (∑ i : V, ∑ j : V, u i * (w i j * (u i - u j))) =
+        (∑ i : V, ∑ j : V, u i * (w i j * (u i - u j))) +
+        (∑ i : V, ∑ j : V, u j * (w i j * (u j - u i))) := by
+          rw [← hswap]
+          ring
+    _ = ∑ i : V, ∑ j : V, w i j * (u i - u j) ^ 2 := by
+      rw [← Finset.sum_add_distrib]
+      apply Finset.sum_congr rfl
+      intro i hi
+      rw [← Finset.sum_add_distrib]
+      apply Finset.sum_congr rfl
+      intro j hj
+      ring
+
+/-- Nonnegative symmetric weights give a positive semidefinite
+graph-Laplacian pairing. -/
+theorem graphLaplacianPairing_nonnegative
+    (w : V → V → ℚ) (u : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i)
+    (hw : ∀ i j, 0 ≤ w i j) :
+    0 ≤ graphLaplacianPairing w u := by
+  have hpair := graphLaplacianPairing_twice_eq_dirichlet w u hsym
+  have henergy := weightedDirichlet_nonnegative w hw u
+  linarith
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
