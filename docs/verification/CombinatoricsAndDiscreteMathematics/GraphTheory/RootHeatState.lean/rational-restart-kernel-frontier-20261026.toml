@@ -1,0 +1,80 @@
+# Source-bound passive verification specification. No command is executed by this TOML.
+schema_version = "0.1"
+request_id = "root-heat-rational-restart-kernel-frontier-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "d17c5c060239c42b8e7cb95664001fe8bce38eeb"
+source_path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean"
+source_blob = "b58e2e0e16b134f110015059b0d3d5dd7d2aca47"
+direct_imports = ["Mathlib.Data.Rat.BigOperators", "Mathlib.Algebra.Order.BigOperators.Ring.Finset"]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+existing_previous_request = "docs/verification/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean/weighted-type-steering-v0.1.toml"
+previous_request_source_blob = "8e3d6a28fbeac5c08e7c5b09c36dd12f05bd2284"
+mathematical_reference = "docs/reference/literature/reading-background/tao-hyperdissipation-radical-sieve-type-completeness-20261025.md"
+related_issue = "https://github.com/grwtsk/math/issues/1329"
+blocking_gate = "https://github.com/grwtsk/math/issues/1267"
+existing_source_status = "SOURCE_CANDIDATE_NOT_KERNEL_ACCEPTED"
+new_restart_kernel_lean_status = "NOT_WRITTEN"
+compilation_status = "NOT_RUN"
+elaboration_status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+receipts = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+force_push_authorized = false
+build_only_after_existing_gate = true
+paper_derived_new_theorem = false
+physics_nonblowup_claim = false
+analytic_k_zero_claim = false
+arithmetic_infinite_density_claim = false
+
+existing_declarations_to_audit = [
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.HeatKernel.step_nonneg",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.HeatKernel.step_mass",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.HeatKernel.evolve_mass",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.aggregate_step_lower_of_edge",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.type_complete_at_of_steering",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.type_complete_of_uniform_minorization",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.type_complete_of_representative_minorization",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.eventually_type_complete_of_representative_minorization",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.eventually_type_complete_of_anchor_reinjection",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.type_complete_iff_supported_type_reachability",
+]
+
+future_source_obligations_not_yet_declarations = [
+  "Define a rational stationary weight pi(r)=w(r)/sum w with nonnegative rational w and strictly positive denominator.",
+  "Construct a concrete target-first, source-second HeatKernel K(target,source)=(1-alpha)*indicator(target=source)+alpha*pi(target), requiring 0<alpha<=1.",
+  "Prove finite-sum column stochasticity and K.step h=(1-alpha)*h+alpha*pi*total_mass, preserving exact types.",
+  "Prove positive type mass whenever at least one positive-weight representative belongs to each required type; derive RepresentativeMinorization and type_complete_of_representative_minorization rather than duplicate them.",
+  "For w(r)>0 at every state derive UniformMinorization epsilon=alpha*min_r pi(r) and existing consumer.",
+  "Bound type mass under an ACTUAL second stochastic kernel K' by TV defect d<alpha*min_theta pi_theta, retaining nonnegativity.",
+  "Prove feature aggregation commutes with this specific K, and preserve the separate no-exact-fine-type-decoder boundary for radical collisions.",
+  "Require genuine arithmetic sieve weight construction and H-uniform positive type mass before promoting any infinite density theorem.",
+]
+negative_controls = [
+  "An absent required type has stationary mass zero and is not created by restart.",
+  "A represented type with zero sieve weight at every representative cannot be uniformly reached from all initial states.",
+  "At TV defect equality d=3/40 in the {12,18,25} fixture, a stochastic kernel can erase type25 after one step.",
+  "Perfect lumpability of the radical observation {12,18}->6 does not recover the distinct fine types.",
+  "An artificial restart kernel is a newly chosen dynamics, not an inference that the original weighted arithmetic sieve has this transition.",
+]
+
+[checks]
+checkout_identity = 'test "$(git rev-parse HEAD)" = d17c5c060239c42b8e7cb95664001fe8bce38eeb'
+source_identity = 'test "$(git hash-object GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean)" = b58e2e0e16b134f110015059b0d3d5dd7d2aca47'
+mathlib_identity = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+existing_leaf_build = "lake build GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState"
+existing_elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean"
+fresh_kernel = "Determine available fresh kernel checker flags from toolchain help at exact source checkout, then record actual argv and exit."
+axiom_audit = "In an executor-local scratch import driver outside math, import the module; #print axioms each existing_declarations_to_audit entry plus exact future new declarations when present; capture complete transitive axiom closure and any sorryAx."
+future_new_source_pin = "NOT_YET_WRITTEN: do not apply the above historical source SHA to later new Lean additions."
+optional_library_root = "Only after dependency acceptance run lake build GRWTSK; root failures outside this leaf must be classified separately."
+expected_build_exit = 0
+observed_build_exit = "NOT_RUN"
+observed_elaboration_exit = "NOT_RUN"
+observed_kernel_exit = "NOT_RUN"
+
+# Effectful runners, build logs, fresh kernel/axiom receipts and workflow state belong solely in grwtsk/noeaaeue.
