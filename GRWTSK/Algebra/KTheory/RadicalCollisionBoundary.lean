@@ -1702,4 +1702,503 @@ theorem primeValuation_selectedSieve_eventually_certified_hit
     simpa [primeValuationSieveModulus, h] using
       primeValuation_buffered_eventually_certified_hit p k hp hcop
 
+/-- The two-modulus selection does not erase the original
+K₀-shaped radical collision. For any prime p, once the cutoff
+contains both p and p², they are certified survivors of the
+selected modulus (2 for p=3, 3 otherwise); their radical-derived
+group-completion features agree, but their exact valuation labels
+are different. Therefore no feature-only exact decoder exists on
+that entire certified arithmetic scope.
+
+This negative control is separate from the positive *mass-coverage*
+result for each fixed prime valuation. -/
+theorem primeValuation_selectedSieve_no_exact_decoder
+    (lift : ℕ →* M) (p N : ℕ) (hp : Nat.Prime p)
+    (hN : 1 ≤ N) (hpowBound : p ^ 2 ≤ N) :
+    ¬ ∃ decode : GrothendieckKZero M → ℕ,
+        ∀ n ∈
+          (certifiedArithmeticInventory
+            (primeValuationSieveModulus p) N hN).certifiedSearch 1 1,
+          primeValuationType p n = decode (kZeroRadical lift n) := by
+  have hcop : Nat.Coprime p (primeValuationSieveModulus p) := by
+    by_cases h : p = 3
+    · subst p
+      have h32 : Nat.Coprime 3 2 := by decide
+      simpa [primeValuationSieveModulus] using h32
+    · have hcop3 : Nat.Coprime p 3 :=
+        primeValuation_coprime_three_of_ne p hp h
+      simpa [primeValuationSieveModulus, h] using hcop3
+  have hcopPow :
+      Nat.Coprime (p ^ 2) (primeValuationSieveModulus p) :=
+    (Nat.coprime_pow_left_iff (by norm_num : 0 < 2)
+      p (primeValuationSieveModulus p)).mpr hcop
+  have hpLower : 1 ≤ p := hp.one_lt.le
+  have hple : p ≤ N := by
+    calc
+      p = p * 1 := by simp
+      _ ≤ p * p := Nat.mul_le_mul_left p hpLower
+      _ = p ^ 2 := by ring
+      _ ≤ N := hpowBound
+  have hpScope : p ∈ scope N := by
+    change p ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨hpLower, hple⟩
+  have hpPowScope : p ^ 2 ∈ scope N := by
+    change p ^ 2 ∈ Finset.Icc 1 N
+    have hpositive : 0 < p ^ 2 := pow_pos hp.pos 2
+    exact Finset.mem_Icc.mpr ⟨Nat.one_le_iff_ne_zero.mpr
+      (Nat.ne_of_gt hpositive), hpowBound⟩
+  have hpReach :
+      p ∈ (certifiedArithmeticInventory
+        (primeValuationSieveModulus p) N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors
+      (primeValuationSieveModulus p) N hN]
+    exact Finset.mem_filter.mpr ⟨hpScope, hcop⟩
+  have hpowReach :
+      p ^ 2 ∈ (certifiedArithmeticInventory
+        (primeValuationSieveModulus p) N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors
+      (primeValuationSieveModulus p) N hN]
+    exact Finset.mem_filter.mpr ⟨hpPowScope, hcopPow⟩
+  have hK : kZeroRadical lift p = kZeroRadical lift (p ^ 2) :=
+    (kZeroRadical_pow lift p 2 (by norm_num)).symm
+  have hneq :
+      primeValuationType p p ≠ primeValuationType p (p ^ 2) := by
+    have hself : p.factorization p = 1 := hp.factorization_self
+    have hpow : (p ^ 2).factorization p = 2 :=
+      Nat.factorization_pow_self hp
+    intro heq
+    have hfalse : (1 : ℕ) = 2 := by
+      simpa only [primeValuationType, hself, hpow] using heq
+    norm_num at hfalse
+  exact (certifiedArithmeticInventory
+    (primeValuationSieveModulus p) N hN).no_exact_feature_type_of_collision
+      1 (primeValuationType p) (kZeroRadical lift) 1
+      hpReach hpowReach hK hneq
+
+/-! ## Joint 2-adic/3-adic valuation types in one modulus-five sieve
+
+The previous theorem was pointwise at a selected prime, possibly
+choosing a different modulus for p=3. Here BOTH exact valuation
+coordinates are measured on the SAME finite arithmetic state n and
+the SAME buffered Markov kernel at modulus q=5.
+
+For target (a,b), the progression
+  (2^a * 3^b) * (30*j+1)
+has exact exponents a at 2 and b at 3; every term is coprime to 5.
+Its finite period is 30*2^a*3^b. The finite survivor count and
+time-uniform mass bound are separate downstream declarations.
+This construction does not claim general finite tuples of arbitrary
+primes, analytic K-theory, or a prime-number theorem.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- Two exact prime-multiplicity coordinates, not two independent
+marginals or a squarefree/radical-only classifier. -/
+def jointTwoThreeValuationType (n : ℕ) : ℕ × ℕ :=
+  (primeValuationType 2 n, primeValuationType 3 n)
+
+/-- Arithmetic period for the joint two-coordinate progression. -/
+def jointTwoThreeValuationPeriod (a b : ℕ) : ℕ :=
+  (2 ^ a * 3 ^ b) * 30
+
+/-- Distinct terms carrying the exact joint valuation label (a,b). -/
+def jointTwoThreeValuationProgression (a b j : ℕ) : ℕ :=
+  (2 ^ a * 3 ^ b) * (30 * j + 1)
+
+theorem jointTwoThreeValuationPeriod_pos (a b : ℕ) :
+    0 < jointTwoThreeValuationPeriod a b := by
+  dsimp [jointTwoThreeValuationPeriod]
+  positivity
+
+theorem jointTwoThreeValuationProgression_pos (a b j : ℕ) :
+    0 < jointTwoThreeValuationProgression a b j := by
+  dsimp [jointTwoThreeValuationProgression]
+  positivity
+
+/-- Exact 2- and 3-adic exponents of the explicit joint progression.
+The tail 30*j+1 has neither prime factor; cross-factors vanish by
+coprimality of distinct primes. -/
+theorem jointTwoThreeValuationProgression_type (a b j : ℕ) :
+    jointTwoThreeValuationType
+      (jointTwoThreeValuationProgression a b j) = (a, b) := by
+  have hp2 : Nat.Prime 2 := by norm_num
+  have hp3 : Nat.Prime 3 := by norm_num
+  have h2ne : (2 : ℕ) ^ a ≠ 0 := by positivity
+  have h3ne : (3 : ℕ) ^ b ≠ 0 := by positivity
+  have hprodne : (2 : ℕ) ^ a * 3 ^ b ≠ 0 :=
+    mul_ne_zero h2ne h3ne
+  have htailne : 30 * j + 1 ≠ 0 := by omega
+  have hcop32 : Nat.Coprime ((3 : ℕ) ^ b) 2 :=
+    (show Nat.Coprime 3 2 by decide).pow_left b
+  have hcop23 : Nat.Coprime ((2 : ℕ) ^ a) 3 :=
+    (show Nat.Coprime 2 3 by decide).pow_left a
+  have h3at2 : ((3 : ℕ) ^ b).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd
+      ((Nat.Prime.coprime_iff_not_dvd hp2).mp hcop32.symm)
+  have h2at3 : ((2 : ℕ) ^ a).factorization 3 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd
+      ((Nat.Prime.coprime_iff_not_dvd hp3).mp hcop23.symm)
+  have htailnot2 : ¬ (2 : ℕ) ∣ 30 * j + 1 := by
+    rintro ⟨z, hz⟩
+    omega
+  have htailnot3 : ¬ (3 : ℕ) ∣ 30 * j + 1 := by
+    rintro ⟨z, hz⟩
+    omega
+  have htail2 : (30 * j + 1).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd htailnot2
+  have htail3 : (30 * j + 1).factorization 3 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd htailnot3
+  have h2 : (jointTwoThreeValuationProgression a b j).factorization 2 = a := by
+    change ((2 ^ a * 3 ^ b) * (30 * j + 1)).factorization 2 = a
+    rw [Nat.factorization_mul hprodne htailne]
+    rw [Nat.factorization_mul h2ne h3ne]
+    simp [Nat.factorization_pow_self hp2, h3at2, htail2]
+  have h3 : (jointTwoThreeValuationProgression a b j).factorization 3 = b := by
+    change ((2 ^ a * 3 ^ b) * (30 * j + 1)).factorization 3 = b
+    rw [Nat.factorization_mul hprodne htailne]
+    rw [Nat.factorization_mul h2ne h3ne]
+    simp [Nat.factorization_pow_self hp3, h2at3, htail3]
+  exact Prod.ext h2 h3
+
+/-- One arithmetic modulus, 5, admits the whole joint progression. -/
+theorem jointTwoThreeValuationProgression_coprime_five (a b j : ℕ) :
+    Nat.Coprime (jointTwoThreeValuationProgression a b j) 5 := by
+  have hpow2 : Nat.Coprime ((2 : ℕ) ^ a) 5 :=
+    (show Nat.Coprime 2 5 by decide).pow_left a
+  have hpow3 : Nat.Coprime ((3 : ℕ) ^ b) 5 :=
+    (show Nat.Coprime 3 5 by decide).pow_left b
+  have hdiv5 : (5 : ℕ) ∣ 30 * j := by
+    refine ⟨6 * j, ?_⟩
+    ring
+  have hnot5 : ¬ (5 : ℕ) ∣ 30 * j + 1 := by
+    intro h
+    have hone : (5 : ℕ) ∣ 1 := (Nat.dvd_add_iff_right hdiv5).mp h
+    norm_num at hone
+  have hp5 : Nat.Prime 5 := by norm_num
+  have htail : Nat.Coprime (30 * j + 1) 5 :=
+    ((Nat.Prime.coprime_iff_not_dvd hp5).mpr hnot5).symm
+  have hprod : Nat.Coprime ((2 : ℕ) ^ a * 3 ^ b) 5 :=
+    Nat.coprime_mul_iff_left.mpr ⟨hpow2, hpow3⟩
+  change Nat.Coprime ((2 ^ a * 3 ^ b) * (30 * j + 1)) 5
+  exact Nat.coprime_mul_iff_left.mpr ⟨hprod, htail⟩
+
+/-- Injectivity is on the joint progression index, not the full
+arithmetic radical or valuation classifier. -/
+theorem jointTwoThreeValuationProgression_injective (a b : ℕ) :
+    Function.Injective (jointTwoThreeValuationProgression a b) := by
+  intro i j h
+  have hpne : (2 : ℕ) ^ a * 3 ^ b ≠ 0 := by positivity
+  have hsame : 30 * i + 1 = 30 * j + 1 :=
+    mul_left_cancel₀ hpne (by
+      simpa only [jointTwoThreeValuationProgression] using h)
+  omega
+
+/-- Terms indexed below the finite integer quotient N/period lie
+within the inclusive positive arithmetic scope. -/
+theorem jointTwoThreeValuationProgression_mem_scope
+    (a b N j : ℕ)
+    (hj : j < N / jointTwoThreeValuationPeriod a b) :
+    jointTwoThreeValuationProgression a b j ∈ scope N := by
+  have hjle : j + 1 ≤ N / jointTwoThreeValuationPeriod a b := by omega
+  have hupper : jointTwoThreeValuationProgression a b j ≤ N := by
+    calc
+      jointTwoThreeValuationProgression a b j ≤
+          jointTwoThreeValuationPeriod a b * (j + 1) := by
+        dsimp [jointTwoThreeValuationProgression, jointTwoThreeValuationPeriod]
+        calc
+          (2 ^ a * 3 ^ b) * (30 * j + 1) ≤
+              (2 ^ a * 3 ^ b) * (30 * (j + 1)) :=
+            Nat.mul_le_mul_left _ (by omega)
+          _ = (2 ^ a * 3 ^ b) * 30 * (j + 1) := by ring
+      _ ≤ jointTwoThreeValuationPeriod a b *
+            (N / jointTwoThreeValuationPeriod a b) :=
+        Nat.mul_le_mul_left _ hjle
+      _ ≤ N := Nat.mul_div_le N (jointTwoThreeValuationPeriod a b)
+  change jointTwoThreeValuationProgression a b j ∈ Finset.Icc 1 N
+  exact Finset.mem_Icc.mpr
+    ⟨Nat.succ_le_iff.mpr (jointTwoThreeValuationProgression_pos a b j), hupper⟩
+
+/-- Exactly joint-labelled coprime survivors occupy at least
+floor(N/(30*2^a*3^b)) positions in the finite arithmetic scope.
+The count is proved by an injective progression and uses no
+independence assumption between the two valuation coordinates. -/
+theorem jointTwoThreeValuation_survivors_card_ge_floor
+    (a b N : ℕ) :
+    N / jointTwoThreeValuationPeriod a b ≤
+      (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card := by
+  classical
+  have hsub :
+      ((Finset.range (N / jointTwoThreeValuationPeriod a b)).image
+        (jointTwoThreeValuationProgression a b)) ⊆
+          bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b) := by
+    intro target ht
+    obtain ⟨j, hj, rfl⟩ := Finset.mem_image.mp ht
+    have hscope :
+        jointTwoThreeValuationProgression a b j ∈ scope N :=
+      jointTwoThreeValuationProgression_mem_scope a b N j
+        (Finset.mem_range.mp hj)
+    change jointTwoThreeValuationProgression a b j ∈
+      (scope N).filter (fun n =>
+        jointTwoThreeValuationType n = (a, b) ∧ Nat.Coprime n 5)
+    exact Finset.mem_filter.mpr
+      ⟨hscope, jointTwoThreeValuationProgression_type a b j,
+        jointTwoThreeValuationProgression_coprime_five a b j⟩
+  calc
+    N / jointTwoThreeValuationPeriod a b =
+        (Finset.range (N / jointTwoThreeValuationPeriod a b)).card := by simp
+    _ = ((Finset.range (N / jointTwoThreeValuationPeriod a b)).image
+          (jointTwoThreeValuationProgression a b)).card :=
+      (Finset.card_image_of_injective _
+        (jointTwoThreeValuationProgression_injective a b)).symm
+    _ ≤ (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card :=
+      Finset.card_le_card hsub
+
+/-- Under cutoff N≥jointPeriod(a,b), the finite joint-type
+survivors have count at least N/(2*jointPeriod).
+This is arithmetic progression counting, not a product of separate
+one-coordinate mass estimates. -/
+theorem jointTwoThreeValuation_survivor_density
+    (a b N : ℕ) (hcutoff : jointTwoThreeValuationPeriod a b ≤ N) :
+    ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) *
+        (N : ℝ) ≤
+      ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) := by
+  let d := jointTwoThreeValuationPeriod a b
+  have hdpos : 0 < d := jointTwoThreeValuationPeriod_pos a b
+  have hq : 1 ≤ N / d := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hdle : d ≤ d * (N / d) := by
+    calc
+      d = d * 1 := by simp
+      _ ≤ d * (N / d) := Nat.mul_le_mul_left d hq
+  have hmodlt : N % d < d := Nat.mod_lt N hdpos
+  have hmod : N % d + d * (N / d) = N := Nat.mod_add_div N d
+  have hfloor : N ≤ 2 * (d * (N / d)) := by omega
+  have hcard : N / d ≤
+      (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card :=
+    jointTwoThreeValuation_survivors_card_ge_floor a b N
+  have hbound : N ≤
+      (2 * d) *
+        (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card := by
+    calc
+      N ≤ 2 * (d * (N / d)) := hfloor
+      _ = (2 * d) * (N / d) := by ring
+      _ ≤ (2 * d) *
+          (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card :=
+        Nat.mul_le_mul_left _ hcard
+  have hreal : (N : ℝ) ≤
+      (2 : ℝ) * (d : ℝ) *
+        ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) := by
+    exact_mod_cast hbound
+  have hden : (0 : ℝ) < (2 : ℝ) * (d : ℝ) := by positivity
+  have hscaled : (N : ℝ) / ((2 : ℝ) * (d : ℝ)) ≤
+      ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) := by
+    apply (div_le_iff₀ hden).mpr
+    nlinarith [hreal]
+  convert hscaled using 1 <;> ring
+
+/-- Pointwise joint-type steering under one fixed modulus-five
+buffered arithmetic Markov kernel. For any target pair (a,b),
+N≥30*2^a*3^b and any positive Markov time, its type-fiber mass
+is at least 1/(8*jointPeriod). There is no probabilistic
+independence hypothesis between the two valuation coordinates. -/
+theorem jointTwoThreeValuation_buffered_mass_ge_fixed_rate
+    (a b N : ℕ) (hN : 1 ≤ N)
+    (hcutoff : jointTwoThreeValuationPeriod a b ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) :
+    (1 : ℝ) / (8 * (jointTwoThreeValuationPeriod a b : ℝ)) ≤
+      (bufferedDiagonalKernel 5 N hN).typeMass
+        initial jointTwoThreeValuationType (depth + 1) (a, b) := by
+  have hcount :
+      ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) *
+          (N : ℝ) ≤
+        ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) :=
+    jointTwoThreeValuation_survivor_density a b N hcutoff
+  have hmass :=
+    bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+      5 N hN initial initial_nonneg initial_mass_one
+      jointTwoThreeValuationType (a, b)
+      ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) depth hcount
+  calc
+    (1 : ℝ) / (8 * (jointTwoThreeValuationPeriod a b : ℝ)) =
+        ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) / 4 := by
+      rw [div_div_eq_div_mul]
+      congr 1
+      ring
+    _ ≤ (bufferedDiagonalKernel 5 N hN).typeMass
+          initial jointTwoThreeValuationType (depth + 1) (a, b) := hmass
+
+/-- Every fixed joint (2-adic,3-adic) valuation pair eventually
+receives positive mass in ONE modulus-five buffered kernel, for
+every cutoff above its type-dependent period, all normalized
+nonnegative initial distributions and all positive Markov times. -/
+theorem jointTwoThreeValuation_buffered_eventually_pos (a b : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel 5 N hN).typeMass
+            initial jointTwoThreeValuationType (depth + 1) (a, b) := by
+  refine ⟨jointTwoThreeValuationPeriod a b, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : (0 : ℝ) < (jointTwoThreeValuationPeriod a b : ℝ) := by
+    exact_mod_cast (jointTwoThreeValuationPeriod_pos a b)
+  have hr : (0 : ℝ) <
+      (1 : ℝ) / (8 * (jointTwoThreeValuationPeriod a b : ℝ)) := by
+    positivity
+  exact hr.trans_le
+    (jointTwoThreeValuation_buffered_mass_ge_fixed_rate
+      a b N hN hcutoff initial hnonneg hmass depth)
+
+/-- Joint type pair (a,b) obtains a certified arithmetic hit on the
+same integer, in ONE modulus-five certified arithmetic graph at
+search depth one, after any positive buffered diffusion step once
+the type-dependent cutoff is reached. -/
+theorem jointTwoThreeValuation_buffered_eventually_certified_hit (a b : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          (certifiedArithmeticInventory 5 N hN).sieveTypeHit
+            1 jointTwoThreeValuationType
+            (fun _ n => (bufferedDiagonalKernel 5 N hN).evolve
+              initial (depth + 1) n) 1 (a, b) := by
+  refine ⟨jointTwoThreeValuationPeriod a b, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : 0 < jointTwoThreeValuationPeriod a b :=
+    jointTwoThreeValuationPeriod_pos a b
+  have hquot : 1 ≤ N / jointTwoThreeValuationPeriod a b := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hscope :
+      jointTwoThreeValuationProgression a b 0 ∈ scope N :=
+    jointTwoThreeValuationProgression_mem_scope a b N 0 (by omega)
+  have hcop :
+      Nat.Coprime (jointTwoThreeValuationProgression a b 0) 5 :=
+    jointTwoThreeValuationProgression_coprime_five a b 0
+  have hreach :
+      jointTwoThreeValuationProgression a b 0 ∈
+        (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 5 N hN]
+    exact Finset.mem_filter.mpr ⟨hscope, hcop⟩
+  have hrate : (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ :=
+    bufferedDiagonalKernel_rate_pos N hN
+  have hpositive :
+      0 < (bufferedDiagonalKernel 5 N hN).evolve initial
+        (depth + 1) (jointTwoThreeValuationProgression a b 0) :=
+    hrate.trans_le
+      (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        5 N hN initial hnonneg hmass depth
+        (jointTwoThreeValuationProgression a b 0) hscope hcop)
+  exact ⟨jointTwoThreeValuationProgression a b 0, hreach,
+    jointTwoThreeValuationProgression_type a b 0, hpositive⟩
+
+/-- No fixed finite arithmetic cutoff can cover the entire
+unbounded type space ℕ×ℕ of exact (v₂,v₃) pairs. The first
+valuation coordinate at any integer n∈[1,N] is strictly less
+than N, so the target pair (N,0) is missing, regardless of
+the chosen weights or finite diffusion dynamics. -/
+theorem jointTwoThreeValuation_no_finite_all_pair_coverage
+    (q N : ℕ) (hN : 1 ≤ N)
+    (weights : ℕ → ℕ → ℝ) :
+    ¬ (certifiedArithmeticInventory q N hN).sieveTypeCompleteAt
+      1 jointTwoThreeValuationType weights 1 := by
+  intro complete
+  obtain ⟨n, hn, htype, _⟩ := complete (N, 0)
+  have hscope : n ∈ scope N := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN] at hn
+    exact (Finset.mem_filter.mp hn).1
+  have hlt : primeValuationType 2 n < N :=
+    primeValuationType_lt_cutoff 2 N n hscope
+  have hfirst : primeValuationType 2 n = N := by
+    exact congrArg Prod.fst htype
+  omega
+
+/-- Concrete joint-type information-loss obstruction in the SAME
+modulus-five certified sieve. Once both 2 and 4 lie inside scope,
+they are coprime to 5 and certified reachable at depth one, but
+their radical-derived K₀-shaped features are equal. Their first
+exact valuation coordinates are 1 and 2, so they have different
+joint types. No feature-only exact joint-type decoder exists. -/
+theorem jointTwoThreeValuation_no_exact_radical_decoder
+    (lift : ℕ →* M) (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N) :
+    ¬ ∃ decode : GrothendieckKZero M → ℕ × ℕ,
+        ∀ n ∈ (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1,
+          jointTwoThreeValuationType n = decode (kZeroRadical lift n) := by
+  have htwo : (2 : ℕ) ∈ scope N := by
+    change (2 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+  have hfour : (4 : ℕ) ∈ scope N := by
+    change (4 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+  have hcop2 : Nat.Coprime 2 5 := by decide
+  have hcop4 : Nat.Coprime 4 5 := by decide
+  have hreach2 :
+      (2 : ℕ) ∈ (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 5 N hN]
+    exact Finset.mem_filter.mpr ⟨htwo, hcop2⟩
+  have hreach4 :
+      (4 : ℕ) ∈ (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 5 N hN]
+    exact Finset.mem_filter.mpr ⟨hfour, hcop4⟩
+  have hpow : (2 : ℕ) ^ 2 = 4 := by norm_num
+  have hfeature :
+      kZeroRadical lift (2 : ℕ) = kZeroRadical lift (4 : ℕ) := by
+    have hp := kZeroRadical_pow lift 2 2 (by norm_num)
+    simpa only [hpow] using hp.symm
+  have htype : jointTwoThreeValuationType 2 ≠
+      jointTwoThreeValuationType 4 := by
+    intro h
+    have hfirst : twoAdicMultiplicityType 2 =
+        twoAdicMultiplicityType 4 := by
+      exact congrArg Prod.fst h
+    exact twoAdicMultiplicityType_two_ne_four hfirst
+  exact (certifiedArithmeticInventory 5 N hN).no_exact_feature_type_of_collision
+    1 jointTwoThreeValuationType (kZeroRadical lift) 1
+    hreach2 hreach4 hfeature htype
+
+/-- Every **finite family** of joint (v₂,v₃) target labels shares
+one sufficiently large cutoff and one modulus-five buffered sieve
+whose Markov dynamics simultaneously assign the appropriate
+positive, type-dependent lower bound to each label in the family.
+The cutoff is explicit: one plus the sum of their periods.
+This finite-family theorem does not contradict impossibility of
+covering the entire infinite type space at any finite N. -/
+theorem jointTwoThreeValuation_finite_family_mass_ge_fixed_rates
+    (labels : Finset (ℕ × ℕ)) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ (depth : ℕ) (label : ℕ × ℕ),
+          label ∈ labels →
+          (1 : ℝ) /
+              (8 * (jointTwoThreeValuationPeriod label.1 label.2 : ℝ)) ≤
+            (bufferedDiagonalKernel 5 N hN).typeMass
+              initial jointTwoThreeValuationType (depth + 1) label := by
+  classical
+  let cutoff : ℕ :=
+    1 + ∑ label ∈ labels,
+      jointTwoThreeValuationPeriod label.1 label.2
+  refine ⟨cutoff, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth label hlabel
+  have hsingle :
+      jointTwoThreeValuationPeriod label.1 label.2 ≤
+        ∑ t ∈ labels, jointTwoThreeValuationPeriod t.1 t.2 :=
+    Finset.single_le_sum
+      (fun t ht => Nat.zero_le (jointTwoThreeValuationPeriod t.1 t.2))
+      hlabel
+  have hperiod : jointTwoThreeValuationPeriod label.1 label.2 ≤ N := by
+    dsimp [cutoff] at hcutoff
+    omega
+  exact jointTwoThreeValuation_buffered_mass_ge_fixed_rate
+    label.1 label.2 N hN hperiod initial hnonneg hmass depth
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
