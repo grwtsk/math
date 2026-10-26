@@ -682,4 +682,265 @@ theorem multiplicityOneType_buffered_uniform_complete_and_collision
   · exact no_exact_multiplicityOneType_decoder_on_certified_sieve
       lift N hN h4
 
+/-! ## Pointwise asymptotic completeness for every fixed 2-adic type
+
+For each exact prime-2 valuation k, the progression
+  (2^k) * (12*j + 1)
+is coprime to 3 and has valuation exactly k. When N is at least
+12*2^k, a finite injection yields at least floor(N/(12*2^k))
+different surviving integers of this type.
+
+The buffered source-dependent sieve therefore has type-k mass
+at least 1/(96*2^k) at *every positive Markov time* and cutoff
+N≥12*2^k, regardless of its nonnegative unit-mass initial weights.
+
+This is pointwise in k. The cutoff and positive mass constant depend
+on k; no finite cutoff can simultaneously contain all natural
+valuation types. K₀-shaped radical collisions still block exact
+recovery of prime-power multiplicities from that feature.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- The arithmetic progression's exact period for valuation k. -/
+def twoAdicTypePeriod (k : ℕ) : ℕ := 12 * 2 ^ k
+
+/-- Its positive terms all have exact factorization exponent k at 2. -/
+def twoAdicTypeProgression (k j : ℕ) : ℕ :=
+  2 ^ k * (12 * j + 1)
+
+theorem twoAdicTypePeriod_pos (k : ℕ) : 0 < twoAdicTypePeriod k := by
+  dsimp [twoAdicTypePeriod]
+  positivity
+
+theorem twoAdicTypeProgression_pos (k j : ℕ) :
+    0 < twoAdicTypeProgression k j := by
+  dsimp [twoAdicTypeProgression]
+  positivity
+
+/-- Actual factorization, rather than radical support, records each
+arbitrarily large fixed exponent k. -/
+theorem twoAdicTypeProgression_factorization_two (k j : ℕ) :
+    twoAdicMultiplicityType (twoAdicTypeProgression k j) = k := by
+  have hp : Nat.Prime 2 := by norm_num
+  have hpow : ((2 : ℕ) ^ k).factorization 2 = k :=
+    Nat.factorization_pow_self hp
+  have hpow_ne : (2 : ℕ) ^ k ≠ 0 := by positivity
+  have hodd_ne : 12 * j + 1 ≠ 0 := by omega
+  have hnot : ¬ (2 : ℕ) ∣ (12 * j + 1) := by
+    rintro ⟨c, hc⟩
+    omega
+  have hodd : (12 * j + 1).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hnot
+  change ((2 : ℕ) ^ k * (12 * j + 1)).factorization 2 = k
+  rw [Nat.factorization_mul hpow_ne hodd_ne]
+  simp [hpow, hodd]
+
+/-- Multiplication by a positive power of 2 preserves coprimality to
+3 for the progression of odd integers 12*j+1. -/
+theorem twoAdicTypeProgression_coprime_three (k j : ℕ) :
+    Nat.Coprime (twoAdicTypeProgression k j) 3 := by
+  have htwo : Nat.Coprime 2 3 := by decide
+  have hpow : Nat.Coprime ((2 : ℕ) ^ k) 3 := htwo.pow_left k
+  have hodd : Nat.Coprime (12 * j + 1) 3 :=
+    twelve_mul_add_one_coprime_three j
+  change Nat.Coprime ((2 : ℕ) ^ k * (12 * j + 1)) 3
+  exact Nat.coprime_mul_iff_left.mpr ⟨hpow, hodd⟩
+
+/-- Different progression indices give distinct positive integers,
+since multiplication by 2^k and by 12 is cancellative. -/
+theorem twoAdicTypeProgression_injective (k : ℕ) :
+    Function.Injective (twoAdicTypeProgression k) := by
+  intro i j heq
+  have hpow : (2 : ℕ) ^ k ≠ 0 := by positivity
+  have hmul :
+      (2 : ℕ) ^ k * (12 * i + 1) =
+        (2 : ℕ) ^ k * (12 * j + 1) := by
+    simpa only [twoAdicTypeProgression] using heq
+  have hsame : 12 * i + 1 = 12 * j + 1 :=
+    mul_left_cancel₀ hpow hmul
+  omega
+
+/-- If j is smaller than the quotient N/(12*2^k), the j-th
+progression term lies in the inclusive integer sieve cutoff. -/
+theorem twoAdicTypeProgression_mem_scope
+    (k N j : ℕ) (hj : j < N / twoAdicTypePeriod k) :
+    twoAdicTypeProgression k j ∈ scope N := by
+  have hjle : j + 1 ≤ N / twoAdicTypePeriod k := by omega
+  have hupper : twoAdicTypeProgression k j ≤ N := by
+    calc
+      twoAdicTypeProgression k j ≤
+          twoAdicTypePeriod k * (j + 1) := by
+        dsimp [twoAdicTypeProgression, twoAdicTypePeriod]
+        calc
+          (2 : ℕ) ^ k * (12 * j + 1) ≤
+              (2 : ℕ) ^ k * (12 * (j + 1)) :=
+            Nat.mul_le_mul_left _ (by omega)
+          _ = (12 * 2 ^ k) * (j + 1) := by ring
+      _ ≤ twoAdicTypePeriod k * (N / twoAdicTypePeriod k) :=
+        Nat.mul_le_mul_left _ hjle
+      _ ≤ N := Nat.mul_div_le N (twoAdicTypePeriod k)
+  change twoAdicTypeProgression k j ∈ Finset.Icc 1 N
+  exact Finset.mem_Icc.mpr
+    ⟨Nat.succ_le_iff.mpr (twoAdicTypeProgression_pos k j), hupper⟩
+
+/-- Finite arithmetic count: each fixed valuation k has at least
+floor(N/(12*2^k)) distinct coprime representatives up to N.
+This uses an explicit injective progression, not sieve density. -/
+theorem twoAdicType_survivors_card_ge_floor (k N : ℕ) :
+    N / twoAdicTypePeriod k ≤
+      (bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card := by
+  classical
+  have hsub :
+      ((Finset.range (N / twoAdicTypePeriod k)).image
+        (twoAdicTypeProgression k)) ⊆
+          bufferedTypeSurvivors 3 N twoAdicMultiplicityType k := by
+    intro target ht
+    obtain ⟨j, hj, rfl⟩ := Finset.mem_image.mp ht
+    have hscope :
+        twoAdicTypeProgression k j ∈ scope N :=
+      twoAdicTypeProgression_mem_scope k N j (Finset.mem_range.mp hj)
+    change twoAdicTypeProgression k j ∈
+      (scope N).filter
+        (fun n => twoAdicMultiplicityType n = k ∧ Nat.Coprime n 3)
+    exact Finset.mem_filter.mpr
+      ⟨hscope, twoAdicTypeProgression_factorization_two k j,
+        twoAdicTypeProgression_coprime_three k j⟩
+  calc
+    N / twoAdicTypePeriod k =
+        (Finset.range (N / twoAdicTypePeriod k)).card := by simp
+    _ = ((Finset.range (N / twoAdicTypePeriod k)).image
+          (twoAdicTypeProgression k)).card :=
+      (Finset.card_image_of_injective _
+        (twoAdicTypeProgression_injective k)).symm
+    _ ≤ (bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card :=
+      Finset.card_le_card hsub
+
+/-- Division by a positive integer loses at most half the available
+linear proportion when N ≥ that integer. In the present case,
+each fixed valuation k has surviving density ≥ 1/(24*2^k).
+No positive bound uniform in k is asserted. -/
+theorem twoAdicType_survivor_density
+    (k N : ℕ) (hcutoff : twoAdicTypePeriod k ≤ N) :
+    ((1 : ℝ) / (24 * (2 : ℝ) ^ k)) * (N : ℝ) ≤
+      ((bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card : ℝ) := by
+  let d := twoAdicTypePeriod k
+  have hdpos : 0 < d := twoAdicTypePeriod_pos k
+  have hq : 1 ≤ N / d := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hdle : d ≤ d * (N / d) := by
+    calc
+      d = d * 1 := by simp
+      _ ≤ d * (N / d) := Nat.mul_le_mul_left d hq
+  have hmodlt : N % d < d := Nat.mod_lt N hdpos
+  have hmod : N % d + d * (N / d) = N := Nat.mod_add_div N d
+  have hfloor : N ≤ 2 * (d * (N / d)) := by omega
+  have hcard : N / d ≤
+      (bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card :=
+    twoAdicType_survivors_card_ge_floor k N
+  have hbound : N ≤
+      (24 * 2 ^ k) *
+        (bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card := by
+    calc
+      N ≤ (2 * d) * (N / d) := by
+        calc
+          N ≤ 2 * (d * (N / d)) := hfloor
+          _ = (2 * d) * (N / d) := by ring
+      _ ≤ (2 * d) *
+          (bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card :=
+        Nat.mul_le_mul_left _ hcard
+      _ = (24 * 2 ^ k) *
+          (bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card := by
+        dsimp [d, twoAdicTypePeriod]
+        ring
+  have hreal : (N : ℝ) ≤
+      (24 : ℝ) * (2 : ℝ) ^ k *
+        ((bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card : ℝ) := by
+    exact_mod_cast hbound
+  have hden : (0 : ℝ) < (24 : ℝ) * (2 : ℝ) ^ k := by positivity
+  have hscaled :
+      (N : ℝ) / ((24 : ℝ) * (2 : ℝ) ^ k) ≤
+        ((bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card : ℝ) := by
+    apply (div_le_iff₀ hden).mpr
+    nlinarith [hreal]
+  convert hscaled using 1 <;> ring
+
+/-- Pointwise cutoff-independent buffered type mass: for every fixed
+natural exponent k, any N ≥ 12*2^k, any nonnegative unit-mass initial
+weights, and any positive Markov time, the exact type-k mass is at
+least 1/(96*2^k). This lower bound depends on k, not N or time. -/
+theorem twoAdicMultiplicityType_buffered_mass_ge_fixed_rate
+    (k N : ℕ) (hN : 1 ≤ N)
+    (hcutoff : twoAdicTypePeriod k ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) :
+    (1 : ℝ) / (96 * (2 : ℝ) ^ k) ≤
+      (bufferedDiagonalKernel 3 N hN).typeMass
+        initial twoAdicMultiplicityType (depth + 1) k := by
+  have hcount :
+      ((1 : ℝ) / (24 * (2 : ℝ) ^ k)) * (N : ℝ) ≤
+        ((bufferedTypeSurvivors 3 N twoAdicMultiplicityType k).card : ℝ) :=
+    twoAdicType_survivor_density k N hcutoff
+  have hmass :=
+    bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+      3 N hN initial initial_nonneg initial_mass_one
+      twoAdicMultiplicityType k
+      ((1 : ℝ) / (24 * (2 : ℝ) ^ k)) depth hcount
+  calc
+    (1 : ℝ) / (96 * (2 : ℝ) ^ k) =
+        ((1 : ℝ) / (24 * (2 : ℝ) ^ k)) / 4 := by ring
+    _ ≤ (bufferedDiagonalKernel 3 N hN).typeMass
+          initial twoAdicMultiplicityType (depth + 1) k := hmass
+
+/-- Explicit pointwise eventual positivity for the countably infinite
+family of valuation types. The cutoff is allowed to depend on the
+fixed type k, and the input may vary with N. This is NOT a common
+finite cutoff supporting all types simultaneously. -/
+theorem twoAdicMultiplicityType_buffered_eventually_pos
+    (k : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel 3 N hN).typeMass
+            initial twoAdicMultiplicityType (depth + 1) k := by
+  refine ⟨twoAdicTypePeriod k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hr : (0 : ℝ) < (1 : ℝ) / (96 * (2 : ℝ) ^ k) := by
+    positivity
+  exact hr.trans_le
+    (twoAdicMultiplicityType_buffered_mass_ge_fixed_rate
+      k N hN hcutoff initial hnonneg hmass depth)
+
+/-- No finite positive integer scope can contain **every** natural
+2-adic valuation type: if n∈[1,N], then n.factorization 2<n≤N. -/
+theorem twoAdicMultiplicityType_lt_cutoff
+    (N n : ℕ) (hn : n ∈ scope N) :
+    twoAdicMultiplicityType n < N := by
+  have hrange : 1 ≤ n ∧ n ≤ N := Finset.mem_Icc.mp hn
+  have hn0 : n ≠ 0 := by omega
+  have hval : twoAdicMultiplicityType n < n := by
+    exact Nat.factorization_lt 2 hn0
+  exact hval.trans_le hrange.2
+
+/-- Negative control: at any fixed finite cutoff, the entire
+unbounded type space ℕ is not certified complete, whatever finite
+weights are supplied. This is compatible with eventual coverage
+for each *fixed* type k as the cutoff increases. -/
+theorem twoAdicMultiplicityType_no_finite_all_type_coverage
+    (q N : ℕ) (hN : 1 ≤ N)
+    (weights : ℕ → ℕ → ℝ) :
+    ¬ (certifiedArithmeticInventory q N hN).sieveTypeCompleteAt
+      1 twoAdicMultiplicityType weights 1 := by
+  intro complete
+  obtain ⟨n, hn, heq, _⟩ := complete N
+  have hscope : n ∈ scope N := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN] at hn
+    exact (Finset.mem_filter.mp hn).1
+  have hlt := twoAdicMultiplicityType_lt_cutoff N n hscope
+  omega
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
