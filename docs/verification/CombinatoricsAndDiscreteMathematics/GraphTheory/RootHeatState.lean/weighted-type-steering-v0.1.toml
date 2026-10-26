@@ -1,0 +1,78 @@
+schema = "grwtsk.weighted-type-steering-verification-v0.1"
+source_repository = "grwtsk/math"
+source_snapshot_commit = "98b6269d127f37cc890a332a2c01fe758679f771"
+source_snapshot_tree = "546f72315df1e5ef457ed3d4bd15ab53c9396c65"
+source_module = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean"
+source_blob = "8e3d6a28fbeac5c08e7c5b09c36dd12f05bd2284"
+original_source_commit = "d18bd7288827ea335adccef417b0b2d20627de29"
+upstream_imports = ["Mathlib.Data.Rat.BigOperators", "Mathlib.Algebra.Order.BigOperators.Ring.Finset"]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_status = "CANDIDATE_NOT_KERNEL_ACCEPTED"
+coefficient_ring = "rational"
+finite_carrier_assumed = true
+column_stochastic_kernel_provided = true
+nonnegative_heat_required = true
+epsilon_steering_is_input_not_proved_from_sieve = true
+asymptotic_mixing_not_proved = true
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.TypeCompleteAt"
+kind = "definition"
+meaning = "Every declared type has positive aggregated current heat"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.aggregate_step_lower_of_edge"
+kind = "theorem"
+meaning = "One nonnegative weighted transition is bounded above by destination type heat"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.HasWeightedSteeringBound"
+kind = "definition"
+meaning = "For each type a source/target pair supplies a common epsilon lower bound on weighted incoming heat"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.type_mass_lower_of_steering"
+kind = "theorem"
+meaning = "Selected weighted steering lower bound transfers to actual type-aggregated next-step mass"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.type_complete_at_of_steering"
+kind = "theorem"
+meaning = "Positive epsilon steering proves next-step type completeness"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.eventually_type_complete_of_steering"
+kind = "theorem"
+meaning = "Time-uniform positive steering for all times >= start proves complete type support at every subsequent time"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.not_type_complete_of_missing_label"
+kind = "theorem"
+meaning = "An absent label cannot have positive aggregated mass on the unchanged carrier"
+
+[[declarations]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState.surjective_of_type_complete"
+kind = "theorem"
+meaning = "Complete positive type coverage implies surjectivity of the label map"
+
+[validation]
+command_core = "lake build --wfail GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState"
+command_direct = "lake env lean -DwarningAsError=true GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean"
+command_kernel = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean"
+axiom_audit = "At exact commit, run #print axioms for six new theorem declarations and inspect all generated helper declarations and imports."
+expected_unjustified_axioms = []
+compile = "NOT_RUN"
+elaboration = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axioms = "NOT_RUN"
+receipt = "NOT_RUN"
+full_acceptance = false
+operational_receipts_repository = "grwtsk/noeaaeue"
+
+[remaining_suppliers]
+actual_weighted_sieve_to_rational_kernel = "MISSING"
+quantified_epsilon_positive_steering = "MISSING"
+time_uniform_asymptotic_steering = "MISSING"
+source_state_and_admissible_transition_completeness = "MISSING"
+k_zero_radical_collision_separation_if_type_decoding_required = "MISSING"
