@@ -100,6 +100,75 @@ theorem norm_dirichlet_reconstruction_fullPsi_le
   exact h
 
 
+/-- Character reconstruction with the *radical* nonunit correction,
+retaining the full finite unit packet and the same abstract assumptions
+hχ, hprincipal, hunit, and hE. This is conditional on hE. -/
+theorem norm_character_reconstruction_fullPsi_le_radical
+    (q N : ℕ) (hq : q ≠ 0)
+    {κ : Type*} [Fintype κ]
+    (χ : κ → (ZMod q)ˣ → ℂ)
+    (a : (ZMod q)ˣ) (principal : κ) (E : κ → ℝ)
+    (hχ : OrthogonalAt χ a)
+    (hprincipal : ∀ b : (ZMod q)ˣ, χ principal b = 1)
+    (hunit : ∀ k : κ, ‖χ k a‖ ≤ 1)
+    (hE : ∀ k ∈ Finset.univ.erase principal,
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ k b‖ ≤ E k) :
+    ‖(Fintype.card κ : ℂ) * unitPsiWeight q N a -
+      (∑ n ∈ Finset.range (N + 1),
+        (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ))‖ ≤
+      (∑ k ∈ Finset.univ.erase principal, E k) +
+        ((GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.finitePrimeDivisorCount q N : ℝ) *
+          Real.log (N : ℝ) +
+          (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ)) := by
+  rw [totalPsi_eq_unit_add_nonunit q N]
+  have hchar := norm_unitPsi_reconstruction_error_le
+    q N χ a principal E hχ hprincipal hunit hE
+  rw [unitPsiWeight_sum_eq_unitPsiTotal q N] at hchar
+  calc
+    _ = ‖((Fintype.card κ : ℂ) * unitPsiWeight q N a -
+          unitPsiTotal q N) - nonunitPsiTotal q N‖ := by
+      congr 1
+      ring
+    _ ≤ ‖(Fintype.card κ : ℂ) * unitPsiWeight q N a -
+          unitPsiTotal q N‖ + ‖nonunitPsiTotal q N‖ :=
+      norm_sub_le _ _
+    _ ≤ (∑ k ∈ Finset.univ.erase principal, E k) +
+          ((GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.finitePrimeDivisorCount q N : ℝ) *
+            Real.log (N : ℝ) +
+            (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ)) :=
+      add_le_add hchar (norm_nonunitPsiTotal_le_radical_correction q N hq)
+
+
+/-- Concrete Dirichlet reconstruction with the sharper radical
+nonunit correction. The individual nonprincipal twist estimates hE
+remain explicit; no analytic bound is inferred from arithmetic alone. -/
+theorem norm_dirichlet_reconstruction_fullPsi_le_radical
+    (q N : ℕ) (hq : q ≠ 0)
+    [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ)
+    (E : DirichletCharacter ℂ q → ℝ)
+    (hE : ∀ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q),
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)‖ ≤ E χ) :
+    ‖(Nat.totient q : ℂ) * unitPsiWeight q N a -
+      (∑ n ∈ Finset.range (N + 1),
+        (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ))‖ ≤
+      (∑ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q), E χ) +
+        ((GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.finitePrimeDivisorCount q N : ℝ) *
+          Real.log (N : ℝ) +
+          (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ)) := by
+  have h := norm_character_reconstruction_fullPsi_le_radical q N hq
+    (fun χ : DirichletCharacter ℂ q =>
+      fun b : (ZMod q)ˣ => χ (b : ZMod q))
+    a (1 : DirichletCharacter ℂ q) E
+    (complexDirichlet_orthogonalAt q a)
+    (complexDirichlet_principal_on_units q)
+    (fun χ => (complexDirichlet_norm_on_units q χ a).le)
+    hE
+  rw [card_complexDirichlet_eq_totient q] at h
+  exact h
+
+
 /-- Unconditional finite bound for an actual Dirichlet twist of the
 reduced-residue prime-power packet. This is the triangle-inequality
 baseline, NOT nonprincipal cancellation or a power saving. -/
