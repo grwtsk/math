@@ -2909,6 +2909,110 @@ theorem bufferedDiagonalKernel_edge_iff_certified
   change Nat.Coprime target q ↔ positiveSieveEdge q N source target
   simp [positiveSieveEdge, source_mem, target_mem]
 
+/-- Elementary per-edge minorization for the buffered model:
+each coprime target gets at least 1/(4*N), rather than the
+unbuffered kernel's 1/(2*N²). No density assumption is needed for
+this pointwise lower bound. -/
+theorem bufferedDiagonalKernel_transition_ge_inv_four_cutoff
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N) (target_mem : target ∈ scope N)
+    (hc : Nat.Coprime target q) :
+    ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+      (bufferedDiagonalKernel q N hN).transition source target := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hBpos : (0 : ℝ) < (4 : ℝ) * (N : ℝ) := by positivity
+  have hRpos :
+      0 < ∑ y ∈ scope N, bufferedDiagonalEdgeWeight q N source y :=
+    bufferedDiagonalRowMass_pos q N hN source
+  have hRle :
+      (∑ y ∈ scope N, bufferedDiagonalEdgeWeight q N source y) ≤
+        (4 : ℝ) * (N : ℝ) * (N : ℝ) :=
+    bufferedDiagonalRowMass_le_four_cutoff_sq q N hN source
+  have hweight : (N : ℝ) ≤ bufferedDiagonalEdgeWeight q N source target :=
+    (bufferedRadicalWeight_ge_cutoff_of_coprime q N target hc).trans
+      (bufferedRadicalWeight_le_edge q N source target)
+  change ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+    (if target ∈ scope N then
+      bufferedDiagonalEdgeWeight q N source target /
+        (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z)
+    else 0)
+  rw [if_pos target_mem]
+  have hcomparison :
+      (1 : ℝ) / ((4 : ℝ) * (N : ℝ)) ≤
+        bufferedDiagonalEdgeWeight q N source target /
+          (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z) := by
+    apply (div_le_div_iff₀ hBpos hRpos).mpr
+    calc
+      (1 : ℝ) *
+          (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z) =
+        ∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z := by ring
+      _ ≤ (4 : ℝ) * (N : ℝ) * (N : ℝ) := hRle
+      _ = (N : ℝ) * ((4 : ℝ) * (N : ℝ)) := by ring
+      _ ≤ bufferedDiagonalEdgeWeight q N source target *
+            ((4 : ℝ) * (N : ℝ)) :=
+        mul_le_mul_of_nonneg_right hweight hBpos.le
+  simpa only [one_div] using hcomparison
+
+/-- The inverse-linear floor holds after any positive number of steps
+for *all* nonnegative unit-mass initial distributions, uniformly in
+time at the selected cutoff. -/
+theorem bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_mass_one : (∑ x ∈ scope N, initial x) = 1)
+    (depth : ℕ) (target : ℕ)
+    (target_mem : target ∈ scope N) (hc : Nat.Coprime target q) :
+    ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+      (bufferedDiagonalKernel q N hN).evolve initial (depth + 1) target := by
+  have hnonneg :
+      ∀ x ∈ scope N,
+        0 ≤ (bufferedDiagonalKernel q N hN).evolve initial depth x :=
+    (bufferedDiagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg depth
+  have hmass :
+      (∑ x ∈ scope N,
+        (bufferedDiagonalKernel q N hN).evolve initial depth x) = 1 := by
+    calc
+      (∑ x ∈ scope N,
+        (bufferedDiagonalKernel q N hN).evolve initial depth x) =
+        ∑ x ∈ scope N, initial x :=
+        (bufferedDiagonalKernel q N hN).sum_evolve_eq_sum initial depth
+      _ = 1 := initial_mass_one
+  change ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+    ∑ x ∈ scope N,
+      (bufferedDiagonalKernel q N hN).evolve initial depth x *
+        (bufferedDiagonalKernel q N hN).transition x target
+  calc
+    ((4 : ℝ) * (N : ℝ))⁻¹ =
+        (∑ x ∈ scope N,
+          (bufferedDiagonalKernel q N hN).evolve initial depth x) *
+          ((4 : ℝ) * (N : ℝ))⁻¹ := by
+      rw [hmass, one_mul]
+    _ = ∑ x ∈ scope N,
+          (bufferedDiagonalKernel q N hN).evolve initial depth x *
+            ((4 : ℝ) * (N : ℝ))⁻¹ := by
+      rw [Finset.sum_mul]
+    _ ≤ ∑ x ∈ scope N,
+          (bufferedDiagonalKernel q N hN).evolve initial depth x *
+            (bufferedDiagonalKernel q N hN).transition x target := by
+      apply Finset.sum_le_sum
+      intro x hx
+      exact mul_le_mul_of_nonneg_left
+        (bufferedDiagonalKernel_transition_ge_inv_four_cutoff
+          q N hN x target hx target_mem hc) (hnonneg x hx)
+
+/-- Strict positivity of the baseline is for each fixed positive
+cutoff, but the inverse-linear *single-target* mass decays with N. -/
+theorem bufferedDiagonalKernel_rate_pos
+    (N : ℕ) (hN : 1 ≤ N) :
+    (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  positivity
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
