@@ -1288,4 +1288,109 @@ theorem primeValuation_buffered_eventually_certified_hit
   exact ⟨primeValuationProgression p k 0, hreach,
     primeValuationProgression_factorization p k 0 hp, hpositive⟩
 
+/-! ## The excluded prime 3: an explicitly distinct modulus-two sieve
+
+The preceding prime-p result used modulus 3 and required
+Nat.Coprime p 3. For p=3 that hypothesis is false. This section
+uses a DIFFERENT normalized buffered Markov kernel at modulus 2.
+For every k, the terms 3^k*(6*j+1) have exact 3-adic valuation k,
+are coprime to 2, and occur in a progression of period 6*3^k.
+
+This is pointwise fixed-type counting, not analytic prime distribution
+or an identification of the two distinct arithmetic kernels.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- Cutoff period for exact 3-adic type k under the modulus-two sieve. -/
+def threeAdicTypePeriod (k : ℕ) : ℕ := 6 * 3 ^ k
+
+/-- Explicit odd integers with exact 3-adic valuation k. -/
+def threeAdicTypeProgression (k j : ℕ) : ℕ :=
+  3 ^ k * (6 * j + 1)
+
+theorem threeAdicTypePeriod_pos (k : ℕ) :
+    0 < threeAdicTypePeriod k := by
+  dsimp [threeAdicTypePeriod]
+  positivity
+
+theorem threeAdicTypeProgression_pos (k j : ℕ) :
+    0 < threeAdicTypeProgression k j := by
+  dsimp [threeAdicTypeProgression]
+  positivity
+
+/-- The factorization exponent of 3 in every progression term is
+exactly k. We use the actual factorization, not the radical signal. -/
+theorem threeAdicTypeProgression_factorization_three (k j : ℕ) :
+    primeValuationType 3 (threeAdicTypeProgression k j) = k := by
+  have hp3 : Nat.Prime 3 := by norm_num
+  have hpow : ((3 : ℕ) ^ k).factorization 3 = k :=
+    Nat.factorization_pow_self hp3
+  have hpow_ne : (3 : ℕ) ^ k ≠ 0 := by positivity
+  have htail_ne : 6 * j + 1 ≠ 0 := by omega
+  have hdiv3 : (3 : ℕ) ∣ 6 * j := by
+    refine ⟨2 * j, ?_⟩
+    ring
+  have hnot : ¬ (3 : ℕ) ∣ (6 * j + 1) := by
+    intro h
+    have hone : (3 : ℕ) ∣ 1 := (Nat.dvd_add_iff_right hdiv3).mp h
+    norm_num at hone
+  have htail : (6 * j + 1).factorization 3 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hnot
+  change ((3 : ℕ) ^ k * (6 * j + 1)).factorization 3 = k
+  rw [Nat.factorization_mul hpow_ne htail_ne]
+  simp [hpow, htail]
+
+/-- The entire fixed-3-adic-type progression survives modulus 2. -/
+theorem threeAdicTypeProgression_coprime_two (k j : ℕ) :
+    Nat.Coprime (threeAdicTypeProgression k j) 2 := by
+  have hthree : Nat.Coprime 3 2 := by decide
+  have hpow : Nat.Coprime ((3 : ℕ) ^ k) 2 := hthree.pow_left k
+  have hdiv2 : (2 : ℕ) ∣ 6 * j := by
+    refine ⟨3 * j, ?_⟩
+    ring
+  have hnot : ¬ (2 : ℕ) ∣ (6 * j + 1) := by
+    intro h
+    have hone : (2 : ℕ) ∣ 1 := (Nat.dvd_add_iff_right hdiv2).mp h
+    norm_num at hone
+  have hp2 : Nat.Prime 2 := by norm_num
+  have htail : Nat.Coprime (6 * j + 1) 2 :=
+    ((Nat.Prime.coprime_iff_not_dvd hp2).mpr hnot).symm
+  change Nat.Coprime ((3 : ℕ) ^ k * (6 * j + 1)) 2
+  exact Nat.coprime_mul_iff_left.mpr ⟨hpow, htail⟩
+
+/-- The progression retains its index: all terms are distinct. -/
+theorem threeAdicTypeProgression_injective (k : ℕ) :
+    Function.Injective (threeAdicTypeProgression k) := by
+  intro i j heq
+  have hpow_ne : (3 : ℕ) ^ k ≠ 0 := by positivity
+  have hmul :
+      (3 : ℕ) ^ k * (6 * i + 1) =
+        (3 : ℕ) ^ k * (6 * j + 1) := by
+    simpa only [threeAdicTypeProgression] using heq
+  have htail : 6 * i + 1 = 6 * j + 1 :=
+    mul_left_cancel₀ hpow_ne hmul
+  omega
+
+/-- If j is below the finite quotient by the arithmetic period,
+then 3^k*(6*j+1) lies within the positive inclusive cutoff. -/
+theorem threeAdicTypeProgression_mem_scope
+    (k N j : ℕ) (hj : j < N / threeAdicTypePeriod k) :
+    threeAdicTypeProgression k j ∈ scope N := by
+  have hjle : j + 1 ≤ N / threeAdicTypePeriod k := by omega
+  have hupper : threeAdicTypeProgression k j ≤ N := by
+    calc
+      threeAdicTypeProgression k j ≤
+          threeAdicTypePeriod k * (j + 1) := by
+        dsimp [threeAdicTypeProgression, threeAdicTypePeriod]
+        calc
+          (3 : ℕ) ^ k * (6 * j + 1) ≤
+              (3 : ℕ) ^ k * (6 * (j + 1)) :=
+            Nat.mul_le_mul_left _ (by omega)
+          _ = (6 * 3 ^ k) * (j + 1) := by ring
+      _ ≤ threeAdicTypePeriod k * (N / threeAdicTypePeriod k) :=
+        Nat.mul_le_mul_left _ hjle
+      _ ≤ N := Nat.mul_div_le N (threeAdicTypePeriod k)
+  change threeAdicTypeProgression k j ∈ Finset.Icc 1 N
+  exact Finset.mem_Icc.mpr
+    ⟨Nat.succ_le_iff.mpr (threeAdicTypeProgression_pos k j), hupper⟩
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
