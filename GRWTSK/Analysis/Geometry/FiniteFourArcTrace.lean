@@ -51,7 +51,7 @@ theorem quarterComplex_trace_zero :
 theorem quarterComplex_square :
     quarterComplex * quarterComplex =
       -(1 : Matrix (Fin 2) (Fin 2) ℂ) := by
-  rw [quarterComplex_entries]
+  simp only [quarterComplex_entries]
   ext i j
   fin_cases i <;> fin_cases j <;>
     norm_num [Matrix.mul_apply, Fin.sum_univ_two, Matrix.one_apply]
