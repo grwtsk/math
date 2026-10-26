@@ -2462,6 +2462,73 @@ theorem diagonalKernel_certified_oneStep_complete_iff
       initial initial_nonneg initial_positive typeOf targetType).mpr
         (witnesses targetType)
 
+/-! ## Explicit polynomial majorants for the finite arithmetic sieve
+
+These are elementary bounds: radical n ≤ n for n ≠ 0 and the
+finite scope has exactly N vertices when N ≥ 1. The estimates do not
+imply a positive limiting type density or analytic prime cancellation.
+-/
+
+/-- Every in-scope radical-coprimality weight is at most the cutoff.
+The positive scope hypothesis is essential for radical n ≤ n. -/
+theorem radicalCoprimeWeight_le_cutoff
+    (q N n : ℕ) (hn : n ∈ scope N) :
+    radicalCoprimeWeight q n ≤ (N : ℝ) := by
+  have hmem : 1 ≤ n ∧ n ≤ N := Finset.mem_Icc.mp hn
+  by_cases hc : Nat.Coprime n q
+  · have hn0 : n ≠ 0 := by omega
+    have hrad : Nat.radical n ≤ n :=
+      (Nat.radical_le_self_iff).mpr hn0
+    have hcast : (Nat.radical n : ℝ) ≤ (N : ℝ) :=
+      Nat.cast_le.mpr (hrad.trans hmem.2)
+    simpa [radicalCoprimeWeight, hc] using hcast
+  · simp [radicalCoprimeWeight, hc]
+
+/-- The finite positive-integer scope has exactly N vertices when
+N ≥ 1, avoiding any hidden asymptotic cardinality estimate. -/
+theorem scope_card (N : ℕ) (hN : 1 ≤ N) :
+    (scope N).card = N := by
+  change (Finset.Icc 1 N).card = N
+  rw [Nat.card_Icc]
+  omega
+
+/-- The sieve normalizer is bounded explicitly by N squared.
+No prime-counting or radical-density estimate is used. -/
+theorem totalWeight_le_cutoff_sq (q N : ℕ) (hN : 1 ≤ N) :
+    totalWeight q N ≤ (N : ℝ) * (N : ℝ) := by
+  have hc := scope_card N hN
+  calc
+    totalWeight q N =
+        ∑ n ∈ scope N, radicalCoprimeWeight q n := rfl
+    _ ≤ ∑ _n ∈ scope N, (N : ℝ) :=
+      Finset.sum_le_sum
+        (fun n hn => radicalCoprimeWeight_le_cutoff q N n hn)
+    _ = ((scope N).card : ℝ) * (N : ℝ) := by simp
+    _ = (N : ℝ) * (N : ℝ) := by rw [hc]
+
+/-- The diagonal-biased raw outgoing mass of any arithmetic source
+is bounded by twice the sum of unboosted sieve target weights. -/
+theorem diagonalEdgeWeight_le_twice_targetWeight
+    (q source target : ℕ) :
+    diagonalEdgeWeight q source target ≤
+      (2 : ℝ) * radicalCoprimeWeight q target := by
+  unfold diagonalEdgeWeight
+  split_ifs <;> nlinarith [radicalCoprimeWeight_nonneg q target]
+
+theorem diagonalRowMass_le_twice_total
+    (q N source : ℕ) :
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+      (2 : ℝ) * totalWeight q N := by
+  calc
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+        ∑ target ∈ scope N,
+          (2 : ℝ) * radicalCoprimeWeight q target :=
+      Finset.sum_le_sum
+        (fun target ht =>
+          diagonalEdgeWeight_le_twice_targetWeight q source target)
+    _ = (2 : ℝ) * totalWeight q N := by
+      simp only [totalWeight, Finset.mul_sum]
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
