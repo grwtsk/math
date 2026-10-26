@@ -409,4 +409,54 @@ theorem multiplicityOneType_diagonal_rate_pos
     exact_mod_cast (show 0 < N by omega)
   positivity
 
+/-- Both finite Boolean multiplicity classes remain certified
+type hits at *every positive diffusion time* from any nonnegative
+unit-mass initial sieve distribution, with the certified graph
+search depth fixed at one. This follows from the explicit
+inverse-quadratic quantitative rate and does not infer a prime-
+type density or a positive lower bound uniform in N. -/
+theorem multiplicityOneType_diagonal_complete_all_positive_steps
+    (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1) :
+    ∀ depth : ℕ,
+      (certifiedArithmeticInventory 3 N hN).sieveTypeCompleteAt
+        1 multiplicityOneType
+        (fun _ n => (diagonalKernel 3 N hN).evolve
+          initial (depth + 1) n) 1 := by
+  intro depth label
+  have hbase :
+      (0 : ℝ) < ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ :=
+    multiplicityOneType_diagonal_rate_pos N h4
+  cases label with
+  | false =>
+      have hfour : (4 : ℕ) ∈ scope N := by
+        change (4 : ℕ) ∈ Finset.Icc 1 N
+        exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+      have hreach :
+          (4 : ℕ) ∈
+            (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+        rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+        exact Finset.mem_filter.mpr ⟨hfour, by decide⟩
+      refine ⟨4, hreach, multiplicityOneType_four, ?_⟩
+      exact hbase.trans_le
+        (diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
+          3 N hN initial initial_nonneg initial_mass_one
+          depth 4 hfour (by decide))
+  | true =>
+      have htwo : (2 : ℕ) ∈ scope N := by
+        change (2 : ℕ) ∈ Finset.Icc 1 N
+        exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+      have hreach :
+          (2 : ℕ) ∈
+            (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+        rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+        exact Finset.mem_filter.mpr ⟨htwo, by decide⟩
+      refine ⟨2, hreach, multiplicityOneType_two, ?_⟩
+      exact hbase.trans_le
+        (diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
+          3 N hN initial initial_nonneg initial_mass_one
+          depth 2 htwo (by decide))
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
