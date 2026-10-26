@@ -446,4 +446,28 @@ theorem graphMixedPairing_u_Lu_eq_sum_sq
   change v i * v i = (v i) ^ 2
   ring
 
+/-! ## Elementary edge inequality for degree-based spectral bounds
+
+The local estimate (a-b)^2 ≤ 2a²+2b² is the finite
+edgewise supplier behind the standard maximum-degree upper bound
+for the symmetric weighted graph Laplacian. No operator norm or
+unconditional Euler dissipation is asserted by this lemma alone.
+-/
+
+/-- Exact rational two-endpoint inequality needed to bound each
+weighted edge contribution by its vertex-square contributions. -/
+theorem edge_difference_sq_le_two_vertex_squares
+    (a b : ℚ) :
+    (a - b) ^ 2 ≤ 2 * a ^ 2 + 2 * b ^ 2 := by
+  nlinarith [sq_nonneg (a + b)]
+
+/-- Nonnegative edge weights preserve the local quadratic bound. -/
+theorem weighted_edge_difference_sq_le
+    (weight a b : ℚ) (hw : 0 ≤ weight) :
+    weight * (a - b) ^ 2 ≤
+      2 * weight * a ^ 2 + 2 * weight * b ^ 2 := by
+  have h := mul_le_mul_of_nonneg_left
+    (edge_difference_sq_le_two_vertex_squares a b) hw
+  nlinarith
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
