@@ -405,32 +405,45 @@ Lu. The following algebraic identities hold for the actual finite
 Laplacian, without any spectral or continuum assumptions.
 -/
 
-/-- The mixed pairing of u with Lu is exactly the finite sum
-of squared coordinates of Lu when weights are symmetric. -/
+/-- The mixed pairing of u with Lu is exactly the sum of
+squared Laplacian coordinates under symmetric weights. -/
 theorem graphMixedPairing_u_Lu_eq_sum_sq
     (w : V → V → ℚ) (u : V → ℚ)
     (hsym : ∀ i j, w i j = w j i) :
     graphMixedPairing w u (weightedGraphLaplacian w u) =
       ∑ i : V, (weightedGraphLaplacian w u i) ^ 2 := by
   classical
-  unfold graphMixedPairing weightedGraphLaplacian
-  have hswap :
-      (∑ i : V, ∑ j : V,
-        u i * (w i j * ((∑ k : V, w i k * (u i - u k)) -
-          (∑ k : V, w j k * (u j - u k))))) =
-      (∑ i : V, ∑ j : V,
-        u j * (w i j * ((∑ k : V, w j k * (u j - u k)) -
-          (∑ k : V, w i k * (u i - u k))))) := by
-    rw [Finset.sum_comm]
-    apply Finset.sum_congr rfl
-    intro j hj
-    apply Finset.sum_congr rfl
-    intro i hi
-    rw [hsym j i]
-  simp only [Finset.mul_sum]
-  rw [← Finset.sum_mul]
+  let v := weightedGraphLaplacian w u
+  have hself :
+      graphMixedPairing w u v = graphMixedPairing w v u := by
+    unfold graphMixedPairing weightedGraphLaplacian
+    simp only [Finset.mul_sum]
+    have hswap :
+        (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
+        (∑ i : V, ∑ j : V, v i * (w i j * (u i - u j))) := by
+      have hflip :
+          (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
+          (∑ i : V, ∑ j : V, u j * (w i j * (v j - v i))) := by
+        rw [Finset.sum_comm]
+        apply Finset.sum_congr rfl
+        intro j hj
+        apply Finset.sum_congr rfl
+        intro i hi
+        rw [hsym j i]
+      rw [hflip]
+      rw [← Finset.sum_add_distrib]
+      apply Finset.sum_congr rfl
+      intro i hi
+      rw [← Finset.sum_add_distrib]
+      apply Finset.sum_congr rfl
+      intro j hj
+      ring
+    exact hswap
+  rw [hself]
+  unfold graphMixedPairing
   apply Finset.sum_congr rfl
   intro i hi
+  change v i * v i = (v i) ^ 2
   ring
 
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
