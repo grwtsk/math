@@ -18,7 +18,7 @@ This directory groups existing source guides. Its storage name does not establis
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `ce146fb73924abcb43ba4cf06ae7e5a14540e608e309a0c1e8a48d5dde554d6b`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -47,7 +47,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 3. **[Ordinary differential equations](OrdinaryDifferentialEquations/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of differential equations in one independent variable, including scalar equations and finite systems, with their initial-value, boundary-value and qualitative theories.
 4. **[Partial differential equations](PartialDifferentialEquations/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of differential relations for unknown functions of several independent variables, with theories of local and global solutions, regularity, boundary data and evolution.
 
-Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 observed taxonomy/article/catalog inputs; 296 differ from that commit. Observation SHA-256: `7a3829e1c148a68b58a9d7c91d2815c6fd71d1619fa58cde5c839a064ad17d30`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
@@ -61,10 +61,11 @@ Generated navigation, scores and source syntax inventories do not strengthen the
 | Curated primary sources linked | 0 |
 | Curated archive intake records | 0 |
 | Curated selected catalog families | 0 |
-| Pinned source modules represented by complete publication | 68 |
-| Complete generated source Markdown pages in this source route | 1472 |
+| Pinned source modules represented by complete publication | 96 |
+| Complete generated source Markdown pages in this source route | 2102 |
 
 Complete lexical source publication is pinned to `706c62c1285a9857cb9d52e0620ec2cb514eb374`. Its counts are separate from observed filesystem files and semantic subject assignments; they do not establish Lean elaboration or proof acceptance.
 
-Observed report: `4b59a87791740dfee370ff21ba17ad81dbfbe06c97feabe622e3adb5da23503c`. The live tree may drift after this non-atomic observation.
+Observed report: `625d06e2dcdd9ef6333904a41be73b6f8d3c68dd7ace599c9467b38eb0096d23`. The live tree may drift after this non-atomic observation.
 <!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
+

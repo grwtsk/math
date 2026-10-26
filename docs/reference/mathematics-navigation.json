@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.mathematics-navigation.v1",
   "navigation_layout": "canonical-taxonomy-paths",
-  "source_commit": "643d707ca280f3044a83538656787234f0578c54",
+  "source_commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
   "ranking_profile": "docs/reference/ranking-profile.json",
   "entry_points": [
     "urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a",
@@ -31,9 +31,19 @@
   ],
   "subjects": [
     {
+      "id": "urn:uuid:b4e2fb1e-4ebf-4c6c-954a-cf663cc8efd3",
+      "taxonomy_path": "docs/taxonomy/subjects/Algebra/CommutativeAlgebra/Localization/index.md",
+      "navigation_path": "docs/mathematics/Algebra/CommutativeAlgebra/Localization/index.md"
+    },
+    {
       "id": "urn:uuid:c8b0b274-fbca-4a2e-a73a-8585ebcab14a",
       "taxonomy_path": "docs/taxonomy/subjects/Algebra/CommutativeAlgebra/index.md",
       "navigation_path": "docs/mathematics/Algebra/CommutativeAlgebra/index.md"
+    },
+    {
+      "id": "urn:uuid:3f6d760c-4e4d-4946-af53-7e4008e23dc1",
+      "taxonomy_path": "docs/taxonomy/subjects/Algebra/FieldTheory/FieldExtensions/index.md",
+      "navigation_path": "docs/mathematics/Algebra/FieldTheory/FieldExtensions/index.md"
     },
     {
       "id": "urn:uuid:928a6590-e238-4c23-ba5d-2916d856807c",
@@ -59,6 +69,11 @@
       "id": "urn:uuid:c20ca165-7737-4291-9a0b-f39e7a3f3744",
       "taxonomy_path": "docs/taxonomy/subjects/Algebra/GroupTheory/index.md",
       "navigation_path": "docs/mathematics/Algebra/GroupTheory/index.md"
+    },
+    {
+      "id": "urn:uuid:288184e4-fc3b-4ab8-a49b-f1f8eb6c583c",
+      "taxonomy_path": "docs/taxonomy/subjects/Algebra/LinearAlgebra/BilinearAndQuadraticForms/index.md",
+      "navigation_path": "docs/mathematics/Algebra/LinearAlgebra/BilinearAndQuadraticForms/index.md"
     },
     {
       "id": "urn:uuid:89a513d7-fdd5-45fd-b670-021162b26a1c",
@@ -469,6 +484,11 @@
       "id": "urn:uuid:37973241-e8ba-4a2f-a597-529739204d6f",
       "taxonomy_path": "docs/taxonomy/subjects/NumberTheory/ComputationalNumberTheory/index.md",
       "navigation_path": "docs/mathematics/NumberTheory/ComputationalNumberTheory/index.md"
+    },
+    {
+      "id": "urn:uuid:6c64b305-8ae3-4988-8135-306f0463758a",
+      "taxonomy_path": "docs/taxonomy/subjects/NumberTheory/DiophantineEquations/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/DiophantineEquations/index.md"
     },
     {
       "id": "urn:uuid:a6401fad-de38-4043-b635-0aeb5fcf85c9",

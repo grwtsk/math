@@ -26,7 +26,7 @@ Namespace totals and the complete namespace route:
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `ce146fb73924abcb43ba4cf06ae7e5a14540e608e309a0c1e8a48d5dde554d6b`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -51,32 +51,33 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Cocycle](Cocycle/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+1. **[Bilinear and quadratic form theory](BilinearAndQuadraticForms/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of bilinear forms and quadratic forms on vector spaces over specified commutative fields, including their restrictions, equivalences and maps that preserve the forms.
+2. **[Cocycle](Cocycle/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Cocycle products and endpoint gauges](Cocycle/product.md).
-2. **[Common Generator](CommonGenerator/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+3. **[Common Generator](CommonGenerator/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Common-generator rotations and sign reversal](CommonGenerator/rotations.md); [Rational shear counterexamples](CommonGenerator/counterexamples.md).
-3. **[Gauge](Gauge/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+4. **[Gauge](Gauge/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [State dynamics under a gauge](Gauge/state.md).
-4. **[Jacobi](Jacobi/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+5. **[Jacobi](Jacobi/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Jacobi transfer matrices](Jacobi/transfer.md).
-5. **[Matrix theory (over fields)](MatrixTheory/index.md)** — 1 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The algebraic study of finite rectangular and square matrices over specified commutative fields, including rank, linear systems, determinants and canonical-form questions.
+6. **[Matrix theory (over fields)](MatrixTheory/index.md)** — 1 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The algebraic study of finite rectangular and square matrices over specified commutative fields, including rank, linear systems, determinants and canonical-form questions.
    Unranked previews: [A Hermitian matrix with a negative quadratic direction](MatrixTheory/HermitianCounterexamples/negative-identity.md); [Hermitian trace-rank moment bounds](MatrixTheory/trace-rank.md).
-6. **[Ordered Product](OrderedProduct/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+7. **[Ordered Product](OrderedProduct/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Determinant-one ordered products](OrderedProduct/determinant.md).
-7. **[Oriented Real Line](OrientedRealLine/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+8. **[Oriented Real Line](OrientedRealLine/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Positive scales and coherent transport on real lines](OrientedRealLine/transport.md).
-8. **[Schrodinger](Schrodinger/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+9. **[Schrodinger](Schrodinger/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Almost Mathieu potential and spectral hypotheses](Schrodinger/almost-mathieu.md); [Sampled-potential equality and aliases](Schrodinger/sampled-potential.md).
-9. **[Transfer](Transfer/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+10. **[Transfer](Transfer/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Ordered transfer and state propagation](Transfer/ordered.md).
-10. **[Vector space theory (over fields)](VectorSpaces/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The structural study of vector spaces over specified commutative fields, emphasizing subspaces, spanning, linear independence, bases, quotients and changes of scalars.
+11. **[Vector space theory (over fields)](VectorSpaces/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The structural study of vector spaces over specified commutative fields, emphasizing subspaces, spanning, linear independence, bases, quotients and changes of scalars.
 
 ## Articles at this level
 
 - [Periodic cocycle data: necessary Livšic obstruction, not full Livšic rigidity](periodic-cocycle-data.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED` for the new Lean source. The finite exact-arithmetic preflight described below is NOT Lean compilation, fresh kernel checking, or a transitive axiom…
 - [Positive-source / signed-consumer orientation connections](signed-orientation-connections.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For a finite real coordinate space, choose a Boolean sector mask and define the involutive fundamental symmetry
 
-Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 observed taxonomy/article/catalog inputs; 296 differ from that commit. Observation SHA-256: `7a3829e1c148a68b58a9d7c91d2815c6fd71d1619fa58cde5c839a064ad17d30`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
@@ -87,18 +88,7 @@ Generated navigation, scores and source syntax inventories do not strengthen the
 
 [All mathematical areas](../../../index.md) · [Lean source folder](../../../../GRWTSK/Algebra/LinearAlgebra).
 
-<!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
-| Inventory | Count |
-|---|---:|
-| Lean source modules (current regular filesystem files) | 101 |
-| Curated registered object guides | 14 |
-| Curated documented object groups | 10 |
-| Curated primary sources linked | 14 |
-| Curated archive intake records | 3 |
-| Curated selected catalog families | 0 |
 
-No current whole-corpus source-command census is available.
-<!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../../reference/library-pages.md#count-definitions).
 

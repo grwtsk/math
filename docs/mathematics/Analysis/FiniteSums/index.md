@@ -20,7 +20,7 @@ Namespace totals and the complete namespace route:
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `ce146fb73924abcb43ba4cf06ae7e5a14540e608e309a0c1e8a48d5dde554d6b`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -51,7 +51,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Finite Walsh cylinder reconstruction: binary blocks, Chowla, and the sofic boundary](finite-walsh-cylinder-reconstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix any finite coordinate set \(I\), any \(N\geq0\), binary observations \(b_{n,i}\in\{-1,+1\}\) for \(0\leq n<N\), and a pattern \(\varepsilon:I\to\{-1,+1\}\). Define
 - [Weighted and unweighted finite degree expressions](weighted-degree-comparison.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `n` be a positive natural number, `l = 2n + 1`, and `D`, `Q`, `E` arbitrary real numbers. The exact identities are
 
-Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 observed taxonomy/article/catalog inputs; 296 differ from that commit. Observation SHA-256: `7a3829e1c148a68b58a9d7c91d2815c6fd71d1619fa58cde5c839a064ad17d30`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

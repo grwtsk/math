@@ -5,54 +5,58 @@ connect the source/result inventory to Noeaaeue's separate verification queue.
 
 The [mathematical area directory](../index.md) links to an index inside each area folder. Each area index groups its existing guides by mathematical object and links to the corresponding Lean source folder. Areas with sources but no object guides remain visible with explicit zero documentation coverage.
 
-The [generated count report](documentation-counts.json) is produced by the durable Noeaaeue generator from the current checkout. The [structured inventory](library-summary.json) retains the older curated observer census for compatibility and provenance; it must not be read as the repository-wide source count. It is an inventory snapshot, not a census of compiler-generated declarations or a mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
+The [generated count report](documentation-counts.json) retains an observed filesystem snapshot from the durable Noeaaeue generator. The [structured inventory](library-summary.json) retains the older curated observer census for compatibility and provenance; it must not be read as the repository-wide source count. It is an inventory snapshot, not a census of compiler-generated declarations or a mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
 
 The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. The [source-only namespace dependency map](namespace-dependency-map.md) provides the complete committed import projection without a Lean compilation or verification claim. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) explain the disposition of the former flat documentation.
 
 Migration and acceptance boundaries are recorded separately in the Lean consolidation report (artifact:gitblob:a0aee0a59e806de6638a059af9df7dd22359b507), repository reconstruction contract (artifact:gitblob:6434bef0cd7e148093f275fc82ea3013c6523630), and rigor and reconstruction status (artifact:gitblob:558248aa8fd44d10f9024a266f8a64dbab2f4b13).
 
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
-## Current repository populations
+## Observed filesystem snapshot
 
-These counts are generated from the current checkout by the durable Noeaaeue count generator. Every regular Lean file and first-level namespace under `GRWTSK` is counted in the same maintained source population; curated documentation registries are shown separately.
+These counts retain an observed filesystem snapshot from the durable Noeaaeue count generator. The live tree may drift after observation; the report identity and input digests identify the measured population. Every regular Lean file and first-level namespace under `GRWTSK` is counted in the same maintained source population; curated documentation registries are shown separately.
 
 | Population | Count | Scope |
 |---|---:|---|
-| Repository-owned Lean files | 72577 | `git_index_regular_files`; includes root files and fixtures |
+| Repository-owned Lean files | 72360 | `git_index_regular_files`; includes root files and fixtures |
 | Repository-owned support Lean files | 6 | Repository-owned Lean files outside `GRWTSK/` |
-| All `GRWTSK` Lean modules | 72571 | Every regular `.lean` file under `GRWTSK` |
-| Maintained `GRWTSK` Lean modules | 72571 | Every regular `.lean` file under `GRWTSK` |
-| Maintained source namespaces | 24 | Every first-level `GRWTSK` directory |
-| Mathematics Markdown pages | 984 | All pages under `docs/mathematics` |
+| All `GRWTSK` Lean modules | 72354 | Every regular `.lean` file under `GRWTSK` |
+| Maintained `GRWTSK` Lean modules | 72354 | Every regular `.lean` file under `GRWTSK` |
+| Maintained source namespaces | 16 | Every first-level `GRWTSK` directory |
+| Mathematics Markdown pages | 1890290 | All pages under `docs/mathematics` |
 | Curated registered object guides | 149 | Pages carrying the generated object-guide totals marker |
 | Curated documented object groups | 59 | Distinct groups in `object-source-bindings.json` |
 | Curated primary source bindings | 145 | Distinct entries in `subject_placements` |
-| Core documentation Markdown pages | 1037 | `index`, `start`, `mathematics` and `reference` scopes |
-| All documentation Markdown pages | 1272 | Every regular Markdown file under `docs` |
+| Core documentation Markdown pages | 1890359 | `index`, `start`, `mathematics` and `reference` scopes |
+| All documentation Markdown pages | 1963172 | Every regular Markdown file under `docs` |
+| Pinned source modules represented by the complete publication | 72578 | Git commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; separate from observed working-tree files |
+| Complete generated source Markdown pages | 1961870 | Independently counted physical regular pages; article byte validation belongs to the complete-documentation generator |
 
 The maintained `GRWTSK` filesystem count includes every regular Lean file, including new untracked sources; directory names never exclude maintained sources. Repository ownership uses all Git-indexed regular Lean paths, including tracked `runtime` and `outputs` support files; untracked files are excluded. Only repository-root `.git/` and `.lake/` infrastructure paths are excluded from the repository inventory. Non-Git fixtures use a filesystem fallback that additionally excludes directories named `__pycache__`, `outputs`, `runtime` only outside `GRWTSK/`. All inventories exclude symlink files and directories. These populations overlap and must not be added.
 
-The report identity is `60e7cd8b60689d3a8f91b48b3d9eba97ddd6bb6bbb64d536256c09e1f8f9d93e` (generated by Noeaaeue). The previous curated observer census remains 886 modules and is not the repository-wide module count.
+The report identity is `625d06e2dcdd9ef6333904a41be73b6f8d3c68dd7ace599c9467b38eb0096d23` (generated by Noeaaeue). The previous curated observer census remains 886 modules and is not the repository-wide module count.
+
+Source inventory digests: `GRWTSK` `1fed550b690a6f7baca9b1d9fcf40f681bc5209026f25b3984f0db61a6fdc03e`; Git-indexed existing Lean paths `92fe284e8b2fc52ed741ce9fecc98e2109726d82513762438aedd42332ed942a`. This observation is not an atomic filesystem snapshot. Default `--check` detects live-source drift; `--check-published-snapshot` validates the retained report, its templates and the physical manifest-owned Markdown population.
 <!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 ## Count definitions
 
 | Datum | Exact population | Limit |
 |---|---|---|
-| Repository-owned Lean files | 72577 regular `.lean` files at indexed paths (filesystem fallback outside Git) | Includes root and tracked support/fixture Lean regardless of directory names; excludes root `.git/`, `.lake/` and symlinks. Git excludes untracked files; only non-Git fallback excludes runtime/output directory names outside `GRWTSK/` |
-| Maintained source namespaces | 24 first-level `GRWTSK` directories | A navigation grouping, not a mathematical ontology |
-| Curated documentation areas | 33 area indexes under `docs/mathematics` | A registered documentation subset, not the source namespace count |
-| All `GRWTSK` Lean modules | 72571 regular `.lean` files | Includes every first-level namespace |
-| Maintained `GRWTSK` Lean modules | 72571 regular `.lean` files under `GRWTSK` | Includes audit interfaces and unverified candidates |
-| All documentation Markdown pages | 1272 regular Markdown files under `docs` | Includes taxonomy, reviews and verification pages |
-| Core documentation Markdown pages | 1037 pages in `index`, `start`, `mathematics` and `reference` scopes | Excludes reviews, taxonomy and verification pages |
-| Mathematics Markdown pages | 984 pages under `docs/mathematics` | Includes area indexes and registered guides |
+| Repository-owned Lean files | 72360 regular `.lean` files at indexed paths (filesystem fallback outside Git) | Includes root and tracked support/fixture Lean regardless of directory names; excludes root `.git/`, `.lake/` and symlinks. Git excludes untracked files; only non-Git fallback excludes runtime/output directory names outside `GRWTSK/` |
+| Maintained source namespaces | 16 first-level `GRWTSK` directories | A navigation grouping, not a mathematical ontology |
+| Curated documentation areas | 17 area indexes under `docs/mathematics` | A registered documentation subset, not the source namespace count |
+| All `GRWTSK` Lean modules | 72354 regular `.lean` files | Includes every first-level namespace |
+| Maintained `GRWTSK` Lean modules | 72354 regular `.lean` files under `GRWTSK` | Includes audit interfaces and unverified candidates |
+| All documentation Markdown pages | 1963172 regular Markdown files under `docs` | Includes taxonomy, reviews and verification pages |
+| Core documentation Markdown pages | 1890359 pages in `index`, `start`, `mathematics` and `reference` scopes | Excludes reviews, taxonomy and verification pages |
+| Mathematics Markdown pages | 1890290 pages under `docs/mathematics` | Includes area indexes and registered guides |
 | Curated registered object guides | 149 pages carrying the generated totals marker | A page can discuss several statements |
 | Curated documented object groups | 59 distinct keys in `object-source-bindings.json` | Curated documentation bindings, not taxonomy coverage |
 | Curated primary sources linked | 145 distinct `subject_placements` entries | Secondary imports are excluded |
 | Curated archive intake records | 68 source rows in the intake page | Custody does not imply proof acceptance |
 | Curated selected families | 3 records in the selected result catalog | Deliberately narrow; not whole-topic coverage |
-| Legacy curated declaration census | 886 modules with the stored parser totals | Historical observer population; not the current filesystem total |
+| Legacy curated declaration census | 886 modules with the stored parser totals | Historical observer population; separate from the observed filesystem total |
 | Source declaration commands | Explicit commands in completely parsed files | The stored totals apply only to the legacy curated census; no elaboration or proof claim |
 | Theorem/lemma commands | A subset of source declaration commands | Not an additional population to add |
 | Parsed and unparsed modules | Stored parser coverage for the legacy curated census | Unparsed files contribute unavailable counts, never zero |
@@ -67,6 +71,6 @@ Historical curated source-command totals used the pinned Lean parser with Mathli
 
 ## Source and evidence identities
 
-The historical curated observer snapshot records exact input digests for the layout ledger, selected catalog, intake inventory, Lean pin and Lake package manifest, and a content digest for every counted source. Its source-path list and source-command census measure coverage without claiming that those files were elaborated or axiom-audited. The generated filesystem counts use the current local checkout; they do not claim remote integration.
+The historical curated observer snapshot records exact input digests for the layout ledger, selected catalog, intake inventory, Lean pin and Lake package manifest, and a content digest for every counted source. Its source-path list and source-command census measure coverage without claiming that those files were elaborated or axiom-audited. The generated filesystem counts retain an observed filesystem snapshot; the live tree may drift, and remote integration is not claimed.
 
 The [selected result catalog](results.md) remains narrower than the page inventory. Verification interfaces (artifact:gitblob:d7df3a864028a221ea3728082afc25ec28c72953) distinguish written, historical and source-bound checked evidence. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) retain the disposition of the former flat documentation.

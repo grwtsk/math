@@ -6,7 +6,7 @@
 
 Browse the subject entry points below, then follow the immediate specializations on each page to the article leaves. Every level stays in `docs/mathematics`.
 
-The current vocabulary has **24 entry points** and **132 unique subject concepts**. Its editorial statuses and overlapping parents are preserved; this is an evolving collection, not a complete classification of mathematics.
+The current vocabulary has **24 entry points** and **136 unique subject concepts**. Its editorial statuses and overlapping parents are preserved; this is an evolving collection, not a complete classification of mathematics.
 
 ## Complete source publication
 
@@ -31,7 +31,7 @@ The current vocabulary has **24 entry points** and **132 unique subject concepts
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `ce146fb73924abcb43ba4cf06ae7e5a14540e608e309a0c1e8a48d5dde554d6b`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -115,7 +115,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 13. **[Mathematical optimization](Optimization/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of selecting feasible mathematical objects to minimize or maximize a specified objective, including existence, structure, characterization and computation of optima.
 14. **[Mathematics education](MathematicsEducation/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Study and development of the teaching and learning of mathematics, including the aims, practices, resources and institutions through which mathematical learning is organized.
 15. **[Mechanics (mathematical sciences)](Mechanics/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of motion, equilibrium, forces and mechanical constraints within explicitly stated modeling regimes for particles, bodies and continua.
-16. **[Number theory](NumberTheory/index.md)** — 15 immediate children · 577 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integers, rational numbers and related arithmetic structures, including divisibility, arithmetic equations, primes and arithmetic in field extensions.
+16. **[Number theory](NumberTheory/index.md)** — 16 immediate children · 577 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integers, rational numbers and related arithmetic structures, including divisibility, arithmetic equations, primes and arithmetic in field extensions.
    Unranked previews: [Least natural prime](NumberTheory/Primes/least-prime.md); [Least-prime uniqueness by antisymmetry](NumberTheory/Primes/least-prime-uniqueness.md).
 17. **[Numerical analysis](NumericalAnalysis/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of numerical procedures for solving mathematical problems, including approximation, error, convergence and the cost of computation.
 18. **[Order theory](CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/index.md)** — 2 immediate children · 2 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. Relations expressing order and their associated structures, including partially ordered sets, lattices and order-preserving maps.
@@ -140,7 +140,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
    Unranked previews: [Certificates for incrementally decoded batches](FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/batch-certificate.md); [Composition of incremental dictionary decoding](FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/incremental-composition.md).
 6. **[Probability And Mathematical Statistics](ProbabilityAndMathematicalStatistics/index.md)** — 6 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 
-Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 observed taxonomy/article/catalog inputs; 296 differ from that commit. Observation SHA-256: `7a3829e1c148a68b58a9d7c91d2815c6fd71d1619fa58cde5c839a064ad17d30`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
