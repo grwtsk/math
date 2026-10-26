@@ -1665,6 +1665,85 @@ theorem normalizedTargetKernel_step_of_unit_mass
   simp only [if_pos target_mem]
   rw [← Finset.sum_mul, initial_mass_one, one_mul]
 
+/-- Normalize a *source-dependent* finite nonnegative edge-weight
+function, requiring positive row mass for every in-scope source.
+Unlike `normalizedTargetKernel`, the resulting transition kernel
+need not have identical rows. It does not certify graph edges unless
+a separate support theorem is supplied. -/
+noncomputable def normalizedEdgeKernel
+    (vertices : Finset State) (edgeWeight : State → State → ℝ)
+    (edge_nonneg :
+      ∀ x ∈ vertices, ∀ y ∈ vertices, 0 ≤ edgeWeight x y)
+    (row_pos :
+      ∀ x ∈ vertices, 0 < ∑ y ∈ vertices, edgeWeight x y) :
+    FiniteSieveMarkovKernel State where
+  scope := vertices
+  transition := fun x y =>
+    if y ∈ vertices then
+      edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+    else 0
+  transition_nonneg := by
+    intro x hx y hy
+    change 0 ≤ (if y ∈ vertices then
+      edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+      else 0)
+    rw [if_pos hy]
+    exact div_nonneg (edge_nonneg x hx y hy) (row_pos x hx).le
+  row_sum_one := by
+    intro x hx
+    change (∑ y ∈ vertices,
+      if y ∈ vertices then
+        edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+      else 0) = 1
+    calc
+      (∑ y ∈ vertices,
+        if y ∈ vertices then
+          edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+        else 0) =
+          ∑ y ∈ vertices,
+            edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z) := by
+        apply Finset.sum_congr rfl
+        intro y hy
+        simp only [if_pos hy]
+      _ = 1 := by
+        simp_rw [div_eq_mul_inv]
+        rw [← Finset.sum_mul]
+        exact mul_inv_cancel₀ (ne_of_gt (row_pos x hx))
+
+/-- A normalized edge transition is strictly positive on in-scope
+endpoints exactly when its original edge weight is positive. The
+denominator positivity is an explicit construction premise. -/
+theorem normalizedEdgeKernel_transition_pos_iff
+    (vertices : Finset State) (edgeWeight : State → State → ℝ)
+    (edge_nonneg :
+      ∀ x ∈ vertices, ∀ y ∈ vertices, 0 ≤ edgeWeight x y)
+    (row_pos :
+      ∀ x ∈ vertices, 0 < ∑ y ∈ vertices, edgeWeight x y)
+    (x y : State) (hx : x ∈ vertices) (hy : y ∈ vertices) :
+    0 < (normalizedEdgeKernel vertices edgeWeight
+      edge_nonneg row_pos).transition x y ↔ 0 < edgeWeight x y := by
+  change 0 < (if y ∈ vertices then
+    edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+    else 0) ↔ 0 < edgeWeight x y
+  rw [if_pos hy]
+  exact div_pos_iff_of_pos_right (row_pos x hx)
+
+/-- Normalized edge kernels have no transitions into states outside
+the prescribed finite scope. -/
+theorem normalizedEdgeKernel_transition_zero_of_not_mem
+    (vertices : Finset State) (edgeWeight : State → State → ℝ)
+    (edge_nonneg :
+      ∀ x ∈ vertices, ∀ y ∈ vertices, 0 ≤ edgeWeight x y)
+    (row_pos :
+      ∀ x ∈ vertices, 0 < ∑ y ∈ vertices, edgeWeight x y)
+    (x y : State) (hy : y ∉ vertices) :
+    (normalizedEdgeKernel vertices edgeWeight
+      edge_nonneg row_pos).transition x y = 0 := by
+  change (if y ∈ vertices then
+    edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+    else 0) = 0
+  simp only [if_neg hy]
+
 end FiniteSieveMarkovKernel
 
 /-- A finite Markov type mass agrees with the existing certified
@@ -2030,6 +2109,1006 @@ theorem resetKernel_positivePath_to_certifiedPath
         ((resetKernel_transition_pos_iff_coprime
           q N hN x y hy).mp positive))
     depth source target target_mem path
+
+/-- Provenance and scope of an arithmetic support edge in the finite
+reset-sieve graph. This is a source-review record, not a kernel
+verification receipt or an analytic graph Laplacian claim. -/
+private def arithmeticSupportRecord (q N source target : ℕ) :
+    RelationshipRecord source target where
+  relationship := .conditionalInterface
+  mathematicalMeaning :=
+    "Exact finite radical-coprime reset-kernel transition support"
+  provenance :=
+    [{ kind := .leanDeclaration
+       identifier :=
+         "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.positiveSieveEdge"
+       locator := "GRWTSK/GraphSandwichDiffusion.lean"
+       repository := some "grwtsk/math"
+       commit := none
+       path := some "GRWTSK/GraphSandwichDiffusion.lean"
+       blob := none }]
+  assumptions :=
+    ["finite arithmetic scope Finset.Icc 1 N",
+     "strictly positive target transition iff target is coprime to q",
+     "this inventory certifies arithmetic transition support only"]
+  obligations :=
+    ["compile the exact pinned source",
+     "do not infer spectral mixing or analytic number-theoretic type completeness"]
+  verification := inspectedNotRun
+
+/-- A concrete finite source inventory with certified edges exactly
+the positive transitions of the arithmetic reset kernel. The semantic
+relation records the numerical kernel positivity, not analytic heat
+flow or an unconditional prime-type distribution. Neither the seed
+candidate inventory nor unrelated mathematical conjecture edges are
+promoted by this definition. -/
+noncomputable def certifiedArithmeticInventory
+    (q N : ℕ) (hN : 1 ≤ N) : SourceSearchInventory ℕ where
+  vertices := scope N
+  certified := positiveSieveEdge q N
+  candidate := positiveSieveEdge q N
+  admissible := positiveSieveEdge q N
+  semantic := fun x y =>
+    x ∈ scope N ∧ y ∈ scope N ∧
+      0 < (resetKernel q N hN).transition x y
+  certified_le_candidate := by
+    intro x y h
+    exact h
+  candidate_le_admissible := by
+    intro x y h
+    exact h
+  admissible_scoped := by
+    intro x y h
+    exact ⟨h.1, h.2.1⟩
+  certified_sound := by
+    intro x y h
+    exact ⟨h.1, h.2.1,
+      (resetKernel_transition_pos_iff_coprime
+        q N hN x y h.2.1).mpr h.2.2⟩
+  candidateRecord := by
+    intro x y h
+    exact arithmeticSupportRecord q N x y
+  admissibleRecord := by
+    intro x y h
+    exact arithmeticSupportRecord q N x y
+
+/-- For in-scope endpoints, the certified arithmetic relation agrees
+exactly with strict positivity of the supplied finite transition
+kernel. This is not a statement about the existing unrelated seed
+inventory's empty certified relation. -/
+theorem certifiedArithmeticInventory_edge_iff_positive
+    (q N : ℕ) (hN : 1 ≤ N) (x y : ℕ)
+    (hx : x ∈ scope N) (hy : y ∈ scope N) :
+    (certifiedArithmeticInventory q N hN).certified x y ↔
+      0 < (resetKernel q N hN).transition x y := by
+  constructor
+  · intro edge
+    exact (resetKernel_transition_pos_iff_coprime
+      q N hN x y hy).mpr edge.2.2
+  · intro positive
+    exact ⟨hx, hy, (resetKernel_transition_pos_iff_coprime
+      q N hN x y hy).mp positive⟩
+
+/-- Starting from integer 1, after one certified arithmetic graph
+step the reachable vertices are exactly the in-scope coprime
+survivors. Every such target has a direct positive kernel edge
+from 1, while the zero-length vertex 1 also survives. -/
+theorem certifiedArithmeticInventory_search_one_eq_survivors
+    (q N : ℕ) (hN : 1 ≤ N) :
+    (certifiedArithmeticInventory q N hN).certifiedSearch 1 1 =
+      (scope N).filter (fun n => Nat.Coprime n q) := by
+  classical
+  ext n
+  have hOne : (1 : ℕ) ∈ scope N := by
+    change (1 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+  change n ∈ reachableWithin (scope N) (positiveSieveEdge q N) 1 1 ↔
+    n ∈ (scope N).filter (fun n => Nat.Coprime n q)
+  constructor
+  · intro h
+    rcases (mem_reachableWithin_succ
+      (scope N) (positiveSieveEdge q N) 1 n 0).mp h with
+      hzero | ⟨hn, middle, hmiddle, hedge⟩
+    · obtain ⟨_, rfl⟩ :=
+        (mem_reachableWithin_zero
+          (scope N) (positiveSieveEdge q N) 1 n).mp hzero
+      exact Finset.mem_filter.mpr ⟨hOne, by simp⟩
+    · exact Finset.mem_filter.mpr ⟨hn, hedge.2.2⟩
+  · intro h
+    obtain ⟨hn, hc⟩ := Finset.mem_filter.mp h
+    apply (mem_reachableWithin_succ
+      (scope N) (positiveSieveEdge q N) 1 n 0).mpr
+    exact Or.inr ⟨hn, 1,
+      (mem_reachableWithin_zero
+        (scope N) (positiveSieveEdge q N) 1 1).mpr ⟨hOne, rfl⟩,
+      ⟨hOne, hn, hc⟩⟩
+
+/-- At depth one, certified arithmetic sieve type hits are precisely
+types with an in-scope coprime witness of positive radical weight.
+This exhibits genuine finite arithmetic *coverage*, not a theorem
+that every imaginable prime-multiplicity type occurs. -/
+theorem certifiedArithmeticInventory_oneStep_hit_iff
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) :
+    (certifiedArithmeticInventory q N hN).sieveTypeHit
+      1 typeOf (fun _ n => radicalCoprimeWeight q n) 1 targetType ↔
+      ∃ n ∈ scope N, typeOf n = targetType ∧ Nat.Coprime n q := by
+  unfold SourceSearchInventory.sieveTypeHit
+  rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN]
+  constructor
+  · rintro ⟨n, hn, ht, hw⟩
+    obtain ⟨hscope, hc⟩ := Finset.mem_filter.mp hn
+    exact ⟨n, hscope, ht, hc⟩
+  · rintro ⟨n, hscope, ht, hc⟩
+    exact ⟨n, Finset.mem_filter.mpr ⟨hscope, hc⟩, ht,
+      (radicalCoprimeWeight_pos_iff q n).mpr hc⟩
+
+/-- A positive reset-kernel path is certified by the concrete
+arithmetic inventory, with no extra edge-certificate parameter.
+The semantic content remains strict positivity of the finite
+arithmetic transition, not an external mathematical conjecture. -/
+theorem certifiedArithmeticInventory_positivePath
+    (q N : ℕ) (hN : 1 ≤ N)
+    (depth : ℕ) (source target : ℕ)
+    (target_mem : target ∈ scope N)
+    (path : (resetKernel q N hN).positivePath depth source target) :
+    BoundedPath (certifiedArithmeticInventory q N hN).certified
+      depth source target := by
+  apply resetKernel_positivePath_to_certifiedPath
+    q N hN (certifiedArithmeticInventory q N hN)
+    (by
+      intro x hx y hy hc
+      exact ⟨hx, hy, hc⟩)
+    depth source target target_mem path
+
+/-! ## Source-dependent diagonal-bias kernel on certified arithmetic edges
+
+For an in-scope source x, surviving target y receives a weight
+`(if x=y then 2 else 1) * radicalCoprimeWeight q y`.
+The source-dependent boost changes transition probabilities without
+introducing new positive edges or providing an analytic heat operator.
+The row normalizer is positive because the target 1 survives.
+-/
+
+/-- Raw positive-edge weight with a source-dependent diagonal boost.
+Only the target radical and coprimality influence whether it vanishes. -/
+noncomputable def diagonalEdgeWeight (q source target : ℕ) : ℝ :=
+  (if source = target then (2 : ℝ) else 1) *
+    radicalCoprimeWeight q target
+
+private theorem diagonalBoost_pos (source target : ℕ) :
+    0 < (if source = target then (2 : ℝ) else 1) := by
+  split_ifs <;> norm_num
+
+theorem diagonalEdgeWeight_nonneg (q source target : ℕ) :
+    0 ≤ diagonalEdgeWeight q source target := by
+  unfold diagonalEdgeWeight
+  exact mul_nonneg (diagonalBoost_pos source target).le
+    (radicalCoprimeWeight_nonneg q target)
+
+/-- Diagonal bias preserves the exact positive-edge support of the
+arithmetic coprimality sieve, while modifying the row weights. -/
+theorem diagonalEdgeWeight_pos_iff_coprime (q source target : ℕ) :
+    0 < diagonalEdgeWeight q source target ↔
+      Nat.Coprime target q := by
+  unfold diagonalEdgeWeight
+  exact (mul_pos_iff_of_pos_left
+    (diagonalBoost_pos source target)).trans
+      (radicalCoprimeWeight_pos_iff q target)
+
+/-- Every in-scope source has positive outgoing raw edge mass. The
+common target 1 is sufficient regardless of the source and modulus. -/
+theorem diagonalRowMass_pos
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    0 < ∑ target ∈ scope N, diagonalEdgeWeight q source target := by
+  apply Finset.sum_pos'
+  · intro target ht
+    exact diagonalEdgeWeight_nonneg q source target
+  · have hOne : (1 : ℕ) ∈ scope N := by
+      change (1 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+    refine ⟨1, hOne, ?_⟩
+    exact (diagonalEdgeWeight_pos_iff_coprime q source 1).mpr (by simp)
+
+/-- A genuinely source-dependent finite Markov kernel, normalized
+separately at every source, with the same *positive support* as the
+previous reset kernel. It remains a dense directed arithmetic sieve,
+not a graph Laplacian or a prime-distribution theorem. -/
+noncomputable def diagonalKernel (q N : ℕ) (hN : 1 ≤ N) :
+    FiniteSieveMarkovKernel ℕ :=
+  FiniteSieveMarkovKernel.normalizedEdgeKernel
+    (scope N) (diagonalEdgeWeight q)
+    (by
+      intro source hs target ht
+      exact diagonalEdgeWeight_nonneg q source target)
+    (by
+      intro source hs
+      exact diagonalRowMass_pos q N hN source)
+
+/-- An in-scope target receives a positive diagonal-bias transition
+from any in-scope source iff it survives coprimality with q. -/
+theorem diagonalKernel_transition_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (hs : source ∈ scope N) (ht : target ∈ scope N) :
+    0 < (diagonalKernel q N hN).transition source target ↔
+      Nat.Coprime target q := by
+  unfold diagonalKernel
+  exact (FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_pos_iff
+    (scope N) (diagonalEdgeWeight q)
+    (by
+      intro x hx y hy
+      exact diagonalEdgeWeight_nonneg q x y)
+    (by
+      intro x hx
+      exact diagonalRowMass_pos q N hN x)
+    source target hs ht).trans
+      (diagonalEdgeWeight_pos_iff_coprime q source target)
+
+/-- Every positive transition of the new source-dependent kernel is
+exactly a certified arithmetic sieve edge when both endpoints are in
+scope. Candidate-only or unrelated semantic edges are not promoted. -/
+theorem diagonalKernel_edge_iff_certified
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (hs : source ∈ scope N) (ht : target ∈ scope N) :
+    0 < (diagonalKernel q N hN).transition source target ↔
+      (certifiedArithmeticInventory q N hN).certified source target := by
+  rw [diagonalKernel_transition_pos_iff_coprime q N hN source target hs ht]
+  change Nat.Coprime target q ↔ positiveSieveEdge q N source target
+  simp [positiveSieveEdge, hs, ht]
+
+/-- Positive paths of the source-dependent arithmetic kernel are
+certified by the *existing concrete* arithmetic inventory, not by the
+unrelated paper-to-concept seed graph. -/
+theorem diagonalKernel_positivePath_certified
+    (q N : ℕ) (hN : 1 ≤ N)
+    (depth source target : ℕ)
+    (target_mem : target ∈ scope N)
+    (path : (diagonalKernel q N hN).positivePath depth source target) :
+    BoundedPath (certifiedArithmeticInventory q N hN).certified
+      depth source target := by
+  apply (diagonalKernel q N hN).positivePath_to_certifiedPath
+    (certifiedArithmeticInventory q N hN)
+    (by
+      intro x hx y hy positive
+      exact (diagonalKernel_edge_iff_certified
+        q N hN x y hx hy).mp positive)
+    depth source target target_mem path
+
+/-- After one source-dependent transition, any nonnegative initial
+distribution with at least one positive in-scope weight assigns
+positive mass exactly to the in-scope coprime targets. This is an
+exact *finite* support assertion, not a long-time mixing estimate. -/
+theorem diagonalKernel_step_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_positive : ∃ x ∈ scope N, 0 < initial x)
+    (target : ℕ) (target_mem : target ∈ scope N) :
+    0 < (diagonalKernel q N hN).step initial target ↔
+      Nat.Coprime target q := by
+  constructor
+  · intro output_pos
+    obtain ⟨x, hx, hw, hp⟩ :=
+      ((diagonalKernel q N hN).step_pos_iff
+        initial initial_nonneg target target_mem).mp output_pos
+    exact (diagonalKernel_transition_pos_iff_coprime
+      q N hN x target hx target_mem).mp hp
+  · intro survives
+    obtain ⟨x, hx, hw⟩ := initial_positive
+    exact ((diagonalKernel q N hN).step_pos_iff
+      initial initial_nonneg target target_mem).mpr
+      ⟨x, hx, hw,
+        (diagonalKernel_transition_pos_iff_coprime
+          q N hN x target hx target_mem).mpr survives⟩
+
+/-- The one-step certified type hits of the diagonal-biased finite
+sieve are *exactly* those with a surviving coprime representative.
+Initial sieve weights need not be proportional to the stationary
+radical target weights. The positive initial mass premise is explicit. -/
+theorem diagonalKernel_certified_oneStep_hit_iff
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_positive : ∃ x ∈ scope N, 0 < initial x)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) :
+    (certifiedArithmeticInventory q N hN).sieveTypeHit
+      1 typeOf
+      (fun _ target => (diagonalKernel q N hN).step initial target)
+      1 targetType ↔
+      ∃ target ∈ scope N,
+        typeOf target = targetType ∧ Nat.Coprime target q := by
+  unfold SourceSearchInventory.sieveTypeHit
+  rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN]
+  constructor
+  · rintro ⟨target, member, sameType, positive⟩
+    obtain ⟨target_mem, coprime⟩ := Finset.mem_filter.mp member
+    exact ⟨target, target_mem, sameType, coprime⟩
+  · rintro ⟨target, target_mem, sameType, coprime⟩
+    exact ⟨target, Finset.mem_filter.mpr ⟨target_mem, coprime⟩,
+      sameType,
+      (diagonalKernel_step_pos_iff_coprime q N hN
+        initial initial_nonneg initial_positive target target_mem).mpr
+          coprime⟩
+
+/-- One-step finite type completeness of the source-dependent
+arithmetic kernel is equivalent to the existence of a coprime
+in-scope representative for **each declared type**. This does not
+prove that every number-theoretic type exists or occurs asymptotically. -/
+theorem diagonalKernel_certified_oneStep_complete_iff
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_positive : ∃ x ∈ scope N, 0 < initial x)
+    (typeOf : ℕ → TypeLabel) :
+    (certifiedArithmeticInventory q N hN).sieveTypeCompleteAt
+      1 typeOf
+      (fun _ target => (diagonalKernel q N hN).step initial target)
+      1 ↔
+      ∀ targetType : TypeLabel, ∃ target ∈ scope N,
+        typeOf target = targetType ∧ Nat.Coprime target q := by
+  unfold SourceSearchInventory.sieveTypeCompleteAt
+  constructor
+  · intro complete targetType
+    exact (diagonalKernel_certified_oneStep_hit_iff q N hN
+      initial initial_nonneg initial_positive typeOf targetType).mp
+        (complete targetType)
+  · intro witnesses targetType
+    exact (diagonalKernel_certified_oneStep_hit_iff q N hN
+      initial initial_nonneg initial_positive typeOf targetType).mpr
+        (witnesses targetType)
+
+/-! ## Explicit polynomial majorants for the finite arithmetic sieve
+
+These are elementary bounds: radical n ≤ n for n ≠ 0 and the
+finite scope has exactly N vertices when N ≥ 1. The estimates do not
+imply a positive limiting type density or analytic prime cancellation.
+-/
+
+/-- Every in-scope radical-coprimality weight is at most the cutoff.
+The positive scope hypothesis is essential for radical n ≤ n. -/
+theorem radicalCoprimeWeight_le_cutoff
+    (q N n : ℕ) (hn : n ∈ scope N) :
+    radicalCoprimeWeight q n ≤ (N : ℝ) := by
+  have hmem : 1 ≤ n ∧ n ≤ N := Finset.mem_Icc.mp hn
+  by_cases hc : Nat.Coprime n q
+  · have hn0 : n ≠ 0 := by omega
+    have hrad : Nat.radical n ≤ n :=
+      (Nat.radical_le_self_iff).mpr hn0
+    have hcast : (Nat.radical n : ℝ) ≤ (N : ℝ) :=
+      Nat.cast_le.mpr (hrad.trans hmem.2)
+    simpa [radicalCoprimeWeight, hc] using hcast
+  · simp [radicalCoprimeWeight, hc]
+
+/-- The finite positive-integer scope has exactly N vertices when
+N ≥ 1, avoiding any hidden asymptotic cardinality estimate. -/
+theorem scope_card (N : ℕ) (hN : 1 ≤ N) :
+    (scope N).card = N := by
+  change (Finset.Icc 1 N).card = N
+  rw [Nat.card_Icc]
+  omega
+
+/-- The sieve normalizer is bounded explicitly by N squared.
+No prime-counting or radical-density estimate is used. -/
+theorem totalWeight_le_cutoff_sq (q N : ℕ) (hN : 1 ≤ N) :
+    totalWeight q N ≤ (N : ℝ) * (N : ℝ) := by
+  have hc := scope_card N hN
+  calc
+    totalWeight q N =
+        ∑ n ∈ scope N, radicalCoprimeWeight q n := rfl
+    _ ≤ ∑ _n ∈ scope N, (N : ℝ) :=
+      Finset.sum_le_sum
+        (fun n hn => radicalCoprimeWeight_le_cutoff q N n hn)
+    _ = ((scope N).card : ℝ) * (N : ℝ) := by simp
+    _ = (N : ℝ) * (N : ℝ) := by rw [hc]
+
+/-- The diagonal-biased raw outgoing mass of any arithmetic source
+is bounded by twice the sum of unboosted sieve target weights. -/
+theorem diagonalEdgeWeight_le_twice_targetWeight
+    (q source target : ℕ) :
+    diagonalEdgeWeight q source target ≤
+      (2 : ℝ) * radicalCoprimeWeight q target := by
+  unfold diagonalEdgeWeight
+  split_ifs <;> nlinarith [radicalCoprimeWeight_nonneg q target]
+
+theorem diagonalRowMass_le_twice_total
+    (q N source : ℕ) :
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+      (2 : ℝ) * totalWeight q N := by
+  calc
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+        ∑ target ∈ scope N,
+          (2 : ℝ) * radicalCoprimeWeight q target :=
+      Finset.sum_le_sum
+        (fun target ht =>
+          diagonalEdgeWeight_le_twice_targetWeight q source target)
+    _ = (2 : ℝ) * totalWeight q N := by
+      simp only [totalWeight, Finset.mul_sum]
+
+/-- The exact diagonal outgoing row normalizer is at most
+2*N*N for every positive integer cutoff. This quantitative
+majorant is purely elementary and independent of character sums. -/
+theorem diagonalRowMass_le_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+      (2 : ℝ) * (N : ℝ) * (N : ℝ) := by
+  calc
+    (∑ target ∈ scope N, diagonalEdgeWeight q source target) ≤
+        (2 : ℝ) * totalWeight q N :=
+      diagonalRowMass_le_twice_total q N source
+    _ ≤ (2 : ℝ) * ((N : ℝ) * (N : ℝ)) :=
+      mul_le_mul_of_nonneg_left
+        (totalWeight_le_cutoff_sq q N hN) (by norm_num)
+    _ = (2 : ℝ) * (N : ℝ) * (N : ℝ) := by ring
+
+/-- Every coprime target carries at least one unit of unnormalized
+arithmetic radical weight, including modulus 0 or 1. -/
+theorem radicalCoprimeWeight_one_le_of_coprime
+    (q target : ℕ) (hc : Nat.Coprime target q) :
+    (1 : ℝ) ≤ radicalCoprimeWeight q target := by
+  have hrad : 1 ≤ Nat.radical target := Nat.radical_pos target
+  have hcast : (1 : ℝ) ≤ (Nat.radical target : ℝ) := by
+    exact_mod_cast hrad
+  simpa [radicalCoprimeWeight, hc] using hcast
+
+/-- The diagonal boost is never smaller than one, so it cannot
+suppress a positive arithmetic target weight. -/
+theorem radicalCoprimeWeight_le_diagonalEdgeWeight
+    (q source target : ℕ) :
+    radicalCoprimeWeight q target ≤
+      diagonalEdgeWeight q source target := by
+  unfold diagonalEdgeWeight
+  split_ifs <;> nlinarith [radicalCoprimeWeight_nonneg q target]
+
+/-- An explicit polynomial transition minorization. For N ≥ 1
+and each coprime target within the cutoff, every in-scope source
+has probability at least 1/(2*N²) of transitioning to that target.
+The bound depends on N and therefore proves no positive limiting
+density as N increases. -/
+theorem diagonalKernel_transition_ge_inv_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N)
+    (target_mem : target ∈ scope N)
+    (hc : Nat.Coprime target q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).transition source target := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hBpos : (0 : ℝ) < (2 : ℝ) * (N : ℝ) * (N : ℝ) := by
+    positivity
+  have hRpos :
+      0 < ∑ z ∈ scope N, diagonalEdgeWeight q source z :=
+    diagonalRowMass_pos q N hN source
+  have hRle :
+      (∑ z ∈ scope N, diagonalEdgeWeight q source z) ≤
+        (2 : ℝ) * (N : ℝ) * (N : ℝ) :=
+    diagonalRowMass_le_two_cutoff_sq q N hN source
+  have hweight : (1 : ℝ) ≤ diagonalEdgeWeight q source target :=
+    (radicalCoprimeWeight_one_le_of_coprime q target hc).trans
+      (radicalCoprimeWeight_le_diagonalEdgeWeight q source target)
+  change ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+    (if target ∈ scope N then
+      diagonalEdgeWeight q source target /
+        (∑ z ∈ scope N, diagonalEdgeWeight q source z)
+    else 0)
+  rw [if_pos target_mem]
+  have hcomparison :
+      (1 : ℝ) / ((2 : ℝ) * (N : ℝ) * (N : ℝ)) ≤
+        diagonalEdgeWeight q source target /
+          (∑ z ∈ scope N, diagonalEdgeWeight q source z) := by
+    apply (div_le_div_iff₀ hBpos hRpos).mpr
+    simp only [one_mul]
+    exact hRle.trans (by
+      simpa only [one_mul] using
+        mul_le_mul_of_nonneg_right hweight hBpos.le)
+  simpa only [one_div] using hcomparison
+
+/-- From any nonnegative in-scope initial distribution of total
+mass one, one step gives at least 1/(2*N²) mass to each coprime
+target. This is a finite polynomial minorization, not an analytic
+prime-distribution theorem. -/
+theorem diagonalKernel_step_ge_inv_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ source ∈ scope N, 0 ≤ initial source)
+    (initial_mass_one : (∑ source ∈ scope N, initial source) = 1)
+    (target : ℕ) (target_mem : target ∈ scope N)
+    (hc : Nat.Coprime target q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).step initial target := by
+  change ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+    ∑ source ∈ scope N,
+      initial source * (diagonalKernel q N hN).transition source target
+  calc
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ =
+        (∑ source ∈ scope N, initial source) *
+          ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ := by
+      rw [initial_mass_one, one_mul]
+    _ = ∑ source ∈ scope N,
+          initial source * ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ := by
+      rw [Finset.sum_mul]
+    _ ≤ ∑ source ∈ scope N,
+          initial source *
+            (diagonalKernel q N hN).transition source target := by
+      apply Finset.sum_le_sum
+      intro source source_mem
+      exact mul_le_mul_of_nonneg_left
+        (diagonalKernel_transition_ge_inv_two_cutoff_sq
+          q N hN source target source_mem target_mem hc)
+        (initial_nonneg source source_mem)
+
+/-- Every positive number of iterations retains the same target
+minorization, using the exact finite total-mass and positivity laws.
+The rate is uniform in the step count, but decays with cutoff N. -/
+theorem diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ source ∈ scope N, 0 ≤ initial source)
+    (initial_mass_one : (∑ source ∈ scope N, initial source) = 1)
+    (depth : ℕ) (target : ℕ)
+    (target_mem : target ∈ scope N) (hc : Nat.Coprime target q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).evolve initial (depth + 1) target := by
+  have hnonneg :
+      ∀ source ∈ scope N,
+        0 ≤ (diagonalKernel q N hN).evolve initial depth source :=
+    (diagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg depth
+  have hmass :
+      (∑ source ∈ scope N,
+        (diagonalKernel q N hN).evolve initial depth source) = 1 := by
+    calc
+      (∑ source ∈ scope N,
+        (diagonalKernel q N hN).evolve initial depth source) =
+          ∑ source ∈ scope N, initial source :=
+        (diagonalKernel q N hN).sum_evolve_eq_sum initial depth
+      _ = 1 := initial_mass_one
+  change ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+    (diagonalKernel q N hN).step
+      ((diagonalKernel q N hN).evolve initial depth) target
+  exact diagonalKernel_step_ge_inv_two_cutoff_sq
+    q N hN ((diagonalKernel q N hN).evolve initial depth)
+    hnonneg hmass target target_mem hc
+
+/-- One explicit coprime witness of a target type gives an inverse-
+quadratic lower bound for that type mass at every positive time.
+No assertion about the distribution of prime types is hidden here. -/
+theorem diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ source ∈ scope N, 0 ≤ initial source)
+    (initial_mass_one : (∑ source ∈ scope N, initial source) = 1)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel)
+    (witness depth : ℕ)
+    (witness_mem : witness ∈ scope N)
+    (witness_type : typeOf witness = targetType)
+    (witness_coprime : Nat.Coprime witness q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).typeMass initial typeOf
+        (depth + 1) targetType := by
+  have hpoint :=
+    diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
+      q N hN initial initial_nonneg initial_mass_one
+      depth witness witness_mem witness_coprime
+  have hnonneg :
+      ∀ target ∈ scope N,
+        0 ≤ (diagonalKernel q N hN).evolve initial
+          (depth + 1) target :=
+    (diagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg (depth + 1)
+  have hsum :
+      (diagonalKernel q N hN).evolve initial
+        (depth + 1) witness ≤
+        (diagonalKernel q N hN).typeMass
+          initial typeOf (depth + 1) targetType := by
+    unfold FiniteSieveMarkovKernel.typeMass
+    apply Finset.single_le_sum
+    · intro target ht
+      exact hnonneg target (Finset.mem_filter.mp ht).1
+    · exact Finset.mem_filter.mpr ⟨witness_mem, witness_type⟩
+  exact hpoint.trans hsum
+
+/-! ## Buffered radical sieve: a nonvanishing floor without type leakage
+
+The original weight radicalCoprimeWeight remains unchanged.  This
+distinct weight model multiplies the indicator of coprimality by the
+type-independent floor N plus the arithmetic radical. On the positive
+integer cutoff, each survivor has weight between N and 2*N.
+
+The floor is chosen without inspecting a target type. Its purpose is
+to translate *counts of surviving arithmetic types* into lower bounds
+on normalized mass. Such counts must still be proved separately.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- Type-independent floor plus arithmetic radical on the coprime
+sieve. This is a distinct weighting, not an asymptotic theorem about
+the unbuffered radical weight. -/
+noncomputable def bufferedRadicalWeight (q N n : ℕ) : ℝ :=
+  if Nat.Coprime n q then (N : ℝ) + (Nat.radical n : ℝ) else 0
+
+theorem bufferedRadicalWeight_nonneg (q N n : ℕ) :
+    0 ≤ bufferedRadicalWeight q N n := by
+  unfold bufferedRadicalWeight
+  split_ifs <;> positivity
+
+/-- Every surviving target in the positive cutoff receives at least
+N units of raw weight. -/
+theorem bufferedRadicalWeight_ge_cutoff_of_coprime
+    (q N n : ℕ) (hc : Nat.Coprime n q) :
+    (N : ℝ) ≤ bufferedRadicalWeight q N n := by
+  simp only [bufferedRadicalWeight, if_pos hc]
+  exact le_add_of_nonneg_right (Nat.cast_nonneg _)
+
+/-- The same raw weight is at most twice the cutoff for all states
+within the inclusive positive integer range. -/
+theorem bufferedRadicalWeight_le_two_cutoff
+    (q N n : ℕ) (hn : n ∈ scope N) :
+    bufferedRadicalWeight q N n ≤ (2 : ℝ) * (N : ℝ) := by
+  by_cases hc : Nat.Coprime n q
+  · have hrad : (Nat.radical n : ℝ) ≤ (N : ℝ) := by
+      simpa [radicalCoprimeWeight, hc] using
+        radicalCoprimeWeight_le_cutoff q N n hn
+    simp only [bufferedRadicalWeight, if_pos hc]
+    linarith
+  · simp [bufferedRadicalWeight, hc]
+
+/-- The original radical-only information collision survives the
+type-independent cutoff floor: positive powers retain equal weights
+for the same cutoff and modulus. -/
+theorem bufferedRadicalWeight_pow (q N n k : ℕ) (hk : k ≠ 0) :
+    bufferedRadicalWeight q N (n ^ k) =
+      bufferedRadicalWeight q N n := by
+  have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
+    Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
+  have hrad : Nat.radical (n ^ k) = Nat.radical n :=
+    UniqueFactorizationMonoid.radical_pow n hk
+  by_cases hc : Nat.Coprime n q
+  · simp [bufferedRadicalWeight, hc, hcop.mpr hc, hrad]
+  · have hpow : ¬ Nat.Coprime (n ^ k) q :=
+      fun hp => hc (hcop.mp hp)
+    simp [bufferedRadicalWeight, hc, hpow]
+
+/-- Source-dependent diagonal preference, with target weight bounded
+between N and 2*N on surviving states. -/
+noncomputable def bufferedDiagonalEdgeWeight
+    (q N source target : ℕ) : ℝ :=
+  (if source = target then (2 : ℝ) else 1) *
+    bufferedRadicalWeight q N target
+
+theorem bufferedDiagonalEdgeWeight_nonneg
+    (q N source target : ℕ) :
+    0 ≤ bufferedDiagonalEdgeWeight q N source target := by
+  unfold bufferedDiagonalEdgeWeight
+  exact mul_nonneg (diagonalBoost_pos source target).le
+    (bufferedRadicalWeight_nonneg q N target)
+
+/-- A diagonal boost cannot diminish raw target sieve weight. -/
+theorem bufferedRadicalWeight_le_edge
+    (q N source target : ℕ) :
+    bufferedRadicalWeight q N target ≤
+      bufferedDiagonalEdgeWeight q N source target := by
+  unfold bufferedDiagonalEdgeWeight
+  split_ifs <;> nlinarith [bufferedRadicalWeight_nonneg q N target]
+
+/-- A single source-dependent raw transition cannot exceed 4*N on
+the finite positive integer scope. -/
+theorem bufferedDiagonalEdgeWeight_le_four_cutoff
+    (q N source target : ℕ) (ht : target ∈ scope N) :
+    bufferedDiagonalEdgeWeight q N source target ≤
+      (4 : ℝ) * (N : ℝ) := by
+  unfold bufferedDiagonalEdgeWeight
+  have hweight := bufferedRadicalWeight_le_two_cutoff q N target ht
+  split_ifs <;> nlinarith
+
+/-- Every row of the buffered edge weight has positive total
+weight when N≥1, since target 1 survives every modulus. -/
+theorem bufferedDiagonalRowMass_pos
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    0 < ∑ target ∈ scope N,
+      bufferedDiagonalEdgeWeight q N source target := by
+  apply Finset.sum_pos'
+  · intro target ht
+    exact bufferedDiagonalEdgeWeight_nonneg q N source target
+  · have hOne : (1 : ℕ) ∈ scope N := by
+      change (1 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+    have hc : Nat.Coprime 1 q := by simp
+    have hNpos : (0 : ℝ) < (N : ℝ) := by
+      exact_mod_cast (show 0 < N by omega)
+    have hraw : 0 < bufferedRadicalWeight q N 1 :=
+      hNpos.trans_le
+        (bufferedRadicalWeight_ge_cutoff_of_coprime q N 1 hc)
+    refine ⟨1, hOne, ?_⟩
+    unfold bufferedDiagonalEdgeWeight
+    exact mul_pos (diagonalBoost_pos source 1) hraw
+
+/-- The buffered raw outgoing mass is at most 4*N², uniformly over
+its in-scope source. No analytic prime-counting estimate enters. -/
+theorem bufferedDiagonalRowMass_le_four_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    (∑ target ∈ scope N,
+      bufferedDiagonalEdgeWeight q N source target) ≤
+        (4 : ℝ) * (N : ℝ) * (N : ℝ) := by
+  calc
+    (∑ target ∈ scope N,
+      bufferedDiagonalEdgeWeight q N source target) ≤
+        ∑ _target ∈ scope N, (4 : ℝ) * (N : ℝ) :=
+      Finset.sum_le_sum (fun target ht =>
+        bufferedDiagonalEdgeWeight_le_four_cutoff q N source target ht)
+    _ = ((scope N).card : ℝ) * ((4 : ℝ) * (N : ℝ)) := by
+      simp
+    _ = (4 : ℝ) * (N : ℝ) * (N : ℝ) := by
+      rw [scope_card N hN]
+      ring
+
+/-- A finite row-stochastic, source-dependent sieve kernel whose raw
+coprime targets carry a cutoff-dependent positive floor. This model
+is **distinct** from the preceding pure-radical diagonalKernel. -/
+noncomputable def bufferedDiagonalKernel
+    (q N : ℕ) (hN : 1 ≤ N) : FiniteSieveMarkovKernel ℕ :=
+  FiniteSieveMarkovKernel.normalizedEdgeKernel
+    (scope N) (bufferedDiagonalEdgeWeight q N)
+    (by
+      intro x hx y hy
+      exact bufferedDiagonalEdgeWeight_nonneg q N x y)
+    (by
+      intro x hx
+      exact bufferedDiagonalRowMass_pos q N hN x)
+
+/-- Explicit positive transition support is still exactly the
+arithmetic coprimality filter on in-scope source and target states. -/
+theorem bufferedDiagonalKernel_transition_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N) (target_mem : target ∈ scope N) :
+    0 < (bufferedDiagonalKernel q N hN).transition source target ↔
+      Nat.Coprime target q := by
+  unfold bufferedDiagonalKernel
+  have hnormalized :=
+    FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_pos_iff
+      (scope N) (bufferedDiagonalEdgeWeight q N)
+      (by
+        intro x hx y hy
+        exact bufferedDiagonalEdgeWeight_nonneg q N x y)
+      (by
+        intro x hx
+        exact bufferedDiagonalRowMass_pos q N hN x)
+      source target source_mem target_mem
+  apply hnormalized.trans
+  unfold bufferedDiagonalEdgeWeight
+  rw [mul_pos_iff_of_pos_left (diagonalBoost_pos source target)]
+  constructor
+  · intro positive
+    by_contra hnot
+    have hz : bufferedRadicalWeight q N target = 0 := by
+      simp [bufferedRadicalWeight, hnot]
+    rw [hz] at positive
+    exact (lt_irrefl (0 : ℝ)) positive
+  · intro hc
+    have hNpos : (0 : ℝ) < (N : ℝ) := by
+      exact_mod_cast (show 0 < N by omega)
+    exact hNpos.trans_le
+      (bufferedRadicalWeight_ge_cutoff_of_coprime q N target hc)
+
+/-- Every strictly positive buffered transition is an edge of the
+existing concrete certified arithmetic inventory. -/
+theorem bufferedDiagonalKernel_edge_iff_certified
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N) (target_mem : target ∈ scope N) :
+    0 < (bufferedDiagonalKernel q N hN).transition source target ↔
+      (certifiedArithmeticInventory q N hN).certified source target := by
+  rw [bufferedDiagonalKernel_transition_pos_iff_coprime
+    q N hN source target source_mem target_mem]
+  change Nat.Coprime target q ↔ positiveSieveEdge q N source target
+  simp [positiveSieveEdge, source_mem, target_mem]
+
+/-- Elementary per-edge minorization for the buffered model:
+each coprime target gets at least 1/(4*N), rather than the
+unbuffered kernel's 1/(2*N²). No density assumption is needed for
+this pointwise lower bound. -/
+theorem bufferedDiagonalKernel_transition_ge_inv_four_cutoff
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N) (target_mem : target ∈ scope N)
+    (hc : Nat.Coprime target q) :
+    ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+      (bufferedDiagonalKernel q N hN).transition source target := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hBpos : (0 : ℝ) < (4 : ℝ) * (N : ℝ) := by positivity
+  have hRpos :
+      0 < ∑ y ∈ scope N, bufferedDiagonalEdgeWeight q N source y :=
+    bufferedDiagonalRowMass_pos q N hN source
+  have hRle :
+      (∑ y ∈ scope N, bufferedDiagonalEdgeWeight q N source y) ≤
+        (4 : ℝ) * (N : ℝ) * (N : ℝ) :=
+    bufferedDiagonalRowMass_le_four_cutoff_sq q N hN source
+  have hweight : (N : ℝ) ≤ bufferedDiagonalEdgeWeight q N source target :=
+    (bufferedRadicalWeight_ge_cutoff_of_coprime q N target hc).trans
+      (bufferedRadicalWeight_le_edge q N source target)
+  change ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+    (if target ∈ scope N then
+      bufferedDiagonalEdgeWeight q N source target /
+        (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z)
+    else 0)
+  rw [if_pos target_mem]
+  have hcomparison :
+      (1 : ℝ) / ((4 : ℝ) * (N : ℝ)) ≤
+        bufferedDiagonalEdgeWeight q N source target /
+          (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z) := by
+    apply (div_le_div_iff₀ hBpos hRpos).mpr
+    calc
+      (1 : ℝ) *
+          (∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z) =
+        ∑ z ∈ scope N, bufferedDiagonalEdgeWeight q N source z := by ring
+      _ ≤ (4 : ℝ) * (N : ℝ) * (N : ℝ) := hRle
+      _ = (N : ℝ) * ((4 : ℝ) * (N : ℝ)) := by ring
+      _ ≤ bufferedDiagonalEdgeWeight q N source target *
+            ((4 : ℝ) * (N : ℝ)) :=
+        mul_le_mul_of_nonneg_right hweight hBpos.le
+  simpa only [one_div] using hcomparison
+
+/-- The inverse-linear floor holds after any positive number of steps
+for *all* nonnegative unit-mass initial distributions, uniformly in
+time at the selected cutoff. -/
+theorem bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_mass_one : (∑ x ∈ scope N, initial x) = 1)
+    (depth : ℕ) (target : ℕ)
+    (target_mem : target ∈ scope N) (hc : Nat.Coprime target q) :
+    ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+      (bufferedDiagonalKernel q N hN).evolve initial (depth + 1) target := by
+  have hnonneg :
+      ∀ x ∈ scope N,
+        0 ≤ (bufferedDiagonalKernel q N hN).evolve initial depth x :=
+    (bufferedDiagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg depth
+  have hmass :
+      (∑ x ∈ scope N,
+        (bufferedDiagonalKernel q N hN).evolve initial depth x) = 1 := by
+    calc
+      (∑ x ∈ scope N,
+        (bufferedDiagonalKernel q N hN).evolve initial depth x) =
+        ∑ x ∈ scope N, initial x :=
+        (bufferedDiagonalKernel q N hN).sum_evolve_eq_sum initial depth
+      _ = 1 := initial_mass_one
+  change ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+    ∑ x ∈ scope N,
+      (bufferedDiagonalKernel q N hN).evolve initial depth x *
+        (bufferedDiagonalKernel q N hN).transition x target
+  calc
+    ((4 : ℝ) * (N : ℝ))⁻¹ =
+        (∑ x ∈ scope N,
+          (bufferedDiagonalKernel q N hN).evolve initial depth x) *
+          ((4 : ℝ) * (N : ℝ))⁻¹ := by
+      rw [hmass, one_mul]
+    _ = ∑ x ∈ scope N,
+          (bufferedDiagonalKernel q N hN).evolve initial depth x *
+            ((4 : ℝ) * (N : ℝ))⁻¹ := by
+      rw [Finset.sum_mul]
+    _ ≤ ∑ x ∈ scope N,
+          (bufferedDiagonalKernel q N hN).evolve initial depth x *
+            (bufferedDiagonalKernel q N hN).transition x target := by
+      apply Finset.sum_le_sum
+      intro x hx
+      exact mul_le_mul_of_nonneg_left
+        (bufferedDiagonalKernel_transition_ge_inv_four_cutoff
+          q N hN x target hx target_mem hc) (hnonneg x hx)
+
+/-- Strict positivity of the baseline is for each fixed positive
+cutoff, but the inverse-linear *single-target* mass decays with N. -/
+theorem bufferedDiagonalKernel_rate_pos
+    (N : ℕ) (hN : 1 ≤ N) :
+    (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  positivity
+
+/-- Surviving representatives of one *specified* type under the
+concrete arithmetic coprimality filter. No type-existence assertion
+is built into this finite set definition. -/
+noncomputable def bufferedTypeSurvivors
+    {TypeLabel : Type*} (q N : ℕ)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) : Finset ℕ := by
+  classical
+  exact (scope N).filter
+    (fun target => typeOf target = targetType ∧ Nat.Coprime target q)
+
+/-- For any nonnegative unit-mass initial input and any positive
+iteration count, the type's mass is at least its number of surviving
+representatives divided by 4*N. This converts a separately proved
+arithmetic survivor count into a mass rate, with no character
+cancellation or fabricated density premise. -/
+theorem bufferedDiagonalKernel_typeMass_ge_survivor_count
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_mass_one : (∑ x ∈ scope N, initial x) = 1)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) (depth : ℕ) :
+    ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) *
+        ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+      (bufferedDiagonalKernel q N hN).typeMass initial typeOf
+        (depth + 1) targetType := by
+  classical
+  let survivors := bufferedTypeSurvivors q N typeOf targetType
+  let fibers := (scope N).filter (fun target => typeOf target = targetType)
+  have hsub : survivors ⊆ fibers := by
+    intro target ht
+    obtain ⟨hscope, htype, hc⟩ := Finset.mem_filter.mp ht
+    exact Finset.mem_filter.mpr ⟨hscope, htype⟩
+  have hnonneg :
+      ∀ target ∈ scope N,
+        0 ≤ (bufferedDiagonalKernel q N hN).evolve initial
+          (depth + 1) target :=
+    (bufferedDiagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg (depth + 1)
+  calc
+    ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) *
+        ((4 : ℝ) * (N : ℝ))⁻¹ =
+      ∑ target ∈ survivors, ((4 : ℝ) * (N : ℝ))⁻¹ := by
+        simp [survivors]
+    _ ≤ ∑ target ∈ survivors,
+          (bufferedDiagonalKernel q N hN).evolve initial
+            (depth + 1) target := by
+      apply Finset.sum_le_sum
+      intro target ht
+      obtain ⟨hscope, htype, hc⟩ := Finset.mem_filter.mp ht
+      exact bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        q N hN initial initial_nonneg initial_mass_one
+        depth target hscope hc
+    _ ≤ ∑ target ∈ fibers,
+          (bufferedDiagonalKernel q N hN).evolve initial
+            (depth + 1) target := by
+      apply Finset.sum_le_sum_of_subset_of_nonneg hsub
+      intro target ht _
+      exact hnonneg target (Finset.mem_filter.mp ht).1
+    _ = (bufferedDiagonalKernel q N hN).typeMass initial
+          typeOf (depth + 1) targetType := rfl
+
+/-- A supplied lower count of c*N surviving representatives gives
+the *cutoff-independent* lower bound c/4 on type mass in the
+buffered model. Proving that count for a concrete type is a distinct
+arithmetic obligation; no asymptotic density is assumed implicitly. -/
+theorem bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_mass_one : (∑ x ∈ scope N, initial x) = 1)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel)
+    (density : ℝ) (depth : ℕ)
+    (count_lower :
+      density * (N : ℝ) ≤
+        ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ)) :
+    density / 4 ≤
+      (bufferedDiagonalKernel q N hN).typeMass initial typeOf
+        (depth + 1) targetType := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hBpos : (0 : ℝ) < (4 : ℝ) * (N : ℝ) := by positivity
+  have hscaled :
+      density / 4 ≤
+        ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) *
+          ((4 : ℝ) * (N : ℝ))⁻¹ := by
+    change density / 4 ≤
+      ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) /
+        ((4 : ℝ) * (N : ℝ))
+    apply (div_le_div_iff₀ (by norm_num : (0 : ℝ) < 4) hBpos).mpr
+    nlinarith [count_lower]
+  exact hscaled.trans
+    (bufferedDiagonalKernel_typeMass_ge_survivor_count
+      q N hN initial initial_nonneg initial_mass_one
+      typeOf targetType depth)
 
 end ArithmeticSieveKernel
 

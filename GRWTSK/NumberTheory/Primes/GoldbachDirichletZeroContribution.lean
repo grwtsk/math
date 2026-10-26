@@ -5,6 +5,9 @@ import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 import Mathlib.NumberTheory.LSeries.Deriv
 import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+import Mathlib.Order.Filter.AtTopBot.Field
 import Mathlib.Tactic
 
 /-!
@@ -640,6 +643,407 @@ theorem inclusive_vonMangoldt_prefix_eq_finitePerron_plus_endpoint_minus_defect
   unfold finitePerronHalfWeightedPrefix at h
   rw [h]
   ring
+
+
+/-!
+## Factoring the actual integer-endpoint Perron defect
+
+For N >= 3, the Nth L-series coefficient multiplied by its
+Perron weight cancels the complex power exactly. Consequently
+the endpoint component of finitePerronHeightDefect is the ACTUAL
+von Mangoldt character coefficient times a scalar kernel gap
+K(sigma,T) - 1/2. This is a quantitative reduction of the total
+defect to explicit off-endpoint terms and ONE scalar gap.
+
+The kernel is defined by a genuine finite interval integral.
+Its arctangent evaluation, bound in T, and convergence to 1/2
+are NOT asserted here; neither is the finite height defect zero.
+-/
+
+/-- The normalized scalar kernel at the arithmetic endpoint.
+The real-parameter normalization is inherited from the existing
+finite Perron polynomial; there is no contour-shift claim. -/
+def finitePerronEndpointKernel (σ T : ℝ) : ℂ :=
+  ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+    ∫ t in (-T)..T, (1 : ℂ) / (⟨σ, t⟩ : ℂ)
+
+/-- At the ACTUAL cutoff index n=N the coefficient denominator
+N^s cancels the Perron factor N^s, leaving a_N/s exactly.
+The positive-real-part condition ensures s is nonzero. -/
+theorem finitePerronEndpoint_integrand_eq
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ t : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    LSeries.term (dirichletVonMangoldtCoefficient q χ)
+        (⟨σ, t⟩ : ℂ) N *
+      ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ)) =
+      dirichletVonMangoldtCoefficient q χ N / (⟨σ, t⟩ : ℂ) := by
+  let s : ℂ := ⟨σ, t⟩
+  have hNnat : N ≠ 0 := by omega
+  have hNcomplex : (N : ℂ) ≠ 0 := by exact_mod_cast hNnat
+  have hpower : (N : ℂ) ^ s ≠ 0 :=
+    Complex.cpow_ne_zero_iff.mpr (Or.inl hNcomplex)
+  have hs : s ≠ 0 := by
+    intro h
+    have hreal := congrArg Complex.re h
+    have hsigma : σ = 0 := by simpa [s] using hreal
+    linarith
+  change
+    LSeries.term (dirichletVonMangoldtCoefficient q χ) s N *
+      ((N : ℂ) ^ s / s) =
+      dirichletVonMangoldtCoefficient q χ N / s
+  rw [LSeries.term_of_ne_zero hNnat]
+  field_simp [hpower, hs]
+
+/-- The normalized Nth finite-height term is the true coefficient
+times the scalar kernel; this reduction does NOT evaluate that kernel. -/
+theorem finitePerronTermIntegral_endpoint_factor
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    finitePerronTermIntegral q N N χ σ T =
+      dirichletVonMangoldtCoefficient q χ N *
+        finitePerronEndpointKernel σ T := by
+  unfold finitePerronTermIntegral finitePerronEndpointKernel
+  calc
+    ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+      (∫ t in (-T)..T,
+        LSeries.term (dirichletVonMangoldtCoefficient q χ)
+          (⟨σ, t⟩ : ℂ) N *
+        ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) =
+      ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+      (∫ t in (-T)..T,
+        dirichletVonMangoldtCoefficient q χ N *
+        ((1 : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        congr 1
+        apply intervalIntegral.integral_congr
+        intro t _ht
+        have h := finitePerronEndpoint_integrand_eq q N χ σ t hσ hN
+        simpa only [div_eq_mul_inv, one_mul] using h
+    _ = dirichletVonMangoldtCoefficient q χ N *
+      (((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+        (∫ t in (-T)..T, (1 : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        rw [intervalIntegral.integral_const_mul]
+        ring
+
+/-- The endpoint finite-height error factors exactly. Any future
+decay estimate must bound the scalar kernel gap, not assume it zero. -/
+theorem norm_finitePerron_endpoint_defect_eq
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    ‖finitePerronTermIntegral q N N χ σ T -
+      dirichletVonMangoldtCoefficient q χ N / 2‖ =
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ := by
+  rw [finitePerronTermIntegral_endpoint_factor q N χ σ T hσ hN]
+  have hfactor :
+      dirichletVonMangoldtCoefficient q χ N *
+          finitePerronEndpointKernel σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2 =
+      dirichletVonMangoldtCoefficient q χ N *
+        (finitePerronEndpointKernel σ T - (1 / 2 : ℂ)) := by
+    ring
+  rw [hfactor, norm_mul]
+
+/-- Quantitative reduction of the FULL finite-height Perron defect.
+The off-endpoint contribution is a finite explicit norm sum and the
+endpoint contribution is the true coefficient times one scalar gap.
+No estimate of the scalar gap or the off-endpoint sum is smuggled in. -/
+theorem norm_finitePerronHeightDefect_le_endpoint_gap
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    ‖finitePerronHeightDefect q N χ σ T‖ ≤
+      (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ := by
+  unfold finitePerronHeightDefect
+  calc
+    ‖(∑ n ∈ Finset.range N,
+        (finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n)) +
+      (finitePerronTermIntegral q N N χ σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2)‖ ≤
+      ‖∑ n ∈ Finset.range N,
+        (finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n)‖ +
+      ‖finitePerronTermIntegral q N N χ σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2‖ :=
+      norm_add_le _ _
+    _ ≤ (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖finitePerronTermIntegral q N N χ σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2‖ :=
+      add_le_add_right (norm_sum_le _ _) _
+    _ = (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ := by
+      rw [norm_finitePerron_endpoint_defect_eq q N χ σ T hσ hN]
+
+/-- At height zero the finite scalar integral is zero. Thus a
+pointwise finite-height equality to 1/2 would be false. -/
+theorem finitePerronEndpointKernel_zero (σ : ℝ) :
+    finitePerronEndpointKernel σ 0 = 0 := by
+  simp [finitePerronEndpointKernel]
+
+
+/-!
+## Arctangent evaluation and effective height decay of the endpoint kernel
+
+This section evaluates the EXACT complex-valued scalar integral
+finitePerronEndpointKernel on the right vertical line. No zero-free
+hypothesis or contour shift is used. The imaginary part is odd in
+height; the real part is the rational arctangent integrand.
+
+The scalar kernel is arctan(T/sigma)/pi for EVERY oriented finite
+height T when sigma>0, and tends to 1/2 from below for positive
+T tending to infinity. A quantitative norm bound keeps sigma and T
+visible. The separate off-endpoint Perron terms and the full
+L-series Perron inversion remain unresolved.
+-/
+
+/-- For positive real part the scalar endpoint resolvent is
+continuous over the whole real height line, hence integrable
+over any bounded oriented interval. -/
+theorem continuous_finitePerronEndpointKernelIntegrand
+    (σ : ℝ) (hσ : 0 < σ) :
+    Continuous (fun t : ℝ => (1 : ℂ) / (⟨σ, t⟩ : ℂ)) := by
+  let v : ℝ → ℂ := fun t => (σ : ℂ) + (t : ℂ) * Complex.I
+  have hv : Continuous v := by
+    dsimp [v]
+    fun_prop
+  have heq (t : ℝ) : v t = (⟨σ, t⟩ : ℂ) := by
+    apply Complex.ext <;> simp [v]
+  have h_v : Continuous (fun t : ℝ => (⟨σ, t⟩ : ℂ)) := by
+    convert hv using 1
+    funext t
+    exact heq t
+  have hne (t : ℝ) : (⟨σ, t⟩ : ℂ) ≠ 0 := by
+    intro hz
+    have hzre := congrArg Complex.re hz
+    have hzσ : σ = 0 := by simpa using hzre
+    exact (ne_of_gt hσ) hzσ
+  exact continuous_const.div h_v hne
+
+/-- Evaluate the unnormalized COMPLEX scalar Perron integral.
+Its imaginary part vanishes on the symmetric oriented interval;
+its real part uses the pinned rational arctangent integral. -/
+theorem integral_finitePerronEndpointKernel_eq_two_arctan
+    (σ T : ℝ) (hσ : 0 < σ) :
+    (∫ t in (-T)..T, (1 : ℂ) / (⟨σ, t⟩ : ℂ)) =
+      ((2 * Real.arctan (T / σ) : ℝ) : ℂ) := by
+  let f : ℝ → ℂ := fun t => (1 : ℂ) / (⟨σ, t⟩ : ℂ)
+  have hint : IntervalIntegrable f MeasureTheory.volume (-T) T :=
+    (continuous_finitePerronEndpointKernelIntegrand σ hσ).intervalIntegrable (-T) T
+  have hre (t : ℝ) : (f t).re = σ / (σ ^ 2 + t ^ 2) := by
+    simp [f, Complex.div_re, Complex.normSq_apply, pow_two]
+  have him (t : ℝ) : (f t).im = -(t / (σ ^ 2 + t ^ 2)) := by
+    simp [f, Complex.div_im, Complex.normSq_apply, pow_two]
+  have hReIntegral :
+      (∫ t in (-T)..T, f t).re =
+        Real.arctan (T / σ) - Real.arctan ((-T) / σ) := by
+    have h := intervalIntegral.intervalIntegral_re
+      (f := f) (a := -T) (b := T) hint
+    change (∫ t in (-T)..T, (f t).re) =
+      (∫ t in (-T)..T, f t).re at h
+    calc
+      (∫ t in (-T)..T, f t).re =
+          (∫ t in (-T)..T, (f t).re) := h.symm
+      _ = ∫ t in (-T)..T, σ / (σ ^ 2 + t ^ 2) := by
+        apply intervalIntegral.integral_congr
+        intro t _ht
+        exact hre t
+      _ = Real.arctan (T / σ) - Real.arctan ((-T) / σ) := by
+        exact intervalIntegral.integral_div_sq_add_sq
+          (a := -T) (b := T) (c := σ)
+  have hodd (t : ℝ) : (f (-t)).im = -(f t).im := by
+    rw [him (-t), him t]
+    simp
+  have hsym :
+      (∫ t in (-T)..T, (f (-t)).im) =
+        (∫ t in (-T)..T, (f t).im) := by
+    simpa only [neg_neg] using
+      (intervalIntegral.integral_comp_neg (a := -T) (b := T)
+        (fun t : ℝ => (f t).im))
+  have hOddIntegral :
+      (∫ t in (-T)..T, (f t).im) = 0 := by
+    have hneg :
+        (∫ t in (-T)..T, (f t).im) =
+          -(∫ t in (-T)..T, (f t).im) := by
+      calc
+        (∫ t in (-T)..T, (f t).im) =
+            (∫ t in (-T)..T, (f (-t)).im) := hsym.symm
+        _ = (∫ t in (-T)..T, -(f t).im) := by
+          apply intervalIntegral.integral_congr
+          intro t _ht
+          exact hodd t
+        _ = -(∫ t in (-T)..T, (f t).im) := by
+          rw [intervalIntegral.integral_neg]
+    linarith
+  have hImIntegral : (∫ t in (-T)..T, f t).im = 0 := by
+    have h := intervalIntegral.intervalIntegral_im
+      (f := f) (a := -T) (b := T) hint
+    change (∫ t in (-T)..T, (f t).im) =
+      (∫ t in (-T)..T, f t).im at h
+    rw [← h]
+    exact hOddIntegral
+  change (∫ t in (-T)..T, f t) =
+    ((2 * Real.arctan (T / σ) : ℝ) : ℂ)
+  apply Complex.ext
+  · change (∫ t in (-T)..T, f t).re =
+      2 * Real.arctan (T / σ)
+    rw [hReIntegral, show (-T) / σ = -(T / σ) by ring,
+      Real.arctan_neg]
+    ring
+  · change (∫ t in (-T)..T, f t).im = 0
+    exact hImIntegral
+
+/-- Exact scalar finite-height kernel evaluation with the
+1/(2*pi) normalization, for ALL real oriented heights T. -/
+theorem finitePerronEndpointKernel_eq_arctan
+    (σ T : ℝ) (hσ : 0 < σ) :
+    finitePerronEndpointKernel σ T =
+      ((Real.arctan (T / σ) / Real.pi : ℝ) : ℂ) := by
+  have hI :=
+    integral_finitePerronEndpointKernel_eq_two_arctan σ T hσ
+  unfold finitePerronEndpointKernel
+  rw [hI]
+  have hReal :
+      (2 * Real.pi)⁻¹ * (2 * Real.arctan (T / σ)) =
+        Real.arctan (T / σ) / Real.pi := by
+    field_simp [Real.pi_ne_zero]
+    ring
+  simpa only [Complex.ofReal_mul, Complex.ofReal_inv] using
+    congrArg (fun x : ℝ => (x : ℂ)) hReal
+
+/-- At positive height, the difference from the limiting
+half coefficient is exactly a positive inverse arctangent.
+No approximation is involved. -/
+theorem half_sub_finitePerronEndpointKernel_eq
+    (σ T : ℝ) (hσ : 0 < σ) (hT : 0 < T) :
+    (1 / 2 : ℂ) - finitePerronEndpointKernel σ T =
+      ((Real.arctan (σ / T) / Real.pi : ℝ) : ℂ) := by
+  rw [finitePerronEndpointKernel_eq_arctan σ T hσ]
+  have hRatio : (T / σ)⁻¹ = σ / T := by
+    field_simp [ne_of_gt hσ, ne_of_gt hT]
+  have hInv : Real.arctan (σ / T) =
+      Real.pi / 2 - Real.arctan (T / σ) := by
+    simpa only [hRatio] using
+      (Real.arctan_inv_of_pos (div_pos hT hσ))
+  have hReal :
+      (1 / 2 : ℝ) - Real.arctan (T / σ) / Real.pi =
+        Real.arctan (σ / T) / Real.pi := by
+    field_simp [Real.pi_ne_zero]
+    linarith [hInv]
+  exact_mod_cast hReal
+
+/-- Exact scalar endpoint error norm; it is nonnegative because
+sigma,T,pi are positive. -/
+theorem norm_finitePerronEndpointKernel_sub_half_eq
+    (σ T : ℝ) (hσ : 0 < σ) (hT : 0 < T) :
+    ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ =
+      Real.arctan (σ / T) / Real.pi := by
+  rw [norm_sub_rev, half_sub_finitePerronEndpointKernel_eq σ T hσ hT,
+    Complex.norm_real, Real.norm_eq_abs]
+  exact abs_of_nonneg
+    (div_nonneg (Real.arctan_nonneg.mpr (div_pos hσ hT).le)
+      Real.pi_pos.le)
+
+/-- Pinned Mathlib's lower bound x ≤ tan(x), evaluated at
+arctan(x), yields arctan(x) ≤ x for all nonnegative x. -/
+theorem arctan_le_self_of_nonneg
+    (x : ℝ) (hx : 0 ≤ x) : Real.arctan x ≤ x := by
+  have ht :=
+    Real.le_tan (Real.arctan_nonneg.mpr hx)
+      (Real.arctan_lt_pi_div_two x)
+  simpa only [Real.tan_arctan] using ht
+
+/-- Quantitative scalar endpoint height gap. For T>0,
+the norm error is at most (sigma/T)/pi, i.e. sigma/(pi*T).
+This DOES NOT bound any off-endpoint Perron error. -/
+theorem norm_finitePerronEndpointKernel_sub_half_le
+    (σ T : ℝ) (hσ : 0 < σ) (hT : 0 < T) :
+    ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ ≤
+      (σ / T) / Real.pi := by
+  rw [norm_finitePerronEndpointKernel_sub_half_eq σ T hσ hT]
+  exact div_le_div_of_nonneg_right
+    (arctan_le_self_of_nonneg (σ / T) (div_pos hσ hT).le)
+    Real.pi_pos.le
+
+/-- The ACTUAL Nth von Mangoldt character coefficient inherits
+the explicit endpoint decay, retaining the coefficient norm. -/
+theorem norm_finitePerron_endpoint_defect_le_height
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) (hT : 0 < T) :
+    ‖finitePerronTermIntegral q N N χ σ T -
+      dirichletVonMangoldtCoefficient q χ N / 2‖ ≤
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ((σ / T) / Real.pi) := by
+  rw [norm_finitePerron_endpoint_defect_eq q N χ σ T hσ hN]
+  exact mul_le_mul_of_nonneg_left
+    (norm_finitePerronEndpointKernel_sub_half_le σ T (by linarith) hT)
+    (norm_nonneg _)
+
+/-- Explicit effective endpoint portion of the total finite-height
+Perron defect. The off-endpoint summands remain unbounded by this
+theorem and must be separately estimated before inversion. -/
+theorem norm_finitePerronHeightDefect_le_height
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) (hT : 0 < T) :
+    ‖finitePerronHeightDefect q N χ σ T‖ ≤
+      (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ((σ / T) / Real.pi) := by
+  have h0 := norm_finitePerronHeightDefect_le_endpoint_gap
+    q N χ σ T hσ hN
+  have h1 : ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ ≤
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ((σ / T) / Real.pi) :=
+    mul_le_mul_of_nonneg_left
+      (norm_finitePerronEndpointKernel_sub_half_le σ T (by linarith) hT)
+      (norm_nonneg _)
+  exact h0.trans (add_le_add_left h1 _)
+
+/-- The evaluated scalar endpoint kernel converges to 1/2
+as the positive real height tends to infinity. This says NOTHING
+about the off-endpoint finite-height defect or infinite L-series
+Perron inversion. -/
+theorem tendsto_finitePerronEndpointKernel_atTop
+    (σ : ℝ) (hσ : 0 < σ) :
+    Filter.Tendsto (finitePerronEndpointKernel σ)
+      Filter.atTop (nhds (1 / 2 : ℂ)) := by
+  have hDiv : Filter.Tendsto (fun T : ℝ => T / σ)
+      Filter.atTop Filter.atTop :=
+    (Filter.tendsto_div_const_atTop_of_pos hσ).2 tendsto_id
+  have hArc : Filter.Tendsto
+      (fun T : ℝ => Real.arctan (T / σ))
+      Filter.atTop (nhds (Real.pi / 2)) :=
+    (tendsto_nhds_of_tendsto_nhdsWithin
+      Real.tendsto_arctan_atTop).comp hDiv
+  have hScaled : Filter.Tendsto
+      (fun T : ℝ => Real.arctan (T / σ) / Real.pi)
+      Filter.atTop (nhds ((Real.pi / 2) / Real.pi)) :=
+    hArc.div_const Real.pi
+  have hCast : Filter.Tendsto
+      (fun T : ℝ =>
+        ((Real.arctan (T / σ) / Real.pi : ℝ) : ℂ))
+      Filter.atTop
+      (nhds (((Real.pi / 2) / Real.pi : ℝ) : ℂ)) :=
+    (Complex.continuous_ofReal.tendsto _).comp hScaled
+  have hpi : (Real.pi / 2) / Real.pi = (1 / 2 : ℝ) := by
+    field_simp [Real.pi_ne_zero]
+    ring
+  have heq : finitePerronEndpointKernel σ =
+      (fun T : ℝ => ((Real.arctan (T / σ) / Real.pi : ℝ) : ℂ)) := by
+    funext T
+    exact finitePerronEndpointKernel_eq_arctan σ T hσ
+  rw [heq]
+  simpa only [hpi] using hCast
 
 end
 end GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution

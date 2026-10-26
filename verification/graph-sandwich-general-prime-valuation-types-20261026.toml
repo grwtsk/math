@@ -1,0 +1,146 @@
+# P0 source-pinned request: fixed prime-p exact valuation, arithmetic survivor count,
+# pointwise buffered-sieve type positivity and certified graph hits.
+# Source-level work only: compiler, independent kernel, axioms and receipt NOT_RUN.
+schema_version = "0.1"
+request_id = "graph-sandwich-general-prime-valuation-types-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "883d864e98cab8bd0f3eb3adb854f4ea9a831bff"
+source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_blob = "5936e82c630cb177d32d40057d3effe48d15cf7e"
+source_authoring_commits = [
+  "f4155d626ba567822d4a3a7df8ad9474cb08185d",
+  "48f2d827162cb6441a559f4aa8ddac96d90f2517",
+  "97bf0aa4a4d04da4185d7d825fbf4233c2109e31",
+  "883d864e98cab8bd0f3eb3adb854f4ea9a831bff",
+]
+graph_supplier_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_supplier_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+grothendieck_supplier_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_supplier_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_factorization_basic_path = "Mathlib/Data/Nat/Factorization/Basic.lean"
+mathlib_factorization_basic_blob = "754d9c2792659f68a624086c9ce9af3ce90e0737"
+mathlib_factorization_defs_path = "Mathlib/Data/Nat/Factorization/Defs.lean"
+mathlib_factorization_defs_blob = "123b50a5cf37474f6be7778196cbfe313e0caf6b"
+mathlib_gcd_path = "Mathlib/Data/Nat/GCD/Basic.lean"
+mathlib_gcd_blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+source_status = "SOURCE_DRAFT"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+issue = "https://github.com/grwtsk/math/issues/1344"
+mathematical_class = "ELEMENTARY_GENERAL_PRIME_P_VALUATION_POINTWISE_ARITHMETIC_SOURCE_CANDIDATE"
+declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationPeriod",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationPeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_factorization",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType_lt_cutoff",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType_no_finite_all_type_coverage",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_radical_pow_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_eventually_certified_hit",
+]
+direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+preserved_existing_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_no_finite_all_type_coverage",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_uniform_complete_and_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_of_survivor_density",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+]
+exact_hypotheses = [
+  "Chosen p k : Nat and hp : Nat.Prime p; hcop : Nat.Coprime p 3. Prime p=3 excluded by hcop, no assertion for p=3 with modulus 3.",
+  "Exact type is primeValuationType p n := n.factorization p, not radical support or a Bool quotient",
+  "Period d(p,k) = 3 * p^(k+1); arithmetic progression n_j = p^k * (3*p*j + 1) is >0, exact p valuation k and coprime to 3",
+  "Positive exponent power p^k permits k=0; j in Finset.range (N / d) gives a positive in-scope integer in Finset.Icc 1 N",
+  "Survivor card >= Nat floor N/d for every N, with no positive lower bound if N<d",
+  "For linear survivor bound, hcutoff : d<=N; card >= N/(2*d) as real quantity",
+  "All mass results consume bufferedRadicalWeight(q,N,n)=N+radical(n) on coprime targets and its row-normalized bufferedDiagonalKernel, NOT unbuffered diagonalKernel",
+  "For source-dependent mass: hN : 1<=N, initial : Nat->Real, initial_nonneg on scope, sum initial over scope=1; positive steps depth+1",
+  "For each fixed p,k and N>=d, mass >= 1/(8*d)=1/(24*p^(k+1)) independent of N and diffusion time",
+  "Pointwise eventual positivity allows cutoff d and rate 1/(8*d) to depend on fixed p,k, and initial unit-mass distributions to vary with N",
+  "Certified type hit is at arithmetic inventory source=1, graph search depth=1 and every positive Markov iteration depth+1; does not promote candidate paper graph edges",
+  "At every finite N, exact type k=N is absent from positive integer scope since n.factorization p < n <= N; no all-Natural-type finite completeness for any p or q",
+  "For each prime p, p and p^2 are radical-colliding but prime-p exact factorization exponents 1 versus 2; any lift Nat->*M into [CommMonoid M] remains an explicit supplied parameter",
+  "GrothendieckKZero is universal Grothendieck completion only; no analytic C-star K0, KK or assembly-map claim",
+]
+source_level_conclusions = [
+  "For every prime p coprime to 3 and every k, infinitely many explicit sieve survivors have exact prime-p valuation k",
+  "Finite survivor count >= floor(N/(3*p^(k+1))); elementary linear survivor lower bound holds once N>=3*p^(k+1)",
+  "Fixed-type buffered-sieve mass after any positive step >= 1/(24*p^(k+1)), a positive p/k dependent rate uniform in cutoff/time",
+  "Each fixed prime-p type is eventually an actual certified arithmetic inventory type hit from source 1 with graph depth 1",
+  "No single finite cutoff covers all natural valuation labels simultaneously for any prime p, despite pointwise-in-type eventual coverage",
+  "Exact prime-p type differences between p and p^2 are invisible to the radical-derived K0-shaped observable",
+]
+source_preflight = [
+  "Read-back of final exact math source blob and 17 new declaration names, previous declarations preserved",
+  "Source inspected against pinned Mathlib factorization, GCD, arithmetic divisibility APIs",
+  "Finite numerical spot checks on 16 small (p,k) cases: progression terms lie in scope and have the expected valuation/coprimality; NOT Lean acceptance",
+]
+unresolved_verification_and_mathematical_bridges = [
+  "Full Lean elaboration of all 17 declarations, no output or exit status yet; check Nat.Prime.ne_zero, Nat.dvd_add_iff_right, Nat.le_of_dvd, Nat.coprime_mul_iff_left and Nat.Coprime.pow_left",
+  "Check proof of prime-p progression injectivity via mul_left_cancel0 and Nat.add_right_cancel, and symbolic p^k progression inequality",
+  "Check Nat.mul_div_le and Nat.le_div_iff_mul_le for variable period 3*p^(k+1), omega on symbolic quotient and remainder identities",
+  "Check Finset.card_image_of_injective, bufferedTypeSurvivors definitional equality and exact factorization casts/field simplification",
+  "Check prime-specific K0-shaped collision theorem p vs p^2 after import closure and kernel elaboration",
+  "Check transitive imports/Mathlib sources and strict --wfail warning policy, including unused supplied hypotheses",
+  "Fresh independent kernel check and transitive #print axioms on every new theorem and downstream consumers",
+  "No finite cutoff has all infinitely many k; no type-uniform strictly positive mass floor across arbitrary primes/exponents",
+  "Prime p=3 is excluded for q=3; treating that type requires a different modulus or another model with compatible certified semantics",
+  "No proof of arbitrary analytic prime-density families, Goldbach, Siegel zero exclusion, RH, actual spectral diffusion, or actual analytic K-theory",
+  "Runner/checker receipts belong outside math under grwtsk/noeaaeue; do not claim queued manifest/issue as kernel receipt",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 883d864e98cab8bd0f3eb3adb854f4ea9a831bff && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = 5936e82c630cb177d32d40057d3effe48d15cf7e && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 7d861591c9721a85819f291aac5178fffd29101a"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+supplier_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+prime_valuation_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+prime_valuation_elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_independent_kernel = "PENDING_ACTUAL_BUILD_AND_SUPPORTED_CHECKER"
+transitive_axioms = "PENDING_COMPILATION_AND_FULL_TRANSITIVE_AXIOM_CENSUS"
+axiom_targets = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationPeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_factorization",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType_lt_cutoff",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType_no_finite_all_type_coverage",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_radical_pow_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_eventually_certified_hit",
+]
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0
