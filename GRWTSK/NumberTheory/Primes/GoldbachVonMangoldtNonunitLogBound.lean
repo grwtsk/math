@@ -1,13 +1,15 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitBridge
 import GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeLogSupplier
+import GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound
 
 /-!
 # Canonical nonunit von Mangoldt sum with finite logarithmic correction
 
 This substitutes the exact canonical von Mangoldt filtered-sum
 identity into the positive-modulus nonunit psi mass estimate.
-No character cancellation or prime-distribution estimate is inferred.
+The sharper radical correction is transported without changing the existing
+log(q) theorem. No character cancellation or prime-distribution estimate is inferred.
 SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 
@@ -20,6 +22,7 @@ open GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitBridge
 open GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeLogSupplier
 open GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport
 open GRWTSK.NumberTheory.Primes.GoldbachNonunitBudget
+open GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound
 
 /-- The canonical von Mangoldt nonunit sum obeys the explicit
 finite positive-modulus logarithmic correction bound. -/
@@ -32,5 +35,18 @@ theorem nonunit_vonMangoldt_sum_le_log_correction
         (Nat.log2 N : ℝ) * Real.log (q : ℝ) := by
   rw [← nonunitPsiMass_eq_vonMangoldt_sum]
   exact nonunitPsiMass_le_prime_count_add_log2_correction q N hq
+
+/-- The canonical finite nonunit von Mangoldt sum inherits the
+squarefree-radical logarithmic correction. The only arithmetic
+hypothesis is q ≠ 0; N is an arbitrary natural cutoff. -/
+theorem nonunit_vonMangoldt_sum_le_radical_correction
+    (q N : ℕ) (hq : q ≠ 0) :
+    (∑ n ∈ (Finset.range (N + 1)).filter
+      (fun n => ¬ IsUnit (n : ZMod q)),
+      ArithmeticFunction.vonMangoldt n) ≤
+      (finitePrimeDivisorCount q N : ℝ) * Real.log (N : ℝ) +
+        (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ) := by
+  rw [← nonunitPsiMass_eq_vonMangoldt_sum]
+  exact nonunitPsiMass_le_count_mul_log_add_log2_mul_log_radical q N hq
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitLogBound
