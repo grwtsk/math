@@ -241,4 +241,52 @@ theorem graphEulerHeat_ge_of_forall_ge
   rw [← Finset.sum_mul] at hsum
   nlinarith
 
+/-! ## Exact Euler mass conservation for symmetric weights
+
+Symmetric weights make the total graph-Laplacian flux zero.
+Consequently the genuine Euler graph heat step conserves the
+rational sum of vertex values for every step size. This is
+a finite conservation identity, not an energy-dissipation claim.
+-/
+
+/-- Total weighted graph-Laplacian flux vanishes under symmetry. -/
+theorem weightedGraphLaplacian_sum_zero
+    (w : V → V → ℚ) (u : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    (∑ i : V, weightedGraphLaplacian w u i) = 0 := by
+  classical
+  unfold weightedGraphLaplacian
+  have hswap :
+      (∑ i : V, ∑ j : V, w i j * (u i - u j)) =
+      (∑ i : V, ∑ j : V, w i j * (u j - u i)) := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro j hj
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [hsym j i]
+  have hneg :
+      (∑ i : V, ∑ j : V, w i j * (u j - u i)) =
+      -(∑ i : V, ∑ j : V, w i j * (u i - u j)) := by
+    rw [← Finset.sum_neg_distrib]
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [← Finset.sum_neg_distrib]
+    apply Finset.sum_congr rfl
+    intro j hj
+    ring
+  linarith
+
+/-- The actual graph Euler heat step preserves total rational mass
+for symmetric weights, without a CFL restriction. -/
+theorem graphEulerHeat_sum_eq
+    (w : V → V → ℚ) (u : V → ℚ) (τ : ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    (∑ i : V, graphEulerHeat w τ u i) =
+      ∑ i : V, u i := by
+  unfold graphEulerHeat
+  simp only [Finset.sum_sub_distrib, ← Finset.mul_sum]
+  rw [weightedGraphLaplacian_sum_zero w u hsym]
+  ring
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
