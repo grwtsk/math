@@ -1,0 +1,62 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "gcd-signed-rectangle-kernel-v1"
+owner_repository = "grwtsk/math"
+status = "SOURCE_PROOF_CANDIDATES_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.GcdSignedRectangleKernel"
+build_target = "GRWTSK.NumberTheory.Moebius.GcdSignedRectangleKernel"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_base_revision = "d1e0934afe89e710b150e4deb3c98e50ec59fdd0"
+new_module_path = "GRWTSK/NumberTheory/Moebius/GcdSignedRectangleKernel.lean"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_EXTERNAL_IMMUTABLE_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_exact_declaration_types = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+new_paid_damping = false
+riemann_hypothesis_claimed = false
+weighted_mertens_mean_square_assumed = false
+unconditional_arithmetic_increment = "positive off-increment-diagonal gap-tail mass <=1/g; no arithmetic cancellation supplied"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.GcdSignedRectangleKernel"
+authored_declaration_count = 13
+definition_count = 5
+theorem_script_count = 8
+private_helper_count = 0
+
+[acceptance]
+selected_declarations = [
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.endpointGapTail_eq",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.endpointGapTail_nonneg",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.endpointGapTail_le_inv_sqrt",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.offDiagonalGapTailMass_nonneg",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.offDiagonalGapTailMass_le_tail_sq",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.offDiagonalGapTailMass_le_inv",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.gcdSignedRectangleMixture_le_mass",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.gcdSignedRectangleMixture_le_inv",
+]
+unresolved_premises = [
+  "one-sided signed rectangle bounds for actual mu(a*b), both coprimality restrictions and every moving subrectangle",
+  "exact finite interchange/index bridge between this mixture and the existing actual pulled-kernel gcd block",
+  "global summable gcd budget sum(mu(g)^2*B_g(N)/g)<=C_epsilon*(N+1)^epsilon",
+  "these rectangle suppliers are sufficient stronger assumptions, not proved necessary or equivalent to the minimal compensated target",
+]
+source_zero_index_explicitly_controlled = true
+positive_kernel_used_only_at_positive_source_indices = true
+remaining_coefficient_diagonal_preserved = true
+conditional_bridge = "if all actual signed rectangles in a gcd block are <=B>=0, its positive mixture is <=B/g; no H bound claimed without exact source bridge and global arithmetic budget"
