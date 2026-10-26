@@ -242,4 +242,82 @@ theorem no_exact_twoAdic_type_decoder_on_certified_sieve
     1 twoAdicMultiplicityType (kZeroRadical lift) 1
     htwoReach hfourReach hsameK twoAdicMultiplicityType_two_ne_four
 
+/-- Finite multiplicity-sensitive type label. It distinguishes
+whether the exponent of prime 2 is exactly one; it is not a
+reconstruction of all possible factorization types. -/
+def multiplicityOneType (n : ℕ) : Bool :=
+  decide (twoAdicMultiplicityType n = 1)
+
+theorem multiplicityOneType_two :
+    multiplicityOneType 2 = true := by
+  simp [multiplicityOneType, twoAdicMultiplicityType_two]
+
+theorem multiplicityOneType_four :
+    multiplicityOneType 4 = false := by
+  simp [multiplicityOneType, twoAdicMultiplicityType_four]
+
+/-- Both declared Boolean multiplicity types have positive certified
+arithmetic sieve weight at search depth one for q=3, N≥4. This is
+actual finite type coverage, not asymptotic completeness. -/
+theorem multiplicityOneType_completeAt_certified_sieve
+    (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N) :
+    (certifiedArithmeticInventory 3 N hN).sieveTypeCompleteAt
+      1 multiplicityOneType
+      (fun _ n => radicalCoprimeWeight 3 n) 1 := by
+  intro targetType
+  cases targetType with
+  | false =>
+      apply (certifiedArithmeticInventory_oneStep_hit_iff
+        3 N hN multiplicityOneType false).mpr
+      refine ⟨4, ?_, ?_, ?_⟩
+      · change (4 : ℕ) ∈ Finset.Icc 1 N
+        exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+      · exact multiplicityOneType_four
+      · decide
+  | true =>
+      apply (certifiedArithmeticInventory_oneStep_hit_iff
+        3 N hN multiplicityOneType true).mpr
+      refine ⟨2, ?_, ?_, ?_⟩
+      · change (2 : ℕ) ∈ Finset.Icc 1 N
+        exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+      · exact multiplicityOneType_two
+      · decide
+
+/-- Radical-factored K₀-shaped data cannot decode the two Boolean
+multiplicity labels on the exact finite certified scope, despite
+positive sieve coverage of both types. -/
+theorem no_exact_multiplicityOneType_decoder_on_certified_sieve
+    (lift : ℕ →* M) (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N) :
+    ¬ ∃ decode : GrothendieckKZero M → Bool,
+        ∀ n ∈ (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1,
+          multiplicityOneType n = decode (kZeroRadical lift n) := by
+  have htwoScope : (2 : ℕ) ∈ scope N := by
+    change (2 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+  have hfourScope : (4 : ℕ) ∈ scope N := by
+    change (4 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+  have htwoReach :
+      (2 : ℕ) ∈
+        (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+    exact Finset.mem_filter.mpr ⟨htwoScope, by decide⟩
+  have hfourReach :
+      (4 : ℕ) ∈
+        (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+    exact Finset.mem_filter.mpr ⟨hfourScope, by decide⟩
+  have hpow : (2 : ℕ) ^ 2 = 4 := by norm_num
+  have hsameK :
+      kZeroRadical lift (2 : ℕ) = kZeroRadical lift (4 : ℕ) := by
+    have h := kZeroRadical_pow lift 2 2 (by norm_num)
+    simpa only [hpow] using h.symm
+  have hdistinct :
+      multiplicityOneType 2 ≠ multiplicityOneType 4 := by
+    rw [multiplicityOneType_two, multiplicityOneType_four]
+    decide
+  exact (certifiedArithmeticInventory 3 N hN).no_exact_feature_type_of_collision
+    1 multiplicityOneType (kZeroRadical lift) 1
+    htwoReach hfourReach hsameK hdistinct
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
