@@ -94,6 +94,17 @@ theorem squarePrimeIncrement_eq_first_fiber (n : ℕ) :
   rw [sum_Ioc_difference _ _ (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2)]
   rw [primePowerBases_one, Finset.sum_filter]
 
+/-- Express the actual prime-only increment with the von Mangoldt weights
+used by the central/outer square-window partition. No prime estimate is assumed. -/
+theorem squarePrimeIncrement_eq_vonMangoldt_sum (n : ℕ) :
+    squarePrimeIncrement n =
+      ∑ p ∈ (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime,
+        ArithmeticFunction.vonMangoldt p := by
+  rw [squarePrimeIncrement_eq_first_fiber, primePowerBases_one]
+  apply Finset.sum_congr rfl
+  intro p hp
+  exact (ArithmeticFunction.vonMangoldt_apply_prime (Finset.mem_filter.mp hp).2).symm
+
 /-- All positive exponents and their actual prime bases, at the complete finite cutoff. -/
 def primePowerPairs (n : ℕ) : Finset (ℕ × ℕ) :=
   ((Finset.Icc 1 (exponentCutoff n)) ×ˢ (Finset.Icc 2 ((n + 1) ^ 2))).filter
