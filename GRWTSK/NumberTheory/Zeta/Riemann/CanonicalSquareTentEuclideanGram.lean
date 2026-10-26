@@ -1271,4 +1271,48 @@ theorem leftOuterSquarePrimes_subset_full (n : ℕ) :
   exact (Finset.mem_sdiff.mp
     (Finset.mem_filter.mp hp).1).1
 
+/-- Each right boundary-tail prime is in the same exact
+complete square prime inventory. -/
+theorem rightOuterSquarePrimes_subset_full (n : ℕ) :
+    rightOuterSquarePrimes n ⊆
+      (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime := by
+  intro p hp
+  exact (Finset.mem_sdiff.mp
+    (Finset.mem_filter.mp hp).1).1
+
+/-- A coarse but unconditional theta bound for the left tail.
+No short-interval prime distribution estimate is asserted. -/
+theorem leftOuterSquarePrimeMass_le_theta_increment (n : ℕ) :
+    (∑ p ∈ leftOuterSquarePrimes n,
+      ArithmeticFunction.vonMangoldt p) ≤
+      Chebyshev.theta ((((n + 1) ^ 2 : ℕ) : ℝ)) -
+        Chebyshev.theta (((n ^ 2 : ℕ) : ℝ)) := by
+  have hsubset := leftOuterSquarePrimes_subset_full n
+  have hle :
+      (∑ p ∈ leftOuterSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) ≤
+        ∑ p ∈ (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime,
+          ArithmeticFunction.vonMangoldt p :=
+    Finset.sum_le_sum_of_subset_of_nonneg hsubset
+      (fun p hp hnot => ArithmeticFunction.vonMangoldt_nonneg)
+  rw [squarePrimeIncrement_eq_vonMangoldt_sum] at hle
+  exact hle
+
+/-- The corresponding coarse theta bound for the right tail. -/
+theorem rightOuterSquarePrimeMass_le_theta_increment (n : ℕ) :
+    (∑ p ∈ rightOuterSquarePrimes n,
+      ArithmeticFunction.vonMangoldt p) ≤
+      Chebyshev.theta ((((n + 1) ^ 2 : ℕ) : ℝ)) -
+        Chebyshev.theta (((n ^ 2 : ℕ) : ℝ)) := by
+  have hsubset := rightOuterSquarePrimes_subset_full n
+  have hle :
+      (∑ p ∈ rightOuterSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) ≤
+        ∑ p ∈ (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime,
+          ArithmeticFunction.vonMangoldt p :=
+    Finset.sum_le_sum_of_subset_of_nonneg hsubset
+      (fun p hp hnot => ArithmeticFunction.vonMangoldt_nonneg)
+  rw [squarePrimeIncrement_eq_vonMangoldt_sum] at hle
+  exact hle
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
