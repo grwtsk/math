@@ -1101,4 +1101,41 @@ theorem fullSquarePrimeMass_eq_central_add_outer (n : ℕ) :
     (centralSquarePrimes_subset_full n)
     (fun p => ArithmeticFunction.vonMangoldt p)).symm
 
+/-! ## Central mass from an outer-prime and proper-power budget
+
+The source interval mass is already the sum of prime-only and
+proper-power terms. A central-prime mass lower bound therefore follows
+from an explicit upper budget on the OUTER prime contribution and
+the proper-power correction, with no invented short-interval theorem.
+-/
+
+/-- The full square-window von Mangoldt mass splits into central
+primes, outer primes and the actual higher-prime-power correction.
+The n >= 1 hypothesis is retained from the source decomposition. -/
+theorem squareIncrement_eq_central_add_outer_add_higher
+    (n : ℕ) (hn : 1 ≤ n) :
+    squareIncrement n =
+      (∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) +
+      (∑ p ∈ outerSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) +
+      higherPrimePowerMass n := by
+  rw [squareIncrement_decomposition n hn]
+  rw [squarePrimeIncrement_eq_vonMangoldt_sum]
+  rw [fullSquarePrimeMass_eq_central_add_outer]
+
+/-- An upper bound on outer prime mass and higher-power mass yields
+an explicit lower bound on the actual central prime contribution. -/
+theorem centralPrimeMass_ge_of_outer_and_higher_bounds
+    (n : ℕ) (hn : 1 ≤ n) (Uouter Uhigher : ℝ)
+    (houter :
+      (∑ p ∈ outerSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) ≤ Uouter)
+    (hhigher : higherPrimePowerMass n ≤ Uhigher) :
+    squareIncrement n - Uouter - Uhigher ≤
+      ∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p := by
+  have hsplit := squareIncrement_eq_central_add_outer_add_higher n hn
+  linarith
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
