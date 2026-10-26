@@ -1665,6 +1665,85 @@ theorem normalizedTargetKernel_step_of_unit_mass
   simp only [if_pos target_mem]
   rw [← Finset.sum_mul, initial_mass_one, one_mul]
 
+/-- Normalize a *source-dependent* finite nonnegative edge-weight
+function, requiring positive row mass for every in-scope source.
+Unlike `normalizedTargetKernel`, the resulting transition kernel
+need not have identical rows. It does not certify graph edges unless
+a separate support theorem is supplied. -/
+noncomputable def normalizedEdgeKernel
+    (vertices : Finset State) (edgeWeight : State → State → ℝ)
+    (edge_nonneg :
+      ∀ x ∈ vertices, ∀ y ∈ vertices, 0 ≤ edgeWeight x y)
+    (row_pos :
+      ∀ x ∈ vertices, 0 < ∑ y ∈ vertices, edgeWeight x y) :
+    FiniteSieveMarkovKernel State where
+  scope := vertices
+  transition := fun x y =>
+    if y ∈ vertices then
+      edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+    else 0
+  transition_nonneg := by
+    intro x hx y hy
+    change 0 ≤ (if y ∈ vertices then
+      edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+      else 0)
+    rw [if_pos hy]
+    exact div_nonneg (edge_nonneg x hx y hy) (row_pos x hx).le
+  row_sum_one := by
+    intro x hx
+    change (∑ y ∈ vertices,
+      if y ∈ vertices then
+        edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+      else 0) = 1
+    calc
+      (∑ y ∈ vertices,
+        if y ∈ vertices then
+          edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+        else 0) =
+          ∑ y ∈ vertices,
+            edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z) := by
+        apply Finset.sum_congr rfl
+        intro y hy
+        simp only [if_pos hy]
+      _ = 1 := by
+        simp_rw [div_eq_mul_inv]
+        rw [← Finset.sum_mul]
+        exact mul_inv_cancel₀ (ne_of_gt (row_pos x hx))
+
+/-- A normalized edge transition is strictly positive on in-scope
+endpoints exactly when its original edge weight is positive. The
+denominator positivity is an explicit construction premise. -/
+theorem normalizedEdgeKernel_transition_pos_iff
+    (vertices : Finset State) (edgeWeight : State → State → ℝ)
+    (edge_nonneg :
+      ∀ x ∈ vertices, ∀ y ∈ vertices, 0 ≤ edgeWeight x y)
+    (row_pos :
+      ∀ x ∈ vertices, 0 < ∑ y ∈ vertices, edgeWeight x y)
+    (x y : State) (hx : x ∈ vertices) (hy : y ∈ vertices) :
+    0 < (normalizedEdgeKernel vertices edgeWeight
+      edge_nonneg row_pos).transition x y ↔ 0 < edgeWeight x y := by
+  change 0 < (if y ∈ vertices then
+    edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+    else 0) ↔ 0 < edgeWeight x y
+  rw [if_pos hy]
+  exact div_pos_iff_of_pos_right (row_pos x hx)
+
+/-- Normalized edge kernels have no transitions into states outside
+the prescribed finite scope. -/
+theorem normalizedEdgeKernel_transition_zero_of_not_mem
+    (vertices : Finset State) (edgeWeight : State → State → ℝ)
+    (edge_nonneg :
+      ∀ x ∈ vertices, ∀ y ∈ vertices, 0 ≤ edgeWeight x y)
+    (row_pos :
+      ∀ x ∈ vertices, 0 < ∑ y ∈ vertices, edgeWeight x y)
+    (x y : State) (hy : y ∉ vertices) :
+    (normalizedEdgeKernel vertices edgeWeight
+      edge_nonneg row_pos).transition x y = 0 := by
+  change (if y ∈ vertices then
+    edgeWeight x y / (∑ z ∈ vertices, edgeWeight x z)
+    else 0) = 0
+  simp only [if_neg hy]
+
 end FiniteSieveMarkovKernel
 
 /-- A finite Markov type mass agrees with the existing certified
