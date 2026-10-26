@@ -420,4 +420,52 @@ theorem antisymmetricPair_symmetric_zero (q r : ℚ) :
   unfold antisymmetricPair symmetricPair pairAverage
   constructor <;> ring
 
+/-! ## Heat evolution of complementary modes and finite energy
+
+The affine heat step fixes the symmetric reference field and
+multiplies the antisymmetric pair component by 1-t. Its squared
+difference energy therefore decays by (1-t)^2 for 0<=t<=1.
+This is a finite energy identity, not a Navier–Stokes energy estimate.
+-/
+
+/-- The antisymmetric projection evolves by the exact scalar
+factor 1-t under a common affine heat step. -/
+theorem antisymmetricPair_heat_scale (c t q r : ℚ) :
+    antisymmetricPair (heatStep c t q) (heatStep c t r) =
+      ((1 - t) * (antisymmetricPair q r).1,
+       (1 - t) * (antisymmetricPair q r).2) := by
+  apply Prod.ext <;> simp [antisymmetricPair, heatStep] <;> ring
+
+/-- The symmetric projection commutes with a common heat step. -/
+theorem symmetricPair_heat_commutes (c t q r : ℚ) :
+    symmetricPair (heatStep c t q) (heatStep c t r) =
+      (heatStep c t (symmetricPair q r).1,
+       heatStep c t (symmetricPair q r).2) := by
+  apply Prod.ext <;>
+    simp [symmetricPair, pairAverage, heatStep] <;> ring
+
+/-- Squared rational spectral separation energy. -/
+def pairDifferenceEnergy (q r : ℚ) : ℚ := (q - r) ^ 2
+
+/-- Exact finite heat-energy scaling identity. -/
+theorem pairDifferenceEnergy_heat_eq (c t q r : ℚ) :
+    pairDifferenceEnergy (heatStep c t q) (heatStep c t r) =
+      (1 - t) ^ 2 * pairDifferenceEnergy q r := by
+  unfold pairDifferenceEnergy
+  rw [heatStep_difference]
+  ring
+
+/-- Nonnegative subterminal heat steps cannot increase the
+squared spectral separation energy. -/
+theorem pairDifferenceEnergy_heat_le
+    (c t q r : ℚ) (ht0 : 0 ≤ t) (ht1 : t ≤ 1) :
+    pairDifferenceEnergy (heatStep c t q) (heatStep c t r) ≤
+      pairDifferenceEnergy q r := by
+  rw [pairDifferenceEnergy_heat_eq]
+  have hfactor : 0 ≤ 1 - t := sub_nonneg.mpr ht1
+  have hfactorLe : 1 - t ≤ (1 : ℚ) := by linarith
+  have hsquare : (1 - t) ^ 2 ≤ (1 : ℚ) := by nlinarith
+  have henergy : 0 ≤ pairDifferenceEnergy q r := sq_nonneg _
+  nlinarith
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
