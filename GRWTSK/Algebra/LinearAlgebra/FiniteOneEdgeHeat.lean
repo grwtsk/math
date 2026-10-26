@@ -52,8 +52,7 @@ theorem heat_preserves_sum (t : ℝ) (f : Cochain0) :
 theorem heat_zero : heat 0 = LinearMap.id := by
   ext f i
   rw [heat_apply]
-  simp
-  ring
+  simp <;> ring
 
 /-- The exact time-addition law with no time-discretization error. -/
 theorem heat_add (s t : ℝ) :
