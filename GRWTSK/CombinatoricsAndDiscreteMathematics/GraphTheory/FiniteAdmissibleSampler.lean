@@ -167,6 +167,84 @@ theorem positivePath_iff_allowedPath (S : Sampler V)
   · intro path
     exact AllowedPath.toPositive S path
 
+/-!
+## Real Gibbs diffusion and typed support
+
+The Gibbs sampler is row-stochastic over real weights. Its action on
+column heat vectors uses the transposed indexing
+`probability source target`; no rational-kernel identification is made.
+-/
+
+section TypeHeat
+
+variable {Kind : Type*} [DecidableEq Kind]
+
+/-- One real-valued diffusion step using the actual normalized Gibbs
+probabilities, with the source index first. -/
+def realStep (S : Sampler V) (heat : V → ℝ) (target : V) : ℝ :=
+  ∑ source, S.probability source target * heat source
+
+/-- Aggregate real heat over the vertices of one selected type. -/
+def realTypeMass (typeOf : V → Kind) (heat : V → ℝ) (kind : Kind) : ℝ :=
+  ∑ target, if typeOf target = kind then heat target else 0
+
+/-- One positive-heat source and one actually allowed edge suffice to
+give strictly positive mass to the destination's declared type. -/
+theorem realTypeMass_step_pos_of_allowed
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ source, 0 ≤ heat source)
+    (typeOf : V → Kind) (source target : V)
+    (source_pos : 0 < heat source)
+    (allowed : S.allowed source target = true) :
+    0 < realTypeMass typeOf (S.realStep heat) (typeOf target) := by
+  have hterm :
+      S.probability source target * heat source ≤ S.realStep heat target := by
+    unfold realStep
+    exact Finset.single_le_sum
+      (fun other _ => mul_nonneg (S.probability_nonneg other target)
+        (nonnegative other))
+      (Finset.mem_univ source)
+  have hstep_nonneg : ∀ v, 0 ≤ S.realStep heat v := by
+    intro v
+    unfold realStep
+    exact Finset.sum_nonneg (fun source _ =>
+      mul_nonneg (S.probability_nonneg source v) (nonnegative source))
+  have htype :
+      S.realStep heat target ≤
+        realTypeMass typeOf (S.realStep heat) (typeOf target) := by
+    have hsingle :
+        (if typeOf target = typeOf target then S.realStep heat target else 0) ≤
+          ∑ v, if typeOf v = typeOf target then S.realStep heat v else 0 := by
+      exact Finset.single_le_sum
+        (fun v _ => by
+          split_ifs
+          · exact hstep_nonneg v
+          · exact le_refl 0)
+        (Finset.mem_univ target)
+    simpa [realTypeMass] using hsingle
+  exact lt_of_lt_of_le
+    (mul_pos (S.probability_pos_of_allowed source target allowed) source_pos)
+    (le_trans hterm htype)
+
+/-- A type-spanning family of admissible edges from currently positive
+sources proves one-step coverage for the actual real Gibbs sampler. -/
+theorem real_type_complete_of_supported_allowed_edges
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ source, 0 ≤ heat source)
+    (typeOf : V → Kind)
+    (supported : ∀ kind, ∃ source target,
+      typeOf target = kind ∧
+      0 < heat source ∧
+      S.allowed source target = true) :
+    ∀ kind, 0 < realTypeMass typeOf (S.realStep heat) kind := by
+  intro kind
+  obtain ⟨source, target, hkind, hsource, hedge⟩ := supported kind
+  have hpos := realTypeMass_step_pos_of_allowed S heat nonnegative
+    typeOf source target hsource hedge
+  simpa [hkind] using hpos
+
+end TypeHeat
+
 end Sampler
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteAdmissibleSampler
