@@ -228,6 +228,67 @@ theorem surjective_of_type_complete
 
 end TypeDiffusion
 
+/-! ### Explicit rational minorization supplier
+
+This is a sufficient condition on the actual rational kernel, not a
+number-theoretic weighted-sieve theorem or a claim about real Gibbs kernels.
+-/
+
+section UniformMinorization
+
+variable {Kind : Type*} [Fintype Root] [Fintype Kind] [DecidableEq Kind]
+
+/-- A Doeblin-style lower bound for every target coordinate. -/
+def UniformMinorization (kernel : HeatKernel Root) (delta : ℚ) : Prop :=
+  ∀ target source, delta ≤ kernel.transition target source
+
+/-- Pointwise minorization implies a lower bound at every target. -/
+theorem step_lower_of_minorization
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (delta : ℚ) (minor : UniformMinorization kernel delta)
+    (target : Root) :
+    delta * (∑ source, heat source) ≤ kernel.step heat target := by
+  unfold HeatKernel.step
+  rw [Finset.mul_sum]
+  apply Finset.sum_le_sum
+  intro source _
+  exact mul_le_mul_of_nonneg_right (minor target source) (nonnegative source)
+
+/-- If total heat is positive and each type has a representative, a
+strictly positive uniform kernel minorization gives positive heat in
+every type after one step. -/
+theorem type_complete_of_uniform_minorization
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (surj : Function.Surjective typeOf)
+    (delta : ℚ) (delta_pos : 0 < delta)
+    (mass_pos : 0 < ∑ root, heat root)
+    (minor : UniformMinorization kernel delta) :
+    TypeCompleteAt typeOf (kernel.step heat) := by
+  intro kind
+  obtain ⟨target, htarget⟩ := surj kind
+  have hpoint := step_lower_of_minorization kernel heat nonnegative delta minor target
+  have htype := aggregate_step_lower_of_edge kernel heat nonnegative typeOf target target
+  have hpositive : 0 < kernel.step heat target :=
+    lt_of_lt_of_le (mul_pos delta_pos mass_pos) hpoint
+  have hsum : kernel.step heat target ≤
+      aggregate typeOf (kernel.step heat) (typeOf target) := by
+    have hsingle :
+        (if typeOf target = typeOf target then kernel.step heat target else 0) ≤
+          ∑ root, if typeOf root = typeOf target then kernel.step heat root else 0 := by
+      exact Finset.single_le_sum
+        (fun root _ => by
+          split_ifs
+          · exact kernel.step_nonneg heat nonnegative root
+          · exact le_refl 0)
+        (Finset.mem_univ target)
+    simpa [aggregate] using hsingle
+  rw [htarget] at hsum
+  exact lt_of_lt_of_le hpositive hsum
+
+end UniformMinorization
+
 /-- Root names plus the current exact heat are the retained prioritization state. -/
 structure State (Root : Type*) where
   heat : Root → ℚ
