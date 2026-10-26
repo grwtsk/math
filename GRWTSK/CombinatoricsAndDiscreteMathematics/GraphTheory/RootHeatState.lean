@@ -287,6 +287,28 @@ theorem type_complete_of_uniform_minorization
   rw [htarget] at hsum
   exact lt_of_lt_of_le hpositive hsum
 
+/-- A positive uniform kernel minorization and conserved positive total heat
+supply type completeness after every positive diffusion time, without
+postulating a new steering witness at each time. The uniform minorization
+of the actual kernel remains an explicit, unproved arithmetic supplier. -/
+theorem eventually_type_complete_of_uniform_minorization
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind) (surj : Function.Surjective typeOf)
+    (delta : ℚ) (delta_pos : 0 < delta)
+    (mass_pos : 0 < ∑ root, initial root)
+    (minor : UniformMinorization kernel delta)
+    (time : Nat) :
+    TypeCompleteAt typeOf (kernel.evolve initial (time + 1)) := by
+  change TypeCompleteAt typeOf (kernel.step (kernel.evolve initial time))
+  apply type_complete_of_uniform_minorization kernel
+    (kernel.evolve initial time)
+    (kernel.evolve_nonneg initial nonnegative time)
+    typeOf surj delta delta_pos
+  · rw [kernel.evolve_mass initial time]
+    exact mass_pos
+  · exact minor
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
