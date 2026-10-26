@@ -8,7 +8,7 @@ set_option autoImplicit false
 noncomputable section
 
 /-!
-# Four genuine quadratic arcs with exact closed C1 contact
+# Four genuine quadratic arcs with exact endpoint and first-jet contacts
 
 A single selected closed piecewise-quadratic source has four oriented arcs
 with vertices (1,0), (0,1), (-1,0), (0,-1).  Each arc has an explicitly
@@ -16,7 +16,7 @@ selected control point and adjacent arcs have the *same parameterized
 velocity* at their shared endpoint.  The fourth-to-first seam is checked
 along with the three interior seams.
 
-This is an actual finite closed geometric curve, not a cycle inserted into
+This is a finite closed chain of geometrically matching quadratic arcs, not a cycle inserted into
 the previously strict frequency-directed descent DAG. It does not by itself
 supply a planar embedding/nonselfintersection theorem, geodesic equation,
 surface quotient, Fredholm determinant, or zeta identification.

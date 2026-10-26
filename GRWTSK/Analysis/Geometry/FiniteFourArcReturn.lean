@@ -89,7 +89,7 @@ def quarterTurn : Plane →ₗ[ℝ] Plane where
   map_add' x y := by
     funext j
     fin_cases j <;>
-      simp [quarterPoint, Pi.add_apply]
+      simp [quarterPoint, Pi.add_apply] <;> ring
   map_smul' a x := by
     funext j
     fin_cases j <;>
@@ -142,13 +142,10 @@ theorem geometricSystem_boundaryReturn_ne_id :
 last arc's start. -/
 theorem threePhaseDescent_vertex :
     threePhaseDescent (vertex 0) = vertex 3 := by
-  change quarterTurn (quarterTurn (quarterTurn (vertex 0))) = vertex 3
-  rw [quarterTurn_vertex 0]
-  norm_num [next]
-  rw [quarterTurn_vertex 1]
-  norm_num [next]
-  rw [quarterTurn_vertex 2]
-  norm_num [next]
+  funext j
+  fin_cases j <;>
+    norm_num [threePhaseDescent, quarterTurn, quarterPoint,
+      vertex, xy, LinearMap.comp_apply]
 
 /-- The specified closing edge maps the final source vertex to the
 original source vertex; it is not an edge of the three-step DAG. -/
