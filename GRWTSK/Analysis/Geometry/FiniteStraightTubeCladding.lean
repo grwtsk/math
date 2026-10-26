@@ -138,16 +138,6 @@ theorem exterior_site_amplitude_sq_le
     simpa [hmask] using h
   exact hsingle.trans (T.sampled_exterior_mass_le site hλ u hB)
 
-/-- The actual straight tube region is unchanged for every exterior
-strength: a finite potential is not a geometry-modifying operation. -/
-theorem region_independent_of_exterior_strength
-    (T : Tube d) (λ μ : ℝ) :
-    T.region = T.region := rfl
-
-theorem volume_independent_of_exterior_strength
-    (T : Tube d) (λ μ : ℝ) :
-    T.lebesgueVolume = T.lebesgueVolume := rfl
-
 end Tube
 
 end GRWTSK.Analysis.Geometry.FiniteStraightTubeFamily
