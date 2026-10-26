@@ -1438,4 +1438,45 @@ theorem rightOuterPrimeMass_le_cutoff_theta
       exact ArithmeticFunction.vonMangoldt_apply_prime
         (Finset.mem_filter.mp hp).2
 
+/-! ## Geometric cutoff ordering and combined theta tail budget
+
+The square-center/radius definitions ensure both integer floor
+cutoffs lie within the original square interval. No short-interval
+distribution theorem is needed for these geometric facts.
+-/
+
+/-- The left floor cutoff is not below the lower square endpoint. -/
+theorem square_le_leftOuterCutoff (n : ℕ) :
+    n ^ 2 ≤ leftOuterCutoff n := by
+  unfold leftOuterCutoff
+  apply Nat.le_floor
+  have hcenter := center_sub_radius n
+  have hr := squareRadius_pos n
+  norm_cast
+  linarith
+
+/-- The right floor cutoff does not exceed the upper square endpoint. -/
+theorem rightOuterCutoff_le_upper_square (n : ℕ) :
+    rightOuterCutoff n ≤ (n + 1) ^ 2 := by
+  unfold rightOuterCutoff
+  apply Nat.floor_le
+  have hcenter := center_add_radius n
+  have hr := squareRadius_pos n
+  norm_cast
+  linarith
+
+/-- The exact two-tail mass is controlled by the SUM of the two
+separate theta increments at their genuine integer cutoffs. -/
+theorem outerSquarePrimeMass_le_cutoff_theta_sum (n : ℕ) :
+    (∑ p ∈ outerSquarePrimes n,
+      ArithmeticFunction.vonMangoldt p) ≤
+      (Chebyshev.theta ((leftOuterCutoff n : ℕ) : ℝ) -
+        Chebyshev.theta (((n ^ 2 : ℕ) : ℝ))) +
+      (Chebyshev.theta ((((n + 1) ^ 2 : ℕ) : ℝ)) -
+        Chebyshev.theta ((rightOuterCutoff n : ℕ) : ℝ)) := by
+  rw [outerSquarePrimeMass_eq_left_add_right]
+  exact add_le_add
+    (leftOuterPrimeMass_le_cutoff_theta n (square_le_leftOuterCutoff n))
+    (rightOuterPrimeMass_le_cutoff_theta n (rightOuterCutoff_le_upper_square n))
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
