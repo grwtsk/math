@@ -736,6 +736,60 @@ theorem real_type_complete_on_cycle_progression
   exact ⟨source, target, hkind, hsource,
     AllowedPath.pad_by_cycle S path cycle count⟩
 
+/-!
+## Eventual coverage from genuine residue-complete return paths
+
+This is a sufficient finite certificate of path-length saturation,
+not a claim that the arithmetic sieve supplies such return paths.
+-/
+
+/-- Genuine return paths of lengths B+r for all residues r<p, together
+with a genuine return cycle of length p>0, yield return paths of all
+lengths B+k. -/
+theorem AllowedPath.return_of_residue_complete
+    (S : Sampler V) {target : V} (period bound : ℕ)
+    (period_pos : 0 < period)
+    (cycle : AllowedPath S target target period)
+    (residues : ∀ r, r < period →
+      AllowedPath S target target (bound + r)) :
+    ∀ extra, AllowedPath S target target (bound + extra) := by
+  intro extra
+  have hr : extra % period < period := Nat.mod_lt extra period_pos
+  have hbase := residues (extra % period) hr
+  have hrepeat := AllowedPath.repeat_cycle S cycle (extra / period)
+  have hconcat := AllowedPath.append S hbase hrepeat
+  have hdiv : extra % period + extra / period * period = extra := by
+    simpa [Nat.mul_comm] using (Nat.mod_add_div extra period)
+  simpa [Nat.add_assoc, hdiv] using hconcat
+
+/-- Common entry paths and residue-complete genuine return paths give
+positive real Gibbs mass to every type at every sufficiently late time.
+No uniform quantitative mass floor is claimed. -/
+theorem eventually_real_type_complete_of_residue_returns
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (start period bound : ℕ)
+    (period_pos : 0 < period)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target start ∧
+      AllowedPath S target target period ∧
+      (∀ r, r < period →
+        AllowedPath S target target (bound + r))) :
+    ∀ extra kind,
+      0 < realTypeMass typeOf
+        (S.realEvolve heat (start + bound + extra)) kind := by
+  intro extra
+  apply S.real_type_complete_of_allowed_paths heat nonnegative
+    typeOf (start + bound + extra)
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path, cycle, residues⟩ := reach kind
+  have hreturn := AllowedPath.return_of_residue_complete S period bound
+    period_pos cycle residues extra
+  have hpath := AllowedPath.append S path hreturn
+  exact ⟨source, target, hkind, hsource, by
+    simpa [Nat.add_assoc] using hpath⟩
+
 end TypeHeat
 
 end Sampler
