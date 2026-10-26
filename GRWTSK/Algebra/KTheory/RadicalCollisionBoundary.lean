@@ -320,4 +320,41 @@ theorem no_exact_multiplicityOneType_decoder_on_certified_sieve
     1 multiplicityOneType (kZeroRadical lift) 1
     htwoReach hfourReach hsameK hdistinct
 
+/-- The source-dependent diagonal-biased arithmetic diffusion detects
+both Boolean multiplicity labels after one step from **any**
+nonnegative initial finite-scope distribution with positive mass.
+Nevertheless, no decoder depending only on the radical-derived
+K₀-shaped feature recovers these labels on the certified scope.
+This is finite type coverage coupled to a concrete information-loss
+obstruction; no analytic K-theory or asymptotic steering is inferred. -/
+theorem multiplicityOneType_diagonal_complete_and_collision
+    (lift : ℕ →* M) (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_positive : ∃ n ∈ scope N, 0 < initial n) :
+    (certifiedArithmeticInventory 3 N hN).sieveTypeCompleteAt
+        1 multiplicityOneType
+        (fun _ n => (diagonalKernel 3 N hN).step initial n) 1 ∧
+      ¬ ∃ decode : GrothendieckKZero M → Bool,
+          ∀ n ∈ (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1,
+            multiplicityOneType n = decode (kZeroRadical lift n) := by
+  constructor
+  · apply (diagonalKernel_certified_oneStep_complete_iff
+      3 N hN initial initial_nonneg initial_positive
+        multiplicityOneType).mpr
+    intro label
+    cases label with
+    | false =>
+        refine ⟨4, ?_, multiplicityOneType_four, ?_⟩
+        · change (4 : ℕ) ∈ Finset.Icc 1 N
+          exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+        · decide
+    | true =>
+        refine ⟨2, ?_, multiplicityOneType_two, ?_⟩
+        · change (2 : ℕ) ∈ Finset.Icc 1 N
+          exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+        · decide
+  · exact no_exact_multiplicityOneType_decoder_on_certified_sieve
+      lift N hN h4
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
