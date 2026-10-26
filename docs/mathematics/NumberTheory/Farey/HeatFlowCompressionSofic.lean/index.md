@@ -47,3 +47,7 @@ Lexical command heads are source observations, not a Lean parse or theorem accep
 | 26 | `theorem` | [ThreeQuarterRefinement.seed_zeroFree](declarations/threequarterrefinement-seed-zerofree--a3b40a652a87241587d6898b.md) | 336 | `BLOCKED_NATIVE_ADMISSION` |
 | 27 | `theorem` | [ThreeQuarterRefinement.limit_zeroFree](declarations/threequarterrefinement-limit-zerofree--d8ca99ed659721b50b185fab.md) | 346 | `BLOCKED_NATIVE_ADMISSION` |
 | 28 | `theorem` | [ThreeQuarterRefinement.asymptotically_free_accounting](declarations/threequarterrefinement-asymptotically-free-accounting--b7b8689e58be3b3832f89932.md) | 355 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+This module shares source blob `290757773fe6f295c025287d0d673d9d82c773df` with the cross-branch replay pinned at Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae`; the target declarations selected from this module remain `NOT_RUN`. [Full roster and terminal evidence](../../../verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->

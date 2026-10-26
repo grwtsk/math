@@ -4,6 +4,8 @@
 [Latest source-bound verification observations](docs/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
 <!-- END VERIFICATION AMENDMENT -->
 
+The latest cross-branch 107-declaration replay ended in an operational cancellation before declaration audits or exact type checks; every target remains not run. [Terminal status and full target roster](docs/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) · [public pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). The event is not a mathematical counterexample, and S₃ remains unavailable.
+
 Mathematical results, formal proofs, and explicit open problems by **grwtsk contributors**. This is the canonical source for GRWTSK mathematics.
 
 [**Browse the results index →**](docs/mathematics/index.md)

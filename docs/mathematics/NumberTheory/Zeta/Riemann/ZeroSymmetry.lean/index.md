@@ -32,3 +32,7 @@ Lexical command heads are source observations, not a Lean parse or theorem accep
 | 11 | `theorem` | [nontrivial_zero_conjugate_iff](declarations/nontrivial-zero-conjugate-iff--ab89de56ca4c083a07cac963.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
 | 12 | `theorem` | [nontrivial_zero_reflect_iff](declarations/nontrivial-zero-reflect-iff--4a891ff994864434fe7a4424.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
 | 13 | `theorem` | [nontrivial_zero_critical_reflection_iff](declarations/nontrivial-zero-critical-reflection-iff--2dd2e17601116e2f08973faa.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+This module shares source blob `09333a73feb176009cfe19f0ae48d436a5af8ecd` with the cross-branch replay pinned at Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae`; the target declarations selected from this module remain `NOT_RUN`. [Full roster and terminal evidence](../../../../verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->

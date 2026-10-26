@@ -50,3 +50,7 @@ Lexical command heads are source observations, not a Lean parse or theorem accep
 | 29 | `theorem` | [zeta_unboundedTailContexts_of_all_capacityCertificates](declarations/zeta-unboundedtailcontexts-of-all-capacitycertificates--aaca5532a940bc49c1662de3.md) | 421 | `BLOCKED_NATIVE_ADMISSION` |
 | 30 | `theorem` | [zeta_unboundedTailContexts_iff_all_capacityCertificates](declarations/zeta-unboundedtailcontexts-iff-all-capacitycertificates--228c177b76932d0791455353.md) | 441 | `BLOCKED_NATIVE_ADMISSION` |
 | 31 | `theorem` | [zeta_irrational_of_all_capacityCertificates_and_rational_sofic](declarations/zeta-irrational-of-all-capacitycertificates-and-rational-sofic--cdc307917ae8e1d09585e217.md) | 457 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+This module shares source blob `98ce2d34115ac5326da6e79a8de75bb2dc645442` with the cross-branch replay pinned at Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae`; the target declarations selected from this module remain `NOT_RUN`. [Full roster and terminal evidence](../../../../verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->

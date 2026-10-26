@@ -35,3 +35,7 @@ Source commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a
 Source articles keep exact hypotheses and proof text in their original context. Module verification links report scoped public evidence; generation does not establish kernel acceptance, a transitive axiom audit, mathematical admission or a composite proof.
 
 [Machine-readable manifest](../reference/complete-documentation.json) · [Every declaration record and shard](../reference/complete-documentation.json)
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+[Terminal cross-branch verification update](verification-updates.md): the 107-target attempt ended before declaration audits; all 107 targets remain `NOT_RUN`, all 10 exact type checks remain `NOT_RUN`, and S₃ is unavailable. [Full target roster and terminal evidence](verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->

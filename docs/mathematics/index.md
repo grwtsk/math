@@ -148,3 +148,7 @@ Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 obs
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+[Terminal cross-branch verification update](verification-updates.md): the 107-target attempt ended before declaration audits; all 107 targets remain `NOT_RUN`, all 10 exact type checks remain `NOT_RUN`, and S₃ is unavailable. [Full target roster and terminal evidence](verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->
