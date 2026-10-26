@@ -1,0 +1,52 @@
+{
+  "schema": "grwtsk.paper-bridge-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "UNVERIFIED_DEFINITIONS_AND_SOURCE_PROOF_CANDIDATES",
+  "native_status": "NOT_RUN",
+  "execution_authority": false,
+  "proof_acceptance": false,
+  "source_commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+  "source": "GRWTSK/NumberTheory/Primes/StrictPrimeEndpoint.lean",
+  "source_blob": "4be6dca05ddced32e5f6c4524b8d1784d8f76629",
+  "source_sha256": "36ba3b0b4697aad79a385e93ca0504daf296782fe5e9146c903bc33123b32310",
+  "required_module_declarations": [
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.primeAt",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.primeAt_zero",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.primeAt_prime",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.strict_count_primeAt",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.inclusive_count_primeAt",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.enumeration_card_eq_strict_count",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.enumeration_card_primeAt",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.strictCountResidual",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.strictCountResidual_primeAt",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_eq",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_bound",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_budget_of_counting_estimate",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_bound_of_counting_estimate",
+    "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_bound_of_scaled_estimate"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/compiler-owned roots are also required; the source declaration list does not cap the compiled population.",
+  "expected_type_source": {
+    "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+    "path": "verification/NumberTheory/Primes/StrictPrimeEndpointTypes.lean",
+    "blob": "e47f8a78fad07f970e8252bab57c550e5adcaf3a",
+    "sha256": "1e98fa4931097b392cf46128238caf9e45d126aa32456ff2f44f14f64dca7337"
+  },
+  "expected_type_examples": 8,
+  "type_scope": "Eight selected semantic interfaces in an independent importing source; not an exhaustive type audit of every public declaration.",
+  "acceptance": [
+    "Fresh source-bound compilation of this exact module and its required project/upstream source closure using the maintained Noe route after the user lifts the hold.",
+    "Strict declaration-scoped transitive axiom audits for all required and compiler-owned declarations; sorryAx and all other forbidden axioms reject.",
+    "Fresh successful compilation of the independently specified importing type consumer.",
+    "Matching final source/runtime drift gates, supported resource admission and exact cleanup; an existing source file or static check is not acceptance."
+  ],
+  "verification_commands_executed": [],
+  "hold": "Native verification is explicitly on hold; no preparation, admission, queued request or execution is authorized by this manifest."
+}
