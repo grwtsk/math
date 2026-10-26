@@ -131,12 +131,15 @@ theorem mixerKernel_action_eq_mixerAt
         (Complex.I * (Real.sin β : ℂ)) * ψ (flipAt v σ)
   simp_rw [sub_mul]
   rw [Finset.sum_sub_distrib]
-  simp_rw [show ∀ τ : Configuration V,
-    (if σ = flipAt v τ then
-      Complex.I * (Real.sin β : ℂ) else 0) * ψ τ =
-    (if τ = flipAt v σ then
-      Complex.I * (Real.sin β : ℂ) else 0) * ψ τ
-      from fun τ => by rw [if_congr (hf τ) rfl rfl]]
+  have hcond (τ : Configuration V) :
+      (if σ = flipAt v τ then
+        Complex.I * (Real.sin β : ℂ) else 0) =
+      (if τ = flipAt v σ then
+        Complex.I * (Real.sin β : ℂ) else 0) := by
+    by_cases h : σ = flipAt v τ
+    · simp [h, (hf τ).mp h]
+    · simp [h, (hf τ).not.mp h]
+  simp_rw [hcond]
   simp [ite_mul, Finset.sum_ite_eq']
 
 /-- Explicit polynomial obtained by expanding
