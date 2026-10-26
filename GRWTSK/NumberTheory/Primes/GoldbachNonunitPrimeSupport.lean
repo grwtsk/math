@@ -36,8 +36,8 @@ theorem prime_nonunit_iff_dvd (q p : ℕ) (hp : Nat.Prime p) :
   simp
 
 /-- Exact prime-only nonunit mass from a supplied, pointwise
-prime-support equivalence. The equivalence is the missing arithmetic
-supplier and is not silently inferred. -/
+prime-support equivalence. Retained as a conditional interface so that
+existing downstream declarations preserve their hypotheses. -/
 theorem nonunitPrimeMass_eq_primeDivisorSum
     (q N : ℕ)
     (hsupport : ∀ p : ℕ, Nat.Prime p →
@@ -46,7 +46,7 @@ theorem nonunitPrimeMass_eq_primeDivisorSum
       ∑ p ∈ finitePrimeDivisors q N, Real.log (p : ℝ) := by
   classical
   unfold nonunitPrimeMass finitePrimeDivisors
-  rw [← Finset.sum_filter]
+  simp only [Finset.sum_filter]
   apply Finset.sum_congr rfl
   intro n hn
   by_cases hp : Nat.Prime n
