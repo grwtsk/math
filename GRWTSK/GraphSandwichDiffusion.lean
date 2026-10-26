@@ -1076,4 +1076,72 @@ theorem SourceSearchInventory.not_sieveTypeCompleteAt_of_missing_type
   obtain ⟨vertex, member, sameType, _⟩ := complete targetType
   exact (missing vertex member) sameType
 
+
+/-- Total weighted-sieve/diffusion mass assigned to a target type
+*among certified-reachable vertices*. This is an abstract observable,
+not yet the concrete heat-semigroup mass from an operator model. -/
+noncomputable def SourceSearchInventory.sieveTypeMass
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T) : ℝ := by
+  classical
+  exact ((inventory.certifiedSearch source depth).filter
+    (fun vertex => typeOf vertex = targetType)).sum
+    (fun vertex => diffusedSieveWeight depth vertex)
+
+/-- Positive aggregate mass on a finite certified type fiber yields
+a positive-weight certified vertex. No nonnegativity hypothesis is
+needed for this implication: if every summand were nonpositive, the
+finite sum could not be positive. -/
+theorem SourceSearchInventory.sieveTypeHit_of_mass_pos
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (massPos : 0 < inventory.sieveTypeMass source typeOf
+      diffusedSieveWeight depth targetType) :
+    inventory.sieveTypeHit source typeOf
+      diffusedSieveWeight depth targetType := by
+  classical
+  by_contra noHit
+  have hnonpos :
+      inventory.sieveTypeMass source typeOf
+        diffusedSieveWeight depth targetType ≤ 0 := by
+    unfold SourceSearchInventory.sieveTypeMass
+    apply Finset.sum_nonpos
+    intro vertex member
+    have typed := Finset.mem_filter.mp member
+    by_contra notNonpos
+    have positive : 0 < diffusedSieveWeight depth vertex :=
+      lt_of_not_ge notNonpos
+    exact noHit ⟨vertex, typed.1, typed.2, positive⟩
+  exact (not_lt_of_ge hnonpos) massPos
+
+/-- Finite-type completeness follows from **per-type eventual positive
+aggregate diffused-sieve mass on certified reachable fibers**. The
+positivity/steering premise remains an independent analytic/graph
+supplier: it is not derived here from a spectral semigroup or
+candidate-only sieve search. -/
+theorem SourceSearchInventory.sieveTypeComplete_eventually_of_mass_steering
+    {T : Type*} [Fintype T]
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → T) (diffusedSieveWeight : ℕ → V → ℝ)
+    (hsteering : ∀ targetType : T, ∃ cutoff : ℕ, ∀ depth : ℕ,
+      cutoff ≤ depth →
+        0 < inventory.sieveTypeMass source typeOf
+          diffusedSieveWeight depth targetType) :
+    ∃ cutoff : ℕ, ∀ depth : ℕ, cutoff ≤ depth →
+      inventory.sieveTypeCompleteAt source typeOf
+        diffusedSieveWeight depth := by
+  apply inventory.sieveTypeComplete_eventually_of_steering
+    source typeOf diffusedSieveWeight
+  intro targetType
+  obtain ⟨cutoff, eventuallyPositive⟩ := hsteering targetType
+  refine ⟨cutoff, ?_⟩
+  intro depth depthLe
+  exact inventory.sieveTypeHit_of_mass_pos
+    source typeOf diffusedSieveWeight depth targetType
+    (eventuallyPositive depth depthLe)
+
 end GRWTSK.GraphSandwichDiffusion
