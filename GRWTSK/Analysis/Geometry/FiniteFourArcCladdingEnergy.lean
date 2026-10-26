@@ -79,6 +79,20 @@ theorem claddingMass_le_of_energy_budget
   have h := barrier_mass_le_energy mask λ u
   nlinarith
 
+/-- Strict quantitative confinement: if the finite total energy
+is bounded by B and the cladding penalty λ is large enough that
+B < λ ε, then its cladding squared mass is strictly below ε.
+This is an energy estimate; it does not assert literal topological
+deletion of cladding cells even at very large finite λ. -/
+theorem claddingMass_lt_of_high_barrier
+    (mask : Fin 4 → Bool) {λ B ε : ℝ}
+    (hλ : 0 < λ) (u : FourCochain)
+    (hB : mediumEnergy mask λ u ≤ B)
+    (hthreshold : B < λ * ε) :
+    claddingMass mask u < ε := by
+  have h := barrier_mass_le_energy mask λ u
+  nlinarith
+
 /-- The energy is monotone in the barrier strength for fixed
 geometry and state, without altering edges or 2-cells. -/
 theorem mediumEnergy_monotone
