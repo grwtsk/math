@@ -283,3 +283,162 @@ After the previous source validation gate #1267 has been resolved, use the exist
 For future paper-derived formal source, update the canonical paper-to-formalization-references.md with original upstream authors/versions, actual hypotheses, fully qualified new declarations, source commits/blobs, real receipts/NOT_RUN and missing mathematical bridges. The present squarefree bound is independent elementary mathematics, not a theorem imported from Tao or Hastings.
 
 **Current receipt status:** new Lean source NOT_WRITTEN; source elaboration NOT_RUN; module/root compilation NOT_RUN; fresh kernel checking NOT_RUN; full transitive axiom audit NOT_RUN. No remote workflows dispatched, no force pushes or merges. Future effectful verification logs and receipts belong in grwtsk/noeaaeue outside math.
+
+
+---
+
+## Bounded successor — Positive collision density forces persistent radical-only decoding error (2026-10-26)
+
+**Attribution:** grwtsk contributors. **Novel mathematical status:** complete elementary finite counting/Markov/information-theory proofs below, **NOT new Lean declarations**, **NOT an imported Tao theorem**, and **NOT kernel-accepted GRWTSK mathematics**. This section strengthens the existing *existential* radical K0-shaped no-decoder theorem by a **cutoff-independent quantitative misclassification floor**. It is genuinely different from the concurrently added positive type-mass and pointwise eventual type-coverage source. Gate #1267 remains OPEN; no dependent mathematical Lean source added.
+
+### Pinned existing declarations, precise objects and trust boundary
+
+Source inspected at immutable grwtsk/math main **f4155d626ba567822d4a3a7df8ad9474cb08185d**:
+
+- GRWTSK/GraphSandwichDiffusion.lean, blob **7d861591c9721a85819f291aac5178fffd29101a**. Existing GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight, .scope, .totalWeight, .diagonalEdgeWeight, .diagonalKernel, .diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq, .certifiedArithmeticInventory; exact matrix entries follow by expanding definitions, not by assuming another kernel.
+- GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean, blob **b5ffd382ebf12afc5bf8718733dcf7da2391c19c**. Existing GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType, .multiplicityOneType, .no_exact_multiplicityOneType_decoder_on_certified_sieve and .twoAdicMultiplicityType_buffered_eventually_pos source theorem family. The last concerns a DIFFERENT buffered kernel, and the earlier no-decoder result does not supply a positive Bayes-error probability bound.
+- GRWTSK/Algebra/KTheory/GrothendieckPort.lean, blob **d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f**. Generic group completion is K0-SHAPED, not a constructed analytic K0(C*) class.
+- Lean v4.33.0 / Mathlib db584cd6d46c92f209a44c0f1c829460d327499d. No executed Lean compile, fresh kernel replay or transitive axiom audit is available for these new mathematical results.
+
+Fix modulus 3 and integer cutoff \(N\ge1\). On the finite full state set \(S_N=\{1,\ldots,N\}\), write
+\[
+w_N(n)=\mathbf1_{\gcd(n,3)=1}\operatorname{rad}(n),\quad
+Z_N=\sum_{n\le N}w_N(n)>0,\quad
+\pi_N(n)=w_N(n)/Z_N.
+\]
+The fine Boolean label is \(c(n)=\mathbf1_{\nu_2(n)=1}\), precisely the existing multiplicityOneType. The observable \(h(n)=\operatorname{rad}(n)\), or \(h_K(n)=(\operatorname{rad}(n),\mathrm{kZeroRadical}(\mathrm{lift},n))\), cannot separate powers. **An observation may also be any deterministic function of h; it cannot add lost exponent information.**
+
+### Theorem F — a positive density of indistinguishable opposite-type pairs
+
+For **every cutoff \(N\ge9216\)**, put \(k=\lfloor N/48\rfloor\ge192\) and let
+\[
+G_k=\{m_j=6j+1:\ k\le j<2k,\quad m_j\ {\rm squarefree}\}.
+\]
+
+By the elementary squarefree progression count proved earlier in this file, \(|G_k|\ge k/2\). Each \(m\in G_k\) is odd and coprime to 3, and \(4m<48k\le N\). Thus **both** integers \(x_m=2m,y_m=4m\) lie in the actual arithmetic sieve scope and
+\[
+h(x_m)=h(y_m)=2m,\quad
+w_N(x_m)=w_N(y_m)=2m,\quad
+c(x_m)=1,\ c(y_m)=0.
+\]
+All pairs are disjoint, and distinct m give distinct radical labels 2m.
+
+For **every** deterministic decoder \(d\) that sees only \(h(n)\), the error under \(\pi_N\) is bounded below by the stationary-reference weight of one member of each indistinguishable pair:
+\[
+\operatorname{Err}_{\pi_N}(d)
+:=\sum_{n=1}^N\pi_N(n)\mathbf1_{d(h(n))\ne c(n)}
+\ge\frac1{Z_N}\sum_{m\in G_k}2m.
+\]
+
+Proof: for each pair, the decoder returns the SAME value on 2m and 4m but the true types are opposite; it misclassifies at least one. Both members have the same positive mass 2m/Z_N. Disjointness allows the pair lower bounds to be summed.
+
+Since every \(m>6k\) and \(|G_k|\ge k/2\), \(\sum_{m\in G_k}2m>6k^2\). On the other hand, \(Z_N\le N(N+1)/2<1152(k+1)^2\) because \(N<48(k+1)\). Therefore
+\[
+\boxed{
+\operatorname{Err}_{\pi_N}(d)>
+\frac1{192}\left(\frac{k}{k+1}\right)^2
+\ge \frac1{256},\qquad N\ge9216.
+}
+\]
+The final weak inequality is elementary for k≥192. The bound is uniform in **N**, not in all possible arithmetic classifiers or non-radical observations.
+
+For the paired K0-shaped feature h_K, the same theorem holds because its second coordinate definitionally factors through Nat.radical. This is an explicit probabilistic strengthening of a generic no-exact-type-decoder obstruction. It does NOT constrain a genuine analytic K0 class that independently contains exponent-sensitive information.
+
+### Theorem G — exact strong lumpability of the existing source-dependent diagonal kernel
+
+The actual GRWTSK source-dependent transition has entries
+\[
+K_N(x,y)=\frac{w_N(y)(1+\mathbf1_{x=y})}{Z_N+w_N(x)}
+\]
+in SOURCE-FIRST convention. On finite \(S_N\), \(w_N(x)\) factors through the radical: if h(x)=h(x′), then x and x′ have identical prime support, hence the same coprimality-to-3 status and \(w_N(x)=w_N(x′)\).
+
+For a coarse radical \(a\in h(S_N)\), let \(v_a=w_N(x)\) for any x with h(x)=a (well-defined); let \(W_b=\sum_{y:h(y)=b}w_N(y)\). Summing the fine row over all targets of coarse radical b gives
+\[
+\boxed{
+\overline K_N(a,b)=
+\frac{W_b+v_a\,\mathbf1_{a=b}}{Z_N+v_a}.
+}
+\]
+
+The RHS depends on x **only through a=h(x)**, so K_N is strongly lumpable with respect to h. It is nonnegative, row-stochastic since \(\sum_bW_b=Z_N\), and it gives an exact intertwiner between fine and coarse Markov distributions.
+
+**This is a genuine special-case positive answer to the earlier general lumpability criterion**, and is distinct from the odd-integer *local Metropolis path*, for which coarse radical lumpability can fail. It does not repair type decoding: exact radical evolution says nothing about prime exponents hidden inside each radical fiber.
+
+### Theorem H — uniform decoding-error floor after any positive diffusion step
+
+Let \(w_{\max}=\max_{x\in S_N}w_N(x)\) and
+\[
+\delta_N=\frac{Z_N}{Z_N+w_{\max}}\ge\frac12.
+\]
+The row-wise Doeblin minorization from the preceding mathematical proof yields, for every x,y∈S_N,
+\[
+K_N(x,y)\ge\delta_N\pi_N(y).
+\]
+Consequently for any initial probability \(P_0\), any integer \(t\ge1\), and any fine state y, \(P_t(y)\ge\delta_N\pi_N(y)\). For every radical-only deterministic decoder d, the pair argument gives
+\[
+\boxed{
+\operatorname{Err}_{P_t}(d)\ge
+\frac{\delta_N}{Z_N}\sum_{m\in G_k}2m
+\ge\frac{\delta_N}{256}
+\ge\frac1{512}
+\quad(t\ge1,\ N\ge9216).
+}
+\]
+
+Moreover, the earlier direct arithmetic normalization bound \(Z_N\ge3N^2/169\), \(w_{\max}\le N\) gives
+\[
+\operatorname{Err}_{P_t}(d)\ge
+\frac{3N}{256(3N+169)}.
+\]
+This shows that the persistent **single-snapshot** decoding-error floor is unaffected by the speed of coarse Markov mixing. It is not a theorem that arbitrary INITIAL priors remain ambiguous when a decoder also knows their individual fine input identity.
+
+### Theorem I — even a complete finite radical-observation history does not decode the hidden type in stationarity
+
+The actual diagonal kernel is reversible for
+\[
+\rho_N(x)=\frac{w_N(x)(Z_N+w_N(x))}
+{Z_N^2+\sum_zw_N(z)^2}.
+\]
+This measure is supported on the positive-weight survivors, and is stationary. Its reversible time-reversed kernel equals the forward K_N on this support.
+
+For a stationary fine Markov chain \(X_0,\ldots,X_T\) and any observation index \(0\le s\le T\), **the conditional joint law of the entire observed radical history**
+\[
+(h(X_0),\ldots,h(X_T))\mid X_s=x
+\]
+depends on x only through h(x). Proof: conditioned on X_s=x, forward and backward chain portions are independent; the forward and reversed transition kernels are both K_N by detailed balance, and BOTH are strongly lumpable by Theorem G. Thus coarse past and future carry no further information about fine x once its present radical is known.
+
+Hence for any deterministic or randomized classifier \(d\) of the fine Boolean type \(c(X_s)\) from the **entire** observed radical path, its best possible error equals the Bayes-optimal error obtained from h(X_s) alone. The posterior does not become exponent-faithful through temporal observation.
+
+The same concrete pair proof gives for **every finite T and s**:
+\[
+\boxed{
+\Pr[d(h(X_0),\ldots,h(X_T))\ne c(X_s)]
+\ge \frac{\delta_N}{256}\ge\frac1{512}
+\quad(N\ge9216).
+}
+\]
+
+**Alternative finite proof avoiding conditional independence:** define an involution σ of the full finite scope that swaps each selected pair 2m↔4m (m∈G_k), fixing all other states. It preserves w_N, \(\rho_N\), K_N under simultaneous state relabeling and every coarse radical label. Each pair of fine paths related by σ has equal stationary path probability and identical radical-observation history, but has opposite fine Boolean type at time s whenever X_s is a selected pair state. Thus the decoder necessarily errs on at least the stationary mass of one side of all selected pairs. This argument makes the information-loss obstruction independent of any asymptotic mixing-rate calculation.
+
+**Scope:** A full trajectory of MORE informative observables or a separately type-faithful sensor could separate these states. This is a theorem about the specified radical-only observations and any K0-shaped data factoring through them, not a universal impossibility of physical/arithmetic type identification.
+
+### Executed exact arithmetic preflight and evidence boundary
+
+In-session Python 3 standard-library Fraction and integer sieve checks, exit **0**:
+- N=9216,12288,18432, with k=N//48=192,256,384; squarefree witness counts 172,232,351, confirming each count≥k/2. Exact full-scope normalizers Z were 21,783,040; 38,666,044; 87,101,022 respectively.
+- The selected-pair reference masses were exactly 29557/1089152, 267320/9666511 and 403615/14516837, respectively; all exceed the analytical floor 1/256. The full optimal snapshot Boolean decoder using the radical feature had errors approximately 0.07672437, 0.07747082 and 0.07745291 under π_N and 0.07671461, 0.07746347 and 0.07744802 under stationary rho_N; these values are finite evidence ONLY.
+- Verified strong lumpability **exactly** by rational summation of EVERY coarse destination fiber from EVERY fine source for N=12,24,48; and verified stationarity/detailed balance of rho.
+- For stationary N=12, enumerated all 12^(T+1) fine paths for T=0,1,2 using exact Fractions. The Bayes-optimal Boolean error given the entire radical observation sequence was exactly 7/159, equal to the error given only the radical observed at the classified time s (checked for s=0 and s=T). This is a finite control for Theorem I, not a Lean proof.
+- Verified the inequalities between actual Bayes errors, positive pair masses and the uniform lower bound, all by exact integers/Fractions.
+
+No Lean compilation, kernel checking, or axiom audit was run; tests do not substitute for source formalization. The squarefree counting proof itself remains a new paper-and-pencil result pending formalization.
+
+### Next exact Lean chain after the validation gate clears
+
+1. In the EXISTING arithmetic source taxonomy, prove the independently counted squarefree progression pair supplier and injective disjoint pair map m→(2m,4m) at cutoff N≥9216.
+2. Reuse the source's existing multiplicityOneType and radical-factored K0 port; prove the generic finite **pair-collision misclassification lower bound** with an explicit probability weight and *all* deterministic decoders. This requires no Markov machinery.
+3. Establish the **exact coarse radical lumpability of the existing diagonalKernel**, using the above row-fiber formula and actual finite scope (including zero-weight excluded multiples of 3). No arbitrary generic K0 observation is presumed lumpable without a feature-preserving hypothesis.
+4. Then combine the already-pending diagonal Doeblin inequality with the pair lower bound to certify 1/512 error for all positive finite times. Prove reversibility/stationary history symmetry separately, and audit any conditional probability API before attempting Theorem I.
+5. For any new mathematical Lean source, pin its OWN immutable commit/blob, imports, exact hypotheses and new declarations; compile leaf and root only as authorized, fresh kernel replay and transitive #print axioms; store genuine execution receipts outside math in grwtsk/noeaaeue. Do not transfer static source or old TOML verification to a new blob.
+
+**Unresolved larger bridges:** This does not prove type completeness for all arithmetic types, prime-counting conjectures, classical 3D Navier–Stokes global regularity, physical 4D Yang–Mills mass-gap existence, or an analytic K0/KK interpretation of the K0-shaped group completion. The mathematics establishes that even actual positive fine type mass and rapid reversible diffusion can coexist with a strictly positive, cutoff-uniform radical-observation error.
