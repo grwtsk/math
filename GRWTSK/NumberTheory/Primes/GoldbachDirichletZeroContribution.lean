@@ -464,5 +464,182 @@ theorem norm_rightPerronTruncation_intervalIntegral_le_of_continuity
     (intervalIntegrable_rightPerronTruncation
       q N χ σ hσ hN (-T) T)
 
+
+/-!
+## Exact finite-height Perron polynomial identity and endpoint
+
+The right vertical line, parametrized upward by sigma + i*t,
+is normalized with 1/(2*pi) in the real t integral. This is a
+real-parameter normalization, not a formalized curve-integral map.
+
+At finite height the kernel is NOT a sharp cutoff indicator. The
+strict n<N prefix plus HALF of the n=N coefficient is an explicit
+target, and finitePerronHeightDefect retains all errors from
+approximating it. No limiting or zero-contour claim follows.
+-/
+
+/-- Normalized finite-height right-line integral of the ACTUAL
+Dirichlet polynomial through the inclusive index N. -/
+def finitePerronPolynomialIntegral
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) : ℂ :=
+  ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+    ∫ t in (-T)..T,
+      (∑ n ∈ Finset.range (N + 1),
+        LSeries.term (dirichletVonMangoldtCoefficient q χ)
+          (⟨σ, t⟩ : ℂ) n) *
+      ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))
+
+/-- Individual normalized, finite-height Dirichlet polynomial term.
+Neither an infinite-height limit nor an indicator identity is asserted. -/
+def finitePerronTermIntegral
+    (q N n : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) : ℂ :=
+  ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+    ∫ t in (-T)..T,
+      LSeries.term (dirichletVonMangoldtCoefficient q χ)
+        (⟨σ, t⟩ : ℂ) n *
+      ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))
+
+/-- The strict arithmetic prefix, with exactly half the coefficient
+at the integer endpoint N. -/
+def finitePerronHalfWeightedPrefix
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) : ℂ :=
+  (∑ n ∈ Finset.range N, dirichletVonMangoldtCoefficient q χ n) +
+    dirichletVonMangoldtCoefficient q χ N / 2
+
+/-- Exact finite-height defect, split between the n<N terms and the
+integer endpoint n=N. Smallness remains a future analytic obligation. -/
+def finitePerronHeightDefect
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) : ℂ :=
+  (∑ n ∈ Finset.range N,
+    (finitePerronTermIntegral q N n χ σ T -
+      dirichletVonMangoldtCoefficient q χ n)) +
+  (finitePerronTermIntegral q N N χ σ T -
+    dirichletVonMangoldtCoefficient q χ N / 2)
+
+/-- Actual coefficient times Perron weight is continuous in t; this
+enables kernel integration termwise without postulating integrability. -/
+theorem continuous_finitePerronTermIntegrand
+    (q N n : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    Continuous (fun t : ℝ =>
+      LSeries.term (dirichletVonMangoldtCoefficient q χ)
+        (⟨σ, t⟩ : ℂ) n *
+      ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+  let f : ℕ → ℂ := dirichletVonMangoldtCoefficient q χ
+  let v : ℝ → ℂ := fun t => (σ : ℂ) + (t : ℂ) * Complex.I
+  have hv : Continuous v := by
+    dsimp [v]
+    fun_prop
+  have hv_eq (t : ℝ) : v t = (⟨σ, t⟩ : ℂ) := by
+    apply Complex.ext <;> simp [v]
+  have hterm : Continuous (fun t : ℝ => LSeries.term f (v t) n) := by
+    apply continuous_iff_continuousAt.mpr
+    intro t
+    exact (LSeries.hasDerivAt_term f n (v t)).continuousAt.comp
+      t hv.continuousAt
+  have hN0 : (N : ℂ) ≠ 0 := by
+    exact_mod_cast (show N ≠ 0 by omega)
+  have hpow : Continuous (fun t : ℝ => (N : ℂ) ^ (v t)) :=
+    hv.const_cpow (Or.inl hN0)
+  have hre (t : ℝ) : (v t).re = σ := by
+    simp [v]
+  have hdenom (t : ℝ) : v t ≠ 0 := by
+    intro hz
+    have hzre := congrArg Complex.re hz
+    have hσ0 : σ = 0 := by simpa only [hre t, Complex.zero_re] using hzre
+    linarith
+  have hweight : Continuous (fun t : ℝ => (N : ℂ) ^ (v t) / v t) :=
+    hpow.div hv hdenom
+  have hmain : Continuous (fun t : ℝ =>
+      LSeries.term f (v t) n * ((N : ℂ) ^ (v t) / v t)) :=
+    hterm.mul hweight
+  change Continuous (fun t : ℝ =>
+    LSeries.term f (⟨σ, t⟩ : ℂ) n *
+      ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ)))
+  simpa only [f, hv_eq] using hmain
+
+/-- Exact normalized finite integral/sum interchange. -/
+theorem finitePerronPolynomialIntegral_eq_term_sum
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    finitePerronPolynomialIntegral q N χ σ T =
+      ∑ n ∈ Finset.range (N + 1),
+        finitePerronTermIntegral q N n χ σ T := by
+  have hint (n : ℕ) :
+      IntervalIntegrable (fun t : ℝ =>
+        LSeries.term (dirichletVonMangoldtCoefficient q χ)
+          (⟨σ, t⟩ : ℂ) n *
+        ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ)))
+        MeasureTheory.volume (-T) T :=
+    (continuous_finitePerronTermIntegrand q N n χ σ hσ hN).intervalIntegrable (-T) T
+  unfold finitePerronPolynomialIntegral finitePerronTermIntegral
+  calc
+    ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+      (∫ t in (-T)..T,
+        (∑ n ∈ Finset.range (N + 1),
+          LSeries.term (dirichletVonMangoldtCoefficient q χ)
+            (⟨σ, t⟩ : ℂ) n) *
+        ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) =
+      ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+      (∫ t in (-T)..T,
+        ∑ n ∈ Finset.range (N + 1),
+          LSeries.term (dirichletVonMangoldtCoefficient q χ)
+            (⟨σ, t⟩ : ℂ) n *
+          ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        congr 1
+        apply intervalIntegral.integral_congr
+        intro t _ht
+        rw [Finset.sum_mul]
+    _ = ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+        (∑ n ∈ Finset.range (N + 1),
+          ∫ t in (-T)..T,
+            LSeries.term (dirichletVonMangoldtCoefficient q χ)
+              (⟨σ, t⟩ : ℂ) n *
+            ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        rw [intervalIntegral.integral_finsetSum (fun n _hn => hint n)]
+    _ = ∑ n ∈ Finset.range (N + 1),
+        ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+          (∫ t in (-T)..T,
+            LSeries.term (dirichletVonMangoldtCoefficient q χ)
+              (⟨σ, t⟩ : ℂ) n *
+            ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        rw [Finset.mul_sum]
+
+/-- Exactly half the endpoint coefficient appears in the target.
+The finite-height error remains an explicit, unequal-to-zero-in-general
+difference; no sharp cutoff identity at finite T is claimed. -/
+theorem finitePerronPolynomialIntegral_eq_halfPrefix_add_defect
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    finitePerronPolynomialIntegral q N χ σ T =
+      finitePerronHalfWeightedPrefix q N χ +
+        finitePerronHeightDefect q N χ σ T := by
+  rw [finitePerronPolynomialIntegral_eq_term_sum q N χ σ T hσ hN]
+  unfold finitePerronHalfWeightedPrefix finitePerronHeightDefect
+  rw [Finset.sum_range_succ, Finset.sum_sub_distrib]
+  ring
+
+/-- Reconcile the normalized finite-height polynomial with the
+existing fully inclusive GRWTSK coefficient prefix. The half
+endpoint is restored and all finite-height errors are retained. -/
+theorem inclusive_vonMangoldt_prefix_eq_finitePerron_plus_endpoint_minus_defect
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    (∑ n ∈ Finset.range (N + 1),
+      dirichletVonMangoldtCoefficient q χ n) =
+      finitePerronPolynomialIntegral q N χ σ T +
+        dirichletVonMangoldtCoefficient q χ N / 2 -
+        finitePerronHeightDefect q N χ σ T := by
+  have h :=
+    finitePerronPolynomialIntegral_eq_halfPrefix_add_defect
+      q N χ σ T hσ hN
+  rw [Finset.sum_range_succ]
+  unfold finitePerronHalfWeightedPrefix at h
+  rw [h]
+  ring
+
 end
 end GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution
