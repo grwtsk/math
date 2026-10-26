@@ -389,6 +389,79 @@ theorem eventually_type_complete_of_representative_minorization
     exact mass_pos
   · exact minor
 
+/-! ### Single-source steering with retained anchor heat
+
+Unlike representative minorization, only transitions from one selected source
+need to reach each type. The quantitative lower bound on heat at that source
+is a separate supplier and cannot follow from conservation alone.
+-/
+
+/-- A single source has a uniformly positive outgoing edge into each type. -/
+def AnchorTypeMinorization
+    (kernel : HeatKernel Root) (typeOf : Root → Kind)
+    (anchor : Root) (delta : ℚ) : Prop :=
+  ∀ kind, ∃ target, typeOf target = kind ∧
+    delta ≤ kernel.transition target anchor
+
+/-- An anchor with retained positive heat turns outgoing type-edge bounds
+into the previously defined weighted steering certificate. -/
+theorem steering_of_anchor_type_minorization
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (anchor : Root)
+    (delta massFloor : ℚ)
+    (minor : AnchorTypeMinorization kernel typeOf anchor delta)
+    (floor : massFloor ≤ heat anchor)
+    (delta_nonneg : 0 ≤ delta) :
+    HasWeightedSteeringBound kernel heat typeOf (delta * massFloor) := by
+  intro kind
+  obtain ⟨target, hkind, hdelta⟩ := minor kind
+  refine ⟨anchor, target, hkind, ?_⟩
+  calc
+    delta * massFloor ≤ delta * heat anchor :=
+      mul_le_mul_of_nonneg_left floor delta_nonneg
+    _ ≤ kernel.transition target anchor * heat anchor :=
+      mul_le_mul_of_nonneg_right hdelta (nonnegative anchor)
+
+/-- Type coverage from one positively weighted source and a type-spanning
+set of its outgoing transitions. -/
+theorem type_complete_of_anchor_type_minorization
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (anchor : Root)
+    (delta massFloor : ℚ)
+    (delta_pos : 0 < delta) (massFloor_pos : 0 < massFloor)
+    (minor : AnchorTypeMinorization kernel typeOf anchor delta)
+    (floor : massFloor ≤ heat anchor) :
+    TypeCompleteAt typeOf (kernel.step heat) := by
+  exact type_complete_at_of_steering kernel heat nonnegative typeOf
+    (delta * massFloor) (mul_pos delta_pos massFloor_pos)
+    (steering_of_anchor_type_minorization kernel heat nonnegative
+      typeOf anchor delta massFloor minor floor (le_of_lt delta_pos))
+
+/-- Eventual coverage requires the selected anchor to retain a positive
+mass floor at all sufficiently late times. This is the missing
+asymptotic-steering supplier, not a consequence of mass conservation. -/
+theorem eventually_type_complete_of_anchor_type_minorization
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind) (anchor : Root)
+    (delta massFloor : ℚ)
+    (delta_pos : 0 < delta) (massFloor_pos : 0 < massFloor)
+    (minor : AnchorTypeMinorization kernel typeOf anchor delta)
+    (start : Nat)
+    (retained : ∀ time, start ≤ time →
+      massFloor ≤ kernel.evolve initial time anchor) :
+    ∀ time, start ≤ time →
+      TypeCompleteAt typeOf (kernel.evolve initial (time + 1)) := by
+  intro time htime
+  change TypeCompleteAt typeOf (kernel.step (kernel.evolve initial time))
+  exact type_complete_of_anchor_type_minorization kernel
+    (kernel.evolve initial time)
+    (kernel.evolve_nonneg initial nonnegative time)
+    typeOf anchor delta massFloor delta_pos massFloor_pos
+    minor (retained time htime)
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
