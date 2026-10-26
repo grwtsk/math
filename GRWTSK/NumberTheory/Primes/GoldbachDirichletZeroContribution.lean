@@ -641,5 +641,149 @@ theorem inclusive_vonMangoldt_prefix_eq_finitePerron_plus_endpoint_minus_defect
   rw [h]
   ring
 
+
+/-!
+## Factoring the actual integer-endpoint Perron defect
+
+For N >= 3, the Nth L-series coefficient multiplied by its
+Perron weight cancels the complex power exactly. Consequently
+the endpoint component of finitePerronHeightDefect is the ACTUAL
+von Mangoldt character coefficient times a scalar kernel gap
+K(sigma,T) - 1/2. This is a quantitative reduction of the total
+defect to explicit off-endpoint terms and ONE scalar gap.
+
+The kernel is defined by a genuine finite interval integral.
+Its arctangent evaluation, bound in T, and convergence to 1/2
+are NOT asserted here; neither is the finite height defect zero.
+-/
+
+/-- The normalized scalar kernel at the arithmetic endpoint.
+The real-parameter normalization is inherited from the existing
+finite Perron polynomial; there is no contour-shift claim. -/
+def finitePerronEndpointKernel (σ T : ℝ) : ℂ :=
+  ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+    ∫ t in (-T)..T, (1 : ℂ) / (⟨σ, t⟩ : ℂ)
+
+/-- At the ACTUAL cutoff index n=N the coefficient denominator
+N^s cancels the Perron factor N^s, leaving a_N/s exactly.
+The positive-real-part condition ensures s is nonzero. -/
+theorem finitePerronEndpoint_integrand_eq
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ t : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    LSeries.term (dirichletVonMangoldtCoefficient q χ)
+        (⟨σ, t⟩ : ℂ) N *
+      ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ)) =
+      dirichletVonMangoldtCoefficient q χ N / (⟨σ, t⟩ : ℂ) := by
+  let s : ℂ := ⟨σ, t⟩
+  have hNnat : N ≠ 0 := by omega
+  have hNcomplex : (N : ℂ) ≠ 0 := by exact_mod_cast hNnat
+  have hpower : (N : ℂ) ^ s ≠ 0 :=
+    Complex.cpow_ne_zero_iff.mpr (Or.inl hNcomplex)
+  have hs : s ≠ 0 := by
+    intro h
+    have hreal := congrArg Complex.re h
+    have hsigma : σ = 0 := by simpa [s] using hreal
+    linarith
+  change
+    LSeries.term (dirichletVonMangoldtCoefficient q χ) s N *
+      ((N : ℂ) ^ s / s) =
+      dirichletVonMangoldtCoefficient q χ N / s
+  rw [LSeries.term_of_ne_zero hNnat]
+  field_simp [hpower, hs]
+
+/-- The normalized Nth finite-height term is the true coefficient
+times the scalar kernel; this reduction does NOT evaluate that kernel. -/
+theorem finitePerronTermIntegral_endpoint_factor
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    finitePerronTermIntegral q N N χ σ T =
+      dirichletVonMangoldtCoefficient q χ N *
+        finitePerronEndpointKernel σ T := by
+  unfold finitePerronTermIntegral finitePerronEndpointKernel
+  calc
+    ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+      (∫ t in (-T)..T,
+        LSeries.term (dirichletVonMangoldtCoefficient q χ)
+          (⟨σ, t⟩ : ℂ) N *
+        ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ))) =
+      ((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+      (∫ t in (-T)..T,
+        dirichletVonMangoldtCoefficient q χ N *
+        ((1 : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        congr 1
+        apply intervalIntegral.integral_congr
+        intro t _ht
+        have h := finitePerronEndpoint_integrand_eq q N χ σ t hσ hN
+        simpa only [div_eq_mul_inv, one_mul] using h
+    _ = dirichletVonMangoldtCoefficient q χ N *
+      (((2 * Real.pi : ℝ) : ℂ)⁻¹ *
+        (∫ t in (-T)..T, (1 : ℂ) / (⟨σ, t⟩ : ℂ))) := by
+        rw [intervalIntegral.integral_const_mul]
+        ring
+
+/-- The endpoint finite-height error factors exactly. Any future
+decay estimate must bound the scalar kernel gap, not assume it zero. -/
+theorem norm_finitePerron_endpoint_defect_eq
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    ‖finitePerronTermIntegral q N N χ σ T -
+      dirichletVonMangoldtCoefficient q χ N / 2‖ =
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ := by
+  rw [finitePerronTermIntegral_endpoint_factor q N χ σ T hσ hN]
+  have hfactor :
+      dirichletVonMangoldtCoefficient q χ N *
+          finitePerronEndpointKernel σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2 =
+      dirichletVonMangoldtCoefficient q χ N *
+        (finitePerronEndpointKernel σ T - (1 / 2 : ℂ)) := by
+    ring
+  rw [hfactor, norm_mul]
+
+/-- Quantitative reduction of the FULL finite-height Perron defect.
+The off-endpoint contribution is a finite explicit norm sum and the
+endpoint contribution is the true coefficient times one scalar gap.
+No estimate of the scalar gap or the off-endpoint sum is smuggled in. -/
+theorem norm_finitePerronHeightDefect_le_endpoint_gap
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    ‖finitePerronHeightDefect q N χ σ T‖ ≤
+      (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ := by
+  unfold finitePerronHeightDefect
+  calc
+    ‖(∑ n ∈ Finset.range N,
+        (finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n)) +
+      (finitePerronTermIntegral q N N χ σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2)‖ ≤
+      ‖∑ n ∈ Finset.range N,
+        (finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n)‖ +
+      ‖finitePerronTermIntegral q N N χ σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2‖ :=
+      norm_add_le _ _
+    _ ≤ (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖finitePerronTermIntegral q N N χ σ T -
+        dirichletVonMangoldtCoefficient q χ N / 2‖ :=
+      add_le_add_right (norm_sum_le _ _) _
+    _ = (∑ n ∈ Finset.range N,
+        ‖finitePerronTermIntegral q N n χ σ T -
+          dirichletVonMangoldtCoefficient q χ n‖) +
+      ‖dirichletVonMangoldtCoefficient q χ N‖ *
+        ‖finitePerronEndpointKernel σ T - (1 / 2 : ℂ)‖ := by
+      rw [norm_finitePerron_endpoint_defect_eq q N χ σ T hσ hN]
+
+/-- At height zero the finite scalar integral is zero. Thus a
+pointwise finite-height equality to 1/2 would be false. -/
+theorem finitePerronEndpointKernel_zero (σ : ℝ) :
+    finitePerronEndpointKernel σ 0 = 0 := by
+  simp [finitePerronEndpointKernel]
+
 end
 end GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution
