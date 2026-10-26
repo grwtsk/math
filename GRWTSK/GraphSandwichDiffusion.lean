@@ -2608,6 +2608,112 @@ theorem diagonalKernel_transition_ge_inv_two_cutoff_sq
         mul_le_mul_of_nonneg_right hweight hBpos.le)
   simpa only [one_div] using hcomparison
 
+/-- From any nonnegative in-scope initial distribution of total
+mass one, one step gives at least 1/(2*N²) mass to each coprime
+target. This is a finite polynomial minorization, not an analytic
+prime-distribution theorem. -/
+theorem diagonalKernel_step_ge_inv_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ source ∈ scope N, 0 ≤ initial source)
+    (initial_mass_one : (∑ source ∈ scope N, initial source) = 1)
+    (target : ℕ) (target_mem : target ∈ scope N)
+    (hc : Nat.Coprime target q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).step initial target := by
+  change ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+    ∑ source ∈ scope N,
+      initial source * (diagonalKernel q N hN).transition source target
+  calc
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ =
+        (∑ source ∈ scope N, initial source) *
+          ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ := by
+      rw [initial_mass_one, one_mul]
+    _ = ∑ source ∈ scope N,
+          initial source * ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ := by
+      rw [Finset.sum_mul]
+    _ ≤ ∑ source ∈ scope N,
+          initial source *
+            (diagonalKernel q N hN).transition source target := by
+      apply Finset.sum_le_sum
+      intro source source_mem
+      exact mul_le_mul_of_nonneg_left
+        (diagonalKernel_transition_ge_inv_two_cutoff_sq
+          q N hN source target source_mem target_mem hc)
+        (initial_nonneg source source_mem)
+
+/-- Every positive number of iterations retains the same target
+minorization, using the exact finite total-mass and positivity laws.
+The rate is uniform in the step count, but decays with cutoff N. -/
+theorem diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ source ∈ scope N, 0 ≤ initial source)
+    (initial_mass_one : (∑ source ∈ scope N, initial source) = 1)
+    (depth : ℕ) (target : ℕ)
+    (target_mem : target ∈ scope N) (hc : Nat.Coprime target q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).evolve initial (depth + 1) target := by
+  have hnonneg :
+      ∀ source ∈ scope N,
+        0 ≤ (diagonalKernel q N hN).evolve initial depth source :=
+    (diagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg depth
+  have hmass :
+      (∑ source ∈ scope N,
+        (diagonalKernel q N hN).evolve initial depth source) = 1 := by
+    calc
+      (∑ source ∈ scope N,
+        (diagonalKernel q N hN).evolve initial depth source) =
+          ∑ source ∈ scope N, initial source :=
+        (diagonalKernel q N hN).sum_evolve_eq_sum initial depth
+      _ = 1 := initial_mass_one
+  change ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+    (diagonalKernel q N hN).step
+      ((diagonalKernel q N hN).evolve initial depth) target
+  exact diagonalKernel_step_ge_inv_two_cutoff_sq
+    q N hN ((diagonalKernel q N hN).evolve initial depth)
+    hnonneg hmass target target_mem hc
+
+/-- One explicit coprime witness of a target type gives an inverse-
+quadratic lower bound for that type mass at every positive time.
+No assertion about the distribution of prime types is hidden here. -/
+theorem diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ source ∈ scope N, 0 ≤ initial source)
+    (initial_mass_one : (∑ source ∈ scope N, initial source) = 1)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel)
+    (witness depth : ℕ)
+    (witness_mem : witness ∈ scope N)
+    (witness_type : typeOf witness = targetType)
+    (witness_coprime : Nat.Coprime witness q) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel q N hN).typeMass initial typeOf
+        (depth + 1) targetType := by
+  have hpoint :=
+    diagonalKernel_evolve_succ_ge_inv_two_cutoff_sq
+      q N hN initial initial_nonneg initial_mass_one
+      depth witness witness_mem witness_coprime
+  have hnonneg :
+      ∀ target ∈ scope N,
+        0 ≤ (diagonalKernel q N hN).evolve initial
+          (depth + 1) target :=
+    (diagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg (depth + 1)
+  have hsum :
+      (diagonalKernel q N hN).evolve initial
+        (depth + 1) witness ≤
+        (diagonalKernel q N hN).typeMass
+          initial typeOf (depth + 1) targetType := by
+    unfold FiniteSieveMarkovKernel.typeMass
+    apply Finset.single_le_sum
+    · intro target ht
+      exact hnonneg target (Finset.mem_filter.mp ht).1
+    · exact Finset.mem_filter.mpr ⟨witness_mem, witness_type⟩
+  exact hpoint.trans hsum
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
