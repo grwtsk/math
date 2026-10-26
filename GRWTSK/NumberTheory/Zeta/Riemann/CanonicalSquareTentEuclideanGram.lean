@@ -1064,4 +1064,41 @@ theorem relative_moment_gap_of_central_prime_count_with_log_correction
   · exact squareIncrement_le_prime_upper_add_log_correction n hn Uprime hprime
   · exact hcount
 
+/-! ## Exact central versus outer prime-mass split
+
+The complete prime-only square increment splits into central and
+outer prime inventories. This avoids a new unsupported prime-count
+assumption when an outer-mass estimate is available instead.
+-/
+
+/-- Prime indices in the full square interval outside the central
+geometric inventory. -/
+def outerSquarePrimes (n : ℕ) : Finset ℕ :=
+  ((Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime) \
+    centralSquarePrimes n
+
+/-- Central primes form a subset of the complete prime inventory. -/
+theorem centralSquarePrimes_subset_full (n : ℕ) :
+    centralSquarePrimes n ⊆
+      (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime := by
+  intro p hp
+  exact Finset.mem_filter.mpr
+    ⟨centralSquareWitnesses_subset n (Finset.mem_filter.mp hp).1,
+      (Finset.mem_filter.mp hp).2⟩
+
+/-- Exact finite partition of the full prime-only von Mangoldt
+mass into central and outer contributions. -/
+theorem fullSquarePrimeMass_eq_central_add_outer (n : ℕ) :
+    (∑ p ∈ (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime,
+      ArithmeticFunction.vonMangoldt p) =
+      (∑ p ∈ centralSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) +
+      (∑ p ∈ outerSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) := by
+  classical
+  unfold outerSquarePrimes
+  exact (Finset.sum_subset_add_sum_diff
+    (centralSquarePrimes_subset_full n)
+    (fun p => ArithmeticFunction.vonMangoldt p)).symm
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
