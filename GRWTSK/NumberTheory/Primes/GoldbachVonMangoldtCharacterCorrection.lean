@@ -731,7 +731,7 @@ theorem dirichletVonMangoldt_LSeries_eq_prefix_add_shifted
           LSeries.term (dirichletVonMangoldtCoefficient q χ) s n) +
         (∑' k : ℕ,
           LSeries.term (dirichletVonMangoldtCoefficient q χ) s (k + (N + 1))) :=
-      hsplit
+      hsplit.symm
     _ = _ := by
       congr 1
       apply tsum_congr
