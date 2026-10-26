@@ -290,4 +290,37 @@ theorem pullback_heat_preserves_pairwise_distinct
     (heatStep_collision_iff c t (u (f a)) (u (f b)) ht).mp hsource
   exact hf (hu hbefore)
 
+/-! ## Concrete averaging and its collision obstruction
+
+A rational arithmetic mean commutes with the synthetic heat step
+but is not injective on ordered spectral pairs. This prevents
+promoting a heat-commutation identity into a collision theorem.
+-/
+
+def pairAverage (q r : ℚ) : ℚ := (q + r) / 2
+
+theorem pairAverage_comm (q r : ℚ) :
+    pairAverage q r = pairAverage r q := by
+  unfold pairAverage
+  ring
+
+theorem pairAverage_heat_commutes (c t q r : ℚ) :
+    pairAverage (heatStep c t q) (heatStep c t r) =
+      heatStep c t (pairAverage q r) := by
+  unfold pairAverage heatStep
+  ring
+
+/-- Distinct ordered input pairs can have the same average. -/
+theorem pairAverage_collision_counterexample :
+    pairAverage (0 : ℚ) 2 = pairAverage 2 0 ∧
+      ((0 : ℚ), (2 : ℚ)) ≠ (2, 0) := by
+  constructor
+  · exact pairAverage_comm 0 2
+  · norm_num
+
+theorem pairAverage_heat_collision (c t : ℚ) :
+    pairAverage (heatStep c t 0) (heatStep c t 2) =
+      pairAverage (heatStep c t 2) (heatStep c t 0) := by
+  exact pairAverage_comm _ _
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
