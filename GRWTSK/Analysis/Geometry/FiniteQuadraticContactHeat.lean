@@ -101,6 +101,28 @@ theorem measuredSeam_harmonic_of_equal_errors
   rw [G.measuredSeam_coboundary]
   ring
 
+/-- A common-mode observation offset has zero Hodge mismatch but is
+not the true source observation. Positive Hodge energy alone therefore
+cannot certify complete source fidelity. -/
+theorem commonMode_measuredSeam_not_source
+    (G : SplitGraph ι SourceLabel) (coordinate : ι) :
+    G.measuredSeam coordinate 1 1 ≠ G.seamValues coordinate := by
+  intro h
+  have h0 := congrFun h 0
+  rw [G.measuredSeam_left] at h0
+  linarith
+
+/-- Concrete missing-information fixture: a harmonic observation may
+differ everywhere from the actual source seam by a common-mode offset. -/
+theorem exists_harmonic_non_source_observation
+    (G : SplitGraph ι SourceLabel) (coordinate : ι) :
+    ∃ readings : Cochain0,
+      laplacian readings = 0 ∧
+        readings ≠ G.seamValues coordinate := by
+  refine ⟨G.measuredSeam coordinate 1 1, ?_, ?_⟩
+  · exact G.measuredSeam_harmonic_of_equal_errors coordinate 1
+  · exact G.commonMode_measuredSeam_not_source coordinate
+
 end SplitGraph
 
 end GRWTSK.Analysis.Geometry.FiniteQuadraticContactGraph
