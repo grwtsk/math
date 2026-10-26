@@ -2714,6 +2714,98 @@ theorem diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq
     · exact Finset.mem_filter.mpr ⟨witness_mem, witness_type⟩
   exact hpoint.trans hsum
 
+/-! ## Buffered radical sieve: a nonvanishing floor without type leakage
+
+The original weight radicalCoprimeWeight remains unchanged.  This
+distinct weight model multiplies the indicator of coprimality by the
+type-independent floor N plus the arithmetic radical. On the positive
+integer cutoff, each survivor has weight between N and 2*N.
+
+The floor is chosen without inspecting a target type. Its purpose is
+to translate *counts of surviving arithmetic types* into lower bounds
+on normalized mass. Such counts must still be proved separately.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- Type-independent floor plus arithmetic radical on the coprime
+sieve. This is a distinct weighting, not an asymptotic theorem about
+the unbuffered radical weight. -/
+noncomputable def bufferedRadicalWeight (q N n : ℕ) : ℝ :=
+  if Nat.Coprime n q then (N : ℝ) + (Nat.radical n : ℝ) else 0
+
+theorem bufferedRadicalWeight_nonneg (q N n : ℕ) :
+    0 ≤ bufferedRadicalWeight q N n := by
+  unfold bufferedRadicalWeight
+  split_ifs <;> positivity
+
+/-- Every surviving target in the positive cutoff receives at least
+N units of raw weight. -/
+theorem bufferedRadicalWeight_ge_cutoff_of_coprime
+    (q N n : ℕ) (hc : Nat.Coprime n q) :
+    (N : ℝ) ≤ bufferedRadicalWeight q N n := by
+  simp only [bufferedRadicalWeight, if_pos hc]
+  exact le_add_of_nonneg_right (Nat.cast_nonneg _)
+
+/-- The same raw weight is at most twice the cutoff for all states
+within the inclusive positive integer range. -/
+theorem bufferedRadicalWeight_le_two_cutoff
+    (q N n : ℕ) (hn : n ∈ scope N) :
+    bufferedRadicalWeight q N n ≤ (2 : ℝ) * (N : ℝ) := by
+  by_cases hc : Nat.Coprime n q
+  · have hrad : (Nat.radical n : ℝ) ≤ (N : ℝ) := by
+      simpa [radicalCoprimeWeight, hc] using
+        radicalCoprimeWeight_le_cutoff q N n hn
+    simp only [bufferedRadicalWeight, if_pos hc]
+    linarith
+  · simp [bufferedRadicalWeight, hc]
+
+/-- The original radical-only information collision survives the
+type-independent cutoff floor: positive powers retain equal weights
+for the same cutoff and modulus. -/
+theorem bufferedRadicalWeight_pow (q N n k : ℕ) (hk : k ≠ 0) :
+    bufferedRadicalWeight q N (n ^ k) =
+      bufferedRadicalWeight q N n := by
+  have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
+    Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
+  have hrad : Nat.radical (n ^ k) = Nat.radical n :=
+    UniqueFactorizationMonoid.radical_pow n hk
+  by_cases hc : Nat.Coprime n q
+  · simp [bufferedRadicalWeight, hc, hcop.mpr hc, hrad]
+  · have hpow : ¬ Nat.Coprime (n ^ k) q :=
+      fun hp => hc (hcop.mp hp)
+    simp [bufferedRadicalWeight, hc, hpow]
+
+/-- Source-dependent diagonal preference, with target weight bounded
+between N and 2*N on surviving states. -/
+noncomputable def bufferedDiagonalEdgeWeight
+    (q N source target : ℕ) : ℝ :=
+  (if source = target then (2 : ℝ) else 1) *
+    bufferedRadicalWeight q N target
+
+theorem bufferedDiagonalEdgeWeight_nonneg
+    (q N source target : ℕ) :
+    0 ≤ bufferedDiagonalEdgeWeight q N source target := by
+  unfold bufferedDiagonalEdgeWeight
+  exact mul_nonneg (diagonalBoost_pos source target).le
+    (bufferedRadicalWeight_nonneg q N target)
+
+/-- A diagonal boost cannot diminish raw target sieve weight. -/
+theorem bufferedRadicalWeight_le_edge
+    (q N source target : ℕ) :
+    bufferedRadicalWeight q N target ≤
+      bufferedDiagonalEdgeWeight q N source target := by
+  unfold bufferedDiagonalEdgeWeight
+  split_ifs <;> nlinarith [bufferedRadicalWeight_nonneg q N target]
+
+/-- A single source-dependent raw transition cannot exceed 4*N on
+the finite positive integer scope. -/
+theorem bufferedDiagonalEdgeWeight_le_four_cutoff
+    (q N source target : ℕ) (ht : target ∈ scope N) :
+    bufferedDiagonalEdgeWeight q N source target ≤
+      (4 : ℝ) * (N : ℝ) := by
+  unfold bufferedDiagonalEdgeWeight
+  have hweight := bufferedRadicalWeight_le_two_cutoff q N target ht
+  split_ifs <;> nlinarith
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
