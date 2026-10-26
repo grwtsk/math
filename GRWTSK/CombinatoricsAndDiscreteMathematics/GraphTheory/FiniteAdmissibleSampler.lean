@@ -884,6 +884,38 @@ theorem realTypeMass_eq_zero_of_bipartite_parity
       nonnegative color initialColor flips supported length target mismatch]
   · simp [hkind]
 
+/-!
+## No all-time type completeness from one-color bipartite support
+
+This converts the exact zero-mass parity obstruction into a failure of
+complete Boolean type coverage at every finite time. It is conditional
+on the actual allowed graph being strictly bipartite and on the
+initial heat being confined to one color class.
+-/
+
+/-- With strictly color-flipping admissible edges and initially
+single-color heat, complete positive heat in both Boolean types is
+impossible at any finite time. -/
+theorem not_real_type_complete_of_bipartite_single_color
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (color : V → Bool) (initialColor : Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (supported : ∀ v, 0 < heat v → color v = initialColor)
+    (length : ℕ) :
+    ¬ (∀ kind : Bool,
+      0 < realTypeMass color (S.realEvolve heat length) kind) := by
+  intro complete
+  let expected : Bool :=
+    if length % 2 = 0 then initialColor else !initialColor
+  have wrong : (!expected) ≠ expected := by
+    cases expected <;> decide
+  have hzero := S.realTypeMass_eq_zero_of_bipartite_parity heat
+    nonnegative color initialColor flips supported length (!expected) wrong
+  have hpos := complete (!expected)
+  rw [hzero] at hpos
+  exact (lt_irrefl (0 : ℝ)) hpos
+
 end TypeHeat
 
 end Sampler
