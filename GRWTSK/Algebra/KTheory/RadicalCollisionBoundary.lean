@@ -77,4 +77,33 @@ theorem kZeroRadical_port_pow_collision
       port.kZeroMap (kZeroRadical lift n) :=
   congrArg port.kZeroMap (kZeroRadical_pow lift n k hk)
 
+/-- An exact natural-number type decoder cannot factor through the
+pair of a radical-derived K₀-shaped class and that same arithmetic
+radical. Distinct positive powers remain a hostile collision fixture.
+This specializes the obstruction represented by
+`GRWTSK.Algebra.KTheory.JointCollision`. -/
+theorem no_exact_nat_type_decoder (lift : ℕ →* M) :
+    ¬ ∃ decoder : GrothendieckKZero M × ℕ → ℕ,
+        ∀ n : ℕ, decoder (kZeroRadical lift n, Nat.radical n) = n := by
+  rintro ⟨decoder, correct⟩
+  have hrad : Nat.radical ((2 : ℕ) ^ 2) = Nat.radical 2 :=
+    UniqueFactorizationMonoid.radical_pow 2 (by norm_num)
+  have hk : kZeroRadical lift ((2 : ℕ) ^ 2) =
+      kZeroRadical lift 2 :=
+    kZeroRadical_pow lift 2 2 (by norm_num)
+  have hcollision :
+      decoder (kZeroRadical lift ((2 : ℕ) ^ 2),
+        Nat.radical ((2 : ℕ) ^ 2)) =
+      decoder (kZeroRadical lift 2, Nat.radical 2) :=
+    congrArg decoder (Prod.ext hk hrad)
+  have hcontra : (2 : ℕ) ^ 2 = 2 := by
+    calc
+      (2 : ℕ) ^ 2 =
+          decoder (kZeroRadical lift ((2 : ℕ) ^ 2),
+            Nat.radical ((2 : ℕ) ^ 2)) := (correct _).symm
+      _ = decoder (kZeroRadical lift 2, Nat.radical 2) :=
+        hcollision
+      _ = 2 := correct 2
+  norm_num at hcontra
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
