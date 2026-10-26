@@ -515,4 +515,100 @@ theorem multiplicityOneType_twelve_mul_add_two (k : ℕ) :
     simp [hfactorOdd, hfactorTwo]
   simp [multiplicityOneType, twoAdicMultiplicityType, hfactor]
 
+/-- Each Boolean prime-2 multiplicity class contains at least
+floor(N/12) coprime representatives in the positive cutoff when
+N≥12. The proof is a finite injection of the arithmetic progressions
+12*k+1 and 12*k+2, not an asymptotic prime-density hypothesis. -/
+theorem multiplicityOneType_survivors_card_ge_div_twelve
+    (N : ℕ) (h12 : 12 ≤ N) (label : Bool) :
+    N / 12 ≤
+      (bufferedTypeSurvivors 3 N multiplicityOneType label).card := by
+  classical
+  have progression (a : ℕ) (ha : 1 ≤ a) (ha12 : a ≤ 12)
+      (htype : ∀ k : ℕ,
+        multiplicityOneType (12 * k + a) = label)
+      (hcoprime : ∀ k : ℕ,
+        Nat.Coprime (12 * k + a) 3) :
+      N / 12 ≤
+        (bufferedTypeSurvivors 3 N multiplicityOneType label).card := by
+    have hinj : Function.Injective (fun k : ℕ => 12 * k + a) := by
+      intro i j hij
+      omega
+    have hsub :
+        ((Finset.range (N / 12)).image (fun k : ℕ => 12 * k + a)) ⊆
+          bufferedTypeSurvivors 3 N multiplicityOneType label := by
+      intro target member
+      obtain ⟨k, hk, rfl⟩ := Finset.mem_image.mp member
+      have hscope : 12 * k + a ∈ scope N := by
+        change 12 * k + a ∈ Finset.Icc 1 N
+        have hlt : k < N / 12 := Finset.mem_range.mp hk
+        exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+      change 12 * k + a ∈
+        (scope N).filter
+          (fun n => multiplicityOneType n = label ∧ Nat.Coprime n 3)
+      exact Finset.mem_filter.mpr
+        ⟨hscope, htype k, hcoprime k⟩
+    calc
+      N / 12 = (Finset.range (N / 12)).card := by simp
+      _ = ((Finset.range (N / 12)).image
+            (fun k : ℕ => 12 * k + a)).card :=
+        (Finset.card_image_of_injective _ hinj).symm
+      _ ≤ (bufferedTypeSurvivors 3 N multiplicityOneType label).card :=
+        Finset.card_le_card hsub
+  cases label with
+  | false =>
+      exact progression 1 (by omega) (by omega)
+        multiplicityOneType_twelve_mul_add_one
+        twelve_mul_add_one_coprime_three
+  | true =>
+      exact progression 2 (by omega) (by omega)
+        multiplicityOneType_twelve_mul_add_two
+        twelve_mul_add_two_coprime_three
+
+/-- The arithmetic progression count supplies a concrete uniform
+survivor density of at least 1/24 for each Boolean type, at all N≥12.
+The 1/24 constant is deliberately conservative: N≤24*floor(N/12). -/
+theorem multiplicityOneType_buffered_survivor_density
+    (N : ℕ) (h12 : 12 ≤ N) (label : Bool) :
+    ((1 : ℝ) / 24) * (N : ℝ) ≤
+      ((bufferedTypeSurvivors 3 N multiplicityOneType label).card : ℝ) := by
+  have hcard : N / 12 ≤
+      (bufferedTypeSurvivors 3 N multiplicityOneType label).card :=
+    multiplicityOneType_survivors_card_ge_div_twelve N h12 label
+  have hfloor : N ≤ 24 * (N / 12) := by omega
+  have hbound : N ≤
+      24 * (bufferedTypeSurvivors 3 N multiplicityOneType label).card :=
+    hfloor.trans (Nat.mul_le_mul_left 24 hcard)
+  have hreal :
+      (N : ℝ) ≤
+        (24 : ℝ) *
+          ((bufferedTypeSurvivors 3 N multiplicityOneType label).card : ℝ) := by
+    exact_mod_cast hbound
+  nlinarith
+
+/-- Cutoff-independent positive mass for both exact Boolean
+prime-2 multiplicity types under the **buffered** radical sieve.
+For every N≥12, every positive Markov time and every nonnegative
+unit-mass initial distribution, each type receives ≥ 1/96 mass.
+This is a finite two-type uniform steering result, not a proof of
+prime-counting asymptotics or of completeness for all valuation types. -/
+theorem multiplicityOneType_buffered_mass_ge_one_ninety_six
+    (N : ℕ) (hN : 1 ≤ N) (h12 : 12 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) (label : Bool) :
+    (1 : ℝ) / 96 ≤
+      (bufferedDiagonalKernel 3 N hN).typeMass
+        initial multiplicityOneType (depth + 1) label := by
+  have hcount :
+      ((1 : ℝ) / 24) * (N : ℝ) ≤
+        ((bufferedTypeSurvivors 3 N multiplicityOneType label).card : ℝ) :=
+    multiplicityOneType_buffered_survivor_density N h12 label
+  have hmass :=
+    bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+      3 N hN initial initial_nonneg initial_mass_one
+      multiplicityOneType label ((1 : ℝ) / 24) depth hcount
+  convert hmass using 1 <;> norm_num
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
