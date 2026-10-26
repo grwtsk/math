@@ -1,0 +1,108 @@
+# Immutable source-bound mathematical verification request, not an execution.
+schema_version = "0.1"
+request_id = "radical-two-adic-uniform-steering-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "709591998452962245618c804c044981c220861a"
+source_operator_module = "GRWTSK/GraphSandwichDiffusion.lean"
+source_operator_blob = "162f66a42b2b3b82483249c86f3305f07abb825a"
+source_type_module = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_type_blob = "ea6491fa07bf72e31a22ee8a4ec83d9d7cceb73c"
+upstream_k_zero_module = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+upstream_k_zero_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+other_radical_module = "GRWTSK/NumberTheory/Factorization/NaturalRadicalExcess.lean"
+other_radical_blob = "1392f6a2237cc7af5ebc6d994188900c6e0f4657"
+pinned_mathlib_radical_module = "Mathlib/RingTheory/Radical/NatInt.lean"
+pinned_mathlib_radical_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+pinned_mathlib_squarefree_module = "Mathlib/Data/Nat/Squarefree.lean"
+pinned_mathlib_squarefree_blob = "5fd20e08fc8cfde99dd334bf66a3071da498cfc4"
+pinned_mathlib_generic_radical_module = "Mathlib/RingTheory/Radical/Basic.lean"
+pinned_mathlib_generic_radical_blob = "2b536c44fb969e0d8284ff2256972030b14339"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+math_reference = "docs/reference/literature/reading-background/radical-two-adic-uniform-type-steering-20261026.md"
+math_reference_commit = "aa0b47692c3cf0de6822a34f2dc271ca504c59f4"
+math_reference_blob = "27001b46cdec934fea828af7b5457856eba5f5bb"
+related_issue = "https://github.com/grwtsk/math/issues/1329"
+blocking_gate = "https://github.com/grwtsk/math/issues/1267"
+existing_old_graph_verification = "docs/verification/_unscoped/arithmetic-radical-metropolis-spectral-20261026.toml"
+classification = "ARITHMETIC_2ADIC_TYPE_MASS_AND_REVERSIBLE_DIAGONAL_KERNEL"
+new_lean_source_status = "NOT_WRITTEN"
+source_candidate_status = "SOURCE_ONLY_NOT_KERNEL_ACCEPTED"
+compilation = "NOT_RUN"
+elaboration = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+receipts = "NOT_RUN"
+execution_dispatched = false
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+force_push_authorized = false
+new_source_permitted_before_gate = false
+supports_analytic_k_zero = false
+supports_3d_navier_stokes_nonblowup = false
+supports_4d_yang_mills_mass_gap = false
+supports_all_arithmetic_type_density = false
+
+exact_existing_source_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_evolve_weight_eq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_eq_fiber_sum",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_pos_iff_coprime_witness",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_edge_iff_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_diagonal_mass_ge_inv_two_cutoff_sq",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_diagonal_complete_all_positive_steps",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_twoAdic_type_decoder_on_certified_sieve",
+]
+
+future_new_math_obligations_not_yet_declarations = [
+  "Pure finite progression lemma: for every integer k>=192, among 6j+1 with k<=j<2k at least k/2 are squarefree; count p^2 divisors with prime p>=5 using one congruence class mod p^2 and sum_{n>=5}1/n^2 <=1/4.",
+  "For every r>=0 and N>=2304*2^r, produce at least k/2 actual coprime-to-3 witnesses n=2^r(6j+1) with Nat.factorization 2 n=r; use squarefree rad(2^r m)=m if r=0 and 2m otherwise.",
+  "Bound real finite total radical/coprime normalizer Z_N <= N(N+1)/2 and derive stationary-reference mass pi_N(v2=0)>=1/32 and pi_N(v2=r)>=1/(16*4^r) for r>=1, without assuming any weighted sieve density input.",
+  "Prove source-defined diagonalKernel q=3 exact transition K(x,y)=w(y)*(1+indicator(x=y))/(Z+w(x)), checking finite scope and excluded zero-weight states.",
+  "Construct normalized stationary rho(x)=w(x)*(Z+w(x))/(Z^2+sum w^2) and prove detailed balance, noting excluded multiples of three have zero rho mass.",
+  "Prove row Doeblin K(x,y)>=delta*pi(y), delta=Z/(Z+max w)>=1/2 and corresponding total variation contraction at rate (1-delta)^n.",
+  "Prove weighted Dirichlet identity E_rho(f)=(Z^2/C)*Var_pi(f), and first-positive-eigenvalue gap(I-K)>=delta on positive-weight survivor Hilbert space only.",
+  "Prove K positive semidefinite in l2(rho), giving eigenvalues between 0 and 1, with full scope zero-probability states treated separately.",
+  "Derive arithmetic Z_N>=3*N^2/169 for all N>=2304 and delta>=3*N/(3*N+169); hence gap tending to one and TV convergence upper rate (169/(3*N+169))^n.",
+  "Combine genuine arithmetic type mass with actual source-dependent kernel to yield strictly positive uniform-in-N mass per fixed v2 type from EVERY initial probability at EVERY positive time.",
+  "Preserve radical/K0-shaped exponent collision no-decoder: positive mass for distinct exact types does not imply exact decoding via Nat.radical or any feature factoring through it.",
+  "Do not infer anything about analytic prime pairs, strong connectivity of the unrelated source seed, classical 3D Navier-Stokes regularity or a physical continuum Yang-Mills mass gap.",
+]
+
+negative_controls = [
+  "Multiples of 3 have zero w and rho and must not be silently placed in a strictly positive weighted Hilbert state space.",
+  "The source-dependent diagonalKernel stationary distribution is rho, NOT the resetKernel's pi; distinguish the two.",
+  "The source-dependent dense diagonalKernel has uniform Doeblin gap; this does not imply a uniform gap for the local Metropolis odd-path kernel.",
+  "For each fixed type r the positive mass bound depends on r and the required cutoff grows like 2^r. No shared floor across infinitely many disjoint exact valuations can exist.",
+  "At cutoff N<2^r, the required exact v2=r type can be absent, demonstrating the necessity of a type-dependent cutoff.",
+  "Modulus 2 excludes all even types; modulus 3 is essential to the chosen witness family.",
+  "Integer radical and local NaturalRadicalExcess.radical are distinct definitions until a separate typed equality is proven.",
+  "The old seedInventory has no certified edges; concrete arithmetic kernel support does not certify unrelated conjecture edges.",
+]
+
+[checks]
+pin_checkout = 'test "$(git rev-parse HEAD)" = 709591998452962245618c804c044981c220861a'
+pin_operator_blob = 'test "$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)" = 162f66a42b2b3b82483249c86f3305f07abb825a'
+pin_type_blob = 'test "$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)" = ea6491fa07bf72e31a22ee8a4ec83d9d7cceb73c'
+pin_mathlib = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+operator_module = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+type_module = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+operator_elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/GraphSandwichDiffusion.lean"
+type_elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+axiom_audit = "In an authorized executor-local temporary import driver outside math, import both modules, issue #check and #print axioms for each declaration above and full transitive dependency closure, capturing exact exits and unexpected axioms."
+fresh_kernel_replay = "Determine exact supported source-pinned kernel checker invocation from installed toolchain; do not invent a CLI or infer acceptance from source scanning."
+new_source_pin = "UNDEFINED_AND_NOT_WRITTEN; when permitted, pin its OWN immutable commit/blob, affected direct/transitive imports, build diagnostics and kernel/axiom receipts."
+observed_operator_exit = "NOT_RUN"
+observed_type_exit = "NOT_RUN"
+observed_kernel_exit = "NOT_RUN"
+observed_axioms = "NOT_RUN"
+
+# Mathematical source and static verification declarations belong to math.
+# All effectful verification execution, logs, receipts, tasks/runners/controller state belong outside math in grwtsk/noeaaeue.
