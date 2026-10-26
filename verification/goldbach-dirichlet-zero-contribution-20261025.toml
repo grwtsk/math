@@ -2,9 +2,12 @@ schema_version = "0.1"
 request_id = "goldbach-dirichlet-zero-contribution-20261025"
 repository = "grwtsk/math"
 branch = "main"
-source_commit = "9d56ed00e9e69ef96f906f5da41f301669e9ea95"
+source_commit = "92c22850daf715eed271ddcfa410a6ec834ce3d4"
 source_path = "GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
-source_blob = "6f60fa1d202c4db80a7b1607f17666b940e914e2"
+source_blob = "c20b5512ab47f4e7ee632e06d2b705411b000b4e"
+source_repair_parent_commit = "9d56ed00e9e69ef96f906f5da41f301669e9ea95"
+source_repair_parent_blob = "6f60fa1d202c4db80a7b1607f17666b940e914e2"
+source_repair_reason = "Pinned Mathlib DirichletCharacter.LFunction requires [NeZero q]; inserted this class on all dependent zero packet definitions and selectedZeros_conditions. Static only, NOT_RUN."
 source_line_count = 223
 lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
@@ -67,8 +70,8 @@ missing_suppliers = [
 ]
 
 [checks]
-pin_commit = "test \"$(git rev-parse HEAD)\" = 9d56ed00e9e69ef96f906f5da41f301669e9ea95"
-pin_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = 6f60fa1d202c4db80a7b1607f17666b940e914e2"
+pin_commit = "test \"$(git rev-parse HEAD)\" = 92c22850daf715eed271ddcfa410a6ec834ce3d4"
+pin_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = c20b5512ab47f4e7ee632e06d2b705411b000b4e"
 compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution"
 source_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
 axiom_audit = "#print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.nonprincipal_zero_realPart_le_seven_eighths; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_cpow_div_le_seven_eighths; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_selected_zero_contribution_le; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_twisted_vonMangoldt_prefix_le_of_finite_zero_formula; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_residuePsi_linear_main_le_of_finite_zero_formulas (create a temporary imported audit file outside math)"
