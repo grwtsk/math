@@ -1,0 +1,37 @@
+schema = "grwtsk.static-mathematical-target/1"
+attribution = "grwtsk contributors"
+source = "GRWTSK/NumberTheory/Zeta/Riemann/ArithmeticCyclicZetaResidualBudget.lean"
+namespace = "GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticCyclicZetaResidualBudget"
+classification = "conditional_source_proof_candidates"
+verification = "NOT_RUN / NOT_KERNEL_AUDITED"
+declarations = [
+  "critical_distance_mul_norm_le_residual",
+  "FullResidualDecomposition.residual_norm_le",
+  "FullResidualDecomposition.total_nonnegative",
+  "FullResidualDecomposition.critical_distance_mul_norm_le",
+  "FullResidualDecomposition.critical_distance_le_div_norm",
+]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+
+[acceptance]
+requires = [
+  "exact committed source and complete declared dependency closure",
+  "warning-clean fresh trust-zero replay and declaration-scoped axiom audits",
+  "original signed arithmetic operator and unchanged full complex vector",
+  "absolute residual floor includes the zero-vector case",
+  "division by the vector norm retains an explicit nonzero hypothesis",
+  "signed five-error identity is bound to the actual Hx-lambda*x residual",
+  "all source, Hermite, transport, spectral and tail norm bounds are supplied",
+]
+unresolved = [
+  "construct the five error vectors and prove their source-correct signed identity",
+  "prove complete total budgets small relative to the same vector norm",
+  "construct a fixed mathematically source-identified arithmetic stage family",
+  "supply every-zero and every-positive-tolerance estimates for that family",
+]
+nonclaims = [
+  "absolute error decay alone is not relative residual decay",
+  "no cancellation, source realization or omitted-tail estimate is supplied",
+  "no unconditional RH, GRH, ABC, Yang-Mills, Goldbach or BSD theorem",
+  "no operational state or execution receipt is stored here",
+]
