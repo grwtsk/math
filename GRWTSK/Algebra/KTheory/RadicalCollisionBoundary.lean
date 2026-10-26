@@ -1393,4 +1393,111 @@ theorem threeAdicTypeProgression_mem_scope
   exact Finset.mem_Icc.mpr
     ⟨Nat.succ_le_iff.mpr (threeAdicTypeProgression_pos k j), hupper⟩
 
+/-- The modulus-two sieve has at least floor(N/(6*3^k))
+distinct positive integers of exact three-adic type k, by a
+finite injection of the arithmetic progression. -/
+theorem threeAdicType_survivors_card_ge_floor (k N : ℕ) :
+    N / threeAdicTypePeriod k ≤
+      (bufferedTypeSurvivors 2 N (primeValuationType 3) k).card := by
+  classical
+  have hsub :
+      ((Finset.range (N / threeAdicTypePeriod k)).image
+        (threeAdicTypeProgression k)) ⊆
+          bufferedTypeSurvivors 2 N (primeValuationType 3) k := by
+    intro target ht
+    obtain ⟨j, hj, rfl⟩ := Finset.mem_image.mp ht
+    have hscope :
+        threeAdicTypeProgression k j ∈ scope N :=
+      threeAdicTypeProgression_mem_scope k N j
+        (Finset.mem_range.mp hj)
+    change threeAdicTypeProgression k j ∈
+      (scope N).filter
+        (fun n => primeValuationType 3 n = k ∧ Nat.Coprime n 2)
+    exact Finset.mem_filter.mpr
+      ⟨hscope, threeAdicTypeProgression_factorization_three k j,
+        threeAdicTypeProgression_coprime_two k j⟩
+  calc
+    N / threeAdicTypePeriod k =
+        (Finset.range (N / threeAdicTypePeriod k)).card := by simp
+    _ = ((Finset.range (N / threeAdicTypePeriod k)).image
+          (threeAdicTypeProgression k)).card :=
+      (Finset.card_image_of_injective _
+        (threeAdicTypeProgression_injective k)).symm
+    _ ≤ (bufferedTypeSurvivors 2 N (primeValuationType 3) k).card :=
+      Finset.card_le_card hsub
+
+/-- For N≥6*3^k, the exact valuation-k survivors occupy at least
+N/(12*3^k) of the full positive integer scope. This arithmetic
+density is proved by a finite quotient/remainder count. -/
+theorem threeAdicType_survivor_density
+    (k N : ℕ) (hcutoff : threeAdicTypePeriod k ≤ N) :
+    ((1 : ℝ) / (2 * (threeAdicTypePeriod k : ℝ))) * (N : ℝ) ≤
+      ((bufferedTypeSurvivors 2 N (primeValuationType 3) k).card : ℝ) := by
+  let d := threeAdicTypePeriod k
+  have hdpos : 0 < d := threeAdicTypePeriod_pos k
+  have hq : 1 ≤ N / d := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hdle : d ≤ d * (N / d) := by
+    calc
+      d = d * 1 := by simp
+      _ ≤ d * (N / d) := Nat.mul_le_mul_left d hq
+  have hmodlt : N % d < d := Nat.mod_lt N hdpos
+  have hmod : N % d + d * (N / d) = N := Nat.mod_add_div N d
+  have hfloor : N ≤ 2 * (d * (N / d)) := by omega
+  have hcard : N / d ≤
+      (bufferedTypeSurvivors 2 N (primeValuationType 3) k).card :=
+    threeAdicType_survivors_card_ge_floor k N
+  have hbound : N ≤
+      (2 * d) * (bufferedTypeSurvivors 2 N (primeValuationType 3) k).card := by
+    calc
+      N ≤ 2 * (d * (N / d)) := hfloor
+      _ = (2 * d) * (N / d) := by ring
+      _ ≤ (2 * d) *
+          (bufferedTypeSurvivors 2 N (primeValuationType 3) k).card :=
+        Nat.mul_le_mul_left _ hcard
+  have hreal : (N : ℝ) ≤
+      (2 : ℝ) * (d : ℝ) *
+        ((bufferedTypeSurvivors 2 N (primeValuationType 3) k).card : ℝ) := by
+    exact_mod_cast hbound
+  have hden : (0 : ℝ) < (2 : ℝ) * (d : ℝ) := by positivity
+  have hscaled :
+      (N : ℝ) / ((2 : ℝ) * (d : ℝ)) ≤
+        ((bufferedTypeSurvivors 2 N (primeValuationType 3) k).card : ℝ) := by
+    apply (div_le_iff₀ hden).mpr
+    nlinarith [hreal]
+  convert hscaled using 1 <;> ring
+
+/-- Under the separate modulus-two buffered kernel, each fixed
+three-adic type k has mass at least 1/(8*6*3^k) for all cutoffs
+N≥6*3^k and all positive iteration counts. The rate depends on k
+but is cutoff- and time-independent. -/
+theorem threeAdicType_buffered_mass_ge_fixed_rate
+    (k N : ℕ) (hN : 1 ≤ N)
+    (hcutoff : threeAdicTypePeriod k ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) :
+    (1 : ℝ) / (8 * (threeAdicTypePeriod k : ℝ)) ≤
+      (bufferedDiagonalKernel 2 N hN).typeMass
+        initial (primeValuationType 3) (depth + 1) k := by
+  have hcount :
+      ((1 : ℝ) / (2 * (threeAdicTypePeriod k : ℝ))) * (N : ℝ) ≤
+        ((bufferedTypeSurvivors 2 N (primeValuationType 3) k).card : ℝ) :=
+    threeAdicType_survivor_density k N hcutoff
+  have hmass :=
+    bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+      2 N hN initial initial_nonneg initial_mass_one
+      (primeValuationType 3) k
+      ((1 : ℝ) / (2 * (threeAdicTypePeriod k : ℝ))) depth hcount
+  calc
+    (1 : ℝ) / (8 * (threeAdicTypePeriod k : ℝ)) =
+        ((1 : ℝ) / (2 * (threeAdicTypePeriod k : ℝ))) / 4 := by
+      rw [div_div_eq_div_mul]
+      congr 1
+      ring
+    _ ≤ (bufferedDiagonalKernel 2 N hN).typeMass
+          initial (primeValuationType 3) (depth + 1) k := hmass
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
