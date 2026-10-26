@@ -1775,4 +1775,146 @@ theorem primeValuation_selectedSieve_no_exact_decoder
       1 (primeValuationType p) (kZeroRadical lift) 1
       hpReach hpowReach hK hneq
 
+/-! ## Joint 2-adic/3-adic valuation types in one modulus-five sieve
+
+The previous theorem was pointwise at a selected prime, possibly
+choosing a different modulus for p=3. Here BOTH exact valuation
+coordinates are measured on the SAME finite arithmetic state n and
+the SAME buffered Markov kernel at modulus q=5.
+
+For target (a,b), the progression
+  (2^a * 3^b) * (30*j+1)
+has exact exponents a at 2 and b at 3; every term is coprime to 5.
+Its finite period is 30*2^a*3^b. The finite survivor count and
+time-uniform mass bound are separate downstream declarations.
+This construction does not claim general finite tuples of arbitrary
+primes, analytic K-theory, or a prime-number theorem.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- Two exact prime-multiplicity coordinates, not two independent
+marginals or a squarefree/radical-only classifier. -/
+def jointTwoThreeValuationType (n : ℕ) : ℕ × ℕ :=
+  (primeValuationType 2 n, primeValuationType 3 n)
+
+/-- Arithmetic period for the joint two-coordinate progression. -/
+def jointTwoThreeValuationPeriod (a b : ℕ) : ℕ :=
+  (2 ^ a * 3 ^ b) * 30
+
+/-- Distinct terms carrying the exact joint valuation label (a,b). -/
+def jointTwoThreeValuationProgression (a b j : ℕ) : ℕ :=
+  (2 ^ a * 3 ^ b) * (30 * j + 1)
+
+theorem jointTwoThreeValuationPeriod_pos (a b : ℕ) :
+    0 < jointTwoThreeValuationPeriod a b := by
+  dsimp [jointTwoThreeValuationPeriod]
+  positivity
+
+theorem jointTwoThreeValuationProgression_pos (a b j : ℕ) :
+    0 < jointTwoThreeValuationProgression a b j := by
+  dsimp [jointTwoThreeValuationProgression]
+  positivity
+
+/-- Exact 2- and 3-adic exponents of the explicit joint progression.
+The tail 30*j+1 has neither prime factor; cross-factors vanish by
+coprimality of distinct primes. -/
+theorem jointTwoThreeValuationProgression_type (a b j : ℕ) :
+    jointTwoThreeValuationType
+      (jointTwoThreeValuationProgression a b j) = (a, b) := by
+  have hp2 : Nat.Prime 2 := by norm_num
+  have hp3 : Nat.Prime 3 := by norm_num
+  have h2ne : (2 : ℕ) ^ a ≠ 0 := by positivity
+  have h3ne : (3 : ℕ) ^ b ≠ 0 := by positivity
+  have hprodne : (2 : ℕ) ^ a * 3 ^ b ≠ 0 :=
+    mul_ne_zero h2ne h3ne
+  have htailne : 30 * j + 1 ≠ 0 := by omega
+  have hcop32 : Nat.Coprime ((3 : ℕ) ^ b) 2 :=
+    (show Nat.Coprime 3 2 by decide).pow_left b
+  have hcop23 : Nat.Coprime ((2 : ℕ) ^ a) 3 :=
+    (show Nat.Coprime 2 3 by decide).pow_left a
+  have h3at2 : ((3 : ℕ) ^ b).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd
+      ((Nat.Prime.coprime_iff_not_dvd hp2).mp hcop32.symm)
+  have h2at3 : ((2 : ℕ) ^ a).factorization 3 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd
+      ((Nat.Prime.coprime_iff_not_dvd hp3).mp hcop23.symm)
+  have htailnot2 : ¬ (2 : ℕ) ∣ 30 * j + 1 := by
+    rintro ⟨z, hz⟩
+    omega
+  have htailnot3 : ¬ (3 : ℕ) ∣ 30 * j + 1 := by
+    rintro ⟨z, hz⟩
+    omega
+  have htail2 : (30 * j + 1).factorization 2 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd htailnot2
+  have htail3 : (30 * j + 1).factorization 3 = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd htailnot3
+  have h2 : (jointTwoThreeValuationProgression a b j).factorization 2 = a := by
+    change ((2 ^ a * 3 ^ b) * (30 * j + 1)).factorization 2 = a
+    rw [Nat.factorization_mul hprodne htailne]
+    rw [Nat.factorization_mul h2ne h3ne]
+    simp [Nat.factorization_pow_self hp2, h3at2, htail2]
+  have h3 : (jointTwoThreeValuationProgression a b j).factorization 3 = b := by
+    change ((2 ^ a * 3 ^ b) * (30 * j + 1)).factorization 3 = b
+    rw [Nat.factorization_mul hprodne htailne]
+    rw [Nat.factorization_mul h2ne h3ne]
+    simp [Nat.factorization_pow_self hp3, h2at3, htail3]
+  exact Prod.ext h2 h3
+
+/-- One arithmetic modulus, 5, admits the whole joint progression. -/
+theorem jointTwoThreeValuationProgression_coprime_five (a b j : ℕ) :
+    Nat.Coprime (jointTwoThreeValuationProgression a b j) 5 := by
+  have hpow2 : Nat.Coprime ((2 : ℕ) ^ a) 5 :=
+    (show Nat.Coprime 2 5 by decide).pow_left a
+  have hpow3 : Nat.Coprime ((3 : ℕ) ^ b) 5 :=
+    (show Nat.Coprime 3 5 by decide).pow_left b
+  have hdiv5 : (5 : ℕ) ∣ 30 * j := by
+    refine ⟨6 * j, ?_⟩
+    ring
+  have hnot5 : ¬ (5 : ℕ) ∣ 30 * j + 1 := by
+    intro h
+    have hone : (5 : ℕ) ∣ 1 := (Nat.dvd_add_iff_right hdiv5).mp h
+    norm_num at hone
+  have hp5 : Nat.Prime 5 := by norm_num
+  have htail : Nat.Coprime (30 * j + 1) 5 :=
+    ((Nat.Prime.coprime_iff_not_dvd hp5).mpr hnot5).symm
+  have hprod : Nat.Coprime ((2 : ℕ) ^ a * 3 ^ b) 5 :=
+    Nat.coprime_mul_iff_left.mpr ⟨hpow2, hpow3⟩
+  change Nat.Coprime ((2 ^ a * 3 ^ b) * (30 * j + 1)) 5
+  exact Nat.coprime_mul_iff_left.mpr ⟨hprod, htail⟩
+
+/-- Injectivity is on the joint progression index, not the full
+arithmetic radical or valuation classifier. -/
+theorem jointTwoThreeValuationProgression_injective (a b : ℕ) :
+    Function.Injective (jointTwoThreeValuationProgression a b) := by
+  intro i j h
+  have hpne : (2 : ℕ) ^ a * 3 ^ b ≠ 0 := by positivity
+  have hsame : 30 * i + 1 = 30 * j + 1 :=
+    mul_left_cancel₀ hpne (by
+      simpa only [jointTwoThreeValuationProgression] using h)
+  omega
+
+/-- Terms indexed below the finite integer quotient N/period lie
+within the inclusive positive arithmetic scope. -/
+theorem jointTwoThreeValuationProgression_mem_scope
+    (a b N j : ℕ)
+    (hj : j < N / jointTwoThreeValuationPeriod a b) :
+    jointTwoThreeValuationProgression a b j ∈ scope N := by
+  have hjle : j + 1 ≤ N / jointTwoThreeValuationPeriod a b := by omega
+  have hupper : jointTwoThreeValuationProgression a b j ≤ N := by
+    calc
+      jointTwoThreeValuationProgression a b j ≤
+          jointTwoThreeValuationPeriod a b * (j + 1) := by
+        dsimp [jointTwoThreeValuationProgression, jointTwoThreeValuationPeriod]
+        calc
+          (2 ^ a * 3 ^ b) * (30 * j + 1) ≤
+              (2 ^ a * 3 ^ b) * (30 * (j + 1)) :=
+            Nat.mul_le_mul_left _ (by omega)
+          _ = (2 ^ a * 3 ^ b) * 30 * (j + 1) := by ring
+      _ ≤ jointTwoThreeValuationPeriod a b *
+            (N / jointTwoThreeValuationPeriod a b) :=
+        Nat.mul_le_mul_left _ hjle
+      _ ≤ N := Nat.mul_div_le N (jointTwoThreeValuationPeriod a b)
+  change jointTwoThreeValuationProgression a b j ∈ Finset.Icc 1 N
+  exact Finset.mem_Icc.mpr
+    ⟨Nat.succ_le_iff.mpr (jointTwoThreeValuationProgression_pos a b j), hupper⟩
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
