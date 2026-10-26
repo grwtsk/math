@@ -74,4 +74,65 @@ theorem kZeroMap_comp (g : StablePort N P) (f : StablePort M N) :
 
 end StablePort
 
+/-!
+## Joint K₀-shaped and radical-signature collision boundary
+
+The source's K₀-shaped invariant below is only the universal group completion
+already formalized in this module. The second coordinate is an explicitly
+supplied radical/support feature, not a coercion between arithmetic, ideal,
+and polynomial radicals. A collision proves loss of exact type identification,
+not the impossibility of probabilistic coverage of the types.
+-/
+
+namespace JointCollision
+
+universe x y z t
+
+variable {Source : Type x} {Stable : Type y} [CommMonoid Stable]
+  {RadicalSignal : Type z} {TypeLabel : Type t}
+
+/-- The jointly observed K₀-shaped class and radical signature. -/
+def feature
+    (kClass : Source → GrothendieckKZero Stable)
+    (radical : Source → RadicalSignal) :
+    Source → GrothendieckKZero Stable × RadicalSignal :=
+  fun source => (kClass source, radical source)
+
+/-- An exact decoder must be constant on every joint feature fiber. -/
+theorem type_eq_of_joint_feature_collision
+    (kClass : Source → GrothendieckKZero Stable)
+    (radical : Source → RadicalSignal)
+    (typeOf : Source → TypeLabel)
+    (decode : GrothendieckKZero Stable × RadicalSignal → TypeLabel)
+    (correct : ∀ source, decode (feature kClass radical source) = typeOf source)
+    {a b : Source}
+    (sameK : kClass a = kClass b)
+    (sameRadical : radical a = radical b) :
+    typeOf a = typeOf b := by
+  have hfeature : feature kClass radical a = feature kClass radical b := by
+    simp [feature, sameK, sameRadical]
+  calc
+    typeOf a = decode (feature kClass radical a) := (correct a).symm
+    _ = decode (feature kClass radical b) := congrArg decode hfeature
+    _ = typeOf b := correct b
+
+/-- A collision which merges different exact types blocks every decoder
+factoring only through the paired K₀-shaped class and radical signature. -/
+theorem no_exact_type_decoder_of_collision
+    (kClass : Source → GrothendieckKZero Stable)
+    (radical : Source → RadicalSignal)
+    (typeOf : Source → TypeLabel)
+    {a b : Source}
+    (sameK : kClass a = kClass b)
+    (sameRadical : radical a = radical b)
+    (differentType : typeOf a ≠ typeOf b) :
+    ¬ ∃ decode : GrothendieckKZero Stable × RadicalSignal → TypeLabel,
+        ∀ source, decode (feature kClass radical source) = typeOf source := by
+  rintro ⟨decode, correct⟩
+  exact differentType
+    (type_eq_of_joint_feature_collision kClass radical typeOf
+      decode correct sameK sameRadical)
+
+end JointCollision
+
 end GRWTSK.Algebra.KTheory
