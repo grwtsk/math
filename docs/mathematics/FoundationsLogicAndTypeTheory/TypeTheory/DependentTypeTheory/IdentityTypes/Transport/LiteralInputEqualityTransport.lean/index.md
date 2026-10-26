@@ -1,5 +1,9 @@
 # GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.IdentityTypes.Transport.LiteralInputEqualityTransport
 
+<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
+**Later verification observation:** source compilation exited zero; the declared axiom policy was rejected. The radius-three graph is structurally complete. **S₃ remains unavailable.** [Exact scope, all compiler roots and evidence](verification-update-d4083a002f058bdd3b9b.md). The original issuance and its metadata below retain their historical scope.
+<!-- END VERIFICATION AMENDMENT -->
+
 [Complete source index](../../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
 
 **11 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.

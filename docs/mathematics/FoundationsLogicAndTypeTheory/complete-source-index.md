@@ -1,5 +1,9 @@
 # FoundationsLogicAndTypeTheory — complete source
 
+<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
+[Later verification observations](verification-updates.md). Source compilation, axiom policy and graph completeness are recorded separately; all pending and failed results remain included.
+<!-- END VERIFICATION AMENDMENT -->
+
 [Complete source index](../complete-source-index.md)
 
 **18,436 source modules · 325,667 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
