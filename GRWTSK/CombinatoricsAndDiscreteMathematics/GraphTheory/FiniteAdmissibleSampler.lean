@@ -826,6 +826,64 @@ theorem AllowedPath.no_odd_return_of_bipartite
   simp [odd] at h
   cases hc : color target <;> simp [hc] at h
 
+/-!
+## Bipartite heat-support obstruction
+
+The parity restriction applies to the actual Gibbs evolution, not only
+to individual paths. A nonnegative initial distribution supported in
+one Boolean color class cannot reach the other parity-incompatible
+class at a fixed time. This is a conditional obstruction and does not
+assert that the weighted arithmetic sieve has such a coloring.
+-/
+
+/-- In a strictly bipartite admissible graph, nonnegative heat initially
+supported in one color class is exactly zero at every vertex whose
+color is incompatible with the time parity. -/
+theorem realEvolve_eq_zero_of_color_mismatch
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (color : V → Bool) (initialColor : Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (supported : ∀ v, 0 < heat v → color v = initialColor)
+    (length : ℕ) (target : V)
+    (mismatch : color target ≠
+      (if length % 2 = 0 then initialColor else !initialColor)) :
+    S.realEvolve heat length target = 0 := by
+  have hnonneg := S.realEvolve_nonneg heat nonnegative length target
+  by_contra hnonzero
+  have hpositive : 0 < S.realEvolve heat length target :=
+    lt_of_le_of_ne hnonneg (Ne.symm hnonzero)
+  obtain ⟨source, hsource, path⟩ :=
+    S.realEvolve_pos_has_allowedPath length heat target
+      nonnegative hpositive
+  have hcolor := AllowedPath.color_parity S color flips path
+  rw [supported source hsource] at hcolor
+  exact mismatch hcolor
+
+/-- If the initial heat is confined to one color, the incompatible
+Boolean type has exactly zero aggregate mass at every fixed time. -/
+theorem realTypeMass_eq_zero_of_bipartite_parity
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (color : V → Bool) (initialColor : Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (supported : ∀ v, 0 < heat v → color v = initialColor)
+    (length : ℕ) (kind : Bool)
+    (wrong : kind ≠
+      (if length % 2 = 0 then initialColor else !initialColor)) :
+    realTypeMass color (S.realEvolve heat length) kind = 0 := by
+  unfold realTypeMass
+  apply Finset.sum_eq_zero
+  intro target _
+  by_cases hkind : color target = kind
+  · have mismatch : color target ≠
+        (if length % 2 = 0 then initialColor else !initialColor) := by
+      rw [hkind]
+      exact wrong
+    simp [hkind, S.realEvolve_eq_zero_of_color_mismatch heat
+      nonnegative color initialColor flips supported length target mismatch]
+  · simp [hkind]
+
 end TypeHeat
 
 end Sampler
