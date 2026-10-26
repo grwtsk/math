@@ -397,4 +397,40 @@ theorem graphEulerHeat_pairing_le_of_image_bound
   exact graphEulerHeat_correction_budget_of_image_bound
     w u τ D hτ hD hstep himage hmixednonneg
 
+/-! ## Exact source-level mixed pairing identities
+
+Before using a degree bound to control the Laplacian image, the
+mixed pairing must be identified with the ordinary squared norm of
+Lu. The following algebraic identities hold for the actual finite
+Laplacian, without any spectral or continuum assumptions.
+-/
+
+/-- The mixed pairing of u with Lu is exactly the finite sum
+of squared coordinates of Lu when weights are symmetric. -/
+theorem graphMixedPairing_u_Lu_eq_sum_sq
+    (w : V → V → ℚ) (u : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    graphMixedPairing w u (weightedGraphLaplacian w u) =
+      ∑ i : V, (weightedGraphLaplacian w u i) ^ 2 := by
+  classical
+  unfold graphMixedPairing weightedGraphLaplacian
+  have hswap :
+      (∑ i : V, ∑ j : V,
+        u i * (w i j * ((∑ k : V, w i k * (u i - u k)) -
+          (∑ k : V, w j k * (u j - u k))))) =
+      (∑ i : V, ∑ j : V,
+        u j * (w i j * ((∑ k : V, w j k * (u j - u k)) -
+          (∑ k : V, w i k * (u i - u k))))) := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro j hj
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [hsym j i]
+  simp only [Finset.mul_sum]
+  rw [← Finset.sum_mul]
+  apply Finset.sum_congr rfl
+  intro i hi
+  ring
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
