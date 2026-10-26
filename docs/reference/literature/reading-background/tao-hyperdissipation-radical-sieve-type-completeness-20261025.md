@@ -125,3 +125,103 @@ For the distinct *nonreduced* collision $k[\epsilon]/(\epsilon^2)\to k$, both lo
 7. On a separately authorized pinned clean checkout, compile affected leaf and root imports, fresh-check the kernel and `#print axioms` of the new declarations. Store actual runner commands/receipts in `grwtsk/noeaaeue`, not in math; do not infer acceptance from GitHub issues or source scans.
 
 **Source/verification classifications:** Tao theorem = imported external mathematics; generic existing GRWTSK declarations = source proof candidates until current verification; Theorems A–C = new analytic mathematics, Lean `NOT_WRITTEN`; two-state checks = finite evidence; classical 3D NS nonblowup, actual arithmetic infinite-density steering, analytic K-theory realization and nilpotent reconstruction = unresolved separate bridges. No merge, no force push, no unauthorized remote execution.
+
+
+---
+
+## Bounded successor: perturbative discrete steering and collision-observation error budget (2026-10-25)
+
+**Status and provenance:** New elementary finite Markov/linear-algebra proof, **NOT** a result asserted in Tao (2009) or its subsequent Navier–Stokes papers. Formal Lean declaration **NOT_WRITTEN**; compilation, fresh kernel and transitive axiom audit **NOT_RUN**. Existing gate [#1267](https://github.com/grwtsk/math/issues/1267) remains open. Source-only GRWTSK pins inspected at main commit **43f232096f93f9baf693dc67b1dbab54107c5056**:
+
+- K-theory joint decoder: **GRWTSK/Algebra/KTheory/GrothendieckPort.lean**, Git blob **d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f**. Exact declarations **GRWTSK.Algebra.KTheory.JointCollision.type_eq_of_joint_feature_collision** and **...no_exact_type_decoder_of_collision**.
+- Independent radical-factored collision source **GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean**, Git blob **6754d346dc7ad4b5e02eb3e97bc475bda1ef847e**, already defines **kZeroRadical**, **kZeroRadical_not_injective**, **no_exact_nat_type_decoder**. The source has a static verification manifest at **docs/verification/Algebra/KTheory/radical-collision-type-boundary-20261025.toml** pinned to its *historical* commit f3fb87b6daeaea08dc133350ddd3f39bd5d84d45; do not overwrite or transfer that historical pin. Those Lean declarations are source candidates, not fresh kernel receipts.
+- Finite heat / graph interfaces: **GRWTSK/Analysis/OperatorTheory/SpectralTheory/HeightIndexedGraphDiffusion.lean** blob **3b88b21b60df16f0e22d73f57eac69b8f8fe8a7c**; **GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/AlgebraicGraphTheory/FiniteWeightedLaplacian.lean** blob **7f414d21cb768cc938f1ef2e4a3077b41c62bb45**. The former keeps Markov row sums/positivity as explicit certificates; the latter does not automatically construct a probability-mass operator.
+
+### Theorem D — exact finite-error Duhamel identity for type masses
+
+Let a finite nonempty source set \(S\) have a finite **required** type label set \(T\), a classifier \(c:S\to T\), and a strictly positive stationary probability \(\mu\) on \(S\). Let each \(P_j\) be an actual probability on \(S\), let \(0<\alpha_j\le1\), and let \(r_j:S\to\mathbb R\) have total sum zero. Assume the *actual* update is
+
+\[
+P_{j+1}=(1-\alpha_j)P_j+\alpha_j\mu+r_j,
+\]
+
+and nonnegativity is retained (an arbitrary signed residual does not guarantee this).
+For \(0\le a\le b\), define \(Q_{a,b}=\prod_{\ell=a}^{b-1}(1-\alpha_\ell)\), with empty product \(1\). For each label \(\theta\), define
+\[
+p_j(\theta)=\sum_{c(x)=\theta}P_j(x),\quad
+\mu_\theta=\sum_{c(x)=\theta}\mu(x),\quad
+\rho_j(\theta)=\sum_{c(x)=\theta}r_j(x).
+\]
+Then **exactly**, for every \(N\ge0\),
+
+\[
+p_N(\theta)-\mu_\theta =
+Q_{0,N}(p_0(\theta)-\mu_\theta)
++\sum_{j=0}^{N-1}Q_{j+1,N}\rho_j(\theta).
+\]
+
+**Proof:** sum the actual state update over the classifier fiber, subtract \(\mu_\theta\), and induct on \(N\). The scalar error recurrence is \(d_{j+1}=(1-\alpha_j)d_j+\rho_j\). A separate finite telescoping identity gives
+\[
+\sum_{j=0}^{N-1}\alpha_j Q_{j+1,N}=1-Q_{0,N}.
+\]
+No division, Markov convergence theorem, or Navier–Stokes result is required for this finite identity.
+
+### Theorem E — quantitative positivity and asymptotic steering under defective transitions
+
+Suppose the *type-level* defects satisfy \(|\rho_j(\theta)|\le \alpha_j\eta\) for every \(j,\theta\), with fixed \(\eta\ge0\). Taking absolute values in the exact formula and using the telescope yields
+
+\[
+|p_N(\theta)-\mu_\theta|
+\le Q_{0,N}|p_0(\theta)-\mu_\theta|+\eta(1-Q_{0,N}),
+\]
+and the stronger signed lower bound
+\[
+p_N(\theta)\ge Q_{0,N}p_0(\theta)
++(1-Q_{0,N})(\mu_\theta-\eta).
+\]
+
+If the classifier is **surjective onto the required \(T\)** and \(T\) is nonempty, every stationary type mass \(\mu_\theta\) is positive. When \(\eta<\min_{\theta\in T}\mu_\theta\), all types have strictly positive actual mass after any update with \(Q_{0,N}<1\), even if some type initially had zero mass. This is not an arithmetic witness-construction theorem: the positive stationary masses presuppose actual type representatives.
+
+For *varying* nonnegative error allowances \(\eta_j\to0\) satisfying \(|\rho_j(\theta)|\le\alpha_j\eta_j\), if \(\sum_{j\ge0}\alpha_j=\infty\), then \(Q_{0,N}\to0\) and **\(p_N(\theta)\to\mu_\theta\)**. Proof: for each fixed \(j\), \(Q_{j+1,N}\to0\); split the error sum into finitely many early \(j<J\) (vanishing one by one) and a late tail \(j\ge J\), bounded by \(\sup_{j\ge J}\eta_j\) using the finite telescope. Sending \(J\to\infty\) proves the limit. A bounded but nonvanishing relative defect gives only a persistent error floor, not exact stationary convergence.
+
+### Operator-level supplier, not a merely assumed scalar residual
+
+The ideal stochastic matrix has rows
+\[
+K_j^0(x,y)=(1-\alpha_j)\mathbf1_{x=y}+\alpha_j\mu(y).
+\]
+Let \(K_j\) instead be an **actual row-stochastic** finite matrix, and set \(P_{j+1}=P_jK_j\).
+If for every row \(x\) its total-variation distance satisfies
+\[
+\operatorname{TV}(K_j(x,\cdot),K_j^0(x,\cdot))
+\le\alpha_j\eta_j,
+\]
+then the signed residual \(r_j=P_j(K_j-K_j^0)\) has zero total mass and satisfies
+\[
+\left|\sum_{c(y)=\theta}r_j(y)\right|
+\le\operatorname{TV}(r_j)\le\alpha_j\eta_j.
+\]
+**Proof:** convexity/triangle inequality for row total variation under the probability weights \(P_j(x)\). This is the exact missing **operator-to-type-error bridge**. Stochasticity ensures \(P_{j+1}\ge0\); it may not be inferred from a generic finite matrix exponential without a nonnegative-row/mass certificate.
+
+### Exact rational two-state preflight and hostile control
+
+Take \(S=\{12,18\}\), types distinguished by valuation vectors, \(\mu=(1/2,1/2)\), \(P_0=(1,0)\), \(\alpha_j=1/(j+2)\). This schedule is the exact integer-time sampling of the **chosen finite steering model** \(g\equiv1\), \(A(t)=\log(1+t)\), \(q(t)=1/(1+t)\). Take \(\varepsilon=1/10\) and true row-stochastic perturbations corresponding to \(r_j=(-\varepsilon\alpha_j^2,+\varepsilon\alpha_j^2)\). Each row of the perturbed kernel has total-variation error \(\varepsilon\alpha_j^2=\alpha_j\eta_j\), \(\eta_j=\varepsilon/(j+2)\to0\). By the exact finite recurrence,
+\[
+P_N(18)=\frac{N}{2(N+1)}
+ +\frac{\varepsilon}{N+1}\sum_{k=2}^{N+1}\frac1k,
+\]
+so \(P_N(18)\to1/2\). This convergence is visible only under a fine type classifier; the coarse radical label remains \(6\) for both states and has total mass \(1\) at every step.
+
+**Executed finite preflight:** Python 3.13 standard-library `fractions.Fraction`, here under a one-off `python3 - <<'PY'` shell invocation, exit **0**. Checked 100 consecutive exact-rational updates, probability conservation, nonnegativity, the harmonic-number closed form, the finite error bound, and the negative-control regime. For \(N=1,5,100\), the calculated \(P_N(18)\) is respectively \(11/40\), \(529/1200\), and approximately \(0.499205226\). **Hostile control:** with persistent \(r_j=(-\varepsilon\alpha_j,+\varepsilon\alpha_j)\), the actual type-18 mass tends \(1/2+\varepsilon=3/5\), not \(1/2\) (at \(N=100\), exactly \(60/101\)). Thus \(\eta_j\to0\) or another vanishing error-control premise cannot be dropped when asserting exact asymptotic steering. This is limited finite arithmetic evidence, not a Lean/compiler/kernel result.
+
+### Required-type and observability boundary
+
+A missing fiber \(c^{-1}(\theta)=\varnothing\) has \(\mu_\theta=p_j(\theta)=0\) for every probability on \(S\). No refinement of the Markov transition law, including Tao-shaped integrated diffusion, creates missing states or a missing arithmetic type. Also \(S=\{12\}\) and \(S'=\{12,18\}\) can have the same **coarse radical observation** supported at \(6\), yet differ on required fine type \(18\). The existing radical-factored K₀-shaped source obstruction correctly rules out reconstruction from the joint coarse feature. A valuation/jet-enriched classifier must be proved type-separating before using a coarse observation to certify completeness.
+
+For a family of arithmetic cutoffs \(S_H\), the finite theorem only supplies **cutoff-specific** visibility. Uniform \(H\to\infty\) density or type completeness requires actual witnesses at every sufficiently large cutoff, positive type masses with quantitative \(H\)-uniform (or type-specific) lower bounds, controlled transition residuals, and true sieve/equidistribution suppliers. Neither Tao's hyperdissipative PDE proof nor a formal Grothendieck group completion discharges these obligations.
+
+### Proposed first new Lean theorem, only after gate clearance
+
+Place the elementary finite-step type-mass telescope in an existing **finite spectral diffusion or weighted-graph subject leaf**, not the K₀ mathematical core and not a new parallel hierarchy. Prefer an independent simple finite-sum module that can later be imported by **HeightIndexedGraphDiffusion** after its current dependency acceptance. Prove in order: type-fiber finite sum of a convex mixture; telescoping product; finite error inequality; strictly positive mass after mixing; kernel-total-variation supplier; only then analytic/infinite-time steering. Reuse **JointCollision** and **RadicalCollisionBoundary** as separately pinned source candidates without re-creating them. Native Lean definitions, theorem names and exact build commands for the **new** result are **NOT_YET_DEFINED**. When written, re-pin the exact new source commit/blob and register the paper-derived connections in the canonical literature ledger with execution receipts or explicit NOT_RUN.
+
+Gate #1267 and all no-merge/no-force-push/no-unapproved-dispatch constraints remain. The new source has **not** been compiled or kernel-checked: `NOT_RUN`. Runners, checks and actual receipts belong in **grwtsk/noeaaeue**, not math.
