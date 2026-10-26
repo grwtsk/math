@@ -117,6 +117,12 @@ theorem harmonic_iff_equal_values (f : Cochain0) :
 theorem harmonic_iff_coboundary_zero (f : Cochain0) :
     laplacian f = 0 ↔ coboundary f = 0 := by
   rw [harmonic_iff_equal_values]
-  simp [coboundary, eq_comm]
+  change f 0 = f 1 ↔ f 1 - f 0 = 0
+  constructor
+  · intro h
+    rw [h]
+    ring
+  · intro h
+    exact (sub_eq_zero.mp h).symm
 
 end GRWTSK.Algebra.LinearAlgebra.FiniteOneEdgeHodge
