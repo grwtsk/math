@@ -1,0 +1,2857 @@
+{
+  "schema_version": 1,
+  "title": "Next tractable bridges during the native verification hold",
+  "local_attribution": "grwtsk contributors",
+  "math_review_commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+  "mathlib_review_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "baseline": "obligation-implementation-progress-v17.json",
+  "baseline_counts_retained": {
+    "unresolved": 17,
+    "kernel-verified-optional-specialization": 2,
+    "kernel-verified-conditional-fragment": 14,
+    "kernel-verified-correction-check": 2,
+    "kernel-verified-correction-fragment": 1
+  },
+  "native_verification": "NOT_RUN; hold retained",
+  "mathematical_acceptance_changed": false,
+  "source_review_only": true,
+  "reading_or_understanding_dates_inferred": false,
+  "version_policy": "All fifteen raw asset identities remain distinct. Six pairs have equal extracted layout text; this does not merge PDFs, prove edition order or settle the status note’s S1 citations.",
+  "scope_note": "Seven assistant-proposed construction plans, not seven manuscript theorems or Lean proof candidates. Existing declarations are cited from reviewed bodies. Edited names/bytes do not inherit historical receipts.",
+  "sources": [
+    {
+      "source_id": "sha256:0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "title": "A Holistic Strategy for Deriving Properties of Prime Numbers",
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-23",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "May 23, 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf",
+          "blob": "28e3ee7aaf8f5b4fd1d85a32316654fea12e446c",
+          "mode": "100644",
+          "size": 75533,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers%20%283%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "title": "Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis",
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/C (7).pdf",
+          "blob": "321ef7c1fa5685faac750558754f8d0e2906fe14",
+          "mode": "100644",
+          "size": 193642,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/C%20%287%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "title": "Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis",
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/C (9).pdf",
+          "blob": "68757e7d6f23427e3487d3166928241025ce0ea6",
+          "mode": "100644",
+          "size": 193642,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/C%20%289%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:2edefaf15e1f05637a0456ceee3f85ef497cdd0e05e83bf7bb1cee1f86b7210f",
+      "title": "Formal Derivation of Axiom 5: Cross-Domain Error Cancellation",
+      "asset_sha256": "2edefaf15e1f05637a0456ceee3f85ef497cdd0e05e83bf7bb1cee1f86b7210f",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "2edefaf15e1f05637a0456ceee3f85ef497cdd0e05e83bf7bb1cee1f86b7210f",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "2edefaf15e1f05637a0456ceee3f85ef497cdd0e05e83bf7bb1cee1f86b7210f",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation%20%281%29.pdf",
+          "blob": "0f239e5f9c472f30d93a463a5e3332e6d5f9d244"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "76acb4241477be9371d53cd62cbe1b70f18a831a31bef072846e031418f94db5"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:90212cbba117fd1ebecb3a3df349f3913e7d89cd13806416f8756c0394eeeaf8",
+      "title": "Formal Derivation of Axiom 5: Cross-Domain Error Cancellation",
+      "asset_sha256": "90212cbba117fd1ebecb3a3df349f3913e7d89cd13806416f8756c0394eeeaf8",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "90212cbba117fd1ebecb3a3df349f3913e7d89cd13806416f8756c0394eeeaf8",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "90212cbba117fd1ebecb3a3df349f3913e7d89cd13806416f8756c0394eeeaf8",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation%20%282%29.pdf",
+          "blob": "673b126f56ca5a836e582f63b4738c8dc8b4e633"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "76acb4241477be9371d53cd62cbe1b70f18a831a31bef072846e031418f94db5"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:e4af0063b673b42118bfb15cbf584a617c230a9e1f36e3c002b796b571350df5",
+      "title": "Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond",
+      "asset_sha256": "e4af0063b673b42118bfb15cbf584a617c230a9e1f36e3c002b796b571350df5",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "e4af0063b673b42118bfb15cbf584a617c230a9e1f36e3c002b796b571350df5",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "e4af0063b673b42118bfb15cbf584a617c230a9e1f36e3c002b796b571350df5",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond%20%281%29.pdf",
+          "blob": "551f802fe915a5a554f02369a04b21ae4b72290a"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "09f4c3866d58076a9aa85067128b2b1fa720d7efb45266e8c15f4b986b94fc28"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "02a62548554a7b8da8a324450a23c0564f03308cae76dd05f8f66a4687b7571d"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:46c71204aa52fd1ca0119f13382b0043fda1a9abf50d69a463ea778c8dbcff8c",
+      "title": "Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond",
+      "asset_sha256": "46c71204aa52fd1ca0119f13382b0043fda1a9abf50d69a463ea778c8dbcff8c",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "46c71204aa52fd1ca0119f13382b0043fda1a9abf50d69a463ea778c8dbcff8c",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "46c71204aa52fd1ca0119f13382b0043fda1a9abf50d69a463ea778c8dbcff8c",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond%20%282%29.pdf",
+          "blob": "5cd740b38f8be7ff968fae489d577ce46126a7ab"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "09f4c3866d58076a9aa85067128b2b1fa720d7efb45266e8c15f4b986b94fc28"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "02a62548554a7b8da8a324450a23c0564f03308cae76dd05f8f66a4687b7571d"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+      "title": "Refinement of Axiom 1: Bounded Error Growth Without Conjectures",
+      "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory%20%281%29.pdf",
+          "blob": "24db3692fb3576de7120803ee0deb4552c84e498"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+      "title": "Refinement of Axiom 1: Bounded Error Growth Without Conjectures",
+      "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory%20%282%29.pdf",
+          "blob": "3a8bd081a81421e553fc257bca58bc97c715b019"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:ed896093fe8237738c1865eb150a270fd12b044a3ab676bbd24671d4bfbdbcb1",
+      "title": "Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations",
+      "asset_sha256": "ed896093fe8237738c1865eb150a270fd12b044a3ab676bbd24671d4bfbdbcb1",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "ed896093fe8237738c1865eb150a270fd12b044a3ab676bbd24671d4bfbdbcb1",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations%20%281%29.pdf",
+          "blob": "e34a1deed3e3bf1a09403fab2276a7b5aa9c8320"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "284b5518db3114cf562fbe2dd65f13f4e4d6105ed4be55d4ff7950a4fb72eb1e"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "813107f2fb7a64fa9f4508db2ce6b3649a587d7ee2b4c2083ccc7a14db02fafd"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "d2343257ab5e33dc2e537ca3ff5b93778d76eaaa0611cac618bece5667bcfddd"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:f54c768808920d51d1304089de5b0817240e3f061954f855a187ce17a0a30486",
+      "title": "Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations",
+      "asset_sha256": "f54c768808920d51d1304089de5b0817240e3f061954f855a187ce17a0a30486",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "f54c768808920d51d1304089de5b0817240e3f061954f855a187ce17a0a30486",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations%20%282%29.pdf",
+          "blob": "36a060e85501645b7f7d585e5dd3f887404889ab"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "284b5518db3114cf562fbe2dd65f13f4e4d6105ed4be55d4ff7950a4fb72eb1e"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "813107f2fb7a64fa9f4508db2ce6b3649a587d7ee2b4c2083ccc7a14db02fafd"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "d2343257ab5e33dc2e537ca3ff5b93778d76eaaa0611cac618bece5667bcfddd"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "title": "Updated Verification of Recursive Refinement Framework",
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/Updated_Verification_of_Recursive_Refinement_Framework (2).pdf",
+          "blob": "e7e459f64d4d145ea39d56f08721c2ba5b39372b",
+          "mode": "100644",
+          "size": 73023,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Updated_Verification_of_Recursive_Refinement_Framework%20%282%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "title": "Boundary Regularization: A Framework for High-Rank Elimination",
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-23",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "May 23, 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/g (2).pdf",
+          "blob": "a6b1384d8b682feabc705eee0e058eb50c61df39",
+          "mode": "100644",
+          "size": 141346,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/g%20%282%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "title": "Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations",
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-23",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "May 23, 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/i (2).pdf",
+          "blob": "71542562d4e167aaa8145eb43de20253dc111ae2",
+          "mode": "100644",
+          "size": 121223,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%282%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "title": "Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations",
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-23",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "May 23, 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/i (3).pdf",
+          "blob": "9263622af06f0bdfd8d1f9dfe6a9add5eb19bad6",
+          "mode": "100644",
+          "size": 121223,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%283%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        }
+      ]
+    }
+  ],
+  "reviewed_code": [
+    {
+      "path": "GRWTSK/Algebra/LinearAlgebra/RetractionComplement.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "09d412123341ccdf11be5b0f8fb6ff0a27470ada",
+      "sha256": "17d5f72b6ebb249464370ab94902ed919ca27ffac07b6f2d61833afffc3b5c48",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement",
+          "line": 11
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_in_kernel",
+          "line": 15
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_on_image",
+          "line": 20
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_idempotent",
+          "line": 25
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_decomposition",
+          "line": 33
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_commutes",
+          "line": 38
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Algebra/LinearAlgebra/RetractionSplitEquiv.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "620c39d9e12876f5853f97ef9064f723b5ae881d",
+      "sha256": "3014cb4063269b6bed7ed61c35e3a61408e3a66fcb7305095b29d801da14acfe",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv",
+          "line": 10
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_coordinates",
+          "line": 34
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_inverse",
+          "line": 41
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_zero_iff_range",
+          "line": 46
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ErrorBounds/ExactDefectTracker.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "f0d36bc217ba98a7d5fe28afed6981d1236779f9",
+      "sha256": "714cb8be7f58ae2d816b5f2a0b424344bdb3eaa8f1d2b765add7a8be22f2685a",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker",
+          "line": 13
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_initial",
+          "line": 20
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_step",
+          "line": 25
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_first_step",
+          "line": 32
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_net_forcing_zero",
+          "line": 41
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_residual_step",
+          "line": 50
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_residual_vanishes",
+          "line": 59
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ErrorBounds/SourceResidualEvolution.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "09e5c858dc3a237531d80e5b663d90449e53587f",
+      "sha256": "fa1a075597c2d2535e6f9018cee0b6e9fc45e7f0bd8ece4f29be621e16fa0fc5",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.sourceResidual",
+          "line": 43
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.stageDefect",
+          "line": 47
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.residualForcing",
+          "line": 52
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.sourceResidual_evolution",
+          "line": 57
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.source_readout_difference",
+          "line": 68
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.channelMass_sub_le",
+          "line": 77
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.source_residual_budget_step",
+          "line": 93
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.net_forcing_vanishes_of_separate_defects",
+          "line": 107
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.matched_injection_forcing",
+          "line": 129
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.no_fixed_negative_of_source_defects",
+          "line": 143
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.fixed_residual_forces_defect",
+          "line": 169
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.fixed_readout_forces_defect",
+          "line": 183
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.unitSource",
+          "line": 199
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.zeroModel",
+          "line": 201
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.halfGain",
+          "line": 203
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.persistent_source_fixture",
+          "line": 206
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.persistent_source_defect_not_vanishing",
+          "line": 214
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.matching_persistent_defects_fixture",
+          "line": 222
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.affine_tracking_fixture",
+          "line": 231
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ErrorBounds/SourceResidualConvergence.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "8de6e01f7579920f28f4d21fefaaaa6f824cda96",
+      "sha256": "91a7cee6202dad467a2f8536b2f27665d516f877f68be61e054429a97175d2c6",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.source_residual_vanishes",
+          "line": 12
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ErrorBounds/ContractingResidualBudget.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "08b8fbaf12492620046507e4b8be32ea263656a4",
+      "sha256": "b337ccddd21a1605f43eecedda02ed8e78c311f7518054b88198d2b83f19868d",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.forcingResponse",
+          "line": 42
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.variable_budget_majorant",
+          "line": 47
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.restart_budget_majorant",
+          "line": 63
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.variable_budget_vanishes",
+          "line": 80
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.no_fixed_negative_of_variable_forcing",
+          "line": 114
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.channelMass",
+          "line": 137
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.channelMass_nonnegative",
+          "line": 140
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.readout_error_bound",
+          "line": 147
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.channel_mass_step",
+          "line": 164
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.no_fixed_negative_of_weighted_channel_contraction",
+          "line": 210
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.constant_one_not_vanishing",
+          "line": 238
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.geometric_forcing_recurrence",
+          "line": 246
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.geometric_forcing_stage_four",
+          "line": 254
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.rowBoundCounterexample",
+          "line": 260
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.row_bounds_do_not_give_column_contraction",
+          "line": 264
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ErrorBounds/FiniteResidualTelescope.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "da5a7c1f966592f1d1451a34d46f24d52b8884ff",
+      "sha256": "17b9553aa4696d8e5447fbb60ca007ffb2ea7772b4c935eb83e0a0a0a8bf6381",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.residualTotal",
+          "line": 28
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.residualTotal_zero",
+          "line": 32
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.residualTotal_succ",
+          "line": 34
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.residualTotal_eq_endpointDifference",
+          "line": 38
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.exact_residual_telescope",
+          "line": 46
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ErrorBounds.VanishesAtInfinity",
+          "line": 54
+        },
+        {
+          "declaration": "VanishesAtInfinity.zero",
+          "line": 60
+        },
+        {
+          "declaration": "VanishesAtInfinity.neg",
+          "line": 65
+        },
+        {
+          "declaration": "VanishesAtInfinity.add",
+          "line": 74
+        },
+        {
+          "declaration": "VanishesAtInfinity.sub",
+          "line": 91
+        },
+        {
+          "declaration": "VanishesAtInfinity.of_nonnegative_bound",
+          "line": 97
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/TriangularCovarianceWeakLaw.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "ede63b997fda756a6912d0ea1df1bc789ddcf82f",
+      "sha256": "0ded6513fa1dc0f9398e37e15839a03465547fbf4a449798966384fe37952ea2",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.triangular_average_centered_tail_tendsto_zero",
+          "line": 14
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/VarianceBudgetConvergence.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "6106efad5d54b45435e6706e41e60ccdac9414eb",
+      "sha256": "0bcaf4f8eeb05b853e6258affb28fef86e42d9bf5c418e22bb0aafed9d5e4e91",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.model_tail_le_variance_of_bias",
+          "line": 12
+        },
+        {
+          "declaration": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.centered_tail_tendsto_zero",
+          "line": 26
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ComplexAnalysis/MeromorphicLogOrderDetector.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "917ade2c16b3101460a3b0fb8bebea1d924130d4",
+      "sha256": "1b86084926866dfaca6cd484360fbf38945851603ab4761c0c0550516c9d592d",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.meromorphic_order_of_local_factorization",
+          "line": 11
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.meromorphic_finite_order_factorization",
+          "line": 21
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.meromorphic_finite_order_scaled_coefficient",
+          "line": 28
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.meromorphic_nonzero_order_no_continuous_extension",
+          "line": 36
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ComplexAnalysis/LocalOrderComparison.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "6d513dc9e3edb07ccc3a1abd14c11bf7cab98ed6",
+      "sha256": "051a484a81ecd32273cf5183196ee4b76b0fde8effd9ddc9d35722ca72c654f0",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.local_factorization_order_unique",
+          "line": 10
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.local_order_eq_of_germ_eq",
+          "line": 21
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/ComplexAnalysis/LocalProductAnalyticContinuation.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "d6198499d4d9c4d5dbf749a60b44fbb126379deb",
+      "sha256": "924a05c741b320504475b37d6eee8cc60b89c973ece6d2e4929a2a7a7f8d484c",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.analytic_eqOn_of_local_products",
+          "line": 14
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.germ_eq_of_eqOn_open",
+          "line": 32
+        },
+        {
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.analytic_order_eq_of_eqOn_open",
+          "line": 38
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ConvergentLocalProduct.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "bb7518a0583c22b52c9bd235b892bdb0f830e0af",
+      "sha256": "37bd31a2564ae672173beb344069e103a1b7747ac063f12a7bbde93570157403",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.hasProd_inverse_local_factors",
+          "line": 11
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.local_product_limits_eq",
+          "line": 26
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Algebra/Hecke/G2Presentation.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "7957cc9c617ae4dee881f52ecc930ad328de80ee",
+      "sha256": "c8afdce131037bff243fc1d811f3fa025fabaa4cbecfcc2014e89f1bb516384b",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.G2Presented",
+          "line": 21
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Generator",
+          "line": 24
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Generator_quadratic",
+          "line": 27
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Generator_braid",
+          "line": 31
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2PresentationLift",
+          "line": 39
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2PresentationLift_generator",
+          "line": 49
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2PresentationLift_unique",
+          "line": 56
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2MatrixRepresentation",
+          "line": 68
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2MatrixRepresentation_generator",
+          "line": 75
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Algebra/Hecke/G2Characters.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "9252f4fd248ba3c69782d0cc50522b5d10dd4b8b",
+      "sha256": "8f4d7aaef66b502baf1fd077354a20f34ece89798d02643357644e3bf8053cd9",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2TrivialCharacter",
+          "line": 10
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2SignCharacter",
+          "line": 15
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2TrivialCharacter_generator",
+          "line": 19
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2SignCharacter_generator",
+          "line": 23
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Presented_scalar_injective",
+          "line": 28
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Presented_rankOne_coordinates_unique",
+          "line": 36
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Presented_zero_ne_one",
+          "line": 51
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "f79b56b1c37dd53c88a97eab69d69b5126bf7828",
+      "sha256": "1d6ebf882a588d4a717b329b8a911a5dd7be5a0b3e47d755b7b0b12c0d1d81da",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeS",
+          "line": 13
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeT",
+          "line": 16
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeS_quadratic",
+          "line": 19
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeT_quadratic",
+          "line": 26
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeST_square",
+          "line": 33
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeTS_square",
+          "line": 41
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.cube_of_square",
+          "line": 49
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeST_cube",
+          "line": 61
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2HeckeTS_cube",
+          "line": 66
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Hecke_braid_six",
+          "line": 71
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Hecke_at_one_involutions",
+          "line": 78
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Hecke_at_one_sixth_power",
+          "line": 85
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.g2Hecke_at_one_cube_ne_one",
+          "line": 92
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Algebra/Hecke/LaurentRankOneBar.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "76ba3801890540fd9decf1b8d6c9394adcdf892b",
+      "sha256": "628e3b9b949b3fe734ae9f1e91b94277d9d5edf13c38ae958439969f5e477199",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.laurentRankOneBar",
+          "line": 10
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.laurentRankOneBar_involutive",
+          "line": 15
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.laurentRankOneBar_mul",
+          "line": 23
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.laurentRankOneBar_normalized_fixed",
+          "line": 32
+        },
+        {
+          "declaration": "GRWTSK.Algebra.Hecke.laurentRankOne_normalized_existsUnique",
+          "line": 41
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/UnitIntervalCharacters.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "b311039437af954d0535042cc692c960c645f7dd",
+      "sha256": "e267873a830cd256ade1c93bc848bc7b4136185f93149ea4281687b3f822f2f1",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.unitCharacter",
+          "line": 34
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.unitCharacter_zero",
+          "line": 38
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.unitCharacter_add",
+          "line": 42
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.continuous_unitCharacter",
+          "line": 49
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.intervalIntegrable_unitCharacter",
+          "line": 54
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.integral_unitCharacter_eq_single",
+          "line": 60
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.integral_unitCharacter",
+          "line": 68
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.integral_unitCharacter_eq_zero",
+          "line": 78
+        },
+        {
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.pairFrequency_zero_iff",
+          "line": 84
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Primes/BoundedEnumeration.lean",
+      "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+      "blob": "854729f8f063cfacbc0a30ae5c7312083bcf8fa9",
+      "sha256": "2d1a364d7e3aa86da4187665dcf6afebd223bbd618d81d2450aa6396c94084d2",
+      "working_bytes_match": true,
+      "declarations": [
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.EnumeratesBelow",
+          "line": 9
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.primesBelow_contract",
+          "line": 12
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.enumeration_unique",
+          "line": 17
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.enumeration_step",
+          "line": 24
+        }
+      ],
+      "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer"
+    }
+  ],
+  "bridges": [
+    {
+      "id": "R1",
+      "taxonomy": "GeometryTopology",
+      "obligations": [
+        "B2"
+      ],
+      "priority": 1,
+      "title": "Equivariant retraction splitting with the actual kernel action",
+      "papers": [
+        {
+          "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+          "pdf_page": 1,
+          "anchor": "Residue Suppression via Localization",
+          "layout_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+          "pdf_page": 2,
+          "anchor": "Positivity Constraints",
+          "layout_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "CommRing R; R-modules M and B with additive groups.",
+        "Linear i:B→M and r:M→B with r(i(b))=b for every b.",
+        "Linear T:M→M and S:B→B with T(i(b))=i(S(b)) and r(T(x))=S(r(x)) for every b,x."
+      ],
+      "target": "Derive T(ker r)⊆ker r; construct the restricted linear endomorphism Tker. For E=retractionSplitEquiv i r, prove E(T x)=(S(E x).1, Tker(E x).2), and the inverse intertwining identity. Extend pointwise to a supplied operator family; require actual action laws before naming a Hecke-algebra action.",
+      "existing": [
+        {
+          "path": "GRWTSK/Algebra/LinearAlgebra/RetractionComplement.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "09d412123341ccdf11be5b0f8fb6ff0a27470ada",
+          "sha256": "17d5f72b6ebb249464370ab94902ed919ca27ffac07b6f2d61833afffc3b5c48",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_commutes",
+          "line": 38
+        },
+        {
+          "path": "GRWTSK/Algebra/LinearAlgebra/RetractionSplitEquiv.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "620c39d9e12876f5853f97ef9064f723b5ae881d",
+          "sha256": "3014cb4063269b6bed7ed61c35e3a61408e3a66fcb7305095b29d801da14acfe",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv",
+          "line": 10
+        },
+        {
+          "path": "GRWTSK/Algebra/LinearAlgebra/RetractionSplitEquiv.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "620c39d9e12876f5853f97ef9064f723b5ae881d",
+          "sha256": "3014cb4063269b6bed7ed61c35e3a61408e3a66fcb7305095b29d801da14acfe",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_coordinates",
+          "line": 34
+        }
+      ],
+      "proof": [
+        "For x∈ker r, r(Tx)=S(rx)=S0=0; use a codomain restriction to construct Tker, rather than assume kernel stability.",
+        "Use product extensionality. The first coordinate is the r/T intertwining hypothesis. Subtype extensionality reduces the second to retractionComplement_commutes.",
+        "Transport the identity through E.symm. For a parameter family use the same argument for each parameter; inherit ring/action laws only from explicitly supplied homomorphisms."
+      ],
+      "acceptance": [
+        "Fresh source-bound compilation of the current renamed modules and all new declarations, strict transitive axiom audits and independent exact-type consumers.",
+        "No extra kernel-invariance or desired equivariance conclusion supplied as a premise; both original intertwining premises remain visible."
+      ],
+      "missing": [
+        "No actual moduli space, coefficient complex, localization triangle, geometric retraction, or Hecke action is constructed.",
+        "B1 and B4–B6 remain unresolved. This would strengthen the conditional B2 fragment only."
+      ],
+      "avoid": [
+        "Do not re-prove only that the complementary projector commutes; that body already exists.",
+        "A union of boundary and interior sets is not a split cohomology decomposition."
+      ]
+    },
+    {
+      "id": "R2",
+      "taxonomy": "LogicAndComputation",
+      "obligations": [
+        "S3",
+        "S5"
+      ],
+      "priority": 3,
+      "title": "Deterministic-centering convergence from covariance and bias budgets",
+      "papers": [
+        {
+          "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+          "pdf_page": 2,
+          "anchor": "Cross-Domain Consistency Proof",
+          "layout_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "ed896093fe8237738c1865eb150a270fd12b044a3ab676bbd24671d4bfbdbcb1",
+          "pdf_page": 2,
+          "anchor": "Cross-Domain Consistency Proof",
+          "layout_text_sha256": "1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "f54c768808920d51d1304089de5b0817240e3f061954f855a187ce17a0a30486",
+          "pdf_page": 2,
+          "anchor": "Cross-Domain Consistency Proof",
+          "layout_text_sha256": "1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "One probability measure μ on a measurable space Ω.",
+        "X(n,i):Ω→ℝ for i:Fin(n+1), all in MemLp 2 μ.",
+        "Uniform diagonal variance bound Var(X(n,i))≤C and off-diagonal upper bounds cov(X(n,i),X(n,j))≤δ(n) for i≠j, with δ→0.",
+        "Y_n=(n+1)⁻¹∑i X(n,i); independently supplied deterministic b_n with |Eμ[Y_n]−b_n|→0."
+      ],
+      "target": "For every ε>0, prove μ{ω: ε≤|Y_n(ω)−b_n|}→0. Do not conclude almost-sure convergence, independence, bounded cumulative sums, or a rate stronger than the supplied budgets.",
+      "existing": [
+        {
+          "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/TriangularCovarianceWeakLaw.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "ede63b997fda756a6912d0ea1df1bc789ddcf82f",
+          "sha256": "0ded6513fa1dc0f9398e37e15839a03465547fbf4a449798966384fe37952ea2",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.triangular_average_centered_tail_tendsto_zero",
+          "line": 14
+        },
+        {
+          "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/VarianceBudgetConvergence.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "6106efad5d54b45435e6706e41e60ccdac9414eb",
+          "sha256": "0bcaf4f8eeb05b853e6258affb28fef86e42d9bf5c418e22bb0aafed9d5e4e91",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.model_tail_le_variance_of_bias",
+          "line": 12
+        },
+        {
+          "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/VarianceBudgetConvergence.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "6106efad5d54b45435e6706e41e60ccdac9414eb",
+          "sha256": "0bcaf4f8eeb05b853e6258affb28fef86e42d9bf5c418e22bb0aafed9d5e4e91",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments.centered_tail_tendsto_zero",
+          "line": 26
+        }
+      ],
+      "proof": [
+        "Use the existing triangular theorem at ε/2; its derived variance budget is C/(n+1)+(1−1/(n+1))δ(n).",
+        "Bias decay eventually gives |Eμ[Y_n]−b_n|<ε/2. The triangle inequality gives {ε≤|Y_n−b_n|}⊆{ε/2≤|Y_n−Eμ[Y_n]|}.",
+        "Apply measure monotonicity and an eventual ENNReal squeeze to zero. The one-stage bias tail bound already exists; the new work is this growing-family asymptotic composition."
+      ],
+      "acceptance": [
+        "All original L², probability, variance, covariance and deterministic-bias hypotheses appear in the exact consumer type.",
+        "Audit the current long namespace independently of historical GRWTSK.Probability.Moments receipts."
+      ],
+      "missing": [
+        "No arithmetic zero-observable family, probability model, deterministic centering formula, covariance decay, or bias decay is supplied by the manuscripts.",
+        "A bound on averages is not a uniform bound on their unnormalized cumulative sum. S1,S2,S6 remain unresolved."
+      ],
+      "avoid": [
+        "Do not add a duplicate one-stage bias lemma or claim that δ→0 proves independence.",
+        "The Resolution draft PDF p.3 §4.3 retains individual RH/GRH assumptions; this adapter cannot remove them."
+      ]
+    },
+    {
+      "id": "R3",
+      "taxonomy": "LogicAndComputation",
+      "obligations": [
+        "S4"
+      ],
+      "priority": 4,
+      "title": "Approximate-defect tracker retaining its actual forcing error",
+      "papers": [
+        {
+          "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+          "pdf_page": 2,
+          "anchor": "Automorphic L-Functions",
+          "layout_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "e4af0063b673b42118bfb15cbf584a617c230a9e1f36e3c002b796b571350df5",
+          "pdf_page": 2,
+          "anchor": "recursive refinement rule",
+          "layout_text_sha256": "632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "46c71204aa52fd1ca0119f13382b0043fda1a9abf50d69a463ea778c8dbcff8c",
+          "pdf_page": 2,
+          "anchor": "recursive refinement rule",
+          "layout_text_sha256": "632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "Fixed finite channel type ι; real source s_n, gain A_n and initial model m_0.",
+        "Independently supplied approximate defect dHat_n; the model update may read A_n,m_n,dHat_n, not s_(n+1).",
+        "Nonnegative fixed weights w; 0≤r<1; weighted COLUMN bound ∑i w_i|A_n(i,j)|≤r w_j.",
+        "Actual defect d_s(n)=s_(n+1)−A_n s_n. Retain an independently proved nonnegative bound b_n on ∑i w_i|d_s(n,i)−dHat(n,i)|; require b→0 only for the convergence conclusion."
+      ],
+      "target": "Construct m_(n+1)=A_n m_n+dHat_n and prove its signed residual forcing is exactly d_s−dHat. Prove stream-prefix congruence: equal initial states and equal gains/approximate defects for every k<n give equal model states at n. Derive the existing finite majorant M_n≤r^n M_0+forcingResponse r b n; if b→0 derive weighted residual convergence. Retain explicit source/model readouts and coefficient conditioning for any fixed-target consequence.",
+      "existing": [
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/ExactDefectTracker.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "f0d36bc217ba98a7d5fe28afed6981d1236779f9",
+          "sha256": "714cb8be7f58ae2d816b5f2a0b424344bdb3eaa8f1d2b765add7a8be22f2685a",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.exactDefectTracker_first_step",
+          "line": 32
+        },
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/SourceResidualEvolution.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "09e5c858dc3a237531d80e5b663d90449e53587f",
+          "sha256": "fa1a075597c2d2535e6f9018cee0b6e9fc45e7f0bd8ece4f29be621e16fa0fc5",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.sourceResidual_evolution",
+          "line": 57
+        },
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/SourceResidualEvolution.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "09e5c858dc3a237531d80e5b663d90449e53587f",
+          "sha256": "fa1a075597c2d2535e6f9018cee0b6e9fc45e7f0bd8ece4f29be621e16fa0fc5",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.matched_injection_forcing",
+          "line": 129
+        },
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/ContractingResidualBudget.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "08b8fbaf12492620046507e4b8be32ea263656a4",
+          "sha256": "b337ccddd21a1605f43eecedda02ed8e78c311f7518054b88198d2b83f19868d",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.variable_budget_majorant",
+          "line": 47
+        },
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/SourceResidualConvergence.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "8de6e01f7579920f28f4d21fefaaaa6f824cda96",
+          "sha256": "91a7cee6202dad467a2f8536b2f27665d516f877f68be61e054429a97175d2c6",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.SourceResidualEvolution.source_residual_vanishes",
+          "line": 12
+        }
+      ],
+      "proof": [
+        "Define the new model by natural recursion using dHat, not by renaming the exactDefectTracker.",
+        "Prove the stream-prefix congruence by induction, retaining equality of every gain and injection actually read. This is a finite input-dependence statement, not a theorem that a supplied injection is computable or independent of future source data.",
+        "Unfold stageDefect in the constructed model. Its model defect equals dHat, so residualForcing equals d_s−dHat with that sign.",
+        "Apply the existing channel_mass_step, bound its forcing by b, and instantiate variable_budget_majorant. Use variable_budget_vanishes or source_residual_vanishes only after the b→0 premise.",
+        "For coordinate convergence require positive coordinate weights; for a readout require |coefficient|≤w. Zero weights alone cannot control an omitted coordinate."
+      ],
+      "acceptance": [
+        "Exact first-step consumer exposes only m_0,A_0,dHat_0 on the model side; no hidden read of s_1.",
+        "The defect approximation estimate, contraction, common fixed channel set, full readout and any positivity supplier stay independent assumptions."
+      ],
+      "missing": [
+        "No computable arithmetic dHat or proof that it approximates the actual arithmetic source defect. Merely supplying dHat as a function argument does not prove causal/effective access; an algorithmic claim needs its factorization through explicitly admitted data/history.",
+        "No positive model, growing-channel transition maps, complete arithmetic readout or RH supplier. Persistent bounded forcing gives an error floor, not convergence to zero."
+      ],
+      "avoid": [
+        "The generic signed recurrence, matched injection identity and forcing majorant are already written; do not relabel them as a new construction.",
+        "Exact defect tracking reads source(1) at its first step and cannot certify an independent prediction algorithm."
+      ]
+    },
+    {
+      "id": "R4",
+      "taxonomy": "Algebra",
+      "obligations": [
+        "E4",
+        "E5"
+      ],
+      "priority": 5,
+      "title": "Finite exceptional-factor signed-order accounting",
+      "papers": [
+        {
+          "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+          "pdf_page": 1,
+          "anchor": "spectral and residue properties",
+          "layout_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+          "pdf_page": 2,
+          "anchor": "Functional Equation",
+          "layout_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+          "pdf_page": 1,
+          "anchor": "spectral and residue properties",
+          "layout_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+          "pdf_page": 2,
+          "anchor": "Functional Equation",
+          "layout_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "Exact completed-source punctured-germ factorizations F=B_F L and G=B_G L at the same a.",
+        "L and every explicitly listed bad/Archimedean factor are MeromorphicAt at a with finite signed orders; B_F,B_G are their finite products.",
+        "For order cancellation require each extra factor to be an actual analytic nonvanishing unit at a, or retain its nonzero signed order."
+      ],
+      "target": "Prove ord_a(F)−ord_a(G)=Σ ord_a(B_F factors)−Σ ord_a(B_G factors) as an INTEGER statement. Deduce equal orders only under the exact zero correction condition. Translate to a logarithmic principal part using the same finite-order germ, not pointwise totalized division.",
+      "existing": [
+        {
+          "path": "GRWTSK/Analysis/ComplexAnalysis/MeromorphicLogOrderDetector.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "917ade2c16b3101460a3b0fb8bebea1d924130d4",
+          "sha256": "1b86084926866dfaca6cd484360fbf38945851603ab4761c0c0550516c9d592d",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.meromorphic_order_of_local_factorization",
+          "line": 11
+        },
+        {
+          "path": "GRWTSK/Analysis/ComplexAnalysis/MeromorphicLogOrderDetector.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "917ade2c16b3101460a3b0fb8bebea1d924130d4",
+          "sha256": "1b86084926866dfaca6cd484360fbf38945851603ab4761c0c0550516c9d592d",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.meromorphic_finite_order_scaled_coefficient",
+          "line": 28
+        },
+        {
+          "path": "GRWTSK/Analysis/ComplexAnalysis/LocalOrderComparison.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "6d513dc9e3edb07ccc3a1abd14c11bf7cab98ed6",
+          "sha256": "051a484a81ecd32273cf5183196ee4b76b0fde8effd9ddc9d35722ca72c654f0",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.LogarithmicPrincipalPart.local_order_eq_of_germ_eq",
+          "line": 21
+        },
+        {
+          "path": "GRWTSK/Analysis/ComplexAnalysis/LocalProductAnalyticContinuation.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "d6198499d4d9c4d5dbf749a60b44fbb126379deb",
+          "sha256": "924a05c741b320504475b37d6eee8cc60b89c973ece6d2e4929a2a7a7f8d484c",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ComplexAnalysis.analytic_eqOn_of_local_products",
+          "line": 14
+        }
+      ],
+      "imported": [
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/Analysis/Meromorphic/Order.lean",
+          "blob": "72860fac7141a45665bfebbba714eb05cfa3374b",
+          "sha256": "54aa1f7a01afb9b2f13cb65832aea023ab15d10f90a9b7eefa539ae82b6c64ab",
+          "declaration": "meromorphicOrderAt_mul",
+          "line": 459,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        },
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/Analysis/Meromorphic/Order.lean",
+          "blob": "72860fac7141a45665bfebbba714eb05cfa3374b",
+          "sha256": "54aa1f7a01afb9b2f13cb65832aea023ab15d10f90a9b7eefa539ae82b6c64ab",
+          "declaration": "meromorphicOrderAt_prod",
+          "line": 467,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        },
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/Analysis/Meromorphic/Order.lean",
+          "blob": "72860fac7141a45665bfebbba714eb05cfa3374b",
+          "sha256": "54aa1f7a01afb9b2f13cb65832aea023ab15d10f90a9b7eefa539ae82b6c64ab",
+          "declaration": "meromorphicOrderAt_div",
+          "line": 575,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        },
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/Analysis/Meromorphic/Order.lean",
+          "blob": "72860fac7141a45665bfebbba714eb05cfa3374b",
+          "sha256": "54aa1f7a01afb9b2f13cb65832aea023ab15d10f90a9b7eefa539ae82b6c64ab",
+          "declaration": "meromorphicOrderAt_mul_of_ne_zero",
+          "line": 947,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        }
+      ],
+      "proof": [
+        "Compose supplied germ identities with meromorphicOrderAt_congr, then use product additivity on the explicit finite bad-factor lists.",
+        "Use finiteness to move from WithTop ℤ to integer sums before subtracting/cancelling the common L order; never cancel ⊤−⊤.",
+        "For unit factors use the existing analytic nonvanishing invariance lemma. Apply the existing signed logarithmic detector only to the same source germ."
+      ],
+      "acceptance": [
+        "Independent type consumers retain exact F,G,L, factor lists, point a, meromorphy and finite-order hypotheses.",
+        "Include a cancellation example: a simple zero times a simple pole has signed order zero. Pointwise inverse at zero is totalized; pointwise zeros need an analytic representative."
+      ],
+      "missing": [
+        "No actual automorphic representations, Satake parameters, bad factors, conductors, root numbers, normal Euler-product convergence or global meromorphic continuation.",
+        "Neither exceptional-group version gains an automorphic transfer, an off-line class, or a critical-line theorem."
+      ],
+      "avoid": [
+        "The imported order-product and unit-invariance lemmas already exist; new work is the source-bound normalization comparison, not another generic multiplication lemma.",
+        "Equality of good-place factors alone does not erase exceptional or Archimedean divisors."
+      ]
+    },
+    {
+      "id": "R5",
+      "taxonomy": "Algebra",
+      "obligations": [
+        "K1"
+      ],
+      "priority": 6,
+      "title": "Units for the braid-six generators, before a semilinear bar",
+      "papers": [
+        {
+          "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+          "pdf_page": 2,
+          "anchor": "Definition and Recursive Structure",
+          "layout_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+          "pdf_page": 3,
+          "anchor": "KL Polynomials for G2",
+          "layout_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+          "pdf_page": 2,
+          "anchor": "Definition and Recursive Structure",
+          "layout_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+          "pdf_page": 3,
+          "anchor": "KL Polynomials for G2",
+          "layout_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "CommRing R and an explicit parameter inverse qi with q*qi=1; A=G2Presented q.",
+        "For b:Bool let T_b=g2Generator q b and U_b=qi • T_b+(qi−1) • 1.",
+        "Laurent specialization uses q=T(2), qi=T(−2) in LaurentPolynomial ℤ, not an assumed inverse of a nonunit parameter."
+      ],
+      "target": "Prove U_b*T_b=1 and T_b*U_b=1, then construct actual Units A with value T_b and inverse U_b. Afterwards plan a coefficient-inverting ring map/bar satisfying bar(r • x)=invert(r) • bar(x), preserving both quadratics and braid-six and squaring to identity.",
+      "existing": [
+        {
+          "path": "GRWTSK/Algebra/Hecke/G2Presentation.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "7957cc9c617ae4dee881f52ecc930ad328de80ee",
+          "sha256": "c8afdce131037bff243fc1d811f3fa025fabaa4cbecfcc2014e89f1bb516384b",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.Hecke.g2Generator_quadratic",
+          "line": 27
+        },
+        {
+          "path": "GRWTSK/Algebra/Hecke/G2Presentation.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "7957cc9c617ae4dee881f52ecc930ad328de80ee",
+          "sha256": "c8afdce131037bff243fc1d811f3fa025fabaa4cbecfcc2014e89f1bb516384b",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.Hecke.g2Generator_braid",
+          "line": 31
+        },
+        {
+          "path": "GRWTSK/Algebra/Hecke/G2Presentation.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "7957cc9c617ae4dee881f52ecc930ad328de80ee",
+          "sha256": "c8afdce131037bff243fc1d811f3fa025fabaa4cbecfcc2014e89f1bb516384b",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.Hecke.g2PresentationLift",
+          "line": 39
+        },
+        {
+          "path": "GRWTSK/Algebra/Hecke/LaurentRankOneBar.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "76ba3801890540fd9decf1b8d6c9394adcdf892b",
+          "sha256": "628e3b9b949b3fe734ae9f1e91b94277d9d5edf13c38ae958439969f5e477199",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.Hecke.laurentRankOneBar_mul",
+          "line": 23
+        }
+      ],
+      "proof": [
+        "Expand each product with U_b, rewrite T_b²=(q−1)•T_b+q•1, and use central scalar multiplication plus q*qi=1. Package both inverse laws as Units data.",
+        "Use Laurent T_add for q*qi=1 in the concrete specialization.",
+        "For the later bar, explicitly twist the R-algebra structure or use a scalar-restricting universal property. The existing R-algebra lift fixes coefficients and cannot serve unchanged as a coefficient-inverting map.",
+        "Prove transformed quadratic relations and the inverse six-factor braid before descent, then prove involutivity on coefficients and both generators."
+      ],
+      "acceptance": [
+        "First complete native verification of the fifteen existing selected matrix/character declarations and both consumers once admission is valid.",
+        "New inverse claims require both multiplication orders for every Bool generator and an exact unit-valued consumer.",
+        "Bar consumers must expose coefficient inversion; an ordinary R-linear automorphism type is inadequate."
+      ],
+      "missing": [
+        "No twelve-element standard basis, general Coxeter Hecke algebra, Bruhat triangularity, KL recurrence, intersection-cohomology positivity or analytic realization.",
+        "K1 remains a partial fragment for BOTH distinct manuscript versions. The printed diagonal q² example remains a separately corrected inconsistency."
+      ],
+      "avoid": [
+        "Do not add source-only units before finishing the pending existing target audits.",
+        "No higher memory limit, replay of unchanged failed routes, or verification-label transfer to renamed/edited source."
+      ]
+    },
+    {
+      "id": "R6",
+      "taxonomy": "LogicAndComputation",
+      "obligations": [
+        "S3"
+      ],
+      "priority": 7,
+      "title": "Correct finite additive Fourier cancellation with nonresonance bounds",
+      "papers": [
+        {
+          "asset_sha256": "2edefaf15e1f05637a0456ceee3f85ef497cdd0e05e83bf7bb1cee1f86b7210f",
+          "pdf_page": 2,
+          "anchor": "Fourier Analysis of Oscillatory Behavior",
+          "layout_text_sha256": "8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "90212cbba117fd1ebecb3a3df349f3913e7d89cd13806416f8756c0394eeeaf8",
+          "pdf_page": 2,
+          "anchor": "Fourier Analysis of Oscillatory Behavior",
+          "layout_text_sha256": "8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+          "pdf_page": 1,
+          "anchor": "Derivation of Axiom 5",
+          "layout_text_sha256": "7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "Fixed finite frequency sets I,J; complex amplitudes a_i,b_j and fixed complex ratios z_i,w_j.",
+        "Every ratio has norm 1 and differs from 1. The numerator/denominator bound must be uniform over the actual family used.",
+        "An actual supplied identity identifies each source channel with its OWN finite Fourier sum. Additive channels remain additive."
+      ],
+      "target": "For E_N=Σ(n<N)(Σi a_i*z_i^n+Σj b_j*w_j^n), prove ‖E_N‖≤Σi 2‖a_i‖/‖z_i−1‖+Σj 2‖b_j‖/‖w_j−1‖ for all N. Supply the explicit source index-shift conversion from n=1..N. Separately falsify the printed additive-to-product equation (7) by a one-term example.",
+      "existing": [
+        {
+          "path": "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/UnitIntervalCharacters.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "b311039437af954d0535042cc692c960c645f7dd",
+          "sha256": "e267873a830cd256ade1c93bc848bc7b4136185f93149ea4281687b3f822f2f1",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.UnitIntervalCharacters.unitCharacter_add",
+          "line": 42
+        }
+      ],
+      "imported": [
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/Algebra/Field/GeomSum.lean",
+          "blob": "506e6aaaa6b713b34d5bd967021b36ccb8717095",
+          "sha256": "4b34e7f92543da53c331f629ae697e47be9c96439c6558dd62e8cb4d9bb21d9b",
+          "declaration": "geom_sum_eq",
+          "line": 43,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        },
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/Algebra/Field/GeomSum.lean",
+          "blob": "506e6aaaa6b713b34d5bd967021b36ccb8717095",
+          "sha256": "4b34e7f92543da53c331f629ae697e47be9c96439c6558dd62e8cb4d9bb21d9b",
+          "declaration": "geom_sum_Ico",
+          "line": 52,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        }
+      ],
+      "proof": [
+        "For each ratio apply geom_sum_eq, norm_div and ‖z^N−1‖≤2 from ‖z‖=1. Apply finite-sum and product norm bounds, keeping both additive channels.",
+        "Products of characters add frequencies, as unitCharacter_add states; they represent pointwise products, not sums of channels.",
+        "At the paper’s N=1 choose one term per channel, both ratios −1 and both amplitudes 1: the two real-valued alternating channels give additive side −2 and product side 1. This falsifies the printed unconditional algebraic identity; it is not a claim that these channels are incommensurate. This is a proposed exact counterexample, not a native Lean receipt.",
+        "For infinite expansions require absolute weighted small-denominator summability and justify interchanging sums. For growing frequency families require a uniform bound; nonresonance individually is insufficient."
+      ],
+      "acceptance": [
+        "Fresh Lean proofs of the finite identity, uniform-in-N bound and exact equation-(7) counterexample, with independent expected-type consumers.",
+        "No ergodic, probabilistic independence, arithmetic Fourier expansion or irrational-frequency hypothesis is silently substituted for the stated premises."
+      ],
+      "missing": [
+        "No exact Fourier expansion of the arithmetic errors, summability of an infinite expansion, uniform near-resonance estimate, or deterministic prime/zero discrepancy bound.",
+        "S3 remains partial. Averages tending to zero or O(√N) high-probability control do not imply uniformly bounded cumulative errors."
+      ],
+      "avoid": [
+        "Do not reuse the manuscript equation (7); it changes addition into multiplication.",
+        "The existing integral character orthogonality and modular finite character counts concern different averaging domains and do not prove this discrete partial-sum estimate."
+      ]
+    },
+    {
+      "id": "R7",
+      "taxonomy": "NumberTheory",
+      "obligations": [
+        "P4",
+        "S2"
+      ],
+      "priority": 2,
+      "title": "Actual strict prime-count discrepancy at consecutive prime endpoints",
+      "papers": [
+        {
+          "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+          "pdf_page": 1,
+          "anchor": "Analytic Number Theory",
+          "layout_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+          "pdf_page": 2,
+          "anchor": "Prime Gaps",
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+          "pdf_page": 2,
+          "anchor": "Prime Gaps",
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "Use the actual zero-indexed p_n=Nat.nth Nat.Prime n and strict count π′(x)=Nat.primeCounting' x, cast to ℝ only after natural identities.",
+        "Choose named M,E:ℕ→ℝ and threshold x0, with E nonnegative and an independently proved |(π′(x):ℝ)−M(x)|≤E(x) for x≥x0.",
+        "For the endpoint bound retain both p_n≥x0 and p_(n+1)≥x0. The manuscript’s one-indexed primes require an explicit index shift."
+      ],
+      "target": "Connect any EnumeratesBelow output to actual strict prime counting by cardinality. Define R(x)=(π′(x):ℝ)−M(x), derive R(p_n)=n−M(p_n), and prove (M(p_(n+1))−M(p_n))−1=R(p_n)−R(p_(n+1)). Hence bound its absolute value by E(p_n)+E(p_(n+1)).",
+      "existing": [
+        {
+          "path": "GRWTSK/NumberTheory/Primes/BoundedEnumeration.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "854729f8f063cfacbc0a30ae5c7312083bcf8fa9",
+          "sha256": "2d1a364d7e3aa86da4187665dcf6afebd223bbd618d81d2450aa6396c94084d2",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.NumberTheory.Primes.enumeration_unique",
+          "line": 17
+        },
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/FiniteResidualTelescope.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "da5a7c1f966592f1d1451a34d46f24d52b8884ff",
+          "sha256": "17b9553aa4696d8e5447fbb60ca007ffb2ea7772b4c935eb83e0a0a0a8bf6381",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.residualTotal_eq_endpointDifference",
+          "line": 38
+        }
+      ],
+      "imported": [
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/NumberTheory/PrimeCounting.lean",
+          "blob": "a9d6b59349f06c735cd99e7c5693f017c72282d1",
+          "sha256": "1e16d828297cfe981488e8cd4c4db7598adb96ed35a313f41f45baaf724c27f7",
+          "declaration": "Nat.primeCounting'_nth_eq",
+          "line": 79,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        },
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/NumberTheory/PrimeCounting.lean",
+          "blob": "a9d6b59349f06c735cd99e7c5693f017c72282d1",
+          "sha256": "1e16d828297cfe981488e8cd4c4db7598adb96ed35a313f41f45baaf724c27f7",
+          "declaration": "Nat.primesBelow_card_eq_primeCounting'",
+          "line": 254,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        }
+      ],
+      "proof": [
+        "Use enumeration_unique to replace the supplied finite output by Nat.primesBelow; then use the imported strict cardinality identity.",
+        "Rewrite both prime endpoints using Nat.primeCounting'_nth_eq. Cast Nat.succ n correctly into ℝ and derive the signed endpoint identity by ring algebra.",
+        "Apply abs_sub_le and the two endpoint estimates. A later real prime-gap bound additionally needs a verified lower bound on M(p_(n+1))−M(p_n) in terms of the actual gap, for example from explicit derivative bounds; do not supply the desired gap bound as its own premise."
+      ],
+      "acceptance": [
+        "Exact-type consumers distinguish π′(<x) from π(≤x) and zero-indexed primes from the manuscript index.",
+        "The actual arithmetic endpoints occur in the new declarations; a generic telescope alone does not meet this adapter specification.",
+        "An application claiming P4 must separately name and prove the actual M,E=C·B, C≥0, domain and quantitative estimate. No such analytic supplier is proved here."
+      ],
+      "missing": [
+        "No independently proved PNT remainder, centered-gap estimate, positive derivative supplier, constant gap bound or arithmetic bias decay.",
+        "P1/P4 and S1/S2 remain unresolved; the roadmap supplies only objectives and unresolved numbered sources. A growing E cannot be dropped to claim a constant bound."
+      ],
+      "avoid": [
+        "Do not call the generic endpoint telescope a new arithmetic theorem.",
+        "Do not silently change strict/inclusive counting at prime inputs, or replace a deterministic comparison by an unexplained expected gap."
+      ]
+    }
+  ],
+  "obligation_triage": [
+    {
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "taxonomy": "NumberTheory",
+      "obligation": "P1",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Resolve each numbered Source 23/26/27/28/29 to a title, exact version and theorem/method, or explicitly leave the citation unresolved.",
+      "acceptance_check": "Every imported assertion has a version-bound source; resource numbers alone do not count.",
+      "review_bridges": [],
+      "next_action": "Source identity/bibliography remains unresolved; do not invent titles or version bindings."
+    },
+    {
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "taxonomy": "NumberTheory",
+      "obligation": "P2",
+      "implementation_status_retained": "kernel-verified-optional-specialization",
+      "original_statement": "One optional concrete task: for each N:ℕ define output(N):Finset ℕ and require ∀p, p∈output(N) ↔ p<N ∧ Nat.Prime p. This choice covers only bounded enumeration.",
+      "acceptance_check": "Choose this or another exact contract; do not rename a generic library definition as the roadmap’s full program.",
+      "review_bridges": [],
+      "next_action": "Keep prior optional/corrective scope; no further manuscript acceptance."
+    },
+    {
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "taxonomy": "NumberTheory",
+      "obligation": "P3",
+      "implementation_status_retained": "kernel-verified-optional-specialization",
+      "original_statement": "Instantiate output(N)=Nat.primesBelow N and use the membership theorem for soundness/completeness; specify a separate implementation and cost model if computational efficiency is intended.",
+      "acceptance_check": "The chosen output and bound convention are explicit; termination/complexity claims have their own actual proofs.",
+      "review_bridges": [],
+      "next_action": "Keep prior optional/corrective scope; no further manuscript acceptance."
+    },
+    {
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "taxonomy": "NumberTheory",
+      "obligation": "P4",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "For any proposed prime-distribution estimate, specify the actual counting/weighted source S(x), comparison M(x), domain x≥x0 and constants C≥0, then prove ∀x≥x0, |S(x)−M(x)|≤C B(x) for a named B. No bound B is supplied by this roadmap.",
+      "acceptance_check": "Exact quantifiers, normalization and all hypotheses are fixed before selecting an estimate; bounded prime enumeration is not this analytic supplier.",
+      "review_bridges": [
+        "R7"
+      ],
+      "next_action": "No quantitative rate is specified by the roadmap. Fix the actual counting source, comparison, domain and named bound before importing an arithmetic estimate."
+    },
+    {
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "obligation": "B1",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Fix the group/base, compactification j:U→X with boundary i:Z→X, coefficient complex K and the exact cohomology theory. Construct C_Z(K) and H^k(Z,K); do not identify arbitrary graph cohomology with these groups.",
+      "acceptance_check": "Geometric objects and coefficient/support conventions are actual constructions; an abstract complex with assumed homology is only infrastructure.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "obligation": "B2",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Construct the localization/excision triangle or long exact sequence. If a direct sum is needed, construct a splitting/projector and prove compatibility with Hecke actions; a set union does not produce a split cohomology decomposition.",
+      "acceptance_check": "The exact maps, kernels/images and any splitting are proved, with no erased boundary summand.",
+      "review_bridges": [
+        "R1"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "obligation": "B3",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Fix the completed analytic source Λ and a zero-detecting consumer such as logDeriv Λ, with its genuine local integer-order factorization. Distinguish this from residues of Λ at poles.",
+      "acceptance_check": "The actual Λ, local orders, gamma/conductor and dual conventions are identified; the logarithmic principal-part supplier is instantiated.",
+      "review_bridges": [],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "obligation": "B4",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "For every nontrivial zero ρ of the exact source with Re(ρ)≠1/2, construct kρ, Kρ and vρ∈H^{kρ}(Z,Kρ), prove vρ≠0 and that kρ lies in the specific forbidden degree range.",
+      "acceptance_check": "A nonzero class with exact degree/source identity is produced for each off-line zero; naming spectral correspondence is insufficient.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "obligation": "B5",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Prove H^k(Z,Kρ)=0 in that same range for the original Kρ, under verified properness/dimension/positivity hypotheses. Vanishing only after a positive twist requires a proved untwisting comparison.",
+      "acceptance_check": "The actual class space from B4 vanishes; positivity alone or a changed sheaf is not the required theorem.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "obligation": "B6",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Combine vρ≠0 with B5 for every allowed off-line zero. This final contradiction is conditional until B1–B5 are constructed.",
+      "acceptance_check": "No off-line source zero is excluded using an assumed version of the desired correspondence.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "obligation": "E1",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Fix the base field and exact G2/F4/E8 forms, their pinned/split data and a representation r with explicitly defined V. Prove the claimed dimensions 7/26/248, homomorphism laws and faithfulness. A Lie-algebra representation alone needs an additional group-level integration/descent proof.",
+      "acceptance_check": "Actual linear maps and kernels are established, including characteristic/form restrictions, rather than inferring a representation from a dimension label.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "obligation": "E2",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Specify the required representation of the L-group (or dual group in an explicitly unramified split setting), an automorphic representation π of G and a proposed GL(V) transfer Π. Prove existence/automorphy; an ordinary embedding G→GL(V) does not define Π.",
+      "acceptance_check": "The G versus dual/L-group distinction, places and admissibility/ramification hypotheses are explicit.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "obligation": "E3",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "At each good place v, construct the actual local parameter t_v and an explicit equivalence/intertwiner identifying the GL(V) local operator A_v with r(t_v). Prove det(I−q_v^(−s)A_v)=det(I−q_v^(−s)r(t_v)) for all s on its declared domain.",
+      "acceptance_check": "A supplied two-sided inverse may justify determinant conjugacy, but the actual intertwiner and local parameter equality must be constructed. Faithfulness does not imply them.",
+      "review_bridges": [],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "obligation": "E4",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Specify bad-place and Archimedean factors, conductors and dual/root-number data. Prove normal convergence of the Euler products on a common right half-plane and meromorphic continuation/equality on a named connected domain with the same normalization.",
+      "acceptance_check": "All local factors and continuation hypotheses are accounted for; equality at finitely many tested primes cannot replace the global identity.",
+      "review_bridges": [
+        "R4"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "obligation": "E5",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Derive the divisor/residue comparison for the same completed sources from E4, including every extra factor’s divisor. Any critical-line theorem for the target family remains a separate premise or proof.",
+      "acceptance_check": "An equality/zero-free multiplier with a proved divisor controls the original source; no all-zero alignment is inferred from the existence of a lift.",
+      "review_bridges": [
+        "R4"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "obligation": "E1",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Fix the base field and exact G2/F4/E8 forms, their pinned/split data and a representation r with explicitly defined V. Prove the claimed dimensions 7/26/248, homomorphism laws and faithfulness. A Lie-algebra representation alone needs an additional group-level integration/descent proof.",
+      "acceptance_check": "Actual linear maps and kernels are established, including characteristic/form restrictions, rather than inferring a representation from a dimension label.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "obligation": "E2",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Specify the required representation of the L-group (or dual group in an explicitly unramified split setting), an automorphic representation π of G and a proposed GL(V) transfer Π. Prove existence/automorphy; an ordinary embedding G→GL(V) does not define Π.",
+      "acceptance_check": "The G versus dual/L-group distinction, places and admissibility/ramification hypotheses are explicit.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "obligation": "E3",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "At each good place v, construct the actual local parameter t_v and an explicit equivalence/intertwiner identifying the GL(V) local operator A_v with r(t_v). Prove det(I−q_v^(−s)A_v)=det(I−q_v^(−s)r(t_v)) for all s on its declared domain.",
+      "acceptance_check": "A supplied two-sided inverse may justify determinant conjugacy, but the actual intertwiner and local parameter equality must be constructed. Faithfulness does not imply them.",
+      "review_bridges": [],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "obligation": "E4",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Specify bad-place and Archimedean factors, conductors and dual/root-number data. Prove normal convergence of the Euler products on a common right half-plane and meromorphic continuation/equality on a named connected domain with the same normalization.",
+      "acceptance_check": "All local factors and continuation hypotheses are accounted for; equality at finitely many tested primes cannot replace the global identity.",
+      "review_bridges": [
+        "R4"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "obligation": "E5",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Derive the divisor/residue comparison for the same completed sources from E4, including every extra factor’s divisor. Any critical-line theorem for the target family remains a separate premise or proof.",
+      "acceptance_check": "An equality/zero-free multiplier with a proved divisor controls the original source; no all-zero alignment is inferred from the existence of a lift.",
+      "review_bridges": [
+        "R4"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "obligation": "K1",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Choose a Coxeter system and a parameter convention. For example, over ℤ[v,v⁻¹] set q=v² and require T_s²=(q−1)T_s+q together with the braid relations. Define the bar involution with v↦v⁻¹ and T_w↦(T_{w⁻¹})⁻¹.",
+      "acceptance_check": "A consistent algebra and involution exist; this explicit convention is a proposed repair, not the printed truncated recursion.",
+      "review_bridges": [
+        "R5"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "obligation": "K2",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Construct the bar-invariant basis C′_w=v^{−ℓ(w)}Σ_{y≤w}P_{y,w}(v²)T_y, with P_{w,w}=1, P_{y,w}=0 if y≰w and deg P_{y,w}≤(ℓ(w)−ℓ(y)−1)/2 for y<w. Prove existence/uniqueness and derive a correct recurrence.",
+      "acceptance_check": "The printed universal P_{e,v}=1 rule and affine/quantum corrections are not assumed; the actual normalized basis determines the polynomials.",
+      "review_bridges": [],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "obligation": "K3",
+      "implementation_status_retained": "kernel-verified-correction-check",
+      "original_statement": "Recompute the G2 example. Under K2, its diagonal P_{w,w} is 1, so the displayed q² cannot be that polynomial in ℤ[q]; compare constant coefficients to certify q²≠1.",
+      "acceptance_check": "Use the precise chosen variable and coefficient ring; the elementary coefficient check is not a KL positivity theorem.",
+      "review_bridges": [],
+      "next_action": "Keep prior optional/corrective scope; no further manuscript acceptance."
+    },
+    {
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "obligation": "K4",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Construct the relevant Schubert/stratum intersection-cohomology realization, with grading, normalization and coefficient conditions, then prove coefficient nonnegativity for this exact KL family. Define affine/quantum variants independently before reusing a theorem.",
+      "acceptance_check": "A graded geometric realization and positivity theorem are actual suppliers, not strings naming nilpotent strata.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "obligation": "K5",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Construct a source-specific realization from these graded classes to the analytic zero detector, prove the full signed/graded identity, and prove why its off-line nonzero class would lie in an actually vanishing group. Nonnegative coefficients alone do not force a residue to be zero.",
+      "acceptance_check": "The exact analytic consumer, signs, degree and nonvanishing comparison are proved before concluding any zero exclusion.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "obligation": "K1",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Choose a Coxeter system and a parameter convention. For example, over ℤ[v,v⁻¹] set q=v² and require T_s²=(q−1)T_s+q together with the braid relations. Define the bar involution with v↦v⁻¹ and T_w↦(T_{w⁻¹})⁻¹.",
+      "acceptance_check": "A consistent algebra and involution exist; this explicit convention is a proposed repair, not the printed truncated recursion.",
+      "review_bridges": [
+        "R5"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "obligation": "K2",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Construct the bar-invariant basis C′_w=v^{−ℓ(w)}Σ_{y≤w}P_{y,w}(v²)T_y, with P_{w,w}=1, P_{y,w}=0 if y≰w and deg P_{y,w}≤(ℓ(w)−ℓ(y)−1)/2 for y<w. Prove existence/uniqueness and derive a correct recurrence.",
+      "acceptance_check": "The printed universal P_{e,v}=1 rule and affine/quantum corrections are not assumed; the actual normalized basis determines the polynomials.",
+      "review_bridges": [],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "obligation": "K3",
+      "implementation_status_retained": "kernel-verified-correction-check",
+      "original_statement": "Recompute the G2 example. Under K2, its diagonal P_{w,w} is 1, so the displayed q² cannot be that polynomial in ℤ[q]; compare constant coefficients to certify q²≠1.",
+      "acceptance_check": "Use the precise chosen variable and coefficient ring; the elementary coefficient check is not a KL positivity theorem.",
+      "review_bridges": [],
+      "next_action": "Keep prior optional/corrective scope; no further manuscript acceptance."
+    },
+    {
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "obligation": "K4",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Construct the relevant Schubert/stratum intersection-cohomology realization, with grading, normalization and coefficient conditions, then prove coefficient nonnegativity for this exact KL family. Define affine/quantum variants independently before reusing a theorem.",
+      "acceptance_check": "A graded geometric realization and positivity theorem are actual suppliers, not strings naming nilpotent strata.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "obligation": "K5",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Construct a source-specific realization from these graded classes to the analytic zero detector, prove the full signed/graded identity, and prove why its off-line nonzero class would lie in an actually vanishing group. Nonnegative coefficients alone do not force a residue to be zero.",
+      "acceptance_check": "The exact analytic consumer, signs, degree and nonvanishing comparison are proved before concluding any zero exclusion.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "obligation": "S1",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Bind each named January reference to an exact catalog SHA/version and exact theorem. Eight candidate versions of four title families were inspected; title matching alone does not prove that the status note invokes either particular version.",
+      "acceptance_check": "Reference identity and logical dependence are recorded separately; printed bibliographies are not silently promoted to verified publications.",
+      "review_bridges": [],
+      "next_action": "Source identity/bibliography remains unresolved; do not invent titles or version bindings."
+    },
+    {
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "obligation": "S2",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Define each arithmetic sequence, its deterministic centering and e_n before choosing a target rate. Decide whether the needed claim is ∃C∀n |e_n|≤C, a variable envelope |e_n|≤C B(n), or a normalized o(n) statement.",
+      "acceptance_check": "Axiom 1 p.2 prints O(√p_n log p_n), not a constant bound; no boundedness follows from that growing upper envelope. The asserted prime-gap estimate and arbitrary-height enumeration also need independent proofs.",
+      "review_bridges": [
+        "R7"
+      ],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    },
+    {
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "obligation": "S3",
+      "implementation_status_retained": "kernel-verified-correction-fragment",
+      "original_statement": "For the same centered channels define E_N=Σ_{n<N}Σ_d e_{d,n} and prove the exact rate required downstream. Hoeffding-style O(√N), N⁻¹E_N→0 and O(log N) are distinct from sup_N|E_N|<∞.",
+      "acceptance_check": "Retain probability/centering/range hypotheses and uniformity/tails. Repair Axiom 5 equation (7), which replaces an additive signal by a product-frequency expansion without a supplied identity.",
+      "review_bridges": [
+        "R2",
+        "R6"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "obligation": "S4",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Construct source_n, model_n and the common channel gain A_n. Set u_n=source_n−model_n and net forcing η_n=(source_{n+1}−A_n source_n)−(model_{n+1}−A_n model_n). Instantiate u_{n+1}=A_nu_n+η_n; then prove actual gain/conditioning, net-forcing decay, channel completeness and fixed-source readout identities.",
+      "acceptance_check": "The algebraic recurrence is available, but source states, all-depth estimates and a source-preserving fixed-target consumer are new obligations; changing channel spaces require additional transition maps.",
+      "review_bridges": [
+        "R3"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "obligation": "S5",
+      "implementation_status_retained": "kernel-verified-conditional-fragment",
+      "original_statement": "Define a probability space and exact measurable, square-integrable zero observables. State finite-family independence or a specified limiting-law independence theorem. Vanishing/decaying pair correlation alone is not that statement.",
+      "acceptance_check": "Independence⇒zero covariance is available. A converse requires additional structure; joint Gaussian law plus exactly zero cross-covariance is one explicit sufficient profile, not implied by a GUE label or degree-limit correlation.",
+      "review_bridges": [
+        "R2"
+      ],
+      "next_action": "Review-listed next fragment only; actual manuscript suppliers and current-source verification remain missing."
+    },
+    {
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "obligation": "S6",
+      "implementation_status_retained": "unresolved",
+      "original_statement": "Retain every RH/GRH hypothesis printed in the Resolution draft §4.3. If the desired downstream theorem is unconditional RH/GRH, replace that supplier by an independently proved result rather than using it circularly.",
+      "acceptance_check": "The final dependency graph contains no disguised RH/GRH premise, conjecture-free status label or assumed arithmetic comparison.",
+      "review_bridges": [],
+      "next_action": "Actual geometric/arithmetic/source supplier remains the obstruction; an abstract implication or naming wrapper would not discharge acceptance."
+    }
+  ],
+  "imported_gaussian_boundary": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "path": "Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean",
+    "blob": "e24c909893788fc64531ca9b7498b78606fcc238",
+    "sha256": "06f064a27a0fc4a08277d545b643e2f40e5adffec4c37917bd8bd3752070f1ff",
+    "declaration": "ProbabilityTheory.HasGaussianLaw.iIndepFun_of_covariance_eq_zero",
+    "line": 261,
+    "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+  }
+}
