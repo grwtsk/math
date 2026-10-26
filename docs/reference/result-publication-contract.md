@@ -81,9 +81,17 @@ component spectral scores**, since their dependencies can overlap.
 ## Chosen spectral volume
 
 An edge points from an elaborated declaration that consumes a constant to the
-prerequisite constant. A selected edge has kind `proof_reference` or
-`statement_reference`; imports, citations, taxonomy edges, and lexical name
+prerequisite constant. A selected edge has kind `proof_reference`,
+`statement_reference`, or `declaration_metadata_reference`; imports, citations, taxonomy edges, and lexical name
 matches are separate relations.
+
+The active [radius-three profile](ranking-profile.json) is
+`spectral-volume-radius3-v2`. It gives each of these three kinds weight one,
+retains upstream prerequisites, and requires eligible kernel verification.
+Structural metadata references include constructors, recursor rules, mutual
+blocks, and projection structures reported by the compiler. Each retained kind
+requires an explicit weight. The [profile history](ranking-profiles/index.md)
+preserves previous definitions and their identities for reproducible comparison.
 
 For a root set \(R\), let \(d_R(v)\) be the minimum directed upstream path length
 and set

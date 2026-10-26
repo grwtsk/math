@@ -47,7 +47,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
 [Ranking definition and weight profile](../../../reference/ranking-profile.json) · [Article standard](../../../reference/result-article-standard.md).
-Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88aeaac60d482693913193e74bf5bb87d0c156d5e876fa`.
+Ranking profile: `spectral-volume-radius3-v2` · SHA-256 `254c958eb7f5879d7f3e13f91bbb7ef7a19d3203b48c1402da4198b7992bdc1e`.
 
 ## Immediate specializations and directories
 
