@@ -2,6 +2,7 @@
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
 import GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.SiegelRealZeroWindow
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 import Mathlib.Tactic
 
 /-!
@@ -217,6 +218,133 @@ theorem norm_residuePsi_linear_main_le_of_finite_zero_formulas
       q N hN χ (Finset.mem_erase.mp hχ).1
       T (candidates χ) (R χ) hSeven (hFormula χ hχ)
   · exact hGlobal
+
+
+/-!
+## A quantitative right-edge Perron truncation supplier
+
+This only treats the absolutely convergent **right vertical line**
+Re(s)=sigma>1. It bounds the difference between the full Dirichlet
+series and its inclusive N-prefix *after* multiplication by the
+Perron weight N^s/s. It does not shift contours, cross zero poles,
+establish a finite Perron inversion identity, or bound the other sides
+of a contour. The separate interval-integrability premise prevents
+nonintegrable interval integrals from being silently interpreted as
+genuine contour contributions.
+
+The real parameter integral is unnormalized: a complete Perron
+formula must separately insert the orientation and 1/(2*pi)
+factor, plus all remaining errors.
+-/
+
+/-- The right-edge Perron integrand contributed by truncating the
+actual von Mangoldt/Dirichlet L-series after the inclusive N term.
+This is a genuine analytic series difference, NOT the full explicit
+formula remainder. -/
+def rightPerronTruncation
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) (σ t : ℝ) : ℂ :=
+  let s : ℂ := ⟨σ, t⟩
+  (LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+      (∑ n ∈ Finset.range (N + 1),
+        LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)) *
+    ((N : ℂ) ^ s / s)
+
+/-- Explicit magnitude bound on the right-line Perron truncation.
+The factor (sigma-1) reflects distance from the abscissa of
+absolute convergence; there is no saving from zero-freeness. -/
+def rightPerronTruncationBudget (N : ℕ) (σ : ℝ) : ℝ :=
+  ((N : ℝ) ^ (1 - σ) *
+    (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2)) *
+    ((N : ℝ) ^ σ / σ)
+
+/-- Pointwise right-edge truncation error, uniform in imaginary height.
+The existing L-series tail estimate and a bound on the Perron
+weight are the only analytic suppliers. -/
+theorem norm_rightPerronTruncation_le
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N) (t : ℝ) :
+    ‖rightPerronTruncation q N χ σ t‖ ≤
+      rightPerronTruncationBudget N σ := by
+  let s : ℂ := ⟨σ, t⟩
+  have hsre : s.re = σ := rfl
+  have hs : 1 < s.re := by simpa only [hsre] using hσ
+  have hσpos : 0 < σ := by linarith
+  have hσdelta : 0 < σ - 1 := by linarith
+  have hNreal : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hNone : (1 : ℝ) ≤ (N : ℝ) := by
+    exact_mod_cast (show 1 ≤ N by omega)
+  have hlog : 0 ≤ Real.log (N : ℝ) := Real.log_nonneg hNone
+  have hseries :
+      ‖LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+        (∑ n ∈ Finset.range (N + 1),
+          LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)‖ ≤
+      (N : ℝ) ^ (1 - σ) *
+        (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
+    simpa only [hsre] using
+      (norm_dirichletVonMangoldt_LSeries_sub_prefix_le q N χ s hs hN)
+  have hpower : ‖(N : ℂ) ^ s‖ = (N : ℝ) ^ σ := by
+    rw [← Complex.ofReal_natCast]
+    simpa only [hsre] using
+      (Complex.norm_cpow_eq_rpow_re_of_pos hNreal s)
+  have hdenom : σ ≤ ‖s‖ := by
+    simpa only [hsre] using (Complex.re_le_norm s)
+  have hkernel : ‖(N : ℂ) ^ s / s‖ ≤ (N : ℝ) ^ σ / σ := by
+    calc
+      ‖(N : ℂ) ^ s / s‖ = (N : ℝ) ^ σ / ‖s‖ := by
+        rw [norm_div, hpower]
+      _ ≤ (N : ℝ) ^ σ / σ :=
+        div_le_div_of_nonneg_left (Real.rpow_nonneg hNreal.le σ)
+          hσpos hdenom
+  have hseriesNonneg :
+      0 ≤ (N : ℝ) ^ (1 - σ) *
+        (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
+    positivity
+  change
+    ‖(LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+      (∑ n ∈ Finset.range (N + 1),
+        LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)) *
+      ((N : ℂ) ^ s / s)‖ ≤
+      ((N : ℝ) ^ (1 - σ) *
+        (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2)) *
+      ((N : ℝ) ^ σ / σ)
+  rw [norm_mul]
+  calc
+    _ ≤ ((N : ℝ) ^ (1 - σ) *
+          (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2)) *
+          ‖(N : ℂ) ^ s / s‖ :=
+      mul_le_mul_of_nonneg_right hseries (norm_nonneg _)
+    _ ≤ ((N : ℝ) ^ (1 - σ) *
+          (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2)) *
+          ((N : ℝ) ^ σ / σ) :=
+      mul_le_mul_of_nonneg_left hkernel hseriesNonneg
+
+/-- Right-edge interval-integral budget for a genuine integrable
+Perron truncation. The integrability premise remains explicit;
+the numerical estimate follows from the proven pointwise bound.
+This is only one component of an eventual explicit-formula R. -/
+theorem norm_rightPerronTruncation_intervalIntegral_le
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ : ℝ) (hσ : 1 < σ) (hN : 3 ≤ N)
+    (T : ℝ) (hT : 0 ≤ T)
+    (_hIntegrable : IntervalIntegrable
+      (rightPerronTruncation q N χ σ)
+      MeasureTheory.volume (-T) T) :
+    ‖∫ t in (-T)..T, rightPerronTruncation q N χ σ t‖ ≤
+      (2 * T) * rightPerronTruncationBudget N σ := by
+  have hBound :
+      ‖∫ t in (-T)..T, rightPerronTruncation q N χ σ t‖ ≤
+        rightPerronTruncationBudget N σ * |T - (-T)| :=
+    intervalIntegral.norm_integral_le_of_norm_le_const
+      (fun t _ht => norm_rightPerronTruncation_le q N χ σ hσ hN t)
+  have hLength : |T - (-T)| = 2 * T := by
+    rw [abs_of_nonneg (show 0 ≤ T - (-T) by linarith)]
+    ring
+  calc
+    _ ≤ rightPerronTruncationBudget N σ * |T - (-T)| := hBound
+    _ = (2 * T) * rightPerronTruncationBudget N σ := by
+      rw [hLength]
+      ring
 
 end
 end GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution
