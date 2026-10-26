@@ -1144,4 +1144,37 @@ theorem SourceSearchInventory.sieveTypeComplete_eventually_of_mass_steering
     source typeOf diffusedSieveWeight depth targetType
     (eventuallyPositive depth depthLe)
 
+
+/-- Quantitative asymptotic steering: every required type has a
+positive baseline mass margin, and the certified weighted-sieve mass
+is no smaller than its baseline minus an error which eventually falls
+strictly below the margin. Then all types are eventually detected.
+
+The error estimate and the positivity of a concrete heat/diffusion
+kernel remain separate analytic and graph-theoretic suppliers. -/
+theorem SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error
+    {T : Type*} (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → T) (diffusedSieveWeight : ℕ → V → ℝ)
+    (baselineMass : T → ℝ) (error : ℕ → ℝ) (margin : ℝ)
+    (margin_pos : 0 < margin)
+    (baseline_lower : ∀ targetType : T, margin ≤ baselineMass targetType)
+    (mass_lower : ∀ depth : ℕ, ∀ targetType : T,
+      baselineMass targetType ≤
+        inventory.sieveTypeMass source typeOf
+          diffusedSieveWeight depth targetType + error depth)
+    (error_eventually_small : ∃ cutoff : ℕ, ∀ depth : ℕ,
+      cutoff ≤ depth → error depth < margin) :
+    ∃ cutoff : ℕ, ∀ depth : ℕ, cutoff ≤ depth →
+      inventory.sieveTypeCompleteAt source typeOf
+        diffusedSieveWeight depth := by
+  obtain ⟨cutoff, hsmall⟩ := error_eventually_small
+  refine ⟨cutoff, ?_⟩
+  intro depth hdepth targetType
+  apply inventory.sieveTypeHit_of_mass_pos
+    source typeOf diffusedSieveWeight depth targetType
+  have hbaseline := baseline_lower targetType
+  have hmass := mass_lower depth targetType
+  have herr := hsmall depth hdepth
+  linarith
+
 end GRWTSK.GraphSandwichDiffusion
