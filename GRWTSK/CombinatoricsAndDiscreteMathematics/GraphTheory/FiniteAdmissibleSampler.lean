@@ -162,8 +162,10 @@ theorem positivePath_iff_allowedPath (S : Sampler V)
     PositivePath S source target length ↔
       AllowedPath S source target length := by
   constructor
-  · exact S.PositivePath.toAllowed
-  · exact S.AllowedPath.toPositive
+  · intro path
+    exact PositivePath.toAllowed S path
+  · intro path
+    exact AllowedPath.toPositive S path
 
 end Sampler
 
