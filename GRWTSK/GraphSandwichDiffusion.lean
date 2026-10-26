@@ -3,6 +3,7 @@ Local mathematical attribution: grwtsk contributors.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 
 import Mathlib
+import Mathlib.RingTheory.Radical.NatInt
 import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich
 import GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 
@@ -1755,5 +1756,123 @@ theorem SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths
     exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
       source typeOf K searchDepth scope_eq weight weight_nonneg
         steps targetType).mpr (paths targetType)
+
+/-! ## An arithmetic radical-weighted coprimality sieve
+
+The concrete integer-state weight below records a genuine finite
+coprimality filter and the arithmetic squarefree radical of surviving
+integers. Its source-independent reset kernel is a normalized finite
+sieve, NOT a graph-local heat semigroup or a prime-distribution
+asymptotic. Positive-power collisions are preserved, rather than
+silently interpreted as exact type recovery. -/
+
+namespace ArithmeticSieveKernel
+
+/-- A nonnegative radical weight on the ordinary coprimality sieve.
+The eventual kernel uses only positive integers in Finset.Icc 1 N. -/
+noncomputable def radicalCoprimeWeight (q n : ℕ) : ℝ :=
+  if Nat.Coprime n q then (Nat.radical n : ℝ) else 0
+
+theorem radicalCoprimeWeight_nonneg (q n : ℕ) :
+    0 ≤ radicalCoprimeWeight q n := by
+  unfold radicalCoprimeWeight
+  split_ifs
+  · exact Nat.cast_nonneg _
+  · exact le_refl _
+
+/-- Radical weights are strictly positive exactly on survivors of the
+coprimality sieve. The radical itself has no zero value in Nat. -/
+theorem radicalCoprimeWeight_pos_iff (q n : ℕ) :
+    0 < radicalCoprimeWeight q n ↔ Nat.Coprime n q := by
+  constructor
+  · intro positive
+    by_contra notCoprime
+    have zeroWeight : radicalCoprimeWeight q n = 0 := by
+      simp [radicalCoprimeWeight, notCoprime]
+    rw [zeroWeight] at positive
+    exact (lt_irrefl (0 : ℝ)) positive
+  · intro coprime
+    change 0 < (if Nat.Coprime n q then
+      (Nat.radical n : ℝ) else 0)
+    rw [if_pos coprime]
+    exact_mod_cast Nat.radical_pos n
+
+/-- Finite positive integer states through the inclusive cutoff N. -/
+def scope (N : ℕ) : Finset ℕ := Finset.Icc 1 N
+
+noncomputable def totalWeight (q N : ℕ) : ℝ :=
+  ∑ n ∈ scope N, radicalCoprimeWeight q n
+
+/-- The integer 1 survives every modulus and has positive radical
+weight. Thus N >= 1 is the exact simple sufficient condition for
+nonzero normalization; an empty scope at N = 0 is not normalized. -/
+theorem totalWeight_pos (q N : ℕ) (hN : 1 ≤ N) :
+    0 < totalWeight q N := by
+  unfold totalWeight
+  apply Finset.sum_pos'
+  · intro n hn
+    exact radicalCoprimeWeight_nonneg q n
+  · have hOne : (1 : ℕ) ∈ scope N := by
+      change (1 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+    have hCoprime : Nat.Coprime 1 q := by simp
+    exact ⟨1, hOne, (radicalCoprimeWeight_pos_iff q 1).mpr hCoprime⟩
+
+/-- Concrete finite, row-stochastic kernel from radical-weighted
+coprimality-sieve data, under the necessary nonempty cutoff. -/
+noncomputable def resetKernel (q N : ℕ) (hN : 1 ≤ N) :
+    FiniteSieveMarkovKernel ℕ :=
+  FiniteSieveMarkovKernel.normalizedTargetKernel
+    (scope N) (radicalCoprimeWeight q)
+    (fun n hn => radicalCoprimeWeight_nonneg q n)
+    (totalWeight_pos q N hN)
+
+/-- A positive reset transition to an in-scope integer occurs exactly
+when that integer is coprime to q, regardless of the source. -/
+theorem resetKernel_transition_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N) (source target : ℕ)
+    (target_mem : target ∈ scope N) :
+    0 < (resetKernel q N hN).transition source target ↔
+      Nat.Coprime target q := by
+  exact
+    (FiniteSieveMarkovKernel.normalizedTargetKernel_transition_pos_iff
+      (scope N) (radicalCoprimeWeight q)
+      (fun n hn => radicalCoprimeWeight_nonneg q n)
+      (totalWeight_pos q N hN)
+      source target target_mem).trans
+        (radicalCoprimeWeight_pos_iff q target)
+
+/-- The arithmetic radical/coprimality sieve weights lose positive
+prime-power exponent information. The exponent must be nonzero. -/
+theorem radicalCoprimeWeight_pow (q n k : ℕ) (hk : k ≠ 0) :
+    radicalCoprimeWeight q (n ^ k) =
+      radicalCoprimeWeight q n := by
+  have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
+    Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
+  have hrad : Nat.radical (n ^ k) = Nat.radical n :=
+    UniqueFactorizationMonoid.radical_pow n hk
+  by_cases h : Nat.Coprime n q
+  · simp [radicalCoprimeWeight, hcop.mpr h, h, hrad]
+  · have hpow : ¬ Nat.Coprime (n ^ k) q :=
+      fun hc => h (hcop.mp hc)
+    simp [radicalCoprimeWeight, h, hpow]
+
+/-- The source-independent normalized kernel assigns equal transition
+coefficients to positive powers with the same radical, provided BOTH
+targets occur inside the cutoff. This is a concrete collision fixture,
+not an exact type decoder or a claim about arithmetic mixing. -/
+theorem resetKernel_transition_pow_collision
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source n k : ℕ) (hk : k ≠ 0)
+    (hn : n ∈ scope N) (hnk : n ^ k ∈ scope N) :
+    (resetKernel q N hN).transition source (n ^ k) =
+      (resetKernel q N hN).transition source n := by
+  change (if n ^ k ∈ scope N then
+    radicalCoprimeWeight q (n ^ k) / totalWeight q N else 0) =
+    (if n ∈ scope N then
+      radicalCoprimeWeight q n / totalWeight q N else 0)
+  rw [if_pos hnk, if_pos hn, radicalCoprimeWeight_pow q n k hk]
+
+end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
