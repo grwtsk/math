@@ -337,10 +337,8 @@ theorem graphEulerHeat_pairing_le_of_correction_budget
       graphLaplacianPairing w u := by
   have hexpand := graphLaplacianPairing_sub_expand
     w u (weightedGraphLaplacian w u) τ
-  change graphLaplacianPairing w
-    (fun i => u i - τ * weightedGraphLaplacian w u i) =
+  change graphLaplacianPairing w (graphEulerHeat w τ u) =
     _ at hexpand
-  rw [← graphEulerHeat] at hexpand
   rw [hmixed] at hexpand
   nlinarith
 
