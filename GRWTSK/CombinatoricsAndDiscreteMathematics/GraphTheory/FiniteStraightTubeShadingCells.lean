@@ -79,13 +79,15 @@ theorem shading_volume_le_tube_volume (i : Index) :
 shading is in that cell. The marking is completely determined from
 geometry; it does not pre-assume a Kakeya incidence inequality. -/
 def geometricMark (cells : Cell → Set (Space d))
-    (i : Index) (c : Cell) : Bool :=
-  decide (∃ x : Space d, x ∈ S.shading i ∧ x ∈ cells c)
+    (i : Index) (c : Cell) : Bool := by
+  classical
+  exact decide (∃ x : Space d, x ∈ S.shading i ∧ x ∈ cells c)
 
 theorem geometricMark_eq_true_iff
     (cells : Cell → Set (Space d)) (i : Index) (c : Cell) :
     S.geometricMark cells i c = true ↔
       ∃ x : Space d, x ∈ S.shading i ∧ x ∈ cells c := by
+  classical
   simp [geometricMark]
 
 /-- Every marked cell does intersect the *original straight tube*,
