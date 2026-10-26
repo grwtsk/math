@@ -84,7 +84,7 @@ theorem completeObservation_error_parseval
           (a.geometry - b.geometry) +
         4 * (a.harmonicMean - b.harmonicMean) ^ 2 +
         (1 / 4 : ℝ) * (a.alternating - b.alternating) ^ 2 := by
-  rw [reconstructObservation_sub]
+  simp only [reconstructObservation_sub]
   exact reconstructObservation_positive_energy (observationDifference a b)
 
 /-- For an actual contact source f and a supplied observation record,
@@ -98,13 +98,8 @@ theorem completeObservation_source_error
           (observed.geometry - contactToSource f) +
         4 * (observed.harmonicMean - centeredMean f) ^ 2 +
         (1 / 4 : ℝ) * (observed.alternating - alternatingReadout f) ^ 2 := by
-  conv_lhs =>
-    arg 1
-    rw [← reconstruct_completeObservation f]
-  conv_lhs =>
-    arg 2
-    rw [← reconstruct_completeObservation f]
-  exact completeObservation_error_parseval observed (completeObservation f)
+  have h := completeObservation_error_parseval observed (completeObservation f)
+  simpa only [reconstruct_completeObservation, completeObservation] using h
 
 /-- Missing mean data cannot be controlled by the positive Hodge
 energy alone: a nonzero constant field has zero Hodge energy. -/
