@@ -1500,4 +1500,85 @@ theorem threeAdicType_buffered_mass_ge_fixed_rate
     _ ≤ (bufferedDiagonalKernel 2 N hN).typeMass
           initial (primeValuationType 3) (depth + 1) k := hmass
 
+/-- Pointwise eventual positive exact 3-adic type mass under the
+separate modulus-two buffered kernel. Inputs must be nonnegative
+and normalized on the finite positive scope. -/
+theorem threeAdicType_buffered_eventually_pos (k : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel 2 N hN).typeMass
+            initial (primeValuationType 3) (depth + 1) k := by
+  refine ⟨threeAdicTypePeriod k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : (0 : ℝ) < (threeAdicTypePeriod k : ℝ) := by
+    exact_mod_cast (threeAdicTypePeriod_pos k)
+  have hr : (0 : ℝ) <
+      (1 : ℝ) / (8 * (threeAdicTypePeriod k : ℝ)) := by positivity
+  exact hr.trans_le
+    (threeAdicType_buffered_mass_ge_fixed_rate
+      k N hN hcutoff initial hnonneg hmass depth)
+
+/-- Every fixed 3-adic valuation type eventually has a certified
+graph hit in the modulus-TWO arithmetic inventory, at graph depth
+one and after every positive Markov iteration. -/
+theorem threeAdicType_buffered_eventually_certified_hit (k : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          (certifiedArithmeticInventory 2 N hN).sieveTypeHit
+            1 (primeValuationType 3)
+            (fun _ n => (bufferedDiagonalKernel 2 N hN).evolve
+              initial (depth + 1) n) 1 k := by
+  refine ⟨threeAdicTypePeriod k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : 0 < threeAdicTypePeriod k :=
+    threeAdicTypePeriod_pos k
+  have hquot : 1 ≤ N / threeAdicTypePeriod k := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hscope : threeAdicTypeProgression k 0 ∈ scope N :=
+    threeAdicTypeProgression_mem_scope k N 0 (by omega)
+  have hcoprime : Nat.Coprime (threeAdicTypeProgression k 0) 2 :=
+    threeAdicTypeProgression_coprime_two k 0
+  have hreach :
+      threeAdicTypeProgression k 0 ∈
+        (certifiedArithmeticInventory 2 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 2 N hN]
+    exact Finset.mem_filter.mpr ⟨hscope, hcoprime⟩
+  have hrate :
+      (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ :=
+    bufferedDiagonalKernel_rate_pos N hN
+  have hpositive :
+      0 < (bufferedDiagonalKernel 2 N hN).evolve initial
+        (depth + 1) (threeAdicTypeProgression k 0) :=
+    hrate.trans_le
+      (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        2 N hN initial hnonneg hmass depth
+        (threeAdicTypeProgression k 0) hscope hcoprime)
+  exact ⟨threeAdicTypeProgression k 0, hreach,
+    threeAdicTypeProgression_factorization_three k 0, hpositive⟩
+
+/-- The modulus-three coprime sieve cannot contain integers of
+strictly positive exact three-adic valuation, regardless of cutoff
+or diffusion weights. This explains the need for a second modulus. -/
+theorem positive_threeAdic_type_absent_from_modulus_three
+    (k N : ℕ) (hk : 0 < k) :
+    ¬ ∃ n ∈ scope N,
+        primeValuationType 3 n = k ∧ Nat.Coprime n 3 := by
+  rintro ⟨n, hn, heq, hc⟩
+  have hp3 : Nat.Prime 3 := by norm_num
+  have hnotdiv : ¬ (3 : ℕ) ∣ n :=
+    (Nat.Prime.coprime_iff_not_dvd hp3).mp hc.symm
+  have hzero : (n.factorization 3) = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hnotdiv
+  dsimp [primeValuationType] at heq
+  omega
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
