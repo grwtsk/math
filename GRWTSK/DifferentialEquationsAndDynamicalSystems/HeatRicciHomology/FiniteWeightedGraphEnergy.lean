@@ -407,43 +407,63 @@ Laplacian, without any spectral or continuum assumptions.
 
 /-- The mixed pairing of u with Lu is exactly the sum of
 squared Laplacian coordinates under symmetric weights. -/
+theorem graphMixedPairing_symmetric
+    (w : V → V → ℚ) (u v : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    graphMixedPairing w u v = graphMixedPairing w v u := by
+  classical
+  have hcross :
+      (∑ i : V, ∑ j : V, u i * w i j * v j) =
+      (∑ i : V, ∑ j : V, v i * w i j * u j) := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro j hj
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [hsym j i]
+    ring
+  unfold graphMixedPairing weightedGraphLaplacian
+  simp only [Finset.mul_sum]
+  have hpoint :
+      (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
+      (∑ i : V, ∑ j : V, u i * w i j * v i) -
+      (∑ i : V, ∑ j : V, u i * w i j * v j) := by
+    rw [← Finset.sum_sub_distrib]
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [← Finset.sum_sub_distrib]
+    apply Finset.sum_congr rfl
+    intro j hj
+    ring
+  have hpoint' :
+      (∑ i : V, ∑ j : V, v i * (w i j * (u i - u j))) =
+      (∑ i : V, ∑ j : V, v i * w i j * u i) -
+      (∑ i : V, ∑ j : V, v i * w i j * u j) := by
+    rw [← Finset.sum_sub_distrib]
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [← Finset.sum_sub_distrib]
+    apply Finset.sum_congr rfl
+    intro j hj
+    ring
+  rw [hpoint, hpoint', hcross]
+  apply congrArg (fun x : ℚ => x -
+    ∑ i : V, ∑ j : V, v i * w i j * u j)
+  apply Finset.sum_congr rfl
+  intro i hi
+  apply Finset.sum_congr rfl
+  intro j hj
+  ring
+
 theorem graphMixedPairing_u_Lu_eq_sum_sq
     (w : V → V → ℚ) (u : V → ℚ)
     (hsym : ∀ i j, w i j = w j i) :
     graphMixedPairing w u (weightedGraphLaplacian w u) =
       ∑ i : V, (weightedGraphLaplacian w u i) ^ 2 := by
-  classical
-  let v := weightedGraphLaplacian w u
-  have hself :
-      graphMixedPairing w u v = graphMixedPairing w v u := by
-    unfold graphMixedPairing weightedGraphLaplacian
-    simp only [Finset.mul_sum]
-    have hswap :
-        (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
-        (∑ i : V, ∑ j : V, v i * (w i j * (u i - u j))) := by
-      have hflip :
-          (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
-          (∑ i : V, ∑ j : V, u j * (w i j * (v j - v i))) := by
-        rw [Finset.sum_comm]
-        apply Finset.sum_congr rfl
-        intro j hj
-        apply Finset.sum_congr rfl
-        intro i hi
-        rw [hsym j i]
-      rw [hflip]
-      rw [← Finset.sum_add_distrib]
-      apply Finset.sum_congr rfl
-      intro i hi
-      rw [← Finset.sum_add_distrib]
-      apply Finset.sum_congr rfl
-      intro j hj
-      ring
-    exact hswap
-  rw [hself]
+  rw [graphMixedPairing_symmetric w u (weightedGraphLaplacian w u) hsym]
   unfold graphMixedPairing
   apply Finset.sum_congr rfl
   intro i hi
-  change v i * v i = (v i) ^ 2
   ring
 
 /-! ## Elementary edge inequality for degree-based spectral bounds
@@ -603,31 +623,6 @@ continuum Navier–Stokes regularity or an analytic Hodge limit.
 -/
 
 /-- Symmetric weights make the finite graph mixed pairing symmetric. -/
-theorem graphMixedPairing_symmetric
-    (w : V → V → ℚ) (u v : V → ℚ)
-    (hsym : ∀ i j, w i j = w j i) :
-    graphMixedPairing w u v = graphMixedPairing w v u := by
-  classical
-  unfold graphMixedPairing weightedGraphLaplacian
-  simp only [Finset.mul_sum]
-  have hswap :
-      (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
-      (∑ i : V, ∑ j : V, u j * (w i j * (v j - v i))) := by
-    rw [Finset.sum_comm]
-    apply Finset.sum_congr rfl
-    intro j hj
-    apply Finset.sum_congr rfl
-    intro i hi
-    rw [hsym j i]
-  rw [hswap]
-  rw [← Finset.sum_add_distrib]
-  apply Finset.sum_congr rfl
-  intro i hi
-  rw [← Finset.sum_add_distrib]
-  apply Finset.sum_congr rfl
-  intro j hj
-  ring
-
 /-- Genuine finite graph Euler heat dissipates the graph quadratic
 energy under a concrete maximum-degree CFL condition. -/
 theorem graphEulerHeat_pairing_le_of_degreeBound
