@@ -1118,6 +1118,137 @@ theorem SourceSearchInventory.sieveTypeHit_of_mass_pos
     exact noHit ⟨vertex, typed.1, typed.2, positive⟩
   exact (not_lt_of_ge hnonpos) massPos
 
+/-- A positive-weight witness in the finite certified type fiber gives
+positive total mass when the supplied weights are nonnegative on the
+certified-reachable set. The weight condition is essential: signed
+cancellation can make a positive witness coexist with nonpositive mass. -/
+theorem SourceSearchInventory.sieveTypeMass_pos_of_hit
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (weight_nonneg : ∀ vertex ∈ inventory.certifiedSearch source depth,
+      0 ≤ diffusedSieveWeight depth vertex)
+    (hit : inventory.sieveTypeHit source typeOf
+      diffusedSieveWeight depth targetType) :
+    0 < inventory.sieveTypeMass source typeOf
+      diffusedSieveWeight depth targetType := by
+  classical
+  rcases hit with ⟨vertex, member, sameType, positive⟩
+  unfold SourceSearchInventory.sieveTypeMass
+  apply Finset.sum_pos'
+  · intro v hv
+    exact weight_nonneg v (Finset.mem_filter.mp hv).1
+  · exact ⟨vertex, Finset.mem_filter.mpr ⟨member, sameType⟩, positive⟩
+
+/-- Exactly positive finite type mass is equivalent to a positive
+certified witness, provided weights are nonnegative on certified
+vertices. No probabilistic normalization or asymptotic supplier is
+silently assumed. -/
+theorem SourceSearchInventory.sieveTypeMass_pos_iff_hit_of_nonneg
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (weight_nonneg : ∀ vertex ∈ inventory.certifiedSearch source depth,
+      0 ≤ diffusedSieveWeight depth vertex) :
+    (0 < inventory.sieveTypeMass source typeOf
+      diffusedSieveWeight depth targetType) ↔
+      inventory.sieveTypeHit source typeOf
+        diffusedSieveWeight depth targetType := by
+  constructor
+  · exact inventory.sieveTypeHit_of_mass_pos
+      source typeOf diffusedSieveWeight depth targetType
+  · exact inventory.sieveTypeMass_pos_of_hit
+      source typeOf diffusedSieveWeight depth targetType weight_nonneg
+
+/-- Finite completeness of the declared type space can be checked
+fiberwise by strictly positive certified aggregate mass, not just
+unweighted candidate reachability. This is finite coverage, not an
+asymptotic estimate or a theorem about exact type decoders. -/
+theorem SourceSearchInventory.sieveTypeCompleteAt_iff_all_mass_pos_of_nonneg
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ)
+    (weight_nonneg : ∀ vertex ∈ inventory.certifiedSearch source depth,
+      0 ≤ diffusedSieveWeight depth vertex) :
+    inventory.sieveTypeCompleteAt source typeOf
+      diffusedSieveWeight depth ↔
+      ∀ targetType : T,
+        0 < inventory.sieveTypeMass source typeOf
+          diffusedSieveWeight depth targetType := by
+  constructor
+  · intro complete targetType
+    exact inventory.sieveTypeMass_pos_of_hit
+      source typeOf diffusedSieveWeight depth targetType
+      weight_nonneg (complete targetType)
+  · intro masses targetType
+    exact inventory.sieveTypeHit_of_mass_pos
+      source typeOf diffusedSieveWeight depth targetType
+      (masses targetType)
+
+/-- The same weighted type-fiber mass is obtained after passing through
+a feature map, but only when the type label factors through that feature
+on every certified-reachable vertex. This is an explicit
+fiber-preservation premise, not a claim that a radical feature is
+injective or that exact type recovery is always possible. -/
+theorem SourceSearchInventory.sieveTypeMass_eq_feature_fiber
+    {Feature T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (feature : V → Feature)
+    (typeOf : V → T) (featureType : Feature → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (fiber_preserving :
+      ∀ vertex ∈ inventory.certifiedSearch source depth,
+        typeOf vertex = featureType (feature vertex)) :
+    inventory.sieveTypeMass source typeOf diffusedSieveWeight
+      depth targetType =
+    inventory.sieveTypeMass source
+      (fun vertex => featureType (feature vertex))
+      diffusedSieveWeight depth targetType := by
+  classical
+  unfold SourceSearchInventory.sieveTypeMass
+  apply Finset.sum_congr
+  · ext vertex
+    simp only [Finset.mem_filter]
+    constructor
+    · rintro ⟨reachable, typed⟩
+      refine ⟨reachable, ?_⟩
+      rw [← fiber_preserving vertex reachable]
+      exact typed
+    · rintro ⟨reachable, typed⟩
+      refine ⟨reachable, ?_⟩
+      rw [fiber_preserving vertex reachable]
+      exact typed
+  · intro vertex _
+    rfl
+
+/-- A collision in the observed feature on two certified-reachable
+vertices carrying distinct required labels obstructs any *exact*
+feature-only type map on that scope. It does not obstruct positive mass
+on both type fibers; a sieve may retain extra multiplicity-sensitive
+data. Instantiate `feature` with the K₀-shaped radical observable only
+after choosing an explicit arithmetic-state adapter. -/
+theorem SourceSearchInventory.no_exact_feature_type_of_collision
+    {Feature T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T) (feature : V → Feature)
+    (depth : ℕ) {a b : V}
+    (a_reachable : a ∈ inventory.certifiedSearch source depth)
+    (b_reachable : b ∈ inventory.certifiedSearch source depth)
+    (sameFeature : feature a = feature b)
+    (differentType : typeOf a ≠ typeOf b) :
+    ¬ ∃ featureType : Feature → T,
+        ∀ vertex ∈ inventory.certifiedSearch source depth,
+          typeOf vertex = featureType (feature vertex) := by
+  rintro ⟨featureType, fiber_preserving⟩
+  apply differentType
+  calc
+    typeOf a = featureType (feature a) :=
+      fiber_preserving a a_reachable
+    _ = featureType (feature b) := congrArg featureType sameFeature
+    _ = typeOf b := (fiber_preserving b b_reachable).symm
+
 /-- Finite-type completeness follows from **per-type eventual positive
 aggregate diffused-sieve mass on certified reachable fibers**. The
 positivity/steering premise remains an independent analytic/graph
