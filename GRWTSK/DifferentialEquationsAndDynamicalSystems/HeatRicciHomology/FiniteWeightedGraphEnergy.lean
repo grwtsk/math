@@ -452,13 +452,15 @@ theorem graphMixedPairing_symmetric
         (∑ i : V, ∑ j : V, u i * w i j * v j) := hpoint
     _ = (∑ i : V, ∑ j : V, v i * w i j * u i) -
         (∑ i : V, ∑ j : V, v i * w i j * u j) := by
-      rw [hcross]
-      congr 1
-      apply Finset.sum_congr rfl
-      intro i hi
-      apply Finset.sum_congr rfl
-      intro j hj
-      ring
+      have hdiag :
+          (∑ i : V, ∑ j : V, u i * w i j * v i) =
+          (∑ i : V, ∑ j : V, v i * w i j * u i) := by
+        apply Finset.sum_congr rfl
+        intro i hi
+        apply Finset.sum_congr rfl
+        intro j hj
+        ring
+      rw [hdiag, hcross]
     _ = ∑ i : V, ∑ j : V, v i * (w i j * (u i - u j)) := hpoint'.symm
 
 theorem graphMixedPairing_u_Lu_eq_sum_sq
