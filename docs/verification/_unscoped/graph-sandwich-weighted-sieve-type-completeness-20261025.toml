@@ -3,10 +3,12 @@ schema_version = "0.1"
 request_id = "graph-sandwich-weighted-sieve-type-completeness-20261025"
 repository = "grwtsk/math"
 branch = "main"
-source_commit = "f3fb87b6daeaea08dc133350ddd3f39bd5d84d45"
+source_commit = "c8adb8112d75e93ef753d7669d5c2942f74edde3"
 theorem_authoring_commit = "c532b352d7338c15e09f4689187e5d34f00235d4"
+aggregate_mass_authoring_commit = "a89380d0b75a64bbf2a19e257dfe4e6435f773d7"
+quantitative_steering_authoring_commit = "c8adb8112d75e93ef753d7669d5c2942f74edde3"
 source_path = "GRWTSK/GraphSandwichDiffusion.lean"
-source_blob = "b5bd065acd6f62f0b712dbdd0c4728e4d8ba2a17"
+source_blob = "19eeb18c11ada786f5633ae95079722fb9583a46"
 relation_sandwich_path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean"
 relation_sandwich_blob = "9761b5dd5d6ada7344031c07386586c72c1d970a"
 sofic_source_path = "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean"
@@ -21,7 +23,10 @@ remote_dispatch_authorized = false
 merge_authorized = false
 paper_derived = false
 classification = "CONDITIONAL_FINITE_TYPE_COMPLETENESS_VIA_CERTIFIED_WEIGHTED_SIEVE_STEERING"
-hypothesis_description = "Finite type space T; source inventory with explicitly certified edges; typeOf : V -> T; weight : Nat -> V -> Real; each type has an eventual strictly positive weight at a certified-search-reachable vertex at every later depth."
+hypothesis_description = "For the finite type theorem, T is finite and every type has an eventually positive certified-reachable vertex. The aggregate type-mass theorem assumes eventually positive certified fiber sums for each type. The quantitative steering theorem assumes a uniform positive baseline margin and an eventual error below that margin."
+quantitative_steering_premises = "baselineMass : T -> Real; margin > 0; for each type t, margin <= baselineMass t <= sieveTypeMass(depth,t) + error(depth) for all depths; exists cutoff, every later error(depth) < margin"
+quantitative_steering_result = "Every declared type has strictly positive aggregate mass, hence a certified-reachable positive-weight witness, for all sufficiently large depths. Its source proof does not require T to be finite because the margin and error cutoff are already uniform."
+analytic_supplier_status = "NOT_PROVED: no supplied baseline positivity or uniform asymptotic error bound for the actual graph heat/sieve kernel"
 conclusion = "A single finite cutoff dominates all individual type cutoffs, after which every type is detected at every depth."
 declarations = [
   "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit",
@@ -29,6 +34,10 @@ declarations = [
   "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_has_certifiedPath",
   "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeComplete_eventually_of_steering",
   "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.not_sieveTypeCompleteAt_of_missing_type",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_of_mass_pos",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeComplete_eventually_of_mass_steering",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error",
 ]
 direct_imports = [
   "Mathlib",
@@ -44,6 +53,8 @@ known_source_interfaces = [
 ]
 unresolved_suppliers = [
   "Construct a genuine weighted sieve kernel and its support-preserving diffusion action on actual inventory vertices",
+  "Prove the positive baseline type-mass margin for every required type and the uniform one-sided mass-error bound",
+  "Prove a concrete asymptotic error bound eventually strictly below the uniform margin, not merely a finite numerical trace",
   "Prove entrywise positivity/Markov mass preservation at the required depth and type support, not by assuming generic matrix-exponential positivity",
   "Prove asymptotic steering: for every required type t there exists cutoff N(t) so each n >= N(t) has a positive certified reachable type-t witness",
   "Show this weighted heat/sieve action agrees with the supplied abstract weight function, with exact scale/time/cutoff and no ad hoc coercions",
@@ -62,7 +73,7 @@ transitive_import_closure = "PENDING_SOURCE_INVENTORY"
 receipts = "NOT_RUN"
 
 [checks]
-source_identity = "test \"$(git rev-parse HEAD)\" = f3fb87b6daeaea08dc133350ddd3f39bd5d84d45 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = b5bd065acd6f62f0b712dbdd0c4728e4d8ba2a17 && test \"$(git hash-object GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean)\" = 9761b5dd5d6ada7344031c07386586c72c1d970a && test \"$(git hash-object GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean)\" = 7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+source_identity = "test \"$(git rev-parse HEAD)\" = c8adb8112d75e93ef753d7669d5c2942f74edde3 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 19eeb18c11ada786f5633ae95079722fb9583a46 && test \"$(git hash-object GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean)\" = 9761b5dd5d6ada7344031c07386586c72c1d970a && test \"$(git hash-object GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean)\" = 7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
 toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
 mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
 compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
