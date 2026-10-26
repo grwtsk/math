@@ -243,6 +243,20 @@ theorem mixerKernel_symmetric (β : ℝ) (v : V)
   unfold mixerKernel
   simp only [hdiag, hflip]
 
+/-- The reverse-angle mixer matrix is the conjugate transpose of the
+    forward-angle mixer matrix, with the basis-order convention fixed. -/
+theorem mixerKernel_conj_transpose
+    (β : ℝ) (v : V) (σ τ : Configuration V) :
+    Complex.conj (mixerKernel β v τ σ) = mixerKernel (-β) v σ τ := by
+  rw [mixerKernel_symmetric β v τ σ]
+  by_cases hdiag : σ = τ
+  · by_cases hflip : σ = flipAt v τ
+    · simp [mixerKernel, hdiag, hflip, Real.cos_neg, Real.sin_neg] <;> ring
+    · simp [mixerKernel, hdiag, hflip, Real.cos_neg, Real.sin_neg] <;> ring
+  · by_cases hflip : σ = flipAt v τ
+    · simp [mixerKernel, hdiag, hflip, Real.cos_neg, Real.sin_neg] <;> ring
+    · simp [mixerKernel, hdiag, hflip, Real.cos_neg, Real.sin_neg] <;> ring
+
 /-- Left matrix multiplication by the mixer is the existing Pauli-X
     amplitude update applied to every column of the operator kernel. -/
 theorem kernelComposition_mixer_left
