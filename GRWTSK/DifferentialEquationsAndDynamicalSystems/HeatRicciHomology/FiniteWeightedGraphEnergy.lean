@@ -187,4 +187,58 @@ theorem graphEulerHeat_coefficients_nonnegative
   · intro j
     exact mul_nonneg hτ (hw i j)
 
+/-! ## Genuine finite graph heat maximum principle
+
+The CFL condition turns each Euler coordinate into a nonnegative
+convex combination. The maximum principle is valid for directed
+nonnegative weights; symmetry is needed separately for the Hodge
+pairing and spectral energy identities.
+-/
+
+/-- Every Euler output coordinate is bounded above by any common
+upper bound for the input field. -/
+theorem graphEulerHeat_le_of_forall_le
+    (w : V → V → ℚ) (τ B : ℚ) (u : V → ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hτ : 0 ≤ τ)
+    (hCFL : ∀ i, τ * weightedDegree w i ≤ 1)
+    (hu : ∀ i, u i ≤ B)
+    (i : V) :
+    graphEulerHeat w τ u i ≤ B := by
+  rw [graphEulerHeat_coordinate]
+  have hc := graphEulerHeat_coefficients_nonnegative w τ hw hτ hCFL i
+  have hself := mul_le_mul_of_nonneg_left (hu i) hc.1
+  have hsum :
+      (∑ j : V, (τ * w i j) * u j) ≤
+        ∑ j : V, (τ * w i j) * B := by
+    apply Finset.sum_le_sum
+    intro j hj
+    exact mul_le_mul_of_nonneg_left (hu j) (hc.2 j)
+  have hone := graphEulerHeat_coefficients_sum_one w τ i
+  rw [← Finset.sum_mul] at hsum
+  nlinarith
+
+/-- Every Euler output coordinate is bounded below by any common
+lower bound for the input field. -/
+theorem graphEulerHeat_ge_of_forall_ge
+    (w : V → V → ℚ) (τ B : ℚ) (u : V → ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hτ : 0 ≤ τ)
+    (hCFL : ∀ i, τ * weightedDegree w i ≤ 1)
+    (hu : ∀ i, B ≤ u i)
+    (i : V) :
+    B ≤ graphEulerHeat w τ u i := by
+  rw [graphEulerHeat_coordinate]
+  have hc := graphEulerHeat_coefficients_nonnegative w τ hw hτ hCFL i
+  have hself := mul_le_mul_of_nonneg_left (hu i) hc.1
+  have hsum :
+      (∑ j : V, (τ * w i j) * B) ≤
+        ∑ j : V, (τ * w i j) * u j := by
+    apply Finset.sum_le_sum
+    intro j hj
+    exact mul_le_mul_of_nonneg_left (hu j) (hc.2 j)
+  have hone := graphEulerHeat_coefficients_sum_one w τ i
+  rw [← Finset.sum_mul] at hsum
+  nlinarith
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
