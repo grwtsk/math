@@ -2031,6 +2031,153 @@ theorem resetKernel_positivePath_to_certifiedPath
           q N hN x y hy).mp positive))
     depth source target target_mem path
 
+/-- Provenance and scope of an arithmetic support edge in the finite
+reset-sieve graph. This is a source-review record, not a kernel
+verification receipt or an analytic graph Laplacian claim. -/
+private def arithmeticSupportRecord (q N source target : ℕ) :
+    RelationshipRecord source target where
+  relationship := .conditionalInterface
+  mathematicalMeaning :=
+    "Exact finite radical-coprime reset-kernel transition support"
+  provenance :=
+    [{ kind := .leanDeclaration
+       identifier :=
+         "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.positiveSieveEdge"
+       locator := "GRWTSK/GraphSandwichDiffusion.lean"
+       repository := some "grwtsk/math"
+       commit := none
+       path := some "GRWTSK/GraphSandwichDiffusion.lean"
+       blob := none }]
+  assumptions :=
+    ["finite arithmetic scope Finset.Icc 1 N",
+     "strictly positive target transition iff target is coprime to q",
+     "this inventory certifies arithmetic transition support only"]
+  obligations :=
+    ["compile the exact pinned source",
+     "do not infer spectral mixing or analytic number-theoretic type completeness"]
+  verification := inspectedNotRun
+
+/-- A concrete finite source inventory with certified edges exactly
+the positive transitions of the arithmetic reset kernel. The semantic
+relation records the numerical kernel positivity, not analytic heat
+flow or an unconditional prime-type distribution. Neither the seed
+candidate inventory nor unrelated mathematical conjecture edges are
+promoted by this definition. -/
+noncomputable def certifiedArithmeticInventory
+    (q N : ℕ) (hN : 1 ≤ N) : SourceSearchInventory ℕ where
+  vertices := scope N
+  certified := positiveSieveEdge q N
+  candidate := positiveSieveEdge q N
+  admissible := positiveSieveEdge q N
+  semantic := fun x y =>
+    x ∈ scope N ∧ y ∈ scope N ∧
+      0 < (resetKernel q N hN).transition x y
+  certified_le_candidate := by
+    intro x y h
+    exact h
+  candidate_le_admissible := by
+    intro x y h
+    exact h
+  admissible_scoped := by
+    intro x y h
+    exact ⟨h.1, h.2.1⟩
+  certified_sound := by
+    intro x y h
+    exact ⟨h.1, h.2.1,
+      (resetKernel_transition_pos_iff_coprime
+        q N hN x y h.2.1).mpr h.2.2⟩
+  candidateRecord := by
+    intro x y h
+    exact arithmeticSupportRecord q N x y
+  admissibleRecord := by
+    intro x y h
+    exact arithmeticSupportRecord q N x y
+
+/-- For in-scope endpoints, the certified arithmetic relation agrees
+exactly with strict positivity of the supplied finite transition
+kernel. This is not a statement about the existing unrelated seed
+inventory's empty certified relation. -/
+theorem certifiedArithmeticInventory_edge_iff_positive
+    (q N : ℕ) (hN : 1 ≤ N) (x y : ℕ)
+    (hx : x ∈ scope N) (hy : y ∈ scope N) :
+    (certifiedArithmeticInventory q N hN).certified x y ↔
+      0 < (resetKernel q N hN).transition x y := by
+  exact (resetKernel_transition_pos_iff_coprime
+    q N hN x y hy).symm
+
+/-- Starting from integer 1, after one certified arithmetic graph
+step the reachable vertices are exactly the in-scope coprime
+survivors. Every such target has a direct positive kernel edge
+from 1, while the zero-length vertex 1 also survives. -/
+theorem certifiedArithmeticInventory_search_one_eq_survivors
+    (q N : ℕ) (hN : 1 ≤ N) :
+    (certifiedArithmeticInventory q N hN).certifiedSearch 1 1 =
+      (scope N).filter (fun n => Nat.Coprime n q) := by
+  classical
+  ext n
+  have hOne : (1 : ℕ) ∈ scope N := by
+    change (1 : ℕ) ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+  change n ∈ reachableWithin (scope N) (positiveSieveEdge q N) 1 1 ↔
+    n ∈ (scope N).filter (fun n => Nat.Coprime n q)
+  constructor
+  · intro h
+    rcases (mem_reachableWithin_succ
+      (scope N) (positiveSieveEdge q N) 1 n 0).mp h with
+      hzero | ⟨hn, middle, hmiddle, hedge⟩
+    · obtain ⟨_, rfl⟩ :=
+        (mem_reachableWithin_zero
+          (scope N) (positiveSieveEdge q N) 1 n).mp hzero
+      exact Finset.mem_filter.mpr ⟨hOne, by simp⟩
+    · exact Finset.mem_filter.mpr ⟨hn, hedge.2.2⟩
+  · intro h
+    obtain ⟨hn, hc⟩ := Finset.mem_filter.mp h
+    apply (mem_reachableWithin_succ
+      (scope N) (positiveSieveEdge q N) 1 n 0).mpr
+    exact Or.inr ⟨hn, 1,
+      (mem_reachableWithin_zero
+        (scope N) (positiveSieveEdge q N) 1 1).mpr ⟨hOne, rfl⟩,
+      ⟨hOne, hn, hc⟩⟩
+
+/-- At depth one, certified arithmetic sieve type hits are precisely
+types with an in-scope coprime witness of positive radical weight.
+This exhibits genuine finite arithmetic *coverage*, not a theorem
+that every imaginable prime-multiplicity type occurs. -/
+theorem certifiedArithmeticInventory_oneStep_hit_iff
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) :
+    (certifiedArithmeticInventory q N hN).sieveTypeHit
+      1 typeOf (fun _ n => radicalCoprimeWeight q n) 1 targetType ↔
+      ∃ n ∈ scope N, typeOf n = targetType ∧ Nat.Coprime n q := by
+  unfold SourceSearchInventory.sieveTypeHit
+  rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN]
+  constructor
+  · rintro ⟨n, hn, ht, hw⟩
+    obtain ⟨hscope, hc⟩ := Finset.mem_filter.mp hn
+    exact ⟨n, hscope, ht, hc⟩
+  · rintro ⟨n, hscope, ht, hc⟩
+    exact ⟨n, Finset.mem_filter.mpr ⟨hscope, hc⟩, ht,
+      (radicalCoprimeWeight_pos_iff q n).mpr hc⟩
+
+/-- A positive reset-kernel path is certified by the concrete
+arithmetic inventory, with no extra edge-certificate parameter.
+The semantic content remains strict positivity of the finite
+arithmetic transition, not an external mathematical conjecture. -/
+theorem certifiedArithmeticInventory_positivePath
+    (q N : ℕ) (hN : 1 ≤ N)
+    (depth : ℕ) (source target : ℕ)
+    (target_mem : target ∈ scope N)
+    (path : (resetKernel q N hN).positivePath depth source target) :
+    BoundedPath (certifiedArithmeticInventory q N hN).certified
+      depth source target := by
+  apply resetKernel_positivePath_to_certifiedPath
+    q N hN (certifiedArithmeticInventory q N hN)
+    (by
+      intro x hx y hy hc
+      exact ⟨hx, hy, hc⟩)
+    depth source target target_mem path
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
