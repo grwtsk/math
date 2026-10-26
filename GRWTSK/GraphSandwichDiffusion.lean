@@ -2102,8 +2102,13 @@ theorem certifiedArithmeticInventory_edge_iff_positive
     (hx : x ∈ scope N) (hy : y ∈ scope N) :
     (certifiedArithmeticInventory q N hN).certified x y ↔
       0 < (resetKernel q N hN).transition x y := by
-  exact (resetKernel_transition_pos_iff_coprime
-    q N hN x y hy).symm
+  constructor
+  · intro edge
+    exact (resetKernel_transition_pos_iff_coprime
+      q N hN x y hy).mpr edge.2.2
+  · intro positive
+    exact ⟨hx, hy, (resetKernel_transition_pos_iff_coprime
+      q N hN x y hy).mp positive⟩
 
 /-- Starting from integer 1, after one certified arithmetic graph
 step the reachable vertices are exactly the in-scope coprime
