@@ -128,6 +128,43 @@ theorem PositivePath.toAllowed (S : Sampler V) {i j : V} {n : ℕ}
   | step hprob tail ih =>
       exact AllowedPath.step (S.allowed_of_probability_pos _ _ hprob) ih
 
+/-!
+## Exact Gibbs support-to-admissibility comparison
+
+The Gibbs weights are real, not rational. These theorems identify their
+positive support with the actual declared admissible edges and paths,
+without introducing a rational coercion or a new artificial edge.
+-/
+
+/-- An edge has positive Gibbs probability exactly when it is allowed. -/
+theorem probability_pos_iff_allowed (S : Sampler V) (source target : V) :
+    0 < S.probability source target ↔ S.allowed source target = true := by
+  constructor
+  · exact S.allowed_of_probability_pos source target
+  · exact S.probability_pos_of_allowed source target
+
+/-- Every allowed finite path has positive Gibbs probability along each
+chosen edge. This is the converse to `PositivePath.toAllowed`. -/
+theorem AllowedPath.toPositive (S : Sampler V)
+    {source target : V} {length : ℕ}
+    (path : AllowedPath S source target length) :
+    PositivePath S source target length := by
+  induction path with
+  | refl source =>
+      exact PositivePath.refl source
+  | step hedge tail ih =>
+      exact PositivePath.step (S.probability_pos_of_allowed _ _ hedge) ih
+
+/-- Positive-probability and admissible finite paths have identical
+support at every fixed length. -/
+theorem positivePath_iff_allowedPath (S : Sampler V)
+    (source target : V) (length : ℕ) :
+    PositivePath S source target length ↔
+      AllowedPath S source target length := by
+  constructor
+  · exact S.PositivePath.toAllowed
+  · exact S.AllowedPath.toPositive
+
 end Sampler
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteAdmissibleSampler
