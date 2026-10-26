@@ -1917,4 +1917,117 @@ theorem jointTwoThreeValuationProgression_mem_scope
   exact Finset.mem_Icc.mpr
     ⟨Nat.succ_le_iff.mpr (jointTwoThreeValuationProgression_pos a b j), hupper⟩
 
+/-- Exactly joint-labelled coprime survivors occupy at least
+floor(N/(30*2^a*3^b)) positions in the finite arithmetic scope.
+The count is proved by an injective progression and uses no
+independence assumption between the two valuation coordinates. -/
+theorem jointTwoThreeValuation_survivors_card_ge_floor
+    (a b N : ℕ) :
+    N / jointTwoThreeValuationPeriod a b ≤
+      (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card := by
+  classical
+  have hsub :
+      ((Finset.range (N / jointTwoThreeValuationPeriod a b)).image
+        (jointTwoThreeValuationProgression a b)) ⊆
+          bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b) := by
+    intro target ht
+    obtain ⟨j, hj, rfl⟩ := Finset.mem_image.mp ht
+    have hscope :
+        jointTwoThreeValuationProgression a b j ∈ scope N :=
+      jointTwoThreeValuationProgression_mem_scope a b N j
+        (Finset.mem_range.mp hj)
+    change jointTwoThreeValuationProgression a b j ∈
+      (scope N).filter (fun n =>
+        jointTwoThreeValuationType n = (a, b) ∧ Nat.Coprime n 5)
+    exact Finset.mem_filter.mpr
+      ⟨hscope, jointTwoThreeValuationProgression_type a b j,
+        jointTwoThreeValuationProgression_coprime_five a b j⟩
+  calc
+    N / jointTwoThreeValuationPeriod a b =
+        (Finset.range (N / jointTwoThreeValuationPeriod a b)).card := by simp
+    _ = ((Finset.range (N / jointTwoThreeValuationPeriod a b)).image
+          (jointTwoThreeValuationProgression a b)).card :=
+      (Finset.card_image_of_injective _
+        (jointTwoThreeValuationProgression_injective a b)).symm
+    _ ≤ (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card :=
+      Finset.card_le_card hsub
+
+/-- Under cutoff N≥jointPeriod(a,b), the finite joint-type
+survivors have count at least N/(2*jointPeriod).
+This is arithmetic progression counting, not a product of separate
+one-coordinate mass estimates. -/
+theorem jointTwoThreeValuation_survivor_density
+    (a b N : ℕ) (hcutoff : jointTwoThreeValuationPeriod a b ≤ N) :
+    ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) *
+        (N : ℝ) ≤
+      ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) := by
+  let d := jointTwoThreeValuationPeriod a b
+  have hdpos : 0 < d := jointTwoThreeValuationPeriod_pos a b
+  have hq : 1 ≤ N / d := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hdle : d ≤ d * (N / d) := by
+    calc
+      d = d * 1 := by simp
+      _ ≤ d * (N / d) := Nat.mul_le_mul_left d hq
+  have hmodlt : N % d < d := Nat.mod_lt N hdpos
+  have hmod : N % d + d * (N / d) = N := Nat.mod_add_div N d
+  have hfloor : N ≤ 2 * (d * (N / d)) := by omega
+  have hcard : N / d ≤
+      (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card :=
+    jointTwoThreeValuation_survivors_card_ge_floor a b N
+  have hbound : N ≤
+      (2 * d) *
+        (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card := by
+    calc
+      N ≤ 2 * (d * (N / d)) := hfloor
+      _ = (2 * d) * (N / d) := by ring
+      _ ≤ (2 * d) *
+          (bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card :=
+        Nat.mul_le_mul_left _ hcard
+  have hreal : (N : ℝ) ≤
+      (2 : ℝ) * (d : ℝ) *
+        ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) := by
+    exact_mod_cast hbound
+  have hden : (0 : ℝ) < (2 : ℝ) * (d : ℝ) := by positivity
+  have hscaled : (N : ℝ) / ((2 : ℝ) * (d : ℝ)) ≤
+      ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) := by
+    apply (div_le_iff₀ hden).mpr
+    nlinarith [hreal]
+  convert hscaled using 1 <;> ring
+
+/-- Pointwise joint-type steering under one fixed modulus-five
+buffered arithmetic Markov kernel. For any target pair (a,b),
+N≥30*2^a*3^b and any positive Markov time, its type-fiber mass
+is at least 1/(8*jointPeriod). There is no probabilistic
+independence hypothesis between the two valuation coordinates. -/
+theorem jointTwoThreeValuation_buffered_mass_ge_fixed_rate
+    (a b N : ℕ) (hN : 1 ≤ N)
+    (hcutoff : jointTwoThreeValuationPeriod a b ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) :
+    (1 : ℝ) / (8 * (jointTwoThreeValuationPeriod a b : ℝ)) ≤
+      (bufferedDiagonalKernel 5 N hN).typeMass
+        initial jointTwoThreeValuationType (depth + 1) (a, b) := by
+  have hcount :
+      ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) *
+          (N : ℝ) ≤
+        ((bufferedTypeSurvivors 5 N jointTwoThreeValuationType (a, b)).card : ℝ) :=
+    jointTwoThreeValuation_survivor_density a b N hcutoff
+  have hmass :=
+    bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+      5 N hN initial initial_nonneg initial_mass_one
+      jointTwoThreeValuationType (a, b)
+      ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) depth hcount
+  calc
+    (1 : ℝ) / (8 * (jointTwoThreeValuationPeriod a b : ℝ)) =
+        ((1 : ℝ) / (2 * (jointTwoThreeValuationPeriod a b : ℝ))) / 4 := by
+      rw [div_div_eq_div_mul]
+      congr 1
+      ring
+    _ ≤ (bufferedDiagonalKernel 5 N hN).typeMass
+          initial jointTwoThreeValuationType (depth + 1) (a, b) := hmass
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
