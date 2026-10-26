@@ -301,6 +301,119 @@ theorem real_type_complete_iff_supported_allowed_edges
     exact (lt_irrefl (0 : ℝ)) hpos
   · exact real_type_complete_of_supported_allowed_edges S heat nonnegative typeOf
 
+/-!
+## Finite-length admissible reachability for the real Gibbs kernel
+
+Unlike one-step support, a positive initial state may reach a type only
+after multiple admissible edges. These are exact finite-time statements.
+They neither introduce artificial transitions nor assert a uniform-in-time
+lower bound on mass.
+-/
+
+/-- Real Gibbs diffusion preserves nonnegative heat. -/
+theorem realStep_nonneg (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v) :
+    ∀ target, 0 ≤ S.realStep heat target := by
+  intro target
+  unfold realStep
+  exact Finset.sum_nonneg (fun source _ =>
+    mul_nonneg (S.probability_nonneg source target) (nonnegative source))
+
+/-- The real Gibbs heat after a finite number of transitions.
+The recursion exposes the first transition, matching `AllowedPath.step`. -/
+def realEvolve (S : Sampler V) (heat : V → ℝ) : ℕ → V → ℝ
+  | 0 => heat
+  | n + 1 => S.realEvolve (S.realStep heat) n
+
+/-- Nonnegative real heat remains nonnegative after any finite path length. -/
+theorem realEvolve_nonneg (S : Sampler V)
+    (heat : V → ℝ) (nonnegative : ∀ v, 0 ≤ heat v) :
+    ∀ n v, 0 ≤ S.realEvolve heat n v := by
+  intro n
+  induction n generalizing heat with
+  | zero =>
+      intro v
+      simpa [realEvolve] using nonnegative v
+  | succ n ih =>
+      intro v
+      change 0 ≤ S.realEvolve (S.realStep heat) n v
+      exact ih (S.realStep heat) (S.realStep_nonneg heat nonnegative) v
+
+/-- An allowed edge transfers strictly positive source heat to its target. -/
+theorem realStep_pos_of_allowed (S : Sampler V)
+    (heat : V → ℝ) (nonnegative : ∀ v, 0 ≤ heat v)
+    (source target : V)
+    (source_pos : 0 < heat source)
+    (allowed : S.allowed source target = true) :
+    0 < S.realStep heat target := by
+  have hbound :
+      S.probability source target * heat source ≤ S.realStep heat target := by
+    unfold realStep
+    exact Finset.single_le_sum
+      (fun v _ => mul_nonneg (S.probability_nonneg v target) (nonnegative v))
+      (Finset.mem_univ source)
+  exact lt_of_lt_of_le
+    (mul_pos (S.probability_pos_of_allowed source target allowed) source_pos)
+    hbound
+
+/-- Any admissible path carries positive initial source heat to its
+destination after exactly its length, without a mixing hypothesis. -/
+theorem realEvolve_pos_of_allowedPath (S : Sampler V)
+    {source target : V} {length : ℕ}
+    (path : AllowedPath S source target length) :
+    ∀ (heat : V → ℝ), (∀ v, 0 ≤ heat v) →
+      0 < heat source → 0 < S.realEvolve heat length target := by
+  induction path with
+  | refl i =>
+      intro heat nonnegative source_pos
+      simpa [realEvolve] using source_pos
+  | @step i j k n hij tail ih =>
+      intro heat nonnegative source_pos
+      change 0 < S.realEvolve (S.realStep heat) n k
+      exact ih (S.realStep heat)
+        (S.realStep_nonneg heat nonnegative)
+        (S.realStep_pos_of_allowed heat nonnegative i j source_pos hij)
+
+/-- One strictly positive vertex gives positive aggregate mass to its type. -/
+theorem realTypeMass_pos_of_vertex
+    (typeOf : V → Kind) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (target : V) (positive : 0 < heat target) :
+    0 < realTypeMass typeOf heat (typeOf target) := by
+  have hbound :
+      heat target ≤ realTypeMass typeOf heat (typeOf target) := by
+    have hsingle :
+        (if typeOf target = typeOf target then heat target else 0) ≤
+          ∑ v, if typeOf v = typeOf target then heat v else 0 := by
+      exact Finset.single_le_sum
+        (fun v _ => by
+          split_ifs
+          · exact nonnegative v
+          · exact le_refl 0)
+        (Finset.mem_univ target)
+    simpa [realTypeMass] using hsingle
+  exact lt_of_lt_of_le positive hbound
+
+/-- Type coverage at a fixed finite horizon follows from actual allowed
+paths of that length from positive-heat sources. No rational kernel or
+artificial edge is introduced. -/
+theorem real_type_complete_of_allowed_paths
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (length : ℕ)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target length) :
+    ∀ kind, 0 < realTypeMass typeOf (S.realEvolve heat length) kind := by
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path⟩ := reach kind
+  have hpos := S.realEvolve_pos_of_allowedPath path heat nonnegative hsource
+  have hmass := realTypeMass_pos_of_vertex typeOf
+    (S.realEvolve heat length)
+    (fun v => S.realEvolve_nonneg heat nonnegative length v)
+    target hpos
+  simpa [hkind] using hmass
+
 end TypeHeat
 
 end Sampler
