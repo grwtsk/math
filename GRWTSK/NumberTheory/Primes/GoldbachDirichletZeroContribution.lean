@@ -953,7 +953,7 @@ theorem norm_finitePerronEndpointKernel_sub_half_eq
 
 /-- Pinned Mathlib's lower bound x ≤ tan(x), evaluated at
 arctan(x), yields arctan(x) ≤ x for all nonnegative x. -/
-private theorem arctan_le_self_of_nonneg
+theorem arctan_le_self_of_nonneg
     (x : ℝ) (hx : 0 ≤ x) : Real.arctan x ≤ x := by
   have ht :=
     Real.le_tan (Real.arctan_nonneg.mpr hx)
