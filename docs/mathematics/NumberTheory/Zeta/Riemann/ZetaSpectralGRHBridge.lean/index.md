@@ -27,3 +27,7 @@ Lexical command heads are source observations, not a Lean parse or theorem accep
 | 6 | `theorem` | [zetaCriticalPlacement_transports_and_splits_ordinates](declarations/zetacriticalplacement-transports-and-splits-ordinates--7900f63b4706e805e2cebfed.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
 | 7 | `theorem` | [zetaCriticalPlacement_transports_with_rightContext_certificate](declarations/zetacriticalplacement-transports-with-rightcontext-certificate--b2cbe04b3f8f1d4eb1c2c282.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
 | 8 | `theorem` | [zetaCriticalPlacement_transports_with_all_capacityCertificates](declarations/zetacriticalplacement-transports-with-all-capacitycertificates--6de32a785fbf35d7a273730d.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+This module shares source blob `4626f58fe293d37943a4ec1900e64f84e29598b0` with the cross-branch replay pinned at Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae`; the target declarations selected from this module remain `NOT_RUN`. [Full roster and terminal evidence](../../../../verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->

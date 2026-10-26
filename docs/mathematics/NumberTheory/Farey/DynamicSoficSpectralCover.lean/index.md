@@ -46,3 +46,7 @@ Lexical command heads are source observations, not a Lean parse or theorem accep
 | 25 | `structure` | [DynamicSoficSpectralSystem](declarations/dynamicsoficspectralsystem--bdd5af2a0e69f0e17f4c1856.md) | 340 | `BLOCKED_NATIVE_ADMISSION` |
 | 26 | `theorem` | [DynamicSoficSpectralSystem.trace_factorsThrough_stage](declarations/dynamicsoficspectralsystem-trace-factorsthrough-stage--3ca77bc69356fa3a3da64489.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
 | 27 | `theorem` | [DynamicSoficSpectralSystem.no_trace_collision](declarations/dynamicsoficspectralsystem-no-trace-collision--29cbb60141820457732a9890.md) | 369 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+This module shares source blob `5881a2f2caf1aa0b1ec9267376cecb5895327afe` with the cross-branch replay pinned at Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae`; the target declarations selected from this module remain `NOT_RUN`. [Full roster and terminal evidence](../../../verification-updates/declaration107-lossless-restart-20261026.md).
+<!-- END VERIFICATION AMENDMENT -->

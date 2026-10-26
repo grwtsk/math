@@ -38,3 +38,7 @@
 | [ReturnSpectralChannel.lean](ReturnSpectralChannel.lean/index.md) | module |
 | [TurnwiseScalarObstruction.lean](TurnwiseScalarObstruction.lean/index.md) | module |
 | [WeightedReturnBalance.lean](WeightedReturnBalance.lean/index.md) | module |
+
+<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
+[Terminal cross-branch verification update](verification-updates.md): this batch stopped before declaration audits; all 107 targets remain `NOT_RUN`, all 10 exact type checks remain `NOT_RUN`, and S₃ is unavailable.
+<!-- END VERIFICATION AMENDMENT -->
