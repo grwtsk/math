@@ -323,4 +323,51 @@ theorem pairAverage_heat_collision (c t : ℚ) :
       pairAverage (heatStep c t 2) (heatStep c t 0) := by
   exact pairAverage_comm _ _
 
+/-! ## Exact averaging kernel and suppressed antisymmetric mode
+
+The mean loses exactly the antisymmetric component of a pair.
+This is a finite algebraic suppression model only: no Rank32
+theorem or RS interpolation result is imported or asserted.
+-/
+
+/-- The pair mean vanishes exactly when the two entries sum to zero. -/
+theorem pairAverage_eq_zero_iff (q r : ℚ) :
+    pairAverage q r = 0 ↔ q + r = 0 := by
+  unfold pairAverage
+  constructor
+  · intro h
+    have htwo : (2 : ℚ) ≠ 0 := by norm_num
+    exact (div_eq_zero_iff).mp h |>.resolve_right htwo
+  · intro h
+    rw [h]
+    norm_num
+
+/-- Two ordered pairs have the same mean exactly when their
+coordinate sums agree. -/
+theorem pairAverage_eq_iff_sum_eq (q r s t : ℚ) :
+    pairAverage q r = pairAverage s t ↔ q + r = s + t := by
+  unfold pairAverage
+  constructor
+  · intro h
+    have htwo : (2 : ℚ) ≠ 0 := by norm_num
+    exact (div_left_inj' htwo).mp h
+  · intro h
+    rw [h]
+
+/-- The antisymmetric mode is suppressed exactly by averaging. -/
+theorem pairAverage_antisymmetric (q : ℚ) :
+    pairAverage q (-q) = 0 := by
+  simp [pairAverage]
+
+/-- The antisymmetric gap survives the strictly subterminal heat
+step, although the corresponding averaged mode remains zero when
+the reference is zero. -/
+theorem antisymmetric_gap_survives_heat
+    (q t : ℚ) (hq : q ≠ 0) (ht : t < 1) :
+    heatStep 0 t q ≠ heatStep 0 t (-q) := by
+  apply no_new_collision 0 t q (-q) ht
+  intro h
+  have : q = 0 := by linarith
+  exact hq this
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
