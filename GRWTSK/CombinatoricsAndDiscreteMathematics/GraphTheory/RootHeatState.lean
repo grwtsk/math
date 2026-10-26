@@ -309,6 +309,86 @@ theorem eventually_type_complete_of_uniform_minorization
     exact mass_pos
   · exact minor
 
+/-!
+### Type-representative minorization
+
+This is weaker than uniform positivity of every matrix entry: only one
+representative destination per declared type needs a common positive
+incoming bound from every source.
+-/
+
+/-- A designated target in each type receives at least delta from each
+source. Other targets may have zero incoming transition weights. -/
+def RepresentativeMinorization
+    (kernel : HeatKernel Root) (typeOf : Root → Kind) (delta : ℚ) : Prop :=
+  ∀ kind, ∃ target, typeOf target = kind ∧
+    ∀ source, delta ≤ kernel.transition target source
+
+/-- The lower bound at a single target only requires that target's row,
+not the entire kernel, to be minorized. -/
+theorem step_lower_of_target_minorization
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (delta : ℚ) (target : Root)
+    (minor : ∀ source, delta ≤ kernel.transition target source) :
+    delta * (∑ source, heat source) ≤ kernel.step heat target := by
+  unfold HeatKernel.step
+  rw [Finset.mul_sum]
+  apply Finset.sum_le_sum
+  intro source _
+  exact mul_le_mul_of_nonneg_right (minor source) (nonnegative source)
+
+/-- A representative destination per type is enough for positive
+type mass after one step. No source-to-type decoding is inferred. -/
+theorem type_complete_of_representative_minorization
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind)
+    (delta : ℚ) (delta_pos : 0 < delta)
+    (mass_pos : 0 < ∑ root, heat root)
+    (minor : RepresentativeMinorization kernel typeOf delta) :
+    TypeCompleteAt typeOf (kernel.step heat) := by
+  intro kind
+  obtain ⟨target, htarget, hminor⟩ := minor kind
+  have hpoint := step_lower_of_target_minorization kernel heat
+    nonnegative delta target hminor
+  have hpositive : 0 < kernel.step heat target :=
+    lt_of_lt_of_le (mul_pos delta_pos mass_pos) hpoint
+  have hsum : kernel.step heat target ≤
+      aggregate typeOf (kernel.step heat) (typeOf target) := by
+    have hsingle :
+        (if typeOf target = typeOf target then kernel.step heat target else 0) ≤
+          ∑ root, if typeOf root = typeOf target then kernel.step heat root else 0 := by
+      exact Finset.single_le_sum
+        (fun root _ => by
+          split_ifs
+          · exact kernel.step_nonneg heat nonnegative root
+          · exact le_refl 0)
+        (Finset.mem_univ target)
+    simpa [aggregate] using hsingle
+  rw [htarget] at hsum
+  exact lt_of_lt_of_le hpositive hsum
+
+/-- A fixed representative minorization gives coverage after every
+positive time, by conservation of total heat. -/
+theorem eventually_type_complete_of_representative_minorization
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind)
+    (delta : ℚ) (delta_pos : 0 < delta)
+    (mass_pos : 0 < ∑ root, initial root)
+    (minor : RepresentativeMinorization kernel typeOf delta)
+    (time : Nat) :
+    TypeCompleteAt typeOf (kernel.evolve initial (time + 1)) := by
+  change TypeCompleteAt typeOf (kernel.step (kernel.evolve initial time))
+  apply type_complete_of_representative_minorization kernel
+    (kernel.evolve initial time)
+    (kernel.evolve_nonneg initial nonnegative time)
+    typeOf delta delta_pos
+  · rw [kernel.evolve_mass initial time]
+    exact mass_pos
+  · exact minor
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
