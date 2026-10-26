@@ -730,6 +730,40 @@ theorem not_type_complete_of_no_supported_edge
   rw [hzero] at hpositive
   exact (lt_irrefl (0 : ℚ)) hpositive
 
+/-!
+### Exact one-step type-support equivalence
+
+This closes the finite support boundary: nonnegative heat and a
+nonnegative stochastic kernel give positive type mass exactly when a
+positive-heat source has a positive edge into each declared type.
+-/
+
+/-- Complete type support after one step is equivalent to the existence
+of a positive weighted incoming edge for each declared type. -/
+theorem type_complete_iff_supported_type_reachability
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) :
+    TypeCompleteAt typeOf (kernel.step heat) ↔
+      SupportedTypeReachability kernel heat typeOf := by
+  constructor
+  · intro complete kind
+    by_contra noReach
+    have noEdge : ∀ source target, typeOf target = kind →
+        0 < heat source → kernel.transition target source = 0 := by
+      intro source target hkind hpositive
+      by_contra hnonzero
+      have hedgeNonneg := kernel.nonnegative target source
+      have hedgePositive : 0 < kernel.transition target source :=
+        lt_of_le_of_ne hedgeNonneg (Ne.symm hnonzero)
+      apply noReach
+      exact ⟨source, target, hkind, hpositive, hedgePositive⟩
+    exact (not_type_complete_of_no_supported_edge
+      kernel heat nonnegative typeOf kind noEdge) complete
+  · intro reachable
+    exact type_complete_of_supported_type_reachability
+      kernel heat nonnegative typeOf reachable
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
