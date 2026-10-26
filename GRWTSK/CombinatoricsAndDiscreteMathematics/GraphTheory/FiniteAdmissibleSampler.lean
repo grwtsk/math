@@ -457,6 +457,53 @@ theorem realEvolve_total_mass_pos (S : Sampler V) (heat : V → ℝ)
   rw [S.realEvolve_mass heat n]
   exact mass_pos
 
+/-!
+## Missing-type obstruction at every finite horizon
+
+Finite diffusion can redistribute heat among existing vertices but cannot
+manufacture a vertex carrying an absent type label. This is independent
+of the Gibbs weights, admissible paths, and initial heat distribution.
+-/
+
+/-- If no vertex carries a selected type, its real aggregate mass is zero
+for any heat function. -/
+theorem realTypeMass_eq_zero_of_absent_type
+    (typeOf : V → Kind) (heat : V → ℝ) (kind : Kind)
+    (absent : ∀ v, typeOf v ≠ kind) :
+    realTypeMass typeOf heat kind = 0 := by
+  simp [realTypeMass, absent]
+
+/-- Complete positive real type mass forces every declared type to have
+an actual representative in the finite vertex carrier. -/
+theorem surjective_of_real_type_complete
+    (typeOf : V → Kind) (heat : V → ℝ)
+    (complete : ∀ kind, 0 < realTypeMass typeOf heat kind) :
+    Function.Surjective typeOf := by
+  intro kind
+  by_contra notSurjective
+  have absent : ∀ v, typeOf v ≠ kind := by
+    intro v hv
+    exact notSurjective ⟨v, hv⟩
+  have hzero := realTypeMass_eq_zero_of_absent_type typeOf heat kind absent
+  have hpos := complete kind
+  rw [hzero] at hpos
+  exact (lt_irrefl (0 : ℝ)) hpos
+
+/-- A type missing from the finite carrier remains absent at every finite
+Gibbs diffusion time. No Markov mixing condition can remove this
+carrier-level obstruction. -/
+theorem not_real_type_complete_of_absent_type
+    (S : Sampler V) (heat : V → ℝ)
+    (typeOf : V → Kind) (kind : Kind)
+    (absent : ∀ v, typeOf v ≠ kind) (n : ℕ) :
+    ¬ (∀ label, 0 < realTypeMass typeOf (S.realEvolve heat n) label) := by
+  intro complete
+  have hzero := realTypeMass_eq_zero_of_absent_type
+    typeOf (S.realEvolve heat n) kind absent
+  have hpos := complete kind
+  rw [hzero] at hpos
+  exact (lt_irrefl (0 : ℝ)) hpos
+
 end TypeHeat
 
 end Sampler
