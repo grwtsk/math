@@ -57,44 +57,65 @@ theorem normedSpace_exp_smul_idempotent
     NormedSpace.exp (scalar • projection) =
       1 + (Real.exp scalar - 1) • projection := by
   rw [NormedSpace.exp_eq_tsum ℝ]
-  change
-    (∑' n : ℕ,
-      ((n.factorial⁻¹ : ℝ) • (scalar • projection) ^ n)) =
-        1 + (Real.exp scalar - 1) • projection
-  rw [(NormedSpace.expSeries_summable'
-    (𝕂 := ℝ) (scalar • projection)).tsum_eq_zero_add]
-  simp only [Nat.factorial_zero, Nat.cast_one, inv_one, pow_zero, one_smul]
-  congr 1
-  have fullScalarSeries :
+  have operatorSeriesSummable :
+      Summable
+        (fun n : ℕ =>
+          (n.factorial⁻¹ : ℝ) •
+            (scalar • projection) ^ n) :=
+    NormedSpace.expSeries_summable'
+      (𝕂 := ℝ) (scalar • projection)
+  rw [operatorSeriesSummable.tsum_eq_zero_add]
+  simp only [
+    Nat.factorial_zero,
+    Nat.cast_one,
+    inv_one,
+    pow_zero,
+    one_smul
+  ]
+  have scalarSeriesSummable :
       Summable
         (fun n : ℕ =>
           (n.factorial⁻¹ : ℝ) * scalar ^ n) := by
     simpa [smul_eq_mul] using
       (NormedSpace.expSeries_summable' (𝕂 := ℝ) scalar)
-  have scalarTail :
-      (∑' n : ℕ,
-        (((n + 1).factorial⁻¹ : ℝ) * scalar ^ (n + 1))) =
-          Real.exp scalar - 1 := by
+  have scalarExpansion :
+      Real.exp scalar =
+        ∑' n : ℕ,
+          (n.factorial⁻¹ : ℝ) * scalar ^ n := by
     rw [Real.exp_eq_exp_ℝ, NormedSpace.exp_eq_tsum ℝ]
-    change
-      (∑' n : ℕ,
-        (((n + 1).factorial⁻¹ : ℝ) * scalar ^ (n + 1))) =
-          (∑' n : ℕ,
-            ((n.factorial⁻¹ : ℝ) * scalar ^ n)) - 1
-    rw [fullScalarSeries.tsum_eq_zero_add]
-    simp
-  have tailSummable :
+    apply tsum_congr
+    intro n
+    simp [smul_eq_mul]
+  have scalarTailSummable :
       Summable
         (fun n : ℕ =>
-          ((n + 1).factorial⁻¹ : ℝ) * scalar ^ (n + 1)) := by
-    simpa [mul_comm] using
-      fullScalarSeries.comp_injective
-        (fun _ _ equality => Nat.succ.inj equality)
-  rw [← scalarTail, ← tailSummable.tsum_smul_const projection]
-  apply tsum_congr
-  intro n
-  rw [smul_pow, idempotent.pow_succ_eq]
-  simp [smul_smul, mul_comm]
+          ((n + 1).factorial⁻¹ : ℝ) *
+            scalar ^ (n + 1)) := by
+    exact (summable_nat_add_iff 1).2 scalarSeriesSummable
+  have scalarTailSum :
+      (∑' n : ℕ,
+        ((n + 1).factorial⁻¹ : ℝ) *
+          scalar ^ (n + 1)) =
+        Real.exp scalar - 1 := by
+    rw [scalarExpansion, scalarSeriesSummable.tsum_eq_zero_add]
+    simp
+  calc
+    1 +
+        (∑' n : ℕ,
+          ((n + 1).factorial⁻¹ : ℝ) •
+            (scalar • projection) ^ (n + 1)) =
+      1 +
+        (∑' n : ℕ,
+          ((n + 1).factorial⁻¹ : ℝ) *
+            scalar ^ (n + 1)) • projection := by
+          congr 1
+          rw [← scalarTailSummable.tsum_smul_const projection]
+          apply tsum_congr
+          intro n
+          rw [smul_pow, idempotent.pow_succ_eq]
+          simp [smul_smul, mul_comm]
+    _ = 1 + (Real.exp scalar - 1) • projection := by
+          rw [scalarTailSum]
 
 /-! ## Idempotence of the finite normalized Laplacian -/
 
