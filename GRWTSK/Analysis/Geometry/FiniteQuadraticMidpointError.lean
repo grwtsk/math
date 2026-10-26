@@ -64,8 +64,7 @@ theorem decoder_error_control_norm_le (e : Controls) :
         exact add_le_add_right hfirst _
     _ = (1 / 2 : ℝ) * ‖e 0‖ + 2 * ‖e 1‖ +
           (1 / 2 : ℝ) * ‖e 2‖ := by
-        simp [norm_mul]
-        ring
+        simp [norm_mul] <;> ring
 
 /-- Supplied per-observation absolute error budgets imply the exact
 coordinate-specific decoder budget, not a guessed small-error premise. -/
@@ -87,5 +86,17 @@ theorem decoder_error_control_uniform (e : Controls) (ε : ℝ)
     ‖(decoderMatrix *ᵥ e) 1‖ ≤ 3 * ε := by
   have hb := decoder_error_control_budget e (fun _ => ε) hbudget
   nlinarith
+
+/-- The factor three is attained: the two endpoint errors oppose the
+middle error, so cancellation cannot be presumed from the contact geometry. -/
+theorem decoder_uniform_factor_three_attained :
+    ∃ e : Controls,
+      (∀ i, ‖e i‖ ≤ (1 : ℝ)) ∧
+        ‖(decoderMatrix *ᵥ e) 1‖ = 3 := by
+  refine ⟨(fun i => if i = 1 then (1 : ℝ) else -1), ?_, ?_⟩
+  · intro i
+    fin_cases i <;> norm_num
+  · rw [decoder_error_control]
+    norm_num
 
 end GRWTSK.Analysis.Geometry.FiniteQuadraticMidpointDecoder
