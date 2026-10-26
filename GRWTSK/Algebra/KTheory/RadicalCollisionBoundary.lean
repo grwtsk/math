@@ -1500,4 +1500,206 @@ theorem threeAdicType_buffered_mass_ge_fixed_rate
     _ ≤ (bufferedDiagonalKernel 2 N hN).typeMass
           initial (primeValuationType 3) (depth + 1) k := hmass
 
+/-- Pointwise eventual positive exact 3-adic type mass under the
+separate modulus-two buffered kernel. Inputs must be nonnegative
+and normalized on the finite positive scope. -/
+theorem threeAdicType_buffered_eventually_pos (k : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel 2 N hN).typeMass
+            initial (primeValuationType 3) (depth + 1) k := by
+  refine ⟨threeAdicTypePeriod k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : (0 : ℝ) < (threeAdicTypePeriod k : ℝ) := by
+    exact_mod_cast (threeAdicTypePeriod_pos k)
+  have hr : (0 : ℝ) <
+      (1 : ℝ) / (8 * (threeAdicTypePeriod k : ℝ)) := by positivity
+  exact hr.trans_le
+    (threeAdicType_buffered_mass_ge_fixed_rate
+      k N hN hcutoff initial hnonneg hmass depth)
+
+/-- Every fixed 3-adic valuation type eventually has a certified
+graph hit in the modulus-TWO arithmetic inventory, at graph depth
+one and after every positive Markov iteration. -/
+theorem threeAdicType_buffered_eventually_certified_hit (k : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          (certifiedArithmeticInventory 2 N hN).sieveTypeHit
+            1 (primeValuationType 3)
+            (fun _ n => (bufferedDiagonalKernel 2 N hN).evolve
+              initial (depth + 1) n) 1 k := by
+  refine ⟨threeAdicTypePeriod k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : 0 < threeAdicTypePeriod k :=
+    threeAdicTypePeriod_pos k
+  have hquot : 1 ≤ N / threeAdicTypePeriod k := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hscope : threeAdicTypeProgression k 0 ∈ scope N :=
+    threeAdicTypeProgression_mem_scope k N 0 (by omega)
+  have hcoprime : Nat.Coprime (threeAdicTypeProgression k 0) 2 :=
+    threeAdicTypeProgression_coprime_two k 0
+  have hreach :
+      threeAdicTypeProgression k 0 ∈
+        (certifiedArithmeticInventory 2 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 2 N hN]
+    exact Finset.mem_filter.mpr ⟨hscope, hcoprime⟩
+  have hrate :
+      (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ :=
+    bufferedDiagonalKernel_rate_pos N hN
+  have hpositive :
+      0 < (bufferedDiagonalKernel 2 N hN).evolve initial
+        (depth + 1) (threeAdicTypeProgression k 0) :=
+    hrate.trans_le
+      (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        2 N hN initial hnonneg hmass depth
+        (threeAdicTypeProgression k 0) hscope hcoprime)
+  exact ⟨threeAdicTypeProgression k 0, hreach,
+    threeAdicTypeProgression_factorization_three k 0, hpositive⟩
+
+/-- The modulus-three coprime sieve cannot contain integers of
+strictly positive exact three-adic valuation, regardless of cutoff
+or diffusion weights. This explains the need for a second modulus. -/
+theorem positive_threeAdic_type_absent_from_modulus_three
+    (k N : ℕ) (hk : 0 < k) :
+    ¬ ∃ n ∈ scope N,
+        primeValuationType 3 n = k ∧ Nat.Coprime n 3 := by
+  rintro ⟨n, hn, heq, hc⟩
+  have hp3 : Nat.Prime 3 := by norm_num
+  have hnotdiv : ¬ (3 : ℕ) ∣ n :=
+    (Nat.Prime.coprime_iff_not_dvd hp3).mp hc.symm
+  have hzero : (n.factorization 3) = 0 :=
+    Nat.factorization_eq_zero_of_not_dvd hnotdiv
+  dsimp [primeValuationType] at heq
+  omega
+
+/-! ## A two-modulus selection interface for all prime valuation types
+
+The sieve modulus is 2 only for prime p=3, and 3 for every other
+prime. These are SEPARATE buffered Markov kernels and separate
+certified arithmetic inventories, selected by a case split.
+Nothing asserts their operators, stationary distributions, or
+K-theoretic classes are equal or transported between moduli.
+Each fixed prime p and exponent k obtains its own threshold/rate.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- Choose an arithmetic modulus coprime to the valuation prime. -/
+def primeValuationSieveModulus (p : ℕ) : ℕ :=
+  if p = 3 then 2 else 3
+
+/-- The cutoff period belongs to the selected modulus and prime. -/
+def primeValuationSievePeriod (p k : ℕ) : ℕ :=
+  if p = 3 then threeAdicTypePeriod k else primeValuationPeriod p k
+
+theorem primeValuationSievePeriod_pos
+    (p k : ℕ) (hp : Nat.Prime p) :
+    0 < primeValuationSievePeriod p k := by
+  by_cases h : p = 3
+  · subst p
+    simpa [primeValuationSievePeriod] using
+      threeAdicTypePeriod_pos k
+  · simpa [primeValuationSievePeriod, h] using
+      primeValuationPeriod_pos p k hp
+
+/-- Any prime except 3 is coprime to the modulus-three sieve. -/
+theorem primeValuation_coprime_three_of_ne
+    (p : ℕ) (hp : Nat.Prime p) (hne : p ≠ 3) :
+    Nat.Coprime p 3 := by
+  have hp3 : Nat.Prime 3 := by norm_num
+  have hnotdiv : ¬ (3 : ℕ) ∣ p := by
+    intro hdiv
+    have heq : (3 : ℕ) = p :=
+      (Nat.prime_dvd_prime_iff_eq hp3 hp).mp hdiv
+    exact hne heq.symm
+  exact ((Nat.Prime.coprime_iff_not_dvd hp3).mpr hnotdiv).symm
+
+/-- Casewise pointwise quantitative bound across BOTH suitable
+moduli. For every fixed prime p and valuation k, at cutoff
+N ≥ selectedPeriod(p,k), every nonnegative unit-mass initial
+distribution has positive buffered type-k mass after each positive
+iteration. No comparison between the two different kernels is used. -/
+theorem primeValuation_selectedSieve_mass_ge_fixed_rate
+    (p k N : ℕ) (hp : Nat.Prime p)
+    (hN : 1 ≤ N) (hcutoff : primeValuationSievePeriod p k ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) :
+    (1 : ℝ) / (8 * (primeValuationSievePeriod p k : ℝ)) ≤
+      (bufferedDiagonalKernel (primeValuationSieveModulus p) N hN).typeMass
+        initial (primeValuationType p) (depth + 1) k := by
+  by_cases h : p = 3
+  · subst p
+    have hd : threeAdicTypePeriod k ≤ N := by
+      simpa [primeValuationSievePeriod] using hcutoff
+    simpa [primeValuationSievePeriod, primeValuationSieveModulus] using
+      (threeAdicType_buffered_mass_ge_fixed_rate
+        k N hN hd initial initial_nonneg initial_mass_one depth)
+  · have hcop : Nat.Coprime p 3 :=
+      primeValuation_coprime_three_of_ne p hp h
+    have hd : primeValuationPeriod p k ≤ N := by
+      simpa [primeValuationSievePeriod, h] using hcutoff
+    simpa [primeValuationSievePeriod, primeValuationSieveModulus, h] using
+      (primeValuation_buffered_mass_ge_fixed_rate
+        p k N hp hcop hN hd initial initial_nonneg initial_mass_one depth)
+
+/-- For every prime p and fixed valuation k, there exists a selected
+modulus, cutoff and positive p/k-dependent mass floor after every
+positive Markov time. This is *pointwise* type completeness across a
+family of two different finite arithmetic sieve models. -/
+theorem primeValuation_selectedSieve_eventually_pos
+    (p k : ℕ) (hp : Nat.Prime p) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel (primeValuationSieveModulus p) N hN).typeMass
+            initial (primeValuationType p) (depth + 1) k := by
+  refine ⟨primeValuationSievePeriod p k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : (0 : ℝ) < (primeValuationSievePeriod p k : ℝ) := by
+    exact_mod_cast (primeValuationSievePeriod_pos p k hp)
+  have hr : (0 : ℝ) <
+      (1 : ℝ) / (8 * (primeValuationSievePeriod p k : ℝ)) := by
+    positivity
+  exact hr.trans_le
+    (primeValuation_selectedSieve_mass_ge_fixed_rate
+      p k N hp hN hcutoff initial hnonneg hmass depth)
+
+/-- For every prime p and fixed k, the selected modulus has a
+certified arithmetic type hit from source 1, graph depth one, after
+all positive buffered time steps once a p/k-dependent cutoff is
+reached. The two underlying inventories are NOT equated. -/
+theorem primeValuation_selectedSieve_eventually_certified_hit
+    (p k : ℕ) (hp : Nat.Prime p) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          (certifiedArithmeticInventory (primeValuationSieveModulus p) N hN).sieveTypeHit
+            1 (primeValuationType p)
+            (fun _ n => (bufferedDiagonalKernel
+              (primeValuationSieveModulus p) N hN).evolve
+              initial (depth + 1) n) 1 k := by
+  by_cases h : p = 3
+  · subst p
+    simpa [primeValuationSieveModulus] using
+      threeAdicType_buffered_eventually_certified_hit k
+  · have hcop : Nat.Coprime p 3 :=
+      primeValuation_coprime_three_of_ne p hp h
+    simpa [primeValuationSieveModulus, h] using
+      primeValuation_buffered_eventually_certified_hit p k hp hcop
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
