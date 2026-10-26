@@ -1,0 +1,77 @@
+schema_version = "0.1"
+request_id = "goldbach-dirichlet-zero-contribution-20261025"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "9d56ed00e9e69ef96f906f5da41f301669e9ea95"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+source_blob = "6f60fa1d202c4db80a7b1607f17666b940e914e2"
+source_line_count = 223
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_pow_real_path = "Mathlib/Analysis/SpecialFunctions/Pow/Real.lean"
+mathlib_pow_real_blob = "4fa7722f332deb748b54c7b0bda553bb1b979ad0"
+zero_free_interface_path = "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/SiegelRealZeroWindow.lean"
+zero_free_interface_blob = "dc4029907554aa8252b31f9597dbf7478168479d"
+finite_character_consumer_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+finite_character_consumer_blob = "5816184c51192fc71becb4774d5ee1676671c611"
+upstream_repo = "openai/math"
+upstream_commit = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+upstream_dirichlet_path = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+upstream_dirichlet_blob = "46c67f4000906b1391a471d6e6396ac0da3c16a5"
+upstream_declaration = "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re"
+upstream_status = "SOURCE_REFERENCE_ONLY_NOT_IMPORTED_NOT_REPLAYED"
+priority = "P1"
+mathematical_class = "conditional_finite_zero_term_to_vonMangoldt_to_progression_transfer"
+status = "SOURCE_DRAFT_NOT_RUN"
+compilation_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+force_push_authorized = false
+operational_receipts = "UNAVAILABLE_NOT_RUN"
+
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.selectedZeros",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.selectedZeros_conditions",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.nonprincipal_zero_realPart_le_seven_eighths",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_cpow_div_le_seven_eighths",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.reciprocalZeroMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_selected_zero_contribution_le",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finiteZeroFormulaBudget",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_twisted_vonMangoldt_prefix_le_of_finite_zero_formula",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_residuePsi_linear_main_le_of_finite_zero_formulas"
+]
+
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection",
+ "GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.SiegelRealZeroWindow",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+ "Mathlib.Tactic"
+]
+required_transitive_consumers = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_residuePsi_linear_main_le_of_twist_and_global",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.dirichlet_unitPsi_twist_eq_coefficient_sum"
+]
+exact_hypotheses = "q N naturals, q!=0, [NeZero q], N>=1, HasEnoughRootsOfUnity C (Monoid.exponent (ZMod q)^units), a a unit residue, T a real height cutoff, candidate Finset C for each Dirichlet character, R(chi) real, M real, hSeven the conditional ALL-character zero-free proposition, hFormula a supplied bound on the sum of the inclusive von Mangoldt prefix and selected finite x^rho/rho zero contributions for EVERY nonprincipal character, hGlobal a separately supplied bound on the global inclusive von Mangoldt sum minus N."
+selected_zero_filter = "0 < re(rho) < 1, abs(im(rho)) <= T, and chi.LFunction(rho) = 0, within a supplied finite candidate set. Completeness of candidate set is NOT assumed. Missing zeros and all analytic/endpoint corrections are charged to supplied R."
+conclusion = "norm(phi(q)*unitPsiWeight(q,N,a)-N) <= sum_nonprincipal(N^(7/8)*sum_selected(1/norm(rho))+R(chi)) + finitePrimeDivisorCount(q,N)*log N + Nat.log2(N)*log(radical q) + M."
+missing_suppliers = [
+ "Actual unconditional / externally replayed source of the all-character Dirichlet 7/8 nonvanishing proposition; this module treats it as a hypothesis",
+ "An explicit/Perron formula with proven remainder R(chi,q,N,T), incorporating omitted and trivial zeros, analytic growth/contour terms, endpoints and prime powers",
+ "Effective enumeration/completeness or a provable zero-count/reciprocal-zero-mass bound depending on conductor and T",
+ "Quantified uniformity over q, N, T, primitive/imprimitive character families, and possible exceptional zeros",
+ "A global inclusive psi(N)-N bound M(N) to furnish the progression main-term estimate",
+ "Lean elaboration and full pinned compilation; independent fresh kernel and transitive axiom audit"
+]
+
+[checks]
+pin_commit = "test \"$(git rev-parse HEAD)\" = 9d56ed00e9e69ef96f906f5da41f301669e9ea95"
+pin_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = 6f60fa1d202c4db80a7b1607f17666b940e914e2"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution"
+source_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+axiom_audit = "#print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.nonprincipal_zero_realPart_le_seven_eighths; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_cpow_div_le_seven_eighths; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_selected_zero_contribution_le; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_twisted_vonMangoldt_prefix_le_of_finite_zero_formula; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_residuePsi_linear_main_le_of_finite_zero_formulas (create a temporary imported audit file outside math)"
+fresh_kernel = "INDEPENDENT_CHECKER_CAPABILITY_PENDING_NOT_RUN"
+expected = "Source pin matches, all declarations elaborate with the pinned Lean/Mathlib toolchain, fresh accepted proof and full transitive axiom list are recorded, no sorry/admit/new axioms, all conditional assumptions remain in theorem type"
+receipt_location = "grwtsk/noeaaeue ONLY; record actual commands, stdout/stderr, exit codes, checked source/dependency hashes, reviewer evidence and checker version."
