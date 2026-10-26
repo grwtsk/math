@@ -681,6 +681,61 @@ theorem eventually_real_type_complete_of_padded_allowed_paths
   exact ⟨source, target, hkind, hsource,
     AllowedPath.pad_at_target S path loop extra⟩
 
+/-!
+## Genuine cycle padding and periodic type coverage
+
+A true return cycle of length p gives coverage on the arithmetic
+progression N + k*p. Without a length-one loop or an additional
+aperiodicity theorem this does not imply coverage at every later time.
+-/
+
+/-- Repeating a genuine admissible return cycle produces an allowed
+return path of every multiple of its length. -/
+theorem AllowedPath.repeat_cycle (S : Sampler V)
+    {target : V} {period : ℕ}
+    (cycle : AllowedPath S target target period) :
+    ∀ count, AllowedPath S target target (count * period) := by
+  intro count
+  induction count with
+  | zero =>
+      simpa using (AllowedPath.refl target)
+  | succ count ih =>
+      have next := AllowedPath.append S ih cycle
+      simpa [Nat.succ_mul] using next
+
+/-- A genuine return cycle pads an incoming path by any multiple of
+the cycle length; no artificial self-loop is introduced. -/
+theorem AllowedPath.pad_by_cycle (S : Sampler V)
+    {source target : V} {length period : ℕ}
+    (path : AllowedPath S source target length)
+    (cycle : AllowedPath S target target period) :
+    ∀ count, AllowedPath S source target (length + count * period) := by
+  intro count
+  exact AllowedPath.append S path (AllowedPath.repeat_cycle S cycle count)
+
+/-- Common-length type-reaching paths and genuine type-target return
+cycles of a common period give positive type support at every time
+N + k*p. This is periodic-subsequence coverage, not all-time
+asymptotic completeness or a uniform quantitative lower bound. -/
+theorem real_type_complete_on_cycle_progression
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (start period : ℕ)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target start ∧
+      AllowedPath S target target period) :
+    ∀ count kind,
+      0 < realTypeMass typeOf
+        (S.realEvolve heat (start + count * period)) kind := by
+  intro count
+  apply S.real_type_complete_of_allowed_paths heat nonnegative
+    typeOf (start + count * period)
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path, cycle⟩ := reach kind
+  exact ⟨source, target, hkind, hsource,
+    AllowedPath.pad_by_cycle S path cycle count⟩
+
 end TypeHeat
 
 end Sampler
