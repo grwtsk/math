@@ -85,9 +85,10 @@ theorem measuredSeam_heat_energy
         (laplacian (heat t (G.measuredSeam coordinate errorLeft errorRight))) =
       (Real.exp (-2 * t)) ^ 2 *
         (errorRight - errorLeft) ^ 2 := by
-  rw [laplacian_energy]
-  rw [G.measuredSeam_heat_coboundary]
-  rw [coboundary_apply] at *
+  have hdiff :=
+    G.measuredSeam_heat_coboundary coordinate errorLeft errorRight t
+  rw [coboundary_apply] at hdiff
+  rw [laplacian_energy, hdiff]
   ring
 
 /-- Exactly matched observation errors leave the seam harmonic; an
