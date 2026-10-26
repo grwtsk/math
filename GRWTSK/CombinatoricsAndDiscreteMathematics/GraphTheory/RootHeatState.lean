@@ -99,6 +99,135 @@ theorem evolve_mass (kernel : HeatKernel Root) (initial : Root → ℚ) (time : 
 
 end HeatKernel
 
+/-!
+## Finite weighted diffusion and type coverage
+
+Here a type is a separately selected label on the finite heat-state carrier.
+Type completeness means positive *aggregated* heat in each declared type.
+A transition is a supplied stochastic kernel, not automatically a number-
+theoretic sieve. Quantitative steering below is an explicit incoming-edge
+lower bound; it is not derived from K₀, radical support, or asymptotic mixing.
+-/
+
+section TypeDiffusion
+
+variable {Kind : Type*} [Fintype Root] [Fintype Kind] [DecidableEq Kind]
+
+/-- Every selected type receives strictly positive current heat. -/
+def TypeCompleteAt (typeOf : Root → Kind) (heat : Root → ℚ) : Prop :=
+  ∀ kind, 0 < aggregate typeOf heat kind
+
+/-- An actual weighted transition contributes its exact product to the
+type-aggregated heat at its destination. Nonnegative other contributions
+are retained rather than discarded without an inequality. -/
+theorem aggregate_step_lower_of_edge
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (source target : Root) :
+    kernel.transition target source * heat source ≤
+      aggregate typeOf (kernel.step heat) (typeOf target) := by
+  have hstep :
+      kernel.transition target source * heat source ≤ kernel.step heat target := by
+    unfold HeatKernel.step
+    exact Finset.single_le_sum
+      (fun root _ => mul_nonneg (kernel.nonnegative target root) (nonnegative root))
+      (Finset.mem_univ source)
+  have htype :
+      kernel.step heat target ≤ aggregate typeOf (kernel.step heat) (typeOf target) := by
+    have hsum :
+        (if typeOf target = typeOf target then kernel.step heat target else 0) ≤
+          ∑ root, if typeOf root = typeOf target then kernel.step heat root else 0 := by
+      exact Finset.single_le_sum
+        (fun root _ => by
+          split_ifs
+          · exact kernel.step_nonneg heat nonnegative root
+          · exact le_refl 0)
+        (Finset.mem_univ target)
+    simpa [aggregate] using hsum
+  exact le_trans hstep htype
+
+/-- A selected incoming edge with bounded weighted heat for every type.
+This is a supplier condition, not a theorem derived from an arbitrary sieve. -/
+def HasWeightedSteeringBound
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (typeOf : Root → Kind) (epsilon : ℚ) : Prop :=
+  ∀ kind, ∃ source target, typeOf target = kind ∧
+    epsilon ≤ kernel.transition target source * heat source
+
+/-- Quantitative type-mass lower bound from the actual selected transition
+and current heat, with a nonnegative remainder on all other states. -/
+theorem type_mass_lower_of_steering
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (epsilon : ℚ)
+    (steering : HasWeightedSteeringBound kernel heat typeOf epsilon)
+    (kind : Kind) :
+    epsilon ≤ aggregate typeOf (kernel.step heat) kind := by
+  obtain ⟨source, target, hkind, hbound⟩ := steering kind
+  calc
+    epsilon ≤ kernel.transition target source * heat source := hbound
+    _ ≤ aggregate typeOf (kernel.step heat) (typeOf target) :=
+      aggregate_step_lower_of_edge kernel heat nonnegative typeOf source target
+    _ = aggregate typeOf (kernel.step heat) kind := by rw [hkind]
+
+/-- A uniform strictly positive steering bound proves one-step coverage of
+every type. No unproved spectral or analytic mixing result is used. -/
+theorem type_complete_at_of_steering
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (typeOf : Root → Kind) (epsilon : ℚ) (epsilon_pos : 0 < epsilon)
+    (steering : HasWeightedSteeringBound kernel heat typeOf epsilon) :
+    TypeCompleteAt typeOf (kernel.step heat) := by
+  intro kind
+  exact lt_of_lt_of_le epsilon_pos
+    (type_mass_lower_of_steering kernel heat nonnegative typeOf epsilon steering kind)
+
+/-- If a uniform steering budget is supplied at every sufficiently late
+time, every *subsequent* time has complete positive type support.
+Proving the steering budget for a concrete weighted sieve is still open. -/
+theorem eventually_type_complete_of_steering
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind) (epsilon : ℚ) (epsilon_pos : 0 < epsilon)
+    (start : Nat)
+    (steering : ∀ time, start ≤ time →
+      HasWeightedSteeringBound kernel (kernel.evolve initial time) typeOf epsilon) :
+    ∀ time, start ≤ time →
+      TypeCompleteAt typeOf (kernel.evolve initial (time + 1)) := by
+  intro time htime
+  change TypeCompleteAt typeOf (kernel.step (kernel.evolve initial time))
+  exact type_complete_at_of_steering kernel (kernel.evolve initial time)
+    (kernel.evolve_nonneg initial nonnegative time)
+    typeOf epsilon epsilon_pos (steering time htime)
+
+/-- A label absent from the finite state carrier cannot acquire mass merely
+by iterating a kernel on that same carrier. -/
+theorem not_type_complete_of_missing_label
+    (typeOf : Root → Kind) (heat : Root → ℚ)
+    (missing : Kind) (absent : ∀ root, typeOf root ≠ missing) :
+    ¬ TypeCompleteAt typeOf heat := by
+  intro complete
+  have hzero : aggregate typeOf heat missing = 0 := by
+    simp [aggregate, absent]
+  have hpos : 0 < aggregate typeOf heat missing := complete missing
+  rw [hzero] at hpos
+  exact (lt_irrefl (0 : ℚ)) hpos
+
+/-- Exact type completeness requires surjectivity of the type labeling.
+It does not assert a converse without a positive-heat supplier. -/
+theorem surjective_of_type_complete
+    (typeOf : Root → Kind) (heat : Root → ℚ)
+    (complete : TypeCompleteAt typeOf heat) :
+    Function.Surjective typeOf := by
+  intro kind
+  by_contra notCovered
+  have absent : ∀ root, typeOf root ≠ kind := by
+    intro root same
+    exact notCovered ⟨root, same⟩
+  exact (not_type_complete_of_missing_label typeOf heat kind absent) complete
+
+end TypeDiffusion
+
 /-- Root names plus the current exact heat are the retained prioritization state. -/
 structure State (Root : Type*) where
   heat : Root → ℚ
