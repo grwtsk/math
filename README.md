@@ -4,12 +4,17 @@ Mathematical results, formal proofs, and explicit open problems by **grwtsk cont
 
 [**Browse the results index →**](docs/mathematics/index.md)
 
+[Every source and declaration](docs/mathematics/complete-source-index.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+The complete catalogue records **72,578 source modules and 1,722,561 declaration observations** at source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374). Each record retains its verification state.
+
 ## Navigating the collection
 
 - Use the [results index](docs/mathematics/index.md) to browse every subject entry point and its result previews.
 - Follow increasingly specific subjects, object guides, and result articles within [`docs/mathematics/`](docs/mathematics/), with an index at each level. The [selected-family catalogue](docs/reference/results.md) retains its original evidence records.
 - Start with the [least-prime walkthrough](docs/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
-- Consult the [theorem/result occurrence catalogue](docs/reference/result-occurrences.md) for the broader source inventory. A lexical occurrence is not a verified theorem.
+- Browse the [complete source catalogue](docs/mathematics/complete-source-index.md) for every module and observed declaration, including definitions, instances, examples and pending or blocked checks. Each article links to its verification target and scoped public evidence.
+- The [historical theorem/result occurrence catalogue](docs/reference/result-occurrences.md) retains its original source identities. A lexical occurrence is not a verified theorem.
 - The [Lean library](GRWTSK/) contains the formal sources; [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. [Verification specifications](docs/verification/README.md) describe static replay targets.
 
 Examples include [least natural prime](docs/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.

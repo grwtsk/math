@@ -20,7 +20,7 @@ Namespace totals and the complete namespace route:
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `ce146fb73924abcb43ba4cf06ae7e5a14540e608e309a0c1e8a48d5dde554d6b`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -57,7 +57,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 - [Riemann hypothesis criteria and their arithmetic premises](riemann-hypothesis-criteria.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This guide indexes the present source modules and describes their explicit premises. It adds documentation and navigation; it supplies no new mathematical proof. Historical scoped verification remains…
 - [Riemann-hypothesis witness registry](riemann-witness-registry.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The RH program contains several objects called witnesses, together with obstruction theorems, comparison suppliers and prose classifications. They were created on independent branches and do not form one…
 
-Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 observed taxonomy/article/catalog inputs; 296 differ from that commit. Observation SHA-256: `7a3829e1c148a68b58a9d7c91d2815c6fd71d1619fa58cde5c839a064ad17d30`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
