@@ -611,4 +611,75 @@ theorem multiplicityOneType_buffered_mass_ge_one_ninety_six
       multiplicityOneType label ((1 : ℝ) / 24) depth hcount
   convert hmass using 1 <;> norm_num
 
+/-- Buffered radical-coprimality sieve: for every N≥12 and every
+nonnegative unit-mass input, both Boolean prime-2 multiplicity classes
+remain certified type hits at every *positive* Markov time, with an
+N-independent mass lower bound of 1/96 on each class.
+
+Nevertheless, no decoder factoring only through the radical-derived
+K₀-shaped feature can correctly distinguish the two types on this
+certified scope (the 2 vs 4 collision persists).
+
+This is a concrete two-type uniform coverage result under the
+*buffered* weighting, not a theorem for the earlier unbuffered model,
+all valuation types, analytic K₀/KK, or a Goldbach distribution. -/
+theorem multiplicityOneType_buffered_uniform_complete_and_collision
+    (lift : ℕ →* M)
+    (N : ℕ) (hN : 1 ≤ N) (h12 : 12 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1) :
+    (∀ depth : ℕ,
+      (certifiedArithmeticInventory 3 N hN).sieveTypeCompleteAt
+        1 multiplicityOneType
+        (fun _ n => (bufferedDiagonalKernel 3 N hN).evolve
+          initial (depth + 1) n) 1) ∧
+    (∀ depth : ℕ, ∀ label : Bool,
+      (1 : ℝ) / 96 ≤
+        (bufferedDiagonalKernel 3 N hN).typeMass
+          initial multiplicityOneType (depth + 1) label) ∧
+    ¬ ∃ decode : GrothendieckKZero M → Bool,
+        ∀ n ∈ (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1,
+          multiplicityOneType n = decode (kZeroRadical lift n) := by
+  have h4 : 4 ≤ N := by omega
+  have hfloor :
+      (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ :=
+    bufferedDiagonalKernel_rate_pos N hN
+  refine ⟨?_, ?_, ?_⟩
+  · intro depth label
+    cases label with
+    | false =>
+        have hfour : (4 : ℕ) ∈ scope N := by
+          change (4 : ℕ) ∈ Finset.Icc 1 N
+          exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+        have hreach :
+            (4 : ℕ) ∈
+              (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+          rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+          exact Finset.mem_filter.mpr ⟨hfour, by decide⟩
+        refine ⟨4, hreach, multiplicityOneType_four, ?_⟩
+        exact hfloor.trans_le
+          (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+            3 N hN initial initial_nonneg initial_mass_one
+            depth 4 hfour (by decide))
+    | true =>
+        have htwo : (2 : ℕ) ∈ scope N := by
+          change (2 : ℕ) ∈ Finset.Icc 1 N
+          exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+        have hreach :
+            (2 : ℕ) ∈
+              (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+          rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+          exact Finset.mem_filter.mpr ⟨htwo, by decide⟩
+        refine ⟨2, hreach, multiplicityOneType_two, ?_⟩
+        exact hfloor.trans_le
+          (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+            3 N hN initial initial_nonneg initial_mass_one
+            depth 2 htwo (by decide))
+  · intro depth label
+    exact multiplicityOneType_buffered_mass_ge_one_ninety_six
+      N hN h12 initial initial_nonneg initial_mass_one depth label
+  · exact no_exact_multiplicityOneType_decoder_on_certified_sieve
+      lift N hN h4
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
