@@ -3,6 +3,7 @@ Local mathematical attribution: grwtsk contributors.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 
 import Mathlib
+import Mathlib.RingTheory.Radical.NatInt
 import GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich
 import GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 
@@ -1307,5 +1308,678 @@ theorem SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error
   have hmass := mass_lower depth targetType
   have herr := hsmall depth hdepth
   linarith
+
+/-! ## Finite, mass-preserving weighted-sieve transition kernels
+
+This is a finite row-stochastic construction. It does not instantiate
+an analytic heat semigroup or assert that the kernel follows the
+certified graph; those are separate compatibility obligations.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- A nonnegative row-stochastic kernel restricted to a finite scope.
+Transitions outside the declared scope are not used for mass totals. -/
+structure FiniteSieveMarkovKernel (State : Type u) where
+  scope : Finset State
+  transition : State → State → ℝ
+  transition_nonneg :
+    ∀ x ∈ scope, ∀ y ∈ scope, 0 ≤ transition x y
+  row_sum_one :
+    ∀ x ∈ scope, (∑ y ∈ scope, transition x y) = 1
+
+namespace FiniteSieveMarkovKernel
+
+variable {State : Type u} [DecidableEq State]
+
+/-- One exact finite diffusion step of the supplied weight distribution.
+The orientation is source x to target y. -/
+noncomputable def step (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) (target : State) : ℝ :=
+  ∑ x ∈ K.scope, weight x * K.transition x target
+
+/-- Nonnegative input weights remain nonnegative on the finite scope. -/
+theorem step_nonneg (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x)
+    (target : State) (target_mem : target ∈ K.scope) :
+    0 ≤ K.step weight target := by
+  unfold step
+  apply Finset.sum_nonneg
+  intro x hx
+  exact mul_nonneg (weight_nonneg x hx)
+    (K.transition_nonneg x hx target target_mem)
+
+/-- Row stochasticity, not symmetry, preserves the total finite mass
+under one step. This identity does not require positive total mass. -/
+theorem sum_step_eq_sum (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) :
+    (∑ y ∈ K.scope, K.step weight y) =
+      ∑ x ∈ K.scope, weight x := by
+  calc
+    (∑ y ∈ K.scope, K.step weight y) =
+        ∑ x ∈ K.scope, ∑ y ∈ K.scope,
+          weight x * K.transition x y := by
+      change (∑ y ∈ K.scope, ∑ x ∈ K.scope,
+        weight x * K.transition x y) =
+          ∑ x ∈ K.scope, ∑ y ∈ K.scope,
+            weight x * K.transition x y
+      exact Finset.sum_comm
+    _ = ∑ x ∈ K.scope, weight x := by
+      apply Finset.sum_congr rfl
+      intro x hx
+      calc
+        (∑ y ∈ K.scope, weight x * K.transition x y) =
+            weight x * (∑ y ∈ K.scope, K.transition x y) := by
+              rw [Finset.mul_sum]
+        _ = weight x := by
+          rw [K.row_sum_one x hx, mul_one]
+
+/-- A strictly positive one-step output is equivalent to a source
+with positive input weight and a strictly positive transition.
+Nonnegative input weights and transition coefficients are essential. -/
+theorem step_pos_iff (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x)
+    (target : State) (target_mem : target ∈ K.scope) :
+    0 < K.step weight target ↔
+      ∃ x ∈ K.scope, 0 < weight x ∧ 0 < K.transition x target := by
+  unfold step
+  have hsum :
+      (0 < ∑ x ∈ K.scope, weight x * K.transition x target) ↔
+        ∃ x ∈ K.scope, 0 < weight x * K.transition x target :=
+    Finset.sum_pos_iff_of_nonneg
+      (fun x hx => mul_nonneg (weight_nonneg x hx)
+        (K.transition_nonneg x hx target target_mem))
+  constructor
+  · intro hpos
+    obtain ⟨x, hx, hprod⟩ := hsum.mp hpos
+    have hw : 0 < weight x := by
+      by_contra hnot
+      have hzero : weight x = 0 :=
+        le_antisymm (le_of_not_gt hnot) (weight_nonneg x hx)
+      simp [hzero] at hprod
+    have hp : 0 < K.transition x target := by
+      by_contra hnot
+      have hzero : K.transition x target = 0 :=
+        le_antisymm (le_of_not_gt hnot)
+          (K.transition_nonneg x hx target target_mem)
+      simp [hzero] at hprod
+    exact ⟨x, hx, hw, hp⟩
+  · rintro ⟨x, hx, hw, hp⟩
+    exact hsum.mpr ⟨x, hx, mul_pos hw hp⟩
+
+/-- Iterate the same finite transition kernel. No convergence or
+spectral gap claim is made by this finite recursion. -/
+noncomputable def evolve (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) : ℕ → State → ℝ
+  | 0 => weight
+  | depth + 1 => K.step (K.evolve weight depth)
+
+/-- Every finite iterate retains nonnegative weights on the scope. -/
+theorem evolve_nonneg (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x) :
+    ∀ depth : ℕ, ∀ target ∈ K.scope,
+      0 ≤ K.evolve weight depth target := by
+  intro depth
+  induction depth with
+  | zero =>
+      intro target ht
+      exact weight_nonneg target ht
+  | succ depth ih =>
+      intro target ht
+      exact K.step_nonneg (K.evolve weight depth) ih target ht
+
+/-- Every finite iterate preserves total mass by row stochasticity. -/
+theorem sum_evolve_eq_sum (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) (depth : ℕ) :
+    (∑ target ∈ K.scope, K.evolve weight depth target) =
+      ∑ source ∈ K.scope, weight source := by
+  induction depth with
+  | zero => rfl
+  | succ depth ih =>
+      calc
+        (∑ target ∈ K.scope, K.evolve weight (depth + 1) target) =
+            ∑ target ∈ K.scope, K.evolve weight depth target :=
+          K.sum_step_eq_sum (K.evolve weight depth)
+        _ = ∑ source ∈ K.scope, weight source := ih
+
+/-- Positive transition path of exact length, retaining each
+intermediate state in the finite scope. In particular, all transition
+factors along this path are strictly positive. -/
+def positivePath (K : FiniteSieveMarkovKernel State) :
+    ℕ → State → State → Prop
+  | 0, source, target => source = target
+  | depth + 1, source, target =>
+      ∃ middle ∈ K.scope,
+        K.positivePath depth source middle ∧
+          0 < K.transition middle target
+
+/-- Positive mass after exactly n transitions is equivalent to an
+initial positive-weight source connected to the target through n
+strictly positive transitions. Target membership and nonnegative
+initial weights remain explicit. -/
+theorem evolve_pos_iff_positivePath
+    (K : FiniteSieveMarkovKernel State) (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x) :
+    ∀ depth : ℕ, ∀ target ∈ K.scope,
+      (0 < K.evolve weight depth target ↔
+        ∃ source ∈ K.scope, 0 < weight source ∧
+          K.positivePath depth source target) := by
+  intro depth
+  induction depth with
+  | zero =>
+      intro target ht
+      change (0 < weight target) ↔
+        ∃ source ∈ K.scope, 0 < weight source ∧ source = target
+      constructor
+      · intro hpos
+        exact ⟨target, ht, hpos, rfl⟩
+      · rintro ⟨source, hs, hpos, rfl⟩
+        exact hpos
+  | succ depth ih =>
+      intro target ht
+      change (0 < K.step (K.evolve weight depth) target) ↔
+        ∃ source ∈ K.scope, 0 < weight source ∧
+          ∃ middle ∈ K.scope,
+            K.positivePath depth source middle ∧
+              0 < K.transition middle target
+      rw [K.step_pos_iff (K.evolve weight depth)
+        (K.evolve_nonneg weight weight_nonneg depth) target ht]
+      constructor
+      · rintro ⟨middle, hm, hprevious, htransition⟩
+        obtain ⟨source, hs, hinitial, hpath⟩ :=
+          (ih middle hm).mp hprevious
+        exact ⟨source, hs, hinitial, middle, hm, hpath, htransition⟩
+      · rintro ⟨source, hs, hinitial, middle, hm, hpath, htransition⟩
+        exact ⟨middle, hm,
+          (ih middle hm).mpr ⟨source, hs, hinitial, hpath⟩,
+          htransition⟩
+
+/-- Total mass of one exact type in the finite state scope after the
+given number of iterations. The type classifier is supplied explicitly. -/
+noncomputable def typeMass {TypeLabel : Type*}
+    (K : FiniteSieveMarkovKernel State) (weight : State → ℝ)
+    (typeOf : State → TypeLabel) (depth : ℕ)
+    (targetType : TypeLabel) : ℝ := by
+  classical
+  exact ((K.scope).filter (fun target => typeOf target = targetType)).sum
+    (fun target => K.evolve weight depth target)
+
+/-- A target type receives positive finite mass after n transitions
+iff a positive initial state admits an exact length-n path of
+strictly positive kernel transitions to some state of that type.
+This is finite positive coverage, not asymptotic steering. -/
+theorem typeMass_pos_iff_positivePath
+    {TypeLabel : Type*}
+    (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x)
+    (typeOf : State → TypeLabel)
+    (depth : ℕ) (targetType : TypeLabel) :
+    0 < K.typeMass weight typeOf depth targetType ↔
+      ∃ target ∈ K.scope,
+        typeOf target = targetType ∧
+          ∃ source ∈ K.scope,
+            0 < weight source ∧
+              K.positivePath depth source target := by
+  classical
+  unfold typeMass
+  have hsum :
+      (0 < ∑ target ∈
+        K.scope.filter (fun target => typeOf target = targetType),
+          K.evolve weight depth target) ↔
+      ∃ target ∈
+        K.scope.filter (fun target => typeOf target = targetType),
+          0 < K.evolve weight depth target :=
+    Finset.sum_pos_iff_of_nonneg
+      (fun target ht =>
+        K.evolve_nonneg weight weight_nonneg depth target
+          (Finset.mem_filter.mp ht).1)
+  constructor
+  · intro hpositive
+    obtain ⟨target, ht, htarget⟩ := hsum.mp hpositive
+    obtain ⟨hscope, htype⟩ := Finset.mem_filter.mp ht
+    obtain ⟨source, hs, hsource, hpath⟩ :=
+      (K.evolve_pos_iff_positivePath
+        weight weight_nonneg depth target hscope).mp htarget
+    exact ⟨target, hscope, htype, source, hs, hsource, hpath⟩
+  · rintro ⟨target, ht, htype, source, hs, hsource, hpath⟩
+    apply hsum.mpr
+    exact ⟨target, Finset.mem_filter.mpr ⟨ht, htype⟩,
+      (K.evolve_pos_iff_positivePath
+        weight weight_nonneg depth target ht).mpr
+          ⟨source, hs, hsource, hpath⟩⟩
+
+/-- A positive kernel path becomes an actual certified bounded graph path
+only when every positive in-scope transition is a certified edge.
+This prevents arbitrary stochastic jumps from being mistaken for
+certified graph reachability. -/
+theorem positivePath_to_certifiedPath
+    (K : FiniteSieveMarkovKernel State)
+    (inventory : SourceSearchInventory State)
+    (support_certified :
+      ∀ x ∈ K.scope, ∀ y ∈ K.scope,
+        0 < K.transition x y → inventory.certified x y)
+    (depth : ℕ) (source target : State)
+    (target_mem : target ∈ K.scope)
+    (path : K.positivePath depth source target) :
+    BoundedPath inventory.certified depth source target := by
+  induction depth generalizing target with
+  | zero =>
+      change source = target at path
+      subst target
+      exact BoundedPath.refl source
+  | succ depth ih =>
+      change ∃ middle ∈ K.scope,
+        K.positivePath depth source middle ∧
+          0 < K.transition middle target at path
+      rcases path with ⟨middle, hm, prefix, positive⟩
+      exact BoundedPath.tail (ih middle hm prefix)
+        (support_certified middle hm target target_mem positive)
+
+/-- Convert an explicitly nonnegative finite target-weight function
+with positive normalizer into a source-independent row-stochastic
+kernel. This is a one-step reset kernel, not a graph-local heat
+semigroup. Out-of-scope transitions are defined to be zero. -/
+noncomputable def normalizedTargetKernel
+    (scope : Finset State) (targetWeight : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y) :
+    FiniteSieveMarkovKernel State where
+  scope := scope
+  transition := fun _ y =>
+    if y ∈ scope then
+      targetWeight y / (∑ z ∈ scope, targetWeight z)
+    else 0
+  transition_nonneg := by
+    intro x hx y hy
+    simp only [if_pos hy]
+    exact div_nonneg (weight_nonneg y hy) normalizer_pos.le
+  row_sum_one := by
+    intro x hx
+    have hsum :
+        (∑ y ∈ scope,
+          if y ∈ scope then
+            targetWeight y / (∑ z ∈ scope, targetWeight z)
+          else 0) =
+        ∑ y ∈ scope,
+          targetWeight y / (∑ z ∈ scope, targetWeight z) := by
+      apply Finset.sum_congr rfl
+      intro y hy
+      simp only [if_pos hy]
+    rw [hsum]
+    simp_rw [div_eq_mul_inv]
+    rw [← Finset.sum_mul]
+    exact mul_inv_cancel₀ (ne_of_gt normalizer_pos)
+
+/-- The reset kernel's in-scope positive transition support consists
+exactly of strictly positive target sieve weights. Every in-scope
+source shares this support; it is not asserted to be certified by an
+arbitrary graph inventory. -/
+theorem normalizedTargetKernel_transition_pos_iff
+    (scope : Finset State) (targetWeight : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y)
+    (source target : State) (target_mem : target ∈ scope) :
+    0 < (normalizedTargetKernel scope targetWeight
+      weight_nonneg normalizer_pos).transition source target ↔
+        0 < targetWeight target := by
+  change 0 < (if target ∈ scope then
+    targetWeight target / (∑ y ∈ scope, targetWeight y)
+    else 0) ↔ 0 < targetWeight target
+  rw [if_pos target_mem]
+  exact div_pos_iff_of_pos_right normalizer_pos
+
+/-- A reset kernel has no transitions into vertices outside scope. -/
+theorem normalizedTargetKernel_transition_zero_of_not_mem
+    (scope : Finset State) (targetWeight : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y)
+    (source target : State) (target_not_mem : target ∉ scope) :
+    (normalizedTargetKernel scope targetWeight
+      weight_nonneg normalizer_pos).transition source target = 0 := by
+  change (if target ∈ scope then
+    targetWeight target / (∑ y ∈ scope, targetWeight y)
+    else 0) = 0
+  simp only [if_neg target_not_mem]
+
+/-- If the initial distribution already sums to one, this reset
+kernel produces its normalized target-weight distribution in one
+step, independently of the starting distribution. No asymptotic
+mixing assertion is involved. -/
+theorem normalizedTargetKernel_step_of_unit_mass
+    (scope : Finset State) (targetWeight initial : State → ℝ)
+    (weight_nonneg : ∀ y ∈ scope, 0 ≤ targetWeight y)
+    (normalizer_pos : 0 < ∑ y ∈ scope, targetWeight y)
+    (initial_mass_one : (∑ x ∈ scope, initial x) = 1)
+    (target : State) (target_mem : target ∈ scope) :
+    (normalizedTargetKernel scope targetWeight
+      weight_nonneg normalizer_pos).step initial target =
+      targetWeight target / (∑ y ∈ scope, targetWeight y) := by
+  unfold FiniteSieveMarkovKernel.step
+  change (∑ x ∈ scope,
+    initial x * (if target ∈ scope then
+      targetWeight target / (∑ y ∈ scope, targetWeight y)
+    else 0)) =
+    targetWeight target / (∑ y ∈ scope, targetWeight y)
+  simp only [if_pos target_mem]
+  rw [← Finset.sum_mul, initial_mass_one, one_mul]
+
+end FiniteSieveMarkovKernel
+
+/-- A finite Markov type mass agrees with the existing certified
+sieveTypeMass at a fixed search depth, provided the kernel scope
+is exactly the certified-reachable set at that depth.
+No statement about the kernel's positive-edge support follows
+from the scope equality alone. -/
+theorem SourceSearchInventory.sieveTypeMass_eq_kernelTypeMass_of_scope
+    {TypeLabel : Type*}
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → TypeLabel)
+    (K : FiniteSieveMarkovKernel V) (searchDepth : ℕ)
+    (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
+    (weight : V → ℝ) (steps : ℕ)
+    (targetType : TypeLabel) :
+    inventory.sieveTypeMass source typeOf
+      (fun _ vertex => K.evolve weight steps vertex)
+      searchDepth targetType =
+        K.typeMass weight typeOf steps targetType := by
+  classical
+  unfold SourceSearchInventory.sieveTypeMass FiniteSieveMarkovKernel.typeMass
+  rw [← scope_eq]
+
+/-- A certified type hit for the Markov-evolved weights is equivalent
+to a positive-kernel-path witness within the declared finite scope.
+The scope equivalence and nonnegative initial weights are explicit. -/
+theorem SourceSearchInventory.sieveTypeHit_iff_kernelPath_of_scope
+    {TypeLabel : Type*}
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → TypeLabel)
+    (K : FiniteSieveMarkovKernel V) (searchDepth : ℕ)
+    (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
+    (weight : V → ℝ)
+    (weight_nonneg : ∀ vertex ∈ K.scope, 0 ≤ weight vertex)
+    (steps : ℕ) (targetType : TypeLabel) :
+    inventory.sieveTypeHit source typeOf
+        (fun _ vertex => K.evolve weight steps vertex)
+        searchDepth targetType ↔
+      ∃ target ∈ K.scope, typeOf target = targetType ∧
+        ∃ start ∈ K.scope, 0 < weight start ∧
+          K.positivePath steps start target := by
+  unfold SourceSearchInventory.sieveTypeHit
+  constructor
+  · rintro ⟨target, reachable, sameType, positive⟩
+    have target_mem : target ∈ K.scope := by
+      simpa only [scope_eq] using reachable
+    obtain ⟨start, start_mem, positiveStart, path⟩ :=
+      (K.evolve_pos_iff_positivePath weight weight_nonneg
+        steps target target_mem).mp positive
+    exact ⟨target, target_mem, sameType,
+      start, start_mem, positiveStart, path⟩
+  · rintro ⟨target, target_mem, sameType,
+      start, start_mem, positiveStart, path⟩
+    have reachable :
+        target ∈ inventory.certifiedSearch source searchDepth := by
+      simpa only [scope_eq] using target_mem
+    exact ⟨target, reachable, sameType,
+      (K.evolve_pos_iff_positivePath weight weight_nonneg
+        steps target target_mem).mpr
+          ⟨start, start_mem, positiveStart, path⟩⟩
+
+/-- Exact finite certified type completeness for a Markov-evolved
+weight field is equivalent to positive kernel paths reaching
+each type fiber. This theorem is finite and conditional on
+scope matching and nonnegative initial sieve weights. -/
+theorem SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths
+    {TypeLabel : Type*}
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → TypeLabel)
+    (K : FiniteSieveMarkovKernel V) (searchDepth : ℕ)
+    (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
+    (weight : V → ℝ)
+    (weight_nonneg : ∀ vertex ∈ K.scope, 0 ≤ weight vertex)
+    (steps : ℕ) :
+    inventory.sieveTypeCompleteAt source typeOf
+        (fun _ vertex => K.evolve weight steps vertex)
+        searchDepth ↔
+      ∀ targetType : TypeLabel,
+        ∃ target ∈ K.scope, typeOf target = targetType ∧
+          ∃ start ∈ K.scope, 0 < weight start ∧
+            K.positivePath steps start target := by
+  unfold SourceSearchInventory.sieveTypeCompleteAt
+  constructor
+  · intro complete targetType
+    exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
+      source typeOf K searchDepth scope_eq weight weight_nonneg
+        steps targetType).mp (complete targetType)
+  · intro paths targetType
+    exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
+      source typeOf K searchDepth scope_eq weight weight_nonneg
+        steps targetType).mpr (paths targetType)
+
+/-! ## An arithmetic radical-weighted coprimality sieve
+
+The concrete integer-state weight below records a genuine finite
+coprimality filter and the arithmetic squarefree radical of surviving
+integers. Its source-independent reset kernel is a normalized finite
+sieve, NOT a graph-local heat semigroup or a prime-distribution
+asymptotic. Positive-power collisions are preserved, rather than
+silently interpreted as exact type recovery. -/
+
+namespace ArithmeticSieveKernel
+
+/-- A nonnegative radical weight on the ordinary coprimality sieve.
+The eventual kernel uses only positive integers in Finset.Icc 1 N. -/
+noncomputable def radicalCoprimeWeight (q n : ℕ) : ℝ :=
+  if Nat.Coprime n q then (Nat.radical n : ℝ) else 0
+
+theorem radicalCoprimeWeight_nonneg (q n : ℕ) :
+    0 ≤ radicalCoprimeWeight q n := by
+  unfold radicalCoprimeWeight
+  split_ifs
+  · exact Nat.cast_nonneg _
+  · exact le_refl _
+
+/-- Radical weights are strictly positive exactly on survivors of the
+coprimality sieve. The radical itself has no zero value in Nat. -/
+theorem radicalCoprimeWeight_pos_iff (q n : ℕ) :
+    0 < radicalCoprimeWeight q n ↔ Nat.Coprime n q := by
+  constructor
+  · intro positive
+    by_contra notCoprime
+    have zeroWeight : radicalCoprimeWeight q n = 0 := by
+      simp [radicalCoprimeWeight, notCoprime]
+    rw [zeroWeight] at positive
+    exact (lt_irrefl (0 : ℝ)) positive
+  · intro coprime
+    change 0 < (if Nat.Coprime n q then
+      (Nat.radical n : ℝ) else 0)
+    rw [if_pos coprime]
+    exact_mod_cast Nat.radical_pos n
+
+/-- Finite positive integer states through the inclusive cutoff N. -/
+def scope (N : ℕ) : Finset ℕ := Finset.Icc 1 N
+
+noncomputable def totalWeight (q N : ℕ) : ℝ :=
+  ∑ n ∈ scope N, radicalCoprimeWeight q n
+
+/-- The integer 1 survives every modulus and has positive radical
+weight. Thus N >= 1 is the exact simple sufficient condition for
+nonzero normalization; an empty scope at N = 0 is not normalized. -/
+theorem totalWeight_pos (q N : ℕ) (hN : 1 ≤ N) :
+    0 < totalWeight q N := by
+  unfold totalWeight
+  apply Finset.sum_pos'
+  · intro n hn
+    exact radicalCoprimeWeight_nonneg q n
+  · have hOne : (1 : ℕ) ∈ scope N := by
+      change (1 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+    have hCoprime : Nat.Coprime 1 q := by simp
+    exact ⟨1, hOne, (radicalCoprimeWeight_pos_iff q 1).mpr hCoprime⟩
+
+/-- Concrete finite, row-stochastic kernel from radical-weighted
+coprimality-sieve data, under the necessary nonempty cutoff. -/
+noncomputable def resetKernel (q N : ℕ) (hN : 1 ≤ N) :
+    FiniteSieveMarkovKernel ℕ :=
+  FiniteSieveMarkovKernel.normalizedTargetKernel
+    (scope N) (radicalCoprimeWeight q)
+    (fun n hn => radicalCoprimeWeight_nonneg q n)
+    (totalWeight_pos q N hN)
+
+/-- A positive reset transition to an in-scope integer occurs exactly
+when that integer is coprime to q, regardless of the source. -/
+theorem resetKernel_transition_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N) (source target : ℕ)
+    (target_mem : target ∈ scope N) :
+    0 < (resetKernel q N hN).transition source target ↔
+      Nat.Coprime target q := by
+  exact
+    (FiniteSieveMarkovKernel.normalizedTargetKernel_transition_pos_iff
+      (scope N) (radicalCoprimeWeight q)
+      (fun n hn => radicalCoprimeWeight_nonneg q n)
+      (totalWeight_pos q N hN)
+      source target target_mem).trans
+        (radicalCoprimeWeight_pos_iff q target)
+
+/-- The arithmetic radical/coprimality sieve weights lose positive
+prime-power exponent information. The exponent must be nonzero. -/
+theorem radicalCoprimeWeight_pow (q n k : ℕ) (hk : k ≠ 0) :
+    radicalCoprimeWeight q (n ^ k) =
+      radicalCoprimeWeight q n := by
+  have hcop : Nat.Coprime (n ^ k) q ↔ Nat.Coprime n q :=
+    Nat.coprime_pow_left_iff (Nat.pos_of_ne_zero hk) n q
+  have hrad : Nat.radical (n ^ k) = Nat.radical n :=
+    UniqueFactorizationMonoid.radical_pow n hk
+  by_cases h : Nat.Coprime n q
+  · simp [radicalCoprimeWeight, hcop.mpr h, h, hrad]
+  · have hpow : ¬ Nat.Coprime (n ^ k) q :=
+      fun hc => h (hcop.mp hc)
+    simp [radicalCoprimeWeight, h, hpow]
+
+/-- The source-independent normalized kernel assigns equal transition
+coefficients to positive powers with the same radical, provided BOTH
+targets occur inside the cutoff. This is a concrete collision fixture,
+not an exact type decoder or a claim about arithmetic mixing. -/
+theorem resetKernel_transition_pow_collision
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source n k : ℕ) (hk : k ≠ 0)
+    (hn : n ∈ scope N) (hnk : n ^ k ∈ scope N) :
+    (resetKernel q N hN).transition source (n ^ k) =
+      (resetKernel q N hN).transition source n := by
+  change (if n ^ k ∈ scope N then
+    radicalCoprimeWeight q (n ^ k) / totalWeight q N else 0) =
+    (if n ∈ scope N then
+      radicalCoprimeWeight q n / totalWeight q N else 0)
+  rw [if_pos hnk, if_pos hn, radicalCoprimeWeight_pow q n k hk]
+
+/-- The unnormalized arithmetic sieve weights are a fixed point of
+their source-independent reset kernel, on the finite positive scope.
+This finite algebraic stationarity is NOT an asymptotic mixing result. -/
+theorem resetKernel_step_weight_eq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (target : ℕ) (target_mem : target ∈ scope N) :
+    (resetKernel q N hN).step (radicalCoprimeWeight q) target =
+      radicalCoprimeWeight q target := by
+  change (∑ source ∈ scope N,
+    radicalCoprimeWeight q source *
+      (if target ∈ scope N then
+        radicalCoprimeWeight q target / totalWeight q N else 0)) =
+    radicalCoprimeWeight q target
+  rw [if_pos target_mem, ← Finset.sum_mul]
+  change totalWeight q N *
+    (radicalCoprimeWeight q target / totalWeight q N) =
+      radicalCoprimeWeight q target
+  rw [div_eq_mul_inv]
+  calc
+    totalWeight q N *
+        (radicalCoprimeWeight q target * (totalWeight q N)⁻¹) =
+      (totalWeight q N * (totalWeight q N)⁻¹) *
+        radicalCoprimeWeight q target := by ring
+    _ = radicalCoprimeWeight q target := by
+      rw [mul_inv_cancel₀ (ne_of_gt (totalWeight_pos q N hN)), one_mul]
+
+/-- The same arithmetic weight distribution is stationary at every
+finite iterate on the declared scope. In particular, the reset kernel
+does not manufacture positive mass in an initially absent type fiber. -/
+theorem resetKernel_evolve_weight_eq
+    (q N : ℕ) (hN : 1 ≤ N) :
+    ∀ depth : ℕ, ∀ target ∈ scope N,
+      (resetKernel q N hN).evolve (radicalCoprimeWeight q) depth target =
+        radicalCoprimeWeight q target := by
+  intro depth
+  induction depth with
+  | zero =>
+      intro target ht
+      rfl
+  | succ depth ih =>
+      intro target ht
+      change (resetKernel q N hN).step
+        ((resetKernel q N hN).evolve (radicalCoprimeWeight q) depth)
+        target = radicalCoprimeWeight q target
+      calc
+        (resetKernel q N hN).step
+            ((resetKernel q N hN).evolve (radicalCoprimeWeight q) depth)
+            target =
+          (resetKernel q N hN).step (radicalCoprimeWeight q) target := by
+            unfold FiniteSieveMarkovKernel.step
+            apply Finset.sum_congr rfl
+            intro source hs
+            rw [ih source hs]
+        _ = radicalCoprimeWeight q target :=
+          resetKernel_step_weight_eq q N hN target ht
+
+/-- The exact arithmetic type mass after any finite number of reset
+steps equals the initial radical-weighted coprimality mass on the same
+fiber. Positivity is therefore a coverage question, not a mixing
+estimate. -/
+theorem resetKernel_typeMass_eq_fiber_sum
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (typeOf : ℕ → TypeLabel)
+    (depth : ℕ) (targetType : TypeLabel) :
+    (resetKernel q N hN).typeMass
+      (radicalCoprimeWeight q) typeOf depth targetType =
+      ∑ n ∈ (scope N).filter (fun n => typeOf n = targetType),
+        radicalCoprimeWeight q n := by
+  classical
+  unfold FiniteSieveMarkovKernel.typeMass
+  apply Finset.sum_congr rfl
+  intro n hn
+  exact resetKernel_evolve_weight_eq q N hN depth n
+    (Finset.mem_filter.mp hn).1
+
+/-- This concrete arithmetic reset kernel covers an exact type at
+every finite depth iff a positive integer of that type survives the
+coprimality sieve. It neither proves the existence of new arithmetic
+types nor distinguishes prime exponents from their radicals. -/
+theorem resetKernel_typeMass_pos_iff_coprime_witness
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (typeOf : ℕ → TypeLabel)
+    (depth : ℕ) (targetType : TypeLabel) :
+    0 < (resetKernel q N hN).typeMass
+      (radicalCoprimeWeight q) typeOf depth targetType ↔
+      ∃ n ∈ scope N, typeOf n = targetType ∧ Nat.Coprime n q := by
+  classical
+  rw [resetKernel_typeMass_eq_fiber_sum q N hN typeOf depth targetType]
+  have hsum :
+      (0 < ∑ n ∈ (scope N).filter (fun n => typeOf n = targetType),
+        radicalCoprimeWeight q n) ↔
+      ∃ n ∈ (scope N).filter (fun n => typeOf n = targetType),
+        0 < radicalCoprimeWeight q n :=
+    Finset.sum_pos_iff_of_nonneg
+      (fun n hn => radicalCoprimeWeight_nonneg q n)
+  constructor
+  · intro positive
+    obtain ⟨n, hn, hw⟩ := hsum.mp positive
+    obtain ⟨hs, ht⟩ := Finset.mem_filter.mp hn
+    exact ⟨n, hs, ht, (radicalCoprimeWeight_pos_iff q n).mp hw⟩
+  · rintro ⟨n, hn, ht, hc⟩
+    apply hsum.mpr
+    exact ⟨n, Finset.mem_filter.mpr ⟨hn, ht⟩,
+      (radicalCoprimeWeight_pos_iff q n).mpr hc⟩
+
+end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion

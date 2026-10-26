@@ -225,3 +225,250 @@ For a family of arithmetic cutoffs \(S_H\), the finite theorem only supplies **c
 Place the elementary finite-step type-mass telescope in an existing **finite spectral diffusion or weighted-graph subject leaf**, not the K₀ mathematical core and not a new parallel hierarchy. Prefer an independent simple finite-sum module that can later be imported by **HeightIndexedGraphDiffusion** after its current dependency acceptance. Prove in order: type-fiber finite sum of a convex mixture; telescoping product; finite error inequality; strictly positive mass after mixing; kernel-total-variation supplier; only then analytic/infinite-time steering. Reuse **JointCollision** and **RadicalCollisionBoundary** as separately pinned source candidates without re-creating them. Native Lean definitions, theorem names and exact build commands for the **new** result are **NOT_YET_DEFINED**. When written, re-pin the exact new source commit/blob and register the paper-derived connections in the canonical literature ledger with execution receipts or explicit NOT_RUN.
 
 Gate #1267 and all no-merge/no-force-push/no-unapproved-dispatch constraints remain. The new source has **not** been compiled or kernel-checked: `NOT_RUN`. Runners, checks and actual receipts belong in **grwtsk/noeaaeue**, not math.
+
+
+---
+
+## Bounded successor — radical observation lumpability and type-decoding error (2026-10-26)
+
+**Attribution:** grwtsk contributors for these elementary finite mathematical deductions. **Existing source:** at observed math main commit `eee1e17460fdf207bd5dfd639c7e91a96df32594`, `GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean` blob `ddf55d9090d09b785c0c8d2b03148c6a74e72a4c` already has `steered_observation_eq_of_radical_eq` and `no_type_complete_feature_only_steering_of_collision`; `GRWTSK/Algebra/KTheory/GrothendieckPort.lean` blob `d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f` has the generic `JointCollision.no_exact_type_decoder_of_collision`. Do **not** reauthor either obstruction. The missing, different supplier is **Markov descent of a state transition**, not just information loss under one observable.
+
+**Source status:** Self-contained finite proofs below are analytic research arguments, not newly written Lean declarations, kernel admissions or independently verified K-theory results. Verification gate [#1267](https://github.com/grwtsk/math/issues/1267) remains open; no mathematical Lean source is added in this successor.
+
+### Theorem F — necessary and sufficient exact strong lumpability
+
+Let \(S\) be a finite nonempty fine state set, \(F=h(S)\) the finite image of a map \(h:S\to F\) (therefore \(h\) is surjective), and \(K:S\times S\to[0,1]\) an actual row-stochastic matrix. Define the observation/aggregation matrix \(J:S\times F\to\{0,1\}\) by \(J_{xb}=\mathbf1_{h(x)=b}\), and its aggregated row probabilities
+\[
+(KJ)_{xb}=\sum_{y:h(y)=b}K_{xy}.
+\]
+Then the following three statements are equivalent:
+
+1. For every \(x,x'\in S\) with \(h(x)=h(x')\), and every \(b\in F\), the aggregated transition probabilities \((KJ)_{xb}\) and \((KJ)_{x'b}\) are equal.
+2. There exists a row-stochastic \(Q:F\times F\to[0,1]\) with the **exact intertwining identity** \(KJ=JQ\).
+3. For **every initial fine probability** \(P\), the one-step coarse probability \((PK)J\) is determined by the current coarse probability \(PJ\) via one common row-stochastic operator \(Q\), independently of the representative state.
+
+**Proof.** For (1)→(2), fix one representative \(s_b\in h^{-1}(b)\) for each observed state and set \(Q_{bc}=(KJ)_{s_b c}\). Condition (1) makes this independent of representative; sums of entries are one because the observation fibers partition \(S\). The definition gives \(KJ=JQ\). The implication (2)→(3) is associativity. For (3)→(1), compare the fine point-mass probabilities \(\delta_x,\delta_{x'}\); they have the same coarse observation if \(h(x)=h(x')\), so their one-step coarse observations must agree. This is the **strong lumpability** criterion. It implies \((PK^N)J=(PJ)Q^N\) for all \(N\in\mathbb N\), and generalizes to time-dependent kernels if each step has its own exact quotient \(Q_j\).
+
+### Theorem G — exact type recovery is a *separate* factorization
+
+Let \(c:S\to T\) be the required **fine** arithmetic type classifier, with \(T\) finite. There exists a decoder \(d:F\to T\) with \(c=d\circ h\) **if and only if**
+\[
+\forall x,x'\in S,\quad h(x)=h(x')\Longrightarrow c(x)=c(x').
+\]
+The forward direction follows by substitution. For the converse choose, for each \(b\in F\), a representative \(s_b\), and let \(d(b)=c(s_b)\), which is independent of the choice under fiberwise constancy.
+
+**Crucial separation:** (F) can hold even when (G) fails. A coarse Markov process may be predicted perfectly from its own past, while all methods depending solely on it still fail to reconstruct the true fine type. The older source-level K₀-radical collision lemmas express the **obstruction direction** of (G), not the new Markov lumpability equivalence (F).
+
+### Theorem H — quantitative failure of quotient intertwining
+
+Let \(K_j\) be actual fine row-stochastic kernels, \(Q_j\) proposed coarse row-stochastic kernels and \(J\) the fixed observation map. Define the **matrix intertwining defect**
+\[
+D_j=K_jJ-JQ_j,\qquad
+\delta_j=\max_{x\in S}\operatorname{TV}\bigl((K_jJ)(x,\cdot),(JQ_j)(x,\cdot)\bigr).
+\]
+For \(P_{j+1}=P_jK_j\), let the ideal coarse process begin with \(\nu_0=P_0J\) and evolve \(\nu_{j+1}=\nu_jQ_j\). The signed coarse error is exactly
+\[
+P_NJ-\nu_N
+=\sum_{j=0}^{N-1}P_jD_jQ_{j+1}\cdots Q_{N-1}.
+\]
+Induction on \(N\) proves the identity: multiply the previous error by \(Q_N\) and add the new \(P_ND_N\). Define the Dobrushin coefficient
+\[
+\tau(Q)=\max_{b,b'\in F}\operatorname{TV}(Q(b,\cdot),Q(b',\cdot))\in[0,1].
+\]
+Each \(P_jD_j\) has total mass zero and TV norm at most \(\delta_j\). Contracting the zero-mass errors by the following kernels yields
+\[
+\operatorname{TV}(P_NJ,\nu_N)
+\le\sum_{j=0}^{N-1}\delta_j
+\prod_{\ell=j+1}^{N-1}\tau(Q_\ell).
+\]
+For the coarse complete-mixing kernel \(Q_\ell=(1-\alpha_\ell)I+\alpha_\ell\mathbf1\pi_\ell\), \(\tau(Q_\ell)\le1-\alpha_\ell\). Thus if \(\delta_j\le\alpha_j\eta_j\), \(\sum_j\alpha_j=\infty\), and \(\eta_j\to0\), the coarse error tends to zero by the finite-head/vanishing-tail proof already established in the preceding section. Exact fine-type mass recovery STILL requires (G): asymptotically accurate coarse mass does not create missing type labels.
+
+### Theorem I — unavoidable fine-type Bayes error after collision
+
+Fix a strictly positive probability \(\mu\) on \(S\). Any decoder \(d:F\to T\), receiving only \(h(X)\) for \(X\sim\mu\), has success probability
+\[
+\Pr[d(h(X))=c(X)]
+=\sum_{b\in F}\ \sum_{x:h(x)=b,\ c(x)=d(b)}\mu_x.
+\]
+Optimizing each \(b\) independently gives the **exact minimum achievable misclassification probability**
+\[
+\boxed{
+\mathrm{Err}_*(\mu;h,c)=
+1-\sum_{b\in F}\max_{\theta\in T}
+\mu\bigl(\{x:h(x)=b,\ c(x)=\theta\}\bigr).
+}
+\]
+It is zero iff \(c\) factors through \(h\), since \(\mu_x>0\) for every \(x\). A randomized decoder cannot improve the optimum because its success probability is a convex combination of deterministic decoding outcomes. This quantitative **irreducible information-loss floor** survives even when the observed diffusion is perfectly lumpable and reaches its stationary distribution.
+
+### Exact arithmetic fixtures and hostile controls
+
+Set \(S=\{12,18,25\}\), coarse radical \(h(12)=h(18)=6,\ h(25)=5\), and fine valuation types \(c(12)\ne c(18)\ne c(25)\). Let \(\mu=(1/3,1/3,1/3)\).
+
+**Fully lumpable ideal diffusion:** with \(\alpha=1/2\), \(K^0=\frac12I_3+\frac12\mathbf1\mu\), ordered coarse states \((6,5)\), the exact quotient is
+\[
+Q^0=\begin{pmatrix}5/6&1/6\\1/3&2/3\end{pmatrix},\qquad
+K^0J=JQ^0.
+\]
+Every coarse distribution is transported exactly, yet the stationary *fine type* Bayes error is \(1/3\) because the coarse radical-6 fiber contains two distinct positive-weight types. On the two-state set \(\{12,18\}\) with equal masses and a constant radical observation, the error is \(1/2\).
+
+**Nonlumpable collision:** instead let
+\[
+K=\begin{pmatrix}
+1/2&1/4&1/4\\
+1/8&1/8&3/4\\
+0&0&1
+\end{pmatrix}.
+\]
+The two fine states 12 and 18 both currently have coarse observation 6, but their one-step probabilities of moving to coarse radical 5 are respectively \(1/4\) and \(3/4\). Thus no universal coarse \(Q\) exists. Taking \(Q\) with radical-6 row \((3/4,1/4)\) and radical-5 row \((0,1)\), the row defect is exactly \(\delta=1/2\); its Dobrushin coefficient is \(\tau=3/4\), and the one-step coarse prediction error starting from 18 attains \(\operatorname{TV}=1/2\).
+
+**Actually executed finite preflight:** a standalone Python 3 exact-`fractions.Fraction` script in a temporary path, exit **0**. It checked \(K^0J=JQ^0\), all power identities through \(N=12\), both nonlumpable rows, the one-step sharp TV defect, the general finite Duhamel identity and its TV bound for \(N=1,\ldots,13\), and exhaustive deterministic Bayes decoders (\(3^2=9\) choices) obtaining optimal success \(2/3\). These are finite tests, **not** Lean/kernel verification, not evidence of analytic K₀ realization or asymptotic arithmetic equidistribution.
+
+### Exact source and next Lean dependencies
+
+The existing source `RadicalCollisionBoundary.lean` is now at blob `ddf55d9090d09b785c0c8d2b03148c6a74e72a4c`; the older static verification manifest `docs/verification/Algebra/KTheory/radical-collision-type-boundary-20261025.toml`, blob `c1817d95f960167a8e5485432f0241a40d14f0f7`, pins the **earlier** `6754d346dc7ad4b5e02eb3e97bc475bda1ef847e` source. Do not transfer any old verification status to the new blob. `GrothendieckPort.lean` remains blob `d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f`. The finite-diffusion and weighted-graph source blobs are respectively `3b88b21b60df16f0e22d73f57eac69b8f8fe8a7c` and `7f414d21cb768cc938f1ef2e4a3077b41c62bb45`. Lean v4.33.0; Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+**After #1267 acceptance**, implement exactly one finite independent **lumpability ↔ quotient kernel** theorem in the existing spectral/finite-operator subject taxonomy, with the exact finite index and stochastic hypotheses (not a source-unsound `K₀` coercion). Then implement the finite Duhamel defect identity, type-factorization criterion, and the finite Bayes-error formula. Import existing K-theoretic radical objects **only after** those source candidates compile; preserve its upstream metadata and local attribution `grwtsk contributors`. Source theorem names, new module/commit/blob and exact Lean command receipts remain **NOT_YET_CREATED / NOT_RUN**. Execute new leaf and root compilation, fresh kernel checking and transitive `#print axioms` in a separately authorized pinned checkout, with all runners/receipts outside math in `grwtsk/noeaaeue`.
+
+**Nonclaims:** no classical three-dimensional Navier–Stokes nonblowup, no Tao PDE-to-sieve equivalence, no analytic Baum–Connes statement, no universal arithmetic type density or guaranteed representation of omitted types. Theorems F–I are exact **finite-state operator and information theory**, not global PDE or K-theory classification theorems.
+
+
+---
+
+## Bounded successor — Constructed rational restart kernel with a sharp type-error threshold (2026-10-26)
+
+**Local byline:** grwtsk contributors. This section proves new elementary finite rational probability/operator claims; it is **not** an imported Navier–Stokes regularity theorem, an actual analytic K-theory functor, or an arithmetic prime-distribution theorem. Previous sections define strong lumpability abstractly; here we give a **concrete kernel construction** consumed by an already existing GRWTSK finite type-coverage interface.
+
+### Source and existing declaration pins
+
+At immutable GRWTSK mathematical source commit **d17c5c060239c42b8e7cb95664001fe8bce38eeb**:
+
+- GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean, blob **b58e2e0e16b134f110015059b0d3d5dd7d2aca47**: namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RootHeatState; HeatKernel is **target-first, source-second, column-stochastic** on the rational finite root carrier. Fully qualified existing source declarations include HeatKernel.step, HeatKernel.evolve_mass, TypeCompleteAt, HasWeightedSteeringBound, UniformMinorization, type_complete_of_uniform_minorization, RepresentativeMinorization, type_complete_of_representative_minorization, AnchorReinjection, type_mass_lower_after_two_steps_of_reinjection, SupportedTypeReachability, and type_complete_iff_supported_type_reachability. This is a source proof candidate, not compiler or kernel acceptance.
+- GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean, blob **ddf55d9090d09b785c0c8d2b03148c6a74e72a4c**: no decoder for feature-only steering across radical collision. The supplied stable-object monoid and Nat→M lift do not constitute analytic K₀(C*).
+- GRWTSK/Algebra/KTheory/GrothendieckPort.lean, blob **d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f**.
+- lean-toolchain, blob **025e59548e48cf71f2744154e2890beefe30a258**, Lean v4.33.0; lake-manifest.json, blob **1f2e3e2d66253933a410e981eb359a9b454aae0b**, Mathlib db584cd6d46c92f209a44c0f1c829460d327499d.
+
+The *current* RootHeatState module already proves **conditional** type coverage given kernel-minorization and positive support. It does **not** yet define the following explicit normalized restart kernel. This section is deliberately independent of the unverified GapTransport imports, but the previously agreed no-new-unverified-source gate #1267 remains respected.
+
+### Theorem J — normalize nonnegative rational sieve weights into an actual HeatKernel
+
+Let R be a finite nonempty state set, w:R→ℚ≥0 have positive total mass Z=Σᵣ w(r)>0, and put π(r)=w(r)/Z. Fix a rational restart coefficient 0<α≤1. Define the target-first kernel
+
+\[
+K_\alpha(t,s)=(1-\alpha)\mathbf1_{t=s}+\alpha\pi(t).
+\]
+
+Then K is nonnegative and **column-stochastic**:
+
+\[
+\sum_tK_\alpha(t,s)=(1-\alpha)+\alpha\sum_t\pi(t)=1.
+\]
+
+It therefore determines a valid instance of the existing **RootHeatState.HeatKernel** structure, with no independent Markov axiom. For every nonnegative input heat h:R→ℚ with total M=Σₛ h(s),
+
+\[
+(K_\alpha h)(t)=(1-\alpha)h(t)+\alpha M\pi(t).
+\]
+
+For n≥0, by induction and mass conservation,
+
+\[
+(K_\alpha^n h)(t)
+=(1-\alpha)^n h(t)
++\bigl(1-(1-\alpha)^n\bigr)M\pi(t).
+\]
+
+This gives **exact rational spectral attenuation** 1−α on the zero-total-mass sector and a one-dimensional stationary sector along π. In particular, for normalized probability input, total-variation distance to π contracts **exactly** by (1−α)^n, even when some π(r)=0. It is not a physical Yang–Mills or Navier–Stokes generator.
+
+### Theorem K — necessary and sufficient weighted-type support, uniform finite-time floor
+
+Let c:R→T label the **required types**; let T be finite nonempty. Define the stationary type mass πθ=Σ_{r:c(r)=θ}π(r). Exactly,
+
+\[
+M_\theta(K_\alpha^n h)
+=(1-\alpha)^n M_\theta(h)
+ +\bigl(1-(1-\alpha)^n\bigr)M\pi_\theta.
+\]
+
+With nonnegative h and M>0, for every n≥1,
+
+\[
+M_\theta(K_\alpha^n h)\ge\alpha M\pi_\theta.
+\]
+
+Thus the selected restart diffusion gives positive mass to **every required type after one step, from any positive-mass initial state, if and only if every required type has at least one state r with c(r)=θ and w(r)>0**. Mere surjectivity of c is insufficient if an entire type has zero sieve weight. Conversely, positive after one step for **every initial probability** forces πθ>0; if πθ=0, choose a point mass outside that type (possible because Z>0 elsewhere).
+
+When πθ>0 for each θ, ε=min_{θ∈T} απθ>0 is an actual **type-level positive floor**. It also yields the existing RootHeatState.RepresentativeMinorization predicate by choosing one positive-weight representative rθ of each type and δ=α min_θπ(rθ)>0, since Kα(rθ,s)≥απ(rθ) for every source s. If **every individual** w(r)>0, the stronger existing UniformMinorization follows with δ=α min_rπ(r)>0. These are explicit quantitative **suppliers** to the already written source-level theorems; they are not just assumed predicates. They are still **not proof of prime equidistribution or uniform cutoff-in-H mass**.
+
+### Theorem L — robustness to an actual stochastic-operator defect, and sharp strictness
+
+Suppose K′ is a second, **actually stochastic** target-first kernel on the same R with source-column total-variation defect
+
+\[
+d=\max_{s\in R}\frac12\sum_{t\in R}|K'(t,s)-K_\alpha(t,s)|.
+\]
+
+For any nonnegative input h of mass M and any subset A⊆R,
+
+\[
+\left|\sum_{t\in A}(K'h)(t)-\sum_{t\in A}(K_\alpha h)(t)\right|\le Md.
+\]
+
+Proof: each source-column signed difference has total sum zero; its maximal absolute subset sum equals its total variation. Average under nonnegative h and sum using the triangle inequality.
+
+Consequently, for every required type θ and every step j (even if K′ is not lumpable and the current distribution changes),
+
+\[
+M_\theta(K' h)\ \ge\ M(\alpha\pi_\theta-d).
+\]
+
+If d<α min_θ πθ, **all required types have strictly positive mass after every positive integer time** under arbitrary repeated applications of K′, from any initial probability. This relies on stochasticity, exact stationary reference weights and an actual strict TV bound. At equality, complete type coverage can fail; the explicit hostile fixture below shows the condition cannot be relaxed to nonstrict ≤ in general.
+
+### Theorem M — quotient lumpability of this exact constructor does not rescue lost types
+
+Let f:R→F be **any** surjective feature compression. Define ν(b)=Σ_{r:f(r)=b}π(r) and the target-first quotient kernel \(\bar K_\alpha(b,a)=(1-\alpha)\mathbf1_{b=a}+\alpha\nu(b)\). Let A be the fine-to-coarse aggregation matrix with A_{b,r}=1_{f(r)=b}. Then **exactly**
+
+\[
+AK_\alpha=\bar K_\alpha A
+\]
+
+because aggregated transition probabilities are (1−α) times the source feature indicator plus απ mass in each observed fiber. The quotient is stochastic. Therefore a radical-only view of the restart dynamics is **perfectly Markov-lumpable**, but it can still fail exact fine-type decoding whenever distinct fine types share the same radical. Compare the preceding general lumpability theorem and the existing K₀-shaped no-decoder source candidate; do not conflate operator fidelity with type fidelity.
+
+### Exact rational arithmetic fixture and strict error control
+
+Take R={12,18,25}, the arithmetic **positive integer radical** as coarse feature f(n)=rad(n), the distinct fine types c(n)=n (equivalently the valuation profiles in this three-state sample), and positive **engineered** weights w(n)=1+rad(n). Then
+
+\[
+w=(7,7,6),\quad Z=20,\quad
+\pi=(7/20,7/20,3/10),\quad\alpha=1/4.
+\]
+
+The exact target-first kernel and coarse quotient (coarse order f=6,5) are
+
+\[
+K_\alpha=
+\begin{pmatrix}
+67/80 & 7/80 & 7/80\\
+7/80 &67/80 &7/80\\
+3/40 &3/40 &33/40
+\end{pmatrix},
+\qquad
+\bar K_\alpha=
+\begin{pmatrix}
+37/40&7/40\\
+3/40&33/40
+\end{pmatrix}.
+\]
+
+Every column sums to 1 and AKα=K̄αA. Starting at state 12 yields positive type-18 and type-25 masses 7/80 and 3/40 after one step. The **smallest** ideal type-mass floor is α minπ=3/40.
+
+- **Strict perturbation:** decrease every source-column probability of target 25 by d=1/20 and move that mass to target 12. The resulting K′ is stochastic, TV defect exactly 1/20<3/40 and from δ₁₂ its next type-25 mass is **1/40**, attaining the theorem's lower bound.
+- **Equality hostile control:** make the same transfer with d=3/40. K′ remains stochastic, with TV defect exactly 3/40, but an initial state 12 has **zero** next type-25 mass. The strict inequality is essential. This modified kernel is still lumpable through the radical observation; lumpability alone does not guarantee fine type coverage.
+- **Type-information boundary:** at stationary π, the best decoder using only the two radical labels misclassifies fine input type with probability **7/20**, since the radical-6 class contains both 12 and 18 with weights 7/20 each. Exact coarse dynamics therefore do not imply exact fine type reconstruction.
+
+**Actually executed preflight:** local Python standard-library fractions.Fraction command, exit **0**. Checked exact rational normalization and source-column stochasticity, AKα=K̄αA, exact K powers and trajectories through 13 steps, both perturbed stochastic kernels with their exact TV deviations, and the sharp equality counterexample. These are **finite evidence**, not Lean elaboration/kernel acceptance and not a theorem about genuine infinite arithmetic sieve density.
+
+### Next precise source and verification dependency
+
+Once existing gate #1267 is resolved, the first **new** dependent-free Lean addition should reuse the **existing RootHeatState.HeatKernel** and be confined to that module's mathematical subject: a constructor from nonnegative rational weights, positive Z and 0<α≤1, with **column** stochasticity and the exact one-step formula. The second theorem should derive the already-present RepresentativeMinorization (or, when all w(r)>0, UniformMinorization) and thus instantiate the existing type-completeness consumer. After that, prove the TV-defect robust floor, and only then coarse aggregation commutation and type decoder separation. Proposed declarations are **NOT_YET_WRITTEN**. For each actual addition re-pin the resulting math commit/blob and imports, compile via pinned Lake, run supported fresh kernel checking and full transitive #print axioms, and record commands/exits/receipts in grwtsk/noeaaeue outside math.
+
+**Standing controls:** Tao (2009) is the external hyperdissipative PDE result only, not a proof of this deliberately designed kernel, classical 3D Navier–Stokes regularity, or a physical Yang–Mills mass gap. Existing K₀ port is generic algebraic group completion; do not infer analytic K-theory. Finite type coverage after engineered restart is not actual all-cutoff arithmetic type completeness. No remote execution dispatch, no root promotion, no force push or merge. Gate #1267 remains active; new Lean compilation/kernel/axiom checks **NOT_RUN**.
