@@ -1236,4 +1236,53 @@ theorem primeValuation_radical_pow_collision
     simpa only [primeValuationType, htwo, hone] using heq
   norm_num at hfalse
 
+/-- The exact prime-p valuation type is a *certified arithmetic*
+type hit from source 1 at graph depth 1, at every positive buffered
+diffusion step, once the cutoff exceeds 3*p^(k+1).
+This connects the source-dependent Markov weights to the already
+certified arithmetic graph rather than claiming a new candidate edge
+or a single finite cutoff for all natural types. -/
+theorem primeValuation_buffered_eventually_certified_hit
+    (p k : ℕ) (hp : Nat.Prime p) (hcop : Nat.Coprime p 3) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          (certifiedArithmeticInventory 3 N hN).sieveTypeHit
+            1 (primeValuationType p)
+            (fun _ n => (bufferedDiagonalKernel 3 N hN).evolve
+              initial (depth + 1) n) 1 k := by
+  refine ⟨primeValuationPeriod p k, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : 0 < primeValuationPeriod p k :=
+    primeValuationPeriod_pos p k hp
+  have hquot : 1 ≤ N / primeValuationPeriod p k := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hscope :
+      primeValuationProgression p k 0 ∈ scope N :=
+    primeValuationProgression_mem_scope p k N 0 hp (by omega)
+  have hcoprime :
+      Nat.Coprime (primeValuationProgression p k 0) 3 :=
+    primeValuationProgression_coprime_three p k 0 hp hcop
+  have hreach :
+      primeValuationProgression p k 0 ∈
+        (certifiedArithmeticInventory 3 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 3 N hN]
+    exact Finset.mem_filter.mpr ⟨hscope, hcoprime⟩
+  have hrate :
+      (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ :=
+    bufferedDiagonalKernel_rate_pos N hN
+  have hpositive :
+      0 < (bufferedDiagonalKernel 3 N hN).evolve initial
+        (depth + 1) (primeValuationProgression p k 0) :=
+    hrate.trans_le
+      (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        3 N hN initial hnonneg hmass depth
+        (primeValuationProgression p k 0) hscope hcoprime)
+  exact ⟨primeValuationProgression p k 0, hreach,
+    primeValuationProgression_factorization p k 0 hp, hpositive⟩
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
