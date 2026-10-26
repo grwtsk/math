@@ -27,6 +27,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticFeature
 import GRWTSK.NumberTheory.Zeta.Riemann.WeilPositiveLimitCore
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLinePositivityCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.MirrorPairingCriterion
+import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticCompressionBoundary
 
 /-! Exact target, conditional atlas, source-bound criterion and transport interfaces;
 RH remains an open proposition until every required local and global supplier is proved. -/
