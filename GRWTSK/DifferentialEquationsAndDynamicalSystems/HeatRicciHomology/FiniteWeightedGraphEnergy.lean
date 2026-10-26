@@ -446,14 +446,20 @@ theorem graphMixedPairing_symmetric
     apply Finset.sum_congr rfl
     intro j hj
     ring
-  rw [hpoint, hpoint', hcross]
-  apply congrArg (fun x : ℚ => x -
-    ∑ i : V, ∑ j : V, v i * w i j * u j)
-  apply Finset.sum_congr rfl
-  intro i hi
-  apply Finset.sum_congr rfl
-  intro j hj
-  ring
+  calc
+    (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
+        (∑ i : V, ∑ j : V, u i * w i j * v i) -
+        (∑ i : V, ∑ j : V, u i * w i j * v j) := hpoint
+    _ = (∑ i : V, ∑ j : V, v i * w i j * u i) -
+        (∑ i : V, ∑ j : V, v i * w i j * u j) := by
+      rw [hcross]
+      congr 1
+      apply Finset.sum_congr rfl
+      intro i hi
+      apply Finset.sum_congr rfl
+      intro j hj
+      ring
+    _ = ∑ i : V, ∑ j : V, v i * (w i j * (u i - u j)) := hpoint'.symm
 
 theorem graphMixedPairing_u_Lu_eq_sum_sq
     (w : V → V → ℚ) (u : V → ℚ)
