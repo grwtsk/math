@@ -994,4 +994,187 @@ theorem seed_has_no_certified_edge (source target : SeedConcept) :
     ¬ seedInventory.certified source target := by
   simp [seedInventory, seedCertified]
 
+
+/-! ## Certified type coverage under weighted-sieve steering -/
+
+/-- A type is detected at a finite depth only if a vertex of that type is
+reachable by the *certified* relation and carries strictly positive
+diffused sieve weight. Candidate-only edges do not count. The weights
+are supplied data, not a heat-semigroup construction. -/
+def SourceSearchInventory.sieveTypeHit
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T) : Prop :=
+  ∃ vertex ∈ inventory.certifiedSearch source depth,
+    typeOf vertex = targetType ∧ 0 < diffusedSieveWeight depth vertex
+
+/-- Completeness is relative to the declared type space, certified
+reachability and the supplied diffusion/sieve weights. -/
+def SourceSearchInventory.sieveTypeCompleteAt
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ) (depth : ℕ) : Prop :=
+  ∀ targetType : T,
+    inventory.sieveTypeHit source typeOf diffusedSieveWeight depth targetType
+
+/-- A positive sieve-weighted type witness retains a certified bounded
+path. This theorem does not promote candidates to certified edges. -/
+theorem SourceSearchInventory.sieveTypeHit_has_certifiedPath
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (hit : inventory.sieveTypeHit source typeOf
+      diffusedSieveWeight depth targetType) :
+    ∃ vertex : V, ∃ length : ℕ,
+      length ≤ depth ∧
+      BoundedPath inventory.certified length source vertex ∧
+      typeOf vertex = targetType ∧
+      0 < diffusedSieveWeight depth vertex := by
+  rcases hit with ⟨vertex, member, sameType, positive⟩
+  obtain ⟨length, hlength, path⟩ :=
+    exists_boundedPath_of_mem_reachableWithin
+      inventory.vertices inventory.certified source vertex depth member
+  exact ⟨vertex, length, hlength, path, sameType, positive⟩
+
+/-- For a *finite* type space, per-type asymptotic steering to a
+positive certified witness gives a uniform stage after which every
+type is detected at every depth. The per-type steering premise is a
+genuine additional supplier, not a consequence of graph connectivity
+or positivity of an arbitrary heat kernel. -/
+theorem SourceSearchInventory.sieveTypeComplete_eventually_of_steering
+    {T : Type*} [Fintype T]
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → T) (diffusedSieveWeight : ℕ → V → ℝ)
+    (hsteering : ∀ targetType : T, ∃ cutoff : ℕ, ∀ depth : ℕ,
+      cutoff ≤ depth →
+        inventory.sieveTypeHit source typeOf
+          diffusedSieveWeight depth targetType) :
+    ∃ cutoff : ℕ, ∀ depth : ℕ, cutoff ≤ depth →
+      inventory.sieveTypeCompleteAt source typeOf
+        diffusedSieveWeight depth := by
+  classical
+  choose cutoff hcutoff using hsteering
+  refine ⟨Finset.univ.sup cutoff, ?_⟩
+  intro depth hdepth targetType
+  exact hcutoff targetType depth
+    ((Finset.le_sup (Finset.mem_univ targetType)).trans hdepth)
+
+/-- Missing certified access to one type defeats type completeness at
+that depth regardless of the assigned sieve/diffusion weights. -/
+theorem SourceSearchInventory.not_sieveTypeCompleteAt_of_missing_type
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (missing : ∀ vertex ∈ inventory.certifiedSearch source depth,
+      typeOf vertex ≠ targetType) :
+    ¬ inventory.sieveTypeCompleteAt source typeOf
+      diffusedSieveWeight depth := by
+  intro complete
+  obtain ⟨vertex, member, sameType, _⟩ := complete targetType
+  exact (missing vertex member) sameType
+
+
+/-- Total weighted-sieve/diffusion mass assigned to a target type
+*among certified-reachable vertices*. This is an abstract observable,
+not yet the concrete heat-semigroup mass from an operator model. -/
+noncomputable def SourceSearchInventory.sieveTypeMass
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T) : ℝ := by
+  classical
+  exact ((inventory.certifiedSearch source depth).filter
+    (fun vertex => typeOf vertex = targetType)).sum
+    (fun vertex => diffusedSieveWeight depth vertex)
+
+/-- Positive aggregate mass on a finite certified type fiber yields
+a positive-weight certified vertex. No nonnegativity hypothesis is
+needed for this implication: if every summand were nonpositive, the
+finite sum could not be positive. -/
+theorem SourceSearchInventory.sieveTypeHit_of_mass_pos
+    {T : Type*} (inventory : SourceSearchInventory V)
+    (source : V) (typeOf : V → T)
+    (diffusedSieveWeight : ℕ → V → ℝ)
+    (depth : ℕ) (targetType : T)
+    (massPos : 0 < inventory.sieveTypeMass source typeOf
+      diffusedSieveWeight depth targetType) :
+    inventory.sieveTypeHit source typeOf
+      diffusedSieveWeight depth targetType := by
+  classical
+  by_contra noHit
+  have hnonpos :
+      inventory.sieveTypeMass source typeOf
+        diffusedSieveWeight depth targetType ≤ 0 := by
+    unfold SourceSearchInventory.sieveTypeMass
+    apply Finset.sum_nonpos
+    intro vertex member
+    have typed := Finset.mem_filter.mp member
+    by_contra notNonpos
+    have positive : 0 < diffusedSieveWeight depth vertex :=
+      lt_of_not_ge notNonpos
+    exact noHit ⟨vertex, typed.1, typed.2, positive⟩
+  exact (not_lt_of_ge hnonpos) massPos
+
+/-- Finite-type completeness follows from **per-type eventual positive
+aggregate diffused-sieve mass on certified reachable fibers**. The
+positivity/steering premise remains an independent analytic/graph
+supplier: it is not derived here from a spectral semigroup or
+candidate-only sieve search. -/
+theorem SourceSearchInventory.sieveTypeComplete_eventually_of_mass_steering
+    {T : Type*} [Fintype T]
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → T) (diffusedSieveWeight : ℕ → V → ℝ)
+    (hsteering : ∀ targetType : T, ∃ cutoff : ℕ, ∀ depth : ℕ,
+      cutoff ≤ depth →
+        0 < inventory.sieveTypeMass source typeOf
+          diffusedSieveWeight depth targetType) :
+    ∃ cutoff : ℕ, ∀ depth : ℕ, cutoff ≤ depth →
+      inventory.sieveTypeCompleteAt source typeOf
+        diffusedSieveWeight depth := by
+  apply inventory.sieveTypeComplete_eventually_of_steering
+    source typeOf diffusedSieveWeight
+  intro targetType
+  obtain ⟨cutoff, eventuallyPositive⟩ := hsteering targetType
+  refine ⟨cutoff, ?_⟩
+  intro depth depthLe
+  exact inventory.sieveTypeHit_of_mass_pos
+    source typeOf diffusedSieveWeight depth targetType
+    (eventuallyPositive depth depthLe)
+
+
+/-- Quantitative asymptotic steering: every required type has a
+positive baseline mass margin, and the certified weighted-sieve mass
+is no smaller than its baseline minus an error which eventually falls
+strictly below the margin. Then all types are eventually detected.
+
+The error estimate and the positivity of a concrete heat/diffusion
+kernel remain separate analytic and graph-theoretic suppliers. -/
+theorem SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error
+    {T : Type*} (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → T) (diffusedSieveWeight : ℕ → V → ℝ)
+    (baselineMass : T → ℝ) (error : ℕ → ℝ) (margin : ℝ)
+    (margin_pos : 0 < margin)
+    (baseline_lower : ∀ targetType : T, margin ≤ baselineMass targetType)
+    (mass_lower : ∀ depth : ℕ, ∀ targetType : T,
+      baselineMass targetType ≤
+        inventory.sieveTypeMass source typeOf
+          diffusedSieveWeight depth targetType + error depth)
+    (error_eventually_small : ∃ cutoff : ℕ, ∀ depth : ℕ,
+      cutoff ≤ depth → error depth < margin) :
+    ∃ cutoff : ℕ, ∀ depth : ℕ, cutoff ≤ depth →
+      inventory.sieveTypeCompleteAt source typeOf
+        diffusedSieveWeight depth := by
+  obtain ⟨cutoff, hsmall⟩ := error_eventually_small
+  refine ⟨cutoff, ?_⟩
+  intro depth hdepth targetType
+  apply inventory.sieveTypeHit_of_mass_pos
+    source typeOf diffusedSieveWeight depth targetType
+  have hbaseline := baseline_lower targetType
+  have hmass := mass_lower depth targetType
+  have herr := hsmall depth hdepth
+  linarith
+
 end GRWTSK.GraphSandwichDiffusion

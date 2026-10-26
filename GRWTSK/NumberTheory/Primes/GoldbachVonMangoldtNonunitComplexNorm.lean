@@ -9,6 +9,7 @@ import Mathlib.Tactic
 The complex correction is a cast of the real nonunit von Mangoldt
 sum. Its real source is nonnegative; hence its complex norm equals
 that source, which is bounded by the finite logarithmic correction.
+The corresponding radical bound is preserved as a sharper sibling.
 No character cancellation or zero-free region is used.
 SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
@@ -35,5 +36,21 @@ theorem norm_nonunitPsiTotal_le_log_correction (q N : ℕ)
   rw [← nonunitPsiMass_eq_vonMangoldt_sum]
   rw [Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg (nonunitPsiMass_nonneg q N)]
   exact nonunitPsiMass_le_prime_count_add_log2_correction q N hq
+
+/-- The norm of the complex nonunit finite correction inherits the
+squarefree-radical budget. This is only a finite arithmetic bound;
+no character cancellation is assumed. -/
+theorem norm_nonunitPsiTotal_le_radical_correction (q N : ℕ)
+    (hq : q ≠ 0) :
+    ‖nonunitPsiTotal q N‖ ≤
+      (finitePrimeDivisorCount q N : ℝ) * Real.log (N : ℝ) +
+        (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ) := by
+  have hbound := nonunit_vonMangoldt_sum_le_radical_correction q N hq
+  rw [← nonunitPsiMass_eq_vonMangoldt_sum] at hbound
+  rw [nonunitPsiTotal_eq_canonical_cast]
+  rw [← nonunitPsiMass_eq_vonMangoldt_sum]
+  rw [Complex.norm_real, Real.norm_eq_abs,
+    abs_of_nonneg (nonunitPsiMass_nonneg q N)]
+  exact hbound
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm

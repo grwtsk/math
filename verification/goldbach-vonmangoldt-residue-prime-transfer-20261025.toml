@@ -1,0 +1,38 @@
+schema_version = "0.1"
+request_id = "goldbach-vonmangoldt-residue-prime-transfer-20261025"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "aa1f041f69f3973e3427a2db95152152ca025af4"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+source_blob = "5816184c51192fc71becb4774d5ee1676671c611"
+prior_source_blob = "bed6f48c1e47e8ef36d14ada89c3a4136258f4a3"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+priority = "P1"
+mathematical_class = "conditional_finite_prime_discrepancy_transfer_source_candidate"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_reconstruction_fullPsi_le_radical_of_vonMangoldt", "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_residuePsi_linear_main_le_of_twist_and_global"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition", "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm", "Mathlib.Tactic", "Mathlib.NumberTheory.LSeries.Dirichlet", "Mathlib.NumberTheory.DirichletCharacter.Bounds", "Mathlib.Analysis.SpecialFunctions.Log.Monotone", "Mathlib.Analysis.Complex.ExponentialBounds", "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals", "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics", "Mathlib.Analysis.SumIntegralComparisons", "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise"]
+upstream_openai_commit = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+upstream_openai_path = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+upstream_openai_blob = "46c67f4000906b1391a471d6e6396ac0da3c16a5"
+upstream_openai_declaration = "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re"
+upstream_dependency_status = "RESEARCH_REFERENCE_NOT_IMPORTED_NOT_REPLAYED"
+exact_hypotheses = "q N : Nat; q != 0; NeZero q; HasEnoughRootsOfUnity C (Monoid.exponent (ZMod q)^units); a : (ZMod q)^units; E : DirichletCharacter C q -> R; hTwists for every nonprincipal character in erase 1: norm of sum_{n=0}^N Lambda(n)*chi(n) <= E(chi); for linear-main corollary additionally M : R and hGlobal: norm(sum_{n=0}^N primePowerWeight(n) - N) <= M"
+exact_conclusion = "norm(totient(q)*unitPsiWeight(q,N,a)-N) <= sum_nonprincipal E + finitePrimeDivisorCount(q,N)*log N + log2(N)*log(radical q) + M, inclusive cutoff n <= N"
+downstream_consumers = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_reconstruction_fullPsi_le_radical", "GRWTSK.NumberTheory.Primes.GoldbachPsiThetaTransfer.norm_theta_sub_main_le_of_psi_and_correction", "GRWTSK.NumberTheory.Primes.GoldbachProgressionErrorTransfer.norm_goldbachProgressionExponentialDiscrepancy_le"]
+missing_suppliers = ["Quantitative nonprincipal Dirichlet von Mangoldt prefix bounds E(chi) with conductor/modulus/N dependence", "Quantitative global von Mangoldt prefix error M(N)", "Zero-free to finite prefix transfer: analytic continuation, growth, explicit/Perron formula, contour/tail/error control, and any exceptional-zero terms", "Verify downstream exact interface/cutoff compatibility before constructing imports", "Full transitive import closure, pinned Lean compilation, fresh checker and axiom audit"]
+receipts = "NOT_RUN"
+
+[checks]
+source_sha = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+fresh_kernel = "PENDING_SUPPORTED_INDEPENDENT_CHECKER; NOT_RUN"
+transitive_axioms = "#print axioms GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_reconstruction_fullPsi_le_radical_of_vonMangoldt; #print axioms GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_residuePsi_linear_main_le_of_twist_and_global; plus transitive dependencies and consumers; NOT_RUN"
+expected = "All declarations elaborate without sorry/admit/extra axioms; full transitive proof/axiom status inspected, never inferred from source existence"
