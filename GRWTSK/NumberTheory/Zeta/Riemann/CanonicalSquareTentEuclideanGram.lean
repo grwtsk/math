@@ -1214,7 +1214,11 @@ theorem outerSquarePrimes_eq_left_union_right (n : ℕ) :
           ⟨(Finset.mem_filter.mp hfull).1, h⟩,
           (Finset.mem_filter.mp hfull).2⟩
     rcases (not_le.mp hnotcentral) with habs
-    rcases (lt_or_gt_of_ne (ne_of_gt habs)) with hleft | hright
+    have hsplit :
+        (p : ℝ) - squareCenter n < -(squareRadius n / 2) ∨
+          squareRadius n / 2 < (p : ℝ) - squareCenter n := by
+      exact (abs_gt.mp habs)
+    rcases hsplit with hleft | hright
     · left
       exact ⟨hp, by linarith⟩
     · right
