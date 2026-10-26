@@ -1549,6 +1549,123 @@ theorem typeMass_pos_iff_positivePath
         weight weight_nonneg depth target ht).mpr
           ⟨source, hs, hsource, hpath⟩⟩
 
+/-- A positive kernel path becomes an actual certified bounded graph path
+only when every positive in-scope transition is a certified edge.
+This prevents arbitrary stochastic jumps from being mistaken for
+certified graph reachability. -/
+theorem positivePath_to_certifiedPath
+    (K : FiniteSieveMarkovKernel State)
+    (inventory : SourceSearchInventory State)
+    (support_certified :
+      ∀ x ∈ K.scope, ∀ y ∈ K.scope,
+        0 < K.transition x y → inventory.certified x y)
+    (depth : ℕ) (source target : State)
+    (target_mem : target ∈ K.scope)
+    (path : K.positivePath depth source target) :
+    BoundedPath inventory.certified depth source target := by
+  induction depth generalizing target with
+  | zero =>
+      change source = target at path
+      subst target
+      exact BoundedPath.refl source
+  | succ depth ih =>
+      change ∃ middle ∈ K.scope,
+        K.positivePath depth source middle ∧
+          0 < K.transition middle target at path
+      rcases path with ⟨middle, hm, prefix, positive⟩
+      exact BoundedPath.tail (ih middle hm prefix)
+        (support_certified middle hm target target_mem positive)
+
 end FiniteSieveMarkovKernel
+
+/-- A finite Markov type mass agrees with the existing certified
+sieveTypeMass at a fixed search depth, provided the kernel scope
+is exactly the certified-reachable set at that depth.
+No statement about the kernel's positive-edge support follows
+from the scope equality alone. -/
+theorem SourceSearchInventory.sieveTypeMass_eq_kernelTypeMass_of_scope
+    {TypeLabel : Type*}
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → TypeLabel)
+    (K : FiniteSieveMarkovKernel V)
+    (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
+    (weight : V → ℝ) (steps searchDepth : ℕ)
+    (targetType : TypeLabel) :
+    inventory.sieveTypeMass source typeOf
+      (fun _ vertex => K.evolve weight steps vertex)
+      searchDepth targetType =
+        K.typeMass weight typeOf steps targetType := by
+  classical
+  unfold SourceSearchInventory.sieveTypeMass FiniteSieveMarkovKernel.typeMass
+  rw [← scope_eq]
+
+/-- A certified type hit for the Markov-evolved weights is equivalent
+to a positive-kernel-path witness within the declared finite scope.
+The scope equivalence and nonnegative initial weights are explicit. -/
+theorem SourceSearchInventory.sieveTypeHit_iff_kernelPath_of_scope
+    {TypeLabel : Type*}
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → TypeLabel)
+    (K : FiniteSieveMarkovKernel V)
+    (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
+    (weight : V → ℝ)
+    (weight_nonneg : ∀ vertex ∈ K.scope, 0 ≤ weight vertex)
+    (steps searchDepth : ℕ) (targetType : TypeLabel) :
+    inventory.sieveTypeHit source typeOf
+        (fun _ vertex => K.evolve weight steps vertex)
+        searchDepth targetType ↔
+      ∃ target ∈ K.scope, typeOf target = targetType ∧
+        ∃ start ∈ K.scope, 0 < weight start ∧
+          K.positivePath steps start target := by
+  unfold SourceSearchInventory.sieveTypeHit
+  constructor
+  · rintro ⟨target, reachable, sameType, positive⟩
+    have target_mem : target ∈ K.scope := by
+      simpa only [scope_eq] using reachable
+    obtain ⟨start, start_mem, positiveStart, path⟩ :=
+      (K.evolve_pos_iff_positivePath weight weight_nonneg
+        steps target target_mem).mp positive
+    exact ⟨target, target_mem, sameType,
+      start, start_mem, positiveStart, path⟩
+  · rintro ⟨target, target_mem, sameType,
+      start, start_mem, positiveStart, path⟩
+    have reachable :
+        target ∈ inventory.certifiedSearch source searchDepth := by
+      simpa only [scope_eq] using target_mem
+    exact ⟨target, reachable, sameType,
+      (K.evolve_pos_iff_positivePath weight weight_nonneg
+        steps target target_mem).mpr
+          ⟨start, start_mem, positiveStart, path⟩⟩
+
+/-- Exact finite certified type completeness for a Markov-evolved
+weight field is equivalent to positive kernel paths reaching
+each type fiber. This theorem is finite and conditional on
+scope matching and nonnegative initial sieve weights. -/
+theorem SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths
+    {TypeLabel : Type*}
+    (inventory : SourceSearchInventory V) (source : V)
+    (typeOf : V → TypeLabel)
+    (K : FiniteSieveMarkovKernel V)
+    (scope_eq : K.scope = inventory.certifiedSearch source searchDepth)
+    (weight : V → ℝ)
+    (weight_nonneg : ∀ vertex ∈ K.scope, 0 ≤ weight vertex)
+    (steps searchDepth : ℕ) :
+    inventory.sieveTypeCompleteAt source typeOf
+        (fun _ vertex => K.evolve weight steps vertex)
+        searchDepth ↔
+      ∀ targetType : TypeLabel,
+        ∃ target ∈ K.scope, typeOf target = targetType ∧
+          ∃ start ∈ K.scope, 0 < weight start ∧
+            K.positivePath steps start target := by
+  unfold SourceSearchInventory.sieveTypeCompleteAt
+  constructor
+  · intro complete targetType
+    exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
+      source typeOf K scope_eq weight weight_nonneg
+        steps searchDepth targetType).mp (complete targetType)
+  · intro paths targetType
+    exact (inventory.sieveTypeHit_iff_kernelPath_of_scope
+      source typeOf K scope_eq weight weight_nonneg
+        steps searchDepth targetType).mpr (paths targetType)
 
 end GRWTSK.GraphSandwichDiffusion
