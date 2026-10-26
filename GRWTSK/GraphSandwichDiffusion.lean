@@ -3013,6 +3013,103 @@ theorem bufferedDiagonalKernel_rate_pos
     exact_mod_cast (show 0 < N by omega)
   positivity
 
+/-- Surviving representatives of one *specified* type under the
+concrete arithmetic coprimality filter. No type-existence assertion
+is built into this finite set definition. -/
+noncomputable def bufferedTypeSurvivors
+    {TypeLabel : Type*} (q N : ℕ)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) : Finset ℕ := by
+  classical
+  exact (scope N).filter
+    (fun target => typeOf target = targetType ∧ Nat.Coprime target q)
+
+/-- For any nonnegative unit-mass initial input and any positive
+iteration count, the type's mass is at least its number of surviving
+representatives divided by 4*N. This converts a separately proved
+arithmetic survivor count into a mass rate, with no character
+cancellation or fabricated density premise. -/
+theorem bufferedDiagonalKernel_typeMass_ge_survivor_count
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_mass_one : (∑ x ∈ scope N, initial x) = 1)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) (depth : ℕ) :
+    ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) *
+        ((4 : ℝ) * (N : ℝ))⁻¹ ≤
+      (bufferedDiagonalKernel q N hN).typeMass initial typeOf
+        (depth + 1) targetType := by
+  classical
+  let survivors := bufferedTypeSurvivors q N typeOf targetType
+  let fibers := (scope N).filter (fun target => typeOf target = targetType)
+  have hsub : survivors ⊆ fibers := by
+    intro target ht
+    obtain ⟨hscope, htype, hc⟩ := Finset.mem_filter.mp ht
+    exact Finset.mem_filter.mpr ⟨hscope, htype⟩
+  have hnonneg :
+      ∀ target ∈ scope N,
+        0 ≤ (bufferedDiagonalKernel q N hN).evolve initial
+          (depth + 1) target :=
+    (bufferedDiagonalKernel q N hN).evolve_nonneg
+      initial initial_nonneg (depth + 1)
+  calc
+    ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) *
+        ((4 : ℝ) * (N : ℝ))⁻¹ =
+      ∑ target ∈ survivors, ((4 : ℝ) * (N : ℝ))⁻¹ := by
+        simp [survivors]
+    _ ≤ ∑ target ∈ survivors,
+          (bufferedDiagonalKernel q N hN).evolve initial
+            (depth + 1) target := by
+      apply Finset.sum_le_sum
+      intro target ht
+      obtain ⟨hscope, htype, hc⟩ := Finset.mem_filter.mp ht
+      exact bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        q N hN initial initial_nonneg initial_mass_one
+        depth target hscope hc
+    _ ≤ ∑ target ∈ fibers,
+          (bufferedDiagonalKernel q N hN).evolve initial
+            (depth + 1) target := by
+      apply Finset.sum_le_sum_of_subset_of_nonneg hsub
+      intro target ht _
+      exact hnonneg target (Finset.mem_filter.mp ht).1
+    _ = (bufferedDiagonalKernel q N hN).typeMass initial
+          typeOf (depth + 1) targetType := rfl
+
+/-- A supplied lower count of c*N surviving representatives gives
+the *cutoff-independent* lower bound c/4 on type mass in the
+buffered model. Proving that count for a concrete type is a distinct
+arithmetic obligation; no asymptotic density is assumed implicitly. -/
+theorem bufferedDiagonalKernel_typeMass_ge_of_survivor_density
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_mass_one : (∑ x ∈ scope N, initial x) = 1)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel)
+    (density : ℝ) (depth : ℕ)
+    (count_lower :
+      density * (N : ℝ) ≤
+        ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ)) :
+    density / 4 ≤
+      (bufferedDiagonalKernel q N hN).typeMass initial typeOf
+        (depth + 1) targetType := by
+  have hNpos : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  have hBpos : (0 : ℝ) < (4 : ℝ) * (N : ℝ) := by positivity
+  have hscaled :
+      density / 4 ≤
+        ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) *
+          ((4 : ℝ) * (N : ℝ))⁻¹ := by
+    change density / 4 ≤
+      ((bufferedTypeSurvivors q N typeOf targetType).card : ℝ) /
+        ((4 : ℝ) * (N : ℝ))
+    apply (div_le_div_iff₀ (by norm_num : (0 : ℝ) < 4) hBpos).mpr
+    nlinarith [count_lower]
+  exact hscaled.trans
+    (bufferedDiagonalKernel_typeMass_ge_survivor_count
+      q N hN initial initial_nonneg initial_mass_one
+      typeOf targetType depth)
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
