@@ -344,4 +344,57 @@ theorem graphEulerHeat_pairing_le_of_correction_budget
   rw [hmixed] at hexpand
   nlinarith
 
+/-! ## Explicit correction budget from graph degree
+
+The spectral-radius estimate is isolated as an exact finite
+hypothesis, rather than inferred from the CFL maximum principle.
+A bound on the graph Laplacian quadratic form at its own image
+provides a sufficient step-size criterion for Euler dissipation.
+-/
+
+/-- The largest degree is bounded by an explicitly supplied
+rational constant. -/
+def DegreeBound (w : V → V → ℚ) (D : ℚ) : Prop :=
+  ∀ i, weightedDegree w i ≤ D
+
+/-- A spectral quadratic-form upper bound on the Laplacian image.
+This remains an independent finite operator estimate. -/
+def LaplacianImageBound (w : V → V → ℚ) (D : ℚ) : Prop :=
+  ∀ u : V → ℚ,
+    graphLaplacianPairing w (weightedGraphLaplacian w u) ≤
+      2 * D * graphMixedPairing w u (weightedGraphLaplacian w u)
+
+/-- The image-form estimate and τD ≤ 1 discharge the exact
+second-order correction budget. -/
+theorem graphEulerHeat_correction_budget_of_image_bound
+    (w : V → V → ℚ) (u : V → ℚ)
+    (τ D : ℚ) (hτ : 0 ≤ τ) (hD : 0 ≤ D)
+    (hstep : τ * D ≤ 1)
+    (himage : LaplacianImageBound w D)
+    (hmixednonneg :
+      0 ≤ graphMixedPairing w u (weightedGraphLaplacian w u)) :
+    τ * graphLaplacianPairing w (weightedGraphLaplacian w u) ≤
+      2 * graphMixedPairing w u (weightedGraphLaplacian w u) := by
+  have h := himage u
+  have hscaled := mul_le_mul_of_nonneg_left h hτ
+  nlinarith
+
+/-- A verified image-form bound, symmetric mixed pairing and
+the explicit step restriction imply genuine Euler dissipation. -/
+theorem graphEulerHeat_pairing_le_of_image_bound
+    (w : V → V → ℚ) (u : V → ℚ)
+    (τ D : ℚ) (hτ : 0 ≤ τ) (hD : 0 ≤ D)
+    (hstep : τ * D ≤ 1)
+    (himage : LaplacianImageBound w D)
+    (hmixednonneg :
+      0 ≤ graphMixedPairing w u (weightedGraphLaplacian w u))
+    (hmixed :
+      graphMixedPairing w u (weightedGraphLaplacian w u) =
+        graphMixedPairing w (weightedGraphLaplacian w u) u) :
+    graphLaplacianPairing w (graphEulerHeat w τ u) ≤
+      graphLaplacianPairing w u := by
+  apply graphEulerHeat_pairing_le_of_correction_budget w u τ hτ hmixed
+  exact graphEulerHeat_correction_budget_of_image_bound
+    w u τ D hτ hD hstep himage hmixednonneg
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
