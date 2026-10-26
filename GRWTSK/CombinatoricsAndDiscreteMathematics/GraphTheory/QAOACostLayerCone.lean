@@ -93,10 +93,8 @@ theorem endpoint_mem_incidentClosure
   right
   apply Finset.mem_biUnion.mpr
   refine ⟨e, he, ?_⟩
-  simpa [touches] using (show w ∈
-    (if e.1 ∈ S ∨ e.2 ∈ S then ({e.1, e.2} : Finset V) else ∅) from by
-      simp [touches] at ht
-      simp [ht, hw])
+  have ht' : e.1 ∈ S ∨ e.2 ∈ S := ht
+  simpa [ht'] using hw
 
 /-- The incident-edge energy depends only on spins within the one-step
     closure; edges not originally incident to S are never introduced. -/
