@@ -233,4 +233,96 @@ theorem mixerHeisenbergPolynomial_local
   · rw [mixerHeisenbergPolynomial_eq_of_outside β v S K hK hv]
     exact hK
 
+/-- The Pauli-X mixer matrix kernel is symmetric under swapping its indices. -/
+theorem mixerKernel_symmetric (β : ℝ) (v : V)
+    (σ τ : Configuration V) :
+    mixerKernel β v σ τ = mixerKernel β v τ σ := by
+  have hdiag : (σ = τ) ↔ (τ = σ) := eq_comm
+  have hflip : (σ = flipAt v τ) ↔ (τ = flipAt v σ) :=
+    eq_flipAt_iff v σ τ
+  unfold mixerKernel
+  simp only [hdiag, hflip]
+
+/-- Left matrix multiplication by the mixer is the existing Pauli-X
+    amplitude update applied to every column of the operator kernel. -/
+theorem kernelComposition_mixer_left
+    (β : ℝ) (v : V) (K : Kernel V)
+    (σ τ : Configuration V) :
+    kernelComposition (mixerKernel β v) K σ τ =
+      (Real.cos β : ℂ) * K σ τ -
+        (Complex.I * (Real.sin β : ℂ)) * K (flipAt v σ) τ := by
+  change
+    kernelAction (mixerKernel β v) (fun ρ => K ρ τ) σ =
+      (Real.cos β : ℂ) * K σ τ -
+        (Complex.I * (Real.sin β : ℂ)) * K (flipAt v σ) τ
+  rw [mixerKernel_action_eq_mixerAt]
+  rfl
+
+/-- Right matrix multiplication by the symmetric mixer gives the
+    corresponding update on the second kernel coordinate. -/
+theorem kernelComposition_mixer_right
+    (β : ℝ) (v : V) (K : Kernel V)
+    (σ τ : Configuration V) :
+    kernelComposition K (mixerKernel β v) σ τ =
+      (Real.cos β : ℂ) * K σ τ -
+        (Complex.I * (Real.sin β : ℂ)) * K σ (flipAt v τ) := by
+  calc
+    kernelComposition K (mixerKernel β v) σ τ =
+        kernelAction (mixerKernel β v) (fun ρ => K σ ρ) τ := by
+      unfold kernelComposition kernelAction
+      apply Finset.sum_congr rfl
+      intro ρ hρ
+      rw [mixerKernel_symmetric β v ρ τ]
+      ring
+    _ = mixerAt β v (fun ρ => K σ ρ) τ := by
+      rw [mixerKernel_action_eq_mixerAt]
+    _ = (Real.cos β : ℂ) * K σ τ -
+          (Complex.I * (Real.sin β : ℂ)) * K σ (flipAt v τ) := rfl
+
+/-- The exact two-sided matrix product of a reverse-angle mixer,
+    an arbitrary kernel, and the forward-angle mixer. -/
+noncomputable def mixerKernelConjugation
+    (β : ℝ) (v : V) (K : Kernel V) : Kernel V :=
+  kernelComposition (mixerKernel (-β) v)
+    (kernelComposition K (mixerKernel β v))
+
+/-- This actual two-sided finite matrix product equals the explicit
+    four-term Pauli-X conjugation polynomial, with its exact sign. -/
+theorem mixerKernelConjugation_eq_polynomial
+    (β : ℝ) (v : V) (K : Kernel V) :
+    mixerKernelConjugation β v K =
+      mixerHeisenbergPolynomial β v K := by
+  funext σ τ
+  change
+    kernelComposition (mixerKernel (-β) v)
+      (kernelComposition K (mixerKernel β v)) σ τ =
+      mixerHeisenbergPolynomial β v K σ τ
+  rw [kernelComposition_mixer_left,
+    kernelComposition_mixer_right, kernelComposition_mixer_right]
+  simp only [Real.cos_neg, Real.sin_neg]
+  unfold mixerHeisenbergPolynomial
+  push_cast
+  ring_nf
+  simp only [Complex.I_sq]
+  ring
+
+/-- Mixer conjugation at any one site preserves the exact tensor support,
+    not merely the union with that site. -/
+theorem mixerKernelConjugation_local
+    (β : ℝ) (v : V) (S : Finset V)
+    (K : Kernel V) (hK : IsLocalKernel S K) :
+    IsLocalKernel S (mixerKernelConjugation β v K) := by
+  rw [mixerKernelConjugation_eq_polynomial]
+  exact mixerHeisenbergPolynomial_local β v S K hK
+
+/-- If the mixer site is outside the observable support, two-sided
+    reverse-/forward-angle mixer multiplication fixes the full kernel. -/
+theorem mixerKernelConjugation_eq_of_outside
+    (β : ℝ) (v : V) (S : Finset V)
+    (K : Kernel V) (hK : IsLocalKernel S K)
+    (hv : v ∉ S) :
+    mixerKernelConjugation β v K = K := by
+  rw [mixerKernelConjugation_eq_polynomial]
+  exact mixerHeisenbergPolynomial_eq_of_outside β v S K hK hv
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.QAOAMixerKernelSupport
