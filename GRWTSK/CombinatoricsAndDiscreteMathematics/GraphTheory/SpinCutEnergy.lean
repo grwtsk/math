@@ -70,7 +70,7 @@ theorem spin_oriented_difference_sq (a b : Bool) :
 theorem edgeEnergy_eq_four_cutSize
     (G : SimpleEdgePresentation V) (σ : V → Bool) :
     edgeEnergy G σ = 4 * cutSize G σ := by
-  unfold edgeEnergy
+  unfold edgeEnergy cutSize
   rw [Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro e he
@@ -81,7 +81,7 @@ theorem edgeEnergy_eq_four_cutSize
 theorem orientedEnergy_eq_eight_cutSize
     (G : SimpleEdgePresentation V) (σ : V → Bool) :
     orientedEnergy G σ = 8 * cutSize G σ := by
-  unfold orientedEnergy
+  unfold orientedEnergy cutSize
   rw [Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro e he
