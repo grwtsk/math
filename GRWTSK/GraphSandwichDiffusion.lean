@@ -2806,6 +2806,109 @@ theorem bufferedDiagonalEdgeWeight_le_four_cutoff
   have hweight := bufferedRadicalWeight_le_two_cutoff q N target ht
   split_ifs <;> nlinarith
 
+/-- Every row of the buffered edge weight has positive total
+weight when N≥1, since target 1 survives every modulus. -/
+theorem bufferedDiagonalRowMass_pos
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    0 < ∑ target ∈ scope N,
+      bufferedDiagonalEdgeWeight q N source target := by
+  apply Finset.sum_pos'
+  · intro target ht
+    exact bufferedDiagonalEdgeWeight_nonneg q N source target
+  · have hOne : (1 : ℕ) ∈ scope N := by
+      change (1 : ℕ) ∈ Finset.Icc 1 N
+      exact Finset.mem_Icc.mpr ⟨le_refl _, hN⟩
+    have hc : Nat.Coprime 1 q := by simp
+    have hNpos : (0 : ℝ) < (N : ℝ) := by
+      exact_mod_cast (show 0 < N by omega)
+    have hraw : 0 < bufferedRadicalWeight q N 1 :=
+      hNpos.trans_le
+        (bufferedRadicalWeight_ge_cutoff_of_coprime q N 1 hc)
+    refine ⟨1, hOne, ?_⟩
+    unfold bufferedDiagonalEdgeWeight
+    exact mul_pos (diagonalBoost_pos source 1) hraw
+
+/-- The buffered raw outgoing mass is at most 4*N², uniformly over
+its in-scope source. No analytic prime-counting estimate enters. -/
+theorem bufferedDiagonalRowMass_le_four_cutoff_sq
+    (q N : ℕ) (hN : 1 ≤ N) (source : ℕ) :
+    (∑ target ∈ scope N,
+      bufferedDiagonalEdgeWeight q N source target) ≤
+        (4 : ℝ) * (N : ℝ) * (N : ℝ) := by
+  calc
+    (∑ target ∈ scope N,
+      bufferedDiagonalEdgeWeight q N source target) ≤
+        ∑ _target ∈ scope N, (4 : ℝ) * (N : ℝ) :=
+      Finset.sum_le_sum (fun target ht =>
+        bufferedDiagonalEdgeWeight_le_four_cutoff q N source target ht)
+    _ = ((scope N).card : ℝ) * ((4 : ℝ) * (N : ℝ)) := by
+      simp
+    _ = (4 : ℝ) * (N : ℝ) * (N : ℝ) := by
+      rw [scope_card N hN]
+      ring
+
+/-- A finite row-stochastic, source-dependent sieve kernel whose raw
+coprime targets carry a cutoff-dependent positive floor. This model
+is **distinct** from the preceding pure-radical diagonalKernel. -/
+noncomputable def bufferedDiagonalKernel
+    (q N : ℕ) (hN : 1 ≤ N) : FiniteSieveMarkovKernel ℕ :=
+  FiniteSieveMarkovKernel.normalizedEdgeKernel
+    (scope N) (bufferedDiagonalEdgeWeight q N)
+    (by
+      intro x hx y hy
+      exact bufferedDiagonalEdgeWeight_nonneg q N x y)
+    (by
+      intro x hx
+      exact bufferedDiagonalRowMass_pos q N hN x)
+
+/-- Explicit positive transition support is still exactly the
+arithmetic coprimality filter on in-scope source and target states. -/
+theorem bufferedDiagonalKernel_transition_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N) (target_mem : target ∈ scope N) :
+    0 < (bufferedDiagonalKernel q N hN).transition source target ↔
+      Nat.Coprime target q := by
+  unfold bufferedDiagonalKernel
+  have hnormalized :=
+    FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_pos_iff
+      (scope N) (bufferedDiagonalEdgeWeight q N)
+      (by
+        intro x hx y hy
+        exact bufferedDiagonalEdgeWeight_nonneg q N x y)
+      (by
+        intro x hx
+        exact bufferedDiagonalRowMass_pos q N hN x)
+      source target source_mem target_mem
+  apply hnormalized.trans
+  unfold bufferedDiagonalEdgeWeight
+  rw [mul_pos_iff_of_pos_left (diagonalBoost_pos source target)]
+  constructor
+  · intro positive
+    by_contra hnot
+    have hz : bufferedRadicalWeight q N target = 0 := by
+      simp [bufferedRadicalWeight, hnot]
+    rw [hz] at positive
+    exact (lt_irrefl (0 : ℝ)) positive
+  · intro hc
+    have hNpos : (0 : ℝ) < (N : ℝ) := by
+      exact_mod_cast (show 0 < N by omega)
+    exact hNpos.trans_le
+      (bufferedRadicalWeight_ge_cutoff_of_coprime q N target hc)
+
+/-- Every strictly positive buffered transition is an edge of the
+existing concrete certified arithmetic inventory. -/
+theorem bufferedDiagonalKernel_edge_iff_certified
+    (q N : ℕ) (hN : 1 ≤ N)
+    (source target : ℕ)
+    (source_mem : source ∈ scope N) (target_mem : target ∈ scope N) :
+    0 < (bufferedDiagonalKernel q N hN).transition source target ↔
+      (certifiedArithmeticInventory q N hN).certified source target := by
+  rw [bufferedDiagonalKernel_transition_pos_iff_coprime
+    q N hN source target source_mem target_mem]
+  change Nat.Coprime target q ↔ positiveSieveEdge q N source target
+  simp [positiveSieveEdge, source_mem, target_mem]
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
