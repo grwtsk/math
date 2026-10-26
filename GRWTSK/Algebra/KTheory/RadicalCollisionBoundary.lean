@@ -2163,4 +2163,42 @@ theorem jointTwoThreeValuation_no_exact_radical_decoder
     1 jointTwoThreeValuationType (kZeroRadical lift) 1
     hreach2 hreach4 hfeature htype
 
+/-- Every **finite family** of joint (v₂,v₃) target labels shares
+one sufficiently large cutoff and one modulus-five buffered sieve
+whose Markov dynamics simultaneously assign the appropriate
+positive, type-dependent lower bound to each label in the family.
+The cutoff is explicit: one plus the sum of their periods.
+This finite-family theorem does not contradict impossibility of
+covering the entire infinite type space at any finite N. -/
+theorem jointTwoThreeValuation_finite_family_mass_ge_fixed_rates
+    (labels : Finset (ℕ × ℕ)) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ (depth : ℕ) (label : ℕ × ℕ),
+          label ∈ labels →
+          (1 : ℝ) /
+              (8 * (jointTwoThreeValuationPeriod label.1 label.2 : ℝ)) ≤
+            (bufferedDiagonalKernel 5 N hN).typeMass
+              initial jointTwoThreeValuationType (depth + 1) label := by
+  classical
+  let cutoff : ℕ :=
+    1 + ∑ label ∈ labels,
+      jointTwoThreeValuationPeriod label.1 label.2
+  refine ⟨cutoff, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth label hlabel
+  have hsingle :
+      jointTwoThreeValuationPeriod label.1 label.2 ≤
+        ∑ t ∈ labels, jointTwoThreeValuationPeriod t.1 t.2 :=
+    Finset.single_le_sum
+      (fun t ht => Nat.zero_le (jointTwoThreeValuationPeriod t.1 t.2))
+      hlabel
+  have hperiod : jointTwoThreeValuationPeriod label.1 label.2 ≤ N := by
+    dsimp [cutoff] at hcutoff
+    omega
+  exact jointTwoThreeValuation_buffered_mass_ge_fixed_rate
+    label.1 label.2 N hN hperiod initial hnonneg hmass depth
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
