@@ -192,4 +192,56 @@ theorem refinement_after_heat_gap_le
   exact refined_heat_gap_le R sourcePair scale c t
     ht0 ht1 hgap a b u
 
+/-! ## Concrete pullback refinement
+
+A coordinate pullback is a genuine rational linear map. It preserves
+every constant field and exactly transports pairwise gaps through
+the corresponding source index pair. This is an exact finite
+refinement example, not a smoothing or Hodge projection.
+-/
+
+/-- Coordinate pullback along an index map. -/
+def pullbackRefinement {ι κ : Type*} (f : κ → ι) :
+    (ι → ℚ) →ₗ[ℚ] (κ → ℚ) where
+  toFun := fun u a => u (f a)
+  map_add' := by
+    intro u v
+    funext a
+    rfl
+  map_smul' := by
+    intro c u
+    funext a
+    rfl
+
+/-- Pullback preserves the constant reference field. -/
+theorem pullback_preserves_reference
+    {ι κ : Type*} (f : κ → ι) (c : ℚ) :
+    pullbackRefinement f (fun _ : ι => c) = (fun _ : κ => c) := by
+  rfl
+
+/-- Pullback is gap nonexpansive with exact equality when the
+designated source pair is the pulled-back output pair. -/
+theorem pullback_gapNonexpansive
+    {ι κ : Type*} (f : κ → ι) (scale : ℚ) :
+    GapNonexpansive (pullbackRefinement f)
+      (fun a b => (f a, f b)) scale := by
+  intro u a b
+  exact le_refl _
+
+/-- Concrete heat-refinement gap contraction, with no abstract
+GapNonexpansive certificate supplied by the caller. -/
+theorem pullback_refinement_heat_gap_le
+    {ι κ : Type*} (f : κ → ι)
+    (scale c t : ℚ) (ht0 : 0 ≤ t) (ht1 : t ≤ 1)
+    (u : ι → ℚ) (a b : κ) :
+    proportionalGap scale
+      (pullbackRefinement f (heatField c t u) a)
+      (pullbackRefinement f (heatField c t u) b) ≤
+      (1 - t) * proportionalGap scale (u (f a)) (u (f b)) := by
+  exact refinement_after_heat_gap_le
+    (pullbackRefinement f) (fun x y => (f x, f y))
+    scale c t ht0 ht1
+    (pullback_preserves_reference f c)
+    (pullback_gapNonexpansive f scale) a b u
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
