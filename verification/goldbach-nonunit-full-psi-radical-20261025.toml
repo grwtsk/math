@@ -1,0 +1,89 @@
+# P0 source-pinned verification request; no compiler or kernel receipt.
+schema_version = "0.1"
+request_id = "goldbach-nonunit-full-psi-radical-20261025"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "bffe3410d8652c736943a6385496169ef4ecd051"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean"
+source_blob = "4f388c029b966ad922bf597a034e1ceaedae7e92"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "finite_arithmetic_source_candidate"
+exact_hypotheses = "q N : Nat; hq : q != 0. Inclusive cutoff N, with N=0 or N=1 permitted; q=1 permitted; q=0 excluded."
+radical_conclusion = "nonunitPsiMass q N <= finitePrimeDivisorCount q N * Real.log N + Nat.log2 N * Real.log (Nat.radical q)"
+coarse_conclusion = "nonunitPsiMass q N <= finitePrimeDivisorCount q N * Real.log N + Nat.log2 N * Real.log q"
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitPsiMass_le_count_mul_log_add_log2_mul_log_radical",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitPsiMass_le_count_mul_log_add_log2_mul_log",
+]
+preserved_local_declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitProperPowerMass_le_log2_mul_log_radical",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitProperPowerMass_le_log2_mul_log",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer.nonunitPrimeMass_le_count_mul_log_unconditional",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitSplit.nonunitPsiMass_eq_prime_add_proper",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorMassBound",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer",
+]
+inspected_local_supplier_paths = [
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitSplit.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorMassBound.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogComparison.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeBudget.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeSupport.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitBudget.lean",
+]
+inspected_local_supplier_blobs = [
+ "7f747336b0ff7fe40747de338d81739cc50a0ad0",
+ "24436a3d629f97e183a7f7b528a02132b12225e7",
+ "ad7175e02ccab0fec9747a4fb4dad5e7491e7ee7",
+ "761bf0e22b0dbb698d58b4d6acacd33aee55c2f0",
+ "ec40db9ca79aefab8f6727c21b8b70e03d4b9bda",
+ "57927ae5bb6e52c03456fb7930c3ea9794db3dfb",
+ "218fc7a3ad155e63d7096d9f0b8b0411322375fb",
+]
+known_proof_dependencies = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitSplit.nonunitPsiMass_eq_prime_add_proper",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer.nonunitPrimeMass_le_count_mul_log_unconditional",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitProperPowerMass_le_log2_mul_log_radical",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitProperPowerMass_le_log2_mul_log",
+]
+missing_checks = [
+ "Full transitive local and Mathlib dependency closure and no cyclic imports",
+ "Compile and elaborate full pinned chain at the exact mathematical source commit",
+ "Fresh independently supported kernel checking of both new declarations and imported suppliers",
+ "Transitive #print axioms audit including downstream consumers",
+ "Record exact stdout, stderr, exit codes, imports, checker identity and receipt location outside the math repository",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = bffe3410d8652c736943a6385496169ef4ecd051 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean)\" = 4f388c029b966ad922bf597a034e1ceaedae7e92 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean)\" = 7f747336b0ff7fe40747de338d81739cc50a0ad0 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitSplit.lean)\" = 24436a3d629f97e183a7f7b528a02132b12225e7 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorMassBound.lean)\" = ad7175e02ccab0fec9747a4fb4dad5e7491e7ee7 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogComparison.lean)\" = 761bf0e22b0dbb698d58b4d6acacd33aee55c2f0"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+support_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport"
+prime_budget_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget"
+prime_transfer_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer"
+proper_radical_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogComparison"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean"
+fresh_kernel = "PENDING_SUPPORTED_INDEPENDENT_CHECKER_CAPABILITY"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_TRANSITIVE_AXIOM_CENSUS"
+axiom_targets = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitPsiMass_le_count_mul_log_add_log2_mul_log_radical",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound.nonunitPsiMass_le_count_mul_log_add_log2_mul_log",
+]
+expected_compiler_exit_code = 0
+expected_elaboration_exit_code = 0
