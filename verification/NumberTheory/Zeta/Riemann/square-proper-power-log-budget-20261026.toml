@@ -1,0 +1,33 @@
+schema = "grwtsk.source-verification-requirements/1"
+attribution = "grwtsk contributors"
+issue = 1317
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentEuclideanGram.lean"
+status = "SOURCE_PROOF_CANDIDATE"
+native_compile = "NOT_RUN"
+kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exact_type_consumers = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.squareIncrement_le_prime_upper_add_log_correction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.relative_moment_gap_of_central_prime_count_with_log_correction",
+]
+required_supplier_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.squareIncrement_decomposition",
+  "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.source_correction_bounds",
+  "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers.higherPrimePowerMass_le_log_budget",
+]
+required_gates = [
+  "Fresh immutable project and upstream import closure with pinned toolchain and manifest",
+  "Complete compiler-origin census of the target and both supplier modules",
+  "Every required structural declaration name and transitive axiom closure",
+  "All five independently authored exact types in fresh qualified importing modules",
+  "Affected importers and root GRWTSK remain separate acceptance obligations",
+]
+scope = "For n >= 1, reuse the actual full-source decomposition and logarithmic proper-power bound without changing the original all-n residual interface"
+missing_bridges = [
+  "Actual prime-only squarePrimeIncrement upper bound Uprime",
+  "Actual central prime-count lower bound relative to the combined budget",
+  "Native qualification of every reused supplier and the two new proof candidates",
+]
+excluded_inferences = ["Unconditional prime existence", "Uniform short-interval prime estimates", "RH", "Infinite zero-sum exchange", "Operator or physical mass identification"]

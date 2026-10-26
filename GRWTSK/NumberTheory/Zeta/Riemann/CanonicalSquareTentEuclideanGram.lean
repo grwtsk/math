@@ -1027,4 +1027,41 @@ theorem relative_moment_gap_of_central_prime_count_with_residual
   exact relative_moment_gap_of_central_prime_count_short_interval
     n δ (Uprime + Uproper) hδ hsource hcount
 
+/-! ## Actual higher-power supplier for the residual interface
+
+The imported source already identifies the complete higher-prime-power
+correction and bounds it logarithmically. Reuse that result for n >= 1;
+the original all-n residual interface above is unchanged. The prime-source
+upper bound and central prime-count lower bound remain explicit premises.
+SOURCE_PROOF_CANDIDATES / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+/-- Bound the actual full source using its actual prime-only increment and
+the existing logarithmic higher-power correction, retaining n >= 1. -/
+theorem squareIncrement_le_prime_upper_add_log_correction
+    (n : ℕ) (hn : 1 ≤ n) (Uprime : ℝ)
+    (hprime : squarePrimeIncrement n ≤ Uprime) :
+    squareIncrement n ≤ Uprime +
+      2 * Real.log (n + 1 : ℕ) *
+        Real.log (GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers.exponentCutoff n) := by
+  have hproper := (source_correction_bounds n hn).2
+  linarith
+
+/-- The explicit logarithmic proper-power bound supplies Uproper in the
+residual interface. This does not supply either remaining prime estimate. -/
+theorem relative_moment_gap_of_central_prime_count_with_log_correction
+    (n : ℕ) (hn : 1 ≤ n) (δ Uprime : ℝ) (hδ : 0 ≤ δ)
+    (hprime : squarePrimeIncrement n ≤ Uprime)
+    (hcount :
+      δ * (Uprime + 2 * Real.log (n + 1 : ℕ) *
+        Real.log (GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers.exponentCutoff n)) ≤
+        (centralSquarePrimes n).card * Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) * squareRadius n * squareIncrement n := by
+  apply relative_moment_gap_of_central_prime_count_with_residual n δ Uprime
+    (2 * Real.log (n + 1 : ℕ) *
+      Real.log (GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers.exponentCutoff n)) hδ
+  · exact squareIncrement_le_prime_upper_add_log_correction n hn Uprime hprime
+  · exact hcount
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
