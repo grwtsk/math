@@ -1406,6 +1406,149 @@ theorem step_pos_iff (K : FiniteSieveMarkovKernel State)
   · rintro ⟨x, hx, hw, hp⟩
     exact hsum.mpr ⟨x, hx, mul_pos hw hp⟩
 
+/-- Iterate the same finite transition kernel. No convergence or
+spectral gap claim is made by this finite recursion. -/
+noncomputable def evolve (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) : ℕ → State → ℝ
+  | 0 => weight
+  | depth + 1 => K.step (K.evolve weight depth)
+
+/-- Every finite iterate retains nonnegative weights on the scope. -/
+theorem evolve_nonneg (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x) :
+    ∀ depth : ℕ, ∀ target ∈ K.scope,
+      0 ≤ K.evolve weight depth target := by
+  intro depth
+  induction depth with
+  | zero =>
+      intro target ht
+      exact weight_nonneg target ht
+  | succ depth ih =>
+      intro target ht
+      exact K.step_nonneg (K.evolve weight depth) ih target ht
+
+/-- Every finite iterate preserves total mass by row stochasticity. -/
+theorem sum_evolve_eq_sum (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) (depth : ℕ) :
+    (∑ target ∈ K.scope, K.evolve weight depth target) =
+      ∑ source ∈ K.scope, weight source := by
+  induction depth with
+  | zero => rfl
+  | succ depth ih =>
+      calc
+        (∑ target ∈ K.scope, K.evolve weight (depth + 1) target) =
+            ∑ target ∈ K.scope, K.evolve weight depth target :=
+          K.sum_step_eq_sum (K.evolve weight depth)
+        _ = ∑ source ∈ K.scope, weight source := ih
+
+/-- Positive transition path of exact length, retaining each
+intermediate state in the finite scope. In particular, all transition
+factors along this path are strictly positive. -/
+def positivePath (K : FiniteSieveMarkovKernel State) :
+    ℕ → State → State → Prop
+  | 0, source, target => source = target
+  | depth + 1, source, target =>
+      ∃ middle ∈ K.scope,
+        K.positivePath depth source middle ∧
+          0 < K.transition middle target
+
+/-- Positive mass after exactly n transitions is equivalent to an
+initial positive-weight source connected to the target through n
+strictly positive transitions. Target membership and nonnegative
+initial weights remain explicit. -/
+theorem evolve_pos_iff_positivePath
+    (K : FiniteSieveMarkovKernel State) (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x) :
+    ∀ depth : ℕ, ∀ target ∈ K.scope,
+      (0 < K.evolve weight depth target ↔
+        ∃ source ∈ K.scope, 0 < weight source ∧
+          K.positivePath depth source target) := by
+  intro depth
+  induction depth with
+  | zero =>
+      intro target ht
+      change (0 < weight target) ↔
+        ∃ source ∈ K.scope, 0 < weight source ∧ source = target
+      constructor
+      · intro hpos
+        exact ⟨target, ht, hpos, rfl⟩
+      · rintro ⟨source, hs, hpos, rfl⟩
+        exact hpos
+  | succ depth ih =>
+      intro target ht
+      change (0 < K.step (K.evolve weight depth) target) ↔
+        ∃ source ∈ K.scope, 0 < weight source ∧
+          ∃ middle ∈ K.scope,
+            K.positivePath depth source middle ∧
+              0 < K.transition middle target
+      rw [K.step_pos_iff (K.evolve weight depth)
+        (K.evolve_nonneg weight weight_nonneg depth) target ht]
+      constructor
+      · rintro ⟨middle, hm, hprevious, htransition⟩
+        obtain ⟨source, hs, hinitial, hpath⟩ :=
+          (ih middle hm).mp hprevious
+        exact ⟨source, hs, hinitial, middle, hm, hpath, htransition⟩
+      · rintro ⟨source, hs, hinitial, middle, hm, hpath, htransition⟩
+        exact ⟨middle, hm,
+          (ih middle hm).mpr ⟨source, hs, hinitial, hpath⟩,
+          htransition⟩
+
+/-- Total mass of one exact type in the finite state scope after the
+given number of iterations. The type classifier is supplied explicitly. -/
+noncomputable def typeMass {TypeLabel : Type*}
+    (K : FiniteSieveMarkovKernel State) (weight : State → ℝ)
+    (typeOf : State → TypeLabel) (depth : ℕ)
+    (targetType : TypeLabel) : ℝ := by
+  classical
+  exact ((K.scope).filter (fun target => typeOf target = targetType)).sum
+    (fun target => K.evolve weight depth target)
+
+/-- A target type receives positive finite mass after n transitions
+iff a positive initial state admits an exact length-n path of
+strictly positive kernel transitions to some state of that type.
+This is finite positive coverage, not asymptotic steering. -/
+theorem typeMass_pos_iff_positivePath
+    {TypeLabel : Type*}
+    (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x)
+    (typeOf : State → TypeLabel)
+    (depth : ℕ) (targetType : TypeLabel) :
+    0 < K.typeMass weight typeOf depth targetType ↔
+      ∃ target ∈ K.scope,
+        typeOf target = targetType ∧
+          ∃ source ∈ K.scope,
+            0 < weight source ∧
+              K.positivePath depth source target := by
+  classical
+  unfold typeMass
+  have hsum :
+      (0 < ∑ target ∈
+        K.scope.filter (fun target => typeOf target = targetType),
+          K.evolve weight depth target) ↔
+      ∃ target ∈
+        K.scope.filter (fun target => typeOf target = targetType),
+          0 < K.evolve weight depth target :=
+    Finset.sum_pos_iff_of_nonneg
+      (fun target ht =>
+        K.evolve_nonneg weight weight_nonneg depth target
+          (Finset.mem_filter.mp ht).1)
+  constructor
+  · intro hpositive
+    obtain ⟨target, ht, htarget⟩ := hsum.mp hpositive
+    obtain ⟨hscope, htype⟩ := Finset.mem_filter.mp ht
+    obtain ⟨source, hs, hsource, hpath⟩ :=
+      (K.evolve_pos_iff_positivePath
+        weight weight_nonneg depth target hscope).mp htarget
+    exact ⟨target, hscope, htype, source, hs, hsource, hpath⟩
+  · rintro ⟨target, ht, htype, source, hs, hsource, hpath⟩
+    apply hsum.mpr
+    exact ⟨target, Finset.mem_filter.mpr ⟨ht, htype⟩,
+      (K.evolve_pos_iff_positivePath
+        weight weight_nonneg depth target ht).mpr
+          ⟨source, hs, hsource, hpath⟩⟩
+
 end FiniteSieveMarkovKernel
 
 end GRWTSK.GraphSandwichDiffusion
