@@ -2377,6 +2377,91 @@ theorem diagonalKernel_positivePath_certified
         q N hN x y hx hy).mp positive)
     depth source target target_mem path
 
+/-- After one source-dependent transition, any nonnegative initial
+distribution with at least one positive in-scope weight assigns
+positive mass exactly to the in-scope coprime targets. This is an
+exact *finite* support assertion, not a long-time mixing estimate. -/
+theorem diagonalKernel_step_pos_iff_coprime
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_positive : ∃ x ∈ scope N, 0 < initial x)
+    (target : ℕ) (target_mem : target ∈ scope N) :
+    0 < (diagonalKernel q N hN).step initial target ↔
+      Nat.Coprime target q := by
+  constructor
+  · intro output_pos
+    obtain ⟨x, hx, hw, hp⟩ :=
+      ((diagonalKernel q N hN).step_pos_iff
+        initial initial_nonneg target target_mem).mp output_pos
+    exact (diagonalKernel_transition_pos_iff_coprime
+      q N hN x target hx target_mem).mp hp
+  · intro survives
+    obtain ⟨x, hx, hw⟩ := initial_positive
+    exact ((diagonalKernel q N hN).step_pos_iff
+      initial initial_nonneg target target_mem).mpr
+      ⟨x, hx, hw,
+        (diagonalKernel_transition_pos_iff_coprime
+          q N hN x target hx target_mem).mpr survives⟩
+
+/-- The one-step certified type hits of the diagonal-biased finite
+sieve are *exactly* those with a surviving coprime representative.
+Initial sieve weights need not be proportional to the stationary
+radical target weights. The positive initial mass premise is explicit. -/
+theorem diagonalKernel_certified_oneStep_hit_iff
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_positive : ∃ x ∈ scope N, 0 < initial x)
+    (typeOf : ℕ → TypeLabel) (targetType : TypeLabel) :
+    (certifiedArithmeticInventory q N hN).sieveTypeHit
+      1 typeOf
+      (fun _ target => (diagonalKernel q N hN).step initial target)
+      1 targetType ↔
+      ∃ target ∈ scope N,
+        typeOf target = targetType ∧ Nat.Coprime target q := by
+  unfold SourceSearchInventory.sieveTypeHit
+  rw [certifiedArithmeticInventory_search_one_eq_survivors q N hN]
+  constructor
+  · rintro ⟨target, member, sameType, positive⟩
+    obtain ⟨target_mem, coprime⟩ := Finset.mem_filter.mp member
+    exact ⟨target, target_mem, sameType, coprime⟩
+  · rintro ⟨target, target_mem, sameType, coprime⟩
+    exact ⟨target, Finset.mem_filter.mpr ⟨target_mem, coprime⟩,
+      sameType,
+      (diagonalKernel_step_pos_iff_coprime q N hN
+        initial initial_nonneg initial_positive target target_mem).mpr
+          coprime⟩
+
+/-- One-step finite type completeness of the source-dependent
+arithmetic kernel is equivalent to the existence of a coprime
+in-scope representative for **each declared type**. This does not
+prove that every number-theoretic type exists or occurs asymptotically. -/
+theorem diagonalKernel_certified_oneStep_complete_iff
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ x ∈ scope N, 0 ≤ initial x)
+    (initial_positive : ∃ x ∈ scope N, 0 < initial x)
+    (typeOf : ℕ → TypeLabel) :
+    (certifiedArithmeticInventory q N hN).sieveTypeCompleteAt
+      1 typeOf
+      (fun _ target => (diagonalKernel q N hN).step initial target)
+      1 ↔
+      ∀ targetType : TypeLabel, ∃ target ∈ scope N,
+        typeOf target = targetType ∧ Nat.Coprime target q := by
+  unfold SourceSearchInventory.sieveTypeCompleteAt
+  constructor
+  · intro complete targetType
+    exact (diagonalKernel_certified_oneStep_hit_iff q N hN
+      initial initial_nonneg initial_positive typeOf targetType).mp
+        (complete targetType)
+  · intro witnesses targetType
+    exact (diagonalKernel_certified_oneStep_hit_iff q N hN
+      initial initial_nonneg initial_positive typeOf targetType).mpr
+        (witnesses targetType)
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
