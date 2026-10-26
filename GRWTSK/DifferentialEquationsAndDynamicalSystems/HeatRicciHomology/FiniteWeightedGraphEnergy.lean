@@ -337,10 +337,8 @@ theorem graphEulerHeat_pairing_le_of_correction_budget
       graphLaplacianPairing w u := by
   have hexpand := graphLaplacianPairing_sub_expand
     w u (weightedGraphLaplacian w u) τ
-  change graphLaplacianPairing w
-    (fun i => u i - τ * weightedGraphLaplacian w u i) =
+  change graphLaplacianPairing w (graphEulerHeat w τ u) =
     _ at hexpand
-  rw [← graphEulerHeat] at hexpand
   rw [hmixed] at hexpand
   nlinarith
 
@@ -446,14 +444,22 @@ theorem graphMixedPairing_symmetric
     apply Finset.sum_congr rfl
     intro j hj
     ring
-  rw [hpoint, hpoint', hcross]
-  apply congrArg (fun x : ℚ => x -
-    ∑ i : V, ∑ j : V, v i * w i j * u j)
-  apply Finset.sum_congr rfl
-  intro i hi
-  apply Finset.sum_congr rfl
-  intro j hj
-  ring
+  calc
+    (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
+        (∑ i : V, ∑ j : V, u i * w i j * v i) -
+        (∑ i : V, ∑ j : V, u i * w i j * v j) := hpoint
+    _ = (∑ i : V, ∑ j : V, v i * w i j * u i) -
+        (∑ i : V, ∑ j : V, v i * w i j * u j) := by
+      have hdiag :
+          (∑ i : V, ∑ j : V, u i * w i j * v i) =
+          (∑ i : V, ∑ j : V, v i * w i j * u i) := by
+        apply Finset.sum_congr rfl
+        intro i hi
+        apply Finset.sum_congr rfl
+        intro j hj
+        ring
+      rw [hdiag, hcross]
+    _ = ∑ i : V, ∑ j : V, v i * (w i j * (u i - u j)) := hpoint'.symm
 
 theorem graphMixedPairing_u_Lu_eq_sum_sq
     (w : V → V → ℚ) (u : V → ℚ)

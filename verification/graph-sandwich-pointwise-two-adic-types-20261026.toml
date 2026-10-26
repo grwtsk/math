@@ -1,0 +1,139 @@
+# P0 pointwise two-adic type completeness: exact source-bound verification request.
+# SOURCE_DRAFT only. No compilation, kernel check, axiom audit, or external execution.
+schema_version = "0.1"
+request_id = "graph-sandwich-pointwise-two-adic-types-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "90eef82e546bf771ed35c8c329223a03c33dece8"
+source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_blob = "c1af60ecc74151044ab33755f819daf856debae0"
+graph_supplier_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_supplier_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+grothendieck_supplier_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_supplier_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_factorization_basic_path = "Mathlib/Data/Nat/Factorization/Basic.lean"
+mathlib_factorization_basic_blob = "754d9c2792659f68a624086c9ce9af3ce90e0737"
+mathlib_factorization_defs_path = "Mathlib/Data/Nat/Factorization/Defs.lean"
+mathlib_factorization_defs_blob = "123b50a5cf37474f6be7778196cbfe313e0caf6b"
+mathlib_coprime_source_path = "Mathlib/Data/Nat/GCD/Basic.lean"
+mathlib_coprime_source_blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+mathlib_nat_quotient_api = "Nat.mul_div_le; Nat.le_div_iff_mul_le; Nat.mod_add_div; Nat.mod_lt"
+mathlib_power_cancellation_api = "mul_left_cancel₀"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+issue = "https://github.com/grwtsk/math/issues/1344"
+mathematical_class = "ELEMENTARY_FIXED_TYPE_COUNTING_SOURCE_CANDIDATE"
+new_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypePeriod",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypePeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_factorization_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicType_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicType_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_lt_cutoff",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_no_finite_all_type_coverage",
+]
+direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+existing_mathematical_suppliers = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twelve_mul_add_one_coprime_three",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.scope",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedTypeSurvivors",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_of_survivor_density",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_pow",
+  "Mathlib.Data.Nat.Factorization.Basic.Nat.factorization_pow_self",
+  "Mathlib.Data.Nat.Factorization.Basic.Nat.factorization_lt",
+  "Mathlib.Data.Nat.Factorization.Defs.Nat.factorization_mul",
+]
+preserved_mathematical_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_mass_ge_one_ninety_six",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_uniform_complete_and_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_transition_ge_inv_four_cutoff",
+]
+exact_hypotheses = [
+  "Exact arithmetic type is twoAdicMultiplicityType n = n.factorization 2 (actual prime factorization), with selected fixed type k : Nat",
+  "Progression n_j = 2^k * (12*j+1) has positive terms, pairwise distinct in j, exact two-adic multiplicity k, and Nat.Coprime n_j 3",
+  "Finite sieve cutoff N : Nat uses scope(N) = Finset.Icc 1 N, with no n=0 in this arithmetic scope",
+  "Period d_k = 12*2^k is a positive natural; j in Finset.range (N/d_k) produces n_j <= N and >=1",
+  "Finite count for any k,N: floor(N/d_k) <= card(bufferedTypeSurvivors 3 N twoAdicMultiplicityType k)",
+  "To turn the floor into linear density, assume hcutoff : 12*2^k <= N; then card >= N/(24*2^k)",
+  "Buffered type-mass supplier applies only to previously defined bufferedRadicalWeight(q,N,n)=N+radical(n) on coprime targets and its row-normalized bufferedDiagonalKernel; NOT the earlier unbuffered sieve",
+  "For type-mass bound also assume hN : 1 <= N, forall x in scope(N) initial(x) >= 0, and sum_x in scope(N) initial(x) = 1",
+  "For every positive time depth+1, the pointwise fixed-k mass lower bound is 1/(96*2^k), which depends on k but not N or time",
+  "Pointwise eventual positivity permits cutoff N_k=12*2^k to depend on k and initial distributions to vary with N, preserving exact unit-mass premises",
+  "No simultaneous finite-cutoff completeness for type space Nat: every n in scope(N) has factorization 2 < n <= N, so the label k=N cannot appear",
+  "The existing radical-derived K0-shaped group-completion observable remains noninjective on positive powers; no actual analytic C-star K0 or Kasparov KK identification is made",
+]
+conclusions = [
+  "Unconditional finite exact valuation-k progressions and coprimality to the sieve modulus 3",
+  "Unconditional finite survivor lower bound floor(N/(12*2^k)) and explicit cutoff-dependent counting threshold",
+  "For each fixed k, positive cutoff-independent (but k-dependent) lower bound 1/(96*2^k) at all N >= 12*2^k, all positive Markov times and any normalized nonnegative input",
+  "Pointwise eventual positive type mass for every k, using distinct cutoffs N_k and rates c_k; this is not a common uniform cutoff or uniform lower bound over all k",
+  "A negative theorem that full Nat-valued type completeness is impossible in any one finite certified sieve scope regardless of the weights",
+]
+unresolved_premises_and_risks = [
+  "All fourteen declarations are SOURCE_DRAFT / NOT_RUN and are not accepted by Lean kernel",
+  "Check exact Nat.coprime_mul_iff_left, Nat.Coprime.pow_left, Nat.factorization_pow_self, Nat.factorization_mul and Nat.factorization_lt statement elaboration",
+  "Check definition unfolding for twoAdicTypeProgression, bufferedTypeSurvivors, scope, and the existing finite Markov typeMass",
+  "Check mul_left_cancel₀ and the Nat.mul_div_le / Nat.le_div_iff_mul_le / Nat.mod_add_div floor argument with symbolic period 12*2^k",
+  "Check whether omega safely normalizes the nonlinear symbolic quotient product as a common term; source scan is NOT elaboration",
+  "Check Nat.cast_pow, real div_le_iff₀, Finset.card_image_of_injective, Finset.card_le_card and ring normalization of reciprocal type rates",
+  "Compile whole local and Mathlib import closure with strict warnings and repair any actual failure without removing exact hypotheses",
+  "Run supported independent fresh kernel checker and transitive #print axioms on all new and inherited suppliers and downstream consumers",
+  "No common finite cutoff covers infinitely many valuation types, and there is no positive lower bound uniform in type k",
+  "No analytically derived prime-distribution, Goldbach, RH, Siegel-zero, character-cancellation, or actual C-star algebra K-theory conclusion",
+  "No true heat semigroup or spectral gap is constructed by this finite buffered dense arithmetic kernel",
+  "Execution/runner/receipt artifacts must remain outside math in grwtsk/noeaaeue; never treat a queued issue as a kernel acceptance receipt",
+]
+source_review = "SOURCE_BLOB_AND_DECLARATION_SCAN_ONLY"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 90eef82e546bf771ed35c8c329223a03c33dece8 && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = c1af60ecc74151044ab33755f819daf856debae0 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 7d861591c9721a85819f291aac5178fffd29101a"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+graph_supplier_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+k_theory_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+k_theory_elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_independent_kernel = "PENDING_ACTUAL_BUILD_AND_SUPPORTED_INDEPENDENT_CHECKER"
+transitive_axioms = "PENDING_COMPILER_RESULT_AND_ACTUAL_AXIOM_CENSUS"
+axiom_targets = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypePeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_factorization_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicTypeProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicType_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicType_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_lt_cutoff",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_no_finite_all_type_coverage",
+]
+expected_compiler_exit_code = 0
+expected_elaboration_exit_code = 0

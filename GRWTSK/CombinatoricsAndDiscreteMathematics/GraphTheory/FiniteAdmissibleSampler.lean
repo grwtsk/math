@@ -622,6 +622,300 @@ theorem real_type_complete_iff_allowed_paths
     exact ⟨source, target, hkind, hsource, path⟩
   · exact S.real_type_complete_of_allowed_paths heat nonnegative typeOf length
 
+/-!
+## Eventual type support from finite paths and genuine self-loops
+
+The self-loops below must be actually admitted by the source graph. No
+artificial sink completion or uniform asymptotic mass lower bound is
+inferred. Paths are padded only at their witnessed destination.
+-/
+
+/-- Append two actually admissible paths. -/
+theorem AllowedPath.append (S : Sampler V)
+    {a b c : V} {m n : ℕ}
+    (first : AllowedPath S a b m)
+    (second : AllowedPath S b c n) :
+    AllowedPath S a c (m + n) := by
+  induction first with
+  | refl a =>
+      simpa using second
+  | step hedge tail ih =>
+      simpa [Nat.succ_add] using
+        (AllowedPath.step hedge (ih second))
+
+/-- A genuine self-loop at the destination pads an admissible path to
+any greater finite length. -/
+theorem AllowedPath.pad_at_target (S : Sampler V)
+    {source target : V} {length : ℕ}
+    (path : AllowedPath S source target length)
+    (loop : S.allowed target target = true) :
+    ∀ extra, AllowedPath S source target (length + extra) := by
+  intro extra
+  induction extra with
+  | zero =>
+      simpa using path
+  | succ extra ih =>
+      have step : AllowedPath S target target 1 :=
+        AllowedPath.step loop (AllowedPath.refl target)
+      have extended := AllowedPath.append S ih step
+      simpa [Nat.add_succ] using extended
+
+/-- Actual admissible paths of one common length into every type,
+ending at genuine self-loops, give type support at every later finite
+time. No quantitative lower bound uniform in time is asserted. -/
+theorem eventually_real_type_complete_of_padded_allowed_paths
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (start : ℕ)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target start ∧
+      S.allowed target target = true) :
+    ∀ extra kind,
+      0 < realTypeMass typeOf (S.realEvolve heat (start + extra)) kind := by
+  intro extra
+  apply S.real_type_complete_of_allowed_paths heat nonnegative
+    typeOf (start + extra)
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path, loop⟩ := reach kind
+  exact ⟨source, target, hkind, hsource,
+    AllowedPath.pad_at_target S path loop extra⟩
+
+/-!
+## Genuine cycle padding and periodic type coverage
+
+A true return cycle of length p gives coverage on the arithmetic
+progression N + k*p. Without a length-one loop or an additional
+aperiodicity theorem this does not imply coverage at every later time.
+-/
+
+/-- Repeating a genuine admissible return cycle produces an allowed
+return path of every multiple of its length. -/
+theorem AllowedPath.repeat_cycle (S : Sampler V)
+    {target : V} {period : ℕ}
+    (cycle : AllowedPath S target target period) :
+    ∀ count, AllowedPath S target target (count * period) := by
+  intro count
+  induction count with
+  | zero =>
+      simpa using (AllowedPath.refl target)
+  | succ count ih =>
+      have next := AllowedPath.append S ih cycle
+      simpa [Nat.succ_mul] using next
+
+/-- A genuine return cycle pads an incoming path by any multiple of
+the cycle length; no artificial self-loop is introduced. -/
+theorem AllowedPath.pad_by_cycle (S : Sampler V)
+    {source target : V} {length period : ℕ}
+    (path : AllowedPath S source target length)
+    (cycle : AllowedPath S target target period) :
+    ∀ count, AllowedPath S source target (length + count * period) := by
+  intro count
+  exact AllowedPath.append S path (AllowedPath.repeat_cycle S cycle count)
+
+/-- Common-length type-reaching paths and genuine type-target return
+cycles of a common period give positive type support at every time
+N + k*p. This is periodic-subsequence coverage, not all-time
+asymptotic completeness or a uniform quantitative lower bound. -/
+theorem real_type_complete_on_cycle_progression
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (start period : ℕ)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target start ∧
+      AllowedPath S target target period) :
+    ∀ count kind,
+      0 < realTypeMass typeOf
+        (S.realEvolve heat (start + count * period)) kind := by
+  intro count
+  apply S.real_type_complete_of_allowed_paths heat nonnegative
+    typeOf (start + count * period)
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path, cycle⟩ := reach kind
+  exact ⟨source, target, hkind, hsource,
+    AllowedPath.pad_by_cycle S path cycle count⟩
+
+/-!
+## Eventual coverage from genuine residue-complete return paths
+
+This is a sufficient finite certificate of path-length saturation,
+not a claim that the arithmetic sieve supplies such return paths.
+-/
+
+/-- Genuine return paths of lengths B+r for all residues r<p, together
+with a genuine return cycle of length p>0, yield return paths of all
+lengths B+k. -/
+theorem AllowedPath.return_of_residue_complete
+    (S : Sampler V) {target : V} (period bound : ℕ)
+    (period_pos : 0 < period)
+    (cycle : AllowedPath S target target period)
+    (residues : ∀ r, r < period →
+      AllowedPath S target target (bound + r)) :
+    ∀ extra, AllowedPath S target target (bound + extra) := by
+  intro extra
+  have hr : extra % period < period := Nat.mod_lt extra period_pos
+  have hbase := residues (extra % period) hr
+  have hrepeat := AllowedPath.repeat_cycle S cycle (extra / period)
+  have hconcat := AllowedPath.append S hbase hrepeat
+  have hdiv : extra % period + extra / period * period = extra := by
+    simpa [Nat.mul_comm] using (Nat.mod_add_div extra period)
+  simpa [Nat.add_assoc, hdiv] using hconcat
+
+/-- Common entry paths and residue-complete genuine return paths give
+positive real Gibbs mass to every type at every sufficiently late time.
+No uniform quantitative mass floor is claimed. -/
+theorem eventually_real_type_complete_of_residue_returns
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (start period bound : ℕ)
+    (period_pos : 0 < period)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target start ∧
+      AllowedPath S target target period ∧
+      (∀ r, r < period →
+        AllowedPath S target target (bound + r))) :
+    ∀ extra kind,
+      0 < realTypeMass typeOf
+        (S.realEvolve heat (start + bound + extra)) kind := by
+  intro extra
+  apply S.real_type_complete_of_allowed_paths heat nonnegative
+    typeOf (start + bound + extra)
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path, cycle, residues⟩ := reach kind
+  have hreturn := AllowedPath.return_of_residue_complete S period bound
+    period_pos cycle residues extra
+  have hpath := AllowedPath.append S path hreturn
+  exact ⟨source, target, hkind, hsource, by
+    simpa [Nat.add_assoc] using hpath⟩
+
+/-!
+## Period-two obstruction to residue-complete returns
+
+A strictly bipartite admissible graph has no odd-length return path.
+This rules out the residue-complete certificate with period two, but
+does not rule out every possible type-coverage mechanism.
+-/
+
+/-- An allowed path in a graph whose edges flip Boolean color has the
+expected parity-dependent endpoint color. -/
+theorem AllowedPath.color_parity
+    (S : Sampler V) (color : V → Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    {source target : V} {length : ℕ}
+    (path : AllowedPath S source target length) :
+    color target = (if length % 2 = 0 then color source else !color source) := by
+  induction path with
+  | refl source =>
+      simp
+  | @step source middle target n hedge tail ih =>
+      have hflip := flips source middle hedge
+      rw [ih, hflip]
+      cases hn : n % 2 <;> cases hc : color source <;>
+        simp [Nat.succ_mod, hn, hc]
+
+/-- Strictly bipartite allowed edges prohibit an odd return. -/
+theorem AllowedPath.no_odd_return_of_bipartite
+    (S : Sampler V) (color : V → Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (target : V) (length : ℕ) (odd : length % 2 = 1) :
+    ¬ AllowedPath S target target length := by
+  intro path
+  have h := AllowedPath.color_parity S color flips path
+  simp [odd] at h
+  cases hc : color target <;> simp [hc] at h
+
+/-!
+## Bipartite heat-support obstruction
+
+The parity restriction applies to the actual Gibbs evolution, not only
+to individual paths. A nonnegative initial distribution supported in
+one Boolean color class cannot reach the other parity-incompatible
+class at a fixed time. This is a conditional obstruction and does not
+assert that the weighted arithmetic sieve has such a coloring.
+-/
+
+/-- In a strictly bipartite admissible graph, nonnegative heat initially
+supported in one color class is exactly zero at every vertex whose
+color is incompatible with the time parity. -/
+theorem realEvolve_eq_zero_of_color_mismatch
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (color : V → Bool) (initialColor : Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (supported : ∀ v, 0 < heat v → color v = initialColor)
+    (length : ℕ) (target : V)
+    (mismatch : color target ≠
+      (if length % 2 = 0 then initialColor else !initialColor)) :
+    S.realEvolve heat length target = 0 := by
+  have hnonneg := S.realEvolve_nonneg heat nonnegative length target
+  by_contra hnonzero
+  have hpositive : 0 < S.realEvolve heat length target :=
+    lt_of_le_of_ne hnonneg (Ne.symm hnonzero)
+  obtain ⟨source, hsource, path⟩ :=
+    S.realEvolve_pos_has_allowedPath length heat target
+      nonnegative hpositive
+  have hcolor := AllowedPath.color_parity S color flips path
+  rw [supported source hsource] at hcolor
+  exact mismatch hcolor
+
+/-- If the initial heat is confined to one color, the incompatible
+Boolean type has exactly zero aggregate mass at every fixed time. -/
+theorem realTypeMass_eq_zero_of_bipartite_parity
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (color : V → Bool) (initialColor : Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (supported : ∀ v, 0 < heat v → color v = initialColor)
+    (length : ℕ) (kind : Bool)
+    (wrong : kind ≠
+      (if length % 2 = 0 then initialColor else !initialColor)) :
+    realTypeMass color (S.realEvolve heat length) kind = 0 := by
+  unfold realTypeMass
+  apply Finset.sum_eq_zero
+  intro target _
+  by_cases hkind : color target = kind
+  · have mismatch : color target ≠
+        (if length % 2 = 0 then initialColor else !initialColor) := by
+      rw [hkind]
+      exact wrong
+    simp [hkind, S.realEvolve_eq_zero_of_color_mismatch heat
+      nonnegative color initialColor flips supported length target mismatch]
+  · simp [hkind]
+
+/-!
+## No all-time type completeness from one-color bipartite support
+
+This converts the exact zero-mass parity obstruction into a failure of
+complete Boolean type coverage at every finite time. It is conditional
+on the actual allowed graph being strictly bipartite and on the
+initial heat being confined to one color class.
+-/
+
+/-- With strictly color-flipping admissible edges and initially
+single-color heat, complete positive heat in both Boolean types is
+impossible at any finite time. -/
+theorem not_real_type_complete_of_bipartite_single_color
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (color : V → Bool) (initialColor : Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (supported : ∀ v, 0 < heat v → color v = initialColor)
+    (length : ℕ) :
+    ¬ (∀ kind : Bool,
+      0 < realTypeMass color (S.realEvolve heat length) kind) := by
+  intro complete
+  let expected : Bool :=
+    if length % 2 = 0 then initialColor else !initialColor
+  have wrong : (!expected) ≠ expected := by
+    cases expected <;> decide
+  have hzero := S.realTypeMass_eq_zero_of_bipartite_parity heat
+    nonnegative color initialColor flips supported length (!expected) wrong
+  have hpos := complete (!expected)
+  rw [hzero] at hpos
+  exact (lt_irrefl (0 : ℝ)) hpos
+
 end TypeHeat
 
 end Sampler

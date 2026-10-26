@@ -1,0 +1,104 @@
+# Static, source-bound mathematical verification specification. No job dispatch or receipt.
+schema_version = "0.1"
+request_id = "radical-observation-history-decoder-error-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f4155d626ba567822d4a3a7df8ad9474cb08185d"
+source_type_module = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_type_blob = "b5ffd382ebf12afc5bf8718733dcf7da2391c19c"
+source_operator_module = "GRWTSK/GraphSandwichDiffusion.lean"
+source_operator_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+source_grothendieck_module = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+source_grothendieck_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+mathlib_radical_module = "Mathlib/RingTheory/Radical/NatInt.lean"
+mathlib_radical_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+mathlib_squarefree_module = "Mathlib/Data/Nat/Squarefree.lean"
+mathlib_squarefree_blob = "5fd20e08fc8cfde99dd334bf66a3071da498cfc4"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathematical_reference = "docs/reference/literature/reading-background/radical-two-adic-uniform-type-steering-20261026.md"
+mathematical_document_commit = "255f02f887da53d15846ce18731be68eb7e0fe4f"
+mathematical_document_blob = "bfc33bcef38bfd0ac9191132e98fb3ffe0ba4a7d"
+related_issue = "https://github.com/grwtsk/math/issues/1329"
+blocking_gate = "https://github.com/grwtsk/math/issues/1267"
+previous_sieve_manifest = "docs/verification/_unscoped/radical-two-adic-uniform-steering-20261026.toml"
+previous_sieve_blob = "8bf4a0b31ce1fc9afe0a913d4b3d4cf2dfeb2016"
+classification = "FINITE_ARITHMETIC_COLLISION_BAYES_LOSS_AND_EXACT_RADICAL_MARKOV_QUOTIENT"
+paper_derived_new_theorems = false
+source_status = "SOURCE_PROOF_CANDIDATE_NOT_ACCEPTED"
+new_lean_declarations = "NOT_WRITTEN"
+compilation_status = "NOT_RUN"
+elaboration_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+executed_receipts = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+force_push_authorized = false
+promote_root_claim_authorized = false
+type_complete_for_all_arithmetic_types = false
+analytic_k_zero_realization = false
+classical_3d_navier_stokes_regular = false
+physical_4d_yang_mills_mass_gap = false
+
+existing_source_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_type_complete_feature_only_steering_of_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_eq_of_radical_eq",
+  "GRWTSK.Algebra.KTheory.JointCollision.no_exact_type_decoder_of_collision",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq",
+]
+
+future_theorems_not_yet_written = [
+  "Finite squarefree progression count: among 6*j+1, j in [k,2k), at least k/2 are squarefree for every k>=192; use p^2 divisor counting with p>=5 and sum_n>=5 n^-2<=1/4.",
+  "For N>=9216 and k=floor(N/48), build disjoint pairs (2*m,4*m) in scope for each of at least k/2 squarefree m=6*j+1; preserve exact co-primality to modulus 3 and opposite multiplicityOneType labels.",
+  "Rad(2*m)=Rad(4*m)=2*m, actual arithmetic source weights w(2*m)=w(4*m)=2*m and distinct radical labels for distinct selected m.",
+  "Generic finite pairwise collision misclassification lemma: any decoder factoring through one coarse map h errs on at least the sum of minima of positive weights in disjoint opposite-type h-fiber pairs.",
+  "Bound actual source pi_N Boolean type misclassification >= 1/256 uniformly for all N>=9216, with normalizer Z_N <= N(N+1)/2 and pair weight >6*k^2.",
+  "Prove w_3(n) factors through Nat.radical n: equal radicals imply equal coprimality-to-3 status and equal radicalCoprimeWeight.",
+  "Compute exact radical coarse quotient of source-dependent diagonalKernel: Q(a,b)=(W_b+v_a*I(a=b))/(Z+v_a), and prove strong lumpability/stochasticity.",
+  "Prove source-defined diagonalKernel has stationary rho=w*(Z+w)/(Z^2+sum w^2), detailed balance and Doeblin K(x,y)>=delta*pi(y), delta=Z/(Z+wmax)>=1/2 on full scope and positive-weight survivor space as appropriate.",
+  "For ANY initial probability and every positive time, derive snapshot fine-type decoder error >=delta/256>=1/512; DO NOT extend this to arbitrary initial full-time observation histories.",
+  "For stationary rho initial Markov chain, prove the radical history conditional law depends only on the radical of the selected state, using reversibility and both-time-direction strong lumpability; optimal full finite-history Bayes risk equals snapshot radical risk.",
+  "Alternatively prove full finite-history error >=delta/256 via a finite involution swapping equal-radical pairs in the whole observed fine trajectory while retaining K/rho/h invariance.",
+  "Keep source-independent analytic K0(C*) and any true exponent-sensitive fine sensor outside this radical-only no-decoder claim.",
+]
+
+negative_controls = [
+  "Two states 2*m and 4*m have the same radical but opposite Boolean 2-adic types; no radical-only decoder distinguishes both.",
+  "At N<4*m a partner can lie outside scope; N>=9216 and the squarefree progression interval ensure both partners are actually in scope.",
+  "The cutoff-dependent pair family contains no repeated fine state and no repeated selected coarse radical fiber; verify parity/oddness.",
+  "Any initial point-mass probability at time 0 may have zero classification error; the dynamic uniform bound begins after one source-defined diagonalKernel step.",
+  "The full-history error theorem requires STATIONARY initial rho or another proven swap-invariant initial measure; Doeblin alone does not imply it for arbitrary initial histories.",
+  "The local odd-path Metropolis operator need not be lumpable under radicals: do not substitute its transition for the source-defined dense diagonalKernel.",
+  "An analytic K0 or jet observable that DOES distinguish pair multiplicities is not governed by the radical-factorization error theorem.",
+  "Rapid Markov mixing and uniform type presence do not imply exact fine-type decoding, analytic prime density or continuum Navier-Stokes/Yang-Mills results.",
+]
+
+[checks]
+pin_exact_checkout = 'test "$(git rev-parse HEAD)" = f4155d626ba567822d4a3a7df8ad9474cb08185d'
+pin_type_blob = 'test "$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)" = b5ffd382ebf12afc5bf8718733dcf7da2391c19c'
+pin_operator_blob = 'test "$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)" = 7d861591c9721a85819f291aac5178fffd29101a'
+pin_mathlib = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+check_toolchain = "lake env lean --version"
+compile_existing_type = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+compile_existing_operator = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+elaborate_type = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+elaborate_operator = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/GraphSandwichDiffusion.lean"
+axiom_audit = "Use an executor-local temporary source file importing both modules; issue #check and #print axioms on every listed existing source declaration and any future newly written theorem, and inspect the full transitive closure and unexpected sorryAx."
+independent_kernel_replay = "Check actual installed pinned kernel checker CLI before invoking; do not invent checker arguments or acceptance."
+future_new_source_pin = "UNDEFINED UNTIL AUTHORIZED; do not reuse historical source commit/blobs to assert validation of new Lean declarations."
+observed_compile_exit = "NOT_RUN"
+observed_elaboration_exit = "NOT_RUN"
+observed_kernel_exit = "NOT_RUN"
+observed_transitive_axioms = "NOT_RUN"
+
+# Operator execution and verification receipts must be stored outside math under grwtsk/noeaaeue.
