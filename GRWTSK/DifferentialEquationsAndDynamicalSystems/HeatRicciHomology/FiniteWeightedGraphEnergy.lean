@@ -593,4 +593,56 @@ theorem graphMixedPairing_u_Lu_nonnegative
   rw [graphMixedPairing_u_Lu_eq_sum_sq w u hsym]
   exact Finset.sum_nonneg (fun i hi => sq_nonneg _)
 
+/-! ## Concrete symmetric graph Euler energy dissipation
+
+The remaining mixed-pairing symmetry is an algebraic consequence of
+symmetric edge weights. Combined with the source-level degree-bound
+image estimate, it yields a single finite Euler energy theorem with
+no abstract LaplacianImageBound hypothesis. This does not establish
+continuum Navier–Stokes regularity or an analytic Hodge limit.
+-/
+
+/-- Symmetric weights make the finite graph mixed pairing symmetric. -/
+theorem graphMixedPairing_symmetric
+    (w : V → V → ℚ) (u v : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    graphMixedPairing w u v = graphMixedPairing w v u := by
+  classical
+  unfold graphMixedPairing weightedGraphLaplacian
+  simp only [Finset.mul_sum]
+  have hswap :
+      (∑ i : V, ∑ j : V, u i * (w i j * (v i - v j))) =
+      (∑ i : V, ∑ j : V, u j * (w i j * (v j - v i))) := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro j hj
+    apply Finset.sum_congr rfl
+    intro i hi
+    rw [hsym j i]
+  rw [hswap]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro i hi
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro j hj
+  ring
+
+/-- Genuine finite graph Euler heat dissipates the graph quadratic
+energy under a concrete maximum-degree CFL condition. -/
+theorem graphEulerHeat_pairing_le_of_degreeBound
+    (w : V → V → ℚ) (u : V → ℚ) (τ D : ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hsym : ∀ i j, w i j = w j i)
+    (hD : DegreeBound w D)
+    (hτ : 0 ≤ τ) (hD0 : 0 ≤ D)
+    (hstep : τ * D ≤ 1) :
+    graphLaplacianPairing w (graphEulerHeat w τ u) ≤
+      graphLaplacianPairing w u := by
+  apply graphEulerHeat_pairing_le_of_image_bound
+    w u τ D hτ hD0 hstep
+    (laplacianImageBound_of_degreeBound w D hw hsym hD)
+    (graphMixedPairing_u_Lu_nonnegative w u hsym)
+  exact graphMixedPairing_symmetric w u (weightedGraphLaplacian w u) hsym
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
