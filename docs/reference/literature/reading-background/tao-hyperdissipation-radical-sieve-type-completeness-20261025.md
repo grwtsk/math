@@ -472,3 +472,108 @@ Every column sums to 1 and AKα=K̄αA. Starting at state 12 yields positive typ
 Once existing gate #1267 is resolved, the first **new** dependent-free Lean addition should reuse the **existing RootHeatState.HeatKernel** and be confined to that module's mathematical subject: a constructor from nonnegative rational weights, positive Z and 0<α≤1, with **column** stochasticity and the exact one-step formula. The second theorem should derive the already-present RepresentativeMinorization (or, when all w(r)>0, UniformMinorization) and thus instantiate the existing type-completeness consumer. After that, prove the TV-defect robust floor, and only then coarse aggregation commutation and type decoder separation. Proposed declarations are **NOT_YET_WRITTEN**. For each actual addition re-pin the resulting math commit/blob and imports, compile via pinned Lake, run supported fresh kernel checking and full transitive #print axioms, and record commands/exits/receipts in grwtsk/noeaaeue outside math.
 
 **Standing controls:** Tao (2009) is the external hyperdissipative PDE result only, not a proof of this deliberately designed kernel, classical 3D Navier–Stokes regularity, or a physical Yang–Mills mass gap. Existing K₀ port is generic algebraic group completion; do not infer analytic K-theory. Finite type coverage after engineered restart is not actual all-cutoff arithmetic type completeness. No remote execution dispatch, no root promotion, no force push or merge. Gate #1267 remains active; new Lean compilation/kernel/axiom checks **NOT_RUN**.
+
+
+---
+
+## Bounded successor — Certified lazy weighted-sieve Markov paths (2026-10-26)
+
+Local attribution: **grwtsk contributors**. These are elementary finite graph/operator proofs, not an imported Tao/Navier–Stokes theorem, analytic K-theory, or unconditional arithmetic type-density result. No new Lean source is added while validation gate #1267 is open.
+
+### Exact source inspection and nonduplication
+
+Observed immutable GRWTSK main at **abcc289a8d926dab071031ecef7225bd6e3aa86b**, source **GRWTSK/GraphSandwichDiffusion.lean**, blob **92ef6e49faa6e633c09b21976a4ee4a4b1ec587b**. This file ALREADY contains FiniteSieveMarkovKernel, step/evolve positivity and mass conservation, positivePath, evolve_pos_iff_positivePath, typeMass_pos_iff_positivePath, positivePath_to_certifiedPath, SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths, the source-independent normalizedTargetKernel and ArithmeticSieveKernel.resetKernel. None constructs a lazy Markov kernel supported on actual certified edges.
+
+The **normalizedTargetKernel** and actual arithmetic radical-weighted **resetKernel** may jump across uncertified graph edges. In the current seed, seedCertified is identically False and seed_has_no_certified_edge exposes the absence of actual certified edges. No positive reset transition can be promoted to a certified relationship merely because it is source-grounded arithmetic data.
+
+Other existing separate sources: GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean blob **b58e2e0e16b134f110015059b0d3d5dd7d2aca47** has TARGET-FIRST COLUMN-stochastic rational HeatKernel and conditional type-minorization theorems. GraphSandwichDiffusion uses SOURCE-FIRST ROW-stochastic kernels: orientation must not be silently interchanged. GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean blob **ddf55d9090d09b785c0c8d2b03148c6a74e72a4c** already proves source-level radical/K0-shaped no-decoder obstructions, not operator mixing.
+
+### Theorem N — Construct a certified-edge, positive-holding Markov kernel
+
+Let S be finite nonempty and E a supplied genuine certified directed relation on S. Let a(x,y) be nonnegative rational weights, a(x,x)=0, and on off-diagonal pairs, a(x,y)>0 iff E(x,y) (thus a=0 for every uncertified off-diagonal pair). Select positive holding weights s(x)>0. Put
+
+\[
+d(x)=s(x)+\sum_{z\in S}a(x,z)>0,\qquad
+K(x,y)=\frac{s(x)\mathbf 1_{x=y}+a(x,y)}{d(x)}.
+\]
+
+The sum of each row is one, the entries are nonnegative, the diagonal entries are strictly positive, and **K(x,y)>0 iff x=y or E(x,y)** (with diagonal E-edges irrelevant). This directly constructs a valid source-first finite sieve Markov kernel preserving precisely the certified off-diagonal support.
+
+### Theorem O — Exact mass support iff bounded certified reachability
+
+For any nonnegative initial mass P0 and integer n>=0,
+
+\[
+(P_0 K^n)(y)>0 \quad\Longleftrightarrow\quad
+\exists x\in S,\ P_0(x)>0\ \land\
+\exists \ell\le n,\operatorname{CertifiedPath}_E(\ell,x,y).
+\]
+
+Every term of the n-step nonnegative path expansion is positive exactly when all its transition factors are positive. By Theorem N, each such factor is either a self-hold or a genuine certified edge. Deleting self-holds produces a certified path of at most n edges. Conversely any certified path with length ell<=n can be padded at its endpoint with n-ell strictly positive holding steps, giving an exact-length-n positive Markov path.
+
+**Critical source proof obligation:** the existing FiniteSieveMarkovKernel.positivePath_to_certifiedPath requires that **every** positive transition is certified. The new positive-holding kernel does not meet that premise when certified is irreflexive. A separate stutter-erasure theorem, with hypothesis K(x,y)>0 implies x=y or certified(x,y), is needed; do not falsely instantiate the old strict theorem.
+
+### Theorem P — Uniform-in-time finite type coverage from actual certified connectivity
+
+Assume the finite directed E-graph is strongly connected. Each pair has a simple certified path of length at most |S|-1. Define
+
+\[
+D=\max(1,|S|-1),\qquad
+q=\min\{K(x,y):x,y\in S,\ K(x,y)>0\}.
+\]
+
+The holding transitions ensure the finite minimum exists, and 0<q<=1. Pad a certified path of length ell<=D to D steps by staying at its endpoint. The probability of this particular path is at least q^D, so
+
+\[
+K^D(x,y)\ge q^D>0
+\qquad\text{for all } x,y\in S.
+\]
+
+For nonnegative initial mass P0 with M=sum P0>0, mass preservation gives, for every n>=D and each y, (P0 K^n)(y)>=M q^D. For any type theta represented by at least one y in S,
+
+\[
+M_\theta(P_0K^n)\ge
+M\,|\{y\in S:\operatorname{type}(y)=\theta\}|\,q^D>0 .
+\]
+
+This constructs an explicit finite uniform-in-time supplier; q^D may deteriorate arbitrarily with expanding sieve scopes, so no cutoff-uniform arithmetic distribution theorem follows. **The current seed with empty certified edges does not satisfy strong connectivity when at least two distinct vertices are involved.**
+
+### Theorem Q — Stability of the positive-path supplier under operator error
+
+If another ACTUALLY row-stochastic kernel K' has each source row at total-variation distance at most epsilon from K, with epsilon<q, then each positive transition of K remains positive with K'(x,y)>=q-epsilon>0. The same certified paths and holding steps therefore prove
+
+\[
+(K')^D(x,y)\ge(q-\varepsilon)^D,\qquad
+(P_0(K')^n)(y)\ge M(q-\varepsilon)^D
+\quad(n\ge D).
+\]
+
+The same estimate holds for variable stochastic kernels K'_j, each satisfying the SAME uniform row-TV bound, by examining the last D steps. However TV closeness alone allows extra positive uncertified edges, so it **does not certify that all paths used by K' are valid mathematical relationships**. To preserve exact certified-path equivalence also require K'(x,y)=0 for every off-diagonal noncertified pair. Without that support premise, retain only robust positive type coverage.
+
+### Exact finite fixtures and hostile controls
+
+**Synthetic certificate fixture, NOT currently a GRWTSK-certified graph:** S=(12,18,25), E={(12,18),(18,25),(25,12)}, unit edge weights and unit holding weights. The precise source-first kernel is
+
+\[
+K=\tfrac12\begin{pmatrix}1&1&0\\0&1&1\\1&0&1\end{pmatrix},
+\qquad
+K^2=\begin{pmatrix}
+1/4&1/2&1/4\\
+1/4&1/4&1/2\\
+1/2&1/4&1/4
+\end{pmatrix}.
+\]
+
+Here q=1/2, D=2, and the exact all-state positive floor is 1/4 for all n>=2. The coarse radical feature sends 12 and 18 to 6 and 25 to 5; this Markov chain is NOT lumpable under radical observation: the one-step chance to reach radical 5 from 12 is 0 and from 18 is 1/2. Uniform fine type coverage therefore neither implies coarse lumpability nor enables fine-type decoding from radical alone.
+
+For epsilons 0,1/8,1/4,3/8,15/32, shift epsilon of probability from the unique certified outgoing edge to its own holding loop. Exact row-TV is epsilon, every resulting stochastic kernel obeys the bound (1/2-epsilon)^2 from time 2 onward. At epsilon=1/2=q, the identity kernel is allowed and retains no cross-state coverage, demonstrating that strict epsilon<q is necessary for this sufficient theorem. Removing all holding loops gives a period-three permutation chain, strongly connected but NOT all-state positive at any fixed time. Finally, an arbitrarily small positive leak from one vertex to another when certified E is empty creates an uncertified positive hit: numerical TV control cannot replace an exact support certificate.
+
+**Actual source-defined arithmetic control:** For ArithmeticSieveKernel with modulus q=2 and integer cutoff N=4, weights on S=(1,2,3,4) are (1,0,3,0) with normalizer 4; each normalized reset-kernel row is (1/4,0,3/4,0). Even numbers 2 and 4 are present as states but have ZERO weight, so their parity type has zero mass after every positive reset time. Type representation alone does not give a positive-weight witness.
+
+**Finite evidence:** Local Python standard-library Fraction preflight passed exact rational assertions: all initial point masses and 12 time indices obey the positive-support/reachability equivalence; K^2 and later powers obey the q^D floor; five perturbations satisfy the robust floor; no-hold periodicity, epsilon=q failure, a 1/100 uncertified leak, radical nonlumpability and modulus-2 coprimality-sieve weights were checked. These tests are not Lean compilation, kernel acceptance or axiom auditing.
+
+### Smallest post-gate formalization target and missing bridges
+
+Only after open validation gate #1267 clears: first construct an explicitly typed graph-local lazy kernel inside existing GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel, retaining finite scope, edge support, exact positivity and holding weights. Second prove the separate stutter-erasure positivePath iff bounded-certified-reachability result, then the strong-connectivity D-step bound and row-TV robustness. Reuse existing positivePath and typeMass consumers without a parallel taxonomy. New Lean declarations are **NOT_YET_WRITTEN** and require a new exact source commit/blob, transitive imports, module/root compilation, fresh kernel replay and transitive axiom audit before acceptance. No remote execution, force push, merge or source-root promotion; operational receipts belong in grwtsk/noeaaeue outside math.
+
+The actual current GRWTSK seed has no certified edges. Constructing a nontrivial certified strongly connected sieve graph and quantitative cutoff-uniform q_H/D_H bounds are missing mathematical suppliers. Neither Tao's hyperdissipative PDE result, a generic K0 group completion, nor global source-independent reset diffusion supplies those missing graph certifications.
