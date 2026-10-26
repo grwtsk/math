@@ -8,6 +8,10 @@ import GRWTSK.Analysis.Geometry.FiniteFourArcReturnMetric
 import GRWTSK.Analysis.Geometry.FiniteFourArcHodge
 import GRWTSK.Analysis.Geometry.FiniteFourArcGap
 import GRWTSK.Analysis.Geometry.FiniteFourArcDeterminant
+import GRWTSK.Analysis.Geometry.FiniteFourArcNonintersection
+import GRWTSK.Analysis.Geometry.FiniteFourArcHalfOpenParameter
+import GRWTSK.Analysis.Geometry.FiniteFourArcOperatorTransport
+import GRWTSK.Analysis.Geometry.FiniteFourArcObservationEnergy
 import Mathlib
 
 set_option autoImplicit false
@@ -120,5 +124,59 @@ theorem geometric_hodge_and_determinant_certificate :
     quarterDeterminant_at_neg_I, fourPhase_closedWalkMoment⟩
   exact ⟨gapAttainingMode, gapAttainingMode_centeredEnergy,
     gapAttainingMode_laplacianEnergy⟩
+
+
+/-- Source geometry produces a mean-zero eigenvalue-two 0-cochain:
+the harmonic and alternating observations are independent missing
+channels for arbitrary measured contact states. -/
+theorem sourceToContact_centeredMean_zero (p : Plane) :
+    centeredMean (sourceToContact p) = 0 := by
+  norm_num [centeredMean, sourceToContact_coordinates] <;> ring
+
+/-- Complete finite source-error accounting for a *genuinely sourced*
+geometric plane: a full observed contact record must retain the
+geometric-plane error, harmonic common-mode error, and independent
+alternating error. No term is silently discarded. -/
+theorem finite_source_full_observation_error
+    (p : Plane) (observed : CompleteContactObservation) :
+    fourDot (reconstructObservation observed - sourceToContact p)
+        (reconstructObservation observed - sourceToContact p) =
+      2 * pointDot (observed.geometry - p) (observed.geometry - p) +
+        4 * observed.harmonicMean ^ 2 +
+        (1 / 4 : ℝ) * observed.alternating ^ 2 := by
+  have h := completeObservation_source_error (sourceToContact p) observed
+  simpa only [contactToSource_sourceToContact,
+    sourceToContact_centeredMean_zero,
+    alternatingReadout_sourceToContact_zero, sub_zero] using h
+
+/-- The strengthened bounded simulation combines an everywhere-unique
+half-open set parameterization, injective geometric source embedding,
+source-faithful quarter-turn/Laplacian intertwiners, all-mode
+observation recovery and exact positive reconstruction-error identity.
+The quotient-circle topology and arithmetic signed/Weil consumer are
+still independent mathematical suppliers. -/
+theorem finite_source_geometry_spectral_certificate
+    (p : Plane) (observed : CompleteContactObservation) :
+    Function.Injective HalfOpenArcTime.point ∧
+      Function.Injective sourceToContact ∧
+      Function.Injective completeObservation ∧
+      contactToSource (sourceToContact p) = p ∧
+      GRWTSK.Algebra.LinearAlgebra.FramedFiberPort.Intertwines
+        sourceToContact quarterTurn contactShift ∧
+      GRWTSK.Algebra.LinearAlgebra.FramedFiberPort.Intertwines
+        sourceToContact
+        (2 • (LinearMap.id : Plane →ₗ[ℝ] Plane))
+        cycleLaplacianLinear ∧
+      fourDot (reconstructObservation observed - sourceToContact p)
+          (reconstructObservation observed - sourceToContact p) =
+        2 * pointDot (observed.geometry - p) (observed.geometry - p) +
+          4 * observed.harmonicMean ^ 2 +
+          (1 / 4 : ℝ) * observed.alternating ^ 2 := by
+  exact ⟨HalfOpenArcTime.point_injective,
+    sourceToContact_injective, completeObservation_injective,
+    contactToSource_sourceToContact p,
+    sourceToContact_quarter_intertwines,
+    sourceToContact_laplacian_intertwines,
+    finite_source_full_observation_error p observed⟩
 
 end GRWTSK.Analysis.Geometry.FiniteFourArcContact
