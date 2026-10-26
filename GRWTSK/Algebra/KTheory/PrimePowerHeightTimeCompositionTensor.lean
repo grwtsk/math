@@ -312,9 +312,11 @@ theorem operatorSpectralValueAt_add
             laplacianEigenvalue
           ]
       | collision =>
-          change
-            Real.exp (-(firstTime + secondTime)) =
-              Real.exp (-firstTime) * Real.exp (-secondTime)
+          simp only [
+            operatorSpectralValueAt,
+            laplacianEigenvalue,
+            mul_one
+          ]
           rw [
             show -(firstTime + secondTime) =
                 -firstTime + -secondTime by ring,
@@ -328,9 +330,11 @@ theorem operatorSpectralValueAt_add
             laplacianEigenvalue
           ]
       | collision =>
-          change
-            Real.exp (-(firstTime + secondTime)) =
-              Real.exp (-firstTime) * Real.exp (-secondTime)
+          simp only [
+            operatorSpectralValueAt,
+            laplacianEigenvalue,
+            mul_one
+          ]
           rw [
             show -(firstTime + secondTime) =
                 -firstTime + -secondTime by ring,
