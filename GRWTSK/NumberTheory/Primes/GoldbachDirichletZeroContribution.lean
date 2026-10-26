@@ -246,7 +246,7 @@ formula remainder. -/
 def rightPerronTruncation
     (q N : ℕ) (χ : DirichletCharacter ℂ q) (σ t : ℝ) : ℂ :=
   let s : ℂ := ⟨σ, t⟩
-  (LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+  (LSeries (dirichletVonMangoldtCoefficient q χ) s -
       (∑ n ∈ Finset.range (N + 1),
         LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)) *
     ((N : ℂ) ^ s / s)
@@ -278,7 +278,7 @@ theorem norm_rightPerronTruncation_le
     exact_mod_cast (show 1 ≤ N by omega)
   have hlog : 0 ≤ Real.log (N : ℝ) := Real.log_nonneg hNone
   have hseries :
-      ‖LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+      ‖LSeries (dirichletVonMangoldtCoefficient q χ) s -
         (∑ n ∈ Finset.range (N + 1),
           LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)‖ ≤
       (N : ℝ) ^ (1 - σ) *
@@ -303,7 +303,7 @@ theorem norm_rightPerronTruncation_le
         (Real.log (N : ℝ) / (σ - 1) + 1 / (σ - 1) ^ 2) := by
     positivity
   change
-    ‖(LSeries.L (dirichletVonMangoldtCoefficient q χ) s -
+    ‖(LSeries (dirichletVonMangoldtCoefficient q χ) s -
       (∑ n ∈ Finset.range (N + 1),
         LSeries.term (dirichletVonMangoldtCoefficient q χ) s n)) *
       ((N : ℂ) ^ s / s)‖ ≤
@@ -396,7 +396,7 @@ theorem continuous_rightPerronTruncation
     simpa only [Complex.ofReal_re] using hsummable.abscissaOfAbsConv_le
   have hstrict : LSeries.abscissaOfAbsConv f < (σ : EReal) :=
     habscissa.trans_lt (by exact_mod_cast hmid_lt)
-  have hfull : Continuous (fun t : ℝ => LSeries.L f (v t)) := by
+  have hfull : Continuous (fun t : ℝ => LSeries f (v t)) := by
     apply continuous_iff_continuousAt.mpr
     intro t
     have hpoint : LSeries.abscissaOfAbsConv f < (v t).re := by
@@ -429,12 +429,12 @@ theorem continuous_rightPerronTruncation
   have hweight : Continuous (fun t : ℝ => (N : ℂ) ^ (v t) / v t) :=
     hpow.div hv hdenom
   have hmain : Continuous (fun t : ℝ =>
-      (LSeries.L f (v t) -
+      (LSeries f (v t) -
         (∑ n ∈ Finset.range (N + 1), LSeries.term f (v t) n)) *
         ((N : ℂ) ^ (v t) / v t)) :=
     (hfull.sub (hprefix (Finset.range (N + 1)))).mul hweight
   change Continuous (fun t : ℝ =>
-    (LSeries.L (dirichletVonMangoldtCoefficient q χ) (⟨σ, t⟩ : ℂ) -
+    (LSeries (dirichletVonMangoldtCoefficient q χ) (⟨σ, t⟩ : ℂ) -
       (∑ n ∈ Finset.range (N + 1),
         LSeries.term (dirichletVonMangoldtCoefficient q χ) (⟨σ, t⟩ : ℂ) n)) *
       ((N : ℂ) ^ (⟨σ, t⟩ : ℂ) / (⟨σ, t⟩ : ℂ)))
