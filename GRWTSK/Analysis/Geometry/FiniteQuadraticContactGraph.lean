@@ -22,6 +22,7 @@ particular its single directed contact is NOT a return cycle.
 namespace GRWTSK.Analysis.Geometry.FiniteQuadraticContactGraph
 
 open GRWTSK.Analysis.Geometry.QuadraticBezierContact
+open GRWTSK.Analysis.Geometry.QuadraticBezierContact.Segment
 
 universe u v
 
