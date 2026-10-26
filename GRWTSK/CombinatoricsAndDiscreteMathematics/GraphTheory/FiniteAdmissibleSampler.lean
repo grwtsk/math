@@ -790,6 +790,42 @@ theorem eventually_real_type_complete_of_residue_returns
   exact ⟨source, target, hkind, hsource, by
     simpa [Nat.add_assoc] using hpath⟩
 
+/-!
+## Period-two obstruction to residue-complete returns
+
+A strictly bipartite admissible graph has no odd-length return path.
+This rules out the residue-complete certificate with period two, but
+does not rule out every possible type-coverage mechanism.
+-/
+
+/-- An allowed path in a graph whose edges flip Boolean color has the
+expected parity-dependent endpoint color. -/
+theorem AllowedPath.color_parity
+    (S : Sampler V) (color : V → Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    {source target : V} {length : ℕ}
+    (path : AllowedPath S source target length) :
+    color target = (if length % 2 = 0 then color source else !color source) := by
+  induction path with
+  | refl source =>
+      simp
+  | @step source middle target n hedge tail ih =>
+      have hflip := flips source middle hedge
+      rw [ih, hflip]
+      cases hn : n % 2 <;> cases hc : color source <;>
+        simp [Nat.succ_mod, hn, hc]
+
+/-- Strictly bipartite allowed edges prohibit an odd return. -/
+theorem AllowedPath.no_odd_return_of_bipartite
+    (S : Sampler V) (color : V → Bool)
+    (flips : ∀ a b, S.allowed a b = true → color b = !color a)
+    (target : V) (length : ℕ) (odd : length % 2 = 1) :
+    ¬ AllowedPath S target target length := by
+  intro path
+  have h := AllowedPath.color_parity S color flips path
+  simp [odd] at h
+  cases hc : color target <;> simp [hc] at h
+
 end TypeHeat
 
 end Sampler
