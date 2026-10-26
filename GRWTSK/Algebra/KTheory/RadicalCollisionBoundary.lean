@@ -2030,4 +2030,73 @@ theorem jointTwoThreeValuation_buffered_mass_ge_fixed_rate
     _ ≤ (bufferedDiagonalKernel 5 N hN).typeMass
           initial jointTwoThreeValuationType (depth + 1) (a, b) := hmass
 
+/-- Every fixed joint (2-adic,3-adic) valuation pair eventually
+receives positive mass in ONE modulus-five buffered kernel, for
+every cutoff above its type-dependent period, all normalized
+nonnegative initial distributions and all positive Markov times. -/
+theorem jointTwoThreeValuation_buffered_eventually_pos (a b : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          0 < (bufferedDiagonalKernel 5 N hN).typeMass
+            initial jointTwoThreeValuationType (depth + 1) (a, b) := by
+  refine ⟨jointTwoThreeValuationPeriod a b, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : (0 : ℝ) < (jointTwoThreeValuationPeriod a b : ℝ) := by
+    exact_mod_cast (jointTwoThreeValuationPeriod_pos a b)
+  have hr : (0 : ℝ) <
+      (1 : ℝ) / (8 * (jointTwoThreeValuationPeriod a b : ℝ)) := by
+    positivity
+  exact hr.trans_le
+    (jointTwoThreeValuation_buffered_mass_ge_fixed_rate
+      a b N hN hcutoff initial hnonneg hmass depth)
+
+/-- Joint type pair (a,b) obtains a certified arithmetic hit on the
+same integer, in ONE modulus-five certified arithmetic graph at
+search depth one, after any positive buffered diffusion step once
+the type-dependent cutoff is reached. -/
+theorem jointTwoThreeValuation_buffered_eventually_certified_hit (a b : ℕ) :
+    ∃ cutoff : ℕ, ∀ (N : ℕ) (hN : 1 ≤ N),
+      cutoff ≤ N →
+      ∀ (initial : ℕ → ℝ),
+        (∀ n ∈ scope N, 0 ≤ initial n) →
+        (∑ n ∈ scope N, initial n) = 1 →
+        ∀ depth : ℕ,
+          (certifiedArithmeticInventory 5 N hN).sieveTypeHit
+            1 jointTwoThreeValuationType
+            (fun _ n => (bufferedDiagonalKernel 5 N hN).evolve
+              initial (depth + 1) n) 1 (a, b) := by
+  refine ⟨jointTwoThreeValuationPeriod a b, ?_⟩
+  intro N hN hcutoff initial hnonneg hmass depth
+  have hdpos : 0 < jointTwoThreeValuationPeriod a b :=
+    jointTwoThreeValuationPeriod_pos a b
+  have hquot : 1 ≤ N / jointTwoThreeValuationPeriod a b := by
+    apply (Nat.le_div_iff_mul_le hdpos).mpr
+    simpa only [one_mul] using hcutoff
+  have hscope :
+      jointTwoThreeValuationProgression a b 0 ∈ scope N :=
+    jointTwoThreeValuationProgression_mem_scope a b N 0 (by omega)
+  have hcop :
+      Nat.Coprime (jointTwoThreeValuationProgression a b 0) 5 :=
+    jointTwoThreeValuationProgression_coprime_five a b 0
+  have hreach :
+      jointTwoThreeValuationProgression a b 0 ∈
+        (certifiedArithmeticInventory 5 N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors 5 N hN]
+    exact Finset.mem_filter.mpr ⟨hscope, hcop⟩
+  have hrate : (0 : ℝ) < ((4 : ℝ) * (N : ℝ))⁻¹ :=
+    bufferedDiagonalKernel_rate_pos N hN
+  have hpositive :
+      0 < (bufferedDiagonalKernel 5 N hN).evolve initial
+        (depth + 1) (jointTwoThreeValuationProgression a b 0) :=
+    hrate.trans_le
+      (bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff
+        5 N hN initial hnonneg hmass depth
+        (jointTwoThreeValuationProgression a b 0) hscope hcop)
+  exact ⟨jointTwoThreeValuationProgression a b 0, hreach,
+    jointTwoThreeValuationProgression_type a b 0, hpositive⟩
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
