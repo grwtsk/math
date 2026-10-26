@@ -1308,4 +1308,104 @@ theorem SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error
   have herr := hsmall depth hdepth
   linarith
 
+/-! ## Finite, mass-preserving weighted-sieve transition kernels
+
+This is a finite row-stochastic construction. It does not instantiate
+an analytic heat semigroup or assert that the kernel follows the
+certified graph; those are separate compatibility obligations.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. -/
+
+/-- A nonnegative row-stochastic kernel restricted to a finite scope.
+Transitions outside the declared scope are not used for mass totals. -/
+structure FiniteSieveMarkovKernel (State : Type u) where
+  scope : Finset State
+  transition : State → State → ℝ
+  transition_nonneg :
+    ∀ x ∈ scope, ∀ y ∈ scope, 0 ≤ transition x y
+  row_sum_one :
+    ∀ x ∈ scope, (∑ y ∈ scope, transition x y) = 1
+
+namespace FiniteSieveMarkovKernel
+
+variable {State : Type u} [DecidableEq State]
+
+/-- One exact finite diffusion step of the supplied weight distribution.
+The orientation is source x to target y. -/
+noncomputable def step (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) (target : State) : ℝ :=
+  ∑ x ∈ K.scope, weight x * K.transition x target
+
+/-- Nonnegative input weights remain nonnegative on the finite scope. -/
+theorem step_nonneg (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x)
+    (target : State) (target_mem : target ∈ K.scope) :
+    0 ≤ K.step weight target := by
+  unfold step
+  apply Finset.sum_nonneg
+  intro x hx
+  exact mul_nonneg (weight_nonneg x hx)
+    (K.transition_nonneg x hx target target_mem)
+
+/-- Row stochasticity, not symmetry, preserves the total finite mass
+under one step. This identity does not require positive total mass. -/
+theorem sum_step_eq_sum (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ) :
+    (∑ y ∈ K.scope, K.step weight y) =
+      ∑ x ∈ K.scope, weight x := by
+  calc
+    (∑ y ∈ K.scope, K.step weight y) =
+        ∑ x ∈ K.scope, ∑ y ∈ K.scope,
+          weight x * K.transition x y := by
+      change (∑ y ∈ K.scope, ∑ x ∈ K.scope,
+        weight x * K.transition x y) =
+          ∑ x ∈ K.scope, ∑ y ∈ K.scope,
+            weight x * K.transition x y
+      exact Finset.sum_comm
+    _ = ∑ x ∈ K.scope, weight x := by
+      apply Finset.sum_congr rfl
+      intro x hx
+      calc
+        (∑ y ∈ K.scope, weight x * K.transition x y) =
+            weight x * (∑ y ∈ K.scope, K.transition x y) := by
+              rw [Finset.mul_sum]
+        _ = weight x := by
+          rw [K.row_sum_one x hx, mul_one]
+
+/-- A strictly positive one-step output is equivalent to a source
+with positive input weight and a strictly positive transition.
+Nonnegative input weights and transition coefficients are essential. -/
+theorem step_pos_iff (K : FiniteSieveMarkovKernel State)
+    (weight : State → ℝ)
+    (weight_nonneg : ∀ x ∈ K.scope, 0 ≤ weight x)
+    (target : State) (target_mem : target ∈ K.scope) :
+    0 < K.step weight target ↔
+      ∃ x ∈ K.scope, 0 < weight x ∧ 0 < K.transition x target := by
+  unfold step
+  have hsum :
+      (0 < ∑ x ∈ K.scope, weight x * K.transition x target) ↔
+        ∃ x ∈ K.scope, 0 < weight x * K.transition x target :=
+    Finset.sum_pos_iff_of_nonneg
+      (fun x hx => mul_nonneg (weight_nonneg x hx)
+        (K.transition_nonneg x hx target target_mem))
+  constructor
+  · intro hpos
+    obtain ⟨x, hx, hprod⟩ := hsum.mp hpos
+    have hw : 0 < weight x := by
+      by_contra hnot
+      have hzero : weight x = 0 :=
+        le_antisymm (le_of_not_gt hnot) (weight_nonneg x hx)
+      simp [hzero] at hprod
+    have hp : 0 < K.transition x target := by
+      by_contra hnot
+      have hzero : K.transition x target = 0 :=
+        le_antisymm (le_of_not_gt hnot)
+          (K.transition_nonneg x hx target target_mem)
+      simp [hzero] at hprod
+    exact ⟨x, hx, hw, hp⟩
+  · rintro ⟨x, hx, hw, hp⟩
+    exact hsum.mpr ⟨x, hx, mul_pos hw hp⟩
+
+end FiniteSieveMarkovKernel
+
 end GRWTSK.GraphSandwichDiffusion
