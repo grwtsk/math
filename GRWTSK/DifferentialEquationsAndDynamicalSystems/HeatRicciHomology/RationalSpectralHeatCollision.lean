@@ -370,4 +370,54 @@ theorem antisymmetric_gap_survives_heat
   have : q = 0 := by linarith
   exact hq this
 
+/-! ## Complementary symmetric and antisymmetric projections
+
+On rational pairs, the mean and half-difference define
+complementary idempotent projections. This is an exact finite
+two-mode decomposition, not an analytic Hodge theorem or a
+Rank32 suppression identification.
+-/
+
+/-- Symmetric projection onto the diagonal subspace. -/
+def symmetricPair (q r : ℚ) : ℚ × ℚ :=
+  (pairAverage q r, pairAverage q r)
+
+/-- Antisymmetric projection onto the anti-diagonal subspace. -/
+def antisymmetricPair (q r : ℚ) : ℚ × ℚ :=
+  ((q - r) / 2, (r - q) / 2)
+
+/-- Exact reconstruction of both original rational coordinates. -/
+theorem symmetric_add_antisymmetric (q r : ℚ) :
+    (symmetricPair q r).1 + (antisymmetricPair q r).1 = q ∧
+    (symmetricPair q r).2 + (antisymmetricPair q r).2 = r := by
+  constructor <;> unfold symmetricPair antisymmetricPair pairAverage <;> ring
+
+/-- The symmetric projection is idempotent. -/
+theorem symmetricPair_idempotent (q r : ℚ) :
+    symmetricPair (symmetricPair q r).1 (symmetricPair q r).2 =
+      symmetricPair q r := by
+  unfold symmetricPair pairAverage
+  congr 1 <;> ring
+
+/-- The antisymmetric projection is idempotent. -/
+theorem antisymmetricPair_idempotent (q r : ℚ) :
+    antisymmetricPair (antisymmetricPair q r).1
+      (antisymmetricPair q r).2 = antisymmetricPair q r := by
+  unfold antisymmetricPair
+  congr 1 <;> ring
+
+/-- Symmetric projection annihilates the antisymmetric component. -/
+theorem symmetricPair_antisymmetric_zero (q r : ℚ) :
+    symmetricPair (antisymmetricPair q r).1
+      (antisymmetricPair q r).2 = (0, 0) := by
+  unfold symmetricPair antisymmetricPair pairAverage
+  constructor <;> ring
+
+/-- Antisymmetric projection annihilates the symmetric component. -/
+theorem antisymmetricPair_symmetric_zero (q r : ℚ) :
+    antisymmetricPair (symmetricPair q r).1
+      (symmetricPair q r).2 = (0, 0) := by
+  unfold antisymmetricPair symmetricPair pairAverage
+  constructor <;> ring
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
