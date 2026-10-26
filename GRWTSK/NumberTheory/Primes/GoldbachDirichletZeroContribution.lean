@@ -40,7 +40,7 @@ noncomputable section
 
 /-- Finite *selected* nontrivial zeros in a height window, not a claim
 that the supplied candidate set lists every zero in that window. -/
-def selectedZeros (q : ℕ) (χ : DirichletCharacter ℂ q)
+def selectedZeros (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
     (T : ℝ) (candidates : Finset ℂ) : Finset ℂ :=
   candidates.filter (fun ρ =>
     0 < ρ.re ∧ ρ.re < 1 ∧ |ρ.im| ≤ T ∧ χ.LFunction ρ = 0)
@@ -48,7 +48,7 @@ def selectedZeros (q : ℕ) (χ : DirichletCharacter ℂ q)
 /-- The actual zero equation and all geometric cutoffs are preserved
 when passing from a candidate list to its selected packet. -/
 theorem selectedZeros_conditions
-    (q : ℕ) (χ : DirichletCharacter ℂ q)
+    (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
     (T : ℝ) (candidates : Finset ℂ) {ρ : ℂ}
     (hρ : ρ ∈ selectedZeros q χ T candidates) :
     0 < ρ.re ∧ ρ.re < 1 ∧ |ρ.im| ≤ T ∧ χ.LFunction ρ = 0 := by
@@ -94,7 +94,7 @@ theorem norm_cpow_div_le_seven_eighths
 /-- The reciprocal-size budget for the selected, finite zero packet.
 The expression remains sensitive to modulus, character, cutoff, and
 candidate coverage. It is not bounded by a zero-counting theorem here. -/
-def reciprocalZeroMass (q : ℕ) (χ : DirichletCharacter ℂ q)
+def reciprocalZeroMass (q : ℕ) [NeZero q] (χ : DirichletCharacter ℂ q)
     (T : ℝ) (candidates : Finset ℂ) : ℝ :=
   ∑ ρ ∈ selectedZeros q χ T candidates, (‖ρ‖)⁻¹
 
@@ -131,7 +131,7 @@ theorem norm_selected_zero_contribution_le
 /-- The named, exact proposed finite-twist error budget.
 Its numeric value is NOT supplied by the zero-free proposition alone. -/
 def finiteZeroFormulaBudget
-    (q N : ℕ) (T : ℝ)
+    (q N : ℕ) [NeZero q] (T : ℝ)
     (candidates : DirichletCharacter ℂ q → Finset ℂ)
     (R : DirichletCharacter ℂ q → ℝ)
     (χ : DirichletCharacter ℂ q) : ℝ :=
