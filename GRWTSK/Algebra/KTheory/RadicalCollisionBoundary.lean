@@ -357,4 +357,56 @@ theorem multiplicityOneType_diagonal_complete_and_collision
   · exact no_exact_multiplicityOneType_decoder_on_certified_sieve
       lift N hN h4
 
+/-! ## Explicit rate for two collision-distinct exact type fibers
+
+For every cutoff N ≥ 4, both Boolean labels already have arithmetic
+witnesses 2 and 4. The diagonal source-dependent kernel assigns at
+least 1/(2*N²) mass to either type after *every positive* number of
+steps from any normalized nonnegative input.
+
+This lower bound is uniform in the step count, not a positive
+N-independent limiting density or character-cancellation result.
+-/
+
+/-- Quantitative finite-cutoff steering for both Boolean 2-adic
+multiplicity types. No K₀ injectivity or analytic mixing is assumed;
+the two labels use distinct representatives 2 and 4 even though
+their radical-derived K₀-shaped observations collide. -/
+theorem multiplicityOneType_diagonal_mass_ge_inv_two_cutoff_sq
+    (N : ℕ) (hN : 1 ≤ N) (h4 : 4 ≤ N)
+    (initial : ℕ → ℝ)
+    (initial_nonneg : ∀ n ∈ scope N, 0 ≤ initial n)
+    (initial_mass_one : (∑ n ∈ scope N, initial n) = 1)
+    (depth : ℕ) (label : Bool) :
+    ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ ≤
+      (diagonalKernel 3 N hN).typeMass initial
+        multiplicityOneType (depth + 1) label := by
+  cases label with
+  | false =>
+      apply diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq
+        3 N hN initial initial_nonneg initial_mass_one
+        multiplicityOneType false 4 depth
+      · change (4 : ℕ) ∈ Finset.Icc 1 N
+        exact Finset.mem_Icc.mpr ⟨by omega, h4⟩
+      · exact multiplicityOneType_four
+      · decide
+  | true =>
+      apply diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq
+        3 N hN initial initial_nonneg initial_mass_one
+        multiplicityOneType true 2 depth
+      · change (2 : ℕ) ∈ Finset.Icc 1 N
+        exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+      · exact multiplicityOneType_two
+      · decide
+
+/-- The polynomial baseline is strictly positive at every finite
+cutoff N≥4. It tends to zero with the cutoff, so this conclusion
+is not a positive limiting density statement. -/
+theorem multiplicityOneType_diagonal_rate_pos
+    (N : ℕ) (h4 : 4 ≤ N) :
+    (0 : ℝ) < ((2 : ℝ) * (N : ℝ) * (N : ℝ))⁻¹ := by
+  have hn : (0 : ℝ) < (N : ℝ) := by
+    exact_mod_cast (show 0 < N by omega)
+  positivity
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
