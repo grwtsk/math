@@ -1,0 +1,87 @@
+# P0 bounded source-pinned verification request only; no execution or receipts.
+schema_version = "0.1"
+request_id = "graph-sandwich-sieve-type-fiber-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "cbad7cee9aba7426de8aa7f005f8b32fa80602d7"
+source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+source_blob = "2e4812c2d694a57888e8ff647337b0c4947b2f88"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_pos_sum_path = "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean"
+mathlib_pos_sum_blob = "3745e5cb7ff4b16ad6532357837698f4bf54c4a8"
+collision_comparison_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+collision_comparison_blob = "ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "FINITE_SIEVE_COVERAGE_SOURCE_CANDIDATE"
+theorem_statements = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_pos_of_hit",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_pos_iff_hit_of_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_all_mass_pos_of_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_eq_feature_fiber",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.no_exact_feature_type_of_collision",
+]
+existing_consumed_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_of_mass_pos",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_eq_of_radical_eq",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_type_complete_feature_only_steering_of_collision",
+]
+direct_imports = [
+  "Mathlib",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+exact_hypotheses = [
+  "Inventory : SourceSearchInventory V, source : V, depth : Nat, typeOf : V -> T, diffusedSieveWeight : Nat -> V -> Real, targetType : T",
+  "For mass-positive iff positive certified witness: forall vertex in certifiedSearch source depth, 0 <= diffusedSieveWeight depth vertex",
+  "For finite type coverage equivalence: same weight nonnegativity on the entire certifiedSearch finite set, all targetType : T",
+  "For feature-fiber mass equality: explicit feature : V -> Feature, featureType : Feature -> T, typeOf vertex = featureType (feature vertex) on all certified reachable vertices; no nonnegativity required",
+  "For feature-only decoder obstruction: two certified-reachable vertices a b, feature a = feature b, and typeOf a != typeOf b",
+]
+mathematical_conclusions = [
+  "Positive mass on finite certified type fiber iff a positive-weight certified vertex of that type exists, given nonnegative certified weights",
+  "Finite type completeness at depth iff every target type has positive certified aggregate mass",
+  "Fiber-preserving feature map leaves each certified type-fiber mass unchanged",
+  "A same-feature distinct-type certified collision rules out a feature-only exact decoder on that certified scope",
+]
+unresolved_premises = [
+  "No actual nonnegative diffusion kernel, stochastic normalization, stationary law, spectral gap or Markov mass conservation is constructed in this increment",
+  "No type-positive asymptotic steering bounds are proved; upstream eventual mass bound remains an explicit assumption",
+  "No concrete adapter from Nat into the certified graph-sandwich inventory with two reachable radical-colliding states has been built",
+  "KZero in the compared source remains universal Grothendieck group completion, not a computed analytic K0 or analytic KK",
+  "Graph source imported dependency closure and all new Lean proof tactics remain uncompiled",
+  "Current seedInventory has no certified edge; it does not automatically exhibit positive mass on all types",
+]
+status_classification = "SOURCE_CANDIDATE_NOT_KERNEL_ACCEPTED"
+source_static_readback = "SOURCE_AND_MATHLIB_API_INSPECTED_NO_ELABORATION"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = cbad7cee9aba7426de8aa7f005f8b32fa80602d7 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 2e4812c2d694a57888e8ff647337b0c4947b2f88 && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+sum_positivity_api = "Confirm Finset.sum_pos' and Finset.sum_congr at pinned Mathlib"
+fresh_kernel = "PENDING_SUPPORTED_INDEPENDENT_CHECKER_CAPABILITY"
+axiom_targets = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_pos_of_hit",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_pos_iff_hit_of_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_all_mass_pos_of_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeMass_eq_feature_fiber",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.no_exact_feature_type_of_collision",
+]
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_TRANSITIVE_AXIOM_CENSUS"
+expected_compiler_exit_code = 0
+expected_elaboration_exit_code = 0
