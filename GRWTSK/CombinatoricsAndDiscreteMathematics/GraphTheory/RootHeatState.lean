@@ -530,6 +530,84 @@ theorem all_positive_times_type_complete_of_anchor_self_loop
     typeOf anchor delta (kernel.evolve initial time anchor)
     delta_pos hpos minor (le_refl _)
 
+/-!
+### Quantitative two-step anchor reinjection
+
+This is an explicit return/minorization supplier: every source transfers at
+least beta of its heat to one anchor in the next step. Together with
+type-spanning outgoing anchor edges it gives a two-step type-mass floor.
+No arithmetic sieve is claimed to satisfy either hypothesis.
+-/
+
+/-- Uniform incoming weight to one anchor, not to every target. -/
+def AnchorReinjection
+    (kernel : HeatKernel Root) (anchor : Root) (beta : ℚ) : Prop :=
+  ∀ source, beta ≤ kernel.transition anchor source
+
+/-- The actual incoming weights guarantee an anchor mass floor at the next
+step. This does not require a positive anchor self-loop. -/
+theorem anchor_mass_floor_of_reinjection
+    (kernel : HeatKernel Root) (heat : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ heat root)
+    (anchor : Root) (beta : ℚ)
+    (reinject : AnchorReinjection kernel anchor beta) :
+    beta * (∑ root, heat root) ≤ kernel.step heat anchor :=
+  step_lower_of_target_minorization kernel heat nonnegative beta anchor reinject
+
+/-- Quantitative type coverage after two steps through a common anchor.
+The same lower bound applies at every later time by conserved total heat. -/
+theorem type_mass_lower_after_two_steps_of_reinjection
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind) (anchor : Root)
+    (beta delta : ℚ) (delta_nonneg : 0 ≤ delta)
+    (reinject : AnchorReinjection kernel anchor beta)
+    (outgoing : AnchorTypeMinorization kernel typeOf anchor delta)
+    (time : Nat) (kind : Kind) :
+    delta * (beta * (∑ root, initial root)) ≤
+      aggregate typeOf (kernel.evolve initial (time + 2)) kind := by
+  have hanchor :
+      beta * (∑ root, initial root) ≤
+        kernel.evolve initial (time + 1) anchor := by
+    change beta * (∑ root, initial root) ≤
+      kernel.step (kernel.evolve initial time) anchor
+    have h := anchor_mass_floor_of_reinjection kernel
+      (kernel.evolve initial time)
+      (kernel.evolve_nonneg initial nonnegative time)
+      anchor beta reinject
+    rw [kernel.evolve_mass initial time] at h
+    exact h
+  have hsteering := steering_of_anchor_type_minorization kernel
+    (kernel.evolve initial (time + 1))
+    (kernel.evolve_nonneg initial nonnegative (time + 1))
+    typeOf anchor delta (beta * (∑ root, initial root))
+    outgoing hanchor delta_nonneg
+  have hbound := type_mass_lower_of_steering kernel
+    (kernel.evolve initial (time + 1))
+    (kernel.evolve_nonneg initial nonnegative (time + 1))
+    typeOf (delta * (beta * (∑ root, initial root))) hsteering kind
+  change delta * (beta * (∑ root, initial root)) ≤
+    aggregate typeOf (kernel.step (kernel.evolve initial (time + 1))) kind
+  exact hbound
+
+/-- A positive two-step reinjection/steering budget gives complete type
+coverage from time two onward, with an explicit time-independent floor. -/
+theorem eventually_type_complete_of_anchor_reinjection
+    (kernel : HeatKernel Root) (initial : Root → ℚ)
+    (nonnegative : ∀ root, 0 ≤ initial root)
+    (typeOf : Root → Kind) (anchor : Root)
+    (beta delta : ℚ) (beta_pos : 0 < beta) (delta_pos : 0 < delta)
+    (mass_pos : 0 < ∑ root, initial root)
+    (reinject : AnchorReinjection kernel anchor beta)
+    (outgoing : AnchorTypeMinorization kernel typeOf anchor delta) :
+    ∀ time, TypeCompleteAt typeOf (kernel.evolve initial (time + 2)) := by
+  intro time kind
+  exact lt_of_lt_of_le
+    (mul_pos delta_pos (mul_pos beta_pos mass_pos))
+    (type_mass_lower_after_two_steps_of_reinjection kernel initial
+      nonnegative typeOf anchor beta delta (le_of_lt delta_pos)
+      reinject outgoing time kind)
+
 end UniformMinorization
 
 /-- Root names plus the current exact heat are the retained prioritization state. -/
