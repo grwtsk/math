@@ -1702,4 +1702,77 @@ theorem primeValuation_selectedSieve_eventually_certified_hit
     simpa [primeValuationSieveModulus, h] using
       primeValuation_buffered_eventually_certified_hit p k hp hcop
 
+/-- The two-modulus selection does not erase the original
+K₀-shaped radical collision. For any prime p, once the cutoff
+contains both p and p², they are certified survivors of the
+selected modulus (2 for p=3, 3 otherwise); their radical-derived
+group-completion features agree, but their exact valuation labels
+are different. Therefore no feature-only exact decoder exists on
+that entire certified arithmetic scope.
+
+This negative control is separate from the positive *mass-coverage*
+result for each fixed prime valuation. -/
+theorem primeValuation_selectedSieve_no_exact_decoder
+    (lift : ℕ →* M) (p N : ℕ) (hp : Nat.Prime p)
+    (hN : 1 ≤ N) (hpowBound : p ^ 2 ≤ N) :
+    ¬ ∃ decode : GrothendieckKZero M → ℕ,
+        ∀ n ∈
+          (certifiedArithmeticInventory
+            (primeValuationSieveModulus p) N hN).certifiedSearch 1 1,
+          primeValuationType p n = decode (kZeroRadical lift n) := by
+  have hcop : Nat.Coprime p (primeValuationSieveModulus p) := by
+    by_cases h : p = 3
+    · subst p
+      have h32 : Nat.Coprime 3 2 := by decide
+      simpa [primeValuationSieveModulus] using h32
+    · have hcop3 : Nat.Coprime p 3 :=
+        primeValuation_coprime_three_of_ne p hp h
+      simpa [primeValuationSieveModulus, h] using hcop3
+  have hcopPow :
+      Nat.Coprime (p ^ 2) (primeValuationSieveModulus p) :=
+    (Nat.coprime_pow_left_iff (by norm_num : 0 < 2)
+      p (primeValuationSieveModulus p)).mpr hcop
+  have hpLower : 1 ≤ p := hp.one_lt.le
+  have hple : p ≤ N := by
+    calc
+      p = p * 1 := by simp
+      _ ≤ p * p := Nat.mul_le_mul_left p hpLower
+      _ = p ^ 2 := by ring
+      _ ≤ N := hpowBound
+  have hpScope : p ∈ scope N := by
+    change p ∈ Finset.Icc 1 N
+    exact Finset.mem_Icc.mpr ⟨hpLower, hple⟩
+  have hpPowScope : p ^ 2 ∈ scope N := by
+    change p ^ 2 ∈ Finset.Icc 1 N
+    have hpositive : 0 < p ^ 2 := pow_pos hp.pos 2
+    exact Finset.mem_Icc.mpr ⟨Nat.one_le_iff_ne_zero.mpr
+      (Nat.ne_of_gt hpositive), hpowBound⟩
+  have hpReach :
+      p ∈ (certifiedArithmeticInventory
+        (primeValuationSieveModulus p) N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors
+      (primeValuationSieveModulus p) N hN]
+    exact Finset.mem_filter.mpr ⟨hpScope, hcop⟩
+  have hpowReach :
+      p ^ 2 ∈ (certifiedArithmeticInventory
+        (primeValuationSieveModulus p) N hN).certifiedSearch 1 1 := by
+    rw [certifiedArithmeticInventory_search_one_eq_survivors
+      (primeValuationSieveModulus p) N hN]
+    exact Finset.mem_filter.mpr ⟨hpPowScope, hcopPow⟩
+  have hK : kZeroRadical lift p = kZeroRadical lift (p ^ 2) :=
+    (kZeroRadical_pow lift p 2 (by norm_num)).symm
+  have hneq :
+      primeValuationType p p ≠ primeValuationType p (p ^ 2) := by
+    have hself : p.factorization p = 1 := hp.factorization_self
+    have hpow : (p ^ 2).factorization p = 2 :=
+      Nat.factorization_pow_self hp
+    intro heq
+    have hfalse : (1 : ℕ) = 2 := by
+      simpa only [primeValuationType, hself, hpow] using heq
+    norm_num at hfalse
+  exact (certifiedArithmeticInventory
+    (primeValuationSieveModulus p) N hN).no_exact_feature_type_of_collision
+      1 (primeValuationType p) (kZeroRadical lift) 1
+      hpReach hpowReach hK hneq
+
 end GRWTSK.Algebra.KTheory.RadicalCollisionBoundary
