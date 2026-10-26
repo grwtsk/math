@@ -126,4 +126,70 @@ theorem refinement_preserves_terminal_collision
   funext i
   exact terminal_heatStep c (refinedField R u i)
 
+/-! ## Explicit spectral-gap stability under refinement
+
+Constant preservation alone does not bound pairwise differences.
+A separate nonexpansive-gap hypothesis is sufficient to transport
+gap contraction through refinement. The hypothesis is not inferred
+from linearity or Hodge terminology.
+-/
+
+/-- A fixed-scale gap nonexpansion certificate for a rational linear
+refinement. Every output pair is compared with a designated input
+pair; the map of index pairs is an explicit mathematical input. -/
+def GapNonexpansive
+    {ι κ : Type*}
+    (R : (ι → ℚ) →ₗ[ℚ] (κ → ℚ))
+    (sourcePair : κ → κ → ι × ι)
+    (scale : ℚ) : Prop :=
+  ∀ (u : ι → ℚ) (a b : κ),
+    proportionalGap scale (R u a) (R u b) ≤
+      proportionalGap scale (u (sourcePair a b).1)
+        (u (sourcePair a b).2)
+
+/-- A certified nonexpansive refinement followed by the finite heat
+step contracts the designated input gap by the exact factor 1-t. -/
+theorem refined_heat_gap_le
+    {ι κ : Type*}
+    (R : (ι → ℚ) →ₗ[ℚ] (κ → ℚ))
+    (sourcePair : κ → κ → ι × ι)
+    (scale c t : ℚ)
+    (ht0 : 0 ≤ t) (ht1 : t ≤ 1)
+    (hgap : GapNonexpansive R sourcePair scale)
+    (a b : κ) (u : ι → ℚ) :
+    proportionalGap scale
+        (heatField c t (R u) a)
+        (heatField c t (R u) b) ≤
+      (1 - t) *
+        proportionalGap scale
+          (u (sourcePair a b).1)
+          (u (sourcePair a b).2) := by
+  have hfactor : 0 ≤ (1 - t : ℚ) := sub_nonneg.mpr ht1
+  have h := hgap u a b
+  have hscaled := mul_le_mul_of_nonneg_left h hfactor
+  simpa only [heatField, proportionalGap_heatStep_eq c t scale
+    (R u a) (R u b) ht0 ht1] using hscaled
+
+/-- Constant preservation and certified gap nonexpansion combine to
+give the same bound when refinement is applied AFTER heat. -/
+theorem refinement_after_heat_gap_le
+    {ι κ : Type*}
+    (R : (ι → ℚ) →ₗ[ℚ] (κ → ℚ))
+    (sourcePair : κ → κ → ι × ι)
+    (scale c t : ℚ)
+    (ht0 : 0 ≤ t) (ht1 : t ≤ 1)
+    (hreference : R (fun _ : ι => c) = (fun _ : κ => c))
+    (hgap : GapNonexpansive R sourcePair scale)
+    (a b : κ) (u : ι → ℚ) :
+    proportionalGap scale
+        (R (heatField c t u) a)
+        (R (heatField c t u) b) ≤
+      (1 - t) *
+        proportionalGap scale
+          (u (sourcePair a b).1)
+          (u (sourcePair a b).2) := by
+  rw [refinement_commutes_heat R c t hreference u]
+  exact refined_heat_gap_le R sourcePair scale c t
+    ht0 ht1 hgap a b u
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.RationalSpectralHeatCollision
