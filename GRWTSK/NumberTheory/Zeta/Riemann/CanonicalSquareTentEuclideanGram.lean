@@ -980,4 +980,27 @@ theorem relative_moment_gap_of_central_prime_count_chebyshev
   apply relative_moment_gap_of_central_prime_count n δ
   exact (mul_le_mul_of_nonneg_left hfull hδ).trans hcount
 
+/-! ## A weaker source-faithful central prime-count interface
+
+A direct upper estimate for the COMPLETE short-interval von Mangoldt
+mass is strictly more appropriate than the coarse cumulative
+Chebyshev quadratic envelope. It is an explicit independent supplier;
+no short-interval estimate is inferred from cumulative Chebyshev.
+-/
+
+/-- A separately supplied bound on the true square-window increment,
+together with a central prime-count estimate, gives the same moment
+gap without the overly strong quadratic cumulative envelope. -/
+theorem relative_moment_gap_of_central_prime_count_short_interval
+    (n : ℕ) (δ U : ℝ) (hδ : 0 ≤ δ)
+    (hsource : squareIncrement n ≤ U)
+    (hcount :
+      δ * U ≤ (centralSquarePrimes n).card *
+        Real.log (((n ^ 2 + 1 : ℕ) : ℝ))) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  apply relative_moment_gap_of_central_prime_count n δ
+  exact (mul_le_mul_of_nonneg_left hsource hδ).trans hcount
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
