@@ -1138,4 +1138,39 @@ theorem centralPrimeMass_ge_of_outer_and_higher_bounds
   have hsplit := squareIncrement_eq_central_add_outer_add_higher n hn
   linarith
 
+/-! ## Outer-mass dominance criterion
+
+The existing logarithmic bound on the proper-power correction leaves
+one independent arithmetic obstruction: whether the OUTER prime mass
+can absorb almost all the complete source. The following theorem
+states the exact remaining budget without claiming an outer estimate.
+-/
+
+/-- If outer prime mass and the actual logarithmic proper-power
+allowance leave a fraction δ of the complete source, the central
+prime mass supplies the required relative first-moment gap. -/
+theorem relative_moment_gap_of_outer_prime_budget
+    (n : ℕ) (hn : 1 ≤ n) (δ Uouter : ℝ)
+    (houter :
+      (∑ p ∈ outerSquarePrimes n,
+        ArithmeticFunction.vonMangoldt p) ≤ Uouter)
+    (hbudget :
+      Uouter +
+        2 * Real.log (n + 1 : ℕ) *
+          Real.log (GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers.exponentCutoff n) +
+        δ * squareIncrement n ≤ squareIncrement n) :
+    squareAbsoluteMoment n ≤
+      (1 - (1 / 2 : ℝ) * δ) *
+        squareRadius n * squareIncrement n := by
+  have hproper := (source_correction_bounds n hn).2
+  have hcentral := centralPrimeMass_ge_of_outer_and_higher_bounds
+    n hn Uouter
+    (2 * Real.log (n + 1 : ℕ) *
+      Real.log (GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers.exponentCutoff n))
+    houter (by
+      rw [squareIncrement_decomposition n hn] at hproper
+      simpa only [add_sub_cancel_left] using hproper)
+  apply relative_moment_gap_of_central_prime_budget n δ
+  linarith
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
