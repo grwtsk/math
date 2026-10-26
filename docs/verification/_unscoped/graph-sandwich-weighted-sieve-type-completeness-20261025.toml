@@ -1,0 +1,73 @@
+# Bounded source-pinned verification request. NOT_RUN, no remote action.
+schema_version = "0.1"
+request_id = "graph-sandwich-weighted-sieve-type-completeness-20261025"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f3fb87b6daeaea08dc133350ddd3f39bd5d84d45"
+theorem_authoring_commit = "c532b352d7338c15e09f4689187e5d34f00235d4"
+source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+source_blob = "b5bd065acd6f62f0b712dbdd0c4728e4d8ba2a17"
+relation_sandwich_path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean"
+relation_sandwich_blob = "9761b5dd5d6ada7344031c07386586c72c1d970a"
+sofic_source_path = "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean"
+sofic_source_blob = "7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+classification = "CONDITIONAL_FINITE_TYPE_COMPLETENESS_VIA_CERTIFIED_WEIGHTED_SIEVE_STEERING"
+hypothesis_description = "Finite type space T; source inventory with explicitly certified edges; typeOf : V -> T; weight : Nat -> V -> Real; each type has an eventual strictly positive weight at a certified-search-reachable vertex at every later depth."
+conclusion = "A single finite cutoff dominates all individual type cutoffs, after which every type is detected at every depth."
+declarations = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeHit_has_certifiedPath",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeComplete_eventually_of_steering",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.not_sieveTypeCompleteAt_of_missing_type",
+]
+direct_imports = [
+  "Mathlib",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+known_source_interfaces = [
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.certifiedSearch",
+  "GRWTSK.GraphSandwichDiffusion.exists_boundedPath_of_mem_reachableWithin",
+  "GRWTSK.GraphSandwichDiffusion.seed_has_no_certified_edge",
+  "GRWTSK.GraphSandwichDiffusion.CandidateComplete",
+  "GRWTSK.Analysis.OperatorTheory.SpectralTheory.HeightIndexedGraphDiffusion.diffusionMatrix",
+]
+unresolved_suppliers = [
+  "Construct a genuine weighted sieve kernel and its support-preserving diffusion action on actual inventory vertices",
+  "Prove entrywise positivity/Markov mass preservation at the required depth and type support, not by assuming generic matrix-exponential positivity",
+  "Prove asymptotic steering: for every required type t there exists cutoff N(t) so each n >= N(t) has a positive certified reachable type-t witness",
+  "Show this weighted heat/sieve action agrees with the supplied abstract weight function, with exact scale/time/cutoff and no ad hoc coercions",
+  "Supply certified rather than candidate-only typed edges; the initial seed graph has no certified edges",
+  "Choose a collision-sensitive target type map: joint arithmetic radical/K0-shaped features cannot reconstruct exponent-resolved integer types",
+  "Do not infer semantic completeness or actual analytic cancellation from finite-source representation or candidate search",
+]
+negative_controls = [
+  "Zero weight of all vertices of a target type cannot satisfy SieveTypeHit",
+  "Candidate-only path is not a certified type detection",
+  "An inaccessible target type defeats SieveTypeCompleteAt independently of weights",
+  "A positive heat weight is not itself a certified semantic path",
+  "Type completeness for a finite quotient or coarse signature is not injective reconstruction of original types",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = f3fb87b6daeaea08dc133350ddd3f39bd5d84d45 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = b5bd065acd6f62f0b712dbdd0c4728e4d8ba2a17 && test \"$(git hash-object GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean)\" = 9761b5dd5d6ada7344031c07386586c72c1d970a && test \"$(git hash-object GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean)\" = 7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+fresh_kernel = "PENDING_INDEPENDENT_CHECKER"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_AXIOM_AUDIT"
+expected_compiler_exit = 0
+expected_elaboration_exit = 0
