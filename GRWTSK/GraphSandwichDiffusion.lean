@@ -1873,6 +1873,113 @@ theorem resetKernel_transition_pow_collision
       radicalCoprimeWeight q n / totalWeight q N else 0)
   rw [if_pos hnk, if_pos hn, radicalCoprimeWeight_pow q n k hk]
 
+/-- The unnormalized arithmetic sieve weights are a fixed point of
+their source-independent reset kernel, on the finite positive scope.
+This finite algebraic stationarity is NOT an asymptotic mixing result. -/
+theorem resetKernel_step_weight_eq
+    (q N : ℕ) (hN : 1 ≤ N)
+    (target : ℕ) (target_mem : target ∈ scope N) :
+    (resetKernel q N hN).step (radicalCoprimeWeight q) target =
+      radicalCoprimeWeight q target := by
+  change (∑ source ∈ scope N,
+    radicalCoprimeWeight q source *
+      (if target ∈ scope N then
+        radicalCoprimeWeight q target / totalWeight q N else 0)) =
+    radicalCoprimeWeight q target
+  rw [if_pos target_mem, ← Finset.sum_mul]
+  change totalWeight q N *
+    (radicalCoprimeWeight q target / totalWeight q N) =
+      radicalCoprimeWeight q target
+  rw [div_eq_mul_inv]
+  calc
+    totalWeight q N *
+        (radicalCoprimeWeight q target * (totalWeight q N)⁻¹) =
+      (totalWeight q N * (totalWeight q N)⁻¹) *
+        radicalCoprimeWeight q target := by ring
+    _ = radicalCoprimeWeight q target := by
+      rw [mul_inv_cancel₀ (ne_of_gt (totalWeight_pos q N hN)), one_mul]
+
+/-- The same arithmetic weight distribution is stationary at every
+finite iterate on the declared scope. In particular, the reset kernel
+does not manufacture positive mass in an initially absent type fiber. -/
+theorem resetKernel_evolve_weight_eq
+    (q N : ℕ) (hN : 1 ≤ N) :
+    ∀ depth : ℕ, ∀ target ∈ scope N,
+      (resetKernel q N hN).evolve (radicalCoprimeWeight q) depth target =
+        radicalCoprimeWeight q target := by
+  intro depth
+  induction depth with
+  | zero =>
+      intro target ht
+      rfl
+  | succ depth ih =>
+      intro target ht
+      change (resetKernel q N hN).step
+        ((resetKernel q N hN).evolve (radicalCoprimeWeight q) depth)
+        target = radicalCoprimeWeight q target
+      calc
+        (resetKernel q N hN).step
+            ((resetKernel q N hN).evolve (radicalCoprimeWeight q) depth)
+            target =
+          (resetKernel q N hN).step (radicalCoprimeWeight q) target := by
+            unfold FiniteSieveMarkovKernel.step
+            apply Finset.sum_congr rfl
+            intro source hs
+            rw [ih source hs]
+        _ = radicalCoprimeWeight q target :=
+          resetKernel_step_weight_eq q N hN target ht
+
+/-- The exact arithmetic type mass after any finite number of reset
+steps equals the initial radical-weighted coprimality mass on the same
+fiber. Positivity is therefore a coverage question, not a mixing
+estimate. -/
+theorem resetKernel_typeMass_eq_fiber_sum
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (typeOf : ℕ → TypeLabel)
+    (depth : ℕ) (targetType : TypeLabel) :
+    (resetKernel q N hN).typeMass
+      (radicalCoprimeWeight q) typeOf depth targetType =
+      ∑ n ∈ (scope N).filter (fun n => typeOf n = targetType),
+        radicalCoprimeWeight q n := by
+  classical
+  unfold FiniteSieveMarkovKernel.typeMass
+  apply Finset.sum_congr rfl
+  intro n hn
+  exact resetKernel_evolve_weight_eq q N hN depth n
+    (Finset.mem_filter.mp hn).1
+
+/-- This concrete arithmetic reset kernel covers an exact type at
+every finite depth iff a positive integer of that type survives the
+coprimality sieve. It neither proves the existence of new arithmetic
+types nor distinguishes prime exponents from their radicals. -/
+theorem resetKernel_typeMass_pos_iff_coprime_witness
+    {TypeLabel : Type*}
+    (q N : ℕ) (hN : 1 ≤ N)
+    (typeOf : ℕ → TypeLabel)
+    (depth : ℕ) (targetType : TypeLabel) :
+    0 < (resetKernel q N hN).typeMass
+      (radicalCoprimeWeight q) typeOf depth targetType ↔
+      ∃ n ∈ scope N, typeOf n = targetType ∧ Nat.Coprime n q := by
+  classical
+  rw [resetKernel_typeMass_eq_fiber_sum q N hN typeOf depth targetType]
+  have hsum :
+      (0 < ∑ n ∈ (scope N).filter (fun n => typeOf n = targetType),
+        radicalCoprimeWeight q n) ↔
+      ∃ n ∈ (scope N).filter (fun n => typeOf n = targetType),
+        0 < radicalCoprimeWeight q n :=
+    Finset.sum_pos_iff_of_nonneg
+      (fun n hn => radicalCoprimeWeight_nonneg q n)
+  constructor
+  · intro positive
+    obtain ⟨n, hn, hw⟩ := hsum.mp positive
+    obtain ⟨hs, ht⟩ := Finset.mem_filter.mp hn
+    exact ⟨n, hs, ht, (radicalCoprimeWeight_pos_iff q n).mp hw⟩
+  · rintro ⟨n, hn, ht, hc⟩
+    apply hsum.mpr
+    exact ⟨n, Finset.mem_filter.mpr ⟨hn, ht⟩,
+      (radicalCoprimeWeight_pos_iff q n).mpr hc⟩
+
 end ArithmeticSieveKernel
 
 end GRWTSK.GraphSandwichDiffusion
