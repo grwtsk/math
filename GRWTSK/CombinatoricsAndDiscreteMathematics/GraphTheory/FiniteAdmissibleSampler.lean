@@ -414,6 +414,49 @@ theorem real_type_complete_of_allowed_paths
     target hpos
   simpa [hkind] using hmass
 
+/-!
+## Exact total-mass conservation for real Gibbs diffusion
+
+This uses the actual normalized outgoing Gibbs rows. It establishes
+conservation for real-valued heat and all finite path lengths, without
+identifying the Gibbs sampler with a rational kernel or deriving type
+coverage from conservation alone.
+-/
+
+/-- One real Gibbs diffusion step preserves the sum of all heat values. -/
+theorem realStep_mass (S : Sampler V) (heat : V → ℝ) :
+    (∑ target, S.realStep heat target) = ∑ source, heat source := by
+  simp only [realStep]
+  rw [Finset.sum_comm]
+  calc
+    (∑ source, ∑ target, S.probability source target * heat source) =
+        ∑ source, (∑ target, S.probability source target) * heat source := by
+      apply Finset.sum_congr rfl
+      intro source _
+      rw [Finset.sum_mul]
+    _ = ∑ source, heat source := by
+      simp [S.probability_row_sum_one]
+
+/-- Total real Gibbs heat is preserved at every finite evolution time. -/
+theorem realEvolve_mass (S : Sampler V) (heat : V → ℝ) :
+    ∀ n, (∑ target, S.realEvolve heat n target) = ∑ source, heat source := by
+  intro n
+  induction n generalizing heat with
+  | zero =>
+      rfl
+  | succ n ih =>
+      change (∑ target, S.realEvolve (S.realStep heat) n target) =
+        ∑ source, heat source
+      rw [ih (S.realStep heat), S.realStep_mass heat]
+
+/-- A positive total initial mass remains positive at each finite time.
+This alone does not imply that every type has positive mass. -/
+theorem realEvolve_total_mass_pos (S : Sampler V) (heat : V → ℝ)
+    (mass_pos : 0 < ∑ source, heat source) (n : ℕ) :
+    0 < ∑ target, S.realEvolve heat n target := by
+  rw [S.realEvolve_mass heat n]
+  exact mass_pos
+
 end TypeHeat
 
 end Sampler
