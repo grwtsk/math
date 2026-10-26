@@ -520,4 +520,44 @@ theorem weightedDirichlet_le_degree_squares
       rw [hswap, hdegree]
       ring
 
+/-! ## Uniform maximum-degree bound for the full Dirichlet form
+
+This consumes the actual degree-weighted finite sum and the
+explicit DegreeBound predicate, without importing any spectral
+theorem or assuming a continuum heat flow.
+-/
+
+/-- A maximum degree D bounds the complete directed-edge
+Dirichlet energy by four times D times vertex-square mass. -/
+theorem weightedDirichlet_le_four_degree_bound
+    (w : V → V → ℚ) (v : V → ℚ) (D : ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hsym : ∀ i j, w i j = w j i)
+    (hD : DegreeBound w D) :
+    weightedDirichlet w v ≤
+      4 * D * ∑ i : V, (v i) ^ 2 := by
+  have hweighted := weightedDirichlet_le_degree_squares w v hw hsym
+  have hsum :
+      (∑ i : V, weightedDegree w i * (v i) ^ 2) ≤
+        ∑ i : V, D * (v i) ^ 2 := by
+    apply Finset.sum_le_sum
+    intro i hi
+    exact mul_le_mul_of_nonneg_right (hD i) (sq_nonneg _)
+  have hscaled := mul_le_mul_of_nonneg_left hsum (by norm_num : (0 : ℚ) ≤ 4)
+  rw [← Finset.mul_sum] at hscaled
+  nlinarith
+
+/-- The symmetric graph quadratic pairing obeys the precise
+maximum-degree bound with factor two. -/
+theorem graphLaplacianPairing_le_degree_bound
+    (w : V → V → ℚ) (v : V → ℚ) (D : ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hsym : ∀ i j, w i j = w j i)
+    (hD : DegreeBound w D) :
+    graphLaplacianPairing w v ≤
+      2 * D * ∑ i : V, (v i) ^ 2 := by
+  have henergy := weightedDirichlet_le_four_degree_bound w v D hw hsym hD
+  have hpair := graphLaplacianPairing_twice_eq_dirichlet w v hsym
+  nlinarith
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
