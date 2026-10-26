@@ -825,4 +825,68 @@ theorem norm_dirichletVonMangoldt_LSeries_sub_prefix_le
   rw [hdecomp]
   simpa only [add_sub_cancel_left] using htail
 
+
+/-- Quantitative finite transfer from the *actual* Dirichlet-twisted
+von Mangoldt coefficient sums to reduced-residue reconstruction.
+Nonprincipal bounds are hypotheses, not consequences of zero-freeness.
+The nonunit correction retains the exact radical of the modulus. -/
+theorem norm_dirichlet_reconstruction_fullPsi_le_radical_of_vonMangoldt
+    (q N : ℕ) (hq : q ≠ 0)
+    [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ)
+    (E : DirichletCharacter ℂ q → ℝ)
+    (hTwists : ∀ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q),
+      ‖∑ n ∈ Finset.range (N + 1),
+        dirichletVonMangoldtCoefficient q χ n‖ ≤ E χ) :
+    ‖(Nat.totient q : ℂ) * unitPsiWeight q N a -
+      (∑ n ∈ Finset.range (N + 1),
+        (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ))‖ ≤
+      (∑ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q), E χ) +
+        ((GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.finitePrimeDivisorCount q N : ℝ) *
+          Real.log (N : ℝ) +
+          (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ)) := by
+  apply norm_dirichlet_reconstruction_fullPsi_le_radical q N hq a E
+  intro χ hχ
+  rw [dirichlet_unitPsi_twist_eq_coefficient_sum]
+  exact hTwists χ hχ
+
+/-- A finite character estimate and a separately supplied global
+von Mangoldt main-term estimate imply a quantitative arithmetic
+progression estimate after scaling by Euler's totient. Neither
+input is proved by this theorem. This is NOT an unconditional
+prime-density, zero-free-region, or RH consequence. -/
+theorem norm_dirichlet_residuePsi_linear_main_le_of_twist_and_global
+    (q N : ℕ) (hq : q ≠ 0)
+    [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ)
+    (E : DirichletCharacter ℂ q → ℝ) (M : ℝ)
+    (hTwists : ∀ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q),
+      ‖∑ n ∈ Finset.range (N + 1),
+        dirichletVonMangoldtCoefficient q χ n‖ ≤ E χ)
+    (hGlobal :
+      ‖(∑ n ∈ Finset.range (N + 1),
+        (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ)) -
+          (N : ℂ)‖ ≤ M) :
+    ‖(Nat.totient q : ℂ) * unitPsiWeight q N a - (N : ℂ)‖ ≤
+      ((∑ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q), E χ) +
+        ((GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.finitePrimeDivisorCount q N : ℝ) *
+          Real.log (N : ℝ) +
+          (Nat.log2 N : ℝ) * Real.log (Nat.radical q : ℝ))) + M := by
+  have hbridge :=
+    norm_dirichlet_reconstruction_fullPsi_le_radical_of_vonMangoldt
+      q N hq a E hTwists
+  have hsplit :
+      (Nat.totient q : ℂ) * unitPsiWeight q N a - (N : ℂ) =
+        ((Nat.totient q : ℂ) * unitPsiWeight q N a -
+          (∑ n ∈ Finset.range (N + 1),
+            (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ))) +
+        ((∑ n ∈ Finset.range (N + 1),
+          (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ)) -
+          (N : ℂ)) := by
+    ring
+  rw [hsplit]
+  exact (norm_add_le _ _).trans (add_le_add hbridge hGlobal)
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
