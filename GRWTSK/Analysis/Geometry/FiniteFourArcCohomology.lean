@@ -28,8 +28,7 @@ def cycleFlux (a : FourCochain) : ℝ :=
 
 theorem cycleFlux_edgeDifference_zero (f : FourCochain) :
     cycleFlux (edgeDifference f) = 0 := by
-  simp [cycleFlux, edgeDifference, Fin.sum_univ_four, next]
-  ring
+  simp [cycleFlux, edgeDifference, Fin.sum_univ_four, next] <;> ring
 
 theorem cycleFlux_const_one :
     cycleFlux (fun _ : Fin 4 => (1 : ℝ)) = 4 := by
