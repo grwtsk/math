@@ -1,0 +1,182 @@
+# Source-pinned buffered radical sieve / finite Boolean type-uniformity verification.
+# SOURCE_DRAFT only; no executable compiler, kernel checker or axiom receipt.
+schema_version = "0.1"
+request_id = "graph-sandwich-buffered-radical-uniform-type-density-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "1ca7d3be2a074f9e47fc732b6f8c3c5fdd44709f"
+authoring_commits = [
+  "f92e0440a103c5d0f62748710c8a26ec994fd0f0",
+  "b0ba0aaaf99e28eec7370ca80306c90e124e02e5",
+  "5b1378eeae320e5da702e5627dadd7b8e6684610",
+  "1fddb8332ea5a78d00cf7fe250d01c7e36eaec0e",
+  "16ca18c2f24297582ee295c8fdfec097e342d459",
+  "143214bafa87abda72d59ec882a91595cfbc89eb",
+  "1ca7d3be2a074f9e47fc732b6f8c3c5fdd44709f",
+]
+graph_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+k_theory_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+k_theory_blob = "d2d4bfdc69792ed2eb097eec4e591b5132097785"
+grothendieck_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_nat_factorization_defs_path = "Mathlib/Data/Nat/Factorization/Defs.lean"
+mathlib_nat_factorization_defs_blob = "123b50a5cf37474f6be7778196cbfe313e0caf6b"
+mathlib_nat_factorization_basic_path = "Mathlib/Data/Nat/Factorization/Basic.lean"
+mathlib_nat_factorization_basic_blob = "754d9c2792659f68a624086c9ce9af3ce90e0737"
+mathlib_gcd_source_path = "Mathlib/Data/Nat/GCD/Basic.lean"
+mathlib_gcd_source_blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+mathlib_radical_source_path = "Mathlib/RingTheory/Radical/NatInt.lean"
+mathlib_radical_source_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+mathlib_order_finset_source_path = "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean"
+mathlib_order_finset_source_blob = "3745e5cb7ff4b16ad6532357837698f4bf54c4a8"
+mathlib_order_field_source_path = "Mathlib/Algebra/Order/Field/Basic.lean"
+mathlib_order_field_source_blob = "f50b2c06f3020b5def59b4fb74ea6f05bd27f13e"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "SOURCE_CANDIDATE_ELEMENTARY_BUFFERED_RADICAL_SIEVE_TWO_TYPE_CUTOFF_UNIFORM_MASS"
+issue = "https://github.com/grwtsk/math/issues/1344"
+new_graph_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_ge_cutoff_of_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_le_two_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_pow",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalEdgeWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_le_edge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalEdgeWeight_le_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalRowMass_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalRowMass_le_four_cutoff_sq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_edge_iff_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_transition_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_rate_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedTypeSurvivors",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_survivor_count",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_of_survivor_density",
+]
+new_k_theory_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twelve_mul_add_one_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twelve_mul_add_two_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_twelve_mul_add_one",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_twelve_mul_add_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_survivors_card_ge_div_twelve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_mass_ge_one_ninety_six",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_uniform_complete_and_collision",
+]
+direct_graph_imports = [
+  "Mathlib",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+direct_k_theory_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+preserved_prior_interfaces = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_transition_ge_inv_two_cutoff_sq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_diagonal_mass_ge_inv_two_cutoff_sq",
+]
+exact_hypotheses = [
+  "New buffered weight w(q,N,n)=N+Nat.radical n if Nat.Coprime n q, 0 otherwise; it is a DISTINCT weighting from the earlier pure-radical sieve",
+  "Every bounded-weight and row-normalization statement is on arithmetic scope Finset.Icc 1 N, with 1 <= N required for an actual normalized kernel",
+  "Buffered surviving target weights lie in [(N:Real),2*(N:Real)]; diagonal source boost is 2 if source=target and 1 otherwise",
+  "Each outgoing row has strictly positive normalizer witnessed by 1 and total raw weight at most 4*N*N",
+  "For source/target both in finite scope with target coprime q, buffered transition probability >= 1/(4*N)",
+  "Iterated target lower bound requires initial weights >=0 throughout finite scope and total mass exactly 1; valid after every positive time depth+1",
+  "TypeMass >= survivor count times 1/(4*N) at any positive iteration, where survivors are in-scope and coprime of exact declared type",
+  "General cutoff-independent rate c/4 is conditional on explicit arithmetic survivor count >= c*N; count premise is NOT inferred from diffusion",
+  "Concrete q=3 and typeOf=multiplicityOneType uses actual factorization n.factorization 2 and Bool classifier equality to one",
+  "Every 12*k+1 has Boolean type false and every 12*k+2 type true, both coprime to 3 by elementary exact modular/divisibility arithmetic",
+  "At N>=12, each Bool type has at least floor(N/12) representatives and floor(N/12)>=N/24, yielding mass >=1/96",
+  "The bound holds for all N>=12, all positive finite Markov step counts and all nonnegative unit-mass initial inputs",
+  "Certified arithmetic type completeness and exact radical-derived K0-shaped decoder obstruction coexist for this fixture: 2 and 4 remain a collision",
+  "GrothendieckKZero M is only the universal group completion of explicitly supplied [CommMonoid M] and lift Nat->*M; it is not analytic K0 or Kasparov KK",
+  "No estimate for arbitrary number-theoretic types, unbounded 2-adic valuations, prime distribution, Dirichlet cancellation, Goldbach, Siegel zeros or RH is inferred",
+]
+mathematical_conclusions = [
+  "Buffered radical sieve weights retain arithmetic radical power collisions and are bounded above and below linearly in the cutoff",
+  "Buffered source-dependent finite kernel has positive row normalizers, row sums one, and exactly the arithmetic certified coprimality support",
+  "Every buffered in-scope coprime target receives at least inverse-linear 1/(4N) transition and positive-time mass",
+  "Type-fiber mass is bounded below by finite survivor count divided by 4N; a proved linear survivor count yields positive cutoff-independent type mass",
+  "For modulus 3, explicit progressions 12k+1 and 12k+2 supply at least floor(N/12) survivors of both exact Bool multiplicity types",
+  "Each of those two types has mass at least 1/96 uniformly in cutoff N>=12 and positive diffusion time",
+  "Both exact Bool types have certified graph coverage at every positive time although no radical-derived K0-shaped decoder can recover those labels",
+]
+unresolved_verification_and_research = [
+  "All 28 definitions and theorem proofs are SOURCE_DRAFT and were not elaborated or compiled under exact pinned Lean and Mathlib",
+  "Check Nat.factorization_mul, Nat.factorization_eq_zero_of_not_dvd, coprime_iff_not_dvd and arithmetic omega for the progressions",
+  "Check Finset.card_image_of_injective, Finset.card_le_card, Finset.sum_le_sum_of_subset_of_nonneg and Finset.sum_const with exact tactic environments",
+  "Check division comparison, mul_sum, nonlinear casts/nlinarith and buffered kernel definitional unfoldings",
+  "Check any warnings promoted by --wfail in the full transitive GraphSandwichDiffusion/KTheory imports",
+  "Fresh independent kernel checking and transitive #print axioms on new declarations and all source dependencies",
+  "Prove similar cutoff-independent per-type rates for every natural 2-adic valuation, rather than only this finite Bool quotient",
+  "Construct genuine spectral/graph-local heat diffusion and analytic weighted-sieve asymptotics if stronger universality is claimed",
+  "No source automatically upgrades a universal Grothendieck group completion to actual analytic K0/KK or asserts a positive-density result for arbitrary arithmetic type families",
+]
+source_static_review = "PINNED_DECLARATION_READBACK_NO_COMPILER"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 1ca7d3be2a074f9e47fc732b6f8c3c5fdd44709f && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 7d861591c9721a85819f291aac5178fffd29101a && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = d2d4bfdc69792ed2eb097eec4e591b5132097785"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+compile_graph = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+compile_k_theory = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+elaborate_graph = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+elaborate_k_theory = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_kernel = "PENDING_ACTUAL_COMPILATION_AND_SUPPORTED_INDEPENDENT_KERNEL_CHECKER"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_FULL_TRANSITIVE_AXIOM_CENSUS"
+axiom_targets = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_ge_cutoff_of_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_le_two_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_pow",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalEdgeWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedRadicalWeight_le_edge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalEdgeWeight_le_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalRowMass_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalRowMass_le_four_cutoff_sq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_edge_iff_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_transition_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_rate_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedTypeSurvivors",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_survivor_count",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_of_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twelve_mul_add_one_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twelve_mul_add_two_coprime_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_twelve_mul_add_one",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_twelve_mul_add_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_survivors_card_ge_div_twelve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_mass_ge_one_ninety_six",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_uniform_complete_and_collision",
+]
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0
