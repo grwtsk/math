@@ -1,5 +1,9 @@
 # Selected result catalog
 
+<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
+[Latest source-bound verification observations](../mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
+<!-- END VERIFICATION AMENDMENT -->
+
 [**Browse all results by subject →**](../mathematics/index.md). The results index and every more specific browsing page live beside the mathematics under `docs/mathematics/`.
 
 Exactly these selected families are listed; this is not a declaration-wide or complete topic catalog. Historical verification labels refer to the evidence record retained by the source; the generated `Status` column reports whether the current source has a replay-bound verification status.

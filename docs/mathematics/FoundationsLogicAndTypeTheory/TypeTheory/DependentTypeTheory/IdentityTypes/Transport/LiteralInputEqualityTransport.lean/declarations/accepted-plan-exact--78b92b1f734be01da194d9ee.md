@@ -1,5 +1,9 @@
 # accepted_plan_exact
 
+<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
+**Later verification observation:** source compilation exited zero; the declared axiom policy was rejected. The radius-three graph is structurally complete. **S₃ remains unavailable.** [Exact scope, all compiler roots and evidence](../verification-update-d4083a002f058bdd3b9b.md). The original issuance and its metadata below retain their historical scope.
+<!-- END VERIFICATION AMENDMENT -->
+
 grwtsk contributors
 
 <!-- BEGIN SOURCE DECLARATION METADATA

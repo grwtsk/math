@@ -1,5 +1,9 @@
 # GRWTSK mathematics
 
+<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
+[Latest source-bound verification observations](docs/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
+<!-- END VERIFICATION AMENDMENT -->
+
 Mathematical results, formal proofs, and explicit open problems by **grwtsk contributors**. This is the canonical source for GRWTSK mathematics.
 
 [**Browse the results index →**](docs/mathematics/index.md)

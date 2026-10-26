@@ -1,5 +1,9 @@
 # Complete mathematical source and declaration index
 
+<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
+[Later verification observations](verification-updates.md). Source compilation, axiom policy and graph completeness are recorded separately; all pending and failed results remain included.
+<!-- END VERIFICATION AMENDMENT -->
+
 [Results index](index.md)
 
 **Every tracked regular `.lean` source in the pinned commit is included.** All observed theorem, lemma, definition, abbreviation, structure, inductive, class, instance, opaque, axiom, constant, syntax, macro, elaborator and anonymous example commands receive individual source articles. Full source snapshots also retain commands outside the lexical observer. No source family, namespace, failed verification or pending result is excluded.
