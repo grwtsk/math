@@ -1095,9 +1095,9 @@ theorem one_sub_ratio_le_offEndpointLogFrequency
     (1 : ℝ) - (n : ℝ) / (N : ℝ) ≤
       offEndpointLogFrequency N n := by
   have hnreal : (0 : ℝ) < (n : ℝ) := by exact_mod_cast hn
-  have hNreal : (0 : ℝ) < (N : ℝ) :=
-    lt_trans (by exact_mod_cast hn : (0 : ℝ) < (n : ℝ))
-      (by exact_mod_cast hngap : (n : ℝ) < (N : ℝ))
+  have hnreal : (0 : ℝ) < (n : ℝ) := by exact_mod_cast hn
+  have hltreal : (n : ℝ) < (N : ℝ) := by exact_mod_cast hngap
+  have hNreal : (0 : ℝ) < (N : ℝ) := lt_trans hnreal hltreal
   have hratio : (0 : ℝ) < (N : ℝ) / (n : ℝ) :=
     div_pos hNreal hnreal
   calc
@@ -1142,9 +1142,7 @@ theorem norm_offEndpointOscillatoryIntegral_le
     (u a b : ℝ) (hu : 0 < u) :
     ‖offEndpointOscillatoryIntegral u a b‖ ≤ 2 / u := by
   have hfreq : ‖(u : ℂ) * Complex.I‖ = u := by
-    rw [norm_mul, Complex.norm_real, Real.norm_eq_abs,
-      abs_of_pos hu]
-    simp
+    simp [norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_pos hu]
   have hn (t : ℝ) :
       ‖Complex.exp (((u : ℂ) * Complex.I) * (t : ℂ))‖ = 1 := by
     have heq : ((u : ℂ) * Complex.I) * (t : ℂ) =
@@ -1191,9 +1189,9 @@ theorem norm_offEndpointOscillatoryIntegral_le_discreteGap
     ‖offEndpointOscillatoryIntegral
         (offEndpointLogFrequency N n) a b‖ ≤
       2 / ((1 : ℝ) - (n : ℝ) / (N : ℝ)) := by
-  have hNreal : (0 : ℝ) < (N : ℝ) :=
-    lt_trans (by exact_mod_cast hn : (0 : ℝ) < (n : ℝ))
-      (by exact_mod_cast hngap : (n : ℝ) < (N : ℝ))
+  have hnreal : (0 : ℝ) < (n : ℝ) := by exact_mod_cast hn
+  have hltreal : (n : ℝ) < (N : ℝ) := by exact_mod_cast hngap
+  have hNreal : (0 : ℝ) < (N : ℝ) := lt_trans hnreal hltreal
   have hlt : (n : ℝ) < (N : ℝ) := by exact_mod_cast hngap
   have hgap : 0 < (1 : ℝ) - (n : ℝ) / (N : ℝ) := by
     have h := (div_lt_one hNreal).2 hlt
