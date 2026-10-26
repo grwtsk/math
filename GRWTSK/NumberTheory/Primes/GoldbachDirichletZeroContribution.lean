@@ -8,6 +8,8 @@ import Mathlib.Analysis.SpecialFunctions.Pow.Continuity
 import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
 import Mathlib.Order.Filter.AtTopBot.Field
+import Mathlib.Analysis.Complex.Trigonometric
+import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Tactic
 
 /-!
@@ -1044,6 +1046,217 @@ theorem tendsto_finitePerronEndpointKernel_atTop
     exact finitePerronEndpointKernel_eq_arctan σ T hσ
   rw [heq]
   simpa only [hpi] using hCast
+
+
+/-!
+## Off-endpoint Perron frequency and its oscillatory primitive
+
+For 0<n<N the relevant Fourier frequency in a Perron numerator
+is u=log(N/n)>0. Its lower bound 1-n/N records the sharp increase
+of the inverse-frequency cost as n approaches the integer endpoint.
+
+The finite interval integral of exp(i*t*u) is EXACTLY a difference
+of exponentials divided by i*u. Its norm is at most 2/u,
+independently of the length of the interval. This is true
+oscillatory cancellation, not the much weaker bound by interval
+length. Summing against actual von Mangoldt Dirichlet
+coefficients gives a finite oscillatory packet estimate.
+
+IMPORTANT: This is the oscillatory *numerator primitive*, not yet
+the complete off-endpoint Perron kernel exp(i*t*u)/(sigma+i*t).
+The resolvent denominator must be restored by justified
+integration by parts, including boundary and tail terms, before
+this estimate can prove decay of finitePerronHeightDefect.
+Likewise the identification of the infinite-height kernel with
+the sharp projector 1 remains a separate inversion obligation.
+-/
+
+/-- Logarithmic oscillation frequency for the strict off-endpoint
+indices 0<n<N in the finite Perron polynomial. -/
+def offEndpointLogFrequency (N n : ℕ) : ℝ :=
+  Real.log ((N : ℝ) / (n : ℝ))
+
+/-- Off-endpoint logarithmic separation is strictly positive.
+The exceptional n=0 L-series term is excluded. -/
+theorem offEndpointLogFrequency_pos
+    (N n : ℕ) (hn : 0 < n) (hngap : n < N) :
+    0 < offEndpointLogFrequency N n := by
+  have hnreal : (0 : ℝ) < (n : ℝ) := by exact_mod_cast hn
+  have hlt : (n : ℝ) < (N : ℝ) := by exact_mod_cast hngap
+  have hratio : (1 : ℝ) < (N : ℝ) / (n : ℝ) :=
+    (one_lt_div hnreal).2 hlt
+  exact Real.log_pos hratio
+
+/-- A conductor-independent *discrete separation bound* for the
+off-endpoint frequency. The ratio tends to 1 as n approaches N,
+so its logarithm is small and a loss near the endpoint is genuine. -/
+theorem one_sub_ratio_le_offEndpointLogFrequency
+    (N n : ℕ) (hn : 0 < n) (hngap : n < N) :
+    (1 : ℝ) - (n : ℝ) / (N : ℝ) ≤
+      offEndpointLogFrequency N n := by
+  have hnreal : (0 : ℝ) < (n : ℝ) := by exact_mod_cast hn
+  have hNreal : (0 : ℝ) < (N : ℝ) :=
+    lt_trans (by exact_mod_cast hn : (0 : ℝ) < (n : ℝ))
+      (by exact_mod_cast hngap : (n : ℝ) < (N : ℝ))
+  have hratio : (0 : ℝ) < (N : ℝ) / (n : ℝ) :=
+    div_pos hNreal hnreal
+  calc
+    (1 : ℝ) - (n : ℝ) / (N : ℝ) =
+        1 - ((N : ℝ) / (n : ℝ))⁻¹ := by
+          field_simp [ne_of_gt hnreal, ne_of_gt hNreal]
+    _ ≤ offEndpointLogFrequency N n :=
+      Real.one_sub_inv_le_log_of_pos hratio
+
+/-- The unweighted oscillatory Fourier primitive which appears
+after integration by parts in the off-endpoint Perron kernel.
+Its endpoints may be in either order. -/
+def offEndpointOscillatoryIntegral (u a b : ℝ) : ℂ :=
+  ∫ t in a..b, Complex.exp (((t * u : ℝ) : ℂ) * Complex.I)
+
+/-- Exact complex exponential primitive for u!=0.
+There is no limiting argument or external inversion theorem. -/
+theorem offEndpointOscillatoryIntegral_eq_exp_sub
+    (u a b : ℝ) (hu : u ≠ 0) :
+    offEndpointOscillatoryIntegral u a b =
+      (Complex.exp (((u : ℂ) * Complex.I) * (b : ℂ)) -
+        Complex.exp (((u : ℂ) * Complex.I) * (a : ℂ))) /
+          ((u : ℂ) * Complex.I) := by
+  have hc : (u : ℂ) * Complex.I ≠ 0 :=
+    mul_ne_zero (Complex.ofReal_ne_zero.mpr hu) Complex.I_ne_zero
+  unfold offEndpointOscillatoryIntegral
+  calc
+    (∫ t in a..b,
+        Complex.exp (((t * u : ℝ) : ℂ) * Complex.I)) =
+      ∫ t in a..b,
+        Complex.exp (((u : ℂ) * Complex.I) * (t : ℂ)) := by
+          apply intervalIntegral.integral_congr
+          intro t _ht
+          congr 1
+          push_cast
+          ring
+    _ = _ := intervalIntegral.integral_exp_mul_complex hc
+
+/-- Oscillatory cancellation: the primitive is uniformly bounded
+by 2/|u| for nonzero frequency, regardless of interval length. -/
+theorem norm_offEndpointOscillatoryIntegral_le
+    (u a b : ℝ) (hu : 0 < u) :
+    ‖offEndpointOscillatoryIntegral u a b‖ ≤ 2 / u := by
+  have hfreq : ‖(u : ℂ) * Complex.I‖ = u := by
+    rw [norm_mul, Complex.norm_real, Real.norm_eq_abs,
+      abs_of_pos hu]
+    simp
+  have hn (t : ℝ) :
+      ‖Complex.exp (((u : ℂ) * Complex.I) * (t : ℂ))‖ = 1 := by
+    have heq : ((u : ℂ) * Complex.I) * (t : ℂ) =
+        (((t * u : ℝ) : ℂ) * Complex.I) := by
+      push_cast
+      ring
+    rw [heq]
+    exact Complex.norm_exp_ofReal_mul_I (t * u)
+  have hnum :
+      ‖Complex.exp (((u : ℂ) * Complex.I) * (b : ℂ)) -
+        Complex.exp (((u : ℂ) * Complex.I) * (a : ℂ))‖ ≤ 2 := by
+    calc
+      _ ≤ ‖Complex.exp (((u : ℂ) * Complex.I) * (b : ℂ))‖ +
+          ‖Complex.exp (((u : ℂ) * Complex.I) * (a : ℂ))‖ :=
+        norm_sub_le _ _
+      _ = (2 : ℝ) := by rw [hn b, hn a]; norm_num
+  calc
+    ‖offEndpointOscillatoryIntegral u a b‖ =
+        ‖Complex.exp (((u : ℂ) * Complex.I) * (b : ℂ)) -
+          Complex.exp (((u : ℂ) * Complex.I) * (a : ℂ))‖ / u := by
+          rw [offEndpointOscillatoryIntegral_eq_exp_sub
+            u a b (ne_of_gt hu), norm_div, hfreq]
+    _ ≤ 2 / u :=
+      div_le_div_of_nonneg_right hnum hu.le
+
+/-- Log-frequency estimate for the genuine strict arithmetic
+off-endpoint indices. The inverse logarithm cannot be discarded. -/
+theorem norm_offEndpointOscillatoryIntegral_le_logFrequency
+    (N n : ℕ) (hn : 0 < n) (hngap : n < N)
+    (a b : ℝ) :
+    ‖offEndpointOscillatoryIntegral
+        (offEndpointLogFrequency N n) a b‖ ≤
+      2 / offEndpointLogFrequency N n :=
+  norm_offEndpointOscillatoryIntegral_le
+    (offEndpointLogFrequency N n) a b
+    (offEndpointLogFrequency_pos N n hn hngap)
+
+/-- Fully explicit integer-gap version. It incurs a factor
+2/(1-n/N) = 2*N/(N-n), so an off-endpoint term close to N
+is never silently treated as uniformly separated. -/
+theorem norm_offEndpointOscillatoryIntegral_le_discreteGap
+    (N n : ℕ) (hn : 0 < n) (hngap : n < N)
+    (a b : ℝ) :
+    ‖offEndpointOscillatoryIntegral
+        (offEndpointLogFrequency N n) a b‖ ≤
+      2 / ((1 : ℝ) - (n : ℝ) / (N : ℝ)) := by
+  have hNreal : (0 : ℝ) < (N : ℝ) :=
+    lt_trans (by exact_mod_cast hn : (0 : ℝ) < (n : ℝ))
+      (by exact_mod_cast hngap : (n : ℝ) < (N : ℝ))
+  have hlt : (n : ℝ) < (N : ℝ) := by exact_mod_cast hngap
+  have hgap : 0 < (1 : ℝ) - (n : ℝ) / (N : ℝ) := by
+    have h := (div_lt_one hNreal).2 hlt
+    linarith
+  calc
+    ‖offEndpointOscillatoryIntegral
+        (offEndpointLogFrequency N n) a b‖ ≤
+      2 / offEndpointLogFrequency N n :=
+        norm_offEndpointOscillatoryIntegral_le_logFrequency
+          N n hn hngap a b
+    _ ≤ 2 / ((1 : ℝ) - (n : ℝ) / (N : ℝ)) :=
+        div_le_div_of_nonneg_left (by norm_num) hgap
+          (one_sub_ratio_le_offEndpointLogFrequency N n hn hngap)
+
+/-- The exceptional n=0 term of the ACTUAL Mathlib Dirichlet
+polynomial is zero, with no logarithm-of-zero expression needed. -/
+theorem finitePerronTermIntegral_zero_index
+    (q N : ℕ) (χ : DirichletCharacter ℂ q)
+    (σ T : ℝ) :
+    finitePerronTermIntegral q N 0 χ σ T = 0 := by
+  simp [finitePerronTermIntegral, LSeries.term_zero]
+
+/-- A finite packet-level oscillation bound for the ACTUAL
+Dirichlet von Mangoldt coefficient at strict positive indices.
+This is an estimate of its UNWEIGHTED Fourier primitive packet.
+The resolvent (sigma+i*t)^(-1) is not included and must be supplied
+by the next integration-by-parts bridge. -/
+theorem norm_offEndpointVonMangoldtOscillatoryPacket_le
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) (a b : ℝ) :
+    ‖∑ n ∈ Finset.Ico 1 N,
+      dirichletVonMangoldtCoefficient q χ n *
+        offEndpointOscillatoryIntegral
+          (offEndpointLogFrequency N n) a b‖ ≤
+      ∑ n ∈ Finset.Ico 1 N,
+        ‖dirichletVonMangoldtCoefficient q χ n‖ *
+          (2 / ((1 : ℝ) - (n : ℝ) / (N : ℝ))) := by
+  calc
+    ‖∑ n ∈ Finset.Ico 1 N,
+      dirichletVonMangoldtCoefficient q χ n *
+        offEndpointOscillatoryIntegral
+          (offEndpointLogFrequency N n) a b‖ ≤
+      ∑ n ∈ Finset.Ico 1 N,
+        ‖dirichletVonMangoldtCoefficient q χ n *
+          offEndpointOscillatoryIntegral
+            (offEndpointLogFrequency N n) a b‖ := norm_sum_le _ _
+    _ = ∑ n ∈ Finset.Ico 1 N,
+        ‖dirichletVonMangoldtCoefficient q χ n‖ *
+          ‖offEndpointOscillatoryIntegral
+            (offEndpointLogFrequency N n) a b‖ := by
+          simp_rw [norm_mul]
+    _ ≤ ∑ n ∈ Finset.Ico 1 N,
+        ‖dirichletVonMangoldtCoefficient q χ n‖ *
+          (2 / ((1 : ℝ) - (n : ℝ) / (N : ℝ))) := by
+          apply Finset.sum_le_sum
+          intro n hnIco
+          have hn : 0 < n := by
+            have h := (Finset.mem_Ico.mp hnIco).1
+            omega
+          have hlt : n < N := (Finset.mem_Ico.mp hnIco).2
+          exact mul_le_mul_of_nonneg_left
+            (norm_offEndpointOscillatoryIntegral_le_discreteGap
+              N n hn hlt a b)
+            (norm_nonneg _)
 
 end
 end GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution
