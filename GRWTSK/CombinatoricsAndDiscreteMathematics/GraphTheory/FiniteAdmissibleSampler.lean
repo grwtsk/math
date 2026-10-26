@@ -622,6 +622,65 @@ theorem real_type_complete_iff_allowed_paths
     exact ⟨source, target, hkind, hsource, path⟩
   · exact S.real_type_complete_of_allowed_paths heat nonnegative typeOf length
 
+/-!
+## Eventual type support from finite paths and genuine self-loops
+
+The self-loops below must be actually admitted by the source graph. No
+artificial sink completion or uniform asymptotic mass lower bound is
+inferred. Paths are padded only at their witnessed destination.
+-/
+
+/-- Append two actually admissible paths. -/
+theorem AllowedPath.append (S : Sampler V)
+    {a b c : V} {m n : ℕ}
+    (first : AllowedPath S a b m)
+    (second : AllowedPath S b c n) :
+    AllowedPath S a c (m + n) := by
+  induction first with
+  | refl a =>
+      simpa using second
+  | step hedge tail ih =>
+      simpa [Nat.succ_add] using
+        (AllowedPath.step hedge (ih second))
+
+/-- A genuine self-loop at the destination pads an admissible path to
+any greater finite length. -/
+theorem AllowedPath.pad_at_target (S : Sampler V)
+    {source target : V} {length : ℕ}
+    (path : AllowedPath S source target length)
+    (loop : S.allowed target target = true) :
+    ∀ extra, AllowedPath S source target (length + extra) := by
+  intro extra
+  induction extra with
+  | zero =>
+      simpa using path
+  | succ extra ih =>
+      have step : AllowedPath S target target 1 :=
+        AllowedPath.step loop (AllowedPath.refl target)
+      have extended := AllowedPath.append S ih step
+      simpa [Nat.add_succ] using extended
+
+/-- Actual admissible paths of one common length into every type,
+ending at genuine self-loops, give type support at every later finite
+time. No quantitative lower bound uniform in time is asserted. -/
+theorem eventually_real_type_complete_of_padded_allowed_paths
+    (S : Sampler V) (heat : V → ℝ)
+    (nonnegative : ∀ v, 0 ≤ heat v)
+    (typeOf : V → Kind) (start : ℕ)
+    (reach : ∀ kind, ∃ source target,
+      typeOf target = kind ∧ 0 < heat source ∧
+      AllowedPath S source target start ∧
+      S.allowed target target = true) :
+    ∀ extra kind,
+      0 < realTypeMass typeOf (S.realEvolve heat (start + extra)) kind := by
+  intro extra
+  apply S.real_type_complete_of_allowed_paths heat nonnegative
+    typeOf (start + extra)
+  intro kind
+  obtain ⟨source, target, hkind, hsource, path, loop⟩ := reach kind
+  exact ⟨source, target, hkind, hsource,
+    AllowedPath.pad_at_target S path loop extra⟩
+
 end TypeHeat
 
 end Sampler
