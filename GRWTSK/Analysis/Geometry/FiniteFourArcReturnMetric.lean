@@ -34,8 +34,7 @@ theorem pointDot_self_nonneg (x : Plane) :
 positive pairing, not merely a norm-bounded numerical approximation. -/
 theorem quarterTurn_pointDot (x y : Plane) :
     pointDot (quarterTurn x) (quarterTurn y) = pointDot x y := by
-  simp [pointDot, quarterTurn, quarterPoint]
-  ring
+  simp [pointDot, quarterTurn, quarterPoint] <;> ring
 
 /-- Errors transported along one genuine source-matched seam have no
 squared Euclidean norm amplification. -/
