@@ -1254,4 +1254,21 @@ theorem outerSquarePrimeMass_eq_left_add_right (n : ℕ) :
   rw [outerSquarePrimes_eq_left_union_right]
   exact Finset.sum_union (outerSquarePrime_tails_disjoint n)
 
+/-! ## Theta interval bounds for both outer tails
+
+Each geometric tail is contained in the full square interval, so its
+prime-only von Mangoldt mass is bounded by the exact cumulative
+Chebyshev theta increment. This is a coarse comparison: it does not
+yet exploit the shorter tail endpoints.
+-/
+
+/-- Each left boundary-tail prime is in the actual complete square
+prime inventory. -/
+theorem leftOuterSquarePrimes_subset_full (n : ℕ) :
+    leftOuterSquarePrimes n ⊆
+      (Finset.Ioc (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime := by
+  intro p hp
+  exact (Finset.mem_sdiff.mp
+    (Finset.mem_filter.mp hp).1).1
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram
