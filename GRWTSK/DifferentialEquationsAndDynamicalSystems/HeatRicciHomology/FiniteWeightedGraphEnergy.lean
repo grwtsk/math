@@ -560,4 +560,37 @@ theorem graphLaplacianPairing_le_degree_bound
   have hpair := graphLaplacianPairing_twice_eq_dirichlet w v hsym
   nlinarith
 
+/-! ## Degree bound supplies the exact Laplacian image estimate
+
+The maximum-degree quadratic estimate applies to v = Lu. The
+symmetric mixed-pairing identity then identifies the right-hand
+side with the actual squared Laplacian image norm. This removes
+the abstract image-form supplier, conditional only on the concrete
+graph hypotheses.
+-/
+
+/-- Symmetric nonnegative weights and a maximum-degree bound
+supply the precise LaplacianImageBound interface. -/
+theorem laplacianImageBound_of_degreeBound
+    (w : V → V → ℚ) (D : ℚ)
+    (hw : ∀ i j, 0 ≤ w i j)
+    (hsym : ∀ i j, w i j = w j i)
+    (hD : DegreeBound w D) :
+    LaplacianImageBound w D := by
+  intro u
+  have hdegree := graphLaplacianPairing_le_degree_bound
+    w (weightedGraphLaplacian w u) D hw hsym hD
+  have hnorm := graphMixedPairing_u_Lu_eq_sum_sq w u hsym
+  rw [hnorm]
+  exact hdegree
+
+/-- The mixed pairing with Lu is nonnegative under symmetric
+weights, since it equals a sum of rational squares. -/
+theorem graphMixedPairing_u_Lu_nonnegative
+    (w : V → V → ℚ) (u : V → ℚ)
+    (hsym : ∀ i j, w i j = w j i) :
+    0 ≤ graphMixedPairing w u (weightedGraphLaplacian w u) := by
+  rw [graphMixedPairing_u_Lu_eq_sum_sq w u hsym]
+  exact Finset.sum_nonneg (fun i hi => sq_nonneg _)
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.FiniteWeightedGraphEnergy
