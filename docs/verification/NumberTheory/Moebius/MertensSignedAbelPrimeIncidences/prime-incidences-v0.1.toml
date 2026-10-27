@@ -1,0 +1,116 @@
+id = "rh-abel-prime-incidences-v0.1"
+version = "0.1"
+contribution = "grwtsk"
+kind = "passive-source-bound-verification-specification"
+status = "NOT_RUN"
+math_repository = "grwtsk/math"
+math_commit = "6687ec083a24437d8c509d4b28e90cc00b0b9d8e"
+introduction_commit = "ccf58b00ee61257691552650711876f3b64c49b3"
+reviewed_baseline = "969405404aceced0fa4c96b84c521d52296b7c59"
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences"
+source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelPrimeIncidences.lean"
+source_blob = "2670576f687f42f8332c3e1b5cff46c12709d9bc"
+source_sha256 = "c88ffc81e84e150613fa4a07bcd2fa6c72f3a9600d1c57cb17a0dd9ab3ac5f42"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+root_promoted = false
+complete_dependency_closure_reviewed = false
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+receipt = "NONE"
+operational_owner = "grwtsk/noeaaeue"
+lexical_definition_count = 5
+lexical_public_theorem_count = 19
+lexical_private_helper_count = 0
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.count_sq_sub_count_eq_ordered_distinct",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.primeTransfer",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.doublePrimeTransfer",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.weighted_count_eq_neg_primeTransfer",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.weighted_falling_two_eq_doublePrimeTransfer",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.rightFactorWeight",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.twoPrimePrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.threePrimePrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.bandMomentPrefix_eq_weighted_count",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.bandMoment_one_eq_neg_twoPrimePrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.bandMoment_two_sub_one_eq_threePrimePrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.twoPrimePrefix_eq_quotient_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.threePrimePrefix_eq_quotient_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.triple_guard_iff",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.twoPrime_cofactor_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.threePrime_cofactor_le_three",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.le_triple_floor_iff",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.threePrimePrefix_eq_short_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.coprimePrefix_eq_prime_incidence_sums",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.bulk_coprime_eq_prime_incidence_sums",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.bulk_eq_unsifted_sub_prime_incidences",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.abs_full_packet_sub_prime_incidences_le_two",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.riemannHypothesis_of_prime_incidence_budget",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences.falling_two_at_two",
+]
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBandMultiplicity"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBandMultiplicity.lean"
+blob = "ba28ac5d6a03d831c34cf7cd7a90d4066a3dd2a3"
+relation = "direct-import"
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.FinitePrimeDivisorExtraction"
+path = "GRWTSK/NumberTheory/Moebius/FinitePrimeDivisorExtraction.lean"
+blob = "89c8290fa1cc3b05e0035d01249cbf90b4e0d3ff"
+relation = "transitive-Mobius-arithmetic-and-window-bijection"
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeExtraction"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelPrimeExtraction.lean"
+blob = "86dfea00c3ffccd9eb26fd028e8fd09acb2adaa7"
+relation = "transitive-actual-bulk-functional"
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBoundaryCore.lean"
+blob = "ddc5631c450ad8f4fd18d466a4db48568eac251c"
+relation = "transitive-two-unit-boundary-and-conditional-RH-consumer"
+
+[execution_request]
+authorization = "Separate authorized executor only; this passive file dispatches nothing."
+workspace = "Isolated pinned checkout; do not reset concurrent work."
+commands = [
+  "test \"$(git rev-parse HEAD)\" = 6687ec083a24437d8c509d4b28e90cc00b0b9d8e",
+  "cat lean-toolchain",
+  "lake env lean --version",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelPrimeIncidences.lean)\" = 2670576f687f42f8332c3e1b5cff46c12709d9bc",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeIncidences",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelPrimeIncidences.lean",
+  "lake env leanchecker --help",
+  "lake env lean --trust=0 -DwarningAsError=true /tmp/AbelPrimeIncidencesAudit.lean",
+]
+fresh_checker = "Determine supported invocation from pinned checker help; replay the leaf and complete imported proof closure."
+audit = "External temporary audit file: exact types of all 24 declarations, axioms of all 19 theorem scripts, plus private/generated/opaque and native/unsafe dependencies."
+candidate_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project axioms", "unreviewed native proof dependencies", "missing imported proof closure", "weakened arithmetic hypotheses"]
+repair_policy = "New source pins after every repair; no transfer of earlier acceptance."
+
+[mathematical_controls]
+checks = [
+  "Generic extraction requires a finite set of primes, not arbitrary divisors; its weights may be signed.",
+  "k squared minus k is ORDERED-distinct incidence; at k=2 it is 2, not 1.",
+  "First extraction is negative, second falling incidence positive: F1=-G2 and F2-F1=G3.",
+  "Repeated primes remain excluded by exact guards; prime square vanishing does not justify dropping an extracted correction.",
+  "Retain h<pm<=N+h, nested natural floors, N=t+1 and the source triangle.",
+  "The cofactor-three bound uses the unchanged Q and Y<=4Q^3, not a real cube-root approximation.",
+  "Short sum over v=1,2,3 keeps its original product<=N+h cutoff; omitted upper-cutoff cells are NOT admitted.",
+  "Exercise actual cofactor witnesses 17*19*23 at j=12, twice that at j=13, and 3*67*71*73 at j=19.",
+  "The bulk coefficients are U-F0-(1/2)G2-(1/6)G3; all terms stay signed.",
+  "The two-unit boundary allowance is inherited without an additional arithmetic premise.",
+  "Unsifted smallness and all-positive-exponent cancellation are not proved.",
+  "Finite cofactor support does not bound the growing prime-tuple and shift sums.",
+  "The initial source rewrite repair is static review only, not compiler acceptance."
+]
+
+[nonclaims]
+items = ["Unconditional RH", "Subpolynomial signed cancellation", "Unsifted smallness", "Arithmetic-operator norm", "External analytic-paper admission", "Compiler acceptance", "Kernel acceptance"]
