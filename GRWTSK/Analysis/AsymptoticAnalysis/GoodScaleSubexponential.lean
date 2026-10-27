@@ -34,6 +34,72 @@ theorem on_of_global {f : ℝ → ℝ} (hf : SubexponentialUpper f) (G : Set ℝ
   obtain ⟨C, hC, hb⟩ := hf ε hε
   exact ⟨C, 0, hC, le_rfl, fun T _ hT => hb T hT⟩
 
+/-! ## Transport estimates and combine alternative scale regions -/
+
+/-- A one-sided source comparison is needed only on the named nonnegative good scales. -/
+theorem subexponentialOn_mono {f g : ℝ → ℝ} {G : Set ℝ}
+    (hg : SubexponentialOn g G)
+    (hfg : ∀ T : ℝ, T ∈ G → 0 ≤ T → f T ≤ g T) :
+    SubexponentialOn f G := by
+  intro ε hε
+  obtain ⟨C, T₁, hC, hT₁, hb⟩ := hg ε hε
+  refine ⟨C, T₁, hC, hT₁, ?_⟩
+  intro T hG hT
+  exact (hfg T hG (hT₁.trans hT)).trans (hb T hG hT)
+
+/-- Alternative methods controlling the same source on two regions combine by
+maxima, not by adding the source twice. Neither region must cover all times. -/
+theorem subexponentialOn_union {f : ℝ → ℝ} {G H : Set ℝ}
+    (hG : SubexponentialOn f G) (hH : SubexponentialOn f H) :
+    SubexponentialOn f (G ∪ H) := by
+  intro ε hε
+  obtain ⟨C, T₁, hC, hT₁, hbG⟩ := hG ε hε
+  obtain ⟨D, T₂, _hD, _hT₂, hbH⟩ := hH ε hε
+  refine ⟨max C D, max T₁ T₂, hC.trans (le_max_left _ _),
+    hT₁.trans (le_max_left _ _), ?_⟩
+  intro T hUnion hT
+  rcases hUnion with hTG | hTH
+  · exact (hbG T hTG ((le_max_left _ _).trans hT)).trans
+      (mul_le_mul_of_nonneg_right (le_max_left C D) (Real.exp_pos _).le)
+  · exact (hbH T hTH ((le_max_right _ _).trans hT)).trans
+      (mul_le_mul_of_nonneg_right (le_max_right C D) (Real.exp_pos _).le)
+
+/-- A fixed finite portfolio can cover different scale regions. Constants and
+starting times combine by finite maxima. No claim for an uncontrolled infinite
+family, a growing family, or a rate-dependent change of regions is made. -/
+theorem subexponentialOn_finite_cover {ι : Type*} (s : Finset ι)
+    (regions : ι → Set ℝ) {f : ℝ → ℝ}
+    (h : ∀ i ∈ s, SubexponentialOn f (regions i)) :
+    SubexponentialOn f {T | ∃ i ∈ s, T ∈ regions i} := by
+  classical
+  revert h
+  induction s using Finset.induction_on with
+  | empty =>
+      intro _h ε _hε
+      refine ⟨0, 0, le_rfl, le_rfl, ?_⟩
+      intro T hT _hlarge
+      obtain ⟨i, hi, _⟩ := hT
+      simp at hi
+  | @insert i s _hi ih =>
+      intro h
+      have hiBound := h i (Finset.mem_insert_self i s)
+      have hsBound := ih (fun k hk =>
+        h k (Finset.mem_insert.mpr (Or.inr hk)))
+      have hset : {T : ℝ | ∃ k ∈ insert i s, T ∈ regions k} =
+          regions i ∪ {T : ℝ | ∃ k ∈ s, T ∈ regions k} := by
+        ext T
+        constructor
+        · rintro ⟨k, hk, hTk⟩
+          rcases Finset.mem_insert.mp hk with hki | hk
+          · subst k
+            exact Or.inl hTk
+          · exact Or.inr ⟨k, hk, hTk⟩
+        · rintro (hTi | ⟨k, hk, hTk⟩)
+          · exact ⟨i, Finset.mem_insert_self i s, hTi⟩
+          · exact ⟨k, Finset.mem_insert.mpr (Or.inr hk), hTk⟩
+      rw [hset]
+      exact subexponentialOn_union hiBound hsBound
+
 /-- Adding a globally controlled error preserves the exact good scales. -/
 theorem add_global {f g : ℝ → ℝ} {G : Set ℝ}
     (hf : SubexponentialOn f G) (hg : SubexponentialUpper g) :
