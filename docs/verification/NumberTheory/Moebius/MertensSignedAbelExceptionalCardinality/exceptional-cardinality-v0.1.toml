@@ -1,0 +1,89 @@
+id = "rh-abel-exceptional-cardinality-v0.1"
+version = "0.1"
+contribution = "grwtsk"
+kind = "passive-source-bound-verification-specification"
+status = "NOT_RUN"
+math_repository = "grwtsk/math"
+math_commit = "731649d94ad6facddb02917dd7cc892b5e7f1286"
+parent_commit = "6851913a42c98d0b162eac6fba26a75b56f0a62b"
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality"
+source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelExceptionalCardinality.lean"
+source_blob = "71193b9bd513ac422c3a8821a33b705c69b4c7fc"
+source_sha256 = "2b6c855c76462330280d98681213e62ce2a5be4382511b2898764a088202c827"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+root_promoted = false
+complete_dependency_closure_reviewed = false
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+receipt = "NONE"
+operational_owner = "grwtsk/noeaaeue"
+lexical_definition_count = 2
+lexical_theorem_script_count = 12
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.reciprocal_drop",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.weightDrop_eq_piecewise",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.kernel_eq_piecewise",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.kernel_le_two_div_left_succ",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.exceptionalKernelMass_le_card",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.exceptionalKernelMass_le_of_card_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.signedRegularPacket",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.weightedExceptionalCost",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.exceptionalPacketUpper_eq_regular_add_cost",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.weightedExceptionalCost_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.sum_prefix_lengths",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.weightedExceptionalCost_le_four_mul",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.exceptionalPacketUpper_le_regular_add_four_mul",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality.riemannHypothesis_of_regular_and_cardinality_budgets",
+]
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelKernelTransfer.lean"
+blob = "bcddb12a2b5a3da9b1629dffe5613ee57146f726"
+relation = "direct-import"
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
+path = "GRWTSK/NumberTheory/Moebius/DyadicChowlaShiftPacket.lean"
+blob = "d38b6d53b279195f6132e0725bbf909f58962a0c"
+relation = "transitive-exact-weight-source"
+
+[execution_request]
+authorization = "Separate authorized executor only; this file dispatches nothing."
+workspace = "Isolated pinned checkout; do not reset a concurrent working tree."
+commands = [
+  "test \"$(git rev-parse HEAD)\" = 731649d94ad6facddb02917dd7cc892b5e7f1286",
+  "cat lean-toolchain",
+  "lake env lean --version",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelExceptionalCardinality.lean)\" = 71193b9bd513ac422c3a8821a33b705c69b4c7fc",
+  "lake build --wfail GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelExceptionalCardinality.lean",
+  "lake env leanchecker --help",
+  "lake env lean --trust=0 -DwarningAsError=true /tmp/AbelExceptionalCardinalityAudit.lean",
+]
+fresh_checker = "Determine supported invocation from actual pinned checker help; replay leaf and complete imported closure."
+audit = "Print exact types and axioms for all listed declarations plus private/generated/opaque dependencies; inspect native and unsafe dependencies."
+candidate_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project axioms", "unreviewed native proof dependencies", "missing imported proof closure", "altered source predicates"]
+repair_policy = "Repair non-force on current main; new source pins require new acceptance."
+
+[mathematical_controls]
+checks = [
+  "The b=X-1 crossing has zero drop; b=X has reciprocal product drop.",
+  "Keep h>=1, h<Y, t<Y-h-1 and the extra b>=X support.",
+  "Use the actual atom bound 2/(X+1); generic subprobability mass alone is insufficient.",
+  "The cardinality allowance is uniform over every depth at this scale; B may vary with scale.",
+  "Retain prefix length t+1 and factor 2/Y through the complete cost.",
+  "The regular term remains signed; the exceptional cost alone is nonnegative.",
+  "The final constant is C+4D with every positive exponent and every dyadic scale retained.",
+  "No arithmetic regular estimate or small exceptional-set theorem is constructed.",
+  "The thin-band lower-cost observation is mathematical documentation, not a named Lean theorem.",
+  "No identification with pickupCross, entropy independence, or source-free expansion is inferred."
+]
+
+[nonclaims]
+items = ["Unconditional RH", "Signed regular subpolynomial cancellation", "Subpolynomial exceptional cardinality", "Entropy decrement", "External paper theorem admission", "Compiler acceptance", "Kernel acceptance"]
