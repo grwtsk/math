@@ -66,8 +66,7 @@ theorem projection_idempotent (b : ℕ → ℝ) :
   funext v
   change (if v = 1 then signedReadout (readoutProjection b) / 3
     else if v = 2 ∨ v = 3 then -signedReadout (readoutProjection b) / 3 else 0) = _
-  rw [projection_preserves_readout]
-  rfl
+  rw [projection_preserves_readout] <;> rfl
 
 /-- This is a genuine Pythagorean identity, not a cancellation hypothesis. -/
 theorem energy_split (b : ℕ → ℝ) :
