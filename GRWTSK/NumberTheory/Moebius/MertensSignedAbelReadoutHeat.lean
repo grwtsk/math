@@ -43,8 +43,7 @@ theorem projection_readoutHeat (t : ℝ) (b : ℕ → ℝ) :
   funext v
   change (if v = 1 then signedReadout (readoutHeat t b) / 3
     else if v = 2 ∨ v = 3 then -signedReadout (readoutHeat t b) / 3 else 0) = _
-  rw [readoutHeat_preserves]
-  rfl
+  rw [readoutHeat_preserves] <;> rfl
 
 theorem readoutHeat_add (s t : ℝ) (b : ℕ → ℝ) :
     readoutHeat s (readoutHeat t b) = readoutHeat (s + t) b := by
