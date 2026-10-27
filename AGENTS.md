@@ -12,6 +12,14 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Implement effectful verification, repository mutation, proof-capsule assembly, and generated documentation in `grwtsk/noeaaeue`, bound to a pinned math commit.
 - Do not promote a finite computation, conditional implication, or representational analogy to a stronger theorem without an explicit proved bridge.
 
+## Direct repository formalization
+
+- For user-authorized formalization work, publish the mathematical source directly on the existing `main` branch using routine non-force commits, preserving concurrent changes.
+- A downloadable patch, archive, unattached blob, or detached delta tree is not the requested final delivery. Temporary Git objects may be used to assemble and inspect a commit, but confirm that the resulting commit is reachable from `main` before reporting publication.
+- Build on the current complete repository tree. Never replace it with a partial overlay. Before advancing `main`, check the diff and use an expected-head lease; refresh and reconcile if the head changes.
+- Source publication and mathematical acceptance are separate. Preserve explicit `NOT_RUN` statuses for compilation, fresh kernel checking and transitive axiom auditing until actual source-bound evidence exists. File or update exact-source verification issues without dispatching unauthorized execution.
+- Keep incompatible upstream adapters outside the local default build. Do not promote root imports or change dependency versions merely to publish a candidate.
+
 ## Privacy and local attribution
 
 - Use exactly `grwtsk contributors` for local attribution and Git author/committer metadata, with `contributors@grwtsk.invalid` for Git email.
