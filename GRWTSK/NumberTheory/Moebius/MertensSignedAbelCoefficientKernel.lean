@@ -165,7 +165,7 @@ theorem signed_error_le_uniform (width : ℕ → ℕ) (j : ℕ) (f g : ℕ → �
   calc
     _ ≤ ∑ a ∈ sourceIndices j, |signedCoefficient width j a| * η :=
       Finset.sum_le_sum (fun a ha => mul_le_mul_of_nonneg_left (hfg a ha) (abs_nonneg _))
-    _ = _ := by rw [← Finset.sum_mul]; rfl
+    _ = _ := by simp only [signedRowMass, Finset.sum_mul]
 
 /-- A one-bounded input saturating the actual signed-row mass. It is not Mobius. -/
 def extremalInput (width : ℕ → ℕ) (j a : ℕ) : ℝ :=
