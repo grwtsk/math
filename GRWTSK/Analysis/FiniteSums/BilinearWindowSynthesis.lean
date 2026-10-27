@@ -2,6 +2,7 @@
 Mathlib retains its upstream attribution and Apache-2.0 license. -/
 import Mathlib.Tactic
 import Mathlib.Analysis.Complex.Exponential
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 
 /-!
 # Exact finite phase separation in multiplicative short windows
