@@ -41,10 +41,14 @@ theorem count_sq_sub_count_eq_ordered_distinct (P : Finset ℕ) (n : ℕ) :
     apply Finset.sum_congr rfl
     intro q hq
     have hd : (1 : ℝ) = ∑ r ∈ S, if q = r then (1 : ℝ) else 0 := by simp [hq]
-    rw [hd, ← Finset.sum_add_distrib]
-    apply Finset.sum_congr rfl
-    intro r _
-    by_cases hqr : q = r <;> simp [hqr]
+    calc
+      _ = (∑ r ∈ S, if q = r then (1 : ℝ) else 0) +
+          ∑ r ∈ S, if q = r then (0 : ℝ) else 1 := by
+        rw [← Finset.sum_add_distrib]
+        apply Finset.sum_congr rfl
+        intro r _
+        by_cases hqr : q = r <;> simp [hqr]
+      _ = _ := by rw [← hd]
   have hc : (S.card : ℝ) * (S.card : ℝ) = (S.card : ℝ) +
       ∑ q ∈ S, ∑ r ∈ S, if q = r then (0 : ℝ) else 1 := by simpa using hs
   change (S.card : ℝ) ^ 2 - (S.card : ℝ) = _
@@ -117,7 +121,8 @@ theorem weighted_falling_two_eq_doublePrimeTransfer (P : Finset ℕ)
     intro v _
     by_cases hqv : q ∣ v
     · simp [hqv]
-    · rw [if_neg hqv, if_neg hqv, divisorCount_prime_mul_of_not_dvd P hP hq hqv]
+    · simp only [if_neg hqv]
+      rw [divisorCount_prime_mul_of_not_dvd P hP hq hqv]
       push_cast
       ring
   calc
