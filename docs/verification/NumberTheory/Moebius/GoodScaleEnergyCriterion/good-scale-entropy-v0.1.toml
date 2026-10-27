@@ -1,0 +1,109 @@
+# Static source-bound verification request, not an execution receipt.
+# Local attribution: grwtsk contributors.
+# This file is descriptive; no runner-schema acceptance is claimed.
+version = "0.1"
+kind = "passive-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "6c882304c08c9c1eb18e20317dfb0fdaf4163146"
+source_tree = "ae7f1ba6eb4843a2adcdea9140c4beb172f66633"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axioms = "NOT_RUN"
+actual_receipt = "NONE"
+execution_owner = "grwtsk/noeaaeue"
+remote_execution_authorized = false
+root_promotion = false
+git_metadata_observation = "GitHub contents API selected its configured identity; author/committer override is unavailable in the exposed write action. Source attribution is grwtsk contributors. No history rewrite or metadata-compliance claim."
+
+required_checks = [
+  "Verify exact commit, tree, source blobs, toolchain and full dependency lock before execution.",
+  "Build all four leaves and their transitive dependencies with warnings fatal.",
+  "Print and compare all 27 source declaration types, including four definitions.",
+  "Run actual fresh kernel replay of the complete imported proof closure using syntax confirmed by the pinned checker help.",
+  "Audit every theorem plus private/generated/opaque declarations and full transitive axioms, unsafe and native dependencies.",
+  "Reject sorryAx, unreviewed project axioms, silent premise deletion and unchecked native proof dependencies.",
+  "Record actual commands, exit codes, stdout/stderr and source/object hashes outside math; source scans are not acceptance."
+]
+allowed_foundational_axioms_for_review = ["propext", "Classical.choice", "Quot.sound"]
+checker_discovery_command = "lake env leanchecker --help"
+fresh_checker_command = "UNRESOLVED_UNTIL_PINNED_HELP_IS_INSPECTED"
+
+[[target]]
+module = "GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential"
+path = "GRWTSK/Analysis/AsymptoticAnalysis/GoodScaleSubexponential.lean"
+blob = "75af52d649b267d72d4cf8b1d13c935b1de92daf"
+direct_imports = ["GRWTSK.Analysis.AsymptoticAnalysis.PolynomialSubexponential"]
+build_command = "lake build --wfail GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential"
+lean_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/AsymptoticAnalysis/GoodScaleSubexponential.lean"
+namespace = "GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential"
+definitions = ["AffineFrequent", "SubexponentialOn"]
+theorems = ["on_of_global", "add_global", "global_of_monotoneOn", "global_iff_on", "affineFrequent_nonnegative", "not_affineFrequent_singleton_zero"]
+
+[[target]]
+module = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+path = "GRWTSK/NumberTheory/Moebius/GoodScaleEnergyCriterion.lean"
+blob = "a39d24a540a86918ab4f2a8130a86895424dc317"
+direct_imports = ["GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential", "GRWTSK.NumberTheory.Moebius.EnergyAbscissa"]
+build_command = "lake build --wfail GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+lean_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/GoodScaleEnergyCriterion.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+definitions = []
+theorems = ["pickupEnergy_monotoneOn_nonnegative", "pickupDiagonal_subexponential", "energy_on_of_cross_on", "pickupEnergySubexp_iff_good_scales", "energyAbscissa_zero_of_cross_good_scales", "riemannHypothesis_of_cross_good_scales", "riemannHypothesis_of_energy_good_scales"]
+
+[[target]]
+module = "GRWTSK.Analysis.Inequalities.FiniteKernelCorrelation"
+path = "GRWTSK/Analysis/Inequalities/FiniteKernelCorrelation.lean"
+blob = "b6bc8e512f13203d17c80e9fdfa9cff38937ed05"
+direct_imports = ["Mathlib.Tactic"]
+build_command = "lake build --wfail GRWTSK.Analysis.Inequalities.FiniteKernelCorrelation"
+lean_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/Inequalities/FiniteKernelCorrelation.lean"
+namespace = "GRWTSK.Analysis.Inequalities.FiniteKernelCorrelation"
+definitions = ["jointL1"]
+theorems = ["product_pairing", "joint_pairing_sub_product", "covariance_le_jointL1", "correlation_le_marginals_add_jointL1", "weighted_pairing", "constant_signal_pairing"]
+
+[[target]]
+module = "GRWTSK.NumberTheory.Primes.RadicalLogEntropy"
+path = "GRWTSK/NumberTheory/Primes/RadicalLogEntropy.lean"
+blob = "47ce1ff27e556aa514d62de1d814c68cfd5065d9"
+direct_imports = ["Mathlib.RingTheory.Radical.NatInt", "Mathlib.Analysis.SpecialFunctions.Log.Basic", "Mathlib.Tactic"]
+build_command = "lake build --wfail GRWTSK.NumberTheory.Primes.RadicalLogEntropy"
+lean_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Primes/RadicalLogEntropy.lean"
+namespace = "GRWTSK.NumberTheory.Primes.RadicalLogEntropy"
+definitions = ["uniformResidueEntropy"]
+theorems = ["uniformResidueEntropy_eq_log", "sum_log_primeFactors", "uniform_radical_entropy", "uniformResidueEntropy_zero"]
+
+[[dependency_pin]]
+path = "GRWTSK/Analysis/AsymptoticAnalysis/PolynomialSubexponential.lean"
+blob = "c488224fc6f14dfc478d7b7bc3c5bd32f6d8f65c"
+
+[[dependency_pin]]
+path = "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean"
+blob = "9453ab6fc629611fa19362b56eb223fabd14bc0a"
+
+[[dependency_pin]]
+repository = "leanprover-community/mathlib4"
+commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/RingTheory/Radical/NatInt.lean"
+blob = "fa1204627a638b49490459d716d5d33763da30f1"
+
+[[dependency_pin]]
+repository = "leanprover-community/mathlib4"
+commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Log/Basic.lean"
+blob = "2776daac653ac8de9603408765b37a02d63f3e55"
+
+[controls]
+finite_height = "not_affineFrequent_singleton_zero rejects a singleton good-scale set."
+constant_signal = "constant_signal_pairing retains full cardinality despite a normalized kernel."
+monotonicity = "Do not apply monotone gap filling to the signed cross sum; first add the actual diagonal and use cumulative square energy."
+coverage = "Retain fixed affine overshoot and eventual threshold. Infinitely many arbitrary good scales do not replace this hypothesis."
+rate = "Retain every strictly positive rate and its own constant/threshold. No zero-rate conclusion."
+source = "Retain actual wholePickup, pickupCross, pickupDiagonal and root RiemannHypothesis with all original exclusions."
+probability = "Real-array identities do not prove normalization, marginal identities, independence, Pinsker or information decay."
+radical = "Use distinct prime factors and actual UniqueFactorizationMonoid.radical. Keep positive modulus for entropy interpretation and n=0 separate."
+nonclaims = ["unconditional RH", "formalized Tao entropy decrement", "formalized Pinsker", "external expander theorem admission", "Franel-Landau criterion admission", "Nyman-Beurling criterion admission", "quantitative Mobius cancellation"]
