@@ -1,0 +1,119 @@
+id = "rh-abel-boundary-core-v0.1"
+version = "0.1"
+contribution = "grwtsk"
+kind = "passive-source-bound-verification-specification"
+status = "NOT_RUN"
+math_repository = "grwtsk/math"
+math_commit = "57aca43c1eab1c92ce234b36961e4c440eeb6d40"
+parent_commit = "9763469752bd5f372b769a1095a4f5f2b6c03aaf"
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore"
+source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBoundaryCore.lean"
+source_blob = "ddc5631c450ad8f4fd18d466a4db48568eac251c"
+source_sha256 = "3e81173730f8c70d8fe9a6bd45bce13620aeddcab3477e8be9f78ad56e5e25cb"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+root_promoted = false
+complete_dependency_closure_reviewed = false
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+receipt = "NONE"
+operational_owner = "grwtsk/noeaaeue"
+lexical_definition_count = 3
+lexical_public_theorem_script_count = 21
+lexical_private_theorem_script_count = 1
+lexical_total_declaration_commands = 25
+private_source_names = ["right_eq_two_left"]
+private_name_policy = "Resolve actual generated private names from elaboration; no public declaration with this short name is asserted."
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_zero_of_terminal",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_eq_scaled_weight",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_le_one",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_eq_one_of_early",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_eq_reciprocal_of_late",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.kernelMass_eq_profile",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.length_mul_kernelMass_le_tail",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.boundaryShifts",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.boundary_mass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sum_tail_lengths",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.boundary_weight_sum_le_square",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.boundary_cost_le_two_square_div",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.abs_packet_sub_regular_le_cost",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.bulkPacket",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.bulkPacket_eq_middle_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth_sq_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth_le_left",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrt_boundary_cost_le_two",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.abs_packet_sub_sqrt_bulk_le_two",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrt_exceptional_upper_bounds",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.subpolynomialDepthPacket_iff_sqrt_bulk",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.riemannHypothesis_of_sqrt_bulk_budget",
+]
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelExceptionalCardinality.lean"
+blob = "71193b9bd513ac422c3a8821a33b705c69b4c7fc"
+relation = "direct-import"
+
+[[dependencies]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+module = "Mathlib.Data.Nat.Sqrt"
+path = "Mathlib/Data/Nat/Sqrt.lean"
+blob = "6e0e55b225761cc0112e2b1c8d1d394ef867bfec"
+relation = "direct-import; Nat.sqrt_le' exact integer width"
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelKernelTransfer.lean"
+blob = "bcddb12a2b5a3da9b1629dffe5613ee57146f726"
+relation = "transitive-source-reconstruction-and-exceptional-allowance"
+
+[[dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelSubprobabilityKernel"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelSubprobabilityKernel.lean"
+blob = "60d8e7a6036e14738b9e87fca74f96dd3b50cf00"
+relation = "transitive-actual-kernel-and-mass-telescope"
+
+[execution_request]
+authorization = "Separate authorized executor only; this file dispatches nothing."
+workspace = "Isolated source-pinned checkout; do not reset concurrent work."
+commands = [
+  "test \"$(git rev-parse HEAD)\" = 57aca43c1eab1c92ce234b36961e4c440eeb6d40",
+  "cat lean-toolchain",
+  "lake env lean --version",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelBoundaryCore.lean)\" = ddc5631c450ad8f4fd18d466a4db48568eac251c",
+  "lake build --wfail GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelBoundaryCore.lean",
+  "lake env leanchecker --help",
+  "lake env lean --trust=0 -DwarningAsError=true /tmp/AbelBoundaryCoreAudit.lean",
+]
+fresh_checker = "Determine actual supported invocation from the pinned checker help, then replay the leaf and full imported proof closure."
+audit = "Create temporary audit outside math; print exact types for every declaration and axioms for all theorem scripts; enumerate private/generated/opaque declarations, transitive proof/import closure and unsafe/native dependencies."
+candidate_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project axioms", "unreviewed native proof dependencies", "missing imported proof closure", "changed source target or hypotheses"]
+repair_policy = "Repair non-force on current main, preserving exact mathematics and concurrent work; pin new bytes and do not transfer old acceptance."
+
+[mathematical_controls]
+checks = [
+  "Use the original normalized kernel, ordinary Mobius prefix and complete signed depth packet.",
+  "Exact mass is one for t+2<=X, Y/(t+2)-1 for X<t+2<Y, and zero for t+2>=Y.",
+  "Boundary depth sets are disjoint under L<=X; include L=0, L=X and j=0.",
+  "Sum early lengths as L(L+1)/2 and late lengths as L(L-1)/2; retain factor 2/Y.",
+  "The bound 2L^2/Y is for the actual full weighted allowance, not a per-depth atom or cardinality proxy.",
+  "Nat.sqrt is the exact floor square root; prove both L^2<=Y and L<=X.",
+  "Square-root collars cost at most two and give absolute signed packet difference at most two.",
+  "Existing exceptional upper allowance lies between P and P+4; this does not assert the signed removed part is positive.",
+  "The middle-depth sum may be empty at small scales; no nonempty assumption is introduced.",
+  "No absolute values enter the retained signed bulk. Subpolynomial conditions use every positive exponent and every dyadic scale.",
+  "The budget equivalence changes constants by two; it is not a converse from RH.",
+  "Bulk cancellation, prime-divisor extraction, external analytic imports, good-scale coverage and pickupCross comparison remain unproved."
+]
+
+[nonclaims]
+items = ["Unconditional RH", "Subpolynomial signed bulk cancellation", "Prime-divisor extraction", "Entropy decrement", "External paper theorem admission", "Compilation", "Fresh kernel acceptance", "Complete trust audit"]
