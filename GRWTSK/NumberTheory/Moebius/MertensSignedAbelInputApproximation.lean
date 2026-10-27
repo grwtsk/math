@@ -33,9 +33,10 @@ def inputProfile (width : ℕ → ℕ) (j : ℕ) (g : ℕ → ℝ) (v : ℕ) : �
 theorem signed_error_eq_input_difference (width : ℕ → ℕ) (j : ℕ) (g : ℕ → ℝ) :
     signedResponseError width j (inputProfile width j g) =
       signedResponse width j (fun a => moebiusReal a - g a) := by
-  rw [signedResponseError_eq_triple_residual, triple_bulk_eq_signedResponse,
-    signedResponse_sub]
-  rfl
+  rw [signedResponseError_eq_triple_residual, triple_bulk_eq_signedResponse]
+  change signedResponse width j moebiusReal - signedResponse width j g =
+    signedResponse width j (fun a => moebiusReal a - g a)
+  exact (signedResponse_sub width j moebiusReal g).symm
 
 /-- The complete error retains cancellation between the head and input-response difference. -/
 theorem joint_error_eq_input_difference (width : ℕ → ℕ) (j : ℕ)
