@@ -7,6 +7,13 @@ def MayAct {Action : Type u}
     (scope : Action → Prop) (a : Action) : Prop :=
   authenticated ∧ current ∧ scope a
 
+/-- Decide the grant only from decisions for each of its three required premises. -/
+instance instDecidableMayAct {Action : Type u}
+    (authenticated current : Prop) (scope : Action → Prop) (a : Action)
+    [Decidable authenticated] [Decidable current] [Decidable (scope a)] :
+    Decidable (MayAct authenticated current scope a) :=
+  inferInstanceAs (Decidable (authenticated ∧ current ∧ scope a))
+
 theorem requires_authentication
     {Action : Type u}
     {authenticated current : Prop}
