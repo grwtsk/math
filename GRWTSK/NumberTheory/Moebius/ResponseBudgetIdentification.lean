@@ -1,10 +1,20 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Imported GRWTSK and Mathlib sources retain their upstream attribution/licenses. -/
 import GRWTSK.Analysis.AsymptoticAnalysis.FixedWidthEnergyBoundEquivalence
 import GRWTSK.NumberTheory.Moebius.MertensPrimitive
+import GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds
 
 /-! Exact adapter to the existing grwtsk/math CCC arithmetic proposition.
 The response, integer inventory, coefficients, complete Gram and both ordered
 cross sums are identified. Icc/set integrals and ordered interval integrals
 are compared only on nonnegative horizons. No pickup growth bound is supplied.
+
+The existing source-proved analytic return also discharges the older explicit
+`EulerP04RH.AnalyticClosureConstruction` argument. Its proof is propagated to
+the transform and signed-packet consumers below. The actual source return,
+height, tail, Gram, coefficient and error budgets remain unchanged hypotheses.
+This is application of existing proofs, not a new analytic estimate. The new
+compositions are SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 noncomputable section
 open MeasureTheory Set
@@ -62,7 +72,53 @@ theorem native_P04_implies_literal_RH (h : GRWTSK.RiemannHypothesis.CCC.PickupCr
     _root_.RiemannHypothesis :=
   EulerP04RH.LaplaceEnergy.literal_RH_of_P04 (native_P04_iff_literal_P04.mp h)
 
+/-! ## Reuse the existing analytic closure in older signed-source consumers -/
+
+/-- The old analytic input has an actual proof in the maintained source.
+No new arithmetic hypothesis is needed to construct this implication. -/
+theorem analyticClosureConstruction : EulerP04RH.AnalyticClosureConstruction :=
+  EulerP04RH.LaplaceEnergy.literal_RH_of_P04
+
+/-- The exact same P04 proposition transfers to the native CCC predicate.
+This does not construct a transform decomposition or its arithmetic budgets. -/
+theorem transform_route_implies_native_P04
+    (route : EulerP04RH.TransformRouteConstruction) :
+    GRWTSK.RiemannHypothesis.CCC.PickupCrossPoly :=
+  native_P04_iff_literal_P04.mpr (EulerP04RH.transform_route_implies_P04 route)
+
+/-- Remove only the obsolete extra analytic argument of the older consumer. -/
+theorem transform_route_implies_literal_RH
+    (route : EulerP04RH.TransformRouteConstruction) : _root_.RiemannHypothesis :=
+  EulerP04RH.assembled_route_implies_literal_RH route analyticClosureConstruction
+
+/-- A source-bound transform budget also supplies every fixed positive-width
+energy consumer. The width is fixed before choosing its uniform constants. -/
+theorem transform_route_implies_fixed_width {b : ℝ} (hb : 0 < b)
+    (route : EulerP04RH.TransformRouteConstruction) : HSSCP04.HSS b :=
+  HSSCP04.P04_implies_HSS hb (EulerP04RH.transform_route_implies_P04 route)
+
+/-- Propagate the existing packet return through the already supplied analytic
+closure. Every source, height, tail, Gram, coefficient and error premise is kept. -/
+theorem packet_route_implies_literal_RH {E : Type*}
+    [NormedAddCommGroup E] [InnerProductSpace ℂ E]
+    (model : EulerP04RH.PacketClosure.PacketModel E)
+    (D : EulerP04RH.ExactDecomposition) (height : ℝ → ℝ)
+    (height_valid : ∀ T : ℝ, 0 ≤ T → 1 ≤ height T)
+    (tailBudget : EulerP04RH.RightLineTailBound D height)
+    (sourceReturn : EulerP04RH.PacketClosure.SignedPacketReturn model D height)
+    (gramBudget : PPNCP04.PolynomialBound model.gramConstant)
+    (coeffBudget : PPNCP04.PolynomialBound (EulerP04RH.PacketClosure.coefficientBudget model))
+    (errorBudget : PPNCP04.PolynomialBound model.error) : _root_.RiemannHypothesis :=
+  EulerP04RH.LaplaceEnergy.literal_RH_of_P04
+    (EulerP04RH.PacketClosure.packet_route_implies_literal_P04
+      model D height height_valid tailBudget sourceReturn gramBudget coeffBudget errorBudget)
+
 end HSSCP04.CCCAdapter
 #print axioms HSSCP04.CCCAdapter.cross_eq
 #print axioms HSSCP04.CCCAdapter.native_P04_eq_literal_P04
 #print axioms HSSCP04.CCCAdapter.HSS_iff_native_P04
+#print axioms HSSCP04.CCCAdapter.analyticClosureConstruction
+#print axioms HSSCP04.CCCAdapter.transform_route_implies_native_P04
+#print axioms HSSCP04.CCCAdapter.transform_route_implies_literal_RH
+#print axioms HSSCP04.CCCAdapter.transform_route_implies_fixed_width
+#print axioms HSSCP04.CCCAdapter.packet_route_implies_literal_RH
