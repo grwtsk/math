@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk. MIT.
 Imported results retain their upstream attribution and licenses. -/
 import GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry
+import GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows
 
 /-!
 # Finite coefficients of the actual arithmetic operator
@@ -28,11 +29,12 @@ open GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry
 
 def sourceIndices (j : ℕ) : Finset ℕ := Finset.Icc 1 (2 ^ (j + 1))
 
-def coordinateInput (a n : ℕ) : ℝ := if n = a then 1 else 0
+def coordinateInput (a n : ℕ) : ℝ :=
+  GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.sourceAtom a n
 
 /-- The existing arithmetic operator, not a source-fitted replacement matrix. -/
 def coefficient (width : ℕ → ℕ) (j v a : ℕ) : ℝ :=
-  cofactorResponse width j v (coordinateInput a)
+  GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.responseRow width j v a
 
 def rowMass (width : ℕ → ℕ) (j v : ℕ) : ℝ :=
   ∑ a ∈ sourceIndices j, coefficient width j v a
@@ -43,69 +45,26 @@ def signedCoefficient (width : ℕ → ℕ) (j a : ℕ) : ℝ :=
 def signedRowMass (width : ℕ → ℕ) (j : ℕ) : ℝ :=
   ∑ a ∈ sourceIndices j, |signedCoefficient width j a|
 
+/-- Reuse the established finite-row positivity, rather than a parallel proof. -/
 theorem cofactorResponse_nonneg (width : ℕ → ℕ) (j v : ℕ) (f : ℕ → ℝ)
-    (hf : ∀ a : ℕ, 0 ≤ f a) : 0 ≤ cofactorResponse width j v f := by
-  have hp (h N : ℕ) : 0 ≤ cofactorPrefix j v h N f := by
-    unfold cofactorPrefix
-    apply Finset.sum_nonneg
-    intro p _
-    apply Finset.sum_nonneg
-    intro q _
-    apply Finset.sum_nonneg
-    intro r _
-    split_ifs
-    · exact hf _
-    · exact le_rfl
-  unfold cofactorResponse bulkPrefixFunctional
-  apply mul_nonneg (by positivity)
-  apply Finset.sum_nonneg
-  intro t _
-  split_ifs
-  · exact Finset.sum_nonneg (fun h _ =>
-      mul_nonneg (normalizedSignedAbelShiftKernel_nonneg j t h) (hp h (t + 1)))
-  · exact le_rfl
+    (hf : ∀ a : ℕ, 0 ≤ f a) : 0 ≤ cofactorResponse width j v f :=
+  GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorResponse_nonneg width j v f hf
 
 theorem coefficient_nonneg (width : ℕ → ℕ) (j v a : ℕ) :
-    0 ≤ coefficient width j v a := by
-  apply cofactorResponse_nonneg
-  intro n
-  unfold coordinateInput
-  split_ifs <;> norm_num
+    0 ≤ coefficient width j v a :=
+  GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.responseRow_nonneg width j v a
 
 theorem response_finset_sum (width : ℕ → ℕ) (j v : ℕ)
     (S : Finset ℕ) (F : ℕ → ℕ → ℝ) :
     cofactorResponse width j v (fun n => ∑ a ∈ S, F a n) =
-      ∑ a ∈ S, cofactorResponse width j v (F a) := by
-  induction S using Finset.induction_on with
-  | empty => simp
-  | @insert a S ha ih =>
-      simp only [Finset.sum_insert ha]
-      calc
-        _ = cofactorResponse width j v (F a) +
-            cofactorResponse width j v (fun n => ∑ b ∈ S, F b n) := by
-          simpa only [one_mul] using cofactorResponse_linear width j v 1 1
-            (F a) (fun n => ∑ b ∈ S, F b n)
-        _ = _ := by rw [ih]
+      ∑ a ∈ S, cofactorResponse width j v (F a) :=
+  GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorResponse_finset_sum width j v S F
 
-/-- Exact finite matrix reconstruction, including arbitrary input values outside the source. -/
+/-- Exact reuse of the established row representation, with definitionally identical coefficients. -/
 theorem response_eq_coefficients (width : ℕ → ℕ) (j v : ℕ) (f : ℕ → ℝ) :
     cofactorResponse width j v f =
-      ∑ a ∈ sourceIndices j, coefficient width j v a * f a := by
-  calc
-    _ = cofactorResponse width j v
-        (fun n => ∑ a ∈ sourceIndices j, f a * coordinateInput a n) := by
-      apply cofactorResponse_congr_on_source
-      intro n hn1 hnY
-      have hn : n ∈ sourceIndices j := Finset.mem_Icc.mpr ⟨hn1, hnY⟩
-      simp [coordinateInput, mul_ite, hn, eq_comm]
-    _ = ∑ a ∈ sourceIndices j,
-        cofactorResponse width j v (fun n => f a * coordinateInput a n) :=
-      response_finset_sum width j v _ _
-    _ = _ := by
-      apply Finset.sum_congr rfl
-      intro a _
-      have hl := cofactorResponse_linear width j v (f a) 0 (coordinateInput a) (fun _ => 0)
-      simpa only [zero_mul, add_zero, coefficient, mul_comm] using hl
+      ∑ a ∈ sourceIndices j, coefficient width j v a * f a :=
+  GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorResponse_eq_row_sum width j v f
 
 /-- Basis coordinates outside the finite source are genuinely unread. -/
 theorem coefficient_zero_outside (width : ℕ → ℕ) (j v a : ℕ)
@@ -120,7 +79,7 @@ theorem coefficient_zero_outside (width : ℕ → ℕ) (j v a : ℕ)
         apply ha
         rw [← h]
         exact Finset.mem_Icc.mpr ⟨hn1, hnY⟩
-      simp [coordinateInput, hna]
+      simp [coordinateInput, GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.sourceAtom, hna]
     _ = 0 := cofactorResponse_zero width j v
 
 theorem rowMass_eq_constant_response (width : ℕ → ℕ) (j v : ℕ) :
