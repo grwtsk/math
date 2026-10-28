@@ -57,3 +57,7 @@ The first implementation is file-level. A source containing strongly mixed
 subjects is classified `review`; it is not automatically split. Declaration-level
 segmentation requires a separate source-preserving decomposition plan, exact
 command coverage, dependency closure, and per-resulting-module replay.
+
+## Minimality is a separate obligation
+
+See [placement feasibility and minimum cost](../mathematics/FoundationsLogicAndTypeTheory/MathematicalOrganization/placement-minimality.md) and its pure Lean companion. Admissibility alone does not prove global minimality; a SAT-based optimum needs an explicit objective, faithful encoding and checked exclusion of every cheaper feasible placement.
