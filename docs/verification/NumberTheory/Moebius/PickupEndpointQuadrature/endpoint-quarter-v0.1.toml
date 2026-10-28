@@ -1,0 +1,114 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-endpoint-quarter-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+source_commit = "09618036dfa2e7f02d19705e9ebffec3fa5be7b2"
+source_tree = "6b449d3d403b46ec02ce4393ca6b6bd3ca0ac3f5"
+baseline_commit = "038a3ba24a1fa9e10abb807ff6e787dcc546f663"
+prior_quadrature_integration_commit = "038a3ba24a1fa9e10abb807ff6e787dcc546f663"
+prior_quadrature_issue = 1405
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+new_definitions = 11
+new_public_theorem_scripts = 34
+new_private_helpers = 1
+lexical_identifiers = 46
+note = "docs/mathematics/NumberTheory/Moebius/endpoint-quadrature-quarter-bound.md"
+
+[[source]]
+module = "GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticChord"
+path = "GRWTSK/Analysis/ErrorBounds/ExponentialQuadraticChord.lean"
+blob = "2ca4c53933943d2e44d92591499e9e49767e1b60"
+sha256 = "2f598825a49c681346478994d44e038d9d85f03335f15b159395e3bdf1af5eaf"
+namespace = "GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticChord"
+imports = ["GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticIntegral"]
+definitions = ["node", "chordValue", "curvatureMass", "leftWeight", "rightWeight", "endpointReadout"]
+theorems = ["chord_minus_value", "curvatureMass_bounds", "chord_error", "endpoint_weights_sum", "endpoint_weights_nonnegative", "chordValue_eq_endpoints", "endpoint_sample_error", "endpoint_uniform_error", "exact_endpoint_with_curvature"]
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"
+path = "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean"
+blob = "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c"
+sha256 = "df24d528949514738785750783e5e2c6f0b75f368de8b45e2a63832bc4333d80"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"
+imports = ["GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticChord", "GRWTSK.NumberTheory.Moebius.PickupSignedQuadrature"]
+definitions = ["cellChord", "endpointSum", "observedEndpointSum", "endpointPickupSandwich", "endpointHybridUpper"]
+theorems = ["coefficient2_abs_le", "scaled_birth_gap", "birth_width_le", "curvature_scale_le", "cellChord_eq_endpoints", "cellChord_exact_defect", "cellChord_eq_source_endpoints", "cellChord_error", "cellChord_sieved_error", "rs_endpoint_error", "reciprocal_budget", "reciprocal_budget_le", "tail_cell_error", "endpointSum_error", "endpointSum_signed_defect", "observedEndpointSum_vs_chord", "observedEndpointSum_error", "quarter_subexponential", "endpoint_subexponential_iff", "riemannHypothesis_of_endpoint_good_scales", "endpoint_and_range_same_middle", "endpoint_range_unresolved_subset", "cross_le_endpointHybridUpper", "endpointHybridUpper_le_old", "riemannHypothesis_of_endpoint_finite_cover"]
+private_source_helpers = ["length_sum"]
+private_elaborated_names = "UNAVAILABLE until compilation"
+
+[[dependency]]
+module = "GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticIntegral"
+blob = "6753bff9f3fd14780682a650405fd8ed863fc99d"
+publication_commit = "038a3ba24a1fa9e10abb807ff6e787dcc546f663"
+status = "NOT_RUN; inherited pending closure from issue 1405"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupSignedQuadrature"
+blob = "a1547b237c028a8e3dfad356a9feff0bf708f021"
+publication_commit = "038a3ba24a1fa9e10abb807ff6e787dcc546f663"
+status = "NOT_RUN; inherited pending closure from issue 1405"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupCellQuadratic"
+blob = "ceb1ed8be15c255f70723b65ccac631373e58c6c"
+status = "Preserve original scope; issue 1404"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupRefinementCriterion"
+blob = "5ac1eacd22a7f1cd455b495b183b084f649d8128"
+status = "Preserve original scope; issue 1404"
+
+[verification]
+commands = [
+  "lake build --wfail GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticIntegral GRWTSK.NumberTheory.Moebius.PickupSignedQuadrature GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticChord GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/ErrorBounds/ExponentialQuadraticChord.lean",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean",
+  "lake env leanchecker --help"
+]
+command_status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+checker_invocation = "Resolve supported fresh replay command from actual pinned help; no invocation executed here"
+checker_scope = "Complete imported and generated proof closure, not only the public root"
+checker_implementation = "Leanchecker using Lean's kernel is not a separately implemented verifier"
+axiom_commands = "In an audit module outside math, #check/#print all 46 new identifiers and #print axioms the theorem/private/generated closure; audit both newly integrated prerequisite sources as well"
+proposed_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project research axioms", "unapproved native or unsafe logical trust", "missing imported closure", "changed arithmetic source", "weakened interval or positivity hypotheses", "inherited acceptance transferred to changed bytes"]
+
+[mathematical_controls]
+checks = [
+  "The chord parameter is exp(-u/2), not physical u; physical integration retains its measure.",
+  "The exact signed correction is C_N times nonnegative curvatureMass; C_N may have either sign.",
+  "Endpoint weights are nonnegative and sum to b-a, including the zero-width branch.",
+  "Source coefficient bound uses actual M_N and squarefree diagonal D_N, not a surrogate Gram norm.",
+  "scaled_birth_gap applies the original cell_drift_bound at m=N and the actual two square roots.",
+  "The local allowance is 1/(4N(N+1)); tail bound requires at most one chosen subcell per successive birth.",
+  "canonicalPartition covers every nonnegative real T, all births and the clipped last cell.",
+  "Two endpoint symbols do not recover an arbitrary quadratic; the entire missing curvature is paid.",
+  "RS nodes must equal the actual exponential endpoints; no claim about numerical quotient evaluation roundoff.",
+  "Uniform sample error is absolute and holds on all used endpoints, not merely finitely tested cells.",
+  "Sieve transport uses the existing exact moment identity; no prime-density premise or sign algorithm is invented.",
+  "Graph middle relations retain source guards; no same-zero matching or zeta zero-height claim follows.",
+  "Combine independent source upper bounds by minimum; do not subtract prime credit twice.",
+  "RH consumers still require the same all-positive-rate arithmetic budget and affine outer-time coverage."
+]
+
+[diagnostic]
+command = "python /mnt/data/rh-endpoint-work/preflight.py > /mnt/data/rh-endpoint-work/preflight-output.txt"
+exit_status = 0
+script_sha256 = "bfe313d38d0d2e57377e342733c5f5daf345e851b297689c3f42fdd94bc77b22"
+result_sha256 = "ee3ddc35d7b5472aed408b65295c3ab5d44f0e7baa5b5eccca2ad3a48337905f"
+stdout_sha256 = "c56d27791ec77d4eea0d4c3edeb611b3e3910f42f20e34636f3750f4139283c7"
+exact_mathematical_assertions = 5768
+static_checks = 4
+high_precision_checks = 2062
+precision_digits = 80
+interpretation = "Finite off-kernel evidence only; not Lean parsing, kernel acceptance, certified intervals or asymptotic evidence"
+durable_noeaaeue_receipt = "UNAVAILABLE; temporary external diagnostic only"
