@@ -1,0 +1,208 @@
+id = "rh-abel-neighborhood-v0.1"
+version = "0.1"
+contribution = "grwtsk"
+kind = "passive-source-bound-verification-specification"
+status = "NOT_RUN"
+math_repository = "grwtsk/math"
+math_commit = "900f2c5191ce6b00be6cf408594ed8e9e22e3eed"
+baseline_commit = "8bf742a803d88a9d2cac521a86332738b62454b5"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+root_promoted = false
+complete_dependency_closure_reviewed = false
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+receipt = "NONE"
+operational_owner = "grwtsk/noeaaeue"
+lexical_definition_count = 13
+lexical_theorem_count = 46
+
+[[sources]]
+module = "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout"
+path = "GRWTSK/Analysis/FiniteSums/ThreeCoordinateReadout.lean"
+blob = "c1bdf3ee53d3a8eb38dcd91ffb3460148e05d338"
+sha256 = "d432807513fd2d751f3f5496ca5d91c5a723604c07bce60b5ebfcc72e6e1af45"
+direct_imports = ["GRWTSK.Analysis.FiniteSums.DyadicVariance", "GRWTSK.Analysis.FiniteSums.WeightedCellRefinement"]
+declarations = [
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.signedValue",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.energy_split",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.signed_square_le_three_energy",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.invisible_directions",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.signedValue_invariant",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.projected_value",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.projected_energy",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.reconstruction",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.zero_readout_unbounded_energy",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.decoder_exists_iff",
+  "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout.two_features_insufficient",
+]
+
+[[sources]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelFiniteRows.lean"
+blob = "e9415026c8585f9fbf0a0526335607a7f02a7210"
+sha256 = "49b75f5304679e044146210f13186af33b2b895a7e87aa0bdbe479c8a41b3934"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelTripleOperator", "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout", "Mathlib.Algebra.Order.BigOperators.Ring.Finset"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.sourceAtom",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.responseRow",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedRow",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedResponse",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorResponse_finset_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorResponse_eq_row_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.responseRow_eq_zero_of_gt",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedRow_eq_zero_of_gt",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorPrefix_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.cofactorResponse_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.responseRow_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedResponse_eq_row_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.triple_bulk_eq_signedResponse",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedResponse_sub",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedResponse_sq_le_row_weighted_energy",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows.signedResponse_decoder_iff",
+]
+
+[[sources]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelInputApproximation.lean"
+blob = "6a186df12cfe2a04d66773f6b9b00293545b7b93"
+sha256 = "dbd6986a78c03db2849700cd84f0883451b80c599e5c30bd3915a5b1157d24ad"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates", "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.inputProfile",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.signed_error_eq_input_difference",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.joint_error_eq_input_difference",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.full_packet_input_l2_comparison",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.full_packet_input_prefix_comparison",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.input_error_zero_of_recoverable_features",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation.full_packet_feature_comparison",
+]
+
+[[sources]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelResponseCoordinates.lean"
+blob = "8ca55cc517caeb387f99c1bfe4ea29600a6f19fa"
+sha256 = "527a2924f81a0c5c8e0b76c792e846c78a033328544208d39437364ba0d1d7f1"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelTripleOperator", "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout", "GRWTSK.Analysis.FiniteSums.ThresholdEnergy"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.responseError",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.signedResponseError",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.signedResponseError_eq_triple_residual",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.responseEnergy_eq_readout_add_details",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.gaugeProfile",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.signedResponseError_gauge",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.responseEnergy_le_of_threshold_count",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.response_largeSet_empty_of_subunit",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.modelPacket",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.jointError",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.bulk_eq_model_add_jointError",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.full_packet_le_model_add_jointError",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.abs_full_packet_sub_model_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.abs_full_packet_sub_profile_le_of_signed",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates.riemannHypothesis_of_model_and_joint_budgets",
+]
+
+[[sources]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelRowAbel.lean"
+blob = "0bf8a48516af6a61eccc93fb02dc8cde73bfe226"
+sha256 = "f8578671fac0989e70fb2015a8cb099b6691ffd85920782a9864f6659497cdd9"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows", "GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.positive_sum_eq_range",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.rowDrop",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.rowVariation",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.rowVariation_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.signedResponse_eq_prefix_drop_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.abs_signedResponse_le_prefix_budget",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.abs_signedResponse_le_envelope_mul_variation",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.abs_signedResponse_le_dyadicMaximum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.signedResponse_sq_le_dyadicTree",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel.triple_bulk_eq_moebius_prefix_drops",
+]
+
+[[named_dependencies]]
+module = "GRWTSK.Analysis.FiniteSums.DyadicVariance"
+path = "GRWTSK/Analysis/FiniteSums/DyadicVariance.lean"
+blob = "cd790b7064fc2c162fa195fa27d0904986464ba1"
+read_at = "8bf742a803d88a9d2cac521a86332738b62454b5"
+
+[[named_dependencies]]
+module = "GRWTSK.Analysis.FiniteSums.WeightedCellRefinement"
+path = "GRWTSK/Analysis/FiniteSums/WeightedCellRefinement.lean"
+blob = "e50bf6eac918cfe73bcbcc6b73ad9c2fe8b19fcb"
+read_at = "8bf742a803d88a9d2cac521a86332738b62454b5"
+
+[[named_dependencies]]
+module = "GRWTSK.Analysis.FiniteSums.ThresholdEnergy"
+path = "GRWTSK/Analysis/FiniteSums/ThresholdEnergy.lean"
+blob = "3711600e8d6c0b1e429e302b4e9a7c35ac5d119f"
+read_at = "8bf742a803d88a9d2cac521a86332738b62454b5"
+
+[[named_dependencies]]
+module = "GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal"
+path = "GRWTSK/Analysis/FiniteSums/DyadicBlockSquareMaximal.lean"
+blob = "a77bad9aebc96e90e7dfd6e3fd5754ccdcb158b9"
+read_at = "8bf742a803d88a9d2cac521a86332738b62454b5"
+
+[[named_dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelTripleOperator"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelTripleOperator.lean"
+blob = "fe4b978e58a4cb1282a43595f1d609b16c4d810c"
+read_at = "8bf742a803d88a9d2cac521a86332738b62454b5"
+
+[execution_request]
+authorization = "Separate authorized executor only; this passive specification dispatches nothing."
+workspace = "Isolated pinned checkout; never reset concurrent work."
+commands = [
+  "test \"$(git rev-parse HEAD)\" = 900f2c5191ce6b00be6cf408594ed8e9e22e3eed",
+  "cat lean-toolchain",
+  "lake env lean --version",
+  "test \"$(git hash-object GRWTSK/Analysis/FiniteSums/ThreeCoordinateReadout.lean)\" = c1bdf3ee53d3a8eb38dcd91ffb3460148e05d338",
+  "lake build GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/FiniteSums/ThreeCoordinateReadout.lean",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelFiniteRows.lean)\" = e9415026c8585f9fbf0a0526335607a7f02a7210",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelFiniteRows.lean",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelInputApproximation.lean)\" = 6a186df12cfe2a04d66773f6b9b00293545b7b93",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelInputApproximation",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelInputApproximation.lean",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelResponseCoordinates.lean)\" = 8ca55cc517caeb387f99c1bfe4ea29600a6f19fa",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseCoordinates",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelResponseCoordinates.lean",
+  "test \"$(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelRowAbel.lean)\" = 0bf8a48516af6a61eccc93fb02dc8cde73bfe226",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelRowAbel.lean",
+  "lake env leanchecker --help",
+  "lake env lean --trust=0 -DwarningAsError=true /tmp/AbelNeighborhoodAudit.lean",
+]
+fresh_checker = "Resolve supported replay command from actual pinned help; replay leaves and complete imported proof closure."
+audit = "Print all 59 public exact types and axioms for all 46 theorem scripts; inspect definition proofs, generated/private/opaque dependencies, native and unsafe dependencies."
+candidate_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project axioms", "unchecked native proofs", "missing inherited proof closure", "weakened source hypotheses"]
+repair_policy = "New source bytes require a new pin and fresh acceptance; source review is not a compiler receipt."
+
+[mathematical_controls]
+checks = [
+  "Keep the actual prime band, tuple guards, variable ordinary prefixes, unsifted/one/two-prime head and factor 1/6.",
+  "Response energy equals observable square/3 plus both explicit detail squares; do not equate scalar smallness with full-norm smallness.",
+  "The observable feature condition is constancy on fibres for the ACTUAL signed row; no concrete compression or entropy map is assumed to satisfy it.",
+  "Threshold estimates retain the 3*V small-value term and the supplied upper/count bounds.",
+  "Rows are A(delta_a), independent of the input; reconstruction holds for arbitrary real sequences on 1..Y.",
+  "Only each unsigned cofactor row is nonnegative; the combined signed row is not assumed nonnegative.",
+  "The terminal Abel coefficient vanishes by the proved a>Y support theorem; never silently erase it.",
+  "Keep prefix-dependent envelopes, row variation, the full dyadic tree and its j+2 factor. No small tree or row estimate is supplied.",
+  "Head error and signed triple error combine BEFORE bounding; cancellation across channels remains available.",
+  "Every RH-facing positive exponent and dyadic scale remains quantified. Model and joint-error arithmetic budgets are unsupplied.",
+  "Input comparison uses b=A(g), with error exactly L(mu-g). g=mu is a tautology, not a new cancellation estimate.",
+  "No entropy decrement, Fourier uniformity, arithmetic expander, classical Weil pairing, zeta-spectrum or pickupCross comparison is imported.",
+  "Compile and audit the inherited RH consumer closure; finite diagnostics and source identities do not establish kernel acceptance.",
+]
+
+[provenance]
+classification = "Local finite identities and conditional source bridges reusing named repository and Mathlib declarations; no new external paper theorem port."
+upstream = "Existing authorship/licenses are preserved. The generic ThresholdEnergy lemma is not an admission of its motivating analytic literature."
+git_metadata = "Contents writes use configured connected-account metadata; no author override or history rewrite is claimed."

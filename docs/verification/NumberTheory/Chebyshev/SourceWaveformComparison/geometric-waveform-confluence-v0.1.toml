@@ -1,0 +1,189 @@
+schema = "grwtsk.passive-verification.v1"
+local_attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+source_commit = "c8707b59cb75a4f15ee7aa186381a8d87fd15fc0"
+source_tree = "b7ba0a9401dcacf931f1d24ea6cebf7cb58853db"
+base_commit = "2645371d54bf02c1b6ab50f6111563304a6742b9"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+operational_receipt = "NONE"
+remote_dispatch = false
+definitions = 25
+theorem_scripts = 59
+declared_identifiers = 84
+
+# This is a passive source-bound verification request, not an execution receipt.
+# Fully qualified names are namespace + "." + the exact declaration leaf below.
+required_checks = [
+  "Build all five modules and transitive imports with unchanged pins",
+  "Inspect exact exported types and audit all transitive axioms; reject sorryAx and research axioms",
+  "Resolve and record the approved independent kernel-checker command; none is invented",
+  "Check source normalization identity at both closed endpoints and all A>=1",
+  "Keep prime powers, strict inventory, square-root weights and Fourier sign",
+  "Check both mismatched-overlap residuals, nonorthogonal mixed terms and zero/empty cases",
+  "Verify actual summability before every infinite decomposition; no critical-line fallback",
+  "Preserve original sourceQuadraticValue, archimedean term and separate pickup source identity",
+  "Check source return, internal heights and finite union coverage in every RH consumer",
+  "Confirm old mathematical bytes, root imports and dependency versions are unchanged",
+  "Do not transfer historical acceptance to changed new proof closure",
+  "Repairs require new proof-byte pins and fresh affected verification"
+]
+
+[[module]]
+path = "GRWTSK/Analysis/InnerProductSpace/FiniteWaveformOverlap.lean"
+namespace = "GRWTSK.Analysis.InnerProductSpace.FiniteWaveformOverlap"
+blob = "8dad0d5a26d8146e2bfeae75b35dd56bffd999cf"
+sha256 = "abdd03d51d207bbedcf9cb245ae5ec43f949ea78e0bcecc67b0b08793d31e9e3"
+build_command = "lake build GRWTSK.Analysis.InnerProductSpace.FiniteWaveformOverlap"
+elaboration_command = "lake env lean GRWTSK/Analysis/InnerProductSpace/FiniteWaveformOverlap.lean"
+commands_status = "NOT_RUN"
+declarations = [
+  "sharedCore",
+  "geometryRemainder",
+  "arithmeticRemainder",
+  "sum_inter_add_sdiff",
+  "geometry_reconstruct",
+  "arithmetic_reconstruct",
+  "difference_eq_remainders",
+  "arithmeticRemainder_same_support",
+  "readout_difference",
+  "map_decomposition",
+  "norm_sq_difference",
+  "energyDefect",
+  "energy_difference_eq",
+  "arithmetic_energy_le_geometry",
+]
+
+[[module]]
+path = "GRWTSK/Analysis/InnerProductSpace/TranslatedWaveform.lean"
+namespace = "GRWTSK.Analysis.InnerProductSpace.TranslatedWaveform"
+blob = "0769682e7df8edf47ad9c5f6c5e5538af52c6e5c"
+sha256 = "5ce501914677f84f49da60eb0f2ac95f56fd563e567a97add3ef86d382e92462"
+build_command = "lake build GRWTSK.Analysis.InnerProductSpace.TranslatedWaveform"
+elaboration_command = "lake env lean GRWTSK/Analysis/InnerProductSpace/TranslatedWaveform.lean"
+commands_status = "NOT_RUN"
+declarations = [
+  "atom",
+  "synthesis",
+  "kernel",
+  "kernel_eq_pairing",
+  "atom_memLp",
+  "energy_eq_gram",
+  "synthesis_eq_weightedSource",
+  "synthesis_translate",
+  "translated_energy_eq",
+  "sourceFourier_atom",
+  "phase_atom_integrable",
+  "sourceFourier_synthesis",
+]
+
+[[module]]
+path = "GRWTSK/NumberTheory/LSeries/LogarithmicWaveform.lean"
+namespace = "GRWTSK.NumberTheory.LSeries.LogarithmicWaveform"
+blob = "600c9c8f003e9861c2bbf547df947a898ede976c"
+sha256 = "a91a2ce6932aa5916d34a0d501b659940a7486d6f9f4bed5d3b8ac532d21260b"
+build_command = "lake build GRWTSK.NumberTheory.LSeries.LogarithmicWaveform"
+elaboration_command = "lake env lean GRWTSK/NumberTheory/LSeries/LogarithmicWaveform.lean"
+commands_status = "NOT_RUN"
+declarations = [
+  "point",
+  "term",
+  "waveform",
+  "finiteWaveform",
+  "tail",
+  "absoluteTail",
+  "point_re",
+  "term_eq_log_phase",
+  "term_eq_damped_phase",
+  "norm_term_eq_real",
+  "summable_iff_real",
+  "waveform_eq_finite_add_tail",
+  "norm_tail_le",
+  "waveform_sub_geometry",
+  "waveform_geometry_comparison",
+  "sourceFourier_log_synthesis",
+  "zeta_specialization",
+  "moebius_specialization",
+  "vonMangoldt_specialization",
+  "character_vonMangoldt_specialization",
+]
+
+[[module]]
+path = "GRWTSK/NumberTheory/Chebyshev/SourceWaveformComparison.lean"
+namespace = "GRWTSK.NumberTheory.Chebyshev.SourceWaveformComparison"
+blob = "9058491e80c8e0bdf0f1dcf796e3a15d91772a70"
+sha256 = "591dd00b79076e81945570e46f1b3cd9cd965a8a43f9e46036dbb16a0f565269"
+build_command = "lake build GRWTSK.NumberTheory.Chebyshev.SourceWaveformComparison"
+elaboration_command = "lake env lean GRWTSK/NumberTheory/Chebyshev/SourceWaveformComparison.lean"
+commands_status = "NOT_RUN"
+declarations = [
+  "residual_eq_dilationTest",
+  "normalization_eq_sourceNormalization",
+  "normalizedSource_eq_normalizedTest",
+  "correlation_eq_sourceCorrelation",
+  "primeInventory",
+  "primeWeight",
+  "primeWaveform",
+  "readout",
+  "primeInventory_positive",
+  "readout_integrable",
+  "readout_eq_integral",
+  "primePowerContribution_eq_readout",
+  "primeWaveform_energy_eq_gram",
+  "primeWaveform_fourier",
+  "commonWaveform",
+  "geometricRemainderWaveform",
+  "arithmeticRemainderWaveform",
+  "waveform_reconstructions",
+  "geometricRemainderReadout",
+  "arithmeticRemainderReadout",
+  "geometric_remainder_readout",
+  "arithmetic_remainder_readout",
+  "prime_readout_sub_geometric",
+  "sourceQuadraticValue_eq_geometric_model",
+  "source_lower_bound_of_geometry",
+  "geometry_lower_bound_of_source",
+  "uniform_source_lower_bound_of_geometry",
+]
+
+[[module]]
+path = "GRWTSK/NumberTheory/Moebius/ResponseWaveformComparison.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.ResponseWaveformComparison"
+blob = "d8ee3c434c9017449d8489521d9138c77278eb1c"
+sha256 = "902c83506e6c4291d07d890a11ad5561790285815a3017dd2106da64b94916a5"
+build_command = "lake build GRWTSK.NumberTheory.Moebius.ResponseWaveformComparison"
+elaboration_command = "lake env lean GRWTSK/NumberTheory/Moebius/ResponseWaveformComparison.lean"
+commands_status = "NOT_RUN"
+declarations = [
+  "packetAtom",
+  "exactJointUpper",
+  "geometricJointUpper",
+  "geometricJointUpper_eq_exact",
+  "packetJointUpper_sub_geometric",
+  "geometricJointUpper_le_packetJointUpper",
+  "cross_le_geometricJointUpper",
+  "geometric_budget_of_packet_budget",
+  "cross_subexponentialOn_of_geometric_budget",
+  "geometric_good_scales_implies_RH",
+  "geometric_finite_cover_implies_RH",
+]
+
+[[dependency]]
+path = "GRWTSK/Analysis/InnerProductSpace/DilationGram.lean"
+blob = "e6f70fee1ac6edaf24dccb14c8f63341d7d4554e"
+
+[[dependency]]
+path = "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean"
+blob = "670849456af87f0b37ae123c6231714eb0f4d411"
+
+[[dependency]]
+path = "GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean"
+blob = "0a71e3e273a53dfbbd4bcb217c9421d8fe6d1076"
+
+[[dependency]]
+path = "GRWTSK/Analysis/TestFunctions/PolynomialBumpNormalization.lean"
+blob = "0dbfada61aa6ee9e6d2e3c37ad0e26a15d67b207"
