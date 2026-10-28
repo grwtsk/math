@@ -485,4 +485,387 @@ theorem finitePrerequisiteClosure_minimizes [DecidableEq α]
   intro a ha
   exact closure_least h (finitePrerequisiteClosure_sound inventory required depends ha)
 
+/-- A row and table store Boolean cells, not deferred cell functions. Keys give
+the explicit inventory index; the shape invariant below fixes both key orders. -/
+abbrev BoolRow (α : Type u) := List (α × Bool)
+abbrev BoolTable (α : Type u) := List (α × BoolRow α)
+
+def buildBoolRow (columns : List α) (cell : α → Bool) : BoolRow α :=
+  match columns with
+  | [] => []
+  | column :: rest => (column, cell column) :: buildBoolRow rest cell
+
+def buildBoolRows (rows columns : List α) (cell : α → α → Bool) : BoolTable α :=
+  match rows with
+  | [] => []
+  | row :: rest => (row, buildBoolRow columns (cell row)) :: buildBoolRows rest columns cell
+
+def boolRowLookup [DecidableEq α] (row : BoolRow α) (target : α) : Bool :=
+  match row with
+  | [] => false
+  | (key, value) :: rest => if target = key then value else boolRowLookup rest target
+
+def boolTableLookup [DecidableEq α] (table : BoolTable α) (a b : α) : Bool :=
+  match table with
+  | [] => false
+  | (key, row) :: rest => if a = key then boolRowLookup row b else boolTableLookup rest a b
+
+theorem boolRowLookup_build [DecidableEq α] (columns : List α) (cell : α → Bool)
+    {target : α} (hm : target ∈ columns) :
+    boolRowLookup (buildBoolRow columns cell) target = cell target := by
+  induction columns with
+  | nil => cases hm
+  | cons column rest ih =>
+    by_cases he : target = column
+    · cases he
+      change (if target = target then cell target else _) = cell target
+      rw [if_pos rfl]
+    · cases hm with
+      | head => exact False.elim (he rfl)
+      | tail _ hm =>
+        change (if target = column then cell column else
+          boolRowLookup (buildBoolRow rest cell) target) = cell target
+        rw [if_neg he]
+        exact ih hm
+
+theorem boolTableLookup_build [DecidableEq α] (rows columns : List α)
+    (cell : α → α → Bool) {a b : α} (ha : a ∈ rows) (hb : b ∈ columns) :
+    boolTableLookup (buildBoolRows rows columns cell) a b = cell a b := by
+  induction rows with
+  | nil => cases ha
+  | cons row rest ih =>
+    by_cases he : a = row
+    · cases he
+      change (if a = a then boolRowLookup (buildBoolRow columns (cell a)) b else _) = cell a b
+      rw [if_pos rfl]
+      exact boolRowLookup_build columns (cell a) hb
+    · cases ha with
+      | head => exact False.elim (he rfl)
+      | tail _ ha =>
+        change (if a = row then boolRowLookup (buildBoolRow columns (cell row)) b else
+          boolTableLookup (buildBoolRows rest columns cell) a b) = cell a b
+        rw [if_neg he]
+        exact ih ha
+
+def boolRowKeys (row : BoolRow α) : List α :=
+  match row with
+  | [] => []
+  | (key, _) :: rest => key :: boolRowKeys rest
+
+def boolTableKeys (table : BoolTable α) : List α :=
+  match table with
+  | [] => []
+  | (key, _) :: rest => key :: boolTableKeys rest
+
+/-- Every row and column key occurs in precisely the inventory order. A
+`FiniteInventory` makes that order complete and duplicate free. Missing-key
+lookup defaults are therefore unreachable for a well-shaped inventory table. -/
+structure BoolTableShape (vertices : List α) (table : BoolTable α) : Prop where
+  rows_exact : boolTableKeys table = vertices
+  columns_exact : ∀ key row, (key, row) ∈ table → boolRowKeys row = vertices
+
+theorem buildBoolRow_keys (columns : List α) (cell : α → Bool) :
+    boolRowKeys (buildBoolRow columns cell) = columns := by
+  induction columns with
+  | nil => rfl
+  | cons column rest ih => exact congrArg (List.cons column) ih
+
+theorem buildBoolRows_keys (rows columns : List α) (cell : α → α → Bool) :
+    boolTableKeys (buildBoolRows rows columns cell) = rows := by
+  induction rows with
+  | nil => rfl
+  | cons row rest ih => exact congrArg (List.cons row) ih
+
+theorem buildBoolRows_columns (rows columns : List α) (cell : α → α → Bool) :
+    ∀ key row, (key, row) ∈ buildBoolRows rows columns cell → boolRowKeys row = columns := by
+  induction rows with
+  | nil => intro key row hm; cases hm
+  | cons current rest ih =>
+    intro key row hm
+    cases hm with
+    | head => exact buildBoolRow_keys columns (cell current)
+    | tail _ hm => exact ih key row hm
+
+theorem buildBoolRows_shape (vertices : List α) (cell : α → α → Bool) :
+    BoolTableShape vertices (buildBoolRows vertices vertices cell) where
+  rows_exact := buildBoolRows_keys vertices vertices cell
+  columns_exact := buildBoolRows_columns vertices vertices cell
+
+def boolTableCellCount (table : BoolTable α) : Nat :=
+  match table with
+  | [] => 0
+  | (_, row) :: rest => row.length + boolTableCellCount rest
+
+theorem buildBoolRow_length (columns : List α) (cell : α → Bool) :
+    (buildBoolRow columns cell).length = columns.length := by
+  induction columns with
+  | nil => rfl
+  | cons column rest ih => exact congrArg Nat.succ ih
+
+theorem buildBoolRows_length (rows columns : List α) (cell : α → α → Bool) :
+    (buildBoolRows rows columns cell).length = rows.length := by
+  induction rows with
+  | nil => rfl
+  | cons row rest ih => exact congrArg Nat.succ ih
+
+theorem buildBoolRows_cellCount (rows columns : List α) (cell : α → α → Bool) :
+    boolTableCellCount (buildBoolRows rows columns cell) = rows.length * columns.length := by
+  induction rows with
+  | nil => exact (Nat.zero_mul _).symm
+  | cons row rest ih =>
+    change (buildBoolRow columns (cell row)).length +
+      boolTableCellCount (buildBoolRows rest columns cell) = (rest.length + 1) * columns.length
+    rw [buildBoolRow_length, ih, Nat.succ_mul]
+    exact Nat.add_comm _ _
+
+/-- One shared-table pivot builds all cells of the next snapshot. Each lookup
+reads `previous`; no updated row is fed back into the same pivot. -/
+def boolTablePivot [DecidableEq α] (vertices : List α)
+    (previous : BoolTable α) (pivot : α) : BoolTable α :=
+  buildBoolRows vertices vertices (fun a b => boolTableLookup previous a b ||
+    (boolTableLookup previous a pivot && boolTableLookup previous pivot b))
+
+def BoolTableRefines [DecidableEq α] (table : BoolTable α) (relation : α → α → Prop) : Prop :=
+  ∀ a b, boolTableLookup table a b = true ↔ relation a b
+
+theorem boolPivot_truth (x y z : Bool) :
+    (x || (y && z)) = true ↔ x = true ∨ (y = true ∧ z = true) := by
+  cases x <;> cases y <;> cases z <;> decide
+
+theorem boolTablePivot_refines [DecidableEq α] (inventory : FiniteInventory α)
+    (previous : BoolTable α) (relation : α → α → Prop)
+    (h : BoolTableRefines previous relation) (pivot : α) :
+    BoolTableRefines (boolTablePivot inventory.vertices previous pivot) (pivotStep relation pivot) := by
+  intro a b
+  unfold boolTablePivot
+  rw [boolTableLookup_build inventory.vertices inventory.vertices _
+    (inventory.complete a) (inventory.complete b)]
+  constructor
+  · intro ht
+    cases (boolPivot_truth _ _ _).mp ht with
+    | inl ht => exact Or.inl ((h a b).mp ht)
+    | inr ht => exact Or.inr ⟨(h a pivot).mp ht.1, (h pivot b).mp ht.2⟩
+  · intro ht
+    apply (boolPivot_truth _ _ _).mpr
+    cases ht with
+    | inl ht => exact Or.inl ((h a b).mpr ht)
+    | inr ht => exact Or.inr ⟨(h a pivot).mpr ht.1, (h pivot b).mpr ht.2⟩
+
+theorem boolTablePivot_shape [DecidableEq α] (vertices : List α)
+    (previous : BoolTable α) (pivot : α) :
+    BoolTableShape vertices (boolTablePivot vertices previous pivot) :=
+  buildBoolRows_shape vertices _
+
+theorem boolTablePivot_cellCount [DecidableEq α] (vertices : List α)
+    (previous : BoolTable α) (pivot : α) :
+    boolTableCellCount (boolTablePivot vertices previous pivot) = vertices.length * vertices.length :=
+  buildBoolRows_cellCount vertices vertices _
+
+/-- The result stores one materialized table and an abstract cell-write count.
+The counter counts each constructed Boolean cell once, excluding key/list
+metadata, lookup work, counters, stack, allocation/GC, CPU time and wall time. -/
+structure SharedTableRun (α : Type u) where
+  table : BoolTable α
+  cellUpdates : Nat
+
+def sharedTableRun [DecidableEq α] (vertices : List α) (initial : BoolTable α)
+    (pivots : List α) : SharedTableRun α :=
+  match pivots with
+  | [] => ⟨initial, 0⟩
+  | pivot :: rest =>
+    let previous := sharedTableRun vertices initial rest
+    let next := boolTablePivot vertices previous.table pivot
+    ⟨next, previous.cellUpdates + boolTableCellCount next⟩
+
+theorem sharedTableRun_refines [DecidableEq α] (inventory : FiniteInventory α)
+    (initial : BoolTable α) (relation : α → α → Prop)
+    (h : BoolTableRefines initial relation) (pivots : List α) :
+    BoolTableRefines (sharedTableRun inventory.vertices initial pivots).table
+      (pivotClosure relation pivots) := by
+  induction pivots with
+  | nil => exact h
+  | cons pivot rest ih =>
+    exact boolTablePivot_refines inventory
+      (sharedTableRun inventory.vertices initial rest).table (pivotClosure relation rest) ih pivot
+
+theorem sharedTableRun_shape [DecidableEq α] (vertices : List α) (initial : BoolTable α)
+    (h : BoolTableShape vertices initial) (pivots : List α) :
+    BoolTableShape vertices (sharedTableRun vertices initial pivots).table := by
+  cases pivots with
+  | nil => exact h
+  | cons pivot rest => exact boolTablePivot_shape vertices _ pivot
+
+theorem sharedTableRun_cellCount [DecidableEq α] (vertices : List α) (initial : BoolTable α)
+    (h : boolTableCellCount initial = vertices.length * vertices.length) (pivots : List α) :
+    boolTableCellCount (sharedTableRun vertices initial pivots).table =
+      vertices.length * vertices.length := by
+  cases pivots with
+  | nil => exact h
+  | cons pivot rest => exact boolTablePivot_cellCount vertices _ pivot
+
+/-- Exact abstract update count: each of the supplied pivots constructs n²
+Boolean cells. Linear keyed lookups do not acquire a constant-time cost claim. -/
+theorem sharedTableRun_updates [DecidableEq α] (vertices : List α) (initial : BoolTable α)
+    (pivots : List α) :
+    (sharedTableRun vertices initial pivots).cellUpdates =
+      pivots.length * (vertices.length * vertices.length) := by
+  induction pivots with
+  | nil => exact (Nat.zero_mul _).symm
+  | cons pivot rest ih =>
+    change (sharedTableRun vertices initial rest).cellUpdates +
+      boolTableCellCount (boolTablePivot vertices
+        (sharedTableRun vertices initial rest).table pivot) =
+      (rest.length + 1) * (vertices.length * vertices.length)
+    rw [ih, boolTablePivot_cellCount, Nat.succ_mul]
+
+/-- Two explicit adjacent snapshots contain exactly 2n² Boolean cells. This is
+a structural cell-storage statement, not a maximum live-heap theorem. -/
+theorem boolTablePivot_snapshotCells [DecidableEq α] (vertices : List α)
+    (previous : BoolTable α) (h : boolTableCellCount previous = vertices.length * vertices.length)
+    (pivot : α) :
+    boolTableCellCount previous + boolTableCellCount (boolTablePivot vertices previous pivot) =
+      2 * (vertices.length * vertices.length) := by
+  rw [h, boolTablePivot_cellCount, Nat.two_mul]
+
+def initialBoolTable [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] : BoolTable α :=
+  buildBoolRows inventory.vertices inventory.vertices (fun a b => decide (baseReach depends a b))
+
+theorem initialBoolTable_refines [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] :
+    BoolTableRefines (initialBoolTable inventory depends) (baseReach depends) := by
+  intro a b
+  unfold initialBoolTable
+  rw [boolTableLookup_build inventory.vertices inventory.vertices _
+    (inventory.complete a) (inventory.complete b)]
+  exact ⟨of_decide_eq_true, decide_eq_true⟩
+
+def materializedClosureRun [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] : SharedTableRun α :=
+  sharedTableRun inventory.vertices (initialBoolTable inventory depends) inventory.vertices
+
+theorem materializedClosureRun_refines [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] :
+    BoolTableRefines (materializedClosureRun inventory depends).table
+      (pivotClosure (baseReach depends) inventory.vertices) :=
+  sharedTableRun_refines inventory (initialBoolTable inventory depends) (baseReach depends)
+    (initialBoolTable_refines inventory depends) inventory.vertices
+
+theorem materializedClosureRun_shape [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] :
+    BoolTableShape inventory.vertices (materializedClosureRun inventory depends).table :=
+  sharedTableRun_shape inventory.vertices (initialBoolTable inventory depends)
+    (buildBoolRows_shape inventory.vertices _) inventory.vertices
+
+theorem materializedClosureRun_cellCount [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] :
+    boolTableCellCount (materializedClosureRun inventory depends).table =
+      inventory.vertices.length * inventory.vertices.length :=
+  sharedTableRun_cellCount inventory.vertices (initialBoolTable inventory depends)
+    (buildBoolRows_cellCount inventory.vertices inventory.vertices _) inventory.vertices
+
+/-- Initial construction plus all n pivot passes constructs exactly (n+1)n²
+Boolean cells. This is not a bound on comparisons or native instructions. -/
+theorem materializedClosureRun_totalCellUpdates [DecidableEq α] (inventory : FiniteInventory α)
+    (depends : α → α → Prop) [DecidableRel depends] :
+    boolTableCellCount (initialBoolTable inventory depends) +
+      (materializedClosureRun inventory depends).cellUpdates =
+      (inventory.vertices.length + 1) * (inventory.vertices.length * inventory.vertices.length) := by
+  change boolTableCellCount (initialBoolTable inventory depends) +
+    (sharedTableRun inventory.vertices (initialBoolTable inventory depends) inventory.vertices).cellUpdates = _
+  rw [sharedTableRun_updates]
+  unfold initialBoolTable
+  rw [buildBoolRows_cellCount, Nat.succ_mul]
+  exact Nat.add_comm _ _
+
+def boolTableRelation [DecidableEq α] (table : BoolTable α) (a b : α) : Prop :=
+  boolTableLookup table a b = true
+
+instance boolTableRelationDecidable [DecidableEq α] (table : BoolTable α) :
+    DecidableRel (boolTableRelation table) := by
+  intro a b
+  exact inferInstanceAs (Decidable (boolTableLookup table a b = true))
+
+theorem rootScan_congr (required : α → Prop) (left right : α → α → Prop)
+    (roots : List α) (h : ∀ a b, left a b ↔ right a b) :
+    ∀ target, rootScan required left roots target ↔ rootScan required right roots target := by
+  induction roots with
+  | nil => intro target; exact ⟨False.elim, False.elim⟩
+  | cons root rest ih =>
+    intro target
+    constructor
+    · intro ht
+      cases ht with
+      | inl ht => exact Or.inl ⟨ht.1, (h root target).mp ht.2⟩
+      | inr ht => exact Or.inr ((ih target).mp ht)
+    · intro ht
+      cases ht with
+      | inl ht => exact Or.inl ⟨ht.1, (h root target).mpr ht.2⟩
+      | inr ht => exact Or.inr ((ih target).mpr ht)
+
+def materializedPrerequisiteClosure [DecidableEq α] (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) [DecidableRel depends] : α → Prop :=
+  rootScan required (boolTableRelation (materializedClosureRun inventory depends).table) inventory.vertices
+
+instance materializedPrerequisiteClosureDecidable [DecidableEq α]
+    (inventory : FiniteInventory α) (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] :
+    DecidablePred (materializedPrerequisiteClosure inventory required depends) :=
+  rootScanDecidable required (boolTableRelation (materializedClosureRun inventory depends).table)
+    inventory.vertices
+
+theorem materializedPrerequisiteClosure_iff [DecidableEq α] (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) [DecidableRel depends] (a : α) :
+    materializedPrerequisiteClosure inventory required depends a ↔ Closure required depends a :=
+  Iff.trans (rootScan_congr required _ _ inventory.vertices
+    (materializedClosureRun_refines inventory depends) a)
+    (finitePrerequisiteClosure_iff inventory required depends a)
+
+def decideMaterializedPrerequisiteClosure [DecidableEq α] (inventory : FiniteInventory α)
+    (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] (a : α) : Bool :=
+  decide (materializedPrerequisiteClosure inventory required depends a)
+
+theorem decideMaterializedPrerequisiteClosure_eq_true_iff [DecidableEq α]
+    (inventory : FiniteInventory α) (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] (a : α) :
+    decideMaterializedPrerequisiteClosure inventory required depends a = true ↔
+      Closure required depends a := by
+  constructor
+  · intro h
+    exact (materializedPrerequisiteClosure_iff inventory required depends a).mp (of_decide_eq_true h)
+  · intro h
+    exact decide_eq_true ((materializedPrerequisiteClosure_iff inventory required depends a).mpr h)
+
+theorem bool_eq_of_true_iff (x y : Bool) (h : x = true ↔ y = true) : x = y := by
+  cases x with
+  | false =>
+    cases y with
+    | false => rfl
+    | true => have hf := h.mpr rfl; cases hf
+  | true =>
+    cases y with
+    | false => have hf := h.mp rfl; cases hf
+    | true => rfl
+
+theorem decideMaterializedPrerequisiteClosure_agrees [DecidableEq α]
+    (inventory : FiniteInventory α) (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] (a : α) :
+    decideMaterializedPrerequisiteClosure inventory required depends a =
+      decideFinitePrerequisiteClosure inventory required depends a :=
+  bool_eq_of_true_iff _ _ (Iff.trans
+    (decideMaterializedPrerequisiteClosure_eq_true_iff inventory required depends a)
+    (decideFinitePrerequisiteClosure_eq_true_iff inventory required depends a).symm)
+
+theorem materializedPrerequisiteClosure_minimizes [DecidableEq α]
+    (inventory : FiniteInventory α) (weight : α → Nat)
+    (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends]
+    {retained : α → Prop} [DecidablePred retained] (h : Feasible required depends retained) :
+    finiteWeightedCost inventory weight (materializedPrerequisiteClosure inventory required depends) ≤
+      finiteWeightedCost inventory weight retained := by
+  apply finiteWeightedCost_mono
+  intro a ha
+  exact closure_least h ((materializedPrerequisiteClosure_iff inventory required depends a).mp ha)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
