@@ -868,4 +868,174 @@ theorem materializedPrerequisiteClosure_minimizes [DecidableEq α]
   intro a ha
   exact closure_least h ((materializedPrerequisiteClosure_iff inventory required depends a).mp ha)
 
+/-- The supported typed prerequisite-CNF language. `tautology` is a constant
+True constraint; mapping a raw clause to it requires a separate decoder proof.
+This type contains neither negative units nor unsupported general CNF clauses. -/
+inductive PrerequisiteClause (α : Type u) where
+  | unit (node : α)
+  | prerequisite (consumer dependency : α)
+  | tautology
+  deriving DecidableEq
+
+/-- Genuine disjunctive clause semantics. In particular, a prerequisite clause
+is the negative consumer literal OR the positive dependency literal. -/
+def prerequisiteClauseHolds (retained : α → Prop) (clause : PrerequisiteClause α) : Prop :=
+  match clause with
+  | .unit node => retained node
+  | .prerequisite consumer dependency => ¬ retained consumer ∨ retained dependency
+  | .tautology => True
+
+instance prerequisiteClauseHoldsDecidable (retained : α → Prop) [DecidablePred retained]
+    (clause : PrerequisiteClause α) : Decidable (prerequisiteClauseHolds retained clause) :=
+  match clause with
+  | .unit node => inferInstanceAs (Decidable (retained node))
+  | .prerequisite consumer dependency =>
+      inferInstanceAs (Decidable (¬ retained consumer ∨ retained dependency))
+  | .tautology => isTrue True.intro
+
+def prerequisiteCNFSatisfied (retained : α → Prop) (clauses : List (PrerequisiteClause α)) : Prop :=
+  match clauses with
+  | [] => True
+  | clause :: rest => prerequisiteClauseHolds retained clause ∧ prerequisiteCNFSatisfied retained rest
+
+instance prerequisiteCNFSatisfiedDecidable (retained : α → Prop) [DecidablePred retained]
+    (clauses : List (PrerequisiteClause α)) : Decidable (prerequisiteCNFSatisfied retained clauses) :=
+  match clauses with
+  | [] => isTrue True.intro
+  | clause :: rest =>
+    letI : Decidable (prerequisiteCNFSatisfied retained rest) :=
+      prerequisiteCNFSatisfiedDecidable retained rest
+    inferInstanceAs (Decidable (prerequisiteClauseHolds retained clause ∧
+      prerequisiteCNFSatisfied retained rest))
+
+/-- Decoded roots and edges refer to typed constructors, not raw integers or
+JSON. Duplicate constraints are retained in the list and impose the same facts. -/
+def prerequisiteCNFRequired (clauses : List (PrerequisiteClause α)) (a : α) : Prop :=
+  PrerequisiteClause.unit a ∈ clauses
+
+def prerequisiteCNFDepends (clauses : List (PrerequisiteClause α)) (a b : α) : Prop :=
+  PrerequisiteClause.prerequisite a b ∈ clauses
+
+instance prerequisiteCNFRequiredDecidable [DecidableEq α] (clauses : List (PrerequisiteClause α)) :
+    DecidablePred (prerequisiteCNFRequired clauses) := by
+  intro a
+  exact inferInstanceAs (Decidable (PrerequisiteClause.unit a ∈ clauses))
+
+instance prerequisiteCNFDependsDecidable [DecidableEq α] (clauses : List (PrerequisiteClause α)) :
+    DecidableRel (prerequisiteCNFDepends clauses) := by
+  intro a b
+  exact inferInstanceAs (Decidable (PrerequisiteClause.prerequisite a b ∈ clauses))
+
+/-- Literal tautologies require only the supplied membership decision procedure.
+This does not certify that an external parser found a complementary pair. -/
+theorem prerequisiteLiteral_tautology (retained : α → Prop) [DecidablePred retained] (node : α) :
+    ¬ retained node ∨ retained node := by
+  by_cases h : retained node
+  · exact Or.inr h
+  · exact Or.inl h
+
+theorem prerequisiteCNFSatisfied_iff_all (retained : α → Prop)
+    (clauses : List (PrerequisiteClause α)) :
+    prerequisiteCNFSatisfied retained clauses ↔
+      ∀ clause, clause ∈ clauses → prerequisiteClauseHolds retained clause := by
+  induction clauses with
+  | nil =>
+    constructor
+    · intro _ clause hm; cases hm
+    · intro _; exact True.intro
+  | cons first rest ih =>
+    constructor
+    · intro h clause hm
+      cases hm with
+      | head => exact h.1
+      | tail _ hm => exact (ih.mp h.2) clause hm
+    · intro h
+      constructor
+      · exact h first (List.Mem.head rest)
+      · apply ih.mpr
+        intro clause hm
+        exact h clause (List.Mem.tail first hm)
+
+theorem prerequisiteCNFSatisfied_feasible (retained : α → Prop)
+    (clauses : List (PrerequisiteClause α)) (h : prerequisiteCNFSatisfied retained clauses) :
+    Feasible (prerequisiteCNFRequired clauses) (prerequisiteCNFDepends clauses) retained where
+  roots := by
+    intro a ha
+    exact (prerequisiteCNFSatisfied_iff_all retained clauses).mp h (.unit a) ha
+  closed := by
+    intro a b ha hab
+    have hc := (prerequisiteCNFSatisfied_iff_all retained clauses).mp h (.prerequisite a b) hab
+    cases hc with
+    | inl hn => exact False.elim (hn ha)
+    | inr hb => exact hb
+
+theorem prerequisiteCNFFeasible_satisfied (retained : α → Prop) [DecidablePred retained]
+    (clauses : List (PrerequisiteClause α))
+    (h : Feasible (prerequisiteCNFRequired clauses) (prerequisiteCNFDepends clauses) retained) :
+    prerequisiteCNFSatisfied retained clauses := by
+  apply (prerequisiteCNFSatisfied_iff_all retained clauses).mpr
+  intro clause hm
+  cases clause with
+  | unit node => exact h.roots hm
+  | prerequisite consumer dependency =>
+    by_cases hc : retained consumer
+    · exact Or.inr (h.closed hc hm)
+    · exact Or.inl hc
+  | tautology => exact True.intro
+
+/-- The exact typed-CNF semantic bridge. Decidable assignment membership is
+explicit for the constructive implication-to-disjunction direction. -/
+theorem prerequisiteCNFSatisfied_iff_feasible (retained : α → Prop) [DecidablePred retained]
+    (clauses : List (PrerequisiteClause α)) :
+    prerequisiteCNFSatisfied retained clauses ↔
+      Feasible (prerequisiteCNFRequired clauses) (prerequisiteCNFDepends clauses) retained :=
+  ⟨prerequisiteCNFSatisfied_feasible retained clauses,
+    prerequisiteCNFFeasible_satisfied retained clauses⟩
+
+/-- The shared-table model for the supported typed profile. Inventory coverage,
+uniqueness and equality decisions retain their existing explicit scopes. -/
+def prerequisiteCNFModel [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (PrerequisiteClause α)) : α → Prop :=
+  materializedPrerequisiteClosure inventory (prerequisiteCNFRequired clauses) (prerequisiteCNFDepends clauses)
+
+instance prerequisiteCNFModelDecidable [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (PrerequisiteClause α)) : DecidablePred (prerequisiteCNFModel inventory clauses) :=
+  materializedPrerequisiteClosureDecidable inventory
+    (prerequisiteCNFRequired clauses) (prerequisiteCNFDepends clauses)
+
+theorem prerequisiteCNFModel_feasible [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (PrerequisiteClause α)) :
+    Feasible (prerequisiteCNFRequired clauses) (prerequisiteCNFDepends clauses)
+      (prerequisiteCNFModel inventory clauses) where
+  roots := by
+    intro a ha
+    exact (materializedPrerequisiteClosure_iff inventory _ _ a).mpr (Closure.root ha)
+  closed := by
+    intro a b ha hab
+    exact (materializedPrerequisiteClosure_iff inventory _ _ b).mpr
+      (Closure.dependency ((materializedPrerequisiteClosure_iff inventory _ _ a).mp ha) hab)
+
+theorem prerequisiteCNFModel_satisfies [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (PrerequisiteClause α)) :
+    prerequisiteCNFSatisfied (prerequisiteCNFModel inventory clauses) clauses :=
+  prerequisiteCNFFeasible_satisfied _ clauses (prerequisiteCNFModel_feasible inventory clauses)
+
+theorem prerequisiteCNFModel_least [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (PrerequisiteClause α)) {retained : α → Prop}
+    (h : prerequisiteCNFSatisfied retained clauses) :
+    Included (prerequisiteCNFModel inventory clauses) retained := by
+  intro a ha
+  exact closure_least (prerequisiteCNFSatisfied_feasible retained clauses h)
+    ((materializedPrerequisiteClosure_iff inventory _ _ a).mp ha)
+
+/-- The typed semantic bridge yields a concrete weighted minimum over satisfying
+assignments. It supplies no raw decoder, general-CNF, or runtime refinement. -/
+theorem prerequisiteCNFModel_minimizes [DecidableEq α] (inventory : FiniteInventory α)
+    (weight : α → Nat) (clauses : List (PrerequisiteClause α))
+    {retained : α → Prop} [DecidablePred retained]
+    (h : prerequisiteCNFSatisfied retained clauses) :
+    finiteWeightedCost inventory weight (prerequisiteCNFModel inventory clauses) ≤
+      finiteWeightedCost inventory weight retained :=
+  finiteWeightedCost_mono inventory weight (prerequisiteCNFModel_least inventory clauses h)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
