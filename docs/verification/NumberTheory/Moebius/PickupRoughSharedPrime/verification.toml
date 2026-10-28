@@ -1,0 +1,183 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-rough-shared-prime-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "8da6790cf5e26fbee7b9063746606303fcb14923"
+source_tree = "43352a4448e82c2b24388a227f980926904b5860"
+parent_commit = "8c10f081961e33952335cb722760933a2c9cf70b"
+initial_inspection_commit = "17d66fc9c0a3e2b7656787925cd61d33e58e6084"
+verification_issue = 1421
+prerequisite_issues = [1420, 1418, 1415, 1414, 1413, 1412, 1411, 1410, 1409, 1408, 1407, 1406, 1405]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+existing_mathematical_source_changed = false
+full_vector_coercivity_used = false
+source_mass_witness_supplied = false
+full_distinct_core_bound_supplied = false
+rough_prefix_power_saving_supplied = false
+all_positive_rate_witness_supplied = false
+canonical_RH_proved_unconditionally = false
+secondary_source_analytic_obstruction_promoted = false
+prior_Abel_return_promoted_to_Lean = false
+new_paper_results_imported = false
+added_modules = 3
+definitions = 22
+theorem_scripts = 51
+instances = 1
+textual_identifiers = 74
+source_lines = 974
+inventory_scope = "Source-text census, not an elaborated declaration inventory; native API/tactic repairs may remain"
+mathematical_note = "docs/mathematics/NumberTheory/Moebius/rough-shared-prime-sector.md"
+note_sha256 = "10f13415d5695e4a3b6fc0333f8dd89f38ef94d827390a0574a308e3098addf4"
+git_identity = "Connector-configured; create_commit exposes no author override"
+
+[mathematical_scope]
+source = "T_j=j*log2, N_j=2^j, L_j=floor(sqrt N_j), P_j={primes<=j}; original closed cutoff and inner horizon frozen"
+extraction = "Fresh primes j<p<=N, q<=N/p, L<m<=X, m<p*q, p*q<=Y; divisor count w(p*q); corrected quotient a(q)-1_(p|q)*a(q)"
+prefix_identities = "X>=Y: B=(V(Y)-S(Y)^2)/2; X<Y: B=-S(X)*S(Y)+(S(X)^2+V(X))/2"
+prefix_diagonal = "0<=V(t)<=N/(L+1)<=sqrt N; no growth estimate for S is claimed"
+shared_kernel_bound = "If |H(m,n)|<=K/(sqrt m sqrt n), then shared p>Z,p|m sector <=4*K*N/Z in absolute value, uniformly in prefixes"
+long_shared_prefix = "At Z=floor(sqrt N), absolute bound <=8*sqrt N"
+ordered_shared_actual_Gram = "|R_shared,Z|<=32*T*A(P)^2*N/Z; K=4*T*A(P)^2 is independently supplied for actual Gram"
+long_shared_actual_rate = "<=1024*exp(64/log2)*2^(5*j/8)"
+extraction_threshold = "Z_j=2^ceil(j/4); separate from the unchanged block schedule P_j"
+threshold_shared_actual_rate = "<=512*exp(64/log2)*2^(7*j/8) for all shared extracted primes p>Z_j, retaining repeated-prime corrections"
+source_comparison = "R<=1024*exp(64/log2)*2^(7*j/8)-2*W_j; W_j is the actual combined short-prime plus q=1 coprime plus q>=2 coprime sum"
+remaining_signed_estimate = "UNPROVED: exists C0>=0 independent of j such that W_j>=-C0*2^(7*j/8)"
+remaining_prefix_alternative = "UNPROVED: combined short/unit/nonunit-coprime inverse-root prefixes <=B0*N^(3/4) in absolute value, uniformly in j,X,Y"
+long_prime_restriction = "Only p>sqrt N implies q<p and permits c(p,q)=a(q), w(p*q)=1+w(q)"
+unit_quotient = "q=1 retained with w(p)=1; its inverse-root row is 1_(p<=Y)*S(min(X,p-1))/sqrt p"
+not_used = ["old block diagonal decrement", "already-paid internal-stage overlap", "4^k discrepancy schedule for P_j", "all-vector mass", "energy-ratio mass witness", "negative channel alone as full energy estimate"]
+written_only_preserved = ["prior normalized block variation/two-variable Abel return", "earlier Euler-product/Laplace secondary-source obstruction"]
+
+[audit]
+full_transitive_closure_required = true
+include_private_generated_opaque = true
+names_do_not_replace_closure_audit = true
+provisional_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native/unsafe logical trust", "source or closed-cutoff substitution", "erased repeated-prime correction", "denominator changed from w(p*q)", "lost ordered orientation", "sector bound promoted to full-source bound", "full-vector coercivity replacing source-only estimate"]
+external_driver_sha256 = "941b962c7eb3ad145512fee8fc2ea91c8626998f8c6ebe29f1dc0537f91a6c8f"
+external_source_inventory_sha256 = "21e51445a525b7c981fe2c201562427303a6eb62f13659abbdc0e5a87fcd5884"
+
+[commands]
+request_only = true
+build = "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupRoughSharedPrime GRWTSK.NumberTheory.Moebius.PickupRoughPrefixIdentity GRWTSK.NumberTheory.Moebius.PickupRoughLongPrime"
+source_replay = [
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughSharedPrime.lean",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughPrefixIdentity.lean",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughLongPrime.lean"
+]
+checker_capabilities = "lake env leanchecker --help"
+fresh_kernel_command = "Resolve supported invocation from pinned checker capabilities; do not infer a completed replay from compilation or help"
+expected = "All requested commands exit 0, fresh closure replay accepts exact source/dependencies, no warnings or rejected axioms; currently NOT_RUN"
+external_driver = "Audit.lean, hash pinned above; #check and #print axioms for all 74 textual identifiers, plus full transitive closure review"
+
+[finite_diagnostics]
+status = "PASS_FINITE_DIAGNOSTICS_ONLY"
+normal_command = "python /mnt/data/rough_shared_prime_work/diagnostics/preflight.py > /mnt/data/rough_shared_prime_work/diagnostics/normal.json"
+normal_exit = 0
+optimized_command = "python -O /mnt/data/rough_shared_prime_work/diagnostics/preflight.py > /mnt/data/rough_shared_prime_work/diagnostics/optimized.json"
+optimized_exit = 0
+comparison_command = "cmp /mnt/data/rough_shared_prime_work/diagnostics/normal.json /mnt/data/rough_shared_prime_work/diagnostics/optimized.json"
+comparison_exit = 0
+checks_per_mode = 13626
+exact_arithmetic = 323
+exact_prefix = 7410
+exact_sectors = 775
+exact_rational_surrogate_bounds = 384
+exact_finite_tails = 4457
+negative_controls = 4
+numerical_70digit = 258
+static = 15
+limits = "Rational-surrogate kernels are not the irrational actual Gram. Numerical checks are not rigorous enclosures. Finite diagnostics are neither asymptotic evidence nor Lean acceptance. No durable external runner receipt is claimed."
+script_sha256 = "7dadd67aa57b87e37187955d5903bee58bf8f3c14ba1d245e1951e469657491e"
+normal_sha256 = "e6e314ef3b6b8aac78cfdb7fa8788f70bbd05327e6a04cf47e84f692ce0d6d04"
+optimized_sha256 = "e6e314ef3b6b8aac78cfdb7fa8788f70bbd05327e6a04cf47e84f692ce0d6d04"
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughLongPrime.lean"
+git_blob = "142db05a3dfa537ddc8627142953fff18a5549fc"
+sha256 = "d27bf2219c2e079b6af6b56b08d9657fb7194d542a22007cf1046dfcc586e0db"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughLongPrime"
+lines = 264
+definitions = 4
+theorems = 17
+instances = 0
+identifiers = ["quotient_lt_long_prime", "long_prime_not_dvd_quotient", "correctedQuotient_long", "selected_product", "omega_product", "omega_long_product", "shared_quotient_lt", "long_shared_atom", "rough_one", "omega_one", "omega_prime", "unitSlice", "nonunitSlice", "unitPart", "nonunitPart", "coprimeSlice_unit_split", "four_sector_partition", "unitSlice_eq", "unitSlice_inverseSqrt", "interaction_four_sectors", "interaction_le_paid_and_signed_remainder"]
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughPrefixIdentity.lean"
+git_blob = "ae6b32623b3cb4e1d0c2ceb35ccd9f72f2c14962"
+sha256 = "5d512c2a18edc32cc6efa33d197048649daa0a68be2e705a93528f03eeeb901f"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughPrefixIdentity"
+lines = 207
+definitions = 6
+theorems = 11
+instances = 0
+identifiers = ["prefix", "squarePrefix", "triangle", "prefix_product_split", "triangle_square", "negative_triangle_formula", "tailCoefficient", "roughPrefix", "roughDiagonal", "roughDiagonal_eq", "correlation_eq_negative_triangle", "correlation_formula", "correlation_of_Y_le_X", "correlation_of_X_lt_Y", "roughDiagonal_nonnegative", "roughDiagonal_le", "roughDiagonal_sqrt_bound"]
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughSharedPrime.lean"
+git_blob = "f50ea7a73c5f17db5c0da2fefcd258283932529e"
+sha256 = "87503def80bfeb4aea8d3e77efec494ef52a34bbb9d9ee4221c3ed2aca9b1f87"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughSharedPrime"
+lines = 503
+definitions = 12
+theorems = 23
+instances = 1
+identifiers = ["inWindow", "windowDecidable", "atom", "primeSlice", "sharedSlice", "coprimeSlice", "total", "shortPart", "sharedPart", "coprimePart", "inverseSqrtKernel", "primeSlice_split", "total_partition", "total_inverseSqrt_eq", "total_full_eq_quotient", "upperTail_partition", "coprime_guard", "corrected_abs_le_one", "omega_product_pos", "normalized_coefficient_abs_le", "sharedSlice_reindex", "inverseSqrtKernel_shared", "sharedSlice_abs_le", "reciprocal_square_tail", "sharedPart_abs_le", "cutoff_div_sqrt_le", "sharedPrefix_long_bound", "orderedShared", "orderedShared_long_bound", "orderedShared_five_eighths", "orderedShared_threshold_bound", "sharedThreshold", "sharedThreshold_positive", "sharedThreshold_lower", "cutoff_div_sharedThreshold", "orderedShared_threshold_seven_eighths"]
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughBilinearExtraction.lean"
+git_blob = "adfe4ac81073bcd2aa1458d8f3923b151b6ec722"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughCoreStrip.lean"
+git_blob = "fa3550c56b7558fa009542064bafdc1b89f163b7"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockSource.lean"
+git_blob = "8e5060c9697daebb307aae49ed740b869d6e8e13"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockEnergy.lean"
+git_blob = "6ecda0380fe19136ff8c7ecde0c48cf42b736991"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockTransfer.lean"
+git_blob = "8cafd402722b0961b3833f369c8715917055ebf0"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupGrowingPrimeStages.lean"
+git_blob = "ebc257ab92c86fee7d1a57e573d52b8ebc9df832"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/FinitePrimeDivisorExtraction.lean"
+git_blob = "89c8290fa1cc3b05e0035d01249cbf90b4e0d3ff"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeFactorLayers.lean"
+git_blob = "5002d641d277687b46602a83fdc06db64750989a"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
+
+[[critical_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean"
+git_blob = "53a33d37efd54fdff10aed1b05276b89dd4ddadc"
+scope = "Inherited source pin only; acceptance not transferred or established by this manifest"
