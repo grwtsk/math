@@ -1,0 +1,149 @@
+version = "0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+source_commit = "028b8ea8f8349d5fcc9e5b2845171804f73b0292"
+source_tree = "ce8388bd428b2aab6a6f6443361d4e09f3699408"
+base_commit = "85e0cd7ff2e366efbe5dce9f55b1a259954080fe"
+initial_inspection = "d294ca01d06d190b1f07702a546050cc84f1301b"
+lean = "leanprover/lean4:v4.33.0"
+mathlib = "db584cd6d46c92f209a44c0f1c829460d327499d"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+execution_dispatch = "NONE"
+declaration_count = 76
+theorem_script_count = 51
+definition_count = 23
+structure_count = 2
+history_scope = "Older source-specific evidence is retained; no acceptance transfers to changed bytes."
+ledger_scope = "Exact contextual paper entry is in the supplement; central ledger cross-reference pending, original not overwritten."
+
+[diagnostics]
+command = "python /mnt/data/centered-sieve/preflight.py"
+exit = 0
+exact_mathematical_assertions = 10385
+lexical_checks = 3
+scope = "Finite arithmetic/rational diagnostics, not Lean execution or all-scale estimates. Center supports independently reconstructed; formal logarithm coefficient vectors; cyclic roots at q=1,2,4."
+operational_receipt = "Temporary external workspace only; no durable noeaaeue receipt claimed; no operational files in math."
+
+[native_commands]
+build = "lake build GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery GRWTSK.NumberTheory.Farey.CenteredSieveLanguage GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.CyclicOrbitObservability"
+lean = ["lake env lean GRWTSK/NumberTheory/Moebius/CenteredSieveRecovery.lean", "lake env lean GRWTSK/NumberTheory/Farey/CenteredSieveLanguage.lean", "lake env lean GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/CyclicOrbitObservability.lean"]
+type_and_axiom_checks = "Print exact types and #print axioms for all declarations and traverse complete dependency closure. Resolve approved independent checker invocation; none invented."
+
+[controls]
+source_return = "Decode only actual codes; retain parity, half-shift, center residue, winding and gcd stratum. q=0 total identity is not a finite cyclic interpretation."
+sieve = "Selected moduli are primes; deletion only of coefficients proved zero; survivor signs still actual Mobius; all Lambda prime powers reconstructed."
+centering = "Actual zeroWindingCenteredShiftSet, mean denominator b+1, signed other-shift defect and negative four-variance retained. Representation q distinct from arithmetic d squared."
+language = "Both directions of path characterization; last-state cutoff, empty word, no splicing, zero letters retained, all finite factors covered by increasing stages. No one-graph infinite soficity claim."
+phase = "Use complete additive spectrum. q-th moment not first moment. Primitive frequencies not substituted. No zeta-zero identity or weak-star homeomorphism claimed."
+arithmetic_consumer = "Actual pickupCross and prior prime-pair credit preserved; time-dependent sieve requires original signed subexponential and outer-time coverage inputs."
+trust = "Reject sorryAx, new research axioms, circular proofs/imports, omitted hypotheses, or unapproved native trust; repairs require fresh source pins."
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/CenteredSieveRecovery.lean"
+blob = "3b2cd85036c8b2d06e9da50cbc8a399a3b79ee57"
+sha256 = "86f9560d66261239bbea812d72003089c40dc7c5a84b4caf0fdead7269e9deb0"
+namespace = "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery"
+declarations = [
+  "CenterCode", "encode", "decode", "decode_encode", "encode_injective", "residue_lt",
+  "rechart", "rechart_encode", "rechart_comp", "rechart_return", "readout_recovery",
+  "liftedAnchorCoefficient", "liftedAnchorCoefficient_eq", "lifted_anchor_recovers_moebius",
+  "lifted_anchor_recovers_vonMangoldt", "lifted_authentic_center", "StratumCenterCode",
+  "encodeStratum", "stratumToCode", "stratumToCode_encode", "decodeStratum",
+  "decodeStratum_encode", "changeStratum", "changeStratum_encode",
+  "stratum_anchor_recovers_vonMangoldt", "Survives", "survives_mono",
+  "moebius_zero_of_rejected", "sieveCoefficient", "sieveCoefficient_eq",
+  "moebiusReal_zero_of_rejected", "survivingShifts", "sievedCenteredAmplitude",
+  "survivingShifts_antitone", "sievedCenteredAmplitude_eq", "sieved_center_mass",
+  "sieved_center_variance", "signed_wrap_with_sieved_centers", "sievedCross",
+  "sievedCross_eq", "sievedCross_le_signedUpper", "changing_sieve_good_scales_implies_RH",
+]
+imports = [
+  "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedPairDescent",
+  "GRWTSK.NumberTheory.Farey.CenteredResidueReturn", "Mathlib.Tactic",
+]
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Farey/CenteredSieveLanguage.lean"
+blob = "bf5e8219bfdec6eb1bf4e9fafabe4394d95a9f15"
+sha256 = "9cf8842d46a4c8ff358834ca7f1886b0a83e7404f04060216dc07c781cd846ee"
+namespace = "GRWTSK.NumberTheory.Farey.CenteredSieveLanguage"
+declarations = [
+  "primeSquareModulus", "primeSquareModulus_dvd_next", "primeSquareModulus_ge",
+  "primeSquareModulus_pos", "mod_coarsen", "centeredResidueRefinement",
+  "primeCenteredRefinement", "prime_center_history_injective", "actual_center_residue_split",
+  "centeredEdge", "centeredPresentation", "centeredFiniteGraph", "edge_rechart",
+  "wordPath_rechart", "accepts_rechart_iff", "sourceWord", "consecutive_source_path",
+  "anchor_index_eq_of_code_eq", "path_is_source_word", "accepts_iff_source_word",
+  "sourceWord_eq_unsieved", "finite_factor_iff_some_stage", "chowla_word_product",
+]
+imports = [
+  "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery",
+  "GRWTSK.NumberTheory.Farey.ChowlaSoficObservations",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SearchSoficLanguage",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.InformationLoss.DynamicPartitionRecovery",
+  "Mathlib.Tactic",
+]
+
+[[sources]]
+path = "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/CyclicOrbitObservability.lean"
+blob = "ebb0f67382a19cadad4504c2fe20bb4cc42d2e07"
+sha256 = "d977601c06f28a5e7670f421b8bd5f308f77f6094a48fd94a65fc6f30249d770"
+namespace = "GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.CyclicOrbitObservability"
+declarations = [
+  "orbitSample", "orbitMoment", "character_pow", "orbitMoment_eq_characterAverage",
+  "orbitMoment_eq", "barycenter_zero", "phase_return", "phase_return_rotation",
+  "popcornPhase", "popcornPhase_norm", "same_barycenter_different_phase",
+]
+imports = ["GRWTSK.NumberTheory.Farey.RamanujanFourierHodge", "Mathlib.Tactic"]
+
+[[suppliers]]
+path = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "63ef7fb343828039e2104e63993799e54a7bcebd"
+
+[[suppliers]]
+path = "GRWTSK/NumberTheory/Moebius/AnchoredPairGreenCoefficientBridge.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "0a25faa8c19378320070d1360474d8419368ea26"
+
+[[suppliers]]
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredWindingZeroModeVariance.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "86aee0d7b10b468badc8e0f46d5d369e33c3f66d"
+
+[[suppliers]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedPairDescent.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "4e6efa850cb824ad3325567831a9cb33717fe1db"
+
+[[suppliers]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/InformationLoss/DynamicPartitionRecovery.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "5b4279d8703ffb4efb74d26ba8445ee2a90ca66f"
+
+[[suppliers]]
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/SearchSoficLanguage.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "4acfdfb09b735a8cfa1ba95a6e2ce527306d84b0"
+
+[[suppliers]]
+path = "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/FiniteAdditiveProjector.lean"
+commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+blob = "45281ece475aea245dba282803a4f7721add9d2c"
+
+[[suppliers]]
+path = "GRWTSK/NumberTheory/Farey/CenteredResidueReturn.lean"
+commit = "85e0cd7ff2e366efbe5dce9f55b1a259954080fe"
+scope = "Concurrent actual gcd-stratum equivalence imported, left unchanged. New winding extension removes only the no-wrap restriction for full lifted codes."
+
+[reference]
+title = "Thomae's function and the space of ergodic measures"
+authors = ["Anton Gorodetski", "Alexandro Luna"]
+version = "arXiv:2206.13794v1, 2022-06-28"
+url = "https://arxiv.org/abs/2206.13794v1"
+scope = "Contextual rational-orbit phase coordinate; full theorem not imported. Local proof uses existing character orthogonality."
