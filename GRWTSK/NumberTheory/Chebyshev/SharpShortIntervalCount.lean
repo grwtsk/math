@@ -1,10 +1,10 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Local mathematical attribution: grwtsk contributors.
 Imported GRWTSK and Mathlib authorship and licenses are retained. -/
-import GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount
+import GRWTSK.NumberTheory.Chebyshev.TentPrimeConsequences
 
 /-!
-# Sharp short-interval targets and the exact remaining analytic supplier
+# Sharp short-interval consumers independent of the RH adapter
 
 The source is the same canonical zero series and real-window prime count as
 in the completed coarse RH consequence. The sharp weighted-zero estimate is
@@ -25,7 +25,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount
 
 open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
-open ShortIntervalPrimeCount RHShortIntervalCount
+open ShortIntervalPrimeCount TentPrimeConsequences
 
 /-- Actual both-sign, analytic-multiplicity zero norm at the specified geometry.
 This proposition has no proof declaration in this increment. In particular,
