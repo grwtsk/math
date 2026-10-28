@@ -2216,12 +2216,16 @@ theorem finiteWeightedCost_offset_eq_iff (inventory : FiniteInventory α)
     finiteWeightedCost inventory (fun a => weight a + offset) s =
         finiteWeightedCost inventory (fun a => weight a + offset) t ↔
       finiteWeightedCost inventory weight s = finiteWeightedCost inventory weight t := by
-  rw [finiteWeightedCost_uniformOffset inventory weight offset s,
-    finiteWeightedCost_uniformOffset inventory weight offset t, counts]
+  have hs : finiteWeightedCost inventory (fun a => weight a + offset) s =
+      finiteWeightedCost inventory weight s + offset * retainedCount inventory t :=
+    (finiteWeightedCost_uniformOffset inventory weight offset s).trans
+      (congrArg (fun n => finiteWeightedCost inventory weight s + offset * n) counts)
+  have ht := finiteWeightedCost_uniformOffset inventory weight offset t
   constructor
-  · exact Nat.add_right_cancel
   · intro h
-    rw [h]
+    exact Nat.add_right_cancel (hs.symm.trans (h.trans ht))
+  · intro h
+    exact hs.trans ((congrArg (fun n => n + offset * retainedCount inventory t) h).trans ht.symm)
 
 theorem finiteWeightedCost_offset_le_iff (inventory : FiniteInventory α)
     (weight : α → Nat) (offset : Nat) {s t : α → Prop}
@@ -2229,12 +2233,26 @@ theorem finiteWeightedCost_offset_le_iff (inventory : FiniteInventory α)
     finiteWeightedCost inventory (fun a => weight a + offset) s ≤
         finiteWeightedCost inventory (fun a => weight a + offset) t ↔
       finiteWeightedCost inventory weight s ≤ finiteWeightedCost inventory weight t := by
-  rw [finiteWeightedCost_uniformOffset inventory weight offset s,
-    finiteWeightedCost_uniformOffset inventory weight offset t, counts]
+  have hs : finiteWeightedCost inventory (fun a => weight a + offset) s =
+      finiteWeightedCost inventory weight s + offset * retainedCount inventory t :=
+    (finiteWeightedCost_uniformOffset inventory weight offset s).trans
+      (congrArg (fun n => finiteWeightedCost inventory weight s + offset * n) counts)
+  have ht := finiteWeightedCost_uniformOffset inventory weight offset t
   constructor
-  · exact Nat.le_of_add_le_add_right
   · intro h
-    exact Nat.add_le_add_right h _
+    apply Nat.le_of_add_le_add_right
+    calc
+      finiteWeightedCost inventory weight s + offset * retainedCount inventory t =
+          finiteWeightedCost inventory (fun a => weight a + offset) s := hs.symm
+      _ ≤ finiteWeightedCost inventory (fun a => weight a + offset) t := h
+      _ = finiteWeightedCost inventory weight t + offset * retainedCount inventory t := ht
+  · intro h
+    calc
+      finiteWeightedCost inventory (fun a => weight a + offset) s =
+          finiteWeightedCost inventory weight s + offset * retainedCount inventory t := hs
+      _ ≤ finiteWeightedCost inventory weight t + offset * retainedCount inventory t :=
+        Nat.add_le_add_right h _
+      _ = finiteWeightedCost inventory (fun a => weight a + offset) t := ht.symm
 
 theorem finiteWeightedCost_offset_lt_iff (inventory : FiniteInventory α)
     (weight : α → Nat) (offset : Nat) {s t : α → Prop}
@@ -2242,12 +2260,26 @@ theorem finiteWeightedCost_offset_lt_iff (inventory : FiniteInventory α)
     finiteWeightedCost inventory (fun a => weight a + offset) s <
         finiteWeightedCost inventory (fun a => weight a + offset) t ↔
       finiteWeightedCost inventory weight s < finiteWeightedCost inventory weight t := by
-  rw [finiteWeightedCost_uniformOffset inventory weight offset s,
-    finiteWeightedCost_uniformOffset inventory weight offset t, counts]
+  have hs : finiteWeightedCost inventory (fun a => weight a + offset) s =
+      finiteWeightedCost inventory weight s + offset * retainedCount inventory t :=
+    (finiteWeightedCost_uniformOffset inventory weight offset s).trans
+      (congrArg (fun n => finiteWeightedCost inventory weight s + offset * n) counts)
+  have ht := finiteWeightedCost_uniformOffset inventory weight offset t
   constructor
-  · exact Nat.lt_of_add_lt_add_right
   · intro h
-    exact Nat.add_lt_add_right h _
+    apply Nat.lt_of_add_lt_add_right
+    calc
+      finiteWeightedCost inventory weight s + offset * retainedCount inventory t =
+          finiteWeightedCost inventory (fun a => weight a + offset) s := hs.symm
+      _ < finiteWeightedCost inventory (fun a => weight a + offset) t := h
+      _ = finiteWeightedCost inventory weight t + offset * retainedCount inventory t := ht
+  · intro h
+    calc
+      finiteWeightedCost inventory (fun a => weight a + offset) s =
+          finiteWeightedCost inventory weight s + offset * retainedCount inventory t := hs
+      _ < finiteWeightedCost inventory weight t + offset * retainedCount inventory t :=
+        Nat.add_lt_add_right h _
+      _ = finiteWeightedCost inventory (fun a => weight a + offset) t := ht.symm
 
 /-- Scalar unequal-count illustrations. They do not certify any external model
 enumeration or serialized cost projection. -/
