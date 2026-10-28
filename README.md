@@ -1,37 +1,83 @@
 # GRWTSK mathematics
 
+**Mathematical signal that steers AI discovery.**
+
+GRWTSK mathematics develops mathematical research signal to help artificial intelligence decide what to explore, which connections to test, and where a new idea could unlock further progress.
+
+The aim is not simply to give AI more mathematics to retrieve. It is to give discovery direction. Constructions, cross-domain relationships, revealing examples, obstructions, and explicit open questions provide starting points for new conjectures, representations, and lines of attack. Formal sources and source-bound evidence keep that exploration connected to the mathematics it comes from.
+
+**The goal is to steer AI toward breakthroughs—not merely catalogue results after they happen.** Humans and AI systems can use the collection to recognize opportunities, develop connections, and turn promising directions into reusable mathematics.
+
+This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
+
+[**Explore the mathematics →**](docs/mathematics/index.md)
+
+[Every source and declaration](docs/mathematics/complete-source-index.md) · [Verification specifications](docs/verification/README.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Signal for the next research decision
+
+Here, **signal** means mathematical information that can change what an AI investigates next: a structure worth generalizing, a connection worth testing, a constraint that redirects an approach, or a missing result whose proof would enable something further.
+
+A finished proof is one kind of signal, not the only kind. A precise conjecture can open a direction. A suggestive analogy can motivate a comparison. A counterexample can expose the distinction that a better theory must explain. An obstruction can show why an attractive representation still leaves the essential problem untouched.
+
+The intended use is both exploratory and selective: generate new possibilities, then use mathematical structure to distinguish the directions worth pursuing. The collection should help AI ask better questions, not only produce more answers. It is a source for discovery, not a prescribed route to a predetermined conclusion.
+
+## How the signal steers exploration
+
+**Connections suggest where to look.** Related constructions across subjects can suggest a transferable method, a shared invariant, or a new formulation. Use those relationships to propose a bridge, then identify the precise comparison needed to establish it. An analogy can guide the search before it becomes a theorem.
+
+**Constraints reveal what matters.** Hypotheses, quantifiers, signs, support conditions, constants, and error terms identify what a successful approach must preserve or control. They help distinguish a new representation of a problem from an actual advance on it. A failed comparison can still sharpen the next question when its failure is recorded precisely.
+
+**Open obligations focus effort.** A missing construction or estimate becomes more informative when its downstream use is explicit. Work backward from that use to identify what would unlock progress; work outward from existing constructions to discover new uses. Filling a known gap and discovering an unexpected direction are both part of the purpose.
+
+**Research history makes exploration cumulative.** Retain what was tried, what changed, and what remains unresolved. A useful handoff should let the next researcher or AI continue from the actual state of the mathematics rather than restart the same search or mistake a renamed assumption for a new result.
+
+Direction and proof play different roles. A promising connection says where to investigate; a proved bridge says what can be transferred. Keep both useful by keeping their status visible.
+
+## Using the collection for discovery
+
+Start with a question, a construction, or a recurring pattern. Follow its subject context and dependencies, then look for the connection or obstruction that could change the next step.
+
+1. **Form a mathematical hypothesis.** Identify the proposed relationship, generalization, or new use. Explain why it is worth testing and what would count against it.
+2. **Test the direction against the actual objects.** Compare definitions and hypotheses, investigate examples, and seek a construction, estimate, or counterexample. Preserve the conditions needed to return from a new representation to the original problem.
+3. **Return new signal.** Contribute the result and what it changes: a reusable method, a proved connection, a sharper question, a narrowed obstruction, or a rejected route with a precise reason. Record the source and evidence so subsequent work can build on it.
+
+Extend existing subject modules where they fit. When exploration reveals a genuinely new direction, state how it relates to the existing mathematics rather than creating a parallel account of the same unresolved premise.
+
+## Navigating the collection
+
+- Explore the [results index](docs/mathematics/index.md), then follow subject indexes, object guides, and result articles within [`docs/mathematics/`](docs/mathematics/). The [selected-family catalogue](docs/reference/results.md) retains its original evidence records.
+- Start with the [least-prime walkthrough](docs/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
+- Browse the [complete source catalogue](docs/mathematics/complete-source-index.md) for modules and observed declarations, including definitions, instances, examples, and pending or blocked checks. Its articles link to verification targets and scoped public evidence. The [historical theorem/result occurrence catalogue](docs/reference/result-occurrences.md) retains its original source identities; a lexical occurrence is not a verified theorem.
+- Read the formal sources in the [Lean library](GRWTSK/). [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point; [verification specifications](docs/verification/README.md) describe static replay targets.
+
+At source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374), the catalogue records **72,578 source modules and 1,722,561 declaration observations**. Each record retains its verification state. These are source and observation counts for that revision—not verified-theorem counts or a live inventory of `main`.
+
+Examples include [least natural prime](docs/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
+
+[From ethical obligations to mechanistic reasoning](docs/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
+
+## Evidence that keeps the signal interpretable
+
+The collection includes formal proofs, conditional results, written arguments, finite certificates, and source candidates awaiting verification. Their research value and their verification status are related but distinct. A source candidate can suggest a direction without being an accepted proof; a checked conditional theorem can identify a useful route without supplying its missing premise.
+
+Keep mathematical role separate from verification evidence. Source inspection, compilation, fresh kernel checking, and transitive axiom auditing are different checks. Record actual outcomes or explicit `NOT_RUN` status, and bind evidence to the source it concerns. Historical evidence is not a fresh check of changed source bytes.
+
+Paper-derived contributions retain their sources and exact scope in the [paper-to-formalization references](docs/reference/literature/reading-background/paper-to-formalization-references.md). Imported mathematics, proved bridges, source candidates, conditional interfaces, finite evidence, analogies, and unresolved premises remain distinguishable. A structural resemblance does not establish historical influence.
+
+Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound. An encoding, graph, or waveform may suggest an approach, but representing a source does not itself supply a missing mathematical estimate.
+
+Steering AI discovery is the project's purpose. Whether a particular signal improves research choices, proof success, or discovery outcomes requires separate evaluation; the purpose is not a claim of measured AI performance.
+
+### Source-bound verification notices
+
 <!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
 [Latest source-bound verification observations](docs/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
 <!-- END VERIFICATION AMENDMENT -->
 
-The latest cross-branch 107-declaration replay ended in an operational cancellation before declaration audits or exact type checks; every target remains not run. [Terminal status and full target roster](docs/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) · [public pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). The event is not a mathematical counterexample, and S₃ remains unavailable.
+The cross-branch 107-declaration replay documented below ended in an operational cancellation before declaration audits or exact type checks; every target remains not run. [Terminal status and full target roster](docs/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) · [public pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). The event is not a mathematical counterexample, and S₃ remains unavailable.
 
-Mathematical results, formal proofs, and explicit open problems by **grwtsk contributors**. This is the canonical source for GRWTSK mathematics.
-
-[**Browse the results index →**](docs/mathematics/index.md)
-
-[Every source and declaration](docs/mathematics/complete-source-index.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
-
-The complete catalogue records **72,578 source modules and 1,722,561 declaration observations** at source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374). Each record retains its verification state.
-
-## Navigating the collection
-
-- Use the [results index](docs/mathematics/index.md) to browse every subject entry point and its result previews.
-- Follow increasingly specific subjects, object guides, and result articles within [`docs/mathematics/`](docs/mathematics/), with an index at each level. The [selected-family catalogue](docs/reference/results.md) retains its original evidence records.
-- Start with the [least-prime walkthrough](docs/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
-- Browse the [complete source catalogue](docs/mathematics/complete-source-index.md) for every module and observed declaration, including definitions, instances, examples and pending or blocked checks. Each article links to its verification target and scoped public evidence.
-- The [historical theorem/result occurrence catalogue](docs/reference/result-occurrences.md) retains its original source identities. A lexical occurrence is not a verified theorem.
-- The [Lean library](GRWTSK/) contains the formal sources; [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. [Verification specifications](docs/verification/README.md) describe static replay targets.
-
-Examples include [least natural prime](docs/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
-
-## Reading the results
-
-The collection contains formal proofs, conditional results, written arguments, finite certificates, and source candidates awaiting verification. Each result must be read with its exact hypotheses, source revision, and verification scope. Historical evidence is not a fresh check of changed source bytes.
-
-[From ethical obligations to mechanistic reasoning](docs/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
-
-Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound.
+These retained notices describe their linked verification scopes, not a live or blanket verdict on the collection. Read each result with its exact hypotheses, source revision, and available evidence.
 
 ## Build
 
@@ -50,6 +96,8 @@ Static replay targets for external verification are described under [`docs/verif
 This repository owns pure mathematics and static, source-bound verification specifications. Process execution, mutable caches, operational receipts, scheduling, authority records, WSC coordination, Git publication workflows, and generated proof-capsule documentation belong to [`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue), which consumes pinned `grwtsk/math` revisions through typed Git bindings.
 
 A mathematical acceptance target may specify exact modules, declarations, source files, dependency revisions, trust policy, certificate relations, and hostile controls. Checkout, tool acquisition, process invocation, resource metering, log capture, receipt creation, and capsule publication are external effects.
+
+The discovery signal comes from the mathematics and its relationships. This repository supplies that source and its static specifications; Noeaaeue owns effectful execution and publication provenance.
 
 ## Licensing and provenance
 
