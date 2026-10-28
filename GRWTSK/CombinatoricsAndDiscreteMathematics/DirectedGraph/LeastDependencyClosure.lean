@@ -1443,4 +1443,346 @@ theorem normalizePrerequisiteCNF_model_minimizes [DecidableEq α] (inventory : F
   prerequisiteCNFModel_minimizes inventory weight typed
     ((normalizePrerequisiteCNF_sound inventory retained clauses typed hn).mp hs)
 
+/-- Mathematical signed integers use one-based magnitudes; typed indices are
+zero based. This does not parse JSON or certify a Python integer conversion. -/
+def encodeSignedLiteral {n : Nat} (literal : SignedLiteral (Fin n)) : Int :=
+  match literal with
+  | .positive index => .ofNat (Nat.succ index.val)
+  | .negative index => .negSucc index.val
+
+def decodeSignedInt (n : Nat) (raw : Int) : Option (SignedLiteral (Fin n)) :=
+  match raw with
+  | .ofNat magnitude =>
+    match magnitude with
+    | 0 => none
+    | Nat.succ index =>
+      if h : index < n then some (.positive ⟨index, h⟩) else none
+  | .negSucc index =>
+    if h : index < n then some (.negative ⟨index, h⟩) else none
+
+def signedLiteralIndex {n : Nat} (literal : SignedLiteral (Fin n)) : Fin n :=
+  match literal with
+  | .positive index => index
+  | .negative index => index
+
+def signedLiteralSign {n : Nat} (literal : SignedLiteral (Fin n)) : Int :=
+  match literal with
+  | .positive _ => 1
+  | .negative _ => -1
+
+theorem decodeSignedInt_zero (n : Nat) : decodeSignedInt n 0 = none := rfl
+
+theorem decodeSignedInt_positive_outOfRange (n index : Nat) (h : n ≤ index) :
+    decodeSignedInt n (.ofNat (Nat.succ index)) = none := by
+  dsimp only [decodeSignedInt]
+  rw [dif_neg (Nat.not_lt_of_ge h)]
+
+theorem decodeSignedInt_negative_outOfRange (n index : Nat) (h : n ≤ index) :
+    decodeSignedInt n (.negSucc index) = none := by
+  dsimp only [decodeSignedInt]
+  rw [dif_neg (Nat.not_lt_of_ge h)]
+
+theorem decodeSignedInt_zero_bound (raw : Int) : decodeSignedInt 0 raw = none := by
+  cases raw with
+  | ofNat magnitude =>
+    cases magnitude with
+    | zero => rfl
+    | succ index => exact decodeSignedInt_positive_outOfRange 0 index (Nat.zero_le index)
+  | negSucc index => exact decodeSignedInt_negative_outOfRange 0 index (Nat.zero_le index)
+
+theorem decodeSignedInt_encode {n : Nat} (literal : SignedLiteral (Fin n)) :
+    decodeSignedInt n (encodeSignedLiteral literal) = some literal := by
+  cases literal with
+  | positive index =>
+    cases index with
+    | mk value h =>
+      dsimp only [encodeSignedLiteral, decodeSignedInt]
+      rw [dif_pos h]
+  | negative index =>
+    cases index with
+    | mk value h =>
+      dsimp only [encodeSignedLiteral, decodeSignedInt]
+      rw [dif_pos h]
+
+theorem decodeSignedInt_success {n : Nat} {raw : Int} {literal : SignedLiteral (Fin n)}
+    (h : decodeSignedInt n raw = some literal) : raw = encodeSignedLiteral literal := by
+  cases raw with
+  | ofNat magnitude =>
+    cases magnitude with
+    | zero => cases h
+    | succ index =>
+      by_cases hi : index < n
+      · dsimp only [decodeSignedInt] at h
+        rw [dif_pos hi] at h
+        cases h
+        rfl
+      · dsimp only [decodeSignedInt] at h
+        rw [dif_neg hi] at h
+        cases h
+  | negSucc index =>
+    by_cases hi : index < n
+    · dsimp only [decodeSignedInt] at h
+      rw [dif_pos hi] at h
+      cases h
+      rfl
+    · dsimp only [decodeSignedInt] at h
+      rw [dif_neg hi] at h
+      cases h
+
+theorem decodeSignedInt_success_iff {n : Nat} (raw : Int) (literal : SignedLiteral (Fin n)) :
+    decodeSignedInt n raw = some literal ↔ raw = encodeSignedLiteral literal := by
+  constructor
+  · exact decodeSignedInt_success
+  · intro h
+    rw [h]
+    exact decodeSignedInt_encode literal
+
+theorem encodeSignedLiteral_natAbs {n : Nat} (literal : SignedLiteral (Fin n)) :
+    (encodeSignedLiteral literal).natAbs = (signedLiteralIndex literal).val + 1 := by
+  cases literal <;> rfl
+
+theorem encodeSignedLiteral_sign {n : Nat} (literal : SignedLiteral (Fin n)) :
+    (encodeSignedLiteral literal).sign = signedLiteralSign literal := by
+  cases literal <;> rfl
+
+theorem encodeSignedLiteral_nonzero {n : Nat} (literal : SignedLiteral (Fin n)) :
+    encodeSignedLiteral literal ≠ 0 := by
+  cases literal with
+  | positive index => intro h; cases h
+  | negative index => intro h; cases h
+
+theorem decodeSignedInt_range {n : Nat} {raw : Int} {literal : SignedLiteral (Fin n)}
+    (h : decodeSignedInt n raw = some literal) :
+    (signedLiteralIndex literal).val < n ∧
+      raw.natAbs = (signedLiteralIndex literal).val + 1 ∧ raw.natAbs ≤ n := by
+  constructor
+  · exact (signedLiteralIndex literal).isLt
+  · constructor
+    · rw [decodeSignedInt_success h]
+      exact encodeSignedLiteral_natAbs literal
+    · rw [decodeSignedInt_success h, encodeSignedLiteral_natAbs]
+      exact Nat.succ_le_of_lt (signedLiteralIndex literal).isLt
+
+theorem decodeSignedInt_sign {n : Nat} {raw : Int} {literal : SignedLiteral (Fin n)}
+    (h : decodeSignedInt n raw = some literal) : raw.sign = signedLiteralSign literal := by
+  rw [decodeSignedInt_success h]
+  exact encodeSignedLiteral_sign literal
+
+theorem decodeSignedInt_nonzero {n : Nat} {raw : Int} {literal : SignedLiteral (Fin n)}
+    (h : decodeSignedInt n raw = some literal) : raw ≠ 0 := by
+  rw [decodeSignedInt_success h]
+  exact encodeSignedLiteral_nonzero literal
+
+theorem decodeSignedInt_magnitude_outOfRange (n : Nat) (raw : Int) (h : n < raw.natAbs) :
+    decodeSignedInt n raw = none := by
+  cases hd : decodeSignedInt n raw with
+  | none => rfl
+  | some literal => exact False.elim (Nat.not_lt_of_ge (decodeSignedInt_range hd).2.2 h)
+
+theorem decodeSignedInt_complete (n : Nat) (raw : Int) (hz : raw ≠ 0) (hr : raw.natAbs ≤ n) :
+    ∃ literal, decodeSignedInt n raw = some literal := by
+  cases raw with
+  | ofNat magnitude =>
+    cases magnitude with
+    | zero => exact False.elim (hz rfl)
+    | succ index =>
+      have hi : index < n := hr
+      refine ⟨.positive ⟨index, hi⟩, ?_⟩
+      dsimp only [decodeSignedInt]
+      rw [dif_pos hi]
+  | negSucc index =>
+    have hi : index < n := hr
+    refine ⟨.negative ⟨index, hi⟩, ?_⟩
+    dsimp only [decodeSignedInt]
+    rw [dif_pos hi]
+
+/-- Independent bounded integer-literal interpretation. Invalid integers,
+including invalid negative ones, denote False rather than a negated default. -/
+def boundedIntLiteralHolds (n : Nat) (retained : Fin n → Prop) (raw : Int) : Prop :=
+  match raw with
+  | .ofNat magnitude =>
+    match magnitude with
+    | 0 => False
+    | Nat.succ index => if h : index < n then retained ⟨index, h⟩ else False
+  | .negSucc index => if h : index < n then ¬ retained ⟨index, h⟩ else False
+
+theorem boundedIntLiteralHolds_zero (n : Nat) (retained : Fin n → Prop) :
+    boundedIntLiteralHolds n retained 0 = False := rfl
+
+theorem boundedIntLiteralHolds_positive_outOfRange (n : Nat) (retained : Fin n → Prop)
+    (index : Nat) (h : n ≤ index) :
+    boundedIntLiteralHolds n retained (.ofNat (Nat.succ index)) = False := by
+  dsimp only [boundedIntLiteralHolds]
+  rw [dif_neg (Nat.not_lt_of_ge h)]
+
+theorem boundedIntLiteralHolds_negative_outOfRange (n : Nat) (retained : Fin n → Prop)
+    (index : Nat) (h : n ≤ index) :
+    boundedIntLiteralHolds n retained (.negSucc index) = False := by
+  dsimp only [boundedIntLiteralHolds]
+  rw [dif_neg (Nat.not_lt_of_ge h)]
+
+theorem boundedIntLiteralHolds_encode {n : Nat} (retained : Fin n → Prop)
+    (literal : SignedLiteral (Fin n)) :
+    boundedIntLiteralHolds n retained (encodeSignedLiteral literal) ↔ signedLiteralHolds retained literal := by
+  cases literal with
+  | positive index =>
+    cases index with
+    | mk value h =>
+      dsimp only [encodeSignedLiteral, boundedIntLiteralHolds, signedLiteralHolds]
+      rw [dif_pos h]
+  | negative index =>
+    cases index with
+    | mk value h =>
+      dsimp only [encodeSignedLiteral, boundedIntLiteralHolds, signedLiteralHolds]
+      rw [dif_pos h]
+
+theorem decodeSignedInt_literal_sound {n : Nat} (retained : Fin n → Prop)
+    {raw : Int} {literal : SignedLiteral (Fin n)} (h : decodeSignedInt n raw = some literal) :
+    boundedIntLiteralHolds n retained raw ↔ signedLiteralHolds retained literal := by
+  rw [decodeSignedInt_success h]
+  exact boundedIntLiteralHolds_encode retained literal
+
+def decodeSignedIntClause (n : Nat) (raws : List Int) : Option (List (SignedLiteral (Fin n))) :=
+  match raws with
+  | [] => some []
+  | raw :: rest =>
+    match decodeSignedInt n raw with
+    | none => none
+    | some literal =>
+      match decodeSignedIntClause n rest with
+      | none => none
+      | some tail => some (literal :: tail)
+
+def encodeSignedIntClause {n : Nat} (literals : List (SignedLiteral (Fin n))) : List Int :=
+  match literals with
+  | [] => []
+  | literal :: rest => encodeSignedLiteral literal :: encodeSignedIntClause rest
+
+theorem decodeSignedIntClause_encode {n : Nat} (literals : List (SignedLiteral (Fin n))) :
+    decodeSignedIntClause n (encodeSignedIntClause literals) = some literals := by
+  induction literals with
+  | nil => rfl
+  | cons literal rest ih =>
+    rw [encodeSignedIntClause, decodeSignedIntClause, decodeSignedInt_encode, ih]
+
+/-- An invalid literal anywhere rejects the whole list; none is filtered out. -/
+theorem decodeSignedIntClause_invalid_member (n : Nat) (raws : List Int) {raw : Int}
+    (hm : raw ∈ raws) (hb : decodeSignedInt n raw = none) : decodeSignedIntClause n raws = none := by
+  induction raws with
+  | nil => cases hm
+  | cons first rest ih =>
+    cases hm with
+    | head => rw [decodeSignedIntClause, hb]
+    | tail _ hm =>
+      cases hd : decodeSignedInt n first with
+      | none => rw [decodeSignedIntClause, hd]
+      | some literal => rw [decodeSignedIntClause, hd, ih hm]
+
+def boundedIntClauseSatisfied (n : Nat) (retained : Fin n → Prop) (raws : List Int) : Prop :=
+  match raws with
+  | [] => False
+  | raw :: rest => boundedIntLiteralHolds n retained raw ∨ boundedIntClauseSatisfied n retained rest
+
+theorem decodeSignedIntClause_sound (n : Nat) (retained : Fin n → Prop) (raws : List Int)
+    (literals : List (SignedLiteral (Fin n))) (h : decodeSignedIntClause n raws = some literals) :
+    boundedIntClauseSatisfied n retained raws ↔ signedClauseSatisfied retained literals := by
+  induction raws generalizing literals with
+  | nil => cases h; exact Iff.rfl
+  | cons raw rest ih =>
+    cases hd : decodeSignedInt n raw with
+    | none => rw [decodeSignedIntClause, hd] at h; cases h
+    | some literal =>
+      rw [decodeSignedIntClause, hd] at h
+      cases ht : decodeSignedIntClause n rest with
+      | none => rw [ht] at h; cases h
+      | some tail =>
+        rw [ht] at h
+        cases h
+        constructor
+        · intro hs
+          cases hs with
+          | inl hs => exact Or.inl ((decodeSignedInt_literal_sound retained hd).mp hs)
+          | inr hs => exact Or.inr ((ih tail ht).mp hs)
+        · intro hs
+          cases hs with
+          | inl hs => exact Or.inl ((decodeSignedInt_literal_sound retained hd).mpr hs)
+          | inr hs => exact Or.inr ((ih tail ht).mpr hs)
+
+theorem decodeSignedIntClause_normalize_sound (n : Nat) (inventory : FiniteInventory (Fin n))
+    (retained : Fin n → Prop) [DecidablePred retained] (raws : List Int)
+    (literals : List (SignedLiteral (Fin n))) (clause : PrerequisiteClause (Fin n))
+    (hd : decodeSignedIntClause n raws = some literals)
+    (hn : normalizePrerequisiteClause inventory literals = some clause) :
+    boundedIntClauseSatisfied n retained raws ↔ prerequisiteClauseHolds retained clause :=
+  Iff.trans (decodeSignedIntClause_sound n retained raws literals hd)
+    (normalizePrerequisiteClause_sound inventory retained literals clause hn)
+
+def decodeSignedIntCNF (n : Nat) (raws : List (List Int)) : Option (List (List (SignedLiteral (Fin n)))) :=
+  match raws with
+  | [] => some []
+  | clause :: rest =>
+    match decodeSignedIntClause n clause with
+    | none => none
+    | some literals =>
+      match decodeSignedIntCNF n rest with
+      | none => none
+      | some tail => some (literals :: tail)
+
+def boundedIntCNFSatisfied (n : Nat) (retained : Fin n → Prop) (raws : List (List Int)) : Prop :=
+  match raws with
+  | [] => True
+  | clause :: rest => boundedIntClauseSatisfied n retained clause ∧ boundedIntCNFSatisfied n retained rest
+
+theorem decodeSignedIntCNF_sound (n : Nat) (retained : Fin n → Prop) (raws : List (List Int))
+    (clauses : List (List (SignedLiteral (Fin n)))) (h : decodeSignedIntCNF n raws = some clauses) :
+    boundedIntCNFSatisfied n retained raws ↔ signedCNFSatisfied retained clauses := by
+  induction raws generalizing clauses with
+  | nil => cases h; exact Iff.rfl
+  | cons clause rest ih =>
+    cases hd : decodeSignedIntClause n clause with
+    | none => rw [decodeSignedIntCNF, hd] at h; cases h
+    | some literals =>
+      rw [decodeSignedIntCNF, hd] at h
+      cases ht : decodeSignedIntCNF n rest with
+      | none => rw [ht] at h; cases h
+      | some tail =>
+        rw [ht] at h
+        cases h
+        constructor
+        · intro hs
+          exact ⟨(decodeSignedIntClause_sound n retained clause literals hd).mp hs.1,
+            (ih tail ht).mp hs.2⟩
+        · intro hs
+          exact ⟨(decodeSignedIntClause_sound n retained clause literals hd).mpr hs.1,
+            (ih tail ht).mpr hs.2⟩
+
+theorem decodeSignedIntCNF_normalize_sound (n : Nat) (inventory : FiniteInventory (Fin n))
+    (retained : Fin n → Prop) [DecidablePred retained] (raws : List (List Int))
+    (clauses : List (List (SignedLiteral (Fin n)))) (typed : List (PrerequisiteClause (Fin n)))
+    (hd : decodeSignedIntCNF n raws = some clauses)
+    (hn : normalizePrerequisiteCNF inventory clauses = some typed) :
+    boundedIntCNFSatisfied n retained raws ↔ prerequisiteCNFSatisfied retained typed :=
+  Iff.trans (decodeSignedIntCNF_sound n retained raws clauses hd)
+    (normalizePrerequisiteCNF_sound inventory retained clauses typed hn)
+
+theorem decodeSignedIntCNF_model_satisfies (n : Nat) (inventory : FiniteInventory (Fin n))
+    (raws : List (List Int)) (clauses : List (List (SignedLiteral (Fin n))))
+    (typed : List (PrerequisiteClause (Fin n))) (hd : decodeSignedIntCNF n raws = some clauses)
+    (hn : normalizePrerequisiteCNF inventory clauses = some typed) :
+    boundedIntCNFSatisfied n (prerequisiteCNFModel inventory typed) raws :=
+  (decodeSignedIntCNF_normalize_sound n inventory _ raws clauses typed hd hn).mpr
+    (prerequisiteCNFModel_satisfies inventory typed)
+
+/-- Composition covers mathematical Int lists through successful typed
+normalization and the shared-table minimum. JSON and Python remain separate. -/
+theorem decodeSignedIntCNF_model_minimizes (n : Nat) (inventory : FiniteInventory (Fin n))
+    (weight : Fin n → Nat) (raws : List (List Int)) (clauses : List (List (SignedLiteral (Fin n))))
+    (typed : List (PrerequisiteClause (Fin n))) (hd : decodeSignedIntCNF n raws = some clauses)
+    (hn : normalizePrerequisiteCNF inventory clauses = some typed)
+    {retained : Fin n → Prop} [DecidablePred retained] (hs : boundedIntCNFSatisfied n retained raws) :
+    finiteWeightedCost inventory weight (prerequisiteCNFModel inventory typed) ≤
+      finiteWeightedCost inventory weight retained :=
+  prerequisiteCNFModel_minimizes inventory weight typed
+    ((decodeSignedIntCNF_normalize_sound n inventory retained raws clauses typed hd hn).mp hs)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
