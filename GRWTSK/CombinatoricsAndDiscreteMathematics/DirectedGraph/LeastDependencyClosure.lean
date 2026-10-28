@@ -1785,4 +1785,354 @@ theorem decodeSignedIntCNF_model_minimizes (n : Nat) (inventory : FiniteInventor
   prerequisiteCNFModel_minimizes inventory weight typed
     ((decodeSignedIntCNF_normalize_sound n inventory retained raws clauses typed hd hn).mp hs)
 
+universe v
+
+/-- Structural key erasure produces stored positional rows, not cell functions. -/
+def eraseBoolRow (row : BoolRow α) : List Bool :=
+  match row with
+  | [] => []
+  | first :: rest => first.2 :: eraseBoolRow rest
+
+def eraseBoolTable (table : BoolTable α) : List (List Bool) :=
+  match table with
+  | [] => []
+  | first :: rest => eraseBoolRow first.2 :: eraseBoolTable rest
+
+def listPosition {β : Type v} (values : List β) (position : Nat) : Option β :=
+  match values with
+  | [] => none
+  | first :: rest =>
+    match position with
+    | 0 => some first
+    | Nat.succ index => listPosition rest index
+
+def positionalBoolLookup (table : List (List Bool)) (row column : Nat) : Option Bool :=
+  match listPosition table row with
+  | none => none
+  | some values => listPosition values column
+
+theorem eraseBoolRow_length (row : BoolRow α) : (eraseBoolRow row).length = row.length := by
+  induction row with
+  | nil => rfl
+  | cons first rest ih => exact congrArg Nat.succ ih
+
+theorem eraseBoolTable_length (table : BoolTable α) : (eraseBoolTable table).length = table.length := by
+  induction table with
+  | nil => rfl
+  | cons first rest ih => exact congrArg Nat.succ ih
+
+theorem listPosition_mem {β : Type v} (values : List β) (position : Nat) (value : β)
+    (h : listPosition values position = some value) : value ∈ values := by
+  induction values generalizing position with
+  | nil => cases h
+  | cons first rest ih =>
+    cases position with
+    | zero => cases h; exact List.Mem.head rest
+    | succ index => exact List.Mem.tail first (ih index h)
+
+theorem listPosition_get {β : Type v} (values : List β) :
+    ∀ index : Fin values.length, listPosition values index.val = some (values.get index) := by
+  induction values with
+  | nil => intro index; exact False.elim (Nat.not_lt_zero index.val index.isLt)
+  | cons first rest ih =>
+    intro index
+    cases index with
+    | mk position h =>
+      cases position with
+      | zero => rfl
+      | succ position => exact ih ⟨position, Nat.lt_of_succ_lt_succ h⟩
+
+theorem listPosition_bound {β : Type v} (values : List β) (position : Nat) (value : β)
+    (h : listPosition values position = some value) : position < values.length := by
+  induction values generalizing position with
+  | nil => cases h
+  | cons first rest ih =>
+    cases position with
+    | zero => exact Nat.zero_lt_succ _
+    | succ index => exact Nat.succ_lt_succ (ih index h)
+
+theorem listPosition_none_of_length_le {β : Type v} (values : List β) (position : Nat)
+    (h : values.length ≤ position) : listPosition values position = none := by
+  induction values generalizing position with
+  | nil => rfl
+  | cons first rest ih =>
+    cases position with
+    | zero => exact False.elim (Nat.not_lt_zero rest.length h)
+    | succ index => exact ih index (Nat.le_of_succ_le_succ h)
+
+def keyedListKeys {β : Type v} (entries : List (α × β)) : List α :=
+  match entries with
+  | [] => []
+  | first :: rest => first.1 :: keyedListKeys rest
+
+def keyedListLookup [DecidableEq α] {β : Type v} (entries : List (α × β)) (key : α) : Option β :=
+  match entries with
+  | [] => none
+  | first :: rest => if key = first.1 then some first.2 else keyedListLookup rest key
+
+theorem keyedListKeys_mem {β : Type v} (entries : List (α × β)) (key : α) (value : β)
+    (h : (key, value) ∈ entries) : key ∈ keyedListKeys entries := by
+  induction entries with
+  | nil => cases h
+  | cons first rest ih =>
+    cases h with
+    | head => exact List.Mem.head (keyedListKeys rest)
+    | tail _ h => exact List.Mem.tail first.1 (ih h)
+
+theorem keyedListKeys_length {β : Type v} (entries : List (α × β)) :
+    (keyedListKeys entries).length = entries.length := by
+  induction entries with
+  | nil => rfl
+  | cons first rest ih => exact congrArg Nat.succ ih
+
+theorem pairPosition_of_keyPosition {β : Type v} (entries : List (α × β)) :
+    ∀ position key, listPosition (keyedListKeys entries) position = some key →
+      ∃ value, listPosition entries position = some (key, value) := by
+  induction entries with
+  | nil => intro position key h; cases h
+  | cons first rest ih =>
+    cases first with
+    | mk firstKey firstValue =>
+      intro position key h
+      cases position with
+      | zero => cases h; exact ⟨firstValue, rfl⟩
+      | succ index =>
+        cases ih index key h with
+        | intro value h => exact ⟨value, h⟩
+
+/-- Uniqueness is essential: a later duplicate key could store another value,
+while keyed lookup would still return the first occurrence. -/
+theorem keyedListLookup_at_position [DecidableEq α] {β : Type v} (entries : List (α × β)) :
+    (keyedListKeys entries).Nodup →
+      ∀ position key value, listPosition entries position = some (key, value) →
+        keyedListLookup entries key = some value := by
+  induction entries with
+  | nil => intro _ position key value h; cases h
+  | cons first rest ih =>
+    cases first with
+    | mk firstKey firstValue =>
+      intro unique position key value h
+      cases unique with
+      | cons headNe tailUnique =>
+        cases position with
+        | zero =>
+          cases h
+          change (if firstKey = firstKey then some firstValue else _) = some firstValue
+          rw [if_pos rfl]
+        | succ index =>
+          have hm := listPosition_mem rest index (key, value) h
+          have hk := keyedListKeys_mem rest key value hm
+          have hne : key ≠ firstKey := fun he => (headNe key hk) he.symm
+          change (if key = firstKey then some firstValue else keyedListLookup rest key) = some value
+          rw [if_neg hne]
+          exact ih tailUnique index key value h
+
+theorem boolRowKeys_keyed (row : BoolRow α) : boolRowKeys row = keyedListKeys row := by
+  induction row with
+  | nil => rfl
+  | cons first rest ih =>
+    cases first with
+    | mk key value => exact congrArg (List.cons key) ih
+
+theorem boolTableKeys_keyed (table : BoolTable α) : boolTableKeys table = keyedListKeys table := by
+  induction table with
+  | nil => rfl
+  | cons first rest ih =>
+    cases first with
+    | mk key row => exact congrArg (List.cons key) ih
+
+theorem boolRowKeys_length (row : BoolRow α) : (boolRowKeys row).length = row.length :=
+  (congrArg List.length (boolRowKeys_keyed row)).trans (keyedListKeys_length row)
+
+theorem boolTableKeys_length (table : BoolTable α) : (boolTableKeys table).length = table.length :=
+  (congrArg List.length (boolTableKeys_keyed table)).trans (keyedListKeys_length table)
+
+theorem boolRowLookup_of_keyedListLookup [DecidableEq α] (row : BoolRow α) :
+    ∀ key value, keyedListLookup row key = some value → boolRowLookup row key = value := by
+  induction row with
+  | nil => intro key value h; cases h
+  | cons first rest ih =>
+    cases first with
+    | mk header cell =>
+      intro key value h
+      by_cases he : key = header
+      · change (if key = header then some cell else _) = some value at h
+        rw [if_pos he] at h
+        change (if key = header then cell else _) = value
+        rw [if_pos he]
+        cases h
+        rfl
+      · change (if key = header then some cell else keyedListLookup rest key) = some value at h
+        rw [if_neg he] at h
+        change (if key = header then cell else boolRowLookup rest key) = value
+        rw [if_neg he]
+        exact ih key value h
+
+theorem boolTableLookup_of_keyedListLookup [DecidableEq α] (table : BoolTable α) :
+    ∀ key row, keyedListLookup table key = some row →
+      ∀ column, boolTableLookup table key column = boolRowLookup row column := by
+  induction table with
+  | nil => intro key row h; cases h
+  | cons first rest ih =>
+    cases first with
+    | mk header cells =>
+      intro key row h column
+      by_cases he : key = header
+      · change (if key = header then some cells else _) = some row at h
+        rw [if_pos he] at h
+        change (if key = header then boolRowLookup cells column else _) = boolRowLookup row column
+        rw [if_pos he]
+        cases h
+        rfl
+      · change (if key = header then some cells else keyedListLookup rest key) = some row at h
+        rw [if_neg he] at h
+        change (if key = header then boolRowLookup cells column else boolTableLookup rest key column) =
+          boolRowLookup row column
+        rw [if_neg he]
+        exact ih key row h column
+
+theorem eraseBoolRow_position (row : BoolRow α) :
+    ∀ position key value, listPosition row position = some (key, value) →
+      listPosition (eraseBoolRow row) position = some value := by
+  induction row with
+  | nil => intro position key value h; cases h
+  | cons first rest ih =>
+    cases first with
+    | mk header cell =>
+      intro position key value h
+      cases position with
+      | zero => cases h; rfl
+      | succ index => exact ih index key value h
+
+theorem eraseBoolTable_position (table : BoolTable α) :
+    ∀ position key row, listPosition table position = some (key, row) →
+      listPosition (eraseBoolTable table) position = some (eraseBoolRow row) := by
+  induction table with
+  | nil => intro position key row h; cases h
+  | cons first rest ih =>
+    cases first with
+    | mk header cells =>
+      intro position key row h
+      cases position with
+      | zero => cases h; rfl
+      | succ index => exact ih index key row h
+
+theorem eraseBoolTable_rowLengths (vertices : List α) (table : BoolTable α) :
+    (∀ key row, (key, row) ∈ table → boolRowKeys row = vertices) →
+      ∀ row, row ∈ eraseBoolTable table → row.length = vertices.length := by
+  induction table with
+  | nil => intro _ row hm; cases hm
+  | cons first rest ih =>
+    cases first with
+    | mk key cells =>
+      intro columns row hm
+      cases hm with
+      | head =>
+        exact (eraseBoolRow_length cells).trans ((boolRowKeys_length cells).symm.trans
+          (congrArg List.length (columns key cells (List.Mem.head rest))))
+      | tail _ hm =>
+        apply ih _ row hm
+        intro otherKey otherRow h
+        exact columns otherKey otherRow (List.Mem.tail (key, cells) h)
+
+structure PositionalBoolTableShape (size : Nat) (table : List (List Bool)) : Prop where
+  rows_length : table.length = size
+  columns_length : ∀ row, row ∈ table → row.length = size
+
+theorem eraseBoolTable_shape (vertices : List α) (table : BoolTable α)
+    (h : BoolTableShape vertices table) :
+    PositionalBoolTableShape vertices.length (eraseBoolTable table) where
+  rows_length := (eraseBoolTable_length table).trans ((boolTableKeys_length table).symm.trans
+    (congrArg List.length h.rows_exact))
+  columns_length := eraseBoolTable_rowLengths vertices table h.columns_exact
+
+theorem positionalBoolLookup_row_outOfBounds (table : List (List Bool)) (row column : Nat)
+    (h : table.length ≤ row) : positionalBoolLookup table row column = none := by
+  unfold positionalBoolLookup
+  rw [listPosition_none_of_length_le table row h]
+
+theorem positionalBoolLookup_column_outOfBounds (size : Nat) (table : List (List Bool))
+    (shape : PositionalBoolTableShape size table) (row column : Nat) (h : size ≤ column) :
+    positionalBoolLookup table row column = none := by
+  unfold positionalBoolLookup
+  cases hr : listPosition table row with
+  | none => rfl
+  | some values =>
+    have hm := listPosition_mem table row values hr
+    have hc : values.length ≤ column := by
+      rw [shape.columns_length values hm]
+      exact h
+    exact listPosition_none_of_length_le values column hc
+
+/-- Exact keyed-to-positional correspondence. The two Fin indices carry bounds;
+shape fixes the inventory order, and inventory uniqueness excludes duplicate-key
+ambiguity. No Python or Array execution semantics are asserted. -/
+theorem eraseBoolTable_lookup [DecidableEq α] (inventory : FiniteInventory α)
+    (table : BoolTable α) (shape : BoolTableShape inventory.vertices table)
+    (i j : Fin inventory.vertices.length) :
+    positionalBoolLookup (eraseBoolTable table) i.val j.val =
+      some (boolTableLookup table (inventory.vertices.get i) (inventory.vertices.get j)) := by
+  have hi : listPosition (keyedListKeys table) i.val = some (inventory.vertices.get i) :=
+    ((congrArg (fun keys => listPosition keys i.val) (boolTableKeys_keyed table).symm).trans
+      (congrArg (fun keys => listPosition keys i.val) shape.rows_exact)).trans
+      (listPosition_get inventory.vertices i)
+  have uniqueRows : (keyedListKeys table).Nodup := by
+    rw [← boolTableKeys_keyed table, shape.rows_exact]
+    exact inventory.nodup
+  cases pairPosition_of_keyPosition table i.val (inventory.vertices.get i) hi with
+  | intro row hr =>
+    have rowKeys := shape.columns_exact (inventory.vertices.get i) row
+      (listPosition_mem table i.val (inventory.vertices.get i, row) hr)
+    have hj : listPosition (keyedListKeys row) j.val = some (inventory.vertices.get j) :=
+      ((congrArg (fun keys => listPosition keys j.val) (boolRowKeys_keyed row).symm).trans
+        (congrArg (fun keys => listPosition keys j.val) rowKeys)).trans
+        (listPosition_get inventory.vertices j)
+    have uniqueColumns : (keyedListKeys row).Nodup := by
+      rw [← boolRowKeys_keyed row, rowKeys]
+      exact inventory.nodup
+    cases pairPosition_of_keyPosition row j.val (inventory.vertices.get j) hj with
+    | intro value hv =>
+      have rowLookup := keyedListLookup_at_position table uniqueRows i.val
+        (inventory.vertices.get i) row hr
+      have columnLookup := keyedListLookup_at_position row uniqueColumns j.val
+        (inventory.vertices.get j) value hv
+      have ht : boolTableLookup table (inventory.vertices.get i) (inventory.vertices.get j) = value :=
+        (boolTableLookup_of_keyedListLookup table _ row rowLookup _).trans
+          (boolRowLookup_of_keyedListLookup row _ value columnLookup)
+      unfold positionalBoolLookup
+      rw [eraseBoolTable_position table i.val _ row hr, eraseBoolRow_position row j.val _ value hv, ht]
+
+/-- A total convenience value. The bounded correspondence theorem proves its
+fallback unreachable on a well-shaped erased table; it is not a bounds check. -/
+def positionalBoolValue (table : List (List Bool)) (row column : Nat) : Bool :=
+  match positionalBoolLookup table row column with
+  | none => false
+  | some value => value
+
+theorem positionalBoolValue_correspondence [DecidableEq α] (inventory : FiniteInventory α)
+    (table : BoolTable α) (shape : BoolTableShape inventory.vertices table)
+    (i j : Fin inventory.vertices.length) :
+    positionalBoolValue (eraseBoolTable table) i.val j.val =
+      boolTableLookup table (inventory.vertices.get i) (inventory.vertices.get j) := by
+  unfold positionalBoolValue
+  rw [eraseBoolTable_lookup inventory table shape i j]
+
+/-- Per-cell snapshot pivot formula entirely in bounded positional inputs.
+This is still a pure list-table theorem, not a Python matrix refinement. -/
+theorem eraseBoolTable_pivot_formula [DecidableEq α] (inventory : FiniteInventory α)
+    (previous : BoolTable α) (shape : BoolTableShape inventory.vertices previous)
+    (i j k : Fin inventory.vertices.length) :
+    positionalBoolLookup
+      (eraseBoolTable (boolTablePivot inventory.vertices previous (inventory.vertices.get k))) i.val j.val =
+      some (positionalBoolValue (eraseBoolTable previous) i.val j.val ||
+        (positionalBoolValue (eraseBoolTable previous) i.val k.val &&
+          positionalBoolValue (eraseBoolTable previous) k.val j.val)) := by
+  rw [eraseBoolTable_lookup inventory _ (boolTablePivot_shape inventory.vertices previous _) i j]
+  rw [positionalBoolValue_correspondence inventory previous shape i j,
+    positionalBoolValue_correspondence inventory previous shape i k,
+    positionalBoolValue_correspondence inventory previous shape k j]
+  unfold boolTablePivot
+  rw [boolTableLookup_build inventory.vertices inventory.vertices _
+    (inventory.complete (inventory.vertices.get i)) (inventory.complete (inventory.vertices.get j))]
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
