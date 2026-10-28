@@ -2294,6 +2294,166 @@ theorem finiteWeightedCost_offset_lt_iff (inventory : FiniteInventory α)
         Nat.add_lt_add_right h _
       _ = finiteWeightedCost inventory (fun a => weight a + offset) t := ht.symm
 
+/-- When the cheaper base selection retains `extra` more vertices, a common
+offset separates into the same right summand and the two competing increments.
+The cost and count gaps are explicit equalities over natural numbers. -/
+theorem finiteWeightedCost_gap_factorization (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset gap extra : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + gap)
+    (counts : retainedCount inventory s = retainedCount inventory t + extra) :
+    (finiteWeightedCost inventory (fun a => weight a + offset) s =
+      offset * extra + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t)) ∧
+    (finiteWeightedCost inventory (fun a => weight a + offset) t =
+      gap + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t)) := by
+  constructor
+  · calc
+      finiteWeightedCost inventory (fun a => weight a + offset) s =
+          finiteWeightedCost inventory weight s + offset * retainedCount inventory s :=
+        finiteWeightedCost_uniformOffset inventory weight offset s
+      _ = finiteWeightedCost inventory weight s + offset * (retainedCount inventory t + extra) :=
+        congrArg (fun n => finiteWeightedCost inventory weight s + offset * n) counts
+      _ = finiteWeightedCost inventory weight s +
+          (offset * retainedCount inventory t + offset * extra) :=
+        congrArg (fun n => finiteWeightedCost inventory weight s + n)
+          (Nat.mul_add offset (retainedCount inventory t) extra)
+      _ = (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) +
+          offset * extra := (Nat.add_assoc _ _ _).symm
+      _ = offset * extra +
+          (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) :=
+        Nat.add_comm _ _
+  · calc
+      finiteWeightedCost inventory (fun a => weight a + offset) t =
+          finiteWeightedCost inventory weight t + offset * retainedCount inventory t :=
+        finiteWeightedCost_uniformOffset inventory weight offset t
+      _ = (finiteWeightedCost inventory weight s + gap) + offset * retainedCount inventory t :=
+        congrArg (fun n => n + offset * retainedCount inventory t) costs
+      _ = (gap + finiteWeightedCost inventory weight s) + offset * retainedCount inventory t :=
+        congrArg (fun n => n + offset * retainedCount inventory t) (Nat.add_comm _ _)
+      _ = gap + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) :=
+        Nat.add_assoc _ _ _
+
+/-- Pairwise comparison under explicit base-cost and retained-count gaps.
+This statement makes no unrestricted global-minimum or decoder claim. -/
+theorem finiteWeightedCost_gap_le_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset gap extra : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + gap)
+    (counts : retainedCount inventory s = retainedCount inventory t + extra) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s ≤
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔ offset * extra ≤ gap := by
+  have h := finiteWeightedCost_gap_factorization inventory weight offset gap extra costs counts
+  constructor
+  · intro comparison
+    apply cost_le_of_add_le_add_right
+      (finiteWeightedCost inventory weight s + offset * retainedCount inventory t)
+    calc
+      offset * extra + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) =
+          finiteWeightedCost inventory (fun a => weight a + offset) s := h.1.symm
+      _ ≤ finiteWeightedCost inventory (fun a => weight a + offset) t := comparison
+      _ = gap + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) := h.2
+  · intro comparison
+    calc
+      finiteWeightedCost inventory (fun a => weight a + offset) s =
+          offset * extra + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) := h.1
+      _ ≤ gap + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) :=
+        Nat.add_le_add_right comparison _
+      _ = finiteWeightedCost inventory (fun a => weight a + offset) t := h.2.symm
+
+theorem finiteWeightedCost_gap_eq_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset gap extra : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + gap)
+    (counts : retainedCount inventory s = retainedCount inventory t + extra) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s =
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔ offset * extra = gap := by
+  have h := finiteWeightedCost_gap_factorization inventory weight offset gap extra costs counts
+  constructor
+  · intro comparison
+    exact cost_add_right_cancel _ (h.1.symm.trans (comparison.trans h.2))
+  · intro comparison
+    exact h.1.trans ((congrArg
+      (fun n => n + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t))
+      comparison).trans h.2.symm)
+
+theorem finiteWeightedCost_gap_lt_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset gap extra : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + gap)
+    (counts : retainedCount inventory s = retainedCount inventory t + extra) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s <
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔ offset * extra < gap := by
+  have h := finiteWeightedCost_gap_factorization inventory weight offset gap extra costs counts
+  constructor
+  · intro comparison
+    apply Nat.lt_of_add_lt_add_right
+    calc
+      offset * extra + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) =
+          finiteWeightedCost inventory (fun a => weight a + offset) s := h.1.symm
+      _ < finiteWeightedCost inventory (fun a => weight a + offset) t := comparison
+      _ = gap + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) := h.2
+  · intro comparison
+    calc
+      finiteWeightedCost inventory (fun a => weight a + offset) s =
+          offset * extra + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) := h.1
+      _ < gap + (finiteWeightedCost inventory weight s + offset * retainedCount inventory t) :=
+        Nat.add_lt_add_right comparison _
+      _ = finiteWeightedCost inventory (fun a => weight a + offset) t := h.2.symm
+
+/-- A base-cost gap of thirteen and one extra retained vertex give an exact
+threshold for every common natural offset, with no subtraction or division. -/
+theorem finiteWeightedCost_gap13_le_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + 13)
+    (counts : retainedCount inventory s = retainedCount inventory t + 1) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s ≤
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔ offset ≤ 13 := by
+  have h := finiteWeightedCost_gap_le_iff inventory weight offset 13 1 costs counts
+  constructor
+  · intro comparison
+    calc
+      offset = offset * 1 := (Nat.mul_one offset).symm
+      _ ≤ 13 := h.mp comparison
+  · intro comparison
+    apply h.mpr
+    calc
+      offset * 1 = offset := Nat.mul_one offset
+      _ ≤ 13 := comparison
+
+theorem finiteWeightedCost_gap13_eq_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + 13)
+    (counts : retainedCount inventory s = retainedCount inventory t + 1) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s =
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔ offset = 13 := by
+  have h := finiteWeightedCost_gap_eq_iff inventory weight offset 13 1 costs counts
+  constructor
+  · intro comparison
+    exact (Nat.mul_one offset).symm.trans (h.mp comparison)
+  · intro comparison
+    exact h.mpr ((Nat.mul_one offset).trans comparison)
+
+theorem finiteWeightedCost_gap13_lt_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t]
+    (costs : finiteWeightedCost inventory weight t = finiteWeightedCost inventory weight s + 13)
+    (counts : retainedCount inventory s = retainedCount inventory t + 1) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s <
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔ offset < 13 := by
+  have h := finiteWeightedCost_gap_lt_iff inventory weight offset 13 1 costs counts
+  constructor
+  · intro comparison
+    calc
+      offset = offset * 1 := (Nat.mul_one offset).symm
+      _ < 13 := h.mp comparison
+  · intro comparison
+    apply h.mpr
+    calc
+      offset * 1 = offset := Nat.mul_one offset
+      _ < 13 := comparison
+
 /-- Scalar unequal-count illustrations. They do not certify any external model
 enumeration or serialized cost projection. -/
 theorem unequalCount_offset12 : (47 : Nat) + 12 * 11 < 60 + 12 * 10 := by decide
