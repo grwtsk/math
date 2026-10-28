@@ -256,12 +256,12 @@ def pivotClosure (relation : α → α → Prop) : List α → α → α → Pro
   | pivot :: rest, a, b => pivotStep (pivotClosure relation rest) pivot a b
 
 instance pivotClosureDecidable (relation : α → α → Prop) [DecidableRel relation]
-    (pivots : List α) : DecidableRel (pivotClosure relation pivots) := by
-  induction pivots with
-  | nil => exact inferInstanceAs (DecidableRel relation)
-  | cons pivot rest ih =>
-    letI : DecidableRel (pivotClosure relation rest) := ih
-    exact pivotStepDecidable (pivotClosure relation rest) pivot
+    (pivots : List α) : DecidableRel (pivotClosure relation pivots) :=
+  match pivots with
+  | [] => inferInstanceAs (DecidableRel relation)
+  | pivot :: rest =>
+    letI : DecidableRel (pivotClosure relation rest) := pivotClosureDecidable relation rest
+    pivotStepDecidable (pivotClosure relation rest) pivot
 
 /-- Composition through a specified vertex is already represented. -/
 def ClosedThrough (relation : α → α → Prop) (pivot : α) : Prop :=
@@ -353,15 +353,16 @@ def rootScan (required : α → Prop) (relation : α → α → Prop) : List α 
 
 instance rootScanDecidable (required : α → Prop) [DecidablePred required]
     (relation : α → α → Prop) [DecidableRel relation] (roots : List α) :
-    DecidablePred (rootScan required relation roots) := by
-  induction roots with
-  | nil => intro target; exact inferInstanceAs (Decidable False)
-  | cons root rest ih =>
-    intro target
-    letI : DecidablePred (rootScan required relation rest) := ih
-    change Decidable ((required root ∧ relation root target) ∨
-      rootScan required relation rest target)
-    infer_instance
+    DecidablePred (rootScan required relation roots) :=
+  match roots with
+  | [] => fun _ => inferInstanceAs (Decidable False)
+  | root :: rest => by
+      intro target
+      letI : DecidablePred (rootScan required relation rest) :=
+        rootScanDecidable required relation rest
+      change Decidable ((required root ∧ relation root target) ∨
+        rootScan required relation rest target)
+      infer_instance
 
 theorem rootScan_of_mem (required : α → Prop) (relation : α → α → Prop)
     (roots : List α) {root target : α} (hm : root ∈ roots)
@@ -422,7 +423,9 @@ theorem finitePrerequisiteClosure_feasible (inventory : FiniteInventory α)
   closed := by
     intro a b ha hab
     exact rootScan_transport required (pivotClosure (baseReach depends) inventory.vertices)
-      inventory.vertices (pivotClosure_transitive inventory (baseReach depends)) ha
+      inventory.vertices (by
+        intro x y z hxy hyz
+        exact pivotClosure_transitive inventory (baseReach depends) hxy hyz) ha
       (pivotClosure_extends (baseReach depends) inventory.vertices (Or.inr hab))
 
 theorem finitePrerequisiteClosure_sound (inventory : FiniteInventory α)
@@ -444,9 +447,12 @@ theorem finitePrerequisiteClosure_complete (inventory : FiniteInventory α)
 
 theorem finitePrerequisiteClosure_iff (inventory : FiniteInventory α)
     (required : α → Prop) (depends : α → α → Prop) (a : α) :
-    finitePrerequisiteClosure inventory required depends a ↔ Closure required depends a :=
-  ⟨finitePrerequisiteClosure_sound inventory required depends,
-    finitePrerequisiteClosure_complete inventory required depends⟩
+    finitePrerequisiteClosure inventory required depends a ↔ Closure required depends a := by
+  constructor
+  · intro h
+    exact finitePrerequisiteClosure_sound inventory required depends h
+  · intro h
+    exact finitePrerequisiteClosure_complete inventory required depends h
 
 /-- An executable Boolean answer from finite decidable roots, edges and equality. -/
 def decideFinitePrerequisiteClosure [DecidableEq α] (inventory : FiniteInventory α)
