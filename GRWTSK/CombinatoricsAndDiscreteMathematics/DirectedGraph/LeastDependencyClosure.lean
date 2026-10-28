@@ -127,6 +127,7 @@ theorem vertexCost_mono (weight : α → Nat) {s t : α → Prop}
     vertexCost weight s a ≤ vertexCost weight t a := by
   by_cases hs : s a
   · rw [vertexCost, vertexCost, if_pos hs, if_pos (h hs)]
+    exact Nat.le_refl _
   · rw [vertexCost, if_neg hs]
     exact Nat.zero_le _
 
@@ -156,18 +157,17 @@ theorem weightedCost_lt_of_extra (vertices : List α) (weight : α → Nat)
     (hs : ¬ s a) (ht : t a) (hw : 0 < weight a) :
     weightedCost weight s vertices < weightedCost weight t vertices := by
   induction vertices with
-  | nil => exact False.elim (List.not_mem_nil ha)
+  | nil => cases ha
   | cons b rest ih =>
-    cases List.mem_cons.mp ha with
-    | inl hab =>
-      cases hab
+    cases ha with
+    | head =>
       change vertexCost weight s a + weightedCost weight s rest <
         vertexCost weight t a + weightedCost weight t rest
       rw [vertexCost, vertexCost, if_neg hs, if_pos ht]
       exact Nat.lt_of_lt_of_le
         (Nat.add_lt_add_right hw (weightedCost weight s rest))
         (Nat.add_le_add_left (weightedCost_mono rest weight h) (weight a))
-    | inr ha =>
+    | tail _ ha =>
       exact Nat.lt_of_le_of_lt
         (Nat.add_le_add_right (vertexCost_mono weight h b) (weightedCost weight s rest))
         (Nat.add_lt_add_left (ih ha) (vertexCost weight t b))
