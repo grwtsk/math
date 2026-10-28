@@ -2208,6 +2208,19 @@ theorem retainedCount_le_inventory (inventory : FiniteInventory α) (retained : 
     [DecidablePred retained] : retainedCount inventory retained ≤ inventory.vertices.length :=
   weightedCost_unit_le_length inventory.vertices retained
 
+/-- Structural right cancellation avoids stronger imported proof dependencies. -/
+theorem cost_add_right_cancel {a b : Nat} (offset : Nat) :
+    a + offset = b + offset → a = b := by
+  induction offset with
+  | zero => intro h; exact h
+  | succ offset ih => intro h; exact ih (Nat.succ.inj h)
+
+theorem cost_le_of_add_le_add_right {a b : Nat} (offset : Nat) :
+    a + offset ≤ b + offset → a ≤ b := by
+  induction offset with
+  | zero => intro h; exact h
+  | succ offset ih => intro h; exact ih (Nat.le_of_succ_le_succ h)
+
 /-- A common uniform offset preserves comparisons only under the explicit
 equal-retained-count premise. This is not an unrestricted argmin theorem. -/
 theorem finiteWeightedCost_offset_eq_iff (inventory : FiniteInventory α)
@@ -2223,7 +2236,7 @@ theorem finiteWeightedCost_offset_eq_iff (inventory : FiniteInventory α)
   have ht := finiteWeightedCost_uniformOffset inventory weight offset t
   constructor
   · intro h
-    exact Nat.add_right_cancel (hs.symm.trans (h.trans ht))
+    exact cost_add_right_cancel _ (hs.symm.trans (h.trans ht))
   · intro h
     exact hs.trans ((congrArg (fun n => n + offset * retainedCount inventory t) h).trans ht.symm)
 
@@ -2240,7 +2253,7 @@ theorem finiteWeightedCost_offset_le_iff (inventory : FiniteInventory α)
   have ht := finiteWeightedCost_uniformOffset inventory weight offset t
   constructor
   · intro h
-    apply Nat.le_of_add_le_add_right
+    apply cost_le_of_add_le_add_right (offset * retainedCount inventory t)
     calc
       finiteWeightedCost inventory weight s + offset * retainedCount inventory t =
           finiteWeightedCost inventory (fun a => weight a + offset) s := hs.symm
