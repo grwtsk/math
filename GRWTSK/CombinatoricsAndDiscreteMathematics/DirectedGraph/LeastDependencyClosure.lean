@@ -2138,4 +2138,122 @@ theorem eraseBoolTable_pivot_formula [DecidableEq α] (inventory : FiniteInvento
   rw [boolTableLookup_build inventory.vertices inventory.vertices _
     (inventory.complete (inventory.vertices.get i)) (inventory.complete (inventory.vertices.get j))]
 
+/-- Unit-weight cost counts retained vertices once in a complete duplicate-free
+inventory. The underlying list law below counts occurrences for arbitrary lists. -/
+def retainedCount (inventory : FiniteInventory α) (retained : α → Prop)
+    [DecidablePred retained] : Nat :=
+  finiteWeightedCost inventory (fun _ => 1) retained
+
+theorem vertexCost_uniformOffset (weight : α → Nat) (offset : Nat)
+    (retained : α → Prop) [DecidablePred retained] (a : α) :
+    vertexCost (fun x => weight x + offset) retained a =
+      vertexCost weight retained a + offset * vertexCost (fun _ => 1) retained a := by
+  by_cases ha : retained a
+  · simp only [vertexCost, if_pos ha, Nat.mul_one]
+  · simp only [vertexCost, if_neg ha, Nat.mul_zero, Nat.add_zero]
+
+theorem cost_add_shuffle (a b c d : Nat) : (a + b) + (c + d) = (a + c) + (b + d) := by
+  calc
+    (a + b) + (c + d) = a + (b + (c + d)) := Nat.add_assoc a b (c + d)
+    _ = a + ((b + c) + d) := congrArg (fun x => a + x) (Nat.add_assoc b c d).symm
+    _ = a + ((c + b) + d) := congrArg (fun x => a + (x + d)) (Nat.add_comm b c)
+    _ = a + (c + (b + d)) := congrArg (fun x => a + x) (Nat.add_assoc c b d)
+    _ = (a + c) + (b + d) := (Nat.add_assoc a c (b + d)).symm
+
+theorem weightedCost_uniformOffset (vertices : List α) (weight : α → Nat) (offset : Nat)
+    (retained : α → Prop) [DecidablePred retained] :
+    weightedCost (fun a => weight a + offset) retained vertices =
+      weightedCost weight retained vertices + offset * weightedCost (fun _ => 1) retained vertices := by
+  induction vertices with
+  | nil =>
+    change 0 = 0 + offset * 0
+    rw [Nat.mul_zero]
+  | cons a rest ih =>
+    change vertexCost (fun x => weight x + offset) retained a +
+      weightedCost (fun x => weight x + offset) retained rest =
+      (vertexCost weight retained a + weightedCost weight retained rest) +
+        offset * (vertexCost (fun _ => 1) retained a + weightedCost (fun _ => 1) retained rest)
+    rw [vertexCost_uniformOffset weight offset retained a, ih, Nat.mul_add]
+    exact cost_add_shuffle _ _ _ _
+
+theorem finiteWeightedCost_uniformOffset (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) (retained : α → Prop) [DecidablePred retained] :
+    finiteWeightedCost inventory (fun a => weight a + offset) retained =
+      finiteWeightedCost inventory weight retained + offset * retainedCount inventory retained :=
+  weightedCost_uniformOffset inventory.vertices weight offset retained
+
+theorem retainedCount_mono (inventory : FiniteInventory α) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (h : Included s t) :
+    retainedCount inventory s ≤ retainedCount inventory t :=
+  finiteWeightedCost_mono inventory (fun _ => 1) h
+
+theorem weightedCost_unit_le_length (vertices : List α) (retained : α → Prop)
+    [DecidablePred retained] : weightedCost (fun _ => 1) retained vertices ≤ vertices.length := by
+  induction vertices with
+  | nil => exact Nat.le_refl 0
+  | cons a rest ih =>
+    have headBound : vertexCost (fun _ => 1) retained a ≤ 1 := by
+      by_cases ha : retained a
+      · rw [vertexCost, if_pos ha]
+        exact Nat.le_refl 1
+      · rw [vertexCost, if_neg ha]
+        exact Nat.zero_le 1
+    calc
+      weightedCost (fun _ => 1) retained (a :: rest) ≤ 1 + rest.length :=
+        Nat.add_le_add headBound ih
+      _ = rest.length + 1 := Nat.add_comm 1 rest.length
+
+theorem retainedCount_le_inventory (inventory : FiniteInventory α) (retained : α → Prop)
+    [DecidablePred retained] : retainedCount inventory retained ≤ inventory.vertices.length :=
+  weightedCost_unit_le_length inventory.vertices retained
+
+/-- A common uniform offset preserves comparisons only under the explicit
+equal-retained-count premise. This is not an unrestricted argmin theorem. -/
+theorem finiteWeightedCost_offset_eq_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (counts : retainedCount inventory s = retainedCount inventory t) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s =
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔
+      finiteWeightedCost inventory weight s = finiteWeightedCost inventory weight t := by
+  rw [finiteWeightedCost_uniformOffset inventory weight offset s,
+    finiteWeightedCost_uniformOffset inventory weight offset t, counts]
+  constructor
+  · exact Nat.add_right_cancel
+  · intro h
+    rw [h]
+
+theorem finiteWeightedCost_offset_le_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (counts : retainedCount inventory s = retainedCount inventory t) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s ≤
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔
+      finiteWeightedCost inventory weight s ≤ finiteWeightedCost inventory weight t := by
+  rw [finiteWeightedCost_uniformOffset inventory weight offset s,
+    finiteWeightedCost_uniformOffset inventory weight offset t, counts]
+  constructor
+  · exact Nat.le_of_add_le_add_right
+  · intro h
+    exact Nat.add_le_add_right h _
+
+theorem finiteWeightedCost_offset_lt_iff (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (counts : retainedCount inventory s = retainedCount inventory t) :
+    finiteWeightedCost inventory (fun a => weight a + offset) s <
+        finiteWeightedCost inventory (fun a => weight a + offset) t ↔
+      finiteWeightedCost inventory weight s < finiteWeightedCost inventory weight t := by
+  rw [finiteWeightedCost_uniformOffset inventory weight offset s,
+    finiteWeightedCost_uniformOffset inventory weight offset t, counts]
+  constructor
+  · exact Nat.lt_of_add_lt_add_right
+  · intro h
+    exact Nat.add_lt_add_right h _
+
+/-- Scalar unequal-count illustrations. They do not certify any external model
+enumeration or serialized cost projection. -/
+theorem unequalCount_offset12 : (47 : Nat) + 12 * 11 < 60 + 12 * 10 := by decide
+
+theorem unequalCount_offset13 : (47 : Nat) + 13 * 11 = 60 + 13 * 10 := by decide
+
+theorem unequalCount_offset14 : (60 : Nat) + 14 * 10 < 47 + 14 * 11 := by decide
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
