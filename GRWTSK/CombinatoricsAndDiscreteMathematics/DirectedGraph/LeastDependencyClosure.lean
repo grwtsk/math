@@ -2149,8 +2149,9 @@ theorem vertexCost_uniformOffset (weight : α → Nat) (offset : Nat)
     vertexCost (fun x => weight x + offset) retained a =
       vertexCost weight retained a + offset * vertexCost (fun _ => 1) retained a := by
   by_cases ha : retained a
-  · simp only [vertexCost, if_pos ha, Nat.mul_one]
-  · simp only [vertexCost, if_neg ha, Nat.mul_zero, Nat.add_zero]
+  · rw [vertexCost, vertexCost, vertexCost, if_pos ha, if_pos ha, if_pos ha, Nat.mul_one]
+  · rw [vertexCost, vertexCost, vertexCost, if_neg ha, if_neg ha, if_neg ha, Nat.mul_zero,
+      Nat.add_zero]
 
 theorem cost_add_shuffle (a b c d : Nat) : (a + b) + (c + d) = (a + c) + (b + d) := by
   calc
