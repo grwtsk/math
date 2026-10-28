@@ -1054,4 +1054,388 @@ theorem prerequisiteCNFModel_minimizes [DecidableEq α] (inventory : FiniteInven
       finiteWeightedCost inventory weight retained :=
   finiteWeightedCost_mono inventory weight (prerequisiteCNFModel_least inventory clauses h)
 
+/-- Signed typed variables. Raw integer signs, bounds and JSON are separate. -/
+inductive SignedLiteral (α : Type u) where
+  | positive (node : α)
+  | negative (node : α)
+  deriving DecidableEq
+
+def signedLiteralHolds (retained : α → Prop) (literal : SignedLiteral α) : Prop :=
+  match literal with
+  | .positive node => retained node
+  | .negative node => ¬ retained node
+
+def signedClauseSatisfied (retained : α → Prop) (literals : List (SignedLiteral α)) : Prop :=
+  match literals with
+  | [] => False
+  | literal :: rest => signedLiteralHolds retained literal ∨ signedClauseSatisfied retained rest
+
+/-- Tail-first duplicate elimination keeps the last occurrence of each value
+and preserves the relative order of those last occurrences. -/
+def typedDeduplicate {β : Type u} [DecidableEq β] (entries : List β) : List β :=
+  match entries with
+  | [] => []
+  | first :: rest =>
+    let tail := typedDeduplicate rest
+    match typedListMembershipDecision first tail with
+    | isTrue _ => tail
+    | isFalse _ => first :: tail
+
+theorem typedDeduplicate_mem_iff {β : Type u} [DecidableEq β] (entries : List β) :
+    ∀ value, value ∈ typedDeduplicate entries ↔ value ∈ entries := by
+  induction entries with
+  | nil =>
+    intro value
+    constructor <;> intro hm <;> cases hm
+  | cons first rest ih =>
+    intro value
+    cases hd : typedListMembershipDecision first (typedDeduplicate rest) with
+    | isTrue hf =>
+      rw [typedDeduplicate, hd]
+      constructor
+      · intro hm
+        exact List.Mem.tail first ((ih value).mp hm)
+      · intro hm
+        cases hm with
+        | head => exact hf
+        | tail _ hm => exact (ih value).mpr hm
+    | isFalse hn =>
+      rw [typedDeduplicate, hd]
+      constructor
+      · intro hm
+        cases hm with
+        | head => exact List.Mem.head rest
+        | tail _ hm => exact List.Mem.tail first ((ih value).mp hm)
+      · intro hm
+        cases hm with
+        | head => exact List.Mem.head (typedDeduplicate rest)
+        | tail _ hm => exact List.Mem.tail first ((ih value).mpr hm)
+
+theorem typedDeduplicate_nodup {β : Type u} [DecidableEq β] (entries : List β) :
+    (typedDeduplicate entries).Nodup := by
+  induction entries with
+  | nil => exact List.Pairwise.nil
+  | cons first rest ih =>
+    cases hd : typedListMembershipDecision first (typedDeduplicate rest) with
+    | isTrue hf => rw [typedDeduplicate, hd]; exact ih
+    | isFalse hn =>
+      rw [typedDeduplicate, hd]
+      apply List.Pairwise.cons
+      · intro value hm he
+        cases he
+        exact hn hm
+      · exact ih
+
+theorem signedClauseSatisfied_iff_exists (retained : α → Prop) (literals : List (SignedLiteral α)) :
+    signedClauseSatisfied retained literals ↔
+      ∃ literal, literal ∈ literals ∧ signedLiteralHolds retained literal := by
+  induction literals with
+  | nil =>
+    constructor
+    · intro h; exact False.elim h
+    · intro h
+      cases h with
+      | intro literal h => cases h.1
+  | cons first rest ih =>
+    constructor
+    · intro h
+      cases h with
+      | inl h => exact ⟨first, List.Mem.head rest, h⟩
+      | inr h =>
+        cases ih.mp h with
+        | intro literal h => exact ⟨literal, List.Mem.tail first h.1, h.2⟩
+    · intro h
+      cases h with
+      | intro literal h =>
+        cases h.1 with
+        | head => exact Or.inl h.2
+        | tail _ hm => exact Or.inr (ih.mpr ⟨literal, hm, h.2⟩)
+
+theorem signedClauseSatisfied_deduplicate [DecidableEq α] (retained : α → Prop)
+    (literals : List (SignedLiteral α)) :
+    signedClauseSatisfied retained (typedDeduplicate literals) ↔ signedClauseSatisfied retained literals := by
+  constructor
+  · intro h
+    cases (signedClauseSatisfied_iff_exists retained _).mp h with
+    | intro literal h =>
+      exact (signedClauseSatisfied_iff_exists retained _).mpr
+        ⟨literal, (typedDeduplicate_mem_iff literals literal).mp h.1, h.2⟩
+  · intro h
+    cases (signedClauseSatisfied_iff_exists retained _).mp h with
+    | intro literal h =>
+      exact (signedClauseSatisfied_iff_exists retained _).mpr
+        ⟨literal, (typedDeduplicate_mem_iff literals literal).mpr h.1, h.2⟩
+
+def complementaryAt (literals : List (SignedLiteral α)) (node : α) : Prop :=
+  SignedLiteral.positive node ∈ literals ∧ SignedLiteral.negative node ∈ literals
+
+def complementaryAtDecision [DecidableEq α] (literals : List (SignedLiteral α)) (node : α) :
+    Decidable (complementaryAt literals node) :=
+  match typedListMembershipDecision (SignedLiteral.positive node) literals,
+      typedListMembershipDecision (SignedLiteral.negative node) literals with
+  | isTrue hp, isTrue hn => isTrue ⟨hp, hn⟩
+  | isFalse hp, _ => isFalse (fun h => hp h.1)
+  | _, isFalse hn => isFalse (fun h => hn h.2)
+
+/-- The first complementary node in the supplied inventory order is returned.
+This is a numeric least-index witness only for an ascending indexed inventory;
+the normalized `tautology` constructor itself erases the witness. -/
+def complementaryWitness [DecidableEq α] (nodes : List α) (literals : List (SignedLiteral α)) : Option α :=
+  match nodes with
+  | [] => none
+  | node :: rest =>
+    match complementaryAtDecision literals node with
+    | isTrue _ => some node
+    | isFalse _ => complementaryWitness rest literals
+
+theorem complementaryWitness_sound [DecidableEq α] (nodes : List α)
+    (literals : List (SignedLiteral α)) {node : α}
+    (h : complementaryWitness nodes literals = some node) : complementaryAt literals node := by
+  induction nodes with
+  | nil => cases h
+  | cons candidate rest ih =>
+    cases hd : complementaryAtDecision literals candidate with
+    | isTrue hc =>
+      rw [complementaryWitness, hd] at h
+      cases h
+      exact hc
+    | isFalse hn =>
+      rw [complementaryWitness, hd] at h
+      exact ih h
+
+theorem complementaryWitness_none [DecidableEq α] (nodes : List α)
+    (literals : List (SignedLiteral α)) :
+    complementaryWitness nodes literals = none →
+      ∀ node, node ∈ nodes → ¬ complementaryAt literals node := by
+  induction nodes with
+  | nil => intro _ node hm; cases hm
+  | cons candidate rest ih =>
+    intro h node hm
+    cases hd : complementaryAtDecision literals candidate with
+    | isTrue hc => rw [complementaryWitness, hd] at h; cases h
+    | isFalse hn =>
+      rw [complementaryWitness, hd] at h
+      cases hm with
+      | head => exact hn
+      | tail _ hm => exact ih h node hm
+
+theorem complementaryWitness_complete [DecidableEq α] (inventory : FiniteInventory α)
+    (literals : List (SignedLiteral α)) {node : α} (h : complementaryAt literals node) :
+    ∃ witness, complementaryWitness inventory.vertices literals = some witness := by
+  cases hw : complementaryWitness inventory.vertices literals with
+  | none =>
+    exact False.elim ((complementaryWitness_none inventory.vertices literals hw node
+      (inventory.complete node)) h)
+  | some witness => exact ⟨witness, hw⟩
+
+/-- This classifier has no catch-all acceptance case. Its input has already
+had repeats removed and complementary pairs checked by the full normalizer. -/
+def classifyPrerequisiteLiterals (literals : List (SignedLiteral α)) : Option (PrerequisiteClause α) :=
+  match literals with
+  | [] => none
+  | first :: rest =>
+    match rest with
+    | [] =>
+      match first with
+      | .positive node => some (.unit node)
+      | .negative _ => none
+    | second :: tail =>
+      match tail with
+      | _ :: _ => none
+      | [] =>
+        match first, second with
+        | .negative consumer, .positive dependency => some (.prerequisite consumer dependency)
+        | .positive dependency, .negative consumer => some (.prerequisite consumer dependency)
+        | _, _ => none
+
+theorem classifyPrerequisiteLiterals_empty :
+    classifyPrerequisiteLiterals ([] : List (SignedLiteral α)) = none := rfl
+
+theorem classifyPrerequisiteLiterals_negative_unit (node : α) :
+    classifyPrerequisiteLiterals [.negative node] = none := rfl
+
+theorem classifyPrerequisiteLiterals_positive_or (a b : α) :
+    classifyPrerequisiteLiterals [.positive a, .positive b] = none := rfl
+
+theorem classifyPrerequisiteLiterals_negative_pair (a b : α) :
+    classifyPrerequisiteLiterals [.negative a, .negative b] = none := rfl
+
+theorem classifyPrerequisiteLiterals_long (a b c : SignedLiteral α) (rest : List (SignedLiteral α)) :
+    classifyPrerequisiteLiterals (a :: b :: c :: rest) = none := rfl
+
+theorem signedClauseSatisfied_singleton (retained : α → Prop) (literal : SignedLiteral α) :
+    signedClauseSatisfied retained [literal] ↔ signedLiteralHolds retained literal := by
+  constructor
+  · intro h
+    cases h with
+    | inl h => exact h
+    | inr h => exact False.elim h
+  · intro h; exact Or.inl h
+
+theorem signedClauseSatisfied_pair (retained : α → Prop) (a b : SignedLiteral α) :
+    signedClauseSatisfied retained [a, b] ↔ signedLiteralHolds retained a ∨ signedLiteralHolds retained b := by
+  constructor
+  · intro h
+    cases h with
+    | inl h => exact Or.inl h
+    | inr h => exact Or.inr ((signedClauseSatisfied_singleton retained b).mp h)
+  · intro h
+    cases h with
+    | inl h => exact Or.inl h
+    | inr h => exact Or.inr ((signedClauseSatisfied_singleton retained b).mpr h)
+
+theorem classifyPrerequisiteLiterals_sound (retained : α → Prop)
+    (literals : List (SignedLiteral α)) (clause : PrerequisiteClause α)
+    (h : classifyPrerequisiteLiterals literals = some clause) :
+    signedClauseSatisfied retained literals ↔ prerequisiteClauseHolds retained clause := by
+  cases literals with
+  | nil => cases h
+  | cons first rest =>
+    cases rest with
+    | nil =>
+      cases first with
+      | positive node =>
+        change some (PrerequisiteClause.unit node) = some clause at h
+        cases h
+        exact signedClauseSatisfied_singleton retained (.positive node)
+      | negative node => cases h
+    | cons second tail =>
+      cases tail with
+      | cons third rest => cases h
+      | nil =>
+        cases first with
+        | negative consumer =>
+          cases second with
+          | negative other => cases h
+          | positive dependency =>
+            change some (PrerequisiteClause.prerequisite consumer dependency) = some clause at h
+            cases h
+            exact signedClauseSatisfied_pair retained (.negative consumer) (.positive dependency)
+        | positive dependency =>
+          cases second with
+          | positive other => cases h
+          | negative consumer =>
+            change some (PrerequisiteClause.prerequisite consumer dependency) = some clause at h
+            cases h
+            constructor
+            · intro hs
+              cases (signedClauseSatisfied_pair retained _ _).mp hs with
+              | inl hd => exact Or.inr hd
+              | inr hc => exact Or.inl hc
+            · intro hs
+              apply (signedClauseSatisfied_pair retained _ _).mpr
+              cases hs with
+              | inl hc => exact Or.inr hc
+              | inr hd => exact Or.inl hd
+
+def normalizePrerequisiteClause [DecidableEq α] (inventory : FiniteInventory α)
+    (literals : List (SignedLiteral α)) : Option (PrerequisiteClause α) :=
+  let normalized := typedDeduplicate literals
+  match complementaryWitness inventory.vertices normalized with
+  | some _ => some .tautology
+  | none => classifyPrerequisiteLiterals normalized
+
+theorem complementaryWitness_empty [DecidableEq α] (nodes : List α) :
+    complementaryWitness nodes ([] : List (SignedLiteral α)) = none := by
+  induction nodes with
+  | nil => rfl
+  | cons node rest ih => exact ih
+
+theorem normalizePrerequisiteClause_empty [DecidableEq α] (inventory : FiniteInventory α) :
+    normalizePrerequisiteClause inventory [] = none := by
+  unfold normalizePrerequisiteClause
+  rw [typedDeduplicate, complementaryWitness_empty]
+  rfl
+
+theorem normalizePrerequisiteClause_complementary [DecidableEq α] (inventory : FiniteInventory α)
+    (literals : List (SignedLiteral α)) {node : α} (h : complementaryAt literals node) :
+    normalizePrerequisiteClause inventory literals = some .tautology := by
+  have hd : complementaryAt (typedDeduplicate literals) node :=
+    ⟨(typedDeduplicate_mem_iff literals (.positive node)).mpr h.1,
+      (typedDeduplicate_mem_iff literals (.negative node)).mpr h.2⟩
+  cases complementaryWitness_complete inventory (typedDeduplicate literals) hd with
+  | intro witness hw =>
+    unfold normalizePrerequisiteClause
+    rw [hw]
+
+/-- Successful executable normalization preserves ordinary signed-clause
+satisfaction. Unsupported shapes have no success premise and gain no theorem. -/
+theorem normalizePrerequisiteClause_sound [DecidableEq α] (inventory : FiniteInventory α)
+    (retained : α → Prop) [DecidablePred retained] (literals : List (SignedLiteral α))
+    (clause : PrerequisiteClause α) (h : normalizePrerequisiteClause inventory literals = some clause) :
+    signedClauseSatisfied retained literals ↔ prerequisiteClauseHolds retained clause := by
+  unfold normalizePrerequisiteClause at h
+  cases hw : complementaryWitness inventory.vertices (typedDeduplicate literals) with
+  | none =>
+    rw [hw] at h
+    exact Iff.trans (signedClauseSatisfied_deduplicate retained literals).symm
+      (classifyPrerequisiteLiterals_sound retained _ clause h)
+  | some witness =>
+    rw [hw] at h
+    cases h
+    have hp := complementaryWitness_sound inventory.vertices (typedDeduplicate literals) hw
+    have hs : signedClauseSatisfied retained (typedDeduplicate literals) := by
+      by_cases hr : retained witness
+      · exact (signedClauseSatisfied_iff_exists retained _).mpr ⟨.positive witness, hp.1, hr⟩
+      · exact (signedClauseSatisfied_iff_exists retained _).mpr ⟨.negative witness, hp.2, hr⟩
+    constructor
+    · intro _; exact True.intro
+    · intro _; exact (signedClauseSatisfied_deduplicate retained literals).mp hs
+
+def signedCNFSatisfied (retained : α → Prop) (clauses : List (List (SignedLiteral α))) : Prop :=
+  match clauses with
+  | [] => True
+  | clause :: rest => signedClauseSatisfied retained clause ∧ signedCNFSatisfied retained rest
+
+def normalizePrerequisiteCNF [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (List (SignedLiteral α))) : Option (List (PrerequisiteClause α)) :=
+  match clauses with
+  | [] => some []
+  | clause :: rest =>
+    match normalizePrerequisiteClause inventory clause with
+    | none => none
+    | some typed =>
+      match normalizePrerequisiteCNF inventory rest with
+      | none => none
+      | some tail => some (typed :: tail)
+
+theorem normalizePrerequisiteCNF_sound [DecidableEq α] (inventory : FiniteInventory α)
+    (retained : α → Prop) [DecidablePred retained] (clauses : List (List (SignedLiteral α)))
+    (typed : List (PrerequisiteClause α)) (h : normalizePrerequisiteCNF inventory clauses = some typed) :
+    signedCNFSatisfied retained clauses ↔ prerequisiteCNFSatisfied retained typed := by
+  induction clauses generalizing typed with
+  | nil => cases h; exact Iff.rfl
+  | cons clause rest ih =>
+    cases hc : normalizePrerequisiteClause inventory clause with
+    | none => rw [normalizePrerequisiteCNF, hc] at h; cases h
+    | some first =>
+      rw [normalizePrerequisiteCNF, hc] at h
+      cases hr : normalizePrerequisiteCNF inventory rest with
+      | none => rw [hr] at h; cases h
+      | some tail =>
+        rw [hr] at h
+        cases h
+        constructor
+        · intro hs
+          exact ⟨(normalizePrerequisiteClause_sound inventory retained clause first hc).mp hs.1,
+            (ih tail hr).mp hs.2⟩
+        · intro hs
+          exact ⟨(normalizePrerequisiteClause_sound inventory retained clause first hc).mpr hs.1,
+            (ih tail hr).mpr hs.2⟩
+
+theorem normalizePrerequisiteCNF_model_satisfies [DecidableEq α] (inventory : FiniteInventory α)
+    (clauses : List (List (SignedLiteral α))) (typed : List (PrerequisiteClause α))
+    (h : normalizePrerequisiteCNF inventory clauses = some typed) :
+    signedCNFSatisfied (prerequisiteCNFModel inventory typed) clauses :=
+  (normalizePrerequisiteCNF_sound inventory _ clauses typed h).mpr (prerequisiteCNFModel_satisfies inventory typed)
+
+theorem normalizePrerequisiteCNF_model_minimizes [DecidableEq α] (inventory : FiniteInventory α)
+    (weight : α → Nat) (clauses : List (List (SignedLiteral α))) (typed : List (PrerequisiteClause α))
+    (hn : normalizePrerequisiteCNF inventory clauses = some typed)
+    {retained : α → Prop} [DecidablePred retained] (hs : signedCNFSatisfied retained clauses) :
+    finiteWeightedCost inventory weight (prerequisiteCNFModel inventory typed) ≤
+      finiteWeightedCost inventory weight retained :=
+  prerequisiteCNFModel_minimizes inventory weight typed
+    ((normalizePrerequisiteCNF_sound inventory retained clauses typed hn).mp hs)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
