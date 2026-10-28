@@ -204,4 +204,44 @@ theorem rational_correction_ge_neg_one (x h : ℝ)
   have hc := (rationalTentCorrection_bounds x h hh (by linarith)).1
   linarith
 
+/-- Complete signed loss from the actual prime-only tent main term.
+This is source-derived; it is not a freely assigned remainder. -/
+def signedTentDefect (x h : ℝ) : ℝ :=
+  (zeroContribution x h).re - rationalTentCorrection x h + properPowerTent x h
+
+/-- Exact return before any triangle inequality. Both zero-height signs,
+analytic multiplicity, the rational correction, and proper powers are retained. -/
+theorem primeTent_eq_radius_sub_signedDefect (x h : ℝ)
+    (hh : 0 < h) (ha : 1 < x - h) :
+    primeTent x h = h - signedTentDefect x h := by
+  have he := mangoldtTent_explicit x h hh ha
+  have hs := mangoldtTent_split x h hh
+  unfold signedTentDefect
+  linarith
+
+/-- The same identity gives a two-way comparison with a prime-TENT lower bound,
+not with the weaker unweighted prime count. -/
+theorem signedDefect_le_iff_primeTent_ge (x h U : ℝ)
+    (hh : 0 < h) (ha : 1 < x - h) :
+    signedTentDefect x h ≤ U ↔ h - U ≤ primeTent x h := by
+  rw [primeTent_eq_radius_sub_signedDefect x h hh ha]
+  constructor <;> intro he <;> linarith
+
+/-- Source-exact one-sided count consumer without taking absolute values. -/
+theorem prime_count_signed_master_bound (x h : ℝ)
+    (hh : 0 < h) (ha : 1 < x - h) :
+    h - signedTentDefect x h ≤
+      Real.log (x + h) * (primeCount (x - h) (x + h) : ℝ) := by
+  rw [← primeTent_eq_radius_sub_signedDefect x h hh ha]
+  exact primeTent_le_count x h hh (by linarith)
+
+/-- Older norm allowances remain valid, but their absolute-value loss is optional. -/
+theorem signedDefect_le_norm_allowance (x h : ℝ) :
+    signedTentDefect x h ≤
+      ‖zeroContribution x h‖ - rationalTentCorrection x h + properPowerTent x h := by
+  have hz : (zeroContribution x h).re ≤ ‖zeroContribution x h‖ :=
+    (le_abs_self _).trans (Complex.abs_re_le_norm _)
+  unfold signedTentDefect
+  linarith
+
 end GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount
