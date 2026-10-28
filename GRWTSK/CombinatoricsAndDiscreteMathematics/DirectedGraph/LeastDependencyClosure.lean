@@ -1226,7 +1226,7 @@ theorem complementaryWitness_complete [DecidableEq α] (inventory : FiniteInvent
   | none =>
     exact False.elim ((complementaryWitness_none inventory.vertices literals hw node
       (inventory.complete node)) h)
-  | some witness => exact ⟨witness, hw⟩
+  | some witness => exact ⟨witness, rfl⟩
 
 /-- This classifier has no catch-all acceptance case. Its input has already
 had repeats removed and complementary pairs checked by the full normalizer. -/
@@ -1243,10 +1243,15 @@ def classifyPrerequisiteLiterals (literals : List (SignedLiteral α)) : Option (
       match tail with
       | _ :: _ => none
       | [] =>
-        match first, second with
-        | .negative consumer, .positive dependency => some (.prerequisite consumer dependency)
-        | .positive dependency, .negative consumer => some (.prerequisite consumer dependency)
-        | _, _ => none
+        match first with
+        | .negative consumer =>
+          match second with
+          | .positive dependency => some (.prerequisite consumer dependency)
+          | .negative _ => none
+        | .positive dependency =>
+          match second with
+          | .negative consumer => some (.prerequisite consumer dependency)
+          | .positive _ => none
 
 theorem classifyPrerequisiteLiterals_empty :
     classifyPrerequisiteLiterals ([] : List (SignedLiteral α)) = none := rfl
@@ -1343,8 +1348,8 @@ theorem complementaryWitness_empty [DecidableEq α] (nodes : List α) :
 
 theorem normalizePrerequisiteClause_empty [DecidableEq α] (inventory : FiniteInventory α) :
     normalizePrerequisiteClause inventory [] = none := by
-  unfold normalizePrerequisiteClause
-  rw [typedDeduplicate, complementaryWitness_empty]
+  dsimp only [normalizePrerequisiteClause, typedDeduplicate]
+  rw [complementaryWitness_empty]
   rfl
 
 theorem normalizePrerequisiteClause_complementary [DecidableEq α] (inventory : FiniteInventory α)
@@ -1355,7 +1360,7 @@ theorem normalizePrerequisiteClause_complementary [DecidableEq α] (inventory : 
       (typedDeduplicate_mem_iff literals (.negative node)).mpr h.2⟩
   cases complementaryWitness_complete inventory (typedDeduplicate literals) hd with
   | intro witness hw =>
-    unfold normalizePrerequisiteClause
+    dsimp only [normalizePrerequisiteClause]
     rw [hw]
 
 /-- Successful executable normalization preserves ordinary signed-clause
@@ -1364,7 +1369,7 @@ theorem normalizePrerequisiteClause_sound [DecidableEq α] (inventory : FiniteIn
     (retained : α → Prop) [DecidablePred retained] (literals : List (SignedLiteral α))
     (clause : PrerequisiteClause α) (h : normalizePrerequisiteClause inventory literals = some clause) :
     signedClauseSatisfied retained literals ↔ prerequisiteClauseHolds retained clause := by
-  unfold normalizePrerequisiteClause at h
+  dsimp only [normalizePrerequisiteClause] at h
   cases hw : complementaryWitness inventory.vertices (typedDeduplicate literals) with
   | none =>
     rw [hw] at h
