@@ -1,0 +1,221 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-growing-prime-stages-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "7218e197a6d14c05a9ede643e3fb4a1b95a541e5"
+source_tree = "04923ba416216d8ba9d9f7a3d968fc68876efa64"
+parent_commit = "6c1a60b5cbab0ba1a0a39512f228abfa4370507a"
+initial_inspection_commit = "059c2324f0ef90dd165e95e26afed4bcbdcc9797"
+publication_preserves_concurrent_changes = true
+verification_issue = 1418
+prerequisite_issues = [1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412, 1413, 1414, 1415]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+canonical_RH_proved_unconditionally = false
+original_energy_fixed_exponent_improved = false
+source_mass_witness_supplied = false
+distinct_core_growth_witness_supplied = false
+independent_growing_diagonal_bound_source_supplied = true
+independent_absolute_internal_transfer_bound_source_supplied = true
+source_only_mass_interface_unchanged = true
+full_vector_coercivity_used = false
+secondary_forcing_analytic_obstruction_promoted = false
+new_external_paper_results_imported = false
+new_literature_research_performed = false
+added_modules = 4
+modified_modules = 0
+definitions = 14
+theorem_scripts = 54
+lexical_identifiers = 68
+source_lines = 1014
+inventory_scope = "Textual source census, not an elaborated declaration inventory; native proof-script repairs may remain"
+mathematical_note = "docs/mathematics/NumberTheory/Moebius/growing-prime-stage-energy.md"
+note_blob = "fa1f3a2bfd8aa2e39b562ab369830c73350024a5"
+note_sha256 = "125e151614ba1aed205bf051b65cc2a5567f7b0519d4c1180f4aa22d6e8d73d4"
+git_identity = "Connector-configured; create_commit exposes no author/committer override"
+
+[mathematical_scope]
+implemented = "Exact rough-Mobius block source identity, complete ordered energy split, signed diagonal/inter-core stage transfer, source dilation estimate, stage-factor diagonal/overlap bounds, fixed all-primes<=j schedule, independent every-positive-rate bounds for diagonal and absolute internal transfer, exact rational prime-5 negativity, return from the actual remaining distinct-core interaction to DyadicBirthBound"
+schedule = "T_j=j*log(2); N_j=2^j; P_j contains all primes <=j; chosen independently of the growth rate"
+diagonal_bound = "D_(P_j)(T_j) <= 2*T_j^2*exp(4*sqrt(j))"
+transfer_variation_bound = "V(P_j,T_j) <= 8*sqrt(j)*T_j^2*exp(4*sqrt(j))"
+original_source_return = "H(T_j) = D_(P_j)(T_j) + R_(P_j)(T_j); R is the complete ordered distinct-core interaction"
+not_supplied = ["An upper growth estimate for R_(P_j)", "A source-only mass or inverse-mass witness", "An original-source energy bound at a fixed exponent below one", "Canonical RH without an arithmetic premise", "Native acceptance of any new or inherited closure"]
+preservation = "Existing SourceMassComparison and SourceInverseMassSubexponential are unchanged. No energy-ratio mass is defined. The Euler-product/Laplace secondary-forcing obstruction keeps its prior written-only status."
+
+[audit]
+full_transitive_closure_required = true
+include_private_generated_opaque = true
+declaration_rule = "Qualify every name in each source table by namespace plus dot. Audit all dependencies, not just listed final wrappers."
+provisional_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native/unsafe logical trust", "weakened quantifiers", "changed source/diagonal/cutoff", "erased repeated-prime or mixed term", "positivity inferred for all prime blocks", "component growth promoted to original-source growth", "full-vector coercivity substituted for source-only comparison"]
+external_driver_sha256 = "04e10f4b64edfe6ecea0755f9be63d1c68625722ea71db3862d7bd46a47ab9d6"
+external_inventory_sha256 = "90770c627a764a562a2f6156aa54aeab17cb042b421fddb7b38a0d24d2269eaa"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeStages"
+path = "GRWTSK/NumberTheory/Moebius/PickupGrowingPrimeStages.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeStages"
+blob = "ebc257ab92c86fee7d1a57e573d52b8ebc9df832"
+sha256 = "3c199a84d6acfe2b55c71cb9d110b50bc84525d9b51f8662140342d9dbf73484"
+bytes = 16214
+lines = 346
+imports = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockTransfer", "Mathlib.Data.Nat.Sqrt"]
+definitions = ["stages", "weightSum", "transferVariation", "DistinctCoreBound"]
+theorems = ["stages_prime", "stages_bounded", "stages_nodup", "weightSum_nonnegative", "inverse_sqrt_increment", "stages_weight_le", "factor_le_exp_weights", "stages_factor_square_le", "growing_diagonal_explicit", "sqrt_exponent_bound", "growing_diagonal_every_positive_rate", "transferVariation_le", "growing_transfer_explicit", "growing_transfer_envelope", "growing_transfer_every_positive_rate", "distinct_core_bound_iff_layer_bound", "distinct_core_bound_iff_dyadicBirthBound", "original_energy_le_distinct_core_plus_paid"]
+native_status = "NOT_RUN"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockEnergy"
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockEnergy.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockEnergy"
+blob = "6ecda0380fe19136ff8c7ecde0c48cf42b736991"
+sha256 = "3c86fc6f317248331c2787217d537a1ace17d2816c636603525137ef94d813af"
+bytes = 14105
+lines = 302
+imports = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockSource"]
+definitions = ["factor", "gram", "diagonal", "interaction", "credit"]
+theorems = ["factor_nonnegative", "inverse_sqrt_le_one", "response_dilate_le", "block_abs_le", "factor_le_exp_length", "gram_symmetric", "gram_diagonal_nonnegative", "diagonal_nonnegative", "gram_support", "block_quadratic_identity", "source_energy_split", "gram_diagonal_le", "diagonal_le_factor_sq", "gram_cons_diagonal", "diagonal_step", "interaction_step"]
+native_status = "NOT_RUN"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockSource"
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockSource.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockSource"
+blob = "8e5060c9697daebb307aae49ed740b869d6e8e13"
+sha256 = "b4fde6ae5c1572e50ebe7c1ed3548d3330f301668788d522ec868d57f48884b2"
+bytes = 8739
+lines = 197
+imports = ["GRWTSK.NumberTheory.Moebius.FinitePrimeDivisorExtraction", "GRWTSK.NumberTheory.Moebius.PickupPrimeFactorLayers"]
+definitions = ["rough", "quotient", "remove", "pairing", "block"]
+theorems = ["rough_sq_le", "rough_prime_mul", "rough_remove", "rough_square_split", "pairing_quotient", "pairing_remove", "block_support", "block_continuous", "original_eq_rough_blocks", "block_cons"]
+native_status = "NOT_RUN"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockTransfer"
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockTransfer.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockTransfer"
+blob = "8cafd402722b0961b3833f369c8715917055ebf0"
+sha256 = "8fa92a73a852290502d1f624d9d1a9f43422db4535698460a29b6c3ff649022f"
+bytes = 8648
+lines = 169
+imports = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockEnergy"]
+definitions = []
+theorems = ["gram_dilate_abs_le", "credit_abs_le", "diagonal_step_abs_le", "inverse_sqrt_lower", "inverse_sqrt_upper", "prime_five_expression_negative", "response_at_log", "block_235_at_log_ten", "block_235_negative", "signed_stage_square"]
+native_status = "NOT_RUN"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupPrimeFactorLayers"
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeFactorLayers.lean"
+blob = "5002d641d277687b46602a83fdc06db64750989a"
+scope = "Source-only interface at user-specified revision; all predicates and quantifier order retained"
+native_acceptance_transferred = false
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.FinitePrimeDivisorExtraction"
+path = "GRWTSK/NumberTheory/Moebius/FinitePrimeDivisorExtraction.lean"
+blob = "89c8290fa1cc3b05e0035d01249cbf90b4e0d3ff"
+scope = "Exact prime multiplication and quotient-window reindex, including repeated-prime correction"
+native_acceptance_transferred = false
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedPairDescent"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedPairDescent.lean"
+blob = "4e6efa850cb824ad3325567831a9cb33717fe1db"
+scope = "Original causal response nonnegativity, Gram and integrability"
+native_acceptance_transferred = false
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+path = "GRWTSK/NumberTheory/Moebius/GoodScaleEnergyCriterion.lean"
+blob = "a39d24a540a86918ab4f2a8130a86895424dc317"
+scope = "Original diagonal subexponential supplier and energy-to-RH return"
+native_acceptance_transferred = false
+
+[[critical_dependency]]
+module = "Mathlib.Data.Nat.Sqrt"
+path = "Mathlib/Data/Nat/Sqrt.lean"
+blob = "6e0e55b225761cc0112e2b1c8d1d394ef867bfec"
+scope = "Pinned upstream source; no dependency migration"
+native_acceptance_transferred = false
+
+[[native_command]]
+purpose = "build"
+command = "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeStages GRWTSK.NumberTheory.Moebius.PickupPrimeBlockEnergy GRWTSK.NumberTheory.Moebius.PickupPrimeBlockSource GRWTSK.NumberTheory.Moebius.PickupPrimeBlockTransfer"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[[native_command]]
+purpose = "PickupGrowingPrimeStages"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupGrowingPrimeStages.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[[native_command]]
+purpose = "PickupPrimeBlockEnergy"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupPrimeBlockEnergy.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[[native_command]]
+purpose = "PickupPrimeBlockSource"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupPrimeBlockSource.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[[native_command]]
+purpose = "PickupPrimeBlockTransfer"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupPrimeBlockTransfer.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[[native_command]]
+purpose = "audit"
+command = "lake env lean --trust=0 -DwarningAsError=true /EXTERNAL/Audit.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[[native_command]]
+purpose = "checker_capabilities"
+command = "lake env leanchecker --help"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+
+[fresh_replay]
+command = "Resolve supported fresh-check invocation from the pinned checker help; do not invent flags"
+status = "NOT_RUN"
+independent_implementation_claimed = false
+
+[local_diagnostics]
+scope = "Finite algebra/models and source checks only; no native or asymptotic acceptance"
+normal_command = "python /mnt/data/prime_stage_work/diagnostics/preflight.py > /mnt/data/prime_stage_work/diagnostics/normal.json"
+normal_exit = 0
+optimized_command = "python -O /mnt/data/prime_stage_work/diagnostics/preflight.py > /mnt/data/prime_stage_work/diagnostics/optimized.json"
+optimized_exit = 0
+comparison_command = "cmp /mnt/data/prime_stage_work/diagnostics/normal.json /mnt/data/prime_stage_work/diagnostics/optimized.json"
+comparison_exit = 0
+checks_per_mode = 5293
+exact_arithmetic_and_finite_quadratic = 5120
+exact_rational_sign_certificates = 6
+negative_controls = 70
+numerical_actual_response = 81
+static = 16
+exact_model_caveat = "Exact quadratic tests use a rational surrogate causal kernel where indicated; actual irrational response checks are separately numerical"
+numerical_precision_decimal_digits = 75
+numerical_checks_are_rigorous_enclosures = false
+exact_prime_five_upper = "-899/62500"
+script_sha256 = "ae48a2273798eb9cc8e218aee5d6da3f09fe5624257a61ae7adf0900a7ffbead"
+normal_report_sha256 = "2abdb4b211cd9b090aa288b20f631fa96cab97de5d453637bc5cc83af8522773"
+optimized_report_sha256 = "2abdb4b211cd9b090aa288b20f631fa96cab97de5d453637bc5cc83af8522773"
+operational_files_committed_to_math = false
+durable_external_execution_receipt_claimed = false
