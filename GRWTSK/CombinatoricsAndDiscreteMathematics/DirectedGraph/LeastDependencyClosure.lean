@@ -203,6 +203,22 @@ theorem finiteWeightedCost_lt_of_extra (inventory : FiniteInventory α)
     finiteWeightedCost inventory weight s < finiteWeightedCost inventory weight t :=
   weightedCost_lt_of_extra inventory.vertices weight h (inventory.complete a) hs ht hw
 
+/-- Erasing a retained positive-weight vertex strictly reduces concrete finite
+cost. Whether that erasure remains feasible is a separate dependency question. -/
+theorem finiteWeightedCost_erasure_lt [DecidableEq α]
+    (inventory : FiniteInventory α) (weight : α → Nat)
+    {retained : α → Prop} [DecidablePred retained] {a : α}
+    (ha : retained a) (hw : 0 < weight a) :
+    finiteWeightedCost inventory weight (fun x => retained x ∧ x ≠ a) <
+      finiteWeightedCost inventory weight retained := by
+  apply finiteWeightedCost_lt_of_extra inventory weight (a := a)
+  · intro x hx
+    exact hx.1
+  · intro hx
+    exact hx.2 rfl
+  · exact ha
+  · exact hw
+
 /-- With positive vertex weights, a feasible selection whose cost is no larger
 than the closure cannot retain any extra vertex. No predicate-extensionality
 axiom is needed: the conclusion is pointwise inclusion. -/
