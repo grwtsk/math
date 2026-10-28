@@ -237,4 +237,246 @@ theorem finiteWeightedCost_minimum_has_no_extra (inventory : FiniteInventory α)
   · exact False.elim (Nat.not_lt_of_ge hcost
       (finiteWeightedCost_lt_of_extra inventory weight (closure_least h) hc ha (positive a)))
 
+/-- One finite-pivot update. Both legs read the same previous relation, rather
+than a partially updated row. -/
+def pivotStep (relation : α → α → Prop) (pivot : α) (a b : α) : Prop :=
+  relation a b ∨ (relation a pivot ∧ relation pivot b)
+
+instance pivotStepDecidable (relation : α → α → Prop) [DecidableRel relation]
+    (pivot : α) : DecidableRel (pivotStep relation pivot) := by
+  intro a b
+  unfold pivotStep
+  infer_instance
+
+/-- Finite-pivot closure, processed tail first. An executable matrix refinement
+must therefore visit the reversed inventory order and use a snapshot per pivot.
+The definition itself gives no shared-table running-time bound. -/
+def pivotClosure (relation : α → α → Prop) : List α → α → α → Prop
+  | [], a, b => relation a b
+  | pivot :: rest, a, b => pivotStep (pivotClosure relation rest) pivot a b
+
+instance pivotClosureDecidable (relation : α → α → Prop) [DecidableRel relation]
+    (pivots : List α) : DecidableRel (pivotClosure relation pivots) := by
+  induction pivots with
+  | nil => exact inferInstanceAs (DecidableRel relation)
+  | cons pivot rest ih =>
+    letI : DecidableRel (pivotClosure relation rest) := ih
+    exact pivotStepDecidable (pivotClosure relation rest) pivot
+
+/-- Composition through a specified vertex is already represented. -/
+def ClosedThrough (relation : α → α → Prop) (pivot : α) : Prop :=
+  ∀ ⦃a b⦄, relation a pivot → relation pivot b → relation a b
+
+theorem pivotStep_closed_self (relation : α → α → Prop) (pivot : α) :
+    ClosedThrough (pivotStep relation pivot) pivot := by
+  intro a b ha hb
+  have hap : relation a pivot := by
+    cases ha with
+    | inl h => exact h
+    | inr h => exact h.1
+  have hpb : relation pivot b := by
+    cases hb with
+    | inl h => exact h
+    | inr h => exact h.2
+  exact Or.inr ⟨hap, hpb⟩
+
+/-- Processing a new pivot preserves closure through every prior pivot. -/
+theorem pivotStep_preserves_closedThrough (relation : α → α → Prop)
+    (pivot prior : α) (h : ClosedThrough relation prior) :
+    ClosedThrough (pivotStep relation pivot) prior := by
+  intro a b ha hb
+  cases ha with
+  | inl ha =>
+    cases hb with
+    | inl hb => exact Or.inl (h ha hb)
+    | inr hb => exact Or.inr ⟨h ha hb.1, hb.2⟩
+  | inr ha =>
+    cases hb with
+    | inl hb => exact Or.inr ⟨ha.1, h ha.2 hb⟩
+    | inr hb => exact Or.inr ⟨ha.1, hb.2⟩
+
+theorem pivotClosure_extends (relation : α → α → Prop) (pivots : List α)
+    {a b : α} (h : relation a b) : pivotClosure relation pivots a b := by
+  induction pivots with
+  | nil => exact h
+  | cons pivot rest ih => exact Or.inl ih
+
+theorem pivotClosure_closedThrough_member (relation : α → α → Prop)
+    (pivots : List α) {pivot : α} (h : pivot ∈ pivots) :
+    ClosedThrough (pivotClosure relation pivots) pivot := by
+  induction pivots with
+  | nil => cases h
+  | cons current rest ih =>
+    cases h with
+    | head => exact pivotStep_closed_self (pivotClosure relation rest) pivot
+    | tail _ h =>
+      exact pivotStep_preserves_closedThrough (pivotClosure relation rest) current pivot (ih h)
+
+/-- Full inventory coverage, rather than an assumed stabilization condition,
+makes the final relation transitive. -/
+theorem pivotClosure_transitive (inventory : FiniteInventory α)
+    (relation : α → α → Prop) {a b c : α}
+    (hab : pivotClosure relation inventory.vertices a b)
+    (hbc : pivotClosure relation inventory.vertices b c) :
+    pivotClosure relation inventory.vertices a c :=
+  pivotClosure_closedThrough_member relation inventory.vertices (inventory.complete b) hab hbc
+
+/-- A predicate preserved by the input relation is preserved by every finite
+pivot composition. This is the soundness invariant used below. -/
+theorem pivotClosure_preserves (relation : α → α → Prop) (pivots : List α)
+    (retained : α → Prop)
+    (h : ∀ ⦃a b⦄, retained a → relation a b → retained b) :
+    ∀ ⦃a b⦄, retained a → pivotClosure relation pivots a b → retained b := by
+  induction pivots with
+  | nil => exact h
+  | cons pivot rest ih =>
+    intro a b ha hab
+    cases hab with
+    | inl hab => exact ih ha hab
+    | inr hab => exact ih (ih ha hab.1) hab.2
+
+/-- Initial reachability includes reflexivity and one consumer-to-prerequisite
+edge. It does not reverse the dependency orientation. -/
+def baseReach (depends : α → α → Prop) (a b : α) : Prop := a = b ∨ depends a b
+
+instance baseReachDecidable [DecidableEq α] (depends : α → α → Prop)
+    [DecidableRel depends] : DecidableRel (baseReach depends) := by
+  intro a b
+  unfold baseReach
+  infer_instance
+
+/-- Scan the finite required-root inventory in its ordinary list order. -/
+def rootScan (required : α → Prop) (relation : α → α → Prop) : List α → α → Prop
+  | [], _ => False
+  | root :: rest, target =>
+      (required root ∧ relation root target) ∨ rootScan required relation rest target
+
+instance rootScanDecidable (required : α → Prop) [DecidablePred required]
+    (relation : α → α → Prop) [DecidableRel relation] (roots : List α) :
+    DecidablePred (rootScan required relation roots) := by
+  induction roots with
+  | nil => intro target; exact inferInstanceAs (Decidable False)
+  | cons root rest ih =>
+    intro target
+    letI : DecidablePred (rootScan required relation rest) := ih
+    change Decidable ((required root ∧ relation root target) ∨
+      rootScan required relation rest target)
+    infer_instance
+
+theorem rootScan_of_mem (required : α → Prop) (relation : α → α → Prop)
+    (roots : List α) {root target : α} (hm : root ∈ roots)
+    (hr : required root) (ht : relation root target) :
+    rootScan required relation roots target := by
+  induction roots with
+  | nil => cases hm
+  | cons current rest ih =>
+    cases hm with
+    | head => exact Or.inl ⟨hr, ht⟩
+    | tail _ hm => exact Or.inr (ih hm)
+
+theorem rootScan_preserves (required : α → Prop) (relation : α → α → Prop)
+    (roots : List α) (retained : α → Prop) (hr : Included required retained)
+    (ht : ∀ ⦃a b⦄, retained a → relation a b → retained b) :
+    Included (rootScan required relation roots) retained := by
+  induction roots with
+  | nil => intro target h; exact False.elim h
+  | cons root rest ih =>
+    intro target h
+    cases h with
+    | inl h => exact ht (hr h.1) h.2
+    | inr h => exact ih h
+
+theorem rootScan_transport (required : α → Prop) (relation : α → α → Prop)
+    (roots : List α)
+    (transitive : ∀ ⦃a b c⦄, relation a b → relation b c → relation a c) :
+    ∀ ⦃a b⦄, rootScan required relation roots a → relation a b →
+      rootScan required relation roots b := by
+  induction roots with
+  | nil => intro a b h; exact False.elim h
+  | cons root rest ih =>
+    intro a b h hab
+    cases h with
+    | inl h => exact Or.inl ⟨h.1, transitive h.2 hab⟩
+    | inr h => exact Or.inr (ih h hab)
+
+/-- Constructive finite prerequisite closure. No decision procedure for the
+inductively defined semantic `Closure` is assumed. -/
+def finitePrerequisiteClosure (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) : α → Prop :=
+  rootScan required (pivotClosure (baseReach depends) inventory.vertices) inventory.vertices
+
+instance finitePrerequisiteClosureDecidable [DecidableEq α]
+    (inventory : FiniteInventory α) (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] :
+    DecidablePred (finitePrerequisiteClosure inventory required depends) :=
+  rootScanDecidable required (pivotClosure (baseReach depends) inventory.vertices) inventory.vertices
+
+theorem finitePrerequisiteClosure_feasible (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) :
+    Feasible required depends (finitePrerequisiteClosure inventory required depends) where
+  roots := by
+    intro a ha
+    exact rootScan_of_mem required (pivotClosure (baseReach depends) inventory.vertices)
+      inventory.vertices (inventory.complete a) ha
+      (pivotClosure_extends (baseReach depends) inventory.vertices (Or.inl rfl))
+  closed := by
+    intro a b ha hab
+    exact rootScan_transport required (pivotClosure (baseReach depends) inventory.vertices)
+      inventory.vertices (pivotClosure_transitive inventory (baseReach depends)) ha
+      (pivotClosure_extends (baseReach depends) inventory.vertices (Or.inr hab))
+
+theorem finitePrerequisiteClosure_sound (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) :
+    Included (finitePrerequisiteClosure inventory required depends) (Closure required depends) := by
+  apply rootScan_preserves
+  · intro a ha
+    exact Closure.root ha
+  · apply pivotClosure_preserves
+    intro a b ha hab
+    cases hab with
+    | inl hab => cases hab; exact ha
+    | inr hab => exact Closure.dependency ha hab
+
+theorem finitePrerequisiteClosure_complete (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) :
+    Included (Closure required depends) (finitePrerequisiteClosure inventory required depends) :=
+  closure_least (finitePrerequisiteClosure_feasible inventory required depends)
+
+theorem finitePrerequisiteClosure_iff (inventory : FiniteInventory α)
+    (required : α → Prop) (depends : α → α → Prop) (a : α) :
+    finitePrerequisiteClosure inventory required depends a ↔ Closure required depends a :=
+  ⟨finitePrerequisiteClosure_sound inventory required depends,
+    finitePrerequisiteClosure_complete inventory required depends⟩
+
+/-- An executable Boolean answer from finite decidable roots, edges and equality. -/
+def decideFinitePrerequisiteClosure [DecidableEq α] (inventory : FiniteInventory α)
+    (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] (a : α) : Bool :=
+  decide (finitePrerequisiteClosure inventory required depends a)
+
+theorem decideFinitePrerequisiteClosure_eq_true_iff [DecidableEq α]
+    (inventory : FiniteInventory α) (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends] (a : α) :
+    decideFinitePrerequisiteClosure inventory required depends a = true ↔
+      Closure required depends a := by
+  constructor
+  · intro h
+    exact finitePrerequisiteClosure_sound inventory required depends (of_decide_eq_true h)
+  · intro h
+    exact decide_eq_true (finitePrerequisiteClosure_complete inventory required depends h)
+
+/-- The verified finite output minimizes the concrete complete-inventory byte
+cost. Decidability of semantic `Closure` and cost monotonicity are not premises. -/
+theorem finitePrerequisiteClosure_minimizes [DecidableEq α]
+    (inventory : FiniteInventory α) (weight : α → Nat)
+    (required : α → Prop) [DecidablePred required]
+    (depends : α → α → Prop) [DecidableRel depends]
+    {retained : α → Prop} [DecidablePred retained]
+    (h : Feasible required depends retained) :
+    finiteWeightedCost inventory weight (finitePrerequisiteClosure inventory required depends) ≤
+      finiteWeightedCost inventory weight retained := by
+  apply finiteWeightedCost_mono
+  intro a ha
+  exact closure_least h (finitePrerequisiteClosure_sound inventory required depends ha)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
