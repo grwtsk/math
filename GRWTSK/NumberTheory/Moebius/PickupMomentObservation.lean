@@ -165,4 +165,128 @@ theorem dyadicBirthBound_of_depth_entropy_moments
   exact hs.trans (mul_le_mul_of_nonneg_left
     (Real.exp_le_exp.mpr (mul_le_mul_of_nonneg_right hr (dyadicTime_nonnegative j))) hC)
 
+
+/-! ## Fixed positive mass is a constant, not an exponent loss
+
+The earlier unit-prefactor consumer is preserved. These refinements accept a
+positive prefactor and an eventual starting index. Thus a verified mass floor
+strictly below one need not be replaced by a positive entropy rate. The mass
+must concern this exact source observation; a type-mass estimate for another
+carrier is not silently used as the Born mass of a full spin assignment.
+-/
+
+/-- One constant works for every positive natural moment order. The sharper
+factor m^(-1/q) is unnecessary for preserving all-positive growth rates. -/
+theorem fixed_mass_power_allowance (m : ℝ) (hm : 0 < m)
+    (q : ℕ) (hq : 0 < q) :
+    1 ≤ m * (max 1 m⁻¹) ^ q := by
+  let K : ℝ := max 1 m⁻¹
+  have hK : 1 ≤ K := le_max_left _ _
+  have hbase : 1 ≤ m * K := by
+    calc
+      1 = m * m⁻¹ := (mul_inv_cancel₀ hm.ne').symm
+      _ ≤ m * K := mul_le_mul_of_nonneg_left (le_max_right _ _) hm.le
+  have hp : ∀ n : ℕ, 1 ≤ K ^ n := by
+    intro n
+    induction n with
+    | zero => simp
+    | succ n ih =>
+        rw [pow_succ]
+        nlinarith
+  cases q with
+  | zero => omega
+  | succ n =>
+      change 1 ≤ m * K ^ (n + 1)
+      calc
+        1 ≤ m * K := hbase
+        _ ≤ (m * K) * K ^ n :=
+          le_mul_of_one_le_right (by positivity) (hp n)
+        _ = m * K ^ (n + 1) := by rw [pow_succ]; ring
+
+/-- A fixed positive observation prefactor only multiplies C. It is not an
+extra entropy exponent, even when q varies with the dyadic scale. -/
+theorem source_gap_of_prefactor_entropy_moment {T : ℝ} (hT : 0 ≤ T)
+    (ψ : Amplitude T) (q : ℕ) (hq : 0 < q)
+    (m C r κ : ℝ) (hm : 0 < m) (hC : 0 ≤ C)
+    (hmass : m * Real.exp (-((q : ℝ) * κ * T)) ≤
+      bornWeight ψ (fun i => sourceSpin i))
+    (hmoment : gapMoment T ψ q ≤ (C * Real.exp (r * T)) ^ q) :
+    optimalityGap T ≤ (max 1 m⁻¹ * C) * Real.exp ((r + κ) * T) := by
+  let K : ℝ := max 1 m⁻¹
+  have hK : 0 ≤ K := (by norm_num : (0 : ℝ) ≤ 1).trans (le_max_left _ _)
+  have hfactor :
+      (m * Real.exp (-((q : ℝ) * κ * T))) *
+        ((K * C) * Real.exp ((r + κ) * T)) ^ q =
+      (m * K ^ q) * (C * Real.exp (r * T)) ^ q := by
+    calc
+      _ = (m * K ^ q) *
+          (Real.exp (-((q : ℝ) * κ * T)) *
+            (C * Real.exp ((r + κ) * T)) ^ q) := by
+        simp only [mul_pow]
+        ring
+      _ = _ := by rw [entropy_balance]
+  apply source_gap_of_moment hT ψ q hq
+    (m * Real.exp (-((q : ℝ) * κ * T)))
+    ((K * C) * Real.exp ((r + κ) * T))
+    (mul_pos hm (Real.exp_pos _))
+    (mul_nonneg (mul_nonneg hK hC) (Real.exp_pos _).le) hmass
+  rw [hfactor]
+  have hscale := mul_le_mul_of_nonneg_right (fixed_mass_power_allowance m hm q hq)
+    (pow_nonneg (mul_nonneg hC (Real.exp_pos _).le) q)
+  exact hmoment.trans (by simpa only [one_mul] using hscale)
+
+/-- Uniform positive mass removes the observation growth rate completely.
+This uses the actual Born mass, not a mass from an unidentified type space. -/
+theorem source_gap_of_uniform_mass_moment {T : ℝ} (hT : 0 ≤ T)
+    (ψ : Amplitude T) (q : ℕ) (hq : 0 < q)
+    (m C r : ℝ) (hm : 0 < m) (hC : 0 ≤ C)
+    (hmass : m ≤ bornWeight ψ (fun i => sourceSpin i))
+    (hmoment : gapMoment T ψ q ≤ (C * Real.exp (r * T)) ^ q) :
+    optimalityGap T ≤ (max 1 m⁻¹ * C) * Real.exp (r * T) := by
+  have hs := source_gap_of_prefactor_entropy_moment hT ψ q hq m C r 0 hm hC
+    (by simpa using hmass) hmoment
+  simpa only [add_zero] using hs
+
+/-- Compose only the combined rate. The fixed positive mass and its onset may
+vary with p, but not with the tested index j. The initial segment is absorbed
+by the existing arithmetic-grid theorem. No separate vanishing of r and κ,
+new arithmetic witness, or mass-identification assumption is concealed. -/
+theorem dyadicBirthBound_of_prefactor_depth_entropy_moments
+    (a : ℝ) (ha : 0 < a) (r κ mass : ℕ → ℝ) (start : ℕ → ℕ)
+    (ψ : (p j : ℕ) → Amplitude (dyadicTime j)) (q : ℕ → ℕ → ℕ)
+    (hq : ∀ p j, start p ≤ j → 0 < q p j)
+    (hpositive : ∀ p, 0 < mass p)
+    (hsmall : ∀ ε : ℝ, 0 < ε → ∃ p : ℕ, r p + κ p ≤ ε)
+    (hmass : ∀ p j, start p ≤ j →
+      mass p * Real.exp (-((q p j : ℝ) * κ p * dyadicTime j)) ≤
+        bornWeight (ψ p j) (fun i => sourceSpin i))
+    (hmoment : ∀ p : ℕ, ∀ η : ℝ, 0 < η → ∃ C : ℝ, 0 ≤ C ∧
+      ∀ j : ℕ, start p ≤ j →
+        gapMoment (dyadicTime j) (ψ p j) (q p j) ≤
+          (C * Real.exp ((r p + a * η) * dyadicTime j)) ^ (q p j)) :
+    DyadicBirthBound := by
+  apply dyadicBirthBound_iff_optimalityGap.mpr
+  apply (allGridUpper_iff_subexponentialOn log_two_positive).mp
+  apply allGridUpper_of_eventual log_two_positive.le
+  intro δ hδ
+  obtain ⟨p, hp⟩ := hsmall (δ / 2) (by linarith)
+  let η : ℝ := δ / (2 * a)
+  have hη : 0 < η := div_pos hδ (mul_pos (by norm_num) ha)
+  obtain ⟨C, hC, hb⟩ := hmoment p η hη
+  have hK : 0 ≤ max (1 : ℝ) (mass p)⁻¹ :=
+    (by norm_num : (0 : ℝ) ≤ 1).trans (le_max_left _ _)
+  refine ⟨max 1 (mass p)⁻¹ * C, mul_nonneg hK hC, start p, ?_⟩
+  intro j hj
+  have he : a * η = δ / 2 := by
+    dsimp [η]
+    field_simp [ha.ne']
+    <;> ring
+  have hr : r p + a * η + κ p ≤ δ := by rw [he]; linarith
+  have hs := source_gap_of_prefactor_entropy_moment (dyadicTime_nonnegative j)
+    (ψ p j) (q p j) (hq p j hj) (mass p) C (r p + a * η) (κ p)
+    (hpositive p) hC (hmass p j hj) (hb j hj)
+  exact hs.trans (mul_le_mul_of_nonneg_left
+    (Real.exp_le_exp.mpr (mul_le_mul_of_nonneg_right hr (dyadicTime_nonnegative j)))
+    (mul_nonneg hK hC))
+
 end GRWTSK.NumberTheory.Moebius.PickupMomentObservation
