@@ -298,6 +298,61 @@ theorem firstCoordinateEnergy_le_four_time (j : ℕ) :
       exact hs)
   simpa only [intervalIntegral.integral_const, sub_zero, smul_eq_mul, mul_comm] using hi
 
+/-! ## Scale-dependent mass only on the actual source direction
+
+These sufficient hypotheses retain the original layer Gram and dyadic clock.
+They require neither a common positive mass nor a comparison for every layer
+vector. The mass sequence and its every-positive-rate reciprocal bound remain
+unresolved arithmetic inputs. No such sequence is constructed here.
+Compilation, fresh kernel checking and transitive axiom auditing are NOT_RUN.
+-/
+
+/-- Only the actual alternating source is tested, with the mass at its own scale. -/
+def SourceMassComparison (mass : ℕ → ℝ) : Prop :=
+  ∀ j : ℕ, mass j * layerEnergy j sourceCoordinates ≤
+    layerEnergy j (forward sourceCoordinates)
+
+/-- A single mass sequence has a reciprocal bound at EVERY positive rate.
+The constant may depend on the rate; a fixed exponential loss does not suffice. -/
+def SourceInverseMassSubexponential (mass : ℕ → ℝ) : Prop :=
+  ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧ ∀ j : ℕ,
+    1 / mass j ≤ C * Real.exp (δ * dyadicTime j)
+
+/-- Split the desired rate in half between the reciprocal mass and the original
+polynomial forcing allowance. This is a conditional transfer, not a mass witness. -/
+theorem layer_bound_of_source_mass_inverse_subexponential (mass : ℕ → ℝ)
+    (hpos : ∀ j : ℕ, 0 < mass j) (hmass : SourceMassComparison mass)
+    (hinverse : SourceInverseMassSubexponential mass) : LayerEnergyBound := by
+  intro δ hδ
+  have hhalf : 0 < δ / 2 := half_pos hδ
+  obtain ⟨C, hC, hCbound⟩ := hinverse (δ / 2) hhalf
+  obtain ⟨D, hD, hDbound⟩ := pickupDiagonal_subexponential (δ / 2) hhalf
+  refine ⟨C * D, mul_nonneg hC hD, ?_⟩
+  intro j
+  have hs := hmass j
+  have hf : forward sourceCoordinates = firstCoordinate := forward_alternating
+  rw [hf] at hs
+  have hsource : layerEnergy j sourceCoordinates ≤
+      layerEnergy j firstCoordinate / mass j := by
+    apply (le_div_iff₀ (hpos j)).mpr
+    simpa only [mul_comm] using hs
+  have hrate := hDbound (dyadicTime j) (dyadicTime_nonnegative j)
+  have hexponents : (δ / 2) * dyadicTime j + (δ / 2) * dyadicTime j =
+      δ * dyadicTime j := by ring
+  calc
+    layerEnergy j sourceCoordinates ≤ layerEnergy j firstCoordinate / mass j := hsource
+    _ ≤ pickupDiagonal (dyadicTime j) / mass j :=
+      div_le_div_of_nonneg_right (firstCoordinateEnergy_le_diagonal j) (hpos j).le
+    _ = pickupDiagonal (dyadicTime j) * (1 / mass j) := by ring
+    _ ≤ (D * Real.exp ((δ / 2) * dyadicTime j)) *
+        (C * Real.exp ((δ / 2) * dyadicTime j)) :=
+      mul_le_mul hrate (hCbound j) (one_div_nonneg.mpr (hpos j).le)
+        (mul_nonneg hD (Real.exp_pos _).le)
+    _ = (C * D) * (Real.exp ((δ / 2) * dyadicTime j) *
+        Real.exp ((δ / 2) * dyadicTime j)) := by ring
+    _ = (C * D) * Real.exp (δ * dyadicTime j) := by
+      rw [← Real.exp_add, hexponents]
+
 /-- Actual source mass implies a linear energy estimate, with all constants displayed. -/
 theorem energy_le_four_time_of_uniform_mass (m : ℝ) (hm : 0 < m)
     (hmass : ∀ j : ℕ, ∀ a : ℕ → ℝ,
