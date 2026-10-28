@@ -2100,7 +2100,10 @@ theorem eraseBoolTable_lookup [DecidableEq α] (inventory : FiniteInventory α)
         (boolTableLookup_of_keyedListLookup table _ row rowLookup _).trans
           (boolRowLookup_of_keyedListLookup row _ value columnLookup)
       unfold positionalBoolLookup
-      rw [eraseBoolTable_position table i.val _ row hr, eraseBoolRow_position row j.val _ value hv, ht]
+      rw [eraseBoolTable_position table i.val _ row hr]
+      change listPosition (eraseBoolRow row) j.val =
+        some (boolTableLookup table (inventory.vertices.get i) (inventory.vertices.get j))
+      rw [eraseBoolRow_position row j.val _ value hv, ht]
 
 /-- A total convenience value. The bounded correspondence theorem proves its
 fallback unreachable on a well-shaped erased table; it is not a bounds check. -/
