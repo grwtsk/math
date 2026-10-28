@@ -42,8 +42,12 @@ inductive Closure (required : α → Prop) (depends : α → α → Prop) : α �
 
 theorem closure_feasible (required : α → Prop) (depends : α → α → Prop) :
     Feasible required depends (Closure required depends) where
-  roots := Closure.root
-  closed := Closure.dependency
+  roots := by
+    intro a ha
+    exact Closure.root ha
+  closed := by
+    intro a b ha hab
+    exact Closure.dependency ha hab
 
 /-- Every feasible selection contains the entire required dependency closure. -/
 theorem closure_least {required : α → Prop} {depends : α → α → Prop}
