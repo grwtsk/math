@@ -916,15 +916,31 @@ def prerequisiteCNFRequired (clauses : List (PrerequisiteClause α)) (a : α) : 
 def prerequisiteCNFDepends (clauses : List (PrerequisiteClause α)) (a b : α) : Prop :=
   PrerequisiteClause.prerequisite a b ∈ clauses
 
+/-- Constructor-based finite membership decisions. The proof does not transport
+membership through a proposition-extensionality equality. -/
+def typedListMembershipDecision {β : Type u} [DecidableEq β]
+    (value : β) (entries : List β) : Decidable (value ∈ entries) :=
+  match entries with
+  | [] => isFalse (by intro h; cases h)
+  | first :: rest =>
+    match decEq value first with
+    | isTrue he => isTrue (by cases he; exact List.Mem.head rest)
+    | isFalse hne =>
+      match typedListMembershipDecision value rest with
+      | isTrue hm => isTrue (List.Mem.tail first hm)
+      | isFalse hn => isFalse (by
+          intro hm
+          cases hm with
+          | head => exact hne rfl
+          | tail _ hm => exact hn hm)
+
 instance prerequisiteCNFRequiredDecidable [DecidableEq α] (clauses : List (PrerequisiteClause α)) :
-    DecidablePred (prerequisiteCNFRequired clauses) := by
-  intro a
-  exact inferInstanceAs (Decidable (PrerequisiteClause.unit a ∈ clauses))
+    DecidablePred (prerequisiteCNFRequired clauses) :=
+  fun a => typedListMembershipDecision (PrerequisiteClause.unit a) clauses
 
 instance prerequisiteCNFDependsDecidable [DecidableEq α] (clauses : List (PrerequisiteClause α)) :
-    DecidableRel (prerequisiteCNFDepends clauses) := by
-  intro a b
-  exact inferInstanceAs (Decidable (PrerequisiteClause.prerequisite a b ∈ clauses))
+    DecidableRel (prerequisiteCNFDepends clauses) :=
+  fun a b => typedListMembershipDecision (PrerequisiteClause.prerequisite a b) clauses
 
 /-- Literal tautologies require only the supplied membership decision procedure.
 This does not certify that an external parser found a complementary pair. -/
