@@ -1,0 +1,1112 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "Passive exact-source mathematical acceptance/recovery target; no execution receipt or execution authority",
+  "base_math_commit": "87cc24505f2d85a5caebcf62c5464593601974e6",
+  "base_tree": "033005bbd42d228cf8cf7a6aa1678fe277fbca5b",
+  "last_observed_main": "87cc24505f2d85a5caebcf62c5464593601974e6",
+  "source_publication": "UNPUBLISHED_RECOVERY_BLOBS; no new remote main commit/push",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "sources": {
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean": {
+      "blob": "7ef255a8395fc2af2438ee6483da425f757a8ab6",
+      "namespace": "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.RealSliceL2",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.integrable_L2",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.integral_norm_le_L2",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.norm_K_le_one",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.kernelIntegral",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.kernelIntegral_congr",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.norm_kernelIntegrand_le",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.integrable_kernelIntegrand",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.norm_kernelIntegral_le_L1",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.continuous_kernelIntegral",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.kernelRepresentative",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.kernelRepresentative_eq_of_ae",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.norm_kernelRepresentative_apply_le",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.norm_kernelRepresentative_le",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.memLp_kernelRepresentative"
+      ],
+      "imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceGaugeQuadratic",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.MeasureTheory.Function.LpSpace.Complete"
+      ],
+      "lines": 125
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean": {
+      "blob": "6c4599981f9309bc90d1dd442c4401bc8c876a72",
+      "namespace": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.representativeLinearMap",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.toContinuous",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator_apply_ae",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator_apply_ae_of_representative",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.norm_operator_apply_le",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.norm_operator_le_one",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.representative_of_continuous",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator_of_continuous",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.mean",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.oneVector",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.representative_zero",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator_zero_mean",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.mean_zero",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.mean_oneVector",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.mean_smul",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.oneVector_ne_zero",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator_zero_range"
+      ],
+      "imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceIntegralRepresentative"
+      ],
+      "lines": 155
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean": {
+      "blob": "109a9fd2bb04272b8cc39d61b0fa424d07c86559",
+      "namespace": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2SelfAdjoint",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2SelfAdjoint.integrable_mixedKernel",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2SelfAdjoint.inner_operator_eq_double",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2SelfAdjoint.operator_isSymmetric",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2SelfAdjoint.operator_isSelfAdjoint"
+      ],
+      "imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceL2Operator",
+        "Mathlib.Analysis.InnerProductSpace.Adjoint",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ],
+      "lines": 78
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean": {
+      "blob": "6f00ba2bad4b7084c21d67faddcbcb980727f92d",
+      "namespace": "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeComposition",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeComposition_apply_ae",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeComposition_norm",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeComposition_inverse",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeInvariantSpace",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.mem_gaugeInvariantSpace",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeInvariantSpace_isClosed",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeInvariantSpace_complete",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.continuous_mem_gaugeInvariantSpace",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.oneVector_mem_gaugeInvariantSpace",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.representative_gauge",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.operator_mem_gaugeInvariantSpace",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_coe",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_norm_apply_le",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_norm_le_one",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_isSymmetric",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_isSelfAdjoint",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_zero_mean"
+      ],
+      "imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceL2SelfAdjoint",
+        "Mathlib.Topology.Algebra.Module.ClosedSubmodule",
+        "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Restrict"
+      ],
+      "lines": 159
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean": {
+      "blob": "a27fbace5426a480d94a1a12cc9dec8e576ea67c",
+      "namespace": "GRWTSK.Geometry.GaugeTheory.WilsonSliceContinuousOperatorQuadratic",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceContinuousOperatorQuadratic.complexObservable",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceContinuousOperatorQuadratic.complex_quadratic_eq",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceContinuousOperatorQuadratic.inner_operator_of_continuous",
+        "GRWTSK.Geometry.GaugeTheory.WilsonSliceContinuousOperatorQuadratic.continuous_quadratic_nonnegative"
+      ],
+      "imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceGaugeHilbert",
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceQuadraticPositivity"
+      ],
+      "lines": 72
+    }
+  },
+  "public_named_declarations": 60,
+  "named_completeness_instances_included": 1,
+  "new_import_closure": {
+    "existing_modules": 20,
+    "new_modules": 5,
+    "total": 25,
+    "pins": {
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean": "7ef255a8395fc2af2438ee6483da425f757a8ab6",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeQuadratic.lean": "d76604d20958646706c178c5ab233f0303559452",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceKernelSymmetry.lean": "cdcb74724790340f34ff8468130d008e3c396a49",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceRegularity.lean": "0e2e5a9f53a0f3b402e283d901ca66b6e4b39136",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceAction.lean": "b9b71abe9652a4478351bc2bb4836bd28a24a1df",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceHaar.lean": "575581f0bbdacf4b506b89fef69f22c0beb69dbc",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGeometry.lean": "d9c0e133563cf93c129891532e5062f410fee10b",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean": "07a4d2a45318bbc322587229e65f31123286dd4c",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2WilsonPositiveType.lean": "ed4360a999af6bf4805b3c78d8142db20827a3ee",
+      "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramExponential.lean": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean": "6c4599981f9309bc90d1dd442c4401bc8c876a72",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean": "109a9fd2bb04272b8cc39d61b0fa424d07c86559",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean": "6f00ba2bad4b7084c21d67faddcbcb980727f92d",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean": "a27fbace5426a480d94a1a12cc9dec8e576ea67c",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceQuadraticPositivity.lean": "a9b8a4ec61dd54e983d1fbc078271eb63969f628",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFeatures.lean": "69cde161384490da9df9e6838dacbb94b946b5d4",
+      "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramIntegral.lean": "7855781b5ba20c5df4443140a4eae4c560cdb80c"
+    }
+  },
+  "prior_dependency_comparison": {
+    "published_commit": "87cc24505f2d85a5caebcf62c5464593601974e6",
+    "issue": 1451,
+    "target_path": "documentation/mathematics/_verification/targets/finite-su2-slice-quadratic-positivity.json",
+    "target_blob": "738ee89baafa7fcf300b2e1cfdebd4a5c0dd9592",
+    "source_modules": 44,
+    "all_unchanged": true,
+    "pins": {
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonRestrictedTranslation.lean": {
+        "recorded_blob": "4fa2171a3c310affd1d34547a1d92a5141d20e33",
+        "current_blob": "4fa2171a3c310affd1d34547a1d92a5141d20e33",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionQuotient.lean": {
+        "recorded_blob": "d802e0223bfb7339305d9377e55124fcad09026f",
+        "current_blob": "d802e0223bfb7339305d9377e55124fcad09026f",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionRadical.lean": {
+        "recorded_blob": "698a87b306065745facf3128ca50873e77f73295",
+        "current_blob": "698a87b306065745facf3128ca50873e77f73295",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionSesquilinear.lean": {
+        "recorded_blob": "d2681b7829cdddd9ac25bb308e892d898bb95ff3",
+        "current_blob": "d2681b7829cdddd9ac25bb308e892d898bb95ff3",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionPositivity.lean": {
+        "recorded_blob": "96294d50bdbdd96ce92eb61cc1a128fd01667bee",
+        "current_blob": "96294d50bdbdd96ce92eb61cc1a128fd01667bee",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionGluing.lean": {
+        "recorded_blob": "a98385e4d20f0fa4e5e17a42f07c6039ae919d4a",
+        "current_blob": "a98385e4d20f0fa4e5e17a42f07c6039ae919d4a",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSplitAction.lean": {
+        "recorded_blob": "6821a406f2cd5b6a06843a02b0417f66c0461163",
+        "current_blob": "6821a406f2cd5b6a06843a02b0417f66c0461163",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCrossPlaquetteKernel.lean": {
+        "recorded_blob": "370c76874a9bd73a062e7e4d5729daf84fbb1b66",
+        "current_blob": "370c76874a9bd73a062e7e4d5729daf84fbb1b66",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2WilsonPositiveType.lean": {
+        "recorded_blob": "ed4360a999af6bf4805b3c78d8142db20827a3ee",
+        "current_blob": "ed4360a999af6bf4805b3c78d8142db20827a3ee",
+        "status": "MATCH"
+      },
+      "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramExponential.lean": {
+        "recorded_blob": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45",
+        "current_blob": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": {
+        "recorded_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+        "current_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": {
+        "recorded_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+        "current_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonHalfObservables.lean": {
+        "recorded_blob": "828e0a84c6a089f914a7d251f75a69a2c0fb9544",
+        "current_blob": "828e0a84c6a089f914a7d251f75a69a2c0fb9544",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryGaugeIntegration.lean": {
+        "recorded_blob": "dc9aba4667a46c2ac8c9b518238f7dee601fee8e",
+        "current_blob": "dc9aba4667a46c2ac8c9b518238f7dee601fee8e",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectedGauge.lean": {
+        "recorded_blob": "16a8d434ad83b28dc066bb181171ec2202fd9601",
+        "current_blob": "16a8d434ad83b28dc066bb181171ec2202fd9601",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionForm.lean": {
+        "recorded_blob": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
+        "current_blob": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PositiveTimeObservables.lean": {
+        "recorded_blob": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+        "current_blob": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": {
+        "recorded_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+        "current_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+        "status": "MATCH"
+      },
+      "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": {
+        "recorded_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+        "current_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+        "status": "MATCH"
+      },
+      "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": {
+        "recorded_blob": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+        "current_blob": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+        "status": "MATCH"
+      },
+      "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": {
+        "recorded_blob": "9469f8f1678d8e019261e739af76189d7fe22c99",
+        "current_blob": "9469f8f1678d8e019261e739af76189d7fe22c99",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean": {
+        "recorded_blob": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+        "current_blob": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean": {
+        "recorded_blob": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+        "current_blob": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean": {
+        "recorded_blob": "07a4d2a45318bbc322587229e65f31123286dd4c",
+        "current_blob": "07a4d2a45318bbc322587229e65f31123286dd4c",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonHaarCoordinates.lean": {
+        "recorded_blob": "8133cfb051e026c902036d195c90cb1c89546fdb",
+        "current_blob": "8133cfb051e026c902036d195c90cb1c89546fdb",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeSplit.lean": {
+        "recorded_blob": "209ef8ec4f8d0a9dc763261e160a617568703d9e",
+        "current_blob": "209ef8ec4f8d0a9dc763261e160a617568703d9e",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryKernelIntegral.lean": {
+        "recorded_blob": "9eb97ef3095d016f4bb12d1a18d849f2e803de30",
+        "current_blob": "9eb97ef3095d016f4bb12d1a18d849f2e803de30",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryFeatures.lean": {
+        "recorded_blob": "e5e9392b54360e0639734268be3f3653bb93c7bb",
+        "current_blob": "e5e9392b54360e0639734268be3f3653bb93c7bb",
+        "status": "MATCH"
+      },
+      "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramIntegral.lean": {
+        "recorded_blob": "7855781b5ba20c5df4443140a4eae4c560cdb80c",
+        "current_blob": "7855781b5ba20c5df4443140a4eae4c560cdb80c",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/TwoStepPositiveTranslation.lean": {
+        "recorded_blob": "b96c7b617eca6095e7c7eb89f2e37c5620e8c538",
+        "current_blob": "b96c7b617eca6095e7c7eb89f2e37c5620e8c538",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeTranslation.lean": {
+        "recorded_blob": "ad09f6ea0e9e731d4add065c2d4a2c4315554e2c",
+        "current_blob": "ad09f6ea0e9e731d4add065c2d4a2c4315554e2c",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PeriodicTimeTranslation.lean": {
+        "recorded_blob": "d6b2d24c2534f637199d049200c29f04432410f3",
+        "current_blob": "d6b2d24c2534f637199d049200c29f04432410f3",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonThreeSliceTranslation.lean": {
+        "recorded_blob": "06c5cc717e416799c264e2d3e1a2b8bc6d7b1200",
+        "current_blob": "06c5cc717e416799c264e2d3e1a2b8bc6d7b1200",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTranslationMixedBound.lean": {
+        "recorded_blob": "a9b279509bf7df7c7f5abdcda819ef39daa561d7",
+        "current_blob": "a9b279509bf7df7c7f5abdcda819ef39daa561d7",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonZeroCouplingTranslation.lean": {
+        "recorded_blob": "bd43bef171d7bc609c72279780a8165c6917f1f5",
+        "current_blob": "bd43bef171d7bc609c72279780a8165c6917f1f5",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceMarginal.lean": {
+        "recorded_blob": "5beeb05fde7b01c3de8a5a7ce05d272462d2044b",
+        "current_blob": "5beeb05fde7b01c3de8a5a7ce05d272462d2044b",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceRegularity.lean": {
+        "recorded_blob": "0e2e5a9f53a0f3b402e283d901ca66b6e4b39136",
+        "current_blob": "0e2e5a9f53a0f3b402e283d901ca66b6e4b39136",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceAction.lean": {
+        "recorded_blob": "b9b71abe9652a4478351bc2bb4836bd28a24a1df",
+        "current_blob": "b9b71abe9652a4478351bc2bb4836bd28a24a1df",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceHaar.lean": {
+        "recorded_blob": "575581f0bbdacf4b506b89fef69f22c0beb69dbc",
+        "current_blob": "575581f0bbdacf4b506b89fef69f22c0beb69dbc",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGeometry.lean": {
+        "recorded_blob": "d9c0e133563cf93c129891532e5062f410fee10b",
+        "current_blob": "d9c0e133563cf93c129891532e5062f410fee10b",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceKernelSymmetry.lean": {
+        "recorded_blob": "cdcb74724790340f34ff8468130d008e3c396a49",
+        "current_blob": "cdcb74724790340f34ff8468130d008e3c396a49",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeQuadratic.lean": {
+        "recorded_blob": "d76604d20958646706c178c5ab233f0303559452",
+        "current_blob": "d76604d20958646706c178c5ab233f0303559452",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceQuadraticPositivity.lean": {
+        "recorded_blob": "a9b8a4ec61dd54e983d1fbc078271eb63969f628",
+        "current_blob": "a9b8a4ec61dd54e983d1fbc078271eb63969f628",
+        "status": "MATCH"
+      },
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFeatures.lean": {
+        "recorded_blob": "69cde161384490da9df9e6838dacbb94b946b5d4",
+        "current_blob": "69cde161384490da9df9e6838dacbb94b946b5d4",
+        "status": "MATCH"
+      }
+    }
+  },
+  "combined_replay_context": {
+    "source_modules": 49,
+    "pins": {
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonRestrictedTranslation.lean": "4fa2171a3c310affd1d34547a1d92a5141d20e33",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionQuotient.lean": "d802e0223bfb7339305d9377e55124fcad09026f",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionRadical.lean": "698a87b306065745facf3128ca50873e77f73295",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionSesquilinear.lean": "d2681b7829cdddd9ac25bb308e892d898bb95ff3",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionPositivity.lean": "96294d50bdbdd96ce92eb61cc1a128fd01667bee",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionGluing.lean": "a98385e4d20f0fa4e5e17a42f07c6039ae919d4a",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSplitAction.lean": "6821a406f2cd5b6a06843a02b0417f66c0461163",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCrossPlaquetteKernel.lean": "370c76874a9bd73a062e7e4d5729daf84fbb1b66",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2WilsonPositiveType.lean": "ed4360a999af6bf4805b3c78d8142db20827a3ee",
+      "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramExponential.lean": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonHalfObservables.lean": "828e0a84c6a089f914a7d251f75a69a2c0fb9544",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryGaugeIntegration.lean": "dc9aba4667a46c2ac8c9b518238f7dee601fee8e",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectedGauge.lean": "16a8d434ad83b28dc066bb181171ec2202fd9601",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionForm.lean": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PositiveTimeObservables.lean": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean": "07a4d2a45318bbc322587229e65f31123286dd4c",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonHaarCoordinates.lean": "8133cfb051e026c902036d195c90cb1c89546fdb",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeSplit.lean": "209ef8ec4f8d0a9dc763261e160a617568703d9e",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryKernelIntegral.lean": "9eb97ef3095d016f4bb12d1a18d849f2e803de30",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryFeatures.lean": "e5e9392b54360e0639734268be3f3653bb93c7bb",
+      "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramIntegral.lean": "7855781b5ba20c5df4443140a4eae4c560cdb80c",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/TwoStepPositiveTranslation.lean": "b96c7b617eca6095e7c7eb89f2e37c5620e8c538",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeTranslation.lean": "ad09f6ea0e9e731d4add065c2d4a2c4315554e2c",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PeriodicTimeTranslation.lean": "d6b2d24c2534f637199d049200c29f04432410f3",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonThreeSliceTranslation.lean": "06c5cc717e416799c264e2d3e1a2b8bc6d7b1200",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTranslationMixedBound.lean": "a9b279509bf7df7c7f5abdcda819ef39daa561d7",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonZeroCouplingTranslation.lean": "bd43bef171d7bc609c72279780a8165c6917f1f5",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceMarginal.lean": "5beeb05fde7b01c3de8a5a7ce05d272462d2044b",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceRegularity.lean": "0e2e5a9f53a0f3b402e283d901ca66b6e4b39136",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceAction.lean": "b9b71abe9652a4478351bc2bb4836bd28a24a1df",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceHaar.lean": "575581f0bbdacf4b506b89fef69f22c0beb69dbc",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGeometry.lean": "d9c0e133563cf93c129891532e5062f410fee10b",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceKernelSymmetry.lean": "cdcb74724790340f34ff8468130d008e3c396a49",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeQuadratic.lean": "d76604d20958646706c178c5ab233f0303559452",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceQuadraticPositivity.lean": "a9b8a4ec61dd54e983d1fbc078271eb63969f628",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFeatures.lean": "69cde161384490da9df9e6838dacbb94b946b5d4",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean": "7ef255a8395fc2af2438ee6483da425f757a8ab6",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean": "6c4599981f9309bc90d1dd442c4401bc8c876a72",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean": "109a9fd2bb04272b8cc39d61b0fa424d07c86559",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean": "6f00ba2bad4b7084c21d67faddcbcb980727f92d",
+      "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean": "a27fbace5426a480d94a1a12cc9dec8e576ea67c"
+    },
+    "requirement": "Freshly check every listed GRWTSK source module and every transitive upstream/private/generated/opaque/instance dependency. The lexical source roster does not substitute for a kernel-generated dependency/axiom audit. All facets remain NOT_RUN."
+  },
+  "control_and_prior_target_blobs": {
+    "AGENTS.md": "4fe8206c3615c1908475d17dc80128827f921efc",
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md": "b4c996ae6e885de3cdfe587db40c53dbbc43f74a",
+    "documentation/mathematics/_verification/targets/finite-su2-slice-quadratic-positivity.json": "738ee89baafa7fcf300b2e1cfdebd4a5c0dd9592",
+    "documentation/mathematics/_verification/targets/finite-su2-cyclic-spatial-marginal.json": "a015fa951c87ec8d62660c2ace0c401198dca199",
+    "documentation/taxonomy/msc2020/source-layout-v1.json": "b4d3401ae431283ab0894f12e0972217fa4aaf3e"
+  },
+  "paper_ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "sha": "8451d4b01a720351a11281f4d3038e6b1e28078e",
+    "base_blob": "b4c996ae6e885de3cdfe587db40c53dbbc43f74a",
+    "append_only": true,
+    "scope": "public bylines, actual real L2 construction, exact normalization/hypotheses/declarations/source pins/evidence, precise density/operator/physical gaps",
+    "sha256": "9b286d34c6c5e6ecce82363108de199243358d90737de2c992acf60b8807dff0",
+    "publication_base_blob": "b4c996ae6e885de3cdfe587db40c53dbbc43f74a"
+  },
+  "subject": {
+    "msc2020": "81T25",
+    "heading": "Quantum field theory on lattices",
+    "namespace_prefix": "GRWTSK.Geometry.GaugeTheory",
+    "layout_changed": false
+  },
+  "upstream_api_source_pins": [
+    {
+      "path": "Mathlib/MeasureTheory/Function/L2Space.lean",
+      "blob": "77e0d3526db347b58cdd46fe666067be7e4fbe35",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/LpSpace/Basic.lean",
+      "blob": "49ca798a7ffe3002a1d2ce7ae7ba6d06291406b6",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/LpSpace/Complete.lean",
+      "blob": "188f566e1455bea4f8e88435e067e8a5032f9ba5",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/LpSpace/ContinuousFunctions.lean",
+      "blob": "c22dc7bde5fb355b60f69e2965b32ff13442032b",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+      "blob": "ca89c56b1e589d63ce7c4f6721177ccf1e147411",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/LpSeminorm/Defs.lean",
+      "blob": "b57d783f82c70c0f49c85859aa0157808181237f",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Function/L1Space/Integrable.lean",
+      "blob": "2ad180afca8fb23408d5408050a8965089375ae5",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Integral/Bochner/Basic.lean",
+      "blob": "5abe07ae60e8bdfe5d99a7e68c681a5b052ef4f2",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Integral/Prod.lean",
+      "blob": "7484a64e40beacdd472da61f858f02c8ffb62863",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/Analysis/InnerProductSpace/Basic.lean",
+      "blob": "75aac879ab48e009bb05b5a71a189750e85382e9",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/Analysis/InnerProductSpace/Adjoint.lean",
+      "blob": "2a6292b78ff0806a603bc86f966096dd67cf2dc6",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/Analysis/InnerProductSpace/Symmetric.lean",
+      "blob": "118489b6d70ecc11a1232adfc18bc46d5e4494b1",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/Topology/Algebra/Module/ClosedSubmodule.lean",
+      "blob": "fad80db455e7b17eabc5d29bc151685d38f37cc1",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/Topology/Algebra/Module/ContinuousLinearMap/Restrict.lean",
+      "blob": "edb09e5d873e7b22c6d9c246af96bc032d1891ac",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Measure/QuasiMeasurePreserving.lean",
+      "blob": "ee3bd1eb702173d2f8147a7368a765e5064616d1",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "PINNED_SOURCE_API_INSPECTION_ONLY"
+    }
+  ],
+  "direct_mathlib_imports": [
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Analysis.Complex.Basic",
+    "Mathlib.Analysis.InnerProductSpace.Adjoint",
+    "Mathlib.Analysis.SpecialFunctions.Exponential",
+    "Mathlib.Basic.Complex.BigOperators",
+    "Mathlib.Data.Complex.BigOperators",
+    "Mathlib.Data.ZMod.Basic",
+    "Mathlib.LinearAlgebra.Matrix.Trace",
+    "Mathlib.LinearAlgebra.UnitaryGroup",
+    "Mathlib.MeasureTheory.Constructions.Pi",
+    "Mathlib.MeasureTheory.Function.L2Space",
+    "Mathlib.MeasureTheory.Function.LocallyIntegrable",
+    "Mathlib.MeasureTheory.Function.LpSpace.Complete",
+    "Mathlib.MeasureTheory.Function.SpecialFunctions.Basic",
+    "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+    "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap",
+    "Mathlib.MeasureTheory.Integral.Bochner.Set",
+    "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+    "Mathlib.MeasureTheory.Integral.Lebesgue.Map",
+    "Mathlib.MeasureTheory.Integral.Pi",
+    "Mathlib.MeasureTheory.Integral.Prod",
+    "Mathlib.MeasureTheory.Measure.Haar.Unique",
+    "Mathlib.MeasureTheory.Measure.WithDensity",
+    "Mathlib.Tactic",
+    "Mathlib.Tactic.Group",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.Algebra.Group.Basic",
+    "Mathlib.Topology.Algebra.InfiniteSum.NatInt",
+    "Mathlib.Topology.Algebra.Module.ClosedSubmodule",
+    "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Restrict",
+    "Mathlib.Topology.Algebra.Star.Unitary",
+    "Mathlib.Topology.Constructions",
+    "Mathlib.Topology.ContinuousMap.Compact",
+    "Mathlib.Topology.Instances.Matrix",
+    "Mathlib.Topology.MetricSpace.ProperSpace",
+    "Mathlib.Topology.Order.Basic"
+  ],
+  "structural_guidance": {
+    "repository": "grwtsk/noeaaeue",
+    "commit": "552a75b1374cad3374b2c49d320d43e650c0671d",
+    "skill": "bindings/mathematics/organization/skills/structural-formalization/SKILL.md",
+    "version": "0.2.0",
+    "application": "Source-defined integral representative -> real L2 bounded map -> actual self-adjointness -> closed actual gauge fixed space/restriction -> paid continuous quadratic agreement. No assumed transfer/positive/spectral certificate."
+  },
+  "paper_context": {
+    "title": "Quantum Yang--Mills Theory",
+    "authors": [
+      "Arthur Jaffe",
+      "Edward Witten"
+    ],
+    "year": 2006,
+    "publication": "The Millennium Prize Problems, AMS",
+    "section": "6.5",
+    "stable_source": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+    "role": "finite-regulator context; no attribution of this local proof, researcher review or historical influence"
+  },
+  "actual_source_model": {
+    "period": "L:Nat,[NeZero L]; intended later ordinary-ratio consumer L=2*T,T>=4,beta>0",
+    "space": "X=WilsonSliceGeometry.Slice L SU2",
+    "measure": "nu=WilsonSliceHaar.sliceHaar L, the actual normalized finite product SU2 Haar",
+    "kernel": "WilsonSliceAction.sliceKernel L beta, unchanged actual M(a)M(b)*integral_g W(a,g.b) dg",
+    "normalization": "No new normalizer in A; no Markov row-mass1 assumption. Original full Wilson partition/density and all temporal Haar inventories remain bound unchanged by the inherited cyclic marginal.",
+    "parameter": "beta:Real,hbeta:0<=beta",
+    "hilbert": "RealSliceL2 L=MeasureTheory.Lp Real 2 nu with actual real inner product and explicit Lp completeness import",
+    "domain": "ALL RealSliceL2 L; the invariant closed subspace is constructed afterward",
+    "different_object": "This auxiliary real slice map is not the reflection-translation quotient operator or a physical Hamiltonian"
+  },
+  "original_marginal_binding": {
+    "target_path": "documentation/mathematics/_verification/targets/finite-su2-cyclic-spatial-marginal.json",
+    "target_blob": "a015fa951c87ec8d62660c2ace0c401198dca199",
+    "partition_module": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean",
+    "partition_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+    "marginal_module": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceMarginal.lean",
+    "marginal_blob": "5beeb05fde7b01c3de8a5a7ce05d272462d2044b",
+    "retained": "Every spatial link/plaquette multiplicity, temporal Haar layer and periodic crossing"
+  },
+  "integral_representative": {
+    "definition": "kernelIntegral(beta,u)(a)=integral_b K_beta(a,b)*u(b) dnu(b)",
+    "representative_independence": "kernelIntegral_congr: AE-equal u,v give equality at EVERY output a, not merely AE.",
+    "L2_to_L1": "MemLp.integrable with exponent1<=2 on the actual finite probability; integral_norm_le_L2 proves integral|f|<=norm(f)_2 using actual exponent comparison and probability.",
+    "kernel_bound": "norm_K_le_one derives abs K<=1 from actual K_pos and K_bounds; this is a scalar bound only.",
+    "row_integrability": "integrable_kernelIntegrand pays each fixed-a product using bounded continuous K and actual L1 input.",
+    "continuity": "continuous_kernelIntegral uses actual dominated continuity with majorant norm(u(b)), its actual integrability, AE strong measurability and continuity in a at every fixed b.",
+    "distinguished_output": "kernelRepresentative(beta,hbeta,f):C(X,Real)",
+    "bounds": "norm(kernelRepresentative f a)<=integral norm f<=norm f_2; its sup norm<=norm f_2.",
+    "membership": "memLp_kernelRepresentative supplies actual MemLp 2 nu.",
+    "AE_boundary": "The distinguished continuous representative is pointwise defined; the underlying chosen Lp output coercion is only AE equal. No false all-points claim for an arbitrary Lp coercion."
+  },
+  "bounded_operator": {
+    "linear_map": "representativeLinearMap into C(X,Real), using actual Lp AE addition/scalar laws and integral linearity with paid row integrability.",
+    "continuous_map": "toContinuous is LinearMap.mkContinuous with derived bound1.",
+    "definition": "operator=(ContinuousMap.toLp 2 nu Real).comp(toContinuous)",
+    "AE_formula": "operator_apply_ae and operator_apply_ae_of_representative return the literal integral with every representative.",
+    "norm": "norm(operator f)_2<=norm f_2 and norm(operator)<=1.",
+    "normalization": "Actual probability removes the total-measure factor in the Lp AE bound; no norm premise is assumed."
+  },
+  "continuous_agreement": {
+    "pointwise": "representative_of_continuous: kernelRepresentative([phi])(a)=integral K(a,b)*phi(b)dnu(b) for every continuous real phi and EVERY a.",
+    "L2": "operator_of_continuous gives the corresponding AE identity for the actual L2 output.",
+    "quadratic": "inner_operator_of_continuous: inner Real [phi] (operator [phi]) = Re sliceQuadratic_beta(complexObservable phi).",
+    "positivity_scope": "continuous_quadratic_nonnegative is ONLY for embedded continuous real phi pointwise invariant under every actual gauge. Its membership in the actual fixed space is proved separately.",
+    "no_automatic_L2_extension": true
+  },
+  "self_adjointness": {
+    "full_integrability": "integrable_mixedKernel: f(a)*K(a,b)*g(b) integrable on nu.prod nu for arbitrary actual L2 f,g; L2-to-L1, product integrability, actual K continuity and abs K<=1 supply every premise.",
+    "pairing": "inner_operator_eq_double pays the actual real L2 inner product, output AE representative and integral scalar placement.",
+    "symmetry": "operator_isSymmetric uses the paid actual Fubini swap and actual K_symm.",
+    "self_adjoint": "operator_isSelfAdjoint uses the maintained bounded Hilbert adjoint equivalence, with actual ambient L2 completeness.",
+    "not_claimed": "No unbounded Hamiltonian/domain or varying-Hilbert-space limit is substituted."
+  },
+  "gauge_fixed_space": {
+    "composition": "gaugeComposition(g)=actual Lp.compMeasurePreservingₗᵢ Real (sliceGaugeMeasurableEquiv L g) (measurePreserving_sliceGauge L g)",
+    "suppliers": "Actual coordinatewise two-sided SU2 Haar translations and their explicit measurable inverse from the prior source.",
+    "laws": "gaugeComposition_apply_ae, exact norm equality, and gaugeComposition_inverse.",
+    "submodule": "gaugeInvariantSpace L={f:RealSliceL2 L | forall g:SliceGauge L SU2,gaugeComposition(g,f)=f as L2 classes}",
+    "closedness": "Identified with the intersection over ALL actual gauges of continuous fixed equalizers, then isClosed_iInter.",
+    "completeness": "gaugeInvariantSpace_complete is derived from this closedness and actual ambient completeness; no closed-space field is assumed.",
+    "quantifier_boundary": "For each gauge, an equality of AE classes. No unproved exchange into one common AE set pointwise fixed for all gauges.",
+    "continuous_membership": "continuous_mem_gaugeInvariantSpace and oneVector_mem_gaugeInvariantSpace supply genuine members.",
+    "invariant_output": "representative_gauge uses independent first-slot actual K_gauge with second gauge1 to prove pointwise invariant continuous output for EVERY input f.",
+    "AE_range": "operator_mem_gaugeInvariantSpace pays pullback of the output AE identity under each actual Haar-preserving gauge via QuasiMeasurePreserving.ae_eq_comp.",
+    "restriction": "invariantOperator is the actual ContinuousLinearMap.restrict; ambient agreement,norm<=1,symmetry and self-adjointness are proved on this actual closed complete space."
+  },
+  "beta_zero": {
+    "actual_formula": "operator L 0 f=mean(f) • oneVector, where mean(f)=integral f dnu and oneVector is the actual L2 class of constant1.",
+    "nonzero_vector": "mean_oneVector=1 and oneVector_ne_zero follow from actual probability.",
+    "exact_range": "operator_zero_range: Set.range(operator0)=Set.range(fun r:Real=>r•oneVector).",
+    "restriction": "invariantOperator_zero_mean keeps the same formula; oneVector belongs to the actual invariant space.",
+    "boundary": "Zero-mean null directions remain. This is rank-one behavior, not strict positivity or a physical ground-sector identification."
+  },
+  "expected_type_checks": [
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.kernelIntegral_congr",
+      "hypotheses": "L,[NeZero L],beta:Real,u=v AE under actual nu,a:X",
+      "conclusion": "Equality of actual row integrals at every a; no assumed continuity or representative certificate."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative.continuous_kernelIntegral",
+      "hypotheses": "L,[NeZero L],beta>=0,u:X->Real,Integrable u actual nu",
+      "conclusion": "Continuity of the literal row integral, from actual dominated continuity."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator",
+      "hypotheses": "L,[NeZero L],beta>=0",
+      "conclusion": "An actually defined RealSliceL2 L ->L[Real] RealSliceL2 L, not an assumed field."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.norm_operator_le_one",
+      "hypotheses": "L,[NeZero L],beta>=0",
+      "conclusion": "Operator norm<=1 on actual real L2. No reflection-form norm bound."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.representative_of_continuous",
+      "hypotheses": "L,[NeZero L],beta>=0,phi:C(X,Real),a:X",
+      "conclusion": "Exact pointwise continuous representative agreement with the original K integral."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2SelfAdjoint.operator_isSelfAdjoint",
+      "hypotheses": "L,[NeZero L],beta>=0",
+      "conclusion": "IsSelfAdjoint of the actual bounded real L2 map, using paid full product integrability."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.gaugeInvariantSpace_isClosed",
+      "hypotheses": "L,[NeZero L]",
+      "conclusion": "Actual fixed submodule closed; no supplied invariance/closedness field."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert.invariantOperator_isSelfAdjoint",
+      "hypotheses": "L,[NeZero L],beta>=0",
+      "conclusion": "Actual bounded restriction self-adjoint on the constructed closed complete real invariant subspace."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceL2Operator.operator_zero_range",
+      "hypotheses": "L,[NeZero L]",
+      "conclusion": "The exact beta0 range is the scalar line of actual nonzero oneVector."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonSliceContinuousOperatorQuadratic.continuous_quadratic_nonnegative",
+      "hypotheses": "L,[NeZero L],beta>=0,phi:C(X,Real),forall g,a,phi(g.a)=phi(a)",
+      "conclusion": "Nonnegative operator quadratic ONLY on the embedded invariant continuous population, not all invariant L2 classes."
+    }
+  ],
+  "next_positivity_lemma": {
+    "statement": "DenseRange of phi -> ([phi],continuous_mem_gaugeInvariantSpace phi) from the subtype of actual pointwise slice-gauge-invariant real continuous functions into gaugeInvariantSpace L.",
+    "equivalent": "The L2 closure of these actual invariant continuous classes equals the actual invariant fixed space H.",
+    "required_bridge": "A proved actual Haar-averaging approximation/density argument; ambient continuous-to-Lp inclusion and closedness of H alone do not prove it.",
+    "consumer": "Then boundedness of the actual operator and continuity of its real quadratic expression can transfer the already paid continuous inequality. This transfer is not performed or assumed here."
+  },
+  "later_unpaid": [
+    "Positivity for arbitrary gauge-invariant L2 classes",
+    "Compactness of the actual invariant operator",
+    "Strict positivity/infinite rank for beta>0 on the actual invariant space",
+    "Continuous invariant eigenfunctions and every spectral premise",
+    "Actual F_n support/gauge membership and exact cyclic quadratic evaluations",
+    "General interacting unbounded-ratio counterexample",
+    "The unresolved reflection-translation form-norm bound",
+    "Physical vacuum/whole ground sector, regulator-uniform coercivity, continuum/infinite-volume construction,physical mass gap"
+  ],
+  "static_review": {
+    "status": "SOURCE_REVIEW_ONLY",
+    "performed": [
+      "Inspected actual current main, exact K definitions, prior quadratic source and pinned Mathlib Lp/L2/continuous-inclusion/Fubini/adjoint/closed-submodule/AE-pullback APIs",
+      "Reconciled exact previous source bytes and only known own ledger section; preserved concurrent published arithmetic entry and complete tree",
+      "Compared all44 inherited source pins to current complete main: MATCH",
+      "Lexical declaration roster, forbidden-token, delimiter and whitespace review of five new files; not Lean parsing or an axiom audit",
+      "Exact local hashing and Git-data upload/readback for five source artifacts and the reviewed ledger"
+    ],
+    "not_evidence_for": [
+      "Lean elaboration",
+      "compilation",
+      "fresh kernel replay",
+      "transitive axiom audit",
+      "general operator positivity",
+      "accepted counterexample"
+    ]
+  },
+  "acceptance": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "scope": "Entire new and inherited local chain and all upstream/private/generated/opaque/instance dependencies",
+    "kernel_verified_new_bridges": "NONE_CLAIMED"
+  },
+  "proposed_exact_source_checks": {
+    "dispatch": "NOT_DISPATCHED; user forbids proof execution",
+    "compile": {
+      "status": "NOT_RUN",
+      "source_targets": [
+        "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean",
+        "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean",
+        "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean",
+        "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean",
+        "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean"
+      ],
+      "future_command_templates": [
+        "lake env lean GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean",
+        "lake env lean GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean",
+        "lake env lean GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean",
+        "lake env lean GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean",
+        "lake env lean GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean"
+      ],
+      "requirement": "Only under separately authorized verification; build every transitive imported module from pinned final bytes first. These templates do not themselves build imports. Do not check merely a terminal wrapper."
+    },
+    "fresh_kernel": {
+      "status": "NOT_RUN",
+      "requirement": "Separately authorized Noe machinery must freshly replay the full49-module exact-source context and its complete dependency closure, bound to the actual final published source/lock revisions."
+    },
+    "axioms_and_hypotheses": {
+      "status": "NOT_RUN",
+      "requirement": "Audit all60 names including the completeness instance plus all transitive private/generated/opaque/instance dependencies. Exclude sorryAx, unproved research assumptions and unauthorized native trust. Record actual permitted upstream foundations and every preserved hypothesis."
+    },
+    "expected_types": "Print/check all60 full elaborated types under separate authority, including exact actual measures, real scalar field, beta>=0, AE vs pointwise boundaries, actual closed fixed space and restricted continuous positivity scope."
+  },
+  "preservation": {
+    "regular_main": "Full complete-tree fast-forward from fb0007e9c9b73d3e72a7d572e1b85be966f58c2e to87cc24505f2d85a5caebcf62c5464593601974e6 after exact source and own-ledger-section reconciliation",
+    "concurrent": "Published Numberphile repair/provenance entry, prior full-tree source/ledger/layout/migration/index history preserved",
+    "own_ledger_append": "Only this new append; base committed ledger prefix unchanged",
+    "unrelated_local_index": "Untouched",
+    "new_source_paths": "Five maintained subject additions, no migration or root promotion"
+  },
+  "independent_rh": {
+    "issue": "https://github.com/grwtsk/math/issues/1438",
+    "prefix_counterexample": "P_1(7,7)=2",
+    "terminal_counterexample": "N=2,d=1,RH endpoint parameter L=3: full -2*u*v-2*v^2 (u,v>0), deleted0",
+    "unresolved": "Actual signed growing head saving such as H_(ceil(M^(3/4)))(j)<=C*M^(7/8), one j-independent C and proved growing-d aggregate bridge",
+    "exponent_gain": "NONE",
+    "evidence": "NOT_RUN",
+    "cross_target_bridge": "NONE; lattice/RH sources and grids are not identified"
+  },
+  "exceptions": {
+    "T3": "Prior period6/support contraction remains unchanged; no two-slice counterexample is claimed there.",
+    "beta0": "Actual mean map and its exact nonzero one-dimensional range retained."
+  },
+  "physical_boundary": "No vacuum/whole ground sector, physical unbounded Hamiltonian, varying-space continuum/infinite-volume bridge, regulator-uniform positive mass/coercivity or physical mass gap. A contraction bound is not a spectral gap.",
+  "restrictions": {
+    "proof_execution": "NONE",
+    "new_workers": "NONE",
+    "root_or_dependency_changes": "NONE",
+    "new_branches_or_worktrees": "NONE",
+    "remote_main_commit_or_push": "NONE",
+    "manuscript": "ON_HOLD"
+  },
+  "publication_base_math_commit": "87cc24505f2d85a5caebcf62c5464593601974e6",
+  "publication_sources": [
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean",
+      "sha256": "71cf143971d90fba4e64592901b5957a8254a4ecb2036429cb432d8b8e540f57",
+      "git_blob": "7ef255a8395fc2af2438ee6483da425f757a8ab6"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean",
+      "sha256": "1613380abb9c1cb9170b8f043baf73ccf3d7a3a631a767414385f8765d70c1b6",
+      "git_blob": "6c4599981f9309bc90d1dd442c4401bc8c876a72"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean",
+      "sha256": "08cde2c4de7ee9088c6e69517e169d6f9d6516efdbb9767a83322c7a7d895438",
+      "git_blob": "109a9fd2bb04272b8cc39d61b0fa424d07c86559"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean",
+      "sha256": "222cf105c84a8ea78e4b03628f95734b8b1f09f41221697027021d651ade63ed",
+      "git_blob": "6f00ba2bad4b7084c21d67faddcbcb980727f92d"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean",
+      "sha256": "ba0ac1549e2444a2dc1fe0139b4bc4386e3451c19d1eb700f1a516c447c577af",
+      "git_blob": "a27fbace5426a480d94a1a12cc9dec8e576ea67c"
+    }
+  ],
+  "original_paper_ledger_candidate_blob": "8451d4b01a720351a11281f4d3038e6b1e28078e",
+  "publication_dependency_comparison": {
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonRestrictedTranslation.lean": {
+      "original": "4fa2171a3c310affd1d34547a1d92a5141d20e33",
+      "publication": "4fa2171a3c310affd1d34547a1d92a5141d20e33"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionQuotient.lean": {
+      "original": "d802e0223bfb7339305d9377e55124fcad09026f",
+      "publication": "d802e0223bfb7339305d9377e55124fcad09026f"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionRadical.lean": {
+      "original": "698a87b306065745facf3128ca50873e77f73295",
+      "publication": "698a87b306065745facf3128ca50873e77f73295"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionSesquilinear.lean": {
+      "original": "d2681b7829cdddd9ac25bb308e892d898bb95ff3",
+      "publication": "d2681b7829cdddd9ac25bb308e892d898bb95ff3"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionPositivity.lean": {
+      "original": "96294d50bdbdd96ce92eb61cc1a128fd01667bee",
+      "publication": "96294d50bdbdd96ce92eb61cc1a128fd01667bee"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionGluing.lean": {
+      "original": "a98385e4d20f0fa4e5e17a42f07c6039ae919d4a",
+      "publication": "a98385e4d20f0fa4e5e17a42f07c6039ae919d4a"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSplitAction.lean": {
+      "original": "6821a406f2cd5b6a06843a02b0417f66c0461163",
+      "publication": "6821a406f2cd5b6a06843a02b0417f66c0461163"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCrossPlaquetteKernel.lean": {
+      "original": "370c76874a9bd73a062e7e4d5729daf84fbb1b66",
+      "publication": "370c76874a9bd73a062e7e4d5729daf84fbb1b66"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2WilsonPositiveType.lean": {
+      "original": "ed4360a999af6bf4805b3c78d8142db20827a3ee",
+      "publication": "ed4360a999af6bf4805b3c78d8142db20827a3ee"
+    },
+    "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramExponential.lean": {
+      "original": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45",
+      "publication": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": {
+      "original": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "publication": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": {
+      "original": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "publication": "24bdeeb0d08d9a272a6388813bc78098c36dcf07"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonHalfObservables.lean": {
+      "original": "828e0a84c6a089f914a7d251f75a69a2c0fb9544",
+      "publication": "828e0a84c6a089f914a7d251f75a69a2c0fb9544"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryGaugeIntegration.lean": {
+      "original": "dc9aba4667a46c2ac8c9b518238f7dee601fee8e",
+      "publication": "dc9aba4667a46c2ac8c9b518238f7dee601fee8e"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectedGauge.lean": {
+      "original": "16a8d434ad83b28dc066bb181171ec2202fd9601",
+      "publication": "16a8d434ad83b28dc066bb181171ec2202fd9601"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionForm.lean": {
+      "original": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
+      "publication": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PositiveTimeObservables.lean": {
+      "original": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+      "publication": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": {
+      "original": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "publication": "4d67894f4300159d09138338ac7543d6cd7b4dcd"
+    },
+    "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": {
+      "original": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "publication": "91303fd670bf111dcc0e188aed6ad3554c62b87f"
+    },
+    "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": {
+      "original": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "publication": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8"
+    },
+    "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": {
+      "original": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "publication": "9469f8f1678d8e019261e739af76189d7fe22c99"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean": {
+      "original": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+      "publication": "1efe15c2c08451673809cef1c4aacb0ea9454ed3"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean": {
+      "original": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+      "publication": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean": {
+      "original": "07a4d2a45318bbc322587229e65f31123286dd4c",
+      "publication": "07a4d2a45318bbc322587229e65f31123286dd4c"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonHaarCoordinates.lean": {
+      "original": "8133cfb051e026c902036d195c90cb1c89546fdb",
+      "publication": "8133cfb051e026c902036d195c90cb1c89546fdb"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeSplit.lean": {
+      "original": "209ef8ec4f8d0a9dc763261e160a617568703d9e",
+      "publication": "209ef8ec4f8d0a9dc763261e160a617568703d9e"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryKernelIntegral.lean": {
+      "original": "9eb97ef3095d016f4bb12d1a18d849f2e803de30",
+      "publication": "9eb97ef3095d016f4bb12d1a18d849f2e803de30"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBoundaryFeatures.lean": {
+      "original": "e5e9392b54360e0639734268be3f3653bb93c7bb",
+      "publication": "e5e9392b54360e0639734268be3f3653bb93c7bb"
+    },
+    "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramIntegral.lean": {
+      "original": "7855781b5ba20c5df4443140a4eae4c560cdb80c",
+      "publication": "7855781b5ba20c5df4443140a4eae4c560cdb80c"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/TwoStepPositiveTranslation.lean": {
+      "original": "b96c7b617eca6095e7c7eb89f2e37c5620e8c538",
+      "publication": "b96c7b617eca6095e7c7eb89f2e37c5620e8c538"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeTranslation.lean": {
+      "original": "ad09f6ea0e9e731d4add065c2d4a2c4315554e2c",
+      "publication": "ad09f6ea0e9e731d4add065c2d4a2c4315554e2c"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PeriodicTimeTranslation.lean": {
+      "original": "d6b2d24c2534f637199d049200c29f04432410f3",
+      "publication": "d6b2d24c2534f637199d049200c29f04432410f3"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonThreeSliceTranslation.lean": {
+      "original": "06c5cc717e416799c264e2d3e1a2b8bc6d7b1200",
+      "publication": "06c5cc717e416799c264e2d3e1a2b8bc6d7b1200"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTranslationMixedBound.lean": {
+      "original": "a9b279509bf7df7c7f5abdcda819ef39daa561d7",
+      "publication": "a9b279509bf7df7c7f5abdcda819ef39daa561d7"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonZeroCouplingTranslation.lean": {
+      "original": "bd43bef171d7bc609c72279780a8165c6917f1f5",
+      "publication": "bd43bef171d7bc609c72279780a8165c6917f1f5"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceMarginal.lean": {
+      "original": "5beeb05fde7b01c3de8a5a7ce05d272462d2044b",
+      "publication": "5beeb05fde7b01c3de8a5a7ce05d272462d2044b"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceRegularity.lean": {
+      "original": "0e2e5a9f53a0f3b402e283d901ca66b6e4b39136",
+      "publication": "0e2e5a9f53a0f3b402e283d901ca66b6e4b39136"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceAction.lean": {
+      "original": "b9b71abe9652a4478351bc2bb4836bd28a24a1df",
+      "publication": "b9b71abe9652a4478351bc2bb4836bd28a24a1df"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceHaar.lean": {
+      "original": "575581f0bbdacf4b506b89fef69f22c0beb69dbc",
+      "publication": "575581f0bbdacf4b506b89fef69f22c0beb69dbc"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGeometry.lean": {
+      "original": "d9c0e133563cf93c129891532e5062f410fee10b",
+      "publication": "d9c0e133563cf93c129891532e5062f410fee10b"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceKernelSymmetry.lean": {
+      "original": "cdcb74724790340f34ff8468130d008e3c396a49",
+      "publication": "cdcb74724790340f34ff8468130d008e3c396a49"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeQuadratic.lean": {
+      "original": "d76604d20958646706c178c5ab233f0303559452",
+      "publication": "d76604d20958646706c178c5ab233f0303559452"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceQuadraticPositivity.lean": {
+      "original": "a9b8a4ec61dd54e983d1fbc078271eb63969f628",
+      "publication": "a9b8a4ec61dd54e983d1fbc078271eb63969f628"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFeatures.lean": {
+      "original": "69cde161384490da9df9e6838dacbb94b946b5d4",
+      "publication": "69cde161384490da9df9e6838dacbb94b946b5d4"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceIntegralRepresentative.lean": {
+      "original": "7ef255a8395fc2af2438ee6483da425f757a8ab6",
+      "publication": "7ef255a8395fc2af2438ee6483da425f757a8ab6"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2Operator.lean": {
+      "original": "6c4599981f9309bc90d1dd442c4401bc8c876a72",
+      "publication": "6c4599981f9309bc90d1dd442c4401bc8c876a72"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceL2SelfAdjoint.lean": {
+      "original": "109a9fd2bb04272b8cc39d61b0fa424d07c86559",
+      "publication": "109a9fd2bb04272b8cc39d61b0fa424d07c86559"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGaugeHilbert.lean": {
+      "original": "6f00ba2bad4b7084c21d67faddcbcb980727f92d",
+      "publication": "6f00ba2bad4b7084c21d67faddcbcb980727f92d"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceContinuousOperatorQuadratic.lean": {
+      "original": "a27fbace5426a480d94a1a12cc9dec8e576ea67c",
+      "publication": "a27fbace5426a480d94a1a12cc9dec8e576ea67c"
+    },
+    "AGENTS.md": {
+      "original": "4fe8206c3615c1908475d17dc80128827f921efc",
+      "publication": "4fe8206c3615c1908475d17dc80128827f921efc"
+    },
+    "lean-toolchain": {
+      "original": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "publication": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+    },
+    "lake-manifest.json": {
+      "original": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "publication": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+    },
+    "lakefile.toml": {
+      "original": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "publication": "7cac6bef50ace37093759b857409ba65f65d118d"
+    },
+    "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md": {
+      "original": "b4c996ae6e885de3cdfe587db40c53dbbc43f74a",
+      "publication": "b4c996ae6e885de3cdfe587db40c53dbbc43f74a"
+    },
+    "documentation/mathematics/_verification/targets/finite-su2-slice-quadratic-positivity.json": {
+      "original": "738ee89baafa7fcf300b2e1cfdebd4a5c0dd9592",
+      "publication": "738ee89baafa7fcf300b2e1cfdebd4a5c0dd9592"
+    },
+    "documentation/mathematics/_verification/targets/finite-su2-cyclic-spatial-marginal.json": {
+      "original": "a015fa951c87ec8d62660c2ace0c401198dca199",
+      "publication": "a015fa951c87ec8d62660c2ace0c401198dca199"
+    },
+    "documentation/taxonomy/msc2020/source-layout-v1.json": {
+      "original": "b4d3401ae431283ab0894f12e0972217fa4aaf3e",
+      "publication": "b4d3401ae431283ab0894f12e0972217fa4aaf3e"
+    }
+  },
+  "publication_source_layout_blob": "04c4e818de743285931f2de7ae4803354f0f003d",
+  "publication_note": "Five exact uploaded Lean source bytes retained, including terminal blank lines; reviewed ledger append (whitespace only tidied) and five MSC rows merged into complete current upstream tree. Working/index changes preserved. Compilation, fresh replay and axiom audit remain NOT_RUN. No invariant density, general L2 positivity, compact spectral sequence or accepted counterexample is supplied by publication."
+}
