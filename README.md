@@ -14,6 +14,8 @@ This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
 
 [Every source and declaration](docs/mathematics/complete-source-index.md) · [Verification specifications](docs/verification/README.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
 
+[**From research signal to structural intelligence**](docs/reference/structural-intelligence.md): a source-backed formalization, human and AI guidance, and reusable worker skills for choosing the next mathematical move.
+
 ## Signal for the next research decision
 
 Here, **signal** means mathematical information that can change what an AI investigates next: a structure worth generalizing, a connection worth testing, a constraint that redirects an approach, or a missing result whose proof would enable something further.

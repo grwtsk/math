@@ -1,0 +1,141 @@
+# Static verification specification, not an execution receipt.
+schema = "grwtsk-math-replay-target-v1"
+id = "joint-premise-goal-slice-v1"
+owner_repository = "grwtsk/math"
+mathematical_author = "grwtsk contributors"
+lean_toolchain_file = "lean-toolchain"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "isolated-mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+public_root_exposure_required = false
+full_library_build_required = false
+application_correspondence_is_separate = true
+
+[source_binding]
+commit = "c6da0b696e400c584719777c6dec5ce2a6f2c153"
+tree = "aab0ce49301a146286dc4fcac3f5c5f236f2c700"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+mathlib_context_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+manifest_does_not_bind_its_own_content_identity = true
+all_selected_sources_must_belong_to_one_bound_tree = true
+external_compiler_and_init_identity_required = true
+expected_type_binding = "Bind exact elaborated types, universes, declaration kinds and owners before acceptance; a source name is not that binding."
+
+[status]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+formal_refinement = "NOT_RUN"
+manifest_runner_compatibility = "NOT_RUN"
+verification_issue = "https://github.com/grwtsk/math/issues/1424"
+
+[build]
+required_compiler_options = ["-DwarningAsError=true"]
+require_compiler_toolchain_match = true
+require_zero_errors_and_warnings = true
+require_all_selected_modules = true
+mathlib_required_for_selected_modules = false
+generated_build_outputs_and_logs_are_external = true
+
+[declaration_inventory]
+selection = "explicit heads in JointPremiseInference only; dependencies are inspected transitively"
+required_count = 21
+theorem_count = 12
+exact_names_selected = true
+exact_owner_modules_selected = true
+generated_dependencies_remain_in_transitive_trust_inspection = true
+namespace = "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference"
+declarations = [
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Rule",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.ClosedUnder",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Derivable",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_sound",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_closed",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_mono",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_iff_all_closed",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.RuleDepends",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.restrictRules",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.restrictFacts",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_restrict",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_restrict_iff",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.goalSlice",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.goalSlice_derivable_iff",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.goalSlice_least",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.binaryRule",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.binaryRule_both_suffice",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.binaryRule_left_insufficient",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.one_premise_projection_unsound",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.loopRule",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.unseeded_cycle_insufficient",
+]
+
+[trust]
+allowed_axioms = []
+reject_sorry_ax = true
+reject_native_decide = true
+reject_native_proof_dependencies = true
+reject_unreported_native_dependencies = true
+reject_unavailable_audit = true
+reject_missing_audit_as_empty_axiom_set = true
+require_transitive_dependency_inspection = true
+require_kernel_checked_proof_terms = true
+
+[axiom_audit]
+selection = "all 12 explicit theorems, including controls, and their transitive generated/private dependencies"
+required_count = 12
+theorems = [
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_sound",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_closed",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_mono",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_iff_all_closed",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_restrict",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.derivable_restrict_iff",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.goalSlice_derivable_iff",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.goalSlice_least",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.binaryRule_both_suffice",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.binaryRule_left_insufficient",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.one_premise_projection_unsound",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.unseeded_cycle_insufficient",
+]
+
+[[modules]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure"
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/LeastDependencyClosure.lean"
+blob = "53d1094bc8ee931480dd0143fe9a62199e9260c2"
+required = true
+expected_direct_imports = ["Init"]
+
+[[modules]]
+name = "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference"
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/JointPremiseInference.lean"
+blob = "e7fd1cf62af7d8b0226234af59f9d24cf6a184a4"
+sha256 = "69bbf01b747b5f23e7dbf303c31a20eb7b22f4e426b7df23ac0c9fcdeb5ac85c"
+required = true
+expected_direct_imports = ["GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure"]
+explicit_declaration_count = 21
+theorem_count = 12
+
+[commands]
+execution_status = "NOT_RUN"
+working_directory = "externally managed clean math checkout at the source_binding commit"
+prepare_dependency = "lake build GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure"
+elaborate_target = "lake env lean -DwarningAsError=true GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/JointPremiseInference.lean"
+build_target = "lake build GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference"
+audit = "lake env lean --trust=0 -DwarningAsError=true /absolute/external/path/JointPremiseInferenceAudit.lean"
+fresh_replay_requirement = "Separately replay both selected modules with exact compiler/Init identities; bind method and imported-artifact scope. A build or #check alone is not the replay receipt."
+
+[controls]
+required = ["conjunction_not_disjunction", "unseeded_cycle", "zero_premise_rule", "alternative_routes", "incomplete_slice_rejected"]
+finite_reference_checks_are_kernel_acceptance = false
+slice_leastness_is_minimum_proof_size = false
+sat_encoding_supplied = false
+complexity_bound_supplied = false
+ai_benefit_measured = false
