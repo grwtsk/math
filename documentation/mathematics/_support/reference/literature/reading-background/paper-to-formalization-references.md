@@ -1150,6 +1150,99 @@ Compilation, comparator, fresh replay, complete transitive axiom auditing and
 expected-interface checking remain NOT_RUN; registry preparation is a separate
 phase. No RH or growing-family Liouville budget is supplied.
 
+<a id="anthropic-fermat-six-interfaces-20261029"></a>
+
+## Anthropic Fermat: six exact consumer interfaces
+
+The original positive-power/cube/zero-factor candidates and the later natural
+solution-fiber candidates keep their exact sources at math `08f98951548df4b4cd74b1db97801a80c38b6e44`:
+
+- `adapters/anthropic-math/fermat/GRWTSK/NumberTheory/AnthropicMath/Fermat.lean`,
+  blob `8b185c1a69f4ad4b60e8f43c9747479b67a953b9`;
+- `adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean`,
+  blob `bcfbb5e8910bf9219756fb52d89494311daaa282`.
+
+All names are explicit in `documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/anthropic-fermat-six-interfaces-20261029.json` and the adjacent managed profile/TOML.
+The target now requires two complete compiler-owned module censuses, all six
+exact roots, and six fresh importing-module type checks. It retains every
+positive-natural premise of `noPositivePowerSum`/`noPositiveCubeSum`, `n>=3` in
+the general statements, the zero-output branch of `powerSum_eq_forces_zero_factor`,
+and the coincident axis candidates at c=0 in `fixed_output_solution_fiber`.
+`positive_search_empty` quantifies over every natural cutoff; it is not a finite
+search used to infer an infinite theorem.
+
+Imported mathematics remains Anthropic's `flt_pinned` at upstream
+`6e837e75355538c7f80bab5b956861e86c4eacc2`, FinalCheck blob
+`3ffbd60b8f9736f5569e4dd4774701a114d18266`. The Wiles/Taylor-Wiles paper entries,
+public upstream bylines, Apache-2.0 attribution and precise missing independent
+bridges in the earlier ledger entries remain unchanged. Local attribution is
+grwtsk contributors. This is a static interface increment, not new FLT acceptance.
+Lean4.33.1 and all ten dependency Git revisions remain isolated; do not upgrade
+root dependencies. Compilation, fresh independent replay, complete transitive
+axiom audit, Comparator and expected-interface checks remain NOT_RUN until exact
+source-bound receipts exist. Historical three-declaration profiles remain intact.
+
+<a id="carleson-fixed-support-varying-rows-20261029"></a>
+
+## Carleson: a fixed-support envelope for varying coefficient rows
+
+Imported proof source remains `classical_carleson`,
+`Carleson/Classical/ClassicalCarleson.lean`, blob
+`cef99075c938b9a5351ef800b72e612345e4e071`, in
+[fpvandoorn/carleson@52cba54d4b7b444e937c7abbc67835afa2a0bb16](https://github.com/fpvandoorn/carleson/blob/52cba54d4b7b444e937c7abbc67835afa2a0bb16/Carleson/Classical/ClassicalCarleson.lean).
+The pinned project title/byline is *A blueprint for the formalization of
+Carleson’s theorem on convergence of Fourier series*: Lars Becker,
+María Inés de Frutos-Fernández, Leo Diedering, Floris van Doorn,
+Sébastien Gouëzel, Asgar Jamneshan, Evgenia Karunus, Edward van de Meent,
+Pietro Monticone, Jasper Mulder-Sohn, Jim Portegies, Joris Roos,
+Michael Rothgang, Rajula Srivastava, James Sundstrom, Jeremy Tan and
+Christoph Thiele; [project blueprint](https://florisvandoorn.com/carleson/blueprint/),
+version bound by that Git pin. Apache-2.0; original public bylines remain intact.
+No new paper-to-theorem mapping or broader Carleson-Hunt result is inferred.
+
+Fix Countable iota, a finite support s (empty allowed), and a fixed family of
+continuous 2*pi-periodic complex functions f_i. The actual scalar residual of
+any row w with sum_s norm(w_i)<=1 is bounded pointwise by
+sum_s norm(partialFourierSum_N(f_i)(x)-f_i(x)). This envelope tends to zero on
+one common Lebesgue-full-measure set. Thus for each x there and each epsilon>0,
+an eventual cutoff works simultaneously for every such row. It may depend on
+x, epsilon, f and s, but not on w. An arbitrary sequence of admissible rows W(N)
+therefore has residual norm tending to zero; W need not converge. The SAME W(N)
+weights the Fourier approximation and moving reference sum_s W(N,i)*f_i(x).
+This does not establish convergence of either moving readout itself.
+
+The local source is `adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean`, commit `fd6f3d97e80088c09262adbf5fa7ccce8467d504`, blob
+`a803cf300e8a4987ddfc62ff0bc1985617fd4734`. New declarations under
+`GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence`:
+
+- `unit_ball_residual_le_coordinate_sum`
+- `finite_unit_ball_residual_ae_uniform`
+- `cutoff_dependent_unit_ball_residual_ae_tendsto_zero`
+
+Actual local use: the finite scalar-observation residual shape in
+`GRWTSK/RealFunctions/DiscreteFourierReadout.lean`, blob
+`3f33ba2da169c76f021c899760245cc78db17f17`, at source parent
+`08f98951548df4b4cd74b1db97801a80c38b6e44`. The continuous-periodic theorem supplies an actual vanishing
+residual envelope, while a proved cyclic-DFT/circle-Fourier comparison remains
+UNSUPPLIED. No growing support, rate, uniformity in x or in all continuous
+functions, infinite-sum exchange or practical performance assertion follows.
+The pointwise algebraic estimate needs no continuity or periodicity premise;
+the source's Countable section-instance scope is retained in its proposed type
+consumer, pending actual native elaboration.
+
+Classification: three new SOURCE_PROOF_CANDIDATE consumer declarations.
+The original three theorem bodies are unchanged; their historical source blob
+`c2a19bae1774be37b2249df0b362e1aa40d78c38` at c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13
+and old verification targets keep their own scope. The new static target is
+`documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.json` with adjacent TOML/profile, a complete compiler-owned census of
+all six roots and literal type checks for the new three. Source/API cross-review
+is not kernel acceptance. Compilation, fresh independent replay, complete axiom
+audit and interface checks are NOT_RUN. Native Lean4.36.0-rc1 / Mathlib
+`d88814353fcbcc0461c55b2a4585d3f44d903df1` remain isolated from root4.34.1.
+The generic `carleson_hunt` endpoint remains excluded because upstream metadata
+reports sorryAx; even the narrower classical source requires local exact audit.
+Local attribution: grwtsk contributors.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

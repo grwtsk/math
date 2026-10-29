@@ -89,3 +89,20 @@ and the canonical ledger anchor ieantn-consecutive-square-consumer-20261029.
 Compilation, fresh replay, complete axiom audit and interface checking are NOT_RUN.
 The next obligation is an actual analytic-bound/range supplier and native checks;
 a root4.34.1 version-compatible comparison remains separate.
+
+## Carleson fixed-support varying-row continuation
+
+The continuous-periodic readout now has a source candidate for a genuinely
+row-uniform finite-support envelope. Its residual is bounded by the sum of the
+coordinate residual norms; this finite sum tends to zero on the countable
+family's common full-measure set. Consequently one epsilon cutoff works for every
+l1-unit-ball row, and the row may change arbitrarily with the Fourier cutoff.
+
+The same W(N) multiplies both the approximation and moving reference. Vanishing
+residual does not imply convergence of either moving readout. Empty support is
+included; growing support, uniformity in x, a rate and the cyclic-DFT comparison
+remain absent. This fills the earlier fixed-family row-uniform source obligation
+while native4.36.0-rc1 compilation, fresh replay, complete axiom and type checks
+remain NOT_RUN. Exact source/types and public attribution are in the canonical
+ledger anchor carleson-fixed-support-varying-rows-20261029. Historical first-wave
+sources/targets remain meaningful at their original pins.

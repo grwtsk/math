@@ -1,0 +1,32 @@
+{
+  "project_subdir": "adapters/carleson",
+  "contracts": [
+    {
+      "source": "GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean",
+      "universes": [
+        "u"
+      ],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module_expected_types": {
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.unit_ball_residual_le_coordinate_sum": "∀ {ι : Type u} [Countable ι] (s : Finset ι) (w : ι → Complex)\n  (f : ι → Real → Complex) (N : Nat) (x : Real),\n  Finset.sum s (fun i => Norm.norm (w i)) ≤ 1 →\n    Norm.norm ((Finset.sum s (fun i => w i * _root_.partialFourierSum N (f i) x)) -\n      (Finset.sum s (fun i => w i * f i x))) ≤\n        Finset.sum s (fun i => Norm.norm (_root_.partialFourierSum N (f i) x - f i x))",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_unit_ball_residual_ae_uniform": "∀ {ι : Type u} [Countable ι] (s : Finset ι) (f : ι → Real → Complex)\n  (hc : ∀ i, Continuous (f i))\n  (hp : ∀ i, Function.Periodic (f i) (2 * Real.pi)),\n  Filter.Eventually (fun x : Real =>\n    ∀ ε : Real, 0 < ε → Filter.Eventually (fun N : Nat =>\n      ∀ w : ι → Complex, Finset.sum s (fun i => Norm.norm (w i)) ≤ 1 →\n        Norm.norm ((Finset.sum s (fun i => w i * _root_.partialFourierSum N (f i) x)) -\n          (Finset.sum s (fun i => w i * f i x))) < ε) Filter.atTop)\n    (MeasureTheory.ae (MeasureTheory.volume : MeasureTheory.Measure Real))",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.cutoff_dependent_unit_ball_residual_ae_tendsto_zero": "∀ {ι : Type u} [Countable ι] (s : Finset ι) (W : Nat → ι → Complex)\n  (hW : ∀ N, Finset.sum s (fun i => Norm.norm (W N i)) ≤ 1)\n  (f : ι → Real → Complex) (hc : ∀ i, Continuous (f i))\n  (hp : ∀ i, Function.Periodic (f i) (2 * Real.pi)),\n  Filter.Eventually (fun x : Real =>\n    Filter.Tendsto (fun N : Nat =>\n      Norm.norm ((Finset.sum s (fun i => W N i * _root_.partialFourierSum N (f i) x)) -\n        (Finset.sum s (fun i => W N i * f i x)))) Filter.atTop (nhds (0 : Real)))\n    (MeasureTheory.ae (MeasureTheory.volume : MeasureTheory.Measure Real))"
+      },
+      "required_module_declarations": [
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.countable_family_ae_convergence",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_weighted_readout_ae_convergence",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_weighted_residual_ae_tendsto_zero",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.unit_ball_residual_le_coordinate_sum",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_unit_ball_residual_ae_uniform",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.cutoff_dependent_unit_ball_residual_ae_tendsto_zero"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3
+    }
+  ]
+}

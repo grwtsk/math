@@ -1,0 +1,23 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "08f98951548df4b4cd74b1db97801a80c38b6e44"
+managed_profile = "documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/anthropic-fermat-six-interfaces-20261029.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+expected_interface = "NOT_RUN"
+comparator = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]
+
+[[sources]]
+path = "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/AnthropicMath/Fermat.lean"
+blob = "8b185c1a69f4ad4b60e8f43c9747479b67a953b9"
+sha256 = "25e2f162ed6fecf671cde035b995c0ab85eefd45626feedbb1e2207b34bf2842"
+
+[[sources]]
+path = "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean"
+blob = "bcfbb5e8910bf9219756fb52d89494311daaa282"
+sha256 = "13bcc9f927a5efc7235cfa7bbcbfc4142b2a0753cf9c8484013dc18065b183f6"

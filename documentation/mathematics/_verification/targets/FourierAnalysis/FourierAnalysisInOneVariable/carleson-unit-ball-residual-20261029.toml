@@ -1,0 +1,16 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "fd6f3d97e80088c09262adbf5fa7ccce8467d504"
+source_path = "adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean"
+source_blob = "a803cf300e8a4987ddfc62ff0bc1985617fd4734"
+managed_profile = "documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+expected_interface = "NOT_RUN"
+required_root_count = 6
+expected_type_count = 3
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]
