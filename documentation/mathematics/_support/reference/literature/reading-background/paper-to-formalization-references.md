@@ -1738,6 +1738,26 @@ mapped. The dependency stays at the recorded immutable pin; no whole-upstream
 closure equivalence or fresh proof is inferred from these comparisons.
 Historical provider inventory, source pins and outcomes remain intact.
 
+<a id="e8-cover-matching-20261029"></a>
+### E8 radius-close covering matchings (2026-10-29 source candidates)
+
+Local attribution: grwtsk contributors. Source basis: *Sphere Packing in Lean*, ongoing version0.1.0 (released2025-06-13), Christopher Birkbeck, Sidharth Hariharan, Seewoo Lee, Ho Kiu Gareth Ma, Bhavik Mehta and Maryna Viazovska. The consumed [Basic.E8 source](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/77cf0a0c104f2e31501eab04d88bbc068d61c169/SpherePacking/Basic/E8.lean) has copyright2025 Bhavik Mehta and authors Bhavik Mehta/Gareth Ma, Apache-2.0; commit `77cf0a0c104f2e31501eab04d88bbc068d61c169`, blob `c369209e9ae2a7e358e2b312cd251bf9caf20cd2`. The exact endpoint `E8_norm_lower_bound` says an E8 vector is zero or has Euclidean `WithLp.toLp 2` norm at least `sqrt 2`. The admitted `SpherePacking.MainTheorem` is excluded. No new external paper theorem mapping or attribution of this matching result to an optimal-density paper is asserted.
+
+The method chooses an actual covering center for each point and uses the E8 separation plus triangle inequality to prove injectivity. The finite equal-cardinality case uses `Fintype.bijective_iff_injective_and_card` and `Equiv.ofBijective` with the same forward map. The imported Mathlib covering API is pinned to `1f414401f69059aa7eead47b53ee40bd38455eeb` / Lean4.35.0-rc4. Its covering-number source retains the public bylines Rémy Degenne, Markus Himmel, Lorenzo Luccioli, Alessio Rondelli and Etienne Marion (copyright2025 Rémy Degenne; Apache-2.0). Exact API/direct-import blobs are in the [static target](../../../../_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.json).
+
+[New source](https://github.com/grwtsk/math/blob/6336a394397cca8587c4b0ba713b36e0ba4b5bee/adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean): math `6336a394397cca8587c4b0ba713b36e0ba4b5bee`, blob `719bf5797ad0d64246a718661340278b5b15a49f`, SHA256 `6c83c505864f69c7d8e97b82e3c23dbcf2d8dafd6f50b1ead6d880ecc031637f`. Fully qualified declarations:
+
+- `GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_embedding_of_isCover`
+- `GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq`
+
+Exact hypotheses and result: `S:Finset(Fin 8 → Real)` with every member in `Submodule.E8 Real`; `ε:NNReal` and STRICT `2*(ε:Real)<sqrt 2`; `Metric.IsCover ε` of the exact Euclidean `WithLp.toLp 2` image. For an arbitrary center set `C:Set(EuclideanSpace Real(Fin 8))`, an actual embedding `S ↪ C` has `dist(toLp 2 v,f v)≤ε` for every sample point. Centers may be infinite, nonlattice or outside the sample; empty samples and radius zero are retained. If `C` is a finite center set with `C.card=S.card`, an equivalence `S ≃ C` retains the same radius bound and uses every center.
+
+Actual GRWTSK use: the covering family in `GRWTSK/GeneralTopology/CoveringNumbersPublic.lean` at `83d120433d0239cf2943ac6a1d61a7d3a49c0b7b`/blob `ac4085f88cc6ecc5c1d0a0146b17defb3bfb1d0f` returns covering cardinality bounds; `Metric.packingNumber_two_mul_le_externalCoveringNumber` constructs a local injection. The new E8 consumer returns that assignment and, at equal cardinality, a full correspondence for later point/center reasoning. The unchanged E8 separation/finite-covering sources remain separate historical scopes. No root4.34.1 import or version transport is supplied.
+
+Classification: **SOURCE_PROOF_CANDIDATE**, actual mathematical consumer of imported separation/metric APIs. Complete authored-module discovery, compilation, Comparator, both literal expected-type interfaces, fresh independent kernel replay and complete transitive axiom audit are **NOT_RUN**; second independent checker **UNSUPPLIED**. Static source/API/type review and direct-import existence checks found no concrete issue; they are not compiler/kernel receipts. The [profile](../../../../_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.profile.json), SHA256 `85a8ec12b77652ba5639963a3bf100a6493b2cceb14f7aafe6779be91a06c181`, requires both exact roots/types, no universe parameters and complete compiler-owned census. Expected acceptance rejects `sorryAx` and unapproved trust, with standard allowed `propext`, `Classical.choice`, `Quot.sound` only.
+
+Missing bridges: supported exact4.35.0-rc4 qualification, full source-bound closure/core preparation and all scoped native checks; checked root-version integration; nearest-center optimization or an effective matching algorithm; any arithmetic coefficient/packet-mass correspondence. The chosen centers are only radius-close; the strict threshold does not include equality, and no density, volume, regional count, performance or optimal packing result follows. This does not replace the original Anthropic6/OpenAI4 checks.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

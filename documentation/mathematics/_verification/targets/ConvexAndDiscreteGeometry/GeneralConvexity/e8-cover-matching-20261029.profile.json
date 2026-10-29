@@ -1,0 +1,25 @@
+{
+  "project_subdir": "adapters/sphere-packing",
+  "contracts": [
+    {
+      "source": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean",
+      "universes": [],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_embedding_of_isCover",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq"
+      ],
+      "module_expected_types": {
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_embedding_of_isCover": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2)\n  (C : Set (EuclideanSpace Real (Fin 8)))\n  (hC : Metric.IsCover ε\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real))) C),\n  ∃ f : {v : Fin 8 → Real // v ∈ S} ↪\n      {c : EuclideanSpace Real (Fin 8) // c ∈ C},\n    ∀ v : {v : Fin 8 → Real // v ∈ S},\n      dist (WithLp.toLp 2 (v : Fin 8 → Real))\n        (f v : EuclideanSpace Real (Fin 8)) ≤ (ε : Real)",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2)\n  (C : Finset (EuclideanSpace Real (Fin 8)))\n  (hC : Metric.IsCover ε\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real)))\n    (C : Set (EuclideanSpace Real (Fin 8))))\n  (hcard : C.card = S.card),\n  ∃ e : {v : Fin 8 → Real // v ∈ S} ≃\n      {c : EuclideanSpace Real (Fin 8) // c ∈ C},\n    ∀ v : {v : Fin 8 → Real // v ∈ S},\n      dist (WithLp.toLp 2 (v : Fin 8 → Real))\n        (e v : EuclideanSpace Real (Fin 8)) ≤ (ε : Real)"
+      }
+    }
+  ]
+}
