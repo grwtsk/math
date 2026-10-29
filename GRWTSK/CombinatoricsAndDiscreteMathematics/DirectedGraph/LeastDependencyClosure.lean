@@ -3034,4 +3034,95 @@ theorem finiteOffsetKey_fixedMask_injective {width : Nat} (inventory : FiniteInv
       finiteOffsetKey inventory weight offset selection decisions fixedMaskLE right) : left = right :=
   fixedMaskLE_injective left right (congrArg CostCountMask.mask keys)
 
+/-- Every natural number is reconstructed from the structural binary projections.
+This is an arithmetic decomposition, separately from standard bit-operation APIs. -/
+theorem maskPack_projections : ∀ mask : Nat, maskPack (maskLowBit mask) (maskHalf mask) = mask
+  | 0 => rfl
+  | 1 => rfl
+  | mask + 2 =>
+    (maskPack_succ (maskLowBit mask) (maskHalf mask)).trans
+      (congrArg (fun n => n + 2) (maskPack_projections mask))
+
+theorem maskHalf_double_le (mask : Nat) : 2 * maskHalf mask ≤ mask := by
+  calc
+    2 * maskHalf mask = 0 + 2 * maskHalf mask := (Nat.zero_add _).symm
+    _ ≤ (maskLowBit mask).toNat + 2 * maskHalf mask :=
+      Nat.add_le_add_right (Nat.zero_le _) _
+    _ = mask := maskPack_projections mask
+
+theorem maskHalf_lt_pow_succ (width mask : Nat) (bound : mask < 2 ^ (width + 1)) :
+    maskHalf mask < 2 ^ width := by
+  have doubled : 2 * maskHalf mask < 2 * (2 ^ width) := by
+    calc
+      2 * maskHalf mask ≤ mask := maskHalf_double_le mask
+      _ < 2 ^ (width + 1) := bound
+      _ = (2 ^ width) * 2 := Nat.pow_succ 2 width
+      _ = 2 * (2 ^ width) := Nat.mul_comm _ _
+  cases Nat.lt_or_ge (maskHalf mask) (2 ^ width) with
+  | inl strict => exact strict
+  | inr reverse =>
+    have backwards := Nat.mul_le_mul_left 2 reverse
+    exact False.elim (Nat.lt_irrefl _ (Nat.lt_of_lt_of_le doubled backwards))
+
+/-- Width zero permits only mask zero under the bounded-mask premise. The
+decoder itself remains total on arbitrary naturals. -/
+theorem mask_zero_of_width_zero_bound (mask : Nat) (bound : mask < 2 ^ 0) : mask = 0 := by
+  cases mask with
+  | zero => rfl
+  | succ mask => exact False.elim (Nat.not_lt_zero mask (Nat.lt_of_succ_lt_succ bound))
+
+/-- Reverse roundtrip requires the stated width bound; no high bits may be
+discarded. Together with `bitsLE_maskLE`, this gives both fixed-width directions. -/
+theorem maskLE_bitsLE (width mask : Nat) (bound : mask < 2 ^ width) :
+    maskLE (bitsLE width mask) = mask := by
+  induction width generalizing mask with
+  | zero =>
+    change 0 = mask
+    exact (mask_zero_of_width_zero_bound mask bound).symm
+  | succ width ih =>
+    change maskPack (maskLowBit mask) (maskLE (bitsLE width (maskHalf mask))) = mask
+    exact (congrArg (maskPack (maskLowBit mask))
+      (ih (maskHalf mask) (maskHalf_lt_pow_succ width mask bound))).trans (maskPack_projections mask)
+
+theorem bitsLE_injective_of_lt (width left right : Nat)
+    (leftBound : left < 2 ^ width) (rightBound : right < 2 ^ width)
+    (bits : bitsLE width left = bitsLE width right) : left = right := by
+  calc
+    left = maskLE (bitsLE width left) := (maskLE_bitsLE width left leftBound).symm
+    _ = maskLE (bitsLE width right) := congrArg maskLE bits
+    _ = right := maskLE_bitsLE width right rightBound
+
+/-- The declared finite carriers include their exact width/range proofs. These
+maps do not bind external rows, IDs, standard bit operations or Python decoders. -/
+def boundedMaskLE {width : Nat} (bits : FixedBoolList width) : Fin (2 ^ width) :=
+  ⟨fixedMaskLE bits, fixedMaskLE_bound bits⟩
+
+def fixedBitsLE {width : Nat} (mask : Fin (2 ^ width)) : FixedBoolList width :=
+  ⟨bitsLE width mask.val, bitsLE_length width mask.val⟩
+
+theorem boundedMaskLE_fixedBitsLE {width : Nat} (mask : Fin (2 ^ width)) :
+    boundedMaskLE (fixedBitsLE mask) = mask := by
+  apply Fin.ext
+  exact maskLE_bitsLE width mask.val mask.isLt
+
+theorem fixedBitsLE_boundedMaskLE {width : Nat} (bits : FixedBoolList width) :
+    fixedBitsLE (boundedMaskLE bits) = bits := by
+  apply fixedMaskLE_injective
+  exact maskLE_bitsLE width (fixedMaskLE bits) (fixedMaskLE_bound bits)
+
+theorem fixedBitsLE_injective {width : Nat} (left right : Fin (2 ^ width))
+    (bits : fixedBitsLE left = fixedBitsLE right) : left = right := by
+  calc
+    left = boundedMaskLE (fixedBitsLE left) := (boundedMaskLE_fixedBitsLE left).symm
+    _ = boundedMaskLE (fixedBitsLE right) := congrArg (boundedMaskLE (width := width)) bits
+    _ = right := boundedMaskLE_fixedBitsLE right
+
+theorem fixedBitsLE_covers {width : Nat} (bits : FixedBoolList width) :
+    ∃ mask : Fin (2 ^ width), fixedBitsLE mask = bits :=
+  ⟨boundedMaskLE bits, fixedBitsLE_boundedMaskLE bits⟩
+
+theorem boundedMaskLE_covers {width : Nat} (mask : Fin (2 ^ width)) :
+    ∃ bits : FixedBoolList width, boundedMaskLE bits = mask :=
+  ⟨fixedBitsLE mask, boundedMaskLE_fixedBitsLE mask⟩
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
