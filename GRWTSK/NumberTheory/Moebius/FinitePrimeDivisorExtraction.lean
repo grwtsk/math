@@ -1,4 +1,4 @@
-/- Copyright (c) 2026 grwtsk. MIT.
+/- Copyright (c) 2026 grwtsk contributors. MIT.
 Mathlib's Mobius results retain Aaron Anderson's upstream authorship and
 Apache-2.0 license; other imports retain their upstream attribution/licenses. -/
 import GRWTSK.NumberTheory.Moebius.MertensPrimitive
@@ -173,8 +173,8 @@ theorem sum_divisible_window_eq_quotient (h N p : ℕ) (hp : 0 < p) (F : ℕ →
     have hpn := (Finset.mem_filter.mp hn).2
     have heq : p * (n / p) = n := Nat.mul_div_cancel' hpn
     refine Finset.mem_filter.mpr ⟨Finset.mem_Icc.mpr ⟨?_, ?_⟩, ?_⟩
-    · by_contra hlow
-      have hz : n / p = 0 := by omega
+    · apply Nat.one_le_iff_ne_zero.mpr
+      intro hz
       rw [hz, mul_zero] at heq
       omega
     · apply (Nat.le_div_iff_mul_le hp).mpr
@@ -208,14 +208,24 @@ theorem repeatedAverage_singleton_square {p : ℕ} (hp : Nat.Prime p) :
     repeatedAverage {p} (p * p) = -1 := by
   have hdiv : p ∣ p * p := ⟨p, rfl⟩
   have hq : p * p / p = p := Nat.mul_div_cancel_left p hp.pos
-  simp [repeatedAverage, divisorCount, selectedDivisors, hdiv, hq,
+  have hselected : selectedDivisors {p} (p * p) = {p} := by
+    apply Finset.filter_eq_self.mpr
+    intro q hq
+    obtain rfl := Finset.mem_singleton.mp hq
+    exact hdiv
+  simp [repeatedAverage, divisorCount, hselected, hq,
     moebiusReal, ArithmeticFunction.moebius_apply_prime hp]
 
 theorem primeAverage_singleton_square {p : ℕ} (hp : Nat.Prime p) :
     primeAverage {p} (p * p) = -1 := by
   have hdiv : p ∣ p * p := ⟨p, rfl⟩
   have hq : p * p / p = p := Nat.mul_div_cancel_left p hp.pos
-  simp [primeAverage, divisorCount, selectedDivisors, hdiv, hq,
+  have hselected : selectedDivisors {p} (p * p) = {p} := by
+    apply Finset.filter_eq_self.mpr
+    intro q hq
+    obtain rfl := Finset.mem_singleton.mp hq
+    exact hdiv
+  simp [primeAverage, divisorCount, hselected, hq,
     moebiusReal, ArithmeticFunction.moebius_apply_prime hp]
 
 /-- Removing the repeated-prime correction would give the wrong answer at p squared. -/
