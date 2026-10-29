@@ -1,0 +1,80 @@
+{
+  "schema": "grwtsk.passive-source-target/1",
+  "attribution": "grwtsk contributors",
+  "role": "Passive exact-source target; no execution authority",
+  "base_commit": "d13d332325db157faf7eacf57ca998b1c413368d",
+  "publication_binding": "The containing publication commit/tree binds these source bytes and all inherited dependencies. Resolve exact published tree before separately authorized acceptance.",
+  "canonical_workflow_snapshot": {
+    "repository": "grwtsk/noeaaeue",
+    "revision": "a587eab7e370d80a5fd7296ddc7574f54fa8891a",
+    "path": "workflows/research/orchestration/skills/noe-proof-automation/SKILL.md"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "sources": {
+    "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramTruncation.lean": {
+      "sha256": "60acddd66d8e7d8bffd38deac24a6a48ea5d5ca87bd8d108a38593eedfefad7e",
+      "git_blob": "0c5cc1d0e4ff0e4d470325192989bc506fb0cc29",
+      "source_status": "SOURCE_PROOF_CANDIDATE",
+      "compilation": "NOT_RUN"
+    },
+    "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteSignedApproximation.lean": {
+      "sha256": "d5ee0599baee547e5f2ff437bcfa8866c3ef255d6b3740ec22928d3c00dbd645",
+      "git_blob": "18790d6ebded9d089aece703b779ec8a2cde1903",
+      "source_status": "SOURCE_PROOF_CANDIDATE",
+      "compilation": "NOT_RUN"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFiniteMomentEnergy.lean": {
+      "sha256": "6a0af9cb440980701cc1ee616576f59acd6e32b4a1d828579024cf25e52e95dd",
+      "git_blob": "9c6391941eb52c5ffb9fb10dccc1cb91390d2eda",
+      "source_status": "SOURCE_PROOF_CANDIDATE",
+      "compilation": "NOT_RUN"
+    }
+  },
+  "compilation": "NOT_RUN",
+  "fresh_kernel_replay": "NOT_RUN",
+  "transitive_axiom_audit": "NOT_RUN",
+  "verification_dispatch": "NOT_DISPATCHED",
+  "commands_not_run": [
+    "lake build --wfail GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.FiniteRealGramTruncation GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.FiniteSignedApproximation GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceFiniteMomentEnergy"
+  ],
+  "acceptance_obligations": [
+    "Build/replay/audit complete inherited and new proof closure; wrapper-only compilation is insufficient.",
+    "Audit Finset sum monotonicity and the whole finite sum against one limiting quadratic; do not aggregate individually charged moment bounds.",
+    "Audit actual Wilson source agreement, exp(-beta*spatialLinkCount), every ordered word, real/complex conversion, and closed non-strict density extension.",
+    "Audit literal signed residual, coefficient square mass, retained mixed terms, and explicit orthogonality/source premises in the endpoint handoff.",
+    "The spectral-ratio declarations consume bounds as premises; they do not construct spectra, min-max, logarithmic Hamiltonians or a gap.",
+    "Reject sorryAx, new research axioms, unauthorized native trust, weakened hypotheses and prior-byte acceptance.",
+    "Resolve inherited Lean module and upstream API compatibility against the actual final dependency tree."
+  ],
+  "not_formalized": [
+    "Explicit factorial Taylor tail and operator-norm estimate",
+    "Actual finite-rank invariant compression and eigenvalue bracketing",
+    "Continuous-time RH step projection and both explicit residual constants",
+    "Concrete RH endpoint Lean-object binding; no guessed legacy import was added"
+  ],
+  "not_claimed": [
+    "RH arithmetic all-positive-rate bound",
+    "Verified finite-regulator spectral gap",
+    "Regulator-uniform or continuum mass gap",
+    "Lean/kernel/axiom acceptance"
+  ],
+  "finite_evidence": {
+    "classification": "FINITE_DIAGNOSTICS_ONLY",
+    "command": "python /mnt/data/joint-gram-work/local-evidence/preflight.py > /mnt/data/joint-gram-work/local-evidence/preflight-output.json",
+    "exit_status": 0,
+    "exact_rational_assertions": 735,
+    "high_precision_assertions": 667,
+    "decimal_precision": 65,
+    "interval_certification": false,
+    "durable_external_receipt": "UNAVAILABLE",
+    "scripts_or_logs_in_math_repository": false,
+    "preflight.py_sha256": "7ee17a51cf774dfbab6117a530eb1f28c85f3c24fcce0375b368a352f7fc35c7",
+    "preflight-output.json_sha256": "f5ded0eaa668a15d988c0111fc983bf979239078f61bd7a354a5f45cd60598db"
+  },
+  "environment": {
+    "lean_executable": null,
+    "lake_executable": null,
+    "native_execution": "NOT_DISPATCHED"
+  }
+}
