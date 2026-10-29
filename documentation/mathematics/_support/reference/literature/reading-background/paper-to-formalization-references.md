@@ -703,6 +703,52 @@ Commands to run through current supported Noe preparation/replay are not receipt
 Source candidates remain conditional on their imported dependencies and stated
 premises; no missing arithmetic estimate or analytical conclusion is promoted.
 
+<a id="tao-erdos-adapters"></a>
+
+## Tao Analysis Erdős problem consumers (2026-10-29)
+
+Local attribution: grwtsk contributors. The four source modules explicitly listed
+in Terence Tao's *Analysis I* companion README are the scope of
+`adapters/tao-erdos`. This is not an import of every exercise in Analysis I or an
+assertion that every community-database problem is solved. The database index is
+source metadata only, retaining upstream status claims separately from acceptance.
+
+- Upstream proof-source revision: `teorth/analysis@a19a5bfadc616467562995b75f46035232841943`, tree `12e2e3e753c382b37f591de848237c68b9ef1e69`; Lean `leanprover/lean4:v4.29.0-rc8`; Mathlib `698d2b68b870f1712040ab0c233d34372d4b56df`. Apache-2.0 license and all upstream source bylines preserved through the pinned dependency.
+- Community database: `teorth/erdosproblems@8c9d2224995163229c5ae61b642eb5cfb4a1f75e`, `data/problems.yaml` blob `6969666b4ece5b64467e25143fa6ba34dcf95041`. `problem-index.json` retains all 1221 upstream records; status fields are not verification receipts.
+
+| Source / byline / stable reference | Exact method, hypotheses and consumer | Role / unresolved obligations |
+| --- | --- | --- |
+| Erdős #379, source formalization by Terence Tao from conversations with Stijn Cambie and Vjeko Kovač; pinned source version below, [discussion](https://www.erdosproblems.com/forum/thread/379) | Prime p, integer r>1, p>2^(r−1): r≤S(2^φ(p^r)), where S is the supremum of prime-power divisibility exponents across 1≤k<n binomial coefficients. Also limsup S(n) in ENat is top. | Source candidate transport of the explicit family and limsup; no claim that S has a limit. Arithmetic supplier for unrelated Mertens/RH work remains absent. |
+| Pikhurko's n=5 construction for Erdős #613, formalization hosted by Terence Tao; [problem](https://www.erdosproblems.com/613), exact Lean source below | Concrete graph on 16 vertices, 44 edges; any two-coloring of unordered pairs has a color-0 K₁,₅ or color-1 triangle. Combine `PikhurkoN5.card_V`, `.edge_count_44` and `.red_triangle_of_no_blue_star`. | Source candidate concrete Ramsey witness. Sixteen is separately proved, not a conjunct of upstream `Pikhurko_n5_statement`. No assertion about all n or an optimality proof. |
+| *Forbidden Sidon subsets of perfect difference sets, featuring a human-assisted proof*, Boris Alexeev and Dustin G. Mixon on arXiv, 2025/v2 2026, [arXiv:2510.19804v2](https://arxiv.org/abs/2510.19804v2), [DOI:10.1073/pnas.2531760123](https://doi.org/10.1073/pnas.2531760123). Author webpage includes ChatGPT and Lean in its public byline; source header follows that attribution. | Tao source formalizes the prime case of Theorem 8. N=p²+p+1, p prime, finite perfect difference set B⊆ZMod N, and an injective residue-compatible embedding of {1,2,4,8} into B yield False. Separate cardinality theorem assumes NeZero N. | Source candidate explicit-premise obstruction using `Mainstep.Hypotheses` / `.contradiction`; not the paper's complete arbitrary-prime-power result, nor an automatic transport of the full five-element counterexample. |
+| Erdős #987, formalization hosted by Terence Tao following the second proof on [the problem page](https://www.erdosproblems.com/987); exact source below | For any z:ℕ→Circle and fixed offset, outer limsup over exponent k of inner limsup over prefix length n of the EReal norm of ∑_{j<n}z(j+offset)^k is top. | Source candidate fixed-tail consumer; preserves zero-based indexing, order of limsups, Circle and EReal domains. No uniform-in-offset bound or exchange of limits asserted. |
+
+### Exact declaration and source map
+
+- #379: [Analysis/Misc/erdos_379.lean](https://github.com/teorth/analysis/blob/a19a5bfadc616467562995b75f46035232841943/Analysis/Misc/erdos_379.lean), blob `0d4c04fdda9e24a9a97ba14b2e08e7d5507448ae`. Local `adapters/tao-erdos/GRWTSK/NumberTheory/SequencesAndSets/TaoErdos/Erdos379.lean`:
+  - `GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.binomialPrimePowerHeight`
+  - `GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.prime_power_family`
+  - `GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.unbounded_binomial_height`
+- #613: [Analysis/Misc/erdos_613.lean](https://github.com/teorth/analysis/blob/a19a5bfadc616467562995b75f46035232841943/Analysis/Misc/erdos_613.lean), blob `9a0d7789b55d46b59742c1aec1a885001d83ccf9`. Local `adapters/tao-erdos/GRWTSK/Combinatorics/GraphTheory/TaoErdos/Erdos613.lean`:
+  - `GRWTSK.Combinatorics.GraphTheory.TaoErdos.Erdos613.concrete_ramsey_witness`
+- #707: [Analysis/Misc/erdos_707.lean](https://github.com/teorth/analysis/blob/a19a5bfadc616467562995b75f46035232841943/Analysis/Misc/erdos_707.lean), blob `e5af795dbfc20549c5f7fb597c91bbb6e89b068e`. Local `adapters/tao-erdos/GRWTSK/Combinatorics/DesignsAndConfigurations/TaoErdos/Erdos707.lean`:
+  - `GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.perfect_difference_set_card`
+  - `GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.excludes_embedded_powers`
+- #987: [Analysis/Misc/erdos_987.lean](https://github.com/teorth/analysis/blob/a19a5bfadc616467562995b75f46035232841943/Analysis/Misc/erdos_987.lean), blob `f362db5e03b8b551123b8ab405928ac822208399`. Local `adapters/tao-erdos/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/TaoErdos/Erdos987.lean`:
+  - `GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.TaoErdos.Erdos987.shifted_circle_sequence`
+
+These are imported-mathematics transports and local source proof candidates,
+not independently kernel-verified bridges. `catalogue.json` pins each upstream
+blob. Compilation, fresh kernel replay, transitive axiom audit and exact-statement
+fidelity checks are **NOT_RUN**. The static profile is
+`documentation/mathematics/_verification/targets/ErdosProblems/tao-analysis-consumers-20261029.profile.json`.
+Requested command: `cd adapters/tao-erdos && lake build`; supported fresh replay
+must use Noe with the pinned subproject and complete exact-source dependencies.
+The old release-candidate compiler is not installed/qualified in the currently
+selected native environment, and the shared activation lock was held during
+this increment. No toolchain substitution, root import promotion, warning
+suppression as acceptance, or standalone verification bypass was used.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

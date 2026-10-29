@@ -1,0 +1,115 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "repository": "https://github.com/teorth/analysis",
+  "commit": "a19a5bfadc616467562995b75f46035232841943",
+  "tree": "12e2e3e753c382b37f591de848237c68b9ef1e69",
+  "toolchain": "leanprover/lean4:v4.29.0-rc8",
+  "mathlib": "698d2b68b870f1712040ab0c233d34372d4b56df",
+  "upstream_scope": "Only four Misc Erdős modules; textbook exercises elsewhere use sorry and are not accepted dependencies. Imports must be freshly audited.",
+  "source_metadata": {
+    "README.md": "6107e846ba7e60cba028bc2db639081f1d86b945",
+    "LICENSE": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+    "lakefile.lean": "ffb44c1555e2a0f774d0df91fd752f054e02c8bc",
+    "lake-manifest.json": "b0c25c6ced85f987cf9196bf26dd63a36d6ef4ca",
+    "lean-toolchain": "b58ff4f084f6858edb222d8bb27e28fd104df3d1"
+  },
+  "problem_database": {
+    "repository": "https://github.com/teorth/erdosproblems",
+    "commit": "8c9d2224995163229c5ae61b642eb5cfb4a1f75e",
+    "problems_blob": "6969666b4ece5b64467e25143fa6ba34dcf95041",
+    "role": "SOURCE_DISCOVERY_AND_STATUS_METADATA_NOT_PROOF"
+  },
+  "modules": [
+    {
+      "problem": 379,
+      "source_path": "Analysis/Misc/erdos_379.lean",
+      "source_blob": "0d4c04fdda9e24a9a97ba14b2e08e7d5507448ae",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/NumberTheory/SequencesAndSets/TaoErdos/Erdos379.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.binomialPrimePowerHeight",
+        "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.prime_power_family",
+        "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.unbounded_binomial_height"
+      ],
+      "msc_code": "11Bxx",
+      "msc_label": "Sequences and sets",
+      "classification": "SOURCE_PROOF_CANDIDATE_CONSUMER",
+      "checks": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      },
+      "source_text_scan": {
+        "sorry_occurrences": 0,
+        "scope": "LEXICAL_ONLY_NOT_TRANSITIVE_AXIOM_AUDIT"
+      }
+    },
+    {
+      "problem": 613,
+      "source_path": "Analysis/Misc/erdos_613.lean",
+      "source_blob": "9a0d7789b55d46b59742c1aec1a885001d83ccf9",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/Combinatorics/GraphTheory/TaoErdos/Erdos613.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.GraphTheory.TaoErdos.Erdos613.concrete_ramsey_witness"
+      ],
+      "msc_code": "05Cxx",
+      "msc_label": "Graph theory",
+      "classification": "SOURCE_PROOF_CANDIDATE_CONSUMER",
+      "checks": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      },
+      "source_text_scan": {
+        "sorry_occurrences": 0,
+        "scope": "LEXICAL_ONLY_NOT_TRANSITIVE_AXIOM_AUDIT"
+      }
+    },
+    {
+      "problem": 707,
+      "source_path": "Analysis/Misc/erdos_707.lean",
+      "source_blob": "e5af795dbfc20549c5f7fb597c91bbb6e89b068e",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/Combinatorics/DesignsAndConfigurations/TaoErdos/Erdos707.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.perfect_difference_set_card",
+        "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.excludes_embedded_powers"
+      ],
+      "msc_code": "05Bxx",
+      "msc_label": "Designs and configurations",
+      "classification": "SOURCE_PROOF_CANDIDATE_CONSUMER",
+      "checks": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      },
+      "source_text_scan": {
+        "sorry_occurrences": 0,
+        "scope": "LEXICAL_ONLY_NOT_TRANSITIVE_AXIOM_AUDIT"
+      }
+    },
+    {
+      "problem": 987,
+      "source_path": "Analysis/Misc/erdos_987.lean",
+      "source_blob": "f362db5e03b8b551123b8ab405928ac822208399",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/TaoErdos/Erdos987.lean",
+      "declarations": [
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.TaoErdos.Erdos987.shifted_circle_sequence"
+      ],
+      "msc_code": "42Axx",
+      "msc_label": "Fourier analysis in one variable",
+      "classification": "SOURCE_PROOF_CANDIDATE_CONSUMER",
+      "checks": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      },
+      "source_text_scan": {
+        "sorry_occurrences": 0,
+        "scope": "LEXICAL_ONLY_NOT_TRANSITIVE_AXIOM_AUDIT"
+      }
+    }
+  ]
+}

@@ -17,3 +17,8 @@ verification status when adding a provider.
 
 - [anthropic-math](anthropic-math/README.md): isolated zeta23, 3SUM/APSP, ETH and
   Fermat packages, exact source inventories and pending verification.
+
+- [tao-erdos](tao-erdos/README.md): pinned adapters for Tao’s Analysis Erdős
+  modules #379, #613, #707 and #987, plus the pinned community problem index.
+- [Repository discovery](DISCOVERY.md): eleven source-pinned candidates with
+  concrete mathematical uses and compatibility/trust boundaries.
