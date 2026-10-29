@@ -1,0 +1,29 @@
+# GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Net.Variant1fe2f1949f95a60ddbcfaf559cbd76992f1b39ecd26fb6ddbffcdf4674ad652a
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**0 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Net/Variant1fe2f1949f95a60ddbcfaf559cbd76992f1b39ecd26fb6ddbffcdf4674ad652a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c199e09ce76c281f852de9b629b8c4cd79cefe2a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Net/Variant1fe2f1949f95a60ddbcfaf559cbd76992f1b39ecd26fb6ddbffcdf4674ad652a.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ac3e976ad17f595fe1772708670f44e2e2ee69a84d121c0dc482bb85b1189c15 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Net/Variant1fe2f1949f95a60ddbcfaf559cbd76992f1b39ecd26fb6ddbffcdf4674ad652a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

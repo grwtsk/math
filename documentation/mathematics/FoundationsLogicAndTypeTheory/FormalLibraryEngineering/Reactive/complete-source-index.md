@@ -1,0 +1,23 @@
+# Reactive — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 0 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant43e2e3c9b88b54220abffcadbce9296aac6c153799cbcb93bf27662efa41faa2.lean](Variant43e2e3c9b88b54220abffcadbce9296aac6c153799cbcb93bf27662efa41faa2.lean/index.md) | module |
+| [Variantffad64431d651eed5e2e18ff8c77ad2f98e7a6f9a7be0e37aeaabdd8a9ac9258.lean](Variantffad64431d651eed5e2e18ff8c77ad2f98e7a6f9a7be0e37aeaabdd8a9ac9258.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a8783f49ee3dcbf77dd89c6082fd9184c06bb32a47219b15e32aa728daeb5d3b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

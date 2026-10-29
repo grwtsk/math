@@ -1,0 +1,2 @@
+import formal.Think.Kernel.AuthorityGate
+#check Think.Kernel.AuthorityGate.authority_non_promotion_for_gate_free_runs

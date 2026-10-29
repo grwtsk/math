@@ -1,0 +1,120 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.PivotFixtures.Variant6fdd317d80fff3fc94986bc9064696779fcd7cd5ac826f8db4e6a8c57a836797","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6fdd317d80fff3fc94986bc9064696779fcd7cd5ac826f8db4e6a8c57a836797","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.PivotFixtures.Variant6fdd317d80fff3fc94986bc9064696779fcd7cd5ac826f8db4e6a8c57a836797","mathematical_subject":"Foundations.Unclassified","original_sha256":"6fdd317d80fff3fc94986bc9064696779fcd7cd5ac826f8db4e6a8c57a836797","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/packet-publication-unit/source/6fdd317d80fff3fc94986bc9064696779fcd7cd5ac826f8db4e6a8c57a836797/audit-candidate.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.Grassmannian.PivotFixtures
+
+-- Unexecuted author audit selection; Codex must run under the pinned environment.
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.PivotFixtures.Variant6fdd317d80fff3fc94986bc9064696779fcd7cd5ac826f8db4e6a8c57a836797
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.pivotSubmatrix_eq_one
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.pivotSubmatrix_eq_one
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.matrix_injective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.matrix_injective
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.matrix_rank
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.matrix_rank
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.rowSpace_injective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.rowSpace_injective
+
+#print FormalResearch.PositiveAtlas.Grassmannian.Chart24.toSubspace_injective
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.Chart24.toSubspace_injective
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_coordinates
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_coordinates
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_firstPivot
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_firstPivot
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_secondPivot
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_secondPivot
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_rank
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_rank
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_nonnegative
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_nonnegative
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_zero_witness
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_zero_witness
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_firstChart_entry
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_firstChart_entry
+
+#print FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_secondChart
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.boundaryPivotFamily_secondChart
+
+#print FormalResearch.PositiveAtlas.Grassmannian.mem_frameRowSpace_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.mem_frameRowSpace_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.row_mem_frameRowSpace
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.row_mem_frameRowSpace
+
+#print FormalResearch.PositiveAtlas.Grassmannian.frameRowSpace_mul_left_le
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.frameRowSpace_mul_left_le
+
+#print FormalResearch.PositiveAtlas.Grassmannian.frameRowSpace_mul_left_eq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.frameRowSpace_mul_left_eq
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_pivot
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_pivot
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivot_mul_pivotNormalize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivot_mul_pivotNormalize
+
+#print FormalResearch.PositiveAtlas.Grassmannian.frameRowSpace_pivotNormalize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.frameRowSpace_pivotNormalize
+
+#print FormalResearch.PositiveAtlas.Grassmannian.det_pivotInverse
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.det_pivotInverse
+
+#print FormalResearch.PositiveAtlas.Grassmannian.columnMinor_pivotNormalize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.columnMinor_pivotNormalize
+
+#print FormalResearch.PositiveAtlas.Grassmannian.columnMinor_pivotNormalize_ne_zero
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.columnMinor_pivotNormalize_ne_zero
+
+#print FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_pivotNormalize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.orderedMinor_pivotNormalize
+
+#print FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsNonneg_pivotNormalize_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsNonneg_pivotNormalize_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsPos_pivotNormalize_iff
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.allOrderedMinorsPos_pivotNormalize_iff
+
+#print FormalResearch.PositiveAtlas.Grassmannian.vecMul_columnSubmatrix
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.vecMul_columnSubmatrix
+
+#print FormalResearch.PositiveAtlas.Grassmannian.normalized_coefficients_readback
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalized_coefficients_readback
+
+#print FormalResearch.PositiveAtlas.Grassmannian.normalized_eq_of_frameRowSpace_eq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.normalized_eq_of_frameRowSpace_eq
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_eq_iff_rowSpace
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_eq_iff_rowSpace
+
+#print FormalResearch.PositiveAtlas.Grassmannian.existsUnique_pivotNormalized
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.existsUnique_pivotNormalized
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_fixed
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_fixed
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_transition
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_transition
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_cocycle
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotNormalize_cocycle
+
+#print FormalResearch.PositiveAtlas.Grassmannian.rank_eq_of_columnMinor_ne_zero
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.rank_eq_of_columnMinor_ne_zero
+
+#print FormalResearch.PositiveAtlas.Grassmannian.finrank_frameRowSpace_of_columnMinor_ne_zero
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.finrank_frameRowSpace_of_columnMinor_ne_zero
+

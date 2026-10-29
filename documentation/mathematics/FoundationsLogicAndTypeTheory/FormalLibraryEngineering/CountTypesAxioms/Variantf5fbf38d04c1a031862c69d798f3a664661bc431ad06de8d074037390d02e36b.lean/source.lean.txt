@@ -1,0 +1,13 @@
+import scratch.common_mean_20261004.FiveModeCountConstants
+set_option pp.universes true
+set_option pp.fullNames true
+#print CommonMeanScratch.cutoff_log_lt_twenty_nine
+#print axioms CommonMeanScratch.cutoff_log_lt_twenty_nine
+#print CommonMeanScratch.cutoff_log_gt_one
+#print axioms CommonMeanScratch.cutoff_log_gt_one
+#print CommonMeanScratch.cutoff_loglog_lt_four
+#print axioms CommonMeanScratch.cutoff_loglog_lt_four
+#print CommonMeanScratch.corrected_error_cutoff_lt_eight
+#print axioms CommonMeanScratch.corrected_error_cutoff_lt_eight
+#print CommonMeanScratch.count_envelope_cutoff_le_rational_cap
+#print axioms CommonMeanScratch.count_envelope_cutoff_le_rational_cap

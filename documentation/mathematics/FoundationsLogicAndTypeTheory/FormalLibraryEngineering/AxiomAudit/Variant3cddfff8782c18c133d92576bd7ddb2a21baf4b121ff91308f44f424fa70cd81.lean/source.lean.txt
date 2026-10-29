@@ -1,0 +1,45 @@
+import FormalResearch.Construct.Envelope
+set_option pp.universes true
+set_option pp.fullNames true
+#check FormalResearch.Construct.Envelope.close_extensive
+#print axioms FormalResearch.Construct.Envelope.close_extensive
+#check FormalResearch.Construct.Envelope.close_monotone
+#print axioms FormalResearch.Construct.Envelope.close_monotone
+#check FormalResearch.Construct.Envelope.close_idempotent
+#print axioms FormalResearch.Construct.Envelope.close_idempotent
+#check FormalResearch.Construct.Envelope.close_closed
+#print axioms FormalResearch.Construct.Envelope.close_closed
+#check FormalResearch.Construct.Envelope.close_least
+#print axioms FormalResearch.Construct.Envelope.close_least
+#check FormalResearch.Construct.Envelope.checkEnvelope_correct
+#print axioms FormalResearch.Construct.Envelope.checkEnvelope_correct
+#check FormalResearch.Construct.Envelope.wrap_projections
+#print axioms FormalResearch.Construct.Envelope.wrap_projections
+#check FormalResearch.Construct.Envelope.wrap_payload_preserved
+#print axioms FormalResearch.Construct.Envelope.wrap_payload_preserved
+#check FormalResearch.Construct.Envelope.valid_payload_projection
+#print axioms FormalResearch.Construct.Envelope.valid_payload_projection
+#check FormalResearch.Construct.Envelope.valid_restriction_closure
+#print axioms FormalResearch.Construct.Envelope.valid_restriction_closure
+#check FormalResearch.Construct.Envelope.valid_closure_least
+#print axioms FormalResearch.Construct.Envelope.valid_closure_least
+#check FormalResearch.Construct.Envelope.restriction_attenuation
+#print axioms FormalResearch.Construct.Envelope.restriction_attenuation
+#check FormalResearch.Construct.Envelope.NativeFixture.native_fixture_valid
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.native_fixture_valid
+#check FormalResearch.Construct.Envelope.NativeFixture.native_fixture_accepted
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.native_fixture_accepted
+#check FormalResearch.Construct.Envelope.NativeFixture.native_fixture_projection
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.native_fixture_projection
+#check FormalResearch.Construct.Envelope.NativeFixture.native_fixture_restrictions
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.native_fixture_restrictions
+#check FormalResearch.Construct.Envelope.NativeFixture.equal_payload_distinct_occurrences
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.equal_payload_distinct_occurrences
+#check FormalResearch.Construct.Envelope.NativeFixture.stripped_restrictions_rejected
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.stripped_restrictions_rejected
+#check FormalResearch.Construct.Envelope.NativeFixture.stale_reference_rejected
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.stale_reference_rejected
+#check FormalResearch.Construct.Envelope.NativeFixture.inherited_attribution_preserved
+#print axioms FormalResearch.Construct.Envelope.NativeFixture.inherited_attribution_preserved
+#print FormalResearch.Construct.Envelope.EnvelopeValid
+#print FormalResearch.Construct.Envelope.Closed

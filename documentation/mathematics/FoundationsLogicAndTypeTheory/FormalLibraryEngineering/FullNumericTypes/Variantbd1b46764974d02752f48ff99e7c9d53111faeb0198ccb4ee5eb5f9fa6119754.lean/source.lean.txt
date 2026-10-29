@@ -1,0 +1,15 @@
+import NumericMeanBounds
+#print ContinuousResearch.NumericMeanBounds.log_pi_lower
+#print axioms ContinuousResearch.NumericMeanBounds.log_pi_lower
+#print ContinuousResearch.NumericMeanBounds.actual_endpoint_lt
+#print axioms ContinuousResearch.NumericMeanBounds.actual_endpoint_lt
+#print ContinuousResearch.NumericMeanBounds.sqrt_two_bounds
+#print axioms ContinuousResearch.NumericMeanBounds.sqrt_two_bounds
+#print ContinuousResearch.NumericMeanBounds.sqrt_three_bounds
+#print axioms ContinuousResearch.NumericMeanBounds.sqrt_three_bounds
+#print ContinuousResearch.NumericMeanBounds.fixed_prime_sum_gt
+#print axioms ContinuousResearch.NumericMeanBounds.fixed_prime_sum_gt
+#print ContinuousResearch.NumericMeanBounds.actual_coarse_calibration_lt
+#print axioms ContinuousResearch.NumericMeanBounds.actual_coarse_calibration_lt
+#print ContinuousResearch.NumericMeanBounds.actual_sharp_calibration_lt
+#print axioms ContinuousResearch.NumericMeanBounds.actual_sharp_calibration_lt

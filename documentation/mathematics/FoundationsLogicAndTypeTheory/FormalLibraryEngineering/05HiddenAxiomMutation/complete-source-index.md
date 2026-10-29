@@ -1,0 +1,23 @@
+# 05HiddenAxiomMutation — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 4 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant68a0942e6955c93eb17e99dc0eabc667b8b3d7f9d204d780d9aab54b908a0621.lean](Variant68a0942e6955c93eb17e99dc0eabc667b8b3d7f9d204d780d9aab54b908a0621.lean/index.md) | module |
+| [Variant995d4229c01d016cc03b93fd3274737af1fa82a73d3422497d9a0e7d5b600c00.lean](Variant995d4229c01d016cc03b93fd3274737af1fa82a73d3422497d9a0e7d5b600c00.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=88ebfbd37e9a928a99d273f368778a34feb7a8e83727e4ceb234e99a3a77b910 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,46 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.SourceOverlapTransport.Variant1121241634ba71f50f49d2c820abccde3f7cf354d854ec6419bf61f58e319522","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1121241634ba71f50f49d2c820abccde3f7cf354d854ec6419bf61f58e319522","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceOverlapTransport.Variant1121241634ba71f50f49d2c820abccde3f7cf354d854ec6419bf61f58e319522","mathematical_subject":"Foundations.Unclassified","original_sha256":"1121241634ba71f50f49d2c820abccde3f7cf354d854ec6419bf61f58e319522","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/mutation-d4-e8/continuation/root-overlap-check/AuditOverlap.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceOverlapTransport
+import OverlapSourceFixture
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.SourceOverlapTransport.Variant1121241634ba71f50f49d2c820abccde3f7cf354d854ec6419bf61f58e319522
+
+set_option pp.all true
+set_option pp.universes true
+#check FormalResearch.MutationGame.SourceOverlapTransport.retention_embedChannel
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.retention_embedChannel
+#check FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_restrict
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_restrict
+#check FormalResearch.MutationGame.SourceOverlapTransport.synthesis_retention_embedChannel
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.synthesis_retention_embedChannel
+#check FormalResearch.MutationGame.SourceOverlapTransport.orbitAtom_source_sub
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.orbitAtom_source_sub
+#check FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_source_sub
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_source_sub
+#check FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_coefficient_sub
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_coefficient_sub
+#check FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_inter_sdiff
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.finiteProfile_inter_sdiff
+#check FormalResearch.MutationGame.SourceOverlapTransport.retained_source_change
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.retained_source_change
+#check FormalResearch.MutationGame.SourceOverlapTransport.synthesis_coefficient_increment
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.synthesis_coefficient_increment
+#check FormalResearch.MutationGame.SourceOverlapTransport.synthesis_endpoint_change
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.synthesis_endpoint_change
+#check FormalResearch.MutationGame.SourceOverlapTransport.firstIncrement_synthesis
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.firstIncrement_synthesis
+#check FormalResearch.MutationGame.SourceOverlapTransport.secondIncrement_synthesis
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.secondIncrement_synthesis
+#check FormalResearch.MutationGame.SourceOverlapTransport.literal_first_endpoint_change
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.literal_first_endpoint_change
+#check FormalResearch.MutationGame.SourceOverlapTransport.literal_second_endpoint_change
+#print axioms FormalResearch.MutationGame.SourceOverlapTransport.literal_second_endpoint_change
+#check FormalResearch.MutationGame.OverlapSourceFixture.singleton_original_profile
+#print axioms FormalResearch.MutationGame.OverlapSourceFixture.singleton_original_profile
+#check FormalResearch.MutationGame.OverlapSourceFixture.same_labels_source_increment
+#print axioms FormalResearch.MutationGame.OverlapSourceFixture.same_labels_source_increment
+#check FormalResearch.MutationGame.OverlapSourceFixture.actual_same_labels_increment_ne_zero
+#print axioms FormalResearch.MutationGame.OverlapSourceFixture.actual_same_labels_increment_ne_zero

@@ -1,0 +1,2 @@
+-- Materialized target surface for `src/witness/shader/evidence.lean`.
+-- This file creates no theorem authority by materialization alone.

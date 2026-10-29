@@ -1,0 +1,23 @@
+# NeuralNet — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 22 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant6620b68775229ffaf241f26f9ead97c8facc4ce86ed86d47041631277a5a9ec1.lean](Variant6620b68775229ffaf241f26f9ead97c8facc4ce86ed86d47041631277a5a9ec1.lean/index.md) | module |
+| [Varianta54b795769bd3baaeecd2ed4e05fc4c23ef1e588cc6929036b8fc90ff7a2e0b5.lean](Varianta54b795769bd3baaeecd2ed4e05fc4c23ef1e588cc6929036b8fc90ff7a2e0b5.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=de1e70d9e4409953e40b71bbd29f6975370b10744f50adabb0e6a8c6a97a0989 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

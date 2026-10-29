@@ -1,0 +1,12 @@
+import FormalResearch.PositiveAtlas.Grassmannian.PivotTransitions
+
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_cocycle
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_cocycle
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_reverse
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_reverse
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_eq_of_rowSpace_eq
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotTransition_eq_of_rowSpace_eq
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_realize
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientTransport_realize
+#print FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientEquiv
+#print axioms FormalResearch.PositiveAtlas.Grassmannian.pivotCoefficientEquiv

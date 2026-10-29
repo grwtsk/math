@@ -1,0 +1,5 @@
+import scratch.common_mean_20261004.FiveModeCoshEnvelope
+#check CommonMeanScratch.actual_cosh_envelope_le_endpoint
+#print axioms CommonMeanScratch.actual_cosh_envelope_le_endpoint
+#check CommonMeanScratch.actual_cosh_envelope_le_rational_max
+#print axioms CommonMeanScratch.actual_cosh_envelope_le_rational_max
