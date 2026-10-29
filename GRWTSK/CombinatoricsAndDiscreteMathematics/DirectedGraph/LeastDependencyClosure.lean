@@ -3363,4 +3363,102 @@ theorem boundedIntCNF_keyMinimum_decode_iff {width : Nat}
     exact ⟨(bitTruth (fixedBitsLE best)).mpr signedMinimum.1,
       fun candidate feasible => signedMinimum.2 candidate ((bitTruth candidate).mp feasible)⟩
 
+def costCountMaskLEDecidable (a b : CostCountMask) : Decidable (CostCountMaskLE a b) := by
+  unfold CostCountMaskLE NatLexLe
+  infer_instance
+
+/-- A concrete finite-list search. An absent result means no feasible list
+member, not global infeasibility without a separate coverage theorem. -/
+def optionalKeyMinimum {β : Type v} (key : β → CostCountMask) (feasible : β → Prop)
+    [DecidablePred feasible] : List β → Option β
+  | [] => none
+  | candidate :: rest =>
+    if feasible candidate then
+      match optionalKeyMinimum key feasible rest with
+      | none => some candidate
+      | some best =>
+        match costCountMaskLEDecidable (key candidate) (key best) with
+        | .isTrue _ => some candidate
+        | .isFalse _ => some best
+    else optionalKeyMinimum key feasible rest
+
+theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
+    (feasible : β → Prop) [DecidablePred feasible] (candidates : List β) :
+    match optionalKeyMinimum key feasible candidates with
+    | none => ∀ candidate, candidate ∈ candidates → ¬ feasible candidate
+    | some best => best ∈ candidates ∧ feasible best ∧
+        ∀ candidate, candidate ∈ candidates → feasible candidate →
+          CostCountMaskLE (key best) (key candidate) := by
+  induction candidates with
+  | nil => intro candidate member; cases member
+  | cons head rest ih =>
+    cases tailResult : optionalKeyMinimum key feasible rest with
+    | none =>
+      rw [tailResult] at ih
+      by_cases selected : feasible head
+      · rw [optionalKeyMinimum, if_pos selected, tailResult]
+        refine ⟨List.mem_cons.mpr (Or.inl rfl), selected, ?_⟩
+        intro candidate member admissible
+        cases List.mem_cons.mp member with
+        | inl equal => cases equal; exact costCountMaskLE_refl _
+        | inr member => exact False.elim (ih candidate member admissible)
+      · rw [optionalKeyMinimum, if_neg selected, tailResult]
+        intro candidate member admissible
+        cases List.mem_cons.mp member with
+        | inl equal => cases equal; exact selected admissible
+        | inr member => exact ih candidate member admissible
+    | some best =>
+      rw [tailResult] at ih
+      by_cases selected : feasible head
+      · cases comparison : costCountMaskLEDecidable (key head) (key best) with
+        | isTrue dominates =>
+          rw [optionalKeyMinimum, if_pos selected, tailResult, comparison]
+          refine ⟨List.mem_cons.mpr (Or.inl rfl), selected, ?_⟩
+          intro candidate member admissible
+          cases List.mem_cons.mp member with
+          | inl equal => cases equal; exact costCountMaskLE_refl _
+          | inr member => exact costCountMaskLE_trans dominates (ih.2.2 candidate member admissible)
+        | isFalse absent =>
+          rw [optionalKeyMinimum, if_pos selected, tailResult, comparison]
+          have reverse : CostCountMaskLE (key best) (key head) := by
+            cases costCountMaskLE_total (key head) (key best) with
+            | inl forward => exact False.elim (absent forward)
+            | inr backward => exact backward
+          refine ⟨List.mem_cons.mpr (Or.inr ih.1), ih.2.1, ?_⟩
+          intro candidate member admissible
+          cases List.mem_cons.mp member with
+          | inl equal => cases equal; exact reverse
+          | inr member => exact ih.2.2 candidate member admissible
+      · rw [optionalKeyMinimum, if_neg selected, tailResult]
+        refine ⟨List.mem_cons.mpr (Or.inr ih.1), ih.2.1, ?_⟩
+        intro candidate member admissible
+        cases List.mem_cons.mp member with
+        | inl equal => cases equal; exact False.elim (selected admissible)
+        | inr member => exact ih.2.2 candidate member admissible
+
+theorem optionalKeyMinimum_none_iff {β : Type v} (key : β → CostCountMask)
+    (feasible : β → Prop) [DecidablePred feasible] (candidates : List β) :
+    optionalKeyMinimum key feasible candidates = none ↔
+      ∀ candidate, candidate ∈ candidates → ¬ feasible candidate := by
+  have specification := optionalKeyMinimum_spec key feasible candidates
+  cases result : optionalKeyMinimum key feasible candidates with
+  | none =>
+    rw [result] at specification
+    exact ⟨fun _ => specification, fun _ => rfl⟩
+  | some best =>
+    rw [result] at specification
+    constructor
+    · intro impossible; cases impossible
+    · intro absent; exact False.elim (absent best specification.1 specification.2.1)
+
+theorem optionalKeyMinimum_some {β : Type v} (key : β → CostCountMask)
+    (feasible : β → Prop) [DecidablePred feasible] (candidates : List β) (best : β)
+    (result : optionalKeyMinimum key feasible candidates = some best) :
+    best ∈ candidates ∧ feasible best ∧
+      ∀ candidate, candidate ∈ candidates → feasible candidate →
+        CostCountMaskLE (key best) (key candidate) := by
+  have specification := optionalKeyMinimum_spec key feasible candidates
+  rw [result] at specification
+  exact specification
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
