@@ -1035,6 +1035,87 @@ The fifteen-minute heartbeat monitors the existing attempt without starting a
 duplicate, prioritizes actual proof diagnostics, then proceeds to union-closed
 checking. No new mathematical bridge or full open-problem solution is claimed.
 
+## Verified Collatz and Erdős–Moser restricted results
+
+Local attribution: grwtsk contributors. [Exact-source verification issue #1434](https://github.com/grwtsk/math/issues/1434).
+The paper titles, public bylines, versions, source URLs, exact hypotheses and
+missing full-conjecture bridges are those in the preceding entries. This record
+updates checking evidence for the explicitly pinned sources, without a novelty
+claim or a solution of any full open problem.
+
+**Final source pins.** Math commit `74aeb3c9021b441b9ef728d83540cdcca50cd871`:
+`GRWTSK/NumberTheory/CollatzDescent.lean`, blob
+`2fd3bfd370039cba453fda0a6b8031f299f222c9`, and
+`GRWTSK/NumberTheory/ErdosMoserSmallExponents.lean`, blob
+`a37ee8dbcd4f9e6554b0603e57ded9510384c7ec`.
+The latter repair explicitly unfolds `Solution` before `decide` in seven finite
+base cases. This resolves the actual typeclass-synthesis failures from
+`core-run-v6`; no mathematical statement or hypothesis was weakened. Both repairs
+are reachable from pushed main; concurrent remote source work was preserved by
+merge `cf411de753744b5fef08bce18ba40b1952826fd3`.
+
+**Selected kernel-checked declarations.** Prefix
+`GRWTSK.NumberTheory.ArithmeticDynamics.CollatzDescent.`:
+`orbit_add`, `reachesOne_of_orbit`, `reachesOne_one`, `step_double`,
+`reachesOne_double`, `reachesOne_pow_two`, `reachesOne_pow_two_mul`,
+`conjecture_iff_positiveDescent`.
+Prefix `GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserSmallExponents.`:
+`linear_sum_gt`, `solution_one_iff`, `next_square_le_twice_square`,
+`square_sum_gt`, `not_solution_two`.
+
+**Actual replay and scope.** Fresh source-bound `core-run-v7` exited **0** with
+`passed=true` and `host_config_restored=true`. Both modules compiled with trust
+zero under the managed owner's unchanged resource policy; all **13** selected
+transitive axiom reports passed, and two freshly importing expected-interface
+consumers checked all **13** supplied theorem types. Actual logical dependencies
+are subsets of `propext` and `Quot.sound`; no `sorryAx`, research axiom or new
+axiom was admitted. The installed Lean core is the pinned compiled-toolchain
+boundary; the compiler and installed core were not rebuilt from source.
+Receipt SHA-256:
+`2d4e04d5653c22b0ca863726e483212a39da061dcb94cf817a755e792df574a0`.
+Original Git source bytes/blob identities and digests, unique audit-name
+populations, source/consumer module-record hashes, allowed axiom sets and both
+consumer outcomes were independently compared with the retained records.
+Compilation inputs append the explicit axiom-report commands to the original
+source; their full hashes are therefore different from the original-source hashes.
+
+Actual commands from the Noe checkout:
+
+```text
+python3 -B managers/formalization/lean/environment/python/managed_contract_replay.py prepare --math-root /Users/think/Desktop/math --commit 74aeb3c9021b441b9ef728d83540cdcca50cd871 --profile <external-runtime>/research/unsolved-mathematics/core-profile-v5.json --registry <external-runtime>/research/unsolved-mathematics/core-registry-v7.json
+python3 -B managers/formalization/lean/environment/python/managed_contract_replay.py run --registry <external-runtime>/research/unsolved-mathematics/core-registry-v7.json --output <external-runtime>/research/unsolved-mathematics/core-run-v7 --reuse-enabled-idle-host --activation-wait-seconds 21600
+```
+
+Here `<external-runtime>` is Noe's selected sibling runtime. The exact expanded
+arguments, sources, command/runtime/resource identities, stdout/stderr, expected
+interfaces, transitive axiom reports and host restoration observations remain
+in that external attempt. `increment-04.json` retains continuation and receipt
+identity. Historical `core-run-v4` and `core-run-v6` failures are preserved and
+are not retroactively converted into passing receipts.
+
+**Mathematical evidence roles.** Imported mathematics: pinned Lean core
+arithmetic and proof infrastructure. Kernel-verified results: the thirteen
+restricted-family and reduction theorems selected above at the exact source pin.
+Conditional interface: Collatz convergence is equivalent to *universal* positive
+strict descent; this does not prove that descent premise. Erdős–Moser is excluded
+here only at exponent two; its linear solution is classified separately.
+Finite base cases remain steps inside the checked inductive proofs, not a
+substitute for the infinite conclusions. No representational analogy is promoted.
+Missing full-conjecture bridges remain unchanged: arbitrary positive Collatz
+starts, and all higher Erdős–Moser exponents.
+
+**Union-closed result remains separate.**
+`GRWTSK/Combinatorics/UnionClosedSmallMembers.lean` retains blob
+`249ee949d9523efddd63875fd6427d0ba4f5a194` at the same math commit.
+Its four selected theorems and four expected types are in
+`union-closed-profile-v5.json`; fresh registry `union-closed-registry-v7.json`
+prepared successfully. The single `union-closed-run-v7` was dispatched through
+the same managed owner with a bounded activation wait. Its source closure must
+be rebuilt from pinned sources. No terminal passing receipt exists in this
+record: compilation, kernel replay, transitive axiom auditing and expected-type
+acceptance remain **PENDING / NOT_RUN** for that target until actual evidence.
+The passing core receipt supplies no evidence for this different module.
+
 <!-- BEGIN DOCUMENT CERTIFICATION -->
 **Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
 
