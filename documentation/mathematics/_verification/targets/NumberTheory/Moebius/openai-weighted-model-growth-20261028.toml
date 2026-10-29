@@ -1,0 +1,13 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "64d4c9feada934cc3a7cca3b00e049a52704ce6a"
+source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean"
+source_blob = "c948d147ed5667683ed9088c0a648636d6c2a447"
+managed_profile = "documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-model-growth-20261028.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]
