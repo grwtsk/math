@@ -749,6 +749,15 @@ selected native environment, and the shared activation lock was held during
 this increment. No toolchain substitution, root import promotion, warning
 suppression as acceptance, or standalone verification bypass was used.
 
+### Tao adapter local source binding
+
+The local source candidates above are committed on main at `b76d7fddacf144d490e5ba18c1d63c447499dbf1`.
+The adjacent `tao-analysis-consumers-20261029.toml` static target records each
+local source blob, upstream source blob and fully qualified declaration, and
+binds the profile to this exact complete math tree. Static JSON/TOML, source-map,
+MSC-hash and 1,221-record uniqueness checks passed; no native proof checker ran.
+Publication is separate from compilation, fresh kernel replay and axiom acceptance.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

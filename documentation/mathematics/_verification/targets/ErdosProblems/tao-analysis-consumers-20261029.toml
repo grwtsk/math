@@ -1,0 +1,43 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "b76d7fddacf144d490e5ba18c1d63c447499dbf1"
+project_subdir = "adapters/tao-erdos"
+lean_toolchain = "leanprover/lean4:v4.29.0-rc8"
+mathlib_revision = "698d2b68b870f1712040ab0c233d34372d4b56df"
+managed_profile = "documentation/mathematics/_verification/targets/ErdosProblems/tao-analysis-consumers-20261029.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE_CONSUMERS"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+statement_fidelity = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]
+
+[[modules]]
+problem = 379
+source_path = "adapters/tao-erdos/GRWTSK/NumberTheory/SequencesAndSets/TaoErdos/Erdos379.lean"
+source_blob = "a127a310cea7c23961bd606f3cb89203aa895c88"
+upstream_blob = "0d4c04fdda9e24a9a97ba14b2e08e7d5507448ae"
+declarations = ["GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.binomialPrimePowerHeight", "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.prime_power_family", "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.unbounded_binomial_height"]
+
+[[modules]]
+problem = 613
+source_path = "adapters/tao-erdos/GRWTSK/Combinatorics/GraphTheory/TaoErdos/Erdos613.lean"
+source_blob = "4d2079201ac60583ea5a426469dd139f9f7020d9"
+upstream_blob = "9a0d7789b55d46b59742c1aec1a885001d83ccf9"
+declarations = ["GRWTSK.Combinatorics.GraphTheory.TaoErdos.Erdos613.concrete_ramsey_witness"]
+
+[[modules]]
+problem = 707
+source_path = "adapters/tao-erdos/GRWTSK/Combinatorics/DesignsAndConfigurations/TaoErdos/Erdos707.lean"
+source_blob = "d20c7b0644ca0c24cc9c1f3d8cfd1bce288b7c90"
+upstream_blob = "e5af795dbfc20549c5f7fb597c91bbb6e89b068e"
+declarations = ["GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.perfect_difference_set_card", "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.excludes_embedded_powers"]
+
+[[modules]]
+problem = 987
+source_path = "adapters/tao-erdos/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/TaoErdos/Erdos987.lean"
+source_blob = "b0ca27768d2f866d40c5c12f05058c492f55e6a9"
+upstream_blob = "f362db5e03b8b551123b8ab405928ac822208399"
+declarations = ["GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.TaoErdos.Erdos987.shifted_circle_sequence"]
