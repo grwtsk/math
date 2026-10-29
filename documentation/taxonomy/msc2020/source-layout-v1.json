@@ -1422035,6 +1422035,25 @@
       "target_sha256": "3a8f24a7fd0dff663ff963e37ef579c322fecda8aaef0c7be31225bdd4d2ba6c",
       "target_git_blob": "d6b2d24c2534f637199d049200c29f04432410f3",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountLargeExamples.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountLargeExamples.lean",
+      "source_sha256": "f8b2a8c627396079788a68f1e0a412c829d6c6cfe6ba523e9ad9022e3b63a90b",
+      "input_blob": "0caf3df42017e3bb9fb65a831d98ae2a759a9dfa",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Exact physical collision counts at mass ratios ten billion and one trillion, with cubic angle error before rounding",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "0caf3df42017e3bb9fb65a831d98ae2a759a9dfa",
+      "target_sha256": "f8b2a8c627396079788a68f1e0a412c829d6c6cfe6ba523e9ad9022e3b63a90b",
+      "target_git_blob": "0caf3df42017e3bb9fb65a831d98ae2a759a9dfa",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
