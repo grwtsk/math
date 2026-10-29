@@ -1422111,6 +1422111,25 @@
       "target_sha256": "0b52dd361d11a766c1eb2b28409c42b64443fe6b3b0a10da56d02eeb38da1aaf",
       "target_git_blob": "bd43bef171d7bc609c72279780a8165c6917f1f5",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionBlockEdges.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionBlockEdges.lean",
+      "source_sha256": "4b62735f53992753a91e364fa0018bc205fc4ba3573ce35471c3143d2068f6c2",
+      "input_blob": "4e4a627134f6ffd36b96459978bbb4b31cda33e3",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Exact finite-width block-edge contact dynamics and event-count-preserving translation to the normalized collision wedge",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "4e4a627134f6ffd36b96459978bbb4b31cda33e3",
+      "target_sha256": "4b62735f53992753a91e364fa0018bc205fc4ba3573ce35471c3143d2068f6c2",
+      "target_git_blob": "4e4a627134f6ffd36b96459978bbb4b31cda33e3",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
