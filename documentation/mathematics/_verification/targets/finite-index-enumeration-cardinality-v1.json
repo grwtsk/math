@@ -1,0 +1,14 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/LeastDependencyClosure.lean",
+      "declarations": [
+        "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure.finiteIndexCandidates_length",
+        "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure.finiteIndexCandidates_nodup",
+        "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure.finiteMaskCandidates_length"
+      ],
+      "allowed_axioms": []
+    }
+  ],
+  "compiler_wall_seconds": 30
+}
