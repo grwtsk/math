@@ -401,6 +401,32 @@ These two definitions and five theorem scripts are SOURCE_PROOF_CANDIDATE.
 Compilation, fresh kernel replay and transitive axiom audit remain NOT_RUN.
 No stronger sector, triangle, full-moment, mean, signed-bulk or RH bound follows.
 
+### Original mixed term as twice either complete orientation
+
+`mixedCoprime_eq_two_mul_shortLongCoprime` and
+`mixedCoprime_eq_two_mul_longShortCoprime` now state exactly
+
+ mixedCoprime = 2*shortLongCoprime = 2*longShortCoprime.
+
+They combine the existing literal sum identity
+`mixedCoprime_eq_shortLong_add_longShort` with full-square orientation equality
+`shortLongCoprime_eq_longShortCoprime`. Both complete orientation sums retain
+the original row masks and the two selected-divisor denominator factors.
+The factor 2 accounts for the two complete orientations already present in
+the source mixed term; it does not identify the two distinct strict triangles.
+No centering or symmetry hypothesis on G is used, and the separate LL long
+unit square and long one-unit/nonunit off-diagonal terms remain unchanged.
+
+`mixedCoprime_orientation_multiple_zero_components` explicitly states that
+the original mixed term and both complete orientation sums vanish at N=0.
+All three declarations allow arbitrary P,N,L,G without additional primality,
+positivity or analytic premises. Closed quotient cutoffs, repeated-prime and
+long-row coprime guards, both denominators, product collisions and frozen
+parameters are unchanged. These three theorem scripts are
+SOURCE_PROOF_CANDIDATE. Compilation, fresh kernel replay and transitive
+axiom audit remain NOT_RUN. No stronger sector, triangle, full-moment,
+mean, signed-bulk or RH bound is claimed.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
