@@ -2,7 +2,7 @@ import Mathlib.Analysis.Complex.Trigonometric
 import Mathlib.Analysis.Fourier.FourierTransform
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Analysis.Real.Sqrt
-import Mathlib.Data.Complex.BigOperators
+import Mathlib.Basic.Complex.BigOperators
 import Mathlib.Algebra.BigOperators.Ring.Finset
 import Mathlib.Data.Nat.Prime.Basic
 import Mathlib.Tactic.Linarith
@@ -104,7 +104,7 @@ theorem block_multiplier_bound (B : Finset ℕ) (ξ : ℝ) :
       simp [blockMultiplier, norm_prod, Finset.prod_pow]
     _ ≤ ∏ p ∈ B, Real.exp (-2 * ((primeWeight p : ℂ) * primePhase p ξ).re +
         primeWeight p ^ 2) := by
-      apply Finset.prod_le_prod
+      apply Finset.prod_le_prod₀
       · intro p hp
         positivity
       · intro p hp
@@ -172,7 +172,7 @@ theorem zero_frequency_contractive (B : Finset ℕ)
       ‖blockMultiplier B 0‖ = ∏ p ∈ B, ‖1 - (primeWeight p : ℂ) * primePhase p 0‖ := by
         simp only [blockMultiplier, norm_prod]
       _ ≤ ∏ _p ∈ B, (1 : ℝ) :=
-        Finset.prod_le_prod (fun p hp => norm_nonneg _) hfactor
+        Finset.prod_le_prod₀ (fun p hp => norm_nonneg _) hfactor
       _ = 1 := by simp
   nlinarith [norm_nonneg (blockMultiplier B 0)]
 

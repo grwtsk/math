@@ -88,7 +88,7 @@ theorem correlation_le_marginals_add_jointL1 (A : Finset α) (B : Finset β)
       |(∑ i ∈ A, p i * u i) * (∑ j ∈ B, q j * v j)| +
         jointL1 A B P p q := by
   have h := covariance_le_jointL1 A B P p u q v hu hv
-  have ht := abs_add
+  have ht := abs_add_le
     ((∑ i ∈ A, ∑ j ∈ B, P i j * (u i * v j)) -
       (∑ i ∈ A, p i * u i) * (∑ j ∈ B, q j * v j))
     ((∑ i ∈ A, p i * u i) * (∑ j ∈ B, q j * v j))
