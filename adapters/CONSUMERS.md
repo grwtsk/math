@@ -64,3 +64,10 @@ the positive exponent1 case. Equivalence to higher-exponent exclusion is only a
 reduction: the exclusion remains UNSUPPLIED. Exact statement/source/type records
 and the unused admitted-module boundary are in the central map and references.
 All native acceptance remains NOT_RUN; no full conjecture or root port is claimed.
+
+<a id="e8-cover-matching-20261029"></a>
+### E8 point-to-center matching
+
+The finite E8 covering consumer now returns a radius-close injection into arbitrary covering centers and, for equal-cardinality finite covers, an equivalence. It retains STRICT `2*epsilon<sqrt2`, exact Euclidean `WithLp.toLp 2` distance, empty samples and zero radius. This supplies a witness for the existing covering-number family instead of only cardinal cost. Source `6336a394397cca8587c4b0ba713b36e0ba4b5bee` / blob `719bf5797ad0d64246a718661340278b5b15a49f`; native Lean4.35.0-rc4/Mathlib `1f414401f69059aa7eead47b53ee40bd38455eeb` remains isolated. All native facets NOT_RUN; independent checker UNSUPPLIED. No nearest-center optimization, arithmetic mass transport, density theorem or cross-version root integration is supplied.
+
+[Target](../documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.json); [canonical ledger](../documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#e8-cover-matching-20261029).

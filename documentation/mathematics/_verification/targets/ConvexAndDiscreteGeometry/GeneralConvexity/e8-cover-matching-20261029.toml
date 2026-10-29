@@ -1,0 +1,21 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "6336a394397cca8587c4b0ba713b36e0ba4b5bee"
+source_tree = "97c93e7e13a6c36897f9809836d437a7e6599e61"
+source_path = "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean"
+source_blob = "719bf5797ad0d64246a718661340278b5b15a49f"
+source_sha256 = "6c83c505864f69c7d8e97b82e3c23dbcf2d8dafd6f50b1ead6d880ecc031637f"
+managed_profile = "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.profile.json"
+profile_sha256 = "85a8ec12b77652ba5639963a3bf100a6493b2cceb14f7aafe6779be91a06c181"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+comparator = "NOT_RUN"
+complete_module_discovery = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+second_independent_checker = "UNSUPPLIED"
+complete_transitive_axiom_audit = "NOT_RUN"
+expected_interface = "NOT_RUN"
+host_resource_restoration = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]

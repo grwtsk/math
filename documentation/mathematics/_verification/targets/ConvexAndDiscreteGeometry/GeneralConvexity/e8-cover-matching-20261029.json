@@ -1,0 +1,236 @@
+{
+  "schema": "grwtsk.source-bound-adapter-consumer-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "source_commit": "6336a394397cca8587c4b0ba713b36e0ba4b5bee",
+  "source_tree": "97c93e7e13a6c36897f9809836d437a7e6599e61",
+  "source_path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean",
+  "source_blob": "719bf5797ad0d64246a718661340278b5b15a49f",
+  "source_sha256": "6c83c505864f69c7d8e97b82e3c23dbcf2d8dafd6f50b1ead6d880ecc031637f",
+  "project_subdir": "adapters/sphere-packing",
+  "profile": "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.profile.json",
+  "profile_sha256": "85a8ec12b77652ba5639963a3bf100a6493b2cceb14f7aafe6779be91a06c181",
+  "required_declarations": [
+    "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_embedding_of_isCover",
+    "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq"
+  ],
+  "expected_types": {
+    "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_embedding_of_isCover": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2)\n  (C : Set (EuclideanSpace Real (Fin 8)))\n  (hC : Metric.IsCover ε\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real))) C),\n  ∃ f : {v : Fin 8 → Real // v ∈ S} ↪\n      {c : EuclideanSpace Real (Fin 8) // c ∈ C},\n    ∀ v : {v : Fin 8 → Real // v ∈ S},\n      dist (WithLp.toLp 2 (v : Fin 8 → Real))\n        (f v : EuclideanSpace Real (Fin 8)) ≤ (ε : Real)",
+    "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2)\n  (C : Finset (EuclideanSpace Real (Fin 8)))\n  (hC : Metric.IsCover ε\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real)))\n    (C : Set (EuclideanSpace Real (Fin 8))))\n  (hcard : C.card = S.card),\n  ∃ e : {v : Fin 8 → Real // v ∈ S} ≃\n      {c : EuclideanSpace Real (Fin 8) // c ∈ C},\n    ∀ v : {v : Fin 8 → Real // v ∈ S},\n      dist (WithLp.toLp 2 (v : Fin 8 → Real))\n        (e v : EuclideanSpace Real (Fin 8)) ≤ (ε : Real)"
+  },
+  "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_module_discovery": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "second_independent_checker": "UNSUPPLIED",
+    "host_resource_restoration": "NOT_RUN"
+  },
+  "consumer": {
+    "provider": "sphere-packing",
+    "project_subdir": "adapters/sphere-packing",
+    "path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8CoverMatching.lean",
+    "source_commit": "6336a394397cca8587c4b0ba713b36e0ba4b5bee",
+    "source_blob": "719bf5797ad0d64246a718661340278b5b15a49f",
+    "source_sha256": "6c83c505864f69c7d8e97b82e3c23dbcf2d8dafd6f50b1ead6d880ecc031637f",
+    "declarations": [
+      "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_embedding_of_isCover",
+      "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8CoverMatching.exists_close_equiv_of_isCover_and_card_eq"
+    ],
+    "upstream": [
+      {
+        "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+        "source": "SpherePacking/Basic/E8.lean",
+        "blob": "c369209e9ae2a7e358e2b312cd251bf9caf20cd2",
+        "declaration": "E8_norm_lower_bound",
+        "exact_statement": "v in Submodule.E8 Real implies v=0 or Real.sqrt2<=norm(WithLp.toLp2 v).",
+        "source_byline": "Copyright2025 Bhavik Mehta; Authors:Bhavik Mehta,Gareth Ma.",
+        "license": "Apache-2.0",
+        "README_blob": "efe29f761ea40f67434fb7b4921fa8fecf326a1c",
+        "LICENSE_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "lean_toolchain_blob": "9532ebf33701f2ff0a999f12b21fb7a675f24e6e",
+        "lake_manifest_blob": "5560eaa0283999669a11afd53bce831a34a3e581",
+        "excluded_source": "SpherePacking.MainTheorem literal-sorry endpoint remains excluded. No optimal packing-density theorem is consumed.",
+        "repository": "thefundamentaltheor3m/Sphere-Packing-Lean",
+        "stable_url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/77cf0a0c104f2e31501eab04d88bbc068d61c169/SpherePacking/Basic/E8.lean",
+        "project_byline": "Sphere Packing in Lean: Christopher Birkbeck, Sidharth Hariharan, Seewoo Lee, Ho Kiu Gareth Ma, Bhavik Mehta, Maryna Viazovska; version0.1.0 released2025-06-13, ongoing."
+      }
+    ],
+    "native_pins": {
+      "toolchain": "leanprover/lean4:v4.35.0-rc4",
+      "Mathlib": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+      "sources": [
+        {
+          "path": "Mathlib/Topology/MetricSpace/Cover.lean",
+          "blob": "97b4b7ebe49b22b1fa513916ac417dae77652e12",
+          "declarations": [
+            "Metric.IsCover"
+          ]
+        },
+        {
+          "path": "Mathlib/Topology/MetricSpace/Pseudo/Defs.lean",
+          "blob": "93b857abd33f02a77d77bc4f828cb3cf6c95b7c3",
+          "declarations": [
+            "edist_le_ofReal",
+            "dist_triangle",
+            "dist_comm"
+          ]
+        },
+        {
+          "path": "Mathlib/Data/Fintype/EquivFin.lean",
+          "blob": "80c4fd3f66ca34b754a300f1ac79312e7fcd920f",
+          "declarations": [
+            "Fintype.bijective_iff_injective_and_card"
+          ]
+        },
+        {
+          "path": "Mathlib/Data/Fintype/Card.lean",
+          "blob": "f59efd09968716b3727825b05027f6fdee9e5dc8",
+          "declarations": [
+            "Fintype.card_coe"
+          ]
+        },
+        {
+          "path": "Mathlib/Logic/Equiv/Defs.lean",
+          "blob": "e300fb9e2467dee217df8d1452840f75b3ec3116",
+          "declarations": [
+            "Equiv.ofBijective",
+            "Equiv.coe_ofBijective"
+          ]
+        },
+        {
+          "path": "Mathlib/Data/Finset/Defs.lean",
+          "blob": "badf54457eb9cdf96ab9199a61e3f7677455f126",
+          "declarations": [
+            "Finset.coe_sort_coe"
+          ]
+        },
+        {
+          "path": "Mathlib/Topology/MetricSpace/CoveringNumbers.lean",
+          "blob": "634d5f7d0b64abfdc47ec889741d4a4fa4d87ec7",
+          "declarations": [
+            "Metric.packingNumber_two_mul_le_externalCoveringNumber (local injection proof method)"
+          ]
+        },
+        {
+          "path": "Mathlib/Tactic/Linarith.lean",
+          "blob": "8cf3ec37fc80830c8af828638c75ff84f1282697",
+          "declarations": [
+            "linarith"
+          ]
+        }
+      ]
+    },
+    "hypotheses": [
+      "S : Finset (Fin8 -> Real), every member lies in Submodule.E8 Real.",
+      "epsilon : NNReal, strict2*(epsilon:Real)<Real.sqrt2. Zero radius and empty S are retained.",
+      "First theorem C is an arbitrary Set of EuclideanSpace Real(Fin8), with Metric.IsCover epsilon of the exact WithLp.toLp2 image of S. C may be infinite and need not lie in E8.",
+      "Second theorem C is a Finset of EuclideanSpace Real(Fin8), same cover premise and C.card=S.card. No nonempty or positive-radius hypothesis is added."
+    ],
+    "conclusion": [
+      "There exists f : S -> C which is injective, with actual Real Euclidean dist(toLp2(v),f(v)) <= epsilon for every v:S.",
+      "For a finite cover with C.card=S.card there exists e:S equiv C, with the same pointwise Real-distance bound. Equiv includes surjectivity, so every supplied center is used."
+    ],
+    "use": "Expose an actual radius-close point-to-center injection for every cover of a finite E8 sample; when a finite center set has exactly the sample cardinality, construct an actual equivalence using every center. The previous E8 covering-number theorem gave only cardinal cost, while this construction retains the center assigned to each point.",
+    "consumer_paths": [
+      "GRWTSK/GeneralTopology/CoveringNumbersPublic.lean"
+    ],
+    "root_consumer_source_commit": "83d120433d0239cf2943ac6a1d61a7d3a49c0b7b",
+    "root_consumer_blob": "ac4085f88cc6ecc5c1d0a0146b17defb3bfb1d0f",
+    "root_consumer_declarations": [
+      "Metric.packingNumber_two_mul_le_externalCoveringNumber",
+      "Metric.IsCover.externalCoveringNumber_le_encard"
+    ],
+    "root_consumer_role": "Imported covering-number API source; actual source proof retains a local injection but returns only cardinal cost. New isolated E8 construction exposes the matching object and radius observation. No native version transport/root integration is supplied.",
+    "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+    "license": "Apache-2.0; original E8 and Mathlib public bylines retained",
+    "profile": "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.profile.json",
+    "profile_sha256": "85a8ec12b77652ba5639963a3bf100a6493b2cceb14f7aafe6779be91a06c181",
+    "verification": {
+      "compilation": "NOT_RUN",
+      "comparator": "NOT_RUN",
+      "expected_interface": "NOT_RUN",
+      "fresh_independent_kernel_replay": "NOT_RUN",
+      "complete_module_discovery": "NOT_RUN",
+      "complete_transitive_axiom_audit": "NOT_RUN",
+      "second_independent_checker": "UNSUPPLIED",
+      "host_resource_restoration": "NOT_RUN"
+    },
+    "missing_bridges": [
+      "Fresh supported4.35.0-rc4 qualification/complete source-bound registry, full import compilation, compiler-owned discovery, both literal type consumers, fresh independent kernel replay and complete transitive axiom audit are still required.",
+      "Root4.34.1 version transport and actual integration remain UNSUPPLIED.",
+      "Nearest-center optimization/algorithmic realization and geometric-to-arithmetic mass transfer remain UNSUPPLIED."
+    ],
+    "independent_checker": "UNSUPPLIED"
+  },
+  "source_chain": [
+    {
+      "path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
+      "blob": "cd61fa5ac0d35d0642132d21b241012799dedfb6",
+      "unchanged": true
+    },
+    {
+      "path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
+      "blob": "eb8fb5c074c24ffea08577deb37c14232b5430fd",
+      "consumed_declaration": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.centre_distance_lower_bound",
+      "unchanged": true
+    }
+  ],
+  "direct_import_existence_checks": [
+    {
+      "module": "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers",
+      "source": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
+      "blob": "cd61fa5ac0d35d0642132d21b241012799dedfb6",
+      "actual_check": "git hash-object/current tracked source and pinned source read; unchanged"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.EquivFin",
+      "source": "Mathlib/Data/Fintype/EquivFin.lean",
+      "blob": "80c4fd3f66ca34b754a300f1ac79312e7fcd920f",
+      "actual_check": "git cat-file -t at exact Mathlib1f414 returned blob"
+    },
+    {
+      "module": "Mathlib.Topology.MetricSpace.Pseudo.Defs",
+      "source": "Mathlib/Topology/MetricSpace/Pseudo/Defs.lean",
+      "blob": "93b857abd33f02a77d77bc4f828cb3cf6c95b7c3",
+      "actual_check": "git cat-file -t at exact Mathlib1f414 returned blob"
+    },
+    {
+      "module": "Mathlib.Tactic.Linarith",
+      "source": "Mathlib/Tactic/Linarith.lean",
+      "blob": "8cf3ec37fc80830c8af828638c75ff84f1282697",
+      "actual_check": "git cat-file -t at exact Mathlib1f414 returned blob"
+    }
+  ],
+  "proof_roadmap": [
+    "Apply the actual Metric.IsCover observation at each sample point to obtain a center in C with an extended-distance bound. edist_le_ofReal converts it to the Real Euclidean-distance bound, using only nonnegativity of epsilon.",
+    "Classical.choose selects one such center per sample point. If two selected centers coincide, triangle inequality gives dist(samplev,samplew)<=2epsilon, contradicting strict2epsilon<sqrt2 together with the existing actual E8 separation bound for distinct sample values. This constructs an embedding, not only a cardinal comparison.",
+    "For finite C of equal cardinality, Fintype.card_coe identifies the two subtype cardinalities; Fintype.bijective_iff_injective_and_card turns the same embedding into a bijection. Equiv.ofBijective retains its exact forward map and hence the same closeness bound."
+  ],
+  "boundaries": [
+    "The strict2epsilon<sqrt2 condition is essential for the closed-ball collision obstruction; no boundary-radius claim is made.",
+    "Centers are radius-close and are not claimed to minimize distance. Arbitrary-set injection need not be surjective; finite equal-cardinality case is an equivalence.",
+    "Classical.choice proves existence of witnesses. No matching algorithm, effective nearest-center search, runtime or computational performance result is claimed.",
+    "The domain uses actual WithLp2 Euclidean distance, not the sup norm on Fin8->Real.",
+    "No density/volume ratio/global lattice asymptotic or geometric-to-arithmetic coefficient-mass bridge is supplied.",
+    "No optimal sphere-packing-density result or admitted MainTheorem is used.",
+    "No root dependency change, root import or checked cross-version port is supplied."
+  ],
+  "paper_or_source_role": "Elementary local metric covering/matching consequence of the exact E8 separation source and finite-cardinality APIs. Original Sphere Packing in Lean source/project attribution is retained; no new paper-to-theorem mapping is invented.",
+  "static_review": {
+    "source_api_and_literal_type_review": "Two independent read-only source/API/direct-import/profile reviews found no concrete issue at exact source719bf5797ad0d64246a718661340278b5b15a49f/profile85a8ec12b77652ba5639963a3bf100a6493b2cceb14f7aafe6779be91a06c181. These are not elaboration, kernel or axiom receipts.",
+    "direct_import_existence": "All four direct imports exist at their listed local/pinned Git blobs. Full transitive closure and installed core are not freshly prepared or checked.",
+    "whitespace": "git diff --no-index --check /dev/null selected-source: no whitespace diagnostics; pure source/hash observation only.",
+    "upstream_heads": "Read-only git ls-remote HEAD/refs/heads/main matched Sphere77cf0a0c104f2e31501eab04d88bbc068d61c169 at this observation; not collection acceptance."
+  },
+  "acceptance_requires": [
+    "Supported exact native4.35.0-rc4 qualification under exclusive activation, current owner/resource/policy admission and unchanged limits; no live active or waiting producer closure may be edited.",
+    "Fresh exact math/producer/policy registry with canonical exact dependency Git roots, verified alternates and separately pinned compiled core. No upstream caches, hooks or newer dependencies as proof inputs.",
+    "Fresh compilation of all declared imports, complete compiler-owned authored-module census and both required roots; compare each separately to the literal expected types in the profile.",
+    "Fresh kernel replay, second independent checker and complete transitive axiom auditing, rejecting sorryAx and every unapproved trust mechanism; standard allowed axioms are propext, Classical.choice and Quot.sound.",
+    "Keep Comparator/statement fidelity, native compilation, exact interfaces, independent replay, axiom acceptance and host/resource restoration as separate bound evidence.",
+    "Do not substitute this increment for the original Anthropic6/OpenAI4 verification scopes or treat source publication/review as acceptance."
+  ]
+}
