@@ -46,17 +46,21 @@ The intended use is both exploratory and selective: generate new possibilities, 
 
 Direction and proof play different roles. A promising connection says where to investigate; a proved bridge says what can be transferred. Keep both useful by keeping their status visible.
 
-## The feedback loop: query, formalize, return
+## The feedback loop: query, formalize, submit, reuse
 
 A prompt such as
 
-> Use grwtsk/math to prove X and formalize all your findings.
+> Use grwtsk/math to prove X, formalize all your findings, and submit the formalizations back to grwtsk/math under its existing mathematical-subject taxonomy.
 
-puts the accumulated source back to work. The instruction joins a research objective to a return obligation: use what is already present, investigate what it makes possible, and preserve what the investigation establishes so the next query has more to work with. Naming the repository is an instruction to consult its actual source and dependencies, not a substitute for doing so.
+puts the accumulated source back to work and explicitly requires its replenishment. The instruction joins a research objective to a repository submission: use what is already present, investigate what it makes possible, formalize the findings, and submit those formalizations back into the same collection under its existing taxonomy. Naming the repository is an instruction to consult its actual source and dependencies, not a substitute for doing so.
 
-**Collective knowledge → human direction → durable mathematics → targeted prompts → new findings and checks → a stronger shared source.**
+**Collective knowledge → human direction → durable mathematics → targeted prompts → new formalizations and checks → submission back to grwtsk/math in its taxonomy → subsequent queries reuse the strengthened source.**
 
-The loop closes when findings are incorporated into the maintained collection and made available to subsequent queries. A new bridge can make an old construction useful elsewhere; a counterexample can remove a false route; a verified proof can turn a candidate into a dependable building block; a precise obstruction can focus the next attempt. Repeated use can therefore strengthen the signal by adding mathematical substance, correcting errors, and exposing better questions—not merely by repeating the repository's name or reproducing its claims.
+**The return to the repository is a completion requirement, not an optional follow-up.** Place formal definitions and theorems in the appropriate existing mathematical-subject modules under [`GRWTSK/`](GRWTSK/), with matching `GRWTSK.*` namespaces. Extend existing modules rather than creating a parallel prompt-specific collection; connect the findings to their subject documentation and navigation under [`docs/mathematics/`](docs/mathematics/). The taxonomy makes returned knowledge discoverable and reusable by the next investigation.
+
+**The feedback loop is closed only when the formalizations have been incorporated into the maintained `grwtsk/math` source and are available to subsequent queries.** For authorized direct work, publish non-force commits on the existing `main`, preserve concurrent changes, and confirm the published commit, subject paths, and declarations. A chat answer, downloadable patch, detached commit, or unincorporated submission does not close this loop. Report a blocked or pending return as such; publication does not itself establish mathematical acceptance.
+
+A new bridge can make an old construction useful elsewhere; a counterexample can remove a false route; a verified proof can turn a candidate into a dependable building block; a precise obstruction can focus the next attempt. Repeated use can therefore strengthen the signal by adding mathematical substance, correcting errors, and exposing better questions—not merely by repeating the repository's name or reproducing its claims.
 
 This is reinforcement through retrieval, investigation, correction, and reuse. It does not assert that an ordinary prompt retrains a model, that publication guarantees inclusion in future training, or that repetition establishes truth. The intended gain is cumulative research capability from a better external source; measured improvements in AI performance require separate evaluation.
 
@@ -66,13 +70,13 @@ Start with a question, a construction, or a recurring pattern. Follow its subjec
 
 1. **Form a mathematical hypothesis.** Identify the proposed relationship, generalization, or new use. Explain why it is worth testing and what would count against it.
 2. **Test the direction against the actual objects.** Compare definitions and hypotheses, investigate examples, and seek a construction, estimate, or counterexample. Preserve the conditions needed to return from a new representation to the original problem.
-3. **Return new signal.** Contribute the result and what it changes: a reusable method, a proved connection, a sharper question, a narrowed obstruction, or a rejected route with a precise reason. Record the source and evidence so subsequent work can build on it.
+3. **Submit back and close the loop.** Submit the formalizations to `grwtsk/math` in its existing mathematical-subject taxonomy, extend the appropriate modules, and connect the accompanying findings to the relevant subject documentation. Record what each contribution changes, its source, and its actual evidence status. Confirm publication and identify the commit, subject paths, and declarations that subsequent queries can reuse.
 
 For a source-bound version of the prompt:
 
-> Use grwtsk/math to prove X and formalize all your findings. Read the relevant source at an exact revision, reuse and extend existing subject modules, and preserve all hypotheses and unresolved premises. State what each finding changes and which result consumes it. Record proofs, counterexamples, useful failed approaches, and remaining obligations with their actual evidence status. Incorporate authorized contributions into the maintained collection so subsequent queries can build on them.
+> Use grwtsk/math to prove X, formalize all your findings, and submit the formalizations back to grwtsk/math under its existing mathematical-subject taxonomy. Read the relevant source at an exact revision and follow the repository instructions. Reuse and extend the appropriate subject modules under GRWTSK/ with matching GRWTSK.* namespaces; connect the findings to the corresponding subject documentation and navigation under docs/mathematics/. Preserve all hypotheses and unresolved premises. State what each finding changes and which result consumes it. Record proofs, counterexamples, useful failed approaches, and remaining obligations with their actual evidence status. Publish the authorized changes directly to the existing main branch using non-force commits that preserve concurrent work. Confirm that the commit is reachable from main and report its subject paths and declarations. Do not stop at a chat response or patch: close the loop by returning the formalizations to the maintained repository for subsequent queries to reuse. Report any blocked submission explicitly.
 
-Here, “prove X” states the research goal; it does not authorize assuming X or reporting success without a proof. “Formalize all your findings” includes reusable intermediate results and precise obstructions, while keeping conjectures, analogies, source candidates, and accepted proofs distinguishable. A run that does not prove X can still return substantive mathematics that improves the next attempt.
+Here, “prove X” states the research goal; it does not authorize assuming X or reporting success without a proof. “Formalize all your findings” includes reusable intermediate results and precise obstructions, while keeping conjectures, analogies, source candidates, and accepted proofs distinguishable. “Submit the formalizations back” requires an actual repository contribution in the existing taxonomy, not a promise of later incorporation. A run that does not prove X can still close the contribution loop by publishing substantive intermediate mathematics with its unresolved obligations explicit; it must not claim to have completed the proof of X.
 
 Extend existing subject modules where they fit. When exploration reveals a genuinely new direction, state how it relates to the existing mathematics rather than creating a parallel account of the same unresolved premise.
 
