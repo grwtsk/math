@@ -453,6 +453,37 @@ theorem longLongCoprime_eq_unit_add_offDiagonal_of_one_le
         longLongOffDiagonal P N L G := by
   rw [longLongCoprime_eq_unit_add_offDiagonal, if_pos hN]
 
+/-- Full d=1 fiber with the original weighted long unit square isolated.
+The cutoff on that square is essential at N=0. No sector estimate is used. -/
+theorem dOneFiber_eq_shortShort_add_mixed_add_unit_add_offDiagonal
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G =
+      shortShortCoprime P N L G + mixedCoprime P N L G +
+        (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        longLongOffDiagonal P N L G := by
+  rw [dOneFiber_eq_shortShort_add_mixed_add_longLong,
+    longLongCoprime_eq_unit_add_offDiagonal]
+  simp only [add_assoc]
+
+/-- For a positive horizon all four actual d=1 contributions are retained. -/
+theorem dOneFiber_eq_shortShort_add_mixed_add_unit_add_offDiagonal_of_one_le
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (hN : 1 ≤ N) :
+    dOneFiber P N L G =
+      shortShortCoprime P N L G + mixedCoprime P N L G +
+        (sourceCoefficient P N 1 * longColumn P N L G 1)^2 +
+        longLongOffDiagonal P N L G := by
+  rw [dOneFiber_eq_shortShort_add_mixed_add_unit_add_offDiagonal, if_pos hN]
+
+/-- At N=0 the source fiber and every sector inventory are empty. In the
+four-term identity the conditional unit contribution is also zero; an
+unconditional unit square is not inserted into the empty source inventory. -/
+theorem dOneFiber_zero_components (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P 0 L G = 0 ∧ shortShortCoprime P 0 L G = 0 ∧
+      mixedCoprime P 0 L G = 0 ∧ longLongCoprime P 0 L G = 0 ∧
+      longLongOffDiagonal P 0 L G = 0 := by
+  rw [mixedCoprime_eq_columns]
+  simp [dOneFiber, shortShortCoprime, longLongCoprime, longLongOffDiagonal]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
