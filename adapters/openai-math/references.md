@@ -71,3 +71,16 @@ The historical central reference index is
 `docs/reference/literature/reading-background/paper-to-formalization-references.md`;
 this provider map supplies the exact adapter references without restoring or
 overwriting concurrently removed documentation.
+
+## Collection-wide upstream source references
+
+The static [catalogue](catalogue.json) records the title, OpenAI byline, pinned
+2026 version, stable source URL and exact PDF blob for all 721 manuscripts in
+373 result families. It also preserves the 176 upstream formalization source
+references and 208 main-result records without inventing a paper-to-theorem
+pairing. Each comparator import surface records its exact upstream declaration
+names, import blobs, comparator configuration, permitted axioms and pending
+verification scopes. These are explicit upstream dependency/re-export surfaces,
+not additional local paper-derived theorems. Their original types retain every
+hypothesis; a consumer-specific mathematical bridge and exact paper theorem
+mapping remain separate obligations. No historical influence is inferred.
