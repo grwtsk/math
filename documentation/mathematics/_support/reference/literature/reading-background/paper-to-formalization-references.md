@@ -1658,6 +1658,86 @@ with no policy switch under live work, lock clearing or silent limit change.
 The signed solution sets are mathematical objects; no finite search-performance,
 independent modularity proof or stronger `c²` theorem is claimed.
 
+<a id="formal-conjectures-erdos-moser-positive-20261029"></a>
+
+### Formal Conjectures: positive Erdős–Moser sums and the open exclusion
+
+Local attribution: grwtsk contributors. Three public SOURCE_PROOF_CANDIDATES;
+the private Gauss helper belongs to complete compiler-owned discovery/auditing.
+The Formal Conjectures Authors (2026) and Mathlib retain their Apache-2.0 notices.
+
+The exact imported definition is `ErdosMoser.powerSum k m = ∑ i∈Ico 1 m, i^k`.
+The first local result proves `powerSum k(n+1)=∑ i∈range n,(i+1)^k` for ALL
+natural `k,n`, including exponent zero and empty range. The shift retains positive
+bases; inserting a zero base would change the exponent-zero observation.
+
+A division-free Gauss identity gives `powerSum 1(n+1)*2=(n+1)*n`.
+The second public result cancels genuinely positive factors and proves, for
+STRICT `0<m`, `powerSum 1 m=m^1 ↔ m=3`. Input `m=1` is included and handled;
+`m=0` must be excluded since positive-exponent equations hold there. This is an
+all-positive-input classification, not promotion of the upstream `(1,3)` test.
+
+The third result proves equivalence between the raw positive statement
+`∀k m,0<k→0<m→powerSum k m=m^k→k=1∧m=3`
+and `∀k m,2≤k→0<m→powerSum k m≠m^k`.
+**The right-hand universal exclusion is UNSUPPLIED. This is a statement reduction,
+not a proof of the Erdős–Moser conjecture.** No authored proof uses the admitted
+`ErdosMoser.erdos_moser_conjecture` or imported finite test endpoints.
+
+Source/problem identity: `google-deepmind/formal-conjectures@909a8bec155bc5a6f3c72e12baaaa610ae293281`,
+`FormalConjectures/Wikipedia/ErdosMoser.lean` blob `52cd5fc024d23ecdd04a4b7c43a4f679c6549f07`,
+exact consumed declaration `ErdosMoser.powerSum`; LICENSE blob `d645695673349e3947e8e5ae42332d0ac3164cd7`.
+The module cites Bernd C. Kellner, *On stronger conjectures that imply the
+Erdös-Moser conjecture*, [arXiv:1003.1646v2](https://arxiv.org/abs/1003.1646v2),
+2012-09-05 (first submitted2010-03-08), J.Number Theory131(2011),1054–1061,
+[DOI10.1016/j.jnt.2011.01.004](https://doi.org/10.1016/j.jnt.2011.01.004).
+That is BACKGROUND_ONLY: no particular stronger-conjecture implication from
+Kellner is consumed. The new index/Gauss argument is elementary local work.
+
+Native Lean4.33.1 / Mathlib `0df444a360eaa60ab8c11dca51a86af692955474` remain isolated.
+`sum_Ico_add'`, `sum_range_id_mul_two`, `sum_range_succ'` and interval API blobs
+are listed in the target. Omega is the verified Lean4.33.1 core import
+`Lean.Elab.Tactic.Omega`, source blob `708d3657f2995a06b489e781f8739c80c7b7b8b1`;
+the installed compiled core remains a pinned boundary, not a fresh source rebuild.
+Prepublication import inspection caught a nonexistent `Mathlib.Tactic.Omega`
+path and corrected that one import. No native compilation ran or failed; the
+final source/profile were reviewed again after correction.
+
+Actual root consumer context: `GRWTSK/NumberTheory/ErdosMoserSmallExponents.lean` at
+`232a4504bfc1d8c4e5581996dcdb4326053e01d8`, blob `a37ee8dbcd4f9e6554b0603e57ded9510384c7ec`. Its fully qualified
+`sumPowers`, `Solution`, `solution_one_iff`, `not_solution_two` declarations are
+listed in the target. The new finite-Ico/shifted-range vocabulary supplies the
+matching low-exponent observation, but root recursive-model equality is NOT
+proved here. Need the explicit `n=m-1` comparison (including `m=1`/`n=0`),
+root version compatibility and exact target evidence; no root model is copied.
+
+[New source](https://github.com/grwtsk/math/blob/da47315fc9d6f7e03fbf65d97f296a0ec5a0c79e/adapters/formal-conjectures/GRWTSK/NumberTheory/DiophantineEquations/ErdosMoserPositiveSums.lean) at `da47315fc9d6f7e03fbf65d97f296a0ec5a0c79e`, tree `04b2910a33096f171d62fb24149d8a2b9736d06e`;
+blob `63d52d95b9a2984e489fb820b65078ea73f21658` / SHA256 `9440d6b08cc92753eb2068635c9c5ba327240c55a9eb103699f3634be9aeea8f`:
+
+- `GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.powerSum_succ_eq_shifted_range`
+- `GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.positive_input_one_solution_iff`
+- `GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.positive_statement_iff_higher_exponent_exclusion`
+
+[Static target](../../../../_verification/targets/NumberTheory/DiophantineEquations/formal-conjectures-erdos-moser-positive-20261029.json) and adjacent profile/TOML
+require all3 public roots/literal expected types and complete module census,
+including the private Gauss helper. Compilation, Comparator, interface,
+fresh independent replay, complete discovery and transitive axiom audit remain
+NOT_RUN; further independent checker UNSUPPLIED. Final source/API/type and import
+reviews found no concrete issue after the correction, not kernel acceptance.
+
+Importing the exact definition's module also introduces its literal-sorry
+conjecture into the environment. Lexical non-use does NOT establish transitive
+axiom cleanliness or whole-module acceptance. Fresh exact-target auditing must
+reject any reachable `sorryAx`/unapproved trust; a supplier/policy rejection must
+remain a tooling finding and must not be bypassed with another runner.
+
+Upstream monitoring observed newer main `f755ad2940ad1b25d58a07fa0fc1fbc40f41b390`.
+The selected module, LICENSE, toolchain, manifest and utility-wrapper blobs match
+the pinned baseline exactly; other source changes are not thereby reviewed or
+mapped. The dependency stays at the recorded immutable pin; no whole-upstream
+closure equivalence or fresh proof is inferred from these comparisons.
+Historical provider inventory, source pins and outcomes remain intact.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

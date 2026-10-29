@@ -1,0 +1,26 @@
+{
+  "project_subdir": "adapters/formal-conjectures",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/DiophantineEquations/ErdosMoserPositiveSums.lean",
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.powerSum_succ_eq_shifted_range",
+        "GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.positive_input_one_solution_iff",
+        "GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.positive_statement_iff_higher_exponent_exclusion"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.powerSum_succ_eq_shifted_range": "∀ (k n : Nat), _root_.ErdosMoser.powerSum k (n + 1) =\n  Finset.sum (Finset.range n) (fun i => (i + 1) ^ k)",
+        "GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.positive_input_one_solution_iff": "∀ (m : Nat) (hm : 0 < m),\n  _root_.ErdosMoser.powerSum 1 m = m ^ 1 ↔ m = 3",
+        "GRWTSK.NumberTheory.DiophantineEquations.ErdosMoserPositiveSums.positive_statement_iff_higher_exponent_exclusion": "(∀ k m : Nat, 0 < k → 0 < m →\n  _root_.ErdosMoser.powerSum k m = m ^ k → k = 1 ∧ m = 3) ↔\n(∀ k m : Nat, 2 ≤ k → 0 < m →\n  _root_.ErdosMoser.powerSum k m ≠ m ^ k)"
+      }
+    }
+  ]
+}

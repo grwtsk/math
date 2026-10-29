@@ -56,3 +56,11 @@ parity, including odd zero-output antidiagonals and even signed-axis fibers.
 The actual source NatFLT and pinned Nat/Int transport supply the obstruction;
 no FLT premise is inserted. See Anthropic fermat references and the central
 consumer map. Historical natural targets remain intact; acceptance is NOT_RUN.
+
+## Formal Conjectures positive-sum continuation
+
+Three public source candidates normalize Erdős–Moser finite sums and classify
+the positive exponent1 case. Equivalence to higher-exponent exclusion is only a
+reduction: the exclusion remains UNSUPPLIED. Exact statement/source/type records
+and the unused admitted-module boundary are in the central map and references.
+All native acceptance remains NOT_RUN; no full conjecture or root port is claimed.
