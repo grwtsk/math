@@ -1,0 +1,13 @@
+name = "grwtsk-anthropic-zeta23"
+defaultTargets = ["GRWTSKAnthropicAdapters"]
+
+[[require]]
+name = "Zeta23"
+git = "https://github.com/anthropics/formal-math.git"
+rev = "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+subDir = "zeta23"
+
+[[lean_lib]]
+name = "GRWTSKAnthropicAdapters"
+roots = []
+globs = ["GRWTSK.+"]

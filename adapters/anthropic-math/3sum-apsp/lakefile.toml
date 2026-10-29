@@ -1,0 +1,13 @@
+name = "grwtsk-anthropic-3sum-apsp"
+defaultTargets = ["GRWTSKAnthropicAdapters"]
+
+[[require]]
+name = "ThreeSumApsp"
+git = "https://github.com/anthropics/formal-math.git"
+rev = "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+subDir = "3sum-apsp"
+
+[[lean_lib]]
+name = "GRWTSKAnthropicAdapters"
+roots = []
+globs = ["GRWTSK.+"]

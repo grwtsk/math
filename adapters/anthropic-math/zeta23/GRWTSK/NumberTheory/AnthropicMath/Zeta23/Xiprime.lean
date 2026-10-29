@@ -1,0 +1,6 @@
+/- Local attribution: grwtsk contributors. Exact upstream re-exports; verification NOT_RUN. -/
+import Solution.XiPrime
+
+namespace GRWTSK.NumberTheory.AnthropicMath.Zeta23.Xiprime
+export _root_ (xiPrime_zeros_in_open_critical_strip xiPrime_over_xi_re_pos xiPrime_simple_zeros_on_critical_line xiPrime_simple_zeros_on_critical_line_cumulative xiPrime_simple_zeros_on_critical_line_quartic xiPrime_simple_zeros_on_critical_line_quartic_cumulative)
+end GRWTSK.NumberTheory.AnthropicMath.Zeta23.Xiprime
