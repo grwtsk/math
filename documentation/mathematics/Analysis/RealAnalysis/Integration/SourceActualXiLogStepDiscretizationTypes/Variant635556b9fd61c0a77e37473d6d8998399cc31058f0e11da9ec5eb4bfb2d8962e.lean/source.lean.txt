@@ -1,0 +1,25 @@
+import SourceActualXiLogStepDiscretization
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiLogStepDiscretization
+#check actualIntegerXiTailLogStep
+#print axioms actualIntegerXiTailLogStep
+#check actualXiCellOscillationConstant
+#print axioms actualXiCellOscillationConstant
+#check actualXiLogStepErrorConstant
+#print axioms actualXiLogStepErrorConstant
+#check actualIntegerXiTailLogStep_measurable
+#print axioms actualIntegerXiTailLogStep_measurable
+#check actualXiLogStep_floor_guards
+#print axioms actualXiLogStep_floor_guards
+#check actualXiLogStep_error_abs_le
+#print axioms actualXiLogStep_error_abs_le
+#check actualXiTailPrimitive_intervalIntegrable
+#print axioms actualXiTailPrimitive_intervalIntegrable
+#check actualXiLogStep_error_intervalIntegrable
+#print axioms actualXiLogStep_error_intervalIntegrable
+#check actualIntegerXiTailLogStep_intervalIntegrable
+#print axioms actualIntegerXiTailLogStep_intervalIntegrable
+#check actualXiLogStep_error_integral_abs_le
+#print axioms actualXiLogStep_error_integral_abs_le
+#check actualXiLogStep_absolute_average_difference
+#print axioms actualXiLogStep_absolute_average_difference

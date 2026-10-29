@@ -1,0 +1,16 @@
+import Zeta23.FromPNTPlus.MediumPNT
+import SourceActualXiErrorCriticalCovariance
+import Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+import Mathlib.MeasureTheory.Integral.Asymptotics
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+#check Filter.Tendsto.const_mul_atBot
+#check Filter.Tendsto.const_mul_atTop
+#check Real.tendsto_rpow_mul_exp_neg_mul_atTop_nhds_zero
+#check Real.tendsto_rpow_atTop
+#check Real.integrableOn_rpow_mul_exp_neg_mul_rpow
+#check MeasureTheory.LocallyIntegrableOn.integrableOn_of_isBigO_atTop
+#check intervalIntegrable_iff_integrableOn_Icc_of_le
+#check Iic_mem_nhds
+#check IntegrableOn.mono_set
+#check AbsolutelyContinuousOnInterval.continuousOn

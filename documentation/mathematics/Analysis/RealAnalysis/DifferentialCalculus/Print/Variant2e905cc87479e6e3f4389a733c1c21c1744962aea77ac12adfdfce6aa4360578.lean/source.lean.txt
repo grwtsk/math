@@ -1,0 +1,28 @@
+import SourcePrimeSquareTailWork
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimeSquareTailWork
+
+#print squarePrefixCoefficient
+#print squarePrefixCoefficient_eq_slice
+#print squarePrefixCoefficient_summable
+#print squarePrefixCoefficient_pos
+#print squarePrefixBaseline
+#print squarePrefix
+#print squareTail
+#print squareTailWork
+#print squareTailNegativeMean
+#print squareTailPairedWork
+#print squarePrefixBaseline_nonneg
+#print squarePrefixBaseline_pos
+#print squarePrefix_eq_steps
+#print squarePrefix_mul_deriv_intervalIntegrable
+#print squareTail_mul_deriv_intervalIntegrable
+#print squarePrefix_source_work
+#print squareTailWork_eq
+#print squareTail_intervalIntegrable
+#print squareTailPairedWork_eq_work_add_mean
+#print squareRemovedPairedWork
+#print squareRemovedRemainder
+#print squareRemovedPairedWork_eq
+#print mertensResidual_eq_squareRemoved

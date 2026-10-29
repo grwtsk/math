@@ -1,0 +1,68 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.IndependentXiTailPublicAudit.Variantd6dc9035a80d99652d8df626fa4a5ec3ce45128a27af24d17cb0f1ea0ee78365
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `08bf6053252ea42a0f447ab65f2b32fcb5f36744` · SHA-256 `d6dc9035a80d99652d8df626fa4a5ec3ce45128a27af24d17cb0f1ea0ee78365`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCompleteXiTailConsumer
+import SourceMinusProfileBudgetObstruction
+set_option autoImplicit false
+set_option pp.all true
+#check RH16ActualXiFixedFront.fixedFrontHeight
+#print axioms RH16ActualXiFixedFront.fixedFrontHeight
+#check RH16ActualXiFixedFront.fixedFrontBudget
+#print axioms RH16ActualXiFixedFront.fixedFrontBudget
+#check RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#print axioms RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#check RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#print axioms RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#check RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#print axioms RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#check RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#print axioms RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#check RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#check RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#check RH16ActualXiFixedFront.actual_transformed_front_integral_lower
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_integral_lower
+#check RH16CompleteXiTail.completeXiTail
+#print axioms RH16CompleteXiTail.completeXiTail
+#check RH16CompleteXiTail.tailAtomBudget
+#print axioms RH16CompleteXiTail.tailAtomBudget
+#check RH16CompleteXiTail.complete_complement_lower_of_tail
+#print axioms RH16CompleteXiTail.complete_complement_lower_of_tail
+#check RH16CompleteXiTail.atom_witness_of_complete_tail
+#print axioms RH16CompleteXiTail.atom_witness_of_complete_tail
+#check RH16CompleteXiTail.all_real_lower_of_complete_tail
+#print axioms RH16CompleteXiTail.all_real_lower_of_complete_tail
+#check RH16CompleteXiTail.estimate_of_complete_tail
+#print axioms RH16CompleteXiTail.estimate_of_complete_tail
+#check RH16CompleteXiTail.residual_upper_of_complete_tail
+#print axioms RH16CompleteXiTail.residual_upper_of_complete_tail
+#check RH16CompleteXiTail.actual_leading_upper_of_complete_tail
+#print axioms RH16CompleteXiTail.actual_leading_upper_of_complete_tail
+#check RH16MinusProfileObstruction.minusCorrelationKernel
+#print axioms RH16MinusProfileObstruction.minusCorrelationKernel
+#check RH16MinusProfileObstruction.minusProfileEnvelope
+#print axioms RH16MinusProfileObstruction.minusProfileEnvelope
+#check RH16MinusProfileObstruction.minus_kernel_le_neg_sixteenth
+#print axioms RH16MinusProfileObstruction.minus_kernel_le_neg_sixteenth
+#check RH16MinusProfileObstruction.minus_profile_envelope_lower
+#print axioms RH16MinusProfileObstruction.minus_profile_envelope_lower
+#check RH16MinusProfileObstruction.minus_profile_envelope_ge_linear
+#print axioms RH16MinusProfileObstruction.minus_profile_envelope_ge_linear
+#check RH16MinusProfileObstruction.probe_interval_inside_complete_tail
+#print axioms RH16MinusProfileObstruction.probe_interval_inside_complete_tail
+#check RH16MinusProfileObstruction.minus_profile_envelope_not_eventually_bounded
+#print axioms RH16MinusProfileObstruction.minus_profile_envelope_not_eventually_bounded
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a2962434b74a01f6fb836edad70d93ad04a3435d6e2f869b042ab9ef5327b4e6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/IndependentXiTailPublicAudit/Variantd6dc9035a80d99652d8df626fa4a5ec3ce45128a27af24d17cb0f1ea0ee78365.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

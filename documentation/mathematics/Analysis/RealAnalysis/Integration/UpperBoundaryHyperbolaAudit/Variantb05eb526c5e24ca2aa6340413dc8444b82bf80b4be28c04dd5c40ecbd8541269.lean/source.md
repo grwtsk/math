@@ -1,0 +1,55 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.UpperBoundaryHyperbolaAudit.Variantb05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `21297af61cfea90fec8407d0b6f8289cf86043a4` · SHA-256 `b05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import UpperBoundaryHyperbola
+#check UpperBoundaryHyperbolaScratch.upperSmallIndices
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallIndices
+#check UpperBoundaryHyperbolaScratch.upperSmallSum
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum
+#check UpperBoundaryHyperbolaScratch.upperHyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperHyperbola
+#check UpperBoundaryHyperbolaScratch.mem_upperSmallIndices_iff
+#print axioms UpperBoundaryHyperbolaScratch.mem_upperSmallIndices_iff
+#check UpperBoundaryHyperbolaScratch.upperSmallIndices_eq_sqrt_cutoff
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallIndices_eq_sqrt_cutoff
+#check UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_hyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_hyperbola
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_square_nonneg
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_square_nonneg
+#check UpperBoundaryHyperbolaScratch.upperRowIndices_eq_div_cutoff
+#print axioms UpperBoundaryHyperbolaScratch.upperRowIndices_eq_div_cutoff
+#check UpperBoundaryHyperbolaScratch.upperHyperbola_eq_floor_sum
+#print axioms UpperBoundaryHyperbolaScratch.upperHyperbola_eq_floor_sum
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_eq_floor_sum
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_eq_floor_sum
+#check UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_floor_hyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_floor_hyperbola
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_measurable
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_measurable
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_abs_le
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_abs_le
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_square_mul_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_square_mul_integrableOn
+#check UpperBoundaryHyperbolaScratch.upperHyperbola_mul_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.upperHyperbola_mul_integrableOn
+#check UpperBoundaryHyperbolaScratch.upperProduct_integral_eq_hyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperProduct_integral_eq_hyperbola
+#check UpperBoundaryHyperbolaScratch.source_hyperbola_derivative_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.source_hyperbola_derivative_integrableOn
+#check UpperBoundaryHyperbolaScratch.source_square_derivative_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.source_square_derivative_integrableOn
+#check UpperBoundaryHyperbolaScratch.sourceQuadraticValue_eq_hyperbola_integrals
+#print axioms UpperBoundaryHyperbolaScratch.sourceQuadraticValue_eq_hyperbola_integrals
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=57daca616e1d1c807a00c8c4166365256c1dbe7b4d86a75653c5b0928d93d482 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/UpperBoundaryHyperbolaAudit/Variantb05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

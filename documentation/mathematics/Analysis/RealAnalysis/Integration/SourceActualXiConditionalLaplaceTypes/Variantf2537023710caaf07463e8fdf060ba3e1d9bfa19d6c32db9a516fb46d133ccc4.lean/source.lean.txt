@@ -1,0 +1,39 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.SourceActualXiConditionalLaplace.Varianteb12cca4874bd03a9a9110d4dfe7b62120a7597a9b2032f167f4e320e4b33df1","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"eb12cca4874bd03a9a9110d4dfe7b62120a7597a9b2032f167f4e320e4b33df1","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.SourceActualXiConditionalLaplace.Varianteb12cca4874bd03a9a9110d4dfe7b62120a7597a9b2032f167f4e320e4b33df1","mathematical_subject":"Analysis.Integration","original_sha256":"eb12cca4874bd03a9a9110d4dfe7b62120a7597a9b2032f167f4e320e4b33df1","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/actual-xi-conditional-laplace/SourceActualXiConditionalLaplaceTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiConditionalLaplace
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.SourceActualXiConditionalLaplace.Varianteb12cca4874bd03a9a9110d4dfe7b62120a7597a9b2032f167f4e320e4b33df1
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace
+#check actualXiAbsoluteCumulative
+#print axioms actualXiAbsoluteCumulative
+#check actualXiConditionalLaplaceBudget
+#print axioms actualXiConditionalLaplaceBudget
+#check actualXiAbsoluteCumulative_at_lower
+#print axioms actualXiAbsoluteCumulative_at_lower
+#check actualXiAbsoluteCumulative_nonneg
+#print axioms actualXiAbsoluteCumulative_nonneg
+#check actualXiAbsoluteCumulative_absolutelyContinuous
+#print axioms actualXiAbsoluteCumulative_absolutelyContinuous
+#check actualXiAbsoluteCumulative_ae_hasDerivAt
+#print axioms actualXiAbsoluteCumulative_ae_hasDerivAt
+#check actualXiLaplace_finite_abel
+#print axioms actualXiLaplace_finite_abel
+#check actualXiAbsoluteCumulative_le_future_envelope
+#print axioms actualXiAbsoluteCumulative_le_future_envelope
+#check actualXiCumulativeLaplace_integrableOn
+#print axioms actualXiCumulativeLaplace_integrableOn
+#check actualXiCumulativeLaplace_tendsto_zero
+#print axioms actualXiCumulativeLaplace_tendsto_zero
+#check actualXiLaplace_integrableOn_of_future_average
+#print axioms actualXiLaplace_integrableOn_of_future_average
+#check actualXiLaplace_integral_norm_eq
+#print axioms actualXiLaplace_integral_norm_eq
+#check actualXiLaplace_integral_norm_le
+#print axioms actualXiLaplace_integral_norm_le
+#check actualXiLaplace_norm_le
+#print axioms actualXiLaplace_norm_le

@@ -1,0 +1,10 @@
+import Mathlib.MeasureTheory.Function.L2Space
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+open MeasureTheory
+#check integrable_zero
+#check Real.exp_nat_mul
+#check Real.exp_nsmul
+#check mul_self_le_mul_self
+#check pow_le_pow_left₀
+#check sq_le_sq₀
+#check memLp_two_iff_integrable_sq

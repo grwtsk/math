@@ -1,0 +1,10 @@
+import RootActualRetainedMeanTrace
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.RootActualRetainedMeanTrace
+#print actualRetainedMeanSourcePrimitive
+#print actualMeanResolvedColumnBoundary
+#print actualRetainedMeanSourcePrimitive_hasDerivAt
+#print actualRetainedMeanSourcePrimitive_deriv
+#print actualTwistedTimeDensity_integral_eq_mean_traces
+#print actualRetainedMeanSourcePrimitive_zero_right
+#print actual_adjusted_inner_eq_mean_traces_physical

@@ -1,0 +1,19 @@
+import GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization
+
+#print axioms response_pos_after_contact
+#print axioms gram_diagonal_pos
+#print axioms original_window_L2_ne_zero_of_strict_maturity
+#print axioms bounded_individual_realization_exists
+#print axioms prescribed_horizon_individual_realization
+
+#check response_pos_after_contact
+#check gram_diagonal_pos
+#check original_window_L2_ne_zero_of_strict_maturity
+#check bounded_individual_realization_exists
+#check prescribed_horizon_individual_realization
+
+end GRWTSK.Analysis.InnerProductSpace.CausalIndividualRealization

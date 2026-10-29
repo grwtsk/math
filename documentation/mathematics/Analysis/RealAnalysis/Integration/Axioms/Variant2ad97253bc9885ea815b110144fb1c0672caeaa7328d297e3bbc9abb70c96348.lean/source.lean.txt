@@ -1,0 +1,5 @@
+import FormalResearch.SUCAS.BridgeNormalization
+#print axioms FormalResearch.SUCAS.BridgeNormalization.explicit_normalization
+#print axioms FormalResearch.SUCAS.BridgeNormalization.normalized_square_integrable
+#print axioms FormalResearch.SUCAS.BridgeNormalization.normalized_square_integral
+#print axioms FormalResearch.SUCAS.BridgeNormalization.normalized_ne_zero

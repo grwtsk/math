@@ -1,0 +1,21 @@
+import Mathlib.RingTheory.PowerSeries.Log
+import Mathlib.Topology.Algebra.InfiniteSum.Order
+import Mathlib.MeasureTheory.Integral.Bochner.Basic
+import Mathlib.Analysis.Matrix.PosDef
+import Mathlib.Tactic
+
+#check Summable.le_tsum
+#check Summable.le_tsum'
+#check Summable.tsum_eq_zero_iff
+#check PowerSeries.coeff_X
+#check PowerSeries.derivative_X
+#check PowerSeries.substAlgHom
+#check PowerSeries.coe_substAlgHom
+#check MeasureTheory.integral_dirac
+#check MeasureTheory.integrable_dirac
+#check Matrix.posSemidef_diagonal_iff
+#check PowerSeries.constantCoeff_logOf
+#check PowerSeries.coeff_mul_X_pow
+#check PowerSeries.derivative_subst
+#check PowerSeries.deriv_log
+#check PowerSeries.coeff_zero_eq_constantCoeff

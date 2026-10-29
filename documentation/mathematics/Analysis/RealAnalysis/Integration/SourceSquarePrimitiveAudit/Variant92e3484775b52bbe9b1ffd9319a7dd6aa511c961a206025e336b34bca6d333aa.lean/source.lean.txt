@@ -1,0 +1,35 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.SourceSquarePrimitiveBalance.Variantb8361761780830852b8c3d06582350c27b5edafeb2c77e074574d8494be351a4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b8361761780830852b8c3d06582350c27b5edafeb2c77e074574d8494be351a4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.SourceSquarePrimitiveBalance.Variantb8361761780830852b8c3d06582350c27b5edafeb2c77e074574d8494be351a4","mathematical_subject":"Analysis.Integration","original_sha256":"b8361761780830852b8c3d06582350c27b5edafeb2c77e074574d8494be351a4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/reflection-analysis/independent-square-primitive-balance/SourceSquarePrimitiveAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSquarePrimitiveBalance
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.SourceSquarePrimitiveBalance.Variantb8361761780830852b8c3d06582350c27b5edafeb2c77e074574d8494be351a4
+
+set_option pp.all true
+set_option pp.universes true
+#check RH16SquarePrimitiveBalance.squareTimeDensity
+#print axioms RH16SquarePrimitiveBalance.squareTimeDensity
+#check RH16SquarePrimitiveBalance.squareAnchoredPrimitive
+#print axioms RH16SquarePrimitiveBalance.squareAnchoredPrimitive
+#check RH16SquarePrimitiveBalance.squarePrimitiveReadout
+#print axioms RH16SquarePrimitiveBalance.squarePrimitiveReadout
+#check RH16SquarePrimitiveBalance.squareZeroDrift
+#print axioms RH16SquarePrimitiveBalance.squareZeroDrift
+#check RH16SquarePrimitiveBalance.squareTimeDensity_intervalIntegrable
+#print axioms RH16SquarePrimitiveBalance.squareTimeDensity_intervalIntegrable
+#check RH16SquarePrimitiveBalance.square_prefix_integral_eq_readout
+#print axioms RH16SquarePrimitiveBalance.square_prefix_integral_eq_readout
+#check RH16SquarePrimitiveBalance.squareAnchoredPrimitive_eq_readout
+#print axioms RH16SquarePrimitiveBalance.squareAnchoredPrimitive_eq_readout
+#check RH16SquarePrimitiveBalance.squareAnchoredPrimitive_at_lower
+#print axioms RH16SquarePrimitiveBalance.squareAnchoredPrimitive_at_lower
+#check RH16SquarePrimitiveBalance.squarePrimitiveReadout_at_log_seven
+#print axioms RH16SquarePrimitiveBalance.squarePrimitiveReadout_at_log_seven
+#check RH16SquarePrimitiveBalance.squareZeroDrift_eq_actual_error
+#print axioms RH16SquarePrimitiveBalance.squareZeroDrift_eq_actual_error
+#check RH16SquarePrimitiveBalance.squareZeroDrift_uniform_bound
+#print axioms RH16SquarePrimitiveBalance.squareZeroDrift_uniform_bound
+#check RH16SquarePrimitiveBalance.squareZeroDrift_eq_explicit_error
+#print axioms RH16SquarePrimitiveBalance.squareZeroDrift_eq_explicit_error

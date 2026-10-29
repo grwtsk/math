@@ -1,0 +1,23 @@
+# Examples — complete source
+
+[Complete source index](../../complete-source-index.md)
+
+**2 source modules · 0 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant47e23baf3d90d9cc9daadf0b80331cf2ab99e0d701327a4639927cac456305e7.lean](Variant47e23baf3d90d9cc9daadf0b80331cf2ab99e0d701327a4639927cac456305e7.lean/index.md) | module |
+| [Variant66118cb751de69062db36ac58140d0932bbd455bb015eb8720c7d3cc0814d70e.lean](Variant66118cb751de69062db36ac58140d0932bbd455bb015eb8720c7d3cc0814d70e.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2e3979704077757c01f10a2b5d5759f7694f3acb5575d225800ce10176d2796d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

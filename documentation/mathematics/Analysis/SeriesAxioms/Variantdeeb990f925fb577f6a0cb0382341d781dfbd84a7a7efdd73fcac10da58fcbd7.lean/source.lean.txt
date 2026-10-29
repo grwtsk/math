@@ -1,0 +1,5 @@
+import FormalResearch.Analysis.DigammaSeries
+#print axioms FormalResearch.Analysis.DigammaSeries.gammaSeq_locally_uniform
+#print axioms FormalResearch.Analysis.DigammaSeries.euler_derivative_limit
+#print axioms FormalResearch.Analysis.DigammaSeries.hasSum_difference
+#check FormalResearch.Analysis.DigammaSeries.hasSum_difference

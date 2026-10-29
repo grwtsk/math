@@ -1,0 +1,19 @@
+import SourceActualShiftedXiDerivativeAdapter
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check RH16ShiftedXiAdapter.plain_derivative_prefactor_eq
+#print axioms RH16ShiftedXiAdapter.plain_derivative_prefactor_eq
+#print RH16ShiftedXiAdapter.plain_derivative_prefactor_eq
+#check RH16ShiftedXiAdapter.plainProfile_deriv_eq_actual_kernel
+#print axioms RH16ShiftedXiAdapter.plainProfile_deriv_eq_actual_kernel
+#print RH16ShiftedXiAdapter.plainProfile_deriv_eq_actual_kernel
+#check RH16ShiftedXiAdapter.signedCesaroPairing_eq_explicit_shiftedXi
+#print axioms RH16ShiftedXiAdapter.signedCesaroPairing_eq_explicit_shiftedXi
+#print RH16ShiftedXiAdapter.signedCesaroPairing_eq_explicit_shiftedXi
+#check RH16ShiftedXiAdapter.remainingAtomWork_eq_explicit_shiftedXi
+#print axioms RH16ShiftedXiAdapter.remainingAtomWork_eq_explicit_shiftedXi
+#print RH16ShiftedXiAdapter.remainingAtomWork_eq_explicit_shiftedXi

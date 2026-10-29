@@ -1,0 +1,14 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelPositiveSector
+
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tailReading
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.tail_reading_strict_inside
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.two_mem_inventory
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.higher_shift_above_support
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.polarity_kernel_tail_eq_atom
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.strict_positive_sector_of_tail_atom
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.polarity_kernel_tail_pos
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.strict_positive_sector_nonempty
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.strict_positive_sector_volume_pos
