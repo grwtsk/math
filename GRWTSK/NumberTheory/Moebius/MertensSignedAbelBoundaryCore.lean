@@ -1,4 +1,4 @@
-/- Copyright (c) 2026 grwtsk. MIT.
+/- Copyright (c) 2026 grwtsk contributors. MIT.
 Mathlib and imported GRWTSK results retain their upstream attribution and licenses. -/
 import GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality
 import Mathlib.Data.Nat.Sqrt
