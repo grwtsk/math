@@ -54,3 +54,13 @@ Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See catalogue.json for every library, source module/blob, config and dependency
 pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+
+## Consecutive-square consumer
+
+The isolated PrimeInterval.v1 package now contains three subject-organized source
+candidates in GRWTSK/NumberTheory/MultiplicativeNumberTheory/ConsecutiveSquarePrimeWitness.lean.
+They consume the proved numerical Eθ interval criterion, remove the nonprime square
+endpoint and return an actual open-interval prime/count witness. Uniform error,
+threshold and strict margin premises remain explicit. No root version-port or
+numerical bound is supplied. [Consumer provenance](consumer-integrations.json)
+and the canonical ledger bind exact source and hypotheses. Native checks remain NOT_RUN.

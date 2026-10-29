@@ -69,3 +69,23 @@ The remaining-provider obligations explicitly cover statement fidelity, IEANTN
 claim/certificate roles, versioned proof sources, intermediate FLT inputs, and
 Lean3/Lean4 separation. Continue those obligations rather than counting more
 imports as mathematical saturation.
+
+## IEANTN consecutive-square continuation
+
+The first 24-declaration wave remains historical. A subsequent three-declaration
+IEANTN consumer applies the proved numerical theta-error criterion at x=n² and
+h=2n+1. Its real interval is closed on the right. The square endpoint cannot be
+prime, so the proof returns an actual prime in the open natural interval and a
+positive cardinality for its prime filter. This supplies the witness observed by
+the existing ConfigurationCounts.squareCount_pos_iff consumer without importing
+incompatible root modules or defining a second count model.
+
+The uniform Eθ bound, applicability threshold and strict error margin are joint
+premises. None is manufactured from a numerical experiment. In particular a fixed
+positive epsilon does not make the margin hold for every large n. No Legendre
+result follows. The native4.34.0-rc2 package, exact source pins and all three
+expected interfaces are recorded in adapters/ieantn/consumer-integrations.json
+and the canonical ledger anchor ieantn-consecutive-square-consumer-20261029.
+Compilation, fresh replay, complete axiom audit and interface checking are NOT_RUN.
+The next obligation is an actual analytic-bound/range supplier and native checks;
+a root4.34.1 version-compatible comparison remains separate.

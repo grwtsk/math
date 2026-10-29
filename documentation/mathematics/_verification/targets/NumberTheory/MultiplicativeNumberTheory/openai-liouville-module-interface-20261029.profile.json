@@ -1,0 +1,27 @@
+{
+  "project_subdir": "adapters/openai-math",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "universes": [
+        "u"
+      ],
+      "declarations": [],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound": "∀ {ι : Type u}, ∃ c : Real, 0 < c ∧\n  ∀ (S : Finset ι) (a₁ a₂ b₁ b₂ : ι → Nat),\n    (∀ i ∈ S, 0 < a₁ i ∧ 0 < a₂ i ∧ a₁ i * b₂ i ≠ a₂ i * b₁ i) →\n    ∃ C : ι → Real, (∀ i ∈ S, 0 < C i) ∧\n      ∀ X : Real, 3 ≤ X → ∀ K : ι → Complex,\n        Norm.norm ((Finset.sum S (fun i => K i *\n            OAI.TwoPointCorrelations.affineSum\n              OAI.TwoPointCorrelations.liouville OAI.TwoPointCorrelations.liouville\n              (a₁ i) (a₂ i) (b₁ i) (b₂ i) (Nat.floor X))) / Complex.ofReal (X / Real.rpow (Real.log X) c)) ≤\n          Finset.sum S (fun i => Norm.norm (K i) * C i)",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound": "∀ {ι : Type u}, ∃ c : Real, 0 < c ∧\n  ∀ (S : Finset ι) (a₁ a₂ b₁ b₂ : ι → Nat),\n    (∀ i ∈ S, 0 < a₁ i ∧ 0 < a₂ i ∧ a₁ i * b₂ i ≠ a₂ i * b₁ i) →\n    ∃ B : Real, 0 ≤ B ∧\n      ∀ X : Real, 3 ≤ X → ∀ K : ι → Complex,\n        Finset.sum S (fun i => Norm.norm (K i)) ≤ 1 →\n          Norm.norm ((Finset.sum S (fun i => K i *\n            OAI.TwoPointCorrelations.affineSum\n              OAI.TwoPointCorrelations.liouville OAI.TwoPointCorrelations.liouville\n              (a₁ i) (a₂ i) (b₁ i) (b₂ i) (Nat.floor X))) / Complex.ofReal (X / Real.rpow (Real.log X) c)) ≤ B"
+      }
+    }
+  ]
+}

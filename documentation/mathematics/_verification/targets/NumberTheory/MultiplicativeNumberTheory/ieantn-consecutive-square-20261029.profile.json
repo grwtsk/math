@@ -1,0 +1,26 @@
+{
+  "project_subdir": "adapters/ieantn/Solutions/PrimeInterval.v1",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/ConsecutiveSquarePrimeWitness.lean",
+      "declarations": [],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.hasPrimeInInterval_nat_iff_exists_prime_mem_Ioo",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.prime_in_consecutive_square_interval_of_numerical_bound",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.consecutive_square_prime_filter_card_pos_of_numerical_bound"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.hasPrimeInInterval_nat_iff_exists_prime_mem_Ioo": "∀ (a b : Nat), (¬ Nat.Prime b) → (IEANTN.HasPrimeInInterval (a : Real) ((b : Real) - a) ↔ ∃ p ∈ Finset.Ioo a b, Nat.Prime p)",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.prime_in_consecutive_square_interval_of_numerical_bound": "∀ (n : Nat), 1 ≤ n → ∀ (x₀ ε : Real), IEANTN.HasNumericalBound IEANTN.Eθ ε x₀ → x₀ ≤ (n : Real) ^ 2 → (2 * (n : Real) ^ 2 + (2 * (n : Real) + 1)) * ε < 2 * (n : Real) + 1 → ∃ p ∈ Finset.Ioo (n ^ 2) ((n + 1) ^ 2), Nat.Prime p",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.consecutive_square_prime_filter_card_pos_of_numerical_bound": "∀ (n : Nat), 1 ≤ n → ∀ (x₀ ε : Real), IEANTN.HasNumericalBound IEANTN.Eθ ε x₀ → x₀ ≤ (n : Real) ^ 2 → (2 * (n : Real) ^ 2 + (2 * (n : Real) + 1)) * ε < 2 * (n : Real) + 1 → 0 < ((Finset.Ioo (n ^ 2) ((n + 1) ^ 2)).filter Nat.Prime).card"
+      }
+    }
+  ]
+}

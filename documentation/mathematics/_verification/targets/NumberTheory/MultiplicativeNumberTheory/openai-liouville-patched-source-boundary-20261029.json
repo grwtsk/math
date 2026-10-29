@@ -1,0 +1,51 @@
+{
+  "schema": "grwtsk.patched-upstream-source-obligation/1",
+  "local_attribution": "grwtsk contributors",
+  "source_commit": "c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13",
+  "source_path": "adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+  "source_blob": "41fd47c54def263e91175137de294aaa389c8e3b",
+  "profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-module-interface-20261029.profile.json",
+  "required_declarations": [
+    "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+    "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+  ],
+  "upstream_repository": "openai/math",
+  "patch_source_identity": {
+    "upstream_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "patch_path": "lean/patches/PrimeNumberTheoremAnd-lean4341.patch",
+    "patch_blob": "924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc",
+    "patch_sha256": "0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82",
+    "patch_bytes": 1993197,
+    "added_module_path": "PrimeNumberTheoremAnd/Erdos970/MertensClassical.lean",
+    "added_module_blob": "8f3e823d7cedff9e294bacf7ec4f0c54c2df9b42",
+    "added_module_sha256": "37b0afe031bec4dea9fe77843b63ba2274c1718510c3e7b52678380bcbb9ae01",
+    "added_module_bytes": 92560,
+    "added_module_lines": 1982,
+    "lakefile_blob": "cd24ca2ee09fb6fe33e82400534d9e60a616125b",
+    "pnt_base_commit": "c39a751132c88b6e8080b74c74023fd95b3d8be0"
+  },
+  "missing_module": "PrimeNumberTheoremAnd.Erdos970.MertensClassical",
+  "base_module_presence": "ABSENT_FROM_PINNED_PNT_TREE; introduced by exact OAI patch",
+  "source_supply_obligation": "The declared import closure needs the exact post-patch PNT source, not just PNT HEAD==manifest revision. Lake configuration and post_update mutate dependencies; no hook was executed.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "acceptance_requires": [
+    "A supported reviewed Noe supplier binds PNT base commit, OAI patch Git blob and payload digest, exact touched paths and resulting source blobs",
+    "The added MertensClassical module must have the recorded full blob and SHA256; this single-module equality is insufficient to qualify every other patched file",
+    "Reconstruct the full declared import closure from those exact post-patch sources; reject missing, conflicting, unexpected or drifted source inputs",
+    "Fresh source-bound registry under actual producer/policy and selected native version",
+    "Fresh compilation, complete target-owned census/axiom audit and both module-owned expected type consumers under exclusive managed ownership",
+    "Fresh independent replay and host/resource restoration evidence"
+  ],
+  "prohibited_substitutions": [
+    "No silently newer PNT revision",
+    "No treating modified working-tree files as immutable base Git blobs",
+    "No automatic execution of upstream run_cmd or post_update hooks",
+    "No cached or failed partial artifacts as proof inputs"
+  ],
+  "claim_boundary": "Source identity and expected-interface specification; not production tooling qualification, compiler evidence or mathematical acceptance"
+}
