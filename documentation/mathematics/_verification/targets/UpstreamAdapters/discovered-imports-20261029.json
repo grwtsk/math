@@ -1,0 +1,1403 @@
+{
+  "schema": "grwtsk.source-bound-import-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "role": "COMPILATION_TARGETS_NOT_DECLARATION_ACCEPTANCE",
+  "source_commit": "44f1f8a0ef2746c103b58933c34e96ce1e522420",
+  "providers": [
+    {
+      "repository": "https://github.com/teorth/pfr",
+      "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+      "catalogue": "pfr/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd",
+      "commit": "127b50e33f6033e2147921167a117af96d9ba4ea",
+      "catalogue": "pnt-plus/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/teorth/IEANTN",
+      "commit": "ec66e388e6e117c6881367f38665f310edf7cacf",
+      "catalogue": "ieantn/catalogue.json",
+      "project_count": 22,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/fpvandoorn/carleson",
+      "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+      "catalogue": "carleson/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/google-deepmind/formal-conjectures",
+      "commit": "909a8bec155bc5a6f3c72e12baaaa610ae293281",
+      "catalogue": "formal-conjectures/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/ImperialCollegeLondon/FLT",
+      "commit": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+      "catalogue": "imperial-flt/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean",
+      "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+      "catalogue": "sphere-packing/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/teorth/equational_theories",
+      "commit": "2f49bdaf3d38ffb722e54ac1288c8269dac61846",
+      "catalogue": "equational-theories/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/YaelDillies/apap",
+      "commit": "b2001974b99b18ca1c13b6aa4791b7801563f939",
+      "catalogue": "apap/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/leanprover-community/lean-liquid",
+      "commit": "ee4795874a99ea5f9d85bd0b364425f07b932377",
+      "catalogue": "lean-liquid/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "catalogue": "lean-proofs/catalogue.json",
+      "project_count": 10,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    }
+  ],
+  "checks": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "TARGET_DECLARATIONS_UNSELECTED_NOT_RUN",
+    "statement_fidelity": "NOT_RUN"
+  },
+  "missing_bridge": "Select actual consumer declarations and exact interface hypotheses; import-only facades contain no local theorem to accept.",
+  "source_files": [
+    {
+      "path": "adapters/apap/GRWTSK/Combinatorics/Upstream/Apap/Core/APAPImports.lean",
+      "blob": "300369979e1286d4033edb620b175e59929f5209"
+    },
+    {
+      "path": "adapters/apap/catalogue.json",
+      "blob": "50c137448a695006120a18ad44f1cc722ed265e1"
+    },
+    {
+      "path": "adapters/apap/lake-manifest.json",
+      "blob": "7ca090665e68dca6e84b5e4382f40a3a1432bb14"
+    },
+    {
+      "path": "adapters/apap/lakefile.toml",
+      "blob": "81d43a6d6d4a32f0922076c6347eb1a81ed8be37"
+    },
+    {
+      "path": "adapters/apap/lean-toolchain",
+      "blob": "2afd38716ad6182657562d3dac3c98461c1385f2"
+    },
+    {
+      "path": "adapters/carleson/GRWTSK/FourierAnalysis/Upstream/Carleson/Core/CarlesonImports.lean",
+      "blob": "fb7de435be43b20b5cbaec583671931fbd902ba5"
+    },
+    {
+      "path": "adapters/carleson/GRWTSK/FourierAnalysis/Upstream/Carleson/Core/ChallengeImports.lean",
+      "blob": "7ca8baf7c5c980eca0f28d608dadaac4ed0cce50"
+    },
+    {
+      "path": "adapters/carleson/GRWTSK/FourierAnalysis/Upstream/Carleson/Core/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/carleson/catalogue.json",
+      "blob": "0888934bff5929371100a1a6884f9125c5a9f38d"
+    },
+    {
+      "path": "adapters/carleson/lake-manifest.json",
+      "blob": "985f1cbbd53e8622035fc8efc19ae6761d9aeba5"
+    },
+    {
+      "path": "adapters/carleson/lakefile.toml",
+      "blob": "cbcc40fd07a5a9da2c9e734ec957fb2428cfc9bc"
+    },
+    {
+      "path": "adapters/carleson/lean-toolchain",
+      "blob": "2afd38716ad6182657562d3dac3c98461c1385f2"
+    },
+    {
+      "path": "adapters/equational-theories/GRWTSK/GeneralAlgebraicSystems/Upstream/EquationalTheories/Core/EquationalTheoriesImports.lean",
+      "blob": "c357a7f93893acfd931ea98482da03b3c9d3b85d"
+    },
+    {
+      "path": "adapters/equational-theories/catalogue.json",
+      "blob": "6abd9130afecb7a332f078d2925efff55b617b03"
+    },
+    {
+      "path": "adapters/equational-theories/lake-manifest.json",
+      "blob": "bbb50a0a51a855ce7a0a33ded19e1fc6ae98d943"
+    },
+    {
+      "path": "adapters/equational-theories/lakefile.toml",
+      "blob": "97ba2c384437395af9f1f43d1e5ead137bca5928"
+    },
+    {
+      "path": "adapters/equational-theories/lean-toolchain",
+      "blob": "33e0c088939ad08c9f2b1befa3118a423b06ad7d"
+    },
+    {
+      "path": "adapters/formal-conjectures/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/FormalConjectures/Core/FormalConjecturesForMathlibImports.lean",
+      "blob": "fc7cc9d97b56bf55b8f240070e34d6bf1b4218fe"
+    },
+    {
+      "path": "adapters/formal-conjectures/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/FormalConjectures/Core/FormalConjecturesImports.lean",
+      "blob": "bd95e5201baa7dc7cd4307fcbf62490e80660986"
+    },
+    {
+      "path": "adapters/formal-conjectures/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/FormalConjectures/Core/FormalConjecturesTestImports.lean",
+      "blob": "5f0e020837e4be5272637d46d993448ea34523e7"
+    },
+    {
+      "path": "adapters/formal-conjectures/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/FormalConjectures/Core/FormalConjecturesUtilImports.lean",
+      "blob": "fe0b8c3d327c9d204d9015a1c01271dc10737fe9"
+    },
+    {
+      "path": "adapters/formal-conjectures/catalogue.json",
+      "blob": "b031eacb4c1299eeb98a2ef2555a22b6f79cc1fb"
+    },
+    {
+      "path": "adapters/formal-conjectures/lake-manifest.json",
+      "blob": "48cbf4cb0e338cf6e681ea379fe4f2bbc5c01143"
+    },
+    {
+      "path": "adapters/formal-conjectures/lakefile.toml",
+      "blob": "8d8d95df4fa7b60aac1f6c7df0ffe4446b386b22"
+    },
+    {
+      "path": "adapters/formal-conjectures/lean-toolchain",
+      "blob": "a8afa7d1b02d96f0671eba854a8dc4b416beb473"
+    },
+    {
+      "path": "adapters/ieantn/GRWTSK/NumberTheory/Upstream/Ieantn/Core/IEANTNImports.lean",
+      "blob": "1f3c6b9a1f065e093a5be0ddc13fe1f6b9dadebe"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/AdditiveCombinationImports.lean",
+      "blob": "fc84a41e95905fcdfdbf8359c7fba8201706cfdb"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ApproximantsImports.lean",
+      "blob": "b5fb68b9f9ffa966465a24fba7f6d83b9c5bad84"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/DecayImports.lean",
+      "blob": "64843e6fa23427c7ca30b0b3cb6cf96b8827f27f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/DigammaRealImports.lean",
+      "blob": "f6ec894a14c7d179e5f9ee9005f402b55766d3a6"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaAnalyticImports.lean",
+      "blob": "9176112e16202277044cea848ae141b7065714c2"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaComplexToRealImports.lean",
+      "blob": "4727af6b30110b8b119a9511a19ff57491cadce7"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaGaussSeriesImports.lean",
+      "blob": "8d73d885d7663bdc9f623d1456225b5971a89fef"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaOscillationImports.lean",
+      "blob": "4e7f30f44dc3ced9895379a33bdae8833745785f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaPeriodicImports.lean",
+      "blob": "4b675f2aa3f6b25832445b13e3fe7c0590568757"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaRealAsymptoticImports.lean",
+      "blob": "c76c3661ca3c137410500bbc27190f55cb43c383"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaRealIdentityImports.lean",
+      "blob": "27da8ef8e37908e5a520054c7ef736532ddb945c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaRecurrenceImports.lean",
+      "blob": "2968a3e19f59340c418bf74331beeea2ac72713f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaStripImports.lean",
+      "blob": "26b0eff996f851fd217e22b90d42ff44eed1e63e"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Part1FourierImports.lean",
+      "blob": "6727c4d6a7999e49062f0cfc5649e3c1d48a04d5"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntAsymptoticsImports.lean",
+      "blob": "bab8c62edb5e9f617e6634330aa9abfe766aec4c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntFourierImports.lean",
+      "blob": "0e73a445ef57d78feed14a084dd4ff8f36a2e604"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntSmoothImports.lean",
+      "blob": "db9ec69e744f90da7365166683016033c3011451"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntSobolevImports.lean",
+      "blob": "e9b9b67f39107d6061fd8beb53c8b479321f8f96"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntSupportImports.lean",
+      "blob": "e6f78e72563ffc4f725e2083e9508101abf37b3c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/RectanglePortImports.lean",
+      "blob": "865767ea7011315ebbcf7a77a16375e98eb957c4"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ResiduePortImports.lean",
+      "blob": "493ae97eb4ac4cb6859fce98585c94ec421dd44d"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section5Imports.lean",
+      "blob": "6fe17f804019a49cc39f9957f4bacbcbebd91a44"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section5NegImports.lean",
+      "blob": "523b98f7059a16d9ef3c804140a2baeff42e3d18"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6ContourImports.lean",
+      "blob": "ee8a375f7e929e4a9fb0953a58f0e45811c8a9b0"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6HypImports.lean",
+      "blob": "7de6fff54efecf6d439ec21d907804a1b590adaa"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6Imports.lean",
+      "blob": "a063cfe194cae1eca53c3f020c4dd4fa17e267d7"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6ResImports.lean",
+      "blob": "70cc71df2e28a54c8a5050f01c333a47160adc37"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6WeightImports.lean",
+      "blob": "e606e3a48ca53dee46ba310823874a17d62fd07f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6ZerosImports.lean",
+      "blob": "3af7637f402f9556f1fb597693f74841c851e999"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7AdarImports.lean",
+      "blob": "ac60a92eb459f1a6f6348f47af4ed2254445b08b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7Imports.lean",
+      "blob": "373a6e65bf8655ecec5a8dc98b1285294af2be00"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7TrituraImports.lean",
+      "blob": "43fdff7948d8937427b1d4367992370e9593ee49"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7VihuelaImports.lean",
+      "blob": "49713e39b484425b138f8a585e65df755f8a55e4"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7WeightsImports.lean",
+      "blob": "418aa25d51b5cc52274a79a8f95fe064a2495138"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7ZerosImports.lean",
+      "blob": "e76cce3c26c46638442cdd4cdb3416a8ebc89e04"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81HardinImports.lean",
+      "blob": "2966f7490abf394f9a72965f2fb682eee4bc67e3"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81Imports.lean",
+      "blob": "63a259e57bc90cc80afad9fe4dbcbeb0c4b9902e"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81JanframeImports.lean",
+      "blob": "39f604eb1caccd326da7aa507320a4dfc2e6052c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81SagharImports.lean",
+      "blob": "a73d4d64ede959533125dd3892c9bedb8b445a98"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81TitchImports.lean",
+      "blob": "dd25c48e769f90e3e187ded951fbf5c75c6dca15"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section8Imports.lean",
+      "blob": "bcfed6dd723b47ee13df018b1fb12289510242a2"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9Cor13Imports.lean",
+      "blob": "cdd33e9a9302520d9520a6e66a9833297435c996"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9Cor13SumImports.lean",
+      "blob": "93a58306e2e262c56509da09dd0d1a10f414408e"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9Imports.lean",
+      "blob": "8cb3176360aae955712da4173a70ab15dad5941d"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9LimitImports.lean",
+      "blob": "28b4df18523668c127b9b8f918a03febc1e234eb"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/WienerPortImports.lean",
+      "blob": "8f5a96f9b526d3d873904191af3ce25b1c782bce"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaConjPortImports.lean",
+      "blob": "f046d123cc14f7487dabf919ee8252e2987eab76"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaInstanceImports.lean",
+      "blob": "e5ec05758c64234be13b4b3139b2fcc598c2679b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaInstanceNegImports.lean",
+      "blob": "98b81b966724e4aaa81c10c99020b688f0aaa300"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaReal01Imports.lean",
+      "blob": "b1195339948dac59f2e308de39affa92b637d53b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/lake-manifest.json",
+      "blob": "b62b2b68c939573303776071a73aba88862cb060"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/lakefile.toml",
+      "blob": "3204250e72f88c0b2a9b1eedcb4d810f5e13f47d"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/CoreImports.lean",
+      "blob": "34fa6cd62c05629502670f6b00d3770ac91bef2d"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntAsymptoticsImports.lean",
+      "blob": "bab8c62edb5e9f617e6634330aa9abfe766aec4c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntFourierImports.lean",
+      "blob": "0e73a445ef57d78feed14a084dd4ff8f36a2e604"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntSmoothImports.lean",
+      "blob": "db9ec69e744f90da7365166683016033c3011451"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntSobolevImports.lean",
+      "blob": "e9b9b67f39107d6061fd8beb53c8b479321f8f96"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntSupportImports.lean",
+      "blob": "e6f78e72563ffc4f725e2083e9508101abf37b3c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/WienerPortImports.lean",
+      "blob": "8f5a96f9b526d3d873904191af3ce25b1c782bce"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/lake-manifest.json",
+      "blob": "923c57f659b0382e4ac166c6fbea94f462961a3b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/lakefile.toml",
+      "blob": "33a94b2efe138a011dbbb17f4caf99c1f783642c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v2/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/AdditiveCombinationImports.lean",
+      "blob": "fc84a41e95905fcdfdbf8359c7fba8201706cfdb"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/ApproximantsImports.lean",
+      "blob": "b5fb68b9f9ffa966465a24fba7f6d83b9c5bad84"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/DecayImports.lean",
+      "blob": "64843e6fa23427c7ca30b0b3cb6cf96b8827f27f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/RectanglePortImports.lean",
+      "blob": "865767ea7011315ebbcf7a77a16375e98eb957c4"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/ResiduePortImports.lean",
+      "blob": "493ae97eb4ac4cb6859fce98585c94ec421dd44d"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/lake-manifest.json",
+      "blob": "0558b4ee66df0cfe1c9b0999bd62632dee0be018"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/lakefile.toml",
+      "blob": "c2f75b086cd1c728943ef61c47f71d678537e449"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v3/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V4/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v4/lake-manifest.json",
+      "blob": "43c3a134db2cd2e50ce7b6583f48db1beaced0fa"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v4/lakefile.toml",
+      "blob": "f1ef6f1687cfd4e337f6dc539baed928fc2c2de4"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/CH2.v4/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Chebyshev.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsChebyshevV1/ChebyshevDevImports.lean",
+      "blob": "1cd4092ad9b14c18837ff29e47c7f23bc41c5190"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Chebyshev.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsChebyshevV1/LogBoundsImports.lean",
+      "blob": "296c4161a43dee2f24ce05acedd40c4bae516bae"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Chebyshev.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsChebyshevV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Chebyshev.v1/lake-manifest.json",
+      "blob": "8d521c7dff841dcd0685db0c28505286c1e08d92"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Chebyshev.v1/lakefile.toml",
+      "blob": "9b884a6969f8ec046c30fdf79bac1a481cca16f5"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Chebyshev.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV2/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v2/lake-manifest.json",
+      "blob": "ed46e3011d256cb479b3e044e80568ad9a8debd9"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v2/lakefile.toml",
+      "blob": "a9d6e56156ea0731c45e53b4f9e02c1f5d7fb20a"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v2/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV3/BoundsImports.lean",
+      "blob": "79cc7fd725004deb101b7b83cd036b5d458d4eeb"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV3/ShiftsImports.lean",
+      "blob": "9e2b7e9737c89b2aa0cbe23d6c3c3258e89a7b11"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV3/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v3/lake-manifest.json",
+      "blob": "5320a0215ebee14b87482a60950de6c82bbd6420"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v3/lakefile.toml",
+      "blob": "375c364e2be111dca1e39d5587221377c3bc5812"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v3/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV4/EndpointImports.lean",
+      "blob": "df5f35785aff4e62728f711329445b19611f11aa"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV4/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v4/lake-manifest.json",
+      "blob": "c4919c9ae0a54720f5ed57e91f0a072f24ec4592"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v4/lakefile.toml",
+      "blob": "01eed80ff81e41a20c081789daa52fc1e738ba43"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlatt.v4/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/CalculusAssemblyImports.lean",
+      "blob": "1c60b823501872da5ee60774a778c94cca25e2b2"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/IntegralBoundsImports.lean",
+      "blob": "2b178a1edebbca0b2fe4882ca61a568dbe150bd0"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/NumericsImports.lean",
+      "blob": "4dc6401882c8dbe664919fba9ab36a48fe92d842"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/ThetaPiImports.lean",
+      "blob": "78f1f88441933a806282259a4eaff8f0b7b7f87b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/lake-manifest.json",
+      "blob": "394351ff84fca920aacc2e85ca2b077736f33a22"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/lakefile.toml",
+      "blob": "03f435050b449c3aaedc9b5a83976e6a3cde3c01"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Erdos392.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsErdos392V1/Erdos392DevImports.lean",
+      "blob": "cab7084957e52e12938ba58d29f49ac21f2902c5"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Erdos392.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsErdos392V1/PiBoundsImports.lean",
+      "blob": "9bdd038895cc17d4c85fc7bff01d2074d6fc6a56"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Erdos392.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsErdos392V1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Erdos392.v1/lake-manifest.json",
+      "blob": "cf861bf9f6dcb843a0d82bcb8dd70a8b9f3b9f46"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Erdos392.v1/lakefile.toml",
+      "blob": "0aa0fdf9acef35730be646e5933f7478369461a7"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Erdos392.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary14Imports.lean",
+      "blob": "df9d9b41a218e743fc1b2f70f4f6cad4f76abcf1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary22Imports.lean",
+      "blob": "2bf3a79696a870de8ca75b3973551b27f4b89860"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary23Imports.lean",
+      "blob": "d48060b5e515e1684fa77cadd0473de30e7ab7ec"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary26Imports.lean",
+      "blob": "57e0387c03535019fe07b9c058cf072da68b1569"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/DawsonImports.lean",
+      "blob": "bcffc48e814916c84c3d83fb4daeda321236295b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/SupportImports.lean",
+      "blob": "2766eb79a58290c25f2435c30d159863f4ee03d7"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/lake-manifest.json",
+      "blob": "bb50c7c5a139fca48790b8602d916b88c9e0dcf5"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/lakefile.toml",
+      "blob": "c31e77f814d28d7759ba11237b262906aced6e94"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/DawsonImports.lean",
+      "blob": "bcffc48e814916c84c3d83fb4daeda321236295b"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/GrowthImports.lean",
+      "blob": "59a246d7063e7181e953e14310b46c854bb01f70"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/IntegralImports.lean",
+      "blob": "4d56c6c393323c4e1d1f98e0fd7b2279083d50c5"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/PsiToThetaImports.lean",
+      "blob": "b98e150fb5d9d26ea9da900cdfdaa2164feac155"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/StieltjesImports.lean",
+      "blob": "56c991b184cadfde29521b102477ab6fc7ad7adc"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/ThetaToPiImports.lean",
+      "blob": "ccf9c4487c74fd4ebf0508423cca858c4a9ddf71"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/lake-manifest.json",
+      "blob": "1d250bfd1406e4bf8f3c6b70eb5d9f1179f51bb9"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/lakefile.toml",
+      "blob": "628095282b9bd724a5a2e36727b206d04ce74bf7"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/FKS2.v2/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/AnalyticImports.lean",
+      "blob": "c8d0356792c75dcb186f445cdf7ead00bf3ac508"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/ComplexToRealImports.lean",
+      "blob": "1e06803cc380a6ff992cd82614e2cb6ed69d438e"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/GaussSeriesImports.lean",
+      "blob": "c8dad02e5dd8acd7944032da2cc7e54edfbfebbc"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/OscillationImports.lean",
+      "blob": "6799ff425a6502b3aeeadbcf7a364191ab6a104c"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/PeriodicImports.lean",
+      "blob": "a4bf1bb54a06b92e28060a2a207715b68daeb934"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/RealAsymptoticImports.lean",
+      "blob": "3303ad38b4b0fdd138eeae7261a6d5e943f34690"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/RealIdentityImports.lean",
+      "blob": "b068442db8020458f6425afab83ef090e9dc94f9"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/RecurrenceImports.lean",
+      "blob": "963fda5e1c782529dad56c28b7bafaa65ab27ae3"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/StripImports.lean",
+      "blob": "12430e074626f21e3f4a09e0cda30d5fdb79e34f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/lake-manifest.json",
+      "blob": "bab17429da71600da4826eb2cdfe9bd79bffe191"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/lakefile.toml",
+      "blob": "1ba37a111e7871e9a304468b3104fabe982318b9"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Goldbach.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGoldbachV1/GoldbachDevImports.lean",
+      "blob": "c2976e82cbd4f1bce9f0a140cc4c1331429f6f63"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Goldbach.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGoldbachV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Goldbach.v1/lake-manifest.json",
+      "blob": "784ac41992782c214ba5c3796db56e8b76e0b9f9"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Goldbach.v1/lakefile.toml",
+      "blob": "e9c5791916508dc8cdc9f8efc0c9f75475e87aa8"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Goldbach.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV1/LcmDevImports.lean",
+      "blob": "05e69dc5c817b9960c450c2b8615bcc8aaaee628"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v1/lake-manifest.json",
+      "blob": "9c35e44a455c12ca964e1d808c11e97fb8935198"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v1/lakefile.toml",
+      "blob": "59b7af03a6bb2de1a488488df51a4b263dc4a1d0"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV2/LcmDevImports.lean",
+      "blob": "05e69dc5c817b9960c450c2b8615bcc8aaaee628"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV2/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v2/lake-manifest.json",
+      "blob": "374d7b2369f52057f9d89847e869e010421acd3d"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v2/lakefile.toml",
+      "blob": "5e0c5b7a1d997083389d99b7c2ea597045f78aec"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/Lcm.v2/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/PrimeInterval.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsPrimeIntervalV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/PrimeInterval.v1/lake-manifest.json",
+      "blob": "50b39034afb59766f4347c6fa069f71fe3c12ab3"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/PrimeInterval.v1/lakefile.toml",
+      "blob": "35b42eb15d2143c80a91fb49239bdec49fb16655"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/PrimeInterval.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsRosserSchoenfeld1962V1/RS12Imports.lean",
+      "blob": "7515bf835bbd12993cd113fc067f682d45ec493a"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsRosserSchoenfeld1962V1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/lake-manifest.json",
+      "blob": "9a0309fbdf70ff1a0f11fa86e33219522ca48e41"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/lakefile.toml",
+      "blob": "75728e05ea9192b0f4162565577829d4bc8dbb91"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZeroFreeHeight.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZeroFreeHeightV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZeroFreeHeight.v1/lake-manifest.json",
+      "blob": "fa25c469f5f164e9e47f1d31fa44d887dee42712"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZeroFreeHeight.v1/lakefile.toml",
+      "blob": "9a69634ff1b4b51b97b54b8e5e838f6ec04ffa2f"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZeroFreeHeight.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaLogDeriv.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZetaLogDerivV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaLogDeriv.v1/lake-manifest.json",
+      "blob": "fb73713778218674b358fdb37fb09e602d3efd66"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaLogDeriv.v1/lakefile.toml",
+      "blob": "f3d396a727f872f21a490875dd9681e566a733f8"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaLogDeriv.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZetaZeroesV1/SolutionImports.lean",
+      "blob": "02677863d5858e0268f6492df0b84a67c21898bd"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZetaZeroesV1/ZerosImports.lean",
+      "blob": "a50deb173364d071af3e5fc8a24f5e27d46f1e01"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/lake-manifest.json",
+      "blob": "e7296570b56d156321f0cd24a30b22e35de24eb8"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/lakefile.toml",
+      "blob": "170b0cfa72c00c43ef9b6b88d3e53b28ffc980ec"
+    },
+    {
+      "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/ieantn/catalogue.json",
+      "blob": "637c7c01335f026d21d09cef0a3e5a0a97e097ff"
+    },
+    {
+      "path": "adapters/ieantn/lake-manifest.json",
+      "blob": "a544a4ee4ee371ef795662c2feef8f8dfd4668dc"
+    },
+    {
+      "path": "adapters/ieantn/lakefile.toml",
+      "blob": "fddb2ea49e4847ade22580f903873c06597d51ab"
+    },
+    {
+      "path": "adapters/ieantn/lean-toolchain",
+      "blob": "b814d987e0c93cb99938be934d9b277778495ba1"
+    },
+    {
+      "path": "adapters/imperial-flt/GRWTSK/NumberTheory/Upstream/ImperialFlt/Core/FLTImports.lean",
+      "blob": "f24ba972969c87a47ad50394d0aff27f4aeb3f4a"
+    },
+    {
+      "path": "adapters/imperial-flt/GRWTSK/NumberTheory/Upstream/ImperialFlt/Core/FLTTestImports.lean",
+      "blob": "26a417595dc86eae394453aedefb3e242803185d"
+    },
+    {
+      "path": "adapters/imperial-flt/catalogue.json",
+      "blob": "95146371cfad08791c49f0306c6ab5b3317c6881"
+    },
+    {
+      "path": "adapters/imperial-flt/lake-manifest.json",
+      "blob": "7bcff1e65afb180937ddbff7fe574c9b3a415c5e"
+    },
+    {
+      "path": "adapters/imperial-flt/lakefile.toml",
+      "blob": "194f5880f73c277bb70acecfc7b0b674f55ef438"
+    },
+    {
+      "path": "adapters/imperial-flt/lean-toolchain",
+      "blob": "a6aff065db2882c535684f8c5bcd4f16e9a23915"
+    },
+    {
+      "path": "adapters/lean-liquid/catalogue.json",
+      "blob": "589073a4dafcab25d1d9b93c01d2f193d56043c1"
+    },
+    {
+      "path": "adapters/lean-liquid/lean-toolchain",
+      "blob": "59e17d0a5927442942534edb8988739bf182a044"
+    },
+    {
+      "path": "adapters/lean-liquid/leanpkg.toml",
+      "blob": "415c8fe2da37537125a5b48d1ed523eac33b598e"
+    },
+    {
+      "path": "adapters/lean-liquid/src/GRWTSK/CategoryTheoryHomologicalAlgebra/Upstream/LeanLiquidImports.lean",
+      "blob": "52578cf79314f24b2097ebc2376dd72f59d9e9e2"
+    },
+    {
+      "path": "adapters/lean-proofs/catalogue.json",
+      "blob": "f7e99d41b0a85b08958486a7f11da45062af9e03"
+    },
+    {
+      "path": "adapters/lean-proofs/d62eab0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcD62eab0/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/d62eab0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcD62eab0/ErdosProblemsImports.lean",
+      "blob": "5d9df054c62cf1b043329811bfea1d23df7687ad"
+    },
+    {
+      "path": "adapters/lean-proofs/d62eab0/lake-manifest.json",
+      "blob": "31f0b57405b89691363f0a55dbb07957682a2826"
+    },
+    {
+      "path": "adapters/lean-proofs/d62eab0/lakefile.toml",
+      "blob": "08ad3ce0040de986ed9c51c732dccb67ab770ee5"
+    },
+    {
+      "path": "adapters/lean-proofs/d62eab0/lean-toolchain",
+      "blob": "22d92c5d60488521318a51559018c6081969c2ec"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/ArxivChallengesImports.lean",
+      "blob": "7f361a0585be8ed305869ff25bbe13d28c413273"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/BorisBukhChallengesImports.lean",
+      "blob": "8c5246317d8fc53a82cfa54358109707afc2fb25"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/ComparatorChallengesImports.lean",
+      "blob": "10290a0b052d212e5511bac2d4c3a03e50b081c6"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/HundredTheoremsChallengesImports.lean",
+      "blob": "18470baecd1993f723c85b8b599be98f5245edff"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/MathOverflowChallengesImports.lean",
+      "blob": "7f18ec18f528f214773869de75b359a101e34819"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/StackExchangeChallengesImports.lean",
+      "blob": "c09df46f9101eb9ec97fff6a9afa6639aac060a1"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatestComparatorChallenges/WikipediaChallengesImports.lean",
+      "blob": "54ca2a15fe4cbd9a74fc104c377081c61e87e8e3"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/lake-manifest.json",
+      "blob": "700a9a195a7d7bbd6d228f6249e37004511b33f8"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/lakefile.toml",
+      "blob": "372f182486932add3623830aa299a11fbe9dd248"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/ComparatorChallenges/lean-toolchain",
+      "blob": "025e59548e48cf71f2744154e2890beefe30a258"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/ArxivImports.lean",
+      "blob": "959311fa255087e163ca67283b3532ccef103a3a"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/BorisBukhImports.lean",
+      "blob": "005fd0ddfa9bdde7c65936b3647c07238dcdaadd"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/ErdosProblemsImports.lean",
+      "blob": "eaa77ebebb9926a7a3603f5e45dfb7a4ffa38f2d"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/HundredTheoremsImports.lean",
+      "blob": "8f91b5847be8a5b44e6ddae5c4e19c98b5209266"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/MathOverflowImports.lean",
+      "blob": "011ecab32ca0158b74fdb113b1bc6e75c912c9cc"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/PrimeNumberTheoremAndImports.lean",
+      "blob": "1e837e17fe0360d11c9db719e0a23946c258b6e1"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/StackExchangeImports.lean",
+      "blob": "4771de851e181839ec900bccde49629f98e7d97a"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/UnitFractionsImports.lean",
+      "blob": "af30c0ecb27789df8c87f4d1c51c7fd78118aecf"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/UtilImports.lean",
+      "blob": "a4fb400dbe04379683f5af393927330e5298ecac"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcLatest/WikipediaImports.lean",
+      "blob": "4b6a701725297200a4c8d0c35d8c48492053bda8"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/lake-manifest.json",
+      "blob": "c8be92ba47f9a5ec0c2cfc80bffef3cdd96e98b2"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/lakefile.toml",
+      "blob": "fc21e2bfdd4a47ac0259af6e38fba3ca8c87db55"
+    },
+    {
+      "path": "adapters/lean-proofs/latest/lean-toolchain",
+      "blob": "025e59548e48cf71f2744154e2890beefe30a258"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4240/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4240/ErdosProblemsImports.lean",
+      "blob": "087ed04a0c52c26c9e27b971ccb803428e66c519"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4240/HundredTheoremsImports.lean",
+      "blob": "8f91b5847be8a5b44e6ddae5c4e19c98b5209266"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4240/MathOverflowImports.lean",
+      "blob": "3d9d7c933b2a96561eb8cffe1e4a43064d384c5b"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/lake-manifest.json",
+      "blob": "32b2faf79eb09ed946cd02e7fd6071f4b286f264"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/lakefile.toml",
+      "blob": "9a9eef1604dfb3c031591eb694cac2ce4e2b3609"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.24.0/lean-toolchain",
+      "blob": "c00a53503cc3cc776c290056ed21ce7e5d80b083"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.28.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4280/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.28.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4280/MathOverflowImports.lean",
+      "blob": "828df6d729cf1ddb3074772700fc9a92aa09af01"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.28.0/lake-manifest.json",
+      "blob": "7dfdf6e0f04f97e48060a122292cd795252a0d70"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.28.0/lakefile.toml",
+      "blob": "2f916cfa414499809c6e1f0f94e7de214368a72d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.28.0/lean-toolchain",
+      "blob": "4c685fa085fa1c66103533e992fc82c014a12142"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4290/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4290/ErdosProblemsImports.lean",
+      "blob": "fe461106097a7f7d473c5d3a60e34bd8efecaef2"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.0/lake-manifest.json",
+      "blob": "53fbe32ad8db4cfc1221936f2c07891dc942f54f"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.0/lakefile.toml",
+      "blob": "73d51995b586dbe611cecd7b8e3566b9ed95173b"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.0/lean-toolchain",
+      "blob": "ccec351f4110b2744298144a96da18af15e74e9b"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/ErdosProblemsImports.lean",
+      "blob": "f7816db151edb0c6bab1270178c184e73a0a1745"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/HundredTheoremsImports.lean",
+      "blob": "8f91b5847be8a5b44e6ddae5c4e19c98b5209266"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/MathOverflowImports.lean",
+      "blob": "011ecab32ca0158b74fdb113b1bc6e75c912c9cc"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/PrimeNumberTheoremAndImports.lean",
+      "blob": "74496cda9de744a47b358bf6b5bec57481e64ed2"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/UnitFractionsImports.lean",
+      "blob": "af30c0ecb27789df8c87f4d1c51c7fd78118aecf"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4291/UtilImports.lean",
+      "blob": "ef119f330c1ff90e4c406ac39a7df3dd267b25ed"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/lake-manifest.json",
+      "blob": "b6b341f92d6ed090c89d97024803e8855c1b03f7"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/lakefile.toml",
+      "blob": "e7c8dea9d2d8fbd2cc9ac694b45520aa36263b8d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.29.1/lean-toolchain",
+      "blob": "33e0c088939ad08c9f2b1befa3118a423b06ad7d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/ErdosProblemsImports.lean",
+      "blob": "f7816db151edb0c6bab1270178c184e73a0a1745"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/HundredTheoremsImports.lean",
+      "blob": "8f91b5847be8a5b44e6ddae5c4e19c98b5209266"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/MathOverflowImports.lean",
+      "blob": "011ecab32ca0158b74fdb113b1bc6e75c912c9cc"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/PrimeNumberTheoremAndImports.lean",
+      "blob": "74496cda9de744a47b358bf6b5bec57481e64ed2"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/UnitFractionsImports.lean",
+      "blob": "af30c0ecb27789df8c87f4d1c51c7fd78118aecf"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4300/UtilImports.lean",
+      "blob": "147684dfeb54aca63a802d3b4a0a39baa3457444"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/lake-manifest.json",
+      "blob": "6337d3432c5a1fa268cb62f18c988cb4dda48857"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/lakefile.toml",
+      "blob": "73ed43e6e33aacc3f2357d238d8b4cac116649e2"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.30.0/lean-toolchain",
+      "blob": "af9e5d339aeb37e4e6ba2603fb873e637678e304"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320ComparatorChallenges/BorisBukhChallengesImports.lean",
+      "blob": "8c5246317d8fc53a82cfa54358109707afc2fb25"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320ComparatorChallenges/ComparatorChallengesImports.lean",
+      "blob": "050f02948c22ee0dca5716aedc9da62afa6db484"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320ComparatorChallenges/HundredTheoremsChallengesImports.lean",
+      "blob": "18470baecd1993f723c85b8b599be98f5245edff"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320ComparatorChallenges/MathOverflowChallengesImports.lean",
+      "blob": "7f18ec18f528f214773869de75b359a101e34819"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320ComparatorChallenges/WikipediaChallengesImports.lean",
+      "blob": "71fe76b1056e1699d3f5916a121af71a49ad211b"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/lake-manifest.json",
+      "blob": "518ffd5163aa2581ba6069c037a73b0ba8fb005a"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/lakefile.toml",
+      "blob": "ccfe2c6611c765f452c031549fbe71673ec514e8"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/ComparatorChallenges/lean-toolchain",
+      "blob": "94b9f495baff80fd9cb44aad8f4762cb3b2066fe"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/AllImports.lean",
+      "blob": "339c2858fc6c235ae8d9d12a71085a45a0c0705d"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/ArxivImports.lean",
+      "blob": "44a3f6167eef8506b4e21235f52bf9ce3927e95f"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/BorisBukhImports.lean",
+      "blob": "005fd0ddfa9bdde7c65936b3647c07238dcdaadd"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/ErdosProblemsImports.lean",
+      "blob": "35fa46047e69cd1c97c0f000e32a3dc3e6a68163"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/HundredTheoremsImports.lean",
+      "blob": "8f91b5847be8a5b44e6ddae5c4e19c98b5209266"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/MathOverflowImports.lean",
+      "blob": "011ecab32ca0158b74fdb113b1bc6e75c912c9cc"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/PrimeNumberTheoremAndImports.lean",
+      "blob": "74496cda9de744a47b358bf6b5bec57481e64ed2"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/UnitFractionsImports.lean",
+      "blob": "af30c0ecb27789df8c87f4d1c51c7fd78118aecf"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/UtilImports.lean",
+      "blob": "b43869e76b2558da90416d897c5cec7edf516b9e"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/GRWTSK/GeneralAndOverarchingTopicsCollections/Upstream/LeanProofs/SrcV4320/WikipediaImports.lean",
+      "blob": "31d4c900151a1b31198bfa80f08a0e1ef767b428"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/lake-manifest.json",
+      "blob": "e1e2ca9ec7b948c2c6c3d6bf9203dc1785d832d4"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/lakefile.toml",
+      "blob": "a078f1dbfab9ad1921a18b95bea978ca80a46b1a"
+    },
+    {
+      "path": "adapters/lean-proofs/v4.32.0/lean-toolchain",
+      "blob": "94b9f495baff80fd9cb44aad8f4762cb3b2066fe"
+    },
+    {
+      "path": "adapters/pfr/GRWTSK/Combinatorics/Upstream/Pfr/Core/PFRImports.lean",
+      "blob": "542c493ec6af13c39548df67fcbd0fe09975419f"
+    },
+    {
+      "path": "adapters/pfr/GRWTSK/Combinatorics/Upstream/Pfr/Core/PFRPalomarImports.lean",
+      "blob": "dababbd4e6b6de17d1be210b5805d18eb7b43fd6"
+    },
+    {
+      "path": "adapters/pfr/catalogue.json",
+      "blob": "2d5b60ca63da98100dbd0ae7c229d0bf40dc2cd6"
+    },
+    {
+      "path": "adapters/pfr/lake-manifest.json",
+      "blob": "4fa1c81fa9066b2585791abd8632d0788f13a89d"
+    },
+    {
+      "path": "adapters/pfr/lakefile.toml",
+      "blob": "c15689ff25b9f4f05469f76b8d42e23475901813"
+    },
+    {
+      "path": "adapters/pfr/lean-toolchain",
+      "blob": "0fc4336929df18cb6edbdcce0498f49d38877271"
+    },
+    {
+      "path": "adapters/pnt-plus/GRWTSK/NumberTheory/Upstream/PntPlus/Core/PrimeNumberTheoremAndImports.lean",
+      "blob": "ed7a5ae398b8472ac645890f55af6bf5cd344815"
+    },
+    {
+      "path": "adapters/pnt-plus/catalogue.json",
+      "blob": "cdfedb7f38ed02d83c639889c66a2e141943bad8"
+    },
+    {
+      "path": "adapters/pnt-plus/lake-manifest.json",
+      "blob": "4d96ee93002ef93a38e00999bccf95a21611085c"
+    },
+    {
+      "path": "adapters/pnt-plus/lakefile.toml",
+      "blob": "bdd1407d5639e04f9a2813ad701f5c5470c4519d"
+    },
+    {
+      "path": "adapters/pnt-plus/lean-toolchain",
+      "blob": "a6aff065db2882c535684f8c5bcd4f16e9a23915"
+    },
+    {
+      "path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/Upstream/SpherePacking/Core/SpherePackingImports.lean",
+      "blob": "e9d1220e59ec3903962d5ea7eb56dc1fbe42939c"
+    },
+    {
+      "path": "adapters/sphere-packing/catalogue.json",
+      "blob": "b18332be007ed0b37ce3b1bd4d58b7db2ab95c29"
+    },
+    {
+      "path": "adapters/sphere-packing/lake-manifest.json",
+      "blob": "e955a04be38d93ea72c0a8f2da3acb39650c9b23"
+    },
+    {
+      "path": "adapters/sphere-packing/lakefile.toml",
+      "blob": "e300678fb8104dcaea7824ea39c6b7f88b164328"
+    },
+    {
+      "path": "adapters/sphere-packing/lean-toolchain",
+      "blob": "9532ebf33701f2ff0a999f12b21fb7a675f24e6e"
+    }
+  ],
+  "source_tree": "b987a2de3c992f2e12320e6ccb35f48889c59b7f"
+}
