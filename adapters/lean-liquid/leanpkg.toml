@@ -1,0 +1,9 @@
+[package]
+name = "grwtsk-lean-liquid-adapter"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.48.0"
+path = "src"
+
+[dependencies]
+"lean-liquid" = {git = "https://github.com/leanprover-community/lean-liquid.git", rev = "ee4795874a99ea5f9d85bd0b364425f07b932377"}
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "5947fb69cc1fdfebaba1e1b1f0a04f26f0f612bf"}

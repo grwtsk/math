@@ -1,0 +1,311 @@
+{
+  "repository": "teorth/pfr",
+  "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+  "role": "IMMUTABLE_SOURCE_INVENTORY_NOT_PROOF_ACCEPTANCE",
+  "files": [
+    {
+      "path": "PFR.lean",
+      "blob": "35db515a664e02779bfc8f27f4f653f8628799a6"
+    },
+    {
+      "path": "PFR/ApproxHomPFR.lean",
+      "blob": "ab451310dc21965c2521979fc20679c37bc91d46"
+    },
+    {
+      "path": "PFR/BoundingMutual.lean",
+      "blob": "f7d60298a98c3719b9fdb070639950b7012c801b"
+    },
+    {
+      "path": "PFR/Endgame.lean",
+      "blob": "537de81e90444a5204aef5373fe764702ce6a3d4"
+    },
+    {
+      "path": "PFR/EntropyPFR.lean",
+      "blob": "a41f20045ce50253a937192f5b472cf3bebb3d59"
+    },
+    {
+      "path": "PFR/Examples.lean",
+      "blob": "2fbfc45474f7a2babe130c7fb0047f0ee0bfb8dd"
+    },
+    {
+      "path": "PFR/Fibring.lean",
+      "blob": "2b6927ae8f46c27ff007a6b2ca3c9413f388a61e"
+    },
+    {
+      "path": "PFR/FirstEstimate.lean",
+      "blob": "f3a3988919a608ea4f5493e166692ae3688a6b0e"
+    },
+    {
+      "path": "PFR/ForMathlib/AffineSpaceDim.lean",
+      "blob": "ada7b327e7b5669ddc0c19a7164835945269c095"
+    },
+    {
+      "path": "PFR/ForMathlib/ConditionalIndependence.lean",
+      "blob": "e0c4d2bda5e2ff5cb65fbade4b3f11e659ea21d9"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Basic.lean",
+      "blob": "984ba8398889b52ff5de8fbee2a8d390e5d088bb"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Group.lean",
+      "blob": "d9581e27311eb0ec8ec0d9d2d81aede02bf25cab"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Kernel/Basic.lean",
+      "blob": "21d6ed27abae8a20782b4fd1906742a3561ee5b1"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Kernel/Group.lean",
+      "blob": "67940d822f6b14a648d8f7df5f567922a74c4c32"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Kernel/MutualInfo.lean",
+      "blob": "81160e4b6c95a5ca68dc5fa9fafe92a58d3a2021"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Kernel/RuzsaDist.lean",
+      "blob": "357d433d82112e5ef61e7b78cf1b6e1ddc97e248"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/Measure.lean",
+      "blob": "390096459951dde910f90e3f3e4e35faedef0683"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/RuzsaDist.lean",
+      "blob": "568b9020568c8958eb45388818a62145ea46aaa7"
+    },
+    {
+      "path": "PFR/ForMathlib/Entropy/RuzsaSetDist.lean",
+      "blob": "a75b4d4020ecf00fd9f0078b8d49afd75062df10"
+    },
+    {
+      "path": "PFR/ForMathlib/FiniteRange/ConditionalProbability.lean",
+      "blob": "2e992d3633f0ef19470f39e1317e1684c53af175"
+    },
+    {
+      "path": "PFR/ForMathlib/FiniteRange/Defs.lean",
+      "blob": "59cf0853e1dad3ae7f047c073448afb4f075046d"
+    },
+    {
+      "path": "PFR/ForMathlib/FiniteRange/IdentDistrib.lean",
+      "blob": "7d1b9bf92c9b17eebcd1d756c2bb3ba6eb81cbe4"
+    },
+    {
+      "path": "PFR/ForMathlib/FourVariables.lean",
+      "blob": "7bd4cbc9c343a0eab55b860ea09e4811cf09b2e4"
+    },
+    {
+      "path": "PFR/ForMathlib/Pair.lean",
+      "blob": "43afd34cb71af530967e24d87f330c09e7cca9ec"
+    },
+    {
+      "path": "PFR/ForMathlib/ThreeVariables.lean",
+      "blob": "3ee6e48991f8a27000155292095a566ccf4781f8"
+    },
+    {
+      "path": "PFR/ForMathlib/Uniform.lean",
+      "blob": "e8ea323d3c4df330b415dde600d56e4cb3a1618f"
+    },
+    {
+      "path": "PFR/HomPFR.lean",
+      "blob": "3c741d9be528525f400275bb03b0cc0b75ac7ebd"
+    },
+    {
+      "path": "PFR/HundredPercent.lean",
+      "blob": "58feda967759a5f070cde66721d01d8c8c471f80"
+    },
+    {
+      "path": "PFR/ImprovedPFR.lean",
+      "blob": "15f82cba327d0007ec13e17f5d3134072a7b3373"
+    },
+    {
+      "path": "PFR/Kullback.lean",
+      "blob": "b87556108de73b5ae5c1d3f38351eedcfdff6451"
+    },
+    {
+      "path": "PFR/Main.lean",
+      "blob": "bc7bc5422ae5ecc97933516e65daa05e13cc22dc"
+    },
+    {
+      "path": "PFR/Mathlib/Algebra/BigOperators/Fin.lean",
+      "blob": "c4668f44b25b9a68a6756d9f51e15c1b6f7a9618"
+    },
+    {
+      "path": "PFR/Mathlib/Algebra/Group/Action/Pointwise/Set/Basic.lean",
+      "blob": "bdf7a8976b9488e2fc22d73902dc2e9b4aa8a746"
+    },
+    {
+      "path": "PFR/Mathlib/Analysis/SpecialFunctions/NegMulLog.lean",
+      "blob": "7fd39394e536d3ae958ff9603e1ea461eb6940a7"
+    },
+    {
+      "path": "PFR/Mathlib/Data/Fin/Basic.lean",
+      "blob": "fff818308720844edec2d0db4a86777e6db1c176"
+    },
+    {
+      "path": "PFR/Mathlib/Data/Finset/Basic.lean",
+      "blob": "1ffb55258832c48f49c2f578c231e98b88213dbe"
+    },
+    {
+      "path": "PFR/Mathlib/Data/Set/Basic.lean",
+      "blob": "a42cb0a1e7e7d7f87d2baa183c8b8902b31d2a09"
+    },
+    {
+      "path": "PFR/Mathlib/Data/Set/Card.lean",
+      "blob": "8f1469b0c6164334cf6be1a91039be438749c3e1"
+    },
+    {
+      "path": "PFR/Mathlib/Data/Set/Insert.lean",
+      "blob": "1aab70aa4bf8206262ffd05a90ed5db2f3284f84"
+    },
+    {
+      "path": "PFR/Mathlib/Data/ZMod/Basic.lean",
+      "blob": "dfb2e95a2a81fe941f720ad5d21c20de5faf1ed6"
+    },
+    {
+      "path": "PFR/Mathlib/LinearAlgebra/Basis/VectorSpace.lean",
+      "blob": "fa7edfbc405aa93052e4e0f3fc68a09d99cacd4f"
+    },
+    {
+      "path": "PFR/Mathlib/LinearAlgebra/Dimension/Finrank.lean",
+      "blob": "ade1906f13fcac6a385f80c52996e4a176e19cfb"
+    },
+    {
+      "path": "PFR/Mathlib/LinearAlgebra/Dimension/FreeAndStrongRankCondition.lean",
+      "blob": "e0ac1a1e4690fbe0896775cb35e4253983c25f47"
+    },
+    {
+      "path": "PFR/Mathlib/LinearAlgebra/Quotient/Basic.lean",
+      "blob": "2d2fc57f19a5d1be68fc1d8ebc426b5b98199874"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Constructions/Pi.lean",
+      "blob": "a328652d0ce05bcd2a358fdca8ca734ac5ecf56e"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Group/Arithmetic.lean",
+      "blob": "afd2dc59bd1a6c67510d971e4f53c5ca3a539e7f"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Integral/Lebesgue/Basic.lean",
+      "blob": "2156922a56a0f2529c6c628127b7729774eaca05"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Integral/Lebesgue/Countable.lean",
+      "blob": "71e09c0cc2104e3c71f8f05e812ac8d0fcad5e8e"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/MeasurableSpace/Basic.lean",
+      "blob": "981f464cb896e6d83d70f0df64ec395320ca478d"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/MeasurableSpace/Constructions.lean",
+      "blob": "9ae7b82914b37fced3d00d88a8b9b46846e1db05"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/Dirac/Def.lean",
+      "blob": "af7620ece2e6d078b3f04209b0e16f9e6f5dd38a"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/MeasureSpace.lean",
+      "blob": "8fc2d56cc8362d7eecde48b9daf2ae059c84f90e"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/MeasureSpaceDef.lean",
+      "blob": "df86bf44002ca82ab523bfaf69a83f7885a12eda"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/ProbabilityMeasure.lean",
+      "blob": "12e23a5e1bf5a81b0879c1c513901c5459602f9b"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/Prod.lean",
+      "blob": "3a2fc9ef55262dd8d6bfb15062460b691a426404"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/Real.lean",
+      "blob": "3f980893404a505c810945a2eef5bfc6bf5e8ac6"
+    },
+    {
+      "path": "PFR/Mathlib/MeasureTheory/Measure/Typeclasses/Probability.lean",
+      "blob": "fda10c256eaea9a9acf6b16e8aa4876954553a60"
+    },
+    {
+      "path": "PFR/Mathlib/Order/Interval/Finset/Defs.lean",
+      "blob": "b6c1f3acbe9ac1f60ed973049639f2d12606b84e"
+    },
+    {
+      "path": "PFR/Mathlib/Order/Interval/Finset/Fin.lean",
+      "blob": "5a461dbda6598ebc2be58e703ccb77164ab10ced"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/ConditionalProbability.lean",
+      "blob": "9ea15325ef276c0e09103efc73d2d2f5b5fe6a2b"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/IdentDistrib.lean",
+      "blob": "3e60e109364227e354c9e3786aa4c1efcc3744fb"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/Independence/Basic.lean",
+      "blob": "d7ec68a0108f56b9cec6c87f6ccd0f71e9992ead"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/Independence/Kernel/IndepFun.lean",
+      "blob": "cbab4e77d4377c39b27dc7e4fd77727045b05c3e"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/Kernel/Composition/Comp.lean",
+      "blob": "b86d9048f4abfc41989e0d552f32a283d3fba974"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/Kernel/Disintegration.lean",
+      "blob": "4f2137ff4e29351ad059e0f6b841b6738c15937c"
+    },
+    {
+      "path": "PFR/Mathlib/Probability/UniformOn.lean",
+      "blob": "6d64c50a6ffdb49934a5097c3520f7b46fac7ea7"
+    },
+    {
+      "path": "PFR/MoreRuzsaDist.lean",
+      "blob": "1fac41fe50441de3c2288875d0a945b7be3e4032"
+    },
+    {
+      "path": "PFR/MultiTauFunctional.lean",
+      "blob": "5e913053f4cb597596167d4b9c42be03123a8d46"
+    },
+    {
+      "path": "PFR/RhoFunctional.lean",
+      "blob": "af3f89faaf4f12edd2ec9796b93ae77474a99c70"
+    },
+    {
+      "path": "PFR/SecondEstimate.lean",
+      "blob": "41535407a41cac9ec5208905cf47c9bbc3484f04"
+    },
+    {
+      "path": "PFR/Tactic/RPowSimp.lean",
+      "blob": "2e839e7e10e130463b9fd25071e1c3b317d17fef"
+    },
+    {
+      "path": "PFR/TauFunctional.lean",
+      "blob": "9addb08d42807e80948c97b41dbc18f3814abcf6"
+    },
+    {
+      "path": "PFR/TorsionEndgame.lean",
+      "blob": "482f615ad372ecaf44371ea363237dde02fcb7e6"
+    },
+    {
+      "path": "PFR/WeakPFR.lean",
+      "blob": "096e75f6d90b8bc7da56ca54c0288a96fade0812"
+    },
+    {
+      "path": "PFRPalomar/Challenge.lean",
+      "blob": "e0e430b817b5af31fa85e9611316621223cb2df4"
+    },
+    {
+      "path": "PFRPalomar/Solution.lean",
+      "blob": "4d49574ba10382abfe9fdd319b70a857e8842e14"
+    }
+  ]
+}

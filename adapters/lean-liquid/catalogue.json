@@ -1,0 +1,36 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "repository": "https://github.com/leanprover-community/lean-liquid",
+  "commit": "ee4795874a99ea5f9d85bd0b364425f07b932377",
+  "tree": "b0b570a33c45d5e980149f722fac344e94ef599c",
+  "intended_consumer": "Condensed/liquid mathematics reference",
+  "missing_bridge": "Lean3 project: use as a port/reference source, not a direct Lean4 Lake dependency.",
+  "source_lean_files": 412,
+  "classification": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE",
+  "projects": [
+    {
+      "project_subdirectory": "",
+      "format": "LEAN3_LEANPKG",
+      "toolchain": "leanprover-community/lean:3.48.0",
+      "config_blob": "efb87395a1a3573619cd0046a9412b33eef78147",
+      "surface_module": "GRWTSK.CategoryTheoryHomologicalAlgebra.Upstream.LeanLiquidImports",
+      "surface_path": "adapters/lean-liquid/src/GRWTSK/CategoryTheoryHomologicalAlgebra/Upstream/LeanLiquidImports.lean",
+      "imports": [
+        {
+          "module": "liquid",
+          "source_path": "src/liquid.lean",
+          "blob": "6b48df916152a34adcaf7bb255f8fdf9ac8bdbe7"
+        }
+      ],
+      "classification": "HISTORICAL_LEAN3_IMPORT_SURFACE_NOT_A_LEAN4_PORT",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    }
+  ],
+  "licensing": "Upstream license/notice files retained where present; original bylines remain in exact upstream source. Absence of a repository-wide license file is recorded, not replaced by an invented license.",
+  "license_paths": []
+}

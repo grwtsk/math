@@ -1,0 +1,1655 @@
+{
+  "repository": "leanprover-community/lean-liquid",
+  "commit": "ee4795874a99ea5f9d85bd0b364425f07b932377",
+  "role": "IMMUTABLE_SOURCE_INVENTORY_NOT_PROOF_ACCEPTANCE",
+  "files": [
+    {
+      "path": "backup/delta_functor.lean",
+      "blob": "f99951fb2a149de98c5a9029a1d81fc1c4ccff10"
+    },
+    {
+      "path": "backup/extr.lean",
+      "blob": "2f102b06b103701930e2a376b261075b22e807c3"
+    },
+    {
+      "path": "backup/extr_backup.lean",
+      "blob": "9c87da21e6920a54943c95b7e159a4ef2af63957"
+    },
+    {
+      "path": "backup/multilinear.lean",
+      "blob": "0ba9707d3621be44cf8e3ba4c65e9543e94294ba"
+    },
+    {
+      "path": "backup/prepresentation.lean",
+      "blob": "e7c6c38f76f96d8dd16a4b7005bd3d85da951e52"
+    },
+    {
+      "path": "backup/sheafification_mono.lean",
+      "blob": "ab376efce7a02edce861388fd3858f8dca075f8e"
+    },
+    {
+      "path": "scripts/lean_version.lean",
+      "blob": "bb5b6a9e037f9dc9a7ad49372729b84818ca6049"
+    },
+    {
+      "path": "scripts/lint_project.lean",
+      "blob": "6503d9b704c0aaf5003c86445d6a5fc61a2dc8a1"
+    },
+    {
+      "path": "scripts/print_lte_axioms.lean",
+      "blob": "4544f8aa8575eddebd2e6d71bb21da2d2cb64990"
+    },
+    {
+      "path": "scripts/print_thm95_axioms.lean",
+      "blob": "4a658cf6d0f30df94f3ab1f98a6ef2649953dec3"
+    },
+    {
+      "path": "src/Lbar/Lbar_le.lean",
+      "blob": "c7328dcfea30643710070d474c253fb7c344deea"
+    },
+    {
+      "path": "src/Lbar/basic.lean",
+      "blob": "9c835d8adb7ac392fdb1b8248559bf2c037261b8"
+    },
+    {
+      "path": "src/Lbar/bounded.lean",
+      "blob": "a24feb730c1ea606c6f080c4fb76f525095e8ced"
+    },
+    {
+      "path": "src/Lbar/ext.lean",
+      "blob": "b4832abb20d5563c7da8325cf074b3423233917d"
+    },
+    {
+      "path": "src/Lbar/ext_aux1.lean",
+      "blob": "28e68ac24ec439d3746193791fa55bd9cc8756db"
+    },
+    {
+      "path": "src/Lbar/ext_aux2.lean",
+      "blob": "ba86c7b3b3d9c6f96187a54eb447b92e658025a6"
+    },
+    {
+      "path": "src/Lbar/ext_aux3.lean",
+      "blob": "7a6c1283c474fd2816fc40f33f40bd14df046a73"
+    },
+    {
+      "path": "src/Lbar/ext_aux4.lean",
+      "blob": "37c6d1e92729dfec9b9a26e513ce1c5a30d4da8d"
+    },
+    {
+      "path": "src/Lbar/ext_preamble.lean",
+      "blob": "135fe83a2e1ecbf06c624ff49901ecb072e6d45e"
+    },
+    {
+      "path": "src/Lbar/finsupp_instance.lean",
+      "blob": "0554ea3e99c45d16ae687c50bb19035eb3a739b4"
+    },
+    {
+      "path": "src/Lbar/functor.lean",
+      "blob": "e1bef45d17a6d5e38ab162b4af6c2fe1a84409cd"
+    },
+    {
+      "path": "src/Lbar/iota.lean",
+      "blob": "f66abce29016e924662b7253daee439aba0cc4a9"
+    },
+    {
+      "path": "src/Lbar/kernel_truncate.lean",
+      "blob": "9bf111b2f5b79820a36c4627d3e787853f6a570b"
+    },
+    {
+      "path": "src/Lbar/nnnorm_add_class.lean",
+      "blob": "95ff2ee4c2de74aa6f86dcd6f0590396bf91efa4"
+    },
+    {
+      "path": "src/Lbar/pseudo_normed_group.lean",
+      "blob": "15d3d9458071760d457356115263acee86c8dd3c"
+    },
+    {
+      "path": "src/Lbar/ses.lean",
+      "blob": "e6f93c5a5099e2f8404ba0bcc2d69c9950711224"
+    },
+    {
+      "path": "src/Lbar/squares.lean",
+      "blob": "114381ec6f1795d33a18d03a24426b111497fb53"
+    },
+    {
+      "path": "src/Lbar/sum_nnnorm.lean",
+      "blob": "cfdb7678e4dbc15c29edc6bf882b72420184d002"
+    },
+    {
+      "path": "src/Lbar/torsion_free_condensed.lean",
+      "blob": "549af84223a2ba02fafd5d53581e6b05acf7a11b"
+    },
+    {
+      "path": "src/Lbar/torsion_free_profinite.lean",
+      "blob": "527f06f6c17192f443b9435e2a56e98296a54854"
+    },
+    {
+      "path": "src/Radon/LC_comparison.lean",
+      "blob": "eb3807bc8f9d1faa2d4c90a78ce7774f4644eaac"
+    },
+    {
+      "path": "src/Radon/LC_limit.lean",
+      "blob": "21bec886fd64c03c639f790629ed719f6cd3dd3e"
+    },
+    {
+      "path": "src/Radon/defs.lean",
+      "blob": "7903d6b0f077f9b1229367c8b1da33c1c34196db"
+    },
+    {
+      "path": "src/Radon/main.lean",
+      "blob": "333dee86cc23e0bccab181eccdd28580ce8972e1"
+    },
+    {
+      "path": "src/Radon/png.lean",
+      "blob": "ac7766480fce3c1073f5be3f48ab543abbcaf459"
+    },
+    {
+      "path": "src/Radon/png_reflects_limits.lean",
+      "blob": "ab7c694a77824ee33b9f80457523ec6b6ac846ff"
+    },
+    {
+      "path": "src/Radon/setup.lean",
+      "blob": "8c11fb2c883c146dfcb6682be72f0c5c3699eb23"
+    },
+    {
+      "path": "src/banach.lean",
+      "blob": "fb050adef669a88a162c2309d78d8b53c176c848"
+    },
+    {
+      "path": "src/breen_deligne/apply_Pow.lean",
+      "blob": "e29b06ffcf4b35d18dad5375ce6fe3b6ac871738"
+    },
+    {
+      "path": "src/breen_deligne/category.lean",
+      "blob": "db545818d64e778f357cb5983d51d68a5d11b6c4"
+    },
+    {
+      "path": "src/breen_deligne/constants.lean",
+      "blob": "653f75e1087a41796f144a015e096788a67b2ec3"
+    },
+    {
+      "path": "src/breen_deligne/eg.lean",
+      "blob": "12221ae0af36581e2e1b196b23bb5242220c6fb5"
+    },
+    {
+      "path": "src/breen_deligne/eval.lean",
+      "blob": "934346af3e876e9b43c896f3a8cf4f33978d786c"
+    },
+    {
+      "path": "src/breen_deligne/eval1half.lean",
+      "blob": "07711985df9908911c7a3b48c57f3eb9e002982e"
+    },
+    {
+      "path": "src/breen_deligne/eval2.lean",
+      "blob": "fa51b2bf73709d65ba066b95851eeeafc55aa77b"
+    },
+    {
+      "path": "src/breen_deligne/eval_Pow_functor_nat_trans_compatibility.lean",
+      "blob": "81945c0a2ae87aed8de664fac7afe689795c9e40"
+    },
+    {
+      "path": "src/breen_deligne/functorial_map.lean",
+      "blob": "239f42303c320944ac38932aac6c511d8a005372"
+    },
+    {
+      "path": "src/breen_deligne/homotopy.lean",
+      "blob": "f5dc4f649f5e7fd1c3186d8ddf0c23c563277153"
+    },
+    {
+      "path": "src/breen_deligne/main.lean",
+      "blob": "b251bd2e5e6c5c7a3e8a0bbfed112bdbb0f702e2"
+    },
+    {
+      "path": "src/breen_deligne/suitable.lean",
+      "blob": "9da83fd11e1209a0c75c7329ef5581b652e4a626"
+    },
+    {
+      "path": "src/breen_deligne/universal_map.lean",
+      "blob": "25506025e355badae5212afd9defc2b021a77332"
+    },
+    {
+      "path": "src/challenge.lean",
+      "blob": "92a539fd795b7cc5d29dd97a66fd577d12ce7682"
+    },
+    {
+      "path": "src/challenge_notations.lean",
+      "blob": "a249683f01dc2478f2c6a4d7319d719f0891328f"
+    },
+    {
+      "path": "src/challenge_prerequisites.lean",
+      "blob": "767f2ffb62cce76a509f04af01279c48e49b29ff"
+    },
+    {
+      "path": "src/combinatorial_lemma/default.lean",
+      "blob": "f46659ffdc43209f27122d78645e0eb073130b43"
+    },
+    {
+      "path": "src/combinatorial_lemma/finite.lean",
+      "blob": "8a648593e9b5a54aab0d7375e6f8cd6c360e5552"
+    },
+    {
+      "path": "src/combinatorial_lemma/lem97.lean",
+      "blob": "2c65d9fd72ac3c5d3ad01d9a3178864df740b7fd"
+    },
+    {
+      "path": "src/combinatorial_lemma/partition.lean",
+      "blob": "5a25cbc4b1e8582717bf1a13b8fe7ac60c9c3aab"
+    },
+    {
+      "path": "src/combinatorial_lemma/profinite.lean",
+      "blob": "df59f49b18d46086c16c5a595cb48ce10bec6510"
+    },
+    {
+      "path": "src/combinatorial_lemma/profinite_setup.lean",
+      "blob": "cb883f42f205569a701248e71ccf1024a081c0ca"
+    },
+    {
+      "path": "src/condensed/Qprime_isoms.lean",
+      "blob": "c5fc9ad4fd1d8243449e7c277fa86e8ead71ee10"
+    },
+    {
+      "path": "src/condensed/Qprime_isoms2.lean",
+      "blob": "ecf4fa97e8ce04b8617b5e9e26427df71f056af6"
+    },
+    {
+      "path": "src/condensed/ab.lean",
+      "blob": "244f316576929bfeaa736754515c56be2409768b"
+    },
+    {
+      "path": "src/condensed/ab4.lean",
+      "blob": "908f654b23d4e4a2415c4ac6426d02dc5bf03b20"
+    },
+    {
+      "path": "src/condensed/ab5.lean",
+      "blob": "b87ecc240c90590d6b7681dacabcd8d39e6f087c"
+    },
+    {
+      "path": "src/condensed/acyclic.lean",
+      "blob": "155a46f2172f991c008d988bd3f2544c242bffc7"
+    },
+    {
+      "path": "src/condensed/adjunctions.lean",
+      "blob": "f93f12483120cf13b1d1903162edf2b548ba79fa"
+    },
+    {
+      "path": "src/condensed/adjunctions2.lean",
+      "blob": "b1f2bef001df0681995063f1fae7c2f14860f641"
+    },
+    {
+      "path": "src/condensed/adjunctions_module.lean",
+      "blob": "be058de760c5a41dc866ca5e2d22007560ffba0a"
+    },
+    {
+      "path": "src/condensed/basic.lean",
+      "blob": "028f11c69259ae916f037b35fd6126625c634605"
+    },
+    {
+      "path": "src/condensed/bd_lemma.lean",
+      "blob": "161db6ea4b0667d6304b95ffb90316ef1007b4c3"
+    },
+    {
+      "path": "src/condensed/bd_ses.lean",
+      "blob": "829b9895b5ce1eb77ab4ba6b66d7ce1859c49f75"
+    },
+    {
+      "path": "src/condensed/bd_ses_aux.lean",
+      "blob": "683e740944b60f7edcaa7ed3d6a72ec749e29862"
+    },
+    {
+      "path": "src/condensed/condensify.lean",
+      "blob": "29c501598640364a4301de9e5982e21cc6c71c71"
+    },
+    {
+      "path": "src/condensed/coproducts.lean",
+      "blob": "b0815af7213cb4af9ea640dc55ea9c6e7aebc3ed"
+    },
+    {
+      "path": "src/condensed/evaluation_homology.lean",
+      "blob": "dfeac8b8f5be384d3d1f4fbf576400b6d56a9864"
+    },
+    {
+      "path": "src/condensed/exact.lean",
+      "blob": "8f647ba8fc0ae73ea680438807a657c70913fd52"
+    },
+    {
+      "path": "src/condensed/extr/basic.lean",
+      "blob": "a3800473a361a4e294eae821077d5c423f534fb0"
+    },
+    {
+      "path": "src/condensed/extr/equivalence.lean",
+      "blob": "52ff605ab638e8c1c125af41491c2a752145725b"
+    },
+    {
+      "path": "src/condensed/extr/lift_comphaus.lean",
+      "blob": "9607ffe44e3d21c0576a2f031f0ff46e99ab6d20"
+    },
+    {
+      "path": "src/condensed/filtered_colimits.lean",
+      "blob": "757aacdd7ca2d43d994be38371406ace37786695"
+    },
+    {
+      "path": "src/condensed/filtered_colimits_commute_with_finite_limits.lean",
+      "blob": "b675fbfb29227877e697699bf715069e0c5db6cf"
+    },
+    {
+      "path": "src/condensed/is_iso_iff_extrdisc.lean",
+      "blob": "23113b04fb6378675c305102742959d43efe75d7"
+    },
+    {
+      "path": "src/condensed/is_proetale_sheaf.lean",
+      "blob": "122f3466d18810a1f534784d8ab589d38e7cafa2"
+    },
+    {
+      "path": "src/condensed/kernel_comparison.lean",
+      "blob": "df1518a85fb18220026cae4c0abfa2385df3e7b1"
+    },
+    {
+      "path": "src/condensed/proetale_site.lean",
+      "blob": "cd6fd10d10d359fd37185a3fdbbbb11b5e143c1a"
+    },
+    {
+      "path": "src/condensed/projective_resolution.lean",
+      "blob": "a23bdb58b5c9c76a3bccca80a154adda9f89e950"
+    },
+    {
+      "path": "src/condensed/projective_resolution_module.lean",
+      "blob": "c478a765e219ff5d5ba4d6530eafc0260f3865cb"
+    },
+    {
+      "path": "src/condensed/rescale.lean",
+      "blob": "e1b218764a94353e40bfcf66515ae7b180d3d6e2"
+    },
+    {
+      "path": "src/condensed/sheafification_homology.lean",
+      "blob": "508534f29c4b32fee32548202590e07fdfdaaf95"
+    },
+    {
+      "path": "src/condensed/sheafification_mono.lean",
+      "blob": "7f386b804f999951a6cba5f4c5e2058af351cf78"
+    },
+    {
+      "path": "src/condensed/short_exact.lean",
+      "blob": "4024d05e376ca656cb992711ddac458346d86ffa"
+    },
+    {
+      "path": "src/condensed/tensor.lean",
+      "blob": "cadf65ba6998d088995b66d5f68383386856de73"
+    },
+    {
+      "path": "src/condensed/tensor_short_exact.lean",
+      "blob": "52c462c4fdb5a66773baeb1fa046e5503b73cfd9"
+    },
+    {
+      "path": "src/condensed/top_comparison.lean",
+      "blob": "9a210a24fca34b46911ca15d894362bb8d224c4a"
+    },
+    {
+      "path": "src/examples/Ext.lean",
+      "blob": "db7422e877eba6ae8891f6ab1b93dcfe620c8ea4"
+    },
+    {
+      "path": "src/examples/cond.lean",
+      "blob": "ec3233e6ebb38011e495868cb0dcef758cb40da2"
+    },
+    {
+      "path": "src/examples/pBanach.lean",
+      "blob": "db7194112abd29dea7307c23c476484192b1862e"
+    },
+    {
+      "path": "src/examples/radon_measures.lean",
+      "blob": "26730505245177df7415336cb2267bb2740d52fc"
+    },
+    {
+      "path": "src/examples/real.lean",
+      "blob": "516fd44f887496ceb8c441763ab9201629a0ecd5"
+    },
+    {
+      "path": "src/facts/default.lean",
+      "blob": "9dff2337c085a3e3ca23cf64aa37695c9ff238a7"
+    },
+    {
+      "path": "src/facts/int.lean",
+      "blob": "4126052b6ad6d1cefe221182ad03b241eef12f22"
+    },
+    {
+      "path": "src/facts/nnreal.lean",
+      "blob": "5a2919b53524a3183b3856357c28476928b041d9"
+    },
+    {
+      "path": "src/facts/normed_group.lean",
+      "blob": "3e8ba3433f4ccbbebe1dc9ba08d1a9584531fb2e"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup.lean",
+      "blob": "d68f41e124b1c68d3fab987617059c2cf4a72334"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/ab4.lean",
+      "blob": "8a4cfc811a574f2511d697347620440d19361f76"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/direct_sum_colimit.lean",
+      "blob": "4339147c1493fd6c1d60f353e2bdec7bd15cb91f"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/epi.lean",
+      "blob": "eea5308bf5774112cf7f139c04fa45de5a187a44"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/exact.lean",
+      "blob": "95e0ae9363c9cabbbe24bb9fba2ed9a91c411a65"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/explicit_limits.lean",
+      "blob": "1694218b3eca26340544242dcee523dd9f57a158"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/explicit_products.lean",
+      "blob": "22eadc0f3b8755759fbdba2e5a2341bbf608bf38"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/kernels.lean",
+      "blob": "92486adc16fc3a99a9d9a8833d1879af323f489d"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/pt.lean",
+      "blob": "28281bbafafceb6089d03939b1d97764a33d4dd1"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/tensor.lean",
+      "blob": "fbda4a0f569187804e1b82e56b50761d85045503"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup/tensor_short_exact.lean",
+      "blob": "6ee1e8597bb38b963c88a0ca1f3e8636bede2a5e"
+    },
+    {
+      "path": "src/for_mathlib/AddCommGroup_instances.lean",
+      "blob": "007d6ad3e6a5e46dfeb45c7f454a3fbe9995b918"
+    },
+    {
+      "path": "src/for_mathlib/Cech/adjunction.lean",
+      "blob": "e814866e150fa8ecaf71a4ea5d044690fcf36c76"
+    },
+    {
+      "path": "src/for_mathlib/Cech/homotopy.lean",
+      "blob": "41e24ae9bf56711921db00ab54ec113da9db7951"
+    },
+    {
+      "path": "src/for_mathlib/Cech/split.lean",
+      "blob": "449cfe8ba3d6ca3bdf8bfeb9079575fe02351c0f"
+    },
+    {
+      "path": "src/for_mathlib/CompHaus.lean",
+      "blob": "e1209227fee860408eddb66f7c75887df12421bc"
+    },
+    {
+      "path": "src/for_mathlib/Ext_quasi_iso.lean",
+      "blob": "eb292b8f6528008042a26aa8ab65d8bebf20fe88"
+    },
+    {
+      "path": "src/for_mathlib/Fintype.lean",
+      "blob": "f9ab1496be3ed1e14896b9c01e8f39ff7db7b02d"
+    },
+    {
+      "path": "src/for_mathlib/FreeAb.lean",
+      "blob": "ed14242856171e4cd6bb4daf15260c408271479d"
+    },
+    {
+      "path": "src/for_mathlib/Gordan.lean",
+      "blob": "f366db05685967cfe53e6562bd20d45c2ca85d65"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/arrow_limit.lean",
+      "blob": "34853bcb678e17b37f6c0e6e744a73a1e61e1630"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/clopen_limit.lean",
+      "blob": "4f26120e40cbadc2a4545560c19a447614770c06"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/compat_discrete_quotient.lean",
+      "blob": "34be262d33a7b9775d95720160d55986e6c684a5"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/disjoint_union.lean",
+      "blob": "3f77c14fbd5cce8e01416fc675e5a80661224e11"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/extend.lean",
+      "blob": "4297d81fab286a5066246e58b0c98ce56cf3c5ee"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/product.lean",
+      "blob": "80cbd841c1f1907290448eee4fc7e5b0c75f1205"
+    },
+    {
+      "path": "src/for_mathlib/Profinite/quotient_map.lean",
+      "blob": "48f44c84f286bcbae9b5c7b4544a75606ca7154e"
+    },
+    {
+      "path": "src/for_mathlib/SemiNormedGroup.lean",
+      "blob": "99cf5e5ae9368830292ed779c3dc8561a54950ae"
+    },
+    {
+      "path": "src/for_mathlib/SemiNormedGroup_ulift.lean",
+      "blob": "c3fb3d2cdfdddfc9abca008b2157dbde4cf8c3cc"
+    },
+    {
+      "path": "src/for_mathlib/SheafOfTypes_sheafification.lean",
+      "blob": "ae0ce50d675ef84bebfb53b2b312582622f379dd"
+    },
+    {
+      "path": "src/for_mathlib/ab4.lean",
+      "blob": "11b7d09ac5cbc80c2683f3a32c486ec11e5031e3"
+    },
+    {
+      "path": "src/for_mathlib/ab5.lean",
+      "blob": "f210c859acbd54215360460bacfe7f3ab8e1a577"
+    },
+    {
+      "path": "src/for_mathlib/ab52.lean",
+      "blob": "62ae057bee32e1205a0e6626b4bc3e0ae5dfde3c"
+    },
+    {
+      "path": "src/for_mathlib/abelian_category.lean",
+      "blob": "2badad7aa95d5fc532b2e00bbe8acaeeb48c3e72"
+    },
+    {
+      "path": "src/for_mathlib/abelian_group_object.lean",
+      "blob": "175e7fe8de509995b3666c7c7caa3d6283c98d3d"
+    },
+    {
+      "path": "src/for_mathlib/abelian_sheaves/exact.lean",
+      "blob": "0c618002b59961d2637b9c86ae1f3fbe21ef9090"
+    },
+    {
+      "path": "src/for_mathlib/abelian_sheaves/functor_category.lean",
+      "blob": "cb62a76c119397f0a9136059191a7eba69b085b9"
+    },
+    {
+      "path": "src/for_mathlib/abelian_sheaves/main.lean",
+      "blob": "fa49b1da0bfd288210dcc35b4b830a69944f9ccb"
+    },
+    {
+      "path": "src/for_mathlib/acyclic.lean",
+      "blob": "a3fe4f0fb9fb57e8981ca25d631db504d47d9629"
+    },
+    {
+      "path": "src/for_mathlib/additive_functor.lean",
+      "blob": "27b3c4d75ec66625a3753e2448c481637ba60a4a"
+    },
+    {
+      "path": "src/for_mathlib/arrow/split.lean",
+      "blob": "caaf2d491f11a72923ffc5dfa0e396cdf8f51eca"
+    },
+    {
+      "path": "src/for_mathlib/arrow_preadditive.lean",
+      "blob": "4107ad77184a5b254c3c23620325ecd7523c701f"
+    },
+    {
+      "path": "src/for_mathlib/bicartesian.lean",
+      "blob": "fcd4c489da81ff48f3974c7315fe986bac0a3d26"
+    },
+    {
+      "path": "src/for_mathlib/bicartesian2.lean",
+      "blob": "fb5648fd7539c3043109bbdd29d0444174956904"
+    },
+    {
+      "path": "src/for_mathlib/bicartesian3.lean",
+      "blob": "552b2c1d6d117cf54c734e765789cbbb26797415"
+    },
+    {
+      "path": "src/for_mathlib/bicartesian4.lean",
+      "blob": "2c930abf058ab0026b04e91914d13a40a3ee771c"
+    },
+    {
+      "path": "src/for_mathlib/cech.lean",
+      "blob": "834acd2a587fb801c7964687e78360e9ea899ff0"
+    },
+    {
+      "path": "src/for_mathlib/chain_complex_cons.lean",
+      "blob": "15fb69ba9a1e4bb09ffe128e2f38d25a93b6ccc3"
+    },
+    {
+      "path": "src/for_mathlib/chain_complex_exact.lean",
+      "blob": "8d3f150a1dbfd48b59ded8560f83f32ee0fafa97"
+    },
+    {
+      "path": "src/for_mathlib/colim_preserves_colimits.lean",
+      "blob": "92124827f5f61544a9f6bfc83e518e3e958f640c"
+    },
+    {
+      "path": "src/for_mathlib/commsq.lean",
+      "blob": "88af5b1de0355ff346b8d426d563cadc53088cc1"
+    },
+    {
+      "path": "src/for_mathlib/complex_extend.lean",
+      "blob": "ff0ed49ebc65da1608dc84adf50939fd8eb97b6f"
+    },
+    {
+      "path": "src/for_mathlib/composable_morphisms.lean",
+      "blob": "211e70459ea1f99703bb41a31a38f8a5761eb069"
+    },
+    {
+      "path": "src/for_mathlib/concrete_equalizer.lean",
+      "blob": "37b8ac23201b7b1798531bc0ba8830cc96d09f67"
+    },
+    {
+      "path": "src/for_mathlib/coprod_op.lean",
+      "blob": "d5ffe0cd8befd0d49f2038e1c641b12cf2543ef9"
+    },
+    {
+      "path": "src/for_mathlib/derived/Ext_lemmas.lean",
+      "blob": "e09fb37262d87c715952d9e515a004b1ae5800c0"
+    },
+    {
+      "path": "src/for_mathlib/derived/K_projective.lean",
+      "blob": "4124be2a1cbd6c1743435e466e36f9b926ee2835"
+    },
+    {
+      "path": "src/for_mathlib/derived/ProjectiveResolution.lean",
+      "blob": "d0914d8cef7c2ef09addb217c6a395f9f7ed2db6"
+    },
+    {
+      "path": "src/for_mathlib/derived/bounded_homotopy_category.lean",
+      "blob": "9dd7da20aa6101fadd8a4aaa7484f4110f0dd0a9"
+    },
+    {
+      "path": "src/for_mathlib/derived/defs.lean",
+      "blob": "878843ccf64f72fc86af205e0b2b9b5cd9ef0059"
+    },
+    {
+      "path": "src/for_mathlib/derived/derived_cat.lean",
+      "blob": "1db5de9f12efdf03ed012ecc662eed4cd7b4b1ea"
+    },
+    {
+      "path": "src/for_mathlib/derived/example.lean",
+      "blob": "d71f217db2e40003744ee1adfb158af94bf10dc1"
+    },
+    {
+      "path": "src/for_mathlib/derived/ext_coproducts.lean",
+      "blob": "dfe063a2721fad82ab39d89e62e73443b0a6f7c8"
+    },
+    {
+      "path": "src/for_mathlib/derived/homological.lean",
+      "blob": "d4939cc400e8732e632b0e0d816917a77e516f88"
+    },
+    {
+      "path": "src/for_mathlib/derived/lemmas.lean",
+      "blob": "57e7bc8f970cbe3c1f60475cf110fe9cf4ca0c05"
+    },
+    {
+      "path": "src/for_mathlib/derived/les.lean",
+      "blob": "707f042e4d0568db3b41c1be7a71afe0dfa5bf4a"
+    },
+    {
+      "path": "src/for_mathlib/derived/les2.lean",
+      "blob": "52beb74cb8e4dc877bc80483e850c71490e17c5d"
+    },
+    {
+      "path": "src/for_mathlib/derived/les3.lean",
+      "blob": "4882039d16f218d7302e58bcb0fbc1e8db95c9c9"
+    },
+    {
+      "path": "src/for_mathlib/derived/les_facts.lean",
+      "blob": "426aeb4badb4b112b7d8e013a770c0e85e0c1fb5"
+    },
+    {
+      "path": "src/for_mathlib/derived_functor.lean",
+      "blob": "c2a999a75db9e299352a96fe76679fcf580c43bf"
+    },
+    {
+      "path": "src/for_mathlib/derived_functor_zero.lean",
+      "blob": "028bbf24b8dc0e882f5616b4ebd114f9a81084eb"
+    },
+    {
+      "path": "src/for_mathlib/embed_preserves_colimits.lean",
+      "blob": "44dd4c5734998776a19f3af88e6462da7c68130a"
+    },
+    {
+      "path": "src/for_mathlib/endomorphisms/Ext.lean",
+      "blob": "94e02b2fb04ba0416d6872fe60d97432cd263e47"
+    },
+    {
+      "path": "src/for_mathlib/endomorphisms/ab4.lean",
+      "blob": "83c002104431db0994b337a3dc61303a4ed93bc4"
+    },
+    {
+      "path": "src/for_mathlib/endomorphisms/basic.lean",
+      "blob": "4869a5943d6059a18e1a60c1c7b39a31396b0f35"
+    },
+    {
+      "path": "src/for_mathlib/endomorphisms/functor.lean",
+      "blob": "42b460cbf9cf53c7ebcc68a3aac0a26d597e65b2"
+    },
+    {
+      "path": "src/for_mathlib/endomorphisms/homology.lean",
+      "blob": "aef8fd694e82698159017da6f8e021b11b723cf2"
+    },
+    {
+      "path": "src/for_mathlib/ennreal.lean",
+      "blob": "93179d840d728af164b3909f295f9896bbdccf7c"
+    },
+    {
+      "path": "src/for_mathlib/equalizers.lean",
+      "blob": "46f4d13ce699859bac2d68517dd5f38fce786777"
+    },
+    {
+      "path": "src/for_mathlib/equivalence_additive.lean",
+      "blob": "226fa014eeaa91832501b2c0dff7b2d3757a6a4b"
+    },
+    {
+      "path": "src/for_mathlib/exact_filtered_colimits.lean",
+      "blob": "cebd9f039d747625395886d6b94d3502b701305e"
+    },
+    {
+      "path": "src/for_mathlib/exact_functor.lean",
+      "blob": "a6323f31c8fedcc4814fcb04ae2cc648562b1f21"
+    },
+    {
+      "path": "src/for_mathlib/exact_lift_desc.lean",
+      "blob": "4a32b4e257700f1c266b7ec945be42a166bd8e1e"
+    },
+    {
+      "path": "src/for_mathlib/exact_seq.lean",
+      "blob": "74ed59741b064db7becc364b57746185a24ad7eb"
+    },
+    {
+      "path": "src/for_mathlib/exact_seq2.lean",
+      "blob": "ca8cf921a3c56f04f9e13d4d130eb9e89371797a"
+    },
+    {
+      "path": "src/for_mathlib/exact_seq3.lean",
+      "blob": "2e1a5360d943b0fb9b852874c65036f8d5eefd56"
+    },
+    {
+      "path": "src/for_mathlib/exact_seq4.lean",
+      "blob": "00200bcd7f86d02065643fdfa9828980b24e7ebb"
+    },
+    {
+      "path": "src/for_mathlib/ext.lean",
+      "blob": "62e07960bae8bf7b16e277fa0d8fdebd9b49b2e5"
+    },
+    {
+      "path": "src/for_mathlib/fin_functor.lean",
+      "blob": "3d8601692dcf835c7831c08fd0aee803f7019d51"
+    },
+    {
+      "path": "src/for_mathlib/fintype_induction.lean",
+      "blob": "89783a8b5e2c267749ec1704117eb7c95d54e0d1"
+    },
+    {
+      "path": "src/for_mathlib/free_abelian_exact.lean",
+      "blob": "c773d3dcfe9a6086edbe8d1f5b1c0ad54e0251de"
+    },
+    {
+      "path": "src/for_mathlib/free_abelian_group.lean",
+      "blob": "917112279d0189a2f3b83ba3f2510553ace7047f"
+    },
+    {
+      "path": "src/for_mathlib/free_abelian_group2.lean",
+      "blob": "9b5f6fdeed48bc76479916f005f97720a2525cc0"
+    },
+    {
+      "path": "src/for_mathlib/has_homology.lean",
+      "blob": "f6b64c7d0909741f9936720989a263d3dd2dc1c2"
+    },
+    {
+      "path": "src/for_mathlib/has_homology_aux.lean",
+      "blob": "b9596d6332421a178c8e1005008ffd1d00c23217"
+    },
+    {
+      "path": "src/for_mathlib/hom_single_iso.lean",
+      "blob": "275ce40727cb33c1f91a308bf0eeb45d10094dcb"
+    },
+    {
+      "path": "src/for_mathlib/hom_single_iso2.lean",
+      "blob": "9c0ea306b2e9302ea83764fc535b4f339830da9a"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex.lean",
+      "blob": "c0c5a0ec2272b7f3bb42fdd345a23f91f536ff78"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex2.lean",
+      "blob": "8b7cc16a29af102c8d6af6342632b43de9b5d9f9"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex_abelian.lean",
+      "blob": "6f52fcec2bce31fdce0f645d8ed149bdf458932a"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex_equiv_functor_category.lean",
+      "blob": "b715a5a5dcd082a619f81c14a9e8910c0f67a691"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex_map_d_to_d_from.lean",
+      "blob": "0cdfdd285a32a3dc0b7a15abbab899498aef3f28"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex_op.lean",
+      "blob": "e39e0dc5aa23654f4e24a6d08fa0b92fb2c794f8"
+    },
+    {
+      "path": "src/for_mathlib/homological_complex_shift.lean",
+      "blob": "e9147bfc09f7cb1e5aa1fdd1f7efbb9b36adf5b6"
+    },
+    {
+      "path": "src/for_mathlib/homology.lean",
+      "blob": "1759bd572906f28da4b22074f17c5e087753a00c"
+    },
+    {
+      "path": "src/for_mathlib/homology_exact.lean",
+      "blob": "e6b94ac2afde9d0b5ee69915a29ebe9a4b33aa4c"
+    },
+    {
+      "path": "src/for_mathlib/homology_iso.lean",
+      "blob": "1d4ec25c6ca41da8e7213f365f54954afc5948e5"
+    },
+    {
+      "path": "src/for_mathlib/homology_iso_Ab.lean",
+      "blob": "d49ebedb3b067a79ad4cf53708c64eea07b68983"
+    },
+    {
+      "path": "src/for_mathlib/homology_iso_datum.lean",
+      "blob": "9c69d66a520b24428754a66cf04290f7e97b2a03"
+    },
+    {
+      "path": "src/for_mathlib/homology_lift_desc.lean",
+      "blob": "52584b722c84ef8a7bde5ecbee09860b406109bd"
+    },
+    {
+      "path": "src/for_mathlib/homology_map.lean",
+      "blob": "3ab4f8726067be098f956791e9c8ae7edca615c4"
+    },
+    {
+      "path": "src/for_mathlib/homology_map_datum.lean",
+      "blob": "95357b9475781e9e00fcbfd4078b58a8e44c53a5"
+    },
+    {
+      "path": "src/for_mathlib/homotopy_category.lean",
+      "blob": "4aecbdf0b79b492be91f2a639692dbb3b1f91ab5"
+    },
+    {
+      "path": "src/for_mathlib/homotopy_category_coproducts.lean",
+      "blob": "4889c864cccaa764123c54fd2895234cfa402e46"
+    },
+    {
+      "path": "src/for_mathlib/homotopy_category_functor_compatibilities.lean",
+      "blob": "cda748278f52178f7f8aa844bda773d6544191d9"
+    },
+    {
+      "path": "src/for_mathlib/homotopy_category_lemmas.lean",
+      "blob": "6ef38671c658db05c135643df76718276fc23c9e"
+    },
+    {
+      "path": "src/for_mathlib/homotopy_category_op.lean",
+      "blob": "e1fa1088b719913826f4ac7828c9d2343851e882"
+    },
+    {
+      "path": "src/for_mathlib/homotopy_category_pretriangulated.lean",
+      "blob": "506a3c112802584e6fbfb42bbdb80eee573e9738"
+    },
+    {
+      "path": "src/for_mathlib/horseshoe.lean",
+      "blob": "3982216b1ddaab2624fca54edf7a48c18956f3ad"
+    },
+    {
+      "path": "src/for_mathlib/imker.lean",
+      "blob": "47e7f4a28f1d5277e2898556d858cb6739d38836"
+    },
+    {
+      "path": "src/for_mathlib/int.lean",
+      "blob": "b00c2e7979785becebc1b172915ed1bfa6e03262"
+    },
+    {
+      "path": "src/for_mathlib/internal_hom.lean",
+      "blob": "568b75c33be3b2602e1085f6a4ebd102d79fd373"
+    },
+    {
+      "path": "src/for_mathlib/is_biprod.lean",
+      "blob": "0cd4203f14d396418df8120e5f848e0812be9a71"
+    },
+    {
+      "path": "src/for_mathlib/is_iso_iota.lean",
+      "blob": "0a75bd9ac0b7bc598fa2b951644c5d21c9e6870c"
+    },
+    {
+      "path": "src/for_mathlib/is_iso_neg.lean",
+      "blob": "d5cd21eb9e129ce0bbdf6e5040738c455eb0c0b1"
+    },
+    {
+      "path": "src/for_mathlib/is_locally_constant.lean",
+      "blob": "519e263a7e977391229becb95aa1e3adb5518dcd"
+    },
+    {
+      "path": "src/for_mathlib/is_quasi_iso.lean",
+      "blob": "eb1c03e5cbb074d335e067b1825d9e14d0ed8eb2"
+    },
+    {
+      "path": "src/for_mathlib/is_quasi_iso_sigma.lean",
+      "blob": "b8b51e38f80433662aef059f3f9eb2fd82b25012"
+    },
+    {
+      "path": "src/for_mathlib/kernel_comparison.lean",
+      "blob": "55253ef2975ac2889fb92e4df226b4f2b202c9ac"
+    },
+    {
+      "path": "src/for_mathlib/les_homology.lean",
+      "blob": "debd73ca7d8bfe035abb73131abe5edd08f4531a"
+    },
+    {
+      "path": "src/for_mathlib/limit_flip_comp_iso.lean",
+      "blob": "cd3ee0841051dc4c80d3279090dd03acb36b516c"
+    },
+    {
+      "path": "src/for_mathlib/map_to_sheaf_is_iso.lean",
+      "blob": "fce3c38c702f21769c25231158fd4c27ab378874"
+    },
+    {
+      "path": "src/for_mathlib/mapping_cone.lean",
+      "blob": "fad45bbc3bdee9e8339ff44809bab5f5cf463fba"
+    },
+    {
+      "path": "src/for_mathlib/module_epi.lean",
+      "blob": "4a4c834fa24a372cb69392fb792c30e96b6da93a"
+    },
+    {
+      "path": "src/for_mathlib/monoidal_category.lean",
+      "blob": "6dbe3acfcdfc293366fe31dd88fa134b13575e97"
+    },
+    {
+      "path": "src/for_mathlib/nat_iso_map_homological_complex.lean",
+      "blob": "8f709ee39e430eca4e0a6901174c5b291dbb5394"
+    },
+    {
+      "path": "src/for_mathlib/nat_trans.lean",
+      "blob": "bc253768fd0dbccb2e0933c10daa3c32a1318f9b"
+    },
+    {
+      "path": "src/for_mathlib/neg_one_pow.lean",
+      "blob": "1f52bc197736d704d4cd0eb90424716539592971"
+    },
+    {
+      "path": "src/for_mathlib/nnrat.lean",
+      "blob": "c5dc936c157ae796d858a042f6071e14ccb1e942"
+    },
+    {
+      "path": "src/for_mathlib/nnreal.lean",
+      "blob": "9e32f50c42b9c4366cb8384573922dd90d2885ca"
+    },
+    {
+      "path": "src/for_mathlib/nnreal_int_binary.lean",
+      "blob": "5cba82300cdb5a68364e8474a628ebbe1049b450"
+    },
+    {
+      "path": "src/for_mathlib/nnreal_nat_binary.lean",
+      "blob": "389552b97d5c903f61264fa64af3560165b16742"
+    },
+    {
+      "path": "src/for_mathlib/nnreal_to_nat_colimit.lean",
+      "blob": "40ce8657dc9bc812a8b6394b2cb681d0db5dad7f"
+    },
+    {
+      "path": "src/for_mathlib/order.lean",
+      "blob": "75f003dad57fafa69af94d29886a0bd40a217834"
+    },
+    {
+      "path": "src/for_mathlib/pi_induced.lean",
+      "blob": "2321b5c8b0109a6cc830286df54f2fa74b92d5b0"
+    },
+    {
+      "path": "src/for_mathlib/pid.lean",
+      "blob": "c4b3d6f6814621ffc59000b005fd5a1d08d2ec5e"
+    },
+    {
+      "path": "src/for_mathlib/pow_functor.lean",
+      "blob": "0fd736490d8da2501f324b235ffb671d71856f28"
+    },
+    {
+      "path": "src/for_mathlib/preadditive_yoneda.lean",
+      "blob": "5171deb86c71faed6150b14c8c2799fce339e233"
+    },
+    {
+      "path": "src/for_mathlib/preserves_exact.lean",
+      "blob": "a741f9fac01ae3bb3f2302567ced6e23d96a9719"
+    },
+    {
+      "path": "src/for_mathlib/preserves_finite_limits.lean",
+      "blob": "d444b8c8162dea5d98dc5458a8f68dde82279b87"
+    },
+    {
+      "path": "src/for_mathlib/preserves_limits.lean",
+      "blob": "0dcfe5d916a56192dc6ec77234c371e6edf60d3d"
+    },
+    {
+      "path": "src/for_mathlib/presieve.lean",
+      "blob": "621b6ca3bc650eb718c9f6bf1c4d3f12e54da2e2"
+    },
+    {
+      "path": "src/for_mathlib/product_op.lean",
+      "blob": "940aa2730738bb14cfd43ec8f6b6fa67f521533c"
+    },
+    {
+      "path": "src/for_mathlib/projective_replacement.lean",
+      "blob": "4b3b36ad14b7e2f11d92bba7abc651fb3795bcc4"
+    },
+    {
+      "path": "src/for_mathlib/projectives.lean",
+      "blob": "5ace1c700f669cc7bbaacbd3552324a39c3217db"
+    },
+    {
+      "path": "src/for_mathlib/pullbacks.lean",
+      "blob": "7d84186e37f83dd87cdb4efb5cd46af967aed2a7"
+    },
+    {
+      "path": "src/for_mathlib/quotient_map.lean",
+      "blob": "7be89b331556097d7c44711066866e641013742e"
+    },
+    {
+      "path": "src/for_mathlib/random_homological_lemmas.lean",
+      "blob": "2932fc4a81b13a1bd08d43942a1476b50472981e"
+    },
+    {
+      "path": "src/for_mathlib/rational_cones.lean",
+      "blob": "0744507e39f12f1ef89336c82111b28aba28c2e7"
+    },
+    {
+      "path": "src/for_mathlib/real.lean",
+      "blob": "7e8cf9542221e70fda68a22c75248273dca83a00"
+    },
+    {
+      "path": "src/for_mathlib/salamander.lean",
+      "blob": "1242e7ccebed08738ee41425ec5db41c6d540bd6"
+    },
+    {
+      "path": "src/for_mathlib/sheaf.lean",
+      "blob": "463cb28fc9205f60aca712150662ca1c795e589a"
+    },
+    {
+      "path": "src/for_mathlib/sheafification_equiv_compatibility.lean",
+      "blob": "a3b1f7bdb50f7218ca5eccb4464b7a536c1b8aa5"
+    },
+    {
+      "path": "src/for_mathlib/sheafification_mono.lean",
+      "blob": "2847fdf2df6202b4af0f37794f6cadecd7cc14e2"
+    },
+    {
+      "path": "src/for_mathlib/short_complex.lean",
+      "blob": "ea845e2c127be4c1c5b2df629243a1068dc3b94d"
+    },
+    {
+      "path": "src/for_mathlib/short_complex_colimits.lean",
+      "blob": "dd36ba57daabdf9054006cd35fcd1b54ec379142"
+    },
+    {
+      "path": "src/for_mathlib/short_complex_functor_category.lean",
+      "blob": "b4b629efbe9d4a9bd2b3eb97f31b01f5c9530050"
+    },
+    {
+      "path": "src/for_mathlib/short_complex_homological_complex.lean",
+      "blob": "e659926bb1ee74a4861e1f310b503b23761ede6d"
+    },
+    {
+      "path": "src/for_mathlib/short_complex_projections.lean",
+      "blob": "f8509ac2093a22cc66b224fefb72fd5fad8d2ef4"
+    },
+    {
+      "path": "src/for_mathlib/short_exact.lean",
+      "blob": "7494cc1a617038fb6b2f19e392199c6cdbbb7ce8"
+    },
+    {
+      "path": "src/for_mathlib/short_exact_sequence.lean",
+      "blob": "390f771d02186710913127730677938de5ebfd79"
+    },
+    {
+      "path": "src/for_mathlib/simplicial/complex.lean",
+      "blob": "a15af85d8db3ccbdcdf1a412e61f698c46d5fdb9"
+    },
+    {
+      "path": "src/for_mathlib/simplicial/iso.lean",
+      "blob": "c87b15eaea24e0ceb23ba5fe4abe08bc1506089c"
+    },
+    {
+      "path": "src/for_mathlib/single_coproducts.lean",
+      "blob": "345a4662dcd2f1afb02e8ef904123e29e9068dfd"
+    },
+    {
+      "path": "src/for_mathlib/snake_lemma.lean",
+      "blob": "52ef034142ef97f6f3cadb0e51e94f8c5b9e3a98"
+    },
+    {
+      "path": "src/for_mathlib/snake_lemma2.lean",
+      "blob": "db6cb29924242258bc154977bee2b39a4da6f52f"
+    },
+    {
+      "path": "src/for_mathlib/snake_lemma3.lean",
+      "blob": "4f426060a6fe7215793c8510444d3b6630e6ad86"
+    },
+    {
+      "path": "src/for_mathlib/snake_lemma_naturality.lean",
+      "blob": "cca871587cb81da42e26cc6975d6b5881394534d"
+    },
+    {
+      "path": "src/for_mathlib/snake_lemma_naturality2.lean",
+      "blob": "34b3755d8dee2d4931445bf8e340131c2abb665e"
+    },
+    {
+      "path": "src/for_mathlib/split_exact.lean",
+      "blob": "1e9a2970e4ecc509c28929def17562ab1ddabe96"
+    },
+    {
+      "path": "src/for_mathlib/sum_str.lean",
+      "blob": "e0f586073512e804eaa8ca8bbae162b1fd427743"
+    },
+    {
+      "path": "src/for_mathlib/topology.lean",
+      "blob": "e645ccb422c85b4d3eb5a8a70ed74e812a4ec26f"
+    },
+    {
+      "path": "src/for_mathlib/triangle.lean",
+      "blob": "428b55e54bec7e5acd51205c52a5bf4970b83957"
+    },
+    {
+      "path": "src/for_mathlib/triangle_shift.lean",
+      "blob": "ac327f6a15a575ff175b95b9734e32d2de70fca6"
+    },
+    {
+      "path": "src/for_mathlib/truncation.lean",
+      "blob": "57d56845434058d6c25e6702352111577623bd1a"
+    },
+    {
+      "path": "src/for_mathlib/truncation_Ext.lean",
+      "blob": "4d6b0f626ef5c4c822cb2151063dccd0aebe1a2f"
+    },
+    {
+      "path": "src/for_mathlib/tsum.lean",
+      "blob": "fb24d2364154bdf4fe089f1b3bffa93b0704e7c9"
+    },
+    {
+      "path": "src/for_mathlib/two_step_resolution.lean",
+      "blob": "6b17b58e4154dd50593edc8647fd4ab16cd7a6c3"
+    },
+    {
+      "path": "src/for_mathlib/types.lean",
+      "blob": "d44140e51b1c918c2966fc3b5a96f135726eb46c"
+    },
+    {
+      "path": "src/for_mathlib/unflip.lean",
+      "blob": "96c145f5454b2e0fdfd0d88e90f6a8ad4bcaa338"
+    },
+    {
+      "path": "src/for_mathlib/universal_delta_functor/Ext.lean",
+      "blob": "1a6e594f044be5ab90eed7507a0aa88c1c272049"
+    },
+    {
+      "path": "src/for_mathlib/universal_delta_functor/basic.lean",
+      "blob": "c1c04213ea84825987c1a66b47cc0454e7d1fdcf"
+    },
+    {
+      "path": "src/for_mathlib/whisker_adjunction.lean",
+      "blob": "3b16dfd2d00638bc7820947e00f593e869dffe1b"
+    },
+    {
+      "path": "src/for_mathlib/wide_pullback_iso.lean",
+      "blob": "d1786b7374824e787b743952188045d09f1e45b9"
+    },
+    {
+      "path": "src/for_mathlib/yoneda.lean",
+      "blob": "16e5f86ac38b334017b319a7436c305cd87378f9"
+    },
+    {
+      "path": "src/for_mathlib/yoneda_left_exact.lean",
+      "blob": "642d8c5824e9d11ac5edc720c2b7dadf135d56b1"
+    },
+    {
+      "path": "src/free_pfpng/acyclic.lean",
+      "blob": "2c042f9c960ba7c666c3d2cf44028d2906ae3709"
+    },
+    {
+      "path": "src/free_pfpng/basic.lean",
+      "blob": "8b975144dc78af6a08d34a9988257247b82eeda2"
+    },
+    {
+      "path": "src/free_pfpng/epi.lean",
+      "blob": "f1c4f8f8d1f38d2e21db3038be8dedad884523ac"
+    },
+    {
+      "path": "src/free_pfpng/lemmas.lean",
+      "blob": "8727156b273efd3582ac8eee3b5c5d054624dc61"
+    },
+    {
+      "path": "src/free_pfpng/main.lean",
+      "blob": "4603f932857a5a0ab7a8d456818d1cb91abfe553"
+    },
+    {
+      "path": "src/free_pfpng/mono.lean",
+      "blob": "d56c19ddd9f10527557dd4d5647b663b75619cb8"
+    },
+    {
+      "path": "src/free_pfpng/setup.lean",
+      "blob": "a50af65cf6ac6257be4670abad4aa2a11721ae28"
+    },
+    {
+      "path": "src/hacks_and_tricks/asyncI.lean",
+      "blob": "7d3db5bac4b9f711b89641a8dc79093c3be81197"
+    },
+    {
+      "path": "src/hacks_and_tricks/by_exactI_hack.lean",
+      "blob": "106285ac889c097cc93e97fff5a07bf7c54d290f"
+    },
+    {
+      "path": "src/hacks_and_tricks/type_pow.lean",
+      "blob": "ab87ffec5177eda7a6527b216cd79137cfdbc8b2"
+    },
+    {
+      "path": "src/invpoly/basic.lean",
+      "blob": "88b5ab5afa9081c98d2ce216a79d14054d62c7d4"
+    },
+    {
+      "path": "src/invpoly/functor.lean",
+      "blob": "2632952f166e8db02b7c1313696c89acb8422388"
+    },
+    {
+      "path": "src/invpoly/ses.lean",
+      "blob": "e6572678de49fee5def7810a62f844dc1ce384ee"
+    },
+    {
+      "path": "src/laurent_measures/aux_lemmas.lean",
+      "blob": "a2ded895c5adb531937901daece62b76047f79fc"
+    },
+    {
+      "path": "src/laurent_measures/basic.lean",
+      "blob": "0ae22823065e273582908fc23b7ca4ddc102b182"
+    },
+    {
+      "path": "src/laurent_measures/bounded.lean",
+      "blob": "8bd8d962be35a5e6fdb7b1ddefb3e26168f92195"
+    },
+    {
+      "path": "src/laurent_measures/condensed.lean",
+      "blob": "73d1afaeb70af53219d5cf30d50fe3685cafec5a"
+    },
+    {
+      "path": "src/laurent_measures/ext.lean",
+      "blob": "57c4cbd8b317af7ce76a17e8eb5b5e694c223395"
+    },
+    {
+      "path": "src/laurent_measures/functor.lean",
+      "blob": "aee74a862a896d3299ca857bbe046f2bf5f6bac4"
+    },
+    {
+      "path": "src/laurent_measures/int_nat_shifts.lean",
+      "blob": "7b42d52d67a31bff0826defda68cfd2522d3108e"
+    },
+    {
+      "path": "src/laurent_measures/no_longer_needed_maybe.lean",
+      "blob": "a85660dc1e7d8ceeca7b8008d68565df677b6220"
+    },
+    {
+      "path": "src/laurent_measures/prop72.lean",
+      "blob": "d15290e62bf7a514ae72d256afc8e54478890e41"
+    },
+    {
+      "path": "src/laurent_measures/ses.lean",
+      "blob": "5f318c29c5594cae32dde31ceeea4bfd8684be0d"
+    },
+    {
+      "path": "src/laurent_measures/ses2.lean",
+      "blob": "33211ea589f22065b74f6edcc4a04b98c8082aef"
+    },
+    {
+      "path": "src/laurent_measures/simpler_laurent_measures.lean",
+      "blob": "af1d7ac0a4916c8789674b16079110560d93402b"
+    },
+    {
+      "path": "src/laurent_measures/theta.lean",
+      "blob": "8f65df680d7e6d06e0b47603915fd278e87e70a3"
+    },
+    {
+      "path": "src/laurent_measures/thm69.lean",
+      "blob": "cc8162e459cd16cb62375afdb83e6eb2be477bf0"
+    },
+    {
+      "path": "src/liquid.lean",
+      "blob": "6b48df916152a34adcaf7bb255f8fdf9ac8bdbe7"
+    },
+    {
+      "path": "src/locally_constant/SemiNormedGroup.lean",
+      "blob": "e648e7f021fa47023a4bf1ecee04ef1b299efb60"
+    },
+    {
+      "path": "src/locally_constant/Vhat.lean",
+      "blob": "ae9a5083b1ebe25ebacb062d63573e03eebc3b5a"
+    },
+    {
+      "path": "src/locally_constant/analysis.lean",
+      "blob": "bbad52006c125fc9832afe95211dbf351ac6c2d1"
+    },
+    {
+      "path": "src/locally_constant/completion.lean",
+      "blob": "f63dc0ba5e3d5dddc527e91823bd8d8094c1748b"
+    },
+    {
+      "path": "src/locally_constant/completion_aux.lean",
+      "blob": "b33a494b5fa5654c481e62f0194863cac629c820"
+    },
+    {
+      "path": "src/normed_free_pfpng/basic.lean",
+      "blob": "ae09d02d5294469b2fe44150ef05273099e5e384"
+    },
+    {
+      "path": "src/normed_free_pfpng/compare.lean",
+      "blob": "fc78c392abca358407d1f6a9fdcc3c5969499c90"
+    },
+    {
+      "path": "src/normed_group/controlled_exactness.lean",
+      "blob": "82805ff635a12a77e6818623c61b2caee6a059a8"
+    },
+    {
+      "path": "src/normed_group/normed_with_aut.lean",
+      "blob": "dc9fc547c0f9cf049f52a05c07103e58b40ddef7"
+    },
+    {
+      "path": "src/normed_group/pseudo_normed_group.lean",
+      "blob": "1f3f5711144a77395a948745911a6cfe38e3cac3"
+    },
+    {
+      "path": "src/normed_snake.lean",
+      "blob": "3dabb16b295eb77b068d5a83f1b974e707654dea"
+    },
+    {
+      "path": "src/normed_snake_dual.lean",
+      "blob": "a49cd60dc2d93cd0a32f0b3bcf3d2fcee1f188da"
+    },
+    {
+      "path": "src/normed_spectral.lean",
+      "blob": "f0f753c519b012eb13a659cfb323e7b3bdf0b9bc"
+    },
+    {
+      "path": "src/pBanach/lp.lean",
+      "blob": "217650a5000872ff0a062a61c215451aa68f174d"
+    },
+    {
+      "path": "src/polyhedral_lattice/Hom.lean",
+      "blob": "08fe12b76ef4ce5d9dfcc2e82fe5c3792386dc60"
+    },
+    {
+      "path": "src/polyhedral_lattice/basic.lean",
+      "blob": "e5c0fcebdd1ba1a6de8c59b41207ea3c98da98e3"
+    },
+    {
+      "path": "src/polyhedral_lattice/category.lean",
+      "blob": "b6a91e7f03291f629601a99f86f09452343bc964"
+    },
+    {
+      "path": "src/polyhedral_lattice/cech.lean",
+      "blob": "e306e50d04f5913d79b9643e063e7e5c7324b7de"
+    },
+    {
+      "path": "src/polyhedral_lattice/cosimplicial.lean",
+      "blob": "16edadf871281aab8087833ba8abb588d81ec9ac"
+    },
+    {
+      "path": "src/polyhedral_lattice/cosimplicial_extra.lean",
+      "blob": "c73f1a5c64c7e45385cd44e93f8d022d5e6bf691"
+    },
+    {
+      "path": "src/polyhedral_lattice/finsupp.lean",
+      "blob": "3521bc892ef7665f40161df1304b4ed6b182b320"
+    },
+    {
+      "path": "src/polyhedral_lattice/int.lean",
+      "blob": "60713c03f879e8b0b3ad2c9b59d72a2a06498e82"
+    },
+    {
+      "path": "src/polyhedral_lattice/pseudo_normed_group.lean",
+      "blob": "cda87288e3407a466a605c8f115d5bad6f307531"
+    },
+    {
+      "path": "src/polyhedral_lattice/quotient.lean",
+      "blob": "6c4b935bb8bf405660a68d601496b40a3012667c"
+    },
+    {
+      "path": "src/polyhedral_lattice/topology.lean",
+      "blob": "b75e063280781282fbf851d3db06e2baa28f9897"
+    },
+    {
+      "path": "src/prop819.lean",
+      "blob": "38cac173f5f25b915c5af6b834a1a4b45b867466"
+    },
+    {
+      "path": "src/prop819/completion.lean",
+      "blob": "3e4a6ee1e6b9c6c85e43a7f73c595d1e0dfdedff"
+    },
+    {
+      "path": "src/prop819/strict_complex_iso.lean",
+      "blob": "c6cc7a460d696351edeedb18fa663b093ce5ad9a"
+    },
+    {
+      "path": "src/prop_92/concrete.lean",
+      "blob": "6c7e16c8fe7f2b24eb3b185bde8040216acec0b0"
+    },
+    {
+      "path": "src/prop_92/extension_profinite.lean",
+      "blob": "c0c6444dac09ee3b13cf2cfd1b29bfebb0222806"
+    },
+    {
+      "path": "src/prop_92/prop_92.lean",
+      "blob": "81dad71643aab31de032d1a3e5716d448fca1e94"
+    },
+    {
+      "path": "src/pseudo_normed_group/CLC.lean",
+      "blob": "7a8adc2f96c0f39d5879befb70e8fe2d3910eebd"
+    },
+    {
+      "path": "src/pseudo_normed_group/FP.lean",
+      "blob": "1a305c9159f8b61efb5636b32db75c78f96b2d1e"
+    },
+    {
+      "path": "src/pseudo_normed_group/FP2.lean",
+      "blob": "e813031dacde76e7cabc01c6f3383c2747568e36"
+    },
+    {
+      "path": "src/pseudo_normed_group/LC.lean",
+      "blob": "07153031af805973029d7be9555ce5fefc62a152"
+    },
+    {
+      "path": "src/pseudo_normed_group/QprimeFP.lean",
+      "blob": "33d3622c97b41fa64df4b9eac13c6cbe67aa7bc4"
+    },
+    {
+      "path": "src/pseudo_normed_group/Tinv.lean",
+      "blob": "1ce4d4820e3317fcc6f05a0d3e67855fff04e044"
+    },
+    {
+      "path": "src/pseudo_normed_group/basic.lean",
+      "blob": "72f7ee67cbd996f3684638af041c218fa213a14a"
+    },
+    {
+      "path": "src/pseudo_normed_group/bounded_limits.lean",
+      "blob": "230be82a49b63fad4d2fe83047b53f1533b03fd1"
+    },
+    {
+      "path": "src/pseudo_normed_group/breen_deligne.lean",
+      "blob": "d530340683ede29b12f954574c8e86d4586d2fd8"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/CompHausFiltPseuNormGrp.lean",
+      "blob": "06272dc2c61b0afd873fcedf7eb77e177965c363"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/CompHausFiltPseuNormGrpWithTinv.lean",
+      "blob": "68669846da8bd28832029733a85342d25bad6582"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/ProFiltPseuNormGrp.lean",
+      "blob": "e63aa9727439e0c953e6ecc9518dcc133f1e0d32"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/ProFiltPseuNormGrpWithTinv.lean",
+      "blob": "0a3d47c4bc619b32e041ae97a7abffcf955e1331"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/default.lean",
+      "blob": "67ad6451c90f8d71ec1def57562c00ea2e8e0c6e"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/strictCompHausFiltPseuNormGrp.lean",
+      "blob": "05ac36d55b17eeb1c91f6a05458ff4446961fa08"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/strictProFiltPseuNormGrp.lean",
+      "blob": "dcd51a74f57da83155e30bed1d27742d69cad249"
+    },
+    {
+      "path": "src/pseudo_normed_group/category/strictProFiltPseuNormGrpWithTinv.lean",
+      "blob": "b94c0140bd9e2cebfdc90a21519380b4501e4221"
+    },
+    {
+      "path": "src/pseudo_normed_group/homotopy.lean",
+      "blob": "161b9b1b62a129052051f31f5fc5e88a0998f5a6"
+    },
+    {
+      "path": "src/pseudo_normed_group/profinitely_filtered.lean",
+      "blob": "7d9d8d86e41a219b42ca3c05caad6af574111daa"
+    },
+    {
+      "path": "src/pseudo_normed_group/splittable.lean",
+      "blob": "66296d25738ec9192a586b2378dc4aaef7c06e6a"
+    },
+    {
+      "path": "src/pseudo_normed_group/sum_hom.lean",
+      "blob": "d512d5283d916d5c32f4782944e9e5f57ea94406"
+    },
+    {
+      "path": "src/pseudo_normed_group/system_of_complexes.lean",
+      "blob": "81f192d6cbf5e425a70dfa976a793ac41f36fe08"
+    },
+    {
+      "path": "src/pseudo_normed_group/system_of_complexes2.lean",
+      "blob": "eaefaa5805c567c02c916ca692dc3659bde4255a"
+    },
+    {
+      "path": "src/pseudo_normed_group/with_Tinv.lean",
+      "blob": "acb9b8ba21ea12170fabf026532b182b2b7775d3"
+    },
+    {
+      "path": "src/real_measures/basic.lean",
+      "blob": "36d29b115e82a64f2fabd6d399262b1b1bb7c4cb"
+    },
+    {
+      "path": "src/real_measures/condensed.lean",
+      "blob": "207e723d86449b94ef540bd985a9ab6430db32d7"
+    },
+    {
+      "path": "src/real_measures/default.lean",
+      "blob": "49c316cf74ec6506ce3f020bf13858b2007a5204"
+    },
+    {
+      "path": "src/rescale/CLC.lean",
+      "blob": "8b03b85ed58a0cfc454cf8b731f2b8474d70d1f3"
+    },
+    {
+      "path": "src/rescale/FiltrationPow.lean",
+      "blob": "81d46c52d55f5b4b5fea1c23d08cec6f047faf57"
+    },
+    {
+      "path": "src/rescale/LC.lean",
+      "blob": "420b8236b282068634b5d798ae6a2c5ce440c8d0"
+    },
+    {
+      "path": "src/rescale/Tinv.lean",
+      "blob": "73556793fa9dfdc406a73c9a5b00cf0222d6b2e7"
+    },
+    {
+      "path": "src/rescale/basic.lean",
+      "blob": "d83e4591d2afd67322af2bc9cf0dbcb72f2e9331"
+    },
+    {
+      "path": "src/rescale/normed_group.lean",
+      "blob": "cf3ff05cac77b84ec10ebfb811290f37934d3a1b"
+    },
+    {
+      "path": "src/rescale/polyhedral_lattice.lean",
+      "blob": "ff1ca8edad5c5e9b6b07f67997f358d5eeadf839"
+    },
+    {
+      "path": "src/rescale/pseudo_normed_group.lean",
+      "blob": "599bfe2c04d1127a1f5835f5233f8e6582e4561e"
+    },
+    {
+      "path": "src/statement.lean",
+      "blob": "fc885fe455a46864ab864a092dd74bcc507d3f79"
+    },
+    {
+      "path": "src/system_of_complexes/basic.lean",
+      "blob": "7a47515d6fb045f9159f8cc23d4ebead3c4df5f7"
+    },
+    {
+      "path": "src/system_of_complexes/completion.lean",
+      "blob": "c22bd031dd1adb6c9ab2624cc9aef1bffa4c1617"
+    },
+    {
+      "path": "src/system_of_complexes/double.lean",
+      "blob": "12a61c6e8f4ca7f5f6b82f8ebe36b59d999c850d"
+    },
+    {
+      "path": "src/system_of_complexes/rescale.lean",
+      "blob": "3b7fa589dadb0068d2a9c650296ed8108d6ebb22"
+    },
+    {
+      "path": "src/system_of_complexes/shift_sub_id.lean",
+      "blob": "5c0ec6df102c039b1d2c55647e51e87836f8f48d"
+    },
+    {
+      "path": "src/system_of_complexes/truncate.lean",
+      "blob": "2bae2c5abb830579f7e9d74992e96f8c829c7ee4"
+    },
+    {
+      "path": "src/thm95/col_exact.lean",
+      "blob": "3fbb32b53d68ea10536e8e4573703f31510d7192"
+    },
+    {
+      "path": "src/thm95/col_exact_prep.lean",
+      "blob": "a07a64c2650c410369a18d7b2fc1210e04701a11"
+    },
+    {
+      "path": "src/thm95/constants/default.lean",
+      "blob": "6c1439ed0f98199892bd6070c4bf8328220750ee"
+    },
+    {
+      "path": "src/thm95/constants/spectral_constants.lean",
+      "blob": "daf6f28a40c79ef6f2c548c4e0b7056146ee0ba5"
+    },
+    {
+      "path": "src/thm95/default.lean",
+      "blob": "7b546fd6877eba5c6c2a7570d6a53ef55aa07c2e"
+    },
+    {
+      "path": "src/thm95/double_complex.lean",
+      "blob": "b950c5cf11aef3b2bb272933e6d5174c0ecd4f62"
+    },
+    {
+      "path": "src/thm95/homotopy.lean",
+      "blob": "c461a7373afa5053233559ffffb6a674fc664037"
+    },
+    {
+      "path": "src/thm95/modify_complex.lean",
+      "blob": "d673d193bd9267ac8069b0a048a74deb85cb0ade"
+    },
+    {
+      "path": "src/thm95/pfpng_iso.lean",
+      "blob": "b22d5f4e9c9ea91aa2bba0cd47f7d263455c274e"
+    },
+    {
+      "path": "src/thm95/polyhedral_iso.lean",
+      "blob": "f9e0a5920c7f4d2fe283bfb7c1d31e50502f4030"
+    },
+    {
+      "path": "src/thm95/row_iso.lean",
+      "blob": "425fcbb314d8cffc006e59aed7d629e17608054c"
+    }
+  ]
+}

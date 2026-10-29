@@ -1,0 +1,507 @@
+{
+  "repository": "fpvandoorn/carleson",
+  "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+  "role": "IMMUTABLE_SOURCE_INVENTORY_NOT_PROOF_ACCEPTANCE",
+  "files": [
+    {
+      "path": "Carleson.lean",
+      "blob": "65338e2fdd7345ada60d30c66619ced9044c325a"
+    },
+    {
+      "path": "Carleson/Antichain/AntichainOperator.lean",
+      "blob": "74e274ede355ed7780286feb9ec923c4f1e2c4a6"
+    },
+    {
+      "path": "Carleson/Antichain/AntichainTileCount.lean",
+      "blob": "e32b7d7e19379d7f63ebd324add88aa76a9d75d6"
+    },
+    {
+      "path": "Carleson/Antichain/Basic.lean",
+      "blob": "5523b9ca89cc9d04b8614f2e27e72597ba81c057"
+    },
+    {
+      "path": "Carleson/Antichain/TileCorrelation.lean",
+      "blob": "485e27b6c7ca3323ad7cdcd2364cf6ad9ea2d380"
+    },
+    {
+      "path": "Carleson/Calculations.lean",
+      "blob": "9f63168dffb002adad70f170de796d9a4cfb3cab"
+    },
+    {
+      "path": "Carleson/Classical/Approximation.lean",
+      "blob": "a39c1a48c0647bca4e3bea9795435254f1dfcdb3"
+    },
+    {
+      "path": "Carleson/Classical/Basic.lean",
+      "blob": "8b6236c52364fe9f79a5821c622dd52c46a7dee7"
+    },
+    {
+      "path": "Carleson/Classical/CarlesonHunt.lean",
+      "blob": "cb4f0dd29c556ff581197a060d159ba9c6e78373"
+    },
+    {
+      "path": "Carleson/Classical/CarlesonHuntBasic.lean",
+      "blob": "5eff47b7afb15ea8122aa95d0a85ef77ecf04e15"
+    },
+    {
+      "path": "Carleson/Classical/CarlesonOnTheRealLine.lean",
+      "blob": "8e8455e4d68a5e780f8ff1af9506b1ffad05387f"
+    },
+    {
+      "path": "Carleson/Classical/CarlesonOnTheRealLineBasic.lean",
+      "blob": "a5d433f8f9d2080a32fce137e9d418b4c8344c8f"
+    },
+    {
+      "path": "Carleson/Classical/CarlesonOnTheRealLineContinuous.lean",
+      "blob": "4a0a39b14bad4ce381de1b3de0fec25777116201"
+    },
+    {
+      "path": "Carleson/Classical/CarlesonOperatorReal.lean",
+      "blob": "bbc6f6992bb85bd6db3627da7c4f90598731294f"
+    },
+    {
+      "path": "Carleson/Classical/ClassicalCarleson.lean",
+      "blob": "cef99075c938b9a5351ef800b72e612345e4e071"
+    },
+    {
+      "path": "Carleson/Classical/ControlApproximationEffect.lean",
+      "blob": "61ba725c432581a95a0c48ad745d3ee3e1fb7f8a"
+    },
+    {
+      "path": "Carleson/Classical/ControlApproximationEffectBasic.lean",
+      "blob": "00e6c7ef0acf1df0d41cc7a0fe317eac9021a801"
+    },
+    {
+      "path": "Carleson/Classical/ControlApproximationEffectContinuous.lean",
+      "blob": "547aeeaac1985889b0e51f6ee6346675202bbee6"
+    },
+    {
+      "path": "Carleson/Classical/DirichletKernel.lean",
+      "blob": "9dfd23e38905185fbf33ae45c71f740786922ae4"
+    },
+    {
+      "path": "Carleson/Classical/Helper.lean",
+      "blob": "1dfbff6fea0ba9ec5346686f91f936f8438b5cde"
+    },
+    {
+      "path": "Carleson/Classical/HilbertKernel.lean",
+      "blob": "83684f0276aabd5d7830d5360adcd458e777468f"
+    },
+    {
+      "path": "Carleson/Classical/HilbertStrongType.lean",
+      "blob": "78efcac072216cdae91cee1602bae342b218b661"
+    },
+    {
+      "path": "Carleson/Classical/SpectralProjectionBound.lean",
+      "blob": "45ed310a901875d125ea3571080c2f82652ff725"
+    },
+    {
+      "path": "Carleson/Classical/VanDerCorput.lean",
+      "blob": "320ba79f9b2e3651a732bd5436aec7991840be64"
+    },
+    {
+      "path": "Carleson/Defs.lean",
+      "blob": "4d3e1554ff28603cc2d5a808f1756ddc5f971d49"
+    },
+    {
+      "path": "Carleson/Discrete/Defs.lean",
+      "blob": "6ca88710640411b95e876d8da96edd73d647a811"
+    },
+    {
+      "path": "Carleson/Discrete/ExceptionalSet.lean",
+      "blob": "777fa83dd89053bec79cd99dcc636ec0dd967ed7"
+    },
+    {
+      "path": "Carleson/Discrete/ForestComplement.lean",
+      "blob": "bd12813be5c0de51ddbe03a9a8e8d24715bf528e"
+    },
+    {
+      "path": "Carleson/Discrete/ForestUnion.lean",
+      "blob": "ab4e9e885e6cf4163566935aa66cb4e0907d4d54"
+    },
+    {
+      "path": "Carleson/Discrete/MainTheorem.lean",
+      "blob": "9cfa055df1b39aece0abef60c167df8c3c4d561f"
+    },
+    {
+      "path": "Carleson/DoublingMeasure.lean",
+      "blob": "0bbeb60d195b7ccae25f17540e152f9f19a8b5c6"
+    },
+    {
+      "path": "Carleson/FinitaryCarleson.lean",
+      "blob": "7a61824933f5de9663da994ca4ba9365b040d139"
+    },
+    {
+      "path": "Carleson/Forest.lean",
+      "blob": "95c91321091679071bce02d3ecb1d9b92c260cea"
+    },
+    {
+      "path": "Carleson/ForestOperator/AlmostOrthogonality.lean",
+      "blob": "4fab6e45d5751727e3b62caf8458094649b2ed73"
+    },
+    {
+      "path": "Carleson/ForestOperator/Forests.lean",
+      "blob": "3ff1adff2daae53b9ac722a704285ee4f2860332"
+    },
+    {
+      "path": "Carleson/ForestOperator/L2Estimate.lean",
+      "blob": "c100c7bed56a0dd659abba63dae280b5be58211c"
+    },
+    {
+      "path": "Carleson/ForestOperator/LargeSeparation.lean",
+      "blob": "753fd55c245cd855bc5b8b6da94e2ea212f490d4"
+    },
+    {
+      "path": "Carleson/ForestOperator/PointwiseEstimate.lean",
+      "blob": "b6306a4a7561b7f6b3eeadc1e95131d9d733cf7c"
+    },
+    {
+      "path": "Carleson/ForestOperator/QuantativeEstimate.lean",
+      "blob": "26a44fd5b1761f438b373d863a13306dd7c2e82d"
+    },
+    {
+      "path": "Carleson/ForestOperator/RemainingTiles.lean",
+      "blob": "81a9ef7f5199314b916bc3827eb237e40e29e3b5"
+    },
+    {
+      "path": "Carleson/GridStructure.lean",
+      "blob": "dd3f58cb2f0923bb4167ab54618e0ad62b90cd23"
+    },
+    {
+      "path": "Carleson/HolderNorm.lean",
+      "blob": "6d0a1b0a3ed115e4bc58c57107dd9e505e897a49"
+    },
+    {
+      "path": "Carleson/HolderVanDerCorput.lean",
+      "blob": "bda748cb6bec4c2ff8beb583765177620c02d92b"
+    },
+    {
+      "path": "Carleson/LipschitzNorm.lean",
+      "blob": "586fa4ea9478c05e442f673b5cb0224ffc554816"
+    },
+    {
+      "path": "Carleson/MetricCarleson/Basic.lean",
+      "blob": "c155d7cd9ef4ed31bca72c74f3327c3b8d54ffe6"
+    },
+    {
+      "path": "Carleson/MetricCarleson/Linearized.lean",
+      "blob": "441e75b9493296b3a8491430fcaacf2950f9ed44"
+    },
+    {
+      "path": "Carleson/MetricCarleson/Main.lean",
+      "blob": "c6003b24747541044a683570126b4e900ed1424b"
+    },
+    {
+      "path": "Carleson/MetricCarleson/Truncation.lean",
+      "blob": "0cc4e0cd29a496330f7655ca5af8da1876391473"
+    },
+    {
+      "path": "Carleson/MinLayerTiles.lean",
+      "blob": "a127e06d538db407e8373f49d8c6af8e915cd278"
+    },
+    {
+      "path": "Carleson/Operators.lean",
+      "blob": "ccdd4260da18254dd0d76258aa02060546e051c2"
+    },
+    {
+      "path": "Carleson/ProofData.lean",
+      "blob": "4d9f1f0659cf59c6668c40b3e0df2cac279c0e64"
+    },
+    {
+      "path": "Carleson/Psi.lean",
+      "blob": "c710832e17e68d1f94291d5031017bcb919d2937"
+    },
+    {
+      "path": "Carleson/TileExistence.lean",
+      "blob": "058cc715583b985c162c1d9dc39c1f5a59b8f0e9"
+    },
+    {
+      "path": "Carleson/TileStructure.lean",
+      "blob": "46a246e68ed4ad727a35f68f0021825b63399c0c"
+    },
+    {
+      "path": "Carleson/ToMathlib/Analysis/Fourier/AddCircle.lean",
+      "blob": "62fc4b6b9cd47b85f87e28182440447b9e62de6b"
+    },
+    {
+      "path": "Carleson/ToMathlib/Analysis/RCLike/Components.lean",
+      "blob": "82e5d92e3209ff7e67a28257cfb060bc86096677"
+    },
+    {
+      "path": "Carleson/ToMathlib/Analysis/RCLike/Misc.lean",
+      "blob": "50b6e9ae9fbbac0a36a09b4155261437febab49d"
+    },
+    {
+      "path": "Carleson/ToMathlib/Analysis/SpecialFunctions/Integrals/Basic.lean",
+      "blob": "93f4b43f8a2b16f767d17d8ec5f217bafd38b03f"
+    },
+    {
+      "path": "Carleson/ToMathlib/Annulus.lean",
+      "blob": "96a5fb2a0e104d4a2a71ea2691b3640d1a0a0484"
+    },
+    {
+      "path": "Carleson/ToMathlib/BoundedCompactSupport.lean",
+      "blob": "bc5fe65af3be13fe229a2ebe9a49912b5b1a82ae"
+    },
+    {
+      "path": "Carleson/ToMathlib/BoundedFiniteSupport.lean",
+      "blob": "a717e71551654f9e142ef3606005f614f9dec62d"
+    },
+    {
+      "path": "Carleson/ToMathlib/CoveredByBalls.lean",
+      "blob": "63067b84e4c46702c955bd0a32a3a211e07a89f2"
+    },
+    {
+      "path": "Carleson/ToMathlib/Data/ENNReal.lean",
+      "blob": "9976a97825485cb67a345acd3b95733236194dce"
+    },
+    {
+      "path": "Carleson/ToMathlib/Data/NNReal.lean",
+      "blob": "3dbf3a71479ad39d239043087067b2e5ada6184c"
+    },
+    {
+      "path": "Carleson/ToMathlib/Distribution.lean",
+      "blob": "8921521cd115355cbaaaf555bd3335dd7e0bf399"
+    },
+    {
+      "path": "Carleson/ToMathlib/ENorm.lean",
+      "blob": "3d5a9d4df6736dc06b607e678c075698f90b0c58"
+    },
+    {
+      "path": "Carleson/ToMathlib/HardyLittlewood.lean",
+      "blob": "3becace32811632b4a0016f1e184f73f9eabad6b"
+    },
+    {
+      "path": "Carleson/ToMathlib/HasType.lean",
+      "blob": "94d2f23cb0577121fb090827ccd9fb9622b57d1c"
+    },
+    {
+      "path": "Carleson/ToMathlib/IntegralBallContinuity.lean",
+      "blob": "4f0dfd5961879bd2903ed9d45f1a2ed1a8305575"
+    },
+    {
+      "path": "Carleson/ToMathlib/LorentzType.lean",
+      "blob": "29618248c472c7fb865ec0598f267e032bf94f31"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/AEEqFun.lean",
+      "blob": "8bee5bfe7dda0dde430d2810289ea5adeb6c5a00"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/L1Integrable.lean",
+      "blob": "6b1f4d9111d756b93a4d6c8613c76d9cb56b95b8"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LocallyIntegrable.lean",
+      "blob": "e68d928c6425aad4ee48d1d76573f161371db4a0"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LorentzSeminorm/Basic.lean",
+      "blob": "48ebafabacb16476f88d08e0cceb99d61c993a59"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LorentzSeminorm/Defs.lean",
+      "blob": "faf7e3830458f4c8af74ce8da3b09171c7e5e8a4"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LorentzSeminorm/TriangleInequality.lean",
+      "blob": "368ab79c63d95ba7abebb86c29b813bc582bafec"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LorentzSpace/Basic.lean",
+      "blob": "3c34fed1da78570da2d98e48a9fb60edfaf2ceb5"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LpNorm/Misc.lean",
+      "blob": "28588ca8547ea4a3d3c4879925a75ca24508ca2f"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LpSeminorm/Basic.lean",
+      "blob": "d7d30c4a6f2c1d6e5a0a567ebecd98dd2a82ec98"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+      "blob": "187d933c352ddf88c991fb79ec4d8b72f7f52f58"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/LpSeminorm/TriangleInequality.lean",
+      "blob": "c260b19fff7cd7cb3096c1ce0142203262bf7142"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Function/SimpleFunc.lean",
+      "blob": "032f333da200dcd9a556e864ab02f415b27212a1"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/Bochner/ContinuousLinearMap.lean",
+      "blob": "7143d2ec0e8a650c5f5ea9c6b0d2449fee89ad6b"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean",
+      "blob": "ccb1ec34aa1ff3e1733e8cf9664639f009f910f3"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/IntervalIntegral/Periodic.lean",
+      "blob": "2ba0d660f896af562a3ddfb4315441908fafdbdf"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/Layercake.lean",
+      "blob": "e3733cc89955970f39fb6abca61f6e34b73245f2"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/Lebesgue.lean",
+      "blob": "f43d73804bb2d32319fb4b393ae43d8967bb1c22"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/MeanInequalities.lean",
+      "blob": "51dad25675ec2c82d565d75669ffd15db4df98d5"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/Misc.lean",
+      "blob": "bbb3321571f48839c4acb87a3ab0aa8c66e434d7"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Integral/Periodic.lean",
+      "blob": "102734d26e431b8d7ecdf82a64691e7df8c8a01e"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/AEMeasurable.lean",
+      "blob": "fc9634bc455599b4b8fbb58ea14707b3591d834b"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/Haar/Unique.lean",
+      "blob": "0ea5ba9851ab2b9d5bf409c6610eb7671c650d3c"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/IsDoubling.lean",
+      "blob": "3e3385202a65bfc4eeea70827bef0cf595d55338"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NNReal.lean",
+      "blob": "0808a08136226f2423171d5fac8dc239b7166b4a"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Basics.lean",
+      "blob": "9e3cc8f67d1723f9ef16300393e09d444358e7d0"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Defs.lean",
+      "blob": "bc9d91f5e1f53c61be174dbcc1eace813f0a38ee"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Gaussian.lean",
+      "blob": "d2704750ac5e6b882109b5f58755314b7ddaf69a"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Haar.lean",
+      "blob": "ea0692222609c341ee1ee3fca119c88dd6960aef"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Metric.lean",
+      "blob": "0577f4b691f6af9efc97f0f44a47a090c370dafd"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Pi.lean",
+      "blob": "fc8b4a3963a9569f47f2e307c31fb86ab2fde137"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Prod.lean",
+      "blob": "6d853e40e93b4480d83cb6c2da77ebbc9d8a727d"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/Regular.lean",
+      "blob": "02a3f07b9474382fd240ec02a9588650907fa36d"
+    },
+    {
+      "path": "Carleson/ToMathlib/MeasureTheory/Measure/NoAtoms/WithDensity.lean",
+      "blob": "6407bb507a1b9913df46a29d83f541037a41371b"
+    },
+    {
+      "path": "Carleson/ToMathlib/MinLayer.lean",
+      "blob": "afb09ca5cf9b69bdc2282034d1b66885138ab1ea"
+    },
+    {
+      "path": "Carleson/ToMathlib/Misc.lean",
+      "blob": "28f71917c9f0191ac553319fda3e4536a6408cf4"
+    },
+    {
+      "path": "Carleson/ToMathlib/Order/CompleteLattice/Basic.lean",
+      "blob": "d01ed995a50eeb1e731603c0327dd283556215df"
+    },
+    {
+      "path": "Carleson/ToMathlib/Order/ConditionallyCompleteLattice/Basic.lean",
+      "blob": "4f8b7f31ead97c4fb99524aa49ff6af41fec645d"
+    },
+    {
+      "path": "Carleson/ToMathlib/RealInterpolation/InterpolatedExponents.lean",
+      "blob": "8873d75ecbd0e0bdde31c08a271db9609cd5b7a6"
+    },
+    {
+      "path": "Carleson/ToMathlib/RealInterpolation/LorentzInterpolation.lean",
+      "blob": "a0e9496c9439b7bb5f235242f7bfa3b84b3f4b0f"
+    },
+    {
+      "path": "Carleson/ToMathlib/RealInterpolation/Main.lean",
+      "blob": "0f3ebd8db8f10baa4ae4871e586d974b228bfe3a"
+    },
+    {
+      "path": "Carleson/ToMathlib/RealInterpolation/Minkowski.lean",
+      "blob": "e053a0ce5ec25f0b2585415bcc1063cba65d5513"
+    },
+    {
+      "path": "Carleson/ToMathlib/RealInterpolation/Misc.lean",
+      "blob": "f728b261a0a6b93bab1b074fca7e57d406928da8"
+    },
+    {
+      "path": "Carleson/ToMathlib/Rearrangement.lean",
+      "blob": "cdc49dbafbaa2074ee8d6e748939552afcc7cb74"
+    },
+    {
+      "path": "Carleson/ToMathlib/Topology/ContinuousOn.lean",
+      "blob": "5da6a5b08ed73562f1a16fb5912dbded368cf221"
+    },
+    {
+      "path": "Carleson/ToMathlib/Topology/Instances/AddCircle/Defs.lean",
+      "blob": "0defe0e6bd62dcb3982ec619d14d5691d8659bcb"
+    },
+    {
+      "path": "Carleson/ToMathlib/WNorm.lean",
+      "blob": "c3a56362fbdffa3cade78a67650d867ed7baac72"
+    },
+    {
+      "path": "Carleson/TwoSidedCarleson/Basic.lean",
+      "blob": "85702fa684f684ffc97501061d76bb2c166a8119"
+    },
+    {
+      "path": "Carleson/TwoSidedCarleson/MainTheorem.lean",
+      "blob": "da33b5bb8dbf70d27c21690bd144f31c44c295eb"
+    },
+    {
+      "path": "Carleson/TwoSidedCarleson/NontangentialOperator.lean",
+      "blob": "f795e729c679beb0fcd6f82aeb7912fc0217ebed"
+    },
+    {
+      "path": "Carleson/TwoSidedCarleson/RestrictedWeakType.lean",
+      "blob": "d50d3a7b0352dd10749537265ce98e66e0701912"
+    },
+    {
+      "path": "Carleson/TwoSidedCarleson/WeakCalderonZygmund.lean",
+      "blob": "844524a2007ebec727d9957a7639318db7df2523"
+    },
+    {
+      "path": "Challenge.lean",
+      "blob": "8e0044a14d5fb5becc8c9894ea7bb4f612d81edb"
+    },
+    {
+      "path": "Solution.lean",
+      "blob": "baeee2e624ffe422a75ee32f9cfc5212d2387bd1"
+    },
+    {
+      "path": "scripts/.lake/packages/mathlib/scripts/SideSkimmer/lakefile.lean",
+      "blob": "598c2f49557d626fc27771dfbd04954d18a8da54"
+    },
+    {
+      "path": "scripts/SideSkimmer/lakefile.lean",
+      "blob": "598c2f49557d626fc27771dfbd04954d18a8da54"
+    }
+  ]
+}

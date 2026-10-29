@@ -1,0 +1,12 @@
+name = "grwtsk-apap-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "APAP"
+git = "https://github.com/YaelDillies/apap.git"
+rev = "b2001974b99b18ca1c13b6aa4791b7801563f939"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

@@ -1,0 +1,12 @@
+name = "grwtsk-ieantn-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "IEANTN"
+git = "https://github.com/teorth/IEANTN.git"
+rev = "ec66e388e6e117c6881367f38665f310edf7cacf"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

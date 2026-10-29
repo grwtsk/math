@@ -22,3 +22,21 @@ verification status when adding a provider.
   modules #379, #613, #707 and #987, plus the pinned community problem index.
 - [Repository discovery](DISCOVERY.md): eleven source-pinned candidates with
   concrete mathematical uses and compatibility/trust boundaries.
+
+## Imported discovery providers
+
+All eleven discovery repositories now have isolated native-version import packages.
+See [imported-discoveries.json](imported-discoveries.json) for exact source pins
+and provider catalogues. These surfaces are not proof acceptance.
+
+- [pfr](pfr/README.md): `teorth/pfr`.
+- [pnt-plus](pnt-plus/README.md): `AlexKontorovich/PrimeNumberTheoremAnd`.
+- [ieantn](ieantn/README.md): `teorth/IEANTN`.
+- [carleson](carleson/README.md): `fpvandoorn/carleson`.
+- [formal-conjectures](formal-conjectures/README.md): `google-deepmind/formal-conjectures`.
+- [imperial-flt](imperial-flt/README.md): `ImperialCollegeLondon/FLT`.
+- [sphere-packing](sphere-packing/README.md): `thefundamentaltheor3m/Sphere-Packing-Lean`.
+- [equational-theories](equational-theories/README.md): `teorth/equational_theories`.
+- [apap](apap/README.md): `YaelDillies/apap`.
+- [lean-liquid](lean-liquid/README.md): `leanprover-community/lean-liquid`.
+- [lean-proofs](lean-proofs/README.md): `plby/lean-proofs`.

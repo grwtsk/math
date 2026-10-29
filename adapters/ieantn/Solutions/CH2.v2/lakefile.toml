@@ -1,0 +1,13 @@
+name = "grwtsk-ieantn-solutionsch2v2"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "solution_CH2_v2"
+git = "https://github.com/teorth/IEANTN.git"
+rev = "ec66e388e6e117c6881367f38665f310edf7cacf"
+subDir = "Solutions/CH2.v2"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

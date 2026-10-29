@@ -1,0 +1,12 @@
+name = "grwtsk-sphere-packing-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "SpherePacking"
+git = "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean.git"
+rev = "77cf0a0c104f2e31501eab04d88bbc068d61c169"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

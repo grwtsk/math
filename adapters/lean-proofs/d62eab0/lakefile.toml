@@ -1,0 +1,13 @@
+name = "grwtsk-lean-proofs-srcd62eab0"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "lean-proofs-d62eab0"
+git = "https://github.com/plby/lean-proofs.git"
+rev = "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
+subDir = "src/d62eab0"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

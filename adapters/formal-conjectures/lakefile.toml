@@ -1,0 +1,12 @@
+name = "grwtsk-formal-conjectures-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures.git"
+rev = "909a8bec155bc5a6f3c72e12baaaa610ae293281"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

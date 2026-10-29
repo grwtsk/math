@@ -758,6 +758,99 @@ binds the profile to this exact complete math tree. Static JSON/TOML, source-map
 MSC-hash and 1,221-record uniqueness checks passed; no native proof checker ran.
 Publication is separate from compilation, fresh kernel replay and axiom acceptance.
 
+<a id="discovered-repository-imports"></a>
+
+## All discovered upstream repositories: native import surfaces (2026-10-29)
+
+Local attribution: grwtsk contributors. User authorization covers the eleven
+repositories in the source-pinned discovery survey. Each is now an explicit
+upstream dependency in a separate native-version package. Provider catalogues
+record every selected library, fully qualified local facade module, exact
+upstream module path/blob, complete source inventory, Lake/leanpkg configuration
+identity, original lock and all path-to-pinned-Git conversions.
+
+These additions introduce **no local theorem declarations** and prove no bridge.
+All 194 facade modules are import surfaces; their 47,786 import occurrences are
+not counts of distinct theorems or accepted mathematical results. The 41 native
+projects remain isolated from the root dependency graph and default build.
+A module import can expose conditional results, statement placeholders or
+unapproved axioms; no axiom or source-fidelity acceptance follows.
+
+| Source formalization / source byline | Immutable source identity | Intended mathematical use and missing bridge |
+| --- | --- | --- |
+| [teorth/pfr](https://github.com/teorth/pfr/tree/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f); original public source authors and upstream project contributors | `7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f`; `adapters/pfr/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Entropy and small-doubling/additive-combinatorics consumers. Select exact finite-group hypotheses and constants; connect local entropy/group objects, avoid replacing them by analogy. |
+| [AlexKontorovich/PrimeNumberTheoremAnd](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/127b50e33f6033e2147921167a117af96d9ba4ea); original public source authors and upstream project contributors | `127b50e33f6033e2147921167a117af96d9ba4ea`; `adapters/pnt-plus/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Prime counting, explicit formula and local arithmetic-error consumers. Select proved endpoints and exact normalization/error constants; distinguish pending blueprint nodes. |
+| [teorth/IEANTN](https://github.com/teorth/IEANTN/tree/ec66e388e6e117c6881367f38665f310edf7cacf); original public source authors and upstream project contributors | `ec66e388e6e117c6881367f38665f310edf7cacf`; `adapters/ieantn/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Explicit analytic number-theory dependency interfaces. Its claim graph tracks varying evidence roles. Admit only exact proved declarations; finite numerical or literature claims are not all kernel proofs. |
+| [fpvandoorn/carleson](https://github.com/fpvandoorn/carleson/tree/52cba54d4b7b444e937c7abbc67835afa2a0bb16); original public source authors and upstream project contributors | `52cba54d4b7b444e937c7abbc67835afa2a0bb16`; `adapters/carleson/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Harmonic-analysis and almost-everywhere convergence consumers. Match generalized metric-measure/phase hypotheses, exceptional sets and operator normalization. |
+| [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures/tree/909a8bec155bc5a6f3c72e12baaaa610ae293281); original public source authors and upstream project contributors | `909a8bec155bc5a6f3c72e12baaaa610ae293281`; `adapters/formal-conjectures/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Canonical problem statements and equivalence checks for Erdős adapters. Conjecture statements may contain sorry. Do not import them as established proofs; prove a separate fidelity equivalence to a proof endpoint. |
+| [ImperialCollegeLondon/FLT](https://github.com/ImperialCollegeLondon/FLT/tree/a3210204ad8876e851e32f73dd97d882bf1ccd0a); original public source authors and upstream project contributors | `a3210204ad8876e851e32f73dd97d882bf1ccd0a`; `adapters/imperial-flt/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Modularity/Galois/arithmetic interfaces complementary to Anthropic FLT. Select proved dependency endpoints, distinguish blueprint targets and pending premises; not a second automatically accepted FLT proof. |
+| [thefundamentaltheor3m/Sphere-Packing-Lean](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/tree/77cf0a0c104f2e31501eab04d88bbc068d61c169); original public source authors and upstream project contributors | `77cf0a0c104f2e31501eab04d88bbc068d61c169`; `adapters/sphere-packing/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Fourier/geometric packing and density consumers. Select exact dimension and normalization; audit real proof endpoints and unresolved source obligations. |
+| [teorth/equational_theories](https://github.com/teorth/equational_theories/tree/2f49bdaf3d38ffb722e54ac1288c8269dac61846); original public source authors and upstream project contributors | `2f49bdaf3d38ffb722e54ac1288c8269dac61846`; `adapters/equational-theories/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Finite algebra and implication/countermodel consumers. Preserve law identifiers, finite/infinite model domains and certificate scope; do not equate graph reachability with a proof without a soundness bridge. |
+| [YaelDillies/apap](https://github.com/YaelDillies/apap/tree/b2001974b99b18ca1c13b6aa4791b7801563f939); original public source authors and upstream project contributors | `b2001974b99b18ca1c13b6aa4791b7801563f939`; `adapters/apap/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Quantitative progression/Roth and density consumers. Preserve finite ambient group, density thresholds, logarithms and explicit/implicit constants. |
+| [leanprover-community/lean-liquid](https://github.com/leanprover-community/lean-liquid/tree/ee4795874a99ea5f9d85bd0b364425f07b932377); original public source authors and upstream project contributors | `ee4795874a99ea5f9d85bd0b364425f07b932377`; `adapters/lean-liquid/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Condensed/liquid mathematics reference. Lean3 project: use as a port/reference source, not a direct Lean4 Lake dependency. |
+| [plby/lean-proofs](https://github.com/plby/lean-proofs/tree/8822f7ddef30fadbd92e1c6ab4ed897af356af5e); original public source authors and upstream project contributors | `8822f7ddef30fadbd92e1c6ab4ed897af356af5e`; `adapters/lean-proofs/catalogue.json` pins configs, manifests, source blobs, and all facade module names | Broader solved Erdős corpus linked from the community database. Multiple versioned source projects; no root toolchain. Pin each selected project, source authors and hypotheses separately, audit axioms and avoid a blanket acceptance claim. |
+
+### Scope of the original mathematics and references
+
+- PFR: the repository formalizes the Polynomial Freiman–Ruzsa/Marton result
+  ([upstream paper reference](https://arxiv.org/abs/2311.05762)). Exact hypotheses
+  and quantitative constants remain those of the imported declarations. No
+  local entropy/group representation comparison is supplied by an import.
+- PNT+ and IEANTN: prime-counting and explicit-analytic-number-theory source
+  interfaces retain their actual error terms, ranges and premise/evidence roles.
+  Every versioned IEANTN solution project is separate from the core claim graph.
+  Numerical certificates and stated literature dependencies are not automatically
+  kernel-checked analytic inputs.
+- Carleson: the generalized Carleson source retains its metric/measure/operator
+  parameters and exceptional-set hypotheses. Sphere packing retains its exact
+  dimensions, density conventions and analytic source inputs. An import supplies
+  no missing local normalization or operator-equivalence proof.
+- Imperial FLT: imports include the actual assumptions and intermediate
+  arithmetic interfaces, not an assertion that every blueprint target is proved.
+  This independent source identity is not conflated with Anthropic's FLT package.
+- APAP: quantitative progression results retain their finite ambient groups,
+  density conditions, logarithmic conventions and constants. Equational theories
+  retains equation identifiers, implication/countermodel scope and finiteness
+  domains; its executable/tooling layers are not a semantic soundness theorem.
+- Formal Conjectures: all declared libraries are available as explicitly marked
+  statement interfaces. Deliberate conjecture/challenge `sorry` placeholders are
+  not proved propositions. No local theorem consumes them as accepted proofs.
+- plby/lean-proofs: all ten maintained Lake subprojects found at the pin are
+  separate adapters, including the versioned ComparatorChallenges packages.
+  Root README, source metadata and individual file bylines preserve the actual
+  informal/formal authors; there is no invented common paper or blanket proof
+  claim. Its latest package has effectful post-update patch hooks. They remain
+  in the upstream dependency configuration and were **NOT_EXECUTED**; source
+  replay must bind any actually patched bytes separately from original Git pins.
+- Lean Liquid: native Lean 3.48.0, upstream Mathlib3 commit
+  `5947fb69cc1fdfebaba1e1b1f0a04f26f0f612bf`, imports `liquid`. This is historical
+  imported mathematics, not a Lean4 port or cross-kernel equivalence proof.
+  The original project references Peter Scholze's *Analytic* lecture notes
+  (<http://www.math.uni-bonn.de/people/scholze/Analytic.pdf>); no new formalization
+  of those notes is claimed. No repository-wide license was invented where the
+  source tree has no root license file; original source notices stay upstream.
+
+Exact public bylines and license obligations remain in the immutable upstream
+sources; available repository LICENSE/NOTICE files are retained per provider.
+Source provenance is independent of broad MSC2020 folder placement. The source
+layout record explicitly marks these new broad library assignments and does not
+claim a declaration-by-declaration semantic taxonomy review.
+
+### Evidence and required verification
+
+Static checks passed for all eleven source pins, 41 package configurations,
+complete exact Git dependency revisions, 194 facade/source-layout hashes, escaped
+module identifiers and each import's source blob. No Lean/Lake build or upstream
+hook ran. Native compilation, fresh kernel replay, transitive axiom audit and
+statement-fidelity checks are **NOT_RUN** for every package. Commands to request
+compilation are `lake build` from the selected native Lean4 adapter directory,
+and `leanpkg build` for `adapters/lean-liquid` under its exact Lean3 toolchain.
+These commands are not successful receipts. Supported Noe owner/resource and
+source-binding qualification is required for actual replay; the shared activation
+lock remains an external execution gate. Select actual consumer declarations
+before a nonvacuous axiom/expected-interface acceptance request. Imports alone
+cannot discharge the missing bridges listed in the discovery survey.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

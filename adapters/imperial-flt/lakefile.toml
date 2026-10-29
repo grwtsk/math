@@ -1,0 +1,12 @@
+name = "grwtsk-imperial-flt-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "FLT"
+git = "https://github.com/ImperialCollegeLondon/FLT.git"
+rev = "a3210204ad8876e851e32f73dd97d882bf1ccd0a"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]
