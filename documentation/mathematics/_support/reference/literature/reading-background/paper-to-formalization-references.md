@@ -1077,6 +1077,79 @@ bundle pins each nonempty profile, local source blob and fully qualified target.
 No compiler/kernel/axiom/interface result exists for these bytes. Source publication
 and static review do not supersede NOT_RUN or unsupplied-premise statuses.
 
+<a id="ieantn-consecutive-square-consumer-20261029"></a>
+
+## IEANTN: from a numerical theta error bound to an open square interval
+
+Local attribution: grwtsk contributors. Imported proof source: Terence Tao and
+IEANTN contributors, *Explicit Analytic Number Theory*, versioned repository
+source at [teorth/IEANTN@ec66e388e6e117c6881367f38665f310edf7cacf](https://github.com/teorth/IEANTN/tree/ec66e388e6e117c6881367f38665f310edf7cacf); Apache-2.0.
+No particular paper's numerical estimate is imported or inferred from a title.
+`PrimeInterval.v1.Dev.numericalBound_hasPrimeInInterval`, source
+`Solutions/PrimeInterval.v1/Solution.lean`, blob
+`e1a89e5f31e5263353b0bc63a68ff99e020b7710`, is the consumed proved endpoint.
+
+For `n : Nat`, `n >= 1`, retain the actual uniform premise
+`IEANTN.HasNumericalBound IEANTN.Eθ ε x₀`, the applicability condition
+`x₀ <= (n : Real)^2`, and the strict margin
+`(2*(n : Real)^2 + (2*(n : Real)+1))*ε < 2*(n : Real)+1`.
+The source criterion at `x=n²`, `h=2n+1` produces a prime in `(n²,(n+1)²]`.
+The upper square is nonprime, so the witness lies in the open natural interval;
+its `Nat.Prime` filter has positive cardinality. A separate interval equivalence
+retains an arbitrary nonprime upper endpoint and includes empty/reversed intervals.
+
+Local source commit `8f22d35114a5325e7a75520bbe1ee4abe9e6c447`, blob `dd2e210934a81fbb16ad1480bd958859933671e9`:
+`adapters/ieantn/Solutions/PrimeInterval.v1/GRWTSK/NumberTheory/MultiplicativeNumberTheory/ConsecutiveSquarePrimeWitness.lean`. Declarations:
+
+- `GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.hasPrimeInInterval_nat_iff_exists_prime_mem_Ioo`
+- `GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.prime_in_consecutive_square_interval_of_numerical_bound`
+- `GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.consecutive_square_prime_filter_card_pos_of_numerical_bound`
+
+The actual local use is the prime witness observed by
+`GRWTSK.NumberTheory.Primes.ConfigurationCounts.squareCount_pos_iff`, root source
+`GRWTSK/NumberTheory/MultiplicativeNumberTheory/ConfigurationCounts.lean`, blob `ce58a314fcc4fa5c535377fc419cea864dbdf7d1`
+at `4e0b0dec8c24a5a5a79af34b71efd58b3753cdca`. This isolated source proves the same
+open-interval witness/count observation, with no direct root import or duplicated
+count model. Its Lean4.34.0-rc2 / Mathlib71a80585 boundary is preserved; a checked
+root4.34.1 version-port remains UNSUPPLIED.
+
+Classification: SOURCE_PROOF_CANDIDATE and actual conditional mathematical
+consumer; no supplied error estimate, certificate, verified Legendre theorem or
+kernel acceptance. A fixed positive epsilon does not discharge the margin for
+all large n. Native compilation, fresh replay, complete transitive axiom audit
+and expected-interface checks remain NOT_RUN. Source/API cross-review and a
+nine-file project-source admission scan do not replace those checks.
+Static exact-source target: `documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/ieantn-consecutive-square-20261029.json`; companion profile records all three
+required compiler-owned roots and literal expected types. Actual receipts belong
+to the external Noe runtime, not this ledger.
+
+<a id="openai-patched-pnt-source-boundary-20261029"></a>
+
+## OpenAI Liouville: patched PNT source boundary
+
+The fixed-family Liouville consumers retain source commit
+`c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13`, blob
+`41fd47c54def263e91175137de294aaa389c8e3b`; no theorem or hypothesis changes here.
+The upstream OAI Lake configuration at `7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a`,
+blob `cd24ca2ee09fb6fe33e82400534d9e60a616125b`, applies dependency patches.
+The imported module `PrimeNumberTheoremAnd.Erdos970.MertensClassical` is absent
+from PNT base commit `c39a751132c88b6e8080b74c74023fd95b3d8be0` and is added by
+`lean/patches/PrimeNumberTheoremAnd-lean4341.patch`, patch blob `924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc`,
+SHA256 `0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82`. Its exact reconstructed new-file blob is
+`8f3e823d7cedff9e294bacf7ec4f0c54c2df9b42`. These source identities preserve OpenAI/PNT
+public attribution and Apache-2.0 obligations; reconstruction is not a proof check.
+
+A PNT checkout with the right HEAD therefore does not by itself supply the
+required post-patch source closure. Qualify a supported Noe supplier binding base,
+patch, every touched output and declared imports before fresh replay. No upstream
+configuration/hook was executed or dependency version substituted. The static
+obligation is `documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json`. The companion `documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-module-interface-20261029.profile.json` requires a complete
+compiler-owned census, both exact local roots and explicit expected types with
+all finite-family/affine/normalization/quantifier conditions retained.
+Compilation, comparator, fresh replay, complete transitive axiom auditing and
+expected-interface checking remain NOT_RUN; registry preparation is a separate
+phase. No RH or growing-family Liouville budget is supplied.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

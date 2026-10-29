@@ -1,0 +1,52 @@
+{
+  "schema": "grwtsk.source-bound-adapter-consumer-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "source_commit": "8f22d35114a5325e7a75520bbe1ee4abe9e6c447",
+  "source_tree": "d7c4b0e78582ae490a6d54d50c689b2a04c1c45f",
+  "source_path": "adapters/ieantn/Solutions/PrimeInterval.v1/GRWTSK/NumberTheory/MultiplicativeNumberTheory/ConsecutiveSquarePrimeWitness.lean",
+  "source_blob": "dd2e210934a81fbb16ad1480bd958859933671e9",
+  "source_sha256": "57c5f22f103decfe499770ea9ab809a2fd01d52a8e3425bb86c05f338590b16d",
+  "profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/ieantn-consecutive-square-20261029.profile.json",
+  "declarations": [
+    "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.hasPrimeInInterval_nat_iff_exists_prime_mem_Ioo",
+    "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.prime_in_consecutive_square_interval_of_numerical_bound",
+    "GRWTSK.NumberTheory.MultiplicativeNumberTheory.ConsecutiveSquarePrimeWitness.consecutive_square_prime_filter_card_pos_of_numerical_bound"
+  ],
+  "project_subdir": "adapters/ieantn/Solutions/PrimeInterval.v1",
+  "manifest_blob": "50b39034afb59766f4347c6fa069f71fe3c12ab3",
+  "native_pins": {
+    "Lean": "leanprover/lean4:v4.34.0-rc2",
+    "Mathlib": "71a80585ee495fc24472fd0eaffc89d94e4fd8d6"
+  },
+  "upstream_project_source_blobs": {
+    "Solutions/PrimeInterval.v1/Solution.lean": "e1a89e5f31e5263353b0bc63a68ff99e020b7710",
+    "IEANTN/Nodes/PrimeInterval/v1/Conclusions.lean": "6bebbb8f398eef75eae90836315c8bbaf59cde63",
+    "IEANTN/Vocabulary.lean": "719cb9ed1a03d40f55c643838b1f409b9d030ecb",
+    "IEANTN/Vocabulary/Zeta.lean": "fd0613756925511ec70f3c15b3688635f9cc3daf",
+    "IEANTN/Vocabulary/PrimeGaps.lean": "39e63c2535869d174446b877bd95de0ca250aa49",
+    "IEANTN/Vocabulary/Numerics.lean": "79feb3be1d51fc91f4ff3a4ad268d91750b50f99",
+    "IEANTN/Vocabulary/Goldbach.lean": "343071c12f94357e8097aef555f7b308b23e1da0",
+    "IEANTN/Vocabulary/ErrorTerms.lean": "ee28bbf5df951b54ebf7140359c4137946f80e88",
+    "IEANTN/Vocabulary/PrimeCounting.lean": "229c5b3b3057fb2987292e49e0a8bd57195cc34f"
+  },
+  "classification": "SOURCE_PROOF_CANDIDATE_WITH_EXPLICIT_ANALYTIC_PREMISES",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "acceptance_requires": [
+    "Exact registry binding to the selected immutable math source, project, manifest, producer and runtime policy",
+    "Fresh native compilation of all declared imports under the exact native version; no compiled upstream cache",
+    "Complete compiler-origin target census containing all three exact required declarations",
+    "No sorryAx or other unapproved transitive axiom; approved set is propext, Classical.choice, Quot.sound",
+    "Fresh importing-module checks of all three explicit expected type expressions",
+    "Separate exact-source independent replay and resource/host restoration evidence"
+  ],
+  "missing_mathematics": [
+    "Supply actual IEANTN.Etheta uniform numerical bound and margin for any intended stage or range.",
+    "No Legendre conjecture or unconditional consecutive-square theorem.",
+    "No root package version-port; isolated adapter mathematical observation only."
+  ]
+}

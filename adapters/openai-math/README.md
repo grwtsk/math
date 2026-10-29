@@ -87,3 +87,16 @@ New subject-organized source candidates: `adapters/openai-math/GRWTSK/NumberTheo
 [consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
+
+## Patched PNT source boundary
+
+The pinned upstream OAI Lake configuration applies dependency patches. In
+particular PNT base `c39a751132c88b6e8080b74c74023fd95b3d8be0` lacks
+PrimeNumberTheoremAnd.Erdos970.MertensClassical; OAI patch blob
+`924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc` adds it. Matching the base HEAD is insufficient to
+supply the exact patched import closure. Qualify the base/patch/output mapping
+through supported Noe tooling before fresh source replay; do not run upstream
+hooks or silently substitute a newer PNT. The canonical ledger anchor
+openai-patched-pnt-source-boundary-20261029 and static target
+`documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json` retain exact identities and acceptance obligations.
+All native, comparator, axiom and expected-interface checks remain NOT_RUN.
