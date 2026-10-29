@@ -133,3 +133,24 @@ owned by
 That implementation preserves article bodies, rejects identity/slug collisions
 and invalid composition references, and creates new articles exclusively under
 the mathematical documentation tree without overwriting authored files.
+
+## Mathematical communication for humans and AI
+
+Use the [structural-intelligence guide](structural-intelligence.md) when authoring
+or reviewing a result. Explain the problem and objects, the exact statement, the
+proof strategy, each substantial lemma's role, the intended application, and a
+boundary or counterexample. Preserve quantifier order and permitted dependencies
+of constants. The same exposition should help a human understand the argument
+and an AI identify a legitimate next mathematical move.
+
+Keep jointly required premises together and alternative proof routes separate.
+A change of representation needs its actual map and all residual obligations.
+The accepted-premise view and exploratory view may expose different evidence
+classes; neither a rank nor an analogy promotes a candidate to a proof.
+
+Add proof-role and intended-use explanations to authored prose until a reviewed
+schema extension exists. Do not silently add unsupported fields to the v1 record,
+replace proofs with generated scaffolds, or claim whole-corpus coverage from a
+small rollout. Apply the Noeaaeue mathematical-communication skill to actual
+articles and improve it from recorded failures. Taxonomy proposals remain in
+[issue #1425](https://github.com/grwtsk/math/issues/1425), without moves during churn.

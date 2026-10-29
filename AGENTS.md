@@ -26,3 +26,17 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Where an individual human reference is necessary, use only `R.A.` or `Hs`. Keep personal names, personal email addresses, private account handles, and personal device identifiers out of maintained content.
 - Preserve public researchers' source bylines, upstream authorship, and license obligations.
 - Privacy redactions affect historical source displays, encoded recipes, and receipts. Original hashes and source pins describe pre-redaction evidence; they do not certify edited bytes. Redaction and rewritten Git identities do not establish fresh replay, kernel verification, or stronger mathematical acceptance.
+
+## Structural-intelligence work
+
+Read `docs/reference/structural-intelligence.md` and the matching repository-local
+skill under `grwtsk/noeaaeue/bindings/mathematics/organization/skills/` before an
+increment in this programme. Formalize a consumer-backed result first, explain
+its mathematical use, then evaluate the guidance. Keep joint premises, alternative
+proof routes, source mappings and evidence roles distinct. Apply the skills to
+actual work and improve them from recorded failures, not unmeasured claims.
+
+Track the programme in grwtsk/noeaaeue#406. Queue taxonomy proposals in
+grwtsk/math#1425; do not move paths or namespaces during churn. The user will
+approve a single coordinated quiet-window batch. New skill files do not authorize
+execution, publication, root promotion or dependency migration.
