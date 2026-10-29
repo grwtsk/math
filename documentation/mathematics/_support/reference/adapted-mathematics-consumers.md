@@ -1,0 +1,71 @@
+# Using the adapted mathematics in GRWTSK
+
+Local attribution: grwtsk contributors.
+
+The problem is to turn an imported theorem into a result that a local problem
+can apply. Module availability alone does not show that representations match,
+all joint hypotheses hold, the desired constants survive, or a proof is checked.
+This first wave adds24 source theorem candidates in eight subject-organized
+modules. They stay in native-version provider packages; no root dependency or
+import is promoted. Exact types are in the linked sources and exact provenance
+is in `adapters/consumer-integrations.json` and the canonical paper ledger.
+
+| Consumer | Mathematical move and intended use | Boundary |
+| --- | --- | --- |
+| [pfr](../../../../adapters/pfr/GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean) | Existing local APIs use Finsets and difference sets. Proves subtraction transport and exact Finset/set cardinal and pointwise bridges rather than leaving them as assumed interfaces. Does not yet combine with local energy inequalities. | Native compilation/fresh kernel replay/transitive axiom audit/expected-type checking; Root4.34.1 local-library integration would need a separately reviewed version-compatible port; no root dependency change; Actual additive-energy application remains separate from this structured difference cover |
+| [apap](../../../../adapters/apap/GRWTSK/Combinatorics/FiniteFieldProgressionWitness.lean) | Roth consumers supply failure of ThreeAPFree; APAP yields a quantitative rank threshold. The local consumer extracts actual witnesses and accepts externally established positive density bounds with a proved monotonicity bridge. | Native compilation/fresh kernel replay/transitive axiom audit/expected-type checking; No integer quantitative Roth consumer: APAP/Integer.lean theorem int is := sorry at this exact upstream pin; No root cross-version promotion or reinterpretation of exponent/prefix conditions |
+| [equational-theories](../../../../adapters/equational-theories/GRWTSK/GeneralAlgebraicSystems/EquationalFinitePremiseConsumers.lean) | Concrete source-axiom extraction for the local joint-premise inference programme; strengthens imported compactness by retaining Delta subset Gamma, and proves safe chosen-proof support restriction. | Actual source-bound compilation and axiom audit on pinned Lean4.29.1/Mathlib environment; Checked reification of this equational-law calculus into root JointPremiseInference representation; No assertion of smallest/minimal support or finite-model completeness; No acceptance of upstream executable graph closure merely from graph reachability |
+| [pnt-plus](../../../../adapters/pnt-plus/GRWTSK/NumberTheory/MultiplicativeNumberTheory/RelativePrimePairConsumers.lean) | Compose two eventual relative-prime windows using delta=min(epsilon/4,1), then construct a target N=p+q from two distinct primes. Supplies actual prime-pair/sum witnesses, not arbitrary prescribed Goldbach targets. | Does not represent every supplied even N, prove parity/window hypotheses of that full local margin theorem, provide effective thresholds or shrinking intervals, or import incompatible root GRWTSK modules. No RH consequence. |
+| [carleson](../../../../adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean) | Countable family of continuous 2pi-periodic complex functions shares one full-measure convergence set; every fixed finite complex coefficient row has a convergent scalar Fourier readout and actual residual norm tending to zero on that set. | Exact cyclic-DFT/circle-Fourier representation comparison remains UNSUPPLIED. No common set for all functions, no uniform in weights/family estimate, no infinite-sum exchange or operator-norm rate. |
+| [sphere-packing](../../../../adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean) | Apply the Basic.E8 lower bound to v-w; transport the exact l2 norm to Euclidean distance; triangle inequality proves radius sqrt(2)/2 open balls at distinct E8 centres are disjoint. | No optimal density, dimension other than8, global sphere-packing upper bound or equivalence with local arithmetic mass-packing bookkeeping. |
+| [openai-math](../../../../adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean) | Finite scalar/kernel observations of the existing two-point readout consumer; preserves source length and affine dependence. | No uniform B for growing families, Liouville-to-Moebius bridge, actual Mertens kernel residual supplier, or RH estimate is provided. |
+| [anthropic-math](../../../../adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean) | Exact solution-fiber classification for the existing GRWTSK natural power-sum obstruction; elementary power injectivity supplies the missing c equality. | No integer/sign extension, exponent-two statement, independently re-proved modularity input or verified executable search implementation is claimed. |
+
+The PFR proof subtracts two coset representations and uses closure of the SAME
+submodule under subtraction. The center-set cardinality grows at most
+quadratically; the exact exponent-nine upstream bound is not silently replaced
+by the original paper's weaker exponent. The Finset-facing result proves the
+coercion and cardinality comparison explicitly. APAP then illustrates a different
+move: contradicting the quantitative rank bound extracts an actual three-term
+progression, and logarithmic monotonicity lets an external positive density
+budget feed that exact finite-field threshold.
+
+The algebraic calculus makes joint premises concrete. Induction proves every
+extracted source axiom belongs to the original context; completeness supplies
+a derivation, so its finite support gives a finite SUBSET of that context with
+the same consequence. Retaining all support is sufficient; smallest/minimal
+support and a checked map to the root inference representation remain separate.
+A countermodel blocks derivation, reflexivity uses no premise, and transitivity
+retains both premise supports.
+
+The analytic results retain the observation that matters. Two successive PNT
+windows produce two actual primes and a sum target, not each requested even
+number. Countable continuous periodic Fourier inputs share a full-measure set;
+finite linear observations and their actual residual norms converge there.
+This is not an identification with the cyclic DFT or a uniform operator rate.
+E8 differences inherit the lattice lower bound in the Euclidean norm, which
+proves disjointness for OPEN balls. Closed balls may meet at the boundary.
+
+The Liouville consumer proves positivity of the normalization and gives a bound
+for a fixed finite l1-unit-ball family of readouts. Constants remain dependent
+on the affine family. The Fermat consumer closes every zero case: natural power
+solutions at exponent≥3 are exactly the two axes in the fixed-output fiber,
+which may coincide at zero. It supplies a complete search obstruction rather
+than assuming the output is positive or extrapolating finite search.
+
+Three audit findings changed the mathematical choices: the optimal sphere-packing
+headline and APAP integer headline are literal `sorry` placeholders; metadata
+records a transitive `sorryAx` in generic Carleson–Hunt. None is consumed by these
+results. Narrower Basic.E8, finite-field APAP and continuous-periodic classical
+Carleson endpoints are used. Upstream claims about their axioms still require
+local exact-source checks; an apparent proof body alone does not settle that.
+
+Compilation, fresh kernel replay, full transitive axiom audit and independent
+expected-interface checks are NOT_RUN. The shared native activation lock was
+held. Static source/API review and cross-review corrected a conjunction-order
+mistake in the Fermat fiber proof; they are not compiler or kernel evidence.
+This is mathematical source progress, not measured improvement in AI discovery.
+The remaining-provider obligations explicitly cover statement fidelity, IEANTN
+claim/certificate roles, versioned proof sources, intermediate FLT inputs, and
+Lean3/Lean4 separation. Continue those obligations rather than counting more
+imports as mathematical saturation.

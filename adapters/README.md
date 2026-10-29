@@ -40,3 +40,10 @@ and provider catalogues. These surfaces are not proof acceptance.
 - [apap](apap/README.md): `YaelDillies/apap`.
 - [lean-liquid](lean-liquid/README.md): `leanprover-community/lean-liquid`.
 - [lean-proofs](lean-proofs/README.md): `plby/lean-proofs`.
+
+## Mathematical consumer integration
+
+[Consumer results](CONSUMERS.md) connect source theorems to local problems with
+explicit hypotheses, representation comparisons and precise missing bridges.
+Source candidates are not mathematical acceptance; native verification remains
+separately tracked.

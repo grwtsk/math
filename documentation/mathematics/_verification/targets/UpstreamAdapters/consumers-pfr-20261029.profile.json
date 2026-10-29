@@ -1,0 +1,18 @@
+{
+  "project_subdir": "adapters/pfr",
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.sub_subset_difference_centers",
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.difference_cover_of_small_doubling",
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.finset_difference_cover_of_small_doubling"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

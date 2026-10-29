@@ -1,0 +1,18 @@
+{
+  "project_subdir": "adapters/sphere-packing",
+  "contracts": [
+    {
+      "source": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
+      "declarations": [
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.difference_norm_lower_bound",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.centre_distance_lower_bound",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.open_balls_disjoint"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

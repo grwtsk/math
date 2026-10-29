@@ -1,0 +1,445 @@
+{
+  "schema": "grwtsk.adapter-consumer-integrations/1",
+  "local_attribution": "grwtsk contributors",
+  "scope": "FIRST_CONSUMER_WAVE_NOT_CORPUS_SATURATION_OR_AI_BENEFIT_MEASUREMENT",
+  "consumers": [
+    {
+      "provider": "pfr",
+      "project_subdir": "adapters/pfr",
+      "path": "adapters/pfr/GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.sub_subset_difference_centers",
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.difference_cover_of_small_doubling",
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.finset_difference_cover_of_small_doubling"
+      ],
+      "upstream": [
+        {
+          "repository": "teorth/pfr",
+          "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+          "source": "PFR/RhoFunctional.lean",
+          "blob": "af3f89faaf4f12edd2ec9796b93ae77474a99c70",
+          "declarations": [
+            "better_PFR_conjecture"
+          ]
+        }
+      ],
+      "hypotheses": "G arbitrary AddCommGroup and Module(ZMod2); finite nonempty A; Nat.card(A+A)<=K*Nat.card(A). No ambient finiteness assumption. Local Finset interface additionally needs DecidableEq G.",
+      "conclusion": "finite subgroup H size<=|A| and finite difference-center set D with |D|<(2*K^9)^2 and A-A subset D+H; natural powers and strict source constant preserved.",
+      "use": "Existing local APIs use Finsets and difference sets. Proves subtraction transport and exact Finset/set cardinal and pointwise bridges rather than leaving them as assumed interfaces. Does not yet combine with local energy inequalities.",
+      "consumer_paths": [
+        "GRWTSK/Combinatorics/VerySmallDoubling.lean",
+        "GRWTSK/Combinatorics/AdditiveEnergy.lean"
+      ],
+      "paper_or_source": "On a conjecture of Marton; W.T.Gowers, Ben Green, Freddie Manners, Terence Tao; 2023 arXiv:2311.05762. Source README attributes exponent-nine refinement to Jyun-Jie Liao. This consumer uses exact pinned refined source rather than claiming the original paper stated exponent9.",
+      "license": "Apache-2.0; upstream original authors/bylines retained through dependency",
+      "missing_bridges": [
+        "Native compilation/fresh kernel replay/transitive axiom audit/expected-type checking",
+        "Root4.34.1 local-library integration would need a separately reviewed version-compatible port; no root dependency change",
+        "Actual additive-energy application remains separate from this structured difference cover"
+      ],
+      "source_blob": "57b24a80833ce342adc5e7b681c866e7f4316d82",
+      "source_sha256": "447f470df1e384130e8e8baf25b0b5376a6cec1f5202d5cea42d928175215d82",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "apap",
+      "project_subdir": "adapters/apap",
+      "path": "adapters/apap/GRWTSK/Combinatorics/FiniteFieldProgressionWitness.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.FiniteFieldProgressionWitness.progression_of_rank_gt",
+        "GRWTSK.Combinatorics.FiniteFieldProgressionWitness.progression_of_density_lower_bound"
+      ],
+      "upstream": [
+        {
+          "repository": "YaelDillies/apap",
+          "commit": "b2001974b99b18ca1c13b6aa4791b7801563f939",
+          "source": "APAP/FiniteField.lean",
+          "blob": "68a671f366dc78f19108391b71505c40a7de2998",
+          "declarations": [
+            "ff"
+          ]
+        }
+      ],
+      "hypotheses": "G AddCommGroup,Fintype,Module(ZMod q); q prime>=3; A nonempty Finset. rank exceeds2^148*(1+log((A.dens:Real)^-1))^9. Second result takes positive external density lower bound delta<=A.dens and its corresponding rank threshold.",
+      "conclusion": "Explicit a,b,c in A, a+c=b+b and a!=b, matching exact ThreeAPFree nontriviality convention. No unproved pairwise-distinct strengthening.",
+      "use": "Roth consumers supply failure of ThreeAPFree; APAP yields a quantitative rank threshold. The local consumer extracts actual witnesses and accepts externally established positive density bounds with a proved monotonicity bridge.",
+      "consumer_paths": [
+        "GRWTSK/Combinatorics/Roth.lean"
+      ],
+      "paper_or_source": "Thomas F. Bloom and Olof Sisask; An improvement to the Kelley-Meka bounds on three-term arithmetic progressions; 2023 arXiv:2302.07211. Source README gives this exposition; native source is Yael Dillies/APAP contributors under Apache2.0.",
+      "license": "Apache-2.0; source notices preserved through dependency",
+      "missing_bridges": [
+        "Native compilation/fresh kernel replay/transitive axiom audit/expected-type checking",
+        "No integer quantitative Roth consumer: APAP/Integer.lean theorem int is := sorry at this exact upstream pin",
+        "No root cross-version promotion or reinterpretation of exponent/prefix conditions"
+      ],
+      "source_blob": "c8236fb9574a1e709760a555464c99d9acdeccc4",
+      "source_sha256": "154ad452ca74081302b336e193b18d2236cb9f543339b9ba57c93d18d003e952",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "equational-theories",
+      "project_subdir": "adapters/equational-theories",
+      "path": "adapters/equational-theories/GRWTSK/GeneralAlgebraicSystems/EquationalFinitePremiseConsumers.lean",
+      "declarations": [
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.axiomSupport_subset",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.finite_subcontext_consequence",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.consequence_of_retained_support",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.countermodel_blocks_derivation",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.reflexive_support_empty",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.trans_support_mem_iff"
+      ],
+      "upstream": [
+        {
+          "repository": "teorth/equational_theories",
+          "commit": "2f49bdaf3d38ffb722e54ac1288c8269dac61846",
+          "source": "equational_theories/Compactness.lean",
+          "blob": "4efabb782fcfbf4f6b6602f7da346bc9dfd99a3c",
+          "declarations": [
+            "derive.getAxioms",
+            "derive.getAxiomsEnough",
+            "derive.Weak",
+            "Soundness",
+            "Completeness"
+          ]
+        },
+        {
+          "repository": "teorth/equational_theories",
+          "commit": "2f49bdaf3d38ffb722e54ac1288c8269dac61846",
+          "source": "equational_theories/Completeness.lean",
+          "blob": "06908b723c0b2ec23033aeed051296dacaf752ba",
+          "declarations": [
+            "derive.getAxioms",
+            "derive.getAxiomsEnough",
+            "derive.Weak",
+            "Soundness",
+            "Completeness"
+          ]
+        },
+        {
+          "repository": "teorth/equational_theories",
+          "commit": "2f49bdaf3d38ffb722e54ac1288c8269dac61846",
+          "source": "equational_theories/MagmaLaw.lean",
+          "blob": "9f90f06a08ae288c9fff1b160dcb0ad1ee9bfbd6",
+          "declarations": [
+            "derive.getAxioms",
+            "derive.getAxiomsEnough",
+            "derive.Weak",
+            "Soundness",
+            "Completeness"
+          ]
+        }
+      ],
+      "hypotheses": "A context Gamma of magma laws on Type u; DecidableEq of variables for extracted Finset support. Semantic consequence uses the upstream all-model domain; countermodels are arbitrary Type with a Magma instance, not finite-only.",
+      "conclusion": "A proof uses finitely many axioms all belonging to Gamma; semantic consequence has a finite Delta subset Gamma. Any slice retaining the full actual support suffices. Countermodels block derivations; reflexivity has empty support, transitivity combines both supports.",
+      "use": "Concrete source-axiom extraction for the local joint-premise inference programme; strengthens imported compactness by retaining Delta subset Gamma, and proves safe chosen-proof support restriction.",
+      "consumer_paths": [
+        "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/JointPremiseInference.lean"
+      ],
+      "paper_or_source": "Equational theories project proof calculus and completeness/compactness source, pinned 2026 repository revision. Original upstream author and license notices remain in source; no historical paper influence inferred.",
+      "license": "Apache-2.0, exact upstream notices retained",
+      "missing_bridges": [
+        "Actual source-bound compilation and axiom audit on pinned Lean4.29.1/Mathlib environment",
+        "Checked reification of this equational-law calculus into root JointPremiseInference representation",
+        "No assertion of smallest/minimal support or finite-model completeness",
+        "No acceptance of upstream executable graph closure merely from graph reachability"
+      ],
+      "source_blob": "b7226e16908e4813abf80c440b876866e1449d64",
+      "source_sha256": "4eb559b3a7f9d9c2f049be5ccf3b121aaf57fc67f6b6b3ee591d98d6fd62a2fe",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "pnt-plus",
+      "project_subdir": "adapters/pnt-plus",
+      "path": "adapters/pnt-plus/GRWTSK/NumberTheory/MultiplicativeNumberTheory/RelativePrimePairConsumers.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.RelativePrimePairConsumers.two_distinct_primes_in_relative_window",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.RelativePrimePairConsumers.distinct_prime_sum_in_relative_window"
+      ],
+      "upstream": [
+        {
+          "repository": "AlexKontorovich/PrimeNumberTheoremAnd",
+          "commit": "127b50e33f6033e2147921167a117af96d9ba4ea",
+          "source": "PrimeNumberTheoremAnd/Consequences.lean",
+          "blob": "d9283ccaac007eed83e131577df256bcecdd150f",
+          "declarations": [
+            "prime_between"
+          ]
+        }
+      ],
+      "hypotheses": "epsilon real >0. Eventually x real there exist natural p<q with both prime and x<p<q<(1+epsilon)x; consequently exists natural N=p+q with 2x<N<2(1+epsilon)x. Threshold depends on epsilon.",
+      "conclusion": "Compose two eventual relative-prime windows using delta=min(epsilon/4,1), then construct a target N=p+q from two distinct primes. Supplies actual prime-pair/sum witnesses, not arbitrary prescribed Goldbach targets.",
+      "use": "Compose two eventual relative-prime windows using delta=min(epsilon/4,1), then construct a target N=p+q from two distinct primes. Supplies actual prime-pair/sum witnesses, not arbitrary prescribed Goldbach targets.",
+      "consumer_paths": [
+        "GRWTSK.NumberTheory.Primes.GoldbachCenteredFailureMargin.actual_centered_failure_margin at GRWTSK/NumberTheory/MultiplicativeNumberTheory/GoldbachCenteredFailureMargin.lean has the representation proposition exists p q, Prime p and Prime q and p+q=N. New result supplies that shape for a constructed target."
+      ],
+      "paper_or_source": "Prime Number Theorem and More, Alex Kontorovich and Terence Tao (CITATION.cff version0.1.0; released2024-01-09, ongoing).",
+      "stable_reference": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/127b50e33f6033e2147921167a117af96d9ba4ea",
+      "license": "Apache-2.0",
+      "missing_bridges": [
+        "Does not represent every supplied even N, prove parity/window hypotheses of that full local margin theorem, provide effective thresholds or shrinking intervals, or import incompatible root GRWTSK modules. No RH consequence."
+      ],
+      "trust_finding": null,
+      "source_blob": "9d8294992c8ca4e5668bac03d33da037a597b361",
+      "source_sha256": "88175dceef9609927b5f08e9c34f9811b34cad0ed480b1a12905873bd77a5557",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "carleson",
+      "project_subdir": "adapters/carleson",
+      "path": "adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean",
+      "declarations": [
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.countable_family_ae_convergence",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_weighted_readout_ae_convergence",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_weighted_residual_ae_tendsto_zero"
+      ],
+      "upstream": [
+        {
+          "repository": "fpvandoorn/carleson",
+          "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+          "source": "Carleson/Classical/ClassicalCarleson.lean",
+          "blob": "cef99075c938b9a5351ef800b72e612345e4e071",
+          "declarations": [
+            "classical_carleson"
+          ]
+        }
+      ],
+      "hypotheses": "Index type iota is Countable; f:iota->Real->Complex; each f_i Continuous and Function.Periodic(2*Real.pi); s:Finset iota, weights w:iota->Complex fixed independently of Fourier cutoff. Conclusion uses Lebesgue a.e. on Real, root partialFourierSum, atTop over natural truncations.",
+      "conclusion": "Countable family of continuous 2pi-periodic complex functions shares one full-measure convergence set; every fixed finite complex coefficient row has a convergent scalar Fourier readout and actual residual norm tending to zero on that set.",
+      "use": "Countable family of continuous 2pi-periodic complex functions shares one full-measure convergence set; every fixed finite complex coefficient row has a convergent scalar Fourier readout and actual residual norm tending to zero on that set.",
+      "consumer_paths": [
+        "GRWTSK.Analysis.FiniteSums.DiscreteFourierReadout.pairing_synthesis and .pairing_residual_eq in GRWTSK/RealFunctions/DiscreteFourierReadout.lean use the same finite coefficient-row observation shape. This new theorem is a continuous-periodic consumer, not a proved equivalence with the cyclic DFT."
+      ],
+      "paper_or_source": "A blueprint for the formalization of Carleson’s theorem on convergence of Fourier series; Lars Becker, María Inés de Frutos-Fernández, Leo Diedering, Floris van Doorn, Sébastien Gouëzel, Asgar Jamneshan, Evgenia Karunus, Edward van de Meent, Pietro Monticone, Jasper Mulder-Sohn, Jim Portegies, Joris Roos, Michael Rothgang, Rajula Srivastava, James Sundstrom, Jeremy Tan, Christoph Thiele (pinned formalization.yaml).",
+      "stable_reference": "https://florisvandoorn.com/carleson/blueprint/",
+      "license": "Apache-2.0",
+      "missing_bridges": [
+        "Exact cyclic-DFT/circle-Fourier representation comparison remains UNSUPPLIED. No common set for all functions, no uniform in weights/family estimate, no infinite-sum exchange or operator-norm rate."
+      ],
+      "trust_finding": "Upstream formalization.yaml reports carleson_hunt incomplete (sorry_count3; axioms include sorryAx); it is NOT consumed. It reports classical_carleson sorry_count0 and standard three axioms, which is an upstream status claim pending local audit.",
+      "source_blob": "c2a19bae1774be37b2249df0b362e1aa40d78c38",
+      "source_sha256": "2e8a18017e446afad2e9e091e48f86e85e4227835d8fd7bcc86d434354b6cb69",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "sphere-packing",
+      "project_subdir": "adapters/sphere-packing",
+      "path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
+      "declarations": [
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.difference_norm_lower_bound",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.centre_distance_lower_bound",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.open_balls_disjoint"
+      ],
+      "upstream": [
+        {
+          "repository": "thefundamentaltheor3m/Sphere-Packing-Lean",
+          "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+          "source": "SpherePacking/Basic/E8.lean",
+          "blob": "c369209e9ae2a7e358e2b312cd251bf9caf20cd2",
+          "declarations": [
+            "E8_norm_lower_bound"
+          ]
+        }
+      ],
+      "hypotheses": "v,w:Fin8->Real; both in Submodule.E8 Real; v!=w. Metric is Euclidean via WithLp.toLp2, not the sup norm on functions. Balls are open with radius sqrt2/2; no disjoint-closed-ball assertion.",
+      "conclusion": "Apply the Basic.E8 lower bound to v-w; transport the exact l2 norm to Euclidean distance; triangle inequality proves radius sqrt(2)/2 open balls at distinct E8 centres are disjoint.",
+      "use": "Apply the Basic.E8 lower bound to v-w; transport the exact l2 norm to Euclidean distance; triangle inequality proves radius sqrt(2)/2 open balls at distinct E8 centres are disjoint.",
+      "consumer_paths": [
+        "Provides a geometric packing/non-overlap consumer using the same Euclidean norm/ball domain as GRWTSK.Geometry.RealAndComplexGeometry.SphereBasicPublic; no root namespace or dependency changes."
+      ],
+      "paper_or_source": "Basic.E8 source header: Bhavik Mehta and Gareth Ma,2025. Project CITATION: Sphere Packing in Lean, Christopher Birkbeck, Sidharth Hariharan, Seewoo Lee, Ho Kiu Gareth Ma, Bhavik Mehta, Maryna Viazovska; version0.1.0 released2025-06-13, ongoing.",
+      "stable_reference": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/77cf0a0c104f2e31501eab04d88bbc068d61c169/SpherePacking/Basic/E8.lean",
+      "license": "Apache-2.0",
+      "missing_bridges": [
+        "No optimal density, dimension other than8, global sphere-packing upper bound or equivalence with local arithmetic mass-packing bookkeeping."
+      ],
+      "trust_finding": "The pinned SpherePacking/MainTheorem.lean blob e0fd17482e5e38d3314d1d47bd691baa95f9672e contains a literal sorry headline. It is NOT imported/consumed; Basic.E8 has no lexical sorry, which is not a transitive axiom audit.",
+      "source_blob": "eb8fb5c074c24ffea08577deb37c14232b5430fd",
+      "source_sha256": "4d0712397c85af03f9fc97cf82a3dad179a1e6c9dfd7a980ca91928c22eb8336",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "openai-math",
+      "project_subdir": "adapters/openai-math",
+      "path": "adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+      ],
+      "upstream": [
+        {
+          "repository": "openai/math",
+          "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+          "source": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+          "blob": "2bd48811e73bbdc80c1f738fa889a14189186408",
+          "declarations": [
+            "OAI.OrdinaryTwoPointCorrelations.liouville_log_saving"
+          ]
+        }
+      ],
+      "hypotheses": "All finite affine families have positive leading coefficients and nonproportional affine forms. X real>=3. A common positive exponent c precedes the finite family; its positive constants C_i depend on individual forms. Unit-ball conclusion restricts sum_i norm(K_i)<=1.",
+      "conclusion": "Normalized Liouville readout norm bounded by sum_i norm(K_i)C_i, and by one B for the fixed finite l1-unit ball. Positive logarithmic scale is explicitly proved.",
+      "use": "Finite scalar/kernel observations of the existing two-point readout consumer; preserves source length and affine dependence.",
+      "consumer_paths": [
+        "adapters/openai-math/OpenAITwoPointFiniteFamily.lean"
+      ],
+      "paper_or_source": "OpenAI, Ordinary two-point correlations of multiplicative functions, September24 2026 source version; exact existing canonical paper identity retained.",
+      "license": "Apache-2.0 upstream; local attribution grwtsk contributors",
+      "missing_bridges": [
+        "No uniform B for growing families, Liouville-to-Moebius bridge, actual Mertens kernel residual supplier, or RH estimate is provided."
+      ],
+      "source_blob": "41fd47c54def263e91175137de294aaa389c8e3b",
+      "source_sha256": "cd02fb5593103477e7a80bc9af2d136f1237ceeb85071eaf268f4d50dcdc4fe4",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "anthropic-math",
+      "project_subdir": "adapters/anthropic-math/fermat",
+      "path": "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.power_sum_eq_iff_degenerate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.fixed_output_solution_fiber",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.positive_search_empty"
+      ],
+      "upstream": [
+        {
+          "repository": "anthropics/fermats-last-theorem",
+          "commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+          "source": "FinalCheck.lean",
+          "blob": "3ffbd60b8f9736f5569e4dd4774701a114d18266",
+          "declarations": [
+            "flt_pinned"
+          ]
+        }
+      ],
+      "hypotheses": "Natural n>=3 and natural a,b,c; no positivity assumption needed. Finite positive search has arbitrary natural bound.",
+      "conclusion": "Power-sum equality iff (a=0 and b=c) or (b=0 and a=c). For fixed c the exact solution fiber is {(0,c),(c,0)}, including the coincident zero case. Every positive bounded search is empty.",
+      "use": "Exact solution-fiber classification for the existing GRWTSK natural power-sum obstruction; elementary power injectivity supplies the missing c equality.",
+      "consumer_paths": [
+        "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/AnthropicMath/Fermat.lean"
+      ],
+      "paper_or_source": "Anthropic FLT formalization; Wiles1995 and Taylor-Wiles1995 sources already reconciled in the canonical ledger.",
+      "license": "Apache-2.0 upstream; local attribution grwtsk contributors",
+      "missing_bridges": [
+        "No integer/sign extension, exponent-two statement, independently re-proved modularity input or verified executable search implementation is claimed."
+      ],
+      "source_blob": "bcfbb5e8910bf9219756fb52d89494311daaa282",
+      "source_sha256": "13bcc9f927a5efc7235cfa7bbcbfc4142b2a0753cf9c8484013dc18065b183f6",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "independent_checker": "UNSUPPLIED"
+    }
+  ],
+  "excluded_or_restricted_endpoints": [
+    {
+      "repository": "thefundamentaltheor3m/Sphere-Packing-Lean",
+      "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+      "path": "SpherePacking/MainTheorem.lean",
+      "blob": "e0fd17482e5e38d3314d1d47bd691baa95f9672e",
+      "finding": "Literal sorry at optimal-density headline. Excluded; only Basic.E8 lower-bound endpoint consumed.",
+      "role": "SOURCE_PLACEHOLDER_NOT_ACCEPTED"
+    },
+    {
+      "repository": "YaelDillies/apap",
+      "commit": "b2001974b99b18ca1c13b6aa4791b7801563f939",
+      "path": "APAP/Integer.lean",
+      "finding": "Integer theorem int is a literal sorry placeholder. Excluded; finite-field ff consumed.",
+      "role": "SOURCE_PLACEHOLDER_NOT_ACCEPTED",
+      "blob": "43919f58c4e9e2ef73eac910ebbcec39b7dd2079"
+    },
+    {
+      "repository": "fpvandoorn/carleson",
+      "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+      "path": "formalization.yaml",
+      "blob": "e2e294383baf6f9894a3d6e6745399388a5da66b",
+      "finding": "Upstream metadata records carleson_hunt incomplete with3 sorries and sorryAx. Excluded; continuous2pi-periodic classical_carleson consumed, whose standard-axiom upstream status remains a claim pending local replay.",
+      "role": "UPSTREAM_AUDIT_CLAIM_NOT_LOCAL_RECEIPT"
+    }
+  ],
+  "remaining_provider_obligations": [
+    {
+      "provider": "formal-conjectures",
+      "next_obligation": "Produce an exact statement-equivalence consumer to an independently proved endpoint; conjecture stubs may not supply proofs."
+    },
+    {
+      "provider": "ieantn",
+      "next_obligation": "Select a proved versioned analytic claim and preserve certificate/range/premise roles before connecting an actual local error budget."
+    },
+    {
+      "provider": "imperial-flt",
+      "next_obligation": "Select an actual proved arithmetic dependency rather than assuming the whole imported blueprint is complete."
+    },
+    {
+      "provider": "lean-proofs",
+      "next_obligation": "Select exact versioned theorem interfaces, audit patched dependency identities and connect their conclusion to a local consumer."
+    },
+    {
+      "provider": "lean-liquid",
+      "next_obligation": "Native Lean3 replay or a separately proved Lean4 port/representation comparison; no cross-kernel bridge is supplied."
+    },
+    {
+      "provider": "tao-erdos",
+      "next_obligation": "Continue source-bound checking of existing four-problem consumers and precise source/formulation comparisons."
+    }
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  }
+}
