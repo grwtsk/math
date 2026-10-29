@@ -140,6 +140,30 @@ Compilation, fresh kernel replay and transitive axiom audit: NOT_RUN.
 These finite signed identities provide no stronger bound on any sector,
 the complete mean, the remaining signed bulk, or RH.
 
+### Exact LL unit/off-diagonal decomposition, including N=0
+
+The definition `longLongOffDiagonal` is the literal signed LL double sum
+with gcd(q,r)=1 and q!=r, retaining the same closed ranges 1<=q,r<=N,
+actual long columns, masks and two selected-divisor denominators.
+`longLongCoprime_eq_unit_add_offDiagonal` gives, for every N,
+
+ LL = (if 1<=N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2
+       else 0) + longLongOffDiagonal.
+
+`longLongCoprime_eq_unit_add_offDiagonal_of_one_le` gives the positive-horizon
+form under exactly 1<=N. The only removed pair is (q,r)=(1,1), by
+`d_one_diagonal_iff`; off-diagonal pairs with exactly one unit quotient and
+both quotient orientations remain. The weighted unit square is exactly the
+original `longLong_unit_term`, not a newly assigned constant.
+`longLongCoprime_zero` and `longLongOffDiagonal_zero` state explicitly that
+both sums vanish at N=0. Thus no unit contribution is inserted into an empty
+inventory. Apart from the positive-horizon corollary, all identities allow
+arbitrary P,N,L,G without additional primality or analytic premises.
+These are SOURCE_PROOF_CANDIDATE scripts: compilation, fresh kernel replay
+and transitive axiom audit remain NOT_RUN. The split is a finite signed
+identity and supplies no stronger bound on LL, its remainder, the full
+moment, the signed bulk or RH.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
