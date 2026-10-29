@@ -1,0 +1,29 @@
+{
+  "project_subdir": "adapters/apap",
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/FiniteFieldAffineProgression.lean",
+      "universes": [
+        "u"
+      ],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.Combinatorics.FiniteFieldAffineProgression.endpoints_distinct_of_nontrivial_progression",
+        "GRWTSK.Combinatorics.FiniteFieldAffineProgression.affine_embedding_of_nontrivial_progression",
+        "GRWTSK.Combinatorics.FiniteFieldAffineProgression.affine_support_of_density_lower_bound"
+      ],
+      "module_expected_types": {
+        "GRWTSK.Combinatorics.FiniteFieldAffineProgression.endpoints_distinct_of_nontrivial_progression": "∀ {G : Type u} [AddCommGroup G] {q : Nat} [Module (ZMod q) G]\n  {a b c : G} (hq₃ : 3 ≤ q) (hq : q.Prime)\n  (habc : a + c = b + b) (hab : a ≠ b), a ≠ c ∧ b ≠ c",
+        "GRWTSK.Combinatorics.FiniteFieldAffineProgression.affine_embedding_of_nontrivial_progression": "∀ {G : Type u} [AddCommGroup G] {q : Nat} [Module (ZMod q) G]\n  {a b c : G} (hq₃ : 3 ≤ q) (hq : q.Prime)\n  (habc : a + c = b + b) (hab : a ≠ b),\n  ∃ (r : G) (e : Fin 3 ↪ G), r ≠ 0 ∧\n    e 0 = a ∧ e 1 = b ∧ e 2 = c ∧\n    ∀ i : Fin 3, e i = a + i.val • r",
+        "GRWTSK.Combinatorics.FiniteFieldAffineProgression.affine_support_of_density_lower_bound": "∀ {G : Type u} [AddCommGroup G] [Fintype G]\n  {q : Nat} [Module (ZMod q) G] {A : Finset G} {δ : Real}\n  (hq₃ : 3 ≤ q) (hq : q.Prime) (hA₀ : A.Nonempty)\n  (hδ : 0 < δ) (hδA : δ ≤ (A.dens : Real))\n  (hrank : (2 : Real) ^ (148 : Nat) * (1 + Real.log δ⁻¹) ^ (9 : Nat) <\n    (Module.finrank (ZMod q) G : Real)),\n  ∃ (a r : G) (e : Fin 3 ↪ G), r ≠ 0 ∧\n    (∀ i : Fin 3, e i = a + i.val • r) ∧\n    (Finset.map e (Finset.univ : Finset (Fin 3))) ⊆ A ∧\n    (Finset.map e (Finset.univ : Finset (Fin 3))).card = 3"
+      }
+    }
+  ]
+}

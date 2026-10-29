@@ -40,3 +40,15 @@ New subject-organized source candidates: `adapters/apap/GRWTSK/Combinatorics/Fin
 [consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
+
+## Affine three-point support continuation
+
+`GRWTSK/Combinatorics/FiniteFieldAffineProgression.lean` constructs a nonzero-step
+embedding of `Fin 3` and an actual support of cardinality3 in the SAME set under
+the exact original density/rank premises. Odd prime q≥3 supplies the previously
+missing first/third separation; characteristic2 is excluded explicitly.
+See [references](references.md), the canonical ledger and the exact static target.
+The source pin is `9b4fbbeed7922618e887a646cc2b15d244fff2b8` / blob `422b30e25d448e0ae000b1b2ab0ac23efafe8044`.
+Old witness source/targets remain unchanged; all native checks remain NOT_RUN.
+The current citation mapping corrects a historical title/identifier mismatch
+without changing earlier source pins or evidence outcomes.
