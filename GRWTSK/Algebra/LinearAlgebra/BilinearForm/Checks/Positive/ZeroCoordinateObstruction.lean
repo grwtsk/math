@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction
+import GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.ZeroCoordinateObstruction
 
 set_option linter.hashCommand false
 
