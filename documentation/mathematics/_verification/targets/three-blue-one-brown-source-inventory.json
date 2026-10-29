@@ -338,15 +338,15 @@
     },
     {
       "url": "https://www.3blue1brown.com/lessons/clacks-solution",
-      "status": "PENDING_SOURCE_REVIEW"
+      "status": "PARTIAL_SOURCE_REVIEW"
     },
     {
       "url": "https://www.3blue1brown.com/lessons/clacks-via-light",
-      "status": "PENDING_SOURCE_REVIEW"
+      "status": "PARTIAL_SOURCE_REVIEW"
     },
     {
       "url": "https://www.3blue1brown.com/lessons/clacks",
-      "status": "PENDING_SOURCE_REVIEW"
+      "status": "PARTIAL_SOURCE_REVIEW"
     },
     {
       "url": "https://www.3blue1brown.com/lessons/cramers-rule",
@@ -658,7 +658,7 @@
     },
     {
       "url": "https://www.3blue1brown.com/lessons/colliding-blocks-v2",
-      "status": "PENDING_SOURCE_REVIEW"
+      "status": "PARTIAL_SOURCE_REVIEW"
     },
     {
       "url": "https://www.3blue1brown.com/lessons/complex-exponents",
@@ -731,6 +731,79 @@
     {
       "url": "https://www.3blue1brown.com/lessons/spheres-talk",
       "status": "PENDING_SOURCE_REVIEW"
+    }
+  ],
+  "priority_sequence": [
+    {
+      "title": "The most unexpected answer to a counting puzzle",
+      "youtube_id": "HEfHFsfGXjs",
+      "video_url": "https://www.youtube.com/watch?v=HEfHFsfGXjs",
+      "lesson_url": "https://www.3blue1brown.com/lessons/clacks/",
+      "source_publication_date": "2019-01-13",
+      "status": "PARTIAL_SOURCE_REVIEW_AND_UNCOMPILED_CANDIDATES",
+      "coverage_complete": false
+    },
+    {
+      "title": "Why do colliding blocks compute pi?",
+      "youtube_id": "jsYwFizhncE",
+      "video_url": "https://www.youtube.com/watch?v=jsYwFizhncE",
+      "lesson_url": "https://www.3blue1brown.com/lessons/clacks-solution/",
+      "source_publication_date": "2019-01-20",
+      "status": "PARTIAL_SOURCE_REVIEW_AND_UNCOMPILED_CANDIDATES",
+      "coverage_complete": false
+    },
+    {
+      "title": "How colliding blocks act like a beam of light...to compute pi.",
+      "youtube_id": "brU5yLm9DZM",
+      "video_url": "https://www.youtube.com/watch?v=brU5yLm9DZM",
+      "lesson_url": "https://www.3blue1brown.com/lessons/clacks-via-light/",
+      "source_publication_date": "2019-02-03",
+      "status": "PARTIAL_SOURCE_REVIEW_AND_UNCOMPILED_CANDIDATES",
+      "coverage_complete": false
+    },
+    {
+      "title": "Why colliding blocks compute pi",
+      "youtube_id": "6dTyOl1fmDo",
+      "video_url": "https://www.youtube.com/watch?v=6dTyOl1fmDo",
+      "lesson_url": "https://www.3blue1brown.com/lessons/colliding-blocks-v2/",
+      "source_publication_date": "2025-03-13",
+      "status": "PARTIAL_SOURCE_REVIEW_AND_UNCOMPILED_CANDIDATES",
+      "coverage_complete": false
+    }
+  ],
+  "sequence_acceptance_obligations": [
+    "Exact positive-mass collision law and physical nontrivial selection",
+    "Admissible contact dynamics with deterministic next impact, including terminal and simultaneous-impact boundaries",
+    "Mass-weighted reflection law and configuration/velocity identification",
+    "Unfolding with exact preservation of physical event count",
+    "General trajectory termination and count ceil(pi/arctan(sqrt(m/M)))-1",
+    "Concrete counts for the demonstrated mass ratios with exact evidence",
+    "Unconditional approximation separated from all-exponents decimal-floor agreement",
+    "Named/type/kernel/axiom checking for each exact source and declaration"
+  ],
+  "paper_scope": {
+    "title": "Playing Pool with π (the Number π from a Billiard Point of View)",
+    "authors": [
+      "G. Galperin"
+    ],
+    "year": 2003,
+    "doi": "10.1070/RD2003v008n04ABEH000252",
+    "url": "https://www.maths.tcd.ie/~lebed/Galperin.%20Playing%20pool%20with%20pi.pdf",
+    "methods": "Lemma 2(c), sections 8–10",
+    "unresolved_local_premise": "No proof of all-exponents decimal-floor agreement is supplied. The source explicitly discusses a conjecture; its front-page theorem is not accepted without those later qualifications."
+  },
+  "additional_source_candidates": [
+    {
+      "module": "GRWTSK.Mechanics.Classical.ElasticCollisionDynamics",
+      "blob": "5572c411b021650b556f36c63ccb19e52a12f4ca",
+      "scope": "Collision-law uniqueness; scaled reflection; admissible event traces; energy and nonpenetration invariants; alternating event types; normalized equal-mass three-impact run",
+      "verification": "NOT_RUN"
+    },
+    {
+      "module": "GRWTSK.Mechanics.Classical.CollisionAngleCount",
+      "blob": "6df098b099eb624a3fa9b6418e850628c8c03195",
+      "scope": "Exact arithmetic for the angular target; mass-angle domain; no assertion that all physical traces have this count",
+      "verification": "NOT_RUN"
     }
   ]
 }
