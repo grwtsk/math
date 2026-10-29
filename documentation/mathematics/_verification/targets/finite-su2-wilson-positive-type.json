@@ -1,0 +1,338 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static exact-source mathematical acceptance target; no execution receipt",
+  "base_math_commit": "9ceda937e08379f790eae8c612b7df792671a6f9",
+  "base_tree": "e9ba61afe403b6e92821f44c168ccbba55c04468",
+  "initially_inspected_main": "7b31c010834a90a7093c383398e1c9ba1ed9f5cb",
+  "main_preservation": "Used the existing normal main checkout and fast-forwarded the complete tree. The prior dirty local ledger and exact reflection candidates were backed up and their contributed content was already incorporated upstream. Existing MSC layout, concurrent ledger and outside-band work retained. No isolation branch/worktree, reset, force-push, remote main mutation, root/dependency change or new worker.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "base_dependency_blobs": {
+    "AGENTS.md": "4fe8206c3615c1908475d17dc80128827f921efc",
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "documentation/taxonomy/msc2020/source-layout-v1.json": "ac1772b8dbd80e2943088d936a2e0b57039618e8",
+    "documentation/mathematics/_verification/targets/finite-su2-wilson.json": "e598febfa66e411ce7a26b7013b5036340b6894c",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+    "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": "9469f8f1678d8e019261e739af76189d7fe22c99",
+    "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+    "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+    "documentation/mathematics/_verification/targets/finite-su2-bond-reflection.json": "8962d33190167fd30e921ae05d4228d94f65c228",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean": "07a4d2a45318bbc322587229e65f31123286dd4c",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PositiveTimeObservables.lean": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionForm.lean": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f"
+  },
+  "source_comparison": "All six finite Wilson and five reflection source blobs are identical to the published reflection target. Their publication/acceptance scopes remain distinct. The fast-forward from 7b31c010834a90a7093c383398e1c9ba1ed9f5cb to the pinned base adds only the unrelated outside-band note; no new source/grid identification is inferred.",
+  "sources": [
+    {
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramExponential.lean",
+      "module": "GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.FiniteRealGramExponential",
+      "git_blob": "35f4ec0ab5b2a37217756fd5d1a8e51eedb53b45",
+      "sha256": "316319771aae16acd7f2a6f1bc2d8334d6ffc492f945faaa8dbe17c1e5973674",
+      "declarations": [
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.gram",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.gram_symm",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.realQuadratic",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.complexQuadratic",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.gram_pow_nonneg",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.taylorKernel",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.taylorKernel_nonneg",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.taylorKernel_tendsto",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.expGram_nonneg",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.complexQuadratic_re",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.complexQuadratic_im",
+        "GRWTSK.Analysis.InnerProductSpace.FiniteRealGramExponential.expGram_complex_positive"
+      ],
+      "direct_imports": [
+        "Mathlib.Analysis.SpecialFunctions.Exponential",
+        "Mathlib.Basic.Complex.BigOperators",
+        "Mathlib.Topology.Algebra.InfiniteSum.NatInt",
+        "Mathlib.Topology.Order.Basic",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2WilsonPositiveType.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2WilsonPositiveType",
+      "git_blob": "ed4360a999af6bf4805b3c78d8142db20827a3ee",
+      "sha256": "086a659beee72b872c184931faadd4cf38bec23eec364c57165d40356ff2da9f",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.RealCoordinate",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.realCoordinates",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.realTrace_mul_inv_eq_gram",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_eq_exp_gram",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_zero",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_self",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_symm",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_bitransport",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.kernelQuadratic",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_positiveType",
+        "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.repeated_matrix_null"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2Wilson",
+        "GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.FiniteRealGramExponential",
+        "Mathlib.Tactic.Group"
+      ]
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCrossPlaquetteKernel.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonCrossPlaquetteKernel",
+      "git_blob": "370c76874a9bd73a062e7e4d5729daf84fbb1b66",
+      "sha256": "352d8b896c94d896073a773b33d7c93b2b1cff1415e4d9f63b19c0aabd2eeff4",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.transportedUpper",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.lowerSpatial",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.plaquetteHolonomy_eq_path_pair",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.transportedUpper_gauge",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.lowerSpatial_gauge",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.temporalBoltzmann_eq_wilsonKernel",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.BoundaryVertex",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.boundaryPlaquette",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.boundaryBoltzmann_eq_wilsonKernel",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.boundaryBoltzmann_eq_reverse",
+        "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.boundaryKernel_gauge"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FinitePeriodicLattice",
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2WilsonPositiveType"
+      ]
+    }
+  ],
+  "private_helpers": {
+    "source": "FiniteRealGramExponential.lean",
+    "display_names": [
+      "realQuadratic_const_one",
+      "realQuadratic_scale",
+      "realQuadratic_sum"
+    ],
+    "scope": "Private source helper names only; generated elaborated private names must be extracted and audited after actual elaboration. No axiom-closure result is inferred from the roster."
+  },
+  "subject_placement": [
+    {
+      "msc2020": "46C05",
+      "heading": "Inner product spaces and their generalizations, Hilbert spaces",
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteRealGramExponential.lean"
+    },
+    {
+      "msc2020": "81T13",
+      "heading": "Yang-Mills and other gauge theories in quantum field theory",
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2WilsonPositiveType.lean"
+    },
+    {
+      "msc2020": "81T25",
+      "heading": "Quantum field theory on lattices",
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCrossPlaquetteKernel.lean"
+    }
+  ],
+  "paper_ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "base_blob": "6cc20909d1db4f5f739182f14ce7f8d6cb04bff5",
+    "candidate_blob": "b38973d4d18c6ceb387a36a3c4dfa0c3f3fd3aeb",
+    "sha256": "6e880c79b41276acb7b262e73e0b7d09f17e360e557bea7588fbb4a5d91a6753",
+    "edit_scope": "Append one stage entry to the full current merged ledger; every preceding byte is preserved. Integrate by appending the reviewed entry to any newer complete ledger, never replacing concurrent entries.",
+    "publication_base_blob": "1255eb6bd7a8f93a25abbbb23c04d2824b25dee8"
+  },
+  "upstream_api_source_pins": {
+    "Mathlib/Analysis/SpecialFunctions/Exponential.lean": "fa82b3018455974b7169a1311f01f9b38a75325b",
+    "Mathlib/Analysis/Normed/Algebra/Exponential.lean": "7d937cd1e48e3dacfd5d8ef03bca34661dd045b5",
+    "Mathlib/Topology/Algebra/InfiniteSum/NatInt.lean": "068846239a74b9cff04c456bcba142809ac58eca",
+    "Mathlib/Topology/Algebra/Monoid.lean": "aec0e747f56d1284079b639fd4ab1441ee848698",
+    "Mathlib/Topology/Order/OrderClosed.lean": "9603945a9c797c1d1d695ddf79281f6887211098",
+    "Mathlib/Data/Fintype/BigOperators.lean": "917939a39bc342d238acc0cebaee1ef3bce5f100",
+    "Mathlib/Basic/Complex/BigOperators.lean": "8726b21970f99de2ad13ba4ec14f68ad00e463df",
+    "Mathlib/Basic/Complex/Basic.lean": "02ad0aa87f370d1fd2bbb34072fc95cefcb27d87"
+  },
+  "paper_context": {
+    "authors": [
+      "Arthur Jaffe",
+      "Edward Witten"
+    ],
+    "title": "Quantum Yang-Mills Theory",
+    "bibliographic_year": 2006,
+    "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+    "scope": "Previously inspected same fourteen-page source section6.5 pp11-12. Finite regulator/reflection context only. This elementary local Frobenius/entrywise-series proof is not imported as a paper theorem and no historical influence or researcher participation is inferred."
+  },
+  "exact_kernel": {
+    "SU2": "The existing Matrix.specialUnitaryGroup (Fin2) Complex.",
+    "penalty": "The exact existing penalty(g)=1-(1/2)*Re(trace(matrix(g))).",
+    "definition": "wilsonKernel beta A B=Real.exp(-beta*penalty(A*B^-1)).",
+    "features": "RealCoordinate=(Fin2 x Fin2) x Fin2, retaining Re and Im of every matrix entry; eight real coordinates.",
+    "source_identity": "Re(trace(matrix(A*B^-1)))=sum_k realCoordinates(A,k)*realCoordinates(B,k), using actual matrix_inv=star and Frobenius matrix indices.",
+    "normalization": "wilsonKernel beta A B=exp(-beta)*exp((beta/2)*gram(realCoordinates,A,B)); all exponentials are scalar, entrywise, never matrix exponentials.",
+    "quantifiers": "For every finite I including empty, beta>=0, arbitrary A:I->SU2 and c:I->Complex, with no distinctness/injectivity/coefficient-reality premise.",
+    "quadratic": "Q=sum_i sum_j conjugate(c_i)*c_j*(wilsonKernel beta (A_i) (A_j):Complex).",
+    "conclusion": "Im(Q)=0 and 0<=Re(Q)."
+  },
+  "proof_components": {
+    "powers": "For real c, q_{n+1}(c)=sum_k q_n(i |-> c_i*f(i,k)). Base n=0 is (sum_i c_i)^2, the all-ones kernel.",
+    "taylor": "Nonnegative t^n/n! coefficients for t>=0 give nonnegative quadratic forms of every finite scalar Taylor sum. No pointwise sign of Gram entries is required.",
+    "limits": "Pinned NormedSpace.expSeries_div_hasSum_exp and Real.exp_eq_exp_Real give entry convergence; two finite-sum limit transports and closed real order give the quadratic inequality.",
+    "complex": "Real(Q_K(c))=q_K(Re c)+q_K(Im c). For symmetric real K the ordered mixed imaginary sums cancel by exact transposition.",
+    "wilson": "The eight-coordinate identity feeds the generic theorem at t=beta/2 and positive scalar exp(-beta).",
+    "boundaries": "The local path A=t_x*upper*t_(x+ei)^-1 and B=lower gives the existing holonomy exactly as A*B^-1. BoundaryVertex includes both time representatives0,T; both temporal transports retained.",
+    "gauge": "Both actual paths have the same endpoint gauges. Simultaneous independent left/right transports of both arguments preserve the kernel by actual SU2 conjugation invariance. No transport of only one argument is deleted.",
+    "orientation": "Kernel symmetry, proved from the Gram identity, supplies an exact reversed-argument cross-plaquette identity for the opposite boundary orientation."
+  },
+  "boundary_cases": [
+    "Empty finite coefficient inventory gives zero.",
+    "Entrywise zeroth power is all ones, including off diagonal; zero Taylor truncation is zero.",
+    "beta=0 gives all-ones Wilson kernel.",
+    "Repeated matrix family(A,A), coefficients(1,-1), is a proved null vector for every real beta; no strict positivity.",
+    "Scalar-series entry convergence includes negative Gram entries.",
+    "Both crossing layers0 andT, all spatial directions and both inverse edges remain in source."
+  ],
+  "exact_targets": [
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.SU2WilsonPositiveType.wilsonKernel_positiveType",
+      "hypotheses": "I:Type with Fintype I, beta:Real, 0<=beta, A:I->SU2, c:I->Complex",
+      "conclusion": "(kernelQuadratic beta A c).im=0 /\\ 0<=(kernelQuadratic beta A c).re",
+      "missing_fields": "NONE; no positivity certificate or unproved bound is assumed."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.boundaryBoltzmann_eq_wilsonKernel",
+      "hypotheses": "T:Nat, beta:Real, actual configuration on2*T, x:BoundaryVertex T, nu:Fin4 with0<nu",
+      "conclusion": "Actual exp(-beta*penalty(holonomy at the maintained boundary plaquette)) equals the exact positive-type kernel of transportedUpper and lowerSpatial.",
+      "scope": "An identity valid without requiring T>=2 or beta>=0; the global reflected-form consumer requires both."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonCrossPlaquetteKernel.boundaryKernel_gauge",
+      "conclusion": "Simultaneous gauge transformation of the two literal boundary paths preserves the same kernel."
+    }
+  ],
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "SOURCE_PROOF_CANDIDATES_ACCEPTANCE_PENDING"
+  },
+  "source_review": {
+    "status": "SOURCE_API_INSPECTION_ONLY",
+    "checks": "New source scan excludes sorry/admit/axiom/unsafe/native_decide in code. Pinned finite-product sums, scalar-series and finite-limit APIs inspected. Source scans and blob readback are neither type checking nor a transitive axiom/hypothesis audit.",
+    "inherited_warning": "The published SU2 dependency imports deprecated Mathlib.Data.Complex.BigOperators; the original reflection target separately records Data.Complex.Basic wrapper warnings. Existing dependency bytes are preserved. New source uses the maintained Mathlib.Basic.Complex.BigOperators path. Check inherited warnings under the proposed --wfail build; no acceptance or dependency migration is claimed."
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "required_acceptance": [
+    "Compile the three exact new files and their complete imported closure under the pinned toolchain/full lock, plus the existing concrete WilsonReflectionForm consumer dependency target; do not check only a wrapper.",
+    "Fresh independent kernel replay bound to all exact final source/dependency bytes and actual checker invocation.",
+    "Elaborated transitive axiom/hypothesis audit for every public declaration, three private helpers and all generated/opaque/instance dependencies; reject sorryAx, newly assumed research conclusions, unauthorized native trust, omitted dependencies or weakened hypotheses.",
+    "Check exactly complex finite coefficients, all-ones zeroth power, nonnegative Taylor weights, scalar series limits at negative Gram entries, matrix row/column/star indices, beta=0, repeated/null matrices, both boundary temporal transports and correct reversal.",
+    "No finite positive-type result or exact local source map is accepted as global reflection positivity without the actual two-boundary gauge/Haar/gluing and continuous-integral positivity bridges."
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.FiniteRealGramExponential",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2WilsonPositiveType",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonCrossPlaquetteKernel"
+  ],
+  "existing_consumer_verification_target": "documentation/mathematics/_verification/targets/finite-su2-bond-reflection.json",
+  "first_missing_gluing_bridge": {
+    "name": "two_boundary_gauge_haar_gluing",
+    "status": "UNPROVED_TARGET_ONLY; no Lean axiom/field/conditional wrapper is added.",
+    "hypotheses": "T>=2, beta>=0, F in existing PositiveTimeObservables.positiveTimeAlgebra T; use existing full reference Haar, Wilson Z and positiveReflectionForm.",
+    "inventory": "E+ is the actual positive interior-link set. E- is its reflected partner. C contains every temporal crossing link based at time0 orT. Prove E=E+ disjoint_union E- disjoint_union C before using product Haar.",
+    "coordinate_map": "Construct J(u,v,t), using actual u on E+, actual reflected/inverted v on E-, actual t on C. Establish the exact full product-Haar disintegration.",
+    "gauge_integration_identity": "For every continuous gauge-invariant I, prove integral I(J(u,v,t)) dnu+(u)dnu+(v)dnuC(t) = integral I(J(u,v,1)) dnu+(u)dnu+(v), through fixed-t gauge changes of conditional interior Haar. The map collapsing t to1 is not Haar preserving. Prove reflection/gauge intertwining to apply this to the actual Wilson reflection integrand.",
+    "factorization_identity": "With f(u)=F(J(u,1,1)), S+(u) the actual wholly-positive plaquette action and ell_b the positive spatial link at time1 orT corresponding to each actual crossing plaquette b, prove Z*B(F,F)=integral integral conj(f(v))*f(u)*exp(-beta*(S+(u)+S+(v)))*product_b wilsonKernel beta (u ell_b) (v ell_b) dnu+(u)dnu+(v). Time-T orientation uses kernel symmetry. All plaquettes at both periodic boundaries and all conditional Haar integrations must be retained.",
+    "positivity_consumer": "Then prove finite-product/continuous-integral positive type for this exact kernel to conclude0<=Re(existing positiveReflectionForm T hT beta F F). Neither gluing identity nor continuous-integral positivity is supplied by the current source."
+  },
+  "further_physical_frontier": "Global reflection positivity, Hilbert quotient/reconstruction, vacuum Hamiltonian/ground sector, continuum/infinite-volume limits and a uniform physical mass gap are not constructed by local kernel positivity.",
+  "independent_RH_frontier": {
+    "issue": "https://github.com/grwtsk/math/issues/1438",
+    "counterexample_prefix": "P_1(7,7)=2 refutes blanket prefix nonpositivity.",
+    "counterexample_terminal": "At N=2,d=1,RH right endpoint parameterL=3, full Abel expression=-2*u*v-2*v^2 with u,v>0; deleting terminal weights gives0.",
+    "unpaid": "H_{ceil(M^(3/4))}(j)<=C*M^(7/8) with one j-independentC and a proved growing-d aggregate bridge remains missing. No signed exponent improvement is supplied. Concurrent rough/outside-band sources are not identified with this exact endpoint kernel without a proved map.",
+    "evidence": "Compilation,fresh kernel replay,transitive axiom auditNOT_RUN.",
+    "cross_target_bridge": "NONE"
+  },
+  "publication_scope": "Exact three Lean sources, append-only complete merged-ledger candidate and static target uploaded as Git-data blobs for human recovery. No commit/ref/main push; uploads alone remain unpublished candidates. No proof execution, root/dependency change, new worker/branch/worktree or manuscript work.",
+  "guidance_evaluation": "The generic finite Gram/series theorem is actually consumed by the prescribed SU2 Wilson kernel; the literal temporal plaquette map retains the correct normalization and every transport. Global gluing is an explicit unpaid construction, not a free positivity field. No measured AI discovery improvement is asserted.",
+  "publication_base_math_commit": "71a30588e11be527c8048cc4f004352fc95b9f9d",
+  "original_paper_ledger_candidate_blob": "8fd935d95d13a7e717e55198dce28b80c08a0c22",
+  "publication_dependency_comparison": {
+    "AGENTS.md": {
+      "original": "4fe8206c3615c1908475d17dc80128827f921efc",
+      "publication": "4fe8206c3615c1908475d17dc80128827f921efc"
+    },
+    "lean-toolchain": {
+      "original": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "publication": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+    },
+    "lakefile.toml": {
+      "original": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "publication": "7cac6bef50ace37093759b857409ba65f65d118d"
+    },
+    "lake-manifest.json": {
+      "original": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "publication": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+    },
+    "documentation/taxonomy/msc2020/source-layout-v1.json": {
+      "original": "ac1772b8dbd80e2943088d936a2e0b57039618e8",
+      "publication": "cad4e4a56f500125a72b04f39fb9b842fa951809"
+    },
+    "documentation/mathematics/_verification/targets/finite-su2-wilson.json": {
+      "original": "e598febfa66e411ce7a26b7013b5036340b6894c",
+      "publication": "e598febfa66e411ce7a26b7013b5036340b6894c"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": {
+      "original": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "publication": "24bdeeb0d08d9a272a6388813bc78098c36dcf07"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": {
+      "original": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "publication": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6"
+    },
+    "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": {
+      "original": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "publication": "9469f8f1678d8e019261e739af76189d7fe22c99"
+    },
+    "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": {
+      "original": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "publication": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8"
+    },
+    "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": {
+      "original": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "publication": "91303fd670bf111dcc0e188aed6ad3554c62b87f"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": {
+      "original": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "publication": "4d67894f4300159d09138338ac7543d6cd7b4dcd"
+    },
+    "documentation/mathematics/_verification/targets/finite-su2-bond-reflection.json": {
+      "original": "8962d33190167fd30e921ae05d4228d94f65c228",
+      "publication": "8962d33190167fd30e921ae05d4228d94f65c228"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean": {
+      "original": "07a4d2a45318bbc322587229e65f31123286dd4c",
+      "publication": "07a4d2a45318bbc322587229e65f31123286dd4c"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean": {
+      "original": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+      "publication": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean": {
+      "original": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+      "publication": "1efe15c2c08451673809cef1c4aacb0ea9454ed3"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PositiveTimeObservables.lean": {
+      "original": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+      "publication": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1"
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionForm.lean": {
+      "original": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
+      "publication": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f"
+    }
+  },
+  "publication_source_layout_blob": "3db457f2df5097904f36bc2996a075d7effd987b",
+  "publication_note": "Three exact uploaded Lean source bytes retained; reviewed ledger append and three MSC rows merged into current complete upstream tree. No proof execution or acceptance is inferred. All acceptance facets remain NOT_RUN. Ledger append whitespace only was tidied; original candidate pin retained, mathematical text unchanged."
+}
