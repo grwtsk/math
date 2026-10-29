@@ -624,6 +624,85 @@ theorem dOneFiber_complete_offDiagonal_zero_components
   simp [dOneFiber, dOneOffDiagonal, shortShortOffDiagonal,
     mixedOffDiagonal, longLongOffDiagonal]
 
+/-- One original normalized joint-square summand, at the frozen source horizon. -/
+def dOnePair (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (q r : ℕ) : ℝ :=
+  jointCoefficient P N L N N L G q * jointCoefficient P N L N N L G r /
+    (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1))
+
+/-- The full coprime q<r triangle. No order on extraction primes or their
+products is imposed; the original column masks and denominators remain. -/
+def dOneUpperTriangle (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q < r then dOnePair P N L G q r else 0
+
+/-- Symmetry comes from the scalar column product and the two denominator
+factors. No symmetry or analytic hypothesis on G is needed. -/
+theorem dOnePair_symm (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (q r : ℕ) :
+    dOnePair P N L G q r = dOnePair P N L G r q := by
+  unfold dOnePair
+  congr 1 <;> ring
+
+/-- The complete signed coprime off-diagonal is twice the q<r triangle.
+Swapping the original two quotient inventories retains every source term. -/
+theorem dOneOffDiagonal_eq_two_mul_upperTriangle
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneOffDiagonal P N L G = 2 * dOneUpperTriangle P N L G := by
+  let f : ℕ → ℕ → ℝ := fun q r =>
+    if Nat.gcd q r = 1 ∧ q < r then dOnePair P N L G q r else 0
+  have hsplit (q r : ℕ) :
+      (if Nat.gcd q r = 1 ∧ q ≠ r then dOnePair P N L G q r else 0) =
+        f q r + f r q := by
+    by_cases hg : Nat.gcd q r = 1
+    · rcases lt_trichotomy q r with hlt | he | hgt
+      · have hne : q ≠ r := ne_of_lt hlt
+        have hnot : ¬r < q := not_lt_of_ge (le_of_lt hlt)
+        simp [f, hg, Nat.gcd_comm r q, hlt, hne, hnot]
+      · subst r
+        simp [f]
+      · have hne : q ≠ r := (ne_of_lt hgt).symm
+        have hnot : ¬q < r := not_lt_of_ge (le_of_lt hgt)
+        simpa [f, hg, Nat.gcd_comm r q, hgt, hne, hnot] using
+          dOnePair_symm P N L G q r
+    · have hgr : ¬Nat.gcd r q = 1 := by
+        simpa only [Nat.gcd_comm r q] using hg
+      simp [f, hg, hgr]
+  have hswap :
+      (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N, f r q) =
+        ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N, f q r := by
+    rw [Finset.sum_comm]
+  change (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q ≠ r then dOnePair P N L G q r else 0) =
+      2 * ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N, f q r
+  simp_rw [hsplit, Finset.sum_add_distrib]
+  rw [hswap]
+  ring
+
+/-- The entire d=1 fiber, with the long unit square and both orientations
+of every coprime unequal quotient pair retained. This is a signed identity. -/
+theorem dOneFiber_eq_unit_add_two_mul_upperTriangle
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G =
+      (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        2 * dOneUpperTriangle P N L G := by
+  rw [dOneFiber_eq_unit_add_complete_offDiagonal,
+    dOneOffDiagonal_eq_two_mul_upperTriangle]
+
+/-- Positive-horizon form; the original long unit square is not centered away. -/
+theorem dOneFiber_eq_unit_add_two_mul_upperTriangle_of_one_le
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (hN : 1 ≤ N) :
+    dOneFiber P N L G =
+      (sourceCoefficient P N 1 * longColumn P N L G 1)^2 +
+        2 * dOneUpperTriangle P N L G := by
+  rw [dOneFiber_eq_unit_add_two_mul_upperTriangle, if_pos hN]
+
+/-- The full fiber, complete off-diagonal and strict triangle are empty at N=0.
+The conditional unit term in the general identity is then zero as well. -/
+theorem dOneFiber_upperTriangle_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P 0 L G = 0 ∧ dOneOffDiagonal P 0 L G = 0 ∧
+      dOneUpperTriangle P 0 L G = 0 := by
+  simp [dOneFiber, dOneOffDiagonal, dOneUpperTriangle]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
