@@ -1,0 +1,48 @@
+{
+  "source_url": "https://www.3blue1brown.com/lessons/eulers-formula-via-group-theory/",
+  "title": "Euler's formula with introductory group theory",
+  "byline": "Grant Sanderson",
+  "published_text_adaptation": "River Way",
+  "date": "2017-03-03",
+  "source_module": "GRWTSK/GroupTheoryAndGeneralizations/Foundations/AxiomaticsAndElementaryPropertiesOfGroups/EulerSquareAction.lean",
+  "source_blob": "07657792aeeaa367540600fc35450f09d4d12ee3",
+  "namespace": "GRWTSK.GroupTheory.Elementary.EulerSquareAction",
+  "public_theorems": [
+    "act_one",
+    "act_mul",
+    "act_left_inverse",
+    "act_right_inverse",
+    "act_faithful",
+    "representation_injective",
+    "point_injective",
+    "point_nonzero",
+    "point_unit_circle",
+    "point_act",
+    "quarter_turn",
+    "real_axis_reflection",
+    "geometric_faithful",
+    "eight_vertex_actions",
+    "eight_geometric_actions"
+  ],
+  "scope": "Actual faithful action on labels embedded at 1,I,-1,-I; all eight abstract elements act as complex rotations or reflections. Cardinality of distinct represented permutations is eight.",
+  "hypotheses": "Fixed circumradius-one square, Vertex=ZMod4, Symmetry=DihedralGroup4; sr convention is conjugation after rotation. No variable-radius or arbitrary quadrilateral statement.",
+  "imported_mathematics": {
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module": "Mathlib/GroupTheory/SpecificGroups/Dihedral.lean",
+    "blob": "60015188ea04b938dd09b25d191a6ba4bc08fab9",
+    "role": "Abstract dihedral multiplication, group structure, finite enumeration and cardinality; geometric correspondence and faithfulness supplied locally as candidate bodies"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "finite_proof_boundary": "Ordinary Lean decide terms in source, never native_decide or an external computation receipt. No evaluation/compilation was dispatched.",
+  "unresolved": [
+    "Classification of ALL plane isometries preserving the square is not claimed",
+    "Arbitrary translated/scaled square transport not supplied",
+    "Full spoken-video mapping and all source-bound checking remain open"
+  ],
+  "video_verified_complete": false
+}

@@ -1422963,6 +1422963,25 @@
       "target_sha256": "0a850854127e2bba6890a7a46192b8a402c0de7b1bca5b17b3338f9a9173dbed",
       "target_git_blob": "b014a41a9482d3cb47cb3dc467d2510216c06f5d",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/GroupTheoryAndGeneralizations/Foundations/AxiomaticsAndElementaryPropertiesOfGroups/EulerSquareAction.lean",
+      "path": "GRWTSK/GroupTheoryAndGeneralizations/Foundations/AxiomaticsAndElementaryPropertiesOfGroups/EulerSquareAction.lean",
+      "source_sha256": "85499a8cf29f5be1a749dc716a16d985b80073487a5322450bdf7258921ac122",
+      "input_blob": "07657792aeeaa367540600fc35450f09d4d12ee3",
+      "source_kind": "lean_source",
+      "msc_code": "20A05",
+      "msc_label": "Axiomatics and elementary properties of groups",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Elementary square group: explicit faithful vertex permutations, complex geometric action and eight distinct symmetries",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "07657792aeeaa367540600fc35450f09d4d12ee3",
+      "target_sha256": "85499a8cf29f5be1a749dc716a16d985b80073487a5322450bdf7258921ac122",
+      "target_git_blob": "07657792aeeaa367540600fc35450f09d4d12ee3",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
