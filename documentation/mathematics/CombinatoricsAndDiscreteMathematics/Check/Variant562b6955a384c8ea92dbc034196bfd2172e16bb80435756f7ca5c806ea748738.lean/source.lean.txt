@@ -1,0 +1,17 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.Consequences
+#check Finset.sum_Icc_succ_top
+#check Finset.sum_Ico_succ_top
+#check Finset.sum_range_succ
+#check Finset.sum_le_sum_of_subset_of_nonneg
+#check Nat.floor_le
+#check Real.sqrt_le_sqrt
+#check Real.sqrt_sq_eq_abs
+#check Real.sqrt_exp
+#check Real.exp_mul
+#check Finset.sum_div
+#check Finset.sum_mul
+#check Finset.mul_sum
+#check Real.sq_sqrt
+#check Real.sqrt_pos
+#check Real.sqrt_sq
+#check Real.sqrt_le_iff

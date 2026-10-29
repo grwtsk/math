@@ -1,0 +1,13 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.MobiusQuadratic
+#check Finset.sum_fiberwise_of_maps_to
+#check Finset.sum_fiberwise_eq_sum_filter
+#check Finset.sum_bij
+#check Finset.sum_sigma'
+#check Finset.sum_product
+#check Finset.sum_product'
+#check Finset.sum_filter
+#check Nat.mem_divisorsAntidiagonal
+#check Nat.left_ne_zero_of_mem_divisorsAntidiagonal
+#check Nat.right_ne_zero_of_mem_divisorsAntidiagonal
+#check Finset.sum_subset
+#check Finset.sum_subset_zero_on_sdiff

@@ -1,0 +1,3 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceCorrelationPolynomial
+#check Finset.sum_div
+#check Finset.sum_mul

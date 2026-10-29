@@ -1,0 +1,30 @@
+# GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Types.Variant1cb0329c5672cc18ce4d9fbf9c2b14cd591bb8fadcd964a4b4b128c5cbbf4100
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**1 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Types/Variant1cb0329c5672cc18ce4d9fbf9c2b14cd591bb8fadcd964a4b4b128c5cbbf4100.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `924f7846aab68a99264b58b4a6a39312f1a6e708`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Types/Variant1cb0329c5672cc18ce4d9fbf9c2b14cd591bb8fadcd964a4b4b128c5cbbf4100.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](declarations/instance--ef4c20a28ac48accb7af8e59.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=21f1ddde482426f0430d00ef2caf86dfa368d9f32adf91af2fe4d5b90ca2939b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Types/Variant1cb0329c5672cc18ce4d9fbf9c2b14cd591bb8fadcd964a4b4b128c5cbbf4100.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->
