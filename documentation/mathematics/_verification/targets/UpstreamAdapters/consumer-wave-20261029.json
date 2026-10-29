@@ -1,0 +1,105 @@
+{
+  "schema": "grwtsk.source-bound-adapter-consumer-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "source_commit": "c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13",
+  "source_tree": "dbc18df9bb7055ba2f74b4520f3afcc551229e24",
+  "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_CONSUMERS",
+  "profiles": [
+    {
+      "provider": "pfr",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-pfr-20261029.profile.json",
+      "source_path": "adapters/pfr/GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean",
+      "source_blob": "57b24a80833ce342adc5e7b681c866e7f4316d82",
+      "declarations": [
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.sub_subset_difference_centers",
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.difference_cover_of_small_doubling",
+        "GRWTSK.Combinatorics.SmallDoublingDifferenceCover.finset_difference_cover_of_small_doubling"
+      ]
+    },
+    {
+      "provider": "apap",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-apap-20261029.profile.json",
+      "source_path": "adapters/apap/GRWTSK/Combinatorics/FiniteFieldProgressionWitness.lean",
+      "source_blob": "c8236fb9574a1e709760a555464c99d9acdeccc4",
+      "declarations": [
+        "GRWTSK.Combinatorics.FiniteFieldProgressionWitness.progression_of_rank_gt",
+        "GRWTSK.Combinatorics.FiniteFieldProgressionWitness.progression_of_density_lower_bound"
+      ]
+    },
+    {
+      "provider": "equational-theories",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-equational-theories-20261029.profile.json",
+      "source_path": "adapters/equational-theories/GRWTSK/GeneralAlgebraicSystems/EquationalFinitePremiseConsumers.lean",
+      "source_blob": "b7226e16908e4813abf80c440b876866e1449d64",
+      "declarations": [
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.axiomSupport_subset",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.finite_subcontext_consequence",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.consequence_of_retained_support",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.countermodel_blocks_derivation",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.reflexive_support_empty",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.trans_support_mem_iff"
+      ]
+    },
+    {
+      "provider": "pnt-plus",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-pnt-plus-20261029.profile.json",
+      "source_path": "adapters/pnt-plus/GRWTSK/NumberTheory/MultiplicativeNumberTheory/RelativePrimePairConsumers.lean",
+      "source_blob": "9d8294992c8ca4e5668bac03d33da037a597b361",
+      "declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.RelativePrimePairConsumers.two_distinct_primes_in_relative_window",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.RelativePrimePairConsumers.distinct_prime_sum_in_relative_window"
+      ]
+    },
+    {
+      "provider": "carleson",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-carleson-20261029.profile.json",
+      "source_path": "adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean",
+      "source_blob": "c2a19bae1774be37b2249df0b362e1aa40d78c38",
+      "declarations": [
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.countable_family_ae_convergence",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_weighted_readout_ae_convergence",
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence.finite_weighted_residual_ae_tendsto_zero"
+      ]
+    },
+    {
+      "provider": "sphere-packing",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-sphere-packing-20261029.profile.json",
+      "source_path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean",
+      "source_blob": "eb8fb5c074c24ffea08577deb37c14232b5430fd",
+      "declarations": [
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.difference_norm_lower_bound",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.centre_distance_lower_bound",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8SeparationConsumers.open_balls_disjoint"
+      ]
+    },
+    {
+      "provider": "openai-math",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-openai-math-20261029.profile.json",
+      "source_path": "adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+      "source_blob": "41fd47c54def263e91175137de294aaa389c8e3b",
+      "declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+      ]
+    },
+    {
+      "provider": "anthropic-math",
+      "profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-anthropic-math-20261029.profile.json",
+      "source_path": "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "source_blob": "bcfbb5e8910bf9219756fb52d89494311daaa282",
+      "declarations": [
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.power_sum_eq_iff_degenerate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.fixed_output_solution_fiber",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.positive_search_empty"
+      ]
+    }
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "independent_checker": "UNSUPPLIED",
+  "scope": "24 explicit candidate declarations across eight pinned native-version provider packages. No corpus-wide proof acceptance or measured intelligence benefit."
+}
