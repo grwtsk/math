@@ -1421883,6 +1421883,25 @@
       "target_sha256": "1f11f5c663742c9841d73089907c2fab55e7c154ed83d6ad8f63a464267d9be1",
       "target_git_blob": "96294d50bdbdd96ce92eb61cc1a128fd01667bee",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocityPhase.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocityPhase.lean",
+      "source_sha256": "c28cd6b3ccc0be01a8f0a3ca05dbf90c2072bc21b0c630c81318a2d9a847c9bf",
+      "input_blob": "b7c60ad8dd83cf18e59f21bd354a118c9273819b",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Velocity-circle reflection and actual physical impact-pair rotation for two elastic bodies",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "b7c60ad8dd83cf18e59f21bd354a118c9273819b",
+      "target_sha256": "c28cd6b3ccc0be01a8f0a3ca05dbf90c2072bc21b0c630c81318a2d9a847c9bf",
+      "target_git_blob": "b7c60ad8dd83cf18e59f21bd354a118c9273819b",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
