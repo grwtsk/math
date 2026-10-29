@@ -3546,4 +3546,81 @@ theorem finiteMaskCandidates_length (width : Nat) :
     (finiteIndexCandidates (2 ^ width)).length = 2 ^ width :=
   finiteIndexCandidates_length (2 ^ width)
 
+/-- Recovery obligations for two named raw copies sharing one exact archive.
+The truth of byte recovery is a separate supplied operational premise. -/
+def sharedArchiveFeasible (rawA rawB archive : Bool) : Prop :=
+  (rawA = true ∨ archive = true) ∧ (rawB = true ∨ archive = true)
+
+/-- Marginal logical bytes with an independently protected recovery manifest. -/
+def sharedArchiveCost (rawABytes rawBBytes archiveBytes manifestBytes : Nat)
+    (rawA rawB archive : Bool) : Nat :=
+  (if rawA then rawABytes else 0) + (if rawB then rawBBytes else 0) +
+    (if archive then archiveBytes else 0) + manifestBytes
+
+/-- The four explicit clauses, after assigning their named Boolean coordinates.
+This is a typed formula, not a JSON parser or executable-solver refinement. -/
+def sharedArchiveCNF (rawA rawB archive manifest : Bool) : Prop :=
+  manifest = true ∧ (rawA = true ∨ archive = true) ∧
+    (rawB = true ∨ archive = true) ∧ (archive = false ∨ manifest = true)
+
+theorem sharedArchiveCNF_refines (rawA rawB archive manifest : Bool) :
+    sharedArchiveCNF rawA rawB archive manifest ↔
+      manifest = true ∧ sharedArchiveFeasible rawA rawB archive := by
+  constructor
+  · intro h
+    exact ⟨h.1, h.2.1, h.2.2.1⟩
+  · intro h
+    exact ⟨h.1, h.2.1, h.2.2, Or.inr h.1⟩
+
+/-- If the shared archive is no larger than both raw copies, every feasible
+selection costs at least archive plus manifest; zero costs are permitted. -/
+theorem sharedArchiveCost_lower_bound (rawABytes rawBBytes archiveBytes manifestBytes : Nat)
+    (archiveLe : archiveBytes ≤ rawABytes + rawBBytes)
+    (rawA rawB archive : Bool) (feasible : sharedArchiveFeasible rawA rawB archive) :
+    archiveBytes + manifestBytes ≤
+      sharedArchiveCost rawABytes rawBBytes archiveBytes manifestBytes rawA rawB archive := by
+  cases archive with
+  | false =>
+    have retainA : rawA = true := by
+      cases feasible.1 with
+      | inl retained => exact retained
+      | inr impossible => cases impossible
+    have retainB : rawB = true := by
+      cases feasible.2 with
+      | inl retained => exact retained
+      | inr impossible => cases impossible
+    rw [retainA, retainB]
+    exact Nat.add_le_add_right archiveLe manifestBytes
+  | true =>
+    exact Nat.add_le_add_right
+      (Nat.le_add_left archiveBytes
+        ((if rawA then rawABytes else 0) + (if rawB then rawBBytes else 0))) manifestBytes
+
+/-- A feasible witness attaining the lower bound in this supplied finite model. -/
+theorem sharedArchive_minimum (rawABytes rawBBytes archiveBytes manifestBytes : Nat)
+    (archiveLe : archiveBytes ≤ rawABytes + rawBBytes) :
+    sharedArchiveFeasible false false true ∧
+      sharedArchiveCost rawABytes rawBBytes archiveBytes manifestBytes false false true =
+        archiveBytes + manifestBytes ∧
+      ∀ rawA rawB archive, sharedArchiveFeasible rawA rawB archive →
+        archiveBytes + manifestBytes ≤
+          sharedArchiveCost rawABytes rawBBytes archiveBytes manifestBytes rawA rawB archive := by
+  have witnessCost :
+      sharedArchiveCost rawABytes rawBBytes archiveBytes manifestBytes false false true =
+        archiveBytes + manifestBytes := by
+    change (0 + archiveBytes) + manifestBytes = archiveBytes + manifestBytes
+    exact congrArg (fun value => value + manifestBytes) (Nat.zero_add archiveBytes)
+  exact ⟨⟨Or.inr rfl, Or.inr rfl⟩, witnessCost,
+    fun rawA rawB archive feasible =>
+      sharedArchiveCost_lower_bound rawABytes rawBBytes archiveBytes manifestBytes
+        archiveLe rawA rawB archive feasible⟩
+
+/-- The byte-cost instance measured for the two private v25 snapshot names.
+Numbers are model inputs, not a proof of filesystem inventory or gzip correctness. -/
+theorem privateIndexArchive_v129_lower_bound (rawA rawB archive : Bool)
+    (feasible : sharedArchiveFeasible rawA rawB archive) :
+    148758142 ≤ sharedArchiveCost 240198757 240198757 148756327 1815 rawA rawB archive :=
+  sharedArchiveCost_lower_bound 240198757 240198757 148756327 1815
+    (by decide) rawA rawB archive feasible
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
