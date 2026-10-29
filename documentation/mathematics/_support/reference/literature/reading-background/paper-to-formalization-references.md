@@ -1447,6 +1447,14 @@ record: compilation, kernel replay, transitive axiom auditing and expected-type
 acceptance remain **PENDING / NOT_RUN** for that target until actual evidence.
 The passing core receipt supplies no evidence for this different module.
 
+### Union-closed bounded replay failure and arithmetic isolation (2026-10-29)
+
+Henning Bruhn and Oliver Schaudt, *The journey of the union-closed sets conjecture*, arXiv:1309.3297v2 (2013), <https://arxiv.org/abs/1309.3297>, Sections 4–5, remains the statement source for the known singleton/doubleton cases attributed there to Sarvate and Renaud. For finite union-closed families, a singleton or doubleton member gives an element occurring in at least half the members; the counterexample obstruction retains exactly those hypotheses. This does not prove the general conjecture.
+
+The four declarations `union_injective_on_avoiding`, `abundant_of_singleton_mem`, `abundant_of_pair_mem`, and `no_small_member_of_no_abundant` under `GRWTSK.CombinatoricsAndDiscreteMathematics.SetFamilies.UnionClosedSmallMembers` remain source proof candidates. Managed `union-closed-run-v7` at math `74aeb3c9021b441b9ef728d83540cdcca50cd871`, source blob `249ee949d9523efddd63875fd6427d0ba4f5a194`, exited 1: target Lean exited -6 with interpreter memory exhaustion under the unchanged 1024 MiB limit. Host restoration passed. Receipt SHA256 `83d82f75028d9080ef5bbae6418d2f4a0a462cddf2308cb040d46ac973655322`; target axiom audits and all four expected-type consumers: **NOT_RUN**.
+
+Source commit `83841105907905141e384149de407ffd64cb3c50`, blob `0df97758ff3fbf3afce0ec8361430a4850302556`, isolates the two final counting arguments into private natural-number lemmas, preserving the four public statements and hypotheses. This is an unverified elaboration-cost mitigation, not a diagnosed or verified cure. Fresh source-bound replay, expected types and transitive axiom audit: **NOT_RUN**; another owner holds admission. The separately verified thirteen Collatz/Erdős–Moser declarations retain their earlier exact receipt scope.
+
 <!-- BEGIN DOCUMENT CERTIFICATION -->
 **Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
 
