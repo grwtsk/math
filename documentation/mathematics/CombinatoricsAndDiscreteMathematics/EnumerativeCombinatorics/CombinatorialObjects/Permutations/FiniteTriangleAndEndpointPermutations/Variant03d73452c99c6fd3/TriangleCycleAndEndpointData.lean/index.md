@@ -1,0 +1,33 @@
+# GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Permutations.FiniteTriangleAndEndpointPermutations.Variant03d73452c99c6fd3.TriangleCycleAndEndpointData
+
+[Complete source index](../../../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations/FiniteTriangleAndEndpointPermutations/Variant03d73452c99c6fd3/TriangleCycleAndEndpointData.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `97fc41ba6e32e8a279d53eb7d91c8ff274ca56ea`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../_verification/specifications/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations/FiniteTriangleAndEndpointPermutations/Variant03d73452c99c6fd3/TriangleCycleAndEndpointData.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [TriangleVertex](declarations/trianglevertex--6d34f928d6f949a1b61e8589.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [triangleSuccessor](declarations/trianglesuccessor--cf01149344c2167d4640cd8e.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [triangleSuccessor_third_power](declarations/trianglesuccessor-third-power--a3c48e18ef37d37dfc46f9a1.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [BraidEndpointPresentation](declarations/braidendpointpresentation--e20a4b312169e75d519a2338.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cd573c600dd06e809f36463aa1c4145666504f95af81334c0f2bf3265488a221 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations/FiniteTriangleAndEndpointPermutations/Variant03d73452c99c6fd3/TriangleCycleAndEndpointData.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

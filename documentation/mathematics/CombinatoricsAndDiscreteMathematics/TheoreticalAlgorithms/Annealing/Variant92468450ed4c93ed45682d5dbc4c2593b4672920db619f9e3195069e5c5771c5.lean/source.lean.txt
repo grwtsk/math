@@ -1,0 +1,148 @@
+module
+
+public import Surface.Refactor.SpectralSampling
+public import Surface.Refactor.PublicApi
+
+/-! # Exhaustive and heuristic finite candidate selection -/
+
+public section
+
+namespace Surface.Refactor
+
+open Surface.Core
+
+@[surface_novel]
+inductive HardPolicyViolation where
+  | statementChange
+  | pathEscape
+  | staleSource
+  | publicApiChange
+  | axiomGrowth
+  | importCycle
+  | authorityCeiling
+deriving DecidableEq, Repr, BEq
+
+@[surface_novel]
+structure EnergyBreakdown where
+  hardPolicyViolationCount : Nat
+  leanErrorCount : Nat
+  unsolvedGoalCount : Nat
+  statementChangePenalty : Nat
+  publicApiChangePenalty : Nat
+  axiomGrowthPenalty : Nat
+  staleSourcePenalty : Nat
+  importCyclePenalty : Nat
+  diffSizeCost : Nat
+  newImportCost : Nat
+  retrievalMismatchCost : Nat
+  modelUncertainty : Nat
+  redundancy : Nat
+  noveltyBonus : Nat
+deriving DecidableEq, Repr
+
+@[expose] def EnergyBreakdown.total (energy : EnergyBreakdown) : Nat :=
+  energy.hardPolicyViolationCount + energy.leanErrorCount +
+    energy.unsolvedGoalCount + energy.statementChangePenalty +
+    energy.publicApiChangePenalty + energy.axiomGrowthPenalty +
+    energy.staleSourcePenalty + energy.importCyclePenalty + energy.diffSizeCost +
+    energy.newImportCost + energy.retrievalMismatchCost + energy.modelUncertainty +
+    energy.redundancy
+
+@[surface_novel]
+structure AnnealingCandidate where
+  candidateId : String
+  operation : ProjectPatchAction
+  hardViolations : List HardPolicyViolation
+  energy : EnergyBreakdown
+
+@[expose] def AnnealingCandidate.Admissible (candidate : AnnealingCandidate) : Prop :=
+  candidate.hardViolations = []
+
+@[surface_novel, surface_published]
+theorem hard_violation_is_inadmissible (candidate : AnnealingCandidate)
+    (violation : HardPolicyViolation) (h : violation ∈ candidate.hardViolations) :
+    ¬ candidate.Admissible := by
+  intro admissible
+  rw [admissible] at h
+  simp at h
+
+/-- A proof-carrying exhaustive result.  Minimality is only over the recorded
+finite candidate list. -/
+@[surface_certificate]
+structure ExhaustiveSearchResult where
+  candidates : List AnnealingCandidate
+  chosen : AnnealingCandidate
+  chosenMem : chosen ∈ candidates
+  minimalOnEnumerated : ∀ candidate ∈ candidates,
+    chosen.energy.total ≤ candidate.energy.total
+
+@[surface_novel, surface_published]
+theorem exhaustive_argmin_is_minimal_on_enumerated_set
+    (result : ExhaustiveSearchResult) (candidate : AnnealingCandidate)
+    (h : candidate ∈ result.candidates) :
+    result.chosen.energy.total ≤ candidate.energy.total :=
+  result.minimalOnEnumerated candidate h
+
+@[surface_certificate]
+structure HeuristicAnnealingState where
+  seed : Nat
+  temperatureNumerator : Nat
+  temperatureDenominator : Nat
+  proposals : List String
+  accepted : List String
+  rejected : List String
+  backtrackCount : Nat
+deriving DecidableEq, Repr
+
+@[expose] def HeuristicAnnealingState.authority
+    (_state : HeuristicAnnealingState) : RefactorAuthority :=
+  .finiteEvidence
+
+@[surface_novel, surface_published]
+theorem heuristic_receipt_does_not_claim_global_optimality
+    (state : HeuristicAnnealingState) : state.authority = .finiteEvidence :=
+  rfl
+
+@[surface_novel]
+structure WaveCollapseDomain where
+  goalCell : GoalCellId
+  admissibleCandidates : List String
+  entropyNumerator : Nat
+  entropyDenominator : Nat
+deriving DecidableEq, Repr
+
+@[surface_certificate]
+structure CollapseStepReceipt where
+  domain : WaveCollapseDomain
+  chosen : String
+  chosenMem : chosen ∈ domain.admissibleCandidates
+  propagatedConstraintIds : List String
+  overlayElaborated : Bool
+
+@[expose] def CollapseStepReceipt.authority (_receipt : CollapseStepReceipt) :
+    RefactorAuthority := .finiteEvidence
+
+@[surface_novel, surface_published]
+theorem collapse_choice_respects_admissible_domain (receipt : CollapseStepReceipt) :
+    receipt.chosen ∈ receipt.domain.admissibleCandidates :=
+  receipt.chosenMem
+
+/-- Natural topological ranks make execution dependencies forward-only. -/
+@[surface_novel]
+structure ExecutionDependencyEdge where
+  prerequisiteRank : Nat
+  dependentRank : Nat
+  forward : prerequisiteRank < dependentRank
+
+@[surface_novel, surface_published]
+theorem execution_dependency_is_not_recursive (edge : ExecutionDependencyEdge) :
+    edge.prerequisiteRank ≠ edge.dependentRank :=
+  Nat.ne_of_lt edge.forward
+
+@[surface_novel, surface_published]
+theorem annealing_result_not_kernel_authority (state : HeuristicAnnealingState) :
+    state.authority ≠ .leanKernelChecked := by
+  intro h
+  cases h
+
+end Surface.Refactor

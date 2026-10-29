@@ -1,0 +1,71 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Linear.Variant4d51226f5ba488cc1bc71585abd09423d35c2c79a6f80cb79e656212d5ed4280
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `741ef0536d7d2c6b5754265721d4fb482d307cf0` · SHA-256 `4d51226f5ba488cc1bc71585abd09423d35c2c79a6f80cb79e656212d5ed4280`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2024 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+import Mathlib.Algebra.Homology.Additive
+import Mathlib.CategoryTheory.Linear.LinearFunctor
+
+/-!
+# The category of homological complexes is linear
+
+In this file, we define the instance `Linear R (HomologicalComplex C c)` when the
+category `C` is `R`-linear.
+
+## TODO
+
+- show lemmas like `HomologicalComplex.homologyMap_smul` (after doing the same
+for short complexes in `Mathlib/Algebra/Homology/ShortComplex/Linear.lean`)
+
+-/
+
+open CategoryTheory
+
+variable {R : Type*} [Semiring R] {C D : Type*} [Category C] [Preadditive C]
+  [Category D] [Preadditive D] [CategoryTheory.Linear R C] [CategoryTheory.Linear R D]
+  {ι : Type*} {c : ComplexShape ι}
+
+namespace HomologicalComplex
+
+variable {X Y : HomologicalComplex C c}
+
+instance : SMul R (X ⟶ Y) where
+  smul r f := { f := fun n => r • f.f n }
+
+@[simp]
+lemma smul_f_apply (r : R) (f : X ⟶ Y) (n : ι) : (r • f).f n = r • f.f n := rfl
+
+@[simp]
+lemma units_smul_f_apply (r : Rˣ) (f : X ⟶ Y) (n : ι) : (r • f).f n = r • f.f n := rfl
+
+instance (X Y : HomologicalComplex C c) : Module R (X ⟶ Y) where
+  one_smul a := by aesop_cat
+  smul_zero := by aesop_cat
+  smul_add := by aesop_cat
+  zero_smul := by aesop_cat
+  add_smul _ _ _ := by ext; apply add_smul
+  mul_smul _ _ _ := by ext; apply mul_smul
+
+instance : Linear R (HomologicalComplex C c) where
+
+end HomologicalComplex
+
+instance CategoryTheory.Functor.mapHomologicalComplex_linear
+    (F : C ⥤ D) [F.Additive] [Functor.Linear R F] (c : ComplexShape ι) :
+  Functor.Linear R (F.mapHomologicalComplex c) where
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d5f9e10f43e8d0f4882013b66d882d97e407aa629934e63368c3c5db405be381 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Linear/Variant4d51226f5ba488cc1bc71585abd09423d35c2c79a6f80cb79e656212d5ed4280.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->
