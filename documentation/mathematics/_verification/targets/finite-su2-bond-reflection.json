@@ -1,0 +1,368 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static mathematical acceptance target; no execution receipt",
+  "base_math_commit": "316d013b8a1f1bcbe196d3f90374a1e5c6ce9a1d",
+  "base_tree": "3ab98c9a15b037b572bddd7ecb5fc026d3fa33a0",
+  "initially_inspected_main": "400eb5d6420a0f0c17d59974d55d5a1d0d27fa2e",
+  "main_preservation": "Recovered canonical main in a normal checkout after workspace maintenance removed prior Git metadata. No isolation branch/worktree, reset, force-push, commit/ref mutation or replacement of a concurrent tree. All preceding ledger bytes and all existing source are preserved.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "base_dependency_blobs": {
+    "AGENTS.md": "4fe8206c3615c1908475d17dc80128827f921efc",
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "documentation/taxonomy/msc2020/source-layout-v1.json": "10711fdd169ecd6a7873e845bc6b13d5ab08a703",
+    "documentation/mathematics/_verification/targets/finite-su2-wilson.json": "e598febfa66e411ce7a26b7013b5036340b6894c",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+    "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": "9469f8f1678d8e019261e739af76189d7fe22c99",
+    "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+    "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": "4d67894f4300159d09138338ac7543d6cd7b4dcd"
+  },
+  "finite_wilson_source": "Current actual MSC module paths and bytes were read from finite-su2-wilson.json, blob e598febfa66e411ce7a26b7013b5036340b6894c. The three prior import adaptations are retained. Current source pins are bound above; earlier original bytes retain their historical scope.",
+  "sources": [
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/BondTimeReflection.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.BondTimeReflection",
+      "git_blob": "07a4d2a45318bbc322587229e65f31123286dd4c",
+      "sha256": "1f4a61230458cfe57cd6c99f3eaf36b751257c548004fe1b4af740253fb55937",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectVertex",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.temporalBack",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectVertex_time",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.temporalBack_time",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.temporalBack_eq_reflectVertex_sub_unit",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectVertex_involutive",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.temporalBack_involutive",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectVertex_shift_time",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.shift_temporalBack_time",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectVertex_shift_space",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.temporalBack_shift_space",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectVertexEquiv",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.temporalBackEquiv",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectLink",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectLink_direction",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectLink_temporal",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectLink_spatial",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectLink_involutive",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectLinkEquiv",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflection",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflection_temporal",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflection_spatial",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflection_involutive",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectionEquiv",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.continuous_reflection",
+        "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflectionHomeomorph"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FinitePeriodicLattice",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTimeReflection.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonTimeReflection",
+      "git_blob": "ecc68166d99274f0b4c90b88f1cd3728d39fe4d2",
+      "sha256": "d159bcbbba6243f6448c1b9ff29bf3ff06fd5f55e776db487713234535c8c255",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.penalty_inv",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.plaquetteHolonomy_reflection_spatial",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.plaquetteHolonomy_reflection_temporal",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.reflectPlaquette",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.reflectPlaquette_involutive",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.reflectPlaquetteEquiv",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.penalty_holonomy_reflection",
+        "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.wilsonAction_reflection"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.BondTimeReflection",
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FiniteSU2Wilson"
+      ]
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ReflectionHaar.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.ReflectionHaar",
+      "git_blob": "1efe15c2c08451673809cef1c4aacb0ea9454ed3",
+      "sha256": "25916266cd78b82d61e8fe67eaa637aae84b9dfe66dc42a56a624bb5a5aea087",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.haarProbability_isInvInvariant",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.measurePreserving_haarInverse",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.selectiveInverse",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.measurePreserving_selectiveInverse",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.measurePreserving_reindex",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.measurePreserving_reference_reflection",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.wilsonMeasure_map_reflection",
+        "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.measurePreserving_wilson_reflection"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonTimeReflection"
+      ]
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/PositiveTimeObservables.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.PositiveTimeObservables",
+      "git_blob": "a2f245ebcd20ea0b89db60b444c084b226b8c9f1",
+      "sha256": "57de524a73619f2abb8fc03177571c680da5b160af0a10bd994a1aef10c09886",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.Config",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.positiveVertex",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.positiveInteriorLink",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.GaugeInvariant",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.DependsOnPositiveLinks",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.positiveTimeAlgebra",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.mem_positiveTimeAlgebra_iff",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.gaugeInvariant_of_mem",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.dependsOnPositiveLinks_of_mem",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.conjugate",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.conjugate_apply",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.conjugate_mem",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.not_positiveInteriorLink_of_time_val_zero",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.not_positiveInteriorLink_of_time_zero",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.temporal_target_val_at_T",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.not_positiveInteriorLink_of_time_val_T",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.not_positiveInteriorLink_of_time_T",
+        "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.positiveInteriorLink_spatial_iff"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FiniteSU2Wilson",
+        "Mathlib.Topology.ContinuousMap.Algebra"
+      ]
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonReflectionForm.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonReflectionForm",
+      "git_blob": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
+      "sha256": "d8aed5b995d881f937953cf39e74b21f56e91bd77299a60fca5a3bb6e5ba739b",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.reflectionProduct",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.continuous_reflectionProduct",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.integrable_reflectionProduct",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.reflectionForm",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.reflectionForm_hermitian",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.reflectionForm_diagonal_im_zero",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.reflectionForm_diagonal_eq_real",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveWilsonMeasure",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm_integrable",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm_hermitian",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm_diagonal_im_zero",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm_diagonal_eq_real",
+        "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm_properties"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.ReflectionHaar",
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.PositiveTimeObservables",
+        "Mathlib.MeasureTheory.Function.LocallyIntegrable",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    }
+  ],
+  "subject_placement": {
+    "msc2020": "81T25",
+    "heading": "Quantum field theory on lattices",
+    "path_prefix": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices",
+    "namespace_policy": "Existing declaration namespaces remain GRWTSK.Geometry.GaugeTheory.*; taxonomy is navigation, not proof acceptance."
+  },
+  "paper_ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "base_blob": "f545e16706830b109fee8ade8a1b54fa077deb6c",
+    "candidate_blob": "6cc20909d1db4f5f739182f14ce7f8d6cb04bff5",
+    "sha256": "e2cb8b22994d3333f0ce7bfc3666640186da00b3bec53b3e731ba4ae04d2a53b",
+    "edit_scope": "Append one stage-specific Jaffe-Witten reflection/Hermitian pairing entry to the complete current ledger; preserve all preceding bytes and public bylines.",
+    "publication_base_blob": "f4b7a13c78c0b57988d0520f779a6ce0bfbb0d39"
+  },
+  "upstream_api_source_pins": {
+    "Mathlib/Algebra/BigOperators/Group/Finset/Defs.lean": "0eec64f2576f4d449b44b877678fe95678cfc9f0",
+    "Mathlib/LinearAlgebra/Matrix/Trace.lean": "a56896c81302543b7c1e84cd6937ceb00ea54332",
+    "Mathlib/MeasureTheory/Group/Measure.lean": "6b47bb8ce072504dfaf9080749c99b525d35c91b",
+    "Mathlib/MeasureTheory/Measure/Haar/Unique.lean": "d8f27cee36e757273dbc80d255aaf98ed21bc354",
+    "Mathlib/MeasureTheory/Constructions/Pi.lean": "2a62c773222f631197270b3ac84ea3efaf728458",
+    "Mathlib/MeasureTheory/MeasurableSpace/Embedding.lean": "575bea33c92b621ceb196eb8bfa36d822435b1be",
+    "Mathlib/Topology/ContinuousMap/Algebra.lean": "ff3d01f255b2b565cb660cba3b140618c2d1d1c6",
+    "Mathlib/Algebra/Algebra/Subalgebra/Basic.lean": "5ed2e1c5e120a3f98b80e7bb190215a1f35b80d0",
+    "Mathlib/Data/ZMod/Basic.lean": "0e29ffc15e22165fea673f25ce8c171a1cf8c14c",
+    "Mathlib/MeasureTheory/Integral/Bochner/ContinuousLinearMap.lean": "24b8ad83aa2cb2a2cb5ce54ac6ce84dbad84bb7f",
+    "Mathlib/MeasureTheory/Integral/Bochner/Basic.lean": "5abe07ae60e8bdfe5d99a7e68c681a5b052ef4f2",
+    "Mathlib/MeasureTheory/Function/LocallyIntegrable.lean": "dc00e515b31d960ce61d0ce79d08ba0d8ab3af83",
+    "Mathlib/Topology/Algebra/Support.lean": "d4e215efd8fc8d81ecf98cdc1b7e091cfe9de8a0",
+    "Mathlib/MeasureTheory/Constructions/BorelSpace/Basic.lean": "7c7da67bdb2729e65b1245a11c800f945ee6214e",
+    "Mathlib/Basic/Complex/Basic.lean": "02ad0aa87f370d1fd2bbb34072fc95cefcb27d87"
+  },
+  "paper_context": {
+    "authors": [
+      "Arthur Jaffe",
+      "Edward Witten"
+    ],
+    "title": "Quantum Yang-Mills Theory",
+    "bibliographic_year": 2006,
+    "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+    "version_scope": "Same previously inspected fourteen-page Clay PDF, section6.5, pages11-12. The user-specified bond-reflection proof is local; no reflection-positivity theorem from the survey is imported without proof, and no historical influence or participation is inferred."
+  },
+  "actual_definitions": {
+    "period": "L=2*T, natural T>=2 in the concrete positive-time consumer. Geometric identities hold at all natural periods; finite Wilson measure identities use NeZero L.",
+    "theta": "theta(x)_0=1-x_0 moduloL; theta(x)_i=x_i for spatial i.",
+    "temporal_link": "R(x,0)=(theta(x)-e0,0); Theta(U)(x,0)=inverse(U(R(x,0))).",
+    "spatial_link": "R(x,i)=(theta(x),i) and Theta(U)(x,i)=U(R(x,i)) for i!=0.",
+    "positive_vertices": "Actual ZMod natural representatives1,...,T.",
+    "positive_interior_links": "Both source and target vertices lie in the positive set.",
+    "observable_algebra": "Concrete Subalgebra Complex C(Configuration(2*T,SU2),Complex), consisting of actual gauge-invariant maps constant on configurations agreeing on every positive interior link. Constants/addition/multiplication and conjugation closure proved.",
+    "pairing": "B(F,G)=integral conjugate(F(Theta U))*G(U) dmu_beta,2T, with the full existing Wilson density measure.",
+    "pairing_scope": "The source proves the displayed integral pairing identities; no packaged sesquilinear-form structure, separately exported linearity laws, nonnegative diagonal or Hilbert norm is asserted."
+  },
+  "exact_targets": [
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.BondTimeReflection.reflection_involutive",
+      "statement": "Theta(Theta U)=U for the literal full link reflection, including temporal inversion and spatial pullback."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonTimeReflection.wilsonAction_reflection",
+      "statement": "S(Theta U)=S(U), using actual holonomy orientation reversal, phi(g^-1)=phi(g), conjugation invariance and full plaquette permutation."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.measurePreserving_reference_reflection",
+      "statement": "Theta preserves the actual normalized product Haar reference measure, with inversion and coordinate-permutation preservation proved independently of gauge symmetry."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.ReflectionHaar.wilsonMeasure_map_reflection",
+      "statement": "Mapping the actual Wilson density by Theta preserves it. Measure symmetry itself is stated for every real beta; the actual finite probability/integrability consumer retains beta>=0."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.not_positiveInteriorLink_of_time_zero",
+      "statement": "The crossing temporal layer based at time0 is excluded from observable dependence because its source is outside the positive half."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.PositiveTimeObservables.not_positiveInteriorLink_of_time_T",
+      "statement": "For T>=2, the crossing layer based at timeT is excluded because its target has representativeT+1<2*T. Its Haar variables remain in the full measure."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.WilsonReflectionForm.positiveReflectionForm_properties",
+      "statement": "For every naturalT>=2, realbeta>=0 and F,G in the actual positive-time algebra: the reflection product is integrable under the actual Wilson probability, B(F,G)=conjugate(B(G,F)), and Im(B(F,F))=0."
+    }
+  ],
+  "proof_components": {
+    "geometry": "Commuting reflected spatial shifts and reversed temporal shifts give actual vertex/link involutions. Conditional temporal inversion combines with the link permutation to give Theta^2=id and its continuous homeomorphism.",
+    "orientation": "For temporal plaquettes let y=theta(x)-e0,A=U(y,0). Literal expansion gives H_ThetaU(x;0,i)=A^-1*H_U(y;0,i)^-1*A. Spatial plaquettes pull back to theta(x). An involutive base map preserves the complete mu<nu plaquette inventory.",
+    "penalty": "Actual SU2 inversion is matrix star. Diagonal real traces are unchanged, proving phi(g^-1)=phi(g); existing conjugation invariance gives penalty pullback under the plaquette bijection.",
+    "haar_inverse": "SU2 is noncommutative, and inversion is not treated as a homomorphism. The inverse Haar pushforward is left invariant by actual right invariance. Compact Haar uniqueness and total mass1 prove inversion invariance.",
+    "haar_permutation": "Actual finite Pi measure reindexing by an Equiv preserves identical Haar marginals. Selective temporal-coordinate inversion also preserves that product. Their composition is definitionally Theta.",
+    "wilson_density": "The proved reference preservation and literal action equality feed the existing Boltzmann density map theorem. No invariant measure or action field is assumed.",
+    "observables": "Concrete continuous-map algebra closure preserves gauge invariance and exact positive-interior dependence. Both crossing layers are explicitly excluded only from dependence. Reflection exchanges time halves; positive-algebra reflection stability is neither used nor claimed.",
+    "integrability": "Actual SU2 compactness makes full configuration space compact. Continuous reflection products have compact support and are integrable under the actual Wilson probability for beta>=0.",
+    "hermitian": "Change variables with the actual measure-preserving involutive homeomorphism and conjugate the Bochner integral. Complex conjugation identities give zero imaginary diagonal and equality to its real part.",
+    "boundaries": "All full configuration variables, both crossing temporal layers0 andT, both periodic boundaries and all original Haar integrations remain. No finite-volume or boundary quotient replaces the source measure."
+  },
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "SOURCE_PROOF_CANDIDATES_ACCEPTANCE_PENDING"
+  },
+  "required_acceptance": [
+    "Compile the five exact new modules with their complete current actual imported closure, including all six published finite Wilson sources, under the pinned toolchain and full lockfile.",
+    "Fresh independent kernel replay bound to the exact source/dependency bytes and actual checker invocation. Source/API reviews and exact blob readback are not acceptance receipts.",
+    "Elaborated transitive axiom/hypothesis audit includes every named instance and all private/generated/opaque dependencies. Exclude sorryAx,new research assumptions,unauthorized native trust,omitted imports and weakened hypotheses.",
+    "Boundary controls: T=2,L=4; torus wraparound; theta time1-x; temporal base theta(x)-e0; all spatial directions; temporal plaquette orientation; both inverse edges; phi inverse identity; full link/plaquette bijections; both crossing layers excluded from observable dependence and retained in the measure.",
+    "Verify actual noncommutative Haar inversion proof, Pi permutation orientation, reflection composition order, finite-product Borel/probability coherence and all change-of-variable/complex-conjugation theorem scopes.",
+    "Verify integrability for beta>=0 jointly with Hermitian and real-diagonal facts on the actual positive algebra. Do not infer reflection positivity, an inner-product norm, Hilbert reconstruction or a gap from these identities."
+  ],
+  "source_review_note": {
+    "status": "SOURCE_API_INSPECTION_ONLY",
+    "observation": "Pinned Mathlib.Data.Complex.Basic is a deprecated import-only wrapper (blob08d87d0121734580f78ebc2472562828ab9966bf); actual basic complex lemmas are in Mathlib.Basic.Complex.Basic (blob02ad0aa87f370d1fd2bbb34072fc95cefcb27d87). Existing imported finite-Wilson bytes are preserved. Check inherited deprecation warnings during exact-source acceptance; no compile outcome or import migration is claimed."
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.BondTimeReflection",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonTimeReflection",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.ReflectionHaar",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.PositiveTimeObservables",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonReflectionForm"
+  ],
+  "first_missing_positivity_bridge": {
+    "exact_next_theorem": "For T>=2,beta>=0 and every F in the actual positive-time algebra:0<=Re(B(F,F)).",
+    "required_source_argument": "Prove the literal Wilson cross-boundary factorization or the relevant positive-type kernel argument, retaining both periodic boundaries, all cross-boundary plaquettes, both temporal crossing layers and all Haar integrations.",
+    "not_supplied": "Hermitian symmetry and a real diagonal do not establish this inequality. No positivity certificate, Hilbert norm, quotient or reconstruction is introduced."
+  },
+  "further_physical_frontier": "A vacuum Hamiltonian, entire ground/zero sector, continuum and infinite-volume limits, renormalization/scaling and a physical uniform mass gap remain separate unresolved constructions. No physical positive m follows from finite measure symmetry.",
+  "independent_RH_frontier": {
+    "issue": "https://github.com/grwtsk/math/issues/1438#issuecomment-6489777095",
+    "counterexamples": "P_1(7,7)=2 refutes blanket prefix nonpositivity. Deleting terminal terms changes the exact Abel expression.",
+    "unpaid": "Actual signed divisor-square growing head H_{ceil(M^(3/4))}(j) still needs a saving such as<=C*M^(7/8) with one j-independent constant and the full growing-d aggregate. No signed exponent improves; no equivalent wrapper is added.",
+    "evidence": "Compilation,fresh kernel replay and transitive axiom audit remainNOT_RUN.",
+    "cross_target_bridge": "NONE"
+  },
+  "publication_scope": "Upload the exact five new sources, append-only complete paper-ledger candidate and static target for human recovery/integration. Uploads remain unpublished candidates. No proof execution, root/dependency change, commit/ref/main mutation, reset/force-push, new isolation branch/worktree or manuscript work.",
+  "guidance_evaluation": "The actual full lattice reflection, action symmetry and Haar map proofs are consumed by integrability and Hermitian pairing on the concrete positive algebra. Each construction retains the same source and boundaries. Real diagonal is kept separate from positivity; no measured AI-discovery or stronger physical inference is asserted.",
+  "publication_base_math_commit": "6e9e4c6ebce00df8a521f2e5bf8f3962a7fbc860",
+  "publication_dependency_comparison": {
+    "AGENTS.md": {
+      "candidate_base_blob": "4fe8206c3615c1908475d17dc80128827f921efc",
+      "publication_base_blob": "4fe8206c3615c1908475d17dc80128827f921efc",
+      "unchanged": true
+    },
+    "lean-toolchain": {
+      "candidate_base_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "publication_base_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "unchanged": true
+    },
+    "lakefile.toml": {
+      "candidate_base_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "publication_base_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "unchanged": true
+    },
+    "lake-manifest.json": {
+      "candidate_base_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "publication_base_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "unchanged": true
+    },
+    "documentation/taxonomy/msc2020/source-layout-v1.json": {
+      "candidate_base_blob": "10711fdd169ecd6a7873e845bc6b13d5ab08a703",
+      "publication_base_blob": "9e2c0bf5cc7f703c51459635a44cdf1f2dd810a1",
+      "unchanged": false
+    },
+    "documentation/mathematics/_verification/targets/finite-su2-wilson.json": {
+      "candidate_base_blob": "e598febfa66e411ce7a26b7013b5036340b6894c",
+      "publication_base_blob": "e598febfa66e411ce7a26b7013b5036340b6894c",
+      "unchanged": true
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean": {
+      "candidate_base_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "publication_base_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "unchanged": true
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean": {
+      "candidate_base_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "publication_base_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "unchanged": true
+    },
+    "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean": {
+      "candidate_base_blob": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "publication_base_blob": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "unchanged": true
+    },
+    "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean": {
+      "candidate_base_blob": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "publication_base_blob": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "unchanged": true
+    },
+    "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean": {
+      "candidate_base_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "publication_base_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "unchanged": true
+    },
+    "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean": {
+      "candidate_base_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "publication_base_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "unchanged": true
+    }
+  },
+  "publication_source_layout_blob": "ac1772b8dbd80e2943088d936a2e0b57039618e8",
+  "original_paper_ledger_candidate_blob": "b02ab178c6608b36a378102aab6b689183ff7612",
+  "publication_note": "Five exact source blobs from issue 1443; only the reviewed ledger entry is appended to the newer full ledger. Local working/index changes are preserved separately. Publication is not compilation, kernel replay or axiom acceptance; all remain NOT_RUN."
+}
