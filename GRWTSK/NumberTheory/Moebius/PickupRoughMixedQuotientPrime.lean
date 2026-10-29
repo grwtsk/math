@@ -983,6 +983,33 @@ theorem coprime_mixed_orientation_zero_components
   simp [shortLongCoprime, longShortCoprime,
     shortLongUpperTriangle, longShortUpperTriangle]
 
+/-- The original complete mixed term is twice its literal SL orientation.
+All masks and the two arithmetic denominator factors remain in that source sum. -/
+theorem mixedCoprime_eq_two_mul_shortLongCoprime
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G = 2 * shortLongCoprime P N L G := by
+  rw [mixedCoprime_eq_shortLong_add_longShort,
+    ← shortLongCoprime_eq_longShortCoprime]
+  ring
+
+/-- The same complete mixed term is twice its literal LS orientation.
+This uses full-square exchange, not equality of the two strict triangles. -/
+theorem mixedCoprime_eq_two_mul_longShortCoprime
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G = 2 * longShortCoprime P N L G := by
+  rw [mixedCoprime_eq_shortLong_add_longShort,
+    shortLongCoprime_eq_longShortCoprime]
+  ring
+
+/-- At N=0 the original mixed term and both complete orientations are empty;
+thus both factor-two identities include the zero-horizon case explicitly. -/
+theorem mixedCoprime_orientation_multiple_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P 0 L G = 0 ∧ shortLongCoprime P 0 L G = 0 ∧
+      longShortCoprime P 0 L G = 0 := by
+  rw [mixedCoprime_eq_two_mul_shortLongCoprime]
+  simp [shortLongCoprime, longShortCoprime]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
