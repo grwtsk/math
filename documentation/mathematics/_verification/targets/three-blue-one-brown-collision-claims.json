@@ -3,8 +3,8 @@
   "attribution": "grwtsk contributors",
   "role": "PASSIVE_MATHEMATICAL_CLAIM_MAP_NOT_AN_EXECUTION_REQUEST",
   "binding": {
-    "base_commit": "f4a45b5e2d5475d3c32997dd4cc2ca50cce7cf2d",
-    "rule": "Containing publication commit binds all listed blobs; new source is added to that complete base."
+    "base_commit": "2c62bcf404318e27b4f0c807de51a19b1901adcc",
+    "rule": "Containing publication commit binds existing exact blobs and the added actual-geometry module."
   },
   "module_blobs": {
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollision.lean": "84e61612c43ddd36438cbc76481cc890d1c58995",
@@ -19,7 +19,8 @@
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocitySector.lean": "dcaa3d06afed8925f79fc899b776c38cf9b9a8d0",
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionTracePhase.lean": "2a490b7cbe18dcc49350a37cc03bd74b5cf1091f",
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionNextImpact.lean": "83ca673ffc8f9a55dc4ef3d92c8ca996b231a1a0",
-    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionConservationSelection.lean": "dced0871451876e266ea3b84d82adc4ee75d3aaa"
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionConservationSelection.lean": "dced0871451876e266ea3b84d82adc4ee75d3aaa",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionInscribedAngle.lean": "1bd535fbd1d4a552b2ea3955b6ead56037790869"
   },
   "claims": [
     {
@@ -101,11 +102,14 @@
     },
     {
       "id": "inscribed_angle_method",
-      "hypotheses": "Oriented-arc branch and actual phase-circle point/line correspondence still needed for literal method",
+      "hypotheses": "m,M>0; actual wall then block Steps. Oriented consumer retains Module.Oriented instance; circle memberships/noncoincidence are proved. Unsigned consumer retains both branches.",
       "declarations": [
-        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.physical_pair_chord"
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_wall_block_inscribed",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_wall_block_unsigned",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.wall_chord_vector",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.block_chord_vector"
       ],
-      "role": "ALGEBRAIC_REPLACEMENT_GENERAL_ARC_METHOD_NOT_FORMALIZED"
+      "role": "SOURCE_PROOF_CANDIDATE_ACTUAL_GEOMETRY_WITH_ARCTANGENT_IDENTIFICATION_OPEN"
     },
     {
       "id": "all_exponents_decimal_floor",
@@ -190,7 +194,7 @@
     "transitive_axioms": "NOT_RUN_USER_DEFERRED"
   },
   "open_scope": [
-    "Literal oriented-arc/inscribed-angle method with phase-point correspondence",
+    "Identification of the actual inscribed angle with atan(sqrt(m/M)), with chord scalar signs and unwrapped arc branch control",
     "Unresolved all-exponents decimal-floor premise, Galperin sections 8–10 and 2025 lesson footnote",
     "Full spoken-video/transcript coverage and any further claims not present in lesson text"
   ],
@@ -199,5 +203,19 @@
     "Independent local proofs of imported pi bounds or irrational_pi",
     "Physical sound, black-hole mass analogies or actual simulation implementation correctness"
   ],
-  "discovery_boundary": "Four lessons here do not exhaust Shorts,talks,guest appearances or the full channel"
+  "discovery_boundary": "Four lessons here do not exhaust Shorts,talks,guest appearances or the full channel",
+  "previous_binding": {
+    "base_commit": "f4a45b5e2d5475d3c32997dd4cc2ca50cce7cf2d",
+    "rule": "Containing publication commit binds all listed blobs; new source is added to that complete base."
+  },
+  "imported_geometry": {
+    "byline": "Joseph Myers; Mathlib contributors",
+    "year": 2022,
+    "license": "Apache-2.0, preserved upstream",
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "path": "Mathlib/Geometry/Euclidean/Angle/Sphere.lean",
+    "blob": "a8e1687e754f23f032e9fc12f85edd47b2b39990",
+    "theorem": "EuclideanGeometry.Sphere.oangle_center_eq_two_zsmul_oangle",
+    "role": "IMPORTED_MATHEMATICS_NOT_REVERIFIED_LOCAL_RESULT"
+  }
 }
