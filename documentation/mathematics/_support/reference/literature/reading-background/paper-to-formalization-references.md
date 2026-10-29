@@ -851,6 +851,16 @@ lock remains an external execution gate. Select actual consumer declarations
 before a nonvacuous axiom/expected-interface acceptance request. Imports alone
 cannot discharge the missing bridges listed in the discovery survey.
 
+### Discovered import surface local source binding
+
+Complete import source is committed on main at `44f1f8a0ef2746c103b58933c34e96ce1e522420`.
+`documentation/mathematics/_verification/targets/UpstreamAdapters/discovered-imports-20261029.json`
+binds its exact complete tree, every local import facade blob, provider catalogue,
+configuration and dependency manifest. This is a compilation/import target, not
+a declaration-acceptance profile: actual consumer declarations are not selected,
+so no empty or vacuous axiom audit can count as acceptance. All proof-related
+checks remain NOT_RUN. Static source/pin/module/manifest/hash validation passed.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 
