@@ -1,0 +1,47 @@
+{
+  "project_subdir": "adapters/anthropic-math/fermat",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/AnthropicMath/Fermat.lean",
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum",
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositiveCubeSum",
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum": "∀ (n a b c : Nat), 3 ≤ n → 0 < a → 0 < b → 0 < c → a ^ n + b ^ n ≠ c ^ n",
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositiveCubeSum": "∀ (a b c : Nat), 0 < a → 0 < b → 0 < c → a ^ 3 + b ^ 3 ≠ c ^ 3",
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor": "∀ (n a b c : Nat), 3 ≤ n → a ^ n + b ^ n = c ^ n → a = 0 ∨ b = 0"
+      }
+    },
+    {
+      "source": "GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.power_sum_eq_iff_degenerate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.fixed_output_solution_fiber",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.positive_search_empty"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.power_sum_eq_iff_degenerate": "∀ (n a b c : Nat), 3 ≤ n → (a ^ n + b ^ n = c ^ n ↔ (a = 0 ∧ b = c) ∨ (b = 0 ∧ a = c))",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.fixed_output_solution_fiber": "∀ (n c : Nat), 3 ≤ n → ({p : Nat × Nat | p.1 ^ n + p.2 ^ n = c ^ n} = ({(0, c), (c, 0)} : Set (Nat × Nat)))",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.positive_search_empty": "∀ (n bound c : Nat), 3 ≤ n → ¬ ∃ a b : Nat, 0 < a ∧ a ≤ bound ∧ 0 < b ∧ b ≤ bound ∧ a ^ n + b ^ n = c ^ n"
+      }
+    }
+  ]
+}

@@ -16,3 +16,12 @@ witness and positive prime-filter cardinality from an actual uniform Eθ bound,
 threshold and strict error margin. See [provider provenance](ieantn/consumer-integrations.json).
 The original eight-provider wave retains its exact source identity and statuses;
 this continuation supplies no numerical bound or unconditional Legendre result.
+
+## Fixed-support Carleson continuation
+
+Carleson adds three further source candidates: a finite coordinate-error envelope,
+a row-uniform eventual bound over the fixed-support l1 unit ball, and residual
+convergence for cutoff-dependent rows. The moving reference uses the same row;
+no convergence of that reference/readout or growing-family bound is claimed.
+The first wave remains24 declarations; IEANTN and this continuation add3 each.
+All new native/kernel/axiom/interface checks remain NOT_RUN.

@@ -1,0 +1,63 @@
+{
+  "schema": "grwtsk.source-bound-mathematical-interfaces/1",
+  "local_attribution": "grwtsk contributors",
+  "math_commit": "08f98951548df4b4cd74b1db97801a80c38b6e44",
+  "sources": [
+    {
+      "path": "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/AnthropicMath/Fermat.lean",
+      "blob": "8b185c1a69f4ad4b60e8f43c9747479b67a953b9",
+      "sha256": "25e2f162ed6fecf671cde035b995c0ab85eefd45626feedbb1e2207b34bf2842"
+    },
+    {
+      "path": "adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "blob": "bcfbb5e8910bf9219756fb52d89494311daaa282",
+      "sha256": "13bcc9f927a5efc7235cfa7bbcbfc4142b2a0753cf9c8484013dc18065b183f6"
+    }
+  ],
+  "profile": "documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/anthropic-fermat-six-interfaces-20261029.profile.json",
+  "classification": "SOURCE_PROOF_CANDIDATES_WITH_COMPLETE_MODULE_AND_EXACT_TYPE_ACCEPTANCE_TARGETS",
+  "project_subdir": "adapters/anthropic-math/fermat",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "manifest_blob": "ba3b0da87d66c5149c8399432a679181648810af",
+  "package_revisions": {
+    "flt_e2e": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "required_declarations": [
+    "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum",
+    "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositiveCubeSum",
+    "GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor",
+    "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.power_sum_eq_iff_degenerate",
+    "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.fixed_output_solution_fiber",
+    "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.positive_search_empty"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "comparator": "NOT_RUN"
+  },
+  "acceptance_requires": [
+    "Qualify the exact native Lean/Lake pair through the supported Noe policy route under exclusive ownership; preserve resource bounds",
+    "Prepare a fresh registry after math/source/producer/policy changes, with canonical exact Git package roots and validated alternates",
+    "Freshly compile all declared source imports without upstream compiled caches",
+    "Complete compiler-owned census and transitive axiom audit for both target modules, including all six exact required declarations",
+    "Check each of the six literal type expressions in a fresh importing module after the corresponding complete passing source audit",
+    "Bind every facet to exact source and current producer/policy; independently scoped fresh replay and Comparator remain separate claims"
+  ],
+  "mathematical_boundaries": [
+    "Natural variables and exponent>=3 are exact; positive-natural premises belong only to the corresponding obstruction interfaces",
+    "Zero-factor and full solution-fiber classification include output zero; axis candidates may coincide",
+    "Finite search exclusion is a theorem for arbitrary cutoff, not finite-computation evidence for an infinite assertion",
+    "No integer-sign extension, exponent-two exclusion or independent reproof of the imported FLT route"
+  ]
+}

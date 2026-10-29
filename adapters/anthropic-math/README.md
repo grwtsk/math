@@ -35,3 +35,13 @@ New subject-organized source candidates: `adapters/anthropic-math/fermat/GRWTSK/
 [consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
+
+## Six exact Fermat interfaces
+
+The original three positive-power/cube/zero-factor candidates and the three
+solution-fiber candidates have one additional exact-interface verification target:
+`documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/anthropic-fermat-six-interfaces-20261029.json` with adjacent managed profile and TOML. It selects both complete
+module-owned censuses, all six exact roots and literal expected types, preserving
+zero cases, positive-natural premises and n>=3. Historical targets are unchanged.
+See [Fermat references](fermat/references.md) and the canonical ledger continuation.
+All native, Comparator, kernel, axiom and expected-interface checks remain NOT_RUN.
