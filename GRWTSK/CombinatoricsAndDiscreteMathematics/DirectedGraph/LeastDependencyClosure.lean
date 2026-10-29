@@ -2863,4 +2863,175 @@ theorem coveredFiniteOffsetKeyMinimum {β : Type v} (inventory : FiniteInventory
     (fun candidate => Feasible required depends (selection candidate))
     (finiteOffsetKey inventory weight offset selection decisions mask) certificate
 
+/-- Low bit and half by structural binary cases. The packing laws below give
+their exact meaning on encoded lists; standard div/mod/testBit refinement is separate. -/
+def maskLowBit : Nat → Bool
+  | 0 => false
+  | 1 => true
+  | n + 2 => maskLowBit n
+
+def maskHalf : Nat → Nat
+  | 0 => 0
+  | 1 => 0
+  | n + 2 => Nat.succ (maskHalf n)
+
+def maskPack (bit : Bool) (tail : Nat) : Nat := bit.toNat + 2 * tail
+
+theorem maskPack_succ (bit : Bool) (tail : Nat) :
+    maskPack bit (tail + 1) = maskPack bit tail + 2 := by
+  unfold maskPack
+  calc
+    bit.toNat + 2 * (tail + 1) = bit.toNat + (2 * tail + 2) :=
+      congrArg (fun n => bit.toNat + n) (Nat.mul_succ 2 tail)
+    _ = (bit.toNat + 2 * tail) + 2 := (Nat.add_assoc _ _ _).symm
+
+theorem maskLowBit_pack (bit : Bool) (tail : Nat) : maskLowBit (maskPack bit tail) = bit := by
+  induction tail with
+  | zero => cases bit <;> rfl
+  | succ tail ih =>
+    calc
+      maskLowBit (maskPack bit (tail + 1)) = maskLowBit (maskPack bit tail + 2) :=
+        congrArg maskLowBit (maskPack_succ bit tail)
+      _ = maskLowBit (maskPack bit tail) := rfl
+      _ = bit := ih
+
+theorem maskHalf_pack (bit : Bool) (tail : Nat) : maskHalf (maskPack bit tail) = tail := by
+  induction tail with
+  | zero => cases bit <;> rfl
+  | succ tail ih =>
+    calc
+      maskHalf (maskPack bit (tail + 1)) = maskHalf (maskPack bit tail + 2) :=
+        congrArg maskHalf (maskPack_succ bit tail)
+      _ = Nat.succ (maskHalf (maskPack bit tail)) := rfl
+      _ = Nat.succ tail := congrArg Nat.succ ih
+
+/-- List position zero is the least significant bit. Width is supplied separately
+to the decoder, so a high-order false suffix is retained by the roundtrip. -/
+def maskLE : List Bool → Nat
+  | [] => 0
+  | bit :: rest => maskPack bit (maskLE rest)
+
+def bitsLE : Nat → Nat → List Bool
+  | 0, _ => []
+  | width + 1, mask => maskLowBit mask :: bitsLE width (maskHalf mask)
+
+def maskBit (mask : Nat) (position : Nat) : Bool :=
+  match position with
+  | 0 => maskLowBit mask
+  | index + 1 => maskBit (maskHalf mask) index
+
+theorem bitsLE_length (width mask : Nat) : (bitsLE width mask).length = width := by
+  induction width generalizing mask with
+  | zero => rfl
+  | succ width ih => exact congrArg Nat.succ (ih (maskHalf mask))
+
+theorem bitsLE_maskLE (bits : List Bool) : bitsLE bits.length (maskLE bits) = bits := by
+  induction bits with
+  | nil => rfl
+  | cons bit rest ih =>
+    change maskLowBit (maskPack bit (maskLE rest)) ::
+      bitsLE rest.length (maskHalf (maskPack bit (maskLE rest))) = bit :: rest
+    rw [maskLowBit_pack, maskHalf_pack, ih]
+
+theorem maskLE_injective_of_length_eq (left right : List Bool)
+    (lengths : left.length = right.length) (masks : maskLE left = maskLE right) : left = right := by
+  calc
+    left = bitsLE left.length (maskLE left) := (bitsLE_maskLE left).symm
+    _ = bitsLE right.length (maskLE left) := congrArg (fun n => bitsLE n (maskLE left)) lengths
+    _ = bitsLE right.length (maskLE right) := congrArg (bitsLE right.length) masks
+    _ = right := bitsLE_maskLE right
+
+/-- The width premise cannot be removed: a high-order zero bit changes the list
+but not its natural mask. -/
+theorem maskLE_not_globally_injective :
+    ¬ (∀ left right : List Bool, maskLE left = maskLE right → left = right) := by
+  intro injection
+  have impossible : ([] : List Bool) = [false] := injection [] [false] rfl
+  cases impossible
+
+theorem maskLE_littleEndian_01 : maskLE [false, true] = 2 := rfl
+
+theorem maskLE_littleEndian_10 : maskLE [true, false] = 1 := rfl
+
+theorem maskPack_lt_double_succ (bit : Bool) (tail : Nat) :
+    maskPack bit tail < 2 * (tail + 1) := by
+  have bitBound : bit.toNat ≤ 1 := by
+    cases bit with
+    | false => exact Nat.zero_le _
+    | true => exact Nat.le_refl _
+  calc
+    maskPack bit tail ≤ 1 + 2 * tail := Nat.add_le_add_right bitBound _
+    _ < (1 + 2 * tail) + 1 := Nat.lt_succ_self _
+    _ = (2 * tail + 1) + 1 := congrArg (fun n => n + 1) (Nat.add_comm 1 (2 * tail))
+    _ = 2 * tail + (1 + 1) := Nat.add_assoc _ _ _
+    _ = 2 * (tail + 1) := (Nat.mul_succ 2 tail).symm
+
+theorem maskLE_lt_pow_length (bits : List Bool) : maskLE bits < 2 ^ bits.length := by
+  induction bits with
+  | nil => exact Nat.zero_lt_succ _
+  | cons bit rest ih =>
+    calc
+      maskLE (bit :: rest) < 2 * (maskLE rest + 1) := maskPack_lt_double_succ bit (maskLE rest)
+      _ ≤ 2 * (2 ^ rest.length) := Nat.mul_le_mul_left 2 ih
+      _ = (2 ^ rest.length) * 2 := Nat.mul_comm _ _
+      _ = 2 ^ (rest.length + 1) := (Nat.pow_succ 2 rest.length).symm
+
+theorem bitsLE_position (width mask : Nat) (index : Fin width) :
+    listPosition (bitsLE width mask) index.val = some (maskBit mask index.val) := by
+  revert index
+  induction width generalizing mask with
+  | zero =>
+    intro index
+    exact False.elim (Nat.not_lt_zero index.val index.isLt)
+  | succ width ih =>
+    intro index
+    cases index with
+    | mk position bound =>
+      cases position with
+      | zero => rfl
+      | succ position => exact ih (maskHalf mask) ⟨position, Nat.lt_of_succ_lt_succ bound⟩
+
+/-- Bounded positional lookup agrees with the encoded mask's structural bit
+reader. Out-of-bounds Option lookup is not silently converted to a false bit. -/
+theorem maskLE_position (bits : List Bool) (index : Fin bits.length) :
+    listPosition bits index.val = some (maskBit (maskLE bits) index.val) := by
+  calc
+    listPosition bits index.val = listPosition (bitsLE bits.length (maskLE bits)) index.val :=
+      congrArg (fun values => listPosition values index.val) (bitsLE_maskLE bits).symm
+    _ = some (maskBit (maskLE bits) index.val) := bitsLE_position bits.length (maskLE bits) index
+
+theorem maskBit_maskLE_get (bits : List Bool) (index : Fin bits.length) :
+    maskBit (maskLE bits) index.val = bits.get index :=
+  Option.some.inj ((maskLE_position bits index).symm.trans (listPosition_get bits index))
+
+/-- The fixed width is part of the carrier, rather than inferred from a mask. -/
+def FixedBoolList (width : Nat) := {bits : List Bool // bits.length = width}
+
+def fixedMaskLE {width : Nat} (bits : FixedBoolList width) : Nat := maskLE bits.val
+
+theorem fixedMaskLE_injective {width : Nat} (left right : FixedBoolList width)
+    (masks : fixedMaskLE left = fixedMaskLE right) : left = right := by
+  cases left with
+  | mk left leftLength =>
+    cases right with
+    | mk right rightLength =>
+      have equal := maskLE_injective_of_length_eq left right (leftLength.trans rightLength.symm) masks
+      cases equal
+      rfl
+
+theorem fixedMaskLE_bound {width : Nat} (bits : FixedBoolList width) :
+    fixedMaskLE bits < 2 ^ width := by
+  calc
+    fixedMaskLE bits < 2 ^ bits.val.length := maskLE_lt_pow_length bits.val
+    _ = 2 ^ width := congrArg (fun n => 2 ^ n) bits.property
+
+/-- The fixed-list carrier supplies the mask injectivity needed by the covered
+winner certificate. This does not identify external candidate records or masks. -/
+theorem finiteOffsetKey_fixedMask_injective {width : Nat} (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) (selection : FixedBoolList width → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate)) (left right : FixedBoolList width)
+    (keys : finiteOffsetKey inventory weight offset selection decisions fixedMaskLE left =
+      finiteOffsetKey inventory weight offset selection decisions fixedMaskLE right) : left = right :=
+  fixedMaskLE_injective left right (congrArg CostCountMask.mask keys)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
