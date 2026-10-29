@@ -427,6 +427,39 @@ SOURCE_PROOF_CANDIDATE. Compilation, fresh kernel replay and transitive
 axiom audit remain NOT_RUN. No stronger sector, triangle, full-moment,
 mean, signed-bulk or RH bound is claimed.
 
+### Full d=1 fiber using either doubled complete mixed orientation
+
+The new source identities
+`dOneFiber_eq_shortShort_add_two_mul_shortLong_add_longLong` and
+`dOneFiber_eq_shortShort_add_two_mul_longShort_add_longLong` state, respectively,
+
+ dOneFiber = shortShortCoprime + 2*shortLongCoprime + longLongCoprime,
+ dOneFiber = shortShortCoprime + 2*longShortCoprime + longLongCoprime.
+
+Each substitutes one of the existing mixed factor-two identities into the
+original full d=1 SS+mixed+LL decomposition. These are alternative formulas,
+not an addition of both doubled mixed orientations. SS and LL remain their
+complete coprime sectors. In particular, the original weighted long unit
+square remains inside LL when the closed inventory contains 1; no centering
+or extra diagonal deletion is introduced. Strict triangle orientations are
+not identified by these full-square formulas.
+
+`dOneFiber_coprime_orientation_zero_components` explicitly states that the
+full fiber and the SS, SL, LS, LL complete coprime sectors vanish at N=0.
+Both right-hand sides are then zero on their original empty inventories.
+All statements allow arbitrary P,N,L,G without additional primality,
+positivity, G-symmetry or analytic assumptions. Original masks, repeated-prime
+and long-row coprime guards, both selected-divisor denominator factors, closed
+cutoffs, long one-unit/nonunit terms, product collisions and frozen parameters
+remain. These three theorem scripts are SOURCE_PROOF_CANDIDATE. Compilation,
+fresh kernel replay and transitive axiom audit remain NOT_RUN. No stronger
+sector, full-moment, mean, signed-bulk or RH bound follows from these identities.
+
+The source pins below identify the exact pre-relocation snapshot
+`b870bf85c47e9e9bfedf3fc1fd31a2be60719e76` at its original module path.
+A later path/import rewrite is a distinct source revision; these hashes do
+not certify its edited bytes or establish fresh mathematical acceptance.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
