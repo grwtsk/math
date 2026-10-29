@@ -1,0 +1,22 @@
+import SourcePhysicalEndpointConvolution
+open FormalResearch.RiemannHypothesis.SourcePhysicalEndpointConvolution
+#print primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile
+#print axioms primitiveCorrelationZero_fourth_deriv_eq_normalizedOverlapProfile
+#print sourceCorrelation_eq_normalizedOverlap_filter
+#print axioms sourceCorrelation_eq_normalizedOverlap_filter
+#print endpointQ
+#print axioms endpointQ
+#print endpointPolynomial
+#print axioms endpointPolynomial
+#print sourceCorrelation_endpoint_eq_polynomial
+#print axioms sourceCorrelation_endpoint_eq_polynomial
+#print endpointPolynomial_eq_convolution
+#print axioms endpointPolynomial_eq_convolution
+#print sourceCorrelation_endpoint_eq_convolution
+#print axioms sourceCorrelation_endpoint_eq_convolution
+
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"
