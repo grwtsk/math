@@ -3623,4 +3623,13 @@ theorem privateIndexArchive_v129_lower_bound (rawA rawB archive : Bool)
   sharedArchiveCost_lower_bound 240198757 240198757 148756327 1815
     (by decide) rawA rawB archive feasible
 
+/-- The same fixed four-variable retention model instantiated for two distinct
+private v25 snapshots recovered by an all-or-none bundle of two gzip files.
+The physical decoder and inventory assumptions remain operational premises. -/
+theorem privateIndexArchive_v130_lower_bound (rawA rawB archive : Bool)
+    (feasible : sharedArchiveFeasible rawA rawB archive) :
+    280349438 ≤ sharedArchiveCost 228235862 228235820 280347620 1818 rawA rawB archive :=
+  sharedArchiveCost_lower_bound 228235862 228235820 280347620 1818
+    (by decide) rawA rawB archive feasible
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
