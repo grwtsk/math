@@ -1,0 +1,27 @@
+{
+  "project_subdir": "adapters/sphere-packing",
+  "contracts": [
+    {
+      "source": "GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
+      "universes": [],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover"
+      ],
+      "module_expected_types": {
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2),\n  Metric.IsSeparated ((2 * ε : NNReal) : ENNReal)\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real)))",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2),\n  Metric.externalCoveringNumber ε\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real))) = (S.card : ENat)",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover": "∀ (S : Finset (Fin 8 → Real)) (hS : ∀ v ∈ S, v ∈ Submodule.E8 Real)\n  (ε : NNReal) (hε : 2 * (ε : Real) < Real.sqrt 2)\n  (C : Set (EuclideanSpace Real (Fin 8)))\n  (hC : Metric.IsCover ε\n    (Set.image (WithLp.toLp 2) (S : Set (Fin 8 → Real))) C),\n  (S.card : ENat) ≤ Set.encard C"
+      }
+    }
+  ]
+}
