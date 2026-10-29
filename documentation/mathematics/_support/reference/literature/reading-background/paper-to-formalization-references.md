@@ -356,6 +356,124 @@ For positive sigma,T, the exact normalized half-gap is (1/2:Complex)-K(sigma,T)=
 
 **Classes, verification and missing bridges.** Imported mathematics: existing source-identified columns and finite-sum algebra. Three new definitions and three theorem scripts: SOURCE_PROOF_CANDIDATE; kernel-verified bridges NONE claimed. No new conditional axiom/interface, finite numerical certificate or analogy. Passive manifest `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/PickupRoughMixedQuotientPrime/verification.toml` binds exact source, note, full declaration inventory and requested commands: `lake build --wfail GRWTSK.NumberTheory.Moebius.PickupRoughMixedQuotientPrime`; `lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean`; supported independent fresh kernel checking and full imported/private/generated/opaque axiom closure audit. Lean `leanprover/lean4:v4.34.1`, Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`; historical dependency pins stay distinct in the manifest. Compilation **NOT_RUN**, fresh kernel replay **NOT_RUN**, transitive axiom audit **NOT_RUN**; no proof execution dispatched. Remaining bridges: native elaboration and acceptance, SS/LL and uncrossed estimates, terminal-strip formalization, full signed bulk and every-positive-rate energy. No stronger bound or RH claim.
 
+## Union-closed small members and Collatz positive descent
+
+Local attribution: grwtsk contributors. Source commit:
+`9cea61d877c8c4089e9274454af886d665acc231`, reachable from `main`.
+[Exact-source verification issue #1434](https://github.com/grwtsk/math/issues/1434).
+These are elementary formalizations of known partial results and a conditional
+reduction, with no claim of novelty or solution of either open problem.
+
+### Union-closed families: singleton and doubleton members
+
+**Source.** Henning Bruhn and Oliver Schaudt, *The journey of the union-closed
+sets conjecture*, arXiv:1309.3297v2, 30 October 2013,
+https://arxiv.org/abs/1309.3297v2, Sections 4–5. The survey attributes the small-member
+observations to D. G. Sarvate and J.-C. Renaud. Supporting source mapping:
+Douglas B. West, *Union-Closed Sets Conjecture (1979)*,
+https://www.dwest.web.illinois.edu/openp/unionclos.html, partial-results discussion.
+Historical priority beyond these explicit source attributions is not inferred.
+
+**Exact object and hypotheses.** `F : Finset (Finset α)` for an arbitrary type
+with decidable equality. Distinctness of family members is enforced by `Finset`.
+`UnionClosed F` means every union of two members belongs to `F`; the empty set
+need not be a member. `frequency F x` counts members containing `x`;
+`Abundant F x` means `F.card ≤ 2 * frequency F x`. A singleton hypothesis
+`{x} ∈ F` proves abundance of `x`. A pair hypothesis `{x,y} ∈ F` proves abundance
+of `x` or `y`, including the degenerate `x = y` case.
+
+**Proof and use.** Union with a fixed set is injective on inputs avoiding every
+one of its elements. For a singleton, inject the avoiding subfamily into the
+containing subfamily and partition `F`. For a pair, write `a,b,c,d` for the
+cardinalities of the both, only-x, only-y and neither classes. Union with `{x,y}`
+gives `d ≤ a`. The two frequencies are `a+b` and `a+c`, whose sum is at least
+`a+b+c+d = F.card`; hence at least one is at least half. This eliminates singleton
+and doubleton members from every counterexample and supplies a reusable counting
+consumer. It does not find an abundant element in an arbitrary family.
+
+**Declarations and source identity.** All names below have prefix
+`GRWTSK.CombinatoricsAndDiscreteMathematics.SetFamilies.UnionClosedSmallMembers.`:
+`UnionClosed`, `frequency`, `Abundant`, `Conjecture`,
+`union_injective_on_avoiding`, `abundant_of_singleton_mem`,
+`abundant_of_pair_mem`, `no_small_member_of_no_abundant`.
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/SetFamilies/UnionClosedSmallMembers.lean`,
+Git blob `249ee949d9523efddd63875fd6427d0ba4f5a194` at the commit above.
+
+**Evidence roles and obstruction.** Imported mathematics: the pinned Mathlib
+finite-set cardinality and partition APIs. New kernel-verified bridges: none yet.
+Source proof candidates: the four stated theorem declarations. Conditional
+interfaces: `Conjecture` is a proposition, not an axiom or supplied proof.
+Finite evidence and analogies: neither is used as proof acceptance. Unresolved:
+there need not be a singleton or doubleton in an arbitrary nontrivial family.
+Union with `{x,y}` on sets merely avoiding `x` is not generally injective:
+for `x ≠ y`, the distinct sets `∅` and `{y}` have the same image. The required
+selector or stronger local-configuration argument has not been supplied.
+After recording that obstruction, this increment moved to Collatz.
+
+### Collatz: an infinite restricted family and the precise descent premise
+
+**Source.** Terence Tao, *Almost all orbits of the Collatz map attain almost
+bounded values*, arXiv:1909.03562v7, 16 July 2026,
+https://arxiv.org/abs/1909.03562v7, abstract definition of the unaccelerated map.
+The initial version is from 2019 and the journal article appeared in 2022;
+this entry pins v7 for its statement identity. No density theorem, probabilistic
+method, or quantitative estimate from that paper is imported.
+
+**Exact object, strategy and use.** `step n` is `n/2` for even `n` and `3*n+1`
+for odd `n`, extended to zero to make a total natural-number function. `orbit k n`
+is exactly `k` steps, and `ReachesOne n` means existence of a finite orbit witness.
+`Conjecture` quantifies over every positive starting integer. `PositiveDescent`
+requires for every `n > 1` a finite iterate strictly between zero and `n`.
+Orbit concatenation prefixes a convergent orbit by a finite segment. A double
+halves in one step; induction therefore proves convergence of powers of two
+and of `2^k*n` whenever `n` already converges. Strong induction then proves
+`Conjecture ↔ PositiveDescent`. The latter is an exact reduction exposing the
+missing premise, not an independently discharged convergence argument.
+
+**Declarations and source identity.** All names below have prefix
+`GRWTSK.NumberTheory.ArithmeticDynamics.CollatzDescent.`:
+`step`, `orbit`, `ReachesOne`, `Conjecture`, `PositiveDescent`, `orbit_add`,
+`reachesOne_of_orbit`, `reachesOne_one`, `step_double`, `reachesOne_double`,
+`reachesOne_pow_two`, `reachesOne_pow_two_mul`, `conjecture_iff_positiveDescent`.
+Source: `GRWTSK/NumberTheory/ArithmeticDynamics/CollatzDescent.lean`,
+Git blob `38c4029bd94d8f60cceafc34db5915600bce8266` at the commit above.
+
+**Evidence roles and obstruction.** Imported boundary: pinned Lean core and its
+arithmetic tactic, without Mathlib. New kernel-verified bridges: none yet.
+Source proof candidates: the eight theorem declarations. Conditional interface:
+the descent equivalence retains its universal premise. Finite evidence: no finite
+search is claimed. Analogy: none promoted. Unresolved: strict positive descent
+for every input above one. An almost-everywhere statement, including one in
+logarithmic density, does not imply this universal obligation. No solution of
+Collatz is claimed; the next research increment must move to another problem
+or produce a new independently supported descent argument.
+
+### Actual checking attempts and acceptance boundary
+
+Two separate managed profiles select the four union-closed and eight Collatz
+theorems above, with the allowed logical dependencies limited to `propext`,
+`Classical.choice`, and `Quot.sound`, excluding `sorryAx` and research axioms.
+Both commands were actually attempted from the Noe checkout:
+
+```text
+python3 -B managers/formalization/lean/environment/python/managed_contract_replay.py prepare --math-root /Users/think/Desktop/math --commit 9cea61d877c8c4089e9274454af886d665acc231 --profile <external-runtime>/research/unsolved-mathematics/union-closed-profile.json --registry <external-runtime>/research/unsolved-mathematics/union-closed-registry-v1.json
+python3 -B managers/formalization/lean/environment/python/managed_contract_replay.py prepare --math-root /Users/think/Desktop/math --commit 9cea61d877c8c4089e9274454af886d665acc231 --profile <external-runtime>/research/unsolved-mathematics/collatz-profile.json --registry <external-runtime>/research/unsolved-mathematics/collatz-registry-v1.json
+```
+
+`<external-runtime>` is the sibling runtime selected by Noe's `.noe-layout.json`;
+the actual expanded commands, profiles and preparation outcomes are retained
+there in `research/unsolved-mathematics/increment-01.json`. Neither registry was
+created. Both commands exited **1** with
+`ValueError: math/compiler toolchain mismatch`: this math commit selects Lean
+**v4.34.1**, while the managed command policy selects **v4.33.0**.
+Compilation **NOT_RUN**; fresh trust-zero kernel checking **NOT_RUN**;
+expected-type consumers **NOT_RUN**; transitive axiom auditing **NOT_RUN**.
+No managed native run was dispatched, no resource ownership or toolchain policy
+was changed, and publication does not establish mathematical acceptance.
+A later matching authorized checker must prepare fresh registries, rebuild the
+required source closures and retain declaration-scoped type/axiom evidence.
+Operational attempts and mutable research state stay outside this repository.
+
 <!-- BEGIN DOCUMENT CERTIFICATION -->
 **Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
 
