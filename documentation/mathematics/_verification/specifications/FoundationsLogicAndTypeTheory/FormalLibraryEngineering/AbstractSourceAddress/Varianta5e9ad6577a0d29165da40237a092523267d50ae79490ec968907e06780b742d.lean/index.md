@@ -1,0 +1,75 @@
+# Verification target: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.AbstractSourceAddress.Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "40692a8ecaa00a416a2a2fd0bcdec0e46ddc2c33",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/index.md) · [Full source](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `40692a8ecaa00a416a2a2fd0bcdec0e46ddc2c33`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Ecosystem.Provenance` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathematics.SourceAnalysis.CommandElements.ByteRange` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [AbstractSourceLayer](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/declarations/abstractsourcelayer--d8dbed3704394ad0db831f68.md) | 23 | `declaration-track:d8dbed3704394ad0db831f682e8972dc6bdaf6b717a01e0af2390c8f4c0661d1` |
+| 2 | `def` | [rank](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/declarations/rank--8045bf66937d2d05ace94af2.md) | 48 | `declaration-track:8045bf66937d2d05ace94af23e16bf39e1ed549506ac9838e3d0799ef8823ec4` |
+| 3 | `structure` | [AbstractSourceAddress](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/declarations/abstractsourceaddress--1fb6218d9dcaf57e94f675d3.md) | 72 | `declaration-track:1fb6218d9dcaf57e94f675d3d11011b5359311ad76e8ca115cf410d48ad667b2` |
+| 4 | `def` | [AbstractSourceAddress.SameSourceObject](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/declarations/abstractsourceaddress-samesourceobject--7321422f1b003438f96f6d6a.md) | 83 | `declaration-track:7321422f1b003438f96f6d6a44443004fd6e87e2fa045b4e97de93b4a1bf7fbe` |
+| 5 | `def` | [AbstractSourceAddress.SameIdentity](../../../../../../FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean/declarations/abstractsourceaddress-sameidentity--f6bd22e6a5169f9ac3da7da9.md) | 88 | `declaration-track:f6bd22e6a5169f9ac3da7da993aa27905d810172e246579678369fc934fed90d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=20f4925cc40083ba21559ce3fcdb377b1606efda0f8637a8b67c91509b07810a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AbstractSourceAddress/Varianta5e9ad6577a0d29165da40237a092523267d50ae79490ec968907e06780b742d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

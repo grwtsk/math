@@ -1,0 +1,45 @@
+# P0 source-pinned verification request; NO EXECUTION.
+schema_version = "0.1"
+request_id = "proper-power-mass-bridge-unconditional-20261024"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "35d304cce1c2a8ec73c89a2e21bf00d0da0c566e"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridgeUnconditional.lean"
+source_blob = "01b40d15a04519f4d6442277ec37944e2ea81288"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge.nonunitProperPowerMass_eq_divisor_packet_unconditional",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridgeOfSupport",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerNonunitSupport",
+]
+exact_hypotheses = "forall q N : Nat; no additional assumptions"
+discharged_hypotheses = [
+ "hreindex : nonunitProperPowerMass q N = rectangularProperPowerMass q N",
+ "hsupport : forall p k, Nat.Prime p -> 2 <= k -> (not IsUnit ((p^k:Nat):ZMod q) iff p divides q)",
+]
+mathematical_class = "finite_exact_source_candidate"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+missing_suppliers = [
+ "Pinned Lean elaboration and compilation of entire finite reindexing and arithmetic support chains",
+ "Fresh kernel checking and transitive axiom audit",
+ "Inspect downstream Goldbach consumers before replacing conditional interfaces",
+ "No asymptotic prime distribution consequence without a separate quantitative transfer",
+]
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridgeUnconditional.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridgeUnconditional"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridgeUnconditional.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

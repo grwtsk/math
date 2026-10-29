@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1002
+parent_revision = "8c5c80a6142641106f4561fac6abee438faf53c5"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarCompactDescent.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_theorems = ["compactPolar_joint_source", "unitCircleJointPolar_continuous_of_compact_quotient", "unitCircleJointPolar_continuous_of_fundamental_cover"]
+open_obligations = ["fundamental_interval_cover_from_mathlib", "ancestor_lean_elaboration_and_repairs", "standard_cone_descent", "cone_fiber_iff", "polar_surjectivity", "cone_disk_homeomorphism"]
+hostile_controls = ["no_real_line_compactness", "no_unnecessary_full_product_quotient", "no_separate_slices_as_joint_continuity", "actual_compact_source_square", "quotient_hypothesis_visible", "no_disk_homeomorphism_claim"]
+lean_run = false
+kernel_audited = false

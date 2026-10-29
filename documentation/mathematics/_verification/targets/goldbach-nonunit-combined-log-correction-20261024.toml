@@ -1,0 +1,41 @@
+# P0 source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "goldbach-nonunit-combined-log-correction-20261024"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "2a48901f1e82d0fa78465c16ae317f9ed90a57fc"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachNonunitCombinedLogCorrection.lean"
+source_blob = "adc906cabfa1a680472799ebe886056adb4557c6"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitCombinedBudget.nonunitPsiMass_le_prime_count_add_log2_correction",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitCombinedBudget",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPositiveModulusBound",
+]
+exact_hypotheses = "q N : Nat; q!=0; prime support equivalence hsupport; per-prime logarithmic bound hlog"
+discharged_hypothesis = "hproper : nonunitProperPowerMass q N <= C"
+mathematical_class = "finite_conditional_quantitative_source_candidate"
+missing_suppliers = [
+ "Pinned Lean compilation, fresh kernel checking and transitive axiom audit",
+ "Potential independent discharge of prime support and logarithmic hypotheses",
+ "No classical psi or prime-counting error consequence without an explicit identification and quantitative transfer",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitCombinedLogCorrection.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitCombinedLogCorrection"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachNonunitCombinedLogCorrection.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

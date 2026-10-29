@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 991
+parent_revision = "ea26d00b9129894872237aadb04553367afab6f9"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarPhaseInteger"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarPhaseInteger.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_theorems = ["phase_eq_iff_integer_winding"]
+hostile_controls = ["correct_two_pi_normalization", "negative_integer_winding", "no_real_angle_equality_without_modulo", "nonzero_complex_I_cancellation", "no_unverified_addcircle_descent", "no_disk_homeomorphism_claim"]
+open_obligations = ["pinned_mathlib_elaboration", "unit_add_circle_quotient_equality", "continuous_polar_descent", "cone_fiber_iff", "disk_surjectivity", "cone_disk_homeomorphism"]
+lean_run = false
+kernel_audited = false

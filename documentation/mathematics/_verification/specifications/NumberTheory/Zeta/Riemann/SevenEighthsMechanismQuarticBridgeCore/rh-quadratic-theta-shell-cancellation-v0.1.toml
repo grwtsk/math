@@ -1,0 +1,52 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-shell-cancellation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "d860a5b1af1da8d8097b9556f65c24dfc606e1e9"
+parent_tree = "4667a7319c34c142d3694525981fa859736d23c1"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SHELL_RECURRENCE_EQUIVALENCE_TYPED / PRIME_SHELL_CANCELLATION_OPEN"
+
+[shell_identity]
+shell_error = "theta(2u)-theta(u)-u"
+exact_decomposition = "thetaError(2u)=thetaError(u)+shell_error(u)"
+octave_map = "[X,2X] --u|->2u--> [2X,4X]"
+recurrence_equivalence = "QuadraticThetaSourceRecurrenceAt(rho) iff QuadraticThetaShellCancellationAt(rho)"
+
+[closure]
+shell_cancellation_7_8 = "open"
+shell_cancellation_3_4 = "open"
+both_plus_theta_7_8_imply_rh = true
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.QuadraticThetaShellCancellation"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticThetaShellCancellation.lean"
+blob = "f3d9a30fdc94827b47565f1fee64ca111280e821"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellCancellationControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/QuadraticThetaShellCancellationControls.lean"
+blob = "e39361b9fed1470334b4a30d0826aadcfa8f5567"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "1910cbddf8fcf97aca4e2ad04c82b8c9b5a3632c"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/quadratic-theta-shell-cancellation.md"
+blob = "05e0c67d56f38c79757e66c2cf313fe0145e325e"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SHELL_RECURRENCE_EQUIVALENCE_TYPED = true
+SHELL_CANCELLATION_7_8_PROVED = false
+SHELL_CANCELLATION_3_4_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

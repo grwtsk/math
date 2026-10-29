@@ -1,0 +1,70 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-sequential-three-point-volume-packing-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "7f9f81f56d214466037d6ed319d53aef6d84024b"
+parent_tree = "035691bd88d3c03f6b117776464fa391a353957a"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SEQUENTIAL_SOURCE_MAP_OPEN"
+
+[mathematical_scope]
+state = "one point sequence plus one source-label sequence"
+window = "stage n uses n,n+1,n+2"
+adjacent_overlap = "two points shared definitionally"
+positive_witness = "squared oriented area / 2x2 Gram determinant"
+source_validity = "three labels inherited from one globally valid source sequence"
+quartic_comparison = "valueAt n = weight n * witnessTrace(re(s)-1/2,im(s)) + residual_total n"
+concrete_trace_to_sequence_map = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SequentialThreePointVolumePacking"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SequentialThreePointVolumePacking.lean"
+blob = "1bb205f704e8ba811a7b9b3c1265c5b35132f1a1"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialThreePointVolumePackingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SequentialThreePointVolumePackingControls.lean"
+blob = "40a9301c0507cb394bbf79d925ca5b9315b30172"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "ca84d82bbd7da6b7dd4dec9d2d4ef4fa35f55bd9"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/sequential-three-point-volume-packing.md"
+blob = "758492fe0f4eae04a471e04e77350c9d2673292c"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+TRACE_TO_SEQUENCE_MAP_CONSTRUCTED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct the coherent point sequence from the accepted mechanism trace/local witness",
+  "construct the coherent source-label sequence from the same source",
+  "prove the signed-quartic comparison identity",
+  "prove positive limiting coefficient",
+  "prove every named residual channel tends to zero",
+  "construct the theorem-bound PNT/circularity dependency audit"
+]
+
+[nonclaims]
+items = [
+  "no concrete trace-to-sequence source map",
+  "no accepted external detector mechanism",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]

@@ -1,0 +1,90 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-difference-fourier-858-v0.1"
+owner_repository = "grwtsk/math"
+issue = 858
+parent_issue = 848
+parent_pr = 850
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceCorrectionFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceCorrectionFourier"
+
+[source_binding]
+stacked_parent_revision = "5576c62aa169bf138564cf33fc5bba4f9aeb109e"
+candidate_branch = "research/rh-endpoint-difference-corrections-858"
+theorem_source_commit = "a3ef408b466e972569db322de9811c1d21e200f2"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointDifferenceFourier.lean"
+theorem_source_git_blob = "17ebfb6543d076bcefde5a2237b4862a778790e4"
+
+[selected_increment]
+closed_interval_kernel = "coreGrowingShiftEndpointClosedIntervalKernel"
+closed_interval_exactness = "coreGrowingShiftEndpointClosedIntervalKernel_eq_sum"
+difference_prefix_lower = "coreGrowingShiftEndpointCorrectionDifferencePrefixLower"
+difference_prefix_upper = "coreGrowingShiftEndpointCorrectionDifferencePrefixUpper"
+difference_bulk = "coreGrowingShiftEndpointCorrectionDifferenceBulkKernel"
+left_clipping_correction = "coreGrowingShiftEndpointLeftClippingCorrection"
+bulk_left_identity = "coreGrowingShiftEndpointAggregateBoundaryKernel_eq_difference_sub_left"
+difference_profile = "coreGrowingShiftEndpointDifferenceProfile"
+cyclic_difference_kernel = "coreGrowingShiftEndpointCyclicDifferenceKernel"
+strict_difference_bulk = "coreGrowingShiftEndpointStrictDifferenceBulkKernelZeroPad"
+cyclic_support_correction = "coreGrowingShiftEndpointCyclicSupportCorrectionZeroPad"
+left_correction_zero_pad = "coreGrowingShiftEndpointLeftClippingCorrectionZeroPad"
+pointwise_kernel_decomposition = "coreGrowingShiftEndpointBoundaryKernelZeroPad_eq_cyclic_sub_corrections"
+generic_difference_dft = "finite_zmod_differenceKernelDFT2"
+generic_frequency_collapse = "finite_zmod_differenceKernel_bilinearFourier_collapse"
+cyclic_bulk_frequency_packet = "coreGrowingShiftEndpointCyclicDifferenceBulkFourierPacketComplex"
+support_correction_frequency_packet = "coreGrowingShiftEndpointCyclicSupportCorrectionFourierPacketComplex"
+left_correction_frequency_packet = "coreGrowingShiftEndpointLeftClippingCorrectionFourierPacketComplex"
+complete_complex_packet = "coreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacketComplex"
+complete_real_packet = "coreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacket"
+complex_packet_identity = "coreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacketComplex_eq_boundary"
+real_packet_identity = "coreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacket_eq_boundary"
+rh_packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointDifferenceCorrectionFourier"
+source_proposition = "SubpolynomialCoreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacket_iff_boundary"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointDifferenceCorrectionFourierPacket"
+proof_classification = "EXACT_FINITE_INTERVAL_SUBTRACTION_CYCLIC_DIFFERENCE_DFT_AND_SIGNED_CORRECTION_DECOMPOSITION"
+next_obstruction = "estimate the complete signed one-frequency bulk minus cyclic-support and left-clipping corrections without separate absolute bounds"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+one_frequency_bulk_estimate_proved = false
+cyclic_support_correction_estimate_proved = false
+left_clipping_correction_estimate_proved = false
+signed_combined_frequency_estimate_proved = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+parseval_or_positive_norm_used = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false
+
+# Historical source_binding above remains the authored, pinned issue #858 source.
+# Current integration targets are distinguished below; no new source hash or
+# successful replay is asserted for this relocation.
+[integration]
+kind = "LOSSLESS_SIBLING_MODULE_RELOCATION_WITH_DECLARATION_RENAMES"
+pull_request = 860
+integrated_source_head = "4c328c190a1d3d86dd035c21cf3d7fda83ab0299"
+historical_root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceFourier"
+historical_build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceFourier"
+current_root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceCorrectionFourier"
+current_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointDifferenceCorrectionFourier.lean"
+current_documentation_path = "docs/mathematics/NumberTheory/Moebius/Energy/core-growing-shift-signed-endpoint-difference-correction-fourier.md"
+existing_issue_876_module_preserved = true
+hypotheses_preserved = true
+proof_scripts_preserved_modulo_identifier_renames = true
+elaboration_evidence_added = false
+kernel_evidence_added = false
+
+[integration.declaration_renames]
+"coreGrowingShiftEndpointDifferencePrefixLower" = "coreGrowingShiftEndpointCorrectionDifferencePrefixLower"
+"coreGrowingShiftEndpointDifferencePrefixUpper" = "coreGrowingShiftEndpointCorrectionDifferencePrefixUpper"
+"coreGrowingShiftEndpointDifferenceBulkKernel" = "coreGrowingShiftEndpointCorrectionDifferenceBulkKernel"

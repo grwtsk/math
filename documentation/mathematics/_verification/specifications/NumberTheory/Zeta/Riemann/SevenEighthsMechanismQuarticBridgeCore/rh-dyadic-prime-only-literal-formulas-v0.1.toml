@@ -1,0 +1,52 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-prime-only-literal-formulas-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "410e5b77d782cac312d3ffe106b33a08991d9efb"
+parent_tree = "7119c4901bd297e80bc1d312053b204983adadd6"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PRIME_ONLY_WITNESS_LITERAL_FORMULAS_EXPOSED"
+
+[endpoints]
+harmonic_mass = "H_X=sum_(X<p<=2X) log(p)/p"
+log_mass = "T_X=sum_(X<p<=2X) log(p)"
+mass0 = "H_X-log 2"
+mass1 = "T_X/X-H_X-(1-log 2)"
+sum = "T_X/X-1"
+theta_identity = "T_X=theta(2X)-theta(X)"
+
+[fourier]
+phase_sum = "sum_(X<p<=2X) (log p/p) exp(-2*pi*i*k*p/X)"
+mass = "sum_(X<p<=2X) log p/p"
+prime_source_coordinate = "(phaseSum-mass)/(-2*pi*i*k)"
+complete_coordinate = "fixed background - prime source coordinate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicPrimeOnlyLiteralFormulas"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicPrimeOnlyLiteralFormulas.lean"
+blob = "321eb22d7764fd4045ec0a41fd968a3499ff433b"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyLiteralFormulasControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicPrimeOnlyLiteralFormulasControls.lean"
+blob = "7561200de19a8077639c16b214ee2aacce906e07"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "1182a3db45d7532ab9176ce4eec0835f671c8e9e"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-prime-only-literal-formulas.md"
+blob = "79c9715f701277724310789075e62aef6c9178e4"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PRIME_ONLY_WITNESS_LITERAL_FORMULAS_EXPOSED = true
+PRIME_ONLY_BOUND_PROVED = false

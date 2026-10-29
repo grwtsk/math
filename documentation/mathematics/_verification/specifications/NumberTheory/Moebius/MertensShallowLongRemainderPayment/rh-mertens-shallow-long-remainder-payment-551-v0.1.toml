@@ -1,0 +1,40 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-shallow-long-remainder-payment-551-v0.1"
+owner_repository = "grwtsk/math"
+issue = 551
+parent_issue = 547
+parent_pr = 550
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensShallowLongRemainderPayment"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensShallowLongRemainderPayment"
+
+[source_binding]
+stacked_parent_revision = "3a5c6d4ff09962d7da406868062fb96313b27b69"
+candidate_branch = "research/rh-shallow-long-551-20261021"
+theorem_source_commit = "67a16dcf394f7c36aed81c5311b0a6308d22fe9c"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensShallowLongRemainderPayment.lean"
+theorem_source_git_blob = "6b193274061d907718d28db1c4b75e7eedf2ef08"
+
+[selected_increment]
+shallow_short_budget = "logarithmicShallowNormalizedShortBudget"
+shallow_short_signed = "logarithmicShallowShortSignedPacket"
+shallow_long_identity = "logarithmicShallowLongRemainderPacket_eq_sub"
+shallow_long_bound = "abs_logarithmicShallowLongRemainderPacket_le"
+shallow_long_supplier = "SubpolynomialLogarithmicShallowLongRemainderPacket"
+shallow_long_supplier_value = "subpolynomialLogarithmicShallowLongRemainderPacket"
+deep_to_full = "subpolynomialLongHarmonicRemainderPacket_of_deep"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialDeepLongHarmonicRemainderPacket"
+proof_classification = "DETERMINISTIC_SHALLOW_LONG_PAYMENT_AND_DEEP_REDUCTION"
+next_obstruction = "prove deep-long short-interval remainder supplier"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+deep_supplier_proved = false
+short_interval_theorem_applied = false
+riemann_hypothesis_proved = false

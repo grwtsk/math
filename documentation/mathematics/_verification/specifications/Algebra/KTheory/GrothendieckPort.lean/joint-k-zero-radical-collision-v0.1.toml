@@ -1,0 +1,53 @@
+schema = "grwtsk.k-zero-radical-collision-verification-v0.1"
+source_repository = "grwtsk/math"
+source_snapshot_commit = "98b6269d127f37cc890a332a2c01fe758679f771"
+source_snapshot_tree = "546f72315df1e5ef457ed3d4bd15ab53c9396c65"
+source_module = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+source_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+original_source_commit = "46c575de6a7652b9ce250c8060f4a31c19b97957"
+upstream_imports = ["Mathlib.GroupTheory.MonoidLocalization.GrothendieckGroup"]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_status = "CANDIDATE_NOT_KERNEL_ACCEPTED"
+analytic_k_zero_constructed = false
+arithmetic_radical_instantiated = false
+radical_signature_is_explicit_parameter = true
+exact_type_label_is_explicit_parameter = true
+historical_influence_claimed = false
+
+[[declarations]]
+name = "GRWTSK.Algebra.KTheory.JointCollision.feature"
+kind = "definition"
+meaning = "Source → (GrothendieckKZero Stable × RadicalSignal), from explicitly supplied feature maps"
+
+[[declarations]]
+name = "GRWTSK.Algebra.KTheory.JointCollision.type_eq_of_joint_feature_collision"
+kind = "theorem"
+meaning = "Any decoder correct on all sources identifies type labels of sources with equal K-zero-shaped class and equal radical signal"
+hypotheses = ["CommMonoid Stable", "correct : ∀ source, decode (feature source) = typeOf source", "kClass a = kClass b", "radical a = radical b"]
+
+[[declarations]]
+name = "GRWTSK.Algebra.KTheory.JointCollision.no_exact_type_decoder_of_collision"
+kind = "theorem"
+meaning = "A joint feature collision between different exact type labels prohibits an exact decoder factoring only through those features"
+hypotheses = ["CommMonoid Stable", "kClass a = kClass b", "radical a = radical b", "typeOf a ≠ typeOf b"]
+
+[validation]
+command_core = "lake build --wfail GRWTSK.Algebra.KTheory.GrothendieckPort"
+command_direct = "lake env lean -DwarningAsError=true GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+command_kernel = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+axiom_audit = "At exact commit, import module and run #print axioms on both new theorem heads plus their transitive dependencies; explicitly audit generated declarations."
+expected_unjustified_axioms = []
+compile = "NOT_RUN"
+elaboration = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axioms = "NOT_RUN"
+receipt = "NOT_RUN"
+full_acceptance = false
+operational_receipts_repository = "grwtsk/noeaaeue"
+
+[limits]
+information_loss_not_impossibility_of_type_coverage = true
+stable_monoid_group_completion_not_analytic_k_theory = true
+no_kasparov_product_or_projection_comparison = true
+no_automatic_coercion_between_arithmetic_and_ideal_radicals = true

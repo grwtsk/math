@@ -1,0 +1,79 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-bertrand-positivity-v0.1"
+owner_repository = "grwtsk/math"
+issue = 790
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightBertrandPositivityControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightBertrandPositivityControls"
+
+[source_binding]
+parent_branch = "research/781-pinned-prime-capacity-ratio-v01"
+parent_revision = "34b34933830509c0863983aeea76cff389a83dd4"
+implementation_branch = "research/790-pinned-prime-bertrand-positivity-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / BERTRAND_PRIME_WINDOW_OCCUPANCY_DEFINED / PINNED_AMPLITUDE_STRICT_POSITIVITY_DEFINED / ZERO_AMPLITUDE_GUARD_ELIMINATION_DEFINED / BERTRAND_RATIO_CRITERION_EQUIVALENCE_DEFINED / UNIFORM_RATIO_BOUND_OPEN / COEFFICIENT_SOURCE_LAW_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[pinned_dependency]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/Bertrand.lean"
+declaration = "Nat.exists_prime_lt_and_le_two_mul"
+statement = "X != 0 -> exists prime p with X < p and p <= 2*X"
+
+[arithmetic_result]
+prime_window = "thetaPrimeWindow X = primes in (X,2X]"
+prime_window_nonempty = true
+coefficient = "coefficient(p)=log(p)/p"
+coefficient_strictly_positive = true
+theta_factor_strictly_positive = true
+pinned_amplitude_strictly_positive = true
+dyadic_amplitude_nonzero = true
+
+[ratio_reduction]
+guarded = "target<=E or (A_X!=0 and requiredCapacity<=C)"
+bertrand = "target<=E or requiredCapacity<=C"
+guard_eliminated_on_nonzero_scales = true
+nonvacuous_stage = "requiredCapacity<=C"
+uniform_ratio_bound_proved = false
+
+[criterion_boundary]
+bertrand_ratio_equivalent_to_capacity_ratio = true
+fixed_bertrand_ratio_transports_to_recurrence = true
+fixed_bertrand_ratio_transports_to_descent = true
+seven_eighths_ratio_criterion_proved = false
+three_quarters_ratio_criterion_proved = false
+coefficient_source_law_proved = false
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightBertrandPositivity"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightBertrandPositivity.lean"
+blob = "a1ee4d242cba0def1cacad6968ba26db02f306d5"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeightBertrandRatio"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPinnedPrimeWeightBertrandRatio.lean"
+blob = "4913fcd0dcb35922b841e58f9698676a29552f6f"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightBertrandPositivityControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightBertrandPositivityControls.lean"
+blob = "fe531c10079c1bc50eb33f96eb6d699cb3d6fc32"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-bertrand-positivity.md"
+blob = "2eb28c44621b0ba291967f2aeab9f00c848a79aa"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+BERTRAND_PRIME_WINDOW_OCCUPANCY_DEFINED = true
+PINNED_AMPLITUDE_STRICT_POSITIVITY_DEFINED = true
+ZERO_AMPLITUDE_GUARD_ELIMINATION_DEFINED = true
+BERTRAND_RATIO_CRITERION_EQUIVALENCE_DEFINED = true
+UNIFORM_RATIO_BOUND_PROVED = false
+COEFFICIENT_SOURCE_LAW_PROVED = false
+SEVEN_EIGHTHS_RATIO_CRITERION_PROVED = false
+THREE_QUARTERS_RATIO_CRITERION_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false

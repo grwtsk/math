@@ -1,0 +1,143 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-nonsquarefree-divisor-cancellation-546-v0.1"
+owner_repository = "grwtsk/math"
+issue = 546
+parent_issue = 543
+parent_pr = 544
+divisor_square_issue = 537
+divisor_square_pr = 539
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_DIVISOR_SQUARE_IDENTITY_SOURCE_CONSTRUCTED_SIEVED_CROSS_COLLISION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SquareDivisorMobiusNonsquarefreeCancellation"
+build_target = "GRWTSK.NumberTheory.Moebius.SquareDivisorMobiusNonsquarefreeCancellation"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-square-divisor-squarefree-half-543-20261021"
+stacked_parent_revision = "1f3308b249a843a7a9b08d347769e3230b6a9223"
+stacked_parent_tree = "f10f5447eb28714360ce64632b123d3d8a0d0537"
+candidate_branch = "research/rh-nonsquarefree-divisor-cancellation-546-20261021"
+theorem_source_commit = "3d57ea85948d3a310e88b39470d007f42fa7ae7d"
+theorem_source_tree = "8c75c77c28924e264668f0ab4ed49ba7cc80df8d"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SquareDivisorMobiusNonsquarefreeCancellation.lean"
+theorem_source_git_blob = "c678bcce50e6b77ef650960e43572bb490cbe50c"
+
+[selected_increment]
+support = "squareDivisorMobiusSupport"
+support_reduction = "squareDivisorMobiusSum_eq_supportSum"
+prime_square_witness = "exists_prime_square_dvd_of_not_squarefree"
+toggle = "squareDivisorPrimeToggle"
+toggle_support = "squareDivisorPrimeToggle_mem_support"
+toggle_involutive = "squareDivisorPrimeToggle_involutive_on_support"
+toggle_fixed_point_free = "squareDivisorPrimeToggle_ne_self_on_support"
+toggle_sign = "moebiusReal_add_toggle_eq_zero"
+support_cancellation = "sum_squareDivisorMobiusSupport_eq_zero_of_prime_square_dvd"
+nonsquarefree_cancellation = "squareDivisorMobiusSum_eq_zero_of_not_squarefree"
+constructed_nonsquarefree_certificate = "nonSquarefreeSquareDivisorMobiusCancellation"
+constructed_full_identity = "squarefreeDivisorSquareMobiusIdentity"
+full_identity_wrapper = "squarefreeIndicatorReal_eq_squareDivisorMobiusSum"
+proof_classification = "FINITE_PRIME_TOGGLE_INVOLUTION"
+
+[arithmetic]
+nonsquarefree_witness = "exists prime p with p*p|m"
+support_formula = "d|m and d*d|m and Squarefree(d)"
+toggle_if_divides = "d/p"
+toggle_if_not_divides = "p*d"
+paired_sum = "mu(d)+mu(toggle(d))=0"
+cancellation_engine = "Finset.sum_involution"
+analytic_input_used = false
+density_used = false
+
+[identity_status]
+squarefree_case_source_script = true
+nonsquarefree_case_source_script = true
+full_supplier_value_source_constructed = true
+lean_elaboration = false
+kernel_checked = false
+
+[downstream]
+divisor_square_adapter_issue = 537
+divisor_square_adapter_pr = 539
+sieved_cross_collision_estimate_proved = false
+remaining_arithmetic = "uniform signed divisor-sieved two-endpoint correlation estimate"
+
+[evidence_states]
+source_draft = true
+divisor_square_identity_source_constructed = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+sieved_cross_collision_estimate_proved = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_source_text_as_kernel_evidence = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SquareDivisorMobiusNonsquarefreeCancellation"
+authored_declaration_count = 14
+definition_count = 4
+theorem_script_count = 10
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SquareDivisorMobiusSquarefreeHalf.lean"
+git_blob = "421f9da30ce2092bda1c459525c32c68575c4dce"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_544"
+
+[[dependencies]]
+source = "Mathlib"
+uses = [
+  "Nat.squarefree_iff_prime_squarefree",
+  "Nat.Prime.coprime_iff_not_dvd",
+  "Nat.Coprime.pow",
+  "Nat.Coprime.mul_dvd_of_dvd_of_dvd",
+  "Nat.squarefree_mul",
+  "ArithmeticFunction.isMultiplicative_moebius",
+  "ArithmeticFunction.moebius_apply_prime",
+  "Finset.sum_involution"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+nonsquarefree_terms_removed_only_via_moebius_zero = true
+toggle_support_proved = true
+toggle_involution_proved = true
+toggle_fixed_point_free_proved = true
+toggle_sign_reversal_proved = true
+density_heuristic_not_used = true
+analytic_estimate_not_inferred = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+sieved_cross_collision_estimate = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+repository_tests = false
+independent_review = false
+cross_collision_bound_proved = false
+riemann_hypothesis_proved = false

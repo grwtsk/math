@@ -1,0 +1,191 @@
+schema_version = "0.2"
+id = "abc-exceptional-geometry-lattice-frame-427-v0.2"
+repository = "grwtsk/math"
+owner_issue = 427
+parent_issue = 414
+predecessor_pr = 418
+pull_request = 429
+branch = "research/427-primitive-lattice-foundation-v01"
+source_parent_commit = "61ed96227d15a3705b7feaf023b3b24d539ae8d5"
+source_parent_tree = "ad9047c207deaae5bccc3c24bbca4929c4b9df93"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+root_module = "GRWTSK.Interfaces.PrimitiveLinearLatticeFoundation"
+public_root_imported = false
+
+status = "SOURCE_DRAFT"
+elaboration = "NOT_RUN"
+kernel_audit = "NOT_KERNEL_AUDITED"
+finite_lattice_theorem = "OPEN"
+
+[[source]]
+module = "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame"
+path = "GRWTSK/GeometryOfNumbers/PrimitiveLinearUnimodularFrame.lean"
+blob = "338c69726ee5ac4157c4d378aab2e2964fe3e78f"
+
+[[source]]
+module = "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea"
+path = "GRWTSK/GeometryOfNumbers/PrimitiveLinearScaledArea.lean"
+blob = "865d2a4b2a7a4c5f866c567eebcf4e38f29bf179"
+
+[[source]]
+module = "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls"
+path = "GRWTSK/GeometryOfNumbers/Checks/PrimitiveLinearFrameControls.lean"
+blob = "8ff643acd783c0da9750770a4ffd752afd73b815"
+
+[[source]]
+module = "GRWTSK.Interfaces.PrimitiveLinearLatticeFoundation"
+path = "GRWTSK/Interfaces/PrimitiveLinearLatticeFoundation.lean"
+blob = "33ef686dd211253ca803ad74b1427508ae3808e0"
+
+[[source]]
+kind = "mathematical_note"
+path = "docs/mathematics/GeometryOfNumbers/heath-brown-primitive-kernel-frame.md"
+blob = "f3ff187606ecddac7d4c77f2ee9c48351b17f724"
+
+[scope]
+summary = "Explicit unimodular kernel frame and exact anisotropic area normalization for the primitive linear equation used in Proposition 4.1."
+
+mathematical_claims = [
+  "The reduced coefficient pair a/g,b/g is coprime.",
+  "Two explicit integer vectors lie in the kernel of a*x+b*y-c*z.",
+  "Their cross product is exactly (-a,-b,c).",
+  "A nested Bezout complement completes the frame with determinant -1.",
+  "After scaling coordinates by X,Y,Z, the cross product is (-a/(YZ),-b/(ZX),c/(XY)).",
+  "The exact squared area is ((aX)^2+(bY)^2+(cZ)^2)/(XYZ)^2.",
+  "max(aX,bY,cZ)/(XYZ) is a lower bound for the positive scaled area."
+]
+
+nonclaims = [
+  "No identification with Mathlib ZLattice.covolume is accepted.",
+  "No reduced-basis or successive-minima theorem is proved.",
+  "No Blichfeldt or Minkowski finite count is instantiated.",
+  "No absolute constant for the Heath-Brown primitive point count is constructed.",
+  "No divisor-fibre lifting or complementary-coordinate summation is proved.",
+  "No Proposition 4.1, exceptional-set theorem, or abc conjecture is proved.",
+  "Source presence is not Lean elaboration, kernel acceptance, or replay evidence."
+]
+
+[requirements]
+clean_checkout = true
+exact_source_blobs = true
+exact_declaration_types = true
+generated_declaration_inventory = true
+all_selected_modules_elaborate = true
+root_only_build_insufficient = true
+transitive_axiom_audit = true
+reject_sorryAx = true
+reject_unreported_unsafe = true
+reject_unreported_native = true
+external_receipt_required = true
+
+[allowed_axioms]
+names = ["propext", "Quot.sound", "Classical.choice"]
+
+[modules]
+names = [
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls",
+  "GRWTSK.Interfaces.PrimitiveLinearLatticeFoundation"
+]
+
+[declarations]
+names = [
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.pairGcd",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.pairGcd_pos",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.reducedA",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.reducedB",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.reducedA_mul_pairGcd",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.reducedB_mul_pairGcd",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.reduced_coprime",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.reduced_bezout_identity",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.cast_a_eq_reduced_mul_gcd",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.Data.cast_b_eq_reduced_mul_gcd",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.normalVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.firstKernelVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.secondKernelVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.vectorOfIntPoint",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.intPointOfVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.complementVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.normal_dot_vectorOfIntPoint",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.normal_dot_firstKernelVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.normal_dot_secondKernelVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.normal_dot_complementVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.firstKernelVector_mem_linearKernel",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.secondKernelVector_mem_linearKernel",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.first_cross_second",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.kernelFrameMatrix",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.kernelFrameMatrix_det",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.kernelFrameMatrix_det_isUnit",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.UnimodularKernelFrame",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.canonicalUnimodularKernelFrame",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame.canonicalFrame_det_ne_zero",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.castIntVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.anisotropicScale",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledFirstVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledSecondVector",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledNormalCross",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.castIntVector_cross",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.anisotropicScale_cross",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledFirst_cross_scaledSecond",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.squaredNorm3",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledAreaSq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledNormalSq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.boxVolume",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.boxVolume_pos",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.boxVolume_ne_zero",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledAreaSq_nonneg",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledAreaSq_eq_scaledNormalSq_div",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledAreaSq_mul_boxVolume_sq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaleHeight_sq_le_scaledNormalSq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaleHeight_sq_le_scaledAreaSq_mul_boxVolume_sq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledAreaSq_pos",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledArea",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.scaledArea_sq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.normalizedHeight_nonneg",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.normalizedHeight_sq_le_scaledAreaSq",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.normalizedHeight_le_scaledArea",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.ScaledAreaCertificate",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea.canonicalScaledAreaCertificate",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_cross_orientation_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_frame_determinant_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_frame_determinant_unit_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_scaledNormalSq_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_boxVolume_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_scaledAreaSq_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.unit_normalized_height_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.lopsided_scaled_cross_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.cube_denominator_substitution_rejected",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.frame_not_finite_count_bound_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls.lopsided_squared_bridge_control"
+]
+
+[hostile_controls]
+names = [
+  "coefficient gcd and variable primitivity remain separate",
+  "nonprimitive multiples on one kernel ray remain excluded from the primitive count",
+  "determinant minus one does not imply a bounded point count",
+  "positive scaled area does not construct an absolute counting constant",
+  "lopsided coordinate denominators cannot be replaced by one cube denominator",
+  "real division cannot be replaced by natural truncating division",
+  "an asymptotic lattice count cannot be reported as an exact finite inequality",
+  "a named target proposition is not a theorem witness"
+]
+
+[remaining_obligations]
+names = [
+  "exact-head Lean elaboration and source repair",
+  "complete authored and generated declaration reconciliation",
+  "transitive dependency, axiom, unsafe, native and opaque audit",
+  "identify the explicit rank-two span with the selected ZLattice",
+  "prove the matching covolume theorem",
+  "prove an effective finite primitive point count with an absolute constant",
+  "record coordinate-order cases without cube replacement",
+  "prove divisor-fibre lifting and complementary-coordinate summation",
+  "construct the complete Proposition 4.1 supplier"
+]

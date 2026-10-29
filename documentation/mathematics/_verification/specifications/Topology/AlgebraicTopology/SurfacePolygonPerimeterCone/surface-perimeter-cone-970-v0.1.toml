@@ -1,0 +1,572 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-perimeter-cone-970-v0.1"
+owner_repository = "grwtsk/math"
+issue = 970
+related_issues = [961,955,947,941,916,889,868,859,845,834,823,803,795,774,758,745,734,722,100,159,15]
+route_id = "GENUINE_TOPOLOGICAL_CONE_TO_RADIAL_FILLING_CONTINUOUS_SURJECTION"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-radial-product-quotient-961-20261022"
+review_parent_revision = "582b6daf33cc32bce547934c1a6bb748376cfa92"
+review_parent_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonRadialProductQuotient.lean"
+review_parent_module_git_blob = "8c86ab5dfa194ce6fce39d58ca8dde5c44bdcc54"
+review_parent_joint_module_git_blob = "ca2d5b755d5e9c49ed9f7c2d43e434b23ba98005"
+review_parent_circle_module_git_blob = "ad92d48b7eb6eb7135fb84c124e11aa3ccdd17cc"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCone.lean"
+new_module_git_blob = "b75c6440380a0bd83e48028eb6521b23b115dcfe"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-perimeter-cone.md"
+mathematical_note_git_blob = "547bc4e098724a30d5b9432332d8b239e75fc270"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+topology_quotient_path = "Mathlib/Topology/Constructions.lean"
+quotient_equivalence_closure = "Relation.EqvGen"
+quotient_topology_source = "instTopologicalSpaceQuotient"
+quotient_continuous_projection = "continuous_quotient_mk'"
+quotient_map_projection = "isQuotientMap_quotient_mk'"
+quotient_lift_continuity = "Continuous.quotient_lift"
+quotient_compactness_path = "Mathlib/Topology/Compactness/Compact.lean"
+quotient_compactness = "Quotient.compactSpace"
+source_joint_continuity = "SurfacePolygonRadialProductQuotient.perimeterJointRadialMap_continuous"
+source_perimeter_compactness = "SurfacePolygonPerimeterCircleEquivalence.unpairedPerimeterCompactSpace"
+reuse_status = "PINNED_MATHLIB_AND_PARENT_SOURCE_IDENTIFIED_NOT_KERNEL_QUALIFIED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+true_unpaired_source_cylinder_with_real_unit_interval = true
+only_zero_radius_apex_relation_generators = true
+exact_apex_equivalence_fiber_characterization_candidate = true
+actual_coinduced_quotient_topology = true
+continuous_true_cone_projection = true
+positive_radius_source_injectivity_candidate = true
+continuous_cone_radial_coordinate_candidate = true
+parent_joint_continuity_consumed_exactly = true
+real_cone_to_filled_quotient_lift_candidate = true
+continuous_cone_to_filled_map_candidate = true
+surjective_cone_to_filled_map_candidate = true
+exact_original_radial_source_square = true
+cone_outer_boundary_injective_candidate = true
+unit_circle_outer_boundary_map_source_exact = true
+cone_map_outer_attaching_triangle_commutes_candidate = true
+cone_map_noninjective_source_exact = true
+cone_and_filled_compactness_candidates = true
+genus_two_three_fixtures = true
+cone_to_standard_disk_homeomorphism_proved = false
+cone_to_filled_homeomorphism_proved = false
+full_cone_to_filled_fiber_characterization_proved = false
+cone_to_filled_IsQuotientMap_proved = false
+filled_quotient_pushout_universal_property_proved = false
+genuine_genus_g_CW_manifold_proved = false
+actual_surface_cellular_singular_H1_proved = false
+actual_surface_pi1_vanKampen_Hurewicz_proved = false
+hyperbolic_geodesic_lengths_or_primitive_trace_proved = false
+Selberg_WP_GUE_sofic_proved = false
+Chowla_growing_shift_or_zeta_RH_proved = false
+mathematical_statement = "The genuine source-exact topological cone of the unpaired 4g-edge perimeter is a coinduced quotient by only zero-radius apex relations, compact with continuous radius. Parent jointly continuous source map descends to a continuous, surjective, noninjective map into the true previously constructed radial filled quotient, preserving radius and original attaching-map commutativity."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+authored_declaration_count = 37
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialProductQuotient", "Mathlib.Topology.Constructions", "Mathlib.Topology.Compactness.Compact"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+source_construct = "local discrete polygon source index topology and inferred instance resolution"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+source_construct = "PerimeterConeStep apex inductive constructor and its generated recursor, cone Setoid/Quotient"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone"
+source_construct = "quotient lift, coinduced topology, implicit cone/filling compactness instances"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.ConeCylinder"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.PerimeterConeStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.ConeConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneConnected_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneSetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.PerimeterCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneTopology_coinduced"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneProjection_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneProjection_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneProjection_eq_iff_of_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneConnected_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneRadius"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneRadius_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneRadius_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneConnected_jointRadialMap_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneApex"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.cone_zero_eq_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneBoundary_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneBoundary_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.unitCircleConeBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.unitCircleConeBoundary_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_unitCircle_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneToFilled_not_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.perimeterConeCompactSpace"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.filledPolygonCompactSpace"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.coneApex_ne_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.genusTwo_coneToFilled_noninjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone.genusThree_coneToFilled_noninjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent-pinned"
+requirement = "The direct parent is PR #962 at exact head 582b6daf33cc32bce547934c1a6bb748376cfa92; no edits to parent sources."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-real-unpaired-perimeter"
+requirement = "The cone's first source factor is the authentic UnpairedPerimeter k, not the already paired B_k one-skeleton."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-actual-unit-interval"
+requirement = "The radial factor is Mathlib's genuine topological unitInterval, not an abstract discrete or Boolean radius."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-product-topology"
+requirement = "The source is the actual product topology of P_k and unitInterval, preserving its nontrivial radial continuity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "apex-only-relation"
+requirement = "The inductive PerimeterConeStep contains ONLY the apex generator relating (x,0) to (y,0)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-positive-radius-gluing"
+requirement = "No generator collapses two different P_k source points at any r>0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "EqvGen-minimality"
+requirement = "ConeConnected is the actual Mathlib Relation.EqvGen closure of the apex generator, not a universal relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-EqvGen-fiber-iff"
+requirement = "ConeConnected p q iff p=q or both radii zero is proved for every k and all source points."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "closure-symmetry"
+requirement = "The backwards apex identification is derived through EqvGen symm rather than a new non-source generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "closure-transitivity"
+requirement = "A transitive chain of apex relations cannot relate a nonzero-radius point to a different source point."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-quotient-carrier"
+requirement = "PerimeterCone k is a true Mathlib Quotient of the source cylinder by the derived Setoid, not an alias for the existing filling."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "coinduced-cone-topology"
+requirement = "The cone carries the actual coinduced Mathlib Quotient topology from its source product."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-cone-projection"
+requirement = "The cone source quotient projection is continuous using the true topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-map-cone-projection"
+requirement = "The cone source projection is IsQuotientMap, not merely a bare function."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonzero-source-injectivity"
+requirement = "ConeProjection equality away from r=0 forces equality of BOTH original perimeter source and radial parameter."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-radius-invariant"
+requirement = "Every cone relation preserves the exact radial coordinate, independently of target filled quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-radius-continuous"
+requirement = "The induced radius map Cone(P_k)→unitInterval is well defined and continuous."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-joint-map-exact"
+requirement = "The target map being descended is #959's exact perimeterJointRadialMap k, not a newly invented arbitrary map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "joint-continuity-uses-962"
+requirement = "coneToFilled continuity consumes #962's unconditional joint continuity, not only continuity of each radial slice."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-zero-slice-consumed"
+requirement = "The actual parent zero-radius theorem proves all cone-apex source pairs have equal images."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-map-real-Quotient-lift"
+requirement = "coneToFilled is constructed with genuine Quotient.lift after a source relation-compatibility proof."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-map-source-square"
+requirement = "For every source cylinder point p, coneToFilled(coneProjection p)=perimeterJointRadialMap p."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-map-continuous"
+requirement = "The real cone-to-filling function is continuous as a quotient lift of the parent jointly continuous map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "filled-surjectivity-source"
+requirement = "Every true radial square source representative in FilledPolygonQuotient comes from the same exact unpaired perimeter source and radius."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-map-surjective"
+requirement = "The coneToFilled map is surjective on ALL of FilledPolygonQuotient k, not merely the outer boundary."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-map-radius-commutes"
+requirement = "The full map commutes with the actual radialCoordinate and coneRadius for every quotient point."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-radius-one-cone-apex"
+requirement = "Every perimeter source at radius zero defines the same cone apex class."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "apex-target-original"
+requirement = "That cone apex maps to the exact earlier apexPoint k, not an unrelated zero point."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-boundary-real-continuous"
+requirement = "The map x↦coneProjection(x,1) is a continuous map P_k→Cone(P_k)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-cone-boundary-injective"
+requirement = "The cone's outer boundary map is genuinely injective, using the exact positive-radius equivalence criterion."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "filled-outer-attachment-triangle"
+requirement = "The outer boundary cone map followed by coneToFilled agrees with the existing authentic perimeterAttach then boundaryInclusion."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "canonical-unit-circle-source"
+requirement = "The unit-circle-to-cone outer boundary uses the source-specific circle homeomorphism from the existing #946 branch."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "canonical-circle-continuity"
+requirement = "The transported UnitAddCircle→Cone(P_k) map is continuous, not merely a set-theoretic circle labelling."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "canonical-circle-triangle"
+requirement = "The original unitCircleAttachingMap of #951 commutes exactly with coneToFilled along the outer boundary."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-to-filled-noninjective"
+requirement = "The cone-to-filled map must NOT be injective, proven from the inherited exact opposite a/a-inverse midpoint witness of #868."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-perimeter-source-loss"
+requirement = "The cone retains those distinct P_k points at radius one; the filling identifies them only by the actual paired-side relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-compact-source"
+requirement = "Compactness of the unpaired perimeter is consumed from #946 and compactness of the real radial interval is preserved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-compact-real-quotient"
+requirement = "Compactness of Cone(P_k) follows from genuine product compactness and Mathlib Quotient.compactSpace."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "filled-compact-real-quotient"
+requirement = "The filled radial quotient is compact as a quotient of the original 4g finite-indexed real unit squares."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Hausdorff-from-compactness"
+requirement = "Neither cone nor filled-space Hausdorffness follows from compactness alone, and none is falsely asserted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-apex-boundary-separated"
+requirement = "The real cone apex is distinct from every cone outer boundary point by its continuous radius."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-witness"
+requirement = "For k=0 the source has two handles and coneToFilled remains noninjective."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-witness"
+requirement = "For k=1 a genuine extra handle remains and coneToFilled remains noninjective."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-cone-to-disk"
+requirement = "No topological homeomorphism between Cone(P_k) and a standard closed disk D2 is asserted or assumed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-cone-to-filled-homeomorphism"
+requirement = "Cone(P_k) is NOT homeomorphic to the filled quotient via the noninjective coneToFilled map; no false equivalence is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-adjunction-pushout"
+requirement = "Surjectivity plus continuity does NOT itself establish the topological quotient/pushout universal property."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "remaining-fiber-converse"
+requirement = "The EXACT additional fiber equivalence at r=1 for coneToFilled remains a separate unproved comparison."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-manifold"
+requirement = "The compact cone and radial filling are not proven a genuine closed genus-g CW surface or manifold by this module."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-surface-homology"
+requirement = "No actual cellular/singular H1 comparison with the candidate categorical module from #823 is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-vanKampen-Hurewicz"
+requirement = "No true topological π1 van Kampen, Hurewicz or exact first-handle fundamental-group transport is proven."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-geodesic"
+requirement = "No marked compact hyperbolic surface, primitive geodesic, true length or complete primitive class enumeration is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-RH"
+requirement = "No Selberg/Weil-Petersson trace, sofic/GUE microscopic statistics, Möbius/Chowla, zeta divisor or RH theorem is obtained."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-declarations-unqualified"
+requirement = "The cone apex inductive recursor, Setoid, coinduced quotient instance and induced compactness instances need exact-head generated-declaration/type/axiom audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "static-not-kernel"
+requirement = "Source signatures, SHA bindings, and absence of textual holes do not establish Lean elaboration or transitive axiom qualification."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-native-F06"
+requirement = "Passive manifest does not authorize Lean/Lake/native/VM/F06, workflows/CI/cache/executor, root imports, toolchain/dependency pins or parent edits."
+status = "NOT_RUN"
+

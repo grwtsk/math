@@ -1,0 +1,111 @@
+# Passive source-bound mathematical verification queue. It is not a runner or receipt.
+schema_version = "0.1"
+request_id = "arithmetic-radical-metropolis-spectral-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "93a6068b628fd829a01de008519ced0a6706e8bc"
+source_module = "GRWTSK/GraphSandwichDiffusion.lean"
+source_blob = "9a22565da0918bf69511c02a8b871847154b4aab"
+relation_module = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean"
+relation_blob = "9761b5dd5d6ada7344031c07386586c72c1d970a"
+sofic_module = "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean"
+sofic_blob = "7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+weighted_laplacian_module = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/AlgebraicGraphTheory/FiniteWeightedLaplacian.lean"
+weighted_laplacian_blob = "7f414d21cb768cc938f1ef2e4a3077b41c62bb45"
+k_zero_shape_module = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+k_zero_shape_blob_at_source_commit = "ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+k_zero_shape_concurrent_newer_blob = "dbe5efd80bc873b812697f5a96f9ce6fc3e7fed8"
+mathlib_radical_module = "Mathlib/RingTheory/Radical/NatInt.lean"
+mathlib_radical_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+literature_source_hastings_1970 = "https://doi.org/10.1093/biomet/57.1.97"
+literature_source_metropolis_1953 = "https://doi.org/10.1063/1.1699114"
+mathematical_reference = "docs/reference/literature/reading-background/reversible-radical-sieve-metropolis-20261026.md"
+mathematical_document_commit = "100cca372ddee743283ce4743a45d107e9edb362"
+mathematical_document_blob = "4a6daa8b3e0f066ce9f16f8d289dc360e7e259fe"
+blocking_issue = "https://github.com/grwtsk/math/issues/1267"
+frontier_issue = "https://github.com/grwtsk/math/issues/1329"
+prior_request = "docs/verification/_unscoped/graph-sandwich-certified-lazy-markov-path-20261026.toml"
+prior_request_source_blob = "92ef6e49faa6e633c09b21976a4ee4a4b1ec587b"
+mathematical_classification = "CONDITIONAL_FINITE_CERTIFIED_ARITHMETIC_METROPOLIS_DIRICHLET"
+new_lean_source_status = "NOT_WRITTEN"
+existing_source_status = "SOURCE_PROOF_CANDIDATE"
+compilation_status = "NOT_RUN"
+elaboration_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+receipts = "NOT_RUN"
+new_source_authorization_pending_gate = true
+remote_dispatch_authorized = false
+execution_dispatched = false
+merge_authorized = false
+force_push_authorized = false
+physical_navier_stokes_regularization_proved = false
+physical_yang_mills_gap_proved = false
+arithmetic_cutoff_uniform_gap_proved = false
+analytic_k_theory_bridge_proved = false
+
+existing_source_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.sum_evolve_eq_sum",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_step_of_unit_mass",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_pos_iff_coprime_witness",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.positiveSieveEdge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_edge_iff_positive",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_oneStep_hit_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.seed_has_no_certified_edge",
+]
+
+future_new_declarations_to_write_only_after_gate = [
+  "Rational symmetric proposal with at most 1/2 outgoing proposal mass, on a symmetric off-diagonal subrelation of supplied certified edges.",
+  "Metropolis acceptance/probability kernel with explicit positive holding and source-first row-stochasticity.",
+  "Strictly positive weight normalization on arithmetic survivor scope, without a divide-by-zero for excluded even states.",
+  "Detailed balance: pi(x)*K(x,y) = proposal(x,y)*min(weight(x),weight(y))/Z.",
+  "Finite weighted Dirichlet form identity and reversibility in l2(pi); actual weighted graph API must be type-checked first.",
+  "Odd q=2 survivor scope and consecutive-odd edge subtype of certifiedArithmeticInventory in BOTH directions.",
+  "Connected finite path / spanning-tree resistance formula and positive spectral gap for each finite cutoff.",
+  "Exact two-state q=2,N=4 gap 2/3, K entries 1/2,1/2,1/6,5/6, stationary (1/4,3/4).",
+  "Exact q=2,N=9 radical 3 collision: transition to radical 1 equals 1/12 from 3, and zero from 9; no coarse Markov lumping.",
+  "Auxiliary uniform n>=3 positive holding path: 3/[2(n^2-1)] <= gap <= 3/[n(n+1)], showing no uniform cutoff gap without expansion.",
+]
+
+negative_controls = [
+  "Do not promote ordinary seedInventory edges: seedCertified is False; this arithmetic inventory has a DIFFERENT finite semantic interpretation.",
+  "Do not treat the resetKernel as the graph-local Metropolis chain: their kernels and spectra are different.",
+  "Do not orient a source-first row-stochastic transition as RootHeatState target-first column-stochastic without a proved transpose adapter.",
+  "A one-way certified edge is insufficient for this reversible construction: both directions are separately required.",
+  "A type supported on weight-zero even states is absent from the positive survivor scope.",
+  "State 3 and state 9 share squarefree radical 3 at N=9 but have coarse next-step mass to radical 1 of 1/12 versus 0.",
+  "Disconnected symmetric certified graph can have an additional zero mode; exact detailed balance alone does not establish positive full-space gap.",
+  "Uniform-weight lazy paths yield gap decaying n^-2 despite finite positivity; do not claim cutoff-uniform arithmetic or continuum spectral gap.",
+  "Metropolis/Hastings is an imported finite transition method, NOT a proof of Tao's classical 3D Navier-Stokes nonblowup or K0 analytic realization.",
+]
+
+[checks]
+pin_checkout = 'test "$(git rev-parse HEAD)" = 93a6068b628fd829a01de008519ced0a6706e8bc'
+pin_source_blob = 'test "$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)" = 9a22565da0918bf69511c02a8b871847154b4aab'
+pin_relation_blob = 'test "$(git hash-object GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean)" = 9761b5dd5d6ada7344031c07386586c72c1d970a'
+pin_sofic_blob = 'test "$(git hash-object GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean)" = 7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8'
+pin_mathlib = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+module_compilation = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+source_elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/GraphSandwichDiffusion.lean"
+dependent_weighted_graph_module = "lake build --wfail GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.AlgebraicGraphTheory.FiniteWeightedLaplacian"
+axiom_audit = "At pinned checkout use a temporary import driver outside math to #check and #print axioms the listed declarations, with complete transitive closure; capture argv/exit/diagnostics."
+fresh_kernel = "Use an actually supported source-pinned leanchecker; do not invent CLI or run without authorization."
+future_new_source_pin = "NOT_YET_DEFINED: do not transfer any old compiler/kernel status to a future Metropolis Lean source."
+observed_compilation_exit = "NOT_RUN"
+observed_elaboration_exit = "NOT_RUN"
+observed_kernel_exit = "NOT_RUN"
+observed_axioms = "NOT_RUN"
+
+# No effectful runner, workflow state, execution log or receipt may be added to math.
+# Operational receipt ownership: grwtsk/noeaaeue.

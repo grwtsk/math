@@ -1,0 +1,97 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-canonical-spectral-port-01-v0.1"
+owner_issue = 506
+repository = "grwtsk/math"
+stack_parent_pr = 496
+base_revision = "bcf0e25e172d33d8d6832a134079ab1536c0186f"
+branch = "research/506-canonical-spectral-port-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_obstruction = "Fix the canonical stage/test family and identify its signed spectral correction exactly with the positive prime-power Gram; leave only the scale/error comparison to the signed quartic witness."
+terminal_consumer = "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.riemannHypothesis_of_primePowerGramExtraction"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSpectralPort.lean"
+blob = "858fb52930dd89de451224aeaf81dcea37d362af"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalSpectralPortControls.lean"
+blob = "42a060040e9d93272a27cb138bb219d42bc28234"
+
+[[module]]
+path = "GRWTSK/Interfaces/CanonicalSpectralPortCore.lean"
+blob = "e043d8eb65f674da7ab90c2e6398e842640a2f8d"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-spectral-port.md"
+blob = "a646a917cf405b2295b2314af59daf64c4c6ec02"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "bcf0e25e172d33d8d6832a134079ab1536c0186f"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentAtomStage.lean"
+blob = "88ac98a84b68999824b68e9015bee8ca5627359d"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "2bb64e39af2905f9d6e36ccfbcbca82b4377c26c"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentLedger.lean"
+blob = "d5f4cdab9316269cc8ab1383f3810d057a95453b"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "527931dabe8b2642443baddc0e6494ae2dc4d33a"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimePowerQuadraticPort.lean"
+blob = "017f988f8d0e5708485bb873f29c98b5405ef034"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.spectralCorrection",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.spectralCorrection_eq_squareTentMangoldt",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.spectralCorrection_im_zero",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.spectralCorrectionReal",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.stageEnergy_eq_spectralCorrectionReal",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.spectralCorrectionReal_nonneg",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStage",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalAmplitude",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalCorrection",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStageEnergy_eq_correction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.CanonicalQuarticComparison",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.CanonicalQuarticComparison.toQuarticExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.CanonicalQuarticComparison.horizontal_displacement_eq_zero",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.riemannHypothesis_of_canonicalSpectralComparison"
+]
+
+hostile_controls = [
+  "canonical stage and amplitude are source-fixed before a target zero is supplied",
+  "signed spectral correction equals the exact positive Gram at every canonical square stage",
+  "finite spectral positivity is not promoted to global Weil positivity",
+  "CanonicalQuarticComparison at horizontal displacement one is impossible",
+  "positive limiting scale remains an explicit hypothesis",
+  "no arbitrary stage/test family is introduced"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive trust and axiom audit",
+  "construct CanonicalQuarticComparison for every actual nontrivial zeta zero",
+  "derive a source-independent positive limiting scale",
+  "prove the complete comparison error tends to zero",
+  "audit the comparison for circular dependence on RH or target positivity",
+  "external replay"
+]
+
+nonclaims = [
+  "no construction of the canonical quartic comparison",
+  "no Weil-form equivalence",
+  "no prime number theorem",
+  "no zero-free threshold improvement",
+  "no unconditional Riemann Hypothesis result"
+]
+
+next_obstruction = "Construct the fixed-family comparison canonicalCorrection n = weight n * witnessTrace(alpha,gamma) + error n with weight tending to a positive limit and complete error tending to zero, uniformly sourced rather than selected from the target sign."

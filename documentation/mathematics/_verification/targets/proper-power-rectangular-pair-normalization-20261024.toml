@@ -1,0 +1,37 @@
+# Queued source-pinned verification; no execution.
+schema_version = "0.1"
+request_id = "proper-power-rectangular-pair-normalization-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "763c8d749173442b0f6192471290cddd3a1017c8"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairNormalization.lean"
+source_blob = "b0529e27b556999d27ba87f3ac275c32e91a24d8"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairNormalization.rectangularProperPowerMass_eq_pairIndex_sum",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairEquiv",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Transport PairIndex weighted sum via pairIndexEquiv to rectangularSupportedMass",
+ "Compose original and rectangular mass normalization through indexEquiv",
+ "Prove unconditional original-to-rectangular proper-power mass identity",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairNormalization.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairNormalization"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairNormalization.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

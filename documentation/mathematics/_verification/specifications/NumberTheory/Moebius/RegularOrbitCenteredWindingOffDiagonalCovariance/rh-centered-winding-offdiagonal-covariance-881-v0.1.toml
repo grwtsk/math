@@ -1,0 +1,33 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-offdiagonal-covariance-881-v0.1"
+owner_repository = "grwtsk/math"
+issue = 881
+parent_issue = 877
+parent_pr = 878
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_OFF_DIAGONAL_COVARIANCE_SOURCE_DRAFT_WINDING_LAG_REINDEXING_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingOffDiagonalCovariance"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingOffDiagonalCovariance"
+
+[source_binding]
+stacked_parent_revision = "76b5ee6898a04cad7c8f0bc53a0f49a080721769"
+candidate_branch = "research/rh-centered-winding-offdiagonal-covariance-879-20261022"
+theorem_source_commit = "8f81c40500bb3d6abf6698c982c0cc575d5630aa"
+mathematical_note_commit = "7a12afaec0873fb09771f4c49c18dd738565896a"
+
+[evidence_states]
+source_draft = true
+off_diagonal_covariance_defined = true
+diagonal_removed_exactly_in_source = true
+wrap_covariance_identity_scripted = true
+affine_chowla_defect_covariance_bridge_scripted = true
+four_family_modulus_aggregate_defined = true
+effective_modulus_endpoint_aggregate_defined = true
+residue_dispersion_equivalence_scripted = true
+positive_lag_objects_defined = true
+winding_lag_partition_proved = true
+winding_lag_partition_reindexing_proved = true
+contains_explicit_sorry = false
+off_diagonal_covariance_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

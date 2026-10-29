@@ -1,0 +1,60 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-aggregate-fourier-840-v0.1"
+owner_repository = "grwtsk/math"
+issue = 840
+parent_issue = 836
+parent_pr = 838
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointAggregateFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointAggregateFourier"
+
+[source_binding]
+stacked_parent_revision = "d9ccacbaca79d9d97fa45ee834d2a6ee1ef69092"
+candidate_branch = "research/rh-endpoint-aggregate-kernel-840"
+theorem_source_commit = "aec691635643f8fce3e16f8fb30fa5e4a4f7ef11"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointAggregateFourier.lean"
+theorem_source_git_blob = "c49474fbba3d1471f6d5cbd69dc78e1a59a38130"
+
+[selected_increment]
+active_prefix_set = "coreGrowingShiftEndpointActivePrefixSet"
+explicit_prefix_lower = "coreGrowingShiftEndpointAggregatePrefixLower"
+explicit_prefix_upper = "coreGrowingShiftEndpointAggregatePrefixUpper"
+explicit_prefix_set = "coreGrowingShiftEndpointExplicitPrefixSet"
+active_prefix_interval = "coreGrowingShiftEndpointActivePrefixSet_eq_explicit"
+ordinary_aggregate_kernel = "coreGrowingShiftEndpointAggregateKernel"
+explicit_interval_kernel = "coreGrowingShiftEndpointAggregateKernel_eq_explicitInterval"
+zero_padded_aggregate_kernel = "coreGrowingShiftEndpointAggregateKernelZeroPad"
+zero_padding_identity = "coreGrowingShiftEndpointAggregateKernelZeroPad_eq_cast"
+strict_support = "coreGrowingShiftEndpointAggregateKernelZeroPad_eq_zero_of_not_lt"
+aggregate_real_space_packet = "coreGrowingShiftSignedEndpointAggregateZeroPaddedPacketComplex"
+real_space_packet_identity = "coreGrowingShiftSignedEndpointBilinearPacket_cast_eq_aggregateZeroPadded"
+aggregate_kernel_dft = "coreGrowingShiftEndpointAggregateKernelDFT2"
+dft_linearity = "coreGrowingShiftEndpointAggregateKernelDFT2_eq_sum"
+aggregate_frequency_packet = "coreGrowingShiftSignedEndpointAggregateFourierPacket"
+complex_frequency_identity = "coreGrowingShiftSignedEndpointBilinearPacket_cast_eq_aggregateFourier"
+prior_frequency_equivalence = "coreGrowingShiftSignedEndpointFourierPacket_eq_aggregate"
+rh_packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointAggregateFourier"
+aggregate_source = "SubpolynomialCoreGrowingShiftSignedEndpointAggregateFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointAggregateFourierPacket_iff_fourier"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointAggregateFourierPacket"
+proof_classification = "EXACT_PREFIX_INTERVAL_AGGREGATION_FINITE_FUBINI_AND_TWO_DIMENSIONAL_DFT_LINEARITY"
+next_obstruction = "derive a closed boundary-term formula for the explicit aggregate reciprocal kernel before applying any positive norm"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+aggregate_kernel_estimate_proved = false
+signed_frequency_estimate_proved = false
+parseval_bound_used = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

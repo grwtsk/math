@@ -1,0 +1,278 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-holonomy-alias-653-v0.1"
+owner_repository = "grwtsk/math"
+issue = 653
+related_issues = [649, 628, 121, 168, 444, 453, 516, 100, 15]
+route_id = "FINITE_TORSION_INTEGRAL_HOMOLOGY_ALIAS"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing"
+build_target = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/finite-character-cylinder-649-20261021"
+review_parent_revision = "5a4121ba23273cdb3edc9aec555e70a9416f5c72"
+review_parent_module_git_blob = "d161b49c157cae4e66a1d56c7613a36336b04987"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Analysis/Fourier/FiniteHolonomyAliasing.lean"
+new_module_git_blob = "4e74242dceb742c168636e9c7c80ea1ffa06f88d"
+new_module_namespace = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing"
+mathematical_note_path = "docs/mathematics/Analysis/Fourier/finite-holonomy-alias-correction.md"
+mathematical_note_git_blob = "690c7cc768e91d7a29635949b17aea0f130adfe9"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+chowla_proved = false
+geodesic_source_adapter_closed = false
+continuous_haar_integral_formalized = false
+mirzakhani_wp_volume_proved = false
+gue_number_variance_proved = false
+microscopic_gap_universality_proved = false
+sofic_operator_limit_proved = false
+rh_supplier_closed = false
+positive_modulus_required = true
+empty_sources_supported = true
+empty_homology_dimension_supported = true
+mathematical_statement = "Exact source-labeled finite character alias correction with complex L1 error and conditional no-alias equality"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing"
+authored_declaration_count = 24
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Analysis.Fourier.FiniteCharacterCylinder"]
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.FiniteHomologyPacket"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.residueTuple"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.aliasSources"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.mem_aliasSources_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.torsionProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.integralProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.aliasCorrection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.aliasMass"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.NoAlias"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.FundamentalBox"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.weighted_character_projection_split"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.aliasCorrection_eq_indicator_sum"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.torsionProjection_eq_integral_add_alias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.aliasCorrection_norm_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.torsionProjection_error_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.aliasSources_eq_empty_of_noAlias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.torsionProjection_eq_integral_of_noAlias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.integer_tuple_eq_of_residue_eq_in_box"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.noAlias_of_fundamentalBox"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.torsionProjection_eq_integral_of_fundamentalBox"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.noAlias_zero_coordinates"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.torsionProjection_zero_coordinates"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.empty_sources_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing.two_modulus_nontrivial_alias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-modulus-rejected"
+requirement = "No NeZero instance permits a character-average claim for q=0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "q-one-not-injective"
+requirement = "Modulus q=1 can identify distinct integral tuples when m>0; no unconditional equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-coordinates"
+requirement = "For m=0 there is only one integral tuple; projection equality holds even for q=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-sources"
+requirement = "An empty source set has zero torsion projection, integral projection, and alias mass."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "normalization"
+requirement = "The full q^(-m) normalized frequency sum comes only from the parent tupleCharacterMean; no unnormalized promotion."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integer-vs-modular"
+requirement = "0 and 2 are distinct integers but agree modulo 2; reject congruence implies integer equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "retain-source-identity"
+requirement = "Two different source indices with equal homology remain distinct weighted summands, with no collapsed multiplicity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "signed-integer-coordinate-types"
+requirement = "Homology labels retain signed integer coordinates; the [0,q) fundamental box is an extra premise."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-alias-filter"
+requirement = "The correction contains only source IDs that match modulo q and fail exact integer equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "complex-error-norm"
+requirement = "The error is an L1 bound on absolute complex amplitudes, not a signed cancellation estimate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-uniform-alias-smallness"
+requirement = "The finite L1 error is not asserted to vanish with genus, height, window size or modulus without a separate estimate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-finite-to-haar-upgrade"
+requirement = "An exact integral indicator is the algebraic counterpart of torus Haar orthogonality, not a formally constructed Haar integral."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-fabricated-geodesics"
+requirement = "No generic finite source record is labeled an actual oriented primitive geodesic or trace-formula term without a source adapter."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "trace-tail-missing"
+requirement = "Finite sums do not replace infinite Selberg trace series or provide omitted-tail estimates."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "goe-gue-paper-scope"
+requirement = "Marklof-Monk q=1,2 GOE and q>=3 GUE number-variance results require Weil-Petersson and large-genus inputs not in this module."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "variance-not-gap-universality"
+requirement = "GUE-type number variance does not automatically imply a microscopic sine process or nearest-neighbor law."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-sofic-limit"
+requirement = "No labeled operator sofic/Benjamini-Schramm limit follows from a finite character packet."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh"
+requirement = "No Chowla, growing-shift maximal Mobius bound, zeta-zero identification or RH follows from the alias correction."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-unauthorized-runtime"
+requirement = "No Lean/Lake, native qualification, virtual machines, caches, workflows or executor changes are authorized by this passive manifest."
+status = "NOT_RUN"
+

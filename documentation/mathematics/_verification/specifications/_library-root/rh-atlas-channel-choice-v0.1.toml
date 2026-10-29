@@ -1,0 +1,90 @@
+# Static mathematical specification, not execution authority or a receipt.
+# Prepared against e709584d42644fb2588529dce656ec67e688b44c.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-channel-choice-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.ChannelChoice"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import inventory.
+modules = [
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairApproximation" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairRational" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairChannelChoice" },
+  { name = "GRWTSK.Analysis.Complex.GaussianPolynomialPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairRegion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairChannels" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFifteenDerivativeWitness" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripChannelChoice" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.ChannelChoice" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "strict_channel_comparison"
+requirement = "Squared radius equality does not certify a nonzero channel."
+[[hostile_controls]]
+id = "radius_sign"
+requirement = "Negative radius is rejected independently of its square."
+[[hostile_controls]]
+id = "passing_bit_not_binding"
+requirement = "A forged positive center may pass numerically but cannot bind the zero source."
+[[hostile_controls]]
+id = "selected_channel_identity"
+requirement = "The selected even or odd channel is an explicit data field and is source-bound."
+[[hostile_controls]]
+id = "central_zero_allowed"
+requirement = "The affine synthetic function has a central zero and still excludes every distinct symmetric pair."
+[[hostile_controls]]
+id = "zero_offset_semantics"
+requirement = "The totalized odd quotient at zero is not identified with the derivative."
+[[hostile_controls]]
+id = "no_offset_floor"
+requirement = "Selected-channel validity has no positive lower displacement bound."
+[[hostile_controls]]
+id = "old_acceptance"
+requirement = "Every previous rational weighted acceptance implies the new channel test."
+[[hostile_controls]]
+id = "strict_extension"
+requirement = "The valid affine fixture at displacement 1/8 passes channel selection but fails the old weighted test."
+[[hostile_controls]]
+id = "sharp_scope"
+requirement = "Rejection with nonnegative radii admits the zero function within the two disks; this is not a claim that the actual source vanishes."
+[[hostile_controls]]
+id = "polynomial_identity"
+requirement = "Whole-region choice still requires the exact Binds polynomial identity."
+[[hostile_controls]]
+id = "source_error_ledger"
+requirement = "Actual C1 source-tail and finite-evaluation errors retain all prior constants and domains."
+[[hostile_controls]]
+id = "actual_fifteen_supplier"
+requirement = "The odd bound is derived from the maintained FifteenWitness source, not the synthetic affine function."
+[[hostile_controls]]
+id = "mirror_target"
+requirement = "Functional reflection transports canonical zero locations, not arbitrary source values."
+[[hostile_controls]]
+id = "complete_coverage"
+requirement = "Successor classification requires every eligible point and the previous window for the lower seam."
+[[hostile_controls]]
+id = "verification_status"
+requirement = "Finite diagnostic success is not Lean elaboration, a transitive axiom audit, new height coverage, or RH."

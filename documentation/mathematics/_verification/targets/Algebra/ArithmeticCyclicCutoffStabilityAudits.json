@@ -1,0 +1,88 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-cutoff-stability-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "EIGHT_SOURCE_PROOF_CANDIDATES_ZERO_DEFINITIONS",
+  "source_commit": "5d43b39d5645f44037f3aa53f9d00b455715caf7",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicCutoffStability.lean",
+  "source_blob": "00ea9b402f4284be2b1e096c70af911b4b1a1c34",
+  "source_sha256": "c5169a8b6e6a3f4efd4a2d2ddc70c47b569a331e8a4a214b57dc283644c20660",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowProjector_mul_of_le",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowOperator_mul_of_le",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowOperator_reverse_mul_of_le",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.low_range_mono",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowProjector_eq_of_no_crossing",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowOperator_eq_of_no_crossing",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowProjector_rank_eq_of_no_crossing",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.arithmetic_lowOperator_eq_of_no_crossing"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.arithmetic_lowOperator_eq_of_no_crossing": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E F : Real), E <= F -> (forall i : ZMod N, Not (E <= (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian_isHermitian N level chi m t u v w).eigenvalues i /\\ (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian_isHermitian N level chi m t u v w).eigenvalues i < F)) -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) F",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowOperator_eq_of_no_crossing": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> (forall i : ZMod N, Not (E <= (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i /\\ (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < F)) -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q F",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowOperator_mul_of_le": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E * GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q F = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowOperator_reverse_mul_of_le": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q F * GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowProjector_eq_of_no_crossing": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> (forall i : ZMod N, Not (E <= (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i /\\ (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < F)) -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q F",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowProjector_mul_of_le": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E * GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q F = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.lowProjector_rank_eq_of_no_crossing": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> (forall i : ZMod N, Not (E <= (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i /\\ (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < F)) -> (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E).rank = (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q F).rank",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicCutoffStability.low_range_mono": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E F : Real), E <= F -> LinearMap.range (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap <= LinearMap.range (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q F).toLinearMap"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots; the eight explicit roots do not cap the census.",
+  "scope": [
+    "Every nonzero N including the entire N>=3 family. Fixed actual Hamiltonian, all signed real hopping and potentials, full complex Euclidean space.",
+    "The explicit E<=F premise gives both low-projector absorption products and nesting of the full actual low-operator ranges.",
+    "The complete actual eigenvalue enumeration avoids [E,F): E is included and F excluded. Every repeated eigenvalue index is retained. Under precisely this hypothesis the actual low matrix, actual low continuous linear map and actual matrix rank agree at the two cutoffs.",
+    "Demonstrated for the actual arithmetic potential with arbitrary characters, levels, natural labels and all real coefficients; the complete actual arithmetic eigenvalue gap premise remains. No positivity, m_i>=2, common-prime or mean-zero restriction."
+  ],
+  "preparation": {
+    "command": [
+      "python3",
+      "-B",
+      "managers/formalization/lean/environment/python/managed_contract_replay.py",
+      "prepare",
+      "--math-root",
+      "<canonical-math>",
+      "--commit",
+      "5d43b39d5645f44037f3aa53f9d00b455715caf7",
+      "--profile",
+      "<external-runtime>/formalization/issue-burndown/20261025T214914.157415Z/cutoff-profile.json",
+      "--registry",
+      "<external-runtime>/formalization/issue-burndown/20261025T214914.157415Z/cutoff-registry.json"
+    ],
+    "exit_code": 0,
+    "native_execution": false,
+    "registry_sha256": "6b0c06b747cb2aba2cb5a24be5ba24954e9b2b19ad6532e765b6e055fffbceb8",
+    "project_modules": 14,
+    "upstream_source_modules": 3190,
+    "source_assets": 27,
+    "all_13_producers_committed_and_match": true,
+    "all_14_project_sources_match": true,
+    "one_complete_compiler_origin_audit_required": true,
+    "required_structural_names": 8,
+    "independent_exact_types": 8,
+    "fresh_importers_required": 1,
+    "native_acceptance": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every matching executed native acceptance gate.",
+    "An actual application supplier for the full half-open eigenvalue gap hypothesis.",
+    "Stability under changing the hopping or potential, ordered eigenvalue pairing and perturbative rank/projector bounds.",
+    "A nonzero high sector, identified vacuum or full-space lower bound for an application.",
+    "Actual infinite/rescaled/continuum/AMO/full RH-family operators, residual/reconstruction/RH-scale estimates and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}

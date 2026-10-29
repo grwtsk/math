@@ -1,0 +1,240 @@
+id = "rh-abel-readout-law-heat-v0.1"
+contribution = "grwtsk"
+kind = "passive-source-bound-verification-specification"
+status = "NOT_RUN"
+math_repository = "grwtsk/math"
+math_commit = "68daa0f37dc7c836792462877b5e26be58e4d052"
+reviewed_baseline = "dbb66c7d4fa430ce3f7b48d806a271d9632e4ec8"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+root_promoted = false
+complete_dependency_closure_reviewed = false
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+exact_types_status = "NOT_RUN"
+receipt = "NONE"
+operational_owner = "grwtsk/noeaaeue"
+lexical_definition_count = 21
+lexical_theorem_count = 67
+
+[[targets]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelReadoutGeometry.lean"
+blob = "b4ddd280d9965837f532db505ce08a1f82e20444"
+sha256 = "3d18c0be6542a411984d5011229e8d46ca1d77837751dffe50828da2c01e120d"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelTripleOperator", "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.signedReadout",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.threeEnergy",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.readoutProjection",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.responseProfile",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.threeEnergy_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.signedReadout_sub",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.readout_slack_identity",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.projection_preserves_readout",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.projection_energy",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.energy_eq_existing_refinement_details",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.projection_idempotent",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.energy_split",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.projection_minimizes_energy",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.readout_residual_zero",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.recoverProfile",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.recoverProfile_on_three",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.readout_collision",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.triple_eq_actual_readout",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.projected_residual_energy",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry.abs_packet_sub_readout_model_le",
+]
+
+[[targets]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelCoefficientKernel.lean"
+blob = "32e7efbf72ccc5376af79c1f780f8816140f0325"
+sha256 = "a5cb7719d150ac6cb4e9d0306491a4028e7684d10ff509cdaf8e369fc91dfc94"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry", "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.sourceIndices",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.coordinateInput",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.coefficient",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.rowMass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.signedCoefficient",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.signedRowMass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.cofactorResponse_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.coefficient_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.response_finset_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.response_eq_coefficients",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.coefficient_zero_outside",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.rowMass_eq_constant_response",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.rowMass_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.signedReadout_eq_coefficients",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.signed_error_le_weighted_input_error",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.signed_error_le_uniform",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.extremalInput",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.extremalInput_abs",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.extremal_readout_eq_signedRowMass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.signedRowMass_le_any_uniform_bound",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel.packet_input_comparison",
+]
+
+[[targets]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelResponseLaw.lean"
+blob = "84e496353279c6eae5593373f75a370bc31b135c"
+sha256 = "d3ade8723ebcb8cabe40dd083e95d1e0f0e26e01ca0b566041265afcd7557d29"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel", "GRWTSK.Analysis.Inequalities.FiniteKernelCorrelation"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.cofactorIndices",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.cofactorSign",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.totalMass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.jointWeight",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.rowMarginal",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.columnMarginal",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.independentReadout",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.dependenceCost",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.cofactorSign_abs",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.signedReadout_eq_sign_sum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.totalMass_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.jointWeight_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.jointWeight_total_one",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.rowMarginal_total_one",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.columnMarginal_total_one",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.readout_eq_mass_pairing",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.readout_zero_of_mass_zero",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.readout_sub_independent_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.readout_sub_independent_le_all",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.abs_readout_le_marginal_and_dependence",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw.packet_independent_comparison",
+]
+
+[[targets]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelReadoutHeat.lean"
+blob = "97b201cef475dc766ebf21f0d7bdbdf021262015"
+sha256 = "c95cc065b1e713f1e7254e6dc8b1fec8c0245592490f3510f61ea9c76779a83a"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry", "Mathlib.Analysis.SpecialFunctions.Log.Basic"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.readoutHeat",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.readoutHeat_zero",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.readoutHeat_preserves",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.projection_readoutHeat",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.readoutHeat_add",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.readoutHeat_inverse",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.readoutHeat_injective",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.heat_energy_split",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.projected_energy_le_heat",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.heat_energy_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.heat_of_zero_readout",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.inverse_energy_on_invisible",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.actual_triple_eq_heat_readout",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat.heat_readout_bound_iff",
+]
+
+[[targets]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodCriterion"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelNeighborhoodCriterion.lean"
+blob = "4887e48007317b6b47702c5ebd86e43712b84ef5"
+sha256 = "b27f18b5480dad90e3c28753e786e24acdb1478a4d429935503b6ba2c848d77b"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw", "GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodCriterion.riemannHypothesis_of_readout_models",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodCriterion.riemannHypothesis_of_weighted_input_models",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodCriterion.riemannHypothesis_of_finite_law_models",
+]
+
+[[targets]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelNeighborhoodTransport.lean"
+blob = "379542360f190450145d5bd0db05ada660fb8e15"
+sha256 = "b845cf11dd323834d5fb4af326aef79fc1eabb4d65682114fe16d6029cd817ee"
+direct_imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodCriterion", "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel"]
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.coefficient_eq_existing_row",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.readout_eq_existing_response",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.readout_decoder_iff",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.readout_error_sq_le_row_energy",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.readout_error_le_prefix_budget",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.readout_error_le_min_input_prefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.independent_eq_constant_response",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.centered_error_le_min_dependence_prefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport.packet_centered_prefix_comparison",
+]
+
+[[reviewed_dependencies]]
+module = "GRWTSK.Analysis.FiniteSums.ThreeCoordinateReadout"
+blob = "c1bdf3ee53d3a8eb38dcd91ffb3460148e05d338"
+reviewed_at = "dbb66c7d4fa430ce3f7b48d806a271d9632e4ec8"
+
+[[reviewed_dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelFiniteRows"
+blob = "e9415026c8585f9fbf0a0526335607a7f02a7210"
+reviewed_at = "dbb66c7d4fa430ce3f7b48d806a271d9632e4ec8"
+
+[[reviewed_dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRowAbel"
+blob = "0bf8a48516af6a61eccc93fb02dc8cde73bfe226"
+reviewed_at = "dbb66c7d4fa430ce3f7b48d806a271d9632e4ec8"
+
+[[reviewed_dependencies]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelTripleOperator"
+blob = "fe4b978e58a4cb1282a43595f1d609b16c4d810c"
+reviewed_at = "dbb66c7d4fa430ce3f7b48d806a271d9632e4ec8"
+
+[[reviewed_dependencies]]
+module = "GRWTSK.Analysis.Inequalities.FiniteKernelCorrelation"
+blob = "b6bc8e512f13203d17c80e9fdfa9cff38937ed05"
+reviewed_at = "dbb66c7d4fa430ce3f7b48d806a271d9632e4ec8"
+
+[execution_request]
+authorization = "Separate authorized executor only. This specification dispatches nothing."
+workspace = "Isolated pinned checkout; never reset concurrent main work."
+commands = [
+"test \"$(git rev-parse HEAD)\" = 68daa0f37dc7c836792462877b5e26be58e4d052",
+"cat lean-toolchain",
+"lake env lean --version",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutGeometry",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelReadoutGeometry.lean",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelCoefficientKernel",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelCoefficientKernel.lean",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelResponseLaw",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelResponseLaw.lean",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelReadoutHeat",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelReadoutHeat.lean",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodCriterion",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelNeighborhoodCriterion.lean",
+  "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelNeighborhoodTransport",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelNeighborhoodTransport.lean",
+  "lake env leanchecker --help",
+  "lake env lean --trust=0 -DwarningAsError=true /tmp/AbelReadoutNeighborhoodAudit.lean",
+]
+audit = "Hash every target and imports; print exact types for all 88 declarations and axioms for all 67 theorem declarations; enumerate generated/private/opaque/native/unsafe dependencies and the complete inherited RH proof closure. Audit file and results stay outside math."
+fresh_checker = "Determine supported invocation from pinned checker help; no unverified flags are prescribed."
+candidate_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project axioms", "unchecked native proof dependencies", "missing imported proof closure", "weakened hypotheses", "altered source predicates"]
+repair_policy = "New bytes need new pins and new acceptance; no transfer from older source snapshots."
+
+[mathematical_controls]
+checks = [
+  "All original prime guards, ordinary windows, depths and factor 2/Y survive through the actual inherited operator.",
+  "The new coefficient is definitionally the existing FiniteRows.responseRow; no fitted replacement matrix.",
+  "Reuse ThreeCoordinateReadout projected value/energy and its actual DyadicVariance/WeightedCellRefinement dependencies.",
+  "Signed row D=W1-W2-W3 is formed before absolute values. The extremal input is one-bounded but not identified with Mobius.",
+  "Full response energy is stronger than signed-readout control; energy outside coordinates 1,2,3 is not reconstructed.",
+  "Feature-fibre recoverability remains a hypothesis of decoder existence, not a universal injectivity claim.",
+  "P=W/M is normalized only for M>0; M=0 is a separate zero-coefficient proof.",
+  "Retain total mass and both marginal means in the covariance comparison. No independence or Pinsker theorem is assumed.",
+  "Prove marginal model equals response to constant column-weighted mean before using the centered row-Abel comparison.",
+  "Every ordinary prefix keeps its own error E(t); terminal coefficient is zero by actual source support.",
+  "The minimum comparison requires the stated one-boundedness and centered-prefix hypotheses; neither error is proved small.",
+  "Heat preserves the signed readout exactly, despite energy contraction; inverse invisible energy amplifies by exp(t)^2.",
+  "Heat is a finite response-space construction, not a classical zeta/Newman or other graph-flow identification.",
+  "RH consumers retain the unchanged signed head, every positive exponent, every scale and all model/error costs.",
+  "Pre-existing joint-head and feature/threshold/tree consumers are preserved and not replaced by stronger norm requirements.",
+  "Final Geometry recovery theorem has b:Nat->Real and concludes the coordinate equality, not True; exclude incomplete intermediate commit 2aaa30b235b57274d9a5f281015731f94cdc0d33.",
+  "Finite diagnostics and source scans are not Lean elaboration, kernel checking or transitive axiom acceptance.",
+]
+
+[nonclaims]
+items = ["Unconditional RH", "Subpolynomial signed cancellation", "Small total coefficient mass", "Small row variation", "Entropy decrement", "Classical Weil/zeta spectral realization", "Compiler or kernel acceptance"]

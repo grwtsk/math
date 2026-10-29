@@ -1,0 +1,216 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "rh-spin-kakeya-sat-dyadic-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "c59700c2c259c4fa0ba1bd09eac7ee8d4ef5bb49"
+source_tree = "e3d8087dd4ba2d8a3548751a1e859eaf848bacec"
+baseline_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+verification_issue = 1408
+prerequisite_issues = [1407, 1406, 1405]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_PROOF_CANDIDATE"
+arithmetic_completion = "OPEN_EXPLICIT_WITNESS_NOT_SUPPLIED"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+canonical_RH_proved_unconditionally = false
+new_definitions = 10
+new_public_theorem_scripts = 26
+lexical_identifiers = 36
+inventory_scope = "Source-text inventory, not an elaborated declaration census"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+active_OAI_imports_added = false
+central_literature_index_updated = false
+central_literature_reconciliation = "Pending cross-reference in paper-to-formalization-references.md; complete existing ledger preserved unchanged; additive supplement published"
+note = "docs/mathematics/NumberTheory/Moebius/spin-kakeya-sat-dyadic-transfer.md"
+literature_supplement = "docs/reference/literature/reading-background/spin-kakeya-sat-dyadic-correspondence.md"
+publication_rule = "Separate later manifest commit avoids a self-referential source hash; verify both commits reachable from main"
+git_identity = "Connector-configured; no author/committer override is claimed"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison"
+path = "GRWTSK/NumberTheory/Moebius/PickupSpinCutComparison.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison"
+blob = "401e7d0f24379bf40ea47570d4c90632ba08f06d"
+sha256 = "bfdbbc63afed802905fbb85e4d6846bd39fb381621f2d5634111e07987a0887c"
+bytes = 11595
+lines = 256
+imports = ["GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SpinCutEnergy", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.signLabel", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.sourceSpin", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.orderedCut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.trialCross", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.returnDefect", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.cutCNF", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.weightedCNFCut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.SourceCutHalfBound"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.real_eq_abs_mul_spin", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.spin_product_eq_cut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.cutIndicator_bounds", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.scalar_signed_cut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.orderedCut_bounds", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.atom_eq_weight_sub_twice_cut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.cross_eq_absolute_sub_twice_sourceCut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.trial_source_eq_cross", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.source_return_exact", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.better_cut_gives_lower_energy", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.endpoint_spin_return", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.averaged_source_return", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.dyadicBirthBound_of_trial_and_return", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.signedUpper_slack_eq_cut_credit", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.primeCredit_le_sourceCut", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.cutIndicator_eq_cnf", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.weightedCNFCut_eq", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.cross_eq_weightedCNF", "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.dyadicBirthBound_iff_source_half_cut"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupScaleTransport"
+path = "GRWTSK/NumberTheory/Moebius/PickupScaleTransport.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupScaleTransport"
+blob = "9ab613ef77bb1cda5061dfaea76ffe8f97be6243"
+sha256 = "e5e549563ee7d3ebb8182a855c7ee053bec938454a8f17e83e60c98286135803"
+bytes = 5284
+lines = 127
+imports = ["GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupScaleTransport.radius", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.depthTail"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupScaleTransport.radius_range", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.radius_loss", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.dyadicBirthBound_of_radius_allowance", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.dyadicBirthBound_of_depth_radius_rates", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.extensive_error_iff", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.depthTail_eventually_zero", "GRWTSK.NumberTheory.Moebius.PickupScaleTransport.depthTail_not_uniform"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[documentation]]
+path = "docs/mathematics/NumberTheory/Moebius/spin-kakeya-sat-dyadic-transfer.md"
+blob = "160f038ead03bf60bc3cf81526e6d75be1ef052b"
+sha256 = "ce1f48a603a1249574608829727de77ed44f3073f1ac7242aa84323a021e9a18"
+
+[[documentation]]
+path = "docs/reference/literature/reading-background/spin-kakeya-sat-dyadic-correspondence.md"
+blob = "85e09160fe9ff2f2c8f1de1207de79cf1740741c"
+sha256 = "0c0f095efec931b4fcda3798f83cb9c7b4c75a0a3412c3a3931c857ec8310e0f"
+
+[[dependency]]
+module = "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SpinCutEnergy"
+blob = "e1fab09ea5cb7c53057467aab11f82db6016e9bd"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate"
+blob = "64eb4a3a920d609b4e9fdb164babae5bc4ac5dc3"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint"
+blob = "53a33d37efd54fdff10aed1b05276b89dd4ddadc"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential"
+blob = "51ffca7d9f6617aa10955c5aec881607eec1bf24"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedPairDescent"
+blob = "4e6efa850cb824ad3325567831a9cb33717fe1db"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"
+blob = "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+blob = "a39d24a540a86918ab4f2a8130a86895424dc317"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.EnergyAbscissa"
+blob = "9453ab6fc629611fa19362b56eb223fabd14bc0a"
+source_commit = "3416000fb7c1075a7bb9554d5b84ff36ea92c8a1"
+acceptance = "Preserve original source-bound scope; fresh affected closure acceptance NOT_RUN"
+
+[[upstream_reference]]
+title = "SK value and QAOA depth"
+repository = "openai/math"
+commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+path = "lean/OAI/Probability/SKValue/Main.lean"
+blob = "0fcd7ca01b0f99b90f579f69a7bed99074bcdd99"
+declaration = "OAI.SKValue.value_consequences"
+comparator = "lean/ComparatorChallenges/SKValue.json"
+comparator_blob = "e290607e35b114e0c4cda5f1bf1a12f2cb315957"
+scope_note = "lean/docs/281.md"
+scope_blob = "485fb111fff726999fa12dc47c2ce4431f9d2299"
+scope = "Conditional admissible Parisi minimizer/diffusion scalar values and finite Gaussian approximation; not selected QAOA circuit convergence or minimizer existence"
+active_import = false
+native_replay = "NOT_RUN"
+command = "lake env comparator ComparatorChallenges/SKValue.json"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+checkout_rule = "Run only in separately pinned upstream checkout with its own dependencies; never import admitted challenge statements as proof suppliers"
+
+[[upstream_reference]]
+title = "Kakeya maximal all-positive-loss estimate"
+repository = "openai/math"
+commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+path = "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+blob = "6def181857b8148d9dbaed288876a225ca9ddbfb"
+declaration = "OAI.Analysis.Fourier.LocalSmoothing.Comparator.kakeya_maximal"
+comparator = "lean/ComparatorChallenges/LocalSmoothing.json"
+comparator_blob = "88c1e1c3368f66f9d64206a2b166a89bc87b4f9b"
+scope_note = "lean/docs/079.md"
+scope_blob = "e6ea535832d6dfef60c539a2e0537b560c1b7108"
+scope = "Fixed dimension d>=2, each eta>0, uniform radius 0<rho<=1, MemLp f d, L^d sphere output with rho^(-eta) loss; not pointwise or uniform in dimension"
+active_import = false
+native_replay = "NOT_RUN"
+command = "lake env comparator ComparatorChallenges/LocalSmoothing.json"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+checkout_rule = "Run only in separately pinned upstream checkout with its own dependencies; never import admitted challenge statements as proof suppliers"
+
+[[upstream_reference]]
+title = "Exact bounded-width SAT counting"
+repository = "openai/math"
+commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+path = "lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean"
+blob = "a69635a2492e06a26f2e33d4251edd1e21ba3332"
+declaration = "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+comparator = "lean/ComparatorChallenges/SubexponentialSAT.json"
+comparator_blob = "d4cc9e7074e900c1aa6371151cfd234c121a0b82"
+scope_note = "lean/docs/378.md"
+scope_blob = "223bbe187394bffca8a2c7ba1656538bfba26e3b"
+scope = "Fixed width k>=2, actual canonical input bit length and variable count, exact count/decision and all-prefix polynomial visited space; runtime does not bound output magnitude"
+active_import = false
+native_replay = "NOT_RUN"
+command = "lake env comparator ComparatorChallenges/SubexponentialSAT.json"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+checkout_rule = "Run only in separately pinned upstream checkout with its own dependencies; never import admitted challenge statements as proof suppliers"
+
+[verification]
+commands = ["lake build --wfail GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SpinCutEnergy GRWTSK.NumberTheory.Moebius.PickupSignedCertificate GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison GRWTSK.NumberTheory.Moebius.PickupScaleTransport", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupSpinCutComparison.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupScaleTransport.lean", "lake env leanchecker --help"]
+command_status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+tool_availability = "lean and lake not found on local PATH"
+expected_native_exit = 0
+closure_scope = "All imported/private/generated/opaque dependencies; critical pins above are not an exhaustive elaborated closure inventory"
+fresh_checker = "Determine supported replay invocation from pinned help; no checker invocation executed"
+checker_implementation = "Leanchecker using Lean kernel is not a separately implemented verifier"
+external_audit_file = "PickupSpinScaleAudit.lean"
+external_audit_sha256 = "f1cd74829406f521bacd2c9f4f6869a76b79246f9d1c3a7939a3c656f247c80b"
+audit_status = "NOT_RUN; external recipe contains all 36 #check commands and 26 #print axioms commands; expand to elaborated full closure"
+proposed_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native or unsafe logical trust", "omitted dependency closure", "weakened source/positivity/normalization guards", "acceptance transferred to changed bytes", "unpaid deterministic-to-Gaussian or source-spin-to-optimizer transport"]
+
+[mathematical_controls]
+checks = ["Both orientations of every original off-diagonal pair are retained; orderedCut is twice the once-per-edge weighted cut.", "Zero Mobius coefficients retain labels and zero weights; no source inventory or birth support is silently changed.", "Sign extraction uses actual causal Gram entrywise nonnegativity, not merely Hermitian or PSD structure.", "X=absoluteCross-2*orderedCut(sourceSpin) is proved from literal source atoms.", "Trial-spin and normalized-law returns retain the derived signed returnDefect; optimized energy alone is a lower rather than upper bound.", "Full source-cut credit and selected prime credit are compared without duplicate subtraction.", "SourceCutHalfBound is equivalent to the actual DyadicBirthBound with the existing quarter-unit curvature allowance; it is not supplied.", "Kakeya dimension and radius law parameter a are fixed before the loss exponent.", "Finite depth is chosen after desired rate, before uniform constant and tested outer index.", "Input norms, directional sampling, multiplicities, clustering and all source returns remain paid obligations.", "Per-spin tolerances retain the exp(T) multiplier and the exact resulting tolerance requirement.", "Literal width-two CNF is evaluated on fixed source assignment with real weights; it is not unweighted #SAT.", "SAT variable count and input length are not silently identified with j or 2^j; fast runtime is not a growth estimate on the returned value.", "No OAI comparator challenge or unaudited external axiom is an active local dependency."]
+
+[unresolved]
+arithmetic_witness = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.DyadicBirthBound"
+equivalent_witness = "GRWTSK.NumberTheory.Moebius.PickupSpinCutComparison.SourceCutHalfBound"
+spin_transport = "Source-matched quantitative comparison with Gaussian SK or actual circuit model, including deterministic sign and extensive normalization costs"
+kakeya_transport = "Actual arithmetic-to-geometric source readout and all costs proving the radius/depth hbudget"
+sat_transport = "Certified source labels and real-weight encodings, parsimonious reduction and complete variable/bit/precision bounds; an all-j arithmetic invariant still needed"
+formal_acceptance = "Compilation, fresh replay and complete transitive axiom/hypothesis audit"
+literature_index = "Add central-ledger cross-reference without truncating or replacing concurrent entries"
+
+[diagnostic]
+commands = ["python /mnt/data/rh_spin_kakeya/preflight.py > /mnt/data/rh_spin_kakeya/preflight-normal.json", "python -O /mnt/data/rh_spin_kakeya/preflight.py > /mnt/data/rh_spin_kakeya/preflight-optimized.json", "cmp /mnt/data/rh_spin_kakeya/preflight-normal.json /mnt/data/rh_spin_kakeya/preflight-optimized.json"]
+exit_statuses = [0, 0, 0]
+script_sha256 = "49a798d34962a2196caf2cf25733e63e0aed49c9b3c078872fa989f679c63662"
+normal_output_sha256 = "27bd9efb9796bc3b80a89c09832da087c2ee4769cb2172f359f6c5bebfc9586b"
+optimized_output_sha256 = "27bd9efb9796bc3b80a89c09832da087c2ee4769cb2172f359f6c5bebfc9586b"
+checks_per_mode = 7504
+exact_boolean_rational_checks = 2094
+numerical_checks = 5404
+lexical_checks = 6
+precision_digits = 80
+actual_source_cutoffs = [1, 2, 4, 8, 16, 32, 64]
+scope = "Finite off-kernel diagnostics only; numerical checks are not rigorous interval certificates, asymptotic evidence, optimizer/complexity validation or Lean acceptance"
+operational_files = "Temporary external workspace only; no runner/log added to mathematical source"
+durable_noeaaeue_receipt = "UNAVAILABLE"

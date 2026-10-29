@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-modulus-aggregate-827-v0.1"
+owner_repository = "grwtsk/math"
+issue = 827
+parent_issue = 819
+parent_pr = 821
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_MODULUS_AGGREGATE_SOURCE_DRAFT_CENTERED_WINDING_ANALYTIC_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingModulusAggregate"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingModulusAggregate"
+
+[source_binding]
+stacked_parent_revision = "cf7066cc4598960d97efd291980175d4c04dc663"
+candidate_branch = "research/rh-centered-winding-modulus-aggregate-822-20261022"
+theorem_source_commit = "66e9dda79726728b4f1dbc9967119e872c2d70d0"
+theorem_source_git_blob = "4029434f517ac6e867e948bb025efc9439f99907"
+mathematical_note_commit = "840e406b05ea48b97d2cf53be7777fda23517287"
+mathematical_note_git_blob = "504ae25dd2a0f3f7aa09723e684ef83ce31bb379"
+
+[evidence_states]
+source_draft = true
+reciprocal_square_telescope_scripted = true
+effective_reciprocal_square_mass_bound_scripted = true
+winding_radius_real_bound_scripted = true
+linear_endpoint_multiplicity_bound_scripted = true
+no_logarithmic_multiplicity_loss_recorded = true
+centered_winding_analytic_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

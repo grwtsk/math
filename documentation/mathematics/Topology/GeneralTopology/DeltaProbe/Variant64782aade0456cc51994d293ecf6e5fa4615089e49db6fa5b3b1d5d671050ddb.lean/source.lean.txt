@@ -1,0 +1,22 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.CorrectedControllerAnalytic
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+open MeasureTheory Filter
+#check Complex.normSq_eq_norm_sq
+#check Complex.normSq_apply
+#check Complex.re_le_norm
+#check Complex.abs_re_le_norm
+#check one_div_le_one_div_of_le
+#check pow_le_one₀
+#check sq_le_sq₀
+#check div_le_div₀
+#check div_le_div_of_nonneg_left
+#check Integrable.mono'
+#check ContinuousAt.inv₀
+#check Filter.Tendsto.inv₀
+#check Filter.Tendsto.div
+#check Real.continuous_sqrt
+#check integral_nonneg
+#check Continuous.const_mul
+#check Measurable.div
+#check integrable_inv_one_add_sq
+#check Continuous.div_const

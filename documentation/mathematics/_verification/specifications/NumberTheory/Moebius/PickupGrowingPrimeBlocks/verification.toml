@@ -1,0 +1,119 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "signed-growing-prime-blocks-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+initial_inspection_commit = "059c2324f0ef90dd165e95e26afed4bcbdcc9797"
+integration_base = "5f13aa3d5f71acba2cc4f2f8c34ac50ba275f777"
+source_commit = "RESOLVE_FROM_CONTAINING_MAIN_COMMIT"
+publication = "SOURCE_INTEGRATED"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+root_imports_changed = false
+dependency_pins_changed = false
+new_source_files = 7
+lexical_definitions = 30
+lexical_theorem_scripts = 118
+issue = "1419"
+prerequisite_issues = [1406, 1414, 1415, 1416]
+written_secondary_forcing_commit = "5ae226e6f7f4d7c718bac53160b7db2529858640"
+finite_secondary_forcing_commit = "aa338898c69ed0b233ea3bb5c28a04cd11e229e1"
+source_only_mass_blob = "5002d641d277687b46602a83fdc06db64750989a"
+concurrent_floor_blob = "35f10f1a34844b03a84a0a24c0dea48962c2ecc7"
+note = "docs/mathematics/NumberTheory/Moebius/signed-growing-prime-blocks.md"
+new_exponent_below_one_for_original_source = false
+discrepancy_every_rate_under_count_schedule = true
+
+[native_verification]
+commands = ["lake build --wfail GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy GRWTSK.Analysis.FiniteSums.PrimeBlockKernel GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/FiniteSums/PeriodicPrefixDiscrepancy.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/FiniteSums/PrimeBlockKernel.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupGrowingPrimeBlocks.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupPrimeBlockExtraction.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupPrimeBlockFloorReturn.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupThirdPrimeLocalization.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupTwoPrimeBound.lean", "lake env leanchecker --help"]
+checker_invocation = "UNRESOLVED: determine supported source-bound replay from pinned help; do not invent flags."
+axiom_requirement = "Audit full imported/private/generated/opaque closure. Reject sorryAx, new research axioms, unauthorized native trust, changed hypotheses, or missing source identities. Inspect foundational propext/Classical.choice/Quot.sound rather than inferring acceptance."
+controls = ["All true source identities retain original mu, positive cofactor interval, closed causal inventory and the divided cutoff N/p.", "P is a nodup list of actual primes, a presentation of a finite set; block permutations preserve the kernel.", "After pm>N the negative part is the inherited max(-K_P(m),0), not zero unless old positivity has been proved.", "The signed positive and negative correlations remain separate; their square retains the complete mixed term.", "Period P is product p^2; its exact stage mean/radius is not used as a fixed-P implicit constant.", "New 4^length discrepancy uses the ACTUAL coefficient prime-insertion recurrence. It does not assume an unproved double-divisor/gamma identity.", "Count schedule bounds only discrepancy, not the arithmetic main term or original source energy.", "The third-prime negative support is a source-specific annulus; the Abel difference has a one-index boundary, and x>=16 is explicit for zero anchor weight.", "Two-prime energy remains rate one. The exact third-prime failure uses rational sqrt certificates and ordinary tactics, not native_decide.", "SourceMassComparison only tests sourceCoordinates. The written secondary forcing obstruction is not imported as a checked theorem or applied to the original source.", "Preserve prior verification scopes; new candidates and their imported closure still require native verification."]
+
+[[source]]
+path = "GRWTSK/Analysis/FiniteSums/PeriodicPrefixDiscrepancy.lean"
+module = "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy"
+sha256 = "4a8d7b64a71889735e391ad2009a298704292114d1d7ac23a7a666d24e680554"
+git_blob_computed_locally = "c79191ca298c93a930c620d4098bbdd8e4bd9f9b"
+lines = 140
+imports = ["GRWTSK.Analysis.FiniteSums.PrimeBlockKernel"]
+definitions = ["GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.mean", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.discrepancy", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.radius"]
+theorems = ["GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.prefix_period", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.prefix_blocks", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.prefix_decomposition", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.discrepancy_eq_centered_sum", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.discrepancy_le_radius", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.prefix_error", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.mean_and_radius_bounds", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy.weighted_error"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/Analysis/FiniteSums/PrimeBlockKernel.lean"
+module = "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel"
+sha256 = "ae519f42398a411919d898ffdf6327bde677c12e1b2d993b6074d8d4a93d3105"
+git_blob_computed_locally = "a7a6aac0cdb35bb3ced2ff734289e8a741058e33"
+lines = 267
+imports = ["Mathlib"]
+definitions = ["GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.negativeStep", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.positiveStep", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.hinge", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.twoHinge", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.prefix"]
+theorems = ["GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block_nil", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block_cons", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block_dilate", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block_perm", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block_add", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.block_weight", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.signed_step", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.absolute_step", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.signed_aggregate", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.signed_square", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.absolute_aggregate", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.twoHinge_pieces", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.twoHinge_nonnegative", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.sum_closed_step", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.abel", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.difference_sum", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.abel_centered", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.abel_centered_error", "GRWTSK.Analysis.FiniteSums.PrimeBlockKernel.affine_prefix_bound"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupGrowingPrimeBlocks.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks"
+sha256 = "7c6e7da28dc7460f0721fea82f79b6fa813549f87b40fd732aa667ec5cd1a0b4"
+git_blob_computed_locally = "4ce8542a4b410eb4d25c691bd13a4ba40cc2d4e0"
+lines = 404
+imports = ["GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound", "GRWTSK.Analysis.FiniteSums.PeriodicPrefixDiscrepancy", "GRWTSK.NumberTheory.Moebius.PickupPrimeFactorLayers"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.active", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.unsignedBlock", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.positiveCorrelation", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.negativeCorrelation", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.negativeBudget", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.localFactor", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.periodicCoefficient", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.period", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.stageMean", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.stageDiscrepancy", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.signedStageEnergy"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.source_channels", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.source_square", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.negativeStep_after_cutoff", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.negative_budget_cutoff_split", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.negative_correlation_cutoff_split", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.third_stage_negative_tail_zero", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.source_absolute_budget", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.localFactor_mul_of_coprime", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.prime_square_quotient", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.unsigned_step", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.unsignedBlock_eq_periodic", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.period_cons", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.period_eq_square_product", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.period_positive", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.prime_square_dvd_period", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.localFactor_period", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.coefficient_period", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.coefficient_abs_le_one", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.stage_prefix_exact", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.stage_discrepancy_cost", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.periodic_response_error", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.unsignedBlock_response_error", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.source_periodic_negative_budget", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.scheduled_periodic_response_error", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.signedStageEnergy_eq_source", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.source_mass_iff_signed_stage", "GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks.layer_bound_of_signed_stage_mass"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockExtraction.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction"
+sha256 = "4da391967b5aaf216503ac76eb2417af8f67b93f5ff800db51438ccd21cc8ebd"
+git_blob_computed_locally = "62fc60a682a06332fedf6566e0b081d993f82ba4"
+lines = 227
+imports = ["GRWTSK.Analysis.FiniteSums.PrimeBlockKernel", "GRWTSK.NumberTheory.Moebius.FinitePrimeDivisorExtraction", "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.Rough"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.rough_nil", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.rough_cons", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.rough_prime_mul", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.block_support", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.quotient_sum_extend", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.dilation_reindex", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.prime_step_cutoffs", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.prime_step", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.block_source", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.response_support", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.wholePickup_eq_blocks", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.wholePickup_prime_step", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.scheduled_source", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction.stage_transition"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockFloorReturn.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn"
+sha256 = "15252293734b654f5ec6379bf84268f10870b24e62ec7d56db55992892dae71c"
+git_blob_computed_locally = "f18a0f680a44c8c5cca86613796dd4a8975bc09f"
+lines = 265
+imports = ["GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks", "GRWTSK.NumberTheory.Moebius.FiniteDivisorFloorDiscrepancy"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.eulerMean", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.realPrefix"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.coefficient_mul_fresh", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.coefficient_insertion", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.divisible_quotient_prefix", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.prefix_insertion", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.floor_div_nat", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.realPrefix_insertion", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.prefix_floor_error", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.response_floor_error", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.source_floor_negative_budget", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.count_schedule_error", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.response_one_le_two", "GRWTSK.NumberTheory.Moebius.PickupPrimeBlockFloorReturn.scheduled_response_floor_error"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupThirdPrimeLocalization.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization"
+sha256 = "2c56dda39fe0de8df59295e128b65dbf535ba1cf760a376bf115269eb4f1e05c"
+git_blob_computed_locally = "1a8f8204a2d0d23fdd10ac8ecdf69da617720962"
+lines = 198
+imports = ["GRWTSK.NumberTheory.Moebius.PickupGrowingPrimeBlocks"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.threeHinge", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.roughCoefficient", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.roughPrefix", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeWeight"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.third_block_scaled", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.threeHinge_nonnegative_outside", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.coordinate_square", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negative_step_zero_outside", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negative_step_support", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeCorrelation_localized", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeWeight_terminal", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeWeight_one", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeCorrelation_centered_abel", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeCorrelation_prefix_budget", "GRWTSK.NumberTheory.Moebius.PickupThirdPrimeLocalization.negativeWeight_difference_zero"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupTwoPrimeBound.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound"
+sha256 = "192624ca3fa23057302e7079b040e5d24d20cf9168e1251faf52fdfe62766a85"
+git_blob_computed_locally = "6646dbea069b0078583d84085469841758d7cdc3"
+lines = 398
+imports = ["GRWTSK.NumberTheory.Moebius.PickupPrimeBlockExtraction"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gamma", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gammaPrefix", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.energyBound"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.response_hinge", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.response_scaled", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.block_two", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.block_two_scaled", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.two_prime_block_nonnegative", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.response_antitone", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gamma_masks", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.block23_majorant_eq", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gamma_period", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gammaPrefix_sum", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gammaPrefix_36", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gammaPrefix_period", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gammaPrefix_blocks", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.residue_excess", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gammaPrefix_bound", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.gamma_prefix_upper", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.sum_inv_sqrt_le", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.response_sum_le", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.wholePickup_abs_le_periodic", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.wholePickup_two_prime_bound", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.energyBound_derivative", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.pickupEnergy_two_prime_bound", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.endpointSum_two_prime_bound", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.inv_sqrt_lower", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.inv_sqrt_upper", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.response_log_nat", "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.third_prime_counterexample"]
+publication = "SOURCE_INTEGRATED"
+compilation = "NOT_RUN"

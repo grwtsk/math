@@ -1,0 +1,126 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-natural-scale-congruence-l1-586-v0.1"
+owner_repository = "grwtsk/math"
+issue = 586
+parent_issue = 576
+parent_pr = 578
+stronger_supplier_issue = 567
+stronger_supplier_pr = 568
+weighted_consumer_issue = 559
+weighted_consumer_pr = 562
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_NATURAL_SCALE_ENDPOINT_L1_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.NaturalScaleSquareModulusCongruenceL1"
+build_target = "GRWTSK.NumberTheory.Moebius.NaturalScaleSquareModulusCongruenceL1"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-fixed-to-uniform-obstruction-576-20261021"
+stacked_parent_revision = "677aec4860c92c86446ad61623cfd43d56c3ccbe"
+stacked_parent_tree = "7ff106e8908deb9b58a9bc6c9628f6b69afcec8d"
+candidate_branch = "research/rh-natural-scale-congruence-l1-586-20261021"
+theorem_source_commit = "47d9e94d2d021161cfa99576667605ebdcd1dfe1"
+theorem_source_tree = "4881dff0eed4f992564b5c3d9961f0387fa10cf5"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/NaturalScaleSquareModulusCongruenceL1.lean"
+theorem_source_git_blob = "d2111eae7c76579ae719a36f8b8e8da7a90461a7"
+mathematical_note_commit = "f216909741f990e78bf1784b68eae2618c499ad7"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/natural-scale-square-modulus-congruence-l1.md"
+
+[selected_increment]
+fibre_vanishing = "mertensEndpointCrossCongruenceFibre_eq_zero_of_endpoint_le_square"
+effective_support = "effectiveEndpointSquareModulusSet"
+effective_support_identity = "mertensEndpointCrossCongruenceL1Mass_eq_effectiveSupport"
+reciprocal_telescope = "sum_reciprocalEndpointDrop_Ico"
+dyadic_reciprocal_bound = "sum_reciprocalEndpointDrop_dyadic_le"
+weaker_supplier = "DyadicNaturalScaleSquareModulusCongruenceL1"
+weighted_transport = "subpolynomialWeightedMertensEndpointCrossCongruenceL1_of_naturalScale"
+signed_transport = "subpolynomialWeightedMertensEndpointCongruenceCrossCollision_of_naturalScale"
+squarefree_transport = "subpolynomialWeightedMertensEndpointSquarefreeMidpointCrossCollision_of_naturalScale"
+stronger_to_weaker = "naturalScaleSquareModulusCongruenceL1_of_uniformPerFibre"
+proof_classification = "EXACT_SUPPORT_AND_RECIPROCAL_TELESCOPE_PLUS_WEAKER_SUPPLIER_REDUCTION"
+
+[geometry]
+nonzero_fibre_requires = "d*d < b"
+proof_source = "positive midpoint < endpoint and d*d divides midpoint"
+heuristic_used_as_proof = false
+
+[weaker_supplier]
+formula = "forall delta>0 exists C>=0 forall j,b in [2^j,2^(j+1)), L1(b)<=C*(2^j)*(2^j)^delta"
+natural_endpoint_factor_explicit = true
+per_fibre_subpolynomial_required = false
+absolute_values_inside_fibre = false
+
+[weighted_reduction]
+reciprocal_formula = "sum_(X<=b<Y)(1/b-1/(b+1))=1/X-1/Y"
+dyadic_mass_bound = "sum weights <= 1/X"
+weighted_loss = "8"
+scale_loss = "none beyond X^delta"
+implies_existing_l1_supplier = true
+implies_signed_cross_collision_supplier = true
+
+[relation_to_pr568]
+stronger_supplier = "UniformDyadicSquareModulusMertensTwoPointAP"
+stronger_implies_weaker = true
+stronger_refuted = false
+weaker_claimed_equivalent = false
+
+[heuristic]
+random_sign_fibre_scale = "approximately b/d"
+effective_modulus_range = "d^2<b"
+suggested_endpoint_l1 = "approximately b log b"
+status = "MOTIVATION_ONLY"
+
+[evidence_states]
+source_draft = true
+exact_support_cutoff_scripted = true
+exact_reciprocal_telescope_scripted = true
+stronger_to_weaker_reduction_scripted = true
+natural_scale_supplier_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.NaturalScaleSquareModulusCongruenceL1"
+authored_declaration_count = 10
+definition_count = 2
+theorem_script_count = 8
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/FixedToUniformSquareModulusObstruction.lean"
+git_blob = "0c837a1802ff65d276d2ebb36d0632c77ca494ea"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_578"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/UniformSquareModulusTwoPointAP.lean"
+git_blob = "29e2a20e8aa802d622d370532d823ea30b469dd0"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_568"
+
+[hostile_controls]
+random_sign_heuristic_not_promoted_to_theorem = true
+pr568_not_refuted = true
+absolute_value_inside_fibre_rejected = true
+reciprocal_weight_preserved = true
+support_cutoff_proved_not_assumed = true
+l_function_supplier_not_claimed = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_natural_scale_endpoint_l1_supplier = true
+compare_l_function_and_fixed_form_inputs_to_weaker_target = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+natural_scale_endpoint_l1_bound_proved = false
+per_fibre_b_over_d_bound_proved = false
+l_function_adapter_proved = false
+riemann_hypothesis_proved = false

@@ -1,0 +1,38 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-quadratic-correlation-target-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerQuadraticCorrelationTargetCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerQuadraticCorrelationTargetCore"
+
+[source_binding]
+parent_revision = "945b4839283b5237b529c6bc6787fd3c6a8c3723"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXPLICIT_FEJER_QUADRATIC_CORRELATION_IDENTITY_SOURCE_PROVED / QUADRATIC_SAVING_TO_ARITHMETIC_GAIN_SOURCE_PROVED / SEVEN_EIGHTHS_CORRELATION_QUARTER_REQUIRED / QUADRATIC_CORRELATION_SUPPLIER_INTERFACE_TYPED / SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_OPEN"
+
+[closed]
+explicit_weighted_prime_atom_sum = true
+explicit_quadratic_correlation_identity = true
+quadratic_correlation_nonnegative = true
+diagonal_off_diagonal_ledger = true
+quadratic_amplitude_exponent_formula = true
+correlation_saving_closure_equivalence = true
+seven_eighths_correlation_quarter_requirement = true
+seven_eighths_arithmetic_eighth_recovery = true
+quadratic_correlation_supplier_interface = true
+quadratic_to_split_supplier_adapter = true
+
+[frontier]
+remaining = "construct the boundary-minimal dyadic cutoff schedule, prove a quarter-power saving for the explicit seven-eighths Fejer weighted prime-atom quadratic correlation, and discharge the deterministic square-root/boundary readout"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXPLICIT_FEJER_QUADRATIC_CORRELATION_IDENTITY_SOURCE_PROVED = true
+QUADRATIC_SAVING_TO_ARITHMETIC_GAIN_SOURCE_PROVED = true
+SEVEN_EIGHTHS_CORRELATION_QUARTER_REQUIRED = true
+QUADRATIC_CORRELATION_SUPPLIER_INTERFACE_TYPED = true
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,86 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-cyclic-reciprocal-abel-967-v0.3"
+owner_repository = "grwtsk/math"
+issue = 967
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_RECIPROCAL_ABEL_BOUND_AUTHORED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicReciprocalAbel"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicReciprocalAbel"
+
+[checked_parent_binding]
+parent_revision = "00ad56797863363078815f4d9f97f51ac9d7e982"
+generic_interval_distance_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicIntervalDistance.lean"
+generic_interval_distance_blob = "fc1f7afe93845df908f2a00481b1e33cfe3822cf"
+original_coordinate_owner_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointCyclicCoordinates.lean"
+original_coordinate_owner_blob = "cbc6abb605ba98b728a7de9a734565a83b9b325c"
+parent_local_check = "ACTUAL_CANONICAL_WFAIL_AND_TRUST0_REPORTED_BY_USER"
+legacy_full_156_module_leaf_verified = false
+
+[source_binding]
+generic_source_commit = "dcb155e900a7586b33f5eef455e43d0c7631e7a6"
+generic_source_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicReciprocalAbel.lean"
+generic_source_blob = "5c51e54dd9efea33eb6b7300545432b8b3e7375b"
+endpoint_source_commit = "c4678e6caf91cbb156e1d2e941fb44ac54e73972"
+endpoint_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointCyclicReciprocalAbel.lean"
+endpoint_source_blob = "09e476873005e3049b2d7658183b3ac6d9c43400"
+
+[selected_increment]
+reciprocal_weight = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicReciprocalWeight"
+weight_monotonicity = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicReciprocalWeight_succ_le"
+weight_telescoping = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicReciprocalWeight_endpoint_add_steps"
+exact_abel_identity = "GRWTSK.NumberTheory.CharacterSums.sum_stdAddChar_neg_mul_reciprocalWeight_Ico_eq_abel"
+real_weight_bound = "GRWTSK.NumberTheory.CharacterSums.norm_sum_stdAddChar_neg_mul_reciprocalWeight_Ico_le"
+complex_division_bound = "GRWTSK.NumberTheory.CharacterSums.norm_sum_stdAddChar_neg_div_nat_add_Ico_le_circularDistance"
+actual_coordinate_bound = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseNatCharacter_reciprocal_Ico_norm_le"
+literal_tail_bound = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseTailHarmonicLiteral_norm_le"
+proof_classification = "FINITE_ABEL_DIRICHLET_RECIPROCAL_WEIGHT_BOUND_FROM_CHECKED_INTERVAL_PARTIAL_SUMS"
+target_bound = "norm(sum_{n in Ico A B} chi_neg(n*t)/(n+R)) <= q/(2*d_q(t)*(A+R))"
+
+[exact_abel_boundary]
+terminal_endpoint_retained = true
+all_reciprocal_decrements_retained = true
+all_partial_character_sums_retained = true
+positive_decreasing_weight_proved = true
+empty_literal_interval_handled = true
+reciprocal_drop_endpoint_signs_modified = false
+opposite_phase_obstruction_removed = false
+
+[authentic_application]
+owner = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseSummationByPartsFourier"
+declaration = "coreGrowingShiftEndpointTransverseInteriorTailHarmonicXFourier"
+literal_interval = "Finset.Ico (A + 1) B"
+literal_summand = "coreGrowingShiftEndpointTransverseNatCharacter j u n * (((n + R : Nat) : Complex))^-1"
+owner_full_import_closure_verified = false
+application_instantiated_inside_owner = false
+
+[evidence_states]
+source_draft = true
+generic_source_elaborated = false
+endpoint_source_elaborated = false
+kernel_checked = false
+axiom_audited = false
+externally_replayed = false
+checked_parent_definitions_reused = true
+new_parallel_phase_definition_introduced = false
+new_parallel_distance_definition_introduced = false
+new_parallel_modulus_definition_introduced = false
+
+[preserved_components]
+direct_zero_mode_joint_packet = true
+capped_correction = true
+genuine_right_endpoint_term = true
+singular_numerator = true
+exact_supports = true
+
+[nonclaims]
+liouville_cancellation_proved = false
+mobius_cancellation_proved = false
+weighted_arithmetic_packet_estimate_proved = false
+coercivity_proved = false
+full_endpoint_estimate_proved = false
+legacy_full_leaf_replayed = false
+riemann_hypothesis_proved = false
+chowla_proved = false
+goldbach_proved = false
+
+[next_obligation]
+statement = "Replay and axiom-audit the generic reciprocal Abel module and authentic-coordinate specialization. Then instantiate the literal theorem inside the original tail-harmonic owner only after that owner's arithmetic import closure is independently replayable."

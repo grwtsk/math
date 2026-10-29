@@ -1,0 +1,38 @@
+# Queued source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-prime-divisor-log-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "366e37d68675f0edfa677489258503e57dc85b2f"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLog.lean"
+source_blob = "d3d49c33f03e567665218d4a15b1dc76861f2bab"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLog.primeDivisorLogMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLog.primeDivisorLogMass_one",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerLogMassUpperBound",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Rewrite finite nonunit proper-power mass upper bound using primeDivisorLogMass",
+ "Separate q=0 and positive-modulus arithmetic comparisons",
+ "Prove any arithmetic-function comparison rather than assuming it",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLog.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLog"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLog.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

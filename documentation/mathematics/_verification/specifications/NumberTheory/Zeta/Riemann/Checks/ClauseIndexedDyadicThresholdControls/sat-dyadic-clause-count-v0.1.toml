@@ -1,0 +1,72 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "sat-dyadic-clause-count-v0.1"
+owner_repository = "grwtsk/math"
+issue = 711
+parent_issue = 705
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ClauseIndexedDyadicThresholdControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ClauseIndexedDyadicThresholdControls"
+
+[source_binding]
+parent_branch = "research/705-dyadic-threshold-duality-v01"
+parent_revision = "31d960e423c5464b3afdac3f6a1a9ec67694fc7c"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_BOOLEAN_CLAUSE_COUNT_PRESENT / EQUALITY_ONLY_DYADIC_ADAPTER / QUADRATIC_THETA_RECURRENCE_STILL_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[finite_clause_model]
+assignment_type = "Fin k -> Bool"
+polarity_type = "Fin k -> Bool"
+falsifying_assignment = "fun i => not (polarity i)"
+satisfaction = "assignment != falsifyingAssignment polarity"
+assignment_count = "2^k"
+falsifying_count = "1"
+satisfying_count = "2^k-1"
+counted_success_fraction = "1-(1/2)^k"
+polarity_independent = true
+
+[dyadic_adapter]
+dyadic_threshold = "1-(1/2)^k"
+exact_equality = "countedSuccessFraction polarity = dyadicThreshold k"
+quadratic_map = "Q(rho)=2rho-1"
+reverse_step = "Q(dyadicThreshold(k+1))=dyadicThreshold(k)"
+transport_kind = "proposition rewrite through exact real equality only"
+
+[analytic_boundary]
+clause_count_supplies_theta_estimate = false
+clause_count_supplies_quadratic_recurrence = false
+max3sat_hardness_formalized = false
+pcp_formalized = false
+complexity_to_zeta_adapter_exists = false
+recurrence_7_8_proved = false
+recurrence_3_4_proved = false
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability.BooleanClauseCounting"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Satisfiability/BooleanClauseCounting.lean"
+blob = "4fd263cf1892d12a1101d56a02f44c8b25e3ed4a"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedDyadicThreshold"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedDyadicThreshold.lean"
+blob = "02c6d42996bcc3cf54a16dc811583ea39497cdea"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ClauseIndexedDyadicThresholdControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ClauseIndexedDyadicThresholdControls.lean"
+blob = "3ee09f3630876dc624a4d29c532ae07c5f6953f8"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/clause-indexed-dyadic-threshold.md"
+blob = "b96465305750b708e2e6abd8aa1ade62f9450515"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FINITE_BOOLEAN_CLAUSE_COUNT_PRESENT = true
+COUNTED_FRACTION_DYADIC_EQUALITY_PRESENT = true
+CLAUSE_INDEXED_ANALYTIC_ALIAS_PRESENT = true
+MAX3SAT_HARDNESS_FORMALIZED = false
+QUADRATIC_THETA_RECURRENCE_PROVED = false
+COMPLEXITY_TO_ZETA_TRANSFER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

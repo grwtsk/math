@@ -1,0 +1,84 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-canonical-deficit-v0.1"
+owner_repository = "grwtsk/math"
+issue = 750
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightCanonicalDeficitControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightCanonicalDeficitControls"
+
+[source_binding]
+parent_branch = "research/737-pinned-prime-weight-v01"
+parent_revision = "aa33374dd7f43072249c403a294e8a49bc6fb722"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CANONICAL_MINIMAL_DEFICIT_DEFINED / IMMUTABLE_COEFFICIENT_RULE_DEFINED / RULE_RESIDUAL_DEFICIT_EQUIVALENCE_DEFINED / TARGET_FITTING_HOSTILE_CONTROL_DEFINED / COEFFICIENT_SOURCE_LAW_OPEN / UNIFORM_COEFFICIENT_BOUND_OPEN / DESCENDED_CANONICAL_DEFICIT_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[canonical_deficit]
+response_magnitude = "|c*A_X^2|/X"
+deficit = "max(0, |thetaError(v)|+1-response_magnitude)"
+nonnegative_proved_source = true
+majorization_proved_source = true
+minimality_proved_source = true
+residual_criterion_equivalent_to_deficit_criterion_source = true
+residual_decay_proved = false
+
+[coefficient_rule]
+one_global_rule_before_eta_quantifier = true
+stage_indexed = true
+target_point_indexed = true
+source_identity_field_present = true
+normalization_field_present = true
+invalidation_key_field_present = true
+metadata_proves_source_law = false
+source_law_proved = false
+uniform_coefficient_bound_proved = false
+
+[target_fitting_control]
+formula = "X*(|thetaError(v)|+1)/A_X^2"
+requires_positive_scale = true
+requires_nonzero_amplitude = true
+exact_fit_proved_source = true
+zero_deficit_proved_source = true
+accepted_as_source_rule = false
+
+[transport]
+deficit_to_rule_residual = true
+rule_residual_to_deficit = true
+deficit_to_pinned_criterion = true
+deficit_to_feature_norm_criterion = true
+deficit_to_quadratic_recurrence = true
+deficit_to_descent_for_rho_ge_three_quarters = true
+unconditional_threshold_instance = false
+unconditional_rh = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightCanonicalDeficit"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightCanonicalDeficit.lean"
+blob = "936fbb876f678d871abb69856dd6bfcf28f91ad1"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeightDeficit"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPinnedPrimeWeightDeficit.lean"
+blob = "21cfef1110c1092d848e1c67c7631d9225231fab"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightCanonicalDeficitControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightCanonicalDeficitControls.lean"
+blob = "1e441edb516ba6dbb6019a355d7da812b67061f2"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-canonical-deficit.md"
+blob = "f3e60e693c690766467d28a92b474d2d19dd4b41"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CANONICAL_MINIMAL_DEFICIT_DEFINED = true
+IMMUTABLE_COEFFICIENT_RULE_DEFINED = true
+RULE_RESIDUAL_DEFICIT_EQUIVALENCE_DEFINED = true
+TARGET_FITTING_HOSTILE_CONTROL_DEFINED = true
+COEFFICIENT_SOURCE_LAW_PROVED = false
+UNIFORM_COEFFICIENT_BOUND_PROVED = false
+DESCENDED_CANONICAL_DEFICIT_PROVED = false
+SEVEN_EIGHTHS_CRITERION_PROVED = false
+THREE_QUARTERS_CRITERION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

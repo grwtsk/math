@@ -1,0 +1,39 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-length-coefficient-right-telescope-595-v0.1"
+owner_repository = "grwtsk/math"
+issue = 595
+parent_issue = 591
+parent_pr = 593
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientRightTelescope"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientRightTelescope"
+
+[source_binding]
+stacked_parent_revision = "9f7ea0164cb3d561fa9e8524082c87671dd6f69d"
+candidate_branch = "research/rh-right-telescope-595"
+theorem_source_commit = "a367c6a0e7d94ccbb3b7bede0e1d1f4a0f71cd66"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreLengthCoefficientRightTelescope.lean"
+theorem_source_git_blob = "624594daeed4f37240f53c58eb69d7e6f307a9bf"
+
+[selected_increment]
+right_depths = "rightCoefficientDepths_eq_Ico"
+terminal_depth = "rightTerminalDepth"
+terminal_mass = "rightTerminalLengthCoefficientMass_eq"
+interior_mass = "rightInteriorLengthCoefficientMass_eq"
+right_mass = "rightLengthCoefficientMass_eq"
+right_telescope = "rightLengthCoefficientTelescoping"
+full_nonboundary_bound = "fullLengthCoefficientMass_le_three_inv_sq"
+proof_classification = "EXACT_RIGHT_DEPTH_TELESCOPE"
+next_obstruction = "combine nonboundary reciprocal-square mass with boundary reciprocal-first-power mass in the transposed incompatible packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+piecewise_transposed_packet_bound_proved = false
+short_interval_theorem_applied = false
+riemann_hypothesis_proved = false

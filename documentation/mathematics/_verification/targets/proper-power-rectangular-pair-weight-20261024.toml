@@ -1,0 +1,38 @@
+# Queued verification only; do not execute.
+schema_version = "0.1"
+request_id = "proper-power-rectangular-pair-weight-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "107fc3ea78f65e248c2235f9a33daebeaeab3dd2"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairWeight.lean"
+source_blob = "394488a688b6cc05c58fef9b3e7d384df89b4f87"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairWeight.pairWeight",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairWeight.pairWeight_eq_rectangularWeight",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairNormalization",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Transport PairIndex weighted sum to rectangularSupportedMass",
+ "Compose rectangularProperPowerMass to rectangularSupportedMass",
+ "Compose unconditional original-to-rectangular proper-power mass equality",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairWeight.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairWeight"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairWeight.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

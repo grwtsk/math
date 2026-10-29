@@ -1,0 +1,84 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-psi-capacity-no-go-v0.1"
+owner_repository = "grwtsk/math"
+issue = 856
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiCapacityNoGoControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiCapacityNoGoControls"
+
+[source_binding]
+parent_branch = "research/846-pinned-prime-psi-grid-v01"
+parent_revision = "8e9927bef39a4fd8cd2d0ff2f480336664fff446"
+implementation_branch = "research/856-psi-capacity-pnt-nogo-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SUBLINEAR_QUADRATIC_BOOTSTRAP_SOURCE_DEFINED / ABSTRACT_PRIME_JUMP_NOGO_SOURCE_DEFINED / ACTUAL_PINNED_RESPONSE_BRIDGE_DEFINED / PNT_PROFILE_INSTANTIATION_OPEN / TRUE_PRIME_JUMP_INSTANTIATION_OPEN / ACTUAL_NEXT_OCTAVE_RECURRENCE_ADAPTER_OPEN / MATHEMATICAL_FIXED_CAPACITY_ROUTE_REJECTED / NO_RH_CLAIM"
+
+[math]
+scale = "X_j=2^(j+1)"
+literal_prime_amplitude = "A_X=sum_(X<p<=2X) (log(p)/p)*(abs(theta(p)-p)+1)"
+candidate_capacity = "X_j*abs(psi(m)-m)<=C*A_X_j^2, uniformly 2X_j<=m<=4X_j"
+current_theta_envelope = "E_j=sup_(X_j<=u<=2X_j)(abs(theta(u)-u)+1)"
+pnt_smallness = "E_j/X_j->0"
+weighted_amplitude_ceiling = "A_X_j<=(2*log(4))*E_j"
+recurrence = "E_(j+1)<=K*E_j^2/X_j+H*sqrt(X_j)"
+sqrt_bootstrap = "E_j<=M*sqrt(X_j) eventually"
+forced_psi_boundedness = "abs(psi(m)-m)<=K*M^2 uniformly at all late integer targets"
+prime_jump = "(psi(p)-p)-(psi(p-1)-(p-1))=log(p)-1"
+bertrand_prime = "exists prime p with 2X_j<p<=4X_j"
+conclusion = "The fixed uniform integer psi quadratic response capacity is incompatible with classical PNT and prime jumps."
+
+[formalized_source]
+sublinear_dyadic_envelope = "SublinearDyadicEnvelope"
+square_root_forced_quadratic_recurrence = "SquareRootForcedQuadraticRecurrence"
+bootstrap_theorem = "sublinear_quadraticRecurrence_eventually_sqrt"
+unbounded_adjacent_jump = "UnboundedAdjacentPsiJump"
+envelope_response = "EnvelopeQuadraticIntegerPsiResponse"
+abstract_no_go = "no_uniform_integerPsiResponse_of_sublinear_recurrence_and_jumps"
+actual_capacity_to_envelope_response = "integerPsiCapacity_to_envelopeQuadraticResponse"
+control_profile = "PNTThetaOctaveProfile"
+control_recurrence_adapter = "ActualPsiCapacityToEnvelopeRecurrence"
+control_fixed_no_go = "no_fixed_integerPsiCapacity_under_classical_inputs"
+control_existential_no_go = "no_integerPsiCapacity_under_classical_inputs"
+
+[open_formal_supplier]
+pnt_octave_profile = true
+actual_capacity_to_minimal_envelope_recurrence = true
+bertrand_exact_psi_jump_and_log_divergence = true
+exact_head_kernel_replay = true
+all_theorems_elaborated = false
+unconditional_lean_not_capacity = false
+
+[mathematical_disposition]
+fixed_integer_psi_capacity_rejected = true
+classical_pnt_used_only_for_negative_audit = true
+theta_psi_exact_source_preserved = true
+higher_prime_power_residual_preserved = true
+no_independent_rh_claim = true
+no_claim_other_nonlinear_sources_fail = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiCapacityNoGo"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightPsiCapacityNoGo.lean"
+blob = "29ff3383533da9fe7eb4b4f45f2bc612a031dbad"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiCapacityNoGoControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightPsiCapacityNoGoControls.lean"
+blob = "0ec0181b2dc3f9320bff1812945091c271185fa7"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-psi-capacity-no-go.md"
+blob = "9320201f3dd258b7b654b617777e64f60dfb593b"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SUBLINEAR_QUADRATIC_BOOTSTRAP_SOURCE_DEFINED = true
+ABSTRACT_PRIME_JUMP_NOGO_SOURCE_DEFINED = true
+ACTUAL_PINNED_RESPONSE_BRIDGE_DEFINED = true
+CLASSICAL_PNT_THEOREM_LEAN_INSTANTIATED = false
+BERTRAND_PRIME_JUMP_LEAN_INSTANTIATED = false
+ACTUAL_RECURRENCE_ADAPTER_LEAN_INSTANTIATED = false
+MATHEMATICAL_FIXED_CAPACITY_REJECTED = true
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false

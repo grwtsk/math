@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-winding-symmetric-correlation-801-v0.1"
+owner_repository = "grwtsk/math"
+issue = 801
+parent_issue = 798
+parent_pr = 800
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ZERO_WINDING_SYMMETRIC_CORRELATION_SOURCE_DRAFT_ZERO_WINDING_SYMMETRIC_SECOND_MOMENT_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingSymmetricCorrelation"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingSymmetricCorrelation"
+
+[source_binding]
+stacked_parent_revision = "138fe6bfc490681fe6eac4145409f4ef9f4b1869"
+candidate_branch = "research/rh-zero-winding-symmetric-correlation-801-20261022"
+theorem_source_commit = "6e5ff396d561afa9037ed1b256cac33535f300a2"
+theorem_source_git_blob = "25614583e140a8b8bdc3b04acc13a2e79e9dcc7a"
+mathematical_note_commit = "a3f65c5f57210998a807ac0de64b6cda08850456"
+mathematical_note_git_blob = "73f8cd847a401f1bcf3041569f9e292d1f2f8c27"
+
+[evidence_states]
+source_draft = true
+symmetric_left_argument_scripted = true
+symmetric_right_argument_scripted = true
+fiber_symmetric_correlation_identity_scripted = true
+symmetric_second_moment_identity_scripted = true
+symmetric_second_moment_estimate_proved = false
+wrap_cancellation_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

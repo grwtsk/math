@@ -1,0 +1,822 @@
+{
+  "schema_version": 1,
+  "scope": "Further target search for exactly the ten unresolved outcomes in the preceding 21-idea review; each version retains its own source identity.",
+  "previous_review_file": "remaining-idea-target-search.json",
+  "code_baseline": "b9c830170615ea5fc92ea988252891a1808ea074",
+  "upstream_baseline": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "dependency_evidence": "lake-manifest.json packages[name=mathlib].rev at the pinned maintained commit equals the cited upstream commit.",
+  "recorded_at": "2026-10-23T20:11:02.942016+00:00",
+  "limitations": [
+    "No main manuscript claim is marked resolved. A conditional fragment is limited to the exact stated subclaim and domain.",
+    "Conditional fragments are limited to an entropy summand/nonnegativity ingredient and a finite-sum error inequality. Paper-specific adapters were not newly compiled.",
+    "All code citations are immutable source comparisons. No new Lean compilation or independent kernel audit is claimed.",
+    "Complete extracted text of these ten exact PDFs was read or reread, including final appendix/reference pages. This does not verify all mathematical claims. Nine assets are short outlines/status notes; the eleven-page version includes a numerical appendix. Distinct versions retain their own identities.",
+    "Original paths, bibliography, source/owner statements, access observations and human understanding dates are preserved. New machine-access observations stay private in the external library.",
+    "Assistant interpretations remain proposals. Correspondence is not owner testimony, historical influence, priority or a proof of the larger conjecture."
+  ],
+  "code_references": [
+    {
+      "id": "cartan-data",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/LinearAlgebra/RootSystem/CartanMatrix.lean",
+      "blob": "e3e3fa9621ce20e0de908550690515426ec9ea38",
+      "code_sha256": "bed03816d861f016f5608b4b46240e45b91c0e1e48d72a5bae2e1831c154efc9",
+      "declaration": "RootPairing.Base.cartanMatrixIn",
+      "line_start": 54,
+      "line_end": 56,
+      "scope": "From a supplied based root pairing valued in S, form the matrix whose entries are that pairing. This is root-data construction, not a faithful exceptional-group representation, an automorphic lift or equality of L-functions. Rejected candidate for the manuscript’s preservation claim."
+    },
+    {
+      "id": "entropy-definition",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecialFunctions/Log/NegMulLog.lean",
+      "blob": "913cb41fbbf83a931854dd8102b28af35663eb28",
+      "code_sha256": "e249365f3eff509bfd9774e8e5f380c7e0290d76847871daee3616fb15b6b643",
+      "declaration": "Real.negMulLog",
+      "line_start": 164,
+      "line_end": 164,
+      "scope": "Definition of the real function x↦−x*log(x), matching the printed Shannon summand. It does not select a source-derived probability law, normalize weights or define the paper’s corrected entropy."
+    },
+    {
+      "id": "entropy-term-nonneg",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecialFunctions/Log/NegMulLog.lean",
+      "blob": "913cb41fbbf83a931854dd8102b28af35663eb28",
+      "code_sha256": "e249365f3eff509bfd9774e8e5f380c7e0290d76847871daee3616fb15b6b643",
+      "declaration": "Real.negMulLog_nonneg",
+      "line_start": 174,
+      "line_end": 175,
+      "scope": "Given 0≤x≤1, −x*log(x)≥0. Finite Shannon nonnegativity requires instantiating each probability and summing the bounds; infinite entropy requires summability. No entropy threshold implies arithmetic zero exclusion here."
+    },
+    {
+      "id": "finite-sum-norm",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/Normed/Group/Basic.lean",
+      "blob": "0e3933a6fd8ffc6e7cf8860831cb2ad22eab459e",
+      "code_sha256": "85d307e042cb03073a2e9160c52adbfcef85c921d2f9b17584b13597d8a5c7bc",
+      "declaration": "norm_sum_le",
+      "line_start": 829,
+      "line_end": 831,
+      "scope": "For a finite set and a function to a seminormed additive commutative group, the norm of its sum is at most the sum of term norms. For the paper’s weighted complex error, match the same indices and weights and prove each norm bound. It supplies no coefficients, numeric precision certificate, omitted-prime tail or automorphic realization."
+    },
+    {
+      "id": "graph-vanishing",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "b9c830170615ea5fc92ea988252891a1808ea074",
+      "path": "GRWTSK/Geometry/Hodge/FiniteGraphCellular.lean",
+      "blob": "8443dddddc00f3c8e5c79c110381c7fa2d58ad6e",
+      "code_sha256": "f0ebc8d90a8beac798eca6255c68461ffedb0353f3039290d4ed8a33a933f943",
+      "declaration": "GRWTSK.Geometry.Hodge.FiniteGraphCellular.OrientedIncidence.energy_eq_zero_iff_coboundary_eq_zero",
+      "line_start": 63,
+      "line_end": 82,
+      "scope": "For a supplied oriented graph with finite edge type and real vertex function, zero of the sum of squared coboundary values is equivalent to the coboundary being zero. It assumes zero energy, not merely nonnegative energy. No intersection-cohomology or arithmetic comparison is constructed. Source-inspected, not independently kernel-audited."
+    },
+    {
+      "id": "hecke-coset-data",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/HeckeRing/Defs.lean",
+      "blob": "ffe480b78f33976a8bdcabd76f98918ae5e19f4b",
+      "code_sha256": "197b05be91531930d602e758e2de2d58325100f1856c8e4304ee220f49d983e2",
+      "declaration": "HeckeCosetModule",
+      "line_start": 183,
+      "line_end": 184,
+      "scope": "The type of finitely supported coefficient functions on Hecke double cosets, with the supplied zero structure. This definition is not a Coxeter KL basis, recurrence, positivity theorem or geometric/analytic residue realization. Rejected candidate only."
+    },
+    {
+      "id": "sublinear-scope",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "b9c830170615ea5fc92ea988252891a1808ea074",
+      "path": "GRWTSK/Analysis/Asymptotics/SublinearDyadic.lean",
+      "blob": "91db37fec2983da6de753be5f3e8e6cad1295d75",
+      "code_sha256": "691d520273705124e162a7531ced5f64d7fc820e392531af2d9c89b3c0f483e1",
+      "declaration": "GRWTSK.Analysis.SublinearDyadic.upperSublinear_iff_isLittleO",
+      "line_start": 29,
+      "line_end": 45,
+      "scope": "For a nonnegative real sequence on ℕ, its declared epsilon upper-sublinear predicate is equivalent to f=o(n). The file requires a successful pinned replay and supplies no unresolved all-depth arithmetic bound. It proves neither boundedness, a specific arithmetic estimate nor statistical independence. Rejected substitute for the status note’s suppliers."
+    }
+  ],
+  "reviews": [
+    {
+      "idea_id": "idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap",
+      "source_id": "sha256:0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "taxonomy": "NumberTheory",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Analytic Number Theory",
+          "page_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Computational and Experimental Verification",
+          "page_text_sha256": "22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "3     Algebraic Number Theory and Primes in Fields",
+          "page_text_sha256": "506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "5     Geometric Representations and the Langlands",
+          "page_text_sha256": "22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "A Holistic Strategy for Deriving Properties of",
+          "page_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "A complete three-page reread confirms that this is a list of objectives and numbered resources, not a defined algorithm or a quantified prime theorem. The broadened search provides prime-counting and zeta ingredients, but selecting one would invent a claim not specified by this source. No concrete target is assigned.",
+      "candidate_roles": [],
+      "search_terms": [
+        "prime algorithm correctness",
+        "zeta derivative recursion",
+        "Chebyshev",
+        "geometric prime data"
+      ],
+      "missing_bridges": [
+        "Replace each objective by a precise source identity or estimate with domains, constants and quantifiers before selecting a Lean theorem.",
+        "The source-number citations are not an exact construction of a prime detector, algorithm correctness theorem or motive comparison.",
+        "Choose a particular algorithm or source identity with an exact correctness or error claim before assigning a target.",
+        "Select an exact algorithm, source identity or quantitative theorem and resolve its numbered resources.",
+        "Replace an objective by an exact source identity, algorithm/correctness specification or quantitative theorem; resolve the Source 23/26/27/28/29 citations.",
+        "Resolve Source 23/26/27/28/29 to actual sources, select a precise objective and state its objects, hypotheses, output and correctness/error theorem. No unreviewed body remains in this asset."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline",
+      "source_id": "sha256:796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Suppression via Localization",
+          "page_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Positivity Constraints",
+          "page_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Boundary Regularization: A Framework for",
+          "page_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "5     Positivity Constraints",
+          "page_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "The complete two-page outline gives no boundary complex or analytic comparison. A maintained graph theorem proves that zero of a particular nonnegative sum-of-squared-coboundaries is equivalent to a zero coboundary. It assumes energy zero; positivity of an unspecified Euler pairing does not establish that hypothesis, and the graph model is not the paper’s intersection cohomology.",
+      "candidate_roles": [
+        {
+          "code_key": "graph-vanishing",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "boundary Euler pairing",
+        "positive energy zero coboundary",
+        "intersection homology",
+        "localization vanishing"
+      ],
+      "missing_bridges": [
+        "Define the boundary complex, localization functor and actual signed residue/zero consumer, then prove the source comparison.",
+        "Euler pairings are not universally positive. State the precise sheaves, degrees and positivity theorem, and derive vanishing separately.",
+        "A reported tolerance is not a validated enclosure with full tails or an all-rank result.",
+        "Construct a geometric positive form on the exact class of objects; Hermitian symmetry alone does not imply positivity or vanishing.",
+        "Construct the exact pairing and localization/analytic realization and prove its sign and vanishing implications on the intended objects.",
+        "Define the geometric objects, admissible cone and actual signed analytic consumer; prove a source-specific vanishing/exclusion bridge with exact hypotheses.",
+        "Construct the boundary object, pairing and analytic realization; derive the required vanishing rather than replacing the pairing by an unrelated finite positive energy. No additional substantive section exists in this asset."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer",
+      "source_id": "sha256:498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Group Embeddings",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Residue Suppression and Functional Equation",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Groups: Embeddings and",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4     Residue Suppression and Functional Equation Sym-",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "Both physical pages have now been reread. Upstream Cartan-matrix and root-system constructions describe algebraic root data; they do not construct the asserted G2/F4/E8 automorphic transfers or prove equality of completed L-functions. The dimensions 7/26/248 and reported tolerances do not fill that gap.",
+      "candidate_roles": [
+        {
+          "code_key": "cartan-data",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "G2 F4 E8 representation",
+        "Cartan matrix root pairing",
+        "Geck representation",
+        "automorphic lift local factors"
+      ],
+      "missing_bridges": [
+        "Construct the actual representation homomorphisms with the required base fields and exact preservation laws.",
+        "A faithful linear representation does not identify automorphic L-functions or preserve their zeros by itself. Supply the local parameters, global analytic comparison and boundary regularization theorem.",
+        "Construct the group representations and the separate analytic/local-global L-function comparison.",
+        "Construct the representation homomorphisms, genuine twists and local-factor identities; prove the separate global analytic comparison.",
+        "Construct the homomorphism over its actual base field and separately prove local-factor and analytic global comparisons, including all dual/normalization data.",
+        "Specify the group and base field, actual representation, local parameters, global transfer and analytic comparison. There is no further proof body in this exact two-page version."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer",
+      "source_id": "sha256:67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Group Embeddings",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Residue Suppression and Functional Equation",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Groups: Embeddings and",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4     Residue Suppression and Functional Equation Sym-",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "Both physical pages have now been reread. Upstream Cartan-matrix and root-system constructions describe algebraic root data; they do not construct the asserted G2/F4/E8 automorphic transfers or prove equality of completed L-functions. The dimensions 7/26/248 and reported tolerances do not fill that gap.",
+      "candidate_roles": [
+        {
+          "code_key": "cartan-data",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "G2 F4 E8 representation",
+        "Cartan matrix root pairing",
+        "Geck representation",
+        "automorphic lift local factors"
+      ],
+      "missing_bridges": [
+        "Construct the actual representation homomorphisms with the required base fields and exact preservation laws.",
+        "A faithful linear representation does not identify automorphic L-functions or preserve their zeros by itself. Supply the local parameters, global analytic comparison and boundary regularization theorem.",
+        "Construct the group representations and the separate analytic/local-global L-function comparison.",
+        "Construct the representation homomorphisms, genuine twists and local-factor identities; prove the separate global analytic comparison.",
+        "Construct the homomorphism over its actual base field and separately prove local-factor and analytic global comparisons, including all dual/normalization data.",
+        "Specify the group and base field, actual representation, local parameters, global transfer and analytic comparison. There is no further proof body in this exact two-page version."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap",
+      "source_id": "sha256:159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 2,
+          "anchor": "The positivity of Pu,v",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "recursive computations yielding",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "4     Affine and Quantum Extensions",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Kazhdan-Lusztig Polynomials and the Generalized",
+          "page_text_sha256": "675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive",
+          "page_text_sha256": "4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pages_beyond_recorded_citations": [
+        1,
+        4
+      ],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "All four physical pages, including the references, have been reread. The upstream HeckeCosetModule is a finite-support module on double cosets, not a KL basis or its recurrence/positivity theorem. The source’s truncated recursion, q² diagonal example and unnamed affine/quantum corrections still do not determine a compatible source theorem.",
+      "candidate_roles": [
+        {
+          "code_key": "hecke-coset-data",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "Kazhdan Lusztig Coxeter recurrence",
+        "HeckeCosetModule",
+        "KL diagonal normalization",
+        "nilpotent realization"
+      ],
+      "missing_bridges": [
+        "Verify the polynomial recurrence, diagonal normalization and G2 example against the defining Hecke relations; the printed recursion and q² diagonal example are not established by the text.",
+        "Construct the localization/realization and prove a source-specific identity linking its signed or graded pairing to analytic residues/zeros. Positivity does not imply vanishing without an additional proved implication.",
+        "Specify and justify the affine/quantum variants instead of adding unnamed correction terms.",
+        "Define the Hecke/KL recurrence and realization; prove an actual signed analytic comparison before any vanishing conclusion.",
+        "Supply a correct KL specification and its geometric realization, then prove a source-specific residue/zero comparison; positivity alone does not discharge it.",
+        "Repair and verify the recurrence and diagonal normalization, construct the actual intersection-cohomology realization, and prove positivity-to-vanishing for the specified analytic consumer.",
+        "Construct the intended Coxeter Hecke algebra and correct KL normalization/recurrence; identify a geometric realization and prove the separate signed residue-to-zero comparison. Naming double-coset modules supplies none of these bridges."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap",
+      "source_id": "sha256:553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 2,
+          "anchor": "The positivity of Pu,v",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "recursive computations yielding",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "4     Affine and Quantum Extensions",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Kazhdan-Lusztig Polynomials and the Generalized",
+          "page_text_sha256": "675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive",
+          "page_text_sha256": "4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pages_beyond_recorded_citations": [
+        1,
+        4
+      ],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "All four physical pages, including the references, have been reread. The upstream HeckeCosetModule is a finite-support module on double cosets, not a KL basis or its recurrence/positivity theorem. The source’s truncated recursion, q² diagonal example and unnamed affine/quantum corrections still do not determine a compatible source theorem.",
+      "candidate_roles": [
+        {
+          "code_key": "hecke-coset-data",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "Kazhdan Lusztig Coxeter recurrence",
+        "HeckeCosetModule",
+        "KL diagonal normalization",
+        "nilpotent realization"
+      ],
+      "missing_bridges": [
+        "Verify the polynomial recurrence, diagonal normalization and G2 example against the defining Hecke relations; the printed recursion and q² diagonal example are not established by the text.",
+        "Construct the localization/realization and prove a source-specific identity linking its signed or graded pairing to analytic residues/zeros. Positivity does not imply vanishing without an additional proved implication.",
+        "Specify and justify the affine/quantum variants instead of adding unnamed correction terms.",
+        "Define the Hecke/KL recurrence and realization; prove an actual signed analytic comparison before any vanishing conclusion.",
+        "Supply a correct KL specification and its geometric realization, then prove a source-specific residue/zero comparison; positivity alone does not discharge it.",
+        "Repair and verify the recurrence and diagonal normalization, construct the actual intersection-cohomology realization, and prove positivity-to-vanishing for the specified analytic consumer.",
+        "Construct the intended Coxeter Hecke algebra and correct KL normalization/recurrence; identify a geometric realization and prove the separate signed residue-to-zero comparison. Naming double-coset modules supplies none of these bridges."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap",
+      "source_id": "sha256:0f3deff790c3e5981fc304f6fef684f2d93ee0830b20c3129244a40721875833",
+      "asset_sha256": "0f3deff790c3e5981fc304f6fef684f2d93ee0830b20c3129244a40721875833",
+      "taxonomy": "ProbabilityCombinatorics",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Entropy Refinement",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Zero-Free Regions",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Clustering, Modular Symmetry, and the Generalized",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4.2    Connecting to Random Matrix Theory",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "The displayed Shannon summand has an exact upstream match: Real.negMulLog is −x*log(x), and negMulLog_nonneg proves its nonnegativity for 0≤x≤1. With a finite probability family this supplies the termwise ingredient for H≥0; the finite-sum adapter is not newly compiled here. It does not validate H_corrected=H_initial−Σw<r,φ>, the empirical threshold 0.1, or the proposed zero-free implication. Both pages are exhausted; the paper explicitly lists the zero-free upgrade as a next step.",
+      "candidate_roles": [
+        {
+          "code_key": "entropy-definition",
+          "role": "conditional-fragment"
+        },
+        {
+          "code_key": "entropy-term-nonneg",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "negMulLog definition",
+        "finite Shannon entropy nonnegative",
+        "probability normalization",
+        "zero free threshold"
+      ],
+      "missing_bridges": [
+        "Define the correction on probabilities and prove it preserves normalization/nonnegativity; subtracting projections from an entropy value need not yield a Shannon entropy.",
+        "State constants and parameter ranges for the two different scaling laws, and provide reproducible data/certified errors.",
+        "Prove threshold implies zero exclusion with exact source domain and all-height/rank coverage. Finite GL11–GL100 checks do not construct an infinite-dimensional limit.",
+        "Prove normalization, nonnegativity, convergence and an all-height source-specific exclusion implication.",
+        "Define the probability law and admissible correction and prove a uniform source-specific threshold implication.",
+        "Define the probability distribution derived from the actual L-function, prove the correction preserves it, and prove the uniform implication to zero exclusion with full domain/tail coverage.",
+        "Specify the actual finite/countable probability space derived from the arithmetic source; prove 0≤P≤1 and normalization, and handle entropy summability if infinite.",
+        "Prove the correction is the entropy of a valid updated distribution and supply an exact uniform H<0.1⇒zero-exclusion theorem. Neither follows from termwise nonnegativity."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap",
+      "source_id": "sha256:579328ace007be79bca86146991d522c3a72ac325d62523ee0e3322dcf48d63c",
+      "asset_sha256": "579328ace007be79bca86146991d522c3a72ac325d62523ee0e3322dcf48d63c",
+      "taxonomy": "ProbabilityCombinatorics",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Entropy Refinement",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Zero-Free Regions",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Clustering, Modular Symmetry, and the Generalized",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4.2    Connecting to Random Matrix Theory",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "The displayed Shannon summand has an exact upstream match: Real.negMulLog is −x*log(x), and negMulLog_nonneg proves its nonnegativity for 0≤x≤1. With a finite probability family this supplies the termwise ingredient for H≥0; the finite-sum adapter is not newly compiled here. It does not validate H_corrected=H_initial−Σw<r,φ>, the empirical threshold 0.1, or the proposed zero-free implication. Both pages are exhausted; the paper explicitly lists the zero-free upgrade as a next step.",
+      "candidate_roles": [
+        {
+          "code_key": "entropy-definition",
+          "role": "conditional-fragment"
+        },
+        {
+          "code_key": "entropy-term-nonneg",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "negMulLog definition",
+        "finite Shannon entropy nonnegative",
+        "probability normalization",
+        "zero free threshold"
+      ],
+      "missing_bridges": [
+        "Define the correction on probabilities and prove it preserves normalization/nonnegativity; subtracting projections from an entropy value need not yield a Shannon entropy.",
+        "State constants and parameter ranges for the two different scaling laws, and provide reproducible data/certified errors.",
+        "Prove threshold implies zero exclusion with exact source domain and all-height/rank coverage. Finite GL11–GL100 checks do not construct an infinite-dimensional limit.",
+        "Prove normalization, nonnegativity, convergence and an all-height source-specific exclusion implication.",
+        "Define the probability law and admissible correction and prove a uniform source-specific threshold implication.",
+        "Define the probability distribution derived from the actual L-function, prove the correction preserves it, and prove the uniform implication to zero exclusion with full domain/tail coverage.",
+        "Specify the actual finite/countable probability space derived from the arithmetic source; prove 0≤P≤1 and normalization, and handle entropy summability if infinite.",
+        "Prove the correction is the entropy of a valid updated distribution and supply an exact uniform H<0.1⇒zero-exclusion theorem. Neither follows from termwise nonnegativity."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence",
+      "source_id": "sha256:d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 2,
+          "anchor": "Statistical Independence of Zeros",
+          "page_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Error Bounds for Mixed Automorphic Forms",
+          "page_text_sha256": "c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Updated Verification of Recursive Refinement",
+          "page_text_sha256": "7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Critical Review of Remaining Open Problems",
+          "page_text_sha256": "c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Fourier analysis. By demonstrating that cumulative errors across distinct",
+          "page_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "The complete three-page status note supplies no quantitative source inequality beyond declaring named results resolved. A maintained theorem equates a nonnegative upper-sublinear budget with f=o(n); it proves no arithmetic witness, rate-zero boundedness or statistical independence. It therefore remains a rejected substitute for the source proof. The note also explicitly leaves mixed-form cross-term estimates open.",
+      "candidate_roles": [
+        {
+          "code_key": "sublinear-scope",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "upperSublinear isLittleO",
+        "bounded versus sublinear",
+        "cross-domain error cancellation",
+        "zero correlation independence"
+      ],
+      "missing_bridges": [
+        "Verify the cited Axiom 1 uniform bound versus its growing estimates and Axiom 5 rate versus normalized convergence.",
+        "Zero correlation is weaker than independence; retain RH/GRH premises in the cited independence argument.",
+        "The acknowledged mixed cross-term bounds remain missing. Status labels and future numerical validation do not discharge them.",
+        "Resolve the underlying references and preserve their exact rate, normalization and RH/GRH premises.",
+        "Resolve the actual referenced inequalities and retain constants, rates, normalization and all conditional premises.",
+        "Recover exact source inequalities and conditional hypotheses from the named January documents; sublinear growth does not mean boundedness, and decorrelation does not establish independence.",
+        "Locate and verify the named January source documents and their exact rates, constants, normalizations and conditional premises; prove the actual mixed-source bounds and independence statement. No further body remains here."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer",
+      "source_id": "sha256:bd284739968eab786f84fc66f3c8e3312ea6037667a9f2ffdf16c3b5db7baca1",
+      "asset_sha256": "bd284739968eab786f84fc66f3c8e3312ea6037667a9f2ffdf16c3b5db7baca1",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 3,
+          "anchor": "Theorem: Positivity Constraints for F4 and E8",
+          "page_text_sha256": "99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98"
+        },
+        {
+          "pdf_page": 5,
+          "anchor": "Extensions to Symmetric and Exterior Powers",
+          "page_text_sha256": "029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7"
+        },
+        {
+          "pdf_page": 10,
+          "anchor": "def residue_computation(prime_list, eigenvalues):",
+          "page_text_sha256": "3943ccf311e2f855e0a595f09cbb263bc494c3c4e52d6d41d33c09b948f549c1"
+        },
+        {
+          "pdf_page": 8,
+          "anchor": "Prime p     Res(p)G2   Res(p)GL(7) Difference",
+          "page_text_sha256": "eecf6273c7d8f380e42dbc525d90401a0d44133ed299aa89c5abdf5186ab877b"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "Proof. 1. **Compactification of Moduli Space:** Decompose the moduli space into boundary",
+          "page_text_sha256": "ed0167e5d58cc5eab63bbcd26b1a38e6f98679d01463917efa66d981d4f67943"
+        },
+        {
+          "pdf_page": 5,
+          "anchor": "Prime p      Res(p)F4  Res(p)GL(26)      Difference",
+          "page_text_sha256": "029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7"
+        },
+        {
+          "pdf_page": 9,
+          "anchor": "A     Numerical Validation Methodologies",
+          "page_text_sha256": "77a2f260c0736e8e8c98a159ecdbba5cd91659396819fc909c59b7dd45765a5d"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Suppression via Embeddings and Geometric",
+          "page_text_sha256": "52e62cc4689596e7e883812a8efcb4c49d38a5bd1db9fb536ebd7a8d1781653c"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "2.2     Exceptional Group Embeddings",
+          "page_text_sha256": "68340dd7ce9030a16224f8e9891f949936876c3765e541aad2322dab0995cd6a"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "3.2     Residue Suppression through Compactification",
+          "page_text_sha256": "99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98"
+        },
+        {
+          "pdf_page": 6,
+          "anchor": "space ME8 aligns boundary strata contributions with the critical line.",
+          "page_text_sha256": "bf8a9b648c84b0895c7d4f619ed5280c68330459cc7c05c3054dd188e8a94aea"
+        },
+        {
+          "pdf_page": 7,
+          "anchor": "Prime p       Res(p)E8  Res(p)GL(248)     Difference",
+          "page_text_sha256": "40dec6f4163b795b89f9cf94047c95412cc55dee53b439c59498373955fbc9b2"
+        },
+        {
+          "pdf_page": 11,
+          "anchor": "Prime p        Res(p)F4 Res(p)GL(26)         Difference",
+          "page_text_sha256": "553dad95470fefe2fdb0f5457d50fe016b8336852141d8f6cfd06cf02bf79094"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "pages_beyond_recorded_citations": [
+        1,
+        2,
+        6,
+        7,
+        11
+      ],
+      "read_extent": "Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.",
+      "finding": "The entire eleven-page version has now been read. Its explicit finite sum has a precise numerical-analysis fragment: norm_sum_le bounds the norm of the sum of same-index weighted coefficient errors by the sum of their norms. It requires actual termwise enclosures and matching weights; it does not identify supplied arrays with automorphic eigenvalues. A separate exact-decimal consistency check of the printed Python example gives sums 150001/50000 and 3, hence difference 1/50000 before division by sqrt(p). At p=2 the ideal exact-decimal model differs by 1/(50000*sqrt(2))>1/100000, exceeding 10⁻8. The tables near 1 and several labelled differences therefore require normalization/error reconciliation. This is not a certified floating-point replay or a new compiled Lean specialization.",
+      "candidate_roles": [
+        {
+          "code_key": "finite-sum-norm",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "finite weighted eigenvalue sum",
+        "norm_sum_le",
+        "per-prime error budget",
+        "exceptional residue validation"
+      ],
+      "missing_bridges": [
+        "A faithful linear representation G→GL(n) alone does not construct a global automorphic lift or prove equality of L-functions.",
+        "Construct compactification/localization and prove the actual positivity-to-residue-zero and residue-to-zero-location comparisons.",
+        "Finite prime tables with 10⁻⁸/10⁻⁹ differences are approximate comparisons, not exact factor identities or all-zero coverage; symmetric/exterior/twisted claims need separate sources.",
+        "Construct exact local parameters and the automorphic transfer; certify numerical errors only after fixing the actual mathematical source.",
+        "Construct the representation homomorphisms, genuine twists and local-factor identities; prove the separate global analytic comparison.",
+        "Construct the actual source, representation/twist and local factors before comparing the data; certify the enclosures and omitted tail.",
+        "Explain why the test coordinates may be restricted to the critical line without assuming the desired conclusion.",
+        "Instantiate the per-prime finite index set, exact weights and certified coefficient errors; keep per-term, per-prime and summed-prime budgets separate.",
+        "Reconcile the printed arrays, code outputs and tables. For example, p.5 Table 1 lists 1.00000002 versus 1 with difference 10⁻8, although the printed decimal difference is 2*10⁻8.",
+        "Construct the actual automorphic transfer/source identity and a genuine twist; critical-line test coordinates and finite error budgets do not prove global zero exclusion."
+      ]
+    }
+  ]
+}

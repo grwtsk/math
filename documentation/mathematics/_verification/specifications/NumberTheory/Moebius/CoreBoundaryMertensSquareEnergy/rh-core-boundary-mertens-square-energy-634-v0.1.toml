@@ -1,0 +1,42 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-mertens-square-energy-634-v0.1"
+owner_repository = "grwtsk/math"
+issue = 634
+parent_issue = 609
+parent_pr = 610
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryMertensSquareEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryMertensSquareEnergy"
+
+[source_binding]
+stacked_parent_revision = "37556b7f787c8d735c0cc363827a28ebbfaf66bb"
+candidate_branch = "research/rh-mertens-energy-634"
+theorem_source_commit = "baff7eb530c5558857554b1767937f6f70088d6b"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryMertensSquareEnergy.lean"
+theorem_source_git_blob = "c80a46bf05753332eb6b2e0cf56684a6c4a77f45"
+
+[selected_increment]
+boundary_depth_interval = "boundaryCoreDepths_eq_Ico"
+prefix_interval = "mertensPrefixReal_sub_eq_Ico"
+tail_prefix = "boundaryTailMertens_eq_prefix_sub"
+localized_energy = "boundaryLocalizedMertensSquareEnergy"
+moving_energy_bound = "boundaryMovingWindowSquareEnergy_le_localized"
+tail_energy_bound = "boundaryTailSquareEnergy_le_localized"
+localized_supplier = "SubpolynomialBoundaryLocalizedMertensSquareEnergy"
+weak_mertens_adapter = "WeakMertensToBoundaryLocalizedEnergyAdapter"
+normalization_adapter = "BoundaryLocalizedEnergyNormalizationAdapter"
+proof_classification = "EXACT_MERTENS_PREFIX_LOCALIZATION_AND_FINITE_SQUARE_ENERGY_COMPARISON"
+next_obstruction = "construct integral-to-discrete Weak Mertens localization and terminal-drop normalization"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+weak_mertens_adapter_constructed = false
+normalization_adapter_constructed = false
+quadratic_supplier_proved = false
+riemann_hypothesis_proved = false

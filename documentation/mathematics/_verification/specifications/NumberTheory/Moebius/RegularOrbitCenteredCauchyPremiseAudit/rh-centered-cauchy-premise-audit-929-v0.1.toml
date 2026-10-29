@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-cauchy-premise-audit-929-v0.1"
+owner_repository = "grwtsk/math"
+issue = 929
+parent_issue = 925
+parent_pr = 926
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_CAUCHY_PREMISE_AUDIT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredCauchyPremiseAudit"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredCauchyPremiseAudit"
+
+[source_binding]
+stacked_parent_revision = "21116a806e1e43e50af8c65368f629e2a6d294c5"
+candidate_branch = "research/rh-centered-cauchy-premise-audit-927-20261022"
+theorem_source_commit = "b138de7efc632087801c3060e0970bba26a0c30f"
+mathematical_note_commit = "0055fb0a2cbe41927bed31678b511d44ea232a99"
+
+[evidence_states]
+source_draft = true
+exact_zero_winding_reindexing_present = true
+exact_fiber_square_identity_present = true
+zero_winding_nonnegativity_present = true
+quantitative_subpolynomial_energy_present = false
+subpolynomial_energy_obligation_open = true
+circularity_established = false
+critical_energy_implication_bound = false
+rh_equivalence_claimed = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

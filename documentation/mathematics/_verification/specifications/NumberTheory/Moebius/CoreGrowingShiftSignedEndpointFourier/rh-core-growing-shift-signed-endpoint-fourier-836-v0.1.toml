@@ -1,0 +1,60 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-fourier-836-v0.1"
+owner_repository = "grwtsk/math"
+issue = 836
+parent_issue = 831
+parent_pr = 833
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointFourier"
+
+[source_binding]
+stacked_parent_revision = "24e9b6a530d9a459091296491675cd3c93bd62c6"
+candidate_branch = "research/rh-endpoint-fourier-836"
+theorem_source_commit = "1628b9db26d545b762f6e9e5bf06de1e123c62c3"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointFourier.lean"
+theorem_source_git_blob = "881fd13dc630b79289931c539bad1571e33ba319"
+mathlib_fourier_source = "Mathlib.Analysis.Fourier.ZMod"
+
+[selected_increment]
+fourier_modulus = "coreGrowingShiftEndpointFourierModulus"
+zero_padded_mobius = "coreGrowingShiftEndpointMobiusZeroPad"
+zero_padded_kernel = "coreGrowingShiftEndpointKernelZeroPad"
+fixed_prefix_slice = "coreGrowingShiftSignedEndpointBilinearSlice"
+zero_padded_slice = "coreGrowingShiftSignedEndpointZeroPaddedSlice"
+no_wrap_injectivity = "coreGrowingShiftEndpoint_natCast_injective"
+zero_padding_identity = "coreGrowingShiftSignedEndpointBilinearSlice_eq_zeroPadded"
+finite_pairing_identity = "finite_zmod_pairing_eq_dft"
+iterated_kernel_transform = "finiteZModKernelDFT2"
+two_dimensional_identity = "finite_zmod_bilinear_eq_iterated_dft"
+active_kernel_transform = "coreGrowingShiftEndpointKernelDFT2"
+frequency_slice = "coreGrowingShiftSignedEndpointFourierSlice"
+complex_frequency_packet = "coreGrowingShiftSignedEndpointFourierPacketComplex"
+real_frequency_packet = "coreGrowingShiftSignedEndpointFourierPacket"
+complex_packet_identity = "coreGrowingShiftSignedEndpointBilinearPacket_cast_eq_fourierComplex"
+imaginary_cancellation = "coreGrowingShiftSignedEndpointFourierPacketComplex_im"
+real_packet_identity = "coreGrowingShiftSignedEndpointBilinearPacket_eq_fourier"
+rh_packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointFourier"
+source = "SubpolynomialCoreGrowingShiftSignedEndpointFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointFourierPacket_iff_bilinear"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointFourierPacket"
+proof_classification = "EXACT_ZERO_PADDING_AND_ITERATED_TWO_DIMENSIONAL_DFT"
+next_obstruction = "prove signed frequency cancellation for the complete prefix-frequency packet without termwise absolute values or a positive norm"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+frequency_estimate_proved = false
+parseval_bound_proved = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

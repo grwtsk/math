@@ -1,0 +1,64 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-toeplitz-edge-fourier-867-v0.1"
+owner_repository = "grwtsk/math"
+issue = 867
+parent_issue = 848
+parent_pr = 850
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointToeplitzEdgeFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointToeplitzEdgeFourier"
+
+[source_binding]
+stacked_parent_revision = "5576c62aa169bf138564cf33fc5bba4f9aeb109e"
+candidate_branch = "research/rh-endpoint-toeplitz-edge-867"
+theorem_source_commit = "53c96ed79a7abc41ea9a9788ae1cf2d927015513"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointToeplitzEdgeFourier.lean"
+theorem_source_git_blob = "4d6b1ba58a5643cd0184b61f7e7df058a1aa3451"
+
+[selected_increment]
+difference_prefix_lower = "coreGrowingShiftEndpointDifferencePrefixLower"
+difference_prefix_upper = "coreGrowingShiftEndpointDifferencePrefixUpper"
+lower_normalization = "coreGrowingShiftEndpointAggregatePrefixLower_eq_max_left_difference"
+upper_normalization = "coreGrowingShiftEndpointAggregatePrefixUpper_eq_difference"
+generic_interval_kernel = "coreGrowingShiftEndpointDifferenceIntervalKernel"
+generic_interval_boundary = "coreGrowingShiftEndpointDifferenceIntervalBoundaryKernel"
+generic_interval_evaluation = "coreGrowingShiftEndpointDifferenceIntervalKernel_eq_boundary"
+toeplitz_bulk = "coreGrowingShiftEndpointToeplitzBulkKernel"
+left_edge_correction = "coreGrowingShiftEndpointLeftEdgeCorrectionKernel"
+left_edge_vanishes = "coreGrowingShiftEndpointLeftEdgeCorrectionKernel_eq_zero_of_le"
+interval_partition = "coreGrowingShiftEndpointDifferencePrefixSet_eq_leftEdge_union_active"
+coefficient_decomposition = "coreGrowingShiftEndpointAggregateBoundaryKernel_eq_toeplitz_sub_leftEdge"
+toeplitz_zero_pad = "coreGrowingShiftEndpointToeplitzBulkKernelZeroPad"
+edge_zero_pad = "coreGrowingShiftEndpointLeftEdgeCorrectionKernelZeroPad"
+zero_padded_decomposition = "coreGrowingShiftEndpointBoundaryKernelZeroPad_eq_toeplitz_sub_leftEdge"
+dft_subtraction = "finiteZModKernelDFT2_sub"
+frequency_kernel_decomposition = "coreGrowingShiftEndpointBoundaryKernelDFT2_eq_toeplitz_sub_leftEdge"
+signed_packet = "coreGrowingShiftSignedEndpointToeplitzEdgeFourierPacket"
+packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointToeplitzEdgeFourier"
+source_proposition = "SubpolynomialCoreGrowingShiftSignedEndpointToeplitzEdgeFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointToeplitzEdgeFourierPacket_iff_boundary"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointToeplitzEdgeFourierPacket"
+proof_classification = "EXACT_GENERIC_INTERVAL_EVALUATION_AND_SIGNED_STRICT_TOEPLITZ_MINUS_LEFT_EDGE_DFT_DECOMPOSITION"
+next_obstruction = "embed the strict Toeplitz bulk into a cyclic difference kernel with an explicit wrap correction while retaining the left-edge correction inside one signed frequency packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+generic_interval_estimate_proved = false
+toeplitz_bulk_estimate_proved = false
+left_edge_estimate_proved = false
+signed_frequency_estimate_proved = false
+circulant_embedding_constructed = false
+parseval_bound_proved = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

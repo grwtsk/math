@@ -1,0 +1,34 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-short-interval-oscillation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "a9a2253e56f7417b1c332eaa5e3c78eb96c78407"
+parent_tree = "7810740ea730faaa751cef3ba397c46dce33b216"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SHORT_INTERVAL_OSCILLATION_SUFFICES / MONOTONICITY_ONLY_LINEAR"
+
+[uniformization]
+supplier = "DyadicThetaErrorOscillationAt(rho)"
+shape = "|thetaError(2u)-thetaError(2X)| <= S*X^(2rho-1+eta/2)"
+domain = "X <= u <= 2X"
+plus_anchor_implies_shell_cancellation = true
+
+[seven_eighths]
+target_exponent = "3/4+eta/2"
+sublinear_when = "eta<1/2"
+monotonicity_bound = "(4*log(4)+2)*X"
+monotonicity_supplies_target = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SHORT_INTERVAL_OSCILLATION_SUFFICES = true
+MONOTONICITY_ONLY_LINEAR = true
+OSCILLATION_7_8_PROVED = false
+RECURRENCE_7_8_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

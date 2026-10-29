@@ -1,0 +1,143 @@
+# P0 source-pinned verification only: source-dependent certified arithmetic Markov kernel.
+schema_version = "0.1"
+request_id = "graph-sandwich-diagonal-sieve-type-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "450dbc6e466264fd6621a64e36640b0a3ce50128"
+authoring_source_commits = [
+  "72ae863d40bce614deb95ccaa60d23512280de75",
+  "dafe80e00d4a5f67624f6f36f2986a7df4725747",
+  "a38b577ddd214bd9bd14d6c76ad7acb8378f33b5",
+  "450dbc6e466264fd6621a64e36640b0a3ce50128",
+]
+graph_source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_source_blob = "ab87a72e687f61c855dd2519f91e623acf03a94b"
+k_theory_source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+k_theory_source_blob = "df0a0ca7f8ed87135724d026af4309bceb381eb6"
+grothendieck_source_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_source_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_ordered_field_source_path = "Mathlib/Algebra/Order/Field/Basic.lean"
+mathlib_ordered_field_source_blob = "f50b2c06f3020b5def59b4fb74ea6f05bd27f13e"
+mathlib_bigoperators_source_path = "Mathlib/Algebra/BigOperators/Ring/Finset.lean"
+mathlib_bigoperators_source_blob = "cdd6f7f559520a37ac4bb25734ca70c2a8bddf8c"
+mathlib_sum_pos_source_path = "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean"
+mathlib_sum_pos_source_blob = "3745e5cb7ff4b16ad6532357837698f4bf54c4a8"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "FINITE_SOURCE_DEPENDENT_SIEVE_KERNEL_PLUS_CONDITIONAL_COVERAGE_AND_COLLISION"
+issue = "https://github.com/grwtsk/math/issues/1344"
+new_general_kernel_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_zero_of_not_mem",
+]
+new_arithmetic_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalRowMass_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_edge_iff_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_positivePath_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_step_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_certified_oneStep_hit_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_certified_oneStep_complete_iff",
+]
+new_k_theory_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_diagonal_complete_and_collision",
+]
+internal_private_proof_helper = "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalBoost_pos (private; no external symbol identity asserted)"
+preserved_interfaces = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_completeAt_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+]
+graph_imports = [
+  "Mathlib",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+k_theory_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+exact_hypotheses = [
+  "Generic normalizedEdgeKernel: finite vertices; raw real edgeWeight x y >= 0 for in-scope endpoints; each in-scope source has strictly positive outgoing weight sum",
+  "Normalized generic kernel is row stochastic only on finite scope; no positive-mass claim for empty scope or analytic heat semigroup",
+  "Arithmetic diagonalEdgeWeight q source target = (if source=target then 2 else 1) * radicalCoprimeWeight q target",
+  "Arithmetic diagonalKernel: q N : Nat, hN : 1 <= N; source and target both in Finset.Icc 1 N for edge support equivalences",
+  "Positive diagonal kernel edge iff coprime target q, under in-scope source and target; this matches concrete certifiedArithmeticInventory edges",
+  "Positive finite diagonal paths certify only this arithmetic inventory; no promotion of unrelated paper-derived candidate edges",
+  "One-step positivity from any initial : Nat->Real assumes forall source in scope, 0 <= initial source AND exists positive in-scope initial source",
+  "One-step sieve type coverage iff each declared type has an in-scope coprime representative; no asymptotic density premise",
+  "Concrete KTheory comparison: [CommMonoid M], explicit lift : Nat ->* M, q=3, 1<=N, 4<=N, arbitrary nonnegative positive initial sieve weights",
+  "Bool type is whether exponent of prime 2 is exactly one; both labels occur through witnesses 2 and 4, but their radical-factored K0-shaped class collides",
+  "No actual analytic K0, KK, prime-counting, nonprincipal Dirichlet cancellation or asymptotic steering claim",
+]
+source_level_conclusions = [
+  "Source-dependent edge-weight normalization yields a finite nonnegative row-stochastic Markov kernel with zero out-of-scope target transitions",
+  "Diagonal arithmetic bias changes row weights but keeps positive transition support identical to certified coprime target support",
+  "One-step positive output at a given in-scope target iff target survives the coprimality sieve, assuming positive nonnegative initial mass",
+  "One-step certified type completeness iff every required type has an in-scope coprime witness",
+  "At modulus 3 and cutoff N>=4, both Bool prime-2 multiplicity types receive positive certified one-step mass from any nonnegative positive initial sieve input",
+  "Despite this finite type coverage, a radical-factored K0-shaped feature cannot exactly decode Bool multiplicity labels 2 versus 4",
+]
+outstanding_verification_and_bridges = [
+  "Full import-closure inventory and Lean source elaboration of three new general normalization declarations and eleven arithmetic declarations",
+  "Confirm simp_rw div_eq_mul_inv, Finset.sum_mul, normalizedEdgeKernel definitional unfolding, and rw/Finset filter tactics against exact pinned Lean",
+  "Confirm mul_pos_iff_of_pos_left, div_pos_iff_of_pos_right and finite sum positivity APIs at pinned Mathlib",
+  "Compiler elaboration of inherited graph certified inventory and KTheory radical collision chain",
+  "Fresh independent kernel acceptance and transitive axiom audit of every new theorem and downstream consumer",
+  "Construct actual graph-local heat flow or spectral gap if stronger diffusion is claimed; this kernel is dense on coprime survivors",
+  "Quantitative per-type lower bounds in cutoff N and asymptotic steering error suppression remain independent analytic suppliers",
+  "Collision does not prevent finite coverage; exact decoder obstruction does not settle asymptotic completeness",
+  "No actual execution receipts; preserve SOURCE_DRAFT status until validated",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 450dbc6e466264fd6621a64e36640b0a3ce50128 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = ab87a72e687f61c855dd2519f91e623acf03a94b && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = df0a0ca7f8ed87135724d026af4309bceb381eb6"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+graph_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+k_theory_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+graph_elaboration = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+k_theory_elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_independent_kernel = "PENDING_ACTUAL_COMPILE_AND_CHECKER_CAPABILITY_DISCOVERY"
+axiom_targets = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedEdgeKernel_transition_zero_of_not_mem",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalRowMass_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_edge_iff_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_positivePath_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_step_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_certified_oneStep_hit_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_certified_oneStep_complete_iff",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_diagonal_complete_and_collision",
+]
+transitive_axioms = "PENDING_ACTUAL_BUILD_AND_TRANSITIVE_AXIOM_CENSUS"
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0

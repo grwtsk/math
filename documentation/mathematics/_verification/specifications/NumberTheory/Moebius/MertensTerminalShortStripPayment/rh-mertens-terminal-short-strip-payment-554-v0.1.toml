@@ -1,0 +1,44 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-terminal-short-strip-payment-554-v0.1"
+owner_repository = "grwtsk/math"
+issue = 554
+parent_issue = 551
+parent_pr = 552
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensTerminalShortStripPayment"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensTerminalShortStripPayment"
+
+[source_binding]
+stacked_parent_revision = "3da1fbd6a9457feaa503737a48d138f8f7e40ce4"
+candidate_branch = "research/rh-terminal-strip-554-20261021"
+theorem_source_commit = "a7f1ceba354cfc0f8f14599597d96ff89e227195"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensTerminalShortStripPayment.lean"
+theorem_source_git_blob = "a7ab54a77dc3a87f3e1dfb3f056e7fa714c73b4e"
+
+[selected_increment]
+terminal_short_depths = "terminalShortDeepDepths"
+core_depths = "coreLongDeepDepths"
+cardinality_bound = "terminalShortDeepDepths_card_le"
+final_depth_zero = "signedAbelDepthSlice_at_final_eq_zero"
+terminal_packet = "terminalShortDeepRemainderPacket"
+core_packet = "coreLongDeepRemainderPacket"
+split_identity = "deepLongRemainder_eq_terminalShort_add_core"
+terminal_supplier = "SubpolynomialTerminalShortDeepRemainderPacket"
+terminal_supplier_value = "subpolynomialTerminalShortDeepRemainderPacket"
+core_supplier = "SubpolynomialCoreLongDeepRemainderPacket"
+core_to_deep = "subpolynomialDeepLongHarmonicRemainderPacket_of_core"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreLongDeepRemainderPacket"
+proof_classification = "DETERMINISTIC_TERMINAL_STRIP_PAYMENT_AND_CORE_ISOLATION"
+next_obstruction = "exact coefficient-weighted L1 supplier for the core long regime"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+core_supplier_proved = false
+short_interval_theorem_applied = false
+riemann_hypothesis_proved = false

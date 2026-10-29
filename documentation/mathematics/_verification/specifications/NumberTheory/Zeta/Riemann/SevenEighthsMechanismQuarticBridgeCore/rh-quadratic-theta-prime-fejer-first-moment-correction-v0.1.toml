@@ -1,0 +1,35 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-first-moment-correction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "1e6e141252907b851368b83351d0cf651575cca3"
+parent_tree = "9e6658b224d37cdc0b3502aa36f7513433a53f1c"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FIRST_MOMENT_TAIL_MODEL_CORRECTED / DISTANCE_WEIGHTED_KERNEL_BOUND_SOURCE_WRITTEN / FINITE_HARMONIC_SUMMATION_OPEN / SHARP_STEP_CONVOLUTION_COMPARISON_OPEN"
+
+[correction]
+old_budget = "unweighted sampled-kernel mass"
+new_budget = "distance-weighted first moment"
+reason = "a displacement d crosses d sharp-boundary positions"
+
+[bound]
+pointwise = "d * kappa_4X,N(d) <= X/(N*d)"
+summed_target = "(X/N) * (1 + log(2X))"
+
+[frontier]
+harmonic = "NonAliasingFejerFirstMomentHarmonicBoundClaim"
+arithmetic = "NonAliasingPrimePrefixFejerFirstMomentComparison"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FIRST_MOMENT_TAIL_MODEL_CORRECTED = true
+DISTANCE_WEIGHTED_KERNEL_BOUND_SOURCE_WRITTEN = true
+FINITE_HARMONIC_SUMMATION_PROVED = false
+SHARP_STEP_CONVOLUTION_COMPARISON_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

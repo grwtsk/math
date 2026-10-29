@@ -1,0 +1,40 @@
+# Source-pinned verification request; no execution.
+schema_version = "0.1"
+request_id = "proper-power-radical-bound-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "c3b0dbf4bd427819c4718fd9a35f56e1937b4db9"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRadicalBound.lean"
+source_blob = "ba239003cf9b2ba7cc76fde3e4b885e7923fb513"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_source_path = "Mathlib/RingTheory/Radical/NatInt.lean"
+pinned_mathlib_source_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRadicalBound.radical_le_of_ne_zero",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRadicalLog",
+ "Mathlib.RingTheory.Radical.NatInt",
+]
+exact_hypotheses = "q : Nat; q != 0"
+missing_suppliers = [
+ "Compose D(q,N) <= log(radical q) <= log q for q!=0",
+ "Combine with finite proper-power mass bound",
+ "Pinned Lean compilation, fresh kernel checking, and transitive axiom audit",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerRadicalBound.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerRadicalBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerRadicalBound.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

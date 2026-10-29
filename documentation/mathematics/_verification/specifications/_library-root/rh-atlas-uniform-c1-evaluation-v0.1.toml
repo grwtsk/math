@@ -1,0 +1,99 @@
+# Static mathematical acceptance specification, not execution authority or a receipt.
+# Prepared against 390993010763e987e61df61d8cefee2ec4ad3a26.
+# Reconciled for integration against 6d86f4b5765b9eedb99ea7ce875e23589fbd68ad.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-uniform-c1-evaluation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.UniformPairEvaluation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers only. The complete transitive import graph still needs audit.
+modules = [
+  { name = "Mathlib.Analysis.Calculus.MeanValue" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairApproximation" },
+  { name = "GRWTSK.Analysis.Complex.GaussianRationalArithmetic" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPowerEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalFiniteEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSixteenDerivativeSource" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticC1Approximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalEvaluatedPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPowerC1" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformFiniteC1" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.UniformPairEvaluation" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "source_identity"
+requirement = "Retain the existing sextic finiteModel, source H, cutoff and every endpoint correction."
+[[hostile_controls]]
+id = "positive_base"
+requirement = "Check every arithmetic base 1..N. No base zero or branch-ambiguous logarithm."
+[[hostile_controls]]
+id = "one_polynomial"
+requirement = "Use one exact rational-coefficient polynomial on the whole declared region."
+[[hostile_controls]]
+id = "one_fewer_term"
+requirement = "The derivative of the n+1 term exponential polynomial uses n terms."
+[[hostile_controls]]
+id = "log_coefficient"
+requirement = "Charge the logarithm coefficient error separately in the derivative radius."
+[[hostile_controls]]
+id = "both_guards"
+requirement = "Retain the derivative and value Taylor ratio guards and logarithm perturbation guard."
+[[hostile_controls]]
+id = "whole_domain"
+requirement = "Complex differentiability and derivative errors hold on the entire segment's convex region."
+[[hostile_controls]]
+id = "four_product_terms"
+requirement = "Retain both Dirichlet-prefactor derivative terms and both endpoint-weight derivative terms."
+[[hostile_controls]]
+id = "weight_derivative"
+requirement = "Bound W_N and W_N' independently; do not differentiate a value norm bound."
+[[hostile_controls]]
+id = "separation_uniform"
+requirement = "Evaluation secant radius is the uniform derivative radius, not endpoint error divided by |d|."
+[[hostile_controls]]
+id = "zero_displacement"
+requirement = "Reject d=0 in the divided-difference checker; do not change its totalized convention."
+[[hostile_controls]]
+id = "exact_evaluation"
+requirement = "Gaussian polynomial evaluations are exact; unchecked endpoint rounding is not admitted."
+[[hostile_controls]]
+id = "source_tail_separate"
+requirement = "Compose actual Mellin-source errors with finite-evaluation errors before squaring."
+[[hostile_controls]]
+id = "margin_not_accuracy"
+requirement = "Zero approximation error alone cannot exclude a genuine simultaneous zero pair."
+[[hostile_controls]]
+id = "mirror_predicate"
+requirement = "Reflect actual canonical zero locations; no equality of arbitrary reflected H values."
+[[hostile_controls]]
+id = "closed_successor"
+requirement = "Preserve the lower seam by consuming the independently supplied previous WindowRH."
+[[hostile_controls]]
+id = "no_grid_cover"
+requirement = "No finite set of accepted rational pairs establishes the universal region margin."
+[[hostile_controls]]
+id = "verification_boundary"
+requirement = "Finite symbolic/rational tests and blob hashes are not Lean elaboration or axiom acceptance."

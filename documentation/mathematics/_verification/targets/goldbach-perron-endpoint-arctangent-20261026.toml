@@ -1,0 +1,132 @@
+schema_version = "0.1"
+request_id = "goldbach-perron-endpoint-arctangent-20261026"
+repository = "grwtsk/math"
+branch = "main"
+mathematical_source_commit = "daa80e6bba2485ac6f858dfc4a1bd10f6ce6fc62"
+source_commit = "daa80e6bba2485ac6f858dfc4a1bd10f6ce6fc62"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+source_blob = "4f8ccdca008903e8bece8c870a666ccd95c81c5b"
+source_lines = 1050
+initial_arctangent_commit = "04e38c7661ef69630430f2042d3fa06eb4482fe4"
+initial_arctangent_blob = "1a77870494632ebe693105aa769733a96796c90c"
+helper_repair = "Expose arctan_le_self_of_nonneg publicly so its fully qualified theorem name is available to an external transitive axiom audit. No mathematics/hypotheses changed."
+parent_endpoint_commit = "3756dcc268ac5a372732f733c0845060f315c10c"
+parent_endpoint_blob = "87f11b1c2a1ae832b0eb2db4701a0de351c9eb8a"
+character_source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+character_source_blob = "520f24cea3bf2c592524ee939fe05b82b756f4dc"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_integral_path = "Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean"
+mathlib_integral_blob = "335df785f4a6b999c0836dc5a67c359f7766d56a"
+mathlib_arctan_path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Arctan.lean"
+mathlib_arctan_blob = "dc89658bb21aeb4e93311ea74956f0f08870751a"
+mathlib_bounds_path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Bounds.lean"
+mathlib_bounds_blob = "660b110661726dd7fa50c4b3118bde5e4c71a423"
+mathlib_complex_basic_path = "Mathlib/Data/Complex/Basic.lean"
+mathlib_complex_basic_blob = "05d0f1c424d5d04e267109290b2ad0ae657b6f00"
+mathlib_intervalIntegral_path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean"
+mathlib_intervalIntegral_blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+mathlib_filter_field_path = "Mathlib/Order/Filter/AtTopBot/Field.lean"
+mathlib_filter_field_blob = "4fe1a879b4d2492fde4b99b912f1f72991675096"
+upstream_paper = "OpenAI, The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8, September 30 2026"
+upstream_commit = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+upstream_path = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+upstream_blob = "46c67f4000906b1391a471d6e6396ac0da3c16a5"
+upstream_declaration = "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re"
+upstream_use = "RESEARCH_CONTEXT_ONLY_NOT_IMPORTED_NOT_ASSUMED_NOT_REPLAYED"
+priority = "P1"
+mathematical_class = "source_proof_candidates_complex_endpoint_arctangent_integral_quantitative_height_gap_and_scalar_limit"
+source_status = "SOURCE_DRAFT_NOT_RUN"
+compilation_status = "NOT_RUN"
+fresh_independent_kernel_status = "NOT_RUN"
+transitive_axiom_audit_status = "NOT_RUN"
+actual_command_exit = "NOT_RUN"
+operational_receipts = "UNAVAILABLE_NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+railway_authorized = false
+merge_authorized = false
+force_push_authorized = false
+
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection",
+ "GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.SiegelRealZeroWindow",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+ "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+ "Mathlib.NumberTheory.LSeries.Deriv",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+ "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+ "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+ "Mathlib.Order.Filter.AtTopBot.Field",
+ "Mathlib.Tactic"
+]
+new_fully_qualified_theorems = [
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.continuous_finitePerronEndpointKernelIntegrand",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.integral_finitePerronEndpointKernel_eq_two_arctan",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronEndpointKernel_eq_arctan",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.half_sub_finitePerronEndpointKernel_eq",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_finitePerronEndpointKernel_sub_half_eq",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.arctan_le_self_of_nonneg",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_finitePerronEndpointKernel_sub_half_le",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_finitePerron_endpoint_defect_le_height",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_finitePerronHeightDefect_le_height",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.tendsto_finitePerronEndpointKernel_atTop"
+]
+exact_hypotheses = "For the scalar kernel integral and arctangent identity σ : Real, T : Real and hσ : 0 < σ, no T>=0 restriction because integral (-T)..T is oriented. For exact half-gap, gap rate and propagated norm bounds add hT : 0 < T. For coefficient-level corollaries add q N : Nat, χ : DirichletCharacter C q, hσ : 1 < σ, hN : 3 <= N. For atTop convergence retain σ>0. No hSeven, NeZero q, character primitiveness, analytic explicit formula or global prime error is assumed."
+normalization = "finitePerronEndpointKernel σ T = ((2*pi:Real):Complex)^(-1) * ∫_{-T}^T ((1:Complex)/((σ,t):Complex)) dt. The normalizing scalar reflects the real-parameter upward contour; complex curve-integral equivalence remains unproved."
+exact_unscaled_integral = "∫_{-T}^T ((1:Complex)/(σ+i*t)) dt = ((2*Real.arctan(T/σ):Real):Complex), for 0<σ, arbitrary oriented real T."
+exact_scalar_kernel = "finitePerronEndpointKernel σ T = (((Real.arctan(T/σ)/Real.pi):Real):Complex)."
+exact_half_gap = "(1/2:Complex) - finitePerronEndpointKernel σ T = (((Real.arctan(σ/T)/Real.pi):Real):Complex), for σ,T>0."
+exact_gap_norm = "norm(K(σ,T) - 1/2) = Real.arctan(σ/T)/Real.pi for σ,T>0."
+effective_rate = "norm(K(σ,T)-1/2) <= (σ/T)/Real.pi for σ,T>0, algebraically σ/(Real.pi*T)."
+coefficient_rate = "norm(finitePerronTermIntegral(q,N,N,χ,σ,T) - a_N/2) <= norm(a_N)*((σ/T)/Real.pi), for 1<σ,N>=3,T>0."
+total_defect_bound = "norm(finitePerronHeightDefect q N χ σ T) <= ∑_{n<N} norm(finitePerronTermIntegral(q,N,n,χ,σ,T)-a_n) + norm(a_N)*((σ/T)/Real.pi)."
+scalar_limit = "Filter.Tendsto (finitePerronEndpointKernel σ) Filter.atTop (nhds (1/2:Complex)), when σ>0. No limit asserted for full finitePerronHeightDefect or global prime-weighted sum."
+imported_mathlib_methods = [
+ "intervalIntegral.integral_div_sq_add_sq",
+ "intervalIntegral.intervalIntegral_re",
+ "intervalIntegral.intervalIntegral_im",
+ "intervalIntegral.integral_comp_neg",
+ "intervalIntegral.integral_neg",
+ "intervalIntegral.integral_congr",
+ "Complex.div_re",
+ "Complex.div_im",
+ "Complex.normSq_apply",
+ "Complex.norm_real",
+ "Real.arctan_neg",
+ "Real.arctan_inv_of_pos",
+ "Real.le_tan",
+ "Real.tan_arctan",
+ "Real.tendsto_arctan_atTop",
+ "Filter.tendsto_div_const_atTop_of_pos",
+ "tendsto_nhds_of_tendsto_nhdsWithin"
+]
+source_review_risks = [
+ "Check elaboration of namespace intervalIntegral.intervalIntegral_re and intervalIntegral.intervalIntegral_im against pinned API.",
+ "Check Complex real/imag denominator simplification including normSq and orientation for T<0.",
+ "Check field_simp and exact_mod_cast on real-to-complex half gap and pi normalization.",
+ "Check Real.le_tan arctangent bound under pinned Mathlib (no assumed newer Real.arctan_le_self lemma).",
+ "Check filter Tendsto division and continuous real-to-complex cast in atTop limit.",
+ "Check all transitive imported source compilation before claiming kernel validity."
+]
+missing_suppliers = [
+ "A quantitative off-endpoint finite Perron kernel bound that retains distances |log(N/n)|, N,n, σ and T; near-integer terms require explicit loss.",
+ "A rigorous FULL L-series right contour integral = finite polynomial integral + normalized right-tail integral, and actual error estimate.",
+ "Orientation-preserving complex contour curve-integral parameterization, cutoff endpoint and inversion limits.",
+ "Horizontal and left contour shift bounds with nontrivial/trivial zero and gamma residues, conductor/q/T uniformity.",
+ "Proved/replayed seven-eighths zero-free source if used, zero-packet completeness and reciprocal zero mass bound, separate global ψ(N)-N supplier.",
+ "Actual pinned Lean compilation, fresh independent kernel and complete transitive axiom audit."
+]
+nonclaims = "An arctangent identity for the scalar endpoint does NOT prove convergence of the total finitePerronHeightDefect, an infinite-series Perron inversion, prime density improvements, RH, GRH, Siegel-zero exclusion or Navier-Stokes statements."
+
+[checks]
+pin_commit = "test \"$(git rev-parse HEAD)\" = daa80e6bba2485ac6f858dfc4a1bd10f6ce6fc62"
+pin_source_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = 4f8ccdca008903e8bece8c870a666ccd95c81c5b"
+pin_character_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean)\" = 520f24cea3bf2c592524ee939fe05b82b756f4dc"
+compile_import = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution"
+source_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+fresh_kernel = "REQUIRES_SUPPORTED_INDEPENDENT_CHECKER; NOT_RUN"
+axiom_audit = "#check / #print / #print axioms on all ten new fully qualified public theorems and actual transitive source suppliers, via an EXTERNAL temporary Lean import file, including imported finitePerronEndpointKernel definitions and character L-series source. NOT_RUN."
+expected = "Actual source-bound compiler exits with all 10 public new theorems accepted; no sorry/admit/axioms; fresh independent kernel acceptance; transitive axiom inventory and complete dependency blob hashes; preserve exact hypotheses and issue pins."
+receipts_location = "grwtsk/noeaaeue only after separately authorized execution. Do not keep executable runner state or receipts under grwtsk/math."

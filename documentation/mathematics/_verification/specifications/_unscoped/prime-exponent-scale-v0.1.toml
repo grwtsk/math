@@ -1,0 +1,198 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "moment-prime-scale-02-v0.1"
+owner_issue = 467
+repository = "grwtsk/math"
+base_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+base_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+branch = "research/467-prime-exponent-scale-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+pnt_used = false
+rh_claimed = false
+public_root_modified = false
+
+required_declarations = [
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.PrimeIndex",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.PrimeExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeCoordinate",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeCoordinate_apply",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeProjector",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeProjector_apply",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeCoordinate_projector_same",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeCoordinate_projector_ne",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeProjector_idempotent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeProjector_orthogonal",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.finite_prime_projector_reconstruction",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeLogHom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.logRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.logRealization_single",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_pos",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_ne_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_add",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_neg",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.padicValRat_prime_zpow",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.padicValRat_rationalRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_injective",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalUnits",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.PositiveRationalScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalValue",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalValue_pos",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponentToPositiveRational",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponentToPositiveRational_value",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.natPrimeExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.natPrimeExponent_apply",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_natPrimeExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.rationalRealization_positiveRationalExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.valuationCoordinates",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.valuationCoordinates_exponentToPositiveRational",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponentToPositiveRational_valuationCoordinates",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalPrimeExponentEquiv",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.valuationCoordinates_apply",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.logRealization_eq_log_rationalRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.logRealization_injective",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.arithmeticLogScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.ArithmeticLogScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponentToScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponentToScale_coe",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.arithmeticLogScale_existsUniqueExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponentEquivScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeCoordinate",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeCoordinate_exponentToScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeSection",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeCoordinate_section",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeProjector",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeProjector_idempotent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeProjector_orthogonal",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.finite_scale_projector_reconstruction",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.radialPrimePower",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.radialRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.radialRealization_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.radialRealization_add",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.radialRealization_exponentToScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.padicValRat_radialRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.finitePadicNormProduct",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponent_product_formula",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.exponent_log_product_formula",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeLineEquiv",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalLogScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalLogScale_coordinate",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.positiveRationalLogScale_value",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneValue",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneValue_pos",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneValue_ne_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOnePositiveRational",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOnePositiveRational_value",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.padicValRat_prime_pow_add_one",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOne_valuation",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneLogScale",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneLogScale_coordinate",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneLogScale_tendsto_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.nearOneCoordinate_not_tendsto_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.scalePrimeCoordinate_not_continuous",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.realAddHom_to_int_eq_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.no_real_additive_extension_of_primeCoordinate",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.realLogCombination",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeTwo",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.primeThree",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.realScalarKernelVector",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.realScalarKernelVector_ne_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.realLogCombination_kernelVector",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.realLogCombination_not_injective",
+  "GRWTSK.Geometry.ThreePlusOne.TrianglePhase",
+  "GRWTSK.Geometry.ThreePlusOne.DynamicWitnessChannel",
+  "GRWTSK.Geometry.ThreePlusOne.DynamicWitnessChannel.Total",
+  "GRWTSK.Geometry.ThreePlusOne.StagedDynamicWitnessChannel",
+  "GRWTSK.Geometry.ThreePlusOne.VaryingWitnessSize",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.primeFive",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.twelveFifthsExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.twelveFifthsExponent_two",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.twelveFifthsExponent_three",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.twelveFifthsExponent_five",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.twelveFifths_rationalRealization",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.twelveFifths_projector_reconstruction",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.two_after_three_projector_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.nearOne_two_coordinate_four",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.two_coordinate_not_continuous",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.scalar_extension_kernel_control",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.varyingWitnessChannel",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.varyingWitnessChannel_has_varying_size",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.triangle_phase_card",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale.Checks.triangle_phase_not_equiv_fin_four",
+  "GRWTSK.Geometry.ThreePlusOne.DynamicWitnessChannel.mk",
+  "GRWTSK.Geometry.ThreePlusOne.DynamicWitnessChannel.WitnessIndex",
+  "GRWTSK.Geometry.ThreePlusOne.DynamicWitnessChannel.finiteWitness",
+  "GRWTSK.Geometry.ThreePlusOne.StagedDynamicWitnessChannel.mk",
+  "GRWTSK.Geometry.ThreePlusOne.StagedDynamicWitnessChannel.WitnessIndex",
+  "GRWTSK.Geometry.ThreePlusOne.StagedDynamicWitnessChannel.finiteWitness",
+  "GRWTSK.Geometry.ThreePlusOne.StagedDynamicWitnessChannel.stabilize",
+]
+
+controls = [
+  "12/5 reconstructs as exponents 2 at 2, 1 at 3, and -1 at 5",
+  "distinct prime projectors have zero cross-coordinate",
+  "near-one real logarithms retain unbounded negative p-adic coordinates",
+  "prime coordinate is not Euclidean-continuous",
+  "real scalar extension has a nonzero explicit kernel vector",
+  "dynamic witness fibers can have unequal finite cardinalities",
+  "triangle phase index has cardinal three and is not equivalent to Fin 4",
+]
+
+obligations = [
+  "elaborate every required declaration under the pinned Lean and Mathlib revisions",
+  "repair any source-draft API or tactic mismatch without changing theorem scope",
+  "audit all transitive axioms and reject sorryAx or unreported native dependencies",
+  "independently replay the isolated root and hostile controls",
+  "retain the algebraic versus Euclidean-topological distinction",
+  "retain the radial-value-group versus full p-adic-unit distinction",
+  "formalize the prime-power atom module before any explicit-formula or Weil consumer",
+]
+
+nonclaims = [
+  "no prime number theorem or prime-distribution estimate",
+  "no Euler-product convergence theorem",
+  "no full p-adic, Dirichlet, Hecke, or OpenAI mechanism equivalence",
+  "no topology-preserving Archimedean to p-adic isomorphism",
+  "no prime-power explicit-formula source module",
+  "no dynamically sized witness construction beyond its shape boundary",
+  "no quadratic or Weil-form comparison",
+  "no zero-free-region improvement or Riemann Hypothesis proof",
+]
+
+[[module]]
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimeExponentScale.lean"
+# Original pre-repair blob = "003064b04ab593fbef88f72df0164698dcbd858a".
+blob = "9d6bad6b4b6ceb9b4668be4efedf65c35e7a543a"
+
+[[module]]
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimeExponentScaleTopology.lean"
+# Original pre-repair blob = "83405f187b0a9044492c4f45a1ed825956761e88".
+blob = "90276482933042c86fee3bf5198ae8838ad829a6"
+
+[[module]]
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/Checks/PrimeExponentScaleControls.lean"
+# Original pre-repair blob = "ae72b1b065708e791ee1091e66f91c8fbb0cc4eb".
+blob = "8ce862fb2134a7b7dd57f49af12ca3f8bb17041d"
+
+[[module]]
+path = "GRWTSK/Interfaces/PrimeExponentScaleCore.lean"
+blob = "d961ee53aacec087925a6ca2aee2cc4b61dc66da"
+
+[[document]]
+path = "docs/mathematics/NumberTheory/ArithmeticFunctions/prime-exponent-scale.md"
+# Original pre-repair blob = "9144b7467a27bd119bcbe665e69d58c87fffa78e".
+blob = "038239e15940d827527f3392ffaf2ebb5df7d2da"
+
+[[module]]
+path = "GRWTSK/Geometry/ThreePlusOne/DynamicWitnessChannel.lean"
+blob = "3616667e26094c1a122e04f2b7ab9e092cdc6dcf"

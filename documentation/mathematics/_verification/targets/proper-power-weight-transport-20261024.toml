@@ -1,0 +1,41 @@
+# Queued source-pinned verification. No execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-weight-transport-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "adf5b4602f2b7db02ebaa7d020823e1e3248cc57"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerWeightTransport.lean"
+source_blob = "aa95e56b4c812b0cec0f68d82cd9a0c06deb8de6"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerWeightTransport.originalWeight",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerWeightTransport.rectangularWeight",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerWeightTransport.weight_toOriginal",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerWeightTransport.weight_toRectangular",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerIndexEquiv",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Normalize original dependent finite sum into sum over OriginalIndex",
+ "Transport finite sums via indexEquiv",
+ "Identify rectangular supported-index sum with rectangularProperPowerMass",
+ "Discharge nonunit prime-power support and logarithmic exponent estimate",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerWeightTransport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerWeightTransport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerWeightTransport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom audit source>"
