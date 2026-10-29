@@ -1422944,6 +1422944,25 @@
       "target_sha256": "4caf877fe885f63efb94233156fa2517a1e2d6a34a3731a3bf12f60d78e52355",
       "target_git_blob": "4328d6004902b8da7a007559fd3a36b8e6dc37e0",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/GroupTheoryAndGeneralizations/Foundations/AxiomaticsAndElementaryPropertiesOfGroups/EulerComplexActions.lean",
+      "path": "GRWTSK/GroupTheoryAndGeneralizations/Foundations/AxiomaticsAndElementaryPropertiesOfGroups/EulerComplexActions.lean",
+      "source_sha256": "0a850854127e2bba6890a7a46192b8a402c0de7b1bca5b17b3338f9a9173dbed",
+      "input_blob": "b014a41a9482d3cb47cb3dc467d2510216c06f5d",
+      "source_kind": "lean_source",
+      "msc_code": "20A05",
+      "msc_label": "Axiomatics and elementary properties of groups",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Literal faithful translation and nonzero complex multiplication actions, polar action decomposition and exponential character normalization",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "b014a41a9482d3cb47cb3dc467d2510216c06f5d",
+      "target_sha256": "0a850854127e2bba6890a7a46192b8a402c0de7b1bca5b17b3338f9a9173dbed",
+      "target_git_blob": "b014a41a9482d3cb47cb3dc467d2510216c06f5d",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
