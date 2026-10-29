@@ -1,6 +1,6 @@
 # OpenAI (2026): Ramare and bilinear-window neighborhood of the signed Abel path
 
-Local contribution: grwtsk. Preserve upstream authorship and licenses. This is a source-informed mathematical specialization, not a claim of historical influence from a coincident idea.
+Local attribution: grwtsk contributors. Preserve upstream authorship and licenses. This is a source-informed mathematical specialization, not a claim of historical influence from a coincident idea.
 
 ## Paper and immutable upstream source
 
@@ -54,7 +54,7 @@ All final mathematical leaves coexist at `grwtsk/math@7b863b2ea52083f4c21f454ac5
    - `GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_bilinear_comparison`
    - `GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_phase_input_comparison`.
 
-The passive TOML under `docs/verification/NumberTheory/Moebius/MertensSignedAbelBilinearSynthesis/ramare-bilinear-v0.1.toml` contains all 53 fully qualified public declarations: 13 definitions and 40 theorem scripts. These are lexical counts, not elaborated declaration acceptance.
+The passive TOML under `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/MertensSignedAbelBilinearSynthesis/ramare-bilinear-v0.1.toml` contains all 53 fully qualified public declarations: 13 definitions and 40 theorem scripts. These are lexical counts, not elaborated declaration acceptance.
 
 ## Classification and verification
 
@@ -66,7 +66,7 @@ The passive TOML under `docs/verification/NumberTheory/Moebius/MertensSignedAbel
 - Analogies: use of the same bilinear framework suggests where to apply the external sieve theorem. No transport of its analytic conclusion has yet been proved in a shared environment.
 - Unresolved premises: elaboration and full local dependency closure; source-matched independent kernel and transitive axiom checks; upstream admission and cross-version compatibility; all major-arc and minor-arc losses; actual small reconstruction error and synthesis mass; signed unsifted/repeated-prime control; final all-positive-exponent growth bound.
 
-Local environment: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Upstream environment: Lean `v4.34.1`, Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. No migration or analytic import was made.
+Historical local environment at the source pins above: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`; the upstream environment was Lean `v4.34.1`, Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. No migration or analytic import was made by that historical increment. The current root/provider baseline is now Lean `v4.34.1` with that upstream Mathlib revision. Version alignment does not establish fresh compilation, kernel replay or analytic admission for these historical sources.
 
 Requested commands, all NOT_RUN with exit UNAVAILABLE and receipt NONE:
 
@@ -81,7 +81,7 @@ lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/Merten
 
 Fresh external checker replay and printing all theorem axiom closures are separately NOT_RUN; the source elaboration commands above are not a substitute. Effectful runners and immutable receipts belong in grwtsk/noeaaeue, outside math, bound to the final source commit. No new remote execution authorization or dispatch is implied.
 
-Documentation integration limit: this complete provenance entry is a supplement. Insertion of its link and the preceding ordinary-correlation supplement into the existing central `paper-to-formalization-references.md` is still PENDING; that file was not replaced or truncated. This is not claimed as completed central-index maintenance.
+Documentation reconciliation: this supplement and the preceding ordinary-correlation supplement are now linked with their exact historical sources and mathematical limitations in the [canonical paper ledger](paper-to-formalization-references.md#openai-adapter-reconciliation). Existing entries are preserved. This completes the reference-index linkage, not compilation, independent kernel replay, transitive axiom audit or any missing analytic bridge.
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=89600abe1430cc1069230f254145777714701f10674e2a9519c544d77900bf21 -->
 

@@ -67,10 +67,11 @@ each source.
 Compilation, fresh independent kernel replay, transitive axiom audit, and
 comparator execution: `NOT_RUN`. The exact verification targets are documented
 in [README.md](README.md); actual operational receipts belong outside math.
-The historical central reference index is
-`docs/reference/literature/reading-background/paper-to-formalization-references.md`;
-this provider map supplies the exact adapter references without restoring or
-overwriting concurrently removed documentation.
+The canonical [paper-to-formalization ledger](../../documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#openai-adapter-reconciliation)
+now reconciles these adapter references and the two signed-Abel neighborhood
+supplements. This provider map supplements that current ledger. Historical source
+pins and verification statuses remain unchanged; the earlier removed-ledger
+workaround is retired.
 
 ## Collection-wide upstream source references
 

@@ -68,3 +68,15 @@ not independent replay or mathematical admission.
 
 Verification request: [grwtsk/math#1392](https://github.com/grwtsk/math/issues/1392).
 No workflow dispatch is implied by the package or this document.
+
+## Canonical paper references and weighted-budget consumer
+
+Use the [canonical paper ledger](../../documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#openai-adapter-reconciliation)
+for the two derived adapter papers, their signed-Abel neighborhood supplements,
+and the source-exact weighted residual consumer. The local bridge is in
+`GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean` at math `c60c5243f18ee2473a898f1afe37890abe37964d`; it charges the actual kernel-weighted
+error budget while retaining the boundary cost and signed model. Its three new
+theorems remain source proof candidates, with compilation, fresh independent
+kernel checking and complete axiom auditing `NOT_RUN`. The static verification
+target is [`openai-weighted-residual-budget-20261028.toml`](../../documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-residual-budget-20261028.toml).
+Collection re-exports remain distinct from these mathematical bridge obligations.
