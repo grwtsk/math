@@ -1,5 +1,81 @@
 # Paper-to-formalization references
 
+## RH far-mask commutator connections: Chowla, Duffin--Schaeffer, and Carleson (2026-10-29)
+
+Local attribution: grwtsk contributors. This entry records three literature connections
+to the source proof candidate at math `1198aa95fee7aa38718faf8ac8e633a75ef8ffb0`,
+module
+`GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMaskCommutator.lean`,
+blob `80651cb82e9a9256a61a2721aae07cfc2abc10b6`.
+The local mathematics does not import any theorem from these works. Their role is
+ANALOGY / RESEARCH GUIDANCE only; no historical influence is inferred.
+
+- **Terence Tao, _The logarithmically averaged Chowla and Elliott conjectures for
+  two-point correlations_ (2015), arXiv:1509.05422.**
+  Stable source: https://arxiv.org/abs/1509.05422 .
+  The paper proves logarithmically averaged two-point correlation results using,
+  among other inputs, multiplicativity at small primes and an entropy decrement
+  argument. The local formal connection is only the exact finite fresh-prime-family
+  surface
+  `GRWTSK.NumberTheory.Moebius.PickupRoughFarMaskCommutator.farNegative_primeFamily_total`.
+  This theorem preserves the complete signed source while allowing the transported
+  main, cutoff and divisor-mask sectors to vary with the prime. No entropy,
+  mutual-information, short-interval, concentration, or scale-selection theorem
+  has been transferred. Such an estimate remains an unresolved premise.
+
+- **Dimitris Koukoulopoulos and James Maynard, _On the Duffin-Schaeffer conjecture_
+  (Annals of Mathematics 192 (2020), 251--307),
+  DOI 10.4007/annals.2020.192.1.5.**
+  Stable source: https://doi.org/10.4007/annals.2020.192.1.5 .
+  The paper uses weighted arithmetic overlap analysis together with compression,
+  density increment and graph-theoretic structure. The local formal connection is
+  only
+  `GRWTSK.NumberTheory.Moebius.PickupRoughFarMaskCommutator.divisorMaskCommutator`
+  and its exact vanishing theorem
+  `divisorMaskCommutator_eq_zero_of_weight_stable`: the moved source
+  `pairWeight` differences are now isolated without dropping divisor counts or
+  cutoffs. No identification with the Duffin--Schaeffer overlap graph and no
+  compression/density-increment inequality is proved locally.
+
+- **Lars Becker, María Inés de Frutos-Fernández, Leo Diedering, Floris van Doorn,
+  Sébastien Gouëzel, Evgenia Karunus, Edward van de Meent, Pietro Monticone,
+  Jasper Mulder-Sohn, Jim Portegies, Joris Roos, Michael Rothgang, James Sundstrom,
+  Jeremy Tan, _Formalizing Carleson's Theorem in Lean_ (2026), arXiv:2609.31334.**
+  Stable source: https://arxiv.org/abs/2609.31334 .
+  The paper documents a Lean formalization of Carleson's theorem with substantial
+  localization and scale-sensitive analytic infrastructure. The local formal
+  connection is only the exact selector-change object
+  `GRWTSK.NumberTheory.Moebius.PickupRoughFarMaskCommutator.cutoffCommutator`
+  and its stability vanishing theorem
+  `cutoffCommutator_eq_zero_of_indicator_stable`. No Carleson operator, tile
+  estimate, exceptional-set estimate, or theorem from that development is imported.
+
+- **Exact local statements and hypotheses.** The complete frozen far mask is
+  factored as a geometric real indicator times the existing `pairWeight`.
+  `maskCommutator_eq_cutoff_add_divisor` is a pointwise exact identity for all
+  natural parameters and real kernels. For the actual block Gram,
+  `fourDifference_actual_farKernel_components` requires the existing primality
+  hypotheses for the stage list and inserted prime plus positive source indices.
+  `farNegative_eq_transport_components` additionally requires the inserted prime
+  to be fresh from the stage list. `farNegative_primeFamily_total` requires every
+  member of the finite prime family to be prime and fresh. All original closed
+  cutoffs, strict far inequalities, rough-Möbius signs and pair weights remain.
+- **Evidence roles.** Imported mathematics: existing GRWTSK/Mathlib source only;
+  none from the three papers. Kernel-verified bridges: none claimed. Source proof
+  candidates: all declarations above. Conditional interfaces: none hiding a
+  cancellation estimate. Finite evidence: none promoted to an asymptotic claim.
+  Analogies: exactly the three literature mappings above. Unresolved premises:
+  source elaboration, fresh kernel replay, transitive axiom audit, expected
+  interfaces, a quantitative bound for the cutoff sector, a quantitative bound for
+  the divisor-mask sector, and any valid prime-averaging/entropy/compression bridge.
+- **Verification.** Requested source-bound commands are
+  `lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMaskCommutator`
+  and
+  `lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMaskCommutator.lean`.
+  Compilation NOT_RUN; fresh kernel replay NOT_RUN; transitive axiom audit NOT_RUN;
+  expected-interface check NOT_RUN. Track the exact source in
+  https://github.com/grwtsk/math/issues/1471 .
+
 ## Numberphile: cube module checked; expected-type harness repair pending (2026-10-29)
 
 Local attribution: grwtsk contributors. At math
