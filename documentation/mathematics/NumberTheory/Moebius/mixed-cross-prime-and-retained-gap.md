@@ -164,6 +164,29 @@ and transitive axiom audit remain NOT_RUN. The split is a finite signed
 identity and supplies no stronger bound on LL, its remainder, the full
 moment, the signed bulk or RH.
 
+### Combined four-term d=1 identity, including the empty horizon
+
+The theorem
+`dOneFiber_eq_shortShort_add_mixed_add_unit_add_offDiagonal` combines the
+existing full fiber identity and the exact LL split without new arithmetic
+or analytic assumptions. For every P,N,L,G it states
+
+ dOneFiber = shortShortCoprime + mixedCoprime
+   + (if 1<=N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0)
+   + longLongOffDiagonal.
+
+The corollary with suffix `_of_one_le` assumes exactly 1<=N and retains the
+long unit square without a conditional. `dOneFiber_zero_components` states
+explicitly that at N=0 the source fiber, SS, mixed, LL and off-diagonal LL
+are all zero. The conditional unit contribution is then zero as well; no
+unit term is inserted into the empty inventories. Both mixed orientations,
+both off-diagonal LL orientations, all original masks, both denominators,
+closed cutoffs and the frozen source parameters remain unchanged.
+All three new theorem scripts are SOURCE_PROOF_CANDIDATE. Compilation,
+fresh kernel replay and transitive axiom audit: NOT_RUN. This is an exact
+signed source identity, not a stronger estimate for any sector, remainder,
+full moment, mean, signed bulk or RH.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
