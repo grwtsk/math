@@ -16,6 +16,18 @@ This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
 
 [**From research signal to structural intelligence**](documentation/mathematics/_support/reference/structural-intelligence.md): a source-backed formalization, human and AI guidance, and reusable worker skills for choosing the next mathematical move.
 
+## Quiet steering, now a public collection
+
+*The contributors' account of the work behind this collection.*
+
+**Our work began before the modern generative-AI era, and it has continued quietly across a wide range of platforms.** We have worked to steer algorithms through human direction: the questions we choose, the material we bring into view, the connections we pursue, and the corrections we return. As contemporary AI systems emerged, this practice extended to **systems from OpenAI and Anthropic, Google's Gemini, and other models and algorithms**. The platforms have changed; the effort to turn accumulated research into useful direction has remained.
+
+**We see substantial overlap between our research and directions reflected in breakthroughs from these organizations. That overlap is a central reason we are working to organize and release our entire collection.** We want the accumulated work to be available as a connected body of research, not only as scattered interactions or isolated results. Releasing it makes the ideas accessible for comparison, criticism, formalization, and further discovery.
+
+The public repository is one part of that larger undertaking, not a claim that the whole collection is already published. As the collection is organized for release, its mathematics belongs in the existing subject taxonomy, linked to the constructions, questions, and intermediate results it connects. Nonmathematical material and operational tooling retain their appropriate repository boundaries. Local contributions remain attributed to **grwtsk contributors**, acknowledging the unknown masses behind the shared inheritance while preserving identifiable upstream credit.
+
+**The next step is not merely to describe the history, but to make the collection usable.** Query the source, develop the mathematics, submit the formalizations back into `grwtsk/math` under its taxonomy, and let subsequent work begin from the strengthened collection.
+
 ## Knowledge populated en masse, made durable
 
 The project's argument for AI advancement begins with knowledge populated **en masse**: the accumulated work of people who discover, teach, explain, translate, implement, question, correct, and preserve ideas. The visible author of a result is not the whole human inheritance that makes it possible. Alongside identifiable sources stand the **unknown masses** whose contributions cannot be individually reconstructed from the work that follows.
