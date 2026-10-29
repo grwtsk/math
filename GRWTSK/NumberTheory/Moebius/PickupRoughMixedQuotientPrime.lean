@@ -908,6 +908,81 @@ theorem coprime_same_sector_triangle_zero_components
   simp [shortShortCoprime, longLongCoprime,
     shortShortUpperTriangle, longLongUpperTriangle]
 
+/-- One complete coprime SL orientation, with the original arithmetic factors. -/
+def shortLongCoprime (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 then
+      rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- The opposite complete coprime LS orientation, on the same closed inventory. -/
+def longShortCoprime (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 then
+      rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- The full square inventory is invariant under quotient exchange. This
+exchanges SL and LS, including all source masks and both denominator factors. -/
+theorem shortLongCoprime_eq_longShortCoprime
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortLongCoprime P N L G = longShortCoprime P N L G := by
+  unfold shortLongCoprime longShortCoprime
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro q _
+  apply Finset.sum_congr rfl
+  intro r _
+  rw [Nat.gcd_comm r q]
+  by_cases h : Nat.gcd q r = 1
+  · simp only [if_pos h]
+    congr 1 <;> ring
+  · simp [h]
+
+/-- The existing complete mixed term is exactly the sum of its two literal
+orientations, before any quotient ordering, absolute value or centering. -/
+theorem mixedCoprime_eq_shortLong_add_longShort
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G = shortLongCoprime P N L G + longShortCoprime P N L G := by
+  rw [mixedCoprime_eq_d_one_mixed_fiber]
+  unfold shortLongCoprime longShortCoprime
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro q _
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases h : Nat.gcd q r = 1
+  · simp only [if_pos h]
+    ring
+  · simp [h]
+
+/-- A complete SL orientation is the sum of BOTH strict triangle orientations.
+Their equality as separate triangle sums is neither assumed nor asserted. -/
+theorem shortLongCoprime_eq_upperTriangles
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortLongCoprime P N L G =
+      shortLongUpperTriangle P N L G + longShortUpperTriangle P N L G := by
+  have hsum := mixedCoprime_eq_shortLong_add_longShort P N L G
+  have hsymm := shortLongCoprime_eq_longShortCoprime P N L G
+  have hfold := mixedCoprime_eq_two_mul_upperTriangles P N L G
+  linarith
+
+/-- The complete LS orientation has the same two-triangle source sum. -/
+theorem longShortCoprime_eq_upperTriangles
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    longShortCoprime P N L G =
+      shortLongUpperTriangle P N L G + longShortUpperTriangle P N L G := by
+  rw [← shortLongCoprime_eq_longShortCoprime, shortLongCoprime_eq_upperTriangles]
+
+/-- All complete mixed orientations and both strict triangles are empty at N=0. -/
+theorem coprime_mixed_orientation_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortLongCoprime P 0 L G = 0 ∧ longShortCoprime P 0 L G = 0 ∧
+      shortLongUpperTriangle P 0 L G = 0 ∧ longShortUpperTriangle P 0 L G = 0 := by
+  simp [shortLongCoprime, longShortCoprime,
+    shortLongUpperTriangle, longShortUpperTriangle]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
