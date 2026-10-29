@@ -1,0 +1,178 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "observed_date": "2026-10-29",
+  "selection_basis": "Mathematical fit and primary repository source inspection; not an exhaustive ranking or proof acceptance",
+  "repositories": [
+    {
+      "repository": "teorth/pfr",
+      "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+      "toolchain": "leanprover/lean4:v4.36.0-rc2",
+      "root_source_sha256": {
+        "README.md": "5ee3cedcb1c39339486f1005bd9d373e170c26c0e61f2122211c4d569264242e",
+        "lean-toolchain": "414acabc0b69c985a83eb7015af2317f0df08f7513779d512945456f8eedfdd9",
+        "lakefile.toml": "dac0dbb7af4678e63d631659fd3c54e54a694e4b5574f367ab1f49d9047fbd85",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "priority": "HIGH",
+      "intended_consumer": "Entropy and small-doubling/additive-combinatorics consumers",
+      "missing_bridge": "Select exact finite-group hypotheses and constants; connect local entropy/group objects, avoid replacing them by analogy.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "AlexKontorovich/PrimeNumberTheoremAnd",
+      "commit": "127b50e33f6033e2147921167a117af96d9ba4ea",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "root_source_sha256": {
+        "README.md": "f68299970c21882c29f0fe830b84631644b48a0c148509ec28a470ac15e9b432",
+        "lean-toolchain": "ead308ab4fc749eb2389819903fd7baa11bf06e490827f6896a8cbfe622fa703",
+        "lakefile.toml": "adf5b3689146e8e2c410904819af2c010b67ad603407ef8eb4c139e9b8a4217c",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "priority": "HIGH",
+      "intended_consumer": "Prime counting, explicit formula and local arithmetic-error consumers",
+      "missing_bridge": "Select proved endpoints and exact normalization/error constants; distinguish pending blueprint nodes.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "teorth/IEANTN",
+      "commit": "ec66e388e6e117c6881367f38665f310edf7cacf",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "root_source_sha256": {
+        "README.md": "83c2117341bc7e013316d9536a91bb216d45e727be8c60db9980f9ae0d087f46",
+        "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+        "lakefile.toml": "781e7748852484c623e5ae20d1bdcb19bd52a73707f133dfb937b61fccb6062d",
+        "LICENSE": "2a76e6fa845ae725005cd40915392f13bac2408fdcfaa3e6cd92ed64c6f284bf"
+      },
+      "priority": "HIGH_SELECTIVE",
+      "intended_consumer": "Explicit analytic number-theory dependency interfaces",
+      "missing_bridge": "Its claim graph tracks varying evidence roles. Admit only exact proved declarations; finite numerical or literature claims are not all kernel proofs.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "fpvandoorn/carleson",
+      "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+      "toolchain": "leanprover/lean4:v4.36.0-rc1",
+      "root_source_sha256": {
+        "README.md": "eca41c7ca1cb4a9a3fab8068f579c4918c638f0f36590882940b0345fbb5e762",
+        "lean-toolchain": "964acf49a540b2fbb4d25edc186eb68236afd8020473dfad7ccb08dc6ffa1d66",
+        "lakefile.toml": "5ebc5b81c64bcc7472e456afa4703794ec392f69cfc8d13bb3f0685afd972d53",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "priority": "HIGH",
+      "intended_consumer": "Harmonic-analysis and almost-everywhere convergence consumers",
+      "missing_bridge": "Match generalized metric-measure/phase hypotheses, exceptional sets and operator normalization.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "google-deepmind/formal-conjectures",
+      "commit": "909a8bec155bc5a6f3c72e12baaaa610ae293281",
+      "toolchain": "leanprover/lean4:v4.33.1",
+      "root_source_sha256": {
+        "README.md": "f76f44765bb5e87474a6c6f52205ef9b699cc5e74b4db3be50c8448a93caee80",
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "lakefile.toml": "738c804c3de5a7e7146e87ae08e0274dd117d52f477e08cd3dd9f3260cdc579c",
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      "priority": "HIGH_STATEMENT_INTERFACE_ONLY",
+      "intended_consumer": "Canonical problem statements and equivalence checks for Erd\u0151s adapters",
+      "missing_bridge": "Conjecture statements may contain sorry. Do not import them as established proofs; prove a separate fidelity equivalence to a proof endpoint.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "ImperialCollegeLondon/FLT",
+      "commit": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "root_source_sha256": {
+        "README.md": "8ac92e43dbc3054cb9cb1897abf5c0ae17eac07d560b152ddc1d1cf143271347",
+        "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+        "lakefile.toml": "3c8864bcec37bd36f12b26f9ca1d299564aa6433cf46d41c16fad9b9f2630f92",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "priority": "MEDIUM",
+      "intended_consumer": "Modularity/Galois/arithmetic interfaces complementary to Anthropic FLT",
+      "missing_bridge": "Select proved dependency endpoints, distinguish blueprint targets and pending premises; not a second automatically accepted FLT proof.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "thefundamentaltheor3m/Sphere-Packing-Lean",
+      "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+      "toolchain": "leanprover/lean4:v4.35.0-rc4",
+      "root_source_sha256": {
+        "README.md": "2cc2d2d07c36ae65597e9e779403a3cbb8c8fa81c6b00c37fe6777d03991942f",
+        "lean-toolchain": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+        "lakefile.toml": "321fe7e02e020ef8cf7bef8edc61f524a54d992bebeb307e0a41faa74aa06fef",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "priority": "MEDIUM",
+      "intended_consumer": "Fourier/geometric packing and density consumers",
+      "missing_bridge": "Select exact dimension and normalization; audit real proof endpoints and unresolved source obligations.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "teorth/equational_theories",
+      "commit": "2f49bdaf3d38ffb722e54ac1288c8269dac61846",
+      "toolchain": "leanprover/lean4:v4.29.1",
+      "root_source_sha256": {
+        "README.md": "2b89710eda2e50ac592c319049c5c1f2a80aeaba864cbdb62842facfc064753e",
+        "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+        "lakefile.toml": "9617309fceb1d337d60e55457de1583afe5a4fde3b22eaa1796de616f0b93c16",
+        "LICENSE": "c6be243aa954228fc83b68a08e769bf3c561a64fb515cbbd470046d006c18bbf"
+      },
+      "priority": "HIGH",
+      "intended_consumer": "Finite algebra and implication/countermodel consumers",
+      "missing_bridge": "Preserve law identifiers, finite/infinite model domains and certificate scope; do not equate graph reachability with a proof without a soundness bridge.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "YaelDillies/apap",
+      "commit": "b2001974b99b18ca1c13b6aa4791b7801563f939",
+      "toolchain": "leanprover/lean4:v4.36.0-rc1",
+      "root_source_sha256": {
+        "README.md": "7db39afabee47ef0255003c29cdaec242f370a1fc40bb4e23d57e40fc7260be1",
+        "lean-toolchain": "964acf49a540b2fbb4d25edc186eb68236afd8020473dfad7ccb08dc6ffa1d66",
+        "lakefile.toml": "9c2c1f0ba44804ab281251a83fd913f85be751a4f7d5f583a341391472a19114",
+        "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "priority": "HIGH",
+      "intended_consumer": "Quantitative progression/Roth and density consumers",
+      "missing_bridge": "Preserve finite ambient group, density thresholds, logarithms and explicit/implicit constants.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "leanprover-community/lean-liquid",
+      "commit": "ee4795874a99ea5f9d85bd0b364425f07b932377",
+      "toolchain": "NOT_PRESENT_AT_ROOT",
+      "root_source_sha256": {
+        "README.md": "2767c5cbdb9b1829343fd26d26d2d98508a02968a3e0cece4ca76c2b413d157c",
+        "leanpkg.toml": "7b712bdb1a1baf2fccc9338c01c55ab762d87a5e17af2c409f4d8a18f1a092db"
+      },
+      "priority": "HISTORICAL_PORT_REQUIRED",
+      "intended_consumer": "Condensed/liquid mathematics reference",
+      "missing_bridge": "Lean3 project: use as a port/reference source, not a direct Lean4 Lake dependency.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    },
+    {
+      "repository": "plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "toolchain": "NOT_PRESENT_AT_ROOT",
+      "root_source_sha256": {
+        "README.md": "fc77810d484c38b6b0bb9d41683a1cc7d496d82afe8688bd4ca1bd031b447a1d"
+      },
+      "priority": "HIGH_PER_PROJECT",
+      "intended_consumer": "Broader solved Erd\u0151s corpus linked from the community database",
+      "missing_bridge": "Multiple versioned source projects; no root toolchain. Pin each selected project, source authors and hypotheses separately, audit axioms and avoid a blanket acceptance claim.",
+      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
+      "verification": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+name = "grwtsk-tao-erdos-adapters"
+defaultTargets = ["GRWTSKTaoErdos"]
+
+[[require]]
+name = "Analysis"
+git = "https://github.com/teorth/analysis.git"
+rev = "a19a5bfadc616467562995b75f46035232841943"
+
+[[lean_lib]]
+name = "GRWTSKTaoErdos"
+roots = []
+globs = ["GRWTSK.+"]

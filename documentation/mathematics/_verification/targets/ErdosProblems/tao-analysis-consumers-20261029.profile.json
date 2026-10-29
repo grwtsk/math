@@ -1,0 +1,51 @@
+{
+  "project_subdir": "adapters/tao-erdos",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/SequencesAndSets/TaoErdos/Erdos379.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.prime_power_family",
+        "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.unbounded_binomial_height"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/Combinatorics/GraphTheory/TaoErdos/Erdos613.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.GraphTheory.TaoErdos.Erdos613.concrete_ramsey_witness"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/Combinatorics/DesignsAndConfigurations/TaoErdos/Erdos707.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.perfect_difference_set_card",
+        "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.excludes_embedded_powers"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/TaoErdos/Erdos987.lean",
+      "declarations": [
+        "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.TaoErdos.Erdos987.shifted_circle_sequence"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
