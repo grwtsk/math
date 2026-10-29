@@ -218,4 +218,30 @@ theorem riemannHypothesis_of_model_correlation_budget
   intro j
   exact (bulkPacket_le_model_add_envelope sqrtWidth j (G j) (E j) (hE j)).trans (hb j)
 
+/-- Weighted residual allowances reach the existing RH consumer only together
+with a signed-model-plus-allowance bound for every positive exponent.
+Neither the actual arithmetic residual nor these growth bounds is supplied here. -/
+theorem riemannHypothesis_of_weighted_model_correlation_budget
+    (G E : ℕ → ℕ → ℕ → ℝ) (B : ℕ → ℝ) (hB : ∀ j, 0 ≤ B j)
+    (hE : ∀ j : ℕ, ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - sqrtWidth j →
+      ∀ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        |mertensTwoPointPrefix h (t + 1) - G j h (t + 1)| ≤ E j h (t + 1))
+    (hweighted : ∀ j : ℕ, ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - sqrtWidth j →
+      (∑ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        normalizedSignedAbelShiftKernel j t h * E j h (t + 1)) ≤ B j)
+    (hgrowth : ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧ ∀ j : ℕ,
+      bulkPrefixFunctional sqrtWidth j (G j) + 2 * B j ≤
+        C * (((2 ^ j : ℕ) : ℝ) ^ δ)) :
+    _root_.RiemannHypothesis := by
+  apply riemannHypothesis_of_model_correlation_budget G E hE
+  intro δ hδ
+  obtain ⟨C, hC, hg⟩ := hgrowth δ hδ
+  refine ⟨C, hC, ?_⟩
+  intro j
+  have hb := bulkPrefixFunctional_le_two_mul_of_weighted_budget
+    sqrtWidth j (E j) (B j) (hB j) (hweighted j)
+  exact (add_le_add_left hb _).trans (hg j)
+
 end GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope

@@ -1,0 +1,18 @@
+{
+  "project_subdir": "adapters/anthropic-math/fermat",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/AnthropicMath/Fermat.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum",
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositiveCubeSum",
+        "GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

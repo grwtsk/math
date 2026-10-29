@@ -10,7 +10,8 @@ commands to run, not successful receipts. No package is imported by the root bui
 - `zeta23`: all 23 configured zeta/Dirichlet/ξ′ declarations.
 - `3sum-apsp`: all 137 configured declarations, including conditional paper statements.
 - `eth`: both configured MainResults declarations.
-- `fermat`: exact positive-natural FLT transport and a positive-cube specialization.
+- `fermat`: exact positive-natural FLT transport, a positive-cube specialization, and
+  a zero-factor obstruction for natural-number power-sum solutions (including zero output).
 
 See [catalogue.json](catalogue.json) for exact source commits, file blobs,
 configuration contents, theorem names and isolated dependency versions.

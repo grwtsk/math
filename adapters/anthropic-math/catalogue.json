@@ -391,6 +391,11 @@
           "classification": "SOURCE_PROOF_CANDIDATE_SPECIALIZATION",
           "missing_bridges": [
             "Native compilation, fresh kernel replay and transitive axiom audit; no equivalence of intermediate Wiles arguments asserted."
+          ],
+          "local_declarations": [
+            "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum",
+            "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositiveCubeSum",
+            "GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor"
           ]
         }
       ],
