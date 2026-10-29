@@ -175,8 +175,8 @@ theorem kernelPrefixPairing_le_regular_add_mass
     kernelPrefixPairing j t ≤ regularPrefixPairing j t bad +
       ((t + 1 : ℕ) : ℝ) * exceptionalKernelMass j t bad := by
   rw [kernelPrefixPairing_eq_regular_add_exceptional j t bad]
-  exact add_le_add_left
-    ((le_abs_self _).trans (abs_exceptionalPrefixPairing_le_mass j t bad)) _
+  exact add_le_add le_rfl
+    ((le_abs_self _).trans (abs_exceptionalPrefixPairing_le_mass j t bad))
 
 /-- A concrete upper allowance for the complete source packet. The exceptional
 set may depend on both scale and depth; the regular term remains signed. -/

@@ -1,4 +1,4 @@
-/- Copyright (c) 2026 grwtsk. MIT.
+/- Copyright (c) 2026 grwtsk contributors. MIT.
 Mathlib and imported GRWTSK results retain their upstream attribution and licenses. -/
 import GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer
 
@@ -85,7 +85,7 @@ theorem kernel_le_two_div_left_succ (j t h : ℕ) :
     have hden : (0 : ℝ) <
         ((t + 1 + h : ℕ) : ℝ) * (((t + 1 + h : ℕ) : ℝ) + 1) := by positivity
     have hx1 : (0 : ℝ) < (((2 ^ j : ℕ) : ℝ)) + 1 := by positivity
-    have hprod := mul_le_mul hxb (add_le_add_right hxb 1)
+    have hprod := mul_le_mul hxb (add_le_add hxb (le_rfl : (1 : ℝ) ≤ 1))
       (show (0 : ℝ) ≤ (((2 ^ j : ℕ) : ℝ)) + 1 by positivity) hb.le
     have hY : (((2 ^ (j + 1) : ℕ) : ℝ)) = 2 * (((2 ^ j : ℕ) : ℝ)) := by
       rw [Nat.pow_succ, Nat.cast_mul]
@@ -211,7 +211,7 @@ theorem exceptionalPacketUpper_le_regular_add_four_mul
     (hcard : ∀ t ∈ Finset.range (2 ^ (j + 1)), ((bad j t).card : ℝ) ≤ B) :
     exceptionalPacketUpper bad j ≤ signedRegularPacket bad j + 4 * B := by
   rw [exceptionalPacketUpper_eq_regular_add_cost]
-  exact add_le_add_left (weightedExceptionalCost_le_four_mul bad j hB hcard) _
+  exact add_le_add le_rfl (weightedExceptionalCost_le_four_mul bad j hB hcard)
 
 /-- Canonical RH consumer: both arithmetic suppliers remain explicit and unsupplied.
 The cardinality premise is sufficient, not necessary, for the true weighted cost. -/
@@ -236,7 +236,7 @@ theorem riemannHypothesis_of_regular_and_cardinality_budgets
         4 * (D * (((2 ^ j : ℕ) : ℝ) ^ δ)) :=
       exceptionalPacketUpper_le_regular_add_four_mul bad j hB (hbad j)
     _ ≤ C * (((2 ^ j : ℕ) : ℝ) ^ δ) +
-        4 * (D * (((2 ^ j : ℕ) : ℝ) ^ δ)) := add_le_add_right (hreg j) _
+        4 * (D * (((2 ^ j : ℕ) : ℝ) ^ δ)) := add_le_add (hreg j) le_rfl
     _ = (C + 4 * D) * (((2 ^ j : ℕ) : ℝ) ^ δ) := by ring
 
 end GRWTSK.NumberTheory.Moebius.MertensSignedAbelExceptionalCardinality
