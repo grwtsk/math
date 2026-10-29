@@ -1,0 +1,219 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static mathematical acceptance target; no execution receipt",
+  "base_math_commit": "31971485e15b7dd43e08d394e42172c04c02a673",
+  "base_tree": "57c643393c9cfcc51fcf694675b444c433acce26",
+  "continuation_of": "f7ce345e1aff1a958e6f8ca1f8599fa4a4822366",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_lock": "lake-manifest.json at the pinned base; no dependency migration",
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupDyadicIncrement.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement",
+      "git_blob": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+      "sha256": "8c204b5676b26e3a284df3d342b0a35772eab83965a11fb21037c31464ee7273",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.coefficient0_step",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.coefficient1_step",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.coefficient2_step",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.polynomial_step",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.signedBirthResidual",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.birthExpression_eq_signedBirthResidual",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadicBirthSum_sub",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadicBirthSum_sub_eq_residual",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.exactBirthValue",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.cross_dyadic_eq_birthValue",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.cross_dyadic_sub",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadic_increment_signed_defect",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadic_increment_energy_identity",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadic_increment_error",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.pickupEnergy_sub_full_two_prime_bound",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.pickupEnergy_sub_two_prime_bound",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.energyBound_log_two_increment",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.energyBound_log_two_increment_lower",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadicTime_succ",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.octaveAllowance_lower",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadic_increment_two_prime_bound",
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement.dyadic_increment_full_two_prime_bound"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint",
+        "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound"
+      ]
+    },
+    {
+      "path": "GRWTSK/Analysis/OperatorTheory/SpectralTheory/VacuumComplementLimit.lean",
+      "module": "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit",
+      "git_blob": "5e62686dd5d12252922a389c99b27ff50894899a",
+      "sha256": "f83d68e8f9e902aa287102154dd578fcfaf55580ee76e6b11abf83e3ae9f210d",
+      "declarations": [
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit.quadratic_bound_on_submodule_of_pointwise_limit",
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit.null_state_of_pointwise_limit",
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit.symmetric_of_pointwise_limit",
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit.vacuum_complement_invariant",
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit.norm_gap_on_vacuum_complement_of_quadratic_bound",
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit.self_adjoint_vacuum_complement_gap_of_pointwise_limit"
+      ],
+      "direct_imports": [
+        "GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport",
+        "Mathlib.Analysis.InnerProductSpace.Continuous",
+        "Mathlib.Topology.Algebra.Module.ContinuousLinearMap.Restrict",
+        "Mathlib.Topology.Order.OrderClosed"
+      ]
+    }
+  ],
+  "inspected_dependency_blobs": {
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "GRWTSK/NumberTheory/Moebius/PickupCellQuadratic.lean": "ceb1ed8be15c255f70723b65ccac631373e58c6c",
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+    "GRWTSK/NumberTheory/Moebius/PickupRefinementCriterion.lean": "5ac1eacd22a7f1cd455b495b183b084f649d8128",
+    "GRWTSK/NumberTheory/Moebius/PickupSignedQuadrature.lean": "a1547b237c028a8e3dfad356a9feff0bf708f021",
+    "GRWTSK/NumberTheory/Moebius/PickupTwoPrimeBound.lean": "6646dbea069b0078583d84085469841758d7cdc3",
+    "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockExtraction.lean": "62fc60a682a06332fedf6566e0b081d993f82ba4",
+    "GRWTSK/NumberTheory/Moebius/FinitePrimeDivisorExtraction.lean": "f307eac327dbdaad1db2702cb4ea8e293b286936",
+    "GRWTSK/NumberTheory/Moebius/GoodScaleEnergyCriterion.lean": "a39d24a540a86918ab4f2a8130a86895424dc317",
+    "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean": "9453ab6fc629611fa19362b56eb223fabd14bc0a",
+    "GRWTSK/Analysis/OperatorTheory/SpectralTheory/GapTransport.lean": "e98c33f97c7429e34a51de87418744f5a16f1eb6",
+    "GRWTSK/Analysis/OperatorTheory/SpectralTheory/NullStateCoercivityObstruction.lean": "41f6f31c06ed7eb148bbda4d91b9b9154de1b15b"
+  },
+  "mathematical_scope": {
+    "signed_increment": "For M=2^j, S_(j+1)-S_j is exactly sum_{N=M}^{2M-1} signedBirthResidual(N), retaining all five prescribed Mobius moments, mixed products and complete diagonal subtraction.",
+    "signed_defect": "Delta S_j=Delta pickupEnergy_j-Delta pickupDiagonal_j+r_j; r_j=sum_{N=M}^{2M-1} coefficient2(N)*curvatureMass(log N,log(N+1)), |r_j|<=1/(8M).",
+    "strongest_existing_waveform_bound": "Delta S_j <= integral_[T_j,T_(j+1)] [(2/9)exp(u/2)+26/9-(28/9)exp(-u/2)]^2 du - Delta pickupDiagonal_j + 1/(8M). The constant parameters and source signs are unchanged.",
+    "explicit_simpler_bound": "Delta S_j <= (4/81)M+(208/81)(exp(log(2)/2)-1)sqrt(M)+(676/81)log(2)-Delta pickupDiagonal_j+1/(8M). The retained energyBound octave allowance is >=(4/81)M; it is not a source lower bound.",
+    "operator_transport": "For Aseq n,A:H ->L[k] H on one fixed inner product space and a fixed submodule S, pointwise norm convergence on S transfers the same uniform real quadratic lower bound m. No completeness, self-adjointness, normalization, or positivity is needed for that basic transport.",
+    "vacuum_consumer": "For a complete fixed RCLike Hilbert space, bounded self-adjoint Aseq n, pointwise norm limit A supplied as a bounded operator, and a shared null vector Omega, preserve nullness, self-adjointness, and the supplied uniform m bound on (k*Omega)^perp. Restrict to that invariant submodule and apply existing GapTransport.norm_gap_of_quadratic_bound. Omega normalization is unnecessary.",
+    "physical_limitations": "Every operator has full bounded domain in this module. No physical source identification, nontrivial QFT, positive m, ground-state uniqueness, entire zero-sector identification, unbounded domain/form transport, or varying-space embedding theorem is supplied."
+  },
+  "consumer_roots": [
+    "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature.riemannHypothesis_of_endpoint_good_scales",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.norm_gap_of_quadratic_bound"
+  ],
+  "existing_obstructions": [
+    {
+      "declaration": "GRWTSK.NumberTheory.Moebius.PickupTwoPrimeBound.third_prime_counterexample",
+      "scope": "Actual next prime block [5,2,3] at u=log(10),m=1 is strictly below -899/62500. Its negative channel cannot be dropped."
+    },
+    {
+      "declaration": "GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.positive_width_has_no_uniform_floor",
+      "scope": "Pointwise positive parameter widths do not supply a uniform positive lower bound; not a physical model counterexample."
+    }
+  ],
+  "first_missing_inequalities": {
+    "RH": "For some fixed 0<rho<1, prove sum_{N=2^j}^{2^(j+1)-1} signedBirthResidual(N)<=C_rho*2^(rho*j) uniformly in j from the prescribed Mobius source. No such proof is supplied; target (A) ultimately requires every positive rate or an independently proved alternative good-scale route.",
+    "Yang_Mills": "Construct source-identified physical approximants and their physical zero-sector complements, and prove one m>0 independent of regulator/volume with m*||x||^2<=Re< H_n x,x > on those complements. A finite feature margin eta-epsilon does not identify this physical form or supply norm comparison/uniformity.",
+    "cross_frontier": "No proved RH-to-Yang-Mills source bridge is supplied."
+  },
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "ACCEPTANCE_PENDING"
+  },
+  "required_acceptance": [
+    "Compile each exact source with complete imported closure in the declared current environment.",
+    "Freshly kernel-check the actual compiled dependency closure; determine checker invocation from the pinned toolchain.",
+    "Audit generated/private/opaque transitive dependencies and hypotheses; allow only propext, Classical.choice, Quot.sound under the stated policy.",
+    "Bind every successful check to the actual final source commit, source blobs, toolchain and full package revisions.",
+    "Do not inherit acceptance from earlier bytes or substitute lexical/API review for elaboration."
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupDyadicIncrement",
+    "lake build --wfail GRWTSK.Analysis.OperatorTheory.SpectralTheory.VacuumComplementLimit"
+  ],
+  "forbidden_shortcuts": [
+    "sorryAx",
+    "new research axioms",
+    "unproved cancellation stored in a certified field",
+    "unauthorized native trust",
+    "omitted imports",
+    "stronger conclusions from finite margins",
+    "bounded fixed-space transport substituted for unbounded/varying-space physical limit"
+  ],
+  "provenance": "New deductions are elementary local derivations from the pinned maintained sources and Mathlib APIs. No new paper theorem or physical Yang-Mills result is imported. Upstream bylines/licenses remain preserved.",
+  "publication_scope": "Two new mathematical source modules and this static target only; no root promotion, dependency changes, manuscript construction, or remote verification dispatch.",
+  "integration_base_math_commit": "f2f907434344fe888278deee8718ae1d94093ab5",
+  "integration_note": "Recovered exact mathematical blobs from issue 1430; original base/dependency pins remain historical source identities. Integration does not establish fresh compilation, kernel replay, or transitive axiom audit. Static target placed in the current repository documentation layout.",
+  "current_dependency_blob_comparison": {
+    "lean-toolchain": {
+      "original_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "integration_base_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "unchanged": true
+    },
+    "lakefile.toml": {
+      "original_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "integration_base_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "unchanged": true
+    },
+    "lake-manifest.json": {
+      "original_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "integration_base_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupCellQuadratic.lean": {
+      "original_blob": "ceb1ed8be15c255f70723b65ccac631373e58c6c",
+      "integration_base_blob": "ceb1ed8be15c255f70723b65ccac631373e58c6c",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean": {
+      "original_blob": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+      "integration_base_blob": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": {
+      "original_blob": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+      "integration_base_blob": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupRefinementCriterion.lean": {
+      "original_blob": "5ac1eacd22a7f1cd455b495b183b084f649d8128",
+      "integration_base_blob": "5ac1eacd22a7f1cd455b495b183b084f649d8128",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupSignedQuadrature.lean": {
+      "original_blob": "a1547b237c028a8e3dfad356a9feff0bf708f021",
+      "integration_base_blob": "a1547b237c028a8e3dfad356a9feff0bf708f021",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupTwoPrimeBound.lean": {
+      "original_blob": "6646dbea069b0078583d84085469841758d7cdc3",
+      "integration_base_blob": "6646dbea069b0078583d84085469841758d7cdc3",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockExtraction.lean": {
+      "original_blob": "62fc60a682a06332fedf6566e0b081d993f82ba4",
+      "integration_base_blob": "62fc60a682a06332fedf6566e0b081d993f82ba4",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/FinitePrimeDivisorExtraction.lean": {
+      "original_blob": "f307eac327dbdaad1db2702cb4ea8e293b286936",
+      "integration_base_blob": "f307eac327dbdaad1db2702cb4ea8e293b286936",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/GoodScaleEnergyCriterion.lean": {
+      "original_blob": "a39d24a540a86918ab4f2a8130a86895424dc317",
+      "integration_base_blob": "a39d24a540a86918ab4f2a8130a86895424dc317",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean": {
+      "original_blob": "9453ab6fc629611fa19362b56eb223fabd14bc0a",
+      "integration_base_blob": "9453ab6fc629611fa19362b56eb223fabd14bc0a",
+      "unchanged": true
+    },
+    "GRWTSK/Analysis/OperatorTheory/SpectralTheory/GapTransport.lean": {
+      "original_blob": "e98c33f97c7429e34a51de87418744f5a16f1eb6",
+      "integration_base_blob": "e98c33f97c7429e34a51de87418744f5a16f1eb6",
+      "unchanged": true
+    },
+    "GRWTSK/Analysis/OperatorTheory/SpectralTheory/NullStateCoercivityObstruction.lean": {
+      "original_blob": "41f6f31c06ed7eb148bbda4d91b9b9154de1b15b",
+      "integration_base_blob": "41f6f31c06ed7eb148bbda4d91b9b9154de1b15b",
+      "unchanged": true
+    }
+  }
+}
