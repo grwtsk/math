@@ -2586,4 +2586,281 @@ theorem coveredFiniteOffsetMinimum {β : Type v} (inventory : FiniteInventory α
     (fun candidate => Feasible required depends (selection candidate))
     (offsetCandidateCost inventory weight offset selection decisions) certificate
 
+/-- A lexicographic natural coordinate, with an explicit proposition for a tie. -/
+def NatLexLe (a b : Nat) (tie : Prop) : Prop := a < b ∨ (a = b ∧ tie)
+
+theorem natLexLe_first_le {a b : Nat} {tie : Prop} (h : NatLexLe a b tie) : a ≤ b := by
+  cases h with
+  | inl strict => exact Nat.le_of_lt strict
+  | inr tied =>
+    calc
+      a = b := tied.1
+      _ ≤ b := Nat.le_refl _
+
+theorem natLexLe_tie {a b : Nat} {tie : Prop} (equal : a = b)
+    (h : NatLexLe a b tie) : tie := by
+  cases h with
+  | inl strict =>
+    have impossible : a < a := by
+      calc
+        a < b := strict
+        _ = a := equal.symm
+    exact False.elim (Nat.lt_irrefl a impossible)
+  | inr tied => exact tied.2
+
+theorem natLexLe_trans {a b c : Nat} {p q r : Prop} (ties : p → q → r)
+    (ab : NatLexLe a b p) (bc : NatLexLe b c q) : NatLexLe a c r := by
+  cases ab with
+  | inl strict =>
+    exact Or.inl (Nat.lt_of_lt_of_le strict (natLexLe_first_le bc))
+  | inr ab =>
+    cases bc with
+    | inl strict =>
+      apply Or.inl
+      calc
+        a = b := ab.1
+        _ < c := strict
+    | inr bc => exact Or.inr ⟨ab.1.trans bc.1, ties ab.2 bc.2⟩
+
+theorem natLexLe_total {a b : Nat} {p q : Prop} (ties : p ∨ q) :
+    NatLexLe a b p ∨ NatLexLe b a q := by
+  cases Nat.lt_or_ge a b with
+  | inl strict => exact Or.inl (Or.inl strict)
+  | inr ba =>
+    cases Nat.lt_or_ge b a with
+    | inl strict => exact Or.inr (Or.inl strict)
+    | inr ab =>
+      have equal := Nat.le_antisymm ab ba
+      cases ties with
+      | inl p => exact Or.inl (Or.inr ⟨equal, p⟩)
+      | inr q => exact Or.inr (Or.inr ⟨equal.symm, q⟩)
+
+/-- Explicit mathematical key. A runtime mask interpretation is not inferred. -/
+structure CostCountMask where
+  cost : Nat
+  count : Nat
+  mask : Nat
+
+def CostCountMaskLE (a b : CostCountMask) : Prop :=
+  NatLexLe a.cost b.cost (NatLexLe a.count b.count (a.mask ≤ b.mask))
+
+theorem costCountMask_ext {a b : CostCountMask} (costs : a.cost = b.cost)
+    (counts : a.count = b.count) (masks : a.mask = b.mask) : a = b := by
+  cases a
+  cases b
+  cases costs
+  cases counts
+  cases masks
+  rfl
+
+theorem costCountMaskLE_refl (a : CostCountMask) : CostCountMaskLE a a :=
+  Or.inr ⟨rfl, Or.inr ⟨rfl, Nat.le_refl _⟩⟩
+
+theorem costCountMaskLE_cost {a b : CostCountMask} (h : CostCountMaskLE a b) : a.cost ≤ b.cost :=
+  natLexLe_first_le h
+
+theorem costCountMaskLE_trans {a b c : CostCountMask}
+    (ab : CostCountMaskLE a b) (bc : CostCountMaskLE b c) : CostCountMaskLE a c :=
+  natLexLe_trans (fun countAB countBC =>
+    natLexLe_trans (fun maskAB maskBC => Nat.le_trans maskAB maskBC) countAB countBC) ab bc
+
+theorem costCountMaskLE_total (a b : CostCountMask) : CostCountMaskLE a b ∨ CostCountMaskLE b a :=
+  natLexLe_total (natLexLe_total (Nat.le_total a.mask b.mask))
+
+theorem costCountMaskLE_antisymm {a b : CostCountMask}
+    (ab : CostCountMaskLE a b) (ba : CostCountMaskLE b a) : a = b := by
+  have costs := Nat.le_antisymm (costCountMaskLE_cost ab) (costCountMaskLE_cost ba)
+  have countAB := natLexLe_tie costs ab
+  have countBA := natLexLe_tie costs.symm ba
+  have counts := Nat.le_antisymm (natLexLe_first_le countAB) (natLexLe_first_le countBA)
+  exact costCountMask_ext costs counts
+    (Nat.le_antisymm (natLexLe_tie counts countAB) (natLexLe_tie counts.symm countBA))
+
+def offsetCostCountMask (key : CostCountMask) (offset : Nat) : CostCountMask :=
+  ⟨key.cost + offset * key.count, key.count, key.mask⟩
+
+/-- Weak base-cost/count domination suffices at every natural offset. Mask
+comparison is required only when both earlier base coordinates tie. -/
+theorem costCountMask_allOffset_le (a b : CostCountMask)
+    (costs : a.cost ≤ b.cost) (counts : a.count ≤ b.count)
+    (masks : a.cost = b.cost → a.count = b.count → a.mask ≤ b.mask) (offset : Nat) :
+    CostCountMaskLE (offsetCostCountMask a offset) (offsetCostCountMask b offset) := by
+  have shifted : a.cost + offset * a.count ≤ b.cost + offset * b.count :=
+    Nat.add_le_add costs (Nat.mul_le_mul_left offset counts)
+  cases Nat.lt_or_ge (a.cost + offset * a.count) (b.cost + offset * b.count) with
+  | inl strict => exact Or.inl strict
+  | inr reverse =>
+    have equalCost := Nat.le_antisymm shifted reverse
+    apply Or.inr
+    refine ⟨equalCost, ?_⟩
+    cases Nat.lt_or_ge a.count b.count with
+    | inl strict => exact Or.inl strict
+    | inr reverseCount =>
+      have equalCount := Nat.le_antisymm counts reverseCount
+      have equalBase : a.cost = b.cost := by
+        apply cost_add_right_cancel (offset * a.count)
+        calc
+          a.cost + offset * a.count = b.cost + offset * b.count := equalCost
+          _ = b.cost + offset * a.count :=
+            congrArg (fun n => b.cost + offset * n) equalCount.symm
+      exact Or.inr ⟨equalCount, masks equalBase equalCount⟩
+
+def ListKeyMinimum {β : Type v} (family : List β) (key : β → CostCountMask) (best : β) : Prop :=
+  best ∈ family ∧ ∀ candidate, candidate ∈ family → CostCountMaskLE (key best) (key candidate)
+
+theorem listKeyMinimum_exists {β : Type v} (key : β → CostCountMask) (family : List β)
+    (nonempty : ∃ candidate, candidate ∈ family) : ∃ best, ListKeyMinimum family key best := by
+  revert nonempty
+  induction family with
+  | nil =>
+    intro nonempty
+    obtain ⟨candidate, member⟩ := nonempty
+    cases member
+  | cons first rest ih =>
+    intro _
+    cases rest with
+    | nil =>
+      refine ⟨first, List.Mem.head [], ?_⟩
+      intro candidate member
+      cases member with
+      | head => exact costCountMaskLE_refl _
+      | tail _ impossible => cases impossible
+    | cons next tail =>
+      obtain ⟨best, minimum⟩ := ih ⟨next, List.Mem.head tail⟩
+      cases costCountMaskLE_total (key first) (key best) with
+      | inl comparison =>
+        refine ⟨first, List.Mem.head _, ?_⟩
+        intro candidate member
+        cases member with
+        | head => exact costCountMaskLE_refl _
+        | tail _ member => exact costCountMaskLE_trans comparison (minimum.2 candidate member)
+      | inr comparison =>
+        refine ⟨best, List.Mem.tail first minimum.1, ?_⟩
+        intro candidate member
+        cases member with
+        | head => exact comparison
+        | tail _ member => exact minimum.2 candidate member
+
+/-- Lexicographic pruning carries the same explicit coverage and feasibility
+premises as cost-only pruning, but strengthens every dominator comparison. -/
+structure CoveredKeyPruning {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (key : β → CostCountMask) : Prop where
+  coverage : ∀ candidate, feasible candidate → candidate ∈ family
+  retained_subfamily : ∀ candidate, candidate ∈ retained → candidate ∈ family
+  retained_feasible : ∀ candidate, candidate ∈ retained → feasible candidate
+  retained_nonempty : ∃ candidate, candidate ∈ retained
+  discarded_dominated : ∀ candidate, candidate ∈ family → feasible candidate →
+    candidate ∉ retained → ∃ dominator, dominator ∈ retained ∧ feasible dominator ∧
+      CostCountMaskLE (key dominator) (key candidate)
+
+theorem coveredKeyPruning_minimum {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (key : β → CostCountMask)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredKeyPruning family retained feasible key)
+    (best : β) (minimum : ListKeyMinimum retained key best) :
+    feasible best ∧ ∀ candidate, feasible candidate → CostCountMaskLE (key best) (key candidate) := by
+  constructor
+  · exact certificate.retained_feasible best minimum.1
+  · intro candidate candidateFeasible
+    by_cases member : candidate ∈ retained
+    · exact minimum.2 candidate member
+    · obtain ⟨dominator, retainedDominator, _, comparison⟩ :=
+        certificate.discarded_dominated candidate
+          (certificate.coverage candidate candidateFeasible) candidateFeasible member
+      exact costCountMaskLE_trans (minimum.2 dominator retainedDominator) comparison
+
+theorem coveredKeyPruning_exists_minimum {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (key : β → CostCountMask)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredKeyPruning family retained feasible key) :
+    ∃ best, best ∈ retained ∧ feasible best ∧
+      ∀ candidate, feasible candidate → CostCountMaskLE (key best) (key candidate) := by
+  obtain ⟨best, minimum⟩ := listKeyMinimum_exists key retained certificate.retained_nonempty
+  have result := coveredKeyPruning_minimum family retained feasible key certificate best minimum
+  exact ⟨best, minimum.1, result.1, result.2⟩
+
+/-- Minimum cost value is a consequence distinct from candidate identity. -/
+theorem coveredKeyPruning_exists_minimum_cost {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (key : β → CostCountMask)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredKeyPruning family retained feasible key) :
+    ∃ best, best ∈ retained ∧ feasible best ∧
+      ∀ candidate, feasible candidate → (key best).cost ≤ (key candidate).cost := by
+  obtain ⟨best, member, bestFeasible, minimum⟩ :=
+    coveredKeyPruning_exists_minimum family retained feasible key certificate
+  exact ⟨best, member, bestFeasible, fun candidate h => costCountMaskLE_cost (minimum candidate h)⟩
+
+/-- Winner identity requires injectivity of the supplied key on feasible
+candidates. No uniqueness of external masks or representations is inferred. -/
+theorem coveredKeyPruning_winner_eq {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (key : β → CostCountMask)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredKeyPruning family retained feasible key)
+    (best : β) (minimum : ListKeyMinimum retained key best)
+    (winner : β) (winnerFeasible : feasible winner)
+    (winnerMinimum : ∀ candidate, feasible candidate → CostCountMaskLE (key winner) (key candidate))
+    (keyInjective : ∀ a b, feasible a → feasible b → key a = key b → a = b) : best = winner := by
+  have result := coveredKeyPruning_minimum family retained feasible key certificate best minimum
+  exact keyInjective best winner result.1 winnerFeasible
+    (costCountMaskLE_antisymm (result.2 winner winnerFeasible) (winnerMinimum best result.1))
+
+/-- Weighted prerequisite key with explicit selection decisions and an abstract
+natural mask. Its runtime interpretation and injectivity are separate premises. -/
+def finiteOffsetKey {β : Type v} (inventory : FiniteInventory α) (weight : α → Nat)
+    (offset : Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate))
+    (mask : β → Nat) (candidate : β) : CostCountMask :=
+  ⟨offsetCandidateCost inventory weight offset selection decisions candidate,
+    @retainedCount α inventory (selection candidate) (decisions candidate), mask candidate⟩
+
+theorem finiteOffsetKey_shift {β : Type v} (inventory : FiniteInventory α) (weight : α → Nat)
+    (offset : Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate)) (mask : β → Nat) (candidate : β) :
+    finiteOffsetKey inventory weight offset selection decisions mask candidate =
+      offsetCostCountMask (finiteOffsetKey inventory weight 0 selection decisions mask candidate) offset := by
+  apply costCountMask_ext
+  · exact @finiteWeightedCost_uniformOffset α inventory weight offset
+      (selection candidate) (decisions candidate)
+  · rfl
+  · rfl
+
+theorem finiteOffsetKey_allOffset_le {β : Type v} (inventory : FiniteInventory α)
+    (weight : α → Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate)) (mask : β → Nat) (s t : β)
+    (costs : offsetCandidateCost inventory weight 0 selection decisions s ≤
+      offsetCandidateCost inventory weight 0 selection decisions t)
+    (counts : @retainedCount α inventory (selection s) (decisions s) ≤
+      @retainedCount α inventory (selection t) (decisions t))
+    (masks : offsetCandidateCost inventory weight 0 selection decisions s =
+        offsetCandidateCost inventory weight 0 selection decisions t →
+      @retainedCount α inventory (selection s) (decisions s) =
+        @retainedCount α inventory (selection t) (decisions t) → mask s ≤ mask t)
+    (offset : Nat) :
+    CostCountMaskLE (finiteOffsetKey inventory weight offset selection decisions mask s)
+      (finiteOffsetKey inventory weight offset selection decisions mask t) := by
+  have comparison := costCountMask_allOffset_le
+    (finiteOffsetKey inventory weight 0 selection decisions mask s)
+    (finiteOffsetKey inventory weight 0 selection decisions mask t) costs counts masks offset
+  have hs := finiteOffsetKey_shift inventory weight offset selection decisions mask s
+  have ht := finiteOffsetKey_shift inventory weight offset selection decisions mask t
+  exact hs.symm ▸ ht.symm ▸ comparison
+
+/-- Covered prerequisite-family lexicographic minimum. The key's mask remains
+abstract; this does not refine Python, general CNF, JSON or positional execution. -/
+theorem coveredFiniteOffsetKeyMinimum {β : Type v} (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate)) (mask : β → Nat)
+    (required : α → Prop) (depends : α → α → Prop) (family retained : List β)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredKeyPruning family retained
+      (fun candidate => Feasible required depends (selection candidate))
+      (finiteOffsetKey inventory weight offset selection decisions mask)) :
+    ∃ best, best ∈ retained ∧ Feasible required depends (selection best) ∧
+      ∀ candidate, Feasible required depends (selection candidate) →
+        CostCountMaskLE (finiteOffsetKey inventory weight offset selection decisions mask best)
+          (finiteOffsetKey inventory weight offset selection decisions mask candidate) :=
+  coveredKeyPruning_exists_minimum family retained
+    (fun candidate => Feasible required depends (selection candidate))
+    (finiteOffsetKey inventory weight offset selection decisions mask) certificate
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
