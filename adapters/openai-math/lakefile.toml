@@ -1,0 +1,12 @@
+name = "grwtsk-openai-math-adapters"
+defaultTargets = ["GRWTSKOpenAIAdapters"]
+
+[[lean_lib]]
+name = "GRWTSKOpenAIAdapters"
+roots = ["OpenAITwoPointFiniteFamily", "OpenAISevenEighthsGap", "AxiomAudit"]
+
+[[require]]
+name = "OAI"
+git = "https://github.com/openai/math.git"
+rev = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+subDir = "lean"

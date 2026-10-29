@@ -1,0 +1,45 @@
+# Local attribution: grwtsk contributors.
+# Static source/acceptance specification; operational evidence belongs outside math.
+provider = "openai-math"
+upstream_repository = "https://github.com/openai/math"
+upstream_commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+upstream_subdirectory = "lean"
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_commit = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+upstream_manifest_blob = "67d01d2717d0aaff59fb8814bb53581b961f42b4"
+upstream_lakefile_blob = "cd24ca2ee09fb6fe33e82400534d9e60a616125b"
+verification_issue = "https://github.com/grwtsk/math/issues/1392"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_check = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+comparators = "NOT_RUN"
+allowed_axioms = ["propext", "Quot.sound", "Classical.choice"]
+forbidden_axioms = ["sorryAx"]
+independent_checker = "UNSUPPLIED_BY_APPROVED_ENVIRONMENT"
+
+[[sources]]
+path = "OpenAITwoPointFiniteFamily.lean"
+blob = "7c5ffa0ef9e25e290eeb3ead996217796fa50758"
+namespace = "GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily"
+declarations = ["liouville_finite_family_bound", "elliott_after_fixed_prime_change", "elliott_after_fixed_prime_divisor_change"]
+upstream_paths = ["lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean", "lean/OAI/NumberTheory/TwoPoint/PretentiousDistance.lean"]
+upstream_blobs = ["2bd48811e73bbdc80c1f738fa889a14189186408", "31e9010dee390175fcaca4f6e1b58c527d58ad2d"]
+missing_bridges = ["No constants uniform in a growing affine family", "No Liouville-to-Moebius substitution", "No actual GRWTSK arithmetic residual estimate"]
+
+[[sources]]
+path = "OpenAISevenEighthsGap.lean"
+blob = "6d480288f0ec6819097c0e93a0aec1b4d62a47b0"
+namespace = "GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap"
+declarations = ["zeta_zero_re_le", "dirichlet_zero_re_le", "explicit_real_zero_log_gap"]
+upstream_paths = ["lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"]
+upstream_blobs = ["46c67f4000906b1391a471d6e6396ac0da3c16a5"]
+missing_bridges = ["No independently accepted upstream analytic input", "No zero-density or Moebius estimate", "No RH consequence"]
+
+[[comparators_spec]]
+path = "lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.json"
+blob = "96dbfcd015da7bb0d32f30e17a3b8a6743bf1fe5"
+
+[[comparators_spec]]
+path = "lean/ComparatorChallenges/QuasiRiemannHypothesis.json"
+blob = "acf552468fc23c1a27d685d33983c58c50040542"
