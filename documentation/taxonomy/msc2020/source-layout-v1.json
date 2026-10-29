@@ -1421579,6 +1421579,25 @@
       "target_sha256": "d8aed5b995d881f937953cf39e74b21f56e91bd77299a60fca5a3bb6e5ba739b",
       "target_git_blob": "3bf9338b970b41cfc3a7ab5945495bfad2c5786f",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountApproximation.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountApproximation.lean",
+      "source_sha256": "fca852a4b0135e33f6e6203750bad3da02f529d191752362c25252d776feb52a",
+      "input_blob": "210dce809e47c7bd646cc7836308bb6b231e9742",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Quantitative collision-count approximation and exact physical elastic-impact counts, consuming the two-body trajectory model",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "210dce809e47c7bd646cc7836308bb6b231e9742",
+      "target_sha256": "fca852a4b0135e33f6e6203750bad3da02f529d191752362c25252d776feb52a",
+      "target_git_blob": "210dce809e47c7bd646cc7836308bb6b231e9742",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
