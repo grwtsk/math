@@ -314,6 +314,71 @@ theorem jointCoefficient_unit_square (P : List ℕ) (N L : ℕ)
     sourceCoefficient, div_eq_mul_inv, mul_inv_rev]
   ring
 
+/-- The literal d=1 summand of joint_square_gcd, at X=Y=N and Z=L.
+This is a signed fiber; no absolute value or estimate is built into it. -/
+def dOneFiber (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 then
+      jointCoefficient P N L N N L G q * jointCoefficient P N L N N L G r /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- The complete short/short sector of the d=1 fiber. -/
+def shortShortCoprime (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 then
+      rough P q * shortColumn P N L G q * (rough P r * shortColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- The complete long/long sector. In particular, q=r=1 is retained. -/
+def longLongCoprime (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 then
+      rough P q * longColumn P N L G q * (rough P r * longColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- Full d=1 decomposition of the actual joint-square fiber. The existing
+mixed term includes SL and LS; neither SS nor LL is assigned as a residual. -/
+theorem dOneFiber_eq_shortShort_add_mixed_add_longLong
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G =
+      shortShortCoprime P N L G + mixedCoprime P N L G + longLongCoprime P N L G := by
+  rw [mixedCoprime_eq_d_one_mixed_fiber]
+  unfold dOneFiber shortShortCoprime longLongCoprime
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro q _
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases h : Nat.gcd q r = 1
+  · simp only [if_pos h, jointCoefficient_pair_expansion]
+    ring
+  · simp [h]
+
+/-- The d=1 quotient diagonal has exactly the unit index. This says nothing
+about a product collision between different extraction rows. -/
+theorem d_one_diagonal_iff (q r : ℕ) :
+    (Nat.gcd q r = 1 ∧ q = r) ↔ (q = 1 ∧ r = 1) := by
+  constructor
+  · rintro ⟨hg, he⟩
+    subst r
+    have hq : q = 1 := by simpa only [Nat.gcd_self] using hg
+    exact ⟨hq, hq⟩
+  · rintro ⟨rfl, rfl⟩
+    simp
+
+/-- The LL summand at its retained unit diagonal is the original weighted
+long unit square, without a primality assumption or a deleted constant term.
+It belongs to the closed inventories precisely when 1 ≤ N. -/
+theorem longLong_unit_term (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    (if Nat.gcd 1 1 = 1 then
+      rough P 1 * longColumn P N L G 1 * (rough P 1 * longColumn P N L G 1) /
+        (((omega P N 1 : ℝ)+1)*((omega P N 1 : ℝ)+1)) else 0) =
+      (sourceCoefficient P N 1 * longColumn P N L G 1)^2 := by
+  rw [if_pos (by decide : Nat.gcd 1 1 = 1)]
+  simp only [sourceCoefficient, div_eq_mul_inv, mul_inv_rev]
+  ring
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
