@@ -1422567,6 +1422567,25 @@
       "target_sha256": "89ebb80b27401a8d2b759e5c27d32d8a59a853e20836cdeb45edb5acceddfbef",
       "target_git_blob": "d3e49abcbbfb951f173a3b8297f05745b4d77529",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionNextImpact.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionNextImpact.lean",
+      "source_sha256": "24b1a46e5b4a8824271005cac7680d46c3206b6b7f9587fb81875a3c94a45dfa",
+      "input_blob": "83ca673ffc8f9a55dc4ef3d92c8ca996b231a1a0",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Nonzero configuration-velocity determinant, isolated next-impact construction and independent velocity-circle general collision-count proof",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "83ca673ffc8f9a55dc4ef3d92c8ca996b231a1a0",
+      "target_sha256": "24b1a46e5b4a8824271005cac7680d46c3206b6b7f9587fb81875a3c94a45dfa",
+      "target_git_blob": "83ca673ffc8f9a55dc4ef3d92c8ca996b231a1a0",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
