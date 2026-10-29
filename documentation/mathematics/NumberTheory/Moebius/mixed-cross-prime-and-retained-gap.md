@@ -187,6 +187,45 @@ fresh kernel replay and transitive axiom audit: NOT_RUN. This is an exact
 signed source identity, not a stronger estimate for any sector, remainder,
 full moment, mean, signed bulk or RH.
 
+### Full d=1 fiber as the long unit square plus its complete off-diagonal
+
+The new `dOneOffDiagonal` is the literal double sum of the original joint
+coefficients over 1<=q,r<=N with gcd(q,r)=1 and q!=r. It is not assigned as
+a residual or restricted to the crossed-prime family. The definitions
+`shortShortOffDiagonal` and `mixedOffDiagonal` retain the actual SS and
+both SL/LS numerators with the two original denominator factors.
+`dOneOffDiagonal_eq_shortShort_add_mixed_add_longLong` identifies the complete
+sum with SS off-diagonal + both mixed orientations + LL off-diagonal.
+
+`shortShort_diagonal_term_zero` and `mixed_diagonal_term_zero` prove pointwise
+that the corresponding d=1 diagonal contributions vanish: gcd(q,r)=1 and
+q=r force q=r=1, and `shortColumn_one` kills every short factor. The companion
+`shortShort_diagonal_sum_zero` and `mixed_diagonal_sum_zero` sum those literal
+masked diagonal terms. `shortShortCoprime_eq_offDiagonal` and
+`mixedCoprime_eq_offDiagonal` therefore retain the entire SS and mixed sectors.
+This is a source identity, not a centering or orthogonality assertion.
+
+`dOneFiber_eq_unit_add_complete_offDiagonal` now states for every P,N,L,G:
+
+ dOneFiber = (if 1<=N then
+   (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0)
+   + dOneOffDiagonal.
+
+The `_of_one_le` corollary assumes exactly 1<=N. The theorem
+`dOneFiber_complete_offDiagonal_zero_components` explicitly makes the fiber,
+its complete off-diagonal, and the SS, mixed and LL off-diagonal sums zero
+at N=0; the conditional unit contribution is then zero too. Both orientations
+of pairs with exactly one unit quotient remain in the off-diagonal. Row
+product collisions p*q=s*r are not excluded by the quotient mask q!=r.
+All original row masks, repeated-prime guards, long-row coprime guards,
+closed quotient cutoffs, denominators and frozen parameters are retained.
+No primality or analytic hypothesis is added to the identities.
+These three definitions and ten theorem scripts are SOURCE_PROOF_CANDIDATE:
+compilation, fresh kernel replay and transitive axiom audit are NOT_RUN.
+This is the complete d=1 off-diagonal, not the complete moment across all gcd
+fibers; no stronger signed or absolute bound, mean estimate, bulk estimate,
+or RH claim follows from this finite decomposition alone.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
