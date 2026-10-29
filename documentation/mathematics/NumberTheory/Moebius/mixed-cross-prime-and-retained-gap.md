@@ -260,6 +260,46 @@ Compilation, fresh kernel replay and transitive axiom audit: NOT_RUN.
 No stronger signed/absolute bound, complete-moment or mean estimate, signed
 bulk bound, or RH claim follows from this finite symmetry identity alone.
 
+### The coprime q<r triangle has four literal sectors
+
+The definitions `shortShortUpperTriangle`, `shortLongUpperTriangle`,
+`longShortUpperTriangle` and `longLongUpperTriangle` each use the identical
+closed quotient inventories 1<=q,r<=N and the mask gcd(q,r)=1, q<r.
+Their numerators are respectively
+
+ [a(q)beta_S(q)] [a(r)beta_S(r)],
+ [a(q)beta_S(q)] [a(r)beta_L(r)],
+ [a(q)beta_L(q)] [a(r)beta_S(r)],
+ [a(q)beta_L(q)] [a(r)beta_L(r)],
+
+with the same two separate denominator factors (1+k(q))(1+k(r)).
+`dOneUpperTriangle_eq_shortShort_add_shortLong_add_longShort_add_longLong`
+expands the actual joint coefficients before summing, giving exactly
+
+ dOneUpperTriangle = shortShortUpperTriangle + shortLongUpperTriangle
+   + longShortUpperTriangle + longLongUpperTriangle.
+
+SL and LS remain independent triangle sums: exchanging q,r would change
+q<r to r<q, so they are not identified or replaced by twice one orientation.
+The consumer `dOneFiber_eq_unit_add_two_mul_upperTriangle_sectors` retains
+
+ dOneFiber = (if 1<=N then
+   (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0)
+   + 2*(SS_triangle + SL_triangle + LS_triangle + LL_triangle).
+
+`dOneUpperTriangle_zero_sectors` states explicitly that the complete strict
+triangle and all four sectors vanish at N=0; the conditional unit term in
+the consumer is then zero as well. All declarations allow arbitrary P,N,L,G
+without new primality, symmetry, positivity or analytic premises.
+Every original row mask, repeated-prime and long-row coprime guard, selected
+divisor denominator, closed cutoff and frozen source parameter is retained.
+One-unit/nonunit off-diagonal terms remain, including the long q=1 column
+in LS and LL; no row-product collision or extraction-prime order is removed.
+These four definitions and three theorem scripts are SOURCE_PROOF_CANDIDATE.
+Compilation, fresh kernel replay and transitive axiom audit are NOT_RUN.
+The identity supplies no stronger sector, triangle, complete-moment, mean,
+signed-bulk or RH bound.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
