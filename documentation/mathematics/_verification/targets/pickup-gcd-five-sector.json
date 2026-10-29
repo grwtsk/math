@@ -1,0 +1,167 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static mathematical acceptance target; no execution receipt",
+  "base_math_commit": "afc5872bcae55050c8cbe1da1daf01b5cbe424d1",
+  "base_tree": "e4027e7d726132207a451e5254e36559fd8b6d99",
+  "initially_inspected_main": "4c3e7737b409734a1c63cd55886a4a26977b5813",
+  "concurrent_changes": "The intervening main commit changes README only; mathematical dependency bytes are unchanged.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupCellKernelMonotonicity.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity",
+      "git_blob": "8e9ae37f25cae55b11ffa22b5324af7042f8de94",
+      "sha256": "d7e5e504661a753e66146876287a3a43447b080f219d8017537eeef36c005844",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity.pairPolynomial_antitone",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity.cellPairKernel_antitone",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity.cellPairKernel_two_three_le_one_two",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity.cellPairKernel_one_two_sub_two_three"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupOctavePairKernel"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupGcdFiveSector.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector",
+      "git_blob": "5181acf5740afc4c0cffe3008966b875f4ab5527",
+      "sha256": "32e78a9464919f48193f4d5b3bc5eeefc39ee991c6718a5e65a6d5e4381564ca",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.moebius_gcd_mul_four_zero",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.gcdCellBlock_zero_of_moebius_gcd_zero",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.gcdCellBlock_three_active_pairs",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.gcdCellBlock_three_label_formula",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.gcdCellBlock_nonpositive_of_five_gcd",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.fiveGcdCellRemainder",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.gcdCellSum_le_fiveGcdCellRemainder",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.fiveGcdOctaveRemainder",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.dyadic_increment_le_fiveGcdOctaveRemainder",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector.fiveGcdOctaveRemainder_eq_squarefree_correlation"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdOuterSector",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdSupport",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity",
+        "GRWTSK.NumberTheory.Moebius.PickupOctaveGcdCorrelation"
+      ]
+    }
+  ],
+  "candidate_dependency_blobs": {
+    "GRWTSK/NumberTheory/Moebius/PickupOctavePairKernel.lean": "1eb0fecbbe5764850e3fd390e5f6d1eef39b4f7c",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdReindex.lean": "c131938102b13b71fa352a9a4dca811a4dafa981",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdSupport.lean": "50163f7269e60d2ff4a7e80be7230c540f8a9844",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdOuterSector.lean": "6e6d522eaf79f5a94288e648bb83044b5266d46d",
+    "GRWTSK/NumberTheory/Moebius/PickupOctaveGcdCorrelation.lean": "c96ea058c4f5542e1c035ce4efa16508a43461a9"
+  },
+  "candidate_dependency_recovery_issue": "https://github.com/grwtsk/math/issues/1435",
+  "candidate_dependency_status": "Uploaded Git-data blobs, read back exactly, not claimed integrated on main or formally accepted. Human will integrate reviewed bytes.",
+  "original_candidate_source_commit": "6a5413d2d9b65ca4fe167d851337217f8799fb21",
+  "original_candidate_parent": "2ab77925c947bec795525654150f5a759e7bc640",
+  "base_dependency_blobs": {
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicIncrement.lean": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+    "GRWTSK/NumberTheory/Moebius/CenteredLowGCDRestrictedMobiusLog.lean": "63da93bf88928ffc712002a77c1db9ba8ef7bd7c",
+    "GRWTSK/NumberTheory/Moebius/MobiusDilationPairSplit.lean": "9b196bf64972a14eca30d971aa4a9ce571ca3dfe",
+    "GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean": "334c9129691fd58ae445bbc6463a4314c90301f5",
+    "GRWTSK/Analysis/ErrorBounds/ExponentialQuadraticChord.lean": "2ca4c53933943d2e44d92591499e9e49767e1b60"
+  },
+  "mathematical_scope": {
+    "kernel_antitonicity": "For positive active labels a<=a_prime<=N,b<=b_prime<=N, the actual endpoint cell kernel satisfies K_N(a_prime,b_prime)<=K_N(a,b). Both endpoint weights and nonnegative active response factors are retained.",
+    "required_comparison": "For d>=1 and 3*d<=N: K_N(2*d,3*d)<=K_N(d,2*d), including N=3*d.",
+    "literal_difference": "K_N(d,2*d)-K_N(2*d,3*d)=4*(r_d-r_(3*d))*(r_(2*d)*log(1+1/N)-2*(r_N-r_(N+1))), r_q=1/sqrt(q). No logarithmic term is discarded.",
+    "three_label_formula": "For d>=1,3*d<=N<5*d: gcdCellBlock(N,d)=2*mu(d)^2*(-z2*K_N(d,2*d)-z3*K_N(d,3*d)+z2*z3*K_N(2*d,3*d)), zp=1_[Coprime(d,p)]. Quotient4 is removed only through its proved actual zero coefficient mu(4*d)=0.",
+    "source_masks": "When both 2/3 masks are true use the actual kernel comparison to pay positive pair(2,3). When either is false every affected pair, including positive(2,3), is absent. If mu(d)=0 the actual full block is exactly zero. No multiplicativity without the required support guards.",
+    "signed_sector": "For every natural N,d with d>=1 and N<5*d, the actual full ordered gcd block is nonpositive. Below3*d reuse the existing theorem; equality N=3*d and N=4*d is covered; N=5*d is excluded.",
+    "octave_consumer": "The original endpoint octave increment is <=fiveGcdOctaveRemainder(j), retaining exactly the cells N=2^j,...,2^(j+1)-1 and common divisors5*d<=N. Both quotient orderings, all coprimality masks, cutoff conditions and squarefree mu(d)^2 weights remain.",
+    "comparison_role": "This reduces the unestimated region by proving a larger sector nonpositive; discarding more nonpositive terms does not itself give a numerically smaller upper bound or an improved exponent.",
+    "endpoint_error": "All pair/gcd identities concern the exact endpoint residual. The previously established source/energy curvature-tail allowance1/(8*2^j) remains separate and unchanged.",
+    "rate_status": "No growth exponent improves; (A) and a positive physical Yang-Mills gap remain open."
+  },
+  "next_quantitative_obstruction": {
+    "definition": "M=2^j. C_N(d) is the existing coprimeCellCorrelation with original source masks and actual K_N. Q_j(d)=sum_{M<=N<2*M,5*d<=N} C_N(d). The retained full correlation is sum_{1<=d<=(2*M-1)/5} mu(d)^2*Q_j(d).",
+    "d_one_estimate": "For one fixed0<rho<1, prove Q_j(1)<=A_rho*M^rho with A_rho>=0 independent of j. Here Q_j(1)=sum_{max(M,5)<=N<2*M}sum_{1<=a,b<=N,Coprime(a,b),a!=b}mu(a)*mu(b)*K_N(a,b). No such bound is supplied.",
+    "uniformity_requirement": "A bound only at d=1 cannot control the growing d-sum. A future full-rate argument needs a proved direct weighted aggregate cancellation estimate or one-sided per-d budgets summable uniformly in j, for the d-restricted source mu(a)*1_[Coprime(d,a)] and its actual cutoffs/kernel. A constant merely independent of d, without summable weights, is insufficient.",
+    "existing_lemma_boundary": "The restricted Mobius-log divisor bound and current rough SS/mixed/LL/unit/off-diagonal identities do not establish the required actual-kernel estimate. No conditional RH wrapper is added."
+  },
+  "physical_frontier": "No new operator theorem. The inspected maintained finite cyclic matrix and feature Gram do not define the physical Yang-Mills regulator inner product, Hamiltonian/form domain, ground energy or entire zero-sector. The source-construction and positive uniform coercivity gap remains; no cross-target bridge.",
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "SOURCE_PROOF_CANDIDATES_ACCEPTANCE_PENDING"
+  },
+  "required_acceptance": [
+    "Materialize the exact five uploaded dependency blobs before compiling the two new exact modules; preserve the pinned complete base and package lock.",
+    "Compile the entire actual imported closure, including private finite reductions and upstream Mobius facts, in the declared environment.",
+    "Fresh kernel replay bound to the actual compiled source and dependency bytes; resolve CLI from the exact toolchain.",
+    "Elaborated transitive axiom/hypothesis audit including private/generated/opaque dependencies; reject sorryAx,new research axioms,unsafe or unauthorized native trust,omitted imports,weakened active/mask guards.",
+    "Boundary controls: N=0; positive d; N<3*d; N=3*d; N=4*d; strict N<5*d and retained N=5*d; four 2/3 mask cases; mu(d)=0; both orientations and factor2; exact logarithmic kernel; j=0."
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupCellKernelMonotonicity",
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector"
+  ],
+  "publication_scope": "Upload exact source/target blobs for human integration only. No Git commit/ref/main publication, push retry, remote verification dispatch, dependency migration, root promotion or manuscript construction.",
+  "provenance": "Elementary new derivations from maintained GRWTSK and pinned Mathlib APIs. Upstream source bylines remain preserved; no new external paper theorem is imported.",
+  "integration_base_math_commit": "722bcd9aed7e48977f10c8d8fdbaf327feb87701",
+  "integration_scope": "Recover exact mathematical source blobs onto canonical main with contributor metadata; retain all source-proof-candidate and NOT_RUN acceptance statuses. Original publication_scope and source pins describe the earlier preparation, not a restriction on the human-authorized integration.",
+  "integration_dependency_comparison": {
+    "lean-toolchain": {
+      "source_baseline_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "integration_base_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "unchanged": true
+    },
+    "lakefile.toml": {
+      "source_baseline_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "integration_base_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "unchanged": true
+    },
+    "lake-manifest.json": {
+      "source_baseline_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "integration_base_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicIncrement.lean": {
+      "source_baseline_blob": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+      "integration_base_blob": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": {
+      "source_baseline_blob": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+      "integration_base_blob": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/CenteredLowGCDRestrictedMobiusLog.lean": {
+      "source_baseline_blob": "63da93bf88928ffc712002a77c1db9ba8ef7bd7c",
+      "integration_base_blob": "63da93bf88928ffc712002a77c1db9ba8ef7bd7c",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/MobiusDilationPairSplit.lean": {
+      "source_baseline_blob": "9b196bf64972a14eca30d971aa4a9ce571ca3dfe",
+      "integration_base_blob": "9b196bf64972a14eca30d971aa4a9ce571ca3dfe",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean": {
+      "source_baseline_blob": "334c9129691fd58ae445bbc6463a4314c90301f5",
+      "integration_base_blob": "410e4e0cb57a3fdb244f5a3250980874ba12b41b",
+      "unchanged": false
+    },
+    "GRWTSK/Analysis/ErrorBounds/ExponentialQuadraticChord.lean": {
+      "source_baseline_blob": "2ca4c53933943d2e44d92591499e9e49767e1b60",
+      "integration_base_blob": "2ca4c53933943d2e44d92591499e9e49767e1b60",
+      "unchanged": true
+    }
+  },
+  "integration_difference_note": "AGENTS.md and background PickupRoughMixedQuotientPrime have concurrent changes, recorded separately; the seven recovered source modules are unchanged. No earlier verification is inherited. Kernel checking and transitive dependency closure remain NOT_RUN."
+}
