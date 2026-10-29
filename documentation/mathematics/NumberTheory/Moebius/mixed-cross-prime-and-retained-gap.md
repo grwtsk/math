@@ -226,6 +226,40 @@ This is the complete d=1 off-diagonal, not the complete moment across all gcd
 fibers; no stronger signed or absolute bound, mean estimate, bulk estimate,
 or RH claim follows from this finite decomposition alone.
 
+### Exact coprime q<r form of the full d=1 fiber
+
+The definition `dOnePair` is the original normalized joint-column product,
+with denominator `(1+omega P N q)*(1+omega P N r)` and the actual frozen
+`jointCoefficient P N L N N L G` in both numerator factors.
+`dOnePair_symm` exchanges q and r by commutativity of those two products.
+It needs no symmetry or analytic assumption on G and never replaces the two
+denominator factors by a common parameter.
+
+`dOneUpperTriangle` is the literal double closed quotient sum over
+1<=q,r<=N with gcd(q,r)=1 and q<r. `dOneOffDiagonal_eq_two_mul_upperTriangle`
+partitions q!=r into q<r and r<q, then swaps the same two finite inventories
+to prove the complete signed off-diagonal equals twice that strict triangle.
+The full identity `dOneFiber_eq_unit_add_two_mul_upperTriangle` is therefore
+
+ dOneFiber = (if 1<=N then
+   (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0)
+   + 2*dOneUpperTriangle.
+
+The `_of_one_le` corollary assumes exactly 1<=N. The theorem
+`dOneFiber_upperTriangle_zero_components` explicitly makes the full fiber,
+complete off-diagonal and strict triangle zero at N=0; the conditional unit
+term is zero then as well. All statements otherwise allow arbitrary P,N,L,G.
+The q<r order concerns quotients only, not extraction primes, row products,
+or core indices. The original masks, repeated-prime and long-row coprime
+guards, denominators, closed cutoffs, frozen parameters and product collisions
+are retained. Each triangle summand is the full joint product, so all four
+SS/SL/LS/LL sectors remain; the factor 2 accounts for the two quotient
+orientations. It is not an additional estimate or a covariance identity.
+These two definitions and five theorem scripts are SOURCE_PROOF_CANDIDATE.
+Compilation, fresh kernel replay and transitive axiom audit: NOT_RUN.
+No stronger signed/absolute bound, complete-moment or mean estimate, signed
+bulk bound, or RH claim follows from this finite symmetry identity alone.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
