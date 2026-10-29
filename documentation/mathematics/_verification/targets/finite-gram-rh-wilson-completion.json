@@ -1,0 +1,171 @@
+{
+  "target_id": "finite-gram-rh-wilson-completion-20261029",
+  "kind": "PASSIVE_SOURCE_BOUND_VERIFICATION_TARGET",
+  "local_attribution": "grwtsk contributors",
+  "repository": "grwtsk/math",
+  "source_commit": "f49416e360cf98673ec769b8a0e59e460051f8fd",
+  "source_tree": "c8472ed52fc0867a3791a811805a41754d707ff7",
+  "analysis_base": "874a8c42f5987a6288b6cd2dffd95e3692a6439b",
+  "publication_parent": "3f2b3a1beaeba2ed923b3e660291faae4210a73d",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_dispatch": "NOT_DISPATCHED"
+  },
+  "execution_authority": false,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+  "new_source_modules": [
+    {
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompactPositiveLogarithm.lean",
+      "git_blob": "48dde8eb4fb9b8399ded8eb82f38e25cfb5b0f30",
+      "sha256": "1632807bf5aaf870f2789135589c68ed13e8062f6f63da1729a08d7f391d002a"
+    },
+    {
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/DiagonalHilbertDomain.lean",
+      "git_blob": "0abba75587a2c8873a45a17876b1b0f1a6fe65ee",
+      "sha256": "b37b9afc59bd96e4a00d94ae1556acc9f0fcb899b3befb7a212154ff80715b86"
+    },
+    {
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/FiniteGramCompression.lean",
+      "git_blob": "bd9f27c284a0fd452fac8566103d4c6f3362d4c5",
+      "sha256": "0f0c806b10c02774f1882d5f8c7616826ce49351fb4b420d96418196ccabb0dd"
+    },
+    {
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/VariationalSpectralBracket.lean",
+      "git_blob": "6721568ed9805eaa80518aa8196252d47b252482",
+      "sha256": "b3edf40b405700e99f8417466b389c29b7f08d00b3cc5d36f083cd915a79bafb"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/ContinuousKernelL2Bound.lean",
+      "git_blob": "18477b122203aa306243e2d01291731464e50892",
+      "sha256": "78243ed6e75f35710bb8b8f498eaceaaf9e67b52c73dcb4d953f6cf94b60b879"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/IntervalMeanVariance.lean",
+      "git_blob": "0f1e1e7b6a3401da26ff5d11ab24ea8df783eccc",
+      "sha256": "a891ca920fcfb484408dccffabbb3b2f0ee465af95a27fd89cc72c6dc6f04e24"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/RealKernelQuadratic.lean",
+      "git_blob": "b388a62cd02c0480264f943fda9ebe96e1b32dc3",
+      "sha256": "cc32545031d2dba31dc5f70a0ac8e48be416d0572c07bf0a7c6ad8d381bc7ad8"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniformBinHilbertProjection.lean",
+      "git_blob": "61bdf0e495fb2e3afc3b786cf782969adecbd5df",
+      "sha256": "80e4f299a2d2c3c5d25d8359d1cefa662cf855faa5c965cd4fed25a323e8f858"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniformBinProjection.lean",
+      "git_blob": "d2979f0b087e0f7732d6580c2bb0e6a38cbe806c",
+      "sha256": "f219e8ddc080ed781c7a795da3dfa23df566c8cf5c68c66f17b758dea61a16bb"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupBinProjection.lean",
+      "git_blob": "19e7ebad2d0cd7ff3511c8ec61343b0ed3bf87a8",
+      "sha256": "b546d065c7a13e885c3320fd6898564bdc6866cd439deb33a8a1eac8cd4f1e25"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupBinReadout.lean",
+      "git_blob": "75bd223e2b5cdf9d9cc0f1727b94b0a657a79a1d",
+      "sha256": "d3f250f284fa7edc9810c435b86484e33dfbbfbc8a414d769580f4c46c84a006"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupHilbertProjection.lean",
+      "git_blob": "efdb3bf022c20542755f157656f054add1a1c429",
+      "sha256": "cf5392c2cda1ce6b5c140b67c8dbd93e8679c45df26423cddb342c75ad4f24c3"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFiniteApproximation.lean",
+      "git_blob": "18a57b7a32ecf0a5ba0b2db581374c41b0948b65",
+      "sha256": "9ce26d93dc4b34f6afba9550200613e63a86c2bc3e9adcc6520a0745e510dd38"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFiniteMomentOperator.lean",
+      "git_blob": "25e7e631e2623dc07296d0c3d8b0bf3da3ca5ae9",
+      "sha256": "a52d19d83e089a485c3b48fdc485f8a20edef0a6a9177ad172cfee7a37dddfc0"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceSpectralApproximation.lean",
+      "git_blob": "7be083c362df8022ac5e41d498e2d6065f1be205",
+      "sha256": "665c1d43f79dfd5b3b7c8dc97dddf43fb9c86e14703f8deb7bbbd39fb299c1be"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceTaylorRemainder.lean",
+      "git_blob": "e0aad6cda5dad8f5b4b7cad7115fc1aa24daa9a7",
+      "sha256": "f7c7c2aa04bf27333d97a72bda6acd82e915b538f9340bdd4debcf60f4c65b12"
+    },
+    {
+      "path": "GRWTSK/RealFunctions/ExponentialTaylorRemainder.lean",
+      "git_blob": "f3a0237fa344643272b866342220abc340d77cd6",
+      "sha256": "bf7242ba814abc03f10b42c6d22340fa6b283d1233825bcc4c7fd687687fd8e5"
+    }
+  ],
+  "build_command": "lake build GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceSpectralApproximation GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PickupHilbertProjection GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PickupBinReadout GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.FiniteSignedApproximation",
+  "build_exit_code": null,
+  "axiom_driver": {
+    "location": "external evidence package/AxiomAudit.lean",
+    "sha256": "7b31f8dbef15b0b98337ceb233880ae770714fa1669c7e779c1bb112d12057a1",
+    "public_theorem_count": 183,
+    "command": "lake env lean \"$EXTERNAL_EVIDENCE_DIR/AxiomAudit.lean\"",
+    "exit_code": null
+  },
+  "fresh_replay": {
+    "command": null,
+    "reason": "No source-bound native replay capability was available. Query and select an authorized capability before execution; do not invent a replay receipt."
+  },
+  "dependency_scope": "Entire transitive closure of the build modules at source_commit, including prior whole Taylor and signed-family sources, actual Wilson invariant L2/gauge/compactness/strict positivity sources, and maintained RH endpoint/good-scale/energy/analytic-return chain. Include private, generated and opaque dependencies. Do not validate only terminal wrappers.",
+  "expected_checks": [
+    "All source/dependency/toolchain pins match the isolated checkout; preserve concurrent work and dirty local checkouts.",
+    "All requested modules elaborate and compile with no omitted dependency; repair errors without weakening hypotheses, then create new source pins.",
+    "Fresh kernel replay of the final dependency closure using an authorized source-bound capability, separately from compilation.",
+    "Transitive hypothesis and axiom audit of every public theorem and its private/generated/opaque dependencies; foundation allowance only propext, Classical.choice and Quot.sound. Reject sorryAx, new research axioms, native trust escapes and hidden suppliers.",
+    "Check literal operator compression and complete word inventory; retained normalization, actual residual positivity/norm estimate, variational definitions and true maximal logarithmic domain.",
+    "Check actual RH projection/orthogonality, unchanged source/diagonal/quarter allowance, coefficient mass, signed derivative energy, birth/zero-width cases and exact terminal quantifier order."
+  ],
+  "observed_external_checks": {
+    "diagnostics": {
+      "command": "python /mnt/data/joint_completion/evidence/diagnostics.py",
+      "exit_code": 0,
+      "script_sha256": "f077310c0306ab872b21c7990c58633842a1b30286ccde48f6835e616431fc32",
+      "result_sha256": "37f7cc3627648730d54c3bd8fbdfad56b2f5bec512462b4c689c62557488a1ac",
+      "counts": {
+        "exact_rational": 229,
+        "high_precision": 1222,
+        "floating_matrix": 394,
+        "hostile_controls": 4
+      },
+      "precision_decimal_digits": 80
+    },
+    "static_scan": {
+      "command": "python /mnt/data/joint_completion/evidence/static_audit.py",
+      "exit_code": 0,
+      "script_sha256": "1fa3549b08a9b16fa52a7ed327e4c3a051bd94beb0c0a8dd7398fa3ea725ef15",
+      "result_sha256": "0290e58336de75087d0e64fc079b095ea00e9a5b8ed08a6ae73bc3a5d9d6c12d",
+      "new_module_count": 17,
+      "theorem_declarations": 191,
+      "lines": 2897,
+      "scope": "Lexical new-source and local import-DAG scan only; not parsing, elaboration, full dependency validation or axiom auditing."
+    },
+    "durable_native_receipt": null,
+    "limits": "Finite diagnostics only; floating/high-precision tests are not interval certificates or asymptotic evidence. Finite matrix examples are not actual Wilson Haar spectral certificates. No acceptance is transferred from older source bytes."
+  },
+  "unsupplied_terminal_witnesses": [
+    "All-positive-rate one-sided bound on the explicit RH endpoint upper budget on adequately covering scales.",
+    "Concrete certified finite separation for the actual Wilson matrix.",
+    "Physical-vacuum identification and regulator-uniform continuum/infinite-volume mass-gap construction."
+  ],
+  "workflow_provenance": {
+    "repository": "grwtsk/noeaaeue",
+    "main_snapshot": "d3791d7230a348b061b44eca5556c1ad87c136a0",
+    "skill": "workflows/research/orchestration/skills/noe-proof-automation/SKILL.md",
+    "skill_blob": "f2ccfc6094d3ea985301120e4ae4a1939d196871",
+    "formalization_readme": "operations/skills/formalization/README.md",
+    "formalization_readme_blob": "7aa45f42f0786a746d26054c5daddff0a0af2ab2"
+  }
+}
