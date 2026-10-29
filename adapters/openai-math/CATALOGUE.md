@@ -60,3 +60,12 @@ Further adapter work should supply meaningful mathematical consumers and
 source-bound evidence. Re-export count, file count and finite diagnostics are
 not substitutes for that work. Operational runs, receipts and scheduling state
 belong outside maintained math content.
+
+## Canonical reference maintenance
+
+The [canonical paper ledger](../../documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#openai-adapter-reconciliation)
+reconciles the provider's original two papers and the previously separate
+signed-Abel supplements. Extend that ledger for each actual mathematical bridge,
+with exact hypotheses, source identities, verification evidence or `NOT_RUN`, and
+missing premises. The 721 source records remain a catalogue; this reconciliation
+does not invent paper-to-theorem mappings or certify all 419 import surfaces.

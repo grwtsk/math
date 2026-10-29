@@ -1,8 +1,8 @@
 # OpenAI ordinary-correlation and fourth-moment neighborhood: provenance supplement
 
-Local contribution: grwtsk.
+Local attribution: grwtsk contributors.
 
-This is a complete provenance supplement for the five source leaves below, not a claim that the central `paper-to-formalization-references.md` index has been edited. Central index insertion is PENDING. Its existing entries and concurrent work were not replaced. Operational execution and accepted receipts belong in grwtsk/noeaaeue, not this mathematical repository.
+This is a complete provenance supplement for the five historical source leaves below. Its paper/source mapping is now reconciled in the [canonical paper ledger](paper-to-formalization-references.md#openai-adapter-reconciliation). Existing entries, historical source pins and their verification statuses are preserved; documentation reconciliation is not fresh replay. Operational execution and accepted receipts belong in grwtsk/noeaaeue, not this mathematical repository.
 
 ## Bibliography and immutable upstream identity
 
@@ -57,7 +57,7 @@ All five leaves coexist at math commit `2317d89167091e1acc6b7567ff4b0014c58dbf01
 | `GRWTSK.NumberTheory.Moebius.MertensSignedAbelFourthMoment` | `ef0158780b62d8c3296e1d5bb2b4433bb7cdf174` | `d17981530dbbbbc9087412d66c6f21d60430ed2c` |
 | `GRWTSK.NumberTheory.Moebius.PrimeQuotientAffineWindow` | `2317d89167091e1acc6b7567ff4b0014c58dbf01` | `c877dc36d1fb948b7a40f72c6e89da8250fb0ba0` |
 
-Source paths are the module names with dots replaced by slashes and `.lean` appended. The passive manifest at `docs/verification/NumberTheory/Moebius/MertensSignedAbelFourthMoment/openai-neighborhood-v0.1.toml` records every path, source SHA-256, direct import and all 46 fully qualified public declaration names (8 definitions, 38 theorem scripts).
+Source paths are the module names with dots replaced by slashes and `.lean` appended. The passive manifest at `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/MertensSignedAbelFourthMoment/openai-neighborhood-v0.1.toml` records every path, source SHA-256, direct import and all 46 fully qualified public declaration names (8 definitions, 38 theorem scripts).
 
 ### Corresponding fully qualified principal declarations
 

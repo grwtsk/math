@@ -334,6 +334,114 @@ For positive sigma,T, the exact normalized half-gap is (1/2:Complex)-K(sigma,T)=
 
 **Verification and missing bridges.** Compilation NOT_RUN; fresh kernel replay NOT_RUN; transitive axiom audit NOT_RUN; no execution dispatched. Native formalization remains outstanding. All complementary cell-D pairs, other Gram cells and outside-band source remain unbounded. The negative proper family is not an absolute N^(7/8) estimate, a full energy bound or the all-positive-rate RH estimate.
 
+<a id="openai-adapter-reconciliation"></a>
+## OpenAI adapter reconciliation: ordinary correlations, seven-eighths, and weighted budgets
+
+Local attribution: grwtsk contributors. This entry reconciles the provider references
+and the two previously unindexed signed-Abel supplements with the canonical ledger.
+It does not replace historical source identities or promote their verification status.
+
+### Paper sources and exact imported hypotheses
+
+- **Ordinary correlations:** OpenAI, *Ordinary two-point correlations of multiplicative functions*, September 24, 2026. [Pinned paper](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/final.pdf), PDF blob `a1fa025a59ecbfc5176d16cfdc6e0afd418cc82e`, README blob `965a26b87458fb541e5a0a36d40804ab86cadad7`. Upstream commit `7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a`; Apache-2.0 and the genuine OpenAI byline are preserved. No DOI/arXiv identifier is invented. `OAI.OrdinaryTwoPointCorrelations.liouville_log_saving` supplies one positive exponent and a positive constant for each **fixed** positive-slope affine pair with nonzero determinant, for real cutoffs `X >= 3`. Constants retain form dependence. `binary_corrected_elliott` requires multiplicativity and one-boundedness of both complex functions, uniform nonpretentiousness of at least one, and distinct fixed shifts. `OAI.TwoPointCorrelations.UniformlyNonpretentious.finite_prime_change` preserves nonpretentiousness under bounded changes on one fixed finite prime set; multiplicativity of the modified function remains a separate premise. Sources: `lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean`, blob `2bd48811e73bbdc80c1f738fa889a14189186408`, and `lean/OAI/NumberTheory/TwoPoint/PretentiousDistance.lean`, blob `31e9010dee390175fcaca4f6e1b58c527d58ad2d`.
+- **Seven-eighths gap:** OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8*, September 30, 2026. [Pinned paper](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf), PDF blob `8132b77eeb270a70b25df8d6609f008e83e65d91`, README blob `05daa0838d60781c338ac22a9b06e6990f970981`. Same upstream commit; source `lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean`, blob `46c67f4000906b1391a471d6e6396ac0da3c16a5`. `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` and `OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re` exclude zeros for real part greater than `7/8`; the Dirichlet statement requires a nonzero modulus and exclusion of the principal pole. The real-gap consequence retains `q >= 3`, a nonprincipal character and an actual real L-function zero. No independent acceptance of these analytic inputs is asserted.
+
+### Original derived adapters and exact GRWTSK consumers
+
+The two provider files coexist in math source commit `b3d17463f73294296e07d3f47b4394909476b161`:
+
+| Source | Exact Git blob | Fully qualified declarations |
+| --- | --- | --- |
+| `adapters/openai-math/OpenAITwoPointFiniteFamily.lean` | `7c5ffa0ef9e25e290eeb3ead996217796fa50758` | `GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily.liouville_finite_family_bound`; `GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily.elliott_after_fixed_prime_change`; `GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily.elliott_after_fixed_prime_divisor_change` |
+| `adapters/openai-math/OpenAISevenEighthsGap.lean` | `6d480288f0ec6819097c0e93a0aec1b4d62a47b0` | `GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap.zeta_zero_re_le`; `GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap.dirichlet_zero_re_le`; `GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap.explicit_real_zero_log_gap` |
+
+The finite-family consequence keeps the actual sum of `norm(K_i)*C_i`; it does
+not bound these constants for a growing family. The prime-change set, modulus
+and shifts are fixed before the limit. The real-gap conclusion is
+`log(3)/8 <= (1-beta)*log(q)`, not a zero-density or RH theorem.
+The companion local finite comparison is
+`GRWTSK.Analysis.Inequalities.FiniteCorrelationEnvelope`, blob
+`92b4e6cc721896cd975dfafa26bcce85d805f1b8` at the same math source pin. Its
+`abs_weighted_sum_le_envelope` and `norm_weighted_sum_le_envelope` retain the exact
+coefficient mass; its moving-support construction is a synthetic-array obstruction
+to exchanging fixed-parameter and moving-family quantifiers, not an arithmetic
+counterexample. Source elaboration of this local module was observed in the earlier
+scoped attempt; this is separate from independent replay and upstream admission.
+
+### Reconciled neighborhood supplements
+
+- [Ordinary-correlation/fourth-moment supplement](openai-math-abel-neighborhood-20261027.md): five historical leaves coexist at math `2317d89167091e1acc6b7567ff4b0014c58dbf01`. The module/blob pairs are `GRWTSK.Analysis.FiniteSums.FixedFamilyCancellation` / `6c03671c4088a09aa80d31c08b47f488c397b6d7`, `GRWTSK.Analysis.FiniteSums.WeightedFourthMoment` / `f2db9a1eac06edc182f90c52e3fbd8d52fa8f41a`, `GRWTSK.NumberTheory.Moebius.MertensSignedAbelFixedShiftTransfer` / `527fac817dc472977aa9bd4c419a0c49422039e6`, `GRWTSK.NumberTheory.Moebius.MertensSignedAbelFourthMoment` / `d17981530dbbbbc9087412d66c6f21d60430ed2c`, and `GRWTSK.NumberTheory.Moebius.PrimeQuotientAffineWindow` / `c877dc36d1fb948b7a40f72c6e89da8250fb0ba0`. The supplement preserves exact theorem hypotheses and principal declarations, including `GRWTSK.Analysis.FiniteSums.FixedFamilyCancellation.fixed_family_envelope`, `GRWTSK.NumberTheory.Moebius.MertensSignedAbelFixedShiftTransfer.fixed_family_packet_bound`, and `GRWTSK.NumberTheory.Moebius.PrimeQuotientAffineWindow.quotientWindow_eq_affine_tail`. The complete 46-name source inventory is retained in `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/MertensSignedAbelFourthMoment/openai-neighborhood-v0.1.toml`. The real finite fourth-moment specialization is not a complex theorem with conjugates omitted; no analytic minor-arc estimate is locally admitted.
+- [Ramare/bilinear-window supplement](openai-math-ramare-bilinear-20261027.md): three historical leaves coexist at math `7b863b2ea52083f4c21f454ac527c2608736a888`: `GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor`, blob `64bf00052344c8c93ab85160bff2bc35f94bbedf`; `GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis`, blob `842fcfb27f865736577d3796232bdc8837ea0ab1`; and `GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis`, blob `9d8b2f9d8c150240a5774b12d34953e69cb3d843`. Principal consumers include `GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.abs_full_packet_sub_ramare_raw_le` and `GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_phase_input_comparison`; all 53 fully qualified source declarations and exact requested checks remain in `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/MertensSignedAbelBilinearSynthesis/ramare-bilinear-v0.1.toml`. The upstream sieve requires the fixed prime-band and coefficient bounds, the eventual real band threshold, rational approximation, reduced denominator and frequency-window conditions stated in the supplement. Exact quotient/source identities do not discharge those analytic suppliers, aggregate losses or reconstruction error.
+
+These links complete canonical-index reconciliation of those two supplements;
+their historical compilation/replay/audit `NOT_RUN` records are unchanged.
+The older Lean 4.33.0 / Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`
+records describe their historical source environments. The current root/provider
+baseline is Lean 4.34.1 / Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`;
+version alignment and documentation relocation do not supply fresh verification.
+
+### New actual weighted-residual packet bridge
+
+**Source pin:** math `c60c5243f18ee2473a898f1afe37890abe37964d`, path `GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean`, blob `6892df6058c1da52105e065320bd830ad76391f0`.
+Fully qualified new declarations are:
+
+- `GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.bulkPrefixFunctional_le_two_mul_of_weighted_budget`
+- `GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.abs_bulk_sub_model_le_two_mul_weighted_budget`
+- `GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.packet_le_two_add_model_add_two_mul_weighted_budget`
+
+**Exact hypotheses and use:** `j : Nat`, `width : Nat -> Nat`, real arrays on
+natural shift/prefix pairs, `B >= 0`, and a bound by `B` for each retained depth's
+sum of the **actual** `normalizedSignedAbelShiftKernel j t h * E h (t+1)` over
+`1 <= h < 2^(j+1)`. The residual theorem separately assumes
+`abs(F h (t+1)-G h (t+1)) <= E h (t+1)` at exactly those retained depths and
+shifts. The first theorem proves `bulkPrefixFunctional width j E <= 2*B`, using
+its literal `2/Y` factor, `Y=2^(j+1)`, and zero contribution from excluded depths.
+The second bounds the model residual by `2*B`. The actual packet consumer takes
+`F=mertensTwoPointPrefix`, `width=sqrtWidth`, and proves
+`weightedMertensDyadicSignedAbelDepthPacket j <= 2 + bulkPrefixFunctional sqrtWidth j G + 2*B`.
+The inherited boundary cost two is paid once and the model stays signed.
+
+This improves use of the existing error envelope when its large entries have
+small actual kernel weight; it does not require a pointwise uniform envelope.
+It is an independently derived finite inequality and source-exact GRWTSK
+consumer, not a new imported OpenAI estimate. The arithmetic residual supplier,
+the weighted budget for the actual source, and the signed-model/all-positive-
+exponent growth budget remain distinct missing bridges. No Liouville-to-Moebius
+substitution, moving-family constant control, unconditional RH or historical
+influence is inferred.
+
+The current replay closure is pinned at math `3b5dafb692dd787b9a3d80a23dc37b0515f1c992`, which also includes the prerequisite repair in `GRWTSK/NumberTheory/Moebius/MertensSignedAbelBoundaryCore.lean`, blob `2099b73464a9d8fa539267b57231e9dd92725bcf` (previous blob `ddc5631c450ad8f4fd18d466a4db48568eac251c`). The repair parenthesizes the intended tail-sum summands and resolves boundary condition branches before arithmetic simplification. It changes neither kernel definitions nor mathematical hypotheses; its elaboration and independent checking are not claimed. The original weighted-budget source blob above is unchanged. The mathematical prerequisite repair was introduced in `5d3483cf398d53f10965cecd6ae56425d937adf2`; local attribution was normalized in the current closure pin. A subsequent supported Noe preparation on the former repair pin succeeded with exit 0 and produced a registry at stable producer `0f06eadc72948cd1a28f3d03ffaef9c52b15989c`, without native execution. That preparation is not verification of either snapshot, and the attribution change requires a fresh current-source binding.
+
+**Evidence roles:** imported mathematics is existing Mathlib finite-sum/order
+algebra and the exact GRWTSK kernel, envelope and boundary identities. The three
+new theorems are source proof candidates. Kernel-verified new bridges: none
+claimed. Conditional interfaces retain both residual and weighted-budget
+premises. New finite evidence or analogies: none offered as proof.
+Compilation, fresh independent kernel checking and complete transitive axiom
+checking of the three new declarations are `NOT_RUN`.
+The static specification is `documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-residual-budget-20261028.toml` with its adjacent managed profile.
+An actual maintained Noe `managed_contract_replay.py prepare` attempt for this
+math commit exited 1 with `Noe producer changed during preparation`, before
+creating a registry or dispatching a native child. Its diagnostics are retained
+in the external Noe runtime; the failed preparation is not a mathematical
+counterexample or successful replay. The prior unmanaged compatibility build
+also ended with exit 1 in `MertensSignedAbelBoundaryCore.lean`; neither outcome
+certifies these new declarations. Use a freshly prepared, supported producer
+binding for subsequent execution, without bypassing toolchain, asset, owner or
+resource gates.
+
+### Collection-wide references remain references
+
+The source-pinned provider `adapters/openai-math/catalogue.json` at math
+`b3d17463f73294296e07d3f47b4394909476b161` retains all 721 manuscript source
+records in 373 families and all 419 comparator import surfaces, with 545 distinct
+theorem names. It also retains the upstream formalization catalogue's 176
+source references and 208 main-result records. This reconciles their canonical
+reference location, not every paper's theorem/hypothesis mapping. Exact re-exports
+are explicit upstream dependencies; source-only or unmapped manuscripts remain
+unresolved. Verification is tracked separately in [math #1432](https://github.com/grwtsk/math/issues/1432)
+and the original adapter/consumer scope in [math #1392](https://github.com/grwtsk/math/issues/1392).
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 
