@@ -1,0 +1,68 @@
+{
+  "schema": "grwtsk.source-bound-mathematical-interfaces/1",
+  "local_attribution": "grwtsk contributors",
+  "source_binding": {
+    "repository": "grwtsk/math",
+    "commit": "64d4c9feada934cc3a7cca3b00e049a52704ce6a",
+    "source": "GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean",
+    "git_blob": "c948d147ed5667683ed9088c0a648636d6c2a447",
+    "sha256": "03c09b8bc64a3aba4235284ed605c4fa4bd06f5be42c389e943bbe1b18e6052d",
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "profile": "documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.profile.json",
+  "historical_profile": {
+    "commit": "5cd5c38993679c8e0240b335df60b53891e02ca6",
+    "path": "documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-model-growth-20261028.profile.json",
+    "git_blob": "bb8b981f35b1cfb99c074a23b990d24472bdaebb"
+  },
+  "current_historical_profile_location": {
+    "commit": "e34255f988c9f729858c94d28be36f264021f168",
+    "path": "documentation/mathematics/_verification/targets/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/openai-weighted-model-growth-20261028.profile.json",
+    "git_blob": "bb8b981f35b1cfb99c074a23b990d24472bdaebb",
+    "adjacent_toml": "documentation/mathematics/_verification/targets/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/openai-weighted-model-growth-20261028.toml",
+    "note": "The adjacent TOML retains historical math64d4c9/source c948d147 and its old managed_profile path; no maintained file was changed."
+  },
+  "current_source_comparison_only": {
+    "commit": "e34255f988c9f729858c94d28be36f264021f168",
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MertensSignedAbelCorrelationEnvelope.lean",
+    "git_blob": "5cf2a19415a7505dffce69800b4e6cea4a60ac14",
+    "sha256": "40d787c3cfc2bf6e0d7e9c477cceac1b4a0956880b7ccd333efceb5558d11f47",
+    "only_source_text_changes": "Two import module paths; copyright/header/namespace/declarations/proof text otherwise identical. Separate import closure and source identity; no current-source recertification."
+  },
+  "support_source_blobs": {
+    "GRWTSK/NumberTheory/Moebius/MertensSignedAbelPrimeExtraction.lean": "86dfea00c3ffccd9eb26fd028e8fd09acb2adaa7",
+    "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBoundaryCore.lean": "2099b73464a9d8fa539267b57231e9dd92725bcf",
+    "GRWTSK/NumberTheory/Moebius/MertensSignedAbelSubprobabilityKernel.lean": "60d8e7a6036e14738b9e87fca74f96dd3b50cf00",
+    "GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean": "e5fd3ccece0c98db8554674b457d37becd2870af",
+    "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelDepthPacket.lean": "17c231f572462f054985fb3e8bebd8ab7985e3a5"
+  },
+  "required_declarations": [
+    "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.bulkPrefixFunctional_le_two_mul_of_weighted_budget",
+    "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.abs_bulk_sub_model_le_two_mul_weighted_budget",
+    "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.packet_le_two_add_model_add_two_mul_weighted_budget",
+    "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.riemannHypothesis_of_weighted_model_correlation_budget"
+  ],
+  "classification": "CONDITIONAL_INTERFACES_WITH_UNSUPPLIED_ARITHMETIC_AND_GROWTH_PREMISES",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "unresolved_suppliers": [
+    "Actual arithmetic residual envelope E j h (t+1) dominating the unchanged Mobius ordinary prefix minus chosen signed model G, for every scale, retained depth and shift in Ico 1 (2^(j+1)).",
+    "Nonnegative B j dominating each actual kernel-weighted residual sum, separately at every retained depth and scale.",
+    "For every positive real delta, a nonnegative C (possibly depending on delta, after G/E/B are fixed) uniformly bounding signed bulk(G j)+2*B j by C*(2^j)^delta for every natural j.",
+    "No fixed-shift, logarithmic-average or Liouville result is asserted to provide these uniform ordinary-prefix Mobius premises.",
+    "Fresh producer/policy-bound registry, supported ownership/resource admission, exact dependency roots, fresh native source/module/interface outputs, transitive axiom audit and restoration receipts are unsupplied."
+  ],
+  "acceptance_requires": [
+    "Fresh registry after Anthropic terminal release and supported restoration to exact native4.34.1, with actual producer/policy/source bindings",
+    "Fresh complete source/dependency compilation, target-owned census containing all four required declarations and complete allowed-axiom audit",
+    "Four separate literal expected-type checks preserving actual source quantities and all quantifier order",
+    "Independent exact-source replay and host/resource restoration evidence"
+  ],
+  "relocation_boundary": "The original64d4c9 blob is the verification input. A source-text comparison showing two changed imports does not certify the current MSC source or its distinct dependency closure."
+}

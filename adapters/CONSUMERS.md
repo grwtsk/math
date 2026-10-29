@@ -25,3 +25,11 @@ convergence for cutoff-dependent rows. The moving reference uses the same row;
 no convergence of that reference/readout or growing-family bound is claimed.
 The first wave remains24 declarations; IEANTN and this continuation add3 each.
 All new native/kernel/axiom/interface checks remain NOT_RUN.
+
+## Dense PFR slice continuation
+
+PFR adds three source candidates constructing a full nonempty translated slice
+in its finite submodule, retaining the strict 2*K^9 density bound and deriving its
+actual additive-energy inequality. This is an alternative structural route;
+see pfr/references.md. The earlier 30 source-declaration total now has three
+additional candidates; all native/kernel/axiom/type acceptance remains NOT_RUN.

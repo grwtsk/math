@@ -1,0 +1,54 @@
+{
+  "schema": "grwtsk.source-bound-adapter-consumer-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "source_commit": "9a913f5c7e184d75e8701096c5c5a59b144c2793",
+  "source_tree": "45dce93968b73985dbb71aee4b4f6583fc0c5cc5",
+  "source_path": "adapters/pfr/GRWTSK/Combinatorics/DenseSubmoduleSlice.lean",
+  "source_blob": "83d53ed5afb4254d155a461eeb3bc989498ed554",
+  "source_sha256": "c51f656465e6ce10a3b922731b42394e62c0443a1de9ef215bab02f51f563baf",
+  "profile": "documentation/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.profile.json",
+  "declarations": [
+    "GRWTSK.Combinatorics.DenseSubmoduleSlice.translated_slice_of_finite_cover",
+    "GRWTSK.Combinatorics.DenseSubmoduleSlice.card_pow_four_le_submodule_card_mul_energy",
+    "GRWTSK.Combinatorics.DenseSubmoduleSlice.dense_submodule_slice_of_small_doubling"
+  ],
+  "project_subdir": "adapters/pfr",
+  "toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "mathlib_commit": "8fe7ce475b056f0b266d7107893f2c4d772c712f",
+  "upstream": [
+    {
+      "repository": "teorth/pfr",
+      "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+      "source": "PFR/RhoFunctional.lean",
+      "blob": "af3f89faaf4f12edd2ec9796b93ae77474a99c70",
+      "declarations": [
+        "better_PFR_conjecture"
+      ]
+    }
+  ],
+  "mathlib_api_blobs": {
+    "Mathlib/Combinatorics/Additive/Energy.lean": "cf6b974caa3ae8a5bf0ba857b59c00bcf6d66175",
+    "Mathlib/Data/Finset/Max.lean": "80cee0361ccd7274c9eebeb6d3139d36b1f0659d",
+    "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean": "35dc84ef3c44e3b3431eaeca0be2da74f8e34ed6",
+    "Mathlib/Data/Set/Card.lean": "3d6dda99c874cdc04421aac55ba781ac1718fb82"
+  },
+  "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "acceptance_requires": [
+    "Fresh exact-source registry after math/source/producer/policy changes and qualification of native4.36.0-rc2 through supported Noe ownership",
+    "Fresh compilation of all declared imports with no upstream compiled-cache inputs",
+    "Complete compiler-owned target census and allowed-axiom audit containing all three exact required roots",
+    "Three fresh literal expected-type consumers, including explicit image2/image₂ spelling of scoped pointwise operations",
+    "Independent exact-source replay and resource/host restoration evidence"
+  ],
+  "mathematical_boundaries": [
+    "Root4.34.1 cross-version integration remains unsupplied; no incompatible root imports",
+    "No <3/2 small-doubling premise for B or A is supplied, and energy bound concerns B, not A",
+    "No different-characteristic or arbitrary-group PFR theorem is supplied"
+  ]
+}

@@ -40,3 +40,14 @@ New subject-organized source candidates: `adapters/pfr/GRWTSK/Combinatorics/Smal
 [consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
+
+## Dense translated submodule slice
+
+DenseSubmoduleSlice.lean now constructs actual B={b in H | u+b in A} from the
+pinned finite PFR cover: nonempty B, |H|<=|A|<2*K^9*|B|, B-B subset H, and
+|B|^2*|B|^2<=|H|*Finset.addEnergy B B. Coset overlap and infinite ambient groups
+are allowed; the same B/H are used throughout. It consumes the existing Mathlib
+energy API without copying root definitions. Source commit 9a913f5c7e184d75e8701096c5c5a59b144c2793.
+See [references](references.md), central consumer map and the canonical ledger.
+The static target is `documentation/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json` with adjacent profile/TOML. All native
+compilation/replay/axiom/type checks remain NOT_RUN; root versions are unchanged.

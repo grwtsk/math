@@ -1,0 +1,27 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean",
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.bulkPrefixFunctional_le_two_mul_of_weighted_budget",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.abs_bulk_sub_model_le_two_mul_weighted_budget",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.packet_le_two_add_model_add_two_mul_weighted_budget",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.riemannHypothesis_of_weighted_model_correlation_budget"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.bulkPrefixFunctional_le_two_mul_of_weighted_budget": "∀ (width : ℕ → ℕ) (j : ℕ) (E : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)\n    (hbudget : ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      width j ≤ t ∧ t < 2 ^ (j + 1) - width j →\n      Finset.sum (Finset.Ico 1 (2 ^ (j + 1))) (fun h => GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.normalizedSignedAbelShiftKernel j t h * E h (t + 1)) ≤ B),\n  GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeExtraction.bulkPrefixFunctional width j E ≤ 2 * B",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.abs_bulk_sub_model_le_two_mul_weighted_budget": "∀ (width : ℕ → ℕ) (j : ℕ) (F G E : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)\n    (hE : ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      width j ≤ t ∧ t < 2 ^ (j + 1) - width j →\n      ∀ h ∈ Finset.Ico 1 (2 ^ (j + 1)),\n        |F h (t + 1) - G h (t + 1)| ≤ E h (t + 1))\n    (hbudget : ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      width j ≤ t ∧ t < 2 ^ (j + 1) - width j →\n      Finset.sum (Finset.Ico 1 (2 ^ (j + 1))) (fun h => GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.normalizedSignedAbelShiftKernel j t h * E h (t + 1)) ≤ B),\n  |GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeExtraction.bulkPrefixFunctional width j F - GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeExtraction.bulkPrefixFunctional width j G| ≤ 2 * B",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.packet_le_two_add_model_add_two_mul_weighted_budget": "∀ (j : ℕ) (G E : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)\n    (hE : ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j →\n      ∀ h ∈ Finset.Ico 1 (2 ^ (j + 1)),\n        |GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.mertensTwoPointPrefix h (t + 1) - G h (t + 1)| ≤ E h (t + 1))\n    (hbudget : ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j →\n      Finset.sum (Finset.Ico 1 (2 ^ (j + 1))) (fun h => GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.normalizedSignedAbelShiftKernel j t h * E h (t + 1)) ≤ B),\n  GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weightedMertensDyadicSignedAbelDepthPacket j ≤\n      2 + GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeExtraction.bulkPrefixFunctional GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j G + 2 * B",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.riemannHypothesis_of_weighted_model_correlation_budget": "∀ (G E : ℕ → ℕ → ℕ → ℝ) (B : ℕ → ℝ) (hB : ∀ j, 0 ≤ B j)\n    (hE : ∀ j : ℕ, ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j →\n      ∀ h ∈ Finset.Ico 1 (2 ^ (j + 1)),\n        |GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.mertensTwoPointPrefix h (t + 1) - G j h (t + 1)| ≤ E j h (t + 1))\n    (hweighted : ∀ j : ℕ, ∀ t ∈ Finset.range (2 ^ (j + 1)),\n      GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j →\n      Finset.sum (Finset.Ico 1 (2 ^ (j + 1))) (fun h => GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.normalizedSignedAbelShiftKernel j t h * E j h (t + 1)) ≤ B j)\n    (hgrowth : ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧ ∀ j : ℕ,\n      GRWTSK.NumberTheory.Moebius.MertensSignedAbelPrimeExtraction.bulkPrefixFunctional GRWTSK.NumberTheory.Moebius.MertensSignedAbelBoundaryCore.sqrtWidth j (G j) + 2 * B j ≤\n        C * (((2 ^ j : ℕ) : ℝ) ^ δ)),\n  _root_.RiemannHypothesis"
+      }
+    }
+  ]
+}

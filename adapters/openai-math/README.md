@@ -100,3 +100,14 @@ hooks or silently substitute a newer PNT. The canonical ledger anchor
 openai-patched-pnt-source-boundary-20261029 and static target
 `documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json` retain exact identities and acceptance obligations.
 All native, comparator, axiom and expected-interface checks remain NOT_RUN.
+
+## Four exact historical weighted-model interfaces
+
+The additional complete-module expected-type target `documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.json` and adjacent
+profile/TOML retain source 64d4c9/c948d147, all four exact roots, actual residual
+and kernel quantities, signed model, 2B and every-positive-exponent growth order.
+Current MSC source/import changes have separate identities and acceptance scopes.
+Actual arithmetic residual and growth suppliers remain unsupplied; no RH proof
+is claimed. Compilation, fresh replay, complete axiom and type checks are NOT_RUN.
+The original historical target remains intact; the OAI/Liouville patched-PNT
+source-supply obligation is separate.

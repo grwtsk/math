@@ -1,0 +1,29 @@
+{
+  "project_subdir": "adapters/pfr",
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/DenseSubmoduleSlice.lean",
+      "universes": [
+        "u"
+      ],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.Combinatorics.DenseSubmoduleSlice.translated_slice_of_finite_cover",
+        "GRWTSK.Combinatorics.DenseSubmoduleSlice.card_pow_four_le_submodule_card_mul_energy",
+        "GRWTSK.Combinatorics.DenseSubmoduleSlice.dense_submodule_slice_of_small_doubling"
+      ],
+      "module_expected_types": {
+        "GRWTSK.Combinatorics.DenseSubmoduleSlice.translated_slice_of_finite_cover": "∀ {G : Type u} [AddCommGroup G] [Module (ZMod 2) G]\n  {A : Finset G} {c : Set G} (H : Submodule (ZMod 2) G)\n  (hA : A.Nonempty) (hc : c.Finite)\n  (hcover : (A : Set G) ⊆ Set.image2 (fun a b : G => a + b) c (H : Set G)),\n  ∃ u ∈ c, ∃ B : Finset G,\n    (B : Set G) = {b | b ∈ H ∧ u + b ∈ A} ∧ B.Nonempty ∧\n      A.card ≤ Nat.card c * B.card",
+        "GRWTSK.Combinatorics.DenseSubmoduleSlice.card_pow_four_le_submodule_card_mul_energy": "∀ {G : Type u} [AddCommGroup G] [Module (ZMod 2) G] [DecidableEq G]\n  {B : Finset G} (H : Submodule (ZMod 2) G) (hH : (H : Set G).Finite)\n  (hB : (B : Set G) ⊆ (H : Set G)),\n  B.card ^ 2 * B.card ^ 2 ≤ (H : Set G).ncard * Finset.addEnergy B B",
+        "GRWTSK.Combinatorics.DenseSubmoduleSlice.dense_submodule_slice_of_small_doubling": "∀ {G : Type u} [AddCommGroup G] [Module (ZMod 2) G] [DecidableEq G]\n  {A : Finset G} {K : Real} (hA : A.Nonempty)\n  (hsmall : ((Finset.image₂ (fun a b : G => a + b) A A).card : Real) ≤\n    K * (A.card : Real)),\n  ∃ (H : Submodule (ZMod 2) G) (u : G) (B : Finset G),\n    (H : Set G).Finite ∧ (H : Set G).ncard ≤ A.card ∧\n    (B : Set G) = {b | b ∈ H ∧ u + b ∈ A} ∧ B.Nonempty ∧\n    (A.card : Real) < (2 * K ^ (9 : Nat)) * (B.card : Real) ∧\n    ((Finset.image₂ (fun a b : G => a - b) B B) : Set G) ⊆ (H : Set G) ∧\n    B.card ^ 2 * B.card ^ 2 ≤ (H : Set G).ncard * Finset.addEnergy B B"
+      }
+    }
+  ]
+}
