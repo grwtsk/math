@@ -8,7 +8,7 @@ import Mathlib.Tactic
 
 Build separately in openai/math/lean at
 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a (Lean 4.34.1).
-Do not import its compiled artifacts into the Lean 4.33.0 GRWTSK project.
+The standalone provider package supplies OAI; the main GRWTSK build does not.
 The exponent is common; the coefficients C_i retain affine-form dependence.
 There is no uniform bound on C_i as the family grows, no Mobius substitution,
 and no assertion about the GRWTSK source kernel.
