@@ -1,0 +1,15 @@
+import Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup
+import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+import Mathlib.Tactic
+#check ConvexOn.comp_affineMap
+#check ConvexOn.add
+#check ConvexOn.subset
+#check AffineMap.const
+#check AffineMap.convexOn
+#check AffineMap.lineMap
+#check LinearMap.convexOn
+#check ConvexOn.congr
+#check ConvexOn.add_const
+#check ConvexOn.mul_const
+#check Real.Gamma_pos_of_pos
+#check Complex.Gamma_ofReal

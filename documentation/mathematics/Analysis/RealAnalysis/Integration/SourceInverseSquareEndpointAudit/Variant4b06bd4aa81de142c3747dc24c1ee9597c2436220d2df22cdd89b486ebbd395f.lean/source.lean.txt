@@ -1,0 +1,22 @@
+import SourceInverseSquareEndpointConsumer
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceInverseSquareEndpointConsumer
+
+#check closed_upper_atom_weight_zero
+#print axioms closed_upper_atom_weight_zero
+#check inverse_square_at_two
+#print axioms inverse_square_at_two
+#check shifted_full_primitive_at_first_atom
+#print axioms shifted_full_primitive_at_first_atom
+#check shifted_second_primitive_at_first_atom
+#print axioms shifted_second_primitive_at_first_atom
+#check primitiveDensity_eq_inverse_square
+#print axioms primitiveDensity_eq_inverse_square
+#check centeredCriticalPrimitive_eq_lower_integral
+#print axioms centeredCriticalPrimitive_eq_lower_integral
+#check actualCesaroPrimitive_eq_inverse_square_double
+#print axioms actualCesaroPrimitive_eq_inverse_square_double
+#check shifted_full_primitive_first_component_applied
+#print axioms shifted_full_primitive_first_component_applied

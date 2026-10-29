@@ -1,0 +1,14 @@
+import Mathlib.Analysis.SumIntegralComparisons
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+#check Finset.sum_Icc_succ_top
+#check Nat.le_induction
+#check Nat.floor_le
+#check Nat.lt_floor_add_one
+#check Nat.le_floor
+#check Nat.one_le_floor
+#check intervalIntegral.integral_const
+#check intervalIntegral.integral_mono_on
+#check intervalIntegral.integral_nonneg
+#check ContinuousOn.intervalIntegrable
+#check Real.continuousOn_log
+#check Finset.sum_Ico_add

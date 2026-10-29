@@ -1,0 +1,7 @@
+import scratch.common_mean_20261004.FiveModeGammaConstant
+#check CommonMeanScratch.quarter_digamma_le_one_sub_three
+#print axioms CommonMeanScratch.quarter_digamma_le_one_sub_three
+#check CommonMeanScratch.actual_archimedeanConstant_gt_four
+#print axioms CommonMeanScratch.actual_archimedeanConstant_gt_four
+#check CommonMeanScratch.actual_gamma_constant_lt_neg_four
+#print axioms CommonMeanScratch.actual_gamma_constant_lt_neg_four

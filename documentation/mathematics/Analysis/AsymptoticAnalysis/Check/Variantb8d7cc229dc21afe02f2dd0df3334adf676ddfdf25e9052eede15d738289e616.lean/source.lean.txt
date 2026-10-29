@@ -1,0 +1,17 @@
+import scratch.common_mean_20261004.FiveModeZeroHead
+#check tsum_subtype
+#check tsum_subtype_eq_of_support_subset
+#check tsum_subtype_eq_of_support_subset_of_finite
+#check tsum_subtype_eq_of_support_subset
+#check Equiv.tsum_eq
+#check Equiv.tsum_eq_iff
+#check Summable.indicator
+#check Summable.norm
+#check Summable.tsum_add
+#check norm_star
+#check tsum_add
+#check tsum_subtype_eq_tsum_indicator
+#check tsum_fintype
+#check Equiv.Set.sumCompl
+#check Equiv.subtypeEquiv
+#check Set.Finite.finsum_mem

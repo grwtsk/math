@@ -1,0 +1,29 @@
+import SourceActualAdjointAbelPrimitives
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives
+set_option pp.fullNames false
+#print actualTimeLower
+#print actualColumnUpper
+#print actualLogColumnPrefix
+#print actualAdjointTimePrimitive
+#print actualAdjointColumnPrimitive
+#print actualAdjointTimePrimitive_abs_le
+#print actualLogColumnPrefix_measurable
+#print actualLogColumnPrefix_abs_le
+#print actualAdjointColumnPrimitive_abs_le
+#print actualAdjointTimePrimitive_at_lower
+#print actualAdjointColumnPrimitive_at_upper
+#print actualLogColumnPrefix_on_cell
+#print actualAdjointTimePrimitive_absolutelyContinuous
+#print actualAdjointTimePrimitive_ae_hasDerivAt
+#print actualAdjointColumnPrimitive_absolutelyContinuous
+#print actualAdjointColumnPrimitive_ae_hasDerivAt
+#print actual_time_covariant_abel
+#print actual_column_covariant_abel

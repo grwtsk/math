@@ -1,0 +1,29 @@
+import FormalResearch.PositiveAtlas.Certification
+import FormalResearch.PositiveAtlas.FiniteLogAffineSecondDerivative
+import FormalResearch.PositiveAtlas.ExplicitSchurMatrix
+import FormalResearch.PositiveAtlas.GeneralizedInverseSchur
+import FormalResearch.PositiveAtlas.ProvenanceProjection
+
+open FormalResearch.PositiveAtlas
+set_option pp.universes true
+set_option pp.proofs false
+#print CertificateFamily
+#print CertificateFamily.Equivalent
+#print SufficientRepresentation
+#print SufficientRepresentation.FactorsThrough
+#print SufficientRepresentation.IsMinimal
+#print StructuralQuine
+#check StructuralQuine.project_idempotent
+#print PositiveForm
+#check PositiveForm.pullback
+#print ProvenanceProjector
+#check ProvenanceProjector.quadratic_decomposition
+#check ProvenanceProjector.residual_eq_sub_projected
+#print FiniteLogAffineFamily
+#check FiniteLogAffineFamily.probability_sum
+#check FiniteLogAffineFamily.covarianceForm
+#check FiniteLogAffineFamily.iterated_fderiv_logPartition_eq_covariance
+#print MatrixBlockRealization
+#check MatrixBlockRealization.schurForm_eq_schurMatrix
+#print GeneralizedInverseBlockRealization
+#check GeneralizedInverseBlockRealization.schurForm_eq_generalizedSchurMatrix

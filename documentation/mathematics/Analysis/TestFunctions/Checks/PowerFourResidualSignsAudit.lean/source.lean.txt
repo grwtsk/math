@@ -1,0 +1,14 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.Analysis.TestFunctions.PowerFourResidualSigns
+
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_closed_factor
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_deriv_closed_factor
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.right_strip_coordinate_bounds
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.right_strip_bracket_signs
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_right_strip_signs
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_reflected_on_support
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_left_strip_signs
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_deriv_zero_outside
+#print axioms GRWTSK.ProofHorizon.CorkscrewChamberCap.SourcePositiveSector.normalized_source_endpoint_zero

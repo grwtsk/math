@@ -1,0 +1,29 @@
+import SourceCesaroKernelBudget
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+open RH16CesaroKernel
+#check actual_correlation_three_upper_traces
+#print axioms actual_correlation_three_upper_traces
+#check actual_correlation_third_abs_le_upper_distance
+#print axioms actual_correlation_third_abs_le_upper_distance
+#check actual_correlation_third_abs_le_physical
+#print axioms actual_correlation_third_abs_le_physical
+#check cesaroWeight_hasDerivAt
+#print axioms cesaroWeight_hasDerivAt
+#check cesaroWeight_second_deriv
+#print axioms cesaroWeight_second_deriv
+#check cesaroWeight_second_deriv_continuous
+#print axioms cesaroWeight_second_deriv_continuous
+#check cesaroWeight_second_abs_le_physical
+#print axioms cesaroWeight_second_abs_le_physical
+#check cesaroWeight_weighted_second_budget
+#print axioms cesaroWeight_weighted_second_budget
+#check cesaroWeight_weighted_second_budget_uniform
+#print axioms cesaroWeight_weighted_second_budget_uniform
+#check cesaroWeight_weighted_second_budget_sharp
+#print axioms cesaroWeight_weighted_second_budget_sharp
+#check cesaroWeight_weighted_second_budget_sharp_uniform
+#print axioms cesaroWeight_weighted_second_budget_sharp_uniform

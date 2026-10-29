@@ -1,0 +1,33 @@
+import SourceCesaroPrimitiveConsumer
+set_option autoImplicit false
+set_option linter.style.setOption false
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.fullNames true
+open RH16CesaroPrimitive
+#check centeredCriticalPrimitive
+#print axioms centeredCriticalPrimitive
+#check actualCesaroPrimitive
+#print axioms actualCesaroPrimitive
+#check centeredCriticalPrimitive_at_first_atom
+#print axioms centeredCriticalPrimitive_at_first_atom
+#check actualCesaroPrimitive_at_first_atom
+#print axioms actualCesaroPrimitive_at_first_atom
+#check centeredCriticalPrimitive_absolutelyContinuous
+#print axioms centeredCriticalPrimitive_absolutelyContinuous
+#check actualCesaroPrimitive_absolutelyContinuous
+#print axioms actualCesaroPrimitive_absolutelyContinuous
+#check actual_centered_second_primitive_parts
+#print axioms actual_centered_second_primitive_parts
+#check remainingAtomWork_eq_cesaro_integral
+#print axioms remainingAtomWork_eq_cesaro_integral
+#check criticalPrimeTest_at_first_atom_nonneg
+#print axioms criticalPrimeTest_at_first_atom_nonneg
+#check remainingAtomWork_lower_of_cesaro
+#print axioms remainingAtomWork_lower_of_cesaro
+#check estimate_of_actual_cesaro_global
+#print axioms estimate_of_actual_cesaro_global
+#check all_real_source_lower_of_actual_cesaro_global
+#print axioms all_real_source_lower_of_actual_cesaro_global
+#check estimate_of_actual_cesaro_global_exists
+#print axioms estimate_of_actual_cesaro_global_exists

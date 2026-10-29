@@ -1,0 +1,10 @@
+import Mathlib.Algebra.BigOperators.Intervals
+import Mathlib.Analysis.Calculus.Deriv.Pow
+#check Finset.sum_Ico_sub
+#check Finset.sum_Icc_sub
+#check Finset.sum_Ico_sub'
+#check HasDerivAt.const_mul
+#check HasDerivAt.pow
+#check ContinuousOn.comp
+#check Real.rpow_add
+#check Real.sqrt_eq_rpow

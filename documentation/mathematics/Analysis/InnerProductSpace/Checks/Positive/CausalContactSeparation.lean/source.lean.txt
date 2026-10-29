@@ -1,0 +1,29 @@
+import GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation
+
+#print axioms response_zero_before_or_at_contact
+#print axioms window_response_eq_zero_of_before_contact
+#print axioms touching_window_response_eq_zero
+#print axioms native_before_contact_row_zero
+#print axioms prescribed_source_vector_ne_zero
+#print axioms zero_preserving_contact_map_ne_source
+#print axioms linear_contact_map_ne_source
+#print axioms diagonal_scaled_native_ne_source
+#print axioms native_contact_no_source_quadratic_domination
+#print axioms prescribed_horizon_restricted_obstructions
+
+#check response_zero_before_or_at_contact
+#check window_response_eq_zero_of_before_contact
+#check touching_window_response_eq_zero
+#check native_before_contact_row_zero
+#check prescribed_source_vector_ne_zero
+#check zero_preserving_contact_map_ne_source
+#check linear_contact_map_ne_source
+#check diagonal_scaled_native_ne_source
+#check native_contact_no_source_quadratic_domination
+#check prescribed_horizon_restricted_obstructions
+
+end GRWTSK.Analysis.InnerProductSpace.CausalContactSeparation

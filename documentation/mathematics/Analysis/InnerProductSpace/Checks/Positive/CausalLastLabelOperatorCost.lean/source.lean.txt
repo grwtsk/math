@@ -1,0 +1,19 @@
+import GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost
+
+#print axioms last_label_diagonal_quartic_upper
+#print axioms last_label_continuous_realization_norm
+#print axioms last_label_continuous_realization_exponential_norm
+#print axioms prescribed_horizon_last_label_exponential_norm
+#print axioms whole_inventory_continuous_realization_exponential_norm
+
+#check last_label_diagonal_quartic_upper
+#check last_label_continuous_realization_norm
+#check last_label_continuous_realization_exponential_norm
+#check prescribed_horizon_last_label_exponential_norm
+#check whole_inventory_continuous_realization_exponential_norm
+
+end GRWTSK.Analysis.InnerProductSpace.CausalLastLabelOperatorCost

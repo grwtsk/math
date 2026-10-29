@@ -1,0 +1,13 @@
+import SourceActualXiDampedTailReturn
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiDampedTailReturn
+#print actualDampedXiReturnTest
+#print actualDampedXiReturnDensity
+#print actualDampedXiFinitePrimitive_absolutelyContinuous
+#print actualDampedXiFinitePrimitive_ae_hasDerivAt
+#print actualDampedXiFinitePrimitive_at_lower
+#print actualDampedXiReturnTest_hasDerivAt
+#print actualDampedXiReturnTest_at_upper
+#print completeXiTail_eq_damped_primitive_return
+#print actualDampedXiReturnDensity_edge_abs_le
+#print completeXiTail_abs_le_damped_edge_budget

@@ -1,0 +1,9 @@
+import ActualSupportEdgeLowerTrace
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeLowerTrace
+#print actualLowerTimeFactor
+#print actualLowerTimeFactor_eq_negative_error_integral
+#print actualLowerTimeFactor_abs_le
+#print actualCriticalAdjustedLowerColumnTrace_abs_le
+#print actualCriticalAdjustedLowerColumnTrace_abs_le_square
+#print actualCriticalAdjustedLowerColumnTrace_tendsto_zero

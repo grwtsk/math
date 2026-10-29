@@ -1,0 +1,16 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusDerivative
+
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusDerivative
+
+#check sourceKernelTerm_hasDerivAt
+#print axioms sourceKernelTerm_hasDerivAt
+#check sourceKernelTerm_deriv
+#print axioms sourceKernelTerm_deriv
+#check sourceMobiusKernel_deriv
+#print axioms sourceMobiusKernel_deriv
+#check sourceCorrelation_deriv_zero_of_two_mul_le
+#print axioms sourceCorrelation_deriv_zero_of_two_mul_le
+#check sourceKernelTerm_deriv_upper_zero
+#print axioms sourceKernelTerm_deriv_upper_zero
+#check sourceMobiusKernel_deriv_upper_zero
+#print axioms sourceMobiusKernel_deriv_upper_zero

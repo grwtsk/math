@@ -1,0 +1,23 @@
+import FormalResearch.SUCAS.Realization
+#print axioms FormalResearch.SUCAS.Realization.bumpInterior
+#print axioms FormalResearch.SUCAS.Realization.firstInterior
+#print axioms FormalResearch.SUCAS.Realization.secondInterior
+#print axioms FormalResearch.SUCAS.Realization.explicitSecondDerivative
+#print axioms FormalResearch.SUCAS.Realization.scaledBump_eq_indicator
+#print axioms FormalResearch.SUCAS.Realization.bumpInterior_continuous
+#print axioms FormalResearch.SUCAS.Realization.firstInterior_continuous
+#print axioms FormalResearch.SUCAS.Realization.secondInterior_continuous
+#print axioms FormalResearch.SUCAS.Realization.bumpInterior_hasDerivAt
+#print axioms FormalResearch.SUCAS.Realization.firstInterior_hasDerivAt
+#print axioms FormalResearch.SUCAS.Realization.bumpInterior_endpoints
+#print axioms FormalResearch.SUCAS.Realization.firstInterior_endpoints
+#print axioms FormalResearch.SUCAS.Realization.secondInterior_endpoints
+#print axioms FormalResearch.SUCAS.Realization.integrable_zeroExtension
+#print axioms FormalResearch.SUCAS.Realization.zeroExtension_integral
+#print axioms FormalResearch.SUCAS.Realization.scaledBump_integrable
+#print axioms FormalResearch.SUCAS.Realization.explicitSecondDerivative_integrable
+#print axioms FormalResearch.SUCAS.Realization.scaledBump_weak_second_derivative
+#print axioms FormalResearch.SUCAS.Realization.explicit_dilationTest_zero_extension
+#print axioms FormalResearch.SUCAS.Realization.explicit_dilationTest_integrable
+#print axioms FormalResearch.SUCAS.Realization.explicit_dilationTest_eq_indicator
+#print axioms FormalResearch.SUCAS.Realization.explicit_dilationTest_square_integrable

@@ -1,0 +1,15 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbola
+open MeasureTheory
+#check Ici_ae_eq_Ioi
+#check Icc_ae_eq_Ioc
+#check Set.indicator_congr_ae
+#check MeasureTheory.integral_finset_sum
+#check intervalIntegral.integral_finset_sum
+#check intervalIntegral.integral_add_adjacent_intervals
+#check IntervalIntegrable.mono_set
+#check Set.Ioi_inter_Ioc
+#check Set.Ioc_inter_Ioi
+#check Set.inter_Ioc_eq_Ioc
+#check Nat.cast_max
+#check integral_indicator
+#check Finset.sum_neg_distrib

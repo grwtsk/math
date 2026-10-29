@@ -1,0 +1,81 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceExactTailEnergy.Variantc25a58944b60fe17fa2b4f15d7d274a2ac3631c63fe8eec126bc270df3d6c469","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c25a58944b60fe17fa2b4f15d7d274a2ac3631c63fe8eec126bc270df3d6c469","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceExactTailEnergy.Variantc25a58944b60fe17fa2b4f15d7d274a2ac3631c63fe8eec126bc270df3d6c469","mathematical_subject":"Analysis.Calculus","original_sha256":"c25a58944b60fe17fa2b4f15d7d274a2ac3631c63fe8eec126bc270df3d6c469","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/graph-review/independent-review/IndependentExactEnergyAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceExactTailEnergy
+import SourceExactEnergyMeanConsumer
+import SourceExactEnergyComparison
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceExactTailEnergy.Variantc25a58944b60fe17fa2b4f15d7d274a2ac3631c63fe8eec126bc270df3d6c469
+
+#check RH16ExactTailEnergy.tailEnergyCoefficient
+#print axioms RH16ExactTailEnergy.tailEnergyCoefficient
+#check RH16ExactTailEnergy.exact_ratio_comparison
+#print axioms RH16ExactTailEnergy.exact_ratio_comparison
+#check RH16ExactTailEnergy.exact_ratio_mono
+#print axioms RH16ExactTailEnergy.exact_ratio_mono
+#check RH16ExactTailEnergy.tailEnergyCoefficient_pos
+#print axioms RH16ExactTailEnergy.tailEnergyCoefficient_pos
+#check RH16ExactTailEnergy.tailEnergyCoefficient_antitone
+#print axioms RH16ExactTailEnergy.tailEnergyCoefficient_antitone
+#check RH16ExactTailEnergy.actual_derivative_energy_le_tail
+#print axioms RH16ExactTailEnergy.actual_derivative_energy_le_tail
+#check RH16ExactTailEnergy.actual_correlation_deriv_abs_le_tail
+#print axioms RH16ExactTailEnergy.actual_correlation_deriv_abs_le_tail
+#check RH16ExactTailEnergy.actual_correlation_second_deriv_abs_le_tail
+#print axioms RH16ExactTailEnergy.actual_correlation_second_deriv_abs_le_tail
+#check RH16ExactTailEnergy.tailEnergyCoefficient_ninety_one
+#print axioms RH16ExactTailEnergy.tailEnergyCoefficient_ninety_one
+#check RH16ExactTailEnergy.tailEnergyCoefficient_ninety_one_lt_five
+#print axioms RH16ExactTailEnergy.tailEnergyCoefficient_ninety_one_lt_five
+#check RH16ExactTailEnergy.tailEnergyCoefficient_le_five
+#print axioms RH16ExactTailEnergy.tailEnergyCoefficient_le_five
+#check RH16ExactTailEnergy.actual_correlation_derivative_bounds
+#print axioms RH16ExactTailEnergy.actual_correlation_derivative_bounds
+#check RH16ExactEnergyMean.exactWeightBudget
+#print axioms RH16ExactEnergyMean.exactWeightBudget
+#check RH16ExactEnergyMean.exactMeanTailBudget
+#print axioms RH16ExactEnergyMean.exactMeanTailBudget
+#check RH16ExactEnergyMean.exactMeanAtomBudget
+#print axioms RH16ExactEnergyMean.exactMeanAtomBudget
+#check RH16ExactEnergyMean.exactMeanResidualBudget
+#print axioms RH16ExactEnergyMean.exactMeanResidualBudget
+#check RH16ExactEnergyMean.exactWeightBudget_nonneg
+#print axioms RH16ExactEnergyMean.exactWeightBudget_nonneg
+#check RH16ExactEnergyMean.exactMeanTailBudget_nonneg
+#print axioms RH16ExactEnergyMean.exactMeanTailBudget_nonneg
+#check RH16ExactEnergyMean.physicalCurvatureWeight_abs_le_exact
+#print axioms RH16ExactEnergyMean.physicalCurvatureWeight_abs_le_exact
+#check RH16ExactEnergyMean.complete_tail_abs_le_exact_weighted_mass
+#print axioms RH16ExactEnergyMean.complete_tail_abs_le_exact_weighted_mass
+#check RH16ExactEnergyMean.complete_tail_abs_le_exact_mean
+#print axioms RH16ExactEnergyMean.complete_tail_abs_le_exact_mean
+#check RH16ExactEnergyMean.complete_tail_lower_of_exact_mean
+#print axioms RH16ExactEnergyMean.complete_tail_lower_of_exact_mean
+#check RH16ExactEnergyMean.exactMeanAtomBudget_eq
+#print axioms RH16ExactEnergyMean.exactMeanAtomBudget_eq
+#check RH16ExactEnergyMean.atom_witness_of_exact_mean
+#print axioms RH16ExactEnergyMean.atom_witness_of_exact_mean
+#check RH16ExactEnergyMean.all_real_lower_of_exact_mean
+#print axioms RH16ExactEnergyMean.all_real_lower_of_exact_mean
+#check RH16ExactEnergyMean.estimate_of_exact_mean
+#print axioms RH16ExactEnergyMean.estimate_of_exact_mean
+#check RH16ExactEnergyMean.residual_upper_of_exact_mean
+#print axioms RH16ExactEnergyMean.residual_upper_of_exact_mean
+#check RH16ExactEnergyMean.actual_leading_upper_of_exact_mean
+#print axioms RH16ExactEnergyMean.actual_leading_upper_of_exact_mean
+#check RH16ExactEnergyMean.exactMeanTailBudget_forty
+#print axioms RH16ExactEnergyMean.exactMeanTailBudget_forty
+#check RH16ExactEnergyComparison.exactMeanTailBudget_le_original
+#print axioms RH16ExactEnergyComparison.exactMeanTailBudget_le_original
+#check RH16ExactEnergyComparison.exactMeanAtomBudget_le_original
+#print axioms RH16ExactEnergyComparison.exactMeanAtomBudget_le_original
+#check RH16ExactEnergyComparison.exactMeanResidualBudget_le_original
+#print axioms RH16ExactEnergyComparison.exactMeanResidualBudget_le_original
+#check RH16ExactEnergyComparison.atom_budget_gain_when_active
+#print axioms RH16ExactEnergyComparison.atom_budget_gain_when_active
+#check RH16ExactEnergyComparison.original_lower_budget_le_exact
+#print axioms RH16ExactEnergyComparison.original_lower_budget_le_exact
+#check RH16ExactEnergyComparison.tail_lower_gain_when_active
+#print axioms RH16ExactEnergyComparison.tail_lower_gain_when_active

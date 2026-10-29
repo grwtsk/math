@@ -1,0 +1,6 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourcePlancherel
+open MeasureTheory
+#check integral_ofReal
+#check intervalIntegral.integral_comp_neg
+#check Continuous.intervalIntegrable
+#check intervalIntegral.integral_add_adjacent_intervals

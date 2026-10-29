@@ -1,0 +1,16 @@
+import Mathlib.NumberTheory.AbelSummation
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+#check intervalIntegral.integral_mul_deriv_eq_deriv_mul
+#check MeasureTheory.IntegrableOn.mul_continuousOn
+#check ContinuousOn.mul_integrableOn
+#check MeasureTheory.IntegrableOn.mul_continuousOn_of_subset
+#check ContinuousOn.integrableOn_Icc
+#check intervalIntegrable_iff_integrableOn_Icc_of_le
+#check intervalIntegral.integral_sub
+#check intervalIntegral.integral_congr
+#check Finset.Icc_eq_cons_Ioc
+#check Finset.card_Icc
+#check Nat.card_Icc
+#check ContDiff.continuous_deriv
+#check ContDiff.differentiable
+#check intervalIntegral.abs_integral_le_integral_abs

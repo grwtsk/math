@@ -1,0 +1,199 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.FunctionalAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.FunctionalAnalysis.SmoothDyadicWeight.Variantab3682ea1164df21f1151c66a5a5e545b3697cc160f6156403876be62c69f050","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ab3682ea1164df21f1151c66a5a5e545b3697cc160f6156403876be62c69f050","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.FunctionalAnalysis.SourceCorpus.SmoothDyadicWeight.Variantab3682ea1164df21f1151c66a5a5e545b3697cc160f6156403876be62c69f050","mathematical_subject":"Analysis.FunctionalAnalysis","original_sha256":"ab3682ea1164df21f1151c66a5a5e545b3697cc160f6156403876be62c69f050","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:5816f0733e70f19a34424d97/workspace/lib/Surface/Core/ConductorThreePolarizedPackets.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+module
+
+public meta import Surface.Core.Classification
+public import Surface.Core.ConductorThreeVonMangoldt
+public import Surface.Core.PrimeWalkWangZahlGeometry
+public import Mathlib.Analysis.Distribution.SchwartzSpace.Deriv
+import Mathlib.Tactic
+
+/-!
+# Polarized conductor-three packet theorem surface
+
+This module fixes the arithmetic target and gives the speculative geometric
+bridge one unmistakable name.  The input to the bridge is the unsummed
+coefficient sequence `chi_3(n) * Lambda(n)`, not its final scalar sum.  Thus a
+future proof must obtain cancellation from factorization, polarization, and
+packet overlap; it cannot hide the desired estimate in a lossless scalar
+encoder or in a calibration field.
+
+`PolarizedWangZahlLargeSieve` is a proposition, not a project axiom and not a
+theorem proved below.  In particular, the unsigned Wang--Zahl union estimate
+does not by itself prove the signed plus/minus interaction bound recorded
+here.  The `N^epsilon` target deliberately leaves room for the paper's
+`delta^epsilon` loss after choosing a power-law geometric scale.
+-/
+
+
+namespace GRWTSK.Analysis.FunctionalAnalysis.SmoothDyadicWeight.Variantab3682ea1164df21f1151c66a5a5e545b3697cc160f6156403876be62c69f050
+
+public section
+
+namespace Surface.Core.ConductorThreePolarizedPackets
+
+noncomputable section
+
+open scoped BigOperators ENNReal
+open Surface.Core.ConductorThreeCharacterArithmetic
+open Surface.Core.ConductorThreeVonMangoldt
+
+/-! ## Smooth arithmetic target -/
+
+/-- A Schwartz weight supported in the fixed positive annulus `[1/2, 2]`.
+Using a fixed support makes the associated arithmetic sum literally finite,
+so its definition does not rely on a silent `tsum` summability convention. -/
+structure SmoothDyadicWeight where
+  toSchwartz : SchwartzMap ℝ ℝ
+  support_subset :
+    Function.support toSchwartz ⊆ Set.Icc (1 / 2 : ℝ) 2
+
+instance : CoeFun SmoothDyadicWeight (fun _ ↦ ℝ → ℝ) :=
+  ⟨fun W ↦ W.toSchwartz⟩
+
+/-- Finite Schwartz-seminorm cost.  Uniform dependence on this quantity is
+what makes a later smooth partition-of-unity unsmoothing theorem meaningful. -/
+@[expose]
+def smoothWeightCost (r : ℕ) (W : SmoothDyadicWeight) : ℝ :=
+  ∑ k ∈ Finset.range (r + 1),
+    ∑ j ∈ Finset.range (r + 1),
+      (SchwartzMap.seminorm ℝ k j) W.toSchwartz
+
+/-- The exact finite, smoothly weighted conductor-three sum at scale `N`. -/
+@[expose]
+def polarizedSmoothedSum (W : SmoothDyadicWeight) (N : ℕ) : ℝ :=
+  ∑ n ∈ Finset.range (2 * N + 1),
+    twistedVonMangoldtThree n * W ((n : ℝ) / N)
+
+/-- The half-plus-epsilon smooth target.  Constants may depend on `epsilon`
+and on the fixed smooth weight, but not on the arithmetic scale `N`. -/
+@[expose]
+def ConductorThreePolarizedPacketEstimate : Prop :=
+  ∀ epsilon : ℝ, 0 < epsilon →
+    ∃ r : ℕ, ∃ C : ℝ, 0 ≤ C ∧
+      ∀ (W : SmoothDyadicWeight) (N : ℕ), 2 ≤ N →
+          |polarizedSmoothedSum W N| ≤
+            C * (1 + smoothWeightCost r W) *
+              (N : ℝ) ^ (1 / 2 + epsilon)
+
+/-! ## Coefficient-level bilinear blocks -/
+
+/-- A finite unsummed block of the actual twisted von Mangoldt coefficients. -/
+@[expose]
+def PrimeCoefficientBlock (N : ℕ) := Fin (2 * N + 1) → ℝ
+
+/-- The canonical coefficient block; no cumulative discrepancy has yet been
+taken. -/
+@[expose]
+def actualPrimeCoefficientBlock (N : ℕ) : PrimeCoefficientBlock N :=
+  fun n ↦ twistedVonMangoldtThree n
+
+/-- One Type-I/Type-II style factorized block.  The character factors are
+part of its definition, so an arbitrary all-positive coefficient array is not
+silently rebranded as conductor-three arithmetic. -/
+structure TwistedBilinearBlock where
+  arithmeticScale : ℕ
+  left : Finset ℕ
+  right : Finset ℕ
+  alpha : ℕ → ℂ
+  beta : ℕ → ℂ
+  weight : SmoothDyadicWeight
+
+/-- Exact signed value of a twisted bilinear block. -/
+@[expose]
+def TwistedBilinearBlock.sum (block : TwistedBilinearBlock) : ℂ :=
+  ∑ m ∈ block.left, ∑ n ∈ block.right,
+    block.alpha m * block.beta n *
+      (conductorThreeIntegerValue m : ℂ) *
+      (conductorThreeIntegerValue n : ℂ) *
+      (block.weight (((m * n : ℕ) : ℝ) / block.arithmeticScale) : ℂ)
+
+/-- The two orthogonal arithmetic polarization channels. -/
+inductive CharacterPolarization
+  | plus
+  | minus
+  deriving DecidableEq, Repr
+
+/-- Coefficient sign determines a polarization without coloring or changing
+the underlying geometric carrier.  Coefficients equal to zero are absent from
+both nontrivial residue channels and are assigned to `plus` only as a total
+serialization convention. -/
+@[expose]
+def coefficientPolarization (coefficient : ℝ) : CharacterPolarization :=
+  if coefficient < 0 then .minus else .plus
+
+/-! ## Honest geometric research boundary -/
+
+/-- Data produced by an explicit packet lift of one factorized arithmetic
+block.  `signedReadout_eq_block` asks only for exact reconstruction.  It does
+not contain a square-root estimate, a GRH predicate, or a target upper bound. -/
+structure PolarizedArithmeticPacketConfiguration where
+  block : TwistedBilinearBlock
+  geometricScale : ℝ
+  geometricScale_pos : 0 < geometricScale
+  epsilon : ℝ
+  epsilon_pos : 0 < epsilon
+  signedReadout : ℂ
+  signedReadout_eq_block : signedReadout = block.sum
+
+/-- Concrete unsigned Wang--Zahl data attached to a packet configuration.
+The family already contains measurable tubes/shadings, essential
+distinctness, bounded-region containment, and aggregate density; the extra
+field supplies the convex Wolff bound.  No signed estimate is stored here. -/
+structure PolarizedPacketGeometry
+    (configuration : PolarizedArithmeticPacketConfiguration) where
+  Packet : Type
+  instDecidableEq : DecidableEq Packet
+  family : @Surface.Core.PrimeWalkWangZahlGeometry.EuclideanShadedTubeFamily
+    Packet instDecidableEq
+  scale_eq : family.delta = configuration.geometricScale
+  wolffConstant : ℝ≥0∞
+  convexWolff :
+    Surface.Core.PrimeWalkWangZahlGeometry.KatzTaoConvexWolffAtMost
+      family wolffConstant
+
+/-- Geometric admissibility means that concrete unsigned Wang--Zahl data have
+actually been constructed.  Packet-frame localization, `TT*`, two-scale
+grain control, and signed off-diagonal estimates remain theorem obligations
+of the large-sieve proof rather than fields of this certificate. -/
+@[expose]
+def PolarizedArithmeticPacketConfiguration.WangZahlAdmissible
+    (configuration : PolarizedArithmeticPacketConfiguration) : Prop :=
+  0 < configuration.block.arithmeticScale ∧
+    Nonempty (PolarizedPacketGeometry configuration)
+
+/-- The decisive speculative theorem: polarized packet geometry produces a
+signed large-sieve estimate.  This is intentionally a proposition rather
+than a theorem declaration or a field of the packet configuration. -/
+@[expose]
+def PolarizedWangZahlLargeSieve : Prop :=
+  ∀ configuration : PolarizedArithmeticPacketConfiguration,
+    configuration.WangZahlAdmissible →
+      ∃ C : ℝ, 0 ≤ C ∧
+        ‖configuration.signedReadout‖ ≤
+          C * (configuration.block.arithmeticScale : ℝ) ^
+            (1 / 2 + configuration.epsilon)
+
+/-- Separate arithmetic assembly obligation: a proved polarized large sieve,
+together with Vaughan/Heath--Brown decomposition and Type-I estimates, yields
+the smooth packet estimate.  Naming this edge prevents the factorization
+work from disappearing inside the geometric theorem. -/
+@[expose]
+def PolarizedLargeSieveImpliesPacketEstimate : Prop :=
+  PolarizedWangZahlLargeSieve → ConductorThreePolarizedPacketEstimate
+
+/-- The final implication is plain function application once the arithmetic
+assembly theorem has actually been supplied. -/
+@[surface_novel, surface_published]
+theorem polarizedPacketEstimate_of_largeSieve
+    (hAssemble : PolarizedLargeSieveImpliesPacketEstimate)
+    (hLargeSieve : PolarizedWangZahlLargeSieve) :
+    ConductorThreePolarizedPacketEstimate :=
+  hAssemble hLargeSieve
+
+end
+
+end Surface.Core.ConductorThreePolarizedPackets

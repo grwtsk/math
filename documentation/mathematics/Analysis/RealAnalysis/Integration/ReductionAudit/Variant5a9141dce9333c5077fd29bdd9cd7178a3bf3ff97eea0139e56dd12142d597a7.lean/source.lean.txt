@@ -1,0 +1,9 @@
+import scratch.common_mean_stieltjes_20261004.CountBudgetReduction
+#check CommonMeanStieltjes.countUpperKernel
+#print axioms CommonMeanStieltjes.countUpperKernel
+#check CommonMeanStieltjes.count_upper_kernel_bound
+#print axioms CommonMeanStieltjes.count_upper_kernel_bound
+#check CommonMeanStieltjes.count_main_endpoint
+#print axioms CommonMeanStieltjes.count_main_endpoint
+#check CommonMeanStieltjes.corrected_count_budget_of_integral_moments
+#print axioms CommonMeanStieltjes.corrected_count_budget_of_integral_moments

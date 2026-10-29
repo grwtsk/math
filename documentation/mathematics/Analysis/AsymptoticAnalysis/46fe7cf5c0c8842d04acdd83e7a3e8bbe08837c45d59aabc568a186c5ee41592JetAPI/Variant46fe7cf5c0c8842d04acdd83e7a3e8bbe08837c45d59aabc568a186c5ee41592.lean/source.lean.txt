@@ -1,0 +1,9 @@
+import FormalResearch.RiemannHypothesis.ThetaPhiHigherDerivatives
+#check Summable.tsum_finsetSum
+#check Summable.tsum_sum
+#check tsum_fintype
+#check Real.exp_nat_mul
+#check tsum_mul_left
+#check Summable.finset_sum
+#check Summable.finsetSum
+#check Fin.sum_univ_succ

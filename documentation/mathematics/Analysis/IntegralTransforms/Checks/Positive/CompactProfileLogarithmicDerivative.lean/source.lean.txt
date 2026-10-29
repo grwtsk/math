@@ -1,0 +1,8 @@
+import GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative
+set_option linter.hashCommand false
+namespace GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative
+#check @actual_logarithmic_profile_hasDerivAt
+#check @actual_logarithmic_profile_derivative_abs_le
+#print axioms actual_logarithmic_profile_hasDerivAt
+#print axioms actual_logarithmic_profile_derivative_abs_le
+end GRWTSK.Analysis.IntegralTransforms.CompactProfileLogarithmicDerivative

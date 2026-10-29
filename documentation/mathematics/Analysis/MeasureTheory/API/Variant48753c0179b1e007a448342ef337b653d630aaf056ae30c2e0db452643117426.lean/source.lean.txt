@@ -1,0 +1,12 @@
+import SourceVaughanHankel
+#check MeasureTheory.Measure.measurePreserving_sub_right
+#check MeasureTheory.measurePreserving_sub_right
+#check MeasureTheory.Measure.measurePreserving_neg
+#check MeasureTheory.measurePreserving_add_right
+#check MeasureTheory.Lp.coeFn_fun_finsetSum
+#check MeasureTheory.Lp.ext
+#check RCLike.conj_ofReal
+#check Complex.ofReal_injective
+#check inner_neg_right
+#check inner_neg_left
+#check LinearIsometryEquiv.inner_map_map
