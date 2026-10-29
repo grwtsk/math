@@ -71,6 +71,48 @@ theorem abs_bulk_sub_model_le_envelope
   rw [← bulkPrefixFunctional_sub]
   exact abs_bulkPrefixFunctional_le_envelope width j _ E hE
 
+/-- A budget for the actual weighted envelope is enough; individual errors need
+not obey a uniform bound. Excluded depths contribute zero, and the source
+normalization remains `2/Y`. -/
+theorem bulkPrefixFunctional_le_two_mul_of_weighted_budget
+    (width : ℕ → ℕ) (j : ℕ) (E : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)
+    (hbudget : ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      width j ≤ t ∧ t < 2 ^ (j + 1) - width j →
+      (∑ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        normalizedSignedAbelShiftKernel j t h * E h (t + 1)) ≤ B) :
+    bulkPrefixFunctional width j E ≤ 2 * B := by
+  unfold bulkPrefixFunctional
+  calc
+    _ ≤ 2 * (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ *
+        ∑ _t ∈ Finset.range (2 ^ (j + 1)), B := by
+      apply mul_le_mul_of_nonneg_left _ (by positivity)
+      apply Finset.sum_le_sum
+      intro t ht
+      by_cases hret : width j ≤ t ∧ t < 2 ^ (j + 1) - width j
+      · simpa only [if_pos hret] using hbudget t ht hret
+      · simpa only [if_neg hret] using hB
+    _ = 2 * B := by
+      simp only [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
+      have hY : (((2 ^ (j + 1) : ℕ) : ℝ)) ≠ 0 := by positivity
+      field_simp [hY]
+      <;> ring
+
+/-- Source-matched residuals pay their weighted budget. No fixed-shift theorem
+is asserted to supply either premise uniformly over the retained source. -/
+theorem abs_bulk_sub_model_le_two_mul_weighted_budget
+    (width : ℕ → ℕ) (j : ℕ) (F G E : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)
+    (hE : ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      width j ≤ t ∧ t < 2 ^ (j + 1) - width j →
+      ∀ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        |F h (t + 1) - G h (t + 1)| ≤ E h (t + 1))
+    (hbudget : ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      width j ≤ t ∧ t < 2 ^ (j + 1) - width j →
+      (∑ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        normalizedSignedAbelShiftKernel j t h * E h (t + 1)) ≤ B) :
+    |bulkPrefixFunctional width j F - bulkPrefixFunctional width j G| ≤ 2 * B :=
+  (abs_bulk_sub_model_le_envelope width j F G E hE).trans
+    (bulkPrefixFunctional_le_two_mul_of_weighted_budget width j E B hB hbudget)
+
 /-- A uniform absolute prefix allowance B costs at most 2B, with no unit-mass fiction. -/
 theorem abs_bulk_le_two_mul_uniform
     (width : ℕ → ℕ) (j : ℕ) (F : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)
@@ -136,6 +178,25 @@ theorem packet_le_two_add_model_and_envelope (j : ℕ) (G E : ℕ → ℕ → �
       2 + bulkPrefixFunctional sqrtWidth j G + bulkPrefixFunctional sqrtWidth j E := by
   have hm := bulkPacket_le_model_add_envelope sqrtWidth j G E hE
   have hb := (abs_le.mp (abs_packet_sub_sqrt_bulk_le_two j)).2
+  linarith
+
+/-- Actual packet consumer of the weighted residual budget. The inherited
+boundary cost is paid once; the regular model is kept signed. -/
+theorem packet_le_two_add_model_add_two_mul_weighted_budget
+    (j : ℕ) (G E : ℕ → ℕ → ℝ) (B : ℝ) (hB : 0 ≤ B)
+    (hE : ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - sqrtWidth j →
+      ∀ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        |mertensTwoPointPrefix h (t + 1) - G h (t + 1)| ≤ E h (t + 1))
+    (hbudget : ∀ t ∈ Finset.range (2 ^ (j + 1)),
+      sqrtWidth j ≤ t ∧ t < 2 ^ (j + 1) - sqrtWidth j →
+      (∑ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        normalizedSignedAbelShiftKernel j t h * E h (t + 1)) ≤ B) :
+    weightedMertensDyadicSignedAbelDepthPacket j ≤
+      2 + bulkPrefixFunctional sqrtWidth j G + 2 * B := by
+  have hp := packet_le_two_add_model_and_envelope j G E hE
+  have hb := bulkPrefixFunctional_le_two_mul_of_weighted_budget
+    sqrtWidth j E B hB hbudget
   linarith
 
 /-- Conditional consumer only: source-matched residual and all-exponent budget
