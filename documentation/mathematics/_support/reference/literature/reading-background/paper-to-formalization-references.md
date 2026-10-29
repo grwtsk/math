@@ -1183,3 +1183,16 @@ python3 -B managers/formalization/lean/environment/python/managed_contract_repla
 - **Remaining scope:** this adds a second proof-route mapping, not an independent circle-based terminal-sector count proof. That count remains provided by the explicit optics construction, itself unverified. Every-scale decimal-floor equality remains unresolved; the fixed-prefix theorem cannot be specialized diagonally to precision p=run exponent n. No video or sequence is marked verified complete.
 
 The 2025 lesson's explicit footnote qualifies the stronger all-exponents digit assertion by reference to Galperin sections 9 and 10. This remains unresolved here. The lesson also explicitly demonstrates mass ratio 10^12 and count 3141592: that exact case is not among the currently supplied rational examples and remains a separate source obligation. The local pair-rotation result replaces the pair-angle calculation algebraically; it does not yet formalize the video's inscribed-angle arc construction or its independent terminal-sector count route. These distinctions prevent supporting lemmas from being recorded as complete source coverage.
+
+
+#### Explicit tactic dependency in the #138 source port
+
+The reduced Model import does not supply the `norm_num` tactic used by Basic.
+Basic therefore explicitly imports `Mathlib.Tactic.NormNum`; this adds no
+hypothesis and changes no proof body. Its source-map entry records the added
+import and updated local blob, and the inverse source transformation removes
+that exact line. The target blob remains `d1457c9f89156ab4736a2784a2ca3bb0168043ef`.
+This was found by static import-closure inspection, not by a claimed successful
+Lean run. Compilation, fresh kernel replay, exact-statement consumer and
+transitive axiom audits remain `NOT_RUN` for this successor source. The prior
+partial run is separate and is not reused as a fresh proof.
