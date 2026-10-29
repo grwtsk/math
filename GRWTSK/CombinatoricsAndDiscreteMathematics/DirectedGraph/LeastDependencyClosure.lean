@@ -3235,4 +3235,98 @@ theorem finiteOffsetKey_selected_decode {width : Nat}
   · exact retainedCount_selected_decode inventory mask
   · exact maskLE_bitsLE width mask.val mask.isLt
 
+/-- General signed truth depends only on pointwise selection equivalence. -/
+theorem signedLiteralHolds_congr {s t : α → Prop} (same : ∀ a, s a ↔ t a)
+    (literal : SignedLiteral α) : signedLiteralHolds s literal ↔ signedLiteralHolds t literal := by
+  cases literal with
+  | positive a => exact same a
+  | negative a =>
+    constructor
+    · intro absent selected; exact absent ((same a).mpr selected)
+    · intro absent selected; exact absent ((same a).mp selected)
+
+theorem signedClauseSatisfied_congr {s t : α → Prop} (same : ∀ a, s a ↔ t a)
+    (clause : List (SignedLiteral α)) : signedClauseSatisfied s clause ↔ signedClauseSatisfied t clause := by
+  induction clause with
+  | nil => exact Iff.rfl
+  | cons literal rest ih =>
+    constructor
+    · intro satisfied
+      cases satisfied with
+      | inl head => exact Or.inl ((signedLiteralHolds_congr same literal).mp head)
+      | inr tail => exact Or.inr (ih.mp tail)
+    · intro satisfied
+      cases satisfied with
+      | inl head => exact Or.inl ((signedLiteralHolds_congr same literal).mpr head)
+      | inr tail => exact Or.inr (ih.mpr tail)
+
+theorem signedCNFSatisfied_congr {s t : α → Prop} (same : ∀ a, s a ↔ t a)
+    (clauses : List (List (SignedLiteral α))) : signedCNFSatisfied s clauses ↔ signedCNFSatisfied t clauses := by
+  induction clauses with
+  | nil => exact Iff.rfl
+  | cons clause rest ih =>
+    constructor
+    · intro satisfied
+      exact ⟨(signedClauseSatisfied_congr same clause).mp satisfied.1, ih.mp satisfied.2⟩
+    · intro satisfied
+      exact ⟨(signedClauseSatisfied_congr same clause).mpr satisfied.1, ih.mpr satisfied.2⟩
+
+theorem signedCNF_selected_decode_iff {width : Nat} (mask : Fin (2 ^ width))
+    (clauses : List (List (SignedLiteral (Fin width)))) :
+    signedCNFSatisfied (selectedBits (fixedBitsLE mask)) clauses ↔
+      signedCNFSatisfied (selectedMask mask) clauses :=
+  signedCNFSatisfied_congr (selectedBits_fixedBitsLE_iff mask) clauses
+
+theorem signedCNF_selected_encode_iff {width : Nat} (bits : FixedBoolList width)
+    (clauses : List (List (SignedLiteral (Fin width)))) :
+    signedCNFSatisfied (selectedMask (boundedMaskLE bits)) clauses ↔
+      signedCNFSatisfied (selectedBits bits) clauses :=
+  signedCNFSatisfied_congr (selectedMask_boundedMaskLE_iff bits) clauses
+
+/-- Integer syntax requires an explicit successful whole-CNF decode. No raw
+JSON or prerequisite-only restriction is substituted for general clauses. -/
+theorem boundedIntCNF_selected_decode_iff {width : Nat} (mask : Fin (2 ^ width))
+    (raws : List (List Int)) (clauses : List (List (SignedLiteral (Fin width))))
+    (decoded : decodeSignedIntCNF width raws = some clauses) :
+    boundedIntCNFSatisfied width (selectedBits (fixedBitsLE mask)) raws ↔
+      boundedIntCNFSatisfied width (selectedMask mask) raws :=
+  (decodeSignedIntCNF_sound width (selectedBits (fixedBitsLE mask)) raws clauses decoded).trans
+    ((signedCNF_selected_decode_iff mask clauses).trans
+      (decodeSignedIntCNF_sound width (selectedMask mask) raws clauses decoded).symm)
+
+/-- General signed-CNF feasibility and lexicographic minima correspond through
+the finite carriers. Feasibility of the proposed best is retained, including
+when no candidate satisfies the clauses. This is not a runtime solver theorem. -/
+theorem signedCNF_keyMinimum_decode_iff {width : Nat}
+    (inventory : FiniteInventory (Fin width)) (weight : Fin width → Nat) (offset : Nat)
+    (clauses : List (List (SignedLiteral (Fin width)))) (best : Fin (2 ^ width)) :
+    (signedCNFSatisfied (selectedBits (fixedBitsLE best)) clauses ∧
+      ∀ candidate : FixedBoolList width, signedCNFSatisfied (selectedBits candidate) clauses →
+        CostCountMaskLE
+          (finiteOffsetKey inventory weight offset selectedBits selectedBitsDecisions fixedMaskLE (fixedBitsLE best))
+          (finiteOffsetKey inventory weight offset selectedBits selectedBitsDecisions fixedMaskLE candidate)) ↔
+    (signedCNFSatisfied (selectedMask best) clauses ∧
+      ∀ candidate : Fin (2 ^ width), signedCNFSatisfied (selectedMask candidate) clauses →
+        CostCountMaskLE
+          (finiteOffsetKey inventory weight offset selectedMask selectedMaskDecisions (fun m => m.val) best)
+          (finiteOffsetKey inventory weight offset selectedMask selectedMaskDecisions (fun m => m.val) candidate)) := by
+  constructor
+  · intro minimum
+    refine ⟨(signedCNF_selected_decode_iff best clauses).mp minimum.1, ?_⟩
+    intro candidate feasible
+    have comparison := minimum.2 (fixedBitsLE candidate)
+      ((signedCNF_selected_decode_iff candidate clauses).mpr feasible)
+    rw [finiteOffsetKey_selected_decode inventory weight offset best,
+      finiteOffsetKey_selected_decode inventory weight offset candidate] at comparison
+    exact comparison
+  · intro minimum
+    refine ⟨(signedCNF_selected_decode_iff best clauses).mpr minimum.1, ?_⟩
+    intro candidate feasible
+    have comparison := minimum.2 (boundedMaskLE candidate)
+      ((signedCNF_selected_encode_iff candidate clauses).mpr feasible)
+    have candidateKey := finiteOffsetKey_selected_decode inventory weight offset (boundedMaskLE candidate)
+    rw [fixedBitsLE_boundedMaskLE] at candidateKey
+    rw [finiteOffsetKey_selected_decode inventory weight offset best, candidateKey]
+    exact comparison
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
