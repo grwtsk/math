@@ -85,4 +85,73 @@ theorem conjecture_iff_residue_one :
       · apply representation_of_mod_four_eq_three
         omega
 
+/-- Multiplying all three denominators preserves both the identity and distinctness. -/
+theorem representation_mul (n k : ℕ) (hk : 0 < k) (h : Representation n) :
+    Representation (k * n) := by
+  rcases h with ⟨x, y, z, hx, hxy, hyz, heq⟩
+  have hxq : (x : ℚ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt hx)
+  have hyq : (y : ℚ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt (lt_trans hx hxy))
+  have hzq : (z : ℚ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt (lt_trans (lt_trans hx hxy) hyz))
+  have hkq : (k : ℚ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt hk)
+  refine ⟨k * x, k * y, k * z, Nat.mul_pos hk hx,
+    Nat.mul_lt_mul_of_pos_left hxy hk, Nat.mul_lt_mul_of_pos_left hyz hk, ?_⟩
+  push_cast
+  calc
+    (4 : ℚ) / ((k : ℚ) * n) = (4 / (n : ℚ)) / k := by
+      rw [div_div, mul_comm (n : ℚ) (k : ℚ)]
+    _ = 1 / ((k : ℚ) * x) + 1 / ((k : ℚ) * y) + 1 / ((k : ℚ) * z) := by
+      rw [heq]
+      field_simp [hkq, hxq, hyq, hzq]
+      <;> ring
+
+/-- For `n = 3k+2`, use `(k+1, n, n(k+1))`; `k ≥ 1` retains distinctness. -/
+theorem representation_three_mul_add_two (k : ℕ) (hk : 1 ≤ k) :
+    Representation (3 * k + 2) := by
+  have h1 : ((k : ℚ) + 1) ≠ 0 := by positivity
+  have h2 : (3 * (k : ℚ) + 2) ≠ 0 := by positivity
+  refine ⟨k + 1, 3 * k + 2, (3 * k + 2) * (k + 1), by omega, by omega, ?_, ?_⟩
+  · nlinarith
+  · push_cast
+    field_simp [h1, h2]
+    <;> ring
+
+/-- For `n = 8k+5`, use `(2(k+1), n(k+1), 2n(k+1))`. -/
+theorem representation_eight_mul_add_five (k : ℕ) :
+    Representation (8 * k + 5) := by
+  have h1 : ((k : ℚ) + 1) ≠ 0 := by positivity
+  have h2 : (8 * (k : ℚ) + 5) ≠ 0 := by positivity
+  refine ⟨2 * (k + 1), (8 * k + 5) * (k + 1),
+    2 * ((8 * k + 5) * (k + 1)), by omega, ?_, ?_, ?_⟩
+  · nlinarith
+  · nlinarith
+  · push_cast
+    field_simp [h1, h2]
+    <;> ring
+
+/-- The explicit families reduce the remaining obligation to one residue out of 24.
+No representation for the remaining class is assumed to have been constructed. -/
+theorem conjecture_iff_residue_one_mod_twentyfour :
+    Conjecture ↔ ∀ n : ℕ, 2 < n → n % 24 = 1 → Representation n := by
+  constructor
+  · intro h n hn _
+    exact h n hn
+  · intro h n hn
+    by_cases he : n % 2 = 0
+    · exact representation_of_even n hn he
+    by_cases h4 : n % 4 = 3
+    · exact representation_of_mod_four_eq_three n h4
+    by_cases h8 : n % 8 = 5
+    · have hn' : n = 8 * (n / 8) + 5 := by omega
+      rw [hn']
+      exact representation_eight_mul_add_five (n / 8)
+    by_cases h32 : n % 3 = 2
+    · have hn' : n = 3 * (n / 3) + 2 := by omega
+      rw [hn']
+      exact representation_three_mul_add_two (n / 3) (by omega)
+    by_cases h30 : n % 3 = 0
+    · have hn' : n = (n / 3) * 3 := by omega
+      rw [hn']
+      exact representation_mul 3 (n / 3) (by omega) (representation_four_mul_add_three 0)
+    · exact h n hn (by omega)
+
 end GRWTSK.NumberTheory.DiophantineEquations.ErdosStraus
