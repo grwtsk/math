@@ -468,6 +468,37 @@ fresh independent kernel replay and complete transitive axiom audit.
 - `eth`: [formal-math@16a5ce41304fcdaea4e0be7c132e1c361dc26da5](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth), tree `6215627c537a6acb2f2d307021027e565b9bc111`; Lean `leanprover/lean4:v4.33.1`, Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`.
 - `fermat`: [fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2](https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2/), tree `443edf11d3610bc14f267534862c19124f2cb7a4`; Lean `leanprover/lean4:v4.33.1`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
+### Provider consumer continuation (2026-10-28)
+
+Local attribution: grwtsk contributors. This continuation extends the exact pinned
+OpenAI/Anthropic entries above; it changes no upstream dependency or source identity.
+
+- `GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.riemannHypothesis_of_weighted_model_correlation_budget`
+  is a **conditional source proof candidate** for the existing local RH consumer.
+  For every dyadic index it requires the true Mertens two-point residual bound at
+  source length t+1, and a bound B(j)≥0 on its normalized signed-Abel weighted
+  envelope at every retained depth. It additionally requires, for every δ>0,
+  one nonnegative C uniform in j bounding the signed model plus 2B(j) by
+  C(2^j)^δ. It reduces these hypotheses to the existing envelope RH interface;
+  it supplies neither the arithmetic model/residual nor the all-exponent growth
+  premise. Fixed-shift qualitative OpenAI convergence supplies neither.
+- `GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor`
+  is a **source proof candidate** for natural-number Diophantine power-sum search:
+  n≥3 and a^n+b^n=c^n imply a=0 or b=0, with no positivity premise on a,b,c.
+  It explicitly rules out c=0 when both summands are positive, then consumes the
+  pinned Anthropic FLT transport. This strengthens the consumer interface to
+  include degenerate input/output cases; it is not an independent Wiles proof.
+  The original paper identities, public authors, upstream notices and FLT pin
+  recorded above remain the provenance boundary.
+
+Native compilation, source-bound independent kernel replay and transitive axiom
+checks for these new declarations are **NOT_RUN**. Static target profiles are
+`documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-residual-budget-20261028.profile.json`
+and `documentation/mathematics/_verification/targets/NumberTheory/anthropic-fermat-consumers-20261028.profile.json`.
+Commands to run through current supported Noe preparation/replay are not receipts.
+Source candidates remain conditional on their imported dependencies and stated
+premises; no missing arithmetic estimate or analytical conclusion is promoted.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 
