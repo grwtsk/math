@@ -338,6 +338,34 @@ scripts are SOURCE_PROOF_CANDIDATE. Compilation, fresh kernel replay and
 transitive axiom audit remain NOT_RUN. Folding a signed finite sum supplies
 no stronger sector, triangle, full-moment, mean, signed-bulk or RH bound.
 
+### Complete coprime SS and LL sectors in strict-triangle form
+
+`shortShortCoprime_eq_two_mul_upperTriangle` combines the earlier vanishing
+SS d=1 diagonal with exact off-diagonal folding, giving for every P,N,L,G
+
+ shortShortCoprime = 2*shortShortUpperTriangle.
+
+`longLongCoprime_eq_unit_add_two_mul_upperTriangle` retains the sole possible
+coprime LL diagonal and folds only the remaining signed off-diagonal:
+
+ longLongCoprime = (if 1<=N then
+   (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0)
+   + 2*longLongUpperTriangle.
+
+The `_of_one_le` corollary assumes exactly 1<=N and retains the unconditional
+long unit square on that original nonempty inventory.
+`coprime_same_sector_triangle_zero_components` explicitly makes both complete
+coprime sectors and their SS/LL strict triangles zero at N=0; the conditional
+LL unit contribution is then zero as well. No unit is inserted into an empty
+inventory, and no long one-unit/nonunit off-diagonal pair is discarded.
+All statements otherwise allow arbitrary P,N,L,G and reuse the actual source
+columns, masks, repeated-prime and long-row coprime guards, both selected-divisor
+denominators, closed cutoffs and frozen parameters. No new primality,
+positivity, symmetry or analytic premise is added.
+These four theorem scripts are SOURCE_PROOF_CANDIDATE. Compilation,
+fresh kernel replay and transitive axiom audit remain NOT_RUN. The identities
+provide no stronger sector, triangle, full-moment, mean, signed-bulk or RH bound.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
