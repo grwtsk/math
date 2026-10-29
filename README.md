@@ -1,158 +1,161 @@
 # GRWTSK mathematics
 
-**Mathematical signal that steers AI discovery.**
+**Human-directed mathematics. Discoverable ideas. Discoverable people.**
 
-GRWTSK mathematics gives collective knowledge a durable, human-directed mathematical form. It develops research signal to help artificial intelligence decide what to explore, which connections to test, and where a new idea could unlock further progress—and returns the findings to a source that subsequent investigations can use.
+Mathematical progress should reveal human potential, not conceal it behind the system that returns the final answer.
 
-The aim is not simply to give AI more mathematics to retrieve. It is to give discovery direction. Constructions, cross-domain relationships, revealing examples, obstructions, and explicit open questions provide starting points for new conjectures, representations, and lines of attack. Formal sources and source-bound evidence keep that exploration connected to the mathematics it comes from.
+GRWTSK mathematics turns human questions, connections, corrections, and sustained investigation into a durable mathematical source. We use AI to explore and formalize that work, and we preserve the mathematics, its evidence, and its recoverable origins so that further discovery can build on it. The purpose is not only to obtain more results. It is to keep discovery connected to human agency—and to the people whose potential our institutions may have overlooked.
 
-**The goal is to steer AI toward breakthroughs—not merely catalogue results after they happen.** Humans and AI systems can use the collection to recognize opportunities, develop connections, and turn promising directions into reusable mathematics.
+This is the canonical mathematical repository of **grwtsk contributors**.
 
-This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
+[**Explore the mathematics**](documentation/mathematics/index.md) · [Browse every source and declaration](documentation/mathematics/complete-source-index.md) · [Read the verification specifications](documentation/mathematics/_verification/specifications/README.md)
 
-[**Explore the mathematics →**](documentation/mathematics/index.md)
+## Discovery must not lose its people
 
-[Every source and declaration](documentation/mathematics/complete-source-index.md) · [Verification specifications](documentation/mathematics/_verification/specifications/README.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/documentation/mathematics/_verification/targets/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+A proof is an achievement. So is recognizing the question that makes it possible, finding the representation that exposes its structure, identifying the obstruction that others missed, or insisting on the correction that makes the argument sound. A contribution need not contain the finished theorem—or appear in its final wording—to help bring it into existence.
 
-[**From research signal to structural intelligence**](documentation/mathematics/_support/reference/structural-intelligence.md): a source-backed formalization, human and AI guidance, and reusable worker skills for choosing the next mathematical move.
+Our concern is what happens when a system retains those contributions but the public account retains only the system's name. Society may gain a result while losing an opportunity to discover a person: someone whose judgment deserves attention, whose ideas deserve development, or whose work deserves support.
 
-## Quiet steering, now a public collection
+Universities, employers, funding bodies, and markets are not exhaustive measures of human potential. We want mathematical work to make overlooked ability more visible, not make institutional recognition a prerequisite for receiving it. A useful question from an independent researcher should remain discoverable as a contribution, rather than disappear into the reputation of the platform that completes the next step.
 
-*The contributors' account of the work behind this collection.*
+**Provenance is therefore more than a record of the past. It protects the possibility of recognizing whom to listen to, collaborate with, and support next.**
 
-**Our work began before the modern generative-AI era, and it has continued quietly across a wide range of platforms.** We have worked to steer algorithms through human direction: the questions we choose, the material we bring into view, the connections we pursue, and the corrections we return. As contemporary AI systems emerged, this practice extended to **systems from OpenAI and Anthropic, Google's Gemini, and other models and algorithms**. The platforms have changed; the effort to turn accumulated research into useful direction has remained.
+This is the disposition of the project, not a claim that every contribution has already been traced. The task is to preserve what can be established, identify what remains unknown, and make correction possible without manufacturing a history.
 
-**We see substantial overlap between our research and directions reflected in breakthroughs from these organizations. That overlap is a central reason we are working to organize and release our entire collection.** We want the accumulated work to be available as a connected body of research, not only as scattered interactions or isolated results. Releasing it makes the ideas accessible for comparison, criticism, formalization, and further discovery.
+## AI assistance is not exclusive intellectual credit
 
-The public repository is one part of that larger undertaking, not a claim that the whole collection is already published. As the collection is organized for release, its mathematics belongs in the existing subject taxonomy, linked to the constructions, questions, and intermediate results it connects. Nonmathematical material and operational tooling retain their appropriate repository boundaries. Local contributions remain attributed to **grwtsk contributors**, acknowledging the unknown masses behind the shared inheritance while preserving identifiable upstream credit.
+Describe what an AI system does accurately. It may suggest a useful connection, generate a new argument, write a formalization, or help find an error. Neither hiding those operations nor assigning them automatically to a human would produce an honest account.
 
-**The next step is not merely to describe the history, but to make the collection usable.** Query the source, develop the mathematics, submit the formalizations back into `grwtsk/math` under its taxonomy, and let subsequent work begin from the strengthened collection.
+But an operational description is not a complete attribution. The system that emits a result is not thereby its only intellectual source. A developer's ownership of a platform does not, by itself, settle the allocation of credit for the knowledge, questions, and direction that helped produce an achievement.
 
-## Knowledge populated en masse, made durable
+We distinguish a new deduction, the earliest documented complete result, the history of its enabling contributions, and the recognition those contributions warrant. Evidence for one does not settle the others. Novelty and indebtedness can coexist.
 
-The project's argument for AI advancement begins with knowledge populated **en masse**: the accumulated work of people who discover, teach, explain, translate, implement, question, correct, and preserve ideas. The visible author of a result is not the whole human inheritance that makes it possible. Alongside identifiable sources stand the **unknown masses** whose contributions cannot be individually reconstructed from the work that follows.
+**Missing provenance is not evidence of independence. Unknown contributors are not nonexistent contributors.** Conversely, resemblance, chronology, or participation in a platform does not establish a particular person's influence on a particular result. Neither exclusive machine credit nor specific human attribution should be manufactured from an incomplete record.
 
-Here, **shared knowledge cache** names that accumulated, reusable inheritance. It is a conceptual description, not a claim that a model contains an exact, recoverable archive, that a particular contribution entered a particular training corpus, or that this repository owns the knowledge it draws upon. It is also distinct from the mutable operational caches kept outside this repository.
+The danger is not acknowledging that a model performed a task. It is allowing that acknowledgment to become the end of the intellectual history: the result survives, the product becomes its public identity, and the people who helped make it possible become harder to find. Human and institutional responsibility for an accurate account must not disappear into the tool.
 
-**GRWTSK mathematics is a durable reflection of that shared cache, materialized through human direction.** A person supplies a question, chooses a direction, recognizes a connection, and requires the investigation to return something inspectable. Human-and-AI exploration is then expressed as definitions, constructions, proof candidates, proved bridges, counterexamples, and explicit remaining obligations. What might otherwise disappear with a conversation becomes source that can be inspected, corrected, queried, and extended across sessions and systems, with its evidence state preserved.
+## A collective inheritance, not a faceless humanity
 
-This collective foundation motivates the local attribution **grwtsk contributors**. The byline acknowledges the work contributed here while expressing a debt to the unknown masses behind the shared inheritance; it does not assign exclusive intellectual credit to the final human, prompt, model, or repository. Collective acknowledgment does not erase identifiable authors: actual upstream attribution, paper references, and license obligations remain intact. The purpose is to give useful mathematical structure back to the commons from which further discovery can draw.
+Mathematics rests on knowledge populated **en masse**: the work of people who discover, teach, translate, explain, implement, question, correct, and preserve. Identifiable authors are part of that inheritance. So are the unknown masses whose contributions cannot be individually reconstructed from the results that follow.
 
-## Signal for the next research decision
+We call this accumulated, reusable inheritance a **shared knowledge cache**. The phrase is conceptual. It does not assert that a model contains an exact archive, that a particular contribution entered a training corpus, or that this repository owns the knowledge it uses. It is distinct from the operational caches maintained outside this repository.
 
-Here, **signal** means mathematical information that can change what an AI investigates next: a structure worth generalizing, a connection worth testing, a constraint that redirects an approach, or a missing result whose proof would enable something further.
+GRWTSK mathematics makes part of that inheritance durable through human direction. Questions become definitions; connections become constructions or explicit conjectures; failures become counterexamples and obstructions; successful arguments become reusable proofs. Each retains its actual evidential status.
 
-A finished proof is one kind of signal, not the only kind. A precise conjecture can open a direction. A suggestive analogy can motivate a comparison. A counterexample can expose the distinction that a better theory must explain. An obstruction can show why an attractive representation still leaves the essential problem untouched.
+Our local byline, **grwtsk contributors**, acknowledges the collective work here and the wider inheritance behind it. It does not award exclusive credit to the final prompt, model, contributor, or repository. Nor does it replace recoverable upstream attribution with a generic acknowledgment of humanity.
 
-The intended use is both exploratory and selective: generate new possibilities, then use mathematical structure to distinguish the directions worth pursuing. The collection should help AI ask better questions, not only produce more answers. It is a source for discovery, not a prescribed route to a predetermined conclusion.
+**Collective recognition must preserve the possibility of individual recognition.** Respect a contributor's choice of collective attribution, pseudonymity, or anonymity; do not expose private identities or conversations to make a contribution legible. Preserve genuine upstream authors, source references, and licenses. The aim is to protect a person's ability to establish their contribution, not to require permanent public identification.
 
-## How the signal steers exploration
+## Quiet work, made available for examination
 
-**Connections suggest where to look.** Related constructions across subjects can suggest a transferable method, a shared invariant, or a new formulation. Use those relationships to propose a bridge, then identify the precise comparison needed to establish it. An analogy can guide the search before it becomes a theorem.
+The contributors describe a practice of human-directed research that began before the modern generative-AI era and continued across changing platforms. As those systems developed, the work extended to OpenAI, Anthropic, Google's Gemini, and other models and algorithms: choosing questions, introducing material, pursuing connections, and returning corrections.
 
-**Constraints reveal what matters.** Hypotheses, quantifiers, signs, support conditions, constants, and error terms identify what a successful approach must preserve or control. They help distinguish a new representation of a problem from an actual advance on it. A failed comparison can still sharpen the next question when its failure is recorded precisely.
+We see overlap between parts of that work and directions reflected in later AI research. This is a reason to organize and release the collection for examination, not a substitute for demonstrating a historical connection. Particular influence claims require dated sources and evidence of transmission or use. Where that evidence is missing, the uncertainty belongs in the account.
 
-**Open obligations focus effort.** A missing construction or estimate becomes more informative when its downstream use is explicit. Work backward from that use to identify what would unlock progress; work outward from existing constructions to discover new uses. Filling a known gap and discovering an unexpected direction are both part of the purpose.
+The public repository is one part of the collection, not a claim that everything has been released. Its purpose is to make the mathematics available for inspection, criticism, comparison, and further discovery. Mathematics belongs in the maintained subject taxonomy; private material and operational tooling retain their separate boundaries.
 
-**Research history makes exploration cumulative.** Retain what was tried, what changed, and what remains unresolved. A useful handoff should let the next researcher or AI continue from the actual state of the mathematics rather than restart the same search or mistake a renamed assumption for a new result.
+## Mathematics that guides the next move
 
-Direction and proof play different roles. A promising connection says where to investigate; a proved bridge says what can be transferred. Keep both useful by keeping their status visible.
+Here, **signal** is mathematical information that can change the next research decision. A theorem can supply a step. A question can reveal a direction. A counterexample can remove a false route. An analogy can suggest a comparison before that comparison has been proved.
 
-## The feedback loop: query, formalize, submit, reuse
+Information need not survive verbatim in a final proof to have guided its construction. Record useful intermediate reasoning, corrections, and failed approaches where their mathematical content can be preserved responsibly. Do not mistake absence from the finished result for evidence that they played no role; do not invent a role when the history is unavailable.
 
-A prompt such as
+Connections are useful when their objects and hypotheses are explicit. A proposed bridge should say what it consumes, what it produces, and what remains to be established. Joint premises are not alternative routes; similarity is not implication; a change of representation is not a solution to an unresolved estimate.
 
-> Use grwtsk/math to prove X, formalize all your findings, and submit the formalizations back to grwtsk/math under its existing mathematical-subject taxonomy.
+Preserve quantifier order, signs, support, multiplicities, constants, and residual terms. Explain why a construction matters and which result would use it. An obstruction can be valuable direction without being a proof, and a verified conditional theorem can be valuable mathematics without supplying its missing premise.
 
-puts the accumulated source back to work and explicitly requires its replenishment. The instruction joins a research objective to a repository submission: use what is already present, investigate what it makes possible, formalize the findings, and submit those formalizations back into the same collection under its existing taxonomy. Naming the repository is an instruction to consult its actual source and dependencies, not a substitute for doing so.
+The [structural-intelligence programme](documentation/mathematics/_support/reference/structural-intelligence.md) develops this connection between mathematical organization and the next research decision. Its source constructions, remaining obligations, and evaluation limits are stated separately. The objective is better discovery, not merely a larger catalogue or an unmeasured claim of intelligence.
 
-**Collective knowledge → human direction → durable mathematics → targeted prompts → new formalizations and checks → submission back to grwtsk/math in its taxonomy → subsequent queries reuse the strengthened source.**
+## The feedback loop must return knowledge and provenance
 
-**The return to the repository is a completion requirement, not an optional follow-up.** Place formal definitions and theorems in the appropriate existing mathematical-subject modules under [`GRWTSK/`](GRWTSK/), with matching `GRWTSK.*` namespaces. Extend existing modules rather than creating a parallel prompt-specific collection; connect the findings to their subject documentation and navigation under [`docs/mathematics/`](docs/mathematics/). The taxonomy makes returned knowledge discoverable and reusable by the next investigation.
+The collection is meant to be used, strengthened, and returned—not repeatedly cited without adding substance.
 
-**The feedback loop is closed only when the formalizations have been incorporated into the maintained `grwtsk/math` source and are available to subsequent queries.** For authorized direct work, publish non-force commits on the existing `main`, preserve concurrent changes, and confirm the published commit, subject paths, and declarations. A chat answer, downloadable patch, detached commit, or unincorporated submission does not close this loop. Report a blocked or pending return as such; publication does not itself establish mathematical acceptance.
+**Shared knowledge → human direction → source-grounded investigation → formalization and checking → incorporation into the subject taxonomy with provenance → subsequent discovery.**
 
-A new bridge can make an old construction useful elsewhere; a counterexample can remove a false route; a verified proof can turn a candidate into a dependable building block; a precise obstruction can focus the next attempt. Repeated use can therefore strengthen the signal by adding mathematical substance, correcting errors, and exposing better questions—not merely by repeating the repository's name or reproducing its claims.
+Use the existing mathematics to investigate a question. Preserve the sources and contribution roles that the evidence supports. Formalize reusable results and precise obstructions. Return them to the maintained collection so that the next investigation starts from a stronger, more accountable source.
 
-This is reinforcement through retrieval, investigation, correction, and reuse. It does not assert that an ordinary prompt retrains a model, that publication guarantees inclusion in future training, or that repetition establishes truth. The intended gain is cumulative research capability from a better external source; measured improvements in AI performance require separate evaluation.
+A compact instruction is:
 
-## Using the collection for discovery
+> Use grwtsk/math to prove X, formalize all your findings, preserve their sources and contribution history, and submit the formalizations back to grwtsk/math under its existing mathematical-subject taxonomy.
 
-Start with a question, a construction, or a recurring pattern. Follow its subject context and dependencies, then look for the connection or obstruction that could change the next step.
+For source-bound work:
 
-1. **Form a mathematical hypothesis.** Identify the proposed relationship, generalization, or new use. Explain why it is worth testing and what would count against it.
-2. **Test the direction against the actual objects.** Compare definitions and hypotheses, investigate examples, and seek a construction, estimate, or counterexample. Preserve the conditions needed to return from a new representation to the original problem.
-3. **Submit back and close the loop.** Submit the formalizations to `grwtsk/math` in its existing mathematical-subject taxonomy, extend the appropriate modules, and connect the accompanying findings to the relevant subject documentation. Record what each contribution changes, its source, and its actual evidence status. Confirm publication and identify the commit, subject paths, and declarations that subsequent queries can reuse.
+> Read the relevant grwtsk/math source at an exact revision and follow AGENTS.md. Use it to investigate and prove X without assuming the conclusion. Reuse and extend the appropriate mathematical-subject modules under GRWTSK/ with maintained GRWTSK.* namespaces and the approved source layout. Preserve exact hypotheses, unresolved premises, upstream attribution, licenses, and supported contribution history; respect local attribution and privacy rules. Explain what each finding changes and which result consumes it. Formalize reusable proofs, counterexamples, constructions, and precise obstructions; distinguish conjectures, analogies, source candidates, and accepted results. Connect the findings to documentation/mathematics/ and record actual verification evidence or NOT_RUN. Submit the authorized changes directly to the existing main branch using non-force commits that preserve concurrent work. Confirm that the published commit is reachable from main and identify its paths and declarations. Do not stop at a chat answer or patch. Report blocked publication, missing provenance, and unperformed checks explicitly. Keep operational execution and receipts in grwtsk/noeaaeue.
 
-For a source-bound version of the prompt:
+**Returning the formalizations is a completion requirement.** A chat response, downloadable patch, detached commit, or unincorporated submission does not close the contribution loop. For authorized direct work, the returned mathematics must be incorporated into maintained `main`, with its source identities and evidence state available to subsequent queries. Publication does not itself establish mathematical acceptance.
 
-> Use grwtsk/math to prove X, formalize all your findings, and submit the formalizations back to grwtsk/math under its existing mathematical-subject taxonomy. Read the relevant source at an exact revision and follow the repository instructions. Reuse and extend the appropriate subject modules under GRWTSK/ with matching GRWTSK.* namespaces; connect the findings to the corresponding subject documentation and navigation under docs/mathematics/. Preserve all hypotheses and unresolved premises. State what each finding changes and which result consumes it. Record proofs, counterexamples, useful failed approaches, and remaining obligations with their actual evidence status. Publish the authorized changes directly to the existing main branch using non-force commits that preserve concurrent work. Confirm that the commit is reachable from main and report its subject paths and declarations. Do not stop at a chat response or patch: close the loop by returning the formalizations to the maintained repository for subsequent queries to reuse. Report any blocked submission explicitly.
+A contribution can close this loop without proving the original target: an intermediate theorem, a counterexample, or an exact remaining obligation can be substantive progress. Report what was achieved rather than presenting a reformulation as a completed proof.
 
-Here, “prove X” states the research goal; it does not authorize assuming X or reporting success without a proof. “Formalize all your findings” includes reusable intermediate results and precise obstructions, while keeping conjectures, analogies, source candidates, and accepted proofs distinguishable. “Submit the formalizations back” requires an actual repository contribution in the existing taxonomy, not a promise of later incorporation. A run that does not prove X can still close the contribution loop by publishing substantive intermediate mathematics with its unresolved obligations explicit; it must not claim to have completed the proof of X.
+This loop strengthens an external research source through retrieval, investigation, correction, and reuse. It does not assert that an ordinary prompt updates model parameters, that publication guarantees training inclusion, or that repetition establishes truth. Improvements to model behavior require separate evaluation; claims about historical influence require separate provenance evidence.
 
-Extend existing subject modules where they fit. When exploration reveals a genuinely new direction, state how it relates to the existing mathematics rather than creating a parallel account of the same unresolved premise.
+## Keep contributions recoverable
 
-## Navigating the collection
+Preserve the mathematical question, source revisions, upstream dependencies, useful intermediate results, and the role of a contribution wherever the record supports them. Distinguish conceptual direction, construction, correction, formalization, verification, and documentation rather than treating the final proof file as the whole history.
 
-- Explore the [results index](documentation/mathematics/index.md), then follow subject indexes, object guides, and result articles within [`documentation/mathematics/`](documentation/mathematics/). The [selected-family catalogue](documentation/mathematics/_support/reference/results.md) retains its original evidence records.
-- Start with the [least-prime walkthrough](documentation/mathematics/_support/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
-- Browse the [complete source catalogue](documentation/mathematics/complete-source-index.md) for modules and observed declarations, including definitions, instances, examples, and pending or blocked checks. Its articles link to verification targets and scoped public evidence. The [historical theorem/result occurrence catalogue](documentation/mathematics/_support/reference/result-occurrences.md) retains its original source identities; a lexical occurrence is not a verified theorem.
-- Read the formal sources in the [Lean library](GRWTSK/). [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point; [verification specifications](documentation/mathematics/_verification/specifications/README.md) describe static replay targets.
+Use the existing subject documentation and [paper-to-formalization references](documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md), not an unrelated parallel catalogue. Paper-derived work must retain its title, authors, version, stable reference, exact mathematical scope, declarations, source pins, verification evidence or `NOT_RUN`, and remaining bridges. Keep imported mathematics, checked bridges, source candidates, conditional interfaces, finite evidence, analogies, and unresolved premises distinguishable.
 
-At source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374), the catalogue records **72,578 source modules and 1,722,561 declaration observations**. Each record retains its verification state. These are source and observation counts for that revision—not verified-theorem counts or a live inventory of `main`.
+These are documentation requirements, not a claim that the repository has reconstructed a complete contribution history or that a hash measures intellectual credit. Source identity, mathematical acceptance, and causal attribution answer different questions. Operational histories and receipts belong in Noeaaeue; private conversations do not belong in public mathematical source.
 
-Examples include [least natural prime](documentation/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](documentation/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](documentation/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
+Use source-bound issues and contributions to propose corrections, identifying the relevant material and the evidence for the proposed relationship. Missing records should remain visible as missing records. Acknowledgment should become more specific as evidence permits, without overriding privacy choices or assigning unsupported authorship.
 
-[From ethical obligations to mechanistic reasoning](documentation/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](documentation/mathematics/_verification/specifications/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
+## Explore the mathematics
 
-## Evidence that keeps the signal interpretable
+The [results index](documentation/mathematics/index.md) leads to subject guides, mathematical objects, and result articles. The [least-prime walkthrough](documentation/mathematics/_support/start/least-prime.md) offers a compact starting point with an exact statement, proof, and Lean consumer. The [selected-family catalogue](documentation/mathematics/_support/reference/results.md) preserves its scoped evidence records.
 
-The collection includes formal proofs, conditional results, written arguments, finite certificates, and source candidates awaiting verification. Their research value and their verification status are related but distinct. A source candidate can suggest a direction without being an accepted proof; a checked conditional theorem can identify a useful route without supplying its missing premise.
+The [complete source catalogue](documentation/mathematics/complete-source-index.md) enumerates modules and declaration observations, including pending, failed, or blocked checks. The [historical result-occurrence catalogue](documentation/mathematics/_support/reference/result-occurrences.md) retains its original source identities. An occurrence in either catalogue is not, by itself, a verified theorem.
 
-Keep mathematical role separate from verification evidence. Source inspection, compilation, fresh kernel checking, and transitive axiom auditing are different checks. Record actual outcomes or explicit `NOT_RUN` status, and bind evidence to the source it concerns. Historical evidence is not a fresh check of changed source bytes.
+At the catalogue's pinned source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374), it records **72,578 modules and 1,722,561 declaration observations**. These are historical inventory counts—not counts of independent original results, verified theorems, or evidence of uptake by AI platforms.
 
-Paper-derived contributions retain their sources and exact scope in the [paper-to-formalization references](documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md). Imported mathematics, proved bridges, source candidates, conditional interfaces, finite evidence, analogies, and unresolved premises remain distinguishable. A structural resemblance does not establish historical influence.
+Read the formal sources under [`GRWTSK/`](GRWTSK/); [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. Maintained source placement follows the [approved MSC2020 layout](documentation/taxonomy/msc2020/source-layout-v1.json), while existing declaration namespaces and verification scopes remain preserved.
 
-Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound. An encoding, graph, or waveform may suggest an approach, but representing a source does not itself supply a missing mathematical estimate.
+Examples include [least natural prime](documentation/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](documentation/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](documentation/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Consult each statement's hypotheses and evidence rather than inferring acceptance from its placement.
 
-Steering AI discovery is the project's purpose. Whether a particular signal improves research choices, proof success, or discovery outcomes requires separate evaluation; the purpose is not a claim of measured AI performance.
+[Ethical obligations and mechanistic reasoning](documentation/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](documentation/mathematics/_verification/specifications/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and correspondence to an actual implementation remain separate obligations. This work does not certify the attribution principles of this README.
 
-### Source-bound verification notices
+## Read every result with its evidence
+
+Research value, mathematical role, and verification status must remain distinct. A written argument is not a kernel receipt. A source candidate is not an accepted proof. A conditional implication does not discharge its own premises. A useful analogy does not establish a theorem or historical influence.
+
+Source inspection, compilation, fresh kernel checking, and transitive axiom auditing are separate checks. Bind their actual outcomes to the relevant source and dependencies; mark unperformed checks `NOT_RUN`. Evidence for historical bytes does not certify changed source, and evidence for one declaration does not certify the whole collection.
+
+Finite spectral computations do not identify the complete zeta-zero divisor by themselves. Tensor or block representations do not establish a quantum speedup. Lossless encodings, graphs, or waveforms do not supply a missing arithmetic estimate. A successful build alone does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound.
+
+The same standard applies to this project's ambition. Steering discovery, recognizing overlooked contributions, and improving AI-assisted research are goals. Their realization must be assessed through evidence, not inferred from repository size, publication, or the language of the mission.
+
+### Retained source-bound verification notices
 
 <!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
 [Latest source-bound verification observations](documentation/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
 <!-- END VERIFICATION AMENDMENT -->
 
-The cross-branch 107-declaration replay documented below ended in an operational cancellation before declaration audits or exact type checks; every target remains not run. [Terminal status and full target roster](documentation/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) · [public pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). The event is not a mathematical counterexample, and S₃ remains unavailable.
+The recorded cross-branch 107-declaration replay was operationally cancelled before declaration audits or exact type checks; every target in that attempt remains `NOT_RUN`. See the [terminal status and complete target roster](documentation/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) and the [pinned public checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). That cancellation is not a mathematical counterexample; S₃ remains unavailable for the recorded scope.
 
-These retained notices describe their linked verification scopes, not a live or blanket verdict on the collection. Read each result with its exact hypotheses, source revision, and available evidence.
+These notices retain their historical and source-specific limits. They are not a live verdict on every result. Consult [source-bound coverage](https://github.com/grwtsk/noeaaeue/blob/main/documentation/mathematics/_verification/targets/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md) and each target's actual records before making an acceptance claim.
 
-## Build
+## Build and verification
 
-Build the public Lean library with the committed toolchain and dependency manifest:
+Build the public library using the committed toolchain and dependency manifest:
 
 ```sh
 lake build --wfail
 ```
 
-The public baseline is Lean 4.34.1 with Mathlib
-`d13f23b723b8a846827a245b89c10fc7d3f11612`. Provider-specific packages live
-under [`adapters/`](adapters/README.md), including the standalone
-[`openai-math`](adapters/openai-math/README.md) package. Build that package
-separately; its OAI imports are outside the public GRWTSK target.
+The public baseline is **Lean 4.34.1**, with Mathlib pinned to `d13f23b723b8a846827a245b89c10fc7d3f11612`. [`lean-toolchain`](lean-toolchain) and [`lake-manifest.json`](lake-manifest.json) identify the actual inputs. Provider-specific packages live under [`adapters/`](adapters/README.md); build the standalone [`openai-math`](adapters/openai-math/README.md) package separately. Its OAI imports are outside the public GRWTSK target.
 
-The committed `lean-toolchain` and `lake-manifest.json` pin the public Lean and Mathlib inputs. Build success alone is not an axiom audit, finite-certificate validation, or acceptance of an unresolved application premise.
-
-Static replay targets for external verification are described under [`documentation/mathematics/_verification/specifications/`](documentation/mathematics/_verification/specifications/README.md). Former root verification fixtures and custody records now live under [`documentation/mathematics/_verification/targets/`](documentation/mathematics/_verification/targets/). The root `verification/` directory has been removed. No operational cache or execution receipt is canonical repository content.
+[Verification specifications](documentation/mathematics/_verification/specifications/README.md) describe static replay requirements. Former root verification fixtures and custody records are retained under [`documentation/mathematics/_verification/targets/`](documentation/mathematics/_verification/targets/), not a root `verification/` directory. Build success is not an axiom audit, finite-certificate validation, or proof of an unresolved application premise.
 
 ## Repository boundary
 
-This repository owns pure mathematics and static, source-bound verification specifications. Process execution, mutable caches, operational receipts, scheduling, authority records, WSC coordination, Git publication workflows, and generated proof-capsule documentation belong to [`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue), which consumes pinned `grwtsk/math` revisions through typed Git bindings.
+`grwtsk/math` maintains pure mathematics, its exposition and provenance references, and static source-bound verification specifications. Keep declarations within `GRWTSK.*` or explicit upstream dependencies, organized by mathematical subject rather than an orchestration workflow. Follow [AGENTS.md](AGENTS.md) when contributing.
 
-A mathematical acceptance target may specify exact modules, declarations, source files, dependency revisions, trust policy, certificate relations, and hostile controls. Checkout, tool acquisition, process invocation, resource metering, log capture, receipt creation, and capsule publication are external effects.
+[`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue) owns effectful execution and publication workflows against pinned mathematical revisions: process runners, mutable caches, operational receipts, schedules, authority records, WSC coordination, Git-effect machinery, and generated proof-capsule documentation. Do not place those operational artifacts in this repository.
 
-The discovery signal comes from the mathematics and its relationships. This repository supplies that source and its static specifications; Noeaaeue owns effectful execution and publication provenance.
+A static acceptance target may specify modules, declarations, source identities, dependencies, trust policy, certificate relations, and hostile controls. Executing it, recording the outcome, and publishing an operational receipt are separate effects. A specification or intended workflow is not evidence that execution occurred.
 
-## Licensing and provenance
+## Licensing and attribution
 
-Local contributions are attributed to **grwtsk contributors** and use the [MIT license](LICENSE). That collective byline recognizes the shared human inheritance described above; it does not replace specific source attribution. Retained upstream terms and upstream individual credit appear in [NOTICE](NOTICE), [LICENSES](LICENSES), and source headers. Effectful verification and publication provenance is recorded by Noeaaeue (_coming soon_) against exact repository commits, trees, paths, and blobs.
+Local contributions use the byline **grwtsk contributors** and the [MIT license](LICENSE). Retain applicable upstream licenses and identifiable source credit in [NOTICE](NOTICE), [LICENSES](LICENSES), and source headers. Collective local attribution does not erase genuine upstream authorship, change license obligations, or require the disclosure of private identities.
+
+This README states the project's research and attribution principles; it does not replace the license or claim an exhaustive provenance system. Read actual source-bound records for what has been established and what remains unknown.
+
+**Return stronger mathematics to the commons—and preserve the possibility of discovering the people who make further progress possible.**
