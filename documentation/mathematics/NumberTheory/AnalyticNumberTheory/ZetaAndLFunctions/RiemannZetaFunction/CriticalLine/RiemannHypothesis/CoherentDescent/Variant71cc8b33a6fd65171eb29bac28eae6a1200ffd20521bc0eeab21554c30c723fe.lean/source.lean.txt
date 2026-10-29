@@ -1,0 +1,39 @@
+import FormalResearch.PositiveAtlas.CertificationEquivalence
+import FormalResearch.PositiveAtlas.CertificationRefinement
+import FormalResearch.PositiveAtlas.CertificationComparisonInstances
+import FormalResearch.PositiveAtlas.CertificationSolverChoice
+import FormalResearch.PositiveAtlas.CertificationOrbitRefinement
+import FormalResearch.PositiveAtlas.CertificationSourceScale
+import FormalResearch.PositiveAtlas.Grassmannian.PivotTransitions
+import FormalResearch.PositiveAtlas.Grassmannian.PivotBounds
+import FormalResearch.PositiveAtlas.Grassmannian.PivotOperatorBounds
+import FormalResearch.PositiveAtlas.Grassmannian.PivotOrthonormal
+import FormalResearch.PositiveAtlas.Grassmannian.PivotCech
+import FormalResearch.PositiveAtlas.Grassmannian.PivotChartTopology
+import FormalResearch.PositiveAtlas.Grassmannian.PivotControlledTopology
+import FormalResearch.PositiveAtlas.Grassmannian.PivotTransitionFixtures
+import FormalResearch.PositiveAtlas.Grassmannian.PivotOperatorFixtures
+import FormalResearch.PositiveAtlas.Grassmannian.PivotProjectiveCircle
+import FormalResearch.PositiveAtlas.ChartObservableDescent
+import FormalResearch.PositiveAtlas.ModularBoundary.HeisenbergCocycle
+import FormalResearch.PositiveAtlas.ModularBoundary.HeisenbergPathTransport
+import FormalResearch.PositiveAtlas.StorageDescent
+import FormalResearch.PositiveAtlas.HodgeGaugeBounds
+import FormalResearch.PositiveAtlas.HodgeFiniteComplex
+import FormalResearch.PositiveAtlas.SourceProfileAtlas
+import FormalResearch.PositiveAtlas.SourceStorageDescent
+import FormalResearch.PositiveAtlas.SourceAtlasConsumer
+import FormalResearch.PositiveAtlas.Spectral.ReadoutTransportDefect
+import FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin
+
+/-!
+# Coherent atlas reconstruction and signed descent
+
+Task ATLAS-GHH-DESCENT-20261007. This module makes the working theorem
+increment reachable from the maintained root for native integration checks.
+It does not assert the open uniform arithmetic bound, a realization weak
+equivalence, the required Hopf application, or an imported upstream theorem.
+
+Human direction and evaluation: grwtsk contributors.
+AI-assisted formalization and review: OpenAI Codex / ChatGPT.
+-/

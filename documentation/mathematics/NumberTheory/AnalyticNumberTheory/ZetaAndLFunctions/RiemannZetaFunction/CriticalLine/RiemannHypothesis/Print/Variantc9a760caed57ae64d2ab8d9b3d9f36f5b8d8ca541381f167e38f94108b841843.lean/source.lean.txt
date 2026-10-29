@@ -1,0 +1,13 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalDecayWork
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalDecayWork
+
+#print criticalDecay
+#print criticalDecayWork
+#print criticalDecayNegativeMean
+#print squareMinusDecayPairedWork
+#print criticalDecayWork_eq_main
+#print criticalDecayNegativeMean_mem_Icc
+#print squareMinusDecayPairedWork_eq
+#print squareMinusDecayPairedWork_uniformly_bounded

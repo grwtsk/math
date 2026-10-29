@@ -1,0 +1,17 @@
+import SourceActualXiHalfFiniteReadout
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout
+set_option pp.fullNames true
+#check actualMangoldtHalfWindowSeven
+#print axioms actualMangoldtHalfWindowSeven
+#check actualXi_half_window_eq_finite
+#print axioms actualXi_half_window_eq_finite
+#check actualAnchoredXiTailPrimitive_eq_finite
+#print axioms actualAnchoredXiTailPrimitive_eq_finite

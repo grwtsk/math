@@ -1,0 +1,6 @@
+import ActualFourthCorrelationDerivative
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.actual_correlation_third_derivative
+#print RH16IndependentChallengeNext.actual_correlation_fourth_derivative
+#print RH16IndependentChallengeNext.actual_correlation_fourth_derivative_eq

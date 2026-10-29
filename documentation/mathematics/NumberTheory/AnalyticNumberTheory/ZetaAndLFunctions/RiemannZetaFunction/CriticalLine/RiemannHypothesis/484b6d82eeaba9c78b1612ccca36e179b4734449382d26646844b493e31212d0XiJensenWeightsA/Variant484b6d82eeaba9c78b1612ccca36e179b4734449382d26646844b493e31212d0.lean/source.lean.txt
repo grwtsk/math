@@ -1,0 +1,13 @@
+import FormalResearch.RiemannHypothesis.XiJensenWeights
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_zero_index
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_eq_zero_of_lt
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_eq_factorial
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_self
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_pos
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_eq_prod
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_nonneg
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_le_one
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.one_sub_weight_le
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.weight_error_bounds
+#print axioms FormalResearch.RiemannHypothesis.XiJensenWeights.tendsto_weight

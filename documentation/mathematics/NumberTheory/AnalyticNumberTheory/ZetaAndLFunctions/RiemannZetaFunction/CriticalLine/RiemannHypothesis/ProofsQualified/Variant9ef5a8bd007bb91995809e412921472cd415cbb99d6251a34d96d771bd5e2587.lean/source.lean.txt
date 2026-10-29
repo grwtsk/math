@@ -1,0 +1,17 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialJointCancellation.Variantff6efade7403313274e846b7905a486c4da3c154139e661eab4328b69a285296","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ff6efade7403313274e846b7905a486c4da3c154139e661eab4328b69a285296","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualFactorialJointCancellation.Variantff6efade7403313274e846b7905a486c4da3c154139e661eab4328b69a285296","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"ff6efade7403313274e846b7905a486c4da3c154139e661eab4328b69a285296","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/factorial-joint-cancellation/ProofsQualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFactorialJointCancellation
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFactorialJointCancellation.Variantff6efade7403313274e846b7905a486c4da3c154139e661eab4328b69a285296
+
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.factorialNondefectSector
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actualFactorialJointDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_leading_and_tail_eq_joint_factorial_integral
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialJointCancellation.actual_factorial_cancelled_kernel

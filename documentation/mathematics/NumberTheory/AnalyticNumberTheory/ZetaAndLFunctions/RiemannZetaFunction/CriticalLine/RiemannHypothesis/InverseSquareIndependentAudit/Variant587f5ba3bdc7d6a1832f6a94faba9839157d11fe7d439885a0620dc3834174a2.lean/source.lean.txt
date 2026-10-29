@@ -1,0 +1,45 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceInverseSquareEndpointConsumer.Variant32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceInverseSquareEndpointConsumer.Variant32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/independent-1791324490054188000/InverseSquareIndependentAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceInverseSquareEndpointConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceInverseSquareEndpointConsumer.Variant32774041a47e2d71d3289307cfcdf76eb9b251fde0924e2b48e5c63c966b0f73
+
+namespace FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+#check actual_psi_inverse_square
+#print axioms actual_psi_inverse_square
+#check shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#print axioms shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#check shiftedActualChebyshev_inverse_square
+#print axioms shiftedActualChebyshev_inverse_square
+#check shiftedActualChebyshev_mul_intervalIntegrable
+#print axioms shiftedActualChebyshev_mul_intervalIntegrable
+#check shiftedPsiSecondPrimitive
+#print axioms shiftedPsiSecondPrimitive
+#check shiftedPsiFullPrimitive
+#print axioms shiftedPsiFullPrimitive
+#check shiftedPsiSecondPrimitive_intervalIntegrable
+#print axioms shiftedPsiSecondPrimitive_intervalIntegrable
+#check shiftedPsiFullPrimitive_eq
+#print axioms shiftedPsiFullPrimitive_eq
+end FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+namespace FormalResearch.RiemannHypothesis.SourceInverseSquareEndpointConsumer
+#check closed_upper_atom_weight_zero
+#print axioms closed_upper_atom_weight_zero
+#check inverse_square_at_two
+#print axioms inverse_square_at_two
+#check shifted_full_primitive_at_first_atom
+#print axioms shifted_full_primitive_at_first_atom
+#check shifted_second_primitive_at_first_atom
+#print axioms shifted_second_primitive_at_first_atom
+#check primitiveDensity_eq_inverse_square
+#print axioms primitiveDensity_eq_inverse_square
+#check centeredCriticalPrimitive_eq_lower_integral
+#print axioms centeredCriticalPrimitive_eq_lower_integral
+#check actualCesaroPrimitive_eq_inverse_square_double
+#print axioms actualCesaroPrimitive_eq_inverse_square_double
+#check shifted_full_primitive_first_component_applied
+#print axioms shifted_full_primitive_first_component_applied
+end FormalResearch.RiemannHypothesis.SourceInverseSquareEndpointConsumer

@@ -1,0 +1,34 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceOperatorObservable.Variant75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceOperatorObservable.Variant75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/FormalResearch.RiemannHypothesis.SourceOperatorObservable-CurrentPrerequisiteFullAuditV2/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceOperatorObservable
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceOperatorObservable.Variant75f75ceeaaf5239841c14068459316728b500c2a7c7dee18ee5398609f628a75
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_pullback
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_signedDefect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_add
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_coordinates
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.source_readout_eq_operator
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_operator_add_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_twice_residual_add_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.twice_residual_eq_changedSourceReadout_sub_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_of_defect_zero
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout_eq_twice_residual

@@ -1,0 +1,21 @@
+import SourceActualXiCompactSquareBudget
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiCompactSevenCorrection
+#print FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiCompactSevenCorrection
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiFinitePrimitive_eq_compact_square
+#print FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiFinitePrimitive_eq_compact_square
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiSquare_logarithmic_deficiency_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualXiCompactSquareBudget.actualDampedXiSquare_logarithmic_deficiency_abs_le

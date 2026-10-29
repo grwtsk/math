@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.IndependentNumericLeadingTypes.Variant0ac25c3455682ed451ae7ab185df2ba0b320b008cfb81db4ee6acf188b0be66a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7976d4cd6391f03d0e52d9d100d79d9651e5f3d8` · SHA-256 `0ac25c3455682ed451ae7ab185df2ba0b320b008cfb81db4ee6acf188b0be66a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceNumericLeadingTail
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.actualLeadingRenormalizedTail
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.actualLeadingRenormalizedTail
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.leadingFixedErrorBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.leadingFixedErrorBudget
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.leadingFixedErrorBudget_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.leadingFixedErrorBudget_nonneg
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.actual_cutoff_logs_le_scale
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.actual_cutoff_logs_le_scale
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.fullKappaShortBudget_le_fixed
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.fullKappaShortBudget_le_fixed
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.renormalized_tail_sub_actual_leading_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.renormalized_tail_sub_actual_leading_abs_le
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.renormalized_tail_sub_actual_leading_abs_le_fixed
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.renormalized_tail_sub_actual_leading_abs_le_fixed
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.actual_leading_upper_iff_renormalized_upper_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.actual_leading_upper_iff_renormalized_upper_at_radius
+#check FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.estimate_of_actual_leading_signed_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceLeadingTailBudget.estimate_of_actual_leading_signed_tail
+#check FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.leadingFixedErrorBudget_le_numeric
+#print axioms FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.leadingFixedErrorBudget_le_numeric
+#check FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.renormalized_tail_sub_leading_abs_le_numeric
+#print axioms FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.renormalized_tail_sub_leading_abs_le_numeric
+#check FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.actual_leading_complete_pairing_numeric_comparisons
+#print axioms FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.actual_leading_complete_pairing_numeric_comparisons
+#check FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.residual_sub_actual_leading_sub_zeta_abs_lt_numeric
+#print axioms FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.residual_sub_actual_leading_sub_zeta_abs_lt_numeric
+#check FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.actual_leading_upper_iff_complete_pairing_upper_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.actual_leading_upper_iff_complete_pairing_upper_at_radius
+#check FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.estimate_of_actual_leading_signed_tail_numeric
+#print axioms FormalResearch.RiemannHypothesis.SourceNumericLeadingTail.estimate_of_actual_leading_signed_tail_numeric
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8bb28e5c5cfe5667cd702451b6b97135d5f60e0d51cd51ba8225bcce3cecb1dd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/IndependentNumericLeadingTypes/Variant0ac25c3455682ed451ae7ab185df2ba0b320b008cfb81db4ee6acf188b0be66a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

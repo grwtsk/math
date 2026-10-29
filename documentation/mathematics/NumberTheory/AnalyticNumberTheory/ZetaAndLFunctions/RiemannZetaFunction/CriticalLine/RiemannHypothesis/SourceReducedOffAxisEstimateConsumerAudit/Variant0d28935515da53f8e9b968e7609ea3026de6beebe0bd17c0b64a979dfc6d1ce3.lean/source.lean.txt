@@ -1,0 +1,24 @@
+import SourceReducedOffAxisEstimateConsumer
+namespace FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer
+#check reducedOffAxisAllowance
+#print axioms reducedOffAxisAllowance
+#print reducedOffAxisAllowance
+#check reducedOffAxisResidualBudget
+#print axioms reducedOffAxisResidualBudget
+#print reducedOffAxisResidualBudget
+#check reducedOffAxisAllowance_le_at_radius
+#print axioms reducedOffAxisAllowance_le_at_radius
+#print reducedOffAxisAllowance_le_at_radius
+#check residual_tail_of_reduced_offAxis_lower
+#print axioms residual_tail_of_reduced_offAxis_lower
+#print residual_tail_of_reduced_offAxis_lower
+#check all_real_lower_of_reduced_offAxis_lower
+#print axioms all_real_lower_of_reduced_offAxis_lower
+#print all_real_lower_of_reduced_offAxis_lower
+#check estimate_of_reduced_offAxis_lower
+#print axioms estimate_of_reduced_offAxis_lower
+#print estimate_of_reduced_offAxis_lower
+#check leading_tail_of_reduced_offAxis_lower
+#print axioms leading_tail_of_reduced_offAxis_lower
+#print leading_tail_of_reduced_offAxis_lower
+end FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer

@@ -1,0 +1,6 @@
+import FormalResearch.RiemannHypothesis.FiniteGameSearchWeights
+#print axioms FormalResearch.RiemannHypothesis.FiniteGameSearchWeights.dualWeightUpdate_product
+#print axioms FormalResearch.RiemannHypothesis.FiniteGameSearchWeights.dualWeightRun_threshold
+#print axioms FormalResearch.RiemannHypothesis.FiniteGameSearchWeights.support_survives
+#print axioms FormalResearch.RiemannHypothesis.FiniteGameSearchWeights.unsupported_reweighting_fails
+#print axioms FormalResearch.RiemannHypothesis.FiniteGameSearchWeights.inverseProductRank_strict

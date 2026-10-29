@@ -1,0 +1,31 @@
+import SourceFullXiOuterContraction
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceOuterPsiFubini
+open FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction
+
+#check finiteDensity_integrable
+#print finiteDensity_integrable
+#print axioms finiteDensity_integrable
+
+#check actualFiniteSecondReadout_outer_fubini
+#print actualFiniteSecondReadout_outer_fubini
+#print axioms actualFiniteSecondReadout_outer_fubini
+
+#check literal_full_Xi_pairing_eq_contracted
+#print literal_full_Xi_pairing_eq_contracted
+#print axioms literal_full_Xi_pairing_eq_contracted
+
+#check actual_signed_pairing_eq_contracted
+#print actual_signed_pairing_eq_contracted
+#print axioms actual_signed_pairing_eq_contracted
+
+#check remaining_lower_of_contracted_pairing
+#print remaining_lower_of_contracted_pairing
+#print axioms remaining_lower_of_contracted_pairing
+
+#check estimate_of_contracted_pairing
+#print estimate_of_contracted_pairing
+#print axioms estimate_of_contracted_pairing
+

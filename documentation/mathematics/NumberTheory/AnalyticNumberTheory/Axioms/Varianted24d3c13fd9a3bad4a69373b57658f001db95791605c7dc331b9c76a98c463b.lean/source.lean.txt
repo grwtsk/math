@@ -1,0 +1,7 @@
+import SourceJointMangoldtWork
+
+open FormalResearch.RiemannHypothesis.SourceJointMangoldtWork
+
+#print axioms jointMangoldtTestProfile
+#print axioms jointMangoldtErrorWork
+#print axioms strictColumnInterior_eq_joint_mangoldt_error_work

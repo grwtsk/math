@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualCenteredPeriodMeanBudgetAuditPackageTypes.Variant83ab5c52ad9aae40aef792456a6eb72c1dd6620248226b873e656a71c7badf6f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a33c19a865f5c6ed4fa250827f14c9c8a544a393` · SHA-256 `83ab5c52ad9aae40aef792456a6eb72c1dd6620248226b873e656a71c7badf6f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualCenteredPeriodMeanBudget
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actualDivisorPeriodicResidual_one_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actualDivisorPeriodicResidual_one_zero
+#check FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actualDivisorPeriodicResidual_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actualDivisorPeriodicResidual_abs_le
+#check FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actual_signed_periodic_residual_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actual_signed_periodic_residual_abs_le
+#check FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actualCenteredPrefixPeriodMean_abs_le
+#print axioms FormalResearch.RiemannHypothesis.ActualCenteredPeriodMeanBudget.actualCenteredPrefixPeriodMean_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=22b093a98a263dee153d26c30adb6efb5301c0d8b1c32173a311ffdf51896f9f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualCenteredPeriodMeanBudgetAuditPackageTypes/Variant83ab5c52ad9aae40aef792456a6eb72c1dd6620248226b873e656a71c7badf6f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

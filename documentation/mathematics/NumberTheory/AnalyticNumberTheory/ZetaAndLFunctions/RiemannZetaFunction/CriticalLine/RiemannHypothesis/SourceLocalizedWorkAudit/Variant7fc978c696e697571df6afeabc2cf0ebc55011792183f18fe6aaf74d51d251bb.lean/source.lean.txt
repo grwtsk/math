@@ -1,0 +1,34 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.Variantcdc5c892d801c3513087cc87e529ae3b4786fb8b4bf73fa8f86acf10447f66f9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"cdc5c892d801c3513087cc87e529ae3b4786fb8b4bf73fa8f86acf10447f66f9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceLocalizedMixedWorkEstimate.Variantcdc5c892d801c3513087cc87e529ae3b4786fb8b4bf73fa8f86acf10447f66f9","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"cdc5c892d801c3513087cc87e529ae3b4786fb8b4bf73fa8f86acf10447f66f9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/SourceLocalizedWorkAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceLocalizedMixedWorkEstimate
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.Variantcdc5c892d801c3513087cc87e529ae3b4786fb8b4bf73fa8f86acf10447f66f9
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.localizedCenteredErrorExpMass_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.localizedCenteredErrorExpMass_nonneg
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.centeredErrorWork_abs_le_localized_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.centeredErrorWork_abs_le_localized_mass
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.exp_half_actualJointSupportUpper
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.exp_half_actualJointSupportUpper
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.localizedCenteredErrorExpMass_le
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.localizedCenteredErrorExpMass_le
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.centeredErrorWork_abs_le_localized_explicit
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.centeredErrorWork_abs_le_localized_explicit
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.jointMangoldtErrorWork_abs_le_localized_explicit
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.jointMangoldtErrorWork_abs_le_localized_explicit
+
+#check FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.original_boundary_work_abs_le_localized_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceLocalizedMixedWorkEstimate.original_boundary_work_abs_le_localized_mass
+

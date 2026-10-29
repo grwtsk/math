@@ -1,0 +1,17 @@
+import FormalResearch.RiemannHypothesis.SourceCorrelationCurvature
+import Zeta23.WeilEF.VerticalLine
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+#print axioms Zeta23.WeilEF.prime_side_line
+#check Zeta23.WeilEF.prime_side_line
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity.sourceCorrelation_hasCompactSupport
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity.sourceCorrelation_eq_zero_of_two_mul_le_abs
+#check FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_contDiff_two
+#check HasCompactSupport.comp_left
+#check Complex.ofRealCLM
+#check Complex.integral_ofReal
+#check MeasureTheory.integral_eq_setIntegral
+#check MeasureTheory.integral_eq_integral_Icc_of_support_subset
+#check tsum_eq_sum
+#check Real.log_le_iff_le_exp

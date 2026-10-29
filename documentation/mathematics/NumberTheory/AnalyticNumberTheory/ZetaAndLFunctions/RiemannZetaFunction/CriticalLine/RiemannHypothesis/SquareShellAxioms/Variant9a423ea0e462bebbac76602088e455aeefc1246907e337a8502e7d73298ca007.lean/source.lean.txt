@@ -1,0 +1,26 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaSquareShell.Variant4a0bee1828b23b41d27540ff3bd25b02f9707d5434ef44ba7816fcbdce4410e3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4a0bee1828b23b41d27540ff3bd25b02f9707d5434ef44ba7816fcbdce4410e3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceKapitzaSquareShell.Variant4a0bee1828b23b41d27540ff3bd25b02f9707d5434ef44ba7816fcbdce4410e3","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"4a0bee1828b23b41d27540ff3bd25b02f9707d5434ef44ba7816fcbdce4410e3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/cse-rh16-root-independent/SquareShellAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaSquareShell.Variant4a0bee1828b23b41d27540ff3bd25b02f9707d5434ef44ba7816fcbdce4410e3
+
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.tangentErrorConstant_lt_1429_tenth
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finiteCompensatedReadout_eq_prime_sub_baseline
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finiteCompensatedReadout_actual_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shellEndpoint_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_lower_strict
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_sqrt_gap_lt_one
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.shell_log_squared_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.event_taylor_error
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.threeHalves_eq_mul_sqrt
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.mangoldt_sub_one_abs_le_quad
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inversePrimitive_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_continuousOn
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_integral_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.inverseThreeHalves_sum_le
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.signedErrorWeight_le_of_inverse_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error_of_inverse_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error

@@ -1,0 +1,12 @@
+import SourceDirectCorrectedPairingLeading
+
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceDirectCorrectedPairingLeading
+
+#check leading_upper_of_complete_corrected_pairing
+#print axioms leading_upper_of_complete_corrected_pairing
+
+#check leading_tail_of_complete_corrected_pairing
+#print axioms leading_tail_of_complete_corrected_pairing
+
+end FormalResearch.RiemannHypothesis.SourceDirectCorrectedPairingLeading

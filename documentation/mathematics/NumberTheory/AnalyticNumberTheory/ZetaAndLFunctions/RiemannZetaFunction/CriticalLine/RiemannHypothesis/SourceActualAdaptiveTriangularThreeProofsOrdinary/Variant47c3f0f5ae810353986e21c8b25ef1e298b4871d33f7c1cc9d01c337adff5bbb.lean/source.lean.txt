@@ -1,0 +1,9 @@
+import SourceActualAdaptiveTriangularThree
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.sourceEndpoint_abs_le_three
+#print FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.residual_upper_of_actualTriangular_upper
+#print FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.residual_tail_of_actualTriangular_tail
+#print FormalResearch.RiemannHypothesis.SourceActualAdaptiveTriangularThree.estimate_of_actualTriangular_tail

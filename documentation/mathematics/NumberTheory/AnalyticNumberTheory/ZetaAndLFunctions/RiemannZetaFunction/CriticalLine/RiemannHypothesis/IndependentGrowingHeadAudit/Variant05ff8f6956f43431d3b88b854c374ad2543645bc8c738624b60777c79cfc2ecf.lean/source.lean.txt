@@ -1,0 +1,23 @@
+import SourceGrowingXiHead
+#print RH16GrowingXiHead.actualXiCurvature
+#print axioms RH16GrowingXiHead.actualXiCurvature
+#print RH16GrowingXiHead.growingXiHead
+#print axioms RH16GrowingXiHead.growingXiHead
+#print RH16GrowingXiHead.growingXiTail
+#print axioms RH16GrowingXiHead.growingXiTail
+#print RH16GrowingXiHead.growingXiHeadCost
+#print axioms RH16GrowingXiHead.growingXiHeadCost
+#print RH16GrowingXiHead.actualXiCurvature_abs_le
+#print axioms RH16GrowingXiHead.actualXiCurvature_abs_le
+#print RH16GrowingXiHead.actual_f7_head_abs_le
+#print axioms RH16GrowingXiHead.actual_f7_head_abs_le
+#print RH16GrowingXiHead.growingXiHead_abs_le
+#print axioms RH16GrowingXiHead.growingXiHead_abs_le
+#print RH16GrowingXiHead.growingXiHeadCost_nonneg
+#print axioms RH16GrowingXiHead.growingXiHeadCost_nonneg
+#print RH16GrowingXiHead.growingXiHead_abs_le_at_radius
+#print axioms RH16GrowingXiHead.growingXiHead_abs_le_at_radius
+#print RH16GrowingXiHead.completeXiTail_eq_growing_head_add_tail
+#print axioms RH16GrowingXiHead.completeXiTail_eq_growing_head_add_tail
+#print RH16GrowingXiHead.completeXiTail_lower_of_growing_tail
+#print axioms RH16GrowingXiHead.completeXiTail_lower_of_growing_tail

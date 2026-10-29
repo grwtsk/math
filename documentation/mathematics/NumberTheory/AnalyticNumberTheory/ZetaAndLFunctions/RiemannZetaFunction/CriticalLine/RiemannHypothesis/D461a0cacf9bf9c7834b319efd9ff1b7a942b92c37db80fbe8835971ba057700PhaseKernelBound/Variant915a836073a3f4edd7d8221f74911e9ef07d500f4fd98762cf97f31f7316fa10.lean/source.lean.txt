@@ -1,0 +1,25 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PhaseKernelBoundary.Variantd461a0cacf9bf9c7834b319efd9ff1b7a942b92c37db80fbe8835971ba057700","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d461a0cacf9bf9c7834b319efd9ff1b7a942b92c37db80fbe8835971ba057700","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.PhaseKernelBoundary.Variantd461a0cacf9bf9c7834b319efd9ff1b7a942b92c37db80fbe8835971ba057700","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"d461a0cacf9bf9c7834b319efd9ff1b7a942b92c37db80fbe8835971ba057700","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/d4/d461a0cacf9bf9c7834b319efd9ff1b7a942b92c37db80fbe8835971ba057700--PhaseKernelBoundaryAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.PhaseKernelBoundary
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.PhaseKernelBoundary.Variantd461a0cacf9bf9c7834b319efd9ff1b7a942b92c37db80fbe8835971ba057700
+
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.source_continuum_abs_le_two
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.source_continuum_abs_le_two
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.scaled_kernel_has_negative_value
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.scaled_kernel_has_negative_value
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.fixed_kernel_continuous
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.fixed_kernel_continuous
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.log_div_radius_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.log_div_radius_tendsto_zero
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.source_normalization_tendsto
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.source_normalization_tendsto
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.scaled_kernel_fixed_index_tendsto
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.scaled_kernel_fixed_index_tendsto
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.prime_weight_pos
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.prime_weight_pos
+#check FormalResearch.RiemannHypothesis.PhaseKernelBoundary.integrated_prime_square_block_eventually_pos
+#print axioms FormalResearch.RiemannHypothesis.PhaseKernelBoundary.integrated_prime_square_block_eventually_pos

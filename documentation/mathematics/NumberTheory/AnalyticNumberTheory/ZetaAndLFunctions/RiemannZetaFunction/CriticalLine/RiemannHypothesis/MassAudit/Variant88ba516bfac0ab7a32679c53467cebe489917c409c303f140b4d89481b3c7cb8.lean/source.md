@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.MassAudit.Variant88ba516bfac0ab7a32679c53467cebe489917c409c303f140b4d89481b3c7cb8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `242766dc2855d12c9deb8a3e4ea8a0e09d00736d` · SHA-256 `88ba516bfac0ab7a32679c53467cebe489917c409c303f140b4d89481b3c7cb8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCriticalWeightMassObstruction
+set_option linter.hashCommand false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.criticalWeight_early_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.criticalWeight_early_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.criticalWeight_early_lower
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.baselineLogKernel_continuous
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.baselineLogKernel_continuous
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.baselineLogKernel_continuous
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_integrable
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_integrable
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteWeight_prefix_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteWeight_prefix_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteWeight_prefix_lower
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_exponential_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_exponential_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_exponential_lower
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_linear_lower
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_linear_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_linear_lower
+#check FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_not_eventually_bounded
+#print FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_not_eventually_bounded
+#print axioms FormalResearch.RiemannHypothesis.SourceCriticalWeightMassObstruction.absoluteCriticalWeightMass_not_eventually_bounded
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=abdb51b75b561d9252ebfc9a0c8c32ea401580235841615466c0c88ff297c3c2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/MassAudit/Variant88ba516bfac0ab7a32679c53467cebe489917c409c303f140b4d89481b3c7cb8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

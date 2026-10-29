@@ -1,0 +1,24 @@
+import SourceCutoffOneLedger
+
+open FormalResearch.RiemannHypothesis.SourceCutoffOneLedger
+
+#print cutoffOneDiagonal
+#print cutoffOnePrimeDiagonal
+#print cutoffOneSamplingError
+#print cutoffOneLedgerError
+#print beta_one_of_one_lt
+#print cutoffOneDiagonal_eq_mangoldt_sum
+#print cutoffOnePrimeDiagonal_eq_window
+#print cutoffOneDiagonal_sub_prime_eq
+#print cutoffOneDiagonal_sub_prime_abs_le
+#print cutoffOnePrimeDiagonal_main_term_error
+#print cutoffOneDiagonal_main_term_error
+#print cutoffOneSamplingError_abs_le
+#print cutoffOneLedgerError_uniform_bound
+#print mainTermAt_one_formula
+#print uncenteredOffAt_one
+#print residual_eq_cutoffOne_rectangle
+#print residual_eq_cutoffOne_joint_add_error
+#print actual_cumulative_jointFlux_eq
+#print actual_cumulative_jointFlux_uniform_bound
+#print cutoffOne_baseline_tail_iff_residualTail

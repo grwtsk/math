@@ -1,0 +1,8 @@
+import SourceEndpointThree
+set_option linter.hashCommand false
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.proofs true
+set_option pp.fullNames false
+#print RH16IndependentChallenge.endpoint_exponential_envelope_le_three
+#print FormalResearch.RiemannHypothesis.SourceEndpointThree.actual_centered_column_endpoint_abs_le_three

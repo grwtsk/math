@@ -1,0 +1,67 @@
+# Algebraic number theory
+
+<!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
+
+[Results index](../../index.md) · [Up one directory](../index.md)
+
+**Subject:** `urn:uuid:93696268-3f9f-4855-9288-1e9286ad4177` · editorial status: **proposed** · [definition, scope and sources](../../../taxonomy/subjects/NumberTheory/AlgebraicNumberTheory/index.md).
+
+The study of arithmetic through algebraic extensions of the rational numbers and related rings, ideals, valuations and field structures.
+
+**Scope.** Number fields and their rings of integers are central; local fields and other extensions provide further contexts requiring their own hypotheses. This is not all abstract algebra or all algebraic geometry. Ideal arithmetic and factorization of elements must not be conflated. Arithmetic invariants and algorithms that compute them require separate statements of their domains.
+
+**Subject routes:** [Number theory](../index.md). Parentage retains the taxonomy's recorded status.
+
+## Complete source publication
+
+[Every source module and declaration](../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+Namespace totals and the complete namespace route:
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [NumberTheory](../complete-source-index.md) | 12,476 | 126,821 | 75,032 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `ce146fb73924abcb43ba4cf06ae7e5a14540e608e309a0c1e8a48d5dde554d6b`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+|---:|---:|---:|---:|
+| 2 | 0 | 0 | 0 |
+
+Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
+
+## Top results
+
+**Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../_support/reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
+
+- [Primitive kernel frame and anisotropic covolume normalization](GeometryOfNumbers/heath-brown-primitive-kernel-frame.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The preceding stack supplies positive natural coefficients and variables
+- [Primitive linear-box foundation for the Heath–Brown estimate](GeometryOfNumbers/heath-brown-primitive-linear-box-foundation.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The surrounding exceptional-set argument is from Christian Bernert, Tim Browning, Jared Duker Lichtman, and Joni Teräväinen, *Bounds on the exceptional set in the abc conjecture*, arXiv:2410.12234v2 (2026),…
+
+Missing metric evidence: `verification_dependency_graph_unavailable`.
+
+[Ranking definition and weight profile](../../_support/reference/ranking-profile.json) · [Article standard](../../_support/reference/result-article-standard.md).
+Ranking profile: `spectral-volume-radius3-v2` · SHA-256 `254c958eb7f5879d7f3e13f91bbb7ef7a19d3203b48c1402da4198b7992bdc1e`.
+
+## Immediate specializations and directories
+
+1. **[Algebraic number field theory](NumberFields/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of finite field extensions of the rational numbers and their arithmetic structures, including rings of integers, embeddings, norms, ideals and units.
+2. **[Computational algebraic number theory](../ComputationalNumberTheory/AlgebraicNumberTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of algorithms for algebraic-number arithmetic and invariants, with explicit representations of number fields, their orders, ideals and related algebraic structures.
+3. **[Geometry Of Numbers](GeometryOfNumbers/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Primitive kernel frame and anisotropic covolume normalization](GeometryOfNumbers/heath-brown-primitive-kernel-frame.md); [Primitive linear-box foundation for the Heath–Brown estimate](GeometryOfNumbers/heath-brown-primitive-linear-box-foundation.md).
+
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 907 observed taxonomy/article/catalog inputs; 296 differ from that commit. Observation SHA-256: `7a3829e1c148a68b58a9d7c91d2815c6fd71d1619fa58cde5c839a064ad17d30`.
+Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
+
+<!-- END GENERATED MATHEMATICS NAVIGATION -->
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=93b3c620a87ec00259fe9a78ebb13996ce52226cc321e2c7b15e2d7999940214 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

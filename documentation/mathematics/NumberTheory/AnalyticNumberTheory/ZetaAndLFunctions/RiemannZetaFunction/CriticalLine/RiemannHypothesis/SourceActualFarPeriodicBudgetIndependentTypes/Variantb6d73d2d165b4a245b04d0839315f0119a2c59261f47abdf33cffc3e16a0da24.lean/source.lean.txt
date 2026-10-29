@@ -1,0 +1,21 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFarPeriodicBudget.Variant8efac44f1fd4557a602f9d0aeb4cfd911fbdda4d210631d54593934e3420ac25","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8efac44f1fd4557a602f9d0aeb4cfd911fbdda4d210631d54593934e3420ac25","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualFarPeriodicBudget.Variant8efac44f1fd4557a602f9d0aeb4cfd911fbdda4d210631d54593934e3420ac25","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"8efac44f1fd4557a602f9d0aeb4cfd911fbdda4d210631d54593934e3420ac25","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/independent-far-periodic-20261006T231318Z/SourceActualFarPeriodicBudget/SourceActualFarPeriodicBudgetIndependentTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualFarPeriodicBudget
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualFarPeriodicBudget.Variant8efac44f1fd4557a602f9d0aeb4cfd911fbdda4d210631d54593934e3420ac25
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualFarPeriodicBudget
+#check actualPhysicalPeriodicPrefixRow
+#print axioms actualPhysicalPeriodicPrefixRow
+#check actualPhysicalPeriodicPrefixRow_abs_le
+#print axioms actualPhysicalPeriodicPrefixRow_abs_le
+#check actualPhysicalPeriodicPrefixRow_zero_right
+#print axioms actualPhysicalPeriodicPrefixRow_zero_right
+#check actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#print axioms actualPhysicalPeriodicPrefixRow_intervalIntegrable
+#check actualPhysicalPeriodicPrefixRow_eq_log
+#print axioms actualPhysicalPeriodicPrefixRow_eq_log

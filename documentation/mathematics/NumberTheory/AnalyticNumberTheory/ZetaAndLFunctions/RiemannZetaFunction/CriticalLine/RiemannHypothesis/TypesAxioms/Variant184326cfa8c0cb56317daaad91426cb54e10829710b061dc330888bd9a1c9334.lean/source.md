@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variant184326cfa8c0cb56317daaad91426cb54e10829710b061dc330888bd9a1c9334
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a3f23246bb60cb4a83d7c7396251852d142d8de3` · SHA-256 `4314c4a7ec57fcff0d5da57b062bc2d1a424db16c7c8ffb377428dcc21b8dee0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalZeroHead.Variant53a3a6efd98637ec39657c80f99033b3f4af2fca0a4bdf2b1bc130a5b9dfb643","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"53a3a6efd98637ec39657c80f99033b3f4af2fca0a4bdf2b1bc130a5b9dfb643","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCriticalZeroHead.Variant53a3a6efd98637ec39657c80f99033b3f4af2fca0a4bdf2b1bc130a5b9dfb643","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"53a3a6efd98637ec39657c80f99033b3f4af2fca0a4bdf2b1bc130a5b9dfb643","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualCriticalZeroHead-IndependentAllAnnotationAudit01/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCriticalZeroHead
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCriticalZeroHead.Variant53a3a6efd98637ec39657c80f99033b3f4af2fca0a4bdf2b1bc130a5b9dfb643
+
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroWeight_real_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroWeight_real_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_eq_sourceMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_eq_sourceMass
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_im_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_im_zero
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_re_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_re_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_eq_critical_add_offAxis
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_eq_critical_add_offAxis
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_re_eq_critical_add_offAxis
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_re_eq_critical_add_offAxis
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead_re_le_full
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead_re_le_full
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=49de18c8c62a1be13ecd5a76eed794681883727a83d8badd92909f5e6cc85c44 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Variant184326cfa8c0cb56317daaad91426cb54e10829710b061dc330888bd9a1c9334.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

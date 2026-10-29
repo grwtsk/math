@@ -1,0 +1,20 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiIntegerExact.Variant9cccbe112ce1170fdae4d4399c6e0d51dae2bb09d9a4c8a68005fd075b18adab","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9cccbe112ce1170fdae4d4399c6e0d51dae2bb09d9a4c8a68005fd075b18adab","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPsiIntegerExact.Variant9cccbe112ce1170fdae4d4399c6e0d51dae2bb09d9a4c8a68005fd075b18adab","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9cccbe112ce1170fdae4d4399c6e0d51dae2bb09d9a4c8a68005fd075b18adab","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualPsiIntegerExactAuditProofsqualified.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPsiIntegerExact
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiIntegerExact.Variant9cccbe112ce1170fdae4d4399c6e0d51dae2bb09d9a4c8a68005fd075b18adab
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actual_signed_unit_retained
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actualPsiFloorDensity_zero_below_one
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actualPsiFloorDensity_integrable_upper
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actualPsiFloorDensity_integrable_one
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actualPsiFloorPairing_eq_integerJ
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actual_residual_sub_psi_floor_calibration
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actual_residual_sub_psi_floor_zeta_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.original_estimate_of_actual_psi_floor_upper
+#print FormalResearch.RiemannHypothesis.SourceActualPsiIntegerExact.actual_residual_upper_of_psi_floor

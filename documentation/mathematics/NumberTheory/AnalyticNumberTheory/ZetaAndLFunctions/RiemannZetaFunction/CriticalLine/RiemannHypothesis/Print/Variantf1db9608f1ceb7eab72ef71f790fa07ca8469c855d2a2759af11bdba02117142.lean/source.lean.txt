@@ -1,0 +1,15 @@
+import FormalResearch.RiemannHypothesis.SourcePairedSquareMainTerm
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePairedSquareMainTerm
+
+#print pairedSquareMainCorrection
+#print pairedSquareReadout_eq
+#print pairedSquareReadout_eq_main_correction
+#print pairedSquareMainCorrection_uniformly_bounded
+#print squareRemovedPairedWork_eq_first_main_correction
+#print sourceNormalization_le_forty_one
+#print diagonalMainCoefficient_ge_one_div_four_thousand
+#print pairedSquareReadout_eventually_le_any_bound
+#print pairedSquareReadout_not_eventually_lower_bounded

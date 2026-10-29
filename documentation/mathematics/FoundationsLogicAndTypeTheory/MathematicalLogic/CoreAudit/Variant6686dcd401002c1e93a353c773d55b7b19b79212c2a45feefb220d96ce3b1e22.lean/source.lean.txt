@@ -1,0 +1,40 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.MathematicalLogic
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CertificationRefinement.Variant2736dd028b7e80748de434f858489607ad1505c589455ec9c6fc6b66a09ba7bf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2736dd028b7e80748de434f858489607ad1505c589455ec9c6fc6b66a09ba7bf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Logic.Foundations.SourceCorpus.CertificationRefinement.Variant2736dd028b7e80748de434f858489607ad1505c589455ec9c6fc6b66a09ba7bf","mathematical_subject":"Logic.Foundations","original_sha256":"2736dd028b7e80748de434f858489607ad1505c589455ec9c6fc6b66a09ba7bf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.worktrees/atlas-ghh-descent-20261007/artifacts/atlas-ghh/certificates/CoreAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.CertificationRefinement
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CertificationRefinement.Variant2736dd028b7e80748de434f858489607ad1505c589455ec9c6fc6b66a09ba7bf
+
+set_option pp.universes true
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_existsUnique
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_existsUnique
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.reachableEquiv
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.reachableEquiv
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_unique
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_unique
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_recover
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_recover
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_refl
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_refl
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_symm
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_symm
+#print FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_trans
+#print axioms FormalResearch.PositiveAtlas.SufficientRepresentation.minimalEquiv_trans
+#print FormalResearch.PositiveAtlas.StructuralQuine.compress_surjective
+#print axioms FormalResearch.PositiveAtlas.StructuralQuine.compress_surjective
+#print FormalResearch.PositiveAtlas.CertificateRestriction
+#print axioms FormalResearch.PositiveAtlas.CertificateRestriction
+#print FormalResearch.PositiveAtlas.CertificateRestriction.map
+#print axioms FormalResearch.PositiveAtlas.CertificateRestriction.map
+#print FormalResearch.PositiveAtlas.CertificateRestriction.map_recover
+#print axioms FormalResearch.PositiveAtlas.CertificateRestriction.map_recover
+#print FormalResearch.PositiveAtlas.CertificateRestriction.map_trans
+#print axioms FormalResearch.PositiveAtlas.CertificateRestriction.map_trans
+#print FormalResearch.PositiveAtlas.CertificateRestriction.map_equiv_natural
+#print axioms FormalResearch.PositiveAtlas.CertificateRestriction.map_equiv_natural
+#print FormalResearch.PositiveAtlas.CertificateRestriction.map_evolution
+#print axioms FormalResearch.PositiveAtlas.CertificateRestriction.map_evolution

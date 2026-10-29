@@ -1,0 +1,7 @@
+import FormalResearch.TypeTheory.PureTypeSystem.BetaDenotation
+
+#check FormalResearch.TypeTheory.BetaReduction.denotation
+#check FormalResearch.TypeTheory.BetaReduction.step_preserves_denotation
+#check FormalResearch.TypeTheory.BetaReduction.normalizeFuel_preserves_denotation
+#print axioms FormalResearch.TypeTheory.BetaReduction.step_preserves_denotation
+#print axioms FormalResearch.TypeTheory.BetaReduction.normalizeFuel_preserves_denotation

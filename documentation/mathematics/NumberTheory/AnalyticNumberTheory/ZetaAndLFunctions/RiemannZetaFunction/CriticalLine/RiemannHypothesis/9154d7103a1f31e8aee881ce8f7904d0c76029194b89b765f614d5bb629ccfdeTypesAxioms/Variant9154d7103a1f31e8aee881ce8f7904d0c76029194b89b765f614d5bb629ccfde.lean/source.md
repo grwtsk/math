@@ -1,0 +1,42 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.9154d7103a1f31e8aee881ce8f7904d0c76029194b89b765f614d5bb629ccfdeTypesAxioms.Variant9154d7103a1f31e8aee881ce8f7904d0c76029194b89b765f614d5bb629ccfde
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `61a43e3e8ee16414904e734df6604af870fe9af9` · SHA-256 `9154d7103a1f31e8aee881ce8f7904d0c76029194b89b765f614d5bb629ccfde`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualShortSquareStorage
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquare_reconstruction
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquare_reconstruction
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareBaseline_le
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_le_envelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_le_envelope
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorageEnvelope_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareStorage_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareSurplus_eventually_negative_linear
+#print axioms FormalResearch.RiemannHypothesis.SourceActualShortSquareStorage.actualShortSquareSurplus_eventually_negative_linear
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a729c5656e16f9770e6ceb31b90369e92ef691e30f8f3250ff265b39d93d8c8b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/9154d7103a1f31e8aee881ce8f7904d0c76029194b89b765f614d5bb629ccfdeTypesAxioms/Variant9154d7103a1f31e8aee881ce8f7904d0c76029194b89b765f614d5bb629ccfde.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

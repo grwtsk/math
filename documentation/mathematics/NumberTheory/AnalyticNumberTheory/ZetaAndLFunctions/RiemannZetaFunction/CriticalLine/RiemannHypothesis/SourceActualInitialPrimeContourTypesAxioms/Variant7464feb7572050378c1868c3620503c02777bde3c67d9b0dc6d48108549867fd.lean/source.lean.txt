@@ -1,0 +1,32 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualInitialPrimeContour.Variant17261e3ff0befd5efe344c770c57311ad9979f72d4e3030977cf2274bc7dfd75","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"17261e3ff0befd5efe344c770c57311ad9979f72d4e3030977cf2274bc7dfd75","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualInitialPrimeContour.Variant17261e3ff0befd5efe344c770c57311ad9979f72d4e3030977cf2274bc7dfd75","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"17261e3ff0befd5efe344c770c57311ad9979f72d4e3030977cf2274bc7dfd75","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-bessel-contour-recovery/SourceActualInitialPrimeContourTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualInitialPrimeContour
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualInitialPrimeContour.Variant17261e3ff0befd5efe344c770c57311ad9979f72d4e3030977cf2274bc7dfd75
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeMellin
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeMellin
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeMellin_eq_Hfn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeMellin_eq_Hfn
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeKernel_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeKernel_contDiff
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeKernel_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeKernel_hasCompactSupport
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrime_cutoff_atom_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrime_cutoff_atom_zero
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrime_tsum_eq_strict
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrime_tsum_eq_strict
+#check FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeContour_eq_strict
+#print axioms FormalResearch.RiemannHypothesis.SourceActualInitialPrimeContour.actualInitialPrimeContour_eq_strict

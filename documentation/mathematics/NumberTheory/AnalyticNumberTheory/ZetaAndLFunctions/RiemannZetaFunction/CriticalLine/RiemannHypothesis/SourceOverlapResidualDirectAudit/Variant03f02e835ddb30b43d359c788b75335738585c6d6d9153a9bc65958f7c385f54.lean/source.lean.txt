@@ -1,0 +1,18 @@
+import SourceOverlapResidualDirect
+
+namespace FormalResearch.RiemannHypothesis.SourceOverlapResidualDirect
+
+#check residual_upper_of_overlap_upper
+#print axioms residual_upper_of_overlap_upper
+#print residual_upper_of_overlap_upper
+#check residual_tail_of_overlap_tail
+#print axioms residual_tail_of_overlap_tail
+#print residual_tail_of_overlap_tail
+#check all_real_lower_of_overlap_tail
+#print axioms all_real_lower_of_overlap_tail
+#print all_real_lower_of_overlap_tail
+#check estimate_of_overlap_tail
+#print axioms estimate_of_overlap_tail
+#print estimate_of_overlap_tail
+
+end FormalResearch.RiemannHypothesis.SourceOverlapResidualDirect

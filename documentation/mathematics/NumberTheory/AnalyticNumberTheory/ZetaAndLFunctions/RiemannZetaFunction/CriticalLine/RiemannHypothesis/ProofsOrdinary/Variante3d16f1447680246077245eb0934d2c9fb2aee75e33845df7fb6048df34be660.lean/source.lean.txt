@@ -1,0 +1,8 @@
+import SourceActualXiClosedCellOscillation
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualClosedMangoldtXiPair_cell_difference
+#print FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_difference
+#print FormalResearch.RiemannHypothesis.SourceActualXiClosedCellOscillation.actualAnchoredXiTailPrimitive_cell_abs_le

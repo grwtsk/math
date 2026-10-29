@@ -1,0 +1,76 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceLeadingCesaroPropagation.Varianta9b2bb62071aa94d43af348f6eb6ba3babfc22dab0b8e25aa29626bc231d8703
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `19bc856d0a9f92214f2b8b492c593f7c013fa9ea` · SHA-256 `d39453e66184b4682a93a4b04f584217454891d77c56047de11e1a9fa124ad0e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualLeadingUpperOfResidualUpper.Variant133127c732c3ce10e36c0845e74c189b8d7aea98f2ae0d23744cdf94b56b5d0a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"133127c732c3ce10e36c0845e74c189b8d7aea98f2ae0d23744cdf94b56b5d0a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.ActualLeadingUpperOfResidualUpper.Variant133127c732c3ce10e36c0845e74c189b8d7aea98f2ae0d23744cdf94b56b5d0a","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"133127c732c3ce10e36c0845e74c189b8d7aea98f2ae0d23744cdf94b56b5d0a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/independent-1791323906059456000/SourceLeadingCesaroPropagation.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFiveCesaroPrimitiveConsumer
+import SourceCesaroSignedPairingConsumer
+import SourceLeadingTailQuantitative
+
+/-!
+Native follow-through of the sharper actual Cesaro alternatives to the unchanged
+leading signed readout. Every arithmetic upper witness remains an explicit input.
+This comparison keeps both original routes: the radius-91 consumer remains the
+direct return to the original estimate. Direction: grwtsk contributors.
+Formal construction and local verification: OpenAI Codex.
+-/
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualLeadingUpperOfResidualUpper.Variant133127c732c3ce10e36c0845e74c189b8d7aea98f2ae0d23744cdf94b56b5d0a
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceLeadingCesaroPropagation
+open SourceLeadingTailQuantitative SourceLeadingFullKappaReduction SourcePairing
+open RH16ResumeApplication RH16ResumeBudget RH16FiveCesaroConsumer
+open RH16CesaroPrimitive RH16CesaroSignedPairing SourceFirstAtomSignedWork
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimateMertensResidual
+noncomputable section
+
+/-- Transport a supplied residual upper bound through the actual sharp calibration. -/
+theorem actual_leading_upper_of_residual_upper (A B : ℝ) (hA : 25600 ≤ A)
+    (hB : mertensResidual A ≤ B) :
+    actualLeadingRenormalizedTail A ≤ B - (riemannZeta (1 / 2)).re + 3103 / 50 := by
+  have he := (abs_lt.mp (residual_sub_actual_leading_sub_zeta_abs_lt_sharp hA)).1
+  linarith
+
+/-- The checked 522/91 primitive route now supplies a native leading bound, conditionally. -/
+theorem actual_leading_upper_of_five_cesaro (M A : ℝ) (hM : 0 ≤ M)
+    (hA : 25600 ≤ A)
+    (hG : ∀ t : ℝ, Real.log 2 ≤ t →
+      |actualCesaroPrimitive t| ≤ M * (t - Real.log 2)) :
+    actualLeadingRenormalizedTail A ≤
+      (522 / 91 : ℝ) * M - 3 / 8 + criticalBaselineCorrection 91 -
+        (riemannZeta (1 / 2)).re + 3103 / 50 := by
+  apply actual_leading_upper_of_residual_upper A _ hA
+  exact residual_upper_of_remaining_signed_lower ((522 / 91 : ℝ) * M) 91 A
+    (by norm_num) (by linarith)
+    (remainingAtomWork_lower_of_five_cesaro M A hM (by linarith) hG)
+
+/-- The weaker joint signed pairing route does not require a global absolute primitive bound. -/
+theorem actual_leading_upper_of_signed_cesaro (J A : ℝ) (hA : 25600 ≤ A)
+    (hJ : -J ≤ signedCesaroPairing A) :
+    actualLeadingRenormalizedTail A ≤ J - 3 / 8 + criticalBaselineCorrection 91 -
+      (riemannZeta (1 / 2)).re + 3103 / 50 := by
+  apply actual_leading_upper_of_residual_upper A _ hA
+  exact residual_upper_of_remaining_signed_lower J 91 A (by norm_num) (by linarith)
+    (remainingAtomWork_lower_of_signed_pairing J A (by linarith) hJ)
+
+end
+end FormalResearch.RiemannHypothesis.SourceLeadingCesaroPropagation
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b01aca40ee2564176ae1e0e0c717bd5b0864a809416ebfdd793bd7cced7fa21b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceLeadingCesaroPropagation/Varianta9b2bb62071aa94d43af348f6eb6ba3babfc22dab0b8e25aa29626bc231d8703.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

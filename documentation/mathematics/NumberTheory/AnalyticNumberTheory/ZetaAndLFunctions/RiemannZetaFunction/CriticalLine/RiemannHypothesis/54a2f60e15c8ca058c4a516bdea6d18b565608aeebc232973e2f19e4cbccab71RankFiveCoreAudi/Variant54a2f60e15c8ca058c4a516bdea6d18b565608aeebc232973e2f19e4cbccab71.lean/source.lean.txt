@@ -1,0 +1,8 @@
+import FormalResearch.RiemannHypothesis.ThetaPhiRankFiveFiniteBounds
+open FormalResearch.RiemannHypothesis.ThetaPositiveLift
+#print axioms RankFiveInterval.hankelBox_coarse_enclosure
+#print axioms RankFiveInterval.signedJetDet_five_coarse_of_boxes
+#print axioms thetaRankFivePolynomial_abs_le
+#print axioms RankFiveRationalInterval.finiteBox_with_tail_inside
+#print axioms RankFiveRationalInterval.jetBox_of_finite_and_tail
+#print axioms ThetaPhiSourceJet.value_unique

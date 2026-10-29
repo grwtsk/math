@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualComplexCorrelationAsymptoticAudit.Variant67ae0410a2599c0a38f69ead93be42f470c9e19ef9733b6ade890d4fb6ca7fb8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `751741c6717ba39b26a622b6b13dc2c98a9a8191` · SHA-256 `67ae0410a2599c0a38f69ead93be42f470c9e19ef9733b6ade890d4fb6ca7fb8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualComplexCorrelationAsymptotic
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationNormalizer_sq
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationNormalizer_sq
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationNormalizer_sq
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualSourceNormalization_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualSourceNormalization_tendsto
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualSourceNormalization_tendsto
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale_tendsto_zero
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualCorrelationAsymptoticScale_tendsto_zero
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualBilateralCorrelationTransform_normalized_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualBilateralCorrelationTransform_normalized_tendsto
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualBilateralCorrelationTransform_normalized_tendsto
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_scaled_error_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_scaled_error_tendsto_zero
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_scaled_error_tendsto_zero
+#check FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_normalized_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_normalized_tendsto
+#print FormalResearch.RiemannHypothesis.ActualComplexCorrelationAsymptotic.actualHalfCorrelationTransform_normalized_tendsto
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=601edee6a7d0fbd4d857ee4ac40dd7e2a65d07c4e626360317f8ad36ea819297 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualComplexCorrelationAsymptoticAudit/Variant67ae0410a2599c0a38f69ead93be42f470c9e19ef9733b6ade890d4fb6ca7fb8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,26 @@
+import SourceActualClosedXiSqrtConsumers
+
+namespace FormalResearch.RiemannHypothesis.SourceActualClosedXiSqrtConsumers
+
+#check actualClosedXiSqrtReadout
+#print axioms actualClosedXiSqrtReadout
+
+#check actualClosedXiSqrtReadout_eq_primitive
+#print axioms actualClosedXiSqrtReadout_eq_primitive
+
+#check primitive_bound_of_closed_readout
+#print axioms primitive_bound_of_closed_readout
+
+#check residual_upper_of_closed_readout
+#print axioms residual_upper_of_closed_readout
+
+#check all_real_lower_of_closed_readout
+#print axioms all_real_lower_of_closed_readout
+
+#check estimate_of_closed_readout
+#print axioms estimate_of_closed_readout
+
+#check leading_tail_of_closed_readout
+#print axioms leading_tail_of_closed_readout
+
+end FormalResearch.RiemannHypothesis.SourceActualClosedXiSqrtConsumers

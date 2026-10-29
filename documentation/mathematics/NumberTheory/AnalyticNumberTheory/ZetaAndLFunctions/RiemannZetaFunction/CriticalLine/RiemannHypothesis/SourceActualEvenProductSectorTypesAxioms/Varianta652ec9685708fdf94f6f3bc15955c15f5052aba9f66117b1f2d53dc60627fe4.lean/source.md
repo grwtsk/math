@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEvenProductSectorTypesAxioms.Varianta652ec9685708fdf94f6f3bc15955c15f5052aba9f66117b1f2d53dc60627fe4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `126fa813322ae48509d068ccc29cc176ef4ea725` · SHA-256 `a652ec9685708fdf94f6f3bc15955c15f5052aba9f66117b1f2d53dc60627fe4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEvenProductSector
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualOddProductMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualOddProductMoment
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenMobiusProductMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenMobiusProductMoment
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenMobiusProductMoment_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenMobiusProductMoment_eq
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.mertensResidual_eq_even_add_odd
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.mertensResidual_eq_even_add_odd
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenPowerInventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenPowerInventory
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_eq_two_power_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_eq_two_power_sum
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_eq_full_mobius_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_eq_full_mobius_sum
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_eq_upper_add_closed_low
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualEvenProductMoment_eq_upper_add_closed_low
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEvenProductSector.actualUpperEvenProductMoment_tendsto_zero
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dc3e28d67ca0da423534f59cd4683d57db9b2d95615616e1505c0410021760c2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualEvenProductSectorTypesAxioms/Varianta652ec9685708fdf94f6f3bc15955c15f5052aba9f66117b1f2d53dc60627fe4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

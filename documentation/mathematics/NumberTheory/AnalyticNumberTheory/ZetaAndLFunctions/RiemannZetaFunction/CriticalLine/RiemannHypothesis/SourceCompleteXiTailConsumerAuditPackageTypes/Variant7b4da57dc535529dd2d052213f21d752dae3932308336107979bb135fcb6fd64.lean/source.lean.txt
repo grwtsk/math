@@ -1,0 +1,19 @@
+import SourceCompleteXiTailConsumer
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16CompleteXiTail.completeXiTail
+#print axioms RH16CompleteXiTail.completeXiTail
+#check RH16CompleteXiTail.tailAtomBudget
+#print axioms RH16CompleteXiTail.tailAtomBudget
+#check RH16CompleteXiTail.complete_complement_lower_of_tail
+#print axioms RH16CompleteXiTail.complete_complement_lower_of_tail
+#check RH16CompleteXiTail.atom_witness_of_complete_tail
+#print axioms RH16CompleteXiTail.atom_witness_of_complete_tail
+#check RH16CompleteXiTail.all_real_lower_of_complete_tail
+#print axioms RH16CompleteXiTail.all_real_lower_of_complete_tail
+#check RH16CompleteXiTail.estimate_of_complete_tail
+#print axioms RH16CompleteXiTail.estimate_of_complete_tail
+#check RH16CompleteXiTail.residual_upper_of_complete_tail
+#print axioms RH16CompleteXiTail.residual_upper_of_complete_tail
+#check RH16CompleteXiTail.actual_leading_upper_of_complete_tail
+#print axioms RH16CompleteXiTail.actual_leading_upper_of_complete_tail

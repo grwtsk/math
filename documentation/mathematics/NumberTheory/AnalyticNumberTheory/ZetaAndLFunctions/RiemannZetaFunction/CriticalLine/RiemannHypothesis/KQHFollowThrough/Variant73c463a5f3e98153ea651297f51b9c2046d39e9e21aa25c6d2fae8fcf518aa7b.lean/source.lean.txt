@@ -1,0 +1,20 @@
+import FormalResearch.RiemannHypothesis.KQHArithmeticCompression
+import FormalResearch.RiemannHypothesis.KQHArithmeticNativeCoordinates
+import FormalResearch.RiemannHypothesis.KQHArithmeticRankCompletion
+import FormalResearch.RiemannHypothesis.KQHBootstrap
+import FormalResearch.RiemannHypothesis.KQHSourceBootstrap
+import FormalResearch.RiemannHypothesis.KQHSourceCompression
+import FormalResearch.RiemannHypothesis.KQHPoleExclusion
+import FormalResearch.RiemannHypothesis.KQHPoleRelativeForm
+import FormalResearch.RiemannHypothesis.KQHPoleNativeGuard
+import FormalResearch.PositiveAtlas.KQHContactGeometry
+import FormalResearch.PositiveAtlas.KQHContactNative
+
+/-!
+# KQH source comparisons and quantitative obstructions
+
+grwtsk contributors supplied the originating research direction and evaluation.
+OpenAI Codex supplied these supporting derivations and formalizations.
+The actual uniform signed arithmetic cap remains an independent premise.
+This aggregate exports no unconditional proof of EstimateObligation or RH.
+-/

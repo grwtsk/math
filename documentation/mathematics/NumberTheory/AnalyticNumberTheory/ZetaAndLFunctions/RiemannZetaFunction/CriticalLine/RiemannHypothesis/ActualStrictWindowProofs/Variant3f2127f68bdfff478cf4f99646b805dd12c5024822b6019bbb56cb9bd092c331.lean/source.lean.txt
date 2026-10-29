@@ -1,0 +1,10 @@
+import SourceActualStrictWindow
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualStrictWindow
+#print actual_strict_cutoff_square_gap
+#print actual_strict_quotient_lower
+#print actual_first_strict_cell_mem
+#print actual_strict_integer_box_mem
+#print actual_strict_log_window
+#print actual_strict_real_rectangle
+#print actual_strict_rectangle_source_support

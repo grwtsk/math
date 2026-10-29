@@ -1,0 +1,16 @@
+import SourceActualF7NormalizedPnt
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.funBinderTypes false
+set_option pp.letVarTypes false
+set_option pp.tagAppFns false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualF7NormalizedPnt.actualF7NormalizedKernel
+#print FormalResearch.RiemannHypothesis.SourceActualF7NormalizedPnt.actualF7NormalizedKernel_aestronglyMeasurable
+#print FormalResearch.RiemannHypothesis.SourceActualF7NormalizedPnt.actualF7NormalizedKernel_norm_le
+#print FormalResearch.RiemannHypothesis.SourceActualF7NormalizedPnt.actualF7NormalizedKernel_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualF7NormalizedPnt.actualF7NormalizedKernel_integral_eq_primitive
+#print FormalResearch.RiemannHypothesis.SourceActualF7NormalizedPnt.actualAnchoredXiTailPrimitive_normalized_tendsto_zero

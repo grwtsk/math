@@ -1,0 +1,8 @@
+import SourceActualPsiFloorDensitySigns
+set_option autoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceActualPsiFloorDensitySigns
+#print actual_plain_profile_derivative_neg_on_twenty
+#print actual_signed_psi_floor_negative_block
+#print actual_signed_psi_floor_positive_block
+#print actual_signed_psi_floor_pairing_density_both_signs

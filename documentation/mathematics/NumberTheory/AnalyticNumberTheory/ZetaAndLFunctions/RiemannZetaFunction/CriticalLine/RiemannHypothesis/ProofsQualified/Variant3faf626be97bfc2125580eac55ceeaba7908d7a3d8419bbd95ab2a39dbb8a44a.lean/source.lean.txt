@@ -1,0 +1,12 @@
+import ActualSupportEdgeMangoldtMoments
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtPrefix
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtPrefix_le
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment_eq_prefix_integral
+#print FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments.actualHalfMangoldtEdgeMoment_le
