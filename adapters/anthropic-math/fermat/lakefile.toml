@@ -1,0 +1,12 @@
+name = "grwtsk-anthropic-fermat"
+defaultTargets = ["GRWTSKAnthropicAdapters"]
+
+[[require]]
+name = "flt_e2e"
+git = "https://github.com/anthropics/fermats-last-theorem.git"
+rev = "6e837e75355538c7f80bab5b956861e86c4eacc2"
+
+[[lean_lib]]
+name = "GRWTSKAnthropicAdapters"
+roots = []
+globs = ["GRWTSK.+"]

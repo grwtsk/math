@@ -14,3 +14,6 @@ are outside the root GRWTSK default build. A common Lean/Mathlib version does no
 admit upstream analytic theorems or establish a bridge to local arithmetic
 consumers. Preserve source identities, exact hypotheses, licenses, and pending
 verification status when adding a provider.
+
+- [anthropic-math](anthropic-math/README.md): isolated zeta23, 3SUM/APSP, ETH and
+  Fermat packages, exact source inventories and pending verification.

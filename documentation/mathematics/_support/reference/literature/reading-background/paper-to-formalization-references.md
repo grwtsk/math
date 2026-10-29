@@ -442,6 +442,32 @@ are explicit upstream dependencies; source-only or unmapped manuscripts remain
 unresolved. Verification is tracked separately in [math #1432](https://github.com/grwtsk/math/issues/1432)
 and the original adapter/consumer scope in [math #1392](https://github.com/grwtsk/math/issues/1392).
 
+<a id="anthropic-adapter-reconciliation"></a>
+
+## Anthropic provider reconciliation (2026-10-28)
+
+Local attribution: grwtsk contributors. Maintained provider: `adapters/anthropic-math`.
+Exact per-file Git blobs, comparator contents, fully qualified adapter modules and
+upstream declaration names are recorded in `adapters/anthropic-math/catalogue.json`.
+Upstream bylines and licenses remain upstream attribution; local verification does
+not follow from upstream CI reports. Every check below is **NOT_RUN**: native
+compilation (`cd adapters/anthropic-math/<project> && lake build`), Comparator,
+fresh independent kernel replay and complete transitive axiom audit.
+
+| Project / paper | Source identity and mathematical scope | Role and missing bridges |
+| --- | --- | --- |
+| Zeta23: *More than two thirds of the zeta zeros are simple and on the critical line*, Levent Alpöge and Ralph Furman, 2026, [arXiv:2608.13637](https://arxiv.org/abs/2608.13637) | Theorems A/B, Appendix A companions, and separate Remark 7.1 ξ′ configuration. Preserve multiplicity versus distinct counts, positive-ordinate window conventions, ε quantifiers and primitive Dirichlet characters of modulus >1. | 23 exact upstream re-export candidates in `GRWTSK.NumberTheory.AnthropicMath.Zeta23.Main` and `.Xiprime`; no RH implication or local signed-Abel arithmetic supplier established. |
+| *Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse Lopsided Graphs* (upstream paper identity arXiv:2610.06783v1), Josh Alman and Virginia Vassilevska Williams, 2026, [source paper](https://arxiv.org/abs/2610.06783v1) | The upstream README identifies Theorem 19, Theorem 22 and Corollary 39 machine claims plus itemized paper statements. Integer word-RAM inputs are polynomially bounded; preserve the exact `Problem.SolvedInTime` quantifiers and conditional paper hypotheses. Real-RAM/randomized results and assumed matrix exponents are not supplied by these imports. | 137 re-export candidates in `GRWTSK.Complexity.AnthropicMath.ThreeSumApsp.Endstatement` and `.Paperstatements`, retaining upstream `ThreeSumApsp` / `PaperStatements` namespaces. Local machine equivalence, executable performance and any missing cited hypotheses remain unresolved. |
+| *A 2^o(n) Time Algorithm for 3-SAT*, Claude (Anthropic), 2026, [pinned source paper](https://github.com/anthropics/formal-math/blob/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth/paper.pdf) | `MainResults.ethIsFalse` and `MainResults.mainTheorem`; read the definitions in pinned `MainResults.lean`. Deterministic counting for k-CNF with m≥2, n≥4 and all variables occurring; quantified asymptotic bound on Mathlib Turing machines. | Exact re-export candidates under `GRWTSK.Complexity.AnthropicMath.Eth.Main.MainResults`; no independent acceptance, practical-speed claim or local complexity-model bridge. |
+| *Modular elliptic curves and Fermat’s Last Theorem*, Andrew Wiles, 1995, [DOI:10.2307/2118559](https://doi.org/10.2307/2118559); *Ring-theoretic properties of certain Hecke algebras*, Richard Taylor and Andrew Wiles, 1995, [DOI:10.2307/2118560](https://doi.org/10.2307/2118560) | Anthropic FLT project metadata says it adapts the strategy, not a statement-by-statement translation; also cites Darmon–Diamond–Taylor, *Fermat’s Last Theorem*, Current Developments in Mathematics 1995. Preserve `ATTRIBUTION.md` and `NOTICE` for Imperial FLT and flt-regular material. | Source proof candidates `GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum` and `.noPositiveCubeSum` consume pinned `flt_pinned`: n≥3 and positive natural a,b,c imply a^n+b^n≠c^n; second specializes n=3. These are local Diophantine consumers, not independent proofs of intermediate modularity results. All verification and transitive dependency acceptance remain pending. |
+
+### Exact provider source pins
+
+- `zeta23`: [formal-math@16a5ce41304fcdaea4e0be7c132e1c361dc26da5](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/zeta23), tree `0b1b7ba12fec523b0e41753d77d9e8a8e2a2aab6`; Lean `leanprover/lean4:v4.33.0-rc2`, Mathlib `51e6992efd06126df61a496bebf8f49482a4e129`.
+- `3sum-apsp`: [formal-math@16a5ce41304fcdaea4e0be7c132e1c361dc26da5](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/3sum-apsp), tree `d9566c59427cdf3bbca188715ceb6b0aa34368da`; Lean `leanprover/lean4:v4.33.1`, Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`.
+- `eth`: [formal-math@16a5ce41304fcdaea4e0be7c132e1c361dc26da5](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth), tree `6215627c537a6acb2f2d307021027e565b9bc111`; Lean `leanprover/lean4:v4.33.1`, Mathlib `0df444a360eaa60ab8c11dca51a86af692955474`.
+- `fermat`: [fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2](https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2/), tree `443edf11d3610bc14f267534862c19124f2cb7a4`; Lean `leanprover/lean4:v4.33.1`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

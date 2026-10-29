@@ -1,0 +1,13 @@
+name = "grwtsk-anthropic-eth"
+defaultTargets = ["GRWTSKAnthropicAdapters"]
+
+[[require]]
+name = "eth"
+git = "https://github.com/anthropics/formal-math.git"
+rev = "16a5ce41304fcdaea4e0be7c132e1c361dc26da5"
+subDir = "eth"
+
+[[lean_lib]]
+name = "GRWTSKAnthropicAdapters"
+roots = []
+globs = ["GRWTSK.+"]
