@@ -1,0 +1,24 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.Variant79b7cb62f8afc849ee57f956592003449155a6cb0496c2735bfa1fbe15ef5c41","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"79b7cb62f8afc849ee57f956592003449155a6cb0496c2735bfa1fbe15ef5c41","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceFactorialAbsoluteLogMoments.Variant79b7cb62f8afc849ee57f956592003449155a6cb0496c2735bfa1fbe15ef5c41","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"79b7cb62f8afc849ee57f956592003449155a6cb0496c2735bfa1fbe15ef5c41","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/factorial-absolute-moments/ProofsOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceFactorialAbsoluteLogMoments
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.Variant79b7cb62f8afc849ee57f956592003449155a6cb0496c2735bfa1fbe15ef5c41
+
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three

@@ -1,0 +1,32 @@
+import SourceMangoldtLedgerBridge
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceMangoldtLedgerBridge
+#check joint_add_work_exact
+#print axioms joint_add_work_exact
+#check arithmeticReadout_add_work_exact
+#print axioms arithmeticReadout_add_work_exact
+#check classifiedReadout_add_work_exact
+#print axioms classifiedReadout_add_work_exact
+#check divisor_remainders_add_work_exact
+#print axioms divisor_remainders_add_work_exact
+#check energy_surplus_add_work_exact
+#print axioms energy_surplus_add_work_exact
+#check joint_add_work_abs_le
+#print axioms joint_add_work_abs_le
+#check actual_joint_add_work_uniform_error
+#print axioms actual_joint_add_work_uniform_error
+#check actual_classified_add_work_uniform_error
+#print axioms actual_classified_add_work_uniform_error
+#check joint_upper_of_work_lower
+#print axioms joint_upper_of_work_lower
+#check work_lower_of_joint_upper
+#print axioms work_lower_of_joint_upper
+#check joint_tail_iff_mangoldt_work
+#print axioms joint_tail_iff_mangoldt_work
+#check arithmeticReadout_tail_iff_mangoldt_work
+#print axioms arithmeticReadout_tail_iff_mangoldt_work
+#check energy_surplus_tail_iff_mangoldt_work
+#print axioms energy_surplus_tail_iff_mangoldt_work
+#check divisorRemainder_tail_iff_mangoldt_work
+#print axioms divisorRemainder_tail_iff_mangoldt_work
+end FormalResearch.RiemannHypothesis.SourceMangoldtLedgerBridge

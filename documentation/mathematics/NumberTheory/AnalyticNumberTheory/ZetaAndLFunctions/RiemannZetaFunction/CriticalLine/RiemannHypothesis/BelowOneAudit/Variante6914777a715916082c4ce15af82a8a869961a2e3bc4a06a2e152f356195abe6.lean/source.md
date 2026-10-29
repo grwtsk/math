@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.BelowOneAudit.Variante6914777a715916082c4ce15af82a8a869961a2e3bc4a06a2e152f356195abe6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c9762eed0a879a5631cc2a90316b89c34662163a` · SHA-256 `a8a18c948e032f0a16db5c0307aa28849f057e44d3bc1ac9c36bc176d7b201d8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceQuadratureBelowOneFixtures.Variantf2d426295e2b4014bced34f6494021f77309a14d88fc0faee32343ffb8a143b5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f2d426295e2b4014bced34f6494021f77309a14d88fc0faee32343ffb8a143b5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceQuadratureBelowOneFixtures.Variantf2d426295e2b4014bced34f6494021f77309a14d88fc0faee32343ffb8a143b5","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f2d426295e2b4014bced34f6494021f77309a14d88fc0faee32343ffb8a143b5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/fractional-sampling/BelowOneAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceQuadratureBelowOneFixtures
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceQuadratureBelowOneFixtures.Variantf2d426295e2b4014bced34f6494021f77309a14d88fc0faee32343ffb8a143b5
+
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_contDiff
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_zero_below
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_zero_below
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_zero_above
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_zero_above
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_hasCompactSupport
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_interval_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_interval_integral
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_positive_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_positive_integral
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_positive_samples_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_positive_samples_zero
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_signed_remainder
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_signed_remainder
+#check FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_truncation_false
+#print axioms FormalResearch.RiemannHypothesis.SourceQuadratureBelowOneFixtures.belowOneBump_truncation_false
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7dbb3bb2556d978c0cc014aa9d1bf9ea15edd1280d2b940ed91691e98a1a5e27 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/BelowOneAudit/Variante6914777a715916082c4ce15af82a8a869961a2e3bc4a06a2e152f356195abe6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,11 @@
+import SourceMixedWorkWindowEnvelope
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceMixedWorkWindowEnvelope.actual_jointTest_derivative_abs_le_columnMass
+#print axioms FormalResearch.RiemannHypothesis.SourceMixedWorkWindowEnvelope.actual_jointTest_derivative_abs_le_columnMass
+
+#check FormalResearch.RiemannHypothesis.SourceMixedWorkWindowEnvelope.actual_centered_work_window_abs_le_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceMixedWorkWindowEnvelope.actual_centered_work_window_abs_le_mass
+

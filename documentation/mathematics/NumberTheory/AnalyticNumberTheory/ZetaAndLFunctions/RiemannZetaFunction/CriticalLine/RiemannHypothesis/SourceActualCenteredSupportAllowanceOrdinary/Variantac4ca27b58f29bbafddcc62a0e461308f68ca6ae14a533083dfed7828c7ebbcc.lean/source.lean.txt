@@ -1,0 +1,20 @@
+import SourceActualCenteredSupportAllowance
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredSupportAllowance.actualCenteredPrimeSupportAllowance
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredSupportAllowance.actualCenteredPrimePhaseBulk_moving_le_allowance
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredSupportAllowance.actualCenteredPrimeSupportAllowance_eventually_lower
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredSupportAllowance.actualCenteredPrimeSupportAllowance_tendsto_atTop

@@ -1,0 +1,9 @@
+import FormalResearch.RiemannHypothesis.ZeroSide.WeilArithmeticTransport
+
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.WeilArithmeticTransport.literatureRHS_eq_arithmetic
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.WeilArithmeticTransport.kernel_point_formula
+#print axioms FormalResearch.RiemannHypothesis.ZeroSide.WeilArithmeticTransport.smooth_explicit_formula
+
+example :
+    FormalResearch.RiemannHypothesis.ZeroSide.SmoothExplicitFormula.SmoothExplicitFormulaObligation :=
+  FormalResearch.RiemannHypothesis.ZeroSide.WeilArithmeticTransport.smooth_explicit_formula

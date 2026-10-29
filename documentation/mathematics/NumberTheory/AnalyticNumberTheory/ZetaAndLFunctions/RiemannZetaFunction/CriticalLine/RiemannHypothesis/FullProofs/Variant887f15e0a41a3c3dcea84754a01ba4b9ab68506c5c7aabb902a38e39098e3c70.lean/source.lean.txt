@@ -1,0 +1,7 @@
+import SourceCorrelationSignChange
+
+open FormalResearch.RiemannHypothesis.SourceCorrelationSignChange
+
+set_option pp.all true
+#print sourceCorrelation_exists_neg
+#print sourceCorrelation_exists_neg_in_half_support

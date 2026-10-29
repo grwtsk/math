@@ -1,0 +1,22 @@
+import SourceJointWorkConsumer
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.proofs false
+set_option pp.fullNames true
+
+namespace FormalResearch.RiemannHypothesis.SourceJointWorkConsumer
+
+#print compensatedJointWork
+#print compensatedJointWork_eq_strictColumnInterior
+#print strictColumnInterior_pointwise_upper_transfers_three
+#print residual_upper_of_compensatedJointWork_upper
+#print residual_tail_of_compensatedJointWork_tail
+#print estimate_of_compensatedJointWork_tail
+#print axioms compensatedJointWork_eq_strictColumnInterior
+#print axioms strictColumnInterior_pointwise_upper_transfers_three
+#print axioms residual_upper_of_compensatedJointWork_upper
+#print axioms residual_tail_of_compensatedJointWork_tail
+#print axioms estimate_of_compensatedJointWork_tail
+
+end FormalResearch.RiemannHypothesis.SourceJointWorkConsumer

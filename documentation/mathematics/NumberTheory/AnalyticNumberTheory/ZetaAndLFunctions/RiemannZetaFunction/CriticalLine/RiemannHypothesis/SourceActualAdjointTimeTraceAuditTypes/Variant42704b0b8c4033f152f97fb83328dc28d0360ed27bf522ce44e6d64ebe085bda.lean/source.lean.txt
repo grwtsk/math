@@ -1,0 +1,21 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointTimeTrace.Variant741e2dfa9ac05c171651deeb86f40a251201b1edc079add87879f430f90a2597","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"741e2dfa9ac05c171651deeb86f40a251201b1edc079add87879f430f90a2597","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualAdjointTimeTrace.Variant741e2dfa9ac05c171651deeb86f40a251201b1edc079add87879f430f90a2597","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"741e2dfa9ac05c171651deeb86f40a251201b1edc079add87879f430f90a2597","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceActualAdjointTimeTraceAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualAdjointTimeTrace
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdjointTimeTrace.Variant741e2dfa9ac05c171651deeb86f40a251201b1edc079add87879f430f90a2597
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualHalfMangoldtWindow_eq_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualHalfMangoldtWindow_eq_inventory
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualAdjointTimePrimitive_eq_closed_inventory
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualAdjointTimePrimitive_eq_closed_inventory
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualRawTimePrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualRawTimePrimitive_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory_at_original_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointTimeTrace.actualLongHalfMangoldtInventory_at_original_upper

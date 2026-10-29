@@ -1,0 +1,16 @@
+import SourceAdaptiveRadiusFollowthrough
+set_option linter.hashCommand false
+namespace RH16AdaptiveRadiusFollowthrough
+#check residual_tail_of_finite_triangular_tail
+#print residual_tail_of_finite_triangular_tail
+#print axioms residual_tail_of_finite_triangular_tail
+#check estimate_of_finite_triangular_tail
+#print estimate_of_finite_triangular_tail
+#print axioms estimate_of_finite_triangular_tail
+#check residual_tail_of_truncated_smoothing_tail
+#print residual_tail_of_truncated_smoothing_tail
+#print axioms residual_tail_of_truncated_smoothing_tail
+#check estimate_of_truncated_smoothing_tail
+#print estimate_of_truncated_smoothing_tail
+#print axioms estimate_of_truncated_smoothing_tail
+end RH16AdaptiveRadiusFollowthrough

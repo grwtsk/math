@@ -1,0 +1,32 @@
+# GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ConditionalCriteria.Variantfcbeed6624ad16a9314dae640d2fe8813cc7baf9a241149b7867240e99105744
+
+[Complete source index](../../../../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ConditionalCriteria/Variantfcbeed6624ad16a9314dae640d2fe8813cc7baf9a241149b7867240e99105744.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `49c84ac56c705dd292d0c286f6b00f13279ea6a1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ConditionalCriteria/Variantfcbeed6624ad16a9314dae640d2fe8813cc7baf9a241149b7867240e99105744.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [h0_real_zeros_from_spectral_realization](declarations/h0-real-zeros-from-spectral-realization--a2520593e36419217e952105.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [rh_of_h0_selfadjoint_realization](declarations/rh-of-h0-selfadjoint-realization--8196a11c8e33245f82f6cd44.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [rh_of_trace_positivity_and_zero_correspondence](declarations/rh-of-trace-positivity-and-zero-correspondence--48a58a0dc32a7c036a699145.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bc403c5bf7bf9bfa3d698b7c7a21c0a454ca2d12d5d8739347f79e4b298f5fa1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ConditionalCriteria/Variantfcbeed6624ad16a9314dae640d2fe8813cc7baf9a241149b7867240e99105744.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

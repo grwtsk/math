@@ -1,0 +1,71 @@
+import SourceMangoldtPrimeDisclosure
+
+#check RH16MangoldtPrimeDisclosure.disclosedMangoldtRow
+#print axioms RH16MangoldtPrimeDisclosure.disclosedMangoldtRow
+
+#check RH16MangoldtPrimeDisclosure.freshMangoldtRow
+#print axioms RH16MangoldtPrimeDisclosure.freshMangoldtRow
+
+#check RH16MangoldtPrimeDisclosure.freshPowerInventory
+#print axioms RH16MangoldtPrimeDisclosure.freshPowerInventory
+
+#check RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_insert
+#print axioms RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_insert
+
+#check RH16MangoldtPrimeDisclosure.freshMangoldtRow_eq_exact_power_weight
+#print axioms RH16MangoldtPrimeDisclosure.freshMangoldtRow_eq_exact_power_weight
+
+#check RH16MangoldtPrimeDisclosure.mem_freshPowerInventory_iff
+#print axioms RH16MangoldtPrimeDisclosure.mem_freshPowerInventory_iff
+
+#check RH16MangoldtPrimeDisclosure.freshMangoldtRow_at_prime_power
+#print axioms RH16MangoldtPrimeDisclosure.freshMangoldtRow_at_prime_power
+
+#check RH16MangoldtPrimeDisclosure.fresh_profile_eq_complete_power_sum
+#print axioms RH16MangoldtPrimeDisclosure.fresh_profile_eq_complete_power_sum
+
+#check RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_eq_actual_on_long
+#print axioms RH16MangoldtPrimeDisclosure.disclosedMangoldtRow_eq_actual_on_long
+
+#check RH16MangoldtPrimeDisclosure.disclosed_profile_eq_actual_mangoldtAt
+#print axioms RH16MangoldtPrimeDisclosure.disclosed_profile_eq_actual_mangoldtAt
+
+#check RH16MangoldtPrimeDisclosure.disclosedBetaRow
+#print axioms RH16MangoldtPrimeDisclosure.disclosedBetaRow
+
+#check RH16MangoldtPrimeDisclosure.freshBetaRow
+#print axioms RH16MangoldtPrimeDisclosure.freshBetaRow
+
+#check RH16MangoldtPrimeDisclosure.disclosedBetaRow_insert
+#print axioms RH16MangoldtPrimeDisclosure.disclosedBetaRow_insert
+
+#check RH16MangoldtPrimeDisclosure.disclosedReadoutAt
+#print axioms RH16MangoldtPrimeDisclosure.disclosedReadoutAt
+
+#check RH16MangoldtPrimeDisclosure.disclosedReadoutAt_fresh_prime
+#print axioms RH16MangoldtPrimeDisclosure.disclosedReadoutAt_fresh_prime
+
+#check RH16MangoldtPrimeDisclosure.disclosedReadoutAt_eq_actual
+#print axioms RH16MangoldtPrimeDisclosure.disclosedReadoutAt_eq_actual
+
+#check RH16MangoldtPrimeDisclosure.actual_readoutAt_fresh_prime
+#print axioms RH16MangoldtPrimeDisclosure.actual_readoutAt_fresh_prime
+
+#print RH16MangoldtPrimeDisclosure.disclosedMangoldtRow
+
+#print RH16MangoldtPrimeDisclosure.freshMangoldtRow
+
+#print RH16MangoldtPrimeDisclosure.freshPowerInventory
+
+#print RH16MangoldtPrimeDisclosure.disclosedBetaRow
+
+#print RH16MangoldtPrimeDisclosure.freshBetaRow
+
+#print RH16MangoldtPrimeDisclosure.disclosedReadoutAt
+
+#print RH16Tandem.SourcePrimeDisclosure.freshPrimeCorrection
+
+#print RH16Tandem.SourcePrimeDisclosure.physicalDiagonal
+
+#print RH16Tandem.SourcePrimeDisclosure.compensatedReadout
+

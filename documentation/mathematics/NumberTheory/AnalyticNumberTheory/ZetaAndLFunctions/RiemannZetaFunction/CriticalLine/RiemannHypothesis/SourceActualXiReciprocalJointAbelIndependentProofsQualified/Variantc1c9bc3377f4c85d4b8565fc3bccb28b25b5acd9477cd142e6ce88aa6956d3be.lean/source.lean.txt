@@ -1,0 +1,9 @@
+import SourceActualXiReciprocalJointAbel
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiReciprocalJointAbel
+#print actualReciprocalXiQuotientWeight
+#print actualReciprocalXiQuotientWeight_one
+#print actualReciprocalXiQuotientWeight_at_cutoff
+#print actualClosedMangoldtXiPair_eq_reciprocal_weight
+#print actualClosedMangoldtXiPair_eq_reciprocal_abel
+#print actualAnchoredXiTailPrimitive_eq_reciprocal_abel

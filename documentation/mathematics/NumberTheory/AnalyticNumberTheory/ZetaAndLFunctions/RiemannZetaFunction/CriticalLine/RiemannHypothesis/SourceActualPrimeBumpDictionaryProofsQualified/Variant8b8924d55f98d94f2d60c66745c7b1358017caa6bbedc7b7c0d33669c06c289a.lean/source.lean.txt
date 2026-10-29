@@ -1,0 +1,18 @@
+import SourceActualPrimeBumpDictionary
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualPrimeBumpDictionary
+#print actualInitialPrimeMellin_eq_bumpMellinWeight
+#print actualInitialPrimeDensity_eq_bump
+#print actualInitialPrimeTwoTail_eq_bump
+#print actualInitialPrimeTwoTail_movingHeight_norm_le
+#print actualMertensResidual_sub_head_norm_le
+#print actualMertensResidual_sub_head_real_abs_le
+#print actualMertensResidual_le_head_add

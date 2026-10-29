@@ -1,0 +1,11 @@
+import FormalResearch.RiemannHypothesis.Landau.Bridge
+
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.riemann_hypothesis_iff_no_right_shifted_values
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.corrected_transform_exact_pole
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.corrected_order_nonneg
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.riemann_hypothesis_of_uniform_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.bridge_obligation
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.BridgeObligation :=
+  FormalResearch.RiemannHypothesis.Landau.Bridge.bridge_obligation

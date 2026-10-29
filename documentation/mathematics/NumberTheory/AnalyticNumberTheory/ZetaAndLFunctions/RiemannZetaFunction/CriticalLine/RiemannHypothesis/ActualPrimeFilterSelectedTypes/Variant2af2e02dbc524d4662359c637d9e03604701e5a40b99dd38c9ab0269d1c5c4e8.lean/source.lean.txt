@@ -1,0 +1,29 @@
+import FormalResearch.RiemannHypothesis.SourceCausalEnergy
+import FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+import FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+import FormalResearch.RiemannHypothesis.SourceCorrelationSignChange
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.SourceCausalEnergy
+#check normalizedPrimitiveBump_second_sub_quarter
+#print axioms normalizedPrimitiveBump_second_sub_quarter
+open FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+#check primitive_mixed_second_integrals
+#print axioms primitive_mixed_second_integrals
+#check sourceCorrelation_eq_primitive_filter
+#print axioms sourceCorrelation_eq_primitive_filter
+#check firstPrimeMoment_eq_primitive_filter
+#print axioms firstPrimeMoment_eq_primitive_filter
+open FormalResearch.RiemannHypothesis.SourcePrimePowerPartition
+#check closedPrimeMoment_eq_primeExponent_sum
+#print axioms closedPrimeMoment_eq_primeExponent_sum
+#check prime_power_source_coefficient
+#print axioms prime_power_source_coefficient
+open FormalResearch.RiemannHypothesis.SourceCorrelationSignChange
+#check sourceCorrelation_exists_neg_in_half_support
+#print axioms sourceCorrelation_exists_neg_in_half_support

@@ -1,0 +1,24 @@
+import SourceReceivingRadiusSmoothingApplications
+
+set_option autoImplicit false
+set_option linter.hashCommand false
+
+namespace FormalResearch.RiemannHypothesis.SourceReceivingRadiusSmoothingApplications
+
+#check @endpoint_budget_at_leading_radius
+#print endpoint_budget_at_leading_radius
+#print axioms endpoint_budget_at_leading_radius
+
+#check @leading_of_strict_column_at_receiving_radius
+#print leading_of_strict_column_at_receiving_radius
+#print axioms leading_of_strict_column_at_receiving_radius
+
+#check @leading_of_triangular_at_receiving_radius
+#print leading_of_triangular_at_receiving_radius
+#print axioms leading_of_triangular_at_receiving_radius
+
+#check @leading_of_truncated_at_receiving_radius
+#print leading_of_truncated_at_receiving_radius
+#print axioms leading_of_truncated_at_receiving_radius
+
+end FormalResearch.RiemannHypothesis.SourceReceivingRadiusSmoothingApplications

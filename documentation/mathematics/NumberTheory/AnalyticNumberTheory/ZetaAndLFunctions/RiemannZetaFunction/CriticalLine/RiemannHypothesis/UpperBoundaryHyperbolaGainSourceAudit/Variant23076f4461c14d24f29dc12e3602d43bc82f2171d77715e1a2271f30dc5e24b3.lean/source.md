@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryHyperbolaGainSourceAudit.Variant23076f4461c14d24f29dc12e3602d43bc82f2171d77715e1a2271f30dc5e24b3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `df643d54b5f6edc4e307264a137ed7292d960c8c` · SHA-256 `6d456c51a0111a2721fc36a28e2b5cf669b27646cfedd690dfe5455472b0fc65`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryHyperbolaGain.Variantc8f02c7e36be297817da4db2968dd7ff37c40c639e1d74497cb00a4babe97ee7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c8f02c7e36be297817da4db2968dd7ff37c40c639e1d74497cb00a4babe97ee7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.UpperBoundaryHyperbolaGain.Variantc8f02c7e36be297817da4db2968dd7ff37c40c639e1d74497cb00a4babe97ee7","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"c8f02c7e36be297817da4db2968dd7ff37c40c639e1d74497cb00a4babe97ee7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/arithmetic-routes/UpperBoundaryHyperbolaGainSourceAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.UpperBoundaryHyperbolaGain.Variantc8f02c7e36be297817da4db2968dd7ff37c40c639e1d74497cb00a4babe97ee7
+
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.upperSmallIndices_empty_below_quarter
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.upperSmallIndices_empty_below_quarter
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.upperSmallSum_zero_below_quarter
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.upperSmallSum_zero_below_quarter
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.source_square_derivative_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.source_square_derivative_nonpos
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.source_square_derivative_integral_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.source_square_derivative_integral_nonpos
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.sourceQuadraticValue_ge_core_hyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.sourceQuadraticValue_ge_core_hyperbola
+#check FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.sourceQuadraticValue_negativePart_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryHyperbolaGain.sourceQuadraticValue_negativePart_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9affaecf7bc9ec3af2d410beb40e7c03d00c56b835a32886c6498604faf6c976 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/UpperBoundaryHyperbolaGainSourceAudit/Variant23076f4461c14d24f29dc12e3602d43bc82f2171d77715e1a2271f30dc5e24b3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,40 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.TypesAxioms.Variantdd74ea42397b7f6496f52f9bf52066b40098e0677b833c806402bd4c99dbfa6e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `89ac94d924a5d025fb58ce9bc9581996ec9717a3` · SHA-256 `dd74ea42397b7f6496f52f9bf52066b40098e0677b833c806402bd4c99dbfa6e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCancelledFactorialSectorBudget
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant_integrable
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant_integral_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationRowMajorant_integral_le
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant_integrable
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant_integral_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.factorialCancellationSumMajorant_integral_le
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_coefficient_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_coefficient_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_density_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_density_integrable
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_tail_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_tail_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_full_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialSectorBudget.actual_cancelled_factorial_full_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f13fd69a87a3385d59689cc8db4cd0229b75ed660a09db6d1f46d59b5537ee2e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Variantdd74ea42397b7f6496f52f9bf52066b40098e0677b833c806402bd4c99dbfa6e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

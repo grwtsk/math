@@ -1,0 +1,20 @@
+import SourceActualEulerBandGram
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandGram.actualTiltBand_reflected_pairing_eq_angular
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandGram.actualTiltBand_reflected_pairing_eq_angular
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandGram.actualClosedPrimeHead_eq_weighted_band_pairing
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandGram.actualClosedPrimeHead_eq_weighted_band_pairing
+
+#check FormalResearch.RiemannHypothesis.SourceActualEulerBandGram.actualClosedPrimeHead_real_eq_band_storage
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerBandGram.actualClosedPrimeHead_real_eq_band_storage

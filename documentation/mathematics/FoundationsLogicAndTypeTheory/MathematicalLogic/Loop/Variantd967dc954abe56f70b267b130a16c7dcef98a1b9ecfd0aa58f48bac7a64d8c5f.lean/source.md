@@ -1,0 +1,64 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Loop.Variantd967dc954abe56f70b267b130a16c7dcef98a1b9ecfd0aa58f48bac7a64d8c5f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `da4741dc8e44720c90738503f325c85a5cc04cb6` · SHA-256 `d967dc954abe56f70b267b130a16c7dcef98a1b9ecfd0aa58f48bac7a64d8c5f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Paul Reichert
+-/
+module
+
+prelude
+public import Init.Data.Iterators.Lemmas.Consumers.Loop
+public import Std.Data.Iterators.Lemmas.Consumers.Collect
+public import Std.Data.Iterators.Lemmas.Consumers.Monadic.Loop
+
+@[expose] public section
+
+namespace Std
+open Std.Iterators
+
+theorem Iter.Equiv.forIn_eq {α₁ α₂ β γ : Type w} {m : Type w → Type w'}
+    [Iterator α₁ Id β] [Iterator α₂ Id β] [Finite α₁ Id] [Finite α₂ Id]
+    [Monad m] [LawfulMonad m] [IteratorLoop α₁ Id m] [LawfulIteratorLoop α₁ Id m]
+    [IteratorLoop α₂ Id m] [LawfulIteratorLoop α₂ Id m] {init : γ} {f : β → γ → m (ForInStep γ)}
+    {ita : Iter (α := α₁) β} {itb : Iter (α := α₂) β} (h : Iter.Equiv ita itb) :
+    ForIn.forIn (m := m) ita init f = ForIn.forIn (m := m) itb init f := by
+  letI : MonadLift Id m := ⟨Std.Internal.idToMonad (α := _)⟩
+  letI := Std.Internal.LawfulMonadLiftFunction.idToMonad (m := m)
+  simp [Iter.forIn_eq_forIn_toIterM, h.toIterM.forIn_eq]
+
+theorem Iter.Equiv.foldM_eq {α₁ α₂ β γ : Type w} {m : Type w → Type w'}
+    [Iterator α₁ Id β] [Iterator α₂ Id β][Iterator α₁ Id β] [Iterator α₂ Id β]
+    [Finite α₁ Id] [Finite α₂ Id] [Monad m] [LawfulMonad m]
+    [IteratorLoop α₁ Id m] [LawfulIteratorLoop α₁ Id m]
+    [IteratorLoop α₂ Id m] [LawfulIteratorLoop α₂ Id m]
+    {init : γ} {f : γ → β → m γ}
+    {ita : Iter (α := α₁) β} {itb : Iter (α := α₂) β} (h : Iter.Equiv ita itb) :
+    ita.foldM (init := init) f = itb.foldM (init := init) f := by
+  simp [Iter.foldM_eq_forIn, h.forIn_eq]
+
+theorem Iter.Equiv.fold_eq {α₁ α₂ β γ : Type w} {m : Type w → Type w'}
+    [Iterator α₁ Id β] [Iterator α₂ Id β][Iterator α₁ Id β] [Iterator α₂ Id β]
+    [Finite α₁ Id] [Finite α₂ Id] [Monad m] [LawfulMonad m]
+    [IteratorLoop α₁ Id Id] [LawfulIteratorLoop α₁ Id Id]
+    [IteratorLoop α₂ Id Id] [LawfulIteratorLoop α₂ Id Id]
+    {init : γ} {f : γ → β → γ}
+    {ita : Iter (α := α₁) β} {itb : Iter (α := α₂) β} (h : Iter.Equiv ita itb) :
+    ita.fold (init := init) f = itb.fold (init := init) f := by
+  simp [Iter.fold_eq_foldM, h.foldM_eq]
+
+end Std
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4dff6048e54b3f414b7350b6d98fe105bb29153d353018d4b2b0b4bbbc647f11 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Loop/Variantd967dc954abe56f70b267b130a16c7dcef98a1b9ecfd0aa58f48bac7a64d8c5f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

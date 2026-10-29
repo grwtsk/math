@@ -1,0 +1,22 @@
+import SourceRationalFiniteExactBudget
+
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceRationalFiniteExactBudget
+
+#check residual_upper_at_exact_radius
+#print residual_upper_at_exact_radius
+#print axioms residual_upper_at_exact_radius
+
+#check all_real_lower_at_exact_radius
+#print all_real_lower_at_exact_radius
+#print axioms all_real_lower_at_exact_radius
+
+#check leading_upper_at_exact_receiving_radius
+#print leading_upper_at_exact_receiving_radius
+#print axioms leading_upper_at_exact_receiving_radius
+
+#check native_signed_head_of_exact_corrected_rational
+#print native_signed_head_of_exact_corrected_rational
+#print axioms native_signed_head_of_exact_corrected_rational
+
+end FormalResearch.RiemannHypothesis.SourceRationalFiniteExactBudget

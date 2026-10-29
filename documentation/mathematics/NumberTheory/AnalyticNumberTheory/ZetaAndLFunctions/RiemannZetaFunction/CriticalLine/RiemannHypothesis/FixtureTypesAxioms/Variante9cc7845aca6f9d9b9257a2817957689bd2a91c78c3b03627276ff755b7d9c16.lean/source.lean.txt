@@ -1,0 +1,18 @@
+import ActualPositiveCutoffFluxFixtures
+
+open FormalResearch.RiemannHypothesis.ActualPositiveCutoffFluxFixtures
+
+#check beta_eleven_twelve_zero
+#print axioms beta_eleven_twelve_zero
+#check centered_row_unchanged_at_twelve
+#print axioms centered_row_unchanged_at_twelve
+#check positive_flux_with_empty_upper_inventory
+#print axioms positive_flux_with_empty_upper_inventory
+#check jointAt_upper_endpoint_twelve_increases
+#print axioms jointAt_upper_endpoint_twelve_increases
+#check literal_cutoff_twelve_fixed_source_increases
+#print axioms literal_cutoff_twelve_fixed_source_increases
+#check not_universal_nonpositive_fixed_source_flux
+#print axioms not_universal_nonpositive_fixed_source_flux
+#check literal_cutoff_seven_halves_fixed_source_increases
+#print axioms literal_cutoff_seven_halves_fixed_source_increases

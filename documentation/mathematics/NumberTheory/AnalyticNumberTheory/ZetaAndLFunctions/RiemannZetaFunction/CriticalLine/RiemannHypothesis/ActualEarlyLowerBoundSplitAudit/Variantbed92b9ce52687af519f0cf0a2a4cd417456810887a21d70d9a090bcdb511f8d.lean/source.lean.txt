@@ -1,0 +1,32 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBound.Variant154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ActualEarlyLowerBound.Variant154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","mathematical_subject":"Foundations.Unclassified","original_sha256":"154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T184307Z-1791312187131651000/ActualEarlyLowerBoundSplitAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualEarlyLowerBound
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualEarlyLowerBound.Variant154e65c493b8be4c7ad0426762718d7423d116b8304d40393d524143d0a767ae
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#print axioms RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#check RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#print axioms RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#check RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+#print axioms RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+set_option pp.proofs true
+#print RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#print RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven

@@ -1,0 +1,19 @@
+import FCRS.TheoremTransfer.MultiSourceExample
+
+namespace FCRS.TheoremTransfer.Cycle7.AxiomConstructorSurface
+
+#check MultiSourceInferenceExpression.source
+#check MultiSourceInferenceExpression.inference
+#check MultiSourceInferenceExpression.interpret
+#check MultiSourceInferenceExpression.UsesSource
+#check MultiSourceLeafDependency.mk
+#check MultiSourceTheoremTransferDerivation.mk
+#check MultiSourceTheoremTransferDerivation.hasDistinctFanIn
+#check MultiSourceTheoremTransferDerivation.sourceLeafCoverage
+
+#print axioms MultiSourceInferenceExpression.interpret
+#print axioms MultiSourceTheoremTransferDerivation.hasDistinctFanIn
+#print axioms MultiSourceTheoremTransferDerivation.sourceLeafCoverage
+#print axioms FCRS.TheoremTransfer.MultiSourceExample.derivation
+
+end FCRS.TheoremTransfer.Cycle7.AxiomConstructorSurface

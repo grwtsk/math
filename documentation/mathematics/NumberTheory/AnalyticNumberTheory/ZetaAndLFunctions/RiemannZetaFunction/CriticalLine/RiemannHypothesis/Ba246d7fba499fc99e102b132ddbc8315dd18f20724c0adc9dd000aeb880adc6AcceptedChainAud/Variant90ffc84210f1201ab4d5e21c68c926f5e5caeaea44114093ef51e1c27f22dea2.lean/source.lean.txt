@@ -1,0 +1,21 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EstimateVaughanTranslationGate.Variantba246d7fba499fc99e102b132ddbc8315dd18f20724c0adc9dd000aeb880adc6","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ba246d7fba499fc99e102b132ddbc8315dd18f20724c0adc9dd000aeb880adc6","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.EstimateVaughanTranslationGate.Variantba246d7fba499fc99e102b132ddbc8315dd18f20724c0adc9dd000aeb880adc6","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"ba246d7fba499fc99e102b132ddbc8315dd18f20724c0adc9dd000aeb880adc6","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/ba/ba246d7fba499fc99e102b132ddbc8315dd18f20724c0adc9dd000aeb880adc6--AcceptedChainAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateVaughanTranslationGate
+import FormalResearch.RiemannHypothesis.Landau.Bridge
+import FormalResearch.RiemannHypothesis.TargetStatement
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.EstimateVaughanTranslationGate.Variantba246d7fba499fc99e102b132ddbc8315dd18f20724c0adc9dd000aeb880adc6
+
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.MertensResidualTailUpperBound
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.UniformLowerBound
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.estimate_of_mertens_residual_tail
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.estimate_of_mertens_residual_tail
+#check FormalResearch.RiemannHypothesis.Landau.Bridge.riemann_hypothesis_of_uniform_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.Landau.Bridge.riemann_hypothesis_of_uniform_lower_bound
+#check FormalResearch.RiemannHypothesis.Target.statement_eq_mathlib
+#print axioms FormalResearch.RiemannHypothesis.Target.statement_eq_mathlib

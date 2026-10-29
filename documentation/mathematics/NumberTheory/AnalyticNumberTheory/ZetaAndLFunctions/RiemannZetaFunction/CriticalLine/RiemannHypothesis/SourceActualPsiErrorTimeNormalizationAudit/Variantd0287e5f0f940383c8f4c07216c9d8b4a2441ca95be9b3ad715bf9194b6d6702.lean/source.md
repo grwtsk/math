@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiErrorTimeNormalizationAudit.Variantd0287e5f0f940383c8f4c07216c9d8b4a2441ca95be9b3ad715bf9194b6d6702
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `26894dfb1ed03f6f27e90ac9c2ea6ec10e9a910b` · SHA-256 `d0287e5f0f940383c8f4c07216c9d8b4a2441ca95be9b3ad715bf9194b6d6702`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiErrorTimeNormalization
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_normalizedPsi
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_normalizedPsi
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_normalizedPsi
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_at_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_at_zero
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_convolution
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_eq_convolution
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualRelativePsiTimeError_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualMangoldtErrorConvolution_one_eq_relative_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualMangoldtErrorConvolution_one_eq_relative_primitive
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.actualMangoldtErrorConvolution_one_eq_relative_primitive
+#check FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.mangoldtLogError_eq_relative_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.mangoldtLogError_eq_relative_primitive
+#print FormalResearch.RiemannHypothesis.SourceActualPsiErrorTimeNormalization.mangoldtLogError_eq_relative_primitive
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=78c84faa41a4f607a2cb2c075d900c9dfd74fe4acd06276e6d2c1e785c33fc30 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiErrorTimeNormalizationAudit/Variantd0287e5f0f940383c8f4c07216c9d8b4a2441ca95be9b3ad715bf9194b6d6702.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

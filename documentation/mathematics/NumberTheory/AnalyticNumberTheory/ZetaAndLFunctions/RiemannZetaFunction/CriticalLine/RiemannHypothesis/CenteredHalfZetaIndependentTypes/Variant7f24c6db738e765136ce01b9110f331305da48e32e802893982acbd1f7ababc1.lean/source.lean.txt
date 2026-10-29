@@ -1,0 +1,15 @@
+import SourceActualCenteredHalfZetaReduction
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualCenteredHalfZetaReduction
+#check actualCenteredHalfZetaMain
+#print axioms actualCenteredHalfZetaMain
+#check halfHarmonicQuotientDefect
+#print axioms halfHarmonicQuotientDefect
+#check halfHarmonicQuotientDefect_abs_le
+#print axioms halfHarmonicQuotientDefect_abs_le
+#check closedCenteredHalfInventory_sub_zetaMain_eq
+#print axioms closedCenteredHalfInventory_sub_zetaMain_eq
+#check closedCenteredHalfInventory_sub_zetaMain_abs_le
+#print axioms closedCenteredHalfInventory_sub_zetaMain_abs_le
+#check actualCenteredColumnHalfInventory_sub_zetaMain_abs_le
+#print axioms actualCenteredColumnHalfInventory_sub_zetaMain_abs_le

@@ -1,0 +1,1094 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaStorage.Variant9971b4db2146929a07d1abed0bc5047377e1a832009d7d00ebadf59945017df0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9971b4db2146929a07d1abed0bc5047377e1a832009d7d00ebadf59945017df0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceKapitzaStorage.Variant9971b4db2146929a07d1abed0bc5047377e1a832009d7d00ebadf59945017df0","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"9971b4db2146929a07d1abed0bc5047377e1a832009d7d00ebadf59945017df0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.worktrees/rh16-kapitza-20261007/artifacts/rh16-kapitza-20261007/current-seven-review/InspectCurrentSeven.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceKapitzaStorage
+import FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction
+import FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage
+import FormalResearch.RiemannHypothesis.SourceKapitzaCycle
+import FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete
+import FormalResearch.RiemannHypothesis.SourceKapitzaDirectional
+import FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceKapitzaStorage.Variant9971b4db2146929a07d1abed0bc5047377e1a832009d7d00ebadf59945017df0
+
+set_option pp.proofs false
+set_option pp.universes true
+set_option pp.maxSteps 1000000
+set_option pp.deepTerms true
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.drift_identity"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.drift_identity
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.drift_identity"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.drift_identity
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.drift_identity"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_storage"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_storage
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_storage"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_storage
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_storage"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_weight"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_weight
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_weight"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_weight
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_weight"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.corrector_cancellation"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.corrector_cancellation
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.corrector_cancellation"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.corrector_cancellation
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.corrector_cancellation"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_corrector"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_corrector
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_corrector"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_corrector
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.hasDerivAt_corrector"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_continuous_corrector"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_continuous_corrector
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_continuous_corrector"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_continuous_corrector
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_continuous_corrector"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_jumping_corrector"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_jumping_corrector
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_jumping_corrector"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_jumping_corrector
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.jump_jumping_corrector"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_endpoint"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_endpoint
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_endpoint"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_endpoint
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_endpoint"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_complete_square"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_complete_square
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_complete_square"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_complete_square
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.storage_complete_square"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_reconstruction"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_reconstruction
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_reconstruction"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_reconstruction
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_reconstruction"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four_linear"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four_linear
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four_linear"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four_linear
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_abs_sub_four_linear"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_epsilon"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_epsilon
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_epsilon"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_epsilon
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.initialStorage_epsilon"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_coefficients"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_coefficients
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_coefficients"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_coefficients
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_coefficients"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_product"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_product
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_product"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_product
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.obstruction_product"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticConstant"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticConstant
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticConstant"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticConstant
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticConstant"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_nonneg"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_nonneg
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_nonneg"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_nonneg
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_nonneg"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_le_log"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_le_log
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_le_log"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_le_log
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_le_log"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.log_atom_le_quadraticMajorant"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.log_atom_le_quadraticMajorant
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.log_atom_le_quadraticMajorant"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.log_atom_le_quadraticMajorant
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.log_atom_le_quadraticMajorant"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_hasDerivAt"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_hasDerivAt
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_hasDerivAt"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_hasDerivAt
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_hasDerivAt"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_one"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_one
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_one"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_one
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_one"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_nonpos"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_nonpos
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_nonpos"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_nonpos
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticPrimitive_nonpos"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_continuousOn"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_continuousOn
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_continuousOn"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_continuousOn
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_continuousOn"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticMajorant_integral_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_sum_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_sum_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_sum_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_sum_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_sum_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_closed_cutoff_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_closed_cutoff_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_closed_cutoff_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_closed_cutoff_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaStorage.quadraticImpulse_closed_cutoff_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaKernel"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaKernel
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaKernel"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaKernel
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaKernel"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointValue"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointValue
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointValue"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointValue
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointValue"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointSlope"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointSlope
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointSlope"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointSlope
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.endpointSlope"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.affineTrend"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.affineTrend
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.affineTrend"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.affineTrend
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.affineTrend"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineWork"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineWork
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineWork"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineWork
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineWork"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_zero"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_zero
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_zero"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_zero
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_zero"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy_upper"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy_upper
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy_upper"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy_upper
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.nonaffineDiscrepancy_upper"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_eq_prefix"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_eq_prefix
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_eq_prefix"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_eq_prefix
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_eq_prefix"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.chebyshev_mul_continuous_intervalIntegrable"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.chebyshev_mul_continuous_intervalIntegrable
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.chebyshev_mul_continuous_intervalIntegrable"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.chebyshev_mul_continuous_intervalIntegrable
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.chebyshev_mul_continuous_intervalIntegrable"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_intervalIntegrable"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_intervalIntegrable
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_intervalIntegrable"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_intervalIntegrable
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.normalizedPsiError_intervalIntegrable"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight_continuous"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight_continuous
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight_continuous"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight_continuous
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kapitzaWeight_continuous"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.weightedPsiError_intervalIntegrable"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.weightedPsiError_intervalIntegrable
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.weightedPsiError_intervalIntegrable"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.weightedPsiError_intervalIntegrable
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.weightedPsiError_intervalIntegrable"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_eq"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_eq
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_eq"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_eq
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_eq"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_weightedPsi"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_weightedPsi
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_weightedPsi"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_weightedPsi
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_weightedPsi"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_affine_nonaffine"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_affine_nonaffine
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_affine_nonaffine"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_affine_nonaffine
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_affine_nonaffine"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.one_add_continuous_eq_defect"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.one_add_continuous_eq_defect
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.one_add_continuous_eq_defect"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.one_add_continuous_eq_defect
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.one_add_continuous_eq_defect"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_defect_trend_nonaffine"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_defect_trend_nonaffine
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_defect_trend_nonaffine"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_defect_trend_nonaffine
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.mertensResidual_eq_defect_trend_nonaffine"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.positiveFirstMoment_eq_negative"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.positiveFirstMoment_eq_negative
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.positiveFirstMoment_eq_negative"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.positiveFirstMoment_eq_negative
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.positiveFirstMoment_eq_negative"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_eq"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_eq
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_eq"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_eq
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_eq"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment_abs_le_four"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment_abs_le_four
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment_abs_le_four"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment_abs_le_four
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.negativeFirstMoment_abs_le_four"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_abs_le_one"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_abs_le_one
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_abs_le_one"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_abs_le_one
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentZero_abs_le_one"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_abs_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_abs_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_abs_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_abs_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.kernelMomentOne_abs_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue_abs_le_of_samples"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue_abs_le_of_samples
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue_abs_le_of_samples"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue_abs_le_of_samples
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.trendValue_abs_le_of_samples"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect_antitone"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect_antitone
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect_antitone"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect_antitone
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.continuousDefect_antitone"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.originalPrefixFloor_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.residual_le_of_nonaffine_cap"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.residual_le_of_nonaffine_cap
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.residual_le_of_nonaffine_cap"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.residual_le_of_nonaffine_cap
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.residual_le_of_nonaffine_cap"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_nonaffine_cap"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_nonaffine_cap
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_nonaffine_cap"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_nonaffine_cap
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_nonaffine_cap"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.estimate_of_nonaffine_cap"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.estimate_of_nonaffine_cap
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.estimate_of_nonaffine_cap"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.estimate_of_nonaffine_cap
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.estimate_of_nonaffine_cap"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.consumerRadius"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.consumerRadius
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.consumerRadius"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.consumerRadius
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.consumerRadius"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_separate_nonaffine_caps"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_separate_nonaffine_caps
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_separate_nonaffine_caps"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_separate_nonaffine_caps
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaReconstruction.original_lower_of_separate_nonaffine_caps"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing_hasDerivAt"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing_hasDerivAt
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing_hasDerivAt"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing_hasDerivAt
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceForcing_hasDerivAt"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_deriv_cancel"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_deriv_cancel
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_deriv_cancel"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_deriv_cancel
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_deriv_cancel"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_upper"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_upper
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_upper"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_upper
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_upper"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero_epsilon"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero_epsilon
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero_epsilon"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero_epsilon
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceStorage_zero_epsilon"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_forcing_lower"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_forcing_lower
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_forcing_lower"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_forcing_lower
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage.sourceCorrector_forcing_lower"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_cell_kernel_abs_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_chebyshev_eq_psi"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_normalized_prefix_bounds"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.actual_affine_slope_abs_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_prefix_frozen"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_cellTransfer"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_cellTransfer"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_hasDerivAt"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cellTransfer_with_impulse"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.frozen_prefix_deviation_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.cell_freezing_integral_le"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.hyperbolic"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.hyperbolic
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.hyperbolic"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.hyperbolic
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.hyperbolic"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.quarterTurn"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.quarterTurn
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.quarterTurn"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.quarterTurn
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.quarterTurn"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_eq_hyperbolic_mul_quarterTurn"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_square"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_pair"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.stableCycle_metric"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.H"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.H
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.H"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.H
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.H"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_square"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.M_pair_plus_direction"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.metric_energy"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceDrift"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceDrift
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceDrift"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceDrift
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceDrift"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceImpulse"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceImpulse
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceImpulse"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceImpulse
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.sourceImpulse"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaCycle.source_bracket"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_prefix_succ"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_prefix_succ
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_prefix_succ"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_prefix_succ
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_prefix_succ"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_eq_prefix"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_eq_prefix
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_eq_prefix"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_eq_prefix
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_eq_prefix"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_one"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_one
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_one"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_one
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_one"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_succ"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_succ
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_succ"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_succ
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerDiscrepancy_succ"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.affineTrend_log_succ"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.affineTrend_log_succ
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.affineTrend_log_succ"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.affineTrend_log_succ
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.affineTrend_log_succ"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ_forcing"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ_forcing
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ_forcing"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ_forcing
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_succ_forcing"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_one"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_one
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_one"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_one
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_one"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_touching_cutoff"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_touching_cutoff
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_touching_cutoff"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_touching_cutoff
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.integerNonaffine_touching_cutoff"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.node_multiplier_lt_one"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.node_multiplier_lt_one
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.node_multiplier_lt_one"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.node_multiplier_lt_one
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.node_multiplier_lt_one"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.no_uniform_node_multiplier"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.no_uniform_node_multiplier
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.no_uniform_node_multiplier"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.no_uniform_node_multiplier
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.no_uniform_node_multiplier"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq_discrepancy"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq_discrepancy
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq_discrepancy"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq_discrepancy
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_prefix_eq_discrepancy"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.endpointValue_closed_phase"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.endpointValue_closed_phase
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.endpointValue_closed_phase"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.endpointValue_closed_phase
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.endpointValue_closed_phase"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq_endpoint"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq_endpoint
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq_endpoint"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq_endpoint
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensated_closed_cutoff_eq_endpoint"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_cutoff_phase_bounds"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_cutoff_phase_bounds
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_cutoff_phase_bounds"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_cutoff_phase_bounds
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.closed_cutoff_phase_bounds"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_ge_neg_one"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_ge_neg_one
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_ge_neg_one"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_ge_neg_one
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_ge_neg_one"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_two_power_neg"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_two_power_neg
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_two_power_neg"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_two_power_neg
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_two_power_neg"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_three_power_pos"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_three_power_pos
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_three_power_pos"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_three_power_pos
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete.compensatedImpulse_three_power_pos"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_zero"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_zero
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_zero"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_zero
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_zero"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_nonneg"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_nonneg
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_nonneg"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_nonneg
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_nonneg"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_mul_directionalPrice"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_mul_directionalPrice
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_mul_directionalPrice"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_mul_directionalPrice
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_mul_directionalPrice"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.real_inner_le_norm_mul_directionalPrice"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.real_inner_le_norm_mul_directionalPrice
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.real_inner_le_norm_mul_directionalPrice"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.real_inner_le_norm_mul_directionalPrice
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.real_inner_le_norm_mul_directionalPrice"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_le_norm"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_le_norm
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_le_norm"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_le_norm
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_le_norm"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_eq_zero_of_real_inner_nonpos"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_eq_zero_of_real_inner_nonpos
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_eq_zero_of_real_inner_nonpos"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_eq_zero_of_real_inner_nonpos
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directionalPrice_eq_zero_of_real_inner_nonpos"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_directional"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_directional
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_directional"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_directional
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_directional"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_of_directional_square_bounds"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_of_directional_square_bounds
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_of_directional_square_bounds"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_of_directional_square_bounds
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.finite_real_inner_sum_le_of_directional_square_bounds"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directional_square_sum_le_row_square_sum"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directional_square_sum_le_row_square_sum
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directional_square_sum_le_row_square_sum"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directional_square_sum_le_row_square_sum
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.directional_square_sum_le_row_square_sum"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.combinedDirectionalPrice"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.combinedDirectionalPrice
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.combinedDirectionalPrice"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.combinedDirectionalPrice
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.combinedDirectionalPrice"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_increment_mul_price_eq_positive_readout_increment"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_increment_mul_price_eq_positive_readout_increment
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_increment_mul_price_eq_positive_readout_increment"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_increment_mul_price_eq_positive_readout_increment
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.norm_increment_mul_price_eq_positive_readout_increment"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.projected_readout_le_of_directional_square"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.projected_readout_le_of_directional_square
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.projected_readout_le_of_directional_square"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.projected_readout_le_of_directional_square
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.projected_readout_le_of_directional_square"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.full_readout_le_of_directional_projection_rows"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.full_readout_le_of_directional_projection_rows
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.full_readout_le_of_directional_projection_rows"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.full_readout_le_of_directional_projection_rows
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.full_readout_le_of_directional_projection_rows"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_directionalPrice"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_directionalPrice
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_directionalPrice"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_directionalPrice
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_directionalPrice"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_sqrt_of_directional_projection_rows"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_sqrt_of_directional_projection_rows
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_sqrt_of_directional_projection_rows"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_sqrt_of_directional_projection_rows
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_sqrt_of_directional_projection_rows"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_moment_add_sqrt_of_scalar_directional_rows"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_moment_add_sqrt_of_scalar_directional_rows
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_moment_add_sqrt_of_scalar_directional_rows"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_moment_add_sqrt_of_scalar_directional_rows
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidual_le_moment_add_sqrt_of_scalar_directional_rows"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_originalSource_directionalPrice"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_originalSource_directionalPrice
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_originalSource_directionalPrice"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_originalSource_directionalPrice
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.single_block_originalSource_directionalPrice"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidualTail_of_adaptive_directional_rows"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidualTail_of_adaptive_directional_rows
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidualTail_of_adaptive_directional_rows"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidualTail_of_adaptive_directional_rows
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.mertensResidualTail_of_adaptive_directional_rows"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.estimate_of_adaptive_directional_rows"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.estimate_of_adaptive_directional_rows
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.estimate_of_adaptive_directional_rows"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.estimate_of_adaptive_directional_rows
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.estimate_of_adaptive_directional_rows"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureDirection"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureDirection
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureDirection"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureDirection
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureDirection"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureOrthogonalRow"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureOrthogonalRow
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureOrthogonalRow"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureOrthogonalRow
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixtureOrthogonalRow"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_direction_norm"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_direction_norm
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_direction_norm"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_direction_norm
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_direction_norm"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_inner_zero"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_inner_zero
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_inner_zero"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_inner_zero
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_inner_zero"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_directionalPrice_zero"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_directionalPrice_zero
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_directionalPrice_zero"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_directionalPrice_zero
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_directionalPrice_zero"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_orthogonalRow_norm"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_orthogonalRow_norm
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_orthogonalRow_norm"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_orthogonalRow_norm
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_orthogonalRow_norm"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_unbounded_row_at_zero_price"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_unbounded_row_at_zero_price
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_unbounded_row_at_zero_price"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_unbounded_row_at_zero_price
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_unbounded_row_at_zero_price"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_row_norm_unbounded"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_row_norm_unbounded
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_row_norm_unbounded"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_row_norm_unbounded
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaDirectional.fixture_row_norm_unbounded"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.blockMajorant"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.blockMajorant
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.blockMajorant"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.blockMajorant
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.blockMajorant"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_kernel_lower"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_kernel_lower
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_kernel_lower"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_kernel_lower
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_kernel_lower"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.prefix_four_retains_prime_power"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.prefix_four_retains_prime_power
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.prefix_four_retains_prime_power"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.prefix_four_retains_prime_power
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.prefix_four_retains_prime_power"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_first_cell"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_first_cell
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_first_cell"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_first_cell
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_first_cell"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_second_cell"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_second_cell
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_second_cell"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_second_cell
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_on_second_cell"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_majorant_neg"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_majorant_neg
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_majorant_neg"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_majorant_neg
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.discrepancy_majorant_neg"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.physical_block_integrable"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.physical_block_integrable
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.physical_block_integrable"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.physical_block_integrable
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.physical_block_integrable"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_exact"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_exact
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_exact"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_exact
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_exact"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_rational_upper"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_rational_upper
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_rational_upper"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_rational_upper
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.actual_block_majorant_rational_upper"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_lt_neg_quarter"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_lt_neg_quarter
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_lt_neg_quarter"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_lt_neg_quarter
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_lt_neg_quarter"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.affineTrend_abs_le_of_endpoint_samples"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.affineTrend_abs_le_of_endpoint_samples
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.affineTrend_abs_le_of_endpoint_samples"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.affineTrend_abs_le_of_endpoint_samples
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.affineTrend_abs_le_of_endpoint_samples"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper_of_endpoint_samples"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper_of_endpoint_samples
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper_of_endpoint_samples"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper_of_endpoint_samples
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.firstPhysicalBlock_upper_of_endpoint_samples"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.initialPhysicalBlock"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.initialPhysicalBlock
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.initialPhysicalBlock"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.initialPhysicalBlock
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.initialPhysicalBlock"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.remainingPhysicalTail"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.remainingPhysicalTail
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.remainingPhysicalTail"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.remainingPhysicalTail
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.remainingPhysicalTail"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_eq_three_physical_blocks"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_eq_three_physical_blocks
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_eq_three_physical_blocks"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_eq_three_physical_blocks
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_eq_three_physical_blocks"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_upper_of_head_tail"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_upper_of_head_tail
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_upper_of_head_tail"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_upper_of_head_tail
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.nonaffineWork_upper_of_head_tail"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.original_lower_of_first_block_and_tail"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.original_lower_of_first_block_and_tail
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.original_lower_of_first_block_and_tail"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.original_lower_of_first_block_and_tail
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.original_lower_of_first_block_and_tail"
+
+#eval IO.println "BEGIN_TYPE FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.estimate_of_first_block_and_tail"
+#check FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.estimate_of_first_block_and_tail
+#eval IO.println "BEGIN_AXIOMS FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.estimate_of_first_block_and_tail"
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.estimate_of_first_block_and_tail
+#eval IO.println "END_EXPORT FormalResearch.RiemannHypothesis.SourceKapitzaFirstBlock.estimate_of_first_block_and_tail"

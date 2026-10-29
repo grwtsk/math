@@ -1,0 +1,29 @@
+# GRWTSK.Interfaces.ZetaZeroFreeHalfPlaneAdapterCore
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**0 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Interfaces/ZetaZeroFreeHalfPlaneAdapterCore.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `105335b683f5f4cb088879d6938fa38247110f00`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/Zeta/Riemann/ZetaZeroFreeHalfPlaneAdapterCore.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6187d922b5fad38ad0868e24ab03a080b9f41884df7c73b1a8ab5beb09d1c7e6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Interfaces/ZetaZeroFreeHalfPlaneAdapterCore.lean","GRWTSK/NumberTheory/Zeta/Riemann/ZetaZeroFreeHalfPlaneAdapterCore.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

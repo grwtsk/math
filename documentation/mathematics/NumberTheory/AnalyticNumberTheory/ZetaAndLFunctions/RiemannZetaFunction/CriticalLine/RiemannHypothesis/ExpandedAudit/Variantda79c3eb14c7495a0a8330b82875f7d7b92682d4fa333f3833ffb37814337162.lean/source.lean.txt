@@ -1,0 +1,15 @@
+import SourceSquarefreeSamplingConsumer
+set_option linter.hashCommand false
+#check RH16SquarefreeSamplingConsumer.shortLog_error_le_of_sampling_error_squarefree
+#print axioms RH16SquarefreeSamplingConsumer.shortLog_error_le_of_sampling_error_squarefree
+#check RH16SquarefreeSamplingConsumer.shortPlain_error_uniform_le_of_sampling_error_squarefree
+#print axioms RH16SquarefreeSamplingConsumer.shortPlain_error_uniform_le_of_sampling_error_squarefree
+#check RH16SquarefreeSamplingConsumer.actual_shortLog_error_tail_squarefree
+#print axioms RH16SquarefreeSamplingConsumer.actual_shortLog_error_tail_squarefree
+#check RH16SquarefreeSamplingConsumer.actual_shortPlain_error_tail_squarefree
+#print axioms RH16SquarefreeSamplingConsumer.actual_shortPlain_error_tail_squarefree
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

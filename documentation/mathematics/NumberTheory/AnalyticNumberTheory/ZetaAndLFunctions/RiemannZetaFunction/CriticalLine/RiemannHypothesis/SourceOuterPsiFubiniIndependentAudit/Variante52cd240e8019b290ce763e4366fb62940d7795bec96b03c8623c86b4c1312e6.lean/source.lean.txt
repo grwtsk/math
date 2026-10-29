@@ -1,0 +1,14 @@
+import SourceOuterPsiFubini
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceOuterPsiFubini
+#print finiteDensity_integrable
+#print axioms finiteDensity_integrable
+#print actualFiniteSecondReadout_outer_fubini
+#print axioms actualFiniteSecondReadout_outer_fubini
+#print signedCesaroPairing_eq_actual_Xi_plain_pairing
+#print axioms signedCesaroPairing_eq_actual_Xi_plain_pairing
+#print remainingAtomWork_eq_actual_Xi_plain_pairing
+#print axioms remainingAtomWork_eq_actual_Xi_plain_pairing
+#print estimate_of_actual_Xi_plain_pairing
+#print axioms estimate_of_actual_Xi_plain_pairing
+end FormalResearch.RiemannHypothesis.SourceOuterPsiFubini

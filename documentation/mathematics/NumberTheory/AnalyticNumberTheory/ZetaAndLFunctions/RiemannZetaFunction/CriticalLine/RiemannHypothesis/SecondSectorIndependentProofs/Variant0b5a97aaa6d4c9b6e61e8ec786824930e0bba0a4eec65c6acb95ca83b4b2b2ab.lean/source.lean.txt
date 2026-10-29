@@ -1,0 +1,9 @@
+import ActualAdjointSecondSectorChallenge
+set_option autoImplicit false
+open RH16IndependentChallengeNext
+#print actualDerivativeEnergy_ge_four
+#print actualCorrelation_second_zero_le_neg_four
+#print actualCorrelation_second_increment_abs
+#print actualMixed_rectangle_second_upper
+#print actualAdjoint_original_rectangle_kernel_lower
+#print actualAdjoint_original_rectangle_density_lower

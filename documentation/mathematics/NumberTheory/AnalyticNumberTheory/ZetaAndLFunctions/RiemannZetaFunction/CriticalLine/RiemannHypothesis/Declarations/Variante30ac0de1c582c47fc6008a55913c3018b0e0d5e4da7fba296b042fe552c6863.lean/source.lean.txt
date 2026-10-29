@@ -1,0 +1,18 @@
+import FormalResearch.RiemannHypothesis.SourceMultiplicativePackets
+
+open FormalResearch.RiemannHypothesis.SourceMultiplicativePackets
+
+#check sourceCorrelation_eq_cosine_integral
+#check cubicSourceMoment_eq_packets
+#check cubicSourceMoment_eq_grouped_packets
+#check sourceCubicHeat_zero_eq_grouped_packets
+#check sourceCorrelation_eq_zero_of_one_le_distance
+#check cubicSourceMoment_eq_interior_packets
+#check cubic_selected_error_le_profile_budget
+#print axioms sourceCorrelation_eq_cosine_integral
+#print axioms cubicSourceMoment_eq_packets
+#print axioms cubicSourceMoment_eq_grouped_packets
+#print axioms sourceCubicHeat_zero_eq_grouped_packets
+#print axioms sourceCorrelation_eq_zero_of_one_le_distance
+#print axioms cubicSourceMoment_eq_interior_packets
+#print axioms cubic_selected_error_le_profile_budget

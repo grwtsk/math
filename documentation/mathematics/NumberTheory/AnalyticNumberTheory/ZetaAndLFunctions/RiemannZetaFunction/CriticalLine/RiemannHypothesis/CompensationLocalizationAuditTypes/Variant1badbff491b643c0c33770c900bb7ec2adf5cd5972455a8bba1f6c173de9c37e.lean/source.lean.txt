@@ -1,0 +1,13 @@
+import SourceActualAdjointCompensationLocalization
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualAdjointCompensationLocalization
+#check actualUpperAdjointInterior
+#print axioms actualUpperAdjointInterior
+#check actualRetainedCompensationRemainder
+#print axioms actualRetainedCompensationRemainder
+#check actualAdjointInterior_eq_lower_add_upper
+#print axioms actualAdjointInterior_eq_lower_add_upper
+#check compensatedJointWork_eq_retained_add_lowerStrip
+#print axioms compensatedJointWork_eq_retained_add_lowerStrip
+#check compensatedJointWork_sub_retained_abs_le
+#print axioms compensatedJointWork_sub_retained_abs_le

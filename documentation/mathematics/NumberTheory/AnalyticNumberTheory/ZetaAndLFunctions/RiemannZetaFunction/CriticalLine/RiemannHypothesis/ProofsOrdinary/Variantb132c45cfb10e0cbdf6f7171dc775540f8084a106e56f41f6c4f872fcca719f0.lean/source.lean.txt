@@ -1,0 +1,9 @@
+import RootActualUpperColumnWindow
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.RootActualUpperColumnWindow.actualUpperColumn_quotient_gap
+#print FormalResearch.RiemannHypothesis.RootActualUpperColumnWindow.actualUpperColumn_time_width_le
+#print FormalResearch.RiemannHypothesis.RootActualUpperColumnWindow.actualCorrelation_jet_zero_right
+#print FormalResearch.RiemannHypothesis.RootActualUpperColumnWindow.actualTwistedTimeDensity_upperColumn_zero

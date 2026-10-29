@@ -1,0 +1,13 @@
+import SourceActualSharpZeroTail
+#print RH16ActualSharpZeroTail.pole_norm_joint_strip_le
+#print axioms RH16ActualSharpZeroTail.pole_norm_joint_strip_le
+#print RH16ActualSharpZeroTail.actual_bump_complete_endpoint_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_complete_endpoint_norm_le
+#print RH16ActualSharpZeroTail.endpointScale
+#print axioms RH16ActualSharpZeroTail.endpointScale
+#print RH16ActualSharpZeroTail.endpointScale_pos
+#print axioms RH16ActualSharpZeroTail.endpointScale_pos
+#print RH16ActualSharpZeroTail.endpointScale_antitone
+#print axioms RH16ActualSharpZeroTail.endpointScale_antitone
+#print RH16ActualSharpZeroTail.actual_bump_endpoint_scale_norm_le
+#print axioms RH16ActualSharpZeroTail.actual_bump_endpoint_scale_norm_le

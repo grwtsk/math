@@ -1,0 +1,36 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMinusProfileBudgetObstruction.Variant2b5bf0b42c03d947ff41741d8a794c5ef3837dfc2acae6d67fb9a24c3f270008","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2b5bf0b42c03d947ff41741d8a794c5ef3837dfc2acae6d67fb9a24c3f270008","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SourceMinusProfileBudgetObstruction.Variant2b5bf0b42c03d947ff41741d8a794c5ef3837dfc2acae6d67fb9a24c3f270008","mathematical_subject":"Foundations.Unclassified","original_sha256":"2b5bf0b42c03d947ff41741d8a794c5ef3837dfc2acae6d67fb9a24c3f270008","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T231759Z-1791328679851726000/SourceMinusProfileBudgetObstructionAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceMinusProfileBudgetObstruction
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceMinusProfileBudgetObstruction.Variant2b5bf0b42c03d947ff41741d8a794c5ef3837dfc2acae6d67fb9a24c3f270008
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check RH16MinusProfileObstruction.minusCorrelationKernel
+#print axioms RH16MinusProfileObstruction.minusCorrelationKernel
+#print RH16MinusProfileObstruction.minusCorrelationKernel
+#check RH16MinusProfileObstruction.minusProfileEnvelope
+#print axioms RH16MinusProfileObstruction.minusProfileEnvelope
+#print RH16MinusProfileObstruction.minusProfileEnvelope
+#check RH16MinusProfileObstruction.minus_kernel_le_neg_sixteenth
+#print axioms RH16MinusProfileObstruction.minus_kernel_le_neg_sixteenth
+#print RH16MinusProfileObstruction.minus_kernel_le_neg_sixteenth
+#check RH16MinusProfileObstruction.minus_profile_envelope_lower
+#print axioms RH16MinusProfileObstruction.minus_profile_envelope_lower
+#print RH16MinusProfileObstruction.minus_profile_envelope_lower
+#check RH16MinusProfileObstruction.minus_profile_envelope_ge_linear
+#print axioms RH16MinusProfileObstruction.minus_profile_envelope_ge_linear
+#print RH16MinusProfileObstruction.minus_profile_envelope_ge_linear
+#check RH16MinusProfileObstruction.probe_interval_inside_complete_tail
+#print axioms RH16MinusProfileObstruction.probe_interval_inside_complete_tail
+#print RH16MinusProfileObstruction.probe_interval_inside_complete_tail
+#check RH16MinusProfileObstruction.minus_profile_envelope_not_eventually_bounded
+#print axioms RH16MinusProfileObstruction.minus_profile_envelope_not_eventually_bounded
+#print RH16MinusProfileObstruction.minus_profile_envelope_not_eventually_bounded

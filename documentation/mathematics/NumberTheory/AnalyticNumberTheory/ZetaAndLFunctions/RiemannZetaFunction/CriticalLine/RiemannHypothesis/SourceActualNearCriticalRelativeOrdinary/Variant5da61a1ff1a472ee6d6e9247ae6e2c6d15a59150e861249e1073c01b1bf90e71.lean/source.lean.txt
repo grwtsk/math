@@ -1,0 +1,28 @@
+import SourceActualNearCriticalRelative
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.fullNames false
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelativePairing
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelativeMain
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualComplementCriticalRelativePairing
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualCriticalWeight_sub_half_abs_le
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_sub_main_abs_le
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_sub_main_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_normalized_tendsto_zero
+
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualCriticalRelative_eq_near_add_complement

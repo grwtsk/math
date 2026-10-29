@@ -1,0 +1,14 @@
+import SourcePrimeMeanMain
+set_option pp.all true
+set_option pp.universes true
+#check RH16PrimeMeanMain.actualLargePrimeFirstDiagonal
+#check RH16PrimeMeanMain.actualMeanLinearMain
+#check RH16PrimeMeanMain.actual_first_diagonal_eq_retained
+#check RH16PrimeMeanMain.actual_first_diagonal_fixed_main_error
+#print axioms RH16PrimeMeanMain.actualLargePrimeFirstDiagonal
+#print axioms RH16PrimeMeanMain.actualMeanLinearMain
+#print axioms RH16PrimeMeanMain.actual_first_diagonal_eq_retained
+#print axioms RH16PrimeMeanMain.actual_first_diagonal_fixed_main_error
+#print RH16PrimeMeanMain.actualLargePrimeFirstDiagonal
+#print RH16PrimeMeanMain.actualMeanLinearMain
+#print FormalResearch.RiemannHypothesis.SourceDiagonalPrimeAbel.retainedPrimeDiagonal

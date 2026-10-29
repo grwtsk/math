@@ -1,0 +1,21 @@
+import SourceSquarefreeSampling
+set_option linter.hashCommand false
+#check RH16SquarefreeSampling.reciprocalSqrtSum
+#print axioms RH16SquarefreeSampling.reciprocalSqrtSum
+#check RH16SquarefreeSampling.mobius_four_mul_zero
+#print axioms RH16SquarefreeSampling.mobius_four_mul_zero
+#check RH16SquarefreeSampling.reciprocalSqrtSum_upper_unit
+#print axioms RH16SquarefreeSampling.reciprocalSqrtSum_upper_unit
+#check RH16SquarefreeSampling.reciprocalSqrtSum_lower_next
+#print axioms RH16SquarefreeSampling.reciprocalSqrtSum_lower_next
+#check RH16SquarefreeSampling.squarefreeWeightSum
+#print axioms RH16SquarefreeSampling.squarefreeWeightSum
+#check RH16SquarefreeSampling.squarefreeWeightSum_subtract_four
+#print axioms RH16SquarefreeSampling.squarefreeWeightSum_subtract_four
+#check RH16SquarefreeSampling.squarefreeWeightSum_three_halves
+#print axioms RH16SquarefreeSampling.squarefreeWeightSum_three_halves
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

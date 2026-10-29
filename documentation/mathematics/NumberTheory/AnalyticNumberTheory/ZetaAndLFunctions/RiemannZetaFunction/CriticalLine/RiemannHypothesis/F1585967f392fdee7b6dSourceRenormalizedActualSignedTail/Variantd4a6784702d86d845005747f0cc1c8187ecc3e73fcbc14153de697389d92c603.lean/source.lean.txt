@@ -1,0 +1,112 @@
+import ActualEarlyLowerBound
+import SourceSignedTailLinearConsumer
+import SourceFullPositiveKappa
+
+/-!
+The complete actual signed arithmetic tail after its deterministic linear head.
+Full positive-axis fractional kappa coefficients, all Moebius signs and the
+actual complementary tail are independently specified. The proved two-sided
+head estimate gives equivalent uniform upper budgets, with fixed constants.
+No uniform arithmetic upper witness is supplied by this reparameterization.
+Research direction: grwtsk contributors. Formal construction: OpenAI Codex.
+-/
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail
+
+open MeasureTheory Set
+open scoped BigOperators
+open SourcePairing SourceFullPositiveKappa SourceSignedTailLinearConsumer
+open SourceStrictComplementaryLocalization SourceCorrectedOmegaPeanoTaylor
+open SourceCompleteCorrectedAbelPairing SourceUnconditionalCorrectedCalibration
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization EstimateVaughanSource EstimateMertensAbel EstimateMertensResidual
+
+noncomputable section
+
+/-- Full signed positive-fractional jets plus genuine arithmetic tail, with linear head removed. -/
+def renormalizedActualSignedTail (A : ℝ) : ℝ :=
+  (∑ d ∈ Finset.Icc 1 (vaughanCutoff A), realMoebius d / Real.sqrt (d : ℝ) *
+    ∑ j ∈ Finset.range 4, fullPositiveKappa (j + 1) / (j.factorial : ℝ) *
+      iteratedDeriv j (sourceCorrelation explicitSecondDerivative A) (Real.log (d : ℝ))) +
+    complementarySignedTail A - A
+
+/-- All four positive-axis coefficients match the actual retained short jets. -/
+theorem renormalized_tail_eq_signed_short_and_tail_sub_scale (A : ℝ) :
+    renormalizedActualSignedTail A = signedShortAndComplementaryTail A - A := by
+  unfold renormalizedActualSignedTail signedShortAndComplementaryTail
+  simp_rw [correctedFourKappaJet_eq_full_positive_jet]
+
+/-- Exact complete pairing keeps the actual head; no early term has been dropped. -/
+theorem complete_pairing_eq_renormalized_tail_add_actual_head (A : ℝ) (hA : 1 ≤ A) :
+    completeCorrectedAbelPairing A =
+      renormalizedActualSignedTail A + (complementaryEarlyBaseline A + A) := by
+  rw [← correctedCompleteOmega_eq_complete_pairing A hA,
+    renormalized_tail_eq_signed_short_and_tail_sub_scale]
+  unfold correctedCompleteOmega signedShortAndComplementaryTail
+  have hs := literal_L_sub_plain_eq_early_add_tail A hA
+  linarith
+
+/-- The actual complete source and renormalized signed tail differ by at most seven. -/
+theorem complete_pairing_sub_renormalized_tail_abs_le_seven
+    (A : ℝ) (hA : 25600 ≤ A) :
+    |completeCorrectedAbelPairing A - renormalizedActualSignedTail A| ≤ 7 := by
+  rw [complete_pairing_eq_renormalized_tail_add_actual_head A (by linarith),
+    add_sub_cancel_left]
+  exact RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven hA
+
+/-- Both sharp one-sided comparisons preserve the complete signed expression. -/
+theorem renormalized_tail_complete_pairing_comparisons (A : ℝ) (hA : 25600 ≤ A) :
+    completeCorrectedAbelPairing A - 7 ≤ renormalizedActualSignedTail A ∧
+      renormalizedActualSignedTail A ≤ completeCorrectedAbelPairing A + 4 := by
+  have hu := RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven hA
+  have hl := RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four hA
+  have he := complete_pairing_eq_renormalized_tail_add_actual_head A (by linarith)
+  constructor <;> linarith
+
+/-- The original residual has a fixed unconditional calibration to the renormalized source. -/
+theorem residual_sub_renormalized_tail_sub_zeta_abs_lt (A : ℝ) (hA : 25600 ≤ A) :
+    |mertensResidual A - renormalizedActualSignedTail A -
+      (riemannZeta (1 / 2)).re| < 353 / 50 := by
+  have hc := residual_sub_complete_pairing_sub_zeta_abs_lt A (by linarith)
+  have hh := complete_pairing_sub_renormalized_tail_abs_le_seven A hA
+  have ht := abs_add_le
+    (mertensResidual A - completeCorrectedAbelPairing A - (riemannZeta (1 / 2)).re)
+    (completeCorrectedAbelPairing A - renormalizedActualSignedTail A)
+  have he : mertensResidual A - renormalizedActualSignedTail A - (riemannZeta (1 / 2)).re =
+      (mertensResidual A - completeCorrectedAbelPairing A - (riemannZeta (1 / 2)).re) +
+        (completeCorrectedAbelPairing A - renormalizedActualSignedTail A) := by ring
+  rw [← he] at ht
+  linarith
+
+/-- Same-radius uniform arithmetic budgets are equivalent up to the proved fixed head costs. -/
+theorem renormalized_tail_upper_iff_complete_pairing_upper_at_radius
+    (R : ℝ) (hR : 25600 ≤ R) :
+    (∃ K : ℝ, ∀ A : ℝ, R ≤ A → renormalizedActualSignedTail A ≤ K) ↔
+      (∃ K : ℝ, ∀ A : ℝ, R ≤ A → completeCorrectedAbelPairing A ≤ K) := by
+  constructor
+  · rintro ⟨K, hK⟩
+    refine ⟨K + 7, ?_⟩
+    intro A hRA
+    have hc := (renormalized_tail_complete_pairing_comparisons A (hR.trans hRA)).1
+    have hk := hK A hRA
+    linarith
+  · rintro ⟨K, hK⟩
+    refine ⟨K + 4, ?_⟩
+    intro A hRA
+    have hc := (renormalized_tail_complete_pairing_comparisons A (hR.trans hRA)).2
+    have hk := hK A hRA
+    linarith
+
+/-- Only the actual uniform signed arithmetic witness remains for the original all-real target. -/
+theorem estimate_of_renormalized_actual_signed_tail {K R : ℝ} (hR : 25600 ≤ R)
+    (htail : ∀ A : ℝ, R ≤ A → renormalizedActualSignedTail A ≤ K) :
+    CorrelationAssembly.EstimateObligation := by
+  apply estimate_of_complete_corrected_signed_tail (K := K + 7) (by linarith : 117 ≤ R)
+  intro A hRA
+  have hc := (renormalized_tail_complete_pairing_comparisons A (hR.trans hRA)).1
+  have ht := htail A hRA
+  linarith
+
+end
+end FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail

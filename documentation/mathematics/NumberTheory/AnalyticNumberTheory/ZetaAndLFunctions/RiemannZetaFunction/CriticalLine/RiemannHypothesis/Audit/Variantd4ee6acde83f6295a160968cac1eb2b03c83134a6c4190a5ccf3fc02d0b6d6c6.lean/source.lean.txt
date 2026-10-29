@@ -1,0 +1,94 @@
+import FormalResearch.RiemannHypothesis.ThetaTailRankThreePropagation
+import FormalResearch.RiemannHypothesis.ThetaTailRankThree
+
+namespace FormalResearch.RiemannHypothesis.ThetaPositiveLift
+
+#check rankThreeKernel
+#print rankThreeKernel
+#print axioms rankThreeKernel
+
+#check rankThreeKernel_eq_det
+#print rankThreeKernel_eq_det
+#print axioms rankThreeKernel_eq_det
+
+#check det_setIntegral_columns_eq
+#print det_setIntegral_columns_eq
+#print axioms det_setIntegral_columns_eq
+
+#check det_three_tail_columns_sub
+#print det_three_tail_columns_sub
+#print axioms det_three_tail_columns_sub
+
+#check thetaTail_succ_sub_eq_Ioc
+#print thetaTail_succ_sub_eq_Ioc
+#print axioms thetaTail_succ_sub_eq_Ioc
+
+#check thetaTail_rankThree_shift
+#print thetaTail_rankThree_shift
+#print axioms thetaTail_rankThree_shift
+
+#check thetaTail_rankThree_consecutive_shift
+#print thetaTail_rankThree_consecutive_shift
+#print axioms thetaTail_rankThree_consecutive_shift
+
+#check thetaTailSignRegular_three_consecutive
+#print thetaTailSignRegular_three_consecutive
+#print axioms thetaTailSignRegular_three_consecutive
+
+#check strictLogSlope_cross_positive
+#print strictLogSlope_cross_positive
+#print axioms strictLogSlope_cross_positive
+
+#check integralTail_logSlope_positive
+#print integralTail_logSlope_positive
+#print axioms integralTail_logSlope_positive
+
+#check integralTail_ratio_strictAnti
+#print integralTail_ratio_strictAnti
+#print axioms integralTail_ratio_strictAnti
+
+#check integralTail_logSlope_strictAnti
+#print integralTail_logSlope_strictAnti
+#print axioms integralTail_logSlope_strictAnti
+
+#check thetaTail_logSlope_strictAnti
+#print thetaTail_logSlope_strictAnti
+#print axioms thetaTail_logSlope_strictAnti
+
+#check thetaTail_succ_div_strictAnti
+#print thetaTail_succ_div_strictAnti
+#print axioms thetaTail_succ_div_strictAnti
+
+#check thetaTail_add_two_div_strictAnti
+#print thetaTail_add_two_div_strictAnti
+#print axioms thetaTail_add_two_div_strictAnti
+
+#check thetaTail_even_nodeRatio_step
+#print thetaTail_even_nodeRatio_step
+#print axioms thetaTail_even_nodeRatio_step
+
+#check discreteDrop
+#print discreteDrop
+#print axioms discreteDrop
+
+#check discreteSlope
+#print discreteSlope
+#print axioms discreteSlope
+
+#check discreteSlope_antitone_of_consecutive_det
+#print discreteSlope_antitone_of_consecutive_det
+#print axioms discreteSlope_antitone_of_consecutive_det
+
+#check normalized_det_nonpos_of_consecutive
+#print normalized_det_nonpos_of_consecutive
+#print axioms normalized_det_nonpos_of_consecutive
+
+#check det_fin_three_normalize_first_column
+#print det_fin_three_normalize_first_column
+#print axioms det_fin_three_normalize_first_column
+
+#check thetaTailSignRegular_three
+#print thetaTailSignRegular_three
+#print axioms thetaTailSignRegular_three
+
+end FormalResearch.RiemannHypothesis.ThetaPositiveLift

@@ -1,0 +1,12 @@
+import ActualCriticalZeroMagnitude
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.ActualCriticalZeroMagnitude.actualZeroSixMass
+#print FormalResearch.RiemannHypothesis.ActualCriticalZeroMagnitude.actualZeroSixMass_nonneg
+#print FormalResearch.RiemannHypothesis.ActualCriticalZeroMagnitude.actual_finite_reciprocal_six_le
+#print FormalResearch.RiemannHypothesis.ActualCriticalZeroMagnitude.actualCriticalZeroHeightHead_uniform_ninth_bound
+#print FormalResearch.RiemannHypothesis.ActualCriticalZeroMagnitude.actualCriticalZeroHeightHead_real_uniform_ninth_bound

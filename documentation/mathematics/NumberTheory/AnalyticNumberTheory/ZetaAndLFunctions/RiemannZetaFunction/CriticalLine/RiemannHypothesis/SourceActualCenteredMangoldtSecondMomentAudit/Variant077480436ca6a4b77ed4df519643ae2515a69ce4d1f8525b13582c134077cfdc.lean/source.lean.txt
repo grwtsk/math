@@ -1,0 +1,14 @@
+import SourceActualCenteredMangoldtSecondMoment
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceActualCenteredMangoldtSecondMoment
+#check actual_weighted_error_measurable
+#check actualCenteredBDensity_intervalIntegrable
+#check exact_log_variance
+#check actual_empty_prefix_variance_lower
+#check actualCenteredBSecondMoment_lower
+#print axioms actual_weighted_error_measurable
+#print axioms actualCenteredBDensity_intervalIntegrable
+#print axioms exact_log_variance
+#print axioms actual_empty_prefix_variance_lower
+#print axioms actualCenteredBSecondMoment_lower
+end FormalResearch.RiemannHypothesis.SourceActualCenteredMangoldtSecondMoment

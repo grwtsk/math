@@ -1,0 +1,55 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualInsideStripKernelNegativeSequenceAudit.Variant484cc5e642132b60b6cae73e62edfc8a03c6b399dd3ced48a54e370b1680ac7d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0b6f191a3bb76cf86c6918297bc6e421845a9ef3` · SHA-256 `484cc5e642132b60b6cae73e62edfc8a03c6b399dd3ced48a54e370b1680ac7d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualInsideStripKernelNegativeSequence
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripMode
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripMode
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripMode
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripSequence
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripSequence
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripSequence
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripMellin_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripMellin_eq
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripMellin_eq
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripCoefficient_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripCoefficient_eq
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripCoefficient_eq
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripCoefficient_square_re
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripCoefficient_square_re
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripCoefficient_square_re
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripSequence_phase
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripSequence_phase
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripSequence_phase
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_scaled_real_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_scaled_real_tendsto
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_scaled_real_tendsto
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_eventually_negative
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_eventually_negative
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_eventually_negative
+#check FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_negative_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_negative_beyond
+#print FormalResearch.RiemannHypothesis.ActualInsideStripKernelNegativeSequence.actualInsideStripKernel_negative_beyond
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dc7cba509a605e52aed986ae541d3b41b5a4ab80058a5a733da2603323702a57 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualInsideStripKernelNegativeSequenceAudit/Variant484cc5e642132b60b6cae73e62edfc8a03c6b399dd3ced48a54e370b1680ac7d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

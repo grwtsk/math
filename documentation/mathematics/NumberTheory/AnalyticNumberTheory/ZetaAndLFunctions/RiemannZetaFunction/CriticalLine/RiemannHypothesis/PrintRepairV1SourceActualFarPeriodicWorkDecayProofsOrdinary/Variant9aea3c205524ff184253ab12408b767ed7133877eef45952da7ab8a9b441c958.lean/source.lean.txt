@@ -1,0 +1,19 @@
+import SourceActualFarPeriodicWorkDecay
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+open FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay
+set_option pp.fullNames false
+#print actualFarPeriodicWork
+#print actualFarPeriodicCutoff
+#print actualFarPeriodicWork_intervalIntegrable
+#print actualFarPeriodicWork_abs_le
+#print actualFarPeriodicCutoff_source_guards
+#print actualFarPeriodicWork_at_cutoff_abs_le
+#print actualFarPeriodicWork_at_cutoff_tendsto_zero
+#print actualFarPeriodicWork_eq_log

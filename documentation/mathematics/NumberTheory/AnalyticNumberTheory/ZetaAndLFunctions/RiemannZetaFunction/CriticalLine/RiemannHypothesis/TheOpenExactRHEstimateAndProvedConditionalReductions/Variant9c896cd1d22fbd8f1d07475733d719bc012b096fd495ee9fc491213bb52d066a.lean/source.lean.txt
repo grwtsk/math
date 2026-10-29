@@ -1,0 +1,40 @@
+import FormalResearch.RiemannHypothesis.Arithmetic
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourceCorrectionEstimate
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimeSmoothDefect
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusSplit
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusKernel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateKernelMoments
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSamplingIntegrals
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.HeliconeEstimate
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateHigherPrimePowers
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimeSquareEstimate
+
+/-!
+# The open exact RH estimate and proved conditional reductions
+
+The unchanged Issue #16 target is `CorrelationAssembly.EstimateObligation`:
+one real lower bound for the actual quadratic value at every real radius
+`A >= 1`. It remains open. `EstimateTailReduction` proves its equivalence with
+the quadratic tail lower bound and restores the bounded radius prefix.
+
+The signed-pairing, prime-smooth, Mertens-residual, and phase-compensation tail
+conditions have proved comparisons and are sufficient for that target. Their
+equivalence with `EstimateObligation` is not asserted. The higher-power sector
+has a proved uniform absolute bound; the remaining prime-and-square phase
+compensation proposition stays open.
+
+The exact Issue #15 Landau implication from `EstimateObligation` to Mathlib's
+`RiemannHypothesis` is already proved. Its conditional applications here do not
+construct the independent estimate or an unconditional terminal RH theorem.
+Existing declarations retain their original namespaces and source paths.
+-/

@@ -1,0 +1,9 @@
+import SourceActualJointCriticalRelativeReconstruction
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualJointCriticalRelativeReconstruction.actualCriticalRelative_joint_readout_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualJointCriticalRelativeReconstruction.actualCriticalRelative_joint_readout_tendsto_zero

@@ -1,0 +1,18 @@
+import SourceCompleteJointApplications
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+open RH16CompleteJointApplications
+
+#check actual_leading_upper_of_complete_signed_block
+#print actual_leading_upper_of_complete_signed_block
+#print axioms actual_leading_upper_of_complete_signed_block
+
+#check all_real_tail_lower_of_complete_signed_block
+#print all_real_tail_lower_of_complete_signed_block
+#print axioms all_real_tail_lower_of_complete_signed_block
+
+#check actual_leading_tail_upper_of_complete_signed_block
+#print actual_leading_tail_upper_of_complete_signed_block
+#print axioms actual_leading_tail_upper_of_complete_signed_block
+
