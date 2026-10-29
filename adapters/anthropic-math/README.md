@@ -55,3 +55,12 @@ positive; signed windows and multiplicities (including real zeros when applicabl
 remain exact. See [zeta23 references](zeta23/references.md) and `documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.json`.
 This is separate from the 23 imported comparator surfaces and implies no RH or
 Mertens estimate. Native 4.33.0-rc2 and every proof-check status remain unchanged/NOT_RUN.
+
+## Integer Fermat fiber continuation
+
+The isolated fermat project now has five integer-source candidates: nonzero
+coordinate obstruction, odd/even classifications and exact fixed-output fibers.
+The odd zero-output fiber is the entire antidiagonal; the even fiber is a four
+candidate set with coincident entries at zero. See fermat/references.md and the
+canonical ledger. All exact native/interface/kernel/axiom checks remain NOT_RUN;
+original natural scopes and root dependencies/imports are preserved.
