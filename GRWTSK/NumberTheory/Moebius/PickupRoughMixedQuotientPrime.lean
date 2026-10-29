@@ -154,6 +154,166 @@ def mixedCoprime (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
     else 0
   else 0
 
+/-- The two sectors of the actual column, before arithmetic normalization. -/
+def shortColumn (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (q : ℕ) : ℝ :=
+  ∑ p ∈ freshPrimes P N, if p ≤ L then sourceRow P N L L G p q else 0
+
+def longColumn (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (q : ℕ) : ℝ :=
+  ∑ p ∈ freshPrimes P N, if L < p then sourceRow P N L L G p q else 0
+
+theorem column_eq_short_add_long (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) (q : ℕ) :
+    column P N L N N L G q = shortColumn P N L G q + longColumn P N L G q := by
+  rw [column_eq_sourceRows]
+  unfold shortColumn longColumn
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro p _
+  by_cases hp : p ≤ L <;> simp [hp, show (L < p) ↔ ¬p ≤ L by omega]
+
+/-- Zero support justifies returning closed quotient cutoffs to the frozen N. -/
+theorem sourceRow_eq_zero_of_quotient_lt (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) {p q : ℕ} (hp : 0 < p) (hq : N/p < q) :
+    sourceRow P N L L G p q = 0 := by
+  have hn : ¬p*q ≤ N := by
+    intro h
+    have : q ≤ N/p := (Nat.le_div_iff_mul_le hp).mpr (by simpa [Nat.mul_comm] using h)
+    omega
+  simp [sourceRow, hn]
+
+/-- Exact identification with formula (1) of the note. No absolute values,
+new horizon, or removal of the long unit quotient is involved. -/
+theorem mixedCoprime_eq_columns (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G =
+      2 * ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then
+          sourceCoefficient P N q * sourceCoefficient P N r *
+            shortColumn P N L G q * longColumn P N L G r else 0 := by
+  have hpair (p s : ℕ) (hp : p ∈ freshPrimes P N) (hs : s ∈ freshPrimes P N) :
+      (∑ q ∈ Finset.Icc 1 (N/p), ∑ r ∈ Finset.Icc 1 (N/s),
+        if Nat.Coprime q r then mixedPair P N L G p s q r else 0) =
+      ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then mixedPair P N L G p s q r else 0 := by
+    symm
+    rw [sum_restrict_upper _ (Nat.div_le_self N p) (by
+      intro q _ hq
+      simp [mixedPair, sourceRow_eq_zero_of_quotient_lt P N L G (fresh_mem hp).1.pos hq])]
+    apply Finset.sum_congr rfl
+    intro q _
+    rw [sum_restrict_upper _ (Nat.div_le_self N s) (by
+      intro r _ hr
+      simp [mixedPair, sourceRow_eq_zero_of_quotient_lt P N L G (fresh_mem hs).1.pos hr])]
+    rfl
+  have hexpand (q r : ℕ) :
+      sourceCoefficient P N q * sourceCoefficient P N r *
+        shortColumn P N L G q * longColumn P N L G r =
+      ∑ p ∈ freshPrimes P N, if p ≤ L then
+        ∑ s ∈ freshPrimes P N, if L < s then mixedPair P N L G p s q r else 0
+        else 0 := by
+    unfold shortColumn longColumn
+    simp only [Finset.mul_sum, Finset.sum_mul]
+    apply Finset.sum_congr rfl
+    intro p _
+    by_cases hp : p ≤ L
+    · simp only [if_pos hp, Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro s _
+      by_cases hs : L < s <;> simp [hs, mixedPair]
+    · simp [hp]
+  simp_rw [hexpand]
+  -- Distribute the masks, then commute only quotient/prime inventories.
+  simp_rw [Finset.ite_sum_zero]
+  simp_rw [Finset.sum_comm (s := Finset.Icc 1 N) (t := freshPrimes P N)]
+  unfold mixedCoprime
+  congr 1
+  apply Finset.sum_congr rfl
+  intro p hp
+  by_cases hps : p ≤ L
+  · simp only [if_pos hps]
+    apply Finset.sum_congr rfl
+    intro s hs
+    by_cases hsl : L < s
+    · simp only [if_pos hsl, ite_self]
+      exact hpair p s hp hs
+    · simp [hsl]
+  · simp [hps]
+
+/-- Both mixed orientations of the d=1 fiber in joint_square_gcd.
+The right side is the complete mixed fiber, including the (zero) unit diagonal. -/
+theorem mixedCoprime_eq_d_one_mixed_fiber (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G =
+      ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then
+          (rough P q * shortColumn P N L G q *
+              (rough P r * longColumn P N L G r) +
+            rough P q * longColumn P N L G q *
+              (rough P r * shortColumn P N L G r)) /
+            (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0 := by
+  rw [mixedCoprime_eq_columns]
+  have hswap :
+      (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then sourceCoefficient P N q * sourceCoefficient P N r *
+          longColumn P N L G q * shortColumn P N L G r else 0) =
+      ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then sourceCoefficient P N q * sourceCoefficient P N r *
+          shortColumn P N L G q * longColumn P N L G r else 0 := by
+    rw [Finset.sum_comm]
+    apply Finset.sum_congr rfl
+    intro q _
+    apply Finset.sum_congr rfl
+    intro r _
+    rw [Nat.gcd_comm r q]
+    split_ifs <;> ring
+  calc
+    _ = (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then sourceCoefficient P N q * sourceCoefficient P N r *
+          shortColumn P N L G q * longColumn P N L G r else 0) +
+        (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 then sourceCoefficient P N q * sourceCoefficient P N r *
+          longColumn P N L G q * shortColumn P N L G r else 0) := by rw [hswap]; ring
+    _ = _ := by
+      rw [← Finset.sum_add_distrib]
+      apply Finset.sum_congr rfl
+      intro q _
+      rw [← Finset.sum_add_distrib]
+      apply Finset.sum_congr rfl
+      intro r _
+      split_ifs <;> simp only [sourceCoefficient, div_eq_mul_inv, mul_inv_rev] <;> ring
+
+/-- The actual joint-square numerator has exactly SS, SL, LS, LL sectors.
+Together with mixedCoprime_eq_d_one_mixed_fiber this identifies the mixed
+part of the existing gcd fiber, rather than assigning a new residual. -/
+theorem jointCoefficient_pair_expansion (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) (q r : ℕ) :
+    jointCoefficient P N L N N L G q * jointCoefficient P N L N N L G r =
+      rough P q * shortColumn P N L G q * (rough P r * shortColumn P N L G r) +
+      (rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) +
+       rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r)) +
+      rough P q * longColumn P N L G q * (rough P r * longColumn P N L G r) := by
+  simp only [jointCoefficient, column_eq_short_add_long]
+  ring
+
+theorem shortColumn_one (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortColumn P N L G 1 = 0 := by
+  unfold shortColumn
+  apply Finset.sum_eq_zero
+  intro p _
+  split_ifs with hp
+  · exact sourceRow_short_one P N L G hp
+  · rfl
+
+/-- The joint unit term remains the long unit square with its original weights. -/
+theorem jointCoefficient_unit_square (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    jointCoefficient P N L N N L G 1 * jointCoefficient P N L N N L G 1 /
+        (((omega P N 1 : ℝ)+1)*((omega P N 1 : ℝ)+1)) =
+      (sourceCoefficient P N 1 * longColumn P N L G 1)^2 := by
+  simp only [jointCoefficient, column_eq_short_add_long, shortColumn_one, zero_add,
+    sourceCoefficient, div_eq_mul_inv, mul_inv_rev]
+  ring
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
