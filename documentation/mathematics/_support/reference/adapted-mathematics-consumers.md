@@ -157,3 +157,20 @@ route to the existing core inference modules is needed before checked equational
 proof reification in the native4.29.1 adapter; Formal Conjectures may support an
 Ico-to-shifted-range Erdős–Moser normalization without consuming its admitted
 conjecture, while root recursive-model transport stays unported across versions.
+
+## Signed fibers for integer Diophantine searches
+
+The actual FLT source plus pinned Mathlib Nat/Int transport now supports a signed
+classification. Odd exponent zero-output searches must retain every `(a,-a)`;
+natural two-axis pruning would be unsound. Even exponents have four signed axis
+candidates, with duplicates at zero. Five exact declarations and literal types
+are recorded under the integer-Fermat target; source/interface review remains
+separate from NOT_RUN native/kernel/axiom acceptance. The stronger legacy
+`a^4+b^4=c^2` theorem and root cross-version import remain separate.
+
+Next analysis/geometry routes remain explicit: fixed finite Fourier coefficient
+convergence could supply an actual limiting readout on the common a.e. set,
+chosen BEFORE all row sequences; that convergence premise is not supplied by a
+unit-ball bound alone. E8 small-radius covering could expose an actual injective
+point-to-center assignment and, for equal finite cardinalities, a close matching;
+this would assert radius closeness, not nearest-center optimality or density.

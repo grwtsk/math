@@ -1497,6 +1497,91 @@ dependency/import promotion is used. Next acceptance obligation: exact native
 qualification and fresh supported source/producer/policy-bound verification,
 under the existing owner/resource gates and unchanged limits.
 
+<a id="anthropic-fermat-integer-fibers-20261029"></a>
+
+### Integer Fermat fibers: parity and the signed zero-output boundary
+
+Local attribution: grwtsk contributors. SOURCE_PROOF_CANDIDATE, not kernel acceptance.
+
+An integer Diophantine solver cannot reuse the natural two-axis fiber blindly.
+For `n≥3`, the actual proved source endpoint first excludes triples with ALL
+three coordinates nonzero. Mathlib's proved `fermatLastTheoremFor_iff_int`
+transports the source `flt_mathlib` to integers. There is no free FLT premise.
+Thus equality gives `a=0 ∨ b=0 ∨ c=0`; reducing this to only the first two
+alternatives would discard legitimate odd zero-output solutions.
+
+For natural exponent `n≥3` and integers `a,b,c`, the odd classification takes
+`Odd n` and is exactly
+`a^n+b^n=c^n ↔ (a=0∧b=c) ∨ (b=0∧a=c) ∨ (c=0∧b=-a)`.
+The fixed-output set is `{(0,c),(c,0)} ∪ {p : ℤ×ℤ | c=0 ∧ p.2=-p.1}`.
+When `c=0` the entire antidiagonal remains, including `(1,-1)`; for nonzero
+output only the two axis points remain. No positivity restrictions are added.
+
+For `Even n`, equality is exactly
+`(a=0∧(b=c∨b=-c)) ∨ (b=0∧(a=c∨a=-c))`; the fixed-output set is
+`{(0,c),(0,-c),(c,0),(-c,0)}`. These are four candidates as a SET, not four
+distinct solutions: they all coincide at output zero. Even powers are
+nonnegative, so the zero-output case forces both inputs to vanish.
+Odd power injectivity and even equality-up-to-sign identify actual coordinates,
+not only their powers/absolute values. Exponent2 is excluded throughout.
+
+Paper/source context retains the existing [Wiles/Taylor-Wiles ledger entry](#anthropic-adapter-reconciliation):
+Andrew Wiles, *Modular elliptic curves and Fermat’s Last Theorem* (1995),
+[DOI10.2307/2118559](https://doi.org/10.2307/2118559), and Richard Taylor and
+Andrew Wiles, *Ring-theoretic properties of certain Hecke algebras* (1995),
+[DOI10.2307/2118560](https://doi.org/10.2307/2118560). The upstream project
+describes a strategy adaptation, not a statement-by-statement paper translation.
+The new parity classification is an elementary local consequence of the
+imported FLT endpoint and pinned transport, not an independent Wiles proof.
+Anthropic PBC, Imperial FLT, flt-regular and Mathlib public notices remain intact
+in UPSTREAM-ATTRIBUTION/UPSTREAM-LICENSE/UPSTREAM-NOTICE and dependencies.
+
+Immutable provider: `anthropics/fermats-last-theorem@6e837e75355538c7f80bab5b956861e86c4eacc2`;
+`FinalCheck.lean` blob `3ffbd60b8f9736f5569e4dd4774701a114d18266`, exact endpoint
+`flt_mathlib : FermatLastTheorem`; underlying positive-natural
+`fermat_last_theorem` blob `607108da0ddca3236e7704b6b152ae895a51df32` retains
+`n≥3`, positive natural inputs/output. The exact native Lean4.33.1 /
+Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d` boundary stays isolated from root4.34.1.
+Mathlib FLT.Basic blob `c21f4b48f7231a5782d0ea07442d963b0c6cc7f5`
+retains Kevin Buzzard, Yaël Dillies and Jineon Baek's public byline.
+Its Nat/Int equivalence and parity API source blobs are recorded in the target.
+
+Actual root consumer context: `GRWTSK/NumberTheory/Fermat4Namespaced.lean` at
+`1198aa95fee7aa38718faf8ac8e633a75ef8ffb0`, blob `0ee92ef1ec8c5716d7667065593062873a64a973`;
+the fully qualified homogeneous `not_fermat_4` declaration is listed in the target.
+This legacy source retains Paul van Wamelen's public byline and Apache-2.0.
+Only its homogeneous `a^4+b^4=c^4` use is covered; the different stronger
+`Fermat42/not_fermat_42` equation `a^4+b^4=c^2` is NOT derived or strengthened.
+No root import, legacy syntax port or default-build promotion is supplied.
+
+[New source](https://github.com/grwtsk/math/blob/18a0115ac4244d4540a25c47a496b42a22c6807d/adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatIntegerSolutionFibers.lean) at `18a0115ac4244d4540a25c47a496b42a22c6807d`, tree `3ef3a4ed61ead92ba4f3a40195a0a82b4cead92a`;
+blob `cfa2ac320c907a79324c452eedee295c8a26f4d8` / SHA256 `45e8ea906d17dc59e61c5b960397653dd4044e7c5e3f9aa0ab80babdba042101`:
+
+- `GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.power_sum_eq_forces_zero_coordinate`
+- `GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.odd_power_sum_eq_iff_degenerate`
+- `GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.even_power_sum_eq_iff_degenerate`
+- `GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.odd_fixed_output_solution_fiber`
+- `GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.even_fixed_output_solution_fiber`
+
+[Exact target](../../../../_verification/targets/NumberTheory/DiophantineEquations/anthropic-fermat-integer-fibers-20261029.json) and adjacent
+profile/TOML require complete compiler-owned module discovery, all5 roots and5
+literal expected types with no universe parameters, complete fresh dependency
+compilation and transitive axiom audit. Actual source/API and two independent
+type/source reviews found no concrete issue; these are NOT proof acceptance.
+No native command/registry was dispatched. Compilation, Comparator,
+expected-interface, fresh independent replay and full transitive axiom audit
+remain NOT_RUN; further independent checker is UNSUPPLIED. The source guard_msgs
+and axiom-print text are not fresh local receipts.
+
+The original three positive-natural candidates, the natural fiber module and
+historical six-interface target remain unchanged with their pending evidence.
+This five-root specification does not replace them or the original OpenAI
+weighted-model obligation. All subsequent execution must use supported fresh
+source/producer/policy bindings after active AND waiting owner/resource release,
+with no policy switch under live work, lock clearing or silent limit change.
+The signed solution sets are mathematical objects; no finite search-performance,
+independent modularity proof or stronger `c²` theorem is claimed.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 

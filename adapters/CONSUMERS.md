@@ -48,3 +48,11 @@ an injective affine Fin3 object and actual cardinal3 support, preserving all
 odd-prime, density and rank premises. The central source map and canonical paper
 ledger record exact pins and the corrected bibliography. Historical sources and
 targets remain intact. Native/compiler/kernel/axiom/interface acceptance is NOT_RUN.
+
+## Signed integer Fermat fibers
+
+Five new source candidates classify integer homogeneous Fermat equations by
+parity, including odd zero-output antidiagonals and even signed-axis fibers.
+The actual source NatFLT and pinned Nat/Int transport supply the obstruction;
+no FLT premise is inserted. See Anthropic fermat references and the central
+consumer map. Historical natural targets remain intact; acceptance is NOT_RUN.

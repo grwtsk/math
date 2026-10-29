@@ -1,0 +1,30 @@
+{
+  "project_subdir": "adapters/anthropic-math/fermat",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/DiophantineEquations/FermatIntegerSolutionFibers.lean",
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.power_sum_eq_forces_zero_coordinate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.odd_power_sum_eq_iff_degenerate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.even_power_sum_eq_iff_degenerate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.odd_fixed_output_solution_fiber",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.even_fixed_output_solution_fiber"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.power_sum_eq_forces_zero_coordinate": "∀ (n : ℕ) (a b c : ℤ) (hn : 3 ≤ n)\n    (heq : a ^ n + b ^ n = c ^ n),\n  a = 0 ∨ b = 0 ∨ c = 0",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.odd_power_sum_eq_iff_degenerate": "∀ (n : ℕ) (a b c : ℤ)\n    (hn : 3 ≤ n) (hodd : Odd n),\n  a ^ n + b ^ n = c ^ n ↔\n      (a = 0 ∧ b = c) ∨ (b = 0 ∧ a = c) ∨ (c = 0 ∧ b = -a)",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.even_power_sum_eq_iff_degenerate": "∀ (n : ℕ) (a b c : ℤ)\n    (hn : 3 ≤ n) (heven : Even n),\n  a ^ n + b ^ n = c ^ n ↔\n      (a = 0 ∧ (b = c ∨ b = -c)) ∨ (b = 0 ∧ (a = c ∨ a = -c))",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.odd_fixed_output_solution_fiber": "∀ (n : ℕ) (c : ℤ)\n    (hn : 3 ≤ n) (hodd : Odd n),\n  {p : ℤ × ℤ | p.1 ^ n + p.2 ^ n = c ^ n} =\n      {(0, c), (c, 0)} ∪ {p : ℤ × ℤ | c = 0 ∧ p.2 = -p.1}",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatIntegerSolutionFibers.even_fixed_output_solution_fiber": "∀ (n : ℕ) (c : ℤ)\n    (hn : 3 ≤ n) (heven : Even n),\n  {p : ℤ × ℤ | p.1 ^ n + p.2 ^ n = c ^ n} =\n      {(0, c), (0, -c), (c, 0), (-c, 0)}"
+      }
+    }
+  ]
+}
