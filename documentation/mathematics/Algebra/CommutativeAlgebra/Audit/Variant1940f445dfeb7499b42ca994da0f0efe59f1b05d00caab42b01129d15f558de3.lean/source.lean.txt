@@ -1,0 +1,24 @@
+import PhasePolynomialBudget
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePhasePolynomialBudget
+
+#check @phasePolynomialCoefficient
+#print axioms phasePolynomialCoefficient
+
+#check @phasePolynomialCoefficient_pos
+#print axioms phasePolynomialCoefficient_pos
+
+#check @positiveMass_ge_taylor
+#print axioms positiveMass_ge_taylor
+
+#check @positiveMass_gt_polynomial
+#print axioms positiveMass_gt_polynomial
+
+#check @positiveMass_eventually_gt_polynomial
+#print axioms positiveMass_eventually_gt_polynomial
+
+#check @positiveMass_not_eventually_polynomial_bounded
+#print axioms positiveMass_not_eventually_polynomial_bounded
+

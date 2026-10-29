@@ -1,0 +1,100 @@
+# EffectiveDescentCertificate
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:16e3081687a4caf7174ca40addc5a1f1e30275e7f004a14d6b83c3f2d86b50e9",
+  "kind": "structure",
+  "lexical_name": "EffectiveDescentCertificate",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "effectivedescentcertificate--90687bccf6ece811913736e7",
+  "source": {
+    "blob": "faaea7dd8114ba50c9b701066437dac39ad673e7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 53,
+    "line": 43,
+    "path": "GRWTSK/Algebra/GroupTheory/GaloisDescent/Variant3a812e3ec02cb8d305fe1755763614855842147917071bda5f8bbe7de3f9c78a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:90687bccf6ece811913736e7afb4289c1cb1890934eb11e6f447c89211fe0ee6",
+  "verification": {
+    "reference": "docs/verification/Algebra/GroupTheory/GaloisDescent/Variant3a812e3ec02cb8d305fe1755763614855842147917071bda5f8bbe7de3f9c78a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:16e3081687a4caf7174ca40addc5a1f1e30275e7f004a14d6b83c3f2d86b50e9`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 43–53.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure EffectiveDescentCertificate
+    {Galois : Type u} {Coefficient : Type v}
+    {BaseObject : Type w} {ExtendedObject : Type x}
+    [Group Galois] [Group Coefficient] [MulAction Galois Coefficient]
+    (baseChange : BaseObject → ExtendedObject)
+    (datum : GaloisDescentDatum Galois Coefficient ExtendedObject) where
+  descended : BaseObject
+  realizes : baseChange descended = datum.extension
+  compatible : datum.compatibility
+
+/-- A certificate produces the effective descended object and both witnesses. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/Algebra/GroupTheory/GaloisDescent/Variant3a812e3ec02cb8d305fe1755763614855842147917071bda5f8bbe7de3f9c78a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/GroupTheory/GaloisDescent/Variant3a812e3ec02cb8d305fe1755763614855842147917071bda5f8bbe7de3f9c78a.lean#L43).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `faaea7dd8114ba50c9b701066437dac39ad673e7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cecc0cd109cce6c7fc0ed89365dab050f2e9cbd9763c9ad0783d2176fe8b8349 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/GaloisDescent/Variant3a812e3ec02cb8d305fe1755763614855842147917071bda5f8bbe7de3f9c78a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

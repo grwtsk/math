@@ -1,0 +1,42 @@
+# Complete source: GRWTSK.Algebra.Infinite.Variant4bf90fbae07bc2ba5f0f799c65aa133105c25084a006ec5ac6851b1ea4f1897f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c0db364ed37b21dd651f7d866fb2abbd1334391a` · SHA-256 `c87e89b7679f98b25c0981148f73cf00f45d4331ceead492014bdf1e1f693cf4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.CharZero.Variant22c2fc42704f453448a200a541c1a331173347d507ec97c4db1e52c1d3c8342b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"22c2fc42704f453448a200a541c1a331173347d507ec97c4db1e52c1d3c8342b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.CharZero.Variant22c2fc42704f453448a200a541c1a331173347d507ec97c4db1e52c1d3c8342b","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"22c2fc42704f453448a200a541c1a331173347d507ec97c4db1e52c1d3c8342b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/CharZero/Infinite.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Johan Commelin. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johan Commelin
+-/
+import Mathlib.Algebra.CharZero.Defs
+import Mathlib.Data.Fintype.EquivFin
+
+/-! # A characteristic-zero semiring is infinite -/
+
+
+
+namespace GRWTSK.Algebra.CharZero.Variant22c2fc42704f453448a200a541c1a331173347d507ec97c4db1e52c1d3c8342b
+
+open Set
+
+variable (M : Type*) [AddMonoidWithOne M] [CharZero M]
+
+-- see Note [lower instance priority]
+instance (priority := 100) CharZero.infinite : Infinite M :=
+  Infinite.of_injective Nat.cast Nat.cast_injective
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=916aba2132909f3c5739e0962bb615cda9e77729dee6e32c65a6dca905300ab1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Infinite/Variant4bf90fbae07bc2ba5f0f799c65aa133105c25084a006ec5ac6851b1ea4f1897f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->
