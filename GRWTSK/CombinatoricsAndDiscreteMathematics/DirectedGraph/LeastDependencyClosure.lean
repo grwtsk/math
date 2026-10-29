@@ -3125,4 +3125,114 @@ theorem boundedMaskLE_covers {width : Nat} (mask : Fin (2 ^ width)) :
     ∃ bits : FixedBoolList width, boundedMaskLE bits = mask :=
   ⟨fixedBitsLE mask, boundedMaskLE_fixedBitsLE mask⟩
 
+/-- Positional selection on the fixed-list carrier; position zero is the low bit. -/
+def selectedBits {width : Nat} (bits : FixedBoolList width) (index : Fin width) : Prop :=
+  listPosition bits.val index.val = some true
+
+def selectedBitsDecisions {width : Nat} (bits : FixedBoolList width) :
+    DecidablePred (selectedBits bits) :=
+  fun index => inferInstanceAs (Decidable (listPosition bits.val index.val = some true))
+
+/-- The corresponding selection on the bounded natural carrier uses the proved
+structural bit reader, not an unproved external bit-operation translation. -/
+def selectedMask {width : Nat} (mask : Fin (2 ^ width)) (index : Fin width) : Prop :=
+  maskBit mask.val index.val = true
+
+def selectedMaskDecisions {width : Nat} (mask : Fin (2 ^ width)) :
+    DecidablePred (selectedMask mask) :=
+  fun index => inferInstanceAs (Decidable (maskBit mask.val index.val = true))
+
+theorem selectedBits_fixedBitsLE_iff {width : Nat} (mask : Fin (2 ^ width)) (index : Fin width) :
+    selectedBits (fixedBitsLE mask) index ↔ selectedMask mask index := by
+  have position := bitsLE_position width mask.val index
+  constructor
+  · intro selected
+    exact Option.some.inj (position.symm.trans selected)
+  · intro selected
+    exact position.trans (congrArg some selected)
+
+theorem selectedMask_boundedMaskLE_iff {width : Nat} (bits : FixedBoolList width) (index : Fin width) :
+    selectedMask (boundedMaskLE bits) index ↔ selectedBits bits index := by
+  have pointwise := selectedBits_fixedBitsLE_iff (boundedMaskLE bits) index
+  have roundtrip := fixedBitsLE_boundedMaskLE bits
+  constructor
+  · intro selected
+    exact roundtrip ▸ pointwise.mpr selected
+  · intro selected
+    exact pointwise.mp (roundtrip.symm ▸ selected)
+
+/-- Pointwise logical equivalence transports cost without equating predicates
+or invoking function/propositional extensionality. Both decisions remain explicit. -/
+theorem vertexCost_congr (weight : α → Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (same : ∀ a, s a ↔ t a) (a : α) :
+    vertexCost weight s a = vertexCost weight t a := by
+  by_cases selected : s a
+  · rw [vertexCost, vertexCost, if_pos selected, if_pos ((same a).mp selected)]
+  · have unselected : ¬ t a := fun h => selected ((same a).mpr h)
+    rw [vertexCost, vertexCost, if_neg selected, if_neg unselected]
+
+theorem weightedCost_congr (vertices : List α) (weight : α → Nat) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (same : ∀ a, s a ↔ t a) :
+    weightedCost weight s vertices = weightedCost weight t vertices := by
+  induction vertices with
+  | nil => rfl
+  | cons a rest ih =>
+    change vertexCost weight s a + weightedCost weight s rest =
+      vertexCost weight t a + weightedCost weight t rest
+    calc
+      vertexCost weight s a + weightedCost weight s rest =
+          vertexCost weight t a + weightedCost weight s rest :=
+        congrArg (fun n => n + weightedCost weight s rest) (vertexCost_congr weight same a)
+      _ = vertexCost weight t a + weightedCost weight t rest :=
+        congrArg (fun n => vertexCost weight t a + n) ih
+
+theorem finiteWeightedCost_congr (inventory : FiniteInventory α) (weight : α → Nat)
+    {s t : α → Prop} [DecidablePred s] [DecidablePred t] (same : ∀ a, s a ↔ t a) :
+    finiteWeightedCost inventory weight s = finiteWeightedCost inventory weight t :=
+  weightedCost_congr inventory.vertices weight same
+
+theorem retainedCount_congr (inventory : FiniteInventory α) {s t : α → Prop}
+    [DecidablePred s] [DecidablePred t] (same : ∀ a, s a ↔ t a) :
+    retainedCount inventory s = retainedCount inventory t :=
+  finiteWeightedCost_congr inventory (fun _ => 1) same
+
+/-- Exact cost correspondence across the declared finite carriers. The inventory
+explicitly covers Fin width once; no external label or weight-array mapping is inferred. -/
+theorem finiteWeightedCost_selected_decode {width : Nat}
+    (inventory : FiniteInventory (Fin width)) (weight : Fin width → Nat) (mask : Fin (2 ^ width)) :
+    @finiteWeightedCost (Fin width) inventory weight (selectedBits (fixedBitsLE mask))
+        (selectedBitsDecisions (fixedBitsLE mask)) =
+      @finiteWeightedCost (Fin width) inventory weight (selectedMask mask) (selectedMaskDecisions mask) :=
+  @finiteWeightedCost_congr (Fin width) inventory weight
+    (selectedBits (fixedBitsLE mask)) (selectedMask mask)
+    (selectedBitsDecisions (fixedBitsLE mask)) (selectedMaskDecisions mask)
+    (selectedBits_fixedBitsLE_iff mask)
+
+theorem retainedCount_selected_decode {width : Nat}
+    (inventory : FiniteInventory (Fin width)) (mask : Fin (2 ^ width)) :
+    @retainedCount (Fin width) inventory (selectedBits (fixedBitsLE mask))
+        (selectedBitsDecisions (fixedBitsLE mask)) =
+      @retainedCount (Fin width) inventory (selectedMask mask) (selectedMaskDecisions mask) :=
+  @retainedCount_congr (Fin width) inventory
+    (selectedBits (fixedBitsLE mask)) (selectedMask mask)
+    (selectedBitsDecisions (fixedBitsLE mask)) (selectedMaskDecisions mask)
+    (selectedBits_fixedBitsLE_iff mask)
+
+/-- Cost, count and mask fields agree exactly after decoding a bounded mask.
+This discharges the positional selection transport inside the mathematical model;
+standard div/mod/testBit, Python, JSON, arrays and general-CNF runtime remain separate. -/
+theorem finiteOffsetKey_selected_decode {width : Nat}
+    (inventory : FiniteInventory (Fin width)) (weight : Fin width → Nat) (offset : Nat)
+    (mask : Fin (2 ^ width)) :
+    finiteOffsetKey inventory weight offset
+        (selectedBits (width := width)) (selectedBitsDecisions (width := width))
+        fixedMaskLE (fixedBitsLE mask) =
+      finiteOffsetKey inventory weight offset
+        (selectedMask (width := width)) (selectedMaskDecisions (width := width))
+        (fun candidate => candidate.val) mask := by
+  apply costCountMask_ext
+  · exact finiteWeightedCost_selected_decode inventory (fun index => weight index + offset) mask
+  · exact retainedCount_selected_decode inventory mask
+  · exact maskLE_bitsLE width mask.val mask.isLt
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
