@@ -1,0 +1,37 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1468"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarPrimeTransport"
+mathematical_scope = "Exact two-channel fresh-prime transport of the complete frozen far kernel and localization to an explicit mask/cutoff commutator; no growth gain or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "3abc549287ec76161602373eba244386bd365324"
+parent = "af07dd770356e7562ab0e6972b2dc9a2c5866465"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarPrimeTransport.lean"
+blob = "a49c1d5c1c960c9f5f8f89ac54c7a1f2c5d063a2"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarPrimeTransport"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarPrimeTransport"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarPrimeTransport.lean"
+commands_status = "NOT_RUN"
+definitions = ["farMask","farKernel","quadraticPairing","fourDifference","maskCommutator"]
+theorems = ["farKernel_left_support","farKernel_right_support","quadratic_remove_eq_fourDifference","farNegative_eq_two_quadratic","farNegative_eq_primeTransport","block_product_cons","gram_cons_eq_fourDifference","fourDifference_farKernel","fourDifference_actual_farKernel"]
+closure = "All imported, private, generated and opaque dependencies; lexical heads are not the complete proof closure."
+reject = ["sorryAx","new research axioms","hidden cancellation premises","omitted cutoffs or masks","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[obstruction]
+id = "RH-FAR-PRIME-MASK-COMMUTATOR-01"
+status = "OPEN"
+statement = "The coefficient and analytic Gram transports are exact, but the complete far mask does not commute with prime dilation; the resulting source-defined commutator has no proved improved-rate one-sided bound."
+smallest_missing_premise = "A proved complete outer signed bound for the next-stage masked Gram plus the explicit cutoff/divisor-mask commutator, strong enough to improve the original far contribution after return."
