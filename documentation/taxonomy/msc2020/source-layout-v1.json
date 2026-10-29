@@ -1421464,6 +1421464,26 @@
       "target_sha256": "d612afb0fd8348b2012fd3bd48d78dcd61930668b20f0272f49ec66d84d9ac1c",
       "target_git_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollisionTrajectory.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollisionTrajectory.lean",
+      "source_sha256": "1b2430ce9039915ff622a4621320763ff967fd1f198fea6ae034b0d038f46758",
+      "input_blob": "44f1e4a18b2c409dbecde6219122daacb749665e",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Two-body directed elastic impacts, unfolded billiard segments, finite physical trace construction and collision count",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "COMMITTED_BYTES",
+      "source_revision": "316d013b8a1f1bcbe196d3f90374a1e5c6ce9a1d",
+      "source_git_blob": "44f1e4a18b2c409dbecde6219122daacb749665e",
+      "target_sha256": "e33632dd7f930a0cecbf4b7ec3cf4bc1598ab1b349496be7d1dcc1d81b83ea73",
+      "target_git_blob": "a41cb1deadfd7d834cdf1557ce21e006fb6fe036",
+      "publication_scope": "USER_AUTHORIZED_MATHEMATICAL_SOURCE_CONTINUATION"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
