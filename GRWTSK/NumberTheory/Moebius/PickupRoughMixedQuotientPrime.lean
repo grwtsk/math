@@ -1010,6 +1010,34 @@ theorem mixedCoprime_orientation_multiple_zero_components
   rw [mixedCoprime_eq_two_mul_shortLongCoprime]
   simp [shortLongCoprime, longShortCoprime]
 
+/-- Full d=1 fiber with the complete SL orientation doubled. SS and LL
+remain their literal coprime sectors, including the original LL unit diagonal. -/
+theorem dOneFiber_eq_shortShort_add_two_mul_shortLong_add_longLong
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G = shortShortCoprime P N L G +
+      2 * shortLongCoprime P N L G + longLongCoprime P N L G := by
+  rw [dOneFiber_eq_shortShort_add_mixed_add_longLong,
+    mixedCoprime_eq_two_mul_shortLongCoprime]
+
+/-- Full d=1 fiber with the complete LS orientation doubled. The exchange
+is on the full quotient inventory, with masks and denominator factors intact. -/
+theorem dOneFiber_eq_shortShort_add_two_mul_longShort_add_longLong
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G = shortShortCoprime P N L G +
+      2 * longShortCoprime P N L G + longLongCoprime P N L G := by
+  rw [dOneFiber_eq_shortShort_add_mixed_add_longLong,
+    mixedCoprime_eq_two_mul_longShortCoprime]
+
+/-- At N=0 the full fiber and every complete sector in either orientation
+formula are empty; no long unit contribution is inserted into that inventory. -/
+theorem dOneFiber_coprime_orientation_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P 0 L G = 0 ∧ shortShortCoprime P 0 L G = 0 ∧
+      shortLongCoprime P 0 L G = 0 ∧ longShortCoprime P 0 L G = 0 ∧
+      longLongCoprime P 0 L G = 0 := by
+  simp [dOneFiber, shortShortCoprime, shortLongCoprime,
+    longShortCoprime, longLongCoprime]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
