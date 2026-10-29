@@ -1,0 +1,37 @@
+{
+  "source_url": "https://www.3blue1brown.com/lessons/eulers-formula-via-group-theory/",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "River Way",
+  "date": "2017-03-03",
+  "source": "GRWTSK/SpecialFunctions/ElementaryClassicalFunctions/ExponentialAndTrigonometricFunctions/EulerCylinderTopology.lean",
+  "blob": "83185da22df8dcebcd404b3308a92ab429260ca7",
+  "namespace": "GRWTSK.SpecialFunctions.EulerExponentialCylinder",
+  "theorems": [
+    "continuous_cylinderMap",
+    "cylinderMap_image",
+    "isOpenMap_cylinderMap",
+    "cylinderHomeomorph_mk",
+    "continuous_cylinderHomeomorph_inverse",
+    "cylinderHomeomorph_log_radius"
+  ],
+  "scope": "Actual standard quotient topology on Cylinder and subtype topology on nonzero complex numbers; continuous and open cylinderMap upgrades the existing exact exponential set equivalence to a homeomorphism.",
+  "hypotheses": "Cylinder=Quotient of actual exponential periodSetoid; standard topology induced by quotient construction, never transported from answer. Target is nonzero subtype of complex plane.",
+  "imported": {
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module": "Mathlib/Analysis/SpecialFunctions/Complex/LogDeriv.lean",
+    "blob": "05d8897631759f2e85cd36ba8f543f44eccc14f1",
+    "role": "Imported exponential openness, quotient continuity and continuous-open equivalence homeomorphism constructor; local image comparison and actual topology bridge remain candidates"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Explicit R x Circle coordinate model",
+    "Oriented winding and full spoken-video mapping",
+    "All source-bound checking including inherited suppliers"
+  ],
+  "video_verified_complete": false
+}

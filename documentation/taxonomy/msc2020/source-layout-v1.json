@@ -1423020,6 +1423020,25 @@
       "target_sha256": "6f523e0b92130d69813e528e0215227169e6d45a9f3b03095ecbd3850a39dcec",
       "target_git_blob": "3e09f451bddbf8ebd5a52d23331519c9f6ad0477",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/SpecialFunctions/ElementaryClassicalFunctions/ExponentialAndTrigonometricFunctions/EulerCylinderTopology.lean",
+      "path": "GRWTSK/SpecialFunctions/ElementaryClassicalFunctions/ExponentialAndTrigonometricFunctions/EulerCylinderTopology.lean",
+      "source_sha256": "1528554b302324571b43755cfd083360e62546a8cc014381c1dc767faf8909a6",
+      "input_blob": "83185da22df8dcebcd404b3308a92ab429260ca7",
+      "source_kind": "lean_source",
+      "msc_code": "33B10",
+      "msc_label": "Exponential and trigonometric functions",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Standard exponential quotient topology, actual continuity and openness, punctured-plane homeomorphism",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "83185da22df8dcebcd404b3308a92ab429260ca7",
+      "target_sha256": "1528554b302324571b43755cfd083360e62546a8cc014381c1dc767faf8909a6",
+      "target_git_blob": "83185da22df8dcebcd404b3308a92ab429260ca7",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
