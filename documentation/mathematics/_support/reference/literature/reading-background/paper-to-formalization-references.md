@@ -1,5 +1,89 @@
 # Paper-to-formalization references
 
+## Numberphile: first sums-of-cubes claim batch (2026-10-28)
+
+Local attribution: grwtsk contributors. This is a partial claim formalization,
+not completion of five videos or the entire channel. The passive scope manifest
+`documentation/mathematics/_verification/specifications/_unscoped/numberphile-corpus-v1.json`
+records 1,165 distinct official sitemap video-page URLs, the raw sitemap digest,
+five partial claim mappings and explicit acceptance requirements. Descriptions
+were consulted; complete video/transcript claim extraction remains NOT_DONE.
+The sitemap is not a complete YouTube-channel inventory. No historical influence
+or novelty is inferred from a topic match.
+
+- **Primary video sources/bylines/versions:** Numberphile, videos by Brady Haran:
+  *The Uncracked Problem with 33*, featuring Tim Browning (2015-11-06),
+  https://www.numberphile.com/videos/the-uncracked-problem-with-33 ;
+  *42 is the new 33*, featuring Andrew Booker (2019-03-11),
+  https://www.numberphile.com/videos/42-is-the-new-33 ;
+  *The Mystery of 42 is Solved*, featuring Andrew Booker (2019-09-06),
+  https://www.numberphile.com/videos/the-mystery-of-42-is-solved ;
+  *3 as the sum of the 3 cubes*, featuring Andrew Booker (2019-09-24),
+  https://www.numberphile.com/videos/3-as-the-sum-of-the-3-cubes ;
+  *1729 and Taxi Cabs*, featuring James Grime and Roger Bowley (2012-02-28),
+  https://www.numberphile.com/videos/1729-and-taxi-cabs . Dates are the official
+  pages' publication metadata. These are video-derived elementary claims, not
+  imported proofs from papers linked in the descriptions.
+- **Independent primary witness source:** Andrew V. Sutherland, *Sums of cubes*,
+  https://math.mit.edu/~drew/sumsofcubes.html (joint results with Andrew R. Booker;
+  mutable page consulted 2026-10-28, no immutable upstream Git identity claimed).
+  The large witness for three and the witness for 42 are joint results. The 33
+  identity is also given in the original video's March 2019 description update.
+  The historical descriptions of 33 and 42 as unsolved are not current premises.
+- **Exact integer statement:** `Representable n` means there exist unrestricted
+  integers `x,y,z` with `x^3+y^3+z^3=n`. Every integer cube has remainder 0, 1 or 8
+  modulo 9; hence a representable integer has neither remainder 4 nor remainder 5.
+  The reduction modulo nine is universal, including negative integers. The
+  unrestricted sufficiency assertion is only the proposition definition
+  `Conjecture`; it is neither an axiom nor a proved implication here.
+- **Explicit identities:** the witnesses are
+  `(8866128975287528,-8778405442862239,-2736111468807040)` for 33,
+  `(-80538738812075974,80435758145817515,12602123297335631)` for 42, and
+  `(569936821221962380720,-569936821113563493509,-472715493453327032)` for 3.
+  Two smaller triples for 3 are `(1,1,1)` and `(4,4,-5)`; their first coordinates
+  distinguish all three displayed ordered triples. This is not completeness,
+  optimality, a computation-time claim or an unbounded search theorem.
+- **Exact taxicab statement:** positive natural pairs `(1,12)` and `(9,10)` are
+  individually increasing and different, and both sums of cubes equal 1729.
+  `HasTwoRepresentations` excludes duplicates caused solely by swapping a pair.
+  No theorem here states that 1729 is the least such integer.
+- **Local paths/blobs:**
+  `GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean`,
+  blob `9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3`;
+  `GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean`,
+  blob `d2baea4abbb3dd2581fb653d5a44d925539bfcaa`.
+  The containing publication commit supplies the complete source tree.
+- **Fully qualified declarations:** prefix
+  `GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.` with
+  `Representable`, `Admissible`, `Conjecture`, `cube_residue`,
+  `representable_admissible`, `not_representable_of_residue_four`,
+  `not_representable_of_residue_five`, `identity_33`, `representable_33`,
+  `identity_42`, `representable_42`, `identity_3_large`, `representable_3_large`,
+  `three_distinct_solutions_for_3`; prefix
+  `GRWTSK.NumberTheory.DiophantineEquations.Taxicab.` with
+  `HasTwoRepresentations`, `identity_1729_first`, `identity_1729_second`,
+  `two_representations_1729`.
+- **Evidence roles:** imported mathematics is Mathlib integer congruence and
+  proof-producing arithmetic tactics under the existing dependency pins. New
+  kernel-verified bridges: none claimed. Source proof candidates: the fourteen
+  named theorems. Conditional interfaces: no new hypotheses disguising an
+  unproved theorem; `Conjecture` separately names the missing sufficiency claim.
+  Finite evidence: the displayed witness identities and the nine residue cases
+  used within the universal reduction, with explicit transport from every
+  integer via `Int.mod_modEq` and `Int.ModEq.pow`. Analogies: none. Unresolved
+  premises: source elaboration, fresh kernel replay, transitive axiom auditing,
+  full video claim extraction, taxicab minimality, three-cubes sufficiency,
+  and all other video claims not mapped by this batch.
+- **Verification:** compilation NOT_RUN; fresh kernel checking NOT_RUN;
+  transitive axiom auditing NOT_RUN. Intended source-bound commands are
+  `lake env lean GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean`
+  and `lake env lean GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean`,
+  through a supported Noe managed replay at the publication commit, followed by
+  all fourteen theorem audits. The old toolchain issue grwtsk/noeaaeue#408 is
+  closed; this does not establish a replay of these new bytes. No native replay
+  or host-resource mutation was dispatched. Root imports and dependency pins
+  are unchanged; this batch claims no completed video formalization.
+
 ## Erdős proof routes: #138 kth-root growth, #242 residue reduction, #1 counting obstruction
 
 Local attribution: grwtsk contributors. This increment distinguishes an imported
