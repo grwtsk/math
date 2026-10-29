@@ -703,6 +703,75 @@ theorem dOneFiber_upperTriangle_zero_components
       dOneUpperTriangle P 0 L G = 0 := by
   simp [dOneFiber, dOneOffDiagonal, dOneUpperTriangle]
 
+/-- The actual SS numerator on the same coprime strict quotient triangle. -/
+def shortShortUpperTriangle (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q < r then
+      rough P q * shortColumn P N L G q * (rough P r * shortColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- SL keeps the short column at q and the long column at r. -/
+def shortLongUpperTriangle (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q < r then
+      rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- LS keeps the long column at q and the short column at r. Swapping q,r
+would reverse the strict triangle, so this is retained as its own sector. -/
+def longShortUpperTriangle (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q < r then
+      rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- LL on the strict triangle. Off-diagonal pairs with q=1 remain included. -/
+def longLongUpperTriangle (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q < r then
+      rough P q * longColumn P N L G q * (rough P r * longColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- Exact four-sector expansion on the ORIGINAL coprime q<r inventory.
+The two mixed orientations are separate; neither is a residual or discarded. -/
+theorem dOneUpperTriangle_eq_shortShort_add_shortLong_add_longShort_add_longLong
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneUpperTriangle P N L G = shortShortUpperTriangle P N L G +
+      shortLongUpperTriangle P N L G + longShortUpperTriangle P N L G +
+      longLongUpperTriangle P N L G := by
+  unfold dOneUpperTriangle shortShortUpperTriangle shortLongUpperTriangle
+    longShortUpperTriangle longLongUpperTriangle
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro q _
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases h : Nat.gcd q r = 1 ∧ q < r
+  · simp only [if_pos h, dOnePair, jointCoefficient_pair_expansion]
+    ring
+  · simp [h]
+
+/-- Consumer in the full d=1 fiber. The original long unit square stays
+outside twice the complete four-sector strict triangle, including at N=0. -/
+theorem dOneFiber_eq_unit_add_two_mul_upperTriangle_sectors
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G =
+      (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        2 * (shortShortUpperTriangle P N L G + shortLongUpperTriangle P N L G +
+          longShortUpperTriangle P N L G + longLongUpperTriangle P N L G) := by
+  rw [dOneFiber_eq_unit_add_two_mul_upperTriangle,
+    dOneUpperTriangle_eq_shortShort_add_shortLong_add_longShort_add_longLong]
+
+/-- At N=0 the complete strict triangle and all four literal sectors are empty. -/
+theorem dOneUpperTriangle_zero_sectors
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneUpperTriangle P 0 L G = 0 ∧ shortShortUpperTriangle P 0 L G = 0 ∧
+      shortLongUpperTriangle P 0 L G = 0 ∧ longShortUpperTriangle P 0 L G = 0 ∧
+      longLongUpperTriangle P 0 L G = 0 := by
+  simp [dOneUpperTriangle, shortShortUpperTriangle, shortLongUpperTriangle,
+    longShortUpperTriangle, longLongUpperTriangle]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
