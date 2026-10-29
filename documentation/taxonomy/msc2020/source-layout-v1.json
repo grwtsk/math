@@ -1422925,6 +1422925,25 @@
       "target_sha256": "a5204a843d8669bc8c234a64ba162b59fe741ac4ccf2a013f9357aac92c60996",
       "target_git_blob": "1bd535fbd1d4a552b2ea3955b6ead56037790869",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionChordAngle.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionChordAngle.lean",
+      "source_sha256": "4caf877fe885f63efb94233156fa2517a1e2d6a34a3731a3bf12f60d78e52355",
+      "input_blob": "4328d6004902b8da7a007559fd3a36b8e6dc37e0",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Physical chord scalar signs, fixed Euclidean angle computation and actual inscribed/central mass-ratio angles",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "4328d6004902b8da7a007559fd3a36b8e6dc37e0",
+      "target_sha256": "4caf877fe885f63efb94233156fa2517a1e2d6a34a3731a3bf12f60d78e52355",
+      "target_git_blob": "4328d6004902b8da7a007559fd3a36b8e6dc37e0",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",

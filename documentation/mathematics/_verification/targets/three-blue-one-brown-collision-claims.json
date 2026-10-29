@@ -3,8 +3,8 @@
   "attribution": "grwtsk contributors",
   "role": "PASSIVE_MATHEMATICAL_CLAIM_MAP_NOT_AN_EXECUTION_REQUEST",
   "binding": {
-    "base_commit": "2c62bcf404318e27b4f0c807de51a19b1901adcc",
-    "rule": "Containing publication commit binds existing exact blobs and the added actual-geometry module."
+    "base_commit": "5b97fb2d7d099ab3a8652acf55d11e7c2849e75c",
+    "rule": "Containing publication commit binds exact prior suppliers plus actual chord-angle identification."
   },
   "module_blobs": {
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollision.lean": "84e61612c43ddd36438cbc76481cc890d1c58995",
@@ -20,7 +20,8 @@
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionTracePhase.lean": "2a490b7cbe18dcc49350a37cc03bd74b5cf1091f",
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionNextImpact.lean": "83ca673ffc8f9a55dc4ef3d92c8ca996b231a1a0",
     "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionConservationSelection.lean": "dced0871451876e266ea3b84d82adc4ee75d3aaa",
-    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionInscribedAngle.lean": "1bd535fbd1d4a552b2ea3955b6ead56037790869"
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionInscribedAngle.lean": "1bd535fbd1d4a552b2ea3955b6ead56037790869",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionChordAngle.lean": "4328d6004902b8da7a007559fd3a36b8e6dc37e0"
   },
   "claims": [
     {
@@ -102,14 +103,14 @@
     },
     {
       "id": "inscribed_angle_method",
-      "hypotheses": "m,M>0; actual wall then block Steps. Oriented consumer retains Module.Oriented instance; circle memberships/noncoincidence are proved. Unsigned consumer retains both branches.",
+      "hypotheses": "m,M>0; actual wall then block impacts. Chord scalar signs, fixed angle, actual inscribed theta and acute central 2theta are proved, not supplied.",
       "declarations": [
         "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_wall_block_inscribed",
-        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_wall_block_unsigned",
-        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.wall_chord_vector",
-        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.block_chord_vector"
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_inscribed_eq_massAngle",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_central_eq_twice_massAngle",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.actual_central_angle_strict_bounds"
       ],
-      "role": "SOURCE_PROOF_CANDIDATE_ACTUAL_GEOMETRY_WITH_ARCTANGENT_IDENTIFICATION_OPEN"
+      "role": "SOURCE_PROOF_CANDIDATE_ACTUAL_INSCRIBED_METHOD_AND_ACUTE_BRANCH"
     },
     {
       "id": "all_exponents_decimal_floor",
@@ -194,9 +195,9 @@
     "transitive_axioms": "NOT_RUN_USER_DEFERRED"
   },
   "open_scope": [
-    "Identification of the actual inscribed angle with atan(sqrt(m/M)), with chord scalar signs and unwrapped arc branch control",
     "Unresolved all-exponents decimal-floor premise, Galperin sections 8–10 and 2025 lesson footnote",
-    "Full spoken-video/transcript coverage and any further claims not present in lesson text"
+    "Full spoken-video/transcript coverage and any further claims not present in lesson text",
+    "Any global oriented winding/arc-length assertion beyond local central angles and the already-proved algebraic phase/count route must retain its own branch hypotheses."
   ],
   "not_claimed": [
     "Any verified video or sequence completion",
@@ -205,8 +206,8 @@
   ],
   "discovery_boundary": "Four lessons here do not exhaust Shorts,talks,guest appearances or the full channel",
   "previous_binding": {
-    "base_commit": "f4a45b5e2d5475d3c32997dd4cc2ca50cce7cf2d",
-    "rule": "Containing publication commit binds all listed blobs; new source is added to that complete base."
+    "base_commit": "2c62bcf404318e27b4f0c807de51a19b1901adcc",
+    "rule": "Containing publication commit binds existing exact blobs and the added actual-geometry module."
   },
   "imported_geometry": {
     "byline": "Joseph Myers; Mathlib contributors",
