@@ -45,3 +45,13 @@ module-owned censuses, all six exact roots and literal expected types, preservin
 zero cases, positive-natural premises and n>=3. Historical targets are unchanged.
 See [Fermat references](fermat/references.md) and the canonical ledger continuation.
 All native, Comparator, kernel, axiom and expected-interface checks remain NOT_RUN.
+
+## Primitive-character local count consumers
+
+The zeta23 package now has two source candidates deriving actual finite complex
+readout bounds from the q-uniform local count, with one A>=1 before moduli,
+index types and finite primitive-character families. Log normalization is proved
+positive; signed windows and multiplicities (including real zeros when applicable)
+remain exact. See [zeta23 references](zeta23/references.md) and `documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.json`.
+This is separate from the 23 imported comparator surfaces and implies no RH or
+Mertens estimate. Native 4.33.0-rc2 and every proof-check status remain unchanged/NOT_RUN.

@@ -121,3 +121,23 @@ existential witness is not identified with this H. Neither a <3/2 threshold nor
 an energy assertion for the original A is inferred. Exact types, source/paper
 attribution and remaining root-version boundary are in the canonical ledger
 anchor pfr-dense-submodule-slice-20261029. Native checks remain NOT_RUN.
+
+## Local zero counts and finite E8 covers
+
+The primitive-character zero-count source supplies an actual finite response
+envelope: one absolute A precedes every common modulus, index type and finite
+selected family. The raw complex count readout pays actual l1 mass and the
+log(q*(abs(t)+3)) scale; positivity gives a normalized unit-ball bound with that
+same A. Signed unit windows and analytic multiplicity remain intact, including
+real zeros when a window meets 0. This supplies no cancellation or RH premise.
+
+E8 separation now determines the exact external covering number for any finite
+Euclidean sample below half the separation radius. Every closed-ball cover needs
+one center per point, even with nonlattice centers. The strict threshold, empty
+sample and radius 0 cases are retained. No geometric-to-arithmetic mass mapping,
+optimal density or algorithmic performance is inferred.
+
+Both are source candidates with full type targets and independent source/API
+review. Native compilation, fresh replay, complete axiom and interface checks
+remain NOT_RUN. Exact pins and missing version/representation bridges are in
+the canonical ledger and central consumer map.

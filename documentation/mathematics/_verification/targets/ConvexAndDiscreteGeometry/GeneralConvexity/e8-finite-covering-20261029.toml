@@ -1,0 +1,14 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "63ea24924f18f87132e153ef59fb02c0e9aa314b"
+source_path = "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean"
+source_blob = "cd61fa5ac0d35d0642132d21b241012799dedfb6"
+managed_profile = "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+expected_interface = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]

@@ -567,6 +567,187 @@
         "No different-characteristic or arbitrary-group PFR theorem is supplied"
       ],
       "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "sphere-packing",
+      "project_subdir": "adapters/sphere-packing",
+      "path": "adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean",
+      "source_commit": "63ea24924f18f87132e153ef59fb02c0e9aa314b",
+      "source_blob": "cd61fa5ac0d35d0642132d21b241012799dedfb6",
+      "source_sha256": "e8970b50452cda24a0f65de1e30f34daeb62ea823e2cff367da6900ee2df6844",
+      "declarations": [
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two",
+        "GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover"
+      ],
+      "upstream": [
+        {
+          "repo": "thefundamentaltheor3m/Sphere-Packing-Lean",
+          "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+          "source": "SpherePacking/Basic/E8.lean",
+          "blob": "c369209e9ae2a7e358e2b312cd251bf9caf20cd2",
+          "declaration": "E8_norm_lower_bound",
+          "exact_statement": "For v:Fin8→Real in Submodule.E8 Real, v=0 or sqrt2≤norm(WithLp.toLp2 v).",
+          "source_byline": "Bhavik Mehta and Gareth Ma,2025 (Basic.E8); project Sphere Packing in Lean by Christopher Birkbeck, Sidharth Hariharan, Seewoo Lee, Ho Kiu Gareth Ma, Bhavik Mehta, Maryna Viazovska.",
+          "license": "Apache-2.0",
+          "stable_url": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/77cf0a0c104f2e31501eab04d88bbc068d61c169/SpherePacking/Basic/E8.lean",
+          "excluded_source": "SpherePacking.MainTheorem literal sorry remains excluded; no optimal-density conclusion."
+        }
+      ],
+      "native_pins": {
+        "commit": "1f414401f69059aa7eead47b53ee40bd38455eeb",
+        "toolchain": "leanprover/lean4:v4.35.0-rc4",
+        "sources": [
+          {
+            "path": "Mathlib/Topology/MetricSpace/CoveringNumbers.lean",
+            "blob": "634d5f7d0b64abfdc47ec889741d4a4fa4d87ec7",
+            "declarations": [
+              "Metric.externalCoveringNumber",
+              "Metric.IsSeparated.encard_le_packingNumber",
+              "Metric.packingNumber_two_mul_le_externalCoveringNumber",
+              "Metric.IsCover.externalCoveringNumber_le_encard",
+              "Metric.externalCoveringNumber_le_encard_self"
+            ]
+          },
+          {
+            "path": "Mathlib/Topology/MetricSpace/MetricSeparated.lean",
+            "blob": "cf07a2bc415fea591b85a64ea7c64dd808a2a106",
+            "declarations": [
+              "Metric.IsSeparated"
+            ],
+            "exact_definition": "IsSeparated(ε:ENNReal)(s:Set X):=s.Pairwise(ε<edist · ·)."
+          },
+          {
+            "path": "Mathlib/Analysis/Normed/Lp/WithLp.lean",
+            "blob": "71362992c379ed25d3db5525cb594cdfc95ef4d7",
+            "declarations": [
+              "WithLp.toLp_injective"
+            ]
+          },
+          {
+            "path": "Mathlib/Data/Finset/Card.lean",
+            "blob": "6e51fa71c87cffcddc4bfbbf865ad3fe6e16fdc2",
+            "declarations": [
+              "Finset.card_image_of_injective",
+              "Finset.card_le_card_of_injOn"
+            ]
+          },
+          {
+            "path": "Mathlib/Data/Set/Card.lean",
+            "blob": "1030b8e96cb17442c16976b0fe037b0f3dde781f",
+            "declarations": [
+              "Set.encard_coe_eq_coe_finsetCard"
+            ]
+          }
+        ]
+      },
+      "hypotheses": "S:Finset(Fin8→Real); hS:every member in Submodule.E8 Real; ε:NNReal (zero allowed); strict2*(ε:Real)<sqrt2. Empty S allowed. The center-set corollary additionally assumes C:Set(EuclideanSpace Real(Fin8)) and Metric.IsCover ε of the exact toLp image; C may be infinite and need not lie in E8/sample. No other hypotheses or type universes.",
+      "conclusion": "The exact finite Euclidean sample requires one closed-ball external cover center per point whenever 2ε<sqrt2. Every proposed cover, including one with arbitrary nonlattice centers, has ENat cardinal at least S.card. The sample itself supplies a cover attaining equality. This turns the existing E8 separation into a covering-cost statement rather than re-exporting pairwise separation.",
+      "use": "Turn actual Euclidean E8 sample separation into exact external covering cost and an ENat cardinal lower bound for every proposed cover, using the existing Metric covering-number API.",
+      "consumer_paths": [
+        "GRWTSK/GeneralTopology/CoveringNumbersPublic.lean"
+      ],
+      "root_consumer_source_commit": "cb51a1853f8736b1a32b2bb33b7adeb1f78168e2",
+      "root_consumer_blob": "ac4085f88cc6ecc5c1d0a0146b17defb3bfb1d0f",
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "license": "Apache-2.0; original E8 and Mathlib public bylines retained",
+      "profile": "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.profile.json",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_independent_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN"
+      },
+      "missing_bridges": [
+        "No map from E8 point clouds/covers to MatchedCoefficientPartition child coefficient vectors or arithmetic packet mass.",
+        "No quantitative volume-of-ball ratio or effective count within an arbitrary bounding region.",
+        "No optimal sphere-packing density proof.",
+        "All source-bound native verification remains required before kernel-verified bridge status.",
+        "No direct root4.34.1 import or checked cross-version port; native4.35.0-rc4 remains isolated"
+      ],
+      "independent_checker": "UNSUPPLIED"
+    },
+    {
+      "provider": "anthropic-math",
+      "project_subdir": "adapters/anthropic-math/zeta23",
+      "path": "adapters/anthropic-math/zeta23/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimitiveCharacterZeroCountReadouts.lean",
+      "source_commit": "63ea24924f18f87132e153ef59fb02c0e9aa314b",
+      "source_blob": "98f0405c0218b9839a46bf664df20d9d1b31e36a",
+      "source_sha256": "f065bce8b7dc2abbf6c7a09e2c9f57368e173202b4c9c2d1f226505b89ee1cf7",
+      "declarations": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PrimitiveCharacterZeroCountReadouts.exists_uniform_weighted_zero_count_readout_bound",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PrimitiveCharacterZeroCountReadouts.exists_uniform_normalized_zero_count_readout_bounds"
+      ],
+      "upstream": [
+        {
+          "repository": "https://github.com/anthropics/formal-math",
+          "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+          "declaration": "Zeta23.ThmE.localCountChi_uniform_proof",
+          "path": "zeta23/Zeta23/ThmE/LocalCountChi.lean",
+          "git_blob": "603d34e2374063f482905e72c84e5666f23275ad",
+          "counting_declaration": "Zeta23.ThmE.NcountL",
+          "counting_path": "zeta23/Zeta23/ThmE/Statement.lean",
+          "counting_blob": "1aaec6accad36bad8fb204a4b974a58524d3bc98",
+          "Lean": "leanprover/lean4:v4.33.0-rc2",
+          "Mathlib": "51e6992efd06126df61a496bebf8f49482a4e129",
+          "explicit_mathlib_norm_import": "Mathlib.Analysis.Complex.Norm"
+        }
+      ],
+      "paper_or_source": {
+        "title": "More than two thirds of the zeta zeros are simple and on the critical line",
+        "authors": [
+          "Levent Alpöge",
+          "Ralph Furman"
+        ],
+        "arxiv": "2608.13637v2",
+        "version_date": "2026-08-19",
+        "first_submission": "2026-08-13",
+        "url": "https://arxiv.org/abs/2608.13637v2",
+        "mapping_scope": "Package companion identity from upstream README/formalization metadata and root primary-source recheck. Consumed theorem is the source-internal local Jensen-count method, not a headline proportion theorem."
+      },
+      "upstream_authorship_license": {
+        "formalization_author_metadata": "Claude",
+        "copyright": "2026 Anthropic, PBC",
+        "license": "Apache-2.0",
+        "notice": "adapters/anthropic-math/zeta23/UPSTREAM-NOTICE retains modified PNT+ vendor provenance and Mathlib/dependency notices. No vendor source changed."
+      },
+      "hypotheses": "One A>=1 precedes every modulus q [NeZero q], q>1, every index Typeu and finite family S of selected primitive Dirichlet characters at that common q, every real t and complex coefficient row K. Primitivity is needed only on S; q need not be prime.",
+      "conclusion": {
+        "raw": "norm(sum_{i in S} K_i * (NcountL chi_i t (t+1) : Complex)) <= A * log(q*(abs(t)+3)) * sum_{i in S} norm(K_i)",
+        "normalized": "log(q*(abs(t)+3)) is positive, and sum norm(K_i)<=1 implies norm(raw readout / log(q*(abs(t)+3)))<=A, with same A as raw bound.",
+        "counting_scope": "Nontrivial L(s,chi) zeros in 0<Re(s)<1, t<Im(s)<=t+1; multiplicities are analyticOrderAt.toNat through NcountL. t is any real, including negative. A window meeting zero also includes real nontrivial zeros; no positive-ordinate or nonreality condition is added despite the official11M26 folder heading.",
+        "family_scope": "Common modulus q, primitive only on selected S; arbitrary finite index sets, repeated characters and empty S allowed.",
+        "actual_envelope": "c_i is actual complex-cast NcountL, E_i=A*log(q*(abs(t)+3)); source theorem supplies this envelope. No free count estimate is assumed."
+      },
+      "use": "Supply an actual arithmetic count envelope for the existing finite complex-response envelope consumer. Log positivity supports the normalized l1-unit-ball bound with the SAME absolute A.",
+      "consumer_paths": [
+        "GRWTSK/RealFunctions/InequalitiesInRealAnalysis/FiniteCorrelationEnvelope.lean"
+      ],
+      "root_consumer": {
+        "path": "GRWTSK/RealFunctions/InequalitiesInRealAnalysis/FiniteCorrelationEnvelope.lean",
+        "commit": "987c7df4f320a2b1ecf160101b331a997f2761f8",
+        "git_blob": "22ca10bfc35086f10c7d4cdd6946363a3af46c31",
+        "declaration": "GRWTSK.Analysis.Inequalities.FiniteCorrelationEnvelope.norm_weighted_sum_le_envelope",
+        "use": "Its exact finite triangle/norm-envelope argument is instantiated inline with the actual upstream count envelope; no root module import/version-port is claimed.",
+        "source_license": "MIT; grwtsk contributors"
+      },
+      "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+      "license": "Apache-2.0; Anthropic/Claude attribution and modified PNT+ vendor notices preserved; root envelope method retains local MIT attribution",
+      "profile": "documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.profile.json",
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_independent_kernel_replay": "NOT_RUN",
+        "complete_transitive_axiom_audit": "NOT_RUN",
+        "expected_interface": "NOT_RUN",
+        "comparator": "NOT_RUN"
+      },
+      "missing_bridges": [
+        "No root dependency/import or cross-version port. Retains exact Lean4.33.0-rc2, not4.33.1.",
+        "No RH, critical-line fraction, Mertens cancellation, growing Liouville estimate or Liouville-to-Mobius transport.",
+        "No statement-fidelity Comparator run, source compilation, fresh independent replay or complete axiom acceptance.",
+        "Upstream source assertions and README audit claims are not fresh local verification receipts."
+      ],
+      "independent_checker": "UNSUPPLIED"
     }
   ],
   "excluded_or_restricted_endpoints": [

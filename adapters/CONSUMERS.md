@@ -33,3 +33,10 @@ in its finite submodule, retaining the strict 2*K^9 density bound and deriving i
 actual additive-energy inequality. This is an alternative structural route;
 see pfr/references.md. The earlier 30 source-declaration total now has three
 additional candidates; all native/kernel/axiom/type acceptance remains NOT_RUN.
+
+## Zero-count and E8 covering continuation
+
+Two primitive-character local zero-count readout candidates supply actual raw and
+normalized finite envelopes; three finite E8 covering candidates give exact
+small-radius external covering cost. All preserve explicit domains/constants and
+remain SOURCE_PROOF_CANDIDATE/NOT_RUN. Existing historical targets remain intact.

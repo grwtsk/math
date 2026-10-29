@@ -1334,6 +1334,105 @@ A fresh source/producer/policy registry is required after supported toolchain
 restoration, with existing owner/resource limits preserved. Local attribution:
 grwtsk contributors.
 
+<a id="e8-finite-covering-consumer-20261029"></a>
+
+## E8: exact external covering cost of a finite sample
+
+The consumed endpoint remains `E8_norm_lower_bound` in
+[SpherePacking/Basic/E8.lean](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/77cf0a0c104f2e31501eab04d88bbc068d61c169/SpherePacking/Basic/E8.lean),
+blob c369209e9ae2a7e358e2b312cd251bf9caf20cd2 at
+77cf0a0c104f2e31501eab04d88bbc068d61c169. Bhavik Mehta and Gareth Ma's 2025
+source byline and Apache-2.0 obligations remain intact, along with the existing
+Sphere Packing in Lean project authors/version entry. The optimal-density
+MainTheorem placeholder remains excluded. This is an elementary local metric
+covering consequence, not a new paper-to-theorem mapping.
+
+For a finite sample S of E8 points and NNReal epsilon with strict 2*epsilon<sqrt2,
+the external covering number of its exact WithLp2 Euclidean image equals S.card
+(as ENat). Thus every closed-ball cover C has at least S.card centers; C may be
+infinite and its centers need not lie in E8 or S. Empty S and epsilon=0 are
+included. Strictness is retained because the cover uses closed balls. There is
+no claim at the half-separation boundary, no lattice-density/volume asymptotic,
+and no algorithmic cost assertion.
+
+Source commit `63ea24924f18f87132e153ef59fb02c0e9aa314b`, `adapters/sphere-packing/GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8FiniteCoveringConsumers.lean`, blob `cd61fa5ac0d35d0642132d21b241012799dedfb6`. Declarations:
+
+- `GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.isSeparated_image_of_two_mul_radius_lt_sqrt_two`
+- `GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.externalCoveringNumber_eq_card_of_two_mul_radius_lt_sqrt_two`
+- `GRWTSK.ConvexAndDiscreteGeometry.GeneralConvexity.E8FiniteCoveringConsumers.card_le_encard_of_isCover`
+
+The actual local observation is Metric.IsCover/externalCoveringNumber in
+GRWTSK/GeneralTopology/CoveringNumbersPublic.lean, blob
+ac4085f88cc6ecc5c1d0a0146b17defb3bfb1d0f at cb51a1853f8736b1a32b2bb33b7adeb1f78168e2.
+The native Mathlib comparison first bounds image cardinality by packingNumber(2epsilon),
+then by externalCoveringNumber(epsilon); self-covering gives the reverse bound.
+WithLp.toLp2 injectivity proves exact finite-image cardinality. This uses Euclidean
+L2 distance, not the sup norm on functions. The arithmetic coefficient-fiber
+MassPacking source has a different observation; no geometric-to-arithmetic mass
+map is supplied.
+
+Exact native Lean4.35.0-rc4/Mathlib 1f414401f69059aa7eead47b53ee40bd38455eeb
+remain isolated, and the root 4.34.1 version comparison is unsupplied. Original
+E8SeparationConsumers source blob eb8fb5c074c24ffea08577deb37c14232b5430fd is unchanged.
+The target/profile/TOML is `documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.*`, with complete compiler-owned roots and
+three exact type consumers. Classification: SOURCE_PROOF_CANDIDATE. Compilation,
+fresh independent replay, complete axiom audit and type checks are NOT_RUN;
+source/API/profile cross-review is not acceptance. Local attribution: grwtsk contributors.
+
+<a id="anthropic-primitive-zero-readouts-20261029"></a>
+
+## Primitive-character local zero counts as actual finite response envelopes
+
+[Levent Alpöge and Ralph Furman, *More than two thirds of the zeta zeros are simple
+and on the critical line*](https://arxiv.org/abs/2608.13637v2), version 2 dated
+2026-08-19 (first submitted 2026-08-13), is the package's companion paper.
+The consumed endpoint here is specifically the source-internal local Jensen-count
+method `Zeta23.ThmE.localCountChi_uniform_proof`, not a headline proportion theorem.
+It lives in zeta23/Zeta23/ThmE/LocalCountChi.lean, blob
+603d34e2374063f482905e72c84e5666f23275ad, at anthropics/formal-math
+16a5ce41304fcdaea4e0be7c132e1c361dc26da5. The NcountL definition layer is
+Zeta23/ThmE/Statement.lean blob1aaec6accad36bad8fb204a4b974a58524d3bc98.
+Upstream metadata credits Claude; Anthropic 2026 copyright, Apache-2.0 and modified
+PNT+ vendor/Mathlib notices remain preserved. No new historical influence or
+paper-to-support-lemma equivalence is inferred from the title.
+
+The source supplies ONE A>=1 before every q [NeZero q], q>1, every index Typeu,
+finite family S and selected primitive characters chi_i, all at the common q,
+and every real t/complex coefficient row K. The derived readout bound is
+norm(sum_S K_i*NcountL(chi_i,t,t+1)) <= A*log(q*(abs(t)+3))*sum_S norm(K_i).
+The logarithm is proved positive (its argument is at least 6), and the SAME A
+bounds the normalized readout on the l1 unit ball. Repeated character labels
+and empty S are allowed; no primality of q or fixed-family constant is introduced.
+This is an actual bound, not a supplied free envelope and not cancellation/decay.
+
+NcountL counts zeros of the L-function in 0<Re(rho)<1, t<Im(rho)<=t+1, WITH
+multiplicity via analyticOrderAt.toNat. Every real t is retained. Negative
+ordinates and real nontrivial zeros in windows meeting 0 are not discarded;
+the folder heading imposes no nonreality hypothesis. Distinct/simple/critical-line
+counts are not substituted. Neither RH, a zero-proportion improvement, Mertens
+cancellation nor a growing-family Liouville estimate follows.
+
+Local source `adapters/anthropic-math/zeta23/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PrimitiveCharacterZeroCountReadouts.lean`, commit `63ea24924f18f87132e153ef59fb02c0e9aa314b`, blob `98f0405c0218b9839a46bf664df20d9d1b31e36a`. Declarations:
+
+- `GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PrimitiveCharacterZeroCountReadouts.exists_uniform_weighted_zero_count_readout_bound`
+- `GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PrimitiveCharacterZeroCountReadouts.exists_uniform_normalized_zero_count_readout_bounds`
+
+The actual local finite-response consumer is
+GRWTSK.Analysis.Inequalities.FiniteCorrelationEnvelope.norm_weighted_sum_le_envelope,
+source GRWTSK/RealFunctions/InequalitiesInRealAnalysis/FiniteCorrelationEnvelope.lean, blob 22ca10bfc35086f10c7d4cdd6946363a3af46c31 at
+987c7df4f320a2b1ecf160101b331a997f2761f8. The source count now supplies its actual envelope
+E_i=A*log(q*(abs(t)+3)); the finite norm argument is instantiated directly,
+without importing or duplicating a root model across versions. The root source
+retains local MIT attribution. A checked root-version integration remains separate.
+
+Native Lean 4.33.0-rc2 and Mathlib 51e6992efd06126df61a496bebf8f49482a4e129
+remain exact and isolated, with no 4.33.1 substitution. The target/profile/TOML is
+`documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.*`; two exact required compiler-owned roots/types retain the public
+A/q/Typeu/family order. Compilation, expected-interface elaboration, Comparator,
+fresh independent replay and full transitive axiom audit are NOT_RUN. A project-only
+admission scan and source/API cross-review are not native proof acceptance.
+Local attribution: grwtsk contributors.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 
