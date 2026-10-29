@@ -1,0 +1,1197 @@
+{
+  "schema": "grwtsk.subject-source-port/1",
+  "attribution": "grwtsk contributors",
+  "title": "Quantitative Superexponential Bounds for van der Waerden Numbers",
+  "upstream_byline": "OpenAI",
+  "version": "September 23, 2026",
+  "upstream_repository": "https://github.com/openai/math",
+  "upstream_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "paper_url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/paper.pdf",
+  "declaration_prefix_map": {
+    "OAI.": "GRWTSK.Combinatorics.ProgressionColoring."
+  },
+  "allowed_changes": [
+    "local attribution/source-pin comment",
+    "module import prefix",
+    "enclosing OAI namespace prefix",
+    "Model: import Mathlib -> import Mathlib.Order.Lattice.Nat"
+  ],
+  "hypotheses_and_proof_bodies": "UNCHANGED_UNDER_REVERSIBLE_NAMESPACE_AND_IMPORT_TRANSFORM",
+  "modules": [
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AdaptiveMesh",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AdaptiveMesh.lean",
+      "upstream_blob": "a2cdc6d5fbd0bdf2c342c1a25bba93eac2278807",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AdaptiveMesh",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AdaptiveMesh.lean",
+      "local_blob": "8e47f5a276645489c83a4453e6e100d10a186822",
+      "local_sha256": "94878a910f57a9b6e6c36e98aa50fbe485b80102594d69f23a09a27387ed5863",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AdaptiveMeshBreakpoints",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AdaptiveMeshBreakpoints.lean",
+      "upstream_blob": "28981122644e500859e578bb74c71ca62310b737",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AdaptiveMeshBreakpoints",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AdaptiveMeshBreakpoints.lean",
+      "local_blob": "265e366b91ce36e351e2fb2d3afbbaa16797dda2",
+      "local_sha256": "528e3da93b2bc899d008bff5b6afe4e327a2b4753b3d021918f6fb3bf3bb612f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AdaptiveMeshCounting",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AdaptiveMeshCounting.lean",
+      "upstream_blob": "cd4c06b34c24d7b11fd4b4e881086d3ede11a742",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AdaptiveMeshCounting",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AdaptiveMeshCounting.lean",
+      "local_blob": "a4a016f43e43de40114409d3ef908bc5666aaa9a",
+      "local_sha256": "36b8a3cd8c0aa538fad6cf424eb6a50b01fe5ab08236c50c3ff12b01c0bbb192",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AffineEntropy",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AffineEntropy.lean",
+      "upstream_blob": "5e9bfbf3b07687525d93a8f3d4d5b8493d7ef27f",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AffineEntropy",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AffineEntropy.lean",
+      "local_blob": "bfaefdb36079ec4817768f1c00c6960a854dd1c1",
+      "local_sha256": "6ff990a341a335009c976b82328a83ed4b48f8b0b85b7038fc7b3292e8375dc5",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AffineEntropyNat",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AffineEntropyNat.lean",
+      "upstream_blob": "a825219d8eb6a0c1686bdce676d52582984f5f8b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AffineEntropyNat",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AffineEntropyNat.lean",
+      "local_blob": "016bde50ae271e2f0238ce94464690a46f79e678",
+      "local_sha256": "9041a1a379398e79d2d0e66b87ab936eae6909fe9b3acd3c86b1802287e25489",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AnchoredPatternDefinitions",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AnchoredPatternDefinitions.lean",
+      "upstream_blob": "66c584976e45035082fcf1e99dd11160a4f402f3",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AnchoredPatternDefinitions",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AnchoredPatternDefinitions.lean",
+      "local_blob": "81c7369aec4801dc154fa99b033bc9ae1a472bed",
+      "local_sha256": "2197486d2324bcf602fee3f2f12875d70f4f9a2cd3b5b1e7b5bfc8fe2fcffe16",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.AnchoredPatterns",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/AnchoredPatterns.lean",
+      "upstream_blob": "3aed490213c7407ab588dc628b4e246521170442",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.AnchoredPatterns",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/AnchoredPatterns.lean",
+      "local_blob": "d6d4a2e052f9e09f8afbb2b83c943b5f8bb82624",
+      "local_sha256": "3057ac67993620e07e30d75cb5804372336982241b29d1e6616918ec33cb93b4",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Arrangement",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Arrangement.lean",
+      "upstream_blob": "4c3828dcdc820030c0c72322148e7a7fe8115c76",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Arrangement",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Arrangement.lean",
+      "local_blob": "58138a263d8e1d95f4034037b5e420124d98aeaa",
+      "local_sha256": "d85cf92a712788c070a6702f81633a0fffc8f9160548fc6fc59e76f699b6f07f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Asymptotics",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Asymptotics.lean",
+      "upstream_blob": "c75892432ea752835c3dddfbcfd19d9fd1ff4cfe",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Asymptotics",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Asymptotics.lean",
+      "local_blob": "cd4aae7e20966803632cfe88e5536861f32da01a",
+      "local_sha256": "10da8aba0c39d37f977ad5400b8e4b1bba33c393ba0311c206fcd3347d7e5a32",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Basic",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Basic.lean",
+      "upstream_blob": "e2352d8b4bc2fe3f93f13ee2774fdeacdde2b70e",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Basic",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Basic.lean",
+      "local_blob": "59b3cd8490863d173db91f9a6c993293f7daf560",
+      "local_sha256": "cc89e27d48888c6c60fdb866aaeccc5d39da22400c8b02eeed4765eac1402a21",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.BlockCoverage",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/BlockCoverage.lean",
+      "upstream_blob": "0e7bd33367fa36e305e64fbfe05848b879f26586",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.BlockCoverage",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/BlockCoverage.lean",
+      "local_blob": "6cf803dbe5e0f07882e60c3aea80a82c4d6c4354",
+      "local_sha256": "c929c9b5abe6eafbb6d109e96acf89335646d016ad6e9c0bff8ca49682987a9f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ClosestReturn",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ClosestReturn.lean",
+      "upstream_blob": "9fda0663af02fd46af3c997613591a8036b887c7",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ClosestReturn",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ClosestReturn.lean",
+      "local_blob": "3f8f289060a3d35b19e0170317953db81490af88",
+      "local_sha256": "3df5eb93fd0ada8e3d1999052d2c0091213fe83f18e1fd59e5c3053a8a33c53f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ClosestReturnEstimates",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ClosestReturnEstimates.lean",
+      "upstream_blob": "3ad9dec19297f5611025403b9affeb6e33bb8660",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ClosestReturnEstimates",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ClosestReturnEstimates.lean",
+      "local_blob": "f0a90556d7da08b36c1434a637282a2021a395a5",
+      "local_sha256": "886c46b27f6c7d4836ba0483411eacbff09bc160ab92edfe00030fef20b9604c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ComparisonOutputs",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ComparisonOutputs.lean",
+      "upstream_blob": "5b9bad3f2c13e8f3de47a542ad02c3dafd76c236",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ComparisonOutputs",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ComparisonOutputs.lean",
+      "local_blob": "853632dcf5d3d5ef696042920c4e10791f16d037",
+      "local_sha256": "f983db164b1bc743de56de6a1304f9b2f528ac5a504e0dfb417602596ae5d5d3",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionArithmetic",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionArithmetic.lean",
+      "upstream_blob": "2aca80dc3177975b0c6b52fdf7532c52f8d1d308",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionArithmetic",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionArithmetic.lean",
+      "local_blob": "3d61fbd421741084b450ea87d50806f9b8528884",
+      "local_sha256": "32590bf1db8c37a957f694bc8bf28eb225a818f8653ce294fd3228d271cdba8b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionDichotomyDenominator",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionDichotomyDenominator.lean",
+      "upstream_blob": "71e0317b27365698d1553ccb5ea14cbe30f55a8d",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionDichotomyDenominator",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionDichotomyDenominator.lean",
+      "local_blob": "f8a7898ec32e59fa6b75207056336c480c1d9753",
+      "local_sha256": "db377e5e6a0ba38de76f7f3c8c0ad0b8056902237189aab1fdeb1d0984b69bbc",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionDichotomyScales",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionDichotomyScales.lean",
+      "upstream_blob": "2dbef2574bed87c7e8b6362315b06c34b40fe6ea",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionDichotomyScales",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionDichotomyScales.lean",
+      "local_blob": "a066d916d65193dcac4e0a7bbfe001c09ee4a5d1",
+      "local_sha256": "bb3976c14c6d3932d5a2c28ef33c65e02575e918135ebf726877728caf2734b7",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionHeavyLabelReturn",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionHeavyLabelReturn.lean",
+      "upstream_blob": "52fc40012c0839b65325bba735a313a1a8cc0658",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionHeavyLabelReturn",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionHeavyLabelReturn.lean",
+      "local_blob": "5173885d160c1fee378e0f66938cd514e7d4e07e",
+      "local_sha256": "c01892ae0bf3b695dcfe30cec52929b59bc46eadeda7c24f80e7d690a4011b08",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionHeavyLight",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionHeavyLight.lean",
+      "upstream_blob": "f4a719d56f6baba60479f93ef452b05b0af560dd",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionHeavyLight",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionHeavyLight.lean",
+      "local_blob": "1ce29acdce2a591992fc236e49acd93f5edf27c9",
+      "local_sha256": "d6c41a80ba631c23bf1815a29b92dcdf25771f71fe8ffac106fc6ab224332113",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionModel",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionModel.lean",
+      "upstream_blob": "22ec3ff7c5ad7bbe906e88c894087fb43d9fa12f",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionModel",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionModel.lean",
+      "local_blob": "e7ecf029f8dd59ae5b8f8c75a5a700f7964bf4d5",
+      "local_sha256": "aa350015b4563afe707149957128aeb56e1205c19a8ab8970f4e1e3b3cf9bb39",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionModelBounds",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionModelBounds.lean",
+      "upstream_blob": "b62082a6368ba80c3f4e8df6531389ee4594a16d",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionModelBounds",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionModelBounds.lean",
+      "local_blob": "2faa9a1472db31adcbf02d22baa773ac992d705e",
+      "local_sha256": "fd6d93ebcafb527e5d6231bdff1313b43a6162f3e13fcc88bc153b999bba60b1",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionSignatureBudget",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionSignatureBudget.lean",
+      "upstream_blob": "6b069abcd0ae6fadfbeb6a2fdf4e55da210b9bd2",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionSignatureBudget",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionSignatureBudget.lean",
+      "local_blob": "8527da2538664bba309e40b1bffec0073e6375d6",
+      "local_sha256": "eeccfb5b90639cad8d9e2336a32f2353db0e73b1681f321ebd1121a5e4061051",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ConstructionWordFamily",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ConstructionWordFamily.lean",
+      "upstream_blob": "a71d2a2fd9105def96b0609010cfc301449b769a",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ConstructionWordFamily",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ConstructionWordFamily.lean",
+      "local_blob": "b4f6f3337f57efc16650872aec14052f8f883748",
+      "local_sha256": "e9785ff3a18e9d3afc8a7b50eac1777f075ddd9c2e359e21a8bdbbfa9bf3f85c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CoshBound",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CoshBound.lean",
+      "upstream_blob": "904e4bd42fd8e8fa8187eccbb684a23b75b49ba4",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CoshBound",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CoshBound.lean",
+      "local_blob": "05313f3a2e4ec760b2631eb6c714a63cc00aa8ad",
+      "local_sha256": "dbb441d1681c93407062c6d061a2e13bc25318b4949a5e1715011f857e5322f1",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicBasic",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicBasic.lean",
+      "upstream_blob": "66731fc577bf5019da75fa63c2f5dbf5faabe077",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicBasic",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicBasic.lean",
+      "local_blob": "7cc43d3148fb49a4a004445613d9027416a15e12",
+      "local_sha256": "21229cef4bfa54595d881a203234a4c6a661e3284ff64b072deef7edc3ac2f5b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicBlockLabels",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicBlockLabels.lean",
+      "upstream_blob": "fa6a5066caaaf0404a0dc3c429558b8190f3d2f4",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicBlockLabels",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicBlockLabels.lean",
+      "local_blob": "9aff139c00f76a934def27b92b1f889527db151b",
+      "local_sha256": "8459e3b39a893cfaf2192d8f37a0acd73334d3d0cb6e466911bdea23737c1bd6",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicColoring.lean",
+      "upstream_blob": "ab3c513d4ddaa155acf3d4c4a66bcba7dfc3f2bf",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicColoring.lean",
+      "local_blob": "5091866a5432be8cf5768ebf62f45b854e81900d",
+      "local_sha256": "c78463740df6a2729de6869be49c3ad6926efabe74123c54b482ab46c87d19f1",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicHeavyIntervalWidth",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicHeavyIntervalWidth.lean",
+      "upstream_blob": "c0b6dc1684dd5c3fca2d1e629fa3c3561595e563",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicHeavyIntervalWidth",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicHeavyIntervalWidth.lean",
+      "local_blob": "c69077786827deb0f186a63326e946cf2f66b15e",
+      "local_sha256": "f06190809b688f313c466374f17375160b6be92557d28e9ea8d7f6f9a8d7c8e8",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicModel",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicModel.lean",
+      "upstream_blob": "8dfc31982ba09fffe546ccdd7fc73c8ddf7afe73",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicModel",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicModel.lean",
+      "local_blob": "6d8c7a5c594f85d82bd0af12ee7c1d0e31c61503",
+      "local_sha256": "789d1bee91845e4ceb0cccf1a396692a94e3b3f23c87fa1606c41d7bf364c73d",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicRationalReturn",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicRationalReturn.lean",
+      "upstream_blob": "0d507587b9b18920e6a6599c2defa88d20e99890",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicRationalReturn",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicRationalReturn.lean",
+      "local_blob": "51f1db70e2a2507e4b0fa1f9986fd79c2f2cc2f5",
+      "local_sha256": "e9ccf1836a109053ce719358a406a7b05d3e7192bed43c70256858ef4e8e960f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicSignatures",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicSignatures.lean",
+      "upstream_blob": "2e08768f0d98013f52e9b1099242c179f0d865b2",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicSignatures",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicSignatures.lean",
+      "local_blob": "d38b35ed91b5322be707a651a87e696993981da3",
+      "local_sha256": "366e023a1a6a1931606bcdfd732b7bbe06bbe39d0c4f6f4135cfae20bf4325b2",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.CyclicWitness",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/CyclicWitness.lean",
+      "upstream_blob": "0691091f72a3c5c64c63d66add805d8c5c57d9f0",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.CyclicWitness",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/CyclicWitness.lean",
+      "local_blob": "b16728ccee234ca0990578de2a25807531bdddae",
+      "local_sha256": "ea01e13c6c7bc3ac5d69eebb2674089a4591d174d96421942b827ed2ff9a64d1",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Dichotomy",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Dichotomy.lean",
+      "upstream_blob": "dcec3e3028cfefa4e9f7931951c37c53f477ecf7",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Dichotomy",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Dichotomy.lean",
+      "local_blob": "a46095fa37728945532d5a1782cf84ccff662f56",
+      "local_sha256": "67c522b5d04224a8dcedfdffbf05d0ad49601a9ee819a878e7fa93a706016ad9",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.DigitProduct",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/DigitProduct.lean",
+      "upstream_blob": "e38baa981acae611c8cd2f31b7410132a6f12ecd",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.DigitProduct",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/DigitProduct.lean",
+      "local_blob": "beeb9318c877f80b144b52e7cf3a558971c99a36",
+      "local_sha256": "44b72f1eed9fd8042adac28ad9f35e432765d512ee80475d8db479f88d366ab4",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.DigitProductBounds",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/DigitProductBounds.lean",
+      "upstream_blob": "da60caf61554a2b0c8e61275a9dd0e145b3755ec",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.DigitProductBounds",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/DigitProductBounds.lean",
+      "local_blob": "4f8cc524c5f14f76731aa99d2d3343270a943588",
+      "local_sha256": "a406c29d6a4fbbc153a2c5d8c644c7bd203f3bd25a64732d1d5f7985e4ff04b7",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Dilation",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Dilation.lean",
+      "upstream_blob": "7d3a0713ca266ee69ef88a8d3ebf3c9270b2d06b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Dilation",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Dilation.lean",
+      "local_blob": "6d2a6557559474e9516f8f12b61030ab101596fc",
+      "local_sha256": "ca297f1c0b97a0b5b6a1368513746ccb948e9a3533eeac5b6630b5a6beaa9e7b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.EligibleOuterColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/EligibleOuterColoring.lean",
+      "upstream_blob": "bf9ef28a0c7fca996673657d5c28f871ed6dd58a",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.EligibleOuterColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/EligibleOuterColoring.lean",
+      "local_blob": "d0ec714ad982740a8cfc4b23ee9530db9ffffaf9",
+      "local_sha256": "0f2d04e7bcafd25be447f712e404a6519d7aceb8e49668288bfca0b9c9610ac4",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.EligiblePatternTests",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/EligiblePatternTests.lean",
+      "upstream_blob": "1c1aa1ecdc1fc61184b6fb7dfff210b5a5f0eeec",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.EligiblePatternTests",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/EligiblePatternTests.lean",
+      "local_blob": "747dde2fe97925560e179ba78bd8b61143cd31ad",
+      "local_sha256": "57dfef5b13239f62b60109f2429a0605402a6e02f8ad1aecaa856ccfae659205",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.EligibleRecordedSupport",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/EligibleRecordedSupport.lean",
+      "upstream_blob": "2712c28308b7f49a8cc7f7feff684452a2e35141",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.EligibleRecordedSupport",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/EligibleRecordedSupport.lean",
+      "local_blob": "8b33fcd5a129f9fa22de8a90594ea22b4ba1e4dd",
+      "local_sha256": "c9eafe84e1071aeb76d29276751ca22a38bde7990ddcfbfa54eed60ce486de74",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FairBitProbability",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FairBitProbability.lean",
+      "upstream_blob": "604e43bfbb7488ca5c01870d01ca65550e8adec5",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FairBitProbability",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FairBitProbability.lean",
+      "local_blob": "5125f49fe23409038281fe3fca463e9c54b69aaf",
+      "local_sha256": "51d36f5efdf2e6c9d541c01cdc2852c7fb50a69693f2a42967219af5a4f5c207",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FairBitTail",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FairBitTail.lean",
+      "upstream_blob": "58d3fdfa4b46bdf262c4707162ec4f6d7899fab2",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FairBitTail",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FairBitTail.lean",
+      "local_blob": "0572775c1ceb546fab9e0720a077f3d9df63f4ea",
+      "local_sha256": "c8854a81a2d713f04073a1c30213b0a10f320d69ccdfe0693f04e23fb1330598",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FairOuterColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FairOuterColoring.lean",
+      "upstream_blob": "61fec6e972b267b53c456cbb4b31ef95d5c4d644",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FairOuterColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FairOuterColoring.lean",
+      "local_blob": "8312dcbeb65f240b639db188d80919d786935df2",
+      "local_sha256": "abe53bd7b891bbe69499007d357fd3442995930d2517c33f54d409bb304d90f5",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FiniteGaps",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FiniteGaps.lean",
+      "upstream_blob": "e610a929647dd01bfffc57523b49ded095b60cbf",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FiniteGaps",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FiniteGaps.lean",
+      "local_blob": "00844689b9d7ed3c00cbc03e7c37c42d84bec7ae",
+      "local_sha256": "594e528d99d1b33aa85f30f7e7282b10fbf8dc27840de867a7f5b9822f82c479",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FiniteLocalLemma",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FiniteLocalLemma.lean",
+      "upstream_blob": "c29d767504582912877304e7e2cda220cfec991f",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FiniteLocalLemma",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FiniteLocalLemma.lean",
+      "local_blob": "08b9aa279c7ace04df1982c1bee749e008e75507",
+      "local_sha256": "5c9c59c3707f30925bc729d51c08d263c2b839a683d834e116a3561105efa200",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FiniteLocalLemmaMeasure",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FiniteLocalLemmaMeasure.lean",
+      "upstream_blob": "0a6f32bd54388f9da874b11722eb8d0bd42d8438",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FiniteLocalLemmaMeasure",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FiniteLocalLemmaMeasure.lean",
+      "local_blob": "ff9e5278f238c8f7c23f14b7a2fe3604bba0bbf1",
+      "local_sha256": "8b4060a97ecd224d3f67d53ec91a7420da47610961856c53af83113bd43fa788",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.FiniteProbability",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/FiniteProbability.lean",
+      "upstream_blob": "5cceaffa8aabe8489e15f0de819318f99483b55a",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.FiniteProbability",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/FiniteProbability.lean",
+      "local_blob": "345dc2ea0b1e7035cdfc0762c7dc466ee667a4a9",
+      "local_sha256": "8dcc75f7049e3b28185b343c417dc278fa796f06e8a927a82ded34ae0cbe3c26",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.GenericAsymptotics",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/GenericAsymptotics.lean",
+      "upstream_blob": "6c800adc29b5c91506ad9643848a982b9c15a728",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.GenericAsymptotics",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/GenericAsymptotics.lean",
+      "local_blob": "6ab4a1e36252d959733fe46b70e6bdbdc304d867",
+      "local_sha256": "7d0473806872b5d96ffc994bc64fc754c5311e5146fc7e26df774c411c2daf74",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.GlobalLabelWords",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/GlobalLabelWords.lean",
+      "upstream_blob": "f01cd34130c4b20bedbc04a4204d6a844ab7b2c8",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.GlobalLabelWords",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/GlobalLabelWords.lean",
+      "local_blob": "cef9e50c53b477d3f2a80733c67a7a02564c9959",
+      "local_sha256": "c2cc8756b495ada76e9337c0426f1b8317e19287ae486a2fdc7e8a399324c2c3",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Growth",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Growth.lean",
+      "upstream_blob": "c0b3dacdd08113f5298469a20f04961a309d3916",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Growth",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Growth.lean",
+      "local_blob": "8bb9d3709f4beb48b84497e490691d974d89f315",
+      "local_sha256": "575cd408f271d1c8687728f057fd38cc58c1b14bdcad5e46eaf161ff83e18bb4",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.GrowthConsequences",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/GrowthConsequences.lean",
+      "upstream_blob": "bc71d12f8b5dcd92edfc552072cda4281a239864",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.GrowthConsequences",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/GrowthConsequences.lean",
+      "local_blob": "111cedc22af6ee6ff751e36e2340b8a0f09fe09f",
+      "local_sha256": "47cf994a8de32380b61fc82adb68d223e23f06e7e3b6123d506c8f8819012e86",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.GrowthRates",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/GrowthRates.lean",
+      "upstream_blob": "85b7e06acae183f19173ef80b9272fb16cfb0914",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.GrowthRates",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/GrowthRates.lean",
+      "local_blob": "7b7c7a78eb5f2176fe3dc9f8a51be6c2f2a69488",
+      "local_sha256": "163492255b8565c88109795928efb6064c33156b2d970c8a1ba41d3b33c7312c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.HeavyIntervalWidth",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/HeavyIntervalWidth.lean",
+      "upstream_blob": "0ae8e4a27052d2174eeba41c893e06cacffd5d4c",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.HeavyIntervalWidth",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/HeavyIntervalWidth.lean",
+      "local_blob": "51d61993ff46b270b396b7ddc2eb317e9fd75275",
+      "local_sha256": "e7bcbf135470a803b333f28f688bc24fd8483955ed47e7824862c52c409b91bc",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.HeavyLabelReturn",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/HeavyLabelReturn.lean",
+      "upstream_blob": "71d782410a1c30edd81233db2f4c5d89dccad09b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.HeavyLabelReturn",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/HeavyLabelReturn.lean",
+      "local_blob": "b7bc55955e03f6e516699a9b3d5157b71b3d9b8c",
+      "local_sha256": "cbe243a1bd9a070a8baa323e3d606ec9922ac593643d9647db56c6cb70b4e88d",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.HeavyReturnFinPath",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/HeavyReturnFinPath.lean",
+      "upstream_blob": "12dc5cd97a1200d9f2e4586f138f56fe9a2f6bc5",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.HeavyReturnFinPath",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/HeavyReturnFinPath.lean",
+      "local_blob": "56e59fd65841e21e12a4d8d26a7530fc3d9d1140",
+      "local_sha256": "24e3af55cce2d857a4fd656b7920e3c6cd68f12df28ed2d4ad109e3764571421",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.HeavyReturnSeparation",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/HeavyReturnSeparation.lean",
+      "upstream_blob": "5bcaed916039cf6138960b2e1205852d12a87552",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.HeavyReturnSeparation",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/HeavyReturnSeparation.lean",
+      "local_blob": "d47a14f57f4814642ebe16644f72ca02b6686d58",
+      "local_sha256": "706ad3bcece84a6d7d25a16bc8035dd02ca56646ec111a72481180391ee33705",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.HeavyReturnWidth",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/HeavyReturnWidth.lean",
+      "upstream_blob": "d5ed7723ed763218d42b94564dda4f739c3caa0d",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.HeavyReturnWidth",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/HeavyReturnWidth.lean",
+      "local_blob": "c0f6341d0778be1b6090a82babda363c0cd62cfa",
+      "local_sha256": "cd5715e9a2eac23f64aeb7a6c98aae754d19c71375a90d0a6bfcdd83378e8476",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.KeyMultiplicity",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/KeyMultiplicity.lean",
+      "upstream_blob": "81f402b1d228670758007cc44732edc784f3929d",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.KeyMultiplicity",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/KeyMultiplicity.lean",
+      "local_blob": "b794a448ff14a88d47101fa7f5e783b071ae93f3",
+      "local_sha256": "453d5a541d8fbc380762c503c5b2c7dde29e2bcc7b54cac34eeeb06ea1938c29",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LabelCounts",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LabelCounts.lean",
+      "upstream_blob": "28bfd7d724932754449550169ecbf88bcc314039",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LabelCounts",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LabelCounts.lean",
+      "local_blob": "0d992fc2ff79e929dbf9430ec420b24831094ef8",
+      "local_sha256": "c470476e7e042b2e973e0034a21fa8c56f0ed25a9089903e9d76e7e8cf022731",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LabelFiber",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LabelFiber.lean",
+      "upstream_blob": "961d20cbe19e61be71f6d711adb64399142fa6cc",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LabelFiber",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LabelFiber.lean",
+      "local_blob": "fb338753936dfc979fc5f44b4662162dc2e46f2e",
+      "local_sha256": "bde4ff915b1175cade20170c324c5bed7b58d3c1b8005c1dd697a48c31447071",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LabelIncidences",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LabelIncidences.lean",
+      "upstream_blob": "7473c61073aa983636fff7fc9d0ad6e4be5a36b9",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LabelIncidences",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LabelIncidences.lean",
+      "local_blob": "dc07386255ebb3e33a1258e3d42019ba3421718a",
+      "local_sha256": "9661d23673266bba10163f7b0b70dfb297bd35216d3773e7898ceb295d181ffa",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LargeColor",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LargeColor.lean",
+      "upstream_blob": "643b5e67ec35684cb932026142768a349994e857",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LargeColor",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LargeColor.lean",
+      "local_blob": "b4e86a6e4552a479428d7750280c070e8da1a614",
+      "local_sha256": "10d957b653b921b36172ebf68e2aa047a772de17f698503f5dfb9ac95aa90ffe",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LargeColorConsequences",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LargeColorConsequences.lean",
+      "upstream_blob": "f0d84a7156951d48981b1dd93da2d9b60f6f4db5",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LargeColorConsequences",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LargeColorConsequences.lean",
+      "local_blob": "c7862acdbd5ff8b68fb8082647892a02cdccd807",
+      "local_sha256": "b022b1a5fc44987ff956c730e9babc86d30687cbd00a4b9e734335af39c07326",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LargeColorGrowth",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LargeColorGrowth.lean",
+      "upstream_blob": "1eda1ad414420601b6958e2344cecfcbb0a9ee55",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LargeColorGrowth",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LargeColorGrowth.lean",
+      "local_blob": "2972b917dbda3dcef956ac163fce90d7f083aef3",
+      "local_sha256": "63487fee8d0d6f4805ffb7f01a654a8d1fdf8df3382c29ec068fd2de6b25fd60",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LiteralLabelRectangles",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LiteralLabelRectangles.lean",
+      "upstream_blob": "d63f6a7e355e27d6988bd37d1f71dbdc9ddf9f70",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LiteralLabelRectangles",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LiteralLabelRectangles.lean",
+      "local_blob": "ae71fa0a658d454e7b23ecd56b1c8c296326ea30",
+      "local_sha256": "a8cf0f494bad09cf788d32badb9f2f8a20ba0165b1faa8a97d69b4450aa2346b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LocalTail",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LocalTail.lean",
+      "upstream_blob": "08b889aeeca471c20ea764f0fa036bdc61552115",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LocalTail",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LocalTail.lean",
+      "local_blob": "5f5fae9c2a2ade400beb032081cadac4826857e2",
+      "local_sha256": "a50a4a736736b45c9060ab21ea7effe5d11a12a7a0c55dbacd9367ca022246d0",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LongPeriodBlocks",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LongPeriodBlocks.lean",
+      "upstream_blob": "b4b0104052a46f2c1d2ca20d4ca40f00839e121e",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LongPeriodBlocks",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LongPeriodBlocks.lean",
+      "local_blob": "1c9ac83a9101b45c887bdc0861dcb51a5c4fdbf5",
+      "local_sha256": "a562b4212cc8935e028b7b9c3030a68f5a83313165c55c83349efc5f5c3fd7c0",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LongPeriodColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LongPeriodColoring.lean",
+      "upstream_blob": "6e9a292d5e6a86aa17ca77ba57adc95c0b6c21fc",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LongPeriodColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LongPeriodColoring.lean",
+      "local_blob": "bf364708282f1b78a2e35daf7b4805cea80ab808",
+      "local_sha256": "6c9d480a681dfa18bed6c1075bae0a8659c1101692529a6bb4005fc92f9d26ce",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LongPeriodEligibility",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LongPeriodEligibility.lean",
+      "upstream_blob": "ad687f26529f1c06cb96b6179aad9dd0f1257050",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LongPeriodEligibility",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LongPeriodEligibility.lean",
+      "local_blob": "bea64728df0c7a546ff6f77f25f346900291fc41",
+      "local_sha256": "c7b86408ebcbef66ec28e5fb396bd8f6c84ff6ecee3f38a3514bd0e1561f2166",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LongPeriodRegularGrid",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LongPeriodRegularGrid.lean",
+      "upstream_blob": "5f4326f5e98e2e5623df20709fcf526983fcc5c3",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LongPeriodRegularGrid",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LongPeriodRegularGrid.lean",
+      "local_blob": "72d258a02d041a8ad50e6b4b195c7f85d85291ca",
+      "local_sha256": "82f46b0463f6451855cd616f08ba68e43075cb8c58ab00dae25cec759a2195db",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.LongPeriodRegularity",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/LongPeriodRegularity.lean",
+      "upstream_blob": "49d80e7d93071323f724072c47c87396147009c4",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.LongPeriodRegularity",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/LongPeriodRegularity.lean",
+      "local_blob": "4fbe1853a5933c94aec120a6dfe9484b603f41d8",
+      "local_sha256": "98592fbe731c9cf4f367d11c4248c0c5aaf86b2e53f14a7dd8421e955e1ec6b1",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Main",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Main.lean",
+      "upstream_blob": "d8ca9d7ce4f064bf9573aefb9e1e136063d2d991",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Main",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Main.lean",
+      "local_blob": "4f9f8cbfce462eccc115fcc681cb299d01622884",
+      "local_sha256": "84617984040cfe2d6732be75a03a1a9ca2820f0d1d347251d301a7f743c758f8",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.MeshPartitions",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/MeshPartitions.lean",
+      "upstream_blob": "ba96fb8c780cc91c45b5cf5d8206f1f2a4766472",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.MeshPartitions",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/MeshPartitions.lean",
+      "local_blob": "d6f831e5ee6ec0ba8592a1e171e9027c8f650282",
+      "local_sha256": "4a697ceada67c4b3e3fc113e6b8124f47ea32b0993bd92f71ed12b52901b7357",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Model",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Model.lean",
+      "upstream_blob": "996e314a8a8293eaaadba41fe40e8522152b8656",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Model",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Model.lean",
+      "local_blob": "53cc7299bc65568efff4313f6c3a7b2a7dde7e41",
+      "local_sha256": "4634322f2082cad5fc5e16c593767e7b25ff07384c4c55d1e527657bc25d66e3",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ModelGeometry",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ModelGeometry.lean",
+      "upstream_blob": "6a3ea03b8362b85baf1baabc06484563bcbbbe8d",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ModelGeometry",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ModelGeometry.lean",
+      "local_blob": "6d1b88a302a8fbc64c14fadf149d06f42d40dc17",
+      "local_sha256": "f008cbefaa4f1d0fb5cabaea8b4a39f3135626dc62d11276f1b9aeb19ce1cfdc",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.NormBands",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/NormBands.lean",
+      "upstream_blob": "8035af1b82eb29c3c8f56dd555c14bbce5b57d88",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.NormBands",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/NormBands.lean",
+      "local_blob": "23f0d9f9508490899ea40f4aa50545ac658b035b",
+      "local_sha256": "59894c99b50ab749fce37c82fca1dd6ea7e684ca4855a53b0c80c773eb875498",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterBalanced",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterBalanced.lean",
+      "upstream_blob": "9df0edd64f7c8ada2096f6de52a487f3ff32a60c",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterBalanced",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterBalanced.lean",
+      "local_blob": "129615d0a7528faa368249086959f1ba22783f46",
+      "local_sha256": "b832d8db8814cb9906c337dc621149eb1c251ed8f1d16cf88a24f36bbd2940ef",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterBudget",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterBudget.lean",
+      "upstream_blob": "b360623cc89ce9e84584e8b1c8bfda5a921b78a5",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterBudget",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterBudget.lean",
+      "local_blob": "a41baab0411656976e7dd56d4d44402337db303c",
+      "local_sha256": "7a98b775196cf086ae5e48d903abffa28d9a828824d5b2dcfd7dabe1d520a61f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterChoiceDefinitions",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterChoiceDefinitions.lean",
+      "upstream_blob": "bfa54175b455262899e0aea5c18b4b31c2481d97",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterChoiceDefinitions",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterChoiceDefinitions.lean",
+      "local_blob": "ee1d9a89b032bde71101d132d369e3dd061dc18f",
+      "local_sha256": "1d1972a1aba427c879b1c436a16d6175ee19f20c42a7bcd9e4ec1ef8367dee8c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterColoring.lean",
+      "upstream_blob": "e810aede11b57b0360c87afe79e155e071b530e1",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterColoring.lean",
+      "local_blob": "42934b89505e24de27b44d683896bf43c3b75d41",
+      "local_sha256": "d40dd4826620ac98eb3a1751202f281037599529ad3d92f0eafcc07f52de6059",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterDichotomy",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterDichotomy.lean",
+      "upstream_blob": "21ea71339dbbb66e7ba88dae22f27cba8080eeb5",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterDichotomy",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterDichotomy.lean",
+      "local_blob": "533e526871955cc16e46c3f725ba205cb1516677",
+      "local_sha256": "48583b15545f35717e6e63bd8064addf307f02bec4cd595fd3a62b4a02f7fe3a",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterFamilies",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterFamilies.lean",
+      "upstream_blob": "a69b629c77b1c2c79643daef88d4143e91bb990b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterFamilies",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterFamilies.lean",
+      "local_blob": "c426bb6c1b996359c799f1b4bf2548e93a57b9d7",
+      "local_sha256": "5a199970923d4f6e0a7f1ab59bbb5884483f7d3f7df82cc82bf72673d06dfb92",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterIncidence",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterIncidence.lean",
+      "upstream_blob": "e3701e14d8976c952c7569364eb09946d514414c",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterIncidence",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterIncidence.lean",
+      "local_blob": "fd618d1f69f47e2fa1a3b70c3b15b34f95040333",
+      "local_sha256": "08ce38cdb8bf0d7096ba00861c3ec4a7856238f3d24e31cfc133d4e903ff65b9",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterModelChoice",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterModelChoice.lean",
+      "upstream_blob": "23e9c4932ca2cf804419af2ca0bce2d2c49509dd",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterModelChoice",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterModelChoice.lean",
+      "local_blob": "fe0eeb907f6b55f7eb7f95bec79e93bcea2b7942",
+      "local_sha256": "28e187f92930ca437ddae546768623c9d8f8843e1f5274608390b878beee7817",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterPatternColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterPatternColoring.lean",
+      "upstream_blob": "b13593253c90359cd56de8200d1c42af5a9bd9a8",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterPatternColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterPatternColoring.lean",
+      "local_blob": "79327bfe9d54372500a76045d844da4385a5a141",
+      "local_sha256": "933176468b0cb58401b13cbdd9fc88c079bba90c60154f84e10ca35095917787",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterRowRealBound",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterRowRealBound.lean",
+      "upstream_blob": "495f5556d7ece78a36799ace84a6ef317ee7d71b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterRowRealBound",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterRowRealBound.lean",
+      "local_blob": "2e1f8a7ab30d56775bb0f2c22d99517f7dd198d0",
+      "local_sha256": "64a37476ee4f4ebc22903f3b610e2c7ecab8492d00eb2f00548672e77208f41c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterRows",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterRows.lean",
+      "upstream_blob": "6df2b55941e3e19bd8abe907c6524e611331120a",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterRows",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterRows.lean",
+      "local_blob": "84122e4902b20b1ded4cbff69650c657e03eafff",
+      "local_sha256": "bbdac4e2d7327a542770a518daf2b9ec10e1dd65eb71300877623b21390036d4",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterRowsMod",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterRowsMod.lean",
+      "upstream_blob": "44f4d974307177d5d22ba5085abe717bd15088d9",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterRowsMod",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterRowsMod.lean",
+      "local_blob": "9baa3ee51526001f5649744affc6ff592f6cf754",
+      "local_sha256": "1c6d22637a2e6398813e4de889f05d4b7ee11234f9bf00d4a445ae4610f751a3",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterTestColoring",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterTestColoring.lean",
+      "upstream_blob": "2a4a2e8475681bbbf06f0bbf741580e291450a0e",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterTestColoring",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterTestColoring.lean",
+      "local_blob": "36ed9efc1aeffaf2eacdf80400d400fdc5a159bc",
+      "local_sha256": "39fe73372316c85d141bbb837d3071452446815b234843781d6f0eba5bd044fc",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.OuterWordTests",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/OuterWordTests.lean",
+      "upstream_blob": "a064d861764d908e6e9d28d93ace15c66503b2f8",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.OuterWordTests",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/OuterWordTests.lean",
+      "local_blob": "f5cd4bccbbb37de50c762f6fcea92a96e7839c5c",
+      "local_sha256": "0cf2b641e13fe91b2fc580639654519ccf3d7b04dd9f9cb7b306c7555fcdf583",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Parameters",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Parameters.lean",
+      "upstream_blob": "b446c24a7733c5d29bfda19cc559df6376927b52",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Parameters",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Parameters.lean",
+      "local_blob": "e29df541e6229d21686deb486631b1fb19b86ddf",
+      "local_sha256": "e41e61c4a64e035dd3a3a85ed852d759bdc02b266c0d83af14c32552651461a2",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.Perturbation",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/Perturbation.lean",
+      "upstream_blob": "cc324068410b17f6899dac2a85366662f027b386",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Perturbation",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Perturbation.lean",
+      "local_blob": "910d591025de5b885e8e724bef7f7ab4f1d1952d",
+      "local_sha256": "6dc3c307c2ea5629d444be63615c5efad15fea386adb230ed27fbdc9ec494a7a",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.PerturbationScales",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/PerturbationScales.lean",
+      "upstream_blob": "bae8b3e22fe2d39b7facfc80c846111741cf55c3",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.PerturbationScales",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/PerturbationScales.lean",
+      "local_blob": "b04f08c3d019f0a95489076807eae2d258099314",
+      "local_sha256": "a01798483795fa243a98ac16e58ab09fc7074bc02301d2e67f17c9127fd294ea",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.PrimeScale",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/PrimeScale.lean",
+      "upstream_blob": "6df4fe479ee6247374c9f6b5bc366834518e2f5b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.PrimeScale",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/PrimeScale.lean",
+      "local_blob": "d39cfc3e1bfe6df0b2339b74185f52b00b22ab0c",
+      "local_sha256": "a2daf1fa63126df269fc0068aa927842d53f115c5de342eabb913616fbf834f2",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.PrimitiveVector",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/PrimitiveVector.lean",
+      "upstream_blob": "b63ae462ddbe083babf1cdbff7f494d8b798dcc1",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.PrimitiveVector",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/PrimitiveVector.lean",
+      "local_blob": "7d25a4b13f5fa003ed0a8754ecbb61953d265a46",
+      "local_sha256": "fb8aa429af4f62063d462cd45a213e2a0d35d872a9884fded11c6fc0edb9cd5c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ProbabilityScales",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ProbabilityScales.lean",
+      "upstream_blob": "87a6a68f7f0f99278d955c2035c79e5fb9f4d865",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ProbabilityScales",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ProbabilityScales.lean",
+      "local_blob": "4c754311780e44922444b6c947de32efd7416ea7",
+      "local_sha256": "e3b7d3dd2ac7b44ebdb8a48747d812477365c6af255febcec8ab99104c0c973b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.RationalGridCount",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/RationalGridCount.lean",
+      "upstream_blob": "dd3b54cf6a1a2d8e57a27c6f3ad8c750a0b4baaa",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.RationalGridCount",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/RationalGridCount.lean",
+      "local_blob": "b1cb39becdb45b6221f7e664eb8ab5de07362d2d",
+      "local_sha256": "b58afcefb96256e82e48a776f831390cfaadd91b7a87089ac1d79df9182bce9f",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.RationalGridMultiplicity",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/RationalGridMultiplicity.lean",
+      "upstream_blob": "968c16eaaeb4e856b5791e285b66db56e1a7b152",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.RationalGridMultiplicity",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/RationalGridMultiplicity.lean",
+      "local_blob": "fd883a0674890f2513b633dc3657e9527fcdd0a4",
+      "local_sha256": "585a75cd0f1530201c6b2a6ec6280e3ebcefe851ca2c51cd7e5c342f9a0710ef",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.RationalReturn",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/RationalReturn.lean",
+      "upstream_blob": "2b8c857427c2aa3bafb3b98a0c8d5c3d81ce4ff6",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.RationalReturn",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/RationalReturn.lean",
+      "local_blob": "fa8ccf69a53cd1b68af86bc3ec02ddc7313d5313",
+      "local_sha256": "d4e1884f6a4339311e352656d146e3e54ca6e2eb96ec204bba92d36f18618b96",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.RationalSeparation",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/RationalSeparation.lean",
+      "upstream_blob": "4692faef2b84fcb931201477f0b14d6b529f74c6",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.RationalSeparation",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/RationalSeparation.lean",
+      "local_blob": "c237e0d443092311ac1e3a6eb47267aac506f637",
+      "local_sha256": "4951b0b5eadf2dc916ffdb81cc14efaf9df6a2a25e90f777accfe17cb5906909",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.RecordedSupport",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/RecordedSupport.lean",
+      "upstream_blob": "64f2cebb13de78e556711803fc4cf5a1c0ecfee1",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.RecordedSupport",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/RecordedSupport.lean",
+      "local_blob": "9669a4b36fc4edb7a874b0574796360a1ab5f63e",
+      "local_sha256": "edf1e12771cf70376f92375906033aceb85a6a6eb9d6b21a68793f36c154f75d",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ResidueFiber",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ResidueFiber.lean",
+      "upstream_blob": "0a2899ccfe64d18a760ce7b06cc96d7a1df080d7",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ResidueFiber",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ResidueFiber.lean",
+      "local_blob": "6343f99f1e963fe3cdc7f52538c255c09ec2b9ff",
+      "local_sha256": "4df583cc30c4574a9560824e9feaddc13364471f0053fe55095c78c8a4e78072",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ScalarAdaptiveMesh",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ScalarAdaptiveMesh.lean",
+      "upstream_blob": "150ca90989999c6286069290e3eac7fb8edb079e",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ScalarAdaptiveMesh",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ScalarAdaptiveMesh.lean",
+      "local_blob": "578a5c5777e530558825092c5426c321e0603565",
+      "local_sha256": "f16a853668d566b28e43d996fed40729a8e0c64bee75a07ccc8e0b80d2e28811",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ScalarEntropy",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ScalarEntropy.lean",
+      "upstream_blob": "0aa7a364a956e57644472cf5ef688d541bccab52",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ScalarEntropy",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ScalarEntropy.lean",
+      "local_blob": "d7f28b68ffb0dcd63532f4aa704f278fd2edf0fc",
+      "local_sha256": "d34b380b73e4cc116eb4ec55f1bd8026dfa5543f0a00edea91d4ceab73e49f7b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ScalarMesh",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ScalarMesh.lean",
+      "upstream_blob": "553c4930e9ceba8ddcfa10d126a4d222a3d94dfd",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ScalarMesh",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ScalarMesh.lean",
+      "local_blob": "1bd9c15cd2ee97beef40ed8491c003c67ed8c566",
+      "local_sha256": "0bb0260691d6ec2673a4da444c6f6466e18bbbf2834f1dddc81ae90927cf6519",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ShortPeriodCut",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ShortPeriodCut.lean",
+      "upstream_blob": "5401eb28db476a3ebf5ad2b2bd0b13d4cf7e0cdd",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ShortPeriodCut",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ShortPeriodCut.lean",
+      "local_blob": "bc69460d20f5679ad3d3f42d79c7a76a54fd6db7",
+      "local_sha256": "1972f724e7593f6ff6827c7e86c89e75b58c834150104d65a375392518a70572",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ShortPeriodLift",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ShortPeriodLift.lean",
+      "upstream_blob": "65a1e2eae9f62b1a7cc6b1234062cb23b6a669ff",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ShortPeriodLift",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ShortPeriodLift.lean",
+      "local_blob": "6ba4a8dc8e02d2a13dfe2113fc2133ba64e0bfa5",
+      "local_sha256": "e524681f206b5019eff3993150b5b2cdc38da3b357d5376ead28c8ed902a6f13",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.ShortPeriodPath",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/ShortPeriodPath.lean",
+      "upstream_blob": "a690eed31e53196ab1691b11f89a925b5556326a",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.ShortPeriodPath",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/ShortPeriodPath.lean",
+      "local_blob": "a40d1b34e0c2a84bc9c137308d9fca0d6126d23b",
+      "local_sha256": "f78414a80359e6527548d7a85fb6b17b414b9e87ab175c0b2918bdd591013d0b",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.SignatureCounting",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/SignatureCounting.lean",
+      "upstream_blob": "1793d186e0330830011f580291e4865fa420f44f",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.SignatureCounting",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/SignatureCounting.lean",
+      "local_blob": "1a3dcad35fd8e3d00496f8303bbfaef3591e3957",
+      "local_sha256": "a2fdecc48bdec81f25b3e1ded8d857017ca5f0ee4a960f1ce26e9d78f12ddd55",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.SmallBoxAffinity",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/SmallBoxAffinity.lean",
+      "upstream_blob": "b73d385df4291cdedfe51d04aebcbc77d35214ef",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.SmallBoxAffinity",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/SmallBoxAffinity.lean",
+      "local_blob": "e1bba9a2d2f14db50a7d9c44aa544d065708888f",
+      "local_sha256": "41941d19ced6d17daa19d5c2a2d6880f4b7203a97578fd1042991cdf342a31ef",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.TernarySign",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/TernarySign.lean",
+      "upstream_blob": "d866ad8fefc95c41b08e3969c9e77f1fe7050d70",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.TernarySign",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/TernarySign.lean",
+      "local_blob": "cfb9b53f8dd2779fea8627867a63ca78a8665371",
+      "local_sha256": "9ac791f1db99f765761a581691cfad30a7c9cc97a1e4039b465e74a73ea5bac4",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.UniformBudget",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/UniformBudget.lean",
+      "upstream_blob": "ec469451122aaf722a770089bb7ee74023f0bf69",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.UniformBudget",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/UniformBudget.lean",
+      "local_blob": "128fd83e1defc3cf10a03c3247cfd922e1b9dad0",
+      "local_sha256": "10ea95a76b7e83524cd658816377d78765a674ada84f569022be9ea068fd042c",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.UniformMesh",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/UniformMesh.lean",
+      "upstream_blob": "475075fff69fe59387f0019fa214086a9cc85015",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.UniformMesh",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/UniformMesh.lean",
+      "local_blob": "621c754bee4a6ffa0d0a8be3b80416d0cb4d4692",
+      "local_sha256": "a8fa89850e9e679dbf96986bd74077a9f5c9d36081d5da5048b0b9ce93f10f91",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.UniformTransfer",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/UniformTransfer.lean",
+      "upstream_blob": "674b873159f92b1ed385f68ed4dccbc60b1d57cd",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.UniformTransfer",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/UniformTransfer.lean",
+      "local_blob": "139ef4721fee1d0c659cecf4a33bb6865471bf1c",
+      "local_sha256": "07884c0666ab386a7267cf29a35481e79194d11062f17d3fa0ed4df41c20eea8",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.UpperBound",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/UpperBound.lean",
+      "upstream_blob": "98faed8ae2b3154b57e34b708ae4a72eb92dd51b",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.UpperBound",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/UpperBound.lean",
+      "local_blob": "8ca8d0745ae297366513a9b6f3cf85b0ee8a59f0",
+      "local_sha256": "6c82a62afa5e6bbfa04809237859d05280e7ef9d677d122da9566f2aab156e17",
+      "proof_body_inverse_transform": "EXACT"
+    },
+    {
+      "upstream_module": "OAI.Combinatorics.ProgressionColoring.WordDichotomy",
+      "upstream_path": "lean/OAI/Combinatorics/ProgressionColoring/WordDichotomy.lean",
+      "upstream_blob": "caff330c39b746b18f389768b280c5cc5339bf0a",
+      "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.WordDichotomy",
+      "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/WordDichotomy.lean",
+      "local_blob": "0d1e18714cf532e137c5ec67664d1e50481b5934",
+      "local_sha256": "6ddc09fb9d6ed80ef4baa33317e9f1bbfda43f9915b98cab9ef653b3cf450136",
+      "proof_body_inverse_transform": "EXACT"
+    }
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "exact_statement_consumer": "NOT_RUN"
+  },
+  "boundary": "Source proof candidates; reversible source mapping is not Lean elaboration or theorem acceptance.",
+  "module_import_prefix_map": {
+    "OAI.Combinatorics.ProgressionColoring.": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring."
+  },
+  "msc2020": {
+    "code": "05D10",
+    "heading_path": [
+      "Combinatorics",
+      "Extremal combinatorics",
+      "Ramsey theory"
+    ],
+    "source_namespace_independent_of_folder_taxonomy": true
+  },
+  "target": {
+    "module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.Erdos138",
+    "declaration": "GRWTSK.Combinatorics.OpenAIMath.Erdos138.erdos_138",
+    "path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/Erdos138.lean",
+    "blob": "d1457c9f89156ab4736a2784a2ca3bb0168043ef"
+  }
+}
