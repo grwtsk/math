@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Algebra.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction
+import GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.ZeroCoordinateObstruction
 import GRWTSK.Analysis.InnerProductSpace.CausalResponseGram
 import GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation
 import Mathlib.LinearAlgebra.Pi

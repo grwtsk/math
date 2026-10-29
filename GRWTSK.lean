@@ -325,7 +325,7 @@ import GRWTSK.Analysis.RealAnalysis.Integration.FiniteUnitSumVariation
 import GRWTSK.Analysis.RealAnalysis.Integration.PositiveHalfLineCutoffBalance
 import GRWTSK.Analysis.SpecialFunctions.ExponentialFloorGap
 import GRWTSK.Analysis.SpecialFunctions.ExponentialPolynomialDomination
-import GRWTSK.Algebra.LinearAlgebra.BilinearForm.ZeroCoordinateObstruction
+import GRWTSK.Algebra.LinearAlgebra.BilinearAndQuadraticForms.ZeroCoordinateObstruction
 import GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 import GRWTSK.Analysis.Inequalities.LogarithmicShiftKernelBounds
