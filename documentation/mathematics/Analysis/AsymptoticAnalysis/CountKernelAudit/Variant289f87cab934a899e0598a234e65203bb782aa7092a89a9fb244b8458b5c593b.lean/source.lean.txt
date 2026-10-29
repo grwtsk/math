@@ -1,0 +1,34 @@
+import scratch.common_mean_stieltjes_20261004.CountKernel
+
+#print CommonMeanStieltjes.PositiveOccurrence
+#print CommonMeanStieltjes.positiveOrdinate
+#print CommonMeanStieltjes.positiveClosedCountKernel
+
+#check CommonMeanStieltjes.PositiveOccurrence
+#print axioms CommonMeanStieltjes.PositiveOccurrence
+#check CommonMeanStieltjes.positiveOrdinate
+#print axioms CommonMeanStieltjes.positiveOrdinate
+#check CommonMeanStieltjes.positiveClosedCountSet
+#print axioms CommonMeanStieltjes.positiveClosedCountSet
+#check CommonMeanStieltjes.positiveClosedCountKernel
+#print axioms CommonMeanStieltjes.positiveClosedCountKernel
+#check CommonMeanStieltjes.positiveClosedWindowEquiv
+#print axioms CommonMeanStieltjes.positiveClosedWindowEquiv
+#check CommonMeanStieltjes.positive_closed_count_set_finite
+#print axioms CommonMeanStieltjes.positive_closed_count_set_finite
+#check CommonMeanStieltjes.positive_closed_count_kernel_hasFiniteSupport
+#print axioms CommonMeanStieltjes.positive_closed_count_kernel_hasFiniteSupport
+#check CommonMeanStieltjes.positive_closed_count_kernel_summable
+#print axioms CommonMeanStieltjes.positive_closed_count_kernel_summable
+#check CommonMeanStieltjes.positive_closed_count_kernel_tsum
+#print axioms CommonMeanStieltjes.positive_closed_count_kernel_tsum
+#check CommonMeanStieltjes.positiveStrictTailEquiv
+#print axioms CommonMeanStieltjes.positiveStrictTailEquiv
+#check CommonMeanStieltjes.positive_strict_tail_tsum_transport
+#print axioms CommonMeanStieltjes.positive_strict_tail_tsum_transport
+
+open Lean in
+run_meta do
+  let env ← getEnv
+  for name in env.header.moduleNames do
+    logInfo m!"CLOSURE_MODULE {name}"

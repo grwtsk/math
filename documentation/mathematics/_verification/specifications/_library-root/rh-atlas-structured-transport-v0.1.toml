@@ -1,0 +1,92 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-structured-transport-v0.1"
+owner_repository = "grwtsk/math"
+issue = 235
+parent_issue = 225
+parent_pull_request = 239
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-topology-as-holomorphy"
+description = "Topological equivalence and homotopy do not inhabit the independent DifferentiableOn field."
+
+[[hostile_controls]]
+id = "reject-homotopy-as-ring-map"
+description = "The algebraic transition must be an actual RingHom independent of the homotopy."
+
+[[hostile_controls]]
+id = "reject-empty-analytic-domain"
+description = "The holomorphic domain must have an explicit point."
+
+[[hostile_controls]]
+id = "reject-constant-analytic-map"
+description = "Two distinct domain points with distinct images are required."
+
+[[hostile_controls]]
+id = "reject-unnamed-homotopy-invariant"
+description = "The exact source and target predicates preserved at every homotopy parameter must be supplied."
+
+[[hostile_controls]]
+id = "reject-coordinate-outside-domain"
+description = "Every consumed source topological and ring coordinate must lie in the explicit analytic domain."
+
+[[hostile_controls]]
+id = "reject-forgotten-source-binding"
+description = "Both charts must match exact source/revision/normalization bindings and the bindings must be equal."
+
+[[hostile_controls]]
+id = "reject-missing-compatibility-square"
+description = "Topological, comparison and ring coordinates each require their own analytic commuting equation."
+
+[[hostile_controls]]
+id = "reject-height-by-notation"
+description = "Topological, comparison and ring realizations each require a separate common-root height equation."
+
+[[hostile_controls]]
+id = "reject-structured-edge-as-coordinate-equivalence"
+description = "Conversion to a vertical edge does not add coordinate-equivalence or terminal-equivalence tags."
+
+[[hostile_controls]]
+id = "reject-compatibility-as-proof-transport"
+description = "The final local proof implication is a separate theorem field and cannot be hidden inside a coordinate equation."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "construction of a concrete zeta-to-Weil structured transition",
+  "analytic continuation outside the declared domain",
+  "preservation of spectrum, multiplicity, trace, or complex structure by homotopy",
+  "promotion of a structured edge to coordinate equivalence",
+  "construction of the zeta noncommutative-height root",
+  "complete vertical path coverage by concrete charts",
+  "gap-free critical-strip atlas",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

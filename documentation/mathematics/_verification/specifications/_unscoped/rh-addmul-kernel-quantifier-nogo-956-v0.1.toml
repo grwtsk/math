@@ -1,0 +1,65 @@
+# Passive exact-source replay specification. NOT an execution or trust receipt.
+schema = "rh-addmul-kernel-quantifier-nogo-v0.1"
+repository = "grwtsk/math"
+issue = 956
+base_branch = "main"
+base_commit = "a3b0e1ee3890708162db7d4c7e228c1b22e66abf"
+base_tree = "5117abe32cdd8d90510950d11d320e9e479d3c3f"
+branch = "research/rh-addmul-kernel-quantifier-nogo-956-20261022"
+
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeKernelQuantifierNoGo.lean"
+source_blob = "9228ce106b578c3926b6689dde61d6dbb7c80e80"
+import_source = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeBridgeObstruction.lean"
+import_blob = "6530da3ccea612394f604b708e354c8ec7440e03"
+note = "docs/mathematics/NumberTheory/Moebius/additive-multiplicative-kernel-quantifier-nogo-956.md"
+note_blob = "c8099d79e98fc3a4926e151f2ddb2d32f393bd4e"
+
+evidence = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[checks]
+source_sha_required = true
+pinned_toolchain_required = true
+exact_type_validation = true
+transitive_import_closure_required = true
+kernel_acceptance_required = true
+axiom_inspection_required = true
+reject_sorry = true
+reject_unsafe = true
+independent_replay_required = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.additivePairKernelTransform_empty"
+classification = "finite_exact"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coefficientKernel_allPackets_forces_zero"
+classification = "exact_universal_quantifier_obstruction"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_additiveMultiplicativeCoefficientKernelExists"
+classification = "actual_coefficient_negative_witness"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.additiveMultiplicativeNormControlledKernelExists_zero"
+classification = "zero_kernel_hostile_control"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.additiveMultiplicativeKernelQuantifierObstruction"
+classification = "single_terminal_interface_diagnosis"
+
+[hostile_controls]
+cases = [
+  "P = empty forces every target coefficient to vanish",
+  "1 times 2 equals 2 and Mobius(1) times log 2 is strictly positive",
+  "zero kernel and C=0 satisfy forward energy norm predicate",
+  "no quantifier weakening or source support adaptation is inferred",
+  "no positive lower frame from forward Bessel control",
+  "no source-identified arithmetic T_j, D_j, residual bound or RH consequence"
+]

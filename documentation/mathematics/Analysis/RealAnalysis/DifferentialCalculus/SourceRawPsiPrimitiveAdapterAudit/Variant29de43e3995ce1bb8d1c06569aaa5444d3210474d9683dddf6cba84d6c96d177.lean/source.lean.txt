@@ -1,0 +1,53 @@
+import SourceRawPsiPrimitiveAdapter
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter
+
+#check signedAtomPrimitive
+#print signedAtomPrimitive
+#print axioms signedAtomPrimitive
+
+#check literalXiWeight
+#print literalXiWeight
+#print axioms literalXiWeight
+
+#check signedAtomPrimitive_hasDerivAt
+#print signedAtomPrimitive_hasDerivAt
+#print axioms signedAtomPrimitive_hasDerivAt
+
+#check literalXiWeight_continuousOn
+#print literalXiWeight_continuousOn
+#print axioms literalXiWeight_continuousOn
+
+#check signedAtomPrimitive_at_upper
+#print signedAtomPrimitive_at_upper
+#print axioms signedAtomPrimitive_at_upper
+
+#check raw_psi_weight_eq_closed_atoms
+#print raw_psi_weight_eq_closed_atoms
+#print axioms raw_psi_weight_eq_closed_atoms
+
+#check plainAtomAntiderivative
+#print plainAtomAntiderivative
+#print axioms plainAtomAntiderivative
+
+#check plainAtomAntiderivative_hasDerivAt
+#print plainAtomAntiderivative_hasDerivAt
+#print axioms plainAtomAntiderivative_hasDerivAt
+
+#check baselineAtomAntiderivative
+#print baselineAtomAntiderivative
+#print axioms baselineAtomAntiderivative
+
+#check baselineAtomAntiderivative_hasDerivAt
+#print baselineAtomAntiderivative_hasDerivAt
+#print axioms baselineAtomAntiderivative_hasDerivAt
+
+#check fullXiKernel_eq_atoms_and_baseline
+#print fullXiKernel_eq_atoms_and_baseline
+#print axioms fullXiKernel_eq_atoms_and_baseline
+
+#check shiftedPsiFullPrimitive_eq_actualFiniteSecondReadout
+#print shiftedPsiFullPrimitive_eq_actualFiniteSecondReadout
+#print axioms shiftedPsiFullPrimitive_eq_actualFiniteSecondReadout

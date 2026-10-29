@@ -1,0 +1,101 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TheoremsLookup.Variant188cb93909d47b3d2a34949d021c42640809ff76c73d0a8d16220ad9897430fd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `34c2bb99d1a2b3a72f0f2c91e96940c53621bc05` · SHA-256 `188cb93909d47b3d2a34949d021c42640809ff76c73d0a8d16220ad9897430fd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2026 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Wojciech Różowski
+-/
+
+module
+
+prelude
+public import Lean.Meta.Sym.Simp.Theorems
+import Lean.Meta.Match.MatchEqsExt
+import Lean.Meta.Eqns
+
+
+/-!
+# Cached Theorem Lookup
+
+Per-function cache of `Sym.Simp.Theorem` objects for equation theorems, unfold
+equations, and match equations. Avoids repeated `mkTheoremFromDecl` calls (which
+involve pattern extraction and discrimination tree insertion).
+-/
+
+namespace Lean.Meta.Sym.Simp
+
+def Theorems.insertMany (thms : Theorems) (toInsert : Array Theorem) : Theorems :=
+  Array.foldl Theorems.insert thms toInsert
+
+end Lean.Meta.Sym.Simp
+
+namespace Lean.Meta.Tactic.Cbv
+open Lean.Meta.Sym.Simp
+
+public structure CbvTheoremsLookupState where
+  eqnTheorems : PHashMap Name Theorems := {}
+  unfoldTheorems : PHashMap Name Theorem := {}
+  matchTheorems : PHashMap Name Theorems := {}
+  deriving Inhabited
+
+builtin_initialize cbvTheoremsLookup : EnvExtension CbvTheoremsLookupState ←
+  registerEnvExtension (pure {}) (asyncMode := .local)
+
+public def getEqnTheorems (fnName : Name) : MetaM Theorems := do
+  let env ← getEnv
+  let cache := cbvTheoremsLookup.getState env
+  if let some thms := cache.eqnTheorems.find? fnName then
+    return thms
+  else
+    -- Compute theorems from equation names
+    let some eqnNames ← getEqnsFor? fnName | return {}
+    let thms := Theorems.insertMany {} <| ← eqnNames.mapM mkTheoremFromDecl
+    -- Store in cache
+    modifyEnv fun env =>
+      cbvTheoremsLookup.modifyState env fun cache =>
+        { cache with eqnTheorems := cache.eqnTheorems.insert fnName thms }
+    return thms
+
+public def getUnfoldTheorem (fnName : Name) : MetaM (Option Theorem) := do
+  let env ← getEnv
+  let cache := cbvTheoremsLookup.getState env
+  if let some thm := cache.unfoldTheorems.find? fnName then
+    return some thm
+  else
+    let some unfoldEqn ← getUnfoldEqnFor? fnName (nonRec := true) | return none
+    let thm ← mkTheoremFromDecl unfoldEqn
+
+    modifyEnv fun env =>
+      cbvTheoremsLookup.modifyState env fun cache =>
+        { cache with unfoldTheorems := cache.unfoldTheorems.insert fnName thm }
+    return some thm
+
+public def getMatchTheorems (matcherName : Name) : MetaM Theorems := do
+  let env ← getEnv
+  let cache := cbvTheoremsLookup.getState env
+  if let some thms := cache.matchTheorems.find? matcherName then
+    return thms
+  else
+    let eqns ← Match.getEquationsFor matcherName
+    let thms := Theorems.insertMany {} <| ← eqns.eqnNames.mapM mkTheoremFromDecl
+
+    modifyEnv fun env =>
+      cbvTheoremsLookup.modifyState env fun cache =>
+        { cache with matchTheorems := cache.matchTheorems.insert matcherName thms }
+    return thms
+
+end Lean.Meta.Tactic.Cbv
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9d71f53db6951d6f3f0bbd57fa7d84c0f43d71e2219e58e2267a6114d7ed37be -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TheoremsLookup/Variant188cb93909d47b3d2a34949d021c42640809ff76c73d0a8d16220ad9897430fd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

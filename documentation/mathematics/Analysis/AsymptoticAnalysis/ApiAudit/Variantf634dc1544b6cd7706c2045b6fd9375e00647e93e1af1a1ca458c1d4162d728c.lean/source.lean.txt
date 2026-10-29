@@ -1,0 +1,43 @@
+import scratch.common_mean_stieltjes_20261004.CountOccurrences
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount
+import FormalResearch.RiemannHypothesis.Laplace.Continuation
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+
+#check CommonMeanStieltjes.positiveOccurrenceWindowEquiv
+#check CommonMeanStieltjes.positive_occurrence_window_finite
+#print axioms CommonMeanStieltjes.positive_occurrence_window_finite
+#check CommonMeanStieltjes.positive_occurrence_window_card_eq_count
+#print axioms CommonMeanStieltjes.positive_occurrence_window_card_eq_count
+#check Zeta23.zerosIn_finite
+#check Nat.card_sigma
+#check Fintype.card_sigma
+#check Finset.sum_set_coe
+#check finsum_mem_eq_toFinset_sum
+#check finsum_mem_eq_finite_toFinset_sum
+#check Summable.tsum_sigma
+#check Summable.subtype
+#check Summable.of_nonneg_of_le
+#check Summable.hasSum
+#check HasSum
+#check tsum_subtype
+#check tsum_fintype
+#check tsum_eq_sum
+#check MeasureTheory.lintegral_tsum
+#check MeasureTheory.integral_finsetSum
+#check MeasureTheory.integral_indicator
+#check intervalIntegral.integral_indicator
+#check MeasureTheory.intervalIntegral_tendsto_integral_Ioi
+#check integral_zpow
+#check integral_rpow
+#check integrableOn_Ioi_rpow_of_lt
+#check integral_Ioi_rpow_of_lt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount.zero_summability
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSummability.zeroBallPoints_finite
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSummability.zeroShell_finite
+#check FormalResearch.RiemannHypothesis.Laplace.Continuation.zeroOccurrence_countable
+#check Complex.norm_le_abs_re_add_abs_im
+#check Complex.abs_im_le_norm
+#check Real.rpow_neg
+#check Real.rpow_natCast
+#check one_div_le_one_div_of_le
+#check ENNReal.tsum_eq_iSup_sum

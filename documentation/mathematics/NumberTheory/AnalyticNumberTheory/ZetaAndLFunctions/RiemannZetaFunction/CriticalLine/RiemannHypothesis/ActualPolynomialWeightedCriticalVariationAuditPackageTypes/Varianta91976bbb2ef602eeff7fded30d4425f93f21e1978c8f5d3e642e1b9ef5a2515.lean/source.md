@@ -1,0 +1,33 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualPolynomialWeightedCriticalVariationAuditPackageTypes.Varianta91976bbb2ef602eeff7fded30d4425f93f21e1978c8f5d3e642e1b9ef5a2515
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d38fb80bf78e1465a89cc758679f9030ac077745` · SHA-256 `a91976bbb2ef602eeff7fded30d4425f93f21e1978c8f5d3e642e1b9ef5a2515`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualPolynomialWeightedCriticalVariation
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualCriticalPolynomialVariationLowerBudget
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualCriticalPolynomialVariationLowerBudget
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_ge_exponential
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_ge_exponential
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_ge_lowerBudget
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_ge_lowerBudget
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualCriticalPolynomialVariationLowerBudget_tendsto_atTop
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualCriticalPolynomialVariationLowerBudget_tendsto_atTop
+#check FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_not_eventually_bounded
+#print axioms FormalResearch.RiemannHypothesis.ActualPolynomialWeightedCriticalVariation.actualPolynomialWeightedCriticalVariation_not_eventually_bounded
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a3ee0ad40fada052fc3346884f9f32c8fa1317eaa239de858719c98ec26dcb3e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualPolynomialWeightedCriticalVariationAuditPackageTypes/Varianta91976bbb2ef602eeff7fded30d4425f93f21e1978c8f5d3e642e1b9ef5a2515.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

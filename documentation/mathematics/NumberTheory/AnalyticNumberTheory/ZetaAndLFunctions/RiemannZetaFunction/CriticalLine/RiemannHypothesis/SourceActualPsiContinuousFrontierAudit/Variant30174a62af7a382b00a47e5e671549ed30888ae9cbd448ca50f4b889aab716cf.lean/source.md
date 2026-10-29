@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPsiContinuousFrontierAudit.Variant30174a62af7a382b00a47e5e671549ed30888ae9cbd448ca50f4b889aab716cf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ef62402309f665bc15819b961fe0129d82f41f24` · SHA-256 `30174a62af7a382b00a47e5e671549ed30888ae9cbd448ca50f4b889aab716cf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiContinuousFrontier
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_zero_below_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_zero_below_one
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_at_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_at_one
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementary_derivative_integrable_positive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementary_derivative_integrable_positive
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.literal_L_sub_plain_eq_positive_Abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.literal_L_sub_plain_eq_positive_Abel
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousPairing
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousPairing
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_eq_psi_continuous_add_factorial
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_eq_psi_continuous_add_factorial
+#check FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_sub_psi_continuous_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_sub_psi_continuous_abs_le
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_zero_below_one
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementaryCumulative_at_one
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.complementary_derivative_integrable_positive
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.literal_L_sub_plain_eq_positive_Abel
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousPairing
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actualPsiContinuousDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_eq_psi_continuous_add_factorial
+#print FormalResearch.RiemannHypothesis.SourceActualPsiContinuousFrontier.actual_leading_full_complement_sub_psi_continuous_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ca938bf59bc91b5e14232b44d077150a91acc9e1eb34fe1611d2d4e4a71d5d47 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiContinuousFrontierAudit/Variant30174a62af7a382b00a47e5e671549ed30888ae9cbd448ca50f4b889aab716cf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

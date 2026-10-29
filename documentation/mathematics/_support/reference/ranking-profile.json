@@ -1,0 +1,32 @@
+{
+  "schema": "grwtsk.result-ranking-profile.v1",
+  "profile_id": "spectral-volume-radius3-v2",
+  "metric_id": "spectral_log_volume",
+  "radius": 3,
+  "tau": "1",
+  "edge_weights": {
+    "proof_reference": "1",
+    "statement_reference": "1",
+    "declaration_metadata_reference": "1"
+  },
+  "distance_decay": "1",
+  "upstream_policy": "include",
+  "normalization": "none",
+  "trust_policy": {
+    "id": "lean-standard-axioms-v1",
+    "permitted_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "eligible_verification_statuses": [
+    "kernel_verified"
+  ],
+  "top_k": 5,
+  "max_exact_vertices": 128,
+  "other_metrics": [],
+  "qualitative_rubrics": [],
+  "missing_data_policy": "unavailable_with_reason",
+  "tie_break": "persistent_result_id_ascending"
+}

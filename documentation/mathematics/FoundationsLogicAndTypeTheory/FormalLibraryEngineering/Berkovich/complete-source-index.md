@@ -1,0 +1,23 @@
+# Berkovich — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 0 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant78ec9fa5353bac9ed36955b2888c2a2331842d314d600b28931bddab5438b77c.lean](Variant78ec9fa5353bac9ed36955b2888c2a2331842d314d600b28931bddab5438b77c.lean/index.md) | module |
+| [Variant8a05b1781cb121ad66c5ae468a9f7ec7e86191f406d77ddefe4bc12025c3d5e6.lean](Variant8a05b1781cb121ad66c5ae468a9f7ec7e86191f406d77ddefe4bc12025c3d5e6.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c5589e02377e23cda7b8adab26a3086220149dbc4b6a946ccbbcd3e6190b34fe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

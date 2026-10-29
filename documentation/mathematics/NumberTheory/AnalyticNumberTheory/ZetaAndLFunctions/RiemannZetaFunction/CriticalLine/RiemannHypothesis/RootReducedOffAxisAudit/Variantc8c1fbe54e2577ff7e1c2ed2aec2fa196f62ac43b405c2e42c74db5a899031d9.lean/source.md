@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootReducedOffAxisAudit.Variantc8c1fbe54e2577ff7e1c2ed2aec2fa196f62ac43b405c2e42c74db5a899031d9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9c985c3f05c09b462a82e55a7489ae0559639433` · SHA-256 `c8c1fbe54e2577ff7e1c2ed2aec2fa196f62ac43b405c2e42c74db5a899031d9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceReducedOffAxisEstimateConsumer
+import SourceReducedOffAxisQuadraticSharp
+
+set_option autoImplicit false
+
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.reducedOffAxisAllowance
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.reducedOffAxisAllowance
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.reducedOffAxisResidualBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.reducedOffAxisResidualBudget
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.reducedOffAxisAllowance_le_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.reducedOffAxisAllowance_le_at_radius
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.residual_tail_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.residual_tail_of_reduced_offAxis_lower
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.all_real_lower_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.all_real_lower_of_reduced_offAxis_lower
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.estimate_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.estimate_of_reduced_offAxis_lower
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.leading_tail_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisEstimateConsumer.leading_tail_of_reduced_offAxis_lower
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.actualReducedZeroEnvelope_le_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.actualReducedZeroEnvelope_le_at_radius
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.quadratic_tail_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.quadratic_tail_of_reduced_offAxis_lower
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.all_real_sharp_lower_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.all_real_sharp_lower_of_reduced_offAxis_lower
+#check FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.estimate_sharp_of_reduced_offAxis_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceReducedOffAxisQuadraticSharp.estimate_sharp_of_reduced_offAxis_lower
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bcb4aacd9eb1e45e5572066273681f7256ad8e6bd18dcf2b795e50d525820132 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootReducedOffAxisAudit/Variantc8c1fbe54e2577ff7e1c2ed2aec2fa196f62ac43b405c2e42c74db5a899031d9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

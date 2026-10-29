@@ -1,0 +1,39 @@
+import SourcePeanoOneSidedMass
+
+set_option linter.hashCommand false
+set_option pp.all true
+set_option pp.maxSteps 10000000
+
+open FormalResearch.RiemannHypothesis.SourcePeanoPositiveWindow
+open FormalResearch.RiemannHypothesis.SourcePeanoOneSidedMass
+
+#check weightedCorrelation_deriv_formula
+#print axioms weightedCorrelation_deriv_formula
+#print weightedCorrelation_deriv_formula
+#check weightedCorrelation_second_deriv_formula
+#print axioms weightedCorrelation_second_deriv_formula
+#print weightedCorrelation_second_deriv_formula
+#check weightedCorrelation_second_deriv_window
+#print axioms weightedCorrelation_second_deriv_window
+#print weightedCorrelation_second_deriv_window
+#check criticalOneSidedMass
+#print axioms criticalOneSidedMass
+#print criticalOneSidedMass
+#check actualOneSidedPairing
+#print axioms actualOneSidedPairing
+#print actualOneSidedPairing
+#check actualOneSidedPairing_integrable
+#print axioms actualOneSidedPairing_integrable
+#print actualOneSidedPairing_integrable
+#check oneSided_window_pointwise
+#print axioms oneSided_window_pointwise
+#print oneSided_window_pointwise
+#check criticalOneSidedMass_window_integrable
+#print axioms criticalOneSidedMass_window_integrable
+#print criticalOneSidedMass_window_integrable
+#check actualOneSidedPairing_dominates_window
+#print axioms actualOneSidedPairing_dominates_window
+#print actualOneSidedPairing_dominates_window
+#check oneSided_spikes_transfer
+#print axioms oneSided_spikes_transfer
+#print oneSided_spikes_transfer

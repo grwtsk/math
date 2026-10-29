@@ -1,0 +1,68 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.Final.Varianteba9310b28b7760b51beb2535efbc3a3929cd4f746c913c8cb3e379a99a68055
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e493ec8de7a0a19d8ccd3a3d1843b1f38490535d` · SHA-256 `eba9310b28b7760b51beb2535efbc3a3929cd4f746c913c8cb3e379a99a68055`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Robin Carlier. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Robin Carlier
+-/
+import Mathlib.CategoryTheory.Join.Basic
+import Mathlib.CategoryTheory.Limits.Final
+import Mathlib.CategoryTheory.Limits.IsConnected
+
+/-!
+# (Co)Finality of the inclusions in joins of category
+
+This file records the fact that `inclLeft C D : C ⥤ C ⋆ D` is initial if `C` is connected.
+Dually, `inclRight : C ⥤ C ⋆ D` is final if `D` is connected.
+
+-/
+
+namespace CategoryTheory.Join
+
+variable (C D : Type*) [Category C] [Category D]
+
+/-- The category of `Join.inclLeft C D`-costructured arrows with target `right d` is equivalent to
+`C`. -/
+def costructuredArrowEquiv (d : D) : CostructuredArrow (inclLeft C D) (right d) ≌ C where
+  functor := CostructuredArrow.proj (inclLeft C D) (right d)
+  inverse :=
+    { obj c := .mk (edge c d)
+      map f := CostructuredArrow.homMk f }
+  unitIso := NatIso.ofComponents (fun _ ↦ CostructuredArrow.isoMk (Iso.refl _))
+  counitIso := NatIso.ofComponents (fun _ ↦ Iso.refl _)
+
+/-- The category of `Join.inclRight C D`-structured arrows with source `left c` is equivalent to
+`D`. -/
+def structuredArrowEquiv (c : C) : StructuredArrow (left c) (inclRight C D) ≌ D where
+  functor := StructuredArrow.proj (left c) (inclRight C D)
+  inverse :=
+    { obj d := .mk (edge c d)
+      map f := StructuredArrow.homMk f }
+  unitIso := NatIso.ofComponents (fun _ ↦ StructuredArrow.isoMk (Iso.refl _))
+  counitIso := NatIso.ofComponents (fun _ ↦ Iso.refl _)
+
+instance [IsConnected C] : (inclLeft C D).Initial where
+  out x := match x with
+    |.left _ => isConnected_of_isTerminal _ CostructuredArrow.mkIdTerminal
+    |.right d => isConnected_of_equivalent (costructuredArrowEquiv C D d).symm
+
+instance [IsConnected D] : (inclRight C D).Final where
+  out x := match x with
+    |.left c => isConnected_of_equivalent (structuredArrowEquiv C D c).symm
+    |.right _ => isConnected_of_isInitial _ (StructuredArrow.mkIdInitial (T := inclRight C D))
+
+end CategoryTheory.Join
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e5d4bc7c7c243935859b07e9d1d16ea89df6954990c09777524d35bd1d00b11b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Final/Varianteba9310b28b7760b51beb2535efbc3a3929cd4f746c913c8cb3e379a99a68055.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

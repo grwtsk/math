@@ -1,0 +1,44 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-moving-window-bilinear-603-v0.1"
+owner_repository = "grwtsk/math"
+issue = 603
+parent_issue = 600
+parent_pr = 601
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryMovingWindowBilinear"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryMovingWindowBilinear"
+
+[source_binding]
+stacked_parent_revision = "0cc661c2e11ab023c90b0e7bd58085c9ee36ef96"
+candidate_branch = "research/rh-boundary-603"
+theorem_source_commit = "b158f5d7dc176101c943388d0403bafe55e6db19"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryMovingWindowBilinear.lean"
+theorem_source_git_blob = "001c1cb8fa972790872015d81a274a6d7ca39ef2"
+
+[selected_increment]
+boundary_depths = "boundaryCoreDepths"
+common_drop = "boundaryTerminalDrop"
+correlation_packet = "boundaryCumulativeCorrelationPacket"
+boundary_left = "boundaryCoreDepth_left"
+terminal_factor = "harmonicTerminalCumulativeContribution_eq_boundary"
+packet_factor = "coreBoundarySignedPacket_eq_commonDrop"
+moving_window = "boundaryMovingWindowMertens"
+tail = "boundaryTailMertens"
+bilinear_packet = "boundaryMovingWindowBilinearPacket"
+finite_adapter = "BoundaryMovingWindowBilinearAdapter"
+conditional_bilinear_factor = "coreBoundarySignedPacket_eq_movingWindowBilinear"
+supplier = "SubpolynomialBoundaryMovingWindowBilinearPacket"
+proof_classification = "EXACT_COMMON_TERMINAL_FACTOR_WITH_FINITE_BILINEAR_ADAPTER_OPEN"
+next_obstruction = "construct the finite moving-window reindexing adapter"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+moving_window_adapter_constructed = false
+boundary_bilinear_estimate_proved = false
+riemann_hypothesis_proved = false

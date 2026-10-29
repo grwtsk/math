@@ -1,0 +1,68 @@
+# Complete source: GRWTSK.Analysis.BoundedContinuous.Variant93b47dc634795cdeb915236bca878c722723af409a4465498500f1c0402208c7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ecfd99f5375f2aa50a256783d9be32f14b36edbd` · SHA-256 `93b47dc634795cdeb915236bca878c722723af409a4465498500f1c0402208c7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Jakob Stiefel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jakob Stiefel
+-/
+import Mathlib.Algebra.Algebra.Subalgebra.Tower
+import Mathlib.Analysis.NormedSpace.OperatorNorm.NNNorm
+import Mathlib.Analysis.RCLike.Basic
+import Mathlib.Topology.ContinuousMap.Bounded.Star
+
+/-! # Results on bounded continuous functions with `RCLike` values -/
+
+open Filter Real RCLike BoundedContinuousFunction
+
+open scoped Topology
+
+variable (𝕜 E : Type*) [RCLike 𝕜] [PseudoEMetricSpace E]
+
+namespace RCLike
+
+/-- On a star subalgebra of bounded continuous functions, the operations "restrict scalars to ℝ"
+and "forget that a bounded continuous function is a bounded" commute. -/
+theorem restrict_toContinuousMap_eq_toContinuousMapStar_restrict
+    {A : StarSubalgebra 𝕜 (E →ᵇ 𝕜)} :
+    ((A.restrictScalars ℝ).comap
+    (AlgHom.compLeftContinuousBounded ℝ ofRealAm lipschitzWith_ofReal)).map (toContinuousMapₐ ℝ) =
+    ((A.map (toContinuousMapStarₐ 𝕜)).restrictScalars ℝ).comap
+    (ofRealAm.compLeftContinuous ℝ continuous_ofReal) := by
+  ext g
+  simp only [Subalgebra.mem_map, Subalgebra.mem_comap, Subalgebra.mem_restrictScalars,
+    StarSubalgebra.mem_toSubalgebra, toContinuousMapₐ_apply, StarSubalgebra.mem_map]
+  constructor
+  · intro ⟨x, hxA, hxg⟩
+    use (@ofRealAm 𝕜 _).compLeftContinuousBounded ℝ lipschitzWith_ofReal x, hxA
+    ext a
+    simp only [toContinuousMapStarₐ_apply_apply, AlgHom.compLeftContinuousBounded_apply_apply,
+      ofRealAm_coe, AlgHom.compLeftContinuous_apply_apply, algebraMap.coe_inj]
+    exact DFunLike.congr_fun hxg a
+  · intro ⟨x, hxA, hxg⟩
+    have hg_apply (a : E) := DFunLike.congr_fun hxg a
+    simp only [toContinuousMapStarₐ_apply_apply, AlgHom.compLeftContinuous_apply_apply,
+      ofRealAm_coe] at hg_apply
+    have h_comp_eq : (@ofRealAm 𝕜 _).compLeftContinuousBounded ℝ lipschitzWith_ofReal
+        (x.comp reCLM (@reCLM 𝕜 _).lipschitz) = x := by
+      ext a
+      simp [hg_apply]
+    use x.comp reCLM (@reCLM 𝕜 _).lipschitz
+    refine ⟨by rwa [h_comp_eq], ?_⟩
+    ext a
+    simp [hg_apply]
+
+end RCLike
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d9d5bfef109ab9c41e3eab44a507885caea9e05ac42dbdae245177d1c8b6c6d1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/BoundedContinuous/Variant93b47dc634795cdeb915236bca878c722723af409a4465498500f1c0402208c7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

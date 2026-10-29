@@ -1,0 +1,18 @@
+import SourceRestrictedMixedPairing
+
+open FormalResearch.RiemannHypothesis.SourceRestrictedMixedPairing
+
+#check restrictedSourcePairing
+#check restrictedDerivativePairing
+#check restrictedMixedSourceForm
+#check restricted_products_integrable
+#check restrictedSourcePairing_abs_le_one
+#check restrictedDerivativePairing_abs_le_energy
+#check restrictedDerivativePairing_abs_le_coefficient
+#check restrictedMixedSourceForm_abs_le_coefficient
+#check restrictedMixedSourceForm_abs_mul_le_coefficient
+#check restrictedMixedSourceForm_empty
+#check restrictedMixedSourceForm_univ
+#check restrictedMixedSourceForm_univ_same_shift
+#check source_sectors_zero_after_spatial_edge
+#check nonzero_left_spatial_atom_implies_time_lt

@@ -1,0 +1,19 @@
+import SourceSquarefreeLedger
+set_option linter.hashCommand false
+#check RH16SquarefreeLedger.squarefreeLedgerCost
+#print axioms RH16SquarefreeLedger.squarefreeLedgerCost
+#check RH16SquarefreeLedger.actual_ledger_error_tail_squarefree
+#print axioms RH16SquarefreeLedger.actual_ledger_error_tail_squarefree
+#check RH16SquarefreeLedger.squarefreeResidualBudget
+#print axioms RH16SquarefreeLedger.squarefreeResidualBudget
+#check RH16SquarefreeLedger.squarefreeResidualBudget_nonneg
+#print axioms RH16SquarefreeLedger.squarefreeResidualBudget_nonneg
+#check RH16SquarefreeLedger.residual_tail_of_readout_squarefree
+#print axioms RH16SquarefreeLedger.residual_tail_of_readout_squarefree
+#check RH16SquarefreeLedger.estimate_of_readout_squarefree
+#print axioms RH16SquarefreeLedger.estimate_of_readout_squarefree
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

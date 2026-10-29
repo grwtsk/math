@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ActualStrictRightKernelNegativeSequenceAudit.Variant9e08345c82a82c83b0670f87287b7191f5a29cc4beeb2dc3d5a0aa8eab55a92d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d4a47867281c72212b741b723f660778006fcf39` · SHA-256 `9e08345c82a82c83b0670f87287b7191f5a29cc4beeb2dc3d5a0aa8eab55a92d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualStrictRightKernelNegativeSequence
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMode
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMode
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMode
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMellin_re
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMellin_re
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightMellin_re
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_eq
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_eq
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_eq
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_square_re
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_square_re
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightCoefficient_square_re
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightSequence_phase
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightSequence_phase
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightSequence_phase
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_scaled_real_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_scaled_real_tendsto
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_scaled_real_tendsto
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_eventually_negative
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_eventually_negative
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_eventually_negative
+#check FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_negative_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_negative_beyond
+#print FormalResearch.RiemannHypothesis.ActualStrictRightKernelNegativeSequence.actualStrictRightKernel_negative_beyond
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1b0200a9a0fc74f9f2d142b8c8affe8ff196aa963dcb07ac4d78df0d28a2237a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualStrictRightKernelNegativeSequenceAudit/Variant9e08345c82a82c83b0670f87287b7191f5a29cc4beeb2dc3d5a0aa8eab55a92d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

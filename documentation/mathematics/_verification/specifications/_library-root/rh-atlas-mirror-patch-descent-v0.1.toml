@@ -1,0 +1,126 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-mirror-patch-descent-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[hostile_controls]]
+id = "finite-locations-not-certified-divisor"
+description = "Replay windowZeroLocations_finite, exists_completeWindowLocationList and windowRH_iff_complete_list. Classical existence of a Finset is not an executable enumeration, analytic multiplicity certificate, or an accepted total count. The completeness equality must stay in the bounded-list theorem type."
+
+[[hostile_controls]]
+id = "mirror-reduction-not-zero-projection"
+description = "Replay the two root-height mirror equations and shellRH_iff_upperRight_exclusion using the actual NontrivialZetaZero conjugation and critical-reflection theorems. Critical-line fixed points are permitted; no off-line zero is projected or identified by height."
+
+[[hostile_controls]]
+id = "near-line-and-pole-boundaries"
+description = "rightAwayShell must retain both reciprocal margins and the exact strict/lax shell endpoints. right_exclusion_iff_all_away uses the proved open critical strip and quantifies over every m. A fixed m or finite list of margins does not suffice. All patch targets have Re z < 1."
+
+[[hostile_controls]]
+id = "strict-sample-variation-margin"
+description = "SampleVariationPatch must carry sample_lower, uniform variation over its full region, error_nonneg and strict_margin for the SAME exact function. value_norm_lower and nonzero must be proved; the F(z)=z, center=1, error=lower=1 fixture rejects the non-strict substitute."
+
+[[hostile_controls]]
+id = "actual-zeta-analytic-seed"
+description = "exists_zeta_patch_at_zero must be derived from pinned differentiableAt_riemannZeta and riemannZeta_zero, with lower 1/2 and error 1/4. The existential radius is not a computed enclosure or a proof of WindowRH 0."
+
+[[hostile_controls]]
+id = "patch-source-transport"
+description = "SampleVariationPatch.congr requires pointwise equality of both functions on the entire consumed region AND at the sample center. Similar polynomials, printed labels, or unequal sources do not compose."
+
+[[hostile_controls]]
+id = "finite-cover-coverage"
+description = "FiniteVariationCover must retain coverage of every target point. count_pos_of_nonempty excludes zero patches on a nonempty target; finite point sampling is not this coverage theorem."
+
+[[hostile_controls]]
+id = "conditional-shell-and-rh-endpoints"
+description = "shellRH_of_patch_covers requires a complete family for every m. window_succ_of_patch_covers also requires the preceding WindowRH proof. rh_of_base_and_patch_covers requires the full WindowRH 0 and all N,m patch covers; no such global family is supplied."
+
+[[hostile_controls]]
+id = "no-old-or-root-only-replay"
+description = "Replay all required modules, including the isolated new source and fixture modules and inherited stack repairs, at one exact commit/tree/lock. A previous target or root-only build does not cover this increment."
+
+[[hostile_controls]]
+id = "axiom-and-check-availability"
+description = "Reject sorryAx and unreported native dependencies, audit exact theorem types and transitive dependencies, distinguish unperformed tests from passes, and retain every conditional premise. Static finite checks are not Lean elaboration."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "an effective numeric radius for the zero-free seed at zero",
+  "a proof of the full real-axis WindowRH 0",
+  "a constructed zero-free patch cover for every N and m",
+  "certified executable enumeration, multiplicities, or total count of zeta zeros",
+  "a complete analytic zero-divisor or uniform tail estimate",
+  "identification of a matrix parameter embedding with a zeta spectral realization",
+  "a complete coordinate, ring, holomorphic, or Weil atlas bridge",
+  "an unconditional proof of the Riemann Hypothesis",
+  "Lean elaboration, a kernel audit, or an execution receipt from static checks"
+]

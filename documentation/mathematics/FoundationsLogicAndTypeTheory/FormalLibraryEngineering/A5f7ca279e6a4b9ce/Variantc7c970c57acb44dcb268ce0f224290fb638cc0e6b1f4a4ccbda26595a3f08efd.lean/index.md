@@ -1,0 +1,30 @@
+# GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.A5f7ca279e6a4b9ce.Variantc7c970c57acb44dcb268ce0f224290fb638cc0e6b1f4a4ccbda26595a3f08efd
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**1 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A5f7ca279e6a4b9ce/Variantc7c970c57acb44dcb268ce0f224290fb638cc0e6b1f4a4ccbda26595a3f08efd.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a5fdc784c227023160fd36c0e8a3681d0350b32c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A5f7ca279e6a4b9ce/Variantc7c970c57acb44dcb268ce0f224290fb638cc0e6b1f4a4ccbda26595a3f08efd.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [deterministic_of_valid](declarations/deterministic-of-valid--5cea6e093bdcaa88e62270f3.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=157277d07a47cb2c181133483ca3e512dd5b2e6127dd8d8cf980314f0f64c53c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/A5f7ca279e6a4b9ce/Variantc7c970c57acb44dcb268ce0f224290fb638cc0e6b1f4a4ccbda26595a3f08efd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,119 @@
+# hall_hard_inductive
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:9e6c9885-f5a3-75b1-7a7d-e9a9c3e32c03",
+  "kind": "theorem",
+  "lexical_name": "hall_hard_inductive",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "hall-hard-inductive--658e0c701ef1a60c2e2f2a6e",
+  "source": {
+    "blob": "d4a8ed3b0acafdf3233b93a1991ab599968583a9",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 263,
+    "line": 234,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Finite/Variantc500a398f6699bcb65d45891aa012b6e931972f8f426e489dca40fa7cf59eae7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:658e0c701ef1a60c2e2f2a6e966afdf2b66d1bc8a4d6c448e93dcc6176ab3ce7",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/Finite/Variantc500a398f6699bcb65d45891aa012b6e931972f8f426e489dca40fa7cf59eae7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:9e6c9885-f5a3-75b1-7a7d-e9a9c3e32c03`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 234–263.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem hall_hard_inductive (ht : ∀ s : Finset ι, s.card ≤ (s.biUnion t).card) :
+    ∃ f : ι → α, Function.Injective f ∧ ∀ x, f x ∈ t x := by
+  cases nonempty_fintype ι
+  induction' hn : Fintype.card ι using Nat.strong_induction_on with n ih generalizing ι
+  rcases n with (_ | _)
+  · rw [Fintype.card_eq_zero_iff] at hn
+    exact ⟨isEmptyElim, isEmptyElim, isEmptyElim⟩
+  · have ih' : ∀ (ι' : Type u) [Fintype ι'] (t' : ι' → Finset α), Fintype.card ι' ≤ _ →
+        (∀ s' : Finset ι', s'.card ≤ (s'.biUnion t').card) →
+        ∃ f : ι' → α, Function.Injective f ∧ ∀ x, f x ∈ t' x := by
+      intro ι' _ _ hι' ht'
+      exact ih _ (Nat.lt_succ_of_le hι') ht' _ rfl
+    by_cases h : ∀ s : Finset ι, s.Nonempty → s ≠ univ → s.card < (s.biUnion t).card
+    · refine' hall_hard_inductive_step_A hn ht (@fun ι' => ih' ι') h
+    · push_neg at h
+      rcases h with ⟨s, sne, snu, sle⟩
+      exact hall_hard_inductive_step_B hn ht (@fun ι' => ih' ι')
+        s sne snu (Nat.le_antisymm (ht _) sle)
+#align hall_marriage_theorem.hall_hard_inductive HallMarriageTheorem.hall_hard_inductive
+
+end HallMarriageTheorem
+
+/-- This is the version of **Hall's Marriage Theorem** in terms of indexed
+families of finite sets `t : ι → Finset α` with `ι` finite.
+It states that there is a set of distinct representatives if and only
+if every union of `k` of the sets has at least `k` elements.
+
+See `Finset.all_card_le_biUnion_card_iff_exists_injective` for a version
+where the `Finite ι` constraint is removed.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/CombinatoricsAndDiscreteMathematics/Finite/Variantc500a398f6699bcb65d45891aa012b6e931972f8f426e489dca40fa7cf59eae7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/Finite/Variantc500a398f6699bcb65d45891aa012b6e931972f8f426e489dca40fa7cf59eae7.lean#L234).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d4a8ed3b0acafdf3233b93a1991ab599968583a9` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5e506d629552e7f4686c9d74795f39dd20ec266954ddcfbde5a31df1ef542594 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Finite/Variantc500a398f6699bcb65d45891aa012b6e931972f8f426e489dca40fa7cf59eae7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

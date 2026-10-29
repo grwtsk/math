@@ -1,0 +1,70 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.ExactRecordSignEquivalence.Varianted77fea69528f2d1a1b203fcaa3cd9af014ef9a9873b8cc27aa499b598e507bf
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f908ab664da80b05f21401addf88269dd657c63` · SHA-256 `ed77fea69528f2d1a1b203fcaa3cd9af014ef9a9873b8cc27aa499b598e507bf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.Conversation.RecordEndpoint
+
+/-!
+# The exact p=1 reserve is equivalent to the actual all-real sign target
+
+Batch 12's weakest record supplier is not independent arithmetic evidence.
+With the literal entrance value as its reserve, it is exactly the unchanged
+eventual prime-primitive sign target. The reverse direction selects an integer
+entrance after the supplied real threshold and retains every future endpoint.
+The forward direction uses the checked native interpolation consumer.
+
+Human endpoint and quantifier direction: grwtsk contributors. Local exact-source
+equivalence and Lean proof: OpenAI Codex. No instance of either side is supplied.
+-/
+
+set_option autoImplicit false
+
+namespace GRWTSK.RiemannHypothesis.Conversation.ExactRecordSignEquivalence
+
+open OpenArithmeticSuppliers RecordEndpoint
+noncomputable section
+
+def ExactOneRecordReserve : Prop :=
+  ∃ N : ℕ, 2 ≤ N ∧ ordinaryPrimePrimitive N ≤ 0 ∧
+    ∀ K : ℕ, nativePEnergy N K 1 ≤ -ordinaryPrimePrimitive N
+
+theorem exact_one_reserve_iff_eventual_sign :
+    ExactOneRecordReserve ↔ OrdinaryPrimeEventualSignSupplier := by
+  constructor
+  · rintro ⟨N, hN, hstart, hbound⟩
+    have hE : 0 ≤ -ordinaryPrimePrimitive N := by linarith
+    apply one_energy_reserve_implies_eventualSign (R := -ordinaryPrimePrimitive N)
+      hN hE _ le_rfl hbound
+    linarith
+  · rintro ⟨R, hR, hpath⟩
+    obtain ⟨N, hRN⟩ := exists_nat_gt R
+    have hN : 2 ≤ N := by exact_mod_cast (hR.trans hRN.le)
+    have hstart := hpath N hRN.le
+    have hE : 0 ≤ -ordinaryPrimePrimitive N := by linarith
+    refine ⟨N, hN, hstart, (one_energy_bound_iff_prefix_bound hE).mpr ?_⟩
+    intro K
+    have hNK : R ≤ (N + K : ℕ) := by
+      have hcast : (N : ℝ) ≤ (N + K : ℕ) := by exact_mod_cast (Nat.le_add_right N K)
+      exact hRN.le.trans hcast
+    have h := hpath (N + K : ℕ) hNK
+    linarith
+
+theorem exact_reserve_and_sign_have_same_instances :
+    Nonempty ExactOneRecordReserve ↔ Nonempty OrdinaryPrimeEventualSignSupplier := by
+  simp only [nonempty_prop]
+  exact exact_one_reserve_iff_eventual_sign
+
+end
+end GRWTSK.RiemannHypothesis.Conversation.ExactRecordSignEquivalence
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=193ced027e6f7d46b2edef87b5190b52d235f095b248d30bf3f6bff232ca5cea -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ExactRecordSignEquivalence/Varianted77fea69528f2d1a1b203fcaa3cd9af014ef9a9873b8cc27aa499b598e507bf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

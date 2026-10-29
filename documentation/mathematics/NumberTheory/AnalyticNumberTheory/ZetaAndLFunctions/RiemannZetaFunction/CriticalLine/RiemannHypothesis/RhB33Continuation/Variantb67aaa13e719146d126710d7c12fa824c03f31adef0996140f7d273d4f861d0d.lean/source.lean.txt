@@ -1,0 +1,13 @@
+import FormalResearch.RiemannHypothesis.Laplace.Continuation
+
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.finite_occurrences_norm_le
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.isClosed_candidateSingularities
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.sourceKernel_compact_norms_summable
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.sourceKernel_hasSumLocallyUniformlyOn
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.continuedTransform_analytic
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.initial_agreement
+#print axioms FormalResearch.RiemannHypothesis.Laplace.Continuation.candidate_free_continuation_checkpoint
+
+example :
+    FormalResearch.RiemannHypothesis.Laplace.Continuation.CandidateFreeContinuationCheckpoint :=
+  FormalResearch.RiemannHypothesis.Laplace.Continuation.candidate_free_continuation_checkpoint

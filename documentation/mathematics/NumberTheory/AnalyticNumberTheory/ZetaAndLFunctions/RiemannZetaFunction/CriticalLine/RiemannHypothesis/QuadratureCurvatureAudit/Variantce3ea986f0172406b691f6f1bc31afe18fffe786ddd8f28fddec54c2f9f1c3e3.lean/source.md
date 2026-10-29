@@ -1,0 +1,62 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.QuadratureCurvatureAudit.Variantce3ea986f0172406b691f6f1bc31afe18fffe786ddd8f28fddec54c2f9f1c3e3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f1631a68acaa1e4696262ab9133b728aee787dbe` · SHA-256 `ce3ea986f0172406b691f6f1bc31afe18fffe786ddd8f28fddec54c2f9f1c3e3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature
+set_option autoImplicit false
+set_option pp.all false
+set_option pp.universes true
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.curvatureCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.curvatureCoefficient
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.cutoffBaseline
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.cutoffBaseline
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.cutoffPhase_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.cutoffPhase_intervalIntegrable
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.kernel_continuous
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.kernel_continuous
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.weightedPhase_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.weightedPhase_intervalIntegrable
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.cutoffBaseline_nonpos
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.cutoffBaseline_nonpos
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.exponential_moment_le_eight
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.exponential_moment_le_eight
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.sourceCorrelation_deriv_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.sourceCorrelation_deriv_zero
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.kernel_zero_after_support
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.kernel_zero_after_support
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.sourceCorrelation_deriv_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.sourceCorrelation_deriv_abs_le_coefficient
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.sourceCorrelation_sub_one_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.sourceCorrelation_sub_one_abs_le_coefficient
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.kernel_sub_half_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.kernel_sub_half_abs_le_coefficient
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadratureError_sub_baseline_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadratureError_sub_baseline_abs_le_coefficient
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadratureError_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadratureError_le_coefficient
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadraturePrice
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadraturePrice
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadratureError_le_price
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.quadratureError_le_price
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.residual_le_of_compensated_cap
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.residual_le_of_compensated_cap
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.original_lower_of_compensated_cap
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.original_lower_of_compensated_cap
+#check @FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.estimate_of_compensated_cap
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaQuadratureCurvature.estimate_of_compensated_cap
+
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.UniformLowerBound
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ec17ebd1effed4fd17fda53412e86ca82cc78417fc2c2674edbbaffbf759f3b2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/QuadratureCurvatureAudit/Variantce3ea986f0172406b691f6f1bc31afe18fffe786ddd8f28fddec54c2f9f1c3e3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

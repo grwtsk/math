@@ -1,0 +1,61 @@
+import FormalResearch.PositiveAtlas.KQHContactGeometry
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.flow0_add
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.flow0_add
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.flow1_add
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.flow1_add
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.flow0_inverse
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.flow0_inverse
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.flow1_inverse
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.flow1_inverse
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.contact_loop
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.contact_loop
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.flow0_derivative
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.flow0_derivative
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.flow1_derivative
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.flow1_derivative
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.field0_directional_derivative
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.field0_directional_derivative
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.field1_directional_derivative
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.field1_directional_derivative
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.contact_bracket
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.contact_bracket
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.segment_horizontal
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.segment_horizontal
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_formula
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_formula
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_Y_partial1
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_Y_partial1
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_Y_partial2
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_Y_partial2
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_Y_partial3
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_Y_partial3
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_jacobian_det
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_jacobian_det
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_fiber_moments
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.endpoint_fiber_moments
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.centered_residual
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.centered_residual
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.centered_residual_bound
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.centered_residual_bound
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.phase_add
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.phase_add
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.phase_norm
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.phase_norm
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.pullback_flow0
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.pullback_flow0
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.pullback_flow1
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.pullback_flow1
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.fiber_weyl
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.fiber_weyl
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.U_comp
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.U_comp
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.V_comp
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.V_comp
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.U_inverse
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.U_inverse
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.V_inverse
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.V_inverse
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.U_norm
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.U_norm
+#check FormalResearch.PositiveAtlas.KQHContactGeometry.V_norm
+#print axioms FormalResearch.PositiveAtlas.KQHContactGeometry.V_norm

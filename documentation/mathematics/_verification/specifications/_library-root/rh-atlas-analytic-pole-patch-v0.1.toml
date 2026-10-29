@@ -1,0 +1,140 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-analytic-pole-patch-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[modules]]
+name = "Mathlib.Analysis.Calculus.MeanValue"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+
+[[hostile_controls]]
+id = "reject-derivative-samples-as-uniform-bound"
+description = "ofDerivativeEnclosure must require differentiability and a derivative norm bound at every point of the convex ambient region, center membership, target inclusion and the full radius bound."
+
+[[hostile_controls]]
+id = "reject-unpaid-sample-error"
+description = "The sample enclosure contributes delta: the required strict condition is delta + M*r < b, not M*r < b."
+
+[[hostile_controls]]
+id = "reject-unpaid-model-error"
+description = "source_norm_lower and source_nonzero require uniform error against the actual source F throughout U; lower-error-delta is retained, not lower-error."
+
+[[hostile_controls]]
+id = "reject-false-quadratic-jet"
+description = "ofNativeQuadraticRemainder uses actual complex deriv and deriv(deriv), explicit differentiability and an entire-region remainder. Four point samples or a named coefficient array do not supply these hypotheses."
+
+[[hostile_controls]]
+id = "reject-nonstrict-margin"
+description = "An equality at the margin permits a zero. The constant-zero singleton fixture must rule out an inhabited passing patch."
+
+[[hostile_controls]]
+id = "reject-raw-pole-product"
+description = "poleNormalizedZeta(1)=1 is the inserted removable value; the raw totalized product at 1 is zero. Do not identify the two functions globally."
+
+[[hostile_controls]]
+id = "reject-holomorphy-from-continuity"
+description = "differentiable_poleNormalizedZeta must use punctured complex differentiability and the sourced residue-continuity theorem through the removable-singularity result."
+
+[[hostile_controls]]
+id = "reject-pole-factor-loss"
+description = "The punctured lower bound is 1/2 <= norm(z-1)*norm(zeta(z)); division requires z != 1 and retains norm(z-1)."
+
+[[hostile_controls]]
+id = "reject-normalized-source-zero-drift"
+description = "Away from 1 prove exact zero equivalence. For canonical target zeros retain the exclusion of 1; a pole must never be entered as a target zero."
+
+[[hostile_controls]]
+id = "reject-local-collar-as-global-shell"
+description = "An existential pole neighborhood is not WindowRH 0, an effective radius, a full shell or all-height cover. window_succ_of_poleNormalized_covers retains every reciprocal-margin cover."
+
+[[hostile_controls]]
+id = "reject-old-or-root-only-replay"
+description = "New modules and fixtures are not inserted into public aggregate imports. Explicitly reconcile all required modules, exact declarations and transitive axioms at the new immutable head."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a computed or certified numerical pole-collar radius",
+  "a uniform explicit zeta derivative or Taylor bound over all requested patches",
+  "a real-axis base or total shell extension",
+  "an all-height all-margin zero-free patch family",
+  "analytic zero multiplicity, Turing completeness or a tail theorem",
+  "a Connes spectral triple, a Weil-form realization or RH",
+  "a Lean elaboration, transitive axiom audit or replay receipt produced by this manifest"
+]

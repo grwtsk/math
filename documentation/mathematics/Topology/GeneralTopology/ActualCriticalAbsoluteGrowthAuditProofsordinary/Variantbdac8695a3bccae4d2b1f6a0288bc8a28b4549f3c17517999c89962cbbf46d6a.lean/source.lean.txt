@@ -1,0 +1,7 @@
+import ActualCriticalAbsoluteGrowth
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.actual_critical_baseline_upper_strip_lower
+#print RH16IndependentChallengeNext.actual_critical_absolute_upper_strip_lower
+#print RH16IndependentChallengeNext.actual_critical_absolute_full_lower
+#print RH16IndependentChallengeNext.actual_critical_absolute_full_tendsto_atTop

@@ -1,0 +1,61 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiErrorConvolutionPrintRepairV2.Variant4297953ee9aefa81150e85a900b3d8486be8d9cc11025b9a858250f84e94635a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5c0d839f2140d7184aa887b021f10e75ffbf57ce` · SHA-256 `4297953ee9aefa81150e85a900b3d8486be8d9cc11025b9a858250f84e94635a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiErrorConvolution
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualCenteredMangoldtLogError
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualCenteredMangoldtLogError
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtHalfClosedPrefix
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtHalfClosedPrefix
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualXiErrorConvolutionSevenValue
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualXiErrorConvolutionSevenValue
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualXiErrorConvolutionHalfHead
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualXiErrorConvolutionHalfHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualXiErrorConvolutionOneHead
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualXiErrorConvolutionOneHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualCenteredMangoldtLogError_at_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualCenteredMangoldtLogError_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution_at_zero
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution_at_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtErrorConvolution_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout_eq_convolution
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout_one
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout_one
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout_half
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualNormalizedMangoldtExpReadout_half
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtHalfClosedPrefix_split_seven
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualMangoldtHalfClosedPrefix_split_seven
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualDampedXiFinitePrimitive_eq_error_convolutions
+#print FormalResearch.RiemannHypothesis.SourceActualXiErrorConvolution.actualDampedXiFinitePrimitive_eq_error_convolutions
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c4a7168e17273d392a60dbe0363dcfbdf03416eb866740cb0512bedbf8f4e47e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualXiErrorConvolutionPrintRepairV2/Variant4297953ee9aefa81150e85a900b3d8486be8d9cc11025b9a858250f84e94635a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

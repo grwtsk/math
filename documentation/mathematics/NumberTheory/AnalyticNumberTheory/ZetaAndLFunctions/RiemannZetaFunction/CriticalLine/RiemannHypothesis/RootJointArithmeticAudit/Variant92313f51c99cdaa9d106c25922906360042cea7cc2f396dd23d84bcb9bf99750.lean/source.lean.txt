@@ -1,0 +1,116 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualJointMangoldtCancellation.Variant41235e2d0123d735f97a1c592493b272edfe7f95048150abe24b41288a98341f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"41235e2d0123d735f97a1c592493b272edfe7f95048150abe24b41288a98341f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualJointMangoldtCancellation.Variant41235e2d0123d735f97a1c592493b272edfe7f95048150abe24b41288a98341f","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"41235e2d0123d735f97a1c592493b272edfe7f95048150abe24b41288a98341f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/independent-1791352522347844000/RootJointArithmeticAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualJointMangoldtCancellation
+import SourceActualJointCenteredDiscrepancy
+import SourceActualJointClosedReadout
+import SourceActualSmoothingArithmeticAttempt
+import SourceActualCenteredSmoothingCost
+import SourceActualCenteredMangoldtSecondMoment
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualJointMangoldtCancellation.Variant41235e2d0123d735f97a1c592493b272edfe7f95048150abe24b41288a98341f
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceActualJointMangoldtCancellation
+#check jointLogKernel
+#print axioms jointLogKernel
+#check actualJointMangoldtReadout
+#print axioms actualJointMangoldtReadout
+#check expHalf_contDiff
+#print axioms expHalf_contDiff
+#check expHalf_deriv
+#print axioms expHalf_deriv
+#check actual_joint_endpoint_cancellation
+#print axioms actual_joint_endpoint_cancellation
+#check actual_joint_discrepancy_split
+#print axioms actual_joint_discrepancy_split
+#check jointLogKernel_continuous
+#print axioms jointLogKernel_continuous
+#check jointLogKernel_mass
+#print axioms jointLogKernel_mass
+#check jointLogKernel_first_moment
+#print axioms jointLogKernel_first_moment
+#check actual_joint_gamma_centering
+#print axioms actual_joint_gamma_centering
+end FormalResearch.RiemannHypothesis.SourceActualJointMangoldtCancellation
+
+namespace FormalResearch.RiemannHypothesis.SourceActualJointCenteredDiscrepancy
+#check actualCenteredLogDiscrepancy
+#print axioms actualCenteredLogDiscrepancy
+#check actualJointCenteredIntegral
+#print axioms actualJointCenteredIntegral
+#check actual_centered_discrepancy_abs_le
+#print axioms actual_centered_discrepancy_abs_le
+#check actual_endpoint_companion_abs_le
+#print axioms actual_endpoint_companion_abs_le
+#check actual_joint_centered_identity
+#print axioms actual_joint_centered_identity
+end FormalResearch.RiemannHypothesis.SourceActualJointCenteredDiscrepancy
+
+namespace FormalResearch.RiemannHypothesis.SourceActualJointClosedReadout
+#check actual_half_log_sum_eq_closed
+#print axioms actual_half_log_sum_eq_closed
+#check actual_full_log_sum_eq_closed_psi
+#print axioms actual_full_log_sum_eq_closed_psi
+#check actual_closed_readout_eq_joint
+#print axioms actual_closed_readout_eq_joint
+#check actual_closed_readout_eq_centered_integral
+#print axioms actual_closed_readout_eq_centered_integral
+#check actual_signed_moment_eq_centered_joint
+#print axioms actual_signed_moment_eq_centered_joint
+end FormalResearch.RiemannHypothesis.SourceActualJointClosedReadout
+
+namespace FormalResearch.RiemannHypothesis.SourceActualSmoothingArithmeticAttempt
+#check actualSmoothingCompanion
+#print axioms actualSmoothingCompanion
+#check actual_gamma_boundary_bounds
+#print axioms actual_gamma_boundary_bounds
+#check actual_moment_eq_residual_add_companion
+#print axioms actual_moment_eq_residual_add_companion
+#check actual_moment_eq_boundary_sub_Mangoldt_work
+#print axioms actual_moment_eq_boundary_sub_Mangoldt_work
+#check actual_smoothing_companion_bounds
+#print axioms actual_smoothing_companion_bounds
+#check actual_moment_residual_comparison
+#print axioms actual_moment_residual_comparison
+#check actualCenteredMangoldtWork
+#print axioms actualCenteredMangoldtWork
+#check actual_moment_eq_neg_centered_Mangoldt_work
+#print axioms actual_moment_eq_neg_centered_Mangoldt_work
+end FormalResearch.RiemannHypothesis.SourceActualSmoothingArithmeticAttempt
+
+namespace FormalResearch.RiemannHypothesis.SourceActualCenteredSmoothingCost
+#check actualCenteredKernelVariation
+#print axioms actualCenteredKernelVariation
+#check actual_centered_Mangoldt_error_abs_le
+#print axioms actual_centered_Mangoldt_error_abs_le
+#check actual_critical_derivative_early_lower
+#print axioms actual_critical_derivative_early_lower
+#check actual_centered_kernel_variation_exponential_lower
+#print axioms actual_centered_kernel_variation_exponential_lower
+#check actual_centered_kernel_variation_linear_lower
+#print axioms actual_centered_kernel_variation_linear_lower
+#check actual_centered_kernel_variation_not_eventually_bounded
+#print axioms actual_centered_kernel_variation_not_eventually_bounded
+end FormalResearch.RiemannHypothesis.SourceActualCenteredSmoothingCost
+
+namespace FormalResearch.RiemannHypothesis.SourceActualCenteredMangoldtSecondMoment
+#check actualCenteredBDensity
+#print axioms actualCenteredBDensity
+#check actualCenteredBSecondMoment
+#print axioms actualCenteredBSecondMoment
+#check actual_weighted_error_measurable
+#print axioms actual_weighted_error_measurable
+#check actualCenteredBDensity_intervalIntegrable
+#print axioms actualCenteredBDensity_intervalIntegrable
+#check exact_log_variance
+#print axioms exact_log_variance
+#check actual_empty_prefix_variance_lower
+#print axioms actual_empty_prefix_variance_lower
+#check actualCenteredBSecondMoment_lower
+#print axioms actualCenteredBSecondMoment_lower
+end FormalResearch.RiemannHypothesis.SourceActualCenteredMangoldtSecondMoment

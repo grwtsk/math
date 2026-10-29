@@ -1,0 +1,101 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polar-circle-descent-992-v0.1"
+issue = 992
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCircleDescent"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCircleDescent"
+
+[source_binding]
+parent_pr = 991
+parent_revision = "ea26d00b9129894872237aadb04553367afab6f9"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarCircleDescent.lean"
+new_module_git_blob = "4b0365943060d6cd1e1eba06e259a81ac178b136"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polar-circle-descent.md"
+note_blob = "1f4ad3d01b1ee6df10604e2f7e8bbc36a8691420"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+unit_circle_quotient_lift_proved = false
+continuous_circle_polar_map_proved = false
+cone_disk_homeomorphism_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCircleDescent"
+authored_declaration_count = 3
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPhase", "Mathlib.Topology.Instances.AddCircle.Real"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCircleDescent.polarDisk_add_int"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCircleDescent.polarDisk_eq_of_int_translate"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCircleDescent.polarDisk_zero_angle_independent"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reuse-polar-periodicity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-disk-subtype"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integer-witness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-radius-angle-independence"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-representative-choice"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-quotient-lift-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-continuity-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-phase-uniqueness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-surjectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

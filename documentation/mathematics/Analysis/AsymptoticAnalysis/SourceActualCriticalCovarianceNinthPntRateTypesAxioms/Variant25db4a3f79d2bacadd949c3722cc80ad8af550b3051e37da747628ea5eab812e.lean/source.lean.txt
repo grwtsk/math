@@ -1,0 +1,19 @@
+import SourceActualCriticalCovarianceNinthPntRate
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceNinthPntRate
+#check actualMovingEarlyNinthNormalizedBudget_le
+#print axioms actualMovingEarlyNinthNormalizedBudget_le
+#check actualNinthNormalizedCriticalCovariance_Pnt_budget
+#print axioms actualNinthNormalizedCriticalCovariance_Pnt_budget
+#check actualNinthNormalizedCriticalCovariance_Pnt_isBigO
+#print axioms actualNinthNormalizedCriticalCovariance_Pnt_isBigO
+#check actualCriticalErrorCovariance_NinthPnt_isBigO
+#print axioms actualCriticalErrorCovariance_NinthPnt_isBigO

@@ -1,0 +1,56 @@
+# Complete source: GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.GlobalZRoute.Variant1c1e80c4e4f88ad9c2b79d0355991851d10dae026712d975c8f25b0806c80a69
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d2c3ec972bfad4fa183701a575e056952abf37f0` · SHA-256 `f8c9ea39ac943b828fb0c7e184f4be91ed39336a2ed43d97caa654f4c0ca951d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CategoriesAndHomologicalAlgebra.CategoryTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.GlobalZTMFRoute.Variant7680cd98504bbd4a9107e5e2652c504f6812851cae0012d06e29064dcc9d25d5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7680cd98504bbd4a9107e5e2652c504f6812851cae0012d06e29064dcc9d25d5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.GlobalZTMFRoute.Variant7680cd98504bbd4a9107e5e2652c504f6812851cae0012d06e29064dcc9d25d5","mathematical_subject":"Foundations.Unclassified","original_sha256":"7680cd98504bbd4a9107e5e2652c504f6812851cae0012d06e29064dcc9d25d5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/AdelicInfinityTopos/GlobalZRoute.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Folder.AdelicInfinityTopos.SpectrumObject
+
+/-!
+# Folder.AdelicInfinityTopos.GlobalZRoute
+
+Radiation role: research-boundary
+BinaryMatrix spine: This module documents the global-over-Z strategy as contract data.
+Ontology: adelic.global_z_route
+Pivot role: arithmetic
+Zero typology: none
+Contract boundary: strategy
+Composite stack role: adelic-infinity-topos
+-/
+
+
+namespace GRWTSK.CategoriesAndHomologicalAlgebra.CategoryTheory.GlobalZTMFRoute.Variant7680cd98504bbd4a9107e5e2652c504f6812851cae0012d06e29064dcc9d25d5
+
+namespace Folder
+namespace AdelicInfinityTopos
+
+structure GlobalZTMFRoute where
+  globalTMF : SpectrumObject
+  jInvariantCoordinate : Prop
+  allPrimeComponentsTracked : Prop
+  allPrimeComponentsTracked_certified : allPrimeComponentsTracked
+  stringBordismBakedIn : Prop
+  adamsNovikovComplexity : Prop
+
+theorem global_route_tracks_all_primes
+    (R : GlobalZTMFRoute) :
+    R.allPrimeComponentsTracked :=
+  R.allPrimeComponentsTracked_certified
+
+end AdelicInfinityTopos
+end Folder
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e04833967a62290621a2cdcff7deca678ab56efdefede235e4e4bb090bbf1412 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GlobalZRoute/Variant1c1e80c4e4f88ad9c2b79d0355991851d10dae026712d975c8f25b0806c80a69.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

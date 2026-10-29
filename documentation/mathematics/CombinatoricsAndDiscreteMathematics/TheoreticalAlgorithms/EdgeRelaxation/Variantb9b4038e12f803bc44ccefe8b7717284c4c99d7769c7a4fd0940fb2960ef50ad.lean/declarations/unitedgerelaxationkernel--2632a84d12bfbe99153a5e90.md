@@ -1,0 +1,105 @@
+# unitEdgeRelaxationKernel
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:a20dbb3ebbacf22354b4bad4479046e995ff11c8a1e4df864a4f371717832182",
+  "kind": "def",
+  "lexical_name": "unitEdgeRelaxationKernel",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "unitedgerelaxationkernel--2632a84d12bfbe99153a5e90",
+  "source": {
+    "blob": "57efc6e9dea914e8922da405b7195cf236e56598",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 174,
+    "line": 159,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EdgeRelaxation/Variantb9b4038e12f803bc44ccefe8b7717284c4c99d7769c7a4fd0940fb2960ef50ad.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:2632a84d12bfbe99153a5e901c8040d0b35f5d957b66f91d3e2c3158ffb19bc4",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EdgeRelaxation/Variantb9b4038e12f803bc44ccefe8b7717284c4c99d7769c7a4fd0940fb2960ef50ad.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:a20dbb3ebbacf22354b4bad4479046e995ff11c8a1e4df864a4f371717832182`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 159–174.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def unitEdgeRelaxationKernel (p : Nat) :
+    EdgeRelaxationKernel (unitDeltaRing p) where
+  source := PUnit.unit
+  target := PUnit.unit
+  weight := PUnit.unit
+  deltaWeight := PUnit.unit
+  deltaWeight_eq := rfl
+  frobeniusWeight := PUnit.unit
+  frobeniusWeight_eq := rfl
+  massPreserving := True
+  massPreservingCertified := trivial
+  boundary := [
+    "Unit δ-ring edge-relaxation kernel.",
+    "This is a typed interface example, not a spectral-rigidity theorem."
+  ]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EdgeRelaxation/Variantb9b4038e12f803bc44ccefe8b7717284c4c99d7769c7a4fd0940fb2960ef50ad.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EdgeRelaxation/Variantb9b4038e12f803bc44ccefe8b7717284c4c99d7769c7a4fd0940fb2960ef50ad.lean#L159).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `57efc6e9dea914e8922da405b7195cf236e56598` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=57d207203b2a79c853524a50e4a6aa06ed2e43472363fbc0bb61855d5784d638 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EdgeRelaxation/Variantb9b4038e12f803bc44ccefe8b7717284c4c99d7769c7a4fd0940fb2960ef50ad.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

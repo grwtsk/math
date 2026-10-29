@@ -1,0 +1,15 @@
+import SourceActualBumpMovingHeight
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMovingHeight.actualBumpMovingHeight
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMovingHeight.actualBumpNormalization_lower
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMovingHeight.actualBumpMovingTailConstant
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMovingHeight.actualBumpMovingHeight_ge_one
+#print FormalResearch.RiemannHypothesis.SourceActualBumpMovingHeight.actualBumpTwoTail_movingHeight_norm_le

@@ -1,0 +1,29 @@
+# GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualAdaptiveTriangularThreeAuditPackageProofsordinary.Variantfe3eeda0dd4fabc24b1b58a51707bb2dc025958d09005af70c18bad886fd79f2
+
+[Complete source index](../../../../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**0 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualAdaptiveTriangularThreeAuditPackageProofsordinary/Variantfe3eeda0dd4fabc24b1b58a51707bb2dc025958d09005af70c18bad886fd79f2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0f371a198fc19a4a80aa75529f648e5ba3bf63c9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualAdaptiveTriangularThreeAuditPackageProofsordinary/Variantfe3eeda0dd4fabc24b1b58a51707bb2dc025958d09005af70c18bad886fd79f2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8b189d8b43a1b276e817b6fd82fdcc9368a17e32d69e796e1b0dca56067d8cba -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualAdaptiveTriangularThreeAuditPackageProofsordinary/Variantfe3eeda0dd4fabc24b1b58a51707bb2dc025958d09005af70c18bad886fd79f2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

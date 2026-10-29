@@ -1,0 +1,11 @@
+import SourceActualPsiInverseSquare
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+#print actual_psi_inverse_square
+#print shiftedActualChebyshev_inverseSquare_intervalIntegrable
+#print shiftedActualChebyshev_inverse_square
+#print shiftedActualChebyshev_mul_intervalIntegrable
+#print shiftedPsiSecondPrimitive
+#print shiftedPsiFullPrimitive
+#print shiftedPsiSecondPrimitive_intervalIntegrable
+#print shiftedPsiFullPrimitive_eq

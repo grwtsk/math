@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.9289f203173e8afeb45a2e1cc088afe7c5ed1e08b5faa34ebc985f46a60d969fPrimePowerSector.Variant9289f203173e8afeb45a2e1cc088afe7c5ed1e08b5faa34ebc985f46a60d969f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b07164fe4d98413837fe6b9cd7fdbae968189939` · SHA-256 `9289f203173e8afeb45a2e1cc088afe7c5ed1e08b5faa34ebc985f46a60d969f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.primeFirstMoment
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.primeFirstMoment
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.evenPowerMoment
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.evenPowerMoment
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.oddHigherMoment
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.oddHigherMoment
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.square_cutoff_iff
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.square_cutoff_iff
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.square_mem_inventory_iff
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.square_mem_inventory_iff
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.sum_square_inventory
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.sum_square_inventory
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.sum_odd_prime_power_inventory
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.sum_odd_prime_power_inventory
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.closedPrimeMoment_eq_prime_power_sectors
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.closedPrimeMoment_eq_prime_power_sectors
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.mertensResidual_eq_prime_power_sectors
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.mertensResidual_eq_prime_power_sectors
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.primePowerContribution_eq_prime_power_sectors
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimePowerSectors.primePowerContribution_eq_prime_power_sectors
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3076b6b48bab11ff81e769d3d6e39c3cc816e7c95806499d77d16652efbd1f9f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/9289f203173e8afeb45a2e1cc088afe7c5ed1e08b5faa34ebc985f46a60d969fPrimePowerSector/Variant9289f203173e8afeb45a2e1cc088afe7c5ed1e08b5faa34ebc985f46a60d969f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

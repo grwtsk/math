@@ -1,0 +1,20 @@
+import FormalResearch.RiemannHypothesis.SourcePhaseSignGeometry
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePhaseSignGeometry
+
+#check @pairedTailTest_eq_balanced_phase_prefix
+#print axioms pairedTailTest_eq_balanced_phase_prefix
+#check @exists_pairedTailTest_pos
+#print axioms exists_pairedTailTest_pos
+#check @pairedTailTest_early_point_neg
+#print axioms pairedTailTest_early_point_neg
+#check @exists_pairedTailTest_neg
+#print axioms exists_pairedTailTest_neg
+#check @pairedTailTest_has_both_signs
+#print axioms pairedTailTest_has_both_signs
+#check @pairedTailTest_not_nonneg_on
+#print axioms pairedTailTest_not_nonneg_on
+#check @pairedTailTest_not_nonpos_on
+#print axioms pairedTailTest_not_nonpos_on

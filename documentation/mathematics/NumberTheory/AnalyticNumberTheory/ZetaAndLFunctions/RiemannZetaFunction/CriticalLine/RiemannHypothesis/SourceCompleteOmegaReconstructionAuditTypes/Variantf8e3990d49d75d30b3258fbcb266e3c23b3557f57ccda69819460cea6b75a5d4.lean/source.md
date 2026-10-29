@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCompleteOmegaReconstructionAuditTypes.Variantf8e3990d49d75d30b3258fbcb266e3c23b3557f57ccda69819460cea6b75a5d4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ea5e8bb94400055b35a34ff9fd31502fb706a770` · SHA-256 `f8e3990d49d75d30b3258fbcb266e3c23b3557f57ccda69819460cea6b75a5d4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCompleteOmegaReconstruction
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.literalOmegaCubicSector
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.literalOmegaCubicSector
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmega
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmega
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmegaError
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmegaError
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.literalOmegaCubicSector_eq_actual_main
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.literalOmegaCubicSector_eq_actual_main
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.mertensResidual_eq_completeOmega_add_baseline_add_error
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.mertensResidual_eq_completeOmega_add_baseline_add_error
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.integerJ_eq_completeOmega_add_error
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.integerJ_eq_completeOmega_add_error
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmegaError_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmegaError_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.integerJ_sub_completeOmega_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.integerJ_sub_completeOmega_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmega_reconstruction_plus_plain_calibration_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.completeOmega_reconstruction_plus_plain_calibration_lt
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.residual_sub_completeOmega_sub_zeta_abs_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.residual_sub_completeOmega_sub_zeta_abs_lt
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.residual_budget_of_completeOmega_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.residual_budget_of_completeOmega_tail
+#check FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.estimate_of_completeOmega_tail_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceCompleteOmegaReconstruction.estimate_of_completeOmega_tail_at_radius
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ca8d76218354d326e08b9d2a4bda5d5d593f0e6d6121492abdd8f00a55dde391 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceCompleteOmegaReconstructionAuditTypes/Variantf8e3990d49d75d30b3258fbcb266e3c23b3557f57ccda69819460cea6b75a5d4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

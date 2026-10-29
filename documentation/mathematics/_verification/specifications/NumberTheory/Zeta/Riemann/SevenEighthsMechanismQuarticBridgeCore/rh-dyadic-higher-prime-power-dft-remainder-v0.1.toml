@@ -1,0 +1,52 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-higher-prime-power-dft-remainder-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "fb2ac6067c08f856f325bdc3457c8130f32e4536"
+parent_tree = "dd0a512e352b6a4ce0afb70468d9ffbb67ab41ba"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / HIGHER_PRIME_POWER_DFT_REMAINDER_SQRT_SCALE"
+
+[mathlib_input]
+psi_minus_theta_identity = "psi_sub_theta_eq_sum_not_prime"
+psi_minus_theta_sqrt_bound = "psi_sub_theta_le_mul_sqrt"
+pnt_used = false
+rh_used = false
+
+[remainder]
+weighted_nonprime_mass = "sum_(X<n<=2X,not prime) Lambda(n)/n"
+mass_bound = "<= (psi(2X)-theta(2X))/X"
+asymptotic_scale = "O(X^-1/2)"
+dft_split = "full = prime-only + higher-prime-power"
+fixed_nonzero_mode_correction = "O(X^-1/2)"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicHigherPrimePowerDFTRemainder"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicHigherPrimePowerDFTRemainder.lean"
+blob = "828c329129ec17cec7c35438add0f8712d6a6ebf"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerDFTRemainderControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicHigherPrimePowerDFTRemainderControls.lean"
+blob = "f03c19de74b4b7f8d4980431d0ea89f5e45c2962"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "6682049f51d179904744d28d67b75e5c63f79f05"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-higher-prime-power-dft-remainder.md"
+blob = "c5a0821840edcb30518182130d6c220d085511eb"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+HIGHER_PRIME_POWER_DFT_REMAINDER_SQRT_SCALE = true
+FULL_HIGHER_POWER_ENERGY_BOUND_PROVED = false
+PRIME_ONLY_CORE_ISOLATED = true

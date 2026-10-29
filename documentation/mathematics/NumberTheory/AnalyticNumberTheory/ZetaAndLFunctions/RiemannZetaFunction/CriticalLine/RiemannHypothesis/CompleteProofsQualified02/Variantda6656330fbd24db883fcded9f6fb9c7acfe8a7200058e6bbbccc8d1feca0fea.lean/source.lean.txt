@@ -1,0 +1,13 @@
+import SourceActualCenteredHalfHarmonic
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.deepTerms true
+set_option pp.proofs true
+set_option pp.funBinderTypes true
+set_option pp.letVarTypes true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfHarmonic.finiteHalfHarmonic
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfHarmonic.actualCriticalMoebiusHalf
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfHarmonic.closedCenteredHalfInventory
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfHarmonic.closedCenteredHalfInventory_eq_finite_harmonics
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfHarmonic.actualCenteredColumnHalfInventory_eq_finite_harmonics

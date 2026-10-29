@@ -1,0 +1,83 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.ConnectedComponent.Variant0f0eb372802b1ec74ae1b68e34fb59fa67a7541711bf05864b32907561cffb60
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bbfd91a3bc4bf0114ccd1a5d1b9e907e68bd2bf7` · SHA-256 `0f0eb372802b1ec74ae1b68e34fb59fa67a7541711bf05864b32907561cffb60`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2021 David Wärn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: David Wärn
+-/
+import Mathlib.Combinatorics.Quiver.Subquiver
+import Mathlib.Combinatorics.Quiver.Path
+import Mathlib.Combinatorics.Quiver.Symmetric
+
+/-!
+## Weakly connected components
+
+For a quiver `V`, define the type `WeaklyConnectedComponent V` as the quotient of `V` by
+the relation which identifies `a` with `b` if there is a path from `a` to `b` in `Symmetrify V`.
+(These zigzags can be seen as a proof-relevant analogue of `EqvGen`.)
+
+Strongly connected components have not yet been defined.
+-/
+
+universe v u
+
+namespace Quiver
+
+variable (V : Type*) [Quiver.{u+1} V]
+
+/-- Two vertices are related in the zigzag setoid if there is a
+    zigzag of arrows from one to the other. -/
+def zigzagSetoid : Setoid V :=
+  ⟨fun a b ↦ Nonempty (@Path (Symmetrify V) _ a b), fun _ ↦ ⟨Path.nil⟩, fun ⟨p⟩ ↦
+    ⟨p.reverse⟩, fun ⟨p⟩ ⟨q⟩ ↦ ⟨p.comp q⟩⟩
+
+/-- The type of weakly connected components of a directed graph. Two vertices are
+    in the same weakly connected component if there is a zigzag of arrows from one
+    to the other. -/
+def WeaklyConnectedComponent : Type _ :=
+  Quotient (zigzagSetoid V)
+
+namespace WeaklyConnectedComponent
+
+variable {V}
+
+/-- The weakly connected component corresponding to a vertex. -/
+protected def mk : V → WeaklyConnectedComponent V :=
+  @Quotient.mk' _ (zigzagSetoid V)
+
+instance : CoeTC V (WeaklyConnectedComponent V) :=
+  ⟨WeaklyConnectedComponent.mk⟩
+
+instance [Inhabited V] : Inhabited (WeaklyConnectedComponent V) :=
+  ⟨show V from default⟩
+
+protected theorem eq (a b : V) :
+    (a : WeaklyConnectedComponent V) = b ↔ Nonempty (@Path (Symmetrify V) _ a b) :=
+  Quotient.eq''
+
+end WeaklyConnectedComponent
+
+variable {V}
+
+-- Without the explicit universe level in `Quiver.{v+1}` Lean comes up with
+-- `Quiver.{max u_2 u_3 + 1}`. This causes problems elsewhere, so we write `Quiver.{v+1}`.
+/-- A wide subquiver `H` of `Symmetrify V` determines a wide subquiver of `V`, containing an
+    arrow `e` if either `e` or its reversal is in `H`. -/
+def wideSubquiverSymmetrify (H : WideSubquiver (Symmetrify V)) : WideSubquiver V :=
+  fun _ _ ↦ { e | H _ _ (Sum.inl e) ∨ H _ _ (Sum.inr e) }
+
+end Quiver
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7153ff8cae4301ba86010a82c9b069a6d5c75e1feb1d5a72768622e5b1dafefb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/ConnectedComponent/Variant0f0eb372802b1ec74ae1b68e34fb59fa67a7541711bf05864b32907561cffb60.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

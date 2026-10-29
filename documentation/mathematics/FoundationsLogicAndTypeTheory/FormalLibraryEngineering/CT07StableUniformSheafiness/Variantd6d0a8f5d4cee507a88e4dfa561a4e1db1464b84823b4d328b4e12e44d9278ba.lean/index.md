@@ -1,0 +1,30 @@
+# GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.CT07StableUniformSheafiness.Variantd6d0a8f5d4cee507a88e4dfa561a4e1db1464b84823b4d328b4e12e44d9278ba
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**1 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CT07StableUniformSheafiness/Variantd6d0a8f5d4cee507a88e4dfa561a4e1db1464b84823b4d328b4e12e44d9278ba.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e1cd4937eb7d9f2ee4c220e2092ee7155aab4ede`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CT07StableUniformSheafiness/Variantd6d0a8f5d4cee507a88e4dfa561a4e1db1464b84823b4d328b4e12e44d9278ba.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ct07_stableUniformSheafiness](declarations/ct07-stableuniformsheafiness--95b0e7e1e9a913120ebc065d.md) | 11 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=72c15ff0b6d9e8921903f07fd33539843900f3b9c4ae6a7598e3896c5a023467 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CT07StableUniformSheafiness/Variantd6d0a8f5d4cee507a88e4dfa561a4e1db1464b84823b4d328b4e12e44d9278ba.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

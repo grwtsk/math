@@ -1,0 +1,129 @@
+# Passive immutable pure-math replay request. NOT a Lean/kernel execution receipt.
+schema = "farey-mod-three-angular-channel-v0.1"
+repository = "grwtsk/math"
+base_branch = "main"
+source_baseline_commit = "aa793b2419212e8c1abdad214bd922b993824496"
+source_baseline_tree = "ccfec98db4a6112d4e6822639e9d71dddde1ac7f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source_module = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel"
+source_path = "GRWTSK/NumberTheory/Farey/ReturnAngularChannel.lean"
+source_blob = "df4c90661a7f0a6897d274604de22850b703d38b"
+note_path = "docs/mathematics/NumberTheory/Farey/mod-three-return-angular-channel.md"
+note_blob = "88d1faa4ca6fa8f7d0adb844a6c2eae1428b70a2"
+return_source = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel"
+return_source_blob = "92852e10cfd6ff6aa18134a12589453971789c1d"
+group_source = "GRWTSK.NumberTheory.Farey.GroupSpectralChannel"
+group_source_blob = "fc42376a6c12f7729076564cfd223bf8d1b2b75b"
+walk_source = "GRWTSK.NumberTheory.Farey.GroupSuperwalk"
+walk_source_blob = "62a17e49a7e6a061c71da5763d9083dac57c51b6"
+farey_source = "GRWTSK.NumberTheory.Farey.ResolvableQuintic"
+farey_source_blob = "7caef4b022e35202eef471aae2730dff6b518f70"
+prior_verification_issues = [1086, 1094, 1098]
+
+classification = "SOURCE_PROOF_CANDIDATE"
+evidence_state = "SOURCE_INTEGRATED_ONLY"
+source_elaborated = false
+transitive_compilation_completed = false
+fresh_kernel_checked = false
+transitive_axioms_audited = false
+external_execution_receipt = false
+public_root_imported = false
+general_sturmian_spiral_established = false
+rh_or_zeta_implication_proved = false
+
+[validation]
+require_exact_final_main_commit = true
+require_source_and_dependency_blob_equality = true
+require_pinned_lean_mathlib = true
+require_warning_clean_individual_and_transitive_compilation = true
+require_native_kernel_replay = true
+require_exact_elaborated_declaration_types = true
+require_transitive_axiom_closure = true
+require_no_sorry_admit_project_axioms_native_decide_or_unsafe = true
+require_hostile_controls = true
+reject_main_head_without_pinning = true
+reject_finite_checks_as_kernel_evidence = true
+reject_global_SL2_character_from_selected_C4_orbit = true
+reject_native_two_coordinate_invariant_projector_claim = true
+reject_continuous_curve_without_interpolation_proof = true
+reject_RH_zeta_sturmian_or_Fredholm_promotion = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeWord_return"
+kind = "identical_chronological_Farey_shear_word_represented_over_ZMod3"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeReturn_square"
+kind = "H_square_equals_neg_identity_in_mod_three_matrix_ring"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeReturn_fourth"
+kind = "H_fourth_power_equals_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeReturn_square_ne_one"
+kind = "nontrivial_order_four_witness"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeReturn_orbit"
+kind = "actual_matrix_vector_mod_three_four_cycle"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeReturn_orbit_iterate"
+kind = "source_matrix_action_iterate_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.orbitPhase_next"
+kind = "nontrivial_complex_koopman_eigenfunction"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.orbitPhase_iterate"
+kind = "all_n_cyclic_character_law"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.simultaneous_return_channels"
+kind = "real_projector_and_same_return_mod3_angular_action"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_formula"
+kind = "explicit_declared_complex_product_observation"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_succ"
+kind = "lambda_i_multiplier_one_step"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_norm"
+kind = "exact_radial_expansion_per_return"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.imaginaryUnit_fourth"
+kind = "exact_angular_four_cycle"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_four_returns"
+kind = "four_return_radial_rescaling"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_ne_zero"
+kind = "nonzero_all_finite_samples"
+
+[hostile_controls]
+cases = [
+  "reverse the Farey word LR to RL and require source labels match",
+  "replace mod three by mod two but assert the same fourth-order relation",
+  "incorrectly identify H squared mod three with the positive identity",
+  "reverse the ordered four-vector cycle",
+  "replace the actual matrix action by an unproved permutation",
+  "substitute phase 1 on every state and claim eigenvalue i",
+  "infer an SL2Z global character from the selected return C4 character",
+  "claim the expanding native projector commutes with both Farey shears",
+  "confuse the chosen product observation with any observed external plot",
+  "promote discrete spiral to continuously lifted logarithmic curve",
+  "promote finite residue arithmetic to a Sturmian spectral theorem or RH"
+]
+
+[next_obstruction]
+statement = "Relate the mod-three selected angular observation to a nonperiodic source-defined Farey/continued-fraction return cocycle or Sturmian rotation, with source-preserving phase lift and explicit gauge restrictions. No global or asymptotic claim without a proved supplier."

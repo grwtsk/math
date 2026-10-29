@@ -1,0 +1,31 @@
+# GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftEnvelopeControls
+
+[Complete source index](../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**2 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicSafeShiftEnvelopeControls.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cfbd1403a646cdb4138f0f5cf9bf5c84b8eba07d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/NumberTheory/Zeta/Riemann/Checks/DyadicSafeShiftEnvelopeControls.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [plus_block_has_source_envelope](declarations/plus-block-has-source-envelope--b53e288bf4562fab83267428.md) | 14 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [minus_block_has_source_envelope](declarations/minus-block-has-source-envelope--77da720b9fc964eff188a7f1.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dbb59cb5d40bf6a7227e9cb04d81397930f921eef04653263e3181842f4ef4d7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicSafeShiftEnvelopeControls.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

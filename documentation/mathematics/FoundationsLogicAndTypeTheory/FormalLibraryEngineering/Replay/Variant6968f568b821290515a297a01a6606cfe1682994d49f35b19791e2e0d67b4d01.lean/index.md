@@ -1,0 +1,34 @@
+# GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Replay.Variant6968f568b821290515a297a01a6606cfe1682994d49f35b19791e2e0d67b4d01
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Replay/Variant6968f568b821290515a297a01a6606cfe1682994d49f35b19791e2e0d67b4d01.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `569d367f96e36289e903ff7df2fe2f284ccd59e3`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Replay/Variant6968f568b821290515a297a01a6606cfe1682994d49f35b19791e2e0d67b4d01.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [replay](declarations/replay--0369ce97d8ce91d9890e37b7.md) | 7 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [ReplayReceipt](declarations/replayreceipt--a145ecb88e8ed4541956fe98.md) | 12 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [deterministic_replay](declarations/deterministic-replay--d84b0e045cd483d4b2bd0cbb.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ReplayReceipt.results_equal](declarations/replayreceipt-results-equal--13c0b428a9b74c7d12c541e6.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ReplayReceipt.snapshot_digest_exact](declarations/replayreceipt-snapshot-digest-exact--f8499bf6cb96061c893c5a36.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9e9d0a27a61a86bb9552df1cb51b543c197626384a977f4c8ae47d78dd60da69 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Replay/Variant6968f568b821290515a297a01a6606cfe1682994d49f35b19791e2e0d67b4d01.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

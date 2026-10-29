@@ -1,0 +1,10 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.Descent
+
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model
+
+#print catalog_target_recoverable_iff
+#print axioms catalog_target_recoverable_iff
+#print catalog_target_not_recoverable_of_related_ne
+#print axioms catalog_target_not_recoverable_of_related_ne
+#print catalog_interpreter_target_recoverable
+#print axioms catalog_interpreter_target_recoverable

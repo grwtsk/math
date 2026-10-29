@@ -1,0 +1,56 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.WeightedClassInsertionAudit.Variant1555386b6b17729e68c0fa8365bdecd37b391df726d1d1ba57137385b4d45822
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6cfe593ecd9ca3fe077109bc8bf8140f69acf64f` · SHA-256 `1555386b6b17729e68c0fa8365bdecd37b391df726d1d1ba57137385b4d45822`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion
+
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTail
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTail
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_split
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_split
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference_eq
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_two_difference_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_two_difference_eq
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classMean_eq_kernelSum
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classMean_eq_kernelSum
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classMean_two_insertions_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classMean_two_insertions_eq
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTerm_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTerm_abs_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_abs_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.reciprocal_half_cutoff_tail_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.reciprocal_half_cutoff_tail_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTail_abs_le_harmonic
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTail_abs_le_harmonic
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference_abs_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.harmonic_sum_le_source
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.harmonic_sum_le_source
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_abs_le_source
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_abs_le_source
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference_abs_le_source
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classScaleDifference_abs_le_source
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTail_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelTail_abs_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_two_difference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classKernelSum_two_difference_abs_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classMean_two_insertions_error_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.WeightedClassInsertion.classMean_two_insertions_error_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=275b87429bb27141d4d044b85a1355fcf5055f5b4b017119ba4e396f2e82244a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/WeightedClassInsertionAudit/Variant1555386b6b17729e68c0fa8365bdecd37b391df726d1d1ba57137385b4d45822.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

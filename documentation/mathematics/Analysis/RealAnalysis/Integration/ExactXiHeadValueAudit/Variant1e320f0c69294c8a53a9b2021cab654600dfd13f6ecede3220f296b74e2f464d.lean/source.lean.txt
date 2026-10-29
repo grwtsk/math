@@ -1,0 +1,10 @@
+import SourceExactXiHeadValue
+
+#print RH16ExactXiHeadValue.actual_psi_head_integral
+#print axioms RH16ExactXiHeadValue.actual_psi_head_integral
+#print RH16ExactXiHeadValue.explicitXiHeadJ
+#print axioms RH16ExactXiHeadValue.explicitXiHeadJ
+#print RH16ExactXiHeadValue.actualXiHeadJ_eq_explicit
+#print axioms RH16ExactXiHeadValue.actualXiHeadJ_eq_explicit
+#print RH16ExactXiHeadValue.actual_head_abs_error_explicit
+#print axioms RH16ExactXiHeadValue.actual_head_abs_error_explicit

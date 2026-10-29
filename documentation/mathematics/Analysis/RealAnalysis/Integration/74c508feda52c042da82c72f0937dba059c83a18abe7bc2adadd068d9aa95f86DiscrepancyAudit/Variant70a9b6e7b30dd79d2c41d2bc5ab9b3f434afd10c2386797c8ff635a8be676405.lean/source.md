@@ -1,0 +1,59 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86DiscrepancyAudit.Variant70a9b6e7b30dd79d2c41d2bc5ab9b3f434afd10c2386797c8ff635a8be676405
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ed0650d980d1f10f1f394582df6401fa9139bb16` · SHA-256 `f7e4f156e74ef8fb529275cb4d8801a713f1c37538fed0e91e8d913e3c05f89f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.EstimatePoleReducedDiscrepancy.Variant74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.EstimatePoleReducedDiscrepancy.Variant74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86","mathematical_subject":"Analysis.Integration","original_sha256":"74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/74/74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86--DiscrepancyAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.EstimatePoleReducedDiscrepancy.Variant74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86
+
+set_option autoImplicit false
+set_option pp.fullNames true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_count_intervalIntegrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_count_intervalIntegrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_error_intervalIntegrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_error_intervalIntegrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.criticalSignedChebyshevIntegral_eq_poleReducedDiscrepancy
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.criticalSignedChebyshevIntegral_eq_poleReducedDiscrepancy
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_step_integral_boundary
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_step_integral_boundary
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_step_integral
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_step_integral
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_arithmetic_recombination
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_arithmetic_recombination
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_smooth_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_smooth_hasDerivAt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.smoothMoment_eq_poleReduced_boundary
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.smoothMoment_eq_poleReduced_boundary
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_lower_endpoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_lower_endpoint
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_discrepancy_eq_primeMoment
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedDiscrepancy.poleReduced_discrepancy_eq_primeMoment
+
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimatePoleReducedWeight EstimatePoleReducedDiscrepancy
+open EstimatePrimeSmoothDefect EstimateCriticalPrimeErrorAbel
+open FormalResearch.RiemannHypothesis.SourcePairing
+example (A : ℝ) (hA : 1 ≤ A) :
+    criticalSignedChebyshevIntegral A =
+      2 * Real.exp (-lowerEndpoint/2) *
+        sourceCorrelation Realization.explicitSecondDerivative A lowerEndpoint +
+      smoothMoment A - closedPrimeMoment A := by
+  rw [criticalSignedChebyshevIntegral_eq_poleReducedDiscrepancy A hA,
+    poleReduced_discrepancy_eq_primeMoment A hA]
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=98040a15c3a2617ed25fd052084d5849083ccb4c2bb175b28cb3750ab93d778f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/74c508feda52c042da82c72f0937dba059c83a18abe7bc2adadd068d9aa95f86DiscrepancyAudit/Variant70a9b6e7b30dd79d2c41d2bc5ab9b3f434afd10c2386797c8ff635a8be676405.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

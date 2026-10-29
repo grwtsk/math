@@ -1,0 +1,122 @@
+{
+  "schema": "grwtsk.arithmetic-feature-gram-audit-requirements/1",
+  "attribution": "grwtsk contributors",
+  "classification": "STATIC_REQUIREMENTS_NOT_RECEIPT",
+  "source_commit": "d43e8d85caaa8242b3bf04a5848a425e9fede9d0",
+  "contract": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "blob": "322afe9666ba662598c3ca67ed56ee24244432ac",
+    "module_expected_types": {
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_isHermitian": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).IsHermitian",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_posSemidef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s).PosSemidef",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_realification": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.realSource (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s p.1 p.2) = GRWTSK.Analysis.ErrorBounds.QuadraticGramResidual.gram (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.pairedFeatures (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature N \u03c4 level \u03c7 s))",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel_matrix": "\u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (level : \u03b9 \u2192 \u2115) (\u03c7 : \u2200 i, DirichletCharacter \u2102 (level i)) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel N \u03c4 level \u03c7 s).matrix = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram N \u03c4 level \u03c7 s",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_posSemidef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} [Fintype \u03b9] (N : \u2115) (\u03c4 : \u211d) (s : \u03b9 \u2192 \u2102), (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram N \u03c4 s).PosSemidef",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.complexGram_posSemidef": "letI : PartialOrder \u2102 := Complex.partialOrder; \u2200 {\u03b9 : Type u} {\u03ba : Type v} [Fintype \u03b9] [Fintype \u03ba] (f : \u03ba \u2192 \u03b9 \u2192 \u2102), (fun i j => GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexGram f (i, j)).PosSemidef",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.radical_prime_power": "\u2200 {p k : \u2115} (_hp : p.Prime) (_hk : 0 < k), UniqueFactorizationMonoid.radical (p ^ k) = p",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight_prime_power": "\u2200 (\u03c4 : \u211d) {p k : \u2115} (_hp : p.Prime) (_hk : 0 < k), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight \u03c4 (p ^ k) = Real.log p / (p : \u211d) ^ \u03c4"
+    },
+    "required_module_declarations": [
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.Window",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.window_lower",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.window_upper",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.radical_prime_power",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.vonMangoldt_prime_power",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.radical_power_positive",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight_nonnegative",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.weight_prime_power",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseFeature",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature_eq_character_mul_base",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.feature_eq_exp",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.complexGram_posSemidef",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_posSemidef",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_isHermitian",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_realification",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.baseGram_readout_nonnegative",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_posSemidef",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_isHermitian",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticKernel_matrix",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_realification",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_readout_nonnegative",
+      "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticFeatureGram.arithmeticGram_readout_im_zero"
+    ],
+    "sha256": "511710423e972e350dc85c4cb5c65a35d622e8cdba02b500503dd4b731620085",
+    "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticFeatureGram.lean",
+    "universes": [
+      "u",
+      "v"
+    ]
+  },
+  "source_proof_candidates": [
+    "window_lower",
+    "window_upper",
+    "radical_prime_power",
+    "vonMangoldt_prime_power",
+    "radical_power_positive",
+    "weight_nonnegative",
+    "weight_prime_power",
+    "feature_eq_character_mul_base",
+    "feature_eq_exp",
+    "complexGram_posSemidef",
+    "baseGram_posSemidef",
+    "baseGram_isHermitian",
+    "baseGram_realification",
+    "baseGram_readout_nonnegative",
+    "arithmeticGram_posSemidef",
+    "arithmeticGram_isHermitian",
+    "arithmeticKernel_matrix",
+    "arithmeticGram_realification",
+    "arithmeticGram_readout_nonnegative",
+    "arithmeticGram_readout_im_zero"
+  ],
+  "source_definitions": [
+    "Window",
+    "weight",
+    "baseFeature",
+    "feature",
+    "baseGram",
+    "arithmeticGram",
+    "arithmeticKernel"
+  ],
+  "required_structural_names": 27,
+  "selected_exact_type_expressions": 8,
+  "fresh_type_consumer_modules": 1,
+  "required_gates": [
+    "Fresh warnings-as-errors trust-zero compilation of ten project modules,3003 upstream source modules and27source assets at exact toolchain/manifest pins",
+    "Complete compiler-origin module/axiom census including27required structural names and every additional compiler-owned declaration",
+    "Eight selected independent type expressions after same-source complete root/axiom/structural qualification; explicit Complex.partialOrder in the three PSD type expressions",
+    "Check actual prime,positive-exponent,finite-index,finite-window and dependent character-level hypotheses; do not promote finite statements to infinite sums or physical operators",
+    "Preserve preexisting arbitrary-index PositiveKernel and existing HermitianGramRealification bytes",
+    "Retain unsafe/native/unknown-body observations and installed Lean compiled boundary",
+    "Root GRWTSK compilation and every applicable historical/request acceptance gate remain separate"
+  ],
+  "finite_scope": {
+    "sample_window": "all integers 2 through N,empty when N<2",
+    "parameters": "all complex coordinate parameters; explicit untwisted family and Dirichlet-character family with coordinate-dependent Mathlib levels",
+    "weight": "ArithmeticFunction.vonMangoldt n / ((UniqueFactorizationMonoid.radical n : Real) ^ tau)",
+    "exponents": "all real tau,including requested tau>=0; positive radical denominator supplies the exact sufficient premise",
+    "indices": "Fintype coordinate index for new finite matrix specialization; preexisting arbitrary-index positive-kernel API unchanged"
+  },
+  "remaining_obligations": [
+    "Actual native compilation,origin/kernel/transitive axiom and selected type acceptance",
+    "Rank bound by finite window size and strict-gap/nondegeneracy criteria",
+    "Explicit finite linear-operator/comparison consumer where required",
+    "Infinite cutoff,Dirichlet-series/L-function,RH-scale or abc-triple implications",
+    "Physical Hamiltonian/gauge/Yang-Mills identification"
+  ],
+  "native_compile": "NOT_RUN",
+  "compiler_origin_qualification": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axiom_acceptance": "NOT_RUN",
+  "exact_type_execution": "NOT_RUN",
+  "root_GRWTSK_compile": "NOT_RUN"
+}

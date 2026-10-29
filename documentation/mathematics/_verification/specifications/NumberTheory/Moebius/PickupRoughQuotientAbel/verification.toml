@@ -1,0 +1,163 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-rough-quotient-abel-prime-layer-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+source_tree = "8b16e8c86a100ec99b21a822b7d3162ed95ee031"
+parent_commit = "112c806978c3a96ff1f947f4f86a6c0b5e6740bb"
+initial_reconciliation_commit = "a7188ebd557dce3afc608d2b1a9da85655172bc2"
+concurrent_rough_source = "8da6790cf5e26fbee7b9063746606303fcb14923"
+concurrent_rough_docs = "1cf8b385f8797c4c9d1032c0eca900f50bc271ce"
+preserved_seven_module_bundle = "ff7fbe1a6a5603f83ad6319cca7119096b244908"
+verification_issue = 1422
+prerequisite_issues = [1418, 1420, 1421]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+old_local_duplicate_files_published = false
+full_energy_exponent_improved = false
+uniform_S_saving_proved = false
+source_mass_witness_supplied = false
+full_vector_coercivity_used = false
+RH_proved = false
+new_equivalent_RH_wrapper_added = false
+new_growth_Prop_added = false
+independent_low_q_signed_estimate_supplied = true
+added_modules = 2
+definitions = 8
+theorem_scripts = 29
+textual_identifiers = 37
+source_lines = 533
+inventory_scope = "Textual source census only, not an elaborated or kernel-accepted inventory"
+mathematical_note = "docs/mathematics/NumberTheory/Moebius/quotient-abel-prime-layer.md"
+note_blob = "151287c0f0dc228afeea4db981b179d58df4c48e"
+note_sha256 = "0c5bbeb78a7d2899178fdd0b29cf7c13a0064247be85672e8b174e7bc34fb19a"
+
+[mathematics]
+quotient_window = "max(1,floor(m/p)+1) <= q <= floor(min(N,Y)/p), empty windows explicit"
+weight = "rough(P,q)/omega(P,N,p*q); N and P frozen; p-dependence retained in definition"
+count_bridge = "Only p>sqrt(N) and q<=N/p justify omega(P,N,p*q)=1+omega(P,N,q)"
+full_source_identity = "R=R_lo-2*shortPart-2*sharedPart+2*lowerEndpoint-2*signedVariation"
+endpoint_rule = "Both endpoints retained. Only full Y=N pays the upper successor via actual frozen block support; lower endpoint remains or is exactly anchored."
+independent_signed_bound = "For 1<=a and b<=min(j^2,N/p), sum_(a<=q<=b) alpha(q)=1_(a=1,b>=1)-card(primes q in [a,b],q>j)/2"
+missing = "Signed control after multiplication by rough(m) times the actual Gram difference, including q>j^2 and shortPart; no fixed full-energy exponent established"
+preserved = "Original closed cutoff, both orientations, short-prime repeated corrections, source-only mass interfaces, secondary-forcing written-only analytic obstruction"
+not_used = ["4^k discrepancy schedule for P_j", "new period assumption", "block positivity", "internal overlap reused as saving", "an energy-ratio mass"]
+
+[audit]
+full_transitive_closure_required = true
+include_private_generated_opaque = true
+provisional_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native or unsafe trust", "weakened hypotheses", "omitted lower boundary", "unjustified upper endpoint zero at Y<N", "unweighted prefix substitution", "erased repeated-prime term", "changed inner horizon", "component bound promoted to full source bound"]
+driver_sha256 = "fa7871afc41bfddd09006e2e6bc04708983e15c1782f401824387362fdeda90a"
+inventory_sha256 = "7e9e8aef9277ad1033041731c52476fd99bc992bdd5a5c8df790475823ab74f6"
+
+[diagnostics]
+normal_command = "python /mnt/data/q_abel_work/diagnostics/preflight.py > /mnt/data/q_abel_work/diagnostics/normal.json"
+normal_exit = 0
+optimized_command = "python -O /mnt/data/q_abel_work/diagnostics/preflight.py > /mnt/data/q_abel_work/diagnostics/optimized.json"
+optimized_exit = 0
+comparison_command = "cmp /mnt/data/q_abel_work/diagnostics/normal.json /mnt/data/q_abel_work/diagnostics/optimized.json"
+comparison_exit = 0
+checks_per_mode = 5819
+finite_abel_checks = 1220
+rational_arithmetic_weight_checks = 2298
+rational_model_source_partition_checks = 2282
+negative_controls = 9
+static_checks = 10
+preflight_sha256 = "fd1948c33545bc712f8b36affc9fbbdfd215d8ef7a3ac93532717def59be0d03"
+report_sha256 = "ffd05e9168b93640b9e7af0344d12e779781bc27002d43e8f5bbf666894b5b71"
+limitation = "Finite exact arithmetic and signed rational model kernels. Not the analytic Gram enclosure, Lean acceptance, or asymptotic evidence."
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughQuotientAbel.lean"
+blob = "35b12db71ed2f2708ca6df6e8c3a0b504addc3f7"
+sha256 = "435da23ecd49f23ad4bb813f009345c84f074c90598cd1b25a2cba63f180e9a7"
+lines = 346
+declarations = ["GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.quotientWeight", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.weightedPrefix", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.firstQuotient", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.lastQuotient", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.firstQuotient_positive", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.quotient_window", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.qRow", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.qRow_empty", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.prefix_split_at", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.abel_window_successor", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.abel_window_closed", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.abel_window_anchored", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.quotientWeight_long", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.weightedPrefix_long", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.weightedPrefix_zero", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.quotientWeight_one", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.firstQuotient_eq_one_iff", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.coprimeSlice_eq_rows", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.qRow_abel", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.qRow_abel_successor", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.gram_terminal_quotient", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.qRow_gram_full", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.qRow_gram_full_anchored", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.lowerEndpoint", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.signedVariation", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.coprimePart_full_abel", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel.interaction_qAbel"]
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughQuotientPrimeLayer.lean"
+blob = "8ef3abb403eeda2a31d7b69ff59b41c36a1de74e"
+sha256 = "fde0d8827c356c28cb5f074a1e019c55a729a7f751db08b893d8505f1a8a9a2b"
+lines = 187
+declarations = ["GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.rough_composite_small_zero", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.rough_at_prime", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.low_quotientWeight", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.primeLayer", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.low_weighted_window", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.low_weighted_window_le_unit", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.low_nonunit_window_nonpositive", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.weightedPrefix_primeLayer", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.weightedPrefix_low_le_one", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer.qRow_primeLayer"]
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughPrefixIdentity.lean"
+blob = "ae6b32623b3cb4e1d0c2ceb35ccd9f72f2c14962"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughSharedPrime.lean"
+blob = "f50ea7a73c5f17db5c0da2fefcd258283932529e"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughLongPrime.lean"
+blob = "142db05a3dfa537ddc8627142953fff18a5549fc"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/Analysis/FiniteSums/PrimeBlockKernel.lean"
+blob = "a7a6aac0cdb35bb3ced2ff734289e8a741058e33"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughBilinearExtraction.lean"
+blob = "adfe4ac81073bcd2aa1458d8f3923b151b6ec722"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughCoreStrip.lean"
+blob = "fa3550c56b7558fa009542064bafdc1b89f163b7"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockSource.lean"
+blob = "8e5060c9697daebb307aae49ed740b869d6e8e13"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockEnergy.lean"
+blob = "6ecda0380fe19136ff8c7ecde0c48cf42b736991"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[critical_dependency]]
+path = "GRWTSK/NumberTheory/Moebius/PickupGrowingPrimeStages.lean"
+blob = "ebc257ab92c86fee7d1a57e573d52b8ebc9df832"
+ref = "ab8a078d7a9bce12d67ad5fd91b9959aa8193c3a"
+
+[[native_request]]
+command = "lake build GRWTSK.NumberTheory.Moebius.PickupRoughQuotientAbel GRWTSK.NumberTheory.Moebius.PickupRoughQuotientPrimeLayer"
+status = "NOT_RUN"
+expected = "exit 0; no proof warnings; resolve actual fresh-check command from checker capabilities; complete closure audit still required"
+
+[[native_request]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughQuotientAbel.lean"
+status = "NOT_RUN"
+expected = "exit 0; no proof warnings; resolve actual fresh-check command from checker capabilities; complete closure audit still required"
+
+[[native_request]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughQuotientPrimeLayer.lean"
+status = "NOT_RUN"
+expected = "exit 0; no proof warnings; resolve actual fresh-check command from checker capabilities; complete closure audit still required"
+
+[[native_request]]
+command = "lake env lean --trust=0 -DwarningAsError=true EXTERNAL_AUDIT_DRIVER_PATH"
+status = "NOT_RUN"
+expected = "exit 0; no proof warnings; resolve actual fresh-check command from checker capabilities; complete closure audit still required"
+
+[[native_request]]
+command = "lake env leanchecker --help"
+status = "NOT_RUN"
+expected = "exit 0; no proof warnings; resolve actual fresh-check command from checker capabilities; complete closure audit still required"

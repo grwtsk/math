@@ -1,0 +1,5 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.ProperPrimePowers
+#check Finset.sum_filter_add_sum_filter_not
+#check Finset.sum_filter_add_sum_filter_neg
+#check pow_le_pow_right₀
+#check Finset.sum_subset

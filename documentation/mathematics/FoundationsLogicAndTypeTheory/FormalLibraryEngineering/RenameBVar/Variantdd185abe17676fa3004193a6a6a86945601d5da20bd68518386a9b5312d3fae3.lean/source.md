@@ -1,0 +1,70 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.RenameBVar.Variantdd185abe17676fa3004193a6a6a86945601d5da20bd68518386a9b5312d3fae3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db76e7084b53066a791e7d5ad43b5076aa85e62b` · SHA-256 `dd185abe17676fa3004193a6a6a86945601d5da20bd68518386a9b5312d3fae3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+/-
+Copyright (c) 2019 Patrick Massot. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Arthur Paulino, Patrick Massot
+-/
+
+import Lean.Elab.Tactic.Location
+import Mathlib.Util.Tactic
+import Mathlib.Lean.Expr.Basic
+
+/-!
+# The `rename_bvar` tactic
+
+This file defines the `rename_bvar` tactic, for renaming bound variables.
+-/
+
+namespace Mathlib.Tactic
+
+open Lean Parser Elab Tactic
+
+/-- Renames a bound variable in a hypothesis. -/
+def renameBVarHyp (mvarId : MVarId) (fvarId : FVarId) (old new : Name) :
+    MetaM Unit :=
+  modifyLocalDecl mvarId fvarId fun ldecl ↦
+    ldecl.setType <| ldecl.type.renameBVar old new
+
+/-- Renames a bound variable in the target. -/
+def renameBVarTarget (mvarId : MVarId) (old new : Name) : MetaM Unit :=
+  modifyTarget mvarId fun e ↦ e.renameBVar old new
+
+/--
+* `rename_bvar old → new` renames all bound variables named `old` to `new` in the target.
+* `rename_bvar old → new at h` does the same in hypothesis `h`.
+
+```lean
+example (P : ℕ → ℕ → Prop) (h : ∀ n, ∃ m, P n m) : ∀ l, ∃ m, P l m := by
+  rename_bvar n → q at h -- h is now ∀ (q : ℕ), ∃ (m : ℕ), P q m,
+  rename_bvar m → n -- target is now ∀ (l : ℕ), ∃ (n : ℕ), P k n,
+  exact h -- Lean does not care about those bound variable names
+```
+Note: name clashes are resolved automatically.
+-/
+elab "rename_bvar " old:ident " → " new:ident loc?:(location)? : tactic => do
+  let mvarId ← getMainGoal
+  instantiateMVarDeclMVars mvarId
+  match loc? with
+  | none => renameBVarTarget mvarId old.getId new.getId
+  | some loc =>
+    withLocation (expandLocation loc)
+      (fun fvarId ↦ renameBVarHyp mvarId fvarId old.getId new.getId)
+      (renameBVarTarget mvarId old.getId new.getId)
+      fun _ ↦ throwError "unexpected location syntax"
+
+end Mathlib.Tactic
+````
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=22eef4b117ccc911557b9ec2d55de88da88dac769c4b4123dcd857c6027ad3cc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/RenameBVar/Variantdd185abe17676fa3004193a6a6a86945601d5da20bd68518386a9b5312d3fae3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

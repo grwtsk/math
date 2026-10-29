@@ -1,0 +1,39 @@
+import SourceLaterRadiusPropagation
+
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceLaterRadiusPropagation
+
+#check residual_upper_of_contracted_Xi_at_radius
+#print axioms residual_upper_of_contracted_Xi_at_radius
+
+#check all_real_lower_of_contracted_Xi_at_radius
+#print axioms all_real_lower_of_contracted_Xi_at_radius
+
+#check estimate_of_contracted_Xi_at_radius
+#print axioms estimate_of_contracted_Xi_at_radius
+
+#check leading_upper_of_contracted_Xi_at_radius
+#print axioms leading_upper_of_contracted_Xi_at_radius
+
+#check leading_tail_of_contracted_Xi_at_radius
+#print axioms leading_tail_of_contracted_Xi_at_radius
+
+#check leading_upper_of_residual_half
+#print axioms leading_upper_of_residual_half
+
+#check leading_upper_of_residual_corrected
+#print axioms leading_upper_of_residual_corrected
+
+#check leading_upper_of_residual_fourteen
+#print axioms leading_upper_of_residual_fourteen
+
+#check leading_upper_of_actual_corrected_pairing
+#print axioms leading_upper_of_actual_corrected_pairing
+
+#check leading_tail_of_actual_corrected_pairing
+#print axioms leading_tail_of_actual_corrected_pairing
+
+#check leading_tail_of_triangular_upper
+#print axioms leading_tail_of_triangular_upper
+
+end FormalResearch.RiemannHypothesis.SourceLaterRadiusPropagation

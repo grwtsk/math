@@ -1,0 +1,120 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-edge-interior-1041-v0.1"
+issue = 1041
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior"
+
+[source_binding]
+parent_pr = 1040
+parent_revision = "9b4caf9799616c951d9dfdd8108588e991f34638"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWEdgeInterior.lean"
+new_module_git_blob = "7a933fcd06f49c34bfa3395ddefbc2e28460c54a"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-edge-interior.md"
+note_blob = "4e8c1605ad7533660732764158ec06b7cad8f9b2"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+open_cell_embedding_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior"
+authored_declaration_count = 6
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior.StrictUnitInterior"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior.positiveOpenEdge"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior.positiveOpenEdge_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior.positiveOpenEdge_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior.positiveOpenEdge_ne_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior.positiveOpenEdge_labels_eq_of_image_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-real-subtype"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-positive-edge"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-restriction"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "injective-restriction"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "vertex-separation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pairwise-label-separation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-openness-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-embedding-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-weak-topology"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-closure-finiteness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

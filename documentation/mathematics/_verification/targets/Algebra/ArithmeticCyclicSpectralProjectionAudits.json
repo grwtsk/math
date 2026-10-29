@@ -1,0 +1,91 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-spectral-projection-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "TWELVE_SOURCE_PROOF_CANDIDATES_THREE_ACTUAL_CUTOFF_DEFINITIONS",
+  "source_commit": "e0a47e848994ec08f4979635e41af91d74e11a51",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralProjection.lean",
+  "source_blob": "e3fa2832bcf4d430ea741c16da03e804e4057fc4",
+  "source_sha256": "6772e92bcf65b10d0aaf17272ece075a00edf3fd8d22e04b54df59d9158d1534",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.cutMask",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_isStarProjection",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator_isStarProjection",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_commutes",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator_commutes",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.complement_isStarProjection",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.low_mul_complement",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.complement_mul_low",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_rank",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_eigenvector_action",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator_eigenvector_action",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.arithmetic_lowOperator_commutes",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.arithmetic_lowProjector_rank"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.arithmetic_lowOperator_commutes": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real), Commute (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.arithmetic_lowProjector_rank": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real), Matrix.rank (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) = Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian_isHermitian N level chi m t u v w).eigenvalues i < E}",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.complement_isStarProjection": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), IsStarProjection (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.complement_mul_low": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) * GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E = 0",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.cutMask": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (i : ZMod N), Complex",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator_commutes": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Commute (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator_eigenvector_action": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (j : ZMod N), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E ((GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis j) = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.cutMask N t q E j \u2022 ((GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis j)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator_isStarProjection": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), IsStarProjection (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Matrix (ZMod N) (ZMod N) Complex",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_commutes": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Commute (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian N t q)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_eigenvector_action": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (j : ZMod N), Matrix.mulVec (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E) (WithLp.ofLp ((GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis j)) = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.cutMask N t q E j \u2022 WithLp.ofLp ((GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvectorBasis j)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_isStarProjection": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), IsStarProjection (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector_rank": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Matrix.rank (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowProjector N t q E) = Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < E}",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.low_mul_complement": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E * (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) = 0"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots;15explicit structural names do not cap the population.",
+  "scope": [
+    "Every nonzero N, including the entire N>=3 family; every signed real hopping, potential and real cutoff E.",
+    "The mask uses actual Hermitian Hamiltonian eigenvalues with STRICT eigenvalue<E. Eigenvalues equal to E are in the complementary sector.",
+    "The actual low-projector matrix conjugates this full diagonal mask by the actual Hamiltonian eigenvector unitary; the operator is its actual Matrix.toEuclideanCLM on complex Euclidean space.",
+    "Self-adjoint idempotence, commutation with the original matrix/operator, complementary self-adjoint idempotence and both zero cross-products are required.",
+    "Every actual enumerated eigenbasis vector is tested. Matrix.rank equals the number of actual eigenvalue indices below E, counting repeated eigenvalues with their full enumeration multiplicity. This is a matrix rank statement, not a separately asserted continuous-linear-map rank theorem.",
+    "Actual arithmetic character/level/arbitrary natural labels and all real coefficients are retained, with no positivity, m_i>=2, common-prime or selected-mode restriction.",
+    "No basis-choice independence theorem, complementary coercivity, rank stability under perturbation, identified vacuum, infinite/AMO/RH operator or physical mass is inferred."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T194517.031571Z/projection-registry.json",
+    "registry_sha256": "967d571786cad427ae05dcc9de4644af231f16f935d8f4159fc5fa0a7e6ed051",
+    "project_modules": 13,
+    "upstream_source_modules": 3190,
+    "source_assets": 27,
+    "complete_compiler_origin_audits_required": 1,
+    "required_structural_names": 15,
+    "selected_exact_types": 15,
+    "all_twelve_theorem_and_three_definition_types_selected": true,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "noe_head": "3377014b059ce902fda21b27389f5275ec1824bb",
+    "native_status": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every matching executed native acceptance gate.",
+    "Basis-choice independence, cutoff/rank stability under perturbation and complementary-sector coercivity.",
+    "Continuous-linear-map rank/dimension comparison beyond the stated matrix-rank count.",
+    "Identified infinite/rescaled/continuum/AMO/full RH-family operators and residual/reconstruction estimates.",
+    "Physical/gauge/Yang-Mills/vacuum/mass identification."
+  ],
+  "issue_state": "OPEN"
+}

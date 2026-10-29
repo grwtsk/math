@@ -1,0 +1,116 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-interior-separation-1026-v0.1"
+issue = 1026
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation"
+
+[source_binding]
+parent_pr = 1024
+parent_revision = "b02373edc5267ebca88a4e8c831071d9bfd21f64"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWInteriorSeparation.lean"
+new_module_git_blob = "c208d5ab5615eb885fed970a37f15f769d0173a6"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-interior-separation.md"
+note_blob = "e16bf5bcba03c471e8825c88ece71c73d6f49620"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+pairwise_edge_disjointness_proved = false
+open_cell_embeddings_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation"
+authored_declaration_count = 5
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation.directedInterior_ne_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation.positiveInterior_ne_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation.positiveMidpoint_ne_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation.genusTwo_positiveMidpoint_ne_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation.genusThree_positiveMidpoint_ne_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-boundary-quotient"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-preservation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-nonendpoint-parameters"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-positive-edges"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "midpoint-negative-control"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-edge-injectivity-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-pairwise-disjointness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-run"
+status = "NOT_RUN"

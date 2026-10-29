@@ -1,0 +1,32 @@
+# GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.QuadraticMap.Variant4de3573e01d93f83c64fe9e9ef0f383eb0004b3163b84b01f58da65c76f584dd
+
+[Complete source index](../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/QuadraticMap/Variant4de3573e01d93f83c64fe9e9ef0f383eb0004b3163b84b01f58da65c76f584dd.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `44ebd79a0140d5879c25c9438603f4a04e13459a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/QuadraticMap/Variant4de3573e01d93f83c64fe9e9ef0f383eb0004b3163b84b01f58da65c76f584dd.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [hasLineDerivAt](declarations/haslinederivat--eb9921a677c4415c7614eeae.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [lineDifferentiableAt](declarations/linedifferentiableat--fc71b0d35dea71656fc9d85a.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [lineDeriv](declarations/linederiv--c6c61b98462bcf567a244dac.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e6897ee5f70dfa1f80088f0761f0d680678265521d54751a05de67e1d00ee2f5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/QuadraticMap/Variant4de3573e01d93f83c64fe9e9ef0f383eb0004b3163b84b01f58da65c76f584dd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

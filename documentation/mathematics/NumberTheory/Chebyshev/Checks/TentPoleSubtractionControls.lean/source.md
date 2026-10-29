@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.NumberTheory.Chebyshev.Checks.TentPoleSubtractionControls
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3ffaedf38351742b8e3aa303cc6f40a29716f740` · SHA-256 `31eaad8a6aafb9588a06a9d907e4e943c9f369d80cec683880b4eb5e54701a7e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction
+
+set_option autoImplicit false
+
+/-!
+# Controls for finite pole subtraction
+
+Synthetic rational functions below are not zeta data. The final two controls
+specialize actual source coefficient declarations, not a zero file or a prime
+certificate. All declarations remain unelaborated source drafts.
+-/
+
+namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentPoleSubtractionControls
+
+open GRWTSK.Analysis.Complex.OrientedRectangle
+open GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction
+open GRWTSK.RiemannHypothesis.TrivialZeroResidues
+
+/-- The divided difference's center is a derivative, not division by zero. -/
+theorem dividedDifference_center (a : ℂ) : dslope (fun z : ℂ => z) a a = 1 := by
+  simp
+
+/-- Freezing the multiplier in the pole term leaves a nonzero analytic remainder. -/
+theorem nonconstant_multiplier_remainder (z : ℂ) (hz : z ≠ 1) :
+    (-2 / (z - 1)) * z = -2 / (z - 1) - 2 := by
+  field_simp [sub_ne_zero.mpr hz]
+  <;> ring
+
+/-- A zero multiplier can cancel a pole without making the product zero. -/
+theorem zero_multiplier_cancels_pole (z : ℂ) (hz : z ≠ 0) :
+    (-2 / z) * z = -2 := by field_simp [hz]
+
+/-- The unchanged totalized center value differs from the analytic extension. -/
+theorem raw_center_not_extension :
+    ((-2 : ℂ) / 0) * 0 = 0 ∧ ((-2 : ℂ) / 0) * 0 ≠ -2 := by norm_num
+
+/-- Subtracting one actual coefficient leaves the other principal part present. -/
+theorem omitted_pole_remains (z : ℂ) :
+    (-2 / (z - 1) - 3 / (z - 2)) - (-2 / (z - 1)) = -3 / (z - 2) := by ring
+
+/-- Repeating an analytic multiplicity doubles its contribution rather than refining it. -/
+theorem duplicate_coefficient_changes_sum :
+    ((-2 : ℂ) / (3 - 1)) + (-2 / (3 - 1)) ≠ -2 / (3 - 1) := by norm_num
+
+/-- Zero closed integral does not mean the analytic remainder is the zero function. -/
+theorem nonzero_entire_remainder (l r T : ℝ) :
+    boundaryIntegral (fun _ : ℂ => 3) l r T = 0 ∧ (3 : ℂ) ≠ 0 := by
+  exact ⟨boundaryIntegral_eq_zero_of_differentiable _ (by fun_prop) l r T, by norm_num⟩
+
+/-- The actual first trivial zero has logarithmic coefficient minus one. -/
+theorem first_trivial_coefficient : logCoefficient (-2) = -1 := by
+  simpa [trivialPoint] using logCoefficient_trivial 0
+
+/-- The actual pole keeps the radius normalization for the square interval (4,9). -/
+theorem actual_tent_pole_radius : tentCoefficient (13 / 2) (5 / 2) 1 = (5 / 2 : ℂ) := by
+  exact tentCoefficient_one (13 / 2) (5 / 2) (by norm_num) (by norm_num)
+
+end GRWTSK.NumberTheory.Chebyshev.Checks.TentPoleSubtractionControls
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8b57a104ef0152f15d9c7d8a06ad90582c29646ea4b3e337412ed41f048673f5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Chebyshev/Checks/TentPoleSubtractionControls.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

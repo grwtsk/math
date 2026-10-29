@@ -1,0 +1,9 @@
+id = "content-bound-observation-and-claim-validity"
+version = "1"
+source = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/ContentBoundCache.lean"
+declarations = ["GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.observation_reuse", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.unchanged_preserved", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.changed_refreshed", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.stale_token_rejected", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.expired_rejected"]
+acceptance = ["Lean 4.33.0 trust=0 elaboration succeeds", "No sorryAx or unregistered axioms"]
+positive_controls = ["Repeated sync reads zero Lean blobs", "Rename reuses exact blob", "Changed blob is reobserved"]
+hostile_controls = ["Expired and replaced lease cannot finish", "Corrupt artifact digest rejects", "Concurrent index publication rejects stale snapshot"]
+nonclaims = ["Digest injectivity", "Database and clock refinement", "Receipt implies mathematical admission"]
+receipt_owner = "grwtsk/noeaaeue"

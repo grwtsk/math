@@ -1,0 +1,16 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryJoint
+open MeasureTheory
+#check Integrable.piecewise
+#check Integrable.bdd_mul
+#check Integrable.mul_bdd
+#check Integrable.mul_bdd_ae
+#check Integrable.integral_sub
+#check intervalIntegral.integral_sub
+#check intervalIntegral.integral_mul_const
+#check intervalIntegral.integral_const_mul
+#check intervalIntegral.integral_congr_ae
+#check intervalIntegral.integral_nonneg_of_ae_restrict
+#check intervalIntegral.integral_nonneg_of_forall
+#check IntegrableOn.congr_fun
+#check IntervalIntegrable.congr
+#check IntervalIntegrable.sub

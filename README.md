@@ -10,11 +10,11 @@ The aim is not simply to give AI more mathematics to retrieve. It is to give dis
 
 This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
 
-[**Explore the mathematics →**](docs/mathematics/index.md)
+[**Explore the mathematics →**](documentation/mathematics/index.md)
 
-[Every source and declaration](docs/mathematics/complete-source-index.md) · [Verification specifications](docs/verification/README.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+[Every source and declaration](documentation/mathematics/complete-source-index.md) · [Verification specifications](documentation/mathematics/_verification/specifications/README.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/documentation/mathematics/_verification/targets/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
 
-[**From research signal to structural intelligence**](docs/reference/structural-intelligence.md): a source-backed formalization, human and AI guidance, and reusable worker skills for choosing the next mathematical move.
+[**From research signal to structural intelligence**](documentation/mathematics/_support/reference/structural-intelligence.md): a source-backed formalization, human and AI guidance, and reusable worker skills for choosing the next mathematical move.
 
 ## Signal for the next research decision
 
@@ -48,16 +48,16 @@ Extend existing subject modules where they fit. When exploration reveals a genui
 
 ## Navigating the collection
 
-- Explore the [results index](docs/mathematics/index.md), then follow subject indexes, object guides, and result articles within [`docs/mathematics/`](docs/mathematics/). The [selected-family catalogue](docs/reference/results.md) retains its original evidence records.
-- Start with the [least-prime walkthrough](docs/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
-- Browse the [complete source catalogue](docs/mathematics/complete-source-index.md) for modules and observed declarations, including definitions, instances, examples, and pending or blocked checks. Its articles link to verification targets and scoped public evidence. The [historical theorem/result occurrence catalogue](docs/reference/result-occurrences.md) retains its original source identities; a lexical occurrence is not a verified theorem.
-- Read the formal sources in the [Lean library](GRWTSK/). [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point; [verification specifications](docs/verification/README.md) describe static replay targets.
+- Explore the [results index](documentation/mathematics/index.md), then follow subject indexes, object guides, and result articles within [`documentation/mathematics/`](documentation/mathematics/). The [selected-family catalogue](documentation/mathematics/_support/reference/results.md) retains its original evidence records.
+- Start with the [least-prime walkthrough](documentation/mathematics/_support/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
+- Browse the [complete source catalogue](documentation/mathematics/complete-source-index.md) for modules and observed declarations, including definitions, instances, examples, and pending or blocked checks. Its articles link to verification targets and scoped public evidence. The [historical theorem/result occurrence catalogue](documentation/mathematics/_support/reference/result-occurrences.md) retains its original source identities; a lexical occurrence is not a verified theorem.
+- Read the formal sources in the [Lean library](GRWTSK/). [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point; [verification specifications](documentation/mathematics/_verification/specifications/README.md) describe static replay targets.
 
 At source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374), the catalogue records **72,578 source modules and 1,722,561 declaration observations**. Each record retains its verification state. These are source and observation counts for that revision—not verified-theorem counts or a live inventory of `main`.
 
-Examples include [least natural prime](docs/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](docs/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](docs/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
+Examples include [least natural prime](documentation/mathematics/NumberTheory/Primes/least-prime.md), [coverage and discrete quotas](documentation/mathematics/CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md), and [polynomial return with paid error](documentation/mathematics/Analysis/AsymptoticAnalysis/polynomial-error.md). Their pages and catalogue records retain their individual hypotheses and evidence limits.
 
-[From ethical obligations to mechanistic reasoning](docs/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](docs/verification/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
+[From ethical obligations to mechanistic reasoning](documentation/mathematics/FoundationsLogicAndTypeTheory/MathematicalLogic/MechanisticReasoning/ethics-capsules.md) develops typed judgments, rooted authority, observation support, composition, bounded work, revision, and implementation refinement. Its three isolated `Init`-only companions have a [static verification target](documentation/mathematics/_verification/specifications/_unscoped/ethics-mechanistic-reasoning-v0.1.toml); medical interpretation and actual implementation correspondence remain separate obligations.
 
 ## Evidence that keeps the signal interpretable
 
@@ -65,7 +65,7 @@ The collection includes formal proofs, conditional results, written arguments, f
 
 Keep mathematical role separate from verification evidence. Source inspection, compilation, fresh kernel checking, and transitive axiom auditing are different checks. Record actual outcomes or explicit `NOT_RUN` status, and bind evidence to the source it concerns. Historical evidence is not a fresh check of changed source bytes.
 
-Paper-derived contributions retain their sources and exact scope in the [paper-to-formalization references](docs/reference/literature/reading-background/paper-to-formalization-references.md). Imported mathematics, proved bridges, source candidates, conditional interfaces, finite evidence, analogies, and unresolved premises remain distinguishable. A structural resemblance does not establish historical influence.
+Paper-derived contributions retain their sources and exact scope in the [paper-to-formalization references](documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md). Imported mathematics, proved bridges, source candidates, conditional interfaces, finite evidence, analogies, and unresolved premises remain distinguishable. A structural resemblance does not establish historical influence.
 
 Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound. An encoding, graph, or waveform may suggest an approach, but representing a source does not itself supply a missing mathematical estimate.
 
@@ -74,10 +74,10 @@ Steering AI discovery is the project's purpose. Whether a particular signal impr
 ### Source-bound verification notices
 
 <!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
-[Latest source-bound verification observations](docs/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
+[Latest source-bound verification observations](documentation/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
 <!-- END VERIFICATION AMENDMENT -->
 
-The cross-branch 107-declaration replay documented below ended in an operational cancellation before declaration audits or exact type checks; every target remains not run. [Terminal status and full target roster](docs/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) · [public pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). The event is not a mathematical counterexample, and S₃ remains unavailable.
+The cross-branch 107-declaration replay documented below ended in an operational cancellation before declaration audits or exact type checks; every target remains not run. [Terminal status and full target roster](documentation/mathematics/verification-updates/declaration107-lossless-restart-20261026.md) · [public pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json). The event is not a mathematical counterexample, and S₃ remains unavailable.
 
 These retained notices describe their linked verification scopes, not a live or blanket verdict on the collection. Read each result with its exact hypotheses, source revision, and available evidence.
 
@@ -97,7 +97,7 @@ separately; its OAI imports are outside the public GRWTSK target.
 
 The committed `lean-toolchain` and `lake-manifest.json` pin the public Lean and Mathlib inputs. Build success alone is not an axiom audit, finite-certificate validation, or acceptance of an unresolved application premise.
 
-Static replay targets for external verification are described under [`docs/verification/`](docs/verification/README.md). The legacy [`verification/`](verification/README.md) directory is only a compatibility boundary for non-target fixtures and custody records. No operational cache or execution receipt is canonical repository content.
+Static replay targets for external verification are described under [`documentation/mathematics/_verification/specifications/`](documentation/mathematics/_verification/specifications/README.md). Former root verification fixtures and custody records now live under [`documentation/mathematics/_verification/targets/`](documentation/mathematics/_verification/targets/). The root `verification/` directory has been removed. No operational cache or execution receipt is canonical repository content.
 
 ## Repository boundary
 
