@@ -1421598,6 +1421598,25 @@
       "target_sha256": "fca852a4b0135e33f6e6203750bad3da02f529d191752362c25252d776feb52a",
       "target_git_blob": "210dce809e47c7bd646cc7836308bb6b231e9742",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountDigits.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountDigits.lean",
+      "source_sha256": "f38d743af7aa4786792fc9b9c5cf2dfa02932d5eb3bc4f2dbf0a5a3c870c2eef",
+      "input_blob": "9a3635950ab18f198a20005656a53ffac7896fff",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Convergence and fixed-prefix stability of physical two-body collision counts, including positive common-mass scaling",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "9a3635950ab18f198a20005656a53ffac7896fff",
+      "target_sha256": "f38d743af7aa4786792fc9b9c5cf2dfa02932d5eb3bc4f2dbf0a5a3c870c2eef",
+      "target_git_blob": "9a3635950ab18f198a20005656a53ffac7896fff",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
