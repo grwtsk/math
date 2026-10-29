@@ -3329,4 +3329,38 @@ theorem signedCNF_keyMinimum_decode_iff {width : Nat}
     rw [finiteOffsetKey_selected_decode inventory weight offset best, candidateKey]
     exact comparison
 
+/-- A successful bounded-integer decode transports feasible minima, not only
+truth. Both sides retain best-feasibility; raw JSON and runtime are separate. -/
+theorem boundedIntCNF_keyMinimum_decode_iff {width : Nat}
+    (inventory : FiniteInventory (Fin width)) (weight : Fin width → Nat) (offset : Nat)
+    (raws : List (List Int)) (clauses : List (List (SignedLiteral (Fin width))))
+    (decoded : decodeSignedIntCNF width raws = some clauses) (best : Fin (2 ^ width)) :
+    (boundedIntCNFSatisfied width (selectedBits (fixedBitsLE best)) raws ∧
+      ∀ candidate : FixedBoolList width, boundedIntCNFSatisfied width (selectedBits candidate) raws →
+        CostCountMaskLE
+          (finiteOffsetKey inventory weight offset selectedBits selectedBitsDecisions fixedMaskLE (fixedBitsLE best))
+          (finiteOffsetKey inventory weight offset selectedBits selectedBitsDecisions fixedMaskLE candidate)) ↔
+    (boundedIntCNFSatisfied width (selectedMask best) raws ∧
+      ∀ candidate : Fin (2 ^ width), boundedIntCNFSatisfied width (selectedMask candidate) raws →
+        CostCountMaskLE
+          (finiteOffsetKey inventory weight offset selectedMask selectedMaskDecisions (fun m => m.val) best)
+          (finiteOffsetKey inventory weight offset selectedMask selectedMaskDecisions (fun m => m.val) candidate)) := by
+  have bitTruth (candidate : FixedBoolList width) :=
+    decodeSignedIntCNF_sound width (selectedBits candidate) raws clauses decoded
+  have maskTruth (candidate : Fin (2 ^ width)) :=
+    decodeSignedIntCNF_sound width (selectedMask candidate) raws clauses decoded
+  constructor
+  · intro minimum
+    have signedMinimum := (signedCNF_keyMinimum_decode_iff inventory weight offset clauses best).mp
+      ⟨(bitTruth (fixedBitsLE best)).mp minimum.1,
+        fun candidate feasible => minimum.2 candidate ((bitTruth candidate).mpr feasible)⟩
+    exact ⟨(maskTruth best).mpr signedMinimum.1,
+      fun candidate feasible => signedMinimum.2 candidate ((maskTruth candidate).mp feasible)⟩
+  · intro minimum
+    have signedMinimum := (signedCNF_keyMinimum_decode_iff inventory weight offset clauses best).mpr
+      ⟨(maskTruth best).mp minimum.1,
+        fun candidate feasible => minimum.2 candidate ((maskTruth candidate).mpr feasible)⟩
+    exact ⟨(bitTruth (fixedBitsLE best)).mpr signedMinimum.1,
+      fun candidate feasible => signedMinimum.2 candidate ((bitTruth candidate).mp feasible)⟩
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
