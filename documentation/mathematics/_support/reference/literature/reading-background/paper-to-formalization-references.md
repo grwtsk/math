@@ -1034,6 +1034,15 @@ math source commit, provider package/toolchain, complete dependency closure and
 Noe producer/resource policy. Existing native ownership was preserved. No source
 text scan, upstream status claim, import count or finite witness is acceptance.
 
+### Consumer wave local source binding
+
+All24 candidate theorem declarations above are bound to the complete math source
+commit `c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13`, tree `dbc18df9bb7055ba2f74b4520f3afcc551229e24`. The
+`documentation/mathematics/_verification/targets/UpstreamAdapters/consumer-wave-20261029.json`
+bundle pins each nonempty profile, local source blob and fully qualified target.
+No compiler/kernel/axiom/interface result exists for these bytes. Source publication
+and static review do not supersede NOT_RUN or unsupplied-premise statuses.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 
